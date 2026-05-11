@@ -1,124 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="auto">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>This Week's Events</title>
+  <title>do things</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+
   <style>
+    /* ── Monochrome token layer ── */
     :root {
-      --bg:           #f8f7f4;
-      --surface:      #ffffff;
-      --surface-alt:  #f2f0ec;
-      --border:       #e5e2db;
-      --text:         #1a1a1a;
-      --text-muted:   #6b6860;
-      --accent:       #2c6fad;
-      --accent-light: #e8f0f9;
-      --gold:         #c9860a;
-      --gold-light:   #fdf4e3;
-      --green:        #1a7a45;
-      --green-light:  #e6f5ed;
-      --radius:       12px;
-      --shadow:       0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.05);
-      --shadow-hover: 0 2px 6px rgba(0,0,0,.1),  0 8px 20px rgba(0,0,0,.08);
+      --pico-font-family-sans-serif: 'Inter', system-ui, -apple-system, sans-serif;
+      --pico-font-size: 15px;
+      --pico-line-height: 1.55;
+      --pico-border-radius: 0px;
+      --pico-card-box-shadow: none;
+      --pico-form-element-spacing-vertical: .4rem;
+      --pico-form-element-spacing-horizontal: .75rem;
+
+      --bg: #fff;
+      --fg: #0a0a0a;
+      --muted: #666;
+      --border: #ddd;
+      --surface: #fff;
+      --mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace;
+
+      --pico-background-color: var(--bg);
+      --pico-color: var(--fg);
+      --pico-muted-color: var(--muted);
+      --pico-muted-border-color: var(--border);
+      --pico-card-background-color: var(--surface);
+      --pico-card-border-color: var(--border);
+      --pico-primary: var(--fg);
+      --pico-primary-hover: #333;
+      --pico-primary-focus: rgba(0, 0, 0, .1);
+      --pico-primary-inverse: #fff;
+      --pico-secondary: var(--muted);
+      --pico-h1-color: var(--fg);
+      --pico-h2-color: var(--fg);
+      --pico-h3-color: var(--fg);
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0b0b0b;
+        --fg: #ededed;
+        --muted: #888;
+        --border: #242424;
+        --surface: #111;
+        --pico-background-color: var(--bg);
+        --pico-color: var(--fg);
+        --pico-muted-color: var(--muted);
+        --pico-muted-border-color: var(--border);
+        --pico-card-background-color: var(--surface);
+        --pico-card-border-color: var(--border);
+        --pico-primary: var(--fg);
+        --pico-primary-hover: #bbb;
+        --pico-primary-focus: rgba(255, 255, 255, .1);
+        --pico-primary-inverse: #0b0b0b;
+        --pico-h1-color: var(--fg);
+        --pico-h2-color: var(--fg);
+        --pico-h3-color: var(--fg);
+      }
+    }
 
+    /* ── Layout ── */
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-      min-height: 100vh;
+      max-width: 1320px;
     }
 
-    /* ── Header ── */
-    .site-header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 24px 20px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .header-inner {
-      max-width: 1100px;
-      margin: 0 auto;
+    /* ── Site header ── */
+    header {
       display: flex;
       align-items: baseline;
-      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 1.75rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
       flex-wrap: wrap;
-      gap: 8px;
     }
-    .header-title { font-size: 1.4rem; font-weight: 700; letter-spacing: -.02em; }
-    .header-meta  { font-size: .875rem; color: var(--text-muted); }
 
-    /* ── Main layout ── */
-    main { max-width: 1100px; margin: 0 auto; padding: 32px 20px 64px; }
-
-    /* ── Section headings ── */
-    .section-heading {
-      font-size: 1.1rem;
+    .site-name {
+      font-size: 1rem;
       font-weight: 700;
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      letter-spacing: -.025em;
+      margin: 0;
+      line-height: 1;
+      color: var(--fg);
     }
-    .section-heading + .card-grid { margin-bottom: 48px; }
 
-    /* ── Category filter ── */
-    .filter-row {
+    .header-meta {
+      font-size: .8rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* ── Section labels ── */
+    .section-label {
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 1.5rem 0 .6rem;
+    }
+
+    /* ── Filter bar ── */
+    .filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 20px;
+      gap: .3rem;
+      padding: .75rem 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0;
     }
-    .filter-btn {
-      padding: 6px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text-muted);
-      font-size: .8rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all .15s;
-      white-space: nowrap;
-    }
-    .filter-btn:hover  { border-color: var(--accent); color: var(--accent); }
-    .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-    /* ── Card grid ── */
+    .filter-btn {
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-family: var(--mono);
+      padding: .2rem .6rem;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: border-color .12s, color .12s, background .12s;
+      line-height: 1.7;
+      border-radius: 0;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--fg);
+      color: var(--fg);
+      background: transparent;
+    }
+
+    .filter-btn.active {
+      border-color: var(--fg);
+      background: var(--fg);
+      color: var(--bg);
+    }
+
+    /* ── Card grid (background = border colour trick for gapless grid) ── */
     .card-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    @media (max-width: 640px) {
-      .card-grid { grid-template-columns: 1fr; gap: 14px; }
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 10px;
+      background: var(--bg);
+      border: none;
+      margin-bottom: 2rem;
     }
 
     /* ── Card ── */
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-      box-shadow: var(--shadow);
+    article.card {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      transition: box-shadow .2s, transform .2s;
+      gap: .65rem;
+      padding: 1.25rem;
+      background: var(--surface);
+      position: relative;
       overflow: hidden;
+      /* reset pico article defaults */
+      border: 1px solid var(--border);
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0;
     }
-    .card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
-    .card.top-pick { border-left: 3px solid var(--gold); background: var(--surface); }
 
-    /* Card background image — blurred via ::before; 404s are invisible */
-    .card.has-image { position: relative; }
-    .card.has-image::before {
+    article.card>header,
+    article.card>footer {
+      border: none;
+      padding: 0;
+      margin: 0;
+      background: none;
+    }
+
+    /* Top-pick accent: inset left rule */
+    article.card.top-pick {
+      box-shadow: inset 3px 0 0 var(--fg);
+    }
+
+    /* ── Card background image ── */
+    article.card.has-image::before {
       content: "";
       position: absolute;
       inset: -12px;
@@ -126,265 +195,328 @@
       background-size: cover;
       background-position: center top;
       filter: blur(10px);
+      opacity: .28;
       z-index: 0;
     }
-    .card.has-image::after {
+
+    article.card.has-image::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(255,255,255,.80) 0%, rgba(255,255,255,.96) 55%, #fff 72%);
+      background: var(--surface);
+      opacity: .86;
       z-index: 1;
     }
-    .card.has-image > * { position: relative; z-index: 2; }
 
-    /* Card header row */
-    .card-header {
+    article.card.has-image>* {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ── Card top row ── */
+    .card-top {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      gap: 8px;
+      align-items: center;
+      gap: .5rem;
     }
-    .card-category {
-      font-size: .75rem;
-      font-weight: 600;
-      color: var(--text-muted);
+
+    .card-cat {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: .3rem;
+      font-size: .72rem;
+      font-weight: 500;
+      color: var(--muted);
     }
-    .top-pick-badge {
-      font-size: .7rem;
-      font-weight: 700;
-      color: var(--gold);
-      background: var(--gold-light);
-      padding: 2px 8px;
-      border-radius: 999px;
-      white-space: nowrap;
+
+    .card-cat svg {
+      width: 11px;
+      height: 11px;
+      stroke-width: 2.2;
+      flex-shrink: 0;
     }
-    .cost-badge {
-      font-size: .75rem;
+
+    .card-cost {
+      font-family: var(--mono);
+      font-size: .68rem;
       font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 999px;
+      padding: .1rem .45rem;
+      border: 1px solid var(--border);
+      color: var(--muted);
       white-space: nowrap;
       flex-shrink: 0;
     }
-    .cost-free { background: var(--green-light); color: var(--green); }
-    .cost-paid { background: var(--surface-alt); color: var(--text-muted); }
 
-    /* Title */
+    .card-cost.free {
+      border-color: var(--fg);
+      color: var(--fg);
+    }
+
+    /* ── Card title ── */
     .card-title {
-      font-size: 1rem;
+      font-size: .95rem;
       font-weight: 700;
       line-height: 1.3;
+      letter-spacing: -.02em;
+      margin: 0;
     }
-    .card-title a { color: var(--text); text-decoration: none; }
-    .card-title a:hover { color: var(--accent); }
 
-    /* Meta rows */
+    .card-title a {
+      color: var(--fg);
+      text-decoration: none;
+    }
+
+    .card-title a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px;
+    }
+
+    .top-mark {
+      color: var(--fg);
+      margin-right: .15rem;
+      font-style: normal;
+    }
+
+    /* ── Card meta ── */
     .card-meta {
       display: flex;
       flex-direction: column;
-      gap: 4px;
-      font-size: .85rem;
-      color: var(--text-muted);
-    }
-    .card-meta span { display: flex; align-items: flex-start; gap: 6px; }
-
-    /* Tags */
-    .card-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .tag {
-      font-size: .72rem;
-      padding: 2px 8px;
-      border-radius: 999px;
-      background: var(--accent-light);
-      color: var(--accent);
-      font-weight: 500;
+      gap: .2rem;
     }
 
-    /* Description */
+    .meta-row {
+      display: flex;
+      align-items: flex-start;
+      gap: .35rem;
+      font-size: .78rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .meta-row svg {
+      width: 11px;
+      height: 11px;
+      stroke-width: 2.2;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ── Description ── */
     .card-desc {
-      font-size: .875rem;
-      color: var(--text-muted);
+      font-size: .8rem;
+      color: var(--muted);
       line-height: 1.55;
+      margin: 0;
       flex-grow: 1;
+    }
+
+    /* ── Tags ── */
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .3rem;
+      margin-top: auto;
+      padding-top: .15rem;
+    }
+
+    .tag {
+      font-family: var(--mono);
+      font-size: .67rem;
+      padding: .1rem .42rem;
+      border: 1px solid var(--border);
+      color: var(--muted);
     }
 
     /* ── States ── */
     .state {
+      padding: 5rem 0;
       text-align: center;
-      padding: 64px 20px;
-      color: var(--text-muted);
+      color: var(--muted);
     }
-    .state-icon { font-size: 2.5rem; margin-bottom: 12px; }
-    .state h2   { font-size: 1.1rem; margin-bottom: 6px; color: var(--text); }
 
-    .hidden { display: none !important; }
+    .state h2 {
+      color: var(--fg);
+      font-size: .95rem;
+      font-weight: 600;
+      margin-bottom: .4rem;
+    }
+
+    .state p {
+      font-size: .85rem;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <div class="header-title" id="header-title">Loading…</div>
-    <div class="header-meta"  id="header-meta"></div>
-  </div>
-</header>
+  <header>
+    <span class="site-name">do things</span>
+    <span class="header-meta" id="header-meta">loading…</span>
+  </header>
 
-<main id="main">
-  <div class="state" id="loading-state">
-    <div class="state-icon">🔍</div>
-    <h2>Loading events…</h2>
-  </div>
-  <div class="state hidden" id="error-state">
-    <div class="state-icon">⚠️</div>
-    <h2 id="error-message">Could not load events</h2>
-    <p>Check back after the next Monday run.</p>
-  </div>
-  <div id="content" class="hidden">
-    <div id="top-picks-section">
-      <h2 class="section-heading">⭐ Top Picks</h2>
-      <div class="card-grid" id="top-picks-grid"></div>
+  <main>
+    <div class="state" id="loading-state">
+      <h2>loading…</h2>
     </div>
-    <h2 class="section-heading">📋 All Events</h2>
-    <div class="filter-row" id="filter-row"></div>
-    <div class="card-grid" id="all-events-grid"></div>
-  </div>
-</main>
 
-<script>
-  const CATEGORY_EMOJI = {
-    "Public Lecture":    "🎓",
-    "Workshop / Class":  "🛠️",
-    "Concert / Music":   "🎵",
-    "Social / Meetup":   "🤝",
-    "Arts / Exhibition": "🎨",
-    "Community / Other": "📌",
-  };
+    <div class="state hidden" id="error-state">
+      <h2 id="error-message">could not load events</h2>
+      <p>check back after the next monday run</p>
+    </div>
 
-  const TOP_PICK_THRESHOLD = 8;
+    <div id="content" class="hidden">
+      <div id="top-picks-section">
+        <div class="section-label">picks</div>
+        <div class="card-grid" id="top-picks-grid"></div>
+      </div>
 
-  function cacheBustParam() {
-    // Refreshes once per day — Monday's new data is always picked up same day
-    return new Date().toISOString().slice(0, 10);
-  }
+      <div class="section-label">all events</div>
+      <div class="filter-bar" id="filter-bar"></div>
+      <div class="card-grid" id="all-events-grid"></div>
+    </div>
+  </main>
 
-  function fmtDateRange(weekStart, weekEnd) {
-    const fmt = d => new Date(d + "T00:00:00").toLocaleDateString("en-AU", {
-      day: "numeric", month: "short"
-    });
-    return `${fmt(weekStart)} – ${fmt(weekEnd)}`;
-  }
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+    const CAT_ICON = {
+      "Public Lecture": "book-open",
+      "Workshop / Class": "wrench",
+      "Concert / Music": "music",
+      "Social / Meetup": "users",
+      "Arts / Exhibition": "palette",
+      "Community / Other": "compass",
+    };
 
-  function buildCard(event, isTopPick) {
-    const isFree = (event.cost || "").toLowerCase() === "free";
-    const emoji  = CATEGORY_EMOJI[event.category] || "📌";
+    const TOP_PICK_THRESHOLD = 8;
 
-    const card = document.createElement("div");
-    card.className = "card" + (isTopPick ? " top-pick" : "");
-    card.dataset.category = event.category || "";
-
-    const titleHtml = event.link
-      ? `<a href="${escHtml(event.link)}" target="_blank" rel="noopener">${escHtml(event.title)}</a>`
-      : escHtml(event.title);
-
-    const tagsHtml = (event.tags || []).slice(0, 6)
-      .map(t => `<span class="tag">${escHtml(t)}</span>`).join("");
-
-    if (event.image) {
-      card.style.setProperty("--event-image", `url('${escHtml(event.image)}')`);
-      card.classList.add("has-image");
+    function cacheBust() {
+      return new Date().toISOString().slice(0, 10);
     }
 
-    card.innerHTML = `
-      <div class="card-header">
-        <span class="card-category">${emoji} ${escHtml(event.category || "")}</span>
-        <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end">
-          ${isTopPick ? '<span class="top-pick-badge">⭐ Top Pick</span>' : ""}
-          <span class="cost-badge ${isFree ? "cost-free" : "cost-paid"}">${escHtml(event.cost || "—")}</span>
-        </div>
-      </div>
-      <div class="card-title">${titleHtml}</div>
-      <div class="card-meta">
-        <span>📆 ${escHtml(event.datetime || "—")}</span>
-        <span>📍 ${escHtml(event.location || "—")}</span>
-      </div>
-      ${tagsHtml ? `<div class="card-tags">${tagsHtml}</div>` : ""}
-      ${event.description ? `<p class="card-desc">${escHtml(event.description)}</p>` : ""}
-    `;
-    return card;
-  }
-
-  function escHtml(str) {
-    return String(str)
-      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-  }
-
-  function renderFilters(categories, allGrid) {
-    const row = document.getElementById("filter-row");
-    const all = ["All", ...categories];
-    all.forEach(cat => {
-      const btn = document.createElement("button");
-      btn.className = "filter-btn" + (cat === "All" ? " active" : "");
-      btn.textContent = (CATEGORY_EMOJI[cat] ? CATEGORY_EMOJI[cat] + " " : "") + cat;
-      btn.addEventListener("click", () => {
-        row.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        allGrid.querySelectorAll(".card").forEach(card => {
-          card.classList.toggle("hidden", cat !== "All" && card.dataset.category !== cat);
-        });
+    function fmtRange(a, b) {
+      const fmt = d => new Date(d + "T00:00:00").toLocaleDateString("en-AU", {
+        day: "numeric", month: "short"
       });
-      row.appendChild(btn);
-    });
-  }
+      return `${fmt(a)} – ${fmt(b)}`;
+    }
 
-  async function load() {
-    const params = new URLSearchParams(window.location.search);
-    const city   = params.get("city") || "brisbane";
-    const url    = `data/${city}.json?v=${cacheBustParam()}`;
+    function ic(name) {
+      return `<i data-lucide="${name}"></i>`;
+    }
 
-    try {
-      const res = await fetch(url);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
+    function esc(s) {
+      return String(s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
 
-      // Header
-      document.title = `${data.city} — This Week`;
-      document.getElementById("header-title").textContent = `${data.city} — This Week`;
-      document.getElementById("header-meta").textContent =
-        `${fmtDateRange(data.week_start, data.week_end)}  ·  ${data.events.length} events`;
+    function buildCard(ev, isTop) {
+      const free = (ev.cost || "").toLowerCase() === "free";
+      const catIcon = CAT_ICON[ev.category] || "compass";
+      const el = document.createElement("article");
 
-      const topPicks  = data.events.filter(e => (e.score || 0) >= TOP_PICK_THRESHOLD);
-      const remaining = data.events.filter(e => (e.score || 0) <  TOP_PICK_THRESHOLD);
+      el.className = "card" + (isTop ? " top-pick" : "");
+      el.dataset.category = ev.category || "";
 
-      // Top picks
-      const topGrid = document.getElementById("top-picks-grid");
-      if (topPicks.length > 0) {
-        topPicks.forEach(e => topGrid.appendChild(buildCard(e, true)));
-      } else {
-        document.getElementById("top-picks-section").classList.add("hidden");
+      if (ev.image) {
+        el.style.setProperty("--event-image", `url('${esc(ev.image)}')`);
+        el.classList.add("has-image");
       }
 
-      // All events
-      const allGrid  = document.getElementById("all-events-grid");
-      const cats     = [...new Set(remaining.map(e => e.category).filter(Boolean))];
-      renderFilters(cats, allGrid);
-      remaining.forEach(e => allGrid.appendChild(buildCard(e, false)));
+      const titleContent = ev.link
+        ? `<a href="${esc(ev.link)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
+        : esc(ev.title);
 
-      // Show content
-      document.getElementById("loading-state").classList.add("hidden");
-      document.getElementById("content").classList.remove("hidden");
+      const tagsHtml = (ev.tags || []).slice(0, 5)
+        .map(t => `<span class="tag">${esc(t)}</span>`).join("");
 
-    } catch (err) {
-      document.getElementById("loading-state").classList.add("hidden");
-      document.getElementById("error-message").textContent =
-        `Could not load events for "${city}": ${err.message}`;
-      document.getElementById("error-state").classList.remove("hidden");
+      el.innerHTML = `
+      <div class="card-top">
+        <span class="card-cat">${ic(catIcon)} ${esc(ev.category || "")}</span>
+        <span class="card-cost${free ? " free" : ""}">${free ? "free" : esc(ev.cost || "—")}</span>
+      </div>
+      <h3 class="card-title">${isTop ? '<em class="top-mark">✦</em>' : ""}${titleContent}</h3>
+      <div class="card-meta">
+        <span class="meta-row">${ic("calendar-days")} ${esc(ev.datetime || "—")}</span>
+        <span class="meta-row">${ic("map-pin")} ${esc(ev.location || "—")}</span>
+      </div>
+      ${ev.description ? `<p class="card-desc">${esc(ev.description)}</p>` : ""}
+      ${tagsHtml ? `<div class="card-tags">${tagsHtml}</div>` : ""}
+    `;
+      return el;
     }
-  }
 
-  load();
-</script>
+    function renderFilters(cats, grid) {
+      const bar = document.getElementById("filter-bar");
+      ["All", ...cats].forEach(cat => {
+        const btn = document.createElement("button");
+        btn.className = "filter-btn" + (cat === "All" ? " active" : "");
+        btn.textContent = cat;
+        btn.addEventListener("click", () => {
+          bar.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          grid.querySelectorAll(".card").forEach(c => {
+            c.classList.toggle("hidden", cat !== "All" && c.dataset.category !== cat);
+          });
+        });
+        bar.appendChild(btn);
+      });
+    }
+
+    async function load() {
+      const city = new URLSearchParams(location.search).get("city") || "brisbane";
+      try {
+        const res = await fetch(`data/${city}.json?v=${cacheBust()}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        document.title = `${data.city} — do things`;
+        document.getElementById("header-meta").textContent =
+          `in ${data.city} · ${fmtRange(data.week_start, data.week_end)} · ${data.events.length} events`;
+
+        const picks = data.events.filter(e => (e.score || 0) >= TOP_PICK_THRESHOLD);
+        const rest = data.events.filter(e => (e.score || 0) < TOP_PICK_THRESHOLD);
+
+        const topGrid = document.getElementById("top-picks-grid");
+        if (picks.length) {
+          picks.forEach(e => topGrid.appendChild(buildCard(e, true)));
+        } else {
+          document.getElementById("top-picks-section").classList.add("hidden");
+        }
+
+        const allGrid = document.getElementById("all-events-grid");
+        const cats = [...new Set(rest.map(e => e.category).filter(Boolean))];
+        renderFilters(cats, allGrid);
+        rest.forEach(e => allGrid.appendChild(buildCard(e, false)));
+
+        document.getElementById("loading-state").classList.add("hidden");
+        document.getElementById("content").classList.remove("hidden");
+
+        lucide.createIcons();
+
+      } catch (err) {
+        document.getElementById("loading-state").classList.add("hidden");
+        document.getElementById("error-message").textContent =
+          `could not load events for "${city}": ${err.message}`;
+        document.getElementById("error-state").classList.remove("hidden");
+      }
+    }
+
+    load();
+  </script>
 </body>
+
 </html>

@@ -1,17 +1,22 @@
 """
 Events collection — Step 1 of the digest pipeline.
 
-Searches event sources for a given city using the Claude API (with web search),
-curates and scores results, then writes data/{city}.json as the source of truth
-for all downstream steps (markdown, pages, messaging).
+Searches one tier of event sources for a given city using the Claude API (with web
+search) and writes a raw-text JSON file for that tier. Run three times in parallel
+(one per tier); curate.py then combines and scores the results.
 
-Run:          CITY=brisbane ANTHROPIC_API_KEY=... python src/collection.py
-Force re-run: FORCE=true CITY=brisbane ANTHROPIC_API_KEY=... python src/collection.py
+Run:
+  CITY=brisbane ANTHROPIC_API_KEY=... python src/collection.py aggregators
+  CITY=brisbane ANTHROPIC_API_KEY=... python src/collection.py institutions
+  CITY=brisbane ANTHROPIC_API_KEY=... python src/collection.py independents
+
+Force re-run:
+  FORCE=true CITY=brisbane ANTHROPIC_API_KEY=... python src/collection.py aggregators
 """
 
 import json
 import os
-import re
+import sys
 from datetime import date
 from pathlib import Path
 
@@ -19,7 +24,6 @@ import anthropic
 
 from common import (
     CATEGORIES,
-    TOP_PICK_THRESHOLD,
     fmt_date,
     get_week_range,
     load_city_config,
@@ -33,13 +37,19 @@ from common import (
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 CITY              = os.environ["CITY"]
 
+TIER = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("TIER", "")
+if TIER not in ("aggregators", "institutions", "independents"):
+    raise SystemExit(
+        "Usage: collection.py <aggregators|institutions|independents>\n"
+        "       (or set TIER env var)"
+    )
+
 SEARCH_MODEL     = "claude-sonnet-4-6"
-FORMAT_MODEL     = "claude-haiku-4-5-20251001"
 MAX_WEB_SEARCHES = 12
 
 _city_cfg = load_city_config(CITY)
 CITY_NAME = _city_cfg["name"]
-SOURCES   = _city_cfg["sources"]
+SOURCES   = _city_cfg["sources"][TIER]
 
 INTERESTS = """
 WANT:
@@ -70,51 +80,23 @@ SKIP ENTIRELY — do not include:
   - Online-only events unless strongly tied to the local community
 """
 
-FORMAT_SYSTEM = f"""You are a personal events curator for someone in Brisbane with these interests:
-{INTERESTS}
-
-The user will give you a list of Brisbane events described in free text from a web search.
-
-Your job:
-1. FILTER: Remove any remaining sports, MLM, sales-pitch, or duplicate events.
-   For duplicates (same event from multiple sources), keep only the entry with the best direct URL.
-2. CURATE: For each remaining event, produce the following fields:
-   - title:       event name (string)
-   - datetime:    date and time as a short string, e.g. "Sat 14 Jun, 7:00 PM"
-   - location:    venue name and/or suburb (string)
-   - link:        direct URL to the event page (string; use "" if unknown)
-   - category:    exactly one of {CATEGORIES}
-   - cost:        "Free" or the price, e.g. "$25" (string)
-   - source:      website or organisation name (string)
-   - description: 2–3 sentences describing what the event actually is — what happens,
-                  who runs it, what to expect. Be specific, not generic.
-   - tags:        3–6 short lowercase topic tags reflecting subject matter, format, and cost,
-                  e.g. ["philosophy", "lecture", "free", "q&a"] or ["art", "workshop", "beginners"]
-   - score:       integer 1–10 rating fit with the user's interests (10 = perfect match,
-                  1 = barely relevant). Be honest — not everything deserves an 8.
-   - why:         ONE concrete sentence on why THIS specific event is worth attending.
-                  Be specific: mention the speaker, the format, the crowd, what makes it
-                  stand out. Do NOT write generic phrases like "a great opportunity to learn".
-   - image:       direct URL to a preview/hero image for the event (e.g. from the event page
-                  or venue website). Use "" if none is available. Must be a full https:// URL.
-
-3. OUTPUT: A valid JSON array sorted by score descending. No markdown, no explanation, no code fences.
-
-Example element:
-{{
-  "title": "Philosophy of Mind: AI and Consciousness",
-  "datetime": "Mon 12 May, 7:00 PM",
-  "location": "UQ St Lucia, Building 9",
-  "link": "https://events.uq.edu.au/...",
-  "category": "Public Lecture",
-  "cost": "Free",
-  "source": "UQ Events",
-  "description": "UQ's Professor of Philosophy presents her latest research on the hard problem of consciousness and what AI systems can and cannot tell us about subjective experience. Aimed at a general audience; no background in philosophy required. Followed by 30-minute open Q&A.",
-  "tags": ["philosophy", "consciousness", "ai", "lecture", "free", "q&a"],
-  "score": 9,
-  "why": "One of UQ's leading philosophers speaking publicly on a genuinely hard topic — the Q&A format means you can actually engage with her.",
-  "image": "https://events.uq.edu.au/images/philosophy-lecture.jpg"
-}}"""
+_TIER_INSTRUCTIONS = {
+    "aggregators": (
+        "These sources often list the same events as each other. "
+        f"Batch them into 1–2 broad `site:A OR site:B` queries — "
+        "you do not need to search every source individually."
+    ),
+    "institutions": (
+        "Each institution runs its own independent programme. "
+        "Check every source. Batch by type where sensible "
+        "(e.g. universities together, major venues together)."
+    ),
+    "independents": (
+        "These are niche venues whose events rarely appear in aggregators. "
+        "Check every source. Small `site:A OR site:B` batches are fine "
+        "where sources are closely related, but don't skip any."
+    ),
+}
 
 
 # ---------------------------------------------------------------------------
@@ -122,11 +104,11 @@ Example element:
 # ---------------------------------------------------------------------------
 
 def already_collected_this_week() -> bool:
-    json_path = Path(__file__).parent.parent / "data" / f"{CITY}.json"
-    if not json_path.exists():
+    raw_path = Path(__file__).parent.parent / "data" / f"{CITY}_{TIER}_raw.json"
+    if not raw_path.exists():
         return False
     try:
-        payload = json.loads(json_path.read_text(encoding="utf-8"))
+        payload = json.loads(raw_path.read_text(encoding="utf-8"))
         monday, _ = get_week_range()
         return payload.get("week_start") == monday.isoformat()
     except (json.JSONDecodeError, KeyError):
@@ -134,11 +116,14 @@ def already_collected_this_week() -> bool:
 
 
 # ---------------------------------------------------------------------------
-# Step 1: Search web for events (free-text output — no JSON constraint)
+# Step 1: Search web for events (free-text output)
 # ---------------------------------------------------------------------------
 
 def build_search_prompt(monday: date, sunday: date) -> str:
     today = date.today()
+    tier_instruction = _TIER_INSTRUCTIONS[TIER]
+    source_list = "\n".join(f"  - {s}" for s in SOURCES)
+
     return f"""You are an events researcher for {CITY_NAME}. Today is {today.strftime('%A, %-d %B %Y')}.
 Your job is to find in-person events happening THIS WEEK in {CITY_NAME}:
 {fmt_date(monday)} to {fmt_date(sunday)}.
@@ -146,16 +131,14 @@ Your job is to find in-person events happening THIS WEEK in {CITY_NAME}:
 The person receiving this digest has the following interests:
 {INTERESTS}
 
-Sources to search:
+Sources to search ({TIER.upper()}):
+{tier_instruction}
 
-{chr(10).join(f"  - {s}" for s in SOURCES)}
+{source_list}
 
-Search strategy — you have a budget of {MAX_WEB_SEARCHES} web searches, so batch related
-sources into single queries using `site:` operators and boolean OR. For example:
+Search strategy — you have a budget of {MAX_WEB_SEARCHES} web searches, so use
+`site:` operators and boolean OR to batch related sources. For example:
   site:eventbrite.com.au OR site:eventfinda.com.au Brisbane events {fmt_date(monday)} to {fmt_date(sunday)}
-  site:qpac.com.au OR site:brisbanepowerhouse.org OR site:queenslandtheatre.com.au whats-on May 2026
-Group logically: event aggregators together, major venues together, universities together, bars/cafes together.
-This lets you cover all sources in far fewer searches.
 
 For each event you find, note:
   - Event name
@@ -170,7 +153,7 @@ For each event you find, note:
 Rules:
   - Only include events within {fmt_date(monday)} – {fmt_date(sunday)}.
   - Apply the SKIP rules above — do not list sports, MLM, or sales-pitch events.
-  - Aim for at least 20 events across different categories and suburbs.
+  - Aim for at least 15 events.
   - Include the direct URL for every event you list.
 """
 
@@ -178,7 +161,7 @@ Rules:
 def search_events(monday: date, sunday: date) -> str:
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
-    print(f"→ Step 1: Searching web for {CITY_NAME} events…")
+    print(f"  → Searching {TIER} sources…")
     response = client.messages.create(
         model=SEARCH_MODEL,
         max_tokens=8000,
@@ -196,105 +179,37 @@ def search_events(monday: date, sunday: date) -> str:
         }],
     )
 
-    # web_search_20250305 is a server-side tool; calls appear as "server_tool_use" blocks,
-    # not "tool_use" blocks (results appear as "web_search_tool_result").
     search_calls = sum(1 for b in response.content if b.type == "server_tool_use")
-    print(f"→ Agent performed {search_calls} web search(es)")
+    print(f"  → [{TIER}] {search_calls} web search(es)")
 
     raw = "".join(b.text for b in response.content if b.type == "text")
 
     if len(raw) < 500:
         raise RuntimeError(
-            f"Search output too short ({len(raw)} chars) — model likely did not search the web. "
-            "Check ANTHROPIC_API_KEY and web_search tool availability."
+            f"[{TIER}] Search output too short ({len(raw)} chars) — model likely did not "
+            "search the web. Check ANTHROPIC_API_KEY and web_search tool availability."
         )
 
     return raw
 
 
 # ---------------------------------------------------------------------------
-# Step 2: Curate, score, enrich, and format as JSON
+# Write data/{city}_{tier}_raw.json
 # ---------------------------------------------------------------------------
 
-def parse_events(raw_text: str) -> list[dict]:
-    if not raw_text.strip():
-        return []
-
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-
-    print("→ Step 2: Curating and enriching events…")
-    response = client.messages.create(
-        model=FORMAT_MODEL,
-        max_tokens=8192,
-        system=FORMAT_SYSTEM,
-        messages=[{
-            "role": "user",
-            "content": raw_text,
-        }],
-    )
-
-    if response.stop_reason == "max_tokens":
-        print("⚠ Curator response was truncated — will attempt partial recovery")
-
-    raw = "".join(b.text for b in response.content if b.type == "text")
-    raw = re.sub(r"```json|```", "", raw).strip()
-
-    start = raw.find("[")
-    if start == -1:
-        print("✗ No JSON array found in curator response. Raw output:")
-        print(raw[:500])
-        return []
-
-    json_str = raw[start:]
-    # Trim to last closing bracket if present
-    end = json_str.rfind("]")
-    if end != -1:
-        json_str = json_str[:end + 1]
-
-    try:
-        events = json.loads(json_str)
-    except json.JSONDecodeError:
-        last_complete = json_str.rfind("},")
-        if last_complete == -1:
-            print("✗ JSONDecodeError and no recovery point found")
-            return []
-        json_str = json_str[:last_complete + 1] + "]"
-        try:
-            events = json.loads(json_str)
-            print(f"⚠ Recovered {len(events)} events from truncated response")
-        except json.JSONDecodeError:
-            print("✗ Could not recover from truncated JSON")
-            return []
-
-    print(f"→ {len(events)} events after curation")
-    top = sum(1 for e in events if e.get("score", 0) >= TOP_PICK_THRESHOLD)
-    print(f"→ {top} top picks (score ≥ {TOP_PICK_THRESHOLD})")
-    return events
-
-
-def fetch_events(monday: date, sunday: date) -> list[dict]:
-    raw_text = search_events(monday, sunday)
-    return parse_events(raw_text)
-
-
-# ---------------------------------------------------------------------------
-# Write data/{city}.json — source of truth for all downstream steps
-# ---------------------------------------------------------------------------
-
-def write_json(events: list[dict], monday: date, sunday: date) -> Path:
+def write_raw_json(raw_text: str, monday: date, sunday: date) -> Path:
     payload = {
-        "city":         CITY_NAME,
-        "city_key":     CITY,
-        "week_start":   monday.isoformat(),
-        "week_end":     sunday.isoformat(),
-        "generated_at": date.today().isoformat(),
-        "events":       events,
+        "city_key":   CITY,
+        "tier":       TIER,
+        "week_start": monday.isoformat(),
+        "week_end":   sunday.isoformat(),
+        "raw_text":   raw_text,
     }
     out_dir = Path(__file__).parent.parent / "data"
     out_dir.mkdir(exist_ok=True)
-    out_path = out_dir / f"{CITY}.json"
+    out_path = out_dir / f"{CITY}_{TIER}_raw.json"
     out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"→ Written {out_path} ({len(events)} events)")
+    print(f"  → Written {out_path.name}")
     return out_path
 
 
@@ -305,17 +220,16 @@ def write_json(events: list[dict], monday: date, sunday: date) -> Path:
 def main() -> None:
     force = os.environ.get("FORCE", "").lower() in ("1", "true", "yes")
     if not force and already_collected_this_week():
-        print("→ Already collected for this week — skipping. Set FORCE=true to re-collect.")
+        print(f"  → [{TIER}] Already collected for this week — skipping. Set FORCE=true to re-collect.")
         return
 
     monday, sunday = get_week_range()
-    print(f"Collection — {CITY_NAME} — {fmt_date(monday)} to {fmt_date(sunday)}")
-    print("=" * 50)
+    print(f"[{TIER}] {CITY_NAME} — {fmt_date(monday)} to {fmt_date(sunday)}")
 
-    events = fetch_events(monday, sunday)
-    write_json(events, monday, sunday)
+    raw_text = search_events(monday, sunday)
+    write_raw_json(raw_text, monday, sunday)
 
-    print("✓ Collection complete.")
+    print(f"  ✓ [{TIER}] Collection complete.")
 
 
 if __name__ == "__main__":

@@ -66,12 +66,23 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Collect events
+      - name: Collect events (parallel)
         env:
-          CITY:              ${{ inputs.city }}
+          CITY: ${{ inputs.city }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          FORCE:             ${{ inputs.force }}
-        run: python src/collection.py
+          FORCE: ${{ inputs.force }}
+        run: |
+          python src/collection.py aggregators  &
+          python src/collection.py institutions &
+          python src/collection.py independents &
+          wait
+
+      - name: Curate events
+        env:
+          CITY: ${{ inputs.city }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE: ${{ inputs.force }}
+        run: python src/curate.py
 
       - name: Write markdown
         run: python src/markdown.py
@@ -85,15 +96,20 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "data/${CITY}.json" "${CITY^^}.md" "data/index.json"
+          git add "data/${CITY}.json" \
+                  "data/${CITY}_aggregators_raw.json" \
+                  "data/${CITY}_institutions_raw.json" \
+                  "data/${CITY}_independents_raw.json" \
+                  "${CITY^^}.md" "data/index.json"
           git diff --cached --quiet || git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           git push
 
       - name: Send WhatsApp digest
         continue-on-error: true
+        if: false
         env:
-          CITY:               ${{ inputs.city }}
-          WHATSAPP_TOKEN:     ${{ secrets.WHATSAPP_TOKEN }}
-          WHATSAPP_PHONE_ID:  ${{ secrets.WHATSAPP_PHONE_ID }}
+          CITY: ${{ inputs.city }}
+          WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
+          WHATSAPP_PHONE_ID: ${{ secrets.WHATSAPP_PHONE_ID }}
           WHATSAPP_RECIPIENT: ${{ inputs.recipient != '' && inputs.recipient || secrets.WHATSAPP_RECIPIENT }}
         run: python src/messaging.py
