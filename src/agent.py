@@ -172,7 +172,7 @@ def search_events(monday: date, sunday: date) -> tuple[str, int]:
     response = client.messages.create(
         model=SEARCH_MODEL,
         max_tokens=8000,
-        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": MAX_WEB_SEARCHES}],
+        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": int(len(_city_cfg["sources"]) * 1.3)}],
         tool_choice={"type": "any"},
         system=build_search_prompt(monday, sunday),
         messages=[{
