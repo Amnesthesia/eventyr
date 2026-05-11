@@ -35,7 +35,7 @@ CITY              = os.environ["CITY"]
 
 SEARCH_MODEL     = "claude-sonnet-4-6"
 FORMAT_MODEL     = "claude-haiku-4-5-20251001"
-MAX_WEB_SEARCHES = 30
+MAX_WEB_SEARCHES = 12
 
 _city_cfg = load_city_config(CITY)
 CITY_NAME = _city_cfg["name"]
@@ -146,9 +146,16 @@ Your job is to find in-person events happening THIS WEEK in {CITY_NAME}:
 The person receiving this digest has the following interests:
 {INTERESTS}
 
-Search these sources thoroughly using web search:
+Sources to search:
 
-{chr(10).join(f"  {i+1}. {s}" for i, s in enumerate(SOURCES))}
+{chr(10).join(f"  - {s}" for s in SOURCES)}
+
+Search strategy — you have a budget of {MAX_WEB_SEARCHES} web searches, so batch related
+sources into single queries using `site:` operators and boolean OR. For example:
+  site:eventbrite.com.au OR site:eventfinda.com.au Brisbane events {fmt_date(monday)} to {fmt_date(sunday)}
+  site:qpac.com.au OR site:brisbanepowerhouse.org OR site:queenslandtheatre.com.au whats-on May 2026
+Group logically: event aggregators together, major venues together, universities together, bars/cafes together.
+This lets you cover all sources in far fewer searches.
 
 For each event you find, note:
   - Event name
@@ -164,7 +171,6 @@ Rules:
   - Only include events within {fmt_date(monday)} – {fmt_date(sunday)}.
   - Apply the SKIP rules above — do not list sports, MLM, or sales-pitch events.
   - Aim for at least 20 events across different categories and suburbs.
-  - Search multiple sources — don't stop after the first few results.
   - Include the direct URL for every event you list.
 """
 
@@ -177,7 +183,7 @@ def search_events(monday: date, sunday: date) -> str:
         model=SEARCH_MODEL,
         max_tokens=8000,
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": MAX_WEB_SEARCHES}],
-        tool_choice={"type": "tool", "name": "web_search"},
+        tool_choice={"type": "any"},
         system=build_search_prompt(monday, sunday),
         messages=[{
             "role": "user",
@@ -190,16 +196,19 @@ def search_events(monday: date, sunday: date) -> str:
         }],
     )
 
-    search_calls = sum(1 for b in response.content if b.type == "tool_use")
+    # web_search_20250305 is a server-side tool; calls appear as "server_tool_use" blocks,
+    # not "tool_use" blocks (results appear as "web_search_tool_result").
+    search_calls = sum(1 for b in response.content if b.type == "server_tool_use")
     print(f"→ Agent performed {search_calls} web search(es)")
 
-    if search_calls == 0:
+    raw = "".join(b.text for b in response.content if b.type == "text")
+
+    if len(raw) < 500:
         raise RuntimeError(
-            "Search agent performed 0 web searches — no live data collected. "
-            "The model may have answered from training data. Aborting."
+            f"Search output too short ({len(raw)} chars) — model likely did not search the web. "
+            "Check ANTHROPIC_API_KEY and web_search tool availability."
         )
 
-    raw = "".join(b.text for b in response.content if b.type == "text")
     return raw
 
 
