@@ -27,7 +27,7 @@ WA_TOKEN          = os.environ["WHATSAPP_TOKEN"]          # Meta permanent acces
 WA_PHONE_ID       = os.environ["WHATSAPP_PHONE_ID"]       # Sending phone number ID
 WA_TO             = os.environ["WHATSAPP_RECIPIENT"]      # Your number, e.g. 61412345678
 
-MODEL = "claude-sonnet-4-20250514"
+MODEL = "claude-sonnet-4-5-20250929"
 
 SOURCES = [
     "Queensland State Library (slq.qld.gov.au)",
