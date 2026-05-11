@@ -326,19 +326,68 @@ CATEGORY_EMOJI = {
 }
 
 TOP_PICK_THRESHOLD = 8
-MAX_TOP_PICKS = 6
+MAX_CHARS = 4000  # WhatsApp hard limit is 4096; leave a safe margin
 
 
-def _fmt_tags(tags: list) -> str:
-    return "  🏷 " + " · ".join(str(t) for t in tags[:6])
+def _tags_line(tags: list) -> str:
+    return "  🏷 " + " · ".join(str(t) for t in tags[:6]) + "\n"
+
+
+def _entry_top_pick(e: dict) -> str:
+    """Full entry for a top-pick event: datetime, cost, location, tags, why, description, link."""
+    cat    = e.get("category", "Community / Other")
+    emoji  = CATEGORY_EMOJI.get(cat, "📌")
+    cost   = e.get("cost", "See link")
+    cost_s = "Free ✓" if cost.lower() == "free" else cost
+    tags   = e.get("tags", [])
+    why    = e.get("why", "")
+    desc   = e.get("description", "")
+
+    s  = f"• *{e.get('title', 'Untitled')}*\n"
+    s += f"  {emoji} {e.get('datetime', '—')}  ·  💰 {cost_s}\n"
+    s += f"  📍 {e.get('location', '—')}\n"
+    if tags:
+        s += _tags_line(tags)
+    if why:
+        s += f"  💡 _{why}_\n"
+    if desc:
+        s += f"  {desc}\n"
+    s += f"  🔗 {e.get('link', '')}\n\n"
+    return s
+
+
+def _entry_full(e: dict) -> str:
+    """Compact entry for the full list: datetime, cost, location, tags, description, link."""
+    cost   = e.get("cost", "See link")
+    cost_s = "Free ✓" if cost.lower() == "free" else cost
+    tags   = e.get("tags", [])
+    desc   = e.get("description", "")
+
+    s  = f"• *{e.get('title', 'Untitled')}*\n"
+    s += f"  📆 {e.get('datetime', '—')}  ·  💰 {cost_s}\n"
+    s += f"  📍 {e.get('location', '—')}\n"
+    if tags:
+        s += _tags_line(tags)
+    if desc:
+        s += f"  {desc}\n"
+    s += f"  🔗 {e.get('link', '')}\n\n"
+    return s
+
+
+def _append(messages: list[str], current: str, entry: str, continuation_header: str) -> str:
+    """Append entry to current message, flushing to messages if it would exceed MAX_CHARS."""
+    if len(current) + len(entry) > MAX_CHARS:
+        messages.append(current.strip())
+        return continuation_header + entry
+    return current + entry
 
 
 def format_whatsapp(events: list[dict], monday: date, sunday: date) -> list[str]:
     """
-    Returns a list of WhatsApp message strings (≤ 4096 chars each).
+    Returns a list of WhatsApp messages, each ≤ MAX_CHARS.
 
-    Message 1: header + top picks (score ≥ 8) with full detail including why + description
-    Message 2+: remaining events grouped by category with description + tags
+    First message(s): ⭐ Top Picks (score ≥ 8), all of them, split across messages if needed.
+    Remaining message(s): full event list grouped by category.
     """
     if not events:
         return [
@@ -346,48 +395,28 @@ def format_whatsapp(events: list[dict], monday: date, sunday: date) -> list[str]
             "No events found this week. Check back next Monday!"
         ]
 
-    top_picks   = [e for e in events if e.get("score", 0) >= TOP_PICK_THRESHOLD][:MAX_TOP_PICKS]
-    top_ids     = {id(e) for e in top_picks}
-    remaining   = [e for e in events if id(e) not in top_ids]
+    top_picks = [e for e in events if e.get("score", 0) >= TOP_PICK_THRESHOLD]
+    remaining = [e for e in events if e.get("score", 0) < TOP_PICK_THRESHOLD]
 
-    # ── Message 1: Top Picks ──────────────────────────────────────────────────
+    messages: list[str] = []
+
+    # ── Top picks (all of them, split at event boundaries) ───────────────────
     header = (
         f"📅 *Brisbane This Week*\n"
         f"{fmt_date(monday)} – {fmt_date(sunday)}\n"
         f"⭐ {len(top_picks)} top picks  ·  {len(events)} events found\n"
-        f"{'─' * 28}"
+        f"{'─' * 28}\n\n"
+        f"⭐ *TOP PICKS*\n\n"
     )
+    current = header
 
-    msg1 = header + "\n\n"
+    for e in top_picks:
+        current = _append(messages, current, _entry_top_pick(e), "⭐ *TOP PICKS (cont.)*\n\n")
 
-    if top_picks:
-        msg1 += "⭐ *TOP PICKS*\n\n"
-        for e in top_picks:
-            cat    = e.get("category", "Community / Other")
-            emoji  = CATEGORY_EMOJI.get(cat, "📌")
-            cost   = e.get("cost", "See link")
-            cost_s = "Free ✓" if cost.lower() == "free" else cost
-            tags   = e.get("tags", [])
-            desc   = e.get("description", "")
-            why    = e.get("why", "")
+    if current.strip():
+        messages.append(current.strip())
 
-            entry = (
-                f"• *{e.get('title', 'Untitled')}*\n"
-                f"  {emoji} {e.get('datetime', '—')}  ·  {e.get('location', '—')}  ·  {cost_s}\n"
-            )
-            if tags:
-                entry += _fmt_tags(tags) + "\n"
-            if desc:
-                entry += f"  {desc}\n"
-            if why:
-                entry += f"  💡 _{why}_\n"
-            entry += f"  🔗 {e.get('link', '')}\n\n"
-
-            msg1 += entry
-
-    messages = [msg1.strip()]
-
-    # ── Message 2+: Remaining events by category ──────────────────────────────
+    # ── Full list (grouped by category, split at event boundaries) ───────────
     if not remaining:
         return messages
 
@@ -398,32 +427,17 @@ def format_whatsapp(events: list[dict], monday: date, sunday: date) -> list[str]
     current = "📋 *All Events This Week*\n\n"
 
     for cat, cat_events in by_cat.items():
-        emoji   = CATEGORY_EMOJI.get(cat, "📌")
-        section = f"*{emoji} {cat}*\n"
+        emoji      = CATEGORY_EMOJI.get(cat, "📌")
+        cat_header = f"*{emoji} {cat}*\n"
+
+        if len(current) + len(cat_header) > MAX_CHARS:
+            messages.append(current.strip())
+            current = cat_header
+        else:
+            current += cat_header
 
         for e in cat_events:
-            cost   = e.get("cost", "See link")
-            cost_s = "Free ✓" if cost.lower() == "free" else cost
-            tags   = e.get("tags", [])
-            desc   = e.get("description", "")
-
-            entry = (
-                f"• *{e.get('title', 'Untitled')}*\n"
-                f"  📆 {e.get('datetime', '—')}  ·  📍 {e.get('location', '—')}  ·  💰 {cost_s}\n"
-            )
-            if tags:
-                entry += _fmt_tags(tags) + "\n"
-            if desc:
-                entry += f"  {desc}\n"
-            entry += f"  🔗 {e.get('link', '')}\n\n"
-
-            section += entry
-
-        if len(current) + len(section) > 3800:
-            messages.append(current.strip())
-            current = section
-        else:
-            current += section
+            current = _append(messages, current, _entry_full(e), "")
 
     if current.strip():
         messages.append(current.strip())
