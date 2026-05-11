@@ -15,64 +15,6 @@ A GitHub Actions job that runs every Monday morning, searches Brisbane event sou
 
 > **Note:** Facebook and Instagram Events cannot be scraped — Meta blocks all automated access.
 
-## Setup
-
-### 1. Get an Anthropic API key
-
-1. Go to [console.anthropic.com](https://console.anthropic.com)
-2. Create an API key
-3. Add some credit (each weekly run costs roughly $0.05–$0.20)
-
-### 2. Set up WhatsApp Cloud API (Meta)
-
-This is the trickiest part — set aside about 15–20 minutes.
-
-1. Go to [developers.facebook.com](https://developers.facebook.com) and create a free account
-2. Create a new app → choose **Business** type
-3. Add the **WhatsApp** product to your app
-4. In the WhatsApp setup, you'll find:
-   - A **test phone number** (the sender) — copy its **Phone Number ID**
-   - A temporary **access token** — generate a permanent one (see below)
-5. Add your own WhatsApp number as a **recipient** in the test section and verify it
-
-**Getting a permanent access token:**
-- In your Meta app dashboard → Settings → Advanced → create a **System User**
-- Generate a token for that system user with `whatsapp_business_messaging` permission
-- This token doesn't expire
-
-Your recipient number must include the country code with no `+` or spaces, e.g. `61412345678` for an Australian number.
-
-### 3. Create the GitHub repo
-
-```bash
-git init brisbane-events
-cd brisbane-events
-# copy these files in
-git add .
-git commit -m "Initial commit"
-gh repo create brisbane-events --private --push --source=.
-```
-
-Or create the repo on GitHub first, then push.
-
-### 4. Add secrets to GitHub
-
-Go to your repo → **Settings → Secrets and variables → Actions → New repository secret**
-
-Add these four secrets:
-
-| Secret name            | Value                                      |
-|------------------------|--------------------------------------------|
-| `ANTHROPIC_API_KEY`    | Your Anthropic API key                     |
-| `WHATSAPP_TOKEN`       | Your Meta permanent system user token      |
-| `WHATSAPP_PHONE_ID`    | Phone Number ID from WhatsApp setup        |
-| `WHATSAPP_RECIPIENT`   | Your WhatsApp number, e.g. `61412345678`   |
-
-### 5. Test it manually
-
-In your GitHub repo → **Actions → Brisbane Events — Weekly Digest → Run workflow**
-
-Check the logs to see how many events the agent found, then check your WhatsApp.
 
 ## Schedule
 
