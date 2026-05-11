@@ -95,7 +95,15 @@ WANT:
   - Creative workshops and classes (art, writing, music, craft)
   - Social events to meet interesting people (meetups, community dinners, book clubs, open mics)
   - Live music, comedy, theatre, and immersive art experiences
-  - Free or low-cost community events
+
+PREFER:
+  - Smaller events over massive crowds
+  - Creative or hands-on workshops
+  - Events where conversation between strangers is natural
+  - Events with recurring communities or regular attendees
+  - Authentic subcultures over polished corporate experiences
+  - Mixed-age crowds with thoughtful or interesting people
+  - Events that feel exploratory, creative, intellectually alive, or inspiring
 
 SKIP entirely — do not include:
   - Spectator sports of any kind (rugby, cricket, football, racing, etc.)
@@ -103,6 +111,40 @@ SKIP entirely — do not include:
   - Paid seminars that are actually sales pitches or upsell funnels
   - Corporate networking or recruitment events
   - Online-only events (unless hosted by a Brisbane organisation for a Brisbane audience)
+  - Generic nightclub events or heavy drinking culture
+  - Generic corporate networking events
+  - Recruitment events or career expos
+  - "Business opportunity" seminars, MLMs, hustle culture, crypto hype, or sales funnels
+"""
+
+INTERESTS_VERBOSE = """
+WANT:
+  - Intellectually stimulating talks, lectures, salons, workshops, panels, and debates focused on science, philosophy, psychology, technology, systems thinking, futurism, culture, design, history, AI, human behavior, or creativity
+  - Events that attract curious, thoughtful, open-minded, creative, adventurous, or intellectually engaged people rather than purely corporate audiences
+  - Community-oriented recurring events where people naturally talk before/after: book clubs, philosophy groups, writing circles, language exchanges, discussion salons, coworking socials, maker spaces, creative communities
+  - Creative or hands-on workshops: photography, writing, pottery, drawing, music, woodworking, craft, electronics, robotics, fermentation, gardening, maker/hacker culture
+  - Live experiences with strong atmosphere or artistic value: indie music, jazz, folk, intimate gigs, immersive theatre, art exhibitions, experimental performances, film screenings, comedy
+  - Outdoor and adventure-oriented social events like hiking groups, trail running, climbing, scuba/freediving, paragliding, camping, adventure travel, nature excursions
+  - Wellness-oriented events only if grounded and socially authentic: yoga, breathwork, meditation, sauna, movement workshops, but avoid overly commercial or cult-like spirituality
+  - Free or low-cost local community events preferred
+
+PREFER:
+  - Smaller events over massive crowds
+  - Events where conversation between strangers is natural
+  - Events with recurring communities or regular attendees
+  - Authentic subcultures over polished corporate experiences
+  - Mixed-age crowds with thoughtful or interesting people
+  - Events that feel exploratory, creative, intellectually alive, or inspiring
+
+SKIP ENTIRELY - do not include:
+  - Spectator sports of any kind
+  - Generic corporate networking events
+  - Recruitment events or career expos
+  - "Business opportunity" seminars, MLMs, hustle culture, crypto hype, or sales funnels
+  - Ultra-touristy events designed mainly for Instagram/photos
+  - Generic nightclub events or heavy drinking culture
+  - Influencer-style wellness events with little substance
+  - Online-only events unless strongly tied to the Brisbane local community
 """
 
 
