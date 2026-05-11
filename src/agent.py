@@ -461,7 +461,9 @@ def write_markdown(events: list[dict], monday: date, sunday: date) -> Path:
 
             title = e.get("title", "Untitled")
             lines.append(f"### {emoji} [{title}]({link})" if link else f"### {emoji} {title}")
-            lines.append(f"**{e.get('datetime', '—')}** · 📍 {e.get('location', '—')} · 💰 {cost_s}")
+            lines.append(f"📆 {e.get('datetime', '—')}")
+            lines.append(f"📍 {e.get('location', '—')}")
+            lines.append(f"💰 {cost_s}")
             if tags:
                 lines.append("`" + "` `".join(tags[:6]) + "`")
             if desc := e.get("description", ""):
@@ -488,7 +490,9 @@ def write_markdown(events: list[dict], monday: date, sunday: date) -> Path:
 
                 title = e.get("title", "Untitled")
                 lines.append(f"#### [{title}]({link})" if link else f"#### {title}")
-                lines.append(f"**{e.get('datetime', '—')}** · 📍 {e.get('location', '—')} · 💰 {cost_s}")
+                lines.append(f"📆 {e.get('datetime', '—')}")
+                lines.append(f"📍 {e.get('location', '—')}")
+                lines.append(f"💰 {cost_s}")
                 if tags:
                     lines.append("`" + "` `".join(tags[:6]) + "`")
                 if desc := e.get("description", ""):
