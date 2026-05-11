@@ -30,8 +30,9 @@ WA_PHONE_ID       = os.environ["WHATSAPP_PHONE_ID"]       # Sending phone number
 WA_TO             = [n.strip() for n in os.environ["WHATSAPP_RECIPIENT"].split(",") if n.strip()]
 CITY              = os.environ["CITY"]                    # City slug matching a key in sources.yml
 
-SEARCH_MODEL = "claude-opus-4-7"   # thorough web search + reasoning
-FORMAT_MODEL = "claude-sonnet-4-6" # curation, scoring, description writing
+SEARCH_MODEL = "claude-sonnet-4-6" # web search + reasoning
+FORMAT_MODEL = "claude-haiku-4-5-20251001" # curation, scoring, description writing
+MAX_WEB_SEARCHES = 30
 
 # Load city config from sources.yml
 _sources_path = Path(__file__).parent.parent / "sources.yml"
@@ -171,7 +172,7 @@ def search_events(monday: date, sunday: date) -> tuple[str, int]:
     response = client.messages.create(
         model=SEARCH_MODEL,
         max_tokens=8000,
-        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 30}],
+        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": MAX_WEB_SEARCHES}],
         tool_choice={"type": "any"},
         system=build_search_prompt(monday, sunday),
         messages=[{
@@ -461,9 +462,9 @@ def write_markdown(events: list[dict], monday: date, sunday: date) -> Path:
 
             title = e.get("title", "Untitled")
             lines.append(f"### {emoji} [{title}]({link})" if link else f"### {emoji} {title}")
-            lines.append(f"📆 {e.get('datetime', '—')}")
-            lines.append(f"📍 {e.get('location', '—')}")
-            lines.append(f"💰 {cost_s}")
+            lines.append(f"📆 {e.get('datetime', '—')}  ")
+            lines.append(f"📍 {e.get('location', '—')}  ")
+            lines.append(f"💰 {cost_s}  ")
             if tags:
                 lines.append("`" + "` `".join(tags[:6]) + "`")
             if desc := e.get("description", ""):
