@@ -172,6 +172,7 @@ def search_events(monday: date, sunday: date) -> tuple[str, int]:
         model=SEARCH_MODEL,
         max_tokens=8000,
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 30}],
+        tool_choice={"type": "any"},
         system=build_search_prompt(monday, sunday),
         messages=[{
             "role": "user",
@@ -248,7 +249,7 @@ def parse_events(raw_text: str) -> list[dict]:
     print("→ Step 2: Curating and enriching events…")
     response = client.messages.create(
         model=FORMAT_MODEL,
-        max_tokens=8000,
+        max_tokens=8192,
         system=FORMAT_SYSTEM,
         messages=[{
             "role": "user",
@@ -256,16 +257,41 @@ def parse_events(raw_text: str) -> list[dict]:
         }],
     )
 
+    if response.stop_reason == "max_tokens":
+        print("⚠ Curator response was truncated — will attempt partial recovery")
+
     raw = "".join(b.text for b in response.content if b.type == "text")
     raw = re.sub(r"```json|```", "", raw).strip()
 
     match = re.search(r"\[[\s\S]*\]", raw)
     if not match:
-        print("✗ No JSON array in curator response. Raw output:")
-        print(raw[:500])
-        return []
+        # Truncation may have cut off the closing bracket — try to recover
+        start = raw.find("[")
+        if start != -1:
+            match = re.search(r"\[[\s\S]*", raw[start:])
+            raw = raw[start:]
+        if not match:
+            print("✗ No JSON array found in curator response. Raw output:")
+            print(raw[:500])
+            return []
 
-    events = json.loads(match.group())
+    json_str = match.group()
+    try:
+        events = json.loads(json_str)
+    except json.JSONDecodeError:
+        # Output was truncated mid-object — recover all complete objects
+        last_complete = json_str.rfind("},")
+        if last_complete == -1:
+            print("✗ JSONDecodeError and no recovery point found")
+            return []
+        json_str = json_str[:last_complete + 1] + "]"
+        try:
+            events = json.loads(json_str)
+            print(f"⚠ Recovered {len(events)} events from truncated response")
+        except json.JSONDecodeError:
+            print("✗ Could not recover from truncated JSON")
+            return []
+
     print(f"→ {len(events)} events after curation")
     top = sum(1 for e in events if e.get("score", 0) >= 8)
     print(f"→ {top} top picks (score ≥ 8)")
