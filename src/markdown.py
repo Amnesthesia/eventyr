@@ -1,24 +1,22 @@
 """
 Markdown generation — Step 2 of the digest pipeline.
 
-Reads data/{city}.json (written by collection.py) and writes {CITY}.md
-at the repo root.
+Reads all data/*.json files (written by collection.py) and writes a
+{CITY_KEY.upper()}.md for each at the repo root.
 
-Run: CITY=brisbane python src/markdown.py
+Run: python src/markdown.py   (no env vars needed)
 """
 
 import json
-import os
 from datetime import date
 from pathlib import Path
 
-from common import CATEGORY_EMOJI, TOP_PICK_THRESHOLD, fmt_date, load_city_config
+from common import CATEGORY_EMOJI, TOP_PICK_THRESHOLD, fmt_date
 
 
-CITY = os.environ["CITY"]
-
-
-def write_markdown(events: list[dict], monday: date, sunday: date, city_name: str) -> Path:
+def write_markdown(
+    events: list[dict], monday: date, sunday: date, city_name: str, city_key: str
+) -> Path:
     top_picks = [e for e in events if e.get("score", 0) >= TOP_PICK_THRESHOLD]
     remaining = [e for e in events if e.get("score", 0) < TOP_PICK_THRESHOLD]
 
@@ -81,26 +79,32 @@ def write_markdown(events: list[dict], monday: date, sunday: date, city_name: st
                     lines.append(desc)
                 lines.append("")
 
-    out_path = Path(__file__).parent.parent / f"{CITY.upper()}.md"
+    out_path = Path(__file__).parent.parent / f"{city_key.upper()}.md"
     out_path.write_text("\n".join(lines), encoding="utf-8")
     print(f"→ Written {out_path.name} ({len(events)} events)")
     return out_path
 
 
 def main() -> None:
-    json_path = Path(__file__).parent.parent / "data" / f"{CITY}.json"
-    if not json_path.exists():
-        raise SystemExit(f"✗ {json_path} not found — run collection.py first.")
+    data_dir = Path(__file__).parent.parent / "data"
+    json_files = [f for f in sorted(data_dir.glob("*.json")) if f.name != "index.json"]
 
-    payload = json.loads(json_path.read_text(encoding="utf-8"))
-    events  = payload["events"]
-    monday  = date.fromisoformat(payload["week_start"])
-    sunday  = date.fromisoformat(payload["week_end"])
+    if not json_files:
+        raise SystemExit("✗ No city JSON files found in data/ — run collection.py first.")
 
-    print(f"Markdown — {payload['city']} — {fmt_date(monday)} to {fmt_date(sunday)}")
+    print("Markdown generation")
     print("=" * 50)
 
-    write_markdown(events, monday, sunday, city_name=payload["city"])
+    for json_path in json_files:
+        payload = json.loads(json_path.read_text(encoding="utf-8"))
+        events  = payload["events"]
+        monday  = date.fromisoformat(payload["week_start"])
+        sunday  = date.fromisoformat(payload["week_end"])
+        write_markdown(
+            events, monday, sunday,
+            city_name=payload["city"],
+            city_key=payload["city_key"],
+        )
 
     print("✓ Markdown complete.")
 

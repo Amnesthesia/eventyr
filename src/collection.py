@@ -5,7 +5,8 @@ Searches event sources for a given city using the Claude API (with web search),
 curates and scores results, then writes data/{city}.json as the source of truth
 for all downstream steps (markdown, pages, messaging).
 
-Run: CITY=brisbane ANTHROPIC_API_KEY=... python src/collection.py
+Run:          CITY=brisbane ANTHROPIC_API_KEY=... python src/collection.py
+Force re-run: FORCE=true CITY=brisbane ANTHROPIC_API_KEY=... python src/collection.py
 """
 
 import json
@@ -42,41 +43,13 @@ SOURCES   = _city_cfg["sources"]
 
 INTERESTS = """
 WANT:
-  - Intellectually stimulating talks, lectures, panels, and debates (science, philosophy, tech, history, culture)
-  - Creative workshops and classes (art, writing, music, craft)
-  - Social events to meet interesting people (meetups, community dinners, book clubs, open mics)
-  - Live music, comedy, theatre, and immersive art experiences
-
-PREFER:
-  - Smaller events over massive crowds
-  - Creative or hands-on workshops
-  - Events where conversation between strangers is natural
-  - Events with recurring communities or regular attendees
-  - Authentic subcultures over polished corporate experiences
-  - Mixed-age crowds with thoughtful or interesting people
-  - Events that feel exploratory, creative, intellectually alive, or inspiring
-
-SKIP entirely — do not include:
-  - Spectator sports of any kind (rugby, cricket, football, racing, etc.)
-  - Any event involving a "business opportunity", network marketing, or multi-level marketing
-  - Paid seminars that are actually sales pitches or upsell funnels
-  - Corporate networking or recruitment events
-  - Online-only events (unless hosted by a Brisbane organisation for a Brisbane audience)
-  - Generic nightclub events or heavy drinking culture
-  - Generic corporate networking events
-  - Recruitment events or career expos
-  - "Business opportunity" seminars, MLMs, hustle culture, crypto hype, or sales funnels
-"""
-
-INTERESTS_VERBOSE = """
-WANT:
   - Intellectually stimulating talks, lectures, salons, workshops, panels, and debates focused on science, philosophy, psychology, technology, systems thinking, futurism, culture, design, history, AI, human behavior, or creativity
   - Events that attract curious, thoughtful, open-minded, creative, adventurous, or intellectually engaged people rather than purely corporate audiences
   - Community-oriented recurring events where people naturally talk before/after: book clubs, philosophy groups, writing circles, language exchanges, discussion salons, coworking socials, maker spaces, creative communities
   - Creative or hands-on workshops: photography, writing, pottery, drawing, music, woodworking, craft, electronics, robotics, fermentation, gardening, maker/hacker culture
   - Live experiences with strong atmosphere or artistic value: indie music, jazz, folk, intimate gigs, immersive theatre, art exhibitions, experimental performances, film screenings, comedy
   - Outdoor and adventure-oriented social events like hiking groups, trail running, climbing, scuba/freediving, paragliding, camping, adventure travel, nature excursions
-  - Wellness-oriented events only if grounded and socially authentic: yoga, breathwork, meditation, sauna, movement workshops, but avoid overly commercial or cult-like spirituality
+  - Wellness-oriented events only if grounded and socially authentic: yoga, breathwork, meditation, sauna, movement workshops — avoid overly commercial or cult-like spirituality
   - Free or low-cost local community events preferred
 
 PREFER:
@@ -87,19 +60,18 @@ PREFER:
   - Mixed-age crowds with thoughtful or interesting people
   - Events that feel exploratory, creative, intellectually alive, or inspiring
 
-SKIP ENTIRELY - do not include:
-  - Spectator sports of any kind
-  - Generic corporate networking events
-  - Recruitment events or career expos
+SKIP ENTIRELY — do not include:
+  - Spectator sports of any kind (rugby, cricket, football, racing, etc.)
+  - Generic corporate networking events or recruitment / career expos
   - "Business opportunity" seminars, MLMs, hustle culture, crypto hype, or sales funnels
   - Ultra-touristy events designed mainly for Instagram/photos
   - Generic nightclub events or heavy drinking culture
   - Influencer-style wellness events with little substance
-  - Online-only events unless strongly tied to the Brisbane local community
+  - Online-only events unless strongly tied to the local community
 """
 
 FORMAT_SYSTEM = f"""You are a personal events curator for someone in Brisbane with these interests:
-{INTERESTS_VERBOSE}
+{INTERESTS}
 
 The user will give you a list of Brisbane events described in free text from a web search.
 
@@ -146,12 +118,27 @@ Example element:
 
 
 # ---------------------------------------------------------------------------
+# Skip logic
+# ---------------------------------------------------------------------------
+
+def already_collected_this_week() -> bool:
+    json_path = Path(__file__).parent.parent / "data" / f"{CITY}.json"
+    if not json_path.exists():
+        return False
+    try:
+        payload = json.loads(json_path.read_text(encoding="utf-8"))
+        monday, _ = get_week_range()
+        return payload.get("week_start") == monday.isoformat()
+    except (json.JSONDecodeError, KeyError):
+        return False
+
+
+# ---------------------------------------------------------------------------
 # Step 1: Search web for events (free-text output — no JSON constraint)
 # ---------------------------------------------------------------------------
 
 def build_search_prompt(monday: date, sunday: date) -> str:
-    from datetime import date as _date
-    today = _date.today()
+    today = date.today()
     return f"""You are an events researcher for {CITY_NAME}. Today is {today.strftime('%A, %-d %B %Y')}.
 Your job is to find in-person events happening THIS WEEK in {CITY_NAME}:
 {fmt_date(monday)} to {fmt_date(sunday)}.
@@ -182,7 +169,7 @@ Rules:
 """
 
 
-def search_events(monday: date, sunday: date) -> tuple[str, int]:
+def search_events(monday: date, sunday: date) -> str:
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
     print(f"→ Step 1: Searching web for {CITY_NAME} events…")
@@ -190,7 +177,7 @@ def search_events(monday: date, sunday: date) -> tuple[str, int]:
         model=SEARCH_MODEL,
         max_tokens=8000,
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": MAX_WEB_SEARCHES}],
-        tool_choice={"type": "any"},
+        tool_choice={"type": "tool", "name": "web_search"},
         system=build_search_prompt(monday, sunday),
         messages=[{
             "role": "user",
@@ -206,8 +193,14 @@ def search_events(monday: date, sunday: date) -> tuple[str, int]:
     search_calls = sum(1 for b in response.content if b.type == "tool_use")
     print(f"→ Agent performed {search_calls} web search(es)")
 
+    if search_calls == 0:
+        raise RuntimeError(
+            "Search agent performed 0 web searches — no live data collected. "
+            "The model may have answered from training data. Aborting."
+        )
+
     raw = "".join(b.text for b in response.content if b.type == "text")
-    return raw, search_calls
+    return raw
 
 
 # ---------------------------------------------------------------------------
@@ -237,18 +230,18 @@ def parse_events(raw_text: str) -> list[dict]:
     raw = "".join(b.text for b in response.content if b.type == "text")
     raw = re.sub(r"```json|```", "", raw).strip()
 
-    match = re.search(r"\[[\s\S]*\]", raw)
-    if not match:
-        start = raw.find("[")
-        if start != -1:
-            match = re.search(r"\[[\s\S]*", raw[start:])
-            raw = raw[start:]
-        if not match:
-            print("✗ No JSON array found in curator response. Raw output:")
-            print(raw[:500])
-            return []
+    start = raw.find("[")
+    if start == -1:
+        print("✗ No JSON array found in curator response. Raw output:")
+        print(raw[:500])
+        return []
 
-    json_str = match.group()
+    json_str = raw[start:]
+    # Trim to last closing bracket if present
+    end = json_str.rfind("]")
+    if end != -1:
+        json_str = json_str[:end + 1]
+
     try:
         events = json.loads(json_str)
     except json.JSONDecodeError:
@@ -271,7 +264,7 @@ def parse_events(raw_text: str) -> list[dict]:
 
 
 def fetch_events(monday: date, sunday: date) -> list[dict]:
-    raw_text, _ = search_events(monday, sunday)
+    raw_text = search_events(monday, sunday)
     return parse_events(raw_text)
 
 
@@ -301,6 +294,11 @@ def write_json(events: list[dict], monday: date, sunday: date) -> Path:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
+    force = os.environ.get("FORCE", "").lower() in ("1", "true", "yes")
+    if not force and already_collected_this_week():
+        print("→ Already collected for this week — skipping. Set FORCE=true to re-collect.")
+        return
+
     monday, sunday = get_week_range()
     print(f"Collection — {CITY_NAME} — {fmt_date(monday)} to {fmt_date(sunday)}")
     print("=" * 50)

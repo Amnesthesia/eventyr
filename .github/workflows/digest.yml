@@ -12,6 +12,11 @@ on:
         required: false
         type: string
         default: ""
+      force:
+        description: "Re-collect even if this week's data already exists"
+        required: false
+        type: boolean
+        default: false
     secrets:
       ANTHROPIC_API_KEY:
         required: true
@@ -35,6 +40,11 @@ on:
         required: false
         type: string
         default: ""
+      force:
+        description: "Re-collect even if this week's data already exists"
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   run-digest:
@@ -60,11 +70,10 @@ jobs:
         env:
           CITY:              ${{ inputs.city }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE:             ${{ inputs.force }}
         run: python src/collection.py
 
       - name: Write markdown
-        env:
-          CITY: ${{ inputs.city }}
         run: python src/markdown.py
 
       - name: Update pages index
