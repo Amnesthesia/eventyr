@@ -222,6 +222,8 @@ Your job:
    - why:         ONE concrete sentence on why THIS specific event is worth attending.
                   Be specific: mention the speaker, the format, the crowd, what makes it
                   stand out. Do NOT write generic phrases like "a great opportunity to learn".
+   - image:       direct URL to a preview/hero image for the event (e.g. from the event page
+                  or venue website). Use "" if none is available. Must be a full https:// URL.
 
 3. OUTPUT: A valid JSON array sorted by score descending. No markdown, no explanation, no code fences.
 
@@ -237,7 +239,8 @@ Example element:
   "description": "UQ's Professor of Philosophy presents her latest research on the hard problem of consciousness and what AI systems can and cannot tell us about subjective experience. Aimed at a general audience; no background in philosophy required. Followed by 30-minute open Q&A.",
   "tags": ["philosophy", "consciousness", "ai", "lecture", "free", "q&a"],
   "score": 9,
-  "why": "One of UQ's leading philosophers speaking publicly on a genuinely hard topic — the Q&A format means you can actually engage with her."
+  "why": "One of UQ's leading philosophers speaking publicly on a genuinely hard topic — the Q&A format means you can actually engage with her.",
+  "image": "https://events.uq.edu.au/images/philosophy-lecture.jpg"
 }}"""
 
 
@@ -507,6 +510,23 @@ def write_markdown(events: list[dict], monday: date, sunday: date) -> Path:
     return out_path
 
 
+def write_json(events: list[dict], monday: date, sunday: date) -> Path:
+    payload = {
+        "city": CITY_NAME,
+        "city_key": CITY,
+        "week_start": monday.isoformat(),
+        "week_end": sunday.isoformat(),
+        "generated_at": date.today().isoformat(),
+        "events": events,
+    }
+    out_dir = Path(__file__).parent.parent / "data"
+    out_dir.mkdir(exist_ok=True)
+    out_path = out_dir / f"{CITY}.json"
+    out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"→ Written {out_path} ({len(events)} events)")
+    return out_path
+
+
 # ---------------------------------------------------------------------------
 # Send via WhatsApp Cloud API
 # ---------------------------------------------------------------------------
@@ -544,6 +564,7 @@ def main() -> None:
     events = fetch_events(monday, sunday)
 
     write_markdown(events, monday, sunday)
+    write_json(events, monday, sunday)
 
     messages = format_whatsapp(events, monday, sunday)
     print(f"→ Digest split into {len(messages)} WhatsApp message(s)")

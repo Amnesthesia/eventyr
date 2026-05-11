@@ -72,6 +72,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "${CITY^^}.md"
+          git add "${CITY^^}.md" "data/${CITY}.json"
           git diff --cached --quiet || git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           git push
