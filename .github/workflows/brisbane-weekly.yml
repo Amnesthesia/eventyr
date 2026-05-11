@@ -1,0 +1,16 @@
+name: Brisbane Events — Weekly Digest
+
+on:
+  schedule:
+    # Every Monday at 6:00 AM AEST (UTC+10) = 20:00 UTC Sunday
+    - cron: "0 20 * * 0"
+
+  # Allow manual trigger from the GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  brisbane:
+    uses: ./.github/workflows/digest.yml
+    with:
+      city: brisbane
+    secrets: inherit

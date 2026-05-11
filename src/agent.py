@@ -1,21 +1,23 @@
 """
-Brisbane Events Agent
----------------------
-Searches Brisbane event sources using the Claude API (with web search),
+Events Digest Agent
+--------------------
+Searches event sources for a given city using the Claude API (with web search),
 curates and scores results against user interests, then sends a weekly
 digest via WhatsApp Cloud API.
 
-Run locally:  python src/agent.py
-Run on CI:    triggered by GitHub Actions every Monday 8am AEST
+Run locally:  CITY=brisbane ... python src/agent.py
+Run on CI:    triggered by .github/workflows/brisbane-weekly.yml (or any city-specific workflow)
 """
 
 import os
 import json
 import re
 from datetime import date, timedelta
+from pathlib import Path
 
 import anthropic
 import httpx
+import yaml
 
 
 # ---------------------------------------------------------------------------
@@ -26,59 +28,22 @@ ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 WA_TOKEN          = os.environ["WHATSAPP_TOKEN"]          # Meta permanent access token
 WA_PHONE_ID       = os.environ["WHATSAPP_PHONE_ID"]       # Sending phone number ID
 WA_TO             = os.environ["WHATSAPP_RECIPIENT"]      # Your number, e.g. 61412345678
+CITY              = os.environ["CITY"]                    # City slug matching a key in sources.yml
 
 SEARCH_MODEL = "claude-opus-4-7"   # thorough web search + reasoning
 FORMAT_MODEL = "claude-sonnet-4-6" # curation, scoring, description writing
 
-SOURCES = [
-    # --- Event directories ---
-    "Brisbane City Council events (brisbane.qld.gov.au/whats-on)",
-    "Visit Brisbane (visit.brisbane.qld.au/whats-on)",
-    "Eventbrite Brisbane (eventbrite.com.au)",
-    "Eventfinda Brisbane (brisbane.eventfinda.com.au)",
-    "Must Do Brisbane (mustdobrisbane.com/whats-on)",
-    "The Urban List Brisbane (theurbanlist.com/brisbane)",
-    "Broadsheet Brisbane (broadsheet.com.au/brisbane)",
-    "Fever Brisbane (feverup.com/en/brisbane)",
-    "WeekendNotes Brisbane (weekendnotes.com/brisbane)",
-    "Meetup Brisbane groups (meetup.com)",
+# Load city config from sources.yml
+_sources_path = Path(__file__).parent.parent / "sources.yml"
+with open(_sources_path) as _f:
+    _all_sources = yaml.safe_load(_f)
 
-    # --- Universities & libraries ---
-    "Queensland State Library (slq.qld.gov.au)",
-    "QUT public events (qut.edu.au/events)",
-    "UQ public events (events.uq.edu.au)",
-    "Griffith University events (griffith.edu.au/events)",
+if CITY not in _all_sources:
+    raise SystemExit(f"Unknown city '{CITY}'. Add it to sources.yml via src/add_city.py.")
 
-    # --- Major venues & institutions ---
-    "Brisbane Powerhouse (brisbanepowerhouse.org)",
-    "QAGOMA & Gallery of Modern Art events (qagoma.qld.gov.au/whats-on)",
-    "QPAC (qpac.com.au/whats-on)",
-    "Queensland Museum Brisbane (museum.qld.gov.au/brisbane/queensland-museum)",
-    "Museum of Brisbane (museumofbrisbane.com.au/whats-on)",
-    "Judith Wright Centre (judithwrightcentre.com)",
-    "Institute of Modern Art Brisbane (ima.org.au)",
-    "South Bank Parklands events (visitsouthbank.com.au)",
-    "Queensland Theatre (queenslandtheatre.com.au/whats-on)",
-    "La Boite Theatre (laboite.com.au/whats-on)",
-    "Queensland Symphony Orchestra (qso.com.au/whats-on)",
-    "Queensland Ballet (queenslandballet.com.au/whats-on)",
-
-    # --- Cafes, bars & small venues ---
-    "Avid Reader bookshop & café West End (avidreader.com.au/events)",
-    "BY.ARTISANS West End (workshops, art classes, social events)",
-    "Black Bear Lodge Fortitude Valley (blackbearlodge.bar)",
-    "The Boundary Hotel West End (theboundary.com.au)",
-    "Come to Daddy West End — drag, open mic, social events",
-    "Lightspace gallery & events Fortitude Valley (lightspace.net.au)",
-    "Archive bar West End — open mic nights",
-    "Newmarket Hotel — open mic comedy",
-    "John Mills Himself café events",
-    "Echo & Bounce café events",
-
-    # --- Community ---
-    "Open Sessions Brisbane open mic circuit (theopensessions.com)",
-    "Creative Mornings Brisbane (creativemornings.com/cities/bne)",
-]
+_city_cfg  = _all_sources[CITY]
+CITY_NAME  = _city_cfg["name"]
+SOURCES    = _city_cfg["sources"]
 
 CATEGORIES = [
     "Public Lecture",
@@ -169,8 +134,8 @@ def fmt_date(d: date) -> str:
 
 def build_search_prompt(monday: date, sunday: date) -> str:
     today = date.today()
-    return f"""You are a Brisbane events researcher. Today is {today.strftime('%A, %-d %B %Y')}.
-Your job is to find in-person events happening THIS WEEK in Brisbane, Queensland, Australia:
+    return f"""You are an events researcher for {CITY_NAME}. Today is {today.strftime('%A, %-d %B %Y')}.
+Your job is to find in-person events happening THIS WEEK in {CITY_NAME}:
 {fmt_date(monday)} to {fmt_date(sunday)}.
 
 The person receiving this digest has the following interests:
@@ -202,7 +167,7 @@ Rules:
 def search_events(monday: date, sunday: date) -> tuple[str, int]:
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
-    print("→ Step 1: Searching web for Brisbane events…")
+    print(f"→ Step 1: Searching web for {CITY_NAME} events…")
     response = client.messages.create(
         model=SEARCH_MODEL,
         max_tokens=8000,
@@ -211,7 +176,7 @@ def search_events(monday: date, sunday: date) -> tuple[str, int]:
         messages=[{
             "role": "user",
             "content": (
-                f"Search for Brisbane events this week ({fmt_date(monday)} to {fmt_date(sunday)}). "
+                f"Search for {CITY_NAME} events this week ({fmt_date(monday)} to {fmt_date(sunday)}). "
                 "Use web search on the sources listed in your instructions. "
                 "Skip anything matching the SKIP criteria. "
                 "List every relevant event you find with full details and a direct URL."
@@ -391,7 +356,7 @@ def format_whatsapp(events: list[dict], monday: date, sunday: date) -> list[str]
     """
     if not events:
         return [
-            f"📅 *Brisbane This Week* ({fmt_date(monday)} – {fmt_date(sunday)})\n\n"
+            f"📅 *{CITY_NAME} This Week* ({fmt_date(monday)} – {fmt_date(sunday)})\n\n"
             "No events found this week. Check back next Monday!"
         ]
 
@@ -402,7 +367,7 @@ def format_whatsapp(events: list[dict], monday: date, sunday: date) -> list[str]
 
     # ── Top picks (all of them, split at event boundaries) ───────────────────
     header = (
-        f"📅 *Brisbane This Week*\n"
+        f"📅 *{CITY_NAME} This Week*\n"
         f"{fmt_date(monday)} – {fmt_date(sunday)}\n"
         f"⭐ {len(top_picks)} top picks  ·  {len(events)} events found\n"
         f"{'─' * 28}\n\n"
@@ -476,7 +441,7 @@ def send_whatsapp(text: str) -> None:
 
 def main() -> None:
     monday, sunday = get_week_range()
-    print(f"Brisbane Events Agent — {fmt_date(monday)} to {fmt_date(sunday)}")
+    print(f"Events Agent — {CITY_NAME} — {fmt_date(monday)} to {fmt_date(sunday)}")
     print("=" * 50)
 
     events = fetch_events(monday, sunday)

@@ -1,0 +1,65 @@
+name: Events Digest (reusable)
+
+on:
+  workflow_call:
+    inputs:
+      city:
+        description: City slug matching a key in sources.yml (e.g. brisbane)
+        required: true
+        type: string
+      recipient:
+        description: "WhatsApp recipient number (e.g. 61412345678). Defaults to WHATSAPP_RECIPIENT secret."
+        required: false
+        type: string
+        default: ""
+    secrets:
+      ANTHROPIC_API_KEY:
+        required: true
+      WHATSAPP_TOKEN:
+        required: true
+      WHATSAPP_PHONE_ID:
+        required: true
+      WHATSAPP_RECIPIENT:
+        required: true
+
+  workflow_dispatch:
+    inputs:
+      city:
+        description: City to run the digest for
+        required: true
+        type: choice
+        options:
+          - brisbane
+      recipient:
+        description: "WhatsApp recipient number (e.g. 61412345678). Leave blank to use the default."
+        required: false
+        type: string
+        default: ""
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run events agent
+        env:
+          CITY:               ${{ inputs.city }}
+          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          WHATSAPP_TOKEN:     ${{ secrets.WHATSAPP_TOKEN }}
+          WHATSAPP_PHONE_ID:  ${{ secrets.WHATSAPP_PHONE_ID }}
+          # Use the explicit recipient input if provided, otherwise fall back to the secret.
+          WHATSAPP_RECIPIENT: ${{ inputs.recipient != '' && inputs.recipient || secrets.WHATSAPP_RECIPIENT }}
+        run: python src/agent.py

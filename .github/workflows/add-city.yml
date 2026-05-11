@@ -1,0 +1,46 @@
+name: Add New City
+
+on:
+  workflow_dispatch:
+    inputs:
+      city_name:
+        description: "Full city name, e.g. Sydney, New South Wales, Australia"
+        required: true
+        type: string
+      city_key:
+        description: "Short slug, e.g. sydney (lowercase, no spaces)"
+        required: true
+        type: string
+
+jobs:
+  add-city:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Discover sources
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CITY_NAME:         ${{ inputs.city_name }}
+          CITY_KEY:          ${{ inputs.city_key }}
+        run: python src/add_city.py
+
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sources.yml .github/workflows/digest.yml
+          git commit -m "feat: add ${{ inputs.city_key }} event sources"
+          git push
