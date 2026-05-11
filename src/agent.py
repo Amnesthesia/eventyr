@@ -27,7 +27,7 @@ import yaml
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 WA_TOKEN          = os.environ["WHATSAPP_TOKEN"]          # Meta permanent access token
 WA_PHONE_ID       = os.environ["WHATSAPP_PHONE_ID"]       # Sending phone number ID
-WA_TO             = os.environ["WHATSAPP_RECIPIENT"]      # Your number, e.g. 61412345678
+WA_TO             = [n.strip() for n in os.environ["WHATSAPP_RECIPIENT"].split(",") if n.strip()]
 CITY              = os.environ["CITY"]                    # City slug matching a key in sources.yml
 
 SEARCH_MODEL = "claude-opus-4-7"   # thorough web search + reasoning
@@ -411,16 +411,88 @@ def format_whatsapp(events: list[dict], monday: date, sunday: date) -> list[str]
 
 
 # ---------------------------------------------------------------------------
+# Write markdown file
+# ---------------------------------------------------------------------------
+
+def write_markdown(events: list[dict], monday: date, sunday: date) -> Path:
+    top_picks = [e for e in events if e.get("score", 0) >= TOP_PICK_THRESHOLD]
+    remaining = [e for e in events if e.get("score", 0) < TOP_PICK_THRESHOLD]
+
+    lines: list[str] = []
+
+    lines.append(f"# {CITY_NAME} — This Week's Events")
+    lines.append(f"**{fmt_date(monday)} – {fmt_date(sunday)}**  ")
+    lines.append(f"*{len(top_picks)} top picks · {len(events)} events total*")
+    lines.append("")
+
+    if top_picks:
+        lines.append("## ⭐ Top Picks")
+        lines.append("")
+        for e in top_picks:
+            cat   = e.get("category", "Community / Other")
+            emoji = CATEGORY_EMOJI.get(cat, "📌")
+            cost  = e.get("cost", "See link")
+            cost_s = "Free" if cost.lower() == "free" else cost
+            tags  = e.get("tags", [])
+            link  = e.get("link", "")
+
+            title = e.get("title", "Untitled")
+            lines.append(f"### {emoji} [{title}]({link})" if link else f"### {emoji} {title}")
+            lines.append(f"**{e.get('datetime', '—')}** · 📍 {e.get('location', '—')} · 💰 {cost_s}")
+            if tags:
+                lines.append("`" + "` `".join(tags[:6]) + "`")
+            if desc := e.get("description", ""):
+                lines.append("")
+                lines.append(desc)
+            if why := e.get("why", ""):
+                lines.append("")
+                lines.append(f"> 💡 {why}")
+            lines.append("")
+
+    if remaining:
+        by_cat: dict[str, list[dict]] = {}
+        for e in remaining:
+            by_cat.setdefault(e.get("category", "Community / Other"), []).append(e)
+
+        lines.append("## 📋 All Events")
+        lines.append("")
+        for cat, cat_events in by_cat.items():
+            emoji = CATEGORY_EMOJI.get(cat, "📌")
+            lines.append(f"### {emoji} {cat}")
+            lines.append("")
+            for e in cat_events:
+                cost   = e.get("cost", "See link")
+                cost_s = "Free" if cost.lower() == "free" else cost
+                tags   = e.get("tags", [])
+                link   = e.get("link", "")
+
+                title = e.get("title", "Untitled")
+                lines.append(f"#### [{title}]({link})" if link else f"#### {title}")
+                lines.append(f"**{e.get('datetime', '—')}** · 📍 {e.get('location', '—')} · 💰 {cost_s}")
+                if tags:
+                    lines.append("`" + "` `".join(tags[:6]) + "`")
+                if desc := e.get("description", ""):
+                    lines.append("")
+                    lines.append(desc)
+                lines.append("")
+
+    out_path = Path(__file__).parent.parent / f"{CITY.upper()}.md"
+    out_path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"→ Written {out_path.name} ({len(events)} events)")
+    return out_path
+
+
+# ---------------------------------------------------------------------------
 # Send via WhatsApp Cloud API
 # ---------------------------------------------------------------------------
 
-def send_whatsapp(text: str) -> None:
+def send_whatsapp(text: str, recipient: str) -> None:
     print(f"\n── Message preview ──\n{text}\n─────────────────────\n")
 
     url = f"https://graph.facebook.com/v19.0/{WA_PHONE_ID}/messages"
     payload = {
         "messaging_product": "whatsapp",
-        "to": WA_TO,
+        "to": recipient,
         "type": "text",
         "text": {"body": text, "preview_url": False},
     }
@@ -446,12 +518,16 @@ def main() -> None:
 
     events = fetch_events(monday, sunday)
 
+    write_markdown(events, monday, sunday)
+
     messages = format_whatsapp(events, monday, sunday)
     print(f"→ Digest split into {len(messages)} WhatsApp message(s)")
+    print(f"→ Sending to {len(WA_TO)} recipient(s): {', '.join(WA_TO)}")
 
-    for i, msg in enumerate(messages, 1):
-        print(f"→ Sending message {i}/{len(messages)}…")
-        send_whatsapp(msg)
+    for recipient in WA_TO:
+        for i, msg in enumerate(messages, 1):
+            print(f"→ [{recipient}] Sending message {i}/{len(messages)}…")
+            send_whatsapp(msg, recipient)
 
     print("✓ Done.")
 
