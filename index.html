@@ -116,21 +116,26 @@
     .card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
     .card.top-pick { border-left: 3px solid var(--gold); background: var(--surface); }
 
-    /* Card background image — renders as blurred bg; 404s are invisible */
-    .card.has-image {
-      background-image:
-        linear-gradient(180deg, rgba(255,255,255,.85) 0%, rgba(255,255,255,.97) 55%, #fff 75%),
-        var(--event-image, none);
-      background-size: auto, cover;
-      background-position: top left, center top;
-      -webkit-backdrop-filter: blur(4px);
-      backdrop-filter: blur(4px);
+    /* Card background image — blurred via ::before; 404s are invisible */
+    .card.has-image { position: relative; }
+    .card.has-image::before {
+      content: "";
+      position: absolute;
+      inset: -12px;
+      background-image: var(--event-image, none);
+      background-size: cover;
+      background-position: center top;
+      filter: blur(10px);
+      z-index: 0;
     }
-    .card.has-image.top-pick {
-      background-image:
-        linear-gradient(180deg, rgba(255,255,255,.85) 0%, rgba(255,255,255,.97) 55%, #fff 75%),
-        var(--event-image, none);
+    .card.has-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,.80) 0%, rgba(255,255,255,.96) 55%, #fff 72%);
+      z-index: 1;
     }
+    .card.has-image > * { position: relative; z-index: 2; }
 
     /* Card header row */
     .card-header {
