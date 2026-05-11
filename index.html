@@ -99,6 +99,30 @@
       margin: 0;
     }
 
+    /* ── City selector ── */
+    .city-select {
+      margin-left: auto;
+      width: auto;
+      max-width: 250px;
+      font-family: var(--mono);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--fg);
+      padding: .18rem .5rem;
+      cursor: pointer;
+      border-radius: 0;
+      outline: none;
+      height: auto;
+      box-shadow: none;
+    }
+    .city-select:hover  { border-color: var(--fg); }
+    .city-select:focus  { border-color: var(--fg); }
+    .city-select option { background: var(--bg); color: var(--fg); }
+
     /* ── Section labels ── */
     .section-label {
       font-size: .68rem;
@@ -364,6 +388,7 @@
 
   <header>
     <span class="site-name">do things</span>
+    <select id="city-select" class="city-select hidden"></select>
     <span class="header-meta" id="header-meta">loading…</span>
   </header>
 
@@ -476,8 +501,16 @@
       });
     }
 
-    async function load() {
-      const city = new URLSearchParams(location.search).get("city") || "brisbane";
+    async function loadCity(city) {
+      // Reset
+      document.getElementById("content").classList.add("hidden");
+      document.getElementById("error-state").classList.add("hidden");
+      document.getElementById("loading-state").classList.remove("hidden");
+      document.getElementById("top-picks-grid").innerHTML = "";
+      document.getElementById("all-events-grid").innerHTML = "";
+      document.getElementById("filter-bar").innerHTML = "";
+      document.getElementById("top-picks-section").classList.remove("hidden");
+
       try {
         const res = await fetch(`data/${city}.json?v=${cacheBust()}`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -485,10 +518,10 @@
 
         document.title = `${data.city} — do things`;
         document.getElementById("header-meta").textContent =
-          `in ${data.city} · ${fmtRange(data.week_start, data.week_end)} · ${data.events.length} events`;
+          `${fmtRange(data.week_start, data.week_end)} · ${data.events.length} events`;
 
         const picks = data.events.filter(e => (e.score || 0) >= TOP_PICK_THRESHOLD);
-        const rest = data.events.filter(e => (e.score || 0) < TOP_PICK_THRESHOLD);
+        const rest  = data.events.filter(e => (e.score || 0) <  TOP_PICK_THRESHOLD);
 
         const topGrid = document.getElementById("top-picks-grid");
         if (picks.length) {
@@ -515,7 +548,44 @@
       }
     }
 
-    load();
+    async function init() {
+      const params = new URLSearchParams(location.search);
+      let city = params.get("city");
+
+      // Fetch city index to populate selector
+      try {
+        const res = await fetch(`data/index.json?v=${cacheBust()}`);
+        if (res.ok) {
+          const idx  = await res.json();
+          const cities = idx.cities || [];
+          const keys   = cities.map(c => c.key);
+
+          if (!city || !keys.includes(city)) city = keys[0] || "brisbane";
+
+          if (cities.length > 1) {
+            const sel = document.getElementById("city-select");
+            cities.forEach(c => {
+              const opt = document.createElement("option");
+              opt.value = c.key;
+              opt.textContent = c.name.split(",")[0];
+              if (c.key === city) opt.selected = true;
+              sel.appendChild(opt);
+            });
+            sel.classList.remove("hidden");
+            sel.addEventListener("change", () => {
+              const next = sel.value;
+              history.pushState({}, "", `?city=${next}`);
+              loadCity(next);
+            });
+          }
+        }
+      } catch (_) {}
+
+      city = city || "brisbane";
+      loadCity(city);
+    }
+
+    init();
   </script>
 </body>
 

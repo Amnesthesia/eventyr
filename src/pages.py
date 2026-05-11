@@ -23,6 +23,8 @@ def main() -> None:
     for f in sorted(data_dir.glob("*.json")):
         if f.name == "index.json":
             continue
+        if "_raw.json" in f.name:
+            continue
         try:
             payload = json.loads(f.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, KeyError):

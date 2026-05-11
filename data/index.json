@@ -1,12 +1,20 @@
 {
-  "generated_at": "2026-05-11",
+  "generated_at": "2026-05-12",
   "cities": [
     {
       "key": "brisbane",
       "name": "Brisbane, Queensland, Australia",
       "week_start": "2026-05-11",
       "week_end": "2026-05-17",
-      "event_count": 26,
+      "event_count": 33,
+      "top_pick_count": 9
+    },
+    {
+      "key": "goldcoast",
+      "name": "Gold Coast",
+      "week_start": "2026-05-11",
+      "week_end": "2026-05-17",
+      "event_count": 17,
       "top_pick_count": 7
     }
   ]

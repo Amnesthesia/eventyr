@@ -35,6 +35,7 @@ on:
         type: choice
         options:
           - brisbane
+          - goldcoast
       recipient:
         description: "WhatsApp recipient number (e.g. 61412345678). Leave blank to use the default."
         required: false
