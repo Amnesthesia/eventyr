@@ -331,7 +331,6 @@ def _entry_top_pick(e: dict) -> str:
     cost   = e.get("cost", "See link")
     cost_s = "Free ✓" if cost.lower() == "free" else cost
     tags   = e.get("tags", [])
-    why    = e.get("why", "")
     desc   = e.get("description", "")
 
     s  = f"• *{e.get('title', 'Untitled')}*\n"
@@ -339,8 +338,6 @@ def _entry_top_pick(e: dict) -> str:
     s += f"  📍 {e.get('location', '—')}\n"
     if tags:
         s += _tags_line(tags)
-    if why:
-        s += f"  💡 _{why}_\n"
     if desc:
         s += f"  {desc}\n"
     s += f"  🔗 {e.get('link', '')}\n\n"
@@ -470,9 +467,6 @@ def write_markdown(events: list[dict], monday: date, sunday: date) -> Path:
             if desc := e.get("description", ""):
                 lines.append("")
                 lines.append(desc)
-            if why := e.get("why", ""):
-                lines.append("")
-                lines.append(f"> 💡 {why}")
             lines.append("")
 
     if remaining:
