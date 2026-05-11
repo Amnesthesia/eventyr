@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+  <!-- Apply saved theme before first paint to prevent flash -->
+  <script>const t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t);</script>
 
   <style>
     /* ── Monochrome token layer ── */
@@ -45,6 +47,7 @@
       --pico-h3-color: var(--fg);
     }
 
+    /* Dark tokens — system preference (auto) or explicit toggle */
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
         --bg: #0b0b0b;
@@ -66,6 +69,27 @@
         --pico-h2-color: var(--fg);
         --pico-h3-color: var(--fg);
       }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #0b0b0b;
+      --fg: #ededed;
+      --muted: #888;
+      --border: #242424;
+      --surface: #111;
+      --pico-background-color: var(--bg);
+      --pico-color: var(--fg);
+      --pico-muted-color: var(--muted);
+      --pico-muted-border-color: var(--border);
+      --pico-card-background-color: var(--surface);
+      --pico-card-border-color: var(--border);
+      --pico-primary: var(--fg);
+      --pico-primary-hover: #bbb;
+      --pico-primary-focus: rgba(255, 255, 255, .1);
+      --pico-primary-inverse: #0b0b0b;
+      --pico-h1-color: var(--fg);
+      --pico-h2-color: var(--fg);
+      --pico-h3-color: var(--fg);
     }
 
     /* ── Layout ── */
@@ -99,9 +123,44 @@
       margin: 0;
     }
 
+    /* ── Header controls (right side) ── */
+    .header-controls {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      flex-shrink: 0;
+    }
+
+    /* ── Theme toggle button ── */
+    .theme-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--fg);
+      cursor: pointer;
+      padding: 0;
+      border-radius: 0;
+      flex-shrink: 0;
+      box-shadow: none;
+    }
+
+    .theme-btn:hover {
+      border-color: var(--fg);
+    }
+
+    .theme-btn svg {
+      width: 12px;
+      height: 12px;
+      stroke-width: 2;
+    }
+
     /* ── City selector ── */
     .city-select {
-      margin-left: auto;
       width: auto;
       max-width: 250px;
       font-family: var(--mono);
@@ -118,10 +177,21 @@
       outline: none;
       height: auto;
       box-shadow: none;
+      margin-bottom: 0px;
     }
-    .city-select:hover  { border-color: var(--fg); }
-    .city-select:focus  { border-color: var(--fg); }
-    .city-select option { background: var(--bg); color: var(--fg); }
+
+    .city-select:hover {
+      border-color: var(--fg);
+    }
+
+    .city-select:focus {
+      border-color: var(--fg);
+    }
+
+    .city-select option {
+      background: var(--bg);
+      color: var(--fg);
+    }
 
     /* ── Section labels ── */
     .section-label {
@@ -388,8 +458,11 @@
 
   <header>
     <span class="site-name">do things</span>
-    <select id="city-select" class="city-select hidden"></select>
     <span class="header-meta" id="header-meta">loading…</span>
+    <div class="header-controls">
+      <select id="city-select" class="city-select hidden"></select>
+      <button id="theme-btn" class="theme-btn" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
+    </div>
   </header>
 
   <main>
@@ -521,7 +594,7 @@
           `${fmtRange(data.week_start, data.week_end)} · ${data.events.length} events`;
 
         const picks = data.events.filter(e => (e.score || 0) >= TOP_PICK_THRESHOLD);
-        const rest  = data.events.filter(e => (e.score || 0) <  TOP_PICK_THRESHOLD);
+        const rest = data.events.filter(e => (e.score || 0) < TOP_PICK_THRESHOLD);
 
         const topGrid = document.getElementById("top-picks-grid");
         if (picks.length) {
@@ -539,6 +612,7 @@
         document.getElementById("content").classList.remove("hidden");
 
         lucide.createIcons();
+        syncThemeIcon();
 
       } catch (err) {
         document.getElementById("loading-state").classList.add("hidden");
@@ -548,6 +622,25 @@
       }
     }
 
+    function effectiveTheme() {
+      const attr = document.documentElement.getAttribute("data-theme");
+      if (attr === "dark" || attr === "light") return attr;
+      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+
+    function syncThemeIcon() {
+      const btn = document.getElementById("theme-btn");
+      btn.innerHTML = `<i data-lucide="${effectiveTheme() === "dark" ? "sun" : "moon"}"></i>`;
+      lucide.createIcons({ nodes: [btn] });
+    }
+
+    document.getElementById("theme-btn").addEventListener("click", () => {
+      const next = effectiveTheme() === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+      syncThemeIcon();
+    });
+
     async function init() {
       const params = new URLSearchParams(location.search);
       let city = params.get("city");
@@ -556,9 +649,9 @@
       try {
         const res = await fetch(`data/index.json?v=${cacheBust()}`);
         if (res.ok) {
-          const idx  = await res.json();
+          const idx = await res.json();
           const cities = idx.cities || [];
-          const keys   = cities.map(c => c.key);
+          const keys = cities.map(c => c.key);
 
           if (!city || !keys.includes(city)) city = keys[0] || "brisbane";
 
@@ -579,7 +672,7 @@
             });
           }
         }
-      } catch (_) {}
+      } catch (_) { }
 
       city = city || "brisbane";
       loadCity(city);
