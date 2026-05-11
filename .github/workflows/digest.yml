@@ -37,9 +37,9 @@ on:
         default: ""
 
 jobs:
-  run-agent:
+  run-digest:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     permissions:
       contents: write
 
@@ -56,22 +56,35 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run events agent
+      - name: Collect events
         env:
-          CITY:               ${{ inputs.city }}
-          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
-          WHATSAPP_TOKEN:     ${{ secrets.WHATSAPP_TOKEN }}
-          WHATSAPP_PHONE_ID:  ${{ secrets.WHATSAPP_PHONE_ID }}
-          # Use the explicit recipient input if provided, otherwise fall back to the secret.
-          WHATSAPP_RECIPIENT: ${{ inputs.recipient != '' && inputs.recipient || secrets.WHATSAPP_RECIPIENT }}
-        run: python src/agent.py
+          CITY:              ${{ inputs.city }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python src/collection.py
 
-      - name: Commit events markdown
+      - name: Write markdown
+        env:
+          CITY: ${{ inputs.city }}
+        run: python src/markdown.py
+
+      - name: Update pages index
+        run: python src/pages.py
+
+      - name: Commit data files
         env:
           CITY: ${{ inputs.city }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "${CITY^^}.md" "data/${CITY}.json"
+          git add "data/${CITY}.json" "${CITY^^}.md" "data/index.json"
           git diff --cached --quiet || git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           git push
+
+      - name: Send WhatsApp digest
+        continue-on-error: true
+        env:
+          CITY:               ${{ inputs.city }}
+          WHATSAPP_TOKEN:     ${{ secrets.WHATSAPP_TOKEN }}
+          WHATSAPP_PHONE_ID:  ${{ secrets.WHATSAPP_PHONE_ID }}
+          WHATSAPP_RECIPIENT: ${{ inputs.recipient != '' && inputs.recipient || secrets.WHATSAPP_RECIPIENT }}
+        run: python src/messaging.py
