@@ -2,7 +2,8 @@
 Brisbane Events Agent
 ---------------------
 Searches Brisbane event sources using the Claude API (with web search),
-formats the results, and sends them via WhatsApp Cloud API.
+curates and scores results against user interests, then sends a weekly
+digest via WhatsApp Cloud API.
 
 Run locally:  python src/agent.py
 Run on CI:    triggered by GitHub Actions every Monday 8am AEST
@@ -11,7 +12,6 @@ Run on CI:    triggered by GitHub Actions every Monday 8am AEST
 import os
 import json
 import re
-import sys
 from datetime import date, timedelta
 
 import anthropic
@@ -27,8 +27,8 @@ WA_TOKEN          = os.environ["WHATSAPP_TOKEN"]          # Meta permanent acces
 WA_PHONE_ID       = os.environ["WHATSAPP_PHONE_ID"]       # Sending phone number ID
 WA_TO             = os.environ["WHATSAPP_RECIPIENT"]      # Your number, e.g. 61412345678
 
-SEARCH_MODEL = "claude-opus-4-7"           # thorough web search + reasoning
-FORMAT_MODEL = "claude-haiku-4-5-20251001" # fast + cheap JSON formatting
+SEARCH_MODEL = "claude-opus-4-7"   # thorough web search + reasoning
+FORMAT_MODEL = "claude-sonnet-4-6" # curation, scoring, description writing
 
 SOURCES = [
     # --- Event directories ---
@@ -89,6 +89,22 @@ CATEGORIES = [
     "Community / Other",
 ]
 
+INTERESTS = """
+WANT:
+  - Intellectually stimulating talks, lectures, panels, and debates (science, philosophy, tech, history, culture)
+  - Creative workshops and classes (art, writing, music, craft)
+  - Social events to meet interesting people (meetups, community dinners, book clubs, open mics)
+  - Live music, comedy, theatre, and immersive art experiences
+  - Free or low-cost community events
+
+SKIP entirely — do not include:
+  - Spectator sports of any kind (rugby, cricket, football, racing, etc.)
+  - Any event involving a "business opportunity", network marketing, or multi-level marketing
+  - Paid seminars that are actually sales pitches or upsell funnels
+  - Corporate networking or recruitment events
+  - Online-only events (unless hosted by a Brisbane organisation for a Brisbane audience)
+"""
+
 
 # ---------------------------------------------------------------------------
 # Date helpers
@@ -115,6 +131,9 @@ def build_search_prompt(monday: date, sunday: date) -> str:
 Your job is to find in-person events happening THIS WEEK in Brisbane, Queensland, Australia:
 {fmt_date(monday)} to {fmt_date(sunday)}.
 
+The person receiving this digest has the following interests:
+{INTERESTS}
+
 Search these sources thoroughly using web search:
 
 {chr(10).join(f"  {i+1}. {s}" for i, s in enumerate(SOURCES))}
@@ -127,10 +146,11 @@ For each event you find, note:
   - Cost (free or price)
   - Category: one of {CATEGORIES}
   - Source website
+  - Brief description of what the event is
 
 Rules:
   - Only include events within {fmt_date(monday)} – {fmt_date(sunday)}.
-  - Skip online-only events unless hosted by a Brisbane organisation.
+  - Apply the SKIP rules above — do not list sports, MLM, or sales-pitch events.
   - Aim for at least 20 events across different categories and suburbs.
   - Search multiple sources — don't stop after the first few results.
   - Include the direct URL for every event you list.
@@ -149,9 +169,10 @@ def search_events(monday: date, sunday: date) -> tuple[str, int]:
         messages=[{
             "role": "user",
             "content": (
-                f"Search for all Brisbane events this week ({fmt_date(monday)} to {fmt_date(sunday)}). "
-                "Use web search on every source listed in your instructions. "
-                "List every event you find with full details and a direct URL."
+                f"Search for Brisbane events this week ({fmt_date(monday)} to {fmt_date(sunday)}). "
+                "Use web search on the sources listed in your instructions. "
+                "Skip anything matching the SKIP criteria. "
+                "List every relevant event you find with full details and a direct URL."
             )
         }],
     )
@@ -164,20 +185,51 @@ def search_events(monday: date, sunday: date) -> tuple[str, int]:
 
 
 # ---------------------------------------------------------------------------
-# Step 2: Format raw text into structured JSON (no web search needed)
+# Step 2: Curate, score, enrich, and format as JSON
 # ---------------------------------------------------------------------------
 
-FORMAT_SYSTEM = f"""You are a JSON formatter. The user will give you a list of Brisbane events described in free text.
-Extract each event and return a valid JSON array. Each element must have exactly these fields:
-  - title:    event name (string)
-  - datetime: date and time as a short string, e.g. "Sat 14 Jun, 7:00 PM"
-  - location: venue name and/or suburb (string)
-  - link:     direct URL to the event page (string; use "" if unknown)
-  - category: exactly one of {CATEGORIES}
-  - cost:     "Free" or the price, e.g. "$25" (string)
-  - source:   website or organisation name (string)
+FORMAT_SYSTEM = f"""You are a personal events curator for someone in Brisbane with these interests:
+{INTERESTS}
 
-Output ONLY the JSON array — no markdown, no explanation, no code fences."""
+The user will give you a list of Brisbane events described in free text from a web search.
+
+Your job:
+1. FILTER: Remove any remaining sports, MLM, sales-pitch, or duplicate events.
+   For duplicates (same event from multiple sources), keep only the entry with the best direct URL.
+2. CURATE: For each remaining event, produce the following fields:
+   - title:       event name (string)
+   - datetime:    date and time as a short string, e.g. "Sat 14 Jun, 7:00 PM"
+   - location:    venue name and/or suburb (string)
+   - link:        direct URL to the event page (string; use "" if unknown)
+   - category:    exactly one of {CATEGORIES}
+   - cost:        "Free" or the price, e.g. "$25" (string)
+   - source:      website or organisation name (string)
+   - description: 2–3 sentences describing what the event actually is — what happens,
+                  who runs it, what to expect. Be specific, not generic.
+   - tags:        3–6 short lowercase topic tags reflecting subject matter, format, and cost,
+                  e.g. ["philosophy", "lecture", "free", "q&a"] or ["art", "workshop", "beginners"]
+   - score:       integer 1–10 rating fit with the user's interests (10 = perfect match,
+                  1 = barely relevant). Be honest — not everything deserves an 8.
+   - why:         ONE concrete sentence on why THIS specific event is worth attending.
+                  Be specific: mention the speaker, the format, the crowd, what makes it
+                  stand out. Do NOT write generic phrases like "a great opportunity to learn".
+
+3. OUTPUT: A valid JSON array sorted by score descending. No markdown, no explanation, no code fences.
+
+Example element:
+{{
+  "title": "Philosophy of Mind: AI and Consciousness",
+  "datetime": "Mon 12 May, 7:00 PM",
+  "location": "UQ St Lucia, Building 9",
+  "link": "https://events.uq.edu.au/...",
+  "category": "Public Lecture",
+  "cost": "Free",
+  "source": "UQ Events",
+  "description": "UQ's Professor of Philosophy presents her latest research on the hard problem of consciousness and what AI systems can and cannot tell us about subjective experience. Aimed at a general audience; no background in philosophy required. Followed by 30-minute open Q&A.",
+  "tags": ["philosophy", "consciousness", "ai", "lecture", "free", "q&a"],
+  "score": 9,
+  "why": "One of UQ's leading philosophers speaking publicly on a genuinely hard topic — the Q&A format means you can actually engage with her."
+}}"""
 
 
 def parse_events(raw_text: str) -> list[dict]:
@@ -186,10 +238,10 @@ def parse_events(raw_text: str) -> list[dict]:
 
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
-    print("→ Step 2: Formatting events into JSON…")
+    print("→ Step 2: Curating and enriching events…")
     response = client.messages.create(
         model=FORMAT_MODEL,
-        max_tokens=6000,
+        max_tokens=8000,
         system=FORMAT_SYSTEM,
         messages=[{
             "role": "user",
@@ -202,12 +254,14 @@ def parse_events(raw_text: str) -> list[dict]:
 
     match = re.search(r"\[[\s\S]*\]", raw)
     if not match:
-        print("✗ No JSON array in formatter response. Raw output:")
+        print("✗ No JSON array in curator response. Raw output:")
         print(raw[:500])
         return []
 
     events = json.loads(match.group())
-    print(f"→ Parsed {len(events)} events")
+    print(f"→ {len(events)} events after curation")
+    top = sum(1 for e in events if e.get("score", 0) >= 8)
+    print(f"→ {top} top picks (score ≥ 8)")
     return events
 
 
@@ -229,44 +283,98 @@ CATEGORY_EMOJI = {
     "Community / Other": "📌",
 }
 
+TOP_PICK_THRESHOLD = 8
+MAX_TOP_PICKS = 6
+
+
+def _fmt_tags(tags: list) -> str:
+    return "  🏷 " + " · ".join(str(t) for t in tags[:6])
+
 
 def format_whatsapp(events: list[dict], monday: date, sunday: date) -> list[str]:
     """
-    Returns a list of WhatsApp message strings.
-    WhatsApp messages have a ~4096 char limit; we split by category if needed.
+    Returns a list of WhatsApp message strings (≤ 4096 chars each).
+
+    Message 1: header + top picks (score ≥ 8) with full detail including why + description
+    Message 2+: remaining events grouped by category with description + tags
     """
     if not events:
-        return [f"📅 *Brisbane This Week* ({fmt_date(monday)} – {fmt_date(sunday)})\n\nNo events found this week. Check back next Monday!"]
+        return [
+            f"📅 *Brisbane This Week* ({fmt_date(monday)} – {fmt_date(sunday)})\n\n"
+            "No events found this week. Check back next Monday!"
+        ]
 
-    by_cat: dict[str, list[dict]] = {}
-    for e in events:
-        by_cat.setdefault(e.get("category", "Community / Other"), []).append(e)
+    top_picks   = [e for e in events if e.get("score", 0) >= TOP_PICK_THRESHOLD][:MAX_TOP_PICKS]
+    top_ids     = {id(e) for e in top_picks}
+    remaining   = [e for e in events if id(e) not in top_ids]
 
+    # ── Message 1: Top Picks ──────────────────────────────────────────────────
     header = (
         f"📅 *Brisbane This Week*\n"
         f"{fmt_date(monday)} – {fmt_date(sunday)}\n"
-        f"{len(events)} events found\n"
+        f"⭐ {len(top_picks)} top picks  ·  {len(events)} events found\n"
         f"{'─' * 28}"
     )
 
-    messages = []
-    current = header + "\n\n"
+    msg1 = header + "\n\n"
+
+    if top_picks:
+        msg1 += "⭐ *TOP PICKS*\n\n"
+        for e in top_picks:
+            cat    = e.get("category", "Community / Other")
+            emoji  = CATEGORY_EMOJI.get(cat, "📌")
+            cost   = e.get("cost", "See link")
+            cost_s = "Free ✓" if cost.lower() == "free" else cost
+            tags   = e.get("tags", [])
+            desc   = e.get("description", "")
+            why    = e.get("why", "")
+
+            entry = (
+                f"• *{e.get('title', 'Untitled')}*\n"
+                f"  {emoji} {e.get('datetime', '—')}  ·  {e.get('location', '—')}  ·  {cost_s}\n"
+            )
+            if tags:
+                entry += _fmt_tags(tags) + "\n"
+            if desc:
+                entry += f"  {desc}\n"
+            if why:
+                entry += f"  💡 _{why}_\n"
+            entry += f"  🔗 {e.get('link', '')}\n\n"
+
+            msg1 += entry
+
+    messages = [msg1.strip()]
+
+    # ── Message 2+: Remaining events by category ──────────────────────────────
+    if not remaining:
+        return messages
+
+    by_cat: dict[str, list[dict]] = {}
+    for e in remaining:
+        by_cat.setdefault(e.get("category", "Community / Other"), []).append(e)
+
+    current = "📋 *All Events This Week*\n\n"
 
     for cat, cat_events in by_cat.items():
-        emoji = CATEGORY_EMOJI.get(cat, "📌")
+        emoji   = CATEGORY_EMOJI.get(cat, "📌")
         section = f"*{emoji} {cat}*\n"
 
         for e in cat_events:
-            cost_str = e.get("cost", "See link")
-            cost_tag = "Free ✓" if cost_str.lower() == "free" else cost_str
-            link = e.get("link", "")
+            cost   = e.get("cost", "See link")
+            cost_s = "Free ✓" if cost.lower() == "free" else cost
+            tags   = e.get("tags", [])
+            desc   = e.get("description", "")
+
             entry = (
                 f"• *{e.get('title', 'Untitled')}*\n"
-                f"  📆 {e.get('datetime', '—')}\n"
-                f"  📍 {e.get('location', '—')}\n"
-                f"  💰 {cost_tag}\n"
-                f"  🔗 {link}\n\n"
+                f"  📆 {e.get('datetime', '—')}  ·  📍 {e.get('location', '—')}  ·  💰 {cost_s}\n"
             )
+            if tags:
+                entry += _fmt_tags(tags) + "\n"
+            if desc:
+                entry += f"  {desc}\n"
+            entry += f"  🔗 {e.get('link', '')}\n\n"
+
             section += entry
 
         if len(current) + len(section) > 3800:
