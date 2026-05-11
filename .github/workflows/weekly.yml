@@ -1,0 +1,35 @@
+name: Brisbane Events — Weekly Digest
+
+on:
+  schedule:
+    # Every Monday at 8:00 AM AEST (UTC+10) = 22:00 UTC Sunday
+    - cron: "0 22 * * 0"
+
+  # Allow manual trigger from the GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Brisbane events agent
+        env:
+          ANTHROPIC_API_KEY:    ${{ secrets.ANTHROPIC_API_KEY }}
+          WHATSAPP_TOKEN:       ${{ secrets.WHATSAPP_TOKEN }}
+          WHATSAPP_PHONE_ID:    ${{ secrets.WHATSAPP_PHONE_ID }}
+          WHATSAPP_RECIPIENT:   ${{ secrets.WHATSAPP_RECIPIENT }}
+        run: python src/agent.py
