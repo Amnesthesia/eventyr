@@ -41,9 +41,8 @@ def fmt_date(d: date) -> str:
 
 
 def load_city_config(city: str) -> dict:
-    sources_path = Path(__file__).parent.parent / "sources.yml"
+    sources_path = Path(__file__).parent.parent / "sources" / f"{city}.yml"
+    if not sources_path.exists():
+        raise SystemExit(f"Unknown city '{city}'. No file at {sources_path}. Run src/add_city.py to add it.")
     with open(sources_path) as f:
-        all_sources = yaml.safe_load(f)
-    if city not in all_sources:
-        raise SystemExit(f"Unknown city '{city}'. Add it to sources.yml via src/add_city.py.")
-    return all_sources[city]
+        return yaml.safe_load(f)

@@ -4,7 +4,7 @@ on:
   workflow_call:
     inputs:
       city:
-        description: City slug matching a key in sources.yml (e.g. brisbane)
+        description: City slug matching a file in sources/ (e.g. brisbane)
         required: true
         type: string
       recipient:

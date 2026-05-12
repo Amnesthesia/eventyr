@@ -2,7 +2,7 @@
 Add City — Event Sources Discovery
 ------------------------------------
 Discovers the best event sources for a new city using Claude + web search,
-then updates sources.yml (three-tier format) and adds the city to digest.yml.
+then writes sources/{city_key}.yml and adds the city to digest.yml.
 
 Usage (locally):
   ANTHROPIC_API_KEY=... CITY_NAME="Sydney, NSW, Australia" CITY_KEY=sydney python src/add_city.py
@@ -24,8 +24,8 @@ ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 CITY_NAME         = os.environ["CITY_NAME"]
 CITY_KEY          = os.environ["CITY_KEY"]
 
-SOURCES_FILE = "sources.yml"
-DIGEST_WF    = ".github/workflows/digest.yml"
+SOURCES_DIR = "sources"
+DIGEST_WF   = ".github/workflows/digest.yml"
 
 SEARCH_MODEL = "claude-opus-4-7"
 
@@ -101,18 +101,16 @@ def discover_sources() -> dict:
     return sources
 
 
-def update_sources_yml(sources: dict) -> None:
-    try:
-        with open(SOURCES_FILE) as f:
-            data = yaml.safe_load(f) or {}
-    except FileNotFoundError:
-        data = {}
+def write_city_file(sources: dict) -> None:
+    import os
+    os.makedirs(SOURCES_DIR, exist_ok=True)
+    out_path = os.path.join(SOURCES_DIR, f"{CITY_KEY}.yml")
 
-    if CITY_KEY in data:
-        print(f"✗ City key '{CITY_KEY}' already exists in {SOURCES_FILE}. Aborting.")
+    if os.path.exists(out_path):
+        print(f"✗ {out_path} already exists. Aborting.")
         sys.exit(1)
 
-    data[CITY_KEY] = {
+    city_data = {
         "name":    CITY_NAME,
         "sources": {
             "aggregators":  sources.get("aggregators",  []),
@@ -121,10 +119,10 @@ def update_sources_yml(sources: dict) -> None:
         },
     }
 
-    with open(SOURCES_FILE, "w") as f:
-        yaml.dump(data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+    with open(out_path, "w") as f:
+        yaml.dump(city_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
-    print(f"→ Updated {SOURCES_FILE} with '{CITY_KEY}'")
+    print(f"→ Written {out_path}")
 
 
 def update_digest_workflow() -> None:
@@ -150,10 +148,10 @@ def main() -> None:
     print("=" * 50)
 
     sources = discover_sources()
-    update_sources_yml(sources)
+    write_city_file(sources)
     update_digest_workflow()
 
-    print("✓ Done. Commit sources.yml and digest.yml to complete the setup.")
+    print(f"✓ Done. Commit sources/{CITY_KEY}.yml and digest.yml to complete the setup.")
 
 
 if __name__ == "__main__":

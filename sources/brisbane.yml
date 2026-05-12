@@ -1,0 +1,72 @@
+name: Brisbane, Queensland, Australia
+timezone: Australia/Brisbane
+sources:
+  aggregators:
+    # Often list the same events — batch into 1–2 queries; don't need to search all
+    - Eventbrite Brisbane (eventbrite.com.au)
+    - Eventfinda Brisbane (brisbane.eventfinda.com.au)
+    - Humanitix Brisbane (events.humanitix.com/brisbane)
+    - Must Do Brisbane (mustdobrisbane.com/whats-on)
+    - The Urban List Brisbane (theurbanlist.com/brisbane)
+    - Broadsheet Brisbane (broadsheet.com.au/brisbane)
+    - Fever Brisbane (feverup.com/en/brisbane)
+    - WeekendNotes Brisbane (weekendnotes.com/brisbane)
+    - My Community Diary Queensland (mycommunitydiary.com.au)
+    - ClassBento Brisbane (classbento.com.au/workshops-brisbane)
+    - Meetup Brisbane groups (meetup.com)
+    - Visit Brisbane (visit.brisbane.qld.au/whats-on)
+
+  institutions:
+    # Each runs its own programme — check all
+    - Brisbane City Council events (brisbane.qld.gov.au/whats-on)
+    - Queensland State Library (slq.qld.gov.au)
+    - QUT public events (qut.edu.au/events)
+    - UQ public events (events.uq.edu.au)
+    - Griffith University events (griffith.edu.au/events)
+    - Brisbane Powerhouse (brisbanepowerhouse.org)
+    - QAGOMA & Gallery of Modern Art (qagoma.qld.gov.au/whats-on)
+    - QPAC (qpac.com.au/whats-on)
+    - Queensland Museum Brisbane (museum.qld.gov.au/brisbane/queensland-museum)
+    - Museum of Brisbane (museumofbrisbane.com.au/whats-on)
+    - Judith Wright Centre (judithwrightcentre.com)
+    - South Bank Parklands events (visitsouthbank.com.au)
+    - Queensland Theatre (queenslandtheatre.com.au/whats-on)
+    - La Boite Theatre (laboite.com.au/whats-on)
+    - Queensland Symphony Orchestra (qso.com.au/whats-on)
+    - Queensland Ballet (queenslandballet.com.au/whats-on)
+
+  independents:
+    # Niche venues — events here rarely appear in aggregators; check all
+    # Art galleries & creative spaces
+    - Institute of Modern Art Brisbane (ima.org.au/ima-events)
+    - Milani Gallery West End (milanigallery.com.au/exhibitions)
+    - Jan Murphy Gallery Fortitude Valley (janmurphygallery.com.au)
+    - The Station Brisbane Fortitude Valley (thestationbrisbane.com)
+    - Lightspace gallery & events Fortitude Valley (lightspace.net.au)
+    - BY.ARTISANS West End — workshops, art classes, social events
+    # Hackerspaces & maker communities
+    - HSBNE Hackerspace Brisbane (hsbne.org)
+    - Brisbane Makerspace (brisbanemaker.space)
+    # Music venues
+    - The Triffid Fortitude Valley (thetriffid.com.au)
+    - Crowbar Brisbane Fortitude Valley (crowbarbrisbane.com.au)
+    - Fortitude Music Hall (thefortitude.com.au/whats-on)
+    - Black Bear Lodge Fortitude Valley (blackbearlodge.bar/events)
+    # Cinemas
+    - Palace Cinemas Brisbane (palacecinemas.com.au/events)
+    - Dendy Powerhouse cinema New Farm (powerhouse.dendy.com.au)
+    - New Farm Cinemas (newfarmcinemas.com.au)
+    # Cafes, bars & bookshops with events
+    - Avid Reader bookshop & café West End (avidreader.com.au/events)
+    - The Bearded Lady West End — music, comedy, cabaret (thebeardedlady.com.au)
+    - The Boundary Hotel West End (theboundary.com.au)
+    - Wandering Cooks West End — food & community events (wanderingcooks.com.au)
+    - Archive Bar West End — open mic nights
+    - Newmarket Hotel — open mic comedy
+    # Communities & recurring events
+    - Creative Mornings Brisbane (creativemornings.com/cities/bne)
+    - Open Sessions Brisbane open mic circuit (theopensessions.com)
+    - Creative Lunch Club Brisbane (creativelunchclub.com/c/brisbane)
+    - Board Game BBQ Brisbane (boardgamebbq.com/events)
+    - Philosophy Cafe Meet Up Brisbane (meetup.com/The-Philosophy-Cafe-Meet-Up)
+    - Sonder Language Exchange at The Burrow West End (theburrowwestend.com.au)
