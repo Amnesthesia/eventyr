@@ -92,6 +92,9 @@ Your job:
                   e.g. ["philosophy", "lecture", "free", "q&a"] or ["art", "workshop", "beginners"]
    - score:       integer 1–10 rating fit with the user's interests (10 = perfect match,
                   1 = barely relevant). Be honest — not everything deserves an 8.
+   - datetime_iso: ISO 8601 start datetime, e.g. "2026-06-14T19:00:00". Use the event's
+                  actual date and time. Date-only "YYYY-MM-DD" if no time is known.
+                  Use "" if completely unknown.
    - image:       direct URL to a preview/hero image for the event (e.g. from the event page
                   or venue website). Use "" if none is available. Must be a full https:// URL.
 
@@ -109,6 +112,7 @@ Example element:
   "description": "UQ's Professor of Philosophy presents her latest research on the hard problem of consciousness and what AI systems can and cannot tell us about subjective experience. Aimed at a general audience; no background in philosophy required. Followed by 30-minute open Q&A.",
   "tags": ["philosophy", "consciousness", "ai", "lecture", "free", "q&a"],
   "score": 9,
+  "datetime_iso": "2026-05-12T19:00:00",
   "image": "https://events.uq.edu.au/images/philosophy-lecture.jpg"
 }}"""
 

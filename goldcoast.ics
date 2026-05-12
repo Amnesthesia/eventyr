@@ -1,0 +1,148 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Gold Coast — do things
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+UID:goldcoast-0@dothings
+DTSTART;VALUE=DATE:20260517
+DTEND;VALUE=DATE:20260517
+SUMMARY:Blues on Broadbeach 2026 — 25th Anniversary Festival
+DESCRIPTION:Four-day free music festival celebrating 25 years\, transformin
+ g Broadbeach into a rhythm and blues mecca with 19 stages across parks\, s
+ treets and venues. Features Ian Moss\, Ruthie Foster\, The Bamboos\, MonoN
+ eon\, Robert Finley\, Grace Cummings\, Hussy Hicks\, and many more. Genuin
+ ely community-oriented with natural mingling between stages and crowd disc
+ overy.
+LOCATION:Broadbeach City Centre (19 stages across parks\, streets\, venues)
+URL:https://bluesonbroadbeach.com
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1@dothings
+DTSTART;VALUE=DATE:20260517
+DTEND;VALUE=DATE:20260517
+SUMMARY:Blues on Broadbeach Sunday Ticket — The Teskey Brothers + Judith Hi
+ ll + Ash Grunwald
+DESCRIPTION:Premium ticketed closing night of the festival featuring Austra
+ lian soul-blues heavyweights The Teskey Brothers in their festival debut\,
+  joined by Grammy-winning international artist Judith Hill and Ash Grunwal
+ d. Premium experience with exclusive VIP bar and intimate artist conversat
+ ions for Twelve Bar Society members.
+LOCATION:Kurrawa Park\, Broadbeach
+URL:https://bluesonbroadbeach.com/sunday-ticket/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-2@dothings
+DTSTART;TZID=UTC:20260511T183000
+DTEND;TZID=UTC:20260511T203000
+SUMMARY:Bond University Faculty of Law Twilight Seminar: 'The Anti-System T
+ rump — And What Do We Do About It?'
+DESCRIPTION:Faculty of Law public seminar exploring how Trump's trade polic
+ y signals US willingness to act against the international system it once b
+ uilt. Open to the community\; no background required. Examines geopolitics
+ \, systems thinking\, and the Trump era's global impact. Includes free ref
+ reshments (vegan\, GF\, dairy-free available).
+LOCATION:Bond University\, Faculty of Law (Building 4\, Level 3)\, Robina
+URL:https://bond.edu.au/event/10657
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-3@dothings
+DTSTART;VALUE=DATE:20260516
+DTEND;VALUE=DATE:20260516
+SUMMARY:Ross Noble — Cranium of Curiosities
+DESCRIPTION:One of Australia's best-loved improvisational stand-up comedian
+ s\, Ross Noble performs his characteristically digressive\, surreal\, genr
+ e-bending comedy. Intellectually playful and genuinely unpredictable—perfe
+ ct for curious minds who value creative surprise and live spontaneity.
+LOCATION:HOTA\, Home of the Arts\, 135 Bundall Rd\, Surfers Paradise
+URL:https://hota.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-4@dothings
+DTSTART;VALUE=DATE:20260517
+DTEND;VALUE=DATE:20260517
+SUMMARY:Twelve Bar Society 'In Conversation' Sessions — Ruthie Foster & Lou
+ ie Shelton
+DESCRIPTION:Exclusive VIP membership program offering intimate 'In Conversa
+ tion' sessions with blues legends Ruthie Foster and Louie Shelton\, privat
+ e VIP bar with up-close stage viewing\, and access to a secret show. For t
+ hose wanting deeper connection with the artists beyond the main festival s
+ tages.
+LOCATION:Broadbeach (check bluesonbroadbeach.com for exact venue)
+URL:https://bluesonbroadbeach.com
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-6@dothings
+DTSTART;TZID=UTC:20260517T133000
+DTEND;TZID=UTC:20260517T153000
+SUMMARY:Music of the Night — Tribute to Andrew Lloyd Webber
+DESCRIPTION:Live orchestrated tribute to Andrew Lloyd Webber's theatrical m
+ asterpieces from Phantom of the Opera\, Cats\, Evita\, and beyond. Immersi
+ ve live music experience with strong orchestration and emotional depth.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://hota.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-7@dothings
+DTSTART;TZID=UTC:20260516T170000
+DTEND;TZID=UTC:20260516T190000
+SUMMARY:Miami Marketta — Street Food Night Market + Free Live Music
+DESCRIPTION:Laneway dining experience with 15+ international food vendors\,
+  free live music\, and boutique bars. Weekly street food nights (Wed–Sat f
+ rom 5pm) with no bookings needed. One of Gold Coast's best authentic recur
+ ring social scenes—naturally brings together creative\, diverse crowds in 
+ an intimate\, characterful setting.
+LOCATION:Miami Marketta\, 23 Hillcrest Parade\, Miami
+URL:https://www.miamimarketta.com/night-market
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-9@dothings
+DTSTART;TZID=UTC:20260514T093000
+DTEND;TZID=UTC:20260514T113000
+SUMMARY:Gold Coast Social Work Expo 2026
+DESCRIPTION:Community-focused gathering bringing together social workers\, 
+ students\, allied-health providers\, and community organisations to explor
+ e career pathways\, systems thinking\, and human-centred practice. Authent
+ ic\, half-day learning event with panels and discussions—not a corporate s
+ ales pitch.
+LOCATION:Varsity Lakes Community Resource Centre\, Varsity Lakes
+URL:https://www.eventbrite.com.au/e/gold-coast-social-work-expo-2026-ticket
+ s-1976690549645
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-10@dothings
+DTSTART;TZID=UTC:20260516T230000
+DTEND;TZID=UTC:20260517T010000
+SUMMARY:2000s + 2010s Party — Miami Marketta
+DESCRIPTION:DJ dance party celebrating hits from the 2000s and 2010s in Mia
+ mi Marketta's characterful laneway venue. Warm\, social crowd in one of th
+ e Gold Coast's most authentic creative spaces.
+LOCATION:Miami Marketta\, 23 Hillcrest Parade\, Miami (18+)
+URL:https://www.miamimarketta.com/ticketed-events/2000-2010-party
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-14@dothings
+DTSTART;VALUE=DATE:20260516
+DTEND;VALUE=DATE:20260516
+SUMMARY:Comedy Underground — Weekly Saturday Night Comedy
+DESCRIPTION:Weekly live comedy night at the Gold Coast's premier arts venue
+ \, presenting emerging and established comedians. Recurring community even
+ t ideal for discovering new voices and mixing with a lively\, mixed-age cr
+ owd.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://basedcomedy.com.au/the-shows/comedy-underground.html
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-15@dothings
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260515
+SUMMARY:Australian Army Band Concert
+DESCRIPTION:Free or low-cost live concert by the Australian Army Band—a pro
+ fessional\, distinctive ensemble offering community-oriented classical and
+  contemporary music.
+LOCATION:Gold Coast (check Experience Gold Coast for venue)
+URL:https://experiencegoldcoast.com
+END:VEVENT
+END:VCALENDAR

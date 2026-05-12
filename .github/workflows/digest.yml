@@ -88,6 +88,11 @@ jobs:
       - name: Write markdown
         run: python src/markdown.py
 
+      - name: Generate iCal
+        env:
+          CITY: ${{ inputs.city }}
+        run: python src/ical.py
+
       - name: Update pages index
         run: python src/pages.py
 
@@ -101,7 +106,7 @@ jobs:
                   "data/${CITY}_aggregators_raw.json" \
                   "data/${CITY}_institutions_raw.json" \
                   "data/${CITY}_independents_raw.json" \
-                  "${CITY^^}.md" "data/index.json"
+                  "${CITY^^}.md" "${CITY}.ics" "data/index.json"
           git diff --cached --quiet || git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           git push
 
