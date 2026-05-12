@@ -95,6 +95,9 @@ Your job:
    - datetime_iso: ISO 8601 start datetime, e.g. "2026-06-14T19:00:00". Use the event's
                   actual date and time. Date-only "YYYY-MM-DD" if no time is known.
                   Use "" if completely unknown.
+   - datetime_end_iso: ISO 8601 end datetime, e.g. "2026-06-14T21:00:00". Use the event's
+                  actual end date and time. Date-only "YYYY-MM-DD" if no time is known.
+                  Use "" if completely unknown.
    - image:       direct URL to a preview/hero image for the event (e.g. from the event page
                   or venue website). Use "" if none is available. Must be a full https:// URL.
 
@@ -113,6 +116,7 @@ Example element:
   "tags": ["philosophy", "consciousness", "ai", "lecture", "free", "q&a"],
   "score": 9,
   "datetime_iso": "2026-05-12T19:00:00",
+  "datetime_end_iso": "2026-05-12T21:00:00",
   "image": "https://events.uq.edu.au/images/philosophy-lecture.jpg"
 }}"""
 
