@@ -19,7 +19,9 @@ on:
         default: false
     secrets:
       ANTHROPIC_API_KEY:
-        required: true
+        required: false
+      PERPLEXITY_API_KEY:
+        required: false
       WHATSAPP_TOKEN:
         required: true
       WHATSAPP_PHONE_ID:
@@ -71,11 +73,13 @@ jobs:
         env:
           CITY: ${{ inputs.city }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           FORCE: ${{ inputs.force }}
         run: |
           python src/collection.py aggregators  &
           python src/collection.py institutions &
           python src/collection.py independents &
+          python src/collection.py open          &
           wait
 
       - name: Curate events
@@ -103,9 +107,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "data/${CITY}.json" \
-                  "data/${CITY}_aggregators_raw.json" \
-                  "data/${CITY}_institutions_raw.json" \
-                  "data/${CITY}_independents_raw.json" \
+                  data/${CITY}_*_raw.json \
                   "${CITY^^}.md" "${CITY}.ics" "data/index.json"
           git diff --cached --quiet || git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           git push

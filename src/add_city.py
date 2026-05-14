@@ -1,108 +1,74 @@
 """
 Add City — Event Sources Discovery
 ------------------------------------
-Discovers the best event sources for a new city using Claude + web search,
-then writes sources/{city_key}.yml and adds the city to digest.yml.
+Discovers the best event sources for a new city using available providers
+(Anthropic and/or Perplexity), merges the results, then writes
+sources/{city_key}.yml and adds the city to digest.yml.
 
 Usage (locally):
   ANTHROPIC_API_KEY=... CITY_NAME="Sydney, NSW, Australia" CITY_KEY=sydney python src/add_city.py
+  PERPLEXITY_API_KEY=... CITY_NAME="Sydney, NSW, Australia" CITY_KEY=sydney python src/add_city.py
 
 Usage (CI):
   Triggered by .github/workflows/add-city.yml
 """
 
 import os
-import json
 import re
 import sys
 
-import anthropic
 import yaml
 
+import anthropic_ai
+import perplexity_ai
 
-ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
-CITY_NAME         = os.environ["CITY_NAME"]
-CITY_KEY          = os.environ["CITY_KEY"]
+CITY_NAME = os.environ["CITY_NAME"]
+CITY_KEY  = os.environ["CITY_KEY"]
 
 SOURCES_DIR = "sources"
 DIGEST_WF   = ".github/workflows/digest.yml"
 
-SEARCH_MODEL = "claude-opus-4-7"
 
-DISCOVERY_SYSTEM = f"""You are helping set up an automated weekly events digest for {CITY_NAME}.
+def _extract_domain(source_str: str) -> str:
+    """Return a normalised domain from a source string like 'Name (domain.com/path)'."""
+    match = re.search(r'\(([^)]+)\)', source_str)
+    if match:
+        url = match.group(1).lstrip("https://").lstrip("http://").lstrip("www.")
+        return url.split("/")[0].lower()
+    return source_str.lower()
 
-Find the best websites to search for local in-person events in this city and
-sort them into three tiers:
 
-AGGREGATORS — platforms that index events from many sources (duplicates across
-  aggregators are expected). Examples: Eventbrite, Eventfinda, Meetup, Humanitix,
-  local event guides (Broadsheet, Urban List, WeekendNotes, Must Do, Fever), tourism
-  portals (Visit X), local community diary sites.
-
-INSTITUTIONS — organisations that run their own independent event programmes; each
-  has unique events not listed elsewhere. Examples: city/council events pages,
-  state libraries, universities, major museums, galleries, concert halls, theatres,
-  performing arts companies.
-
-INDEPENDENTS — niche, community-facing venues and groups whose events rarely appear
-  in aggregators. Examples: independent bookshops with events, small music venues,
-  indie galleries, hackerspaces/makerspaces, board-game communities, philosophy
-  groups, language exchange groups, creative spaces, bars/cafes with regular events.
-
-Return ONLY a JSON object with exactly three keys: "aggregators", "institutions",
-"independents". Each key maps to an array of source description strings in the format
-"Source Name (url)" or "Source Name — description" if no URL is known.
-
-Example shape:
-{{
-  "aggregators":  ["Eventbrite Sydney (eventbrite.com.au)", ...],
-  "institutions": ["City of Sydney (cityofsydney.nsw.gov.au/events)", ...],
-  "independents": ["Gleebooks bookshop events (gleebooks.com.au/events)", ...]
-}}
-
-No markdown, no explanation — just the JSON object."""
+def merge_sources(target: dict, incoming: dict) -> None:
+    """Add sources from incoming into target, deduplicating by domain."""
+    for tier in ("aggregators", "institutions", "independents"):
+        existing = {_extract_domain(s) for s in target.get(tier, [])}
+        for source in incoming.get(tier, []):
+            domain = _extract_domain(source)
+            if domain not in existing:
+                target[tier].append(source)
+                existing.add(domain)
 
 
 def discover_sources() -> dict:
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    sources: dict = {"aggregators": [], "institutions": [], "independents": []}
 
-    print(f"→ Discovering event sources for {CITY_NAME}…")
-    response = client.messages.create(
-        model=SEARCH_MODEL,
-        max_tokens=4000,
-        tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 20}],
-        system=DISCOVERY_SYSTEM,
-        messages=[{
-            "role": "user",
-            "content": (
-                f"Find all the best event sources for {CITY_NAME}, sorted into the three "
-                "tiers described in your instructions. Search the web to find accurate, "
-                "current URLs. Return a JSON object with aggregators, institutions, and independents."
-            )
-        }],
-    )
+    has_anthropic  = bool(os.environ.get("ANTHROPIC_API_KEY"))
+    has_perplexity = bool(os.environ.get("PERPLEXITY_API_KEY"))
 
-    searches = sum(1 for b in response.content if b.type == "server_tool_use")
-    print(f"→ Performed {searches} web search(es)")
+    if not has_anthropic and not has_perplexity:
+        raise SystemExit("✗ Neither ANTHROPIC_API_KEY nor PERPLEXITY_API_KEY is set.")
 
-    raw = "".join(b.text for b in response.content if b.type == "text")
-    raw = re.sub(r"```json|```", "", raw).strip()
+    if has_anthropic:
+        merge_sources(sources, anthropic_ai.find_sources(CITY_NAME))
+    if has_perplexity:
+        merge_sources(sources, perplexity_ai.find_sources(CITY_NAME))
 
-    match = re.search(r"\{[\s\S]*\}", raw)
-    if not match:
-        print("✗ No JSON object in response. Raw output:")
-        print(raw[:500])
-        sys.exit(1)
-
-    sources = json.loads(match.group())
     for tier in ("aggregators", "institutions", "independents"):
-        n = len(sources.get(tier, []))
-        print(f"→ Found {n} {tier}")
+        print(f"→ Total {tier}: {len(sources[tier])}")
     return sources
 
 
 def write_city_file(sources: dict) -> None:
-    import os
     os.makedirs(SOURCES_DIR, exist_ok=True)
     out_path = os.path.join(SOURCES_DIR, f"{CITY_KEY}.yml")
 

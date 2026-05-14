@@ -1,9 +1,9 @@
 """
 Events curation — Step 2 of the digest pipeline.
 
-Reads the three raw-search JSON files written by collection.py (one per tier),
-combines them, deduplicates, curates, and scores using Haiku, then writes
-data/{city}.json as the source of truth for all downstream steps.
+Reads all data/{city}_*_raw.json files written by collection.py, combines them,
+deduplicates, curates, and scores using Haiku, then writes data/{city}.json as
+the source of truth for all downstream steps.
 
 Run:  CITY=brisbane ANTHROPIC_API_KEY=... python src/curate.py
 Force re-run: FORCE=true CITY=brisbane ANTHROPIC_API_KEY=... python src/curate.py
@@ -147,16 +147,12 @@ def load_raw_texts() -> tuple[str, date, date]:
     monday, sunday = get_week_range()
     combined: list[str] = []
 
-    for tier in ("aggregators", "institutions", "independents"):
-        raw_path = data_dir / f"{CITY}_{tier}_raw.json"
-        if not raw_path.exists():
-            print(f"  ⚠ Missing {raw_path.name} — skipping tier")
-            continue
+    for raw_path in sorted(data_dir.glob(f"{CITY}_*_raw.json")):
         payload = json.loads(raw_path.read_text(encoding="utf-8"))
-        combined.append(f"=== {tier.upper()} ===\n{payload['raw_text']}")
+        combined.append(payload["raw_text"])
 
     if not combined:
-        raise SystemExit("✗ No raw tier files found. Run collection.py for each tier first.")
+        raise SystemExit("✗ No raw files found. Run collection.py for each tier first.")
 
     return "\n\n".join(combined), monday, sunday
 
