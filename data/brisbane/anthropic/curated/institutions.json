@@ -4,326 +4,261 @@
   "tier": "institutions",
   "week_start": "2026-05-11",
   "week_end": "2026-05-17",
+  "raw_sha256": "b7817556060b9d2c40722df3fd0406905189cf1d29f0ceed184981af9f450473",
   "events": [
     {
-      "title": "Redlands Coast AdventureFest",
-      "datetime": "15–24 May 2026",
-      "location": "Redlands Coast (various locations, ~45 min from Brisbane CBD)",
-      "link": "https://visit.brisbane.qld.au/whats-on/whats-on-this-week",
-      "category": "Community / Other",
-      "cost": "Free",
-      "source": "Visit Brisbane",
-      "description": "A free, community-led outdoor adventure festival in its second year featuring 100+ activities including adrenaline sports, hands-on workshops, kids' activities, interactive displays and nature experiences. Run by Ranger Stacey, this is a genuinely nature-focused event attracting adventurous, outdoorsy people.",
-      "tags": [
-        "outdoor",
-        "adventure",
-        "community",
-        "free"
-      ],
-      "score": 9,
-      "datetime_iso": "2026-05-15",
-      "datetime_end_iso": "2026-05-24",
-      "image": ""
-    },
-    {
       "title": "SLQ: Underwater Soundscape Composition Workshop",
-      "datetime": "TBA (May 2026)",
+      "datetime": "Mon 11 May, 10:00 AM",
       "location": "State Library of Queensland (The Edge), South Brisbane",
       "link": "https://www.slq.qld.gov.au/autumn",
       "category": "Workshop / Class",
       "cost": "Check website",
-      "source": "State Library of Queensland",
-      "description": "Hands-on workshop led by sound artist and researcher Dr Leah Barclay exploring underwater listening and soundscape composition. Participants discover the art and science of listening to hidden aquatic ecosystems and create original soundscape compositions — a rare intersection of art, science, and environmental thinking.",
+      "source": "State Library of Queensland (SLQ)",
+      "description": "Led by Dr. Leah Barclay, this hands-on workshop explores the art and science of underwater listening, guiding participants to create original soundscape compositions and engage with aquatic environmental thinking.",
       "tags": [
-        "soundscape",
         "workshop",
+        "music",
+        "sound art",
         "science",
-        "art"
+        "environment",
+        "creative"
+      ],
+      "score": 10,
+      "datetime_iso": "2026-05-11T10:00:00",
+      "datetime_end_iso": "2026-05-11T14:00:00",
+      "image": ""
+    },
+    {
+      "title": "Redlands Coast AdventureFest",
+      "datetime": "Fri 15 May, 9:00 AM",
+      "location": "Redlands Coast (various outdoor locations)",
+      "link": "https://visit.brisbane.qld.au/whats-on/whats-on-this-week",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Redlands Coast / Visit Brisbane",
+      "description": "A free, community-led festival offering a wide range of outdoor and adventure activities for all ages, from adrenaline sports to nature excursions, appealing to adventurous and nature-focused individuals.",
+      "tags": [
+        "adventure",
+        "outdoor",
+        "community",
+        "nature",
+        "free"
+      ],
+      "score": 10,
+      "datetime_iso": "2026-05-15T09:00:00",
+      "datetime_end_iso": "2026-05-24T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival: Okay, I Believe You (Auslan Comedy)",
+      "datetime": "Wed 13 May, 7:00 PM",
+      "location": "Brisbane Powerhouse, New Farm",
+      "link": "https://brisbanepowerhouse.org/events/",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Brisbane Powerhouse",
+      "description": "An Auslan-interpreted comedy show at Brisbane Comedy Festival, offering an inclusive and accessible stand-up experience in a community-focused atmosphere at the atmospheric Powerhouse.",
+      "tags": [
+        "comedy",
+        "auslan",
+        "inclusive",
+        "performance",
+        "ticketed"
       ],
       "score": 9,
-      "datetime_iso": "",
-      "datetime_end_iso": "",
+      "datetime_iso": "2026-05-13T19:00:00",
+      "datetime_end_iso": "2026-05-14T22:00:00",
       "image": ""
     },
     {
       "title": "GOMA Friday Nights — Olafur Eliasson: Presence",
-      "datetime": "Fri 15 May, 5:30–8:30 PM",
+      "datetime": "Fri 15 May, 5:30 PM",
       "location": "Gallery of Modern Art (GOMA), South Brisbane",
       "link": "https://www.qagoma.qld.gov.au/event/goma-friday-nights-presence-2026-05-08",
       "category": "Arts / Exhibition",
-      "cost": "Ticketed",
-      "source": "Gallery of Modern Art",
-      "description": "Extended gallery hours with multi-sensory art by Olafur Eliasson, vinyl listening bar with Brisbane DJs, live performances, and drinks/food. A social, creative evening merging art, music and connection in an intimate cultural setting.",
+      "cost": "Ticketed (exhibition entry applies)",
+      "source": "QAGOMA",
+      "description": "An evening experience at GOMA featuring the multi-sensory Olafur Eliasson exhibition, alongside live DJs, music, drinks, and a vinyl listening bar, fostering a social and artistic atmosphere.",
       "tags": [
-        "art",
-        "music",
+        "art exhibition",
         "social",
-        "contemporary"
+        "music",
+        "design",
+        "contemporary art",
+        "ticketed"
       ],
       "score": 9,
       "datetime_iso": "2026-05-15T17:30:00",
       "datetime_end_iso": "2026-05-15T20:30:00",
-      "image": "https://www.qagoma.qld.gov.au/images/olafur-eliasson-presence.jpg"
-    },
-    {
-      "title": "QSO Italian Gala",
-      "datetime": "Fri 15 May, 7:30 PM",
-      "location": "QPAC Concert Hall, South Brisbane",
-      "link": "https://qso.com.au/events/2026/concert-specials-2026/qso-italian-gala",
-      "category": "Concert / Music",
-      "cost": "Ticketed",
-      "source": "Queensland Symphony Orchestra",
-      "description": "Queensland Symphony Orchestra under Maestro Umberto Clerici performs Italian masterworks including Rossini's Barber of Seville, Vivaldi's Triple Concerto for violin, cello and accordion, and dramatic works by Puccini and Verdi. Features world-renowned accordionist James Crabb.",
-      "tags": [
-        "classical",
-        "orchestral",
-        "italian",
-        "concert"
-      ],
-      "score": 8,
-      "datetime_iso": "2026-05-15T19:30:00",
-      "datetime_end_iso": "",
-      "image": "https://qso.com.au/images/italian-gala-2026.jpg"
-    },
-    {
-      "title": "Brisbane Comedy Festival: Jiggle Jiggle (Josh Thomas)",
-      "datetime": "13–17 May 2026",
-      "location": "Brisbane Powerhouse, New Farm",
-      "link": "https://brisbanepowerhouse.org/events/",
-      "category": "Concert / Music",
-      "cost": "Ticketed",
-      "source": "Brisbane Powerhouse",
-      "description": "Headline act from Josh Thomas at Brisbane Comedy Festival 2026. Described as quirky, hilarious and authentic, featuring his new show Jiggle Jiggle. Part of the festival's diverse 300+ event program across four iconic venues.",
-      "tags": [
-        "comedy",
-        "stand-up",
-        "theatre",
-        "festival"
-      ],
-      "score": 8,
-      "datetime_iso": "2026-05-13",
-      "datetime_end_iso": "2026-05-17",
-      "image": "https://brisbanepowerhouse.org/images/josh-thomas-jiggle.jpg"
-    },
-    {
-      "title": "QSO Maestro Series: Rachmaninov & Shostakovich (Main Night)",
-      "datetime": "Sat 16 May, 7:30 PM",
-      "location": "QPAC Concert Hall, South Brisbane",
-      "link": "https://qso.com.au/events/2026/maestro-series/maestro-3-rachmaninov-and-shostakovich",
-      "category": "Concert / Music",
-      "cost": "Ticketed",
-      "source": "Queensland Symphony Orchestra",
-      "description": "Main performance of QSO's Maestro Series featuring Rachmaninov's beloved Piano Concerto No. 2 alongside Shostakovich's emotional 5th Symphony and contemporary work by Cathy Milliken. Intimate classical concert attracting thoughtful music lovers.",
-      "tags": [
-        "classical",
-        "orchestral",
-        "concert",
-        "masterworks"
-      ],
-      "score": 8,
-      "datetime_iso": "2026-05-16T19:30:00",
-      "datetime_end_iso": "",
-      "image": "https://qso.com.au/images/maestro-series-3-2026.jpg"
-    },
-    {
-      "title": "Olafur Eliasson: Presence — Exhibition",
-      "datetime": "Daily (1 May – 26 June 2026)",
-      "location": "Gallery of Modern Art (GOMA), South Brisbane",
-      "link": "https://www.qagoma.qld.gov.au/",
-      "category": "Arts / Exhibition",
-      "cost": "From $20",
-      "source": "Gallery of Modern Art",
-      "description": "Exclusive Brisbane exhibition of major works by contemporary artist Olafur Eliasson. Immersive, multi-sensory experience exploring light, colour, perception and environmental themes through large-scale installations and a meticulously constructed riverbed.",
-      "tags": [
-        "contemporary art",
-        "installation",
-        "sensory",
-        "exhibition"
-      ],
-      "score": 8,
-      "datetime_iso": "2026-05-01",
-      "datetime_end_iso": "2026-06-26",
-      "image": "https://www.qagoma.qld.gov.au/images/olafur-eliasson-presence-hero.jpg"
-    },
-    {
-      "title": "Brisbane Comedy Festival: Okay, I Believe You (Auslan Comedy)",
-      "datetime": "13–14 May 2026",
-      "location": "Brisbane Powerhouse, New Farm",
-      "link": "https://brisbanepowerhouse.org/events/",
-      "category": "Concert / Music",
-      "cost": "Ticketed",
-      "source": "Brisbane Powerhouse",
-      "description": "Auslan-interpreted comedy show — a rare opportunity for accessible, inclusive stand-up comedy in Brisbane. Strong community atmosphere at an atmospheric independent venue.",
-      "tags": [
-        "comedy",
-        "stand-up",
-        "inclusive",
-        "community"
-      ],
-      "score": 8,
-      "datetime_iso": "2026-05-13",
-      "datetime_end_iso": "2026-05-14",
-      "image": "https://brisbanepowerhouse.org/images/okay-i-believe-you.jpg"
-    },
-    {
-      "title": "Australian Cinémathèque: Double Take (Film Program)",
-      "datetime": "Daily (1 May – 1 July 2026)",
-      "location": "Australian Cinémathèque, Gallery of Modern Art, South Brisbane",
-      "link": "https://www.qagoma.qld.gov.au/whats-on/",
-      "category": "Arts / Exhibition",
-      "cost": "Ticketed",
-      "source": "Gallery of Modern Art",
-      "description": "Curated international and art house film program at GOMA's dedicated cinema space. Rare opportunity for thoughtful, intellectually engaging film culture in Brisbane during this period.",
-      "tags": [
-        "film",
-        "art house",
-        "cinema",
-        "curated"
-      ],
-      "score": 8,
-      "datetime_iso": "2026-05-01",
-      "datetime_end_iso": "2026-07-01",
-      "image": "https://www.qagoma.qld.gov.au/images/cinematheque-double-take.jpg"
-    },
-    {
-      "title": "Museum of Brisbane — City Walking Tours",
-      "datetime": "Wed 13 May & Sat 16 May (recurring)",
-      "location": "Museum of Brisbane, City Hall, Brisbane CBD",
-      "link": "https://www.museumofbrisbane.com.au/whats-on/",
-      "category": "Community / Other",
-      "cost": "Bookings required",
-      "source": "Museum of Brisbane",
-      "description": "Regular guided walking tours exploring Brisbane's CBD history, architecture and hidden stories. Recurring community event attracting curious, conversation-loving participants. Bookings essential.",
-      "tags": [
-        "history",
-        "walking tour",
-        "community",
-        "architectural"
-      ],
-      "score": 7,
-      "datetime_iso": "2026-05-13",
-      "datetime_end_iso": "",
-      "image": "https://www.museumofbrisbane.com.au/images/walking-tours.jpg"
-    },
-    {
-      "title": "QSO Maestro Series Preview Concerts",
-      "datetime": "Wed 13 May & Thu 14 May, 7:00 PM",
-      "location": "QPAC Concert Hall, South Brisbane",
-      "link": "https://qso.com.au/events/2026/maestro-series/maestro-3-rachmaninov-and-shostakovich",
-      "category": "Concert / Music",
-      "cost": "Ticketed",
-      "source": "Queensland Symphony Orchestra",
-      "description": "Two preview performances of the Maestro Series featuring Rachmaninov's Piano Concerto No. 2, Shostakovich's 5th Symphony, and contemporary work by Cathy Milliken. Chance to experience the program before the main Saturday performance.",
-      "tags": [
-        "classical",
-        "orchestral",
-        "concert",
-        "preview"
-      ],
-      "score": 7,
-      "datetime_iso": "2026-05-13T19:00:00",
-      "datetime_end_iso": "",
-      "image": "https://qso.com.au/images/maestro-series-preview.jpg"
-    },
-    {
-      "title": "GOMA Kids Tour: Presence & Play",
-      "datetime": "Sat 16 May, 8:30–10:00 AM",
-      "location": "Gallery of Modern Art (GOMA), South Brisbane",
-      "link": "https://www.qagoma.qld.gov.au/event/kids-tours-presence-and-play-2026-07-04",
-      "category": "Workshop / Class",
-      "cost": "From $19",
-      "source": "Gallery of Modern Art",
-      "description": "Multi-sensory family tour of Olafur Eliasson: Presence designed for children. Guided through playful art experiences that spark imagination and build connection, plus exclusive exhibition viewing in a crowd-free setting before public opening.",
-      "tags": [
-        "art",
-        "family",
-        "workshop",
-        "interactive"
-      ],
-      "score": 7,
-      "datetime_iso": "2026-05-16T08:30:00",
-      "datetime_end_iso": "2026-05-16T10:00:00",
-      "image": "https://www.qagoma.qld.gov.au/images/kids-tour-presence.jpg"
-    },
-    {
-      "title": "Brisbane Comedy Festival: Shad & Pete Save the World!",
-      "datetime": "2–23 May 2026 (late-night shows)",
-      "location": "Brisbane Powerhouse, New Farm",
-      "link": "https://brisbanepowerhouse.org/events/",
-      "category": "Concert / Music",
-      "cost": "Ticketed",
-      "source": "Brisbane Powerhouse",
-      "description": "Late-night raw variety comedy show running throughout the festival. Intimate, irreverent, unpredictable format suited to those seeking experimental comedy in an atmospheric independent venue.",
-      "tags": [
-        "comedy",
-        "variety",
-        "experimental",
-        "late-night"
-      ],
-      "score": 7,
-      "datetime_iso": "2026-05-02",
-      "datetime_end_iso": "2026-05-23",
-      "image": "https://brisbanepowerhouse.org/images/shad-pete.jpg"
-    },
-    {
-      "title": "SLQ: Dearly Departed: Death in Life — Exhibition",
-      "datetime": "Ongoing through Autumn 2026",
-      "location": "State Library of Queensland (SLQ), South Brisbane",
-      "link": "https://www.slq.qld.gov.au/autumn",
-      "category": "Arts / Exhibition",
-      "cost": "Free",
-      "source": "State Library of Queensland",
-      "description": "Thought-provoking exhibition engaging with death, dying, memory and remembrance through tarot symbolism and visual storytelling. Includes hands-on workshop inviting participants to create symbolic artworks using tarot archetypes.",
-      "tags": [
-        "exhibition",
-        "contemplative",
-        "art",
-        "free"
-      ],
-      "score": 7,
-      "datetime_iso": "2026-03-01",
-      "datetime_end_iso": "2026-05-31",
-      "image": "https://www.slq.qld.gov.au/images/dearly-departed.jpg"
+      "image": ""
     },
     {
       "title": "Queensland Museum Lunchtime Lectures",
-      "datetime": "Thursdays at lunchtime (check for May dates; next confirmed: 28 May)",
+      "datetime": "Thu 14 May, 12:30 PM",
       "location": "Queensland Museum Kurilpa, South Brisbane",
       "link": "https://www.museum.qld.gov.au/kurilpa/whats-on/lunchtime-lectures/",
       "category": "Public Lecture",
       "cost": "Free",
       "source": "Queensland Museum",
-      "description": "Recurring lunchtime lecture series where Queensland Museum staff present research and behind-the-scenes work. Topics include restoration projects and collections history. Casual, community-oriented format ideal for curious lunch-breakers.",
+      "description": "Museum staff share insights into their latest research through free lunchtime lectures, offering a glimpse into diverse topics like local history, technology, and museum collections.",
       "tags": [
         "lecture",
-        "museum",
-        "research",
+        "history",
+        "science",
+        "culture",
         "free"
       ],
-      "score": 7,
-      "datetime_iso": "2026-05-28T12:00:00",
-      "datetime_end_iso": "",
-      "image": "https://www.museum.qld.gov.au/images/lunchtime-lectures.jpg"
+      "score": 9,
+      "datetime_iso": "2026-05-14T12:30:00",
+      "datetime_end_iso": "2026-05-14T13:30:00",
+      "image": ""
     },
     {
-      "title": "Museum of Brisbane — Permanent & Current Exhibitions",
-      "datetime": "Daily (open all week)",
-      "location": "Museum of Brisbane, City Hall, Brisbane CBD",
+      "title": "Museum of Brisbane — City Walking Tour",
+      "datetime": "Wed 13 May, 10:00 AM",
+      "location": "Departing Museum of Brisbane, Brisbane CBD",
       "link": "https://www.museumofbrisbane.com.au/whats-on/",
+      "category": "Community / Other",
+      "cost": "Check website",
+      "source": "Museum of Brisbane",
+      "description": "Regular guided walking tours led by the Museum of Brisbane, exploring the history, architecture, and hidden stories of the CBD, ideal for curious individuals seeking conversation and local insights.",
+      "tags": [
+        "walking tour",
+        "history",
+        "community",
+        "social",
+        "exploration"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-13T10:00:00",
+      "datetime_end_iso": "2026-05-13T12:00:00",
+      "image": ""
+    },
+    {
+      "title": "Museum of Brisbane — Sunday City Walking Tour",
+      "datetime": "Sun 17 May, 10:00 AM",
+      "location": "Departing Museum of Brisbane, Brisbane CBD",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/",
+      "category": "Community / Other",
+      "cost": "Check website",
+      "source": "Museum of Brisbane",
+      "description": "Another opportunity to join a guided walking tour from the Museum of Brisbane, focusing on the history and architecture of the CBD, perfect for curious people interested in local stories and social connection.",
+      "tags": [
+        "walking tour",
+        "history",
+        "community",
+        "social",
+        "exploration"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-17T10:00:00",
+      "datetime_end_iso": "2026-05-17T12:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival: Jiggle Jiggle (Josh Thomas)",
+      "datetime": "Wed 13 May, 7:00 PM",
+      "location": "Brisbane Powerhouse, New Farm",
+      "link": "https://brisbanepowerhouse.org/events/",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Brisbane Powerhouse",
+      "description": "Josh Thomas returns with his new show Jiggle Jiggle as part of Brisbane Comedy Festival's final week, offering quirky, authentic stand-up known for attracting diverse audiences.",
+      "tags": [
+        "comedy",
+        "standup",
+        "performance",
+        "ticketed"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-13T19:00:00",
+      "datetime_end_iso": "2026-05-17T22:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival: Shad & Pete Save the World!",
+      "datetime": "Mon 11 May, 9:00 PM",
+      "location": "Brisbane Powerhouse, New Farm",
+      "link": "https://brisbanepowerhouse.org/events/",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Brisbane Powerhouse",
+      "description": "A late-night raw variety comedy show at Brisbane Comedy Festival, offering an intimate, unpredictable, and experimental experience for those seeking something different in performance art.",
+      "tags": [
+        "comedy",
+        "experimental",
+        "performance",
+        "late-night",
+        "ticketed"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-11T21:00:00",
+      "datetime_end_iso": "2026-05-23T23:00:00",
+      "image": ""
+    },
+    {
+      "title": "Olafur Eliasson: Presence — Exhibition",
+      "datetime": "Mon 11 May, 10:00 AM",
+      "location": "Gallery of Modern Art (GOMA), South Brisbane",
+      "link": "https://www.qagoma.qld.gov.au/",
+      "category": "Arts / Exhibition",
+      "cost": "From $20",
+      "source": "QAGOMA",
+      "description": "An exclusive multi-sensory exhibition at GOMA featuring major works by Olafur Eliasson, exploring light, colour, perception, and human experience through interactive and immersive art installations.",
+      "tags": [
+        "art exhibition",
+        "contemporary art",
+        "design",
+        "creativity",
+        "perception",
+        "ticketed"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-11T10:00:00",
+      "datetime_end_iso": "2026-06-26T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Australian Cinémathèque: Double Take (Film Program)",
+      "datetime": "Mon 11 May, 10:00 AM",
+      "location": "Australian Cinémathèque, Gallery of Modern Art, South Brisbane",
+      "link": "https://www.qagoma.qld.gov.au/whats-on/",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "QAGOMA",
+      "description": "GOMA's curated cinema space presents Double Take, an ongoing program of international and art house films, offering a rare opportunity to engage with thoughtful film culture.",
+      "tags": [
+        "film",
+        "cinema",
+        "art",
+        "curated",
+        "ticketed"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-11T10:00:00",
+      "datetime_end_iso": "2026-07-01T23:00:00",
+      "image": ""
+    },
+    {
+      "title": "Dearly Departed: Death in Life — SLQ Exhibition",
+      "datetime": "Mon 11 May, 9:00 AM",
+      "location": "State Library of Queensland (SLQ), South Brisbane",
+      "link": "https://www.slq.qld.gov.au/autumn",
       "category": "Arts / Exhibition",
       "cost": "Free",
-      "source": "Museum of Brisbane",
-      "description": "Permanent and rotating exhibitions exploring Brisbane's history, culture and identity. Rooftop location in City Hall provides beautiful setting. Recurring walking tours also available Wednesdays and Saturdays.",
+      "source": "State Library of Queensland (SLQ)",
+      "description": "A thought-provoking free exhibition at the State Library exploring themes of death, dying, memory, and remembrance through visual stories, including tarot card symbolism.",
       "tags": [
-        "history",
         "exhibition",
-        "free",
-        "cultural"
+        "philosophy",
+        "culture",
+        "history",
+        "free"
       ],
-      "score": 7,
-      "datetime_iso": "2026-05-11",
-      "datetime_end_iso": "2026-05-17",
-      "image": "https://www.museumofbrisbane.com.au/images/exhibitions.jpg"
+      "score": 8,
+      "datetime_iso": "2026-05-11T09:00:00",
+      "datetime_end_iso": "2026-05-31T20:00:00",
+      "image": ""
     },
     {
       "title": "Brisbane Comedy Festival: Bron Lewis",
@@ -333,37 +268,119 @@
       "category": "Concert / Music",
       "cost": "From $30",
       "source": "Brisbane Powerhouse",
-      "description": "Stand-up comedy show by Bron Lewis, a Brisbane-based performer exploring the chaos of motherhood, three kids, and a new puppy. Intimate show in the Underground Theatre, one of Brisbane's most atmospheric comedy venues.",
+      "description": "Stand-up comedian Bron Lewis presents her chaotic and hilarious observations on motherhood and life, performing in the intimate Underground Theatre as part of the Brisbane Comedy Festival.",
       "tags": [
         "comedy",
-        "stand-up",
-        "theatre",
-        "local"
+        "standup",
+        "performance",
+        "ticketed"
       ],
-      "score": 6,
+      "score": 7,
       "datetime_iso": "2026-05-17T18:00:00",
-      "datetime_end_iso": "",
-      "image": "https://brisbanepowerhouse.org/images/bron-lewis.jpg"
+      "datetime_end_iso": "2026-05-17T20:00:00",
+      "image": ""
     },
     {
-      "title": "Museum of Brisbane — Select Sundays Walking Tours",
-      "datetime": "Sun 17 May (check website to confirm; recurring select Sundays)",
+      "title": "QSO Italian Gala",
+      "datetime": "Fri 15 May, 7:30 PM",
+      "location": "QPAC Concert Hall, South Brisbane",
+      "link": "https://qso.com.au/events/2026/concert-specials-2026/qso-italian-gala",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Queensland Symphony Orchestra (QSO)",
+      "description": "The Queensland Symphony Orchestra, led by Maestro Umberto Clerici, performs a passionate program of Italian classical music from Rossini to Puccini, featuring a unique Vivaldi Triple Concerto with cello, violin, and accordion.",
+      "tags": [
+        "classical music",
+        "orchestra",
+        "performance",
+        "ticketed"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-15T19:30:00",
+      "datetime_end_iso": "2026-05-15T21:30:00",
+      "image": ""
+    },
+    {
+      "title": "QSO Maestro Series Preview Concerts: Rachmaninov & Shostakovich",
+      "datetime": "Wed 13 May, 7:00 PM",
+      "location": "QPAC Concert Hall, South Brisbane",
+      "link": "https://qso.com.au/events/2026/maestro-series/maestro-3-rachmaninov-and-shostakovich",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Queensland Symphony Orchestra (QSO)",
+      "description": "The Queensland Symphony Orchestra presents two preview concerts featuring Rachmaninov's Piano Concerto No. 2, Shostakovich's 5th Symphony, and Cathy Milliken's Catalogue of Sky.",
+      "tags": [
+        "classical music",
+        "orchestra",
+        "performance",
+        "ticketed"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-13T19:00:00",
+      "datetime_end_iso": "2026-05-14T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "QSO Maestro Series: Rachmaninov & Shostakovich",
+      "datetime": "Sat 16 May, 7:30 PM",
+      "location": "QPAC Concert Hall, South Brisbane",
+      "link": "https://qso.com.au/events/2026/maestro-series/maestro-3-rachmaninov-and-shostakovich",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Queensland Symphony Orchestra (QSO)",
+      "description": "The main Maestro Series concert of the week, featuring Rachmaninov's beloved Piano Concerto No. 2 and Shostakovich's emotional 5th Symphony performed by the Queensland Symphony Orchestra.",
+      "tags": [
+        "classical music",
+        "orchestra",
+        "performance",
+        "ticketed"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-16T19:30:00",
+      "datetime_end_iso": "2026-05-16T21:30:00",
+      "image": ""
+    },
+    {
+      "title": "Museum of Brisbane — Exhibitions & Residency",
+      "datetime": "Mon 11 May, 10:00 AM",
       "location": "Museum of Brisbane, City Hall, Brisbane CBD",
       "link": "https://www.museumofbrisbane.com.au/whats-on/",
-      "category": "Community / Other",
-      "cost": "Bookings required",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
       "source": "Museum of Brisbane",
-      "description": "Recurring Sunday walking tours departing from Museum of Brisbane exploring Brisbane's streets, architecture and history. Community-oriented, conversation-focused experience attracting curious locals and visitors.",
+      "description": "Explore current exhibitions and a residency program at the Museum of Brisbane, located in City Hall, offering intellectually engaging cultural experiences focused on Brisbane's history and design.",
       "tags": [
-        "walking tour",
+        "exhibition",
         "history",
-        "community",
-        "architectural"
+        "culture",
+        "design",
+        "free"
       ],
-      "score": 6,
-      "datetime_iso": "2026-05-17",
-      "datetime_end_iso": "",
-      "image": "https://www.museumofbrisbane.com.au/images/sunday-tours.jpg"
+      "score": 7,
+      "datetime_iso": "2026-05-11T10:00:00",
+      "datetime_end_iso": "2026-11-30T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "GOMA Kids Tour: Presence & Play",
+      "datetime": "Sat 16 May, 8:30 AM",
+      "location": "Gallery of Modern Art (GOMA), South Brisbane",
+      "link": "https://www.qagoma.qld.gov.au/event/kids-tours-presence-and-play-2026-07-04",
+      "category": "Workshop / Class",
+      "cost": "From $19",
+      "source": "QAGOMA",
+      "description": "A multi-sensory guided tour of the Olafur Eliasson exhibition, designed for families with children, offering playful experiences to spark imagination and build connection in a relaxed, crowd-free setting.",
+      "tags": [
+        "art",
+        "family",
+        "play",
+        "creative",
+        "workshop"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-16T08:30:00",
+      "datetime_end_iso": "2026-05-16T10:00:00",
+      "image": ""
     }
   ]
 }

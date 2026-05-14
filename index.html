@@ -5,6 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>do things</title>
+  <meta name="description"
+    content="Weekly curated events guide for Brisbane, Gold Coast and Sunshine Coast — talks, workshops, live music, art, comedy, and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.brissy.lol/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="do things">
+  <meta property="og:description"
+    content="Weekly curated events guide for Brisbane, Gold Coast and Sunshine Coast — talks, workshops, live music, art, comedy, and more.">
+  <meta property="og:url" content="https://www.brissy.lol/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="do things">
+  <meta name="twitter:description"
+    content="Weekly curated events guide for Brisbane, Gold Coast and Sunshine Coast — talks, workshops, live music, art, comedy, and more.">
+  <script src="https://app.rybbit.io/api/script.js" data-site-id="0f3ec51f30bf" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -210,6 +224,14 @@
       justify-content: space-between;
       border-bottom: 1px solid var(--border);
       margin-bottom: 0;
+    }
+
+    .separator {
+      height: 1px;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--border);
     }
 
     .filters {
@@ -471,7 +493,7 @@
 <body>
 
   <header>
-    <span class="site-name">do things</span>
+    <span class="site-name">&gt;&nbsp;do things</span>
     <span class="header-meta" id="header-meta">loading…</span>
     <div class="header-controls">
       <select id="city-select" class="city-select hidden"></select>
@@ -492,13 +514,14 @@
     </div>
 
     <div id="content" class="hidden">
+      <div class="filter-bar" id="filter-bar"></div>
       <div id="top-picks-section">
         <div class="section-label">picks</div>
         <div class="card-grid" id="top-picks-grid"></div>
       </div>
 
       <div class="section-label">all events</div>
-      <div class="filter-bar" id="filter-bar"></div>
+      <div class="separator"></div>
       <div class="card-grid" id="all-events-grid"></div>
     </div>
   </main>
@@ -682,8 +705,9 @@
         document.getElementById("header-meta").textContent =
           `${fmtRange(data.week_start, data.week_end)} · ${data.events.length} events`;
 
-        const picks = data.events.filter(e => (e.score || 0) >= TOP_PICK_THRESHOLD);
-        const rest = data.events.filter(e => (e.score || 0) < TOP_PICK_THRESHOLD);
+        const picks = data.events.filter((e, i) => (e.score || 0) >= TOP_PICK_THRESHOLD && i < 9);
+        picks.sort((a, b) => (b.score || 0) - (a.score || 0)); // re-sort picks by score desc (not original order)
+        const rest = data.events.filter((e, i) => (e.score || 0) < TOP_PICK_THRESHOLD || i >= 9);
 
         const topGrid = document.getElementById("top-picks-grid");
         if (picks.length) {

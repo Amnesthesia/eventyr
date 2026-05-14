@@ -2,21 +2,26 @@
 Events curation — Step 2 of the digest pipeline.
 
 Reads each data/{city}/{provider}/raw/{tier}.json written by collection.py,
-curates each independently with Haiku, then merges and deduplicates in pure
-Python (difflib) to produce data/{city}.json.
+curates each independently with Gemini 2.5 Flash, then merges and deduplicates
+in pure Python (difflib on fingerprint strings) to produce data/{city}.json.
 
-Run:  CITY=brisbane ANTHROPIC_API_KEY=... python src/curate.py
-Force re-run: FORCE=true CITY=brisbane ANTHROPIC_API_KEY=... python src/curate.py
+Run:  CITY=brisbane GOOGLE_API_KEY=... python src/curate.py
+Force re-run: FORCE=true CITY=brisbane GOOGLE_API_KEY=... python src/curate.py
 """
 
 import difflib
+import hashlib
 import json
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 from pathlib import Path
 
-import anthropic
+from google import genai
+from google.genai import types
+
+import gemini_ai
 
 from common import (
     CATEGORIES,
@@ -32,10 +37,10 @@ from common import (
 # Config
 # ---------------------------------------------------------------------------
 
-ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
-CITY              = os.environ["CITY"]
-FORCE             = os.environ.get("FORCE", "").lower() in ("1", "true", "yes")
-FORMAT_MODEL      = "claude-haiku-4-5-20251001"
+GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
+CITY           = os.environ["CITY"]
+FORCE          = os.environ.get("FORCE", "").lower() in ("1", "true", "yes")
+FORMAT_MODEL   = "gemini-2.5-flash"
 
 _city_cfg = load_city_config(CITY)
 CITY_NAME = _city_cfg["name"]
@@ -139,23 +144,22 @@ def already_curated_this_week() -> bool:
 
 
 # ---------------------------------------------------------------------------
-# Curate a single raw file with Haiku
+# Curate a single raw file with Gemini 2.5 Flash
 # ---------------------------------------------------------------------------
 
 def _parse_events(raw_text: str, label: str) -> list[dict]:
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    client = genai.Client(api_key=GOOGLE_API_KEY)
 
-    response = client.messages.create(
+    response = gemini_ai.with_retry(lambda: client.models.generate_content(
         model=FORMAT_MODEL,
-        max_tokens=16000,
-        system=FORMAT_SYSTEM,
-        messages=[{"role": "user", "content": raw_text}],
-    )
+        contents=raw_text,
+        config=types.GenerateContentConfig(
+            system_instruction=FORMAT_SYSTEM,
+            max_output_tokens=65536,
+        ),
+    ))
 
-    if response.stop_reason == "max_tokens":
-        print(f"  ⚠ [{label}] Curator response truncated — attempting partial recovery")
-
-    raw = "".join(b.text for b in response.content if b.type == "text")
+    raw = response.text or ""
     raw = re.sub(r"```json|```", "", raw).strip()
 
     start = raw.find("[")
@@ -198,11 +202,13 @@ def curate_single_file(raw_file: Path) -> Path | None:
 
     out_path = DATA_ROOT / CITY / provider / "curated" / f"{tier}.json"
 
+    raw_hash = hashlib.sha256(raw_text.encode()).hexdigest()
+
     if not FORCE and out_path.exists():
         try:
             existing = json.loads(out_path.read_text(encoding="utf-8"))
-            if existing.get("week_start") == week_start_str:
-                print(f"  → [{label}] Already curated — skipping")
+            if existing.get("raw_sha256") == raw_hash:
+                print(f"  → [{label}] Raw unchanged — skipping")
                 return out_path
         except (json.JSONDecodeError, KeyError):
             pass
@@ -225,6 +231,7 @@ def curate_single_file(raw_file: Path) -> Path | None:
         "tier":       tier,
         "week_start": week_start_str,
         "week_end":   week_end_str,
+        "raw_sha256": raw_hash,
         "events":     events,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"  → Written {out_path.relative_to(_PROJECT_ROOT)}")
@@ -235,9 +242,11 @@ def curate_single_file(raw_file: Path) -> Path | None:
 # Merge + Python dedup
 # ---------------------------------------------------------------------------
 
-def _similar_title(a: str, b: str) -> bool:
-    a, b = a.lower().strip(), b.lower().strip()
-    return a == b or difflib.SequenceMatcher(None, a, b).ratio() > 0.85
+def _fingerprint(event: dict) -> str:
+    """Compact string used for duplicate detection: 'title | YYYY-MM-DD'."""
+    title = (event.get("title") or "").lower().strip()
+    dt    = (event.get("datetime_iso") or event.get("datetime") or "")[:10]
+    return f"{title} | {dt}" if dt else title
 
 
 def merge_and_deduplicate(monday: date) -> list[dict]:
@@ -257,11 +266,13 @@ def merge_and_deduplicate(monday: date) -> list[dict]:
     # Highest score wins when deduplicating
     all_events.sort(key=lambda e: e.get("score", 0), reverse=True)
 
+    seen: list[str] = []   # fingerprint strings only — no full-dict comparison
     unique: list[dict] = []
     for event in all_events:
-        title = event.get("title", "")
-        if not any(_similar_title(title, u["title"]) for u in unique):
+        fp = _fingerprint(event)
+        if not any(difflib.SequenceMatcher(None, fp, s).ratio() > 0.85 for s in seen):
             unique.append(event)
+            seen.append(fp)
 
     return unique
 
@@ -303,8 +314,10 @@ def main() -> None:
     if not raw_files:
         raise SystemExit("✗ No raw files found. Run collection.py for each tier first.")
 
-    for raw_file in raw_files:
-        curate_single_file(raw_file)
+    with ThreadPoolExecutor(max_workers=len(raw_files)) as executor:
+        futures = {executor.submit(curate_single_file, f): f for f in raw_files}
+        for future in as_completed(futures):
+            future.result()
 
     print("→ Merging and deduplicating…")
     events = merge_and_deduplicate(monday)

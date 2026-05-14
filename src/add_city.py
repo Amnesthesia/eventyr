@@ -1,9 +1,11 @@
 """
-Add City — Event Sources Discovery
-------------------------------------
-Discovers the best event sources for a new city using available providers
-(Anthropic and/or Perplexity), merges the results, then writes
-sources/{city_key}.yml and adds the city to digest.yml.
+Add / Update City — Event Sources Discovery
+--------------------------------------------
+Discovers event sources for a city using available providers, merges the
+results with any existing sources, then writes sources/{city_key}.yml.
+
+Running for an existing city adds newly discovered sources without removing
+any that are already there.
 
 Usage (locally):
   ANTHROPIC_API_KEY=... CITY_NAME="Sydney, NSW, Australia" CITY_KEY=sydney python src/add_city.py
@@ -15,7 +17,6 @@ Usage (CI):
 
 import os
 import re
-import sys
 
 import yaml
 
@@ -50,8 +51,26 @@ def merge_sources(target: dict, incoming: dict) -> None:
                 existing.add(domain)
 
 
-def discover_sources() -> dict:
-    sources: dict = {"aggregators": [], "institutions": [], "independents": []}
+def load_existing_sources() -> dict:
+    out_path = os.path.join(SOURCES_DIR, f"{CITY_KEY}.yml")
+    if not os.path.exists(out_path):
+        return {"aggregators": [], "institutions": [], "independents": []}
+    with open(out_path) as f:
+        data = yaml.safe_load(f) or {}
+    src = data.get("sources", {})
+    return {
+        "aggregators":  list(src.get("aggregators",  [])),
+        "institutions": list(src.get("institutions", [])),
+        "independents": list(src.get("independents", [])),
+    }
+
+
+def discover_sources(existing: dict) -> dict:
+    sources = {
+        "aggregators":  list(existing["aggregators"]),
+        "institutions": list(existing["institutions"]),
+        "independents": list(existing["independents"]),
+    }
 
     has_anthropic  = bool(os.environ.get("ANTHROPIC_API_KEY"))
     has_perplexity = bool(os.environ.get("PERPLEXITY_API_KEY"))
@@ -70,17 +89,16 @@ def discover_sources() -> dict:
         merge_sources(sources, gemini_ai.find_sources(CITY_NAME))
 
     for tier in ("aggregators", "institutions", "independents"):
-        print(f"→ Total {tier}: {len(sources[tier])}")
+        before = len(existing[tier])
+        after  = len(sources[tier])
+        added  = after - before
+        print(f"→ {tier}: {after} total ({f'+{added} new' if added else 'no new'})")
     return sources
 
 
 def write_city_file(sources: dict) -> None:
     os.makedirs(SOURCES_DIR, exist_ok=True)
     out_path = os.path.join(SOURCES_DIR, f"{CITY_KEY}.yml")
-
-    if os.path.exists(out_path):
-        print(f"✗ {out_path} already exists. Aborting.")
-        sys.exit(1)
 
     city_data = {
         "name":    CITY_NAME,
@@ -101,9 +119,14 @@ def update_digest_workflow() -> None:
     with open(DIGEST_WF) as f:
         content = f.read()
 
-    pattern = r'(          options:\n(?:            - \S+\n)*)'
-    if not re.search(pattern, content):
+    pattern = r'(        options:\n(?:          - \S+\n)*)'
+    match = re.search(pattern, content)
+    if not match:
         print(f"⚠ Could not locate options block in {DIGEST_WF} — skipping workflow update.")
+        return
+
+    if f"- {CITY_KEY}" in match.group(0):
+        print(f"→ '{CITY_KEY}' already in dispatch options — skipping workflow update.")
         return
 
     new_entry = f"            - {CITY_KEY}\n"
@@ -116,14 +139,18 @@ def update_digest_workflow() -> None:
 
 
 def main() -> None:
-    print(f"Add City — {CITY_KEY} ({CITY_NAME})")
+    out_path = os.path.join(SOURCES_DIR, f"{CITY_KEY}.yml")
+    is_update = os.path.exists(out_path)
+
+    print(f"{'Update' if is_update else 'Add'} City — {CITY_KEY} ({CITY_NAME})")
     print("=" * 50)
 
-    sources = discover_sources()
+    existing = load_existing_sources()
+    sources  = discover_sources(existing)
     write_city_file(sources)
     update_digest_workflow()
 
-    print(f"✓ Done. Commit sources/{CITY_KEY}.yml and digest.yml to complete the setup.")
+    print(f"✓ Done. Commit sources/{CITY_KEY}.yml{' and digest.yml' if not is_update else ''} to complete the setup.")
 
 
 if __name__ == "__main__":

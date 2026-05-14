@@ -8,15 +8,17 @@ Uses Google Search grounding for native web search.
 import json
 import os
 import re
+import time
 from datetime import date
 
 from google import genai
+from google.genai import errors as genai_errors
 from google.genai import types
 
 from common import fmt_date
 
-SEARCH_MODEL    = "gemini-2.0-flash"
-DISCOVERY_MODEL = "gemini-2.0-flash"
+SEARCH_MODEL    = "gemini-2.5-flash"
+DISCOVERY_MODEL = "gemini-2.5-pro"
 
 _REFUSAL_RE = re.compile(r"\bNO_EVENTS_FOUND\b")
 
@@ -50,15 +52,36 @@ SKIP ENTIRELY — do not include:
 """
 
 
+_clients: dict[str, genai.Client] = {}
+
+
 def _client() -> genai.Client:
     api_key = os.environ.get("GOOGLE_API_KEY")
     if not api_key:
         raise RuntimeError("GOOGLE_API_KEY not set")
-    return genai.Client(api_key=api_key)
+    if api_key not in _clients:
+        _clients[api_key] = genai.Client(api_key=api_key)
+    return _clients[api_key]
+
+
+_RETRY_DELAYS = (10, 30, 90)
+
+
+def with_retry(fn):
+    """Call fn(), retrying on Gemini 503 UNAVAILABLE with exponential backoff."""
+    for attempt, delay in enumerate(_RETRY_DELAYS, start=1):
+        try:
+            return fn()
+        except genai_errors.ServerError as e:
+            if e.code != 503 or attempt == len(_RETRY_DELAYS):
+                raise
+            print(f"  ⚠ Gemini 503 — retrying in {delay}s (attempt {attempt}/{len(_RETRY_DELAYS)})…")
+            time.sleep(delay)
+    return fn()
 
 
 def _generate(system: str, prompt: str, max_output_tokens: int = 8000) -> str:
-    response = _client().models.generate_content(
+    response = with_retry(lambda: _client().models.generate_content(
         model=SEARCH_MODEL,
         contents=prompt,
         config=types.GenerateContentConfig(
@@ -66,7 +89,20 @@ def _generate(system: str, prompt: str, max_output_tokens: int = 8000) -> str:
             tools=[types.Tool(google_search=types.GoogleSearch())],
             max_output_tokens=max_output_tokens,
         ),
-    )
+    ))
+    return response.text or ""
+
+
+def _generate_plain(system: str, prompt: str, max_output_tokens: int = 4000) -> str:
+    """Generate without search grounding — for structured JSON tasks like source discovery."""
+    response = with_retry(lambda: _client().models.generate_content(
+        model=DISCOVERY_MODEL,
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            system_instruction=system,
+            max_output_tokens=max_output_tokens,
+        ),
+    ))
     return response.text or ""
 
 
@@ -192,7 +228,7 @@ def find_sources(city_name: str) -> dict:
     )
 
     print(f"[gemini] Discovering event sources for {city_name}…")
-    raw = _generate(system_msg, user_msg, max_output_tokens=4000)
+    raw = _generate_plain(system_msg, user_msg)
     raw = re.sub(r"```json|```", "", raw).strip()
     match = re.search(r"\{[\s\S]*\}", raw)
     if not match:

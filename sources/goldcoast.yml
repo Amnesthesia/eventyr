@@ -1,77 +1,129 @@
 name: Gold Coast
 sources:
   aggregators:
-    - What's On Gold Coast — official City of Gold Coast events calendar (whatsongoldcoast.au)
-    - Experience Gold Coast / Destination Gold Coast (experiencegoldcoast.com/events)
-    - The Urban List Gold Coast (theurbanlist.com/goldcoast)
-    - Inside Gold Coast What's On (insidegoldcoast.com.au/whatson)
-    - Eventfinda Gold Coast (eventfinda.com.au/whatson/events/gold-coast)
-    - Eventbrite Gold Coast (eventbrite.com.au/d/australia--gold-coast/events)
-    - Humanitix Gold Coast (humanitix.com/au/events/australia/gold-coast)
-    - Meetup Gold Coast (meetup.com/find/?location=au--gold-coast)
-    - Fever Gold Coast (feverup.com/en/gold-coast)
-    - Bandsintown Gold Coast (bandsintown.com/c/gold-coast-australia)
-    - Songkick Gold Coast (songkick.com/metro-areas/29683-australia-gold-coast)
-    - Yelo Gold Coast Gig Guide (yelo.live/goldcoastgigs)
-    - Scout Magazine Gold Coast (scoutmagazine.com.au)
-    - Gold Coast Australia events guide (goldcoastaustralia.com/gold-coast-events.html)
-    - Queensland.com / Tourism Queensland Gold Coast (queensland.com/au/en/places-to-see/destination-information/gold-coast)
-    - Wanderlog Gold Coast (wanderlog.com)
-    - Tripadvisor Gold Coast events (tripadvisor.com.au)
+  - What's On Gold Coast — official City of Gold Coast events calendar (whatsongoldcoast.au)
+  - Experience Gold Coast / Destination Gold Coast (experiencegoldcoast.com/events)
+  - The Urban List Gold Coast (theurbanlist.com/goldcoast)
+  - Inside Gold Coast What's On (insidegoldcoast.com.au/whatson)
+  - Eventfinda Gold Coast (eventfinda.com.au/whatson/events/gold-coast)
+  - Eventbrite Gold Coast (eventbrite.com.au/d/australia--gold-coast/events)
+  - Humanitix Gold Coast (humanitix.com/au/events/australia/gold-coast)
+  - Meetup Gold Coast (meetup.com/find/?location=au--gold-coast)
+  - Fever Gold Coast (feverup.com/en/gold-coast)
+  - Bandsintown Gold Coast (bandsintown.com/c/gold-coast-australia)
+  - Songkick Gold Coast (songkick.com/metro-areas/29683-australia-gold-coast)
+  - Yelo Gold Coast Gig Guide (yelo.live/goldcoastgigs)
+  - Scout Magazine Gold Coast (scoutmagazine.com.au)
+  - Gold Coast Australia events guide (goldcoastaustralia.com/gold-coast-events.html)
+  - Queensland.com / Tourism Queensland Gold Coast (queensland.com/au/en/places-to-see/destination-information/gold-coast)
+  - Wanderlog Gold Coast (wanderlog.com)
+  - Tripadvisor Gold Coast events (tripadvisor.com.au)
+  - City of Gold Coast Events Calendar (goldcoast.qld.gov.au/Things-to-do/Gold-Coast-Events-Calendar)
+  - My Community Diary — Gold Coast (mycommunitydiary.com.au/Queensland/Gold_Coast)
+  - WeekendNotes Gold Coast (weekendnotes.com/gold-coast/)
+  - Destination Gold Coast – Events (destinationgoldcoast.com)
+  - What's On Gold Coast (whatsonegoldcoast.com.au)
   institutions:
-    - City of Gold Coast — official council events (goldcoast.qld.gov.au/Things-to-do/Gold-Coast-Events-Calendar)
-    - City of Gold Coast Libraries — what's on (goldcoast.qld.gov.au/libraries/Whats-on)
-    - HOTA, Home of the Arts (hota.com.au/whats-on)
-    - HOTA Gallery exhibitions (hota.com.au)
-    - Bond University events (bond.edu.au/news-and-events/events)
-    - Griffith University Gold Coast — events (griffith.edu.au/events)
-    - The Star Gold Coast — entertainment & events (star.com.au/goldcoast/whats-on)
-    - Gold Coast Convention and Exhibition Centre (gccec.com.au)
-    - People First Stadium / Heritage Bank Stadium (peoplefirststadium.com.au)
-    - Currumbin Wildlife Sanctuary events (currumbinsanctuary.com.au)
-    - Sea World / Village Roadshow theme park events (seaworld.com.au)
-    - Gold Coast Turf Club / Magic Millions (gctc.com.au)
-    - AACTA Festival (aactafestival.com)
-    - Blues on Broadbeach Music Festival (bluesonbroadbeach.com)
-    - Pacific Airshow Gold Coast (pacificairshow.com/goldcoast)
-    - SWELL Sculpture Festival Currumbin (swellsculpture.com.au)
-    - Bleach* Festival (bleachfestival.com.au)
-    - Gold Coast Film Festival (gcfilmfestival.com)
-    - Somerset Storyfest (storyfest.com.au)
+  - City of Gold Coast — official council events (goldcoast.qld.gov.au/Things-to-do/Gold-Coast-Events-Calendar)
+  - City of Gold Coast Libraries — what's on (goldcoast.qld.gov.au/libraries/Whats-on)
+  - HOTA, Home of the Arts (hota.com.au/whats-on)
+  - HOTA Gallery exhibitions (hota.com.au)
+  - Bond University events (bond.edu.au/news-and-events/events)
+  - Griffith University Gold Coast — events (griffith.edu.au/events)
+  - The Star Gold Coast — entertainment & events (star.com.au/goldcoast/whats-on)
+  - Gold Coast Convention and Exhibition Centre (gccec.com.au)
+  - People First Stadium / Heritage Bank Stadium (peoplefirststadium.com.au)
+  - Currumbin Wildlife Sanctuary events (currumbinsanctuary.com.au)
+  - Sea World / Village Roadshow theme park events (seaworld.com.au)
+  - Gold Coast Turf Club / Magic Millions (gctc.com.au)
+  - AACTA Festival (aactafestival.com)
+  - Blues on Broadbeach Music Festival (bluesonbroadbeach.com)
+  - Pacific Airshow Gold Coast (pacificairshow.com/goldcoast)
+  - SWELL Sculpture Festival Currumbin (swellsculpture.com.au)
+  - Bleach* Festival (bleachfestival.com.au)
+  - Gold Coast Film Festival (gcfilmfestival.com)
+  - Somerset Storyfest (storyfest.com.au)
+  - Griffith University Events Calendar — Gold Coast campus (app.secure.griffith.edu.au/events)
+  - People First Stadium — Gold Coast SUNS (goldcoastfc.com.au)
+  - Cbus Super Stadium (Robina) — Titans & major events (titans.com.au)
+  - Sea World, Movie World, Dreamworld — major attraction event programs
+  - Southern Cross University Gold Coast – Events (scu.edu.au)
+  - Q1 SkyPoint – Events (skypoint.com.au)
+  - Dreamworld – Events (dreamworld.com.au)
+  - City of Gold Coast Libraries (cityofgoldcoast.com.au)
+  - The Star Gold Coast (thestargoldcoast.com.au)
+  - Gold Coast Public Library Webinars and Online Events (librarywebinars.com)
   independents:
-    - Miami Marketta — night market & live music venue (miamimarketta.com)
-    - Mo's Desert Clubhouse — live music & events, Burleigh Heads (mosdesertclubhouse.com)
-    - The SoundLounge, Currumbin RSL (soundlounge.com.au)
-    - Nightjar — rock 'n' roll dive bar, Burleigh Heads (nightjar.com.au)
-    - Vinnies Dive Bar, Southport — independent gig venue
-    - Eddie's Grub House — live music bar, Surfers Paradise
-    - Den Devine Restaurant & Bar — live music venue
-    - Elsewhere Bar — Surfers Paradise techno/club nights (elsewherebar.com.au)
-    - Cooly Hotel / Coolangatta Hotel gig list (coolyhotel.com.au)
-    - 19 Karen Contemporary Artspace, Mermaid Beach (19karen.com.au)
-    - The Walls Art Space, Miami — artist-run gallery (thewallsartspace.com)
-    - Dust Temple, Currumbin — gallery, cafe, life drawing & poetry slams (dusttemple.com.au)
-    - BOOK FACE Pacific Fair — independent bookshop & monthly book club (bookfacestores.com.au/pacific-fair)
-    - Big B Books, Burleigh Heads — indie bookshop with readings, launches & signings
-    - Bookness Mudgeeraba — independent bookshop with on-site cafe
-    - Boardwalk Books, Kingscliff — indie bookshop with Romance Book Club
-    - Under the Greenwood Tree Bookshop & Artspace, Tamborine Mountain
-    - Ivy and Ink Bookshop — indie romance bookshop (ivyandinkbookshop.com)
-    - Bundle O'Books, Coolangatta — second-hand bookshop
-    - Gold Coast TechSpace — hackerspace/makerspace, Mudgeeraba (gctechspace.org)
-    - Cohort Innovation Space — startup & tech events (cohortspace.com.au)
-    - Gold Coast Board Games Club (meetup.com/gold-coast-board-games-club)
-    - Gold Coast Board Games Meetup (meetup.com/gold-coast-board-games-meetup)
-    - The Gold Coast French Speakers Group (Meetup)
-    - Gold Coast to Tweed Speakers & Leaders — Toastmasters-style group (Meetup)
-    - AWS Gold Coast User Group (Meetup)
-    - Get Up, Get Out, Get Social — social meetup group (Meetup)
-    - The Pink Flamingo Spiegelclub, Broadbeach — cabaret & burlesque (pinkflamingo.com.au)
-    - Comedy Underground — Gold Coast live comedy nights
-    - Burleigh Town Hotel — Tuesday Trivia
-    - Tallebudgera Surf Club — Monday Night Trivia
-    - Currumbin RSL — themed pop-culture trivia & SoundLounge gigs
-    - Cauldron Distillery, Tamborine Mountain — gin blending classes
-    - Meraki Connection, Burleigh Heads — art & creative workshops
-    - Studio 8, Currumbin — creative exhibitions space
-    - Love Street Store — small music gig venue
+  - Miami Marketta — night market & live music venue (miamimarketta.com)
+  - Mo's Desert Clubhouse — live music & events, Burleigh Heads (mosdesertclubhouse.com)
+  - The SoundLounge, Currumbin RSL (soundlounge.com.au)
+  - Nightjar — rock 'n' roll dive bar, Burleigh Heads (nightjar.com.au)
+  - Vinnies Dive Bar, Southport — independent gig venue
+  - Eddie's Grub House — live music bar, Surfers Paradise
+  - Den Devine Restaurant & Bar — live music venue
+  - Elsewhere Bar — Surfers Paradise techno/club nights (elsewherebar.com.au)
+  - Cooly Hotel / Coolangatta Hotel gig list (coolyhotel.com.au)
+  - 19 Karen Contemporary Artspace, Mermaid Beach (19karen.com.au)
+  - The Walls Art Space, Miami — artist-run gallery (thewallsartspace.com)
+  - Dust Temple, Currumbin — gallery, cafe, life drawing & poetry slams (dusttemple.com.au)
+  - BOOK FACE Pacific Fair — independent bookshop & monthly book club (bookfacestores.com.au/pacific-fair)
+  - Big B Books, Burleigh Heads — indie bookshop with readings, launches & signings
+  - Bookness Mudgeeraba — independent bookshop with on-site cafe
+  - Boardwalk Books, Kingscliff — indie bookshop with Romance Book Club
+  - Under the Greenwood Tree Bookshop & Artspace, Tamborine Mountain
+  - Ivy and Ink Bookshop — indie romance bookshop (ivyandinkbookshop.com)
+  - Bundle O'Books, Coolangatta — second-hand bookshop
+  - Gold Coast TechSpace — hackerspace/makerspace, Mudgeeraba (gctechspace.org)
+  - Cohort Innovation Space — startup & tech events (cohortspace.com.au)
+  - Gold Coast Board Games Club (meetup.com/gold-coast-board-games-club)
+  - Gold Coast Board Games Meetup (meetup.com/gold-coast-board-games-meetup)
+  - The Gold Coast French Speakers Group (Meetup)
+  - Gold Coast to Tweed Speakers & Leaders — Toastmasters-style group (Meetup)
+  - AWS Gold Coast User Group (Meetup)
+  - Get Up, Get Out, Get Social — social meetup group (Meetup)
+  - The Pink Flamingo Spiegelclub, Broadbeach — cabaret & burlesque (pinkflamingo.com.au)
+  - Comedy Underground — Gold Coast live comedy nights
+  - Burleigh Town Hotel — Tuesday Trivia
+  - Tallebudgera Surf Club — Monday Night Trivia
+  - Currumbin RSL — themed pop-culture trivia & SoundLounge gigs
+  - Cauldron Distillery, Tamborine Mountain — gin blending classes
+  - Meraki Connection, Burleigh Heads — art & creative workshops
+  - Studio 8, Currumbin — creative exhibitions space
+  - Love Street Store — small music gig venue
+  - Vinnie's Dive, Southport (vinniesdive.com.au)
+  - Nightjar, Burleigh Heads — Justin Laneway dive bar
+  - The Cambus Wallace, Nobby Beach (thecambuswallace.com.au)
+  - Surfers Paradise Beer Garden (surfersparadisebeergarden.com.au)
+  - Eddie's Grub House, Surfers Paradise (eddiesgrubhouse.com)
+  - Den Devine, Surfers Paradise (dendevine.com.au)
+  - Soho Place — London-themed small bar
+  - elsewhere, Surfers Paradise (elsewherebar.com)
+  - Burleigh Bazaar — converted warehouse music/food venue
+  - Mint Art House, Burleigh Heads — artist-run gallery (mintarthouse.com)
+  - The Hive Art Gallery & Studio, Currumbin Waters (thehiveartgallery.com.au)
+  - ALOW Gallery, Mermaid Beach (alowgallery.com)
+  - Art Yarramunua Gallery, Burleigh Heads (artyarramunua.com.au)
+  - Maverick — Coolangatta hair salon/bookstore/gallery
+  - Studio 8, Currumbin — creative space and exhibitions
+  - Bookness Mudgeeraba — indie bookshop & cafe events
+  - Big B Books, Burleigh Heads — events, readings, launches
+  - Under the Greenwood Tree Bookshop and Artspace, Tamborine
+  - Royal Queensland Art Society (RQAS) Gold Coast — exhibitions & classes
+  - Jellurgal Aboriginal Cultural Centre, Burleigh Heads (jellurgal.com.au)
+  - The Avenue, Surfers Paradise — drag, DJs, live music (theavenuesurfers.com)
+  - The Wallaby Hotel, Mudgeeraba — live music pub
+  - Hound & Stag Brewing Co, Arundel — live music venue
+  - Cherry Pickers Market @ Miami Marketta — monthly vintage market
+  - Gold Coast Jazz and Blues Club (goldcoastjazzclub.org.au)
+  - Emerald Lakes Market (emeraldlakesmarket.com.au)
+  - Dreamworld Night Market (nightmarket.com.au)
+  - The Village Markets (thevillagemarkets.co)
+  - HOTA Farmers & Artisan Markets (hotamarkets.com.au)
+  - The Craft Parlour (thecraftparlour.com.au)
+  - Burleigh Bazaar (burleighbazaar.com.au)
+  - The Shedrock – Music & Events (theshedrock.com)
+  - Gold Coast TechSpace (goldcoasttechspace.org.au)
+  - Gallery 8 (gallery8.com.au)
+  - The Meraki Connection (themerakiconnection.com.au)
+  - Gold Coast Theatre Alliance (gctai.org.au)
+  - Kirra Hill Community & Cultural Centre (goldcoast.qld.gov.au)

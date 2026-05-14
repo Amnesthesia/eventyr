@@ -88,7 +88,7 @@ jobs:
       - name: Curate events
         env:
           CITY: ${{ inputs.city }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force }}
         run: python src/curate.py
 
