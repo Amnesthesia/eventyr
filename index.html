@@ -608,6 +608,7 @@
 
       el.className = "card" + (isTop ? " top-pick" : "");
       el.dataset.category = ev.category || "";
+      el.dataset.score = ev.score || "";
       el.dataset.date = ev.datetime_iso ? ev.datetime_iso.slice(0, 10) : "";
       el.dataset.dateEnd = ev.datetime_iso ? parseEndDate(ev.datetime || "", ev.datetime_iso) : "";
 
@@ -705,8 +706,8 @@
         document.getElementById("header-meta").textContent =
           `${fmtRange(data.week_start, data.week_end)} · ${data.events.length} events`;
 
+        data.events.sort((a, b) => (b.score || 0) - (a.score || 0)); // re-sort picks by score desc (not original order)
         const picks = data.events.filter((e, i) => (e.score || 0) >= TOP_PICK_THRESHOLD && i < 9);
-        picks.sort((a, b) => (b.score || 0) - (a.score || 0)); // re-sort picks by score desc (not original order)
         const rest = data.events.filter((e, i) => (e.score || 0) < TOP_PICK_THRESHOLD || i >= 9);
 
         const topGrid = document.getElementById("top-picks-grid");
