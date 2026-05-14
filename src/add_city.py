@@ -20,6 +20,7 @@ import sys
 import yaml
 
 import anthropic_ai
+import gemini_ai
 import perplexity_ai
 
 CITY_NAME = os.environ["CITY_NAME"]
@@ -54,14 +55,19 @@ def discover_sources() -> dict:
 
     has_anthropic  = bool(os.environ.get("ANTHROPIC_API_KEY"))
     has_perplexity = bool(os.environ.get("PERPLEXITY_API_KEY"))
+    has_gemini     = bool(os.environ.get("GOOGLE_API_KEY"))
 
-    if not has_anthropic and not has_perplexity:
-        raise SystemExit("✗ Neither ANTHROPIC_API_KEY nor PERPLEXITY_API_KEY is set.")
+    if not has_anthropic and not has_perplexity and not has_gemini:
+        raise SystemExit(
+            "✗ No API keys set (need at least one of ANTHROPIC_API_KEY, PERPLEXITY_API_KEY, GOOGLE_API_KEY)."
+        )
 
     if has_anthropic:
         merge_sources(sources, anthropic_ai.find_sources(CITY_NAME))
     if has_perplexity:
         merge_sources(sources, perplexity_ai.find_sources(CITY_NAME))
+    if has_gemini:
+        merge_sources(sources, gemini_ai.find_sources(CITY_NAME))
 
     for tier in ("aggregators", "institutions", "independents"):
         print(f"→ Total {tier}: {len(sources[tier])}")

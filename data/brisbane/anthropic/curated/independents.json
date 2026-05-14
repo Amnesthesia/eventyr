@@ -1,0 +1,399 @@
+{
+  "city_key": "brisbane",
+  "provider": "anthropic",
+  "tier": "independents",
+  "week_start": "2026-05-11",
+  "week_end": "2026-05-17",
+  "events": [
+    {
+      "title": "Platform 2026 Artist Talks",
+      "datetime": "Tue–Sun 11–17 May, varies",
+      "location": "Institute of Modern Art (IMA), Fortitude Valley",
+      "link": "https://www.ima.org.au/ima-events/platform-2026-artist-talks/",
+      "category": "Public Lecture",
+      "cost": "Free",
+      "source": "IMA Brisbane",
+      "description": "The IMA's Platform 2026 Artist Talks feature three Queensland-emerging artists—Dean Ansell, Spencer Harvie, and Seren Wagstaff—discussing their ambitious new works in conversation. Spencer Harvie explores AI-generated imagery and online subcultures through surreal cartoon logic, creating thought-provoking dialogue about contemporary art and digital culture.",
+      "tags": [
+        "art",
+        "emerging artists",
+        "lecture",
+        "free"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": "https://www.ima.org.au/exhibitions/platform-2026/"
+    },
+    {
+      "title": "Genesis Owusu",
+      "datetime": "Sun 17 May, time TBA",
+      "location": "Fortitude Music Hall, Fortitude Valley",
+      "link": "https://www.thefortitude.com.au/whats-on",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Fortitude Music Hall",
+      "description": "One of Australia's most exciting and genre-defying artists brings a high-energy, experimental live performance. Genesis Owusu blends hip-hop, electronic, and avant-garde elements with sharp lyricism and innovative production—a must-see for adventurous music fans.",
+      "tags": [
+        "hip-hop",
+        "experimental",
+        "live music",
+        "authentic"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-17",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Endless Swarm — Body Hammering Australia 2026 (Brisbane)",
+      "datetime": "Sun 17 May, 6:00 PM–9:30 PM",
+      "location": "BackDock Arts, Fortitude Valley",
+      "link": "https://www.eventbrite.com.au/e/endless-swarm-body-hammering-australia-2026-brisbane-tickets-1984932121408",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Eventbrite / Grindhead Records",
+      "description": "Scotland's powerviolence act Endless Swarm makes their first Southern Hemisphere descent at BackDock Arts—a raw, sweaty underground gig at an authentic DIY arts space. Forged in Edinburgh's underground scene and sharpened across Europe, Japan, and the USA; deeply subcultural and unpolished.",
+      "tags": [
+        "powerviolence",
+        "underground",
+        "diy",
+        "subculture"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-17T18:00:00",
+      "datetime_end_iso": "2026-05-17T21:30:00",
+      "image": ""
+    },
+    {
+      "title": "Platform 2026 Exhibition — Dean Ansell, Spencer Harvie & Seren Wagstaff",
+      "datetime": "Tue–Sun, 10:00 AM–5:00 PM (all week)",
+      "location": "Institute of Modern Art (IMA), Fortitude Valley",
+      "link": "https://www.ima.org.au/exhibitions/platform-2026/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "IMA Brisbane",
+      "description": "IMA's annual Queensland-emerging-artist exhibition funding three artists to create ambitious new projects. Spencer Harvie presents dark, surreal explorations of online and fan subcultures through AI-generated and imagined imagery; a richly thought-provoking exhibition from Brisbane's most credible contemporary art institution.",
+      "tags": [
+        "contemporary art",
+        "emerging artists",
+        "free",
+        "subculture"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-11T10:00:00",
+      "datetime_end_iso": "2026-05-17T17:00:00",
+      "image": "https://www.ima.org.au/exhibitions/platform-2026/"
+    },
+    {
+      "title": "Weaving is Healing — Basketry Workshop",
+      "datetime": "Sat 16 May, 10:30 AM–3:30 PM",
+      "location": "Mt Coot-tha Botanic Gardens, Brisbane",
+      "link": "https://www.eventbrite.com.au/e/weaving-is-healing-brisbane-may-2026-tickets-1984547702601",
+      "category": "Workshop / Class",
+      "cost": "Ticketed",
+      "source": "Eventbrite",
+      "description": "A hands-on, immersive creative workshop using Figure 8 coil weave technique (with African and European roots) held in Mt Coot-tha's beautiful gardens. Participants weave a small basketling in a ceremony-style sharing and healing circle—grounded, community-oriented, and set in nature.",
+      "tags": [
+        "craft",
+        "workshop",
+        "community",
+        "outdoor"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-16T10:30:00",
+      "datetime_end_iso": "2026-05-16T15:30:00",
+      "image": ""
+    },
+    {
+      "title": "National Theatre Live: All My Sons",
+      "datetime": "7–27 May (screenings all week)",
+      "location": "Palace Cinemas James St, Fortitude Valley",
+      "link": "https://www.palacecinemas.com.au/events/national-theatre-live",
+      "category": "Arts / Exhibition",
+      "cost": "$18–22",
+      "source": "Palace Cinemas",
+      "description": "Acclaimed five-star production of Arthur Miller's *All My Sons* featuring Bryan Cranston and Marianne Jean-Baptiste, directed by Ivo Van Hove. A disturbingly prescient exploration of the American dream, wartime profiteering, and moral compromise—filmed live from London's West End.",
+      "tags": [
+        "theatre",
+        "film",
+        "classic drama",
+        "cinema"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-07",
+      "datetime_end_iso": "2026-05-27",
+      "image": ""
+    },
+    {
+      "title": "J.I.D — God Does Like World Tour",
+      "datetime": "Fri 15 May, time TBA",
+      "location": "Fortitude Music Hall, Fortitude Valley",
+      "link": "https://www.thefortitude.com.au/whats-on",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Fortitude Music Hall",
+      "description": "Atlanta rapper J.I.D brings intricate, intelligent lyricism and dynamic stage presence to Fortitude Music Hall. Known for precise wordplay, conceptual albums, and collaborations with top hip-hop producers—a genuine hip-hop experience at one of Brisbane's best live music venues.",
+      "tags": [
+        "hip-hop",
+        "rap",
+        "live music",
+        "authentic"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-15",
+      "datetime_end_iso": "2026-05-15",
+      "image": ""
+    },
+    {
+      "title": "HSBC German Film Festival 2026",
+      "datetime": "8–27 May (screenings all week)",
+      "location": "Palace Cinemas James St & other Palace venues, Fortitude Valley",
+      "link": "https://www.palacecinemas.com.au/festivals",
+      "category": "Arts / Exhibition",
+      "cost": "$18–22 (Movie Club discounts available)",
+      "source": "Palace Cinemas",
+      "description": "A curated selection of contemporary German cinema direct from major European festivals, plus films from Austria and Switzerland. All screenings at Palace Cinemas this week—an excellent opportunity to explore art-house European cinema in an independent cinema space.",
+      "tags": [
+        "film",
+        "german cinema",
+        "art-house",
+        "cinema"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-08",
+      "datetime_end_iso": "2026-05-27",
+      "image": ""
+    },
+    {
+      "title": "Alliance Française French Film Festival",
+      "datetime": "8–27 May (screenings all week; opening night Fri 8 May)",
+      "location": "Palace Cinemas James St, Fortitude Valley",
+      "link": "https://www.palacecinemas.com.au/events/2026-alliance-francaise-french-film-festival-opening-night-colours-of-time",
+      "category": "Arts / Exhibition",
+      "cost": "$18–22 (opening night includes French drinks & nibbles)",
+      "source": "Palace Cinemas / Alliance Française",
+      "description": "Two-week French film festival featuring *Colours of Time* (Cédric Klapisch's new dramedy) as opening night. Opening night screening includes French aperitif and light refreshments—run of screenings throughout the fortnight at Palace.",
+      "tags": [
+        "film",
+        "french cinema",
+        "art-house",
+        "cinema"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-08",
+      "datetime_end_iso": "2026-05-27",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Social Geeks — Philosophy, Board Games & Intellectual Discussion Meetups",
+      "datetime": "Multiple sessions throughout week (check Meetup page)",
+      "location": "New Farm Library area & Roma Street Parklands, Brisbane",
+      "link": "https://www.meetup.com/philosophy-pub-brisbane/",
+      "category": "Social / Meetup",
+      "cost": "Free",
+      "source": "Meetup",
+      "description": "Recurring community group for people interested in expanding social connections and developing mind and body. Sessions include philosophy discussions (e.g. *The Dictator's Handbook*: power, authority, governance), board games, meditations, and yoga in small, conversational settings—authentic intellectual community with mixed-age attendees.",
+      "tags": [
+        "philosophy",
+        "meetup",
+        "free",
+        "community"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Social and Language Exchange",
+      "datetime": "Multiple dates this week (check Eventbrite for exact sessions)",
+      "location": "Central Brisbane",
+      "link": "https://www.eventbrite.com.au/e/brisbane-social-and-language-exchange-make-new-friends-tickets-1986013240063",
+      "category": "Social / Meetup",
+      "cost": "Free",
+      "source": "Eventbrite",
+      "description": "Multicultural social mixer designed to help people meet friends from Brisbane and worldwide. Language exchange covering Japanese, French, Chinese, German, Korean, Italian, Spanish—welcoming students, expats, and locals. Conversational, low-pressure, community-oriented.",
+      "tags": [
+        "language",
+        "meetup",
+        "free",
+        "community"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Jean Barth — 'Screen Tests'",
+      "datetime": "2–30 May (open during gallery hours; all week)",
+      "location": "Milani Gallery, West End",
+      "link": "https://milanigallery.com.au/exhibitions/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Milani Gallery",
+      "description": "Jean Barth's *Screen Tests* exhibition at one of Brisbane's most respected contemporary art galleries in West End. Milani Gallery regularly showcases significant Australian artists in a professional, intellectually engaged space.",
+      "tags": [
+        "contemporary art",
+        "free",
+        "gallery"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-02",
+      "datetime_end_iso": "2026-05-30",
+      "image": ""
+    },
+    {
+      "title": "Redlands Coast Adventure Fest",
+      "datetime": "15–24 May (begins this week; Friday onwards)",
+      "location": "Redlands Coast (approx. 40 min from Brisbane CBD)",
+      "link": "https://visit.brisbane.qld.gov.au/whats-on/whats-on-this-week",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Visit Brisbane",
+      "description": "Second annual free community adventure festival hosted by Ranger Stacey. Features 100+ events: adrenaline activities, hands-on experiences, sports demonstrations, interactive displays—something for all ages and adventure levels. Great for outdoor enthusiasts and families exploring nature.",
+      "tags": [
+        "outdoor",
+        "adventure",
+        "free",
+        "community"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-15",
+      "datetime_end_iso": "2026-05-24",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — Geraldine Hickey: A Weight Off My Chest",
+      "datetime": "Thu 14–Sun 17 May, varies",
+      "location": "Princess Theatre, Woolloongabba",
+      "link": "https://www.theprincesstheatre.com.au/events",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Princess Theatre / Brisbane Comedy Festival",
+      "description": "Beloved Australian stand-up comedian Geraldine Hickey performs *A Weight Off My Chest* across four nights at the Princess Theatre—an intimate theatre setting with a seasoned, accomplished comedic voice.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "live"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-14",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — Ray O'Leary: I Can See O'Leary Now The Ray Has Gone",
+      "datetime": "Fri 15–Sun 17 May, varies (few tickets left)",
+      "location": "Princess Theatre, Woolloongabba",
+      "link": "https://www.theprincesstheatre.com.au/events",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Princess Theatre / Brisbane Comedy Festival",
+      "description": "New Zealand comedian Ray O'Leary brings his show to the Princess Theatre for three nights. Few tickets remaining, so availability is limited.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "live"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-15",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — Pete Helliar: An International Kerfuffle",
+      "datetime": "Sat 16–Sun 17 May, varies",
+      "location": "Princess Theatre, Woolloongabba",
+      "link": "https://www.theprincesstheatre.com.au/events",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Princess Theatre / Brisbane Comedy Festival",
+      "description": "High-profile Australian comedian Pete Helliar performs *An International Kerfuffle* across two nights at the Princess Theatre—a fun, accessible weekend comedy option at an intimate venue.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "live"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-16",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — Jason Leong",
+      "datetime": "Thu 14 May, time TBA",
+      "location": "Fortitude Music Hall, Fortitude Valley",
+      "link": "https://www.thefortitude.com.au/whats-on",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Fortitude Music Hall / Brisbane Comedy Festival",
+      "description": "Stand-up comedian Jason Leong performs at Fortitude Music Hall as part of the Brisbane Comedy Festival program.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "live"
+      ],
+      "score": 5,
+      "datetime_iso": "2026-05-14",
+      "datetime_end_iso": "2026-05-14",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — VHS",
+      "datetime": "Thu 14–Sun 17 May, 7:00 PM (varies)",
+      "location": "Brisbane Powerhouse, Graffiti Room, New Farm",
+      "link": "https://premier.ticketek.com.au/shows/genre.aspx?c=2693",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Brisbane Powerhouse / Ticketek",
+      "description": "*VHS* plays the intimate Graffiti Room at Brisbane Powerhouse—one of the Brisbane Comedy Festival's designated stages in the heritage-listed Powerhouse building on the Turbine level. Atmospheric, small-venue comedy-theatre setting.",
+      "tags": [
+        "comedy",
+        "theatre",
+        "live"
+      ],
+      "score": 5,
+      "datetime_iso": "2026-05-14T19:00:00",
+      "datetime_end_iso": "2026-05-17T18:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — Bron Lewis",
+      "datetime": "Thu 14 May (SOLD OUT)",
+      "location": "Princess Theatre, Woolloongabba",
+      "link": "https://www.theprincesstheatre.com.au/events",
+      "category": "Concert / Music",
+      "cost": "Sold out (check for returns)",
+      "source": "Princess Theatre / Brisbane Comedy Festival",
+      "description": "Australian stand-up comedian Bron Lewis at the Princess Theatre. This show is sold out, though returns may become available.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "live"
+      ],
+      "score": 5,
+      "datetime_iso": "2026-05-14",
+      "datetime_end_iso": "2026-05-14",
+      "image": ""
+    },
+    {
+      "title": "Audrey Hobert — The Staircase To Stardom Tour",
+      "datetime": "Sat 16 May, time TBA",
+      "location": "Fortitude Music Hall, Fortitude Valley",
+      "link": "https://www.thefortitude.com.au/whats-on",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Fortitude Music Hall",
+      "description": "Audrey Hobert performs *The Staircase To Stardom Tour* at Fortitude Music Hall.",
+      "tags": [
+        "live music"
+      ],
+      "score": 5,
+      "datetime_iso": "2026-05-16",
+      "datetime_end_iso": "2026-05-16",
+      "image": ""
+    }
+  ]
+}

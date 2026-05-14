@@ -16,13 +16,15 @@ SEARCH_MODEL     = "claude-sonnet-4-6"
 DISCOVERY_MODEL  = "claude-opus-4-7"
 MAX_WEB_SEARCHES = 12
 
+_REFUSAL_RE = re.compile(r"\bNO_EVENTS_FOUND\b")
+
 INTERESTS = """
 WANT:
   - Intellectually stimulating talks, lectures, salons, workshops, panels, and debates focused on science, philosophy, psychology, technology, systems thinking, futurism, culture, design, history, AI, human behavior, or creativity
   - Events that attract curious, thoughtful, open-minded, creative, adventurous, or intellectually engaged people rather than purely corporate audiences
   - Community-oriented recurring events where people naturally talk before/after: book clubs, philosophy groups, writing circles, language exchanges, discussion salons, coworking socials, maker spaces, creative communities
   - Creative or hands-on workshops: photography, writing, pottery, drawing, music, woodworking, craft, electronics, robotics, fermentation, gardening, maker/hacker culture
-  - Live experiences with strong atmosphere or artistic value: indie music, jazz, folk, intimate gigs, immersive theatre, art exhibitions, experimental performances, film screenings, comedy
+  - Live experiences with strong atmosphere or artistic value: indie music, jazz, folk, intimate gigs, theatre (fringe, immersive, experimental, and mainstream), art exhibitions, experimental performances, film screenings, comedy nights and stand-up
   - Outdoor and adventure-oriented social events like hiking groups, trail running, climbing, scuba/freediving, paragliding, camping, adventure travel, nature excursions
   - Wellness-oriented events only if grounded and socially authentic: yoga, breathwork, meditation, sauna, movement workshops — avoid overly commercial or cult-like spirituality
   - Free or low-cost local community events preferred
@@ -123,7 +125,8 @@ Rules:
                 f"Search for {city_name} events this week ({fmt_date(week_start)} to {fmt_date(week_end)}). "
                 "Use web search on the sources listed in your instructions. "
                 "Skip anything matching the SKIP criteria. "
-                "List every relevant event you find with full details and a direct URL."
+                "List every relevant event you find with full details and a direct URL. "
+                "If you genuinely cannot find any relevant events after searching, respond only with: NO_EVENTS_FOUND"
             )
         }],
     )
@@ -132,9 +135,11 @@ Rules:
     print(f"  [anthropic/{tier}] {search_calls} web search(es)")
 
     raw = "".join(b.text for b in response.content if b.type == "text")
-    if len(raw) < 500:
+    if _REFUSAL_RE.search(raw):
+        raise RuntimeError(f"[anthropic/{tier}] Provider found no events")
+    if len(raw) < 100:
         raise RuntimeError(
-            f"[anthropic/{tier}] Search output too short ({len(raw)} chars) — "
+            f"[anthropic/{tier}] Response too short ({len(raw)} chars) — "
             "model likely did not search the web."
         )
     return raw

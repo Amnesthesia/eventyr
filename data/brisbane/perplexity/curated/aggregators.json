@@ -1,0 +1,29 @@
+{
+  "city_key": "brisbane",
+  "provider": "perplexity",
+  "tier": "aggregators",
+  "week_start": "2026-05-11",
+  "week_end": "2026-05-17",
+  "events": [
+    {
+      "title": "Suitcase Rummage - Brisbane/Meanjin Market",
+      "datetime": "Sun 17 May, 12:00 PM",
+      "location": "Reddacliffe Place (top of Queen Street Mall), Brisbane City",
+      "link": "https://events.humanitix.com/brisbane-meanjin-may-17th-2026",
+      "category": "Community / Other",
+      "cost": "$30",
+      "source": "Suitcase Rummage",
+      "description": "A curated vintage and secondhand market featuring independent vendors selling clothing, collectibles, and bric-a-brac at Brisbane Square. Popular community event attracting browsers, collectors, and creative types looking for unique finds.",
+      "tags": [
+        "vintage",
+        "market",
+        "community",
+        "secondhand"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-17T12:00:00",
+      "datetime_end_iso": "2026-05-17T17:00:00",
+      "image": ""
+    }
+  ]
+}

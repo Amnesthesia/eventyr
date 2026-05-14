@@ -1,0 +1,409 @@
+{
+  "city_key": "brisbane",
+  "provider": "anthropic",
+  "tier": "aggregators",
+  "week_start": "2026-05-11",
+  "week_end": "2026-05-17",
+  "events": [
+    {
+      "title": "Build with AI 3.0 – GDG Brisbane",
+      "datetime": "Fri 15 May, 5:30 PM",
+      "location": "The Precinct, Fortitude Valley",
+      "link": "https://www.eventbrite.com.au/e/build-with-ai-30-2026-gdg-brisbane-tickets-1987565006438",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Eventbrite / GDG Brisbane",
+      "description": "GDG Brisbane presents an evening of practical deep dives into Generative AI and Data Engineering with industry leaders from companies like Atlassian. The evening features talks on LLM evaluation and lessons learned, followed by hands-on workshops on serverless agents and AI-powered data mapping using Gemini and Google Cloud, with networking and food throughout.",
+      "tags": [
+        "ai",
+        "technology",
+        "workshop",
+        "free"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-15T17:30:00",
+      "datetime_end_iso": "2026-05-15T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Olafur Eliasson: Presence",
+      "datetime": "Ongoing (all week)",
+      "location": "QAGOMA, South Brisbane",
+      "link": "https://www.qagoma.qld.gov.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "QAGOMA",
+      "description": "Immersive Brisbane-exclusive exhibition of Icelandic-Danish artist Olafur Eliasson's work across three decades, featuring multi-sensory installations with water, light and temperature — including Riverbed (a rocky landscape with running water) and The Cubic Structural Evolution Project (an all-white Lego city perpetually rebuilt).",
+      "tags": [
+        "art",
+        "installation",
+        "free",
+        "immersive"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Circa – Swan Lake",
+      "datetime": "13–16 May, 7:30 PM (or per schedule)",
+      "location": "QPAC, South Brisbane",
+      "link": "https://www.qpac.com.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "QPAC",
+      "description": "Circa's exuberant, acrobatic take on Swan Lake combines the classic ballet with The Ugly Duckling, featuring a burlesque-style black swan, waddling human ducks, and Circa's signature circus arts and live music. A reinvention of the world's most romantic ballet by one of Brisbane's most inventive theatre companies.",
+      "tags": [
+        "theatre",
+        "circus",
+        "performance",
+        "physical"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-13T19:30:00",
+      "datetime_end_iso": "2026-05-16T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Anywhere Festival 2026",
+      "datetime": "All week (1–31 May, select shows this week)",
+      "location": "Across Brisbane (New Farm, West End, Mt Coot-tha, Fortitude Valley, and more)",
+      "link": "https://www.anywherefestival.com.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Free–$30",
+      "source": "Anywhere Festival",
+      "description": "Brisbane's 16th annual experimental theatre festival transforms unconventional spaces — strip clubs, substations, warehouses, galleries, wine cellars, laneways, botanic gardens, planetariums — into theatre venues. Nearly 300 performances of fringe, immersive and experimental work across the city.",
+      "tags": [
+        "theatre",
+        "experimental",
+        "fringe",
+        "community"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-31",
+      "image": ""
+    },
+    {
+      "title": "Make A Scene – Queensland Museum Kurilpa",
+      "datetime": "Until 19 July (all week)",
+      "location": "Queensland Museum Kurilpa, South Brisbane",
+      "link": "https://www.qmuseum.qld.gov.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Queensland Museum",
+      "description": "Free exhibition celebrating 35 years since the decriminalisation of homosexuality in Queensland, showcasing iconic 90s Australian queer culture, underground nightclub fashion, dance party aesthetics, and personal stories from the LGBTQIA+ community. Features over 100 pieces from Brisbane-based labels and fearless self-expressions.",
+      "tags": [
+        "queer culture",
+        "history",
+        "fashion",
+        "free"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-07-19",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival – Claire Hooper & Pete Helliar",
+      "datetime": "14–17 May (various times, see schedule)",
+      "location": "Brisbane Powerhouse (New Farm), Princess Theatre",
+      "link": "https://www.brisbanecomedyfestival.com.au/",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Brisbane Comedy Festival",
+      "description": "Brisbane Comedy Festival's 17th edition runs through May with performances at Brisbane Powerhouse, The Tivoli, Fortitude Music Hall and Princess Theatre. This week: Claire Hooper performing 'fun show xx' (Brisbane Powerhouse 14–17 May) and Pete Helliar recounting his viral ISIS joke incident (Princess Theatre 16–17 May).",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "live",
+        "australian"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-14T19:00:00",
+      "datetime_end_iso": "2026-05-17T22:00:00",
+      "image": ""
+    },
+    {
+      "title": "Redlands Coast AdventureFest",
+      "datetime": "15–24 May (starts this week)",
+      "location": "Various locations, Redlands Coast (20 min from Brisbane)",
+      "link": "https://www.redlands.qld.gov.au/adventurefest",
+      "category": "Community / Other",
+      "cost": "Free–$50 (varies by activity)",
+      "source": "Redlands Coast Council",
+      "description": "10-day outdoor adventure festival featuring kayaking, hiking, cycling, nature tours and guided outdoor experiences across Redlands Coast — accessible from Brisbane CBD. A genuine community celebration of outdoor adventure and natural spaces.",
+      "tags": [
+        "outdoor",
+        "adventure",
+        "hiking",
+        "nature"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-15",
+      "datetime_end_iso": "2026-05-24",
+      "image": ""
+    },
+    {
+      "title": "Polestar 5 Design & Tech Preview (Daily Talks)",
+      "datetime": "12–16 May, 8:30 AM – 5:00 PM (daily 11:00 AM talk)",
+      "location": "Polestar Brisbane, 773 Ann Street, Fortitude Valley",
+      "link": "https://www.polestar.com/en-au/about/news/",
+      "category": "Public Lecture",
+      "cost": "Free",
+      "source": "Polestar / The Urban List",
+      "description": "Free drop-in space showcasing the Polestar 5 electric vehicle and discussing design, performance and sustainability. Daily talks at 11:00 AM on the car's engineering and design philosophy; food, drinks and casual networking throughout the week. Saturday 16 May includes DJ, coffee cart and prize giveaways.",
+      "tags": [
+        "design",
+        "technology",
+        "sustainability",
+        "free"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-12T08:30:00",
+      "datetime_end_iso": "2026-05-16T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Weaving is Healing Workshop",
+      "datetime": "Sat 16 May, 10:30 AM – 3:30 PM",
+      "location": "Mt Coot-tha Botanic Gardens, Brisbane",
+      "link": "https://www.eventbrite.com.au/e/weaving-is-healing-brisbane-may-2026-tickets-1984547702601",
+      "category": "Workshop / Class",
+      "cost": "Ticketed (price on Eventbrite)",
+      "source": "Eventbrite",
+      "description": "Immersive half-day craft workshop in a ceremony-style healing circle at Mt Coot-tha Botanic Gardens. Learn the Figure 8 coil weave technique with roots in African and European traditions while creating a basketling. A reflective, hands-on experience combining slow-making, community ritual and indigenous craft.",
+      "tags": [
+        "craft",
+        "workshop",
+        "wellness",
+        "nature"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-16T10:30:00",
+      "datetime_end_iso": "2026-05-16T15:30:00",
+      "image": ""
+    },
+    {
+      "title": "The Yellow Diary – Live in Brisbane",
+      "datetime": "Fri 15 May, 7:00 PM (doors), 8:00 PM (show start)",
+      "location": "Wonderland Brisbane",
+      "link": "https://www.eventbrite.com.au/e/the-yellow-diary-live-in-brisbane-tickets-1669038502089",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Eventbrite",
+      "description": "The Yellow Diary, an acclaimed Indian indie-pop and alternative band known for introspective lyrics and rich layered sound, plays Brisbane as part of their Australia tour. Show followed by exclusive Bollywood Club Night after-party. A worldly, intimate live music experience.",
+      "tags": [
+        "music",
+        "indie",
+        "world",
+        "live"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-15T19:00:00",
+      "datetime_end_iso": "2026-05-15T23:00:00",
+      "image": ""
+    },
+    {
+      "title": "Endless Swarm – Body Hammering Australia Tour",
+      "datetime": "Sun 17 May, 6:00 PM – 9:30 PM",
+      "location": "BackDock Arts, Fortitude Valley",
+      "link": "https://www.eventbrite.com.au/e/endless-swarm-body-hammering-australia-2026-brisbane-tickets-1984932121408",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Eventbrite",
+      "description": "Scottish powerviolence band Endless Swarm makes their first Southern Hemisphere tour stop in Brisbane. Known since 2013 as a ferocious live act in the UK and Europe, they deliver blast-driven hardcore with grind-scarred riffs and venomous vocals in short, savage bursts. A raw, underground show at one of Brisbane's most authentic indie/punk venues.",
+      "tags": [
+        "music",
+        "punk",
+        "underground",
+        "live"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-17T18:00:00",
+      "datetime_end_iso": "2026-05-17T21:30:00",
+      "image": ""
+    },
+    {
+      "title": "Precious – Museum of Brisbane",
+      "datetime": "Until 21 December (all week)",
+      "location": "Museum of Brisbane, Brisbane CBD",
+      "link": "https://www.museumofbrisbane.com.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Museum of Brisbane",
+      "description": "Free exhibition featuring over 3,000 loaned items from around 30 private collections and collectors — many on display for the first time. A charming, curious assortment of rare, beautiful and intriguing objects from suburban collections: international dolls, ornamental eggs, wind-up toys and more. A celebration of what people treasure.",
+      "tags": [
+        "museum",
+        "collections",
+        "free",
+        "curated"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-12-21",
+      "image": ""
+    },
+    {
+      "title": "Dog Lovers Festival Brisbane 2026",
+      "datetime": "Sat 16 – Sun 17 May, 9:00 AM – 5:00 PM",
+      "location": "Brisbane Showgrounds, Bowen Hills",
+      "link": "https://www.eventbrite.com.au/e/dog-lovers-festival-brisbane-2026-tickets-1236807668029",
+      "category": "Community / Other",
+      "cost": "Ticketed",
+      "source": "Eventbrite",
+      "description": "Queensland's largest dog festival returns to the Showgrounds with hundreds of beautiful dogs across dozens of breeds, meet-and-greets, dog brand shopping, breed showcases and adoption zones. A genuinely community-spirited outdoor event attracting families and animal-loving people who naturally strike up conversations.",
+      "tags": [
+        "community",
+        "animals",
+        "outdoors",
+        "family"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-16T09:00:00",
+      "datetime_end_iso": "2026-05-17T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Riverside Social Walk",
+      "datetime": "Thu 14 May, 5:30 PM",
+      "location": "Brisbane Riverside (meeting point on Meetup)",
+      "link": "https://www.meetup.com/Brisbane-Riverside-Social-Walkers/",
+      "category": "Social / Meetup",
+      "cost": "Free",
+      "source": "Meetup",
+      "description": "Recurring weekly social walk along Brisbane Riverside with the Brisbane Riverside Social Walkers community. A relaxed, low-key outdoor meetup attracting curious and active people interested in gentle exercise and conversation.",
+      "tags": [
+        "meetup",
+        "walking",
+        "outdoor",
+        "free"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-14T17:30:00",
+      "datetime_end_iso": "2026-05-14T19:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Boardgamers – Saturday Night",
+      "datetime": "Sat 16 May, 6:30 PM",
+      "location": "Brisbane (venue on Meetup)",
+      "link": "https://www.meetup.com/Brisbane-Boardgamers/",
+      "category": "Social / Meetup",
+      "cost": "$2",
+      "source": "Meetup",
+      "description": "Long-running Brisbane Boardgamers community meets for an evening of tabletop and strategy games. Very low cost, conversational, and attracts curious, analytical, game-loving people of mixed ages and backgrounds — great for naturally meeting new people.",
+      "tags": [
+        "meetup",
+        "games",
+        "social",
+        "low-cost"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-16T18:30:00",
+      "datetime_end_iso": "2026-05-16T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Social Sport Group – Wednesday & Sunday",
+      "datetime": "Wed 13 May, 7:00 PM; Sun 17 May, 2:00 PM",
+      "location": "Brisbane (venue on Meetup)",
+      "link": "https://www.meetup.com/Brisbane-Social-Sport-Group/",
+      "category": "Social / Meetup",
+      "cost": "Free / Low cost",
+      "source": "Meetup",
+      "description": "Recurring community social sports meetup attracting a friendly, mixed-age crowd interested in casual team games and outdoor activity. Natural conversation starter and great for meeting new people while getting active.",
+      "tags": [
+        "meetup",
+        "sports",
+        "social",
+        "outdoor"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-13T19:00:00",
+      "datetime_end_iso": "2026-05-13T20:30:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Language Exchange Friday",
+      "datetime": "Fri 15 May (recurring weekly)",
+      "location": "Brisbane CBD (venue on Eventbrite)",
+      "link": "https://www.eventbrite.com.au/d/australia/brisbane/",
+      "category": "Social / Meetup",
+      "cost": "Free / Low cost",
+      "source": "Eventbrite",
+      "description": "Recurring weekly language exchange and cultural meetup in Brisbane. A naturally conversational community attracting internationally-minded, culturally curious people interested in learning languages and making friends. Ideal for striking up conversations before and after.",
+      "tags": [
+        "meetup",
+        "languages",
+        "culture",
+        "free"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-15T19:00:00",
+      "datetime_end_iso": "2026-05-15T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Data Science & Analytics Meetup – Brisbane Friday",
+      "datetime": "Fri 15 May (recurring)",
+      "location": "Brisbane (venue on Eventbrite)",
+      "link": "https://www.eventbrite.com.au/d/australia/brisbane/",
+      "category": "Social / Meetup",
+      "cost": "Free / Low cost",
+      "source": "Eventbrite",
+      "description": "Recurring Eventbrite meetup for data, analytics and tech-curious professionals and enthusiasts to connect and discuss ideas. More conversational and community-focused than corporate — good for intellectually engaged people to exchange ideas and network.",
+      "tags": [
+        "meetup",
+        "data",
+        "technology",
+        "free"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-15T18:00:00",
+      "datetime_end_iso": "2026-05-15T20:00:00",
+      "image": ""
+    },
+    {
+      "title": "The Drover's Wife – The Opera (World Premiere)",
+      "datetime": "May 2026 (dates TBD – check QPAC schedule)",
+      "location": "Glasshouse Theatre, QPAC, South Brisbane",
+      "link": "https://www.qpac.com.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "QPAC",
+      "description": "World premiere of a new opera based on Henry Lawson's iconic Australian short story 'The Drover's Wife', performed at QPAC's stunning Glasshouse Theatre. A rare opportunity to witness Brisbane as the birthplace of a major new operatic work.",
+      "tags": [
+        "opera",
+        "theatre",
+        "australian",
+        "premiere"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "The Sapphires",
+      "datetime": "28 Apr – 24 May (running all week)",
+      "location": "Bille Brown Theatre, Brisbane",
+      "link": "https://www.broadsheet.com.au/brisbane/",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "Broadsheet Brisbane",
+      "description": "The Sapphires tells the joyful, moving and musically rich story of four Aboriginal women who sang soul music for American troops in Vietnam. A beloved musical theatre work celebrating friendship, music and cultural resilience.",
+      "tags": [
+        "theatre",
+        "musical",
+        "australian",
+        "cultural"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-04-28",
+      "datetime_end_iso": "2026-05-24",
+      "image": ""
+    }
+  ]
+}

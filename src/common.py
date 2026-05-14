@@ -28,6 +28,16 @@ CATEGORY_EMOJI = {
 
 TOP_PICK_THRESHOLD = 8
 
+DATA_ROOT = Path(__file__).parent.parent / "data"
+
+
+def raw_path(city: str, provider: str, tier: str) -> Path:
+    return DATA_ROOT / city / provider / "raw" / f"{tier}.json"
+
+
+def curated_path(city: str, provider: str, tier: str) -> Path:
+    return DATA_ROOT / city / provider / "curated" / f"{tier}.json"
+
 
 def get_week_range() -> tuple[date, date]:
     today = date.today()

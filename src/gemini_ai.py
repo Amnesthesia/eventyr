@@ -1,9 +1,8 @@
 """
-Perplexity provider — event search and source discovery.
+Google Gemini provider — event search and source discovery.
 Called by collection.py and add_city.py.
 
-Uses the OpenAI SDK pointed at Perplexity's API (they are compatible).
-Sonar models include native web search — no tool configuration needed.
+Uses Google Search grounding for native web search.
 """
 
 import json
@@ -11,15 +10,13 @@ import os
 import re
 from datetime import date
 
-import re
-
-from openai import OpenAI
+from google import genai
+from google.genai import types
 
 from common import fmt_date
 
-SEARCH_MODEL        = "sonar-pro"
-DISCOVERY_MODEL     = "sonar-pro"
-PERPLEXITY_BASE_URL = "https://api.perplexity.ai"
+SEARCH_MODEL    = "gemini-2.0-flash"
+DISCOVERY_MODEL = "gemini-2.0-flash"
 
 _REFUSAL_RE = re.compile(r"\bNO_EVENTS_FOUND\b")
 
@@ -53,11 +50,24 @@ SKIP ENTIRELY — do not include:
 """
 
 
-def _client() -> OpenAI:
-    api_key = os.environ.get("PERPLEXITY_API_KEY")
+def _client() -> genai.Client:
+    api_key = os.environ.get("GOOGLE_API_KEY")
     if not api_key:
-        raise RuntimeError("PERPLEXITY_API_KEY not set")
-    return OpenAI(api_key=api_key, base_url=PERPLEXITY_BASE_URL)
+        raise RuntimeError("GOOGLE_API_KEY not set")
+    return genai.Client(api_key=api_key)
+
+
+def _generate(system: str, prompt: str, max_output_tokens: int = 8000) -> str:
+    response = _client().models.generate_content(
+        model=SEARCH_MODEL,
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            system_instruction=system,
+            tools=[types.Tool(google_search=types.GoogleSearch())],
+            max_output_tokens=max_output_tokens,
+        ),
+    )
+    return response.text or ""
 
 
 def _names(sources: list[str]) -> str:
@@ -97,7 +107,6 @@ def _build_messages(
         )
 
     if tier == "institutions":
-        # Cap to top 8 — listing more overwhelms the model and causes refusals
         top_names = _names(sources[:8])
         return (
             f"You are an events researcher for {city_name}, Australia. "
@@ -142,7 +151,7 @@ def _build_messages(
 
 
 def search_events(city_cfg: dict, tier: str | None, week_start: date, week_end: date) -> str:
-    """Search for events using Perplexity Sonar.
+    """Search for events using Gemini with Google Search grounding.
 
     tier=None runs an unconstrained interest-led search.
     tier="aggregators"|"institutions"|"independents" uses a strategy optimised for that source type.
@@ -153,27 +162,20 @@ def search_events(city_cfg: dict, tier: str | None, week_start: date, week_end: 
 
     system_msg, user_msg = _build_messages(city_name, tier, sources, week_start, week_end)
 
-    print(f"  [perplexity/{label}] Searching…")
-    response = _client().chat.completions.create(
-        model=SEARCH_MODEL,
-        max_tokens=8000,
-        messages=[
-            {"role": "system", "content": system_msg},
-            {"role": "user", "content": user_msg},
-        ],
-    )
+    print(f"  [gemini/{label}] Searching…")
+    raw = _generate(system_msg, user_msg)
 
-    raw = response.choices[0].message.content or ""
     if _REFUSAL_RE.search(raw):
-        raise RuntimeError(f"[perplexity/{label}] Provider found no events")
+        raise RuntimeError(f"[gemini/{label}] Provider found no events")
     if len(raw) < 100:
-        raise RuntimeError(f"[perplexity/{label}] Response too short ({len(raw)} chars)")
-    print(f"  [perplexity/{label}] {len(raw)} chars received")
+        raise RuntimeError(f"[gemini/{label}] Response too short ({len(raw)} chars)")
+
+    print(f"  [gemini/{label}] {len(raw)} chars received")
     return raw
 
 
 def find_sources(city_name: str) -> dict:
-    """Discover event sources for a city using Perplexity sonar-pro. Returns tier dict."""
+    """Discover event sources for a city using Gemini. Returns tier dict."""
     system_msg = (
         f"You are helping set up an automated weekly events digest for {city_name}. "
         "Find the best websites for local in-person events and sort them into three tiers: "
@@ -189,25 +191,16 @@ def find_sources(city_name: str) -> dict:
         "Return JSON with aggregators, institutions, and independents arrays."
     )
 
-    print(f"[perplexity] Discovering event sources for {city_name}…")
-    response = _client().chat.completions.create(
-        model=DISCOVERY_MODEL,
-        max_tokens=4000,
-        messages=[
-            {"role": "system", "content": system_msg},
-            {"role": "user", "content": user_msg},
-        ],
-    )
-
-    raw = response.choices[0].message.content or ""
+    print(f"[gemini] Discovering event sources for {city_name}…")
+    raw = _generate(system_msg, user_msg, max_output_tokens=4000)
     raw = re.sub(r"```json|```", "", raw).strip()
     match = re.search(r"\{[\s\S]*\}", raw)
     if not match:
         raise RuntimeError(
-            f"[perplexity] No JSON in source discovery response. Raw: {raw[:300]}"
+            f"[gemini] No JSON in source discovery response. Raw: {raw[:300]}"
         )
 
     sources = json.loads(match.group())
     for tier in ("aggregators", "institutions", "independents"):
-        print(f"[perplexity] Found {len(sources.get(tier, []))} {tier}")
+        print(f"[gemini] Found {len(sources.get(tier, []))} {tier}")
     return sources

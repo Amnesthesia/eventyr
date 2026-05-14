@@ -3,672 +3,1119 @@
   "city_key": "brisbane",
   "week_start": "2026-05-11",
   "week_end": "2026-05-17",
-  "generated_at": "2026-05-12",
+  "generated_at": "2026-05-15",
   "events": [
     {
-      "title": "Olafur Eliasson: Presence — GOMA Friday Nights",
+      "title": "Build with AI 3.0 – GDG Brisbane",
       "datetime": "Fri 15 May, 5:30 PM",
+      "location": "The Precinct, Fortitude Valley",
+      "link": "https://www.eventbrite.com.au/e/build-with-ai-30-2026-gdg-brisbane-tickets-1987565006438",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Eventbrite / GDG Brisbane",
+      "description": "GDG Brisbane presents an evening of practical deep dives into Generative AI and Data Engineering with industry leaders from companies like Atlassian. The evening features talks on LLM evaluation and lessons learned, followed by hands-on workshops on serverless agents and AI-powered data mapping using Gemini and Google Cloud, with networking and food throughout.",
+      "tags": [
+        "ai",
+        "technology",
+        "workshop",
+        "free"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-15T17:30:00",
+      "datetime_end_iso": "2026-05-15T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Olafur Eliasson: Presence",
+      "datetime": "Ongoing (all week)",
+      "location": "QAGOMA, South Brisbane",
+      "link": "https://www.qagoma.qld.gov.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "QAGOMA",
+      "description": "Immersive Brisbane-exclusive exhibition of Icelandic-Danish artist Olafur Eliasson's work across three decades, featuring multi-sensory installations with water, light and temperature — including Riverbed (a rocky landscape with running water) and The Cubic Structural Evolution Project (an all-white Lego city perpetually rebuilt).",
+      "tags": [
+        "art",
+        "installation",
+        "free",
+        "immersive"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Circa – Swan Lake",
+      "datetime": "13–16 May, 7:30 PM (or per schedule)",
+      "location": "QPAC, South Brisbane",
+      "link": "https://www.qpac.com.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "QPAC",
+      "description": "Circa's exuberant, acrobatic take on Swan Lake combines the classic ballet with The Ugly Duckling, featuring a burlesque-style black swan, waddling human ducks, and Circa's signature circus arts and live music. A reinvention of the world's most romantic ballet by one of Brisbane's most inventive theatre companies.",
+      "tags": [
+        "theatre",
+        "circus",
+        "performance",
+        "physical"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-13T19:30:00",
+      "datetime_end_iso": "2026-05-16T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Anywhere Festival 2026",
+      "datetime": "All week (1–31 May, select shows this week)",
+      "location": "Across Brisbane (New Farm, West End, Mt Coot-tha, Fortitude Valley, and more)",
+      "link": "https://www.anywherefestival.com.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Free–$30",
+      "source": "Anywhere Festival",
+      "description": "Brisbane's 16th annual experimental theatre festival transforms unconventional spaces — strip clubs, substations, warehouses, galleries, wine cellars, laneways, botanic gardens, planetariums — into theatre venues. Nearly 300 performances of fringe, immersive and experimental work across the city.",
+      "tags": [
+        "theatre",
+        "experimental",
+        "fringe",
+        "community"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-31",
+      "image": ""
+    },
+    {
+      "title": "Platform 2026 Artist Talks",
+      "datetime": "Tue–Sun 11–17 May, varies",
+      "location": "Institute of Modern Art (IMA), Fortitude Valley",
+      "link": "https://www.ima.org.au/ima-events/platform-2026-artist-talks/",
+      "category": "Public Lecture",
+      "cost": "Free",
+      "source": "IMA Brisbane",
+      "description": "The IMA's Platform 2026 Artist Talks feature three Queensland-emerging artists—Dean Ansell, Spencer Harvie, and Seren Wagstaff—discussing their ambitious new works in conversation. Spencer Harvie explores AI-generated imagery and online subcultures through surreal cartoon logic, creating thought-provoking dialogue about contemporary art and digital culture.",
+      "tags": [
+        "art",
+        "emerging artists",
+        "lecture",
+        "free"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": "https://www.ima.org.au/exhibitions/platform-2026/"
+    },
+    {
+      "title": "Genesis Owusu",
+      "datetime": "Sun 17 May, time TBA",
+      "location": "Fortitude Music Hall, Fortitude Valley",
+      "link": "https://www.thefortitude.com.au/whats-on",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Fortitude Music Hall",
+      "description": "One of Australia's most exciting and genre-defying artists brings a high-energy, experimental live performance. Genesis Owusu blends hip-hop, electronic, and avant-garde elements with sharp lyricism and innovative production—a must-see for adventurous music fans.",
+      "tags": [
+        "hip-hop",
+        "experimental",
+        "live music",
+        "authentic"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-17",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Redlands Coast AdventureFest",
+      "datetime": "15–24 May 2026",
+      "location": "Redlands Coast (various locations, ~45 min from Brisbane CBD)",
+      "link": "https://visit.brisbane.qld.au/whats-on/whats-on-this-week",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Visit Brisbane",
+      "description": "A free, community-led outdoor adventure festival in its second year featuring 100+ activities including adrenaline sports, hands-on workshops, kids' activities, interactive displays and nature experiences. Run by Ranger Stacey, this is a genuinely nature-focused event attracting adventurous, outdoorsy people.",
+      "tags": [
+        "outdoor",
+        "adventure",
+        "community",
+        "free"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-15",
+      "datetime_end_iso": "2026-05-24",
+      "image": ""
+    },
+    {
+      "title": "SLQ: Underwater Soundscape Composition Workshop",
+      "datetime": "TBA (May 2026)",
+      "location": "State Library of Queensland (The Edge), South Brisbane",
+      "link": "https://www.slq.qld.gov.au/autumn",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "State Library of Queensland",
+      "description": "Hands-on workshop led by sound artist and researcher Dr Leah Barclay exploring underwater listening and soundscape composition. Participants discover the art and science of listening to hidden aquatic ecosystems and create original soundscape compositions — a rare intersection of art, science, and environmental thinking.",
+      "tags": [
+        "soundscape",
+        "workshop",
+        "science",
+        "art"
+      ],
+      "score": 9,
+      "datetime_iso": "",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "GOMA Friday Nights — Olafur Eliasson: Presence",
+      "datetime": "Fri 15 May, 5:30–8:30 PM",
       "location": "Gallery of Modern Art (GOMA), South Brisbane",
       "link": "https://www.qagoma.qld.gov.au/event/goma-friday-nights-presence-2026-05-08",
       "category": "Arts / Exhibition",
       "cost": "Ticketed",
-      "source": "QAGOMA",
-      "description": "Step into Olafur Eliasson's immersive multi-sensory art installations during GOMA's special Friday night openings. The evening combines gallery access with bespoke bars, live DJs, pop-up performances, and delicious bites — creating an artistically alive, social atmosphere where art, music, and conversation naturally blend.",
+      "source": "Gallery of Modern Art",
+      "description": "Extended gallery hours with multi-sensory art by Olafur Eliasson, vinyl listening bar with Brisbane DJs, live performances, and drinks/food. A social, creative evening merging art, music and connection in an intimate cultural setting.",
       "tags": [
         "art",
-        "immersive",
-        "design",
+        "music",
         "social",
-        "evening",
-        "atmosphere"
+        "contemporary"
       ],
       "score": 9,
-      "image": "https://www.qagoma.qld.gov.au/images/olafur-eliasson-presence.jpg",
-      "datetime_iso": "2026-05-15T17:30:00"
+      "datetime_iso": "2026-05-15T17:30:00",
+      "datetime_end_iso": "2026-05-15T20:30:00",
+      "image": "https://www.qagoma.qld.gov.au/images/olafur-eliasson-presence.jpg"
     },
     {
-      "title": "Anywhere Festival — Week 3 (Multiple Venues)",
-      "datetime": "Mon 11 May – Sun 17 May",
-      "location": "Multiple Brisbane venues (Albion, Yeronga, Grange, Milton, West End, New Farm, Fortitude Valley, etc.)",
-      "link": "https://anywhere.is/brisbane/",
-      "category": "Arts / Exhibition",
-      "cost": "Low-cost / Pay-what-you-can (varies by show)",
-      "source": "Anywhere Festival",
-      "description": "Brisbane's experimental arts festival uses hidden backyards, ferries, driveways, and unexpected corners as stages. Week 3 features theatre in hedge mazes, circus in driveways, music in backyards, immersive experiences, and storytelling — hundreds of shows from emerging and established artists across non-traditional venues.",
-      "tags": [
-        "experimental",
-        "theatre",
-        "immersive",
-        "arts",
-        "community",
-        "adventure"
-      ],
-      "score": 9,
-      "image": "https://anywhere.is/images/anywhere-brisbane-2026.jpg",
-      "datetime_iso": "2026-05-11"
-    },
-    {
-      "title": "BrisScience: 'The Heat Is On — Growing Food in a Warmer World'",
-      "datetime": "Mon 11 May, 6:30 PM",
-      "location": "The Edge, State Library of Queensland, South Brisbane",
-      "link": "https://science.uq.edu.au/event/brisscience",
-      "category": "Public Lecture",
-      "cost": "Free",
-      "source": "University of Queensland / The Gentle Thinkers Meetup",
-      "description": "UQ's monthly BrisScience lecture series brings science out of the lab to the public. Dr Millicent Smith, Senior Lecturer in Crop Physiology, explores how we can grow enough food in a warming world using cutting-edge phenotyping tools and novel crop diversity. Accessible to all; no prior knowledge required.",
-      "tags": [
-        "science",
-        "climate",
-        "agriculture",
-        "lecture",
-        "free",
-        "intellectual"
-      ],
-      "score": 9,
-      "image": "https://science.uq.edu.au/images/brisscience-2026.jpg",
-      "datetime_iso": "2026-05-11T18:30:00"
-    },
-    {
-      "title": "Bands in Parks: Twilight Jazz by the River",
-      "datetime": "Fri 15 May, 5:00 PM",
-      "location": "Queensland Maritime Museum Park, South Brisbane",
-      "link": "https://www.eventbrite.com.au/e/bands-in-parks-twilight-jazz-by-the-river-tickets-1982143891738",
-      "category": "Concert / Music",
-      "cost": "Free",
-      "source": "Brisbane City Council",
-      "description": "Free outdoor jazz performance by UQ Big Band at a beautiful riverside park near the Goodwill Bridge. Watch the sunset over the Brisbane River with fellow music lovers in an informal, social setting. Register via Eventbrite.",
-      "tags": [
-        "jazz",
-        "live music",
-        "free",
-        "outdoor",
-        "social",
-        "sunset"
-      ],
-      "score": 8,
-      "image": "https://brisbane.qld.gov.au/images/bands-in-parks.jpg",
-      "datetime_iso": "2026-05-15T17:00:00"
-    },
-    {
-      "title": "Platform 2026 — IMA Exhibition (Dean Ansell, Spencer Harvie, Seren Wagstaff)",
-      "datetime": "Tues–Sun, 10:00 AM",
-      "location": "Institute of Modern Art, Fortitude Valley",
-      "link": "https://www.ima.org.au/exhibitions/platform-2026/",
-      "category": "Arts / Exhibition",
-      "cost": "Free",
-      "source": "Institute of Modern Art",
-      "description": "IMA's annual Platform exhibition spotlights three Queensland emerging artists: Dean Ansell (multidisciplinary installations exploring Melanesian mythology), Spencer Harvie (surreal paintings blending digital and imagined imagery), and Seren Wagstaff (installation and performance). Free artist talks scheduled during the run.",
-      "tags": [
-        "contemporary art",
-        "emerging artists",
-        "installation",
-        "free",
-        "design"
-      ],
-      "score": 8,
-      "image": "https://www.ima.org.au/images/platform-2026.jpg",
-      "datetime_iso": ""
-    },
-    {
-      "title": "Free Range 6: SCRAPS (Laura Hill) @ IMA",
-      "datetime": "Thu 14 May (evening)",
-      "location": "Institute of Modern Art, Fortitude Valley",
-      "link": "https://www.ima.org.au/ima-events/free-range-6/",
-      "category": "Concert / Music",
-      "cost": "Pay What You Can",
-      "source": "Institute of Modern Art",
-      "description": "IMA's Free Range sound club features Laura Hill's SCRAPS — a 20-year Brisbane underground veteran's analogue synth-pop project blending club beats with keyboard pop. Intimate, experimental, and musically adventurous.",
-      "tags": [
-        "electronic music",
-        "synth pop",
-        "independent",
-        "experimental",
-        "local"
-      ],
-      "score": 8,
-      "image": "https://www.ima.org.au/images/free-range.jpg",
-      "datetime_iso": "2026-05-14"
-    },
-    {
-      "title": "GOMA: Olafur Eliasson: Presence (Exhibition)",
-      "datetime": "Daily (all week)",
-      "location": "Gallery of Modern Art (GOMA), South Brisbane",
-      "link": "https://www.qagoma.qld.gov.au/whats-on/exhibitions/",
-      "category": "Arts / Exhibition",
-      "cost": "Ticketed",
-      "source": "QAGOMA",
-      "description": "Exclusive Brisbane exhibition of Icelandic-Danish artist Olafur Eliasson's major installations, photography, and sculpture. The exhibition explores how our senses shape our experience of the world — featuring seminal works like *Beauty* (rainbow veil) and *Riverbed* (immersive rocky landscape). Spans GOMA's entire ground floor.",
-      "tags": [
-        "contemporary art",
-        "installation",
-        "perception",
-        "design",
-        "immersive"
-      ],
-      "score": 8,
-      "image": "https://www.qagoma.qld.gov.au/images/olafur-eliasson.jpg",
-      "datetime_iso": ""
-    },
-    {
-      "title": "'Make A Scene' — Queensland Museum Free Exhibition",
-      "datetime": "Daily (until 19 July)",
+      "title": "Make A Scene – Queensland Museum Kurilpa",
+      "datetime": "Until 19 July (all week)",
       "location": "Queensland Museum Kurilpa, South Brisbane",
-      "link": "https://www.museum.qld.gov.au/kurilpa",
+      "link": "https://www.qmuseum.qld.gov.au/",
       "category": "Arts / Exhibition",
       "cost": "Free",
       "source": "Queensland Museum",
-      "description": "Immersive free exhibition celebrating 1990s Australian queer culture — 35 years after decriminalisation of homosexuality. Features fashion, colour, camp, pop culture, and personal stories from Brisbane's underground nightclub and dance party scene. Culturally significant and historically rich.",
+      "description": "Free exhibition celebrating 35 years since the decriminalisation of homosexuality in Queensland, showcasing iconic 90s Australian queer culture, underground nightclub fashion, dance party aesthetics, and personal stories from the LGBTQIA+ community. Features over 100 pieces from Brisbane-based labels and fearless self-expressions.",
       "tags": [
-        "lgbtqia+",
+        "queer culture",
         "history",
         "fashion",
-        "subculture",
-        "free",
-        "design"
+        "free"
       ],
       "score": 8,
-      "image": "https://www.museum.qld.gov.au/images/make-a-scene.jpg",
-      "datetime_iso": "2026-07-19"
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-07-19",
+      "image": ""
     },
     {
-      "title": "Gentle Thinkers — Intellectual Dialogue Meetup",
-      "datetime": "Check group page (recurring)",
-      "location": "Various Brisbane CBD/inner-city venues",
-      "link": "https://www.meetup.com/gentle-thinkers/",
-      "category": "Social / Meetup",
-      "cost": "Free",
-      "source": "Meetup.com",
-      "description": "Regular Brisbane meetup for intellectually curious people interested in conversations about scientific, social, and political issues. Each session focuses on one topic; everyone contributes. Philosophy inspired by Bertrand Russell: 'Do not feel absolutely certain of anything.' Naturally attracts thoughtful, open-minded people.",
-      "tags": [
-        "philosophy",
-        "discussion",
-        "science",
-        "community",
-        "free",
-        "recurring"
-      ],
-      "score": 8,
-      "image": "",
-      "datetime_iso": ""
-    },
-    {
-      "title": "Mariah the Scientist: Hearts Sold Separately Tour",
-      "datetime": "Tue 12 May, 7:00 PM",
-      "location": "The Fortitude Music Hall, Fortitude Valley",
-      "link": "https://www.thefortitude.com.au/all-events/",
-      "category": "Concert / Music",
-      "cost": "$89+",
-      "source": "The Fortitude Music Hall",
-      "description": "Atlanta R&B and neo-soul artist Mariah the Scientist brings her emotionally intense, atmospheric sound to Brisbane. A thoughtful, artistically ambitious performer with a devoted following among music lovers.",
-      "tags": [
-        "r&b",
-        "neo-soul",
-        "live music",
-        "independent",
-        "atlanta"
-      ],
-      "score": 7,
-      "image": "https://www.thefortitude.com.au/images/mariah-scientist.jpg",
-      "datetime_iso": "2026-05-12T19:00:00"
-    },
-    {
-      "title": "J.I.D — God Does Like World Tour",
-      "datetime": "Fri 15 May, 7:00 PM",
-      "location": "The Fortitude Music Hall, Fortitude Valley",
-      "link": "https://www.thefortitude.com.au/all-events/",
-      "category": "Concert / Music",
-      "cost": "$60+",
-      "source": "The Fortitude Music Hall",
-      "description": "Atlanta rapper J.I.D (relocated from Riverstage) is one of hip-hop's most compelling live performers. Intimate headline show in a dedicated music venue rather than a large stadium.",
-      "tags": [
-        "hip-hop",
-        "rap",
-        "live music",
-        "atlanta",
-        "independent"
-      ],
-      "score": 7,
-      "image": "https://www.thefortitude.com.au/images/jid.jpg",
-      "datetime_iso": "2026-05-15T19:00:00"
-    },
-    {
-      "title": "Genesis Owusu",
-      "datetime": "Sun 17 May, 7:00 PM",
-      "location": "The Fortitude Music Hall, Fortitude Valley",
-      "link": "https://www.thefortitude.com.au/all-events/",
-      "category": "Concert / Music",
-      "cost": "$112",
-      "source": "The Fortitude Music Hall",
-      "description": "Ghanaian-Australian alt-soul and punk-funk artist Genesis Owusu is one of Australia's most electrifying live performers. Expect an intense, genre-defying show full of energy and artistic ambition.",
-      "tags": [
-        "alt-soul",
-        "punk-funk",
-        "live music",
-        "australian",
-        "experimental"
-      ],
-      "score": 7,
-      "image": "https://www.thefortitude.com.au/images/genesis-owusu.jpg",
-      "datetime_iso": "2026-05-17T19:00:00"
-    },
-    {
-      "title": "Audrey Hobert — The Staircase To Stardom Tour",
-      "datetime": "Sat 16 May, 7:00 PM",
-      "location": "The Fortitude Music Hall, Fortitude Valley",
-      "link": "https://www.thefortitude.com.au/all-events/",
+      "title": "Brisbane Comedy Festival – Claire Hooper & Pete Helliar",
+      "datetime": "14–17 May (various times, see schedule)",
+      "location": "Brisbane Powerhouse (New Farm), Princess Theatre",
+      "link": "https://www.brisbanecomedyfestival.com.au/",
       "category": "Concert / Music",
       "cost": "Ticketed",
-      "source": "The Fortitude Music Hall",
-      "description": "Rising indie-pop singer-songwriter Audrey Hobert brings her cinematic, emotionally rich songwriting to Brisbane. Intimate, atmospheric gig in a dedicated music venue.",
-      "tags": [
-        "indie-pop",
-        "singer-songwriter",
-        "live music",
-        "atmospheric"
-      ],
-      "score": 7,
-      "image": "https://www.thefortitude.com.au/images/audrey-hobert.jpg",
-      "datetime_iso": "2026-05-16T19:00:00"
-    },
-    {
-      "title": "Jason Leong: In Laughing Memory",
-      "datetime": "Thu 14 May, 7:30 PM",
-      "location": "The Fortitude Music Hall, Fortitude Valley",
-      "link": "https://www.thefortitude.com.au/all-events/",
-      "category": "Concert / Music",
-      "cost": "Ticketed",
-      "source": "The Fortitude Music Hall",
-      "description": "Malaysian stand-up comedian Jason Leong brings sharp, observational humour to Brisbane in an intimate touring comedy show.",
+      "source": "Brisbane Comedy Festival",
+      "description": "Brisbane Comedy Festival's 17th edition runs through May with performances at Brisbane Powerhouse, The Tivoli, Fortitude Music Hall and Princess Theatre. This week: Claire Hooper performing 'fun show xx' (Brisbane Powerhouse 14–17 May) and Pete Helliar recounting his viral ISIS joke incident (Princess Theatre 16–17 May).",
       "tags": [
         "comedy",
         "stand-up",
-        "live performance",
-        "independent"
+        "live",
+        "australian"
       ],
-      "score": 6,
-      "image": "https://www.thefortitude.com.au/images/jason-leong.jpg",
-      "datetime_iso": "2026-05-14T19:30:00"
+      "score": 8,
+      "datetime_iso": "2026-05-14T19:00:00",
+      "datetime_end_iso": "2026-05-17T22:00:00",
+      "image": ""
     },
     {
-      "title": "Black Bear Lodge — Live Music & Sunday Service",
-      "datetime": "Sun 17 May (recurring Sundays)",
-      "location": "Black Bear Lodge, Fortitude Valley",
-      "link": "https://blackbearlodge.bar/events",
-      "category": "Concert / Music",
-      "cost": "Free (Sunday Service)",
-      "source": "Black Bear Lodge",
-      "description": "Brisbane's favourite live music venue curates first dibs on touring acts and intimate EP sets. Sunday Service features free live performances from Queensland's best emerging acts — a casual, social vibe with musicians and music lovers.",
-      "tags": [
-        "live music",
-        "independent",
-        "emerging artists",
-        "free",
-        "social"
-      ],
-      "score": 7,
-      "image": "https://blackbearlodge.bar/images/sunday-service.jpg",
-      "datetime_iso": "2026-05-17"
-    },
-    {
-      "title": "QSO Concert Special: The Italian Job",
-      "datetime": "Fri 15 May, 7:30 PM",
-      "location": "QPAC Concert Hall, South Brisbane",
-      "link": "https://qso.com.au/events/2026/concert-specials-2026",
+      "title": "Endless Swarm — Body Hammering Australia 2026 (Brisbane)",
+      "datetime": "Sun 17 May, 6:00 PM–9:30 PM",
+      "location": "BackDock Arts, Fortitude Valley",
+      "link": "https://www.eventbrite.com.au/e/endless-swarm-body-hammering-australia-2026-brisbane-tickets-1984932121408",
       "category": "Concert / Music",
       "cost": "Ticketed",
-      "source": "Queensland Symphony Orchestra",
-      "description": "Queensland Symphony Orchestra performs an Italian-themed program featuring Rossini, Rota, Verdi, and Vivaldi arrangements. A celebratory orchestral evening by one of Australia's leading orchestras.",
+      "source": "Eventbrite / Grindhead Records",
+      "description": "Scotland's powerviolence act Endless Swarm makes their first Southern Hemisphere descent at BackDock Arts—a raw, sweaty underground gig at an authentic DIY arts space. Forged in Edinburgh's underground scene and sharpened across Europe, Japan, and the USA; deeply subcultural and unpolished.",
       "tags": [
-        "classical",
-        "orchestra",
-        "italian",
-        "live music"
+        "powerviolence",
+        "underground",
+        "diy",
+        "subculture"
       ],
-      "score": 7,
-      "image": "https://qso.com.au/images/italian-job.jpg",
-      "datetime_iso": "2026-05-15T19:30:00"
+      "score": 8,
+      "datetime_iso": "2026-05-17T18:00:00",
+      "datetime_end_iso": "2026-05-17T21:30:00",
+      "image": ""
     },
     {
-      "title": "Weaving is Healing Brisbane",
-      "datetime": "Sat 16 May, 10:30 AM",
-      "location": "Mt Coot-tha Botanic Gardens",
+      "title": "Platform 2026 Exhibition — Dean Ansell, Spencer Harvie & Seren Wagstaff",
+      "datetime": "Tue–Sun, 10:00 AM–5:00 PM (all week)",
+      "location": "Institute of Modern Art (IMA), Fortitude Valley",
+      "link": "https://www.ima.org.au/exhibitions/platform-2026/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "IMA Brisbane",
+      "description": "IMA's annual Queensland-emerging-artist exhibition funding three artists to create ambitious new projects. Spencer Harvie presents dark, surreal explorations of online and fan subcultures through AI-generated and imagined imagery; a richly thought-provoking exhibition from Brisbane's most credible contemporary art institution.",
+      "tags": [
+        "contemporary art",
+        "emerging artists",
+        "free",
+        "subculture"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-11T10:00:00",
+      "datetime_end_iso": "2026-05-17T17:00:00",
+      "image": "https://www.ima.org.au/exhibitions/platform-2026/"
+    },
+    {
+      "title": "Weaving is Healing — Basketry Workshop",
+      "datetime": "Sat 16 May, 10:30 AM–3:30 PM",
+      "location": "Mt Coot-tha Botanic Gardens, Brisbane",
       "link": "https://www.eventbrite.com.au/e/weaving-is-healing-brisbane-may-2026-tickets-1984547702601",
       "category": "Workshop / Class",
       "cost": "Ticketed",
       "source": "Eventbrite",
-      "description": "Figure-8 coil weave workshop with roots in African and European traditions. Participants weave a small basket in a ceremony-style immersive sharing and healing circle. Hands-on, creative, and community-oriented in a beautiful outdoor botanical setting.",
+      "description": "A hands-on, immersive creative workshop using Figure 8 coil weave technique (with African and European roots) held in Mt Coot-tha's beautiful gardens. Participants weave a small basketling in a ceremony-style sharing and healing circle—grounded, community-oriented, and set in nature.",
       "tags": [
         "craft",
-        "weaving",
         "workshop",
-        "hands-on",
-        "nature",
+        "community",
+        "outdoor"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-16T10:30:00",
+      "datetime_end_iso": "2026-05-16T15:30:00",
+      "image": ""
+    },
+    {
+      "title": "National Theatre Live: All My Sons",
+      "datetime": "7–27 May (screenings all week)",
+      "location": "Palace Cinemas James St, Fortitude Valley",
+      "link": "https://www.palacecinemas.com.au/events/national-theatre-live",
+      "category": "Arts / Exhibition",
+      "cost": "$18–22",
+      "source": "Palace Cinemas",
+      "description": "Acclaimed five-star production of Arthur Miller's *All My Sons* featuring Bryan Cranston and Marianne Jean-Baptiste, directed by Ivo Van Hove. A disturbingly prescient exploration of the American dream, wartime profiteering, and moral compromise—filmed live from London's West End.",
+      "tags": [
+        "theatre",
+        "film",
+        "classic drama",
+        "cinema"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-07",
+      "datetime_end_iso": "2026-05-27",
+      "image": ""
+    },
+    {
+      "title": "J.I.D — God Does Like World Tour",
+      "datetime": "Fri 15 May, time TBA",
+      "location": "Fortitude Music Hall, Fortitude Valley",
+      "link": "https://www.thefortitude.com.au/whats-on",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Fortitude Music Hall",
+      "description": "Atlanta rapper J.I.D brings intricate, intelligent lyricism and dynamic stage presence to Fortitude Music Hall. Known for precise wordplay, conceptual albums, and collaborations with top hip-hop producers—a genuine hip-hop experience at one of Brisbane's best live music venues.",
+      "tags": [
+        "hip-hop",
+        "rap",
+        "live music",
+        "authentic"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-15",
+      "datetime_end_iso": "2026-05-15",
+      "image": ""
+    },
+    {
+      "title": "QSO Italian Gala",
+      "datetime": "Fri 15 May, 7:30 PM",
+      "location": "QPAC Concert Hall, South Brisbane",
+      "link": "https://qso.com.au/events/2026/concert-specials-2026/qso-italian-gala",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Queensland Symphony Orchestra",
+      "description": "Queensland Symphony Orchestra under Maestro Umberto Clerici performs Italian masterworks including Rossini's Barber of Seville, Vivaldi's Triple Concerto for violin, cello and accordion, and dramatic works by Puccini and Verdi. Features world-renowned accordionist James Crabb.",
+      "tags": [
+        "classical",
+        "orchestral",
+        "italian",
+        "concert"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-15T19:30:00",
+      "datetime_end_iso": "",
+      "image": "https://qso.com.au/images/italian-gala-2026.jpg"
+    },
+    {
+      "title": "Brisbane Comedy Festival: Jiggle Jiggle (Josh Thomas)",
+      "datetime": "13–17 May 2026",
+      "location": "Brisbane Powerhouse, New Farm",
+      "link": "https://brisbanepowerhouse.org/events/",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Brisbane Powerhouse",
+      "description": "Headline act from Josh Thomas at Brisbane Comedy Festival 2026. Described as quirky, hilarious and authentic, featuring his new show Jiggle Jiggle. Part of the festival's diverse 300+ event program across four iconic venues.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "theatre",
+        "festival"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-13",
+      "datetime_end_iso": "2026-05-17",
+      "image": "https://brisbanepowerhouse.org/images/josh-thomas-jiggle.jpg"
+    },
+    {
+      "title": "QSO Maestro Series: Rachmaninov & Shostakovich (Main Night)",
+      "datetime": "Sat 16 May, 7:30 PM",
+      "location": "QPAC Concert Hall, South Brisbane",
+      "link": "https://qso.com.au/events/2026/maestro-series/maestro-3-rachmaninov-and-shostakovich",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Queensland Symphony Orchestra",
+      "description": "Main performance of QSO's Maestro Series featuring Rachmaninov's beloved Piano Concerto No. 2 alongside Shostakovich's emotional 5th Symphony and contemporary work by Cathy Milliken. Intimate classical concert attracting thoughtful music lovers.",
+      "tags": [
+        "classical",
+        "orchestral",
+        "concert",
+        "masterworks"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-16T19:30:00",
+      "datetime_end_iso": "",
+      "image": "https://qso.com.au/images/maestro-series-3-2026.jpg"
+    },
+    {
+      "title": "Olafur Eliasson: Presence — Exhibition",
+      "datetime": "Daily (1 May – 26 June 2026)",
+      "location": "Gallery of Modern Art (GOMA), South Brisbane",
+      "link": "https://www.qagoma.qld.gov.au/",
+      "category": "Arts / Exhibition",
+      "cost": "From $20",
+      "source": "Gallery of Modern Art",
+      "description": "Exclusive Brisbane exhibition of major works by contemporary artist Olafur Eliasson. Immersive, multi-sensory experience exploring light, colour, perception and environmental themes through large-scale installations and a meticulously constructed riverbed.",
+      "tags": [
+        "contemporary art",
+        "installation",
+        "sensory",
+        "exhibition"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-01",
+      "datetime_end_iso": "2026-06-26",
+      "image": "https://www.qagoma.qld.gov.au/images/olafur-eliasson-presence-hero.jpg"
+    },
+    {
+      "title": "Brisbane Comedy Festival: Okay, I Believe You (Auslan Comedy)",
+      "datetime": "13–14 May 2026",
+      "location": "Brisbane Powerhouse, New Farm",
+      "link": "https://brisbanepowerhouse.org/events/",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Brisbane Powerhouse",
+      "description": "Auslan-interpreted comedy show — a rare opportunity for accessible, inclusive stand-up comedy in Brisbane. Strong community atmosphere at an atmospheric independent venue.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "inclusive",
+        "community"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-13",
+      "datetime_end_iso": "2026-05-14",
+      "image": "https://brisbanepowerhouse.org/images/okay-i-believe-you.jpg"
+    },
+    {
+      "title": "Australian Cinémathèque: Double Take (Film Program)",
+      "datetime": "Daily (1 May – 1 July 2026)",
+      "location": "Australian Cinémathèque, Gallery of Modern Art, South Brisbane",
+      "link": "https://www.qagoma.qld.gov.au/whats-on/",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "Gallery of Modern Art",
+      "description": "Curated international and art house film program at GOMA's dedicated cinema space. Rare opportunity for thoughtful, intellectually engaging film culture in Brisbane during this period.",
+      "tags": [
+        "film",
+        "art house",
+        "cinema",
+        "curated"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-01",
+      "datetime_end_iso": "2026-07-01",
+      "image": "https://www.qagoma.qld.gov.au/images/cinematheque-double-take.jpg"
+    },
+    {
+      "title": "2026 Brisbane Anywhere Festival",
+      "datetime": "Fri 1 May – Sun 31 May 2026 (ongoing)",
+      "location": "Various unconventional Brisbane locations (backyards, ferries, lighthouses, driveways)",
+      "link": "https://www.brisbane.qld.gov.au/events/2026-brisbane-anywhere-festival/196584715",
+      "category": "Arts / Exhibition",
+      "cost": "$0–$30 (varies by show; many free or low-cost)",
+      "source": "Brisbane City Council / Anywhere Theatre Company",
+      "description": "Month-long fringe theatre and performance festival featuring experimental, immersive, and site-specific shows in unconventional venues across Brisbane. Attracts creative, open-minded audiences and fosters natural conversation in intimate settings. Specific 11–17 May pop-up schedule to be confirmed, but includes theatre, music, storytelling, and performance art.",
+      "tags": [
+        "theatre",
+        "experimental",
+        "immersive",
+        "community",
+        "low-cost"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-01",
+      "datetime_end_iso": "2026-05-31",
+      "image": ""
+    },
+    {
+      "title": "Polestar 5 Design & Tech Preview (Daily Talks)",
+      "datetime": "12–16 May, 8:30 AM – 5:00 PM (daily 11:00 AM talk)",
+      "location": "Polestar Brisbane, 773 Ann Street, Fortitude Valley",
+      "link": "https://www.polestar.com/en-au/about/news/",
+      "category": "Public Lecture",
+      "cost": "Free",
+      "source": "Polestar / The Urban List",
+      "description": "Free drop-in space showcasing the Polestar 5 electric vehicle and discussing design, performance and sustainability. Daily talks at 11:00 AM on the car's engineering and design philosophy; food, drinks and casual networking throughout the week. Saturday 16 May includes DJ, coffee cart and prize giveaways.",
+      "tags": [
+        "design",
+        "technology",
+        "sustainability",
+        "free"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-12T08:30:00",
+      "datetime_end_iso": "2026-05-16T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Weaving is Healing Workshop",
+      "datetime": "Sat 16 May, 10:30 AM – 3:30 PM",
+      "location": "Mt Coot-tha Botanic Gardens, Brisbane",
+      "link": "https://www.eventbrite.com.au/e/weaving-is-healing-brisbane-may-2026-tickets-1984547702601",
+      "category": "Workshop / Class",
+      "cost": "Ticketed (price on Eventbrite)",
+      "source": "Eventbrite",
+      "description": "Immersive half-day craft workshop in a ceremony-style healing circle at Mt Coot-tha Botanic Gardens. Learn the Figure 8 coil weave technique with roots in African and European traditions while creating a basketling. A reflective, hands-on experience combining slow-making, community ritual and indigenous craft.",
+      "tags": [
+        "craft",
+        "workshop",
+        "wellness",
+        "nature"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-16T10:30:00",
+      "datetime_end_iso": "2026-05-16T15:30:00",
+      "image": ""
+    },
+    {
+      "title": "The Yellow Diary – Live in Brisbane",
+      "datetime": "Fri 15 May, 7:00 PM (doors), 8:00 PM (show start)",
+      "location": "Wonderland Brisbane",
+      "link": "https://www.eventbrite.com.au/e/the-yellow-diary-live-in-brisbane-tickets-1669038502089",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Eventbrite",
+      "description": "The Yellow Diary, an acclaimed Indian indie-pop and alternative band known for introspective lyrics and rich layered sound, plays Brisbane as part of their Australia tour. Show followed by exclusive Bollywood Club Night after-party. A worldly, intimate live music experience.",
+      "tags": [
+        "music",
+        "indie",
+        "world",
+        "live"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-15T19:00:00",
+      "datetime_end_iso": "2026-05-15T23:00:00",
+      "image": ""
+    },
+    {
+      "title": "Endless Swarm – Body Hammering Australia Tour",
+      "datetime": "Sun 17 May, 6:00 PM – 9:30 PM",
+      "location": "BackDock Arts, Fortitude Valley",
+      "link": "https://www.eventbrite.com.au/e/endless-swarm-body-hammering-australia-2026-brisbane-tickets-1984932121408",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Eventbrite",
+      "description": "Scottish powerviolence band Endless Swarm makes their first Southern Hemisphere tour stop in Brisbane. Known since 2013 as a ferocious live act in the UK and Europe, they deliver blast-driven hardcore with grind-scarred riffs and venomous vocals in short, savage bursts. A raw, underground show at one of Brisbane's most authentic indie/punk venues.",
+      "tags": [
+        "music",
+        "punk",
+        "underground",
+        "live"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-17T18:00:00",
+      "datetime_end_iso": "2026-05-17T21:30:00",
+      "image": ""
+    },
+    {
+      "title": "Precious – Museum of Brisbane",
+      "datetime": "Until 21 December (all week)",
+      "location": "Museum of Brisbane, Brisbane CBD",
+      "link": "https://www.museumofbrisbane.com.au/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Museum of Brisbane",
+      "description": "Free exhibition featuring over 3,000 loaned items from around 30 private collections and collectors — many on display for the first time. A charming, curious assortment of rare, beautiful and intriguing objects from suburban collections: international dolls, ornamental eggs, wind-up toys and more. A celebration of what people treasure.",
+      "tags": [
+        "museum",
+        "collections",
+        "free",
+        "curated"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-12-21",
+      "image": ""
+    },
+    {
+      "title": "HSBC German Film Festival 2026",
+      "datetime": "8–27 May (screenings all week)",
+      "location": "Palace Cinemas James St & other Palace venues, Fortitude Valley",
+      "link": "https://www.palacecinemas.com.au/festivals",
+      "category": "Arts / Exhibition",
+      "cost": "$18–22 (Movie Club discounts available)",
+      "source": "Palace Cinemas",
+      "description": "A curated selection of contemporary German cinema direct from major European festivals, plus films from Austria and Switzerland. All screenings at Palace Cinemas this week—an excellent opportunity to explore art-house European cinema in an independent cinema space.",
+      "tags": [
+        "film",
+        "german cinema",
+        "art-house",
+        "cinema"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-08",
+      "datetime_end_iso": "2026-05-27",
+      "image": ""
+    },
+    {
+      "title": "Alliance Française French Film Festival",
+      "datetime": "8–27 May (screenings all week; opening night Fri 8 May)",
+      "location": "Palace Cinemas James St, Fortitude Valley",
+      "link": "https://www.palacecinemas.com.au/events/2026-alliance-francaise-french-film-festival-opening-night-colours-of-time",
+      "category": "Arts / Exhibition",
+      "cost": "$18–22 (opening night includes French drinks & nibbles)",
+      "source": "Palace Cinemas / Alliance Française",
+      "description": "Two-week French film festival featuring *Colours of Time* (Cédric Klapisch's new dramedy) as opening night. Opening night screening includes French aperitif and light refreshments—run of screenings throughout the fortnight at Palace.",
+      "tags": [
+        "film",
+        "french cinema",
+        "art-house",
+        "cinema"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-08",
+      "datetime_end_iso": "2026-05-27",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Social Geeks — Philosophy, Board Games & Intellectual Discussion Meetups",
+      "datetime": "Multiple sessions throughout week (check Meetup page)",
+      "location": "New Farm Library area & Roma Street Parklands, Brisbane",
+      "link": "https://www.meetup.com/philosophy-pub-brisbane/",
+      "category": "Social / Meetup",
+      "cost": "Free",
+      "source": "Meetup",
+      "description": "Recurring community group for people interested in expanding social connections and developing mind and body. Sessions include philosophy discussions (e.g. *The Dictator's Handbook*: power, authority, governance), board games, meditations, and yoga in small, conversational settings—authentic intellectual community with mixed-age attendees.",
+      "tags": [
+        "philosophy",
+        "meetup",
+        "free",
         "community"
       ],
       "score": 7,
-      "image": "https://www.eventbrite.com.au/images/weaving-is-healing.jpg",
-      "datetime_iso": "2026-05-16T10:30:00"
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
     },
     {
-      "title": "Brisbane Makerspace — Monday Open Night",
-      "datetime": "Mon 11 May, 6:00 PM",
-      "location": "Brisbane Makerspace, Fortitude Valley area",
-      "link": "https://brisbanemaker.space/events/",
-      "category": "Workshop / Class",
-      "cost": "Free",
-      "source": "Brisbane Makerspace",
-      "description": "Free public open night at Brisbane's community makerspace. Access to laser cutting, 3D printing, electronics, and arts & crafts tools. Recurring event to meet makers, learn, and collaborate — no membership required for public meetups.",
-      "tags": [
-        "maker",
-        "diy",
-        "electronics",
-        "free",
-        "community",
-        "hands-on"
-      ],
-      "score": 7,
-      "image": "https://brisbanemaker.space/images/makerspace.jpg",
-      "datetime_iso": "2026-05-11T18:00:00"
-    },
-    {
-      "title": "HSBC German Film Festival @ Palace Cinemas",
-      "datetime": "Daily (throughout the week)",
-      "location": "Palace Barracks (Petrie Terrace) & Palace Centro (James Street, New Farm)",
-      "link": "https://www.palacecinemas.com.au/events",
-      "category": "Arts / Exhibition",
-      "cost": "$22–$26",
-      "source": "Palace Cinemas",
-      "description": "2026 HSBC German Film Festival showcases the best contemporary German cinema, plus selections from Austria and Switzerland. Palace Cinemas specializes in high-quality international art-house films — an ideal week for conversation-starting European cinema.",
-      "tags": [
-        "film",
-        "german",
-        "international",
-        "cinema",
-        "art-house"
-      ],
-      "score": 7,
-      "image": "https://www.palacecinemas.com.au/images/german-film-festival.jpg",
-      "datetime_iso": ""
-    },
-    {
-      "title": "Brisbane International Film Festival (BIFF) — Screenings with Q&As",
-      "datetime": "Throughout the week (verify specific dates)",
-      "location": "New Farm Cinemas, Palace Barracks, Dendy venues, Brisbane",
-      "link": "https://biff.com.au/films-event-schedule/",
-      "category": "Arts / Exhibition",
-      "cost": "Varies",
-      "source": "Brisbane International Film Festival",
-      "description": "BIFF screenings include Queensland premieres with post-screening Q&As with directors and filmmakers. Ideal for intellectually engaged film lovers seeking conversation-starting cinema and artistic community.",
-      "tags": [
-        "film",
-        "festival",
-        "cinema",
-        "q&a",
-        "independent"
-      ],
-      "score": 7,
-      "image": "https://biff.com.au/images/biff-2026.jpg",
-      "datetime_iso": ""
-    },
-    {
-      "title": "Avid Reader Open Book Club",
-      "datetime": "Wed 13 May (evening) or Thu 14 May (morning)",
-      "location": "Avid Reader, West End",
-      "link": "https://www.avidreader.com.au/events",
+      "title": "Brisbane Social and Language Exchange",
+      "datetime": "Multiple dates this week (check Eventbrite for exact sessions)",
+      "location": "Central Brisbane",
+      "link": "https://www.eventbrite.com.au/e/brisbane-social-and-language-exchange-make-new-friends-tickets-1986013240063",
       "category": "Social / Meetup",
       "cost": "Free",
-      "source": "Avid Reader Bookshop",
-      "description": "Avid Reader's Open Book Club is the first Wednesday evening or Thursday morning of each month — ideal for newcomers. Recurring community of readers and thoughtful people. The bookshop also hosts author talks and runs themed clubs (Bloody Crime, Young & Restless, Australian literature).",
-      "tags": [
-        "books",
-        "literature",
-        "community",
-        "discussion",
-        "free",
-        "recurring"
-      ],
-      "score": 7,
-      "image": "https://www.avidreader.com.au/images/book-club.jpg",
-      "datetime_iso": "2026-05-13"
-    },
-    {
-      "title": "Brisbane Language Exchange — Friday Social",
-      "datetime": "Fri 15 May (recurring Fridays)",
-      "location": "Brisbane City (check Eventbrite for venue)",
-      "link": "https://www.eventbrite.com.au/d/australia/brisbane/",
-      "category": "Social / Meetup",
-      "cost": "Free / Low cost",
       "source": "Eventbrite",
-      "description": "Weekly casual gathering for people who want to practice foreign languages and meet curious, internationally-minded locals and expats. Natural conversation opportunity in a social, relaxed setting.",
+      "description": "Multicultural social mixer designed to help people meet friends from Brisbane and worldwide. Language exchange covering Japanese, French, Chinese, German, Korean, Italian, Spanish—welcoming students, expats, and locals. Conversational, low-pressure, community-oriented.",
       "tags": [
         "language",
-        "social",
-        "community",
+        "meetup",
         "free",
-        "recurring",
-        "cultural"
+        "community"
       ],
-      "score": 6,
-      "image": "",
-      "datetime_iso": "2026-05-15"
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
     },
     {
-      "title": "Redlands Coast AdventureFest",
-      "datetime": "Fri 15 May – Sun 24 May",
-      "location": "Redlands Coast (approx. 30–40 mins from Brisbane CBD)",
-      "link": "https://www.mustdobrisbane.com/whats-on",
+      "title": "Museum of Brisbane — City Walking Tours",
+      "datetime": "Wed 13 May & Sat 16 May (recurring)",
+      "location": "Museum of Brisbane, City Hall, Brisbane CBD",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/",
       "category": "Community / Other",
-      "cost": "Varies (many free/low cost)",
-      "source": "Must Do Brisbane",
-      "description": "10-day festival showcasing adventure activities and outdoor events across Redlands Coast — hiking, nature excursions, coastal activities, and community events. Ideal for adventurous, active social types and nature lovers.",
+      "cost": "Bookings required",
+      "source": "Museum of Brisbane",
+      "description": "Regular guided walking tours exploring Brisbane's CBD history, architecture and hidden stories. Recurring community event attracting curious, conversation-loving participants. Bookings essential.",
       "tags": [
-        "outdoor",
-        "adventure",
-        "hiking",
-        "nature",
+        "history",
+        "walking tour",
         "community",
-        "active"
+        "architectural"
       ],
-      "score": 6,
-      "image": "https://www.mustdobrisbane.com/images/redlands-adventurefest.jpg",
-      "datetime_iso": "2026-05-15"
+      "score": 7,
+      "datetime_iso": "2026-05-13",
+      "datetime_end_iso": "",
+      "image": "https://www.museumofbrisbane.com.au/images/walking-tours.jpg"
     },
     {
-      "title": "Dog Lovers Festival Brisbane 2026",
-      "datetime": "Sat 16 May – Sun 17 May, 9:00 AM",
-      "location": "Brisbane Showgrounds, Bowen Hills",
-      "link": "https://www.eventbrite.com.au/d/australia/brisbane/",
-      "category": "Community / Other",
+      "title": "QSO Maestro Series Preview Concerts",
+      "datetime": "Wed 13 May & Thu 14 May, 7:00 PM",
+      "location": "QPAC Concert Hall, South Brisbane",
+      "link": "https://qso.com.au/events/2026/maestro-series/maestro-3-rachmaninov-and-shostakovich",
+      "category": "Concert / Music",
       "cost": "Ticketed",
-      "source": "Eventbrite",
-      "description": "Queensland's biggest dog celebration returns. Hundreds of dogs, breed showcases, adoption zones, and a family-friendly, joyful community atmosphere. Unexpectedly warm and social — a place to meet fellow animal lovers and their furry companions.",
+      "source": "Queensland Symphony Orchestra",
+      "description": "Two preview performances of the Maestro Series featuring Rachmaninov's Piano Concerto No. 2, Shostakovich's 5th Symphony, and contemporary work by Cathy Milliken. Chance to experience the program before the main Saturday performance.",
       "tags": [
-        "community",
-        "dogs",
-        "family",
-        "outdoor",
-        "social"
+        "classical",
+        "orchestral",
+        "concert",
+        "preview"
       ],
-      "score": 5,
-      "image": "https://www.eventbrite.com.au/images/dog-lovers-festival.jpg",
-      "datetime_iso": "2026-05-16T09:00:00"
+      "score": 7,
+      "datetime_iso": "2026-05-13T19:00:00",
+      "datetime_end_iso": "",
+      "image": "https://qso.com.au/images/maestro-series-preview.jpg"
     },
     {
-      "title": "Botanic Gardens Free Guided Walks",
-      "datetime": "Multiple times throughout the week (check website)",
-      "location": "Mt Coot-tha Botanic Gardens / City Botanic Gardens",
-      "link": "https://www.brisbane.qld.gov.au",
-      "category": "Community / Other",
-      "cost": "Free",
-      "source": "Brisbane City Council",
-      "description": "Free volunteer-led guided walks through Brisbane's botanic gardens. No booking required for small groups. Meet fellow nature enthusiasts with a love for plants and outdoor exploration. Low-key, social, nature-focused.",
-      "tags": [
-        "nature",
-        "outdoor",
-        "free",
-        "community",
-        "walking",
-        "botanical"
-      ],
-      "score": 6,
-      "image": "https://www.brisbane.qld.gov.au/images/botanic-gardens.jpg",
-      "datetime_iso": ""
-    },
-    {
-      "title": "Brisbane Photography Meetup — Photowalks",
-      "datetime": "Multiple sessions throughout the week (check meetup page)",
-      "location": "Various Brisbane locations",
-      "link": "https://www.meetup.com/brisbane-digital-photography-meetup-group/",
-      "category": "Workshop / Class",
-      "cost": "Free",
-      "source": "Meetup.com",
-      "description": "Laid-back, friendly group of photographers and videographers exploring Brisbane and surrounding areas while capturing moments and learning new skills. Regular photowalks, themed sessions, and creative opportunities — free to attend.",
-      "tags": [
-        "photography",
-        "creative",
-        "community",
-        "free",
-        "recurring",
-        "hands-on"
-      ],
-      "score": 6,
-      "image": "",
-      "datetime_iso": ""
-    },
-    {
-      "title": "ADFAS Lecture: 'The World's Greatest Paintings — 200 Years of the National Gallery'",
-      "datetime": "Wed 14 May, 7:30 PM | Thu 15 May, 10:00 AM",
-      "location": "Royal Queensland Art Society (Wed) / State Library of Queensland Auditorium 1 (Thu)",
-      "link": "https://www.artsnational.au/societies/brisbane/",
-      "category": "Public Lecture",
-      "cost": "Ticketed (contact ADFAS for pricing)",
-      "source": "Arts and Documentary Film Society (ADFAS)",
-      "description": "Lecturer Simon Whitehouse explores the National Gallery's 200-year history (1824–present), including early suffragette sabotage, bombs, theft, and the story of the original 'Angerstein 38' paintings. Intellectually engaging art history lecture for curious audiences.",
-      "tags": [
-        "art history",
-        "lecture",
-        "cultural",
-        "intellectual"
-      ],
-      "score": 6,
-      "image": "https://www.artsnational.au/images/national-gallery-lecture.jpg",
-      "datetime_iso": "2026-05-14T19:30:00"
-    },
-    {
-      "title": "Kids Tour: Presence & Play (Family Art Tour @ GOMA)",
-      "datetime": "Sat 16 May, 8:30 AM",
+      "title": "GOMA Kids Tour: Presence & Play",
+      "datetime": "Sat 16 May, 8:30–10:00 AM",
       "location": "Gallery of Modern Art (GOMA), South Brisbane",
       "link": "https://www.qagoma.qld.gov.au/event/kids-tours-presence-and-play-2026-07-04",
       "category": "Workshop / Class",
       "cost": "From $19",
-      "source": "QAGOMA",
-      "description": "Multi-sensory art tour of Olafur Eliasson's Presence designed for families with children. Guided through playful experiences that spark imagination and build connection, followed by exclusive crowd-free exhibition viewing.",
+      "source": "Gallery of Modern Art",
+      "description": "Multi-sensory family tour of Olafur Eliasson: Presence designed for children. Guided through playful art experiences that spark imagination and build connection, plus exclusive exhibition viewing in a crowd-free setting before public opening.",
       "tags": [
         "art",
         "family",
         "workshop",
-        "immersive",
-        "children"
+        "interactive"
       ],
-      "score": 5,
-      "image": "https://www.qagoma.qld.gov.au/images/kids-tour.jpg",
-      "datetime_iso": "2026-05-16T08:30:00"
+      "score": 7,
+      "datetime_iso": "2026-05-16T08:30:00",
+      "datetime_end_iso": "2026-05-16T10:00:00",
+      "image": "https://www.qagoma.qld.gov.au/images/kids-tour-presence.jpg"
     },
     {
-      "title": "Inspiring Future Skills Symposium 2026 — Brisbane",
-      "datetime": "Mon 11 May, 8:30 AM",
-      "location": "QUT Kelvin Grove Campus, Kelvin Grove",
-      "link": "https://www.eventbrite.com.au/e/inspiring-future-skills-symposium-2026-brisbane-tickets-1983053099202",
+      "title": "Brisbane Comedy Festival: Shad & Pete Save the World!",
+      "datetime": "2–23 May 2026 (late-night shows)",
+      "location": "Brisbane Powerhouse, New Farm",
+      "link": "https://brisbanepowerhouse.org/events/",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Brisbane Powerhouse",
+      "description": "Late-night raw variety comedy show running throughout the festival. Intimate, irreverent, unpredictable format suited to those seeking experimental comedy in an atmospheric independent venue.",
+      "tags": [
+        "comedy",
+        "variety",
+        "experimental",
+        "late-night"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-02",
+      "datetime_end_iso": "2026-05-23",
+      "image": "https://brisbanepowerhouse.org/images/shad-pete.jpg"
+    },
+    {
+      "title": "SLQ: Dearly Departed: Death in Life — Exhibition",
+      "datetime": "Ongoing through Autumn 2026",
+      "location": "State Library of Queensland (SLQ), South Brisbane",
+      "link": "https://www.slq.qld.gov.au/autumn",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "State Library of Queensland",
+      "description": "Thought-provoking exhibition engaging with death, dying, memory and remembrance through tarot symbolism and visual storytelling. Includes hands-on workshop inviting participants to create symbolic artworks using tarot archetypes.",
+      "tags": [
+        "exhibition",
+        "contemplative",
+        "art",
+        "free"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-03-01",
+      "datetime_end_iso": "2026-05-31",
+      "image": "https://www.slq.qld.gov.au/images/dearly-departed.jpg"
+    },
+    {
+      "title": "Queensland Museum Lunchtime Lectures",
+      "datetime": "Thursdays at lunchtime (check for May dates; next confirmed: 28 May)",
+      "location": "Queensland Museum Kurilpa, South Brisbane",
+      "link": "https://www.museum.qld.gov.au/kurilpa/whats-on/lunchtime-lectures/",
       "category": "Public Lecture",
+      "cost": "Free",
+      "source": "Queensland Museum",
+      "description": "Recurring lunchtime lecture series where Queensland Museum staff present research and behind-the-scenes work. Topics include restoration projects and collections history. Casual, community-oriented format ideal for curious lunch-breakers.",
+      "tags": [
+        "lecture",
+        "museum",
+        "research",
+        "free"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-28T12:00:00",
+      "datetime_end_iso": "",
+      "image": "https://www.museum.qld.gov.au/images/lunchtime-lectures.jpg"
+    },
+    {
+      "title": "Museum of Brisbane — Permanent & Current Exhibitions",
+      "datetime": "Daily (open all week)",
+      "location": "Museum of Brisbane, City Hall, Brisbane CBD",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Museum of Brisbane",
+      "description": "Permanent and rotating exhibitions exploring Brisbane's history, culture and identity. Rooftop location in City Hall provides beautiful setting. Recurring walking tours also available Wednesdays and Saturdays.",
+      "tags": [
+        "history",
+        "exhibition",
+        "free",
+        "cultural"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": "https://www.museumofbrisbane.com.au/images/exhibitions.jpg"
+    },
+    {
+      "title": "Dog Lovers Festival Brisbane 2026",
+      "datetime": "Sat 16 – Sun 17 May, 9:00 AM – 5:00 PM",
+      "location": "Brisbane Showgrounds, Bowen Hills",
+      "link": "https://www.eventbrite.com.au/e/dog-lovers-festival-brisbane-2026-tickets-1236807668029",
+      "category": "Community / Other",
       "cost": "Ticketed",
       "source": "Eventbrite",
-      "description": "Teacher-focused (but open to anyone interested in technology and education) professional learning on embedding future skills — AI, big data, quantum computing, robotics, augmented reality — into teaching and learning. Brings together education leaders, curriculum innovators, and industry experts.",
+      "description": "Queensland's largest dog festival returns to the Showgrounds with hundreds of beautiful dogs across dozens of breeds, meet-and-greets, dog brand shopping, breed showcases and adoption zones. A genuinely community-spirited outdoor event attracting families and animal-loving people who naturally strike up conversations.",
       "tags": [
-        "education",
-        "ai",
+        "community",
+        "animals",
+        "outdoors",
+        "family"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-16T09:00:00",
+      "datetime_end_iso": "2026-05-17T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Riverside Social Walk",
+      "datetime": "Thu 14 May, 5:30 PM",
+      "location": "Brisbane Riverside (meeting point on Meetup)",
+      "link": "https://www.meetup.com/Brisbane-Riverside-Social-Walkers/",
+      "category": "Social / Meetup",
+      "cost": "Free",
+      "source": "Meetup",
+      "description": "Recurring weekly social walk along Brisbane Riverside with the Brisbane Riverside Social Walkers community. A relaxed, low-key outdoor meetup attracting curious and active people interested in gentle exercise and conversation.",
+      "tags": [
+        "meetup",
+        "walking",
+        "outdoor",
+        "free"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-14T17:30:00",
+      "datetime_end_iso": "2026-05-14T19:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Boardgamers – Saturday Night",
+      "datetime": "Sat 16 May, 6:30 PM",
+      "location": "Brisbane (venue on Meetup)",
+      "link": "https://www.meetup.com/Brisbane-Boardgamers/",
+      "category": "Social / Meetup",
+      "cost": "$2",
+      "source": "Meetup",
+      "description": "Long-running Brisbane Boardgamers community meets for an evening of tabletop and strategy games. Very low cost, conversational, and attracts curious, analytical, game-loving people of mixed ages and backgrounds — great for naturally meeting new people.",
+      "tags": [
+        "meetup",
+        "games",
+        "social",
+        "low-cost"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-16T18:30:00",
+      "datetime_end_iso": "2026-05-16T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Social Sport Group – Wednesday & Sunday",
+      "datetime": "Wed 13 May, 7:00 PM; Sun 17 May, 2:00 PM",
+      "location": "Brisbane (venue on Meetup)",
+      "link": "https://www.meetup.com/Brisbane-Social-Sport-Group/",
+      "category": "Social / Meetup",
+      "cost": "Free / Low cost",
+      "source": "Meetup",
+      "description": "Recurring community social sports meetup attracting a friendly, mixed-age crowd interested in casual team games and outdoor activity. Natural conversation starter and great for meeting new people while getting active.",
+      "tags": [
+        "meetup",
+        "sports",
+        "social",
+        "outdoor"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-13T19:00:00",
+      "datetime_end_iso": "2026-05-13T20:30:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Language Exchange Friday",
+      "datetime": "Fri 15 May (recurring weekly)",
+      "location": "Brisbane CBD (venue on Eventbrite)",
+      "link": "https://www.eventbrite.com.au/d/australia/brisbane/",
+      "category": "Social / Meetup",
+      "cost": "Free / Low cost",
+      "source": "Eventbrite",
+      "description": "Recurring weekly language exchange and cultural meetup in Brisbane. A naturally conversational community attracting internationally-minded, culturally curious people interested in learning languages and making friends. Ideal for striking up conversations before and after.",
+      "tags": [
+        "meetup",
+        "languages",
+        "culture",
+        "free"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-15T19:00:00",
+      "datetime_end_iso": "2026-05-15T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Data Science & Analytics Meetup – Brisbane Friday",
+      "datetime": "Fri 15 May (recurring)",
+      "location": "Brisbane (venue on Eventbrite)",
+      "link": "https://www.eventbrite.com.au/d/australia/brisbane/",
+      "category": "Social / Meetup",
+      "cost": "Free / Low cost",
+      "source": "Eventbrite",
+      "description": "Recurring Eventbrite meetup for data, analytics and tech-curious professionals and enthusiasts to connect and discuss ideas. More conversational and community-focused than corporate — good for intellectually engaged people to exchange ideas and network.",
+      "tags": [
+        "meetup",
+        "data",
         "technology",
-        "workshop",
-        "innovation"
+        "free"
       ],
-      "score": 5,
-      "image": "https://www.eventbrite.com.au/images/future-skills-symposium.jpg",
-      "datetime_iso": "2026-05-11T08:30:00"
+      "score": 6,
+      "datetime_iso": "2026-05-15T18:00:00",
+      "datetime_end_iso": "2026-05-15T20:00:00",
+      "image": ""
     },
     {
-      "title": "Vertigo Rooftop Dining — Brisbane Powerhouse",
-      "datetime": "Thu 14 May – Sun 17 May (6:30–9:00 PM Thu–Sat, 5:30–8:00 PM Sun)",
-      "location": "Brisbane Powerhouse Rooftop, New Farm",
-      "link": "https://brisbanepowerhouse.org/neighbourhood/",
-      "category": "Community / Other",
-      "cost": "Premium ticketed",
-      "source": "Brisbane Powerhouse",
-      "description": "High-adventure dining experience: guests don safety harnesses, climb to rooftop seats with 17-metre drops beneath them, and enjoy a locally sourced meal from Bar Alto. Option to descend via rope dropline down the building's façade. Uniquely Brisbane and genuinely memorable.",
-      "tags": [
-        "adventure",
-        "dining",
-        "experience",
-        "unique",
-        "atmospheric"
-      ],
-      "score": 5,
-      "image": "https://brisbanepowerhouse.org/images/vertigo.jpg",
-      "datetime_iso": "2026-05-14T21:00:00"
-    },
-    {
-      "title": "Double Take — Australian Cinémathèque Film Program",
-      "datetime": "Throughout the week (1 May – 1 July 2026)",
-      "location": "Australian Cinémathèque, Gallery of Modern Art, South Brisbane",
-      "link": "https://www.qagoma.qld.gov.au/stories/top-5-things-to-see-and-do-at-qagoma-in-may-2026",
+      "title": "The Drover's Wife – The Opera (World Premiere)",
+      "datetime": "May 2026 (dates TBD – check QPAC schedule)",
+      "location": "Glasshouse Theatre, QPAC, South Brisbane",
+      "link": "https://www.qpac.com.au/",
       "category": "Arts / Exhibition",
       "cost": "Ticketed",
-      "source": "QAGOMA",
-      "description": "Curated cinema program at GOMA's Cinémathèque — a fixture for film lovers seeking thoughtful, artistically selected screenings in an intimate gallery cinema setting.",
-      "tags": [
-        "film",
-        "cinema",
-        "art-house",
-        "independent"
-      ],
-      "score": 5,
-      "image": "https://www.qagoma.qld.gov.au/images/double-take.jpg",
-      "datetime_iso": "2026-05-01"
-    },
-    {
-      "title": "MJ The Musical",
-      "datetime": "Multiple shows throughout the week until 24 May",
-      "location": "Lyric Theatre, QPAC, South Brisbane",
-      "link": "https://www.qpac.com.au",
-      "category": "Concert / Music",
-      "cost": "Ticketed (varies)",
       "source": "QPAC",
-      "description": "Olivier and four-time Tony Award-winning musical set in 1992, offering a behind-the-scenes look at Michael Jackson's Dangerous World Tour creation through an MTV journalist's lens. Genuinely spectacular live performance experience.",
+      "description": "World premiere of a new opera based on Henry Lawson's iconic Australian short story 'The Drover's Wife', performed at QPAC's stunning Glasshouse Theatre. A rare opportunity to witness Brisbane as the birthplace of a major new operatic work.",
       "tags": [
-        "musical",
+        "opera",
         "theatre",
-        "live performance"
+        "australian",
+        "premiere"
       ],
-      "score": 5,
-      "image": "https://www.qpac.com.au/images/mj-musical.jpg",
-      "datetime_iso": "2026-05-24"
+      "score": 6,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
     },
     {
-      "title": "Brisbane Comedy Festival — Multiple Shows",
-      "datetime": "Throughout the week (24 April – 24 May, peak performances this week)",
-      "location": "Brisbane Powerhouse (New Farm), The Tivoli, Fortitude Music Hall, The Princess Theatre (Woolloongabba)",
-      "link": "https://www.brisbanecomedyfestival.com.au",
+      "title": "The Sapphires",
+      "datetime": "28 Apr – 24 May (running all week)",
+      "location": "Bille Brown Theatre, Brisbane",
+      "link": "https://www.broadsheet.com.au/brisbane/",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "Broadsheet Brisbane",
+      "description": "The Sapphires tells the joyful, moving and musically rich story of four Aboriginal women who sang soul music for American troops in Vietnam. A beloved musical theatre work celebrating friendship, music and cultural resilience.",
+      "tags": [
+        "theatre",
+        "musical",
+        "australian",
+        "cultural"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-04-28",
+      "datetime_end_iso": "2026-05-24",
+      "image": ""
+    },
+    {
+      "title": "Jean Barth — 'Screen Tests'",
+      "datetime": "2–30 May (open during gallery hours; all week)",
+      "location": "Milani Gallery, West End",
+      "link": "https://milanigallery.com.au/exhibitions/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Milani Gallery",
+      "description": "Jean Barth's *Screen Tests* exhibition at one of Brisbane's most respected contemporary art galleries in West End. Milani Gallery regularly showcases significant Australian artists in a professional, intellectually engaged space.",
+      "tags": [
+        "contemporary art",
+        "free",
+        "gallery"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-02",
+      "datetime_end_iso": "2026-05-30",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — Geraldine Hickey: A Weight Off My Chest",
+      "datetime": "Thu 14–Sun 17 May, varies",
+      "location": "Princess Theatre, Woolloongabba",
+      "link": "https://www.theprincesstheatre.com.au/events",
       "category": "Concert / Music",
-      "cost": "Ticketed (varies by show)",
-      "source": "Brisbane Comedy Festival",
-      "description": "City-wide comedy festival featuring bold solo shows, late-night performances, and genre-bending acts — from satire and silliness to big-hearted storytelling. Browse individual shows for intimate solo performances at smaller venues.",
+      "cost": "Ticketed",
+      "source": "Princess Theatre / Brisbane Comedy Festival",
+      "description": "Beloved Australian stand-up comedian Geraldine Hickey performs *A Weight Off My Chest* across four nights at the Princess Theatre—an intimate theatre setting with a seasoned, accomplished comedic voice.",
       "tags": [
         "comedy",
         "stand-up",
-        "festival",
-        "entertainment"
+        "live"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-14",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — Ray O'Leary: I Can See O'Leary Now The Ray Has Gone",
+      "datetime": "Fri 15–Sun 17 May, varies (few tickets left)",
+      "location": "Princess Theatre, Woolloongabba",
+      "link": "https://www.theprincesstheatre.com.au/events",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Princess Theatre / Brisbane Comedy Festival",
+      "description": "New Zealand comedian Ray O'Leary brings his show to the Princess Theatre for three nights. Few tickets remaining, so availability is limited.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "live"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-15",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — Pete Helliar: An International Kerfuffle",
+      "datetime": "Sat 16–Sun 17 May, varies",
+      "location": "Princess Theatre, Woolloongabba",
+      "link": "https://www.theprincesstheatre.com.au/events",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Princess Theatre / Brisbane Comedy Festival",
+      "description": "High-profile Australian comedian Pete Helliar performs *An International Kerfuffle* across two nights at the Princess Theatre—a fun, accessible weekend comedy option at an intimate venue.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "live"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-16",
+      "datetime_end_iso": "2026-05-17",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival: Bron Lewis",
+      "datetime": "Sun 17 May, 6:00 PM",
+      "location": "Brisbane Powerhouse – Underground Theatre, New Farm",
+      "link": "https://brisbanepowerhouse.org/events/bron-lewis/",
+      "category": "Concert / Music",
+      "cost": "From $30",
+      "source": "Brisbane Powerhouse",
+      "description": "Stand-up comedy show by Bron Lewis, a Brisbane-based performer exploring the chaos of motherhood, three kids, and a new puppy. Intimate show in the Underground Theatre, one of Brisbane's most atmospheric comedy venues.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "theatre",
+        "local"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-17T18:00:00",
+      "datetime_end_iso": "",
+      "image": "https://brisbanepowerhouse.org/images/bron-lewis.jpg"
+    },
+    {
+      "title": "Suitcase Rummage - Brisbane/Meanjin Market",
+      "datetime": "Sun 17 May, 12:00 PM",
+      "location": "Reddacliffe Place (top of Queen Street Mall), Brisbane City",
+      "link": "https://events.humanitix.com/brisbane-meanjin-may-17th-2026",
+      "category": "Community / Other",
+      "cost": "$30",
+      "source": "Suitcase Rummage",
+      "description": "A curated vintage and secondhand market featuring independent vendors selling clothing, collectibles, and bric-a-brac at Brisbane Square. Popular community event attracting browsers, collectors, and creative types looking for unique finds.",
+      "tags": [
+        "vintage",
+        "market",
+        "community",
+        "secondhand"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-17T12:00:00",
+      "datetime_end_iso": "2026-05-17T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — Jason Leong",
+      "datetime": "Thu 14 May, time TBA",
+      "location": "Fortitude Music Hall, Fortitude Valley",
+      "link": "https://www.thefortitude.com.au/whats-on",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Fortitude Music Hall / Brisbane Comedy Festival",
+      "description": "Stand-up comedian Jason Leong performs at Fortitude Music Hall as part of the Brisbane Comedy Festival program.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "live"
       ],
       "score": 5,
-      "image": "https://www.brisbanecomedyfestival.com.au/images/festival-2026.jpg",
-      "datetime_iso": "2026-04-24"
+      "datetime_iso": "2026-05-14",
+      "datetime_end_iso": "2026-05-14",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Comedy Festival — VHS",
+      "datetime": "Thu 14–Sun 17 May, 7:00 PM (varies)",
+      "location": "Brisbane Powerhouse, Graffiti Room, New Farm",
+      "link": "https://premier.ticketek.com.au/shows/genre.aspx?c=2693",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Brisbane Powerhouse / Ticketek",
+      "description": "*VHS* plays the intimate Graffiti Room at Brisbane Powerhouse—one of the Brisbane Comedy Festival's designated stages in the heritage-listed Powerhouse building on the Turbine level. Atmospheric, small-venue comedy-theatre setting.",
+      "tags": [
+        "comedy",
+        "theatre",
+        "live"
+      ],
+      "score": 5,
+      "datetime_iso": "2026-05-14T19:00:00",
+      "datetime_end_iso": "2026-05-17T18:00:00",
+      "image": ""
+    },
+    {
+      "title": "Audrey Hobert — The Staircase To Stardom Tour",
+      "datetime": "Sat 16 May, time TBA",
+      "location": "Fortitude Music Hall, Fortitude Valley",
+      "link": "https://www.thefortitude.com.au/whats-on",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Fortitude Music Hall",
+      "description": "Audrey Hobert performs *The Staircase To Stardom Tour* at Fortitude Music Hall.",
+      "tags": [
+        "live music"
+      ],
+      "score": 5,
+      "datetime_iso": "2026-05-16",
+      "datetime_end_iso": "2026-05-16",
+      "image": ""
     }
   ]
 }
