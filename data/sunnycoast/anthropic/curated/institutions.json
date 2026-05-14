@@ -1,0 +1,328 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "anthropic",
+  "tier": "institutions",
+  "week_start": "2026-05-11",
+  "week_end": "2026-05-17",
+  "raw_sha256": "b613e5bd893e34e8d685f939302c3e4352a1cce44bb290131a45573d7dcf574d",
+  "events": [
+    {
+      "title": "Ocean Film Festival Tour 2026",
+      "datetime": "Wed 13 May, 7:00 PM",
+      "location": "The J, Noosa Junction, Noosa Heads",
+      "link": "https://www.thej.com.au/ocean-film-festival-2026/",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "The J Noosa",
+      "description": "Experience the best in ocean adventure, surfing, conservation, and natural wonder with this annual touring film festival, ideal for outdoor and ocean lovers, and a social crowd.",
+      "tags": [
+        "film",
+        "adventure",
+        "conservation",
+        "ocean"
+      ],
+      "score": 10,
+      "datetime_iso": "2026-05-13T19:00:00",
+      "datetime_end_iso": "2026-05-13T22:00:00",
+      "image": "https://www.thej.com.au/wp-content/uploads/ocean-film-festival-2023-large.jpg"
+    },
+    {
+      "title": "Ocean Film Festival Tour 2026",
+      "datetime": "Thu 14 May, 7:00 PM",
+      "location": "The J, Noosa Junction, Noosa Heads",
+      "link": "https://www.thej.com.au/ocean-film-festival-2026/",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "The J Noosa",
+      "description": "A second screening of the popular annual touring film festival showcasing ocean adventure, surfing, conservation, and natural wonder, attracting a warm social crowd.",
+      "tags": [
+        "film",
+        "adventure",
+        "conservation",
+        "ocean"
+      ],
+      "score": 10,
+      "datetime_iso": "2026-05-14T19:00:00",
+      "datetime_end_iso": "2026-05-14T22:00:00",
+      "image": "https://www.thej.com.au/wp-content/uploads/ocean-film-festival-2023-large.jpg"
+    },
+    {
+      "title": "Silent Film Screening with Live Organ",
+      "datetime": "Sat 16 May, 12:00 PM",
+      "location": "Majestic Theatre, Pomona",
+      "link": "https://themajestictheatre.com.au/eventsnew/",
+      "category": "Arts / Exhibition",
+      "cost": "$15",
+      "source": "Majestic Theatre Pomona",
+      "description": "Step back in time at the historic Majestic Theatre for a silent film screening, brought to life with a live organist, offering a unique early 20th-century cinema experience.",
+      "tags": [
+        "film",
+        "live music",
+        "history",
+        "unique"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-16T12:00:00",
+      "datetime_end_iso": "2026-05-16T14:00:00",
+      "image": "https://themajestictheatre.com.au/wp-content/uploads/2023/11/majestic-theatre-pomona-750x450-1.jpg"
+    },
+    {
+      "title": "Turn Kitchen Scraps into Garden Gold (Mulch & Compost Workshop)",
+      "datetime": "Mon 11 – Sun 17 May (various times)",
+      "location": "Various Sunshine Coast Library branches",
+      "link": "https://library.sunshinecoast.qld.gov.au/whats-on/at-the-library",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Sunshine Coast Libraries",
+      "description": "A free, hands-on community workshop by Sunshine Coast Libraries, teaching practical skills for making mulch and compost from kitchen scraps to enrich your garden.",
+      "tags": [
+        "gardening",
+        "sustainability",
+        "workshop",
+        "free"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17",
+      "image": "https://library.sunshinecoast.qld.gov.au/Portals/0/Images/HomePage/banner-2023-sustainability-workshops-v3.jpg?ver=2023-04-20-131742-510"
+    },
+    {
+      "title": "Turn a Tote into Wearable Art (Fabric Painting Workshop)",
+      "datetime": "Mon 11 – Thu 14 May (various times)",
+      "location": "Various Sunshine Coast Library branches",
+      "link": "https://library.sunshinecoast.qld.gov.au/whats-on/at-the-library",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Sunshine Coast Libraries",
+      "description": "Unleash your creativity in this free, hands-on fabric painting workshop, where you'll learn techniques to transform a plain tote bag into a unique piece of wearable art.",
+      "tags": [
+        "art",
+        "craft",
+        "workshop",
+        "creative"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-14"
+    },
+    {
+      "title": "Dive into the History of Local Fishing Spots (Going Coastal)",
+      "datetime": "Fri 15 – Sun 17 May (starts this week)",
+      "location": "Various Sunshine Coast Library branches",
+      "link": "https://library.sunshinecoast.qld.gov.au/whats-on/at-the-library",
+      "category": "Public Lecture",
+      "cost": "Free",
+      "source": "Sunshine Coast Libraries",
+      "description": "An intellectually engaging local history program exploring the past of Sunshine Coast's fishing spots, perfect for curious minds interested in regional heritage and place-making.",
+      "tags": [
+        "history",
+        "local",
+        "lecture",
+        "community"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-15",
+      "datetime_end_iso": "2026-05-17"
+    },
+    {
+      "title": "Calling All Little Scientists – Butterfly Garden Insect Survey",
+      "datetime": "Ongoing (this week)",
+      "location": "Butterfly Garden, Sunshine Coast",
+      "link": "https://events.sunshinecoast.qld.gov.au/events/arts-culture",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Sunshine Coast Council Events",
+      "description": "Join a hands-on science and nature event where participants learn how scientists study insects, setting up survey lines and observing in the new Butterfly Garden.",
+      "tags": [
+        "science",
+        "nature",
+        "workshop",
+        "outdoor"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "",
+      "image": "https://events.sunshinecoast.qld.gov.au/Portals/0/GalleryImages/ButterflyGarden/Butterfly%20Garden%20Insect%20Survey%2072DPI.jpg"
+    },
+    {
+      "title": "Historians Tell All – Uncover the Region's Hidden History",
+      "datetime": "This week (date TBC)",
+      "location": "Sunshine Coast",
+      "link": "https://events.sunshinecoast.qld.gov.au/events/arts-culture",
+      "category": "Public Lecture",
+      "cost": "Free or low-cost",
+      "source": "Sunshine Coast Council Events",
+      "description": "Two local experts share insights into the Sunshine Coast's hidden history, offering an intimate and intellectually stimulating community talk for curious locals.",
+      "tags": [
+        "history",
+        "local",
+        "lecture",
+        "community"
+      ],
+      "score": 9,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "",
+      "image": "https://events.sunshinecoast.qld.gov.au/Portals/0/GalleryImages/General/History%20Panel.jpg"
+    },
+    {
+      "title": "Lind Lane Theatre — Annual General Meeting",
+      "datetime": "Tue 12 May, 7:30 PM",
+      "location": "Lind Lane Theatre, Nambour",
+      "link": "https://www.lindlane.com.au/whats-on",
+      "category": "Community / Other",
+      "cost": "Free (members)",
+      "source": "Lind Lane Theatre",
+      "description": "Attend the AGM of Nambour's community theatre; a welcoming entry point for members and those interested in engaging with this small, intimate creative community.",
+      "tags": [
+        "theatre",
+        "community",
+        "social",
+        "free"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-12T19:30:00",
+      "datetime_end_iso": "2026-05-12T21:00:00",
+      "image": "https://www.lindlane.com.au/wp-content/uploads/2021/04/Lind-Lane-Theatre_Front-compressed-scaled.jpg"
+    },
+    {
+      "title": "Melbourne Comedy Festival Roadshow",
+      "datetime": "Sat 16 May",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/melbourne-comedy-festival-roadshow/",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "The Events Centre Caloundra",
+      "description": "Enjoy a night of top-tier stand-up with a curated line-up of Australian and international comedians as the Melbourne International Comedy Festival Roadshow tours through Caloundra (18+).",
+      "tags": [
+        "comedy",
+        "live performance",
+        "entertainment",
+        "ticketed"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-16T19:00:00",
+      "datetime_end_iso": "2026-05-16T22:00:00",
+      "image": "https://theeventscentre.com.au/wp-content/uploads/MCRF_2024_website-thumb-999x666-1.jpg"
+    },
+    {
+      "title": "Sunshine Coast Symphony Orchestra — Symphonic Horizons",
+      "datetime": "Sun 17 May (matinee)",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/symphonic-horizons-scso/",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "The Events Centre Caloundra",
+      "description": "Embark on a musical journey with the SCSO, featuring pieces capturing the essence of various places, including the premiere of Clifford Bradley's 'Sunshine Coast Symphony'.",
+      "tags": [
+        "classical music",
+        "orchestra",
+        "local art",
+        "matinee"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-17T14:00:00",
+      "datetime_end_iso": "2026-05-17T16:00:00",
+      "image": "https://theeventscentre.com.au/wp-content/uploads/SCSO-Symphonic-Horizons-1920x1080-1.jpg"
+    },
+    {
+      "title": "Local Contemporary Art Prize 2026",
+      "datetime": "Through Sun 17 May",
+      "location": "Caloundra Regional Gallery, Caloundra",
+      "link": "https://gallery.sunshinecoast.qld.gov.au/exhibitions/local-contemporary-art-prize-2026/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Caloundra Regional Gallery",
+      "description": "This annual exhibition showcases contemporary visual art from emerging and established Sunshine Coast artists, offering a final week to explore local talent.",
+      "tags": [
+        "art",
+        "exhibition",
+        "local artists",
+        "free"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17T17:00:00",
+      "image": "https://gallery.sunshinecoast.qld.gov.au/Portals/0/HeroImages/Gallery/LACP_Hero.jpg"
+    },
+    {
+      "title": "Local Student Art Prize 2026",
+      "datetime": "Through Sun 17 May",
+      "location": "Caloundra Regional Gallery Artroom, Caloundra",
+      "link": "https://gallery.sunshinecoast.qld.gov.au/art-prizes/local-student-art-prize",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Caloundra Regional Gallery",
+      "description": "A companion exhibition to the main art prize, featuring 2D works by up-and-coming student artists from the Sunshine Coast region, in its final week.",
+      "tags": [
+        "art",
+        "exhibition",
+        "student art",
+        "free"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-17T17:00:00",
+      "image": "https://gallery.sunshinecoast.qld.gov.au/Portals/0/HeroImages/Gallery/StudentArtPrize_Hero.jpg"
+    },
+    {
+      "title": "Glimpse Exhibition by Cécile Bell",
+      "datetime": "Through Sat 16 May",
+      "location": "Maroochydore Library",
+      "link": "https://library.sunshinecoast.qld.gov.au/whats-on/at-the-library",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Sunshine Coast Libraries",
+      "description": "This is the final week to view 'Glimpse', an exhibition by artist Cécile Bell, displayed at Maroochydore Library during opening hours.",
+      "tags": [
+        "art",
+        "exhibition",
+        "local artist",
+        "free"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "2026-05-16T17:00:00",
+      "image": "https://library.sunshinecoast.qld.gov.au/Portals/0/Images/whats-on/cecile-bell-exhibition-website-tile-800x450.jpg"
+    },
+    {
+      "title": "Intrigues — Bankfoot House Collection Exhibition",
+      "datetime": "Ongoing (this week)",
+      "location": "Sunshine Coast Council heritage sites",
+      "link": "https://events.sunshinecoast.qld.gov.au/events/arts-culture",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Sunshine Coast Council Events",
+      "description": "Explore 'Intrigues', a captivating exhibition showcasing objects from the historically significant Bankfoot House Collection, ideal for those interested in local heritage and material culture.",
+      "tags": [
+        "history",
+        "heritage",
+        "exhibition",
+        "free"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-11",
+      "datetime_end_iso": "",
+      "image": "https://events.sunshinecoast.qld.gov.au/Portals/0/GalleryImages/BankfootHouse/Intrigues%20Small.jpg"
+    },
+    {
+      "title": "Majestic Theatre Pomona — Additional Event",
+      "datetime": "Sat 16 May, TBC",
+      "location": "Majestic Theatre, Pomona",
+      "link": "https://themajestictheatre.com.au/eventsnew/",
+      "category": "Community / Other",
+      "cost": "TBC",
+      "source": "Majestic Theatre Pomona",
+      "description": "The Majestic Theatre's events calendar lists a second event for May 16, which could be anything from a film theme night to a live performance. Check the website for details.",
+      "tags": [
+        "community",
+        "live entertainment",
+        "culture",
+        "tbc"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-16",
+      "datetime_end_iso": "",
+      "image": "https://themajestictheatre.com.au/wp-content/uploads/2023/11/majestic-theatre-pomona-750x450-1.jpg"
+    }
+  ]
+}

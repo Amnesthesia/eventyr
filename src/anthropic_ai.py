@@ -171,24 +171,26 @@ INDEPENDENTS — niche, community-facing venues and groups whose events rarely a
   indie galleries, hackerspaces/makerspaces, board-game communities, philosophy
   groups, language exchange groups, creative spaces, bars/cafes with regular events.
 
-Return ONLY a JSON object with exactly three keys: "aggregators", "institutions",
-"independents". Each key maps to an array of source description strings in the format
-"Source Name (url)" or "Source Name — description" if no URL is known.
+Your response MUST be a single raw JSON object and NOTHING else — no preamble, no
+explanation, no reasoning, no markdown, no code fences. Do not write any text before
+or after the JSON. Your entire response is the JSON object, starting with {{ and
+ending with }}.
 
-Example shape:
+The object has exactly three keys: "aggregators", "institutions", "independents".
+Each key maps to an array of source description strings: "Source Name (url)".
+
+Example (your full response should look exactly like this):
 {{
-  "aggregators":  ["Eventbrite Sydney (eventbrite.com.au)", ...],
-  "institutions": ["City of Sydney (cityofsydney.nsw.gov.au/events)", ...],
-  "independents": ["Gleebooks bookshop events (gleebooks.com.au/events)", ...]
-}}
-
-No markdown, no explanation — just the JSON object."""
+  "aggregators":  ["Eventbrite {city_name} (eventbrite.com.au)", ...],
+  "institutions": ["State Library (slq.qld.gov.au)", ...],
+  "independents": ["Local Bookshop (bookshop.com.au/events)", ...]
+}}"""
 
     client = anthropic.Anthropic(api_key=api_key)
     print(f"[anthropic] Discovering event sources for {city_name}…")
     response = client.messages.create(
         model=DISCOVERY_MODEL,
-        max_tokens=4000,
+        max_tokens=16000,
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 20}],
         system=system_prompt,
         messages=[{

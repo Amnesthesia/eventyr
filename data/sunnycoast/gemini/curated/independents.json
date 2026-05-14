@@ -1,0 +1,370 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "gemini",
+  "tier": "independents",
+  "week_start": "2026-05-11",
+  "week_end": "2026-05-17",
+  "raw_sha256": "3a44a7b3ba74c15bbf74a81d7bbf44ffb62ca21a9dcd9a24f5d51285cc257103",
+  "events": [
+    {
+      "title": "Stoicism Sunshine Coast Discussion Group",
+      "datetime": "Sun 17 May, 11:00 AM - 12:30 PM",
+      "location": "Maroochy Regional Bushland Botanic Garden, Tanawha",
+      "link": "https://www.stoicismsunshinecoast.com.au/dates-readings/",
+      "category": "Social / Meetup",
+      "cost": "Free (donations welcome)",
+      "source": "Stoicism Sunshine Coast",
+      "description": "Join the Stoicism Sunshine Coast discussion group for an engaging conversation on Stoic philosophy and its practical application to modern life, fostering thoughtful dialogue in a natural setting.",
+      "tags": [
+        "philosophy",
+        "discussion",
+        "community",
+        "free"
+      ],
+      "score": 10,
+      "datetime_iso": "2026-05-17T11:00:00",
+      "datetime_end_iso": "2026-05-17T12:30:00",
+      "image": ""
+    },
+    {
+      "title": "Art with Heart - MicroGallery x Little May",
+      "datetime": "Ongoing until Nov 4, 2026, 8:00 AM - 1:00 PM",
+      "location": "MicroGallery x Little May, Montville",
+      "link": "https://events.sunshinecoast.qld.gov.au/event/16606626-a/art-with-heart-microgallery-x-little-may",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "MicroGallery x Little May",
+      "description": "An ongoing art exhibition showcasing works by various artists at a community-focused micro-gallery, where all artwork sales directly support the creators. Open for browsing in Montville.",
+      "tags": [
+        "art",
+        "exhibition",
+        "community",
+        "free"
+      ],
+      "score": 8,
+      "datetime_iso": "2026-05-11T08:00:00",
+      "datetime_end_iso": "2026-11-04T13:00:00",
+      "image": ""
+    },
+    {
+      "title": "From the Archives | David Green Exhibition",
+      "datetime": "Ongoing until May 21, 2026 (during gallery hours)",
+      "location": "ca Gallery, Coolum Beach",
+      "link": "https://cagalleryau.com/",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "ca Gallery",
+      "description": "An ongoing exhibition featuring works by David Green at the independent ca Gallery, offering a chance to view local art in Coolum Beach.",
+      "tags": [
+        "art",
+        "exhibition",
+        "coolum beach",
+        "free"
+      ],
+      "score": 7,
+      "datetime_iso": "2026-05-01",
+      "datetime_end_iso": "2026-05-21",
+      "image": ""
+    },
+    {
+      "title": "The Original Eumundi Markets (Wednesday)",
+      "datetime": "Wed 13 May, 7:00 AM - 2:00 PM",
+      "location": "Eumundi Markets, Eumundi",
+      "link": "https://eumundimarkets.com.au/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Eumundi Markets",
+      "description": "Experience the vibrant Original Eumundi Markets, a renowned artisan and farmers market, offering a wide array of handmade goods, local produce, and live entertainment.",
+      "tags": [
+        "market",
+        "artisan",
+        "community",
+        "free"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-13T07:00:00",
+      "datetime_end_iso": "2026-05-13T14:00:00",
+      "image": ""
+    },
+    {
+      "title": "The Original Eumundi Markets (Saturday)",
+      "datetime": "Sat 16 May, 7:00 AM - 2:00 PM",
+      "location": "Eumundi Markets, Eumundi",
+      "link": "https://eumundimarkets.com.au/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Eumundi Markets",
+      "description": "Experience the vibrant Original Eumundi Markets, a renowned artisan and farmers market, offering a wide array of handmade goods, local produce, and live entertainment.",
+      "tags": [
+        "market",
+        "artisan",
+        "community",
+        "free"
+      ],
+      "score": 6,
+      "datetime_iso": "2026-05-16T07:00:00",
+      "datetime_end_iso": "2026-05-16T14:00:00",
+      "image": ""
+    },
+    {
+      "title": "Twilight Markets @ Moffat Beach Brewing Co - Production House",
+      "datetime": "Fri 15 May, 4:30 PM - 8:30 PM",
+      "location": "Moffat Beach Brewing Co - Production House",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Moffat Beach Brewing Co",
+      "description": "An evening market hosted at Moffat Beach Brewing Co's Production House, offering local stalls in a vibrant atmosphere. Expect a community vibe alongside the brewery's offerings.",
+      "tags": [
+        "market",
+        "twilight",
+        "brewery",
+        "community"
+      ],
+      "score": 5,
+      "datetime_iso": "2026-05-15T16:30:00",
+      "datetime_end_iso": "2026-05-15T20:30:00",
+      "image": ""
+    },
+    {
+      "title": "Kenilworth Market",
+      "datetime": "Sat 16 May, 8:00 AM - 12:00 PM",
+      "location": "Kenilworth",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Kenilworth Market",
+      "description": "A small country market in Kenilworth, offering local goods and a charming, authentic community experience in the hinterland.",
+      "tags": [
+        "market",
+        "country",
+        "community",
+        "free"
+      ],
+      "score": 5,
+      "datetime_iso": "2026-05-16T08:00:00",
+      "datetime_end_iso": "2026-05-16T12:00:00",
+      "image": ""
+    },
+    {
+      "title": "Cotton Tree Markets",
+      "datetime": "Sun 17 May, 7:00 AM - 12:30 PM",
+      "location": "King Street, Maroochydore",
+      "link": "https://www.visitsunshinecoast.com/what-to-do/markets-and-shopping/cotton-tree-markets",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Sunshine Coast Music and Events",
+      "description": "A weekly Sunday market in Cotton Tree known for its arts, crafts, and fashion stalls, offering a vibrant community atmosphere by the water.",
+      "tags": [
+        "market",
+        "craft",
+        "community",
+        "free"
+      ],
+      "score": 5,
+      "datetime_iso": "2026-05-17T07:00:00",
+      "datetime_end_iso": "2026-05-17T12:30:00",
+      "image": ""
+    },
+    {
+      "title": "Nambour Town Square Market",
+      "datetime": "Thu 14 May, 8:00 AM - 2:00 PM",
+      "location": "Lowe Street, Nambour",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Nambour Town Square Market",
+      "description": "A local community market held in Nambour's town square, offering a variety of stalls and a chance to engage with local vendors and residents.",
+      "tags": [
+        "market",
+        "community",
+        "free",
+        "social"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-14T08:00:00",
+      "datetime_end_iso": "2026-05-14T14:00:00",
+      "image": ""
+    },
+    {
+      "title": "Marcoola Twilight Market",
+      "datetime": "Fri 15 May, 4:00 PM - 8:00 PM",
+      "location": "Marcoola",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Marcoola Twilight Market",
+      "description": "An evening community market in Marcoola, providing an opportunity to browse stalls and connect with the local community in a relaxed setting.",
+      "tags": [
+        "market",
+        "twilight",
+        "community",
+        "free"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-15T16:00:00",
+      "datetime_end_iso": "2026-05-15T20:00:00",
+      "image": ""
+    },
+    {
+      "title": "Kawana Waters Farmers Market",
+      "datetime": "Sat 16 May, 6:00 AM - 12:00 PM",
+      "location": "Kawana Waters",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Kawana Waters Farmers Market",
+      "description": "A morning farmers market in Kawana Waters, offering fresh local produce and fostering community connection. A good spot to find local goods and chat with vendors.",
+      "tags": [
+        "market",
+        "farmers",
+        "community",
+        "free"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-16T06:00:00",
+      "datetime_end_iso": "2026-05-16T12:00:00",
+      "image": ""
+    },
+    {
+      "title": "Yandina Country Markets",
+      "datetime": "Sat 16 May, 6:00 AM - 12:00 PM",
+      "location": "Yandina",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Yandina Country Markets",
+      "description": "A traditional country market held in Yandina, featuring local produce, crafts, and a relaxed community atmosphere perfect for a Saturday morning stroll.",
+      "tags": [
+        "market",
+        "country",
+        "community",
+        "free"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-16T06:00:00",
+      "datetime_end_iso": "2026-05-16T12:00:00",
+      "image": ""
+    },
+    {
+      "title": "Aura Farmers Market",
+      "datetime": "Sat 16 May, 7:00 AM - 12:00 PM",
+      "location": "Aura",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Aura Farmers Market",
+      "description": "A community farmers market in Aura, offering fresh local produce directly from growers. A great place to support local agriculture and connect with the community.",
+      "tags": [
+        "market",
+        "farmers",
+        "community",
+        "free"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-16T07:00:00",
+      "datetime_end_iso": "2026-05-16T12:00:00",
+      "image": ""
+    },
+    {
+      "title": "Dagun Growers Market",
+      "datetime": "Sat 16 May, 3:00 PM - 7:00 PM",
+      "location": "Dagun",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Dagun Growers Market",
+      "description": "An afternoon growers market in Dagun, offering fresh, seasonal produce directly from local farmers, fostering a strong connection to regional agriculture.",
+      "tags": [
+        "market",
+        "growers",
+        "community",
+        "free"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-16T15:00:00",
+      "datetime_end_iso": "2026-05-16T19:00:00",
+      "image": ""
+    },
+    {
+      "title": "Maroochydore Moonlight Markets",
+      "datetime": "Sat 16 May, 4:00 PM - 8:00 PM",
+      "location": "Maroochydore",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Maroochydore Moonlight Markets",
+      "description": "An evening market in Maroochydore, providing a relaxed atmosphere to explore local stalls under the moonlight and connect with the community.",
+      "tags": [
+        "market",
+        "twilight",
+        "community",
+        "free"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-16T16:00:00",
+      "datetime_end_iso": "2026-05-16T20:00:00",
+      "image": ""
+    },
+    {
+      "title": "Mooloolaba Sunsets Market",
+      "datetime": "Sat 16 May, 5:00 PM - 8:30 PM",
+      "location": "Mooloolaba Esplanade",
+      "link": "https://discovermooloolaba.com.au/event/mooloolaba-sunsets-market/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Mooloolaba Chamber",
+      "description": "An evening market along the Mooloolaba Esplanade, offering a chance to enjoy the sunset, browse stalls, and experience the local Mooloolaba community vibe.",
+      "tags": [
+        "market",
+        "sunset",
+        "community",
+        "free"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-16T17:00:00",
+      "datetime_end_iso": "2026-05-16T20:30:00",
+      "image": ""
+    },
+    {
+      "title": "Fisherman's Road Markets",
+      "datetime": "Sun 17 May, 6:00 AM - 12:00 PM",
+      "location": "Fisherman's Road, Maroochydore",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Fisherman's Road Markets",
+      "description": "A well-known Sunday morning market in Maroochydore, offering a wide range of goods from fresh produce to crafts, providing a bustling community atmosphere.",
+      "tags": [
+        "market",
+        "community",
+        "free",
+        "maroochydore"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-17T06:00:00",
+      "datetime_end_iso": "2026-05-17T12:00:00",
+      "image": ""
+    },
+    {
+      "title": "Noosa Farmers Market",
+      "datetime": "Sun 17 May, 6:00 AM - 12:00 PM",
+      "location": "Noosa",
+      "link": "https://localsintheloop.com.au/markets/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Noosa Farmers Market",
+      "description": "A popular Sunday farmers market in Noosa, featuring fresh local produce and artisan goods, a great place to experience the local food scene and community.",
+      "tags": [
+        "market",
+        "farmers",
+        "community",
+        "free"
+      ],
+      "score": 4,
+      "datetime_iso": "2026-05-17T06:00:00",
+      "datetime_end_iso": "2026-05-17T12:00:00",
+      "image": ""
+    }
+  ]
+}
