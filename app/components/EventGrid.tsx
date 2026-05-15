@@ -5,18 +5,17 @@ import EventCard from './EventCard'
 interface Props {
   events: Event[]
   isTopPick: boolean
-  activeCat: string
   dateRange: DateRange | null
   activeTags: string[]
   onTagClick: (tag: string) => void
 }
 
-export default function EventGrid({ events, isTopPick, activeCat, dateRange, activeTags, onTagClick }: Props) {
+export default function EventGrid({ events, isTopPick, activeTags, onTagClick }: Props) {
   
 
   return (
     <div className="card-grid">
-      {filtered.map(event => (
+      {events.map(event => (
         <EventCard
           key={event.title + event.datetime_iso}
           event={event}

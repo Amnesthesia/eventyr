@@ -99,7 +99,6 @@ export default function App() {
                 <EventGrid
                   events={picks}
                   isTopPick={true}
-                  activeCat={activeCat}
                   dateRange={dateRange}
                   activeTags={activeTags}
                   onTagClick={toggleTag}
@@ -111,7 +110,6 @@ export default function App() {
             <EventGrid
               events={rest}
               isTopPick={false}
-              activeCat={activeCat}
               dateRange={dateRange}
               activeTags={activeTags}
               onTagClick={toggleTag}
