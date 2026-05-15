@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function EventCard({ event, isTopPick, activeTags, onTagClick }: Props) {
-  const free = (event.cost || '').toLowerCase() === 'free'
+  const free = /free/.test((event.cost || '').toLowerCase())
 
   const classes = [
     'card',

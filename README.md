@@ -35,6 +35,8 @@ export WHATSAPP_RECIPIENT=614...
 python src/agent.py
 ```
 
+Install dependencies with `pnpm install` to register the repository hook. Commits that include staged changes under `app/` will run `pnpm build` before the commit is created.
+
 ## How it works
 
 1. GitHub Actions triggers on schedule

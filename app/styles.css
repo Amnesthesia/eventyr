@@ -533,7 +533,7 @@ article.card.has-image>* {
 }
 
 .date-range-wrapper .filter-btn {
-  display: inline-flex;
+  display: block;
   align-items: center;
   gap: .3rem;
 }
