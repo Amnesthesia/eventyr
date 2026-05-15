@@ -104,6 +104,20 @@ jobs:
       - name: Update pages index
         run: python src/pages.py
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Build frontend
+        run: pnpm install --frozen-lockfile && pnpm build
+
       - name: Commit data files
         env:
           CITY: ${{ inputs.city }}
@@ -112,7 +126,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "data/${CITY}.json" \
                   "data/${CITY}/" \
-                  "${CITY^^}.md" "${CITY}.ics" "data/index.json"
+                  "${CITY^^}.md" "${CITY}.ics" "data/index.json" \
+                  index.html dist/
           git diff --cached --quiet || git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           git push
 
