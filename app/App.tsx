@@ -6,11 +6,12 @@ import { useEvents } from './hooks/useEvents'
 import Header from './components/Header'
 import FilterBar from './components/FilterBar'
 import EventGrid from './components/EventGrid'
+import { parseEndDate } from './utils/dates'
 
 export default function App() {
   const { theme, toggle: toggleTheme } = useColorTheme()
   const { cities, cityKey, setCity } = useCity()
-  const { cityData, picks, rest, loading, error } = useEvents(cityKey)
+  const { cityData, loading, error } = useEvents(cityKey)
 
   const [activeCat, setActiveCat] = useState<string>('All')
   const [dateRange, setDateRange] = useState<DateRange | null>(null)
@@ -29,7 +30,33 @@ export default function App() {
     )
   }
 
-  const categories = [...new Set(rest.map(e => e.category).filter(Boolean))]
+  
+  const filtered = cityData?.events.filter(event => {
+    const catOk = activeCat === 'All' || event.category === activeCat
+
+    const dateOk = (() => {
+      if (!dateRange) return true
+      if (!event.datetime_iso) return false
+      const eventStart = event.datetime_iso.slice(0, 10)
+      const eventEnd = parseEndDate(event.datetime || '', event.datetime_iso) || eventStart
+      return eventStart <= dateRange.end && eventEnd >= dateRange.start
+    })()
+
+    const tagsOk = activeTags.length === 0 ||
+      activeTags.every(tag => (event.tags || []).includes(tag))
+
+    return catOk && dateOk && tagsOk
+  });
+  const picks: typeof filtered = [];
+  const rest: typeof filtered = [];
+  filtered?.forEach((e) => {
+    if ((e.score || 0) >= 8 && picks.length < 9) {
+      picks.push(e);
+    } else {
+      rest.push(e);
+    }
+  });
+  const categories = [...new Set(filtered?.map(e => e.category).filter(Boolean))]
 
   return (
     <>
