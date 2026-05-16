@@ -1,30 +1,25 @@
 {
-  "city_key": "brisbane",
-  "provider": "perplexity",
-  "tier": "open",
-  "week_start": "2026-05-11",
-  "week_end": "2026-05-17",
-  "raw_sha256": "2716be86f99deb6f62518bac19aa4c0b7c06371aca7bd2a70b44670d1d67f8ca",
-  "events": [
-    {
-      "title": "2026 Brisbane Anywhere Festival",
-      "datetime": "Fri 1 May - Sun 31 May 2026 (pop-ups 11-17 May)",
-      "location": "Various unconventional Brisbane spots",
-      "link": "https://www.brisbane.qld.gov.au/events/2026-brisbane-anywhere-festival/196584715",
-      "category": "Arts / Exhibition",
-      "cost": "Varies",
-      "source": "Brisbane City Council / Anywhere Theatre Company",
-      "description": "This month-long fringe festival offers experimental, immersive theatre, music, and storytelling in unconventional venues across Brisbane. It attracts a creative, open-minded audience and fosters intimate, conversation-friendly experiences, with specific pop-up events scheduled throughout May, including 11-17 May.",
-      "tags": [
-        "theatre",
-        "performance",
-        "fringe",
-        "creative"
-      ],
-      "score": 9,
-      "datetime_iso": "2026-05-01T00:00:00",
-      "datetime_end_iso": "2026-05-31T23:59:59",
-      "image": "https://anywhere.org.au/wp-content/uploads/2023/11/Anywhere-Festival-Image-Library-1.jpg"
-    }
-  ]
+	"city_key": "brisbane",
+	"provider": "perplexity",
+	"tier": "open",
+	"week_start": "2026-05-11",
+	"week_end": "2026-05-17",
+	"raw_sha256": "2716be86f99deb6f62518bac19aa4c0b7c06371aca7bd2a70b44670d1d67f8ca",
+	"events": [
+		{
+			"title": "2026 Brisbane Anywhere Festival",
+			"datetime": "Fri 1 May - Sun 31 May 2026 (pop-ups 11-17 May)",
+			"location": "Various unconventional Brisbane spots",
+			"link": "https://www.brisbane.qld.gov.au/events/2026-brisbane-anywhere-festival/196584715",
+			"category": "Arts / Exhibition",
+			"cost": "Varies",
+			"source": "Brisbane City Council / Anywhere Theatre Company",
+			"description": "This month-long fringe festival offers experimental, immersive theatre, music, and storytelling in unconventional venues across Brisbane. It attracts a creative, open-minded audience and fosters intimate, conversation-friendly experiences, with specific pop-up events scheduled throughout May, including 11-17 May.",
+			"tags": ["theatre", "performance", "fringe", "creative"],
+			"score": 9,
+			"datetime_iso": "2026-05-01T00:00:00",
+			"datetime_end_iso": "2026-05-31T23:59:59",
+			"image": "https://anywhere.org.au/wp-content/uploads/2023/11/Anywhere-Festival-Image-Library-1.jpg"
+		}
+	]
 }

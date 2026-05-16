@@ -1,1 +1,1 @@
-export const TOP_PICK_THRESHOLD = 8
+export const TOP_PICK_THRESHOLD = 8;

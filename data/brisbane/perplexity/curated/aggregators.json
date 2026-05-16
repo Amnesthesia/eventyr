@@ -1,30 +1,25 @@
 {
-  "city_key": "brisbane",
-  "provider": "perplexity",
-  "tier": "aggregators",
-  "week_start": "2026-05-11",
-  "week_end": "2026-05-17",
-  "raw_sha256": "2f41e274997a14cba6333df3d9cdee9aba259ce29406e39563cf9bbb9502b902",
-  "events": [
-    {
-      "title": "Suitcase Rummage - Brisbane/Meanjin Market",
-      "datetime": "Sun 17 May, 12:00 PM",
-      "location": "Reddacliffe Place, Brisbane City",
-      "link": "https://events.humanitix.com/brisbane-meanjin-may-17th-2026",
-      "category": "Community / Other",
-      "cost": "Free",
-      "source": "Suitcase Rummage / Humanitix",
-      "description": "Suitcase Rummage is a community market where people buy and sell pre-loved goods, bric-a-brac, and handmade items from suitcases. It fosters a relaxed, social atmosphere in a public outdoor space, encouraging interaction between vendors and shoppers.",
-      "tags": [
-        "market",
-        "community",
-        "social",
-        "free"
-      ],
-      "score": 7,
-      "datetime_iso": "2026-05-17T12:00:00",
-      "datetime_end_iso": "2026-05-17T17:00:00",
-      "image": "https://www.suitcase-rummage.com.au/uploads/1/0/0/2/100293144/img-0010_orig.jpg"
-    }
-  ]
+	"city_key": "brisbane",
+	"provider": "perplexity",
+	"tier": "aggregators",
+	"week_start": "2026-05-11",
+	"week_end": "2026-05-17",
+	"raw_sha256": "2f41e274997a14cba6333df3d9cdee9aba259ce29406e39563cf9bbb9502b902",
+	"events": [
+		{
+			"title": "Suitcase Rummage - Brisbane/Meanjin Market",
+			"datetime": "Sun 17 May, 12:00 PM",
+			"location": "Reddacliffe Place, Brisbane City",
+			"link": "https://events.humanitix.com/brisbane-meanjin-may-17th-2026",
+			"category": "Community / Other",
+			"cost": "Free",
+			"source": "Suitcase Rummage / Humanitix",
+			"description": "Suitcase Rummage is a community market where people buy and sell pre-loved goods, bric-a-brac, and handmade items from suitcases. It fosters a relaxed, social atmosphere in a public outdoor space, encouraging interaction between vendors and shoppers.",
+			"tags": ["market", "community", "social", "free"],
+			"score": 7,
+			"datetime_iso": "2026-05-17T12:00:00",
+			"datetime_end_iso": "2026-05-17T17:00:00",
+			"image": "https://www.suitcase-rummage.com.au/uploads/1/0/0/2/100293144/img-0010_orig.jpg"
+		}
+	]
 }
