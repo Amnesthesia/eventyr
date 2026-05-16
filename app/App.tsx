@@ -5,8 +5,8 @@ import Header from "./components/Header";
 import { useCity } from "./hooks/useCity";
 import { useColorTheme } from "./hooks/useColorTheme";
 import { useEvents } from "./hooks/useEvents";
-import type { DateRange } from "./types";
-import { parseEndDate } from "./utils/dates";
+import type { DateRange, Event, PastFilter, TriState, VibeFilters, VibeKey } from "./types";
+import { parseEndDate, todayIso } from "./utils/dates";
 
 export default function App() {
 	const { theme, toggle: toggleTheme } = useColorTheme();
@@ -16,12 +16,21 @@ export default function App() {
 	const [activeCat, setActiveCat] = useState<string>("All");
 	const [dateRange, setDateRange] = useState<DateRange | null>(null);
 	const [activeTags, setActiveTags] = useState<string[]>([]);
+	const [pastFilter, setPastFilter] = useState<PastFilter>("no-past");
+	const [vibeFilters, setVibeFilters] = useState<VibeFilters>({
+		intellectual: "any",
+		creative: "any",
+		hands_on: "any",
+		social: "any",
+	});
 
 	// Reset filters when city changes
 	useEffect(() => {
 		setActiveCat("All");
 		setDateRange(null);
 		setActiveTags([]);
+		setPastFilter("no-past");
+		setVibeFilters({ intellectual: "any", creative: "any", hands_on: "any", social: "any" });
 	}, []);
 
 	function toggleTag(tag: string) {
@@ -29,6 +38,12 @@ export default function App() {
 			prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag],
 		);
 	}
+
+	function setVibe(key: VibeKey, state: TriState) {
+		setVibeFilters((prev) => ({ ...prev, [key]: state }));
+	}
+
+	const todayStr = todayIso();
 
 	const filtered = cityData?.events.filter((event) => {
 		const catOk = activeCat === "All" || event.category === activeCat;
@@ -46,8 +61,26 @@ export default function App() {
 			activeTags.length === 0 ||
 			activeTags.every((tag) => (event.tags || []).includes(tag));
 
+		const endDate = (event.datetime_end_iso || event.datetime_iso || "").slice(0, 10);
+		const isPast = endDate ? endDate < todayStr : false;
+		if (pastFilter === "no-past" && isPast) return false;
+		if (pastFilter === "only-past" && !isPast) return false;
+
+		const vibeOk = (Object.entries(vibeFilters) as [VibeKey, TriState][]).every(
+			([key, state]) => {
+				if (state === "any") return true;
+				return state === "yes" ? event[key] === true : event[key] !== true;
+			},
+		);
+		if (!vibeOk) return false;
+
 		return catOk && dateOk && tagsOk;
 	});
+
+	function isEventPast(event: Event): boolean {
+		const end = (event.datetime_end_iso || event.datetime_iso || "").slice(0, 10);
+		return end ? end < todayStr : false;
+	}
 	const picks: typeof filtered = [];
 	const rest: typeof filtered = [];
 	filtered?.forEach((e) => {
@@ -92,9 +125,13 @@ export default function App() {
 							activeTags={activeTags}
 							weekStart={cityData.week_start}
 							weekEnd={cityData.week_end}
+							pastFilter={pastFilter}
+							vibeFilters={vibeFilters}
 							onCatChange={setActiveCat}
 							onDateChange={setDateRange}
 							onTagRemove={toggleTag}
+							onPastFilterChange={setPastFilter}
+							onVibeChange={setVibe}
 						/>
 						{picks.length > 0 && (
 							<div id="top-picks-section">
@@ -105,6 +142,7 @@ export default function App() {
 									dateRange={dateRange}
 									activeTags={activeTags}
 									onTagClick={toggleTag}
+									isEventPast={isEventPast}
 								/>
 							</div>
 						)}
@@ -116,6 +154,7 @@ export default function App() {
 							dateRange={dateRange}
 							activeTags={activeTags}
 							onTagClick={toggleTag}
+							isEventPast={isEventPast}
 						/>
 					</>
 				)}

@@ -1,29 +1,29 @@
 {
-	"generated_at": "2026-05-15",
-	"cities": [
-		{
-			"key": "brisbane",
-			"name": "Brisbane, Queensland, Australia",
-			"week_start": "2026-05-11",
-			"week_end": "2026-05-17",
-			"event_count": 139,
-			"top_pick_count": 90
-		},
-		{
-			"key": "goldcoast",
-			"name": "Gold Coast",
-			"week_start": "2026-05-11",
-			"week_end": "2026-05-17",
-			"event_count": 17,
-			"top_pick_count": 7
-		},
-		{
-			"key": "sunnycoast",
-			"name": "Sunshine Coast",
-			"week_start": "2026-05-11",
-			"week_end": "2026-05-17",
-			"event_count": 86,
-			"top_pick_count": 48
-		}
-	]
+  "generated_at": "2026-05-16",
+  "cities": [
+    {
+      "key": "brisbane",
+      "name": "Brisbane, Queensland, Australia",
+      "week_start": "2026-05-11",
+      "week_end": "2026-05-17",
+      "event_count": 139,
+      "top_pick_count": 90
+    },
+    {
+      "key": "goldcoast",
+      "name": "Gold Coast",
+      "week_start": "2026-05-11",
+      "week_end": "2026-05-17",
+      "event_count": 17,
+      "top_pick_count": 7
+    },
+    {
+      "key": "sunnycoast",
+      "name": "Sunshine Coast",
+      "week_start": "2026-05-11",
+      "week_end": "2026-05-17",
+      "event_count": 86,
+      "top_pick_count": 48
+    }
+  ]
 }

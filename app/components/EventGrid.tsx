@@ -7,6 +7,7 @@ interface Props {
 	dateRange: DateRange | null;
 	activeTags: string[];
 	onTagClick: (tag: string) => void;
+	isEventPast?: (event: Event) => boolean;
 }
 
 export default function EventGrid({
@@ -14,6 +15,7 @@ export default function EventGrid({
 	isTopPick,
 	activeTags,
 	onTagClick,
+	isEventPast,
 }: Props) {
 	return (
 		<div className="card-grid">
@@ -24,6 +26,7 @@ export default function EventGrid({
 					isTopPick={isTopPick}
 					activeTags={activeTags}
 					onTagClick={onTagClick}
+					isPast={isEventPast?.(event) ?? false}
 				/>
 			))}
 		</div>

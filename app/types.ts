@@ -12,7 +12,17 @@ export interface Event {
 	datetime_iso: string;
 	datetime_end_iso: string;
 	image: string;
+	social?: boolean;
+	intellectual?: boolean;
+	hands_on?: boolean;
+	creative?: boolean;
+	venue?: string;
 }
+
+export type TriState = "yes" | "no" | "any";
+export type VibeKey = "intellectual" | "creative" | "hands_on" | "social";
+export type VibeFilters = Record<VibeKey, TriState>;
+export type PastFilter = "no-past" | "all" | "only-past";
 
 export interface City {
 	key: string;

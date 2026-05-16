@@ -23,21 +23,26 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
         with:
-          python-version: "3.12"
-          cache: "pip"
+          version: 9
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pnpm install --frozen-lockfile
 
       - name: Discover sources
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CITY_NAME:         ${{ inputs.city_name }}
           CITY_KEY:          ${{ inputs.city_key }}
-        run: python src/add_city.py
+        run: pnpm tsx --tsconfig tsconfig.scripts.json src/add_city.ts
 
       - name: Commit result
         run: |

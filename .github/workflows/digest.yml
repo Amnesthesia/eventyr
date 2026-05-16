@@ -63,14 +63,19 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
         with:
-          python-version: "3.12"
-          cache: "pip"
+          version: 9
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pnpm install --frozen-lockfile
 
       - name: Collect events (parallel)
         env:
@@ -80,10 +85,10 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force }}
         run: |
-          python src/collection.py aggregators  &
-          python src/collection.py institutions &
-          python src/collection.py independents &
-          python src/collection.py open          &
+          pnpm tsx --tsconfig tsconfig.scripts.json src/collection.ts aggregators &
+          pnpm tsx --tsconfig tsconfig.scripts.json src/collection.ts institutions &
+          pnpm tsx --tsconfig tsconfig.scripts.json src/collection.ts independents &
+          pnpm tsx --tsconfig tsconfig.scripts.json src/collection.ts open         &
           wait
 
       - name: Curate events
@@ -91,32 +96,28 @@ jobs:
           CITY: ${{ inputs.city }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force }}
-        run: python src/curate.py
+        run: pnpm tsx --tsconfig tsconfig.scripts.json src/curate.ts
+
+      - name: Rank events
+        env:
+          CITY: ${{ inputs.city }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE: ${{ inputs.force }}
+        run: pnpm tsx --tsconfig tsconfig.scripts.json src/rank.ts
 
       - name: Write markdown
-        run: python src/markdown.py
+        run: pnpm tsx --tsconfig tsconfig.scripts.json src/markdown.ts
 
       - name: Generate iCal
         env:
           CITY: ${{ inputs.city }}
-        run: python src/ical.py
+        run: pnpm tsx --tsconfig tsconfig.scripts.json src/ical.ts
 
       - name: Update pages index
-        run: python src/pages.py
-
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'pnpm'
+        run: pnpm tsx --tsconfig tsconfig.scripts.json src/pages.ts
 
       - name: Build frontend
-        run: pnpm install --frozen-lockfile && pnpm build
+        run: pnpm build
 
       - name: Commit data files
         env:
@@ -139,4 +140,4 @@ jobs:
           WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
           WHATSAPP_PHONE_ID: ${{ secrets.WHATSAPP_PHONE_ID }}
           WHATSAPP_RECIPIENT: ${{ inputs.recipient != '' && inputs.recipient || secrets.WHATSAPP_RECIPIENT }}
-        run: python src/messaging.py
+        run: pnpm tsx --tsconfig tsconfig.scripts.json src/messaging.ts

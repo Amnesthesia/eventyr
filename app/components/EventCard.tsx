@@ -7,6 +7,7 @@ interface Props {
 	isTopPick: boolean;
 	activeTags: string[];
 	onTagClick: (tag: string) => void;
+	isPast?: boolean;
 }
 
 export default function EventCard({
@@ -14,6 +15,7 @@ export default function EventCard({
 	isTopPick,
 	activeTags,
 	onTagClick,
+	isPast = false,
 }: Props) {
 	const free = /free/.test((event.cost || "").toLowerCase());
 
@@ -21,6 +23,7 @@ export default function EventCard({
 		"card",
 		isTopPick ? "top-pick" : "",
 		event.image ? "has-image" : "",
+		isPast ? "event-past" : "",
 	]
 		.filter(Boolean)
 		.join(" ");
