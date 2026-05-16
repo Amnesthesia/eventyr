@@ -79,6 +79,7 @@
 /* ── Layout ── */
 body {
 	max-width: 1320px;
+	padding: 12px;
 	margin: auto auto;
 }
 
