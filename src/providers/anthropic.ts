@@ -4,7 +4,7 @@ import { BaseProvider } from "./base.ts";
 
 const SEARCH_MODEL = "claude-sonnet-4-6";
 const DISCOVERY_MODEL = "claude-opus-4-7";
-const MAX_WEB_SEARCHES = 12;
+const MAX_WEB_SEARCHES = 8;
 
 export class AnthropicProvider extends BaseProvider {
 	readonly name = "anthropic";
@@ -26,7 +26,7 @@ export class AnthropicProvider extends BaseProvider {
 
 		const response = await this.client.messages.create({
 			model: SEARCH_MODEL,
-			max_tokens: 8000,
+			max_tokens: 4000,
 			tools: [
 				{
 					type: "web_search_20250305" as const,

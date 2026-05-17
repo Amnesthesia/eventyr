@@ -142,27 +142,10 @@ Your job:
                   Use "" if completely unknown.
    - image:       direct URL to a preview/hero image for the event. Use "" if none available. Must be a full https:// URL.
 
-3. OUTPUT: A valid JSON array. Include EVERY event that passes the filter — do not stop early or truncate the list. No markdown, no explanation, no code fences.
+3. OUTPUT: A valid compact JSON array — no whitespace or newlines between elements. Include EVERY event that passes the filter — do not stop early or truncate the list. No markdown, no explanation, no code fences.
 
-Example element:
-{
-  "title": "Philosophy of Mind: AI and Consciousness",
-  "datetime": "Mon 12 May, 7:00 PM",
-  "location": "UQ St Lucia, Building 9",
-  "link": "https://events.uq.edu.au/...",
-  "category": "Public Lecture",
-  "cost": "Free",
-  "source": "UQ Events",
-  "description": "UQ's Professor of Philosophy presents her latest research on consciousness and what AI can and cannot tell us about subjective experience — aimed at a general audience, followed by open Q&A.",
-  "tags": ["philosophy", "ai", "lecture", "free"],
-  "social": false,
-  "intellectual": true,
-  "hands_on": false,
-  "creative": false,
-  "datetime_iso": "2026-05-12T19:00:00",
-  "datetime_end_iso": "2026-05-12T21:00:00",
-  "image": "https://events.uq.edu.au/images/philosophy-lecture.jpg"
-}`;
+Example element (compact, single line):
+{"title":"Philosophy of Mind: AI and Consciousness","datetime":"Mon 12 May, 7:00 PM","location":"UQ St Lucia, Building 9","link":"https://events.uq.edu.au/...","category":"Public Lecture","cost":"Free","source":"UQ Events","description":"UQ's Professor of Philosophy presents her latest research on consciousness and what AI can and cannot tell us about subjective experience — aimed at a general audience, followed by open Q&A.","tags":["philosophy","ai","lecture","free"],"social":false,"intellectual":true,"hands_on":false,"creative":false,"datetime_iso":"2026-05-12T19:00:00","datetime_end_iso":"2026-05-12T21:00:00","image":"https://events.uq.edu.au/images/philosophy-lecture.jpg"}`;
 	}
 
 	protected parseEvents(
