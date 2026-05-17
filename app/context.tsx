@@ -196,7 +196,9 @@ export function EventsProvider({ children }: { children: ReactNode }) {
 			const id = e.title + e.datetime_iso;
 			if (starred.has(id)) {
 				starredEvents.push(e);
-			} else if ((e.score || 0) >= 8 && picks.length < 9) {
+			}
+
+			if ((e.score || 0) >= 8 && picks.length < 9) {
 				picks.push(e);
 			} else {
 				rest.push(e);
