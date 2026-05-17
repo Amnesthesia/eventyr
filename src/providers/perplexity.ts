@@ -36,19 +36,8 @@ Avoid:
 - duplicate listings
 - nationwide event directories unless necessary
 
-Return JSON:
-[
-  {
-    "title": "",
-    "date": "",
-    "venue": "",
-    "suburb": "",
-    "category": "",
-    "description": "",
-    "source_url": "",
-    "confidence": 0-1
-  }
-]
+Return a compact JSON array (no whitespace between elements):
+[{"title":"","date":"","venue":"","suburb":"","category":"","description":"","source_url":"","confidence":0}]
 
 Search deeply across venue websites, local publications, Instagram-linked event pages, Facebook events, Eventbrite, Humanitix, council pages, and arts/community spaces.`;
 	}
@@ -65,7 +54,7 @@ Search deeply across venue websites, local publications, Instagram-linked event 
 		);
 		const userMsg =
 			`Find events in ${cityCfg.name} between ${fmtDate(weekStart)} and ${fmtDate(weekEnd)}. ` +
-			"Search deeply across all local sources. Return results as a JSON array.";
+			"Search deeply across all local sources. Return results as a compact JSON array with no whitespace between elements.";
 
 		const response = await this.client.chat.completions.create({
 			model: this.model,

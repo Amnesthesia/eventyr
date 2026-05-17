@@ -79,20 +79,16 @@ INDEPENDENTS — niche, community-facing venues and groups whose events rarely a
   indie galleries, hackerspaces/makerspaces, board-game communities, philosophy
   groups, language exchange groups, creative spaces, bars/cafes with regular events.
 
-Your response MUST be a single raw JSON object and NOTHING else — no preamble, no
-explanation, no reasoning, no markdown, no code fences. Do not write any text before
-or after the JSON. Your entire response is the JSON object, starting with { and
-ending with }.
+Your response MUST be a single raw compact JSON object and NOTHING else — no preamble, no
+explanation, no reasoning, no markdown, no code fences, no whitespace between elements.
+Do not write any text before or after the JSON. Your entire response is the JSON object,
+starting with { and ending with }.
 
 The object has exactly three keys: "aggregators", "institutions", "independents".
 Each key maps to an array of source description strings: "Source Name (url)".
 
 Example (your full response should look exactly like this):
-{
-  "aggregators":  ["Eventbrite ${cityName} (eventbrite.com.au)", ...],
-  "institutions": ["State Library (slq.qld.gov.au)", ...],
-  "independents": ["Local Bookshop (bookshop.com.au/events)", ...]
-}`;
+{"aggregators":["Eventbrite ${cityName} (eventbrite.com.au)"],"institutions":["State Library (slq.qld.gov.au)"],"independents":["Local Bookshop (bookshop.com.au/events)"]}`;
 
 		const response = await this.client.messages.create({
 			model: DISCOVERY_MODEL,
