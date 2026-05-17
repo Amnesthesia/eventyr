@@ -21,7 +21,7 @@ jobs:
       contents: write
     with:
       city: brisbane
-      force: ${{ inputs.force }}
+      force: ${{ inputs.force || false }}
     secrets: inherit
   goldcoast:
     needs: brisbane
@@ -30,7 +30,7 @@ jobs:
       contents: write
     with:
       city: goldcoast
-      force: ${{ inputs.force }}
+      force: ${{ inputs.force || false }}
     secrets: inherit
   sunnycoast:
     needs: goldcoast
@@ -39,5 +39,5 @@ jobs:
       contents: write
     with:
       city: sunnycoast
-      force: ${{ inputs.force }}
+      force: ${{ inputs.force || false }}
     secrets: inherit
