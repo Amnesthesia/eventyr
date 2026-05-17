@@ -90,7 +90,7 @@ export function getWeekRange(): { monday: Date; sunday: Date } {
   today.setHours(0, 0, 0, 0);
   // JS getDay(): 0=Sun, 1=Mon...6=Sat. We want the Monday of the current week.
   const day = today.getDay();
-  const daysToMonday = day === 0 ? -6 : 1 - day;
+  const daysToMonday = day === 0 ? 1 : 1 - day;
   const monday = new Date(today);
   monday.setDate(today.getDate() + daysToMonday);
   const sunday = new Date(monday);

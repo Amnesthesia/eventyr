@@ -4,14 +4,20 @@ import { BaseProvider } from "./base.ts";
 
 export class OpenAIProvider extends BaseProvider {
 	readonly name: string;
-	private client: OpenAI;
-	private model: string;
+	readonly tiers: readonly string[] = ["aggregators", "institutions", "independents", "open"];
+	protected client: OpenAI;
+	protected readonly model: string;
 
-	constructor(apiKey: string, baseURL: string, model: string, name: string) {
+	constructor(
+		apiKey: string,
+		model = "gpt-4o",
+		name = "openai",
+		baseURL?: string,
+	) {
 		super();
 		this.name = name;
 		this.model = model;
-		this.client = new OpenAI({ apiKey, baseURL });
+		this.client = new OpenAI({ apiKey, ...(baseURL ? { baseURL } : {}) });
 	}
 
 	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
@@ -19,16 +25,8 @@ export class OpenAIProvider extends BaseProvider {
 		const label = `${this.name}/${tier}`;
 		console.log(`  [${label}] Searching…`);
 
-		let systemMsg: string;
-		let userMsg: string;
-
-		if (tier === "open") {
-			systemMsg = this.buildOpenSystem(opts);
-			userMsg = this.buildOpenUser(opts);
-		} else {
-			systemMsg = this.buildTierSystem(opts);
-			userMsg = this.buildTierUser(opts);
-		}
+		const systemMsg = tier === "open" ? this.buildOpenSystem(opts) : this.buildTierSystem(opts);
+		const userMsg = tier === "open" ? this.buildOpenUser(opts) : this.buildTierUser(opts);
 
 		const response = await this.client.chat.completions.create({
 			model: this.model,
@@ -42,7 +40,9 @@ export class OpenAIProvider extends BaseProvider {
 		const rawText = response.choices[0]?.message?.content ?? "";
 		this.validateRaw(rawText, label);
 		console.log(`  [${label}] ${rawText.length} chars received`);
-		return { rawText };
+
+		const events = await opts.curate(rawText, opts.cityCfg.name, label);
+		return { events };
 	}
 
 	async findSources(cityName: string): Promise<SourceResult> {

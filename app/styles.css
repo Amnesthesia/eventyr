@@ -371,6 +371,42 @@ article.card.has-image > * {
 	gap: 0.5rem;
 }
 
+.card-top-right {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	flex-shrink: 0;
+}
+
+/* ── Star button ── */
+.star-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: var(--border);
+	margin-bottom: 0;
+	box-shadow: none;
+	flex-shrink: 0;
+	transition: color 0.12s;
+}
+
+.star-btn:hover {
+	color: var(--fg);
+	background: transparent;
+}
+
+.star-btn.starred {
+	color: var(--fg);
+}
+
+.star-btn.starred svg {
+	fill: currentColor;
+}
+
 .card-cat {
 	display: flex;
 	align-items: center;
@@ -459,16 +495,29 @@ article.card.has-image > * {
 	color: var(--muted);
 	line-height: 1.55;
 	margin: 0;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	flex-grow: 1;
 }
 
 /* ── Tags ── */
+.card-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+}
+
 .card-tags {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.3rem;
 	margin-top: auto;
 	padding-top: 0.15rem;
+}
+
+.card-tags button {
+	margin-bottom: 0;
 }
 
 .tag {

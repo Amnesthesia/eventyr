@@ -3,11 +3,11 @@
   "cities": [
     {
       "key": "brisbane",
-      "name": "Brisbane, Queensland, Australia",
+      "name": "Brisbane",
       "week_start": "2026-05-11",
       "week_end": "2026-05-17",
-      "event_count": 139,
-      "top_pick_count": 90
+      "event_count": 138,
+      "top_pick_count": 20
     },
     {
       "key": "goldcoast",
@@ -15,7 +15,7 @@
       "week_start": "2026-05-11",
       "week_end": "2026-05-17",
       "event_count": 17,
-      "top_pick_count": 7
+      "top_pick_count": 14
     },
     {
       "key": "sunnycoast",
@@ -23,7 +23,7 @@
       "week_start": "2026-05-11",
       "week_end": "2026-05-17",
       "event_count": 86,
-      "top_pick_count": 48
+      "top_pick_count": 64
     }
   ]
 }

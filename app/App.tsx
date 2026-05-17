@@ -1,109 +1,14 @@
-import { useEffect, useState } from "react";
 import EventGrid from "./components/EventGrid";
 import FilterBar from "./components/FilterBar";
 import Header from "./components/Header";
-import { useCity } from "./hooks/useCity";
-import { useColorTheme } from "./hooks/useColorTheme";
-import { useEvents } from "./hooks/useEvents";
-import type { DateRange, Event, PastFilter, TriState, VibeFilters, VibeKey } from "./types";
-import { parseEndDate, todayIso } from "./utils/dates";
+import { EventsProvider, useEventsContext } from "./context";
 
-export default function App() {
-	const { theme, toggle: toggleTheme } = useColorTheme();
-	const { cities, cityKey, setCity } = useCity();
-	const { cityData, loading, error } = useEvents(cityKey);
-
-	const [activeCat, setActiveCat] = useState<string>("All");
-	const [dateRange, setDateRange] = useState<DateRange | null>(null);
-	const [activeTags, setActiveTags] = useState<string[]>([]);
-	const [pastFilter, setPastFilter] = useState<PastFilter>("no-past");
-	const [vibeFilters, setVibeFilters] = useState<VibeFilters>({
-		intellectual: "any",
-		creative: "any",
-		hands_on: "any",
-		social: "any",
-	});
-
-	// Reset filters when city changes
-	useEffect(() => {
-		setActiveCat("All");
-		setDateRange(null);
-		setActiveTags([]);
-		setPastFilter("no-past");
-		setVibeFilters({ intellectual: "any", creative: "any", hands_on: "any", social: "any" });
-	}, []);
-
-	function toggleTag(tag: string) {
-		setActiveTags((prev) =>
-			prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag],
-		);
-	}
-
-	function setVibe(key: VibeKey, state: TriState) {
-		setVibeFilters((prev) => ({ ...prev, [key]: state }));
-	}
-
-	const todayStr = todayIso();
-
-	const filtered = cityData?.events.filter((event) => {
-		const catOk = activeCat === "All" || event.category === activeCat;
-
-		const dateOk = (() => {
-			if (!dateRange) return true;
-			if (!event.datetime_iso) return false;
-			const eventStart = event.datetime_iso.slice(0, 10);
-			const eventEnd =
-				parseEndDate(event.datetime || "", event.datetime_iso) || eventStart;
-			return eventStart <= dateRange.end && eventEnd >= dateRange.start;
-		})();
-
-		const tagsOk =
-			activeTags.length === 0 ||
-			activeTags.every((tag) => (event.tags || []).includes(tag));
-
-		const endDate = (event.datetime_end_iso || event.datetime_iso || "").slice(0, 10);
-		const isPast = endDate ? endDate < todayStr : false;
-		if (pastFilter === "no-past" && isPast) return false;
-		if (pastFilter === "only-past" && !isPast) return false;
-
-		const vibeOk = (Object.entries(vibeFilters) as [VibeKey, TriState][]).every(
-			([key, state]) => {
-				if (state === "any") return true;
-				return state === "yes" ? event[key] === true : event[key] !== true;
-			},
-		);
-		if (!vibeOk) return false;
-
-		return catOk && dateOk && tagsOk;
-	});
-
-	function isEventPast(event: Event): boolean {
-		const end = (event.datetime_end_iso || event.datetime_iso || "").slice(0, 10);
-		return end ? end < todayStr : false;
-	}
-	const picks: typeof filtered = [];
-	const rest: typeof filtered = [];
-	filtered?.forEach((e) => {
-		if ((e.score || 0) >= 8 && picks.length < 9) {
-			picks.push(e);
-		} else {
-			rest.push(e);
-		}
-	});
-	const categories = [
-		...new Set(filtered?.map((e) => e.category).filter(Boolean)),
-	];
+function AppShell() {
+	const { loading, error, cityData, starredEvents, picks, rest } = useEventsContext();
 
 	return (
 		<>
-			<Header
-				cities={cities}
-				cityKey={cityKey}
-				cityData={cityData}
-				theme={theme}
-				onCityChange={setCity}
-				onThemeToggle={toggleTheme}
-			/>
+			<Header />
 			<main>
 				{loading && (
 					<div className="state">
@@ -118,47 +23,33 @@ export default function App() {
 				)}
 				{!loading && !error && cityData && (
 					<>
-						<FilterBar
-							categories={categories}
-							activeCat={activeCat}
-							dateRange={dateRange}
-							activeTags={activeTags}
-							weekStart={cityData.week_start}
-							weekEnd={cityData.week_end}
-							pastFilter={pastFilter}
-							vibeFilters={vibeFilters}
-							onCatChange={setActiveCat}
-							onDateChange={setDateRange}
-							onTagRemove={toggleTag}
-							onPastFilterChange={setPastFilter}
-							onVibeChange={setVibe}
-						/>
+						<FilterBar />
+						{starredEvents.length > 0 && (
+							<div id="starred-section">
+								<div className="section-label">saved</div>
+								<EventGrid events={starredEvents} isTopPick={false} />
+							</div>
+						)}
 						{picks.length > 0 && (
 							<div id="top-picks-section">
 								<div className="section-label">picks</div>
-								<EventGrid
-									events={picks}
-									isTopPick={true}
-									dateRange={dateRange}
-									activeTags={activeTags}
-									onTagClick={toggleTag}
-									isEventPast={isEventPast}
-								/>
+								<EventGrid events={picks} isTopPick={true} />
 							</div>
 						)}
 						<div className="section-label">all events</div>
 						<div className="separator" />
-						<EventGrid
-							events={rest}
-							isTopPick={false}
-							dateRange={dateRange}
-							activeTags={activeTags}
-							onTagClick={toggleTag}
-							isEventPast={isEventPast}
-						/>
+						<EventGrid events={rest} isTopPick={false} />
 					</>
 				)}
 			</main>
 		</>
+	);
+}
+
+export default function App() {
+	return (
+		<EventsProvider>
+			<AppShell />
+		</EventsProvider>
 	);
 }

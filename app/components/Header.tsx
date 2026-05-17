@@ -1,26 +1,13 @@
 import { Calendar, Moon, Sun } from "lucide-react";
-import type { City, CityData } from "../types";
+import { useEventsContext } from "../context";
 import { fmtRange } from "../utils/dates";
 
-interface Props {
-	cities: City[];
-	cityKey: string;
-	cityData: CityData | null;
-	theme: "light" | "dark";
-	onCityChange: (key: string) => void;
-	onThemeToggle: () => void;
-}
+export default function Header() {
+	const { filtered, cities, cityKey, setCity, cityData, theme, toggleTheme } =
+		useEventsContext();
 
-export default function Header({
-	cities,
-	cityKey,
-	cityData,
-	theme,
-	onCityChange,
-	onThemeToggle,
-}: Props) {
 	const meta = cityData
-		? `${fmtRange(cityData.week_start, cityData.week_end)} · ${cityData.events.length} events`
+		? `${fmtRange(cityData.week_start, cityData.week_end)} · ${filtered.length} events this week`
 		: "loading…";
 
 	return (
@@ -32,7 +19,7 @@ export default function Header({
 					<select
 						className="city-select"
 						value={cityKey}
-						onChange={(e) => onCityChange(e.target.value)}
+						onChange={(e) => setCity(e.target.value)}
 					>
 						{cities.map((c) => (
 							<option key={c.key} value={c.key}>
@@ -56,7 +43,7 @@ export default function Header({
 					type="button"
 					className="theme-btn"
 					aria-label="Toggle dark mode"
-					onClick={onThemeToggle}
+					onClick={toggleTheme}
 				>
 					{theme === "dark" ? (
 						<Sun size={12} strokeWidth={2} />

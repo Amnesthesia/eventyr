@@ -1,124 +1,94 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { dirname, relative } from "node:path";
 import {
 	fmtDate,
 	getWeekRange,
 	loadCityConfig,
-	PROJECT_ROOT,
-	rawPath,
 	requireEnv,
-	toISODate,
 } from "./common.ts";
 import { AnthropicProvider } from "./providers/anthropic.ts";
-import type { BaseProvider, ProviderOptions } from "./providers/base.ts";
+import type { BaseProvider } from "./providers/base.ts";
 import { GoogleProvider } from "./providers/google.ts";
 import { OpenAIProvider } from "./providers/openai.ts";
-
-const VALID_TIERS = [
-	"aggregators",
-	"institutions",
-	"independents",
-	"open",
-] as const;
-type Tier = (typeof VALID_TIERS)[number];
+import { PerplexityProvider } from "./providers/perplexity.ts";
 
 const CITY = requireEnv("CITY");
-
-const TIER = (process.argv[2] || process.env.TIER || "") as Tier;
-if (!VALID_TIERS.includes(TIER)) {
-	throw new Error(
-		"Usage: collection.ts <aggregators|institutions|independents|open>\n" +
-			"       (or set TIER env var)",
-	);
-}
-
+const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
 const FORCE = ["1", "true", "yes"].includes(
 	(process.env.FORCE ?? "").toLowerCase(),
 );
 const cityCfg = loadCityConfig(CITY);
 const { monday, sunday } = getWeekRange();
 
-function alreadyCollected(provider: string): boolean {
-	const path = rawPath(CITY, provider, TIER);
-	if (!existsSync(path)) return false;
-	try {
-		const payload = JSON.parse(readFileSync(path, "utf-8"));
-		return payload.week_start === toISODate(monday);
-	} catch {
-		return false;
-	}
+// Curation always uses Gemini 2.5 Flash regardless of search provider
+const google = new GoogleProvider(GOOGLE_API_KEY);
+const curate = google.curate.bind(google);
+
+// Optional: pnpm collect [provider]  — e.g. "pnpm collect gemini"
+const PROVIDER_ARG = (process.argv[2] ?? "").toLowerCase();
+
+const ALIASES: Record<string, string> = {
+	gemini: "google",
+	claude: "anthropic",
+	chatgpt: "openai",
+};
+
+function resolveAlias(name: string): string {
+	return ALIASES[name] ?? name;
 }
 
-function writeRaw(provider: string, rawText: string): void {
-	const payload = {
-		city_key: CITY,
-		tier: TIER,
-		week_start: toISODate(monday),
-		week_end: toISODate(sunday),
-		raw_text: rawText,
-	};
-	const path = rawPath(CITY, provider, TIER);
-	mkdirSync(dirname(path), { recursive: true });
-	writeFileSync(path, JSON.stringify(payload, null, 2), "utf-8");
-	console.log(`  → Written ${relative(PROJECT_ROOT, path)}`);
+function buildAllProviders(): BaseProvider[] {
+	const providers: BaseProvider[] = [];
+	if (process.env.ANTHROPIC_API_KEY) {
+		providers.push(new AnthropicProvider(process.env.ANTHROPIC_API_KEY));
+	}
+	if (process.env.PERPLEXITY_API_KEY) {
+		providers.push(new PerplexityProvider(process.env.PERPLEXITY_API_KEY));
+	}
+	if (process.env.OPENAI_API_KEY) {
+		providers.push(new OpenAIProvider(process.env.OPENAI_API_KEY));
+	}
+	providers.push(new GoogleProvider(GOOGLE_API_KEY));
+	return providers;
 }
 
-async function runProvider(provider: BaseProvider): Promise<void> {
-	if (!FORCE && alreadyCollected(provider.name)) {
-		console.log(`  → [${provider.name}/${TIER}] Already collected — skipping`);
-		return;
-	}
-	try {
-		const opts: ProviderOptions = {
-			cityCfg,
-			tier: TIER,
-			weekStart: monday,
-			weekEnd: sunday,
-		};
-		const { rawText } = await provider.searchEvents(opts);
-		writeRaw(provider.name, rawText);
-	} catch (err) {
-		console.error(`  ⚠ [${provider.name}/${TIER}] ${(err as Error).message}`);
+function buildProvider(name: string): BaseProvider {
+	switch (resolveAlias(name)) {
+		case "google":
+			return new GoogleProvider(GOOGLE_API_KEY);
+		case "perplexity":
+			if (!process.env.PERPLEXITY_API_KEY)
+				throw new Error("PERPLEXITY_API_KEY not set");
+			return new PerplexityProvider(process.env.PERPLEXITY_API_KEY);
+		case "anthropic":
+			if (!process.env.ANTHROPIC_API_KEY)
+				throw new Error("ANTHROPIC_API_KEY not set");
+			return new AnthropicProvider(process.env.ANTHROPIC_API_KEY);
+		case "openai":
+			if (!process.env.OPENAI_API_KEY)
+				throw new Error("OPENAI_API_KEY not set");
+			return new OpenAIProvider(process.env.OPENAI_API_KEY);
+		default:
+			throw new Error(
+				`Unknown provider: "${name}". Valid names: google (gemini), perplexity, anthropic (claude), openai (chatgpt)`,
+			);
 	}
 }
 
 async function main(): Promise<void> {
 	const cityName = cityCfg.name;
 	console.log(
-		`[${TIER}] ${cityName} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
+		`Collecting — ${cityName} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
 	);
 
-	const providers: BaseProvider[] = [];
+	const providers = PROVIDER_ARG
+		? [buildProvider(PROVIDER_ARG)]
+		: buildAllProviders();
 
-	if (TIER !== "open" && process.env.ANTHROPIC_API_KEY) {
-		providers.push(new AnthropicProvider(process.env.ANTHROPIC_API_KEY));
-	}
-	if (process.env.PERPLEXITY_API_KEY) {
-		providers.push(
-			new OpenAIProvider(
-				process.env.PERPLEXITY_API_KEY,
-				"https://api.perplexity.ai",
-				"sonar-pro",
-				"perplexity",
-			),
-		);
-	}
-	if (process.env.GOOGLE_API_KEY) {
-		providers.push(new GoogleProvider(process.env.GOOGLE_API_KEY));
-	}
-
-	if (providers.length === 0) {
-		if (TIER === "open") {
-			console.log("  → [open] No provider keys — skipping open tier");
-			return;
-		}
-		throw new Error(
-			"✗ No API keys set (need at least one of ANTHROPIC_API_KEY, PERPLEXITY_API_KEY, GOOGLE_API_KEY).",
-		);
-	}
-
-	await Promise.all(providers.map(runProvider));
-	console.log(`  ✓ [${TIER}] Collection complete.`);
+	await Promise.all(
+		providers.map((p) =>
+			p.collect(CITY, cityCfg, monday, sunday, FORCE, curate),
+		),
+	);
+	console.log("✓ Collection complete.");
 }
 
 await main();

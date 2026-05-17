@@ -22,6 +22,8 @@ on:
         required: false
       PERPLEXITY_API_KEY:
         required: false
+      OPENAI_API_KEY:
+        required: false
       GOOGLE_API_KEY:
         required: false
       WHATSAPP_TOKEN:
@@ -77,31 +79,26 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Collect events (parallel)
+      - name: Collect events
         env:
           CITY: ${{ inputs.city }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force }}
-        run: |
-          pnpm tsx --tsconfig tsconfig.scripts.json src/collection.ts aggregators &
-          pnpm tsx --tsconfig tsconfig.scripts.json src/collection.ts institutions &
-          pnpm tsx --tsconfig tsconfig.scripts.json src/collection.ts independents &
-          pnpm tsx --tsconfig tsconfig.scripts.json src/collection.ts open         &
-          wait
+        run: pnpm collect
 
       - name: Curate events
         env:
           CITY: ${{ inputs.city }}
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/curate.ts
+        run: pnpm curate
 
       - name: Rank events
         env:
           CITY: ${{ inputs.city }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force }}
         run: pnpm tsx --tsconfig tsconfig.scripts.json src/rank.ts
 
@@ -128,7 +125,7 @@ jobs:
           git add "data/${CITY}.json" \
                   "data/${CITY}/" \
                   "${CITY^^}.md" "${CITY}.ics" "data/index.json" \
-                  index.html dist/
+                  sitemap.xml index.html dist/
           git diff --cached --quiet || git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           git push
 

@@ -1,12 +1,29 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { DATA_ROOT, TOP_PICK_THRESHOLD, toISODate } from "./common.ts";
+import { DATA_ROOT, PROJECT_ROOT, TOP_PICK_THRESHOLD, toISODate } from "./common.ts";
+
+const BASE_URL = "https://www.dothings.lol";
+
+function buildSitemap(
+	cities: Array<{ key: string; generated_at: string }>,
+	today: string,
+): string {
+	const urls = [
+		`  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+		...cities.map(
+			(c) =>
+				`  <url>\n    <loc>${BASE_URL}/?city=${c.key}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`,
+		),
+	];
+	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
+}
 
 function main(): void {
 	mkdirSync(DATA_ROOT, { recursive: true });
 
 	const cities: Record<string, unknown>[] = [];
+	const cityMeta: Array<{ key: string; generated_at: string }> = [];
 
 	const jsonFiles = readdirSync(DATA_ROOT)
 		.filter(
@@ -33,19 +50,30 @@ function main(): void {
 					(e) => ((e.score as number) ?? 0) >= TOP_PICK_THRESHOLD,
 				).length,
 			});
+			cityMeta.push({
+				key: payload.city_key as string,
+				generated_at: (payload.generated_at as string) ?? toISODate(new Date()),
+			});
 		} catch {
 			console.log(`⚠ Skipping ${f} — could not parse`);
 		}
 	}
 
+	const today = toISODate(new Date());
+
 	const index = {
-		generated_at: toISODate(new Date()),
+		generated_at: today,
 		cities,
 	};
 
 	const outPath = join(DATA_ROOT, "index.json");
 	writeFileSync(outPath, JSON.stringify(index, null, 2), "utf-8");
 	console.log(`→ Written ${outPath} (${cities.length} city/cities)`);
+
+	const sitemapPath = join(PROJECT_ROOT, "sitemap.xml");
+	writeFileSync(sitemapPath, buildSitemap(cityMeta, today), "utf-8");
+	console.log(`→ Written ${sitemapPath}`);
+
 	console.log("✓ Pages index complete.");
 }
 

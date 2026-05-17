@@ -1,22 +1,31 @@
-import { CalendarDays, MapPin } from "lucide-react";
+import {
+	CalendarDays,
+	MapPin,
+	Star,
+	Bookmark,
+	BookmarkCheck,
+} from "lucide-react";
+import { useEventsContext } from "../context";
 import type { Event } from "../types";
 import { CategoryIcon } from "./CategoryIcon";
+import { useMemo } from "react";
 
 interface Props {
 	event: Event;
 	isTopPick: boolean;
-	activeTags: string[];
-	onTagClick: (tag: string) => void;
-	isPast?: boolean;
+	isPast: boolean;
+	isStarred: boolean;
+	onStarClick: () => void;
 }
 
 export default function EventCard({
 	event,
 	isTopPick,
-	activeTags,
-	onTagClick,
-	isPast = false,
+	isPast,
+	isStarred,
+	onStarClick,
 }: Props) {
+	const { activeTags, toggleTag } = useEventsContext();
 	const free = /free/.test((event.cost || "").toLowerCase());
 
 	const classes = [
@@ -32,6 +41,12 @@ export default function EventCard({
 		? ({ "--event-image": `url('${event.image}')` } as React.CSSProperties)
 		: undefined;
 
+	const cost = useMemo(() => {
+		if (free) return "free";
+		if (!event.cost) return "Not specified";
+		if (/ticketed/i.test(event.cost)) return "Ticketed";
+		return event.cost;
+	}, [event.cost, free]);
 	return (
 		<article className={classes} style={style}>
 			<div className="card-top">
@@ -39,9 +54,29 @@ export default function EventCard({
 					<CategoryIcon name={event.category} size={11} strokeWidth={2.2} />
 					{event.category}
 				</span>
-				<span className={`card-cost${free ? " free" : ""}`}>
-					{free ? "free" : event.cost || "—"}
-				</span>
+
+				<div className="card-top-right">
+					<span className={`card-cost${free ? " free" : ""}`}>
+						{free || /free/.test(cost || "") ? "free" : cost || "—"}
+					</span>
+					<button
+						type="button"
+						className={`star-btn${isStarred ? " starred" : ""}`}
+						onClick={(e) => {
+							e.preventDefault();
+							onStarClick();
+						}}
+						aria-label={isStarred ? "Remove from saved" : "Save event"}
+						aria-pressed={isStarred}
+						style={{ position: "absolute", top: 0, right: 4 }}
+					>
+						{isStarred ? (
+							<BookmarkCheck size={18} strokeWidth={2} />
+						) : (
+							<Bookmark size={18} strokeWidth={2} />
+						)}
+					</button>
+				</div>
 			</div>
 			<h3 className="card-title">
 				{isTopPick && <em className="top-mark">✦</em>}
@@ -64,21 +99,21 @@ export default function EventCard({
 				</span>
 			</div>
 			{event.description && <p className="card-desc">{event.description}</p>}
-			{event.tags && event.tags.length > 0 && (
+			<div className="card-bottom">
 				<div className="card-tags">
 					{event.tags.slice(0, 5).map((tag) => (
 						<button
 							type="button"
 							key={tag}
 							className={`tag tag-btn${activeTags.includes(tag) ? " active" : ""}`}
-							onClick={() => onTagClick(tag)}
+							onClick={() => toggleTag(tag)}
 							aria-pressed={activeTags.includes(tag)}
 						>
 							{tag}
 						</button>
 					))}
 				</div>
-			)}
+			</div>
 		</article>
 	);
 }

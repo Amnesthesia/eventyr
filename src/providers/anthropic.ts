@@ -8,6 +8,7 @@ const MAX_WEB_SEARCHES = 12;
 
 export class AnthropicProvider extends BaseProvider {
 	readonly name = "anthropic";
+	readonly tiers = ["aggregators", "institutions", "independents"] as const;
 	private client: Anthropic;
 
 	constructor(apiKey: string) {
@@ -49,7 +50,9 @@ export class AnthropicProvider extends BaseProvider {
 			.join("");
 
 		this.validateRaw(rawText, label);
-		return { rawText };
+
+		const events = await opts.curate(rawText, opts.cityCfg.name, label);
+		return { events };
 	}
 
 	async findSources(cityName: string): Promise<SourceResult> {

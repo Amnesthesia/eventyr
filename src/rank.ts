@@ -1,6 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import Anthropic from "@anthropic-ai/sdk";
+import { GoogleGenAI } from "@google/genai";
 
 import {
 	DATA_ROOT,
@@ -12,7 +12,7 @@ import {
 } from "./common.ts";
 
 const CITY = requireEnv("CITY");
-const ANTHROPIC_API_KEY = requireEnv("ANTHROPIC_API_KEY");
+const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
 const FORCE = ["1", "true", "yes"].includes(
 	(process.env.FORCE ?? "").toLowerCase(),
 );
@@ -96,24 +96,28 @@ async function main(): Promise<void> {
 		`Ranking — ${payload.city as string} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
 	);
 	console.log("=".repeat(50));
-	console.log(`→ Scoring ${events.length} events with claude-sonnet-4-6…`);
+	console.log(`→ Scoring ${events.length} events with gemini-2.5-flash…`);
 
-	const client = new Anthropic({ apiKey: ANTHROPIC_API_KEY });
-	const response = await client.messages.create({
-		model: "claude-sonnet-4-6",
-		max_tokens: 2048,
-		system: RANK_SYSTEM,
-		messages: [{ role: "user", content: buildRankUser(events) }],
+	const ai = new GoogleGenAI({ apiKey: GOOGLE_API_KEY });
+	const response = await ai.models.generateContent({
+		model: "gemini-2.5-flash",
+		contents: buildRankUser(events),
+		config: {
+			systemInstruction: RANK_SYSTEM,
+			maxOutputTokens: 8192,
+			responseMimeType: "application/json",
+			thinkingConfig: { thinkingBudget: 0 },
+		},
 	});
 
-	const rawText =
-		response.content[0].type === "text" ? response.content[0].text : "";
+	const rawText = response.text ?? "";
 	const scores = parseScores(rawText);
 
 	if (!scores) {
 		console.warn(
 			"  ⚠ Could not parse scores from response — assigning neutral score 5 to all events",
 		);
+		console.warn(`  raw response: ${rawText.slice(0, 300)}`);
 		for (const e of events) e.score = 5;
 	} else {
 		for (const { index, score } of scores) {
