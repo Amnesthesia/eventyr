@@ -489,6 +489,27 @@ article.card.has-image > * {
 	margin-top: 2px;
 }
 
+/* -- Buy me a Coffee */
+#bmc-wbtn {
+	width: 32px !important;
+	height: 32px !important;
+}
+
+#bmc-wbtn:hover {
+	/* Transform size increase on hover while maintaining the 32px hit area */
+	width: 48px !important;
+	height: 48px !important;
+	transition:
+		width 0.12s,
+		height 0.12s;
+}
+
+#bmc-wbtn > img {
+	object-fit: contain;
+	width: auto !important;
+	height: 70% !important;
+}
+
 /* ── Description ── */
 .card-desc {
 	font-size: 0.8rem;

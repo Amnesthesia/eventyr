@@ -63,7 +63,7 @@ export function useEvents(cityKey: string) {
 				setCityData(data);
 
 				const cityUrl = `${BASE_URL}/?city=${data.city_key}`;
-				const desc = `This week in ${data.city} (${data.week_start} to ${data.week_end}): ${data.events.length} curated events — talks, workshops, live music, art, and more.`;
+				const desc = `This week in ${data.city} (${data.week_start} to ${data.week_end}): ${data.events.length} curated events — talks, workshops, live music, art, and more. AI-curated using Claude, Gemini, Perplexity and ChatGPT.`;
 				const ogTitle = `${data.city} — do things`;
 
 				document.title = ogTitle;
