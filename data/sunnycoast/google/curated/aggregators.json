@@ -1,0 +1,193 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "google",
+  "tier": "aggregators",
+  "week_start": "2026-05-18",
+  "week_end": "2026-05-24",
+  "events": [
+    {
+      "title": "Relax & Regulate – Monthly TRE Session",
+      "datetime": "Thu 21 May, 6:00 PM - 7:00 PM",
+      "location": "Sunshine Coast region",
+      "link": "",
+      "category": "Workshop / Class",
+      "cost": "",
+      "source": "Locals in the Loop",
+      "description": "A monthly session focusing on Trauma Release Exercises (TRE), a body-based technique to release stress and tension. This is a wellness-oriented movement workshop for relaxation and regulation.",
+      "tags": [
+        "wellness",
+        "movement",
+        "breathwork",
+        "monthly"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-05-21T18:00:00",
+      "datetime_end_iso": "2026-05-21T19:00:00",
+      "image": ""
+    },
+    {
+      "title": "DIGS & DECKS: Vinyl Night",
+      "datetime": "Thu 21 May, 5:30 PM - 8:30 PM",
+      "location": "Sunshine Coast region",
+      "link": "",
+      "category": "Social / Meetup",
+      "cost": "",
+      "source": "Locals in the Loop",
+      "description": "An evening dedicated to vinyl records, likely involving listening to or sharing music in a relaxed atmosphere. This event appeals to music enthusiasts and encourages casual social interaction.",
+      "tags": [
+        "music",
+        "social",
+        "vinyl",
+        "local"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-05-21T17:30:00",
+      "datetime_end_iso": "2026-05-21T20:30:00",
+      "image": ""
+    },
+    {
+      "title": "Nambour Toastmasters Club Meeting",
+      "datetime": "Thu 21 May, 6:30 PM",
+      "location": "Nambour",
+      "link": "",
+      "category": "Social / Meetup",
+      "cost": "",
+      "source": "Toastmasters International",
+      "description": "A regular meeting of the Nambour Toastmasters Club, focusing on developing public speaking, communication, and leadership skills. This community event fosters intellectual engagement and confidence building in a supportive environment.",
+      "tags": [
+        "public-speaking",
+        "community",
+        "intellectual",
+        "nambour"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-05-21T18:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Kenilworth ArtsFest",
+      "datetime": "Fri 22 May - Sun 24 May, All Day",
+      "location": "Kenilworth",
+      "link": "",
+      "category": "Arts / Exhibition",
+      "cost": "",
+      "source": "Kenilworth local listings",
+      "description": "An annual arts festival showcasing local and regional artistic talent in Kenilworth. Expect exhibitions, potentially workshops, and a vibrant community atmosphere celebrating creativity.",
+      "tags": [
+        "art",
+        "festival",
+        "community",
+        "exhibition"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-05-22T09:00:00",
+      "datetime_end_iso": "2026-05-24T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Weekend Away - Spirit House Cooking Class/Dinner",
+      "datetime": "Fri 22 May, 2:00 PM",
+      "location": "Spirit House, Sunshine Coast Hinterland",
+      "link": "",
+      "category": "Workshop / Class",
+      "cost": "A$433.00",
+      "source": "Brisbane's Alcohol Free Social Group",
+      "description": "A cooking class and dinner experience at the renowned Spirit House, organised by an alcohol-free social group. Participants will learn new culinary skills in a hands-on environment, followed by a shared meal.",
+      "tags": [
+        "cooking",
+        "workshop",
+        "social",
+        "alcohol-free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-05-22T14:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Russian meetup",
+      "datetime": "Fri 22 May, 7:30 AM",
+      "location": "Maroochydore",
+      "link": "https://allevents.in/maroochydore/russian-meetup/200026214571730",
+      "category": "Social / Meetup",
+      "cost": "",
+      "source": "Elena Brennan (via Allevents.in)",
+      "description": "A community meetup for Russian speakers and those interested in Russian culture on the Sunshine Coast. This is an opportunity for language practice and social connection in a relaxed setting.",
+      "tags": [
+        "language",
+        "social",
+        "community",
+        "maroochydore"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-05-22T07:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Invasive Weeds Project Community Information Day - Witta",
+      "datetime": "Sat 23 May, 9:00 AM",
+      "location": "Witta demonstration site (Curramore Rd Stockpile)",
+      "link": "",
+      "category": "Community / Other",
+      "cost": "",
+      "source": "Eventbrite",
+      "description": "A community information day focused on the Invasive Weeds Project in Witta. Learn about local environmental efforts and potentially participate in hands-on activities related to weed management and local ecology.",
+      "tags": [
+        "environment",
+        "community",
+        "gardening",
+        "witta"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-05-23T09:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Emu Mountain, Coolum Beach & Stumers Creek Loop",
+      "datetime": "Sun 24 May, 8:00 AM",
+      "location": "Emu Mountain, Coolum Beach area",
+      "link": "",
+      "category": "Social / Meetup",
+      "cost": "",
+      "source": "Women's Walk And Talk - Sunshine Coast (Meetup)",
+      "description": "A social hiking and walking event exploring the natural beauty of Emu Mountain, Coolum Beach, and Stumers Creek. This is an outdoor adventure for women to connect, exercise, and enjoy nature.",
+      "tags": [
+        "hiking",
+        "outdoor",
+        "social",
+        "coolum-beach"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-05-24T08:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}
