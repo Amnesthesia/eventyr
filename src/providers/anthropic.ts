@@ -1,6 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
+import { CATEGORIES, fmtDate, INTERESTS } from "../common.ts";
 import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
-import { BaseProvider } from "./base.ts";
+import { BaseProvider, TIER_INSTRUCTIONS } from "./base.ts";
 
 const SEARCH_MODEL = "claude-sonnet-4-6";
 const DISCOVERY_MODEL = "claude-opus-4-7";
@@ -17,11 +18,43 @@ export class AnthropicProvider extends BaseProvider {
 	}
 
 	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
-		const { tier } = opts;
+		const { cityCfg, tier, weekStart, weekEnd } = opts;
+		const cityName = cityCfg.name;
 		const label = `anthropic/${tier}`;
 		console.log(`  [${label}] Searching…`);
 
-		const system = this.buildSearchSystem(opts);
+		const sources = cityCfg.sources[tier as keyof typeof cityCfg.sources] ?? [];
+		const sourceList = sources.map((s) => `  - ${s}`).join("\n");
+		const tierInstruction = TIER_INSTRUCTIONS[tier] ?? "";
+		const today = new Date();
+
+		const system: Anthropic.TextBlockParam[] = [
+			{
+				type: "text",
+				text:
+					`The person you are researching events for has the following interests:\n${INTERESTS}\n\n` +
+					`For each event you find, note:\n` +
+					`  - Event name\n  - Date and time\n  - Venue / location (suburb)\n` +
+					`  - Ticket link or event page URL\n  - Cost (free or price)\n` +
+					`  - Category: one of ${JSON.stringify(CATEGORIES)}\n` +
+					`  - Source website\n  - Brief description of what the event is\n\n` +
+					`Rules:\n` +
+					`  - Only include events within the given week range.\n` +
+					`  - Do not list sports, MLM, or sales-pitch events.\n` +
+					`  - Aim for at least 15 events.\n` +
+					`  - Include the direct URL for every event you list.`,
+				cache_control: { type: "ephemeral" },
+			},
+			{
+				type: "text",
+				text:
+					`You are an events researcher for ${cityName}. Today is ${today.toLocaleDateString("en-AU", { weekday: "long", day: "numeric", month: "long", year: "numeric" })}.\n` +
+					`Your job is to find in-person events happening THIS WEEK in ${cityName}:\n` +
+					`${fmtDate(weekStart)} to ${fmtDate(weekEnd)}.\n\n` +
+					`Sources to search (${tier.toUpperCase()}):\n${tierInstruction}\n\n${sourceList}`,
+			},
+		];
+
 		const userMsg = this.buildSearchUser(opts);
 
 		const response = await this.client.messages.create({
@@ -42,7 +75,9 @@ export class AnthropicProvider extends BaseProvider {
 		const searchCalls = response.content.filter(
 			(b) => b.type === "server_tool_use",
 		).length;
-		console.log(`  [${label}] ${searchCalls} web search(es)`);
+		const cacheRead = response.usage.cache_read_input_tokens ?? 0;
+		const cacheWrite = response.usage.cache_creation_input_tokens ?? 0;
+		console.log(`  [${label}] ${searchCalls} web search(es) | cache: ${cacheRead} read / ${cacheWrite} write`);
 
 		const rawText = response.content
 			.filter((b): b is Anthropic.TextBlock => b.type === "text")

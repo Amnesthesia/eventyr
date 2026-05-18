@@ -34,7 +34,7 @@ export interface ProviderOptions {
 	curate: CurateFunction;
 }
 
-const TIER_INSTRUCTIONS: Record<string, string> = {
+export const TIER_INSTRUCTIONS: Record<string, string> = {
 	aggregators:
 		"These sources often list the same events as each other. " +
 		"Batch them into 1–2 broad `site:A OR site:B` queries — " +
