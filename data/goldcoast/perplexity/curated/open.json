@@ -1,0 +1,101 @@
+{
+  "city_key": "goldcoast",
+  "provider": "perplexity",
+  "tier": "open",
+  "week_start": "2026-05-18",
+  "week_end": "2026-05-24",
+  "events": [
+    {
+      "title": "Blues on Broadbeach 2026",
+      "datetime": "Mon 18 May, 9:00 AM",
+      "location": "Various outdoor stages around Surf Parade, Broadbeach",
+      "link": "https://www.dorsetthotels.com/dorsett-gold-coast/events-happenings/gold-coast-events-2026.html",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "Dorsett Hotels",
+      "description": "A large, free rhythm and blues festival transforming central Broadbeach with multiple outdoor stages and pop-up venues featuring international and Australian blues, soul, and roots artists.",
+      "tags": [
+        "music festival",
+        "blues",
+        "live music",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-05-18T09:00:00",
+      "datetime_end_iso": "2026-05-21T23:59:00",
+      "image": ""
+    },
+    {
+      "title": "Candlelight: Tribute to Queen",
+      "datetime": "Thu 21 May, 7:00 PM",
+      "location": "Gold Coast (venue TBC)",
+      "link": "https://experiencegoldcoast.com/events",
+      "category": "Concert / Music",
+      "cost": "",
+      "source": "Experience Gold Coast",
+      "description": "An intimate candlelit concert featuring a string ensemble performing arranged Queen classics in an atmospheric Gold Coast venue, part of the city’s 2026 Candlelight series.",
+      "tags": [
+        "classical",
+        "music",
+        "intimate",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-05-21T19:00:00",
+      "datetime_end_iso": "2026-05-21T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "James Alexander's Soul Sundays",
+      "datetime": "Sun 24 May, 4:00 PM",
+      "location": "Gold Coast (venue TBC)",
+      "link": "https://experiencegoldcoast.com/events",
+      "category": "Concert / Music",
+      "cost": "",
+      "source": "Experience Gold Coast",
+      "description": "A recurring Sunday soul and R&B session led by James Alexander with a live band, creating a laid-back, end-of-week atmosphere as part of a long-running series.",
+      "tags": [
+        "soul",
+        "r&b",
+        "live music",
+        "recurring"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-05-24T16:00:00",
+      "datetime_end_iso": "2026-05-24T19:00:00",
+      "image": ""
+    },
+    {
+      "title": "Comedy Underground (weekly Saturday)",
+      "datetime": "Sat 23 May, 8:00 PM",
+      "location": "Gold Coast (venue TBC)",
+      "link": "https://experiencegoldcoast.com/events",
+      "category": "Arts / Exhibition",
+      "cost": "",
+      "source": "Experience Gold Coast",
+      "description": "A weekly underground stand-up comedy night showcasing local and touring comedians in an intimate setting, with a grassroots community vibe encouraging social drinks.",
+      "tags": [
+        "comedy",
+        "stand-up",
+        "community",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-05-23T20:00:00",
+      "datetime_end_iso": "2026-05-23T22:00:00",
+      "image": ""
+    }
+  ]
+}

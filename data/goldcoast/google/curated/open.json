@@ -1,0 +1,55 @@
+{
+  "city_key": "goldcoast",
+  "provider": "google",
+  "tier": "open",
+  "week_start": "2026-05-18",
+  "week_end": "2026-05-24",
+  "events": [
+    {
+      "title": "Pint of Science Festival",
+      "datetime": "Mon 18 May",
+      "location": "Miami",
+      "link": "",
+      "category": "Public Lecture",
+      "cost": "",
+      "source": "Pint of Science",
+      "description": "The international Pint of Science festival brings engaging science talks on topics like brains and health to a public audience, held in an informal setting.",
+      "tags": [
+        "science",
+        "lecture",
+        "public",
+        "intellectual"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-05-18",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Social Games at Broadbeach Library",
+      "datetime": "Mon 18 May, 2:00 PM",
+      "location": "Broadbeach Library",
+      "link": "",
+      "category": "Social / Meetup",
+      "cost": "Free",
+      "source": "Broadbeach Library",
+      "description": "A free weekly community event at Broadbeach Library for playing board, card, and word games, designed to foster social interaction and help attendees make new friends.",
+      "tags": [
+        "games",
+        "social",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-05-18T14:00:00",
+      "datetime_end_iso": "2026-05-18T16:00:00",
+      "image": ""
+    }
+  ]
+}

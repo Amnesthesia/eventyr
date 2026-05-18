@@ -1,0 +1,124 @@
+{
+  "city_key": "goldcoast",
+  "provider": "google",
+  "tier": "aggregators",
+  "week_start": "2026-05-18",
+  "week_end": "2026-05-24",
+  "events": [
+    {
+      "title": "Mob Makers Meet",
+      "datetime": "Mon 18 May, 7:00 PM",
+      "location": "Mermaid Waters",
+      "link": "",
+      "category": "Social / Meetup",
+      "cost": "Unknown",
+      "source": "What's On Gold Coast",
+      "description": "A community meetup and artist talk for First Nations people working in the arts, offering a space for networking, discussion, and connecting with creative peers.",
+      "tags": [
+        "community",
+        "arts",
+        "networking",
+        "first nations"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-05-18T19:00:00",
+      "datetime_end_iso": "2026-05-18T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Pint of Science Festival",
+      "datetime": "Mon 18 May, 7:00 PM",
+      "location": "Miami",
+      "link": "",
+      "category": "Public Lecture",
+      "cost": "Unknown",
+      "source": "What's On Gold Coast",
+      "description": "An evening of engaging science talks and discussions, bringing researchers to local pubs and cafes to share stories about brains, bodies, and health with a general audience.",
+      "tags": [
+        "science",
+        "lecture",
+        "discussion",
+        "health"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-05-18T19:00:00",
+      "datetime_end_iso": "2026-05-18T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "19-Twenty & Greg Nunan and The General Jacksons Live",
+      "datetime": "Fri 22 May, 8:00 PM",
+      "location": "Wallaby Hotel",
+      "link": "",
+      "category": "Concert / Music",
+      "cost": "Unknown",
+      "source": "Gold Coast Music Events",
+      "description": "An evening of live music featuring 19-Twenty and Greg Nunan and The General Jacksons, offering an energetic performance in a local pub setting.",
+      "tags": [
+        "music",
+        "live",
+        "pub",
+        "rock"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-05-22T20:00:00",
+      "datetime_end_iso": "2026-05-22T23:00:00",
+      "image": ""
+    },
+    {
+      "title": "The Man from Snowy River in concert live to film with Southern Cross Symphony",
+      "datetime": "Sat 23 May, 7:00 PM",
+      "location": "The Star Gold Coast",
+      "link": "",
+      "category": "Concert / Music",
+      "cost": "Unknown",
+      "source": "Gold Coast Music Events",
+      "description": "Experience a unique screening of 'The Man from Snowy River' with its iconic score performed live by the Southern Cross Symphony, blending cinematic art with live orchestral music.",
+      "tags": [
+        "music",
+        "symphony",
+        "film",
+        "artistic"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-05-23T19:00:00",
+      "datetime_end_iso": "2026-05-23T21:30:00",
+      "image": ""
+    },
+    {
+      "title": "Saturday Board Games Night",
+      "datetime": "Sat 23 May, 6:00 PM",
+      "location": "The Old Post Office, Mudgeeraba",
+      "link": "",
+      "category": "Social / Meetup",
+      "cost": "Unknown",
+      "source": "Meetup Gold Coast",
+      "description": "A weekly board games night hosted by the Gold Coast Board Games Club, offering a casual and friendly environment to play a variety of games and connect with other enthusiasts.",
+      "tags": [
+        "board games",
+        "social",
+        "community",
+        "meetup"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-05-23T18:00:00",
+      "datetime_end_iso": "2026-05-23T22:00:00",
+      "image": ""
+    }
+  ]
+}
