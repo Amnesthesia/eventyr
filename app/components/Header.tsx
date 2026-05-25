@@ -38,7 +38,7 @@ export default function Header() {
 				{cityKey && (
 					<a
 						className="theme-btn"
-						href={`${cityKey}.ics`}
+						href={`/${cityKey}.ics`}
 						download
 						aria-label="Subscribe to calendar"
 						title="Download calendar (.ics)"
