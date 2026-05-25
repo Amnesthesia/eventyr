@@ -1,7 +1,12 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { DATA_ROOT, PROJECT_ROOT, TOP_PICK_THRESHOLD, toISODate } from "./common.ts";
+import {
+	DATA_ROOT,
+	PROJECT_ROOT,
+	TOP_PICK_THRESHOLD,
+	toISODate,
+} from "./common.ts";
 
 const BASE_URL = "https://www.dothings.lol";
 

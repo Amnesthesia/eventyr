@@ -26,14 +26,14 @@ function CityIntro({ city }: { city: string }) {
 		>
 			Looking for genuinely interesting things to do in <strong>{city}</strong>?{" "}
 			dothings.lol is a curated event discovery platform that aggregates events
-			from dozens of local sources and uses multiple AI models to filter and rank
-			them — highlighting workshops, meetups, live music, community events, art
-			classes, outdoor activities, talks, markets, and unique experiences worth
-			leaving the house for, without the clutter or spam found on most event
-			websites. Whether you're searching for things to do in Brisbane this
+			from dozens of local sources and uses multiple AI models to filter and
+			rank them — highlighting workshops, meetups, live music, community events,
+			art classes, outdoor activities, talks, markets, and unique experiences
+			worth leaving the house for, without the clutter or spam found on most
+			event websites. Whether you're searching for things to do in Brisbane this
 			weekend, creative events on the Gold Coast, or social activities on the
-			Sunshine Coast, dothings.lol helps you discover high-signal local events in
-			one clean, minimal interface without ads.
+			Sunshine Coast, dothings.lol helps you discover high-signal local events
+			in one clean, minimal interface without ads.
 		</article>
 	);
 }

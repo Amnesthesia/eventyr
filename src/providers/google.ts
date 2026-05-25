@@ -9,7 +9,12 @@ const RETRY_DELAYS = [10_000, 30_000, 90_000];
 
 export class GoogleProvider extends BaseProvider {
 	readonly name = "google";
-	readonly tiers = ["aggregators", "institutions", "independents", "open"] as const;
+	readonly tiers = [
+		"aggregators",
+		"institutions",
+		"independents",
+		"open",
+	] as const;
 	private ai: GoogleGenAI;
 
 	constructor(apiKey: string) {

@@ -161,7 +161,15 @@ export function EventsProvider({
 
 			return catOk && dateOk && tagsOk && vibeOk;
 		});
-	}, [cityData, activeCat, dateRange, activeTags, pastFilter, vibeFilters, todayStr]);
+	}, [
+		cityData,
+		activeCat,
+		dateRange,
+		activeTags,
+		pastFilter,
+		vibeFilters,
+		todayStr,
+	]);
 
 	const categories = useMemo(
 		() => [...new Set(filtered.map((e) => e.category).filter(Boolean))],

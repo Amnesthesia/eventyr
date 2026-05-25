@@ -74,9 +74,10 @@ export abstract class BaseProvider {
 
 			if (!force && existsSync(outPath)) {
 				try {
-					const payload = JSON.parse(
-						readFileSync(outPath, "utf-8"),
-					) as Record<string, unknown>;
+					const payload = JSON.parse(readFileSync(outPath, "utf-8")) as Record<
+						string,
+						unknown
+					>;
 					if (payload.week_start === toISODate(weekStart)) {
 						console.log(
 							`  → [${this.name}/${tier}] Already collected — skipping`,
@@ -89,7 +90,13 @@ export abstract class BaseProvider {
 			}
 
 			try {
-				const opts: ProviderOptions = { cityCfg, tier, weekStart, weekEnd, curate };
+				const opts: ProviderOptions = {
+					cityCfg,
+					tier,
+					weekStart,
+					weekEnd,
+					curate,
+				};
 				const { events } = await this.searchEvents(opts);
 				const payload = {
 					city_key: city,
@@ -103,9 +110,7 @@ export abstract class BaseProvider {
 				writeFileSync(outPath, JSON.stringify(payload, null, 2), "utf-8");
 				console.log(`  → Written ${relative(PROJECT_ROOT, outPath)}`);
 			} catch (err) {
-				console.error(
-					`  ⚠ [${this.name}/${tier}] ${(err as Error).message}`,
-				);
+				console.error(`  ⚠ [${this.name}/${tier}] ${(err as Error).message}`);
 			}
 		}
 	}

@@ -72,5 +72,4 @@ Search deeply across venue websites, local publications, Instagram-linked event 
 		const events = await opts.curate(rawText, cityCfg.name, label);
 		return { events };
 	}
-
 }

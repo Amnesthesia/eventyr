@@ -1,9 +1,4 @@
-import {
-	existsSync,
-	readdirSync,
-	readFileSync,
-	writeFileSync,
-} from "node:fs";
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import {
 	DATA_ROOT,

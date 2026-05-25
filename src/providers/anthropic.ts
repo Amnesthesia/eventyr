@@ -77,7 +77,9 @@ export class AnthropicProvider extends BaseProvider {
 		).length;
 		const cacheRead = response.usage.cache_read_input_tokens ?? 0;
 		const cacheWrite = response.usage.cache_creation_input_tokens ?? 0;
-		console.log(`  [${label}] ${searchCalls} web search(es) | cache: ${cacheRead} read / ${cacheWrite} write`);
+		console.log(
+			`  [${label}] ${searchCalls} web search(es) | cache: ${cacheRead} read / ${cacheWrite} write`,
+		);
 
 		const rawText = response.content
 			.filter((b): b is Anthropic.TextBlock => b.type === "text")

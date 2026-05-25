@@ -9,7 +9,8 @@ export default function DateFilter() {
 	const tomorrow = tomorrowIso();
 
 	const isToday = dateRange?.start === today && dateRange?.end === today;
-	const isTomorrow = dateRange?.start === tomorrow && dateRange?.end === tomorrow;
+	const isTomorrow =
+		dateRange?.start === tomorrow && dateRange?.end === tomorrow;
 	const pickerValue = isToday || isTomorrow ? null : dateRange;
 
 	return (
@@ -17,14 +18,18 @@ export default function DateFilter() {
 			<button
 				type="button"
 				className={`filter-btn date-filter${isToday ? " active" : ""}`}
-				onClick={() => setDateRange(isToday ? null : { start: today, end: today })}
+				onClick={() =>
+					setDateRange(isToday ? null : { start: today, end: today })
+				}
 			>
 				Today
 			</button>
 			<button
 				type="button"
 				className={`filter-btn date-filter${isTomorrow ? " active" : ""}`}
-				onClick={() => setDateRange(isTomorrow ? null : { start: tomorrow, end: tomorrow })}
+				onClick={() =>
+					setDateRange(isTomorrow ? null : { start: tomorrow, end: tomorrow })
+				}
 			>
 				Tomorrow
 			</button>

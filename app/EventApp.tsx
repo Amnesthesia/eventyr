@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
-import { EventsProvider } from "./context";
 import AppShell from "./AppShell";
+import { EventsProvider } from "./context";
 import type { City, CityData } from "./types";
 
 interface Props {

@@ -1,14 +1,8 @@
-import {
-	CalendarDays,
-	MapPin,
-	Star,
-	Bookmark,
-	BookmarkCheck,
-} from "lucide-react";
+import { Bookmark, BookmarkCheck, CalendarDays, MapPin } from "lucide-react";
+import { useMemo } from "react";
 import { useEventsContext } from "../context";
 import type { Event } from "../types";
 import { CategoryIcon } from "./CategoryIcon";
-import { useMemo } from "react";
 
 interface Props {
 	event: Event;

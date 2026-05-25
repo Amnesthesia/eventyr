@@ -12,23 +12,23 @@ export const DATA_ROOT = join(PROJECT_ROOT, "data");
 export const SOURCES_ROOT = join(PROJECT_ROOT, "sources");
 
 export const CATEGORIES = [
-  "Public Lecture",
-  "Workshop / Class",
-  "Concert / Music",
-  "Social / Meetup",
-  "Arts / Exhibition",
-  "Community / Other",
+	"Public Lecture",
+	"Workshop / Class",
+	"Concert / Music",
+	"Social / Meetup",
+	"Arts / Exhibition",
+	"Community / Other",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];
 
 export const CATEGORY_EMOJI: Record<string, string> = {
-  "Public Lecture": "🎓",
-  "Workshop / Class": "🛠️",
-  "Concert / Music": "🎵",
-  "Social / Meetup": "🤝",
-  "Arts / Exhibition": "🎨",
-  "Community / Other": "📌",
+	"Public Lecture": "🎓",
+	"Workshop / Class": "🛠️",
+	"Concert / Music": "🎵",
+	"Social / Meetup": "🤝",
+	"Arts / Exhibition": "🎨",
+	"Community / Other": "📌",
 };
 
 export const TOP_PICK_THRESHOLD = 7;
@@ -63,71 +63,71 @@ SKIP ENTIRELY — do not include:
 `;
 
 export interface CityConfig {
-  name: string;
-  timezone?: string;
-  sources: {
-    aggregators: string[];
-    institutions: string[];
-    independents: string[];
-  };
+	name: string;
+	timezone?: string;
+	sources: {
+		aggregators: string[];
+		institutions: string[];
+		independents: string[];
+	};
 }
 
 export function loadCityConfig(cityKey: string): CityConfig {
-  const sourcesPath = join(SOURCES_ROOT, `${cityKey}.yml`);
-  let raw: string;
-  try {
-    raw = readFileSync(sourcesPath, "utf-8");
-  } catch {
-    throw new Error(
-      `Unknown city '${cityKey}'. No file at ${sourcesPath}. Run src/add_city.ts to add it.`,
-    );
-  }
-  return yaml.load(raw) as CityConfig;
+	const sourcesPath = join(SOURCES_ROOT, `${cityKey}.yml`);
+	let raw: string;
+	try {
+		raw = readFileSync(sourcesPath, "utf-8");
+	} catch {
+		throw new Error(
+			`Unknown city '${cityKey}'. No file at ${sourcesPath}. Run src/add_city.ts to add it.`,
+		);
+	}
+	return yaml.load(raw) as CityConfig;
 }
 
 export function getWeekRange(): { monday: Date; sunday: Date } {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  // JS getDay(): 0=Sun, 1=Mon...6=Sat. We want the Monday of the current week.
-  const day = today.getDay();
-  const daysToMonday = day === 0 ? 1 : 1 - day;
-  const monday = new Date(today);
-  monday.setDate(today.getDate() + daysToMonday);
-  const sunday = new Date(monday);
-  sunday.setDate(monday.getDate() + 6);
-  return { monday, sunday };
+	const today = new Date();
+	today.setHours(0, 0, 0, 0);
+	// JS getDay(): 0=Sun, 1=Mon...6=Sat. We want the Monday of the current week.
+	const day = today.getDay();
+	const daysToMonday = day === 0 ? 1 : 1 - day;
+	const monday = new Date(today);
+	monday.setDate(today.getDate() + daysToMonday);
+	const sunday = new Date(monday);
+	sunday.setDate(monday.getDate() + 6);
+	return { monday, sunday };
 }
 
 export function fmtDate(d: Date): string {
-  // e.g. "12 May 2025"
-  return d.toLocaleDateString("en-AU", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+	// e.g. "12 May 2025"
+	return d.toLocaleDateString("en-AU", {
+		day: "numeric",
+		month: "long",
+		year: "numeric",
+	});
 }
 
 export function toISODate(d: Date): string {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
+	const y = d.getFullYear();
+	const m = String(d.getMonth() + 1).padStart(2, "0");
+	const day = String(d.getDate()).padStart(2, "0");
+	return `${y}-${m}-${day}`;
 }
 
 export function requireEnv(name: string): string {
-  const val = process.env[name];
-  if (!val) throw new Error(`${name} env var is required`);
-  return val;
+	const val = process.env[name];
+	if (!val) throw new Error(`${name} env var is required`);
+	return val;
 }
 
 export function rawPath(city: string, provider: string, tier: string): string {
-  return join(DATA_ROOT, city, provider, "raw", `${tier}.json`);
+	return join(DATA_ROOT, city, provider, "raw", `${tier}.json`);
 }
 
 export function curatedPath(
-  city: string,
-  provider: string,
-  tier: string,
+	city: string,
+	provider: string,
+	tier: string,
 ): string {
-  return join(DATA_ROOT, city, provider, "curated", `${tier}.json`);
+	return join(DATA_ROOT, city, provider, "curated", `${tier}.json`);
 }

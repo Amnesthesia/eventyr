@@ -39,7 +39,8 @@ export default function VibeFilter() {
 						className={cls}
 						onClick={() => setVibe(key, CYCLE[state])}
 					>
-						{prefix}{VIBE_LABELS[key]}
+						{prefix}
+						{VIBE_LABELS[key]}
 					</button>
 				);
 			})}

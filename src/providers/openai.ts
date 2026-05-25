@@ -4,7 +4,12 @@ import { BaseProvider } from "./base.ts";
 
 export class OpenAIProvider extends BaseProvider {
 	readonly name: string;
-	readonly tiers: readonly string[] = ["aggregators", "institutions", "independents", "open"];
+	readonly tiers: readonly string[] = [
+		"aggregators",
+		"institutions",
+		"independents",
+		"open",
+	];
 	protected client: OpenAI;
 	protected readonly model: string;
 
@@ -25,8 +30,10 @@ export class OpenAIProvider extends BaseProvider {
 		const label = `${this.name}/${tier}`;
 		console.log(`  [${label}] Searching…`);
 
-		const systemMsg = tier === "open" ? this.buildOpenSystem(opts) : this.buildTierSystem(opts);
-		const userMsg = tier === "open" ? this.buildOpenUser(opts) : this.buildTierUser(opts);
+		const systemMsg =
+			tier === "open" ? this.buildOpenSystem(opts) : this.buildTierSystem(opts);
+		const userMsg =
+			tier === "open" ? this.buildOpenUser(opts) : this.buildTierUser(opts);
 
 		const response = await this.client.chat.completions.create({
 			model: this.model,
