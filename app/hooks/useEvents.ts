@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { TOP_PICK_THRESHOLD } from "../constants";
 import type { CityData, Event } from "../types";
+import { KEY_TO_SLUG } from "../utils/citySlug";
 import { cacheBust } from "../utils/dates";
 
 const BASE_URL = "https://www.dothings.lol";
@@ -62,7 +63,7 @@ export function useEvents(cityKey: string) {
 				data.events.sort((a, b) => (b.score || 0) - (a.score || 0));
 				setCityData(data);
 
-				const cityUrl = `${BASE_URL}/?city=${data.city_key}`;
+				const cityUrl = `${BASE_URL}/${KEY_TO_SLUG[data.city_key] ?? data.city_key}`;
 				const desc = `This week in ${data.city} (${data.week_start} to ${data.week_end}): ${data.events.length} curated events — talks, workshops, live music, art, and more. AI-curated using Claude, Gemini, Perplexity and ChatGPT.`;
 				const ogTitle = `${data.city} — do things`;
 

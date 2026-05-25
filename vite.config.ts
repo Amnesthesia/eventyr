@@ -12,8 +12,10 @@ const moveIndex = {
 	closeBundle() {
 		const src = path.join(projectRoot, "dist", "index.html");
 		const dest = path.join(projectRoot, "index.html");
+		const dest404 = path.join(projectRoot, "404.html");
 		if (fs.existsSync(src)) {
 			fs.copyFileSync(src, dest);
+			fs.copyFileSync(src, dest404);
 			fs.unlinkSync(src);
 		}
 	},

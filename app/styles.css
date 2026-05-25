@@ -190,6 +190,14 @@ header {
 	padding: 1.5rem 0 0.6rem;
 }
 
+/* ── City intro (SEO paragraph) ── */
+.city-intro {
+	font-size: 0.8rem;
+	color: var(--muted);
+	line-height: 1.65;
+	margin: 0;
+}
+
 /* ── Filter bar ── */
 .filter-bar {
 	display: flex;
