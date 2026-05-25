@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useEventsContext } from "../../context";
 import { catToSlug } from "@react/utils/categorySlug";
+import { KEY_TO_SLUG } from "@react/utils/citySlug";
 
 export default function CategoryFilter() {
 	const { categories, activeCat, setActiveCat, cityKey } = useEventsContext();
@@ -27,7 +28,7 @@ export default function CategoryFilter() {
 					key={cat}
 					className={`filter-btn${activeCat === cat ? " active" : ""}`}
 					onClick={() => setActiveCat(cat)}
-					href={`/${cityKey}/${catToSlug(cat)}`}
+					href={`/${KEY_TO_SLUG[cityKey]}/${catToSlug(cat)}`}
 				>
 					{cat}
 				</a>
