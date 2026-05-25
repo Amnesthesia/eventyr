@@ -1,5 +1,6 @@
 import { Calendar, Moon, Sun } from "lucide-react";
 import { useEventsContext } from "../context";
+import { KEY_TO_SLUG } from "../utils/citySlug";
 import { fmtRange } from "../utils/dates";
 
 export default function Header() {
@@ -19,7 +20,10 @@ export default function Header() {
 					<select
 						className="city-select"
 						value={cityKey}
-						onChange={(e) => setCity(e.target.value)}
+						onChange={(e) => {
+							const slug = KEY_TO_SLUG[e.target.value] ?? e.target.value;
+							window.location.href = `/${slug}`;
+						}}
 					>
 						{cities.map((c) => (
 							<option key={c.key} value={c.key}>

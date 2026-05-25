@@ -1,0 +1,42 @@
+---
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import Base from "../layouts/Base.astro";
+import EventApp from "@react/EventApp";
+import type { CityData, CityIndex } from "@react/types";
+
+export function getStaticPaths() {
+	const SLUG_TO_KEY: Record<string, string> = {
+		brisbane: "brisbane",
+		"gold-coast": "goldcoast",
+		"sunshine-coast": "sunnycoast",
+	};
+
+	const index: CityIndex = JSON.parse(
+		readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
+	);
+
+	return index.cities.map((city) => {
+		const slug =
+			Object.entries(SLUG_TO_KEY).find(([, k]) => k === city.key)?.[0] ??
+			city.key;
+
+		const cityData: CityData = JSON.parse(
+			readFileSync(join(process.cwd(), `data/${city.key}.json`), "utf-8"),
+		);
+		cityData.events.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+
+		return {
+			params: { city: slug },
+			props: { cityData, allCities: index.cities },
+		};
+	});
+}
+
+const { cityData, allCities } = Astro.props;
+const slug = Astro.params.city as string;
+---
+
+<Base cityData={cityData} slug={slug}>
+  <EventApp client:load cityData={cityData} allCities={allCities} />
+</Base>

@@ -12,13 +12,13 @@
 		"moduleDetection": "force",
 		"noEmit": true,
 		"jsx": "react-jsx",
-		"strict": true
+		"strict": true,
+		"paths": {
+			"@react/*": ["./app/*"]
+		}
 	},
-	"include": ["app"],
+	"include": ["app", "src/pages", "src/layouts", "src/env.d.ts"],
 	"references": [
-		{
-			"path": "./tsconfig.node.json"
-		},
 		{
 			"path": "./tsconfig.scripts.json"
 		}

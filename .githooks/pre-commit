@@ -1,6 +1,7 @@
 #!/bin/sh
 set -eu
 
-if git diff --cached --name-only --diff-filter=ACMR -- app/ | grep -q .; then
+if git diff --cached --name-only --diff-filter=ACMR -- app/ src/pages/ src/layouts/ astro.config.mjs | grep -q .; then
   pnpm build
+  git add dist/
 fi

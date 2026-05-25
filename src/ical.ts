@@ -113,7 +113,7 @@ function main(): void {
 
 	lines.push("END:VCALENDAR");
 
-	const outPath = join(PROJECT_ROOT, `${CITY}.ics`);
+	const outPath = join(PROJECT_ROOT, "public", `${CITY}.ics`);
 	writeFileSync(outPath, `${lines.join("\r\n")}\r\n`, "utf-8");
 	console.log(`→ Written ${CITY}.ics (${count} events)`);
 }

@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "prepare": "node ./scripts/setup-hooks.mjs && git add dist/",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "prepare": "node ./scripts/setup-hooks.mjs",
     "collect": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/collection.ts",
     "curate": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/curate.ts",
     "rank": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/rank.ts",
@@ -19,16 +19,17 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",
+    "@astrojs/react": "^5.0.5",
     "@google/genai": "^2.3.0",
     "@internationalized/date": "^3.12.1",
     "@picocss/pico": "^2.0.6",
+    "astro": "^6.3.7",
     "js-yaml": "^4.1.1",
     "lucide-react": "^0.469.0",
     "openai": "^6.38.0",
     "react": "^18.3.1",
     "react-aria-components": "^1.17.0",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.15.1"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.15",
@@ -36,9 +37,7 @@
     "@types/node": "^25.8.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.4",
     "tsx": "^4.22.0",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.10"
+    "typescript": "^5.6.2"
   }
 }

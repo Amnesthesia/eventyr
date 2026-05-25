@@ -3,13 +3,10 @@ import {
 	type ReactNode,
 	useCallback,
 	useContext,
-	useEffect,
 	useMemo,
 	useState,
 } from "react";
-import { useCity } from "./hooks/useCity";
 import { useColorTheme } from "./hooks/useColorTheme";
-import { useEvents } from "./hooks/useEvents";
 import { useStarred } from "./hooks/useStarred";
 import type {
 	City,
@@ -21,28 +18,19 @@ import type {
 	VibeFilters,
 	VibeKey,
 } from "./types";
+import { KEY_TO_SLUG } from "./utils/citySlug";
 import { parseEndDate, todayIso } from "./utils/dates";
 
 interface EventsContextValue {
-	// Raw data
-	cityData: CityData | null;
-	loading: boolean;
-	error: string | null;
+	cityData: CityData;
 	filtered: Event[];
-	// City
 	cities: City[];
 	cityKey: string;
 	setCity: (key: string) => void;
-
-	// Theme
 	theme: "light" | "dark";
 	toggleTheme: () => void;
-
-	// Starred
 	starred: Set<string>;
 	toggleStar: (id: string) => void;
-
-	// Filter state + setters
 	activeCat: string;
 	setActiveCat: (cat: string) => void;
 	dateRange: DateRange | null;
@@ -54,8 +42,6 @@ interface EventsContextValue {
 	vibeFilters: VibeFilters;
 	setVibe: (key: VibeKey, state: TriState) => void;
 	resetVibes: () => void;
-
-	// Derived
 	categories: string[];
 	starredEvents: Event[];
 	picks: Event[];
@@ -74,11 +60,28 @@ export function useEventsContext(): EventsContextValue {
 	return ctx;
 }
 
-export function EventsProvider({ children }: { children: ReactNode }) {
+interface ProviderProps {
+	children: ReactNode;
+	initialData: CityData;
+	allCities: City[];
+}
+
+export function EventsProvider({
+	children,
+	initialData,
+	allCities,
+}: ProviderProps) {
 	const { theme, toggle: toggleTheme } = useColorTheme();
-	const { cities, cityKey, setCity } = useCity();
-	const { cityData, loading, error } = useEvents(cityKey);
 	const { starred, toggle: toggleStar } = useStarred();
+
+	const cityData = initialData;
+	const cities = allCities;
+	const cityKey = initialData.city_key;
+
+	function setCity(key: string) {
+		const slug = KEY_TO_SLUG[key] ?? key;
+		window.location.href = `/${slug}`;
+	}
 
 	const [activeCat, setActiveCat] = useState("All");
 	const [dateRange, setDateRange] = useState<DateRange | null>(null);
@@ -90,20 +93,6 @@ export function EventsProvider({ children }: { children: ReactNode }) {
 		hands_on: "any",
 		social: "any",
 	});
-
-	useEffect(() => {
-		if (!cityKey) return;
-		setActiveCat("All");
-		setDateRange(null);
-		setActiveTags([]);
-		setPastFilter("no-past");
-		setVibeFilters({
-			intellectual: "any",
-			creative: "any",
-			hands_on: "any",
-			social: "any",
-		});
-	}, [cityKey]);
 
 	const toggleTag = useCallback((tag: string) => {
 		setActiveTags((prev) =>
@@ -138,7 +127,6 @@ export function EventsProvider({ children }: { children: ReactNode }) {
 	);
 
 	const filtered = useMemo(() => {
-		if (!cityData) return [];
 		return cityData.events.filter((event) => {
 			const catOk = activeCat === "All" || event.category === activeCat;
 
@@ -173,15 +161,7 @@ export function EventsProvider({ children }: { children: ReactNode }) {
 
 			return catOk && dateOk && tagsOk && vibeOk;
 		});
-	}, [
-		cityData,
-		activeCat,
-		dateRange,
-		activeTags,
-		pastFilter,
-		vibeFilters,
-		todayStr,
-	]);
+	}, [cityData, activeCat, dateRange, activeTags, pastFilter, vibeFilters, todayStr]);
 
 	const categories = useMemo(
 		() => [...new Set(filtered.map((e) => e.category).filter(Boolean))],
@@ -197,7 +177,6 @@ export function EventsProvider({ children }: { children: ReactNode }) {
 			if (starred.has(id)) {
 				starredEvents.push(e);
 			}
-
 			if ((e.score || 0) >= 8 && picks.length < 9) {
 				picks.push(e);
 			} else {
@@ -210,8 +189,6 @@ export function EventsProvider({ children }: { children: ReactNode }) {
 	const value: EventsContextValue = {
 		cityData,
 		filtered,
-		loading,
-		error,
 		cities,
 		cityKey,
 		setCity,
@@ -234,8 +211,8 @@ export function EventsProvider({ children }: { children: ReactNode }) {
 		starredEvents,
 		picks,
 		rest,
-		weekStart: cityData?.week_start ?? "",
-		weekEnd: cityData?.week_end ?? "",
+		weekStart: cityData.week_start,
+		weekEnd: cityData.week_end,
 		isEventPast,
 	};
 

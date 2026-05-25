@@ -77,16 +77,14 @@
 }
 
 /* ── Layout ── */
-body {
-	max-width: 1320px;
+main {
 	padding: 12px;
-	margin: auto auto;
 }
 
 /* ── Site header ── */
 header {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 	gap: 1rem;
 	padding-top: 1.75rem;
 	padding-bottom: 1rem;

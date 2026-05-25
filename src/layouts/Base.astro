@@ -1,0 +1,120 @@
+---
+import "@picocss/pico/css/pico.classless.min.css";
+import "@react/styles.css";
+import type { CityData } from "@react/types";
+import { KEY_TO_SLUG } from "@react/utils/citySlug";
+
+interface Props {
+	cityData: CityData;
+	slug: string;
+}
+
+const { cityData, slug } = Astro.props;
+const BASE_URL = "https://www.dothings.lol";
+
+const cityUrl = `${BASE_URL}/${slug}`;
+const ogTitle = `${cityData.city} — do things`;
+const desc = `This week in ${cityData.city} (${cityData.week_start} to ${cityData.week_end}): ${cityData.events.length} curated events — talks, workshops, live music, art, and more. AI-curated using Claude, Gemini, Perplexity and ChatGPT.`;
+
+const schema = {
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	name: `Events in ${cityData.city} this week`,
+	itemListElement: cityData.events.slice(0, 20).map((event, index) => ({
+		"@type": "ListItem",
+		position: index + 1,
+		item: {
+			"@type": "Event",
+			name: event.title,
+			description: event.description,
+			startDate: event.datetime_iso,
+			endDate: event.datetime_end_iso || undefined,
+			location: { "@type": "Place", name: event.location },
+			url: event.link || undefined,
+			eventStatus: "https://schema.org/EventScheduled",
+			organizer: { "@type": "Organization", name: event.source },
+			offers: event.cost
+				? { "@type": "Offer", description: event.cost }
+				: undefined,
+		},
+	})),
+};
+
+const websiteSchema = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	name: "do things",
+	url: "https://www.dothings.lol/",
+	description:
+		"Weekly curated events guide for Brisbane, Gold Coast and Sunshine Coast",
+	keywords:
+		"Brisbane events, Gold Coast events, Sunshine Coast events, Goldie, Sunny Coast, AI-curated events, Claude, Gemini, Perplexity, ChatGPT",
+};
+---
+
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{ogTitle}</title>
+    <meta name="description" content={desc} />
+    <meta
+      name="keywords"
+      content="events Brisbane, things to do Brisbane, BNE events, events Gold Coast, Goldie events, Gold Coast this weekend, events Sunshine Coast, Sunny Coast events, Noosa events, Maroochydore events, Caloundra events, SEQ events, South East Queensland events, AI events guide, Claude AI, Gemini, Perplexity, ChatGPT, OpenAI, AI-curated events"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={cityUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={cityUrl} />
+    <meta
+      property="og:image"
+      content={`${BASE_URL}/dothings-preview-dark.png`}
+    />
+    <meta property="og:locale" content="en_AU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={desc} />
+    <meta
+      name="twitter:image"
+      content={`${BASE_URL}/dothings-preview.jpg`}
+    />
+    <meta name="theme-color" content="#1a1a2e" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(websiteSchema)}
+    />
+    <script
+      src="https://app.rybbit.io/api/script.js"
+      data-site-id="0f3ec51f30bf"
+      defer></script>
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="amnesthesia"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Like this project? Buy me a coffee!"
+      data-position="Right"
+      data-x_margin="18"
+      data-color="#aaa"
+      data-y_margin="18"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      const t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

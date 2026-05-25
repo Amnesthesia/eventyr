@@ -5,16 +5,22 @@ import { DATA_ROOT, PROJECT_ROOT, TOP_PICK_THRESHOLD, toISODate } from "./common
 
 const BASE_URL = "https://www.dothings.lol";
 
+const KEY_TO_SLUG: Record<string, string> = {
+	brisbane: "brisbane",
+	goldcoast: "gold-coast",
+	sunnycoast: "sunshine-coast",
+};
+
 function buildSitemap(
 	cities: Array<{ key: string; generated_at: string }>,
 	today: string,
 ): string {
 	const urls = [
-		`  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
-		...cities.map(
-			(c) =>
-				`  <url>\n    <loc>${BASE_URL}/?city=${c.key}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`,
-		),
+		`  <url>\n    <loc>${BASE_URL}/brisbane</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+		...cities.map((c) => {
+			const slug = KEY_TO_SLUG[c.key] ?? c.key;
+			return `  <url>\n    <loc>${BASE_URL}/${slug}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`;
+		}),
 	];
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
 }
@@ -70,7 +76,7 @@ function main(): void {
 	writeFileSync(outPath, JSON.stringify(index, null, 2), "utf-8");
 	console.log(`→ Written ${outPath} (${cities.length} city/cities)`);
 
-	const sitemapPath = join(PROJECT_ROOT, "sitemap.xml");
+	const sitemapPath = join(PROJECT_ROOT, "public", "sitemap.xml");
 	writeFileSync(sitemapPath, buildSitemap(cityMeta, today), "utf-8");
 	console.log(`→ Written ${sitemapPath}`);
 
