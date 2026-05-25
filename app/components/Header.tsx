@@ -13,7 +13,10 @@ export default function Header() {
 
 	return (
 		<header>
-			<span className="site-name">&gt;&nbsp;do things</span>
+			<h1 className="site-name">
+				&gt;&nbsp;do things{" "}
+				<span className="vague">in {cityData?.city?.split(",")[0]}</span>
+			</h1>
 			<span className="header-meta">{meta}</span>
 			<div className="header-controls">
 				{cities.length > 1 && (

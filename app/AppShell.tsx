@@ -9,11 +9,12 @@ export default function AppShell() {
 
 	return (
 		<>
-			{cityData && <Intro city={cityData.city} />}
 			<Header />
+
 			<main>
 				{cityData && (
 					<>
+						{cityData && <Intro city={cityData.city} />}
 						<FilterBar />
 						{starredEvents.length > 0 && (
 							<div id="starred-section">
