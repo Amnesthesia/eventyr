@@ -34,10 +34,12 @@ export function Intro({ city }: { city: string }) {
 			rank them — highlighting workshops, meetups, live music, community events,
 			art classes, outdoor activities, talks, markets, and unique experiences
 			worth leaving the house for, without the clutter or spam found on most
-			event websites. Whether you're searching for things to do in Brisbane this
-			weekend, creative events on the Gold Coast, or social activities on the
-			Sunshine Coast, dothings.lol helps you discover high-signal local events
-			in one clean, minimal interface without ads.
+			event websites. Whether you're searching for things to do in{" "}
+			<a href="/brisbane">Brisbane</a> this weekend, creative events on the{" "}
+			<a href="/gold-coast">Gold Coast</a>, or social activities on the{" "}
+			<a href="/sunshine-coast">Sunshine Coast</a>, dothings.lol helps you
+			discover high-signal local events in one clean, minimal interface without
+			ads.
 		</article>
 	);
 }

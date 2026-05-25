@@ -3,19 +3,35 @@ import "@react/pico.scss";
 import "@react/styles.css";
 import type { CityData } from "@react/types";
 import { KEY_TO_SLUG } from "@react/utils/citySlug";
+import { catToSlug, catShortName } from "@react/utils/categorySlug";
 
 interface Props {
 	cityData: CityData;
 	slug: string;
 	canonical?: string;
+	categorySlug?: string;
+	categoryLabel?: string;
+	cityCategories?: string[];
 }
 
-const { cityData, slug, canonical } = Astro.props;
+const { cityData, slug, canonical, categorySlug, categoryLabel, cityCategories } = Astro.props;
 const BASE_URL = "https://www.dothings.lol";
 
-const cityUrl = canonical ?? `${BASE_URL}/${slug}`;
-const ogTitle = `Things to do in ${cityData.city} this week — dothings.lol`;
-const desc = `${cityData.events.length} curated events in ${cityData.city} this week — workshops, live music, talks, markets, art and more. AI-curated from dozens of local sources.`;
+const cityUrl = canonical ?? (categorySlug ? `${BASE_URL}/${slug}/${categorySlug}` : `${BASE_URL}/${slug}`);
+
+const ogTitle = categoryLabel
+	? `${catShortName(categoryLabel)} events in ${cityData.city} this week — dothings.lol`
+	: `Things to do in ${cityData.city} this week — dothings.lol`;
+
+const desc = categoryLabel
+	? `${cityData.events.length} ${catShortName(categoryLabel).toLowerCase()} events in ${cityData.city} this week. AI-curated and ranked from local sources.`
+	: `${cityData.events.length} curated events in ${cityData.city} this week — workshops, live music, talks, markets, art and more. AI-curated from dozens of local sources.`;
+
+const availableCategories = (cityCategories ??
+	[...new Set(cityData.events.map((e: { category: string }) => e.category))])
+	.map((label: string) => ({ catSlug: catToSlug(label), label: catShortName(label) }))
+	.filter((c) => c.catSlug)
+	.sort((a, b) => a.label.localeCompare(b.label));
 
 const schema = {
 	"@context": "https://schema.org",
@@ -118,13 +134,23 @@ const websiteSchema = {
   </head>
   <body>
     <slot />
+    <nav class="category-nav" aria-label="Browse by category">
+      {availableCategories.map(({ catSlug, label }) => (
+        <a
+          href={`/${slug}/${catSlug}`}
+          class={categorySlug === catSlug ? "filter-btn active" : "filter-btn"}
+        >
+          {label}
+        </a>
+      ))}
+    </nav>
     <footer class="site-footer">
       <nav>
-        <a href="/brisbane">Brisbane events</a>
-        <a href="/gold-coast">Gold Coast events</a>
-        <a href="/sunshine-coast">Sunshine Coast events</a>
+        <a href="/brisbane">Things to do in Brisbane</a>
+        <a href="/gold-coast">Things to do on the Gold Coast</a>
+        <a href="/sunshine-coast">Things to do on the Sunshine Coast</a>
       </nav>
-      <small>AI-curated events guide for South East Queensland</small>
+      <small>AI-curated events guide for South East Queensland &middot; <a href="/llms.txt">llms.txt</a></small>
     </footer>
   </body>
 </html>

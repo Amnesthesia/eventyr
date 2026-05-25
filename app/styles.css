@@ -102,6 +102,16 @@ header {
 	color: var(--fg);
 }
 
+.site-name a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.site-name a:hover {
+	text-decoration: none;
+	opacity: 0.75;
+}
+
 .vague {
 	color: var(--muted);
 }
@@ -149,7 +159,21 @@ header {
 	stroke-width: 2;
 }
 
+/* ── City nav (desktop links) ── */
+.city-nav {
+	display: flex;
+	gap: 0.3rem;
+}
+
+.city-nav .filter-btn {
+	text-decoration: none;
+}
+
 /* ── City selector ── */
+.city-select--mobile {
+	display: none;
+}
+
 .city-select {
 	width: auto;
 	max-width: 250px;
@@ -201,6 +225,18 @@ header {
 	margin: 0;
 }
 
+.city-intro a {
+	color: var(--muted);
+	text-decoration: underline;
+	text-decoration-color: var(--border);
+	text-underline-offset: 2px;
+}
+
+.city-intro a:hover {
+	color: var(--fg);
+	text-decoration-color: var(--fg);
+}
+
 /* ── Filter bar ── */
 .filter-bar {
 	display: flex;
@@ -248,6 +284,7 @@ header {
 	background: transparent;
 	color: var(--muted);
 	cursor: pointer;
+	text-decoration: none;
 	transition:
 		border-color 0.12s,
 		color 0.12s,
@@ -840,6 +877,31 @@ td[role="gridcell"] {
 	.card-grid {
 		grid-template-columns: 1fr;
 	}
+}
+
+/*
+@media (max-width: 640px) {
+	.city-nav {
+		display: none;
+	}
+
+	.city-select--mobile {
+		display: block;
+	}
+}
+	*/
+
+/* ── Category nav ── */
+.category-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.3rem;
+	padding: 1.25rem 12px 0.5rem;
+	border-top: 1px solid var(--border);
+}
+
+.category-nav .filter-btn {
+	text-decoration: none;
 }
 
 /* ── Site footer ── */

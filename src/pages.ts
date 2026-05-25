@@ -16,15 +16,21 @@ const KEY_TO_SLUG: Record<string, string> = {
 	sunnycoast: "sunshine-coast",
 };
 
+const CATEGORY_SLUGS = ["arts", "community", "music", "talks", "social", "workshops"];
+
 function buildSitemap(
 	cities: Array<{ key: string; generated_at: string }>,
 	today: string,
 ): string {
 	const urls = [
-		`  <url>\n    <loc>${BASE_URL}/brisbane</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
-		...cities.map((c) => {
+		`  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+		...cities.flatMap((c) => {
 			const slug = KEY_TO_SLUG[c.key] ?? c.key;
-			return `  <url>\n    <loc>${BASE_URL}/${slug}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`;
+			const cityUrl = `  <url>\n    <loc>${BASE_URL}/${slug}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`;
+			const catUrls = CATEGORY_SLUGS.map(
+				(cat) => `  <url>\n    <loc>${BASE_URL}/${slug}/${cat}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`,
+			);
+			return [cityUrl, ...catUrls];
 		}),
 	];
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;

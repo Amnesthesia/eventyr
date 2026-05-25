@@ -14,26 +14,42 @@ export default function Header() {
 	return (
 		<header>
 			<h1 className="site-name">
-				&gt;&nbsp;do things{" "}
+				<a href="/">&gt;&nbsp;do things</a>{" "}
 				<span className="vague">in {cityData?.city?.split(",")[0]}</span>
 			</h1>
 			<span className="header-meta">{meta}</span>
 			<div className="header-controls">
 				{cities.length > 1 && (
-					<select
-						className="city-select"
-						value={cityKey}
-						onChange={(e) => {
-							const slug = KEY_TO_SLUG[e.target.value] ?? e.target.value;
-							window.location.href = `/${slug}`;
-						}}
-					>
-						{cities.map((c) => (
-							<option key={c.key} value={c.key}>
-								{c.name.split(",")[0]}
-							</option>
-						))}
-					</select>
+					<>
+						<nav className="city-nav" aria-label="City pages">
+							{cities.map((c) => {
+								const slug = KEY_TO_SLUG[c.key] ?? c.key;
+								return (
+									<a
+										key={c.key}
+										href={`/${slug}`}
+										className={`filter-btn${c.key === cityKey ? " active" : ""}`}
+									>
+										{c.name.split(",")[0]}
+									</a>
+								);
+							})}
+						</nav>
+						<select
+							className="city-select city-select--mobile"
+							value={cityKey}
+							onChange={(e) => {
+								const slug = KEY_TO_SLUG[e.target.value] ?? e.target.value;
+								window.location.href = `/${slug}`;
+							}}
+						>
+							{cities.map((c) => (
+								<option key={c.key} value={c.key}>
+									{c.name.split(",")[0]}
+								</option>
+							))}
+						</select>
+					</>
 				)}
 				{cityKey && (
 					<a

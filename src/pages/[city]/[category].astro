@@ -1,0 +1,68 @@
+---
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import Base from "../../layouts/Base.astro";
+import EventApp from "@react/EventApp";
+import type { CityData, CityIndex } from "@react/types";
+import { SLUG_TO_KEY } from "@react/utils/citySlug";
+import { catToSlug } from "@react/utils/categorySlug";
+
+export function getStaticPaths() {
+	const index: CityIndex = JSON.parse(
+		readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
+	);
+
+	const paths = [];
+
+	for (const city of index.cities) {
+		const citySlug =
+			Object.entries(SLUG_TO_KEY).find(([, k]) => k === city.key)?.[0] ??
+			city.key;
+
+		const cityData: CityData = JSON.parse(
+			readFileSync(join(process.cwd(), `data/${city.key}.json`), "utf-8"),
+		);
+
+		const presentCats = new Set(cityData.events.map((e) => e.category));
+
+		const cityCategories = [...presentCats];
+
+		for (const catLabel of presentCats) {
+			const catSlug = catToSlug(catLabel);
+
+			const filteredData: CityData = {
+				...cityData,
+				events: cityData.events
+					.filter((e) => e.category === catLabel)
+					.sort((a, b) => (b.score ?? 0) - (a.score ?? 0)),
+			};
+
+			paths.push({
+				params: { city: citySlug, category: catSlug },
+				props: {
+					cityData: filteredData,
+					allCities: index.cities,
+					categorySlug: catSlug,
+					categoryLabel: catLabel,
+					cityCategories,
+				},
+			});
+		}
+	}
+
+	return paths;
+}
+
+const { cityData, allCities, categorySlug, categoryLabel, cityCategories } = Astro.props;
+const citySlug = Astro.params.city as string;
+---
+
+<Base
+  cityData={cityData}
+  slug={citySlug}
+  categorySlug={categorySlug}
+  categoryLabel={categoryLabel}
+  cityCategories={cityCategories}
+>
+  <EventApp client:load cityData={cityData} allCities={allCities} />
+</Base>
