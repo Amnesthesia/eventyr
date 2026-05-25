@@ -13,5 +13,12 @@ export default defineConfig({
 				"@react": fileURLToPath(new URL("./app", import.meta.url)),
 			},
 		},
+		css: {
+			preprocessorOptions: {
+				scss: {
+					silenceDeprecations: ["if-function"],
+				},
+			},
+		},
 	},
 });

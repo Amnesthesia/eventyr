@@ -1,0 +1,5 @@
+@use "@picocss/pico/scss/index" with (
+  $semantic-root-element: "body, astro-island",
+  $enable-semantic-container: true,
+  $enable-classes: false
+);
