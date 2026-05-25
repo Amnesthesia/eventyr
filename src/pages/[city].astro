@@ -4,14 +4,9 @@ import { join } from "node:path";
 import Base from "../layouts/Base.astro";
 import EventApp from "@react/EventApp";
 import type { CityData, CityIndex } from "@react/types";
+import { SLUG_TO_KEY } from "@react/utils/citySlug";
 
 export function getStaticPaths() {
-	const SLUG_TO_KEY: Record<string, string> = {
-		brisbane: "brisbane",
-		"gold-coast": "goldcoast",
-		"sunshine-coast": "sunnycoast",
-	};
-
 	const index: CityIndex = JSON.parse(
 		readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
 	);

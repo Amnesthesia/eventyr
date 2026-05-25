@@ -125,7 +125,7 @@ jobs:
           git add "data/${CITY}.json" \
                   "data/${CITY}/" \
                   "${CITY^^}.md" "public/${CITY}.ics" "data/index.json" \
-                  public/sitemap.xml dist/
+                  public/sitemap.xml
           git diff --cached --quiet && exit 0
           git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           for attempt in 1 2 3; do
