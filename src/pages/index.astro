@@ -14,6 +14,6 @@ const cityData: CityData = JSON.parse(
 cityData.events.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
 ---
 
-<Base cityData={cityData} slug="brisbane">
+<Base cityData={cityData} slug="brisbane" canonical="https://www.dothings.lol/">
   <EventApp client:load cityData={cityData} allCities={index.cities} />
 </Base>

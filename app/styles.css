@@ -841,3 +841,33 @@ td[role="gridcell"] {
 		grid-template-columns: 1fr;
 	}
 }
+
+/* ── Site footer ── */
+.site-footer {
+	border-top: 1px solid var(--border);
+	padding: 1.5rem 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.site-footer nav {
+	display: flex;
+	gap: 1.25rem;
+	flex-wrap: wrap;
+}
+
+.site-footer nav a {
+	font-size: 0.78rem;
+	color: var(--muted);
+	text-decoration: none;
+}
+
+.site-footer nav a:hover {
+	color: var(--fg);
+}
+
+.site-footer small {
+	font-size: 0.72rem;
+	color: var(--muted);
+}

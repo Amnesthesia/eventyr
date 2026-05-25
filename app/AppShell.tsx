@@ -18,17 +18,17 @@ export default function AppShell() {
 						<FilterBar />
 						{starredEvents.length > 0 && (
 							<div id="starred-section">
-								<div className="section-label">saved</div>
+								<h2 className="section-label">saved</h2>
 								<EventGrid events={starredEvents} isTopPick={false} />
 							</div>
 						)}
 						{picks.length > 0 && (
 							<div id="top-picks-section">
-								<div className="section-label">picks</div>
+								<h2 className="section-label">picks</h2>
 								<EventGrid events={picks} isTopPick={true} />
 							</div>
 						)}
-						<div className="section-label">all events</div>
+						<h2 className="section-label">all events</h2>
 						<div className="separator" />
 						<EventGrid events={rest} isTopPick={false} />
 					</>
