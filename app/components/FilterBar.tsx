@@ -7,8 +7,8 @@ export default function FilterBar() {
 	return (
 		<div className="filter-bar-wrapper">
 			<div className="filter-bar filter-bar--cats">
-				<CategoryFilter />
 				<DateFilter />
+				<CategoryFilter />
 			</div>
 			<div className="filter-bar filter-bar--vibe">
 				<VibeFilter />

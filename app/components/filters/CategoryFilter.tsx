@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { useEventsContext } from "../../context";
 import { catToSlug } from "@react/utils/categorySlug";
 import { KEY_TO_SLUG } from "@react/utils/citySlug";
+import { useEffect } from "react";
+import { useEventsContext } from "../../context";
 
 export default function CategoryFilter() {
 	const { categories, activeCat, setActiveCat, cityKey } = useEventsContext();

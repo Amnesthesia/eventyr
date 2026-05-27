@@ -2,6 +2,8 @@ import { Bookmark, BookmarkCheck, CalendarDays, MapPin } from "lucide-react";
 import { useMemo } from "react";
 import { useEventsContext } from "../context";
 import type { Event } from "../types";
+import { catToSlug } from "../utils/categorySlug";
+import { KEY_TO_SLUG } from "../utils/citySlug";
 import { CategoryIcon } from "./CategoryIcon";
 
 interface Props {
@@ -19,7 +21,9 @@ export default function EventCard({
 	isStarred,
 	onStarClick,
 }: Props) {
-	const { activeTags, toggleTag } = useEventsContext();
+	const { activeTags, toggleTag, cityKey } = useEventsContext();
+	const citySlug = KEY_TO_SLUG[cityKey] ?? cityKey;
+	const catSlug = catToSlug(event.category);
 	const free = /free/.test((event.cost || "").toLowerCase());
 
 	const classes = [
@@ -44,10 +48,10 @@ export default function EventCard({
 	return (
 		<article className={classes} style={style}>
 			<div className="card-top">
-				<span className="card-cat">
+				<a className="card-cat" href={`/${citySlug}/${catSlug}`}>
 					<CategoryIcon name={event.category} size={11} strokeWidth={2.2} />
 					{event.category}
-				</span>
+				</a>
 
 				<div className="card-top-right">
 					<span className={`card-cost${free ? " free" : ""}`}>

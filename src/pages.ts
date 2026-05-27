@@ -16,7 +16,14 @@ const KEY_TO_SLUG: Record<string, string> = {
 	sunnycoast: "sunshine-coast",
 };
 
-const CATEGORY_SLUGS = ["arts", "community", "music", "talks", "social", "workshops"];
+const CATEGORY_SLUGS = [
+	"arts",
+	"community",
+	"music",
+	"talks",
+	"social",
+	"workshops",
+];
 
 function buildSitemap(
 	cities: Array<{ key: string; generated_at: string }>,
@@ -28,7 +35,8 @@ function buildSitemap(
 			const slug = KEY_TO_SLUG[c.key] ?? c.key;
 			const cityUrl = `  <url>\n    <loc>${BASE_URL}/${slug}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`;
 			const catUrls = CATEGORY_SLUGS.map(
-				(cat) => `  <url>\n    <loc>${BASE_URL}/${slug}/${cat}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`,
+				(cat) =>
+					`  <url>\n    <loc>${BASE_URL}/${slug}/${cat}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`,
 			);
 			return [cityUrl, ...catUrls];
 		}),
