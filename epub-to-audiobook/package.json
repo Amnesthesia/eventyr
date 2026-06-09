@@ -1,0 +1,24 @@
+{
+  "name": "epub-to-audiobook",
+  "version": "1.0.0",
+  "description": "Convert EPUB files to narrated audiobooks using Claude Haiku (SSML) + OpenAI TTS",
+  "type": "commonjs",
+  "main": "convert.js",
+  "bin": {
+    "epub-to-audiobook": "./convert.js"
+  },
+  "scripts": {
+    "start": "node convert.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "cheerio": "^1.0.0",
+    "epub": "^1.2.0",
+    "fs-extra": "^11.2.0",
+    "openai": "^4.67.0",
+    "yargs": "^17.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
