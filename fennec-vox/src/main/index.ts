@@ -15,9 +15,9 @@ function createWindow(): BrowserWindow {
     height:          660,
     minWidth:        760,
     minHeight:       560,
-    title:           'Talkative',
+    title:           'Fennec Vox',
     titleBarStyle:   'hiddenInset',
-    backgroundColor: '#f5f5f7',
+    backgroundColor: '#eef3f8',
     webPreferences: {
       preload:          path.join(__dirname, '../preload/index.js'),
       contextIsolation: true,
@@ -38,7 +38,7 @@ function createWindow(): BrowserWindow {
 function buildMenu(): void {
   const template: Electron.MenuItemConstructorOptions[] = [
     {
-      label: 'Talkative',
+      label: 'Fennec Vox',
       submenu: [
         { role: 'about' },
         { type: 'separator' },
@@ -84,7 +84,7 @@ app.on('second-instance', () => {
   }
 });
 
-// macOS: handle talkative:// callback URLs from second instance
+// macOS: handle fennecvox:// callback URLs from second instance
 app.on('open-url', (_event, url) => {
   const { handleOAuthCallback } = require('./oauth') as typeof import('./oauth');
   handleOAuthCallback(url);

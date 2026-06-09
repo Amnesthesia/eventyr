@@ -56,6 +56,7 @@ export default function SettingsPanel({ onClose }: Props) {
   return (
     <div className="modal-overlay" onClick={e => e.target === e.currentTarget && onClose()}>
       <div className="modal" role="dialog" aria-modal="true" aria-label="Settings">
+      <div className="modal-inner">
         <h2>Settings</h2>
         <p className="modal-sub">
           API keys are stored securely in the Mac system keychain.
@@ -145,6 +146,7 @@ export default function SettingsPanel({ onClose }: Props) {
             {saved ? '✓ Saved' : saving ? 'Saving…' : 'Save'}
           </button>
         </div>
+      </div>
       </div>
     </div>
   );

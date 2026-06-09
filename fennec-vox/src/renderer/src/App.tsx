@@ -144,7 +144,8 @@ export default function App() {
   return (
     <div className="app">
       <div className="titlebar">
-        <h1>Talkative</h1>
+        <span className="app-logo">🦊</span>
+        <h1>Fennec Vox</h1>
         <div className="titlebar-actions">
           <button className="btn-icon" onClick={() => setShowSettings(true)} title="Settings">
             ⚙
@@ -156,7 +157,7 @@ export default function App() {
         {/* ── Sidebar ── */}
         <aside className="sidebar">
           <div className="section">
-            <div className="section-label">EPUB File</div>
+            <div className="section-label">Book File</div>
             <FilePicker
               value={epubPath}
               onChange={setEpubPath}

@@ -1,26 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /* ── Design tokens ─────────────────────────────────────────────────────────── */
 :root {
-  --bg:              #f5f5f7;
-  --sidebar-bg:      #e8e8ed;
-  --card-bg:         #ffffff;
-  --accent:          #007aff;
-  --accent-hover:    #0066d6;
-  --accent-subtle:   #e8f0fe;
-  --danger:          #ff3b30;
-  --success:         #34c759;
-  --warning:         #ff9500;
-  --text:            #1d1d1f;
-  --text-secondary:  #6e6e73;
-  --border:          rgba(0, 0, 0, 0.1);
-  --border-focus:    rgba(0, 122, 255, 0.5);
-  --shadow:          0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-lg:       0 4px 16px rgba(0,0,0,0.12);
+  --bg:              #eef3f8;   /* tundra snow */
+  --sidebar-bg:      #dde8f2;   /* ice shelf */
+  --card-bg:         #f8fbff;   /* fresh snow */
+  --titlebar-bg:     #cfdcec;   /* frozen horizon */
+  --accent:          #3b82c4;   /* glacial blue */
+  --accent-hover:    #2d6faa;
+  --accent-subtle:   #dceefb;
+  --danger:          #d94f43;
+  --success:         #2e9c6e;
+  --warning:         #d08c2e;
+  --aurora-start:    #6ec6f5;   /* pale arctic sky */
+  --aurora-mid:      #9fd8f7;
+  --aurora-end:      #3b82c4;   /* glacier depth */
+  --text:            #152233;   /* arctic night */
+  --text-secondary:  #4e6e88;   /* arctic mist */
+  --border:          rgba(59, 130, 196, 0.15);
+  --border-focus:    rgba(59, 130, 196, 0.5);
+  --shadow:          0 1px 4px rgba(21, 34, 51, 0.08), 0 1px 2px rgba(21, 34, 51, 0.05);
+  --shadow-lg:       0 6px 24px rgba(21, 34, 51, 0.14);
   --radius:          8px;
   --radius-lg:       12px;
-  --font:            -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  --font:            'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   --font-mono:       'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
   --sidebar-width:   264px;
-  --titlebar-height: 38px;
+  --titlebar-height: 40px;
 }
 
 /* ── Reset ─────────────────────────────────────────────────────────────────── */
@@ -36,6 +42,24 @@ html, body, #root {
   user-select: none;
 }
 
+/* ── Scrollbars ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(59, 130, 196, 0.25); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(59, 130, 196, 0.45); }
+
+/* ── Keyframes ──────────────────────────────────────────────────────────────── */
+@keyframes aurora-shimmer {
+  0%   { opacity: 0.55; background-position: 0% 50%; }
+  50%  { opacity: 0.85; background-position: 100% 50%; }
+  100% { opacity: 0.55; background-position: 0% 50%; }
+}
+
+@keyframes shimmer-sweep {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+
 /* ── Layout ────────────────────────────────────────────────────────────────── */
 .app {
   display: flex;
@@ -43,35 +67,71 @@ html, body, #root {
   height: 100%;
 }
 
+/* ── Titlebar ───────────────────────────────────────────────────────────────── */
 .titlebar {
   height: var(--titlebar-height);
   -webkit-app-region: drag;
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  padding: 0 80px 0 12px;
-  background: var(--sidebar-bg);
-  border-bottom: 1px solid var(--border);
+  padding: 0 80px 0 14px;
+  position: relative;
+  overflow: hidden;
+  background: var(--titlebar-bg);
+  border-bottom: 1px solid rgba(59, 130, 196, 0.2);
+}
+
+/* Aurora shimmer overlay */
+.titlebar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--aurora-start) 0%,
+    var(--aurora-mid) 40%,
+    var(--aurora-end) 80%,
+    var(--aurora-start) 100%
+  );
+  background-size: 300% 300%;
+  opacity: 0.6;
+  animation: aurora-shimmer 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.app-logo {
+  font-size: 17px;
+  margin-right: 7px;
+  position: relative;
+  z-index: 1;
+  line-height: 1;
 }
 
 .titlebar h1 {
   font-size: 13px;
   font-weight: 600;
-  color: var(--text);
+  color: #fff;
   letter-spacing: -0.01em;
+  text-shadow: 0 1px 2px rgba(21, 34, 51, 0.2);
+  position: relative;
+  z-index: 1;
 }
 
 .titlebar-actions {
   margin-left: auto;
   -webkit-app-region: no-drag;
+  position: relative;
+  z-index: 1;
 }
 
+/* ── Body layout ────────────────────────────────────────────────────────────── */
 .body {
   display: flex;
   flex: 1;
   overflow: hidden;
 }
 
+/* ── Sidebar ────────────────────────────────────────────────────────────────── */
 .sidebar {
   width: var(--sidebar-width);
   background: var(--sidebar-bg);
@@ -80,6 +140,8 @@ html, body, #root {
   flex-direction: column;
   overflow-y: auto;
   flex-shrink: 0;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .main {
@@ -88,6 +150,25 @@ html, body, #root {
   flex-direction: column;
   overflow: hidden;
   background: var(--bg);
+  position: relative;
+}
+
+/* Fennec fox background illustration */
+.main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('./assets/fennec-bg.svg') center 60% / 55% auto no-repeat;
+  opacity: 0.055;
+  filter: blur(3px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure content sits above the fox background */
+.main > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* ── Form elements ─────────────────────────────────────────────────────────── */
@@ -100,7 +181,7 @@ html, body, #root {
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   color: var(--text-secondary);
   margin-bottom: 8px;
 }
@@ -131,14 +212,14 @@ html, body, #root {
   font-family: var(--font);
   font-size: 12px;
   outline: none;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, box-shadow 0.15s;
   -webkit-app-region: no-drag;
 }
 
 .field input:focus,
 .field select:focus {
   border-color: var(--border-focus);
-  box-shadow: 0 0 0 3px rgba(0,122,255,0.12);
+  box-shadow: 0 0 0 3px rgba(59, 130, 196, 0.14);
 }
 
 .field input[type="number"] { font-variant-numeric: tabular-nums; }
@@ -156,20 +237,27 @@ html, body, #root {
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.12s, opacity 0.12s;
+  transition: background 0.12s, opacity 0.12s, box-shadow 0.12s;
   -webkit-app-region: no-drag;
 }
 
-.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
-.btn-primary   { background: var(--accent);  color: #fff; }
-.btn-primary:hover:not(:disabled)  { background: var(--accent-hover); }
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(59, 130, 196, 0.3);
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+  box-shadow: 0 2px 8px rgba(59, 130, 196, 0.4);
+}
 
 .btn-danger    { background: var(--danger);  color: #fff; }
-.btn-danger:hover:not(:disabled)   { background: #e0352b; }
+.btn-danger:hover:not(:disabled)   { background: #c0403a; }
 
-.btn-secondary { background: rgba(0,0,0,0.07); color: var(--text); }
-.btn-secondary:hover:not(:disabled) { background: rgba(0,0,0,0.12); }
+.btn-secondary { background: rgba(59, 130, 196, 0.1); color: var(--text); }
+.btn-secondary:hover:not(:disabled) { background: rgba(59, 130, 196, 0.18); }
 
 .btn-full { width: 100%; }
 
@@ -179,13 +267,13 @@ html, body, #root {
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   line-height: 1;
   -webkit-app-region: no-drag;
-  transition: background 0.12s;
+  transition: background 0.12s, color 0.12s;
 }
-.btn-icon:hover { background: rgba(0,0,0,0.07); color: var(--text); }
+.btn-icon:hover { background: rgba(255,255,255,0.18); color: #fff; }
 
 /* ── File picker ────────────────────────────────────────────────────────────── */
 .file-picker {
@@ -195,13 +283,14 @@ html, body, #root {
 }
 
 .file-picker-drop {
-  border: 1.5px dashed var(--border);
+  border: 1.5px dashed rgba(59, 130, 196, 0.35);
   border-radius: var(--radius);
   padding: 14px 10px;
   text-align: center;
   cursor: pointer;
   transition: border-color 0.15s, background 0.15s;
   -webkit-app-region: no-drag;
+  background: rgba(248, 251, 255, 0.6);
 }
 
 .file-picker-drop:hover,
@@ -219,7 +308,7 @@ html, body, #root {
   color: var(--text-secondary);
   word-break: break-all;
   padding: 4px 6px;
-  background: rgba(0,0,0,0.04);
+  background: rgba(59, 130, 196, 0.07);
   border-radius: 4px;
 }
 
@@ -243,6 +332,7 @@ html, body, #root {
 .progress-title {
   font-size: 14px;
   font-weight: 600;
+  color: var(--text);
 }
 
 .progress-subtitle {
@@ -252,7 +342,7 @@ html, body, #root {
 
 .progress-bar-track {
   height: 6px;
-  background: rgba(0,0,0,0.08);
+  background: rgba(59, 130, 196, 0.12);
   border-radius: 3px;
   overflow: hidden;
   margin-bottom: 8px;
@@ -262,11 +352,34 @@ html, body, #root {
   height: 100%;
   border-radius: 3px;
   transition: width 0.4s ease;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--aurora-end), var(--aurora-start));
+  position: relative;
+  overflow: hidden;
 }
 
-.progress-bar-fill.complete { background: var(--success); }
-.progress-bar-fill.error    { background: var(--danger); }
+/* Shimmer sweep on active fill */
+.progress-bar-fill:not(.complete):not(.error)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 100%
+  );
+  animation: shimmer-sweep 1.8s ease-in-out infinite;
+}
+
+.progress-bar-fill.complete {
+  background: linear-gradient(90deg, #2e9c6e, #56c78a);
+}
+.progress-bar-fill.error {
+  background: var(--danger);
+}
 
 .progress-meta {
   display: flex;
@@ -297,7 +410,7 @@ html, body, #root {
   height: 6px;
   border-radius: 50%;
   flex-shrink: 0;
-  background: rgba(0,0,0,0.15);
+  background: rgba(59, 130, 196, 0.2);
 }
 
 .chapter-row.active .dot  { background: var(--accent); }
@@ -305,12 +418,12 @@ html, body, #root {
 .chapter-row.error  .dot  { background: var(--danger); }
 
 .idle-state {
-  padding: 32px 20px;
+  padding: 36px 20px;
   text-align: center;
   color: var(--text-secondary);
 }
 
-.idle-state .idle-icon  { font-size: 40px; margin-bottom: 10px; }
+.idle-state .idle-icon  { font-size: 42px; margin-bottom: 10px; }
 .idle-state p           { font-size: 13px; }
 
 /* ── Log viewer ─────────────────────────────────────────────────────────────── */
@@ -336,28 +449,50 @@ html, body, #root {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.35);
+  background: rgba(21, 34, 51, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .modal {
   background: var(--card-bg);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-  padding: 24px;
+  padding: 0;
   width: 460px;
   max-width: 90vw;
+  overflow: hidden;
+}
+
+/* Aurora stripe at top of modal */
+.modal::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--aurora-start),
+    var(--aurora-mid),
+    var(--aurora-end),
+    var(--aurora-start)
+  );
+  background-size: 300% 100%;
+  animation: aurora-shimmer 6s ease-in-out infinite;
+}
+
+.modal-inner {
+  padding: 24px;
 }
 
 .modal h2 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 6px;
+  color: var(--text);
 }
 
 .modal .modal-sub {
@@ -375,6 +510,7 @@ html, body, #root {
   background: var(--accent-subtle);
   border-radius: var(--radius);
   font-size: 12px;
+  color: var(--text-secondary);
 }
 
 .provider-status .dot {
@@ -419,6 +555,6 @@ html, body, #root {
   letter-spacing: 0.04em;
 }
 
-.badge-blue    { background: #e8f0fe; color: #1a73e8; }
-.badge-green   { background: #e6f4ea; color: #1e8e3e; }
-.badge-orange  { background: #fce8e6; color: #c5221f; }
+.badge-blue    { background: #dceefb; color: #2563a0; }
+.badge-green   { background: #d4f0e4; color: #1a7a52; }
+.badge-orange  { background: #fdebd0; color: #9a5a14; }

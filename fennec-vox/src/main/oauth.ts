@@ -1,7 +1,7 @@
 import { shell, app } from 'electron';
 import type { OAuthProvider, OAuthResult } from '@shared/ipc';
 
-// Talkative registers talkative:// as a custom URL scheme (see package.json build.mac.protocols).
+// Fennec Vox registers fennecvox:// as a custom URL scheme (see package.json build.mac.protocols).
 // When an external OAuth provider redirects back here, open-url fires and we parse the token.
 //
 // Neither Anthropic nor OpenAI currently offer public OAuth for API keys, so this module
@@ -16,11 +16,11 @@ const OAUTH_URLS: Record<OAuthProvider, string> = {
 type Resolver = (result: OAuthResult) => void;
 const pending = new Map<OAuthProvider, Resolver>();
 
-// Called from main/index.ts when the app receives a talkative:// URL
+// Called from main/index.ts when the app receives a fennecvox:// URL
 export function handleOAuthCallback(url: string): void {
   try {
     const parsed = new URL(url);
-    // Expected shape: talkative://callback?provider=openai&key=sk-...
+    // Expected shape: fennecvox://callback?provider=openai&key=sk-...
     const provider = parsed.searchParams.get('provider') as OAuthProvider | null;
     const apiKey   = parsed.searchParams.get('key') ?? '';
     if (provider && pending.has(provider)) {
@@ -35,7 +35,7 @@ export function handleOAuthCallback(url: string): void {
 export function startOAuth(provider: OAuthProvider): Promise<OAuthResult> {
   // Open the provider's API key page; the user copies the key and pastes it in the Settings panel.
   // If a real OAuth flow becomes available, replace shell.openExternal with the authorize URL
-  // and parse the redirect that lands on talkative://callback.
+  // and parse the redirect that lands on fennecvox://callback.
   shell.openExternal(OAUTH_URLS[provider]);
 
   return new Promise<OAuthResult>(resolve => {
@@ -56,9 +56,9 @@ export function startOAuth(provider: OAuthProvider): Promise<OAuthResult> {
 export function registerProtocolHandler(
   onResult: (result: OAuthResult) => void,
 ): void {
-  app.setAsDefaultProtocolClient('talkative');
+  app.setAsDefaultProtocolClient('fennecvox');
 
-  // macOS: fired when another instance passes a talkative:// URL
+  // macOS: fired when another instance passes a fennecvox:// URL
   app.on('open-url', (_event, url) => {
     handleOAuthCallback(url);
   });

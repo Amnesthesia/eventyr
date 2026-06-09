@@ -1,6 +1,6 @@
 import type { Credentials } from '@shared/ipc';
 
-const SERVICE = 'Talkative';
+const SERVICE = 'Fennec Vox';
 const ACCOUNTS = { anthropic: 'anthropic-api-key', openai: 'openai-api-key' } as const;
 
 // Lazy-load keytar so the app doesn't crash if native bindings are missing in dev
