@@ -1,14 +1,20 @@
 {
   "name": "talkative",
   "version": "1.0.0",
-  "description": "EPUB to audiobook converter — Mac desktop app",
+  "description": "EPUB/PDF to audiobook — Electron desktop app + CLI",
   "main": "out/main/index.js",
+  "packageManager": "pnpm@10.33.0",
+  "bin": {
+    "talkative-cli": "./dist/cli/convert.js"
+  },
   "scripts": {
-    "dev": "electron-vite dev",
+    "dev": "pnpm run build-cli && electron-vite dev",
     "build": "electron-vite build",
+    "build-cli": "tsc -p tsconfig.cli.json",
+    "build:all": "pnpm run build && pnpm run build-cli",
     "preview": "electron-vite preview",
-    "typecheck": "tsc --noEmit -p tsconfig.json",
-    "package": "npm run build && electron-builder --mac"
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.cli.json",
+    "package": "pnpm run build:all && electron-builder --mac"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0",
@@ -16,19 +22,24 @@
     "epub": "^1.2.0",
     "fs-extra": "^11.2.0",
     "keytar": "^7.9.0",
-    "openai": "^4.67.0"
+    "openai": "^4.67.0",
+    "pdf-parse": "^1.1.1",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.0.0",
+    "@types/pdf-parse": "^1.1.4",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@types/yargs": "^17.0.33",
     "@vitejs/plugin-react": "^4.3.4",
     "electron": "^33.0.0",
     "electron-builder": "^25.1.8",
     "electron-vite": "^2.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "tsx": "^4.19.0",
     "typescript": "^5.6.0"
   },
   "build": {
@@ -41,7 +52,7 @@
     },
     "extraResources": [
       {
-        "from": "../epub-to-audiobook/dist/convert.js",
+        "from": "./dist/cli/convert.js",
         "to": "convert.js"
       }
     ]

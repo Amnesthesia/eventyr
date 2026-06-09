@@ -3,13 +3,13 @@
     "target": "ES2022",
     "module": "CommonJS",
     "moduleResolution": "node",
-    "outDir": "dist",
-    "rootDir": ".",
+    "outDir": "dist/cli",
+    "rootDir": "src/cli",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true
   },
-  "include": ["convert.ts", "epub.d.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/cli/**/*"],
+  "exclude": ["node_modules", "dist", "out"]
 }

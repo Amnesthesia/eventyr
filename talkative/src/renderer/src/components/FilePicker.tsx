@@ -25,14 +25,16 @@ export default function FilePicker({ value, onChange, onPickDir }: FilePickerPro
     e.preventDefault();
     setDragOver(false);
     const file = e.dataTransfer.files[0];
-    if (file && file.name.endsWith('.epub')) {
-      // In Electron, File has a .path property via webkitGetAsEntry or direct .path
+    if (file && (file.name.endsWith('.epub') || file.name.endsWith('.pdf'))) {
+      // Electron exposes a non-standard .path property on File objects
       const filePath = (file as File & { path?: string }).path;
       if (filePath) onChange(filePath);
     }
   };
 
   const basename = value ? value.split('/').pop() ?? value : '';
+  const isPdf    = value.toLowerCase().endsWith('.pdf');
+  const icon     = value ? (isPdf ? '📄' : '📖') : '📂';
 
   return (
     <div className="file-picker">
@@ -45,13 +47,13 @@ export default function FilePicker({ value, onChange, onPickDir }: FilePickerPro
         role="button"
         tabIndex={0}
         onKeyDown={e => e.key === 'Enter' && handleClick()}
-        aria-label="Select EPUB file"
+        aria-label="Select EPUB or PDF file"
       >
-        <div className="icon">📖</div>
+        <div className="icon">{icon}</div>
         {value ? (
           <p><strong>{basename}</strong></p>
         ) : (
-          <p>Click to select or<br /><strong>drop an EPUB here</strong></p>
+          <p>Click to select or<br /><strong>drop an EPUB or PDF here</strong></p>
         )}
       </div>
 

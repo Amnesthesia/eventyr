@@ -13,7 +13,8 @@ let activeProcess: ChildProcess | null = null;
 //   - production: resources/convert.js (via extraResources in electron-builder)
 function resolveScriptPath(): string {
   if (process.env['NODE_ENV'] === 'development') {
-    return path.resolve(__dirname, '../../../epub-to-audiobook/dist/convert.js');
+    // out/main/index.js → ../../dist/cli/convert.js
+    return path.resolve(__dirname, '../../dist/cli/convert.js');
   }
   return path.join(process.resourcesPath, 'convert.js');
 }
@@ -24,9 +25,13 @@ export function registerIpcHandlers(win: BrowserWindow): void {
 
   ipcMain.handle(IPC.SELECT_EPUB, async () => {
     const result = await dialog.showOpenDialog(win, {
-      title:       'Select EPUB file',
-      filters:     [{ name: 'EPUB', extensions: ['epub'] }],
-      properties:  ['openFile'],
+      title:      'Select EPUB or PDF file',
+      filters:    [
+        { name: 'Books', extensions: ['epub', 'pdf'] },
+        { name: 'EPUB',  extensions: ['epub'] },
+        { name: 'PDF',   extensions: ['pdf'] },
+      ],
+      properties: ['openFile'],
     });
     return result.canceled ? null : result.filePaths[0] ?? null;
   });

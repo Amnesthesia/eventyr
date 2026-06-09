@@ -4,6 +4,7 @@ import { hideBin } from 'yargs/helpers';
 import Anthropic from '@anthropic-ai/sdk';
 import OpenAI from 'openai';
 import EPub from 'epub';
+import pdfParse from 'pdf-parse';
 import fs from 'fs-extra';
 import path from 'path';
 import { load as cheerioLoad } from 'cheerio';
@@ -76,7 +77,7 @@ const argv = yargs(hideBin(process.argv))
   .scriptName('epub-to-audiobook')
   .usage('Usage: $0 <epub-file> [options]')
   .example('$0 book.epub --voice nova --output-dir ./my-audiobook', '')
-  .example('$0 book.epub --concurrency 4 --yes', 'parallel, no prompt')
+  .example('$0 book.pdf --concurrency 4 --yes', 'PDF input, parallel, no prompt')
   .example('$0 book.epub --resume-from 5', 'restart from chapter 5')
   .option('voice', {
     alias: 'v', type: 'string' as const,
@@ -123,7 +124,7 @@ const argv = yargs(hideBin(process.argv))
     alias: 'y', type: 'boolean' as const, default: false,
     description: 'Skip cost-estimate confirmation prompt',
   })
-  .demandCommand(1, 'Please supply an EPUB file path as the first argument.')
+  .demandCommand(1, 'Please supply an EPUB or PDF file path as the first argument.')
   .help()
   .parseSync();
 
@@ -261,6 +262,114 @@ export async function extractChapters(
   }
   log(`Chapters with content: ${chapters.length}`);
   return { chapters, metadata: { title, author } };
+}
+
+// ── PDF parsing ───────────────────────────────────────────────────────────────
+
+// Regexes that identify chapter-heading lines in PDF text
+const CHAPTER_HEADING_RE = [
+  /^chapter\s+(\d+|[ivxlcdm]+)\b/i,
+  /^(part|book|section|unit)\s+(\d+|[ivxlcdm]+)\b/i,
+  /^\d{1,2}\.\s+[A-Z][a-z]/,               // "1. Introduction"
+  /^[IVX]+\.\s+[A-Z]/,                      // "IV. The Return"
+];
+
+function looksLikeHeading(line: string): boolean {
+  const t = line.trim();
+  return t.length > 0 && t.length < 120 && CHAPTER_HEADING_RE.some(re => re.test(t));
+}
+
+function cleanPdfText(raw: string): string {
+  return raw
+    .replace(/\f/g, '\n\n')           // form-feed → paragraph break
+    .replace(/\r\n?/g, '\n')
+    .replace(/[ \t]+/g, ' ')          // collapse inline whitespace
+    .replace(/\n{4,}/g, '\n\n\n')     // cap consecutive blank lines
+    .trim();
+}
+
+function splitPdfIntoChapters(text: string, fallbackTitle: string): Chapter[] {
+  const lines = text.split('\n');
+  const segments: Array<{ title: string; lines: string[] }> = [];
+  let current: { title: string; lines: string[] } = { title: fallbackTitle, lines: [] };
+
+  for (const line of lines) {
+    if (looksLikeHeading(line)) {
+      if (current.lines.join('').trim().length >= 200) segments.push(current);
+      current = { title: line.trim(), lines: [] };
+    } else {
+      current.lines.push(line);
+    }
+  }
+  if (current.lines.join('').trim().length >= 200) segments.push(current);
+
+  if (segments.length > 0) {
+    return segments.map((seg, i) => ({
+      index: i, spineIndex: i,
+      id: `pdf-chapter-${i}`,
+      title: seg.title,
+      text: seg.lines.join('\n').replace(/\n{3,}/g, '\n\n').trim(),
+    }));
+  }
+
+  // No headings detected — split into equal-sized pseudo-chapters (~8 000 chars each)
+  const PSEUDO_CHUNK = 8_000;
+  const words = text.split(/\s+/);
+  const pseudoChapters: Chapter[] = [];
+  let buf = '';
+  let idx = 0;
+
+  for (const word of words) {
+    buf += (buf ? ' ' : '') + word;
+    if (buf.length >= PSEUDO_CHUNK) {
+      pseudoChapters.push({
+        index: idx, spineIndex: idx,
+        id: `pdf-section-${idx}`,
+        title: `Section ${idx + 1}`,
+        text: buf.trim(),
+      });
+      idx++;
+      buf = '';
+    }
+  }
+  if (buf.trim()) {
+    pseudoChapters.push({ index: idx, spineIndex: idx, id: `pdf-section-${idx}`, title: `Section ${idx + 1}`, text: buf.trim() });
+  }
+
+  return pseudoChapters;
+}
+
+export async function extractChaptersPdf(
+  pdfPath: string,
+): Promise<{ chapters: Chapter[]; metadata: BookMetadata }> {
+  log(`Opening PDF: ${pdfPath}`);
+  const dataBuffer = await fs.readFile(pdfPath);
+  const data = await pdfParse(dataBuffer);
+
+  const title  = (data.info?.['Title']  as string | undefined)?.trim() || path.basename(pdfPath, '.pdf');
+  const author = (data.info?.['Author'] as string | undefined)?.trim() || 'Unknown Author';
+  log(`Book: "${title}" by ${author}  (${data.numpages} pages)`);
+
+  const text     = cleanPdfText(data.text);
+  const chapters = splitPdfIntoChapters(text, title);
+
+  log(`Chapters detected: ${chapters.length}`);
+  chapters.forEach(ch => {
+    log(`  [${String(ch.index).padStart(3)}] "${ch.title}" — ${ch.text.length.toLocaleString()} chars`);
+  });
+
+  return { chapters, metadata: { title, author } };
+}
+
+// ── Format dispatcher ─────────────────────────────────────────────────────────
+
+export async function extractContent(
+  inputPath: string,
+): Promise<{ chapters: Chapter[]; metadata: BookMetadata }> {
+  const ext = path.extname(inputPath).toLowerCase();
+  if (ext === '.pdf')  return extractChaptersPdf(inputPath);
+  if (ext === '.epub') return extractChapters(inputPath);
+  throw new Error(`Unsupported file format "${ext}". Only .epub and .pdf are supported.`);
 }
 
 // ── Markup: SSML prompt (shared between providers) ────────────────────────────
@@ -588,10 +697,16 @@ export async function processChapter(
 // ── Main pipeline ─────────────────────────────────────────────────────────────
 
 async function main(): Promise<void> {
-  const epubPath = path.resolve(String(argv._[0]));
+  const inputPath = path.resolve(String(argv._[0]));
 
-  if (!(await fs.pathExists(epubPath))) {
-    logError(`EPUB file not found: ${epubPath}`);
+  if (!(await fs.pathExists(inputPath))) {
+    logError(`File not found: ${inputPath}`);
+    process.exit(1);
+  }
+
+  const inputExt = path.extname(inputPath).toLowerCase();
+  if (inputExt !== '.epub' && inputExt !== '.pdf') {
+    logError(`Unsupported format "${inputExt}". Only .epub and .pdf are accepted.`);
     process.exit(1);
   }
 
@@ -636,8 +751,8 @@ async function main(): Promise<void> {
     }
   }
 
-  const { chapters, metadata } = await extractChapters(epubPath);
-  progress.epubFile = epubPath;
+  const { chapters, metadata } = await extractContent(inputPath);
+  progress.epubFile = inputPath;
   progress.bookTitle = metadata.title;
   progress.bookAuthor = metadata.author;
   progress.total = chapters.length;
@@ -691,7 +806,7 @@ async function main(): Promise<void> {
   const parts   = await Promise.all(completedKeys.map(k => fs.readFile(progress.completedChapters[Number(k)]!.file)));
   const combined = Buffer.concat(parts);
 
-  const bookSlug   = safeFilename(metadata.title || path.basename(epubPath, '.epub'));
+  const bookSlug   = safeFilename(metadata.title || path.basename(inputPath, inputExt));
   const outputFile = path.join(outputDir, `${bookSlug}.${format}`);
   await fs.writeFile(outputFile, combined);
 
