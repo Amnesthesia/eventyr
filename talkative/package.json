@@ -1,0 +1,49 @@
+{
+  "name": "talkative",
+  "version": "1.0.0",
+  "description": "EPUB to audiobook converter — Mac desktop app",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "package": "npm run build && electron-builder --mac"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "cheerio": "^1.0.0",
+    "epub": "^1.2.0",
+    "fs-extra": "^11.2.0",
+    "keytar": "^7.9.0",
+    "openai": "^4.67.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.0"
+  },
+  "build": {
+    "appId": "com.talkative.app",
+    "productName": "Talkative",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [{ "target": "dmg", "arch": ["arm64", "x64"] }],
+      "protocols": [{ "name": "Talkative", "schemes": ["talkative"] }]
+    },
+    "extraResources": [
+      {
+        "from": "../epub-to-audiobook/dist/convert.js",
+        "to": "convert.js"
+      }
+    ]
+  }
+}
