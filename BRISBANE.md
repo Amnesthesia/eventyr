@@ -1,667 +1,801 @@
 # Brisbane — This Week's Events
-**15 June 2026 – 21 June 2026**  
-*42 top picks · 81 events total*
+**22 June 2026 – 28 June 2026**  
+*49 top picks · 98 events total*
 
 ## ⭐ Top Picks
 
-### 🎵 [Live Jazz at Brisbane Jazz Club](https://www.brisbanejazzclub.com.au)
-📆 Thu 18 June, 8:30 AM  
-📍 Brisbane Jazz Club, Kangaroo Point  
-💰 Low Cost  
-`jazz` `music` `live music` `community` `low cost`
-
-Experience intimate live jazz sessions at the beloved Brisbane Jazz Club, offering an authentic and conversation-friendly atmosphere for music lovers.
-
-### 🎨 [Assembly 2026 – La Boite Theatre](https://www.laboite.com.au/whats-on)
-📆 Fri 19 Jun, 7:00 PM  
-📍 Roundhouse Theatre, La Boite, Kelvin Grove  
-💰 Ticketed  
-`theatre` `fringe` `new talent` `performance`
-
-Experience a snapshot of Brisbane's emerging theatrical talent with short, 10-minute pieces developed through mentorship. Assembly showcases the city's newest voices in an intimate theatre setting.
-
-### 🛠️ [Ceramic Paint and Sip Classes in Brisbane](https://feverup.com/m/145827)
-📆 Tue 16 Jun, various times  
-📍 Shop 2B, 826 Ann Street, Brisbane  
-💰 From $79.00  
-`painting` `ceramics` `workshop` `creative`
-
-A creative workshop combining ceramic painting with a social 'sip' experience. Participants get to paint their own ceramic piece while enjoying a drink, fostering a relaxed creative atmosphere.
-
-### 🎵 [Lazy Suzy Jazz Nights: June Edition](https://www.instagram.com/lazysuzycoffee)
-📆 Mon 15 Jun, 7:00 PM  
-📍 Lazy Suzy Coffee & Wine Bar, Woolloongabba  
+### 🤝 [BIG IDEAS Book Club — Monthly Meetup](https://www.meetup.com/big_ideasbookclub/)
+📆 TBC (Mid-week, 22-28 Jun)  
+📍 Venue TBC via Meetup (Brisbane CBD area)  
 💰 Free  
-`jazz` `music` `intimate` `social`
+`book club` `philosophy` `psychology` `discussion`
 
-Enjoy intimate Monday-night jazz performances by a rotating trio of local musicians in a small, cozy neighbourhood wine bar. Bookings are recommended for tables after 7 PM.
+A monthly meetup for discussing significant ideas from philosophy, psychology, economics, politics, sociology, and science. Topics range from 'free will' to key thinkers like Carl Jung, fostering intellectual engagement.
 
-### 🎨 [UQ Art Museum – Winter Exhibitions Late Opening](https://www.art-museum.uq.edu.au/whats-on)
-📆 Wed 17 Jun, 5:00 PM  
-📍 UQ Art Museum, St Lucia  
+### 🛠️ [Climate Fresk Brisbane — Lunch & Learn](https://events.humanitix.com/climate-fresk-brisbane-lunch-learn-june-2026)
+📆 Wed 24 Jun, 11:00 AM – 2:00 PM  
+📍 The Precinct, Fortitude Valley  
 💰 Free  
-`art` `exhibition` `talk` `free`
+`climate science` `workshop` `systems thinking` `environment`
 
-Explore current contemporary art exhibitions during this mid-week late opening, featuring insights from curators and student guides. Entry is free, but registration is recommended.
+An interactive workshop designed to educate and raise awareness about climate change using a systems thinking approach. Participants collaboratively build a 'fresk' to understand climate science and solutions.
 
-### 🛠️ [Brisbane Writers Workshop: Short Story Clinic](https://www.eventbrite.com/d/australia--brisbane/creative-writing-workshop)
-📆 Thu 18 Jun, 6:00 PM  
-📍 State Library of Queensland – Business Studio, South Brisbane  
-💰 $65  
-`writing` `workshop` `creative` `fiction`
-
-An intensive small-group workshop for emerging writers, focused on the structure, character development, and revision of short fiction. Led by a local published author, the clinic includes personalised feedback on a draft story.
-
-### 🎵 [Open Mic & Emerging Acts](https://www.facebook.com/canyoukeepasecretvintage/events)
-📆 Fri 19 Jun, 7:30 PM  
-📍 Can You Keep A Secret?, Woolloongabba  
+### 🤝 [The Philosophy Café Meet Up — Brisbane](https://meetup.com/en-AU/The-Philosophy-Cafe-Meet-Up)
+📆 Recurring (check website for June date)  
+📍 TBA (check Meetup page)  
 💰 Free  
-`music` `open mic` `indie` `free`
+`philosophy` `discussion` `meetup` `free`
 
-Discover emerging indie, folk, and experimental artists at this eclectic open mic night held in a retro lounge bar with strictly limited capacity. Sign-ups for performers begin at 6:30 PM, with music starting at 7:30 PM.
+An informal, non-technical group encouraging philosophical debate and active exchange of ideas. Ideal for curious individuals seeking intellectually stimulating discussions in a relaxed environment.
 
-### 🎨 [Fluxus: Contemporary Painting in Brisbane](https://www.janmurphygallery.com.au/exhibitions)
-📆 Sat 20 Jun, 2:00 PM  
-📍 Jan Murphy Gallery, Fortitude Valley  
+### 🎓 [GDG Brisbane Monthly Meetup - June Edition!](https://www.meetup.com/gdg-brisbane/events/300612628/)
+📆 Mon 22 Jun, 5:30 PM  
+📍 The Precinct, Fortitude Valley  
 💰 Free  
-`art` `painting` `exhibition` `artist talk`
+`ai` `security` `technology` `meetup` `free`
 
-View a group exhibition of mid-career Brisbane painters showcasing works that explore colour and gesture. The event includes a Saturday afternoon artist floor talk followed by an informal Q&A session.
+This meetup features two talks: "OWASP LLM & Agentic AI Security" by Benjamin Luck and "Friday Idea, Sunday Cheers to Monday Launch" by Dilum De Silva. It includes free food, drinks, and networking, attracting intellectually engaged individuals interested in AI and tech.
 
-### 🛠️ [Saturday Morning Clay Taster](https://www.masandmiekceramic.house/workshops)
-📆 Sat 20 Jun, 10:00 AM  
-📍 Mas & Miek Ceramic House, Newstead  
-💰 $95  
-`pottery` `ceramics` `workshop` `beginners`
-
-Get hands-on with clay in this introductory wheel and hand-building class held at a boutique ceramic studio. The session includes all clay materials, firing of a small piece, and coffee from the in-house café.
-
-### 🎵 [Sunday Jazz on the Green](https://www.brisbane.qld.gov.au/events-arts-and-culture/what-s-on-in-brisbane)
-📆 Sun 21 Jun, 12:00 PM  
-📍 Queensland Multicultural Centre Lawn, Kangaroo Point  
+### 🤝 Brisbane Philosophy Café
+📆 Sun 28 Jun, 3:30 PM  
+📍 Continental Café, New Farm  
 💰 Free  
-`jazz` `music` `outdoor` `free`
+`philosophy` `discussion` `community` `free`
 
-Enjoy relaxed daytime jazz sets from local ensembles on the riverfront lawn, complete with food trucks and a picnic atmosphere. This family-friendly event encourages attendees to bring a rug and settle in.
+A recurring community meetup providing a free and friendly space for people to gather and discuss philosophical ideas in an open format. It's an excellent opportunity for natural conversation among intellectually engaged people.
 
-### 🎵 [Open Season: Against The Grain Festival](https://www.ticketmaster.com.au/open-season-tickets/artist/2762831)
-📆 Sat 20 June, 12:30 PM  
-📍 The Princess Theatre, Woolloongabba  
-💰 Ticketed  
-`music` `festival` `indie` `ticketed`
+### 🎨 [Cartoon Violence: Takeshi Murata and Bunny Rogers (Exhibition)](https://www.ima.org.au/exhibitions/quarter-two-exhibition-opening/)
+📆 Sat 18 Apr  
+📍 Institute of Modern Art (IMA)  
+💰 Free  
+`art` `exhibition` `culture` `animation` `free`
 
-Part of Brisbane's defining winter cultural program, Open Season, this festival at The Princess Theatre showcases local, national, and international artists across music and art in an exploratory atmosphere.
+This exhibition features two 3D animations by Takeshi Murata and Bunny Rogers, critically grappling with coded, gendered violence in American cartoons, offering an intellectually stimulating perspective on culture and human behavior.
 
-### 🎵 [Ubuntu Social](https://brisbanepowerhouse.org)
-📆 Sun 21 June  
+### 🎨 [Olafur Eliasson: Presence — GOMA](https://www.qagoma.qld.gov.au/whats-on/olafur-eliasson-presence)
+📆 Ongoing, 22-28 June  
+📍 Gallery of Modern Art (GOMA), South Brisbane  
+💰 Free  
+`art` `exhibition` `free` `multisensory`
+
+An expansive, multi-sensory exhibition by Icelandic-Danish artist Olafur Eliasson, engaging visitors with perception-focused installations developed over three decades. This Brisbane-exclusive show spans GOMA's ground floor galleries.
+
+### 🤝 [Brisbane Write Club — Writing Session](https://www.meetup.com/brisbane-write-club/)
+📆 TBC (Weekly, 22-28 Jun)  
+📍 Brisbane (check Meetup listing)  
+💰 Free  
+`writing` `creative` `community` `free`
+
+The Brisbane Write Club offers dedicated writing time and the chance to connect with other local writers of all levels. Each session provides 1 hour and 45 minutes of continuous writing.
+
+### 🤝 [Brisbane Active Socials — Hiking / Camping](https://www.meetup.com/brisbane-active-socials-hiking-camping-and-more/)
+📆 Sun 28 Jun, 7:00 AM  
+📍 TBC (Brisbane surrounds — check Meetup listing)  
+💰 Free  
+`hiking` `outdoor` `adventure` `social`
+
+An early-morning outdoor adventure with a regular group for hiking, camping, and more. Ideal for meeting energetic, nature-loving locals and exploring Brisbane's surrounds.
+
+### 🎓 [Platform 2026: Artist Talks](https://www.ima.org.au/ima-events/platform-2026-artist-talks/)
+📆 During the week (check website)  
+📍 Institute of Modern Art (IMA), Fortitude Valley  
+💰 Free  
+`art` `artist talk` `contemporary` `free`
+
+Join the emerging artists of the Platform 2026 exhibition as they discuss their new works and creative processes. Seren Wagstaff, one of the featured artists, will speak about her installation and performance pieces.
+
+### 🎨 [Delvene Cockatoo-Collins: Warrajamba Artist in Residence](https://brisbanepowerhouse.org/)
+📆 Mon 22 Jun – Sun 28 Jun  
 📍 Brisbane Powerhouse, New Farm  
-💰 Free  
-`music` `art` `community` `world culture` `free`
+💰 Check website  
+`art` `workshop` `indigenous` `culture` `hands-on`
 
-Brisbane Powerhouse hosts a free, all-ages outdoor celebration of world music, art, and community, designed for curious and open-minded attendees.
+Quandamooka artist Delvene Cockatoo-Collins leads a hands-on creative activation exploring the ancestral story of Warrajamba, the mermaid. Participants can create their own mermaid or dugong using artist-designed stamps, connecting with Indigenous culture and stories.
 
-### 🎨 [World Press Photo Exhibition 2026](https://brisbanepowerhouse.org)
-📆 Mon 15 June, 10:00 AM  
-📍 Brisbane Powerhouse, New Farm  
+### 🤝 [Fiona's Open Book Club — Avid Reader Bookshop](https://avidreader.com.au/pages/6595-FionasOpenBookclub)
+📆 First Wednesday of the month (check for June session)  
+📍 Avid Reader, West End  
+💰 $10  
+`book club` `reading` `literature` `social`
+
+A community-oriented book club hosted by the independent Avid Reader bookshop, offering discussions on a diverse range of titles. Known for attracting thoughtful readers and fostering conversation.
+
+### 🤝 [Brisbane Social Geeks — Dining Philosophers](https://www.meetup.com/philosophy-school-brisbane/)
+📆 Check Meetup for June date, 6:30 PM  
+📍 Punjabi Palace Indian Restaurant, South Brisbane  
+💰 Cost of meal  
+`social` `discussion` `food` `philosophy`
+
+Part of the Brisbane Social Geeks group, Dining Philosophers combines international cuisine with intellectual conversation. Expect discussions covering a range of topics among curious and engaged people.
+
+### 🎨 [Olafur Eliasson: Presence (Exhibition)](https://www.qagoma.qld.gov.au/exhibition/olafur-eliasson)
+📆 Daily, 22-28 Jun 2026 (until 4:00 PM)  
+📍 Gallery of Modern Art (GOMA), South Brisbane  
 💰 Ticketed  
-`photography` `art` `exhibition` `photojournalism` `ticketed`
+`art` `exhibition` `installation` `sensory`
 
-A powerful and thought-provoking exhibition of the world's best photojournalism, offering visual storytelling on global affairs and documentary photography.
+Experience Olafur Eliasson: Presence, a landmark multi-sensory art installation exclusive to GOMA, challenging perceptions of light, space, and perspective.
 
-### 🎨 [Samford & Hinterland Arts Trail 2026](https://www.mustdobrisbane.com/whats-on)
-📆 Sat 20 June, 10:00 AM  
-📍 Samford Valley & Hinterland (multiple sites)  
+### 🎓 [SLQ Explainer Series](https://www.slq.qld.gov.au/)
+📆 Thu 25 Jun 2026 (evening)  
+📍 The Edge, State Library of Queensland, South Brisbane  
+💰 Check SLQ website  
+`discussion` `science` `current affairs` `lecture`
+
+The Explainer Series offers thoughtful conversations with experts on a range of topics from international law to climate change and gut health, providing context and insight.
+
+### 🎨 [Archie Moore: kith and kin (Exhibition)](https://www.qagoma.qld.gov.au/whats-on/exhibitions/)
+📆 Daily, 22-28 Jun 2026  
+📍 GOMA, South Brisbane  
 💰 Free  
-`art` `exhibition` `makers` `community` `free`
+`art` `exhibition` `indigenous` `free`
 
-A self-guided arts trail through Samford Valley and the hinterland, inviting creative explorers to visit open studios, galleries, and meet local makers.
+Experience kith and kin by Archie Moore, an immersive installation that explores the common ancestors of all life, emphasizing our shared kinship and responsibilities.
 
-### 🛠️ [Writing Event at Queensland Writers Centre](https://www.queenslandwriters.org)
-📆 Sat 21 June, 10:30 AM  
-📍 Queensland Writers Centre (State Library precinct), South Bank  
-💰 Varies  
-`writing` `workshop` `community` `creative` `varies`
+### 🛠️ 101 - 3D printing; mini skate deck
+📆 Wed 24 Jun, 6:00 PM  
+📍 Brisbane  
+💰 Check ticket price  
+`3d printing` `workshop` `maker` `technology`
 
-Join a creative community event or workshop at the Queensland Writers Centre, offering opportunities to connect with other writers and engage with literary topics.
+A beginner-friendly workshop introducing the basics of 3D printing, where participants will learn to design and print their own mini skate deck.
 
-### 🎵 [The QUBE Effect – Triffid Residency](https://www.thetriffid.com.au)
-📆 Sun 15 Jun, 7:00 PM  
-📍 The Triffid, Newstead  
+### 🎓 ON THE WILD SIDE: Filming Creatures Great and Small Presented by Pieter de Vries
+📆 Fri 26 Jun, 10:30 AM  
+📍 Auditorium 1, The State Library of Queensland, South Brisbane  
+💰 $40  
+`nature` `filmmaking` `lecture` `science`
+
+Filmmaker Pieter de Vries shares stories and techniques from his nature documentaries for David Attenborough and National Geographic, featuring segments from his work. This lecture offers insights into science and nature filmmaking.
+
+### 🤝 AI & Society | Run Walk Coffee Club
+📆 Sat 27 Jun, 7:00 AM  
+📍 Brisbane  
+💰 Free  
+`ai` `social` `outdoor` `free`
+
+A social running, walking, and coffee club organized by the "AI & Society — Global" Meetup group. This event combines outdoor activity with discussions on AI and societal topics among intellectually curious individuals.
+
+### 🎨 [Artist in Residence: Martin Edge – Museum of Brisbane](https://www.viabrisbane.com.au/event/artist-in-residence-martin-edge-museum-of-brisbane/)
+📆 Mon 22 Jun, 10:00 AM  
+📍 Fairfax Gallery, Museum of Brisbane  
+💰 Free  
+`art` `mural` `exhibition` `creative` `free`
+
+Visitors can watch Queensland artist Martin Edge create a large-scale mural directly on the gallery walls, chat with him about his process, and experience his vibrant, whimsical compositions inspired by Brisbane life.
+
+### 🎨 [Erika Scott: Cambium Itch (Exhibition)](https://www.ima.org.au/exhibitions/quarter-two-exhibition-opening/)
+📆 Sat 18 Apr  
+📍 Institute of Modern Art (IMA)  
+💰 Free  
+`art` `exhibition` `sculpture` `design` `free`
+
+An exhibition by Erika Scott featuring maximalist sculptures made from everyday detritus, transforming objects into a supersized 'pin-art toy' installation. This engages with themes of design, creativity, and re-purposing materials.
+
+### 🎨 World Press Photo Exhibition 2026
+📆 Mon 1 Jun  
+📍 Brisbane Powerhouse  
 💰   
-`music` `indie` `live music` `community`
+`photography` `exhibition` `journalism` `culture`
 
-An intimate live music residency showcasing local emerging artists at one of Brisbane's beloved independent venues. Expect a diverse lineup of contemporary sounds in a community-oriented atmosphere.
+A powerful and thought-provoking selection of the world's best photojournalism, offering insights into global events, human behavior, and culture through visual storytelling.
 
-### 🎵 [Open Season Brisbane 2026](https://au.rollingstone.com/?p=92839)
-📆 Mon 15 Jun – Sun 21 Jun  
-📍 Multiple Brisbane venues  
+### 🛠️ The Great Clay Throw: A pottery experience
+📆 Sat 27 Jun  
+📍 Brisbane  
+💰   
+`pottery` `craft` `workshop` `hands-on`
+
+An opportunity to try the pottery wheel, offering a hands-on creative experience for participants interested in craft and ceramics.
+
+### 🎨 [GOMA Friday Night — Last session during Olafur Eliasson: Presence](https://www.qagoma.qld.gov.au/whats-on)
+📆 Fri 26 Jun, Evening  
+📍 Gallery of Modern Art (GOMA), South Brisbane  
 💰 Varies  
-`music` `festival` `indie` `alternative`
+`art` `exhibition` `music` `social`
 
-Brisbane's winter music festival continues, featuring an eclectic lineup of local and international indie and alternative artists across various intimate venues. Check the festival program for specific shows and dates this week.
+Experience GOMA's transformation into an after-dark cultural destination with art, music, performances, and cocktails, set against Olafur Eliasson's exhibition. This is the final Friday night event for the 'Presence' exhibition.
 
-### 🎨 [HSBC Spanish & Latin American Film Festival](https://www.palacecinemas.com.au/events)
-📆 Mon 15 Jun – Sun 21 Jun  
-📍 Palace James St & Palace Barracks, Brisbane  
-💰 $18+  
-`film` `festival` `arthouse` `culture`
+### 🎨 [The Red Dress — Museum of Brisbane](https://www.museumofbrisbane.com.au)
+📆 Ongoing, 22-28 June  
+📍 Museum of Brisbane, City Hall, Brisbane CBD  
+💰 Free  
+`textile art` `embroidery` `exhibition` `free`
 
-The 29th annual film festival presents a carefully selected lineup of over thirty independent Spanish-language films from Spain, Colombia, Argentina and more. A week-long celebration of arthouse cinema.
+An extraordinary textile art project featuring an intricate embroidery created by 24 members of Brisbane's Allthreads community, beautifully capturing Australia's unique landscape. This is its first showing in Australia.
 
-### 🎨 [Palace Movie Club Preview Screening](https://www.palacecinemas.com.au)
-📆 Wed 17 Jun, Evening  
-📍 Palace Cinemas Brisbane  
-💰 $12-$15  
-`film` `preview` `arthouse` `community`
+### 🤝 [Westend Fresh Connections — Friday Social Meetup](https://www.meetup.com/westend-fresh-connections/)
+📆 Fri 26 Jun, 8:00 PM  
+📍 West End (check Meetup for exact venue)  
+💰 Free  
+`social` `meetup` `community` `west end`
 
-An exclusive preview screening of an upcoming arthouse film for Palace Movie Club members. A great opportunity for a low-key midweek cinema outing before general release.
+A recurring community social in the vibrant West End neighbourhood, offering a relaxed atmosphere for interesting locals to connect. Enjoy casual conversation and good company.
 
-### 🎨 [IMA Platform 2026: Emerging Artists Exhibition](https://www.ima.org.au/exhibitions/platform-2026/)
-📆 Tue 16 Jun – Sun 21 Jun, 10:00 AM – 5:00 PM  
-📍 Institute of Modern Art, Fortitude Valley  
+### 🤝 [Brisbane Social Geeks — Social Meetup](https://www.meetup.com/brisbane-social-geeks/)
+📆 Sat 27 Jun, 2:00 PM  
+📍 Brisbane (check Meetup listing)  
+💰 Free  
+`social` `meetup` `tech` `pop culture`
+
+A recurring group for curious, tech-minded, and pop-culture-loving locals to connect in a laid-back social setting. Share interests and meet like-minded people.
+
+### 🎨 [Platform 2026: Dean Ansell, Spencer Harvie & Seren Wagstaff — Exhibition](https://www.ima.org.au/exhibitions/platform-2026/)
+📆 Tue 23 Jun – Sun 28 Jun, 10:00 AM – 5:00 PM  
+📍 Institute of Modern Art (IMA), Fortitude Valley  
 💰 Free  
 `art` `exhibition` `contemporary` `free`
 
-Annual exhibition showcasing new works by Queensland's emerging artists. Dean Ansell blends digital and AI imagery, while Seren Wagstaff explores everyday regional life through installation and performance. Open Tue-Sun.
+An annual exhibition funding three Queensland-emerging artists to create ambitious new projects. This year features new works by Dean Ansell (Melanesian mythologies), Spencer Harvie (online subcultures), and Seren Wagstaff (regional life artefacts).
 
-### 🎨 [Beetlejuice The Musical](https://www.qpac.com.au/whats-on)
-📆 Mon 15 Jun, 7:30 PM  
-📍 Lyric Theatre, QPAC, South Brisbane  
-💰 Ticketed  
-`musical` `theatre` `performance` `fantasy`
-
-Based on Tim Burton's film, this musical follows Lydia Deetz, a unique teenager who encounters a recently deceased couple and a mischievous demon. Performances run through early August at the Lyric Theatre.
-
-### 🎵 [Chris Botti – Live in Concert](https://www.brisbanepowerhouse.org)
-📆 Tue 16 Jun, 7:30 PM  
-📍 Brisbane Powerhouse, New Farm  
-💰 Ticketed  
-`jazz` `music` `concert` `live music`
-
-Experience an intimate and atmospheric live performance by Chris Botti, one of the world's best-selling jazz trumpet artists. He performs at the Brisbane Powerhouse for one night only.
-
-### 🎵 [loscil – Live](https://www.ima.org.au)
-📆 Wed 17 Jun, 7:30 PM  
-📍 Institute of Modern Art, Brisbane  
-💰 Ticketed  
-`ambient music` `electronic music` `experimental` `concert`
-
-Canadian ambient/electronic artist loscil (Scott Morgan) brings his meditative, drone-influenced soundscapes to the Institute of Modern Art. This performance offers a unique sonic experience in an artistic setting.
-
-### 🎵 [Against the Grain – Open Season Live Music Festival](https://www.ikonix.com.au/ultimate-guide-to-brisbane-events-may-june-july-2026/)
-📆 Sat 20 Jun, 3:00 PM  
-📍 Clarence Corner precinct, Brisbane  
-💰 Ticketed  
-`music festival` `indie music` `live music` `outdoor`
-
-Part of the Open Season festival, Against The Grain features a major lineup of indie and alternative acts including Stereolab, Pond, and Rolling Blackouts Coastal Fever. Enjoy a day of live music in the Clarence Corner precinct.
-
-### 🎨 [Opera Queensland: Rusalka](https://www.operaq.com.au)
-📆 Fri 19 Jun, 7:30 PM  
-📍 QPAC (Lyric Theatre / Concert Hall), South Brisbane  
-💰 Ticketed  
-`opera` `performance` `classical music` `fairytale`
-
-Inspired by The Little Mermaid, this fairytale opera tells the story of the water nymph Rusalka who seeks true freedom. Dvořák's score brings sweeping romance and folk music to this performance.
-
-### 📌 [State Library of Queensland Tours](https://www.slq.qld.gov.au/whats-on/state-library-tours)
-📆 Tue 16 Jun, 11:00 AM  
-📍 State Library of Queensland, South Bank  
-💰 Free  
-`community` `history` `architecture` `free` `tour`
-
-Join volunteer guides for a free tour of the State Library, exploring its architecture, collections, services, and current exhibitions. Tours are customisable and run for approximately 45-60 minutes.
-
-### 🎨 [GOMA Friday Nights](https://www.qagoma.qld.gov.au/whats-on)
-📆 Fri 19 Jun, 5:00 PM  
+### 🎨 [GOMA Friday Nights: Olafur Eliasson: Presence (Final Night)](https://www.qagoma.qld.gov.au/event/goma-friday-nights-presence-2026-05-08)
+📆 Fri 26 Jun, 5:30 PM – 8:30 PM  
 📍 Gallery of Modern Art (GOMA), South Brisbane  
+💰 Ticketed  
+`art` `exhibition` `social` `music`
+
+The final GOMA Friday Night event offers a unique social experience within the multi-sensory Olafur Eliasson exhibition, featuring DJs, live performances, drinks, and bites.
+
+### 🎨 [QAGOMA: Australian Cinémathèque Film Screening](https://www.qagoma.qld.gov.au/whats-on/events/)
+📆 Wed 24 Jun, 11:00 AM – 12:00 PM  
+📍 GOMA, South Brisbane  
+💰 Check website (some free)  
+`film` `cinema` `art` `screening`
+
+The Australian Cinémathèque offers unique film and video screenings, providing an opportunity to see diverse and rare cinematic works not widely shown elsewhere.
+
+### 🎨 [QAGOMA: Curator-led Guided Tour](https://www.qagoma.qld.gov.au/whats-on/events/)
+📆 Fri 26 Jun, 10:15 AM – 11:15 AM  
+📍 Queensland Art Gallery (QAG), South Brisbane  
+💰 Book Now  
+`art` `exhibition` `tour` `discussion`
+
+Participate in a curator-led guided tour at QAG, offering deeper insights into current exhibitions and the stories behind the artworks.
+
+### 🎨 [World Press Photo Exhibition 2026 (Brisbane Airport)](https://brisbanepowerhouse.org/world-press-photo-exhibition-2026/)
+📆 Daily, until Thu 25 Jun 2026  
+📍 Brisbane Airport – Domestic Terminal, Brisbane  
 💰 Free  
-`art` `exhibition` `social` `free` `contemporary art`
+`photography` `exhibition` `journalism` `free`
 
-GOMA offers extended gallery hours, special events, talks, and a social atmosphere every Friday evening. Enjoy contemporary art in a vibrant setting until late.
+A selection from the World Press Photo Exhibition is on display, showcasing powerful stories through photojournalism at the Domestic Terminal, accessible to a broader audience.
 
-### 📌 [Hatha yoga class](https://www.meetup.com/find/events/hatha-yoga-class-brisbane/)
-📆 Mon 15 Jun, 6:30 PM  
-📍 Brisbane (Meetup group)  
-💰 Check price  
-`yoga` `wellness` `community` `social`
-
-A Hatha yoga class organised by a local Meetup group, offering a wellness-oriented session that encourages community interaction. Expect a grounded, authentic approach to yoga practice.
-
-### 🤝 [International Meetup with Activities](https://www.meetup.com/find/events/international-meetup-with-activities-brisbane/)
-📆 Tue 16 Jun, 5:30 PM  
-📍 Brisbane (Meetup group)  
+### 🎨 [The God of Small Things: Faith and Popular Culture (Exhibition)](https://www.qagoma.qld.gov.au/whats-on/exhibitions/)
+📆 Daily, 22-28 Jun 2026  
+📍 GOMA, South Brisbane  
 💰 Free  
-`social` `meetup` `language exchange` `free`
+`art` `exhibition` `culture` `faith` `free`
 
-A free international meetup offering social activities, a complimentary drink, and snacks, designed for people to connect and practice language skills in a community setting.
+This exhibition at GOMA explores the intersection of faith and popular culture, offering a unique perspective on contemporary artistic expression.
 
-### 🛠️ [Turkish Lamp Workshop in Brisbane](https://feverup.com/m/145826)
-📆 Tue 16 Jun, various times  
-📍 Shop 2B, 826 Ann Street, Brisbane  
-💰 From $69.00  
-`craft` `workshop` `hands-on` `paid`
+### 📌 [The Jury Experience](https://oldmuseum.org/events/the-jury-experience)
+📆 Thu 25 Jun, 6:00 PM  
+📍 The Old Museum, Bowen Hills  
+💰 $49.00  
+`immersive theatre` `mystery` `interactive` `bowen hills`
 
-A hands-on workshop where participants learn to create their own decorative Turkish lamp. Perfect for those interested in craft and maker culture.
+An immersive theatrical experience where you become a juror in a fictional murder trial, presented at The Old Museum. Delve into clues and debate the outcome.
 
-### 🎓 [AI & Society | AI in Healthcare](https://www.meetup.com/find/events/ai-society-ai-in-healthcare-brisbane/)
-📆 Wed 17 Jun, 5:30 PM  
-📍 Brisbane (Meetup group)  
-💰 Check price  
-`ai` `technology` `healthcare` `discussion`
+### 🎨 [Warrajamba](https://www.museumofbrisbane.com.au/whats-on/warrajamba/)
+📆 Ongoing, 10:00 AM – 5:00 PM daily  
+📍 Museum of Brisbane, City Hall  
+💰 Free  
+`indigenous art` `exhibition` `culture` `free`
 
-A discussion or presentation exploring the intersection of AI and society, specifically focusing on applications and implications of AI within the healthcare sector. Attracts curious, thoughtful individuals.
+An ongoing exhibition at the Museum of Brisbane showcasing Indigenous cultural narratives and art, open daily for exploration.
 
-### 🤝 [Speak Easy International](https://www.meetup.com/find/events/speak-easy-international-brisbane/)
-📆 Thu 18 Jun, 6:00 PM  
-📍 Brisbane (Meetup group)  
-💰 Check price  
-`social` `meetup` `language exchange` `community`
+### 🎨 [Stories You Wear: Magpie Goose](https://www.museumofbrisbane.com.au/whats-on/stories-you-wear-magpie-goose/)
+📆 Ongoing, 10:00 AM – 5:00 PM daily  
+📍 Museum of Brisbane, City Hall  
+💰 Free  
+`indigenous art` `fashion` `design` `exhibition` `free`
 
-An international social gathering designed to foster conversation and connections among locals and international visitors. Expect a lively atmosphere for cultural and linguistic exchange.
+This exhibition celebrates the vibrant designs of Magpie Goose, an Indigenous social enterprise, exploring storytelling through contemporary fashion and textiles.
 
-### 📌 [Sawasdee Thailand Brisbane Thai Festival](https://www.weekendnotes.com/sawasdee-thailand-brisbane-thai-festival/)
-📆 Sat 20 Jun  
-📍 Brisbane  
-💰 Check price  
-`culture` `festival` `community` `food`
+### 🎨 [Small Figures (Exhibition)](https://www.qagoma.qld.gov.au/whats-on/exhibitions/small-figures)
+📆 Ongoing, 10:00 AM – 5:00 PM daily  
+📍 Queensland Art Gallery (QAG)  
+💰 Free  
+`art` `sculpture` `exhibition` `free`
 
-A vibrant cultural festival celebrating Thai heritage in Brisbane, featuring food, music, and performances. Offers an authentic experience of Thai culture and community.
+This exhibition at QAG explores the significance and storytelling power of small-scale artworks and figures from various cultures and historical periods.
 
-### 🎨 [DinoFest Brisbane 2026](https://www.weekendnotes.com/dinofest-brisbane/)
-📆 Sat 20 Jun – Sun 12 Jul  
-📍 Brisbane  
-💰 Check price  
-`science` `history` `exhibition` `family`
+### 🎨 [Great and Small: Kindred Creatures in Indigenous Australian Art (Exhibition)](https://www.qagoma.qld.gov.au/whats-on/exhibitions/great-and-small-kindred-creatures-in-indigenous-australian-art)
+📆 Ongoing, 10:00 AM – 5:00 PM daily  
+📍 Queensland Art Gallery (QAG)  
+💰 Free  
+`indigenous art` `australian art` `exhibition` `nature` `free`
 
-A dinosaur-themed festival or exhibition offering an engaging experience for those interested in palaeontology, science, and history. Features educational displays and activities.
+Explore the profound connection between Indigenous Australian artists and the animal world through a diverse collection of artworks at QAG.
 
-### 📌 [Meet the Rainforest Guided Walk](https://www.weekendnotes.com/meet-rainforest-guided-walk-mary-cairncross-scenic-reserve/)
-📆 Sat 20 Jun  
-📍 Mary Cairncross Scenic Reserve  
-💰 Check price  
-`nature` `outdoor` `walk` `educational`
+### 🎨 [Inscribing a life (Exhibition)](https://www.qagoma.qld.gov.au/whats-on/exhibitions/inscribing-a-life)
+📆 Ongoing, 10:00 AM – 5:00 PM daily  
+📍 Gallery of Modern Art (GOMA)  
+💰 Free  
+`art` `identity` `narrative` `exhibition` `free`
 
-A guided walk through the rainforest at Mary Cairncross Scenic Reserve, offering an educational and immersive experience in nature. Learn about local flora and fauna with a knowledgeable guide.
+This exhibition at GOMA explores themes of identity, memory, and personal narratives through various artistic mediums, inviting reflection on individual journeys.
 
-### 🛠️ [Modern Felting Classes](https://www.weekendnotes.com/cosy-up-this-winter-modern-felting-classes-at-the-fabric-and-felt-studio/)
-📆 Sat 20 Jun – Sat 12 Sep  
-📍 The Fabric and Felt Studio  
-💰 Check price  
-`craft` `felting` `workshop` `textile`
+### 🎨 [Snap Blak: Contemporary Aboriginal and Torres Strait Island photography (Exhibition)](https://www.qagoma.qld.gov.au/whats-on/exhibitions/snap-blak)
+📆 Ongoing, 10:00 AM – 5:00 PM daily  
+📍 Gallery of Modern Art (GOMA)  
+💰 Free  
+`indigenous art` `photography` `exhibition` `culture` `free`
 
-A series of modern felting classes held over several weeks at The Fabric and Felt Studio, providing hands-on instruction in creative textile art. Suitable for those looking to learn a new craft.
+Showcasing powerful contemporary photography by Aboriginal and Torres Strait Islander artists at GOMA, offering diverse perspectives and stories through the lens.
 
-### 🤝 Werewolf & Party Social Strategy Games
-📆 Sat 20 Jun, 6:30 PM  
-📍 New Farm library  
-💰 Check price  
-`games` `social` `community` `strategy`
+### 🎨 [Tour for visitors with hearing loss: Art Reimagined: Picasso to Expressionism and Beyond](https://www.qagoma.qld.gov.au/whats-on/events/tour-for-visitors-with-hearing-loss-art-reimagined)
+📆 Fri 26 Jun, 10:15 AM – 11:15 AM  
+📍 Queensland Art Gallery (QAG)  
+💰 Bookings required  
+`art history` `tour` `accessibility` `social`
 
-A community-focused event at New Farm Library for playing social strategy games like Werewolf, designed to encourage interaction, critical thinking, and social engagement among participants.
+A specially designed tour of the 'Art Reimagined' exhibition, interpreted for visitors with hearing loss, exploring a significant period in art history.
 
-### 🎨 [Live at the Trocadero](https://brisbanepowerhouse.org/)
-📆 Wed 17 Jun, 7:30 PM  
+### 🤝 [Taste of QAGOMA: Tour + Lunch Experience](https://www.qagoma.qld.gov.au/whats-on/events/taste-of-qagoma)
+📆 Fri 26 Jun, 10:45 AM – 1:15 PM  
+📍 QAG & GOMA, finishes at GOMA Bistro  
+💰 Ticketed  
+`art` `tour` `social` `food` `ticketed`
+
+A curated tour of QAGOMA's exhibitions followed by a lunch experience at GOMA Bistro, offering a social and immersive way to engage with art.
+
+### 📌 [Queensland Games Festival](https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D204263687)
+📆 Sat 27 Jun, 10:00 AM – 5:00 PM  
 📍 Brisbane Powerhouse, New Farm  
-💰 Ticketed  
-`theatre` `performance` `experimental`
+💰 Free (workshops ticketed)  
+`gaming` `technology` `design` `festival` `free` `workshops`
 
-An intimate and potentially experimental theatre production presented by Brisbane Powerhouse, part of a limited run exploring contemporary themes.
+A festival celebrating video games and digital interactive entertainment, featuring exhibitions, panels, and workshops for enthusiasts and the curious.
 
-### 🎵 [I Prevail, Imminence, Invent Animate](https://www.jambase.com/venues/riverstage-brisbane-qld/concerts)
-📆 Sun 21 Jun, 6:00 PM  
-📍 Riverstage, Brisbane  
-💰 Ticketed  
-`metal` `rock` `music` `concert`
+### 📌 [Lifeline Bookfest](https://www.bcec.com.au/whats-on/lifeline-bookfest-2026/)
+📆 Sat 27 Jun - Sun 5 Jul, 9:00 AM – 5:00 PM daily  
+📍 Brisbane Convention & Exhibition Centre  
+💰 $ (Gold Coin Donation)  
+`books` `community` `charity` `reading` `low cost`
 
-A high-energy live concert featuring the popular metalcore band I Prevail, supported by Imminence and Invent Animate, at Riverstage.
+Brisbane's largest second-hand book sale, offering thousands of books across all genres, supporting Lifeline Queensland's services.
 
-### 🛠️ [Life Drawing at The Station](https://www.eventbrite.com/d/australia--fortitude-valley/life-drawing)
-📆 Tue 16 Jun, 6:30 PM  
-📍 The Station, Fortitude Valley  
-💰 $25  
-`art` `drawing` `workshop` `social`
-
-Participate in an unguided life drawing session featuring both clothed and nude models in a relaxed, social atmosphere within an artist-run warehouse space. Easels and boards are supplied; participants should bring their own drawing materials.
-
-### 🤝 [Thursday Night Social Climbing](https://www.urbanclimb.com.au/events)
-📆 Thu 18 Jun, 6:30 PM  
-📍 Urban Climb West End, West End  
-💰 $25  
-`climbing` `social` `adventure` `community`
-
-Join a community bouldering night featuring informal coaching, social games on the climbing wall, and post-climb drinks at a nearby bar. This event is suitable for both beginners and regular climbers.
-
-### 🤝 [Sea Shanty and Folk Song Session](https://www.facebook.com/groups/730385435667659)
-📆 Fri 19 Jun, 7:00 PM  
-📍 Chermside Bowls Club, Chermside  
+### 🎨 [Auslan interpreted tour: Art Reimagined: Picasso to Expressionism and Beyond](https://www.qagoma.qld.gov.au/whats-on/events/auslan-interpreted-tour-art-reimagined)
+📆 Sun 28 Jun, 3:00 PM – 4:00 PM  
+📍 Queensland Art Gallery (QAG)  
 💰 Free  
-`folk music` `singalong` `community` `free`
+`art history` `tour` `auslan` `accessibility` `free`
 
-Join a participatory sea shanty and traditional folk song singaround hosted by The Fo’c’sle, welcoming chorus singers and instrumentalists. Lyrics sheets are provided, and the bar will be open for refreshments.
+An accessible guided tour of the 'Art Reimagined' exhibition, interpreted in Auslan for the Deaf community, focusing on key works from Picasso to Expressionism.
+
+### 🛠️ Marion Hughes Watercolour Class/Event
+📆 Wed 24 Jun  
+📍 Brisbane  
+💰   
+`art` `watercolour` `workshop` `creative`
+
+An opportunity to engage with watercolour painting, led by artist Marion Hughes. This is a hands-on creative workshop to learn artistic techniques.
+
+### 📌 Artist Market at Obsidian
+📆 Fri 26 Jun  
+📍 Obsidian, Brisbane  
+💰 Free  
+`art` `market` `community` `creative` `free`
+
+A market featuring original art and creative goods directly from local makers, offering an opportunity to engage with artists and support the creative community.
+
+### 🎨 [Franck Gohier | 'Australia Has Cowboys Too' (Exhibition)](https://mitchellfineartgallery.com/2026-exhibition-calendar/)
+📆 Tue 16 Jun  
+📍 Mitchell Fine Art, Brisbane  
+💰 Free  
+`art` `exhibition` `culture` `painting` `free`
+
+An art exhibition showcasing the vibrant work of Franck Gohier, offering artistic value and cultural exploration through his unique perspective on Australian identity.
+
+### 🎨 [GOMA Friday Nights](https://www.ikonix.com.au/ultimate-guide-to-brisbane-events-may-june-july-2026/)
+📆 Fri 26 Jun  
+📍 Gallery of Modern Art, South Brisbane  
+💰 Free  
+`art` `exhibition` `gallery` `evening`
+
+Experience GOMA's exhibitions and spaces during a special late-night opening, offering an atmospheric way to explore contemporary art. This particular event marks the final Friday night of the season for this program.
 
 ## 📋 All Events
 
 ### 🎨 Arts / Exhibition
 
-#### [Queensland Ballet: Hamlet](https://www.queenslandballet.com.au)
-📆 Fri 19 June, 7:30 PM
-📍 Talbot Theatre, Thomas Dixon Centre, West End
-💰 Ticketed
-`ballet` `theatre` `performance` `ticketed`
-
-Queensland Ballet presents a visceral retelling of Shakespeare's Hamlet, fusing classical ballet with powerful storytelling and sweeping music, exploring themes of love, power, and corruption.
-
-#### [Film & Dance: La Salsa Vive + Salsa Sesión](https://spanishfilmfestival.com/events?city=Brisbane)
-📆 Wed 17 Jun, 6:15 PM
-📍 Palace James St Cinema, Newstead
-💰 $29-$34
-`film` `dance` `culture` `social`
-
-Experience a special screening of the documentary La Salsa Vive, followed by a tequila sunrise and a free salsa dance class. A vibrant evening blending cinema, music, and social movement for film and dance lovers.
-
-#### [IMA: Mandy Quadrio – Kukunna Murraweena](https://www.ima.org.au/exhibition/current-exhibition/)
-📆 Tue 16 Jun – Sun 21 Jun, 10:00 AM – 5:00 PM
-📍 Institute of Modern Art, Fortitude Valley
+#### [Open Season — Thomas Dixon Centre](https://www.thomasdixoncentre.com.au)
+📆 Ongoing, 22-28 June
+📍 Thomas Dixon Centre, West End
 💰 Free
-`art` `exhibition` `indigenous` `free`
+`art` `exhibition` `visual arts` `free`
 
-A Commissioners Circle Project exhibition by First Nations contemporary artist Mandy Quadrio. This is a rare opportunity to engage with supported Indigenous art at the free public gallery.
+An exhibition showcasing contemporary visual works as part of the Thomas Dixon Centre's broader 'Open Season' arts program. Immerse yourself in a variety of theatre, music, and art performances.
 
-#### [Palace Cinemas Classic & Cult Screenings](https://www.palacecinemas.com.au/events)
-📆 Multiple times, Mon 15 Jun – Sat 20 Jun
-📍 Palace Barracks & James St, Brisbane
-💰 $12-$18
-`film` `classic` `cult` `arthouse`
+#### [Spanish & Latin American Film Festival](https://www.palacecinemas.com.au/festivals/spanish-film-festival/)
+📆 Ongoing, 22-28 June
+📍 Palace Barracks & Palace James St Cinemas
+💰 $20-25
+`film` `cinema` `culture` `international`
 
-Enjoy a curated selection of classic and cult films screened weekly at Palace Cinemas. A chance to revisit beloved cinematic masterpieces or discover new genre gems in an arthouse setting.
+A curated program showcasing diverse cinema from Spain and Latin America, offering cultural insights and artistic storytelling. Screenings are held at multiple Palace Cinemas locations.
 
-#### [Palace Sunday Classic Film Series](https://www.palacecinemas.com.au/events)
-📆 Sun 21 Jun, 1:00 PM
-📍 Palace Barracks & James St, Brisbane
-💰 $12-$18
-`film` `classic` `series` `afternoon`
-
-The last Sunday of every month features a special film series highlighting cinematic favourites. This week, catch a curated classic in a relaxed afternoon screening.
-
-#### [Vidura Bandara Rajapaska: The Paradise Gothic Tour](https://www.ticketmaster.com.au/vidura-bandara-rajapaska-the-paradise-gothic-tour-brisbane-15-06-2026/event/13005F929C421BF7)
-📆 Mon 15 Jun, 7:00 PM
-📍 The Princess Theatre, Brisbane
-💰 Check price
-`comedy` `performance` `artistic` `paid`
-
-A live performance by Vidura Bandara Rajapaska, likely a comedy show or similar artistic performance, touring as 'The Paradise Gothic Tour' at The Princess Theatre.
-
-#### [Redcliffe Floral and Art Festival](https://www.weekendnotes.com/redcliffe-floral-art-festival/)
-📆 Fri 19 Jun – Sun 21 Jun
-📍 Redcliffe
-💰 Check price
-`art` `festival` `community` `creative`
-
-A multi-day festival celebrating floral displays and various forms of art in Redcliffe. Expect creative exhibitions and community engagement in a vibrant festival atmosphere.
-
-#### [Precious](https://www.museumofbrisbane.com.au/whats-on/)
-📆 Mon 15 - Sun 21 Jun (Daily)
-📍 Museum of Brisbane, Brisbane City
+#### [Mandy Quadrio: Kukunna Wurraweena — Exhibition](https://www.ima.org.au/exhibitions/)
+📆 Tue 23 Jun – Sun 28 Jun, 10:00 AM – 5:00 PM
+📍 Institute of Modern Art (IMA), Fortitude Valley
 💰 Free
-`exhibition` `art` `culture` `free`
+`art` `exhibition` `contemporary` `free`
 
-An exhibition at Museum of Brisbane delving into treasured objects and the stories behind them, exploring themes of memory, identity, and cultural significance.
+Part of the Commissioners Circle Project 2026, this exhibition by Mandy Quadrio is presented at the IMA, a free public art gallery. Explore contemporary works by this featured artist.
 
-#### [65th Brisbane Pride Queens Ball Awards](https://www.eventbrite.com.au)
-📆 Sat 20 June, 6:00 PM
-📍 Brisbane City Hall, CBD
+#### [Khaled Sabsabi: Recent Work](https://milanigallery.com.au/exhibitions/khaled-sabsabi-recent-work)
+📆 Mon 22 Jun - Sat 27 Jun, 11:00 AM - 5:00 PM
+📍 Milani Gallery West End
+💰 Free
+`art` `exhibition` `contemporary` `free`
+
+An exhibition showcasing recent works by artist Khaled Sabsabi at Milani Gallery, offering a chance to explore contemporary art for free during gallery hours.
+
+#### [Linde Ivimey: I will remember you](https://janmurphygallery.com.au/exhibitions/linde-ivimey-i-will-remember-you)
+📆 Mon 22 Jun - Sun 28 Jun, Gallery Hours
+📍 Jan Murphy Gallery Fortitude Valley
+💰 Free
+`art` `exhibition` `sculpture` `free`
+
+An exhibition of new works by Australian sculptor Linde Ivimey, known for her unique and often haunting figurative sculptures, presented at Jan Murphy Gallery.
+
+#### [Heidi Yardley: Trick of the light](https://janmurphygallery.com.au/exhibitions/heidi-yardley-trick-of-the-light)
+📆 Mon 22 Jun - Sun 28 Jun, Gallery Hours
+📍 Jan Murphy Gallery Fortitude Valley
+💰 Free
+`art` `exhibition` `painting` `free`
+
+An exhibition of paintings by Heidi Yardley, featuring her distinctive surreal and enigmatic portraiture, offering a unique artistic experience at Jan Murphy Gallery.
+
+#### [Simon Brodkin](https://thetivoli.com.au/events/simon-brodkin)
+📆 Thu 25 Jun, 7:30 PM
+📍 The Tivoli
 💰 Ticketed
-`lgbtq+` `performance` `community` `celebration` `ticketed`
+`comedy` `standup` `performance` `ticketed`
 
-A vibrant, community-anchored celebration of Brisbane's LGBTQ+ creative community, featuring drag performances, awards, and an energetic social atmosphere.
+Stand-up comedy performance by Simon Brodkin, known for his satirical characters and sharp wit, promising an evening of laughter and social commentary.
 
-#### [Sister Act — Savoyards Musical Theatre Brisbane](https://www.mustdobrisbane.com/whats-on)
-📆 Fri 19 June, 7:30 PM
+#### "Where do I belong? Our birds through art" Exhibition
+📆 Mon 22 Jun
 📍 Brisbane
+💰 Free
+`art` `exhibition` `nature` `birds`
+
+An art exhibition focused on birds, likely exploring themes of belonging and nature through artistic expression. This ongoing exhibition offers visual art for reflection.
+
+#### [Rusalka — Opera Queensland](https://www.qpac.com.au/whats-on/rusalka)
+📆 Opens Thu 25 Jun
+📍 QPAC, South Brisbane
+💰 $70+
+`opera` `theatre` `classical` `fairytale`
+
+Opera Queensland presents a breathtaking production of Rusalka, a shimmering fairytale of love, sacrifice, and longing. This major opera opens as part of Brisbane's winter performing arts season.
+
+#### [Hamlet — Queensland Ballet](https://www.qpac.com.au/whats-on/hamlet)
+📆 Ongoing, 22-28 June
+📍 QPAC, South Brisbane
+💰 $70+
+`ballet` `dance` `theatre` `shakespeare`
+
+Queensland Ballet presents international choreographer Leo Mujić's gripping dance drama retelling of Shakespeare's tragedy. Witness a powerful performance exploring love, power, and corruption.
+
+#### [Sister Act the Musical — Savoyards Musical Theatre Brisbane](https://www.mustdobrisbane.com/whats-on)
+📆 Ongoing, 22-28 June
+📍 Brisbane (check event page)
+💰 $40-60
+`musical` `community theatre` `fun` `performing arts`
+
+Savoyards Musical Theatre Brisbane proudly presents the Queensland Community Theatre premiere of Sister Act. Enjoy a vibrant, fun, and lively night out with this community-led musical production.
+
+#### [Macbeth – Shake & Stir Theatre Co.](https://www.qpac.com.au/whats-on/this-season)
+📆 Multiple dates this week, 22-28 Jun 2026
+📍 QPAC – Lyric Theatre / Playhouse, South Brisbane
+💰 Ticketed (prices vary)
+`theatre` `performance` `shakespeare` `art`
+
+Shake & Stir Theatre Co presents Shakespeare's tragedy, Macbeth, a bold reimagining for its 20th anniversary. Enjoy a gripping theatrical performance.
+
+#### [Worlds within Worlds (Exhibition)](https://www.qagoma.qld.gov.au/whats-on/exhibitions/worlds-within-worlds)
+📆 Ongoing, 10:00 AM – 5:00 PM daily
+📍 Queensland Art Gallery (QAG), Gallery 4
+💰 Free
+`art` `exhibition` `imagination` `free`
+
+Discover intricate and expansive artistic landscapes that invite contemplation and reflection on different realities and imagined spaces at QAG.
+
+#### [Fantastic Mr Fox](https://www.qpac.com.au/event/fantastic-mr-fox-2026/)
+📆 Wed 24 - Sun 28 Jun
+📍 QPAC
 💰 Ticketed
-`musical theatre` `community` `performance` `theatre` `ticketed`
+`theatre` `performance` `family friendly` `ticketed`
 
-Savoyards Musical Theatre presents the Queensland Community Theatre premiere of the beloved musical Sister Act, offering an authentic local performance experience.
+A theatrical adaptation of Roald Dahl's classic 'Fantastic Mr Fox', offering an engaging and imaginative live performance for all ages.
 
-#### [Macbeth – Shake & Stir Theatre Co](https://www.qpac.com.au/whats-on)
-📆 Mon 15 Jun, 7:30 PM
-📍 Playhouse, QPAC, South Brisbane
+#### [Lose to Win](https://www.qpac.com.au/event/lose-to-win-2026/)
+📆 Thu 25 - Sat 27 Jun
+📍 QPAC
 💰 Ticketed
-`theatre` `performance` `shakespeare` `drama`
+`theatre` `performance` `contemporary` `ticketed`
 
-Shake & Stir Theatre Co presents a modern, clickbait-inspired take on Shakespeare's gripping tragedy, Macbeth. This theatrical production runs until June 21st at QPAC's Playhouse.
+A contemporary theatrical performance exploring themes of struggle and triumph, designed to provoke thought and emotion through movement and storytelling.
 
-#### [Anywhere Festival – Various Performances](https://www.anywhere.is)
-📆 Mon 15 Jun, 7:00 PM
-📍 Various unexpected locations across Brisbane
-💰 Varies
-`fringe` `immersive theatre` `experimental` `performance`
+#### [Beetlejuice The Musical](https://www.qpac.com.au/whats-on/beetlejuice)
+📆 Ongoing, 22-28 June
+📍 Lyric Theatre, QPAC, South Brisbane
+💰 $89+
+`musical` `theatre` `mainstream` `fantasy`
 
-This festival transforms unexpected Brisbane locations into stages for theatre, circus, music, and storytelling. Discover unique and intimate performances in non-traditional spaces.
+The eight-time Tony Award-nominated musical returns to Australia, led by Broadway star Andy Karl. It tells the ghoulishly fun story of Lydia Deetz and her obsession with the afterlife.
 
-#### [Adam Ray is Dr Phil LIVE](https://www.thefortitude.com.au/whats-on/)
-📆 Sat 20 Jun, 6:00 PM
-📍 The Fortitude Music Hall, Fortitude Valley
+#### [Queensland Ballet: Red Riding Hood and the Wolf](https://www.qpac.com.au/whats-on)
+📆 Opens Fri 26 Jun 2026 (multiple sessions)
+📍 Queensland Performing Arts Centre, South Brisbane
 💰 Ticketed
-`comedy` `standup` `performance`
+`ballet` `dance` `family` `performance`
 
-A comedy performance by Adam Ray, known for his viral Dr. Phil impressions, promising an evening of stand-up and character comedy.
-
-### 🎵 Concert / Music
-
-#### [Open Season 2026 (Ongoing Program)](https://www.ticketmaster.com.au/open-season-tickets/artist/2762831)
-📆 Mon 15 – Sun 21 June, various times
-📍 Various venues (The Tivoli, Princess Theatre, Fish Lane, Glasshouse Theatre, etc.), Brisbane
-💰 Varies
-`festival` `music` `art` `performance` `culture` `varies`
-
-Brisbane's defining winter cultural program, Open Season, features over 100 local, national, and international artists across music, art, and performance at various iconic venues throughout the city.
-
-#### [Candlelight Ballet: Tchaikovsky's Swan Lake & More](https://feverup.com/m/145829)
-📆 Thu 18 Jun, 6:30 PM & 8:30 PM
-📍 Saint John's Anglican Cathedral, Brisbane
-💰 From $34.50
-`classical music` `ballet` `performance` `artistic`
-
-An immersive classical performance featuring ballet music by Tchaikovsky, including 'Swan Lake,' performed in a unique candlelight setting within Saint John's Anglican Cathedral.
-
-#### [Candlelight: 90s Unplugged on Strings](https://feverup.com/m/145831)
-📆 Fri 19 Jun, 8:30 PM
-📍 Saint John's Anglican Cathedral, Brisbane
-💰 From $34.00
-`music` `concert` `90s` `artistic`
-
-An intimate candlelight concert featuring string arrangements of popular 90s 'unplugged' hits, performed in the atmospheric setting of Saint John's Anglican Cathedral.
-
-#### [Chris Botti](https://brisbanepowerhouse.org/)
-📆 Tue 16 Jun, 7:30 PM
-📍 Brisbane Powerhouse, New Farm
-💰 Ticketed
-`jazz` `music` `concert`
-
-An evening of smooth jazz with Grammy Award-winning trumpeter Chris Botti, performing his signature blend of contemporary jazz, pop, and classical music.
-
-#### [An Evening of German Classics | Liederfest Prize Winners Concert 2026](https://www.eventbrite.com.au)
-📆 Wed 17 June, 7:00 PM
-📍 Brisbane
-💰 Ticketed
-`classical music` `recital` `performance` `german` `ticketed`
-
-An intimate recital concert showcasing the winners of Brisbane's classical Liederfest competition, featuring high-quality German art songs.
-
-#### [Camerata: Revolution Remixed](https://www.camerata.com.au)
-📆 Mon 15 Jun, 7:30 PM
-📍 Brisbane (check Camerata website for exact venue)
-💰 Ticketed
-`classical music` `chamber orchestra` `performance` `concert`
-
-Camerata – Queensland's Chamber Orchestra reimagines classical masterpieces, including Beethoven's 'Eroica' Symphony and Mussorgsky's 'Pictures at an Exhibition'. Experience dynamic chamber performance with precision and passion.
-
-#### [Candlelight: Best of Fleetwood Mac](https://feverup.com/m/145830)
-📆 Fri 19 Jun, 6:30 PM
-📍 Saint John's Anglican Cathedral, Brisbane
-💰 From $34.00
-`music` `concert` `folk` `artistic`
-
-An intimate candlelight concert featuring orchestral or string quartet renditions of Fleetwood Mac's greatest hits, performed in the ambient setting of Saint John's Anglican Cathedral.
-
-#### [Imminence (Live at Riverstage)](https://allevents.in/brisbane/all)
-📆 Sun 21 June, 5:30 PM
-📍 Riverstage, Brisbane CBD
-💰 Ticketed
-`music` `rock` `concert` `performance` `ticketed`
-
-Swedish rock band Imminence delivers an emotionally intense live experience with their cinematic sound, blending post-hardcore and melodic rock.
-
-#### [QSO: Dvořák Cello Concerto / Beethoven Symphony No.7](https://www.qso.com.au/whats-on)
-📆 Mon 15 Jun, 7:30 PM
-📍 QPAC Concert Hall, South Brisbane
-💰 Ticketed
-`classical music` `orchestra` `performance` `concert`
-
-The Queensland Symphony Orchestra performs Dvořák's radiant Cello Concerto, Beethoven's iconic Symphony No.7, and Smetana's Bartered Bride Overture. Enjoy an evening of classical music with a full orchestra.
-
-#### [Performance at Conservatorium Theatre (15 June)](https://www.qtix.com.au)
-📆 Mon 15 Jun, 7:30 PM
-📍 Conservatorium Theatre, Brisbane
-💰 Ticketed
-`performance` `music` `arts` `live`
-
-Experience a 'magical and arresting' performance praised for its 'brilliance, charisma and sensitivity' at the Conservatorium Theatre. This event promises an evening of high-quality artistic expression.
-
-#### [Studio Sessions: Chamber Players 2](https://www.qso.com.au/concerts/)
-📆 Sun 21 Jun, 3:00 PM
-📍 ABC Building (home of QSO), South Bank
-💰 Ticketed
-`classical music` `concert` `chamber`
-
-An intimate chamber music concert by Queensland Symphony Orchestra musicians, showcasing a selection of classical pieces in a smaller, focused setting at the ABC Building.
+Queensland Ballet presents a brand-new, whimsical production of Red Riding Hood and the Wolf, designed to enchant young audiences and families.
 
 ### 🤝 Social / Meetup
 
-#### [Dine BNE City 2026](https://www.theurbanlist.com/brisbane/a-list/dine-bne-city-2026)
-📆 Mon 15 – Sun 21 June, various times
-📍 All around Brisbane City
-💰 Varies
-`food` `dining` `city exploration` `social` `varies`
+#### [Easy Social Dancing — Mix n Mingle (Free 1st Class)](https://www.meetup.com/find/au--brisbane/social-dancing/)
+📆 Mon 22 Jun, 7:00 PM
+📍 Brisbane (check Meetup listing)
+💰 Free (first class)
+`social dance` `movement` `community` `free`
 
-A month-long program of exclusive dining offers and special events across Brisbane City, perfect for exploring the culinary scene and meeting new people in a relaxed social setting.
+A welcoming, low-pressure social dance event running every Monday. The first class is free, making it perfect for meeting new people and trying out social dancing.
 
-#### [Walk at Kangaroo Point](https://www.meetup.com/find/events/walk-at-kangaroo-point-every-thursday-brisbane/)
-📆 Thu 18 Jun, 5:30 PM
+#### [Latin Social Dancing — Brisbane Social Club](https://www.meetup.com/brisbane-social-club-latin-dance/)
+📆 Tue 23 Jun, 6:00 PM
+📍 Brisbane (check Meetup listing)
+💰 $20
+`latin dance` `social` `movement` `community`
+
+A vibrant, community-led Latin dance social designed for friendship and adventure. Enjoy lively dancing and connect with a mixed, friendly crowd.
+
+#### Walk at Kangaroo Point
+📆 Thu 25 Jun, 5:30 PM
 📍 Kangaroo Point, Brisbane
-💰 Free
-`walking` `outdoor` `social` `free`
+💰 Unknown
+`outdoor` `walk` `social` `community`
 
-A recurring weekly social walk along Kangaroo Point, offering an opportunity for outdoor activity and conversation within a local community group.
+A regular social walk along the scenic Kangaroo Point cliffs, offering a chance to meet people and enjoy the outdoors, suitable for all fitness levels.
 
-#### [Contra & Folk Dance Social](https://www.facebook.com/brisbanecontra/events)
-📆 Sat 20 Jun, 7:00 PM
-📍 New Farm Uniting Church Hall, New Farm
-💰 $15
-`dance` `folk` `social` `community`
+#### Asian Background Social: Lounge Asia Meetup (Easy English)
+📆 Tue 23 Jun, 6:00 PM
+📍 Brisbane
+💰 Unknown
+`social` `community` `language exchange` `meetup`
 
-Join a lively community contra and bush dance featuring a live folk band and an experienced caller. No partner or prior experience is needed; just bring soft-soled shoes and a water bottle.
+A social meetup for people with Asian backgrounds, focusing on casual conversation in easy English, designed to foster community and connections.
 
-#### [Yoga Day Festival Brisbane 2026](https://www.eventbrite.com.au)
-📆 Sun 21 June, 11:00 AM
-📍 The Mantra Room, West End
+### 🎵 Concert / Music
+
+#### [The QUBE Effect Triffid Residency](https://www.thetriffid.com.au/whats-on)
+📆 Sun 28 Jun
+📍 The Triffid, Newstead
 💰 Ticketed
-`yoga` `wellness` `community` `movement` `ticketed`
+`music` `indie` `local artists` `community`
 
-A community-oriented celebration on International Yoga Day, bringing together the local yoga and movement community at The Mantra Room.
+The final Sunday of The QUBE Effect Triffid Residency, featuring an intimate performance from a local act. This recurring event highlights emerging Brisbane musicians.
 
-#### [Ubuntu Social – Brisbane Powerhouse](https://www.brisbanepowerhouse.org)
-📆 Sun 21 Jun, 10:00 AM
-📍 Brisbane Powerhouse, New Farm
-💰 Free
-`community` `music` `art` `festival` `free`
-
-A free, all-ages community festival celebrating world music, art, and connection, rooted in the philosophy of Ubuntu. The event showcases Brisbane's vibrant creative scene with various cultural performances and activities.
-
-### 🛠️ Workshop / Class
-
-#### [Building Digital Platform Observatories – UQ Workshop](https://hass.uq.edu.au/hass-events-2026)
-📆 Tue 16 Jun, 9:00 AM
-📍 University of Queensland, St Lucia
-💰 Free
-`technology` `ai` `governance` `workshop` `free`
-
-This workshop gathers international researchers to discuss the importance of digital platform observatories for public accountability and governance of automated systems. Registration is required for participation.
-
-#### [Resin Art Class in Brisbane](https://feverup.com/m/145828)
-📆 Wed 17 Jun, various times
-📍 Shop 2B, 826 Ann Street, Brisbane
-💰 From $139.00
-`art` `resin` `workshop` `creative`
-
-A hands-on workshop focused on creating art using resin. Participants will learn techniques to create unique pieces, engaging with a contemporary craft medium.
-
-#### [Contemporary Poetry: Finding the Line with Mindy Gill](https://queenslandwriters.org.au/whats-on/)
-📆 Sat 20 Jun, 10:30 AM
-📍 Queensland Writers Centre
+#### [Cirque Nouvelle](https://www.thefortitude.com.au/whats-on)
+📆 Fri 26 Jun
+📍 Fortitude Music Hall, Fortitude Valley
 💰 Ticketed
-`poetry` `writing` `workshop` `creative`
+`performance` `circus` `music` `artistic`
 
-A hands-on workshop led by Mindy Gill, designed for writers to explore and develop their contemporary poetry skills, focusing on craft and voice.
+Experience Cirque Nouvelle, a spectacular circus-inspired live performance blending music, acrobatics, and visual artistry at the Fortitude Music Hall.
 
-#### [Community Printmaking Induction](https://www.bvac.org.au/workshops)
-📆 Sun 21 Jun, 10:00 AM
-📍 Brisbane Visual Arts Community, Albion
-💰 $100
-`printmaking` `art` `workshop` `community`
+#### [Black Bear Lodge — Free Live Music](https://blackbearlodge.bar/events)
+📆 Fri 26 Jun & Sat 27 Jun, From evening
+📍 Black Bear Lodge, Fortitude Valley
+💰 Free
+`music` `indie` `live music` `free`
 
-A small-group induction providing essential training for safe use of community print studio facilities, covering basic relief and etching processes. This workshop is required for future independent access to the studio.
+Catch free live music performances on Friday and Saturday evenings at Black Bear Lodge. This stylish candlelit hideaway offers an intimate setting for emerging and local artists on two stages.
+
+#### [Tom Gleeson: Out of Touch Tour](https://www.mustdobrisbane.com)
+📆 Fri 26 Jun 2026
+📍 Brisbane (venue TBC)
+💰 Ticketed
+`comedy` `standup` `performance` `humour`
+
+Enjoy a night of stand-up comedy with Tom Gleeson, one of Australia's sharpest comedians, as he brings his "Out of Touch" tour to Brisbane.
+
+#### [Isles of Light](https://www.qpac.com.au/event/isles-of-light-2026/)
+📆 Mon 22 Jun, 7:00 PM
+📍 QPAC
+💰 Ticketed
+`classical music` `orchestra` `performance` `ticketed`
+
+A performance by the Australian Chamber Orchestra (ACO) as part of Musica Viva Australia, promising a high-quality classical or contemporary music experience.
+
+#### [Opera Queensland Presents Rusalka](https://www.qpac.com.au/event/opera-queensland-presents-rusalka-2026/)
+📆 Thu 25 Jun - Fri 4 Jul
+📍 Glasshouse Theatre, QPAC
+💰 Varies
+`opera` `classical music` `performance` `ticketed`
+
+Opera Queensland presents 'Rusalka', a lyrical fairy tale opera by Dvořák, known for its beautiful music and poignant story.
+
+#### [Open Season Live Music Program](https://www.ikonix.com.au/ultimate-guide-to-brisbane-events-may-june-july-2026/)
+📆 Mon 22 Jun - Sun 28 Jun
+📍 Various venues across Brisbane (e.g., The Tivoli, The Princess Theatre)
+💰 Paid
+`music` `live` `festival` `indie`
+
+A citywide festival of live music, 'Open Season' showcases diverse artists across multiple iconic Brisbane venues. Expect a range of genres and intimate performances, fostering Brisbane's music scene.
+
+#### [An Evening of German Classics — Liederfest Prize Winners Concert 2026](https://www.eventbrite.com.au/e/an-evening-of-german-classics-liederfest-prize-winners-concert-2026-tickets)
+📆 TBC (22-28 Jun), Evening
+📍 Brisbane
+💰 $30-50
+`classical music` `vocal` `concert` `prize winners`
+
+A classical vocal recital showcasing prize-winning singers performing exquisite German art songs. This concert offers an evening of high artistic value for classical music enthusiasts.
+
+#### [Queensland Symphony Orchestra Concert](https://www.qso.com.au/whats-on)
+📆 Sat 27 Jun or Sun 28 Jun 2026
+📍 QPAC Concert Hall, South Brisbane
+💰 Ticketed
+`classical music` `orchestra` `concert` `performance`
+
+Experience some of the greatest music ever written, performed by the Queensland Symphony Orchestra as part of their 2026 National Concert Season at QPAC.
+
+#### [CURRENTS - QUEENSLAND WIND ORCHESTRA](https://oldmuseum.org/events/currents-queensland-wind-orchestra)
+📆 Sat 27 Jun, 7:00 PM - 9:00 PM
+📍 The Old Museum, Bowen Hills
+💰 Check website
+`music` `orchestra` `classical` `live performance`
+
+An evening with the Queensland Wind Orchestra performing 'CURRENTS' at The Old Museum, showcasing a diverse repertoire of wind instrument compositions.
+
+#### [Ukulele Death Squad](https://www.tixel.com/au/music-tickets/crowbar-brisbane/ukulele-death-squad-tickets-1675276535)
+📆 Sat 27 Jun, 7:00 PM
+📍 Crowbar Brisbane, Fortitude Valley
+💰 $39.99
+`music` `ukulele` `folk` `comedy`
+
+Experience the high-energy and comedic musical stylings of Ukulele Death Squad live at Crowbar Brisbane, blending folk, punk, and cabaret with ukuleles.
+
+#### [Rusalka (Opera Season)](https://www.ikonix.com.au/ultimate-guide-to-brisbane-events-may-june-july-2026/)
+📆 Wed 25 Jun - Sat 4 Jul
+📍 QPAC, South Brisbane
+💰 Paid
+`opera` `music` `theatre` `performance`
+
+Experience Dvořák's enchanting opera 'Rusalka', presented as part of QPAC's season. This theatrical and musical production runs for multiple dates from late June into early July.
+
+#### [Mental As Anything — 50th Anniversary Tour](https://www.theprincesstheatre.com.au)
+📆 Sat 27 Jun, 6:30 PM
+📍 The Princess Theatre, Brisbane CBD
+💰 $60-90
+`music` `concert` `rock` `australian`
+
+A rare opportunity to see beloved Australian rock/pop icons Mental As Anything celebrate their 50th anniversary in an intimate theatre setting. Expect classic hits and a lively atmosphere.
+
+#### [Conrad Sewell — Bloodline Tour (with special guest Grace Sewell)](https://www.thetriffid.com.au/whats-on)
+📆 Fri 26 Jun
+📍 The Triffid, Newstead
+💰 Ticketed
+`music` `indie` `live music`
+
+Conrad Sewell performs his Bloodline Tour live, joined by special guest Grace Sewell, at The Triffid. Expect a night of live contemporary music from the acclaimed Australian singer-songwriter.
+
+#### [Country Love: Gina Jeffreys & Rod McCormack, Brooke McClymont & Adam Eckersley, Mark & Jay O'SHEA](https://www.thetriffid.com.au/whats-on)
+📆 Thu 25 Jun
+📍 The Triffid, Newstead
+💰 Ticketed
+`music` `country` `live music`
+
+A special night featuring multiple acclaimed country music artists, including Gina Jeffreys & Rod McCormack, Brooke McClymont & Adam Eckersley, and Mark & Jay O'SHEA.
+
+#### [Live Music Event at The Triffid](https://www.thetriffid.com.au/whats-on)
+📆 Sat 27 Jun, 7:00 PM
+📍 The Triffid, Newstead
+💰 Check website
+`music` `live music` `indie`
+
+An unnamed live music event is scheduled for Saturday night at The Triffid. Check the venue's official website for full artist and lineup details.
+
+#### [Luude](https://www.thefortitude.com.au/whats-on)
+📆 Sat 27 Jun
+📍 Fortitude Music Hall, Fortitude Valley
+💰 Ticketed
+`music` `electronic` `dance`
+
+Prominent Australian electronic/drum & bass artist Luude performs a high-energy live show at the Fortitude Music Hall. Expect a vibrant atmosphere with dance-focused electronic music.
+
+#### [Hail the Sun (USA)](https://www.tixel.com/au/music-tickets/crowbar-brisbane/hail-the-sun-tickets-1675276532)
+📆 Thu 25 Jun, 7:00 PM
+📍 Crowbar Brisbane, Fortitude Valley
+💰 Check vendor
+`music` `rock` `live gig` `fortitude valley`
+
+Catch American rock band Hail the Sun live at Crowbar Brisbane, known for their post-hardcore and progressive rock sound, promising an energetic performance.
+
+#### [FourNine](https://music.apple.com/au/artist/fournine/909121652)
+📆 Fri 26 Jun, 7:00 PM
+📍 The Brightside, Fortitude Valley
+💰 Check vendor
+`music` `live gig` `alternative` `fortitude valley`
+
+A live music performance by FourNine at The Brightside, offering an intimate gig experience for fans of alternative and rock music.
+
+#### [Don Tetto](https://www.shazam.com/au/artist/don-tetto/77519154)
+📆 Fri 26 Jun, 7:00 PM
+📍 Crowbar Brisbane, Fortitude Valley
+💰 Check vendor
+`music` `rock` `international` `fortitude valley`
+
+Colombian rock band Don Tetto performs live at Crowbar Brisbane, delivering their energetic blend of pop-punk and alternative rock to the Brisbane stage.
+
+#### [Gabriel Moraes](https://www.shazam.com/au/artist/gabriel-moraes/40798363)
+📆 Sat 27 Jun, 7:00 PM
+📍 The Brightside, Fortitude Valley
+💰 Check vendor
+`music` `electronic` `dj set` `house`
+
+A live set by electronic music artist Gabriel Moraes at The Brightside, delivering a blend of progressive house and techno for a vibrant night.
+
+#### [Vindicta - The Reckoning Tour](https://oztix.com.au/event/1831829)
+📆 Sun 28 Jun, 7:00 PM
+📍 Crowbar Brisbane, Fortitude Valley
+💰 Check vendor
+`music` `metal` `heavy rock` `live gig`
+
+Australian metal band Vindicta brings 'The Reckoning Tour' to Crowbar Brisbane, offering a heavy and intense live performance for metal enthusiasts.
+
+#### [Last Dinosaurs (With Bad Suns)](https://thetivoli.com.au/events/last-dinosaurs)
+📆 Sat 27 Jun, 7:00 PM
+📍 The Tivoli
+💰 Ticketed
+`indie music` `live music` `concert` `ticketed`
+
+Live performance by indie-rock band Last Dinosaurs, supported by Bad Suns, delivering an energetic concert experience at The Tivoli.
+
+#### [Luude (With Prizefight)](https://www.thefortitude.com.au/events/luude)
+📆 Sat 27 Jun, 7:00 PM
+📍 The Fortitude Music Hall
+💰 Ticketed
+`electronic music` `live music` `dj` `dance` `ticketed`
+
+Live electronic music performance by Australian producer Luude, joined by Prizefight, for an energetic night of beats and sound.
 
 ### 📌 Community / Other
 
-#### [Plants, Flavours and Food Special Guided Walk](https://www.weekendnotes.com/plants-flavours-food-special-guided-walk-brisbane-botanic-garden/)
-📆 Thu 18 Jun
-📍 Brisbane Botanic Garden
-💰 Check price
-`nature` `botany` `walk` `educational`
+#### [Lifeline Brisbane Bookfest](https://www.bcec.com.au/)
+📆 Commences this week, 22-28 Jun 2026 (9-day event)
+📍 Brisbane Convention & Exhibition Centre (BCEC), South Brisbane
+💰 Low-cost entry
+`books` `community` `market` `reading`
 
-A special guided walk through the Brisbane Botanic Garden focusing on edible and flavorful plants. This educational excursion offers insights into botany and culinary uses within a natural setting.
+A beloved community event, the Lifeline Bookfest returns for nine days, offering a treasure hunt through thousands of second-hand books and a comic-fest section.
 
-#### [Rumolution - Session Two](https://www.moshtix.com.au/v2/event/rumolution-session-two/xxxxxxxx)
-📆 Sat 20 Jun, 5:00 PM
-📍 The Triffid, Brisbane
-💰 Check price
-`culture` `drinks` `social` `music`
+#### [Brisbane Art and Craft 2026](https://www.eventbrite.com.au/)
+📆 Sat 27 Jun, 9:00 AM – 5:00 PM
+📍 Brisbane Convention & Exhibition Centre
+💰 Varies
+`craft` `art` `market` `creative` `community`
 
-A themed event, potentially a rum tasting, cultural exploration, or a music performance with a rum theme, hosted at The Triffid. This is a social gathering for enthusiasts to explore the world of rum.
-
-#### [Australian Sake Festival Brisbane](https://sake-festival.com.au/brisbane/)
-📆 Fri 19 June, 6:00 PM
-📍 John Reid Pavilion, Brisbane Showgrounds, Bowen Hills
-💰 Ticketed
-`culture` `food` `sake` `workshop` `performance` `ticketed`
-
-Sample over 100 sakes, enjoy Japanese food, and experience traditional culture with live taiko drumming and dance performances, plus free Sake 101 seminars.
-
-#### [West End Solstice](https://www.weekendnotes.com/west-end-solstice/)
-📆 Fri 19 Jun
-📍 West End, Brisbane
-💰 Check price
-`community` `festival` `culture` `social`
-
-A community event celebrating the solstice in Brisbane's West End, typically featuring local culture, music, and social gatherings. Expect a lively and authentic local atmosphere.
-
-#### [Clock Tower Tour](https://www.museumofbrisbane.com.au/whats-on/)
-📆 Mon 15 - Sun 21 Jun (Daily)
-📍 Museum of Brisbane, Brisbane City
-💰 Free
-`history` `tour` `architecture` `free`
-
-A free guided tour of Brisbane City Hall's iconic Clock Tower, offering historical insights and panoramic views of the city from a unique vantage point.
+A large-scale event showcasing various art and craft forms, with opportunities to browse, buy, and potentially participate in demonstrations or workshops.
 
 ### 🎓 Public Lecture
 
-#### [Annual Commemoration of the Rwandan Genocide](https://www.eventbrite.com/e/annual-commemoration-of-the-rwandan-genocide-2026-tickets-xxxxxxxxxxxxx)
-📆 Sat 20 Jun, 11:00 AM
-📍 Queensland Parliament, Brisbane
-💰 Free
-`history` `commemoration` `culture` `free`
+#### [Game Changers: In Conversation with Lea Ea of ARROWES](https://www.eventbrite.com.au/e/game-changers-in-conversation-with-lea-ea-of-arrowes)
+📆 Late Jun 2026 (check Eventbrite)
+📍 State Library of Queensland / QUT, South Brisbane
+💰 Check Eventbrite
+`innovation` `technology` `business` `lecture`
 
-An annual event at Queensland Parliament to commemorate the Rwandan Genocide, offering a space for remembrance, reflection, and historical awareness. Likely involves speeches and community gathering.
+Innovation leader Lea Ea of ARROWES shares insights with aspiring entrepreneurs in this Game Changers series, facilitated by ABC Brisbane's Kat Feeney.
+
+#### [Members Lecture: Creative Generation + Design Tracks](https://www.qagoma.qld.gov.au/whats-on/events/members-lecture-creative-generation-design-tracks)
+📆 Wed 24 Jun, 11:00 AM – 12:00 PM
+📍 Gallery of Modern Art (GOMA)
+💰 Ticketed
+`design` `creativity` `lecture` `art` `ticketed`
+
+A lecture exploring the intersection of creative generation and design trends, likely featuring insights from current exhibitions or artistic practices.
