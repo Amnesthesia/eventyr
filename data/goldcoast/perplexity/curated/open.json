@@ -2,7 +2,146 @@
   "city_key": "goldcoast",
   "provider": "perplexity",
   "tier": "open",
-  "week_start": "2026-06-15",
-  "week_end": "2026-06-21",
-  "events": []
+  "week_start": "2026-06-22",
+  "week_end": "2026-06-28",
+  "events": [
+    {
+      "title": "James Alexander's Soul Sundays",
+      "datetime": "Sun 28 Jun, evening",
+      "location": "Currumbin Beach Vikings Surf Life Saving Club, Currumbin",
+      "link": "https://www.experiencegoldcoast.com/events",
+      "category": "Concert / Music",
+      "cost": "Cost varies",
+      "source": "Experience Gold Coast",
+      "description": "A recurring Sunday session featuring soul music by James Alexander, held at the Currumbin Beach Vikings Surf Life Saving Club. Expect a relaxed, atmospheric live music experience by the beach.",
+      "tags": [
+        "music",
+        "soul",
+        "live",
+        "recurring"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-06-28T18:00:00",
+      "datetime_end_iso": "2026-06-28T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "After Glow – Collage Workshop with Meli Axford and Trish Tait",
+      "datetime": "Sat 27 Jun, 10:00 AM",
+      "location": "HOTA, Home of the Arts, Surfers Paradise",
+      "link": "https://www.whatsongoldcoast.au/Home",
+      "category": "Workshop / Class",
+      "cost": "Cost TBC",
+      "source": "What's On Gold Coast",
+      "description": "A creative collage workshop led by artists Meli Axford and Trish Tait, offering a hands-on opportunity to explore collage techniques at HOTA, Home of the Arts.",
+      "tags": [
+        "art",
+        "collage",
+        "workshop",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-06-27T10:00:00",
+      "datetime_end_iso": "2026-06-27T13:00:00",
+      "image": ""
+    },
+    {
+      "title": "Koi Sunset Sessions",
+      "datetime": "Daily through Sun 28 Jun, evening",
+      "location": "Koi Dining, Broadbeach",
+      "link": "https://www.experiencegoldcoast.com/events",
+      "category": "Social / Meetup",
+      "cost": "Cost varies",
+      "source": "Experience Gold Coast",
+      "description": "A recurring evening social event at Koi Dining in Broadbeach, offering a relaxed atmosphere to enjoy sunsets. Expect background music and drinks in a popular Gold Coast venue.",
+      "tags": [
+        "social",
+        "drinks",
+        "music",
+        "recurring"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-06-28T17:00:00",
+      "datetime_end_iso": "2026-06-28T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Pat Tierney Concert",
+      "datetime": "Fri 26 Jun, 7:30 PM",
+      "location": "Gold Coast (venue TBC)",
+      "link": "https://www.songkick.com/metro-areas/26785-australia-gold-coast",
+      "category": "Concert / Music",
+      "cost": "Cost TBC",
+      "source": "Songkick",
+      "description": "A live concert featuring Australian folk/blues artist Pat Tierney, known for his roots-infused music. Expect an intimate performance in the Gold Coast metro area.",
+      "tags": [
+        "music",
+        "folk",
+        "live",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-06-26T19:30:00",
+      "datetime_end_iso": "2026-06-26T22:00:00",
+      "image": ""
+    },
+    {
+      "title": "Mudgeeraba Agricultural Show",
+      "datetime": "Sat 27 - Sun 28 Jun, daytime",
+      "location": "Mudgeeraba Showgrounds, Mudgeeraba",
+      "link": "https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-may-june-july-2026/",
+      "category": "Community / Other",
+      "cost": "Cost TBC",
+      "source": "Ikonix Gold Coast Guide",
+      "description": "A classic community agricultural show weekend featuring animals, local competitions, food stalls, entertainment, and family activities. A chance to experience local Gold Coast culture.",
+      "tags": [
+        "community",
+        "local",
+        "market",
+        "festival"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-06-27T09:00:00",
+      "datetime_end_iso": "2026-06-28T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "PNAU Concert",
+      "datetime": "Sun 28 Jun, 7:00 PM",
+      "location": "TRI, Gold Coast",
+      "link": "https://www.songkick.com/metro-areas/26785-australia-gold-coast",
+      "category": "Concert / Music",
+      "cost": "Cost TBC",
+      "source": "Songkick",
+      "description": "A live concert by Australian electronic music trio PNAU, known for their dance-pop and indie electronic tracks. Expect a high-energy performance at TRI in the Gold Coast.",
+      "tags": [
+        "music",
+        "electronic",
+        "live",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-06-28T19:00:00",
+      "datetime_end_iso": "2026-06-28T21:30:00",
+      "image": ""
+    }
+  ]
 }
