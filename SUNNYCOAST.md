@@ -1,689 +1,593 @@
 # Sunshine Coast — This Week's Events
-**15 June 2026 – 21 June 2026**  
-*30 top picks · 84 events total*
+**22 June 2026 – 28 June 2026**  
+*34 top picks · 72 events total*
 
 ## ⭐ Top Picks
 
-### 🎓 [ICT and Computer Science Masterclass: Why ICT skills matter more than ever in the age of AI](https://www.usc.edu.au/events/)
-📆 Thu 18 Jun  
-📍 University of the Sunshine Coast  
-💰 Free  
-`ai` `technology` `masterclass` `free` `futurism`
-
-A masterclass exploring the critical importance of ICT and computer science skills, examining their relevance and impact in the rapidly evolving age of Artificial Intelligence.
-
-### 🎨 [KOAL – Interactive Solo Show](https://events.sunshinecoast.qld.gov.au/)
-📆 This week  
-📍 Venue TBC – Sunshine Coast  
-💰 TBC  
-`theatre` `interactive` `performance` `experimental`
-
-An original interactive solo-show by Jacinta Yelland, this cutting-edge intimate theatre performance features an interactive format, perfect for fans of experimental and physical theatre.
-
-### 🎓 [Spring 2025 eDNA Results – Discover What's Living in Your Local Creek](https://www.eventbrite.com.au/d/australia--sunshine-coast/events/)
-📆 This week (June 2026)  
-📍 Sunshine Coast  
-💰 TBC (likely free)  
-`science` `ecology` `nature` `lecture`
-
-A fascinating citizen science talk revealing environmental DNA testing results from local waterways, ideal for nature lovers and those curious about Sunshine Coast ecology.
-
-### 🎓 [Learning on Country: Sky, Culture, Connection](https://www.eventbrite.com.au/d/australia--sunshine-coast/events/)
-📆 This week (June 2026)  
+### 🤝 [Sunshine Coast Inspired Minds Lunch](https://www.eventbrite.com.au/d/australia--sunshine-coast/events/)
+📆 Fri 26 Jun, 12:00 PM  
 📍 Sunshine Coast  
 💰 TBC  
-`indigenous culture` `astronomy` `culture` `learning`
+`intellectual` `networking` `lunch` `community`
 
-An immersive cultural learning experience connecting participants to First Nations perspectives on the sky, stars, and Country, offering a thoughtful and grounded event.
+A curated lunch gathering designed to foster intellectual discussion and connection among creative, curious, and motivated individuals on the Sunshine Coast.
 
-### 🛠️ [Climate Ready Community: The Adaptation Game Workshop](https://www.sunshinecoast.qld.gov.au/news/step-into-sunshine-coast-s-winter-wonderland-of-events)
-📆 16–21 Jun (multiple sessions)  
+### 🎨 [Ross Noble – Cranium of Curiosities — The J, Noosa Heads](https://www.thej.com.au/whats-on-in-noosa/)
+📆 Date TBC this week  
+📍 The J, Noosa Heads  
+💰 TBC  
+`comedy` `stand_up` `performance` `intellectual` `creative`
+
+One of the world's beloved improvisational comedians, Ross Noble, brings his rambling, surreal, and inventive live show 'Cranium of Curiosities' to the intimate theatre at The J.
+
+### 🎓 [Lisa Wilkinson & Peter FitzSimons – In Conversation — The J, Noosa Heads](https://www.thej.com.au/whats-on-in-noosa/)
+📆 Date TBC this week  
+📍 The J, Noosa Heads  
+💰 TBC  
+`conversation` `current_affairs` `culture` `journalism` `intellectual`
+
+A special 'in-conversation' event with prominent journalist Lisa Wilkinson and author Peter FitzSimons, discussing ideas, culture, and current affairs.
+
+### 🛠️ [Climate Ready Community – The Adaptation Game (Workshop)](https://library.sunshinecoast.qld.gov.au/whats-on)
+📆 Throughout 22–26 June (check libraries)  
 📍 Multiple Sunshine Coast Libraries  
 💰 Free  
 `climate` `workshop` `community` `free`
 
-An interactive workshop where participants play "The Adaptation Game" to explore real-world climate challenges and collaborate on solutions with other locals. Designed for curious minds interested in community resilience.
+An interactive workshop using The Adaptation Game to explore real-world climate challenges, where participants work with locals to discover actions for home and neighbourhood resilience.
 
-### 🎓 The Evolving Consciousness of Humanity
-📆 Sun 21 Jun, 1:45 PM  
-📍 Not explicitly stated  
-💰 Not specified  
-`philosophy` `consciousness` `theosophy` `discussion`
+### 📌 Caloundra Repair Cafe
+📆 Sat 27 Jun  
+📍 Caloundra  
+💰   
+`community` `repair` `sustainability` `maker`
 
-A talk and discussion hosted by the Theosophy in Australia Sunshine Coast Lodge exploring the concept of evolving consciousness in humanity.
+A community initiative where volunteers help fix broken items, promoting sustainability and sharing repair skills. A great place to learn, connect, and reduce waste in a 'maker' culture environment.
 
-### 📌 EV and Electrify Everything Expo
-📆 Sun 21 Jun, 9:00 AM  
-📍 Noosa  
-💰 Not specified  
-`technology` `sustainability` `ev` `futurism`
+### 🎵 Secret Garden
+📆 Sun 28 Jun  
+📍 beautiful bushland  
+💰   
+`live music` `folk` `indie` `atmospheric`
 
-An expo focused on electric vehicles and sustainable electrification, showcasing new technologies and information for a zero-emissions future.
+An intimate live music performance featuring Shannon Sol Carroll, set in a beautiful bushland location. Expect a strong atmosphere and artistic value.
 
-### 🎨 [Flickerfest 2026 – Short Laughs Comedy](https://www.thej.com.au/whats-on-in-noosa/)
-📆 This week (June 2026)  
-📍 The J, Noosa Junction, Noosaville  
-💰 TBC (ticketed)  
-`film` `comedy` `short films` `festival`
+### 🎓 [Outspoken presents: a conversation with Kate Holden](https://events.sunshinecoast.qld.gov.au/event/19875883-a/outspoken-presents-a-conversation-with-kate-holden-maleny)
+📆 Wed 24 Jun, 6:00 PM  
+📍 23 Maple St, Maleny  
+💰 Check Event Page  
+`author talk` `literature` `conversation` `culture`
 
-Australia's premier international short film festival presents a comedy-focused screening program, offering a unique chance to see funny short films from around the world in an intimate cinema setting.
+An evening conversation with author Kate Holden, presented by Outspoken, likely discussing her work, insights into culture, or human experience. This event provides an opportunity for intellectual engagement and potentially Q&A with the author.
 
-### 🎵 [Christian Patey](https://www.thepresynct.com.au/whats-on/)
-📆 This week (June 2026)  
+### 🤝 [BTW Book Club - The Deal by Elle Kennedy](https://btwcbookclub.com/upcoming-events/)
+📆 Sun 28 Jun, 1:00 PM  
+📍 The Ridge, Noosa Heads  
+💰 Check Event Page  
+`book club` `discussion` `community` `literature`
+
+The BTW Book Club meets to discuss "The Deal" by Elle Kennedy, offering a chance to engage in literary discussion and connect with other readers. It's a community-focused event for sharing perspectives on the chosen book.
+
+### 🎓 [ON THE WILD SIDE: Filming Creatures Great and Small Presented by Pieter de Vries](https://artsnational.au/sunshine-coast)
+📆 Sun 28 Jun, 3:00 PM  
+📍 Lecture Theatre 1, K Block, UniSC Sippy Downs  
+💰 $30 (Guests), $16.50 (Members), $10 (Students)  
+`wildlife` `documentary` `lecture` `nature`
+
+Pieter de Vries presents a public lecture on his experiences filming wildlife, offering insights into nature photography, documentary filmmaking, and the natural world. This event is for those interested in science, nature, and creative storytelling.
+
+### 🎨 [KOAL – Interactive Solo Theatre Show](https://events.sunshinecoast.qld.gov.au)
+📆 Sat 27 Jun, 7:30 PM  
+📍 The Events Centre or The J  
+💰 TBC  
+`theatre` `performance` `interactive`
+
+An original interactive solo theatrical experience performed by Jacinta Yelland, offering a rare and engaging performance in the region.
+
+### 🛠️ [Weaving is Healing – Sunshine Coast](https://www.eventbrite.com.au/d/australia--sunshine-coast/events--this-weekend/)
+📆 Sun 28 Jun, 10:00 AM  
+📍 Sunshine Coast  
+💰 TBC  
+`craft` `weaving` `workshop` `wellness` `community`
+
+A hands-on creative weaving workshop with a therapeutic and community-centred approach, inviting participants to explore craft, mindfulness, and cultural connection.
+
+### 🎵 [Kirsty Webeck – Stand-Up Comedy](https://events.sunshinecoast.qld.gov.au/category/arts-culture/all/1)
+📆 Sun 28 Jun, 7:00 PM  
+📍 Sunshine Coast  
+💰 TBC  
+`comedy` `stand-up` `performance`
+
+Stand-up comedian Kirsty Webeck returns to the Sunshine Coast after a successful tour, known for her sharp wit and engaging performance, promising a night of laughter.
+
+### 🎵 [Lucid Safari – Live at The Presynct](https://www.thepresynct.com.au/whats-on/)
+📆 Fri 26 Jun, 8:00 PM  
 📍 The Presynct, Sunshine Coast  
 💰 TBC  
-`music` `live music` `intimate` `indie`
+`indie music` `live music` `intimate gig`
 
-An intimate live performance by Christian Patey at The Presynct, one of the Sunshine Coast's leading independent music venues.
+Indie/alternative band Lucid Safari performs live at The Presynct, one of the Sunshine Coast's preferred venues for intimate and engaging live music experiences.
 
-### 🛠️ [ThinkChange Riding Skills Workshop & Guided e-Bike Ride – 21 June, Mudjimba](https://www.eventbrite.com.au/d/australia--sunshine-coast/events/)
-📆 Sun 21 Jun 2026  
-📍 Mudjimba  
+### 🎨 [Gutsy Girls Adventure Film Tour 2026](https://www.thej.com.au/whats-on)
+📆 Thu 25 Jun, 7:00 PM  
+📍 The J Theatre, Noosa Junction  
 💰 TBC  
-`cycling` `e-bike` `workshop` `outdoor`
+`adventure` `film` `inspiration` `outdoor`
 
-A hands-on skills workshop followed by a guided e-bike ride, great for exploring active, sustainable transport and connecting with like-minded cycling enthusiasts.
+The Gutsy Girls Adventure Film Tour showcases inspiring films celebrating women in adventure, travel, and outdoor pursuits, screened at The J Theatre in Noosa.
 
-### 🎓 [Food and Agribusiness Projects Showcase](https://www.eventbrite.com.au/d/australia--sunshine-coast/events/)
-📆 This week (June 2026)  
-📍 Sunshine Coast  
+### 🎵 [Sunshine Coast Blues & Roots Festival 2026](https://thebananabenderpub.com/events/)
+📆 Sat 27 Jun, 5:00 PM  
+📍 Banana Bender Pub, Palmview  
+💰 $55  
+`blues` `roots` `music` `festival`
+
+The third year of this live music festival at the Banana Bender Pub, featuring a stacked lineup of blues, roots, and folk artists like Hat Fitz & Cara and Sugarbag Blonde.
+
+### 🎵 [Bronwyn Street Blues — RAY BEADLE at Norton Music Factory](https://nortonmusicfactory.com.au/events/)
+📆 Sat 27 Jun, Time TBC  
+📍 Norton Music Factory, Caloundra  
 💰 TBC  
-`sustainability` `agriculture` `innovation` `local`
+`blues` `music` `live_performance` `recurring`
 
-A showcase of innovative local food and agribusiness projects, drawing curious minds interested in sustainability, local produce, and regional innovation.
+A recurring intimate blues night featuring Ray Beadle, one of Australia's most authentic and celebrated blues guitarists, at the Norton Music Factory.
 
-### 🎵 [Long Listen Festival Fundraiser Weekend 2026 – Winter Sanctuary](https://www.visitsunshinecoast.com/whats-on)
-📆 This week (June 2026)  
-📍 Sunshine Coast  
+### 🎵 [New Wave Extravaganza — XACTO & Crack That Whip at The Presynct](https://www.thepresynct.com.au/whats-on/)
+📆 Date TBC this week  
+📍 The Presynct Venue & Bar, Nambour  
 💰 TBC  
-`music` `festival` `community` `fundraiser`
+`new_wave` `post_punk` `music` `tribute`
 
-A community-minded fundraiser festival featuring a weekend of intimate music, food, and more, perfect for those who love meaningful music experiences in a warm atmosphere.
+A celebration of new wave and post-punk sounds with XTC tribute act XACTO and local legends Crack That Whip at Nambour's intimate Presynct venue.
 
-### 📌 [Noosa Enduro (Mountain Biking)](https://www.sunshinecoastpoint.com.au/events/)
-📆 Sat 20 – Sun 21 Jun 2026  
-📍 Noosa District Sports Complex & hinterland trails, Tewantin  
-💰 TBC (registration required)  
-`mountain biking` `outdoor` `adventure` `cycling`
+### 🎵 [Psych/Indie Rock Night at The Presynct](https://www.thepresynct.com.au/whats-on/)
+📆 Date TBC this week  
+📍 The Presynct Venue & Bar, Nambour  
+💰 TBC  
+`psych_rock` `indie_rock` `music` `live_performance` `recurring`
 
-The Sunshine Coast's premier gravel and mountain biking festival, offering challenges for all skill levels from beginners to elite riders across the scenic trails of the Noosa hinterland.
+A recurring showcase of psych and indie rock at The Presynct, known for booking adventurous and off-the-beaten-track acts in one of the Coast's beloved small live music rooms.
 
-### 🎓 [U3A Noosa Friday Talk – Muhammad: The Founder of Islam](https://u3anoosa.com.au/)
-📆 Fri 19 Jun, 1:30 PM  
-📍 U3A Noosa, Tewantin  
+### 🎵 [An Evening with Steve Kilbey (The Church) — Imperial Hotel Eumundi](https://imperialeumundi.com.au/whats-on/)
+📆 Date TBC this week  
+📍 Imperial Hotel Eumundi, Eumundi  
+💰 TBC  
+`music` `acoustic` `live_performance` `intimate`
+
+An intimate acoustic evening with Steve Kilbey, the legendary frontman of Australian art-rock icons The Church, at the atmospheric Imperial Hotel Eumundi.
+
+### 🎵 [OPIUO + Tijuana Cartel + Raw Ordio — Blackflag Brewing, Coolum](https://www.blackflagbrewing.com.au/pages/events)
+📆 Date TBC this week  
+📍 Blackflag Brewing, Coolum Beach  
+💰 TBC  
+`electronic` `world_music` `live_music` `coolum` `festival`
+
+A massive electronic/world-music triple bill at Blackflag Brewing's outdoor venue, featuring OPIUO (funk-electronica), Tijuana Cartel (global fusion groove), and Raw Ordio.
+
+### 📌 [Our Heritage, Our Stories – Wednesday Heritage Video Screenings](https://library.sunshinecoast.qld.gov.au/whats-on)
+📆 Wed 25 Jun, 10:00 AM  
+📍 Sunshine Coast Libraries (multiple branches)  
 💰 Free  
-`history` `culture` `lecture` `free`
+`history` `community` `film` `free`
 
-Darrel Roche presents a talk on Muhammad, the founder of Islam, as part of U3A Noosa's regular Friday Talks series. New members are welcome to attend this intellectually engaging session.
+Discover memorable stories about Sunshine Coast history through engaging local heritage videos, featuring recordings of local people sharing their memories, screened weekly.
 
-### 🎨 [Old Ways, New Marks | First Nations Screenprint Collective Exhibition](https://gallery.sunshinecoast.qld.gov.au/)
-📆 Ongoing through Jun (15–21 Jun)  
+### 🎨 [Noosa Alive! Festival – Final Days](https://www.noosaalive.com.au/)
+📆 Throughout 22–26 June  
+📍 Various venues across Noosa  
+💰 Mix of free and ticketed  
+`festival` `arts` `culture` `literature`
+
+The final days of Noosa Alive! Festival offer world-class entertainment, including theatre, music, literature, dance, and thought-provoking conversations, culminating in a free community event on the Noosa River.
+
+### 🎓 Building AI Capability in SMEs – Innovation at Altitude
+📆 Wed 24 Jun  
+📍 Altitude Nine  
+💰   
+`ai` `technology` `innovation` `business`
+
+Part of the Innovation at Altitude series, this event focuses on practical approaches to building AI capability within small and medium-sized enterprises. Likely to feature insights and discussions relevant to technology and business innovation.
+
+### 🛠️ Making a Multilingual WordPress Site
+📆 Fri 26 Jun, 10:00 AM  
+📍   
+💰   
+`technology` `webdev` `workshop` `digital`
+
+A workshop focused on practical skills for developing a multilingual website using WordPress. Ideal for those interested in technology, web design, or digital creativity.
+
+### 🛠️ Beginner Sourdough Workshop
+📆 Sat 27 Jun  
+📍   
+💰   
+`sourdough` `baking` `fermentation` `workshop`
+
+A hands-on workshop designed for beginners to learn the art and science of making sourdough bread. Develop practical skills in baking and fermentation.
+
+### 🤝 Trachyte Circuit & Mt Tibrogargan Circuit - 10km
+📆 Sun 28 Jun, 8:00 AM  
+📍 Trachyte Circuit & Mt Tibrogargan Circuit  
+💰   
+`hiking` `outdoor` `adventure` `social`
+
+A challenging 10km group hike exploring the Trachyte Circuit and Mt Tibrogargan. An adventure-oriented social event for active individuals.
+
+### 🎵 [NOOSA JAZZ CLUB PRESENTS PARIS CAFE JAZZ](https://themajestictheatre.com.au/upcoming-events/)
+📆 Wed 25 Jun, 1:00 PM - 3:30 PM  
+📍 The Majestic Theatre, Pomona  
+💰   
+`jazz` `music` `live` `intimate`
+
+Enjoy an afternoon of live Paris Cafe Jazz presented by the Noosa Jazz Club at the historic Majestic Theatre, featuring traditional and gypsy jazz sounds for an intimate musical experience.
+
+### 🎨 [SILENT FILM - THE LOST WORLD - 1925 - SCHOOL HOLIDAY FEATURE](https://themajestictheatre.com.au/upcoming-events/)
+📆 Sat 27 Jun, 12:00 PM - 2:00 PM  
+📍 The Majestic Theatre, Pomona  
+💰 $15  
+`film` `silent-film` `historic` `family`
+
+Experience a classic silent film screening of "The Lost World" (1925) at the Majestic Theatre, a family-friendly school holiday feature offering a unique cinematic and historical atmosphere.
+
+### 🎵 [Secret Garden (featuring Shannon Sol Carroll)](https://www.sunshinecoast.qld.gov.au/Experience-Sunshine-Coast/Arts-and-Culture/Arts-and-Heritage-Centres/Maroochy-Bushland-Botanic-Garden/Whats-on-at-the-Botanic-Garden/Secret-Garden)
+📆 Sun 28 Jun, 1:00 PM - 4:00 PM  
+📍 Maroochy Regional Bushland Botanic Garden, Tanawha  
+💰 $20  
+`music` `live` `outdoor` `garden`
+
+Enjoy an intimate musical performance by Shannon Sol Carroll in the beautiful outdoor setting of the Secret Garden at the Maroochy Bushland Botanic Garden.
+
+### 🎨 [How Soon is Now? (Bruce Reynolds Exhibition)](https://gallery.sunshinecoast.qld.gov.au/Exhibitions)
+📆 Ongoing Tue 24 - Sun 28 Jun (Gallery hours apply)  
 📍 Caloundra Regional Gallery, Caloundra  
 💰 Free  
-`art` `exhibition` `first nations` `free`
+`art` `exhibition` `contemporary` `free`
 
-This exhibition at Caloundra Regional Gallery features works by the First Nations Screenprint Collective, exploring traditional and contemporary art forms. It's a meaningful art experience running throughout June.
+Explore "How Soon is Now?", the first national touring exhibition featuring thought-provoking works by acclaimed Brisbane artist Bruce Reynolds, focusing on contemporary art and ideas.
 
-### 📌 [Noosa Organic Community Garden – Friday Morning Volunteering](https://noosatoday.com.au/news/13-06-2026/community-update-18/)
-📆 Fri 19 Jun, Morning  
-📍 Noosaville  
-💰 Free  
-`gardening` `community` `outdoor` `free`
-
-Participate in organic vegetable, herb, and fruit gardening activities at the Noosa Organic Community Garden. New members are welcome to this grounded, community-oriented outdoor event.
-
-### 🎨 [Noosa Regional Gallery – Ongoing Exhibitions & Workshops](https://www.noosaregionalgallery.com.au/)
-📆 Tue 16 - Sat 20 Jun, Gallery Hours  
+### 🎨 [IMAGINATE: FIELDS OF FEELINGS WITH BONNIE HISLOP (Exhibition)](https://www.noosaregionalgallery.com.au/exhibitions/)
+📆 Ongoing Tue 24 - Sun 28 Jun (Gallery hours apply)  
 📍 Noosa Regional Gallery, Tewantin  
-💰 Gallery Free, Workshops Ticketed  
-`art` `exhibition` `workshop` `creative`
-
-Explore current art exhibitions with free entry, engage in free art-making activities for families, or book a ticket for mentorship from contemporary Australian artists through the Masterclass Series.
-
-### 🎓 [Local History Oral History Video Screenings](https://library.sunshinecoast.qld.gov.au/whats-on)
-📆 Wed 17 Jun, 10:00 AM  
-📍 Sunshine Coast Libraries (various)  
 💰 Free  
-`history` `community` `lecture` `free`
+`art` `exhibition` `contemporary` `free`
 
-Weekly screenings of oral history videos featuring local people sharing their memories of Sunshine Coast history and events, offering unique insights into the region's past.
+Discover "IMAGINATE: Fields of Feelings" by Bonnie Hislop, an engaging art exhibition at Noosa Regional Gallery exploring themes through vibrant and imaginative works.
 
-### 🛠️ Weaving is Healing Sunshine Coast June 2026
-📆 Sat 20 Jun, 10:30 AM  
-📍 Weavery HQ, Queensland  
-💰 Check event page  
-`craft` `weaving` `workshop` `creative`
+### 🛠️ [Introduction to Glaze Making With Marc Savage](https://www.sunshinecoastartgroup.com.au/upcoming-workshops/)
+📆 Mon 22 Jun, 6:00 PM  
+📍 Pottery Studio, Sunshine Coast Art Group (SCArt)  
+💰 Contact Organiser  
+`pottery` `glazing` `workshop` `hands-on`
 
-A hands-on weaving workshop focused on the therapeutic aspects of craft, where participants can learn techniques and create something unique.
+This is the final session of an introductory pottery workshop focused on glaze making techniques, run by the Sunshine Coast Art Group. Participants will learn practical skills for creating and applying glazes in a community pottery studio setting.
 
-### 🤝 Initial Meetup (Jesus Plus ZERO Meetup Group)
-📆 Wed 17 Jun, 7:30 PM  
-📍 Not explicitly stated  
-💰 Not specified  
-`philosophy` `discussion` `meetup` `community`
-
-The inaugural gathering for the Jesus Plus ZERO Meetup Group, likely for discussion and community building around philosophical or spiritual topics.
-
-### 🎵 The Jazz Room: A Journey to the Heart of New Orleans
-📆 Sat 20 Jun  
-📍 Not explicitly stated  
-💰 Not specified  
-`jazz` `music` `live music` `performance`
-
-An evening of live jazz music designed to transport listeners to the vibrant and soulful atmosphere of New Orleans.
-
-### 📌 Meet the Rainforest Guided Walk at Mary Cairncross Scenic Reserve, June 2026
-📆 Sat 20 Jun  
-📍 Mary Cairncross Scenic Reserve  
-💰 Not specified  
-`nature` `walk` `outdoor` `education`
-
-A guided walk through the rainforest at Mary Cairncross Scenic Reserve, offering insights into local ecology and nature.
-
-### 🛠️ Cosy Up This Winter: Modern Felting Classes at The Fabric and Felt Studio
-📆 Sat 20 Jun - Sat 12 Sep  
-📍 The Fabric and Felt Studio  
-💰 Not specified  
-`craft` `felting` `workshop` `creative`
-
-Learn modern felting techniques in a creative workshop setting at The Fabric and Felt Studio, part of a series running through winter.
-
-### 🎵 Straight-ahead jazz, swinging grooves and soulful storytelling at The Presynct
-📆 Thu 18 Jun  
-📍 The Presynct  
-💰 Not specified  
-`jazz` `music` `live music` `intimate`
-
-An intimate live music performance featuring straight-ahead jazz, soulful grooves, and storytelling at The Presynct venue.
-
-### 🛠️ Colour Theory in Practice with Pam Hopkins
-📆 Sat 20 Jun, 10:00 AM  
-📍 Mary Valley RSL Sub-Branch  
-💰 Check event page  
-`art` `workshop` `colour theory` `creative`
-
-A practical workshop led by Pam Hopkins focusing on applying colour theory principles in artistic practice.
-
-### 🎨 [The Shark Is Broken](https://theblackboxtheatre.org/calendar/)
-📆 Fri 19 Jun, 7:30 PM  
-📍 The Black Box Theatre, Nambour  
-💰 $18.00  
-`theatre` `performance` `art` `nambour`
-
-An engaging theatrical performance presented at Nambour's intimate Black Box Theatre, offering an artistic and thought-provoking live experience.
-
-### 📌 [GRoW Gardening & Wellbeing Program](https://www.noosa.qld.gov.au/community/events/events-calendar)
-📆 Sun 21 Jun  
-📍 Cooroy (Noosa Council Libraries)  
-💰 Free  
-`gardening` `wellbeing` `community` `hands-on` `free`
-
-A community program offered by Noosa Libraries, focusing on the connection between gardening activities and overall personal wellbeing, ideal for hands-on engagement.
-
-### 🛠️ [Introduction to Glaze Making With Marc Savage](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjYaJj2lr9LM-lHDVOJJXCUhsgnD3b56y1ebLveCbfLuPqGbMIP-is2bCjW4TXwe9MkA0whasqjD98oS5IeG89-Iqc_SC_BCVQic9pmixQ5pYduI64bh3B1a7ZJx1e9PQ=)
-📆 Mon 15 Jun, 6:00 PM  
-📍 Pottery Studio, Sunshine Coast Art Group  
-💰 $140+  
-`pottery` `glaze` `workshop` `creative`
-
-Part of a 10-session workshop series, this class focuses on the fundamentals of glaze making, fostering deeper engagement in pottery craft within a committed art community.
-
-### 🛠️ [Advanced Wheel Throwing with Marc Sauvage](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjYaJj2lr9LM-lHDVOJJXCUhsgnD3b56y1ebLveCbfLuPqGbMIP-is2bCjW4TXwe9MkA0whasqjD98oS5IeG89-Iqc_SC_BCVQic9pmixQ5pYduI64bh3B1a7ZJx1e9PQ=)
-📆 Tue 16 Jun, 6:00 PM  
+### 🛠️ [Advanced Wheel Throwing with Marc Sauvage](https://www.sunshinecoastartgroup.com.au/upcoming-workshops/)
+📆 Tue 23 Jun, 6:00 PM  
 📍 SCArt Pottery Studio, Sunshine Coast Art Group  
-💰 $140+  
+💰 Contact Organiser  
 `pottery` `wheel throwing` `workshop` `advanced`
 
-Session 9 of an advanced workshop series for experienced potters, focusing on refining wheel-throwing techniques within a dedicated and skilled artistic community.
+This is the final session of an advanced pottery workshop focused on wheel throwing techniques, hosted by the Sunshine Coast Art Group. Participants will refine their skills in shaping clay on the potter's wheel in a creative community environment.
 
-### 🛠️ [Free Sahaja Yoga classes](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuI2cV6-PnqEwZhdQsYLw5Agw3VX3s33KLPHhbyGYeZjyg9jFVALaPgJpqrNlIk4J1i_Au5bTBWzfMMnWtmSB-HnvzaMCqFXM5AFaBAIcB7tsSdmsMvZSYQk26J-OFv6ERsHwPp0zBaAhv)
-📆 Tue 16 Jun, 6:00 PM  
-📍 Parrearra  
-💰 Free  
-`yoga` `meditation` `wellness` `free`
+### 🎨 [How Soon is Now? (Art Exhibition by Bruce Reynolds)](https://gallery.sunshinecoast.qld.gov.au/Exhibitions/How-Soon-is-Now)
+📆 Until Sun 28 Jun (during gallery hours)  
+📍 Caloundra Regional Gallery  
+💰 Check Venue  
+`art` `exhibition` `visual arts` `contemporary`
 
-Weekly free Sahaja Yoga meditation classes in Parrearra, focusing on genuine wellness practices and fostering a grounded, community-oriented approach to mindfulness.
+An art exhibition by Bruce Reynolds, exploring contemporary themes through visual art, on display at the Caloundra Regional Gallery until June 28. It offers an opportunity to experience local artistic talent and engage with new perspectives.
 
 ## 📋 All Events
 
 ### 🎵 Concert / Music
 
-#### [Seven Drunken Nights – The Dubliners' Songbook](https://theeventscentre.com.au/whats-on/)
-📆 This week
-📍 The Events Centre, Caloundra
-💰 TBC (ticketed)
-`folk` `music` `irish` `performance`
+#### [Candlelight Concert: Vivaldi Four Seasons](https://www.feverup.com)
+📆 Sat 28 Jun, 6:00 PM & 8:00 PM
+📍 Flaxton Gardens, Flaxton
+💰 From $55
+`classical music` `concert` `intimate`
 
-Celebrating its 10th Anniversary, this show returns to Australia as a rollicking celebration of Irish folk music and storytelling, having sold out venues worldwide.
+A world-class string quartet (Paradiso Strings) performs Vivaldi's Four Seasons by candlelight at the scenic Flaxton Gardens, offering two sessions for an intimate classical music experience.
 
-#### [Pineapple Punch Purge](https://www.thepresynct.com.au/whats-on/)
-📆 This week (June 2026)
-📍 The Presynct, Sunshine Coast
+#### [Seven Drunken Nights – The Dubliners' Songbook](https://events.sunshinecoast.qld.gov.au)
+📆 Fri 26 Jun, 7:30 PM
+📍 Sunshine Coast venue
 💰 TBC
-`music` `live music` `indie` `local`
+`irish music` `folk` `concert`
 
-A live music night at The Presynct, one of the Sunshine Coast's best independent music venues, known for showcasing local and original acts.
+Celebrating its 10th Anniversary, this acclaimed show brings The Dubliners' classic Irish folk music to the Sunshine Coast, beloved by its community audience.
 
-#### [ROLLERBALL](https://nortonmusicfactory.com.au/events/)
-📆 This week (June 2026)
-📍 Norton Music Factory, Sunshine Coast
+#### [The Kittyhawks & Sunny Coast Rudeboys at Kings Beach Tavern](https://kingsbeachtavern.com.au/entertainment/)
+📆 Sat 27 Jun, Time TBC
+📍 Kings Beach Tavern, Caloundra
 💰 TBC
-`music` `live music` `indie` `authentic`
+`ska` `roots` `music` `live_performance`
 
-A live music event at the Norton Music Factory, a beloved independent music venue on the Coast known for its authentic gig atmosphere.
+A high-energy double-bill of local acts, The Kittyhawks and the Sunny Coast Rudeboys, bringing ska, roots, and live music to the Beach Bar at Kings Beach Tavern.
 
-#### [The Slingers](https://www.blackflagbrewing.com.au/pages/events)
-📆 This week (June 2026)
-📍 Blackflag Brewing, Coolum Beach
-💰 TBC (likely free or low cost)
-`music` `live music` `craft beer` `community`
+#### [Clare Cowley and the Flames](https://themajestictheatre.com.au/eventsnew/)
+📆 Sun 28 Jun, 3:00 PM – 5:00 PM
+📍 Majestic Theatre, Pomona
+💰 Check website ($15–$25)
+`music` `folk` `concert` `intimate`
 
-Enjoy live music at Blackflag Brewing Coolum, a craft brewery offering a relaxed, community-focused gig atmosphere.
+Clare Cowley and the Flames perform an intimate live music experience at the community-run Majestic Theatre in Pomona, a unique historic venue operating for over 100 years.
 
-#### [Forever High: Back to Basics Tour](https://www.thepresynct.com.au/whats-on/)
-📆 This week (June 2026)
-📍 The Presynct, Sunshine Coast
-💰 TBC
-`music` `live music` `touring act` `indie`
-
-A live touring act bringing their latest show to The Presynct, one of the Sunshine Coast's best independent music venues.
-
-#### [Luke Kidgell – Good Intentions](https://www.thej.com.au/whats-on-in-noosa/)
-📆 This week (June 2026)
-📍 The J, Noosa Junction, Noosaville
-💰 TBC (ticketed)
-`music` `live music` `comedy` `performance`
-
-An intimate live music performance by a local/regional artist at Noosa's premier arts venue, offering a great night for music lovers seeking something authentic and local.
-
-#### [Solbar – Live Music (Various Acts)](https://www.solbar.com.au/)
-📆 Multiple nights, 17–21 Jun
-📍 Solbar, Maroochydore
-💰 Varies
-`music` `live` `maroochydore` `concerts`
-
-Solbar, a premium live music venue, hosts various acts typically from Wednesday to Sunday. Check their website for the full weekly lineup of ticketed and free gigs.
-
-#### [Norton Music Factory / Venue 114 – Live Music](https://nortonmusicfactory.com.au/events)
-📆 Multiple events, 15–21 Jun
-📍 Caloundra / Bokarina
-💰 Varies
-`music` `live` `concerts` `venues`
-
-Check the websites for Norton Music Factory (Caloundra) and Venue 114 (Bokarina) for their specific live music lineups and events occurring within the 15–21 June period.
-
-#### Sunshine Coast Choral Festival 2026
-📆 Sat 20 Jun
-📍 Not explicitly stated
-💰 Not specified
-`music` `choral` `festival` `performance`
-
-A festival celebrating choral music, featuring various performances by local and visiting choirs on the Sunshine Coast.
-
-#### [Che Burns featuring Cherry Nova](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzRFayMlDKqrQd9DrWyXZ8nNHG5CARd-4xARpil-zmsEm1IvZjKUzKdbQNsS7KVuPngACAaxzVOne9HGUEQ3KssnRYVPYVVdTPCmbvELySraqa9pVmXO0ghYl7jYCGJiFZdxFBLipe6CKAA7daAMvLZ2p9PVKmAWjfT9YrvhQ59g==)
-📆 Fri 19 Jun, 8:00 PM (doors)
-📍 Black Flag Taphouse, Mooloolaba
-💰 TBA
-`indie music` `live music` `concert` `performance`
-
-An indie music gig featuring Che Burns and Cherry Nova, offering a live music experience with artistic value in an intimate venue setting.
-
-#### [Neish with In Constance and Cardboard Cu...](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzRFayMlDKqrQd9DrWyXZ8nNHG5CARd-4xARpil-zmsEm1IvZjKUzKdbQNsS7KVuPngACAaxzVOne9HGUEQ3KssnRYVPYVVdTPCmbvELySraqa9pVmXO0ghYl7jYCGJiFZdxFBLipe6CKAA7daAMvLZ2p9PVKmAWjfT9YrvhQ59g==)
-📆 Fri 19 Jun
-📍 The Presynct, Sunshine Coast
-💰 $17
-`live music` `indie` `concert` `performance`
-
-A live music performance featuring Neish, In Constance, and Cardboard Cu..., likely showcasing local indie talent in an intimate venue.
-
-#### [James Reyne | Fall of Crawl](https://theeventscentre.com.au/whats-on/)
-📆 This week (June 2026)
-📍 The Events Centre, Caloundra
-💰 TBC (ticketed)
-`music` `rock` `australian music` `performance`
-
-An unmissable intimate performance by Australian rock icon and Crawl co-founder, James Reyne, at the Caloundra Events Centre.
-
-#### [Paul Dempsey – Shotgun Karaoke](https://kingsbeachtavern.com.au/entertainment/)
-📆 Fri 19 Jun, Evening
+#### [Sunny Coast Rude Boys + The Kittyhawks (Big Ska Party!)](https://allevents.in/caloundra/june)
+📆 Sat 27 Jun, from 8:00 PM
 📍 Kings Beach Tavern, Caloundra
 💰 Check venue
-`music` `live` `concert` `caloundra`
+`music` `ska` `live music` `social`
 
-Paul Dempsey performs his unique "Shotgun Karaoke" show at Kings Beach Tavern, a popular live music destination known for its regular entertainment acts in the Beach Bar.
+A lively, genre-specific live music night featuring local acts Sunny Coast Rude Boys and Melbourne's The Kittyhawks, offering a great community atmosphere at Kings Beach Tavern.
 
-#### [An Orchestral Celebration of Dance Music Through the Ages](https://theeventscentre.com.au/whats-on/)
-📆 This week
-📍 The Events Centre, Caloundra
-💰 TBC (ticketed)
-`music` `orchestra` `dance` `performance`
-
-Join a night of fabulous dance music and a fascinating tour through the history of dance, presented as an orchestral celebration.
-
-#### [Chris Webb and The Sweaty Palms – Live in the Beer Garden](https://thebananabenderpub.com/events/)
-📆 Sun 21 Jun, Afternoon
-📍 Banana Bender Pub, Palmview
-💰 Free
-`music` `live` `social` `free`
-
-Enjoy an afternoon of live music with Chris Webb and The Sweaty Palms in the Beer Garden of the Banana Bender Pub. Expect good food and a vibrant pub atmosphere.
-
-### 🤝 Social / Meetup
-
-#### [SunCoast Angels – Startup Pitch Evening at Peregian Digital Hub](https://events.humanitix.com/suncoast-angels-june-2026-pitch-evening-at-peregian-digital-hub)
-📆 This week, June 2026
-📍 Peregian Digital Hub, Peregian Beach
-💰 Free / low cost
-`startups` `networking` `technology` `community`
-
-Open to those interested in local start-up businesses and the innovation ecosystem, this evening includes pitches from start-ups followed by informal drinks and networking within the Sunshine Coast start-up community.
-
-#### [Banana Bender Pub – Thursday Trivia Night](https://thebananabenderpub.com/events/)
-📆 Thu 18 Jun, from 6:30 PM
-📍 Banana Bender Pub, Palmview
-💰 Free
-`trivia` `social` `community` `free`
-
-Join "Trivia chaos with Michelle" every Thursday for a fun, competitive trivia night at the Banana Bender Pub, with a special burger and chips offer. A great way to socialize and test your knowledge.
-
-#### [Noosa Enduro – Mountain Biking Challenge](https://www.sunshinecoastpoint.com.au/events/)
-📆 Sat 20 - Sun 21 Jun
-📍 Noosa District Sports Complex, Tewantin
-💰 Check website
-`mountain biking` `adventure` `outdoor` `social`
-
-Participate in one of Queensland's premier mountain biking challenges, attracting riders to the scenic trails of the Sunshine Coast hinterland for an active outdoor adventure.
-
-#### Working From Home Ladies - It's time for a Conscious Coffee Catchup!
-📆 Wed 17 Jun, 2:00 PM
-📍 Heart Connection Space
-💰 Free (buy own coffee)
-`social` `meetup` `community` `women`
-
-A casual and conscious coffee meetup for women who work from home, fostering connections and conversation in a relaxed setting.
-
-#### Sunshine Coast Inspired Minds Lunch
-📆 Thu 18 Jun, 12:00 PM
-📍 The Lakehouse Sunshine Coast, Mountain Creek
-💰 Not specified
-`social` `networking` `discussion` `community`
-
-A lunch gathering designed to bring together individuals for inspiring conversations and connections, fostering intellectual exchange.
-
-#### [Conscious Coffee Catchup for WFH Ladies](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuI2cV6-PnqEwZhdQsYLw5Agw3VX3s33KLPHhbyGYeZjyg9jFVALaPgJpqrNlIk4J1i_Au5bTBWzfMMnWtmSB-HnvzaMCqFXM5AFaBAIcB7tsSdmsMvZSYQk26J-OFv6ERsHwPp0zBaAhv)
-📆 Wed 17 Jun, 2:00 PM
-📍 Sunshine Coast
-💰 Low cost
-`coffee` `coworking` `women's group` `social`
-
-A social gathering designed for women working from home, offering a 'conscious' approach to networking and connection over coffee to build community.
-
-#### [Noosa Enduro Mountain Bike Event](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2j)
-📆 Sat 20 Jun - Sun 21 Jun, 2026
-📍 Noosa Hinterland
-💰 Not specified
-`mountain biking` `outdoor` `adventure` `community`
-
-A multi-day mountain bike event in the Noosa Hinterland, offering a challenging outdoor adventure and a social experience for the mountain biking community.
-
-#### [Sunday Social Easy Hike - Dularcha Tunnel Trail & Coffee](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAEAR-M-CiQKjihtDeFY3EGpe2Jl33CiNWnohwZ1F6OeC0XNidh9v9sGCIOTV_K8UufZ-cqxUiye6y8KMQko_txatzJlQYkTX7ds0ZQRl_BS9c-YM_ZPLBJ83n0M_RtVXW5qEqry5tUfxa4SNJrWgiOUnKiaiiCbQ8OKM=)
-📆 Sun 21 Jun, 9:15 AM
-📍 Dularcha Tunnel Trail
-💰 Free + coffee
-`hiking` `outdoor` `social` `community`
-
-An easy social hike on the Dularcha Tunnel Trail, followed by coffee, designed to encourage conversation and connection among participants in an outdoor setting.
-
-#### [Eumundi Markets – Live Music & Community](https://www.eumundimarkets.com.au/)
-📆 Wed 17 Jun & Sat 20 Jun, from 7:00 AM
-📍 Eumundi Markets, Eumundi
-💰 Free
-`markets` `community` `music` `free`
-
-Experience the vibrant Eumundi Markets, a recurring community fixture offering live local music, artisan stalls, food, and a creative atmosphere. Open on Wednesday (small markets) and Saturday (main markets).
-
-#### [Flaxton Gardens – Winter Dining & Cultural Program](https://feverup.com/en/sunshine-coast)
-📆 Fri 19 Jun, 6:30 PM
-📍 Flaxton Gardens, Flaxton
-💰 From $72
-`dining` `social` `hinterland` `culture`
-
-Experience a high-atmosphere dining event as part of a cultural program in a scenic hinterland garden setting, offering a sophisticated social outing.
-
-#### [Let's Have a Picnic!](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtuWOY3MTZxBnpAprWQw9vSToSKRO8gUgq-133p-X45-P6pYzDdNUk-GPnL5PKE3BRexvmW63LU6slZ1QecSapNI72RJTrKYA9piwQVEU3ZjX7T9J-kWXoOWhjcrwD)
-📆 Mon 15 Jun, 4:00 PM - 8:00 PM
-📍 Mooloolaba Beach, Mooloolaba
-💰 Free
-`picnic` `lgbtqia+` `social` `community`
-
-A community picnic hosted by the Sunny Coast Lesbian Social Club, providing a casual outdoor setting for connection and socialising within the LGBTQIA+ community.
-
-#### [Kawana - Coffee & Chin Wag (for blokes)](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAEAR-M-CiQKjihtDeFY3EGpe2Jl33CiNWnohwZ1F6OeC0XNidh9v9sGCIOTV_K8UufZ-cqxUiye6y8KMQko_txatzJlQYkTX7ds0ZQRl_BS9c-YM_ZPLBJ83n0M_RtVXW5qEqry5tUfxa4SNJrWgiOUnKiaiiCbQ8OKM=)
-📆 Tue 16 Jun, 6:30 AM
-📍 Kawana
-💰 Low cost
-`coffee` `men's group` `social` `community`
-
-A recurring morning coffee meetup specifically for men, designed to foster casual conversation and social connection within a laidback community setting.
-
-#### [Coffee & Chat at Twin Waters](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAEAR-M-CiQKjihtDeFY3EGpe2Jl33CiNWnohwZ1F6OeC0XNidh9v9sGCIOTV_K8UufZ-cqxUiye6y8KMQko_txatzJlQYkTX7ds0ZQRl_BS9c-YM_ZPLBJ83n0M_RtVXW5qEqry5tUfxa4SNJrWgiOUnKiaiiCbQ8OKM=)
-📆 Tue 16 Jun, 10:00 AM
-📍 Twin Waters
-💰 $2.00 + cost of coffee
-`coffee` `seniors` `social` `community`
-
-A regular social gathering for singles aged 60 and over, offering a relaxed setting for coffee and conversation to build community connections.
-
-#### [5km Run & Dinner (LGBT Run Club)](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtuWOY3MTZxBnpAprWQw9vSToSKRO8gUgq-133p-X45-P6pYzDdNUk-GPnL5PKE3BRexvmW63LU6slZ1QecSapNI72RJTrKYA9piwQVEU3ZjX7T9J-kWXoOWhjcrwD)
-📆 Thu 18 Jun, 5:00 PM - 9:00 PM
-📍 Parklakes Drive, Bli Bli
-💰 Free + dinner
-`running` `lgbtqia+` `social` `active`
-
-An active social event combining a 5km run with a group dinner, fostering connection and community within the LGBTQIA+ run club for Pride Month.
-
-#### [Pride Bar - Takeover #3](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtuWOY3MTZxBnpAprWQw9vSToSKRO8gUgq-133p-X45-P6pYzDdNUk-GPnL5PKE3BRexvmW63LU6slZ1QecSapNI72RJTrKYA9piwQVEU3ZjX7T7S-kWXoOWhjcrwD)
-📆 Thu 18 Jun, 9:00 PM - Fri 19 Jun, 12:00 AM
-📍 WAT Den - Whisky And Tequila + Cocktails, Mooloolaba
-💰 Not specified
-`lgbtqia+` `social` `performance` `drag`
-
-A vibrant community event featuring handcrafted cocktails, dazzling drag performances, and a lively atmosphere, organised by the Sunshine Coast Pride Network.
-
-#### [Bli Bli Social Pickleball](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAEAR-M-CiQKjihtDeFY3EGpe2Jl33CiNWnohwZ1F6OeC0XNidh9v9sGCIOTV_K8UufZ-cqxUiye6y8KMQko_txatzJlQYkTX7ds0ZQRl_BS9c-YM_ZPLBJ83n0M_RtVXW5qEqry5tUfxa4SNJrWgiOUnKiaiiCbQ8OKM=)
-📆 Mon 15 Jun, 5:30 PM
-📍 Bli Bli (organised by Mooloolaba Pickleball Club)
-💰 Not specified
-`pickleball` `social` `active` `community`
-
-A regular social pickleball session organised by the Mooloolaba Pickleball Club, offering a casual and active way to meet people and engage in a community sport.
-
-#### [Older Person's Morning Tea – Nambour](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtuWOY3MTZxBnpAprWQw9vSToSKRO8gUgq-133p-X45-P6pYzDdNUk-GPnL5PKE3BRexvmW63LU6slZ1QecSapNI72RJTrKYA9piwQVEU3ZjX7T9J-kWXoOWhjcrwD)
-📆 Wed 17 Jun, 10:00 AM - 12:00 PM
-📍 19 Image Flat Rd, Nambour
-💰 Free
-`seniors` `community` `social` `morning tea`
-
-A community morning tea organised for older persons, offering a social space for connection and conversation in Nambour.
-
-#### [Social Volleyball Games - All Levels](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuI2cV6-PnqEwZhdQsYLw5Agw3VX3s33KLPHhbyGYeZjyg9jFVALaPgJpqrNlIk4J1i_Au5bTBWzfMMnWtmSB-HnvzaMCqFXM5AFaBAIcB7tsSdmsMvZSYQk26J-OFv6ERsHwPp0zBaAhv)
-📆 Wed 17 Jun, 7:00 PM
-📍 Meridan State College
-💰 Not specified
-`volleyball` `social` `active` `community`
-
-An inclusive social volleyball session open to all skill levels, providing an active and fun opportunity to meet people and play in a community setting.
-
-#### [Your Mates Brewing - Friday Knock Offs (for blokes)](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAEAR-M-CiQKjihtDeFY3EGpe2Jl33CiNWnohwZ1F6OeC0XNidh9v9sGCIOTV_K8UufZ-cqxUiye6y8KMQko_txatzJlQYkTX7ds0ZQRl_BS9c-YM_ZPLBJ83n0M_RtVXW5qEqry5tUfxa4SNJrWgiOUnKiaiiCbQ8OKM=)
-📆 Fri 19 Jun, 4:00 PM
-📍 Sunshine Coast
-💰 Low cost
-`drinks` `men's group` `social` `community`
-
-A recurring casual social event for men at Your Mates Brewing, offering a relaxed environment for Friday afternoon drinks and conversation.
-
-#### [LIKE SANDS THROUGH THE HOUR GLASS, SO ARE THE DAYS OF OUR LIVES](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAEAR-M-CiQKjihtDeFY3EGpe2Jl33CiNWnohwZ1F6OeC0XNidh9v9sGCIOTV_K8UufZ-cqxUiye6y8KMQko_txatzJlQYkTX7ds0ZQRl_BS9c-YM_ZPLBJ83n0M_RtVXW5qEqry5tUfxa4SNJrWgiOUnKiaiiCbQ8OKM=)
-📆 Sat 20 Jun, 6:00 PM
-📍 Sunshine Coast
-💰 Free
-`couples` `seniors` `social` `community`
-
-A social event for couples aged 45 and over who are empty nesters, providing a chance to connect and socialise within a specific age demographic.
-
-#### [Hervey Bay Lesbian Run Club](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtuWOY3MTZxBnpAprWQw9vSToSKRO8gUgq-133p-X45-P6pYzDdNUk-GPnL5PKE3BRexvmW63LU6slZ1QecSapNI72RJTrKYA9piwQVEU3ZjX7T9J-kWXoOWhjcrwD)
-📆 Fri 19 Jun
-📍 Hervey Bay (organised by Sunshine Coast Pride Network)
-💰 Free
-`running` `lgbtqia+` `social` `active`
-
-A social and active gathering for the lesbian community, organised by the Sunshine Coast Pride Network. This event is located in Hervey Bay, north of the Sunshine Coast.
-
-#### [Sunshine Coast June Golf Classic](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRlKGSCj33l4R-QAkSZXQK-WPe84eBxvr0yIc5cL3W6fgc-VhJHNUwBCU0bGa6uZ5-bPHofGRLXV-xIAXFk9jjISU5UpPjbbyaxzzqE2uCk2FxVO6xwEFVw5UrBJJeO-Pj11XES7DSX_KUJN_GFHtKc0nHzDwQaJZlZONb2U1fleFosSc43eACtnUJytG3zGT0lORzDxD7OGP7fi7Hetkr4VmY6Q_KwX9sL91BeHRE=)
-📆 Mon 15 Jun - Fri 19 Jun, 2026
-📍 Sunshine Coast
-💰 Not specified
-`golf` `outdoor` `social` `community`
-
-A multi-day participatory golf event attracting a specific community, offering an outdoor social experience for golf enthusiasts on the Sunshine Coast.
-
-### 🎨 Arts / Exhibition
-
-#### [Moffat Beach: Sunset Cinema](https://www.visitsunshinecoast.com/whats-on)
-📆 This week (series runs through June 2026)
-📍 Eleanor Shipley Park, Moffat Beach, Caloundra
-💰 Free / low cost
-`film` `outdoor` `community` `free`
-
-An outdoor film screening by the beach at Eleanor Shipley Park, offering a wonderful free community experience under the stars.
-
-#### Words, Words, Words Exhibition
-📆 Fri 19 Jun - Sun 21 Jun
-📍 Not explicitly stated
-💰 Not specified
-`art` `exhibition` `language` `creative`
-
-An art exhibition exploring themes related to language, text, and communication through various artistic mediums.
-
-#### JA Aerial Show 2026 | 'A JOURNEY THROUGH TIME' | SHOW 1 Sat 7pm
-📆 Sat 20 Jun, 7:00 PM
-📍 Just Acrobatics, Warana
-💰 Check event page
-`performance` `acrobatics` `art` `aerial`
-
-The first aerial show performance by Just Acrobatics, featuring a journey through time with acrobatic displays.
-
-#### AERIAL MINI SHOW 2 - Sun 21st June
-📆 Sun 21 Jun, 1:00 PM
-📍 Just Acrobatics, Warana
-💰 Check event page
-`performance` `acrobatics` `art` `aerial`
-
-A mini aerial show performance presented by Just Acrobatics, showcasing a range of acrobatic skills and artistic expression.
-
-#### [KOAL – SCHE Excursion (Children's Theatre)](https://theeventscentre.com.au/whats-on/)
-📆 Wed 17 Jun, 10:00 AM
-📍 The Events Centre, Caloundra
-💰 Check website
-`theatre` `children` `interactive` `performance`
-
-An original interactive solo-show by Jacinta Yelland, designed for children. Expect an engaging live theatre experience at The Events Centre.
-
-### 📌 Community / Other
-
-#### [Noosa Electric Vehicle Expo](https://www.sunshinecoastpoint.com.au/events/)
-📆 Sun 21 Jun 2026
-📍 Noosa Transit Centre, Noosa Junction
-💰 TBC (likely free)
-`technology` `sustainability` `electric vehicles` `community`
-
-A forward-thinking community event celebrating electric transport and sustainable technology, bringing together EV enthusiasts, innovators, and curious minds to explore the future of transport.
-
-#### [Noosa Chorale – Monday Night Rehearsals](https://noosatoday.com.au/news/13-06-2026/community-update-18/)
-📆 Mon 15 Jun, 7:00–9:00 PM
-📍 The J Theatre, Noosa Heads
-💰 Free
-`choir` `music` `community` `free`
-
-Join the Noosa Chorale's weekly rehearsal for their upcoming jazz and blues concerts. New singers are welcome to this recurring community group, no auditions required.
-
-#### [The Station SC – Live Events & Skate Sessions](https://thestationsc.com.au/whats-on/)
-📆 Multiple events, 15–21 Jun
-📍 The Station SC, Birtinya
-💰 Varies
-`music` `skate` `community` `activities`
-
-The Station SC is a hub for various live events, including national/international music acts and skate park sessions/lessons. Check their website directly for a full schedule of their upcoming events this week.
-
-#### The Thrift Yard X Matso's Sunshine Coast Brewery Pre-loved & Maker Market
-📆 Sun 21 Jun, 3:00 PM
-📍 Matso's Sunshine Coast Brewery
-💰 Not specified
-`market` `maker` `craft` `community`
-
-A market combining pre-loved items with goods from local makers, hosted at Matso's Sunshine Coast Brewery, fostering community and craft.
-
-#### Svenskt Midsommarfirande - Sunshine Coast 2026
-📆 Sun 21 Jun, 9:30 AM
-📍 Sports Ground, Queensland
-💰 Check event page
-`cultural` `community` `social` `celebration`
-
-A traditional Swedish Midsummer celebration on the Sunshine Coast, offering a cultural and social gathering for the community.
-
-#### [Sewing Group](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjYaJj2lr9LM-lHDVOJJXCUhsgnD3b56y1ebLveCbfLuPqGbMIP-is2bCjW4TXwe9MkA0whasqjD98oS5IeG89-Iqc_SC_BCVQic9pmixQ5pYduI64bh3B1a7ZJx1e9PQ=)
-📆 Sat 20 Jun, 9:30 AM
-📍 SCArt Art Studio, Sunshine Coast Art Group
-💰 $140/year membership
-`sewing` `craft` `community` `hands-on`
-
-An untutored creative community group where members work on their own sewing projects, share skills, and connect with fellow enthusiasts.
-
-#### 'LiFe iS wEiRd' Sunny Coast Show (Secret Location)
-📆 Sat 20 Jun 2026, 6:00 PM
-📍 Secret location, Sunshine Coast
+#### [An Orchestral Celebration of Dance Music Through the Ages](https://events.sunshinecoast.qld.gov.au)
+📆 Sat 27 Jun, 7:30 PM
+📍 Sunshine Coast venue
 💰 TBC
-`performance` `mystery` `community` `secret`
+`orchestral music` `dance` `concert` `history`
 
-An event with a mysterious theme, presented at a secret location somewhere on the Sunshine Coast.
+An orchestra performs a historical journey through dance music, offering a night of varied musical styles and fascinating insights into the evolution of dance.
 
-#### Mooloolaba Sunset Market - FREE Entry
-📆 Sat 20 Jun
-📍 Mooloolaba
-💰 Free Entry
-`market` `community` `social` `free`
+#### [Best Years of Our Lives – Live at Kings Beach Tavern](https://www.kingsbeachtavern.com.au/entertainment/)
+📆 Sat 27 Jun, 8:00 PM
+📍 Kings Beach Tavern, Caloundra
+💰 Free or low-cost
+`live music` `pub` `caloundra` `social`
 
-A local community market held in Mooloolaba, featuring various stalls with crafts, food, and local goods, offering a relaxed social atmosphere.
+Live music performance at Kings Beach Tavern, offering a casual and social atmosphere in Caloundra's iconic beachside pub, perfect for a relaxed night out.
+
+#### [Southern Sons – Heart in Danger Tour 2026](https://theeventscentre.com.au/whats-on/)
+📆 Sat 27 Jun, 7:30 PM
+📍 The Events Centre, Caloundra
+💰 TBC
+`rock music` `live music` `australian music`
+
+Legendary Australian rock/soul band Southern Sons perform their "Heart in Danger Tour" at Caloundra's premier venue, The Events Centre, for a powerful live music experience.
+
+#### [Variety Concert](https://theeventscentre.com.au/whats-on/)
+📆 Wed 24 Jun, 11:00 AM
+📍 The Events Centre, Caloundra
+💰 Check website
+`music` `concert` `performance` `mainstream`
+
+A variety concert at The Events Centre, Caloundra, offering a kaleidoscope of music, dance, plays, and shows for all ages at the Sunshine Coast's premier performing arts venue.
+
+#### [Frozen – The Broadway Musical](https://theeventscentre.com.au/whats-on/)
+📆 Throughout 22–28 June (check website)
+📍 The Events Centre, Caloundra
+💰 Check website
+`musical` `theatre` `performance` `mainstream`
+
+Disney's Frozen – The Broadway Musical comes to the Sunshine Coast for a spectacular new staging at the region's premier performing arts venue.
+
+#### [K-Pop Icons](https://www.theeventscentre.com.au/see-whats-on-caloundra-june/)
+📆 Sun 28 Jun
+📍 The Events Centre, Caloundra
+💰 
+`k-pop` `music` `live` `performance`
+
+Catch a performance celebrating K-Pop Icons at The Events Centre Caloundra, offering a dynamic and energetic live show for fans of Korean pop music.
 
 ### 🛠️ Workshop / Class
 
-#### [Vision Board Pocket Books – Craft Workshop](https://library.sunshinecoast.qld.gov.au/whats-on)
-📆 Multiple dates & times, 15-21 Jun
-📍 Sunshine Coast Libraries (various)
+#### [Resin River & Serving Board Workshop](https://www.eventbrite.com.au/d/australia--sunshine-coast/events--next-week/)
+📆 Sat 27 Jun, 1:00 PM
+📍 Maroochydore
+💰 TBC
+`craft` `resin` `workshop` `maker`
+
+A creative hands-on workshop in Maroochydore where participants learn to make their own artisan resin river serving boards, ideal for craft and design enthusiasts.
+
+#### [Yoga in the Garden](https://www.livingsmart.sunshinecoast.qld.gov.au/Things-to-Do/Events-and-Activities/Whats-on-Maroochy-Bushland-Botanic-Garden-2026-27)
+📆 Sat 27 Jun, 8:00 AM - 9:00 AM
+📍 Sculpture Garden, Maroochy Regional Bushland Botanic Garden, Tanawha
+💰 $10
+`yoga` `wellness` `outdoor` `community`
+
+Join a refreshing outdoor yoga session in the tranquil Sculpture Garden of the Maroochy Bushland Botanic Garden, suitable for all levels as part of the Healthy Sunshine Coast program.
+
+#### [IMAGINATE school holidays clay lab](https://www.noosaregionalgallery.com.au/learn/)
+📆 Ongoing Tue 24 - Sun 28 Jun (check website for times)
+📍 Noosa Regional Gallery, Tewantin
+💰 
+`clay` `workshop` `creative` `kids-friendly`
+
+Engage in a hands-on clay lab as part of the IMAGINATE school holidays program at Noosa Regional Gallery, offering creative exploration with ceramics.
+
+#### A Yoga of Light
+📆 Sun 28 Jun, 1:45 PM
+📍 
+💰 
+`yoga` `wellness` `meditation` `movement`
+
+A yoga session focused on light and spiritual well-being, suitable for various levels. An opportunity for grounded movement and meditation.
+
+### 🤝 Social / Meetup
+
+#### [Svenskt Midsommarfirande – Sunshine Coast (Swedish Midsummer)](https://www.eventbrite.com.au/d/australia--sunshine-coast/events--this-weekend/)
+📆 Sat 27 Jun, 3:00 PM
+📍 Sunshine Coast
+💰 TBC
+`cultural` `community` `celebration` `social`
+
+An authentic Swedish Midsummer celebration on the Sunshine Coast, offering traditional festivities, food, and music, providing a chance to engage with Scandinavian culture and the local Swedish community.
+
+#### [Girl Friday 10th Anniversary Party](https://allevents.in/sunshine-coast/all)
+📆 Sun 28 Jun, 4:00 PM
+📍 Cruise Maroochy Eco, Maroochydore
+💰 TBC
+`community` `celebration` `social` `boat cruise`
+
+A 10th-anniversary celebration for the local 'Girl Friday' social community, hosted on the scenic Cruise Maroochy Eco, promising a creative, community-connected gathering.
+
+#### [Meet the Makers 2026 – Industry Lunch, Panel & Networking](https://events.humanitix.com/buyer-registration-meet-the-makers-2026)
+📆 Tue 23 Jun, 10:00 AM – 4:00 PM
+📍 Venue 114, Bokarina
+💰 Free - $39+GST
+`food` `community` `panel` `networking`
+
+A gathering for regional food and agribusiness producers, offering a trade session and a ticketed industry lunch with a panel discussion on food, sustainability, and regional development.
+
+#### ICP Neon Nights
+📆 Fri 26 Jun, 5:00 PM
+📍 Flow Bouldering Gym, Forest Glen
+💰 
+`climbing` `bouldering` `social` `active`
+
+An evening bouldering event at Flow Bouldering Gym with a 'neon nights' theme. A social and active way to engage in climbing, suitable for various skill levels.
+
+#### [Archie & Bretz's Music Trivia for Give Me 5 🖐](https://allevents.in/sunshine-coast/all)
+📆 Tue 23 Jun, 7:00 PM
+📍 10 Toes Brewery (The Buderim Taproom), Buderim
+💰 TBC
+`trivia` `music` `social` `community` `brewery`
+
+A charity music trivia night hosted at 10 Toes Brewery in Buderim, offering an informal and social gathering in a local craft brewery setting for a good cause.
+
+#### [Thursday Trivia (Brain & Burger Night) — Banana Bender Pub](https://thebananabenderpub.com/whats-on/)
+📆 Thu 26 Jun, 6:30 PM
+📍 Banana Bender Pub, Palmview
 💰 Free
-`craft` `workshop` `free` `community`
+`trivia` `community` `social` `free` `intellectual`
 
-A hands-on craft workshop across Sunshine Coast Libraries where participants create their own vision board pocket books, perfect for personal creativity and goal setting.
+A beloved weekly community trivia night hosted by Michelle from Funky Bunch in a relaxed pub setting, with a $20 Burger & Chips special.
 
-#### 6pm Tuesdays Free Sahaja Yoga classes in Parrearra
-📆 Tue 16 Jun, 6:00 PM
+#### Morning Walk & Talk Sunny Coast
+📆 Thu 25 Jun, 9:15 AM
+📍 
+💰 
+`walking` `social` `outdoor` `community`
+
+A social walking group event designed for relaxed conversation and enjoying the Sunshine Coast's natural environment. Ideal for meeting new people in an active outdoor setting.
+
+#### [SUNSHINE COAST Speed Dating (Ages 26–44)](https://www.eventbrite.com.au/d/australia--sunshine-coast/events--next-week/)
+📆 Fri 26 Jun, 7:00 PM
+📍 Sunshine Coast
+💰 TBC
+`social` `dating` `meetup`
+
+A structured speed dating event organised by Cheeky Events Australia for singles aged 26–44, providing a fun and low-pressure environment to meet new people.
+
+#### [Hump Day Hustle Poker Night — Banana Bender Pub](https://thebananabenderpub.com/events/)
+📆 Wed 25 Jun, 6:00 PM
+📍 Banana Bender Pub, Palmview
+💰 Free
+`social` `games` `community` `free` `recurring`
+
+A free weekly social poker night in the beer garden of the Banana Bender Pub, powered by APL. A relaxed mid-week social event with cheap pizza.
+
+#### Social Volleyball Games - ALL Levels
+📆 Wed 24 Jun, 7:00 PM
+📍 Meridan State College
+💰 
+`sport` `social` `community` `active`
+
+Join friendly social volleyball games open to players of all skill levels. A great opportunity to be active, meet new people, and engage in some lighthearted competition in a community setting.
+
+### 📌 Community / Other
+
+#### [Eumundi Markets — Wednesday](https://www.eumundimarkets.com.au/)
+📆 Wed 25 Jun, 8:00 AM – 1:30 PM
+📍 Eumundi Markets, Eumundi
+💰 Free
+`market` `community` `artisan` `food` `free` `recurring`
+
+The original Eumundi Markets, open rain, hail or shine, featuring artisan makers, bakers, sewers, growers, live music, and a wonderful community atmosphere.
+
+#### [Eumundi Markets — Saturday](https://www.eumundimarkets.com.au/)
+📆 Sat 27 Jun, 8:00 AM – 1:30 PM
+📍 Eumundi Markets, Eumundi
+💰 Free
+`market` `community` `artisan` `food` `free` `recurring`
+
+The bigger Saturday edition of the famous Eumundi Markets, offering 600+ stalls of handmade crafts, local produce, fashion, food, and live music in a lively hinterland village setting.
+
+#### Free Sahaja Yoga classes
+📆 Tue 23 Jun, 6:00 PM
 📍 Parrearra
 💰 Free
 `yoga` `meditation` `wellness` `free`
 
-Free weekly Sahaja Yoga classes offering meditation and gentle movement in a community setting, open to all levels.
+Attend free, recurring Sahaja Yoga classes focused on meditation and inner peace. These community-oriented sessions are open to all levels and aim to provide a grounded wellness experience.
 
-#### ThinkChange Bike Maintenance Workshop 21st June Mudjimba
-📆 Sun 21 Jun, 1:00 PM
-📍 Mudjimba Community Hall
-💰 Check event page
-`workshop` `maintenance` `practical` `community`
+#### Sunshine Coast Collective Markets
+📆 Sat 27 Jun
+📍 Alexandra Headland
+💰 
+`market` `community` `craft` `local`
 
-A hands-on workshop focused on practical bike maintenance skills, held at the Mudjimba Community Hall.
+A vibrant market showcasing local artists, makers, and producers, offering a range of handmade goods, food, and unique finds. A social hub for the local creative community.
 
-#### [UniSC Equip workshop - Study skills](https://www.usc.edu.au/events/)
-📆 Mon 15 Jun
-📍 UniSC Moreton Bay
+#### [Caloundra Winter Lights Event](https://events.sunshinecoast.qld.gov.au/category/arts-culture/all/1)
+📆 Fri 26 Jun, 6:00 PM
+📍 Caloundra
 💰 Free
-`study skills` `workshop` `academic` `free`
+`community` `lights` `outdoor` `free`
 
-A practical workshop from UniSC focused on developing effective study techniques and academic skills, designed to enhance learning and performance.
+A free outdoor community celebration in Caloundra, designed to bring locals together for a special winter event, possibly featuring lights and entertainment.
+
+#### [SEA LIFE Sunshine Coast – Winter School Holiday Program](https://www.visitsunshinecoast.com/whats-on)
+📆 From Sat 27 Jun, 9:00 AM
+📍 SEA LIFE Sunshine Coast, Mooloolaba
+💰 Entry fee applies
+`marine life` `nature` `exhibition` `family`
+
+SEA LIFE Sunshine Coast launches its winter school holiday program, offering immersive marine exhibits and engaging experiences for ocean enthusiasts and curious minds of all ages.
+
+#### [NightQuarter Weekend Markets — Friday Night](https://tix.nightquarter.com.au/events)
+📆 Fri 26 Jun, 4:00 PM – 10:00 PM
+📍 NightQuarter, Birtinya
+💰 $5
+`market` `live_music` `food` `social` `community`
+
+An electric entertainment precinct featuring street food, live music across multiple stages, fire shows, carnival games, and roving performers, creating a festival atmosphere.
+
+#### [Winter Wunderland — Bulcock Street, Caloundra](https://allevents.in/caloundra/music)
+📆 Fri 26 Jun, 6:00 AM
+📍 Bulcock Street, Caloundra
+💰 TBC
+`community` `market` `festival` `free` `social`
+
+A winter community event on Caloundra's main street, featuring market stalls and live entertainment. While listed as 6 AM, this is an evening event; check local listings for public start times.
+
+#### [Winter Wunderland Street Party](https://events.sunshinecoast.qld.gov.au)
+📆 Fri 26 Jun, from 6:00 PM
+📍 Bulcock Street, Caloundra CBD
+💰 Free
+`community` `festival` `free` `music`
+
+Bulcock Street transforms into a festive winter wonderland with live performances, markets, local food, and even snow for a fun, free community night out.
+
+#### [STARS Alive! – Free Community Finale Event](https://www.noosaalive.com.au/)
+📆 Fri 26 Jun
+📍 Tewantin-Noosa Lions Park, Noosa River
+💰 Free
+`community` `festival` `music` `free`
+
+The closing event of Noosa Alive! Festival, featuring a talent showcase with competition finalists, family-friendly performances, and a surprise Golden Guitar-winning country music star.
+
+#### Winter Wunderland
+📆 Fri 26 Jun, 4:00 PM - 8:00 PM
+📍 Bulcock St, Caloundra
+💰 Free
+`community` `festival` `free` `outdoor`
+
+A community winter festival in Caloundra, likely featuring stalls, entertainment, and a festive atmosphere. A free event for locals to enjoy.
+
+#### [Free Family Event Under the Stars](https://events.sunshinecoast.qld.gov.au/category/arts-culture/all/1)
+📆 Sat 27 Jun, 6:00 PM
+📍 Eumundi
+💰 Free
+`community` `outdoor` `free` `family`
+
+A wholesome, free outdoor gathering under the stars in Eumundi, encouraging families and community members to bring chairs or blankets for a magical night.
+
+### 🎨 Arts / Exhibition
+
+#### [Sunshine Coast Film Festival – French Film Screening (Noosa Film Society)](https://noosafilmsoc.org/)
+📆 Wed 24 Jun, 10:00 AM
+📍 Noosa (check website)
+💰 Check website
+`film` `art` `festival` `french`
+
+Part of the Sunshine Coast Film Festival, the Noosa Film Society screens a French comedy/drama, encouraging interest in film as an art form within the community.
