@@ -2,7 +2,100 @@
   "city_key": "sunnycoast",
   "provider": "perplexity",
   "tier": "open",
-  "week_start": "2026-06-15",
-  "week_end": "2026-06-21",
-  "events": []
+  "week_start": "2026-06-29",
+  "week_end": "2026-07-05",
+  "events": [
+    {
+      "title": "Candlelight: Vivaldi’s Four Seasons",
+      "datetime": "Mon 29 Jun",
+      "location": "TBA (Candlelight Concert Series – Sunshine Coast)",
+      "link": "https://www.myguidesunshinecoast.com/events/june-2026",
+      "category": "Concert / Music",
+      "cost": "Cost TBC",
+      "source": "MyGuide Sunshine Coast",
+      "description": "Intimate candlelit classical concert featuring Vivaldi’s Four Seasons performed by a string ensemble in a boutique venue on the Sunshine Coast.",
+      "tags": [
+        "classical music",
+        "concert",
+        "intimate",
+        "candlelight"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-06-29",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Candlelight: Best of Coldplay",
+      "datetime": "Wed 1 Jul",
+      "location": "TBA (Candlelight Concert Series – Sunshine Coast)",
+      "link": "https://www.myguidesunshinecoast.com/events/june-2026",
+      "category": "Concert / Music",
+      "cost": "Cost TBC",
+      "source": "MyGuide Sunshine Coast",
+      "description": "Atmospheric tribute to Coldplay’s greatest hits arranged for classical musicians and performed in a candlelit setting on the Sunshine Coast.",
+      "tags": [
+        "tribute concert",
+        "pop",
+        "classical",
+        "candlelight"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-01",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Australian Wearable Art Festival 2026 – Preview Week Activities",
+      "datetime": "Thu 2 Jul",
+      "location": "Australian Wearable Art Festival venue, Bokarina",
+      "link": "https://www.visitsunshinecoast.com/guide/sunshine-coast-events",
+      "category": "Community / Other",
+      "cost": "Cost TBC",
+      "source": "Visit Sunshine Coast",
+      "description": "Lead-up activities and local arts happenings around the Australian Wearable Art Festival, bringing designers, performers and art lovers together on the Sunshine Coast.",
+      "tags": [
+        "art festival",
+        "community",
+        "creative",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-02",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Australian Wearable Art Festival 2026 – Community & Gallery Events",
+      "datetime": "Sat 4 Jul",
+      "location": "Australian Wearable Art Festival venue, Bokarina",
+      "link": "https://www.visitsunshinecoast.com/guide/sunshine-coast-events",
+      "category": "Arts / Exhibition",
+      "cost": "Cost TBC",
+      "source": "Visit Sunshine Coast",
+      "description": "Community exhibitions and gallery-style showcases connected to the Australian Wearable Art Festival, featuring avant-garde fashion and local creatives.",
+      "tags": [
+        "wearable art",
+        "exhibition",
+        "fashion",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-04",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
 }
