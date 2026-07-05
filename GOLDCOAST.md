@@ -1,635 +1,483 @@
 # Gold Coast — This Week's Events
-**29 June 2026 – 5 July 2026**  
-*28 top picks · 77 events total*
+**6 July 2026 – 12 July 2026**  
+*21 top picks · 58 events total*
 
 ## ⭐ Top Picks
 
-### 🎨 [This Moment: Highlights from the White Rabbit Collection](https://experiencegoldcoast.com/events/arts-and-culture)
-📆 Ongoing through 25 July 2026  
+### 🛠️ [Gin Blending Class](https://experiencegoldcoast.com/events/classes-and-workshops)
+📆 Check website for 6–12 Jul sessions  
+📍 Cauldron Distillery, Tamborine Mountain  
+💰 Check website  
+`gin` `workshop` `hands-on` `craft`
+
+An interactive one-hour workshop where participants learn about gin and then blend their own unique gin masterpiece from individually distilled botanicals, guided by distillery experts.
+
+### 🎨 [A Bigger View Exhibition](https://hota.com.au/whats-on)
+📆 Mon 6 Jul - Sun 12 Jul  
+📍 HOTA Gallery, Bundall  
+💰 Check HOTA  
+`art exhibition` `australian art` `history` `landscape`
+
+This exhibition brings together grand-scale masterpieces from the National Gallery of Australia and HOTA's local collection. It's a compelling display for those interested in art, history, and landscape painting.
+
+### 🎨 [SURFACE Festival — Street Art, Murals & Creative Precinct](https://www.theurbanlist.com/goldcoast/a-list/things-to-do-on-the-gold-coast-this-weekend)
+📆 1–19 Jul (active all week)  
+📍 Miami, Burleigh Heads & Nobbys Beach  
+💰 Free  
+`art` `community` `creative` `free`
+
+Miami and its neighbours transform into a vibrant hub of public art, community events, and live music, featuring over 50 murals, workshops, and street performances throughout July.
+
+### 🎨 ["This Moment" — White Rabbit Collection Exhibition](https://hota.com.au/whats-on/)
+📆 Daily 6–12 Jul, 10:00 AM–4:00 PM  
 📍 HOTA Gallery, Surfers Paradise  
 💰 Free  
-`art` `exhibition` `culture` `free`
+`art exhibition` `contemporary art` `culture` `free`
 
-Explore an extraordinary exhibition of bold, experimental 21st-century Chinese art from the White Rabbit Collection, addressing global themes through mesmerising light installations, powerful video art, and large-scale sculpture.
+An exhibition showcasing 35 contemporary Chinese artworks that explore identity, history, and transformation through large-scale installations, video, photography, painting, and sculpture.
 
-### 🤝 [Gold Coast Language Exchange & Social](https://www.meetup.com/en-au/gold-coast-laughter-meetup-group/)
-📆 Various this week  
-📍 Various locations, Gold Coast  
+### 🎵 [Jim Jefferies: Son of a Carpenter](https://www.star.com.au/goldcoast/whats-on)
+📆 Fri 10 Jul  
+📍 The Star Gold Coast, Broadbeach  
+💰 Ticketed  
+`comedy` `standup` `performance`
+
+Australian-American comedian Jim Jefferies brings his *Son of a Carpenter* show, featuring razor-sharp storytelling, fearless social commentary, and brazen honesty. Expect a night of classic stand-up driven by personal tales.
+
+### 🎨 [SURFACE Festival](https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-may-june-july-2026/)
+📆 Mon 6 Jul - Sun 12 Jul  
+📍 Miami, Burleigh Heads & Nobby's Beach precincts  
 💰 Free  
-`language exchange` `social` `community` `free`
+`street art` `murals` `creative` `festival` `free`
 
-Join a vibrant Gold Coast community for fun, social, and meaningful events, including language exchange meetups, BBQs, casual hangouts, and outdoor activities.
+An ongoing festival celebrating street art, music, live events, and workshops, featuring over 50 murals across Miami, Burleigh Heads, and Nobby's Beach. It's an ideal outdoor cultural immersion for creative types to explore on foot or bike.
 
-### 📌 [Gold Coast Yoga Sessions](https://www.meetup.com/en-AU/find/au--gold-coast/fitness/)
-📆 Tue 30 Jun (6:00 AM), Wed 1 Jul (12:15 PM, 5:30 PM, 7:00 PM)  
-📍 Various Gold Coast locations  
-💰 ~$6.99  
-`yoga` `wellness` `community` `movement`
-
-Participate in grounded, community-focused yoga sessions offered by the Gold Coast Yoga Lifestyle Group, with multiple weekly timeslots designed for authentic wellness and movement.
-
-### 🎵 [Cooly Hotel — Live Entertainment](https://www.thecoolyhotel.com.au/whats-on/live-entertainment/)
-📆 Tue 30 Jun, 7:00 PM  
-📍 Coolangatta Hotel, Public Bar, Coolangatta  
+### 🤝 [The One With All The Questions Trivia](https://evnts.com.au/event/the-one-with-all-the-questions-trivia-currumbin-2026/)
+📆 Tue 7 Jul, 7:00 PM  
+📍 Currumbin RSL, Currumbin  
 💰 Free  
-`live music` `free` `bar` `acoustic` `social`
+`trivia` `social` `intellectual` `free`
 
-Enjoy free live entertainment in the public bar with regular acts ranging from solo acoustic performers to bands, offering good times nightly.
+Join a fun and intellectually stimulating trivia night hosted by QuizzaMe at Currumbin RSL. Gather a team or join one on the night for an evening of questions and conversation.
 
-### 🎨 [Interactive Theatre International — Family Theatre](https://hota.com.au/whats-on)
-📆 Fri 3 Jul - Sat 4 Jul  
-📍 HOTA, Surfers Paradise  
-💰 Check HOTA website  
-`theatre` `immersive` `performance` `family`
+### 🤝 [FREE Thursday Trivia at Currumbin RSL](https://currumbinrsl.com.au/event/free-thursday-trivia-at-currumbin-rsl-2026-07-09/)
+📆 Thu 9 Jul, 7:00 PM  
+📍 Currumbin RSL, Currumbin  
+💰 Free  
+`trivia` `social` `intellectual` `free`
 
-Interactive Theatre International brings an all-ages family theatre show to HOTA, promising an immersive and participatory storytelling experience for all.
+Test your knowledge at this free weekly trivia night hosted by QuizzaMe at Currumbin RSL. A fun, social event perfect for teams or individuals looking for an intellectually engaging evening.
 
-### 🎨 [Beneath the Surface (Exhibition)](https://hota.com.au/exhibitions/beneath-the-surface)
-📆 Mon 29 Jun – Sun 5 Jul, during gallery hours  
-📍 Gallery 4, The Jreissati Family Gallery, HOTA Gallery  
+### 🤝 [Grazy Arvo with Koalas](https://experiencegoldcoast.com/events)
+📆 Mon 6 Jul  
+📍 Currumbin Wildlife Sanctuary, Currumbin  
+💰   
+`nature` `animals` `social` `currumbin`
+
+A special afternoon session at Currumbin Wildlife Sanctuary offering close encounters with koalas, complemented by food and drink stalls and a relaxed social atmosphere.
+
+### 🎵 [Scott Bradlee's Postmodern Jukebox — The Future Is Vintage Tour](https://hota.com.au/events)
+📆 Tue 7 Jul, 7:00 PM  
+📍 HOTA, Home of the Arts, Surfers Paradise  
+💰 Ticketed  
+`music` `jazz` `creative` `performance`
+
+HOTA welcomes the internationally loved vintage-pop phenomenon, known for reworking modern hits into jazz, swing, soul, and retro-inspired arrangements in their new 'The Future is Vintage' tour.
+
+### 🛠️ [Free Breakdancing Workshops — Hip Hop Heroes](https://www.insidegoldcoast.com.au/whatson)
+📆 Daily 6–11 Jul, from 10:00 AM  
+📍 Paradise Centre, Surfers Paradise  
+💰 Free  
+`dance` `workshop` `free` `community`
+
+The Hip Hop Heroes offer free, all-ages breakdancing workshops daily from 6–11 July. This cultural and movement experience is open to everyone interested in learning hip hop dance.
+
+### 🎨 ['This Moment' — White Rabbit Collection at HOTA Gallery](https://hota.com.au/events)
+📆 Daily until 11 Oct, 10:00 AM – 4:00 PM  
+📍 HOTA Gallery, Surfers Paradise  
 💰 Free  
 `art` `exhibition` `contemporary` `free`
 
-Explore this captivating exhibition featuring diverse artworks that delve into hidden narratives and unseen layers of human experience. Runs through July 5th.
+This exhibition gathers 35 artworks from 25 leading contemporary Chinese artists, offering a powerful snapshot of creativity and culture across 21st-century China, with public talks and tours available.
 
-### 🎨 [Aka Sorbie: Saltwater Heart (Exhibition)](https://hota.com.au/exhibitions/aka-sorbie-saltwater-heart)
-📆 Mon 29 Jun – Sun 5 Jul, during gallery hours  
-📍 HOTA Gallery  
+### 🎨 [Tom Gleeson: Out of Touch](https://hota.com.au/events)
+📆 Fri 10 Jul, 7:00 PM  
+📍 HOTA, Home of the Arts, Surfers Paradise  
+💰 Ticketed  
+`comedy` `stand-up` `performance` `humour`
+
+One of Australia's sharpest comedians, Tom Gleeson, brings his latest stand-up show, 'Out of Touch,' to HOTA for a night of dry wit and no-nonsense comedy.
+
+### 🛠️ [Life Drawing with Live Music](https://www.miamimarketta.com/ticketed-events)
+📆 Week of 6–12 Jul (check website)  
+📍 Studio 56, Miami Marketta, Miami  
+💰 Check website  
+`art` `life drawing` `creative` `hands-on`
+
+A curated evening of life drawing accompanied by live music, offering an experience for both seasoned artists and those new to the practice.
+
+### 🎵 [Postmodern Jukebox](https://hota.com.au/whats-on/)
+📆 Tue 7 Jul (check website for time)  
+📍 HOTA, Surfers Paradise  
+💰 Ticketed (check website)  
+`music` `jazz` `performance` `ticketed`
+
+An internationally loved vintage-pop phenomenon reimagining modern hits into jazz, swing, soul, and other retro-inspired arrangements.
+
+### 🤝 [Gold Coast TechSpace — Wednesday Hack Night](https://gctechspace.org/meetings-and-events/)
+📆 Wed 8 Jul, 7:00 PM  
+📍 Gold Coast TechSpace, Mudgeeraba  
+💰 Free / low cost for members  
+`tech` `maker space` `community` `hackerspace` `free`
+
+A weekly "hack night" for makers and hackers at Gold Coast's community MakerSpace, HackerSpace, and Education Centre, often featuring other tech-focused meetups like Javascript or IoT.
+
+### 🤝 [Gold Coast Board Games Club Meetup](https://www.meetup.com/gold-coast-board-games-club/)
+📆 Check Meetup for July sessions  
+📍 Various Gold Coast venues (check Meetup)  
+💰 Free / low cost  
+`board games` `social` `community` `meetup`
+
+A social club for adults to play modern board games like Settlers of Catan and Ticket to Ride, fostering interaction and fun within the community.
+
+### 🎨 [This Moment: Highlights from the White Rabbit Collection](https://hota.com.au/whats-on)
+📆 Mon 6 Jul - Sat 11 Jul  
+📍 HOTA Gallery, Bundall  
 💰 Free  
-`art` `indigenous art` `exhibition` `free`
+`art exhibition` `chinese art` `contemporary art` `culture` `free`
 
-An exhibition by artist Aka Sorbie exploring the deep connection to saltwater country and Indigenous heritage through powerful visual storytelling. Runs through August.
+A major exhibition at HOTA Gallery featuring 35 contemporary artworks from 25 leading Chinese artists, including large-scale installations, video, and sculpture. Offers a rare opportunity to explore one of the world's significant collections of contemporary Chinese art.
 
-### 🎨 [Signor Baffo](https://hota.com.au/whats-on/)
-📆 Fri 3 Jul – Sat 4 Jul  
-📍 HOTA, Home of the Arts  
-💰 Cost Varies  
-`theatre` `performance` `interactive` `experimental`
-
-An interactive and experimental performance, likely offering a unique theatrical experience.
-
-### 🎵 [K-Pop Icons](https://hota.com.au/whats-on/)
-📆 Sat 4 Jul  
-📍 HOTA, Home of the Arts  
-💰 Cost Varies  
-`kpop` `music` `performance` `pop culture`
-
-Experience a high-energy performance celebrating K-Pop music and culture.
-
-### 🎨 [Fenceline Exhibition](https://www.insidegoldcoast.com.au/event/surface-festival-2026/)
-📆 Wed 1 Jul - Sun 5 Jul (ongoing)  
-📍 Miami streets (various locations)  
+### 📌 [NAIDOC Celebration March](https://www.goldcoast.qld.gov.au/Things-to-do/Gold-Coast-Events-Calendar)
+📆 Fri 10 Jul, 10:00 AM  
+📍 Queen Elizabeth Park, Coolangatta  
 💰 Free  
-`art` `street art` `exhibition` `free`
+`community` `naidoc` `culture` `march` `outdoor` `free`
 
-A dynamic street art exhibition featuring local artists, community events, live performances, and interactive experiences throughout the Miami creative precinct as part of SURFACE Festival.
+A meaningful community march from Queen Elizabeth Park to Chris Cunningham Park in Coolangatta, marking NAIDOC Week. Join for a walk through a beautiful coastal area to celebrate Indigenous culture.
 
-### 🤝 [Guided Artwalks](https://www.insidegoldcoast.com.au/event/surface-festival-2026/)
-📆 Sun 5 Jul, 1:00 PM  
-📍 Miami (starting point to be confirmed)  
-💰 To be confirmed  
-`art` `walk` `community` `social`
-
-Guided walking tours to discover the stories behind street artworks, meet artists in action, and experience the creative heart of Miami as part of SURFACE Festival.
-
-### 🎨 ["HOTA Collects: Metamorphosis"](https://hota.com.au/whats-on/exhibitions/hota-collects-metamorphosis)
-📆 Wed 1 Jul - Sun 5 Jul (ongoing)  
+### 🎨 [Aka Sorbie: Saltwater Heart](https://experiencegoldcoast.com/events)
+📆 Mon 6 Jul  
 📍 HOTA Gallery, Surfers Paradise  
-💰 To be confirmed  
-`art` `exhibition` `australian art` `identity`
+💰   
+`art` `exhibition` `culture`
 
-An exhibition featuring works by over thirty Australian artists from the HOTA Collection, exploring ideas of identity, memory, and perception through transformative methods like collage and assemblage.
+A contemporary art exhibition by Aka Sorbie, exploring saltwater Country, heart, and identity through works grounded in coastal and oceanic themes at HOTA Gallery.
 
-### 🤝 Movie Appreciation Group: The Christophers
-📆 Thu 2 Jul, 10:30 AM  
-📍 To be confirmed  
-💰 To be confirmed  
-`film` `discussion` `community` `social`
+### 🎵 [Koi Sunset Sessions](https://experiencegoldcoast.com/events)
+📆 Mon 6 Jul  
+📍 Koi Dining & Lounge Bar, Broadbeach  
+💰   
+`music` `social` `lounge` `broadbeach`
 
-A gathering for movie enthusiasts to discuss and appreciate films, organised by the Power of Women over Sixty Gold Coast Meetup group.
-
-### 🎵 [Miami Marketta Open Mic Night](https://www.miamimarketta.com/ticketed-events)
-📆 Monthly (check this week's schedule)  
-📍 Miami Marketta – Cargo Stage, Miami  
-💰 Free  
-`music` `open mic` `performance` `creative` `free`
-
-Showcase your talent or support local artists at Miami Marketta's monthly Open Mic Night on the eclectic Cargo Stage, with performances kicking off from 6pm.
-
-### 🎨 [SURFACE Festival 2026](https://www.insidegoldcoast.com.au/whatson/surface-festival-miami-street-art-festival)
-📆 Wed 1 Jul - Sun 5 Jul  
-📍 Miami precinct, Burleigh Heads & Nobby's Beach, Miami  
-💰 Free  
-`street art` `festival` `creative` `free`
-
-SURFACE Festival celebrates street art, music, and live events with over 50 murals across Miami, Burleigh Heads, and Nobby's Beach, encouraging self-guided exploration of the creative precinct.
-
-### 🎵 [Alan Fletcher & Riley Catherall — Live at Mo's Desert Clubhouse](https://www.songkick.com/metro-areas/26785-australia-gold-coast)
-📆 Sun 5 Jul, 3:00 PM  
-📍 Mo's Desert Clubhouse, Gold Coast  
-💰 Check venue  
-`live music` `indie music` `folk`
-
-Alan Fletcher and Riley Catherall perform a laid-back live music afternoon at Mo's Desert Clubhouse, a well-known independent venue.
-
-### 📌 [Go Gold Coast Month — Community Outdoor Activities](https://www.goldcoast.qld.gov.au/Things-to-do/Go-Gold-Coast-Month/Go-Gold-Coast-Month-calendar)
-📆 Wed 1 Jul - Sun 5 Jul  
-📍 Various Gold Coast locations  
-💰 Free / Low cost  
-`outdoor` `community` `fitness` `social` `free`
-
-Go Gold Coast Month encourages community participation in various outdoor activities across the city throughout July, aiming to inspire active lifestyles and social engagement.
-
-### 🤝 [Social Games at Broadbeach](https://www.goldcoast.qld.gov.au/whats-on#/?i=1)
-📆 Mon 29 Jun, 11:00 AM - 12:30 PM  
-📍 Broadbeach Library  
-💰 Free  
-`games` `social` `community` `free`
-
-Join other community members for a session of social board games and card games in a relaxed library setting. It's a great opportunity to meet new people and engage in friendly competition.
-
-### 🎨 [This Moment: Highlights from the White Rabbit Collection of Chinese Contemporary Art (Exhibition)](https://hota.com.au/exhibitions/)
-📆 Mon 29 Jun – Sun 5 Jul, during gallery hours  
-📍 HOTA Gallery  
-💰 Free  
-`art` `exhibition` `chinese art` `free`
-
-Discover a significant collection of Chinese contemporary art from the renowned White Rabbit Collection, showcasing works that reflect on modern Chinese society and culture. Runs through October.
-
-### 🎨 [Loving: Photographs of Men in Love 1850s-1950s (Exhibition)](https://hota.com.au/exhibitions/)
-📆 Mon 29 Jun – Sun 5 Jul, during gallery hours  
-📍 HOTA Gallery  
-💰 Free  
-`photography` `history` `culture` `free`
-
-A poignant exhibition presenting a collection of private photographs depicting intimate moments between men from the 19th and mid-20th centuries, exploring hidden histories and expressions of love.
-
-### 🛠️ [Drop-In, Do Art!!!](https://hota.com.au/whats-on/)
-📆 Mon 29 Jun – Fri 3 Jul, during gallery hours  
-📍 HOTA Gallery  
-💰 Free  
-`art` `workshop` `drop-in` `free`
-
-A casual, hands-on art-making session where you can explore your creativity with various materials and techniques. No prior experience is needed, just drop in and get creative.
-
-### 🎨 [5th National Indigenous Art Triennial: After The Rain (Exhibition)](https://hota.com.au/exhibitions/)
-📆 Sat 4 Jul – Sun 5 Jul, during gallery hours  
-📍 HOTA Gallery  
-💰 Free  
-`indigenous art` `exhibition` `contemporary` `free`
-
-The prestigious 5th National Indigenous Art Triennial showcases contemporary Indigenous art from across Australia, exploring themes of resilience, cultural connection, and environmental issues. This exhibition opens during the specified week.
-
-### 📌 [Gold Coast Whale & Ocean Festival](https://www.experiencegoldcoast.com/what-to-do/events/gold-coast-whale-ocean-festival)
-📆 Sun 5 Jul, 9:30 AM  
-📍 Justins Park, Burleigh Heads  
-💰 Free  
-`nature` `conservation` `community` `free`
-
-A community festival celebrating marine life and ocean conservation, likely featuring educational stalls, environmental talks, and family-friendly activities.
-
-### 🎨 [Comedy Underground](https://www.goldcoast.qld.gov.au/whats-on)
-📆 Sat 4 Jul  
-📍 Gold Coast  
-💰 Cost Varies  
-`comedy` `standup` `live` `performance`
-
-A weekly stand-up comedy night featuring local and touring comedians, offering a chance to discover new talent in a more intimate setting.
-
-### 📌 [Overspray – Presented by Santa Cruz](https://www.insidegoldcoast.com.au/event/surface-festival-2026/)
-📆 Sun 5 Jul, 3:00 PM (doors open)  
-📍 Miami creative precinct (To be confirmed)  
-💰 To be confirmed  
-`community` `art` `music` `skateboarding`
-
-A high-energy afternoon celebrating community, creativity, and culture, featuring art, live music, and skateboarding, presented as part of SURFACE Festival.
-
-### 🤝 Wednesday 11am (new time) C C at the Yacht Club
-📆 Wed 1 Jul, 11:00 AM  
-📍 Gold Coast Yacht Club  
-💰 To be confirmed  
-`social` `community` `meetup`
-
-A social gathering at the Gold Coast Yacht Club, organised by a local Meetup group, offering an opportunity for casual conversation and community.
-
-### 🤝 [Meet People Social (International Language Exchange + New Friends Event)](https://www.makelifehappenevents.com/meet-people-social-events-gold-coast/)
-📆 Fri 3 Jul, 6:00 PM (Weekly)  
-📍 Goldie's (expected venue)  
-💰 $5  
-`language exchange` `social` `community` `culture`
-
-A weekly social event welcoming locals, travelers, expats, and international students to practice languages, make new friends, and engage in cultural exchange.
-
-### 📌 Just Roll With It (Inclusive Skateboarding Event)
-📆 Sat 4 Jul  
-📍 To be confirmed  
-💰 To be confirmed  
-`skateboarding` `community` `inclusive` `workshop`
-
-Australia's premier inclusive skateboarding event, featuring clinics, jams, and competitions for all abilities, promoting community and activity as part of Go Gold Coast Month.
+Ongoing sunset music sessions at Koi Dining & Lounge Bar, featuring DJs or live music in a waterfront lounge setting, with drinks and share plates available.
 
 ## 📋 All Events
 
+### 🎨 Arts / Exhibition
+
+#### [Aka Sorbie: Saltwater Heart — Children's Gallery at HOTA](https://hota.com.au/events)
+📆 Daily until 16 Aug, 10:00 AM – 4:00 PM
+📍 HOTA, Surfers Paradise
+💰 Free
+`art` `exhibition` `first nations` `family` `free`
+
+An immersive children's exhibition by First Nations artist Lisa Sorbie Martin, bringing memories of her Torres Strait childhood to life through ocean-inspired art and interactive play, connecting families with First Nations culture.
+
+#### [SURFACE Festival — Street Art & Murals](https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-may-june-july-2026/)
+📆 Ongoing 6–12 Jul
+📍 Miami, Burleigh Heads & Nobby's Beach precincts
+💰 Free (most events)
+`street art` `murals` `creative` `festival`
+
+A festival celebrating street art, music, and creative culture with over 50 murals across Miami, Burleigh Heads, and Nobby's Beach, plus live events and workshops. Great for exploring on foot or bike.
+
+#### [Flora: Nature's Gift - a BASA Exhibition](https://botanicalartsocietyofaustralia.com/event-5727787)
+📆 Mon 6 Jul - Sun 12 Jul, 9:00 AM - 3:00 PM
+📍 RQAS 'Red Wall' Gallery, Broadbeach
+💰 Free
+`art` `exhibition` `botanical` `free`
+
+Explore an exhibition by the Botanical Art Society of Australia (BASA) at the RQAS 'Red Wall' Gallery, showcasing various artistic interpretations of nature's flora. A chance to appreciate creative botanical art.
+
+#### [Sleeping Beauty — The Pantomime](https://www.thegcminute.com.au/p/school-holiday-fun-loading)
+📆 Until Sat 11 Jul (multiple sessions)
+📍 Spotlight Theatre Basement, Benowa
+💰 Ticketed
+`theatre` `performance` `comedy` `family`
+
+A family-friendly pantomime at Spotlight Theatre Basement, Benowa, featuring comedy, music, and audience participation, with multiple morning and afternoon sessions running until 11 July.
+
+#### [HOTA Cinema — Free Screening](https://hota.com.au/whats-on/cinema)
+📆 Tue 7 Jul, 10:00 AM
+📍 HOTA Cinema, Bundall
+💰 Free
+`film screening` `cinema` `arts` `free`
+
+HOTA Cinema offers a free film screening on Tuesday morning, providing a curated, arts-house alternative for film lovers. Multiple other ticketed sessions run daily throughout the week.
+
+#### [This Moment: Highlights from the White Rabbit Collection of Chinese Contemporary Art](https://experiencegoldcoast.com/events)
+📆 Mon 6 Jul
+📍 HOTA Gallery, Surfers Paradise
+💰 
+`art` `exhibition` `chinese art` `contemporary`
+
+A major exhibition at HOTA Gallery showcasing leading Chinese contemporary artists from the White Rabbit Collection, featuring works in painting, installation, and new media.
+
+#### [SURFACE Festival – Miami Street Art Program](https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-may-june-july-2026)
+📆 Mon 6 Jul
+📍 Miami streets and laneways (Fence Line Exhibition), Miami
+💰 Free
+`street art` `festival` `art` `workshop`
+
+Part of the SURFACE Festival, this program offers self-guided and hosted walks along the Fence Line Exhibition in Miami, showcasing murals and street art, with additional workshops available.
+
 ### 🎵 Concert / Music
 
-#### [Alan Fletcher + Riley Catherall Live](https://www.songkick.com/metro-areas/26785-australia-gold-coast/2026)
-📆 Sun 5 Jul
-📍 Mo's Desert Clubhouse, Gold Coast
-💰 Ticketed
-`music` `indie` `live` `intimate`
-
-Experience an intimate live performance by Alan Fletcher and Riley Catherall at Mo's Desert Clubhouse, a local venue known for its indie/alternative and community music scene.
-
-#### [Gold Coast Chamber Orchestra Performance](https://www.insidegoldcoast.com.au/whatson)
-📆 This week (check exact date)
+#### [Gold Coast Chamber Orchestra — French & Russian Traditions](https://www.insidegoldcoast.com.au/whatson)
+📆 Sat 11 Jul, 7:00 PM
 📍 University Club, Bond University, Robina
-💰 Check venue
-`music` `classical` `chamber` `artistic`
-
-Enjoy an intimate chamber music performance by the Gold Coast Chamber Orchestra, celebrating the lyrical beauty and rich colours of French and Russian musical traditions.
-
-#### [Velvet Jazz Night](https://www.theurbanlist.com/goldcoast/a-list/things-to-do-on-the-gold-coast-this-weekend)
-📆 Recurring (check for date this week)
-📍 Mondrian Hotel, Surfers Paradise
 💰 Ticketed
-`jazz` `music` `live` `atmosphere`
+`music` `classical` `chamber` `performance`
 
-Indulge in a sultry evening of live jazz at Mondrian Gold Coast, featuring acclaimed vocalist Ashleigh Denning with a five-piece band, welcomed with champagne on arrival.
+An intimate chamber performance by the Gold Coast Chamber Orchestra at Bond University, celebrating the lyrical beauty and rich colours of French and Russian musical traditions.
 
-#### [Good Company Entertainment — Live Gig](https://hota.com.au/whats-on)
-📆 Fri 3 Jul - Sat 4 Jul
-📍 HOTA, Surfers Paradise
-💰 Check HOTA website
-`live music` `all ages` `performance`
-
-Good Company Entertainment presents an all-ages live music performance at HOTA, running across Friday and Saturday evenings.
-
-#### [Red Entertainment — Family Music](https://hota.com.au/whats-on)
-📆 Sat 4 Jul, 11:00 AM
-📍 HOTA, Surfers Paradise
-💰 Check HOTA website
-`music` `family` `performance`
-
-Red Entertainment presents an all-ages family music and theatre event at HOTA, designed for enjoyable creative engagement.
-
-#### [Eli Iwasa — Live at Superbar](https://www.songkick.com/metro-areas/26785-australia-gold-coast)
-📆 Fri 3 Jul, 8:00 PM
-📍 Superbar, Gold Coast
-💰 Check venue
-`indie music` `live music` `intimate`
-
-Eli Iwasa performs live at Superbar, one of the Gold Coast's indie music venues, for an intimate evening gig.
-
-#### [The Big Chillout: Motown Spectacular](https://hota.com.au/whats-on/)
-📆 Fri 3 Jul
-📍 HOTA, Home of the Arts
-💰 Cost Varies
-`motown` `music` `live` `performance`
-
-Enjoy a vibrant evening of Motown classics performed live, promising a nostalgic and energetic atmosphere.
-
-#### [Miami Marketta Street Food & Live Music](https://www.miamimarketta.com)
-📆 Wed 1 Jul – Sat 4 Jul, 5:00 PM onwards
+#### [Miami Marketta — Live Music & Street Food Night (Wednesday)](https://www.miamimarketta.com)
+📆 Wed 8 Jul, 5:00 PM
 📍 Miami Marketta, Miami
 💰 Free
-`music` `live` `food` `social` `free`
+`live music` `food market` `community` `free`
 
-Immerse yourself in the vibrant atmosphere of Miami Marketta, offering free entry to enjoy diverse street food and live music ranging from intimate gigs to laneway performances, comedy, and cabaret.
+A vibrant midweek street food and live music market featuring global food vendors, boutique bars, and local musical acts. A casual, social atmosphere perfect for a relaxed evening.
 
-#### [Clash of the Keys – Cassidy Rae & Jake Bristow](https://www.eventbrite.com.au/d/australia--gold-coast/events/)
-📆 This week (check listing)
-📍 Gold Coast (check listing)
-💰 Free
-`music` `piano` `live` `free`
-
-Enjoy a free, intimate piano performance event featuring local artists Cassidy Rae and Jake Bristow in 'Clash of the Keys', showcasing their musical talent.
-
-#### [Nightjar Burleigh — Live Music / DJ](https://nightjar.com.au)
-📆 Thu 2 Jul, 8:00 PM
+#### [Nightjar Dive Bar — Live Music & DJs](https://www.nightjar.com.au)
+📆 Thu 9 Jul – Sun 12 Jul, 7:00 PM (Thu-Sat), 6:00 PM (Sun)
 📍 Nightjar, Burleigh Heads
-💰 Free
-`live music` `bar` `free` `subculture` `social`
+💰 Free entry
+`live music` `rock` `dive bar` `free`
 
-Experience Burleigh's back-alley dive bar with a laid-back, anti-establishment vibe, featuring live music or a DJ nightly with a focus on rock ballads.
+A gritty garage dive bar hosting live music and DJ performances with a focus on rock ballads, providing an authentic and intimate atmosphere.
 
-#### [Gold Coast Jazz & Blues Club — Live Gig](https://hota.com.au/whats-on)
-📆 Fri 3 Jul, 7:00 PM
-📍 HOTA, Surfers Paradise
-💰 Check HOTA website
-`jazz` `blues` `live music` `community`
+#### [Festival of Fun 2026 – Tony Dee Concert Day](https://www.instagram.com/reel/DZ7HXNJiSvi/)
+📆 Thu 9 Jul
+📍 Gold Coast
+💰 
+`music` `festival` `community` `accessible`
 
-The Gold Coast Jazz and Blues Club presents an all-ages live gig at HOTA, offering a chance to enjoy jazz and blues music in an intimate, community-focused setting.
+A day within the Festival of Fun featuring a concert by Tony Dee, offering inclusive and accessible entertainment with various activities from 9am and concert doors from midday.
 
-#### [Gold Coast Chamber Orchestra at Bond University](https://www.insidegoldcoast.com.au/whatson)
-📆 Mon 29 Jun - Sun 5 Jul
-📍 University Club, Bond University, Robina
-💰 Check website
-`classical music` `orchestra` `intimate`
-
-Join the Gold Coast Chamber Orchestra at Bond University for an intimate chamber performance celebrating French and Russian musical traditions.
-
-#### [Gold Coast Jazz & Blues Club: Midnight in Montparnasse](https://hota.com.au/whats-on/)
-📆 Wed 1 Jul
-📍 HOTA, Home of the Arts
-💰 Cost Varies
-`jazz` `music` `live` `intimate`
-
-An evening of live jazz and blues music presented by the Gold Coast Jazz & Blues Club. Expect an intimate atmosphere and high-quality musical performance.
-
-#### [Melissa Western - Midnight in Montparnasse (Jazz)](https://www.eventfinda.com.au/2026/melissa-western-midnight-in-montparnasse/gold-coast)
-📆 Wed 1 Jul, 7:30 PM
-📍 HOTA, Home of the Arts, Surfers Paradise
-💰 To be confirmed
-`jazz` `music` `live music` `concert`
-
-An evening of live jazz music featuring Melissa Western, providing a strong atmosphere and artistic value.
-
-#### [Gig Factory @ Coolangatta Hotel](https://coolyhotel.oztix.com.au/)
-📆 Sat 4 Jul, 7:00 PM
+#### [Legends of Fleetwood Mac Tribute](https://www.thecoolyhotel.com.au/whats-on/)
+📆 Sun 12 Jul, 4:30 PM
 📍 Coolangatta Hotel, Coolangatta
+💰 Check ticketing
+`music` `tribute` `live performance`
+
+A live tribute performance celebrating the iconic sound and enduring legacy of Fleetwood Mac, held at the Coolangatta Hotel.
+
+#### [Comedy Underground](https://experiencegoldcoast.com/events)
+📆 Sun 12 Jul
+📍 Gold Coast
+💰 
+`comedy` `standup` `performance` `nightlife`
+
+A weekly underground comedy night showcasing local and touring stand-up comedians in an intimate, basement-style setting on the Gold Coast.
+
+#### [Engelbert Humperdinck: The Celebration Tour](https://experiencegoldcoast.com/events/engelbert-humperdinck)
+📆 Mon 6 Jul, 7:00 PM
+📍 The Star Gold Coast, Broadbeach
 💰 Ticketed
-`indie music` `live music` `concert` `ticketed`
+`music` `concert` `mainstream`
 
-Catch emerging and established local talent at the Gig Factory event, showcasing live music at one of Australia's best live entertainment venues.
+The legendary 'King of Romance' brings his celebration tour to The Star Gold Coast for a night of timeless ballads and classic hits like 'Release Me' and 'The Last Waltz'.
 
-#### [Koi Sunset Sessions](https://experiencegoldcoast.com/events)
-📆 Mon 29 Jun, 5:00 PM
-📍 Gold Coast waterfront venue
-💰 Cost of purchase
-`music` `social` `indie` `evening`
+#### [Gig Factory](https://coolyhotel.oztix.com.au/)
+📆 Fri 10 Jul (check website for time)
+📍 Coolangatta Hotel, Coolangatta
+💰 Check Oztix
+`live music` `gig` `performance`
 
-Recurring sunset music sessions featuring DJs or live acts in a relaxed waterfront setting, continuing throughout winter.
+A live music event at the Coolangatta Hotel, showcasing performances from local and international acts in one of Australia's recognised live entertainment venues.
 
 ### 🤝 Social / Meetup
 
-#### [Gold Coast Toastmasters Weekly Meeting](https://www.meetup.com/gold-coast-toastmasters/)
-📆 Wed 1 Jul, 12:00 PM – 1:10 PM
-📍 The Old Post Office, Mudgeeraba
-💰 Free
-`public speaking` `community` `social` `free`
+#### [Tuesday Drag Bingo](https://www.thecoolyhotel.com.au/whats-on/live-entertainment/)
+📆 Tue 8 Jul, 6:00 PM
+📍 Coolangatta Hotel, Coolangatta
+💰 Free / low cost
+`social` `drag` `bingo` `performance`
 
-Learn and practice public speaking in a supportive environment with Toastmasters, where members share insights and techniques to build confidence and leadership skills every Wednesday.
+A fierce and fun Tuesday night event combining bingo with drag queen performances and a lively social atmosphere.
 
-#### [Gold Coast Active & Social Meetup](https://www.meetup.com/gold-coast-active-and-social-meetup-group/)
-📆 Various days this week
-📍 Various, Gold Coast
-💰 $2 suggested donation
-`social` `meetup` `community` `active`
-
-Connect with like-minded individuals through a wide range of community-focused social events and activities designed for interaction and making new friends.
-
-#### [Cooly Hotel — Musical Bingo](https://www.thecoolyhotel.com.au/whats-on/)
-📆 Thu 2 Jul, 6:00 PM
+#### [Monday Trivia Night](https://www.thecoolyhotel.com.au/whats-on/live-entertainment/)
+📆 Mon 6 Jul, 6:30 PM
 📍 Coolangatta Hotel, Coolangatta
 💰 Free
-`social` `music trivia` `community` `free` `games`
+`trivia` `social` `games` `intellectual` `free`
 
-A fun, recurring weekly event combining music trivia with bingo, offering a relaxed pub atmosphere great for meeting locals.
+A weekly trivia night to gather friends and test knowledge, offering a fun and competitive intellectual social event.
 
-#### [Cooly Hotel — Trivia Night](https://www.thecoolyhotel.com.au/whats-on/)
-📆 Mon 29 Jun, 6:30 PM
+#### [Language Exchange at Carrara](https://www.meetup.com/venture-gold-coast-language-exchange/events/)
+📆 Wed 8 Jul, 6:30 PM
+📍 Venture Gold Coast, Carrara
+💰 Free
+`language` `social` `community` `free`
+
+Join a friendly language exchange group at Venture Gold Coast, where you can practice new languages, meet people from diverse backgrounds, and engage in cross-cultural conversations.
+
+#### [Gold Coast Social and Language Exchange (Make New Friends)](https://www.eventbrite.com.au/e/gold-coast-social-and-language-exchange-make-new-friends--tickets-900388277277)
+📆 Fri 10 Jul, 6:00 PM
+📍 Goldie's, Gold Coast
+💰 From $7.66
+`language` `social` `meetup` `community`
+
+Join this social and language exchange meetup to practice various languages, meet new people, and expand your social circle in a friendly Gold Coast setting.
+
+#### [Christmas in July — D'Arcy Arms Irish Pub](https://www.theurbanlist.com/goldcoast/a-list/things-to-do-on-the-gold-coast-this-weekend)
+📆 All of Jul (book this week)
+📍 D'Arcy Arms Irish Pub, Gold Coast
+💰 $55 adult, $27.50 child
+`social` `food` `community` `dining`
+
+Gold Coast's historic D'Arcy Arms Irish Pub transforms into a festive wonderland, offering a two-course Christmas in July feast with roast turkey, pork, and ham; pre-booking required.
+
+#### [Musical Bingo](https://www.thecoolyhotel.com.au/whats-on/live-entertainment/)
+📆 Thu 9 Jul, 6:00 PM
 📍 Coolangatta Hotel, Coolangatta
-💰 Free
-`trivia` `social` `community` `free` `intellectual`
+💰 Free / low cost
+`social` `music` `games` `community`
 
-A recurring weekly trivia night perfect for gathering your crew and enjoying a relaxed, intellectually fun evening while meeting locals.
-
-#### [Miami Marketta Record Fair](https://www.insidegoldcoast.com.au/event/surface-festival-2026/)
-📆 Thu 2 Jul, 5:00 PM
-📍 Miami Marketta
-💰 Free (entry)
-`music` `vinyl` `market` `social`
-
-A special Record Fair at Miami Marketta, where vinyl lovers can explore rare finds, classics, and collector favorites from various sellers, as part of SURFACE Festival.
-
-#### LUNCH @ HOTEL PACIFIC - AUSTRALIA FAIR
-📆 Wed 1 Jul, 12:30 PM
-📍 Hotel Pacific, Australia Fair
-💰 Cost of lunch
-`social` `community` `meetup` `lunch`
-
-A social lunch gathering organised by the Power of Women over Sixty Gold Coast Meetup group, offering a chance for community interaction.
-
-#### Saturday Board Games Night
-📆 Sat 4 Jul, 6:00 PM
-📍 The Old Post Office, Mudgeeraba
-💰 To be confirmed
-`board games` `social` `community` `meetup`
-
-A social evening for board game enthusiasts to play games, meet new people, and engage with the local board gaming community.
-
-#### [Seafood Sundays at Maggie Choo](https://experiencegoldcoast.com/events)
-📆 Sun 5 Jul, 6:00 PM
-📍 Maggie Choo, Gold Coast
-💰 Cost of purchase
-`food` `social` `dining` `community`
-
-A weekly Sunday seafood social event offering dining and a vibrant bar atmosphere at Maggie Choo.
-
-#### [Cooly Hotel — Drag Bingo](https://www.thecoolyhotel.com.au/whats-on/)
-📆 Tue 30 Jun, 6:00 PM
-📍 Coolangatta Hotel, Coolangatta
-💰 Free
-`social` `performance` `community` `free` `lgbtqia+`
-
-A fun, inclusive weekly event featuring drag performance and interactive bingo, making Tuesday nights fierce and entertaining.
-
-#### [Grazy Arvo with Koalas at Currumbin Wildlife Sanctuary](https://experiencegoldcoast.com/events)
-📆 Mon 29 Jun, 3:00 PM
-📍 Currumbin Wildlife Sanctuary, Currumbin
-💰 Ticketed
-`animals` `social` `nature` `food`
-
-An afternoon social event offering grazing platters and close encounters with koalas, held at Currumbin Wildlife Sanctuary.
-
-#### [Dreamworld Night Market](https://experiencegoldcoast.com/events)
-📆 Fri 3 Jul, 5:00 PM
-📍 Dreamworld, Coomera
-💰 Varies
-`market` `food` `community` `music`
-
-A weekly night market featuring street food, live entertainment, and various stalls at Dreamworld, running on Friday evenings.
-
-#### [Surfers Paradise Beachfront Markets](https://www.whatsongoldcoast.au/Home)
-📆 Wed 1 Jul, 4:00 PM
-📍 Surfers Paradise Foreshore, Surfers Paradise
-💰 Varies
-`market` `craft` `food` `community` `free entry`
-
-Beachfront evening markets featuring local artisans, food stalls, and live buskers along the Surfers Paradise foreshore.
-
-### 🎓 Public Lecture
-
-#### [Meet the Author: Sarah Bailey](https://www.goldcoast.qld.gov.au/libraries/Whats-on/Meet-an-Author-Sarah-Bailey-1983230409542)
-📆 This week (likely Tue/Wed), 6:30 PM
-📍 Broadbeach Library, Broadbeach
-💰 Free
-`author talk` `literature` `crime fiction` `free`
-
-Join best-selling crime author Sarah Bailey for a discussion about her new novel Click, with opportunities to borrow or buy a signed copy, and a community meetup beforehand.
-
-#### [Connect & Learn: All About Adult ADHD](https://www.eventbrite.com.au/d/australia--gold-coast/events/)
-📆 This week (check Eventbrite)
-📍 Gold Coast (check listing)
-💰 Check Eventbrite
-`psychology` `neurodiversity` `health` `lecture`
-
-Attend an intellectually grounded health talk by Dr. Limor Theedar focused on understanding adult ADHD, exploring psychology and neurodiversity for a thoughtful audience.
-
-#### [National Indigenous Business School Queensland](https://bond.edu.au/events)
-📆 Sun 5 Jul, 3:00 PM
-📍 Bond University
-💰 Cost Varies
-`indigenous culture` `business` `education` `community`
-
-An event related to Indigenous business and entrepreneurship, likely featuring presentations or networking opportunities for community members.
-
-#### [Artists Talk: Tony Albert, Dylan Mooney & Warraba Weatherall](https://hota.com.au/whats-on)
-📆 Sat 4 Jul, 10:00 AM
-📍 HOTA, Surfers Paradise
-💰 Free
-`art` `first nations` `talk` `free` `culture`
-
-A free HOTA Talks & Ideas session featuring leading First Nations artists Tony Albert, Dylan Mooney, and Warraba Weatherall in conversation with Adam Ford, discussing their work and ideas in an open forum.
-
-#### [HOTA Ideas: After the Rain with Tony Albert, Dylan Mooney and Warraba Weatherall with Adam Ford](https://hota.com.au/whats-on/)
-📆 Sat 4 Jul
-📍 HOTA, Home of the Arts
-💰 Free
-`indigenous culture` `panel` `art` `free`
-
-A panel discussion featuring artists and thinkers Tony Albert, Dylan Mooney, and Warraba Weatherall, facilitated by Adam Ford, exploring themes related to the "After The Rain" exhibition and Indigenous perspectives.
-
-### 🎨 Arts / Exhibition
-
-#### [Art Yarramunua Gallery — Exclusive Art Sale](https://artyarramunua.com.au)
-📆 Mon 29 Jun – Sun 5 Jul
-📍 Art Yarramunua Gallery, Burleigh Heads
-💰 Free
-`art exhibition` `indigenous art` `gallery` `free` `local art`
-
-An Indigenous and local art gallery in Burleigh Heads currently hosting an exclusive art sale with up to 50% off all artwork, great for a walk-in visit.
-
-#### [Dust Temple — Open Cafe & Gallery](https://dusttemple.com.au)
-📆 Mon 29 Jun, 7:30 AM
-📍 Dust Temple, Currumbin Waters
-💰 Free
-`art gallery` `cafe` `community` `free` `creative space`
-
-Visit this creative community space housed in an old warehouse, offering a popular cafe serving great coffee and pastries, alongside a gallery featuring local and international artists.
-
-#### [Snow White (Cinematic Ballet Production)](https://www.stargoldcoast.com.au/whats-on/live-concerts-shows)
-📆 Thu 2 Jul
-📍 The Star Gold Coast
-💰 Cost Varies
-`ballet` `performance` `theatre` `cinematic`
-
-A unique cinematic ballet production of Snow White, blending traditional ballet with visual storytelling elements for a contemporary take on a classic tale.
-
-#### [Kool Kids & Miami High School Art Exhibition](https://www.insidegoldcoast.com.au/event/surface-festival-2026/)
-📆 Fri 3 Jul, 5:00 PM
-📍 Miami creative precinct (To be confirmed)
-💰 Free
-`art` `exhibition` `youth` `community` `free`
-
-An inspiring art exhibition showcasing works from young local artists from Kool Kids and Miami High School, celebrating the next generation of creatives as part of SURFACE Festival.
-
-#### [5th Indigenous Art Triennial: After The Rain](https://hota.com.au/whats-on/exhibitions/5th-indigenous-art-triennial-after-the-rain)
-📆 Sat 4 Jul - Sun 5 Jul (ongoing)
-📍 HOTA, Home of the Arts
-💰 To be confirmed
-`art` `indigenous art` `exhibition` `culture`
-
-A major exhibition featuring ten large-scale immersive and multidisciplinary installations by First Nations artists, telling stories of rebirth, resilience, and reckoning.
-
-#### [Tide and Bloom Exhibition Opening](https://mintarthouse.com/upcoming-events)
-📆 Sat 4 Jul
-📍 Mint Art House
-💰 To be confirmed (likely Free)
-`art` `exhibition` `opening` `community`
-
-The opening of a new art exhibition at Mint Art House, offering a chance to view new works and engage with the local art community.
-
-#### [HOTA Gallery — White Rabbit Collection Exhibition](https://hota.com.au)
-📆 Mon 29 Jun – Sun 5 Jul
-📍 HOTA Gallery, Surfers Paradise / Broadbeach Waters
-💰 Varies
-`art exhibition` `contemporary art` `chinese art` `gallery`
-
-An unmissable gallery exhibition showcasing contemporary Chinese art from the world-renowned White Rabbit Collection, offering a thought-provoking and internationally significant experience.
-
-#### [Poetry Night](https://mintarthouse.com/upcoming-events)
-📆 Thu 2 Jul, 6:00 PM
-📍 Mint Art House
-💰 To be confirmed
-`poetry` `performance` `literature` `creative`
-
-An intimate poetry night at Mint Art House, featuring a performance by Col Langdon in his "Coffee Shop Observational" style.
-
-### 🛠️ Workshop / Class
-
-#### [HOTA Gallery Public Programs & Workshops](https://hota.com.au/whats-on/live)
-📆 Mon 29 Jun - Sun 5 Jul
-📍 HOTA, Surfers Paradise
-💰 Free (some sessions)
-`workshops` `talks` `community` `art` `free`
-
-HOTA offers a range of ongoing public programs throughout the week, including talks like 'Ballun Gawrehma: Story by the River' and workshops such as 'HOTA Engages Hayden Andrews', alongside family-friendly activities.
-
-#### [Gold Coast Libraries — Events & Workshops Program](https://www.eventbrite.com.au/o/gold-coast-libraries-65102065633)
-📆 Mon 29 Jun - Sun 5 Jul
-📍 Various Gold Coast library branches
-💰 Free
-`workshops` `talks` `community` `learning` `free`
-
-Gold Coast Libraries offer a free program of activities and workshops throughout the week, providing community talks, learning opportunities, and enticing spaces to connect.
-
-#### [Life Drawing Session – Burlesque Edition](https://www.insidegoldcoast.com.au/event/surface-festival-2026/)
-📆 Wed 1 Jul, 6:00 PM
-📍 Miami creative precinct (To be confirmed)
-💰 To be confirmed
-`art` `life drawing` `burlesque` `jazz`
-
-An evening life drawing session featuring a burlesque-inspired model and live jazz music from Out of Abingdon, presented as part of the SURFACE Festival.
-
-#### [Creative Writing](https://bond.edu.au/events)
-📆 Mon 29 Jun
-📍 Bond University
-💰 Cost Varies
-`writing` `workshop` `creative` `skills`
-
-A creative writing program likely offering workshops or structured learning sessions to develop writing skills and explore various literary forms. Multiple sessions available.
+A fun, social, recurring event combining music and bingo, providing an opportunity for casual interaction and entertainment.
 
 ### 📌 Community / Other
 
-#### [HOTA Markets](https://experiencegoldcoast.com/events)
-📆 Sun 29 Jun & Sun 5 Jul, 6:00 AM – 11:30 AM
-📍 HOTA Precinct, Surfers Paradise
+#### [Emerald Lakes Gourmet Food and Craft Markets](http://www.marketsdownunder.com/)
+📆 Thu 9 Jul, 3:00 PM - 7:00 PM
+📍 Emerald Lakes, Carrara
 💰 Free
-`markets` `community` `social` `free`
+`market` `crafts` `food` `community` `free`
 
-Discover one of the Gold Coast's most vibrant community markets, held every Sunday morning, offering a celebration of independent local producers, artists, and lifestyle goods.
+Explore a vibrant weekly market featuring gourmet food, artisan crafts, and local produce at Emerald Lakes. It's a great opportunity to support local makers and connect with the community.
 
-#### [Carrara Markets Car Boot Sale](https://experiencegoldcoast.com/events)
-📆 Sun 29 Jun & Sun 5 Jul, 7:00 AM – 10:00 AM
-📍 Carrara Markets, Carrara
+#### [Cherry Pickers Market](https://www.miamimarketta.com/events/cherry-pickers-market-july-11)
+📆 Sat 11 Jul, 10:00 AM - 2:00 PM
+📍 Miami Marketta, Miami
 💰 Free
-`markets` `community` `browsing` `free`
+`market` `vintage` `crafts` `community` `free`
 
-Embark on a treasure hunt at Carrara Markets' famous Sunday morning car boot sale, featuring preloved fashion, books, homewares, tools, and bric-a-brac from local sellers.
+Discover a curated selection of vintage, pre-loved, and artisan goods at the Cherry Pickers Market within the creative hub of Miami Marketta. Support local vendors and enjoy a lively community atmosphere.
 
-#### [NaturallyGC — Free Nature Walks, Citizen Science & Workshops](https://www.eventbrite.com.au/o/naturallygc-city-of-gold-coast-13649190170)
-📆 Mon 29 Jun - Sun 5 Jul
-📍 Various Gold Coast locations
+#### [HOTA Farmers and Artisan Market](https://hota.com.au/markets)
+📆 Sun 12 Jul, 6:00 AM - 11:30 AM
+📍 HOTA, Home of the Arts, Surfers Paradise
 💰 Free
-`nature` `walks` `citizen science` `community` `free`
+`market` `artisan` `food` `community` `free`
 
-NaturallyGC provides free community activities and workshops throughout the week, including guided nature walks, citizen science surveys, and environmental conservation actions.
+Discover fresh produce, artisan goods, and local crafts at the popular HOTA Farmers and Artisan Market. Enjoy the vibrant outdoor atmosphere in the Home of the Arts precinct.
 
-#### [Grazy Arvo with Koalas](https://currumbinsanctuary.com.au)
-📆 Mon 29 Jun - Sun 5 Jul
+#### [Sword Fight VIII — Historical Fencing Tournament](https://events.humanitix.com/sword-fight-viii)
+📆 Sat 11 – Sun 12 Jul, from 9:00 AM
+📍 The Vonda Youngman Community Centre, Tamborine Mountain
+💰 Free (spectators)
+`history` `martial arts` `subculture` `free`
+
+A Historical Fencing (HEMA) tournament showcasing Australia's best fencers in disciplines like Longsword and Rapier, free for spectators, and set in the scenic Gold Coast Hinterland.
+
+#### [Rumble on the Beach — Skateboarding Championship](https://www.thegcminute.com.au/p/school-holiday-fun-loading)
+📆 Thu 9 – Sun 12 Jul, from 9:00 AM daily
+📍 Elanora Skate Park & Pizzey Park Skatepark, Miami
+💰 Free
+`skateboarding` `subculture` `action sport` `free`
+
+A free skateboarding championship event featuring top riders and youth competitions, showcasing genuine skate subculture and action-sport energy across two Gold Coast skateparks.
+
+#### [NAIDOC Colour Run](https://www.thegcminute.com.au/p/school-holiday-fun-loading)
+📆 Tue 7 Jul, 10:00 AM – 11:00 AM
+📍 City of Gold Coast Chambers, Surfers Paradise
+💰 Free
+`community` `culture` `celebration` `free`
+
+A festive, community-spirited NAIDOC Week celebration featuring a free colour run at the City of Gold Coast Chambers, open to all for participation.
+
+#### [Adventure Day (Outdoor Play & Nature Activities)](https://www.thegcminute.com.au/p/school-holiday-fun-loading)
+📆 Mon 6 Jul, 9:00 AM – 2:00 PM
+📍 Gibson Park, Tallebudgera Valley
+💰 Free
+`outdoor` `nature` `adventure` `free` `family`
+
+Kids can join outdoor play and nature-based activities at Gibson Park in Tallebudgera Valley, offering a wonderful chance to explore the hinterland and connect with nature.
+
+#### NAIDOC Flag Raising Ceremony
+📆 Mon 6 Jul, TBA
+📍 Surfers Paradise
+💰 Free
+`community` `culture` `history` `free`
+
+A significant local community event hosted by Kalwun, celebrating NAIDOC Week with the raising of the Aboriginal and Torres Strait Islander flags. This ceremony acknowledges and honours Indigenous culture and history on the Gold Coast.
+
+#### [CLOTHES AND TOY SWAP](https://www.eventbrite.com.au/e/clothes-and-toy-swap-tickets-900388277277)
+📆 Fri 10 Jul, 5:00 PM
+📍 13 Dominions Rd, Gold Coast
+💰 Free
+`community` `sustainability` `swap` `free`
+
+Participate in a community clothes and toy swap event, promoting sustainability and resource sharing. A chance to declutter and find new items while connecting with local residents.
+
+#### [NaturallyGC: Tarrabora Bushcare Tree Planting](https://www.eventbrite.com.au/d/australia--gold-coast/community-events/)
+📆 Sat 11 Jul, 8:00 AM
+📍 Tugun
+💰 Free
+`nature` `community` `conservation` `hands-on` `free`
+
+Join the NaturallyGC program for a hands-on bushcare event, participating in tree planting to restore and enhance local natural areas in Tugun. It's an outdoor, community-focused activity.
+
+#### [Dinomania at Currumbin Wildlife Sanctuary](https://www.theurbanlist.com/goldcoast/a-list/things-to-do-on-the-gold-coast-this-weekend)
+📆 Daily until 19 Jul, from 9:00 AM
 📍 Currumbin Wildlife Sanctuary, Currumbin
-💰 Included with entry
-`wildlife` `nature` `animals` `family`
+💰 From $50 (day pass)
+`dinosaurs` `nature` `family` `education`
 
-An afternoon wildlife encounter at Currumbin Wildlife Sanctuary focused on koalas, offering a chance to connect with nature in a beautiful setting.
+Embark on an immersive trail to uncover prehistoric creatures, with daily shows, meet-and-greets, face painting, and craft stations, all included with sanctuary admission.
+
+#### [Gold Coast Libraries — Game On! School Holiday Crafts](https://www.goldcoast.qld.gov.au/libraries/Whats-on)
+📆 Mon 6 Jul - Fri 10 Jul, during library hours
+📍 Various Gold Coast Libraries
+💰 Free
+`craft` `library` `community` `free` `family friendly`
+
+A free, sport-themed craft program running during library hours at various Gold Coast Libraries. This welcoming community event offers a creative outlet for curious minds of all ages.
+
+#### [Festival of Chariots — Chariot Parade](https://allevents.in/gold-coast/all)
+📆 Sun 12 Jul, 12:00 PM
+📍 Surfers Paradise, Gold Coast
+💰 Free
+`parade` `cultural` `community` `free` `festival`
+
+A vibrant and free Chariot Parade held in Surfers Paradise as part of the Festival of Chariots. This cultural event offers a unique and festive atmosphere for the community.
+
+### 🎓 Public Lecture
+
+#### [ADHD Expert Panel Discussions and Q&A](https://hota.com.au/whats-on/live)
+📆 Wed 8 Jul
+📍 HOTA, Home of the Arts, Bundall
+💰 Free
+`psychology` `neurodiversity` `human behavior` `panel` `q&a` `free`
+
+HOTA hosts a monthly panel discussion and Q&A with ADHD experts, part of their Talks & Ideas series. This event is for those interested in psychology, neurodiversity, and human behavior, offering insights and audience participation.
+
+### 🛠️ Workshop / Class
+
+#### [ArtLab — Sustainable Textile Art Workshop](https://hota.com.au/whats-on)
+📆 Sat 11 Jul, 10:30 AM – 11:30 AM
+📍 HOTA Gallery, Bundall
+💰 Free
+`textile art` `craft` `sustainable` `workshop` `free`
+
+A hands-on workshop at HOTA Gallery where participants create textile art using natural inks and dyes. Explore sustainable art-making in a relaxed and creative environment.
+
+#### [Eco Arts — Nature-Based Artmaking](https://www.thegcminute.com.au/p/school-holiday-fun-loading)
+📆 Thu 9 Jul, 9:00 AM – 2:00 PM
+📍 Schuster Park, Tallebudgera
+💰 Free
+`art` `nature` `workshop` `free` `craft`
+
+A hands-on, outdoor creative experience where participants, especially kids, can make nature-based artworks using flowers, rocks, and other natural materials in Tallebudgera's Schuster Park.
