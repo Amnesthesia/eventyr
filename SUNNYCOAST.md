@@ -1,513 +1,377 @@
 # Sunshine Coast — This Week's Events
-**6 July 2026 – 12 July 2026**  
-*17 top picks · 62 events total*
+**13 July 2026 – 19 July 2026**  
+*9 top picks · 45 events total*
 
 ## ⭐ Top Picks
 
-### 🤝 [STOICISM SUNSHINE COAST](https://www.meetup.com/stoicism-sunshine-coast/events/294025114/)
-📆 Sun 12 Jul, 11:00 AM – 12:30 PM  
-📍 Maroochy Bushland Botanic Gardens, Tanawha  
+### 🎓 What Gets More Valuable When Everything Gets Easier? (ProductTank Sunshine Coast)
+📆 Wed 15 Jul, 5:30 PM  
+📍 Sunshine Coast  
+💰 Not specified  
+`technology` `futurism` `strategy` `design`
+
+A ProductTank meetup featuring a talk and discussion on the evolving value of skills and attributes in an era of increasing automation and technological ease, relevant for tech and design thinkers.
+
+### 🛠️ [Sunshine Coast Cultural Immersion](https://www.aida.org.au/events/sunshine-coast-cultural-immersion-17-july-2026/)
+📆 Fri 17 Jul, 12:00 PM  
+📍 TribalLink Cultural Activity Centre, Mapleton  
+💰 $396  
+`culture` `indigenous` `workshop` `history`
+
+A deep dive into local Aboriginal culture and Country, guided by cultural educators. Participants will experience a Welcome to Country, ochre paint-up, bush tucker walk, and learn about historical and contemporary Indigenous topics.
+
+### 🎨 Open Studios Sunshine Coast
+📆 Fri 17 Jul - Sun 26 Jul, 10:00 AM - 4:00 PM daily  
+📍 Various artist studios across Sunshine Coast  
+💰   
+`art` `exhibition` `open studio` `creative`
+
+A chance to visit local artist studios across the Sunshine Coast hinterland and coastline, view their work, purchase directly from artists, and potentially participate in workshops.
+
+### 🤝 The In- Progress Table
+📆 Thu 16 Jul, 6:45 PM AEST  
+📍 Maroochydore  
+💰   
+`discussion` `social` `community` `talk`
+
+A discussion-oriented meetup hosted by the "Trails, Tables & Talks Club" in Maroochydore, designed for engaging conversation.
+
+### 📌 [Caloundra Spinners & Weavers Group Meeting](https://www.caloundraartscentre.org.au/whats-on)
+📆 Tue 14 Jul, Day Event  
+📍 Caloundra Arts Centre, Caloundra  
+💰 Varies  
+`spinning` `weaving` `craft` `community`
+
+Join a group dedicated to the traditional crafts of spinning and weaving, offering a space to learn, practice, and share skills with experienced members.
+
+### 🛠️ [Nature's Bounty Eco-dyeing Workshop](https://www.caloundraartscentre.org.au/whats-on)
+📆 Wed 15 Jul, Day Event  
+📍 Caloundra Arts Centre, Caloundra  
+💰 Varies  
+`eco-dyeing` `craft` `workshop` `creative`
+
+Learn the art of eco-dyeing using natural materials to create unique patterns and colours on textiles, a hands-on workshop for all skill levels.
+
+### 🤝 The In-Progress Table - Maroochydore (ProductTank Sunshine Coast)
+📆 Thu 16 Jul, 6:45 PM  
+📍 Maroochydore  
+💰 Not specified  
+`design` `technology` `feedback` `discussion`
+
+A collaborative session where individuals present and receive feedback on their 'in-progress' projects or ideas, fostering constructive discussion and community learning in product development.
+
+### 🤝 [Coast Cafe Culture](https://library.sunshinecoast.qld.gov.au/Whats-On/At-the-library)
+📆 Tue 14 Jul  
+📍 Sunshine Coast Libraries  
 💰 Free  
-`philosophy` `discussion` `community` `free` `stoicism`
+`community` `social` `discussion` `free`
 
-A fortnightly philosophy discussion group exploring ideas and practical techniques from Stoicism for living better lives, open to all levels of knowledge.
+A multi-session, community-oriented program designed as a social gathering where participants can connect over coffee. It is run by Sunshine Coast Libraries and is expected to foster discussions and intellectual engagement.
 
-### 🎵 [Sofar Sounds Sunshine Coast – Secret Show (Burnside)](https://www.sofarsounds.com/cities/sunshine-coast)
-📆 During July 6-12 2026  
-📍 Burnside (secret location)  
-💰 ~$15–25  
-`music` `indie` `intimate` `social`
-
-An intimate, secret concert featuring three unannounced artists in a surprise venue, perfect for attentive music lovers seeking conversation in a small, seated setting.
-
-### 🛠️ [Advanced ChatGPT Workshop – For Noosa Seniors](https://www.eventbrite.com.au/d/australia--sunshine-coast/events/)
-📆 During July 6-12 2026  
-📍 Noosa area  
-💰 Low cost  
-`ai` `technology` `workshop` `learning`
-
-A hands-on technology workshop for curious older adults, helping them explore AI tools like ChatGPT in a supportive and community-oriented environment.
-
-### 🎨 [Gutsy Girls Adventure Film Tour 2026](https://www.thej.com.au/whats-on-in-noosa/)
-📆 During July 6-12 2026  
-📍 The J Theatre, Noosa Junction, Noosa  
-💰 Ticketed  
-`film` `adventure` `outdoors` `women`
-
-A touring film festival celebrating women in adventure and the outdoors, featuring a mix of inspiring short films and a community-oriented atmosphere.
-
-### 🎨 [KOAL – Interactive Solo Show](https://events.sunshinecoast.qld.gov.au)
-📆 During July 6-12 2026  
-📍 Sunshine Coast (venue to be confirmed)  
-💰 Ticketed  
-`theatre` `performance` `immersive` `experimental`
-
-An original, immersive, and physically inventive solo theatre performance by Jacinta Yelland, blending interactive elements with compelling storytelling.
-
-### 🎨 [Artists Working and Living on Kabi Kabi Country – Exhibition](https://noosatoday.com.au)
-📆 On display until 16 Jul 2026  
-📍 Pomona Railway Station Gallery, Pomona  
+### 🎨 [LORE and LAND First Nations artists in the Art Collection](https://gallery.sunshinecoast.qld.gov.au/Exhibitions)
+📆 Ongoing until Sun 16 Aug  
+📍 Caloundra Regional Gallery  
 💰 Free  
-`art` `exhibition` `first nations` `community` `free`
+`art` `exhibition` `indigenous` `free`
 
-A vibrant new exhibition at the heritage Pomona Railway Station Gallery, showcasing local First Nations-connected art in a beautiful community setting.
-
-### 🤝 [Gunn Kitchen x Aurenda – 4-Course Supper Club](https://www.eventbrite.com.au/d/australia--sunshine-coast/events/)
-📆 During July 6-12 2026  
-📍 Aurenda Coffee Co., Kings Beach, Caloundra  
-💰 Ticketed  
-`food` `dinner` `social` `community`
-
-An intimate dining and community gathering offering a 4-course supper club experience where conversation is encouraged and flows naturally between strangers.
-
-### 🛠️ [NAIDOC Week Botanical Eco-Printing & Dot Art Workshops](https://www.sunshinecoast.qld.gov.au/naidoc-regional-guide)
-📆 Mon 6 – Sun 12 July, 10:00 AM – 12:30 PM (drop-in)  
-📍 Coolum, Kawana, Caloundra, Nambour & Maroochydore Libraries  
-💰 Free  
-`naidoc` `culture` `art` `workshop` `free`
-
-Celebrate NAIDOC Week with hands-on workshops at various libraries. Participants can learn botanical eco-printing to discover natural colours and explore Aboriginal storytelling traditions through dot art.
-
-### 🎨 [NAIDOC: LORE | Land – Exhibition](https://gallery.sunshinecoast.qld.gov.au/exhibitions)
-📆 Mon 6 – Sun 12 July (during gallery hours)  
-📍 Caloundra Regional Gallery, Caloundra  
-💰 Free  
-`naidoc` `art` `exhibition` `culture` `free`
-
-An exhibition grounded in the deep cultural knowledge, ancestral connections, and sovereign rights of Australian First Nations peoples, running at Caloundra Regional Gallery through August 16.
-
-### 📌 [GATHAA First Nations Markets](https://www.sunshinecoast.qld.gov.au/naidoc-regional-guide)
-📆 Various dates across Mon 6 – Sun 12 July  
-📍 TBC (Sunshine Coast – venues to be announced)  
-💰 Free  
-`naidoc` `market` `culture` `social` `free`
-
-Vibrant markets and gatherings celebrating "50 Years of Deadly" during NAIDOC Week, featuring First Nations businesses, live music, cultural performances, bushfood experiences, and creative workshops.
-
-### 📌 [Festival of the Harvest – Free NAIDOC Celebration](https://www.sunshinecoast.qld.gov.au/naidoc-regional-guide)
-📆 During NAIDOC Week (Mon 6 – Sun 12 July)  
-📍 Kabi Kabi Country, Sunshine Coast (specific location TBC)  
-💰 Free  
-`naidoc` `culture` `festival` `social` `free` `family`
-
-A free NAIDOC celebration hosted by Undumbi Culture on Kabi Kabi Country, featuring music, dance, storytelling, bush tucker, hands-on cultural experiences, Indigenous markets, and kids' activities like art and face painting.
-
-### 🎨 ['LORE and LAND' art exhibition](https://gallery.sunshinecoast.qld.gov.au/exhibitions/lore-and-land)
-📆 Mon 6 Jul – Sun 12 Jul (Gallery hours)  
-📍 Caloundra Regional Gallery, Caloundra  
-💰 Free  
-`art` `exhibition` `free` `culture`
-
-Explore the 'LORE and LAND' art exhibition at Caloundra Regional Gallery, featuring thought-provoking works that delve into cultural narratives and connections to the environment.
-
-### 📌 [NAIDOC Week 2026: 50 Years of Deadly](https://library.sunshinecoast.qld.gov.au/Whats-On/NAIDOC-Week-2026)
-📆 Mon 6 Jul – Sun 12 Jul (Library hours)  
-📍 Various Sunshine Coast Libraries  
-💰 Free  
-`culture` `workshop` `art` `community` `free`
-
-Celebrate NAIDOC Week with various cultural activities, including hands-on Botanical Eco-printing and dot art workshops, fostering community engagement and cultural understanding.
-
-### 📌 [Jets, Drones & Rockets Open Day](https://qam.com.au/upcoming-events/)
-📆 Sat 11 Jul, 10:00 AM  
-📍 Queensland Air Museum, Caloundra  
-💰 Child: $12.50; Concession: $18; Adult: $25; Family: $60  
-`science` `technology` `futurism` `museum` `engineering`
-
-Explore the fascinating world of aviation technology with displays of jets, drones, and rockets, offering insights into engineering, science, and futurism.
-
-### 📌 [NAIDOC Week 2026 at Sunshine Coast Libraries](https://library.sunshinecoast.qld.gov.au/Whats-On/NAIDOC-Week-2026)
-📆 Mon 6 Jul – Sun 12 Jul (various times)  
-📍 Various Sunshine Coast Libraries  
-💰 Free  
-`culture` `indigenous` `workshops` `free` `community`
-
-Celebrate NAIDOC Week with hands-on activities like botanical eco-printing and dot art, exploring Aboriginal culture and storytelling traditions. This week-long event is an opportunity to learn about the histories and achievements of First Nations peoples.
-
-### 🎨 [Old Ways, New Marks: First Nations Screenprint Collective Exhibition](https://library.sunshinecoast.qld.gov.au/Whats-On/At-the-library)
-📆 Mon 6 Jul – Sat 11 Jul (during library hours)  
-📍 Maroochydore Library, Sunshine Coast  
-💰 Free  
-`art` `exhibition` `indigenous` `culture` `free`
-
-An exhibition by the First Nations Screenprint Collective, offering an opportunity to engage with Indigenous art and cultural expression through screenprinting.
-
-### 🎨 [LORE and LAND First Nations artists in the Art Collection Exhibition](https://gallery.sunshinecoast.qld.gov.au/Exhibitions)
-📆 Mon 6 Jul – Sun 12 Jul (during gallery hours)  
-📍 Caloundra Regional Gallery, Caloundra  
-💰 Free  
-`art` `exhibition` `indigenous` `culture` `free`
-
-An exhibition showcasing First Nations artists from the Art Collection, grounded in the deep cultural knowledge, ancestral connections, and sovereign rights of Australian First Nations peoples.
+An exhibition showcasing works by First Nations artists from the Art Collection, focusing on deep cultural knowledge, ancestral connections, and sovereign rights of Australian Indigenous peoples.
 
 ## 📋 All Events
 
-### 📌 Community / Other
-
-#### [Queensland Garden Expo](https://events.sunshinecoast.qld.gov.au/category/arts-culture)
-📆 Fri 10 Jul – Sun 12 Jul 2026
-📍 Nambour Showgrounds, Nambour
-💰 Ticketed
-`gardening` `expo` `workshop` `community`
-
-An annual celebration of gardening, bringing together enthusiasts and experts with talks, demonstrations, and hands-on workshops by top Australian gardening experts.
-
-#### [Mary River Festival](https://www.sunshinecoastpoint.com.au/events/)
-📆 Sat 11 Jul
-📍 Kandanga Community Reserve, Kandanga
-💰 Check website
-`community` `festival` `environment` `culture`
-
-A vibrant community celebration highlighting the environmental, cultural, and social importance of the Mary River region in the Sunshine Coast hinterland.
-
-#### [NAIDOC Week Library Events – Daily Programme](https://library.sunshinecoast.qld.gov.au/)
-📆 Mon 6 – Fri 11 July (various times)
-📍 Sunshine Coast Libraries (multiple branches)
-💰 Free
-`naidoc` `library` `culture` `community` `free`
-
-An ongoing daily programme across multiple library branches for NAIDOC Week 2026, featuring curated book displays, drop-in activities, and cultural programming celebrating "50 Years of Deadly."
-
-#### Convergence 5
-📆 Sat 11 Jul, 4:00 PM
-📍 Not specified
-💰 Not specified
-`futurism` `technology` `culture` `social`
-
-An event focused on the convergence of ideas, possibly related to technology, art, or culture, with presentations and social interaction planned into the evening.
-
-#### NAIDOC Festival Fun Sunshine Coast
-📆 Sun 5 Jul – Sun 12 Jul
-📍 Sunshine Coast (various venues)
-💰 Not specified
-`culture` `community` `festival` `social`
-
-A week-long community festival celebrating the history, culture and achievements of Aboriginal and Torres Strait Islander peoples, with various events across the Sunshine Coast.
-
-#### [Chenrezig Practice for His Holiness the Dalai Lama](https://chenrezig.com.au/events/)
-📆 Mon 6 Jul, 2:00 PM – 4:00 PM
-📍 Chenrezig Institute, Eudlo
-💰 Donation
-`meditation` `wellness` `buddhism` `community`
-
-A spiritual practice session focused on Chenrezig, offering a grounded wellness experience within a contemplative community setting.
-
-#### [Free Outdoor Movies Under the Stars](https://noosatoday.com.au)
-📆 Multiple nights in July 6-12 2026
-📍 Eumundi Amphitheatre, Eumundi
-💰 Free
-`film` `community` `outdoors` `free`
-
-Enjoy relaxed community movie nights under the winter sky at the Eumundi Amphitheatre, proudly sponsored by Experience Eumundi.
-
 ### 🎨 Arts / Exhibition
 
-#### [Australian Wearable Art Festival – Gala Night](https://www.theurbanlist.com/sunshinecoast/a-list/sunshine-coast-events)
-📆 Sat 11 Jul 2026
-📍 Novotel Twin Waters Resort, Twin Waters
+#### Noosa Alive! Festival
+📆 Fri 17 Jul - Sun 26 Jul
+📍 Various Noosa locations
+💰 Ticketed per event (some free programs)
+`festival` `arts` `culture` `community`
+
+A multi-day arts and cultural festival across Noosa, featuring performances, exhibitions, and events in various venues, kicking off with a Queensland Ballet performance. Includes both ticketed and free community programs.
+
+#### Queensland Ballet In Noosa 2026
+📆 Fri 17 Jul, 7:30 PM
+📍 The J Noosa, Noosa Heads
 💰 Ticketed
-`art` `fashion` `festival` `creative`
+`ballet` `performance` `theatre` `noosa`
 
-Experience fashion-meets-art at this immersive festival showcasing bold themes and dazzling creations on a 27-metre runway, including captivating gallery exhibitions and hands-on workshops.
+Queensland Ballet presents a performance in Noosa as part of the broader Noosa Alive! Festival, showcasing world-class ballet and contemporary dance.
 
-#### [Flickerfest 2026 – Short Laughs Comedy](https://www.thej.com.au/whats-on-in-noosa/)
-📆 During July 6-12 2026
-📍 The J Theatre, Noosa Junction
+#### ROBYN HOOD - 1922 (Silent Film)
+📆 Sat 18 Jul
+📍 Majestic Theatre Pomona, Pomona
 💰 Ticketed
-`film` `comedy` `festival` `short film`
+`film` `silent film` `historic` `pomona`
 
-Australia's premier short film festival presents its comedy showcase, featuring curated short films in a fun, social atmosphere.
+A screening of the classic 1922 silent film 'Robyn Hood' at the historic Majestic Theatre in Pomona, offering a unique cinematic experience in an authentic venue.
 
-#### [Noosa Arts Theatre – Annual One-Act Play Festival](https://www.noosaartstheatre.org.au/)
-📆 Thu 9 July – Sun 19 July
-📍 Noosa Arts Theatre, Noosaville
-💰 Ticketed (price TBC)
-`theatre` `play` `arts` `festival` `community`
+#### [Noosa Alive!](https://www.visitsunshinecoast.com/guide/sunshine-coast-events)
+📆 Fri 17 Jul
+📍 Noosa Heads venues, Noosa Heads
+💰 Varies
+`arts` `culture` `festival` `performance`
 
-The annual festival producing the top three plays from the National One-Act Playwriting Competition, offering short plays from local and national playwrights in a fantastic community theatre event.
+A multi-day arts and culture festival featuring music, theatre, ballet, comedy, and other performances across various venues in Noosa Heads.
 
-#### [Silent Film Screening: The Last of the Mohicans (1920)](https://themajestictheatre.com.au/locations/the-majestic-theatre/)
-📆 Sat 11 July, 12:00 PM – 2:00 PM
-📍 Majestic Theatre, Pomona (Noosa Hinterland)
-💰 $15
-`film` `silent film` `music` `history` `unique`
+#### Art in Nature - Sculpture Garden Guided Walk
+📆 Thu 17 Jul
+📍 Sculpture Garden
+💰 
+`art` `nature` `walk` `guided tour`
 
-Experience a silent film in an authentic way with a live organist accompanying the 1920 classic "The Last of the Mohicans", at a theatre housing a rare 1937 Compton Organ.
-
-#### [IMAGINATE: FIELDS OF FEELINGS WITH BONNIE HISLOP](https://www.noosaregionalgallery.com.au/exhibitions/imaginate-fields-of-feelings-with-bonnie-hislop/)
-📆 Mon 6 Jul – Sun 12 Jul (Gallery hours)
-📍 Noosa Regional Gallery, Tewantin
-💰 Free
-`art` `exhibition` `free` `gallery`
-
-An engaging exhibition by Bonnie Hislop, exploring themes of feelings through artistic expression. Visitors can explore the gallery at their leisure during opening hours.
-
-#### [Top Dog Film Festival 2026](https://www.thej.com.au/whats-on-in-noosa/)
-📆 During July 6-12 2026
-📍 The J Theatre, Noosa Junction, Noosa
-💰 Ticketed
-`film` `dogs` `community` `social`
-
-A charming curated short-film event celebrating dogs and their human companions, offering a fun, community-friendly atmosphere ideal for conversation.
-
-#### Imaginate
-📆 Sat 20 Jun – Sun 12 Jul
-📍 Noosa Regional Gallery, Tewantin
-💰 Not specified
-`art` `exhibition` `creative` `gallery`
-
-An exhibition or series of creative activities at the Noosa Regional Gallery, running for several weeks, offering opportunities for artistic engagement.
-
-#### [Cinderella – Youth Edition](https://www.thej.com.au/cinderella-little-seed/)
-📆 Fri 10 July, 11:00 AM & 2:30 PM; Sat 11 July, 11:00 AM & 2:30 PM
-📍 The J Theatre, Noosa Heads
-💰 $39.50
-`theatre` `musical` `family` `youth`
-
-A beloved musical reimagining the classic fairy tale with humour, heart, and unforgettable songs, brought to life by a talented cast of young performers from Little Seed Theatre Company.
-
-### 🎵 Concert / Music
-
-#### [ACMA Yandina – Luke O'Shea Concert](https://noosatoday.com.au)
-📆 Sat 11 Jul 2026
-📍 ACMA venue, Yandina
-💰 Ticketed
-`music` `folk` `country` `community`
-
-An intimate regional music evening featuring acclaimed Australian country/folk singer-songwriter Luke O'Shea, with a strong community following.
-
-#### [Jackie Marshall – The Last of the Human Troubadours](https://noosatoday.com.au)
-📆 Various dates in July 6-12 2026
-📍 Coolum / Maleny / Pomona / Eudlo
-💰 Ticketed
-`music` `folk` `singer-songwriter` `intimate`
-
-Acclaimed songwriter Jackie Marshall tours her new album, offering intimate singer-songwriter shows at beloved Sunshine Coast Hinterland and coastal venues.
-
-#### [Soul Groove – Live at The Presynct](https://www.thepresynct.com.au/whats-on/)
-📆 During July 6-12 2026
-📍 The Presynct, Sunshine Coast
-💰 Ticketed
-`music` `soul` `r&b` `live music`
-
-A groovy live soul/R&B night at The Presynct, one of the Sunshine Coast's key live music venues, offering a vibrant atmosphere.
-
-#### [The Slingers – Live at Blackflag Brewing, Coolum](https://www.blackflagbrewing.com.au/pages/events)
-📆 During July 6-12 2026
-📍 Blackflag Brewing, Coolum Beach
-💰 Low cost / Free
-`music` `live music` `brewery` `social`
-
-A lively live music night featuring The Slingers at Blackflag Brewing, a respected craft brewery known for its great social atmosphere.
-
-#### [The Ballroom to the Dance Floor – Sunshine Coast Symphony Orchestra](https://theeventscentre.com.au/whats-on/)
-📆 During July 6-12 2026
-📍 The Events Centre, Caloundra
-💰 Ticketed
-`music` `orchestra` `dance` `history`
-
-An orchestral celebration exploring the history of dance music through the ages, offering a night of fabulous music and a fascinating cultural tour.
-
-#### [Open Mic Night – Solbar Maroochydore](https://www.solbar.com.au/gig-guide)
-📆 Wed 8 Jul
-📍 Solbar, Maroochydore
-💰 Free
-`openmic` `music` `livemusic` `free`
-
-The Sunshine Coast's longest-running open mic night offers a relaxed, intimate atmosphere for acoustic acts to perform or for guests to simply enjoy live local music.
-
-#### Jackie Marshall & Black Square Quartet (Coolum)
-📆 Sat 11 Jul
-📍 Coolum
-💰 Ticketed
-`music` `indie` `folk` `concert`
-
-An intimate musical performance by Jackie Marshall and the Black Square Quartet, showcasing their indie-folk style with strong lyrical content.
-
-#### Lamplight Lyrical (Winter Edition) - Mapleton
-📆 Sat 11 Jul
-📍 Mapleton Public House, Mapleton
-💰 Ticketed
-`music` `performance` `poetry` `intimate`
-
-An intimate evening of lyrical music or spoken word performances in a cozy, atmospheric setting at the Mapleton Public House. Tickets available via Humanitix.
-
-#### [A Taste of Ireland 2026](https://www.thej.com.au/whats-on-in-noosa/)
-📆 During July 6-12 2026
-📍 The J Theatre, Noosa Junction
-💰 Ticketed
-`music` `dance` `irish` `culture`
-
-A high-energy live show of Irish music, song, and dance, offering a warm and culturally rich experience for all ages.
-
-#### [Seven Drunken Nights – The Dubliners Songbook](https://www.thej.com.au/whats-on-in-noosa/)
-📆 During July 6-12 2026
-📍 The J Theatre, Noosa Junction
-💰 Ticketed
-`music` `folk` `irish` `tribute`
-
-Celebrating its 10th anniversary, this rousing and joyful live tribute to the legendary Irish folk band The Dubliners returns, beloved by audiences worldwide.
-
-#### [Convergence 5 – TRIBONE & AKUDRA (Psytrance / Electronic)](https://thebananabenderpub.com/events/)
-📆 Sat 11 Jul
-📍 Banana Bender Pub / The Shed, Palmview
-💰 TBC
-`music` `electronic` `psytrance` `livemusic`
-
-Experience the hypnotic fusion of TRIBONE and AKUDRA as they bring their signature blend of progressive psytrance, deep grooves, and cutting-edge electronic soundscapes to this vibrant event.
-
-#### [Fonoti – Live Beer Garden Session](https://thebananabenderpub.com/events/)
-📆 Sun 12 Jul
-📍 Banana Bender Pub, Palmview
-💰 Free
-`music` `livemusic` `free` `social`
-
-Ease into your Sunday with the smooth sounds of Fonoti in the relaxed beer garden, perfect for cruisy catch-ups and enjoying live music.
-
-#### [Solbar – Weekend Gigs](https://www.solbar.com.au/gig-guide)
-📆 Fri 10 – Sat 11 Jul
-📍 Solbar, Maroochydore
-💰 Free / Ticketed
-`music` `livemusic` `gig` `weekend`
-
-Solbar, the Sunshine Coast's iconic music venue, hosts live performances from various artists over the weekend in its Band Room and street-front lounge bar. Check their gig guide for specific acts.
-
-#### [Max Jackson – "Dangerous In Denim" Tour](https://kingsbeachtavern.com.au/entertainment/)
-📆 Fri 10 Jul
-📍 Kings Beach Tavern, Kings Beach
-💰 Ticketed
-`music` `livemusic` `country` `pop`
-
-Catch Max Jackson's 'Dangerous In Denim Tour' at Kings Beach Tavern, one of the Sunshine Coast's major live music destinations known for its regular entertainment acts.
-
-#### [Livin' Lovin' Zeppelin – Live](https://themajestictheatre.com.au/locations/the-majestic-theatre/)
-📆 Sat 11 July, 7:00 PM – 10:00 PM
-📍 Majestic Theatre, Pomona (Noosa Hinterland)
-💰 $45
-`music` `live music` `rock` `concert`
-
-A live band, fronted by Tara Graham, performs the eternal anthems of Led Zeppelin, rocking through their biggest tunes at the historic Majestic Theatre.
+A guided walk through a sculpture garden, exploring art integrated with nature.
 
 ### 🤝 Social / Meetup
 
-#### [Dreaming Collective Sunshine Coast NAIDOC Gala](https://www.sunshinecoast.qld.gov.au/naidoc-regional-guide)
-📆 During NAIDOC Week (Mon 6 – Sun 12 July)
-📍 The Shed, Aussie World, Sunshine Coast
-💰 Ticketed (price TBC)
-`naidoc` `gala` `culture` `social` `dinner`
+#### Great Walk (Stage 2) - Flaxton
+📆 Thu 16 Jul, 7:45 AM AEST
+📍 Flaxton
+💰 $3.00
+`hiking` `outdoor` `adventure` `community`
 
-A special evening celebrating "50 Years of Deadly" and the strength, resilience, and cultural brilliance of Aboriginal and Torres Strait Islander peoples, featuring live performances, arts, awards, and a two-course dinner.
+The second stage of a great walk in Flaxton, organized by the Sunshine Coast Hiking Group, offering a chance for guided outdoor adventure and social interaction.
 
-#### Golden Beach Walking Group
-📆 Mon 6 Jul, 6:25 AM
-📍 Caloundra
-💰 Free
-`walking` `outdoor` `social` `free`
-
-Join a friendly local group for a social morning walk along Golden Beach, hosted by Daniel Ben-Sefer. A great way to start the week outdoors and meet new people.
-
-#### Easy Riders (Sunshine Coast)
-📆 Mon 6 Jul, 7:30 AM
+#### TechWalking - Networking for Tech Professionals
+📆 Sun 19 Jul, 8:30 AM AEST
 📍 Sunshine Coast
+💰 
+`tech` `networking` `walk` `social`
+
+An outdoor walking event designed for tech professionals on the Sunshine Coast to network, share ideas, and connect in a casual, active setting.
+
+#### Gratitude Walk and Fun Run
+📆 Sun 19 Jul
+📍 
+💰 
+`run` `walk` `social` `community`
+
+A community "gratitude walk" and fun run event, offering a social and active way to engage in physical activity.
+
+#### Game Night - Max 6
+📆 Thu 16 Jul, 6:45 PM AEST
+📍 
+💰 
+`game night` `social` `community` `small group`
+
+An intimate board or card game night limited to six participants, hosted by a social group for professional women in Noosa aged 45-65.
+
+#### Coastrek Sunshine Coast 2026
+📆 Thu 17 Jul
+📍 Noosa / Peregian / Marcoola to Mooloolaba
+💰 
+`hiking` `charity` `outdoor` `adventure`
+
+A team-based charity hiking event along the Sunshine Coastline, with 20km, 30km, and 50km options, raising funds for mental health initiatives through Beyond Blue.
+
+#### Game Night
+📆 Thu 16 Jul, 6:45 PM
+📍 Noosa
+💰 Not specified
+`games` `social` `community` `meetup`
+
+An intimate game night for a small group (max 6) to enjoy board games or card games, fostering conversation and connection in a relaxed social setting.
+
+#### Bli Bli Social Pickleball - Monday Evenings
+📆 Mon 13 Jul, 5:30 PM AEST
+📍 Bli Bli
+💰 
+`sport` `social` `community` `outdoor`
+
+A social pickleball session for community members, hosted by local pickleball clubs. A chance to play and socialize in a relaxed atmosphere.
+
+#### Coffee & Chat Twin Waters
+📆 Tue 14 Jul, 10:00 AM AEST
+📍 Twin Waters
+💰 $2.00
+`social` `community` `meetup` `coffee`
+
+A casual coffee and chat social gathering for singles aged 60 and over, aimed at fostering connection and community.
+
+#### Magic of Mooloolaba FitWalk
+📆 Tue 14 Jul, 4:30 PM AEST
+📍 Mooloolaba
 💰 Free
-`cycling` `outdoor` `social` `free`
+`walk` `fitness` `social` `free`
 
-Connect with fellow cycling enthusiasts for a social ride around the Sunshine Coast, suitable for various skill levels. Specific meeting points determined by the group.
+A free, social fitness walk in Mooloolaba designed for conversation and light exercise, hosted by a community walking group.
 
-#### [Auslan Storytime](https://library.sunshinecoast.qld.gov.au/Whats-On/Holiday-Program)
-📆 Tue 7 Jul, 9:30 AM
-📍 Maroochydore Library
+#### Mudjimba to Pincushion Island Beach Walk/Lunch
+📆 Fri 17 Jul, 9:30 AM AEST
+📍 Mudjimba to Pincushion Island Beach
+💰 
+`walk` `beach` `social` `outdoor`
+
+A scenic beach walk from Mudjimba to Pincushion Island, followed by a social lunch, organized by a group focused on fun, fitness, and coffee.
+
+#### Early Saturday Lunch
+📆 Sat 18 Jul, 11:30 AM AEST
+📍 
+💰 
+`social` `community` `lunch` `meetup`
+
+A social early Saturday lunch meetup for empty nester couples aged 45 and over, offering a relaxed environment for connection.
+
+#### Moffat Beach to Currimundi Lake 6.8km Coastal Path
+📆 Sun 19 Jul, 8:00 AM AEST
+📍 Moffat Beach to Currimundi Lake
+💰 
+`walk` `coastal` `social` `outdoor`
+
+A 6.8km social walk along the coastal path from Moffat Beach to Currimundi Lake, hosted by a women's walking and talking group.
+
+#### Bli Bli Social Pickleball
+📆 Mon 13 Jul, 5:30 PM
+📍 Bli Bli
+💰 Not specified
+`pickleball` `social` `fitness` `community`
+
+A social pickleball session for players of all levels to enjoy the game, get active, and meet new people in the Bli Bli community.
+
+### 📌 Community / Other
+
+#### [Textile and Fibre Art Group Meeting](https://www.caloundraartscentre.org.au/whats-on)
+📆 Mon 13 Jul, Day Event
+📍 Caloundra Arts Centre, Caloundra
+💰 Varies
+`textile` `craft` `community` `creative`
+
+A regular gathering for enthusiasts of textile and fibre art to share projects, learn from each other, and engage in creative discussion within a supportive community setting.
+
+#### [Pumicestone Painters Art Group Meeting](https://www.caloundraartscentre.org.au/whats-on)
+📆 Mon 13 Jul, Day Event
+📍 Caloundra Arts Centre, Caloundra
+💰 Varies
+`painting` `art` `community` `creative`
+
+An opportunity for painters to meet, share their work, engage in artistic critique, and work on individual or group projects in a collaborative atmosphere.
+
+#### [Machine Embroidery Group Meeting](https://www.caloundraartscentre.org.au/whats-on)
+📆 Mon 13 Jul, Day Event
+📍 Caloundra Arts Centre, Caloundra
+💰 Varies
+`embroidery` `craft` `community` `creative`
+
+A gathering for those interested in machine embroidery to share techniques, work on projects, and build skills within a friendly and supportive group.
+
+#### [Happy Yarners Group Meeting](https://www.caloundraartscentre.org.au/whats-on)
+📆 Mon 13 Jul, Day Event
+📍 Caloundra Arts Centre, Caloundra
+💰 Varies
+`yarn` `knitting` `craft` `community`
+
+A casual meeting for knitting and crocheting enthusiasts to work on projects, share patterns, and enjoy creative camaraderie over yarn crafts.
+
+#### [Caloundra Quilters Group Meeting](https://www.caloundraartscentre.org.au/whats-on)
+📆 Tue 14 Jul, Day Event
+📍 Caloundra Arts Centre, Caloundra
+💰 Varies
+`quilting` `craft` `community` `creative`
+
+A weekly meeting for quilters of all skill levels to share projects, exchange ideas, and work on quilting in a social and supportive environment.
+
+#### [Caloundra Stitchers Inc. Group Meeting](https://www.caloundraartscentre.org.au/whats-on)
+📆 Wed 15 Jul, Day Event
+📍 Caloundra Arts Centre, Caloundra
+💰 Varies
+`stitching` `craft` `community` `creative`
+
+A friendly gathering for all stitching enthusiasts to share projects, learn new techniques, and enjoy the company of fellow crafters.
+
+#### [The Original Eumundi Markets](https://eumundimarkets.com.au/)
+📆 Wed 15 Jul, 8:00 AM - 2:00 PM
+📍 Eumundi
 💰 Free
-`language` `community` `free` `inclusive`
+`market` `community` `craft` `local`
 
-Join this inclusive storytime session where stories are shared in Auslan (Australian Sign Language), offering an opportunity to learn and engage with deaf culture.
+Explore the vibrant stalls of the iconic Eumundi Markets, featuring local artisans, food producers, and live entertainment, a cornerstone of the Sunshine Coast community.
 
-#### [Approaching Mind and Meditation – Coolum Meditation Group](https://chenrezig.com.au/events/)
-📆 Fri 10 Jul, 5:45 PM – 7:00 PM
-📍 Village Yoga and Pilates, Coolum Beach
-💰 Donation
-`meditation` `wellness` `community` `social`
+### 🎵 Concert / Music
 
-A community meditation group session focused on mind and meditation, providing a grounded and authentic wellness experience with social interaction.
+#### "HARVEST" THE HONEY SLIDERS
+📆 Sun 19 Jul, 4:00 PM - 6:00 PM
+📍 The Majestic Theatre Pomona, Pomona
+💰 Sold Out
+`music` `live music` `folk` `pomona`
 
-#### [NightQuarter – Friday Night Markets & Live Music](https://tix.nightquarter.com.au/events)
-📆 Fri 10 Jul, 4:00 PM – 10:00 PM
-📍 NightQuarter, Birtinya
-💰 From $5
-`market` `livemusic` `food` `community`
+The Honey Sliders perform their 'Harvest' show at the intimate and historic Majestic Theatre in Pomona, known for supporting diverse musical acts.
 
-Experience an electric atmosphere of global street food, live music on multiple stages, carnival fun, immersive performances, and market shopping in a family-friendly setting.
+#### Thundamentals (Live Music)
+📆 Thu 16 Jul
+📍 Kings Beach Tavern, Caloundra
+💰 Ticketed
+`music` `hiphop` `live` `ticketed`
 
-#### [Banana Bender Pub – Thursday Trivia / Brain & Burger Night](https://thebananabenderpub.com/events/)
-📆 Thu 9 Jul, 6:30 PM
-📍 Banana Bender Pub, Palmview
-💰 Free
-`trivia` `social` `games` `free`
+A live performance by the acclaimed Australian hip-hop group Thundamentals, known for their energetic shows and thoughtful lyrics. Details on exact time and ticket purchase would be available closer to the date via the venue.
 
-Gather your friends for a weekly trivia night with unique twists, free to play and featuring a $20 burger & chips special, ideal for an intellectually engaging social evening.
+#### Bodyjar - How It Works 25th Anniversary Tour
+📆 Sat 18 Jul
+📍 Kings Beach Tavern, Sunshine Coast
+💰 Ticketed
+`music` `punk rock` `live` `ticketed`
 
-#### Buderim Coffee Morning
-📆 Tue 7 Jul, 10:00 AM
-📍 Buderim
-💰 Cost of own coffee
-`coffee` `social` `community` `meetup`
-
-A relaxed weekly social gathering for community members to chat over coffee. Contact Anne H for the current venue, which may change.
-
-#### [Banana Bender Pub – Hump Day Poker Night](https://thebananabenderpub.com/events/)
-📆 Wed 8 Jul, 6:30 PM
-📍 Banana Bender Pub, Palmview
-💰 Free
-`social` `games` `poker` `free`
-
-A weekly poker night powered by APL, offering free entry and a $20 pizza special, perfect for a casual social gathering to test your strategy.
+Australian punk rock band Bodyjar celebrates the 25th anniversary of their album 'How It Works' with a live performance, supported by special guests Not Dollar Short + The Wol....
 
 ### 🛠️ Workshop / Class
 
-#### [IMAGINATE school holidays clay lab](https://www.noosaregionalgallery.com.au/exhibitions/imaginate-fields-of-feelings-with-bonnie-hislop/)
-📆 Mon 6 Jul – Sun 12 Jul (Gallery hours)
-📍 Noosa Regional Gallery, Tewantin
-💰 $5 per person
-`craft` `workshop` `pottery` `art` `creative`
-
-Participate in a hands-on clay lab, part of the IMAGINATE school holiday program. This workshop offers a chance to get creative with pottery.
-
-#### [Toy Frankengarden](https://library.sunshinecoast.qld.gov.au/Whats-On/Holiday-Program)
-📆 Wed 8 Jul, 10:00 AM
-📍 Nambour Library
+#### [Emotional Wellness Program](https://library.sunshinecoast.qld.gov.au/Whats-On/At-the-library)
+📆 Fri 17 Jul
+📍 Sunshine Coast Libraries
 💰 Free
-`craft` `workshop` `repurpose` `creative` `free`
+`wellness` `mental health` `workshop` `free`
 
-Engage in a creative, hands-on workshop to construct unique 'Frankengardens' using repurposed toys, promoting imagination and sustainable crafting.
+A multi-session program by Sunshine Coast Libraries offering practical strategies for emotional wellness, potentially involving talks or workshops on mental wellbeing. It aims to provide grounded and authentic wellness support.
 
-#### Holiday Program: Little Scientists
-📆 Wed 8 Jul, 10:00 AM
-📍 Maroochy Regional Bushland Botanic Garden, Tanawha
+#### [Serenity Yoga (ADF & partners)](https://www.rslqld.org.au/what-s-on/serenity-yoga-sunshine-coast)
+📆 Wed 15 Jul, 5:45 PM
+📍 Vfwc Sunshine Coast, Maroochydore
 💰 Free
-`science` `workshop` `education` `free` `nature`
+`yoga` `wellness` `breathwork` `free`
 
-A hands-on workshop where participants can explore scientific concepts through fun experiments and activities in the natural setting of the Botanic Garden.
-
-#### Holiday Program: Treasure Keepers
-📆 Thu 9 Jul, 10:00 AM
-📍 Maroochy Regional Bushland Botanic Garden, Tanawha
-💰 Free
-`nature` `exploration` `workshop` `free` `creative`
-
-An exploratory workshop at the Botanic Garden, focusing on nature observation and creative activities related to collecting and preserving natural treasures.
-
-#### [Holiday Program: Herbal Healing](https://www.eventbrite.com.au/e/holiday-program-herbal-healing-tickets-tickets-919515664557)
-📆 Mon 6 Jul, 10:00 AM
-📍 Maroochy Regional Bushland Botanic Garden, Tanawha
-💰 Free
-`wellness` `herbalism` `gardening` `workshop` `free`
-
-Learn about the properties and uses of various herbs in this practical, grounded workshop focused on herbal healing and natural remedies within the Botanic Garden.
+A gentle, grounding yoga and breathwork class focused on unwinding, rebalancing, and reconnecting body and mind. This free session is specifically designed for current and ex-serving ADF members and their partners.
 
 #### Introduction to Mindfulness and Meditation
-📆 Tue 7 Jul, 5:30 PM
-📍 Buderim Pines Drive
-💰 Not specified
-`mindfulness` `meditation` `wellness` `workshop`
+📆 Tue 14 Jul, 5:30 PM - 6:30 PM
+📍 100 Buderim Pines Drive
+💰 
+`wellness` `meditation` `mindfulness` `beginners`
 
-An introductory session designed to teach fundamental techniques of mindfulness and meditation for well-being and mental clarity.
+An introductory session to mindfulness and meditation techniques, suitable for beginners looking to learn practices for well-being.
+
+#### Free Sahaja Yoga classes
+📆 Tue 14 Jul, 6:00 PM AEST
+📍 Parrearra
+💰 Free
+`yoga` `meditation` `free` `wellness`
+
+Free Sahaja Yoga classes held weekly in Parrearra, offering meditation and mindfulness practices in a community setting.
+
+#### Paint and Sip / Sips & Strokes: Winter Edition
+📆 Sun 19 Jul, 12:30 PM AEST
+📍 
+💰 
+`art` `painting` `workshop` `creative`
+
+A social painting workshop where participants can create art while enjoying beverages, presented as a "Winter Edition" by the Trails, Tables & Talks Club.
+
+#### Paint and Sip: Winter Edition
+📆 Sun 19 Jul, 12:30 PM
+📍 Sunshine Coast
+💰 Not specified
+`painting` `art` `workshop` `creative`
+
+Unleash your creativity in a relaxed paint and sip session, designed for artistic expression and social interaction, suitable for all skill levels.
+
+#### [Energy Temple (Coast Flow Yoga)](https://www.coastflow.com.au/events)
+📆 Tue 14 Jul, 7:00 PM
+📍 Coast Flow, Sunshine Coast
+💰 Ticketed
+`yoga` `wellness` `community` `movement`
+
+An ongoing monthly community event hosted by Coast Flow, likely involving yoga, breathwork, or a sound journey, designed to bring people together for a holistic experience.
+
+#### [Radiance & Rhythm (Coast Flow Yoga)](https://www.coastflow.com.au/events)
+📆 Fri 17 Jul, 7:00 PM
+📍 Coast Flow, Sunshine Coast
+💰 Ticketed
+`yoga` `wellness` `community` `movement`
+
+Another one of Coast Flow's ongoing monthly events designed to foster community and well-being, likely incorporating movement, breathwork, or other mindful practices.
