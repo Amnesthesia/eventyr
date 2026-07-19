@@ -7,493 +7,356 @@ X-WR-CALNAME:Sunshine Coast — do things
 X-WR-TIMEZONE:UTC
 BEGIN:VEVENT
 UID:sunnycoast-0@dothings
-DTSTART;TZID=UTC:20260715T173000
-DTEND;TZID=UTC:20260715T193000
-SUMMARY:What Gets More Valuable When Everything Gets Easier? (ProductTank S
- unshine Coast)
-DESCRIPTION:A ProductTank meetup featuring a talk and discussion on the evo
- lving value of skills and attributes in an era of increasing automation an
- d technological ease\, relevant for tech and design thinkers.
-LOCATION:Sunshine Coast
+DTSTART;TZID=UTC:20260717T100000
+DTEND;TZID=UTC:20260717T120000
+SUMMARY:Open Studios Sunshine Coast
+DESCRIPTION:Explore artist studios\, watch demonstrations\, and potentially
+  participate in workshops across the Sunshine Coast hinterland and coastli
+ ne\, offering a chance to connect with local artists.
+LOCATION:Various studios across Sunshine Coast
 URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-1@dothings
-DTSTART;TZID=UTC:20260717T120000
-DTEND;TZID=UTC:20260717T140000
-SUMMARY:Sunshine Coast Cultural Immersion
-DESCRIPTION:A deep dive into local Aboriginal culture and Country\, guided 
- by cultural educators. Participants will experience a Welcome to Country\,
-  ochre paint-up\, bush tucker walk\, and learn about historical and contem
- porary Indigenous topics.
-LOCATION:TribalLink Cultural Activity Centre\, Mapleton
-URL:https://www.aida.org.au/events/sunshine-coast-cultural-immersion-17-jul
- y-2026/
+DTSTART;TZID=UTC:20260725T100000
+DTEND;TZID=UTC:20260725T120000
+SUMMARY:Caloundra Repair Cafe
+DESCRIPTION:Bring broken items for repair by volunteers\, learn practical s
+ kills\, and connect with community members focused on sustainability and r
+ educing waste in a friendly\, hands-on environment.
+LOCATION:Caloundra
+URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-2@dothings
-DTSTART;TZID=UTC:20260717T100000
-DTEND;TZID=UTC:20260717T120000
-SUMMARY:Open Studios Sunshine Coast
-DESCRIPTION:A chance to visit local artist studios across the Sunshine Coas
- t hinterland and coastline\, view their work\, purchase directly from arti
- sts\, and potentially participate in workshops.
-LOCATION:Various artist studios across Sunshine Coast
+DTSTART;TZID=UTC:20260721T100000
+DTEND;TZID=UTC:20260721T120000
+SUMMARY:AI Masterclass
+DESCRIPTION:An introductory masterclass on Artificial Intelligence\, presen
+ ted by Bart Puszko from Blue Seas AI\, aimed at demystifying AI and its ap
+ plications.
+LOCATION:Maroochydore Library
 URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-3@dothings
-DTSTART;TZID=UTC:20260716T184500
-DTEND;TZID=UTC:20260716T204500
-SUMMARY:The In- Progress Table
-DESCRIPTION:A discussion-oriented meetup hosted by the "Trails\, Tables & T
- alks Club" in Maroochydore\, designed for engaging conversation.
-LOCATION:Maroochydore
-URL:
+DTSTART;TZID=UTC:20260717T090000
+DTEND;TZID=UTC:20260717T110000
+SUMMARY:Noosa Alive! Festival
+DESCRIPTION:A major arts and culture festival featuring a diverse program o
+ f live music\, theatre\, art exhibitions\, literary events\, and community
+  activities across Noosa's iconic venues\, with some free events.
+LOCATION:Various Noosa locations
+URL:noosaalive.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-4@dothings
-DTSTART;VALUE=DATE:20260714
-DTEND;VALUE=DATE:20260714
-SUMMARY:Caloundra Spinners & Weavers Group Meeting
-DESCRIPTION:Join a group dedicated to the traditional crafts of spinning an
- d weaving\, offering a space to learn\, practice\, and share skills with e
- xperienced members.
-LOCATION:Caloundra Arts Centre\, Caloundra
-URL:https://www.caloundraartscentre.org.au/whats-on
+DTSTART;TZID=UTC:20260724T073000
+DTEND;TZID=UTC:20260724T093000
+SUMMARY:Winter Pademelon Survey
+DESCRIPTION:Join a community-led nature survey to spot and record pademelon
+ s in their natural habitat\, contributing to local wildlife conservation e
+ fforts in a beautiful scenic reserve.
+LOCATION:Mary Cairncross Scenic Reserve
+URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-5@dothings
-DTSTART;VALUE=DATE:20260715
-DTEND;VALUE=DATE:20260715
-SUMMARY:Nature's Bounty Eco-dyeing Workshop
-DESCRIPTION:Learn the art of eco-dyeing using natural materials to create u
- nique patterns and colours on textiles\, a hands-on workshop for all skill
-  levels.
-LOCATION:Caloundra Arts Centre\, Caloundra
-URL:https://www.caloundraartscentre.org.au/whats-on
+DTSTART;TZID=UTC:20260725T100000
+DTEND;TZID=UTC:20260725T120000
+SUMMARY:Paint\, Learn\, Grow - A Creative Bush Tucker Workshop for Adults
+DESCRIPTION:A hands-on workshop for adults combining creative painting with
+  learning about Australian bush tucker\, exploring native plants\, and pot
+ entially gardening techniques.
+LOCATION:Sunshine Coast
+URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-6@dothings
-DTSTART;TZID=UTC:20260716T184500
-DTEND;TZID=UTC:20260716T204500
-SUMMARY:The In-Progress Table - Maroochydore (ProductTank Sunshine Coast)
-DESCRIPTION:A collaborative session where individuals present and receive f
- eedback on their 'in-progress' projects or ideas\, fostering constructive 
- discussion and community learning in product development.
-LOCATION:Maroochydore
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:The Kube's Live Art Battle Vol. 7
+DESCRIPTION:Witness artists compete in a dynamic live art battle\, creating
+  artworks spontaneously in front of an audience\, offering an exciting and
+  engaging creative performance.
+LOCATION:The Kube
 URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-7@dothings
-DTSTART;VALUE=DATE:20260714
-DTEND;VALUE=DATE:20260714
-SUMMARY:Coast Cafe Culture
-DESCRIPTION:A multi-session\, community-oriented program designed as a soci
- al gathering where participants can connect over coffee. It is run by Suns
- hine Coast Libraries and is expected to foster discussions and intellectua
- l engagement.
-LOCATION:Sunshine Coast Libraries
-URL:https://library.sunshinecoast.qld.gov.au/Whats-On/At-the-library
+DTSTART;TZID=UTC:20260726T100000
+DTEND;TZID=UTC:20260726T120000
+SUMMARY:FRIEND APPLICATION - in real life
+DESCRIPTION:A social meetup designed for making new friends and connections
+  in person\, held at Sunshine Cove Park\, fostering natural conversations 
+ in a relaxed outdoor setting.
+LOCATION:Sunshine Cove Park
+URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-8@dothings
-DTSTART;VALUE=DATE:20260703
-DTEND;VALUE=DATE:20260703
-SUMMARY:LORE and LAND First Nations artists in the Art Collection
-DESCRIPTION:An exhibition showcasing works by First Nations artists from th
- e Art Collection\, focusing on deep cultural knowledge\, ancestral connect
- ions\, and sovereign rights of Australian Indigenous peoples.
-LOCATION:Caloundra Regional Gallery
-URL:https://gallery.sunshinecoast.qld.gov.au/Exhibitions
+DTSTART;TZID=UTC:20260726T180000
+DTEND;TZID=UTC:20260726T200000
+SUMMARY:Jackie Marshall & Black Square Quartet
+DESCRIPTION:An intimate live music performance by Jackie Marshall and the B
+ lack Square Quartet\, promising an evening of unique sounds in the rural s
+ etting of Eudlo.
+LOCATION:Eudlo
+URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-9@dothings
-DTSTART;TZID=UTC:20260717T000000
-DTEND;TZID=UTC:20260717T020000
-SUMMARY:Noosa Alive! Festival
-DESCRIPTION:A multi-day arts and cultural festival across Noosa\, featuring
-  performances\, exhibitions\, and events in various venues\, kicking off w
- ith a Queensland Ballet performance. Includes both ticketed and free commu
- nity programs.
-LOCATION:Various Noosa locations
+DTSTART;TZID=UTC:20260723T120000
+DTEND;TZID=UTC:20260723T140000
+SUMMARY:Canta La Tumba - Presented by the Noosa Jazz Club
+DESCRIPTION:The Noosa Jazz Club presents Canta La Tumba for an afternoon of
+  live jazz music at the historic Majestic Theatre\, offering an atmospheri
+ c musical experience.
+LOCATION:The Majestic Theatre\, Pomona
 URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-10@dothings
-DTSTART;TZID=UTC:20260716T074500
-DTEND;TZID=UTC:20260716T094500
-SUMMARY:Great Walk (Stage 2) - Flaxton
-DESCRIPTION:The second stage of a great walk in Flaxton\, organized by the 
- Sunshine Coast Hiking Group\, offering a chance for guided outdoor adventu
- re and social interaction.
-LOCATION:Flaxton
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:JACKIE MARSHALL & THE BLACK STRING QUARTET
+DESCRIPTION:An evening of live music featuring Jackie Marshall performing w
+ ith The Black String Quartet\, promising a unique blend of genres and atmo
+ spheric sound.
+LOCATION:The Majestic Theatre\, Pomona
 URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-11@dothings
-DTSTART;TZID=UTC:20260719T083000
-DTEND;TZID=UTC:20260719T103000
-SUMMARY:TechWalking - Networking for Tech Professionals
-DESCRIPTION:An outdoor walking event designed for tech professionals on the
-  Sunshine Coast to network\, share ideas\, and connect in a casual\, activ
- e setting.
-LOCATION:Sunshine Coast
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:Coast Cafe Culture
+DESCRIPTION:Engage in discussions and learn about local heritage and cultur
+ e in a relaxed cafe-style setting\, presented by the Sunshine Coast Librar
+ ies heritage team.
+LOCATION:Maleny Library\, Maleny
 URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-12@dothings
-DTSTART;TZID=UTC:20260719T000000
-DTEND;TZID=UTC:20260719T020000
-SUMMARY:Gratitude Walk and Fun Run
-DESCRIPTION:A community "gratitude walk" and fun run event\, offering a soc
- ial and active way to engage in physical activity.
-LOCATION:
+DTSTART;TZID=UTC:20260721T193000
+DTEND;TZID=UTC:20260721T213000
+SUMMARY:COPING with WINTER by DAVID WILLIAMSON (Preview)
+DESCRIPTION:A preview performance of David Williamson's new play\, "COPING 
+ with WINTER\," presented as part of the Noosa Alive! Festival at The J The
+ atre.
+LOCATION:The J Theatre\, Noosa Heads
 URL:
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-13@dothings
-DTSTART;VALUE=DATE:20260713
-DTEND;VALUE=DATE:20260713
-SUMMARY:Textile and Fibre Art Group Meeting
-DESCRIPTION:A regular gathering for enthusiasts of textile and fibre art to
-  share projects\, learn from each other\, and engage in creative discussio
- n within a supportive community setting.
-LOCATION:Caloundra Arts Centre\, Caloundra
-URL:https://www.caloundraartscentre.org.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-14@dothings
-DTSTART;VALUE=DATE:20260713
-DTEND;VALUE=DATE:20260713
-SUMMARY:Pumicestone Painters Art Group Meeting
-DESCRIPTION:An opportunity for painters to meet\, share their work\, engage
-  in artistic critique\, and work on individual or group projects in a coll
- aborative atmosphere.
-LOCATION:Caloundra Arts Centre\, Caloundra
-URL:https://www.caloundraartscentre.org.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-15@dothings
-DTSTART;VALUE=DATE:20260713
-DTEND;VALUE=DATE:20260713
-SUMMARY:Machine Embroidery Group Meeting
-DESCRIPTION:A gathering for those interested in machine embroidery to share
-  techniques\, work on projects\, and build skills within a friendly and su
- pportive group.
-LOCATION:Caloundra Arts Centre\, Caloundra
-URL:https://www.caloundraartscentre.org.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-16@dothings
-DTSTART;VALUE=DATE:20260713
-DTEND;VALUE=DATE:20260713
-SUMMARY:Happy Yarners Group Meeting
-DESCRIPTION:A casual meeting for knitting and crocheting enthusiasts to wor
- k on projects\, share patterns\, and enjoy creative camaraderie over yarn 
- crafts.
-LOCATION:Caloundra Arts Centre\, Caloundra
-URL:https://www.caloundraartscentre.org.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-17@dothings
-DTSTART;VALUE=DATE:20260714
-DTEND;VALUE=DATE:20260714
-SUMMARY:Caloundra Quilters Group Meeting
-DESCRIPTION:A weekly meeting for quilters of all skill levels to share proj
- ects\, exchange ideas\, and work on quilting in a social and supportive en
- vironment.
-LOCATION:Caloundra Arts Centre\, Caloundra
-URL:https://www.caloundraartscentre.org.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-18@dothings
-DTSTART;VALUE=DATE:20260715
-DTEND;VALUE=DATE:20260715
-SUMMARY:Caloundra Stitchers Inc. Group Meeting
-DESCRIPTION:A friendly gathering for all stitching enthusiasts to share pro
- jects\, learn new techniques\, and enjoy the company of fellow crafters.
-LOCATION:Caloundra Arts Centre\, Caloundra
-URL:https://www.caloundraartscentre.org.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-19@dothings
-DTSTART;TZID=UTC:20260717T193000
-DTEND;TZID=UTC:20260717T213000
-SUMMARY:Queensland Ballet In Noosa 2026
-DESCRIPTION:Queensland Ballet presents a performance in Noosa as part of th
- e broader Noosa Alive! Festival\, showcasing world-class ballet and contem
- porary dance.
-LOCATION:The J Noosa\, Noosa Heads
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-20@dothings
-DTSTART;VALUE=DATE:20260718
-DTEND;VALUE=DATE:20260718
-SUMMARY:ROBYN HOOD - 1922 (Silent Film)
-DESCRIPTION:A screening of the classic 1922 silent film 'Robyn Hood' at the
-  historic Majestic Theatre in Pomona\, offering a unique cinematic experie
- nce in an authentic venue.
-LOCATION:Majestic Theatre Pomona\, Pomona
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-21@dothings
-DTSTART;TZID=UTC:20260719T160000
-DTEND;TZID=UTC:20260719T180000
-SUMMARY:"HARVEST" THE HONEY SLIDERS
-DESCRIPTION:The Honey Sliders perform their 'Harvest' show at the intimate 
- and historic Majestic Theatre in Pomona\, known for supporting diverse mus
- ical acts.
-LOCATION:The Majestic Theatre Pomona\, Pomona
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-22@dothings
-DTSTART;VALUE=DATE:20260717
-DTEND;VALUE=DATE:20260717
-SUMMARY:Emotional Wellness Program
-DESCRIPTION:A multi-session program by Sunshine Coast Libraries offering pr
- actical strategies for emotional wellness\, potentially involving talks or
-  workshops on mental wellbeing. It aims to provide grounded and authentic 
- wellness support.
-LOCATION:Sunshine Coast Libraries
-URL:https://library.sunshinecoast.qld.gov.au/Whats-On/At-the-library
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-23@dothings
-DTSTART;TZID=UTC:20260715T174500
-DTEND;TZID=UTC:20260715T194500
-SUMMARY:Serenity Yoga (ADF & partners)
-DESCRIPTION:A gentle\, grounding yoga and breathwork class focused on unwin
- ding\, rebalancing\, and reconnecting body and mind. This free session is 
- specifically designed for current and ex-serving ADF members and their par
- tners.
-LOCATION:Vfwc Sunshine Coast\, Maroochydore
-URL:https://www.rslqld.org.au/what-s-on/serenity-yoga-sunshine-coast
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-24@dothings
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260717
 SUMMARY:Noosa Alive!
-DESCRIPTION:A multi-day arts and culture festival featuring music\, theatre
- \, ballet\, comedy\, and other performances across various venues in Noosa
-  Heads.
-LOCATION:Noosa Heads venues\, Noosa Heads
+DESCRIPTION:A ten-day winter culture festival showcasing a diverse program 
+ of ballet\, live entertainers\, comedy\, theatre\, and other artistic perf
+ ormances across various venues in Noosa.
+LOCATION:Various venues\, Noosa Heads
 URL:https://www.visitsunshinecoast.com/guide/sunshine-coast-events
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-25@dothings
-DTSTART;TZID=UTC:20260717T000000
-DTEND;TZID=UTC:20260717T020000
-SUMMARY:Art in Nature - Sculpture Garden Guided Walk
-DESCRIPTION:A guided walk through a sculpture garden\, exploring art integr
- ated with nature.
-LOCATION:Sculpture Garden
-URL:
+UID:sunnycoast-14@dothings
+DTSTART;VALUE=DATE:20260722
+DTEND;VALUE=DATE:20260722
+SUMMARY:Mayor’s Telstra Innovation Series – Masterclass 2
+DESCRIPTION:An innovation-focused masterclass session as part of the Mayor
+ ’s Telstra Innovation Series\, likely exploring themes in technology\, d
+ esign\, or systems thinking for future-oriented attendees.
+LOCATION:Venue 114\, Bokarina
+URL:https://www.sunshinecoast.qld.gov.au/news/score-savour-celebrate-winter
+ -comes-alive-here
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-26@dothings
-DTSTART;TZID=UTC:20260714T173000
-DTEND;TZID=UTC:20260714T193000
-SUMMARY:Introduction to Mindfulness and Meditation
-DESCRIPTION:An introductory session to mindfulness and meditation technique
- s\, suitable for beginners looking to learn practices for well-being.
-LOCATION:100 Buderim Pines Drive
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-27@dothings
-DTSTART;TZID=UTC:20260714T180000
-DTEND;TZID=UTC:20260714T200000
-SUMMARY:Free Sahaja Yoga classes
-DESCRIPTION:Free Sahaja Yoga classes held weekly in Parrearra\, offering me
- ditation and mindfulness practices in a community setting.
-LOCATION:Parrearra
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-28@dothings
-DTSTART;TZID=UTC:20260716T184500
-DTEND;TZID=UTC:20260716T204500
-SUMMARY:Game Night - Max 6
-DESCRIPTION:An intimate board or card game night limited to six participant
- s\, hosted by a social group for professional women in Noosa aged 45-65.
-LOCATION:
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-29@dothings
-DTSTART;TZID=UTC:20260719T123000
-DTEND;TZID=UTC:20260719T143000
-SUMMARY:Paint and Sip / Sips & Strokes: Winter Edition
-DESCRIPTION:A social painting workshop where participants can create art wh
- ile enjoying beverages\, presented as a "Winter Edition" by the Trails\, T
- ables & Talks Club.
-LOCATION:
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-30@dothings
-DTSTART;TZID=UTC:20260717T000000
-DTEND;TZID=UTC:20260717T020000
-SUMMARY:Coastrek Sunshine Coast 2026
-DESCRIPTION:A team-based charity hiking event along the Sunshine Coastline\
- , with 20km\, 30km\, and 50km options\, raising funds for mental health in
- itiatives through Beyond Blue.
-LOCATION:Noosa / Peregian / Marcoola to Mooloolaba
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-31@dothings
-DTSTART;TZID=UTC:20260715T080000
-DTEND;TZID=UTC:20260715T100000
-SUMMARY:The Original Eumundi Markets
-DESCRIPTION:Explore the vibrant stalls of the iconic Eumundi Markets\, feat
- uring local artisans\, food producers\, and live entertainment\, a corners
- tone of the Sunshine Coast community.
-LOCATION:Eumundi
-URL:https://eumundimarkets.com.au/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-32@dothings
-DTSTART;TZID=UTC:20260716T184500
-DTEND;TZID=UTC:20260716T204500
-SUMMARY:Game Night
-DESCRIPTION:An intimate game night for a small group (max 6) to enjoy board
-  games or card games\, fostering conversation and connection in a relaxed 
- social setting.
-LOCATION:Noosa
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-33@dothings
-DTSTART;TZID=UTC:20260719T123000
-DTEND;TZID=UTC:20260719T143000
-SUMMARY:Paint and Sip: Winter Edition
-DESCRIPTION:Unleash your creativity in a relaxed paint and sip session\, de
- signed for artistic expression and social interaction\, suitable for all s
- kill levels.
+UID:sunnycoast-15@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:Candlelight: The Best of Hans Zimmer
+DESCRIPTION:Experience the iconic scores of Hans Zimmer performed live by m
+ usicians in an intimate\, candlelit setting\, offering a unique and atmosp
+ heric musical performance.
 LOCATION:Sunshine Coast
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-34@dothings
-DTSTART;VALUE=DATE:20260716
-DTEND;VALUE=DATE:20260716
-SUMMARY:Thundamentals (Live Music)
-DESCRIPTION:A live performance by the acclaimed Australian hip-hop group Th
- undamentals\, known for their energetic shows and thoughtful lyrics. Detai
- ls on exact time and ticket purchase would be available closer to the date
-  via the venue.
-LOCATION:Kings Beach Tavern\, Caloundra
+UID:sunnycoast-16@dothings
+DTSTART;TZID=UTC:20260725T213000
+DTEND;TZID=UTC:20260725T233000
+SUMMARY:Candlelight: Best of Fleetwood Mac
+DESCRIPTION:Enjoy classic hits by Fleetwood Mac performed live by musicians
+  in an intimate\, candlelit ambiance\, creating a memorable and atmospheri
+ c musical experience.
+LOCATION:Sunshine Coast
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-35@dothings
-DTSTART;VALUE=DATE:20260718
-DTEND;VALUE=DATE:20260718
-SUMMARY:Bodyjar - How It Works 25th Anniversary Tour
-DESCRIPTION:Australian punk rock band Bodyjar celebrates the 25th anniversa
- ry of their album 'How It Works' with a live performance\, supported by sp
- ecial guests Not Dollar Short + The Wol....
-LOCATION:Kings Beach Tavern\, Sunshine Coast
+UID:sunnycoast-17@dothings
+DTSTART;TZID=UTC:20260626T180000
+DTEND;TZID=UTC:20260626T200000
+SUMMARY:Beyond: A Luna Light Journey Illuminates Sirromet Winery
+DESCRIPTION:An immersive light art installation at Sirromet Winery\, offeri
+ ng a magical 'Luna Light Journey' experience through illuminated landscape
+ s and artistic displays\, concluding its run.
+LOCATION:Sirromet Winery
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-36@dothings
-DTSTART;TZID=UTC:20260714T190000
-DTEND;TZID=UTC:20260714T210000
-SUMMARY:Energy Temple (Coast Flow Yoga)
-DESCRIPTION:An ongoing monthly community event hosted by Coast Flow\, likel
- y involving yoga\, breathwork\, or a sound journey\, designed to bring peo
- ple together for a holistic experience.
-LOCATION:Coast Flow\, Sunshine Coast
-URL:https://www.coastflow.com.au/events
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-37@dothings
-DTSTART;TZID=UTC:20260717T190000
-DTEND;TZID=UTC:20260717T210000
-SUMMARY:Radiance & Rhythm (Coast Flow Yoga)
-DESCRIPTION:Another one of Coast Flow's ongoing monthly events designed to 
- foster community and well-being\, likely incorporating movement\, breathwo
- rk\, or other mindful practices.
-LOCATION:Coast Flow\, Sunshine Coast
-URL:https://www.coastflow.com.au/events
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-38@dothings
-DTSTART;TZID=UTC:20260713T173000
-DTEND;TZID=UTC:20260713T193000
-SUMMARY:Bli Bli Social Pickleball - Monday Evenings
-DESCRIPTION:A social pickleball session for community members\, hosted by l
- ocal pickleball clubs. A chance to play and socialize in a relaxed atmosph
- ere.
-LOCATION:Bli Bli
+UID:sunnycoast-18@dothings
+DTSTART;TZID=UTC:20260726T150000
+DTEND;TZID=UTC:20260726T170000
+SUMMARY:Australian Doctors Orchestra Bloomhill Charity Concert
+DESCRIPTION:An orchestral performance by the Australian Doctors Orchestra\,
+  with proceeds supporting Bloomhill Charity\, offering a high-quality musi
+ cal experience for a good cause.
+LOCATION:The Events Centre\, Caloundra
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-39@dothings
-DTSTART;TZID=UTC:20260714T100000
-DTEND;TZID=UTC:20260714T120000
-SUMMARY:Coffee & Chat Twin Waters
-DESCRIPTION:A casual coffee and chat social gathering for singles aged 60 a
- nd over\, aimed at fostering connection and community.
-LOCATION:Twin Waters
+UID:sunnycoast-19@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:THE AUSTRALIAN CERAMICS ASSOCIATION: CONTINUUM
+DESCRIPTION:An exhibition showcasing contemporary ceramic art from members 
+ of The Australian Ceramics Association\, featuring diverse styles and tech
+ niques.
+LOCATION:Noosa Regional Gallery\, Tewantin
+URL:https://www.noosaregionalgallery.com.au/exhibitions/continuum
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-20@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:Fabrizio Biviano: Colourful Language
+DESCRIPTION:A solo exhibition by Fabrizio Biviano\, exploring themes and id
+ eas through his vibrant and expressive use of colour and form.
+LOCATION:Noosa Regional Gallery\, Tewantin
+URL:https://www.noosaregionalgallery.com.au/exhibitions/fabrizio-biviano-co
+ lourful-language
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-21@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:THE MATCHBOX SHOW
+DESCRIPTION:An exhibition where artists create miniature artworks presented
+  within matchbox-sized constraints\, showcasing intricate detail and creat
+ ivity.
+LOCATION:Noosa Regional Gallery\, Tewantin
+URL:https://www.noosaregionalgallery.com.au/exhibitions/the-matchbox-show
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-22@dothings
+DTSTART;TZID=UTC:20260726T150000
+DTEND;TZID=UTC:20260726T170000
+SUMMARY:FIRE & RAIN - DARREN COGGAN PERFORMS JAMES TAYLOR
+DESCRIPTION:Darren Coggan performs a tribute to James Taylor\, bringing his
+  classic songs to life in an intimate afternoon concert.
+LOCATION:The Majestic Theatre\, Pomona
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-40@dothings
-DTSTART;TZID=UTC:20260714T163000
-DTEND;TZID=UTC:20260714T183000
-SUMMARY:Magic of Mooloolaba FitWalk
-DESCRIPTION:A free\, social fitness walk in Mooloolaba designed for convers
- ation and light exercise\, hosted by a community walking group.
-LOCATION:Mooloolaba
+UID:sunnycoast-23@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:'LORE and LAND' art exhibition
+DESCRIPTION:An art exhibition exploring themes of Indigenous lore and conne
+ ction to the land\, presented by the Caloundra Regional Gallery.
+LOCATION:Caloundra Regional Gallery\, Caloundra
+URL:https://gallery.sunshinecoast.qld.gov.au/exhibitions/lore-and-land
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-24@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:Sense of Place III (Exhibition)
+DESCRIPTION:The third iteration of an art exhibition by Arts Connect Inc.\,
+  showcasing works inspired by and reflecting the natural beauty and enviro
+ nment of the Sunshine Coast hinterland.
+LOCATION:Mary Cairncross Scenic Reserve\, Maleny
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-41@dothings
-DTSTART;TZID=UTC:20260717T093000
-DTEND;TZID=UTC:20260717T113000
-SUMMARY:Mudjimba to Pincushion Island Beach Walk/Lunch
-DESCRIPTION:A scenic beach walk from Mudjimba to Pincushion Island\, follow
- ed by a social lunch\, organized by a group focused on fun\, fitness\, and
-  coffee.
-LOCATION:Mudjimba to Pincushion Island Beach
+UID:sunnycoast-25@dothings
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260725
+SUMMARY:Max Adventure Race Sunshine Coast
+DESCRIPTION:An adventure race set in Coochin Creek\, offering participants 
+ a physical challenge in a natural outdoor environment as part of the Sunsh
+ ine Coast's July events.
+LOCATION:Coochin Creek
+URL:https://www.sunshinecoast.qld.gov.au/news/score-savour-celebrate-winter
+ -comes-alive-here
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-26@dothings
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260725
+SUMMARY:Kundalini Activation & Breathwork | Group Session
+DESCRIPTION:A guided group session focused on Kundalini activation and brea
+ thwork techniques\, offered at the Mooloolaba Wellness Collective for thos
+ e seeking grounded wellness practices.
+LOCATION:Mooloolaba Wellness Collective\, Mooloolaba
+URL:https://sunshinecoastspots.com/events/this-month
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-27@dothings
+DTSTART;TZID=UTC:20260724T090000
+DTEND;TZID=UTC:20260724T110000
+SUMMARY:The Curated Plate
+DESCRIPTION:A culinary festival celebrating local produce\, talented chefs\
+ , and unique dining experiences across Maroochydore\, offering a chance to
+  explore the region's vibrant food scene.
+LOCATION:Maroochydore
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-42@dothings
-DTSTART;TZID=UTC:20260718T113000
-DTEND;TZID=UTC:20260718T133000
-SUMMARY:Early Saturday Lunch
-DESCRIPTION:A social early Saturday lunch meetup for empty nester couples a
- ged 45 and over\, offering a relaxed environment for connection.
-LOCATION:
+UID:sunnycoast-28@dothings
+DTSTART;TZID=UTC:20260725T100000
+DTEND;TZID=UTC:20260725T120000
+SUMMARY:Picnic on Kings 2026
+DESCRIPTION:Enjoy a community picnic at Kings Beach featuring local food\, 
+ children's activities including a Bluey Live Interactive Experience\, and 
+ a relaxed atmosphere by the ocean.
+LOCATION:Kings Beach Amphitheatre\, Caloundra
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-43@dothings
-DTSTART;TZID=UTC:20260719T080000
-DTEND;TZID=UTC:20260719T100000
-SUMMARY:Moffat Beach to Currimundi Lake 6.8km Coastal Path
-DESCRIPTION:A 6.8km social walk along the coastal path from Moffat Beach to
-  Currimundi Lake\, hosted by a women's walking and talking group.
-LOCATION:Moffat Beach to Currimundi Lake
+UID:sunnycoast-29@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:Totally Twain
+DESCRIPTION:A live music performance featuring a tribute to Shania Twain\, 
+ offering an evening of popular country-pop hits in the relaxed and social 
+ atmosphere of a brewhouse and distillery.
+LOCATION:The 101 Brewhouse + Distillery
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-44@dothings
-DTSTART;TZID=UTC:20260713T173000
-DTEND;TZID=UTC:20260713T193000
-SUMMARY:Bli Bli Social Pickleball
-DESCRIPTION:A social pickleball session for players of all levels to enjoy 
- the game\, get active\, and meet new people in the Bli Bli community.
-LOCATION:Bli Bli
-URL:
+UID:sunnycoast-30@dothings
+DTSTART;VALUE=DATE:20260726
+DTEND;VALUE=DATE:20260726
+SUMMARY:Mooloolaba Seafood Market Day
+DESCRIPTION:A local community market day dedicated to fresh seafood\, provi
+ ding an opportunity to purchase local produce and enjoy the Mooloolaba atm
+ osphere on a Sunday.
+LOCATION:Fisheries on the Spit\, Mooloolaba
+URL:https://www.sunshinecoast.qld.gov.au/news/score-savour-celebrate-winter
+ -comes-alive-here
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-31@dothings
+DTSTART;VALUE=DATE:20260726
+DTEND;VALUE=DATE:20260726
+SUMMARY:Suncoast Hot Rod Club Car Show
+DESCRIPTION:A morning car show hosted by the Suncoast Hot Rod Club\, featur
+ ing custom vehicles and offering a casual social gathering for automotive 
+ enthusiasts in Buderim.
+LOCATION:Sunshine Coast Square Dance Centre Car Park\, Buderim
+URL:https://www.asrf.org.au/index.cfm?module=event&pagemode=indiv&page_id=4
+ 847003
 END:VEVENT
 END:VCALENDAR
