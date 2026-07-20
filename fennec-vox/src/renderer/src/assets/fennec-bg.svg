@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" fill="none">
+  <defs>
+    <linearGradient id="body-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1a4a7a"/>
+      <stop offset="100%" stop-color="#3b82c4"/>
+    </linearGradient>
+    <linearGradient id="ear-inner-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#6ec6f5"/>
+      <stop offset="100%" stop-color="#3b82c4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left outer ear — large pointed triangle with rounded tip -->
+  <path
+    d="M 118,252 C 90,230 40,170 52,40 C 57,15 75,5 92,18 C 110,32 155,160 172,212 Z"
+    fill="url(#body-grad)"
+  />
+  <!-- Left inner ear -->
+  <path
+    d="M 130,248 C 108,228 72,178 82,72 C 86,50 98,43 112,56 C 128,70 155,170 168,215 Z"
+    fill="url(#ear-inner-grad)" opacity="0.55"
+  />
+
+  <!-- Right outer ear — mirrored -->
+  <path
+    d="M 282,252 C 310,230 360,170 348,40 C 343,15 325,5 308,18 C 290,32 245,160 228,212 Z"
+    fill="url(#body-grad)"
+  />
+  <!-- Right inner ear -->
+  <path
+    d="M 270,248 C 292,228 328,178 318,72 C 314,50 302,43 288,56 C 272,70 245,170 232,215 Z"
+    fill="url(#ear-inner-grad)" opacity="0.55"
+  />
+
+  <!-- Head — large round circle -->
+  <circle cx="200" cy="295" r="82" fill="url(#body-grad)"/>
+
+  <!-- Snout — oval protrusion at bottom of face -->
+  <ellipse cx="200" cy="340" rx="32" ry="22" fill="url(#body-grad)"/>
+
+  <!-- Nose tip -->
+  <ellipse cx="200" cy="353" rx="12" ry="8" fill="#1a4a7a"/>
+
+  <!-- Left eye -->
+  <ellipse cx="168" cy="282" rx="12" ry="14" fill="#0a2a4a"/>
+  <!-- Left eye highlight -->
+  <circle cx="172" cy="278" r="4" fill="white" opacity="0.6"/>
+
+  <!-- Right eye -->
+  <ellipse cx="232" cy="282" rx="12" ry="14" fill="#0a2a4a"/>
+  <!-- Right eye highlight -->
+  <circle cx="236" cy="278" r="4" fill="white" opacity="0.6"/>
+
+  <!-- Neck connector -->
+  <path
+    d="M 158,368 C 148,380 145,400 148,420 C 160,430 185,435 200,435 C 215,435 240,430 252,420 C 255,400 252,380 242,368 C 228,360 212,357 200,357 C 188,357 172,360 158,368 Z"
+    fill="url(#body-grad)"
+  />
+
+  <!-- Body / chest -->
+  <ellipse cx="200" cy="448" rx="108" ry="52" fill="url(#body-grad)"/>
+
+  <!-- Chest fluff — lighter oval on chest -->
+  <ellipse cx="200" cy="425" rx="52" ry="38" fill="#3b82c4" opacity="0.45"/>
+
+  <!-- Whisker lines — left -->
+  <line x1="138" y1="332" x2="88"  y2="326" stroke="#6ec6f5" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="138" y1="340" x2="85"  y2="340" stroke="#6ec6f5" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="138" y1="348" x2="88"  y2="354" stroke="#6ec6f5" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Whisker lines — right -->
+  <line x1="262" y1="332" x2="312" y2="326" stroke="#6ec6f5" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="262" y1="340" x2="315" y2="340" stroke="#6ec6f5" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="262" y1="348" x2="312" y2="354" stroke="#6ec6f5" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+</svg>
