@@ -22,7 +22,7 @@ export class OpenAIProvider extends BaseProvider {
 
 	constructor(
 		apiKey: string,
-		model = "gpt-5.6",
+		model = "gpt-5.6-mini",
 		name = "openai",
 		baseURL?: string,
 	) {
@@ -52,7 +52,7 @@ export class OpenAIProvider extends BaseProvider {
 			],
 		})
 			: await this.client.responses.create({
-				model: "gpt-5.6",
+				model: this.model,
 				tools: [{ type: "web_search" }],
 				max_output_tokens: 32000,
 				input: systemMsg + "\n\n" + userMsg,
