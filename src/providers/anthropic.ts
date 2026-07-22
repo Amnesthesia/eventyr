@@ -1,7 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { CATEGORIES, fmtDate, INTERESTS } from "../common.ts";
 import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
-import { BaseProvider, TIER_INSTRUCTIONS } from "./base.ts";
+import { BaseProvider, focusInstruction, TIER_INSTRUCTIONS } from "./base.ts";
 
 const SEARCH_MODEL = "claude-sonnet-4-6";
 const DISCOVERY_MODEL = "claude-opus-4-7";
@@ -18,9 +18,10 @@ export class AnthropicProvider extends BaseProvider {
 	}
 
 	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
-		const { cityCfg, tier, weekStart, weekEnd } = opts;
+		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
 		const cityName = cityCfg.name;
-		const label = `anthropic/${tier}`;
+		const tierKey = focus === "music" ? `${tier}-music` : tier;
+		const label = `anthropic/${tierKey}`;
 		console.log(`  [${label}] Searching…`);
 
 		const sources = cityCfg.sources[tier as keyof typeof cityCfg.sources] ?? [];
@@ -42,7 +43,8 @@ export class AnthropicProvider extends BaseProvider {
 					`  - Only include events within the given week range.\n` +
 					`  - Do not list sports, MLM, or sales-pitch events.\n` +
 					`  - Aim for at least 15 events.\n` +
-					`  - Include the direct URL for every event you list.`,
+					`  - Include the direct URL for every event you list.\n\n` +
+					focusInstruction(focus),
 				cache_control: { type: "ephemeral" },
 			},
 			{

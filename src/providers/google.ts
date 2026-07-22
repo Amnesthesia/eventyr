@@ -111,8 +111,9 @@ export class GoogleProvider extends BaseProvider {
 	}
 
 	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
-		const { tier } = opts;
-		const label = `google/${tier}`;
+		const { tier, focus } = opts;
+		const tierKey = focus === "music" ? `${tier}-music` : tier;
+		const label = `google/${tierKey}`;
 		console.log(`  [${label}] Searching…`);
 
 		const system =

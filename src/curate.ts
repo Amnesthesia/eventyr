@@ -90,8 +90,11 @@ function mergeAndDeduplicate(monday: Date): Record<string, unknown>[] {
 				unknown
 			>;
 			if (payload.week_start === toISODate(monday)) {
-				const venue =
-					TIER_TO_VENUE[(payload.tier as string) ?? ""] ?? "aggregator";
+				const baseTier = ((payload.tier as string) ?? "").replace(
+					/-music$/,
+					"",
+				);
+				const venue = TIER_TO_VENUE[baseTier] ?? "aggregator";
 				const events = (payload.events as Record<string, unknown>[]) ?? [];
 				allEvents.push(...events.map((e) => ({ ...e, venue })));
 			}

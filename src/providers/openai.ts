@@ -26,8 +26,9 @@ export class OpenAIProvider extends BaseProvider {
 	}
 
 	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
-		const { tier } = opts;
-		const label = `${this.name}/${tier}`;
+		const { tier, focus } = opts;
+		const tierKey = focus === "music" ? `${tier}-music` : tier;
+		const label = `${this.name}/${tierKey}`;
 		console.log(`  [${label}] Searching…`);
 
 		const systemMsg =
