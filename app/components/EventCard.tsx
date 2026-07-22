@@ -93,7 +93,13 @@ export default function EventCard({
 				</span>
 				<span className="meta-row">
 					<MapPin size={11} strokeWidth={2.2} />
-					{event.location || "—"}
+					{event.location_url ? (
+						<a href={event.location_url} target="_blank" rel="noopener">
+							{event.location || "—"}
+						</a>
+					) : (
+						event.location || "—"
+					)}
 				</span>
 			</div>
 			{event.description && <p className="card-desc">{event.description}</p>}

@@ -17,9 +17,12 @@ feeds at dothings.lol.
 4. **`src/rank.ts`** (`pnpm rank`) — Gemini scores each event 1–10 against `INTERESTS`
    (`src/common.ts`), writes scores back into `data/{city}.json`. `TOP_PICK_THRESHOLD` (7) decides
    what surfaces as a top pick.
-5. **`src/markdown.ts`**, **`src/ical.ts`**, **`src/pages.ts`** — generate `{CITY}.md`,
+5. **`src/geocode.ts`** (`pnpm geocode`) — dedupes event `location` strings, writes a Google Maps
+   search `location_url` back onto each event in `data/{city}.json` (empty string if no location).
+   No API key needed — it's a plain `maps.google.com/search` query URL, resolved live by Maps.
+6. **`src/markdown.ts`**, **`src/ical.ts`**, **`src/pages.ts`** — generate `{CITY}.md`,
    `public/{city}.ics`, and `data/index.json` / `public/sitemap.xml` respectively.
-6. **`astro build`** — builds the site from `data/*.json` (via `app/` React components + Astro
+7. **`astro build`** — builds the site from `data/*.json` (via `app/` React components + Astro
    pages in `src/pages/`).
 
 Each script reads `CITY` (city key matching a `sources/{city}.yml` file) from the environment.
@@ -64,6 +67,7 @@ export GOOGLE_API_KEY=...   # required — also used for curation + ranking
 pnpm collect          # or: pnpm collect anthropic (single provider)
 pnpm curate
 pnpm rank
+pnpm geocode
 pnpm markdown
 pnpm ical
 pnpm pages

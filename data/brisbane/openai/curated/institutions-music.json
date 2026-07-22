@@ -1,0 +1,208 @@
+{
+  "city_key": "brisbane",
+  "provider": "openai",
+  "tier": "institutions-music",
+  "week_start": "2026-07-20",
+  "week_end": "2026-07-26",
+  "events": [
+    {
+      "title": "Keys to Life — Jayson Gillham & Iyad Sughayer",
+      "datetime": "Wed 22 Jul, 7:00 PM",
+      "location": "QPAC, South Brisbane",
+      "link": "https://www.qpac.com.au/whats-on/2026/keys-to-life",
+      "category": "Concert / Music",
+      "cost": "$79–$119",
+      "source": "QPAC",
+      "description": "A sophisticated two-piano classical recital featuring works by Mozart, Debussy, and Ravel, performed by world-class pianists.",
+      "tags": [
+        "classical",
+        "music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-22T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Permission Granted",
+      "datetime": "Thu 23 Jul, various",
+      "location": "QPAC, South Brisbane",
+      "link": "https://qpac.com.au/whats-on/2026/permission-granted",
+      "category": "Concert / Music",
+      "cost": "$49",
+      "source": "QPAC",
+      "description": "A high-energy blend of live beatboxing, keys, and musical improvisation by Tom Thum and Tnee Dyer.",
+      "tags": [
+        "music",
+        "improv",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-23T00:00:00",
+      "datetime_end_iso": "2026-07-25T23:59:00",
+      "image": ""
+    },
+    {
+      "title": "Hot Toddies: Special Features",
+      "datetime": "Thu 23 Jul, 6:30 PM",
+      "location": "The Triffid, Newstead",
+      "link": "https://www.thetriffid.com.au/all-events/hot-toddies-tickets-ae1687155",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "The Triffid",
+      "description": "A stripped-back, intimate live set by Special Features at The Triffid's outdoor Garden space.",
+      "tags": [
+        "indie",
+        "music",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-23T18:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Blak Day Out",
+      "datetime": "Fri 24 Jul, 6:00 PM",
+      "location": "The Princess Theatre, Woolloongabba",
+      "link": "https://theprincesstheatre.com.au/events/blak-day-out-26",
+      "category": "Concert / Music",
+      "cost": "$29",
+      "source": "Blak Social",
+      "description": "A showcase of First Nations musical talent featuring Dan Sultan, Beddy Rays, and more at the historic Princess Theatre.",
+      "tags": [
+        "firstnations",
+        "music",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-24T18:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "The Music of Video Games — Queensland Symphony Orchestra",
+      "datetime": "Fri 24 Jul, 7:30 PM",
+      "location": "QPAC, South Brisbane",
+      "link": "https://www.qpac.com.au/whats-on/2026/the-music-of-video-games",
+      "category": "Concert / Music",
+      "cost": "$104–$145",
+      "source": "QSO",
+      "description": "The Queensland Symphony Orchestra performs iconic scores from legendary video games like Final Fantasy and Kingdom Hearts.",
+      "tags": [
+        "orchestral",
+        "gaming",
+        "music"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-24T19:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Sunset Sounds — Second Wind Jazz Band",
+      "datetime": "Sat 25 Jul, 3:30 PM",
+      "location": "Thomas Dixon Centre, West End",
+      "link": "https://www.thomasdixoncentre.com.au/events/sunset-sounds/",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "Bands in Parks",
+      "description": "An outdoor jazz performance featuring the Second Wind Jazz Band in the scenic Kite Terrace overlooking the city.",
+      "tags": [
+        "jazz",
+        "outdoor",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-25T15:30:00",
+      "datetime_end_iso": "2026-07-25T19:00:00",
+      "image": ""
+    },
+    {
+      "title": "Bands in Parks: Blockarama",
+      "datetime": "Sun 26 Jul, 10:00 AM",
+      "location": "Durack Bowls Club, Durack",
+      "link": "https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D204348388",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Bands in Parks",
+      "description": "A community event featuring steel bands and a public workshop where attendees can participate in a massed steel-band performance.",
+      "tags": [
+        "music",
+        "workshop",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-07-26T10:00:00",
+      "datetime_end_iso": "2026-07-26T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Bands in Parks: Scarf Up and Swing",
+      "datetime": "Sun 26 Jul, 12:00 PM",
+      "location": "New Farm Park, New Farm",
+      "link": "https://www.viabrisbane.com/events/bands-in-parks-scarf-up-and-swing-new-farm-park-new-farm/2026-07-26",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "Bands in Parks",
+      "description": "An open-air big-band jazz session provided by Brass Roots Live in the classic setting of New Farm Park.",
+      "tags": [
+        "jazz",
+        "outdoor",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-26T12:00:00",
+      "datetime_end_iso": "2026-07-26T15:00:00",
+      "image": ""
+    },
+    {
+      "title": "Triffid Sundays: Holy Smokes & Friends",
+      "datetime": "Sun 26 Jul, 2:00 PM",
+      "location": "The Triffid, Newstead",
+      "link": "https://www.thetriffid.com.au/all-events/holy-smokes-and-friends-tickets-ae1683897",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "The Triffid",
+      "description": "Relaxed Sunday afternoon session featuring the blues, jazz, and roots sounds of the Holy Smokes! Organ Trio.",
+      "tags": [
+        "blues",
+        "jazz",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-26T14:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

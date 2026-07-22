@@ -74,6 +74,30 @@ export function sourceNames(sources: string[]): string {
 		.join(", ");
 }
 
+// Splits raw search text into paragraph-sized chunks so no single curation
+// call has to read (or emit) an unbounded amount of text.
+export function splitIntoBatches(text: string, maxChars = 6000): string[] {
+	const paragraphs = text.split(/\n\s*\n/).filter((p) => p.trim());
+	const batches: string[] = [];
+	let current = "";
+	for (const p of paragraphs) {
+		if (current && current.length + p.length + 2 > maxChars) {
+			batches.push(current);
+			current = p;
+		} else {
+			current = current ? `${current}\n\n${p}` : p;
+		}
+	}
+	if (current) batches.push(current);
+	return batches.length ? batches : [text];
+}
+
+export function chunkArray<T>(items: T[], size: number): T[][] {
+	const chunks: T[][] = [];
+	for (let i = 0; i < items.length; i += size) chunks.push(items.slice(i, i + size));
+	return chunks;
+}
+
 export abstract class BaseProvider {
 	abstract readonly name: string;
 	abstract readonly tiers: readonly string[];
@@ -172,6 +196,30 @@ Your job:
 
 Example element (compact, single line):
 {"title":"Philosophy of Mind: AI and Consciousness","datetime":"Mon 12 May, 7:00 PM","location":"UQ St Lucia, Building 9","link":"https://events.uq.edu.au/...","category":"Public Lecture","cost":"Free","source":"UQ Events","description":"UQ's Professor of Philosophy presents her latest research on consciousness and what AI can and cannot tell us about subjective experience — aimed at a general audience, followed by open Q&A.","tags":["philosophy","ai","lecture","free"],"social":false,"intellectual":true,"hands_on":false,"creative":false,"datetime_iso":"2026-05-12T19:00:00","datetime_end_iso":"2026-05-12T21:00:00","image":"https://events.uq.edu.au/images/philosophy-lecture.jpg"}`;
+	}
+
+	// Cheap first pass: pull every event out of messy raw search text into a
+	// minimal, compact shape. No filtering, no descriptions, no tags — that's
+	// the enrichment pass's job. Keeping the schema small means even a batch
+	// of 30+ events fits comfortably under any output token limit.
+	protected buildExtractSystem(cityName: string): string {
+		return `You are extracting a raw list of events from unstructured search results about ${cityName}.
+
+Your ONLY job is extraction — do not filter, judge relevance, or skip anything unless it is clearly not an event (e.g. a table header, a section heading, a venue description with no specific date).
+
+For each event mentioned, extract only:
+  - title:    event name (string)
+  - datetime: date and time as written, e.g. "Sat 25 Jul, 10am-5pm" (string)
+  - location: venue name and/or suburb (string)
+  - link:     direct URL to the event page (string; use "" if unknown)
+  - cost:     price or "Free" as written (string)
+  - source:   website or organisation name (string)
+
+Extract EVERY event mentioned, including every row of every table and every item in every list — do not summarize, merge, or drop any. If the same event appears more than once, list it once.
+
+Output a valid compact JSON array — no whitespace or newlines between elements. No markdown, no explanation, no code fences.
+
+Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm nightly","location":"Level 7, 33 William Street, Brisbane City","link":"https://visit.brisbane.qld.au/whats-on/skyline-cinema","cost":"$5-$20","source":"The Star Brisbane"}`;
 	}
 
 	protected parseEvents(

@@ -2,6 +2,7 @@ export interface Event {
 	title: string;
 	datetime: string;
 	location: string;
+	location_url?: string;
 	link: string;
 	category: string;
 	cost: string;

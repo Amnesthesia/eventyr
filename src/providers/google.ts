@@ -1,10 +1,10 @@
 import { GoogleGenAI } from "@google/genai";
 import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
-import { BaseProvider } from "./base.ts";
+import { BaseProvider, chunkArray, splitIntoBatches } from "./base.ts";
 
-const SEARCH_MODEL = "gemini-2.5-flash";
-const DISCOVERY_MODEL = "gemini-2.5-pro";
-const CURATE_MODEL = "gemini-2.5-flash";
+const SEARCH_MODEL = "gemini-3.1-flash-lite";
+const DISCOVERY_MODEL = "gemini-3.5-flash";
+const CURATE_MODEL = "gemini-3.1-flash-lite";
 const RETRY_DELAYS = [10_000, 30_000, 90_000];
 
 export class GoogleProvider extends BaseProvider {
@@ -83,19 +83,46 @@ export class GoogleProvider extends BaseProvider {
 		cityName: string,
 		label: string,
 	): Promise<Record<string, unknown>[]> {
-		console.log(`  [${label}] Curating…`);
-		const curatedRaw = await this.curateText(
-			rawText,
-			this.buildFormatSystem(cityName),
+		if (process.env.DEBUG) console.debug(rawText);
+		const rawBatches = splitIntoBatches(rawText);
+		console.log(
+			`  [${label}] Extracting… (${rawBatches.length} batch${rawBatches.length > 1 ? "es" : ""})`,
 		);
-		const events = this.parseEvents(curatedRaw, label);
-		console.log(`  [${label}] ${events.length} events curated`);
-		return events;
+		const extractSystem = this.buildExtractSystem(cityName);
+		const extracted = (
+			await Promise.all(
+				rawBatches.map(async (batch, i) => {
+					const batchLabel = `${label} extract ${i + 1}/${rawBatches.length}`;
+					const raw = await this.curateText(batch, extractSystem, 16000);
+					return this.parseEvents(raw, batchLabel);
+				}),
+			)
+		).flat();
+		console.log(`  [${label}] ${extracted.length} events extracted`);
+		if (extracted.length === 0) return [];
+
+		const enrichSystem = this.buildFormatSystem(cityName);
+		const eventBatches = chunkArray(extracted, 20);
+		const curated = (
+			await Promise.all(
+				eventBatches.map(async (batch, i) => {
+					const batchLabel = `${label} curate ${i + 1}/${eventBatches.length}`;
+					const raw = await this.curateText(
+						JSON.stringify(batch),
+						enrichSystem,
+					);
+					return this.parseEvents(raw, batchLabel);
+				}),
+			)
+		).flat();
+		console.log(`  [${label}] ${curated.length} events curated`);
+		return curated;
 	}
 
 	private async curateText(
 		rawText: string,
 		systemInstruction: string,
+		maxOutputTokens = 65536,
 	): Promise<string> {
 		const response = await this.withRetry(() =>
 			this.ai.models.generateContent({
@@ -103,7 +130,7 @@ export class GoogleProvider extends BaseProvider {
 				contents: rawText,
 				config: {
 					systemInstruction,
-					maxOutputTokens: 65536,
+					maxOutputTokens,
 				},
 			}),
 		);

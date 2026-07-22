@@ -11,6 +11,7 @@
     "collect": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/collection.ts",
     "curate": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/curate.ts",
     "rank": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/rank.ts",
+    "geocode": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/geocode.ts",
     "markdown": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/markdown.ts",
     "ical": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/ical.ts",
     "pages": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/pages.ts",

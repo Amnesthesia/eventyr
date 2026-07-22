@@ -102,6 +102,12 @@ jobs:
           FORCE: ${{ inputs.force }}
         run: pnpm tsx --tsconfig tsconfig.scripts.json src/rank.ts
 
+      - name: Geocode locations
+        env:
+          CITY: ${{ inputs.city }}
+          FORCE: ${{ inputs.force }}
+        run: pnpm tsx --tsconfig tsconfig.scripts.json src/geocode.ts
+
       - name: Write markdown
         run: pnpm tsx --tsconfig tsconfig.scripts.json src/markdown.ts
 

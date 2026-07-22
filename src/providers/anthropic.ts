@@ -3,7 +3,7 @@ import { CATEGORIES, fmtDate, INTERESTS } from "../common.ts";
 import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
 import { BaseProvider, focusInstruction, TIER_INSTRUCTIONS } from "./base.ts";
 
-const SEARCH_MODEL = "claude-sonnet-4-6";
+const SEARCH_MODEL = "claude-sonnet-5";
 const DISCOVERY_MODEL = "claude-opus-4-7";
 const MAX_WEB_SEARCHES = 8;
 

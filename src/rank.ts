@@ -96,11 +96,11 @@ async function main(): Promise<void> {
 		`Ranking — ${payload.city as string} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
 	);
 	console.log("=".repeat(50));
-	console.log(`→ Scoring ${events.length} events with gemini-2.5-flash…`);
+	console.log(`→ Scoring ${events.length} events with Google Gemini…`);
 
 	const ai = new GoogleGenAI({ apiKey: GOOGLE_API_KEY });
 	const response = await ai.models.generateContent({
-		model: "gemini-2.5-flash",
+		model: "gemini-3.5-flash",
 		contents: buildRankUser(events),
 		config: {
 			systemInstruction: RANK_SYSTEM,
