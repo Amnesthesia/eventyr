@@ -26,12 +26,15 @@ export type CurateFunction = (
 	label: string,
 ) => Promise<Record<string, unknown>[]>;
 
+export type SearchFocus = "general" | "music";
+
 export interface ProviderOptions {
 	cityCfg: CityConfig;
 	tier: string;
 	weekStart: Date;
 	weekEnd: Date;
 	curate: CurateFunction;
+	focus: SearchFocus;
 }
 
 export const TIER_INSTRUCTIONS: Record<string, string> = {
@@ -48,6 +51,22 @@ export const TIER_INSTRUCTIONS: Record<string, string> = {
 		"Check every source. Small `site:A OR site:B` batches are fine " +
 		"where sources are closely related, but don't skip any.",
 };
+
+export const EXCLUDE_MUSIC_INSTRUCTION =
+	"Do NOT include concerts, gigs, festivals, DJ nights, or any live-music events in this pass — " +
+	"those are collected separately in a dedicated music search. Focus on everything else: talks, " +
+	"workshops, social events, exhibitions, outdoor activities, and other non-music categories.";
+
+export const MUSIC_ONLY_INSTRUCTION =
+	"Focus ONLY on live music for this pass: concerts, gigs, festivals, DJ nights with live acts, " +
+	"open mic music nights, classical/jazz/orchestral performances, and busking with scheduled sets. " +
+	"Be exhaustive — list every live music event you can find, big or small, mainstream or niche. " +
+	"The usual 'prefer smaller/niche over mainstream' guidance does NOT apply here — a touring act at " +
+	"a major venue still counts. Aim for at least 15 music events.";
+
+export function focusInstruction(focus: SearchFocus): string {
+	return focus === "music" ? MUSIC_ONLY_INSTRUCTION : EXCLUDE_MUSIC_INSTRUCTION;
+}
 
 export function sourceNames(sources: string[]): string {
 	return sources
@@ -70,47 +89,49 @@ export abstract class BaseProvider {
 		curate: CurateFunction,
 	): Promise<void> {
 		for (const tier of this.tiers) {
-			const outPath = curatedPath(city, this.name, tier);
+			for (const focus of ["general", "music"] as const) {
+				const tierKey = focus === "music" ? `${tier}-music` : tier;
+				const outPath = curatedPath(city, this.name, tierKey);
+				const label = `${this.name}/${tierKey}`;
 
-			if (!force && existsSync(outPath)) {
-				try {
-					const payload = JSON.parse(readFileSync(outPath, "utf-8")) as Record<
-						string,
-						unknown
-					>;
-					if (payload.week_start === toISODate(weekStart)) {
-						console.log(
-							`  → [${this.name}/${tier}] Already collected — skipping`,
-						);
-						continue;
+				if (!force && existsSync(outPath)) {
+					try {
+						const payload = JSON.parse(
+							readFileSync(outPath, "utf-8"),
+						) as Record<string, unknown>;
+						if (payload.week_start === toISODate(weekStart)) {
+							console.log(`  → [${label}] Already collected — skipping`);
+							continue;
+						}
+					} catch {
+						// proceed with collection
 					}
-				} catch {
-					// proceed with collection
 				}
-			}
 
-			try {
-				const opts: ProviderOptions = {
-					cityCfg,
-					tier,
-					weekStart,
-					weekEnd,
-					curate,
-				};
-				const { events } = await this.searchEvents(opts);
-				const payload = {
-					city_key: city,
-					provider: this.name,
-					tier,
-					week_start: toISODate(weekStart),
-					week_end: toISODate(weekEnd),
-					events,
-				};
-				mkdirSync(dirname(outPath), { recursive: true });
-				writeFileSync(outPath, JSON.stringify(payload, null, 2), "utf-8");
-				console.log(`  → Written ${relative(PROJECT_ROOT, outPath)}`);
-			} catch (err) {
-				console.error(`  ⚠ [${this.name}/${tier}] ${(err as Error).message}`);
+				try {
+					const opts: ProviderOptions = {
+						cityCfg,
+						tier,
+						weekStart,
+						weekEnd,
+						curate,
+						focus,
+					};
+					const { events } = await this.searchEvents(opts);
+					const payload = {
+						city_key: city,
+						provider: this.name,
+						tier: tierKey,
+						week_start: toISODate(weekStart),
+						week_end: toISODate(weekEnd),
+						events,
+					};
+					mkdirSync(dirname(outPath), { recursive: true });
+					writeFileSync(outPath, JSON.stringify(payload, null, 2), "utf-8");
+					console.log(`  → Written ${relative(PROJECT_ROOT, outPath)}`);
+				} catch (err) {
+					console.error(`  ⚠ [${label}] ${(err as Error).message}`);
+				}
 			}
 		}
 	}
@@ -193,7 +214,7 @@ Example element (compact, single line):
 	}
 
 	protected buildSearchSystem(opts: ProviderOptions): string {
-		const { cityCfg, tier, weekStart, weekEnd } = opts;
+		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
 		const cityName = cityCfg.name;
 		const sources = cityCfg.sources[tier as keyof CityConfig["sources"]] ?? [];
 		const tierInstruction = TIER_INSTRUCTIONS[tier] ?? "";
@@ -226,22 +247,29 @@ Rules:
   - Only include events within ${fmtDate(weekStart)} – ${fmtDate(weekEnd)}.
   - Apply the SKIP rules above — do not list sports, MLM, or sales-pitch events.
   - Aim for at least 15 events.
-  - Include the direct URL for every event you list.`;
+  - Include the direct URL for every event you list.
+
+${focusInstruction(focus)}`;
 	}
 
 	protected buildSearchUser(opts: ProviderOptions): string {
-		const { cityCfg, weekStart, weekEnd } = opts;
+		const { cityCfg, weekStart, weekEnd, focus } = opts;
+		const focusNote =
+			focus === "music"
+				? "Search specifically for concerts, gigs, festivals, and live music."
+				: "Skip concerts, gigs, and live music — those are handled in a separate search.";
 		return (
 			`Search for ${cityCfg.name} events this week (${fmtDate(weekStart)} to ${fmtDate(weekEnd)}). ` +
 			"Use web search on the sources listed in your instructions. " +
 			"Skip anything matching the SKIP criteria. " +
+			`${focusNote} ` +
 			"List every relevant event you find with full details and a direct URL. " +
 			"If you genuinely cannot find any relevant events after searching, respond only with: NO_EVENTS_FOUND"
 		);
 	}
 
 	protected buildOpenSystem(opts: ProviderOptions): string {
-		const { cityCfg, weekStart, weekEnd } = opts;
+		const { cityCfg, weekStart, weekEnd, focus } = opts;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
 		const outputRules =
 			"For each event include: title, date and time, venue/location, " +
@@ -252,23 +280,28 @@ Rules:
 			`You are an events researcher for ${cityCfg.name}, Australia. ` +
 			`Find in-person events for ${dateRange} matching these interests:\n${INTERESTS}\n` +
 			"Search Eventbrite, Meetup, Humanitix, venue websites, community platforms, Facebook Events, and local guides. " +
-			outputRules
+			`${outputRules}\n\n${focusInstruction(focus)}`
 		);
 	}
 
 	protected buildOpenUser(opts: ProviderOptions): string {
-		const { cityCfg, weekStart, weekEnd } = opts;
+		const { cityCfg, weekStart, weekEnd, focus } = opts;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
+		const focusNote =
+			focus === "music"
+				? "Search specifically for concerts, gigs, festivals, and live music."
+				: "Skip concerts, gigs, and live music — those are handled in a separate search.";
 		return (
 			`What in-person events are happening in ${cityCfg.name} from ${dateRange}? ` +
 			"Search broadly. Prioritise intellectually stimulating, creative, and social or community-oriented events, but list every relevant in-person event you find. " +
+			`${focusNote} ` +
 			"Include full details and a direct URL for each. " +
 			"If you genuinely cannot find any relevant events after searching, respond only with: NO_EVENTS_FOUND"
 		);
 	}
 
 	protected buildTierSystem(opts: ProviderOptions): string {
-		const { cityCfg, tier, weekStart, weekEnd } = opts;
+		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
 		const cityName = cityCfg.name;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
 		const outputRules =
@@ -276,18 +309,19 @@ Rules:
 			"direct URL to the event page, cost (Free or ticket price), organiser. " +
 			"Only include events with confirmed dates in that range. " +
 			"Skip spectator sports, MLM events, corporate sales pitches, and online-only events.";
+		const focusBlock = `\n\n${focusInstruction(focus)}`;
 
 		if (tier === "aggregators") {
 			return (
 				`You are an events researcher for ${cityName}, Australia. ` +
-				`Find in-person events listed on event platforms for ${dateRange}. ${outputRules}`
+				`Find in-person events listed on event platforms for ${dateRange}. ${outputRules}${focusBlock}`
 			);
 		}
 		if (tier === "institutions") {
 			return (
 				`You are an events researcher for ${cityName}, Australia. ` +
 				`Find in-person events at ${cityName}'s cultural institutions for ${dateRange}. ` +
-				`Search their websites, event pages, and Eventbrite listings. ${outputRules}`
+				`Search their websites, event pages, and Eventbrite listings. ${outputRules}${focusBlock}`
 			);
 		}
 		if (tier === "independents") {
@@ -296,25 +330,30 @@ Rules:
 				`Find events at small, independent venues and community groups for ${dateRange}. ` +
 				"These niche venues rarely appear on aggregators. " +
 				"Search broadly for independent bookshops, small music venues, indie galleries, " +
-				`makerspaces, philosophy groups, language exchanges, community bars and cafes with events. ${outputRules}`
+				`makerspaces, philosophy groups, language exchanges, community bars and cafes with events. ${outputRules}${focusBlock}`
 			);
 		}
 		return this.buildOpenSystem(opts);
 	}
 
 	protected buildTierUser(opts: ProviderOptions): string {
-		const { cityCfg, tier, weekStart, weekEnd } = opts;
+		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
 		const cityName = cityCfg.name;
 		const sources = cityCfg.sources[tier as keyof CityConfig["sources"]] ?? [];
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
 		const noEventsNote =
 			"If you genuinely cannot find any relevant events after searching, respond only with: NO_EVENTS_FOUND";
+		const focusNote =
+			focus === "music"
+				? "Search specifically for concerts, gigs, festivals, and live music."
+				: "Skip concerts, gigs, and live music — those are handled in a separate search.";
 
 		if (tier === "aggregators") {
 			const names = sourceNames(sources);
 			return (
 				`What events are on in ${cityName} from ${dateRange}? ` +
 				`Search these event listing platforms: ${names}. ` +
+				`${focusNote} ` +
 				`List as many specific confirmed events as you can find. ${noEventsNote}`
 			);
 		}
@@ -323,6 +362,7 @@ Rules:
 			return (
 				`What events are happening at ${cityName} cultural venues for ${dateRange}? ` +
 				`Venues to check include: ${names}. ` +
+				`${focusNote} ` +
 				`List every event you find. ${noEventsNote}`
 			);
 		}
@@ -331,6 +371,7 @@ Rules:
 			return (
 				`What events are happening at small, independent ${cityName} venues and community groups from ${dateRange}? ` +
 				`Known venues to check include: ${names} — but also search for other independent venues and community events not on that list. ` +
+				`${focusNote} ` +
 				`List every event you can find. ${noEventsNote}`
 			);
 		}
