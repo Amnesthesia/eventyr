@@ -7,138 +7,378 @@ X-WR-CALNAME:Sunshine Coast — do things
 X-WR-TIMEZONE:UTC
 BEGIN:VEVENT
 UID:sunnycoast-0@dothings
-DTSTART;TZID=UTC:20260717T100000
-DTEND;TZID=UTC:20260717T120000
-SUMMARY:Open Studios Sunshine Coast
-DESCRIPTION:Explore artist studios\, watch demonstrations\, and potentially
-  participate in workshops across the Sunshine Coast hinterland and coastli
- ne\, offering a chance to connect with local artists.
-LOCATION:Various studios across Sunshine Coast
-URL:
+DTSTART;TZID=UTC:20260726T110000
+DTEND;TZID=UTC:20260726T130000
+SUMMARY:STOICISM SUNSHINE COAST
+DESCRIPTION:A regular meetup for discussing Stoic philosophy\, providing a 
+ space for thoughtful conversation\, reflection\, and applying ancient wisd
+ om to modern life in a natural setting.
+LOCATION:Maroochy Botanic Garden at Tanawha
+URL:https://www.meetup.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-1@dothings
-DTSTART;TZID=UTC:20260725T100000
-DTEND;TZID=UTC:20260725T120000
-SUMMARY:Caloundra Repair Cafe
-DESCRIPTION:Bring broken items for repair by volunteers\, learn practical s
- kills\, and connect with community members focused on sustainability and r
- educing waste in a friendly\, hands-on environment.
-LOCATION:Caloundra
-URL:
+DTSTART;TZID=UTC:20260726T090000
+DTEND;TZID=UTC:20260726T110000
+SUMMARY:NOOSA alive! – Suzie Miller & David Williamson: Breakfast In Conv
+ ersation
+DESCRIPTION:Join acclaimed playwrights Suzie Miller and David Williamson AO
+  for breakfast and a conversation about writing\, creativity\, and contemp
+ orary theatre. This event offers insight into their craft and the current 
+ state of the arts.
+LOCATION:Peppers Noosa Resort\, Noosa
+URL:https://www.noosaalive.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-2@dothings
-DTSTART;TZID=UTC:20260721T100000
-DTEND;TZID=UTC:20260721T120000
-SUMMARY:AI Masterclass
-DESCRIPTION:An introductory masterclass on Artificial Intelligence\, presen
- ted by Bart Puszko from Blue Seas AI\, aimed at demystifying AI and its ap
- plications.
-LOCATION:Maroochydore Library
-URL:
+DTSTART;TZID=UTC:20260725T100000
+DTEND;TZID=UTC:20260725T120000
+SUMMARY:Open Studios Sunshine Coast – Hinterland Trail Weekend
+DESCRIPTION:A free\, self-guided tour of over 70 artists' studios in the Su
+ nshine Coast hinterland\, offering a chance to explore diverse art forms a
+ nd interact directly with creators. Visitors can purchase unique artworks 
+ and participate in hands-on workshops.
+LOCATION:Hinterland studios (Glass House Mountains\, Maleny\, Montville\, M
+ apleton)
+URL:https://openstudiossunshinecoast.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-3@dothings
-DTSTART;TZID=UTC:20260717T090000
-DTEND;TZID=UTC:20260717T110000
-SUMMARY:Noosa Alive! Festival
-DESCRIPTION:A major arts and culture festival featuring a diverse program o
- f live music\, theatre\, art exhibitions\, literary events\, and community
-  activities across Noosa's iconic venues\, with some free events.
-LOCATION:Various Noosa locations
-URL:noosaalive.com.au/
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260725
+SUMMARY:Rick Garage Live Music
+DESCRIPTION:Enjoy live music every Saturday at Rick Garage in Palmwoods\, a
+  local spot offering regular performances in a casual setting.
+LOCATION:Rick Garage\, Palmwoods
+URL:https://tourssunshinecoast.com.au/live-music/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-4@dothings
-DTSTART;TZID=UTC:20260724T073000
-DTEND;TZID=UTC:20260724T093000
-SUMMARY:Winter Pademelon Survey
-DESCRIPTION:Join a community-led nature survey to spot and record pademelon
- s in their natural habitat\, contributing to local wildlife conservation e
- fforts in a beautiful scenic reserve.
-LOCATION:Mary Cairncross Scenic Reserve
-URL:
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:Noosa Alive! Literary & In-Conversation Program
+DESCRIPTION:Explore an extended program of 13 literary and in-conversation 
+ events\, including breakfasts\, lunches\, and cocktail events\, featuring 
+ Australian authors and public figures like Bryan Brown and Maggie Beer.
+LOCATION:Various Noosa venues
+URL:https://www.noosaalive.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-5@dothings
-DTSTART;TZID=UTC:20260725T100000
-DTEND;TZID=UTC:20260725T120000
-SUMMARY:Paint\, Learn\, Grow - A Creative Bush Tucker Workshop for Adults
-DESCRIPTION:A hands-on workshop for adults combining creative painting with
-  learning about Australian bush tucker\, exploring native plants\, and pot
- entially gardening techniques.
-LOCATION:Sunshine Coast
-URL:
+DTSTART;TZID=UTC:20260722T090000
+DTEND;TZID=UTC:20260722T110000
+SUMMARY:Mayor's Telstra Innovation Series – Masterclass 2
+DESCRIPTION:This masterclass is part of the Mayor's Telstra Innovation Seri
+ es\, connecting business and community with forward-thinking ideas on tech
+ nology and innovation.
+LOCATION:Venue 114\, Bokarina
+URL:https://venue114.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-6@dothings
-DTSTART;TZID=UTC:20260725T190000
-DTEND;TZID=UTC:20260725T210000
-SUMMARY:The Kube's Live Art Battle Vol. 7
-DESCRIPTION:Witness artists compete in a dynamic live art battle\, creating
-  artworks spontaneously in front of an audience\, offering an exciting and
-  engaging creative performance.
-LOCATION:The Kube
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-7@dothings
-DTSTART;TZID=UTC:20260726T100000
-DTEND;TZID=UTC:20260726T120000
-SUMMARY:FRIEND APPLICATION - in real life
-DESCRIPTION:A social meetup designed for making new friends and connections
-  in person\, held at Sunshine Cove Park\, fostering natural conversations 
- in a relaxed outdoor setting.
-LOCATION:Sunshine Cove Park
-URL:
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260724
+SUMMARY:Winter Pademelon Survey
+DESCRIPTION:Participate in a citizen-science wildlife survey focused on pad
+ emelons at the beautiful Mary Cairncross Scenic Reserve\, contributing to 
+ local environmental understanding.
+LOCATION:Mary Cairncross Scenic Reserve\, Maleny
+URL:https://sunshinecoastspots.com/events/this-month
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-8@dothings
-DTSTART;TZID=UTC:20260726T180000
-DTEND;TZID=UTC:20260726T200000
-SUMMARY:Jackie Marshall & Black Square Quartet
-DESCRIPTION:An intimate live music performance by Jackie Marshall and the B
- lack Square Quartet\, promising an evening of unique sounds in the rural s
- etting of Eudlo.
-LOCATION:Eudlo
-URL:
+DTSTART;TZID=UTC:20260721T193000
+DTEND;TZID=UTC:20260721T213000
+SUMMARY:NOOSA alive! – Coping With Winter (Theatre Preview)
+DESCRIPTION:A preview performance of Australian playwright David Williamson
+ 's world premiere play\, Coping with Winter\, starring Erik Thomson. This 
+ theatrical event is a highlight of the NOOSA alive! festival.
+LOCATION:The J Theatre\, Noosa Heads
+URL:https://www.noosaalive.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-9@dothings
-DTSTART;TZID=UTC:20260723T120000
-DTEND;TZID=UTC:20260723T140000
-SUMMARY:Canta La Tumba - Presented by the Noosa Jazz Club
-DESCRIPTION:The Noosa Jazz Club presents Canta La Tumba for an afternoon of
-  live jazz music at the historic Majestic Theatre\, offering an atmospheri
- c musical experience.
-LOCATION:The Majestic Theatre\, Pomona
-URL:
+DTSTART;TZID=UTC:20260722T193000
+DTEND;TZID=UTC:20260722T213000
+SUMMARY:NOOSA alive! – Coping With Winter (Main Performances)
+DESCRIPTION:The main performances of David Williamson's world premiere play
+ \, Coping with Winter\, a headline theatrical event as part of the NOOSA a
+ live! festival. It features Erik Thomson\, Renai Caruso\, and Janneke Will
+ iamson.
+LOCATION:The J Theatre\, Noosa Heads
+URL:https://www.noosaalive.com.au/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-10@dothings
-DTSTART;TZID=UTC:20260725T190000
-DTEND;TZID=UTC:20260725T210000
-SUMMARY:JACKIE MARSHALL & THE BLACK STRING QUARTET
-DESCRIPTION:An evening of live music featuring Jackie Marshall performing w
- ith The Black String Quartet\, promising a unique blend of genres and atmo
- spheric sound.
-LOCATION:The Majestic Theatre\, Pomona
-URL:
+UID:sunnycoast-14@dothings
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:Open Studios Sunshine Coast — Coastal Trail (Final Days)
+DESCRIPTION:Explore local artists' studios on a self-guided trail along the
+  Sunshine Coast\, engaging directly with makers\, viewing diverse artforms
+ \, and potentially participating in hands-on workshops.
+LOCATION:Caloundra to Coolum
+URL:https://openstudiossunshinecoast.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-11@dothings
+UID:sunnycoast-15@dothings
 DTSTART;TZID=UTC:20260720T100000
 DTEND;TZID=UTC:20260720T120000
-SUMMARY:Coast Cafe Culture
-DESCRIPTION:Engage in discussions and learn about local heritage and cultur
- e in a relaxed cafe-style setting\, presented by the Sunshine Coast Librar
- ies heritage team.
-LOCATION:Maleny Library\, Maleny
+SUMMARY:LORE and LAND Exhibition — Caloundra Regional Gallery
+DESCRIPTION:An ongoing exhibition at Caloundra Regional Gallery offering a 
+ First Nations art and culture experience\, showcasing contemporary and tra
+ ditional works.
+LOCATION:Caloundra Regional Gallery\, Caloundra
+URL:https://events.sunshinecoast.qld.gov.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-16@dothings
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:Open Studios — Coolum Niche Art Group & Clayden Potters
+DESCRIPTION:Visit the Coolum Niche Art Group and Clayden Potters' studios a
+ s part of the Open Studios event\, offering a chance to see artists at wor
+ k and engage with local ceramic and mixed media artists.
+LOCATION:Coolum Beach area
+URL:https://openstudiossunshinecoast.com.au/artists-galleries/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-17@dothings
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:Berkelouw Books Eumundi — Book Barn & Café
+DESCRIPTION:A community-oriented bookstore and cafe that frequently hosts a
+ uthors and informal events\, particularly on Eumundi market days\, offerin
+ g a space to connect\, learn\, and be inspired.
+LOCATION:Eumundi
+URL:https://berkelouw.com.au/stores/eumundi
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-18@dothings
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:Open Studios — Asia Images Gallery (Fine Art Photography)
+DESCRIPTION:Visit Asia Images Gallery\, the Sunshine Coast's newest gallery
+ \, showcasing large-scale fine art photography from Asia as part of the Op
+ en Studios Art Trail.
+LOCATION:Sunshine Coast (coastal trail)
+URL:https://openstudiossunshinecoast.com.au/artists-galleries/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-19@dothings
+DTSTART;TZID=UTC:20260725T090000
+DTEND;TZID=UTC:20260725T110000
+SUMMARY:Open Studios — Art Space Collective Montville
+DESCRIPTION:Explore dynamic contemporary works by multiple artists in a vib
+ rant studio gallery setting\, open as part of the Hinterland Art Trail wee
+ kend.
+LOCATION:Montville\, Hinterland
+URL:https://openstudiossunshinecoast.com.au/hinterland/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-20@dothings
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:Open Studios — Clayden Potters (Ceramics Studio)
+DESCRIPTION:Visit Clayden Potters to see functional and sculptural ceramic 
+ pieces created through hand-building and wheel-throwing\, with the opportu
+ nity to engage with the artists.
+LOCATION:Sunshine Coast (coastal trail area)
+URL:https://openstudiossunshinecoast.com.au/artists-galleries/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-21@dothings
+DTSTART;TZID=UTC:20260725T090000
+DTEND;TZID=UTC:20260725T110000
+SUMMARY:Open Studios — Munimba-ja Indigenous Gallery & Yarning Place\, Ma
+ leny
+DESCRIPTION:Explore Munimba-ja\, an Indigenous-run gallery\, shopfront\, an
+ d yarning place\, offering a unique cultural and community space to connec
+ t and engage with First Nations art and stories.
+LOCATION:Maleny\, Hinterland
+URL:https://openstudiossunshinecoast.com.au/hinterland/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-22@dothings
+DTSTART;TZID=UTC:20260726T190000
+DTEND;TZID=UTC:20260726T210000
+SUMMARY:Jackie Marshall & Black Square Quartet
+DESCRIPTION:A jazz/chamber music outfit bringing their distinctive sound to
+  the intimate Eudlo Hall venue\, promising a unique artistic experience.
+LOCATION:Eudlo Hall\, Eudlo
+URL:https://www.sunshinecoast.qld.gov.au/news/score-savour-celebrate-winter
+ -comes-alive-here
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-23@dothings
+DTSTART;TZID=UTC:20260721T190000
+DTEND;TZID=UTC:20260721T210000
+SUMMARY:Noosa Alive! — "Coping with Winter" (World Premiere Preview)
+DESCRIPTION:Experience the world premiere preview of acclaimed Australian p
+ laywright David Williamson's latest work\, "Coping with Winter\," starring
+  Erik Thomson\, as part of the Noosa Alive! festival.
+LOCATION:The J\, Noosa Heads
+URL:https://www.noosaalive.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-24@dothings
+DTSTART;TZID=UTC:20260722T190000
+DTEND;TZID=UTC:20260722T210000
+SUMMARY:Noosa Alive! — "Coping with Winter" (Main Season\, Night 1)
+DESCRIPTION:Catch David Williamson's highly anticipated new play\, "Coping 
+ with Winter\," during its main season run at The J\, a headline theatrical
+  event of the Noosa Alive! festival.
+LOCATION:The J\, Noosa Heads
+URL:https://www.noosaalive.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-25@dothings
+DTSTART;TZID=UTC:20260722T100000
+DTEND;TZID=UTC:20260722T120000
+SUMMARY:Noosa Alive! One Act Plays (Wed Session)
+DESCRIPTION:Experience a selection of intimate one-act plays as part of the
+  Noosa Alive! festival\, presented at the community-focused Noosa Arts The
+ atre.
+LOCATION:Noosa Arts Theatre\, Noosaville
+URL:https://www.noosaartstheatre.org.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-26@dothings
+DTSTART;TZID=UTC:20260725T100000
+DTEND;TZID=UTC:20260725T120000
+SUMMARY:Noosa Alive! One Act Plays (Sat Morning Session)
+DESCRIPTION:Experience a selection of intimate one-act plays as part of the
+  Noosa Alive! festival\, presented at the community-focused Noosa Arts The
+ atre.
+LOCATION:Noosa Arts Theatre\, Noosaville
+URL:https://www.noosaartstheatre.org.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-27@dothings
+DTSTART;TZID=UTC:20260721T183000
+DTEND;TZID=UTC:20260721T203000
+SUMMARY:Very Short Film Festival 2026 – Sunshine Coast Screening
+DESCRIPTION:Enjoy a curated selection of short films under five minutes eac
+ h\, spanning various genres\, as the Very Short Film Festival tours Austra
+ lia with a stop at Maroochydore.
+LOCATION:BCC Cinemas Maroochydore\, Maroochydore
+URL:https://events.humanitix.com/vsff-2026-sunshine-coast
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-28@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:SITE Residency — Open Studio Period
+DESCRIPTION:Observe artists deepening and evolving their practice during th
+ is two-month creative residency\, offering dedicated space for experimenta
+ tion across disciplines\, supported by Noosa Council.
+LOCATION:The J\, Noosa Heads
+URL:https://www.thej.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-29@dothings
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260717
+SUMMARY:Practical Strategies to Feel Good (3-week course)
+DESCRIPTION:A grounded\, community-based 3-week course offered through Suns
+ hine Coast Libraries\, focusing on practical strategies for wellbeing and 
+ social connection.
+LOCATION:Sunshine Coast Libraries (branch TBC)
+URL:https://library.sunshinecoast.qld.gov.au/whats-on
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-30@dothings
+DTSTART;TZID=UTC:20260725T180000
+DTEND;TZID=UTC:20260725T200000
+SUMMARY:Candlelight: The Best of Hans Zimmer
+DESCRIPTION:An atmospheric Candlelight concert by Paradiso Strings\, perfor
+ ming orchestral renditions of Hans Zimmer's iconic film scores in the beau
+ tiful setting of Flaxton Gardens.
+LOCATION:Flaxton Gardens Sunshine Coast\, Flaxton
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-12@dothings
+UID:sunnycoast-31@dothings
+DTSTART;TZID=UTC:20260726T160000
+DTEND;TZID=UTC:20260726T180000
+SUMMARY:DJ VADIM x HEX SOUND SYSTEM + MIAMI VICE & TIMMUS +++
+DESCRIPTION:An eclectic live music event featuring acclaimed DJ Vadim along
+ side Hex Sound System\, Miami Vice\, and Timmus\, held at The Blackbox The
+ atre in Nambour.
+LOCATION:The Blackbox Theatre\, Nambour
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-32@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:Open Studios Sunshine Coast
+DESCRIPTION:An opportunity to visit local artists in their creative studios
+  across the Sunshine Coast region\, observe demonstrations\, and potential
+ ly participate in hands-on workshops.
+LOCATION:Region-wide (Sunshine Coast hinterland & coast)
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-33@dothings
+DTSTART;TZID=UTC:20260721T173000
+DTEND;TZID=UTC:20260721T193000
+SUMMARY:Introduction to Mindfulness and Meditation
+DESCRIPTION:An introductory session to mindfulness techniques and meditatio
+ n practices\, offering guidance for those looking to begin or deepen their
+  journey into mindful living.
+LOCATION:100 Buderim Pines Drive
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-34@dothings
+DTSTART;TZID=UTC:20260721T180000
+DTEND;TZID=UTC:20260721T200000
+SUMMARY:T.R.E Tuesdays
+DESCRIPTION:A recurring weekly session focused on Tension\, Trauma Releasin
+ g Exercises (TRE)\, a self-help technique designed to release chronic tens
+ ion and stress through gentle body movements.
+LOCATION:863 Sunrise Road
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-35@dothings
+DTSTART;TZID=UTC:20260718T100000
+DTEND;TZID=UTC:20260718T120000
+SUMMARY:"Sense of Place III" ACI Member Exhibition
+DESCRIPTION:An exhibition by Arts Connect Inc. members at Mary Cairncross S
+ cenic Reserve\, exploring themes of perspective and place within the macro
+  and micro\, drawing inspiration from the local ecology. Artists are often
+  present.
+LOCATION:Mary Cairncross Scenic Reserve
+URL:https://artsconnectinc.com.au/event/sense-of-place-iii/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-36@dothings
+DTSTART;TZID=UTC:20260725T090000
+DTEND;TZID=UTC:20260725T110000
+SUMMARY:Caloundra Arts Centre Open Days 2026
+DESCRIPTION:Celebrate the Caloundra Arts Centre's 50th anniversary with a f
+ amily-friendly event featuring live art and craft demonstrations across va
+ rious mediums\, a fashion parade\, and interactive make-and-take creative 
+ activities.
+LOCATION:Caloundra Arts Centre
+URL:https://events.sunshinecoast.qld.gov.au/event/18301772-a/caloundra-arts
+ -centre-open-days-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-37@dothings
+DTSTART;TZID=UTC:20260723T190000
+DTEND;TZID=UTC:20260723T210000
+SUMMARY:Sunny Coast Blues Jam with The Aitken Br...
+DESCRIPTION:Join The Aitken Brothers for a lively blues jam session\, an op
+ en invitation for musicians and enthusiasts to share their passion for blu
+ es music. This is a highly social and interactive event for the local musi
+ c community.
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-38@dothings
 DTSTART;TZID=UTC:20260721T193000
 DTEND;TZID=UTC:20260721T213000
 SUMMARY:COPING with WINTER by DAVID WILLIAMSON (Preview)
@@ -149,214 +389,779 @@ LOCATION:The J Theatre\, Noosa Heads
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-13@dothings
-DTSTART;VALUE=DATE:20260717
-DTEND;VALUE=DATE:20260717
-SUMMARY:Noosa Alive!
-DESCRIPTION:A ten-day winter culture festival showcasing a diverse program 
- of ballet\, live entertainers\, comedy\, theatre\, and other artistic perf
- ormances across various venues in Noosa.
-LOCATION:Various venues\, Noosa Heads
-URL:https://www.visitsunshinecoast.com/guide/sunshine-coast-events
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-14@dothings
-DTSTART;VALUE=DATE:20260722
-DTEND;VALUE=DATE:20260722
-SUMMARY:Mayor’s Telstra Innovation Series – Masterclass 2
-DESCRIPTION:An innovation-focused masterclass session as part of the Mayor
- ’s Telstra Innovation Series\, likely exploring themes in technology\, d
- esign\, or systems thinking for future-oriented attendees.
-LOCATION:Venue 114\, Bokarina
-URL:https://www.sunshinecoast.qld.gov.au/news/score-savour-celebrate-winter
- -comes-alive-here
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-15@dothings
-DTSTART;TZID=UTC:20260725T190000
-DTEND;TZID=UTC:20260725T210000
-SUMMARY:Candlelight: The Best of Hans Zimmer
-DESCRIPTION:Experience the iconic scores of Hans Zimmer performed live by m
- usicians in an intimate\, candlelit setting\, offering a unique and atmosp
- heric musical performance.
-LOCATION:Sunshine Coast
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-16@dothings
-DTSTART;TZID=UTC:20260725T213000
-DTEND;TZID=UTC:20260725T233000
-SUMMARY:Candlelight: Best of Fleetwood Mac
-DESCRIPTION:Enjoy classic hits by Fleetwood Mac performed live by musicians
-  in an intimate\, candlelit ambiance\, creating a memorable and atmospheri
- c musical experience.
-LOCATION:Sunshine Coast
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-17@dothings
-DTSTART;TZID=UTC:20260626T180000
-DTEND;TZID=UTC:20260626T200000
-SUMMARY:Beyond: A Luna Light Journey Illuminates Sirromet Winery
-DESCRIPTION:An immersive light art installation at Sirromet Winery\, offeri
- ng a magical 'Luna Light Journey' experience through illuminated landscape
- s and artistic displays\, concluding its run.
-LOCATION:Sirromet Winery
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-18@dothings
-DTSTART;TZID=UTC:20260726T150000
-DTEND;TZID=UTC:20260726T170000
-SUMMARY:Australian Doctors Orchestra Bloomhill Charity Concert
-DESCRIPTION:An orchestral performance by the Australian Doctors Orchestra\,
-  with proceeds supporting Bloomhill Charity\, offering a high-quality musi
- cal experience for a good cause.
-LOCATION:The Events Centre\, Caloundra
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-19@dothings
-DTSTART;TZID=UTC:20260720T100000
-DTEND;TZID=UTC:20260720T120000
-SUMMARY:THE AUSTRALIAN CERAMICS ASSOCIATION: CONTINUUM
-DESCRIPTION:An exhibition showcasing contemporary ceramic art from members 
- of The Australian Ceramics Association\, featuring diverse styles and tech
- niques.
-LOCATION:Noosa Regional Gallery\, Tewantin
-URL:https://www.noosaregionalgallery.com.au/exhibitions/continuum
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-20@dothings
-DTSTART;TZID=UTC:20260720T100000
-DTEND;TZID=UTC:20260720T120000
-SUMMARY:Fabrizio Biviano: Colourful Language
-DESCRIPTION:A solo exhibition by Fabrizio Biviano\, exploring themes and id
- eas through his vibrant and expressive use of colour and form.
-LOCATION:Noosa Regional Gallery\, Tewantin
-URL:https://www.noosaregionalgallery.com.au/exhibitions/fabrizio-biviano-co
- lourful-language
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-21@dothings
-DTSTART;TZID=UTC:20260720T100000
-DTEND;TZID=UTC:20260720T120000
-SUMMARY:THE MATCHBOX SHOW
-DESCRIPTION:An exhibition where artists create miniature artworks presented
-  within matchbox-sized constraints\, showcasing intricate detail and creat
- ivity.
-LOCATION:Noosa Regional Gallery\, Tewantin
-URL:https://www.noosaregionalgallery.com.au/exhibitions/the-matchbox-show
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-22@dothings
-DTSTART;TZID=UTC:20260726T150000
-DTEND;TZID=UTC:20260726T170000
-SUMMARY:FIRE & RAIN - DARREN COGGAN PERFORMS JAMES TAYLOR
-DESCRIPTION:Darren Coggan performs a tribute to James Taylor\, bringing his
-  classic songs to life in an intimate afternoon concert.
-LOCATION:The Majestic Theatre\, Pomona
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-23@dothings
-DTSTART;TZID=UTC:20260720T100000
-DTEND;TZID=UTC:20260720T120000
-SUMMARY:'LORE and LAND' art exhibition
-DESCRIPTION:An art exhibition exploring themes of Indigenous lore and conne
- ction to the land\, presented by the Caloundra Regional Gallery.
-LOCATION:Caloundra Regional Gallery\, Caloundra
-URL:https://gallery.sunshinecoast.qld.gov.au/exhibitions/lore-and-land
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-24@dothings
-DTSTART;TZID=UTC:20260720T100000
-DTEND;TZID=UTC:20260720T120000
-SUMMARY:Sense of Place III (Exhibition)
-DESCRIPTION:The third iteration of an art exhibition by Arts Connect Inc.\,
-  showcasing works inspired by and reflecting the natural beauty and enviro
- nment of the Sunshine Coast hinterland.
-LOCATION:Mary Cairncross Scenic Reserve\, Maleny
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-25@dothings
+UID:sunnycoast-39@dothings
 DTSTART;VALUE=DATE:20260725
 DTEND;VALUE=DATE:20260725
-SUMMARY:Max Adventure Race Sunshine Coast
-DESCRIPTION:An adventure race set in Coochin Creek\, offering participants 
- a physical challenge in a natural outdoor environment as part of the Sunsh
- ine Coast's July events.
-LOCATION:Coochin Creek
-URL:https://www.sunshinecoast.qld.gov.au/news/score-savour-celebrate-winter
- -comes-alive-here
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-26@dothings
-DTSTART;VALUE=DATE:20260725
-DTEND;VALUE=DATE:20260725
-SUMMARY:Kundalini Activation & Breathwork | Group Session
-DESCRIPTION:A guided group session focused on Kundalini activation and brea
- thwork techniques\, offered at the Mooloolaba Wellness Collective for thos
- e seeking grounded wellness practices.
+SUMMARY:Kundalini Activation & Breathwork Group Session
+DESCRIPTION:A guided group session focused on kundalini activation and brea
+ thwork practices\, offered at a local wellness studio for those seeking gr
+ ounded movement and meditation.
 LOCATION:Mooloolaba Wellness Collective\, Mooloolaba
 URL:https://sunshinecoastspots.com/events/this-month
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-27@dothings
-DTSTART;TZID=UTC:20260724T090000
-DTEND;TZID=UTC:20260724T110000
-SUMMARY:The Curated Plate
-DESCRIPTION:A culinary festival celebrating local produce\, talented chefs\
- , and unique dining experiences across Maroochydore\, offering a chance to
-  explore the region's vibrant food scene.
-LOCATION:Maroochydore
-URL:
+UID:sunnycoast-40@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:NOOSA alive! Festival 2026
+DESCRIPTION:A multi-genre arts and cultural festival featuring local\, nati
+ onal\, and international performers\, writers\, artists\, and speakers acr
+ oss various iconic Noosa locations.
+LOCATION:Various Noosa venues\, Noosaville/Noosa Heads
+URL:https://www.noosaalive.com.au/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-28@dothings
-DTSTART;TZID=UTC:20260725T100000
-DTEND;TZID=UTC:20260725T120000
-SUMMARY:Picnic on Kings 2026
-DESCRIPTION:Enjoy a community picnic at Kings Beach featuring local food\, 
- children's activities including a Bluey Live Interactive Experience\, and 
- a relaxed atmosphere by the ocean.
-LOCATION:Kings Beach Amphitheatre\, Caloundra
-URL:
+UID:sunnycoast-46@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Hayden Hack Live
+DESCRIPTION:Catch local Sunshine Coast favourite Hayden Hack performing liv
+ e at the relaxed Peregian Beach Hotel\, likely a free and casual gig.
+LOCATION:Peregian Beach Hotel\, Peregian Beach
+URL:https://peregianbeachhotel.com.au/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-29@dothings
+UID:sunnycoast-47@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Tom Nethersole: Boy in Blue Tour
+DESCRIPTION:See Tom Nethersole live as part of his Boy in Blue Tour at The 
+ Presynct\, Nambour's independent arts and music venue.
+LOCATION:The Presynct\, Nambour
+URL:https://www.oztix.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-48@dothings
+DTSTART;TZID=UTC:20260726T130000
+DTEND;TZID=UTC:20260726T150000
+SUMMARY:Live Music Sundays
+DESCRIPTION:Enjoy free live music every Sunday afternoon at the Alex Surf C
+ lub\, perfect for a relaxed coastal session with ocean views.
+LOCATION:Alexandra Headland Surf Club\, Alexandra Headland
+URL:https://localsintheloop.com.au/listing/live-music-sundays-alex-surf-clu
+ b/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-49@dothings
+DTSTART;TZID=UTC:20260725T133000
+DTEND;TZID=UTC:20260725T153000
+SUMMARY:Noosa Jazz Club Monthly Concert – July Session
+DESCRIPTION:The Noosa Heads Jazz Club hosts its monthly live concert\, cele
+ brating jazz with guest artists in a recurring community gathering.
+LOCATION:Theatre venue\, Noosa area
+URL:https://www.noosajazzclub.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-50@dothings
+DTSTART;TZID=UTC:20260721T183000
+DTEND;TZID=UTC:20260721T203000
+SUMMARY:Very Short Film Festival — Sunshine Coast
+DESCRIPTION:A curated selection of short films (under five minutes each) sp
+ anning various genres will be screened\, designed to engage\, entertain\, 
+ and spark conversation among attendees.
+LOCATION:BCC Cinemas Maroochydore
+URL:https://events.humanitix.com/vsff-2026-sunshine-coast
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-51@dothings
+DTSTART;TZID=UTC:20260722T140000
+DTEND;TZID=UTC:20260722T160000
+SUMMARY:NOOSA alive! Festival — Grigoryan Brothers: Past\, Present & Futu
+ re
+DESCRIPTION:Australia's leading classical guitar duo\, Slava and Leonard Gr
+ igoryan\, perform a program spanning their extraordinary musical journey\,
+  captivating audiences with their ARIA Award-winning talent.
+LOCATION:The J Noosa\, Noosa Heads
+URL:https://www.noosaalive.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-52@dothings
 DTSTART;TZID=UTC:20260725T190000
 DTEND;TZID=UTC:20260725T210000
-SUMMARY:Totally Twain
-DESCRIPTION:A live music performance featuring a tribute to Shania Twain\, 
- offering an evening of popular country-pop hits in the relaxed and social 
- atmosphere of a brewhouse and distillery.
-LOCATION:The 101 Brewhouse + Distillery
+SUMMARY:Majestic Theatre Pomona – July 25 Event
+DESCRIPTION:A live performance at the historic\, community-run Majestic The
+ atre\, known for its unique blend of heritage and contemporary arts progra
+ mming.
+LOCATION:Majestic Theatre\, Pomona
+URL:https://themajestictheatre.com.au/locations/the-majestic-theatre/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-53@dothings
+DTSTART;TZID=UTC:20260726T140000
+DTEND;TZID=UTC:20260726T160000
+SUMMARY:Australian Doctors Orchestra – Bloomhill Charity Concert
+DESCRIPTION:A classical orchestral concert presented by the Australian Doct
+ ors Orchestra\, with proceeds supporting the Bloomhill Cancer Care charity
+ .
+LOCATION:The Events Centre\, Caloundra
+URL:https://www.theeventscentre.com.au/whats-on/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-54@dothings
+DTSTART;TZID=UTC:20260722T100000
+DTEND;TZID=UTC:20260722T120000
+SUMMARY:Women in Manufacturing Forum
+DESCRIPTION:A forum at the UniSC Innovation Centre focused on women's parti
+ cipation and pathways in the manufacturing sector\, aimed at fostering dis
+ cussion and connection.
+LOCATION:UniSC Innovation Centre\, Sippy Downs
+URL:https://www.usc.edu.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-55@dothings
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260703
+SUMMARY:LORE | Land Exhibition
+DESCRIPTION:Explore this exhibition grounded in the deep cultural knowledge
+ \, ancestral connections\, and sovereign rights of Australian First Nation
+ s peoples at Caloundra Regional Gallery.
+LOCATION:Caloundra Regional Gallery\, Caloundra
+URL:https://gallery.sunshinecoast.qld.gov.au/exhibitions
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-56@dothings
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20260718
+SUMMARY:New Exhibition at Noosa Regional Gallery
+DESCRIPTION:Visit the Noosa Regional Gallery's new exhibition\, open from J
+ uly 18\, featuring works by exhibiting artists and offering free\, family-
+ friendly art-making activities.
+LOCATION:Noosa Regional Gallery\, Tewantin
+URL:https://www.noosaregionalgallery.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-57@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Margaret Builder — Contemporary Abstract Painting Exhibition
+DESCRIPTION:Discover the vibrant\, lyrical abstract paintings of Australian
+  artist Margaret Builder\, including works influenced by First Nations art
+ ists\, on display at The J.
+LOCATION:The J\, Noosa Heads
+URL:https://www.thej.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-58@dothings
+DTSTART;TZID=UTC:20260722T170000
+DTEND;TZID=UTC:20260722T190000
+SUMMARY:SCEIA: In Good Company – Grants & Sponsorship
+DESCRIPTION:A community-focused event by the Sunshine Coast Events Industry
+  Association\, exploring grants and sponsorship opportunities vital for lo
+ cal event makers and creatives.
+LOCATION:Pier 33\, Mooloolaba
+URL:https://sceia.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-59@dothings
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:NOOSA Alive! Festival 2026 (Full Program Highlights)
+DESCRIPTION:Discover the full program of Noosa Alive!\, the region's premie
+ r arts and culture festival\, featuring local\, national\, and internation
+ al performers\, writers\, artists\, and speakers across various iconic Noo
+ sa venues.
+LOCATION:Various iconic Noosa locations
+URL:https://www.noosaalive.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-60@dothings
+DTSTART;TZID=UTC:20260725T180000
+DTEND;TZID=UTC:20260725T200000
+SUMMARY:Allora "Camera Shy" Tour
+DESCRIPTION:Allora brings their 'Camera Shy' tour to The Presynct in Nambou
+ r\, offering a chance to hear original indie music from this touring artis
+ t.
+LOCATION:The Presynct\, Nambour
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-30@dothings
-DTSTART;VALUE=DATE:20260726
-DTEND;VALUE=DATE:20260726
-SUMMARY:Mooloolaba Seafood Market Day
-DESCRIPTION:A local community market day dedicated to fresh seafood\, provi
- ding an opportunity to purchase local produce and enjoy the Mooloolaba atm
- osphere on a Sunday.
-LOCATION:Fisheries on the Spit\, Mooloolaba
-URL:https://www.sunshinecoast.qld.gov.au/news/score-savour-celebrate-winter
- -comes-alive-here
+UID:sunnycoast-61@dothings
+DTSTART;TZID=UTC:20260725T200000
+DTEND;TZID=UTC:20260725T220000
+SUMMARY:Candlelight: Tribute to Fleetwood Mac
+DESCRIPTION:Experience a unique Candlelight tribute to Fleetwood Mac\, with
+  Paradiso Strings performing classical arrangements of their classic hits 
+ in an intimate setting at Flaxton Gardens.
+LOCATION:Flaxton Gardens Sunshine Coast\, Flaxton
+URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-31@dothings
-DTSTART;VALUE=DATE:20260726
-DTEND;VALUE=DATE:20260726
-SUMMARY:Suncoast Hot Rod Club Car Show
-DESCRIPTION:A morning car show hosted by the Suncoast Hot Rod Club\, featur
- ing custom vehicles and offering a casual social gathering for automotive 
- enthusiasts in Buderim.
-LOCATION:Sunshine Coast Square Dance Centre Car Park\, Buderim
-URL:https://www.asrf.org.au/index.cfm?module=event&pagemode=indiv&page_id=4
- 847003
+UID:sunnycoast-62@dothings
+DTSTART;TZID=UTC:20260726T120000
+DTEND;TZID=UTC:20260726T140000
+SUMMARY:Ministry of Sound Testament
+DESCRIPTION:An all-day electronic music event showcasing legendary internat
+ ional DJs like Danny Tenaglia\, Brandon Block\, and Darren Emerson\, celeb
+ rating the history of Ministry of Sound at Venue 114.
+LOCATION:Venue 114\, Bokarina
+URL:https://events.sunshinecoast.qld.gov.au/event/19875152-a/ministry-of-so
+ und
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-63@dothings
+DTSTART;TZID=UTC:20260703T100000
+DTEND;TZID=UTC:20260703T120000
+SUMMARY:LORE and LAND First Nations artists in the Art Collection
+DESCRIPTION:An exhibition at Caloundra Regional Gallery showcasing works by
+  First Nations artists\, celebrating deep cultural knowledge\, ancestral c
+ onnections\, and sovereign rights of Australian Indigenous peoples.
+LOCATION:Caloundra Regional Gallery
+URL:https://gallery.sunshinecoast.qld.gov.au/Exhibitions/Upcoming-Exhibitio
+ ns
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-64@dothings
+DTSTART;TZID=UTC:20260724T160000
+DTEND;TZID=UTC:20260724T180000
+SUMMARY:NightQuarter (Friday)
+DESCRIPTION:Experience NightQuarter\, a vibrant entertainment precinct offe
+ ring live music from various local and touring artists\, street food\, and
+  unique market stalls in a lively\, community-oriented atmosphere. It's an
+  ongoing event series with a diverse program.
+LOCATION:The Avenue\, Birtinya
+URL:https://www.sunshinecoastgetaways.com.au/activities/nightquarter/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-65@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:Christmas in July Bush Dance
+DESCRIPTION:Join a festive Christmas in July Bush Dance with live music fro
+ m the 'All In' band\, offering a fun\, interactive\, and social evening of
+  traditional Australian folk dancing. Great for community connection and a
+ ctive participation.
+LOCATION:Montville Village Hall\, Montville
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-66@dothings
+DTSTART;TZID=UTC:20260725T160000
+DTEND;TZID=UTC:20260725T180000
+SUMMARY:NightQuarter (Saturday)
+DESCRIPTION:NightQuarter provides a dynamic weekend experience with diverse
+  live music acts\, artisanal food\, and boutique market stalls. It's a lar
+ ge\, lively hub with a community feel that supports local artists and busi
+ nesses.
+LOCATION:The Avenue\, Birtinya
+URL:https://www.sunshinecoastgetaways.com.au/activities/nightquarter/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-67@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Noosa Alive! Festival (Various Music & Arts Events)
+DESCRIPTION:Part of the annual Noosa Alive! arts festival\, this date featu
+ res a diverse program of live music\, theatre\, and cultural performances 
+ across various venues in Noosa Heads.
+LOCATION:Multiple venues\, Noosa Heads
+URL:https://www.visitsunshinecoast.com/guide/sunshine-coast-events
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-68@dothings
+DTSTART;TZID=UTC:20260726T083000
+DTEND;TZID=UTC:20260726T103000
+SUMMARY:Sunshine Coast Collective Markets
+DESCRIPTION:A community market held on the fourth Sunday of the month\, fea
+ turing local makers\, art\, design\, fashion\, food stalls\, and family-fr
+ iendly activities.
+LOCATION:Coolum State Primary School\, Coolum Beach
+URL:https://noosadays.com/event/sunshine-coast-markets/2026-07-26/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-69@dothings
+DTSTART;TZID=UTC:20260725T140000
+DTEND;TZID=UTC:20260725T160000
+SUMMARY:SONGBIRDS: Gorgi Coghlan & Anna-Lee Robertson
+DESCRIPTION:Classically trained singer Gorgi Coghlan and Anna-Lee Robertson
+  perform timeless songs of legendary artists including hits from Adele\, C
+ ole Porter\, and Paul Simon.
+LOCATION:The J\, Noosa Heads
+URL:https://www.noosaalive.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-70@dothings
+DTSTART;TZID=UTC:20260726T113000
+DTEND;TZID=UTC:20260726T133000
+SUMMARY:Stars Alive! Young Talent Showcase & Family Fun Day
+DESCRIPTION:A free community showcase as part of NOOSA alive!\, featuring o
+ utstanding young singers\, musicians\, and variety performers aged 8-18 co
+ mpeting live on the River Stage.
+LOCATION:River Stage\, Lions Park\, Noosaville
+URL:https://www.noosaalive.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-77@dothings
+DTSTART;TZID=UTC:20260726T113000
+DTEND;TZID=UTC:20260726T133000
+SUMMARY:NOOSA alive! – Stars Alive! Showcase & Free Family Fun Day
+DESCRIPTION:A free community showcase featuring the Sunshine Coast's bright
+ est young performers competing on the River Stage\, alongside family-frien
+ dly entertainment. It's a relaxed outdoor event for locals.
+LOCATION:River Stage\, Lions Park\, Gympie Terrace\, Noosaville
+URL:https://www.noosaalive.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-78@dothings
+DTSTART;TZID=UTC:20260723T130000
+DTEND;TZID=UTC:20260723T150000
+SUMMARY:Canta La Tumba — Cuban & Latin Jazz
+DESCRIPTION:The Noosa Heads Jazz Club presents Canta La Tumba\, performing 
+ dynamic Cuban and Latin American jazz with unique vocals\, strings\, drums
+ \, and brass\, evoking a tropical vibe.
+LOCATION:Majestic Theatre\, Pomona
+URL:https://www.noosajazzclub.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-79@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Masters of Grunge – Pearl Jam vs Nirvana Tribute
+DESCRIPTION:A tribute show at The Shed\, recreating the sound and spirit of
+  90s grunge giants Pearl Jam and Nirvana for fans of classic rock.
+LOCATION:The Shed at Banana Bender Pub\, Palmview
+URL:https://thebananabenderpub.com/events/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-80@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:2000s + 2010s Party
+DESCRIPTION:A DJ and live music night celebrating hits from the 2000s and 2
+ 010s at the Imperial Hotel\, offering a nostalgic and energetic atmosphere
+ .
+LOCATION:Imperial Hotel\, Eumundi
+URL:https://imperialhoteleumundi.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-81@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:XACTO (XTC Tribute) + Crack That Whip
+DESCRIPTION:A new wave extravaganza at The Presynct\, featuring XACTO\, Aus
+ tralia's XTC Tribute Band\, alongside the electrifying Crack That Whip.
+LOCATION:The Presynct\, Nambour
+URL:https://thepresynct.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-82@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:BED BY 10: 30+ Daytime Clubbing
+DESCRIPTION:A unique daytime music event at Pulse Bar\, designed for the 30
+ + crowd who enjoy clubbing but prefer to be home by 10 PM.
+LOCATION:Pulse Bar\, Maroochydore
+URL:https://pulsebar.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-83@dothings
+DTSTART;TZID=UTC:20260724T200000
+DTEND;TZID=UTC:20260724T220000
+SUMMARY:Live Music Fridays
+DESCRIPTION:A regular weekly live music night at the Landsborough Hotel\, o
+ ffering a free and relaxed way to end the week in a local community settin
+ g.
+LOCATION:Landsborough Hotel\, Landsborough
+URL:https://localsintheloop.com.au/listing/live-music-fridays-landsborough-
+ hotel/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-84@dothings
+DTSTART;TZID=UTC:20260725T173000
+DTEND;TZID=UTC:20260725T193000
+SUMMARY:Live Music Saturdays
+DESCRIPTION:Enjoy free live music every Saturday evening at the Caloundra R
+ SL\, a popular community venue for a relaxed start to the weekend.
+LOCATION:Caloundra RSL\, Caloundra
+URL:https://caloundrarsl.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-85@dothings
+DTSTART;TZID=UTC:20260724T110000
+DTEND;TZID=UTC:20260724T130000
+SUMMARY:Farm to Fire – Yandina Station (with Live Acoustic Music)
+DESCRIPTION:A premium long lunch celebrating local produce and live-fire co
+ oking at historic Yandina Station\, featuring roaming canapés and live ac
+ oustic music by John Veloso.
+LOCATION:Yandina Station\, Yandina Creek
+URL:https://events.humanitix.com/farm-to-fire-or-the-curated-plate-at-yandi
+ na-station
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-86@dothings
+DTSTART;TZID=UTC:20260724T170000
+DTEND;TZID=UTC:20260724T190000
+SUMMARY:The Curated Plate — Opening Food Events (Fri–Sun)
+DESCRIPTION:The opening weekend of a 10-day food and lifestyle festival\, f
+ eaturing bespoke dining experiences\, producer dinners\, cooking events\, 
+ and food-focused community gatherings.
+LOCATION:Various Sunshine Coast locations
+URL:https://www.thecuratedplate.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-87@dothings
+DTSTART;TZID=UTC:20260724T180000
+DTEND;TZID=UTC:20260724T200000
+SUMMARY:Irie Vibez 6
+DESCRIPTION:The sixth instalment of this popular reggae/roots live music ni
+ ght at Nambour's purpose-built music venue\, featuring local and touring a
+ rtists.
+LOCATION:The Presynct\, Nambour
+URL:https://allevents.in/nambour/all
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-88@dothings
+DTSTART;TZID=UTC:20260725T140000
+DTEND;TZID=UTC:20260725T160000
+SUMMARY:NOOSA alive! Festival — SONGBIRDS (Cabaret)
+DESCRIPTION:Starring Gorgi Coghlan and Anna-Lee Robertson\, SONGBIRDS takes
+  audiences on a journey through timeless songs by legendary artists like A
+ dele\, Cole Porter\, Bernstein\, and Paul Simon.
+LOCATION:The J Noosa\, Noosa Heads
+URL:https://www.noosaalive.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-89@dothings
+DTSTART;TZID=UTC:20260725T193000
+DTEND;TZID=UTC:20260725T213000
+SUMMARY:NOOSA alive! Festival — Ursula Yovich Sings Nina Simone
+DESCRIPTION:Ursula Yovich pays homage to the legendary Nina Simone\, perfor
+ ming a powerful tribute to the iconic artist's music and legacy.
+LOCATION:The J Noosa\, Noosa Heads
+URL:https://www.noosaalive.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-90@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:NOOSA alive! Festival — Stars Alive! Youth Talent Showcase & Free
+  Family Fun Day
+DESCRIPTION:A free community showcase on the River Stage featuring the Suns
+ hine Coast's brightest young performers\, from emerging singers and musici
+ ans to future stage stars.
+LOCATION:Noosa River Stage\, Noosa
+URL:https://www.noosaalive.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-91@dothings
+DTSTART;TZID=UTC:20260724T190000
+DTEND;TZID=UTC:20260724T210000
+SUMMARY:Che Burns
+DESCRIPTION:Enjoy a live performance by Che Burns at the Peregian Beach Hot
+ el\, offering an intimate gig experience likely focused on indie or folk m
+ usic.
+LOCATION:Peregian Beach Hotel\, Peregian Beach
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-92@dothings
+DTSTART;TZID=UTC:20260724T183000
+DTEND;TZID=UTC:20260724T203000
+SUMMARY:The Filthy Animals Return to Norton's
+DESCRIPTION:The Filthy Animals perform live at Norton Music Factory\, a ded
+ icated music venue in Caloundra West\, promising a vibrant concert experie
+ nce.
+LOCATION:Norton Music Factory\, Caloundra West
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-93@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:Megalodon: Clown Face Single Launch
+DESCRIPTION:Megalodon launches their new single 'Clown Face' with live supp
+ ort from several bands including Aeon Mind and Harlum\, at Blackflag Moolo
+ olaba's taphouse.
+LOCATION:Blackflag Mooloolaba\, Mooloolaba
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-94@dothings
+DTSTART;TZID=UTC:20260725T180000
+DTEND;TZID=UTC:20260725T200000
+SUMMARY:Brit Fest
+DESCRIPTION:A celebration of British music featuring tribute shows for icon
+ ic bands like Oasis\, Coldplay\, Robbie Williams\, Blur\, and Madness\, at
+  Norton Music Factory.
+LOCATION:Norton Music Factory\, Caloundra West
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-95@dothings
+DTSTART;TZID=UTC:20260725T180000
+DTEND;TZID=UTC:20260725T200000
+SUMMARY:Bob Marley Tribute Show (featuring Roaring Lion)
+DESCRIPTION:Roaring Lion performs a Bob Marley Tribute Show at the Banana B
+ ender Pub\, celebrating the legendary reggae artist's music.
+LOCATION:Banana Bender Pub\, Palmview
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-96@dothings
+DTSTART;TZID=UTC:20260726T150000
+DTEND;TZID=UTC:20260726T170000
+SUMMARY:Anna & Jordan
+DESCRIPTION:Enjoy a relaxed afternoon or evening with live music from Anna 
+ & Jordan at the Peregian Beach Hotel.
+LOCATION:Peregian Beach Hotel\, Peregian Beach
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-97@dothings
+DTSTART;TZID=UTC:20260726T150000
+DTEND;TZID=UTC:20260726T170000
+SUMMARY:Sunday Socials w/ DJ
+DESCRIPTION:A relaxed Sunday afternoon social event with a DJ providing bac
+ kground music at The Boat Mooloolaba\, ideal for casual gatherings and con
+ versations.
+LOCATION:The Boat Mooloolaba\, Mooloolaba
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-98@dothings
+DTSTART;TZID=UTC:20260724T180000
+DTEND;TZID=UTC:20260724T200000
+SUMMARY:The Curated Plate
+DESCRIPTION:A 10-day celebration showcasing the Sunshine Coast's finest loc
+ al produce\, innovative producers\, and talented chefs through one-off din
+ ners\, degustation menus\, and unique producer experiences.
+LOCATION:Region-wide (various Sunshine Coast locations)
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-99@dothings
+DTSTART;TZID=UTC:20260724T160000
+DTEND;TZID=UTC:20260724T180000
+SUMMARY:Your Mates Brewing - Friday Knock Offs
+DESCRIPTION:A casual social gathering at Your Mates Brewing\, perfect for u
+ nwinding after the week\, meeting new people\, and enjoying local brews in
+  a relaxed community atmosphere.
+LOCATION:Your Mates Brewing
+URL:https://www.meetup.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-100@dothings
+DTSTART;TZID=UTC:20260725T160000
+DTEND;TZID=UTC:20260725T180000
+SUMMARY:Mudjimba Night Markets - Saltwater Saturdays
+DESCRIPTION:A vibrant local night market featuring stalls from local artisa
+ ns and food vendors\, offering a family-friendly atmosphere for community 
+ gathering in Mudjimba.
+LOCATION:Power Memorial Park Carpark\, Mudjimba
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-101@dothings
+DTSTART;TZID=UTC:20260724T210000
+DTEND;TZID=UTC:20260724T230000
+SUMMARY:Live Music Fridays @ Kings Beach Tavern
+DESCRIPTION:Enjoy a night of free live music featuring local artists at the
+  Kings Beach Tavern\, a popular spot for casual drinks and a relaxed atmos
+ phere. It's a regular Friday night fixture\, ideal for a laid-back social 
+ evening.
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:https://localsintheloop.com.au/event/live-music-fridays-kings-beach-tav
+ ern-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-102@dothings
+DTSTART;TZID=UTC:20260724T180000
+DTEND;TZID=UTC:20260724T200000
+SUMMARY:Friday Night Live Music (Pat Nicholson)
+DESCRIPTION:Listen to live music from Pat Nicholson in a relaxed club setti
+ ng at Mooloolaba\, offering a casual evening of tunes in a community-focus
+ ed venue. Great for a relaxed Friday night catch-up.
+LOCATION:Club Mooloolaba\, Mooloolaba
+URL:https://allevents.in/mooloolaba/friday-night-live-music/200026260193859
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-103@dothings
+DTSTART;TZID=UTC:20260725T180000
+DTEND;TZID=UTC:20260725T200000
+SUMMARY:BRIT FEST featuring OASIS - COLDPLAY - ROBBIE WILLIAMS - BLUR - MAD
+ NESS - THE JAM
+DESCRIPTION:Celebrate the best of British rock with tribute acts covering i
+ conic bands like Oasis\, Coldplay\, and Blur\, promising a high-energy nig
+ ht of anthems. Held at a dedicated music venue\, it's a great event for fa
+ ns of the genre.
+LOCATION:Norton Music Factory\, Caloundra West
+URL:https://www.sunshinecoast.qld.gov.au/whats-on/arts-and-culture/brit-fes
+ t-featuring-oasis-coldplay-robbie-williams-blur-madness-the-jam
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-104@dothings
+DTSTART;TZID=UTC:20260725T180000
+DTEND;TZID=UTC:20260725T200000
+SUMMARY:Live Music Saturdays @ 4 Pines Mooloolaba
+DESCRIPTION:Enjoy free live music on Saturday evenings at 4 Pines Mooloolab
+ a\, a popular brewery known for its craft beers and relaxed\, social atmos
+ phere. A great option for a casual night out with friends.
+LOCATION:4 Pines Mooloolaba\, Mooloolaba
+URL:https://localsintheloop.com.au/event/live-music-saturdays-4-pines-moolo
+ olaba-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-105@dothings
+DTSTART;TZID=UTC:20260726T120000
+DTEND;TZID=UTC:20260726T140000
+SUMMARY:Ministry of Sound Testament - 90s Session
+DESCRIPTION:Step back in time with Ministry of Sound's 90s session\, featur
+ ing iconic dance tracks from the decade in a vibrant day-party atmosphere.
+  It's a themed event perfect for those who enjoy classic electronic and da
+ nce music.
+LOCATION:Venue 114\, Bokarina
+URL:https://oztix.com.au/event/ministry-of-sound-testament-90s-session-suns
+ hine-coast/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-106@dothings
+DTSTART;TZID=UTC:20260726T140000
+DTEND;TZID=UTC:20260726T160000
+SUMMARY:Live Music @ The Surf Club Mooloolaba
+DESCRIPTION:Relax by the beach with live music at The Surf Club Mooloolaba\
+ , offering a casual afternoon of tunes in a community-friendly venue. Enjo
+ y the ocean views and a laid-back Sunday vibe.
+LOCATION:The Surf Club Mooloolaba\, Mooloolaba
+URL:https://localsintheloop.com.au/event/live-music-the-surf-club-mooloolab
+ a-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-107@dothings
+DTSTART;TZID=UTC:20260725T200000
+DTEND;TZID=UTC:20260725T220000
+SUMMARY:Roaring Lion – Bob Marley Tribute
+DESCRIPTION:Roaring Lion performs a live full-band tribute to Bob Marley\, 
+ delivering classic reggae hits at the Banana Bender Pub.
+LOCATION:Banana Bender Pub\, Palmview
+URL:https://thebananabenderpub.com/events/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-108@dothings
+DTSTART;TZID=UTC:20260722T140000
+DTEND;TZID=UTC:20260722T160000
+SUMMARY:OLIVIA: A Tribute to Olivia Newton-John (Matinee)
+DESCRIPTION:Tottie Goldsmith presents a heartfelt cabaret tribute to her au
+ nt\, the iconic Olivia Newton-John\, exploring her life and music in this 
+ NOOSA alive! festival performance.
+LOCATION:The J\, Noosa Heads
+URL:https://www.noosaalive.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-111@dothings
+DTSTART;TZID=UTC:20260725T193000
+DTEND;TZID=UTC:20260725T213000
+SUMMARY:Covers/Tribute Bands Night
+DESCRIPTION:An evening dedicated to covers and tribute bands\, offering a l
+ ively celebration of popular music at The Events Centre.
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/whats-on/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-112@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:COOL BRITTANIA
+DESCRIPTION:Enjoy live music with a "Cool Brittania" theme at the historic 
+ Imperial Hotel\, a venue known for hosting diverse acts from Thursday to S
+ unday.
+LOCATION:Imperial Hotel\, Eumundi
+URL:https://imperialhoteleumundi.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-113@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Reckoning Live
+DESCRIPTION:Enjoy live music from Reckoning at Blackflag Brewing\, Mooloola
+ ba's popular craft brewery\, offering a relaxed atmosphere with good beer.
+LOCATION:Blackflag Brewing\, Mooloolaba
+URL:https://blackflagbrewing.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-114@dothings
+DTSTART;TZID=UTC:20260724T190000
+DTEND;TZID=UTC:20260724T210000
+SUMMARY:Bingo Loco — Banana Bender Pub\, Palmview
+DESCRIPTION:A wildly social\, interactive bingo rave featuring prizes\, dan
+ cing\, and high-energy group interaction\, offering a unique social experi
+ ence for a mixed-age crowd.
+LOCATION:The Banana Bender Pub\, Palmview
+URL:https://www.eventbrite.com.au/e/bingo-loco-palmview-the-banana-bender-p
+ ub-friday-24th-july
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-115@dothings
+DTSTART;TZID=UTC:20260724T193000
+DTEND;TZID=UTC:20260724T213000
+SUMMARY:NOOSA alive! Festival — OLIVIA: A Tribute to Olivia Newton-John
+DESCRIPTION:Tottie Goldsmith presents a heartwarming tribute to her aunt\, 
+ Olivia Newton-John\, in the Queensland premiere of this musical celebratio
+ n.
+LOCATION:The J Noosa\, Noosa Heads
+URL:https://www.noosaalive.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-116@dothings
+DTSTART;TZID=UTC:20260724T210000
+DTEND;TZID=UTC:20260724T230000
+SUMMARY:Dance through the Decades - Caloundra
+DESCRIPTION:A lively 'Dance through the Decades' event at Kings Beach Taver
+ n in Caloundra\, featuring music from various eras for a night of dancing 
+ and nostalgia.
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-117@dothings
+DTSTART;TZID=UTC:20260725T193000
+DTEND;TZID=UTC:20260725T213000
+SUMMARY:Rogue Traders at Kings Beach Tavern
+DESCRIPTION:Australian electronic rock band Rogue Traders perform live at K
+ ings Beach Tavern\, known for their energetic stage presence and hit songs
+ .
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-118@dothings
+DTSTART;TZID=UTC:20260726T143000
+DTEND;TZID=UTC:20260726T163000
+SUMMARY:Yacht Rock Revival
+DESCRIPTION:Set sail on a journey of smooth sounds with the Yacht Rock Revi
+ val at Kings Beach Tavern\, celebrating classic 70s and 80s soft rock.
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-119@dothings
+DTSTART;TZID=UTC:20260722T190000
+DTEND;TZID=UTC:20260722T210000
+SUMMARY:Social Volleyball Games - Meridan State College ALL Levels
+DESCRIPTION:An inclusive social volleyball session open to players of all s
+ kill levels\, offering a chance to meet new people\, get active\, and enjo
+ y friendly games in a community setting.
+LOCATION:Meridan State College
+URL:https://www.meetup.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-120@dothings
+DTSTART;TZID=UTC:20260725T200000
+DTEND;TZID=UTC:20260725T220000
+SUMMARY:Rogue Traders “THE ANTHEMS” 21st Anniversary Tour
+DESCRIPTION:Celebrate 21 years of Rogue Traders with their 'THE ANTHEMS' to
+ ur\, playing their biggest hits live at Kings Beach Tavern. Expect a high-
+ energy performance from this iconic Australian act.
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-121@dothings
+DTSTART;TZID=UTC:20260726T143000
+DTEND;TZID=UTC:20260726T163000
+SUMMARY:Yacht Rock Revival - Caloundra
+DESCRIPTION:Enjoy an afternoon of smooth sounds with the Yacht Rock Revival
+  band\, performing classic hits from the 70s and 80s soft rock era. A perf
+ ect laid-back Sunday session for fans of the genre.
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:https://oztix.com.au/event/yacht-rock-revival-caloundra/
 END:VEVENT
 END:VCALENDAR
