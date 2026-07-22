@@ -1,32 +1,16 @@
 # Brisbane — This Week's Events
 **20 July 2026 – 26 July 2026**  
-*73 top picks · 167 events total*
+*60 top picks · 187 events total*
 
 ## ⭐ Top Picks
 
-### 🤝 [HSBNE Tuesday Open Night — Hackerspace Tour](https://hsbne.org/visit)
-📆 Tue 21 Jul, evening  
-📍 HSBNE, Sumner  
-💰 Free  
-`makerspace` `community` `tour` `free` `technology`
-
-Visit HSBNE's community-driven makerspace on their open night for a free tour, exploring workshops in woodworking, electronics, 3D printing, and more, ideal for creative and curious individuals.
-
-### 🛠️ Maker Mondays - learn about 3D printing, laser cutting, electronics and more!
-📆 Mon 20 Jul, 8:00 AM – 10:00 AM  
-📍 Brisbane Makerspace (BMS), Fortitude Valley  
-💰 Free  
-`maker` `technology` `workshop` `free` `community`
-
-A recurring open session at Brisbane Makerspace where participants can learn about and experiment with various maker technologies like 3D printing, laser cutting, and electronics, fostering a community of creative problem-solvers.
-
 ### 🎵 [claire rousay](https://www.songkick.com/metro-areas/26778-australia-brisbane)
-📆 Wed 22 Jul, 7:00 PM  
-📍 Institute of Modern Art, Fortitude Valley  
-💰 Ticketed  
-`experimental` `ambient` `music` `artistic`
+📆 Wed 22 Jul 2026  
+📍 Institute of Modern Art, Brisbane  
+💰 Check venue  
+`experimental` `ambient` `music`
 
-Experimental ambient sound artist claire rousay performs a unique, intimate set at Brisbane's Institute of Modern Art, offering an arts-world experience.
+Experimental musician and percussionist claire rousay performs a live set blending field recordings, ambient sounds, and delicate instrumentation.
 
 ### 🎓 [BrisScience: The Hidden Journey of Microplastics](https://www.eventbrite.com.au/o/brisscience-the-university-of-queensland-8028641824)
 📆 Date/Time TBC this week  
@@ -36,6 +20,14 @@ Experimental ambient sound artist claire rousay performs a unique, intimate set 
 
 Professor Kevin Thomas explores the hidden journey of microplastics through the environment in this monthly BrisScience lecture, designed to make science accessible to all.
 
+### 🛠️ [Build with AI 4.0 – GDG Brisbane](https://www.eventbrite.com.au/d/australia--brisbane-city/classes/)
+📆 Date/Time TBC this week  
+📍 Brisbane CBD  
+💰 TBC  
+`ai` `technology` `workshop` `community`
+
+Join GDG Brisbane for a community-driven, hands-on workshop focused on AI development, attracting technically engaged people for open discussion and practical application of AI tools.
+
 ### 🎨 [Paperbark Zine Fair 2026](https://breadbne.substack.com/p/brisbane-radical-events-diary-220726)
 📆 Sat 25 Jul  
 📍 Jagera Hall, Brisbane  
@@ -44,61 +36,125 @@ Professor Kevin Thomas explores the hidden journey of microplastics through the 
 
 Celebrate self-publishing and creative community at the Paperbark Zine Fair, where zine makers showcase their paper creations, including a variety with political content.
 
-### 🎓 [BrisScience: Every Breath, Every Bite — The Hidden Journey of Microplastics](https://www.eventbrite.com.au/d/australia--brisbane-city/free--events/)
-📆 Wed 22 Jul, 6:00 PM  
-📍 The Edge, State Library of Queensland, South Brisbane  
+### 🤝 [Sonder Brisbane Language Exchange Meetup](https://www.theburrowwestend.com.au/events/sonder-brisbane---language-exchange-meetup-19)
+📆 Tue 21 Jul, 5:00 PM  
+📍 The Burrow, West End  
 💰 Free  
-`science` `environment` `lecture` `free`
+`languages` `meetup` `social` `free`
 
-Professor Kevin Thomas from UQ explores the journey of microplastics in the environment as part of BrisScience, a monthly lecture series bringing science to the public at The Edge. Expect an engaging talk followed by Q&A.
+A casual, recurring social gathering where people from diverse cultural backgrounds practice languages and meet new friends in an relaxed, community-oriented setting.
 
-### 🎓 [The Investigative Mindset: Journalism, Truth and Public Interest](https://hass.uq.edu.au/hass-events-2026)
-📆 Wed 22 Jul, 6:00 PM  
-📍 University of Queensland (exact room TBC)  
+### 🤝 [Brisbane City Fountain Pen Meet – July](https://allevents.in/brisbane/meetups)
+📆 Sat 25 Jul, 12:00 PM  
+📍 Hotel West End, Brisbane  
 💰 Free  
-`journalism` `ethics` `panel` `free`
+`hobby` `community` `craft` `free`
 
-A panel discussion hosted by the Walkley Foundation and UQ, exploring the craft, impact, and career paths within investigative journalism, offering insights into truth-seeking and public interest reporting.
+A niche hobbyist group meeting where enthusiasts gather to discuss fountain pens, inks, paper, and calligraphy, fostering a small community of local makers and collectors.
 
-### 🎓 [Portrait of an Artist — Helga Groves In-Conversation](https://www.slq.qld.gov.au/)
-📆 Wed 22 Jul, 6:00 PM  
+### 🛠️ [QAGOMA Drawing Festival](https://www.qagoma.qld.gov.au/whats-on/)
+📆 Sat 25 – Sun 26 July 2026  
+📍 GOMA, South Bank, Brisbane  
+💰 Free  
+`art` `workshop` `creativity` `free`
+
+A weekend-long celebration of drawing featuring drop-in workshops and activities led by artists designed for all skill levels to engage with the creative process.
+
+### 🎓 [Leah King-Smith: rhythm wRites Forum](https://www.qut.edu.au/events)
+📆 Fri 24 July 2026, 10:00am  
+📍 QUT Gardens Point Campus, 2 George Street, Brisbane  
+💰 Check website for cost  
+`philosophy` `history` `lecture` `art`
+
+An intellectually rigorous forum exploring the intersection of art, history, and cultural identity, featuring scholar and artist Leah King-Smith.
+
+### 🎓 [World Religions Experience Day](https://hpi.uq.edu.au/events)
+📆 Wed 22 July 2026  
+📍 UQ St Lucia Campus  
+💰 Free  
+`philosophy` `history` `education` `free`
+
+An educational event hosted by UQ staff exploring diverse global belief systems, historical contexts, and the philosophical inquiries underpinning world religions.
+
+### 🤝 [Maker Mondays](https://brisbanemaker.space)
+📆 Mon 20 Jul, 8:00 AM  
+📍 Brisbane Makerspace, Fortitude Valley  
+💰 Free  
+`maker` `community` `free` `social`
+
+A casual weekly gathering for makers, tinkerers, and creators to share projects, troubleshoot technical problems, and connect with the local DIY community.
+
+### 🛠️ [Women's Woodworking](https://hsbne.org)
+📆 Tue 21 Jul, 6:00 PM  
+📍 HSBNE, Sumner  
+💰 Check website  
+`woodworking` `maker` `workshop` `creative`
+
+A hands-on workshop focused on woodworking skills within the HSBNE makerspace community, designed for women interested in building and fabrication.
+
+### 🎵 [Mono 61: claire rousay and Peter Knight](https://ima.org.au)
+📆 Wed 22 Jul, 6:30 PM  
+📍 Institute of Modern Art, Fortitude Valley  
+💰 Check website  
+`music` `experimental` `art` `performance`
+
+An experimental music performance featuring claire rousay and Peter Knight, exploring soundscapes in the atmospheric setting of the IMA.
+
+### 🎓 [The Investigative Mindset: Journalism, Truth and Public Interest](https://alumni.uq.edu.au/event/session/8254)
+📆 22 July 2026, 5:30 PM  
+📍 The University of Queensland  
+💰 Free  
+`journalism` `philosophy` `lecture` `free`
+
+A talk exploring the role of investigative journalism in uncovering truth and serving the public interest in the current media landscape.
+
+### 🛠️ [Sculptures & Sips: Mechanical Reef](https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D204774203)
+📆 Thu 23 Jul, 6:30 PM  
+📍 Dead Puppet Society, Woolloongabba  
+💰 $135  
+`maker` `design` `workshop` `creative`
+
+A hands-on workshop hosted by Dead Puppet Society where you learn basic mechanics and design principles to create a small-scale kinetic mechanical reef sculpture.
+
+### 🤝 [International Language Exchange Meetup](https://www.meetup.com/international-and-local-language-exchange-brisbane/events/)
+📆 Wed 22 Jul, 5:30 PM  
+📍 Brisbane CBD  
+💰 Free  
+`language` `social` `community` `free`
+
+A relaxed, recurring community meetup where locals and internationals gather to practice conversation in various languages, fostering cultural connection.
+
+### 🛠️ [Sculptures & Sips: Mechanical Reef](https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D204774204)
+📆 Fri 24 Jul, 6:30 PM  
+📍 Dead Puppet Society, Woolloongabba  
+💰 $135  
+`art` `workshop` `maker` `creative`
+
+A hands-on workshop hosted by the Dead Puppet Society where participants craft mechanical sculptures, blending artistic expression with structural design.
+
+### 🎓 [myEthicalDilemma – Session 1](https://www.meetup.com/en-au/humanists-brisbane/events/315452883/)
+📆 Sun 26 Jul, 10:00 AM  
 📍 State Library of Queensland, South Brisbane  
 💰 Free  
-`art` `creativity` `artist talk` `free`
+`philosophy` `ethics` `discussion`
 
-Artist Helga Groves discusses her creative process, the role of field research, and how memory, environment, and abstraction influence her art, followed by an in-conversation and Q&A session with art historian Michele Helmrich.
+A salon-style discussion where participants explore modern moral and ethical challenges in a facilitated group setting.
 
-### 🛠️ [Essentials of Compelling Fiction with Isobelle Carmody](https://www.queenslandwriters.org.au/events)
-📆 Sat 18 Jul, 10:30 AM  
-📍 Queensland Writers Centre  
+### 🛠️ [Architecture in Miniature – Skate Parks](https://www.slq.qld.gov.au/whats-on/architecture-miniature-skate-bowls)
+📆 25 July 2026, 1–5pm  
+📍 The Edge, South Brisbane  
+💰 $325  
+`design` `architecture` `workshop` `maker`
+
+A hands-on workshop series focusing on the intersection of design, architecture, and functional engineering through building scale models.
+
+### 🎵 [Graeme Norris Sextet](https://www.jazz.qld.edu.au/jmi-live/)
+📆 Thu 23 Jul 2026  
+📍 JMI Live, Brisbane  
 💰 Ticketed  
-`writing` `workshop` `fiction` `creative`
+`jazz` `live-music` `instrumental`
 
-A comprehensive writing workshop led by acclaimed author Isobelle Carmody, focusing on the essential elements required to create compelling fiction narratives.
-
-### 🛠️ [Plot and Structure with Melanie Myers](https://www.queenslandwriters.org.au/events)
-📆 Sun 19 Jul, 10:30 AM  
-📍 Queensland Writers Centre  
-💰 Ticketed  
-`writing` `workshop` `fiction` `structure`
-
-A focused writing workshop with Melanie Myers, guiding participants through the critical aspects of plot development and structural techniques for effective storytelling.
-
-### 🛠️ [Traditional Publishing with Rowena Beresford](https://www.queenslandwriters.org.au/events)
-📆 Sun 26 Jul, 10:30 AM  
-📍 Queensland Writers Centre  
-💰 Ticketed  
-`writing` `publishing` `workshop` `career`
-
-Learn the ins and outs of traditional publishing from industry expert Rowena Beresford, covering submission processes, agent relationships, and career pathways for writers.
-
-### 🎵 [Candlelight Concerts Brisbane](https://feverup.com/en/brisbane/candlelight)
-📆 Thu 23 Jul, 7:00 PM  
-📍 Various intimate Brisbane venues  
-💰 Ticketed  
-`classical` `cinematic` `atmosphere` `intimate`
-
-Immerse yourself in atmospheric candlelit classical and cinematic music performances held in various intimate venues across Brisbane, offering a strong artistic experience.
+A sophisticated jazz performance by the Graeme Norris Sextet, presented by the Jazz Music Institute.
 
 ### 🛠️ [Brissie African Drumming Course with Elliott Orr](https://allevents.in/brisbane/2026-07-22)
 📆 Wed 22 Jul, 7:00 PM  
@@ -108,21 +164,13 @@ Immerse yourself in atmospheric candlelit classical and cinematic music performa
 
 Join Elliott Orr for a hands-on, communal African drumming class at the casual West End Croquet Club, suitable for both beginners and experienced players.
 
-### 🎨 [Common Threads: United By The Red Dress](https://allevents.in/brisbane/exhibitions)
-📆 Sun 26 Jul, 11:00 AM  
-📍 Brisbane City Hall, Brisbane CBD  
+### 🤝 [RPG Society @ Vault Games Brisbane City](https://allevents.in/brisbane/2026-07-22)
+📆 Wed 22 Jul, 6:00 PM  
+📍 Vault Games, Brisbane CBD  
 💰 TBC  
-`art` `exhibition` `fashion` `culture`
+`rpg` `gaming` `social` `community`
 
-Explore a new exhibition at Brisbane City Hall, delving into the powerful symbolism and diverse stories woven into a single striking garment, "The Red Dress".
-
-### 🛠️ [Build with AI 4.0 – GDG Brisbane](https://www.eventbrite.com.au/d/australia--brisbane-city/classes/)
-📆 Date/Time TBC this week  
-📍 Brisbane CBD  
-💰 TBC  
-`ai` `technology` `workshop` `community`
-
-Join GDG Brisbane for a community-driven, hands-on workshop focused on AI development, attracting technically engaged people for open discussion and practical application of AI tools.
+Join a recurring tabletop roleplaying games social night at Vault Games Brisbane City, a dedicated gaming store welcoming to newcomers and seasoned players alike.
 
 ### 🎓 [Queensland Ornithological Conference](https://www.eventbrite.com.au/d/australia--queensland/events/)
 📆 Date/Time TBC this week  
@@ -132,6 +180,14 @@ Join GDG Brisbane for a community-driven, hands-on workshop focused on AI develo
 
 Attend a specialist conference on birds and birdwatching in Queensland, bringing together researchers, naturalists, and amateurs interested in ecology and wildlife science.
 
+### 🛠️ [Path to Publication – Adult Fiction](https://www.eventbrite.com.au/d/australia--ipswich/events/)
+📆 Date/Time TBC this week  
+📍 Brisbane (TBC)  
+💰 TBC  
+`writing` `publishing` `workshop` `creative`
+
+This workshop guides aspiring adult fiction writers through the publishing world, offering community and practical guidance on getting their work into print.
+
 ### 🤝 [The Art of Community: An Evening with Coffee Brigade](https://allevents.in/brisbane/today)
 📆 Mon 20 Jul, 5:30 PM  
 📍 Central Plaza One, Brisbane CBD  
@@ -139,14 +195,6 @@ Attend a specialist conference on birds and birdwatching in Queensland, bringing
 `community` `social` `discussion` `coffee`
 
 An evening meetup with Coffee Brigade, bringing together creatives and locals to discuss the power of community connection over coffee.
-
-### 🤝 [Monday Night Social Commander @ Vault Games Brisbane](https://allevents.in/brisbane/today)
-📆 Mon 20 Jul, 6:30 PM  
-📍 Vault Games, Brisbane CBD  
-💰 TBC  
-`gaming` `magic the gathering` `social` `community`
-
-Join a recurring social night for Magic: The Gathering Commander at Vault Games Brisbane, welcoming both competitive and casual players to connect over games.
 
 ### 🛠️ [Life Painting with Female Model – Brisbane City](https://www.eventbrite.com.au/d/australia/brisbane/)
 📆 Date/Time TBC this week  
@@ -164,897 +212,1065 @@ Participate in a relaxed, social life-drawing session in Brisbane's CBD, offerin
 
 Explore powerful First Nations storytelling through contemporary and historical Indigenous Australian art at GOMA, featuring a Venice Biennale Golden Lion-winning project.
 
-### 🎵 [Candlelight Concert](https://feverup.com/en/brisbane/candlelight)
-📆 Thu 23 Jul  
-📍 Various intimate Brisbane locations  
-💰 From $45  
-`classical music` `chamber` `intimate` `atmosphere`
-
-Experience a Candlelight concert featuring chamber or classical performances of popular repertoire in an intimate, candlelit setting at various Brisbane locations.
-
-### 🎵 [Open Season Brisbane – Final Week](https://au.rollingstone.com/)
-📆 Mon 20 - Sat 25 Jul  
-📍 Multiple Brisbane venues  
-💰 Varies by event  
-`music festival` `multiple venues` `diverse artists` `cultural`
-
-The final week of Brisbane's multi-venue Open Season festival, featuring a diverse lineup of artists like Kae Tempest, Mogwai, and Earl Sweatshirt across various cultural spaces.
-
-### 🎨 [Hurtigruten Nordic Film Festival](https://www.palacecinemas.com.au/festivals)
-📆 Mon 20 - Sun 26 Jul, various times  
-📍 Palace Barracks Cinema, Brisbane  
-💰 $22+  
-`film` `festival` `nordic` `culture`
-
-Experience the best new cinema from Denmark, Finland, Iceland, Norway, and Sweden at the Hurtigruten Nordic Film Festival, showcasing unique storytelling and breathtaking landscapes.
-
-### 🤝 [Board Game Weekly Meetup](https://allevents.in/brisbane/meetups)
-📆 Sat 25 Jul, 10:00 AM onwards  
-📍 Vault Games, Brisbane CBD  
+### 🎨 [Mandy Quadrio: Kukunna Wurraweena](https://www.ima.org.au/ima-events/)
+📆 Tue–Sun, 10:00 AM  
+📍 Institute of Modern Art, Fortitude Valley  
 💰 Free  
-`board games` `social` `community` `casual`
+`art` `culture` `exhibition` `free`
 
-Join a welcoming, recurring community board game session at Vault Games for tabletop enthusiasts of all levels to play and socialize.
+An installation by Mandy Quadrio exploring cultural heritage and material history, providing an opportunity for quiet reflection in a space known for experimental contemporary art.
 
-### 🤝 [Brisbane City Fountain Pen Meet — July](https://allevents.in/brisbane/meetups)
-📆 Sat 25 Jul, 12:00 PM onwards  
-📍 Hotel West End, Brisbane  
-💰 Free  
-`fountain pens` `analogue` `community` `social` `free`
-
-A casual monthly gathering for fountain pen enthusiasts and collectors to discuss and share their passion for analogue writing culture over drinks.
-
-### 🛠️ [Brisbane Improv Festival: Backstory Factory Workshop](https://www.eventbrite.com.au/d/australia/brisbane/)
-📆 Mon 20 - Sun 26 Jul, TBC  
-📍 Brisbane (Venue TBC)  
-💰 Ticketed  
-`improv` `workshop` `creativity` `storytelling` `performance`
-
-An interactive workshop from the Brisbane Improv Festival focused on improvisation, character-building, and collaborative storytelling, suitable for creatives and performers.
-
-### 🎨 [Brisbane Improv Festival: Ben Russell & Friends](https://www.eventbrite.com.au/d/australia/brisbane/)
-📆 Mon 20 - Sun 26 Jul, TBC  
-📍 Brisbane (Venue TBC)  
-💰 Ticketed  
-`improv` `comedy` `performance` `theatre`
-
-Enjoy a live improv performance by Ben Russell & Friends as part of the Brisbane Improv Festival, blending comedy, creativity, and audience interaction for an engaging experience.
-
-### 🎓 [Sunday Stories at QPM: The Disappearance of Sharron Phillips](https://www.eventbrite.com.au/d/australia--brisbane-city/events/)
-📆 Sun 26 Jul, TBC  
-📍 Queensland Police Museum, Brisbane  
-💰 Ticketed  
-`history` `true crime` `discussion` `community`
-
-A thoughtful storytelling and historical discussion event at the Queensland Police Museum, exploring the cold case of Sharron Phillips, aimed at curious and community-driven attendees.
-
-### 🛠️ [Life Painting with Female Model (BYO)](https://www.eventbrite.com.au/d/australia/brisbane/)
-📆 Mon 20 - Sun 26 Jul, TBC  
-📍 Brisbane City (Venue TBC)  
-💰 Ticketed  
-`art` `drawing` `life drawing` `workshop` `creative`
-
-Participate in a hands-on, intimate figure drawing session with a live model in Brisbane City, open to artists of all levels in a casual and creative community setting.
-
-### 🎓 [EmAGN Value Talk: Living Legacy of the Queensland Cultural Precinct](https://www.eventbrite.com.au/d/australia--brisbane-city/events--next-week/)
-📆 Tue 21 Jul, 6:00 PM  
-📍 Brisbane (CBD area)  
-💰 TBC  
-`architecture` `design` `history` `culture`
-
-A value talk exploring the enduring impact and significance of Brisbane's Queensland Cultural Precinct, likely aimed at those interested in local architecture, urban design, and cultural history.
-
-### 🎓 [The Future of Heritage: Looking Back to Move Forward](https://www.eventbrite.com.au/d/australia--brisbane-city/events--next-week/)
-📆 Thu 23 Jul, 6:00 PM  
-📍 Brisbane  
-💰 TBC  
-`heritage` `history` `futurism` `culture`
-
-An upcoming talk examining the intersection of heritage and future planning, prompting reflection on how understanding the past can inform forward-thinking strategies for cultural preservation and development.
-
-### 🛠️ [QAGOMA Drawing Festival](https://www.qagoma.qld.gov.au/)
-📆 Sat 25 & Sun 26 Jul  
-📍 QAGOMA, South Brisbane  
-💰 Free  
-`art` `drawing` `workshop` `free`
-
-A weekend of creative workshops and activities at QAGOMA designed to spark or rekindle a love for drawing, open to everyone and fostering a hands-on, community-oriented creative experience.
-
-### 🎨 [Incognito Art Show — Preview & Purchase](https://www.theurbanlist.com/brisbane/a-list/whats-on-brisbane)
-📆 Preview: Tue 21–Fri 24 Jul; Purchase: Sat 25–Sun 26 Jul  
-📍 Long Island, Newstead  
-💰 $100 per artwork (entry TBC)  
-`art` `exhibition` `community` `emerging artists`
-
-Australia's largest not-for-profit art show where 12,000+ original artworks are sold for $100 each, with artists remaining anonymous until after purchase, fostering new collectors and supporting emerging talent.
-
-### 🎨 [Behind the Seams: The Red Dress — Opening Event](https://allevents.in/brisbane/exhibitions)
+### 🎨 [Behind the Seams: The Red Dress](https://allevents.in/brisbane/exhibitions)
 📆 Fri 24 Jul, 6:00 PM  
-📍 Level 3, Brisbane City Hall, CBD  
-💰 TBC  
-`art` `textiles` `community` `exhibition`
-
-The opening event for "Behind the Seams: The Red Dress," an exhibition showcasing an award-winning global community art project by Kirstie Macleod that explores textiles and human stories.
-
-### 🎨 [Common Threads: United by The Red Dress — Community Exhibition Event](https://allevents.in/brisbane/exhibitions)
-📆 Sun 26 Jul, 11:00 AM  
-📍 Brisbane City Hall, CBD  
+📍 Brisbane City Hall, King George Square  
 💰 Free  
-`art` `textiles` `community` `free`
+`design` `history` `craft` `free`
 
-A community event connected to "The Red Dress" project, offering a chance to engage with the themes of this international textile art and connect with others interested in shared creative and cultural narratives.
+A curated evening exploration of the history and artistry behind an iconic fashion piece, aimed at those interested in design, craft, and social history.
 
-### 🎨 [The Films of John Cassavetes — Retrospective Screening](https://www.mustdobrisbane.com/features/whats-on-brisbane-july-2026)
-📆 Through Jul 2026 (sessions this week)  
-📍 Brisbane  
-💰 TBC  
-`film` `cinema` `retrospective` `art house`
-
-A retrospective screening of pioneering American filmmaker John Cassavetes' works, offering a rare opportunity to experience his influential realist cinema on the big screen throughout July.
-
-### 🎨 [Through Mununjali Eyes — State Library of Queensland Exhibition](https://www.slq.qld.gov.au/)
-📆 Daily, Jul 2026  
-📍 State Library of Queensland, South Brisbane  
-💰 Free  
-`indigenous culture` `history` `exhibition` `free`
-
-An ongoing exhibition at the State Library of Queensland celebrating the legacy of trailblazing broadcaster Wayne Coolwell, offering insights into Mununjali culture and perspectives.
-
-### 🎓 [Leah King-Smith: rhythm wRites Forum](https://allevents.in/brisbane/exhibitions)
-📆 Fri 24 Jul, 10:00 AM  
-📍 2 George Street, QUT Gardens Point Campus, Brisbane CBD  
-💰 TBC  
-`art` `language` `creativity` `forum`
-
-A creative forum featuring Leah King-Smith, exploring the interplay of language, rhythm, and artistic expression, likely involving discussion and presentations at QUT's Gardens Point Campus.
-
-### 🤝 [Board Game Weekly Meetup @ Vault Games Brisbane City](https://allevents.in/brisbane/meetups)
-📆 Sat 25 Jul, 10:00 AM  
-📍 Lower Ground, 62 Queen St, Brisbane CBD  
-💰 TBC (likely low-cost entry)  
-`board games` `social` `community` `games`
-
-A weekly board game meetup at Vault Games, providing a social space for curious individuals to play various board games, meet new people, and engage in thoughtful strategy and fun.
-
-### 🎨 [Hurtigruten Nordic Film Festival — Brisbane Sessions](https://nordicfilmfestival.com.au/venues/Brisbane)
-📆 Through Jul 2026 (sessions this week)  
-📍 Palace Cinemas, Brisbane  
-💰 From ~$16  
-`film` `cinema` `festival` `nordic culture`
-
-A curated film festival showcasing the best of Nordic cinema, offering a selection of intelligent and atmospheric films for viewing at Palace Cinemas throughout late July.
-
-### 🎵 Candlelight: The Best of Joe Hisaishi
-📆 Thu 23 Jul, 6:30 PM  
-📍 St John's Anglican Cathedral, Brisbane  
-💰 $34.50  
-`classical` `soundtrack` `music` `candlelight`
-
-A classical concert by candlelight featuring the beloved works of composer Joe Hisaishi (known for Studio Ghibli films) in the atmospheric Saint John's Anglican Cathedral.
-
-### 🎵 Candlelight: Tribute to Fleetwood Mac
-📆 Fri 24 Jul, 8:30 PM  
-📍 St John's Anglican Cathedral, Brisbane  
-💰 $34.50  
-`classical` `tribute` `music` `candlelight`
-
-A classical concert by candlelight celebrating the music of Fleetwood Mac in the atmospheric Saint John's Anglican Cathedral. Experience popular hits reimagined.
-
-### 🎵 Candlelight: Hans Zimmer's Best Works
-📆 Sat 25 Jul, 6:30 PM  
-📍 St John's Anglican Cathedral, Brisbane  
-💰   
-`classical` `soundtrack` `music` `candlelight`
-
-A classical concert by candlelight featuring the iconic film scores of composer Hans Zimmer in the atmospheric Saint John's Anglican Cathedral.
-
-### 🎵 Bernard Composer presents "Portraits"
-📆 Sun 26 Jul, 4:00 PM  
-📍 Chrome Street Studios, Brisbane  
-💰 Free  
-`composition` `experimental` `music` `free` `art`
-
-Composer Bernard presents 'Portraits,' an original musical performance at Chrome Street Studios. Expect a unique and potentially experimental artistic experience.
-
-### 🎵 Sunday Jazz
-📆 Sun 26 Jul, 11:30 AM  
-📍 Rochedale South  
-💰 Free  
-`jazz` `music` `free` `community`
-
-An afternoon of free live jazz featuring multiple bands including The Melissa Western Band, Mal Wood Quartet, and Dave Spicer Trio. A community-oriented event for jazz enthusiasts.
-
-### 🤝 Jackbox Party Video Games @ New Farm Library
-📆 Fri 24 Jul, 6:30 PM  
-📍 New Farm Library  
-💰 Free  
-`gaming` `social` `community` `free`
-
-Join the Brisbane Social Geeks for a fun evening of interactive Jackbox video games at the library, fostering casual conversation and community.
-
-### 🎨 Art Exhibition and Tea
-📆 Fri 24 Jul, 6:30 PM  
-📍 Loving Hut, Brisbane  
-💰 Unknown  
-`art` `exhibition` `social` `community`
-
-Enjoy an evening exploring local art in a relaxed setting, complemented by tea and conversation, ideal for meeting like-minded creative individuals.
-
-### 🤝 Teacher Librarian Book Chat
-📆 Tue 21 Jul, 3:30 PM - 4:45 PM  
-📍 Quick Brown Fox Bookshop  
-💰 Free  
-`books` `community` `discussion` `meetup` `free`
-
-A book chat specifically for teacher librarians, offering a community space for discussion and sharing insights on books and literary topics at the Quick Brown Fox Bookshop.
-
-### 📌 Open Art Space @ Acacia Ridge
-📆 Thu 23 Jul, 12:00 PM - 2:00 PM  
-📍 Acacia Ridge  
-💰 Free  
-`art` `community` `creative` `free` `social`
-
-A casual open art space at Acacia Ridge, hosted by Communify Qld, providing a welcoming environment for community members to engage in creative expression and artistic activities.
-
-### 📌 West End Street Art Festival
-📆 Fri 24 Jul – Sun 26 Jul  
-📍 Boundary Street, West End  
-💰 Free (Workshops $15)  
-`art` `festival` `street_art` `community` `creative`
-
-A vibrant festival celebrating street art in West End, featuring local artists, installations, and opportunities for workshops and guided tours. Free to attend with optional paid activities.
-
-### 🛠️ Heartfulness Meditation
-📆 Sun 26 Jul, 9:00 AM - 10:00 AM  
-📍 Paddington Hall  
-💰 Free  
-`meditation` `wellness` `community` `free`
-
-A free Heartfulness meditation session held at Paddington Hall, offering a grounded and community-focused approach to meditation, welcoming walk-ins and bookings.
-
-### 🎨 Incognito Art Show
-📆 Tue 21 Jul – Sun 26 Jul (Sale Sat 25 & Sun 26 Jul)  
-📍 Long Island Brisbane, Newstead  
-💰 Free (Artworks $100 each)  
-`art` `exhibition` `community` `visual_art` `sale`
-
-Australia's largest and most inclusive art show, featuring hundreds of anonymous A5 original artworks for sale at $100 each. Browsing is free, with the main sale days on Saturday and Sunday.
-
-### 🎵 The Music of Video Games
-📆 Fri 24 Jul, 7:30 PM  
-📍 Concert Hall, QPAC, South Brisbane  
-💰 Ticketed  
-`orchestra` `video games` `music` `qpac`
-
-The Queensland Symphony Orchestra performs an evening concert dedicated to the iconic scores and soundtracks from various video games, featuring a range of popular and classic game music.
-
-### 🎨 [Pride & Prejudice: Night with the Artists](https://www.qpac.com.au/event/qt_pride_prejudice_26)
-📆 Thu 23 Jul, 7:30 PM  
-📍 Playhouse, QPAC  
-💰 Ticketed  
-`theatre` `performance` `discussion` `ticketed`
-
-Experience Queensland Theatre's production of Pride & Prejudice, featuring a special 'Night with the Artists' performance on July 23rd that includes a post-show discussion with the cast and creatives.
-
-### 🎨 WORKS/IN/CHAOS 2.0 (Day 1)
-📆 Thu 23 Jul, 7:30 PM  
-📍 Pip Theatre  
-💰 Ticketed  
-`performance` `experimental` `theatre` `art`
-
-An experimental performance by Salad Days Collective at Pip Theatre, pushing creative boundaries and offering a unique artistic experience.
-
-### 🛠️ [50 Plus: Spanish for Absolute Beginners](https://www.brisbane.qld.gov.au/whats-on/listing?trumbaEmbed=eventid%3D123456)
-📆 Mon 20 Jul, 12:15 PM  
-📍 Fifty Plus Centre, Brisbane City  
-💰 Free  
-`language` `spanish` `class` `free`
-
-A free Spanish language class for absolute beginners, tailored for the 50 Plus community, focusing on foundational vocabulary and conversation skills in a supportive environment.
-
-### 🤝 [Chatty Table at Marhaba Café](https://www.brisbane.qld.gov.au/whats-on/listing?trumbaEmbed=eventid%3D123456)
-📆 Fri 24 Jul, 11:00 AM  
-📍 Brisbane City Hall (basement level)  
-💰 Free  
-`social` `community` `meetup` `free`
-
-A friendly, community-oriented social meetup hosted by a volunteer, inviting people to share a cuppa and conversation in a relaxed café setting.
-
-### 🤝 [Good Tune Sessions at The Burrow](https://goodtunes.com.au/events/)
-📆 Mon 20 Jul  
-📍 The Burrow, West End, Brisbane  
-💰 Free  
-`folk` `music` `social` `free`
-
-A fortnightly community session in West End for musicians and enthusiasts to share acoustic tunes, jam, and socialise, promoting folk and traditional music culture in a relaxed setting.
-
-### 🎨 [Ngahrima Festival](https://www.australianmusiccentre.com.au/event/ngahrima-festival-brisbane-city-22.jul.26)
-📆 Wed 22 Jul  
-📍 Brisbane City  
-💰 Free  
-`festival` `music` `workshops` `free` `culture`
-
-An 8-day festival celebrating diverse music and art, featuring performances, creative workshops, and cultural events across Brisbane, offering free access to registered attendees.
-
-### 🎵 [The Graeme Norris Sextet](https://jmilive.com/upcoming-gigs/)
-📆 Thu 23 Jul, 7:00 PM  
-📍 JMI Live, Brisbane  
-💰 Check website  
-`jazz` `music` `live` `intimate`
-
-A live jazz performance by The Graeme Norris Sextet at JMI Live, a venue known for its intimate and authentic jazz experiences.
-
-### 🎵 [Barrel Hall Jazz Club](https://www.musick.com.au/gigs/barrel-hall-jazz-club-brisbane-23-jul-2026)
-📆 Thu 23 Jul, 7:00 PM  
-📍 Felons Barrel Hall, Brisbane  
-💰 TBA  
-`jazz` `music` `live` `atmosphere`
-
-Enjoy an evening of live jazz at Felons Barrel Hall, a vibrant venue on the Brisbane River, featuring local talent with a strong atmosphere.
-
-### 🎵 [Queensland Symphony Orchestra - The Music of Video Games](https://www.qso.com.au/events/)
-📆 Fri 24 Jul, 7:30 PM  
-📍 Concert Hall, QPAC, Brisbane  
-💰 Check website  
-`orchestra` `classical` `video games` `music`
-
-Experience the Queensland Symphony Orchestra performing iconic scores from video games in the Concert Hall at QPAC, blending classical music with modern culture.
-
-### 🎵 [The Scornful Four](https://www.therubyjazzclub.com/shows)
-📆 Fri 24 Jul, 6:30 PM  
-📍 The Ruby Jazz Club, Fortitude Valley  
-💰 $25  
-`jazz` `music` `live` `intimate`
-
-An intimate live jazz performance by The Scornful Four at The Ruby Jazz Club, known for its authentic jazz scene and passionate audience.
-
-### 🎵 [ZIRZÅMIN 7.0](https://ra.co/events/au/brisbane)
-📆 Fri 24 Jul  
-📍 Echo & Bounce, Brisbane  
-💰 Check website  
-`electronic music` `indie` `subculture`
-
-A curated electronic music event at Echo & Bounce, featuring innovative sounds and a vibrant atmosphere for those interested in alternative music subcultures.
-
-### 🎵 [The Fourth Beat - July Edition](https://ra.co/events/au/brisbane)
-📆 Fri 24 Jul  
-📍 Augusta Brisbane  
-💰 Check website  
-`electronic music` `indie` `subculture`
-
-An electronic music event presented by Augusta Brisbane, focusing on unique beats and a creative atmosphere for those exploring underground sounds.
-
-### 🎵 [Candlelight Hans Zimmer's Best Works / The Best of Hans Zimmer](https://feverup.com/m/150241)
-📆 Sat 25 Jul, 6:30 PM  
-📍 Saint John's Anglican Cathedral, Brisbane  
-💰 Check website  
-`classical` `music` `film score` `atmosphere`
-
-A classical concert bathed in candlelight at Saint John's Anglican Cathedral, featuring an orchestra performing the best works of Hans Zimmer, known for his cinematic scores.
-
-### 🎵 [Wil & His Piano : Boogie-Woogie, Stride & Early Jazz](https://www.therubyjazzclub.com/shows)
-📆 Sat 25 Jul, 6:30 PM  
-📍 The Ruby Jazz Club, Fortitude Valley  
-💰 Free  
-`jazz` `piano` `live` `free`
-
-Enjoy a free evening of lively boogie-woogie, stride, and early jazz piano by Wil at The Ruby Jazz Club, offering an authentic and energetic musical experience.
-
-### 🛠️ [A/pART Collective Collage Sessions](https://events.humanitix.com/fortnightly-workshops)
-📆 Mon 20 Jul, 6:30 PM  
-📍 Paddington Substation, Brisbane  
-💰 $20  
-`art` `collage` `creative` `workshop`
-
-Relaxed fortnightly collage sessions where participants can meet others and engage in creative hands-on art. No experience is necessary, and guidance is provided for all attendees.
-
-### 🎨 [Cribb Island: Brisbane's Lost Suburb (Exhibition)](https://www.museumofbrisbane.com.au/whats-on/cribb-island-brisbanes-lost-suburb/)
-📆 Mon 20 Jul, 10:00 AM  
-📍 Museum of Brisbane, Brisbane City Hall  
-💰 Free  
-`history` `exhibition` `brisbane` `culture` `free`
-
-An exhibition at the Museum of Brisbane exploring the fascinating history and cultural significance of Cribb Island, Brisbane's 'lost suburb', which was a thriving community before its eventual demolition.
-
-### 🤝 [Book Club | Brisbane Working Holiday Girls](https://www.eventbrite.com/e/book-club-brisbane-working-holiday-girls-tickets-1990426743936)
-📆 Tue 21 Jul, 6:00 PM  
-📍 My Beer Dealer - Alfred St Bar & Bottlo, Fortitude Valley  
-💰 Unknown  
-`book club` `social` `discussion` `community`
-
-A book club meeting designed for discussion, book-themed games, and social icebreakers, including an activity to create bracelets and phone charms. Aims to help attendees meet fellow book lovers and make new friends.
-
-### 🎨 [Volunteer Guided Tour: Seeing Art, Seeing Ourselves (GOMA)](https://www.qagoma.qld.gov.au/whats-on/tours/volunteer-guided-tour-seeing-art-seeing-ourselves)
-📆 Wed 22 Jul, 11:00 AM  
-📍 GOMA (Gallery of Modern Art)  
-💰 Free  
-`art` `tour` `philosophy` `free`
-
-A free guided tour at the Gallery of Modern Art, led by volunteers, focusing on exploring how art reflects and informs our understanding of ourselves and society.
-
-### 🎵 [Candlelight: Best of Fleetwood Mac](https://concerts50.com/australia/brisbane)
+### 🎵 [Bearded Lady Jazz/Live music night](https://www.eventfinda.com.au/venue/the-bearded-lady-brisbane2)
 📆 Fri 24 Jul, 7:00 PM  
-📍 St John’s Anglican Cathedral, Brisbane City  
-💰 $40  
-`classical` `tribute` `intimate` `music`
+📍 The Bearded Lady, Fortitude Valley  
+💰 Free/Low cost  
+`jazz` `live music` `community`
 
-An intimate candlelit concert where a classical ensemble performs unique arrangements of Fleetwood Mac songs within the stunning acoustics of St John’s Anglican Cathedral.
+A recurring weekly showcase of jazz and independent music in a dedicated, community-focused live music venue.
 
-### 📌 [Brisbane Open House 2026](https://www.ikonix.com.au/ultimate-guide-to-brisbane-events-may-june-july-2026/)
-📆 Mon 20 Jul, 9:00 AM  
-📍 Various locations across Brisbane  
+### 🎨 [Australian Cinémathèque 35mm Screening](https://www.qagoma.qld.gov.au/cinema/)
+📆 Wed 22 July 2026, 6:00pm  
+📍 GOMA, South Bank  
+💰 Ticketed  
+`film` `art` `culture`
+
+A curated screening of classic or experimental film projected on 35mm, offering a high-quality, atmospheric viewing experience for cinema enthusiasts.
+
+### 🎨 [Australian Cinémathèque 35mm Screening](https://www.qagoma.qld.gov.au/cinema/)
+📆 Fri 24 July 2026, 6:00pm  
+📍 GOMA, South Bank  
+💰 Ticketed  
+`film` `art` `culture`
+
+A curated screening of classic or experimental film projected on 35mm, offering a high-quality, atmospheric viewing experience for cinema enthusiasts.
+
+### 🎨 [Australian Cinémathèque 35mm Screening](https://www.qagoma.qld.gov.au/cinema/)
+📆 Sat 25 July 2026, 12:30pm  
+📍 GOMA, South Bank  
+💰 Ticketed  
+`film` `art` `culture`
+
+A curated screening of classic or experimental film projected on 35mm, offering a high-quality, atmospheric viewing experience for cinema enthusiasts.
+
+### 🎨 [The Red Dress (exhibition opening)](https://www.museumofbrisbane.com.au/whats-on/the-red-dress/)
+📆 Sat 25 July – 13 Sept 2026, 10am–5pm daily  
+📍 Fairfax Gallery, Museum of Brisbane, Level 3 Brisbane City Hall  
 💰 Free  
-`architecture` `design` `history` `free`
+`art` `culture` `exhibition` `free`
 
-A city-wide program opening dozens of significant buildings and heritage sites for free public tours and talks, exploring Brisbane's architecture, design, and history. Continues into Monday with selected open houses and activities.
+A global collaborative embroidery project featuring an intricate garment stitched by hundreds of people from across the world, exploring themes of storytelling and craft.
+
+### 🎓 [Cosmic Collisions](https://www.brisbane.qld.gov.au)
+📆 21 July 2026, 2:00pm  
+📍 Sir Thomas Brisbane Planetarium  
+💰 $17.50  
+`science` `astronomy` `education`
+
+An immersive fulldome film presentation exploring the dramatic forces of the universe and galaxy interactions, ideal for those interested in space and science communication.
+
+### 🤝 [Intermediate Session](https://www.meetup.com)
+📆 22 July 2026, 7:00pm  
+📍 Tony's Garage, Nundah  
+💰 Contact organiser  
+`music` `social` `community`
+
+A recurring community jam session for musicians to connect, practice, and play in a relaxed, informal setting.
+
+### 🎵 [Cage Match: Improv Comedy Showdown](https://www.bigforktheatre.com)
+📆 23 July 2026, 7:00pm  
+📍 Big Fork Theatre  
+💰 $10  
+`comedy` `theatre` `performance`
+
+An energetic, experimental improv comedy competition where two teams face off and the audience decides the winner.
+
+### 🎓 [Carla Salmon X Tristan Bancks Double Book Launch](https://www.trybooking.com/events/landing/1169998)
+📆 Mon 20 Jul, 6:00 PM  
+📍 Brisbane Grammar School  
+💰 Bookings required  
+`literature` `writing` `talk` `community`
+
+An evening conversation with authors Carla Salmon and Tristan Bancks discussing their latest creative processes and writing journeys.
+
+### 🎨 [Sculptures & Sips: Mechanical Reef](https://www.brisbane.qld.gov.au)
+📆 Wed 22 Jul, 6:30 PM  
+📍 Dead Puppet Society, Woolloongabba  
+💰 Check website  
+`art` `design` `sculpture` `creative`
+
+An immersive evening where attendees engage with the intricate design and mechanical artistry behind the 'Mechanical Reef' project hosted by the Dead Puppet Society.
+
+### 🎓 [Nicholas Aloisio-Shearer on Memento Hikikomori Curator talk](https://ima.org.au)
+📆 Sat 25 Jul, 2:00 PM  
+📍 Institute of Modern Art, Fortitude Valley  
+💰 Free  
+`art` `culture` `lecture` `free`
+
+Curator Nicholas Aloisio-Shearer discusses the themes and concepts behind the 'Memento Hikikomori' exhibition, providing insight into contemporary cultural isolation and art.
+
+### 🎨 [Stories You Wear: Magpie Goose Exhibition](https://www.museum.qld.gov.au/kurilpa/whats-on/little-sparks)
+📆 20 July 2026, 10:00 AM  
+📍 Museum of Brisbane  
+💰 Free  
+`art` `culture` `exhibition` `free`
+
+An exhibition exploring the intersection of Indigenous art and fashion through the lens of the Magpie Goose label.
+
+### 🎓 [Members Lecture: The Films of John Cassavetes](https://www.qagoma.qld.gov.au/whats-on/exhibitions)
+📆 22 July 2026, 11:00 AM  
+📍 Gallery of Modern Art  
+💰 Buy Tickets  
+`film` `cinema` `lecture` `arts`
+
+A scholarly examination of the pioneering independent filmmaker John Cassavetes and his impact on modern cinema.
+
+### 🤝 [Garden City BoardGames Meetup](https://www.meetup.com/southsideboardgames/events/)
+📆 Wed 22 Jul, 6:30 PM  
+📍 Garden City Library Meeting Room  
+💰 $2  
+`games` `community` `social` `strategy`
+
+A recurring community board game night held in a public library space, focusing on strategic, social, and modern tabletop games in a casual setting.
+
+### 🤝 [Learn and Play Earthborne Rangers](https://www.meetup.com/en-au/learn-dungeons-and-dragons/events/315716219/)
+📆 Tue 21 Jul, 10:00 AM  
+📍 Victoria Park, Spring Hill  
+💰 Free  
+`gaming` `community` `social` `free`
+
+An inclusive, community-led group gathering to learn and play the tabletop roleplaying game Earthborne Rangers. It is a welcoming space for beginners to engage in creative, collaborative storytelling.
+
+### 🤝 [Ladies We Need to Talk](https://www.meetup.com/en-au/the-power-of-women-in-our-sixties/events/315495435/)
+📆 Wed 22 Jul, 10:00 AM  
+📍 New Farm Library, New Farm  
+💰 $5  
+`women` `discussion` `social` `community`
+
+A discussion salon for women in their sixties to connect and share experiences, fostering deep conversation within a supportive, local community.
+
+### 🛠️ [Splat 'n' Chat – Saturday Term 3](https://www.studioyellow.com.au/shop/splatnchat/splat-n-chat-saturday-term-3/)
+📆 Sat 25 Jul, 9:30 AM  
+📍 Studio Yellow, Manly West  
+💰 $102  
+`art` `workshop` `creative` `community`
+
+A creative, recurring studio session encouraging artistic play and conversation in a relaxed, community-focused environment.
+
+### 🤝 [Monthly Picnic & Party Games](https://www.meetup.com/en-au/north-brisbane-social-games/events/sfdhxtyjckbhc/)
+📆 Sat 25 Jul, 10:30 AM  
+📍 Roma Street Parkland, Brisbane City  
+💰 Free  
+`social` `meetup` `community` `free`
+
+An informal monthly gathering for locals to enjoy a picnic and play party games, specifically designed for meeting new people in a low-pressure setting.
+
+### 🛠️ [Growing Organic, Healthy Fruit Trees](https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D201599243)
+📆 Sun 26 Jul, 10:00 AM  
+📍 Cox Park, Lota  
+💰 Free  
+`gardening` `sustainability` `workshop` `free`
+
+A practical, expert-led workshop on sustainable gardening techniques, aimed at fostering local knowledge about organic fruit production.
+
+### 🤝 [Lounge Asia: Asian Background Social and Language Exchange](https://www.meetup.com/en-au/loungeasia/events/zfvdztyjckbcc/)
+📆 Tue 21 Jul, 6:00 PM  
+📍 Criterion Tavern, Brisbane City  
+💰 Free  
+`language` `social` `culture`
+
+A relaxed language exchange and social gathering aimed at connecting people from diverse cultural backgrounds.
+
+### 🤝 [WordPress Brisbane July Meetup](https://www.meetup.com/en-au/wordpress-brisbane/events/314957716/)
+📆 Thu 23 Jul, 5:30 PM  
+📍 Brisbane Square Library, Brisbane City  
+💰 Free  
+`tech` `coding` `community`
+
+A technical community meetup where local developers and creators share knowledge about web design, coding, and the WordPress ecosystem.
+
+### 🎓 [Watts Not to Love About Building with AI](https://www.meetup.com/en-au/physicalaibuilders/events/ztdcztyjckbgc/)
+📆 Fri 24 Jul, 5:15 PM  
+📍 The Precinct, Fortitude Valley  
+💰 $5  
+`ai` `technology` `debate`
+
+An intellectually grounded discussion and social meet for those building practical AI applications, focusing on real-world engineering challenges.
+
+### 🎨 [‘the churchie’ 2026 Finalists’ Exhibition Opening](https://churchieemergingart.com.au/exhibition/)
+📆 Fri 24 Jul, 6:00 PM  
+📍 Metro Arts, West End  
+💰 Free  
+`art` `culture` `exhibition`
+
+The opening night exhibition for one of Australia’s leading emerging art prizes, featuring experimental and contemporary works.
+
+### 🎓 [Life Out Loud Storytelling: “WILD”](https://www.bigforktheatre.com/shows-events/sundaystandup-h6ax3-6r4ny-de4j2-g3j7e-mn9n2-djtbn-ybhc8-5h9j9-yjjjw-spf8k-5repf-8ya8s-88lf7-7k94y-g28dn-hka54-7xpk7-nsmj5-smbsw-ec5xc-6w9xr-pcagc-tb57e-lhjpd-n9e8j-65k8m-e6b23-bzd7y-c2tcg-x3n9r)
+📆 Fri 24 Jul, 7:00 PM  
+📍 Big Fork Theatre, Fortitude Valley  
+💰 Ticketed  
+`storytelling` `performance` `culture`
+
+A live, curated storytelling night where performers share personal, true-life narratives centered on the theme of 'Wild'.
+
+### 🎨 [Permission Granted](https://qpac.com.au/whats-on/2026/permission-granted)
+📆 23–25 July 2026, various performance times  
+📍 Cremorne Theatre, QPAC, South Brisbane  
+💰 $49  
+`theatre` `experimental` `performance` `art`
+
+An immersive and experimental performance piece exploring themes of agency and creative boundaries, suitable for audiences seeking unconventional theatre.
+
+### 🎨 [Dearly Departed: death in life](https://www.slq.qld.gov.au/whats-on/dearly-departed-death-life)
+📆 20–26 July 2026, 9am–5pm  
+📍 slq Gallery, South Brisbane  
+💰 Free  
+`history` `culture` `exhibition` `free`
+
+An intellectually engaging exhibition exploring cultural, historical, and personal perspectives on mortality and the human experience of grief.
+
+### 🎨 [Archie Moore: kith and kin](https://www.qagoma.qld.gov.au/whats-on/exhibitions/)
+📆 20–26 July 2026, 10am–5pm  
+📍 Gallery of Modern Art, South Brisbane  
+💰 Free  
+`history` `art` `culture` `exhibition`
+
+An immersive exhibition featuring genealogical research and artistic installation that traces complex family histories and human connectivity.
+
+### 🎨 [City Before Our Eyes](https://www.qagoma.qld.gov.au/whats-on/exhibitions/)
+📆 20–26 July 2026, 10am–5pm  
+📍 Gallery of Modern Art, South Brisbane  
+💰 Free  
+`history` `design` `art` `exhibition`
+
+An exploration of urban environments and historical records through visual art, inviting reflection on how cities evolve and are documented.
+
+### 🛠️ [Belonging by Design Workshop](https://www.griffith.edu.au/life-at-griffith/griffith-mates/event)
+📆 Thu 23 Jul, 11:00 AM  
+📍 Griffith University, Nathan  
+💰 Free  
+`design` `community` `workshop`
+
+A facilitated session exploring concepts of community building and human-centered design.
+
+### 🎨 [Tim Page: The Very Edge of the Brightest Light](https://www.griffith.edu.au/art-museum/whats-on)
+📆 Tue 21 Jul, 11:00 AM  
+📍 Griffith University Art Museum, South Bank  
+💰 Free  
+`photography` `history` `art`
+
+An evocative photographic exhibition exploring themes of history and conflict through the lens of photojournalist Tim Page.
+
+### 🛠️ [Girls’ Programming Network – Brisbane](https://www.eait.uq.edu.au/events)
+📆 Sat 25 Jul, 9:00 AM  
+📍 UQ Innovate, St Lucia  
+💰 Free  
+`coding` `technology` `womeninscience`
+
+A collaborative, peer-led programming workshop designed to build technical skills in a supportive, creative environment.
+
+### 🎨 [Museum of Brisbane – Exhibitions and Programs](https://www.museumofbrisbane.com.au/whats-on/)
+📆 Mon 20 Jul, 10:00 AM  
+📍 Museum of Brisbane, City Hall, Brisbane City  
+💰 Free  
+`art` `history` `museum` `culture`
+
+Explore rotating exhibitions focusing on the history, art, and creative soul of Brisbane. The museum frequently hosts artist talks and workshops that foster local community connection.
 
 ## 📋 All Events
 
 ### 🎵 Concert / Music
 
-#### [Lano (& Woodley in Space) — Brisbane Powerhouse](https://tixel.com/au/discover/Brisbane)
-📆 Thu 23 Jul, 7:30 PM
-📍 Brisbane Powerhouse, New Farm
-💰 Ticketed
-`comedy` `music` `theatre` `performance`
-
-The beloved Australian comedy-music duo Lano & Woodley present their multi-night theatrical live show, Lano (& Woodley in Space), at the iconic Brisbane Powerhouse.
-
-#### [Blak Day Out: Dan Sultan + Beddy Rays + Jem Cassar-Daley](https://tixel.com/au/discover/Brisbane)
-📆 Fri 24 Jul, 7:00 PM
-📍 The Princess Theatre, Woolloongabba
-💰 $34+
-`indigenous music` `rock` `pop` `festival`
-
-A stellar multi-act Blak Day Out event featuring acclaimed Indigenous Australian artists Dan Sultan, Beddy Rays, and Jem Cassar-Daley across alternative, pop, and rock genres at The Princess Theatre.
-
-#### [Felipe Baldomir — The Outpost Bar](https://www.songkick.com/metro-areas/26778-australia-brisbane)
-📆 Fri 24 Jul, 7:30 PM
+#### [Felipe Baldomir](https://www.songkick.com/metro-areas/26778-australia-brisbane)
+📆 Fri 24 Jul 2026
 📍 The Outpost, Fortitude Valley
 💰 Ticketed
-`singer-songwriter` `folk` `intimate` `live music`
+`folk` `acoustic` `live-music`
 
-An intimate singer-songwriter set by Felipe Baldomir at The Outpost Bar, a small venue in Fortitude Valley perfect for stripped-back performances.
+Independent singer-songwriter Felipe Baldomir brings his coastal-folk sound to The Outpost.
 
-#### [Ethanplus (Electronic) — The End, West End](https://www.shazam.com/events/brisbane-qld-4000-australia)
-📆 Fri 24 Jul, 8:30 PM
-📍 The End, West End
-💰 Ticketed
-`electronic` `live music` `intimate` `west end`
+#### [Pat Tierney Music](https://www.bandsintown.com/c/brisbane-australia/this-week/genre/all-genres)
+📆 Fri 24 Jul 2026, 4:30 PM
+📍 Wintergarden, Brisbane
+💰 Free
+`acoustic` `folk` `free`
 
-An electronic live act by Ethanplus at The End, a small and intimate West End venue known for its curation of innovative music and alternative performances.
+An acoustic set by singer-songwriter Pat Tierney, providing a relaxed afternoon atmosphere in the city center.
 
-#### [Eddy Current Suppression Ring — The Princess Theatre](https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSyZfZ7v7nJ)
+#### [Eddy Current Suppression Ring](https://www.brisbanepowerhouse.org)
 📆 Sat 25 Jul, 7:00 PM
-📍 The Princess Theatre, Woolloongabba
-💰 Ticketed
-`post-punk` `garage rock` `indie` `live music`
-
-Legendary Melbourne post-punk/garage rock band Eddy Current Suppression Ring perform their raw, energetic sound live at the historic Princess Theatre.
-
-#### [Girl and Girl — Junk Bar, New Farm](https://www.songkick.com/metro-areas/26778-australia-brisbane)
-📆 Sat 25 Jul, 7:30 PM
-📍 Junk Bar, New Farm
-💰 Low Cost
-`indie` `small venue` `live music` `new farm`
-
-Enjoy a live music performance by Girl and Girl at Junk Bar, New Farm, one of Brisbane's most beloved intimate small venues for discovering new artists.
-
-#### [Lano](https://www.brisbane-powerhouse.org/)
-📆 Thu 23 Jul
 📍 Brisbane Powerhouse, New Farm
-💰 Check website
-`music` `powerhouse` `indie` `cultural`
+💰 Check venue for pricing
+`music` `rock` `garage`
 
-Lano performs live at the Brisbane Powerhouse, New Farm, offering a cultural music experience over multiple nights at one of Brisbane's premier arts venues.
-
-#### [Eddy Current Suppression Ring](https://www.ticketmaster.com.au/eddy-current-suppression-ring-brisbane-25-07-2026/event/)
-📆 Sat 25 Jul, 7:00 PM
-📍 The Princess Theatre, Woolloongabba
-💰 Check website
-`post-punk` `garage rock` `cult band` `live music`
-
-Cult Melbourne post-punk/garage rock band Eddy Current Suppression Ring performs a rare and much-anticipated show at The Princess Theatre.
-
-#### [Girl and Girl](https://www.thejunkbar.com.au/)
-📆 Sat 25 Jul
-📍 Junk Bar, Ashgrove
-💰 Check website
-`local artists` `indie music` `intimate` `neighbourhood`
-
-Girl and Girl play live at Junk Bar in Ashgrove, a beloved neighbourhood music venue known for supporting local acts and intimate gigs.
-
-#### [Queensland Symphony Orchestra — Classical Music](https://www.qpac.com.au/whats-on)
-📆 Wed 22 Jul, 7:00 PM
-📍 QPAC, South Brisbane
-💰 Ticketed
-`classical` `orchestral` `music` `performance`
-
-The Queensland Symphony Orchestra presents an evening of classical music, showcasing a diverse program of orchestral works in the grandeur of QPAC.
-
-#### [Boomtown Block Party](https://www.qpac.com.au/whats-on)
-📆 Sat 25 Jul, 3:00 PM
-📍 QPAC, South Brisbane
-💰 Check QPAC
-`festival` `block party` `live music` `community`
-
-A live festival block party hosted at QPAC, offering an energetic atmosphere with multiple performances and a community vibe for an afternoon of music and entertainment.
+Garage rock legends Eddy Current Suppression Ring perform a live show at the Brisbane Powerhouse.
 
 #### [Ollie McGill and Felix Riebl](https://www.thetriffid.com.au)
-📆 Sun 26 Jul
+📆 Sun 26 Jul, 7:00 PM
 📍 The Triffid, Newstead
-💰 Check venue
-`indie` `jazz-influenced` `live music`
+💰 Check venue for pricing
+`music` `live` `intimate`
 
-Ollie McGill (The Cat Empire) and Felix Riebl perform a collaborative show at The Triffid, an iconic Brisbane music venue.
+An intimate musical performance featuring Ollie McGill and Felix Riebl.
 
-#### Keys to Life
-📆 Wed 22 Jul, 7:00 PM
-📍 QPAC, Brisbane
-💰 
-`classical` `music` `performance`
+#### [Lano & Woodley / Lano live show](https://brisbanepowerhouse.org)
+📆 Thu 23 Jul, 7:00 PM
+📍 Brisbane Powerhouse, New Farm
+💰 Ticketed
+`comedy` `performance` `theatre`
 
-A performance at QPAC, likely a classical or contemporary piano concert, offering a high-quality artistic experience in one of Brisbane's premier performing arts venues.
+Comedy legends Lano & Woodley return to the stage for their latest live theatrical and musical comedy show.
 
-#### Candlelight: 90s Unplugged
-📆 Sat 25 Jul, 8:30 PM
-📍 St John's Anglican Cathedral, Brisbane
-💰 $45.50
-`acoustic` `90s` `music` `candlelight`
+#### [Jayson Gillham (Classical)](https://www.qpac.com.au/whats-on/2026/qso-favourites)
+📆 Wed 22 Jul, 7:30 PM
+📍 Concert Hall, QPAC, South Bank
+💰 Ticketed
+`classical` `piano` `orchestra`
 
-An acoustic candlelight concert featuring popular hits from the 90s, performed in the intimate and atmospheric setting of Saint John's Anglican Cathedral.
+Acclaimed pianist Jayson Gillham performs a selection of classical works alongside the Queensland Symphony Orchestra.
 
-#### Musical Chairs Jazz Band - Christmas in July Concert
-📆 Sat 25 Jul, 3:00 PM
-📍 Carina Heights
-💰 $11.90
-`jazz` `music` `christmas` `community`
+#### [Kieran Stevenson](https://www.blackbearlodge.com.au)
+📆 Thu 23 Jul, 8:00 PM
+📍 Black Bear Lodge, Fortitude Valley
+💰 Ticketed/Door sales
+`folk` `acoustic` `live music`
 
-Enjoy a 'Christmas in July' concert by the Musical Chairs Jazz Band, featuring festive and classic jazz tunes in Carina Heights.
+Singer-songwriter Kieran Stevenson performs an acoustic-led set at Black Bear Lodge.
 
-#### PENY Presents - July Edition - Sabrina Lawrie & Friends
+#### [Greeble](https://www.shazam.com/events/brisbane-qld-4000-australia)
+📆 Thu 23 Jul, 8:00 PM
+📍 The Junk Bar, New Farm
+💰 Free/Low cost
+`alt` `intimate` `live music`
+
+Alternative local act Greeble takes the stage for an intimate performance at the cozy Junk Bar.
+
+#### [Trad jazz night](https://www.jazz.qld.edu.au/brisbanes-new-live-jazz-gig-guide/)
+📆 Thu 23 Jul, 7:00 PM
+📍 Jubilee Hotel, Fortitude Valley (outskirts)
+💰 Free/Low cost
+`jazz` `live music` `trad`
+
+A traditional jazz evening featuring local musicians in a relaxed hotel pub setting.
+
+#### [PENY Presents - July Edition - Sabrina Lawrie & Friends](https://eventbrite.com.au)
 📆 Sat 25 Jul, 2:00 PM
 📍 Blackstar Coffee Roasters, West End
 💰 Free
-`indie music` `local artist` `free` `community`
+`acoustic` `music` `free` `community`
 
-PENY presents an afternoon performance by local artist Sabrina Lawrie and friends at Blackstar Coffee Roasters in West End, offering an intimate and free live music experience.
+An intimate afternoon session of music at a local coffee roaster, curated for community engagement.
 
-#### Candlelight: Coldplay & Imagine Dragons
-📆 Thu 23 Jul, 7:00 PM
-📍 Saint John's Anglican Cathedral, Brisbane
-💰 From $34.00
-`music` `pop` `classical_crossover` `intimate`
-
-A unique classical tribute to the hits of Coldplay and Imagine Dragons, performed by a string quartet in a candlelit setting.
-
-#### Keys to Life with Jayson Gillham and Iyad Sughayer
-📆 Wed 22 Jul, 7:00 PM
-📍 Concert Hall, QPAC, South Brisbane
-💰 Ticketed
-`classical music` `piano` `concert` `qpac`
-
-Experience a classical piano concert featuring Jayson Gillham and Iyad Sughayer performing in the Concert Hall at QPAC, showcasing a program of classical works.
-
-#### [Felipe Baldomir 'Sunset Highway' Tour](https://www.countrytown.com.au/gig-guide/felipe-baldomir-sunset-highway-tour)
-📆 Fri 24 Jul, 7:00 PM
-📍 The Outpost Bar, Fortitude Valley, QLD
-💰 Check website
-`indie music` `folk` `live` `intimate`
-
-Experience Felipe Baldomir's 'Sunset Highway' Tour, a live performance of indie folk/roots music in the intimate setting of The Outpost Bar.
-
-#### [Le Festival 2026 – Live Music Program](https://hamiltontoday.com.au/whats-on-brisbane-gigs-and-events/le-festival-live-music-comedy-and-tribute-shows-in-brisbane-24-26-july-2026/)
-📆 Thu 24 Jul, 7:00 PM
-📍 Roma Street Parkland, Brisbane City
+#### [Bernard Composer presents "Portraits"](https://eventbrite.com.au)
+📆 Sun 26 Jul, 4:00 PM
+📍 Chrome Street Studios
 💰 Free
-`festival` `world music` `cultural` `free`
+`composer` `music` `free` `creative`
 
-Experience the Brisbane French Festival's live music program with multiple stages featuring French and World music acts across Roma Street Parkland, part of a three-day cultural celebration.
+A musical showcase featuring original compositions titled 'Portraits' by a local artist.
 
-#### [Blak Day Out](https://hamiltontoday.com.au/whats-on-brisbane-gigs-and-events/le-festival-live-music-comedy-and-tribute-shows-in-brisbane-24-26-july-2026/)
-📆 Fri 24 Jul, 8:00 PM
+#### [The Stirling Canon](https://thejunkbar.com.au)
+📆 22 July 2026, 6:30 PM
+📍 The Junk Bar, Ashgrove
+💰 Check website
+`music` `live` `concert`
+
+An intimate live music performance at The Junk Bar featuring The Stirling Canon.
+
+#### [Blak Day Out (Dan Sultan, Beddy Rays, Becca Hatch, etc.)](https://theprincesstheatre.com.au)
+📆 24 July 2026, Time TBA
 📍 The Princess Theatre, Woolloongabba
-💰 $25
-`indigenous music` `concert` `cultural` `live music`
+💰 Check website
+`music` `festival` `arts`
 
-A special First Nations-focused live music event showcasing Indigenous artists and bands in a powerful, full-length concert at the historic Princess Theatre.
+A curated musical showcase celebrating Indigenous talent featuring artists like Dan Sultan, Beddy Rays, and Becca Hatch.
 
-#### [Che Arthur and The Rockefeller Frequency](https://tixel.com/au/discover/Brisbane)
-📆 Thu 23 Jul, 7:30 PM
+#### [The Scornful Four](https://therubyjazzclub.com.au)
+📆 Fri 24 Jul, 8:00 PM
+📍 The Ruby Jazz Club
+💰 
+`jazz` `live-music` `performance`
+
+A local jazz performance showcasing technical musicianship in an intimate, dedicated jazz venue setting.
+
+#### [Wil & His Piano: Boogie-Woogie, Stride & Early Jazz](https://therubyjazzclub.com.au)
+📆 Sat 25 Jul, 7:00 PM
+📍 The Ruby Jazz Club
+💰 
+`jazz` `piano` `history`
+
+A focused musical exploration of historical jazz piano styles, performed in a relaxed club environment.
+
+#### [Twilight Jazz – Brisbane Big Band](https://brisbanejazzclub.com.au)
+📆 Sun 26 Jul, 4:30 PM
+📍 Brisbane Jazz Club
+💰 
+`jazz` `big-band` `music`
+
+Enjoy classic big band jazz arrangements overlooking the river at the iconic Brisbane Jazz Club.
+
+#### [Ngahrima Festival](https://www.australianmusiccentre.com.au)
+📆 22-07-2026
+📍 Brisbane City
+💰 
+`music` `festival` `culture`
+
+A week-long celebration of contemporary and traditional music featuring performances, workshops, and artist discussions.
+
+#### [Le Festival (French cultural celebration with live entertainment)](https://lefestival.com.au)
+📆 24-07-2026
+📍 Roma Street Parkland
+💰 
+`french` `festival` `music`
+
+An immersive French cultural event featuring live music, performances, and artistic displays in a public park setting.
+
+#### [Reverse Parking, Austin Jenko and Lowbrow](https://tickets.oztix.com.au/outlet/event/c105ae06-3702-490c-a748-c10db189d204)
+📆 Thu 23 Jul, 7:00 PM
+📍 Crowbar Brisbane, Fortitude Valley
+💰 $12.50
+`alternative` `live music` `underground`
+
+A raw, underground gig at one of Brisbane's most authentic independent venues, featuring a lineup of local emerging alternative artists.
+
+#### [LESS OUT OF SYNC Festival](https://tickets.oztix.com.au/outlet/event/b1411fb2-78a1-440a-b28f-0ff314322783)
+📆 Fri 24 Jul, 6:00 PM
+📍 The Brightside Outdoors, Fortitude Valley
+💰 $35
+`indie` `festival` `live music`
+
+A multi-artist outdoor showcase highlighting Brisbane's vibrant indie and alternative music subculture in a community-focused setting.
+
+#### [The Worm Turns, Gudgeon and Anna & the Morphics](https://tickets.oztix.com.au/outlet/event/80757c74-c6af-4a01-8218-7dd6cda6e0d5)
+📆 Sun 26 Jul, 6:00 PM
+📍 Black Bear Lodge, Fortitude Valley
+💰 $13
+`indie` `local` `music`
+
+A local indie gig at an intimate, cozy lounge venue featuring experimental and alternative sounds from a lineup of emerging artists.
+
+#### [Drop Bear Open Mic Comedy](https://www.meetup.com/en-au/westend-singles-social-networking-meetup-group/events/hkkgztyjckbcc/)
+📆 Tue 21 Jul, 7:00 PM
+📍 The Fourth Monkey Cocktail Bar & Grill, South Brisbane
+💰 Free
+`comedy` `performance` `social`
+
+An intimate, supportive open mic night where local comedians test new material in a low-pressure environment.
+
+#### [Bands in Parks — Sunset Sounds, featuring Second Winds Jazz Band](https://www.viabrisbane.com/events/bands-in-parks-sunset-sounds-unknown/2026-07-25)
+📆 25 July 2026, 4–5:30pm
+📍 Kite Terrace, Thomas Dixon Centre, West End
+💰 Free
+`jazz` `community` `free` `music`
+
+A community-focused, free afternoon of jazz performed by a local big band, set in a scenic outdoor terrace.
+
+#### [Pride & Prejudice – Night with the Artists](https://www.qpac.com.au/whats-on/2026/queensland-theatre-company-pride-and-prejudice)
+📆 23 July 2026, 7:30 PM
+📍 Playhouse, QPAC, South Brisbane
+💰 $79–$139
+`theatre` `literature` `performance` `culture`
+
+A live performance of a classic work featuring post-show discourse with the creative team, ideal for those interested in literature and theatre craft.
+
+#### Queensland Symphony Orchestra Studio Concert
+📆 Tue 21 Jul, 12:00 PM
+📍 Queensland Symphony Orchestra Studio, 114 Grey Street, South Brisbane
+💰 Unknown
+`classical` `music` `orchestra`
+
+An intimate studio performance presented by members of the Queensland Symphony Orchestra.
+
+#### [Le Festival – Brisbane French Festival (Live Music Program)](https://hamiltontoday.com.au/whats-on-brisbane-gigs-and-events/le-festival-live-music-comedy-and-tribute-shows-in-brisbane-24-26-july-2026/)
+📆 Fri 24 Jul, 12:00 PM
+📍 Roma Street Parkland, Brisbane City
+💰 Unknown
+`music` `festival` `french`
+
+A cultural celebration of French music, arts, and performance held across three days in Roma Street Parkland.
+
+#### [St Peters Jazz Festival 2026 – Trichotomy](https://www.songkick.com/metro-areas/26778-australia-brisbane/2026)
+📆 Sun 26 Jul, 12:00 PM
+📍 St Peter's Lutheran College, Indooroopilly
+💰 Unknown
+`music` `jazz` `performance`
+
+A jazz festival event featuring the acclaimed contemporary trio Trichotomy in a school-hosted setting.
+
+#### [Lano](https://www.songkick.com/metro-areas/26778-australia-brisbane)
+📆 Thu 23 Jul 2026
+📍 Brisbane Powerhouse, New Farm
+💰 Ticketed
+`live-music` `performance` `concert`
+
+An evening of live music performance hosted at the iconic Brisbane Powerhouse venue.
+
+#### [Che Arthur and The Rockefeller Frequency](https://www.songkick.com/metro-areas/26778-australia-brisbane)
+📆 Thu 23 Jul 2026
 📍 The Brightside, Fortitude Valley
-💰 $15+
-`rock` `indie` `music` `gig`
+💰 Ticketed
+`rock` `live-music` `gig`
 
-US rock artist Che Arthur performs with The Rockefeller Frequency, complemented by DJ sets from members of Silversun Pickups, for a night of rock and indie.
+A live rock showcase featuring Che Arthur alongside the band The Rockefeller Frequency at The Brightside's band room.
 
-#### [Filth at Tomcat](https://www.shazam.com/events/brisbane-qld-4000-australia)
+#### [Borderline](https://www.bandsintown.com/c/brisbane-australia/this-week/genre/all-genres)
+📆 Thu 23 Jul 2026, 7:00 PM
+📍 The Brightside, Brisbane
+💰 Ticketed
+`indie` `live-music` `concert`
+
+An energetic live music show featuring local act Borderline at The Brightside.
+
+#### [Until Clarity](https://www.bandsintown.com/c/brisbane-australia/this-week/genre/all-genres)
+📆 Thu 23 Jul 2026, 7:00 PM
+📍 Black Bear Lodge, Brisbane
+💰 Ticketed
+`live-music` `indie` `gig`
+
+A live performance by the band Until Clarity in the intimate setting of Black Bear Lodge.
+
+#### [Bradley McCaw Piano Nights](https://www.bandsintown.com/c/brisbane-australia/this-week/genre/all-genres)
+📆 Thu 23 Jul 2026, 7:00 PM
+📍 Ric's Backyard, Brisbane
+💰 Free/low cost
+`piano` `acoustic` `free`
+
+Bradley McCaw brings an evening of piano-driven music to the casual outdoor atmosphere of Ric's Backyard.
+
+#### [Birdman Randy and The Ivory Street Preachers](https://www.bandsintown.com/c/brisbane-australia/this-week/genre/all-genres)
+📆 Thu 23 Jul 2026, 8:00 PM
+📍 Le Royal Residency, Brisbane
+💰 Free entry
+`live-music` `local` `free`
+
+A live show featuring the distinctive style of Birdman Randy and The Ivory Street Preachers.
+
+#### [Silversun Pickups (Tenterhooks AUS/NZ Tour) with Coast Arcade](https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSyZfZ7v7nJ)
+📆 Fri 24 Jul 2026, 7:00 PM
+📍 The Tivoli, Brisbane
+💰 Ticketed
+`rock` `concert` `tour`
+
+Los Angeles rockers Silversun Pickups perform live at The Tivoli with support from Coast Arcade.
+
+#### [Jem Cassar-Daley](https://www.bandsintown.com/c/brisbane-australia/this-week/genre/all-genres)
+📆 Fri 24 Jul 2026, 6:00 PM
+📍 The Princess Theatre, Woolloongabba
+💰 Ticketed
+`pop` `live-music` `concert`
+
+Emerging pop-artist Jem Cassar-Daley performs a headline show at the historic Princess Theatre.
+
+#### [Beddy Rays](https://www.bandsintown.com/c/brisbane-australia/this-week/genre/all-genres)
+📆 Fri 24 Jul 2026, 6:00 PM
+📍 The Princess Theatre, Woolloongabba
+💰 Ticketed
+`indie` `rock` `concert`
+
+Popular Australian indie-rock band Beddy Rays take the stage at The Princess Theatre for a night of high-energy music.
+
+#### [THE LYRICAL](https://www.bandsintown.com/c/brisbane-australia/this-week/genre/all-genres)
+📆 Fri 24 Jul 2026, 5:00 PM
+📍 Jubilee Hotel, Brisbane
+💰 Free entry
+`soul` `live-music` `free`
+
+THE LYRICAL performs a live set at the Jubilee Hotel, offering a blend of soul and pop vibes.
+
+#### [Silversun Pickups with Coast Arcade](https://www.thetivoli.com.au)
+📆 Fri 24 Jul, 7:00 PM
+📍 The Tivoli, Brisbane
+💰 Check Ticketmaster for pricing
+`music` `rock` `live`
+
+US alternative rock band Silversun Pickups perform live with support from local act Coast Arcade.
+
+#### [Lano](https://www.brisbanepowerhouse.org)
+📆 Fri 24 Jul, 7:00 PM
+📍 Brisbane Powerhouse, New Farm
+💰 Check venue for pricing
+`music` `live` `performance`
+
+Second night of live musical performance at the Brisbane Powerhouse.
+
+#### [Karnivool, TesseracT and Car Bomb](https://riverstage.brisbane.qld.gov.au/whats-on)
+📆 Sat 25 Jul, 6:00 PM
+📍 Riverstage, Brisbane
+💰 Check Ticketek for pricing
+`music` `metal` `live`
+
+A heavy hitting night of progressive metal featuring Karnivool, TesseracT, and Car Bomb.
+
+#### [Chandler Jay](https://www.songkick.com/venues)
+📆 Sat 25 Jul, 7:00 PM
+📍 Montezumas Mexican Restaurant & Bar, Brisbane
+💰 Check venue for pricing
+`music` `live` `acoustic`
+
+Live musical set by Chandler Jay at Montezumas.
+
+#### [Triffid Sundays: Holy Smokes & Friends](https://www.thetriffid.com.au)
+📆 Sun 26 Jul, 3:00 PM
+📍 The Triffid, Newstead
+💰 Check venue for pricing
+`music` `local` `sunday`
+
+A casual Sunday afternoon showcase of local talent featuring Holy Smokes & Friends.
+
+#### [Karnivool - In Verses Tour with TesseracT and Car Bomb](https://www.destroyalllines.com/tours/karnivool)
+📆 Sat 25 Jul, 7:00 PM
+📍 Riverstage, Brisbane
+💰 Ticketed
+`rock` `prog` `live music`
+
+Progressive rock heavyweights Karnivool perform alongside TesseracT and Car Bomb for a high-energy outdoor show.
+
+#### [Filth](https://www.shazam.com/events/brisbane-qld-4000-australia)
 📆 Thu 23 Jul, 8:00 PM
 📍 Tomcat, Fortitude Valley
-💰 Ticketed
-`rock` `live music` `intimate` `fortitude valley`
+💰 Free/Low cost
+`hardcore` `live music` `local`
 
-Experience a live rock gig at Tomcat, a well-regarded small live music bar in Fortitude Valley known for its intimate atmosphere.
+Hard-hitting live performance by the band Filth in the heart of Fortitude Valley.
 
-#### [Silversun Pickups + Coast Arcade — The Tivoli](https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSyZfZ7v7nJ)
-📆 Fri 24 Jul, 7:00 PM
-📍 The Tivoli, Fortitude Valley
-💰 Ticketed
-`indie rock` `alternative` `dream pop` `live music`
-
-Catch US alternative rock/dream pop band Silversun Pickups on their Tenterhooks tour, performing their latest genre-spanning album live at The Tivoli, with support from Coast Arcade.
-
-#### [Open Season (Reggae) — The Tivoli](https://www.shazam.com/events/brisbane-qld-4000-australia)
-📆 Fri 24 Jul, 7:30 PM
-📍 The Tivoli, Fortitude Valley
-💰 Ticketed
-`reggae` `live music` `tivoli` `fortitude valley`
-
-Experience the vibrant sounds of reggae with Open Season performing live at the historic Tivoli theatre, known for its excellent acoustics and atmosphere.
-
-#### [Karnivool – In Verses Tour (+ TesseracT + Car Bomb) — Riverstage](https://www.ticketmaster.com.au/karnivool-in-verses-tour-brisbane-25-07-2026/event/1300647EA02742D4)
-📆 Sat 25 Jul, 5:00 PM
-📍 Riverstage, Brisbane CBD
-💰 Ticketed
-`progressive rock` `metal` `outdoor` `large crowd`
-
-A major progressive rock event featuring Australian legends Karnivool headlining their In Verses Tour, supported by UK prog-metal TesseracT and US math-metal Car Bomb, outdoors at Riverstage.
-
-#### [Felipe Baldomir](https://www.songkick.com/concerts/42000000-felipe-baldomir-at-outpost)
-📆 Fri 24 Jul
-📍 The Outpost, Fortitude Valley
-💰 Check website
-`live music` `fortitude valley` `indie`
-
-Felipe Baldomir performs live at The Outpost in Fortitude Valley, a local venue for live music.
-
-#### [Karnivool + TesseracT + Car Bomb](https://www.ticketmaster.com.au/karnivool-in-verses-tour-brisbane-25-07-2026/event/)
-📆 Sat 25 Jul, 5:00 PM
-📍 Riverstage Brisbane, Brisbane CBD
-💰 Check website
-`progressive rock` `art rock` `live music` `outdoor`
-
-Karnivool's 'In Verses Tour' brings a major progressive/art-rock event to Riverstage Brisbane, featuring support from TesseracT and Car Bomb.
-
-#### [QCrumpets — Trumpet Recital](https://www.qtix.com.au)
+#### [Rory Price](https://www.shazam.com/events/brisbane-qld-4000-australia)
 📆 Thu 23 Jul, 7:00 PM
-📍 Ian Hanger Recital Hall, Queensland Conservatorium, South Bank
-💰 Check QTIX
-`classical` `recital` `student` `performance`
+📍 The Plough Inn, South Bank Parklands
+💰 Free/Low cost
+`folk` `pub` `live music`
 
-Students from the Queensland Conservatorium present 'QCrumpets', a trumpet recital featuring bold favourites and solo works in a unique student-led soundscape journey.
+A relaxed evening of live music by Rory Price at the iconic Plough Inn.
 
-#### [Silversun Pickups — Tenterhooks AUS/NZ Tour](https://thetivoli.com.au/events)
-📆 Fri 24 Jul, 7:00 PM
-📍 The Tivoli, Fortitude Valley
+#### [Salsa Sunday's](https://musick.com.au)
+📆 Sun 20 Jul, 7:45 PM
+📍 Pig 'N' Whistle Brunswick St, Fortitude Valley
+💰 Free
+`dance` `social` `music` `free`
+
+An evening of salsa dancing and music, providing an open social environment for dancers of all skill levels.
+
+#### [Keys to Life](https://qpac.com.au)
+📆 Wed 22 Jul
+📍 Queensland Performing Arts Centre (QPAC), South Brisbane
 💰 Ticketed
-`indie rock` `alternative` `concert`
+`music` `performance` `concert`
 
-American indie rock band Silversun Pickups perform their 'Tenterhooks' tour at The Tivoli, known for their distinctive shoegaze-influenced sound.
+A musical performance hosted at QPAC featuring piano-centric compositions.
 
-#### [Karnivool — 'In Verses' Tour](https://www.ticketmaster.com.au/riverstage-brisbane-tickets-brisbane/venue/155825)
-📆 Sat 25 Jul, 5:00 PM
-📍 Riverstage, City
+#### [Selector DJ Comp](https://thebrightsidebrisbane.com)
+📆 Wed 22 Jul
+📍 The Brightside, Fortitude Valley
 💰 Ticketed
-`progressive rock` `alternative` `concert`
+`dj` `music` `electronic` `performance`
 
-Progressive rock band Karnivool performs their 'In Verses' tour at Riverstage, known for their intricate soundscapes and powerful live performances.
+A DJ competition showcasing local electronic music talent and mixing skills at an iconic venue.
 
-#### [Holystone, Robot God, Leaker, and Asbestos](https://www.songkick.com/metro-areas/26778-australia-brisbane)
+#### [Tara Community in Concert](https://musick.com.au)
+📆 Wed 22 Jul
+📍 Various Locations
+💰 Ticketed
+`community` `music` `performance`
+
+A collaborative community music performance series featuring local artists performing at various spots.
+
+#### [Bands in Parks: Sunset Sounds](https://www.brisbane.qld.gov.au)
+📆 Sat 25 Jul, 4:00 PM
+📍 Kite Terrace, Thomas Dixon Centre, West End
+💰 Free
+`music` `outdoor` `free` `community`
+
+An open-air musical performance series presented by the Brisbane City Council at the scenic Thomas Dixon Centre.
+
+#### [The Daisycutters, Will Remedy & The Influencers and Cassi Marie](https://countrytown.com.au)
 📆 Sat 25 Jul
-📍 Tomcat, Brisbane
-💰 Check venue
-`rock` `metal` `live music` `subculture`
+📍 Black Bear Lodge, Fortitude Valley
+💰 Ticketed
+`indie` `music` `live` `valley`
 
-Four rock and metal bands — Holystone, Robot God, Leaker, and Asbestos — perform a heavy-hitting lineup at Tomcat, a dedicated live music venue.
+An evening of local independent music featuring a lineup of three distinct acts at a cozy venue.
 
-#### Live Music
-📆 Mon 20 Jul, 7:00 PM
-📍 Bramble Bay Bowls Club, Woody Point
+#### [Musical Chairs Jazz Band - Christmas in July Concert](https://eventbrite.com.au)
+📆 Sat 25 Jul, 3:00 PM
+📍 202 Gallipoli Rd
+💰 From $11.90
+`jazz` `music` `concert`
+
+A themed jazz performance celebrating Christmas in July, featuring the Musical Chairs Jazz Band.
+
+#### [Give It All](https://shazam.com)
+📆 Sun 26 Jul, 3:00 PM
+📍 Crowbar Brisbane, Fortitude Valley
+💰 Ticketed
+`alternative` `music` `concert`
+
+A heavy alternative music gig hosted at the Crowbar venue.
+
+#### [Kenrose Street Festival](https://www.brisbane.qld.gov.au)
+📆 Sun 26 Jul, 10:00 AM
+📍 Kenrose Street, Carina
+💰 Free
+`festival` `music` `community` `free`
+
+A local street festival featuring live music performances and community-focused atmosphere.
+
+#### [Crocodylus, Double Date & Dirty Harry](https://thejunkbar.com.au)
+📆 24 July 2026, 7:00 PM
+📍 The Junk Bar, Ashgrove
+💰 Check website
+`music` `rock` `concert`
+
+A triple-header rock showcase featuring Crocodylus, Double Date, and Dirty Harry.
+
+#### [Girl and Girl (All Ages Show)](https://thejunkbar.com.au)
+📆 25 July 2026, 2:00 PM
+📍 The Junk Bar, Ashgrove
+💰 Sold Out
+`music` `concert` `all-ages`
+
+An afternoon all-ages concert performance by the band Girl and Girl.
+
+#### [Day of Contempt](https://crowbarbris.com)
+📆 25 July 2026, 7:00 PM
+📍 Crowbar Brisbane, Fortitude Valley
+💰 Check website
+`music` `metal` `concert`
+
+A high-energy live performance by Day of Contempt at the iconic Brisbane heavy venue, Crowbar.
+
+#### [Girl and Girl (18+ Show)](https://thejunkbar.com.au)
+📆 25 July 2026, 7:00 PM
+📍 The Junk Bar, Ashgrove
+💰 Sold Out
+`music` `concert` `live`
+
+An evening concert performance by the band Girl and Girl, restricted to 18+ attendees.
+
+#### [The Filthy Animals](https://leftysmusichall.com.au)
+📆 25 July 2026, 5:00 PM
+📍 Lefty's Music Hall, Petrie Terrace
+💰 Check website
+`music` `blues` `concert`
+
+A live set by The Filthy Animals held at the atmospheric Lefty's Music Hall.
+
+#### [Mike Beale Band](https://leftysmusichall.com.au)
+📆 24 July 2026, 10:00 PM
+📍 Lefty's Music Hall, Petrie Terrace
+💰 Check website
+`music` `live` `concert`
+
+Late-night live music performance featuring the Mike Beale Band.
+
+#### [Willie Js 6v6](https://leftysmusichall.com.au)
+📆 25 July 2026, 10:00 PM
+📍 Lefty's Music Hall, Petrie Terrace
+💰 Check website
+`music` `live` `concert`
+
+Live performance by Willie Js 6v6, contributing to the eclectic musical atmosphere at Lefty's.
+
+#### [Jono B. Smith, Ruby Gilbert](https://thejunkbar.com.au)
+📆 26 July 2026, 6:30 PM
+📍 The Junk Bar, Ashgrove
+💰 Check website
+`music` `folk` `concert`
+
+A double bill featuring singer-songwriters Jono B. Smith and Ruby Gilbert.
+
+#### [Candlelight The Best of Hans Zimmer](https://feverup.com)
+📆 23 July 2026, 6:30 PM
+📍 Saint John's Anglican Cathedral
+💰 Variable
+`cinematic` `classical` `music` `candlelight`
+
+A tribute concert featuring the epic cinematic scores of Hans Zimmer performed by a string quartet in a candlelit cathedral setting.
+
+#### [The Music of Video Games](https://qso.com.au)
+📆 24 July 2026, 7:30 PM
+📍 Concert Hall, QPAC
+💰 Variable
+`orchestral` `gaming` `music` `concert`
+
+The Queensland Symphony Orchestra presents a symphonic exploration of iconic scores and soundtracks from the world of video games.
+
+#### [Candlelight Tribute to Fleetwood Mac](https://feverup.com)
+📆 24 July 2026, 8:30 PM
+📍 Saint John's Anglican Cathedral
+💰 Variable
+`tribute` `classical` `music` `candlelight`
+
+A string quartet performs classic hits from Fleetwood Mac in the intimate, candlelit atmosphere of St John's Cathedral.
+
+#### [The Music of Video Games](https://qso.com.au)
+📆 25 July 2026, 1:30 PM
+📍 Concert Hall, QPAC
+💰 Variable
+`orchestral` `gaming` `music` `concert`
+
+A matinee performance by the Queensland Symphony Orchestra featuring orchestral arrangements of famous video game soundtracks.
+
+#### [Candlelight The Best of Joe Hisaishi](https://feverup.com)
+📆 25 July 2026, 6:30 PM
+📍 Saint John's Anglican Cathedral
+💰 Variable
+`anime` `classical` `music` `candlelight`
+
+A magical evening of music by Japanese composer Joe Hisaishi, known for his work with Studio Ghibli, performed by candlelight.
+
+#### [Riebl Tedesco McGill](https://www.musick.com.au)
+📆 Sun 26 Jul, 7:00 PM
+📍 The Triffid
 💰 
-`live music` `community` `intimate`
+`live-music` `concert` `performance`
 
-Local live music performance at Bramble Bay Bowls Club, offering an intimate weeknight atmosphere for community members to enjoy music.
+A live collaborative musical performance featuring a trio of distinct artists at the industrial-chic Triffid venue.
 
-#### [Lord Mayor's City Hall Concerts - Hopelessly Devoted to Olivia](https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D200548307)
-📆 Mon 20 Jul, 7:00 PM
+#### [Live Music In The Courtyard](https://www.musick.com.au)
+📆 Sun 26 Jul, 2:00 PM
+📍 Regatta Hotel
+💰 
+`acoustic` `live-music` `social`
+
+An afternoon of acoustic live music in the historical setting of the Regatta Hotel courtyard.
+
+#### [Cathedral Square City Markets (Live Music)](https://www.data.brisbane.qld.gov.au)
+📆 Thu 23 Jul, 10:00 AM
+📍 Cathedral Square
+💰 Free
+`free` `markets` `music`
+
+Live music accompaniment to the weekly community markets in the city, perfect for a casual morning visit.
+
+#### [Candlelight: The Best of Joe Hisaishi](https://musick.com.au/gig/candlelight-the-best-of-joe-hisaishi-2026-07-23/)
+📆 Thu 23 Jul, 6:30 PM
+📍 Saint John’s Anglican Cathedral, Brisbane City
+💰 $58
+`classical` `film music` `atmosphere`
+
+A classical tribute to the iconic Studio Ghibli composer performed in the atmospheric and historic surroundings of the Cathedral.
+
+#### [SPACE&AGES – Human Nature EP Launch](https://tickets.oztix.com.au/outlet/event/b4bd4825-7faa-48e3-941e-1d63cdb42981)
+📆 Fri 24 Jul, 7:00 PM
+📍 The Brightside, Fortitude Valley
+💰 $15
+`indie` `launch` `local music`
+
+An intimate EP launch for local project SPACE&AGES, offering a chance to see emerging creative talent in an accessible venue.
+
+#### [ALLORA – Camera Shy Tour](https://tickets.oztix.com.au/outlet/event/fd13705c-c1e8-43ef-87c5-fe0699c1a248)
+📆 Fri 24 Jul, 7:00 PM
+📍 Black Bear Lodge, Fortitude Valley
+💰 $13
+`indie` `live music` `intimate`
+
+An engaging live performance by ALLORA at the intimate Black Bear Lodge, perfect for fans of authentic, guitar-driven indie songwriting.
+
+#### [Holystone Album Launch](https://tickets.oztix.com.au/outlet/event/16e290c6-78f2-4040-8c84-57af3901d719)
+📆 Sat 25 Jul, 6:30 PM
+📍 Tomcat, Fortitude Valley
+💰 $20
+`heavy` `album launch` `live music`
+
+A high-energy album launch featuring a heavy-hitting local lineup, providing a raw look into the current state of the Brisbane heavy music community.
+
+#### [Deadshowws – You in Colour Album Tour](https://tickets.oztix.com.au/outlet/event/69accb40-46b9-449f-ac0f-2ec875591e27)
+📆 Sat 25 Jul, 7:00 PM
+📍 PFR Lounge, Fortitude Valley
+💰 $15.30
+`indie` `music` `gig`
+
+An intimate indie music gig featuring the local band Deadshowws as part of their latest album tour in a smaller, low-key venue setting.
+
+#### [Candlelight: 90s Unplugged](https://musick.com.au/gig/candlelight-90s-unplugged-2026-07-25/)
+📆 Sat 25 Jul, 8:30 PM
+📍 Saint John’s Anglican Cathedral, Brisbane City
+💰 $34
+`acoustic` `music` `performance`
+
+An atmospheric acoustic performance featuring iconic 90s tracks played by candlelight within the historic setting of Saint John’s Cathedral.
+
+#### [City Sounds — No Way José](https://visit.brisbane.qld.au/whats-on/inner-city/city-sounds/city-sounds-no-way-jos-26-july-3716)
+📆 Sun 26 Jul, 12:00 PM
+📍 Queen Street Mall Stage, Brisbane City
+💰 Free
+`music` `free` `performance`
+
+A series of live acoustic sets performed in the heart of the city, providing a casual atmosphere for passersby to enjoy local music.
+
+#### [Riverside at the Gardens Market — Sunday live-band program](https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/riverside-at-the-gardens-market-1dc0)
+📆 Sun 26 Jul, 8:00 AM
+📍 City Botanic Gardens, Brisbane City
+💰 Free
+`market` `music` `community` `free`
+
+A recurring weekly market set against the Brisbane River featuring local food stalls and a rotating program of live bands.
+
+#### Lord Mayor's City Hall Concerts – Hopelessly Devoted to Olivia
+📆 Tue 21 Jul, 12:00 PM
 📍 Brisbane City Hall, Brisbane City
 💰 Free
-`tribute` `music` `free` `community`
+`music` `tribute` `free`
 
-A free City Hall concert paying tribute to Olivia Newton-John, performed by Salubrious Productions. Expect a mainstream musical experience in an iconic Brisbane venue.
+A daytime tribute concert honoring Olivia Newton-John, hosted as part of the Lord Mayor's City Hall series.
 
-#### Stereophonics - Australia Spring Tour 2025 (sic)
-📆 Thu 23 Jul, 7:00 PM
-📍 The Fortitude Music Hall, Fortitude Valley
-💰 
-`rock` `music` `concert`
+#### The Sunline
+📆 Tue 21 Jul, 12:00 PM
+📍 The Princess Theatre, Woolloongabba
+💰 Unknown
+`music` `live` `concert`
 
-Live concert by Welsh rock band Stereophonics as part of their Australia tour, performing at The Fortitude Music Hall. Expect a high-energy rock performance.
-
-#### STONE TEMPLE PILOTS - PURPLE 30TH ANNIVERSARY TOUR
-📆 Thu 23 Jul, 7:00 PM
-📍 The Fortitude Music Hall, Fortitude Valley
-💰 
-`rock` `music` `anniversary` `concert`
-
-American rock band Stone Temple Pilots celebrate their 'Purple' album with a 30th-anniversary tour, performing live at The Fortitude Music Hall.
-
-#### Karnivool
-📆 Sat 25 Jul, 5:00 PM
-📍 Riverstage, Brisbane
-💰 
-`progressive rock` `music` `concert`
-
-Australian progressive rock band Karnivool performs live at Riverstage, known for their complex compositions and powerful soundscapes.
-
-#### Motta Maadi Music
-📆 Sun 26 Jul, 7:00 PM
-📍 The Brightside, Fortitude Valley
-💰 
-`indie music` `live music` `concert`
-
-Live music performance by Motta Maadi Music at The Brightside in Fortitude Valley, a popular venue for local and touring indie acts.
-
-#### [For The Kids Benefit Show](https://hamiltontoday.com.au/whats-on-brisbane-gigs-and-events/le-festival-live-music-comedy-and-tribute-shows-in-brisbane-24-26-july-2026/)
-📆 Sun 26 Jul, 7:00 PM
-📍 Crowbar Brisbane, Fortitude Valley
-💰 $25
-`benefit gig` `live music` `community` `rock`
-
-A charity benefit gig at Crowbar Brisbane featuring multiple bands, with all proceeds dedicated to supporting children-focused causes through live music performances.
-
-#### [Brooklyn — Eatons Hill Hotel](https://www.songkick.com/metro-areas/26778-australia-brisbane)
-📆 Fri 24 Jul, 8:00 PM
-📍 Eatons Hill Hotel, Eatons Hill
-💰 Ticketed
-`live music` `pop` `pub gig` `eatons hill`
-
-Catch Brooklyn performing live at Eatons Hill Hotel, one of Brisbane's larger entertainment venues offering a full live music experience.
-
-#### [Shiverz (Da Butcher) — Wonderland Brisbane](https://www.songkick.com/metro-areas/26778-australia-brisbane)
-📆 Fri 24 Jul, 9:00 PM
-📍 Wonderland Brisbane, Fortitude Valley
-💰 Ticketed
-`electronic` `dj` `live music` `dance`
-
-Experience an electronic/DJ live act by Shiverz (Da Butcher) at Wonderland Brisbane, a venue known for its energetic music events in Fortitude Valley.
-
-#### [DNA — The Tax Office](https://www.songkick.com/metro-areas/26778-australia-brisbane)
-📆 Fri 24 Jul, 8:00 PM
-📍 The Tax Office, Fortitude Valley
-💰 Ticketed
-`live music` `fortitude valley` `gig`
-
-Catch a live music performance by DNA at The Tax Office, a unique live music and events space located in the heart of Fortitude Valley.
-
-#### [Rory Price — The Plough Inn, Southbank](https://www.shazam.com/events/brisbane-qld-4000-australia)
-📆 Fri 24 Jul, 6:00 PM
-📍 The Plough Inn, South Bank Parklands
-💰 Cost Varies / Free
-`pop` `singer` `free` `live music`
-
-Enjoy a pop/singer act by Rory Price in the relaxed setting of The Plough Inn, a popular pub situated within the scenic South Bank Parklands.
-
-#### [Chillinit – 'The Last Leg' Tour — The Tivoli](https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSyZfZ7v7nJ)
-📆 Sat 25 Jul, 7:00 PM
-📍 The Tivoli, Fortitude Valley
-💰 Ticketed
-`hip hop` `rap` `live music` `brisbane artist`
-
-Brisbane's prominent rap/hip-hop artist Chillinit performs at The Tivoli as part of his 'The Last Leg' farewell tour, a significant event for local fans.
-
-#### [Baby Animals + Avalanche AU — Beenleigh Tavern](https://www.songkick.com/metro-areas/26778-australia-brisbane/genre/rock)
-📆 Sat 25 Jul, 8:00 PM
-📍 Beenleigh Tavern, Beenleigh
-💰 Ticketed
-`hard rock` `australian music` `pub rock` `beenleigh`
-
-Iconic Australian hard rock band Baby Animals perform live with support from Avalanche AU at Beenleigh Tavern, a classic pub rock experience.
-
-#### [Brad Cox — Eatons Hill Hotel](https://www.songkick.com/metro-areas/26778-australia-brisbane)
-📆 Sat 25 Jul, 8:00 PM
-📍 Eatons Hill Hotel, Eatons Hill
-💰 Ticketed
-`country music` `live music` `pub gig` `eatons hill`
-
-Country music artist Brad Cox performs live at Eatons Hill Hotel, a large-scale venue offering a vibrant atmosphere for various live acts.
-
-#### [Deadshowws — PFR Lounge, Fortitude Valley](https://www.songkick.com/metro-areas/26778-australia-brisbane)
-📆 Sat 25 Jul, 8:00 PM
-📍 PFR Lounge, Fortitude Valley
-💰 Ticketed
-`live music` `indie` `fortitude valley` `gig`
-
-Deadshowws perform live at PFR Lounge in Fortitude Valley, a dedicated space for local and touring bands, providing a classic live music experience.
-
-#### [Brooklyn](https://www.eatonshillhotel.com.au/)
-📆 Fri 24 Jul
-📍 Eatons Hill Hotel, Eatons Hill
-💰 Check website
-`live music` `pub gig` `suburban`
-
-Brooklyn performs live at the Eatons Hill Hotel, providing a night of music in the northern suburbs.
-
-#### [Shiverz (Da Butcher)](https://www.wonderlandbrisbane.com/)
-📆 Fri 24 Jul
-📍 Wonderland Brisbane, Fortitude Valley
-💰 Check website
-`electronic music` `live music` `fortitude valley`
-
-Shiverz (Da Butcher) performs live at Wonderland Brisbane, a Fortitude Valley venue known for hosting specific music acts.
-
-#### [DNA](https://www.thetaxoffice.com.au/)
-📆 Fri 24 Jul
-📍 The Tax Office, Fortitude Valley
-💰 Check website
-`live music` `fortitude valley`
-
-DNA performs live at The Tax Office in Fortitude Valley, a local venue offering live music.
-
-#### [Brad Cox](https://www.eatonshillhotel.com.au/)
-📆 Sat 25 Jul
-📍 Eatons Hill Hotel, Eatons Hill
-💰 Check website
-`live music` `pub gig` `suburban`
-
-Brad Cox performs live at the Eatons Hill Hotel, offering a musical performance in the northern suburbs.
-
-#### [Forever K-Pop: A Celebration Concert](https://www.ticketmaster.com.au/the-fortitude-music-hall-tickets-brisbane/venue/158413)
-📆 Sun 26 Jul, 7:30 PM
-📍 Fortitude Music Hall, Fortitude Valley
-💰 Check website
-`k-pop` `live music` `fortitude valley` `celebration`
-
-A large-scale K-Pop celebration concert takes over the Fortitude Music Hall, offering fans a vibrant live experience at Brisbane's premier music venue.
-
-#### [Symphony Y.L.S](https://www.songkick.com/metro-areas/26778-australia-brisbane)
-📆 Sat 25 Jul
-📍 The Station Brisbane, Fortitude Valley
-💰 Check venue
-`live music` `contemporary` `performance`
-
-Symphony Y.L.S performs a live set at The Station Brisbane, a venue supporting diverse local and touring acts.
-
-#### [Fortitude Music Hall — Saturday night show (Artist TBC)](https://www.fortitudemusichall.com.au)
-📆 Sat 25 Jul
-📍 Fortitude Music Hall, Fortitude Valley
-💰 Ticketed
-`live music` `concert` `fortitude valley`
-
-The Fortitude Music Hall hosts a Saturday night concert with an artist to be confirmed, offering a major live music experience in the heart of Fortitude Valley.
-
-#### [Michael Night: A Michael Jackson Club Night](https://hamiltontoday.com.au/whats-on-brisbane-gigs-and-events/le-festival-live-music-comedy-and-tribute-shows-in-brisbane-24-26-july-2026/)
-📆 Fri 24 Jul, 9:00 PM
-📍 The Triffid, Newstead
-💰 $25
-`tribute` `pop` `live music` `dance`
-
-A club-style tribute night celebrating Michael Jackson's catalogue with live performance elements and DJ sets at The Triffid, offering a lively musical experience.
+A live music performance featuring The Sunline at the heritage-listed Princess Theatre.
 
 #### [Nirvanna – Tribute to Nirvana](https://hamiltontoday.com.au/whats-on-brisbane-gigs-and-events/le-festival-live-music-comedy-and-tribute-shows-in-brisbane-24-26-july-2026/)
+📆 Fri 24 Jul, 12:00 PM
+📍 Crowbar Brisbane, Fortitude Valley
+💰 Unknown
+`music` `rock` `tribute`
+
+A high-energy tribute performance covering the catalog of the iconic grunge band Nirvana.
+
+#### [Candlelight: Best of Fleetwood Mac](https://concerts50.com/australia/brisbane)
+📆 Fri 24 Jul, 12:00 PM
+📍 St John's Anglican Cathedral, Brisbane City
+💰 Unknown
+`music` `classical` `atmosphere`
+
+An atmospheric classical tribute to Fleetwood Mac performed under candlelight within the cathedral.
+
+#### [Holystone, Robot God, Leaker, and Asbestos (AUS)](https://www.songkick.com/metro-areas/26778-australia-brisbane/2026)
+📆 Sat 25 Jul, 12:00 PM
+📍 Tomcat, Fortitude Valley
+💰 Unknown
+`music` `rock` `heavy`
+
+A multi-band heavy music gig featuring a lineup of local Australian rock and metal acts.
+
+#### [Inertia – ‘Emerald Whisper’ Australian Tour](https://hamiltontoday.com.au/whats-on-brisbane-gigs-and-events/le-festival-live-music-comedy-and-tribute-shows-in-brisbane-24-26-july-2026/)
+📆 Sat 25 Jul, 12:00 PM
+📍 The Brightside, Fortitude Valley
+💰 Unknown
+`music` `rock` `concert`
+
+Alternative rock performance as part of Inertia's 'Emerald Whisper' national tour.
+
+#### [Che Arthur and The Rockefeller Frequency](https://www.songkick.com/metro-areas/26778-australia-brisbane/2026)
+📆 Sat 25 Jul, 12:00 PM
+📍 The Brightside, Fortitude Valley
+💰 Unknown
+`music` `indie` `concert`
+
+A co-headline live show featuring independent rock artists Che Arthur and The Rockefeller Frequency.
+
+#### [For the Kids Benefit Show](https://hamiltontoday.com.au/whats-on-brisbane-gigs-and-events/le-festival-live-music-comedy-and-tribute-shows-in-brisbane-24-26-july-2026/)
+📆 Sun 26 Jul, 12:00 PM
+📍 Crowbar Brisbane, Fortitude Valley
+💰 Unknown
+`music` `benefit` `community`
+
+A live music benefit show organized to support local charitable efforts for children.
+
+#### [Brooklyn](https://www.songkick.com/metro-areas/26778-australia-brisbane)
+📆 Fri 24 Jul 2026
+📍 Eatons Hill Hotel, Eatons Hill
+💰 Ticketed
+`live-music` `concert` `gig`
+
+A live music event hosted at the Eatons Hill Hotel featuring the artist Brooklyn.
+
+#### [Shiverz (Da Butcher)](https://www.songkick.com/metro-areas/26778-australia-brisbane)
+📆 Fri 24 Jul 2026
+📍 Wonderland Brisbane, Fortitude Valley
+💰 Ticketed
+`electronic` `dj` `live-music`
+
+A high-energy electronic set featuring Shiverz (Da Butcher) at Wonderland Brisbane.
+
+#### [Dna](https://www.songkick.com/venues)
+📆 Fri 24 Jul, 7:00 PM
+📍 The Tax Office, Fortitude Valley
+💰 Check venue for pricing
+`music` `live` `performance`
+
+Live musical performance hosted at The Tax Office in Fortitude Valley.
+
+#### [Michael Night: A Michael Jackson Club Night](https://www.thetriffid.com.au)
 📆 Fri 24 Jul, 8:00 PM
-📍 Crowbar Brisbane, Fortitude Valley
-💰 $25
-`tribute` `rock` `live music` `grunge`
+📍 The Triffid, Newstead
+💰 Check venue for pricing
+`music` `tribute` `dance`
 
-A full-band tribute show performing the iconic music of Nirvana live at Crowbar Brisbane, a venue known for its heavy music scene.
+A tribute club night dedicated to the music and discography of Michael Jackson.
 
-#### [Day Of Contempt](https://crowbarbris.oztix.com.au/Default.aspx?Event=238989)
-📆 Sat 25 Jul, 8:00 PM
-📍 Crowbar Brisbane, Fortitude Valley
-💰 $25
-`heavy metal` `rock` `live music` `gig`
+#### [Chillinit](https://www.thetivoli.com.au)
+📆 Sat 25 Jul, 7:00 PM
+📍 The Tivoli, Brisbane
+💰 Check Ticketmaster for pricing
+`music` `rap` `hiphop`
 
-A heavy music show headlined by Day Of Contempt, featuring supporting acts, at Crowbar’s band room, promising an energetic live performance.
+Australian rapper Chillinit performs live at The Tivoli.
 
-#### [Chillinit](https://hamiltontoday.com.au/whats-on-brisbane-gigs-and-events/le-festival-live-music-comedy-and-tribute-shows-in-brisbane-24-26-july-2026/)
-📆 Sat 25 Jul, 8:00 PM
-📍 The Tivoli, Fortitude Valley
-💰 $50
-`hip hop` `rap` `live music` `concert`
+#### [Symphony Y.L.S](https://www.thestationbrisbane.com)
+📆 Sat 25 Jul, 7:00 PM
+📍 The Station Brisbane, Fortitude Valley
+💰 Check venue for pricing
+`music` `live` `symphony`
 
-Australian rapper Chillinit performs a ticketed headline set at The Tivoli, supported by a live band or DJ, delivering his distinctive style to fans.
+Musical performance featuring Symphony Y.L.S at The Station.
+
+#### [Forever K-pop: A Celebration Concert](https://www.ticketmaster.com/the-fortitude-music-hall-tickets-brisbane/venue/158413)
+📆 Sun 26 Jul, 7:30 PM
+📍 The Fortitude Music Hall, Fortitude Valley
+💰 Check Ticketmaster for pricing
+`music` `kpop` `concert`
+
+A high-energy celebration concert dedicated to the sounds and culture of K-pop.
+
+#### [Brad Cox - Multiple Dimensions Tour](https://countrytown.com.au)
+📆 Sat 25 Jul
+📍 Eatons Hill Hotel, Eatons Hill
+💰 Ticketed
+`country` `music` `concert`
+
+Country music headline show as part of Brad Cox's latest album tour.
+
+#### [Bands in Parks: Blockarama](https://www.brisbane.qld.gov.au)
+📆 Sun 26 Jul, 10:00 AM
+📍 Durack Bowls Club, Durack
+💰 Free
+`music` `community` `free`
+
+A community-oriented musical event held at the Durack Bowls Club as part of the City Council's programming.
+
+#### [Live Music at The Drift bar](https://musick.com.au)
+📆 Sun 26 Jul, 8:15 PM
+📍 The Drift bar, Caloundra
+💰 Ticketed
+`music` `live` `bar`
+
+Evening of live acoustic or local performance entertainment at a coastal bar venue.
+
+#### [Mt Gravatt Show (Live music)](https://www.mtgravattshow.com.au)
+📆 25-07-2026
+📍 Mt Gravatt
+💰 
+`show` `music` `community`
+
+The annual local agricultural show featuring a variety of live musical performances across multiple stages.
+
+#### Live Music at Bramble Bay Bowls Club
+📆 Sun 20 Jul, 12:00 PM
+📍 Bramble Bay Bowls Club, Bray Park/Moreton Bay
+💰 Unknown
+`music` `community` `local`
+
+Local community gathering featuring live music performances at the Bramble Bay Bowls Club.
 
 ### 🎨 Arts / Exhibition
 
@@ -1065,6 +1281,14 @@ Australian rapper Chillinit performs a ticketed headline set at The Tivoli, supp
 `theatre` `performance` `classic` `art`
 
 Experience a contemporary stage adaptation of Jane Austen's classic novel, running at QPAC's Playhouse Theatre before its final performance this Sunday.
+
+#### [Common Threads: United By The Red Dress](https://allevents.in/brisbane/exhibitions)
+📆 Sun 26 Jul, 11:00 AM
+📍 Brisbane City Hall, Brisbane CBD
+💰 TBC
+`art` `exhibition` `fashion` `culture`
+
+Explore a new exhibition at Brisbane City Hall, delving into the powerful symbolism and diverse stories woven into a single striking garment, "The Red Dress".
 
 #### [Crocodiles: 130 Million Years](https://morningpost.com.au/brisbane/whats-on/)
 📆 Ongoing through Jul
@@ -1082,169 +1306,63 @@ Discover the 130-million-year history of crocodiles through full-scale replicas 
 
 Explore the history of a vanished Brisbane suburb through photographs, stories, and artifacts in this historical exhibition, closing this Saturday.
 
-#### [Angela Tiatia Exhibition at IMA (Ongoing)](https://www.ima.org.au/ima-events/)
-📆 Tue 21 - Sun 26 Jul, 10:00 AM - 5:00 PM
-📍 Institute of Modern Art, Fortitude Valley
+#### [Pride & Prejudice](https://www.qpac.com.au/whats-on/2026/queensland-theatre-company-pride-and-prejudice)
+📆 Tue 21 Jul, 6:30 PM
+📍 Playhouse, QPAC, South Brisbane
+💰 $79–$139
+`theatre` `performance` `literature` `culture`
+
+A live theatre production of the classic novel by Jane Austen, presented by the Queensland Theatre Company.
+
+#### [Manly Creative Markets](https://visit.brisbane.qld.au/whats-on/eastern-suburbs/eat-and-drink-events/manly-creative-markets-6ac0)
+📆 Sun 26 Jul, 8:00 AM
+📍 Little Bayside Park, Manly
 💰 Free
-`art` `exhibition` `contemporary` `free`
+`market` `craft` `creative` `community`
 
-Explore Angela Tiatia's landmark first survey exhibition at the Institute of Modern Art, showcasing her work that blends beauty and resistance, open free to the public Tuesday to Sunday.
+A local market showcasing independent makers, craftspeople, and artists, providing a space to connect with the local creative subculture.
 
-#### [d harding: Site, Non Site, Place (Milani Gallery)](https://milanigallery.com.au/exhibitions/~/onsite/)
-📆 Wed 22 - Fri 24 Jul, 11:00 AM - 5:00 PM
-📍 Milani Gallery, West End
+#### [RQAS Fellows Exhibition](https://www.viabrisbane.com/events/rqas-fellows-exhibition-petrie-terrace-gallery-petrie-terrace/2026-07-22)
+📆 Wed 22 Jul, 10:00 AM
+📍 Petrie Terrace Gallery, Petrie Terrace
 💰 Free
-`art` `exhibition` `first nations` `conceptual` `free`
+`art` `exhibition` `gallery`
 
-Experience the final days of *Site, Non Site, Place*, a solo exhibition by significant First Nations conceptual artist d harding at Milani Gallery, exploring themes of place and non-place.
+A showcase of works by the fellows of the Royal Queensland Art Society, highlighting high-quality local artistic talent.
 
-#### [James Guppy: Sculptures and Birds (Jan Murphy Gallery)](https://www.janmurphygallery.com.au/)
-📆 Tue 21 - Sat 25 Jul, 10:00 AM - 5:00 PM
-📍 Jan Murphy Gallery, Fortitude Valley
+#### [Pride & Prejudice – audio-described performance and tactile tour](https://www.qpac.com.au/whats-on/2026/queensland-theatre-company-pride-and-prejudice)
+📆 Sat 25 Jul, 2:00 PM
+📍 Playhouse, QPAC, South Brisbane
+💰 $79–$139
+`theatre` `arts` `performance`
+
+An engaging theatrical production featuring an audio-described performance and a hands-on tactile tour prior to the show for a deeper sensory experience.
+
+#### [Queensland Regional Art Awards Remote Artist Solo Exhibition: moo (Sam Matthews)](https://www.arts.qld.gov.au/about-us/our-spaces/judith-wright-arts-centre)
+📆 20–24 July 2026, 9am–5pm
+📍 Judith Wright Arts Centre, Fortitude Valley
 💰 Free
-`art` `exhibition` `sculpture` `free`
+`art` `exhibition` `free`
 
-Visit Jan Murphy Gallery to see *Sculptures and Birds*, an imaginative solo exhibition by James Guppy, showcasing tactile artworks from one of the gallery's engaging artists.
+A solo exhibition by Sam Matthews (moo) showcasing works from the Queensland Regional Art Awards, highlighting remote artistic perspectives within the contemporary gallery space.
 
-#### [Guido Maestri: Arrangements (Jan Murphy Gallery)](https://www.janmurphygallery.com.au/)
-📆 Tue 21 - Sat 25 Jul, 10:00 AM - 5:00 PM
-📍 Jan Murphy Gallery, Fortitude Valley
-💰 Free
-`art` `exhibition` `painting` `free`
-
-See *Arrangements* by Guido Maestri at Jan Murphy Gallery, an exhibition of richly decorative and narrative paintings running concurrently with James Guppy's show.
-
-#### [Beetlejuice The Musical](https://www.qpac.com.au/whats-on)
-📆 Mon 20 Jul (check QPAC for session time)
+#### [Beetlejuice The Musical at QPAC](https://www.westendcentral.com.au/brisbanes-major-events/)
+📆 Mon 20 Jul, 7:30 PM
 📍 Lyric Theatre, QPAC, South Brisbane
-💰 Ticketed (prices vary)
-`musical` `theatre` `performance`
+💰 $80
+`theatre` `musical` `performance` `art`
 
-Experience the hit Broadway musical Beetlejuice, a darkly comedic and music-driven stage show based on the cult classic film, featuring live orchestral music and theatrical performances.
+A high-production-value musical adaptation offering significant creative and artistic performance design. Suitable for those interested in modern theatrical spectacle and storytelling.
 
-#### ["Site, Non Site, Place" - d harding Exhibition](https://milanigallery.com.au/exhibitions/d-harding-site-non-site-place/)
-📆 Until Fri 24 Jul, 11:00 AM - 5:00 PM (Wed-Sat)
-📍 Milani Gallery, West End
-💰 Free
-`art` `exhibition` `gallery` `visual_art` `free`
+#### [The Book of Mormon at QPAC](https://www.westendcentral.com.au/brisbanes-major-events/)
+📆 Mon 20 Jul, 7:30 PM
+📍 Glasshouse Theatre, QPAC, South Brisbane
+💰 $90
+`theatre` `comedy` `culture` `performance`
 
-An exhibition by artist d harding at Milani Gallery in West End, presenting works under the theme 'Site, Non Site, Place'. The gallery is open Wednesday to Saturday, 11 AM to 5 PM.
-
-#### [Brisbane Rotary Art Show](https://www.brisbanerotaryartshow.com.au/)
-📆 Mon 20 Jul, 9:00 AM
-📍 Central Plaza One, Brisbane CBD
-💰 Unknown
-`art` `exhibition` `community` `fundraiser`
-
-The 44th annual art show, showcasing works by prominent and emerging Australian artists. Proceeds from this large exhibition support Youngcare, Coffee Brigade, and other Rotary community projects.
-
-#### [Volunteer Guided Tour: Collection Snapshot (QAG)](https://www.qagoma.qld.gov.au/whats-on/tours/volunteer-guided-tour-collection-snapshot)
-📆 Wed 22 Jul, 12:00 PM
-📍 QAG (Queensland Art Gallery)
-💰 Free
-`art` `tour` `exhibition` `free`
-
-A concise, free guided tour at the Queensland Art Gallery, providing a quick overview of highlights from the QAG collection for those seeking a brief cultural engagement.
-
-#### [Queensland Performing Arts Centre Daytime Programs](https://www.qpac.com.au/whats-on)
-📆 Mon 20 Jul, 12:15 PM
-📍 Queensland Performing Arts Centre (QPAC), South Brisbane
-💰 Varies
-`performing arts` `talks` `culture` `art`
-
-A daytime arts program at QPAC including talks, short performances, and foyer activations, with scheduled sessions at 12:15 PM and 5:30 PM, suitable for arts and theatre enthusiasts.
-
-#### [IMA Gala & Benefit Auction 2026 — Online Bidding Opens](https://events.humanitix.com/ima-gala-2026)
-📆 Wed 22 Jul, 12:00 AM
-📍 Institute of Modern Art, Fortitude Valley
-💰 Free
-`art` `auction` `fundraiser`
-
-The Institute of Modern Art's annual benefit auction opens for online bidding on Wednesday 22 July, allowing public access to view and bid on artworks to support Australian artists and cultural projects.
-
-#### [Golden Years Screenings at Palace Barracks](https://www.palacecinemas.com.au/offers/golden-years-screenings-brisbane)
-📆 Wed 22 Jul, 11:00 AM
-📍 Palace Barracks Cinema, Brisbane
-💰 $10
-`film` `community` `seniors` `discount`
-
-Enjoy discounted film screenings at Palace Barracks' Golden Years event, a recurring community gathering on Wednesdays for seniors to watch selected titles.
-
-#### Dinos Alive: An Immersive Experience in Brisbane
-📆 Mon 20 Jul, 10:00 AM (Ongoing daily until 30 Aug)
-📍 Fever Skygate | Exhibition and Immersive Experience Centre, Brisbane
-💰 From $29.90
-`dinosaurs` `exhibition` `immersive` `family`
-
-An immersive exhibition transporting visitors back to the Jurassic era with realistic dinosaur displays and virtual reality experiences, designed for all ages.
-
-#### [Don Ross Mosaic Display](https://www.brisbane.qld.gov.au/whats-on/listing?trumbaEmbed=eventid%3D123456)
-📆 Mon 20 - Fri 24 Jul
-📍 Anzac Square, Brisbane City
-💰 Free
-`art` `exhibition` `public_art` `free`
-
-View the intricate mosaic artwork by Don Ross on public display at Anzac Square, offering a free opportunity to appreciate local artistry and public installations.
-
-### 🤝 Social / Meetup
-
-#### [RPG Society @ Vault Games Brisbane City](https://allevents.in/brisbane/2026-07-22)
-📆 Wed 22 Jul, 6:00 PM
-📍 Vault Games, Brisbane CBD
-💰 TBC
-`rpg` `gaming` `social` `community`
-
-Join a recurring tabletop roleplaying games social night at Vault Games Brisbane City, a dedicated gaming store welcoming to newcomers and seasoned players alike.
-
-#### [Wentworth Con Brisbane 2026](https://allevents.in/brisbane/2026-07-25)
-📆 Sat 25 Jul, 9:00 AM
-📍 The Westin Brisbane, Brisbane CBD
-💰 $TBC
-`fandom` `community` `social` `culture`
-
-A community-driven fan convention celebrating the Australian drama *Wentworth*, offering enthusiastic fans a chance to meet, discuss, and engage with the show.
-
-#### Saboteurs: Crewmates & Imposters - Original Map
-📆 Wed 22 Jul, 6:00 PM (Ongoing daily until 31 Dec)
-📍 Orion Springfield Central
-💰 From $31.50
-`gaming` `social` `interactive` `adventure`
-
-An immersive, real-life game where players work together as crewmates or secretly sabotage as imposters, requiring strategy and social deduction.
-
-#### Saboteurs: Crewmates and Impostors - Dark Map (10+)
-📆 Wed 22 Jul, 6:00 PM (Ongoing daily until 31 Dec)
-📍 Orion Springfield Central
-💰 From $31.50
-`gaming` `social` `interactive` `thriller`
-
-A darker, more intense version of the real-life social deduction game, challenging players to navigate deception and teamwork in a new map.
-
-#### Valley Mens group
-📆 Thu 23 Jul, 12:30 PM - 1:30 PM
-📍 New Farm Neighbourhood Centre
-💰 Free
-`community` `men's_group` `social` `support`
-
-A community men's group facilitated by Uncle Tiger and Andrew Cummins, providing a social and supportive environment for men at the New Farm Neighbourhood Centre.
-
-#### [Latin Dance Picnic at Kangaroo Point](https://allevents.in/brisbane/meetups)
-📆 Sun 26 Jul, 2:00 PM onwards
-📍 Kangaroo Point Square, Brisbane
-💰 Free
-`dance` `social` `outdoor` `music` `free`
-
-Enjoy an outdoor community social with Latin music and dancing at Kangaroo Point Square, offering a vibrant atmosphere in a scenic riverside location.
+A sharp, satirical musical known for its biting commentary and rapid-fire dialogue. A professional production that serves as a provocative piece of contemporary theatre.
 
 ### 🛠️ Workshop / Class
-
-#### [Path to Publication – Adult Fiction](https://www.eventbrite.com.au/d/australia--ipswich/events/)
-📆 Date/Time TBC this week
-📍 Brisbane (TBC)
-💰 TBC
-`writing` `publishing` `workshop` `creative`
-
-This workshop guides aspiring adult fiction writers through the publishing world, offering community and practical guidance on getting their work into print.
 
 #### [Meditation and Mindset Workshop – Brisbane](https://www.eventbrite.com.au/d/australia--brisbane-city/classes/)
 📆 Sat 25 – Sun 26 Jul
@@ -1262,92 +1380,136 @@ A grounded weekend workshop covering practical meditation techniques and mindset
 
 A full-day wellness retreat focused on mental clarity, breathwork, and relaxation, offering a grounded and non-commercial experience for personal well-being.
 
-#### [International Cake Show Australia — Workshop Days](https://www.theurbanlist.com/brisbane/a-list/whats-on-brisbane)
-📆 Thu 23 – Sun 26 Jul
-📍 John Reid Pavilion, Brisbane RNA Showgrounds, Bowen Hills
-💰 Ticketed (various)
-`baking` `craft` `workshop` `food`
+#### [Gardening for the Good Life](https://www.brisbane.qld.gov.au/events/gardening-for-the-good-life/203292327)
+📆 Sat 25 Jul, 10:00 AM
+📍 Banyo Library, Banyo
+💰 Free
+`gardening` `nature` `workshop`
 
-Part of the International Cake Show, these days feature hands-on workshops, decorating classes, and competition displays for baking and sugar craft enthusiasts of all skill levels.
+A practical workshop by horticulturalist Claire Bickle focusing on sustainable home gardening techniques and edible plants.
+
+#### [SparkLab](https://www.museum.qld.gov.au/kurilpa/whats-on/sparklab)
+📆 Mon 20 Jul, 9:30 AM
+📍 Queensland Museum Kurilpa, South Brisbane
+💰 $16.50
+`science` `technology` `hands-on`
+
+An interactive science centre where visitors can engage with hands-on experiments and explore physical phenomena.
+
+### 🤝 Social / Meetup
+
+#### [Monday Night Social Commander @ Vault Games Brisbane](https://allevents.in/brisbane/today)
+📆 Mon 20 Jul, 6:30 PM
+📍 Vault Games, Brisbane CBD
+💰 TBC
+`gaming` `magic the gathering` `social` `community`
+
+Join a recurring social night for Magic: The Gathering Commander at Vault Games Brisbane, welcoming both competitive and casual players to connect over games.
+
+#### [International Meetup with Activities](https://www.meetup.com/en-au/international-local-language-exchange-southbank-brisbane/events/rnkvxtyjckbdc/)
+📆 Wed 22 Jul, 5:30 PM
+📍 Stock Exchange Hotel, Brisbane City
+💰 Free
+`language` `social` `networking`
+
+A social meetup featuring ice-breaker activities designed to help locals and internationals connect and practice languages.
+
+#### [Saturday Social: International Friends](https://www.meetup.com/en-au/saturday-drinks-international-friends/events/315379432/)
+📆 Sat 25 Jul, 6:00 PM
+📍 Criterion Tavern, Brisbane City
+💰 Free
+`social` `culture` `networking`
+
+A casual social meetup for locals and international visitors to share cultures and make new connections in a pub setting.
+
+#### [QAG Highlights Volunteer Guided Tour](https://www.qagoma.qld.gov.au/event/guided-tour-QAG-highlights-2-pm-winter-2026-2026-06-03)
+📆 20–26 July 2026, 2:00 PM
+📍 Queensland Art Gallery, South Brisbane
+💰 Free
+`art` `history` `tour` `social`
+
+A guided social walk-through of major collection highlights, designed to foster deeper engagement and conversation about art history.
+
+#### [Wentworth Con Brisbane 2026](https://allevents.in/brisbane/2026-07-25)
+📆 Sat 25 Jul, 9:00 AM
+📍 The Westin Brisbane, Brisbane CBD
+💰 $TBC
+`fandom` `community` `social` `culture`
+
+A community-driven fan convention celebrating the Australian drama *Wentworth*, offering enthusiastic fans a chance to meet, discuss, and engage with the show.
+
+#### [Mantra Meditation Journey](https://www.meetup.com/en-au/brisbane-northside-yoga-meditation/events/xdjpvtyjckbbc/)
+📆 Mon 20 Jul, 6:00 PM
+📍 Albany Creek Community Centre
+💰 Free
+`meditation` `wellness` `free`
+
+An inclusive, community-led session focused on mantra meditation for relaxation and mental clarity.
 
 ### 📌 Community / Other
 
-#### [QUT Open Day 2026](https://www.qut.edu.au/study/events/qut-open-day-2026)
-📆 Sun 26 Jul, 9:00 AM - 3:00 PM
-📍 Gardens Point and Kelvin Grove Campuses, QUT
-💰 Free
-`education` `community` `exploration` `free`
+#### [Le Festival: Brisbane French Festival](https://lefestival.com.au)
+📆 24 July 2026, 9:00am
+📍 Roma Street Parkland
+💰 Contact organiser
+`culture` `arts` `festival`
 
-QUT's annual Open Day offering behind-the-scenes tours, study area advice, and opportunities to talk with students and academics, providing insights into campus life and various academic programs.
+A cultural celebration of French arts, language, and cuisine featuring workshops, live performances, and community interaction.
 
-#### [Le Festival Brisbane (French Cultural Festival)](https://lefestival.com.au/)
-📆 Fri 24 – Sun 26 Jul
-📍 Roma Street Parkland, Brisbane CBD
-💰 TBC (some free, some ticketed)
-`culture` `festival` `community` `food`
-
-Brisbane's premier French cultural festival at Roma Street Parkland, offering an immersive experience with French cuisine, wines, live entertainment, masterclasses, and family-friendly activities.
-
-#### [Le Festival 2026](https://lefestival.com.au/)
-📆 Fri 24 Jul, 4:00 PM
-📍 Roma Street Parkland, Brisbane
-💰 
-`festival` `culture` `community` `music`
-
-Brisbane's annual French festival featuring live music, food, market stalls, and cultural activities in Roma Street Parkland. A vibrant community event for all ages.
-
-#### [Le Festival: Brisbane French Festival](https://lefestival.com.au/)
-📆 Sat 25 Jul, 8:00 AM - 10:00 PM
-📍 Roma Street Parkland, Brisbane
+#### [Le Festival 2026](https://tickets.oztix.com.au/outlet/event/91d92366-225f-43b7-81bf-69179663893f)
+📆 24 July 2026, 3:00 PM
+📍 Roma Street Parkland
 💰 $0 - $64
-`festival` `culture` `french` `community` `social`
+`culture` `music` `arts` `community`
 
-A full day dedicated to French culture, featuring diverse culinary experiences, live music, dance, and cultural workshops in a festive atmosphere.
+A cultural celebration of French arts, food, and music featuring performers, artisans, and community engagement.
 
-#### [Museum of Brisbane Clock Tower Tour](https://www.brisbane.qld.gov.au/whats-on/listing?trumbaEmbed=eventid%3D123456)
-📆 Mon 20 Jul, 10:15 AM
-📍 Museum of Brisbane, Brisbane City Hall
+#### [QAGOMA Store Winter Design Market](https://www.qagoma.qld.gov.au/whats-on/exhibitions)
+📆 25 July 2026, 9:00 AM
+📍 Gallery of Modern Art
 💰 Free
-`history` `architecture` `tour` `free`
+`design` `craft` `market` `community`
 
-Take a free guided tour of Brisbane City Hall's iconic Clock Tower, offering historical insights and panoramic views of the city from this architectural landmark.
+A curated market featuring local independent designers and makers, focusing on thoughtful, creative goods.
 
-#### [Empowering People Strengthening Queensland Event 2026](https://www.brisbane.qld.gov.au/whats-on/listing?trumbaEmbed=eventid%3D123456)
-📆 Fri 24 Jul, All Day
-📍 Brisbane City Hall
+#### [QUT Open Day](https://www.qut.edu.au/events?id=203090)
+📆 26 July 2026, 9am–3pm
+📍 QUT Gardens Point and Kelvin Grove campuses
 💰 Free
-`community` `culture` `festival` `free`
+`education` `music` `community` `free`
 
-A community event presented by Bhartiya Samaj, featuring a day of culture, recognition, entertainment, and opportunities for community connection and family-friendly experiences.
+An opportunity to explore university creative spaces and listen to live performances by local students in an intellectually vibrant environment.
 
-#### [Sunrise Trail Experience](https://www.brisbane.qld.gov.au/whats-on/listing?trumbaEmbed=eventid%3D123456)
-📆 Tue 21 Jul, 6:00 AM
-📍 Mount Gravatt Outlook Reserve
+#### [Kenrose Street Festival](https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D204865064)
+📆 25 July 2026, 5:00 PM
+📍 Kenrose Street, Carina
 💰 Free
-`hiking` `nature` `outdoor` `free`
+`community` `local` `social` `free`
 
-Start your day with an invigorating guided trail walk at Mount Gravatt Outlook Reserve, experiencing a stunning sunrise over Brisbane's natural landscape.
+A local street festival focused on community connection, neighborhood atmosphere, and local food.
 
-#### [QPAC Discovery Tour](https://www.qpac.com.au/event/qpac_discovery_tour_26)
-📆 Mon 20 Jul, 12:15 PM
-📍 QPAC
-💰 Unknown
-`theatre` `tour` `performing arts`
+### 🎓 Public Lecture
 
-A behind-the-scenes tour of the Queensland Performing Arts Centre, offering an immersive look into Queensland's rich performing arts culture and history.
-
-#### [James Street Food + Wine Trail](https://visit.brisbane.qld.au/whats-on/whats-on-this-week)
-📆 Sun 26 Jul
-📍 James Street Precinct, Fortitude Valley
+#### [Exploring Occupations: Ancestral History](https://www.brisbane.qld.gov.au/events/exploring-occupations-how-our-ancestors-earned-their-daily-bread/201267968)
+📆 Sat 25 Jul, 10:30 AM
+📍 Inala Library, Inala
 💰 Free
-`food` `wine` `community` `festival` `free`
+`history` `research` `lecture`
 
-A free community event showcasing James Street's culinary scene, with leading venues and chefs collaborating for a massive celebration of food and wine in one of Brisbane's well-known precincts.
+A historical talk delving into the forgotten trades and labor history of our ancestors, providing insight into past working lives.
 
-#### DANZ Awards (popup bookshop support)
-📆 Sat 25 Jul
-📍 University of Queensland (UQ)
+#### [Queensland Museum Kurilpa Highlights Tour](https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/queensland-museum-kurilpa-highlights-tour-c915)
+📆 Tue 21 Jul, 11:00 AM
+📍 Queensland Museum Kurilpa, South Brisbane
 💰 Free
-`books` `community` `reading` `childrens_books` `free`
+`history` `science` `free`
 
-Quick Brown Fox Bookshop hosts a popup supporting the ASLA DANZ Children's Book Awards at UQ, offering a chance to browse and purchase books related to the awards.
+A guided exploration of the museum's core collection, offering insight into Queensland’s history and natural sciences.
+
+#### [Queensland Museum Kurilpa Highlights Tour](https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/queensland-museum-kurilpa-highlights-tour-c915)
+📆 Sat 25 Jul, 3:00 PM
+📍 Queensland Museum Kurilpa, South Brisbane
+💰 Free
+`history` `science` `free`
+
+A guided exploration of the museum's core collection, offering insight into Queensland’s history and natural sciences.

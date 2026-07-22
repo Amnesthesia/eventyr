@@ -1,0 +1,273 @@
+{
+  "city_key": "brisbane",
+  "provider": "google",
+  "tier": "independents-music",
+  "week_start": "2026-07-20",
+  "week_end": "2026-07-26",
+  "events": [
+    {
+      "title": "The Stirling Canon",
+      "datetime": "22 July 2026, 6:30 PM",
+      "location": "The Junk Bar, Ashgrove",
+      "link": "https://thejunkbar.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "The Junk Bar",
+      "description": "An intimate live music performance at The Junk Bar featuring The Stirling Canon.",
+      "tags": [
+        "music",
+        "live",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-22T18:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Greeble, Hateful Sunday & Red Velvet Rascal",
+      "datetime": "23 July 2026, 6:30 PM",
+      "location": "The Junk Bar, Ashgrove",
+      "link": "https://thejunkbar.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "The Junk Bar",
+      "description": "A multi-act lineup featuring local bands Greeble, Hateful Sunday, and Red Velvet Rascal at the cozy Junk Bar venue.",
+      "tags": [
+        "music",
+        "indie",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-23T18:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Crocodylus, Double Date & Dirty Harry",
+      "datetime": "24 July 2026, 7:00 PM",
+      "location": "The Junk Bar, Ashgrove",
+      "link": "https://thejunkbar.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "The Junk Bar",
+      "description": "A triple-header rock showcase featuring Crocodylus, Double Date, and Dirty Harry.",
+      "tags": [
+        "music",
+        "rock",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-24T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Blak Day Out (Dan Sultan, Beddy Rays, Becca Hatch, etc.)",
+      "datetime": "24 July 2026, Time TBA",
+      "location": "The Princess Theatre, Woolloongabba",
+      "link": "https://theprincesstheatre.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "The Princess Theatre",
+      "description": "A curated musical showcase celebrating Indigenous talent featuring artists like Dan Sultan, Beddy Rays, and Becca Hatch.",
+      "tags": [
+        "music",
+        "festival",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-24",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Girl and Girl (All Ages Show)",
+      "datetime": "25 July 2026, 2:00 PM",
+      "location": "The Junk Bar, Ashgrove",
+      "link": "https://thejunkbar.com.au",
+      "category": "Concert / Music",
+      "cost": "Sold Out",
+      "source": "The Junk Bar",
+      "description": "An afternoon all-ages concert performance by the band Girl and Girl.",
+      "tags": [
+        "music",
+        "concert",
+        "all-ages"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-25T14:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Day of Contempt",
+      "datetime": "25 July 2026, 7:00 PM",
+      "location": "Crowbar Brisbane, Fortitude Valley",
+      "link": "https://crowbarbris.com",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Crowbar Brisbane",
+      "description": "A high-energy live performance by Day of Contempt at the iconic Brisbane heavy venue, Crowbar.",
+      "tags": [
+        "music",
+        "metal",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-25T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Girl and Girl (18+ Show)",
+      "datetime": "25 July 2026, 7:00 PM",
+      "location": "The Junk Bar, Ashgrove",
+      "link": "https://thejunkbar.com.au",
+      "category": "Concert / Music",
+      "cost": "Sold Out",
+      "source": "The Junk Bar",
+      "description": "An evening concert performance by the band Girl and Girl, restricted to 18+ attendees.",
+      "tags": [
+        "music",
+        "concert",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-25T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "The Filthy Animals",
+      "datetime": "25 July 2026, 5:00 PM",
+      "location": "Lefty's Music Hall, Petrie Terrace",
+      "link": "https://leftysmusichall.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Lefty's Music Hall",
+      "description": "A live set by The Filthy Animals held at the atmospheric Lefty's Music Hall.",
+      "tags": [
+        "music",
+        "blues",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-25T17:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Mike Beale Band",
+      "datetime": "24 July 2026, 10:00 PM",
+      "location": "Lefty's Music Hall, Petrie Terrace",
+      "link": "https://leftysmusichall.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Lefty's Music Hall",
+      "description": "Late-night live music performance featuring the Mike Beale Band.",
+      "tags": [
+        "music",
+        "live",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-24T22:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Willie Js 6v6",
+      "datetime": "25 July 2026, 10:00 PM",
+      "location": "Lefty's Music Hall, Petrie Terrace",
+      "link": "https://leftysmusichall.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Lefty's Music Hall",
+      "description": "Live performance by Willie Js 6v6, contributing to the eclectic musical atmosphere at Lefty's.",
+      "tags": [
+        "music",
+        "live",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-25T22:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Jono B. Smith, Ruby Gilbert",
+      "datetime": "26 July 2026, 6:30 PM",
+      "location": "The Junk Bar, Ashgrove",
+      "link": "https://thejunkbar.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "The Junk Bar",
+      "description": "A double bill featuring singer-songwriters Jono B. Smith and Ruby Gilbert.",
+      "tags": [
+        "music",
+        "folk",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-26T18:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Give It All",
+      "datetime": "26 July 2026, 3:00 PM",
+      "location": "Crowbar Brisbane, Fortitude Valley",
+      "link": "https://crowbarbris.com",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Crowbar Brisbane",
+      "description": "An afternoon live music event featuring the band Give It All.",
+      "tags": [
+        "music",
+        "live",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-26T15:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}
