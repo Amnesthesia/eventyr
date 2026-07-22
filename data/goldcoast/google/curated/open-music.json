@@ -1,0 +1,125 @@
+{
+  "city_key": "goldcoast",
+  "provider": "google",
+  "tier": "open-music",
+  "week_start": "2026-07-20",
+  "week_end": "2026-07-26",
+  "events": [
+    {
+      "title": "Free Local Music",
+      "datetime": "Fri 24 Jul, 5:00 PM",
+      "location": "Miami Marketta, Miami",
+      "link": "",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "Miami Marketta / Musick.com.au",
+      "description": "Enjoy free live music from local artists at Miami Marketta, a vibrant night market known for its street food and creative atmosphere. A great way to experience local talent in a community setting.",
+      "tags": [
+        "music",
+        "local",
+        "free",
+        "market"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-24T17:00:00",
+      "datetime_end_iso": "2026-07-24T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "HOLYSTONE ~ Accepting Omega ALBUM LAUNCH",
+      "datetime": "Fri 24 Jul, 6:30 PM",
+      "location": "Mo's Desert Clubhouse",
+      "link": "",
+      "category": "Concert / Music",
+      "cost": "$29",
+      "source": "Musick.com.au",
+      "description": "Join HOLYSTONE for the official launch of their new album, 'Accepting Omega', at the popular Mo's Desert Clubhouse. Expect an evening of original music in a venue known for its vibrant indie scene.",
+      "tags": [
+        "music",
+        "album launch",
+        "indie",
+        "live"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-24T18:30:00",
+      "datetime_end_iso": "2026-07-24T21:30:00",
+      "image": ""
+    },
+    {
+      "title": "Rogue Traders - The Anthems - 21st Anniversary Tour",
+      "datetime": "Fri 24 Jul, 6:30 PM - 9:30 PM",
+      "location": "Miami Marketta, Miami",
+      "link": "https://www.miamimarketta.com/miami-marketta-events/2026/rogue-traders-the-anthems-21st-anniversary-tour",
+      "category": "Concert / Music",
+      "cost": "$50",
+      "source": "Miami Marketta",
+      "description": "Celebrate 21 years of Rogue Traders with their 'Anthems' tour, featuring their iconic hits in an 18+ concert experience at the vibrant Miami Marketta. This is a chance to see a well-known Australian act in a lively setting.",
+      "tags": [
+        "music",
+        "pop",
+        "concert",
+        "anniversary"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-24T18:30:00",
+      "datetime_end_iso": "2026-07-24T21:30:00",
+      "image": ""
+    },
+    {
+      "title": "Coolamon Singers: Mass in Time of War",
+      "datetime": "Sat 25 Jul",
+      "location": "Clear Island Waters",
+      "link": "",
+      "category": "Concert / Music",
+      "cost": "TBA",
+      "source": "Experience Gold Coast",
+      "description": "Experience a powerful performance by the Coolamon Singers, presenting \"Mass in Time of War,\" a choral work offering deep artistic and emotional resonance. Expect a refined musical experience.",
+      "tags": [
+        "choral",
+        "classical",
+        "music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-25",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Hola Marketta! Winter Festival",
+      "datetime": "Sun 26 Jul, 2:00 PM - 10:00 PM",
+      "location": "Miami Marketta, Miami",
+      "link": "https://www.miamimarketta.com/miami-marketta-events/2026/hola-marketta-winter-festival",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Miami Marketta",
+      "description": "Immerse yourself in the vibrant atmosphere of Hola Marketta! Winter Festival, featuring a mix of live music, delicious food, and creative stalls in a community-focused setting. It's an opportunity to connect and explore local culture.",
+      "tags": [
+        "festival",
+        "community",
+        "market",
+        "music",
+        "food"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-26T14:00:00",
+      "datetime_end_iso": "2026-07-26T22:00:00",
+      "image": ""
+    }
+  ]
+}

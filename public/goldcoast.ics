@@ -7,6 +7,73 @@ X-WR-CALNAME:Gold Coast — do things
 X-WR-TIMEZONE:UTC
 BEGIN:VEVENT
 UID:goldcoast-0@dothings
+DTSTART;TZID=UTC:20260722T190000
+DTEND;TZID=UTC:20260722T210000
+SUMMARY:Gold Coast TechSpace — Wednesday Hack Night
+DESCRIPTION:A weekly community hack night for makers\, coders\, and tech en
+ thusiasts. Engage in personal projects\, collaborate with others\, and pot
+ entially join specific tech group meetups like JavaScript or IoT.
+LOCATION:Gold Coast TechSpace\, Mudgeeraba
+URL:https://gctechspace.org/meetings-and-events/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:Sourdough Starter & Fermentation Fundamentals — Community Masterc
+ lass
+DESCRIPTION:A hands-on community masterclass focusing on creating sourdough
+  starters and understanding fermentation fundamentals. Learn practical ski
+ lls for bread making in Elanora.
+LOCATION:Elanora\, Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/classes/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-2@dothings
+DTSTART;TZID=UTC:20260720T183000
+DTEND;TZID=UTC:20260720T203000
+SUMMARY:Gold Coast Board Games Club / Meetup
+DESCRIPTION:A welcoming\, community-oriented social meetup for board game e
+ nthusiasts and new players to explore a wide variety of tabletop games and
+  connect with curious\, playful minds.
+LOCATION:Gold Coast (check Meetup for venue)
+URL:https://www.meetup.com/gold-coast-board-games-club/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-3@dothings
+DTSTART;TZID=UTC:20260720T180000
+DTEND;TZID=UTC:20260720T200000
+SUMMARY:Get Up\, Get Out\, Get Social — Social Meetup
+DESCRIPTION:A casual\, conversation-friendly social meetup for Gold Coaster
+ s looking to connect with new people in a community-oriented\, recurring s
+ etting.
+LOCATION:Gold Coast (check Meetup for venue)
+URL:https://www.meetup.com/get-up-get-out-get-social-gold-coast/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-4@dothings
+DTSTART;TZID=UTC:20260720T180000
+DTEND;TZID=UTC:20260720T200000
+SUMMARY:Gold Coast French Speakers Group
+DESCRIPTION:A recurring language exchange meetup for French speakers and le
+ arners\, providing a community for culturally curious individuals to pract
+ ice and improve their French.
+LOCATION:Gold Coast (check Meetup for venue)
+URL:https://www.meetup.com/gold-coast-french-speakers/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-5@dothings
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260723
+SUMMARY:Abedian School of Architecture Lecture Series: Lecture 3
+DESCRIPTION:The third lecture in Bond University's prestigious architecture
+  series\, featuring leading architects and design thinkers. Expect discuss
+ ions on contemporary architectural theory and practice\, followed by Q&A.
+LOCATION:Bond University\, Abedian School of Architecture — Robina
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/bond-university/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-6@dothings
 DTSTART;TZID=UTC:20260726T090000
 DTEND;TZID=UTC:20260726T110000
 SUMMARY:Language Exchange at Carrara
@@ -17,101 +84,257 @@ LOCATION:1/20 Indy Ct\, Carrara
 URL:https://www.meetup.com/goldcoast-language-exchange/events/279010526/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-1@dothings
-DTSTART;TZID=UTC:20260721T090000
-DTEND;TZID=UTC:20260721T110000
-SUMMARY:NaturallyGC Botanical Watercolour in Nature
-DESCRIPTION:A free outdoor workshop teaching botanical watercolour techniqu
- es amidst nature. Participants will learn to observe and paint local flora
- \, connecting with the environment.
-LOCATION:Lower Beechmont
-URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-Program/Natur
- allyGC-Calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-2@dothings
-DTSTART;TZID=UTC:20260722T190000
-DTEND;TZID=UTC:20260722T210000
-SUMMARY:Gecko Talk – Wildlife Conservation in Action
-DESCRIPTION:A free public talk focused on wildlife conservation efforts\, l
- ikely presented by environmental experts. This event offers insights into 
- local ecological challenges and solutions\, fostering intellectual engagem
- ent.
-LOCATION:Currumbin
-URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-Program/Natur
- allyGC-Calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-3@dothings
-DTSTART;TZID=UTC:20260724T180000
-DTEND;TZID=UTC:20260724T200000
-SUMMARY:Gold Coast Social and Language Exchange (Make New Friends) ✨
-DESCRIPTION:A recurring social meetup designed for making new friends and p
- racticing language skills. This community-oriented event encourages natura
- l conversation and connection between strangers.
-LOCATION:Goldie's\, Surfers Paradise
-URL:https://www.eventbrite.com.au/e/gold-coast-social-and-language-exchange
- -make-new-friends-tickets-897530619897
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-4@dothings
-DTSTART;TZID=UTC:20260725T120000
-DTEND;TZID=UTC:20260725T140000
-SUMMARY:Repair Café
-DESCRIPTION:Bring your broken items for repair assistance from volunteers\,
-  or learn new repair skills in this community-focused\, hands-on workshop.
-  Promotes sustainability and resourcefulness.
-LOCATION:Varsity Lakes
-URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-Program/Natur
- allyGC-Calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-5@dothings
-DTSTART;TZID=UTC:20260720T100000
-DTEND;TZID=UTC:20260720T120000
-SUMMARY:Broadbeach Library Book Club
-DESCRIPTION:A regular book club meeting for literary discussion and connect
- ion\, exploring various titles with fellow readers.
-LOCATION:Broadbeach Library
+UID:goldcoast-7@dothings
+DTSTART;TZID=UTC:20260721T140000
+DTEND;TZID=UTC:20260721T160000
+SUMMARY:Believe it or Not! research workshops
+DESCRIPTION:A series of research workshops exploring various topics\, desig
+ ned to stimulate intellectual curiosity and engage participants in critica
+ l thinking and academic inquiry.
+LOCATION:Bond University
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-6@dothings
-DTSTART;VALUE=DATE:20260721
-DTEND;VALUE=DATE:20260721
-SUMMARY:The Bad Guys 2 (Summer Kids Series)
-DESCRIPTION:A screening of 'The Bad Guys 2' as part of the Gold Coast Theat
- res' Summer Kids Series. An affordable film option for family entertainmen
- t.
-LOCATION:Gold Coast Theatres
-URL:https://www.goldcoasttheatres.com/summer-family-films
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-7@dothings
-DTSTART;TZID=UTC:20260721T173000
-DTEND;TZID=UTC:20260721T193000
-SUMMARY:International New Friends Social
-DESCRIPTION:A social meetup designed for making new international friends a
- nd connecting with the Gold Coast community. Includes one free drink and s
- nacks\, encouraging relaxed conversation and cultural exchange.
-LOCATION:Venue TBC (Gold Coast)
-URL:https://www.meetup.com/find/events/?suggested=true&location=au%2Fgold+c
- oast
-END:VEVENT
-BEGIN:VEVENT
 UID:goldcoast-8@dothings
-DTSTART;TZID=UTC:20260725T123000
-DTEND;TZID=UTC:20260725T143000
-SUMMARY:Saturday Afternoon Board Games
-DESCRIPTION:Join the Gold Coast Board Games Meetup for an afternoon of tabl
- etop games. A chance to connect with fellow enthusiasts\, learn new games\
- , and enjoy strategic play in a social setting.
-LOCATION:Venue TBC (Gold Coast)
-URL:https://www.meetup.com/find/events/?suggested=true&location=au%2Fgold+c
- oast
+DTSTART;TZID=UTC:20260724T190000
+DTEND;TZID=UTC:20260724T210000
+SUMMARY:RODA DE GROOVE – Gold Coast Musicians
+DESCRIPTION:A groove-based live music session and jam event for Gold Coast 
+ musicians and music lovers. This community-oriented event offers a chance 
+ to play or listen to local talent.
+LOCATION:Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/live-music/
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-9@dothings
+DTSTART;TZID=UTC:20260725T180000
+DTEND;TZID=UTC:20260725T200000
+SUMMARY:Caldera Collective @ M|Arts Precinct – Vol. 4
+DESCRIPTION:The Caldera Collective presents Vol. 4\, a recurring arts and m
+ usic event at the Gold Coast's M|Arts Precinct. Engage with a vibrant crea
+ tive community and enjoy diverse performances.
+LOCATION:M|Arts Precinct\, Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/music--events--th
+ is-weekend/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-10@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:"This Moment" — White Rabbit Collection Exhibition
+DESCRIPTION:HOTA presents a major exhibition from the White Rabbit Collecti
+ on\, featuring 35 contemporary Chinese artworks including installations\, 
+ video\, photography\, painting\, and sculpture\, with a public program of 
+ talks and workshops available.
+LOCATION:HOTA\, Home of the Arts — Surfers Paradise
+URL:https://hota.com.au/events
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-11@dothings
+DTSTART;VALUE=DATE:20260722
+DTEND;VALUE=DATE:20260722
+SUMMARY:HOTA Workshop (Wednesday)
+DESCRIPTION:HOTA is hosting a workshop this Wednesday\, July 22nd\, likely 
+ focusing on arts or creative skills. Specific details and registration inf
+ ormation are available on the HOTA website.
+LOCATION:HOTA\, Home of the Arts — Surfers Paradise
+URL:https://hota.com.au/events
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-12@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:SURFACE Festival — Street Art & Workshops (Final Day)
+DESCRIPTION:Catch the final day of SURFACE Festival\, celebrating street ar
+ t\, murals\, and creative culture across Miami\, Nobby Beach\, and Burleig
+ h Heads\, with opportunities to view public art and potential last-minute 
+ events.
+LOCATION:Miami / Nobby Beach / Burleigh Heads
+URL:https://www.whatsongoldcoast.au/All-events
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-13@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Flourish Experiences — Connection & Conversation Afternoon
+DESCRIPTION:A curated afternoon designed for meaningful connection and conv
+ ersation at the River House\, aiming to bring together thoughtful individu
+ als for social interaction.
+LOCATION:River House — Gold Coast
+URL:https://www.insidegoldcoast.com.au/whatson
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-14@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Botanic Gardens — Nature & Heritage Walks
+DESCRIPTION:The Gold Coast Regional Botanic Gardens offer guided nature wal
+ ks and heritage tours this week\, providing opportunities for outdoor lear
+ ning and connection with nature.
+LOCATION:Gold Coast Regional Botanic Gardens — Benowa
+URL:https://www.goldcoast.qld.gov.au/Things-to-do/Gold-Coast-Events-Calenda
+ r
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-15@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:HOTA Cinema — Curated Film Screenings
+DESCRIPTION:HOTA Cinema offers a program of curated arthouse and independen
+ t film screenings throughout the week\, providing a quality cinematic expe
+ rience for diverse tastes.
+LOCATION:HOTA\, Home of the Arts — Surfers Paradise
+URL:https://hota.com.au/events
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-16@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:This Moment: Highlights from the White Rabbit Collection
+DESCRIPTION:A free Queensland exclusive exhibition at HOTA\, showcasing ove
+ r 40 daring and experimental contemporary Chinese artworks from the White 
+ Rabbit Collection\, spanning video\, photography\, painting\, and sculptur
+ e. Explore works by 26 artists\, inspired by a Chinese experimental poem.
+LOCATION:HOTA Gallery\, Surfers Paradise / Southport
+URL:https://hota.com.au/events?category=exhibitions
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-17@dothings
+DTSTART;TZID=UTC:20260722T000000
+DTEND;TZID=UTC:20260722T020000
+SUMMARY:HOTA Workshop
+DESCRIPTION:A workshop event hosted at HOTA. Details are available upon reg
+ istration on the HOTA website\, likely focusing on an artistic or creative
+  theme.
+LOCATION:HOTA\, Surfers Paradise / Southport
+URL:https://hota.com.au/whats-on/live
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-18@dothings
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:Learn Gouache Paint — All Day Workshop
+DESCRIPTION:An all-day hands-on workshop to learn gouache painting techniqu
+ es\, suitable for various skill levels. Held at the Royal Queensland Art S
+ ociety Gold Coast.
+LOCATION:Royal Queensland Art Society Gold Coast\, Broadbeach
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/classes/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-19@dothings
+DTSTART;TZID=UTC:20260720T140000
+DTEND;TZID=UTC:20260720T160000
+SUMMARY:Cauldron Distillery — Gin Blending Class
+DESCRIPTION:An informative\, interactive one-hour workshop where participan
+ ts learn about gin and are guided by distillers to blend their own unique 
+ gin from various botanicals to take home.
+LOCATION:Cauldron Estate and Distillery\, Tamborine Mountain
+URL:https://cauldron.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-20@dothings
+DTSTART;TZID=UTC:20260720T190000
+DTEND;TZID=UTC:20260720T210000
+SUMMARY:Gold Coast TechSpace — Game Night
+DESCRIPTION:A casual community gaming night at TechSpace\, featuring a rang
+ e of options from console games like Mario Kart and Smash Bros on the proj
+ ector to retro arcade boxes and LAN gaming.
+LOCATION:Gold Coast TechSpace\, Mudgeeraba
+URL:https://gctechspace.org/game-night/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-21@dothings
+DTSTART;TZID=UTC:20260720T190000
+DTEND;TZID=UTC:20260720T210000
+SUMMARY:Gold Coast to Tweed Speakers & Leaders (Toastmasters-style)
+DESCRIPTION:A Toastmasters-style group offering a supportive community sett
+ ing to develop public speaking and leadership skills. Ideal for growth-min
+ ded individuals looking to enhance communication.
+LOCATION:Gold Coast / Tweed Area (check Meetup for venue)
+URL:https://www.meetup.com/gold-coast-to-tweed-speakers-and-leaders/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-22@dothings
+DTSTART;TZID=UTC:20260726T140000
+DTEND;TZID=UTC:20260726T160000
+SUMMARY:Samsaruh – Voice Activation | Gold Coast
+DESCRIPTION:Australian artist Samsaruh presents an intimate and immersive "
+ Voice Activation" live vocal performance\, promising a unique artistic exp
+ erience.
+LOCATION:Gold Coast (exact venue TBC)
+URL:https://www.bandsintown.com/?came_from=256&latitude=-28.60896&longitude
+ =153.55565&page=3
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-23@dothings
+DTSTART;TZID=UTC:20260725T193000
+DTEND;TZID=UTC:20260725T213000
+SUMMARY:Comedy Underground (with live music acts)
+DESCRIPTION:Based Comedy presents a weekly showcase of hand-picked stand-up
+  talent and unique voices from Australia and beyond\, frequently featuring
+  live musical acts in an intimate basement setting.
+LOCATION:The Basement\, The Star Gold Coast\, Broadbeach
+URL:https://www.star.com.au/goldcoast/whats-on/entertainment/live-concerts
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-24@dothings
+DTSTART;TZID=UTC:20260723T190000
+DTEND;TZID=UTC:20260723T210000
+SUMMARY:Night Night — Theatre
+DESCRIPTION:An experimental theatrical production at HOTA\, exploring theme
+ s developed by Arielle Gray\, Luke Kerridge & Tim Watts\, with music by Ra
+ chel Claudio. The show runs across the weekend with multiple sessions\, in
+ cluding an Auslan interpreted performance.
+LOCATION:HOTA\, Home of the Arts — Surfers Paradise
+URL:https://hota.com.au/whats-on/live/festivals-and-series/night-night
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-25@dothings
+DTSTART;VALUE=DATE:20260722
+DTEND;VALUE=DATE:20260722
+SUMMARY:HOTA Dining & Cooking Workshop
+DESCRIPTION:A hands-on culinary experience focused on dining and cooking\, 
+ part of HOTA's recurring winter series. Participants learn new techniques 
+ and enjoy food in a social setting.
+LOCATION:HOTA\, Home of the Arts — Bundall
+URL:https://hota.com.au/events?category=performance
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-26@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:HOTA Workshops\, Talks & Ideas
+DESCRIPTION:An ongoing series offering a variety of workshops and intellect
+ ually stimulating talks focused on creative and cultural topics. Check the
+  HOTA website for specific daily events within this series.
+LOCATION:HOTA\, Home of the Arts — Bundall
+URL:https://hota.com.au/events?category=performance
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-27@dothings
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260725
+SUMMARY:Sourdough Bread Workshop
+DESCRIPTION:A hands-on workshop focused on the craft of making sourdough br
+ ead from scratch. Participants will learn fermentation techniques and baki
+ ng skills in a community setting.
+LOCATION:Elanora\, Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/workshop/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-28@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:NaturallyGC Free Outdoor Events
+DESCRIPTION:A series of free outdoor activities and education workshops foc
+ used on connecting with and conserving the Gold Coast's natural environmen
+ t. Includes bushwalks\, nature education\, and conservation events.
+LOCATION:Various outdoor locations across Gold Coast
+URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-program/Natur
+ allyGC-Calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-29@dothings
 DTSTART;TZID=UTC:20260720T100000
 DTEND;TZID=UTC:20260720T120000
 SUMMARY:This Moment: Highlights from the White Rabbit Collection of Chinese
@@ -124,7 +347,7 @@ URL:https://hota.com.au/events/this-moment-highlights-from-the-white-rabbit
  -collection-of-chinese-contemporary-art
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-10@dothings
+UID:goldcoast-30@dothings
 DTSTART;TZID=UTC:20260726T123000
 DTEND;TZID=UTC:20260726T143000
 SUMMARY:Coast Acoustics Unplugged – OUT of ABINGDON
@@ -136,162 +359,364 @@ URL:https://allevents.in/nerang/july-coast-acoustics-unplugged-featuring-ou
  t-of-abingdon/200026214532688
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-11@dothings
-DTSTART;TZID=UTC:20260723T093000
-DTEND;TZID=UTC:20260723T113000
-SUMMARY:Composting with Seed The Ground
-DESCRIPTION:A practical\, hands-on workshop on composting led by Seed The G
- round. Learn sustainable gardening practices and how to create nutrient-ri
- ch soil for your garden.
-LOCATION:Currumbin
-URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-Program/Natur
- allyGC-Calendar
+UID:goldcoast-31@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Battle of the Bands 2026 heats
+DESCRIPTION:Catch ongoing heats for the Battle of the Bands 2026 throughout
+  this week\, showcasing local talent and emerging artists at Den Devine Re
+ staurant & Music Lounge.
+LOCATION:Den Devine Restaurant & Music Lounge\, Broadbeach
+URL:https://dendevine.com.au/whats-on/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-12@dothings
-DTSTART;TZID=UTC:20260725T083000
-DTEND;TZID=UTC:20260725T103000
-SUMMARY:NaturallyGC: National Tree Day Koala Habitat
-DESCRIPTION:Participate in a National Tree Day planting event focused on cr
- eating koala habitat. This hands-on community activity helps support local
-  wildlife and enhance natural environments.
-LOCATION:Arundel
-URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-Program/Natur
- allyGC-Calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-13@dothings
-DTSTART;TZID=UTC:20260725T083000
-DTEND;TZID=UTC:20260725T103000
-SUMMARY:NaturallyGC: National Tree Day Planting
-DESCRIPTION:Join a community planting event for National Tree Day to contri
- bute to local revegetation efforts. This free\, hands-on activity helps im
- prove green spaces and foster environmental stewardship.
-LOCATION:Varsity Lakes
-URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-Program/Natur
- allyGC-Calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-14@dothings
-DTSTART;TZID=UTC:20260725T083000
-DTEND;TZID=UTC:20260725T103000
-SUMMARY:NaturallyGC Eucalypt ID Walk
-DESCRIPTION:A guided nature walk focused on identifying various eucalypt sp
- ecies. Learn about local botany and ecology from experts in a natural outd
- oor setting.
-LOCATION:Arundel
-URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-Program/Natur
- allyGC-Calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-15@dothings
-DTSTART;TZID=UTC:20260720T100000
-DTEND;TZID=UTC:20260720T120000
-SUMMARY:Chess Get Together at Elanora
-DESCRIPTION:A casual chess gathering for all skill levels\, offering a chan
- ce to play and connect with others in a relaxed library setting.
-LOCATION:Elanora Library
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-16@dothings
-DTSTART;TZID=UTC:20260720T100000
-DTEND;TZID=UTC:20260720T120000
+UID:goldcoast-32@dothings
+DTSTART;TZID=UTC:20260720T110000
+DTEND;TZID=UTC:20260720T130000
 SUMMARY:Social Games at Broadbeach
-DESCRIPTION:An informal gathering to play various board games and card game
- s\, fostering social interaction and community spirit at the library.
+DESCRIPTION:A casual\, community-oriented social gathering at the library f
+ or adults to play board games and card games\, encouraging interaction and
+  conversation.
 LOCATION:Broadbeach Library
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-17@dothings
-DTSTART;TZID=UTC:20260723T183000
-DTEND;TZID=UTC:20260723T203000
-SUMMARY:Artist Stories: Make Art Work
-DESCRIPTION:A talk or panel discussion where artists share their journeys\,
-  insights\, and practical advice on making a career in the arts\, open to 
- aspiring and established creatives.
-LOCATION:Broadbeach Library\, Mermaid Waters
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-18@dothings
-DTSTART;TZID=UTC:20260725T090000
-DTEND;TZID=UTC:20260725T110000
-SUMMARY:LEGO® Saturdays at Upper Coomera
-DESCRIPTION:An open session for creative building with LEGO bricks\, encour
- aging imagination and construction skills for all ages in a community sett
- ing.
-LOCATION:Upper Coomera Library
-URL:
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-19@dothings
-DTSTART;TZID=UTC:20260704T000000
-DTEND;TZID=UTC:20260704T020000
-SUMMARY:5th National Indigenous Art Triennial: After The Rain
-DESCRIPTION:A major national exhibition showcasing contemporary Indigenous 
- art from across Australia\, exploring themes and stories through diverse a
- rtistic practices.
+UID:goldcoast-33@dothings
+DTSTART;TZID=UTC:20260724T100000
+DTEND;TZID=UTC:20260724T120000
+SUMMARY:Art Explorers
+DESCRIPTION:A free\, hands-on art workshop program at HOTA Gallery\, encour
+ aging participants to explore creative techniques and materials. Registrat
+ ion is required.
 LOCATION:HOTA Gallery
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-20@dothings
-DTSTART;VALUE=DATE:20260721
-DTEND;VALUE=DATE:20260721
-SUMMARY:Live Music at Harley & Hudson Coffee Bar
-DESCRIPTION:Enjoy live music in an intimate coffee bar setting at Harley & 
- Hudson Coffee Bar in Southport. A relaxed atmosphere for local artists and
-  music lovers.
-LOCATION:Harley & Hudson Coffee Bar\, Southport
-URL:https://www.experiencegoldcoast.com/whats-on/music
+UID:goldcoast-34@dothings
+DTSTART;TZID=UTC:20260720T113000
+DTEND;TZID=UTC:20260720T133000
+SUMMARY:This Moment Experience - The Exhibitionist Bar (Guided Tour & Lunch
+ )
+DESCRIPTION:A guided tour of the "This Moment" exhibition\, offering deeper
+  insights into the artworks\, followed by a social lunch experience at The
+  Exhibitionist Bar.
+LOCATION:The Exhibitionist Bar\, HOTA
+URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-21@dothings
-DTSTART;VALUE=DATE:20260723
-DTEND;VALUE=DATE:20260723
-SUMMARY:City Transformation for Sustainable Change (Talks & Workshops)
-DESCRIPTION:An event featuring talks and workshops exploring strategies and
-  ideas for urban transformation towards sustainable change. Engaging with 
- topics of futurism\, design\, and systems thinking for a better city.
-LOCATION:Surfers Paradise (venue TBC)
-URL:https://www.experiencegoldcoast.com/all-events
+UID:goldcoast-35@dothings
+DTSTART;TZID=UTC:20260722T100000
+DTEND;TZID=UTC:20260722T120000
+SUMMARY:Sunroom - Sustainable Still Life
+DESCRIPTION:A hands-on creative workshop focusing on sustainable art practi
+ ces\, where participants will learn to create still life pieces using envi
+ ronmentally conscious methods.
+LOCATION:HOTA
+URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-22@dothings
-DTSTART;TZID=UTC:20260724T190000
-DTEND;TZID=UTC:20260724T210000
-SUMMARY:Theatre Play by Gold Coast Theatre Alliance
-DESCRIPTION:An evening of live theatre presented by the Gold Coast Theatre 
- Alliance Inc. Enjoy a performance by local artists\, details of the specif
- ic play to be announced.
-LOCATION:Venue TBC (Gold Coast)
-URL:https://www.goldcoasttheatrealliance.com/whats-on
+UID:goldcoast-36@dothings
+DTSTART;TZID=UTC:20260722T160000
+DTEND;TZID=UTC:20260722T180000
+SUMMARY:Dumpling Masterclass
+DESCRIPTION:A hands-on cooking workshop where participants learn the art of
+  making dumplings\, covering techniques from dough preparation to filling 
+ and folding.
+LOCATION:The Exhibitionist Bar\, HOTA
+URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-23@dothings
-DTSTART;VALUE=DATE:20260726
-DTEND;VALUE=DATE:20260726
-SUMMARY:Yacht Rock Revival (Tribute Band)
-DESCRIPTION:Enjoy an evening of classic 'yacht rock' hits with the Yacht Ro
- ck Revival tribute band. A performance designed to evoke the smooth sounds
-  of 70s and 80s soft rock.
-LOCATION:Venue TBC (Gold Coast)
-URL:https://www.experiencegoldcoast.com/music
+UID:goldcoast-37@dothings
+DTSTART;TZID=UTC:20260721T190000
+DTEND;TZID=UTC:20260721T210000
+SUMMARY:Trivia Tuesdays
+DESCRIPTION:A weekly trivia night at The Star's Sports Bar\, offering a fun
+  and engaging opportunity to test knowledge across various subjects in a s
+ ocial setting.
+LOCATION:Sports Bar\, The Star Gold Coast
+URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-24@dothings
-DTSTART;TZID=UTC:20260721T090000
-DTEND;TZID=UTC:20260721T110000
-SUMMARY:Gold Coast | Emotional Resilience® 1 Day Masterclass
-DESCRIPTION:A full-day masterclass by Wisdom Hub providing practical tools 
- and strategies to build psychological resilience and emotional wellbeing.
-LOCATION:Regus Surfers Paradise\, Surfers Paradise
-URL:https://goldcoastspots.com/events/this-month
+UID:goldcoast-38@dothings
+DTSTART;TZID=UTC:20260722T110000
+DTEND;TZID=UTC:20260722T130000
+SUMMARY:English Conversation Circle
+DESCRIPTION:Practice conversational English in a welcoming library environm
+ ent. All ages and language backgrounds are welcome to improve skills and d
+ iscover language resources.
+LOCATION:Southport Library\, Gold Coast
+URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-25@dothings
+UID:goldcoast-39@dothings
+DTSTART;TZID=UTC:20260724T090000
+DTEND;TZID=UTC:20260724T110000
+SUMMARY:Textured Art Workshop
+DESCRIPTION:Learn to create unique designs and layers using textured art me
+ diums. This hands-on workshop offers a creative opportunity to explore a f
+ un artistic technique.
+LOCATION:The Craft Parlour\, Gold Coast
+URL:https://www.thecraftparlour.com.au/workshops
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-40@dothings
+DTSTART;TZID=UTC:20260724T183000
+DTEND;TZID=UTC:20260724T203000
+SUMMARY:Make a Ceramic Mug Workshop
+DESCRIPTION:Learn the simple pleasures of crafting by making your own potte
+ ry mug from scratch. This hands-on workshop is perfect for beginners.
+LOCATION:The Craft Parlour\, Gold Coast
+URL:https://www.thecraftparlour.com.au/workshops
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-41@dothings
+DTSTART;TZID=UTC:20260724T183000
+DTEND;TZID=UTC:20260724T203000
+SUMMARY:Boobie Mug Workshop
+DESCRIPTION:A relaxed "clay + sip" class for beginners to create a unique a
+ nd fun boobie mug. Expect a creative and social atmosphere while learning 
+ pottery basics.
+LOCATION:The Craft Parlour\, Gold Coast
+URL:https://www.thecraftparlour.com.au/workshops
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-42@dothings
+DTSTART;TZID=UTC:20260726T090000
+DTEND;TZID=UTC:20260726T110000
+SUMMARY:Wax Carved Ring Workshop
+DESCRIPTION:Discover the ancient technique of Lost Wax Casting to create yo
+ ur own unique wax carved ring. This workshop provides a hands-on experienc
+ e in jewellery making.
+LOCATION:The Craft Parlour\, Gold Coast
+URL:https://www.thecraftparlour.com.au/workshops
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-43@dothings
+DTSTART;TZID=UTC:20260723T190000
+DTEND;TZID=UTC:20260723T210000
+SUMMARY:Night Night
+DESCRIPTION:A live event at HOTA\, running over several days from July 23-2
+ 6. Expect a contemporary performance with artistic value in a premier Gold
+  Coast arts venue.
+LOCATION:HOTA\, Surfers Paradise
+URL:https://yelo.live/goldcoastgigs/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-44@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:Musical Chairs Jazz Band – Christmas in July Concert
+DESCRIPTION:The Musical Chairs Jazz Band presents a special Christmas in Ju
+ ly Concert\, performing classic festive repertoire with a unique jazz flai
+ r. Enjoy a mid-winter celebration of jazz.
+LOCATION:Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/live-music/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-45@dothings
+DTSTART;TZID=UTC:20260722T193000
+DTEND;TZID=UTC:20260722T213000
+SUMMARY:One Equal Music at St Mary's: Brahms Liebeslieder
+DESCRIPTION:One Equal Music presents an intimate classical vocal music conc
+ ert featuring Brahms' romantic Liebeslieder song cycle at St Mary's. Enjoy
+  an evening of beautiful choral performance.
+LOCATION:St Mary's\, Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/live-music/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-46@dothings
+DTSTART;TZID=UTC:20260726T180000
+DTEND;TZID=UTC:20260726T200000
+SUMMARY:SURRA SERTANEJA – Gold Coast (Aniversário do Fernando Tedesco)
+DESCRIPTION:A lively Brazilian Sertanejo (country) music night and birthday
+  celebration for Fernando Tedesco. Experience authentic live Brazilian mus
+ ic and a festive community atmosphere.
+LOCATION:Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/live-music/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-47@dothings
+DTSTART;TZID=UTC:20260724T173000
+DTEND;TZID=UTC:20260724T193000
+SUMMARY:Sunset & Twilight Star Gazing Dinner & Music Night
+DESCRIPTION:A unique outdoor evening combining live music\, dinner\, and st
+ argazing in the Gold Coast hinterland. Enjoy a scenic experience with musi
+ c under the twilight sky.
+LOCATION:Mt. Tamborine
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/music-festivals/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-48@dothings
+DTSTART;TZID=UTC:20260723T170000
+DTEND;TZID=UTC:20260723T190000
+SUMMARY:LuminaX Accelerator Demo Night 2026
+DESCRIPTION:This demo night showcases startups from the LuminaX Accelerator
+ \, bringing together innovators\, entrepreneurs\, and curious minds for pr
+ esentations and networking in the tech and startup space.
+LOCATION:Miami Marketta — Miami
+URL:https://allevents.in/gold-coast/july
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-49@dothings
+DTSTART;TZID=UTC:20260726T120000
+DTEND;TZID=UTC:20260726T140000
+SUMMARY:It's ON ChevrON Street Party 2026
+DESCRIPTION:A vibrant community street party on Chevron Island\, offering a
+  relaxed setting for mixing with locals\, enjoying the neighbourhood\, and
+  experiencing the area's creative atmosphere.
+LOCATION:Thomas Drive\, Chevron Island — Gold Coast
+URL:https://allevents.in/gold-coast/july
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-50@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:HOTA Gallery — Ongoing Exhibitions
+DESCRIPTION:Explore multiple ongoing art exhibitions at HOTA Gallery\, feat
+ uring a range of contemporary works and installations\, providing a rich c
+ ultural experience throughout the week.
+LOCATION:HOTA\, Home of the Arts — Surfers Paradise
+URL:https://hota.com.au/events
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-51@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Go Gold Coast Month — Active Events
+DESCRIPTION:The City of Gold Coast's initiative offering a calendar of free
+  or low-cost outdoor activities\, wellness sessions\, and community moveme
+ nt programs designed to inspire active participation throughout July.
+LOCATION:Various Gold Coast locations
+URL:https://www.goldcoast.qld.gov.au/Things-to-do/Go-Gold-Coast-Month/Go-Go
+ ld-Coast-Month-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-52@dothings
+DTSTART;TZID=UTC:20260722T170000
+DTEND;TZID=UTC:20260722T190000
+SUMMARY:Free Weekly Live Music
+DESCRIPTION:Miami Marketta is the original street food night market on the 
+ Gold Coast\, offering a no-fuss laneway dining experience with free live m
+ usic and boutique bars.
+LOCATION:Miami Marketta\, Miami
+URL:https://www.miamimarketta.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-53@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:Aka Sorbie: Saltwater Heart — Children's Gallery Exhibition
+DESCRIPTION:An exhibition in HOTA's Children's Gallery\, featuring vibrant 
+ art by First Nations artist Aka Sorbie\, exploring memories of childhood a
+ nd nature. It's a space designed to share stories and learn about the reef
+ \, art\, and patterns in nature.
+LOCATION:HOTA Gallery\, Surfers Paradise / Southport
+URL:https://hota.com.au/events?category=exhibitions
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-54@dothings
+DTSTART;TZID=UTC:20260721T100000
+DTEND;TZID=UTC:20260721T120000
+SUMMARY:19 Karen Contemporary Artspace — Ongoing Exhibition
+DESCRIPTION:Explore a diverse range of contemporary art and sculpture by Au
+ stralian and international artists at the Gold Coast's largest contemporar
+ y art gallery. Free admission to discover new works in a welcoming setting
+ .
+LOCATION:19 Karen Ave\, Mermaid Beach
+URL:https://www.19karen.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-55@dothings
+DTSTART;TZID=UTC:20260720T180000
+DTEND;TZID=UTC:20260720T200000
+SUMMARY:The Meraki Connection — Sip & Paint Workshop
+DESCRIPTION:A 2.5-hour acrylic painting workshop where an artist guides par
+ ticipants through techniques and brushstrokes to create their own canvas a
+ rtwork. Suitable for all skill levels.
+LOCATION:The Meraki Connection\, Burleigh Heads / Nerang
+URL:https://themerakiconnection.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-56@dothings
+DTSTART;TZID=UTC:20260720T193000
+DTEND;TZID=UTC:20260720T213000
+SUMMARY:Mamma Mia! — Ongoing Season
+DESCRIPTION:A beloved stage musical featuring ABBA hits\, performing as par
+ t of its ongoing season in Surfers Paradise. Enjoy a night of mainstream t
+ heatre with strong artistic value.
+LOCATION:29 Cavill Ave\, Surfers Paradise
+URL:https://www.theurbanlist.com/goldcoast/a-list/things-to-do-on-the-gold-
+ coast-this-weekend
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-57@dothings
+DTSTART;TZID=UTC:20260725T200000
+DTEND;TZID=UTC:20260725T220000
+SUMMARY:Sunny Coast Rude Boys – Burleigh Town Hotel
+DESCRIPTION:The beloved ska/reggae/punk act\, Sunny Coast Rude Boys\, bring
+  their energetic live show to Burleigh Town Hotel for a night of authentic
+  subculture music.
+LOCATION:Burleigh Town Hotel\, Burleigh Heads
+URL:https://www.bandsintown.com/?came_from=256&latitude=-28.60896&longitude
+ =153.55565&page=3
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-58@dothings
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:HOTA Gallery Exhibition
+DESCRIPTION:An ongoing major art exhibition at the HOTA Gallery showcasing 
+ contemporary art. Visitors can explore various artworks and installations 
+ throughout the week.
+LOCATION:HOTA Gallery — Surfers Paradise
+URL:https://hota.com.au/whats-on
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-59@dothings
+DTSTART;TZID=UTC:20260725T100000
+DTEND;TZID=UTC:20260725T120000
+SUMMARY:Bond University Open Day
+DESCRIPTION:Explore Bond University's campus with faculty tours\, student-g
+ uided walks\, and academic Q&A sessions across various fields. Features th
+ ought-provoking talks and food trucks for a community-oriented atmosphere.
+LOCATION:Bond University — Robina
+URL:https://bond.edu.au/open-day
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-60@dothings
+DTSTART;TZID=UTC:20260721T063000
+DTEND;TZID=UTC:20260721T083000
+SUMMARY:Bond Together Run Club
+DESCRIPTION:A social morning run club hosted by BUSA as part of the Bond To
+ gether wellness program. This free community event encourages outdoor acti
+ vity and connection among participants.
+LOCATION:Bond University — Robina
+URL:https://bond.edu.au/news-and-events/events
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-61@dothings
+DTSTART;TZID=UTC:20260720T103000
+DTEND;TZID=UTC:20260720T123000
+SUMMARY:Bond Together Big Brekkie
+DESCRIPTION:A free community breakfast event aimed at fostering connection 
+ and social interaction among Bond University students and the wider commun
+ ity. Part of the Bond Together wellness initiative.
+LOCATION:Bond Institute of Health & Sport (BIHS) — Robina
+URL:https://bond.edu.au/event/8228/bond-together
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-62@dothings
+DTSTART;TZID=UTC:20260720T090000
+DTEND;TZID=UTC:20260720T110000
+SUMMARY:Gold Coast Eisteddfod
+DESCRIPTION:The Gold Coast Eisteddfod is a multi-day competitive festival s
+ howcasing performances in various genres of music\, dance\, and drama acro
+ ss multiple venues\, attracting local talent and audiences.
+LOCATION:Various venues across Surfers Paradise and the Gold Coast
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-63@dothings
 DTSTART;TZID=UTC:20260720T100000
 DTEND;TZID=UTC:20260720T120000
 SUMMARY:Art Exhibition: The Little Pink House and The Golden Garden
@@ -303,18 +728,7 @@ URL:https://www.studio8currumbin.com.au/exhibitions/the-little-pink-house-t
  he-golden-garden
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-26@dothings
-DTSTART;TZID=UTC:20260721T190000
-DTEND;TZID=UTC:20260721T210000
-SUMMARY:Dracula's: Lucid (Dinner & Show)
-DESCRIPTION:A unique dinner and show experience at Dracula's Gold Coast\, f
- eaturing a performance with a strong atmosphere\, live music\, and special
-  effects. Expect a theatrical and entertaining evening.
-LOCATION:Dracula's Gold Coast\, Broadbeach
-URL:https://www.draculas.com.au/gold-coast/
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-27@dothings
+UID:goldcoast-64@dothings
 DTSTART;TZID=UTC:20260720T090000
 DTEND;TZID=UTC:20260720T110000
 SUMMARY:Flora: Nature's Gift National Botanical Art Exhibition
@@ -325,194 +739,377 @@ LOCATION:RQAS 'Red Wall' Gallery\, Broadbeach
 URL:https://www.basa.net.au/events/flora-natures-gift-a-basa-exhibition
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-28@dothings
-DTSTART;TZID=UTC:20260720T090000
-DTEND;TZID=UTC:20260720T110000
-SUMMARY:Seabastion Toast - Feature Artist Exhibition
-DESCRIPTION:Explore the latest feature artist exhibition by Seabastion Toas
- t at this independent art gallery. The exhibition showcases contemporary w
- orks and is open during regular gallery hours.
-LOCATION:Anthea Polson Art\, Main Beach
-URL:https://www.antheapolsonart.com.au/exhibitions
+UID:goldcoast-65@dothings
+DTSTART;TZID=UTC:20260722T183000
+DTEND;TZID=UTC:20260722T203000
+SUMMARY:Unknown Legends + Go Farther + Seraphia + Nightshade & The Fates
+DESCRIPTION:Experience a night of local original music featuring multiple e
+ merging bands at this intimate Broadbeach music lounge\, offering a chance
+  to discover new indie talent.
+LOCATION:Den Devine Restaurant & Music Lounge\, Broadbeach
+URL:https://choon.live/venues/den-devine-broadbeach/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-29@dothings
-DTSTART;TZID=UTC:20260720T090000
-DTEND;TZID=UTC:20260720T110000
-SUMMARY:Flora: Nature's Gift - a BASA Exhibition
-DESCRIPTION:Discover an exhibition by the Botanical Art Society of Australi
- a showcasing works inspired by flora and nature. Hosted at the RQAS galler
- y\, it offers an artistic perspective on the natural world.
-LOCATION:RQAS 'Red Wall' Gallery\, Broadbeach
-URL:https://botanicalartsocietyofaustralia.com/event-5722363
+UID:goldcoast-66@dothings
+DTSTART;TZID=UTC:20260723T190000
+DTEND;TZID=UTC:20260723T210000
+SUMMARY:NIRVANNA [USA} - Tribute To Nirvana (GOLD COAST)
+DESCRIPTION:Catch a live tribute performance by NIRVANNA [USA] honouring Ni
+ rvana\, held at the independent Mo's Desert Clubhouse\, a popular venue fo
+ r alternative acts.
+LOCATION:Mo's Desert Clubhouse\, Burleigh Heads
+URL:https://mosdesertclubhouse.com/whats-on
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-30@dothings
-DTSTART;TZID=UTC:20260722T170000
-DTEND;TZID=UTC:20260722T190000
-SUMMARY:Miami Marketta - Street Food Night Market & Live Music
-DESCRIPTION:Experience a vibrant night market offering street food from aro
- und the world and live music performances. This recurring event fosters a 
- lively atmosphere and attracts a diverse local crowd.
-LOCATION:Miami Marketta\, Miami
-URL:https://www.miamimarketta.com/
+UID:goldcoast-67@dothings
+DTSTART;TZID=UTC:20260724T190000
+DTEND;TZID=UTC:20260724T210000
+SUMMARY:SOUTHPORT SHOWDOWN w/ ENTRAPMENT\, STENCH PIT\, PERPANIC\, GLORY DA
+ YS and NUEXIT
+DESCRIPTION:Experience an energetic night of local heavy music at Vinnies D
+ ive Bar\, featuring multiple bands like Entrapment\, Stench Pit\, and Perp
+ anic in a 'Southport Showdown'.
+LOCATION:Vinnies Dive Bar\, Southport
+URL:https://tickets.oztix.com.au/outlet/event/df1640a4-4f81-43e5-8a9d-16f58
+ a36d22d
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-31@dothings
-DTSTART;TZID=UTC:20260721T100000
-DTEND;TZID=UTC:20260721T120000
-SUMMARY:Gold Coast Regional Botanic Gardens Glider Service
-DESCRIPTION:Explore the Gold Coast Regional Botanic Gardens with a guided e
- xperience\, possibly on a nature glider or focused on local wildlife. A ch
- ance to learn about local flora and fauna in a natural setting.
-LOCATION:Gold Coast Regional Botanic Gardens\, Benowa
-URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-Program/Natur
- allyGC-Calendar
+UID:goldcoast-68@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:Pyrokinesis\, The Nameless\, Repriever\, Nevergone & Deprived Of
+DESCRIPTION:An evening of heavy and alternative live music featuring bands 
+ Pyrokinesis\, The Nameless\, and more\, hosted at the Gold Coast's renowne
+ d Vinnies Dive Bar.
+LOCATION:Vinnies Dive Bar\, Southport
+URL:https://www.shazam.com/gb/concerts/sq763h7/pyrokinesis-southport
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-32@dothings
-DTSTART;TZID=UTC:20260725T090000
-DTEND;TZID=UTC:20260725T110000
-SUMMARY:NaturallyGC Kids - A Morning in the Mangroves
-DESCRIPTION:Discover the unique ecosystem of mangroves in this educational 
- outdoor session. Learn about their importance\, wildlife\, and conservatio
- n in a family-friendly setting.
-LOCATION:Coombabah
-URL:https://www.goldcoast.qld.gov.au/Things-to-do/NaturallyGC-Program/Natur
- allyGC-Calendar
+UID:goldcoast-69@dothings
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260725
+SUMMARY:Coolamon Singers: Mass in Time of War
+DESCRIPTION:A choral performance by the Coolamon Singers\, presenting a 'Ma
+ ss in Time of War' in Clear Island Waters\, offering a classical and refle
+ ctive musical experience.
+LOCATION:Clear Island Waters
+URL:https://www.goldcoast.qld.gov.au/Things-to-do/Whats-On-Gold-Coast/Music
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-33@dothings
+UID:goldcoast-70@dothings
 DTSTART;TZID=UTC:20260726T140000
 DTEND;TZID=UTC:20260726T160000
-SUMMARY:Hola Marketta! Winter Festival (Latin Festival)
-DESCRIPTION:Immerse yourself in Latin culture at the Hola Marketta! Winter 
- Festival\, featuring live music\, dance\, food\, and vibrant performances.
-  A cultural celebration for the community.
+SUMMARY:HOLA Marketta! Winter Festival (Gold Coast's Biggest Latin Festival
+ )
+DESCRIPTION:Immerse yourself in Gold Coast's biggest Latin festival at Miam
+ i Marketta\, a vibrant event featuring live music\, dance\, food\, and cul
+ ture for a lively social experience.
 LOCATION:Miami Marketta\, Miami
-URL:https://www.miamimarketta.com/events/hola-marketta-winter-festival
+URL:https://www.miamimarketta.com/live-music-ticketed-events/hola-marketta-
+ winter-festival
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-34@dothings
-DTSTART;TZID=UTC:20260708T000000
-DTEND;TZID=UTC:20260708T020000
+UID:goldcoast-71@dothings
+DTSTART;TZID=UTC:20260726T160000
+DTEND;TZID=UTC:20260726T180000
+SUMMARY:The Swinging Brisbane Big Band Twilight Show
+DESCRIPTION:Experience an evening of live big band jazz with The Swinging B
+ risbane Big Band at the Gold Coast City Jazz Club in Southport\, offering 
+ a classic jazz atmosphere.
+LOCATION:Gold Coast City Jazz Club\, Southport
+URL:https://www.gccjc.com.au/upcoming-shows/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-72@dothings
+DTSTART;TZID=UTC:20260726T183000
+DTEND;TZID=UTC:20260726T203000
+SUMMARY:Auslocks
+DESCRIPTION:Enjoy a live performance by Auslocks at the Den Devine Restaura
+ nt & Music Lounge\, an intimate Broadbeach venue for local and indie bands
+ .
+LOCATION:Den Devine Restaurant & Music Lounge\, Broadbeach
+URL:https://choon.live/events/auslocks-at-den-devine-restaurant-music-loung
+ e-broadbeach-gold-coast-2026-07-26/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-73@dothings
+DTSTART;TZID=UTC:20260723T183000
+DTEND;TZID=UTC:20260723T203000
+SUMMARY:Artist Stories: Make Art Work
+DESCRIPTION:An intellectually stimulating talk where an artist shares their
+  journey and insights into making a career in the arts\, aimed at fosterin
+ g creative community and inspiration.
+LOCATION:Broadbeach Library\, Mermaid Waters
+URL:
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-74@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
 SUMMARY:Aka Sorbie: Saltwater Heart
-DESCRIPTION:A solo exhibition by Aka Sorbie\, presenting works that explore
-  themes related to saltwater\, coastal environments\, and personal connect
- ion to place.
+DESCRIPTION:An exhibition by artist Aka Sorbie\, exploring themes related t
+ o the ocean and cultural heritage\, offering a unique artistic perspective
+ .
 LOCATION:HOTA Gallery
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-35@dothings
-DTSTART;TZID=UTC:20260720T113000
-DTEND;TZID=UTC:20260720T133000
-SUMMARY:This Moment Experience - Guided Tour & Lunch
-DESCRIPTION:A guided tour of 'This Moment' exhibition at HOTA\, followed by
-  a curated lunch experience at The Exhibitionist Bar\, offering a deeper d
- ive into the art.
-LOCATION:The Exhibitionist Bar\, HOTA
+UID:goldcoast-75@dothings
+DTSTART;TZID=UTC:20260721T090000
+DTEND;TZID=UTC:20260721T110000
+SUMMARY:NAIDOC Week
+DESCRIPTION:A cultural event celebrating the history\, culture\, and achiev
+ ements of Aboriginal and Torres Strait Islander peoples\, typically featur
+ ing talks\, performances\, and community gatherings.
+LOCATION:Southern Cross University Gold Coast Campus
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-36@dothings
-DTSTART;TZID=UTC:20260721T094500
-DTEND;TZID=UTC:20260721T114500
-SUMMARY:THE ODYSSEY (M) Cinema 2
-DESCRIPTION:A morning screening of the film 'The Odyssey' (M)\, part of HOT
- A's curated cinema program\, offering a classic cinematic experience.
-LOCATION:Cinema 2\, HOTA
+UID:goldcoast-76@dothings
+DTSTART;TZID=UTC:20260721T180000
+DTEND;TZID=UTC:20260721T200000
+SUMMARY:Line Dancing on the Lawn
+DESCRIPTION:A social and active event where participants can learn and enjo
+ y line dancing on the outdoor lawn\, fostering community connection throug
+ h movement.
+LOCATION:The Lawn\, The Star Gold Coast
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-37@dothings
-DTSTART;TZID=UTC:20260721T100000
-DTEND;TZID=UTC:20260721T120000
-SUMMARY:TUNER (MA15+) Cinema 1
-DESCRIPTION:A morning screening of the film 'Tuner' (MA15+)\, part of HOTA'
- s curated cinema program\, offering a dramatic cinematic experience.
-LOCATION:Cinema 1\, HOTA
+UID:goldcoast-77@dothings
+DTSTART;TZID=UTC:20260724T170000
+DTEND;TZID=UTC:20260724T190000
+SUMMARY:Free Local Music
+DESCRIPTION:Enjoy free live music from local artists at Miami Marketta\, a 
+ vibrant night market known for its street food and creative atmosphere. A 
+ great way to experience local talent in a community setting.
+LOCATION:Miami Marketta\, Miami
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-38@dothings
-DTSTART;TZID=UTC:20260721T121500
-DTEND;TZID=UTC:20260721T141500
-SUMMARY:THE INVITE (MA15+) Cinema 1
-DESCRIPTION:An afternoon screening of the film 'The Invite' (MA15+)\, part 
- of HOTA's curated cinema program\, offering a suspenseful cinematic experi
- ence.
-LOCATION:Cinema 1\, HOTA
+UID:goldcoast-78@dothings
+DTSTART;TZID=UTC:20260724T183000
+DTEND;TZID=UTC:20260724T203000
+SUMMARY:HOLYSTONE ~ Accepting Omega ALBUM LAUNCH
+DESCRIPTION:Join HOLYSTONE for the official launch of their new album\, 'Ac
+ cepting Omega'\, at the popular Mo's Desert Clubhouse. Expect an evening o
+ f original music in a venue known for its vibrant indie scene.
+LOCATION:Mo's Desert Clubhouse
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-39@dothings
-DTSTART;TZID=UTC:20260721T143000
-DTEND;TZID=UTC:20260721T163000
-SUMMARY:GLENROTHAN (M) Cinema 1
-DESCRIPTION:An afternoon screening of the film 'Glenrothan' (M)\, part of H
- OTA's curated cinema program\, offering an engaging cinematic experience.
-LOCATION:Cinema 1\, HOTA
+UID:goldcoast-79@dothings
+DTSTART;TZID=UTC:20260726T140000
+DTEND;TZID=UTC:20260726T160000
+SUMMARY:Hola Marketta! Winter Festival
+DESCRIPTION:Immerse yourself in the vibrant atmosphere of Hola Marketta! Wi
+ nter Festival\, featuring a mix of live music\, delicious food\, and creat
+ ive stalls in a community-focused setting. It's an opportunity to connect 
+ and explore local culture.
+LOCATION:Miami Marketta\, Miami
+URL:https://www.miamimarketta.com/miami-marketta-events/2026/hola-marketta-
+ winter-festival
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-80@dothings
+DTSTART;TZID=UTC:20260725T070000
+DTEND;TZID=UTC:20260725T090000
+SUMMARY:A&H Sattva Yoga with Breathwork
+DESCRIPTION:A holistic Sattva Yoga class integrating Himalayan breath kriya
+ s with Hatha Vinyasa. Suitable for all levels\, focusing on presence\, inn
+ er strength\, and energy cultivation.
+LOCATION:Burleigh Heads\, Gold Coast
 URL:
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-40@dothings
-DTSTART;TZID=UTC:20260721T163500
-DTEND;TZID=UTC:20260721T183500
-SUMMARY:ICE TOWER (M) Cinema 1
-DESCRIPTION:An evening screening of the film 'Ice Tower' (M)\, part of HOTA
- 's curated cinema program\, offering an adventurous cinematic experience.
-LOCATION:Cinema 1\, HOTA
-URL:
+UID:goldcoast-81@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:Live Music Hip Hop Concert
+DESCRIPTION:A live Hip Hop concert in the Gold Coast. Expect an energetic p
+ erformance from local or visiting artists in a specific venue\, showcasing
+  an authentic subculture.
+LOCATION:11/5 Smiths Rd
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/live-music/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-41@dothings
-DTSTART;TZID=UTC:20260720T193000
-DTEND;TZID=UTC:20260720T213000
-SUMMARY:Community Grants Info & Networking Session 2026 - Division 9
-DESCRIPTION:An information and networking session hosted by City of Gold Co
- ast Division 9 for community groups and individuals interested in applying
-  for local grants. Opportunity to connect with others involved in communit
- y initiatives.
-LOCATION:Mudgeeraba Community Centre
-URL:https://www.eventbrite.com.au/d/australia--gold-coast/community-events/
+UID:goldcoast-82@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:TILT SERIES 4 with Kurilpa Reach\, Temperate\, Blind Corners and Va
+ ndalism Angel (ALL AGES)
+DESCRIPTION:An all-ages live music event featuring multiple bands including
+  Kurilpa Reach\, Temperate\, Blind Corners\, and Vandalism Angel at Mo's D
+ esert Clubhouse\, supporting the local music scene.
+LOCATION:Mo's Desert Clubhouse\, Burleigh Heads
+URL:https://musick.com.au/gold-coast/gigs/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-42@dothings
-DTSTART;TZID=UTC:20260726T100000
-DTEND;TZID=UTC:20260726T120000
-SUMMARY:Speakers Tribe QLD - July Gathering
-DESCRIPTION:An in-person gathering for Speakers Tribe QLD\, focusing on pub
- lic speaking skills\, communication\, and idea sharing. A community event 
- for those looking to develop their speaking abilities and engage with dive
- rse perspectives.
-LOCATION:Club Helensvale
-URL:https://www.eventbrite.com.au/d/australia--gold-coast/community-events/
+UID:goldcoast-83@dothings
+DTSTART;TZID=UTC:20260720T170000
+DTEND;TZID=UTC:20260720T190000
+SUMMARY:Sunburn Fest
+DESCRIPTION:A music festival held at Miami Marketta. Expect a diverse lineu
+ p of live acts and a vibrant\, social atmosphere.
+LOCATION:Miami Marketta\, Miami
+URL:https://yelo.live/goldcoastgigs/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-43@dothings
-DTSTART;VALUE=DATE:20260724
-DTEND;VALUE=DATE:20260724
-SUMMARY:Gold Coast Jazz Blues Roots Festival 2026
-DESCRIPTION:A multi-day music festival showcasing diverse jazz\, blues\, an
- d roots artists across various venues and outdoor stages in the Broadbeach
-  precinct.
-LOCATION:Broadbeach (festival precinct)\, Broadbeach
-URL:https://dailygoldcoast.com.au/events
+UID:goldcoast-84@dothings
+DTSTART;TZID=UTC:20260724T190000
+DTEND;TZID=UTC:20260724T210000
+SUMMARY:Baby Animals + Avalanche AU
+DESCRIPTION:Baby Animals\, an iconic Australian rock act known for their hi
+ gh-energy live shows\, perform with support from Avalanche AU. Expect an e
+ lectrifying night of rock music.
+LOCATION:Burleigh Town Tavern\, West Burleigh
+URL:https://www.songkick.com/metro-areas/26785-australia-gold-coast
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-44@dothings
-DTSTART;TZID=UTC:20260726T120000
-DTEND;TZID=UTC:20260726T140000
-SUMMARY:It's On ChevrON (Street Party)
-DESCRIPTION:A free community street party on Chevron Island\, featuring loc
- al entertainment\, food\, and activities. It's a chance to connect with th
- e local neighbourhood in a festive atmosphere.
-LOCATION:Thomas Drive\, Chevron Island\, Surfers Paradise
-URL:https://www.itsonchevron.com.au/
+UID:goldcoast-85@dothings
+DTSTART;TZID=UTC:20260725T200000
+DTEND;TZID=UTC:20260725T220000
+SUMMARY:Queen Forever – Greatest Hits Tour (20th Anniversary)
+DESCRIPTION:Queen Forever celebrates 20 years with a full-scale rock specta
+ cle capturing the essence of Queen. Expect faithful renditions of their gr
+ eatest hits in an electrifying live performance.
+LOCATION:Gold Coast
+URL:https://experiencegoldcoast.com/events/music
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-45@dothings
+UID:goldcoast-86@dothings
+DTSTART;TZID=UTC:20260726T140000
+DTEND;TZID=UTC:20260726T160000
+SUMMARY:General Ticket – 2026 20th Years Anniversary Student Concert
+DESCRIPTION:A milestone student ensemble concert celebrating 20 years of mu
+ sical education and performance. Support emerging talent and enjoy a diver
+ se program presented by dedicated students.
+LOCATION:Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/music-festivals/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-87@dothings
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260720
+SUMMARY:Art Yarramunua Gallery Sale
+DESCRIPTION:Art Yarramunua Gallery is hosting an exclusive sale on original
+  Australian art\, offering a relaxed opportunity to browse and appreciate 
+ diverse artworks in Burleigh Heads.
+LOCATION:Burleigh Heads
+URL:https://www.insidegoldcoast.com.au/whatson
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-88@dothings
+DTSTART;TZID=UTC:20260723T190000
+DTEND;TZID=UTC:20260723T210000
+SUMMARY:Live Music at Nightjar
+DESCRIPTION:Nightjar Burleigh is an intimate\, relaxed venue offering live 
+ music with a heavy focus on rock ballads and acoustic performances\, along
+ side a curated drinks menu.
+LOCATION:Nightjar\, Burleigh Heads
+URL:https://www.nightjar.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-89@dothings
+DTSTART;TZID=UTC:20260724T204500
+DTEND;TZID=UTC:20260724T224500
+SUMMARY:You Am I
+DESCRIPTION:Legendary Aussie rock band You Am I performs\, boasting multipl
+ e ARIA nominations and a 2025 Rock 'N' Roll Hall of Fame induction. Arrive
+  early to secure a good spot for their set.
+LOCATION:Coolangatta Hotel\, Coolangatta
+URL:https://musick.com.au/gig/you-am-i-at-coolangatta-hotel-2026-07-24/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-90@dothings
+DTSTART;TZID=UTC:20260720T100000
+DTEND;TZID=UTC:20260720T120000
+SUMMARY:Art Yarramunua Gallery — Exclusive Art Sale
+DESCRIPTION:Visit Art Yarramunua Gallery to explore a range of artworks\, c
+ urrently available with up to 50% off during their exclusive art sale. Fre
+ e entry to browse and discover.
+LOCATION:Art Yarramunua Gallery\, Burleigh Heads
+URL:https://artyarramunua.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-91@dothings
+DTSTART;TZID=UTC:20260724T183000
+DTEND;TZID=UTC:20260724T203000
+SUMMARY:Rogue Traders – The Anthems 21st Anniversary Tour
+DESCRIPTION:Australian dance-rock band Rogue Traders\, led by Natalie Bassi
+ ngthwaighte\, celebrate their 21st anniversary performing iconic 2000s ant
+ hems and new music in an explosive live show.
+LOCATION:Miami Marketta\, Miami
+URL:https://www.miamimarketta.com/ticketed-events/rogue-traders
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-92@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:Queen Forever – Greatest Hits Tour
+DESCRIPTION:A full-scale rock spectacle\, Queen Forever celebrates 20 years
+  of performing the legendary band's greatest hits with authenticity and en
+ ergy\, recreating Queen's power in their prime.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://hota.com.au/whats-on/live/gigs/queen-forever-greatest-hits-tour
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-93@dothings
+DTSTART;VALUE=DATE:20260726
+DTEND;VALUE=DATE:20260726
+SUMMARY:Music of the Night – Joey Fimmano
+DESCRIPTION:Joey Fimmano presents his sell-out show\, a mesmerising stage p
+ roduction featuring timeless Andrew Lloyd Webber creations and other great
+ est musical hits from West End and Broadway.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://hota.com.au/whats-on/live/theatre/music-of-the-night
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-94@dothings
+DTSTART;TZID=UTC:20260725T193000
+DTEND;TZID=UTC:20260725T213000
+SUMMARY:The Poems\, Prayers and Promises of John Denver – Darren Coggan
+DESCRIPTION:Award-winning performer Darren Coggan delivers a heartfelt trib
+ ute to John Denver\, honouring his universal folk anthems with vocal authe
+ nticity in this musical journey.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://experiencegoldcoast.com/events/the-poems-prayers-and-promises-o
+ f-john-denver
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-95@dothings
+DTSTART;TZID=UTC:20260724T200000
+DTEND;TZID=UTC:20260724T220000
+SUMMARY:You Am I at The Balcony – Coolangatta Hotel
+DESCRIPTION:Iconic Australian rock band You Am I perform live at The Balcon
+ y\, a legendary beachfront venue\, delivering their classic sound to the G
+ old Coast's southern end.
+LOCATION:Coolangatta Hotel\, Coolangatta
+URL:https://allevents.in/coolangatta/music
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-96@dothings
+DTSTART;TZID=UTC:20260724T190000
+DTEND;TZID=UTC:20260724T210000
+SUMMARY:Baby Animals – Burleigh Town Hotel
+DESCRIPTION:Legendary Australian hard rock/alternative act Baby Animals per
+ form their 90s hits and more in a powerful live show at the Burleigh Town 
+ Hotel.
+LOCATION:Burleigh Town Hotel\, Burleigh Heads
+URL:https://www.bandsintown.com/c/tweed-heads-australia
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-97@dothings
+DTSTART;TZID=UTC:20260724T200000
+DTEND;TZID=UTC:20260724T220000
+SUMMARY:The Australian Bee Gees Show
+DESCRIPTION:A tribute show celebrating the music of the Bee Gees at The Sta
+ r Gold Coast. Expect a performance of classic disco and pop hits.
+LOCATION:The Star Gold Coast\, Broadbeach
+URL:https://premier.ticketek.com.au/shows/show.aspx?sh=AUSTRALIAN26
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-98@dothings
 DTSTART;TZID=UTC:20260726T130000
 DTEND;TZID=UTC:20260726T150000
 SUMMARY:Surfside Sounds
@@ -524,131 +1121,152 @@ URL:https://www.goldcoast.qld.gov.au/Things-to-do/Whats-On-Gold-Coast/Surfs
  ide-Sounds
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-46@dothings
-DTSTART;TZID=UTC:20260726T060000
-DTEND;TZID=UTC:20260726T080000
-SUMMARY:HOTA Farmers & Artisan Market
-DESCRIPTION:A weekly market showcasing local farmers produce\, artisanal go
- ods\, and handcrafted items. Held at HOTA\, it's a popular community gathe
- ring for fresh food and unique finds.
-LOCATION:HOTA\, Home of the Arts\, Bundall
-URL:https://hota.com.au/whats-on/markets/hota-farmers-and-artisan-market
+UID:goldcoast-99@dothings
+DTSTART;TZID=UTC:20260724T200000
+DTEND;TZID=UTC:20260724T220000
+SUMMARY:The 6V6s
+DESCRIPTION:Enjoy a night of live music with The 6V6s at the Wallaby Hotel\
+ , a local pub in Mudgeeraba\, perfect for an intimate gig experience.
+LOCATION:Wallaby Hotel\, Mudgeeraba
+URL:https://www.wallabyhotel.com.au/live-music
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-47@dothings
-DTSTART;TZID=UTC:20260724T180000
-DTEND;TZID=UTC:20260724T200000
-SUMMARY:Luke Pauley LIVE at Currumbin RSL!
-DESCRIPTION:Enjoy a live performance by Luke Pauley at Currumbin RSL. A loc
- al artist performing for an evening of music and atmosphere\, suitable for
-  a relaxed night out.
-LOCATION:Currumbin RSL\, Currumbin
-URL:https://www.currumbinrsl.com.au/event/luke-pauley-live-at-currumbin-rsl
- /2026-07-24/
+UID:goldcoast-100@dothings
+DTSTART;TZID=UTC:20260725T140000
+DTEND;TZID=UTC:20260725T160000
+SUMMARY:Tiffany Grace
+DESCRIPTION:Catch Tiffany Grace performing live in an intimate afternoon gi
+ g at the Wallaby Hotel in Mudgeeraba\, offering a relaxed atmosphere for l
+ istening to local talent.
+LOCATION:Wallaby Hotel\, Mudgeeraba
+URL:https://surreal.com.au/event/tiffany-grace-2pm-4pm-wallaby-hotel-2026-0
+ 7-25/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-48@dothings
-DTSTART;TZID=UTC:20260725T183000
-DTEND;TZID=UTC:20260725T203000
-SUMMARY:Drag Queen Bingo | Christmas in July
-DESCRIPTION:Enjoy a fun and lively evening of Drag Queen Bingo with a Chris
- tmas in July theme. This event combines comedy\, performance\, and audienc
- e participation for a memorable night.
-LOCATION:Studio 56\, Miami Marketta\, Miami
-URL:https://www.miamimarketta.com/events/drag-queen-bingo-christmas-in-july
- -25-july
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-49@dothings
-DTSTART;TZID=UTC:20260725T193000
-DTEND;TZID=UTC:20260725T213000
-SUMMARY:The Smashed Crabs LIVE at Currumbin RSL
-DESCRIPTION:Catch The Smashed Crabs performing live at Currumbin RSL. A loc
- al band offering an evening of entertainment and music in a relaxed venue 
- setting.
-LOCATION:Currumbin RSL\, Currumbin
-URL:https://www.currumbinrsl.com.au/event/the-smashed-crabs-live-at-currumb
- in-rsl/2026-07-25/
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-50@dothings
-DTSTART;TZID=UTC:20260725T173000
-DTEND;TZID=UTC:20260725T193000
-SUMMARY:Koi Sunset Sessions
-DESCRIPTION:Relaxed\, ongoing sunset music sessions featuring various DJs a
- nd acts in a picturesque waterfront setting\, continuing through July and 
- August.
-LOCATION:Waterfront venue (listed on Experience Gold Coast)\, Gold Coast
-URL:https://experiencegoldcoast.com/events
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-51@dothings
-DTSTART;TZID=UTC:20260725T190000
-DTEND;TZID=UTC:20260725T210000
-SUMMARY:Rockaria: The ELO Experience
-DESCRIPTION:A tribute concert bringing to life the classic sound and visual
-  spectacle of Electric Light Orchestra\, complete with a full band and pro
- duction.
-LOCATION:The Star Gold Coast\, Broadbeach
-URL:https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-may-june-
- july-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-52@dothings
+UID:goldcoast-101@dothings
 DTSTART;TZID=UTC:20260726T140000
 DTEND;TZID=UTC:20260726T160000
-SUMMARY:Surfside Sounds – Gold Coast City Brass Band
-DESCRIPTION:An afternoon concert by the Gold Coast City Brass Band\, perfor
- ming a repertoire of brass music for community audiences as part of the Su
- rfside Sounds series.
-LOCATION:Performing Arts Centre\, Robina State High School\, Robina
-URL:https://www.whatsongoldcoast.au/All-events/Surfside-Sounds-3
+SUMMARY:Surfside Sounds (Brass band favourites\, modern hits\, entertainmen
+ t)
+DESCRIPTION:Enjoy an afternoon of brass band music\, featuring both classic
+  favourites and modern hits\, in a vibrant community setting in Robina.
+LOCATION:Robina
+URL:https://www.goldcoast.qld.gov.au/Things-to-do/Whats-On-Gold-Coast/Music
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-53@dothings
-DTSTART;TZID=UTC:20260726T100000
-DTEND;TZID=UTC:20260726T120000
-SUMMARY:It’s ON Chevron Street Party 2026
-DESCRIPTION:A vibrant community street party featuring live entertainment\,
-  diverse food stalls\, and family-friendly activities along Chevron Island
- 's main strip.
-LOCATION:Thomas Drive\, Chevron Island\, Chevron Island
+UID:goldcoast-102@dothings
+DTSTART;TZID=UTC:20260725T190000
+DTEND;TZID=UTC:20260725T210000
+SUMMARY:Dizem que o amor atrai
+DESCRIPTION:Experience live music at Tap That Brewery & Keghouse. Likely a 
+ local band performing in an intimate brewery setting\, encouraging minglin
+ g.
+LOCATION:Tap That Brewery & Keghouse
 URL:https://goldcoastspots.com/events/this-month
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-54@dothings
-DTSTART;TZID=UTC:20260726T110000
-DTEND;TZID=UTC:20260726T130000
-SUMMARY:Gold Coast Commonwealth Day 2026
-DESCRIPTION:A civic and community celebration of Commonwealth Day on the Br
- oadbeach foreshore\, featuring cultural activities and ceremonies.
-LOCATION:Broadbeach Foreshore\, Broadbeach
-URL:https://dailygoldcoast.com.au/events
+UID:goldcoast-103@dothings
+DTSTART;TZID=UTC:20260726T190000
+DTEND;TZID=UTC:20260726T210000
+SUMMARY:Phantom: A Tribute to Michael Crawford
+DESCRIPTION:A tribute performance dedicated to Michael Crawford\, known for
+  his role in Phantom of the Opera. Expect an evening of musical theatre cl
+ assics at HOTA.
+LOCATION:HOTA\, Surfers Paradise
+URL:https://yelo.live/goldcoastgigs/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-55@dothings
+UID:goldcoast-104@dothings
+DTSTART;TZID=UTC:20260726T190000
+DTEND;TZID=UTC:20260726T210000
+SUMMARY:Danny Fai Fai Trio
+DESCRIPTION:The Danny Fai Fai Trio performs live at Burleigh Sports Club. E
+ xpect an evening of local live music in a relaxed club atmosphere where mi
+ ngling is possible.
+LOCATION:Burleigh Sports Club\, Burleigh Heads
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/live-music/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-105@dothings
+DTSTART;TZID=UTC:20260724T190000
+DTEND;TZID=UTC:20260724T210000
+SUMMARY:Chandler Jay
+DESCRIPTION:Chandler Jay performs a live music set at Hotel Jardin\, a popu
+ lar venue in Surfers Paradise. Enjoy an evening of contemporary tunes in a
+  hotel setting.
+LOCATION:Hotel Jardin\, Surfers Paradise
+URL:https://www.songkick.com/metro-areas/26785-australia-gold-coast
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-106@dothings
+DTSTART;TZID=UTC:20260726T190000
+DTEND;TZID=UTC:20260726T210000
+SUMMARY:Lola
+DESCRIPTION:Lola performs a live set at El Camino Cantina in Surfers Paradi
+ se\, offering a lively backdrop to dining and entertainment. Experience mu
+ sic in a vibrant cantina atmosphere.
+LOCATION:El Camino Cantina Surfers Paradise\, Surfers Paradise
+URL:https://www.songkick.com/metro-areas/26785-australia-gold-coast
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-107@dothings
 DTSTART;TZID=UTC:20260724T210000
 DTEND;TZID=UTC:20260724T230000
-SUMMARY:ROGUE TRADERS - THE ANTHEMS - 21ST ANNIVERSARY TOUR
-DESCRIPTION:Rogue Traders perform their hits on their 21st-anniversary tour
-  at Miami Marketta\, a popular Gold Coast venue. Expect a lively pop/elect
- ronic music concert.
-LOCATION:Miami Marketta\, Miami
-URL:https://www.oztix.com.au/event/rogue-traders-the-anthems-21st-anniversa
- ry-tour/133742
+SUMMARY:MATTY LOCO – Live on the Gold Coast 2026
+DESCRIPTION:A live DJ/electronic music performance by Matty Loco on the Gol
+ d Coast. Experience an energetic night with cutting-edge electronic sounds
+ .
+LOCATION:Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/music--events/dj/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-56@dothings
-DTSTART;TZID=UTC:20260724T200000
-DTEND;TZID=UTC:20260724T220000
-SUMMARY:The Australian Bee Gees Show
-DESCRIPTION:A tribute show celebrating the music of the Bee Gees at The Sta
- r Gold Coast. Expect a performance of classic disco and pop hits.
-LOCATION:The Star Gold Coast\, Broadbeach
-URL:https://premier.ticketek.com.au/shows/show.aspx?sh=AUSTRALIAN26
+UID:goldcoast-108@dothings
+DTSTART;TZID=UTC:20260725T210000
+DTEND;TZID=UTC:20260725T230000
+SUMMARY:PASH Presents: No Gary No
+DESCRIPTION:PASH presents 'No Gary No\,' a live music and DJ night on the G
+ old Coast. Discover new sounds and enjoy a curated evening of contemporary
+  music.
+LOCATION:Gold Coast
+URL:https://www.eventbrite.com.au/d/australia--gold-coast/music--events/dj/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-57@dothings
+UID:goldcoast-109@dothings
+DTSTART;TZID=UTC:20260724T180000
+DTEND;TZID=UTC:20260724T200000
+SUMMARY:Intercontinental Sanctuary Cove Dinner Experience
+DESCRIPTION:An atmospheric\, high-quality dining and social experience at t
+ he scenic InterContinental Sanctuary Cove Resort\, offering a curated even
+ ing for connection and enjoyment.
+LOCATION:InterContinental Sanctuary Cove Resort — Hope Island
+URL:https://www.theurbanlist.com/goldcoast/a-list/things-to-do-on-the-gold-
+ coast-this-weekend
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-110@dothings
+DTSTART;TZID=UTC:20260720T080000
+DTEND;TZID=UTC:20260720T100000
+SUMMARY:Explore Gold Coast Adventure Race
+DESCRIPTION:An outdoor adventure race designed for enthusiasts of navigatio
+ n\, endurance\, and exploring the natural landscapes of the Gold Coast Hin
+ terland.
+LOCATION:Gold Coast Hinterland
+URL:https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-may-june-
+ july-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-111@dothings
+DTSTART;TZID=UTC:20260721T190000
+DTEND;TZID=UTC:20260721T210000
+SUMMARY:Dracula's: Lucid (Dinner & Show)
+DESCRIPTION:A unique dinner and show experience at Dracula's Gold Coast\, f
+ eaturing a performance with a strong atmosphere\, live music\, and special
+  effects. Expect a theatrical and entertaining evening.
+LOCATION:Dracula's Gold Coast\, Broadbeach
+URL:https://www.draculas.com.au/gold-coast/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-112@dothings
 DTSTART;TZID=UTC:20260725T193000
 DTEND;TZID=UTC:20260725T213000
 SUMMARY:Yacht Rock Revival
@@ -659,25 +1277,14 @@ LOCATION:Wallaby Hotel\, Mudgeeraba
 URL:https://www.oztix.com.au/event/yacht-rock-revival/133742
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-58@dothings
-DTSTART;VALUE=DATE:20260718
-DTEND;VALUE=DATE:20260718
-SUMMARY:Seabastion Toast: Feature Artist
-DESCRIPTION:An exhibition featuring the work of artist Seabastion Toast\, p
- resented at Anthea Polson Art. Explore contemporary art in a gallery setti
- ng during operating hours.
-LOCATION:Anthea Polson Art\, Main Beach
-URL:https://www.antheapolsonart.com.au/exhibitions
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-59@dothings
-DTSTART;VALUE=DATE:20260721
-DTEND;VALUE=DATE:20260721
-SUMMARY:Dan Quigley Quartet
-DESCRIPTION:Experience an evening of jazz music with the Dan Quigley Quarte
- t performing in Southport. Check local listings for the specific venue and
-  showtimes.
-LOCATION:Southport (venue TBC)
-URL:https://www.experiencegoldcoast.com/whats-on/music
+UID:goldcoast-113@dothings
+DTSTART;VALUE=DATE:20260726
+DTEND;VALUE=DATE:20260726
+SUMMARY:Gold Coast Commonwealth Day 2026
+DESCRIPTION:Join a community celebration on the Broadbeach foreshore markin
+ g Commonwealth Day. This event features family-friendly activities and opp
+ ortunities for civic engagement.
+LOCATION:Broadbeach Foreshore\, Broadbeach
+URL:https://dailygoldcoast.com.au/events
 END:VEVENT
 END:VCALENDAR
