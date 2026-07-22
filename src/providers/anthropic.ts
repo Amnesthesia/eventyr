@@ -1,7 +1,12 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { CATEGORIES, fmtDate, INTERESTS } from "../common.ts";
+import { fmtDate, INTERESTS } from "../common.ts";
 import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
-import { BaseProvider, focusInstruction, TIER_INSTRUCTIONS } from "./base.ts";
+import {
+	BaseProvider,
+	focusInstruction,
+	OUTPUT_FORMAT_RULES,
+	TIER_INSTRUCTIONS,
+} from "./base.ts";
 
 const SEARCH_MODEL = "claude-sonnet-5";
 const DISCOVERY_MODEL = "claude-opus-4-7";
@@ -34,16 +39,8 @@ export class AnthropicProvider extends BaseProvider {
 				type: "text",
 				text:
 					`The person you are researching events for has the following interests:\n${INTERESTS}\n\n` +
-					`For each event you find, note:\n` +
-					`  - Event name\n  - Date and time\n  - Venue / location (suburb)\n` +
-					`  - Ticket link or event page URL\n  - Cost (free or price)\n` +
-					`  - Category: one of ${JSON.stringify(CATEGORIES)}\n` +
-					`  - Source website\n  - Brief description of what the event is\n\n` +
-					`Rules:\n` +
-					`  - Only include events within the given week range.\n` +
-					`  - Do not list sports, MLM, or sales-pitch events.\n` +
-					`  - Aim for at least 15 events.\n` +
-					`  - Include the direct URL for every event you list.\n\n` +
+					`${OUTPUT_FORMAT_RULES}\n` +
+					"Aim for at least 15 events.\n\n" +
 					focusInstruction(focus),
 				cache_control: { type: "ephemeral" },
 			},
@@ -90,7 +87,7 @@ export class AnthropicProvider extends BaseProvider {
 
 		this.validateRaw(rawText, label);
 
-		const events = await opts.curate(rawText, opts.cityCfg.name, label);
+		const events = await opts.curate(rawText, opts.cityCfg.name, label, focus);
 		return { events };
 	}
 

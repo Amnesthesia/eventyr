@@ -2,6 +2,7 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import {
 	DATA_ROOT,
+	dedupeEvents,
 	fmtDate,
 	getWeekRange,
 	loadCityConfig,
@@ -26,36 +27,6 @@ function alreadyCuratedThisWeek(monday: Date): boolean {
 	} catch {
 		return false;
 	}
-}
-
-function fingerprint(event: Record<string, unknown>): string {
-	const title = ((event.title as string) ?? "").toLowerCase().trim();
-	const dt = (
-		(event.datetime_iso as string) ??
-		(event.datetime as string) ??
-		""
-	).slice(0, 10);
-	return dt ? `${title} | ${dt}` : title;
-}
-
-function diceSimilarity(a: string, b: string): number {
-	if (a === b) return 1;
-	if (a.length < 2 || b.length < 2) return 0;
-	const getBigrams = (s: string): Map<string, number> => {
-		const m = new Map<string, number>();
-		for (let i = 0; i < s.length - 1; i++) {
-			const bg = s.slice(i, i + 2);
-			m.set(bg, (m.get(bg) ?? 0) + 1);
-		}
-		return m;
-	};
-	const aMap = getBigrams(a);
-	const bMap = getBigrams(b);
-	let inter = 0;
-	for (const [bg, count] of aMap) {
-		inter += Math.min(count, bMap.get(bg) ?? 0);
-	}
-	return (2 * inter) / (a.length + b.length - 2);
 }
 
 function findJsonFiles(baseDir: string, subPath: string): string[] {
@@ -103,16 +74,7 @@ function mergeAndDeduplicate(monday: Date): Record<string, unknown>[] {
 		}
 	}
 
-	const seen: string[] = [];
-	const unique: Record<string, unknown>[] = [];
-	for (const event of allEvents) {
-		const fp = fingerprint(event);
-		if (!seen.some((s) => diceSimilarity(fp, s) > 0.85)) {
-			unique.push(event);
-			seen.push(fp);
-		}
-	}
-	return unique;
+	return dedupeEvents(allEvents);
 }
 
 function writeJson(

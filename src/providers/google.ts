@@ -1,5 +1,11 @@
 import { GoogleGenAI } from "@google/genai";
-import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
+import { dedupeEvents } from "../common.ts";
+import type {
+	ProviderOptions,
+	SearchFocus,
+	SearchResult,
+	SourceResult,
+} from "./base.ts";
 import { BaseProvider, chunkArray, splitIntoBatches } from "./base.ts";
 
 const SEARCH_MODEL = "gemini-3.1-flash-lite";
@@ -82,6 +88,7 @@ export class GoogleProvider extends BaseProvider {
 		rawText: string,
 		cityName: string,
 		label: string,
+		focus: SearchFocus,
 	): Promise<Record<string, unknown>[]> {
 		if (process.env.DEBUG) console.debug(rawText);
 		const rawBatches = splitIntoBatches(rawText);
@@ -89,7 +96,7 @@ export class GoogleProvider extends BaseProvider {
 			`  [${label}] Extracting… (${rawBatches.length} batch${rawBatches.length > 1 ? "es" : ""})`,
 		);
 		const extractSystem = this.buildExtractSystem(cityName);
-		const extracted = (
+		const rawExtracted = (
 			await Promise.all(
 				rawBatches.map(async (batch, i) => {
 					const batchLabel = `${label} extract ${i + 1}/${rawBatches.length}`;
@@ -98,10 +105,20 @@ export class GoogleProvider extends BaseProvider {
 				}),
 			)
 		).flat();
-		console.log(`  [${label}] ${extracted.length} events extracted`);
+		// Batches are extracted independently, so the same event mentioned in
+		// two different source paragraphs (one bare, one with a venue suffix)
+		// can land in separate batches and come out twice — dedupe here,
+		// before enrichment batches ever see them.
+		const extracted = dedupeEvents(rawExtracted);
+		console.log(
+			`  [${label}] ${extracted.length} events extracted` +
+				(rawExtracted.length !== extracted.length
+					? ` (${rawExtracted.length - extracted.length} duplicates dropped)`
+					: ""),
+		);
 		if (extracted.length === 0) return [];
 
-		const enrichSystem = this.buildFormatSystem(cityName);
+		const enrichSystem = this.buildFormatSystem(cityName, focus);
 		const eventBatches = chunkArray(extracted, 20);
 		const curated = (
 			await Promise.all(
@@ -152,7 +169,7 @@ export class GoogleProvider extends BaseProvider {
 		this.validateRaw(rawText, label);
 		console.log(`  [${label}] ${rawText.length} chars received`);
 
-		const events = await opts.curate(rawText, opts.cityCfg.name, label);
+		const events = await opts.curate(rawText, opts.cityCfg.name, label, focus);
 		return { events };
 	}
 

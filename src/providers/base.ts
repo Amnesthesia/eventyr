@@ -20,13 +20,14 @@ export interface SourceResult {
 	independents: string[];
 }
 
+export type SearchFocus = "general" | "music";
+
 export type CurateFunction = (
 	rawText: string,
 	cityName: string,
 	label: string,
+	focus: SearchFocus,
 ) => Promise<Record<string, unknown>[]>;
-
-export type SearchFocus = "general" | "music";
 
 export interface ProviderOptions {
 	cityCfg: CityConfig;
@@ -63,6 +64,18 @@ export const MUSIC_ONLY_INSTRUCTION =
 	"Be exhaustive — list every live music event you can find, big or small, mainstream or niche. " +
 	"The usual 'prefer smaller/niche over mainstream' guidance does NOT apply here — a touring act at " +
 	"a major venue still counts. Aim for at least 15 music events.";
+
+// A fixed grammar (rather than "note these fields" prose) keeps every
+// provider's raw output shaped the same way, which is what the downstream
+// extraction pass actually parses — free-form prose/tables/citation
+// footnotes vary call to call and make extraction miss events.
+export const OUTPUT_FORMAT_RULES =
+	"For each event, output ONE line in exactly this pipe-delimited format and field order " +
+	"— nothing else on the line, no markdown, no bold, no headings, no tables, no numbering " +
+	"or bullets, no bracketed citation links like ([site](url)):\n" +
+	"Title | Date and time | Venue/location | Cost | Organiser | URL\n" +
+	"Use bare URLs only. Only include events with confirmed dates in that range. " +
+	"Skip spectator sports, MLM events, corporate sales pitches, and online-only events.";
 
 export function focusInstruction(focus: SearchFocus): string {
 	return focus === "music" ? MUSIC_ONLY_INSTRUCTION : EXCLUDE_MUSIC_INSTRUCTION;
@@ -160,14 +173,22 @@ export abstract class BaseProvider {
 		}
 	}
 
-	protected buildFormatSystem(cityName: string): string {
+	protected buildFormatSystem(cityName: string, focus: SearchFocus = "general"): string {
+		const filterRule =
+			focus === "music"
+				? "1. FILTER: This batch was gathered specifically as live music (concerts, gigs, " +
+					"festivals, DJ nights, classical/jazz performances). Remove only sports, MLM, " +
+					"sales-pitch events, or things that are not actually music events. Do NOT filter " +
+					"by how well an event matches the interests above, and do NOT prefer niche/smaller " +
+					"acts over mainstream ones — keep every genuine music event, touring headliner or not."
+				: "1. FILTER: Remove any sports, MLM, sales-pitch, or clearly irrelevant events.";
 		return `You are a personal events curator for someone in ${cityName} with these interests:
 ${INTERESTS}
 
 The user will give you raw event listings from a single search source.
 
 Your job:
-1. FILTER: Remove any sports, MLM, sales-pitch, or clearly irrelevant events.
+${filterRule}
 2. CURATE: For each remaining event, produce the following fields:
    - title:       event name (string)
    - datetime:    date and time as a short string, e.g. "Sat 14 Jun, 7:00 PM"
@@ -319,16 +340,11 @@ ${focusInstruction(focus)}`;
 	protected buildOpenSystem(opts: ProviderOptions): string {
 		const { cityCfg, weekStart, weekEnd, focus } = opts;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
-		const outputRules =
-			"For each event include: title, date and time, venue/location, " +
-			"direct URL to the event page, cost (Free or ticket price), organiser. " +
-			"Only include events with confirmed dates in that range. " +
-			"Skip spectator sports, MLM events, corporate sales pitches, and online-only events.";
 		return (
 			`You are an events researcher for ${cityCfg.name}, Australia. ` +
 			`Find in-person events for ${dateRange} matching these interests:\n${INTERESTS}\n` +
 			"Search Eventbrite, Meetup, Humanitix, venue websites, community platforms, Facebook Events, and local guides. " +
-			`${outputRules}\n\n${focusInstruction(focus)}`
+			`${OUTPUT_FORMAT_RULES}\n\n${focusInstruction(focus)}`
 		);
 	}
 
@@ -352,24 +368,19 @@ ${focusInstruction(focus)}`;
 		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
 		const cityName = cityCfg.name;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
-		const outputRules =
-			"For each event include: title, date and time, venue/location, " +
-			"direct URL to the event page, cost (Free or ticket price), organiser. " +
-			"Only include events with confirmed dates in that range. " +
-			"Skip spectator sports, MLM events, corporate sales pitches, and online-only events.";
 		const focusBlock = `\n\n${focusInstruction(focus)}`;
 
 		if (tier === "aggregators") {
 			return (
 				`You are an events researcher for ${cityName}, Australia. ` +
-				`Find in-person events listed on event platforms for ${dateRange}. ${outputRules}${focusBlock}`
+				`Find in-person events listed on event platforms for ${dateRange}. ${OUTPUT_FORMAT_RULES}${focusBlock}`
 			);
 		}
 		if (tier === "institutions") {
 			return (
 				`You are an events researcher for ${cityName}, Australia. ` +
 				`Find in-person events at ${cityName}'s cultural institutions for ${dateRange}. ` +
-				`Search their websites, event pages, and Eventbrite listings. ${outputRules}${focusBlock}`
+				`Search their websites, event pages, and Eventbrite listings. ${OUTPUT_FORMAT_RULES}${focusBlock}`
 			);
 		}
 		if (tier === "independents") {
@@ -378,7 +389,7 @@ ${focusInstruction(focus)}`;
 				`Find events at small, independent venues and community groups for ${dateRange}. ` +
 				"These niche venues rarely appear on aggregators. " +
 				"Search broadly for independent bookshops, small music venues, indie galleries, " +
-				`makerspaces, philosophy groups, language exchanges, community bars and cafes with events. ${outputRules}${focusBlock}`
+				`makerspaces, philosophy groups, language exchanges, community bars and cafes with events. ${OUTPUT_FORMAT_RULES}${focusBlock}`
 			);
 		}
 		return this.buildOpenSystem(opts);

@@ -2,15 +2,11 @@ import OpenAI from "openai";
 import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
 import { BaseProvider } from "./base.ts";
 
-const PLAIN_TEXT_INSTRUCTION =
-	"\n\nRespond in plain text only. No markdown tables, no headings, no " +
-	"bracketed citation links like ([site](url)) — use bare URLs. One event " +
-	"per line or short paragraph, using the fields above.";
-
 function stripCitationNoise(text: string): string {
 	return text
 		.replace(/\s*\(\[[^\]]*\]\([^)]*\)\)/g, "")
-		.replace(/\?utm_source=openai/g, "");
+		.replace(/\?utm_source=openai/g, "")
+		.replace(/^\s*(?:[-*•]|\d+[.)])\s+/gm, "");
 }
 
 export class OpenAIProvider extends BaseProvider {
@@ -59,7 +55,7 @@ export class OpenAIProvider extends BaseProvider {
 				model: "gpt-5.6",
 				tools: [{ type: "web_search" }],
 				max_output_tokens: 32000,
-				input: systemMsg + PLAIN_TEXT_INSTRUCTION + "\n\n" + userMsg,
+				input: systemMsg + "\n\n" + userMsg,
 			});
 
 		if (
@@ -72,7 +68,12 @@ export class OpenAIProvider extends BaseProvider {
 		const rawText = 'output_text' in response ? response.output_text : response.choices[0]?.message?.content ?? "";
 		if (process.env.DEBUG) console.debug(rawText);
 		this.validateRaw(rawText, label);
-		const events = await opts.curate(stripCitationNoise(rawText), opts.cityCfg.name, label);
+		const events = await opts.curate(
+			stripCitationNoise(rawText),
+			opts.cityCfg.name,
+			label,
+			focus,
+		);
 		return { events };
 	}
 

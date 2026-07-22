@@ -80,7 +80,7 @@ ${focusInstruction(focus)}`;
 		this.validateRaw(rawText, label);
 		console.log(`  [${label}] ${rawText.length} chars received`);
 
-		const events = await opts.curate(rawText, cityCfg.name, label);
+		const events = await opts.curate(rawText, cityCfg.name, label, focus);
 		return { events };
 	}
 }
