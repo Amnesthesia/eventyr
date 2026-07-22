@@ -1,0 +1,78 @@
+{
+  "city_key": "brisbane",
+  "provider": "google",
+  "tier": "institutions-music",
+  "week_start": "2026-07-20",
+  "week_end": "2026-07-26",
+  "events": [
+    {
+      "title": "Keys to Life with Jayson Gillham and Iyad Sughayer",
+      "datetime": "Wed 22 Jul, 7:00 PM",
+      "location": "Concert Hall, QPAC, South Brisbane",
+      "link": "",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "QPAC",
+      "description": "Experience a classical piano concert featuring Jayson Gillham and Iyad Sughayer performing in the Concert Hall at QPAC, showcasing a program of classical works.",
+      "tags": [
+        "classical music",
+        "piano",
+        "concert",
+        "qpac"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-22T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "The Music of Video Games",
+      "datetime": "Fri 24 Jul, 7:30 PM",
+      "location": "Concert Hall, QPAC, South Brisbane",
+      "link": "",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Queensland Symphony Orchestra",
+      "description": "The Queensland Symphony Orchestra performs an evening concert dedicated to the iconic scores and soundtracks from various video games, featuring a range of popular and classic game music.",
+      "tags": [
+        "orchestra",
+        "video games",
+        "music",
+        "qpac"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-24T19:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "The Music of Video Games",
+      "datetime": "Sat 25 Jul, 1:30 PM",
+      "location": "Concert Hall, QPAC, South Brisbane",
+      "link": "",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Queensland Symphony Orchestra",
+      "description": "The Queensland Symphony Orchestra performs a matinee concert dedicated to the iconic scores and soundtracks from various video games, featuring a range of popular and classic game music.",
+      "tags": [
+        "orchestra",
+        "video games",
+        "music",
+        "qpac"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-25T13:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}
