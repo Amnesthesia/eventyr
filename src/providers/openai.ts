@@ -2,6 +2,11 @@ import OpenAI from "openai";
 import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
 import { BaseProvider } from "./base.ts";
 
+// Static key groups every search call into the same cache bucket — combined
+// with base.ts fronting each system prompt with a byte-identical shared
+// prefix, this is what lets OpenAI's automatic prompt caching actually hit.
+const PROMPT_CACHE_KEY = "eventyr-events-search";
+
 function stripCitationNoise(text: string): string {
 	return text
 		.replace(/\s*\(\[[^\]]*\]\([^)]*\)\)/g, "")
@@ -22,7 +27,7 @@ export class OpenAIProvider extends BaseProvider {
 
 	constructor(
 		apiKey: string,
-		model = "gpt-5.6-mini",
+		model = "gpt-5-mini",
 		name = "openai",
 		baseURL?: string,
 	) {
@@ -55,6 +60,7 @@ export class OpenAIProvider extends BaseProvider {
 				model: this.model,
 				tools: [{ type: "web_search" }],
 				max_output_tokens: 32000,
+				prompt_cache_key: PROMPT_CACHE_KEY,
 				input: systemMsg + "\n\n" + userMsg,
 			});
 

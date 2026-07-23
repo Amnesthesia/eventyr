@@ -43,6 +43,8 @@ Return a compact JSON array (no whitespace between elements):
 
 Search deeply across venue websites, local publications, Instagram-linked event pages, Facebook events, Eventbrite, Humanitix, council pages, and arts/community spaces.
 
+This is a fully automated pipeline with no human able to read or reply to your response — return only the JSON array, never an offer, question, or list of options. If there's a more complete or exhaustive version of the answer, just do it and include it directly instead of asking permission.
+
 ${focusInstruction(focus)}`;
 	}
 

@@ -3,6 +3,7 @@ import {
 	type ReactNode,
 	useCallback,
 	useContext,
+	useEffect,
 	useMemo,
 	useState,
 } from "react";
@@ -113,7 +114,17 @@ export function EventsProvider({
 		});
 	}, []);
 
-	const todayStr = todayIso();
+	// This is a static site rebuilt weekly, so "today" at server-render
+	// (build) time almost never matches "today" at client (view) time —
+	// computing it synchronously here would filter a different set of
+	// events server vs. client and break hydration. Start with "" (an ISO
+	// date always compares >= "", so nothing is treated as past) so the
+	// first client render matches the server exactly, then correct it
+	// client-side after mount.
+	const [todayStr, setTodayStr] = useState("");
+	useEffect(() => {
+		setTodayStr(todayIso());
+	}, []);
 
 	const isEventPast = useCallback(
 		(event: Event): boolean => {

@@ -75,7 +75,11 @@ export const OUTPUT_FORMAT_RULES =
 	"or bullets, no bracketed citation links like ([site](url)):\n" +
 	"Title | Date and time | Venue/location | Cost | Organiser | URL\n" +
 	"Use bare URLs only. Only include events with confirmed dates in that range. " +
-	"Skip spectator sports, MLM events, corporate sales pitches, and online-only events.";
+	"Skip spectator sports, MLM events, corporate sales pitches, and online-only events. " +
+	"This is a fully automated pipeline with no human able to read or reply to your response — " +
+	"never end with an offer, question, or list of options (e.g. 'want me to also include X, Y, or " +
+	"Z?'). If there's a more complete or exhaustive version of the answer, just do it and include " +
+	"it directly instead of asking permission — always take the most thorough option yourself.";
 
 export function focusInstruction(focus: SearchFocus): string {
 	return focus === "music" ? MUSIC_ONLY_INSTRUCTION : EXCLUDE_MUSIC_INSTRUCTION;
@@ -125,8 +129,20 @@ export abstract class BaseProvider {
 		force: boolean,
 		curate: CurateFunction,
 	): Promise<void> {
+		const jobs: Array<{ tier: string; focus: SearchFocus }> = [];
 		for (const tier of this.tiers) {
 			for (const focus of ["general", "music"] as const) {
+				jobs.push({ tier, focus });
+			}
+		}
+
+		// Each tier×focus search is independent, so run them concurrently
+		// instead of one at a time — this is what actually cuts wall-clock
+		// time, since the per-call token cost/cache behavior is fixed either
+		// way. Errors are caught per-job so one failure doesn't take down the
+		// rest of the batch.
+		await Promise.all(
+			jobs.map(async ({ tier, focus }) => {
 				const tierKey = focus === "music" ? `${tier}-music` : tier;
 				const outPath = curatedPath(city, this.name, tierKey);
 				const label = `${this.name}/${tierKey}`;
@@ -138,7 +154,7 @@ export abstract class BaseProvider {
 						) as Record<string, unknown>;
 						if (payload.week_start === toISODate(weekStart)) {
 							console.log(`  → [${label}] Already collected — skipping`);
-							continue;
+							return;
 						}
 					} catch {
 						// proceed with collection
@@ -169,8 +185,8 @@ export abstract class BaseProvider {
 				} catch (err) {
 					console.error(`  ⚠ [${label}] ${(err as Error).message}`);
 				}
-			}
-		}
+			}),
+		);
 	}
 
 	protected buildFormatSystem(cityName: string, focus: SearchFocus = "general"): string {
@@ -340,11 +356,16 @@ ${focusInstruction(focus)}`;
 	protected buildOpenSystem(opts: ProviderOptions): string {
 		const { cityCfg, weekStart, weekEnd, focus } = opts;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
+		// Interest profile + format rules + focus instruction first: that
+		// block is byte-identical for every call (city/date included) sharing
+		// the same focus, which is what lets providers with automatic
+		// prefix-based prompt caching (OpenAI, Gemini) actually hit cache
+		// instead of re-paying full price on every tier.
 		return (
+			`${INTERESTS}\n\n${OUTPUT_FORMAT_RULES}\n\n${focusInstruction(focus)}\n\n` +
 			`You are an events researcher for ${cityCfg.name}, Australia. ` +
-			`Find in-person events for ${dateRange} matching these interests:\n${INTERESTS}\n` +
-			"Search Eventbrite, Meetup, Humanitix, venue websites, community platforms, Facebook Events, and local guides. " +
-			`${OUTPUT_FORMAT_RULES}\n\n${focusInstruction(focus)}`
+			`Find in-person events for ${dateRange} matching the interests above. ` +
+			"Search Eventbrite, Meetup, Humanitix, venue websites, community platforms, Facebook Events, and local guides."
 		);
 	}
 
@@ -368,28 +389,35 @@ ${focusInstruction(focus)}`;
 		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
 		const cityName = cityCfg.name;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
-		const focusBlock = `\n\n${focusInstruction(focus)}`;
+		// Shared prefix first — identical across all three tiers for a given
+		// focus — so automatic prefix-based prompt caching (OpenAI, Gemini)
+		// actually hits on the 2nd/3rd tier call instead of re-paying full
+		// price each time.
+		const sharedPrefix = `${OUTPUT_FORMAT_RULES}\n\n${focusInstruction(focus)}`;
 
 		if (tier === "aggregators") {
 			return (
+				`${sharedPrefix}\n\n` +
 				`You are an events researcher for ${cityName}, Australia. ` +
-				`Find in-person events listed on event platforms for ${dateRange}. ${OUTPUT_FORMAT_RULES}${focusBlock}`
+				`Find in-person events listed on event platforms for ${dateRange}.`
 			);
 		}
 		if (tier === "institutions") {
 			return (
+				`${sharedPrefix}\n\n` +
 				`You are an events researcher for ${cityName}, Australia. ` +
 				`Find in-person events at ${cityName}'s cultural institutions for ${dateRange}. ` +
-				`Search their websites, event pages, and Eventbrite listings. ${OUTPUT_FORMAT_RULES}${focusBlock}`
+				"Search their websites, event pages, and Eventbrite listings."
 			);
 		}
 		if (tier === "independents") {
 			return (
+				`${sharedPrefix}\n\n` +
 				`You are an events researcher for ${cityName}, Australia. ` +
 				`Find events at small, independent venues and community groups for ${dateRange}. ` +
 				"These niche venues rarely appear on aggregators. " +
 				"Search broadly for independent bookshops, small music venues, indie galleries, " +
-				`makerspaces, philosophy groups, language exchanges, community bars and cafes with events. ${OUTPUT_FORMAT_RULES}${focusBlock}`
+				"makerspaces, philosophy groups, language exchanges, community bars and cafes with events."
 			);
 		}
 		return this.buildOpenSystem(opts);
