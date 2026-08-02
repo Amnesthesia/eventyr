@@ -1,0 +1,147 @@
+{
+  "city_key": "goldcoast",
+  "provider": "openai",
+  "tier": "institutions",
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "events": [
+    {
+      "title": "UNLEASHED+",
+      "datetime": "1 Aug 2026, 9:00 AM",
+      "location": "HOTA, Surfers Paradise",
+      "link": "https://hota.com.au/events/unleashed-2026",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "HOTA, Home of the Arts",
+      "description": "A dynamic exhibition showcasing emerging Gold Coast artists, offering a glimpse into the local creative pulse and contemporary artistic expression.",
+      "tags": [
+        "art",
+        "exhibition",
+        "local",
+        "creative"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-01T09:00:00",
+      "datetime_end_iso": "2026-11-08T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "This Moment: Highlights from the White Rabbit Collection",
+      "datetime": "18 Apr 2026, 9:00 AM",
+      "location": "HOTA Gallery, Surfers Paradise",
+      "link": "https://hota.com.au/events/this-moment-highlights-from-the-white-rabbit-collection-of-chinese-contemporary-art",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "HOTA, Home of the Arts",
+      "description": "A curated selection of contemporary Chinese art exploring themes of rapid change, identity, and tradition, providing significant cultural and historical insight.",
+      "tags": [
+        "art",
+        "culture",
+        "exhibition",
+        "history"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-04-18T09:00:00",
+      "datetime_end_iso": "2026-10-18T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "5th National Indigenous Art Triennial: After The Rain",
+      "datetime": "4 Jul 2026, 9:00 AM",
+      "location": "HOTA Gallery, Surfers Paradise",
+      "link": "https://hota.com.au/gallery",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "HOTA, Home of the Arts / National Indigenous Art Triennial",
+      "description": "An immersive exhibition featuring Indigenous contemporary art that reflects on resilience, connection to country, and the evolution of First Nations cultural narratives.",
+      "tags": [
+        "art",
+        "indigenous",
+        "culture",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-04T09:00:00",
+      "datetime_end_iso": "2026-09-27T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Art Explorers",
+      "datetime": "Fri 7 Aug, 10:30 AM",
+      "location": "HOTA Gallery, Surfers Paradise",
+      "link": "https://hota.com.au/events/art-explorers-2026",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "HOTA, Home of the Arts",
+      "description": "A guided, interactive session designed to engage visitors in the nuances of visual art and the storytelling behind curated collections.",
+      "tags": [
+        "art",
+        "workshop",
+        "creative",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-08-07T10:30:00",
+      "datetime_end_iso": "2026-08-07T11:15:00",
+      "image": ""
+    },
+    {
+      "title": "Literature and Philosophy for Global Challenges",
+      "datetime": "Sat 8 Aug, 8:30 AM",
+      "location": "Bond University, Robina",
+      "link": "https://bond.edu.au/event/10238/literature-and-philosophy-for-global-challenges",
+      "category": "Workshop / Class",
+      "cost": "$50",
+      "source": "Bond University",
+      "description": "A practical academic workshop exploring how philosophical frameworks and literature can be used to address modern societal and global complexities.",
+      "tags": [
+        "philosophy",
+        "literature",
+        "intellectual",
+        "workshop"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-08-08T08:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "A&H Family Yoga",
+      "datetime": "Sat 8 Aug, 10:00 AM",
+      "location": "Burleigh Waters Community Centre",
+      "link": "https://experiencegoldcoast.com/events/ah-family-yoga",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Gold Coast Libraries & Active & Healthy",
+      "description": "A community-oriented, accessible movement and breathwork session aimed at families, fostering wellness in a local, non-commercial environment.",
+      "tags": [
+        "wellness",
+        "yoga",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-08-08T10:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

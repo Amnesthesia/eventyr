@@ -2,7 +2,123 @@
   "city_key": "goldcoast",
   "provider": "google",
   "tier": "independents",
-  "week_start": "2026-07-20",
-  "week_end": "2026-07-26",
-  "events": []
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "events": [
+    {
+      "title": "Wednesday Night Meetup",
+      "datetime": "Wed 5 Aug, 6:00 PM",
+      "location": "Gold Coast TechSpace, Mudgeeraba",
+      "link": "https://gctechspace.org",
+      "category": "Social / Meetup",
+      "cost": "Free",
+      "source": "Gold Coast TechSpace",
+      "description": "A community-driven gathering at a local makerspace where tech enthusiasts, coders, and hardware hackers discuss projects and share knowledge in an informal setting.",
+      "tags": [
+        "tech",
+        "maker",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-08-05T18:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Poetry Night",
+      "datetime": "Thu 6 Aug, 6:00 PM",
+      "location": "Mint Art House, Burleigh Heads",
+      "link": "https://mintarthouse.com",
+      "category": "Arts / Exhibition",
+      "cost": "Check website",
+      "source": "Mint Art House",
+      "description": "An intimate evening of spoken word and poetry performance hosted by a community-focused independent art studio.",
+      "tags": [
+        "poetry",
+        "art",
+        "performance",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-06T18:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Hand-Built Pottery – Pair of Cups",
+      "datetime": "Fri 7 Aug, 10:30 AM",
+      "location": "The Meraki Connection, Burleigh Heads",
+      "link": "https://themerakiconnection.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "The Meraki Connection",
+      "description": "A hands-on workshop focused on the fundamentals of ceramics, guiding participants through hand-building techniques to create a personalized pair of cups.",
+      "tags": [
+        "pottery",
+        "craft",
+        "workshop",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-08-07T10:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Date Night Paint and Sip – Anime Style",
+      "datetime": "Sat 8 Aug, 6:30 PM",
+      "location": "The Meraki Connection, Burleigh Heads",
+      "link": "https://themerakiconnection.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "The Meraki Connection",
+      "description": "A creative evening session exploring anime-style illustration techniques in a relaxed, social atmosphere.",
+      "tags": [
+        "art",
+        "painting",
+        "workshop",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-08-08T18:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Resin Workshop – Cheese Board",
+      "datetime": "Sun 9 Aug, 2:00 PM",
+      "location": "The Meraki Connection, Burleigh Heads",
+      "link": "https://themerakiconnection.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "The Meraki Connection",
+      "description": "A practical craft workshop where participants learn to work with resin to finish and design their own functional wooden cheese board.",
+      "tags": [
+        "craft",
+        "design",
+        "workshop",
+        "hands-on"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-08-09T14:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
 }

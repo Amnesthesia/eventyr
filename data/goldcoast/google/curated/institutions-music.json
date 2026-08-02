@@ -2,7 +2,74 @@
   "city_key": "goldcoast",
   "provider": "google",
   "tier": "institutions-music",
-  "week_start": "2026-07-20",
-  "week_end": "2026-07-26",
-  "events": []
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "events": [
+    {
+      "title": "Broadbeach Beats",
+      "datetime": "8 August 2026",
+      "location": "Broadbeach Mall",
+      "link": "https://www.goldcoast.qld.gov.au",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "City of Gold Coast",
+      "description": "An outdoor community music event held in the Broadbeach Mall, featuring local performers in an open-air public setting. Expect a relaxed atmosphere suitable for a casual stroll or sitting to enjoy the live tunes.",
+      "tags": [
+        "music",
+        "outdoor",
+        "free"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-08",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Tommy Memphis",
+      "datetime": "3 August 2026",
+      "location": "SOPO, Southport",
+      "link": "https://soposouthport.com.au",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "SOPO",
+      "description": "A live performance by Tommy Memphis at the SOPO club, known for a repertoire of classic hits and popular covers. This is a standard club-style gig perfect for those looking for an evening of live entertainment.",
+      "tags": [
+        "music",
+        "live",
+        "free"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-03",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Live Music at The Grand Hotel",
+      "datetime": "3 August 2026",
+      "location": "The Grand Hotel, Labrador",
+      "link": "https://grandhotelgoldcoast.com.au",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "The Grand Hotel",
+      "description": "A recurring live music session at The Grand Hotel in Labrador, showcasing regional artists and musicians. It provides a local pub atmosphere for enjoying live performances.",
+      "tags": [
+        "music",
+        "local",
+        "free"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-03",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
 }

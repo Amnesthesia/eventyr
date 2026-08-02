@@ -1,0 +1,193 @@
+{
+  "city_key": "goldcoast",
+  "provider": "openai",
+  "tier": "independents",
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "events": [
+    {
+      "title": "World Photography Day — Feature Exhibition by the Gold Coast Photographic Society",
+      "datetime": "3 Aug 2026, 9:00 AM",
+      "location": "Bloom Gallery, Gold Coast University Hospital, Southport",
+      "link": "https://www.goldcoast.health.qld.gov.au/about-us/events/world-photography-day-or-feature-exhibition-by-the-gold-coast-photographic-society",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Gold Coast Photographic Society / Gold Coast Health",
+      "description": "An exhibition showcasing the diverse works of the Gold Coast Photographic Society members, highlighting local artistic talent through a series of curated photographs.",
+      "tags": [
+        "photography",
+        "art",
+        "exhibition",
+        "free"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-03T09:00:00",
+      "datetime_end_iso": "2026-08-28T15:00:00",
+      "image": ""
+    },
+    {
+      "title": "SecTalks Gold Coast 3x7 — Exploring Malware Evolution Through ML",
+      "datetime": "4 Aug 2026, 6:00 PM",
+      "location": "COHORT Innovation Space, Southport",
+      "link": "https://www.meetup.com/sectalks-goldcoast/",
+      "category": "Public Lecture",
+      "cost": "Free",
+      "source": "SecTalks Gold Coast",
+      "description": "A technical talk by Terrell Jensen on the intersection of machine learning and malware evolution, designed for a community of tech-savvy individuals.",
+      "tags": [
+        "technology",
+        "ai",
+        "security",
+        "meetup"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-08-04T18:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Language Exchange at Carrara",
+      "datetime": "5 Aug 2026, 6:30 PM",
+      "location": "Venture Gold Coast, Carrara",
+      "link": "https://www.meetup.com/gold-coast-language-exchange/",
+      "category": "Social / Meetup",
+      "cost": "Free",
+      "source": "Language Exchange by Venture Gold Coast (Meetup)",
+      "description": "A casual, community-oriented meetup where locals and visitors practice different languages and foster cultural connections in a relaxed setting.",
+      "tags": [
+        "language",
+        "social",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-08-05T18:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Meet an Author: Stacey McEwan",
+      "datetime": "7 Aug 2026, 6:30 PM",
+      "location": "Robina Library, Robina",
+      "link": "https://www.eventbrite.com.au/e/meet-an-author-stacey-mcewan-tickets-1987366979133",
+      "category": "Public Lecture",
+      "cost": "Free",
+      "source": "Gold Coast Libraries",
+      "description": "A local author talk featuring Stacey McEwan, providing insight into the creative process, storytelling, and her literary works.",
+      "tags": [
+        "literature",
+        "writing",
+        "author",
+        "talk"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-07T18:30:00",
+      "datetime_end_iso": "2026-08-07T19:30:00",
+      "image": ""
+    },
+    {
+      "title": "Screenwriting Workshop with Mick Thyer",
+      "datetime": "8 Aug 2026, 10:00 AM",
+      "location": "Elanora Library, Elanora",
+      "link": "https://www.eventbrite.com.au/o/65102065633",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Gold Coast Libraries",
+      "description": "A hands-on workshop led by Mick Thyer that introduces the fundamentals of screenwriting and narrative structure for aspiring writers.",
+      "tags": [
+        "writing",
+        "film",
+        "workshop",
+        "creative"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-08-08T10:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Social Fun: let’s play Board Games at Broadbeach Library!!",
+      "datetime": "8 Aug 2026, 12:30 PM",
+      "location": "Broadbeach Library, Broadbeach",
+      "link": "https://www.meetup.com/gold-coast-active-and-social-meetup-group/",
+      "category": "Social / Meetup",
+      "cost": "$2",
+      "source": "Gold Coast Active and Social Meetup Group",
+      "description": "An open social meetup for tabletop gaming enthusiasts to gather, play, and connect in a low-pressure library environment.",
+      "tags": [
+        "games",
+        "social",
+        "community",
+        "meetup"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-08-08T12:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Cauldron Distillery Gin Blending Class",
+      "datetime": "8 Aug 2026, 1:00 PM",
+      "location": "Cauldron Distillery, Tamborine Mountain",
+      "link": "https://www.cauldrondistillery.com.au/pages/experiences",
+      "category": "Workshop / Class",
+      "cost": "$85",
+      "source": "Cauldron Distillery",
+      "description": "A hands-on sensory workshop where participants learn the science of botanical distillation and blend their own unique bottle of gin.",
+      "tags": [
+        "craft",
+        "workshop",
+        "food",
+        "hands-on"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-08-08T13:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "The Oceanway — Part 1! Rainbow Bay SLSC 5km loop (walk)",
+      "datetime": "9 Aug 2026, 2:00 PM",
+      "location": "Rainbow Bay Surf Life Saving Club, Coolangatta",
+      "link": "https://www.meetup.com/gold-coast-active-and-social-meetup-group/",
+      "category": "Social / Meetup",
+      "cost": "$2",
+      "source": "Gold Coast Active and Social Meetup Group",
+      "description": "A group walking excursion along the coastal path, designed for social interaction and appreciation of the local environment.",
+      "tags": [
+        "nature",
+        "walking",
+        "social",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-08-09T14:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}
