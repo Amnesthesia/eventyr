@@ -1,0 +1,55 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "openai",
+  "tier": "independents",
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "events": [
+    {
+      "title": "Film Screening – Blue Moon (matinee)",
+      "datetime": "8 August 2026, 3:00 PM",
+      "location": "Maleny Community Centre, 23 Maple Street, Maleny QLD",
+      "link": "https://malenyinfocentre.edublogs.org/coming-events/",
+      "category": "Concert / Music",
+      "cost": "Tickets TBA",
+      "source": "Maleny Community Centre / Maleny Visitor Information Centre",
+      "description": "An afternoon screening of the film Blue Moon held at the historic and community-focused Maleny Community Centre. This event offers a chance to experience independent cinema in an intimate local setting.",
+      "tags": [
+        "film",
+        "cinema",
+        "community",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-08T15:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Film Screening – Blue Moon (evening)",
+      "datetime": "8 August 2026, 7:00 PM",
+      "location": "Maleny Community Centre, 23 Maple Street, Maleny QLD",
+      "link": "https://malenyinfocentre.edublogs.org/coming-events/",
+      "category": "Concert / Music",
+      "cost": "Tickets TBA",
+      "source": "Maleny Community Centre / Maleny Visitor Information Centre",
+      "description": "An evening screening of the film Blue Moon at the Maleny Community Centre, providing an atmospheric viewing experience in a local, historic venue.",
+      "tags": [
+        "film",
+        "cinema",
+        "community",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-08T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

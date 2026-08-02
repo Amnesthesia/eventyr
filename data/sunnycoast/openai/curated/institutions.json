@@ -1,0 +1,78 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "openai",
+  "tier": "institutions",
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "events": [
+    {
+      "title": "LORE and LAND — First Nations artists in the Art Collection",
+      "datetime": "3 Jul 2026, 10:00 AM",
+      "location": "Caloundra Regional Gallery, Caloundra",
+      "link": "https://prod-gallery.sunshinecoast.qld.gov.au/exhibitions/lore-and-land-first-nations-artists-in-the-art-collection",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Caloundra Regional Gallery / Sunshine Coast Council",
+      "description": "An exhibition showcasing First Nations artists from the gallery collection, exploring themes of lore and land through visual arts.",
+      "tags": [
+        "art",
+        "culture",
+        "indigenous",
+        "free"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-07-03T10:00:00",
+      "datetime_end_iso": "2026-08-16T14:00:00",
+      "image": ""
+    },
+    {
+      "title": "SILENT FILM – DR JECKYLL & MR HYDE (1920)",
+      "datetime": "8 Aug 2026, 12:00 PM",
+      "location": "The Majestic Theatre, Pomona",
+      "link": "https://themajestictheatre.com.au/events/silent-film-dr-jeckyll-mr-hyde/",
+      "category": "Concert / Music",
+      "cost": "$15.00",
+      "source": "The Majestic Theatre / Pomona Arts Inc",
+      "description": "A screening of the 1920 silent classic Dr. Jekyll & Mr. Hyde at a historic theatre, offering a unique atmospheric experience of early cinema.",
+      "tags": [
+        "film",
+        "history",
+        "art",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-08T12:00:00",
+      "datetime_end_iso": "2026-08-08T14:00:00",
+      "image": ""
+    },
+    {
+      "title": "Fauna Monitoring at Mary (Cairncross Conversations)",
+      "datetime": "7 Aug 2026, 3:30 PM",
+      "location": "Mary Cairncross Scenic Reserve, Maleny",
+      "link": "https://www.eventbrite.com.au/e/fauna-monitoring-at-mary-tickets-1993890352719",
+      "category": "Public Lecture",
+      "cost": "Free",
+      "source": "Sunshine Coast Council / Mary Cairncross Scenic Reserve",
+      "description": "An intellectually engaging talk about wildlife research and fauna monitoring techniques within the local rainforest reserve, aimed at curious community members.",
+      "tags": [
+        "science",
+        "nature",
+        "ecology",
+        "free"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-08-07T15:30:00",
+      "datetime_end_iso": "2026-08-07T17:00:00",
+      "image": ""
+    }
+  ]
+}

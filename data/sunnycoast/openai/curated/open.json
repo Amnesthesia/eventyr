@@ -1,0 +1,78 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "openai",
+  "tier": "open",
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "events": [
+    {
+      "title": "The In Progress Table — conversation salon (TTT Club)",
+      "datetime": "Thu 6 Aug, 7:00 PM",
+      "location": "Cafe 63, Sunshine Plaza, Maroochydore",
+      "link": "https://events.humanitix.com/the-in-progress-table6thaug",
+      "category": "Social / Meetup",
+      "cost": "$10+",
+      "source": "TTT Club (Trails, Tables & Talks Club)",
+      "description": "An intimate, facilitated conversation salon focusing on ongoing projects and shared ideas, designed to connect curious locals for meaningful dialogue.",
+      "tags": [
+        "discussion",
+        "salon",
+        "social",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-06T19:00:00",
+      "datetime_end_iso": "2026-08-06T20:00:00",
+      "image": ""
+    },
+    {
+      "title": "No Phone Analog Group — Maroochydore meetup",
+      "datetime": "Sat 8 Aug, 4:00 PM",
+      "location": "Beach Bar Cotton Tree, Maroochydore",
+      "link": "https://www.meetup.com/en-au/no-phone-sunshine-coast-social-group/events/315691134/",
+      "category": "Social / Meetup",
+      "cost": "Free",
+      "source": "No Phone Analog Sunshine Coast Social Group (Meetup)",
+      "description": "A social meetup encouraging face-to-face interaction and intentional conversation by keeping devices away, fostering genuine connection between local attendees.",
+      "tags": [
+        "social",
+        "community",
+        "conversation",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-08-08T16:00:00",
+      "datetime_end_iso": "2026-08-08T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Japan Festival Sunshine Coast",
+      "datetime": "Sat 8 Aug, 11:00 AM",
+      "location": "Kawana Waters State College, Bokarina",
+      "link": "https://www.japanfestival.com.au/",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Japan Festival Sunshine Coast",
+      "description": "A community celebration of Japanese culture featuring traditional performances, artisanal crafts, and cultural insights, perfect for exploring international arts and history.",
+      "tags": [
+        "culture",
+        "arts",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-08T11:00:00",
+      "datetime_end_iso": "2026-08-08T17:00:00",
+      "image": ""
+    }
+  ]
+}

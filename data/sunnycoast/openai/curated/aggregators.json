@@ -1,0 +1,32 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "openai",
+  "tier": "aggregators",
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "events": [
+    {
+      "title": "Blue Moon — Film Screening (Maleny Film Society)",
+      "datetime": "Sat 8 Aug, 3:00 PM & 7:00 PM",
+      "location": "Maleny Community Centre, Maleny",
+      "link": "https://malenyfilmsociety.au/maleny-film-society-home-page",
+      "category": "Concert / Music",
+      "cost": "$25 Adults / $20 Concession",
+      "source": "Maleny Film Society",
+      "description": "An intimate film screening hosted by the local community film society, providing a space for cinema appreciation and post-film discussion among locals.",
+      "tags": [
+        "film",
+        "cinema",
+        "community",
+        "art"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-08T15:00:00",
+      "datetime_end_iso": "2026-08-08T21:00:00",
+      "image": ""
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "google",
+  "tier": "institutions-music",
+  "week_start": "2026-08-03",
+  "week_end": "2026-08-09",
+  "events": [
+    {
+      "title": "Mamma Mia!",
+      "datetime": "7–9 August 2026",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Mad About Theatre",
+      "description": "A local community production of the popular musical featuring the hits of ABBA, presented by Mad About Theatre.",
+      "tags": [
+        "musical",
+        "theatre",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-07",
+      "datetime_end_iso": "2026-08-09",
+      "image": ""
+    },
+    {
+      "title": "PWC Lost EP Album Launch",
+      "datetime": "7 August 2026",
+      "location": "The Presynct, Nambour",
+      "link": "https://www.thepresynct.com",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "The Presynct",
+      "description": "Live performance by local musicians celebrating the launch of their new EP at an intimate venue.",
+      "tags": [
+        "live music",
+        "local",
+        "indie"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-07",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "The Radiators",
+      "datetime": "7 August 2026",
+      "location": "Kings Beach Tavern, Caloundra",
+      "link": "https://kingsbeachtavern.com.au",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Kings Beach Tavern",
+      "description": "A live concert featuring the long-running Australian rock band, The Radiators.",
+      "tags": [
+        "rock",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-07",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Candlelight: The Best of Hans Zimmer",
+      "datetime": "7 August 2026",
+      "location": "Flaxton Gardens",
+      "link": "https://flaxtongardens.com.au",
+      "category": "Concert / Music",
+      "cost": "From $55.50",
+      "source": "Fever",
+      "description": "A classical music performance featuring the works of Hans Zimmer, played by candlelight in a scenic venue.",
+      "tags": [
+        "classical",
+        "music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-07",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}
