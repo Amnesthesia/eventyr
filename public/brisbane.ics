@@ -7,1554 +7,1367 @@ X-WR-CALNAME:Brisbane — do things
 X-WR-TIMEZONE:UTC
 BEGIN:VEVENT
 UID:brisbane-0@dothings
-DTSTART;TZID=UTC:20260804T183000
-DTEND;TZID=UTC:20260804T203000
-SUMMARY:HSBNE Night Tour
-DESCRIPTION:A guided tour of Brisbane's premier makerspace\, HSBNE\, showin
- g off their industrial workshops\, electronics labs\, and creative communi
- ty tools. Perfect for those interested in joining a maker culture.
-LOCATION:1/14 Spine St\, Sumner
-URL:https://hsbne.org
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-1@dothings
-DTSTART;TZID=UTC:20260808T090000
-DTEND;TZID=UTC:20260808T110000
-SUMMARY:HSBNE Social Saturdays
-DESCRIPTION:A weekly open-access day at the HSBNE makerspace where members 
- and visitors gather to work on personal projects\, share knowledge\, and s
- ocialise. An ideal environment for hands-on collaboration.
-LOCATION:1/14 Spine St\, Sumner
-URL:https://hsbne.org
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-2@dothings
-DTSTART;TZID=UTC:20260803T183000
-DTEND;TZID=UTC:20260803T203000
-SUMMARY:BrisScience: Every breath\, every bite - the hidden journey of micr
- oplastics
-DESCRIPTION:A scientific exploration of the environmental and health impact
- s of microplastics\, featuring expert researchers from UQ. The session inc
- ludes a presentation followed by an interactive Q&A session with a curious
- \, science-minded audience.
-LOCATION:The Edge\, State Library of Queensland
-URL:https://briscience.org.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-3@dothings
-DTSTART;TZID=UTC:20260806T170000
-DTEND;TZID=UTC:20260806T190000
-SUMMARY:The Edge — Hack the evening
-DESCRIPTION:A community-driven makerspace meetup where enthusiasts collabor
- ate on projects\, share skills\, and explore technology together.
-LOCATION:The Edge\, South Brisbane
-URL:https://www.slq.qld.gov.au/autumn
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-4@dothings
-DTSTART;TZID=UTC:20260808T110000
-DTEND;TZID=UTC:20260808T130000
-SUMMARY:Geek Books Club @ MK Cafe
-DESCRIPTION:A casual discussion group centered on science fiction and techn
- ology themes\, fostering conversation among curious attendees.
-LOCATION:MK Cafe\, New Farm
-URL:https://www.meetup.com/en-au/brisbane-social-geeks/events/315658096/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-5@dothings
-DTSTART;TZID=UTC:20260809T090000
-DTEND;TZID=UTC:20260809T110000
-SUMMARY:Brisbane Stoics — August 2026 Meetup
-DESCRIPTION:A philosophy discussion group exploring Stoic ethics and practi
- cal application through open dialogue and reading analysis.
+DTSTART;TZID=UTC:20260810T140000
+DTEND;TZID=UTC:20260810T160000
+SUMMARY:Brisbane Stoics August 2026 Meetup
+DESCRIPTION:A recurring discussion group where attendees explore Stoic phil
+ osophy and its practical application to modern life in a relaxed\, intelle
+ ctual setting.
 LOCATION:New Farm Library\, New Farm
-URL:https://www.meetup.com/philosophers-school-brisbane/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-6@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:A.D. Heaven\, Plainer Headland (AU) & Noir et Blanc
-DESCRIPTION:A triple bill featuring local experimental and indie acts at th
- e Season Three arts space. A great opportunity to see smaller-scale\, crea
- tive music in a non-traditional venue.
-LOCATION:Season Three Space\, Brisbane
-URL:https://www.songkick.com/metro-areas/26778-australia-brisbane
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-7@dothings
-DTSTART;TZID=UTC:20260804T170000
-DTEND;TZID=UTC:20260804T190000
-SUMMARY:Sonder Brisbane Language Exchange Meetup
-DESCRIPTION:A casual\, recurring meetup for language practice and cultural 
- exchange where locals and international visitors gather to converse in a r
- elaxed environment.
-LOCATION:The Burrow\, West End
-URL:https://www.theburrowwestend.com.au/events/sonder-brisbane---language-e
- xchange-meetup-19
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-8@dothings
-DTSTART;TZID=UTC:20260809T160000
-DTEND;TZID=UTC:20260809T180000
-SUMMARY:Kate Foster: A River I Must Be Book Launch
-DESCRIPTION:An intimate evening with author Kate Foster discussing her late
- st work\, her creative process\, and the themes behind the book. Includes 
- audience Q&A and a chance to meet fellow literature enthusiasts.
-LOCATION:4/77 Oxford Street\, Bulimba
-URL:https://riverbendbooks.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-9@dothings
-DTSTART;TZID=UTC:20260807T193000
-DTEND;TZID=UTC:20260807T213000
-SUMMARY:Cameraholics Camera Collectors August Meetup
-DESCRIPTION:A niche group of photography enthusiasts who gather to discuss 
- and display vintage and modern camera gear. Highly focused on community an
- d deep technical knowledge.
-LOCATION:Albion Peace Centre\, Windsor
-URL:https://www.meetup.com/cameraholics-camera-collectors-brisbane/events/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-10@dothings
-DTSTART;TZID=UTC:20260809T143000
-DTEND;TZID=UTC:20260809T163000
-SUMMARY:A Documentary Approach to Street Photography with Antonio Botic
-DESCRIPTION:A practical\, hands-on workshop led by a professional photograp
- her focusing on the documentary style of street photography in an urban ou
- tdoor setting.
-LOCATION:City Botanic Gardens
-URL:https://www.eventbrite.com.au/e/a-documentary-approach-to-street-photog
- raphy-with-antonio-botic-tickets-168122302285
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-11@dothings
-DTSTART;TZID=UTC:20260803T193000
-DTEND;TZID=UTC:20260803T213000
-SUMMARY:Good Tunes Session (folk session)
-DESCRIPTION:An open and inclusive folk music session where musicians and mu
- sic lovers gather for an informal\, community-focused evening of acoustic 
- performance.
-LOCATION:The Burrow\, 52 Russell St\, West End QLD 4101
-URL:https://events.humanitix.com/good-tunes-session-3-august-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-12@dothings
-DTSTART;TZID=UTC:20260809T103000
-DTEND;TZID=UTC:20260809T123000
-SUMMARY:Interpreting archives: stories on the page\, stories between the li
- nes
-DESCRIPTION:A session exploring how to read historical archives beyond the 
- surface\, focusing on methodology and uncovering hidden narratives. Ideal 
- for history enthusiasts interested in research and primary source analysis
- .
-LOCATION:Anzac Square Memorial Galleries\, 285 Ann Street\, Brisbane QLD
-URL:https://www.slq.qld.gov.au/whats-on/interpreting-archives-stories-page-
- stories-between-lines
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-13@dothings
-DTSTART;TZID=UTC:20250927T100000
-DTEND;TZID=UTC:20250927T120000
-SUMMARY:Archie Moore: kith and kin
-DESCRIPTION:An immersive\, intellectually provocative installation by Archi
- e Moore that maps personal and ancestral history\, sparking critical refle
- ction on identity.
-LOCATION:Gallery of Modern Art (GOMA)\, South Brisbane
-URL:https://www.qagoma.qld.gov.au/whats-on/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-14@dothings
-DTSTART;TZID=UTC:20260317T000000
-DTEND;TZID=UTC:20260317T020000
-SUMMARY:Queer Readings of the QUT Art Collection
-DESCRIPTION:A critical academic and artistic re-examination of the QUT art 
- collection\, focusing on queer theory and representation.
-LOCATION:QUT Art Museum\, Kelvin Grove/Brisbane
-URL:https://www.artmuseum.qut.edu.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-15@dothings
-DTSTART;TZID=UTC:20260805T120000
-DTEND;TZID=UTC:20260805T140000
-SUMMARY:The Edge — Open Lab
-DESCRIPTION:Drop-in access to creative technology tools\, including electro
- nics and maker equipment\, within a collaborative library environment.
-LOCATION:The Edge\, South Brisbane
-URL:https://www.slq.qld.gov.au/autumn
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-16@dothings
-DTSTART;TZID=UTC:20260808T120000
-DTEND;TZID=UTC:20260808T140000
-SUMMARY:The Edge — Open Lab
-DESCRIPTION:Weekend drop-in access to The Edge's creative maker labs\, prov
- iding resources for hands-on projects and experimentation.
-LOCATION:The Edge\, South Brisbane
-URL:https://www.slq.qld.gov.au/autumn
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-17@dothings
-DTSTART;VALUE=DATE:20260803
-DTEND;VALUE=DATE:20260803
-SUMMARY:Homes of the Future: Reimagining the Great Australian Dream
-DESCRIPTION:A discussion on urban design\, architecture\, and the future of
-  housing\, exploring how emerging technology and changing societal needs a
- re shifting the Australian residential landscape.
-LOCATION:Port Office Hotel\, Brisbane City
 URL:https://brisbanespots.com/events/this-month
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-18@dothings
-DTSTART;TZID=UTC:20260805T190000
-DTEND;TZID=UTC:20260805T210000
-SUMMARY:Living Room Sessions (Kristen Grace\, MLA\, Apocalypse\, Nomads)
-DESCRIPTION:An intimate showcase of emerging local talent featuring perform
- ances by Kristen Grace\, MLA\, Apocalypse\, and Nomads.
-LOCATION:Black Bear Lodge\, Fortitude Valley
-URL:https://musick.com.au/gig/living-room-sessions-at-black-bear-lodge-2026
- -08-05/
+UID:brisbane-1@dothings
+DTSTART;TZID=UTC:20260814T180000
+DTEND;TZID=UTC:20260814T200000
+SUMMARY:John Cassavetes Retrospective – 35mm Screening
+DESCRIPTION:A curated screening of John Cassavetes' influential independent
+  cinema presented in original 35mm format\, followed by informal conversat
+ ion among film enthusiasts.
+LOCATION:Cinema A\, GOMA — Gallery of Modern Art
+URL:https://www.qagoma.qld.gov.au/cinema/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-19@dothings
-DTSTART;TZID=UTC:20260805T000000
-DTEND;TZID=UTC:20260805T020000
-SUMMARY:ILBIJERRI Theatre Company's Gunawarra Re-Creation (Clancestry\, mus
- ic/story performance)
-DESCRIPTION:A blend of music\, storytelling\, and theatre by ILBIJERRI Thea
- tre Company exploring cultural heritage.
-LOCATION:QPAC\, South Bank
-URL:https://www.clancestry.com.au/
+UID:brisbane-2@dothings
+DTSTART;TZID=UTC:20260814T200000
+DTEND;TZID=UTC:20260814T220000
+SUMMARY:Brisbane Unplugged Gigs (The BUg)
+DESCRIPTION:A long-running acoustic and folk open-mic and showcase night th
+ at fosters a tight-knit community of local songwriters and musicians.
+LOCATION:Tilly Street
+URL:https://www.bandsintown.com/c/brisbane-australia/all-dates/genre/jazz
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-20@dothings
-DTSTART;VALUE=DATE:20260730
-DTEND;VALUE=DATE:20260730
-SUMMARY:Clancestry Festival
-DESCRIPTION:A multidisciplinary celebration of First Nations arts\, featuri
- ng contemporary performances\, installations\, and cultural exchanges. The
-  festival offers an immersive look at Indigenous history and storytelling 
- within an accessible public space.
-LOCATION:QPAC\, South Bank
-URL:https://www.clancestry.com.au/
+UID:brisbane-3@dothings
+DTSTART;TZID=UTC:20260814T160000
+DTEND;TZID=UTC:20260814T180000
+SUMMARY:Permaculture Workshop: Life hacks for saving money and living well
+DESCRIPTION:A hands-on session at a community-managed city farm focused on 
+ practical\, sustainable living techniques. You will learn actionable syste
+ ms for self-sufficiency that emphasize permaculture design principles.
+LOCATION:Northey Street City Farm\, Windsor
+URL:https://www.brisbane.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-21@dothings
-DTSTART;VALUE=DATE:20260805
-DTEND;VALUE=DATE:20260805
-SUMMARY:Gunawarra Re-Creation
-DESCRIPTION:An experimental theatre piece by ILBIJERRI Theatre Company expl
- oring identity and connection to land through performance. Expect highly a
- rtistic\, narrative-driven storytelling that challenges traditional perfor
- mance structures.
-LOCATION:QPAC\, South Bank
-URL:https://www.qpac.com.au/clancestry
+UID:brisbane-4@dothings
+DTSTART;TZID=UTC:20260816T170000
+DTEND;TZID=UTC:20260816T190000
+SUMMARY:Brisbane BitDevs — Bitcoin Node (technical meetup)
+DESCRIPTION:A technical discussion group focused on the underlying systems\
+ , protocols\, and development of Bitcoin. Attendees share knowledge and en
+ gage in deep-dive conversations about blockchain technology and peer-to-pe
+ er systems.
+LOCATION:Brisbane Square Library\, Brisbane City
+URL:https://www.meetup.com/en-au/bitcoin_brisbane/events/315830351/?eventOr
+ igin=group_upcoming_events
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-22@dothings
-DTSTART;TZID=UTC:20260805T110000
-DTEND;TZID=UTC:20260805T130000
-SUMMARY:Milani Gallery Current Exhibition Viewing
-DESCRIPTION:Self-guided viewing of contemporary works at one of Brisbane's 
- premier independent galleries known for featuring challenging and experime
- ntal artists.
-LOCATION:Milani Gallery\, West End
-URL:https://milanigallery.com.au/exhibitions/~/onsite/
+UID:brisbane-5@dothings
+DTSTART;TZID=UTC:20260812T183000
+DTEND;TZID=UTC:20260812T203000
+SUMMARY:artisan makers club | Show your work
+DESCRIPTION:A monthly gathering for makers\, crafters\, and designers to sh
+ are their current projects\, get feedback\, and connect with the local cre
+ ative community.
+LOCATION:Vacant Assembly\, West End
+URL:https://www.eventbrite.com.au/e/artisan-makers-club-show-your-work-tick
+ ets-1992970323888
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-23@dothings
-DTSTART;TZID=UTC:20260805T100000
-DTEND;TZID=UTC:20260805T120000
-SUMMARY:Bush Tucker Tour
-DESCRIPTION:An educational walk exploring the traditional uses and ecologic
- al significance of Australian native plants and their role in Indigenous d
- iets.
-LOCATION:Roma Street Parkland Hub
-URL:https://oztix.com.au
+UID:brisbane-6@dothings
+DTSTART;TZID=UTC:20260815T143000
+DTEND;TZID=UTC:20260815T163000
+SUMMARY:Darryl Dymock — Done Working: Finding Contentment in Retirement (
+ book launch)
+DESCRIPTION:An author talk and book launch event exploring the psychology a
+ nd philosophy of transitioning into retirement and finding purpose later i
+ n life.
+LOCATION:Avid Reader Bookshop\, West End
+URL:https://avidreader.com.au/pages/14865-DarrylDymock-DoneWorkingFindingCo
+ ntentmentinRetirement
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-24@dothings
-DTSTART;TZID=UTC:20260806T110000
-DTEND;TZID=UTC:20260806T130000
-SUMMARY:Through Mununjali eyes: photojournalist Wayne Coolwell exhibition T
- our
-DESCRIPTION:An exhibition tour featuring the powerful photographic work of 
- Wayne Coolwell\, exploring Indigenous perspectives and history. Offers a d
- eep dive into visual storytelling and cultural history.
-LOCATION:kuril dhagun\, State Library of Queensland
-URL:https://www.slq.qld.gov.au
+UID:brisbane-7@dothings
+DTSTART;TZID=UTC:20260811T170000
+DTEND;TZID=UTC:20260811T190000
+SUMMARY:Sonder Language Exchange
+DESCRIPTION:A casual\, recurring social meetup for locals and expats to pra
+ ctice languages and meet people from diverse cultural backgrounds.
+LOCATION:The Burrow\, West End
+URL:https://www.meetup.com/pt-BR/brisbane-sonder-language-exchange-meetup/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-25@dothings
-DTSTART;TZID=UTC:20260807T183000
-DTEND;TZID=UTC:20260807T203000
-SUMMARY:Portrait of an artist: Helga Groves
-DESCRIPTION:An artist talk featuring Helga Groves\, offering insights into 
- her creative process\, practice\, and the conceptual underpinnings of her 
- work. Ideal for those interested in contemporary visual art and the life o
- f a working artist.
-LOCATION:slq Auditorium 1\, level 2\, State Library of Queensland
-URL:https://www.slq.qld.gov.au
+UID:brisbane-8@dothings
+DTSTART;TZID=UTC:20260816T100000
+DTEND;TZID=UTC:20260816T120000
+SUMMARY:Expressive Nature Drawing with Sandra Pearce
+DESCRIPTION:An outdoor workshop focusing on observational drawing technique
+ s\, guided by artist Sandra Pearce in the serene environment of Karawatha 
+ Forest.
+LOCATION:Karawatha Forest Park\, Karawatha
+URL:https://www.brisbane.qld.gov.au/events/expressive-nature-drawing-with-s
+ andra-pearce/195775166
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-26@dothings
-DTSTART;TZID=UTC:20260808T130000
-DTEND;TZID=UTC:20260808T150000
-SUMMARY:Creative digital memorials
-DESCRIPTION:A hands-on workshop exploring how to design and create digital 
- tributes. Participants engage with modern digital tools in a collaborative
- \, maker-space environment.
-LOCATION:The Edge\, State Library of Queensland
-URL:https://www.slq.qld.gov.au
+UID:brisbane-9@dothings
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260810
+SUMMARY:Archie Moore: kith and kin (Exhibition)
+DESCRIPTION:An immersive and deeply researched installation exploring Abori
+ ginal genealogy and history\, providing a profound space for contemplation
+  on identity and culture.
+LOCATION:GOMA — Gallery of Modern Art
+URL:https://www.qagoma.qld.gov.au/whats-on/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-27@dothings
-DTSTART;TZID=UTC:20260809T130000
-DTEND;TZID=UTC:20260809T150000
-SUMMARY:Volunteer Guided Tour Art in Focus: Stories\, Symbols & Perspective
- s
-DESCRIPTION:A curated tour of GOMA focusing on the narrative and symbolic e
- lements of specific artworks. Encourages intellectual dialogue and communa
- l appreciation of contemporary artistic practices.
-LOCATION:Gallery of Modern Art
-URL:https://www.qagoma.qld.gov.au
+UID:brisbane-10@dothings
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260810
+SUMMARY:The God of Small Things: Faith and Popular Culture (Exhibition)
+DESCRIPTION:An exhibition exploring the intersection of spiritual belief sy
+ stems and contemporary media\, inviting viewers to reflect on cultural nar
+ ratives and sociological influences.
+LOCATION:GOMA — Gallery of Modern Art
+URL:https://www.qagoma.qld.gov.au/whats-on/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-28@dothings
-DTSTART;TZID=UTC:20260804T180000
-DTEND;TZID=UTC:20260804T200000
-SUMMARY:Asian Background Social: Lounge Asia Meetup (Easy English)
-DESCRIPTION:A relaxed social meetup for individuals from Asian backgrounds 
- to practice conversational English in a supportive and friendly environmen
- t. It is a recurring community event focused on connection.
-LOCATION:Brisbane (Central)
-URL:https://www.meetup.com/asian-background-social-lounge-asia-meetup-easy-
- english-brisbane/events/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-29@dothings
-DTSTART;VALUE=DATE:20260805
-DTEND;VALUE=DATE:20260805
-SUMMARY:Celia Gullett — Spirit into Matter (exhibition)
-DESCRIPTION:An exhibition by Celia Gullett focusing on the interplay betwee
- n abstract concepts and physical materials. It offers a reflective experie
- nce for those interested in the intersections of philosophy and artistic p
- ractice.
-LOCATION:Jan Murphy Gallery\, 486 Brunswick St\, Fortitude Valley QLD
-URL:https://www.janmurphygallery.com.au/calendar/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-30@dothings
-DTSTART;VALUE=DATE:20260730
-DTEND;VALUE=DATE:20260730
-SUMMARY:New Farm Queer Film Festival
-DESCRIPTION:A curated selection of queer cinema featuring independent\, exp
- erimental\, and thought-provoking films. The historic venue hosts a commun
- ity of cinephiles interested in cultural storytelling.
-LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm QLD
-URL:https://ticketing.oz.veezi.com/sessions/?siteToken=o0ezd1t5gyg3ocp7ey4b
- x22jpu
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-31@dothings
-DTSTART;TZID=UTC:20260803T190000
-DTEND;TZID=UTC:20260803T210000
-SUMMARY:From Winter’s Stillness — Australian Chamber Orchestra (with Tr
- io Mediæval & Arve Henriksen)
-DESCRIPTION:A cross-genre collaboration featuring the ACO\, vocal ensemble 
- Trio Mediæval\, and Norwegian trumpeter Arve Henriksen exploring ethereal
- \, atmospheric soundscapes.
-LOCATION:QPAC Concert Hall\, South Bank
-URL:https://www.aco.com.au/whats-on/2026/from-winters-stillness
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-32@dothings
-DTSTART;TZID=UTC:20260307T100000
-DTEND;TZID=UTC:20260307T120000
-SUMMARY:City Before Our Eyes
-DESCRIPTION:A curated examination of urban environments and how they shape 
- human interaction and collective identity.
-LOCATION:Gallery of Modern Art (GOMA)\, South Brisbane
-URL:https://www.qagoma.qld.gov.au/whats-on/exhibitions/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-33@dothings
-DTSTART;TZID=UTC:20260214T100000
-DTEND;TZID=UTC:20260214T120000
-SUMMARY:Towards a Collapsing World: German Expressionism
-DESCRIPTION:A historical deep dive into the German Expressionist movement\,
-  capturing the artistic response to early 20th-century geopolitical upheav
- al.
-LOCATION:Queensland Art Gallery (QAG)\, South Brisbane
-URL:https://www.qagoma.qld.gov.au/whats-on/exhibitions/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-34@dothings
-DTSTART;TZID=UTC:20260725T100000
-DTEND;TZID=UTC:20260725T120000
-SUMMARY:The Red Dress
-DESCRIPTION:A global collaborative art project involving intricate embroide
- ry and stitching\, celebrating collective storytelling and craft.
-LOCATION:Museum of Brisbane\, City Hall
-URL:https://www.museumofbrisbane.com.au/whats-on/the-red-dress/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-35@dothings
-DTSTART;TZID=UTC:20260803T100000
-DTEND;TZID=UTC:20260803T120000
-SUMMARY:The Red Dress
-DESCRIPTION:An exhibition showcasing a global collaborative embroidery proj
- ect\, emphasizing narrative-driven textile art and collective creation.
-LOCATION:Museum of Brisbane\, City Hall
-URL:https://www.viabrisbane.com/events/the-red-dress-museum-of-brisbane-bri
- sbane-city/2026-08-03
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-36@dothings
-DTSTART;TZID=UTC:20260803T000000
-DTEND;TZID=UTC:20260803T020000
-SUMMARY:Laufey
-DESCRIPTION:Critically acclaimed modern jazz artist Laufey performs live in
-  Brisbane\, blending contemporary pop sensibilities with traditional jazz 
- influences.
-LOCATION:Brisbane Entertainment Centre\, Boondall
-URL:https://www.brisent.com.au/events/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-37@dothings
-DTSTART;TZID=UTC:20260806T194500
-DTEND;TZID=UTC:20260806T214500
-SUMMARY:Massive Attack
-DESCRIPTION:The legendary trip-hop pioneers bring their highly anticipated 
- atmospheric and multi-sensory live show to Brisbane.
-LOCATION:Brisbane Entertainment Centre\, Boondall
-URL:https://www.brisent.com.au/events/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-38@dothings
-DTSTART;TZID=UTC:20260806T000000
-DTEND;TZID=UTC:20260806T020000
-SUMMARY:Troy Cassar-Daley (Clancestry)
-DESCRIPTION:Acclaimed singer-songwriter Troy Cassar-Daley performs as part 
- of the Clancestry festival celebrating First Nations culture.
-LOCATION:QPAC\, South Bank
-URL:https://www.clancestry.com.au/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-39@dothings
-DTSTART;TZID=UTC:20260807T000000
-DTEND;TZID=UTC:20260807T020000
-SUMMARY:Barragga Yangga (Clancestry)
-DESCRIPTION:An immersive music and cultural experience presented under the 
- Clancestry banner at QPAC.
-LOCATION:QPAC\, South Bank
-URL:https://www.clancestry.com.au/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-40@dothings
-DTSTART;TZID=UTC:20260808T000000
-DTEND;TZID=UTC:20260808T020000
-SUMMARY:Yothu Yindi – 40th Anniversary Closing Performance (Clancestry)
-DESCRIPTION:The legendary Yothu Yindi performs their 40th-anniversary closi
- ng show at QPAC\, celebrating four decades of music and activism.
-LOCATION:QPAC\, South Bank
-URL:https://www.qpac.com.au/clancestry
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-41@dothings
-DTSTART;VALUE=DATE:20260806
-DTEND;VALUE=DATE:20260806
-SUMMARY:Plini and Delta Sleep
-DESCRIPTION:An evening of progressive rock and intricate guitar-driven melo
- dies featuring virtuosic performer Plini and math-rock band Delta Sleep. I
- deal for fans of complex rhythms and instrumental songwriting.
-LOCATION:Princess Theatre\, Woolloongabba
-URL:https://www.theprincesstheatre.com.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-42@dothings
-DTSTART;VALUE=DATE:20260809
-DTEND;VALUE=DATE:20260809
-SUMMARY:Grace Cummings
-DESCRIPTION:Grace Cummings performs her evocative\, folk-leaning music at t
- he historic Old Museum. Her powerful voice and raw storytelling are well-s
- uited to this heritage-listed venue.
-LOCATION:The Old Museum\, Bowen Hills
-URL:https://theoldmuseum.org
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-43@dothings
-DTSTART;VALUE=DATE:20260809
-DTEND;VALUE=DATE:20260809
-SUMMARY:ISHAN (AU)
-DESCRIPTION:ISHAN performs in the cozy\, retro-inspired confines of the Jun
- k Bar. This small-capacity venue provides a personal and quiet environment
-  for singer-songwriters.
-LOCATION:Junk Bar\, New Farm
-URL:https://www.thejunkbar.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-44@dothings
-DTSTART;TZID=UTC:20260804T100000
-DTEND;TZID=UTC:20260804T120000
-SUMMARY:Mandy Quadrio: Kukunna Wurraweena
-DESCRIPTION:An exhibition by artist Mandy Quadrio focusing on materiality a
- nd historical narrative within an Indigenous context.
-LOCATION:Judith Wright Arts Centre\, Fortitude Valley
-URL:https://www.ima.org.au/category/exhibitions/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-45@dothings
-DTSTART;TZID=UTC:20260807T183000
-DTEND;TZID=UTC:20260807T203000
-SUMMARY:The Dynamic Duo – Percival & Spicer Play Your Favourites
-DESCRIPTION:An intimate jazz evening where musicians Percival and Spicer pe
- rform classic standards and audience requests.
-LOCATION:The Ruby Jazz Club\, Kangaroo Point
+UID:brisbane-11@dothings
+DTSTART;TZID=UTC:20260814T183000
+DTEND;TZID=UTC:20260814T203000
+SUMMARY:Mitch Bellert Quintet
+DESCRIPTION:An intimate jazz performance featuring the Mitch Bellert Quinte
+ t in the acoustic-focused setting of The Ruby Jazz Club.
+LOCATION:The Ruby Jazz Club\, Fortitude Valley
 URL:https://www.therubyjazzclub.com.au/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-46@dothings
-DTSTART;VALUE=DATE:20260803
-DTEND;VALUE=DATE:20260803
-SUMMARY:Brisbane Winter Sessions
-DESCRIPTION:A city-wide series of intimate gigs and showcases across variou
- s Brisbane venues featuring local and touring musicians. This festival hig
- hlights the depth of Brisbane's independent music scene.
-LOCATION:Various Venues Brisbane
-URL:https://brisbanewintersessions.com.au
+UID:brisbane-12@dothings
+DTSTART;TZID=UTC:20260815T183000
+DTEND;TZID=UTC:20260815T203000
+SUMMARY:JMI Presents The Patrick Baldwin Swing Set / Next Gen Jazz – JMI 
+ Trios
+DESCRIPTION:A showcase of emerging and established jazz talent hosted by th
+ e Jazz Music Institute\, featuring student trios and the Patrick Baldwin S
+ wing Set.
+LOCATION:The Ruby Jazz Club\, Fortitude Valley
+URL:https://www.therubyjazzclub.com.au/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-47@dothings
-DTSTART;VALUE=DATE:20260804
-DTEND;VALUE=DATE:20260804
-SUMMARY:Brisbane Winter Sessions
-DESCRIPTION:A city-wide series of intimate gigs and showcases across variou
- s Brisbane venues featuring local and touring musicians. This festival hig
- hlights the depth of Brisbane's independent music scene.
-LOCATION:Various Venues Brisbane
-URL:https://brisbanewintersessions.com.au
+UID:brisbane-13@dothings
+DTSTART;TZID=UTC:20260814T160000
+DTEND;TZID=UTC:20260814T180000
+SUMMARY:Life hacks for saving money and living well
+DESCRIPTION:A community workshop focused on sustainable living\, practical 
+ money-saving skills\, and self-sufficiency\, hosted at the local city farm
+ .
+LOCATION:Northey Street City Farm\, Windsor
+URL:https://www.brisbane.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-48@dothings
-DTSTART;VALUE=DATE:20260805
-DTEND;VALUE=DATE:20260805
-SUMMARY:Brisbane Winter Sessions
-DESCRIPTION:A city-wide series of intimate gigs and showcases across variou
- s Brisbane venues featuring local and touring musicians. This festival hig
- hlights the depth of Brisbane's independent music scene.
-LOCATION:Various Venues Brisbane
-URL:https://brisbanewintersessions.com.au
+UID:brisbane-14@dothings
+DTSTART;TZID=UTC:20260815T000000
+DTEND;TZID=UTC:20260815T020000
+SUMMARY:ID It! Reptiles Workshop
+DESCRIPTION:A hands-on educational session at the museum focused on identif
+ ying local reptile species\, perfect for those interested in biology and n
+ ature.
+LOCATION:Queensland Museum Kurilpa\, South Brisbane
+URL:https://www.museum.qld.gov.au/kurilpa
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-49@dothings
-DTSTART;VALUE=DATE:20260806
-DTEND;VALUE=DATE:20260806
-SUMMARY:Brisbane Winter Sessions
-DESCRIPTION:A city-wide series of intimate gigs and showcases across variou
- s Brisbane venues featuring local and touring musicians. This festival hig
- hlights the depth of Brisbane's independent music scene.
-LOCATION:Various Venues Brisbane
-URL:https://brisbanewintersessions.com.au
+UID:brisbane-15@dothings
+DTSTART;TZID=UTC:20260810T100000
+DTEND;TZID=UTC:20260810T120000
+SUMMARY:Mas{a/i}r . مسار . مسیر The Map of Nearness Exhibition
+DESCRIPTION:A multi-disciplinary exhibition exploring themes of migration\,
+  geography\, and memory through contemporary art. Hosted by Outer Space\, 
+ a grassroots gallery known for supporting emerging and experimental artist
+ s.
+LOCATION:Outer Space\, Fortitude Valley
+URL:https://outerspacebrisbane.org
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-50@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Brisbane Winter Sessions
-DESCRIPTION:A city-wide series of intimate gigs and showcases across variou
- s Brisbane venues featuring local and touring musicians. This festival hig
- hlights the depth of Brisbane's independent music scene.
-LOCATION:Various Venues Brisbane
-URL:https://brisbanewintersessions.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-51@dothings
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260808
-SUMMARY:Brisbane Winter Sessions
-DESCRIPTION:A city-wide series of intimate gigs and showcases across variou
- s Brisbane venues featuring local and touring musicians. This festival hig
- hlights the depth of Brisbane's independent music scene.
-LOCATION:Various Venues Brisbane
-URL:https://brisbanewintersessions.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-52@dothings
-DTSTART;VALUE=DATE:20260809
-DTEND;VALUE=DATE:20260809
-SUMMARY:Brisbane Winter Sessions
-DESCRIPTION:A city-wide series of intimate gigs and showcases across variou
- s Brisbane venues featuring local and touring musicians. This festival hig
- hlights the depth of Brisbane's independent music scene.
-LOCATION:Various Venues Brisbane
-URL:https://brisbanewintersessions.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-53@dothings
-DTSTART;VALUE=DATE:20260803
-DTEND;VALUE=DATE:20260803
-SUMMARY:Lord Mayor's Photographic Awards 2026 Exhibition
-DESCRIPTION:A public exhibition showcasing the winning entries of the 2026 
- Lord Mayor's Photographic Awards\, featuring diverse perspectives of the c
- ity through the lens of local photographers.
-LOCATION:Brisbane Airport Domestic Terminal
-URL:https://museumofbrisbane.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-54@dothings
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260808
-SUMMARY:Pipin - 'Spell' E.P Launch
-DESCRIPTION:A special EP launch show for Pipin\, celebrating the release of
-  'Spell' in the intimate surrounds of The Junk Bar.
-LOCATION:The Junk Bar\, Ashgrove
-URL:https://thejunkbar.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-55@dothings
-DTSTART;VALUE=DATE:20260805
-DTEND;VALUE=DATE:20260805
-SUMMARY:Open Mic Night hosted by Jack Lestone
-DESCRIPTION:A community-focused open mic night where local musicians perfor
- m in a relaxed\, listener-friendly atmosphere.
-LOCATION:The Junk Bar\, Ashgrove
-URL:https://thejunkbar.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-56@dothings
-DTSTART;TZID=UTC:20260803T140000
-DTEND;TZID=UTC:20260803T160000
-SUMMARY:Volunteer Guided Tour QAG Highlights
-DESCRIPTION:A guided walkthrough of the gallery's collection focusing on si
- gnificant works. Provides an opportunity to engage with art history and sh
- are observations with other attendees.
-LOCATION:Queensland Art Gallery
+UID:brisbane-16@dothings
+DTSTART;TZID=UTC:20260815T103000
+DTEND;TZID=UTC:20260815T123000
+SUMMARY:Pottery Painting Workshop: A Meal to Share
+DESCRIPTION:A hands-on workshop focused on ceramic decoration and pottery\,
+  allowing participants to explore creative expression in a gallery setting
+ . Suitable for those interested in arts\, craft\, and making physical obje
+ cts.
+LOCATION:Gallery of Modern Art (GOMA)
 URL:https://www.qagoma.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-57@dothings
-DTSTART;TZID=UTC:20260809T150000
-DTEND;TZID=UTC:20260809T170000
-SUMMARY:Tell stories with ipad
-DESCRIPTION:An introductory session on using digital tablets for narrative 
- construction and visual storytelling. Perfect for individuals looking to e
- xplore creative technology in an accessible format.
-LOCATION:State Library of Queensland
-URL:https://www.slq.qld.gov.au
+UID:brisbane-17@dothings
+DTSTART;TZID=UTC:20260813T183000
+DTEND;TZID=UTC:20260813T203000
+SUMMARY:BRIS: Games Night (ages 25-35)
+DESCRIPTION:A relaxed\, facilitated social gathering designed for people ag
+ ed 25-35 to connect through board games in a casual pub environment. The e
+ vent focuses on fostering genuine interaction between attendees rather tha
+ n high-stakes competition.
+LOCATION:The Boundary Hotel\, West End
+URL:https://www.consciousconnectionevents.com.au/brisbane-events
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-58@dothings
-DTSTART;TZID=UTC:20260806T190000
-DTEND;TZID=UTC:20260806T210000
-SUMMARY:Troy Cassar‑Daley — Clancestry
-DESCRIPTION:Renowned country artist Troy Cassar-Daley performs as part of t
- he Clancestry festival\, celebrating First Nations stories and musical her
- itage.
-LOCATION:QPAC Playhouse\, South Bank QLD
-URL:https://www.qpac.com.au/whats-on/2026/clancestry-troy-cassar-daley/
+UID:brisbane-18@dothings
+DTSTART;TZID=UTC:20260813T100000
+DTEND;TZID=UTC:20260813T120000
+SUMMARY:Brisbane Greeters — Greeter’s Choice guided walk
+DESCRIPTION:A volunteer-led guided walk through Brisbane that explores loca
+ l history\, architecture\, and hidden city culture. It is a highly social 
+ and educational experience designed to share local knowledge with resident
+ s and visitors alike.
+LOCATION:Brisbane City Hall\, Brisbane City
+URL:https://www.viabrisbane.com/events/venue/brisbane-city-hall
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-59@dothings
-DTSTART;TZID=UTC:20260807T190000
-DTEND;TZID=UTC:20260807T210000
-SUMMARY:Barragga Yangga: Many Songs (Clancestry)
-DESCRIPTION:A curated performance celebrating diverse First Nations voices\
- , songs\, and storytelling traditions within the Clancestry cultural festi
- val.
-LOCATION:QPAC Playhouse\, South Bank QLD
-URL:https://www.qpac.com.au/whats-on/2026/clancestry-barragga-yangga
+UID:brisbane-19@dothings
+DTSTART;TZID=UTC:20260810T100000
+DTEND;TZID=UTC:20260810T120000
+SUMMARY:SNAP BLAK
+DESCRIPTION:An exhibition showcasing the work of contemporary First Nations
+  photographers\, offering a powerful visual narrative on culture\, identit
+ y\, and history.
+LOCATION:Gallery of Modern Art (GOMA)\, South Brisbane
+URL:https://collection.qagoma.qld.gov.au/page/snap-blak
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-60@dothings
-DTSTART;TZID=UTC:20260808T193000
-DTEND;TZID=UTC:20260808T213000
-SUMMARY:Yothu Yindi — Clancestry (40‑year celebration)
-DESCRIPTION:Iconic band Yothu Yindi performs to celebrate four decades of t
- heir contribution to Australian music and indigenous cultural advocacy.
-LOCATION:QPAC Concert Hall\, South Bank QLD
-URL:https://www.qpac.com.au/whats-on/2026/clancestry-yothu-yindi
+UID:brisbane-20@dothings
+DTSTART;TZID=UTC:20260810T100000
+DTEND;TZID=UTC:20260810T120000
+SUMMARY:Collection Highlights + Art Lab (QUT Art Museum)
+DESCRIPTION:A rotating exhibition of contemporary works paired with a creat
+ ive space for visitors to engage with artistic materials and processes.
+LOCATION:QUT Art Museum\, Gardens Point
+URL:https://www.artmuseum.qut.edu.au/whats-on/exhibitions
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-61@dothings
-DTSTART;TZID=UTC:20260803T100000
-DTEND;TZID=UTC:20260803T120000
-SUMMARY:Warrajamba
-DESCRIPTION:An exhibition exploring the cultural significance and historica
- l narratives of the region\, hosted at the Museum of Brisbane.
-LOCATION:Museum of Brisbane\, Brisbane City Hall
-URL:https://www.viabrisbane.com/events/warrajamba-museum-of-brisbane-brisba
- ne-city/2026-08-03
+UID:brisbane-21@dothings
+DTSTART;TZID=UTC:20260814T183000
+DTEND;TZID=UTC:20260814T203000
+SUMMARY:The Mitch Bellert Quintet — Bebop\, Hard‑bop & Beyond
+DESCRIPTION:A dedicated jazz night focusing on classic bebop and hard-bop e
+ ras\, performed by the Mitch Bellert Quintet in an intimate setting.
+LOCATION:The Ruby Jazz Club\, Fortitude Valley
+URL:https://www.trybooking.com/events/landing/1593031
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-62@dothings
-DTSTART;TZID=UTC:20260801T100000
-DTEND;TZID=UTC:20260801T120000
-SUMMARY:Lord Mayor's Photographic Awards – Finalist Exhibition
-DESCRIPTION:A curated exhibition featuring the top photographic works from 
- this year's Lord Mayor's awards\, showcasing local talent and visual story
- telling.
-LOCATION:People's Gallery\, Brisbane City Hall
-URL:https://www.brisbane.qld.gov.au/events-arts-and-culture/creative-progra
- ms-and-awards/lord-mayor-s-photographic-awards
+UID:brisbane-22@dothings
+DTSTART;TZID=UTC:20260811T183000
+DTEND;TZID=UTC:20260811T203000
+SUMMARY:Do Not Go Gentle
+DESCRIPTION:A compelling piece of contemporary theatre exploring human stor
+ ies\, designed for audiences who appreciate intimate and experimental stor
+ ytelling.
+LOCATION:Bille Brown Theatre\, South Brisbane
+URL:https://queenslandtheatre.com.au/plays/dont-go-gentle
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-63@dothings
-DTSTART;TZID=UTC:20260803T180000
-DTEND;TZID=UTC:20260803T200000
-SUMMARY:It's A Hairy World Film Series — Brisbane Screening I
-DESCRIPTION:A film screening focused on sustainability and the environmenta
- l impact of the salon industry\, followed by potential group discussion.
-LOCATION:Five Star Cinemas - New Farm
-URL:https://www.eventbrite.com.au/e/its-a-hairy-world-film-series-brisbane-
- screening-i-3-august-tickets-1986492490514
+UID:brisbane-23@dothings
+DTSTART;TZID=UTC:20260812T130000
+DTEND;TZID=UTC:20260812T150000
+SUMMARY:Do Not Go Gentle (matinee)
+DESCRIPTION:A mid-week matinee performance of this theatrical production\, 
+ suitable for those interested in local stage arts and narrative exploratio
+ n.
+LOCATION:Bille Brown Theatre\, South Brisbane
+URL:https://queenslandtheatre.com.au/plays/dont-go-gentle
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-64@dothings
-DTSTART;TZID=UTC:20260804T123000
-DTEND;TZID=UTC:20260804T143000
-SUMMARY:Tai Chi Qigong
-DESCRIPTION:A grounding\, community-focused movement class held outdoors\, 
- suitable for those looking for mindful physical practice.
-LOCATION:City Botanic Gardens
-URL:https://www.viabrisbane.com/events/tai-chi-qigong-city-botanic-gardens-
- brisbane-city/2026-08-04
+UID:brisbane-24@dothings
+DTSTART;TZID=UTC:20260813T193000
+DTEND;TZID=UTC:20260813T213000
+SUMMARY:Do Not Go Gentle
+DESCRIPTION:Evening performance of Queensland Theatre's production\, offeri
+ ng an engaging experience for theatre enthusiasts.
+LOCATION:Bille Brown Theatre\, South Brisbane
+URL:https://queenslandtheatre.com.au/plays/dont-go-gentle
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-65@dothings
-DTSTART;TZID=UTC:20260803T110000
-DTEND;TZID=UTC:20260803T130000
-SUMMARY:Free guided tours – City Botanic Gardens
-DESCRIPTION:Knowledgeable guides lead participants through the historic gar
- dens\, focusing on botany\, history\, and ecology.
-LOCATION:City Botanic Gardens Information Kiosk
-URL:https://www.brisbane.qld.gov.au/events/free-guided-tour-city-botanic-ga
- rdens/194731185
+UID:brisbane-25@dothings
+DTSTART;TZID=UTC:20260814T193000
+DTEND;TZID=UTC:20260814T213000
+SUMMARY:Do Not Go Gentle
+DESCRIPTION:Friday night staging of this contemporary play\, perfect for th
+ ose seeking thoughtful live performance experiences.
+LOCATION:Bille Brown Theatre\, South Brisbane
+URL:https://queenslandtheatre.com.au/plays/dont-go-gentle
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-66@dothings
-DTSTART;TZID=UTC:20260803T110000
-DTEND;TZID=UTC:20260803T130000
-SUMMARY:Free guided tours – Brisbane Botanic Gardens Mt Coot-tha
-DESCRIPTION:An educational walk through the Mt Coot-tha gardens\, offering 
- insights into local and exotic plant life and horticultural history.
+UID:brisbane-26@dothings
+DTSTART;TZID=UTC:20260815T140000
+DTEND;TZID=UTC:20260815T160000
+SUMMARY:Do Not Go Gentle (matinee)
+DESCRIPTION:Weekend matinee performance of this dramatic production at the 
+ Bille Brown Theatre.
+LOCATION:Bille Brown Theatre\, South Brisbane
+URL:https://queenslandtheatre.com.au/plays/dont-go-gentle
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-27@dothings
+DTSTART;TZID=UTC:20260816T140000
+DTEND;TZID=UTC:20260816T160000
+SUMMARY:Do Not Go Gentle (matinee)
+DESCRIPTION:Final weekend matinee performance of this impactful piece of th
+ eatre.
+LOCATION:Bille Brown Theatre\, South Brisbane
+URL:https://queenslandtheatre.com.au/plays/dont-go-gentle
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-28@dothings
+DTSTART;TZID=UTC:20260810T090000
+DTEND;TZID=UTC:20260810T110000
+SUMMARY:Experience Alcove | International Coworking Week
+DESCRIPTION:A community-focused open day celebrating International Coworkin
+ g Week\, providing a space for remote workers and creators to connect in a
+  shared professional environment.
+LOCATION:70 Eagle St\, Brisbane City
+URL:https://brisbanespots.com/events/this-month
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-29@dothings
+DTSTART;TZID=UTC:20260816T180000
+DTEND;TZID=UTC:20260816T200000
+SUMMARY:OASIS LUMINOSITY II - LUNAR NIGHT FESTIVAL
+DESCRIPTION:A community-oriented arts festival showcasing local light insta
+ llations\, experimental music performances\, and interactive visual art al
+ ong the river.
+LOCATION:New Farm Park River Hub\, Hawthorne
+URL:https://www.eventbrite.com.au/d/australia--brisbane-city/august/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-30@dothings
+DTSTART;TZID=UTC:20260814T190000
+DTEND;TZID=UTC:20260814T210000
+SUMMARY:Moondog Blues
+DESCRIPTION:An intimate blues performance at the community-focused Cardigan
+  Bar in Sandgate.
+LOCATION:Cardigan Bar\, Sandgate
+URL:https://www.songkick.com/metro-areas/26778-australia-brisbane/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-31@dothings
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260810
+SUMMARY:Brisbane Winter Sessions Festival
+DESCRIPTION:A city-wide festival showcasing a variety of live musical acts 
+ across multiple venues throughout the Fortitude Valley precinct.
+LOCATION:Various venues\, Fortitude Valley
+URL:https://brisbanewintersessions.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-32@dothings
+DTSTART;TZID=UTC:20260812T150000
+DTEND;TZID=UTC:20260812T170000
+SUMMARY:Night Feast
+DESCRIPTION:An immersive arts and culinary event featuring curated food sta
+ lls and light-based art installations set along the Brisbane River. It pro
+ vides a unique\, creative atmosphere designed for evening socialising.
+LOCATION:Brisbane Powerhouse\, New Farm
+URL:https://brisbanepowerhouse.org
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-33@dothings
+DTSTART;TZID=UTC:20260813T163000
+DTEND;TZID=UTC:20260813T183000
+SUMMARY:Night Feast
+DESCRIPTION:An immersive arts and culinary event featuring curated food sta
+ lls and light-based art installations set along the Brisbane River. It pro
+ vides a unique\, creative atmosphere designed for evening socialising.
+LOCATION:Brisbane Powerhouse\, New Farm
+URL:https://brisbanepowerhouse.org
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-34@dothings
+DTSTART;TZID=UTC:20260814T163000
+DTEND;TZID=UTC:20260814T183000
+SUMMARY:Night Feast
+DESCRIPTION:An immersive arts and culinary event featuring curated food sta
+ lls and light-based art installations set along the Brisbane River. It pro
+ vides a unique\, creative atmosphere designed for evening socialising.
+LOCATION:Brisbane Powerhouse\, New Farm
+URL:https://brisbanepowerhouse.org
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-35@dothings
+DTSTART;TZID=UTC:20260815T160000
+DTEND;TZID=UTC:20260815T180000
+SUMMARY:Night Feast
+DESCRIPTION:An immersive arts and culinary event featuring curated food sta
+ lls and light-based art installations set along the Brisbane River. It pro
+ vides a unique\, creative atmosphere designed for evening socialising.
+LOCATION:Brisbane Powerhouse\, New Farm
+URL:https://brisbanepowerhouse.org
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-36@dothings
+DTSTART;TZID=UTC:20260816T100000
+DTEND;TZID=UTC:20260816T120000
+SUMMARY:Wattle bloom walks
+DESCRIPTION:A guided educational walk through the gardens to observe the na
+ tive wattle bloom\, led by experts\, offering a chance to learn about loca
+ l botany in a social\, outdoor setting.
 LOCATION:Brisbane Botanic Gardens Mt Coot-tha
-URL:https://www.brisbane.qld.gov.au/events/free-guided-tour-brisbane-botani
- c-gardens-mt-coot-tha/194730891
+URL:https://www.brisbane.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-67@dothings
-DTSTART;VALUE=DATE:20260805
-DTEND;VALUE=DATE:20260805
-SUMMARY:Jason Fitzgerald — Unearthed (exhibition)
-DESCRIPTION:A contemporary art exhibition showcasing new works by Jason Fit
- zgerald\, exploring themes of discovery and form. The gallery provides an 
- intimate space for viewing high-quality contemporary Australian art.
-LOCATION:Jan Murphy Gallery\, 486 Brunswick St\, Fortitude Valley QLD
-URL:https://www.janmurphygallery.com.au/calendar/
+UID:brisbane-37@dothings
+DTSTART;TZID=UTC:20260816T150000
+DTEND;TZID=UTC:20260816T170000
+SUMMARY:Night Feast
+DESCRIPTION:An immersive arts and culinary event featuring curated food sta
+ lls and light-based art installations set along the Brisbane River. It pro
+ vides a unique\, creative atmosphere designed for evening socialising.
+LOCATION:Brisbane Powerhouse\, New Farm
+URL:https://brisbanepowerhouse.org
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-68@dothings
-DTSTART;TZID=UTC:20260806T190000
-DTEND;TZID=UTC:20260806T210000
-SUMMARY:Plini (with Delta Sleep & Cenobia)
-DESCRIPTION:Progressive rock guitarist Plini brings his technical instrumen
- tal performance to The Princess Theatre\, supported by Delta Sleep and Cen
- obia.
-LOCATION:The Princess Theatre\, Woolloongabba
-URL:https://www.ticketmaster.com.au/plini-brisbane-06-08-2026/event/2500649
- 1B9C279E9
+UID:brisbane-38@dothings
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260814
+SUMMARY:Some Folk presents: Liam Higgins\, Millie Atlas\, Dear Clementine
+DESCRIPTION:A showcase event by Some Folk featuring indie-folk artists Liam
+  Higgins\, Millie Atlas\, and Dear Clementine.
+LOCATION:Black Bear Lodge\, Fortitude Valley
+URL:https://blackbearlodge.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-69@dothings
-DTSTART;TZID=UTC:20260314T100000
-DTEND;TZID=UTC:20260314T120000
-SUMMARY:Worlds within Worlds: Baroque Traditions\, Contemporary Visions
-DESCRIPTION:An exploration of baroque aesthetics and their influence on con
- temporary visual culture through diverse artistic mediums.
-LOCATION:Queensland Art Gallery (QAG)\, South Brisbane
-URL:https://www.qagoma.qld.gov.au/whats-on/exhibitions/
+UID:brisbane-39@dothings
+DTSTART;TZID=UTC:20260810T110000
+DTEND;TZID=UTC:20260810T130000
+SUMMARY:Sandra Selig: Figure of 8 Exhibition
+DESCRIPTION:An exhibition by Australian artist Sandra Selig focusing on her
+  intricate light and sound installations that challenge perception. Expect
+ ed to be a quiet\, contemplative atmosphere in a leading local contemporar
+ y art space.
+LOCATION:Milani Gallery\, West End
+URL:https://milanigallery.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-70@dothings
-DTSTART;TZID=UTC:20260328T100000
-DTEND;TZID=UTC:20260328T120000
-SUMMARY:Creative Generation 2026 Excellence Awards in Visual Art
-DESCRIPTION:A showcase of emerging creative talent\, reflecting the next ge
- neration of visual arts and contemporary design perspectives.
-LOCATION:Gallery of Modern Art (GOMA)\, South Brisbane
-URL:https://www.qagoma.qld.gov.au/whats-on/exhibitions/
+UID:brisbane-40@dothings
+DTSTART;TZID=UTC:20260811T180000
+DTEND;TZID=UTC:20260811T200000
+SUMMARY:Brisbane Winter Sessions: Various Artists
+DESCRIPTION:A curated multi-venue live music takeover across Fortitude Vall
+ ey featuring local and independent touring acts. Expect a variety of genre
+ s ranging from indie rock to experimental soundscapes.
+LOCATION:Various Venues\, Fortitude Valley
+URL:https://www.brisbanewintersessions.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-71@dothings
-DTSTART;TZID=UTC:20260214T100000
-DTEND;TZID=UTC:20260214T120000
-SUMMARY:Sorcerers from Bohemia: Picasso's Saltimbanques
-DESCRIPTION:An exhibit focusing on the early works of Picasso\, exploring t
- he intersection of bohemian culture and creative identity.
-LOCATION:Queensland Art Gallery (QAG)\, South Brisbane
-URL:https://www.qagoma.qld.gov.au/whats-on/exhibitions/
+UID:brisbane-41@dothings
+DTSTART;TZID=UTC:20260812T180000
+DTEND;TZID=UTC:20260812T200000
+SUMMARY:Brisbane Winter Sessions: Various Artists
+DESCRIPTION:Mid-week live music programming featuring diverse local talent 
+ across multiple stages in the Fortitude Valley cultural precinct. A great 
+ opportunity to discover new sounds in a local setting.
+LOCATION:Various Venues\, Fortitude Valley
+URL:https://www.brisbanewintersessions.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-72@dothings
-DTSTART;TZID=UTC:20251011T100000
-DTEND;TZID=UTC:20251011T120000
-SUMMARY:Vipoo Srivilasa: Express Yourself
-DESCRIPTION:An exploration of self-expression through ceramic art and desig
- n\, encouraging viewers to contemplate their own creative voice.
-LOCATION:Gallery of Modern Art (GOMA)\, South Brisbane
-URL:https://www.qagoma.qld.gov.au/whats-on/exhibitions/
+UID:brisbane-42@dothings
+DTSTART;TZID=UTC:20260813T180000
+DTEND;TZID=UTC:20260813T200000
+SUMMARY:Brisbane Winter Sessions: Various Artists
+DESCRIPTION:Continued series of live music performances in Fortitude Valley
+ \, showcasing the breadth of Brisbane's music scene. Shows range from acou
+ stic soloists to larger bands.
+LOCATION:Various Venues\, Fortitude Valley
+URL:https://www.brisbanewintersessions.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-73@dothings
-DTSTART;TZID=UTC:20260529T093000
-DTEND;TZID=UTC:20260529T113000
-SUMMARY:Fragile and Forever: Ceramics from the Queensland Museum Collection
-DESCRIPTION:A curated look at ceramic craftsmanship and material history\, 
- offering insight into the evolution of functional art.
+UID:brisbane-43@dothings
+DTSTART;TZID=UTC:20260814T180000
+DTEND;TZID=UTC:20260814T200000
+SUMMARY:Brisbane Winter Sessions: Various Artists
+DESCRIPTION:The Brisbane Winter Sessions program continues with live acts p
+ erforming across key venues in Fortitude Valley. Designed to highlight the
+  local creative ecosystem.
+LOCATION:Various Venues\, Fortitude Valley
+URL:https://www.brisbanewintersessions.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-44@dothings
+DTSTART;TZID=UTC:20260810T110000
+DTEND;TZID=UTC:20260810T130000
+SUMMARY:Queensland Museum Kurilpa Highlights Tour
+DESCRIPTION:A guided tour through the museum's permanent collections focusi
+ ng on natural history and cultural heritage. Expect a curated walkthrough 
+ of key exhibits with insights from museum staff.
 LOCATION:Queensland Museum Kurilpa\, South Brisbane
-URL:https://www.museum.qld.gov.au/kurilpa/whats-on/fragile-and-forever/
+URL:https://www.museum.qld.gov.au/kurilpa
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-74@dothings
-DTSTART;TZID=UTC:20260801T100000
-DTEND;TZID=UTC:20260801T120000
+UID:brisbane-45@dothings
+DTSTART;TZID=UTC:20260811T110000
+DTEND;TZID=UTC:20260811T130000
+SUMMARY:Queensland Museum Kurilpa Highlights Tour
+DESCRIPTION:A guided tour through the museum's permanent collections focusi
+ ng on natural history and cultural heritage. Expect a curated walkthrough 
+ of key exhibits with insights from museum staff.
+LOCATION:Queensland Museum Kurilpa\, South Brisbane
+URL:https://www.museum.qld.gov.au/kurilpa
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-46@dothings
+DTSTART;TZID=UTC:20260812T110000
+DTEND;TZID=UTC:20260812T130000
+SUMMARY:Queensland Museum Kurilpa Highlights Tour
+DESCRIPTION:A guided tour through the museum's permanent collections focusi
+ ng on natural history and cultural heritage. Expect a curated walkthrough 
+ of key exhibits with insights from museum staff.
+LOCATION:Queensland Museum Kurilpa\, South Brisbane
+URL:https://www.museum.qld.gov.au/kurilpa
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-47@dothings
+DTSTART;TZID=UTC:20260813T110000
+DTEND;TZID=UTC:20260813T130000
+SUMMARY:Queensland Museum Kurilpa Highlights Tour
+DESCRIPTION:A guided tour through the museum's permanent collections focusi
+ ng on natural history and cultural heritage. Expect a curated walkthrough 
+ of key exhibits with insights from museum staff.
+LOCATION:Queensland Museum Kurilpa\, South Brisbane
+URL:https://www.museum.qld.gov.au/kurilpa
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-48@dothings
+DTSTART;TZID=UTC:20260814T110000
+DTEND;TZID=UTC:20260814T130000
+SUMMARY:Queensland Museum Kurilpa Highlights Tour
+DESCRIPTION:A guided tour through the museum's permanent collections focusi
+ ng on natural history and cultural heritage. Expect a curated walkthrough 
+ of key exhibits with insights from museum staff.
+LOCATION:Queensland Museum Kurilpa\, South Brisbane
+URL:https://www.museum.qld.gov.au/kurilpa
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-49@dothings
+DTSTART;TZID=UTC:20260816T150000
+DTEND;TZID=UTC:20260816T170000
+SUMMARY:Queensland Museum Kurilpa Highlights Tour
+DESCRIPTION:A guided tour through the museum's permanent collections focusi
+ ng on natural history and cultural heritage. Expect a curated walkthrough 
+ of key exhibits with insights from museum staff.
+LOCATION:Queensland Museum Kurilpa\, South Brisbane
+URL:https://www.museum.qld.gov.au/kurilpa
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-50@dothings
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260813
+SUMMARY:GaHaRoBa Saxophone Quartet
+DESCRIPTION:An evening of jazz performance featuring the GaHaRoBa Saxophone
+  Quartet at the JMI Live venue.
+LOCATION:JMI Live\, Fortitude Valley
+URL:https://jmi.qld.edu.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-51@dothings
+DTSTART;TZID=UTC:20260815T120000
+DTEND;TZID=UTC:20260815T140000
+SUMMARY:That Sound Over The Fence
+DESCRIPTION:A multi-act music festival featuring local and underground arti
+ sts\, supported by Zang! Records and 4ZZZ radio.
+LOCATION:Norman Park Sports & Community Club\, Norman Park
+URL:https://tickets.oztix.com.au/outlet/event/6b68670b-6e8c-4fd5-88ef-fca03
+ 6898d10
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-52@dothings
+DTSTART;TZID=UTC:20260816T120000
+DTEND;TZID=UTC:20260816T140000
+SUMMARY:Sunday Social @ Goldie's Tavern West End
+DESCRIPTION:A casual\, low-pressure social gathering designed to connect pe
+ ople who are looking for local company on a Sunday. It focuses on facilita
+ ting conversation between strangers in a relaxed pub environment.
+LOCATION:Goldie's Tavern West End\, South Brisbane
+URL:https://www.meetup.com/en-au/brisbane-no-plans-club/events/315813836/?e
+ ventOrigin=group_upcoming_events
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-53@dothings
+DTSTART;TZID=UTC:20260811T190000
+DTEND;TZID=UTC:20260811T210000
+SUMMARY:Raising The Roof – Brisbane Winter Sessions (Raise The Roof Vol. 
+ 3)
+DESCRIPTION:An installment of the Brisbane Winter Sessions music series sho
+ wcasing local talent in an intimate venue setting.
+LOCATION:Black Bear Lodge\, Fortitude Valley
+URL:https://musick.com.au/venue/black-bear-lodge/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-54@dothings
+DTSTART;TZID=UTC:20260810T190000
+DTEND;TZID=UTC:20260810T210000
+SUMMARY:Open Mic Night @ The Newmarket Hotel
+DESCRIPTION:A local open mic night for stand-up comedians and performers to
+  test new material in a low-pressure\, community-focused pub setting.
+LOCATION:Newmarket Hotel\, Newmarket
+URL:https://www.standup.com.au/event/open-mic-night-the-newmarket-hotel-567
+ /
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-55@dothings
+DTSTART;TZID=UTC:20260811T123000
+DTEND;TZID=UTC:20260811T143000
+SUMMARY:Tai Chi Qigong — City Botanic Gardens
+DESCRIPTION:A grounded\, outdoor movement session focusing on Qigong practi
+ ces for mindfulness and gentle exercise in the park.
+LOCATION:City Botanic Gardens\, Brisbane City
+URL:https://www.viabrisbane.com/events/tai-chi-qigong-city-botanic-gardens-
+ brisbane-city/2026-08-11
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-56@dothings
+DTSTART;TZID=UTC:20260811T120000
+DTEND;TZID=UTC:20260811T140000
+SUMMARY:Lord Mayor's City Hall Concerts - Miss Mandy Swings
+DESCRIPTION:A lunchtime jazz and swing performance featuring Miss Mandy\, h
+ eld in the historic Brisbane City Hall auditorium.
+LOCATION:Brisbane City Hall\, Brisbane City
+URL:https://www.viabrisbane.com/events/lord-mayors-city-hall-concerts-miss-
+ mandy-swings-brisbane-city-hall-brisbane-city/2026-08-11
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-57@dothings
+DTSTART;TZID=UTC:20260810T100000
+DTEND;TZID=UTC:20260810T120000
 SUMMARY:Lord Mayor’s Photographic Awards 2026
-DESCRIPTION:A photographic collection celebrating the unique atmosphere and
-  culture of Brisbane through local creative lenses.
+DESCRIPTION:An exhibition featuring the winning and finalist entries of the
+  annual photography competition\, highlighting diverse perspectives of lif
+ e in Brisbane.
 LOCATION:Museum of Brisbane\, City Hall
 URL:https://www.museumofbrisbane.com.au/whats-on/lord-mayors-photographic-a
  wards-2026/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-75@dothings
-DTSTART;TZID=UTC:20260718T090000
-DTEND;TZID=UTC:20260718T110000
-SUMMARY:Joy Generator (exhibition)
-DESCRIPTION:An exhibition focused on the mechanics of joy and artistic expr
- ession\, housed within one of Brisbane’s most iconic cultural landmarks.
-LOCATION:Brisbane Powerhouse\, New Farm
-URL:https://brisbanepowerhouse.org/
+UID:brisbane-58@dothings
+DTSTART;TZID=UTC:20260810T100000
+DTEND;TZID=UTC:20260810T120000
+SUMMARY:LOOKOUT (QUT Art Museum)
+DESCRIPTION:A curated exhibition focusing on contemporary themes\, space\, 
+ and perspective\, designed to provoke thought on our immediate environment
+ s.
+LOCATION:QUT Art Museum\, Gardens Point
+URL:https://www.artmuseum.qut.edu.au/whats-on/2026/exhibitions/lookout
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-76@dothings
-DTSTART;TZID=UTC:20260216T000000
-DTEND;TZID=UTC:20260216T020000
-SUMMARY:LOOKOUT (exhibition)
-DESCRIPTION:An exploration of perspective\, spatial design\, and the act of
-  seeing\, inviting visitors to reconsider their environment.
-LOCATION:QUT Art Museum\, Kelvin Grove
-URL:https://www.artmuseum.qut.edu.au/whats-on
+UID:brisbane-59@dothings
+DTSTART;TZID=UTC:20260810T100000
+DTEND;TZID=UTC:20260810T120000
+SUMMARY:William Robinson: Reflections (William Robinson Gallery)
+DESCRIPTION:An exploration of the works of Australian artist William Robins
+ on\, focusing on his masterful landscapes and unique artistic vision.
+LOCATION:William Robinson Gallery\, Old Government House\, Gardens Point
+URL:https://www.wrgallery.qut.edu.au/home
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-77@dothings
-DTSTART;TZID=UTC:20260804T183000
-DTEND;TZID=UTC:20260804T203000
-SUMMARY:Candlelight: The Best of Joe Hisaishi (by candlelight)
-DESCRIPTION:An intimate classical performance featuring the iconic composit
- ions of Joe Hisaishi\, illuminated by hundreds of candles in a historic se
- tting.
-LOCATION:Saint John's Anglican Cathedral\, Brisbane City
-URL:https://feverup.com/en/brisbane/candlelight
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-78@dothings
-DTSTART;TZID=UTC:20260804T160000
-DTEND;TZID=UTC:20260804T180000
-SUMMARY:Parkside Plates: BBQ basics and confidence on the grill
-DESCRIPTION:A hands-on workshop focused on outdoor cooking techniques and b
- uilding confidence with grill basics in a public park setting.
-LOCATION:Kangaroo Point Cliff Parks
-URL:https://nutritionaustralia.org/services/brisbane-city-council/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-79@dothings
-DTSTART;VALUE=DATE:20260803
-DTEND;VALUE=DATE:20260803
-SUMMARY:Cirque du Soleil – KOOZA
-DESCRIPTION:A return to the origins of Cirque du Soleil\, KOOZA combines ph
- ysical comedy and acrobatics within an immersive big-top musical atmospher
- e.
-LOCATION:Cirque du Soleil Big Top\, Eagle Farm
-URL:https://www.queensland.com/us/en/things-to-do/events/p-691d5818fadb7b52
- 09c33dfb-cirque-du-soleil-kooza-brisbane
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-80@dothings
-DTSTART;VALUE=DATE:20260804
-DTEND;VALUE=DATE:20260804
-SUMMARY:Cirque du Soleil – KOOZA
-DESCRIPTION:A return to the origins of Cirque du Soleil\, KOOZA combines ph
- ysical comedy and acrobatics within an immersive big-top musical atmospher
- e.
-LOCATION:Cirque du Soleil Big Top\, Eagle Farm
-URL:https://www.queensland.com/us/en/things-to-do/events/p-691d5818fadb7b52
- 09c33dfb-cirque-du-soleil-kooza-brisbane
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-81@dothings
-DTSTART;VALUE=DATE:20260805
-DTEND;VALUE=DATE:20260805
-SUMMARY:Cirque du Soleil – KOOZA
-DESCRIPTION:A return to the origins of Cirque du Soleil\, KOOZA combines ph
- ysical comedy and acrobatics within an immersive big-top musical atmospher
- e.
-LOCATION:Cirque du Soleil Big Top\, Eagle Farm
-URL:https://www.queensland.com/us/en/things-to-do/events/p-691d5818fadb7b52
- 09c33dfb-cirque-du-soleil-kooza-brisbane
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-82@dothings
-DTSTART;VALUE=DATE:20260806
-DTEND;VALUE=DATE:20260806
-SUMMARY:Cirque du Soleil – KOOZA
-DESCRIPTION:A return to the origins of Cirque du Soleil\, KOOZA combines ph
- ysical comedy and acrobatics within an immersive big-top musical atmospher
- e.
-LOCATION:Cirque du Soleil Big Top\, Eagle Farm
-URL:https://www.queensland.com/us/en/things-to-do/events/p-691d5818fadb7b52
- 09c33dfb-cirque-du-soleil-kooza-brisbane
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-83@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Cirque du Soleil – KOOZA
-DESCRIPTION:A return to the origins of Cirque du Soleil\, KOOZA combines ph
- ysical comedy and acrobatics within an immersive big-top musical atmospher
- e.
-LOCATION:Cirque du Soleil Big Top\, Eagle Farm
-URL:https://www.queensland.com/us/en/things-to-do/events/p-691d5818fadb7b52
- 09c33dfb-cirque-du-soleil-kooza-brisbane
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-84@dothings
-DTSTART;VALUE=DATE:20260803
-DTEND;VALUE=DATE:20260803
-SUMMARY:Cirque du Soleil: KOOZA – Brisbane Season
-DESCRIPTION:An immersive\, high-art circus performance blending physical th
- eatre\, acrobatic feats\, and clowning with an exploration of human connec
- tion and performance art.
-LOCATION:Cirque du Soleil Big Top\, Eagle Farm
-URL:https://www.queensland.com/au/en/things-to-do/events/p-691d5818fadb7b52
- 09c33dfb-cirque-du-soleil-kooza-brisbane
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-85@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Fiesta De Kayak – Twilight Kayak
-DESCRIPTION:An outdoor guided adventure experience on the Brisbane River\, 
- providing a unique perspective of the city skyline during sunset and twili
- ght hours.
-LOCATION:Riverlife Adventure Centre\, Kangaroo Point
-URL:https://www.myguidebrisbane.com/events/august-2026/page/5
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-86@dothings
-DTSTART;TZID=UTC:20260806T183000
-DTEND;TZID=UTC:20260806T203000
-SUMMARY:Hot Toddies: Sunbleached
-DESCRIPTION:A local rock music showcase presented at the iconic Triffid ven
- ue.
-LOCATION:The Triffid\, Newstead
-URL:https://www.ticketmaster.com.au/browse/rock-and-pop-catid-1/music-rid-1
- 0001/queensland-dma-703
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-87@dothings
-DTSTART;TZID=UTC:20260807T200000
-DTEND;TZID=UTC:20260807T220000
-SUMMARY:1tbsp Bubble Tour
-DESCRIPTION:Electronic artist 1tbsp presents his latest musical project as 
- part of the Bubble Tour.
-LOCATION:The Princess Theatre\, Woolloongabba
-URL:https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSy
- ZfZ7v7nJ
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-88@dothings
-DTSTART;TZID=UTC:20260807T190000
-DTEND;TZID=UTC:20260807T210000
-SUMMARY:Pinky Beecroft – Lonesome Wolf Album Launch
-DESCRIPTION:Join Pinky Beecroft for the official launch of the new album 'L
- onesome Wolf' at Crowbar.
-LOCATION:Crowbar Brisbane\, Fortitude Valley
-URL:https://tickets.oztix.com.au/outlet/event/ce8a4c1e-a423-4f9f-a361-05bbf
- 9331f27
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-89@dothings
-DTSTART;TZID=UTC:20260809T000000
-DTEND;TZID=UTC:20260809T020000
-SUMMARY:Anuv Jain – Dastakhat World Tour 2026
-DESCRIPTION:Indian singer-songwriter Anuv Jain performs his emotive acousti
- c-pop style as part of his global tour.
-LOCATION:The Triffid\, Newstead
-URL:https://www.moshtix.com.au/v2/event/anuv-jain-dastakhat-world-tour-2026
- /188488
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-90@dothings
-DTSTART;TZID=UTC:20260808T200000
-DTEND;TZID=UTC:20260808T220000
-SUMMARY:Saturday Double Feature comedy show
-DESCRIPTION:An evening of stand-up comedy featuring multiple local and tour
- ing performers. Provides a relaxed atmosphere for enjoying live performanc
- e art and observational humour.
-LOCATION:The Sit Down Comedy Club\, Brisbane
-URL:https://www.standup.com.au/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-91@dothings
-DTSTART;VALUE=DATE:20260806
-DTEND;VALUE=DATE:20260806
-SUMMARY:The Hot Toddies
-DESCRIPTION:A live music showcase featuring The Hot Toddies at The Triffid\
- , a popular venue known for its converted hangar aesthetic and focus on qu
- ality sound.
-LOCATION:The Triffid\, Newstead
-URL:https://www.thetriffid.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-92@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:1tbsp
-DESCRIPTION:Electronic artist 1tbsp brings their dance-leaning\, indie-elec
- tronic sound to the Princess Theatre. Expect a dynamic night of house-insp
- ired beats and melodic production.
-LOCATION:Princess Theatre\, Woolloongabba
-URL:https://www.theprincesstheatre.com.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-93@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Toni Childs
-DESCRIPTION:Acclaimed singer-songwriter Toni Childs performs a career-spann
- ing live concert at the Redland Performing Arts Centre. Known for her powe
- rful voice and storytelling\, this show focuses on her classic hits and ne
- wer work.
-LOCATION:Redland Performing Arts Centre\, Cleveland
-URL:https://www.redlandpac.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-94@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Cat & Calmell
-DESCRIPTION:Dynamic pop duo Cat & Calmell perform their catchy\, genre-bend
- ing music at The Brightside. Expect an energetic set featuring their uniqu
- e blend of electronic and pop influences.
-LOCATION:The Brightside\, Fortitude Valley
-URL:https://www.thebrightsidebrisbane.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-95@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Pinky Beecroft Super Massive
-DESCRIPTION:An alternative rock night at Crowbar featuring Pinky Beecroft S
- uper Massive. Expect a high-volume\, gritty performance characteristic of 
- this local staple venue.
-LOCATION:Crowbar Brisbane\, Fortitude Valley
-URL:https://crowbarbrisbane.com
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-96@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Chandler Jay
-DESCRIPTION:Chandler Jay performs an intimate set at the relaxed atmosphere
-  of the New Farm Bowls Club. This venue offers a unique\, casual setting t
- o enjoy live music.
-LOCATION:New Farm Bowls Club\, New Farm
-URL:https://www.songkick.com/metro-areas/26778-australia-brisbane
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-97@dothings
-DTSTART;TZID=UTC:20260808T183000
-DTEND;TZID=UTC:20260808T203000
-SUMMARY:Dr Jeff Usher – A Tribute to Ray Charles
-DESCRIPTION:Pianist Dr Jeff Usher leads a night dedicated to the soul and b
- lues repertoire of Ray Charles.
-LOCATION:The Ruby Jazz Club\, Kangaroo Point
-URL:https://www.therubyjazzclub.com.au/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-98@dothings
-DTSTART;TZID=UTC:20260809T190000
-DTEND;TZID=UTC:20260809T210000
-SUMMARY:Eyes Ninety and Los Houseplants F.C.
-DESCRIPTION:A double-bill show featuring local bands Eyes Ninety and Los Ho
- useplants F.C. at The Brightside.
-LOCATION:The Brightside\, Fortitude Valley
-URL:https://www.thebrightside.net.au/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-99@dothings
-DTSTART;VALUE=DATE:20260805
-DTEND;VALUE=DATE:20260805
-SUMMARY:Night Feast Live Music
-DESCRIPTION:A curated selection of live musical performances held as part o
- f the Night Feast festival at the Brisbane Powerhouse. These gigs feature 
- a mix of local artists set against the backdrop of an outdoor culinary exp
- erience.
-LOCATION:Brisbane Powerhouse
-URL:https://brisbane.qld.gov.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-100@dothings
-DTSTART;VALUE=DATE:20260806
-DTEND;VALUE=DATE:20260806
-SUMMARY:Night Feast Live Music
-DESCRIPTION:A curated selection of live musical performances held as part o
- f the Night Feast festival at the Brisbane Powerhouse. These gigs feature 
- a mix of local artists set against the backdrop of an outdoor culinary exp
- erience.
-LOCATION:Brisbane Powerhouse
-URL:https://brisbane.qld.gov.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-101@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Night Feast Live Music
-DESCRIPTION:A curated selection of live musical performances held as part o
- f the Night Feast festival at the Brisbane Powerhouse. These gigs feature 
- a mix of local artists set against the backdrop of an outdoor culinary exp
- erience.
-LOCATION:Brisbane Powerhouse
-URL:https://brisbane.qld.gov.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-102@dothings
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260808
-SUMMARY:Night Feast Live Music
-DESCRIPTION:A curated selection of live musical performances held as part o
- f the Night Feast festival at the Brisbane Powerhouse. These gigs feature 
- a mix of local artists set against the backdrop of an outdoor culinary exp
- erience.
-LOCATION:Brisbane Powerhouse
-URL:https://brisbane.qld.gov.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-103@dothings
-DTSTART;VALUE=DATE:20260809
-DTEND;VALUE=DATE:20260809
-SUMMARY:Night Feast Live Music
-DESCRIPTION:A curated selection of live musical performances held as part o
- f the Night Feast festival at the Brisbane Powerhouse. These gigs feature 
- a mix of local artists set against the backdrop of an outdoor culinary exp
- erience.
-LOCATION:Brisbane Powerhouse
-URL:https://brisbane.qld.gov.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-104@dothings
-DTSTART;TZID=UTC:20260804T100000
-DTEND;TZID=UTC:20260804T120000
-SUMMARY:Roma Street Parkland Guided Tour
-DESCRIPTION:A guided walking tour through the expansive gardens at Roma Str
- eet Parkland\, focusing on the horticultural diversity and historical cont
- ext of the site.
-LOCATION:Roma Street Parkland Hub
-URL:https://oztix.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-105@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Stjep
-DESCRIPTION:An intimate evening of live music featuring Stjep at one of Bri
- sbane's most cozy performance venues.
-LOCATION:The Junk Bar\, Ashgrove
-URL:https://thejunkbar.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-106@dothings
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260808
-SUMMARY:The Velvet Club - Are You Falling In Love? Tour
-DESCRIPTION:The Velvet Club brings their indie-rock sound to the stage for 
- their national tour.
+UID:brisbane-60@dothings
+DTSTART;TZID=UTC:20260811T190000
+DTEND;TZID=UTC:20260811T210000
+SUMMARY:Raising The Roof Vol. 03 (Vinted Vineer\, Lottie McLeod\, Exit Guid
+ e\, Chelsea Costar)
+DESCRIPTION:A showcase of emerging local independent talent featuring a mul
+ ti-act lineup of indie\, folk\, and alternative artists.
 LOCATION:Black Bear Lodge\, Fortitude Valley
-URL:https://blackbearlodge.com.au
+URL:https://tickets.oztix.com.au/outlet/event/4fc67e1b-2194-4fcc-97b6-4d829
+ c8999f8
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-107@dothings
-DTSTART;VALUE=DATE:20260809
-DTEND;VALUE=DATE:20260809
-SUMMARY:ISHAN - 'Crazy Happy' Tour
-DESCRIPTION:Artist ISHAN performs tracks from the 'Crazy Happy' tour\, blen
- ding personal storytelling with live performance.
-LOCATION:The Junk Bar\, Ashgrove
-URL:https://thejunkbar.com.au
+UID:brisbane-61@dothings
+DTSTART;TZID=UTC:20260812T200000
+DTEND;TZID=UTC:20260812T220000
+SUMMARY:Primetime Sextet (Jazz Night led by Ashley Hutton)
+DESCRIPTION:An evening of live jazz at The Alligator Club\, featuring a sex
+ tet performing arrangements led by Ashley Hutton.
+LOCATION:The Alligator Club\, Fortitude Valley
+URL:https://thealligatorclub.au/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-108@dothings
-DTSTART;VALUE=DATE:20260806
-DTEND;VALUE=DATE:20260806
-SUMMARY:DEO with Margaret & Bon Pour Bruler
-DESCRIPTION:A collaborative night of live music featuring sets from DEO\, M
- argaret\, and Bon Pour Bruler.
-LOCATION:The Junk Bar\, Ashgrove
-URL:https://thejunkbar.com.au
+UID:brisbane-62@dothings
+DTSTART;TZID=UTC:20260815T193000
+DTEND;TZID=UTC:20260815T213000
+SUMMARY:A Night Of Light & Shade (Tyrone Noonan Band\, Fergus Hogan\, Satel
+ lite Mile)
+DESCRIPTION:An atmospheric night of singer-songwriter performances and alte
+ rnative rock at one of Brisbane's most cozy venues.
+LOCATION:The Junk Bar\, New Farm
+URL:https://tickets.oztix.com.au/outlet/event/dbb319eb-f459-4762-bb86-ede8a
+ fcba9f5
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-109@dothings
-DTSTART;VALUE=DATE:20260803
-DTEND;VALUE=DATE:20260803
-SUMMARY:Australian Chamber Orchestra
-DESCRIPTION:The Australian Chamber Orchestra presents a performance of clas
- sical repertoire at the QPAC Concert Hall. A formal evening featuring acco
- mplished professional musicians.
-LOCATION:QPAC Concert Hall
-URL:https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE
- f-jofcaesj-8IeKcH07JEBPfIptF52OxSGL0yuJaS_JjeIhearbXX9pskotAPuFm0h1mO_9eGl
- A-pWEETUvh7u1nh5uh7NELf3wyrv4Ycfy9vhI2Q-lfG0i-zw
+UID:brisbane-63@dothings
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260729
+SUMMARY:Night Feast
+DESCRIPTION:A recurring cultural festival at the Powerhouse featuring exper
+ imental food\, artistic installations\, and a vibrant communal atmosphere 
+ by the river.
+LOCATION:Brisbane Powerhouse\, New Farm
+URL:https://brisbanepowerhouse.org/night-feast-at-brisbane-powerhouse-is-ba
+ ck-and-serving-up-seriously-good-food/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-110@dothings
-DTSTART;VALUE=DATE:20260806
-DTEND;VALUE=DATE:20260806
-SUMMARY:MONSTR: The Best of MTV Unplugged
-DESCRIPTION:A tribute performance recreating classic sets from the iconic M
- TV Unplugged series\, focusing on raw\, acoustic arrangements.
-LOCATION:Old Bundy Tavern
-URL:https://oztix.com.au
+UID:brisbane-64@dothings
+DTSTART;TZID=UTC:20260810T163000
+DTEND;TZID=UTC:20260810T183000
+SUMMARY:Night Feast
+DESCRIPTION:An immersive cultural and culinary experience featuring live mu
+ sic\, art installations\, and performance at the Brisbane Powerhouse preci
+ nct.
+LOCATION:119 Lamington Street\, New Farm
+URL:https://www.queensland.com/au/en/things-to-do/events/p-66e0fad97580b194
+ 4acc5ed1-night-feast
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-111@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:MONSTR: The Best of MTV Unplugged
-DESCRIPTION:The second night of the MONSTR tribute tour\, bringing stripped
- -back acoustic classics to the Leichhardt Hotel.
-LOCATION:Leichhardt Hotel
-URL:https://oztix.com.au
+UID:brisbane-65@dothings
+DTSTART;TZID=UTC:20260816T100000
+DTEND;TZID=UTC:20260816T120000
+SUMMARY:SACRED EXHALE
+DESCRIPTION:A guided breathwork and meditation session focused on nervous s
+ ystem regulation and stress reduction in a small group setting.
+LOCATION:Mystic Tide Hair and Healing\, Brisbane City
+URL:https://www.eventbrite.com.au/d/australia--brisbane-city/events/
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-112@dothings
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260808
-SUMMARY:MONSTR: The Best of MTV Unplugged
-DESCRIPTION:The final night of the MONSTR tribute tour featuring iconic MTV
-  Unplugged hits performed in an intimate tavern setting.
-LOCATION:Metropolitan Hotel
-URL:https://oztix.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-113@dothings
-DTSTART;TZID=UTC:20260807T190000
-DTEND;TZID=UTC:20260807T210000
-SUMMARY:Pinky Beecroft — Album Launch
-DESCRIPTION:Pinky Beecroft celebrates a new album release with an intimate 
- performance at one of Brisbane's staple alternative live music venues.
-LOCATION:Crowbar Brisbane\, Fortitude Valley QLD
-URL:https://musick.com.au/gig/pinky-beecroft-at-crowbar-2026-08-07/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-114@dothings
-DTSTART;TZID=UTC:20260808T170000
-DTEND;TZID=UTC:20260808T190000
-SUMMARY:Rock for Choppers (fundraiser)
-DESCRIPTION:A multi-band concert featuring local rock acts\, organized to r
- aise funds for the LifeFlight emergency helicopter rescue service.
-LOCATION:The Triffid\, Newstead QLD
-URL:https://moshtix.com.au/v2/event/rock-for-choppers/196461
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-115@dothings
-DTSTART;TZID=UTC:20260807T200000
-DTEND;TZID=UTC:20260807T220000
-SUMMARY:Good Music House Party
-DESCRIPTION:A high-energy\, casual-vibe music event featuring multiple acts
-  at one of Fortitude Valley's premier independent music venues.
-LOCATION:The Brightside\, Fortitude Valley QLD
-URL:https://tixel.com/au/tickets/the-brightside
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-116@dothings
-DTSTART;TZID=UTC:20260805T171500
-DTEND;TZID=UTC:20260805T191500
-SUMMARY:Beginner line dancing
-DESCRIPTION:A relaxed\, social dance class aimed at beginners\, focusing on
-  community interaction and movement.
-LOCATION:Upper Mt Gravatt Progress Hall
-URL:https://www.viabrisbane.com/events/beginner-line-dancing-upper-mt-grava
- tt-progress-hall-upper-mount-gravatt/2026-08-05
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-117@dothings
-DTSTART;TZID=UTC:20260806T121500
-DTEND;TZID=UTC:20260806T141500
-SUMMARY:Functional fitness
-DESCRIPTION:A group fitness session focused on functional\, natural movemen
- t patterns in an outdoor setting.
-LOCATION:City Botanic Gardens
-URL:https://www.viabrisbane.com/events/functional-fitness-city-botanic-gard
- ens-brisbane-city/2026-08-06
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-118@dothings
-DTSTART;TZID=UTC:20260809T190000
-DTEND;TZID=UTC:20260809T210000
-SUMMARY:4H FEST (HIP HOP HABLA HISPANA) – LA ETNNIA
-DESCRIPTION:A specialized hip-hop festival dedicated to Spanish-speaking ar
- tists\, featuring legendary Colombian group La Etnnia. The event celebrate
- s the international reach and cultural impact of the Hispanic hip-hop move
- ment.
-LOCATION:The Outpost\, 320 Brunswick St\, Fortitude Valley QLD
-URL:https://www.moshtix.com.au/v2/event/4h-fest-hip-hop-habla-hispana-%E2%8
- 0%93-la-etnnia-brisbane/196776
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-119@dothings
-DTSTART;TZID=UTC:20260806T203000
-DTEND;TZID=UTC:20260806T223000
-SUMMARY:Candlelight: Tribute to Queen (by candlelight)
-DESCRIPTION:A string quartet performs the legendary hits of Queen within th
- e atmospheric\, candlelit interior of Saint John's Cathedral.
-LOCATION:Saint John's Anglican Cathedral\, Brisbane City
-URL:https://feverup.com/en/brisbane/candlelight
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-120@dothings
-DTSTART;TZID=UTC:20260805T200000
-DTEND;TZID=UTC:20260805T220000
-SUMMARY:Son of a Carpenter Tour
-DESCRIPTION:A live music concert performance featuring touring artists show
- casing acoustic-driven\, heartfelt songwriting.
-LOCATION:Brisbane Entertainment Centre\, Boondall
-URL:https://www.brisent.com.au/events/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-121@dothings
-DTSTART;TZID=UTC:20260806T190000
-DTEND;TZID=UTC:20260806T210000
-SUMMARY:Wage War Australian Tour 2026
-DESCRIPTION:American metalcore band Wage War brings their high-energy tour 
- to The Tivoli.
+UID:brisbane-66@dothings
+DTSTART;TZID=UTC:20260815T190000
+DTEND;TZID=UTC:20260815T210000
+SUMMARY:Late Night Orchestra
+DESCRIPTION:An evening of live orchestral or big band music performed at th
+ e historic Tivoli venue.
 LOCATION:The Tivoli\, Brisbane
 URL:https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSy
  ZfZ7v7nJ
 END:VEVENT
 BEGIN:VEVENT
-UID:brisbane-122@dothings
-DTSTART;TZID=UTC:20260806T183000
-DTEND;TZID=UTC:20260806T203000
-SUMMARY:The Radiators (40th Anniversary Tour) with Upsize
-DESCRIPTION:Australian pub-rock stalwarts The Radiators celebrate 40 years 
- of touring with support from Upsize.
+UID:brisbane-67@dothings
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260816
+SUMMARY:DICE (AUS) With Mid Drift & Ray and Paul (USA)
+DESCRIPTION:A multi-act gig featuring Australian band DICE supported by Mid
+  Drift and American act Ray and Paul.
+LOCATION:The Tivoli\, Brisbane
+URL:https://thetivoli.com.
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-68@dothings
+DTSTART;TZID=UTC:20260814T190000
+DTEND;TZID=UTC:20260814T210000
+SUMMARY:London Calling
+DESCRIPTION:A live music showcase at The Triffid\, a premier mid-sized venu
+ e housed in a converted hangar.
+LOCATION:The Triffid\, Newstead
+URL:https://www.setlist.fm/venue/the-triffid-brisbane-australia-bd479a2.htm
+ l
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-69@dothings
+DTSTART;TZID=UTC:20260814T190000
+DTEND;TZID=UTC:20260814T210000
+SUMMARY:Daily J
+DESCRIPTION:Indie rock performance featuring Daily J at one of Brisbane's s
+ taple live music venues.
+LOCATION:The Brightside\, Fortitude Valley
+URL:https://www.songkick.com/metro-areas/26778-australia-brisbane/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-70@dothings
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260811
+SUMMARY:Raising The Roof | A Fundraiser for Brisbane Youth Service
+DESCRIPTION:A musical event held to raise funds and awareness for the Brisb
+ ane Youth Service.
+LOCATION:Black Bear Lodge\, Fortitude Valley
+URL:https://blackbearlodge.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-71@dothings
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260813
+SUMMARY:Music Industry College Scholarship Fundraiser 2026
+DESCRIPTION:A charity concert event supporting the scholarship fund for the
+  Music Industry College.
+LOCATION:The Triffid\, Newstead
+URL:https://thetriffid.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-72@dothings
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260813
+SUMMARY:Jeff Lang & Dom Turner
+DESCRIPTION:Acclaimed guitarists Jeff Lang and Dom Turner perform a live sh
+ ow featuring blues and folk influences.
+LOCATION:Black Bear Lodge\, Fortitude Valley
+URL:https://blackbearlodge.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-73@dothings
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260815
+SUMMARY:Whose Party — Scratches in the Glass Single Launch
+DESCRIPTION:The band Whose Party celebrates the launch of their new single 
+ 'Scratches in the Glass'.
+LOCATION:Black Bear Lodge\, Fortitude Valley
+URL:https://blackbearlodge.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-74@dothings
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260816
+SUMMARY:Valve / tall work / Adorned / A letter from greenpoint
+DESCRIPTION:A multi-act live gig featuring local bands Valve\, tall work\, 
+ Adorned\, and A letter from greenpoint.
+LOCATION:Black Bear Lodge\, Fortitude Valley
+URL:https://blackbearlodge.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-75@dothings
+DTSTART;TZID=UTC:20260810T190000
+DTEND;TZID=UTC:20260810T210000
+SUMMARY:Brisbane Winter Sessions: DJ Vadim
+DESCRIPTION:International DJ and producer Vadim brings his unique blend of 
+ hip-hop\, soul\, and electronica to an intimate setting in West End. This 
+ performance is part of the broader Brisbane Winter Sessions festival progr
+ am.
+LOCATION:Flying Colours\, West End
+URL:https://www.brisbanewintersessions.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-76@dothings
+DTSTART;TZID=UTC:20260815T180000
+DTEND;TZID=UTC:20260815T200000
+SUMMARY:Brisbane Winter Sessions: Various Artists
+DESCRIPTION:A busy Friday night session as part of the Brisbane Winter Sess
+ ions festival\, with multiple acts performing throughout the night in loca
+ l venues.
+LOCATION:Various Venues\, Fortitude Valley
+URL:https://www.brisbanewintersessions.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-77@dothings
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260814
+SUMMARY:Tilly Street Album Launch
+DESCRIPTION:A special launch event celebrating the release of a new album b
+ y artist Tilly Street.
+LOCATION:JMI Live\, Fortitude Valley
+URL:https://jmi.qld.edu.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-78@dothings
+DTSTART;TZID=UTC:20260814T180000
+DTEND;TZID=UTC:20260814T200000
+SUMMARY:Friday Night Shoot-Out! (Archery session)
+DESCRIPTION:A social and active archery session where participants practice
+  their aim in a group setting\, suitable for various skill levels. This is
+  a recurring community meetup that emphasizes learning a technical physica
+ l skill.
+LOCATION:PCYC Carindale\, Carina
+URL:https://www.meetup.com/rogue-archery-meetup-group/events/315798440/?eve
+ ntOrigin=group_upcoming_events
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-79@dothings
+DTSTART;TZID=UTC:20260815T190000
+DTEND;TZID=UTC:20260815T210000
+SUMMARY:Ceres – 'Drag It Down on You' 10th Anniversary Tour
+DESCRIPTION:Indie rock band Ceres celebrates the 10th anniversary of their 
+ album 'Drag It Down on You' with a tour performance.
+LOCATION:Crowbar Brisbane\, Fortitude Valley
+URL:https://crowbarbris.oztix.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-80@dothings
+DTSTART;TZID=UTC:20260811T190000
+DTEND;TZID=UTC:20260811T210000
+SUMMARY:QPAC Chamber Choir – Somebody to Love
+DESCRIPTION:The QPAC Chamber Choir presents a choral exploration of love\, 
+ featuring arrangements of classic hits and emotive vocal performances.
+LOCATION:Concert Hall\, QPAC\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/qpac-chamber-choir-somebody-to-lo
+ ve
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-81@dothings
+DTSTART;TZID=UTC:20260816T120000
+DTEND;TZID=UTC:20260816T140000
+SUMMARY:Better Off Red (Night Feast long lunch)
+DESCRIPTION:An immersive long lunch experience combining curated dining wit
+ h live performances\, set in an open-air artistic environment.
+LOCATION:Performance Lawn\, Brisbane Powerhouse\, New Farm
+URL:https://brisbanepowerhouse.org/events/better-off-red/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-82@dothings
+DTSTART;TZID=UTC:20260815T200000
+DTEND;TZID=UTC:20260815T220000
+SUMMARY:Ceres
+DESCRIPTION:Australian indie-rock band Ceres performs at the Crowbar as par
+ t of their latest touring schedule.
+LOCATION:Crowbar Brisbane\, Brisbane
+URL:https://tixel.com/au/discover/Brisbane/music-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-83@dothings
+DTSTART;TZID=UTC:20260816T190000
+DTEND;TZID=UTC:20260816T210000
+SUMMARY:DICE
+DESCRIPTION:Australian indie rock band DICE performs a live show at The Tiv
+ oli\, showcasing their latest material.
+LOCATION:The Tivoli\, Fortitude Valley
+URL:https://thetivoli.com.au/events
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-84@dothings
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260811
+SUMMARY:Verona Lights
+DESCRIPTION:A live performance by the band Verona Lights at the iconic Fort
+ itude Valley heavy music venue\, Crowbar.
+LOCATION:Crowbar Brisbane\, Fortitude Valley
+URL:https://www.songkick.com/metro-areas/26778-australia-brisbane/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-85@dothings
+DTSTART;TZID=UTC:20260814T180000
+DTEND;TZID=UTC:20260814T200000
+SUMMARY:Zak Plays Zach (Zach Bryan Tribute) - second show
+DESCRIPTION:A tribute performance dedicated to the music of singer-songwrit
+ er Zach Bryan\, hosted at the atmospheric Lefty's Music Hall.
 LOCATION:Lefty's Music Hall\, Brisbane
-URL:https://tickets.oztix.com.au/outlet/event/710c1047-cdfd-4e27-8269-6464a
- 501d78c
+URL:https://tickets.oztix.com.au/outlet/event/5c03c324-feab-476a-9741-66926
+ 56d1354
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-86@dothings
+DTSTART;TZID=UTC:20260814T190000
+DTEND;TZID=UTC:20260814T210000
+SUMMARY:SLAYYYTER | WOR$T GIRL IN THE WORLD TOUR 2026
+DESCRIPTION:Hyperpop artist Slayyyter brings her 'Worst Girl in the World' 
+ tour to Brisbane for a high-energy live show.
+LOCATION:The Fortitude Music Hall\, Fortitude Valley
+URL:https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSy
+ ZfZ7v7nJ
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-87@dothings
+DTSTART;TZID=UTC:20260815T190000
+DTEND;TZID=UTC:20260815T210000
+SUMMARY:Parkway Drive – Killing Horizons: Killing With A Smile
+DESCRIPTION:Renowned Australian metalcore band Parkway Drive performs their
+  classic 'Killing With A Smile' album in full.
+LOCATION:The Fortitude Music Hall\, Fortitude Valley
+URL:https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSy
+ ZfZ7v7nJ
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-88@dothings
+DTSTART;TZID=UTC:20260816T150000
+DTEND;TZID=UTC:20260816T170000
+SUMMARY:Vika & Linda "Where Do You Come From?"
+DESCRIPTION:Legendary Australian vocal duo Vika & Linda perform songs and s
+ tories from their musical journey.
+LOCATION:The Tivoli\, Brisbane
+URL:https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSy
+ ZfZ7v7nJ
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-89@dothings
+DTSTART;TZID=UTC:20260811T190000
+DTEND;TZID=UTC:20260811T210000
+SUMMARY:daga JORDY (US)
+DESCRIPTION:International touring act JORDY brings their synth-pop sound to
+  the Fortitude Valley stage.
+LOCATION:Eclipse\, Fortitude Valley
+URL:https://www.songkick.com/metro-areas/26778-australia-brisbane
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-90@dothings
+DTSTART;TZID=UTC:20260814T183000
+DTEND;TZID=UTC:20260814T203000
+SUMMARY:Holding Absence\, with Kingdom of Giants and Stepson
+DESCRIPTION:A triple-bill of heavy rock and post-hardcore bands playing at 
+ the heritage-listed Princess Theatre.
+LOCATION:The Princess Theatre\, Woolloongabba
+URL:https://theprincesstheatre.com.au/events
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-91@dothings
+DTSTART;TZID=UTC:20260816T190000
+DTEND;TZID=UTC:20260816T210000
+SUMMARY:Parkway Drive: Killing Horizons – Horizons
+DESCRIPTION:Part two of the residency where Parkway Drive performs their cl
+ assic album 'Horizons' in its entirety.
+LOCATION:Fortitude Music Hall\, Fortitude Valley
+URL:https://www.thefortitude.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-92@dothings
+DTSTART;TZID=UTC:20260816T180000
+DTEND;TZID=UTC:20260816T200000
+SUMMARY:Live Music
+DESCRIPTION:Local live music performance hosted at the community-focused Br
+ amble Bay Bowls Club.
+LOCATION:Bramble Bay Bowls Club\, Brisbane
+URL:https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGC
+ iCFoiRsKrfmyxMoTST2QEXPcEXmo9KliiUg55vxa5JYOD-GENMPhgoDcpPQElDtUnwpA72o0US
+ vQwZU2ZH86vUWDe1hrKJTGFJCxziPf7n1jY2yFhl3MjMk-KUrBVfmwptKBdQ==
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-93@dothings
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260814
+SUMMARY:Paper Lane
+DESCRIPTION:Live musical performance featuring Paper Lane at the Brooklyn S
+ tandard venue.
+LOCATION:Brooklyn Standard\, Brisbane City
+URL:https://brooklynstandard.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-94@dothings
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260816
+SUMMARY:The Masters Apprentices
+DESCRIPTION:Legendary Australian rock band The Masters Apprentices perform 
+ a live concert.
+LOCATION:The Triffid\, Newstead
+URL:https://thetriffid.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-95@dothings
+DTSTART;TZID=UTC:20260810T140000
+DTEND;TZID=UTC:20260810T160000
+SUMMARY:Back to the Tivoli
+DESCRIPTION:A variety show featuring classic musical performances and stage
+  acts in a nostalgic\, theatrical format. It is a long-standing production
+  series that focuses on traditional entertainment styles.
+LOCATION:Kedron-Wavell
+URL:https://iwannaticket.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-96@dothings
+DTSTART;TZID=UTC:20260816T193000
+DTEND;TZID=UTC:20260816T213000
+SUMMARY:Brisbane Winter Sessions: The Masters Apprentices
+DESCRIPTION:Legendary Australian rock band The Masters Apprentices perform 
+ a live set as a headline feature of the Brisbane Winter Sessions. A chance
+  to see iconic figures in the Australian rock history perform in a premier
+  live music venue.
+LOCATION:The Triffid
+URL:https://www.brisbanewintersessions.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-97@dothings
+DTSTART;TZID=UTC:20260811T190000
+DTEND;TZID=UTC:20260811T210000
+SUMMARY:Ekka Eve Party
+DESCRIPTION:A celebratory event hosted at The Triffid to kick off the Ekka 
+ long weekend with live music.
+LOCATION:The Triffid\, Newstead
+URL:https://thetriffid.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-98@dothings
+DTSTART;TZID=UTC:20260811T190000
+DTEND;TZID=UTC:20260811T210000
+SUMMARY:Sunk Loto — Dead Shadows Tour
+DESCRIPTION:Australian alternative metal band Sunk Loto performs live with 
+ support acts Verona Lights and Earthbound.
+LOCATION:Crowbar Brisbane\, Fortitude Valley
+URL:https://tickets.oztix.com.au/outlet/event/03984029-e55e-43c1-a2ec-ffc6e
+ dd21288
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-99@dothings
+DTSTART;TZID=UTC:20260814T183000
+DTEND;TZID=UTC:20260814T203000
+SUMMARY:Holding Absence (UK)
+DESCRIPTION:UK-based post-hardcore band Holding Absence brings their tour t
+ o the intimate Princess Theatre setting.
+LOCATION:Princess Theatre\, Woolloongabba
+URL:https://theprincesstheatre.com.au/events
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-100@dothings
+DTSTART;TZID=UTC:20260811T190000
+DTEND;TZID=UTC:20260811T210000
+SUMMARY:Sunk Loto – The 'Dead Shadows' Tour
+DESCRIPTION:Australian alternative metal band Sunk Loto performs live as pa
+ rt of their Dead Shadows national tour.
+LOCATION:Crowbar Brisbane\, Fortitude Valley
+URL:https://tickets.oztix.com.au/outlet/event/03984029-e55e-43c1-a2ec-ffc6e
+ dd21288
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-101@dothings
+DTSTART;TZID=UTC:20260813T190000
+DTEND;TZID=UTC:20260813T210000
+SUMMARY:Phil Jamieson – PJ AIR Tour
+DESCRIPTION:Phil Jamieson\, known for his work with Grinspoon\, performs a 
+ solo set as part of his PJ AIR national tour.
+LOCATION:Crowbar Brisbane\, Fortitude Valley
+URL:https://crowbarbris.oztix.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-102@dothings
+DTSTART;TZID=UTC:20260814T190000
+DTEND;TZID=UTC:20260814T210000
+SUMMARY:Cosmo’s Midnight – Brisbane headline show
+DESCRIPTION:Australian electronic music production duo Cosmo's Midnight pla
+ ys a headline outdoor show in Brisbane.
+LOCATION:The Brightside (Outdoors)\, Fortitude Valley
+URL:https://tickets.oztix.com.au/outlet/event/2292d310-800a-47ee-8237-9a44d
+ 86e5c48
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-103@dothings
+DTSTART;TZID=UTC:20260814T190000
+DTEND;TZID=UTC:20260814T210000
+SUMMARY:BIG NOTER – It's All Good Till It's Not Tour
+DESCRIPTION:Live performance by Big Noter as part of their national tour\, 
+ hosted at Crowbar.
+LOCATION:Crowbar Brisbane\, Fortitude Valley
+URL:https://crowbarbris.oztix.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-104@dothings
+DTSTART;TZID=UTC:20260814T190000
+DTEND;TZID=UTC:20260814T210000
+SUMMARY:Cosmo's Midnight
+DESCRIPTION:Electronic duo Cosmo's Midnight perform an outdoor set at The B
+ rightside's performance space.
+LOCATION:The Brightside (Outdoors)\, Fortitude Valley
+URL:https://tickets.oztix.com.au/outlet/event/2292d310-800a-47ee-8237-9a44d
+ 86e5c48
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-105@dothings
+DTSTART;TZID=UTC:20260814T183000
+DTEND;TZID=UTC:20260814T203000
+SUMMARY:Holding Absence (w/ Kingdom of Giants & Stepson)
+DESCRIPTION:A high-intensity night of post-hardcore and metalcore featuring
+  UK's Holding Absence supported by international and local heavy acts.
+LOCATION:The Princess Theatre\, Woolloongabba
+URL:https://www.ticketmaster.com.au/holding-absence-tickets/artist/2338130
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-106@dothings
+DTSTART;TZID=UTC:20260811T190000
+DTEND;TZID=UTC:20260811T210000
+SUMMARY:Celebrating 150 Years of EKKA
+DESCRIPTION:A special commemorative event celebrating the 150th anniversary
+  of the Ekka\, featuring live musical performances at the historic Tivoli 
+ venue.
+LOCATION:The Tivoli\, Fortitude Valley
+URL:https://thetivoli.com.au/events
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-107@dothings
+DTSTART;TZID=UTC:20260814T190000
+DTEND;TZID=UTC:20260814T210000
+SUMMARY:Cool Britannia
+DESCRIPTION:A musical showcase featuring themes and tracks inspired by the 
+ British music scene.
+LOCATION:Royal Quarters\, Brisbane
+URL:https://tixel.com/au/discover/Brisbane/music-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-108@dothings
+DTSTART;TZID=UTC:20260811T180000
+DTEND;TZID=UTC:20260811T200000
+SUMMARY:EKKA AFTER DARK - Celebrating 150 years of The Ekka (feat. Casey Ba
+ rnes)
+DESCRIPTION:A celebratory musical evening featuring country artist Casey Ba
+ rnes as part of the Ekka's 150th-anniversary festivities.
+LOCATION:The Tivoli\, Brisbane
+URL:https://www.ticketmaster.com.au/section/music
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-109@dothings
+DTSTART;TZID=UTC:20260814T193000
+DTEND;TZID=UTC:20260814T213000
+SUMMARY:Rockaria – The ELO Experience
+DESCRIPTION:A live tribute act recreating the orchestral rock sound and hit
+ s of Electric Light Orchestra.
+LOCATION:The Tivoli\, Brisbane
+URL:https://www.ticketmaster.com.au/discover/brisbane?categoryId=KZFzniwnSy
+ ZfZ7v7nJ
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-110@dothings
+DTSTART;TZID=UTC:20260811T190000
+DTEND;TZID=UTC:20260811T210000
+SUMMARY:Casey Barnes (EKKA After Dark)
+DESCRIPTION:Australian country-pop artist Casey Barnes brings his high-ener
+ gy performance to The Tivoli as part of the EKKA After Dark series.
+LOCATION:The Tivoli\, Brisbane
+URL:https://thetivoli.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-111@dothings
+DTSTART;TZID=UTC:20260814T200000
+DTEND;TZID=UTC:20260814T220000
+SUMMARY:Mistah Cee and JXL
+DESCRIPTION:A DJ and electronic music set featuring Mistah Cee and JXL at E
+ clipse.
+LOCATION:Eclipse\, Fortitude Valley
+URL:https://www.songkick.com/metro-areas/26778-australia-brisbane/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-112@dothings
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260815
+SUMMARY:Parkway Drive: Killing Horizons
+DESCRIPTION:A heavy metal concert performance by Parkway Drive for their Ki
+ lling Horizons tour.
+LOCATION:The Fortitude Music Hall\, Fortitude Valley
+URL:https://fortitudemusichall.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-113@dothings
+DTSTART;TZID=UTC:20260811T180000
+DTEND;TZID=UTC:20260811T200000
+SUMMARY:EKKA After Dark — Casey Barnes + guests
+DESCRIPTION:A live music showcase featuring country artist Casey Barnes as 
+ part of the official Ekka twilight entertainment program.
+LOCATION:The Tivoli\, Fortitude Valley
+URL:https://www.ekka.com.au/entertainment-program/ekka-after-dark/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-114@dothings
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260810
+SUMMARY:EKKANITES / Ekka – Royal Queensland Show
+DESCRIPTION:Nightly live musical entertainment held at the main arena as pa
+ rt of the annual Royal Queensland Show festivities.
+LOCATION:Brisbane Showgrounds\, Bowen Hills
+URL:https://www.ekka.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-115@dothings
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260811
+SUMMARY:EKKANITES / Ekka – Royal Queensland Show
+DESCRIPTION:Nightly live musical performances held at the main arena as par
+ t of the Ekka programme.
+LOCATION:Brisbane Showgrounds\, Bowen Hills
+URL:https://www.ekka.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-116@dothings
+DTSTART;VALUE=DATE:20260812
+DTEND;VALUE=DATE:20260812
+SUMMARY:EKKANITES / Ekka – Royal Queensland Show
+DESCRIPTION:Nightly live musical performances held at the main arena as par
+ t of the Ekka programme.
+LOCATION:Brisbane Showgrounds\, Bowen Hills
+URL:https://www.ekka.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-117@dothings
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260813
+SUMMARY:EKKANITES / Ekka – Royal Queensland Show
+DESCRIPTION:Nightly live musical performances held at the main arena as par
+ t of the Ekka programme.
+LOCATION:Brisbane Showgrounds\, Bowen Hills
+URL:https://www.ekka.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-118@dothings
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260814
+SUMMARY:EKKANITES / Ekka – Royal Queensland Show
+DESCRIPTION:Nightly live musical performances held at the main arena as par
+ t of the Ekka programme.
+LOCATION:Brisbane Showgrounds\, Bowen Hills
+URL:https://www.ekka.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-119@dothings
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260815
+SUMMARY:EKKANITES / Ekka – Royal Queensland Show
+DESCRIPTION:Nightly live musical performances held at the main arena as par
+ t of the Ekka programme.
+LOCATION:Brisbane Showgrounds\, Bowen Hills
+URL:https://www.ekka.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-120@dothings
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260816
+SUMMARY:EKKANITES / Ekka – Royal Queensland Show
+DESCRIPTION:Nightly live musical performances held at the main arena as par
+ t of the Ekka programme.
+LOCATION:Brisbane Showgrounds\, Bowen Hills
+URL:https://www.ekka.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-121@dothings
+DTSTART;TZID=UTC:20260811T180000
+DTEND;TZID=UTC:20260811T200000
+SUMMARY:EKKA AFTER DARK – Celebrating 150 years
+DESCRIPTION:A special concert celebrating 150 years of the Ekka\, featuring
+  country artists Casey Barnes and others\, hosted at The Tivoli.
+LOCATION:The Tivoli\, Fortitude Valley
+URL:https://musick.com.au/gig/ekka-after-dark-celebrating-150-years-of-the-
+ ekka-2026-08-11/
+END:VEVENT
+BEGIN:VEVENT
+UID:brisbane-122@dothings
+DTSTART;TZID=UTC:20260815T220000
+DTEND;TZID=UTC:20260816T000000
+SUMMARY:PRECIOUS — A Club For EveryONE
+DESCRIPTION:A weekly inclusive club night offering a mix of dance\, pop\, a
+ nd house music\, serving as an official after-party location.
+LOCATION:Spice Nightlife\, Fortitude Valley
+URL:https://www.eventbrite.com.au/e/precious-a-club-for-everyone-every-satu
+ rday-night-tickets-1383523880169
 END:VEVENT
 BEGIN:VEVENT
 UID:brisbane-123@dothings
-DTSTART;VALUE=DATE:20260806
-DTEND;VALUE=DATE:20260806
-SUMMARY:Wage War\, Orthodox & HEAVENSGATE
-DESCRIPTION:A high-energy night of heavy metalcore featuring headliners Wag
- e War alongside supporting acts Orthodox and HEAVENSGATE. Expect intense\,
-  technically proficient live performance in an intimate venue setting.
-LOCATION:The Tivoli\, Fortitude Valley
-URL:https://www.thetivolibrisbane.com
+DTSTART;TZID=UTC:20260814T210000
+DTEND;TZID=UTC:20260814T230000
+SUMMARY:Shokk Presents Fraw & Sparkz
+DESCRIPTION:Electronic dance event featuring DJs Fraw and Sparkz\, presente
+ d by Shokk.
+LOCATION:The Beaumont Brisbane\, Brisbane
+URL:https://tixel.com/au/discover/Brisbane/music-tickets
 END:VEVENT
 BEGIN:VEVENT
 UID:brisbane-124@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:Humbe
-DESCRIPTION:Mexican singer-songwriter Humbe brings his fusion of pop and co
- ntemporary Latin sounds to the Brisbane stage for an intimate show.
-LOCATION:The Triffid\, Newstead
-URL:https://www.thetriffid.com.au
+DTSTART;TZID=UTC:20260814T200000
+DTEND;TZID=UTC:20260814T220000
+SUMMARY:Jon Stevens
+DESCRIPTION:Renowned Australian rock musician Jon Stevens performs a live s
+ et at the Mansfield Tavern.
+LOCATION:Mansfield Tavern\, Mansfield
+URL:https://tixel.com/au/discover/Brisbane/music-tickets
 END:VEVENT
 BEGIN:VEVENT
 UID:brisbane-125@dothings
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260808
-SUMMARY:Verona Lights
-DESCRIPTION:Verona Lights bring their brand of high-energy rock to Crowbar.
-  Expect a loud\, late-night atmosphere characteristic of this valley mains
- tay.
-LOCATION:Crowbar Brisbane\, Fortitude Valley
-URL:https://crowbarbrisbane.com
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260815
+SUMMARY:Up All Night: One Direction 16th Anniversary Party
+DESCRIPTION:A themed party celebrating the music and anniversary of the ban
+ d One Direction.
+LOCATION:The Triffid\, Newstead
+URL:https://thetriffid.com.au
 END:VEVENT
 BEGIN:VEVENT
 UID:brisbane-126@dothings
-DTSTART;VALUE=DATE:20260809
-DTEND;VALUE=DATE:20260809
-SUMMARY:Live Music at The Drift
-DESCRIPTION:Weekly live music showcase at The Drift Bar featuring local per
- formers. A relaxed environment suitable for listening to acoustic or small
- -ensemble sets.
-LOCATION:The Drift Bar
-URL:https://vertexaisearch.cloud.google.com
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-127@dothings
-DTSTART;VALUE=DATE:20260806
-DTEND;VALUE=DATE:20260806
-SUMMARY:Andrew Farriss - The Prospector Tour
-DESCRIPTION:Andrew Farriss brings his signature songwriting style to an int
- imate live setting as part of The Prospector Tour.
-LOCATION:Black Bear Lodge\, Fortitude Valley
-URL:https://blackbearlodge.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-128@dothings
-DTSTART;VALUE=DATE:20260807
-DTEND;VALUE=DATE:20260807
-SUMMARY:RAGEFLOWER - THE TWINSTAR TOUR
-DESCRIPTION:Alternative rock outfit RAGEFLOWER performs live for the Brisba
- ne leg of their Twinstar tour.
-LOCATION:Black Bear Lodge\, Fortitude Valley
-URL:https://blackbearlodge.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-129@dothings
-DTSTART;VALUE=DATE:20260809
-DTEND;VALUE=DATE:20260809
-SUMMARY:Off Broadway
-DESCRIPTION:A live musical showcase presented at the Brisbane Powerhouse\, 
- highlighting theatrical and Broadway-style performances. Expect a seated p
- roduction focused on musical entertainment.
-LOCATION:Brisbane Powerhouse
-URL:https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8
- th2aAIE-HnZu60_k3A7XnkmF1Pf9vbaDn88TeuLI-L4o8XP111s46flOaAloOQbXljS-yEMr4X
- Dy06aIJJ3epywDt75h25CSYs8vZ87waEr4wIyhyLDFDuO08WHdrpnZoXeXSC3snBU
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-130@dothings
-DTSTART;TZID=UTC:20260809T201500
-DTEND;TZID=UTC:20260809T221500
-SUMMARY:Live Music In The Courtyard
-DESCRIPTION:An evening of live entertainment set in the outdoor courtyard o
- f the historic Regatta Hotel.
-LOCATION:Regatta Hotel
-URL:https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr
- MRIbMHqeijld7Y4U_IQzBvmjiiLXkPzVx7snXvj4ZA0ZV4rDT0tdqQflEr91tmtye82zIuFS6B
- 4oQ1pBb7fqnrUhEAmD84aBU6m590tjKVrTHSwt5TXKXks9Xo0q53rnD6DJA9VsBQLSzlYUaAcO
- T0RMxiuAEA=
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-131@dothings
-DTSTART;TZID=UTC:20260807T193000
-DTEND;TZID=UTC:20260807T213000
-SUMMARY:HUMBE — Dueño del Cielo Tour
-DESCRIPTION:Mexican singer-songwriter Humbe brings his melodic\, Latin-pop 
- sound to Brisbane for his international tour.
-LOCATION:The Triffid\, Newstead QLD
-URL:https://www.thetriffid.com.au/all-events/humbe-tickets-ae1520569
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-132@dothings
-DTSTART;TZID=UTC:20260807T190000
-DTEND;TZID=UTC:20260807T210000
-SUMMARY:NOASIS + Clone Roses — Australian Tour
-DESCRIPTION:A tribute show featuring high-energy recreations of classic Bri
- tish indie-rock anthems from Oasis and The Stone Roses.
-LOCATION:Felons Barrel Hall\, Brisbane City QLD
-URL:https://tickets.oztix.com.au/outlet/event/7306ad6b-e1cf-430a-8550-3c919
- ed6dd26
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-133@dothings
-DTSTART;TZID=UTC:20260807T170000
-DTEND;TZID=UTC:20260807T190000
-SUMMARY:Sundowners (beer garden selectors)
-DESCRIPTION:A recurring Friday evening event featuring various guest DJs an
- d selectors playing music in the beer garden. It is designed as a casual s
- ocial setting to transition into the weekend.
-LOCATION:The Triffid Beer Garden\, 7-9 Stratton St\, Newstead QLD
-URL:https://www.thetriffid.com.au/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-134@dothings
-DTSTART;TZID=UTC:20260807T190000
-DTEND;TZID=UTC:20260807T210000
-SUMMARY:Clone Roses (UK) + NOASIS (Stone/The Oasis tribute)
-DESCRIPTION:A tribute night featuring UK-based Stone Roses act Clone Roses 
- alongside Oasis tribute band NOASIS in a vibrant riverside hall.
-LOCATION:Felons Barrel Hall\, Brisbane
-URL:https://www.noasis.com.au/dates-tickets
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-135@dothings
-DTSTART;TZID=UTC:20260807T190000
-DTEND;TZID=UTC:20260807T210000
-SUMMARY:The Nashville Jukebox Presents: HURRICANE — The Australian Luke C
- ombs Tribute + Cowgirls Don't Cry
-DESCRIPTION:A themed country music night featuring a Luke Combs tribute ban
- d and supporting act Cowgirls Don't Cry at a classic honky-tonk venue.
-LOCATION:Lefty’s Music Hall\, South Brisbane
-URL:https://musick.com.au/venue/lefty-s-music-hall/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-136@dothings
-DTSTART;TZID=UTC:20260808T190000
-DTEND;TZID=UTC:20260808T210000
-SUMMARY:Sunk Loto — 'Dead Shadows' Tour
-DESCRIPTION:Australian alternative metal band Sunk Loto performs their heav
- y-hitting sound as part of their national 'Dead Shadows' tour.
-LOCATION:Crowbar Brisbane\, Fortitude Valley
-URL:https://crowbarbris.oztix.com.au/Default.aspx
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-137@dothings
-DTSTART;TZID=UTC:20260804T193000
-DTEND;TZID=UTC:20260804T213000
-SUMMARY:Humbe – Dueño del Cielo Tour
-DESCRIPTION:Mexican singer-songwriter Humbe brings his synth-pop and R&B in
- fluenced sound to the intimate Princess Theatre stage.
-LOCATION:The Princess Theatre\, Woolloongabba
-URL:https://brisbanespots.com/events/this-month
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-138@dothings
-DTSTART;TZID=UTC:20260809T190000
-DTEND;TZID=UTC:20260809T210000
-SUMMARY:Sushant KC Live in Brisbane
-DESCRIPTION:Nepali pop artist Sushant KC headlines The Fortitude Music Hall
-  with a high-energy live performance.
-LOCATION:The Fortitude Music Hall\, Fortitude Valley
-URL:https://brisbanespots.com/events/this-month
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-139@dothings
-DTSTART;TZID=UTC:20260809T190000
-DTEND;TZID=UTC:20260809T210000
-SUMMARY:Babbu Maan Live – Virsaa Productions
-DESCRIPTION:Renowned Punjabi singer\, songwriter\, and actor Babbu Maan per
- forms a live concert for local fans.
-LOCATION:Sleeman Sports Complex\, Chandler
-URL:https://stadiums.qld.gov.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-140@dothings
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260808
-SUMMARY:Ekka – Royal Queensland Show Main Stage Music
-DESCRIPTION:Daily live music entertainment featuring local bands and perfor
- mers on the main stage at the annual Royal Queensland Show.
-LOCATION:Brisbane Showgrounds\, Bowen Hills
-URL:https://www.ikonix.com.au/ultimate-guide-to-brisbane-events-august-sept
- ember-october-2026/
-END:VEVENT
-BEGIN:VEVENT
-UID:brisbane-141@dothings
-DTSTART;VALUE=DATE:20260809
-DTEND;VALUE=DATE:20260809
-SUMMARY:Ekka – Royal Queensland Show Main Stage Music
-DESCRIPTION:Daily live music entertainment featuring local bands and perfor
- mers on the main stage at the annual Royal Queensland Show.
-LOCATION:Brisbane Showgrounds\, Bowen Hills
-URL:https://www.ikonix.com.au/ultimate-guide-to-brisbane-events-august-sept
- ember-october-2026/
+DTSTART;TZID=UTC:20260815T220000
+DTEND;TZID=UTC:20260816T000000
+SUMMARY:MY LITTLE PONY RAVE BRISBANE
+DESCRIPTION:A themed dance party centered around pop culture fandom and hig
+ h-energy electronic music.
+LOCATION:The Brightside\, Fortitude Valley
+URL:https://tixel.com/au/discover/Brisbane/music-tickets
 END:VEVENT
 END:VCALENDAR
