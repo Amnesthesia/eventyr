@@ -2,76 +2,53 @@
   "city_key": "goldcoast",
   "provider": "openai",
   "tier": "aggregators",
-  "week_start": "2026-08-10",
-  "week_end": "2026-08-16",
+  "week_start": "2026-08-17",
+  "week_end": "2026-08-23",
   "events": [
     {
-      "title": "TEDxTAFE Queensland — COMM-Unity: Connected Humans. Collective Potential",
-      "datetime": "Wed 12 Aug, 12:00 PM",
-      "location": "TAFE Queensland Southport Campus, Southport",
-      "link": "https://www.ted.com/tedx/events/69819",
-      "category": "Public Lecture",
-      "cost": "Ticketed",
-      "source": "TEDxTAFE Queensland",
-      "description": "A series of TED-style talks focused on human connection and collective potential, featuring local thinkers and innovators sharing ideas on community dynamics.",
-      "tags": [
-        "tedx",
-        "ideas",
-        "community",
-        "lecture"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false,
-      "datetime_iso": "2026-08-12T12:00:00",
-      "datetime_end_iso": "2026-08-12T16:00:00",
-      "image": ""
-    },
-    {
-      "title": "Lessons in Disaster (training)",
-      "datetime": "Mon 10 Aug, 9:30 AM",
-      "location": "Varsity Lakes Community Resource Centre, Varsity Lakes",
-      "link": "https://www.eventbrite.com.au/e/lessons-in-disaster-gold-coast-august-2026-tickets-1991512579736",
-      "category": "Workshop / Class",
-      "cost": "Free",
-      "source": "Gender and Disaster Australia",
-      "description": "A research-based workshop exploring how disaster impacts and resilience are shaped by gender, providing insights into social systems and community emergency management.",
-      "tags": [
-        "disaster",
-        "social",
-        "workshop",
-        "free"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": true,
-      "creative": false,
-      "datetime_iso": "2026-08-10T09:30:00",
-      "datetime_end_iso": "2026-08-10T16:30:00",
-      "image": ""
-    },
-    {
       "title": "4 ASD Kids Art Exhibition and Auction",
-      "datetime": "Mon 10 Aug, 8:00 AM",
+      "datetime": "Mon 17 Aug, 8:00 AM",
       "location": "Gallery 8, Southport",
       "link": "https://www.whatsongoldcoast.au/All-events/4-ASD-Kids-Art-Exhibition-and-Auction",
       "category": "Arts / Exhibition",
       "cost": "Free",
-      "source": "4ASDKids / Gallery 8",
-      "description": "An exhibition showcasing the creative expression of neurodivergent children, featuring an auction to support community youth programs.",
+      "source": "4ASDKids / Little Charity Auctions",
+      "description": "A community-focused art exhibition showcasing works by children on the autism spectrum, featuring an auction to support the organisation's ongoing initiatives.",
       "tags": [
         "art",
         "exhibition",
-        "community",
-        "free"
+        "charity",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-17T08:00:00",
+      "datetime_end_iso": "2026-08-17T15:00:00",
+      "image": ""
+    },
+    {
+      "title": "Heartbreak Hotel (theatre)",
+      "datetime": "Wed 19 Aug, 7:00 PM",
+      "location": "Black Box Theatre, HOTA, Surfers Paradise",
+      "link": "https://hota.com.au/events/heartbreak-hotel",
+      "category": "Arts / Exhibition",
+      "cost": "$32 – $39",
+      "source": "HOTA (Home of the Arts)",
+      "description": "An intimate theatrical production hosted at HOTA's Black Box Theatre, offering an experimental and creative performance experience for local audiences.",
+      "tags": [
+        "theatre",
+        "performance",
+        "arts",
+        "hota"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true,
-      "datetime_iso": "2026-08-10T08:00:00",
-      "datetime_end_iso": "2026-08-10T15:00:00",
+      "datetime_iso": "2026-08-19T19:00:00",
+      "datetime_end_iso": "2026-08-22T21:30:00",
       "image": ""
     }
   ]

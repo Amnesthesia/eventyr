@@ -2,53 +2,53 @@
   "city_key": "goldcoast",
   "provider": "anthropic",
   "tier": "institutions",
-  "week_start": "2026-08-10",
-  "week_end": "2026-08-16",
+  "week_start": "2026-08-17",
+  "week_end": "2026-08-23",
   "events": [
     {
-      "title": "HOTA Farmers and Artisan Market",
-      "datetime": "Sun 16 Aug, 6:00 AM",
-      "location": "HOTA Precinct, 135 Bundall Rd, Surfers Paradise",
-      "link": "https://hota.com.au/visit-and-explore/local-markets",
-      "category": "Community / Other",
-      "cost": "Free",
-      "source": "Goodwill Projects / HOTA",
-      "description": "A curated outdoor market showcasing local artisans, farmers, and organic produce creators set within the HOTA arts precinct. It serves as a community hub for locals to engage with small-scale makers and food growers.",
-      "tags": [
-        "community",
-        "local",
-        "markets",
-        "food"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false,
-      "datetime_iso": "2026-08-16T06:00:00",
-      "datetime_end_iso": "2026-08-16T11:30:00",
-      "image": ""
-    },
-    {
-      "title": "Anna Carey, Magic + Memory: make me a home",
-      "datetime": "Daily 10-16 Aug, 10:00 AM",
+      "title": "Aka Sorbie: Saltwater Heart",
+      "datetime": "Until Tue 18 Aug, 10:00 AM",
       "location": "HOTA Gallery, Surfers Paradise",
       "link": "https://hota.com.au/whats-on/exhibitions",
       "category": "Arts / Exhibition",
       "cost": "Free",
-      "source": "HOTA, supported by Experience Gold Coast",
-      "description": "An immersive exhibition by Anna Carey exploring themes of memory, architecture, and nostalgia through photographs and model-making. It offers a thoughtful space to reflect on the concept of home and constructed identity.",
+      "source": "HOTA",
+      "description": "An immersive exhibition featuring the works of the artist collective Aka Sorbie, exploring themes of connection, environment, and cultural identity through diverse artistic mediums.",
       "tags": [
         "art",
+        "culture",
         "exhibition",
-        "design",
-        "gallery"
+        "free"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-11T10:00:00",
+      "datetime_end_iso": "2026-08-18T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Highlights from HOTA's Collection",
+      "datetime": "Ongoing, 10:00 AM",
+      "location": "HOTA Gallery, Surfers Paradise",
+      "link": "https://hota.com.au/whats-on/exhibitions",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "HOTA",
+      "description": "A curated selection of significant artworks from HOTA's permanent collection, showcasing regional creative history and contemporary artistic movements.",
+      "tags": [
+        "art",
+        "history",
+        "exhibition",
+        "free"
+      ],
+      "social": false,
+      "intellectual": false,
       "hands_on": false,
       "creative": true,
       "datetime_iso": "2026-08-10T10:00:00",
-      "datetime_end_iso": "2026-08-16T17:00:00",
+      "datetime_end_iso": "",
       "image": ""
     }
   ]
