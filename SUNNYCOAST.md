@@ -1,733 +1,1149 @@
 # Sunshine Coast — This Week's Events
-**3 August 2026 – 9 August 2026**  
-*33 top picks · 90 events total*
+**17 August 2026 – 23 August 2026**  
+*47 top picks · 142 events total*
 
 ## ⭐ Top Picks
 
-### 🤝 [STOICISM SUNSHINE COAST](https://www.meetup.com/stoicism-sunshine-coast/events/302279769)
-📆 9 August 2026, 11:00 am  
-📍 Check venue on listing  
+### 🎓 [Human Factors and Systems Science Symposium](https://www.usc.edu.au)
+📆 21 August 2026, 8:00 AM  
+📍 UniSC Sunshine Coast, Sippy Downs  
+💰 Contact organiser  
+`systems thinking` `science` `lecture`
+
+A symposium focused on human factors and systems science, bringing together researchers and thinkers to discuss complex systems, technology, and design.
+
+### 🎓 [Human Factors and Systems Science Symposium](https://www.unisc.edu.au/research/centre-for-human-factors-and-systems-science/human-factors-and-systems-science-symposium)
+📆 Thu 20 Aug, 9:00 AM  
+📍 UniSC Sunshine Coast, Sippy Downs  
 💰 Free  
-`philosophy` `discussion` `community` `free`
+`systems thinking` `science` `lecture` `free`
 
-A gathering for those interested in Stoic philosophy to discuss practical applications of ancient wisdom to modern life. Expect thoughtful conversation and a community-led exploration of human behavior and resilience.
+A research-focused symposium exploring the application of systems thinking and human factors science to complex real-world problems.
 
-### 🤝 [The In Progress Table — conversation salon (TTT Club)](https://events.humanitix.com/the-in-progress-table6thaug)
-📆 Thu 6 Aug, 7:00 PM  
-📍 Cafe 63, Sunshine Plaza, Maroochydore  
-💰 $10+  
-`discussion` `salon` `social` `community`
-
-An intimate, facilitated conversation salon focusing on ongoing projects and shared ideas, designed to connect curious locals for meaningful dialogue.
-
-### 🤝 [No Phone Analog Group — Maroochydore meetup](https://www.meetup.com/en-au/no-phone-sunshine-coast-social-group/events/315691134/)
-📆 Sat 8 Aug, 4:00 PM  
-📍 Beach Bar Cotton Tree, Maroochydore  
+### 🛠️ [Human Factors and Systems Science Methods Workshops](https://www.unisc.edu.au/research/centre-for-human-factors-and-systems-science/human-factors-and-systems-science-symposium)
+📆 Fri 21 Aug, 9:00 AM  
+📍 UniSC Sunshine Coast, Sippy Downs  
 💰 Free  
-`social` `community` `conversation` `free`
+`systems thinking` `science` `workshop` `free`
 
-A social meetup encouraging face-to-face interaction and intentional conversation by keeping devices away, fostering genuine connection between local attendees.
+Interactive sessions focusing on the practical application of human factors methodology in research and design contexts.
 
-### 🎵 [Wednesday Open Mic Night](https://www.solbar.com.au/book-my-band)
-📆 Wed 5 Aug, 6:00 PM  
-📍 Solbar, Ocean Street, Maroochydore  
+### 🎵 [Solbar Open Mic Night](https://www.solbar.com.au/book-my-band)
+📆 Wed 19 Aug, Evening  
+📍 Solbar, Maroochydore  
 💰 Free  
-`music` `performance` `local` `free`
+`open-mic` `music` `community` `free`
 
-A recurring weekly showcase featuring local musicians, poets, and performers taking the stage for short sets. It is a community-focused night that encourages spontaneous artistic expression.
+A community-driven open mic session where local musicians, poets, and performers take the stage. An excellent place to discover emerging talent and meet fellow creatives.
 
-### 🎵 [Hunker In The Bunker Jam Night](https://www.imperialhoteleumundi.com.au/whats-on)
-📆 Wed 5 Aug, 7:00 PM  
-📍 Imperial Hotel Eumundi, The Bunker  
+### 🎓 [Two Hellenistic Cities: Alexandria and Pergamon](https://events.sunshinecoast.qld.gov.au)
+📆 17 August 2026, 5:45 PM  
+📍 ANSC Caloundra, Caloundra  
 💰 Free  
-`music` `jam` `community` `free`
+`history` `lecture` `free`
 
-An open jam session held in the historic Bunker venue, inviting musicians to collaborate and perform in an informal, creative setting. Ideal for those looking to connect with the local music scene.
+An engaging public lecture exploring the cultural and historical significance of the ancient cities of Alexandria and Pergamon. This event provides an intellectual dive into history for local residents interested in ancient civilizations.
 
-### 🎨 [LORE and LAND Exhibition](https://www.sunshinecoast.qld.gov.au/exhibitions)
-📆 Ongoing through to Sun 16 Aug, open 10am-4pm  
-📍 Caloundra Regional Gallery, Caloundra  
-💰 Free  
-`art` `history` `culture` `free`
+### 🎨 [SUNSHINE COAST – Australian Poetry Slam Heat](https://australianpoetryslam.com)
+📆 22 August 2026, 6:00 PM  
+📍 Millwell Rd Community Centre, Maroochydore  
+💰 Contact organiser  
+`poetry` `performance` `creativity`
 
-A curated exhibition exploring the intersection of Indigenous knowledge, cultural heritage, and the natural landscape of the Sunshine Coast. The gallery provides an intellectually engaging space for reflection on local history and environmental connection.
+A high-energy poetry slam competition where local writers and performers share their original works, fostering a creative and community-focused atmosphere.
 
-### 🤝 [Rosetta Books Book Club](rosettabooks.com.au/pages/9133-BookClub)
-📆 Thu 6 Aug, 6:00 PM  
-📍 Lane 32 Woodfired Pizza, Maleny  
-💰 Free  
-`books` `discussion` `community` `free`
-
-A relaxed monthly book club hosted by an independent bookstore, providing an opportunity for readers to discuss literature over dinner in an intimate local setting.
-
-### 🤝 [Bushwalking 20s & 30s Sunshine Coast – Weekly Walk & Talk](meetup.com/en-AU/hiking-for-millennials/)
-📆 3–9 August 2026  
-📍 Various Sunshine Coast nature locations  
-💰 Free  
-`hiking` `social` `nature` `youth`
-
-A peer-led walking group for younger adults to connect and talk while trekking through the region's nature spots, prioritizing social bonding over intense activity.
-
-### 🎵 [Alive in Sound](https://eventbrite.com.au)
-📆 8 August 2026, 3:30 pm  
-📍 White Eagle Lodge, Witta  
-💰 TBA  
-`music` `sound` `experience`
-
-An immersive sound-based event hosted in Witta, designed for active listening and sonic exploration in a tranquil environment.
-
-### 📌 [Fauna Monitoring at Mary Cairncross](https://mary-cairncross.sunshinecoast.qld.gov.au)
-📆 7 Aug 2026, 3:30 PM  
-📍 148 Mountain View Rd, Maleny  
-💰 Free  
-`nature` `biology` `conservation` `free`
-
-Join a volunteer-led session to learn about local biodiversity and assist in tracking native wildlife within the rainforest reserve.
-
-### 🎵 [Silent Film: Dr Jeckyll & Mr Hyde (1920)](https://www.themajestictheatre.com.au)
-📆 8 Aug 2026, 7:00 PM  
-📍 3 Factory Street, Pomona  
-💰 Check website  
-`film` `history` `music` `performance`
-
-An immersive screening of the 1920 silent classic at an iconic heritage theatre, featuring live musical accompaniment.
-
-### 🎵 [Blue Moon — Film Screening (Maleny Film Society)](https://malenyfilmsociety.au/maleny-film-society-home-page)
-📆 Sat 8 Aug, 3:00 PM & 7:00 PM  
-📍 Maleny Community Centre, Maleny  
-💰 $25 Adults / $20 Concession  
-`film` `cinema` `community` `art`
-
-An intimate film screening hosted by the local community film society, providing a space for cinema appreciation and post-film discussion among locals.
-
-### 🎵 [Film Screening – Blue Moon (matinee)](https://malenyinfocentre.edublogs.org/coming-events/)
-📆 8 August 2026, 3:00 PM  
-📍 Maleny Community Centre, 23 Maple Street, Maleny QLD  
-💰 Tickets TBA  
-`film` `cinema` `community` `arts`
-
-An afternoon screening of the film Blue Moon held at the historic and community-focused Maleny Community Centre. This event offers a chance to experience independent cinema in an intimate local setting.
-
-### 🎵 [Film Screening – Blue Moon (evening)](https://malenyinfocentre.edublogs.org/coming-events/)
-📆 8 August 2026, 7:00 PM  
-📍 Maleny Community Centre, 23 Maple Street, Maleny QLD  
-💰 Tickets TBA  
-`film` `cinema` `community` `arts`
-
-An evening screening of the film Blue Moon at the Maleny Community Centre, providing an atmospheric viewing experience in a local, historic venue.
-
-### 🎵 [SILENT FILM – DR JECKYLL & MR HYDE (with live accompaniment)](https://themajestictheatre.com.au/events/silent-film-dr-jeckyll-mr-hyde/)
-📆 Sat 8 Aug, 12:00 PM  
-📍 The Majestic Theatre, Pomona  
-💰 $15  
-`music` `film` `performance`
-
-A screening of the classic silent film Dr. Jeckyll & Mr. Hyde featuring live musical accompaniment on the theatre's original organ.
-
-### 🎓 [Fauna Monitoring at Mary (Cairncross Conversations)](https://www.eventbrite.com.au/e/fauna-monitoring-at-mary-tickets-1993890352719)
-📆 7 Aug 2026, 3:30 PM  
-📍 Mary Cairncross Scenic Reserve, Maleny  
-💰 Free  
-`science` `nature` `ecology` `free`
-
-An intellectually engaging talk about wildlife research and fauna monitoring techniques within the local rainforest reserve, aimed at curious community members.
-
-### 🎵 [Open Mic Night (weekly)](https://www.solbar.com.au/gig-guide/)
-📆 Wed 5 Aug, 6:00 PM  
-📍 Solbar, 10/12-20 Ocean St, Maroochydore QLD  
-💰 Free  
-`music` `open mic` `free` `local`
-
-A weekly community-focused open mic event showcasing local musicians and emerging talent in a casual, supportive environment.
-
-### 🎓 [Australian International Documentary Conference – Regionality Sunshine Coast](https://www.sunshinecoast.qld.gov.au/news/sport-food-and-fun-your-guide-to-august-events)
-📆 Fri 7 Aug, 9:00 AM  
-📍 Maroochy RSL, Maroochydore  
-💰 Free  
-`documentary` `film` `creativity` `lecture`
-
-A regional gathering for filmmakers and storytellers focused on the craft of documentary filmmaking, offering insights into industry trends and creative distribution. This is a professional-grade event suitable for those interested in non-fiction narrative and media production.
-
-### 🤝 [Women's Walk And Talk – Sunshine Coast](meetup.com/en-AU/find/au--maleny/walkers/)
-📆 Wed 5 Aug, 10:00 AM  
-📍 Sunshine Coast  
-💰 Low cost  
-`hiking` `social` `outdoors` `wellness`
-
-A regular social walking group designed to foster connection through conversation while exploring local trails, aimed at women looking for authentic community interaction.
-
-### 🤝 [Sunshine Coast Hiking Group – Weekly Hike](meetup.com/sunshine-coast-hiking-group/)
-📆 Fri 7 Aug, 7:00 AM  
-📍 Various Sunshine Coast trailheads  
-💰 $2-3  
-`hiking` `outdoors` `fitness` `community`
-
-A recurring group hike that encourages camaraderie among local adventure enthusiasts while exploring the Sunshine Coast's varied natural landscapes.
-
-### 🤝 [Sunshine Coast Hiking Group – Sunday Hike](meetup.com/en-AU/Sunshine-Coast-Hiking-Group/)
-📆 Sun 9 Aug, 8:00 AM  
-📍 Various Sunshine Coast trailheads  
-💰 $2-3  
-`hiking` `outdoors` `community` `fitness`
-
-A recurring Sunday morning hiking meet-up intended for those who enjoy nature and meeting new people in a casual, active group setting.
-
-### 🎨 [NAIDOC: LORE | Land Exhibition](gallery.sunshinecoast.qld.gov.au/exhibitions)
-📆 3–9 August 2026  
+### 🛠️ [Acrylic wildflower painting](https://library.sunshinecoast.qld.gov.au)
+📆 17 Aug - 31 Aug  
 📍 Caloundra Regional Gallery  
 💰 Free  
-`art` `culture` `exhibition` `free`
+`art` `workshop` `painting` `free`
 
-An art exhibition focused on Indigenous connection to country, offering deep cultural insights and aesthetic exploration through regional artistic narratives.
+A hands-on workshop series focused on acrylic painting techniques to create floral-themed artwork, hosted by the local library service.
 
-### 🎵 Noosa Jazz Festival 2026
-📆 Aug 28 - Sep 06, 6:00 PM  
-📍 Noosa Jazz Club/Majestic Theatre  
-💰 Unknown  
-`jazz` `festival` `music`
+### 🛠️ [Studio Drawing and Watercolour Course](https://www.eventbrite.com.au/e/studio-drawing-and-watercolour-course-tickets-1234567890)
+📆 21 Aug 2026, 2:00 PM  
+📍 Sunshine Coast  
+💰 $240  
+`art` `workshop` `drawing` `painting`
 
-A multi-day music festival celebrating jazz across various venues including the iconic Majestic Theatre. Expect a range of performances from contemporary and traditional jazz artists.
+A guided multi-session course focusing on foundational drawing techniques and watercolour application in a studio setting. Designed for those looking to develop artistic skills through hands-on practice.
 
-### 🎨 [NAIDOC: LORE | Land exhibition](https://gallery.sunshinecoast.qld.gov.au/exhibitions)
-📆 3 July – 16 August 2026  
-📍 Caloundra Regional Gallery, Bulcock St, Caloundra  
+### 🛠️ [Beginners On The Pottery Wheel](https://www.eventbrite.com.au/e/beginners-on-the-pottery-wheel-tickets-1234567890)
+📆 22 Aug 2026, 1:00 PM  
+📍 Sunshine Coast  
+💰 $110  
+`pottery` `workshop` `craft` `beginner`
+
+A hands-on introductory workshop teaching the basics of throwing clay on a pottery wheel. Participants will learn fundamental skills to create their own ceramic pieces.
+
+### 🎓 [UniSC STEM Showcase](https://www.unisc.edu.au/community/schools-engagement/schools-engagement-events/stem-showcase)
+📆 Tue 18 Aug, 4:30 PM  
+📍 UniSC Sunshine Coast, Sippy Downs  
 💰 Free  
-`art` `history` `culture` `free`
+`stem` `technology` `science` `free`
 
-An immersive exhibition exploring the deep connection between Indigenous culture, Lore, and the land, featuring works from contemporary First Nations artists.
+An interactive showcase highlighting current research and innovation in STEM fields, offering a window into technological and scientific progress at the university.
 
-### 🎨 [THREE EXHIBITIONS: THREE WORLDS TO DISCOVER](https://www.noosaregionalgallery.com.au/)
-📆 18 July – 12 September 2026  
-📍 Noosa Regional Gallery, 9 Pelican St, Tewantin  
+### 🎓 [STEM Showcase (UniSC Science, Technology & Engineering Showcase)](https://www.unisc.edu.au/community/schools-engagement/schools-engagement-events/stem-showcase)
+📆 Tue 18 Aug, 4:30 PM  
+📍 UniSC Sunshine Coast (Sippy Downs)  
 💰 Free  
-`art` `exhibition` `design` `free`
+`stem` `science` `technology` `lecture`
 
-A diverse showcase featuring three concurrent exhibitions that highlight experimental artistic techniques and narrative-driven visual storytelling.
+An interactive showcase highlighting the latest developments in science, technology, and engineering, aimed at those curious about research and modern innovation.
 
-### 🎵 [PWC Lost EP Album Launch](https://thepresynct.com.au)
-📆 Friday 7 August 2026  
-📍 The Presynct, Nambour  
-💰 $12  
-`local` `indie` `music`
+### 🎓 [The Adaptation Game – climate change and your community](https://www.unisc.edu.au/community/events/the-adaptation-game-climate-change-and-your-community)
+📆 Fri 20 Aug, 4:00 PM  
+📍 UniSC Sunshine Coast, Sippy Downs  
+💰 Free  
+`climate` `systems` `discussion` `free`
 
-An intimate live music performance celebrating the release of a new EP by local artist PWC.
+An interactive session exploring climate adaptation strategies through simulation, intended to foster community dialogue on environmental resilience.
 
-### 🎵 [VanderAa with Big In Japan](https://blackflagtaphouse.com.au)
-📆 Saturday 8 August 2026  
-📍 Black Flag Taphouse, Mooloolaba  
+### 🎵 [Fruit Bats (USA) Solo](https://whatslively.com/gig-guide/sunshine-coast-australia)
+📆 Fri 21 Aug, Time TBC  
+📍 Mapleton Public House  
+💰 Check ticket price (Oztix)  
+`folk` `indie` `acoustic` `music`
+
+Eric D. Johnson performs a solo set as Fruit Bats, bringing his signature indie-folk sound to the hinterland. An atmospheric evening in a rustic local venue.
+
+### 🎵 [Girl From Greece](https://whatslively.com/gig-guide/sunshine-coast-australia)
+📆 Sat 22 Aug, Time TBC  
+📍 The Old Ambulance Station  
+💰 Check ticket price  
+`live` `music` `performance` `independent`
+
+An evening of creative musical performance held at the arts-focused Old Ambulance Station. This venue typically hosts independent and experimental acts.
+
+### 🎵 [Jazz After Sunset – with The Primetime Sextet](https://allevents.in/sunshine-coast/all)
+📆 Sat 22 Aug, 6:30 PM  
+📍 Buderim War Memorial Hall  
+💰 Check ticket price  
+`jazz` `music` `live` `atmosphere`
+
+A refined evening of live jazz featuring the Primetime Sextet. Perfect for those looking for a sophisticated, atmospheric musical experience in a historic community venue.
+
+### 🎵 [Live Music at Norton Music Factory (weekly gig night)](https://nortonmusicfactory.com.au/events/)
+📆 Fri 21 Aug, 12:00 AM  
+📍 Norton Music Factory, Caloundra West  
+💰 Ticketed  
+`music` `live` `original`
+
+A weekly gig night showcasing local original artists and bands in a dedicated rehearsal/performance space.
+
+### 🎵 [Norton Music Factory Live Sessions](https://www.bandsintown.com/c/caloundra-australia)
+📆 Sat 22 Aug, Time Unknown  
+📍 Norton Music Factory, Caloundra West  
+💰 Free/low-cost  
+`music` `local` `creative`
+
+Live music sessions hosted within a rehearsal and creative space facility. These sessions often feature local bands in an intimate, grassroots environment.
+
+### 🎵 [June Garber & Friends at The Jazz Sessions](https://www.eventfinda.com.au)
+📆 20 Aug 2026  
+📍 Nambour  
 💰 Check website  
-`indie` `live` `music`
+`jazz` `music` `concert`
 
-A live double-bill concert featuring alternative indie performances by VanderAa and Big In Japan.
+An intimate jazz performance featuring vocalist June Garber and her ensemble as part of a recurring local music series.
 
-### 🎵 [Thelma Plum](https://imperialhoteleumundi.com.au)
-📆 8 August 2026, 7:00 pm  
-📍 Imperial Hotel Eumundi  
-💰 $72  
-`indie` `music` `concert` `$72`
+### 🎨 [Acting Up!'s Season of Four One Act Plays](https://everi.com.au)
+📆 21 August 2026, Times vary  
+📍 The Lind Theatre, Nambour  
+💰 $18 - $30  
+`theatre` `performance` `arts`
 
-Acclaimed singer-songwriter Thelma Plum performs an intimate headline show in the historic setting of the Imperial Hotel.
+A showcase of four distinct one-act plays hosted by the local Lind Theatre community, offering an intimate experience of experimental and fringe-style dramatic performances.
 
-### 🎨 [Continuum (Australian Ceramics Association)](https://www.noosaregionalgallery.com.au)
-📆 3 Aug 2026, 10:00 AM  
-📍 9 Pelican St, Tewantin  
+### 🎵 [Open Mic Night](https://thepresynct.com.au)
+📆 19 Aug 2026  
+📍 The Presynct, Nambour  
+💰 Contact venue  
+`music` `open-mic` `performance`
+
+A local showcase event inviting musicians and performers of all levels to take the stage at this intimate community venue.
+
+### 🎵 [Acting Up! A Season of Four One Act Plays](https://lindlane.com.au)
+📆 22 August 2026  
+📍 Lind Lane Theatre, Nambour  
+💰 Check website  
+`theatre` `performance` `community`
+
+Continuing performances of the local community theatre season showcasing short-form dramatic works.
+
+### 🎵 [Acting Up! A Season of Four One Act Plays](https://lindlane.com.au)
+📆 23 August 2026  
+📍 Lind Lane Theatre, Nambour  
+💰 Check website  
+`theatre` `performance` `community`
+
+Final weekend performances of the local community theatre showcase featuring various short plays.
+
+### 🎨 [Sunshine Coast National Art Prize 2026 finalists exhibition](https://gallery.sunshinecoast.qld.gov.au)
+📆 21 Aug - 11 Oct  
+📍 Caloundra Regional Gallery  
 💰 Free  
-`ceramics` `art` `design` `free`
+`art` `exhibition` `culture` `free`
 
-A curated showcase of contemporary Australian ceramics, highlighting technical mastery and evolving design traditions in clay.
+An exhibition showcasing the finalists of the National Art Prize, featuring diverse contemporary works from across the country.
 
-### 🎨 [The Matchbox Show](https://www.noosaregionalgallery.com.au)
-📆 3 Aug 2026, 10:00 AM  
-📍 9 Pelican St, Tewantin  
+### 🎨 [Little Women](https://www.trybooking.com/DKTZR)
+📆 21 Aug - 22 Aug  
+📍 Lind Lane Theatre, Nambour  
+💰 $25  
+`theatre` `performance` `literature`
+
+A community theatre production of the classic novel performed at Nambour's independent Lind Lane Theatre.
+
+### 🎨 [The Rocking Horse Winner](https://www.trybooking.com/DKTZR)
+📆 22 Aug - 23 Aug  
+📍 Lind Lane Theatre, Nambour  
+💰 $25  
+`theatre` `performance` `literature`
+
+A stage production of the short story by D.H. Lawrence, presented by the youth theatre collective.
+
+### 🛠️ [Acrylic wildflower painting — Kawana](https://library.sunshinecoast.qld.gov.au/whats-on/at-the-library/acrylic-wildflower-painting)
+📆 Mon 17 Aug, 10:00 AM  
+📍 Kawana Library  
+💰 $15  
+`art` `workshop` `painting`
+
+A beginner-friendly painting workshop where participants learn to paint wildflowers using acrylics in a relaxed library setting.
+
+### 🛠️ [Acrylic wildflower painting — Coolum](https://library.sunshinecoast.qld.gov.au/whats-on/at-the-library/acrylic-wildflower-painting)
+📆 Tue 18 Aug, 10:00 AM  
+📍 Coolum Library  
+💰 $15  
+`art` `workshop` `painting`
+
+A guided acrylic painting session focusing on wildflower motifs, suitable for those looking for a creative morning in the community.
+
+### 🛠️ [Acrylic wildflower painting — Maroochydore](https://library.sunshinecoast.qld.gov.au/whats-on/at-the-library/acrylic-wildflower-painting)
+📆 Wed 19 Aug, 10:00 AM  
+📍 Maroochydore Library  
+💰 $15  
+`art` `workshop` `painting`
+
+Creative acrylic painting workshop hosted at the local library, focusing on painting wildflowers.
+
+### 🛠️ [Acrylic wildflower painting — Beerwah](https://library.sunshinecoast.qld.gov.au/whats-on/at-the-library/acrylic-wildflower-painting)
+📆 Thu 20 Aug, 10:00 AM  
+📍 Beerwah Library  
+💰 $15  
+`art` `workshop` `painting`
+
+A hands-on acrylic painting session at Beerwah Library designed for locals to practice creative expression.
+
+### 📌 [GATHAA NAIDOC Next Gen Market & Youth Showcase](https://gathaamarkets.com.au/products/gathaa-naidoc-next-gen-market-august-2026)
+📆 Sun 23 Aug, 9:00 AM  
+📍 Coolum Civic Centre / Jack Morgan Park, Coolum Beach  
 💰 Free  
-`art` `exhibition` `creative` `free`
+`culture` `community` `art` `free`
 
-A unique exhibition featuring miniature artworks housed within matchboxes, exploring themes of intimacy and scale.
+A cultural showcase featuring indigenous youth talents, art, and community stalls in a relaxed, open-air park environment.
 
-### 🎵 [Club Acoustic](https://evnts.au/town/maleny)
-📆 Thu 6 Aug, 6:00 PM  
-📍 Maleny RSL, 1 Bunya St, Maleny QLD  
-💰 TBC  
-`music` `acoustic` `community`
+### 🎵 [SILENT FILM - THE COVERED WAGON (1923)](https://themajestictheatre.com.au/)
+📆 Sat 22 Aug, 12:00 PM  
+📍 The Majestic Theatre, Pomona  
+💰 $15  
+`film` `music` `vintage`
 
-An intimate acoustic music session hosted in Maleny, providing a platform for local folk and singer-songwriter talent.
+A screening of the 1923 silent film classic accompanied by the theatre's original organ music, capturing the golden age of cinema.
 
-### 🎨 [LORE and LAND — First Nations artists in the Art Collection](https://prod-gallery.sunshinecoast.qld.gov.au/exhibitions/lore-and-land-first-nations-artists-in-the-art-collection)
-📆 3 Jul 2026, 10:00 AM  
+### 🛠️ [Acrylic wildflower painting](https://library.sunshinecoast.qld.gov.au/whats-on/at-the-library/acrylic-wildflower-painting)
+📆 Fri 21 Aug, 10:30 AM  
+📍 Kenilworth Library  
+💰 $15  
+`art` `workshop` `painting` `creative`
+
+A guided painting session focusing on local wildflowers, suitable for beginners looking to develop their creative skills in a social community setting.
+
+### 🎨 [Sunshine Coast National Art Prize 2026 – Finalists exhibition](https://gallery.sunshinecoast.qld.gov.au/exhibitions/sunshine-coast-national-art-prize-2026-finalists-exhibition)
+📆 Fri 21 Aug, All Day  
+📍 Caloundra Regional Gallery  
+💰 Free  
+`art` `exhibition` `culture` `free`
+
+A high-caliber exhibition featuring finalists from the national art prize, offering an intellectually stimulating look at contemporary visual art.
+
+### 🎵 [Acting Up! — Hansel & Gretel; Little Women](https://www.lindlane.com.au/whats-on)
+📆 Fri 21 Aug, 7:00 PM  
+📍 Lind Lane Theatre, Nambour  
+💰 $27  
+`theatre` `performance` `creative` `local`
+
+An experimental or amateur theatre showcase presenting varied performances, offering a deep dive into local performing arts culture.
+
+### 🎨 [Silent film screening — The Covered Wagon (1923)](https://themajestictheatre.com.au/)
+📆 Sat 22 Aug, 12:00 PM  
+📍 Majestic Theatre Pomona  
+💰 $15  
+`film` `history` `art` `culture`
+
+A screening of a classic silent film in a historic venue, providing an atmospheric and nostalgic experience for film enthusiasts.
+
+### 🎵 [Acting Up! — Theatre Series](https://www.lindlane.com.au/whats-on)
+📆 Fri 21 Aug, 7:00 PM  
+📍 The Lind, Nambour  
+💰 Various  
+`theatre` `performance` `arts`
+
+A selection of intimate stage performances ranging from classic literature to experimental theatre at a local independent venue.
+
+### 🎓 [Our Sunshine Coast Heathlands: A Story of Hope and Resilience](https://www.weekendnotes.com/sunshine-coast-wildflower-festival-290004/)
+📆 Sat 17 Aug, 10:00 AM  
+📍 The Seed Pod, Glenview  
+💰 $5  
+`nature` `ecology` `talk`
+
+An informative talk on local ecology and the environmental resilience of the Sunshine Coast heathlands.
+
+### 🤝 [Wildflowers at Currimundi Lake — guided walk](https://www.weekendnotes.com/sunshine-coast-wildflower-festival-290004/)
+📆 Sat 17 Aug, 2:00 PM  
+📍 Kathleen McArthur Conservation Park, Wurtulla  
+💰 $22.49  
+`nature` `walking` `botany`
+
+A guided exploration of the conservation park focusing on botanical diversity and the local ecology of Currimundi Lake.
+
+### 🤝 [Discover the wildflower diversity of Emu Mountain](https://www.weekendnotes.com/sunshine-coast-wildflower-festival-290004/)
+📆 Tue 18 Aug, 9:00 AM  
+📍 Emu Mountain, Noosa  
+💰 $22.49  
+`nature` `hiking` `botany`
+
+A guided excursion focused on identifying and understanding the unique wildflower species found at Emu Mountain.
+
+### 🤝 [Wildflower Wonders of Marcus High Dunes](https://www.weekendnotes.com/sunshine-coast-wildflower-festival-290004/)
+📆 Wed 21 Aug, 9:00 AM  
+📍 Noosa National Park, Marcus Beach  
+💰 $27.78  
+`nature` `hiking` `botany`
+
+A guided botanical walk exploring the coastal dune systems and the diverse wildflower populations within the national park.
+
+### 🎵 Live music at The Presynct
+📆 Mon 17 Aug, 7:00 PM  
+📍 The Presynct, Nambour  
+💰 Free  
+`music` `live` `nambour`
+
+Regular live music session hosted at Nambour’s intimate creative hub, The Presynct.
+
+### 🎵 Live music at The Presynct
+📆 Tue 18 Aug, 7:00 PM  
+📍 The Presynct, Nambour  
+💰 Free  
+`music` `live` `nambour`
+
+Live musical acts performing at the community-focused venue in Nambour.
+
+### 🎵 Live music at The Presynct
+📆 Thu 20 Aug, 7:00 PM  
+📍 The Presynct, Nambour  
+💰 Free  
+`music` `live` `nambour`
+
+An evening of live music in the creative atmosphere of The Presynct.
+
+### 🎵 Live music at The Presynct
+📆 Fri 21 Aug, 7:00 PM  
+📍 The Presynct, Nambour  
+💰 Free  
+`live music` `nambour` `independent`
+
+A live musical showcase at The Presynct, an independent venue in Nambour known for supporting diverse soundscapes.
+
+### 🎵 Live music at The Presynct
+📆 Sun 23 Aug, 2:00 PM  
+📍 The Presynct, Nambour  
+💰 Free  
+`live music` `nambour` `local`
+
+An afternoon of live performances at The Presynct, focusing on Nambour's vibrant local music scene.
+
+### 🎨 [Sunshine Coast National Art Prize 2026 Finalists Exhibition](https://gallery.sunshinecoast.qld.gov.au/art-prizes/sunshine-coast-national-art-prize/scnap-prize-details)
+📆 Sat 22 Aug, 10:00 AM  
 📍 Caloundra Regional Gallery, Caloundra  
 💰 Free  
-`art` `culture` `indigenous` `free`
+`art` `exhibition` `culture` `free`
 
-An exhibition showcasing First Nations artists from the gallery collection, exploring themes of lore and land through visual arts.
+A public exhibition featuring contemporary artworks from the finalists of the Sunshine Coast National Art Prize.
 
-### 🎵 [PWC Lost EP (Live Electronic Showcase)](https://yelo.live/gigs/)
-📆 Fri 07 Aug, 9:00 PM  
-📍 The Presynct, Nambour  
-💰 $15  
-`electronic` `local` `experimental`
+### 🎨 [Sunshine Coast National Art Prize 2026 Finalists Exhibition](https://gallery.sunshinecoast.qld.gov.au/exhibitions/sunshine-coast-national-art-prize-2026-finalists-exhibition)
+📆 Sun 23 Aug, 10:00 AM  
+📍 Caloundra Regional Gallery, Caloundra  
+💰 Free  
+`art` `exhibition` `culture` `free`
 
-Local electronic artists showcase new works and experimental soundscapes.
+A continuing public viewing of the finalists' contemporary art installations and works.
 
 ## 📋 All Events
 
 ### 🎵 Concert / Music
 
-#### Classical concert
-📆 Thu 27 Aug, 7:00 PM
+#### [The Jungle Giants – Experiencing Feelings of Joy Tour](https://allevents.in/sunshine-coast/all)
+📆 Fri 21 Aug, 6:00 PM
+📍 Blackflag Brewing, Coolum Beach
+💰 Check ticket price
+`indie` `pop` `music` `concert`
+
+Australian indie-pop band The Jungle Giants perform their upbeat electro-pop hits in an intimate brewery setting. Expect a high-energy performance from this celebrated touring act.
+
+#### [Michael Fix and More](https://whatslively.com/gig-guide/sunshine-coast-australia)
+📆 Fri 21 Aug, Time TBC
+📍 Maleny Community Centre
+💰 Check ticket price
+`acoustic` `guitar` `instrumental` `music`
+
+Acclaimed guitarist Michael Fix presents a showcase of technical skill and musicality. This event highlights local acoustic talent in the heart of Maleny.
+
+#### [LA SALSA PARTY](https://www.eventbrite.com.au/b/australia--sunshine-coast/music/)
+📆 Fri 21 Aug, 7:00 PM
+📍 Buderim Distilling Co
+💰 Check ticket price
+`latin` `dance` `music` `social`
+
+An immersive night of Latin rhythm and dance at a local distillery. Expect live music, vibrant social energy, and a chance to participate on the dance floor.
+
+#### [Eumundi School of Music Mini Festival](https://whatslively.com/gig-guide/sunshine-coast-australia)
+📆 Sat 22 Aug, Time TBC
+📍 Eumundi School of Arts Hall
+💰 Check ticket price
+`youth` `community` `music` `festival`
+
+A showcase event featuring young and emerging talent from the Eumundi School of Music. Support the next generation of creative musicians in a community hall setting.
+
+#### [Sunshine Coast Multicultural Gala 2026](https://allevents.in/sunshine-coast/all)
+📆 Sat 22 Aug, 5:30 PM
+📍 Maroochy RSL
+💰 Check ticket price
+`culture` `music` `dance` `community`
+
+A celebration of global cultures through music, dance, and performance. This event highlights the diversity of the local community through creative arts.
+
+#### [Gympie Music Muster 2026](https://www.loea.com.au/sunshine-coast-festivals)
+📆 Sat 22 Aug, Time TBC
+📍 Amamoor Creek Camping Area, Amamoor
+💰 Adult $450, Teen $205, Children free
+`festival` `camping` `music` `community`
+
+A massive multi-day camping and music festival set in the forest. Features a wide range of country, folk, and roots musicians with a strong community camping vibe.
+
+#### [Eumundi Backyard Live Music & BBQ](https://nightquarter.com.au/friday/)
+📆 Fri 21 Aug, 12:00 AM
+📍 NightQuarter, Birtinya
+💰 Free
+`live` `music` `food`
+
+An open-air music event featuring local performers paired with a communal BBQ experience.
+
+#### [Live Music Weekend – nanaspieband (Indie Folk Rock)](https://duporthtavern.com/gallery/music-band/)
+📆 Sat 22 Aug, 9:00 PM
+📍 Duporth Tavern, Maroochydore
+💰 Free
+`folk` `indie` `music`
+
+Indie folk-rock performance by nanaspieband as part of the weekly weekend live music rotation.
+
+#### [Sunday Classical Orchestra Matinee](https://theeventscentre.com.au/whats-on/)
+📆 Sun 23 Aug, 12:00 AM
 📍 The Events Centre, Caloundra
-💰 Unknown
-`classical` `music` `performance`
+💰 Ticketed
+`classical` `orchestra` `music`
 
-An evening of classical music compositions performed at The Events Centre. This performance showcases instrumental arrangements in a theatre setting.
+A matinee performance by a classical orchestra featuring repertoire for local music lovers.
 
-#### [Candlelight: The Best of Hans Zimmer](https://feverup.com)
-📆 Friday 7 August 2026
-📍 Flaxton Gardens
-💰 $55.50
-`classical` `concert` `music`
-
-A tribute concert featuring the iconic film scores of Hans Zimmer performed by a string quartet in a candlelight-lit environment.
-
-#### [FESTURI Buderim Multicultural Music and Dance Festival](https://festuri.org.au)
-📆 7 August 2026
-📍 Buderim
-💰 Free
-`festival` `culture` `music` `free`
-
-A community-focused festival celebrating multiculturalism through live music, traditional dance, and shared artistic expression.
-
-#### [Hinterland Music Club](https://evnts.au/town/maleny)
-📆 Sat 8 Aug, 12:00 PM
-📍 7 Bryce Lane (Maleny / Hinterland venue), Maleny QLD
-💰 TBC
-`music` `community` `local`
-
-A regular gathering for music enthusiasts in the Sunshine Coast hinterland to share and enjoy live performances.
-
-#### [FESTURI Buderim Multicultural Music & Dance Festival](https://www.eongroup.com.au/whatson/events/festuri-buderim-multicultural-music-and-dance-festival/)
-📆 Sun 9 Aug, 10:00 AM
-📍 Buderim Village Park, Buderim
-💰 Free
-`music` `dance` `community` `free`
-
-A community-focused festival showcasing diverse musical and dance traditions from various cultures.
-
-#### [Candlelight: Vivaldi’s Four Seasons](https://feverup.com/en/sunshine-coast/music-events)
-📆 Mon 03 Aug, 7:00 PM
-📍 Flaxton Gardens, Flaxton
-💰 $40
-`classical` `vivaldi` `concert`
-
-A classical performance of Vivaldi's masterpiece in an atmospheric candlelit venue.
-
-#### [Candlelight: The Best of Hans Zimmer](https://feverup.com/en/sunshine-coast/music-events)
-📆 Mon 03 Aug, 6:30 PM
-📍 Flaxton Gardens, Flaxton
-💰 $45
-`classical` `soundtrack` `intimate`
-
-An intimate candlelight concert featuring cinematic works by Hans Zimmer performed by a string quartet.
-
-#### [Strummingbird Festival – Live Music Program](https://events.sunshinecoast.qld.gov.au/)
-📆 Sat 08 Aug, 12:00 PM
-📍 Kawana Sports Precinct, Bokarina
-💰 Free
-`folk` `festival` `acoustic`
-
-A day-long festival program showcasing various local folk and acoustic musicians.
-
-#### [Strummingbird Festival – Live Music Program](https://events.sunshinecoast.qld.gov.au/)
-📆 Sun 09 Aug, 12:00 PM
-📍 Kawana Sports Precinct, Bokarina
-💰 Free
-`folk` `festival` `acoustic`
-
-A day-long festival program showcasing various local folk and acoustic musicians.
-
-#### The Big Chillout - Kings Theatre, Caloundra
-📆 Sat 01 Aug, 7:00 PM
+#### [Bohemian Dreams – Australian Romantic & Classical Orchestra](https://theeventscentre.com.au/)
+📆 Sun 23 Aug, Matinee
 📍 The Events Centre, Caloundra
-💰 Unknown
+💰 Ticketed
+`classical` `orchestra` `music`
+
+A classical orchestral performance exploring the dramatic and emotional landscapes of the Romantic period. The ensemble uses historically informed performance techniques for an authentic sound.
+
+#### [Doppel & Tom Baker – Double Album Launch](https://thebananabenderpub.com/events/)
+📆 Sat 22 Aug, Time Unknown
+📍 The Shed, Palmview
+💰 Ticketed
+`electronic` `album-launch` `music`
+
+A double album launch featuring electronic and live music performances from Doppel and Tom Baker. This event showcases local talent in a dedicated live venue space.
+
+#### [Solbar Weekly Live Gigs](https://www.solbar.com.au/gig-guide)
+📆 Thu 20 – Sat 22 Aug, Time Varies
+📍 Solbar, Maroochydore
+💰 Varies
+`music` `gigs` `live`
+
+A rotating series of live music gigs featuring local, touring, and indie bands across various genres. A consistent hub for the Sunshine Coast live music scene.
+
+#### [Buderim Distilling Co Live Music Nights](https://www.eventbrite.com.au/b/australia--sunshine-coast/music/)
+📆 Fri 21 – Sat 22 Aug, Time Varies
+📍 Buderim Distilling Co, Buderim
+💰 Free/low-cost
+`music` `acoustic` `relaxed`
+
+Relaxed live music sessions hosted at a local distillery, showcasing acoustic artists and smaller ensembles. A low-key environment ideal for conversations.
+
+#### [DICE Altitude Tour](https://avc.live/a041)
+📆 20 Aug 2026
+📍 Kings Beach Tavern, Caloundra
+💰 Check website
+`concert` `indie` `music`
+
+Australian indie rock band DICE brings their Altitude Tour to the Sunshine Coast for an evening of live guitar-driven performance.
+
+#### [Acoustic Guitar Spectacular](https://redchair.com.au)
+📆 21 Aug 2026
+📍 Maleny
+💰 Check website
+`guitar` `acoustic` `music`
+
+A showcase of virtuoso guitar talent featuring diverse styles and techniques in a collaborative acoustic performance.
+
+#### [KOOII](https://thepresynct.com.au)
+📆 22 Aug 2026
+📍 The Presynct, Nambour
+💰 Check website
+`afrobeat` `live` `music`
+
+A live performance by the eclectic group KOOII, known for their fusion of Afrobeat and soulful rhythms.
+
+#### [LOVE CAMP – Doppel & Tom Baker Album Launch](https://bananabenderpub.com.au)
+📆 22 Aug 2026
+📍 The Shed, Banana Bender Pub
+💰 Check website
+`electronic` `launch` `music`
+
+Electronic music artists Doppel and Tom Baker celebrate their latest album launch with a curated night of sound.
+
+#### [Acoustic Guitar Spectacular](https://www.coolumciviccentre.com.au)
+📆 22 Aug 2026
+📍 Coolum Civic Centre
+💰 Contact venue
+`music` `guitar` `concert`
+
+A showcase of masterful acoustic guitar playing featuring various artists performing in a concert setting.
+
+#### [Eumundi School of Music 10 Year Anniversary Mini Festival](https://eumundischoolofmusic.com)
+📆 Sat 22 Aug, 12:00 AM
+📍 Eumundi School of Arts Hall, Eumundi
+💰 Ticketed
+`festival` `music` `community`
+
+A community-focused music festival celebrating a decade of the Eumundi School of Music.
+
+#### [Kooii with Nuraini](https://thepresynct.com.au/)
+📆 22 Aug 2026, 6:00 PM
+📍 The Presynct, Nambour
+💰 $39
+`afrobeat` `soul` `live-music`
+
+A dynamic night of Afrobeat-inspired sounds and soulful vocals featuring Brisbane-based group Kooii.
+
+#### [LOVE CAMP Presents: DOPPEL & TOM BAKER - Double Album Launch](https://thebananabenderpub.com/events/)
+📆 22 Aug 2026, 11:00 AM
+📍 The Shed @ The Banana Bender, Palmview
+💰 From $63
+`electronic` `dance` `album-launch`
+
+A collaborative album launch party showcasing electronic and dance music producers Doppel and Tom Baker.
+
+#### [The Acoustic Guitar Spectacular (Maleny)](https://redchair.com.au/event/the-acoustic-guitar-spectacular/)
+📆 Fri 21 Aug, 7:00 PM
+📍 Maleny Community Centre, 1 Maple St, Maleny QLD
+💰 From $25
+`guitar` `live music` `acoustic`
+
+A showcase of acoustic guitar mastery featuring Michael Fix, Jason McGregor, and Craig Claxton.
+
+#### [The Acoustic Guitar Spectacular (Coolum)](https://redchair.com.au/event/the-acoustic-guitar-spectacular/)
+📆 Sat 22 Aug, 7:00 PM
+📍 Coolum Civic Centre, 1 Park Ave, Coolum Beach QLD
+💰 From $25
+`guitar` `live music` `acoustic`
+
+A second showcase date for the acoustic guitar tour featuring Michael Fix, Jason McGregor, and Craig Claxton.
+
+#### [Blues on the Rocks / Regular Gigs at The Presynct](https://www.thepresynct.com.au/)
+📆 2026-08-17
+📍 The Presynct, 15 Ann St, Nambour QLD
+💰 Various
+`blues` `live music` `nambour`
+
+A collection of ongoing music events and blues showcases held throughout the week at The Presynct.
+
+#### Pat Tierney
+📆 Sun 16 Aug, 7:00 PM
+📍 Kondalilla Eco Resort, Flaxton
+💰 Free
 `music` `live` `concert`
 
-A curated music event focused on relaxed, ambient, or downtempo sounds held at the major performance venue in Caloundra.
+Pat Tierney performs a live set at the serene Kondalilla Eco Resort in the hinterland.
 
-#### [Candlelight: Tribute to ABBA](https://feverup.com)
-📆 Friday 7 August 2026
-📍 Flaxton Gardens
-💰 Check website
-`classical` `tribute` `music`
-
-A live classical performance of ABBA's greatest hits performed in an intimate, candlelit setting.
-
-#### [Mamma Mia!](https://theeventscentre.com.au)
-📆 7 August 2026 – 9 August 2026
-📍 The Events Centre, Caloundra
-💰 Check website
-`theatre` `musical` `performance`
-
-A live musical theatre production featuring the hit songs of ABBA performed by local talent.
-
-#### [Battle of The Crowns](https://thepresynct.com.au)
-📆 8 August 2026, 6:00 pm
-📍 The Presynct, Nambour
-💰 TBA
-`performance` `competition` `music`
-
-A competitive performance showcase where artists battle for the title, bringing a dynamic and interactive vibe to the venue.
-
-#### [Live Music Fridays @ Marcoola SLSC](https://localsintheloop.com.au/listing/live-music-fridays-marcoola-slsc/)
-📆 Fri 7 Aug, 6:30 PM
-📍 Marcoola SLSC, Marcoola QLD
+#### Sri Krishna Kirtan Collective – Sunday Love Feast
+📆 Sun 16 Aug, 7:00 PM
+📍 Eumundi School of Arts, Eumundi
 💰 Free
-`music` `free` `local`
+`music` `community` `live`
 
-A weekly community-focused live music session held at the Marcoola Surf Life Saving Club. Features local artists in a relaxed beachfront atmosphere.
+A community-oriented kirtan performance and gathering featuring the Sri Krishna Kirtan Collective.
 
-#### [Drag Queen Bingo (live performance night)](https://musick.com.au/set-times/sunshine-coast/)
-📆 Mon 3 Aug, 6:00 PM
-📍 Kings Beach Tavern, 43 Burgess St, Caloundra QLD
-💰 $15
-`performance` `comedy` `social`
-
-An interactive night combining drag performance and comedy with a game of bingo.
-
-#### [El Capitano Hump Day Sessions (live acoustic)](https://elcapitano.com.au/)
-📆 5 August 2026, 6:30 PM
-📍 El Capitano Pizzeria, 52 Hastings St, Noosa Heads QLD
+#### Sunny Side Up Music Festival
+📆 Mon 17 Aug, 10:00 AM
+📍 Sunshine Coast
 💰 Free
-`music` `acoustic` `noosa`
+`music` `festival` `live`
 
-Intimate live acoustic music sessions held at a popular local pizzeria in Noosa.
+A regional music festival celebrating local and visiting artists across the Sunshine Coast.
 
-#### [Live Music Fridays @ High Tide Mudjimba](https://localsintheloop.com.au/listing/live-music-fridays-high-tide-mudjimba/)
-📆 7 August 2026, 5:00 PM – 8:00 PM
-📍 High Tide Bar & Grill, 1/21-23 Mudjimba Esplanade, Mudjimba QLD
+#### Thelma Plum I Don’t Play That Song Anymore Tour
+📆 Mon 17 Aug, 7:00 PM
+📍 Eumundi Brewery, Eumundi
 💰 Free
-`music` `friday` `coastal`
+`music` `concert` `live`
 
-Weekly Friday evening live music session featuring local artists at a coastal grill and bar.
+Renowned Australian artist Thelma Plum performs live at the historic Eumundi Brewery.
 
-#### [Saturday Live Music @ Your Mates Brewing Co. (Saturday Sessions)](https://localsintheloop.com.au/listing/saturday-live-music-your-mates/)
-📆 8 August 2026, 6:30 PM – 9:30 PM
-📍 Your Mates Brewing Co., 41 Technology Dr, Warana QLD
+#### Live music at Solbar
+📆 Tue 18 Aug, 7:00 PM
+📍 Solbar, Maroochydore
 💰 Free
-`music` `brewery` `live`
+`music` `live` `solbar`
 
-Weekend live music session featuring local talent at a popular Sunshine Coast brewery.
+Live music performance at Maroochydore's long-standing live music venue, Solbar.
 
-#### [Live Music Sundays @ The Boat Shed](https://localsintheloop.com.au/listing/live-music-sundays-the-boat-shed/)
-📆 9 August 2026, 3:30 PM – 6:30 PM
-📍 The Boat Shed, Maroochy River (Maroochydore) QLD
+#### Live music at Solbar
+📆 Wed 19 Aug, 7:00 PM
+📍 Solbar, Maroochydore
 💰 Free
-`music` `sunday` `riverfront`
+`music` `live` `solbar`
 
-Relaxed Sunday afternoon live music performance overlooking the Maroochy River.
+A mid-week live music set at Solbar featuring local or touring acts.
 
-#### [Mamma Mia!](https://theeventscentre.com.au/event/mamma-mia/)
-📆 Sat 8 Aug, 2:00 PM
-📍 Kings Theatre, The Events Centre, Caloundra
-💰 From $64.90–$74.90
-`music` `theatre` `performance`
-
-A local theatrical production of the smash-hit musical Mamma Mia, featuring the iconic music of ABBA.
-
-#### [Mamma Mia!](https://theeventscentre.com.au/event/mamma-mia/)
-📆 Sun 9 Aug, 2:00 PM
-📍 Kings Theatre, The Events Centre, Caloundra
-💰 From $64.90–$74.90
-`music` `theatre` `performance`
-
-A local theatrical production of the smash-hit musical Mamma Mia, featuring the iconic music of ABBA.
-
-#### [Burlesque L'amour – Discovering Her](https://venue114.com.au/)
-📆 Fri 7 Aug, 9:00 AM
-📍 Venue 114, Bokarina
-💰 $85
-`music` `performance` `art`
-
-An immersive burlesque performance exploring themes of identity and self-discovery.
-
-#### [Burlesque L'amour – Discovering Her](https://venue114.com.au/)
-📆 Sat 8 Aug, 9:00 AM
-📍 Venue 114, Bokarina
-💰 $75–$85
-`music` `performance` `art`
-
-An immersive burlesque performance exploring themes of identity and self-discovery.
-
-#### [Candlelight: Tribute to Coldplay](https://feverup.com/en/sunshine-coast/music-events)
-📆 Mon 03 Aug, 8:30 PM
-📍 Flaxton Gardens, Flaxton
-💰 $45
-`classical` `pop` `tribute`
-
-A string quartet performance paying tribute to the music of Coldplay.
-
-#### [Concerts in the Park – Hackett Park Saturday Session](https://www.facebook.com/groups/625983171185954/posts/2571202723330646/)
-📆 Sat 08 Aug, 4:00 PM
-📍 Hackett Park, Sechelt
+#### Live music at Solbar
+📆 Thu 20 Aug, 7:00 PM
+📍 Solbar, Maroochydore
 💰 Free
-`community` `park` `free`
+`music` `live` `solbar`
 
-Community-focused open-air concert featuring local band talent in the park.
+Live music event held at the dedicated Maroochydore music venue, Solbar.
 
-#### [Pender Harbour Wooden Boat Show – Live Music Program](https://www.facebook.com/groups/625983171185954/posts/2571202723330646/)
-📆 Fri 07 Aug, 10:00 AM
-📍 Pender Harbour Docks, Pender Harbour
+#### Live music at Solbar
+📆 Sat 22 Aug, 8:00 PM
+📍 Solbar, Maroochydore
 💰 Free
-`maritime` `festival` `community`
+`live music` `maroochydore` `solbar`
 
-A series of maritime-themed live performances as part of the annual wooden boat exhibition.
+A night of live music featuring touring and local acts at one of the Sunshine Coast's most established music venues.
 
-#### [Pender Harbour Wooden Boat Show – Live Music Program](https://www.facebook.com/groups/625983171185954/posts/2571202723330646/)
-📆 Sat 08 Aug, 10:00 AM
-📍 Pender Harbour Docks, Pender Harbour
+#### Live music at Solbar
+📆 Sun 23 Aug, 7:00 PM
+📍 Solbar, Maroochydore
 💰 Free
-`maritime` `festival` `community`
+`live music` `solbar` `maroochydore`
 
-A series of maritime-themed live performances as part of the annual wooden boat exhibition.
+Wrapping up the weekend with live musical sets at Solbar in Maroochydore.
 
-#### [Pender Harbour Wooden Boat Show – Live Music Program](https://www.facebook.com/groups/625983171185954/posts/2571202723330646/)
-📆 Sun 09 Aug, 10:00 AM
-📍 Pender Harbour Docks, Pender Harbour
+#### [Huxton Creepers – 12 Days to Paris 40th Anniversary Tour](https://yelo.live/gigs/)
+📆 Fri 21 Aug, Time TBC
+📍 Norton Music Factory, Caloundra West
+💰 Check ticket price (Oztix)
+`rock` `live` `music` `anniversary`
+
+Celebrating 40 years since their landmark release, the Huxton Creepers return to the stage for a nostalgic rock performance. This show highlights their legacy in the Australian pub-rock scene.
+
+#### [Yandina Street Fair](https://renaesuttie.com/gig-guide/)
+📆 Sun 23 Aug, 12:00 AM
+📍 Yandina
 💰 Free
-`maritime` `festival` `community`
+`community` `music` `free`
 
-A series of maritime-themed live performances as part of the annual wooden boat exhibition.
+A community-led street fair featuring local musicians, performers, and family-friendly activities.
 
-#### [Living In The 70's](https://thebananabenderpub.com/events/)
-📆 Sat 8 Aug, 7:00 PM
-📍 Banana Bender Pub, Palmview
+#### [Sunday Afternoon Live Music on the Deck](https://www.noosasurfclub.com.au/noosa-live-music-entertainment/)
+📆 Sun 23 Aug, 4:00 PM
+📍 Noosa Surf Club, Noosa Heads
 💰 Free
-`music` `live` `concert` `free`
+`acoustic` `music` `free`
 
-A tribute band performance playing iconic hits from the 1970s in a relaxed pub environment. Expect a nostalgic atmosphere with classic rock and pop covers.
+Relaxed Sunday afternoon session featuring live acoustic music overlooking Main Beach.
 
-#### [The Radiators](https://tickets.oztix.com.au/outlet/event/34bd99e0-b260-4a83-984a-5d6b4b440caf)
-📆 Fri 7 Aug, 7:30 PM
-📍 Kings Beach Tavern, Caloundra QLD
+#### [Surfie Sunday Sessions ft. Brad Schultz Music](https://www.thecovenoosa.com.au/djs-and-live-music-noosa-whats-on-and-where-to-go/)
+📆 Sun 23 Aug, 2:00 PM
+📍 The Cove, Noosa Heads
+💰 Free
+`acoustic` `music` `free`
+
+Live performance by Brad Schultz as part of The Cove's weekly Sunday music series.
+
+#### [Ticketed Live Bands – The Bunker/The Brewery](https://www.imperialhoteleumundi.com.au/whats-on)
+📆 Fri 21 Aug, 12:00 AM
+📍 Imperial Hotel Eumundi
 💰 Ticketed
-`music` `rock` `concert`
+`live` `music` `beer`
 
-Australian pub rock icons The Radiators perform live in Caloundra, bringing their long-standing catalogue of classic rock hits to the Sunshine Coast. Expect a high-energy atmosphere typical of a classic Aussie pub gig.
+A rotating lineup of touring and local acts performing in the iconic Eumundi brewery setting.
 
-#### [Mudcrab Music](https://surreal.live/en-au/venue/kings-beach-tavern)
-📆 Fri 07 Aug, 7:00 PM
-📍 Kings Beach Tavern, 43 Burgess St, Kings Beach QLD
+#### [Ticketed Live Bands – The Bunker/The Brewery](https://www.imperialhoteleumundi.com.au/whats-on)
+📆 Sat 22 Aug, 12:00 AM
+📍 Imperial Hotel Eumundi
+💰 Ticketed
+`live` `music` `pub`
+
+Weekend live music session featuring various artists at the Imperial Hotel's performance spaces.
+
+#### [Thursday Evening Music Celebration](https://theeventscentre.com.au/whats-on/)
+📆 Thu 20 Aug, 12:00 AM
+📍 The Events Centre, Caloundra
+💰 Ticketed
+`music` `performance` `concert`
+
+An evening concert showcasing musical talent in the main auditorium of The Events Centre.
+
+#### [Friday Dance/Music Matinee & Evening Show](https://theeventscentre.com.au/whats-on/)
+📆 Fri 21 Aug, 12:00 AM
+📍 The Events Centre, Caloundra
+💰 Ticketed
+`dance` `music` `performance`
+
+Dual performance event featuring dance-accompanied music sets during the day and evening.
+
+#### [Candlelight Vivaldi's Four Seasons](https://feverup.com)
+📆 21 Aug 2026
+📍 Flaxton Gardens
+💰 $55.50
+`classical` `music` `concert`
+
+A classical music performance featuring Vivaldi's renowned Four Seasons set in a venue illuminated by thousands of candles.
+
+#### [Huxton Creepers 40th Anniversary Tour](https://nortonmusicfactory.com.au)
+📆 21 Aug 2026
+📍 Norton Music Factory, Maroochydore
+💰 Check website
+`rock` `music` `anniversary`
+
+The Huxton Creepers celebrate four decades of rock music with a special anniversary performance at this local music hub.
+
+#### [IVAN OOZE – Isolation of Mistaken Infamy Tour](https://kingsbeachtavern.com.au)
+📆 22 Aug 2026
+📍 Kings Beach Tavern, Caloundra
+💰 Check website
+`hiphop` `concert` `music`
+
+Hip-hop artist Ivan Ooze performs live as part of his latest national tour schedule.
+
+#### [Pete Murray](https://villanoosa.com.au)
+📆 22 Aug 2026
+📍 Villa Noosa Hotel
+💰 Check website
+`acoustic` `pop` `music`
+
+Popular Australian singer-songwriter Pete Murray performs an intimate show featuring his acoustic and roots catalogue.
+
+#### [Young Lust III](https://nortonmusicfactory.com.au)
+📆 22 Aug 2026
+📍 Norton Music Factory, Maroochydore
+💰 Check website
+`rock` `live` `music`
+
+The third installment of a local music event series showcasing emerging and established artists in the region.
+
+#### [Sari Abbott](https://peregianbeachhotel.com.au)
+📆 22 Aug 2026
+📍 Peregian Beach Hotel
+💰 Free
+`acoustic` `free` `music`
+
+Local talent Sari Abbott performs an acoustic set at the Peregian Beach Hotel.
+
+#### [Hayden Hack](https://peregianbeachhotel.com.au)
+📆 23 Aug 2026
+📍 Peregian Beach Hotel
+💰 Free
+`acoustic` `free` `music`
+
+Singer-songwriter Hayden Hack performs a live acoustic session at the local coastal venue.
+
+#### [The Seven of Ska](https://thepresynct.com.au)
+📆 21 Aug 2026
+📍 The Presynct, Nambour
+💰 Contact venue
+`ska` `music` `gig`
+
+A high-energy live music event showcasing ska rhythms and performance.
+
+#### [A Taste of Ireland](https://theeventscentre.com.au)
+📆 21 August 2026
+📍 The Events Centre, Caloundra
+💰 $64.90 - $89.90
+`music` `dance` `performance`
+
+An energetic music and dance production celebrating Irish culture, featuring live traditional music and world-class choreography.
+
+#### [YOUNG LUST 3 featuring Happy Valley, Vandalism Angel, Whitt's End, Whiplassh and Noise](https://oztix.com.au)
+📆 Sat 22 Aug, 5:30 PM
+📍 Norton Music Factory, Caloundra West
+💰 Ticketed
+`punk` `rock` `concert`
+
+A multi-band concert featuring local emerging rock and punk artists.
+
+#### [Hops and Harmony - ABBA Sing-along](https://royalmailtewantin.com.au/whats-on/)
+📆 20 Aug 2026, 7:00 PM
+📍 Royal Mail Hotel, Tewantin
+💰 $24
+`abba` `singalong` `music`
+
+A community-focused interactive music night where patrons are invited to sing along to classic ABBA tracks.
+
+#### [Live Music Fridays](https://localsintheloop.com.au/listing/live-music-fridays-drift-bar/)
+📆 Fri 21 Aug, 6:30 PM
+📍 Drift Bar, 30 The Esplanade, Bulcock Beach, Caloundra QLD
+💰 Free
+`live music` `acoustic` `free`
+
+Regular live music session featuring local performers in a relaxed beachside bar setting.
+
+#### [A Taste of Ireland](https://atasteofirelandshow.com/show/a-taste-of-ireland/australia-2026/noosa/)
+📆 Thu 20 Aug, 7:30 PM
+📍 The J, Noosa Heads
+💰 $79.90–$89.90
+`music` `dance` `performance`
+
+A high-energy Irish dance and music production featuring professional dancers and traditional Celtic musicians performing classic Irish melodies.
+
+#### [Beerwah Heart cinema — Enola Holmes](https://library.sunshinecoast.qld.gov.au/whats-on/beerwah-heart-cinema)
+📆 Fri 21 Aug, 6:00 PM
+📍 Beerwah Community Hall
+💰 Free
+`film` `cinema` `community` `free`
+
+A community film screening of Enola Holmes, offering a relaxed environment for local residents to gather and watch cinema together.
+
+#### Drag Queen Bingo
+📆 Mon 17 Aug, 7:00 PM
+📍 Kings Beach Tavern, Caloundra
+💰 Free
+`music` `performance` `social`
+
+An evening of musical performance and interactive entertainment hosted by local drag artists.
+
+#### Live music at Flaxton Gardens
+📆 Mon 17 Aug, 7:00 PM
+📍 Flaxton Gardens, Flaxton
+💰 Free
+`music` `live` `concert`
+
+A live music showcase featuring local talent at the picturesque Flaxton Gardens venue.
+
+#### Live music at Black Flag Taphouse
+📆 Mon 17 Aug, 7:00 PM
+📍 Black Flag Taphouse
+💰 Free
+`music` `live` `concert`
+
+Live performance setting hosted at the Black Flag Taphouse.
+
+#### Live music at The J
+📆 Tue 18 Aug, 7:00 PM
+📍 The J, Noosa Heads
+💰 Free
+`music` `live` `noosa`
+
+Live music showcase hosted at the cultural and performance hub, The J.
+
+#### Live music at The Events Centre
+📆 Wed 19 Aug, 7:00 PM
+📍 The Events Centre, Caloundra
+💰 Free
+`music` `live` `concert`
+
+A scheduled live music performance hosted at The Events Centre in Caloundra.
+
+#### Live music at The J
+📆 Fri 21 Aug, 7:00 PM
+📍 The J, Noosa Heads
+💰 Free
+`live music` `noosa` `concert`
+
+A night of live musical entertainment hosted at The J venue in Noosa Heads. Expect local artists and an intimate atmosphere.
+
+#### Live music at The Events Centre
+📆 Sat 22 Aug, 7:00 PM
+📍 The Events Centre, Caloundra
+💰 Free
+`concert` `live music` `theatre`
+
+A professional stage performance featuring live musicians at Caloundra's main events venue.
+
+#### [Mental as Anything](https://whatslively.com/gig-guide/sunshine-coast-australia)
+📆 Fri 21 Aug, Time TBC
+📍 Kings Beach Tavern, Caloundra
+💰 Check ticket price
+`pop` `rock` `live` `music`
+
+A classic Australian pop-rock performance by the iconic band Mental as Anything. Known for their infectious, upbeat songs and long-standing place in Australian music history.
+
+#### [RockFest 2026](https://www.eventbrite.com.au/b/australia--sunshine-coast/music/)
+📆 Sat 22 Aug, 4:30 PM
+📍 1/37 Premier Circuit, Sunshine Coast
+💰 Check ticket price
+`rock` `festival` `live` `music`
+
+An energetic festival gathering rock bands for an afternoon and evening of live music. Expect a loud, high-octane atmosphere and a variety of rock genres.
+
+#### [Live Bands Friday Night](https://www.noosasurfclub.com.au/noosa-live-music-entertainment/)
+📆 Fri 21 Aug, 8:00 PM
+📍 Noosa Surf Club, Noosa Heads
 💰 Free
 `music` `live` `free`
 
-A live music performance hosted at the local Kings Beach Tavern featuring local artists. Expect a casual pub atmosphere typical of the Sunshine Coast live music circuit.
+Weekly Friday night live music session hosted at the Noosa Surf Club deck.
 
-#### [Sunset Rooftop Party](https://eventbrite.com.au)
-📆 7 August 2026, 2:00 pm
-📍 Mooloolaba Marina
-💰 TBA
-`dj` `party` `music`
-
-A DJ-led rooftop event overlooking the Mooloolaba Marina, focused on sunset vibes and social atmosphere.
-
-#### [Skillz FJ @ Cotton Tree Markets](https://skillzfj.com.au)
-📆 9 August 2026, 8:40 am
-📍 Cotton Tree Markets, Maroochydore
+#### [Live Bands Saturday Night](https://www.noosasurfclub.com.au/noosa-live-music-entertainment/)
+📆 Sat 22 Aug, 8:00 PM
+📍 Noosa Surf Club, Noosa Heads
 💰 Free
-`acoustic` `music` `free`
+`music` `live` `free`
 
-Outdoor acoustic performance by Skillz FJ, set against the backdrop of the popular local weekend markets.
+Saturday evening live music featuring local artists performing at the beachside venue.
 
-#### [Skillz FJ @ Bluff Bar](https://skillzfj.com.au)
-📆 9 August 2026, 1:00 pm
-📍 Alex Surf Club, Alexandra Headland
+#### [Live Music Weekend – Salty Jez (Rock/Blues/Punk/Reggae)](https://duporthtavern.com/gallery/music-band/)
+📆 Fri 21 Aug, 9:00 PM
+📍 Duporth Tavern, Maroochydore
 💰 Free
-`acoustic` `music` `free`
+`rock` `blues` `music`
 
-A laid-back afternoon music session at the Bluff Bar, featuring performance by Skillz FJ.
+Local band Salty Jez brings a blend of rock, blues, and reggae to the Duporth Tavern stage.
 
-#### [2026 - Olivia Newton John Tribute](https://www.trybooking.com/events/landing/1560457)
-📆 Mon 3 Aug, 11:30 AM
-📍 Sunshine Coast Function Centre (Caloundra RSL), 19 West Terrace, Caloundra QLD
-💰 $39.00
-`music` `tribute` `performance`
-
-A musical tribute show honouring the career and hits of Olivia Newton John. Expect a nostalgic afternoon of live performance featuring her most iconic tracks.
-
-#### [Zach Bryan Tribute Show (Zak Plays Zach)](https://musick.com.au/set-times/sunshine-coast/)
-📆 Sun 9 Aug, 3:00 PM
-📍 Kings Beach Tavern, 43 Burgess St, Caloundra QLD
-💰 $56
-`music` `tribute` `country`
-
-A live tribute performance featuring the country-folk music of American singer-songwriter Zach Bryan.
-
-#### [Olivia Newton-John Tribute](https://caloundrarsl.com.au/caloundra-rsl-live-entertainment/)
-📆 3 August 2026, 11:30 AM – 2:30 PM
-📍 Caloundra RSL, 19 West Terrace, Caloundra QLD
-💰 $39
-`music` `tribute` `performance`
-
-A tribute performance celebrating the musical career of Olivia Newton-John, hosted at the Caloundra RSL.
-
-#### [Eumundi Markets (Wednesday) — live music](https://eumundimarkets.com.au/)
-📆 5 August 2026, 7:30 AM – 2:00 PM
-📍 Memorial Drive, Eumundi QLD
-💰 Free
-`music` `markets` `community`
-
-Mid-week market atmosphere featuring various local musicians performing live throughout the grounds.
-
-#### [Pulse Presents: NEXUS Sunshine Coast (Pulse takeover)](https://events.humanitix.com/nexus-sunshinecoast)
-📆 7 August 2026, 9:00 PM – 8 August 2026, 3:00 AM
-📍 Pulse Bar & Live Music Venue, 19 Duporth Ave, Maroochydore QLD
+#### [Saturday Music Performance](https://theeventscentre.com.au/whats-on/)
+📆 Sat 22 Aug, 12:00 AM
+📍 The Events Centre, Caloundra
 💰 Ticketed
-`music` `electronic` `nightlife`
+`music` `concert` `performance`
 
-A late-night electronic music event featuring a Pulse Bar takeover by the NEXUS collective.
+General musical performance hosted at the main stage of the Caloundra Events Centre.
 
-#### [Living In The 70’s (retro live band)](https://thebananabenderpub.com/events/)
-📆 8 August 2026, from 7:00 PM
-📍 Banana Bender Pub, 1 Downunder Drive, Palmview QLD
+#### [Karaoke Night](http://noosadays.com/item/noosa-heads-surf-club/)
+📆 Wed 19 Aug, 8:00 PM
+📍 Noosa Surf Club, Noosa Heads
 💰 Free
-`music` `retro` `live`
+`karaoke` `social` `music`
 
-A live band performing hits from the 1970s at the Banana Bender Pub.
+An open-participation karaoke night hosted at the surf club, allowing patrons to perform.
 
-#### [Eumundi Markets (Saturday) — live music](https://eumundimarkets.com.au/)
-📆 8 August 2026, 7:30 AM – 2:00 PM
-📍 Memorial Drive, Eumundi QLD
+#### [Melinda Schneider Live](https://theeventscentre.com.au/whats-on/)
+📆 Thu 20 Aug, 7:30 PM
+📍 The Events Centre, Caloundra
+💰 Ticketed
+`music` `concert` `country`
+
+Acclaimed Australian singer-songwriter Melinda Schneider performs a live concert showcasing her blend of country and pop music. Expect a polished performance featuring her well-known hits and storytelling flair.
+
+#### [Kings Beach Tavern Live Music Weekend](https://allevents.in/caloundra/live-music)
+📆 Fri 21 – Sat 22 Aug, Time Varies
+📍 Kings Beach Tavern, Caloundra
 💰 Free
-`music` `markets` `community`
+`live-music` `pub` `free`
 
-Saturday morning market session with various buskers and live performers providing background music.
+A weekend lineup of live bands performing covers and original music at a long-standing coastal tavern. Features a casual atmosphere by the beach.
 
-#### [Eumundi Markets (live music & busking program)](https://www.eumundimarkets.com.au/)
-📆 Sat 8 Aug, 7:30 AM
-📍 Memorial Drive, Eumundi
+#### [Duporth Tavern Live Music Night](https://maroochydore-qld.where-food-au.com/solbar/)
+📆 Fri 21 Aug, Time Unknown
+📍 Duporth Tavern, Maroochydore
 💰 Free
-`music` `community` `free`
+`music` `free` `pub`
 
-A regular market event featuring a curated program of live local buskers and musicians throughout the grounds.
+A recurring live music night at a central tavern, showcasing regional acts playing a mix of popular genres. Casual setting in the heart of Maroochydore.
 
-#### [Monday Lunch & Show – Olivia Newton-John Tribute](https://caloundrarsl.com.au/events)
-📆 Mon 3 Aug, 11:30 AM
-📍 Caloundra RSL Services Club, Caloundra
-💰 $39
-`music` `tribute` `performance`
-
-A daytime lunch and musical tribute performance dedicated to the songs of Olivia Newton-John.
-
-#### [Live Music Fridays @ Caloundra RSL](https://localsintheloop.com.au/listing/live-music-fridays-caloundra-rsl/)
-📆 Fri 7 Aug, 5:30 PM
-📍 Caloundra RSL Services Club, Caloundra
+#### [The Woombye Pub Live Music](https://www.bandsintown.com/c/caloundra-australia)
+📆 Fri 21 Aug, Time Unknown
+📍 The Woombye Pub, Woombye
 💰 Free
-`music` `free` `social`
+`music` `pub` `free`
 
-Regular live music session featuring local artists performing in a relaxed club environment.
+An evening of live music in the historic Woombye Pub. Features local talent performing in a classic Queensland pub setting.
 
-#### [Friday Night Live (live & free program incl. Marty Sima)](https://caloundrarsl.com.au/caloundra-rsl-live-entertainment/)
-📆 Fri 7 Aug, 3:30 PM
-📍 Caloundra RSL Services Club, 19 West Terrace, Caloundra QLD
+#### [Candlelight Best of Coldplay](https://feverup.com)
+📆 21 Aug 2026
+📍 Flaxton Gardens
+💰 $55.50
+`tribute` `music` `concert`
+
+A tribute concert featuring classical arrangements of Coldplay's hits played by candlelight at a scenic garden venue.
+
+#### [Sunday Live Music](https://thesandstavern.com.au)
+📆 23 Aug 2026
+📍 The Sands Tavern, Maroochydore
+💰 Contact venue
+`music` `live` `sunday`
+
+A relaxed Sunday afternoon session featuring local live musicians.
+
+#### [Live Music Saturdays @ Club Mooloolaba](https://localsintheloop.com.au/listing/live-music-saturdays-club-mooloolaba/)
+📆 Sat 22 Aug, 6:00 PM
+📍 Club Mooloolaba, Mooloolaba QLD
 💰 Free
-`music` `live` `free` `concert`
+`live music` `free` `social`
 
-An extended evening of live music featuring local artists like Marty Sima in a relaxed RSL club setting.
+Weekly live music session featuring varied local musicians.
 
-#### [Saturday Night Live (Paul Keys / The Shine)](https://caloundrarsl.com.au/caloundra-rsl-live-entertainment/)
-📆 Sat 8 Aug, 5:00 PM
-📍 Caloundra RSL Services Club, 19 West Terrace, Caloundra QLD
+#### [Candlelight: Tribute to Coldplay](https://feverup.com/m/135965)
+📆 Friday, 21 August 2026, 8:00 PM
+📍 Flaxton Gardens Sunshine Coast, 313-327 Flaxton Dr, Flaxton QLD
+💰 From $55.50
+`coldplay` `candlelight` `tribute`
+
+A string quartet performance of Coldplay’s greatest hits in a candlelit venue at Flaxton Gardens.
+
+#### Live music at Kings Beach Tavern
+📆 Mon 17 Aug, 7:00 PM
+📍 Kings Beach Tavern, Caloundra
 💰 Free
-`music` `live` `free` `concert`
+`music` `live` `concert`
 
-Live weekend entertainment featuring Paul Keys and The Shine for an evening of live music and social atmosphere.
+Live musical performance at the popular Kings Beach Tavern coastal venue.
 
-#### [Captain Acoustic (live music)](https://www.caloundrapowerboat.com.au/events/month/2026-08/)
-📆 Sat 8 Aug, 7:00 PM
-📍 Caloundra Power Boat Club, 2 Lamerough Parade, Golden Beach QLD
-💰 Free (club entry)
-`music` `acoustic` `live` `free`
-
-An acoustic live music set providing a relaxed soundtrack at the seaside Power Boat Club.
-
-#### [Alexis (Sunday live music set)](https://www.caloundrapowerboat.com.au/events/month/2026-08/)
-📆 Sun 9 Aug, 1:30 PM
-📍 Caloundra Power Boat Club, 2 Lamerough Parade, Golden Beach QLD
-💰 Free (club entry)
-`music` `live` `free` `sunday`
-
-An afternoon live performance by Alexis to enjoy over the weekend in a casual club environment.
-
-#### [The Original Eumundi Markets (market with scheduled live performers/buskers)](https://www.eumundimarkets.com.au/)
-📆 Sat 8 Aug, 7:00 AM
-📍 Eumundi Markets, 80 Memorial Dr, Eumundi QLD
-💰 Free entry
-`music` `markets` `live` `performance`
-
-A massive artisan market featuring ongoing live music and busking performances throughout the grounds.
-
-#### [Mooloolaba Sunsets Markets – Live Music Stage](https://www.sunshinecoast.qld.gov.au/news/sport-food-and-fun-your-guide-to-august-events)
-📆 Mon 03 Aug, 5:00 PM
-📍 Mooloolaba Esplanade, Mooloolaba
+#### Live music at Kings Beach Tavern
+📆 Tue 18 Aug, 7:00 PM
+📍 Kings Beach Tavern, Caloundra
 💰 Free
-`market` `acoustic` `free`
+`music` `live` `concert`
 
-Live music accompaniment to the weekly evening sunset market stalls.
+Ongoing live music series held at the Kings Beach Tavern.
 
-#### [Mooloolaba Sunsets Markets – Live Music Stage](https://www.sunshinecoast.qld.gov.au/news/sport-food-and-fun-your-guide-to-august-events)
-📆 Sat 08 Aug, 5:00 PM
-📍 Mooloolaba Esplanade, Mooloolaba
+#### Live music at Kings Beach Tavern
+📆 Wed 19 Aug, 7:00 PM
+📍 Kings Beach Tavern, Caloundra
 💰 Free
-`market` `acoustic` `free`
+`music` `live` `concert`
 
-Live music accompaniment to the weekly evening sunset market stalls.
+Live performance taking place at the Kings Beach Tavern.
 
-#### [BPM DJ & Karaoke Sunshine Coast](https://surreal.live/en-au/venue/kings-beach-tavern)
-📆 Tue 04 Aug, 7:00 PM
-📍 Kings Beach Tavern, 43 Burgess St, Kings Beach QLD
+#### Live music at Kings Beach Tavern
+📆 Thu 20 Aug, 7:00 PM
+📍 Kings Beach Tavern, Caloundra
 💰 Free
-`karaoke` `dj` `music` `social`
+`music` `live` `concert`
 
-A weekly interactive music night featuring DJ sets and open karaoke sessions. Participants are encouraged to join in on the singing in a relaxed local tavern setting.
+Live music performance at the Kings Beach Tavern local pub venue.
 
-#### [2000s + 2010s Party - Caloundra](https://musick.com.au/set-times/sunshine-coast/)
-📆 Sat 8 Aug, 9:00 PM
-📍 Kings Beach Tavern, 43 Burgess St, Caloundra QLD
+#### Live music at Kings Beach Tavern
+📆 Fri 21 Aug, 7:00 PM
+📍 Kings Beach Tavern, Caloundra
+💰 Free
+`live music` `caloundra` `pub`
+
+Casual live music performance held at the Kings Beach Tavern, a popular coastal spot for local gigs.
+
+#### Live music at Kings Beach Tavern
+📆 Sun 23 Aug, 3:00 PM
+📍 Kings Beach Tavern, Caloundra
+💰 Free
+`live music` `sunday` `caloundra`
+
+Sunday afternoon live music set at the tavern, offering a relaxed environment by the coast.
+
+#### [The Michael Jackson HIStory Show](https://showtime.net.au/shows/the-michael-jackson-history-show/)
+📆 Sat 22 Aug, 2:30 PM & 8:00 PM
+📍 The J, Noosa Heads
+💰 From $45
+`tribute` `pop` `music` `theatre`
+
+A high-production tribute concert recreating the iconic music and dance performances of Michael Jackson. Features detailed choreography and classic pop hits.
+
+#### [Aussie World Live Entertainment](https://www.bandsintown.com/c/caloundra-australia)
+📆 Sat 22 Aug, Time Unknown
+📍 Aussie World, Palmview
+💰 Free entry to grounds
+`music` `family` `outdoor`
+
+Casual live music performances occurring within the Aussie World complex, typically featuring family-friendly or upbeat acoustic entertainment.
+
+#### [Herman's Hermits](https://theeventscentre.com.au)
+📆 22 Aug 2026
+📍 The Events Centre, Caloundra
+💰 Check website
+`pop` `concert` `music`
+
+The legendary British pop band brings their classic hits to the Sunshine Coast for a one-night show.
+
+#### [2000s + 2010s Party](https://imperialhoteleumundi.com.au)
+📆 22 Aug 2026
+📍 Imperial Hotel Eumundi
 💰 $19
 `music` `dance` `party`
 
-A club-style themed music night focusing on pop and dance hits from the 2000s and 2010s.
+A nostalgia-themed dance party focusing on hits from the 2000s and 2010s.
 
-#### [HURRICANE — Luke Combs Tribute Show](https://nortonmusicfactory.com.au/events/)
-📆 8 August 2026, 6:00 PM
-📍 Norton Music Factory, 13 Bronwyn St, Caloundra West QLD
-💰 Ticketed
-`music` `country` `tribute`
+#### [The Music and Life of Barbra Streisand starring Melinda Schneider](https://theeventscentre.com.au)
+📆 20 August 2026
+📍 The Events Centre, Caloundra
+💰 $89.90 - $99.90
+`music` `tribute` `concert`
 
-A high-energy tribute performance dedicated to the country hits of Luke Combs.
+Melinda Schneider performs a tribute concert celebrating the iconic career and songs of Barbra Streisand.
 
-#### [2000s + 2010s Party (DJ/live party night)](https://musick.com.au/regional/sunshine-coast/)
-📆 Sat 8 Aug, 9:00 PM
-📍 Kings Beach Tavern, 43 Burgess St, Caloundra QLD
-💰 $19
-`music` `party` `dj` `concert`
+#### [The Way We Were: A CELEBRATION OF Barbra Streisand](https://theeventscentre.com.au/event/the-way-we-were/)
+📆 Thu 20 Aug, 7:30 PM
+📍 The Events Centre, Caloundra
+💰 $99.90
+`music` `tribute` `performance`
 
-A nostalgic party night featuring music from the 2000s and 2010s with DJs and live entertainment.
+An immersive concert experience celebrating the hits and iconic musical legacy of Barbra Streisand.
+
+#### [Never Ending 80s Presents: 80s v 90s - The Battle of The Decades (10 Year Anniversary)](https://musick.com.au/gig/never-ending-80s-presents-80s-v-90s-the-battle-of-the-decades-dress-up-party-10-year-anniversary-at-the-savvy-squire-2026-08-21/)
+📆 Friday, 21 August 2026, 8:00 PM
+📍 The Savvy Squire, 123 Parkyn Parade, Mooloolaba QLD
+💰 $35.00
+`party` `nostalgia` `live music`
+
+A nostalgic 80s vs 90s themed party and concert celebrating 10 years of The Never Ending 80s show.
+
+#### Bo’ness Brothers live
+📆 Sun 16 Aug, 7:00 PM
+📍 Sunshine Coast Turf Club, Corbould Park
+💰 Free
+`music` `live` `concert`
+
+A live performance by the Bo’ness Brothers held at the Sunshine Coast Turf Club.
+
+#### Herman’s Hermits
+📆 Sun 23 Aug, 7:30 PM
+📍 The Events Centre, Caloundra
+💰 Free
+`concert` `pop` `classic`
+
+Classic 60s pop legends Herman’s Hermits perform their greatest hits in a live concert setting.
 
 ### 🎨 Arts / Exhibition
 
-#### [Fabrizio Biviano: Colourful Language](https://www.noosaregionalgallery.com.au)
-📆 3 Aug 2026, 10:00 AM
-📍 9 Pelican St, Tewantin
+#### [The Adventures of Snugglepot & Cuddlepie](https://www.trybooking.com/DKTZR)
+📆 22 Aug, 3:00 PM
+📍 Lind Lane Theatre, Nambour
+💰 $25
+`theatre` `performance` `community`
+
+A local theatrical adaptation of the Australian classic, performed by the youth academy in an intimate community setting.
+
+#### [Hansel & Gretel](https://www.trybooking.com/DKTZR)
+📆 21 Aug - 23 Aug
+📍 Lind Lane Theatre, Nambour
+💰 $25
+`theatre` `performance` `creative`
+
+An immersive theatrical retelling of the classic fairy tale performed by local youth actors.
+
+### 🤝 Social / Meetup
+
+#### [Ben Bennett Bushland Park — Children’s wildflower walk](https://www.weekendnotes.com/sunshine-coast-wildflower-festival-290004/)
+📆 Sat 17 Aug, 9:00 AM
+📍 Ben Bennett Bushland Park, Caloundra
 💰 Free
-`painting` `art` `exhibition` `free`
+`nature` `hiking` `botany`
 
-An exhibition by Fabrizio Biviano utilizing vibrant colour palettes and abstract expression to explore the communicative power of visual art.
-
-### 📌 Community / Other
-
-#### [Japan Festival Sunshine Coast](https://www.japanfestival.com.au/)
-📆 Sat 8 Aug, 11:00 AM
-📍 Kawana Waters State College, Bokarina
-💰 Free
-`culture` `arts` `community` `free`
-
-A community celebration of Japanese culture featuring traditional performances, artisanal crafts, and cultural insights, perfect for exploring international arts and history.
+A guided educational walk through the bushland park, providing an opportunity for community members to observe native flora.

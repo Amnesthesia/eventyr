@@ -2,31 +2,7 @@
   "city_key": "sunnycoast",
   "provider": "google",
   "tier": "independents",
-  "week_start": "2026-08-03",
-  "week_end": "2026-08-09",
-  "events": [
-    {
-      "title": "Mamma Mia!",
-      "datetime": "7 August 2026 to 9 August 2026",
-      "location": "The Events Centre, 20 Minchinton Street, Caloundra",
-      "link": "https://theeventscentre.com.au",
-      "category": "Concert / Music",
-      "cost": "From $64.90",
-      "source": "Mad About Theatre",
-      "description": "A local community production of the popular musical, showcasing regional talent in a theatrical performance setting. This is a classic, high-energy musical experience suitable for local theatre enthusiasts.",
-      "tags": [
-        "theatre",
-        "music",
-        "community",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true,
-      "datetime_iso": "2026-08-07",
-      "datetime_end_iso": "2026-08-09",
-      "image": ""
-    }
-  ]
+  "week_start": "2026-08-17",
+  "week_end": "2026-08-23",
+  "events": []
 }
