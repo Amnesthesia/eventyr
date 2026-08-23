@@ -2,7 +2,31 @@
   "city_key": "sunnycoast",
   "provider": "google",
   "tier": "independents",
-  "week_start": "2026-08-17",
-  "week_end": "2026-08-23",
-  "events": []
+  "week_start": "2026-08-24",
+  "week_end": "2026-08-30",
+  "events": [
+    {
+      "title": "Destash Market",
+      "datetime": "Sat 29 Aug, 9:00 AM",
+      "location": "Caloundra Arts Centre, Caloundra",
+      "link": "https://caloundraartscentre.org.au",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Caloundra Arts Centre Association",
+      "description": "A community gathering where local artists and crafters sell surplus art materials and supplies, providing a great opportunity to connect with local makers and source affordable resources for creative projects.",
+      "tags": [
+        "art",
+        "community",
+        "free",
+        "maker"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-29T09:00:00",
+      "datetime_end_iso": "2026-08-29T13:00:00",
+      "image": ""
+    }
+  ]
 }
