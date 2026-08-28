@@ -132,6 +132,18 @@ export function curatedPath(
 	return join(DATA_ROOT, city, provider, "curated", `${tier}.json`);
 }
 
+// Adapter framework paths (see src/adapters/) — raw fetch bodies are
+// persisted per source as both a debugging artifact and a source of test
+// fixtures; the cache file tracks ETag/Last-Modified per URL for
+// conditional GET.
+export function adapterRawDir(sourceId: string): string {
+	return join(DATA_ROOT, "_raw", sourceId);
+}
+
+export function adapterCachePath(sourceId: string): string {
+	return join(DATA_ROOT, "_cache", `${sourceId}.json`);
+}
+
 export interface EventFingerprint {
 	title: string;
 	date: string;

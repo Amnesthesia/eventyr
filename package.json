@@ -16,7 +16,8 @@
     "ical": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/ical.ts",
     "pages": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/pages.ts",
     "messaging": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/messaging.ts",
-    "add-city": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/add_city.ts"
+    "add-city": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/add_city.ts",
+    "test": "tsx --tsconfig tsconfig.scripts.json --test src/**/*.test.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",
