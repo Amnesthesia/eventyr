@@ -1,8 +1,11 @@
 // Shared extraction-strategy helpers, used by adapters in strict priority
 // order (JSON-LD, then structured endpoints, then HTML selectors as a last
 // resort — see refactor prompt, Phase 2). These are generic parsers over
-// already-fetched bodies; per-site HTML selectors are each adapter's own
-// concern (Phase 3), isolated in that adapter's file.
+// already-fetched bodies. The generic page adapter (pageAdapter.ts) tries
+// JSON-LD first via these helpers before falling back to LLM extraction
+// (llmExtract.ts) for pages that publish none.
+
+import type { RawCandidateFields } from "./types.ts";
 
 const EVENT_TYPES = new Set([
 	"event",
@@ -133,20 +136,9 @@ function extractPrice(node: Record<string, unknown>): string | null {
  * parser (dates.ts) themselves so a missing/unparseable date stays null
  * rather than silently becoming "today" or similar.
  */
-export function jsonLdNodeToRawFields(node: Record<string, unknown>): {
-	title: string | null;
-	description: string | null;
-	startRaw: string | null;
-	endRaw: string | null;
-	venueName: string | null;
-	address: string | null;
-	url: string | null;
-	price: string | null;
-	imageUrl: string | null;
-	organiser: string | null;
-	category: string | null;
-	sourceEventId: string | null;
-} {
+export function jsonLdNodeToRawFields(
+	node: Record<string, unknown>,
+): RawCandidateFields {
 	const { venueName, address } = extractLocation(node);
 	const organizer = node.organizer as Record<string, unknown> | undefined;
 	return {

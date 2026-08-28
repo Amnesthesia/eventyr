@@ -98,10 +98,59 @@ export interface CandidateEvent {
 	provenance: FetchProvenance;
 }
 
+/**
+ * The raw, pre-date-parsing fields any extraction method (deterministic
+ * JSON-LD mapping, or LLM extraction over reduced page text) produces.
+ * Shared shape so both paths feed the same conversion into CandidateEvent
+ * (see candidate.ts) — dates are always resolved by our own parser, never
+ * trusted from the extractor itself.
+ */
+export interface RawCandidateFields {
+	title: string | null;
+	description: string | null;
+	/** Date/time exactly as it appears on the page — never computed. */
+	startRaw: string | null;
+	endRaw: string | null;
+	venueName: string | null;
+	address: string | null;
+	url: string | null;
+	price: string | null;
+	imageUrl: string | null;
+	organiser: string | null;
+	category: string | null;
+	sourceEventId: string | null;
+}
+
+/**
+ * Extracts CandidateEvent-shaped fields from already-fetched page text.
+ * Implementations must never fetch or search anything themselves — the
+ * page content is provided; the job is purely turning it into structured
+ * fields, copying values verbatim and returning null for anything not
+ * actually present. Used as the "html" strategy's extraction mechanism
+ * when a page publishes no JSON-LD/structured endpoint (see llmExtract.ts).
+ */
+export type PageExtractFn = (
+	pageText: string,
+	sourceName: string,
+) => Promise<RawCandidateFields[]>;
+
 export interface EventSourceAdapter {
 	id: string;
 	discover(): Promise<RawListing[]>;
 	extract(raw: RawListing): Promise<CandidateEvent[]>;
+}
+
+/**
+ * Minimal shape pageAdapter.ts depends on — satisfied by the real
+ * SourceFetcher (fetch.ts) but small enough to stub directly in tests
+ * without mocking robots.txt/network behaviour.
+ */
+export interface Fetcher {
+	fetch(
+		sourceId: string,
+		url: string,
+		strategy: ExtractionStrategy,
+	): Promise<RawListing>;
 }
 
 export interface SourceRunResult {
