@@ -1,119 +1,443 @@
+# Event sources for Sunshine Coast.
+#
+# Each entry declares how it is collected:
+#   method: scraper — we fetch its listingUrls ourselves (src/adapters/).
+#   method: llm     — no verified listing page, so LLM web search covers it.
+#
+# Everything else (homepage, venue, domains, notes, candidate listingUrls)
+# is kept regardless of method, so promoting a source to scraper is a
+# one-field change. `pnpm probe-sources --apply` does that promotion once
+# it has verified a listing URL actually yields dated events.
+
 name: Sunshine Coast
+timezone: Australia/Brisbane
 sources:
   aggregators:
-  - Visit Sunshine Coast – What's On (visitsunshinecoast.com/whats-on)
-  - Events.Sunshine Coast – curated regional calendar (events.sunshinecoast.qld.gov.au)
-  - Queensland.com Sunshine Coast Events – Tourism & Events Queensland (queensland.com/au/en/things-to-do/events/sunshine-coast-events)
-  - Eventfinda Sunshine Coast (eventfinda.com.au/whatson/events/sunshine-coast)
-  - Eventbrite Sunshine Coast (eventbrite.com.au/d/australia--sunshine-coast/events)
-  - Meetup – Sunshine Coast (meetup.com/find/au--sunshine-coast)
-  - Humanitix – Sunshine Coast events (humanitix.com)
-  - The Urban List Sunshine Coast (theurbanlist.com/sunshinecoast)
-  - Weekend Notes Sunshine Coast (weekendnotes.com)
-  - Sunshine Coast Point – events guide (sunshinecoastpoint.com.au/events)
-  - Locals in the Loop – Sunshine Coast what's on (localsintheloop.com.au)
-  - My Guide Sunshine Coast (myguidesunshinecoast.com)
-  - Tourism Sunshine Coast (tourismsunshinecoast.com.au)
-  - Visit Noosa (visitnoosa.com.au)
-  - Whatslively Sunshine Coast gig guide (whatslively.com/gig-guide/sunshine-coast-australia)
-  - Lively 50+ Sunshine Coast events (lively50plus.com.au/events)
-  - Noosa Today community news & events (noosatoday.com.au)
-  - Sunshine Coast Events (council curated calendar) (events.sunshinecoast.qld.gov.au)
-  - Things To Do Sunshine Coast – What's On This Week (thingstodosunshinecoast.com.au/wotw)
-  - YELO Sunshine Coast Gig Guide (yelo.live/gigs)
-  - Bandsintown Sunshine Coast (bandsintown.com/c/sunshine-coast-australia)
-  - Hello Sunshine Magazine (hellosunshinemag.com.au)
-  - Noosa.com What's On (noosa.com)
-  - What's On? Sunshine Coast Events Facebook group (facebook.com/groups/SunshineCoastEvents)
-  - Events Connect - Sunshine Coast Council (eventsconnect.sunshinecoast.qld.gov.au)
-  - Tripadvisor - Sunshine Coast Things to Do (tripadvisor.com)
-  - Sunshine Coast Council What's On (whatson.sunshinecoast.qld.gov.au)
-  - The Weekend Edition (theweekendedition.com.au)
-  - AllEvents.in (allevents.in)
+    - name: Visit Sunshine Coast
+      method: llm
+      domains:
+        - visitsunshinecoast.com
+    - name: Events.Sunshine Coast
+      method: llm
+      domains:
+        - events.sunshinecoast.qld.gov.au
+    - name: Queensland.com Sunshine Coast Events
+      method: llm
+      domains:
+        - queensland.com
+    - name: Eventfinda Sunshine Coast
+      method: llm
+      domains:
+        - eventfinda.com.au
+    - name: Eventbrite Sunshine Coast
+      method: llm
+      domains:
+        - eventbrite.com.au
+    - name: Meetup
+      method: llm
+      domains:
+        - meetup.com
+    - name: Humanitix
+      method: llm
+      domains:
+        - humanitix.com
+    - name: The Urban List Sunshine Coast
+      method: llm
+      domains:
+        - theurbanlist.com
+    - name: Weekend Notes Sunshine Coast
+      method: llm
+      domains:
+        - weekendnotes.com
+    - name: Sunshine Coast Point
+      method: llm
+      domains:
+        - sunshinecoastpoint.com.au
+    - name: Locals in the Loop
+      method: llm
+      domains:
+        - localsintheloop.com.au
+    - name: My Guide Sunshine Coast
+      method: llm
+      domains:
+        - myguidesunshinecoast.com
+    - name: Tourism Sunshine Coast
+      method: llm
+      domains:
+        - tourismsunshinecoast.com.au
+    - name: Visit Noosa
+      method: llm
+      domains:
+        - visitnoosa.com.au
+    - name: Whatslively Sunshine Coast gig guide
+      method: llm
+      domains:
+        - whatslively.com
+    - name: Lively 50+ Sunshine Coast events
+      method: llm
+      domains:
+        - lively50plus.com.au
+    - name: Noosa Today community news & events
+      method: llm
+      domains:
+        - noosatoday.com.au
+    - name: Things To Do Sunshine Coast
+      method: llm
+      domains:
+        - thingstodosunshinecoast.com.au
+    - name: YELO Sunshine Coast Gig Guide
+      method: llm
+      domains:
+        - yelo.live
+    - name: Bandsintown Sunshine Coast
+      method: llm
+      domains:
+        - bandsintown.com
+    - name: Hello Sunshine Magazine
+      method: llm
+      domains:
+        - hellosunshinemag.com.au
+    - name: Noosa.com What's On
+      method: llm
+      domains:
+        - noosa.com
+    - name: What's On? Sunshine Coast Events Facebook group
+      method: llm
+      domains:
+        - facebook.com
+    - name: Events Connect - Sunshine Coast Council
+      method: llm
+      domains:
+        - eventsconnect.sunshinecoast.qld.gov.au
+    - name: Tripadvisor - Sunshine Coast Things to Do
+      method: llm
+      domains:
+        - tripadvisor.com
+    - name: Sunshine Coast Council What's On
+      method: llm
+      domains:
+        - whatson.sunshinecoast.qld.gov.au
+    - name: The Weekend Edition
+      method: llm
+      domains:
+        - theweekendedition.com.au
+    - name: AllEvents.in
+      method: llm
+      domains:
+        - allevents.in
   institutions:
-  - Sunshine Coast Council Events (sunshinecoast.qld.gov.au/events)
-  - Sunshine Coast Libraries – What's On (library.sunshinecoast.qld.gov.au/whats-on)
-  - Caloundra Regional Gallery (gallery.sunshinecoast.qld.gov.au)
-  - Noosa Regional Gallery (noosaregionalgallery.com.au)
-  - The Events Centre, Caloundra (theeventscentre.com.au)
-  - The J Noosa (thej.com.au)
-  - Majestic Theatre Pomona (majestictheatrepomona.com.au)
-  - Venue 114, Bokarina (venue114.com.au)
-  - University of the Sunshine Coast – UniSC Events (unisc.edu.au/community/events)
-  - UniSC Arena (austadiums.com/stadiums/usc-stadium/events)
-  - Sunshine Coast Stadium (sunshinecoaststadium.com.au)
-  - Noosa Council events / Noosa Alive! festival (noosaalive.com.au)
-  - Queensland Air Museum, Caloundra (qam.com.au)
-  - Maroochy Regional Bushland Botanic Garden (friendsofmaroochybotanicgardens.org.au)
-  - Mary Cairncross Scenic Reserve (sunshinecoast.qld.gov.au/marycairncross)
-  - Noosa Arts Theatre (noosaartstheatre.org.au)
-  - Lind Lane Theatre, Nambour (lindlane.com.au)
-  - Black Box Theatre, Nambour (blackboxtheatre.com.au)
-  - Study Sunshine Coast events (studysunshinecoast.com.au/events)
-  - Noosa Regional Gallery (galleries.noosa.qld.gov.au)
-  - Noosa Council Libraries (libraries.noosa.qld.gov.au)
-  - Maroochy Regional Bushland Botanic Garden (friendsbbgmaroochy.org.au)
-  - Mary Cairncross Scenic Reserve (marycairncrossreserve.sunshinecoast.qld.gov.au)
-  - Majestic Theatre Pomona (majestictheatre.com.au)
-  - Tourism and Events Queensland - Sunshine Coast (teq.queensland.com)
-  - Sunshine Coast Events Industry Association (sceia.com.au)
-  - University of the Sunshine Coast (usc.edu.au)
-  - TAFE Queensland (tafeqld.edu.au)
+    - name: Sunshine Coast Council Events
+      method: llm
+      domains:
+        - sunshinecoast.qld.gov.au
+    - name: Sunshine Coast Libraries
+      method: llm
+      domains:
+        - library.sunshinecoast.qld.gov.au
+    - name: Caloundra Regional Gallery
+      method: llm
+      domains:
+        - gallery.sunshinecoast.qld.gov.au
+    - name: Noosa Regional Gallery
+      method: llm
+      domains:
+        - noosaregionalgallery.com.au
+    - name: The Events Centre, Caloundra
+      method: llm
+      domains:
+        - theeventscentre.com.au
+    - name: The J Noosa
+      method: llm
+      domains:
+        - thej.com.au
+    - name: Majestic Theatre Pomona
+      method: llm
+      domains:
+        - majestictheatrepomona.com.au
+    - name: Venue 114, Bokarina
+      method: llm
+      domains:
+        - venue114.com.au
+    - name: University of the Sunshine Coast
+      method: llm
+      domains:
+        - unisc.edu.au
+    - name: UniSC Arena
+      method: llm
+      domains:
+        - austadiums.com
+    - name: Sunshine Coast Stadium
+      method: llm
+      domains:
+        - sunshinecoaststadium.com.au
+    - name: Noosa Council events / Noosa Alive! festival
+      method: llm
+      domains:
+        - noosaalive.com.au
+    - name: Queensland Air Museum, Caloundra
+      method: llm
+      domains:
+        - qam.com.au
+    - name: Maroochy Regional Bushland Botanic Garden
+      method: llm
+      domains:
+        - friendsofmaroochybotanicgardens.org.au
+    - name: Noosa Arts Theatre
+      method: llm
+      domains:
+        - noosaartstheatre.org.au
+    - name: Lind Lane Theatre, Nambour
+      method: llm
+      domains:
+        - lindlane.com.au
+    - name: Black Box Theatre, Nambour
+      method: llm
+      domains:
+        - blackboxtheatre.com.au
+    - name: Study Sunshine Coast events
+      method: llm
+      domains:
+        - studysunshinecoast.com.au
+    - name: Noosa Regional Gallery
+      method: llm
+      domains:
+        - galleries.noosa.qld.gov.au
+    - name: Noosa Council Libraries
+      method: llm
+      domains:
+        - libraries.noosa.qld.gov.au
+    - name: Maroochy Regional Bushland Botanic Garden
+      method: llm
+      domains:
+        - friendsbbgmaroochy.org.au
+    - name: Mary Cairncross Scenic Reserve
+      method: llm
+      domains:
+        - marycairncrossreserve.sunshinecoast.qld.gov.au
+    - name: Majestic Theatre Pomona
+      method: llm
+      domains:
+        - majestictheatre.com.au
+    - name: Tourism and Events Queensland - Sunshine Coast
+      method: llm
+      domains:
+        - teq.queensland.com
+    - name: Sunshine Coast Events Industry Association
+      method: llm
+      domains:
+        - sceia.com.au
+    - name: University of the Sunshine Coast
+      method: llm
+      domains:
+        - usc.edu.au
+    - name: TAFE Queensland
+      method: llm
+      domains:
+        - tafeqld.edu.au
   independents:
-  - Solbar, Maroochydore – live music venue (solbarsunshinecoast.com.au)
-  - The Station SC, Yandina – music & markets (thestationsc.com.au)
-  - Banana Bender Pub, Palmview – live music & events (thebananabenderpub.com/events)
-  - Norton Music Factory, Caloundra (nortonmusic.com.au)
-  - Kings Beach Tavern, Caloundra – gigs (kingsbeachtavern.com.au)
-  - Duporth Tavern, Maroochydore (duporthtavern.com.au)
-  - Pulse Bar & Live Music, Maroochydore (pulsebar.com.au)
-  - Parental Guidance, Maroochydore — small live music venue
-  - The Presynct Venue & Bar, Nambour (thepresynct.com.au)
-  - Boston Shaker Bar, Mooloolaba — cocktail & live music bar
-  - The Dock @ The Wharf, Mooloolaba (thewharfmooloolaba.com.au)
-  - Drift Bar, Caloundra (driftbar.com.au)
-  - Noosa Surf Club (noosasurfclub.com.au)
-  - El Capitano, Maroochydore — pizza bar with Hump Day live music sessions
-  - The Bison Bar, Nambour — vintage cocktail bar with live acts
-  - Your Mates Brewing Co., Warana (yourmatesbrewing.com)
-  - Mapleton Public House (mapletonpublichouse.com.au)
-  - Berkelouw Books, Eumundi – author events & book launches (berkelouw.com.au/stores/eumundi)
-  - Annie's Books on Peregian – author talks & community events (anniesbooks.com.au)
-  - Rosetta Books, Maleny – book, arts and cultural events (rosettabooks.com.au)
-  - The Bookshop at Caloundra – author signings & readings (thebookshopcaloundra.com.au)
-  - Harry Hartog, Maroochydore (harryhartog.com.au)
-  - Kickback Books – second-hand bookshop
-  - The River Read, Noosaville – bookstore & cafe (theriverread.com.au)
-  - Noosa Jazz Club (noosajazzclub.com)
-  - Sunshine Coast Music and Events / Mudjimba Night Markets (sunshinecoastmusicandevents.com.au)
-  - Eumundi Markets (eumundimarkets.com.au)
-  - Coolum Civic Centre – community events
-  - Caloundra RSL — community gigs & events (caloundrarsl.com.au)
-  - Dicky Beach Surf Club — live music & community events
-  - Sunshine Coast Multicultural Network (Facebook group)
-  - Sunshine Coast 30s + 40s (Meetup group)
-  - Women's Walk and Talk Sunshine Coast (Meetup group)
-  - Mooloolaba Pickleball Club (Meetup group)
-  - Solbar Maroochydore (solbar.com.au)
-  - NightQuarter Birtinya (nightquarter.com.au)
-  - Imperial Hotel Eumundi (imperialhoteleumundi.com.au)
-  - Norton Music Factory (nortonmusicfactory.com.au/events)
-  - The Shed Palmview (theshedpalmview.com.au)
-  - Blackflag Brewing (blackflagbrewing.com.au)
-  - Sofar Sounds Sunshine Coast (sofarsounds.com/cities/sunshine-coast)
-  - The Junction Bookstore Noosa (thejunctionbookstore.com.au)
-  - The BookShop at Caloundra (thebookshopatcaloundra.com.au)
-  - The River Read Noosaville (riverread.com.au)
-  - A Little Shop of Soul Cooroy (alittleshopofsoul.com.au)
-  - Village Bookshop Noosa (villagebookshop.com.au)
-  - Sandy Pages Books Noosa Heads (sandypagesbooks.com.au)
-  - Mary Valley Rattler (marvalleyrattler.com.au)
-  - Troubadour Wagons (troubadourwagons.com.au)
-  - Sunny Games & Socials (Meetup) (meetup.com/en-AU/find/au--sunshine-coast/board-games)
-  - New to the Sunshine Coast Meetup (facebook.com/newtothesunshinecoast)
-  - Sunshine Coast Tourism Canada - Meetings & Events (sunshinecoastcanada.com)
-  - Sunshine Coast Chamber of Commerce - Events (sunshinecoastchamber.ca)
-  - Maleny Community Centre (malenycommunitycentre.org)
-  - Sunshine Coast Maker Space (sunshinecoastmakerspace.com.au)
-  - Annie's Books on Peregian (anniesbooksonperegian.com.au)
-  - Caloundra Arts Centre (caloundraartsandcrafts.org.au)
+    - name: Solbar, Maroochydore
+      method: llm
+      domains:
+        - solbarsunshinecoast.com.au
+    - name: The Station SC, Yandina
+      method: llm
+      domains:
+        - thestationsc.com.au
+    - name: Banana Bender Pub, Palmview
+      method: llm
+      domains:
+        - thebananabenderpub.com
+    - name: Norton Music Factory, Caloundra
+      method: llm
+      domains:
+        - nortonmusic.com.au
+    - name: Kings Beach Tavern, Caloundra
+      method: llm
+      domains:
+        - kingsbeachtavern.com.au
+    - name: Duporth Tavern, Maroochydore
+      method: llm
+      domains:
+        - duporthtavern.com.au
+    - name: Pulse Bar & Live Music, Maroochydore
+      method: llm
+      domains:
+        - pulsebar.com.au
+    - name: Parental Guidance, Maroochydore
+      method: llm
+    - name: The Presynct Venue & Bar, Nambour
+      method: llm
+      domains:
+        - thepresynct.com.au
+    - name: Boston Shaker Bar, Mooloolaba
+      method: llm
+    - name: The Dock @ The Wharf, Mooloolaba
+      method: llm
+      domains:
+        - thewharfmooloolaba.com.au
+    - name: Drift Bar, Caloundra
+      method: llm
+      domains:
+        - driftbar.com.au
+    - name: Noosa Surf Club
+      method: llm
+      domains:
+        - noosasurfclub.com.au
+    - name: El Capitano, Maroochydore
+      method: llm
+    - name: The Bison Bar, Nambour
+      method: llm
+    - name: Your Mates Brewing Co., Warana
+      method: llm
+      domains:
+        - yourmatesbrewing.com
+    - name: Mapleton Public House
+      method: llm
+      domains:
+        - mapletonpublichouse.com.au
+    - name: Berkelouw Books, Eumundi
+      method: llm
+      domains:
+        - berkelouw.com.au
+    - name: Annie's Books on Peregian
+      method: llm
+      domains:
+        - anniesbooks.com.au
+    - name: Rosetta Books, Maleny
+      method: llm
+      domains:
+        - rosettabooks.com.au
+    - name: The Bookshop at Caloundra
+      method: llm
+      domains:
+        - thebookshopcaloundra.com.au
+    - name: Harry Hartog, Maroochydore
+      method: llm
+      domains:
+        - harryhartog.com.au
+    - name: Kickback Books
+      method: llm
+    - name: The River Read, Noosaville
+      method: llm
+      domains:
+        - theriverread.com.au
+    - name: Noosa Jazz Club
+      method: llm
+      domains:
+        - noosajazzclub.com
+    - name: Sunshine Coast Music and Events / Mudjimba Night Markets
+      method: llm
+      domains:
+        - sunshinecoastmusicandevents.com.au
+    - name: Eumundi Markets
+      method: llm
+      domains:
+        - eumundimarkets.com.au
+    - name: Coolum Civic Centre
+      method: llm
+    - name: Caloundra RSL
+      method: llm
+      domains:
+        - caloundrarsl.com.au
+    - name: Dicky Beach Surf Club
+      method: llm
+    - name: Sunshine Coast Multicultural Network
+      method: llm
+    - name: Sunshine Coast 30s + 40s
+      method: llm
+    - name: Women's Walk and Talk Sunshine Coast
+      method: llm
+    - name: Mooloolaba Pickleball Club
+      method: llm
+    - name: Solbar Maroochydore
+      method: llm
+      domains:
+        - solbar.com.au
+    - name: NightQuarter Birtinya
+      method: llm
+      domains:
+        - nightquarter.com.au
+    - name: Imperial Hotel Eumundi
+      method: llm
+      domains:
+        - imperialhoteleumundi.com.au
+    - name: Norton Music Factory
+      method: llm
+      domains:
+        - nortonmusicfactory.com.au
+    - name: The Shed Palmview
+      method: llm
+      domains:
+        - theshedpalmview.com.au
+    - name: Blackflag Brewing
+      method: llm
+      domains:
+        - blackflagbrewing.com.au
+    - name: Sofar Sounds Sunshine Coast
+      method: llm
+      domains:
+        - sofarsounds.com
+    - name: The Junction Bookstore Noosa
+      method: llm
+      domains:
+        - thejunctionbookstore.com.au
+    - name: The BookShop at Caloundra
+      method: llm
+      domains:
+        - thebookshopatcaloundra.com.au
+    - name: The River Read Noosaville
+      method: llm
+      domains:
+        - riverread.com.au
+    - name: A Little Shop of Soul Cooroy
+      method: llm
+      domains:
+        - alittleshopofsoul.com.au
+    - name: Village Bookshop Noosa
+      method: llm
+      domains:
+        - villagebookshop.com.au
+    - name: Sandy Pages Books Noosa Heads
+      method: llm
+      domains:
+        - sandypagesbooks.com.au
+    - name: Mary Valley Rattler
+      method: llm
+      domains:
+        - marvalleyrattler.com.au
+    - name: Troubadour Wagons
+      method: llm
+      domains:
+        - troubadourwagons.com.au
+    - name: Sunny Games & Socials
+      method: llm
+      domains:
+        - meetup.com
+    - name: New to the Sunshine Coast Meetup
+      method: llm
+      domains:
+        - facebook.com
+    - name: Sunshine Coast Tourism Canada - Meetings & Events
+      method: llm
+      domains:
+        - sunshinecoastcanada.com
+    - name: Sunshine Coast Chamber of Commerce - Events
+      method: llm
+      domains:
+        - sunshinecoastchamber.ca
+    - name: Maleny Community Centre
+      method: llm
+      domains:
+        - malenycommunitycentre.org
+    - name: Sunshine Coast Maker Space
+      method: llm
+      domains:
+        - sunshinecoastmakerspace.com.au
+    - name: Annie's Books on Peregian
+      method: llm
+      domains:
+        - anniesbooksonperegian.com.au
+    - name: Caloundra Arts Centre
+      method: llm
+      domains:
+        - caloundraartsandcrafts.org.au

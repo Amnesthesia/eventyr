@@ -38,13 +38,18 @@ export interface SourceDefinition {
 	domains: string[];
 	venue: VenueRecord;
 	strategy: ExtractionStrategy;
-	enabled: boolean;
+	/**
+	 * Which sources/{city}.yml tier this source was moved out of. Carried
+	 * forward so scraped output can be written under the same tier name the
+	 * AI-search path uses, which is what lets curate.ts's TIER_TO_VENUE map
+	 * classify adapter events with no special-casing.
+	 */
+	sourceTier: "aggregators" | "institutions" | "independents";
 	/** Fetch cadence, e.g. "daily" | "weekly". */
 	schedule: "daily" | "weekly";
 	/**
-	 * Why this entry is disabled, unverified, or otherwise not ready for an
-	 * adapter — or any other caveat about how this entry was populated.
-	 * Required whenever enabled is false, or the id/domains were guessed.
+	 * Any caveat about how this entry was populated — e.g. which probe run
+	 * verified its listing URL, or a known quirk of the source.
 	 */
 	note?: string;
 }

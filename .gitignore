@@ -9,3 +9,9 @@ node_modules/
 .astro/
 *.tsbuildinfo
 dist/
+
+# Adapter framework working data: raw fetched bodies, conditional-GET cache,
+# probe results. All regenerable, all unbounded.
+data/_raw/
+data/_cache/
+data/_probe/

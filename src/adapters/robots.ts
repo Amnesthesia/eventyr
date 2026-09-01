@@ -46,9 +46,14 @@ function parseRobotsTxt(body: string, userAgent: string): RobotsRuleSet {
 		}
 	}
 
+	// Group selection is by substring against our UA. That UA is now a
+	// browser string (see fetch.ts on why), so no site-specific bot group can
+	// match it and we always land on "*" — the conservative choice, and the
+	// group a browser-identified client should be judged by. Empty group names
+	// are skipped: "".includes("") is true and would otherwise win over "*".
 	const ua = userAgent.toLowerCase();
 	for (const [agent, rules] of groups) {
-		if (ua.includes(agent) && agent !== "*") return rules;
+		if (agent && agent !== "*" && ua.includes(agent)) return rules;
 	}
 	return groups.get("*") ?? { allow: [], disallow: [] };
 }

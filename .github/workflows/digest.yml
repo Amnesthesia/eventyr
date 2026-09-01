@@ -42,7 +42,7 @@ on:
         options:
           - brisbane
           - goldcoast
-            - sunnycoast
+          - sunnycoast
       recipient:
         description: "WhatsApp recipient number (e.g. 61412345678). Leave blank to use the default."
         required: false
@@ -78,6 +78,17 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      # Scrape first-party sources we have verified listing URLs for. Never
+      # blocks the run: the AI search below still covers every method: llm
+      # source regardless of how this goes.
+      - name: Scrape adapter sources
+        continue-on-error: true
+        env:
+          CITY: ${{ inputs.city }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          FORCE: ${{ inputs.force }}
+        run: pnpm collect-adapters
 
       - name: Collect events
         env:
@@ -116,6 +127,9 @@ jobs:
           CITY: ${{ inputs.city }}
         run: pnpm tsx --tsconfig tsconfig.scripts.json src/ical.ts
 
+      - name: Generate RSS feeds
+        run: pnpm rss
+
       - name: Update pages index
         run: pnpm tsx --tsconfig tsconfig.scripts.json src/pages.ts
 
@@ -131,7 +145,7 @@ jobs:
           git add "data/${CITY}.json" \
                   "data/${CITY}/" \
                   "${CITY^^}.md" "public/${CITY}.ics" "data/index.json" \
-                  public/sitemap.xml
+                  public/sitemap.xml public/*/feed.xml
           git diff --cached --quiet && exit 0
           git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           for attempt in 1 2 3; do

@@ -227,3 +227,52 @@ export const structuredEndpoints = {
 		return u.toString();
 	},
 };
+
+/**
+ * Collects every same-document anchor as {href (resolved), text}. Used by the
+ * probe to find a source's real listing page from its homepage — the
+ * discoverFeedLinks helper above only sees <link> tags, and readableText.ts
+ * rewrites anchors inline rather than returning them.
+ */
+export function collectLinks(
+	html: string,
+	baseUrl: string,
+): { href: string; text: string }[] {
+	const links: { href: string; text: string }[] = [];
+	const re = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+	let match: RegExpExecArray | null = re.exec(html);
+	while (match !== null) {
+		try {
+			links.push({
+				href: new URL(match[1], baseUrl).toString(),
+				text: match[2]
+					.replace(/<[^>]+>/g, " ")
+					.replace(/\s+/g, " ")
+					.trim(),
+			});
+		} catch {
+			// unresolvable href (mailto:, javascript:, malformed) — skip
+		}
+		match = re.exec(html);
+	}
+	return links;
+}
+
+const NAV_REGION =
+	/<(nav|header)\b[^>]*>[\s\S]*?<\/\1>|<[a-z]+\b[^>]*(?:role=["']navigation["']|class=["'][^"']*(?:nav|menu)[^"']*["'])[^>]*>[\s\S]*?<\/[a-z]+>/gi;
+
+/**
+ * Links that appear inside a page's navigation. A site's own nav is the most
+ * reliable pointer to its listing pages — "What's On", "Events", "Gig Guide"
+ * are nav items far more often than they are body links, and body links tend
+ * to point at individual events instead.
+ */
+export function collectNavLinks(html: string, baseUrl: string): Set<string> {
+	const urls = new Set<string>();
+	for (const match of html.matchAll(NAV_REGION)) {
+		for (const link of collectLinks(match[0], baseUrl)) {
+			urls.add(link.href);
+		}
+	}
+	return urls;
+}

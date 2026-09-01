@@ -47,11 +47,18 @@ function loadExistingSources(): SourceResult {
 		string,
 		unknown
 	>;
-	const src = (data?.sources ?? {}) as Record<string, string[]>;
+	const src = (data?.sources ?? {}) as Record<
+		string,
+		{ name: string; domains?: string[] }[]
+	>;
+	// findSources works in "Name (domain)" prose; the file stores structured
+	// entries. Render back so dedupe-on-domain keeps working.
+	const asProse = (entries: { name: string; domains?: string[] }[] = []) =>
+		entries.map((e) => (e.domains?.[0] ? `${e.name} (${e.domains[0]})` : e.name));
 	return {
-		aggregators: [...(src.aggregators ?? [])],
-		institutions: [...(src.institutions ?? [])],
-		independents: [...(src.independents ?? [])],
+		aggregators: asProse(src.aggregators),
+		institutions: asProse(src.institutions),
+		independents: asProse(src.independents),
 	};
 }
 
@@ -111,12 +118,31 @@ function writeCityFile(sources: SourceResult): void {
 	mkdirSync(SOURCES_ROOT, { recursive: true });
 	const outPath = join(SOURCES_ROOT, `${CITY_KEY}.yml`);
 
+	// New sources always start as method: llm — a source only becomes a
+	// scraper once probe-sources has verified a listing URL really yields
+	// dated events.
+	const toEntries = (list: string[]) =>
+		list.map((raw) => {
+			const domain = [...raw.matchAll(/\(([^)]*)\)/g)]
+				.map((m) => m[1].trim())
+				.filter((c) => /[a-z0-9-]+\.[a-z]{2,}/i.test(c))
+				.pop();
+			const name = raw.split(/\s+[—–]\s+|\s*\(/)[0].trim() || raw.trim();
+			const host = domain
+				?.replace(/^https?:\/\//, "")
+				.split("/")[0]
+				.toLowerCase()
+				.replace(/^www\./, "");
+			return { name, method: "llm", ...(host ? { domains: [host] } : {}) };
+		});
+
 	const cityData = {
 		name: CITY_NAME,
+		timezone: "Australia/Brisbane",
 		sources: {
-			aggregators: sources.aggregators,
-			institutions: sources.institutions,
-			independents: sources.independents,
+			aggregators: toEntries(sources.aggregators),
+			institutions: toEntries(sources.institutions),
+			independents: toEntries(sources.independents),
 		},
 	};
 

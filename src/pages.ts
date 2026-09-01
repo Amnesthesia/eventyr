@@ -3,18 +3,14 @@ import { join } from "node:path";
 
 import {
 	DATA_ROOT,
+	KEY_TO_SLUG,
 	PROJECT_ROOT,
+	SITE_URL,
 	TOP_PICK_THRESHOLD,
 	toISODate,
 } from "./common.ts";
 
-const BASE_URL = "https://www.dothings.lol";
-
-const KEY_TO_SLUG: Record<string, string> = {
-	brisbane: "brisbane",
-	goldcoast: "gold-coast",
-	sunnycoast: "sunshine-coast",
-};
+const BASE_URL = SITE_URL;
 
 const CATEGORY_SLUGS = [
 	"arts",

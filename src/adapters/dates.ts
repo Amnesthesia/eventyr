@@ -202,7 +202,10 @@ export function parseSingleDateTime(
 	return toBrisbaneISO(cal, time, referenceDate);
 }
 
-const RANGE_SEPARATOR = /\s*(?:–|—|-|to)\s*/i;
+// \b around "to" matters: without it this matches inside any month/word
+// containing the substring "to" (e.g. "5 October to 7 October" was
+// splitting mid-word on "Oc-to-ber", silently losing the whole range).
+const RANGE_SEPARATOR = /\s*(?:–|—|-|\bto\b)\s*/i;
 
 /**
  * Parses a date range appearing in one string, e.g. "5 – 19 September

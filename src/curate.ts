@@ -2,7 +2,6 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import {
 	DATA_ROOT,
-	dedupeEvents,
 	fmtDate,
 	getWeekRange,
 	loadCityConfig,
@@ -10,6 +9,8 @@ import {
 	requireEnv,
 	toISODate,
 } from "./common.ts";
+import { dedupeEventsSmart } from "./dedupe.ts";
+import { createGeminiPairClassifier } from "./dedupeClassifier.ts";
 
 const CITY = requireEnv("CITY");
 const FORCE = ["1", "true", "yes"].includes(
@@ -50,7 +51,9 @@ const TIER_TO_VENUE: Record<string, string> = {
 	open: "aggregator",
 };
 
-function mergeAndDeduplicate(monday: Date): Record<string, unknown>[] {
+async function mergeAndDeduplicate(
+	monday: Date,
+): Promise<Record<string, unknown>[]> {
 	const cityDir = join(DATA_ROOT, CITY);
 	const allEvents: Record<string, unknown>[] = [];
 
@@ -74,7 +77,18 @@ function mergeAndDeduplicate(monday: Date): Record<string, unknown>[] {
 		}
 	}
 
-	return dedupeEvents(allEvents);
+	// Deliberately not common.ts's dedupeEvents here: this merge now spans
+	// many per-source scrape files plus the search results, so it gets the
+	// blocking + grey-zone strategy in src/dedupe.ts. See that file's header
+	// for why and what it costs.
+	const { events, stats } = await dedupeEventsSmart(allEvents, {
+		classify: createGeminiPairClassifier(requireEnv("GOOGLE_API_KEY")),
+	});
+	console.log(
+		`→ ${stats.input} events in, ${stats.removed} duplicate(s) removed ` +
+			`(${stats.settledPairs} matched outright, ${stats.askedPairs} ambiguous pair(s) checked, ${stats.confirmedByLlm} confirmed)`,
+	);
+	return events;
 }
 
 function writeJson(
@@ -114,7 +128,7 @@ async function main(): Promise<void> {
 	console.log("=".repeat(50));
 
 	console.log("→ Merging and deduplicating…");
-	const events = mergeAndDeduplicate(monday);
+	const events = await mergeAndDeduplicate(monday);
 
 	if (events.length === 0) {
 		throw new Error(

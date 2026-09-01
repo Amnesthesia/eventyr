@@ -1,129 +1,429 @@
+# Event sources for Gold Coast.
+#
+# Each entry declares how it is collected:
+#   method: scraper — we fetch its listingUrls ourselves (src/adapters/).
+#   method: llm     — no verified listing page, so LLM web search covers it.
+#
+# Everything else (homepage, venue, domains, notes, candidate listingUrls)
+# is kept regardless of method, so promoting a source to scraper is a
+# one-field change. `pnpm probe-sources --apply` does that promotion once
+# it has verified a listing URL actually yields dated events.
+
 name: Gold Coast
+timezone: Australia/Brisbane
 sources:
   aggregators:
-  - What's On Gold Coast — official City of Gold Coast events calendar (whatsongoldcoast.au)
-  - Experience Gold Coast / Destination Gold Coast (experiencegoldcoast.com/events)
-  - The Urban List Gold Coast (theurbanlist.com/goldcoast)
-  - Inside Gold Coast What's On (insidegoldcoast.com.au/whatson)
-  - Eventfinda Gold Coast (eventfinda.com.au/whatson/events/gold-coast)
-  - Eventbrite Gold Coast (eventbrite.com.au/d/australia--gold-coast/events)
-  - Humanitix Gold Coast (humanitix.com/au/events/australia/gold-coast)
-  - Meetup Gold Coast (meetup.com/find/?location=au--gold-coast)
-  - Fever Gold Coast (feverup.com/en/gold-coast)
-  - Bandsintown Gold Coast (bandsintown.com/c/gold-coast-australia)
-  - Songkick Gold Coast (songkick.com/metro-areas/29683-australia-gold-coast)
-  - Yelo Gold Coast Gig Guide (yelo.live/goldcoastgigs)
-  - Scout Magazine Gold Coast (scoutmagazine.com.au)
-  - Gold Coast Australia events guide (goldcoastaustralia.com/gold-coast-events.html)
-  - Queensland.com / Tourism Queensland Gold Coast (queensland.com/au/en/places-to-see/destination-information/gold-coast)
-  - Wanderlog Gold Coast (wanderlog.com)
-  - Tripadvisor Gold Coast events (tripadvisor.com.au)
-  - City of Gold Coast Events Calendar (goldcoast.qld.gov.au/Things-to-do/Gold-Coast-Events-Calendar)
-  - My Community Diary — Gold Coast (mycommunitydiary.com.au/Queensland/Gold_Coast)
-  - WeekendNotes Gold Coast (weekendnotes.com/gold-coast/)
-  - Destination Gold Coast – Events (destinationgoldcoast.com)
-  - What's On Gold Coast (whatsonegoldcoast.com.au)
+    - name: What's On Gold Coast
+      method: llm
+      domains:
+        - whatsongoldcoast.au
+    - name: Experience Gold Coast / Destination Gold Coast
+      method: llm
+      domains:
+        - experiencegoldcoast.com
+    - name: The Urban List Gold Coast
+      method: llm
+      domains:
+        - theurbanlist.com
+    - name: Inside Gold Coast What's On
+      method: llm
+      domains:
+        - insidegoldcoast.com.au
+    - name: Eventfinda Gold Coast
+      method: llm
+      domains:
+        - eventfinda.com.au
+    - name: Eventbrite Gold Coast
+      method: llm
+      domains:
+        - eventbrite.com.au
+    - name: Humanitix Gold Coast
+      method: llm
+      domains:
+        - humanitix.com
+    - name: Meetup Gold Coast
+      method: llm
+      domains:
+        - meetup.com
+    - name: Fever Gold Coast
+      method: llm
+      domains:
+        - feverup.com
+    - name: Bandsintown Gold Coast
+      method: llm
+      domains:
+        - bandsintown.com
+    - name: Songkick Gold Coast
+      method: llm
+      domains:
+        - songkick.com
+    - name: Yelo Gold Coast Gig Guide
+      method: llm
+      domains:
+        - yelo.live
+    - name: Scout Magazine Gold Coast
+      method: llm
+      domains:
+        - scoutmagazine.com.au
+    - name: Gold Coast Australia events guide
+      method: llm
+      domains:
+        - goldcoastaustralia.com
+    - name: Queensland.com / Tourism Queensland Gold Coast
+      method: llm
+      domains:
+        - queensland.com
+    - name: Wanderlog Gold Coast
+      method: llm
+      domains:
+        - wanderlog.com
+    - name: Tripadvisor Gold Coast events
+      method: llm
+      domains:
+        - tripadvisor.com.au
+    - name: City of Gold Coast Events Calendar
+      method: llm
+      domains:
+        - goldcoast.qld.gov.au
+    - name: My Community Diary
+      method: llm
+      domains:
+        - mycommunitydiary.com.au
+    - name: WeekendNotes Gold Coast
+      method: llm
+      domains:
+        - weekendnotes.com
+    - name: Destination Gold Coast
+      method: llm
+      domains:
+        - destinationgoldcoast.com
+    - name: What's On Gold Coast
+      method: llm
+      domains:
+        - whatsonegoldcoast.com.au
   institutions:
-  - City of Gold Coast — official council events (goldcoast.qld.gov.au/Things-to-do/Gold-Coast-Events-Calendar)
-  - City of Gold Coast Libraries — what's on (goldcoast.qld.gov.au/libraries/Whats-on)
-  - HOTA, Home of the Arts (hota.com.au/whats-on)
-  - HOTA Gallery exhibitions (hota.com.au)
-  - Bond University events (bond.edu.au/news-and-events/events)
-  - Griffith University Gold Coast — events (griffith.edu.au/events)
-  - The Star Gold Coast — entertainment & events (star.com.au/goldcoast/whats-on)
-  - Gold Coast Convention and Exhibition Centre (gccec.com.au)
-  - People First Stadium / Heritage Bank Stadium (peoplefirststadium.com.au)
-  - Currumbin Wildlife Sanctuary events (currumbinsanctuary.com.au)
-  - Sea World / Village Roadshow theme park events (seaworld.com.au)
-  - Gold Coast Turf Club / Magic Millions (gctc.com.au)
-  - AACTA Festival (aactafestival.com)
-  - Blues on Broadbeach Music Festival (bluesonbroadbeach.com)
-  - Pacific Airshow Gold Coast (pacificairshow.com/goldcoast)
-  - SWELL Sculpture Festival Currumbin (swellsculpture.com.au)
-  - Bleach* Festival (bleachfestival.com.au)
-  - Gold Coast Film Festival (gcfilmfestival.com)
-  - Somerset Storyfest (storyfest.com.au)
-  - Griffith University Events Calendar — Gold Coast campus (app.secure.griffith.edu.au/events)
-  - People First Stadium — Gold Coast SUNS (goldcoastfc.com.au)
-  - Cbus Super Stadium (Robina) — Titans & major events (titans.com.au)
-  - Sea World, Movie World, Dreamworld — major attraction event programs
-  - Southern Cross University Gold Coast – Events (scu.edu.au)
-  - Q1 SkyPoint – Events (skypoint.com.au)
-  - Dreamworld – Events (dreamworld.com.au)
-  - City of Gold Coast Libraries (cityofgoldcoast.com.au)
-  - The Star Gold Coast (thestargoldcoast.com.au)
-  - Gold Coast Public Library Webinars and Online Events (librarywebinars.com)
+    - name: City of Gold Coast
+      method: llm
+      domains:
+        - goldcoast.qld.gov.au
+    - name: HOTA, Home of the Arts
+      method: llm
+      domains:
+        - hota.com.au
+    - name: Bond University events
+      method: llm
+      domains:
+        - bond.edu.au
+    - name: Griffith University Gold Coast
+      method: llm
+      domains:
+        - griffith.edu.au
+    - name: The Star Gold Coast
+      method: llm
+      domains:
+        - star.com.au
+    - name: Gold Coast Convention and Exhibition Centre
+      method: llm
+      domains:
+        - gccec.com.au
+    - name: People First Stadium / Heritage Bank Stadium
+      method: llm
+      domains:
+        - peoplefirststadium.com.au
+    - name: Currumbin Wildlife Sanctuary events
+      method: llm
+      domains:
+        - currumbinsanctuary.com.au
+    - name: Sea World / Village Roadshow theme park events
+      method: llm
+      domains:
+        - seaworld.com.au
+    - name: Gold Coast Turf Club / Magic Millions
+      method: llm
+      domains:
+        - gctc.com.au
+    - name: AACTA Festival
+      method: llm
+      domains:
+        - aactafestival.com
+    - name: Blues on Broadbeach Music Festival
+      method: llm
+      domains:
+        - bluesonbroadbeach.com
+    - name: Pacific Airshow Gold Coast
+      method: llm
+      domains:
+        - pacificairshow.com
+    - name: SWELL Sculpture Festival Currumbin
+      method: llm
+      domains:
+        - swellsculpture.com.au
+    - name: Bleach* Festival
+      method: llm
+      domains:
+        - bleachfestival.com.au
+    - name: Gold Coast Film Festival
+      method: llm
+      domains:
+        - gcfilmfestival.com
+    - name: Somerset Storyfest
+      method: llm
+      domains:
+        - storyfest.com.au
+    - name: Griffith University Events Calendar
+      method: llm
+      domains:
+        - app.secure.griffith.edu.au
+    - name: People First Stadium
+      method: llm
+      domains:
+        - goldcoastfc.com.au
+    - name: Cbus Super Stadium
+      method: llm
+      domains:
+        - titans.com.au
+    - name: Sea World, Movie World, Dreamworld
+      method: llm
+    - name: Southern Cross University Gold Coast
+      method: llm
+      domains:
+        - scu.edu.au
+    - name: Q1 SkyPoint
+      method: llm
+      domains:
+        - skypoint.com.au
+    - name: Dreamworld
+      method: llm
+      domains:
+        - dreamworld.com.au
+    - name: City of Gold Coast Libraries
+      method: llm
+      domains:
+        - cityofgoldcoast.com.au
+    - name: The Star Gold Coast
+      method: llm
+      domains:
+        - thestargoldcoast.com.au
+    - name: Gold Coast Public Library Webinars and Online Events
+      method: llm
+      domains:
+        - librarywebinars.com
   independents:
-  - Miami Marketta — night market & live music venue (miamimarketta.com)
-  - Mo's Desert Clubhouse — live music & events, Burleigh Heads (mosdesertclubhouse.com)
-  - The SoundLounge, Currumbin RSL (soundlounge.com.au)
-  - Nightjar — rock 'n' roll dive bar, Burleigh Heads (nightjar.com.au)
-  - Vinnies Dive Bar, Southport — independent gig venue
-  - Eddie's Grub House — live music bar, Surfers Paradise
-  - Den Devine Restaurant & Bar — live music venue
-  - Elsewhere Bar — Surfers Paradise techno/club nights (elsewherebar.com.au)
-  - Cooly Hotel / Coolangatta Hotel gig list (coolyhotel.com.au)
-  - 19 Karen Contemporary Artspace, Mermaid Beach (19karen.com.au)
-  - The Walls Art Space, Miami — artist-run gallery (thewallsartspace.com)
-  - Dust Temple, Currumbin — gallery, cafe, life drawing & poetry slams (dusttemple.com.au)
-  - BOOK FACE Pacific Fair — independent bookshop & monthly book club (bookfacestores.com.au/pacific-fair)
-  - Big B Books, Burleigh Heads — indie bookshop with readings, launches & signings
-  - Bookness Mudgeeraba — independent bookshop with on-site cafe
-  - Boardwalk Books, Kingscliff — indie bookshop with Romance Book Club
-  - Under the Greenwood Tree Bookshop & Artspace, Tamborine Mountain
-  - Ivy and Ink Bookshop — indie romance bookshop (ivyandinkbookshop.com)
-  - Bundle O'Books, Coolangatta — second-hand bookshop
-  - Gold Coast TechSpace — hackerspace/makerspace, Mudgeeraba (gctechspace.org)
-  - Cohort Innovation Space — startup & tech events (cohortspace.com.au)
-  - Gold Coast Board Games Club (meetup.com/gold-coast-board-games-club)
-  - Gold Coast Board Games Meetup (meetup.com/gold-coast-board-games-meetup)
-  - The Gold Coast French Speakers Group (Meetup)
-  - Gold Coast to Tweed Speakers & Leaders — Toastmasters-style group (Meetup)
-  - AWS Gold Coast User Group (Meetup)
-  - Get Up, Get Out, Get Social — social meetup group (Meetup)
-  - The Pink Flamingo Spiegelclub, Broadbeach — cabaret & burlesque (pinkflamingo.com.au)
-  - Comedy Underground — Gold Coast live comedy nights
-  - Burleigh Town Hotel — Tuesday Trivia
-  - Tallebudgera Surf Club — Monday Night Trivia
-  - Currumbin RSL — themed pop-culture trivia & SoundLounge gigs
-  - Cauldron Distillery, Tamborine Mountain — gin blending classes
-  - Meraki Connection, Burleigh Heads — art & creative workshops
-  - Studio 8, Currumbin — creative exhibitions space
-  - Love Street Store — small music gig venue
-  - Vinnie's Dive, Southport (vinniesdive.com.au)
-  - Nightjar, Burleigh Heads — Justin Laneway dive bar
-  - The Cambus Wallace, Nobby Beach (thecambuswallace.com.au)
-  - Surfers Paradise Beer Garden (surfersparadisebeergarden.com.au)
-  - Eddie's Grub House, Surfers Paradise (eddiesgrubhouse.com)
-  - Den Devine, Surfers Paradise (dendevine.com.au)
-  - Soho Place — London-themed small bar
-  - elsewhere, Surfers Paradise (elsewherebar.com)
-  - Burleigh Bazaar — converted warehouse music/food venue
-  - Mint Art House, Burleigh Heads — artist-run gallery (mintarthouse.com)
-  - The Hive Art Gallery & Studio, Currumbin Waters (thehiveartgallery.com.au)
-  - ALOW Gallery, Mermaid Beach (alowgallery.com)
-  - Art Yarramunua Gallery, Burleigh Heads (artyarramunua.com.au)
-  - Maverick — Coolangatta hair salon/bookstore/gallery
-  - Studio 8, Currumbin — creative space and exhibitions
-  - Bookness Mudgeeraba — indie bookshop & cafe events
-  - Big B Books, Burleigh Heads — events, readings, launches
-  - Under the Greenwood Tree Bookshop and Artspace, Tamborine
-  - Royal Queensland Art Society (RQAS) Gold Coast — exhibitions & classes
-  - Jellurgal Aboriginal Cultural Centre, Burleigh Heads (jellurgal.com.au)
-  - The Avenue, Surfers Paradise — drag, DJs, live music (theavenuesurfers.com)
-  - The Wallaby Hotel, Mudgeeraba — live music pub
-  - Hound & Stag Brewing Co, Arundel — live music venue
-  - Cherry Pickers Market @ Miami Marketta — monthly vintage market
-  - Gold Coast Jazz and Blues Club (goldcoastjazzclub.org.au)
-  - Emerald Lakes Market (emeraldlakesmarket.com.au)
-  - Dreamworld Night Market (nightmarket.com.au)
-  - The Village Markets (thevillagemarkets.co)
-  - HOTA Farmers & Artisan Markets (hotamarkets.com.au)
-  - The Craft Parlour (thecraftparlour.com.au)
-  - Burleigh Bazaar (burleighbazaar.com.au)
-  - The Shedrock – Music & Events (theshedrock.com)
-  - Gold Coast TechSpace (goldcoasttechspace.org.au)
-  - Gallery 8 (gallery8.com.au)
-  - The Meraki Connection (themerakiconnection.com.au)
-  - Gold Coast Theatre Alliance (gctai.org.au)
-  - Kirra Hill Community & Cultural Centre (goldcoast.qld.gov.au)
+    - name: Miami Marketta
+      method: llm
+      domains:
+        - miamimarketta.com
+    - name: Mo's Desert Clubhouse
+      method: llm
+      domains:
+        - mosdesertclubhouse.com
+    - name: The SoundLounge, Currumbin RSL
+      method: llm
+      domains:
+        - soundlounge.com.au
+    - name: Nightjar
+      method: llm
+      domains:
+        - nightjar.com.au
+    - name: Vinnies Dive Bar, Southport
+      method: llm
+    - name: Eddie's Grub House
+      method: llm
+    - name: Den Devine Restaurant & Bar
+      method: llm
+    - name: Elsewhere Bar
+      method: llm
+      domains:
+        - elsewherebar.com.au
+    - name: Cooly Hotel / Coolangatta Hotel gig list
+      method: llm
+      domains:
+        - coolyhotel.com.au
+    - name: 19 Karen Contemporary Artspace, Mermaid Beach
+      method: llm
+      domains:
+        - 19karen.com.au
+    - name: The Walls Art Space, Miami
+      method: llm
+      domains:
+        - thewallsartspace.com
+    - name: Dust Temple, Currumbin
+      method: llm
+      domains:
+        - dusttemple.com.au
+    - name: BOOK FACE Pacific Fair
+      method: llm
+      domains:
+        - bookfacestores.com.au
+    - name: Big B Books, Burleigh Heads
+      method: llm
+    - name: Bookness Mudgeeraba
+      method: llm
+    - name: Boardwalk Books, Kingscliff
+      method: llm
+    - name: Under the Greenwood Tree Bookshop & Artspace, Tamborine Mountain
+      method: llm
+    - name: Ivy and Ink Bookshop
+      method: llm
+      domains:
+        - ivyandinkbookshop.com
+    - name: Bundle O'Books, Coolangatta
+      method: llm
+    - name: Gold Coast TechSpace
+      method: llm
+      domains:
+        - gctechspace.org
+    - name: Cohort Innovation Space
+      method: llm
+      domains:
+        - cohortspace.com.au
+    - name: Gold Coast Board Games Club
+      method: llm
+      domains:
+        - meetup.com
+    - name: The Gold Coast French Speakers Group
+      method: llm
+    - name: Gold Coast to Tweed Speakers & Leaders
+      method: llm
+    - name: AWS Gold Coast User Group
+      method: llm
+    - name: Get Up, Get Out, Get Social
+      method: llm
+    - name: The Pink Flamingo Spiegelclub, Broadbeach
+      method: llm
+      domains:
+        - pinkflamingo.com.au
+    - name: Comedy Underground
+      method: llm
+    - name: Burleigh Town Hotel
+      method: llm
+    - name: Tallebudgera Surf Club
+      method: llm
+    - name: Currumbin RSL
+      method: llm
+    - name: Cauldron Distillery, Tamborine Mountain
+      method: llm
+    - name: Meraki Connection, Burleigh Heads
+      method: llm
+    - name: Studio 8, Currumbin
+      method: llm
+    - name: Love Street Store
+      method: llm
+    - name: Vinnie's Dive, Southport
+      method: llm
+      domains:
+        - vinniesdive.com.au
+    - name: Nightjar, Burleigh Heads
+      method: llm
+    - name: The Cambus Wallace, Nobby Beach
+      method: llm
+      domains:
+        - thecambuswallace.com.au
+    - name: Surfers Paradise Beer Garden
+      method: llm
+      domains:
+        - surfersparadisebeergarden.com.au
+    - name: Eddie's Grub House, Surfers Paradise
+      method: llm
+      domains:
+        - eddiesgrubhouse.com
+    - name: Den Devine, Surfers Paradise
+      method: llm
+      domains:
+        - dendevine.com.au
+    - name: Soho Place
+      method: llm
+    - name: elsewhere, Surfers Paradise
+      method: llm
+      domains:
+        - elsewherebar.com
+    - name: Burleigh Bazaar
+      method: llm
+    - name: Mint Art House, Burleigh Heads
+      method: llm
+      domains:
+        - mintarthouse.com
+    - name: The Hive Art Gallery & Studio, Currumbin Waters
+      method: llm
+      domains:
+        - thehiveartgallery.com.au
+    - name: ALOW Gallery, Mermaid Beach
+      method: llm
+      domains:
+        - alowgallery.com
+    - name: Art Yarramunua Gallery, Burleigh Heads
+      method: llm
+      domains:
+        - artyarramunua.com.au
+    - name: Maverick
+      method: llm
+    - name: Under the Greenwood Tree Bookshop and Artspace, Tamborine
+      method: llm
+    - name: Royal Queensland Art Society
+      method: llm
+    - name: Jellurgal Aboriginal Cultural Centre, Burleigh Heads
+      method: llm
+      domains:
+        - jellurgal.com.au
+    - name: The Avenue, Surfers Paradise
+      method: llm
+      domains:
+        - theavenuesurfers.com
+    - name: The Wallaby Hotel, Mudgeeraba
+      method: llm
+    - name: Hound & Stag Brewing Co, Arundel
+      method: llm
+    - name: Cherry Pickers Market @ Miami Marketta
+      method: llm
+    - name: Gold Coast Jazz and Blues Club
+      method: llm
+      domains:
+        - goldcoastjazzclub.org.au
+    - name: Emerald Lakes Market
+      method: llm
+      domains:
+        - emeraldlakesmarket.com.au
+    - name: Dreamworld Night Market
+      method: llm
+      domains:
+        - nightmarket.com.au
+    - name: The Village Markets
+      method: llm
+      domains:
+        - thevillagemarkets.co
+    - name: HOTA Farmers & Artisan Markets
+      method: llm
+      domains:
+        - hotamarkets.com.au
+    - name: The Craft Parlour
+      method: llm
+      domains:
+        - thecraftparlour.com.au
+    - name: Burleigh Bazaar
+      method: llm
+      domains:
+        - burleighbazaar.com.au
+    - name: The Shedrock
+      method: llm
+      domains:
+        - theshedrock.com
+    - name: Gold Coast TechSpace
+      method: llm
+      domains:
+        - goldcoasttechspace.org.au
+    - name: Gallery 8
+      method: llm
+      domains:
+        - gallery8.com.au
+    - name: The Meraki Connection
+      method: llm
+      domains:
+        - themerakiconnection.com.au
+    - name: Gold Coast Theatre Alliance
+      method: llm
+      domains:
+        - gctai.org.au
+    - name: Kirra Hill Community & Cultural Centre
+      method: llm
+      domains:
+        - goldcoast.qld.gov.au

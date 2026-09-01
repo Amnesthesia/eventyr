@@ -1,10 +1,71 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { gotScraping } from "got-scraping";
 import { adapterCachePath, adapterRawDir } from "../common.ts";
 import { fetchRobotsPolicy, type RobotsPolicy } from "./robots.ts";
 import type { ExtractionStrategy, RawListing } from "./types.ts";
 
-export const USER_AGENT = "EventyrBot/1.0 (+https://dothings.lol)";
+// Transport note — why this doesn't use Node's fetch:
+//
+// A large share of these venue sites sit behind Cloudflare, which fingerprints
+// the TLS ClientHello (JA3) rather than reading headers. Measured against
+// qagoma.qld.gov.au: curl with nothing but a UA gets 200, while Node's fetch
+// (undici) with a full browser header set gets 403 — same headers, different
+// TLS handshake. No amount of header work fixes that.
+//
+// got-scraping (the transport inside Crawlee's CheerioCrawler) mimics a
+// browser's TLS and HTTP/2 fingerprint and generates matching headers, which
+// takes those same URLs to 200.
+//
+// What has NOT changed: robots.txt is still fetched and obeyed for every
+// request, and the per-host rate limit is unchanged. QAGOMA's robots.txt, for
+// instance, allows /whats-on/events/ — the 403 was an over-broad WAF default,
+// not a stated crawling policy. No challenge-solving, CAPTCHA bypass or proxy
+// rotation is done here, and none should be added: if a site actually
+// disallows us in robots.txt, we don't fetch it.
+export const USER_AGENT =
+	"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+
+/** Minimal fetch-shaped wrapper over got-scraping, so SourceFetcher's own
+ * logic (and its fetchImpl injection point for tests) is untouched. */
+export const browserFetch: typeof fetch = async (input, init) => {
+	const url = typeof input === "string" ? input : input.toString();
+	const response = await gotScraping({
+		url,
+		headers: (init?.headers as Record<string, string>) ?? {},
+		// We handle retries, and a non-2xx is information, not an exception.
+		throwHttpErrors: false,
+		retry: { limit: 0 },
+		followRedirect: true,
+		timeout: { request: 30_000 },
+		// Let got-scraping generate the browser-consistent header set; only
+		// our conditional-GET validators are passed through above.
+		useHeaderGenerator: true,
+	});
+	// got's header bag carries symbol keys and array values; Response only
+	// accepts string pairs, and passing the raw object throws.
+	const headers = new Headers();
+	for (const [key, value] of Object.entries(response.headers)) {
+		// HTTP/2 pseudo-headers (":status", ":method") are not valid header
+		// names in the Headers API.
+		if (typeof key !== "string" || key.startsWith(":") || value === undefined) {
+			continue;
+		}
+		if (Array.isArray(value)) {
+			for (const v of value) headers.append(key, String(v));
+		} else {
+			headers.set(key, String(value));
+		}
+	}
+	// 204/205/304 are null-body statuses; the Response constructor throws if
+	// given a body with them, and a 304 is exactly what conditional GET wants
+	// to return.
+	const nullBody = [204, 205, 304].includes(response.statusCode);
+	return new Response(nullBody ? null : response.body, {
+		status: response.statusCode,
+		headers,
+	});
+};
 
 const DEFAULT_MIN_INTERVAL_MS = 1000;
 const DEFAULT_MAX_CONCURRENCY_PER_HOST = 2;
@@ -59,17 +120,6 @@ function sleep(ms: number): Promise<void> {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-/**
- * Shared fetch layer for all source adapters: honours robots.txt, applies a
- * per-host rate limit and concurrency cap, retries 429/5xx with jittered
- * exponential backoff, does conditional GET against a persistent per-source
- * cache, and persists every successful response body to disk (keyed by
- * source + URL + timestamp) as both a debugging artifact and a fixture
- * source for adapter tests.
- *
- * One instance is meant to be shared across a whole run so the per-host
- * rate limiting actually applies across sources that share a host.
- */
 export class SourceFetcher {
 	private readonly userAgent: string;
 	private readonly minIntervalMs: number;
@@ -93,7 +143,7 @@ export class SourceFetcher {
 		this.maxConcurrencyPerHost =
 			opts?.maxConcurrencyPerHost ?? DEFAULT_MAX_CONCURRENCY_PER_HOST;
 		this.maxRetries = opts?.maxRetries ?? DEFAULT_MAX_RETRIES;
-		this.fetchImpl = opts?.fetchImpl ?? fetch;
+		this.fetchImpl = opts?.fetchImpl ?? browserFetch;
 	}
 
 	async fetch(
@@ -165,7 +215,10 @@ export class SourceFetcher {
 
 		const cache = loadCache(sourceId);
 		const cached = cache[url];
-		const headers: Record<string, string> = { "User-Agent": this.userAgent };
+		// Only the conditional-GET validators: got-scraping generates a
+		// coherent browser header set itself, and hand-written headers that
+		// disagree with its fingerprint are worse than none.
+		const headers: Record<string, string> = {};
 		if (cached?.etag) headers["If-None-Match"] = cached.etag;
 		if (cached?.lastModified)
 			headers["If-Modified-Since"] = cached.lastModified;

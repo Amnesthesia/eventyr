@@ -1,11 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 import { dedupeEvents } from "../common.ts";
-import type {
-	ProviderOptions,
-	SearchFocus,
-	SearchResult,
-	SourceResult,
-} from "./base.ts";
+import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
 import { BaseProvider, chunkArray, splitIntoBatches } from "./base.ts";
 
 const SEARCH_MODEL = "gemini-3.1-flash-lite";
@@ -88,7 +83,6 @@ export class GoogleProvider extends BaseProvider {
 		rawText: string,
 		cityName: string,
 		label: string,
-		focus: SearchFocus,
 	): Promise<Record<string, unknown>[]> {
 		if (process.env.DEBUG) console.debug(rawText);
 		const rawBatches = splitIntoBatches(rawText);
@@ -118,7 +112,7 @@ export class GoogleProvider extends BaseProvider {
 		);
 		if (extracted.length === 0) return [];
 
-		const enrichSystem = this.buildFormatSystem(cityName, focus);
+		const enrichSystem = this.buildFormatSystem(cityName);
 		const eventBatches = chunkArray(extracted, 20);
 		const curated = (
 			await Promise.all(
@@ -155,9 +149,8 @@ export class GoogleProvider extends BaseProvider {
 	}
 
 	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
-		const { tier, focus } = opts;
-		const tierKey = focus === "music" ? `${tier}-music` : tier;
-		const label = `google/${tierKey}`;
+		const { tier } = opts;
+		const label = `google/${tier}`;
 		console.log(`  [${label}] Searching…`);
 
 		const system =
@@ -169,7 +162,7 @@ export class GoogleProvider extends BaseProvider {
 		this.validateRaw(rawText, label);
 		console.log(`  [${label}] ${rawText.length} chars received`);
 
-		const events = await opts.curate(rawText, opts.cityCfg.name, label, focus);
+		const events = await opts.curate(rawText, opts.cityCfg.name, label);
 		return { events };
 	}
 

@@ -1,9 +1,8 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { fmtDate, INTERESTS } from "../common.ts";
+import { fmtDate, INTERESTS, llmSourceStrings } from "../common.ts";
 import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
 import {
 	BaseProvider,
-	focusInstruction,
 	OUTPUT_FORMAT_RULES,
 	TIER_INSTRUCTIONS,
 } from "./base.ts";
@@ -23,14 +22,13 @@ export class AnthropicProvider extends BaseProvider {
 	}
 
 	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
-		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
+		const { cityCfg, tier, weekStart, weekEnd } = opts;
 		const cityName = cityCfg.name;
-		const tierKey = focus === "music" ? `${tier}-music` : tier;
-		const label = `anthropic/${tierKey}`;
+		const label = `anthropic/${tier}`;
 		console.log(`  [${label}] Searching…`);
 
-		const sources = cityCfg.sources[tier as keyof typeof cityCfg.sources] ?? [];
-		const sourceList = sources.map((s) => `  - ${s}`).join("\n");
+		const sources = llmSourceStrings(cityCfg, tier, opts.city);
+		const sourceList = sources.map((s: string) => `  - ${s}`).join("\n");
 		const tierInstruction = TIER_INSTRUCTIONS[tier] ?? "";
 		const today = new Date();
 
@@ -40,8 +38,7 @@ export class AnthropicProvider extends BaseProvider {
 				text:
 					`The person you are researching events for has the following interests:\n${INTERESTS}\n\n` +
 					`${OUTPUT_FORMAT_RULES}\n` +
-					"Aim for at least 15 events.\n\n" +
-					focusInstruction(focus),
+					"Aim for at least 15 events.",
 				cache_control: { type: "ephemeral" },
 			},
 			{
@@ -87,7 +84,7 @@ export class AnthropicProvider extends BaseProvider {
 
 		this.validateRaw(rawText, label);
 
-		const events = await opts.curate(rawText, opts.cityCfg.name, label, focus);
+		const events = await opts.curate(rawText, opts.cityCfg.name, label);
 		return { events };
 	}
 

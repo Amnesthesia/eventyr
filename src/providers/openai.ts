@@ -38,9 +38,8 @@ export class OpenAIProvider extends BaseProvider {
 	}
 
 	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
-		const { tier, focus } = opts;
-		const tierKey = focus === "music" ? `${tier}-music` : tier;
-		const label = `${this.name}/${tierKey}`;
+		const { tier } = opts;
+		const label = `${this.name}/${tier}`;
 		console.log(`  [${label}] Searching…`);
 
 		const systemMsg =
@@ -78,7 +77,6 @@ export class OpenAIProvider extends BaseProvider {
 			stripCitationNoise(rawText),
 			opts.cityCfg.name,
 			label,
-			focus,
 		);
 		return { events };
 	}

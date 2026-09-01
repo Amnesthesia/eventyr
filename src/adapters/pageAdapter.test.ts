@@ -35,7 +35,7 @@ const SOURCE: SourceDefinition = {
 		aliases: [],
 	},
 	strategy: "html",
-	enabled: false,
+	sourceTier: "independents",
 	schedule: "weekly",
 	note: "test fixture",
 };

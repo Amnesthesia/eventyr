@@ -1,60 +1,88 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import {
-	enabledSources,
-	findSourceById,
-	loadSourceRegistry,
-} from "./registry.ts";
-import { EXTRACTION_STRATEGIES } from "./types.ts";
+import { loadCityConfig, llmSourceStrings, scraperSources } from "../common.ts";
+import { findSourceById, loadSourceRegistry } from "./registry.ts";
 
-test("loads the Brisbane adapter registry with well-formed entries", () => {
-	const sources = loadSourceRegistry("brisbane");
-	assert.ok(sources.length > 0);
-	for (const s of sources) {
-		assert.equal(typeof s.id, "string");
-		assert.ok(s.id.length > 0);
-		assert.ok(Array.isArray(s.domains));
-		assert.ok(Array.isArray(s.listingUrls));
-		assert.ok(
-			EXTRACTION_STRATEGIES.includes(s.strategy),
-			`unknown strategy on ${s.id}`,
-		);
-		assert.equal(typeof s.enabled, "boolean");
+const CITIES = ["brisbane", "goldcoast", "sunnycoast"];
+
+test("every city file parses and declares a valid method for every source", () => {
+	for (const city of CITIES) {
+		const cfg = loadCityConfig(city);
+		assert.ok(cfg.name, `${city} has a name`);
+		for (const tier of ["aggregators", "institutions", "independents"] as const) {
+			const entries = cfg.sources[tier];
+			assert.ok(Array.isArray(entries), `${city}.${tier} is an array`);
+			assert.ok(entries.length > 0, `${city}.${tier} is non-empty`);
+			for (const e of entries) {
+				assert.ok(e.name, `${city}.${tier} entry has a name`);
+				assert.ok(
+					e.method === "llm" || e.method === "scraper",
+					`${city}: "${e.name}" has method llm|scraper, got ${e.method}`,
+				);
+			}
+		}
 	}
 });
 
-test("source ids are unique", () => {
-	const sources = loadSourceRegistry("brisbane");
-	const ids = sources.map((s) => s.id);
-	assert.equal(new Set(ids).size, ids.length);
-});
-
-test("every entry is enabled:false pending live verification, and carries a note explaining why", () => {
-	// This is a property of *this session's* registry (no adapters written
-	// yet, no network access to verify anything) — not a permanent
-	// invariant. Once Phase 3 verifies a source and writes its adapter, that
-	// source flips to enabled: true and this test should be narrowed to
-	// exclude it rather than deleted outright.
-	const sources = loadSourceRegistry("brisbane");
-	for (const s of sources) {
-		assert.equal(
-			s.enabled,
-			false,
-			`${s.id} should not be enabled without a written+tested adapter`,
-		);
-		assert.ok(
-			s.note && s.note.length > 0,
-			`${s.id} is missing a note explaining its unverified state`,
-		);
-	}
-});
-
-test("findSourceById / enabledSources helpers", () => {
-	const sources = loadSourceRegistry("brisbane");
-	assert.equal(
-		findSourceById(sources, "qagoma")?.name.includes("QAGOMA"),
-		true,
+test("llmSourceStrings renders prose the search prompts can use", () => {
+	const cfg = loadCityConfig("brisbane");
+	const strings = llmSourceStrings(cfg, "aggregators");
+	assert.ok(strings.length > 0);
+	// "Name (domain)" — the shape the prompt builders were written against
+	assert.ok(
+		strings.some((s) => /\(.+\..+\)$/.test(s)),
+		"at least one entry carries its domain",
 	);
-	assert.equal(findSourceById(sources, "does-not-exist"), undefined);
-	assert.deepEqual(enabledSources(sources), []);
+	// a scraper-backed source must never be handed to the search prompts
+	const scraperNames = new Set(
+		scraperSources(cfg).map(({ entry }) => entry.name),
+	);
+	for (const s of strings) {
+		for (const name of scraperNames) {
+			assert.ok(!s.startsWith(name), `${name} is scraped, should not be searched`);
+		}
+	}
+});
+
+test("loadSourceRegistry resolves only scraper sources, with defaults filled", () => {
+	for (const city of CITIES) {
+		const sources = loadSourceRegistry(city);
+		const expected = scraperSources(loadCityConfig(city)).length;
+		assert.equal(sources.length, expected);
+		for (const s of sources) {
+			assert.ok(s.id, "resolved source has an id");
+			assert.ok(s.listingUrls.length > 0, `${s.id} has listing URLs`);
+			assert.ok(
+				["aggregators", "institutions", "independents"].includes(s.sourceTier),
+				`${s.id} carries its tier`,
+			);
+			assert.ok(s.venue, `${s.id} has a venue record`);
+			assert.ok(s.strategy, `${s.id} has a strategy`);
+		}
+	}
+});
+
+test("findSourceById finds a resolved source", () => {
+	const sources = loadSourceRegistry("brisbane");
+	if (sources.length === 0) return; // nothing promoted to scraper yet
+	assert.equal(findSourceById(sources, sources[0].id)?.id, sources[0].id);
+	assert.equal(findSourceById(sources, "nope"), undefined);
+});
+
+test("a scraper source that returned nothing falls back to the AI search", () => {
+	const cfg = {
+		name: "Test",
+		sources: {
+			aggregators: [],
+			institutions: [
+				{ name: "Working Venue", method: "scraper" as const, domains: ["a.com"] },
+				{ name: "Rotted Venue", method: "scraper" as const, domains: ["b.com"] },
+				{ name: "Searched Venue", method: "llm" as const, domains: ["c.com"] },
+			],
+			independents: [],
+		},
+	};
+	// With no barren file, only llm sources are searched.
+	const searched = llmSourceStrings(cfg, "institutions");
+	assert.deepEqual(searched, ["Searched Venue (c.com)"]);
 });

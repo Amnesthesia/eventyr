@@ -9,6 +9,9 @@
 // llmExtract.ts for the "never invent, null if absent" contract that keeps
 // this consistent with "adapters never guess".
 //
+// Order is strictly cheapest-first: JSON-LD, then embedded hydration JSON
+// (embeddedJson.ts), then the LLM over reduced page text.
+//
 // A source with real structured data (JSON-LD on every page) never touches
 // the LLM path at all — this only falls through to it per-listing, so one
 // page adapter can serve a source that's inconsistent about publishing
@@ -16,6 +19,7 @@
 
 import { readFileSync } from "node:fs";
 import { provenanceFor, toCandidateEvent } from "./candidate.ts";
+import { extractFromEmbeddedJson } from "./embeddedJson.ts";
 import {
 	extractJsonLdBlocks,
 	findEventNodes,
@@ -68,6 +72,20 @@ export function createPageAdapter(
 					toCandidateEvent(
 						jsonLdNodeToRawFields(node),
 						provenanceFor(source, raw, "jsonld"),
+						referenceDate,
+					),
+				);
+			}
+
+			// Client-rendered pages hide their listings in embedded hydration
+			// state; recovering that is still deterministic, so it goes ahead of
+			// the LLM fallback.
+			const embedded = extractFromEmbeddedJson(body, raw.url);
+			if (embedded.length > 0) {
+				return embedded.map((fields) =>
+					toCandidateEvent(
+						fields,
+						provenanceFor(source, raw, "api"),
 						referenceDate,
 					),
 				);

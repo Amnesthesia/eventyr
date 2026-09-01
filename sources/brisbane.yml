@@ -1,141 +1,923 @@
+# Event sources for Brisbane.
+#
+# Each entry declares how it is collected:
+#   method: scraper — we fetch its listingUrls ourselves (src/adapters/).
+#   method: llm     — no verified listing page, so LLM web search covers it.
+#
+# Everything else (homepage, venue, domains, notes, candidate listingUrls)
+# is kept regardless of method, so promoting a source to scraper is a
+# one-field change. `pnpm probe-sources --apply` does that promotion once
+# it has verified a listing URL actually yields dated events.
+
 name: Brisbane
+timezone: Australia/Brisbane
 sources:
   aggregators:
-  - Eventbrite Brisbane (eventbrite.com.au)
-  - Eventfinda Brisbane (brisbane.eventfinda.com.au)
-  - Humanitix Brisbane (events.humanitix.com/brisbane)
-  - Must Do Brisbane (mustdobrisbane.com/whats-on)
-  - The Urban List Brisbane (theurbanlist.com/brisbane)
-  - Broadsheet Brisbane (broadsheet.com.au/brisbane)
-  - Fever Brisbane (feverup.com/en/brisbane)
-  - WeekendNotes Brisbane (weekendnotes.com/brisbane)
-  - My Community Diary Queensland (mycommunitydiary.com.au)
-  - ClassBento Brisbane (classbento.com.au/workshops-brisbane)
-  - Meetup Brisbane groups (meetup.com)
-  - Visit Brisbane (visit.brisbane.qld.au/whats-on)
-  - Brisbane City Council What's On (brisbane.qld.gov.au/events-arts-and-culture/what-s-on-in-brisbane)
-  - Queensland.com Brisbane Events — Tourism & Events Queensland (queensland.com/au/en/things-to-do/events/brisbane-events)
-  - Concrete Playground Brisbane (concreteplayground.com/brisbane)
-  - Humanitix Brisbane (humanitix.com/au/events/brisbane)
-  - AllEvents Brisbane (allevents.in/brisbane)
-  - Eventfinda Brisbane (eventfinda.com.au/whatson/events/brisbane)
-  - Ticketmaster Brisbane (ticketmaster.com.au)
-  - Moshtix Brisbane (moshtix.com.au)
-  - Oztix Brisbane (oztix.com.au)
-  - The Creative Issue (thecreativeissue.com.au)
-  - Scenestr Brisbane (scenestr.com.au/brisbane)
-  - Musick.com.au Brisbane gigs listing (musick.com.au)
-  - Brisbane Unlocked (brisbaneunlocked.com.au)
-  - Secret Brisbane (secretbrisbane.co)
-  - Facebook Events (facebook.com/events)
-  - Mutual Events (mutualevents.com)
+    - name: Eventbrite Brisbane
+      method: llm
+      domains:
+        - eventbrite.com.au
+    - name: Eventfinda Brisbane
+      method: llm
+      domains:
+        - brisbane.eventfinda.com.au
+    - name: Humanitix Brisbane
+      method: llm
+      domains:
+        - events.humanitix.com
+    - name: Must Do Brisbane
+      method: llm
+      domains:
+        - mustdobrisbane.com
+    - name: The Urban List Brisbane
+      method: llm
+      domains:
+        - theurbanlist.com
+    - name: Broadsheet Brisbane
+      method: llm
+      domains:
+        - broadsheet.com.au
+    - name: Fever Brisbane
+      method: llm
+      domains:
+        - feverup.com
+    - name: WeekendNotes Brisbane
+      method: llm
+      domains:
+        - weekendnotes.com
+    - name: My Community Diary Queensland
+      method: llm
+      domains:
+        - mycommunitydiary.com.au
+    - name: ClassBento Brisbane
+      method: llm
+      domains:
+        - classbento.com.au
+    - name: Meetup Brisbane groups
+      method: llm
+      domains:
+        - meetup.com
+    - id: visitbrisbane
+      name: Visit Brisbane (Brisbane Economic Development Agency)
+      method: llm
+      domains:
+        - visit.brisbane.qld.au
+      homepage: https://visit.brisbane.qld.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: null
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+      schedule: weekly
+      note: >-
+        This is a city-wide aggregator, not a single venue (venue fields intentionally null). Task
+        flags "confirm events path" — not located this session (network blocked).
+    - id: brisbane-city-council
+      name: Brisbane City Council What's On
+      method: llm
+      domains:
+        - brisbane.qld.gov.au
+      homepage: https://www.brisbane.qld.gov.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: null
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+      schedule: weekly
+      note: >-
+        Candidate, city-wide aggregator (covers Botanic Gardens / Planetarium events too, which have
+        no dedicated domain). Not verified this session.
+    - name: Queensland.com Brisbane Events
+      method: llm
+      domains:
+        - queensland.com
+    - name: Concrete Playground Brisbane
+      method: llm
+      domains:
+        - concreteplayground.com
+    - name: Humanitix Brisbane
+      method: llm
+      domains:
+        - humanitix.com
+    - name: AllEvents Brisbane
+      method: llm
+      domains:
+        - allevents.in
+    - name: Eventfinda Brisbane
+      method: llm
+      domains:
+        - eventfinda.com.au
+    - name: Ticketmaster Brisbane
+      method: llm
+      domains:
+        - ticketmaster.com.au
+    - name: Moshtix Brisbane
+      method: llm
+      domains:
+        - moshtix.com.au
+    - name: Oztix Brisbane
+      method: llm
+      domains:
+        - oztix.com.au
+    - name: The Creative Issue
+      method: llm
+      domains:
+        - thecreativeissue.com.au
+    - name: Scenestr Brisbane
+      method: llm
+      domains:
+        - scenestr.com.au
+    - name: Musick.com.au Brisbane gigs listing
+      method: llm
+      domains:
+        - musick.com.au
+    - name: Brisbane Unlocked
+      method: llm
+      domains:
+        - brisbaneunlocked.com.au
+    - name: Secret Brisbane
+      method: llm
+      domains:
+        - secretbrisbane.co
+    - name: Facebook Events
+      method: llm
+      domains:
+        - facebook.com
+    - name: Mutual Events
+      method: llm
+      domains:
+        - mutualevents.com
   institutions:
-  - Brisbane City Council events (brisbane.qld.gov.au/whats-on)
-  - Queensland State Library (slq.qld.gov.au)
-  - QUT public events (qut.edu.au/events)
-  - UQ public events (events.uq.edu.au)
-  - Griffith University events (griffith.edu.au/events)
-  - Brisbane Powerhouse (brisbanepowerhouse.org)
-  - QAGOMA & Gallery of Modern Art (qagoma.qld.gov.au/whats-on)
-  - QPAC (qpac.com.au/whats-on)
-  - Queensland Museum Brisbane (museum.qld.gov.au/brisbane/queensland-museum)
-  - Museum of Brisbane (museumofbrisbane.com.au/whats-on)
-  - Judith Wright Centre (judithwrightcentre.com)
-  - South Bank Parklands events (visitsouthbank.com.au)
-  - Queensland Theatre (queenslandtheatre.com.au/whats-on)
-  - La Boite Theatre (laboite.com.au/whats-on)
-  - Queensland Symphony Orchestra (qso.com.au/whats-on)
-  - Queensland Ballet (queenslandballet.com.au/whats-on)
-  - Opera Queensland (operaq.com.au)
-  - Metro Arts (metroarts.com.au)
-  - Brisbane Festival (brisbanefestival.com.au)
-  - Brisbane Writers Festival (bwf.org.au)
-  - Queensland Writers Centre (queenslandwriters.org.au)
-  - Anywhere Festival (anywhere.is)
-  - The Tivoli (thetivoli.com.au)
-  - Fortitude Music Hall (fortitudemusichall.com.au)
-  - Brisbane Convention & Exhibition Centre (bcec.com.au)
-  - Riverstage (riverstage.com.au)
-  - Suncorp Stadium (suncorpstadium.com.au)
-  - City Botanic Gardens / Brisbane Botanic Gardens Mt Coot-tha events (via Brisbane
-    City Council)
-  - Queensland Maritime Museum (maritimemuseum.com.au)
-  - Queensland Museum (qm.qld.gov.au)
-  - Brisbane Convention & Exhibition Centre (bccem.com.au)
-  - The University of Queensland (uq.edu.au)
-  - Queensland Performing Arts Centre (QPAC) (qpac.com.au)
-  - Queensland Art Gallery | Gallery of Modern Art (QAGOMA) (qagoma.qld.gov.au)
-  - University of Queensland Union (UQU) (uqu.com.au/what-s-on)
+    - name: Brisbane City Council events
+      method: llm
+      domains:
+        - brisbane.qld.gov.au
+    - id: slq
+      name: State Library of Queensland
+      method: llm
+      domains:
+        - slq.qld.gov.au
+      homepage: https://www.slq.qld.gov.au/
+      listingUrls:
+        - https://www.slq.qld.gov.au/whats-on/
+      strategy: html
+      venue:
+        name: State Library of Queensland
+        address: Stanley Place, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - SLQ
+          - State Library
+      schedule: weekly
+      note: Not independently confirmed this session.
+    - name: QUT public events
+      method: llm
+      domains:
+        - qut.edu.au
+    - name: UQ public events
+      method: llm
+      domains:
+        - events.uq.edu.au
+    - id: griffith-art-museum
+      name: Griffith University Art Museum
+      method: llm
+      domains:
+        - griffith.edu.au
+      homepage: https://www.griffith.edu.au/griffith-university-art-museum
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Griffith University Art Museum
+        address: 226 Grey St
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - Griffith University Art Museum
+          - GUAM
+      schedule: weekly
+      note: Candidate — not verified this session.
+    - id: brisbane-powerhouse
+      name: Brisbane Powerhouse
+      method: llm
+      domains:
+        - brisbanepowerhouse.org
+      homepage: https://www.brisbanepowerhouse.org/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Brisbane Powerhouse
+        address: 119 Lamington St
+        suburb: New Farm
+        lat: null
+        lng: null
+        aliases:
+          - Brisbane Powerhouse
+      schedule: weekly
+      note: >-
+        Candidate; also covers the Brisbane Powerhouse Farmers Markets listed separately in the
+        prompt. Not verified this session.
+    - id: qagoma
+      name: Queensland Art Gallery | Gallery of Modern Art (QAGOMA)
+      method: llm
+      domains:
+        - qagoma.qld.gov.au
+        - qtix.com.au
+      homepage: https://www.qagoma.qld.gov.au/
+      listingUrls:
+        - https://www.qagoma.qld.gov.au/whats-on/events/
+        - https://www.qagoma.qld.gov.au/whats-on/exhibitions/
+      strategy: html
+      venue:
+        name: Queensland Art Gallery | Gallery of Modern Art
+        address: Stanley Place, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - QAGOMA
+          - GOMA
+          - Queensland Art Gallery
+          - Gallery of Modern Art
+      schedule: weekly
+      note: >-
+        URL given by task as verified live; strategy not independently confirmed this session
+        (network egress blocked) — likely jsonld or a WordPress/headless CMS API, needs live
+        inspection before enabling.
+    - id: qpac
+      name: Queensland Performing Arts Centre (QPAC)
+      method: llm
+      domains:
+        - qpac.com.au
+        - qtix.com.au
+      homepage: https://www.qpac.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Queensland Performing Arts Centre
+        address: Grey St, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - QPAC
+      schedule: weekly
+      note: >-
+        Task flags "confirm the What's On path" — not located this session (network blocked).
+        listingUrls intentionally left empty rather than guessed.
+    - id: qldmuseum
+      name: Queensland Museum
+      method: llm
+      domains:
+        - museum.qld.gov.au
+      homepage: https://www.museum.qld.gov.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Queensland Museum
+        address: Grey St, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - Queensland Museum
+          - QM
+      schedule: weekly
+      note: >-
+        Task flags "confirm the What's On path" — not located this session (network blocked).
+        listingUrls intentionally left empty rather than guessed.
+    - id: museum-of-brisbane
+      name: Museum of Brisbane (City Hall)
+      method: llm
+      domains:
+        - museumofbrisbane.com.au
+      homepage: https://www.museumofbrisbane.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Museum of Brisbane
+        address: King George Square (Brisbane City Hall)
+        suburb: Brisbane City
+        lat: null
+        lng: null
+        aliases:
+          - Museum of Brisbane
+          - MoB
+      schedule: weekly
+      note: Candidate — not verified this session (network egress blocked).
+    - name: Judith Wright Centre
+      method: llm
+      domains:
+        - judithwrightcentre.com
+    - id: southbank
+      name: Visit South Bank (South Bank Parklands)
+      method: llm
+      domains:
+        - visitsouthbank.com.au
+      homepage: https://www.visitsouthbank.com.au/
+      listingUrls:
+        - https://www.visitsouthbank.com.au/whats-on
+      strategy: api
+      venue:
+        name: South Bank Parklands
+        address: Grey St, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - South Bank
+          - South Bank Parklands
+      schedule: weekly
+      note: >-
+        Task notes this is built on Webflow — Webflow CMS collections often expose a JSON endpoint,
+        worth checking before falling back to HTML selectors. Not independently confirmed this
+        session.
+    - id: queensland-theatre
+      name: Queensland Theatre
+      method: llm
+      domains:
+        - queenslandtheatre.com.au
+      homepage: https://queenslandtheatre.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Queensland Theatre
+        address: 78 Montague Rd
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - Queensland Theatre
+          - QT
+      schedule: weekly
+      note: Candidate — not verified this session.
+    - id: la-boite
+      name: La Boite Theatre
+      method: llm
+      domains:
+        - laboite.com.au
+      homepage: https://laboite.com.au/
+      listingUrls:
+        - https://laboite.com.au/shows
+      strategy: html
+      venue:
+        name: La Boite Theatre
+        address: null
+        suburb: Kelvin Grove
+        lat: null
+        lng: null
+        aliases:
+          - La Boite
+          - La Boite Theatre Company
+      schedule: weekly
+      note: Candidate — not verified this session.
+    - name: Queensland Symphony Orchestra
+      method: llm
+      domains:
+        - qso.com.au
+    - name: Queensland Ballet
+      method: llm
+      domains:
+        - queenslandballet.com.au
+      listingUrls:
+        - https://www.queenslandballet.com.au/performances/2026
+    - name: Opera Queensland
+      method: llm
+      domains:
+        - operaq.com.au
+    - id: metro-arts
+      name: Metro Arts
+      method: llm
+      domains:
+        - metroarts.com.au
+      homepage: https://metroarts.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Metro Arts
+        address: null
+        suburb: Brisbane City
+        lat: null
+        lng: null
+        aliases:
+          - Metro Arts
+      schedule: weekly
+      note: Candidate — not verified this session.
+    - id: brisbane-festival
+      name: Brisbane Festival
+      method: llm
+      domains:
+        - brisbanefestival.com.au
+      homepage: https://brisbanefestival.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: null
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+      schedule: weekly
+      note: >-
+        Candidate; annual multi-venue festival, not a single venue (fields null). Not verified this
+        session.
+    - name: Brisbane Writers Festival
+      method: llm
+      domains:
+        - bwf.org.au
+    - name: Queensland Writers Centre
+      method: llm
+      domains:
+        - queenslandwriters.org.au
+    - name: Anywhere Festival
+      method: llm
+      domains:
+        - anywhere.is
+    - id: the-tivoli
+      name: The Tivoli
+      method: llm
+      domains:
+        - thetivoli.com.au
+      homepage: https://thetivoli.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: The Tivoli
+        address: 52 Costin St
+        suburb: Fortitude Valley
+        lat: null
+        lng: null
+        aliases:
+          - The Tivoli
+      schedule: weekly
+      note: Candidate — not verified this session.
+    - id: fortitude-music-hall
+      name: Fortitude Music Hall
+      method: llm
+      domains:
+        - fortitudemusichall.com.au
+        - thefortitudemusichall.com
+        - thefortitude.com.au
+      homepage: https://fortitudemusichall.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Fortitude Music Hall
+        address: 66 Doggett St
+        suburb: Fortitude Valley
+        lat: null
+        lng: null
+        aliases:
+          - Fortitude Music Hall
+      schedule: weekly
+      note: >-
+        Candidate — three conflicting domain variants in the existing source list, canonical one not
+        confirmed this session.
+    - name: Brisbane Convention & Exhibition Centre
+      method: llm
+      domains:
+        - bcec.com.au
+    - id: riverstage
+      name: Riverstage
+      method: llm
+      domains:
+        - riverstage.com.au
+        - riverstage.brisbane.qld.gov.au
+      homepage: https://riverstage.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Riverstage
+        address: Gardens Point Rd
+        suburb: Brisbane City
+        lat: null
+        lng: null
+        aliases:
+          - Riverstage
+      schedule: weekly
+      note: >-
+        Candidate — two conflicting domains in the existing source list, canonical one not confirmed
+        this session (network blocked).
+    - name: Suncorp Stadium
+      method: llm
+      domains:
+        - suncorpstadium.com.au
+    - name: City Botanic Gardens / Brisbane Botanic Gardens Mt Coot-tha events
+      method: llm
+    - id: maritime-museum
+      name: Queensland Maritime Museum
+      method: llm
+      domains:
+        - maritimemuseum.com.au
+      homepage: https://www.maritimemuseum.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Queensland Maritime Museum
+        address: 412 Stanley St
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - Queensland Maritime Museum
+      schedule: weekly
+      note: Candidate — not verified this session.
+    - name: Queensland Museum
+      method: llm
+      domains:
+        - qm.qld.gov.au
+    - name: Brisbane Convention & Exhibition Centre
+      method: llm
+      domains:
+        - bccem.com.au
+    - id: uq-art-museum
+      name: UQ Art Museum
+      method: llm
+      domains:
+        - art-museum.uq.edu.au
+        - uq.edu.au
+      homepage: https://art-museum.uq.edu.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: UQ Art Museum
+        address: William St
+        suburb: St Lucia
+        lat: null
+        lng: null
+        aliases:
+          - UQ Art Museum
+      schedule: weekly
+      note: >-
+        Candidate — homepage guessed from UQ's usual subdomain pattern, not found in the existing
+        source list and not verified this session.
+    - name: University of Queensland Union
+      method: llm
+      domains:
+        - uqu.com.au
+    - id: qtix
+      name: QTIX (ticketing — delegate for QAGOMA, QPAC)
+      method: llm
+      domains:
+        - qtix.com.au
+      homepage: https://www.qtix.com.au/
+      listingUrls:
+        - https://www.qtix.com.au/whats-on
+      strategy: html
+      venue:
+        name: QTIX
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases:
+          - QTIX
+      schedule: weekly
+      note: >-
+        Ticketing delegate, deliberately low priority — most of what it lists should already be
+        covered by the qagoma/qpac adapters directly. Only worth an adapter if it surfaces venues we
+        don't otherwise cover.
+    - id: howard-smith-wharves
+      name: Howard Smith Wharves
+      method: llm
+      domains: []
+      homepage: null
+      strategy: html
+      venue:
+        name: Howard Smith Wharves
+        address: 5 Boundary St
+        suburb: Brisbane City
+        lat: null
+        lng: null
+        aliases:
+          - Howard Smith Wharves
+          - HSW
+      schedule: weekly
+      note: >-
+        Candidate — no domain hint found anywhere in the existing source list; homepage not guessed
+        (would need a live search to confirm rather than assumed). Needs verification before any URL
+        is written here.
   independents:
-  - Institute of Modern Art Brisbane (ima.org.au/ima-events)
-  - Milani Gallery West End (milanigallery.com.au/exhibitions)
-  - Jan Murphy Gallery Fortitude Valley (janmurphygallery.com.au)
-  - The Station Brisbane Fortitude Valley (thestationbrisbane.com)
-  - Lightspace gallery & events Fortitude Valley (lightspace.net.au)
-  - BY.ARTISANS West End — workshops, art classes, social events
-  - HSBNE Hackerspace Brisbane (hsbne.org)
-  - Brisbane Makerspace (brisbanemaker.space)
-  - The Triffid Fortitude Valley (thetriffid.com.au)
-  - Crowbar Brisbane Fortitude Valley (crowbarbrisbane.com.au)
-  - Fortitude Music Hall (thefortitude.com.au/whats-on)
-  - Black Bear Lodge Fortitude Valley (blackbearlodge.bar/events)
-  - Palace Cinemas Brisbane (palacecinemas.com.au/events)
-  - Dendy Powerhouse cinema New Farm (powerhouse.dendy.com.au)
-  - New Farm Cinemas (newfarmcinemas.com.au)
-  - Avid Reader bookshop & café West End (avidreader.com.au/events)
-  - The Bearded Lady West End — music, comedy, cabaret (thebeardedlady.com.au)
-  - The Boundary Hotel West End (theboundary.com.au)
-  - Wandering Cooks West End — food & community events (wanderingcooks.com.au)
-  - Archive Bar West End — open mic nights
-  - Newmarket Hotel — open mic comedy
-  - Creative Mornings Brisbane (creativemornings.com/cities/bne)
-  - Open Sessions Brisbane open mic circuit (theopensessions.com)
-  - Creative Lunch Club Brisbane (creativelunchclub.com/c/brisbane)
-  - Board Game BBQ Brisbane (boardgamebbq.com/events)
-  - Philosophy Cafe Meet Up Brisbane (meetup.com/The-Philosophy-Cafe-Meet-Up)
-  - Sonder Language Exchange at The Burrow West End (theburrowwestend.com.au)
-  - Riverbend Books, Bulimba (riverbendbooks.com.au/events)
-  - Where the Wild Things Are bookshop (wherethewildthingsare.com.au)
-  - Books@Stones, Stones Corner (booksatstones.com.au)
-  - Black Cat Books / Pulp Fiction Booksellers (pulpfictionbooks.com.au)
-  - The Mad Hatters Bookshop (madhattersbookshop.com.au)
-  - Bright and Early Books (brightandearlybooks.com.au)
-  - Scrumptious Reads, Red Hill (scrumptiousreads.com.au)
-  - The Zoo, Fortitude Valley (thezoo.com.au)
-  - The Brightside, Fortitude Valley (thebrightsidebrisbane.com.au)
-  - Crowbar Brisbane (crowbarbrisbane.com)
-  - Black Bear Lodge (blackbearlodge.com.au)
-  - Brooklyn Standard (brooklynstandard.com.au)
-  - Lefty's Music Hall (leftysmusichall.com)
-  - The Bearded Lady, West End (thebeardedladywestend.com)
-  - The Junk Bar, Ashgrove (thejunkbar.com.au)
-  - Ric's Bar, Fortitude Valley (ricsbar.com.au)
-  - It's Still A Secret (itsstillasecret.com.au)
-  - The Flamin' Galah (flamingalah.com.au)
-  - Valley Loft (valleyloft.com.au)
-  - The Princess Theatre, Woolloongabba (princesstheatre.com.au)
-  - The Old Museum, Bowen Hills (theoldmuseum.org)
-  - Doo-Bop Jazz Bar (doo-bop.com.au)
-  - Seven Hills Hub / Backbone Youth Arts (backbone.org.au)
-  - Jugglers Art Space, Fortitude Valley (jugglersartspace.com.au)
-  - Outer Space artist-run gallery (outerspace.org.au)
-  - Wonderland Festival / Wonderland Brisbane events
-  - shake & stir theatre co (shakeandstir.com.au)
-  - Circa contemporary circus (circa.org.au)
-  - Off the Grid Brisbane (offthegridbrisbane.com)
-  - VENTspace (ventspace.com.au)
-  - Side Gallery (sidegallery.com.au)
-  - Outer Space (outerspace.org)
-  - John Mills Himself (johnmillshimself.com.au)
-  - Brisbane Street Art Festival (bsafest.com.au)
-  - The Great Artist Market (thegreatartistmarket.com)
-  - West End Film Festival (westendfilmfestival.com.au)
-  - Connecting Things Brisbane (connectingthings.co)
-  - Brisbane Illustration Fair (brisbaneillustrationfair.com)
-  - Creatives Community Brisbane (creativescommunity.com.au)
-  - Quick Brown Fox Bookshop (quickbrownfoxbookshop.com.au/events-list)
-  - Brisbane Makerspace (brisbanemakerspace.com.au/workshops)
-  - The Princess Theatre (theprincesstheatre.com.au/whats-on)
-  - Fortitude Music Hall (thefortitudemusichall.com/whats-on)
-  - Riverstage (riverstage.brisbane.qld.gov.au/whats-on)
-  - Ad Astra (adastratheatre.com)
+    - id: ima
+      name: Institute of Modern Art (IMA)
+      method: llm
+      domains:
+        - ima.org.au
+      homepage: https://ima.org.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Institute of Modern Art
+        address: 420 Brunswick St
+        suburb: Fortitude Valley
+        lat: null
+        lng: null
+        aliases:
+          - IMA
+          - Institute of Modern Art
+      schedule: weekly
+      note: Candidate — not verified this session.
+    - name: Milani Gallery West End
+      method: llm
+      domains:
+        - milanigallery.com.au
+    - name: Jan Murphy Gallery Fortitude Valley
+      method: llm
+      domains:
+        - janmurphygallery.com.au
+    - name: The Station Brisbane Fortitude Valley
+      method: llm
+      domains:
+        - thestationbrisbane.com
+    - name: Lightspace gallery & events Fortitude Valley
+      method: llm
+      domains:
+        - lightspace.net.au
+    - name: BY.ARTISANS West End
+      method: llm
+    - name: HSBNE Hackerspace Brisbane
+      method: llm
+      domains:
+        - hsbne.org
+    - name: Brisbane Makerspace
+      method: llm
+      domains:
+        - brisbanemaker.space
+    - name: The Triffid Fortitude Valley
+      method: llm
+      domains:
+        - thetriffid.com.au
+    - name: Crowbar Brisbane Fortitude Valley
+      method: llm
+      domains:
+        - crowbarbrisbane.com.au
+    - name: Fortitude Music Hall
+      method: llm
+      domains:
+        - thefortitude.com.au
+    - name: Black Bear Lodge Fortitude Valley
+      method: llm
+      domains:
+        - blackbearlodge.bar
+    - name: Palace Cinemas Brisbane
+      method: llm
+      domains:
+        - palacecinemas.com.au
+    - name: Dendy Powerhouse cinema New Farm
+      method: llm
+      domains:
+        - powerhouse.dendy.com.au
+    - name: New Farm Cinemas
+      method: llm
+      domains:
+        - newfarmcinemas.com.au
+    - name: Avid Reader bookshop & café West End
+      method: llm
+      domains:
+        - avidreader.com.au
+    - name: The Bearded Lady West End
+      method: llm
+      domains:
+        - thebeardedlady.com.au
+    - name: The Boundary Hotel West End
+      method: llm
+      domains:
+        - theboundary.com.au
+    - name: Wandering Cooks West End
+      method: llm
+      domains:
+        - wanderingcooks.com.au
+    - name: Archive Bar West End
+      method: llm
+    - name: Newmarket Hotel
+      method: llm
+    - name: Creative Mornings Brisbane
+      method: llm
+      domains:
+        - creativemornings.com
+    - name: Open Sessions Brisbane open mic circuit
+      method: llm
+      domains:
+        - theopensessions.com
+    - name: Creative Lunch Club Brisbane
+      method: llm
+      domains:
+        - creativelunchclub.com
+    - name: Board Game BBQ Brisbane
+      method: llm
+      domains:
+        - boardgamebbq.com
+    - name: Philosophy Cafe Meet Up Brisbane
+      method: llm
+      domains:
+        - meetup.com
+    - name: Sonder Language Exchange at The Burrow West End
+      method: llm
+      domains:
+        - theburrowwestend.com.au
+    - name: Riverbend Books, Bulimba
+      method: llm
+      domains:
+        - riverbendbooks.com.au
+    - name: Where the Wild Things Are bookshop
+      method: llm
+      domains:
+        - wherethewildthingsare.com.au
+    - name: Books@Stones, Stones Corner
+      method: llm
+      domains:
+        - booksatstones.com.au
+    - name: Black Cat Books / Pulp Fiction Booksellers
+      method: llm
+      domains:
+        - pulpfictionbooks.com.au
+    - name: The Mad Hatters Bookshop
+      method: llm
+      domains:
+        - madhattersbookshop.com.au
+    - name: Bright and Early Books
+      method: llm
+      domains:
+        - brightandearlybooks.com.au
+    - name: Scrumptious Reads, Red Hill
+      method: llm
+      domains:
+        - scrumptiousreads.com.au
+    - name: The Zoo, Fortitude Valley
+      method: llm
+      domains:
+        - thezoo.com.au
+    - name: The Brightside, Fortitude Valley
+      method: llm
+      domains:
+        - thebrightsidebrisbane.com.au
+    - name: Crowbar Brisbane
+      method: llm
+      domains:
+        - crowbarbrisbane.com
+    - name: Black Bear Lodge
+      method: llm
+      domains:
+        - blackbearlodge.com.au
+    - name: Brooklyn Standard
+      method: llm
+      domains:
+        - brooklynstandard.com.au
+    - name: Lefty's Music Hall
+      method: llm
+      domains:
+        - leftysmusichall.com
+    - name: The Bearded Lady, West End
+      method: llm
+      domains:
+        - thebeardedladywestend.com
+    - name: The Junk Bar, Ashgrove
+      method: llm
+      domains:
+        - thejunkbar.com.au
+    - name: Ric's Bar, Fortitude Valley
+      method: llm
+      domains:
+        - ricsbar.com.au
+    - name: It's Still A Secret
+      method: llm
+      domains:
+        - itsstillasecret.com.au
+    - name: The Flamin' Galah
+      method: llm
+      domains:
+        - flamingalah.com.au
+    - name: Valley Loft
+      method: llm
+      domains:
+        - valleyloft.com.au
+    - id: princess-theatre
+      name: Princess Theatre Woolloongabba
+      method: llm
+      domains:
+        - princesstheatre.com.au
+        - theprincesstheatre.com.au
+      homepage: https://princesstheatre.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Princess Theatre
+        address: 8 Annerley Rd
+        suburb: Woolloongabba
+        lat: null
+        lng: null
+        aliases:
+          - Princess Theatre
+      schedule: weekly
+      note: >-
+        Candidate — two conflicting domain variants in the existing source list, canonical one not
+        confirmed this session.
+    - name: The Old Museum, Bowen Hills
+      method: llm
+      domains:
+        - theoldmuseum.org
+    - name: Doo-Bop Jazz Bar
+      method: llm
+      domains:
+        - doo-bop.com.au
+    - name: Seven Hills Hub / Backbone Youth Arts
+      method: llm
+      domains:
+        - backbone.org.au
+    - name: Jugglers Art Space, Fortitude Valley
+      method: llm
+      domains:
+        - jugglersartspace.com.au
+    - name: Outer Space artist-run gallery
+      method: llm
+      domains:
+        - outerspace.org.au
+    - name: Wonderland Festival / Wonderland Brisbane events
+      method: llm
+    - name: shake & stir theatre co
+      method: llm
+      domains:
+        - shakeandstir.com.au
+    - name: Circa contemporary circus
+      method: llm
+      domains:
+        - circa.org.au
+    - name: Off the Grid Brisbane
+      method: llm
+      domains:
+        - offthegridbrisbane.com
+    - name: VENTspace
+      method: llm
+      domains:
+        - ventspace.com.au
+    - name: Side Gallery
+      method: llm
+      domains:
+        - sidegallery.com.au
+    - name: Outer Space
+      method: llm
+      domains:
+        - outerspace.org
+    - name: John Mills Himself
+      method: llm
+      domains:
+        - johnmillshimself.com.au
+    - name: Brisbane Street Art Festival
+      method: llm
+      domains:
+        - bsafest.com.au
+    - name: The Great Artist Market
+      method: llm
+      domains:
+        - thegreatartistmarket.com
+    - name: West End Film Festival
+      method: llm
+      domains:
+        - westendfilmfestival.com.au
+    - name: Connecting Things Brisbane
+      method: llm
+      domains:
+        - connectingthings.co
+    - name: Brisbane Illustration Fair
+      method: llm
+      domains:
+        - brisbaneillustrationfair.com
+    - name: Creatives Community Brisbane
+      method: llm
+      domains:
+        - creativescommunity.com.au
+    - name: Quick Brown Fox Bookshop
+      method: llm
+      domains:
+        - quickbrownfoxbookshop.com.au
+    - name: Brisbane Makerspace
+      method: llm
+      domains:
+        - brisbanemakerspace.com.au
+    - name: The Princess Theatre
+      method: llm
+      domains:
+        - theprincesstheatre.com.au
+    - name: Fortitude Music Hall
+      method: llm
+      domains:
+        - thefortitudemusichall.com
+    - name: Riverstage
+      method: llm
+      domains:
+        - riverstage.brisbane.qld.gov.au
+    - name: Ad Astra
+      method: llm
+      domains:
+        - adastratheatre.com

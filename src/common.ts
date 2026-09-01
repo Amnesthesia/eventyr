@@ -33,6 +33,16 @@ export const CATEGORY_EMOJI: Record<string, string> = {
 
 export const TOP_PICK_THRESHOLD = 7;
 
+export const SITE_URL = "https://www.dothings.lol";
+
+/** City key → the slug used in public URLs. Shared so the site, the sitemap
+ * and the RSS feeds can't disagree about a city's address. */
+export const KEY_TO_SLUG: Record<string, string> = {
+	brisbane: "brisbane",
+	goldcoast: "gold-coast",
+	sunnycoast: "sunshine-coast",
+};
+
 export const INTERESTS = `
 WANT:
   - Intellectually stimulating talks, lectures, salons, workshops, panels, and debates focused on science, philosophy, psychology, technology, systems thinking, futurism, culture, design, history, AI, human behavior, or creativity
@@ -62,14 +72,54 @@ SKIP ENTIRELY — do not include:
   - Online-only events unless strongly tied to the local community
 `;
 
+export const SOURCE_TIERS = [
+	"aggregators",
+	"institutions",
+	"independents",
+] as const;
+
+export type SourceTier = (typeof SOURCE_TIERS)[number];
+
+/**
+ * One event source, in whichever of the two ways we can collect from it:
+ *
+ *  - method: "scraper" — we know its real listing URL and fetch/parse it
+ *    ourselves (src/adapters/). Deterministic, cheap, exact.
+ *  - method: "llm" — we don't (SPA, no usable listing page, login-walled
+ *    platform), so an LLM web search covers it instead.
+ *
+ * Both live in the same per-city file grouped under the same tiers, so
+ * there's one source of truth per city and flipping a source from search to
+ * scrape is a one-field edit rather than a move between files.
+ */
+export interface SourceEntry {
+	name: string;
+	method: "llm" | "scraper";
+	/** Hostnames this source owns, incl. aliases/redirect targets. */
+	domains?: string[];
+	// --- scraper-only, ignored for method: "llm" ---
+	/** Stable slug; also names the scraped output file. */
+	id?: string;
+	homepage?: string;
+	/** Verified listing pages to fetch. Required when method is "scraper". */
+	listingUrls?: string[];
+	strategy?: "jsonld" | "api" | "html" | "ics" | "rss";
+	venue?: {
+		name?: string | null;
+		address?: string | null;
+		suburb?: string | null;
+		lat?: number | null;
+		lng?: number | null;
+		aliases?: string[];
+	};
+	schedule?: "daily" | "weekly";
+	note?: string;
+}
+
 export interface CityConfig {
 	name: string;
 	timezone?: string;
-	sources: {
-		aggregators: string[];
-		institutions: string[];
-		independents: string[];
-	};
+	sources: Record<SourceTier, SourceEntry[]>;
 }
 
 export function loadCityConfig(cityKey: string): CityConfig {
@@ -82,7 +132,68 @@ export function loadCityConfig(cityKey: string): CityConfig {
 			`Unknown city '${cityKey}'. No file at ${sourcesPath}. Run src/add_city.ts to add it.`,
 		);
 	}
-	return yaml.load(raw) as CityConfig;
+	const cfg = yaml.load(raw) as CityConfig;
+	for (const tier of SOURCE_TIERS) {
+		for (const entry of cfg.sources?.[tier] ?? []) {
+			if (entry.method !== "llm" && entry.method !== "scraper") {
+				throw new Error(
+					`${sourcesPath}: source "${entry.name}" has invalid method ${JSON.stringify(entry.method)} (expected "llm" or "scraper")`,
+				);
+			}
+		}
+	}
+	return cfg;
+}
+
+/** Where collect-adapters records scraper sources that produced nothing, so
+ * the AI search can cover for them. */
+export function barrenSourcesPath(city: string): string {
+	return join(DATA_ROOT, city, "adapters", "barren.json");
+}
+
+function barrenSourceNames(city: string): Set<string> {
+	try {
+		return new Set(
+			JSON.parse(readFileSync(barrenSourcesPath(city), "utf-8")) as string[],
+		);
+	} catch {
+		return new Set();
+	}
+}
+
+/**
+ * Sources in a tier still collected by LLM web search, rendered back into the
+ * "Name (domain)" prose the search prompts are built from.
+ *
+ * Includes scraper sources whose last scrape returned nothing: a listing URL
+ * that rots (site redesign, a WAF that starts blocking us) would otherwise
+ * drop that source to zero coverage silently, since promotion removes it from
+ * the search list. Falling back costs one source's worth of search budget;
+ * not falling back costs the venue entirely.
+ */
+export function llmSourceStrings(
+	cfg: CityConfig,
+	tier: string,
+	cityKey?: string,
+): string[] {
+	const entries = cfg.sources?.[tier as SourceTier] ?? [];
+	const barren = cityKey ? barrenSourceNames(cityKey) : new Set<string>();
+	return entries
+		.filter((e) => e.method === "llm" || barren.has(e.name))
+		.map((e) => (e.domains?.[0] ? `${e.name} (${e.domains[0]})` : e.name));
+}
+
+/** Every scraper-backed source across all tiers, paired with its tier. */
+export function scraperSources(
+	cfg: CityConfig,
+): { entry: SourceEntry; tier: SourceTier }[] {
+	const out: { entry: SourceEntry; tier: SourceTier }[] = [];
+	for (const tier of SOURCE_TIERS) {
+		for (const entry of cfg.sources?.[tier] ?? []) {
+			if (entry.method === "scraper") out.push({ entry, tier });
+		}
+	}
+	return out;
 }
 
 export function getWeekRange(): { monday: Date; sunday: Date } {
