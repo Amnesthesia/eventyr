@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import type { Event } from "../types";
-import { buildEventIcs, icsFilename } from "./ics";
+import { buildEventIcs, buildIcs, icsFilename } from "./ics";
 
 function ev(partial: Partial<Event>): Event {
 	return {
@@ -135,4 +135,22 @@ test("the filename says which event it is", () => {
 	);
 	assert.equal(icsFilename(ev({ title: "" })), "event.ics");
 	assert.ok(icsFilename(ev({ title: "y".repeat(200) })).length <= 54);
+});
+
+test("a saved-events export holds one VEVENT per dated event, skips undated", () => {
+	const ics = buildIcs(
+		[
+			ev({ title: "A" }),
+			ev({ title: "B", datetime_iso: "" }),
+			ev({ title: "C", datetime_iso: "2026-09-06" }),
+		],
+		"brisbane",
+		{ name: "Saved, do things" },
+	) as string;
+	const all = lines(ics);
+	assert.equal(all.filter((l) => l === "BEGIN:VEVENT").length, 2);
+	assert.equal(all.filter((l) => l === "BEGIN:VCALENDAR").length, 1);
+	assert.ok(all.includes("X-WR-CALNAME:Saved\\, do things"), ics);
+	// Nothing dated means nothing to download, not an empty calendar.
+	assert.equal(buildIcs([ev({ datetime_iso: "" })], "brisbane"), null);
 });

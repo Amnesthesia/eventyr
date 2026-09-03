@@ -1,13 +1,16 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import EventGrid from "./components/EventGrid";
+import ExportSaved from "./components/ExportSaved";
 import FilterBar from "./components/FilterBar";
 import Header from "./components/Header";
 import { Intro } from "./components/Intro";
+import SwipeMode from "./components/SwipeMode";
 import { useEventsContext } from "./context";
 import { dateWindowFor, groupEvents } from "./utils/grouping";
 
 export default function AppShell() {
 	const { cityData, starredEvents, picks, rest, groupBy } = useEventsContext();
+	const [swiping, setSwiping] = useState(false);
 
 	// Only the long "all events" list is grouped. Saved and picks are already
 	// short and already labelled, and splitting a nine-card section further
@@ -28,10 +31,14 @@ export default function AppShell() {
 				{cityData && (
 					<>
 						{cityData && <Intro city={cityData.city} />}
-						<FilterBar />
+						<FilterBar onSwipe={() => setSwiping(true)} />
+						{swiping && <SwipeMode onClose={() => setSwiping(false)} />}
 						{starredEvents.length > 0 && (
 							<div id="starred-section">
-								<h2 className="section-label">saved</h2>
+								<div className="section-head">
+									<h2 className="section-label">saved</h2>
+									<ExportSaved />
+								</div>
 								<EventGrid events={starredEvents} isTopPick={false} />
 							</div>
 						)}

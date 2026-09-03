@@ -1,4 +1,4 @@
-import { useEventsContext } from "../context";
+import { eventId, useEventsContext } from "../context";
 import type { Event } from "../types";
 import EventCard from "./EventCard";
 
@@ -13,7 +13,7 @@ export default function EventGrid({ events, isTopPick }: Props) {
 	return (
 		<div className="card-grid">
 			{events.map((event) => {
-				const id = event.title + event.datetime_iso;
+				const id = eventId(event);
 				return (
 					<EventCard
 						key={id}

@@ -73,12 +73,16 @@ const MONTHS = [
  * platforms ("Sep" vs "Sept"), and this heading sits directly above cards
  * whose own date strings come from that hand-built formatter.
  */
-function dateLabel(iso: string, today: string): string {
+export function dateLabel(iso: string, today: string): string {
 	if (iso === today) return "Today";
 	if (iso === addDays(today, 1)) return "Tomorrow";
 	const d = new Date(`${iso}T00:00:00`);
 	if (Number.isNaN(d.getTime())) return iso;
-	return `${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}`;
+	// The year only when it is not this one: "16 Jan" for an exhibition that
+	// closes next January reads as last month.
+	const year =
+		iso.slice(0, 4) === today.slice(0, 4) ? "" : ` ${d.getFullYear()}`;
+	return `${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}${year}`;
 }
 
 function startDate(event: Event): string {

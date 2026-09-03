@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import type { Event } from "../types";
-import { dateWindowFor, groupEvents } from "./grouping";
+import { startOfWeek } from "./dates";
+import { dateLabel, dateWindowFor, groupEvents } from "./grouping";
 
 const WINDOW = { from: "2026-09-03", to: "2026-09-13" };
 // Frozen, so the "Today"/"Tomorrow" labels do not depend on the clock.
@@ -171,4 +172,16 @@ test("the window runs from today to the end of next week", () => {
 		from: "2026-08-31",
 		to: "2026-09-13",
 	});
+});
+
+test("dateLabel names the year only when it differs from today's", () => {
+	assert.equal(dateLabel("2026-09-12", "2026-09-04"), "Saturday 12 Sep");
+	assert.equal(dateLabel("2027-01-16", "2026-09-04"), "Saturday 16 Jan 2027");
+	assert.equal(dateLabel("2026-09-04", "2026-09-04"), "Today");
+});
+
+test("startOfWeek is the Monday, with Sunday belonging to the week before", () => {
+	assert.equal(startOfWeek("2026-09-04"), "2026-08-31"); // a Friday
+	assert.equal(startOfWeek("2026-09-06"), "2026-08-31"); // Sunday
+	assert.equal(startOfWeek("2026-08-31"), "2026-08-31"); // Monday itself
 });

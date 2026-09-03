@@ -55,11 +55,12 @@ function fold(line: string): string {
 	return parts.join("\r\n");
 }
 
-export function buildEventIcs(
+/** The VEVENT block for one event, or null when it has no usable date. */
+function eventLines(
 	event: Event,
 	cityKey: string,
-	timezone = "Australia/Brisbane",
-): string | null {
+	timezone: string,
+): string[] | null {
 	const start = (event.datetime_iso || "").trim();
 	if (!start) return null;
 
@@ -85,11 +86,7 @@ export function buildEventIcs(
 	}
 
 	const url = `${SITE_URL}${eventPath(cityKey, event)}`;
-	const body = [
-		"BEGIN:VCALENDAR",
-		"VERSION:2.0",
-		"PRODID:-//dothings.lol//event//EN",
-		"CALSCALE:GREGORIAN",
+	return [
 		"BEGIN:VEVENT",
 		// The same identity the city-wide feed uses, so adding one event and
 		// subscribing to the feed do not produce two copies of it.
@@ -102,10 +99,44 @@ export function buildEventIcs(
 		)}`,
 		`URL:${event.link || url}`,
 		"END:VEVENT",
+	].filter(Boolean);
+}
+
+/**
+ * A calendar holding every dated event in `events`. Null when none of them
+ * has a date, so a caller never downloads an empty calendar. `name` becomes
+ * X-WR-CALNAME, which is what Apple/Google show when the file is imported.
+ */
+export function buildIcs(
+	events: Event[],
+	cityKey: string,
+	{
+		timezone = "Australia/Brisbane",
+		name,
+	}: { timezone?: string; name?: string } = {},
+): string | null {
+	const blocks = events
+		.map((e) => eventLines(e, cityKey, timezone))
+		.filter((b): b is string[] => b !== null);
+	if (blocks.length === 0) return null;
+	const body = [
+		"BEGIN:VCALENDAR",
+		"VERSION:2.0",
+		"PRODID:-//dothings.lol//event//EN",
+		"CALSCALE:GREGORIAN",
+		name ? `X-WR-CALNAME:${esc(name)}` : "",
+		...blocks.flat(),
 		"END:VCALENDAR",
 	].filter(Boolean);
-
 	return `${body.map(fold).join("\r\n")}\r\n`;
+}
+
+export function buildEventIcs(
+	event: Event,
+	cityKey: string,
+	timezone = "Australia/Brisbane",
+): string | null {
+	return buildIcs([event], cityKey, { timezone });
 }
 
 /** Filename-safe, and obviously about this event when it lands in Downloads. */
@@ -128,14 +159,18 @@ export function icsFilename(event: Event): string {
 export function downloadEventIcs(event: Event, cityKey: string): boolean {
 	const ics = buildEventIcs(event, cityKey);
 	if (!ics) return false;
+	downloadIcs(ics, icsFilename(event));
+	return true;
+}
+
+export function downloadIcs(ics: string, filename: string): void {
 	const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
 	const href = URL.createObjectURL(blob);
 	const a = document.createElement("a");
 	a.href = href;
-	a.download = icsFilename(event);
+	a.download = filename;
 	a.click();
 	// Released on the next tick: revoking synchronously can cancel the download
 	// before the browser has read the blob.
 	setTimeout(() => URL.revokeObjectURL(href), 0);
-	return true;
 }

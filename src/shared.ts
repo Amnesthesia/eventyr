@@ -28,6 +28,8 @@ export const CATEGORY_EMOJI: Record<string, string> = {
 };
 
 export const TOP_PICK_THRESHOLD = 7;
+/** Below this a score is "low": the optional site filter hides these. */
+export const LOW_SCORE_THRESHOLD = 4;
 
 export const SITE_URL = "https://www.dothings.lol";
 
