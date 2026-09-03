@@ -8,6 +8,8 @@ import { Bookmark, RotateCcw, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { eventId, useEventsContext } from "../context";
 import type { Event } from "../types";
+import { todayIso } from "../utils/dates";
+import { dateLabel } from "../utils/grouping";
 import EventCard from "./EventCard";
 import ExportSaved from "./ExportSaved";
 
@@ -47,6 +49,20 @@ export default function SwipeMode({ onClose }: Props) {
 	const moved = useRef(false);
 
 	const current: Event | undefined = deck[index];
+
+	// Whether it is on tonight or next month usually decides the swipe, and
+	// the card's own date line is small and mid-card. So the day gets a banner
+	// of its own, fixed above the card so it does not tilt with the drag.
+	const when = (() => {
+		if (!current) return "";
+		const today = todayIso();
+		const start = (current.datetime_iso || "").slice(0, 10);
+		const end = (current.datetime_end_iso || "").slice(0, 10);
+		if (!start) return "Date unknown";
+		if (start < today && end >= today)
+			return `Ongoing, until ${dateLabel(end, today)}`;
+		return dateLabel(start, today);
+	})();
 
 	function fly(verdict: Verdict) {
 		if (!current || leaving) return;
@@ -135,6 +151,12 @@ export default function SwipeMode({ onClose }: Props) {
 					<X size={12} strokeWidth={2} />
 				</button>
 			</div>
+
+			{when && (
+				<p className="swipe-date" aria-live="polite">
+					{when}
+				</p>
+			)}
 
 			{/* Pointer handlers live on the whole stage so a drag that leaves the
 			    card keeps tracking. A click after a drag is swallowed in the

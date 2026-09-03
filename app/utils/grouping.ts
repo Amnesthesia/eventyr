@@ -73,7 +73,7 @@ const MONTHS = [
  * platforms ("Sep" vs "Sept"), and this heading sits directly above cards
  * whose own date strings come from that hand-built formatter.
  */
-function dateLabel(iso: string, today: string): string {
+export function dateLabel(iso: string, today: string): string {
 	if (iso === today) return "Today";
 	if (iso === addDays(today, 1)) return "Tomorrow";
 	const d = new Date(`${iso}T00:00:00`);
