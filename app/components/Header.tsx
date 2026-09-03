@@ -2,6 +2,7 @@ import { Calendar, Moon, Sun } from "lucide-react";
 import { useEventsContext } from "../context";
 import { KEY_TO_SLUG } from "../utils/citySlug";
 import { fmtRange } from "../utils/dates";
+import ExportSaved from "./ExportSaved";
 import SearchBar from "./SearchBar";
 
 export default function Header() {
@@ -61,6 +62,7 @@ export default function Header() {
 						</select>
 					</>
 				)}
+				<ExportSaved compact />
 				{cityKey && (
 					<a
 						className="theme-btn"
