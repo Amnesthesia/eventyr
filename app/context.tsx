@@ -10,10 +10,11 @@ import {
 import {
 	type CostLocale,
 	DEFAULT_COST_LOCALE,
+	LOW_SCORE_THRESHOLD,
 	TOP_PICK_THRESHOLD,
 } from "../src/shared.ts";
 import { useColorTheme } from "./hooks/useColorTheme";
-import { useStarred } from "./hooks/useStarred";
+import { useStoredSet } from "./hooks/useStoredSet";
 import type {
 	City,
 	CityData,
@@ -29,6 +30,12 @@ import { endOfMonth, parseEndDate, todayIso } from "./utils/dates";
 import type { GroupBy } from "./utils/grouping";
 import { matchesQuery, queryTokens } from "./utils/search";
 
+/** The identity saved/hidden sets are keyed by. Not eventHash: stars already
+ * in people's localStorage use this basis, and changing it would lose them. */
+export function eventId(event: Event): string {
+	return event.title + event.datetime_iso;
+}
+
 interface EventsContextValue {
 	cityData: CityData;
 	filtered: Event[];
@@ -39,6 +46,16 @@ interface EventsContextValue {
 	toggleTheme: () => void;
 	starred: Set<string>;
 	toggleStar: (id: string) => void;
+	saveEvent: (id: string) => void;
+	unsaveEvent: (id: string) => void;
+	/** Swiped-left events. Excluded from `filtered` until unhidden. */
+	hidden: Set<string>;
+	hiddenCount: number;
+	hideEvent: (id: string) => void;
+	unhideEvent: (id: string) => void;
+	clearHidden: () => void;
+	hideLowScore: boolean;
+	setHideLowScore: (v: boolean) => void;
 	activeCat: string;
 	setActiveCat: (cat: string) => void;
 	dateRange: DateRange | null;
@@ -90,7 +107,19 @@ export function EventsProvider({
 	allCities,
 }: ProviderProps) {
 	const { theme, toggle: toggleTheme } = useColorTheme();
-	const { starred, toggle: toggleStar } = useStarred();
+	const {
+		set: starred,
+		toggle: toggleStar,
+		add: saveEvent,
+		remove: unsaveEvent,
+	} = useStoredSet("eventyr:starred");
+	const {
+		set: hidden,
+		add: hideEvent,
+		remove: unhideEvent,
+		clear: clearHidden,
+	} = useStoredSet("eventyr:hidden");
+	const [hideLowScore, setHideLowScore] = useState(false);
 
 	const cityData = initialData;
 	const cities = allCities;
@@ -161,6 +190,9 @@ export function EventsProvider({
 		// query 395 times a keystroke is pure waste.
 		const tokens = queryTokens(query);
 		return cityData.events.filter((event) => {
+			if (hidden.has(eventId(event))) return false;
+			if (hideLowScore && (event.score || 0) < LOW_SCORE_THRESHOLD)
+				return false;
 			if (!matchesQuery(event, tokens)) return false;
 			const catOk = activeCat === "All" || event.category === activeCat;
 
@@ -212,7 +244,17 @@ export function EventsProvider({
 		vibeFilters,
 		todayStr,
 		query,
+		hidden,
+		hideLowScore,
 	]);
+
+	// Counted against the whole city, not `filtered`: hidden events are by
+	// definition not in `filtered`, and the count is the only thing that tells
+	// a reader they have hidden anything at all.
+	const hiddenCount = useMemo(
+		() => cityData.events.filter((e) => hidden.has(eventId(e))).length,
+		[cityData, hidden],
+	);
 
 	const categories = useMemo(
 		() => [...new Set(filtered.map((e) => e.category).filter(Boolean))],
@@ -236,8 +278,7 @@ export function EventsProvider({
 			return !!start && start >= dateRange.start && start <= dateRange.end;
 		};
 		filtered.forEach((e) => {
-			const id = e.title + e.datetime_iso;
-			if (starred.has(id)) {
+			if (starred.has(eventId(e))) {
 				starredEvents.push(e);
 			}
 			if (
@@ -308,6 +349,15 @@ export function EventsProvider({
 		toggleTheme,
 		starred,
 		toggleStar,
+		saveEvent,
+		unsaveEvent,
+		hidden,
+		hiddenCount,
+		hideEvent,
+		unhideEvent,
+		clearHidden,
+		hideLowScore,
+		setHideLowScore,
 		activeCat,
 		setActiveCat,
 		dateRange,

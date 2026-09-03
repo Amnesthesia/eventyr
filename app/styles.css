@@ -286,7 +286,13 @@ header {
 	align-items: center;
 	gap: 0.4rem;
 	flex-wrap: wrap;
-	flex-shrink: 0;
+	/* Must be allowed to shrink. With flex-shrink: 0 its basis is the
+	   max-content width of search + city links + two buttons (~490px), which
+	   is wider than a phone, so the page itself became horizontally
+	   scrollable and every downward scroll drifted sideways. Shrinking lets
+	   the row wrap inside the viewport instead. */
+	min-width: 0;
+	max-width: 100%;
 }
 
 /* ── Theme toggle button ── */
@@ -740,7 +746,13 @@ article.card.has-image > * {
 	border: 1px solid var(--border);
 	color: var(--muted);
 	white-space: nowrap;
-	flex-shrink: 0;
+	/* Can shrink and clip: one source publishes its ticket URL as the cost,
+	   and unclipped that pushed the calendar/share/save buttons out of the
+	   card entirely. */
+	min-width: 0;
+	max-width: 12rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .card-cost.free {
@@ -1267,6 +1279,14 @@ summary:hover .card-desc-toggle {
 	}
 	.filter-bar--cats .filters--date { order: 1; }
 	.filter-bar--cats .filters--cat  { order: 2; }
+
+	/* Same treatment for the group-by row now that it shares the line with
+	   the score/swipe tools: side by side they clipped "By Category". */
+	.filter-bar--group {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.4rem;
+	}
 }
 
 /* ── Long-press action sheet (mobile) ──
@@ -1587,4 +1607,191 @@ summary:hover .card-desc-toggle {
 .site-footer small {
 	font-size: 0.72rem;
 	color: var(--muted);
+}
+
+/* ── Saved section head: label left, export right ── */
+.section-head {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.section-head .filter-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin-bottom: 0.6rem;
+}
+
+.filters--tools .filter-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+}
+
+/* ── Swipe mode ──
+   One card at a time over the whole viewport. Right saves, left hides; the
+   card follows the finger and tilts, and a pair of stamps fade in as the drag
+   approaches the commit distance so the outcome is legible before letting go. */
+.swipe-backdrop {
+	position: fixed;
+	inset: 0;
+	/* Above the date popover's 1000, level with the action sheet. */
+	z-index: 2000;
+	display: flex;
+	flex-direction: column;
+	background: var(--bg);
+	padding: max(12px, env(safe-area-inset-top, 0)) 12px
+		max(12px, env(safe-area-inset-bottom, 0));
+}
+
+.swipe-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.6rem;
+	padding-bottom: 0.6rem;
+	border-bottom: 1px solid var(--border);
+}
+
+.swipe-progress,
+.swipe-hint {
+	font-family: var(--mono);
+	font-size: 0.68rem;
+	color: var(--muted);
+	white-space: nowrap;
+}
+
+.swipe-hint {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.swipe-stage {
+	flex: 1;
+	min-height: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem 0;
+	/* Vertical pans stay native (the card scrolls); horizontal ones are ours. */
+	touch-action: pan-y;
+	user-select: none;
+	-webkit-user-select: none;
+	overflow: hidden;
+}
+
+.swipe-card {
+	position: relative;
+	width: 100%;
+	max-width: 480px;
+	max-height: 100%;
+	overflow-y: auto;
+	cursor: grab;
+	will-change: transform;
+	transition: transform 0.2s ease-out;
+}
+
+.swipe-card:active {
+	cursor: grabbing;
+}
+
+/* The card draws its own accent; in the deck it is the only thing on screen,
+   so a full border makes the draggable object read as one object. */
+.swipe-card article.card {
+	margin: 0;
+	box-shadow: none;
+	border-top: 2px solid var(--cat);
+}
+
+.swipe-stamp {
+	position: absolute;
+	top: 3rem;
+	z-index: 3;
+	padding: 0.2rem 0.5rem;
+	border: 2px solid currentColor;
+	font-family: var(--mono);
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	background: var(--surface);
+	pointer-events: none;
+}
+
+.swipe-stamp--save {
+	right: 1rem;
+	color: var(--hue-teal);
+	transform: rotate(8deg);
+}
+
+.swipe-stamp--skip {
+	left: 1rem;
+	color: var(--hue-rose);
+	transform: rotate(-8deg);
+}
+
+.swipe-actions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid var(--border);
+}
+
+.swipe-actions button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	margin: 0;
+	padding: 0;
+	border: 1px solid var(--border);
+	border-radius: 50%;
+	background: var(--surface);
+	color: var(--fg);
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.swipe-actions button:hover:not(:disabled) {
+	border-color: var(--fg);
+}
+
+.swipe-actions button:disabled {
+	opacity: 0.35;
+	cursor: default;
+}
+
+.swipe-done {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.75rem;
+	color: var(--muted);
+	text-align: center;
+}
+
+.swipe-done p {
+	margin: 0;
+}
+
+.swipe-done .filter-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.swipe-card {
+		transition: none;
+	}
+}
+
+/* The floating coffee widget sits exactly where the save button lands. */
+body:has(.swipe-backdrop) #bmc-wbtn {
+	display: none !important;
 }
