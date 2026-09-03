@@ -96,8 +96,12 @@ function itemDescription(event: Record<string, unknown>): string {
 
 function buildFeed(payload: Payload): string {
 	const slug = KEY_TO_SLUG[payload.city_key] ?? payload.city_key;
-	const cityUrl = `${SITE_URL}/${slug}`;
-	const feedUrl = `${cityUrl}/feed.xml`;
+	// Trailing slash so the channel link is the 200 rather than a redirect.
+	// guidFor below deliberately keeps its slash-less shape: it is an opaque
+	// identity with isPermaLink="false", and changing it re-notifies every
+	// subscriber on every event.
+	const cityUrl = `${SITE_URL}/${slug}/`;
+	const feedUrl = `${SITE_URL}/${slug}/feed.xml`;
 	const built = new Date().toUTCString();
 
 	const items = payload.events.map((event) => {

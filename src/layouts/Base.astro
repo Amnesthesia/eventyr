@@ -51,7 +51,14 @@ const {
 } = Astro.props;
 const BASE_URL = "https://www.dothings.lol";
 
-const cityUrl = canonical ?? (categorySlug ? `${BASE_URL}/${slug}/${categorySlug}` : `${BASE_URL}/${slug}`);
+// Trailing slashes: the slash-less form 301s on GitHub Pages, and a canonical
+// that points at a redirect is a canonical Google has to resolve rather than
+// trust.
+const cityUrl =
+	canonical ??
+	(categorySlug
+		? `${BASE_URL}/${slug}/${categorySlug}/`
+		: `${BASE_URL}/${slug}/`);
 const cityName = cityData.city.split(",")[0];
 /** Per-city RSS, so a reader (and a crawler) can discover the feed from any
  * page of that city rather than only by guessing the URL. */
@@ -168,14 +175,14 @@ const breadcrumbs = {
 	"@type": "BreadcrumbList",
 	itemListElement: [
 		{ "@type": "ListItem", position: 1, name: "do things", item: `${BASE_URL}/` },
-		{ "@type": "ListItem", position: 2, name: cityName, item: `${BASE_URL}/${slug}` },
+		{ "@type": "ListItem", position: 2, name: cityName, item: `${BASE_URL}/${slug}/` },
 		...(categoryLabel && categorySlug
 			? [
 					{
 						"@type": "ListItem",
 						position: 3,
 						name: catShortName(categoryLabel),
-						item: `${BASE_URL}/${slug}/${categorySlug}`,
+						item: `${BASE_URL}/${slug}/${categorySlug}/`,
 					},
 				]
 			: []),
