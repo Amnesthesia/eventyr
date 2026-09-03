@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
+	byScoreThenSoonest,
 	costLabel,
 	eventHash,
 	eventPath,
@@ -297,4 +298,48 @@ test("only a real ISO code is treated as a currency", () => {
 	assert.equal(isCurrencyCode("AU"), false);
 	// So a word that happens to sit before a number survives.
 	assert.equal(normaliseCurrency("ONLINE 25", "AUD"), "ONLINE 25");
+});
+
+test("events order by score, then soonest first", () => {
+	// The tiebreak was missing: four places sorted on score alone, and because
+	// Array#sort is stable that left same-score events in whatever order dedupe
+	// produced — a run of 8s could open with something ten days out while
+	// tonight's sat below it.
+	const events = [
+		{ score: 8, datetime_iso: "2026-09-13T19:00:00", title: "late 8" },
+		{ score: 9, datetime_iso: "2026-09-12T19:00:00", title: "late 9" },
+		{ score: 8, datetime_iso: "2026-09-04T10:00:00", title: "soon 8" },
+		{ score: 9, datetime_iso: "2026-09-03T10:00:00", title: "soon 9" },
+	];
+	assert.deepEqual(
+		[...events].sort(byScoreThenSoonest).map((e) => e.title),
+		["soon 9", "late 9", "soon 8", "late 8"],
+	);
+});
+
+test("an undated event sinks to the bottom of its own score", () => {
+	// Not treated as the epoch, which would float it to the top of its score.
+	const events = [
+		{ score: 8, datetime_iso: "" },
+		{ score: 8, datetime_iso: "2026-09-10T19:00:00" },
+		{ score: 9, datetime_iso: "" },
+	];
+	assert.deepEqual(
+		[...events].sort(byScoreThenSoonest).map((e) => e.datetime_iso),
+		["", "2026-09-10T19:00:00", ""],
+	);
+	// …and still below every dated event that shares its score.
+	const sorted = [...events].sort(byScoreThenSoonest);
+	assert.equal(sorted[0].score, 9);
+	assert.equal(sorted[1].datetime_iso, "2026-09-10T19:00:00");
+});
+
+test("a missing or non-numeric score sorts last, not first", () => {
+	const events = [
+		{ datetime_iso: "2026-09-03T10:00:00" },
+		{ score: 5, datetime_iso: "2026-09-09T10:00:00" },
+		{ score: "8" as unknown, datetime_iso: "2026-09-04T10:00:00" },
+	];
+	const sorted = [...events].sort(byScoreThenSoonest);
+	assert.equal(sorted[0].score, 5);
 });

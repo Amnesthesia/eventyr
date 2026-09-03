@@ -116,6 +116,41 @@ export function eventSlug(cityKey: string, event: IdentifiableEvent): string {
 	return title ? `${title}-${hash}` : hash;
 }
 
+/** The two fields the site's ordering depends on. */
+export interface SortableEvent {
+	score?: unknown;
+	datetime_iso?: unknown;
+}
+
+/**
+ * The canonical order: best fit first, and within one score the soonest event
+ * first.
+ *
+ * The date half was missing. Four separate places sorted on score alone, and
+ * because Array#sort is stable that left same-score events in whatever order
+ * dedupe happened to produce — so a run of 8s could open with something ten
+ * days out while tonight's sat below it. Undated events sink to the bottom of
+ * their score rather than sorting as if they were the epoch.
+ *
+ * Lives here so rank.ts (which writes the order into data/{city}.json) and the
+ * three Astro pages that re-sort cannot disagree about it.
+ */
+export function byScoreThenSoonest(a: SortableEvent, b: SortableEvent): number {
+	const score =
+		(typeof b.score === "number" ? b.score : 0) -
+		(typeof a.score === "number" ? a.score : 0);
+	if (score !== 0) return score;
+	const left =
+		typeof a.datetime_iso === "string" && a.datetime_iso
+			? a.datetime_iso
+			: "9999";
+	const right =
+		typeof b.datetime_iso === "string" && b.datetime_iso
+			? b.datetime_iso
+			: "9999";
+	return left.localeCompare(right);
+}
+
 /**
  * Cost values that carry no information: they neither name a price nor say the
  * event is free, so a pill showing one is a pill worth removing.
@@ -124,7 +159,7 @@ export function eventSlug(cityKey: string, event: IdentifiableEvent): string {
  * when a page gave no price at all — and the rest add another ~60.
  */
 const UNINFORMATIVE_COST =
-	/^(?:see (?:link|website|site)|check (?:website|site|ticket price|prices?)|tba|tbc|unknown|not specified|price on application|poa|varies|various|buy tickets?|tickets?|ticketed|book(?: now)?|register|n\/?a|—|-|\?+)$/i;
+	/^(?:see (?:link|website|site)|check (?:website|site|ticket price|prices?)|tba|tbc|unknown|not specified|paid|price on application|poa|varies|various|buy tickets?|tickets?|ticketed|book(?: now)?|register|n\/?a|—|-|\?+)$/i;
 
 /** Free, however the source spelled it — including a zero price with a
  * currency code or symbol in front, which 11 events had as "USD 0". */

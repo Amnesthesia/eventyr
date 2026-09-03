@@ -4,6 +4,7 @@ import { join } from "node:path";
 import Base from "../layouts/Base.astro";
 import EventApp from "@react/EventApp";
 import type { CityData, CityIndex } from "@react/types";
+import { byScoreThenSoonest } from "../shared.ts";
 
 const index: CityIndex = JSON.parse(
 	readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
@@ -11,7 +12,7 @@ const index: CityIndex = JSON.parse(
 const cityData: CityData = JSON.parse(
 	readFileSync(join(process.cwd(), "data/brisbane.json"), "utf-8"),
 );
-cityData.events.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+cityData.events.sort(byScoreThenSoonest);
 ---
 
 <Base cityData={cityData} slug="brisbane" canonical="https://www.dothings.lol/">

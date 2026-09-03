@@ -6,6 +6,7 @@ import EventApp from "@react/EventApp";
 import type { CityData, CityIndex } from "@react/types";
 import { SLUG_TO_KEY } from "@react/utils/citySlug";
 import { catToSlug } from "@react/utils/categorySlug";
+import { byScoreThenSoonest } from "../../shared.ts";
 
 export function getStaticPaths() {
 	const index: CityIndex = JSON.parse(
@@ -34,7 +35,7 @@ export function getStaticPaths() {
 				...cityData,
 				events: cityData.events
 					.filter((e) => e.category === catLabel)
-					.sort((a, b) => (b.score ?? 0) - (a.score ?? 0)),
+					.sort(byScoreThenSoonest),
 			};
 
 			paths.push({
