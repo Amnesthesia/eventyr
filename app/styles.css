@@ -1814,3 +1814,16 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	text-align: center;
 	color: var(--fg);
 }
+
+/* Category and vibe rows inside swipe mode: same controls as the page's
+   filter bar, stacked, each scrolling sideways on its own. */
+.swipe-filters {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	padding-top: 0.6rem;
+}
+
+.swipe-filters .filters {
+	flex-shrink: 0;
+}

@@ -1,17 +1,20 @@
 // Tinder-style pass over the current list: right saves, left hides.
 //
-// The deck is a snapshot taken when the mode opens. Committing a swipe changes
-// the saved/hidden sets, which changes `filtered`, and a deck that re-derived
-// from it would reshuffle under the finger. Undo is the same snapshot walked
-// backwards, reversing whatever the swipe did.
+// The deck is derived live from `filtered` minus saved events, so the category
+// and vibe filters shown at the top narrow it in place. Committing a swipe
+// saves or hides the event, which removes it from the deck, and the next one
+// is simply the new front. Undo reverses the write and pins the undone event
+// to the front until the next swipe — it would otherwise reappear at its
+// sorted position, possibly hundreds of cards deep.
 import { Bookmark, RotateCcw, X } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { eventId, useEventsContext } from "../context";
 import type { Event } from "../types";
 import { todayIso } from "../utils/dates";
 import { dateLabel } from "../utils/grouping";
 import EventCard from "./EventCard";
 import ExportSaved from "./ExportSaved";
+import VibeFilter from "./filters/VibeFilter";
 
 /** Drag past this many pixels and letting go commits the swipe. */
 const COMMIT_PX = 90;
@@ -28,6 +31,7 @@ interface Props {
 
 export default function SwipeMode({ onClose }: Props) {
 	const {
+		cityData,
 		filtered,
 		starred,
 		saveEvent,
@@ -35,20 +39,32 @@ export default function SwipeMode({ onClose }: Props) {
 		hideEvent,
 		unhideEvent,
 		isEventPast,
+		activeCat,
+		setActiveCat,
 	} = useEventsContext();
-	const [deck] = useState<Event[]>(() =>
-		filtered.filter((e) => !starred.has(eventId(e))),
+	const deck = useMemo(
+		() => filtered.filter((e) => !starred.has(eventId(e))),
+		[filtered, starred],
 	);
-	const [index, setIndex] = useState(0);
-	// history[i] is the verdict given to deck[i]; its length is always index.
-	const [history, setHistory] = useState<Verdict[]>([]);
+	// Every category in the city, not the ones left in `filtered`: once one is
+	// picked the filtered list holds only that one, and the row must still
+	// offer the way back out.
+	const categories = useMemo(
+		() => [...new Set(cityData.events.map((e) => e.category))].sort(),
+		[cityData],
+	);
+	const [history, setHistory] = useState<{ event: Event; verdict: Verdict }[]>(
+		[],
+	);
+	const [restored, setRestored] = useState<Event | null>(null);
 	const [dx, setDx] = useState(0);
 	const [dragging, setDragging] = useState(false);
 	const [leaving, setLeaving] = useState<Verdict | null>(null);
 	const origin = useRef<number | null>(null);
 	const moved = useRef(false);
 
-	const current: Event | undefined = deck[index];
+	const current: Event | undefined =
+		restored && deck.includes(restored) ? restored : deck[0];
 
 	// Whether it is on tonight or next month usually decides the swipe, and
 	// the card's own date line is small and mid-card. So the day gets a banner
@@ -71,21 +87,21 @@ export default function SwipeMode({ onClose }: Props) {
 			const id = eventId(current);
 			if (verdict === "save") saveEvent(id);
 			else hideEvent(id);
-			setHistory((h) => [...h, verdict]);
-			setIndex((i) => i + 1);
+			setHistory((h) => [...h, { event: current, verdict }]);
+			setRestored(null);
 			setDx(0);
 			setLeaving(null);
 		}, FLY_MS);
 	}
 
 	function undo() {
-		if (index === 0 || leaving) return;
-		const verdict = history[index - 1];
-		const id = eventId(deck[index - 1]);
-		if (verdict === "save") unsaveEvent(id);
+		const last = history[history.length - 1];
+		if (!last || leaving) return;
+		const id = eventId(last.event);
+		if (last.verdict === "save") unsaveEvent(id);
 		else unhideEvent(id);
 		setHistory((h) => h.slice(0, -1));
-		setIndex((i) => i - 1);
+		setRestored(last.event);
 		setDx(0);
 	}
 
@@ -128,7 +144,8 @@ export default function SwipeMode({ onClose }: Props) {
 	const tx = leaving
 		? (leaving === "save" ? 1 : -1) * window.innerWidth * 1.2
 		: dx;
-	const saved = history.filter((v) => v === "save").length;
+	const saved = history.filter((h) => h.verdict === "save").length;
+	const total = history.length + deck.length;
 
 	return (
 		<div
@@ -139,7 +156,7 @@ export default function SwipeMode({ onClose }: Props) {
 		>
 			<div className="swipe-top">
 				<span className="swipe-progress">
-					{Math.min(index + 1, deck.length)} / {deck.length}
+					{Math.min(history.length + 1, total)} / {total}
 				</span>
 				<span className="swipe-hint">swipe right to save, left to skip</span>
 				<button
@@ -150,6 +167,31 @@ export default function SwipeMode({ onClose }: Props) {
 				>
 					<X size={12} strokeWidth={2} />
 				</button>
+			</div>
+
+			<div className="swipe-filters">
+				<span className="filters">
+					<button
+						type="button"
+						className={`filter-btn${activeCat === "All" ? " active" : ""}`}
+						onClick={() => setActiveCat("All")}
+						aria-pressed={activeCat === "All"}
+					>
+						All Categories
+					</button>
+					{categories.map((cat) => (
+						<button
+							type="button"
+							key={cat}
+							className={`filter-btn${activeCat === cat ? " active" : ""}`}
+							onClick={() => setActiveCat(cat)}
+							aria-pressed={activeCat === cat}
+						>
+							{cat}
+						</button>
+					))}
+				</span>
+				<VibeFilter />
 			</div>
 
 			{when && (
@@ -231,7 +273,7 @@ export default function SwipeMode({ onClose }: Props) {
 				<button
 					type="button"
 					onClick={undo}
-					disabled={index === 0}
+					disabled={history.length === 0}
 					aria-label="Undo last swipe"
 				>
 					<RotateCcw size={16} strokeWidth={2} />
