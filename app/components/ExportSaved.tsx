@@ -15,7 +15,6 @@ interface Props {
 export default function ExportSaved({ compact }: Props) {
 	const { cityData, cityKey, starred } = useEventsContext();
 	const saved = cityData.events.filter((e) => starred.has(eventId(e)));
-	if (saved.length === 0) return null;
 
 	function download() {
 		const ics = buildIcs(saved, cityKey, {
@@ -26,12 +25,15 @@ export default function ExportSaved({ compact }: Props) {
 	}
 
 	const title = `${saved.length} saved. Download them as a calendar file`;
+	// The compact form always shows, so the count is visible while it grows;
+	// nothing to export just disables it.
 	if (compact) {
 		return (
 			<button
 				type="button"
 				className="theme-btn saved-count"
 				onClick={download}
+				disabled={saved.length === 0}
 				title={title}
 				aria-label={title}
 			>
