@@ -594,15 +594,13 @@ article.card.event-past {
 	opacity: 0.45;
 }
 
-/* Category accent: inset top rule. The left edge is top-pick's channel, so
-   the two never compete for the same edge and a top pick shows both. */
+/* Category accent: one inset rule, on the top edge.
+   A top pick used to add a second rule on the left, which read as two
+   unrelated bars competing on the same card. The ✦ before the title already
+   says "top pick", so the card carries a single colour rule and nothing
+   fights it. */
 article.card {
 	box-shadow: inset 0 2px 0 var(--cat);
-}
-
-/* Top-pick accent: inset left rule */
-article.card.top-pick {
-	box-shadow: inset 3px 0 0 var(--fg), inset 0 2px 0 var(--cat);
 }
 
 /* ── Card background image ── */
@@ -762,10 +760,15 @@ article.card.has-image > * {
 	text-underline-offset: 2px;
 }
 
+/* Takes the category hue, matching the card's own accent rule, so it reads as
+   part of the deliberate colour system rather than as a stray glyph in the
+   title. Deliberately NOT a seventh colour: the page commits to six hues
+   shared by categories and vibes, and one more would start making the accents
+   noise instead of an overview. */
 .top-mark {
-	color: var(--fg);
+	color: var(--cat);
 	margin-right: 0.15rem;
-	font-style: normal;
+	cursor: help;
 }
 
 /* ── Card meta ── */
@@ -1206,6 +1209,15 @@ summary:hover .card-desc-toggle {
 @media (max-width: 600px) {
 	.card-grid {
 		grid-template-columns: 1fr;
+	}
+
+	/* One card per row, so the accent moves to the left edge. Stacked
+	   full-width cards read as a vertical list, and a rule down the side of
+	   each one scans as you thumb past; a rule on top of each just looks like
+	   a divider between them. Same breakpoint as the single-column switch
+	   above, so the two can never disagree. */
+	article.card {
+		box-shadow: inset 3px 0 0 var(--cat);
 	}
 }
 

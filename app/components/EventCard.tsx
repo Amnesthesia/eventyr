@@ -103,7 +103,19 @@ export default function EventCard({
 				</div>
 			</div>
 			<h3 className="card-title">
-				{isTopPick && <em className="top-mark">✦</em>}
+				{isTopPick && (
+					// role="img" + aria-label rather than a bare glyph: to a screen
+					// reader "✦" is noise, and this is the card's only remaining
+					// top-pick marker now that the left rule is gone.
+					<span
+						className="top-mark"
+						role="img"
+						aria-label="Top pick"
+						title="Top pick"
+					>
+						✦
+					</span>
+				)}
 				{event.link ? (
 					<a href={event.link} target="_blank" rel="noopener">
 						{title}
