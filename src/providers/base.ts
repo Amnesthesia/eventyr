@@ -15,12 +15,6 @@ export interface SearchResult {
 	events: Record<string, unknown>[];
 }
 
-export interface SourceResult {
-	aggregators: string[];
-	institutions: string[];
-	independents: string[];
-}
-
 export type CurateFunction = (
 	rawText: string,
 	cityName: string,
@@ -67,7 +61,7 @@ export const OUTPUT_FORMAT_RULES =
 	"Z?'). If there's a more complete or exhaustive version of the answer, just do it and include " +
 	"it directly instead of asking permission — always take the most thorough option yourself.";
 
-export function sourceNames(sources: string[]): string {
+function sourceNames(sources: string[]): string {
 	return sources
 		.map((s) => s.split("(")[0].trim().replace(/—\s*$/, "").trim())
 		.join(", ");
@@ -91,9 +85,40 @@ export function splitIntoBatches(text: string, maxChars = 6000): string[] {
 	return batches.length ? batches : [text];
 }
 
+/**
+ * Parses a JSON array out of an LLM response, tolerating the two things these
+ * responses actually do wrong: wrapping the array in prose/code fences, and
+ * getting cut off mid-array by the output token cap. On truncation it retries
+ * at the last complete object rather than losing the whole batch — a clipped
+ * final event should cost one event, not all of them.
+ */
+export function parseJsonArray<T>(raw: string, label?: string): T[] {
+	const cleaned = raw.replace(/```json|```/g, "").trim();
+	const start = cleaned.indexOf("[");
+	if (start === -1) return [];
+	let jsonStr = cleaned.slice(start);
+	const end = jsonStr.lastIndexOf("]");
+	if (end !== -1) jsonStr = jsonStr.slice(0, end + 1);
+	try {
+		return JSON.parse(jsonStr) as T[];
+	} catch {
+		const lastComplete = jsonStr.lastIndexOf("},");
+		if (lastComplete !== -1) {
+			try {
+				return JSON.parse(`${jsonStr.slice(0, lastComplete + 1)}]`) as T[];
+			} catch {
+				// fall through to the shared failure log
+			}
+		}
+		if (label) console.log(`  ✗ [${label}] Could not parse JSON response`);
+		return [];
+	}
+}
+
 export function chunkArray<T>(items: T[], size: number): T[][] {
 	const chunks: T[][] = [];
-	for (let i = 0; i < items.length; i += size) chunks.push(items.slice(i, i + size));
+	for (let i = 0; i < items.length; i += size)
+		chunks.push(items.slice(i, i + size));
 	return chunks;
 }
 
@@ -101,7 +126,6 @@ export abstract class BaseProvider {
 	abstract readonly name: string;
 	abstract readonly tiers: readonly string[];
 	abstract searchEvents(opts: ProviderOptions): Promise<SearchResult>;
-	abstract findSources(cityName: string): Promise<SourceResult>;
 
 	async collect(
 		city: string,
@@ -271,44 +295,6 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 		}
 	}
 
-	protected buildSearchSystem(opts: ProviderOptions): string {
-		const { cityCfg, tier, weekStart, weekEnd } = opts;
-		const cityName = cityCfg.name;
-		const sources = llmSourceStrings(cityCfg, tier, opts.city);
-		const tierInstruction = TIER_INSTRUCTIONS[tier] ?? "";
-		const sourceList = sources.map((s) => `  - ${s}`).join("\n");
-		const today = new Date();
-
-		return `You are an events researcher for ${cityName}. Today is ${today.toLocaleDateString("en-AU", { weekday: "long", day: "numeric", month: "long", year: "numeric" })}.
-Your job is to find in-person events happening THIS WEEK in ${cityName}:
-${fmtDate(weekStart)} to ${fmtDate(weekEnd)}.
-
-The person receiving this digest has the following interests:
-${INTERESTS}
-
-Sources to search (${tier.toUpperCase()}):
-${tierInstruction}
-
-${sourceList}
-
-For each event you find, note:
-  - Event name
-  - Date and time
-  - Venue / location (suburb)
-  - Ticket link or event page URL
-  - Cost (free or price)
-  - Category: one of ${JSON.stringify(CATEGORIES)}
-  - Source website
-  - Brief description of what the event is
-
-Rules:
-  - Only include events within ${fmtDate(weekStart)} – ${fmtDate(weekEnd)}.
-  - Apply the SKIP rules above — do not list sports, MLM, or sales-pitch events.
-  - Aim for at least 15 events.
-  - Include the direct URL for every event you list.
-`;
-	}
-
 	protected buildSearchUser(opts: ProviderOptions): string {
 		const { cityCfg, weekStart, weekEnd } = opts;
 		const coverageNote =
@@ -434,49 +420,6 @@ Rules:
 		return this.buildOpenUser(opts);
 	}
 
-	protected buildFindSourcesSystem(cityName: string): string {
-		return (
-			`You are helping set up an automated weekly events digest for ${cityName}. ` +
-			"Find the best websites for local in-person events and sort them into three tiers: " +
-			"AGGREGATORS (Eventbrite/Meetup-type platforms that index many events), " +
-			"INSTITUTIONS (universities, libraries, museums, galleries, theatres — each with unique programmes), " +
-			"INDEPENDENTS (small venues, bookshops, makerspaces, community groups rarely listed by aggregators). " +
-			'Return ONLY a JSON object: {"aggregators": [...], "institutions": [...], "independents": [...]}. ' +
-			'Each entry format: "Source Name (domain.com)". No markdown, no explanation.'
-		);
-	}
-
-	protected buildFindSourcesUser(cityName: string): string {
-		return (
-			`Find the best event discovery sources in ${cityName}. ` +
-			"Search for current, active websites. " +
-			"Return JSON with aggregators, institutions, and independents arrays."
-		);
-	}
-
-	protected parseSourcesJson(raw: string, label: string): SourceResult {
-		const cleaned = raw.replace(/```json|```/g, "").trim();
-		const match = cleaned.match(/\{[\s\S]*\}/);
-		if (!match) {
-			throw new Error(
-				`[${label}] No JSON in source discovery response. Raw: ${cleaned.slice(0, 300)}`,
-			);
-		}
-		const parsed = JSON.parse(match[0]);
-		for (const tier of [
-			"aggregators",
-			"institutions",
-			"independents",
-		] as const) {
-			console.log(`[${label}] Found ${(parsed[tier] ?? []).length} ${tier}`);
-		}
-		return {
-			aggregators: parsed.aggregators ?? [],
-			institutions: parsed.institutions ?? [],
-			independents: parsed.independents ?? [],
-		};
-	}
-
 	protected validateRaw(raw: string, label: string): void {
 		if (/\bNO_EVENTS_FOUND\b/.test(raw)) {
 			throw new Error(`[${label}] Provider found no events`);
@@ -485,4 +428,37 @@ Rules:
 			throw new Error(`[${label}] Response too short (${raw.length} chars)`);
 		}
 	}
+}
+
+/**
+ * Runs `worker` over every item with at most `limit` in flight, preserving
+ * input order in the result.
+ *
+ * Every LLM-backed pass in this pipeline wants the same shape: batch the work,
+ * run the batches together rather than one at a time, but don't fan out
+ * without a ceiling. A bare `Promise.all` over batches did the first two and
+ * not the third — dedupe's pair classifier could open ~67 simultaneous Gemini
+ * calls, which is how you collect 429s and pay for the retries. Serial loops
+ * are the opposite failure: the probe's URL discovery took 28 minutes for work
+ * that is entirely independent.
+ */
+export async function mapWithConcurrency<T, R>(
+	items: T[],
+	limit: number,
+	worker: (item: T, index: number) => Promise<R>,
+): Promise<R[]> {
+	const results = new Array<R>(items.length);
+	let next = 0;
+	const runners = Array.from(
+		{ length: Math.max(1, Math.min(limit, items.length)) },
+		async () => {
+			while (true) {
+				const i = next++;
+				if (i >= items.length) return;
+				results[i] = await worker(items[i], i);
+			}
+		},
+	);
+	await Promise.all(runners);
+	return results;
 }

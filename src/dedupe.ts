@@ -31,7 +31,11 @@
 //   usually wins on facts anyway, and completeness generalises to
 //   provider-vs-provider duplicates too.
 
-import { diceSimilarity, fingerprintEvent, isDuplicateEvent } from "./common.ts";
+import {
+	diceSimilarity,
+	fingerprintEvent,
+	isDuplicateEvent,
+} from "./common.ts";
 
 /** Above this, common.ts already treats the titles as the same event. */
 const AUTO_MATCH = 0.85;
@@ -39,9 +43,16 @@ const AUTO_MATCH = 0.85;
 const MAYBE_MIN = 0.45;
 /** Pairs per LLM call. */
 export const PAIR_BATCH_SIZE = 30;
-/** Guard against a pathological single-day bucket (a festival dumping
- * hundreds of same-day sessions) turning stage 2 into an O(n²) token bill. */
-const MAX_PAIRS = 400;
+/**
+ * Guard against a pathological single-day bucket (a festival dumping hundreds
+ * of same-day sessions) turning stage 2 into an O(n²) token bill.
+ *
+ * Sized from a real run: one city-week of 400 events produced 449 ambiguous
+ * pairs, so the original 400 was already truncating live data. At ~30 pairs
+ * per call this ceiling is ~66 small calls — still bounded, and the cap now
+ * warns when it bites rather than silently dropping comparisons.
+ */
+const MAX_PAIRS = 2000;
 
 export interface CandidatePair {
 	a: Record<string, unknown>;
@@ -52,6 +63,38 @@ export interface CandidatePair {
  * Injectable so tests never touch the network — same pattern as PageExtractFn
  * and Fetcher in src/adapters/types.ts. */
 export type PairClassifyFn = (pairs: CandidatePair[]) => Promise<boolean[]>;
+
+/**
+ * Whether two records plausibly name the same place. Unknown on either side
+ * counts as agreement — the AI-search path often has only a suburb, and
+ * refusing to merge on a missing field would leave obvious duplicates.
+ */
+function venuesAgree(
+	a: Record<string, unknown>,
+	b: Record<string, unknown>,
+): boolean {
+	const norm = (e: Record<string, unknown>): string =>
+		typeof e.location === "string"
+			? e.location
+					.toLowerCase()
+					.replace(/[^a-z0-9 ]/g, " ")
+					.replace(/\s+/g, " ")
+					.trim()
+			: "";
+	const la = norm(a);
+	const lb = norm(b);
+	if (!la || !lb) return true;
+	if (la === lb) return true;
+	// One is usually a longer form of the other ("The Triffid" vs "The
+	// Triffid, Newstead").
+	const first = (v: string): string => v.split(" ").slice(0, 2).join(" ");
+	return (
+		la.includes(lb) ||
+		lb.includes(la) ||
+		diceSimilarity(la, lb) > 0.6 ||
+		first(la) === first(lb)
+	);
+}
 
 function dateKey(event: Record<string, unknown>): string {
 	return fingerprintEvent(event).date;
@@ -146,7 +189,15 @@ export function planDedupe(events: Record<string, unknown>[]): {
 
 				if (sameDay) {
 					if (isDuplicateEvent(fpA, fpB)) {
-						settled.push(i < j ? [i, j] : [j, i]);
+						// Titles match, but a matching title at two different
+						// venues is two different events ("Trivia Night" at
+						// Netherworld and at the Junk Bar). isDuplicateEvent
+						// never sees the venue, so ask rather than assume.
+						if (venuesAgree(events[i], events[j])) {
+							settled.push(i < j ? [i, j] : [j, i]);
+						} else {
+							candidates.push(i < j ? [i, j] : [j, i]);
+						}
 					} else if (sim >= MAYBE_MIN && sim < AUTO_MATCH) {
 						candidates.push(i < j ? [i, j] : [j, i]);
 					}

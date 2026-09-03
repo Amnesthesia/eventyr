@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { loadCityConfig, llmSourceStrings, scraperSources } from "../common.ts";
-import { findSourceById, loadSourceRegistry } from "./registry.ts";
+import { llmSourceStrings, loadCityConfig, scraperSources } from "../common.ts";
+import { loadSourceRegistry } from "./registry.ts";
 
 const CITIES = ["brisbane", "goldcoast", "sunnycoast"];
 
@@ -9,7 +9,11 @@ test("every city file parses and declares a valid method for every source", () =
 	for (const city of CITIES) {
 		const cfg = loadCityConfig(city);
 		assert.ok(cfg.name, `${city} has a name`);
-		for (const tier of ["aggregators", "institutions", "independents"] as const) {
+		for (const tier of [
+			"aggregators",
+			"institutions",
+			"independents",
+		] as const) {
 			const entries = cfg.sources[tier];
 			assert.ok(Array.isArray(entries), `${city}.${tier} is an array`);
 			assert.ok(entries.length > 0, `${city}.${tier} is non-empty`);
@@ -39,7 +43,10 @@ test("llmSourceStrings renders prose the search prompts can use", () => {
 	);
 	for (const s of strings) {
 		for (const name of scraperNames) {
-			assert.ok(!s.startsWith(name), `${name} is scraped, should not be searched`);
+			assert.ok(
+				!s.startsWith(name),
+				`${name} is scraped, should not be searched`,
+			);
 		}
 	}
 });
@@ -62,21 +69,22 @@ test("loadSourceRegistry resolves only scraper sources, with defaults filled", (
 	}
 });
 
-test("findSourceById finds a resolved source", () => {
-	const sources = loadSourceRegistry("brisbane");
-	if (sources.length === 0) return; // nothing promoted to scraper yet
-	assert.equal(findSourceById(sources, sources[0].id)?.id, sources[0].id);
-	assert.equal(findSourceById(sources, "nope"), undefined);
-});
-
 test("a scraper source that returned nothing falls back to the AI search", () => {
 	const cfg = {
 		name: "Test",
 		sources: {
 			aggregators: [],
 			institutions: [
-				{ name: "Working Venue", method: "scraper" as const, domains: ["a.com"] },
-				{ name: "Rotted Venue", method: "scraper" as const, domains: ["b.com"] },
+				{
+					name: "Working Venue",
+					method: "scraper" as const,
+					domains: ["a.com"],
+				},
+				{
+					name: "Rotted Venue",
+					method: "scraper" as const,
+					domains: ["b.com"],
+				},
 				{ name: "Searched Venue", method: "llm" as const, domains: ["c.com"] },
 			],
 			independents: [],

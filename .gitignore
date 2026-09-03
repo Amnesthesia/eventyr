@@ -15,3 +15,11 @@ dist/
 data/_raw/
 data/_cache/
 data/_probe/
+
+# Generated into public/ by ical.ts / pages.ts / rss.ts — never at the repo root
+/*.ics
+/sitemap.xml
+
+# Rejected scrape candidates, kept for diagnosing a bad yield
+data/*/adapters/rejected/
+

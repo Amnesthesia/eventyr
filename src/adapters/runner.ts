@@ -20,7 +20,11 @@ export async function runAdapter(
 		const listings = await adapter.discover();
 		listingsFetched = listings.length;
 		for (const listing of listings) {
-			if (listing.notModified) continue;
+			// A 304 is NOT a reason to skip: fetch.ts returns the cached body's
+			// path with it, and pageAdapter reads that. Skipping here meant a
+			// listing page that legitimately had not changed produced zero
+			// events and the source was reported barren — Big Fork Theatre's
+			// ticket page extracts 36 events from the very body being skipped.
 			try {
 				candidates.push(...(await adapter.extract(listing)));
 			} catch (err) {
@@ -40,15 +44,5 @@ export async function runAdapter(
 			errors,
 		},
 		candidates,
-	};
-}
-
-export async function runAdapters(
-	adapters: EventSourceAdapter[],
-): Promise<{ results: SourceRunResult[]; candidates: CandidateEvent[] }> {
-	const outcomes = await Promise.all(adapters.map(runAdapter));
-	return {
-		results: outcomes.map((o) => o.result),
-		candidates: outcomes.flatMap((o) => o.candidates),
 	};
 }

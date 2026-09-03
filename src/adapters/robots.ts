@@ -1,85 +1,26 @@
-// Minimal robots.txt parser — enough to honour Disallow/Allow rules for our
-// user-agent (falling back to "*") before the shared fetch layer requests a
-// URL. Not a full spec implementation (no crawl-delay, no wildcard/`$`
-// pattern matching beyond prefix match), which is standard for the small
-// set of rules real-world sites actually publish.
+// robots.txt for the shared fetch layer. Thin wrapper over robots-parser,
+// which implements RFC 9309 properly.
+//
+// This replaced a ~100-line hand-rolled parser whose own header admitted it
+// did prefix matching only: a site publishing "Disallow: /*/events" read as
+// allowing everything, and "Disallow: /private$" matched every path under
+// /private. This is the scraper's trust boundary, so "close enough" was the
+// wrong trade — and the library also handles group merging, precedence by
+// specificity, and crawl-delay, all of which the local version approximated
+// or ignored.
 
-interface RobotsRuleSet {
-	allow: string[];
-	disallow: string[];
-}
+import robotsParserImport from "robots-parser";
+
+// robots-parser is CJS (`module.exports = fn`) but ships a .d.ts declaring an
+// ESM default export, so under NodeNext TypeScript types the import as a
+// namespace rather than the callable it actually is at runtime.
+const robotsParser = robotsParserImport as unknown as (
+	url: string,
+	body: string,
+) => { isAllowed(url: string, ua?: string): boolean | undefined };
 
 export interface RobotsPolicy {
 	isAllowed(path: string): boolean;
-}
-
-function parseRobotsTxt(body: string, userAgent: string): RobotsRuleSet {
-	const groups = new Map<string, RobotsRuleSet>();
-	let currentAgents: string[] = [];
-
-	for (const rawLine of body.split("\n")) {
-		const line = rawLine.split("#")[0]?.trim() ?? "";
-		if (!line) continue;
-		const sepIdx = line.indexOf(":");
-		if (sepIdx === -1) continue;
-		const field = line.slice(0, sepIdx).trim().toLowerCase();
-		const value = line.slice(sepIdx + 1).trim();
-
-		if (field === "user-agent") {
-			// A new User-agent line after any rule line starts a fresh group.
-			const prevHadRules = currentAgents.some(
-				(a) =>
-					(groups.get(a)?.allow.length ?? 0) +
-						(groups.get(a)?.disallow.length ?? 0) >
-					0,
-			);
-			if (prevHadRules || currentAgents.length === 0) currentAgents = [];
-			currentAgents.push(value.toLowerCase());
-			for (const agent of currentAgents) {
-				if (!groups.has(agent)) groups.set(agent, { allow: [], disallow: [] });
-			}
-		} else if (field === "allow" && value) {
-			for (const agent of currentAgents) groups.get(agent)?.allow.push(value);
-		} else if (field === "disallow" && value) {
-			for (const agent of currentAgents)
-				groups.get(agent)?.disallow.push(value);
-		}
-	}
-
-	// Group selection is by substring against our UA. That UA is now a
-	// browser string (see fetch.ts on why), so no site-specific bot group can
-	// match it and we always land on "*" — the conservative choice, and the
-	// group a browser-identified client should be judged by. Empty group names
-	// are skipped: "".includes("") is true and would otherwise win over "*".
-	const ua = userAgent.toLowerCase();
-	for (const [agent, rules] of groups) {
-		if (agent && agent !== "*" && ua.includes(agent)) return rules;
-	}
-	return groups.get("*") ?? { allow: [], disallow: [] };
-}
-
-export function evaluateRobots(body: string, userAgent: string): RobotsPolicy {
-	const rules = parseRobotsTxt(body, userAgent);
-	return {
-		isAllowed(path: string): boolean {
-			// Longest matching rule wins, per the de-facto robots.txt convention.
-			let bestLen = -1;
-			let allowed = true;
-			for (const rule of rules.disallow) {
-				if (path.startsWith(rule) && rule.length > bestLen) {
-					bestLen = rule.length;
-					allowed = false;
-				}
-			}
-			for (const rule of rules.allow) {
-				if (path.startsWith(rule) && rule.length > bestLen) {
-					bestLen = rule.length;
-					allowed = true;
-				}
-			}
-			return allowed;
-		},
-	};
 }
 
 const ALLOW_ALL: RobotsPolicy = { isAllowed: () => true };
@@ -89,13 +30,22 @@ export async function fetchRobotsPolicy(
 	userAgent: string,
 	fetchImpl: typeof fetch = fetch,
 ): Promise<RobotsPolicy> {
+	const robotsUrl = `${origin}/robots.txt`;
 	try {
-		const res = await fetchImpl(`${origin}/robots.txt`, {
+		const res = await fetchImpl(robotsUrl, {
 			headers: { "User-Agent": userAgent },
 		});
 		if (!res.ok) return ALLOW_ALL;
-		const body = await res.text();
-		return evaluateRobots(body, userAgent);
+		const robots = robotsParser(robotsUrl, await res.text());
+		return {
+			isAllowed(path: string): boolean {
+				// robots-parser wants absolute URLs and returns undefined when no
+				// rule matches at all, which means allowed.
+				return (
+					robots.isAllowed(new URL(path, origin).href, userAgent) !== false
+				);
+			},
+		};
 	} catch {
 		// robots.txt unreachable — don't let that block fetching the site.
 		return ALLOW_ALL;

@@ -27,6 +27,7 @@ export default function CategoryFilter() {
 				<a
 					key={cat}
 					className={`filter-btn${activeCat === cat ? " active" : ""}`}
+					data-cat={catToSlug(cat)}
 					onClick={() => setActiveCat(cat)}
 					href={`/${KEY_TO_SLUG[cityKey]}/${catToSlug(cat)}`}
 				>

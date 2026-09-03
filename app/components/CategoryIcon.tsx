@@ -21,7 +21,7 @@ const ICON_RULES: Array<[RegExp, ComponentType<LucideProps>]> = [
 	[/mask|theatre|performance/i, VenetianMask],
 ];
 
-export function getIcon(name: string): ComponentType<LucideProps> {
+function getIcon(name: string): ComponentType<LucideProps> {
 	for (const [pattern, icon] of ICON_RULES) {
 		if (pattern.test(name)) return icon;
 	}

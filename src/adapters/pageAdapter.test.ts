@@ -30,13 +30,9 @@ const SOURCE: SourceDefinition = {
 		name: "Test Venue",
 		address: null,
 		suburb: null,
-		lat: null,
-		lng: null,
-		aliases: [],
 	},
 	strategy: "html",
 	sourceTier: "independents",
-	schedule: "weekly",
 	note: "test fixture",
 };
 
@@ -108,10 +104,7 @@ test("JSON-LD present: extracts deterministically and never calls the LLM extrac
 	assert.equal(events[0].provenance.strategy, "jsonld");
 	// dates.ts normalises an explicit-offset ISO string via Date#toISOString
 	// (UTC/"Z" form) — same behaviour asserted in dates.test.ts.
-	assert.equal(
-		events[0].startISO,
-		new Date("2026-06-14T19:00:00+10:00").toISOString(),
-	);
+	assert.equal(events[0].startISO, "2026-06-14T19:00:00+10:00");
 });
 
 test("no JSON-LD: falls back to the injected LLM extractor over reduced page text", async () => {
@@ -157,18 +150,26 @@ test("no JSON-LD: falls back to the injected LLM extractor over reduced page tex
 	assert.equal(events[0].startISO, "2026-06-14T00:00:00+10:00");
 });
 
-test("a not-modified (304) listing is skipped without touching the extractor", async () => {
-	let called = false;
+test("a not-modified (304) listing is parsed from its cached body", async () => {
+	// A 304 still carries the path to the cached body. Skipping it wrote an
+	// empty payload over the source's output every time a listing page
+	// legitimately hadn't changed, which read as "this venue has nothing on".
+	const path = writeFixture(
+		"cached.html",
+		`<html><body><script type="application/ld+json">${JSON.stringify({
+			"@type": "Event",
+			name: "Cached Gig",
+			startDate: "2026-06-14T19:00:00+10:00",
+		})}</script></body></html>`,
+	);
 	const adapter = createPageAdapter(SOURCE, {
 		fetcher: fetcherReturning([]),
-		extractPage: async () => {
-			called = true;
-			return [];
-		},
+		extractPage: async () => [],
+		now: () => REF,
 	});
-	const events = await adapter.extract(makeListing("/does/not/matter", true));
-	assert.deepEqual(events, []);
-	assert.equal(called, false);
+	const events = await adapter.extract(makeListing(path, true));
+	assert.equal(events.length, 1);
+	assert.equal(events[0].title, "Cached Gig");
 });
 
 test("a listing with no persisted body (hard fetch failure) yields no candidates", async () => {

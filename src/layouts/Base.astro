@@ -12,18 +12,48 @@ interface Props {
 	categorySlug?: string;
 	categoryLabel?: string;
 	cityCategories?: string[];
+	/**
+	 * Overrides for a page that is about one thing rather than about a city.
+	 * An event page has to set these: the share preview a recipient sees in
+	 * WhatsApp or Slack is built entirely from og:title/og:description, so
+	 * inheriting the city's copy would defeat the point of having the page.
+	 */
+	title?: string;
+	description?: string;
+	ogType?: string;
+	schema?: unknown;
+	/** Absolute URL of a preview image for this page specifically. An event
+	 * page passes its own image where the source gave one: an unfurl showing
+	 * the actual event beats the site's generic card. */
+	ogImage?: string;
 }
 
-const { cityData, slug, canonical, categorySlug, categoryLabel, cityCategories } = Astro.props;
+const {
+	cityData,
+	slug,
+	canonical,
+	categorySlug,
+	categoryLabel,
+	cityCategories,
+	title: titleOverride,
+	description: descriptionOverride,
+	ogType = "website",
+	schema: schemaOverride,
+	ogImage,
+} = Astro.props;
 const BASE_URL = "https://www.dothings.lol";
 
 const cityUrl = canonical ?? (categorySlug ? `${BASE_URL}/${slug}/${categorySlug}` : `${BASE_URL}/${slug}`);
 
-const ogTitle = categoryLabel
+const ogTitle = titleOverride
+	? `${titleOverride} — dothings.lol`
+	: categoryLabel
 	? `${catShortName(categoryLabel)} events in ${cityData.city} this week — dothings.lol`
 	: `Things to do in ${cityData.city} this week — dothings.lol`;
 
-const desc = categoryLabel
+const desc = descriptionOverride
+	? descriptionOverride
+	: categoryLabel
 	? `${cityData.events.length} ${catShortName(categoryLabel).toLowerCase()} events in ${cityData.city} this week. AI-curated and ranked from local sources.`
 	: `${cityData.events.length} curated events in ${cityData.city} this week — workshops, live music, talks, markets, art and more. AI-curated from dozens of local sources.`;
 
@@ -82,13 +112,13 @@ const websiteSchema = {
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={cityUrl} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={desc} />
     <meta property="og:url" content={cityUrl} />
     <meta
       property="og:image"
-      content={`${BASE_URL}/dothings-preview-dark.png`}
+      content={ogImage ?? `${BASE_URL}/dothings-preview-dark.png`}
     />
     <meta property="og:locale" content="en_AU" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -96,12 +126,12 @@ const websiteSchema = {
     <meta name="twitter:description" content={desc} />
     <meta
       name="twitter:image"
-      content={`${BASE_URL}/dothings-preview.jpg`}
+      content={ogImage ?? `${BASE_URL}/dothings-preview.jpg`}
     />
     <meta name="theme-color" content="#1a1a2e" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/favicon.ico" />
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaOverride ?? schema)} />
     <script
       type="application/ld+json"
       set:html={JSON.stringify(websiteSchema)}

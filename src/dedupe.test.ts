@@ -44,7 +44,11 @@ test("unrelated same-day events are never compared by the LLM", () => {
 		ev({ title: "Ceramics Workshop for Beginners" }),
 	]);
 	assert.equal(settled.length, 0);
-	assert.equal(candidates.length, 0, "low similarity is below the ask threshold");
+	assert.equal(
+		candidates.length,
+		0,
+		"low similarity is below the ask threshold",
+	);
 });
 
 test("only the grey zone is escalated", () => {
@@ -138,4 +142,28 @@ test("a cross-day pair is found regardless of array order", () => {
 	const earlier = ev({ datetime_iso: "2026-09-09T23:30:00" });
 	assert.equal(planDedupe([earlier, later]).candidates.length, 1);
 	assert.equal(planDedupe([later, earlier]).candidates.length, 1);
+});
+
+test("a matching title at two different venues is asked about, not merged", () => {
+	// The classifier prompt names this case explicitly, but stage 1 used to
+	// settle it first — so the rule was unreachable and every venue whose
+	// event title prefixed another's lost its event.
+	const { settled, candidates } = planDedupe([
+		ev({ title: "Trivia Night", location: "Netherworld, Fortitude Valley" }),
+		ev({
+			title: "Trivia Night at Junk Bar",
+			location: "The Junk Bar, Ashgrove",
+		}),
+	]);
+	assert.equal(settled.length, 0);
+	assert.equal(candidates.length, 1);
+});
+
+test("the same venue written two ways still merges without asking", () => {
+	const { settled, candidates } = planDedupe([
+		ev({ title: "Jazz Night", location: "The Triffid" }),
+		ev({ title: "Jazz Night", location: "The Triffid, Newstead" }),
+	]);
+	assert.equal(settled.length, 1);
+	assert.equal(candidates.length, 0);
 });

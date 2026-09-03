@@ -32,11 +32,14 @@ const KEY = {
 	// datePublished wins (pick() takes the first matching key) and the event
 	// is dated to when the page was edited.
 	metaDate: /(modified|published|created|updated|crawled|indexed|expires?)/i,
-	start: /^(start|begin|from|date|datetime|when|event_?date|first_?date|run_?date_?start|show_?date)/i,
-	description: /^(description|summary|excerpt|body|teaser|subtitle|blurb|synopsis)$/i,
+	start:
+		/^(start|begin|from|date|datetime|when|event_?date|first_?date|run_?date_?start|show_?date)/i,
+	description:
+		/^(description|summary|excerpt|body|teaser|subtitle|blurb|synopsis)$/i,
 	url: /^(url|link|permalink|href|path|slug|uri|detail_?url)$/i,
 	image: /^(image|image_?url|thumbnail|featured_?image|img|hero|poster)/i,
-	venue: /^(venue|location|place|venue_?name|venue_?summary|where|space|room)$/i,
+	venue:
+		/^(venue|location|place|venue_?name|venue_?summary|where|space|room)$/i,
 	price: /^(price|cost|ticket_?price|price_?range|admission|fee)$/i,
 	category: /^(category|categories|type|event_?type|genre|tags?|codename)$/i,
 	id: /^(id|nid|uuid|event_?id|post_?id|external_?id)$/i,
@@ -57,8 +60,7 @@ export function extractEmbeddedJson(html: string): unknown[] {
 	};
 
 	// <script id="__NEXT_DATA__"> and any generic application/json blob.
-	const scriptRe =
-		/<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
+	const scriptRe = /<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
 	let m: RegExpExecArray | null = scriptRe.exec(html);
 	while (m !== null) {
 		const attrs = m[1] ?? "";
@@ -182,7 +184,15 @@ function asText(v: unknown, depth = 0): string | null {
 	}
 	if (v && typeof v === "object") {
 		const o = v as Record<string, unknown>;
-		for (const k of ["name", "title", "value", "url", "src", "label", "rendered"]) {
+		for (const k of [
+			"name",
+			"title",
+			"value",
+			"url",
+			"src",
+			"label",
+			"rendered",
+		]) {
 			const s = asText(o[k], depth + 1);
 			if (s) return s;
 		}
@@ -265,7 +275,7 @@ function resolveUrl(value: unknown, baseUrl: string): string | null {
 
 /** Maps one event-shaped JSON object into the shared pre-date-parsing shape.
  * Values are copied, never computed — dates.ts still resolves the dates. */
-export function jsonObjectToRawFields(
+function jsonObjectToRawFields(
 	obj: Record<string, unknown>,
 	baseUrl: string,
 ): RawCandidateFields {

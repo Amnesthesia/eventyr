@@ -11,6 +11,12 @@
 
 name: Gold Coast
 timezone: Australia/Brisbane
+# See sources/brisbane.yml for what this is. 35 km from Southport reaches
+# Coolangatta (21 km) and Tweed Heads (23 km) while excluding Brisbane (67 km).
+centre:
+  lat: -28.0167
+  lng: 153.4000
+  radiusKm: 35
 sources:
   aggregators:
     - name: What's On Gold Coast
@@ -208,6 +214,456 @@ sources:
       method: llm
       domains:
         - librarywebinars.com
+    - name: Gold Coast Youth Orchestra
+      method: llm
+      domains:
+        - gcyo.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Philharmonic Orchestra
+      method: llm
+      domains:
+        - goldcoastphilharmonic.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Historical Museum
+      method: llm
+      domains:
+        - gcmuseum.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Hinterland Heritage Museum
+      method: llm
+      domains:
+        - gchheritagemuseum.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Friends of the Gold Coast Regional Botanic Gardens
+      method: llm
+      domains:
+        - friendsgcrbg.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: TAFE Queensland Gold Coast
+      method: llm
+      domains:
+        - tafeqld.edu.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Yugambeh Museum
+      method: llm
+      domains:
+        - yugambeh.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Anthea Polson Art
+      method: llm
+      domains:
+        - antheapolsonart.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gallery One
+      method: llm
+      domains:
+        - gallery-one.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Royal Queensland Art Society Gold Coast Gallery
+      method: llm
+      domains:
+        - rqasgoldcoast.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Surf World Gold Coast
+      method: llm
+      domains:
+        - surfworldgoldcoast.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Motor Museum
+      method: llm
+      domains:
+        - gcmm.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: ArtVo Gold Coast
+      method: llm
+      domains:
+        - artvogoldcoast.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Dirty Hands Pottery Studio
+      method: llm
+      domains:
+        - dirtyhands.art
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: David Hart Galleries
+      method: llm
+      domains:
+        - davidhart.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Potters Association
+      method: llm
+      domains:
+        - goldcoastpotters.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Gold Coast Art School
+      method: llm
+      domains:
+        - artschool.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Stone Studio
+      method: llm
+      domains:
+        - stonestudio.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Surfers International Art Gallery
+      method: llm
+      domains:
+        - surfersintgallery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: POT Studios
+      method: llm
+      domains:
+        - potstudios.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Firebird Studios
+      method: llm
+      domains:
+        - firebirdstudios.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Clay & Sip Gold Coast
+      method: llm
+      domains:
+        - clayandsip.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Wax Museum
+      method: llm
+      domains:
+        - waxmuseum.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Boomerang Art
+      method: llm
+      domains:
+        - boomerangart.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Currumbin RSL
+      method: llm
+      domains:
+        - currumbinrsl.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Southport Surf Life Saving Club
+      method: llm
+      domains:
+        - sslsc.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: BMD Northcliffe Surf Club
+      method: llm
+      domains:
+        - bmdnorthcliffe.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Nobbys Beach Surf Club
+      method: llm
+      domains:
+        - nobbyssurfclub.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mermaid Beach Surf Life Saving Club
+      method: llm
+      domains:
+        - mermaidslsc.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Palm Beach Surf Life Saving Club
+      method: llm
+      domains:
+        - palmbeachsurfclub.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Kirra Beach Surf Club
+      method: llm
+      domains:
+        - kirrabeachsurfclub.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Surfers Paradise Surf Lifesaving Club
+      method: llm
+      domains:
+        - surfersparadiseslsc.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Club Mermaid
+      method: llm
+      domains:
+        - clubmermaid.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Paradise Point Bowls Club
+      method: llm
+      domains:
+        - paradisepointbowls.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Club Broadbeach
+      method: llm
+      domains:
+        - clubbroadbeach.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Club Musgrave
+      method: llm
+      domains:
+        - clubmusgrave.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tallebudgera Surf Club
+      method: llm
+      domains:
+        - tallesurfclub.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Coolangatta Surf Life Saving Club
+      method: llm
+      domains:
+        - coolangattasurfclub.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Burleigh Sports Club
+      method: llm
+      domains:
+        - burleighsports.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Burleigh Leagues Club
+      method: llm
+      domains:
+        - burleighleagues.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Club Mudgeeraba
+      method: llm
+      domains:
+        - clubmudgeeraba.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Bowls and Community Club
+      method: llm
+      domains:
+        - gclawnbowls.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Nerang Community Bowls Club
+      method: llm
+      domains:
+        - nerangbowls.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Wallaby Hotel
+      method: llm
+      domains:
+        - wallabyhotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Pimpama Tavern
+      method: llm
+      domains:
+        - pimpamatavern.net.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Nerang RSL & Memorial Club
+      method: llm
+      domains:
+        - nerangrsl.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Helensvale Tavern
+      method: llm
+      domains:
+        - helensvaletavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Hinterland Hotel
+      method: llm
+      domains:
+        - hinterlandhotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Pimpama Pavilion
+      method: llm
+      domains:
+        - pimpamapavilion.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Oxenford Tavern
+      method: llm
+      domains:
+        - oxenfordtavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Parkwood Tavern
+      method: llm
+      domains:
+        - parkwoodtavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Arundel Tavern
+      method: llm
+      domains:
+        - arundeltavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Central Park Tavern
+      method: llm
+      domains:
+        - centralparktavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Ashmore Tavern
+      method: llm
+      domains:
+        - ashmoretavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Highland Park Tavern
+      method: llm
+      domains:
+        - thetavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Chamber Orchestra
+      method: llm
+      domains:
+        - gcco.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: National Academy of Performing Arts
+      method: llm
+      domains:
+        - napa.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Harmony in Paradise
+      method: llm
+      domains:
+        - harmonyinparadise.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Blenders Chorus
+      method: llm
+      domains:
+        - theblenders.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mixed Vocal Project
+      method: llm
+      domains:
+        - mixedvocalproject.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Coastal Charisma
+      method: llm
+      domains:
+        - coastalcharisma.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Vocalescence
+      method: llm
+      domains:
+        - vocalescence.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Cornerstone Chorus
+      method: llm
+      domains:
+        - cornerstonechorus.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Serotonin A Cappella
+      method: llm
+      domains:
+        - serotoninacappella.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Vocal Waves
+      method: llm
+      domains:
+        - vocalwaves.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Voice Weavers
+      method: llm
+      domains:
+        - voiceweavers.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tweed Theatre Company
+      method: llm
+      domains:
+        - tweedtheatre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tamborine Mountain Little Theatre
+      method: llm
+      domains:
+        - tmlittletheatre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Elements Theatre Co
+      method: llm
+      domains:
+        - elementstheatreco.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Goat Track Theatre
+      method: llm
+      domains:
+        - goattracktheatre.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: White Rabbit Theatre
+      method: llm
+      domains:
+        - whiterabbittheatre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Youth Theatre Academy
+      method: llm
+      domains:
+        - gcyta.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: GC Dance
+      method: llm
+      domains:
+        - gcdance.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Dance Force
+      method: llm
+      domains:
+        - danceforceoz.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Friends of Opera inc.
+      method: llm
+      domains:
+        - friendsofoperainc.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Farm
+      method: llm
+      domains:
+        - thefarm.company
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tamborine Mountain Regional Botanic Gardens
+      method: llm
+      domains:
+        - tmbotanicgardens.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Astronomy
+      method: llm
+      domains:
+        - goldcoastastronomy.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Springbrook Research Observatory
+      method: llm
+      domains:
+        - springbrookobservatory.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Family History Society
+      method: llm
+      domains:
+        - goldcoastfhs.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gecko Environment Council
+      method: llm
+      domains:
+        - gecko.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Watergum
+      method: llm
+      domains:
+        - watergum.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tweed Heads Historical Society
+      method: llm
+      domains:
+        - tweedhistory.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Beaudesert Historical Museum
+      method: llm
+      domains:
+        - beaudesertmuseum.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Templin Historical Museum
+      method: llm
+      domains:
+        - templinhistoricalmuseum.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Friends of Federation Walk
+      method: llm
+      domains:
+        - federationwalk.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tamborine Mountain Landcare
+      method: llm
+      domains:
+        - tamborinemtnlandcare.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tamborine Mountain Heritage Centre
+      method: llm
+      domains:
+        - tmheritagecentre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tamborine Mountain Garden Club
+      method: llm
+      domains:
+        - tamborinemountaingardenclub.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Rathdowney Information Centre and Historical Museum
+      method: llm
+      domains:
+        - rathdowney.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
   independents:
     - name: Miami Marketta
       method: llm
@@ -427,3 +883,333 @@ sources:
       method: llm
       domains:
         - goldcoast.qld.gov.au
+    - name: Gold Coast Little Theatre
+      method: llm
+      domains:
+        - gclt.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tugun Theatre Company
+      method: llm
+      domains:
+        - tuguntheatre.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Spotlight Theatre
+      method: llm
+      domains:
+        - spotlighttheatre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Javeenbah Theatre Company
+      method: llm
+      domains:
+        - javeenbah.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast City Choir
+      method: llm
+      domains:
+        - goldcoastcitychoir.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Writers' Association
+      method: llm
+      domains:
+        - goldcoastwriters.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Eisteddfod
+      method: llm
+      domains:
+        - goldcoasteisteddfod.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Cooly Rocks On
+      method: llm
+      domains:
+        - coolyrockson.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Groundwater Country Music Festival
+      method: llm
+      domains:
+        - groundwatercmf.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Southport Sharks
+      method: llm
+      domains:
+        - southportsharks.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: SOPO Southport RSL
+      method: llm
+      domains:
+        - sopo.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Club Helensvale
+      method: llm
+      domains:
+        - clubhelensvale.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Southport Bowls Club
+      method: llm
+      domains:
+        - theclubsouthport.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Southport Yacht Club
+      method: llm
+      domains:
+        - southportyachtclub.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Kurrawa Surf Club
+      method: llm
+      domains:
+        - kurrawasurf.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Currumbin Beach Vikings Surf Club
+      method: llm
+      domains:
+        - currumbinslsc.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Burleigh Heads Mowbray Park Surf Life Saving Club
+      method: llm
+      domains:
+        - burleighslsc.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Precinct Brewing Co
+      method: llm
+      domains:
+        - precinctbrewing.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Lost Palms Brewing
+      method: llm
+      domains:
+        - lostpalms.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Madocke Beer Brewing Company
+      method: llm
+      domains:
+        - madocke.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Granddad Jack's Craft Distillery
+      method: llm
+      domains:
+        - granddadjacks.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Balter Brewing Company
+      method: llm
+      domains:
+        - balter.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mr P.P.'s Deli & Rooftop
+      method: llm
+      domains:
+        - mrpp.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Island Gold Coast
+      method: llm
+      domains:
+        - theislandgoldcoast.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Burleigh Brewing Company
+      method: llm
+      domains:
+        - burleighbrewing.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Twin Towns Clubs & Resorts
+      method: llm
+      domains:
+        - twintowns.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Seagulls Rugby League Football Club
+      method: llm
+      domains:
+        - seagulls.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Backbone Youth Arts
+      method: llm
+      domains:
+        - backboneyoutharts.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Pacific Fair Shopping Centre
+      method: llm
+      domains:
+        - pacificfair.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Australia Fair Shopping Centre
+      method: llm
+      domains:
+        - australiafair.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Robina Town Centre
+      method: llm
+      domains:
+        - robinatowncentre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Dracula's Cabaret
+      method: llm
+      domains:
+        - draculas.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Based Comedy
+      method: llm
+      domains:
+        - basedcomedy.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: GC Laughs Festival
+      method: llm
+      domains:
+        - gclaughs.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Blah Blah Blah Improv
+      method: llm
+      domains:
+        - blahblahblahimprov.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Bare Comedy
+      method: llm
+      domains:
+        - barecomedy.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Candy Comedy
+      method: llm
+      domains:
+        - candycomedy.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Hairy Mary's Bar
+      method: llm
+      domains:
+        - hairymarys.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sass and Soul Dance
+      method: llm
+      domains:
+        - sassandsouldance.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Comedy Commune
+      method: llm
+      domains:
+        - comedycommune.store
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gold Coast Tavern
+      method: llm
+      domains:
+        - goldcoasttavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mano's Bar & Grill
+      method: llm
+      domains:
+        - manostedderave.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Burleigh Town Hotel
+      method: llm
+      domains:
+        - burleightownhotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: RQ's Tavern Robina
+      method: llm
+      domains:
+        - rqsrobina.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Finn McCool's Gold Coast
+      method: llm
+      domains:
+        - finnmccoolsgoldcoast.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Cecil Hotel, Southport
+      method: llm
+      domains:
+        - cecilhotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Anglers Arms Hotel, Southport
+      method: llm
+      domains:
+        - anglersarms.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Broadbeach Tavern
+      method: llm
+      domains:
+        - broadbeachtavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Loose Moose
+      method: llm
+      domains:
+        - theloosemoose.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Roosevelt Lounge
+      method: llm
+      domains:
+        - therooseveltlounge.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Varsity Lakes Tavern
+      method: llm
+      domains:
+        - varsitylakestavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Dog and Parrot Tavern
+      method: llm
+      domains:
+        - dogandparrot.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Runaway Bay Tavern
+      method: llm
+      domains:
+        - runawaybaytavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: House of Brews
+      method: llm
+      domains:
+        - houseofbrews.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Coolangatta Sands Hotel
+      method: llm
+      domains:
+        - coolangattasandshotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Broadbeach Surf Life Saving Club
+      method: llm
+      domains:
+        - broadbeachslsc.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: North Kirra Surf Club
+      method: llm
+      domains:
+        - northkirra.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: North Burleigh Surf Club
+      method: llm
+      domains:
+        - northburleighslsc.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Miami Surf Life Saving Club
+      method: llm
+      domains:
+        - miamibeachslsc.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Rainbow Bay Surf Club
+      method: llm
+      domains:
+        - rainbowbayslsc.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Burleigh Barrels Brewery
+      method: llm
+      domains:
+        - burleighbarrels.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Nobbys Arc
+      method: llm
+      domains:
+        - nobbysarc.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Justin Lane
+      method: llm
+      domains:
+        - justinlane.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Benowa Tavern
+      method: llm
+      domains:
+        - benowatavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mermaid Beach Tavern
+      method: llm
+      domains:
+        - mermaidbeachtavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Harrigan's Irish Pub Calypso Bay
+      method: llm
+      domains:
+        - harrigansdriftinn.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.

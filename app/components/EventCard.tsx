@@ -4,7 +4,23 @@ import { useEventsContext } from "../context";
 import type { Event } from "../types";
 import { catToSlug } from "../utils/categorySlug";
 import { KEY_TO_SLUG } from "../utils/citySlug";
+import { VIBE_LABELS, vibesOf } from "../utils/vibes";
+import AddToCalendar from "./AddToCalendar";
 import { CategoryIcon } from "./CategoryIcon";
+import ShareButton from "./ShareButton";
+
+/**
+ * Above this many characters, a description becomes expandable.
+ *
+ * A character count rather than a measurement, because measuring needs a
+ * laid-out DOM and this has to work in the static HTML. Tuned against the
+ * NARROWEST card the grid produces (360px minus 40px of padding, ~50
+ * characters per line at 0.8rem, five lines), so anything past it is genuinely
+ * clamped at every width. Erring low on purpose: an expander that reveals
+ * nothing on a wide card is a small annoyance, where text silently cut with no
+ * way to reach it is a defect.
+ */
+const DESC_CLAMP_CHARS = 240;
 
 interface Props {
 	event: Event;
@@ -21,7 +37,8 @@ export default function EventCard({
 	isStarred,
 	onStarClick,
 }: Props) {
-	const { activeTags, toggleTag, cityKey } = useEventsContext();
+	const { activeTags, toggleTag, cityKey, vibeFilters, setVibe } =
+		useEventsContext();
 	const citySlug = KEY_TO_SLUG[cityKey] ?? cityKey;
 	const catSlug = catToSlug(event.category);
 	const free = /free/.test((event.cost || "").toLowerCase());
@@ -45,8 +62,9 @@ export default function EventCard({
 		if (/ticketed/i.test(event.cost)) return "Ticketed";
 		return event.cost;
 	}, [event.cost, free]);
+
 	return (
-		<article className={classes} style={style}>
+		<article className={classes} style={style} data-cat={catSlug}>
 			<div className="card-top">
 				<a className="card-cat" href={`/${citySlug}/${catSlug}`}>
 					<CategoryIcon name={event.category} size={11} strokeWidth={2.2} />
@@ -57,6 +75,8 @@ export default function EventCard({
 					<span className={`card-cost${free ? " free" : ""}`}>
 						{free || /free/.test(cost || "") ? "free" : cost || "—"}
 					</span>
+					<AddToCalendar event={event} cityKey={cityKey} />
+					<ShareButton event={event} cityKey={cityKey} />
 					<button
 						type="button"
 						className={`star-btn${isStarred ? " starred" : ""}`}
@@ -66,7 +86,6 @@ export default function EventCard({
 						}}
 						aria-label={isStarred ? "Remove from saved" : "Save event"}
 						aria-pressed={isStarred}
-						style={{ position: "absolute", top: 0, right: 4 }}
 					>
 						{isStarred ? (
 							<BookmarkCheck size={18} strokeWidth={2} />
@@ -102,9 +121,59 @@ export default function EventCard({
 					)}
 				</span>
 			</div>
-			{event.description && <p className="card-desc">{event.description}</p>}
+			{event.description &&
+				(event.description.length > DESC_CLAMP_CHARS ? (
+					// <details> rather than a React toggle, so this works in the static
+					// HTML with no JavaScript and no layout measurement. The full text is
+					// always in the DOM — the clamp is purely visual — so nothing is
+					// hidden from a screen reader, which is why the toggle is aria-hidden.
+					<details className="card-desc-details">
+						<summary>
+							<span className="card-desc">{event.description}</span>
+							<span className="card-desc-toggle" aria-hidden="true" />
+						</summary>
+					</details>
+				) : (
+					<p className="card-desc card-desc--plain">{event.description}</p>
+				))}
 			<div className="card-bottom">
+				{event.score > 0 && (
+					// Outside .card-tags on purpose: that row scrolls horizontally, and
+					// the score must not be able to scroll out of view.
+					<span
+						className="card-score"
+						title={`Fit score ${event.score} of 10`}
+						style={
+							{
+								// Border strength only: 35% at a score of 1 through 100% at
+								// 10. The full range is usable because this drives a border
+								// rather than text — see the note on .card-score for why the
+								// number cannot take this ramp.
+								"--score-tint": `${Math.round(35 + ((event.score - 1) / 9) * 65)}%`,
+							} as React.CSSProperties
+						}
+					>
+						{event.score}
+					</span>
+				)}
 				<div className="card-tags">
+					{vibesOf(event).map((key) => (
+						<button
+							type="button"
+							key={key}
+							className={`tag tag-vibe${vibeFilters[key] === "yes" ? " active" : ""}`}
+							data-vibe={key}
+							// Toggles the vibe filter rather than the tag filter: these are
+							// booleans on the event, not free-text tags, and VibeFilter in
+							// the bar above is the control they belong to.
+							onClick={() =>
+								setVibe(key, vibeFilters[key] === "yes" ? "any" : "yes")
+							}
+							aria-pressed={vibeFilters[key] === "yes"}
+						>
+							{VIBE_LABELS[key]}
+						</button>
+					))}
 					{event.tags.slice(0, 5).map((tag) => (
 						<button
 							type="button"

@@ -13,6 +13,11 @@ on:
         required: false
         type: boolean
         default: false
+      providers:
+        description: "Comma-separated search providers to run"
+        required: false
+        type: string
+        default: "google,anthropic,perplexity"
 
 jobs:
   brisbane:
@@ -22,6 +27,7 @@ jobs:
     with:
       city: brisbane
       force: ${{ inputs.force || false }}
+      providers: ${{ inputs.providers || 'google,anthropic,perplexity' }}
     secrets: inherit
   goldcoast:
     needs: brisbane
@@ -31,6 +37,7 @@ jobs:
     with:
       city: goldcoast
       force: ${{ inputs.force || false }}
+      providers: ${{ inputs.providers || 'google,anthropic,perplexity' }}
     secrets: inherit
   sunnycoast:
     needs: goldcoast
@@ -40,4 +47,5 @@ jobs:
     with:
       city: sunnycoast
       force: ${{ inputs.force || false }}
+      providers: ${{ inputs.providers || 'google,anthropic,perplexity' }}
     secrets: inherit

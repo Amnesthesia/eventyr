@@ -10,11 +10,21 @@
 
 import { GoogleGenAI } from "@google/genai";
 import { CATEGORIES } from "../common.ts";
-import { chunkArray } from "../providers/base.ts";
+import {
+	chunkArray,
+	mapWithConcurrency,
+	parseJsonArray,
+} from "../providers/base.ts";
+import { geminiText } from "../providers/gemini.ts";
 import { isValidCategory } from "./normalise.ts";
 
 const ANNOTATE_MODEL = "gemini-3.1-flash-lite";
-const BATCH_SIZE = 25;
+// Annotation classifies each event independently — no cross-item
+// reasoning — so a bigger batch costs accuracy far less than extraction
+// would, and halves the calls.
+const BATCH_SIZE = 40;
+/** Concurrent annotate calls per source. */
+const MAX_CONCURRENT_CALLS = 6;
 
 export interface Annotation {
 	category: string;
@@ -48,35 +58,9 @@ For each event you are given, decide only:
 
 Return ONLY a compact JSON array, one object per input event, in the same order, each with an "i" field echoing the input index. No markdown, no code fences, no commentary.`;
 
-/** Same truncation-tolerant parse the extraction path uses — a long batch can
- * hit the output cap mid-array, and losing the whole batch to one clipped
- * object would silently drop real events. */
-function parseAnnotations(raw: string): Record<string, unknown>[] {
-	const cleaned = raw.replace(/```json|```/g, "").trim();
-	const start = cleaned.indexOf("[");
-	if (start === -1) return [];
-	let jsonStr = cleaned.slice(start);
-	const end = jsonStr.lastIndexOf("]");
-	if (end !== -1) jsonStr = jsonStr.slice(0, end + 1);
-	try {
-		return JSON.parse(jsonStr) as Record<string, unknown>[];
-	} catch {
-		const lastComplete = jsonStr.lastIndexOf("},");
-		if (lastComplete === -1) return [];
-		try {
-			return JSON.parse(`${jsonStr.slice(0, lastComplete + 1)}]`) as Record<
-				string,
-				unknown
-			>[];
-		} catch {
-			return [];
-		}
-	}
-}
-
 /** A missing/unparsable annotation must never lose the event — it falls back
  * to a usable, if unopinionated, classification. */
-export function defaultAnnotation(): Annotation {
+function defaultAnnotation(): Annotation {
 	return {
 		category: "Community / Other",
 		tags: [],
@@ -116,8 +100,10 @@ export function createGeminiAnnotator(apiKey: string): AnnotateFn {
 
 	return async function annotate(events, sourceName) {
 		const batches = chunkArray(events, BATCH_SIZE);
-		const results = await Promise.all(
-			batches.map(async (batch, batchIdx) => {
+		const results = await mapWithConcurrency(
+			batches,
+			MAX_CONCURRENT_CALLS,
+			async (batch, batchIdx) => {
 				const input = batch.map((e, i) => ({
 					i,
 					title: e.title,
@@ -126,16 +112,15 @@ export function createGeminiAnnotator(apiKey: string): AnnotateFn {
 					source: e.source,
 				}));
 				try {
-					const response = await ai.models.generateContent({
+					const text = await geminiText(ai, {
+						stage: "annotate",
 						model: ANNOTATE_MODEL,
 						contents: `Source: ${sourceName}\n\nEvents:\n${JSON.stringify(input)}`,
-						config: {
-							systemInstruction: SYSTEM_PROMPT,
-							maxOutputTokens: 8000,
-							temperature: 0.1,
-						},
+						systemInstruction: SYSTEM_PROMPT,
+						maxOutputTokens: 8000,
+						temperature: 0.1,
 					});
-					const parsed = parseAnnotations(response.text ?? "");
+					const parsed = parseJsonArray<Record<string, unknown>>(text);
 					const byIndex = new Map<number, Record<string, unknown>>();
 					for (const p of parsed) {
 						if (typeof p?.i === "number") byIndex.set(p.i, p);
@@ -147,7 +132,7 @@ export function createGeminiAnnotator(apiKey: string): AnnotateFn {
 					);
 					return batch.map(() => defaultAnnotation());
 				}
-			}),
+			},
 		);
 		return results.flat();
 	};
@@ -167,7 +152,6 @@ export function applyAnnotation(
 		intellectual: a.intellectual,
 		hands_on: a.hands_on,
 		creative: a.creative,
-		description:
-			(event.description as string) || (a.description ?? ""),
+		description: (event.description as string) || (a.description ?? ""),
 	};
 }

@@ -2,10 +2,22 @@
 // pure, network-free module that tests can drive with a stub.
 
 import { GoogleGenAI } from "@google/genai";
-import { chunkArray } from "./providers/base.ts";
-import { type CandidatePair, PAIR_BATCH_SIZE, type PairClassifyFn } from "./dedupe.ts";
+import {
+	type CandidatePair,
+	PAIR_BATCH_SIZE,
+	type PairClassifyFn,
+} from "./dedupe.ts";
+import {
+	chunkArray,
+	mapWithConcurrency,
+	parseJsonArray,
+} from "./providers/base.ts";
+import { geminiText } from "./providers/gemini.ts";
 
 const MODEL = "gemini-3.1-flash-lite";
+/** Concurrent classifier calls. Bounded because MAX_PAIRS allows ~67 batches,
+ * and an uncapped fan-out at that width just earns 429s. */
+const MAX_CONCURRENT_CALLS = 6;
 
 const SYSTEM_PROMPT = `You decide whether two event listings describe the SAME real-world event, gathered from different sources that word things differently.
 
@@ -19,28 +31,8 @@ For each numbered pair, output {"i": <index>, "same": true|false}. Return ONLY a
 
 function parseVerdicts(raw: string): Map<number, boolean> {
 	const out = new Map<number, boolean>();
-	const cleaned = raw.replace(/```json|```/g, "").trim();
-	const start = cleaned.indexOf("[");
-	if (start === -1) return out;
-	let jsonStr = cleaned.slice(start);
-	const end = jsonStr.lastIndexOf("]");
-	if (end !== -1) jsonStr = jsonStr.slice(0, end + 1);
-	let parsed: unknown;
-	try {
-		parsed = JSON.parse(jsonStr);
-	} catch {
-		const lastComplete = jsonStr.lastIndexOf("},");
-		if (lastComplete === -1) return out;
-		try {
-			parsed = JSON.parse(`${jsonStr.slice(0, lastComplete + 1)}]`);
-		} catch {
-			return out;
-		}
-	}
-	if (!Array.isArray(parsed)) return out;
-	for (const item of parsed) {
-		const rec = item as Record<string, unknown>;
-		if (typeof rec?.i === "number") out.set(rec.i, rec.same === true);
+	for (const item of parseJsonArray<Record<string, unknown>>(raw)) {
+		if (typeof item?.i === "number") out.set(item.i, item.same === true);
 	}
 	return out;
 }
@@ -59,24 +51,25 @@ export function createGeminiPairClassifier(apiKey: string): PairClassifyFn {
 
 	return async function classify(pairs: CandidatePair[]): Promise<boolean[]> {
 		const batches = chunkArray(pairs, PAIR_BATCH_SIZE);
-		const results = await Promise.all(
-			batches.map(async (batch, batchIdx) => {
+		const results = await mapWithConcurrency(
+			batches,
+			MAX_CONCURRENT_CALLS,
+			async (batch, batchIdx) => {
 				const input = batch.map((p, i) => ({
 					i,
 					a: summarise(p.a),
 					b: summarise(p.b),
 				}));
 				try {
-					const response = await ai.models.generateContent({
+					const text = await geminiText(ai, {
+						stage: "dedupe",
 						model: MODEL,
 						contents: JSON.stringify(input),
-						config: {
-							systemInstruction: SYSTEM_PROMPT,
-							maxOutputTokens: 4000,
-							temperature: 0,
-						},
+						systemInstruction: SYSTEM_PROMPT,
+						maxOutputTokens: 4000,
+						temperature: 0,
 					});
-					const verdicts = parseVerdicts(response.text ?? "");
+					const verdicts = parseVerdicts(text);
 					// Unanswered pair → false: keeping both is recoverable (a visible
 					// duplicate), wrongly merging is not (a lost event).
 					return batch.map((_, i) => verdicts.get(i) === true);
@@ -86,7 +79,7 @@ export function createGeminiPairClassifier(apiKey: string): PairClassifyFn {
 					);
 					return batch.map(() => false);
 				}
-			}),
+			},
 		);
 		return results.flat();
 	};

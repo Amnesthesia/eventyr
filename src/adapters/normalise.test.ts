@@ -4,8 +4,9 @@ import {
 	brisbaneNaive,
 	candidateToEvent,
 	humanDatetime,
+	isPast,
 	prepareCandidates,
-	withinWeek,
+	withinWindow,
 } from "./normalise.ts";
 import type { CandidateEvent, SourceDefinition } from "./types.ts";
 
@@ -51,13 +52,9 @@ const SOURCE: SourceDefinition = {
 		name: "Test Venue",
 		address: "1 Example St",
 		suburb: "South Brisbane",
-		lat: null,
-		lng: null,
-		aliases: [],
 	},
 	strategy: "html",
 	sourceTier: "institutions",
-	schedule: "weekly",
 };
 
 test("brisbaneNaive keeps wall-clock for an explicit +10:00 offset", () => {
@@ -107,14 +104,14 @@ test("humanDatetime formats from the resolved instant, not the raw page text", (
 	assert.equal(humanDatetime(null), "");
 });
 
-test("withinWeek keeps a multi-day event straddling the week boundary", () => {
+test("withinWindow keeps a multi-day event straddling the boundary", () => {
 	const mon = "2026-09-07";
 	const sun = "2026-09-13";
-	assert.equal(withinWeek("2026-09-09T19:00:00", null, mon, sun), true);
-	assert.equal(withinWeek("2026-08-20", "2026-09-30", mon, sun), true);
-	assert.equal(withinWeek("2026-10-05T19:00:00", null, mon, sun), false);
-	assert.equal(withinWeek("2026-09-01", "2026-09-02", mon, sun), false);
-	assert.equal(withinWeek(null, null, mon, sun), false);
+	assert.equal(withinWindow("2026-09-09T19:00:00", null, mon, sun), true);
+	assert.equal(withinWindow("2026-08-20", "2026-09-30", mon, sun), true);
+	assert.equal(withinWindow("2026-10-05T19:00:00", null, mon, sun), false);
+	assert.equal(withinWindow("2026-09-01", "2026-09-02", mon, sun), false);
+	assert.equal(withinWindow(null, null, mon, sun), false);
 });
 
 test("candidateToEvent composes location from candidate then registry venue", () => {
@@ -133,7 +130,10 @@ test("candidateToEvent composes location from candidate then registry venue", ()
 	// no duplication when the address is already inside the venue name
 	assert.equal(
 		candidateToEvent(
-			candidate({ venueName: "Brisbane Powerhouse, New Farm", address: "New Farm" }),
+			candidate({
+				venueName: "Brisbane Powerhouse, New Farm",
+				address: "New Farm",
+			}),
 			undefined,
 		).location,
 		"Brisbane Powerhouse, New Farm",
@@ -164,10 +164,13 @@ test("candidateToEvent drops a relative image URL", () => {
 });
 
 test("candidateToEvent falls back to the source homepage for a missing link", () => {
-	assert.equal(candidateToEvent(candidate(), SOURCE).link, "https://example.com");
+	assert.equal(
+		candidateToEvent(candidate(), SOURCE).link,
+		"https://example.com",
+	);
 });
 
-test("prepareCandidates drops untitled, undated and out-of-week candidates", () => {
+test("prepareCandidates drops untitled, undated, past and out-of-window candidates", () => {
 	const { prepared, stats } = prepareCandidates(
 		[
 			candidate({ title: "Keeper" }),
@@ -176,6 +179,8 @@ test("prepareCandidates drops untitled, undated and out-of-week candidates", () 
 			// any similarly-titled event on any date during the merge
 			candidate({ title: "Undated", startISO: null }),
 			candidate({ title: "Next month", startISO: "2026-10-20T19:00:00+10:00" }),
+			// already finished — the signal that a listing URL is an archive
+			candidate({ title: "Last month", startISO: "2026-08-02T19:00:00+10:00" }),
 		],
 		SOURCE,
 		"2026-09-07",
@@ -184,10 +189,50 @@ test("prepareCandidates drops untitled, undated and out-of-week candidates", () 
 	assert.equal(prepared.length, 1);
 	assert.equal(prepared[0].event.title, "Keeper");
 	assert.deepEqual(stats, {
-		total: 4,
+		total: 5,
 		noTitle: 1,
 		noDate: 1,
-		outsideWeek: 1,
+		past: 1,
+		later: 1,
 		kept: 1,
 	});
+});
+
+test("rejections are recorded with the raw date text that failed", () => {
+	// This is what makes a bad yield diagnosable from a file rather than by
+	// re-running the extraction.
+	const { rejected } = prepareCandidates(
+		[
+			candidate({
+				title: "Undated",
+				startISO: null,
+				startRaw: "every Tuesday",
+			}),
+			candidate({ title: "Old", startISO: "2026-08-02T19:00:00+10:00" }),
+		],
+		SOURCE,
+		"2026-09-07",
+		"2026-09-13",
+	);
+	assert.equal(rejected.length, 2);
+	assert.deepEqual(
+		rejected.map((r) => r.reason),
+		["no date", "past"],
+	);
+	assert.equal(rejected[0].startRaw, "every Tuesday");
+});
+
+test("the window excludes the past but includes next week", () => {
+	const from = "2026-09-09"; // a Wednesday run
+	const to = "2026-09-20"; // end of next week
+	// Monday's finished event must not come back just because it is "this week"
+	assert.equal(withinWindow("2026-09-07T19:00:00", null, from, to), false);
+	assert.equal(isPast("2026-09-07T19:00:00", null, from), true);
+	// next week is in
+	assert.equal(withinWindow("2026-09-17T19:00:00", null, from, to), true);
+	// the week after is not
+	assert.equal(withinWindow("2026-09-28T19:00:00", null, from, to), false);
+	// a run that started before the window but is still on stays
+	assert.equal(withinWindow("2026-08-01", "2026-09-30", from, to), true);
+	assert.equal(isPast("2026-08-01", "2026-09-30", from), false);
 });

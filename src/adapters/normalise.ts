@@ -44,8 +44,18 @@ export function brisbaneNaive(iso: string | null): string | null {
 
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MONTHS_SHORT = [
-	"Jan", "Feb", "Mar", "Apr", "May", "Jun",
-	"Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+	"Jan",
+	"Feb",
+	"Mar",
+	"Apr",
+	"May",
+	"Jun",
+	"Jul",
+	"Aug",
+	"Sep",
+	"Oct",
+	"Nov",
+	"Dec",
 ];
 
 /** Human-readable datetime, formatted from the resolved instant rather than
@@ -69,19 +79,37 @@ export function humanDatetime(naive: string | null): string {
 	return `${day}, ${h12}:${mins} ${h24 < 12 ? "AM" : "PM"}`;
 }
 
-/** Keeps events overlapping the week at all, so a multi-day exhibition that
- * started before Monday still surfaces. Listing pages return months; the
- * digest is week-scoped and nothing downstream filters by date. */
-export function withinWeek(
+/**
+ * Keeps events overlapping the publishing window, which runs from TODAY (not
+ * the Monday — a Wednesday run must not resurrect Monday's finished events)
+ * through the end of next week. Showing next week's events early is harmless;
+ * showing last night's is not.
+ *
+ * Interval overlap rather than start-only, so a multi-day exhibition that
+ * opened last month and runs through next week still surfaces — but a one-off
+ * that has already happened does not.
+ */
+export function withinWindow(
 	startNaive: string | null,
 	endNaive: string | null,
-	monday: string,
-	sunday: string,
+	from: string,
+	to: string,
 ): boolean {
 	if (!startNaive) return false;
 	const start = startNaive.slice(0, 10);
 	const end = (endNaive ?? startNaive).slice(0, 10);
-	return start <= sunday && end >= monday;
+	return start <= to && end >= from;
+}
+
+/** Whether an event has already finished, which is the signal that a listing
+ * URL points at an archive rather than a programme. */
+export function isPast(
+	startNaive: string | null,
+	endNaive: string | null,
+	from: string,
+): boolean {
+	if (!startNaive) return false;
+	return (endNaive ?? startNaive).slice(0, 10) < from;
 }
 
 function composeLocation(
@@ -96,6 +124,12 @@ function composeLocation(
 		return venue;
 	}
 	return `${venue}, ${detail}`;
+}
+
+/** Only http(s) URLs survive: anything else is rendered as a link on the site
+ * and a javascript:/data: href would be click-to-execute. */
+function httpUrlOrEmpty(url: string | null | undefined): string {
+	return url && /^https?:\/\//i.test(url) ? url : "";
 }
 
 export function isValidCategory(v: unknown): v is Category {
@@ -117,13 +151,15 @@ export function candidateToEvent(
 		datetime_iso: datetimeIso ?? "",
 		datetime_end_iso: brisbaneNaive(c.endISO) ?? "",
 		location: composeLocation(c, source),
-		link: c.url ?? source?.homepage ?? "",
+		// Same scheme guard as image: a scraped url goes straight into an <a
+		// href> on the site, and new URL() happily parses "javascript:alert(1)".
+		link: httpUrlOrEmpty(c.url) || httpUrlOrEmpty(source?.homepage),
 		// markdown.ts calls .toLowerCase() on cost, so it must always be a
 		// string; "See link" is markdown's own fallback wording.
 		cost: c.price ?? "See link",
 		source: source?.name ?? c.provenance.sourceId,
 		description: c.description ?? "",
-		image: c.imageUrl && /^https?:\/\//.test(c.imageUrl) ? c.imageUrl : "",
+		image: httpUrlOrEmpty(c.imageUrl),
 		category: "Community / Other",
 		tags: [] as string[],
 		social: false,
@@ -142,7 +178,10 @@ export interface PrepareStats {
 	total: number;
 	noTitle: number;
 	noDate: number;
-	outsideWeek: number;
+	/** Already finished. Non-zero means the listing URL is probably an archive. */
+	past: number;
+	/** Upcoming, but beyond the window — normal for a venue listing its season. */
+	later: number;
 	kept: number;
 }
 
@@ -155,38 +194,77 @@ export interface PrepareStats {
  * any similarly-titled event on any date and would swallow real ones during
  * the merge.
  */
+export interface Rejection {
+	reason: "no title" | "no date" | "past" | "later";
+	title: string | null;
+	startRaw: string | null;
+	startISO: string | null;
+	url: string | null;
+}
+
 export function prepareCandidates(
 	candidates: CandidateEvent[],
 	source: SourceDefinition | undefined,
-	monday: string,
-	sunday: string,
-): { prepared: PreparedCandidate[]; stats: PrepareStats } {
+	from: string,
+	to: string,
+): {
+	prepared: PreparedCandidate[];
+	stats: PrepareStats;
+	rejected: Rejection[];
+} {
 	const stats: PrepareStats = {
 		total: candidates.length,
 		noTitle: 0,
 		noDate: 0,
-		outsideWeek: 0,
+		past: 0,
+		later: 0,
 		kept: 0,
 	};
 	const prepared: PreparedCandidate[] = [];
+	// Kept so a bad yield is diagnosable from a file instead of re-running the
+	// extraction: the reason 391 candidates were lost to "no date" took offline
+	// forensics precisely because these were thrown away.
+	const rejected: Rejection[] = [];
+	const reject = (
+		reason: Rejection["reason"],
+		c: CandidateEvent,
+		startISO: string | null,
+	): void => {
+		rejected.push({
+			reason,
+			title: c.title,
+			startRaw: c.startRaw,
+			startISO,
+			url: c.url,
+		});
+	};
+
 	for (const c of candidates) {
 		if (!c.title?.trim()) {
 			stats.noTitle++;
+			reject("no title", c, null);
 			continue;
 		}
 		const event = candidateToEvent(c, source);
 		const startNaive = (event.datetime_iso as string) || null;
 		if (!startNaive) {
 			stats.noDate++;
+			reject("no date", c, null);
 			continue;
 		}
 		const endNaive = (event.datetime_end_iso as string) || null;
-		if (!withinWeek(startNaive, endNaive, monday, sunday)) {
-			stats.outsideWeek++;
+		if (isPast(startNaive, endNaive, from)) {
+			stats.past++;
+			reject("past", c, startNaive);
+			continue;
+		}
+		if (!withinWindow(startNaive, endNaive, from, to)) {
+			stats.later++;
+			reject("later", c, startNaive);
 			continue;
 		}
 		prepared.push({ event, candidate: c });
 	}
 	stats.kept = prepared.length;
-	return { prepared, stats };
+	return { prepared, stats, rejected };
 }

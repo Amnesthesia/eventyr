@@ -25,7 +25,7 @@ const payload = {
 			datetime_iso: "2026-09-10T18:00:00",
 			link: "https://ima.org.au",
 			category: "Arts / Exhibition",
-			description: "Talk & drinks <with> \"quotes\" & ampersands.",
+			description: 'Talk & drinks <with> "quotes" & ampersands.',
 		},
 		{ title: "Undated thing", datetime_iso: "", link: "", description: "" },
 	],
@@ -45,15 +45,31 @@ test("guids are stable across rebuilds", () => {
 
 test("feed is well-formed, escapes text, and keeps undated events", () => {
 	const xml = buildFeedFor(payload);
-	assert.equal((xml.match(/<item>/g) ?? []).length, 3, "undated event still gets an item");
-	assert.equal((xml.match(/<pubDate>/g) ?? []).length, 2, "no pubDate when the date is unusable");
+	assert.equal(
+		(xml.match(/<item>/g) ?? []).length,
+		3,
+		"undated event still gets an item",
+	);
+	assert.equal(
+		(xml.match(/<pubDate>/g) ?? []).length,
+		2,
+		"no pubDate when the date is unusable",
+	);
 	assert.ok(xml.includes("&lt;with&gt;"), "angle brackets escaped");
 	assert.ok(xml.includes("&quot;quotes&quot;"), "quotes escaped");
 	assert.ok(!/&(?!amp;|lt;|gt;|quot;|apos;)/.test(xml), "no raw ampersands");
-	assert.ok(xml.includes('<atom:link href="https://www.dothings.lol/brisbane/feed.xml"'));
+	assert.ok(
+		xml.includes(
+			'<atom:link href="https://www.dothings.lol/brisbane/feed.xml"',
+		),
+	);
 });
 
 test("pubDate is the event's start, converted from Brisbane time to UTC", () => {
 	// 18:00 Brisbane (UTC+10) is 08:00 UTC the same day.
-	assert.ok(buildFeedFor(payload).includes("<pubDate>Wed, 09 Sep 2026 08:00:00 GMT</pubDate>"));
+	assert.ok(
+		buildFeedFor(payload).includes(
+			"<pubDate>Wed, 09 Sep 2026 08:00:00 GMT</pubDate>",
+		),
+	);
 });

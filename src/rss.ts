@@ -9,7 +9,14 @@
 
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { DATA_ROOT, KEY_TO_SLUG, PROJECT_ROOT, SITE_URL } from "./common.ts";
+import {
+	DATA_ROOT,
+	eventHash,
+	eventPath,
+	KEY_TO_SLUG,
+	PROJECT_ROOT,
+	SITE_URL,
+} from "./common.ts";
 
 interface Payload {
 	city: string;
@@ -21,12 +28,20 @@ interface Payload {
 }
 
 function esc(text: string): string {
-	return text
-		.replace(/&/g, "&amp;")
-		.replace(/</g, "&lt;")
-		.replace(/>/g, "&gt;")
-		.replace(/"/g, "&quot;")
-		.replace(/'/g, "&apos;");
+	return (
+		text
+			// C0 controls (bar tab/LF/CR) are illegal in XML 1.0 and make the
+			// ENTIRE feed unparseable, not just the offending item. Titles and
+			// descriptions are copied verbatim from third-party pages, so one
+			// sloppy source would break the feed for every subscriber.
+			// biome-ignore lint/suspicious/noControlCharactersInRegex: that is precisely what is being stripped
+			.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, "")
+			.replace(/&/g, "&amp;")
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;")
+			.replace(/"/g, "&quot;")
+			.replace(/'/g, "&apos;")
+	);
 }
 
 function str(event: Record<string, unknown>, key: string): string {
@@ -57,18 +72,16 @@ function pubDate(naive: string): string | null {
  *
  * Deliberately NOT the link: many events share one link (a venue homepage,
  * when the source gave no per-event URL), and duplicate guids make readers
- * collapse genuinely different events into a single item. Title + date + city
- * is unique in practice and stable across runs. (ical.ts uses the array index
- * for its UIDs, which changes week to week — tolerable for a calendar, not
- * for a feed.)
+ * collapse genuinely different events into a single item.
  */
-export function guidFor(event: Record<string, unknown>, cityKey: string): string {
-	const basis = `${cityKey}|${str(event, "title")}|${str(event, "datetime_iso")}`;
-	let hash = 0;
-	for (let i = 0; i < basis.length; i++) {
-		hash = (hash * 31 + basis.charCodeAt(i)) | 0;
-	}
-	return `${SITE_URL}/${KEY_TO_SLUG[cityKey] ?? cityKey}#${(hash >>> 0).toString(36)}`;
+export function guidFor(
+	event: Record<string, unknown>,
+	cityKey: string,
+): string {
+	// The hash lives in shared.ts, so this and ical.ts's UID cannot drift apart
+	// — they used to hold identical copies of it. The URL shape around it must
+	// not change: a changed guid makes every reader re-notify on every event.
+	return `${SITE_URL}/${KEY_TO_SLUG[cityKey] ?? cityKey}#${eventHash(cityKey, event)}`;
 }
 
 function itemDescription(event: Record<string, unknown>): string {
@@ -89,12 +102,16 @@ function buildFeed(payload: Payload): string {
 
 	const items = payload.events.map((event) => {
 		const date = pubDate(str(event, "datetime_iso"));
-		const link = str(event, "link");
+		// The source's own URL when it gave one, otherwise this event's page on
+		// the site. Previously an event with no per-event URL had no <link> at
+		// all, so a reader had nowhere to click; now there is always somewhere.
+		const link =
+			str(event, "link") || `${SITE_URL}${eventPath(payload.city_key, event)}`;
 		const category = str(event, "category");
 		return [
 			"    <item>",
 			`      <title>${esc(str(event, "title"))}</title>`,
-			link ? `      <link>${esc(link)}</link>` : "",
+			`      <link>${esc(link)}</link>`,
 			`      <guid isPermaLink="false">${esc(guidFor(event, payload.city_key))}</guid>`,
 			// Omitted rather than faked when the date didn't parse — unlike the
 			// iCal feed, which has to drop the event entirely.
@@ -128,7 +145,8 @@ export function buildFeedFor(payload: Payload): string {
 
 function main(): void {
 	const files = readdirSync(DATA_ROOT).filter(
-		(f) => f.endsWith(".json") && f !== "index.json" && !f.endsWith("_raw.json"),
+		(f) =>
+			f.endsWith(".json") && f !== "index.json" && !f.endsWith("_raw.json"),
 	);
 
 	for (const file of files) {

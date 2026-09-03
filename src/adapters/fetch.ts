@@ -3,7 +3,7 @@ import { join } from "node:path";
 import { gotScraping } from "got-scraping";
 import { adapterCachePath, adapterRawDir } from "../common.ts";
 import { fetchRobotsPolicy, type RobotsPolicy } from "./robots.ts";
-import type { ExtractionStrategy, RawListing } from "./types.ts";
+import type { RawListing, SourceStrategy } from "./types.ts";
 
 // Transport note — why this doesn't use Node's fetch:
 //
@@ -23,12 +23,12 @@ import type { ExtractionStrategy, RawListing } from "./types.ts";
 // not a stated crawling policy. No challenge-solving, CAPTCHA bypass or proxy
 // rotation is done here, and none should be added: if a site actually
 // disallows us in robots.txt, we don't fetch it.
-export const USER_AGENT =
+const USER_AGENT =
 	"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
 
 /** Minimal fetch-shaped wrapper over got-scraping, so SourceFetcher's own
  * logic (and its fetchImpl injection point for tests) is untouched. */
-export const browserFetch: typeof fetch = async (input, init) => {
+const browserFetch: typeof fetch = async (input, init) => {
 	const url = typeof input === "string" ? input : input.toString();
 	const response = await gotScraping({
 		url,
@@ -125,6 +125,9 @@ export class SourceFetcher {
 	private readonly minIntervalMs: number;
 	private readonly maxConcurrencyPerHost: number;
 	private readonly maxRetries: number;
+	// ponytail: rate limiting and concurrency caps are per-process maps, so two
+	// concurrent runs (a retried workflow, a manual run alongside CI) hit a
+	// host at 2x the stated limit. Needs a shared store if that becomes real.
 	private readonly robotsCache = new Map<string, Promise<RobotsPolicy>>();
 	private readonly hostLastRequestAt = new Map<string, number>();
 	private readonly hostActive = new Map<string, number>();
@@ -149,7 +152,7 @@ export class SourceFetcher {
 	async fetch(
 		sourceId: string,
 		url: string,
-		strategy: ExtractionStrategy,
+		strategy: SourceStrategy,
 	): Promise<RawListing> {
 		const host = new URL(url).host;
 		await this.acquireHostSlot(host);
@@ -191,7 +194,7 @@ export class SourceFetcher {
 	private async fetchWithPolicy(
 		sourceId: string,
 		url: string,
-		strategy: ExtractionStrategy,
+		strategy: SourceStrategy,
 		host: string,
 	): Promise<RawListing> {
 		const origin = new URL(url).origin;
@@ -298,6 +301,9 @@ export class SourceFetcher {
 		}
 	}
 
+	// ponytail: writes one file per URL per run with no pruning — data/_raw is
+	// gitignored and grows unboundedly (146 MB locally). Add a retention sweep
+	// (or stop persisting on success) when it starts to hurt.
 	private persistBody(
 		sourceId: string,
 		url: string,

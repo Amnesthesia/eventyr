@@ -29,6 +29,67 @@
 	--pico-h1-color: var(--fg);
 	--pico-h2-color: var(--fg);
 	--pico-h3-color: var(--fg);
+
+	/* Native controls follow the theme. Without this the date inputs render
+	   with the light UA scheme in dark mode: the calendar indicator is a dark
+	   glyph on a dark field — invisible, so the picker looks broken — and the
+	   browser's own picker panel comes up light against a dark page. */
+	color-scheme: light;
+
+	/* Six hues, and only six, shared by BOTH colour-coded axes — category and
+	   vibe. Ten distinct colours on one page stops being an overview and
+	   becomes noise, which is the opposite of what the colour is for. The two
+	   axes are told apart by form, not hue: a category is a 2px rule plus
+	   coloured label text, a vibe is a tinted chip in the tag row.
+
+	   Desaturated on purpose: these sit on a monochrome page. Every value is
+	   >= 4.5:1 on --surface in its own theme, because all of them are used on
+	   text. Measured, not eyeballed — the lowest is 5.68:1. */
+	--hue-blue: #2c5fb3;
+	--hue-amber: #8a5a12;
+	--hue-violet: #7a3fa8;
+	--hue-teal: #16736a;
+	--hue-rose: #b0364f;
+	--hue-slate: #566070;
+
+	/* Both default to --muted, so an unmapped value stays monochrome rather
+	   than inheriting whichever colour happens to be in scope. */
+	--cat: var(--muted);
+	--vibe: var(--muted);
+}
+
+[data-cat="talks"] {
+	--cat: var(--hue-blue);
+}
+[data-cat="workshops"] {
+	--cat: var(--hue-amber);
+}
+[data-cat="music"] {
+	--cat: var(--hue-violet);
+}
+[data-cat="social"] {
+	--cat: var(--hue-teal);
+}
+[data-cat="arts"] {
+	--cat: var(--hue-rose);
+}
+[data-cat="community"] {
+	--cat: var(--hue-slate);
+}
+
+/* Vibes reuse four of the same hues. "Social" lands on the same teal as the
+   Social / Meetup category, which is a coincidence worth keeping. */
+[data-vibe="intellectual"] {
+	--vibe: var(--hue-blue);
+}
+[data-vibe="creative"] {
+	--vibe: var(--hue-violet);
+}
+[data-vibe="hands_on"] {
+	--vibe: var(--hue-amber);
+}
+[data-vibe="social"] {
+	--vibe: var(--hue-teal);
 }
 
 /* Dark tokens — system preference (auto) or explicit toggle */
@@ -46,16 +107,25 @@
 		--pico-card-background-color: var(--surface);
 		--pico-card-border-color: var(--border);
 		--pico-primary: var(--fg);
+		/* Lightened for >= 4.5:1 on the dark --surface (#111). */
+		--hue-blue: #7aa8ee;
+		--hue-amber: #d9a44a;
+		--hue-violet: #bd94e6;
+		--hue-teal: #4fc0ae;
+		--hue-rose: #ec8199;
+		--hue-slate: #9aa4b3;
 		--pico-primary-hover: #bbb;
 		--pico-primary-focus: rgba(255, 255, 255, 0.1);
 		--pico-primary-inverse: #0b0b0b;
 		--pico-h1-color: var(--fg);
 		--pico-h2-color: var(--fg);
 		--pico-h3-color: var(--fg);
+		color-scheme: dark;
 	}
 }
 
 :root[data-theme="dark"] {
+	color-scheme: dark;
 	--bg: #0b0b0b;
 	--fg: #ededed;
 	--muted: #888;
@@ -123,11 +193,99 @@ header {
 }
 
 /* ── Header controls (right side) ── */
+/* ── Search ── */
+.search-bar {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0 0.4rem;
+	height: 1.6rem;
+	box-sizing: border-box;
+	/* Clips rather than grows. Pico's own input height is ~3rem, and until our
+	   rules apply — which in `pnpm dev` is after first paint, because Vite
+	   injects module CSS then — the field is that tall. Without this the
+	   oversized input paints outside the bar and the whole header appears to
+	   stretch, then snap. In the built site there is a single stylesheet and no
+	   such window, so this only shows up in dev. */
+	overflow: hidden;
+	border: 1px solid var(--border);
+	color: var(--muted);
+	background: var(--bg);
+}
+
+.search-bar:focus-within {
+	border-color: var(--fg);
+	color: var(--fg);
+}
+
+/* Two classes deep on purpose. Pico sets `padding`, `margin-bottom` and a
+   fixed `height: calc(1rem * 1.5 + 0.75rem * 2 + …)` — about 3rem — on
+   `input:not([type=checkbox],[type=radio],[type=range])`, which is specificity
+   (0,1,1) and beats a single class. That lost fight is what pushed the text
+   out of the 1.6rem bar. (0,2,0) wins it without needing !important.
+   Do not flatten this back to `.search-input`. */
+.search-bar .search-input {
+	font: inherit;
+	font-size: 0.75rem;
+	width: 11rem;
+	max-width: 32vw;
+	/* 100%, not a pixel value: the bar is 1.6rem border-box, so a hardcoded
+	   26px was taller than the 22px of content box it sits in and overflowed
+	   its own container. */
+	height: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	box-shadow: none;
+	color: var(--fg);
+}
+
+.search-bar .search-input:focus,
+.search-bar .search-input:focus-visible {
+	outline: none;
+	box-shadow: none;
+	border: none;
+}
+
+.search-count {
+	font-family: var(--mono);
+	font-size: 0.65rem;
+	color: var(--muted);
+	flex-shrink: 0;
+}
+
+.search-clear {
+	display: inline-flex;
+	align-items: center;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	color: var(--muted);
+	cursor: pointer;
+}
+
+.search-clear:hover {
+	color: var(--fg);
+}
+
+@media (max-width: 640px) {
+	/* Same two classes as above: pico's input rule sets width, so a single
+	   class loses here too. */
+	.search-bar .search-input {
+		width: 7rem;
+	}
+}
+
 .header-controls {
 	margin-left: auto;
 	display: flex;
 	align-items: center;
 	gap: 0.4rem;
+	flex-wrap: wrap;
 	flex-shrink: 0;
 }
 
@@ -208,6 +366,46 @@ header {
 }
 
 /* ── Section labels ── */
+/* Group headings sit a level below .section-label: same typographic family,
+   but a rule under them so a long grouped page reads as bands rather than as
+   one grid with words in it. */
+.event-group + .event-group {
+	margin-top: 0.5rem;
+}
+
+.group-label {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5rem;
+	font-size: 0.78rem;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	/* Inherits the category accent when grouping by category, and --cat falls
+	   back to --muted, so the by-date headings stay monochrome. */
+	color: var(--cat);
+	margin: 0;
+	padding: 1.4rem 0 0.5rem;
+	border-bottom: 1px solid var(--border);
+	margin-bottom: 0.9rem;
+}
+
+.group-count {
+	font-family: var(--mono);
+	font-size: 0.67rem;
+	font-weight: 400;
+	color: var(--muted);
+}
+
+.filter-label {
+	font-size: 0.68rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--muted);
+	align-self: center;
+	margin-right: 0.15rem;
+}
+
 .section-label {
 	font-size: 0.68rem;
 	font-weight: 600;
@@ -269,6 +467,13 @@ header {
 
 .filters--date {
 	min-width: 250px;
+	/* Opts out of .filters' overflow-x: auto. A scroll container clips an
+	   absolutely positioned child, and this row holds the date-range popover —
+	   which is why the popover silently stopped appearing. Wrapping is the
+	   right behaviour for four controls anyway; scrolling is for the long
+	   category row. */
+	overflow: visible;
+	flex-wrap: wrap;
 }
 
 .filters--cat {
@@ -389,9 +594,15 @@ article.card.event-past {
 	opacity: 0.45;
 }
 
+/* Category accent: inset top rule. The left edge is top-pick's channel, so
+   the two never compete for the same edge and a top pick shows both. */
+article.card {
+	box-shadow: inset 0 2px 0 var(--cat);
+}
+
 /* Top-pick accent: inset left rule */
 article.card.top-pick {
-	box-shadow: inset 3px 0 0 var(--fg);
+	box-shadow: inset 3px 0 0 var(--fg), inset 0 2px 0 var(--cat);
 }
 
 /* ── Card background image ── */
@@ -452,6 +663,35 @@ article.card.has-image > * {
 	transition: color 0.12s;
 }
 
+/* The two icon actions on a card: add-to-calendar and share, sitting together
+   in the top-right beside the save bookmark.
+   width:auto and the margin/box-shadow resets are all fighting pico's button
+   defaults, which otherwise make these full-width blocks.
+   Coloured with the category hue rather than left grey: they are the two
+   things a reader does with an event, and at 11px a muted glyph beside the
+   cost pill disappears entirely. */
+.icon-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	cursor: pointer;
+	color: var(--cat);
+	flex-shrink: 0;
+	transition: opacity 0.12s;
+}
+
+.icon-btn:hover {
+	color: var(--cat);
+	background: transparent;
+	opacity: 0.65;
+}
+
 .star-btn:hover {
 	color: var(--fg);
 	background: transparent;
@@ -471,7 +711,8 @@ article.card.has-image > * {
 	gap: 0.3rem;
 	font-size: 0.72rem;
 	font-weight: 500;
-	color: var(--muted);
+	/* Icon inherits this via currentColor. */
+	color: var(--cat);
 	text-decoration: none;
 }
 .card-cat:hover {
@@ -573,30 +814,135 @@ article.card.has-image > * {
 }
 
 /* ── Description ── */
+.card-desc-details,
+.card-desc--plain {
+	margin: 1rem 0;
+	flex-grow: 1;
+}
+
+.card-desc-details summary {
+	display: block;
+	cursor: pointer;
+	list-style: none;
+}
+
+/* The default disclosure triangle would sit in the middle of the text block. */
+.card-desc-details summary::-webkit-details-marker {
+	display: none;
+}
+
+.card-desc-details summary:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 2px var(--fg);
+}
+
 .card-desc {
+	display: block;
 	font-size: 0.8rem;
 	color: var(--muted);
 	line-height: 1.55;
 	margin: 0;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	flex-grow: 1;
+}
+
+/* Five lines, then cut. Sources started returning full event blurbs and a
+   single long one made its card several times the height of its neighbours,
+   which breaks the grid as a scannable thing. */
+.card-desc-details:not([open]) .card-desc {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	line-clamp: 5;
+	overflow: hidden;
+}
+
+/* Label text lives in CSS so the open/closed states need no JavaScript. */
+.card-desc-toggle {
+	display: inline-block;
+	margin-top: 0.35rem;
+	font-size: 0.72rem;
+	font-weight: 500;
+	color: var(--fg);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.card-desc-toggle::after {
+	content: "Read more";
+}
+
+.card-desc-details[open] .card-desc-toggle::after {
+	content: "Read less";
+}
+
+summary:hover .card-desc-toggle {
+	color: var(--cat);
+}
+
+
+/* The category filter buttons carry the same accent as the cards, which is
+   what makes the colour legible without a legend taking up space. */
+.filter-btn[data-cat] {
+	color: var(--cat);
+}
+
+.filter-btn[data-cat].active {
+	border-color: var(--cat);
+}
+
+.filter-btn[data-vibe] {
+	color: var(--vibe);
+}
+
+.filter-btn[data-vibe].active {
+	border-color: var(--vibe);
+}
+
+/* An excluded vibe must not look like a selected one, so the colour goes. */
+.filter-btn[data-vibe].vibe-no {
+	color: var(--muted);
 }
 
 /* ── Tags ── */
 .card-bottom {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	gap: 0.5rem;
+	/* Without this a flex item refuses to shrink below its content, which is
+	   what let a long tag row push the card wider than its grid column. */
+	min-width: 0;
 }
 
+/* One line that scrolls, rather than wrapping to three and making this card
+   twice the height of its neighbours. */
 .card-tags {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	gap: 0.3rem;
-	margin-top: auto;
-	padding-top: 0.15rem;
+	flex: 1 1 auto;
+	min-width: 0;
+	overflow-x: auto;
+	/* Keeps a swipe over the tags from scrolling the page behind it. */
+	overscroll-behavior-x: contain;
+	scrollbar-width: thin;
+	scrollbar-color: var(--border) transparent;
+	align-items: center;
+	/* Symmetric on purpose. Reserving scrollbar space only at the bottom made
+	   the row's box taller below its chips, and since .card-bottom centres the
+	   boxes rather than their contents, the score sat visibly lower than the
+	   tags beside it. */
+	padding: 2px 0;
+}
+
+.card-tags > * {
+	flex-shrink: 0;
+}
+
+.card-tags::-webkit-scrollbar {
+	height: 3px;
+}
+
+.card-tags::-webkit-scrollbar-thumb {
+	background: var(--border);
 }
 
 .card-tags button {
@@ -604,12 +950,71 @@ article.card.has-image > * {
 }
 
 .tag {
+	/* Explicit height, matched by .card-score, so the two sit on one line
+	   without depending on font metrics agreeing between them. */
+	display: inline-flex;
+	align-items: center;
+	height: 1.25rem;
+	white-space: nowrap;
 	font-family: var(--mono);
 	font-size: 0.67rem;
-	padding: 0.1rem 0.42rem;
+	line-height: 1;
+	padding: 0 0.42rem;
 	border: 1px solid var(--border);
 	color: var(--muted);
 }
+
+/* A vibe is a fact about the event (a boolean the ranker set), where a tag is
+   free text — so it gets the tint and the free-text tags stay plain. That is
+   also what stops the two colour axes reading as one. */
+.tag-vibe {
+	color: var(--vibe);
+	border-color: color-mix(in srgb, var(--vibe) 45%, transparent);
+	background: color-mix(in srgb, var(--vibe) 9%, transparent);
+}
+
+.tag-vibe.active {
+	border-color: var(--vibe);
+	background: color-mix(in srgb, var(--vibe) 18%, transparent);
+}
+
+/* ── Fit score ──
+   Deliberately not stars: a star rating says "other people liked this", and
+   this is a private fit score against one interest profile. A bare number in a
+   square says "8 out of 10" and nothing else.
+
+   Transparent background, hue-coloured border and number. The score rides the
+   BORDER's strength, not the number's, and that split is measured rather than
+   aesthetic: a number drawn in the scaled hue is 1.29:1 against the card at
+   the bottom of the ramp and still only 2.37:1 at 55%, i.e. unreadable, where
+   the hue at full strength is 5.68:1 in light and 7.34:1 in dark. So the
+   number is always full --cat and always legible; the border carries the
+   magnitude, and it may go faint at a low score because it is decoration —
+   the digit is what actually conveys the value. */
+.card-score {
+	flex-shrink: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	/* Matched to the tags' own box (0.67rem at 1.55 line-height plus 0.2rem of
+	   padding ~= 1.24rem), so the two line up in the bottom row. */
+	width: 1.25rem;
+	height: 1.25rem;
+	box-sizing: border-box;
+	font-family: var(--mono);
+	font-size: 0.67rem;
+	font-variant-numeric: tabular-nums;
+	font-weight: 600;
+	background: transparent;
+	color: var(--cat);
+	/* Mixed against --surface rather than transparent: a card can have a
+	   blurred background image behind it, and mixing with transparent let that
+	   show through and washed the border out to nothing. */
+	border: 2px solid
+		color-mix(in srgb, var(--cat) var(--score-tint, 100%), var(--surface));
+}
+
+
 
 /* ── States ── */
 .state {
@@ -723,6 +1128,10 @@ article.card.has-image > * {
 	align-items: center;
 	gap: 0.2rem;
 	position: relative;
+	/* Lifts the whole control, not just the panel: cards later in the document
+	   carry z-index up to 2 on their own children, and without a stacking
+	   position here the panel competes with them one by one. */
+	z-index: 200;
 }
 
 .date-range-wrapper .filter-btn {
@@ -744,146 +1153,53 @@ article.card.has-image > * {
 	background: var(--surface);
 	border: 1px solid var(--border);
 	padding: 1rem;
-	z-index: 100;
+	z-index: 1000;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-	min-width: 260px;
-	/* Override react-aria's Highlight system color with our tokens */
-	--highlight-background: var(--fg);
-	--highlight-foreground: var(--bg);
-}
-
-/* Kill all browser outlines inside the popover — we use box-shadow for focus */
-.date-picker-popover *,
-.date-picker-popover *:focus,
-.date-picker-popover *:focus-visible {
-	outline: none;
-}
-
-.range-calendar {
-	width: 260px;
-}
-
-.cal-header {
+	min-width: 220px;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 0.75rem;
-	border: none;
-	padding: 0;
-	background: none;
+	flex-direction: column;
+	gap: 0.75rem;
 }
 
-.cal-heading {
-	font-size: 0.8rem;
-	font-weight: 600;
-	color: var(--fg);
-	margin: 0;
-}
-
-.cal-nav-btn {
-	/* Reset Pico's button rule */
-	--pico-background-color: transparent;
-	--pico-border-color: var(--border);
-	--pico-color: var(--fg);
-	--pico-box-shadow: none;
-	--pico-border-radius: 0;
+.date-picker-field {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: transparent;
-	border: 1px solid var(--border);
-	color: var(--fg);
-	cursor: pointer;
-	padding: 0.2rem 0.3rem;
-	border-radius: 0;
-	box-shadow: none;
-	outline: none;
-}
-
-.cal-nav-btn:hover {
-	border-color: var(--fg);
-	background: transparent;
-}
-
-.cal-nav-btn[data-focus-visible] {
-	box-shadow: inset 0 0 0 1px var(--fg);
-}
-
-.cal-nav-btn[data-disabled] {
-	opacity: 0.3;
-	cursor: default;
-}
-
-.cal-grid {
-	width: 100%;
-	border-collapse: collapse;
-}
-
-.cal-header-cell {
-	font-family: var(--mono);
-	font-size: 0.62rem;
-	font-weight: 600;
-	letter-spacing: 0.06em;
+	flex-direction: column;
+	gap: 0.25rem;
+	font-size: 0.72rem;
 	text-transform: uppercase;
+	letter-spacing: 0.06em;
 	color: var(--muted);
-	text-align: center;
-	padding: 0.25rem 0.1rem;
 }
 
-td[role="gridcell"] {
-	padding: 0px;
-}
-
-.cal-cell {
-	/* Reset Pico's button rule */
-	border: none;
-	background: transparent;
-	--pico-background-color: transparent;
-	--pico-border-color: transparent;
-	--pico-color: var(--fg);
-	--pico-box-shadow: none;
-	--pico-border-radius: 0;
-	text-align: center;
-	padding: 0.25rem 0.1rem;
-	font-size: 0.78rem;
-	cursor: pointer;
-	outline: none;
+.date-picker-field input {
+	font: inherit;
+	font-size: 0.85rem;
+	font-family: var(--mono);
+	text-transform: none;
+	letter-spacing: normal;
 	color: var(--fg);
+	background: var(--bg);
+	border: 1px solid var(--border);
 	border-radius: 0;
+	padding: 0.35rem 0.4rem;
+	margin: 0;
+	box-shadow: none;
 }
 
-.cal-cell:hover:not([data-disabled]):not([data-outside-month]) {
-	background: var(--border);
+.date-picker-field input:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 2px var(--fg);
 }
 
-/* Mid-range selection: subtle tint using the border token */
-.cal-cell[data-selected] {
-	background: var(--border);
-	color: var(--fg);
+/* The indicator is the whole affordance on this control, so make it look like
+   one rather than leaving it as an inert-looking glyph. */
+.date-picker-field input::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+	opacity: 0.7;
 }
 
-/* Range endpoints: solid fill */
-.cal-cell[data-selection-start],
-.cal-cell[data-selection-end] {
-	background: var(--fg);
-	color: var(--bg);
-}
-
-/* Keyboard focus indicator */
-.cal-cell[data-focus-visible] {
-	box-shadow: inset 0 0 0 1px var(--fg);
-}
-
-.cal-cell[data-disabled] {
-	color: var(--muted);
-	opacity: 0.35;
-	cursor: default;
-	pointer-events: none;
-}
-
-.cal-cell[data-outside-month] {
-	color: var(--muted);
-	opacity: 0.25;
+.date-picker-field input::-webkit-calendar-picker-indicator:hover {
+	opacity: 1;
 }
 
 /* ── Responsive ── */
@@ -913,6 +1229,168 @@ td[role="gridcell"] {
 	}
 	.filter-bar--cats .filters--date { order: 1; }
 	.filter-bar--cats .filters--cat  { order: 2; }
+}
+
+/* ── Single event page ──
+   The share target: what somebody sees when they open a link they were sent,
+   often on a phone, with no context. So it is a reading column rather than a
+   card — one thing, stated plainly, with the facts before the prose. */
+.event-page {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 1.5rem 12px 3rem;
+}
+
+.event-crumbs {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-size: 0.72rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--muted);
+	margin-bottom: 1.25rem;
+}
+
+.event-crumbs a {
+	color: var(--muted);
+	text-decoration: none;
+}
+
+.event-crumbs a:hover {
+	color: var(--fg);
+}
+
+.event-detail {
+	/* Same category rule the cards carry, so an event page is recognisably
+	   part of the same set. */
+	border-top: 2px solid var(--cat);
+	padding-top: 1.25rem;
+}
+
+.event-detail h1 {
+	font-size: 1.6rem;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	margin: 0 0 1.25rem;
+	color: var(--fg);
+}
+
+/* Hotlinked from the source, so its dimensions are unknown and it may 404 or
+   be hotlink-blocked. Capped by aspect-ratio rather than a fixed height so a
+   portrait poster and a 16:9 still both land in the same box, and the layout
+   does not jump once it loads. */
+.event-image {
+	display: block;
+	width: 100%;
+	max-height: 22rem;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	background: color-mix(in srgb, var(--cat) 8%, var(--surface));
+	border: 1px solid var(--border);
+	margin: 0 0 1.5rem;
+}
+
+.event-facts {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 0.4rem 1rem;
+	margin: 0 0 1.5rem;
+	font-size: 0.85rem;
+}
+
+.event-facts dt {
+	font-size: 0.68rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: var(--muted);
+	padding-top: 0.2rem;
+}
+
+.event-facts dd {
+	margin: 0;
+	color: var(--fg);
+}
+
+.event-facts dd a {
+	color: var(--fg);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.event-description {
+	font-size: 0.9rem;
+	line-height: 1.65;
+	color: var(--fg);
+	margin: 0 0 1.5rem;
+	white-space: pre-line;
+}
+
+.event-vibes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.3rem;
+	list-style: none;
+	margin: 0 0 1.5rem;
+	padding: 0;
+}
+
+.event-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	align-items: center;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid var(--border);
+}
+
+/* Three controls wearing .filter-btn, but one is an <a> (Event website), one a
+   <button> (Add to calendar) and one an <a> again (Share). Pico gives buttons
+   and anchors different box models, so they only line up if the height,
+   padding and line-height are stated once for all of them. */
+.event-actions .filter-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.35rem;
+	height: 1.9rem;
+	box-sizing: border-box;
+	padding: 0 0.6rem;
+	margin: 0;
+	line-height: 1;
+	font-size: 0.75rem;
+	width: auto;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+/* The icon must not stretch or shift the label off centre. */
+.event-actions .filter-btn svg {
+	flex-shrink: 0;
+}
+
+.event-back {
+	margin: 1.25rem 0 0;
+	font-size: 0.8rem;
+}
+
+.event-back a {
+	color: var(--muted);
+	text-decoration: none;
+}
+
+.event-back a:hover {
+	color: var(--fg);
+}
+
+@media (max-width: 480px) {
+	.event-facts {
+		grid-template-columns: 1fr;
+		gap: 0.1rem 0;
+	}
+	.event-facts dd {
+		margin-bottom: 0.6rem;
+	}
 }
 
 /* ── Category nav ── */

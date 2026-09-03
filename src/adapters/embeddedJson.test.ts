@@ -15,7 +15,11 @@ test("reads __NEXT_DATA__ and generic application/json blobs", () => {
     <script>var notJson = 1;</script>
   </body></html>`;
 	const blobs = extractEmbeddedJson(html);
-	assert.equal(blobs.length, 2, "ld+json and plain scripts are not picked up here");
+	assert.equal(
+		blobs.length,
+		2,
+		"ld+json and plain scripts are not picked up here",
+	);
 });
 
 test("reassembles Next.js app-router flight chunks", () => {
@@ -87,11 +91,17 @@ test("the same event in two blobs is returned once", () => {
 
 test("a page with no embedded JSON yields nothing rather than throwing", () => {
 	assert.deepEqual(
-		extractFromEmbeddedJson("<html><body><p>Hi</p></body></html>", "https://x.com"),
+		extractFromEmbeddedJson(
+			"<html><body><p>Hi</p></body></html>",
+			"https://x.com",
+		),
 		[],
 	);
 	assert.deepEqual(
-		extractFromEmbeddedJson('<script type="application/json">{oops</script>', "https://x.com"),
+		extractFromEmbeddedJson(
+			'<script type="application/json">{oops</script>',
+			"https://x.com",
+		),
 		[],
 	);
 });
@@ -114,8 +124,12 @@ test("a publish/modify date is never read as the event's start", () => {
 test("prose containing a month word is not a date", () => {
 	// These were passing as events, and because pageAdapter returns on the
 	// first strategy that yields anything, they suppressed the LLM fallback.
-	assert.ok(!isEventLike({ label: "Members may book early", from: "Members may book" }));
-	assert.ok(!isEventLike({ title: "March of the Penguins", date: "a March release" }));
+	assert.ok(
+		!isEventLike({ label: "Members may book early", from: "Members may book" }),
+	);
+	assert.ok(
+		!isEventLike({ title: "March of the Penguins", date: "a March release" }),
+	);
 	assert.ok(!isEventLike({ title: "Blog post", datePublished: "2026-09-01" }));
 	// but real date spellings still count
 	assert.ok(isEventLike({ title: "Gig", startDate: "Sep 3, 2026" }));

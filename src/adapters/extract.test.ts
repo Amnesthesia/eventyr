@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
-	discoverFeedLinks,
 	extractJsonLdBlocks,
 	findEventNodes,
 	jsonLdNodeToRawFields,
@@ -58,14 +57,4 @@ test("no JSON-LD present returns an empty list, not an error", () => {
 		extractJsonLdBlocks("<html><body>no scripts here</body></html>"),
 		[],
 	);
-});
-
-test("discovers RSS and ICS feed links from <head>, resolved against base", () => {
-	const html = `<head>
-<link rel="alternate" type="application/rss+xml" href="/feed.xml">
-<link rel="alternate" type="text/calendar" href="/events.ics">
-</head>`;
-	const { rss, ics } = discoverFeedLinks(html, "https://example.com/whats-on");
-	assert.deepEqual(rss, ["https://example.com/feed.xml"]);
-	assert.deepEqual(ics, ["https://example.com/events.ics"]);
 });

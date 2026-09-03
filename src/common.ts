@@ -8,40 +8,30 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export const PROJECT_ROOT = resolve(__dirname, "..");
-export const DATA_ROOT = join(PROJECT_ROOT, "data");
+// Overridable so tests can point the on-disk caches at a scratch directory
+// instead of writing into the repo's real data dir.
+export const DATA_ROOT =
+	process.env.EVENTYR_DATA_ROOT ?? join(PROJECT_ROOT, "data");
 export const SOURCES_ROOT = join(PROJECT_ROOT, "sources");
 
-export const CATEGORIES = [
-	"Public Lecture",
-	"Workshop / Class",
-	"Concert / Music",
-	"Social / Meetup",
-	"Arts / Exhibition",
-	"Community / Other",
-] as const;
-
-export type Category = (typeof CATEGORIES)[number];
-
-export const CATEGORY_EMOJI: Record<string, string> = {
-	"Public Lecture": "🎓",
-	"Workshop / Class": "🛠️",
-	"Concert / Music": "🎵",
-	"Social / Meetup": "🤝",
-	"Arts / Exhibition": "🎨",
-	"Community / Other": "📌",
-};
-
-export const TOP_PICK_THRESHOLD = 7;
-
-export const SITE_URL = "https://www.dothings.lol";
-
-/** City key → the slug used in public URLs. Shared so the site, the sitemap
- * and the RSS feeds can't disagree about a city's address. */
-export const KEY_TO_SLUG: Record<string, string> = {
-	brisbane: "brisbane",
-	goldcoast: "gold-coast",
-	sunnycoast: "sunshine-coast",
-};
+// Values shared with the browser bundle live in shared.ts, which must stay
+// free of node: imports — importing this file from app/ code drags node:fs
+// into Vite and fails the build. Re-exported here so pipeline modules keep
+// importing everything from common.ts.
+export {
+	CATEGORIES,
+	CATEGORY_EMOJI,
+	type Category,
+	eventHash,
+	eventPath,
+	eventSlug,
+	isLikelyImageUrl,
+	KEY_TO_SLUG,
+	normaliseText,
+	SITE_URL,
+	slugify,
+	TOP_PICK_THRESHOLD,
+} from "./shared.ts";
 
 export const INTERESTS = `
 WANT:
@@ -103,22 +93,32 @@ export interface SourceEntry {
 	homepage?: string;
 	/** Verified listing pages to fetch. Required when method is "scraper". */
 	listingUrls?: string[];
-	strategy?: "jsonld" | "api" | "html" | "ics" | "rss";
+	/**
+	 * Which extraction path actually worked when this source was last probed.
+	 * Descriptive only — pageAdapter re-decides per page at fetch time
+	 * (JSON-LD, then embedded hydration JSON, then the LLM over page text),
+	 * so this never switches behaviour. Only the two values the adapter can
+	 * actually produce are allowed.
+	 */
+	strategy?: "jsonld" | "html";
 	venue?: {
 		name?: string | null;
 		address?: string | null;
 		suburb?: string | null;
-		lat?: number | null;
-		lng?: number | null;
-		aliases?: string[];
 	};
-	schedule?: "daily" | "weekly";
 	note?: string;
 }
 
 export interface CityConfig {
 	name: string;
 	timezone?: string;
+	/**
+	 * Where the city is, and how far out still counts as being in it. Used to
+	 * throw out events that a national source listed under this city (see
+	 * src/locality.ts). Optional: without it the locality check is skipped and
+	 * every event is kept, so an unconfigured city degrades rather than breaks.
+	 */
+	centre?: { lat: number; lng: number; radiusKm: number };
 	sources: Record<SourceTier, SourceEntry[]>;
 }
 
@@ -151,13 +151,30 @@ export function barrenSourcesPath(city: string): string {
 	return join(DATA_ROOT, city, "adapters", "barren.json");
 }
 
-function barrenSourceNames(city: string): Set<string> {
+/**
+ * Which scraper sources produced nothing in this week's scrape pass.
+ *
+ * Returns null when there is no report for the current week — meaning the
+ * scrape pass has not run, or died before reporting. That is deliberately
+ * distinct from "an empty list": the caller then treats every scraper source
+ * as uncovered and hands them all to the search. Failing the other way (the
+ * scrape crashes, no report is written, and the search skips those sources
+ * because they are marked `scraper`) drops them from BOTH paths at once and
+ * still exits green — which is how a whole city's coverage could silently
+ * disappear.
+ */
+function barrenSourceNames(
+	city: string,
+	weekStart: string,
+): Set<string> | null {
 	try {
-		return new Set(
-			JSON.parse(readFileSync(barrenSourcesPath(city), "utf-8")) as string[],
-		);
+		const report = JSON.parse(
+			readFileSync(barrenSourcesPath(city), "utf-8"),
+		) as { week_start?: string; names?: string[] };
+		if (report.week_start !== weekStart) return null;
+		return new Set(report.names ?? []);
 	} catch {
-		return new Set();
+		return null;
 	}
 }
 
@@ -177,9 +194,11 @@ export function llmSourceStrings(
 	cityKey?: string,
 ): string[] {
 	const entries = cfg.sources?.[tier as SourceTier] ?? [];
-	const barren = cityKey ? barrenSourceNames(cityKey) : new Set<string>();
+	const barren = cityKey
+		? barrenSourceNames(cityKey, toISODate(getWeekRange().monday))
+		: new Set<string>();
 	return entries
-		.filter((e) => e.method === "llm" || barren.has(e.name))
+		.filter((e) => e.method === "llm" || barren === null || barren.has(e.name))
 		.map((e) => (e.domains?.[0] ? `${e.name} (${e.domains[0]})` : e.name));
 }
 
@@ -229,10 +248,6 @@ export function requireEnv(name: string): string {
 	const val = process.env[name];
 	if (!val) throw new Error(`${name} env var is required`);
 	return val;
-}
-
-export function rawPath(city: string, provider: string, tier: string): string {
-	return join(DATA_ROOT, city, provider, "raw", `${tier}.json`);
 }
 
 export function curatedPath(
@@ -316,7 +331,13 @@ export function isDuplicateEvent(
 	a: EventFingerprint,
 	b: EventFingerprint,
 ): boolean {
-	if (a.date && b.date && a.date !== b.date) return false;
+	// Both dates must be known and equal. Treating a missing date as
+	// "matches anything" let one undated artifact swallow every event whose
+	// title it prefixed: ["Live Music" (no date), "Live Music at The Triffid"
+	// (3 Sep), "Live Music Sundays" (7 Sep)] collapsed to just the artifact,
+	// because the fingerprint scan keeps the first occurrence. Keeping a
+	// duplicate is recoverable; deleting a real event is not.
+	if (!a.date || !b.date || a.date !== b.date) return false;
 	return titlesMatch(a.title, b.title);
 }
 

@@ -4,7 +4,7 @@ import DateRangePicker from "../DateRangePicker";
 import PastFilter from "./PastFilter";
 
 export default function DateFilter() {
-	const { dateRange, setDateRange, weekStart, weekEnd } = useEventsContext();
+	const { dateRange, setDateRange, dateMin, dateMax } = useEventsContext();
 	const today = todayIso();
 	const tomorrow = tomorrowIso();
 
@@ -37,8 +37,8 @@ export default function DateFilter() {
 			<DateRangePicker
 				value={pickerValue}
 				onChange={setDateRange}
-				minDate={weekStart}
-				maxDate={weekEnd}
+				minDate={dateMin}
+				maxDate={dateMax}
 			/>
 		</span>
 	);

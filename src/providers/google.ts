@@ -1,12 +1,11 @@
 import { GoogleGenAI } from "@google/genai";
 import { dedupeEvents } from "../common.ts";
-import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
+import type { ProviderOptions, SearchResult } from "./base.ts";
 import { BaseProvider, chunkArray, splitIntoBatches } from "./base.ts";
+import { geminiText } from "./gemini.ts";
 
 const SEARCH_MODEL = "gemini-3.1-flash-lite";
-const DISCOVERY_MODEL = "gemini-3.5-flash";
 const CURATE_MODEL = "gemini-3.1-flash-lite";
-const RETRY_DELAYS = [10_000, 30_000, 90_000];
 
 export class GoogleProvider extends BaseProvider {
 	readonly name = "google";
@@ -23,60 +22,19 @@ export class GoogleProvider extends BaseProvider {
 		this.ai = new GoogleGenAI({ apiKey });
 	}
 
-	private async withRetry<T>(fn: () => Promise<T>): Promise<T> {
-		for (let i = 0; i < RETRY_DELAYS.length; i++) {
-			try {
-				return await fn();
-			} catch (err) {
-				const code =
-					(err as { status?: number; code?: number }).status ??
-					(err as { status?: number; code?: number }).code;
-				if (code !== 503 || i === RETRY_DELAYS.length - 1) throw err;
-				const delay = RETRY_DELAYS[i];
-				console.error(
-					`  ⚠ Gemini 503 — retrying in ${delay / 1000}s (attempt ${i + 1}/${RETRY_DELAYS.length})…`,
-				);
-				await new Promise((r) => setTimeout(r, delay));
-			}
-		}
-		return fn();
-	}
-
 	private async generate(
 		system: string,
 		prompt: string,
 		maxOutputTokens = 8000,
 	): Promise<string> {
-		const response = await this.withRetry(() =>
-			this.ai.models.generateContent({
-				model: SEARCH_MODEL,
-				contents: prompt,
-				config: {
-					systemInstruction: system,
-					tools: [{ googleSearch: {} }],
-					maxOutputTokens,
-				},
-			}),
-		);
-		return response.text ?? "";
-	}
-
-	private async generatePlain(
-		system: string,
-		prompt: string,
-		maxOutputTokens = 4000,
-	): Promise<string> {
-		const response = await this.withRetry(() =>
-			this.ai.models.generateContent({
-				model: DISCOVERY_MODEL,
-				contents: prompt,
-				config: {
-					systemInstruction: system,
-					maxOutputTokens,
-				},
-			}),
-		);
-		return response.text ?? "";
+		return geminiText(this.ai, {
+			stage: "search/google",
+			model: SEARCH_MODEL,
+			contents: prompt,
+			systemInstruction: system,
+			search: true,
+			maxOutputTokens,
+		});
 	}
 
 	async curate(
@@ -94,7 +52,12 @@ export class GoogleProvider extends BaseProvider {
 			await Promise.all(
 				rawBatches.map(async (batch, i) => {
 					const batchLabel = `${label} extract ${i + 1}/${rawBatches.length}`;
-					const raw = await this.curateText(batch, extractSystem, 16000);
+					const raw = await this.curateText(
+						batch,
+						extractSystem,
+						16000,
+						"curate/extract",
+					);
 					return this.parseEvents(raw, batchLabel);
 				}),
 			)
@@ -134,18 +97,15 @@ export class GoogleProvider extends BaseProvider {
 		rawText: string,
 		systemInstruction: string,
 		maxOutputTokens = 65536,
+		stage = "curate/enrich",
 	): Promise<string> {
-		const response = await this.withRetry(() =>
-			this.ai.models.generateContent({
-				model: CURATE_MODEL,
-				contents: rawText,
-				config: {
-					systemInstruction,
-					maxOutputTokens,
-				},
-			}),
-		);
-		return response.text ?? "";
+		return geminiText(this.ai, {
+			stage,
+			model: CURATE_MODEL,
+			contents: rawText,
+			systemInstruction,
+			maxOutputTokens,
+		});
 	}
 
 	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
@@ -164,15 +124,5 @@ export class GoogleProvider extends BaseProvider {
 
 		const events = await opts.curate(rawText, opts.cityCfg.name, label);
 		return { events };
-	}
-
-	async findSources(cityName: string): Promise<SourceResult> {
-		const label = "google";
-		console.log(`[${label}] Discovering event sources for ${cityName}…`);
-		const raw = await this.generatePlain(
-			this.buildFindSourcesSystem(cityName),
-			this.buildFindSourcesUser(cityName),
-		);
-		return this.parseSourcesJson(raw, label);
 	}
 }

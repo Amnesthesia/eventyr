@@ -1,15 +1,26 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { fmtDate, INTERESTS, llmSourceStrings } from "../common.ts";
-import type { ProviderOptions, SearchResult, SourceResult } from "./base.ts";
+import type { ProviderOptions, SearchResult } from "./base.ts";
 import {
 	BaseProvider,
 	OUTPUT_FORMAT_RULES,
 	TIER_INSTRUCTIONS,
 } from "./base.ts";
 
+// Kept on Sonnet 5 deliberately. The obvious cost lever — dropping to Haiku
+// 4.5 at half the token rate — is the wrong one twice over: agentic web search
+// is exactly where a small model degrades, and Haiku 4.5 predates 4.6 so it
+// cannot use dynamic filtering at all (it would need
+// allowed_callers: ["direct"], i.e. every raw search result back in context,
+// which is where this provider's cost actually goes).
 const SEARCH_MODEL = "claude-sonnet-5";
-const DISCOVERY_MODEL = "claude-opus-4-7";
-const MAX_WEB_SEARCHES = 8;
+/**
+ * Searches per tier. Web search bills $10 per 1,000 searches on top of tokens,
+ * so 8 per tier across 3 tiers was $0.24 per city-week in search fees alone —
+ * $37/year across three cities. Anthropic's own guidance is 1–3 searches for
+ * simple lookups; four leaves room for a couple of retries on a tier.
+ */
+const MAX_WEB_SEARCHES = 4;
 
 export class AnthropicProvider extends BaseProvider {
 	readonly name = "anthropic";
@@ -55,9 +66,26 @@ export class AnthropicProvider extends BaseProvider {
 
 		const response = await this.client.messages.create({
 			model: SEARCH_MODEL,
-			max_tokens: 4000,
+			// 4000 was truncating: two of three tiers hit max_tokens and one
+			// returned nothing usable at all, so the cap was silently costing
+			// events. Output is $10/1M here, so the extra headroom is worth a
+			// fraction of a cent against losing a whole tier.
+			max_tokens: 8000,
 			tools: [
 				{
+					// Dynamic filtering: Claude writes code that filters search
+					// results before they enter the context window, instead of
+					// every raw result landing there. That context is what was
+					// costing the money — ~63k cache-write tokens per tier call
+					// at 1.25x the input rate, which dwarfed the search fees.
+					//
+					// Basic search, NOT the dynamic-filtering variant
+					// (web_search_20260209). Dynamic filtering cut cost hard —
+					// cache writes fell from ~63k to 5-11k tokens per tier —
+					// but it returned NO_EVENTS_FOUND on every tier at both 4
+					// and 8 searches: the filter code discards the listing
+					// content this task needs. Measured, not assumed; do not
+					// "optimise" back to it without re-checking event counts.
 					type: "web_search_20250305" as const,
 					name: "web_search",
 					max_uses: MAX_WEB_SEARCHES,
@@ -68,14 +96,21 @@ export class AnthropicProvider extends BaseProvider {
 			messages: [{ role: "user", content: userMsg }],
 		});
 
-		const searchCalls = response.content.filter(
-			(b) => b.type === "server_tool_use",
-		).length;
+		// The authoritative billed count, rather than counting response blocks:
+		// with dynamic filtering the searches are nested inside code execution
+		// and response_inclusion hides them from the response entirely.
+		const searchCalls =
+			response.usage.server_tool_use?.web_search_requests ?? 0;
 		const cacheRead = response.usage.cache_read_input_tokens ?? 0;
 		const cacheWrite = response.usage.cache_creation_input_tokens ?? 0;
 		console.log(
-			`  [${label}] ${searchCalls} web search(es) | cache: ${cacheRead} read / ${cacheWrite} write`,
+			`  [${label}] ${searchCalls} web search(es) | tokens: ${response.usage.input_tokens} in / ${response.usage.output_tokens} out | cache: ${cacheRead} read / ${cacheWrite} write`,
 		);
+		if (response.stop_reason === "max_tokens") {
+			console.warn(
+				`  ⚠ [${label}] response hit max_tokens — the event list is truncated`,
+			);
+		}
 
 		const rawText = response.content
 			.filter((b): b is Anthropic.TextBlock => b.type === "text")
@@ -86,75 +121,5 @@ export class AnthropicProvider extends BaseProvider {
 
 		const events = await opts.curate(rawText, opts.cityCfg.name, label);
 		return { events };
-	}
-
-	async findSources(cityName: string): Promise<SourceResult> {
-		const label = "anthropic";
-		console.log(`[${label}] Discovering event sources for ${cityName}…`);
-
-		const systemPrompt = `You are helping set up an automated weekly events digest for ${cityName}.
-
-Find the best websites to search for local in-person events in this city and
-sort them into three tiers:
-
-AGGREGATORS — platforms that index events from many sources (duplicates across
-  aggregators are expected). Examples: Eventbrite, Eventfinda, Meetup, Humanitix,
-  local event guides (Broadsheet, Urban List, WeekendNotes, Must Do, Fever), tourism
-  portals (Visit X), local community diary sites.
-
-INSTITUTIONS — organisations that run their own independent event programmes; each
-  has unique events not listed elsewhere. Examples: city/council events pages,
-  state libraries, universities, major museums, galleries, concert halls, theatres,
-  performing arts companies.
-
-INDEPENDENTS — niche, community-facing venues and groups whose events rarely appear
-  in aggregators. Examples: independent bookshops with events, small music venues,
-  indie galleries, hackerspaces/makerspaces, board-game communities, philosophy
-  groups, language exchange groups, creative spaces, bars/cafes with regular events.
-
-Your response MUST be a single raw compact JSON object and NOTHING else — no preamble, no
-explanation, no reasoning, no markdown, no code fences, no whitespace between elements.
-Do not write any text before or after the JSON. Your entire response is the JSON object,
-starting with { and ending with }.
-
-The object has exactly three keys: "aggregators", "institutions", "independents".
-Each key maps to an array of source description strings: "Source Name (url)".
-
-Example (your full response should look exactly like this):
-{"aggregators":["Eventbrite ${cityName} (eventbrite.com.au)"],"institutions":["State Library (slq.qld.gov.au)"],"independents":["Local Bookshop (bookshop.com.au/events)"]}`;
-
-		const response = await this.client.messages.create({
-			model: DISCOVERY_MODEL,
-			max_tokens: 16000,
-			tools: [
-				{
-					type: "web_search_20250305" as const,
-					name: "web_search",
-					max_uses: 20,
-				},
-			],
-			system: systemPrompt,
-			messages: [
-				{
-					role: "user",
-					content:
-						`Find all the best event sources for ${cityName}, sorted into the three ` +
-						"tiers described in your instructions. Search the web to find accurate, " +
-						"current URLs. Return a JSON object with aggregators, institutions, and independents.",
-				},
-			],
-		});
-
-		const searches = response.content.filter(
-			(b) => b.type === "server_tool_use",
-		).length;
-		console.log(`[${label}] ${searches} web search(es)`);
-
-		const raw = response.content
-			.filter((b): b is Anthropic.TextBlock => b.type === "text")
-			.map((b) => b.text)
-			.join("");
-
-		return this.parseSourcesJson(raw, label);
 	}
 }

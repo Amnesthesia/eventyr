@@ -10,6 +10,7 @@
 //   pnpm test-adapter <url> --all     # skip the this-week filter
 
 import { getWeekRange, requireEnv, toISODate } from "../common.ts";
+import { installUsageReporting } from "../providers/gemini.ts";
 import { applyAnnotation, createGeminiAnnotator } from "./annotate.ts";
 import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
@@ -30,7 +31,7 @@ if (!url) {
 
 const parsed = new URL(url); // throws with a clear message on a malformed URL
 const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
-const { monday, sunday } = getWeekRange();
+const { sunday } = getWeekRange();
 
 const source: SourceDefinition = {
 	id: `manual-test--${parsed.hostname}`,
@@ -45,15 +46,13 @@ const source: SourceDefinition = {
 		name: "",
 		address: null,
 		suburb: null,
-		lat: null,
-		lng: null,
-		aliases: [],
 	},
 	strategy: "html",
 	sourceTier: "independents",
-	schedule: "weekly",
 	note: "ad-hoc CLI test source, not part of any city registry",
 };
+
+installUsageReporting();
 
 const adapter = createPageAdapter(source, {
 	fetcher: new SourceFetcher(),
@@ -72,11 +71,14 @@ if (RAW) {
 	// --all widens the window so nothing is date-filtered out, which is what
 	// you want when inspecting a page in isolation rather than as this week's
 	// contribution.
-	const from = ALL ? "0000-01-01" : toISODate(monday);
-	const to = ALL ? "9999-12-31" : toISODate(sunday);
+	const from = ALL ? "0000-01-01" : toISODate(new Date());
+	const to = ALL
+		? "9999-12-31"
+		: toISODate(new Date(sunday.getTime() + 7 * 86_400_000));
 	const { prepared, stats } = prepareCandidates(candidates, source, from, to);
 	console.error(
-		`  ${stats.kept} usable  (dropped: ${stats.noTitle} no title, ${stats.noDate} no date, ${stats.outsideWeek} outside ${ALL ? "range" : "this week"})`,
+		`  ${stats.total} found → ${stats.kept} in window` +
+			`  (${stats.noDate} undated, ${stats.past} past, ${stats.later} later, ${stats.noTitle} untitled)`,
 	);
 
 	let events: Record<string, unknown>[] = [];

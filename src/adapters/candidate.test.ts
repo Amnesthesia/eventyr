@@ -39,13 +39,9 @@ const SOURCE: SourceDefinition = {
 		name: "Test Venue",
 		address: null,
 		suburb: null,
-		lat: null,
-		lng: null,
-		aliases: [],
 	},
 	strategy: "html",
 	sourceTier: "independents",
-	schedule: "weekly",
 	note: "test fixture",
 };
 

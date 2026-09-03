@@ -20,26 +20,30 @@
     "messaging": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/messaging.ts",
     "add-city": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/add_city.ts",
     "probe-sources": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/probe.ts",
+    "discover-sources": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/discover.ts",
     "test-adapter": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/testUrl.ts",
-    "test": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts'"
+    "test": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts' 'app/**/*.test.ts'",
+    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app && pnpm test"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",
     "@astrojs/react": "^5.0.5",
     "@google/genai": "^2.3.0",
-    "@internationalized/date": "^3.12.1",
     "@picocss/pico": "^2.0.6",
     "astro": "^6.3.7",
+    "chrono-node": "^2.10.1",
     "got-scraping": "^4.2.1",
+    "he": "^1.2.0",
     "js-yaml": "^4.1.1",
     "lucide-react": "^0.469.0",
     "openai": "^6.38.0",
     "react": "^18.3.1",
-    "react-aria-components": "^1.17.0",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "robots-parser": "^3.0.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.15",
+    "@types/he": "^1.2.3",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^25.8.0",
     "@types/react": "^18.3.12",

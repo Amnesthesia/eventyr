@@ -17,10 +17,5 @@
 			"@react/*": ["./app/*"]
 		}
 	},
-	"include": ["app", "src/pages", "src/layouts", "src/env.d.ts"],
-	"references": [
-		{
-			"path": "./tsconfig.scripts.json"
-		}
-	]
+	"include": ["app", "src/pages", "src/layouts", "src/env.d.ts"]
 }

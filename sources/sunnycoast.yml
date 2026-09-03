@@ -11,6 +11,13 @@
 
 name: Sunshine Coast
 timezone: Australia/Brisbane
+# See sources/brisbane.yml for what this is. 40 km from Maroochydore reaches
+# Noosa (28 km), Caloundra (17 km) and Maleny (27 km) while excluding Gympie
+# (65 km) and Brisbane (91 km).
+centre:
+  lat: -26.6528
+  lng: 153.0920
+  radiusKm: 40
 sources:
   aggregators:
     - name: Visit Sunshine Coast
@@ -234,6 +241,46 @@ sources:
       method: llm
       domains:
         - tafeqld.edu.au
+    - name: Noosa Shire Museum
+      method: llm
+      domains:
+        - noosamuseum.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Buderim Historical Society
+      method: llm
+      domains:
+        - buderimhistoricalsociety.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Peregian Digital Hub
+      method: llm
+      domains:
+        - peregianhub.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Discover Eumundi
+      method: llm
+      domains:
+        - discovereumundi.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Nambour Museum
+      method: llm
+      domains:
+        - nambourmuseum.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Eumundi Museum
+      method: llm
+      domains:
+        - eumundimuseum.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunshine Coast Heritage
+      method: llm
+      domains:
+        - heritage.sunshinecoast.qld.gov.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Landsborough Shire Historical Museum
+      method: llm
+      domains:
+        - landsboroughmuseum.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
   independents:
     - name: Solbar, Maroochydore
       method: llm
@@ -441,3 +488,273 @@ sources:
       method: llm
       domains:
         - caloundraartsandcrafts.org.au
+    - name: IN | artist run initiative
+      method: llm
+      domains:
+        - in-ari.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Cooroy Butter Factory Arts Centre
+      method: llm
+      domains:
+        - cooroybutterfactory.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Yandina Historic House
+      method: llm
+      domains:
+        - yandinahistorichouse.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Noosa Shire Arts & Crafts Association
+      method: llm
+      domains:
+        - noosaartsandcrafts.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Pomona Railway Station Gallery
+      method: llm
+      domains:
+        - pomonagallery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunshine Coast Symphony Orchestra
+      method: llm
+      domains:
+        - sunshinecoastsymphonyorchestra.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Caloundra Chorale and Theatre Company
+      method: llm
+      domains:
+        - caloundrachorale.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunshine Coast Choral Society
+      method: llm
+      domains:
+        - suncoastchoral.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Noosa Chorale
+      method: llm
+      domains:
+        - noosachorale.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Noosa Orchestra
+      method: llm
+      domains:
+        - noosaorchestra.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunshine Coast Youth Orchestra
+      method: llm
+      domains:
+        - scyo.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Noosa Film Society
+      method: llm
+      domains:
+        - noosafilmsoc.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Maleny Film Society
+      method: llm
+      domains:
+        - malenyfilmsociety.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Caloundra Film Festival
+      method: llm
+      domains:
+        - caloundrafilmfestival.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Bli Bli Hotel
+      method: llm
+      domains:
+        - bliblihotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brightwater Hotel
+      method: llm
+      domains:
+        - brightwaterhotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Buderim Tavern
+      method: llm
+      domains:
+        - buderimtavern.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tewantin Noosa RSL
+      method: llm
+      domains:
+        - noosarsl.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Maroochy RSL
+      method: llm
+      domains:
+        - maroochyrsl.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Nambour RSL Club
+      method: llm
+      domains:
+        - nambourrsl.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Cool Art Gallery
+      method: llm
+      domains:
+        - coolartgallery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Seaview Artists Gallery
+      method: llm
+      domains:
+        - seaviewartistsgallery.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brouhaha Brewery
+      method: llm
+      domains:
+        - brouhahabrewery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Terella Brewing
+      method: llm
+      domains:
+        - terellabrewing.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Land & Sea Brewery
+      method: llm
+      domains:
+        - landandseabrewery.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Caloundra Power Boat Club
+      method: llm
+      domains:
+        - caloundrapowerboat.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Alexandra Headland Surf Life Saving Club
+      method: llm
+      domains:
+        - alexsurfclub.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Surf Club Mooloolaba
+      method: llm
+      domains:
+        - thesurfclub.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Coolum Surf Club
+      method: llm
+      domains:
+        - coolumsurfclub.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Old Ambulance Station
+      method: llm
+      domains:
+        - theoldambulancestation.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunshine Coast Art Group
+      method: llm
+      domains:
+        - sunshinecoastartgroup.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Salti Reads Caloundra
+      method: llm
+      domains:
+        - saltireadscaloundra.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Montville Art Gallery
+      method: llm
+      domains:
+        - montvilleartgallery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunshine & Sons
+      method: llm
+      domains:
+        - sunshineandsons.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Moffat Beach Brewing Co.
+      method: llm
+      domains:
+        - moffatbeachbrewing.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunshine Coast Brewery
+      method: llm
+      domains:
+        - sunshinecoastbrewery.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunshine Brewery
+      method: llm
+      domains:
+        - sunshinebrewery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Club Mooloolaba
+      method: llm
+      domains:
+        - clubmooloolaba.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Club Kawana
+      method: llm
+      domains:
+        - clubkawana.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Coolum Beach Sports Club
+      method: llm
+      domains:
+        - coolumbeachsports.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Palmwoods Bowls Club
+      method: llm
+      domains:
+        - palmwoodsbowlsclub.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: DIVE Theatre Collective
+      method: llm
+      domains:
+        - divetheatre.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Spiral Inc
+      method: llm
+      domains:
+        - spiralinc.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Buderim War Memorial Community Association
+      method: llm
+      domains:
+        - bwmca.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Buderim Youth Theatre of Excellence
+      method: llm
+      domains:
+        - byteyouththeatre.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Funny Coast Comedy
+      method: llm
+      domains:
+        - funnycoast.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunshine Coast Comedy Festival
+      method: llm
+      domains:
+        - sunshinecoastcomedyfestival.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Funny Coast Comedy
+      method: llm
+      domains:
+        - funnycoastcomedy.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Big Pineapple Music Festival
+      method: llm
+      domains:
+        - bigpineapplefestival.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Peregian Originals
+      method: llm
+      domains:
+        - peregianoriginals.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Noosa Long Weekend Festival
+      method: llm
+      domains:
+        - noosalongweekend.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Curated Plate
+      method: llm
+      domains:
+        - thecuratedplate.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Pomona King of the Mountain
+      method: llm
+      domains:
+        - kingofthemountain.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Noosa Festival of Surfing
+      method: llm
+      domains:
+        - noosafestivalofsurfing.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.

@@ -3,23 +3,23 @@
 // Adapters fetch and parse known event sources deterministically; the LLM is
 // only used downstream (Phase 4) as a normaliser over already-extracted data.
 
-export const EXTRACTION_STRATEGIES = [
-	"jsonld",
-	"api",
-	"html",
-	"ics",
-	"rss",
-] as const;
+/** How a source's listing pages are fetched. */
+export type SourceStrategy = "jsonld" | "html";
 
-export type ExtractionStrategy = (typeof EXTRACTION_STRATEGIES)[number];
+/**
+ * Which path actually produced an event, recorded on its provenance. "api" is
+ * the embedded hydration JSON path (embeddedJson.ts), which has no matching
+ * fetch strategy — it is discovered in the body of a page fetched as "html".
+ *
+ * "ics" and "rss" used to be in this union with no implementation behind
+ * them anywhere, so a source declaring one silently ran the HTML path.
+ */
+export type ExtractionStrategy = SourceStrategy | "api";
 
 export interface VenueRecord {
 	name: string;
 	address: string | null;
 	suburb: string | null;
-	lat: number | null;
-	lng: number | null;
-	aliases: string[];
 }
 
 export interface SourceDefinition {
@@ -37,7 +37,7 @@ export interface SourceDefinition {
 	 */
 	domains: string[];
 	venue: VenueRecord;
-	strategy: ExtractionStrategy;
+	strategy: SourceStrategy;
 	/**
 	 * Which sources/{city}.yml tier this source was moved out of. Carried
 	 * forward so scraped output can be written under the same tier name the
@@ -45,8 +45,6 @@ export interface SourceDefinition {
 	 * classify adapter events with no special-casing.
 	 */
 	sourceTier: "aggregators" | "institutions" | "independents";
-	/** Fetch cadence, e.g. "daily" | "weekly". */
-	schedule: "daily" | "weekly";
 	/**
 	 * Any caveat about how this entry was populated — e.g. which probe run
 	 * verified its listing URL, or a known quirk of the source.
@@ -72,7 +70,7 @@ export interface RawListing {
 	contentType: string | null;
 	/** Path to the persisted raw response body on disk, or null on hard failure. */
 	bodyPath: string | null;
-	strategy: ExtractionStrategy;
+	strategy: SourceStrategy;
 }
 
 /**
@@ -154,7 +152,7 @@ export interface Fetcher {
 	fetch(
 		sourceId: string,
 		url: string,
-		strategy: ExtractionStrategy,
+		strategy: SourceStrategy,
 	): Promise<RawListing>;
 }
 

@@ -62,7 +62,10 @@ export function createPageAdapter(
 		},
 
 		async extract(raw: RawListing): Promise<CandidateEvent[]> {
-			if (raw.notModified || !raw.bodyPath) return [];
+			// A 304 still carries the cached body path — parse it. Returning []
+			// here overwrote the source's output with an empty payload whenever
+			// a listing page legitimately hadn't changed.
+			if (!raw.bodyPath) return [];
 			const body = readFileSync(raw.bodyPath, "utf-8");
 			const referenceDate = now();
 

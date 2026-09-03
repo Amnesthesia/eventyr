@@ -1,6 +1,7 @@
 import ActiveTagsBar from "./filters/ActiveTagsBar";
 import CategoryFilter from "./filters/CategoryFilter";
 import DateFilter from "./filters/DateFilter";
+import GroupByFilter from "./filters/GroupByFilter";
 import VibeFilter from "./filters/VibeFilter";
 
 export default function FilterBar() {
@@ -12,6 +13,9 @@ export default function FilterBar() {
 			</div>
 			<div className="filter-bar filter-bar--vibe">
 				<VibeFilter />
+			</div>
+			<div className="filter-bar filter-bar--group">
+				<GroupByFilter />
 			</div>
 			<ActiveTagsBar />
 		</div>
