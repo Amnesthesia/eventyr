@@ -1,12 +1,14 @@
 import { Bookmark, BookmarkCheck, CalendarDays, MapPin } from "lucide-react";
-import { useMemo } from "react";
-import { stripForDisplay } from "../../src/shared";
+import { useState } from "react";
+import { costLabel, stripForDisplay } from "../../src/shared.ts";
 import { useEventsContext } from "../context";
+import { useLongPress } from "../hooks/useLongPress";
 import type { Event } from "../types";
 import { catToSlug } from "../utils/categorySlug";
 import { KEY_TO_SLUG } from "../utils/citySlug";
 import { VIBE_LABELS, vibesOf } from "../utils/vibes";
 import AddToCalendar from "./AddToCalendar";
+import CardActionSheet from "./CardActionSheet";
 import { CategoryIcon } from "./CategoryIcon";
 import ShareButton from "./ShareButton";
 
@@ -38,11 +40,16 @@ export default function EventCard({
 	isStarred,
 	onStarClick,
 }: Props) {
-	const { activeTags, toggleTag, cityKey, vibeFilters, setVibe } =
+	const { activeTags, toggleTag, cityKey, vibeFilters, setVibe, costLocale } =
 		useEventsContext();
 	const citySlug = KEY_TO_SLUG[cityKey] ?? cityKey;
+	const [sheetOpen, setSheetOpen] = useState(false);
+	const longPress = useLongPress(() => setSheetOpen(true));
 	const catSlug = catToSlug(event.category);
-	const free = /free/.test((event.cost || "").toLowerCase());
+	// null when the value says neither a price nor "free" — "See link" is 294 of
+	// 643 events, and a pill carrying it tells a reader nothing.
+	const cost = costLabel(event.cost, costLocale);
+	const free = cost === "free";
 
 	const classes = [
 		"card",
@@ -63,15 +70,13 @@ export default function EventCard({
 	const title = stripForDisplay(event.title);
 	const description = stripForDisplay(event.description);
 
-	const cost = useMemo(() => {
-		if (free) return "free";
-		if (!event.cost) return "Not specified";
-		if (/ticketed/i.test(event.cost)) return "Ticketed";
-		return event.cost;
-	}, [event.cost, free]);
-
 	return (
-		<article className={classes} style={style} data-cat={catSlug}>
+		<article
+			className={classes}
+			style={style}
+			data-cat={catSlug}
+			{...longPress}
+		>
 			<div className="card-top">
 				<a className="card-cat" href={`/${citySlug}/${catSlug}`}>
 					<CategoryIcon name={event.category} size={11} strokeWidth={2.2} />
@@ -79,9 +84,9 @@ export default function EventCard({
 				</a>
 
 				<div className="card-top-right">
-					<span className={`card-cost${free ? " free" : ""}`}>
-						{free || /free/.test(cost || "") ? "free" : cost || "—"}
-					</span>
+					{cost && (
+						<span className={`card-cost${free ? " free" : ""}`}>{cost}</span>
+					)}
 					<AddToCalendar event={event} cityKey={cityKey} />
 					<ShareButton event={event} cityKey={cityKey} />
 					<button
@@ -103,7 +108,19 @@ export default function EventCard({
 				</div>
 			</div>
 			<h3 className="card-title">
-				{isTopPick && <em className="top-mark">✦</em>}
+				{isTopPick && (
+					// role="img" + aria-label rather than a bare glyph: to a screen
+					// reader "✦" is noise, and this is the card's only remaining
+					// top-pick marker now that the left rule is gone.
+					<span
+						className="top-mark"
+						role="img"
+						aria-label="Top pick"
+						title="Top pick"
+					>
+						✦
+					</span>
+				)}
 				{event.link ? (
 					<a href={event.link} target="_blank" rel="noopener">
 						{title}
@@ -194,6 +211,15 @@ export default function EventCard({
 					))}
 				</div>
 			</div>
+			{sheetOpen && (
+				<CardActionSheet
+					event={event}
+					cityKey={cityKey}
+					isStarred={isStarred}
+					onStarClick={onStarClick}
+					onClose={() => setSheetOpen(false)}
+				/>
+			)}
 		</article>
 	);
 }

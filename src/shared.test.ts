@@ -1,10 +1,12 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
+	costLabel,
 	eventHash,
 	eventPath,
 	eventSlug,
-	isLikelyImageUrl,
+	isCurrencyCode,
+	normaliseCurrency,
 	slugify,
 	stripForDisplay,
 } from "./shared.ts";
@@ -195,4 +197,104 @@ test("a broken or empty link is stripped, not left on the card", () => {
 		"Grab a ticket now",
 	);
 	assert.equal(stripForDisplay("Grab a [ticket]() now"), "Grab a ticket now");
+});
+
+test("costLabel drops values that say neither a price nor free", () => {
+	// "See link" is normalise.ts's fallback when a page gave no price, and it is
+	// 294 of 643 events — a pill carrying it tells a reader nothing. The event
+	// itself is never filtered out; only the badge goes.
+	for (const v of [
+		"See link",
+		"See website",
+		"Check website",
+		"Check ticket price",
+		"TBA",
+		"TBC",
+		"Unknown",
+		"Not specified",
+		"Price on application",
+		"Buy Tickets",
+		"Ticketed",
+		"n/a",
+		"—",
+		"",
+		"   ",
+	]) {
+		assert.equal(costLabel(v), null, JSON.stringify(v));
+	}
+	assert.equal(costLabel(undefined), null);
+	assert.equal(costLabel(42), null);
+});
+
+test("costLabel says free however the source spelled it", () => {
+	for (const v of [
+		"Free",
+		"FREE",
+		"free entry",
+		"$0",
+		"0",
+		"AUD 0",
+		"AUD 0.00",
+	]) {
+		assert.equal(costLabel(v), "free", JSON.stringify(v));
+	}
+});
+
+test("a single amount is formatted by Intl, not concatenated", () => {
+	// "AUD 25" used to reach the card verbatim. en-AU renders AUD as "$".
+	assert.equal(costLabel("AUD 25"), "$25");
+	assert.equal(costLabel("AUD 12.50"), "$12.50");
+	// A whole amount loses the pointless ".00"; real cents survive.
+	assert.equal(costLabel("$10.00"), "$10");
+	assert.equal(costLabel("$25"), "$25");
+	// The locale decides the symbol and its placement, not us.
+	assert.equal(
+		costLabel("25", { locale: "de-DE", currency: "EUR" }),
+		"25\u00a0€",
+	);
+	assert.equal(
+		costLabel("USD 25", { locale: "en-US", currency: "USD" }),
+		"$25",
+	);
+});
+
+test("anything more complex than one amount is left verbatim", () => {
+	// Reformatting these would lose the labels that make them useful.
+	for (const v of [
+		"$10 ONLINE | $15 ON THE DOOR",
+		"$2–$12",
+		"From $12",
+		"Sold Out",
+	]) {
+		assert.equal(costLabel(v), v);
+	}
+});
+
+test("a foreign currency code is corrected to the city's", () => {
+	// The Cave Inn declares priceCurrency: "USD" on every event, which reached
+	// the site as "USD 0". Every source in a city's list is a venue in that
+	// city, so the code is wrong rather than the price.
+	assert.equal(normaliseCurrency("USD 0", "AUD"), "AUD 0");
+	assert.equal(normaliseCurrency("USD 25", "AUD"), "AUD 25");
+	assert.equal(normaliseCurrency("usd 25", "AUD"), "AUD 25");
+	// Already the city's currency, or no code at all: untouched.
+	assert.equal(normaliseCurrency("AUD 20", "AUD"), "AUD 20");
+	assert.equal(normaliseCurrency("$25", "AUD"), "$25");
+	assert.equal(normaliseCurrency("Free", "AUD"), "Free");
+	assert.equal(normaliseCurrency("", "AUD"), "");
+	// A different city keeps its own currency rather than an AUD default.
+	assert.equal(normaliseCurrency("AUD 30", "NZD"), "NZD 30");
+});
+
+test("only a real ISO code is treated as a currency", () => {
+	// Asked of Intl rather than a hand-written list, so SGD and JPY count and
+	// three letters that merely precede a number do not.
+	assert.ok(isCurrencyCode("AUD"));
+	assert.ok(isCurrencyCode("sgd"));
+	assert.ok(isCurrencyCode("JPY"));
+	assert.equal(isCurrencyCode("XYZ"), false);
+	assert.equal(isCurrencyCode("ONL"), false);
+	assert.equal(isCurrencyCode("AU"), false);
+	// So a word that happens to sit before a number survives.
+	assert.equal(normaliseCurrency("ONLINE 25", "AUD"), "ONLINE 25");
 });

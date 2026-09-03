@@ -15,7 +15,7 @@
       "link": "https://www.loganarts.com.au/event/upcoming-exhibitions/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Upcoming Exhibitions is an arts exhibition held at Logan Art Gallery.",
+      "description": "Upcoming Exhibitions at Logan Art Gallery is an Arts / Exhibition event.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
@@ -52,14 +52,14 @@
     },
     {
       "title": "Kimberley College Dance Showcase 2026",
-      "datetime": "Thu 3 Sep",
-      "datetime_iso": "2026-09-03",
+      "datetime": "Thu 3 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-03T18:00:00",
       "datetime_end_iso": "2026-09-04",
       "location": "Logan Entertainment Centre",
       "link": "https://www.loganarts.com.au/event/kimberley-college-dance-showcase-2026/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Kimberley College Dance Showcase 2026 is a dance performance held at Logan Entertainment Centre.",
+      "description": "Kimberley College Dance Showcase 2026 at Logan Entertainment Centre is a Concert / Music event.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -74,20 +74,20 @@
     },
     {
       "title": "HAPPENING in Logan",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
+      "datetime": "Fri 4 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-04T17:00:00",
       "datetime_end_iso": "",
       "location": "Logan Art Gallery",
       "link": "https://www.loganarts.com.au/event/special-event-happening-in-logan/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "HAPPENING in Logan is an arts exhibition held at Logan Art Gallery.",
+      "description": "HAPPENING in Logan at Logan Art Gallery is an Arts / Exhibition event.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
-        "exhibition",
-        "logan"
+        "gallery",
+        "exhibition"
       ],
       "social": false,
       "intellectual": false,
@@ -96,8 +96,8 @@
     },
     {
       "title": "Social Saturdays: Book Club",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "datetime": "Sat 5 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-05T10:30:00",
       "datetime_end_iso": "",
       "location": "Living Museum of Logan",
       "link": "https://www.loganarts.com.au/event/social-saturdays-book-club-6/",
@@ -118,8 +118,8 @@
     },
     {
       "title": "Prelude Dance Centre – 10 Years of Joy!",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "datetime": "Sat 5 Sep, 4:30 PM",
+      "datetime_iso": "2026-09-05T16:30:00",
       "datetime_end_iso": "",
       "location": "Kingston Butter Factory Cultural Precinct",
       "link": "https://www.loganarts.com.au/event/prelude-dance-ten-years-joy/",
@@ -153,7 +153,7 @@
       "tags": [
         "art",
         "exhibition",
-        "education"
+        "local"
       ],
       "social": false,
       "intellectual": false,
@@ -162,8 +162,8 @@
     },
     {
       "title": "The Line & Rail Artspace: Beyond the classroom opening event",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "datetime": "Sat 5 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-05T14:00:00",
       "datetime_end_iso": "",
       "location": "The Line & Rail Artspace",
       "link": "https://www.loganarts.com.au/event/the-line-rail-artspace-beyond-the-classroom-opening-event/",
@@ -184,8 +184,8 @@
     },
     {
       "title": "Amplify Battle of the Bands 2026",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "datetime": "Sat 5 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-05T18:30:00",
       "datetime_end_iso": "",
       "location": "Logan Entertainment Centre",
       "link": "https://www.loganarts.com.au/event/amplify-battle-of-the-bands-2026/",
@@ -206,8 +206,8 @@
     },
     {
       "title": "Mayes Cottage Spring Soirée",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "datetime": "Sat 5 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-05T10:30:00",
       "datetime_end_iso": "",
       "location": "Mayes Cottage",
       "link": "https://www.loganarts.com.au/event/mayes-cottage-spring-soiree/",
@@ -219,7 +219,7 @@
       "tags": [
         "social",
         "history",
-        "spring"
+        "party"
       ],
       "social": true,
       "intellectual": false,
@@ -228,8 +228,8 @@
     },
     {
       "title": "Shailer Park SHS – Ignite Dance Academy – Magic",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "datetime": "Tue 8 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-08T18:00:00",
       "datetime_end_iso": "",
       "location": "Kingston Butter Factory Cultural Precinct",
       "link": "https://www.loganarts.com.au/event/shailer-park-ignite-dance-academy-magic/",
@@ -250,8 +250,8 @@
     },
     {
       "title": "Wakakirri QLD Awards Night 2026",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "datetime": "Tue 8 Sep, 7:15 PM",
+      "datetime_iso": "2026-09-08T19:15:00",
       "datetime_end_iso": "",
       "location": "Logan Entertainment Centre",
       "link": "https://www.loganarts.com.au/event/wakakirri-qld-awards-night-2026/",
@@ -272,8 +272,8 @@
     },
     {
       "title": "Logan Business Distinction Awards 2026",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 6:45 PM",
+      "datetime_iso": "2026-09-11T18:45:00",
       "datetime_end_iso": "",
       "location": "Logan Entertainment Centre",
       "link": "https://www.loganarts.com.au/event/logan-business-distinction-awards-2026/",
@@ -294,8 +294,8 @@
     },
     {
       "title": "Exhibition opening",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-11T17:00:00",
       "datetime_end_iso": "",
       "location": "Logan Art Gallery",
       "link": "https://www.loganarts.com.au/event/exhibition-opening-9/",
@@ -306,8 +306,8 @@
       "category": "Arts / Exhibition",
       "tags": [
         "art",
-        "opening",
-        "gallery"
+        "gallery",
+        "opening"
       ],
       "social": true,
       "intellectual": false,
@@ -316,8 +316,8 @@
     },
     {
       "title": "Life drawing | Afternoon session",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 1:30 PM",
+      "datetime_iso": "2026-09-12T13:30:00",
       "datetime_end_iso": "",
       "location": "Logan Art Gallery",
       "link": "https://www.loganarts.com.au/event/life-drawing-afternoon/",
@@ -338,8 +338,8 @@
     },
     {
       "title": "Underdog Film Fest 2026",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-12T11:00:00",
       "datetime_end_iso": "2026-09-13",
       "location": "Kingston Butter Factory Cultural Precinct",
       "link": "https://www.loganarts.com.au/event/underdog-film-fest-2026/",
@@ -367,7 +367,7 @@
       "link": "https://www.loganarts.com.au/event/upcoming-exhibitions/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Upcoming Exhibitions is an arts exhibition held at Art Gallery.",
+      "description": "Upcoming Exhibitions at Art Gallery is an Arts / Exhibition event.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
@@ -389,7 +389,7 @@
       "link": "https://www.loganarts.com.au/event/factory-indelarts-drama-workshop-series-2026-2/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "fACTory | indelarts Drama Workshop Series 2026 is a workshop held at KBF.",
+      "description": "fACTory | indelarts Drama Workshop Series 2026 at KBF is a Workshop / Class event.",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
@@ -411,7 +411,7 @@
       "link": "https://www.loganarts.com.au/event/kimberley-college-dance-showcase-2026/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Kimberley College Dance Showcase 2026 is a dance performance held at LEC.",
+      "description": "Kimberley College Dance Showcase 2026 at LEC is a Concert / Music event.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -433,13 +433,13 @@
       "link": "https://www.loganarts.com.au/event/special-event-happening-in-logan/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "HAPPENING in Logan is an arts exhibition held at Art Gallery.",
+      "description": "HAPPENING in Logan at Art Gallery is an Arts / Exhibition event.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
-        "exhibition",
-        "logan"
+        "gallery",
+        "exhibition"
       ],
       "social": false,
       "intellectual": false,
@@ -455,7 +455,7 @@
       "link": "https://www.loganarts.com.au/event/social-saturdays-book-club-6/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Social Saturdays: Book Club is a social meetup held at Living Museum of Logan.",
+      "description": "Social Saturdays: Book Club at Living Museum of Logan is a Social / Meetup event.",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
@@ -469,7 +469,7 @@
       "creative": false
     },
     {
-      "title": "Prelude Dance Centre &#8211; 10 Years of Joy!",
+      "title": "Prelude Dance Centre – 10 Years of Joy!",
       "datetime": "Sat 5 Sep",
       "datetime_iso": "2026-09-05",
       "datetime_end_iso": "",
@@ -477,7 +477,7 @@
       "link": "https://www.loganarts.com.au/event/prelude-dance-ten-years-joy/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Prelude Dance Centre – 10 Years of Joy! is a dance performance held at KBF.",
+      "description": "Prelude Dance Centre – 10 Years of Joy! at KBF is a Concert / Music event.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -491,7 +491,7 @@
       "creative": true
     },
     {
-      "title": "The Line &#038; Rail Artspace: Beyond the classroom exhibition",
+      "title": "The Line & Rail Artspace: Beyond the classroom exhibition",
       "datetime": "Sat 5 Sep",
       "datetime_iso": "2026-09-05",
       "datetime_end_iso": "2026-10-10",
@@ -499,13 +499,13 @@
       "link": "https://www.loganarts.com.au/event/the-line-rail-artspace-beyond-the-classroom-exhibition/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "The Line & Rail Artspace: Beyond the classroom exhibition is an arts exhibition held at The Line & Rail Artspace.",
+      "description": "The Line & Rail Artspace: Beyond the classroom exhibition at The Line & Rail Artspace is an Arts / Exhibition event.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
         "exhibition",
-        "education"
+        "local"
       ],
       "social": false,
       "intellectual": false,
@@ -513,7 +513,7 @@
       "creative": true
     },
     {
-      "title": "The Line &#038; Rail Artspace: Beyond the classroom opening event",
+      "title": "The Line & Rail Artspace: Beyond the classroom opening event",
       "datetime": "Sat 5 Sep",
       "datetime_iso": "2026-09-05",
       "datetime_end_iso": "",
@@ -521,7 +521,7 @@
       "link": "https://www.loganarts.com.au/event/the-line-rail-artspace-beyond-the-classroom-opening-event/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "The Line & Rail Artspace: Beyond the classroom opening event is an arts exhibition held at The Line & Rail Artspace.",
+      "description": "The Line & Rail Artspace: Beyond the classroom opening event at The Line & Rail Artspace is an Arts / Exhibition event.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
@@ -543,7 +543,7 @@
       "link": "https://www.loganarts.com.au/event/amplify-battle-of-the-bands-2026/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Amplify Battle of the Bands 2026 is a concert held at LEC.",
+      "description": "Amplify Battle of the Bands 2026 at LEC is a Concert / Music event.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -565,13 +565,13 @@
       "link": "https://www.loganarts.com.au/event/mayes-cottage-spring-soiree/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Mayes Cottage Spring Soirée is a social meetup held at Mayes Cottage.",
+      "description": "Mayes Cottage Spring Soirée at Mayes Cottage is a Social / Meetup event.",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "social",
         "history",
-        "spring"
+        "party"
       ],
       "social": true,
       "intellectual": false,

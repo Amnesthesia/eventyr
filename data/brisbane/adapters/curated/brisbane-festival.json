@@ -394,7 +394,7 @@
       "category": "Concert / Music",
       "tags": [
         "music",
-        "quiz",
+        "trivia",
         "performance"
       ],
       "social": true,
@@ -734,8 +734,8 @@
     },
     {
       "title": "Mindful Art Mornings at Museum of Brisbane",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
       "link": "https://brisbanefestival.com.au/events/mindful-art-mornings-at-museum-of-brisbane",
@@ -745,8 +745,8 @@
       "image": "https://brisbanefestival.com.au/mob-mindful-art-mornings-photo-katie-bennett",
       "category": "Workshop / Class",
       "tags": [
-        "art",
         "mindfulness",
+        "art",
         "wellbeing"
       ],
       "social": false,
@@ -790,8 +790,8 @@
       "category": "Public Lecture",
       "tags": [
         "talk",
-        "philosophy",
-        "crime"
+        "crime",
+        "philosophy"
       ],
       "social": false,
       "intellectual": true,
@@ -856,13 +856,13 @@
       "category": "Workshop / Class",
       "tags": [
         "dance",
-        "workshop",
-        "fitness"
+        "fitness",
+        "social"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
-      "creative": false
+      "creative": true
     },
     {
       "title": "Common People Dance Project Workshop",
@@ -969,7 +969,7 @@
         "wellness",
         "exercise"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": false
@@ -1057,7 +1057,7 @@
         "art",
         "wellbeing"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true
@@ -1077,7 +1077,7 @@
       "tags": [
         "writing",
         "literature",
-        "creative"
+        "books"
       ],
       "social": false,
       "intellectual": true,
@@ -1099,7 +1099,7 @@
       "tags": [
         "choir",
         "singing",
-        "community"
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -1121,7 +1121,7 @@
       "tags": [
         "choir",
         "singing",
-        "community"
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -1165,7 +1165,7 @@
       "tags": [
         "fitness",
         "outdoor",
-        "community"
+        "active"
       ],
       "social": true,
       "intellectual": false,
@@ -1183,11 +1183,11 @@
       "source": "Brisbane Festival",
       "description": "VOU Fiji & Cluster Arts",
       "image": "https://www.brisbanefestival.com.au/fijian-flying-circus-_-vou-2",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
         "circus",
         "performance",
-        "arts"
+        "theatre"
       ],
       "social": false,
       "intellectual": false,
@@ -1209,7 +1209,7 @@
       "tags": [
         "party",
         "community",
-        "local"
+        "social"
       ],
       "social": true,
       "intellectual": false,
@@ -1251,9 +1251,9 @@
       "image": "https://www.brisbanefestival.com.au/copy-of-setinstonemedia_thefarm_0426_farm-theatre-co-046-(2)",
       "category": "Arts / Exhibition",
       "tags": [
-        "dance",
         "performance",
-        "theatre"
+        "theatre",
+        "dance"
       ],
       "social": false,
       "intellectual": false,
@@ -1296,8 +1296,8 @@
       "category": "Concert / Music",
       "tags": [
         "orchestra",
-        "classical",
-        "symphony"
+        "symphony",
+        "classical"
       ],
       "social": false,
       "intellectual": false,
@@ -1317,8 +1317,8 @@
       "image": "https://www.brisbanefestival.com.au/bf26_social_1080x1080_no_image-daybreaker",
       "category": "Social / Meetup",
       "tags": [
-        "dance",
         "party",
+        "dance",
         "morning"
       ],
       "social": true,
@@ -1387,7 +1387,7 @@
         "performance",
         "live"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1403,11 +1403,11 @@
       "source": "Brisbane Festival",
       "description": "Opera Queensland",
       "image": "https://www.brisbanefestival.com.au/are-you-lonesome-tonight_dylan-evans-photography_hero-shot2",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
         "opera",
-        "music",
-        "performance"
+        "performance",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -1428,8 +1428,8 @@
       "category": "Arts / Exhibition",
       "tags": [
         "exhibition",
-        "film",
-        "design"
+        "design",
+        "film"
       ],
       "social": false,
       "intellectual": true,
@@ -1445,13 +1445,13 @@
       "link": "https://www.brisbanefestival.com.au/events/moorooka-feast-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "The Moorooka Feast is a social event held at Brisbane Festival.",
+      "description": "The Moorooka Feast is a community event held at Brisbane Festival.",
       "image": "https://www.brisbanefestival.com.au/moorooka-feast_brisbane-festival_nikita-pere-58",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
         "food",
         "community",
-        "festival"
+        "social"
       ],
       "social": true,
       "intellectual": false,
@@ -1473,7 +1473,7 @@
       "tags": [
         "party",
         "community",
-        "local"
+        "social"
       ],
       "social": true,
       "intellectual": false,
@@ -1495,7 +1495,7 @@
       "tags": [
         "music",
         "performance",
-        "outdoor"
+        "serenade"
       ],
       "social": true,
       "intellectual": false,
@@ -1538,8 +1538,8 @@
       "category": "Concert / Music",
       "tags": [
         "orchestra",
-        "classical",
-        "symphony"
+        "symphony",
+        "classical"
       ],
       "social": false,
       "intellectual": false,
@@ -1560,8 +1560,8 @@
       "category": "Concert / Music",
       "tags": [
         "music",
-        "quiz",
-        "comedy"
+        "trivia",
+        "performance"
       ],
       "social": true,
       "intellectual": true,
@@ -1585,7 +1585,7 @@
         "live",
         "music"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1603,11 +1603,11 @@
       "image": "https://www.brisbanefestival.com.au/the-temper-trap2",
       "category": "Concert / Music",
       "tags": [
-        "rock",
+        "pop",
         "live",
         "music"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1629,7 +1629,7 @@
         "live",
         "music"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1647,11 +1647,11 @@
       "image": "https://www.brisbanefestival.com.au/david-bailey_bf25_credit_j-ruckli",
       "category": "Concert / Music",
       "tags": [
-        "classical",
         "music",
+        "performance",
         "concert"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1693,7 +1693,7 @@
       "tags": [
         "performance",
         "theatre",
-        "arts"
+        "comedy"
       ],
       "social": false,
       "intellectual": false,
@@ -1713,9 +1713,9 @@
       "image": "https://www.brisbanefestival.com.au/copy-of-living-sculptures-how-the-birds-got-their-colours_credit-katie-bennett-2.jpg-(1)",
       "category": "Arts / Exhibition",
       "tags": [
+        "sculpture",
         "dance",
-        "indigenous",
-        "performance"
+        "indigenous"
       ],
       "social": false,
       "intellectual": false,
@@ -1757,9 +1757,9 @@
       "image": "https://www.brisbanefestival.com.au/morning-sessions_qcgu_greg-harm",
       "category": "Concert / Music",
       "tags": [
-        "classical",
+        "music",
         "performance",
-        "music"
+        "classical"
       ],
       "social": false,
       "intellectual": false,
@@ -1780,8 +1780,8 @@
       "category": "Concert / Music",
       "tags": [
         "piano",
-        "live",
-        "music"
+        "music",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -1803,7 +1803,7 @@
       "tags": [
         "performance",
         "theatre",
-        "art"
+        "contemporary"
       ],
       "social": false,
       "intellectual": false,
@@ -1830,7 +1830,7 @@
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
       "title": "QAGOMA Public Program: The Pop-Up Sock Puppet Studio",
@@ -1845,9 +1845,9 @@
       "image": "https://www.brisbanefestival.com.au/20260508_ccallistemon_jimhenson_sockpuppetpromo_187",
       "category": "Workshop / Class",
       "tags": [
+        "art",
         "craft",
-        "family",
-        "art"
+        "family"
       ],
       "social": true,
       "intellectual": false,
@@ -1865,11 +1865,11 @@
       "source": "Brisbane Festival",
       "description": "Quandamooka Yoolooburrabee Aboriginal Corporation",
       "image": "https://www.brisbanefestival.com.au/quandamooka_bf25_credit_nikki-michail-@nikkimichail",
-      "category": "Community / Other",
+      "category": "Arts / Exhibition",
       "tags": [
-        "festival",
         "indigenous",
-        "culture"
+        "culture",
+        "festival"
       ],
       "social": true,
       "intellectual": false,
@@ -1889,8 +1889,8 @@
       "image": "https://www.brisbanefestival.com.au/queensland-regional-art-awards-1-william-st-residency.-photograph-joe-ruckli-(2)",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
         "awards",
-        "visual art",
         "exhibition"
       ],
       "social": false,
@@ -1900,8 +1900,8 @@
     },
     {
       "title": "Mindful Art Mornings at Museum of Brisbane",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
       "link": "https://www.brisbanefestival.com.au/events/mindful-art-mornings-at-museum-of-brisbane",
@@ -1911,9 +1911,9 @@
       "image": "https://www.brisbanefestival.com.au/mob-mindful-art-mornings-photo-katie-bennett",
       "category": "Workshop / Class",
       "tags": [
-        "mindfulness",
         "art",
-        "wellbeing"
+        "mindfulness",
+        "wellness"
       ],
       "social": true,
       "intellectual": false,
@@ -1955,11 +1955,11 @@
       "image": "https://www.brisbanefestival.com.au/scorched-earth-credit-soundofphotography",
       "category": "Public Lecture",
       "tags": [
-        "talk",
         "crime",
-        "philosophy"
+        "philosophy",
+        "talk"
       ],
-      "social": true,
+      "social": false,
       "intellectual": true,
       "hands_on": false,
       "creative": false
@@ -1977,11 +1977,11 @@
       "image": "https://www.brisbanefestival.com.au/mama-does-derby-75",
       "category": "Public Lecture",
       "tags": [
-        "talk",
         "society",
-        "debate"
+        "debate",
+        "talk"
       ],
-      "social": true,
+      "social": false,
       "intellectual": true,
       "hands_on": false,
       "creative": false
@@ -2022,8 +2022,8 @@
       "category": "Workshop / Class",
       "tags": [
         "dance",
-        "line dance",
-        "fitness"
+        "fitness",
+        "fun"
       ],
       "social": true,
       "intellectual": false,
@@ -2045,7 +2045,7 @@
       "tags": [
         "dance",
         "community",
-        "fitness"
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -2089,7 +2089,7 @@
       "tags": [
         "dance",
         "bollywood",
-        "fitness"
+        "culture"
       ],
       "social": true,
       "intellectual": false,
@@ -2111,7 +2111,7 @@
       "tags": [
         "dance",
         "african",
-        "fitness"
+        "rhythm"
       ],
       "social": true,
       "intellectual": false,
@@ -2132,8 +2132,8 @@
       "category": "Workshop / Class",
       "tags": [
         "fitness",
-        "yoga",
-        "wellness"
+        "wellness",
+        "exercise"
       ],
       "social": true,
       "intellectual": false,
@@ -2155,7 +2155,7 @@
       "tags": [
         "dance",
         "latin",
-        "fitness"
+        "rhythm"
       ],
       "social": true,
       "intellectual": false,
@@ -2176,8 +2176,8 @@
       "category": "Workshop / Class",
       "tags": [
         "art",
-        "creative",
-        "connection"
+        "connection",
+        "creative"
       ],
       "social": true,
       "intellectual": false,
@@ -2242,10 +2242,10 @@
       "category": "Workshop / Class",
       "tags": [
         "writing",
-        "literature",
-        "books"
+        "books",
+        "creative"
       ],
-      "social": true,
+      "social": false,
       "intellectual": true,
       "hands_on": true,
       "creative": true
@@ -2265,7 +2265,7 @@
       "tags": [
         "singing",
         "choir",
-        "music"
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -2287,7 +2287,7 @@
       "tags": [
         "singing",
         "choir",
-        "music"
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -2315,28 +2315,6 @@
       "intellectual": false,
       "hands_on": false,
       "creative": true
-    },
-    {
-      "title": "Run Wild through South Bank",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/run-wild-through-south-bank",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Brisbane City Council",
-      "image": "https://www.brisbanefestival.com.au/dgb07kno7qonvm6kwcqznug7",
-      "category": "Community / Other",
-      "tags": [
-        "outdoor",
-        "fitness",
-        "run"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
     },
     {
       "title": "Riverfire by Australian Retirement Trust",
@@ -2373,8 +2351,8 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "tibetan",
         "music",
+        "tibetan",
         "performance"
       ],
       "social": false,
@@ -2397,7 +2375,7 @@
       "tags": [
         "circus",
         "performance",
-        "theatre"
+        "fijian"
       ],
       "social": false,
       "intellectual": false,
@@ -2419,7 +2397,7 @@
       "tags": [
         "queer",
         "party",
-        "social"
+        "nightlife"
       ],
       "social": true,
       "intellectual": false,
@@ -2441,7 +2419,7 @@
       "tags": [
         "symphony",
         "light",
-        "music"
+        "sound"
       ],
       "social": false,
       "intellectual": false,

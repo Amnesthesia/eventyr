@@ -16,7 +16,7 @@
 //   * TEXT values need escaping and long lines need folding, or clients reject
 //     the file.
 
-import { eventHash, eventPath, SITE_URL } from "../../src/shared";
+import { eventHash, eventPath, SITE_URL } from "../../src/shared.ts";
 import type { Event } from "../types";
 
 const TIMED = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/;
@@ -117,4 +117,25 @@ export function icsFilename(event: Event): string {
 			.replace(/^-|-$/g, "")
 			.slice(0, 50) || "event";
 	return `${name}.ics`;
+}
+
+/**
+ * Triggers the download. Built as a Blob on click rather than a data: URI at
+ * render time: 643 inline URIs would bloat every page, and the content would
+ * otherwise be computed during SSR where anything time-dependent differs from
+ * the hydrated render.
+ */
+export function downloadEventIcs(event: Event, cityKey: string): boolean {
+	const ics = buildEventIcs(event, cityKey);
+	if (!ics) return false;
+	const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+	const href = URL.createObjectURL(blob);
+	const a = document.createElement("a");
+	a.href = href;
+	a.download = icsFilename(event);
+	a.click();
+	// Released on the next tick: revoking synchronously can cancel the download
+	// before the browser has read the blob.
+	setTimeout(() => URL.revokeObjectURL(href), 0);
+	return true;
 }

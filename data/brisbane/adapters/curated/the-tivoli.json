@@ -8,8 +8,8 @@
   "events": [
     {
       "title": "Bury Tomorrow (UK) With Gideon",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
+      "datetime": "Fri 4 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-04T19:00:00",
       "datetime_end_iso": "",
       "location": "The Tivoli, 52 Costin St",
       "link": "https://thetivoli.com.au/events/bury-tomorrow",
@@ -30,8 +30,8 @@
     },
     {
       "title": "Club Angel (AUS) With Mincy & Jai Taylor",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "datetime": "Sat 5 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-05T19:00:00",
       "datetime_end_iso": "",
       "location": "The Tivoli, 52 Costin St",
       "link": "https://thetivoli.com.au/events/club-angel",
@@ -42,8 +42,8 @@
       "category": "Concert / Music",
       "tags": [
         "electronic",
-        "club",
-        "dance"
+        "dance",
+        "dj"
       ],
       "social": true,
       "intellectual": false,
@@ -52,8 +52,8 @@
     },
     {
       "title": "Ash (IRELAND) With Northern Lights",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
+      "datetime": "Thu 10 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-10T19:00:00",
       "datetime_end_iso": "",
       "location": "The Tivoli, 52 Costin St",
       "link": "https://thetivoli.com.au/events/ash",
@@ -74,8 +74,8 @@
     },
     {
       "title": "The Damned (UK) With The Darts (USA)",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-11T19:00:00",
       "datetime_end_iso": "",
       "location": "The Tivoli, 52 Costin St",
       "link": "https://thetivoli.com.au/events/the-damned-26",
@@ -130,8 +130,8 @@
       "category": "Concert / Music",
       "tags": [
         "electronic",
-        "club",
-        "dance"
+        "dance",
+        "dj"
       ],
       "social": true,
       "intellectual": false,

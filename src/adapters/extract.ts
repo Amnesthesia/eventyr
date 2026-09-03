@@ -115,13 +115,27 @@ function extractLocation(node: Record<string, unknown>): {
 	return { venueName, address };
 }
 
+/**
+ * Every source in this pipeline is an Australian venue listing an event in
+ * South East Queensland, so a foreign `priceCurrency` is the venue's markup
+ * being wrong rather than a real currency — The Cave Inn publishes
+ * `priceCurrency: "USD"` on all of its events, which reached the site as
+ * "USD 0". Rewriting it is safe here in a way it would not be in a
+ * multi-country pipeline; if this ever collects outside Australia, this has to
+ * become a per-source or per-city currency instead.
+ */
+const AU_CURRENCY = "AUD";
+
 function extractPrice(node: Record<string, unknown>): string | null {
 	const offers = node.offers;
 	const offer = Array.isArray(offers) ? offers[0] : offers;
 	if (!offer || typeof offer !== "object") return null;
 	const o = offer as Record<string, unknown>;
 	if (o.price !== undefined && o.price !== null && o.price !== "") {
-		const currency = firstString(o.priceCurrency) ?? "";
+		const declared = firstString(o.priceCurrency) ?? "";
+		// A three-letter code that is not AUD is corrected; anything else (a
+		// symbol, a blank, something unparseable) is left as the source had it.
+		const currency = /^[a-z]{3}$/i.test(declared) ? AU_CURRENCY : declared;
 		return `${currency} ${o.price}`.trim();
 	}
 	return null;

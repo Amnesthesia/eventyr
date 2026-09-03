@@ -7,8 +7,9 @@
 // URL.
 import { Check, Share2 } from "lucide-react";
 import { useState } from "react";
-import { eventPath, SITE_URL } from "../../src/shared";
+import { eventPath } from "../../src/shared.ts";
 import type { Event } from "../types";
+import { shareEvent } from "../utils/share";
 
 interface Props {
 	event: Event;
@@ -30,29 +31,19 @@ export default function ShareButton({
 }: Props) {
 	const [copied, setCopied] = useState(false);
 	const path = eventPath(cityKey, event);
-	// Absolute, and from SITE_URL rather than window.location: a link copied
-	// while running the dev server has to be shareable, not a localhost URL.
-	const url = `${SITE_URL}${path}`;
 
 	async function handleShare(e: React.MouseEvent<HTMLAnchorElement>) {
 		// Let the browser handle the ways a user asks for a new tab, so the
 		// anchor keeps behaving like an anchor.
 		if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
 		e.preventDefault();
-		try {
-			if (navigator.share) {
-				await navigator.share({ title: event.title, text: event.title, url });
-				return;
-			}
-			await navigator.clipboard.writeText(url);
+		const outcome = await shareEvent(event, cityKey);
+		if (outcome === "copied") {
 			setCopied(true);
 			setTimeout(() => setCopied(false), 2000);
-		} catch (err) {
-			// Dismissing the share sheet rejects with AbortError. That is a user
-			// deciding not to share, not a failure, and must not look like one.
-			if ((err as Error)?.name === "AbortError") return;
+		} else if (outcome === "failed") {
 			// Clipboard denied or unavailable: fall back to the anchor's own
-			// behaviour so the user still gets to the page and can copy the URL.
+			// behaviour so the user still reaches the page and can copy the URL.
 			window.location.href = path;
 		}
 	}

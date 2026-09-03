@@ -54,7 +54,29 @@ const ON_NOW =
  * inference".
  */
 const RELATIVE_MARKER =
-	/\b(tonight|today|tomorrow|this|next|coming|mon|tues?|wed(?:nes)?|thurs?|fri|sat(?:ur)?|sun)[a-z]*\b/i;
+	// Every abbreviation has to be reachable from three letters. "thurs?"
+	// required at least "thur", so the commonest form — "Thu" — was not a
+	// recognised marker and 32 candidates whose only date text was "Thu 3" were
+	// discarded as undated, while "Wed 2" parsed fine.
+	/\b(tonight|today|tomorrow|this|next|coming|mon|tue|wed|thu|fri|sat|sun)[a-z]*\b/i;
+
+const MONTHS =
+	"jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t|tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?";
+
+/**
+ * A month name sitting next to a day number, in either order — "Sep 16" or
+ * "16 Sep". Such a string states its date outright, so a weekday in the same
+ * text is decoration and must never be used to infer the day instead.
+ */
+const EXPLICIT_DATE = new RegExp(
+	`\\b(?:${MONTHS})\\.?\\s+\\d{1,2}\\b|\\b\\d{1,2}\\s+(?:${MONTHS})\\b`,
+	"i",
+);
+
+/** The reference instant's own Brisbane calendar date, for comparisons. */
+function toDateOnly(instant: Date): string {
+	return toBrisbaneISO(instant, false).slice(0, 10);
+}
 
 function pad(n: number, len = 2): string {
 	return String(n).padStart(len, "0");
@@ -78,6 +100,12 @@ function toBrisbaneISO(instant: Date, includeTime: boolean): string {
  */
 function isTrustworthy(result: chrono.ParsedResult, raw: string): boolean {
 	if (result.start.isCertain("day")) return true;
+	// A string that names a month and a day number is not a relative reference,
+	// whatever weekday it also carries. "Wed, Sep 16 7:00 PM" was resolved to
+	// the NEXT Wednesday — 9 Sep — because en.GB could not read the month-first
+	// date and fell back to the weekday, and the relative marker below waved
+	// that through. The result was a wrong date and a dropped time on the site.
+	if (EXPLICIT_DATE.test(raw)) return false;
 	return RELATIVE_MARKER.test(raw);
 }
 
@@ -128,17 +156,87 @@ function resolve(result: chrono.ParsedResult): Resolved {
 	};
 }
 
+const MONTH_NAMES = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December",
+];
+
+/**
+ * "Thu 3", "Wed 2", "Sat 12 7:30pm" — a weekday followed by a day-of-month,
+ * which is how most gig guides write a date.
+ *
+ * chrono cannot read this shape: it ignores the number ("Wed 2" resolved to
+ * the NEXT Wednesday, discarding the 2) or mistakes it for a time ("Thu 10"
+ * became today at 10:00). Both are wrong days, and this is the single most
+ * common date format in the corpus — 32 candidates carried nothing else.
+ *
+ * The day number wins over the weekday when they disagree: the number is
+ * explicit data, the weekday is redundant with it. Rewritten into a fully
+ * qualified date so chrono still does the actual parsing, which keeps one
+ * implementation of month rollover and time handling.
+ */
+const WEEKDAY_THEN_DAY =
+	/^(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+(\d{1,2})\b\s*(.*)$/i;
+
+function qualifyWeekdayAndDay(text: string, reference: Date): string | null {
+	const match = WEEKDAY_THEN_DAY.exec(text);
+	if (!match) return null;
+	const day = Number(match[1]);
+	if (!Number.isInteger(day) || day < 1 || day > 31) return null;
+	// A trailing time is kept; anything else means this is not the simple shape.
+	const rest = match[2].trim();
+	if (rest && !/^[0-9:.\s]*(?:am|pm)?$/i.test(rest)) return null;
+
+	const local = new Date(reference.getTime() + OFFSET_MS);
+	let month = local.getUTCMonth();
+	let year = local.getUTCFullYear();
+	// A day already past this month means they mean next month's.
+	if (day < local.getUTCDate()) {
+		month += 1;
+		if (month > 11) {
+			month = 0;
+			year += 1;
+		}
+	}
+	return `${day} ${MONTH_NAMES[month]} ${year}${rest ? ` ${rest}` : ""}`;
+}
+
 function parse(raw: string, referenceDate: Date): chrono.ParsedResult | null {
-	const trimmed = raw.trim();
+	let trimmed = raw.trim();
 	if (!trimmed || NOT_A_DATE.test(trimmed)) return null;
-	const results = chrono.en.GB.parse(
-		trimmed,
-		{ instant: referenceDate, timezone: TIMEZONE },
-		// Venue listings are about upcoming events, so a bare "Friday" or
-		// "12 Sep" means the next one, not the most recent one.
-		{ forwardDate: true },
-	);
-	const result = results[0];
+	trimmed = qualifyWeekdayAndDay(trimmed, referenceDate) ?? trimmed;
+	// Venue listings are about upcoming events, so a bare "Friday" or "12 Sep"
+	// means the next one, not the most recent one.
+	const context = { instant: referenceDate, timezone: TIMEZONE };
+	const options = { forwardDate: true };
+
+	let result = chrono.en.GB.parse(trimmed, context, options)[0];
+
+	// en.GB is day-first on purpose — "03/04" has to be 3 April, per Australian
+	// convention — but it refuses month-first dates, so "Wed, Sep 16 7:00 PM"
+	// matched only the weekday and silently resolved to the wrong day with the
+	// time thrown away. Retrying with the US locale recovers those, and is safe
+	// precisely because it is gated on a month NAME being present: "Sep 16" and
+	// "16 Sep" are both unambiguous, so the two locales cannot disagree. Bare
+	// numerics never reach this branch and stay day-first.
+	if (
+		(!result || !result.start.isCertain("day")) &&
+		EXPLICIT_DATE.test(trimmed)
+	) {
+		const monthFirst = chrono.en.parse(trimmed, context, options)[0];
+		if (monthFirst?.start.isCertain("day")) result = monthFirst;
+	}
+
 	if (!result) return null;
 	return isTrustworthy(result, trimmed) ? result : null;
 }
@@ -173,9 +271,17 @@ export function parseDateRange(
 	// date, so handle the framing here.
 	const until = /^(?:until|through|til|till|to)\s+(.+)$/i.exec(trimmed);
 	if (until) {
+		const endISO = parseSingleDateTime(until[1], referenceDate);
+		// "Until 6 Sep" is a run that is on NOW and closes then, so the start is
+		// today rather than unknown. Leaving it null read as undated and dropped
+		// the event, which lost five real exhibitions. Only when the end is
+		// actually still ahead of us — a past end is an archive listing.
+		const stillRunning = endISO
+			? endISO.slice(0, 10) >= toDateOnly(referenceDate)
+			: false;
 		return {
-			startISO: null,
-			endISO: parseSingleDateTime(until[1], referenceDate),
+			startISO: stillRunning ? toBrisbaneISO(referenceDate, false) : null,
+			endISO,
 		};
 	}
 

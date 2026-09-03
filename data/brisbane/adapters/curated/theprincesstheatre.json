@@ -8,14 +8,14 @@
   "events": [
     {
       "title": "MKTO (USA)",
-      "datetime": "Thu 3 Sep",
-      "datetime_iso": "2026-09-03",
+      "datetime": "Thu 3 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-03T19:00:00",
       "datetime_end_iso": "",
       "location": "The Princess Theatre",
       "link": "https://theprincesstheatre.com.au/events/mkto",
       "cost": "Sold Out",
       "source": "The Princess Theatre",
-      "description": "MKTO perform live at The Princess Theatre as a concert.",
+      "description": "MKTO perform live at The Princess Theatre as a concert event.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -30,8 +30,8 @@
     },
     {
       "title": "Ocean Sleeper (AUS)",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "datetime": "Sat 5 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-05T19:00:00",
       "datetime_end_iso": "",
       "location": "The Princess Theatre",
       "link": "https://theprincesstheatre.com.au/events/ocean-sleeper",
@@ -42,8 +42,8 @@
       "category": "Concert / Music",
       "tags": [
         "metalcore",
-        "live",
-        "music"
+        "rock",
+        "live"
       ],
       "social": false,
       "intellectual": false,
@@ -52,20 +52,20 @@
     },
     {
       "title": "Stories of Our Land (AUS)",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
+      "datetime": "Thu 10 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-10T18:00:00",
       "datetime_end_iso": "",
       "location": "The Princess Theatre",
       "link": "https://theprincesstheatre.com.au/events/stories-of-our-land",
       "cost": "See link",
       "source": "The Princess Theatre",
-      "description": "Stories of Our Land is an arts and exhibition event held at The Princess Theatre.",
+      "description": "Stories of Our Land is an arts event held at The Princess Theatre.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "culture",
         "history",
-        "arts"
+        "stories"
       ],
       "social": false,
       "intellectual": true,
@@ -81,7 +81,7 @@
       "link": "https://theprincesstheatre.com.au/events/mkto",
       "cost": "Sold Out",
       "source": "The Princess Theatre",
-      "description": "MKTO perform live at The Princess Theatre as a concert.",
+      "description": "MKTO perform live at The Princess Theatre as a concert event.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -108,8 +108,8 @@
       "category": "Concert / Music",
       "tags": [
         "metalcore",
-        "live",
-        "music"
+        "rock",
+        "live"
       ],
       "social": false,
       "intellectual": false,
@@ -125,13 +125,13 @@
       "link": "https://theprincesstheatre.com.au/events/stories-of-our-land",
       "cost": "See link",
       "source": "The Princess Theatre",
-      "description": "Stories of Our Land is an arts and exhibition event held at The Princess Theatre.",
+      "description": "Stories of Our Land is an arts event held at The Princess Theatre.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "culture",
         "history",
-        "arts"
+        "stories"
       ],
       "social": false,
       "intellectual": true,

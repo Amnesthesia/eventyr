@@ -26,6 +26,7 @@ import {
 import { mapWithConcurrency } from "../providers/base.ts";
 import { installUsageReporting } from "../providers/gemini.ts";
 import { applyAnnotation, createGeminiAnnotator } from "./annotate.ts";
+import { enrichCandidateTimes } from "./enrichTimes.ts";
 import { withExtractionCache } from "./extractionCache.ts";
 import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
@@ -160,7 +161,17 @@ async function collectSource(
 	}
 
 	const adapter = createPageAdapter(source, { fetcher, extractPage });
-	const { result, candidates } = await runAdapter(adapter);
+	const { result, candidates: raw } = await runAdapter(adapter);
+
+	// Listing pages print "Sat 5 Sep" where the event's own page says
+	// "Saturday 05 Sep 2026, 10:30AM" — 43% of events arrived without a time
+	// for that reason alone. Deterministic and LLM-free, and it can only ever
+	// add a time to the day the listing already gave. See enrichTimes.ts.
+	const { candidates, stats: timeStats } = await enrichCandidateTimes(
+		raw,
+		source,
+		fetcher,
+	);
 
 	const { prepared, stats, rejected } = prepareCandidates(
 		candidates,
@@ -203,6 +214,12 @@ async function collectSource(
 	// "found" alone hides the thing that matters: finding 100 and keeping 1 is
 	// a broken URL, not a quiet week. `past` is the red flag — a listing page
 	// for upcoming events should never yield finished ones.
+	if (timeStats.upgraded > 0 || timeStats.eligible > 0) {
+		console.log(
+			`  ⏱ [${source.id}] ${timeStats.upgraded}/${timeStats.eligible} undated-time candidates got a time` +
+				` (${timeStats.fetched} detail page(s) fetched)`,
+		);
+	}
 	const drops = [
 		stats.noDate && `${stats.noDate} undated`,
 		stats.past && `${stats.past} PAST`,

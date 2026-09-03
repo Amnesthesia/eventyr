@@ -6,7 +6,7 @@
 // time-dependent differs from the hydrated render.
 import { CalendarPlus } from "lucide-react";
 import type { Event } from "../types";
-import { buildEventIcs, icsFilename } from "../utils/ics";
+import { buildEventIcs, downloadEventIcs } from "../utils/ics";
 
 interface Props {
 	event: Event;
@@ -31,25 +31,11 @@ export default function AddToCalendar({
 	const ics = buildEventIcs(event, cityKey);
 	if (!ics) return null;
 
-	function download() {
-		const blob = new Blob([ics as string], {
-			type: "text/calendar;charset=utf-8",
-		});
-		const href = URL.createObjectURL(blob);
-		const a = document.createElement("a");
-		a.href = href;
-		a.download = icsFilename(event);
-		a.click();
-		// Released on the next tick: revoking synchronously can cancel the
-		// download before the browser has read the blob.
-		setTimeout(() => URL.revokeObjectURL(href), 0);
-	}
-
 	return (
 		<button
 			type="button"
 			className={className ?? (label ? "filter-btn" : "icon-btn")}
-			onClick={download}
+			onClick={() => downloadEventIcs(event, cityKey)}
 			aria-label={`Add ${event.title} to your calendar`}
 			title="Add to calendar"
 		>
