@@ -68,3 +68,18 @@ test("cleanUrl refuses anything that is not http(s)", () => {
 		assert.equal(cleanUrl(bad), "", bad);
 	}
 });
+
+test("JSON escapes that leaked out of an embedded string are undone", () => {
+	// A description arriving as "Netherworld\'s", or with a literal
+	// two-character "\n", is wrong data rather than a presentation choice, so
+	// curate fixes it.
+	assert.equal(cleanText("Netherworld\\'s bar"), "Netherworld's bar");
+	assert.equal(cleanText("Line one\\nLine two"), "Line one Line two");
+});
+
+test("a URL in a description survives curation", () => {
+	// It is often the only ticket link there is, so the data keeps it and only
+	// the rendered text drops it (stripForDisplay).
+	const withUrl = "Book your place (https://events.humanitix.com/abc) .";
+	assert.equal(cleanText(withUrl), withUrl);
+});

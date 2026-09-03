@@ -117,6 +117,74 @@ export function eventSlug(cityKey: string, event: IdentifiableEvent): string {
 }
 
 /**
+ * `[label](anything)` → `label`.
+ *
+ * The target is matched loosely on purpose: the thing in the parentheses is
+ * often not a valid URL at all — a truncated href, a relative path, or an
+ * empty `()` — and a pattern that insisted on `https://…` left the broken
+ * ones on the card verbatim.
+ */
+const MARKDOWN_LINK = /\[([^\]]{1,120})\]\([^)]{0,300}\)/g;
+
+/**
+ * A URL on its own, with the brackets or trailing punctuation that usually
+ * surround it. `readableText.ts` deliberately keeps every `<a href>` as
+ * "label (resolved URL)" so the extraction prompt can copy ticket links
+ * verbatim, which is how descriptions end up carrying
+ * "Book your place (https://events.humanitix.com/…) ."
+ */
+/* {0,300} rather than {1,300}: a description carrying only "(https://)" or
+ * "(https://..)" is a broken link the extractor produced, and a pattern that
+ * required a host after the slashes left exactly those on the card. */
+const PARENTHESISED_URL =
+	/[([]\s*(?:https?:\/*|\/\/|www\.)[^)\]\s]{0,300}\s*[)\]]/gi;
+const BARE_URL = /(?:https?:\/*|\/\/)[^\s)\]]{0,300}/g;
+/** A scheme-less URL, which is how a lot of listings write one. Requires the
+ * www. prefix on purpose: matching any bare `word.tld` would eat prose like
+ * "see dothings.lol" and, worse, sentence-ending abbreviations. */
+const WWW_URL = /\bwww\.[^\s)\]]{2,300}/gi;
+
+/** Runs of markdown emphasis. Two or more only: a single asterisk appears in
+ * real titles ("3 * 3"), where "****Tickets" never does. */
+const MARKDOWN_EMPHASIS = /(\*{2,}|_{2,}|`{1,3})/g;
+/** Heading and blockquote markers, only where markdown puts them. */
+const MARKDOWN_BLOCK = /(^|\n)\s*(?:#{1,6}|>)\s+/g;
+
+/**
+ * Strips what a card or an event page should not show: URLs and markdown
+ * artefacts.
+ *
+ * Presentation only, and deliberately not done in the pipeline. The URL stays
+ * in the JSON because a description is often the only place a ticket link
+ * appears — `event.link` is frequently just the venue homepage — so the feeds
+ * and the stored data keep it, and only the rendered text drops it.
+ *
+ * Lives here rather than in text.ts so the browser bundle does not have to
+ * pull in `he` for a job that needs no entity decoding: curate already did
+ * that.
+ */
+export function stripForDisplay(value: unknown): string {
+	if (typeof value !== "string" || !value) return "";
+	return (
+		value
+			.replace(MARKDOWN_LINK, "$1")
+			// Parenthesised first, or BARE_URL eats the URL and leaves "( )".
+			.replace(PARENTHESISED_URL, " ")
+			.replace(BARE_URL, " ")
+			.replace(WWW_URL, " ")
+			.replace(MARKDOWN_BLOCK, "$1")
+			.replace(MARKDOWN_EMPHASIS, "")
+			.replace(/\s+/g, " ")
+			// Punctuation the removals strand: " .", an empty "()", a doubled stop.
+			.replace(/\(\s*\)|\[\s*\]/g, "")
+			.replace(/\s+([.,;:!?])/g, "$1")
+			.replace(/([.,;:!?])\1+/g, "$1")
+			.replace(/\s+/g, " ")
+			.trim()
+	);
+}
+
+/**
  * Whether a scraped image URL is worth showing.
  *
  * Requires https and a real image extension on the path. Measured, not

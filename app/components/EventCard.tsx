@@ -1,5 +1,6 @@
 import { Bookmark, BookmarkCheck, CalendarDays, MapPin } from "lucide-react";
 import { useMemo } from "react";
+import { stripForDisplay } from "../../src/shared";
 import { useEventsContext } from "../context";
 import type { Event } from "../types";
 import { catToSlug } from "../utils/categorySlug";
@@ -56,6 +57,12 @@ export default function EventCard({
 		? ({ "--event-image": `url('${event.image}')` } as React.CSSProperties)
 		: undefined;
 
+	// Stripped at render, not in the pipeline: the data keeps the URL because a
+	// description is often the only place a ticket link appears, but a card has
+	// no room for one and a half-broken "(https://)" is just noise.
+	const title = stripForDisplay(event.title);
+	const description = stripForDisplay(event.description);
+
 	const cost = useMemo(() => {
 		if (free) return "free";
 		if (!event.cost) return "Not specified";
@@ -99,10 +106,10 @@ export default function EventCard({
 				{isTopPick && <em className="top-mark">✦</em>}
 				{event.link ? (
 					<a href={event.link} target="_blank" rel="noopener">
-						{event.title}
+						{title}
 					</a>
 				) : (
-					event.title
+					title
 				)}
 			</h3>
 			<div className="card-meta">
@@ -121,20 +128,20 @@ export default function EventCard({
 					)}
 				</span>
 			</div>
-			{event.description &&
-				(event.description.length > DESC_CLAMP_CHARS ? (
+			{description &&
+				(description.length > DESC_CLAMP_CHARS ? (
 					// <details> rather than a React toggle, so this works in the static
 					// HTML with no JavaScript and no layout measurement. The full text is
 					// always in the DOM — the clamp is purely visual — so nothing is
 					// hidden from a screen reader, which is why the toggle is aria-hidden.
 					<details className="card-desc-details">
 						<summary>
-							<span className="card-desc">{event.description}</span>
+							<span className="card-desc">{description}</span>
 							<span className="card-desc-toggle" aria-hidden="true" />
 						</summary>
 					</details>
 				) : (
-					<p className="card-desc card-desc--plain">{event.description}</p>
+					<p className="card-desc card-desc--plain">{description}</p>
 				))}
 			<div className="card-bottom">
 				{event.score > 0 && (

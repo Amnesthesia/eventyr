@@ -1,6 +1,13 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { eventHash, eventPath, eventSlug, slugify } from "./shared.ts";
+import {
+	eventHash,
+	eventPath,
+	eventSlug,
+	isLikelyImageUrl,
+	slugify,
+	stripForDisplay,
+} from "./shared.ts";
 
 const DICE = {
 	title: "Dice Rolls & Flagons – Casual Board Game Meetup",
@@ -98,4 +105,94 @@ test("eventPath uses the public city slug, not the city key", () => {
 		eventPath("brisbane", DICE),
 		"/brisbane/e/dice-rolls-flagons-casual-board-game-meetup-b8wguc",
 	);
+});
+
+test("a parenthesised URL is removed with its brackets and stranded full stop", () => {
+	// readableText.ts keeps every <a href> as "label (resolved URL)" so the
+	// extraction prompt can copy ticket links verbatim, which is how this
+	// reaches a card. The link is already in event.link.
+	assert.equal(
+		stripForDisplay(
+			"Book your place (https://events.humanitix.com/introduction-to-creative-writing) .",
+		),
+		"Book your place.",
+	);
+});
+
+test("a bare URL is removed", () => {
+	assert.equal(
+		stripForDisplay("Tickets at https://oztix.com.au/abc today"),
+		"Tickets at today",
+	);
+	assert.equal(
+		stripForDisplay("See //example.com/x for details"),
+		"See for details",
+	);
+});
+
+test("a markdown link keeps its label and loses its URL", () => {
+	assert.equal(
+		stripForDisplay("Grab a [ticket here](https://example.com/t) now"),
+		"Grab a ticket here now",
+	);
+});
+
+test("markdown emphasis runs are stripped, single asterisks are not", () => {
+	assert.equal(
+		stripForDisplay("****Tickets go on sale**** Monday"),
+		"Tickets go on sale Monday",
+	);
+	assert.equal(stripForDisplay("__Sold out__"), "Sold out");
+	// A lone asterisk is part of real titles, so it stays.
+	assert.equal(stripForDisplay("3 * 3 Exhibition"), "3 * 3 Exhibition");
+});
+
+test("heading and quote markers are stripped without eating the text", () => {
+	assert.equal(
+		stripForDisplay("## What's on\nGreat show"),
+		"What's on Great show",
+	);
+	assert.equal(stripForDisplay("> A quote"), "A quote");
+	// A hash that is not a heading marker survives.
+	assert.equal(
+		stripForDisplay("Stand #4 at the market"),
+		"Stand #4 at the market",
+	);
+});
+
+test("a description that was only a URL comes back empty, not as punctuation", () => {
+	assert.equal(stripForDisplay("(https://example.com/x)"), "");
+	assert.equal(stripForDisplay("https://example.com/x"), "");
+});
+
+test("ordinary prose is left alone", () => {
+	const prose =
+		"An exhibition celebrating strength, identity and individuality — free entry, 9:30 AM daily.";
+	assert.equal(stripForDisplay(prose), prose);
+});
+
+test("scheme-less www URLs are stripped too", () => {
+	assert.equal(
+		stripForDisplay("Tickets at www.oztix.com.au/abc now"),
+		"Tickets at now",
+	);
+	assert.equal(stripForDisplay("Details (www.venue.com/gigs) ."), "Details.");
+	// A bare word.tld is left alone: matching those eats ordinary prose.
+	assert.equal(stripForDisplay("see dothings.lol"), "see dothings.lol");
+});
+
+test("a broken or empty link is stripped, not left on the card", () => {
+	// The extractor sometimes produces a truncated href or none at all.
+	assert.equal(stripForDisplay("Tickets (https://)"), "Tickets");
+	assert.equal(stripForDisplay("Tickets (https://..)"), "Tickets");
+	assert.equal(
+		stripForDisplay("Tickets here https:// today"),
+		"Tickets here today",
+	);
+	// A markdown link whose target is not a URL still loses the target.
+	assert.equal(
+		stripForDisplay("Grab a [ticket](/broken/path) now"),
+		"Grab a ticket now",
+	);
+	assert.equal(stripForDisplay("Grab a [ticket]() now"), "Grab a ticket now");
 });

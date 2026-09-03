@@ -41,13 +41,38 @@ function decodeFully(text: string): string {
 }
 
 /**
- * For text shown to a reader: decode, drop any tags that decoding revealed,
- * and collapse the whitespace that removing them leaves behind.
+ * Backslash escapes that leaked out of a JSON string embedded in a page —
+ * "Netherworld\'s" and a literal two-character "\n" both reached the site.
+ */
+const JSON_ESCAPE = /\\(['"nrt\\])/g;
+const JSON_ESCAPE_MAP: Record<string, string> = {
+	"'": "'",
+	'"': '"',
+	n: " ",
+	r: " ",
+	t: " ",
+	"\\": "\\",
+};
+
+/**
+ * Corrects text that arrived wrong: entities the source double-encoded, tags
+ * it escaped into a text field, JSON escapes that leaked out of an embedded
+ * string, and the whitespace those leave behind.
+ *
+ * Deliberately does NOT strip URLs or markdown. A description is often the
+ * only place a ticket URL appears — `event.link` is frequently just the venue
+ * homepage — so removing it here would destroy the data. That is a
+ * presentation concern: see stripForDisplay in src/shared.ts, which the cards
+ * and the event page apply at render time.
  */
 export function cleanText(value: unknown): string {
 	if (typeof value !== "string" || !value)
 		return typeof value === "string" ? value : "";
-	return decodeFully(value).replace(TAG, " ").replace(/\s+/g, " ").trim();
+	return decodeFully(value)
+		.replace(TAG, " ")
+		.replace(JSON_ESCAPE, (_m, ch: string) => JSON_ESCAPE_MAP[ch] ?? ch)
+		.replace(/\s+/g, " ")
+		.trim();
 }
 
 /**

@@ -1,16 +1,24 @@
 # Brisbane — This Week's Events
 **31 August 2026 – 6 September 2026**  
-*92 top picks · 395 events total*
+*102 top picks · 395 events total*
 
 ## ⭐ Top Picks
 
-### 🛠️ [Feel it, Write it.](https://creativemornings.com/talks/feel-it-write-it-c6aea832-3903-4f2b-a7c1-0dc5acd12b17)
-📆 Wed 9 Sep  
-📍 Creative Mornings Brisbane  
+### 🤝 [Social Saturdays: Book Club](https://www.loganarts.com.au/event/social-saturdays-book-club-6/)
+📆 Sat 5 Sep  
+📍 Living Museum of Logan  
 💰 See link  
-`writing` `creative` `expression`
+`books` `reading` `community`
 
-A creative writing workshop held at Creative Mornings Brisbane.
+Love books and also museums? Join the Living Museum of Logan in a fun and welcoming book club!
+
+### 🛠️ [Sunday portrait drawing - Brisbane](https://www.eventsbrisbane.com/)
+📆 Sun 6 Sep, 12:00 PM  
+📍 The Burrow, West End  
+💰 Free  
+`drawing` `art` `workshop` `community`
+
+A communal drawing session where artists of all levels practice portraiture in a relaxed cafe environment.
 
 ### 🛠️ [Ekphrastic Writing Club (MoB)](https://www.museumofbrisbane.com.au/whats-on/ekphrastic-writing-club/)
 📆 5 Sep 2026, 2:30 PM  
@@ -20,13 +28,21 @@ A creative writing workshop held at Creative Mornings Brisbane.
 
 A recurring monthly workshop where writers use art exhibitions as inspiration for their creative practice, encouraging dialogue and shared feedback.
 
-### 🎨 [Make, Believe, Magic: The Worlds of The Jim Henson Company](https://brisbanefestival.com.au/events/make-believe-magic)
-📆 Sat 12 Sep  
-📍 Brisbane Festival  
+### 🎵 [Weird Show (alternative comedy)](https://www.bigforktheatre.com/shows-events/sundaystandup-h6ax3-6r4ny-de4j2-g3j7e-mn9n2-djtbn-ybhc8-5h9j9-yjjjw-spf8k-5repf-8ya8s-88lf7-7k94y-g28dn-hka54-7xpk7-nsmj5-smbsw-ec5xc-6w9xr-pcagc-tb57e-lhjpd-hrw6x-y3bz7-k6f6j-dh7nn-5rdnc-mnfkd)
+📆 Fri 4 Sep  
+📍 Big Fork Theatre, 252 Saint Pauls Terrace Fortitude Valley, QLD, 4000 Australia  
 💰 See link  
-`puppets` `design` `exhibition`
+`comedy` `performance` `alternative` `theatre`
 
-The Jim Henson Company
+Brisbane’s best comedians do anything except stand-up comedy! Chaos show big wild show fun insane show yay! Clowns, poets, sketch comedy, live music, burlesque! We got it all! It’s going to be weird and that’s exactly what we want! Weird Show is a night of alternative comedy where Brisbane’s best comedians do anything except stand-up comedy. Presented by Brisbane sketch comedy legend Matt Nunn. Strictly 18+
+
+### 🎵 [Asian Aunties (improv comedy)](https://www.bigforktheatre.com/shows-events/sundaystandup-h6ax3-6r4ny-de4j2-g3j7e-mn9n2-djtbn-ybhc8-5h9j9-yjjjw-spf8k-5repf-8ya8s-88lf7-7k94y-g28dn-hka54-7xpk7-nsmj5-smbsw-ec5xc-6w9xr-pcagc-tb57e-lhjpd-hrw6x-e35e5-xky7j-hes68)
+📆 Fri 11 Sep  
+📍 Big Fork Theatre, 252 Saint Pauls Terrace Fortitude Valley, QLD, 4000 Australia  
+💰 See link  
+`comedy` `improv` `performance` `theatre`
+
+One improvised show. Two sassy Aunties. Infinite judgement. The Asian Aunties think they know exactly what’s best for you — and honestly, they’re shocked you’ve survived this long without their guidance. Aunty Rani from Sri Lanka (Himali Ratnayake) and Aunty Maria from the Philippines (Janette McBride) are shimmying in with their signature blend of brutal honesty, invaluable wisdom, and unstoppable Aunty energy that can both bless you and roast you in the same breath. Write down your problems and put them in the rice cooker, so the Aunties can serve you their most generous advice. They’ll then improvise scenes inspired by your juicy dilemmas. The Asian Aunties are an improv comedy duo that was part of the sold out BrisAsia Comedy Gala at the Brisbane Powerhouse, they had a sold out show in Melbourne and a full house in Sydney, and they are the reigning champs in Big Fork Theatre's Cage Match with their 12-week winning streak. Audience members may be judged by the Aunties, but will not be brought on stage (unless you really want to), so you can enjoy the chaos from the comfort of your seats.
 
 ### 🎓 [Talk of the Town: True crime, death and the live body](https://brisbanefestival.com.au/events/talk-of-the-town-2)
 📆 Sun 13 Sep  
@@ -52,13 +68,13 @@ Talk of the Town: Levelling the playing field is a public lecture at Brisbane Fe
 
 The Writing Picture Books Workshop with Jack Carty is a workshop held at Brisbane Festival.
 
-### 🤝 [English conversation group.](https://www.brisbaneunlocked.com.au/english-conversation-group-2026-09-03)
-📆 Thu 3 Sep, 3:00 PM  
-📍 Brisbane Square Library  
+### 📌 [Passport to the Universe](https://www.brisbaneunlocked.com.au/passport-to-the-universe-2026-09-03)
+📆 Thu 3 Sep, 2:00 PM  
+📍 Sir Thomas Brisbane Planetarium, Mt Coot-tha  
 💰 See link  
-`language` `learning` `social`
+`astronomy` `science` `space`
 
-This friendly and informal group meets in the library every Tuesday, Thursday, Friday, and Sunday. Come along to make new friends and improve your English. Learners of all levels are welcome.
+Get your passport for a thrilling journey through the Solar System, out of the Milky Way Galaxy and to the edge of the observable universe, returning home via a black hole. Narrated by Tom Hanks. Session concludes with a virtual tour of the Brisbane night sky. Passport to the Uni
 
 ### 🛠️ [Make a Map FieldTrip](https://creativemornings.com/talks/make-a-map-fieldtrip-845aee84-7265-4ebf-8d6c-fed12a2086b2)
 📆 Tue 8 Sep  
@@ -68,13 +84,13 @@ This friendly and informal group meets in the library every Tuesday, Thursday, F
 
 A workshop on mapping held at Creative Mornings Brisbane.
 
-### 🤝 [☀️ The World Wide Wander 2026: Walk Your Way to Insight, Ideas and Intention](https://creativemornings.com/talks/the-world-wide-wander-2026-walk-your-way-to-insight-ideas-and-intention)
-📆 Fri 4 Sep  
+### 🛠️ [Feel it, Write it.](https://creativemornings.com/talks/feel-it-write-it-c6aea832-3903-4f2b-a7c1-0dc5acd12b17)
+📆 Wed 9 Sep  
 📍 Creative Mornings Brisbane  
 💰 See link  
-`walking` `mindfulness` `community`
+`writing` `creative` `expression`
 
-A social meetup focused on walking and insight held at Creative Mornings Brisbane.
+A creative writing workshop held at Creative Mornings Brisbane.
 
 ### 🎓 [Heritage Architecture Tour with Mark Tendys, ICC City Architect](https://www.ipswichartgallery.qld.gov.au/whats-on/heritage-architecture-tour-with-mark-tendys-city-architect-2026)
 📆 Sat 5 Sep, 2:00 PM  
@@ -83,14 +99,6 @@ A social meetup focused on walking and insight held at Creative Mornings Brisban
 `architecture` `history` `local`
 
 Delve into the hidden histories of Ipswich Art Gallery's building with Mark Tendys, Ipswich City Council's City Architect.
-
-### 🤝 [Social Saturdays: Book Club](https://www.loganarts.com.au/event/social-saturdays-book-club-6/)
-📆 Sat 5 Sep  
-📍 Living Museum of Logan  
-💰 See link  
-`books` `reading` `community`
-
-Love books and also museums? Join the Living Museum of Logan in a fun and welcoming book club!
 
 ### 🛠️ [Life drawing | Afternoon session](https://www.loganarts.com.au/event/life-drawing-afternoon/)
 📆 Sat 12 Sep  
@@ -114,7 +122,7 @@ FREE community events and workshops for actors to flex their muscles and meet ot
 💰 See link  
 `boardgames` `social` `gaming` `casual`
 
-Join us for Dice Rolls & Flagons, a social board game event. Happening monthly on a Sunday afternoon in Netherworld’s Lost Souls bar. It’s a free to join event for solo players or groups to learn and play a range of brilliant board games guided by the Dice Rolls & Flagons team! On the lineup […] \n
+Join us for Dice Rolls & Flagons, a social board game event. Happening monthly on a Sunday afternoon in Netherworld’s Lost Souls bar. It’s a free to join event for solo players or groups to learn and play a range of brilliant board games guided by the Dice Rolls & Flagons team! On the lineup […]
 
 ### 🤝 [Blood on the Clocktower](https://www.netherworldarcade.com/event/blood-on-the-clocktower-5/)
 📆 Wed 9 Sep, 7:30 PM  
@@ -122,7 +130,15 @@ Join us for Dice Rolls & Flagons, a social board game event. Happening monthly o
 💰 AUD 20  
 `gaming` `social` `tabletop` `strategy`
 
-BLOOD ON THE CLOCKTOWER SESSION: Wednesday September 9th at 7.30pm ****Tickets will go on sale from midday on Thursday the 6th of August via this page Join us for a new event in the Netherworld - Blood on the Clocktower! There\'s been some busy traffic in this clocktower, so we\'re now running this event fortnightly, […] \n
+BLOOD ON THE CLOCKTOWER SESSION: Wednesday September 9th at 7.30pm ****Tickets will go on sale from midday on Thursday the 6th of August via this page Join us for a new event in the Netherworld - Blood on the Clocktower! There's been some busy traffic in this clocktower, so we're now running this event fortnightly, […]
+
+### 🎨 [Archie Moore: Kith and Kin](https://www.qagoma.qld.gov.au/exhibition/archie-moore-kith-and-kin)
+📆 Sat 27 Sep  
+📍 GOMA, Stanley Place, South Bank  
+💰 Free  
+`art` `history` `exhibition`
+
+Archie Moore: Kith and Kin is an arts exhibition held at GOMA.
 
 ### 🎓 [Lisa Henson in Conversation](https://www.qagoma.qld.gov.au/event/lisahensonconversation-2026-09-12)
 📆 Sat 12 Sep, 11:00 AM  
@@ -164,14 +180,6 @@ Explore traditional techniques in leatherworking and natural dyeing.
 
 Ekphrasis has long been a vital craft tool used by poets, fiction writers, dramatists and essayists as a springboard for creative imaginings.
 
-### 🛠️ [Introduction to Creative Writing Bootcamp with Venero Armanno](https://www.queenslandwriters.org.au/events/introduction-to-creative-writing-venero-armanno)
-📆 Sat 5 Sep, 10:30 AM  
-📍 Queensland Writers Centre, State Library of Queensland South Brisbane Australia  
-💰 See link  
-`writing` `creative` `literature`
-
-Interested in kickstarting your creative writing, or in need of a refresher? Book your place (https://events.humanitix.com/introduction-to-creative-writing-bootcamp-with-venero-armanno) .
-
 ### 🤝 [YESTERYEAR BOOKCLUB](https://riverbendbooks.com.au/events/yesteryear-bookclub-2pm-sunday-6th-septmeber)
 📆 Sun 6 Sep, 2:00 PM  
 📍 Riverbend Books, Bulimba  
@@ -187,6 +195,14 @@ The Yesteryear Bookclub is a social meetup held at Riverbend Books, Bulimba.
 `musicians` `networking` `productivity`
 
 Trellis Workspace presented by Casual Sequence! A one day trial for musicians to come together in a free shared workspace. • Decompress after the week of Bigsound. • Try fear-setting, the famous Tim Ferriss method for making big decisions and defining worst case scenarios. • See how many grants you can apply for in a day. • Complete your tax. • Create a release plan and budget. • Book a show or apply for support slots. • Order your thoughts. On the day we'll run an Ideas Beehive; an interactive way to brainstorm ideas with other people. Imagine a panel but with all the lived knowledge of whoever is in the room on the day. Tea, coffee, fruit, and snacks supplied. [button link="https://events.humanitix.com/trellis-workspace"]Tickets[/button]
+
+### 🎵 [Jazz Manouche Sundays](https://thecaveinn.net/events/jazz-manouche-sundays-316/)
+📆 Mon 7 Sep  
+📍 47 Balaclava St, Woolloongabba, QLD, Australia, Queensland  
+💰 USD 0  
+`jazz` `gypsy` `monthly`
+
+This monthly residency showcases some of the finest gypsy jazz players in Brisbane. Each month featuring a different band lineup, keeping fresh and exciting. Every first Sunday of the month, 2-4pm at The Cave Inn - Woolloongabba. Door $15. 2026 schedule: January 4th - Mircha Mangiacotti February 1st - Rodrigo Santiago March 1st - Lachie Alexander April 5th - CLOSED for Easter Sunday May 3rd - John Reeves June 7th - Gypsy Cats July 5th - John Reeves August 2nd - Lachie Alexander September 6th - Rodrigo Santiago October 4th - Gareth Mewes November 5th - Gypsy Cats December 6th - Rodrigo Santiago [button link="https://www.facebook.com/events/1962185104693620"] Facebook Event[/button]
 
 ### 🎵 [Experimental night](https://thecaveinn.net/events/experimental-night-3-170-479/)
 📆 Wed 9 Sep, 5:00 AM  
@@ -220,14 +236,6 @@ This Speaker Series responds to core teachings in Indigenous Art History in the 
 
 Cairncross Conversations is a public lecture series about life in the leaf litter.
 
-### 🛠️ [Village Green Talks, Workshops & Wellbeing Sessions](https://www.mustdobrisbane.com/whats-on/brisbane-festival-2026)
-📆 5–6 Sep, 2026  
-📍 South Bank Village Green, Brisbane  
-💰 Free  
-`workshop` `wellness` `creative` `free`
-
-A series of interactive sessions on the Village Green covering various creative and wellness topics, designed for the curious public.
-
 ### 🛠️ [Life Drawing Sessions 2026](https://rqas.com.au)
 📆 6 Sep 2026, 10:30 AM  
 📍 Royal Queensland Art Society, Petrie Terrace  
@@ -252,6 +260,14 @@ A lecture exploring archaeological findings related to ancient warfare and histo
 
 A hands-on workshop led by museum experts, teaching participants how to identify local insect species using scientific observation techniques.
 
+### 🎨 [Brisbane Festival](https://www.brisbanefestival.com.au)
+📆 Fri 4 Sep, 9:00 AM  
+📍 Various locations across Brisbane  
+💰 Cost varies  
+`theatre` `arts` `performance` `festival`
+
+A multi-week city-wide arts festival featuring experimental theatre, live music, and contemporary performance pieces designed to push artistic boundaries.
+
 ### 🎵 [LIMINAL & Margaret — Live @ Season Three Space](https://www.bandsintown.com/e/108748978-liminal-at-season-three)
 📆 Sat 5 Sep, 8:00 PM  
 📍 Season Three Space, Woolloongabba  
@@ -268,14 +284,6 @@ A performance by experimental electronic and indie artists in an intimate, non-t
 
 A relaxed community gathering focused on board games and informal language exchange, perfect for meeting new people in a low-pressure environment.
 
-### 🛠️ [Sunday portrait drawing - Brisbane](https://www.eventsbrisbane.com/)
-📆 Sun 6 Sep, 12:00 PM  
-📍 The Burrow, West End  
-💰 Free  
-`drawing` `art` `workshop` `community`
-
-A communal drawing session where artists of all levels practice portraiture in a relaxed cafe environment.
-
 ### 🎵 [Cage Match: Improv Comedy Showdown](https://www.bigforktheatre.com/shows-events/wlhjrl2t4m76nww-sy9m5-p9jml-c34lm-axl7c-wsk4c-km5c3-fdbb4-mg5nf-kfkjp-cn53k-t2hfl-n6ger-rjs29-kdb9x-n8wff-w78e6-was6b-md8gs-7hcnn-h83a6-4xgmp-4j4ld-458hs)
 📆 Thu 3 Sep  
 📍 Big Fork Theatre, 252 Saint Pauls Terrace Fortitude Valley, QLD, 4000 Australia  
@@ -283,14 +291,6 @@ A communal drawing session where artists of all levels practice portraiture in a
 `comedy` `improv` `performance` `theatre`
 
 Brisbane's best improv comedy! Every Thursday, the best indie improv teams face off against each other in the ultimate comedy showdown - Cage Match!!! Each week, the reigning Cage Match champions are challenged by a new team. Both teams get 15 minutes to wow the audience, who pick the winner. This is high octane laugh out loud improv comedy. Opening the show this week is The Mixer - several short comedy scenes featuring our most experienced and newest improvisers. Featuring Brisbane's best improv comedians. TICKETS ARE ONLY $10 ONLINE | $15 ON THE DOOR
-
-### 🎵 [Weird Show (alternative comedy)](https://www.bigforktheatre.com/shows-events/sundaystandup-h6ax3-6r4ny-de4j2-g3j7e-mn9n2-djtbn-ybhc8-5h9j9-yjjjw-spf8k-5repf-8ya8s-88lf7-7k94y-g28dn-hka54-7xpk7-nsmj5-smbsw-ec5xc-6w9xr-pcagc-tb57e-lhjpd-hrw6x-y3bz7-k6f6j-dh7nn-5rdnc-mnfkd)
-📆 Fri 4 Sep  
-📍 Big Fork Theatre, 252 Saint Pauls Terrace Fortitude Valley, QLD, 4000 Australia  
-💰 See link  
-`comedy` `performance` `alternative` `theatre`
-
-Brisbane’s best comedians do anything except stand-up comedy! Chaos show big wild show fun insane show yay! Clowns, poets, sketch comedy, live music, burlesque! We got it all! It’s going to be weird and that’s exactly what we want! Weird Show is a night of alternative comedy where Brisbane’s best comedians do anything except stand-up comedy. Presented by Brisbane sketch comedy legend Matt Nunn. Strictly 18+
 
 ### 🎵 [Saturday Night Comedy: An Improvised Musical from the Tuning Forks](https://www.bigforktheatre.com/shows-events/bbp2pp4ca3xhljd-r9byr-ws5xh-nye39)
 📆 Sat 5 Sep  
@@ -307,14 +307,6 @@ Brisbane's best improv comedy! Join us for a brilliant night of musical comedy. 
 `comedy` `improv` `performance` `theatre`
 
 Brisbane's best improv comedy! Every Thursday, the best indie improv teams face off against each other in the ultimate comedy showdown - Cage Match!!! Each week, the reigning Cage Match champions are challenged by a new team. Both teams get 15 minutes to wow the audience, who pick the winner. This is high octane laugh out loud improv comedy. Opening the show this week is the La Ronde - a character driven improv show featuring our most experienced and newest improvisers. Featuring Brisbane's best improv comedians. TICKETS ARE ONLY $10 ONLINE | $15 ON THE DOOR
-
-### 🎵 [Asian Aunties (improv comedy)](https://www.bigforktheatre.com/shows-events/sundaystandup-h6ax3-6r4ny-de4j2-g3j7e-mn9n2-djtbn-ybhc8-5h9j9-yjjjw-spf8k-5repf-8ya8s-88lf7-7k94y-g28dn-hka54-7xpk7-nsmj5-smbsw-ec5xc-6w9xr-pcagc-tb57e-lhjpd-hrw6x-e35e5-xky7j-hes68)
-📆 Fri 11 Sep  
-📍 Big Fork Theatre, 252 Saint Pauls Terrace Fortitude Valley, QLD, 4000 Australia  
-💰 See link  
-`comedy` `improv` `performance` `theatre`
-
-One improvised show. Two sassy Aunties. Infinite judgement. The Asian Aunties think they know exactly what’s best for you — and honestly, they’re shocked you’ve survived this long without their guidance. Aunty Rani from Sri Lanka (Himali Ratnayake) and Aunty Maria from the Philippines (Janette McBride) are shimmying in with their signature blend of brutal honesty, invaluable wisdom, and unstoppable Aunty energy that can both bless you and roast you in the same breath. Write down your problems and put them in the rice cooker, so the Aunties can serve you their most generous advice. They’ll then improvise scenes inspired by your juicy dilemmas. The Asian Aunties are an improv comedy duo that was part of the sold out BrisAsia Comedy Gala at the Brisbane Powerhouse, they had a sold out show in Melbourne and a full house in Sydney, and they are the reigning champs in Big Fork Theatre's Cage Match with their 12-week winning streak. Audience members may be judged by the Aunties, but will not be brought on stage (unless you really want to), so you can enjoy the chaos from the comfort of your seats.
 
 ### 🎵 [Diagnonsense (improv comedy)](https://www.bigforktheatre.com/shows-events/zlc325x7ttpk7rz-9wrxf-r76dd)
 📆 Sat 12 Sep  
@@ -356,14 +348,6 @@ The Patterns of Connection Workshop with Prita Tina Yeganeh is a workshop held a
 
 The MoB Presents: Mindful Art Morning Workshop with Nadine McDonald-Dowd is a workshop held at Brisbane Festival.
 
-### 🎓 [Fashion Queensland in Conversation: Fashioning Brisbane: The Future of Fashion and Cultural Identity in our City](https://brisbanepowerhouse.org/events/fashion-queensland-in-conversation-2/)
-📆 Wed 9 Sep  
-📍 Brisbane Powerhouse, 119 Lamington St  
-💰 See link  
-`fashion` `culture` `conversation`
-
-FASHION INFORMATIVE ENTERTAINING
-
 ### 🎨 [The Red Dress](https://www.brisbaneunlocked.com.au/the-red-dress-2026-09-03)
 📆 Thu 3 Sep, 10:00 AM  
 📍 Museum of Brisbane, Brisbane City  
@@ -372,21 +356,13 @@ FASHION INFORMATIVE ENTERTAINING
 
 380 Embroiderers. 51 Countries. 1 Dress. A 14-year global collaborative embroidery project, The Red Dress was conceived by British artist Kirstie Macleod to provide a platform for individuals—especially women in vulnerable situations—to tell their stories through embroidery. In a
 
-### 📌 [Free guided tours - Brisbane Botanic Gardens Mt Coot-tha](https://www.brisbaneunlocked.com.au/free-guided-tours-brisbane-botanic-gardens-mt-coot-tha-2026-09-03)
-📆 Thu 3 Sep, 11:00 AM  
-📍 Brisbane Botanic Gardens Mt Coot-tha  
-💰 See link  
-`nature` `gardens` `free`
-
-Take a free volunteer guided walk to learn about the plants and features at Brisbane Botanic Gardens Mt Coot-tha . Our volunteer guides all have a love for Brisbane’s Botanic Gardens and a desire to share their passion and knowledge with visitors. Walking tours for individuals an
-
-### 📌 [Passport to the Universe](https://www.brisbaneunlocked.com.au/passport-to-the-universe-2026-09-03)
+### 🎵 [Akmal - My Family and Other Criminals - Brisbane](https://www.brisbaneunlocked.com.au/akmal-my-family-and-other-criminals-brisbane-2026-09-03)
 📆 Thu 3 Sep, 2:00 PM  
-📍 Sir Thomas Brisbane Planetarium, Mt Coot-tha  
+📍 The Sit Down Comedy Club  
 💰 See link  
-`astronomy` `science` `space`
+`comedy` `performance` `live`
 
-Get your passport for a thrilling journey through the Solar System, out of the Milky Way Galaxy and to the edge of the observable universe, returning home via a black hole. Narrated by Tom Hanks. Session concludes with a virtual tour of the Brisbane night sky. Passport to the Uni
+Akmal returns to share stories and thoughts about people who affected his life.
 
 ### 🛠️ [Let's create: Mindful colouring and Zentangling](https://www.brisbaneunlocked.com.au/lets-create-mindful-colouring-and-zentangling-2026-09-03)
 📆 Thu 3 Sep, 2:30 PM  
@@ -395,6 +371,86 @@ Get your passport for a thrilling journey through the Solar System, out of the M
 `art` `mindfulness` `drawing`
 
 Join a friendly group using the Zentangle® method and adult colouring in to de-stress and have fun whilst improving your cognitive functioning and hand/eye coordination. Concentrating on drawing or colouring one small section of a page at a time we create beautiful art. Some supp
+
+### 🤝 [English conversation group.](https://www.brisbaneunlocked.com.au/english-conversation-group-2026-09-03)
+📆 Thu 3 Sep, 3:00 PM  
+📍 Brisbane Square Library  
+💰 See link  
+`language` `learning` `social`
+
+This friendly and informal group meets in the library every Tuesday, Thursday, Friday, and Sunday. Come along to make new friends and improve your English. Learners of all levels are welcome.
+
+### 🤝 [Dinner Meetup for Creatives in London](https://www.creativelunchclub.com/meetups/dinner-for-creatives-in-london-september-2026)
+📆 Fri 4 Sep, 7:15 PM  
+📍 London  
+💰 See link  
+`networking` `creatives` `social`
+
+The Dinner Meetup for Creatives in London is a Social / Meetup event held in London.
+
+### 🤝 [Coffee Meetup for Creatives in Aarhus](https://www.creativelunchclub.com/meetups/coffee-for-creatives-in-aarhus-september-2026)
+📆 Sat 5 Sep, 11:00 AM  
+📍 Aarhus  
+💰 See link  
+`networking` `creatives` `coffee`
+
+The Coffee Meetup for Creatives in Aarhus is a Social / Meetup event held in Aarhus.
+
+### 🤝 [Lunch Meetup for Creatives in Madrid](https://www.creativelunchclub.com/meetups/lunch-for-creatives-in-madrid-september-2026)
+📆 Sat 5 Sep, 1:45 PM  
+📍 Madrid  
+💰 See link  
+`networking` `creatives` `lunch`
+
+The Lunch Meetup for Creatives in Madrid is a Social / Meetup event held in Madrid.
+
+### 🤝 [Breakfast Meetup for Creatives in Vienna](https://www.creativelunchclub.com/meetups/breakfast-for-creatives-in-vienna-september-2026)
+📆 Mon 7 Sep, 8:30 AM  
+📍 Vienna  
+💰 See link  
+`networking` `creatives` `breakfast`
+
+The Breakfast Meetup for Creatives in Vienna is a Social / Meetup event held in Vienna.
+
+### 🤝 [Afterwork Meetup for Creatives in Manchester](https://www.creativelunchclub.com/meetups/afterwork-for-creatives-in-manchester-september-2026)
+📆 Tue 8 Sep, 6:30 PM  
+📍 Manchester  
+💰 See link  
+`networking` `creatives` `afterwork`
+
+The Afterwork Meetup for Creatives in Manchester is a Social / Meetup event held in Manchester.
+
+### 🤝 [Picnic Meetup for Creatives in Berlin](https://www.creativelunchclub.com/meetups/picnic-meetup-for-creatives-in-berlin-mauerpark-september-2026)
+📆 Thu 10 Sep, 4:30 PM  
+📍 Berlin  
+💰 See link  
+`networking` `creatives` `picnic`
+
+The Picnic Meetup for Creatives in Berlin is a Social / Meetup event held in Berlin.
+
+### 🤝 [Coffee Meetup for Creatives in Stockholm](https://www.creativelunchclub.com/meetups/coffee-for-creatives-in-stockholm-september-2026)
+📆 Sat 12 Sep, 1:00 AM  
+📍 Stockholm  
+💰 See link  
+`networking` `creatives` `coffee`
+
+The Coffee Meetup for Creatives in Stockholm is a Social / Meetup event held in Stockholm.
+
+### 🤝 [Lunch Meetup for Creatives in Portland](https://www.creativelunchclub.com/meetups/lunch-for-creatives-in-portland-september-2026)
+📆 Sun 13 Sep, 12:00 PM  
+📍 Portland  
+💰 See link  
+`networking` `creatives` `lunch`
+
+The Lunch Meetup for Creatives in Portland is a Social / Meetup event held in Portland.
+
+### 🤝 [☀️ The World Wide Wander 2026: Walk Your Way to Insight, Ideas and Intention](https://creativemornings.com/talks/the-world-wide-wander-2026-walk-your-way-to-insight-ideas-and-intention)
+📆 Fri 4 Sep  
+📍 Creative Mornings Brisbane  
+💰 See link  
+`walking` `mindfulness` `community`
+
+A social meetup focused on walking and insight held at Creative Mornings Brisbane.
 
 ### 🎵 [Michael Hynes](https://www.doo-bop.com.au/events/ekzh4dajdxlhrlre9x55r7f5jz2d5m)
 📆 Thu 3 Sep, 7:00 PM  
@@ -436,6 +492,14 @@ Rachel Head is a concert event at Doo-Bop Bar.
 
 Peter King Trio is a concert event at Doo-Bop Bar.
 
+### 🎵 [Suzanne Vega](https://thefortitude.com.au/all-events/suzanne-vega-tickets-ae1618)
+📆 Sat 12 Sep  
+📍 Fortitude Music Hall, 66 Doggett St  
+💰 See link  
+`singer songwriter` `folk` `live music`
+
+Suzanne Vega is a concert held at Fortitude Music Hall.
+
 ### 🎨 [Ties that bind](https://www.ipswichartgallery.qld.gov.au/whats-on/ties-that-bind)
 📆 Sat 27 Jun, 10:00 AM  
 📍 Ipswich Art Gallery  
@@ -451,14 +515,6 @@ What binds us to home? What—or who—makes belonging possible? How do we carry
 `ceramics` `art` `sculpture`
 
 COMING SOON — An exhibition by ceramic artists, Donalee Moriarty and Nicolette Johnson, exploring the shared qualities that unite their seemingly opposing styles.
-
-### 🎨 [Amanda Waschevski | People of Ipswich](https://www.ipswichartgallery.qld.gov.au/whats-on/amanda-waschevski-people-of-ipswich)
-📆 Wed 26 Aug, 10:00 AM  
-📍 Ipswich Art Gallery  
-💰 Free  
-`photography` `local` `portrait`
-
-People of Ipswich is a love letter to the city by award-winning photographer Amanda Waschevski.
 
 ### 🎨 [Jude Muduioa: Artist in Residence](https://www.ipswichartgallery.qld.gov.au/whats-on/jude-muduioa-artist-in-residence)
 📆 Mon 17 Aug  
@@ -483,6 +539,14 @@ Explore your creativity with multiple award-winning theatre company indelarts!
 `film` `cinema` `festival`
 
 Underdog Film Festival returns to Kingston Butter Factory this September for its biggest celebration of Australian filmmaking yet.
+
+### 🎵 [Bands in Parks: Twilight Jazz by the River](https://maritimemuseum.com.au/eventsandexhibitions/twilightjazz/twilight-jazz-by-the-river-friday-11-september-2026/)
+📆 Fri 11 Sep  
+📍 Queensland Maritime Museum, 412 Stanley St  
+💰 Free Event  
+`jazz` `music` `outdoor` `river`
+
+Bands in Parks: Twilight Jazz by the River is a Concert / Music event at Queensland Maritime Museum.
 
 ### 🎨 [Choral Cthonics](https://metroarts.com.au/exhibition/choral-cthonics/)
 📆 Thu 27 Aug  
@@ -514,15 +578,7 @@ The Jazz Room: A Journey to the Heart of New Orleans is a concert / music event 
 💰 See link  
 `music` `live` `showcase` `arcade`
 
-We are absolutely thrilled to welcome back Omiya Group for BLOWN A WISH III - their 3rd annual showcase sideshow in the Netherworld. 15 acts playing the arcade stage over 3 nights from Tuesday the 1st of September to Thursday the 3rd. TUESDAY FROM 5PM Greatsouth, Beryl, koady, Lottie McLeod & Tickertape @‌greatsouthgreat@‌beryls_peril@‌koady@‌lottieemcleod@‌tickertape_ WEDNESDAY FROM 5PMSUPERNEW, […] \n
-
-### 🛠️ [Skill Shots – Level Up Your Pinball Game](https://www.netherworldarcade.com/event/skill-shots-7/)
-📆 Sat 12 Sep, 10:00 AM  
-📍 Netherworld, 186 Brunswick Street  
-💰 See link  
-`pinball` `gaming` `skills` `workshop`
-
-Ready to level up your pinball game? Join us once a month on a Saturday morning to hang and chat all things pinball! Whether you’re a budding beginner, a functional flipper or a multiball maestro, you’re welcome to come and sharpen up your skills and help others do the same. From starting a game to […] \n
+We are absolutely thrilled to welcome back Omiya Group for BLOWN A WISH III - their 3rd annual showcase sideshow in the Netherworld. 15 acts playing the arcade stage over 3 nights from Tuesday the 1st of September to Thursday the 3rd. TUESDAY FROM 5PM Greatsouth, Beryl, koady, Lottie McLeod & Tickertape @‌greatsouthgreat@‌beryls_peril@‌koady@‌lottieemcleod@‌tickertape_ WEDNESDAY FROM 5PMSUPERNEW, […]
 
 ### 🎓 [Q&A Event: Silenced](https://palacecinemas.com.au/qa-event-silenced)
 📆 Fri 4 Sep  
@@ -540,13 +596,21 @@ A Q&A event for the film Silenced held at Palace Cinemas Brisbane.
 
 A Melbourne Q&A event for the film Silenced held at Palace Cinemas Brisbane.
 
-### 🎨 [Archie Moore: Kith and Kin](https://www.qagoma.qld.gov.au/exhibition/archie-moore-kith-and-kin)
-📆 Sat 27 Sep  
+### 🎨 [Make-Believe Magic: The Worlds of The Jim Henson Company](https://www.qagoma.qld.gov.au/exhibition/make-believe-magic-the-worlds-of-the-jim-henson-company)
+📆 Sat 12 Sep  
 📍 GOMA, Stanley Place, South Bank  
-💰 Free  
-`art` `history` `exhibition`
+💰 Buy Tickets (https://qagoma.t.qtix.com.au/events/019d9385-61f9-1bde-1559-f741ebff4c89)  
+`film` `puppets` `exhibition`
 
-Archie Moore: Kith and Kin is an arts exhibition held at GOMA.
+Make-Believe Magic: The Worlds of The Jim Henson Company is an arts exhibition held at GOMA.
+
+### 🎨 [Sorcerers from Bohemia: Picasso’s Saltimbanques](https://www.qagoma.qld.gov.au/exhibition/sorcerers-from-bohemia-picassos-saltimbanques)
+📆 Sat 14 Feb  
+📍 QAG, Stanley Place, South Bank  
+💰 Free  
+`picasso` `art` `exhibition`
+
+Sorcerers from Bohemia: Picasso’s Saltimbanques is an arts exhibition held at QAG.
 
 ### 🎨 [Towards a Collapsing World: German Expressionism](https://www.qagoma.qld.gov.au/exhibition/towards-a-collapsing-world-german-expressionism)
 📆 Sat 14 Feb  
@@ -564,14 +628,6 @@ Towards a Collapsing World: German Expressionism is an arts exhibition held at Q
 
 The God of Small Things: Faith and Popular Culture is an arts exhibition held at QAG.
 
-### 🎨 [Screened to be Believed: The Jim Henson Company](https://www.qagoma.qld.gov.au/cinema/program/screened-to-be-believed-the-jim-henson-company)
-📆 Sat 12 Sep  
-📍 GOMA, Stanley Place, South Bank  
-💰 Free  
-`film` `puppets` `cinema`
-
-Screened to be Believed: The Jim Henson Company is an arts exhibition held at GOMA.
-
 ### 🎨 [Beyond Henson: Puppetry and World Cinema](https://www.qagoma.qld.gov.au/cinema/program/beyond-henson-puppetry-and-world-cinema)
 📆 Sat 12 Sep  
 📍 GOMA, Stanley Place, South Bank  
@@ -579,6 +635,14 @@ Screened to be Believed: The Jim Henson Company is an arts exhibition held at GO
 `film` `puppets` `cinema`
 
 Beyond Henson: Puppetry and World Cinema is an arts exhibition held at GOMA.
+
+### 🎵 [Be The Sky](https://www.qtix.com.au/whats-on/2026/qcgu-be-the-sky/)
+📆 Mon 7 Sep, 7:30 PM  
+📍 Conservatorium Theatre, Queensland Conservatorium Griffith University  
+💰 See link  
+`meditative` `contemporary` `classical`
+
+Curated by Professor Vanessa Tomlinson, Be the Sky unites Tenzin Choegyal and Conservatorium students in a meditative Philip Glass work.
 
 ### 🎵 [Live Jazz @ the Con #2](https://www.qtix.com.au/whats-on/2026/qcgu-live-jazz-at-the-con-2/)
 📆 Wed 2 Sep  
@@ -588,13 +652,29 @@ Beyond Henson: Puppetry and World Cinema is an arts exhibition held at GOMA.
 
 The Jazz Department presents a vibrant showcase of student talent, featuring a diverse program of ensembles and performances.
 
-### 🛠️ [Silversmithing & Jewellery Workshops](https://www.qtix.com.au/whats-on/2026/silversmithing-jewellery-workshops-2026/)
-📆 Sat 21 Feb  
-📍 Queensland Museum Cobb+Co, Toowoomba  
+### 📌 [Queens Wharf Brisbane Precinct Public Art Tour](https://www.qtix.com.au/whats-on/2026/mob-queens-wharf-brisbane-precinct-public-art-tour/)
+📆 Wed 29 Apr  
+📍 Museum of Brisbane, Level 3, Brisbane City Hall  
 💰 See link  
-`jewellery` `craft` `teens` `making`
+`tour` `history` `walking` `art`
 
-Explore hands-on silversmithing workshops and jewellery making sessions created especially for teens.
+Step into Brisbane’s ever-evolving story with this expertly guided walking tour through the Queen’s Wharf Precinct.
+
+### 📌 [Convict Brisbane Walking Tour](https://www.qtix.com.au/whats-on/2026/mob-convict-brisbane-walking-tour/)
+📆 Sat 11 Apr  
+📍 Museum of Brisbane, Level 3, Brisbane City Hall  
+💰 See link  
+`tour` `history` `walking` `colonial`
+
+Explore Brisbane’s colonial history on this guided tour through the city’s convict past.
+
+### 🛠️ [Introduction to Creative Writing Bootcamp with Venero Armanno](https://www.queenslandwriters.org.au/events/introduction-to-creative-writing-venero-armanno)
+📆 Sat 5 Sep, 10:30 AM  
+📍 Queensland Writers Centre, State Library of Queensland South Brisbane Australia  
+💰 See link  
+`writing` `creative` `literature`
+
+Interested in kickstarting your creative writing, or in need of a refresher? Book your place (https://events.humanitix.com/introduction-to-creative-writing-bootcamp-with-venero-armanno) .
 
 ### 🛠️ [Researching and Writing Family History with Edwina Shaw](https://www.queenslandwriters.org.au/events/researching-and-writing-family-history-with-edwina-shaw)
 📆 Sun 13 Sep, 10:30 AM  
@@ -604,14 +684,6 @@ Explore hands-on silversmithing workshops and jewellery making sessions created 
 
 Learn how to discover the truth behind family stories and create compelling narratives from your family history. Book your place (https://events.humanitix.com/researching-and-writing-family-history-with-edwina-shaw) .
 
-### 🛠️ [Voice: The Make or Break Element with Natasha Lester](https://queenslandwriters.org.au/events/voice-the-make-or-break-element-with-natasha-lester)
-📆 Thu 10 Sep  
-📍 Queensland Writers Centre  
-💰 See link  
-`writing` `fiction` `literature`
-
-Learn to grab your reader’s attention with the standout element every novel needs: voice. Book your place.
-
 ### 🎓 [ELISABETH GALVIN: Author of Mary Poppins, The Untold Story of P.L.Travers](https://riverbendbooks.com.au/events/elisabeth-galvin-author-of-mary-poppins-the-untold-story-of-pltravers-thursday-8-october-630pm-at-riverbend-books)
 📆 Thu 10 Sep  
 📍 Riverbend Books  
@@ -620,13 +692,21 @@ Learn to grab your reader’s attention with the standout element every novel ne
 
 Elisabeth Galvin presents a public lecture at Riverbend Books regarding the author of Mary Poppins.
 
-### 🎵 [Jazz Manouche Sundays](https://thecaveinn.net/events/jazz-manouche-sundays-316/)
-📆 Mon 7 Sep  
+### 🎵 [Death of a Salesman](https://www.visitsouthbank.com.au/events/death-of-a-salesman)
+📆 Fri 28 Aug  
+📍 South Bank Parklands, Grey St, South Bank  
+💰 See link  
+`theatre` `play` `performance`
+
+Death of a Salesman is a concert and music event held at South Bank Parklands.
+
+### 🎵 [Out of Abingdon Live](https://thecaveinn.net/events/out-of-abingdon-live/)
+📆 Sun 13 Sep  
 📍 47 Balaclava St, Woolloongabba, QLD, Australia, Queensland  
 💰 USD 0  
-`jazz` `gypsy` `monthly`
+`acoustic` `jazz` `duo`
 
-This monthly residency showcases some of the finest gypsy jazz players in Brisbane. Each month featuring a different band lineup, keeping fresh and exciting. Every first Sunday of the month, 2-4pm at The Cave Inn - Woolloongabba. Door $15. 2026 schedule: January 4th - Mircha Mangiacotti February 1st - Rodrigo Santiago March 1st - Lachie Alexander April 5th - CLOSED for Easter Sunday May 3rd - John Reeves June 7th - Gypsy Cats July 5th - John Reeves August 2nd - Lachie Alexander September 6th - Rodrigo Santiago October 4th - Gareth Mewes November 5th - Gypsy Cats December 6th - Rodrigo Santiago [button link="https://www.facebook.com/events/1962185104693620"] Facebook Event[/button]
+Live at The Cave Inn OUT of ABINGDON is a soulful acoustic duo blending stripped-back guitar, double bass and smooth, captivating vocals. Featuring Warwick Hargreaves and Tina Fullerton, their grooving, lounge infused sound draws on years of touring across Australia, Europe and the UK, including jazz clubs from Edinburgh to Berlin. Now living and touring full-time in their converted house truck, the duo channel life on the road into their music. OoA will be bringing their latest collection of original and interpreted tunes to their hometown for one afternoon at The Cave Inn, Brisbane before they head outback and beyond. [button link="https://events.humanitix.com/out-of-abingdon-live-the-cave-inn"] Tickets[/button]
 
 ### 🎵 [Opaque Space Debut Album Launch](https://thecaveinn.net/events/opaque-space-debut-album-launch/)
 📆 Sun 13 Sep, 4:00 AM  
@@ -651,6 +731,14 @@ Our 2026 program groundwork honours five decades of art, artists, education and 
 `theatre` `performance` `music`
 
 An intimate, atmospheric venue hosting experimental music, cabaret, and performance art throughout the Brisbane Festival.
+
+### 🛠️ [Village Green Talks, Workshops & Wellbeing Sessions](https://www.mustdobrisbane.com/whats-on/brisbane-festival-2026)
+📆 5–6 Sep, 2026  
+📍 South Bank Village Green, Brisbane  
+💰 Free  
+`workshop` `wellness` `creative` `free`
+
+A series of interactive sessions on the Village Green covering various creative and wellness topics, designed for the curious public.
 
 ### 🎵 BIGSOUND Festival
 📆 1-4 September 2026  
@@ -684,14 +772,6 @@ An intimate acoustic music performance in one of Brisbane's most character-fille
 
 A gathering of local crafters and makers featuring interactive workshops in various mediums, providing a space for enthusiasts to learn techniques and share creative projects.
 
-### 🎨 [Brisbane Festival](https://www.brisbanefestival.com.au)
-📆 Fri 4 Sep, 9:00 AM  
-📍 Various locations across Brisbane  
-💰 Cost varies  
-`theatre` `arts` `performance` `festival`
-
-A multi-week city-wide arts festival featuring experimental theatre, live music, and contemporary performance pieces designed to push artistic boundaries.
-
 ### 📌 [California Lane CD & Record Fair (BIGSOUND edition)](https://glitterrecords.com.au/pages/california-lane-cd-record-fair-fortitude-valley)
 📆 Wed 2 Sep, 9:30 AM  
 📍 California Lane, Fortitude Valley  
@@ -699,6 +779,14 @@ A multi-week city-wide arts festival featuring experimental theatre, live music,
 `music` `vinyl` `community` `free`
 
 A crate-digging community event perfect for music enthusiasts looking to discover physical media and connect with other collectors during the BIGSOUND festival period.
+
+### 🛠️ [QAGOMA Public Program: The Pop-Up Sock Puppet Studio](https://www.qagoma.qld.gov.au/stories/the-sock-puppet-studio-make-believe-magic-the-worlds-of-the-jim-henson-company-gallery-of-modern-art)
+📆 Sun 6 Sep, 9:00 AM  
+📍 Verso Projects, South Bank  
+💰 Free  
+`craft` `art` `workshop` `free`
+
+A lighthearted, creative workshop focused on puppet design and performance, inspired by the historical craft of Jim Henson's studio.
 
 ### 🎵 [Compassion feat. Lior — Conservatorium Symphony Orchestra](https://qtix.com.au/whats-on/2026/qcgu-compassion-feat-lior)
 📆 Fri 4 Sep, 7:30 PM  
@@ -732,14 +820,6 @@ An experimental theatre production by Chloe Kim that explores the complexities o
 
 An intimate showcase of original works composed by young, emerging musicians participating in the QYO Young Composer Program. It provides an inspiring look at the next generation of experimental musical composition.
 
-### 📌 [Convict Brisbane Walking Tour](https://www.viabrisbane.com/events/convict-brisbane-walking-tour-museum-of-brisbane-brisbane-city/2026-05-09)
-📆 5 Sep 2026, 10:30 AM  
-📍 Departs King George Square foyer, Brisbane City Hall  
-💰 From $30  
-`history` `walking` `tour` `intellectual`
-
-A guided historical walking tour exploring the convict origins of Brisbane, providing insight into the city's early development and social history.
-
 ## 📋 All Events
 
 ### 🎵 Concert / Music
@@ -752,30 +832,6 @@ A guided historical walking tour exploring the convict origins of Brisbane, prov
 
 Brisbane's best open mic comedy! Featuring the best and brightest up and coming comedians from Brisbane and beyond, plus you never know who might drop in. Cold drinks and a relaxed vibe - you'll be howling with laughter. TICKETS ARE ONLY $10 ONLINE | $15 ON THE DOOR
 
-#### [Shel We](https://brisbanefestival.com.au/events/shel-we)
-📆 Thu 10 Sep
-📍 Brisbane Festival
-💰 See link
-`dance` `performance` `arts`
-
-Tupua Tigafua (Aotearoa | NZ)
-
-#### [No One Gets Out of Here Alive](https://brisbanefestival.com.au/events/no-one-gets-out-of-here-alive)
-📆 Wed 9 Sep
-📍 Brisbane Festival
-💰 See link
-`dance` `performance` `arts`
-
-The Farm
-
-#### [Be The Sky](https://brisbanefestival.com.au/events/be-the-sky)
-📆 Mon 7 Sep
-📍 Brisbane Festival
-💰 See link
-`music` `performance` `arts`
-
-Tenzin Choegyal | Queensland Conservatorium Griffith University
-
 #### [Tiri: Te Araroa Woman Far Walking](https://brisbanefestival.com.au/events/tiri-te-araroa-woman-far-walking)
 📆 Thu 10 Sep
 📍 Brisbane Festival
@@ -784,21 +840,13 @@ Tenzin Choegyal | Queensland Conservatorium Griffith University
 
 By Witi Ihimaera.
 
-#### [Musical Mantras with Camerata – Queensland’s Chamber Orchestra](https://brisbanefestival.com.au/events/musical-mantras-with-camerata)
-📆 Sun 6 Sep
+#### [The Complete Bach Catalogue for Organ](https://brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ)
+📆 Sun 13 Sep
 📍 Brisbane Festival
 💰 See link
-`orchestra` `classical` `music`
+`organ` `classical` `bach`
 
-Musical Mantras with Camerata – Queensland’s Chamber Orchestra is a concert at Brisbane Festival.
-
-#### [Akmal - My Family and Other Criminals - Brisbane](https://www.brisbaneunlocked.com.au/akmal-my-family-and-other-criminals-brisbane-2026-09-03)
-📆 Thu 3 Sep, 2:00 PM
-📍 The Sit Down Comedy Club
-💰 See link
-`comedy` `performance` `live`
-
-Akmal returns to share stories and thoughts about people who affected his life.
+Calvin Bowman
 
 #### [City Sounds: Andre Cordeiro, 4 September](https://www.brisbaneunlocked.com.au/city-sounds-andre-cordeiro-4-september-2026-09-03)
 📆 Thu 3 Sep, 2:00 PM
@@ -808,6 +856,14 @@ Akmal returns to share stories and thoughts about people who affected his life.
 
 Andre Cordeiro is a Brazilian singer-songwriter blending Brazil's regional styles with global influences like Reggae and Funk, creating music that celebrates identity, freedom, and unity while promoting joy, love, and cultural awareness.
 
+#### [Morning Masterworks 4: La Mer](https://www.brisbaneunlocked.com.au/morning-masterworks-4-la-mer-2026-09-03)
+📆 Thu 3 Sep, 2:00 PM
+📍 QPAC Concert Hall
+💰 See link
+`classical` `orchestra` `music`
+
+Start your Friday with a touch of classical brilliance with this Morning Masterworks concert. From gentle tides to stormy swells, this concert captures the ever-shifting
+
 #### [City Sounds: The View From Madeleines Couch, 4 September](https://www.brisbaneunlocked.com.au/city-sounds-the-view-from-madeleines-couch-4-september-2026-09-03)
 📆 Thu 3 Sep, 2:00 PM
 📍 Queen Street Mall Stage
@@ -815,14 +871,6 @@ Andre Cordeiro is a Brazilian singer-songwriter blending Brazil's regional style
 `bossa-nova` `live` `music`
 
 The View From Madeleine's Couch is Australia's longest-lived Brazilian band, playing beautiful music from the bossa nova era.
-
-#### [Suzanne Vega](https://thefortitude.com.au/all-events/suzanne-vega-tickets-ae1618)
-📆 Sat 12 Sep
-📍 Fortitude Music Hall, 66 Doggett St
-💰 See link
-`singer songwriter` `folk` `live music`
-
-Suzanne Vega is a concert held at Fortitude Music Hall.
 
 #### [Good Chat Comedy's Friday Late & Loud w. Henry Bretz & Michael Cho!](https://goodchatcomedy.com/shows/good-chat-comedys-friday-late-loud-w-henry-bretz-michael-cho/)
 📆 Fri 4 Sep
@@ -832,69 +880,13 @@ Suzanne Vega is a concert held at Fortitude Music Hall.
 
 Good Chat Comedy's Friday Late & Loud w. Henry Bretz & Michael Cho! is a comedy event held at 52 Petrie Terrace, Petrie Terrace.
 
-#### [Jack Knight | Momentary Loss of Composure](https://goodchatcomedy.com/shows/jack-knight-momentary-loss-of-composure/)
-📆 Thu 3 Sep
-📍 52 Petrie Terrace, Brisbane City
+#### [Queensland Symphony Orchestra](https://musick.com.au/gig/morning-masterworks-4-la-mer-2026-09-04-4/)
+📆 Fri 4 Sep
+📍 Lyric Theatre, South Brisbane
 💰 See link
-`comedy` `standup` `performance`
+`orchestra` `classical` `symphony`
 
-Jack Knight | Momentary Loss of Composure is a comedy event held at 52 Petrie Terrace, Brisbane City.
-
-#### [Henry Bretz’s KARL STEFANOVIC: Live & Angry [ENCORE!]](https://goodchatcomedy.com/shows/henry-bretzs-karl-stefanovic-live-angry-encore/)
-📆 Thu 3 Sep
-📍 Good Chat Comedy Club
-💰 See link
-`comedy` `standup` `performance`
-
-Henry Bretz’s KARL STEFANOVIC: Live & Angry [ENCORE!] is a comedy event held at Good Chat Comedy Club.
-
-#### [Nadun Hetti | I Flew Here](https://goodchatcomedy.com/shows/nadun-hetti-i-flew-here/)
-📆 Sat 5 Sep
-📍 Good Chat Comedy Club
-💰 See link
-`comedy` `standup` `performance`
-
-Nadun Hetti | I Flew Here is a comedy event held at Good Chat Comedy Club.
-
-#### [Akwasi | Life Through a Black Eye](https://goodchatcomedy.com/shows/akwasi-life-through-a-black-eye/)
-📆 Sat 5 Sep
-📍 Good Chat Comedy Club
-💰 See link
-`comedy` `standup` `performance`
-
-Akwasi | Life Through a Black Eye is a comedy event held at Good Chat Comedy Club.
-
-#### [Mid Flight Brawl LIVE! [Brisbane – Encore Session!]](https://goodchatcomedy.com/shows/mid-flight-brawl-live-brisbane-encore-session/)
-📆 Sat 12 Sep
-📍 Good Chat Comedy Club
-💰 See link
-`comedy` `standup` `performance`
-
-Mid Flight Brawl LIVE! [Brisbane – Encore Session!] is a comedy event held at Good Chat Comedy Club.
-
-#### [Luke Heggie | Work In Progress](https://goodchatcomedy.com/shows/luke-heggie-work-in-progress/)
-📆 Sat 12 Sep
-📍 Good Chat Comedy Club
-💰 See link
-`comedy` `standup` `performance`
-
-Luke Heggie | Work In Progress is a comedy event held at Good Chat Comedy Club.
-
-#### [Nick Cody | Crusher](https://goodchatcomedy.com/shows/nick-cody-crusher/)
-📆 Sat 12 Sep
-📍 Good Chat Comedy Club
-💰 See link
-`comedy` `standup` `performance`
-
-Nick Cody | Crusher is a comedy event held at Good Chat Comedy Club.
-
-#### [Bands in Parks: Twilight Jazz by the River](https://maritimemuseum.com.au/eventsandexhibitions/twilightjazz/twilight-jazz-by-the-river-friday-11-september-2026/)
-📆 Fri 11 Sep
-📍 Queensland Maritime Museum, 412 Stanley St
-💰 Free Event
-`jazz` `music` `outdoor` `river`
-
-Bands in Parks: Twilight Jazz by the River is a Concert / Music event at Queensland Maritime Museum.
+Queensland Symphony Orchestra is a concert / music event at Lyric Theatre, South Brisbane.
 
 #### [Queensland Symphony Orchestra](https://musick.com.au/gig/morning-masterworks-4-la-mer-2026-09-04-5/)
 📆 Fri 4 Sep
@@ -903,6 +895,22 @@ Bands in Parks: Twilight Jazz by the River is a Concert / Music event at Queensl
 `orchestra` `classical` `symphony`
 
 Queensland Symphony Orchestra is a concert / music event at Queensland Symphony Orchestra Studio, 114 Grey Street, South Brisbane, South Brisbane.
+
+#### [BIGSOUND](https://musick.com.au/gig/bigsound-2026-09-04/)
+📆 Fri 4 Sep
+📍 Brunswick Street Mall, Fortitude Valley, Fortitude Valley
+💰 See link
+`festival` `music` `industry`
+
+BIGSOUND is a concert / music event at Brunswick Street Mall, Fortitude Valley, Fortitude Valley.
+
+#### [Gilbert & Sullivan: A Soiree of Song and Satire](https://www.qpac.com.au/whats-on/2026/gilbert-and-sullivan/)
+📆 Sun 6 Sep
+📍 Queensland Performing Arts Centre, Grey St, South Bank
+💰 See link
+`classical` `opera` `satire`
+
+Gilbert & Sullivan: A Soiree of Song and Satire is a concert held at Queensland Performing Arts Centre.
 
 #### [THE BOOK OF MORMON](https://www.qpac.com.au/whats-on/2026/the-book-of-mormon/)
 📆 Thu 3 Sep, 12:38 PM
@@ -919,6 +927,14 @@ Hello again! Brisbane, the Mormons are back! Don’t miss the outrageous musical
 `live` `free` `outdoor`
 
 Live Acts. Local Talent. Free on Fridays. This is the perfect way to kickstart your weekend with a weekly program of free performances.
+
+#### [Brisbane Festival Shel We](https://www.qtix.com.au/whats-on/2026/bf-shel-we/)
+📆 Thu 10 Sep
+📍 Cremorne Theatre, QPAC
+💰 See link
+`performance` `theatre` `brisbane`
+
+Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages!
 
 #### [Faculty & Friends No.2](https://www.qtix.com.au/whats-on/2026/qcgu-faculty-friends-2/)
 📆 Wed 9 Sep, 7:00 PM
@@ -952,13 +968,45 @@ This show is like a big warm hug from your favourite (undeniably queer) aunty.
 
 The Book of Mormon The Musical is a concert and music event held at South Bank Parklands.
 
-#### [Death of a Salesman](https://www.visitsouthbank.com.au/events/death-of-a-salesman)
-📆 Fri 28 Aug
-📍 South Bank Parklands, Grey St, South Bank
+#### [The Mitzi Project @ The Sit Down Comedy Club](https://www.standup.com.au/event/the-mitzi-project-the-sit-down-comedy-club-72/)
+📆 Thu 3 Sep, 8:00 PM
+📍 The Sit Down Comedy Club
 💰 See link
-`theatre` `play` `performance`
+`comedy` `performance` `live`
 
-Death of a Salesman is a concert and music event held at South Bank Parklands.
+The Mitzi Project is a comedy event held at The Sit Down Comedy Club.
+
+#### [Comedy Allsorts @ The Sit Down Comedy Club](https://www.standup.com.au/event/comedy-allsorts-the-sit-down-comedy-club-81/)
+📆 Fri 4 Sep, 8:15 PM
+📍 The Sit Down Comedy Club
+💰 See link
+`comedy` `performance` `live`
+
+Comedy Allsorts is a comedy event held at The Sit Down Comedy Club.
+
+#### [Open Mic Night @ The Morrison Hotel](https://www.standup.com.au/event/open-mic-night-the-morrison-hotel-8/)
+📆 Sun 6 Sep, 6:00 PM
+📍 Morrison Hotel
+💰 See link
+`comedy` `open mic` `performance`
+
+Open Mic Night is a comedy event held at Morrison Hotel.
+
+#### [Open Mic Night @ Forest Lake Tavern](https://www.standup.com.au/event/open-mic-night-forest-lake-tavern-9/)
+📆 Sun 6 Sep, 6:00 PM
+📍 Forest Lake Tavern
+💰 See link
+`comedy` `open mic` `performance`
+
+Open Mic Night is a comedy event held at Forest Lake Tavern.
+
+#### [The Damned (UK) With The Darts (USA)](https://thetivoli.com.au/events/the-damned-26)
+📆 Fri 11 Sep
+📍 The Tivoli, 52 Costin St
+💰 See link
+`punk` `rock` `live music`
+
+The Damned and The Darts perform a concert at The Tivoli.
 
 #### [Fletcher Dunn](https://thecaveinn.net/events/fletcher-dunn-live-at-the-cave-inn/)
 📆 Fri 4 Sep, 4:00 AM
@@ -1000,13 +1048,13 @@ Latest installment of our weekly country, blues, folk, rock, eclectic open mic n
 
 Get ready for an unforgettable evening of authentic Australian blues/country music as Damien J. Johnson and The Damien J. Johnson Band take over The Cave Inn, Brisbane, on Thursday September 10th. Following a string of acclaimed single releases in the lead up to their debut album, the band delivers a joyful blend of country, bluegrass and blues performed with playful energy and skilled live musicianship. Joining them are special guests Milly & The Maths Show, whose heartfelt songwriting and captivating live performances make them the perfect support act. Whether you're a lifelong fan of blues, roots and country music or simply looking for a great live show, this promises to be an night of outstanding musicianship, memorable songs, and genuine connection in one of Brisbane's most loved live music venues. [button link="https://damienjjohnson.com/event/6647525/770265437/damien-j-johnson-band-with-milly-the-maths-show"] Tickets[/button]
 
-#### [Out of Abingdon Live](https://thecaveinn.net/events/out-of-abingdon-live/)
-📆 Sun 13 Sep
-📍 47 Balaclava St, Woolloongabba, QLD, Australia, Queensland
-💰 USD 0
-`acoustic` `jazz` `duo`
+#### [Swervedriver](https://thetriffid.com.au/all-events/swervedriver-tickets-ae58648)
+📆 Thu 10 Sep
+📍 The Triffid
+💰 See link
+`rock` `live music` `gig` `band`
 
-Live at The Cave Inn OUT of ABINGDON is a soulful acoustic duo blending stripped-back guitar, double bass and smooth, captivating vocals. Featuring Warwick Hargreaves and Tina Fullerton, their grooving, lounge infused sound draws on years of touring across Australia, Europe and the UK, including jazz clubs from Edinburgh to Berlin. Now living and touring full-time in their converted house truck, the duo channel life on the road into their music. OoA will be bringing their latest collection of original and interpreted tunes to their hometown for one afternoon at The Cave Inn, Brisbane before they head outback and beyond. [button link="https://events.humanitix.com/out-of-abingdon-live-the-cave-inn"] Tickets[/button]
+Swervedriver at The Triffid is a concert / music event.
 
 #### Odette (AU) live
 📆 Fri 4 Sep, 7:00 PM
@@ -1040,13 +1088,13 @@ A special reunion show for this influential Brisbane indie band in an intimate, 
 
 An intimate musical performance where acclaimed artist Katie Noonan reinterprets Jeff Buckley’s iconic album, set in an open-air amphitheatre.
 
-#### [Are You Lonesome Tonight](https://brisbanefestival.com.au/events/are-you-lonesome-tonight)
-📆 Wed 9 Sep
+#### [Shel We](https://brisbanefestival.com.au/events/shel-we)
+📆 Thu 10 Sep
 📍 Brisbane Festival
 💰 See link
-`opera` `music` `performance`
+`dance` `performance` `arts`
 
-Opera Queensland
+Tupua Tigafua (Aotearoa | NZ)
 
 #### [Manly Serenades](https://brisbanefestival.com.au/events/brisbane-serenades-manly)
 📆 Fri 11 Sep
@@ -1055,22 +1103,6 @@ Opera Queensland
 `music` `performance` `outdoor`
 
 Manly Serenades is a concert at Brisbane Festival.
-
-#### [The Complete Bach Catalogue for Organ](https://brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ)
-📆 Sun 13 Sep
-📍 Brisbane Festival
-💰 See link
-`organ` `classical` `bach`
-
-Calvin Bowman
-
-#### [RocKwiz Rocks Brisbane](https://brisbanefestival.com.au/events/rockwiz-rocks-brisbane)
-📆 Sat 12 Sep
-📍 Brisbane Festival
-💰 See link
-`music` `quiz` `performance`
-
-RocKwiz Live
 
 #### [The Cruel Sea with Magic Dirt](https://brisbanefestival.com.au/events/the-cruel-sea-with-magic-dirt)
 📆 Fri 11 Sep
@@ -1095,6 +1127,14 @@ The Temper Trap is a concert at Brisbane Festival.
 `classical` `music` `performance`
 
 Lord Mayor's City Hall Concerts: David Bailey is a concert at Brisbane Festival.
+
+#### [Musical Mantras with Camerata – Queensland’s Chamber Orchestra](https://brisbanefestival.com.au/events/musical-mantras-with-camerata)
+📆 Sun 6 Sep
+📍 Brisbane Festival
+💰 See link
+`orchestra` `classical` `music`
+
+Musical Mantras with Camerata – Queensland’s Chamber Orchestra is a concert at Brisbane Festival.
 
 #### [Warm-up with QLD Con](https://brisbanefestival.com.au/events/warm-up-with-qld-con)
 📆 Tue 8 Sep
@@ -1128,22 +1168,6 @@ Toowong State School Signing Choir
 
 The Wake Up & Sing! with Blue Sky Harmony is a concert held at Brisbane Festival.
 
-#### [Dugong Jr](https://www.brisbaneunlocked.com.au/dugong-jr-2026-09-03)
-📆 Thu 3 Sep
-📍 La La Land
-💰 See link
-`electronic` `dance` `live`
-
-Dugong Jr at La La Land at 2026-09-03
-
-#### [Morning Masterworks 4: La Mer](https://www.brisbaneunlocked.com.au/morning-masterworks-4-la-mer-2026-09-03)
-📆 Thu 3 Sep, 2:00 PM
-📍 QPAC Concert Hall
-💰 See link
-`classical` `orchestra` `music`
-
-Start your Friday with a touch of classical brilliance with this Morning Masterworks concert. From gentle tides to stormy swells, this concert captures the ever-shifting
-
 #### [The Smashing Bumpkins](https://eatstreetnorthshore.com.au/event/the-smashing-bumpkins-2/)
 📆 Fri 4 Sep, 5:15 PM
 📍 Eat Street Northshore, 221D Macarthur Avenue, Hamilton, QLD, 4007
@@ -1168,13 +1192,13 @@ Eat Street's Brazilian Dancers perform at Eat Street Northshore.
 
 Happy Mondays is a concert held at Fortitude Music Hall.
 
-#### [Kodaline - Farewell Tour](https://thefortitude.com.au/all-events/kodaline-tickets-ae344555)
-📆 Sun 6 Sep
-📍 Fortitude Music Hall, 66 Doggett St
+#### [Jack Knight | Momentary Loss of Composure](https://goodchatcomedy.com/shows/jack-knight-momentary-loss-of-composure/)
+📆 Thu 3 Sep
+📍 52 Petrie Terrace, Brisbane City
 💰 See link
-`rock` `live music` `tour`
+`comedy` `standup` `performance`
 
-Kodaline - Farewell Tour is a concert held at Fortitude Music Hall.
+Jack Knight | Momentary Loss of Composure is a comedy event held at 52 Petrie Terrace, Brisbane City.
 
 #### [The Gong Show | Stand-Up At Its Most Brutal (w/ Dusty Rich)](https://goodchatcomedy.com/shows/the-gong-show-stand-up-at-its-most-brutal-w-dusty-rich-4/)
 📆 Sat 5 Sep
@@ -1184,6 +1208,14 @@ Kodaline - Farewell Tour is a concert held at Fortitude Music Hall.
 
 The Gong Show | Stand-Up At Its Most Brutal (w/ Dusty Rich) is a comedy event held at 52 Petrie Terrace, Brisbane City.
 
+#### [Henry Bretz’s KARL STEFANOVIC: Live & Angry [ENCORE!]](https://goodchatcomedy.com/shows/henry-bretzs-karl-stefanovic-live-angry-encore/)
+📆 Thu 3 Sep
+📍 Good Chat Comedy Club
+💰 See link
+`comedy` `standup` `performance`
+
+Henry Bretz’s KARL STEFANOVIC: Live & Angry [ENCORE!] is a comedy event held at Good Chat Comedy Club.
+
 #### [Friday Night Comedy w/ Shad Wicka & Friends!](https://goodchatcomedy.com/shows/friday-night-comedy-w-shad-wicka-friends/)
 📆 Fri 4 Sep
 📍 Good Chat Comedy Club
@@ -1191,6 +1223,22 @@ The Gong Show | Stand-Up At Its Most Brutal (w/ Dusty Rich) is a comedy event he
 `comedy` `standup` `performance`
 
 Friday Night Comedy w/ Shad Wicka & Friends! is a comedy event held at Good Chat Comedy Club.
+
+#### [Nadun Hetti | I Flew Here](https://goodchatcomedy.com/shows/nadun-hetti-i-flew-here/)
+📆 Sat 5 Sep
+📍 Good Chat Comedy Club
+💰 See link
+`comedy` `standup` `performance`
+
+Nadun Hetti | I Flew Here is a comedy event held at Good Chat Comedy Club.
+
+#### [Akwasi | Life Through a Black Eye](https://goodchatcomedy.com/shows/akwasi-life-through-a-black-eye/)
+📆 Sat 5 Sep
+📍 Good Chat Comedy Club
+💰 See link
+`comedy` `standup` `performance`
+
+Akwasi | Life Through a Black Eye is a comedy event held at Good Chat Comedy Club.
 
 #### [Saturday Night Standup w/ Dusty Rich & Friends!](https://goodchatcomedy.com/shows/saturday-night-standup-5/)
 📆 Sat 5 Sep
@@ -1224,6 +1272,30 @@ The Spyro Experiment is a comedy event held at Good Chat Comedy Club.
 
 Friday Night Comedy w/ Nick Cody & Friends! is a comedy event held at Good Chat Comedy Club.
 
+#### [Mid Flight Brawl LIVE! [Brisbane – Encore Session!]](https://goodchatcomedy.com/shows/mid-flight-brawl-live-brisbane-encore-session/)
+📆 Sat 12 Sep
+📍 Good Chat Comedy Club
+💰 See link
+`comedy` `standup` `performance`
+
+Mid Flight Brawl LIVE! [Brisbane – Encore Session!] is a comedy event held at Good Chat Comedy Club.
+
+#### [Luke Heggie | Work In Progress](https://goodchatcomedy.com/shows/luke-heggie-work-in-progress/)
+📆 Sat 12 Sep
+📍 Good Chat Comedy Club
+💰 See link
+`comedy` `standup` `performance`
+
+Luke Heggie | Work In Progress is a comedy event held at Good Chat Comedy Club.
+
+#### [Nick Cody | Crusher](https://goodchatcomedy.com/shows/nick-cody-crusher/)
+📆 Sat 12 Sep
+📍 Good Chat Comedy Club
+💰 See link
+`comedy` `standup` `performance`
+
+Nick Cody | Crusher is a comedy event held at Good Chat Comedy Club.
+
 #### [Saturday Night Standup w/ Nick Cody & Friends!](https://goodchatcomedy.com/shows/saturday-night-standup-w-nick-cody-friends/)
 📆 Sat 12 Sep
 📍 Good Chat Comedy Club
@@ -1240,21 +1312,29 @@ Saturday Night Standup w/ Nick Cody & Friends! is a comedy event held at Good Ch
 
 Local Pianists and Singers is a concert / music event at Doo-Bop Bar, Brisbane City.
 
-#### [Queensland Symphony Orchestra](https://musick.com.au/gig/morning-masterworks-4-la-mer-2026-09-04-4/)
+#### [Briscoe Sisters](https://musick.com.au/gig/briscoe-sisters-blakstorysong-in-concert-2026-09-04-2/)
 📆 Fri 4 Sep
-📍 Lyric Theatre, South Brisbane
+📍 The Triffid, 7/9 Stratton Street, Newstead
 💰 See link
-`orchestra` `classical` `symphony`
+`live` `music` `band`
 
-Queensland Symphony Orchestra is a concert / music event at Lyric Theatre, South Brisbane.
+Briscoe Sisters is a concert / music event at The Triffid, 7/9 Stratton Street, Newstead.
 
-#### [BIGSOUND](https://musick.com.au/gig/bigsound-2026-09-04/)
+#### [The View From Madeleine's Couch](https://musick.com.au/gig/city-sounds-the-view-from-madeleines-couch-2026-09-04/)
 📆 Fri 4 Sep
-📍 Brunswick Street Mall, Fortitude Valley, Fortitude Valley
+📍 Queen Street Mall, Brisbane City, Brisbane City
 💰 See link
-`festival` `music` `industry`
+`live` `music` `performance`
 
-BIGSOUND is a concert / music event at Brunswick Street Mall, Fortitude Valley, Fortitude Valley.
+The View From Madeleine's Couch is a concert / music event at Queen Street Mall, Brisbane City, Brisbane City.
+
+#### [Xile, ZUKO](https://musick.com.au/gig/xile-zuko-2026-09-04/)
+📆 Fri 4 Sep
+📍 BIG FAN, Morningside
+💰 See link
+`live` `music` `gig`
+
+Xile, ZUKO is a concert / music event at BIG FAN, Morningside.
 
 #### [Candlelight: The Best of Joe Hisaishi](https://musick.com.au/gig/candlelight-the-best-of-joe-hisaishi-2026-09-04/)
 📆 Fri 4 Sep
@@ -1264,6 +1344,14 @@ BIGSOUND is a concert / music event at Brunswick Street Mall, Fortitude Valley, 
 
 Candlelight: The Best of Joe Hisaishi is a concert / music event at Saint John's Anglican Cathedral, Brisbane.
 
+#### [Are You Lonesome Tonight – Brisbane Festival](https://www.oq.com.au/whats-on/are-you-lonesome-tonight-brisbane-festival/)
+📆 Wed 9 Sep
+📍 Opera Queensland
+💰 See link
+`opera` `country` `music`
+
+Arrive in your jeans and boots, or your tuxedos and ball gowns. A unique celebration of country music and opera, featuring arias and songs by Puccini,...
+
 #### [Young Artist Program Showcase: Viva La Voce](https://www.oq.com.au/whats-on/yap-showcase-viva-la-voce/)
 📆 Thu 10 Sep
 📍 Opera Queensland
@@ -1272,14 +1360,6 @@ Candlelight: The Best of Joe Hisaishi is a concert / music event at Saint John's
 
 For more than 35 years, the Opera Queensland Young Artist Program has nurtured the next generation of Australian opera talent, providing unparallele...
 
-#### [Gilbert & Sullivan: A Soiree of Song and Satire](https://www.qpac.com.au/whats-on/2026/gilbert-and-sullivan/)
-📆 Sun 6 Sep
-📍 Queensland Performing Arts Centre, Grey St, South Bank
-💰 See link
-`classical` `opera` `satire`
-
-Gilbert & Sullivan: A Soiree of Song and Satire is a concert held at Queensland Performing Arts Centre.
-
 #### [Piano Bar](https://www.qpac.com.au/whats-on/2026/piano-bar/)
 📆 Fri 4 Sep
 📍 QPAC, Grey St, South Bank
@@ -1287,6 +1367,22 @@ Gilbert & Sullivan: A Soiree of Song and Satire is a concert held at Queensland 
 `piano` `music` `lounge`
 
 Enjoy our intimate Piano Bar, offering a truly enchanting post-theatre experience.
+
+#### [Class of 2026 Musical Theatre Showcase](https://www.qpac.com.au/whats-on/2026/qcgu-class-of-2026-musical-theatre-showcase/)
+📆 Thu 10 Sep
+📍 Tony Gould Gallery, Grey St, South Bank
+💰 See link
+`musical` `theatre` `showcase`
+
+Discover the next generation of professional musical theatre talent with this dynamic industry showcase.
+
+#### [RocKwiz Rocks Brisbane](https://www.qpac.com.au/whats-on/2026/bf-rockwiz-rocks-brisbane/)
+📆 Sat 12 Sep, 7:00 PM
+📍 Concert Hall, Grey St, South Bank
+💰 See link
+`music` `quiz` `entertainment`
+
+RocKwiz returns to QPAC for a special night of unique entertainment with a tailor made Brisbane show!
 
 #### [Symphonic Stories: Toowoomba](https://qso.com.au/events/2026/regional-concerts-and-events/symphonic-stories-toowoomba)
 📆 Thu 10 Sep, 7:30 PM
@@ -1303,14 +1399,6 @@ Symphonic Stories: Toowoomba is a concert held at the Queensland Symphony Orches
 `pop` `orchestra` `live`
 
 Back by popular demand
-
-#### [Brisbane Festival Shel We](https://www.qtix.com.au/whats-on/2026/bf-shel-we/)
-📆 Thu 10 Sep
-📍 Cremorne Theatre, QPAC
-💰 See link
-`performance` `theatre` `brisbane`
-
-Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages!
 
 #### [Opera Queensland Young Artist Program Showcase](https://www.qtix.com.au/whats-on/2026/opera-queensland-young-artist-showcase/)
 📆 Fri 11 Sep
@@ -1360,22 +1448,6 @@ Morning Masterworks 4: La Mer is a concert and music event held at South Bank Pa
 
 Maestro 6: La Mer is a concert and music event held at South Bank Parklands.
 
-#### [The Mitzi Project @ The Sit Down Comedy Club](https://www.standup.com.au/event/the-mitzi-project-the-sit-down-comedy-club-72/)
-📆 Thu 3 Sep, 8:00 PM
-📍 The Sit Down Comedy Club
-💰 See link
-`comedy` `performance` `live`
-
-The Mitzi Project is a comedy event held at The Sit Down Comedy Club.
-
-#### [Comedy Allsorts @ The Sit Down Comedy Club](https://www.standup.com.au/event/comedy-allsorts-the-sit-down-comedy-club-81/)
-📆 Fri 4 Sep, 8:15 PM
-📍 The Sit Down Comedy Club
-💰 See link
-`comedy` `performance` `live`
-
-Comedy Allsorts is a comedy event held at The Sit Down Comedy Club.
-
 #### [Akmal: My Family and Other Criminals (Encore Performance)](https://www.standup.com.au/event/akmal-my-family-and-other-criminals-encore-performance/)
 📆 Sat 5 Sep, 6:00 PM
 📍 The Sit Down Comedy Club
@@ -1384,29 +1456,29 @@ Comedy Allsorts is a comedy event held at The Sit Down Comedy Club.
 
 Akmal: My Family and Other Criminals (Encore Performance) is a comedy event held at The Sit Down Comedy Club.
 
-#### [Open Mic Night @ The Morrison Hotel](https://www.standup.com.au/event/open-mic-night-the-morrison-hotel-8/)
-📆 Sun 6 Sep, 6:00 PM
-📍 Morrison Hotel
+#### [Saturday Double Feature @ The Sit Down Comedy Club](https://www.standup.com.au/event/saturday-double-feature-the-sit-down-comedy-club-89/)
+📆 Sat 5 Sep, 8:15 PM
+📍 The Sit Down Comedy Club
 💰 See link
-`comedy` `open mic` `performance`
+`comedy` `performance` `live`
 
-Open Mic Night is a comedy event held at Morrison Hotel.
+Saturday Double Feature is a comedy event held at The Sit Down Comedy Club.
 
-#### [Open Mic Night @ Forest Lake Tavern](https://www.standup.com.au/event/open-mic-night-forest-lake-tavern-9/)
-📆 Sun 6 Sep, 6:00 PM
-📍 Forest Lake Tavern
-💰 See link
-`comedy` `open mic` `performance`
-
-Open Mic Night is a comedy event held at Forest Lake Tavern.
-
-#### [The Damned (UK) With The Darts (USA)](https://thetivoli.com.au/events/the-damned-26)
-📆 Fri 11 Sep
+#### [Bury Tomorrow (UK) With Gideon](https://thetivoli.com.au/events/bury-tomorrow)
+📆 Fri 4 Sep
 📍 The Tivoli, 52 Costin St
 💰 See link
-`punk` `rock` `live music`
+`metalcore` `live music` `concert`
 
-The Damned and The Darts perform a concert at The Tivoli.
+Bury Tomorrow and Gideon perform a concert at The Tivoli.
+
+#### [Ash (IRELAND) With Northern Lights](https://thetivoli.com.au/events/ash)
+📆 Thu 10 Sep
+📍 The Tivoli, 52 Costin St
+💰 See link
+`rock` `live music` `concert`
+
+Ash and Northern Lights perform a concert at The Tivoli.
 
 #### [Triffid Sundays - September | Free Live Music in the Garden](https://thetriffid.com.au/all-events/triffid-sundays-tickets-ae1693433)
 📆 Sun 6 Sep
@@ -1416,13 +1488,29 @@ The Damned and The Darts perform a concert at The Tivoli.
 
 Triffid Sundays at The Triffid is a concert / music event.
 
-#### [Swervedriver](https://thetriffid.com.au/all-events/swervedriver-tickets-ae58648)
-📆 Thu 10 Sep
+#### [Skindred](https://thetriffid.com.au/all-events/skindred-tickets-ae781)
+📆 Sun 6 Sep
 📍 The Triffid
 💰 See link
 `rock` `live music` `gig` `band`
 
-Swervedriver at The Triffid is a concert / music event.
+Skindred at The Triffid is a concert / music event.
+
+#### [The Angels 'AM I EVER GONNA SEE YOUR FACE AGAIN... 50 YEARS ON'](https://thetriffid.com.au/all-events/the-angels-tickets-ae1404883)
+📆 Fri 11 Sep
+📍 The Triffid
+💰 See link
+`rock` `live music` `anniversary` `concert`
+
+The Angels 'AM I EVER GONNA SEE YOUR FACE AGAIN... 50 YEARS ON' at The Triffid is a concert / music event.
+
+#### [Big Love Festival 2026, Sunshine Coast](https://www.weekendnotes.com/big-love-festival-2026-sunshine-coast/)
+📆 Fri 11 Sep
+📍 WeekendNotes Brisbane
+💰 See link
+`festival` `music` `outdoor`
+
+Big Love Festival 2026 is a music festival event held on the Sunshine Coast.
 
 #### [The Choir of Man](https://www.brisbanefestival.com.au)
 📆 Thu 3 Sep, 6:00 PM
@@ -1448,6 +1536,14 @@ A professional orchestral performance of Debussy's La Mer and other impressionis
 
 An evening of extreme metal performance at the historic Tivoli theatre, catering to Brisbane's alternative music subculture.
 
+#### [No One Gets Out of Here Alive](https://brisbanefestival.com.au/events/no-one-gets-out-of-here-alive)
+📆 Wed 9 Sep
+📍 Brisbane Festival
+💰 See link
+`dance` `performance` `arts`
+
+The Farm
+
 #### [Human Nature: All The Hits Live](https://brisbanefestival.com.au/events/human-nature-all-the-hits-live)
 📆 Sun 13 Sep
 📍 Brisbane Festival
@@ -1455,6 +1551,14 @@ An evening of extreme metal performance at the historic Tivoli theatre, catering
 `pop` `live` `music`
 
 Human Nature: All The Hits Live is a concert at Brisbane Festival.
+
+#### [Dugong Jr](https://www.brisbaneunlocked.com.au/dugong-jr-2026-09-03)
+📆 Thu 3 Sep
+📍 La La Land
+💰 See link
+`electronic` `dance` `live`
+
+Dugong Jr at La La Land at 2026-09-03
 
 #### [Groove Street](https://eatstreetnorthshore.com.au/event/groove-street/)
 📆 Fri 4 Sep, 5:30 PM
@@ -1584,22 +1688,6 @@ Mojo Dollz performs live music at Eat Street Northshore.
 
 Erin Shay Band performs live music at Eat Street Northshore.
 
-#### [Go West with special guest Debbie Gibson](https://thefortitude.com.au/all-events/go-west-tickets-ae19843)
-📆 Fri 4 Sep
-📍 Fortitude Music Hall, 66 Doggett St
-💰 See link
-`pop` `live music` `concert`
-
-Go West with special guest Debbie Gibson is a concert held at Fortitude Music Hall.
-
-#### [Kimberley College Dance Showcase 2026](https://www.loganarts.com.au/event/kimberley-college-dance-showcase-2026/)
-📆 Thu 3 Sep
-📍 Logan Entertainment Centre
-💰 See link
-`dance` `performance` `showcase`
-
-Kimberley College Dance Showcase 2026 is a dance performance held at Logan Entertainment Centre.
-
 #### [Amplify Battle of the Bands 2026](https://www.loganarts.com.au/event/amplify-battle-of-the-bands-2026/)
 📆 Sat 5 Sep
 📍 Logan Entertainment Centre
@@ -1608,45 +1696,13 @@ Kimberley College Dance Showcase 2026 is a dance performance held at Logan Enter
 
 School bands go head-to-head to be crowned Amplify's 'Band of the Year'.
 
-#### [Live Music](https://musick.com.au/gig/live-music-2026-09-04-9/)
+#### [Duelling Pianos Friday](https://musick.com.au/gig/duelling-pianos-friday-2026-09-04/)
 📆 Fri 4 Sep
-📍 Honky Tonks, Fortitude Valley
+📍 Cloudland, Fortitude Valley
 💰 See link
-`live` `music` `gig`
+`piano` `live` `entertainment`
 
-Live Music is a concert / music event at Honky Tonks, Fortitude Valley.
-
-#### [Live Music](https://musick.com.au/gig/live-music-2026-09-04-29/)
-📆 Fri 4 Sep
-📍 The Plough Inn, South Brisbane
-💰 See link
-`live` `music` `gig`
-
-Live Music is a concert / music event at The Plough Inn, South Brisbane.
-
-#### [Briscoe Sisters](https://musick.com.au/gig/briscoe-sisters-blakstorysong-in-concert-2026-09-04-2/)
-📆 Fri 4 Sep
-📍 The Triffid, 7/9 Stratton Street, Newstead
-💰 See link
-`live` `music` `band`
-
-Briscoe Sisters is a concert / music event at The Triffid, 7/9 Stratton Street, Newstead.
-
-#### [The View From Madeleine's Couch](https://musick.com.au/gig/city-sounds-the-view-from-madeleines-couch-2026-09-04/)
-📆 Fri 4 Sep
-📍 Queen Street Mall, Brisbane City, Brisbane City
-💰 See link
-`live` `music` `performance`
-
-The View From Madeleine's Couch is a concert / music event at Queen Street Mall, Brisbane City, Brisbane City.
-
-#### [Xile, ZUKO](https://musick.com.au/gig/xile-zuko-2026-09-04/)
-📆 Fri 4 Sep
-📍 BIG FAN, Morningside
-💰 See link
-`live` `music` `gig`
-
-Xile, ZUKO is a concert / music event at BIG FAN, Morningside.
+Duelling Pianos Friday is a concert / music event at Cloudland, Fortitude Valley.
 
 #### [Are You Lonesome Tonight – Moranbah](https://www.oq.com.au/whats-on/are-you-lonesome-tonight-moranbah/)
 📆 Thu 3 Sep
@@ -1664,13 +1720,13 @@ Are You Lonesome Tonight is a unique celebration of country music and opera, fea
 
 Are You Lonesome Tonight is a unique celebration of country music and opera, featuring arias and songs by Puccini, Verdi, Slim Dusty, Troy Cassar...
 
-#### [Class of 2026 Musical Theatre Showcase](https://www.qpac.com.au/whats-on/2026/qcgu-class-of-2026-musical-theatre-showcase/)
-📆 Thu 10 Sep
-📍 Tony Gould Gallery, Grey St, South Bank
+#### [9 to 5: Dolly Parton Tribute](https://palacecinemas.com.au/9-to-5-dolly-parton-tribute)
+📆 Sat 5 Sep
+📍 Palace Cinemas Brisbane
 💰 See link
-`musical` `theatre` `showcase`
+`music` `tribute` `film`
 
-Discover the next generation of professional musical theatre talent with this dynamic industry showcase.
+A 9 to 5 Dolly Parton tribute event held at Palace Cinemas Brisbane.
 
 #### [QTIX Exclusive Offer Night at The Parkland](https://www.qtix.com.au/whats-on/2026/night-at-the-parkland-2026/)
 📆 Fri 11 Sep
@@ -1679,142 +1735,6 @@ Discover the next generation of professional musical theatre talent with this dy
 `outdoor` `music` `festival`
 
 Exclusive QTIX offer for Night at The Parkland. Enjoy live music from Missy Higgins, Human Nature, PNAU, The Temper Trap and more, plus a complimentary Tempus Two wine at Roma Street Parkland.
-
-#### [Saturday Double Feature @ The Sit Down Comedy Club](https://www.standup.com.au/event/saturday-double-feature-the-sit-down-comedy-club-89/)
-📆 Sat 5 Sep, 8:15 PM
-📍 The Sit Down Comedy Club
-💰 See link
-`comedy` `performance` `live`
-
-Saturday Double Feature is a comedy event held at The Sit Down Comedy Club.
-
-#### [Bury Tomorrow (UK) With Gideon](https://thetivoli.com.au/events/bury-tomorrow)
-📆 Fri 4 Sep
-📍 The Tivoli, 52 Costin St
-💰 See link
-`metalcore` `live music` `concert`
-
-Bury Tomorrow and Gideon perform a concert at The Tivoli.
-
-#### [Ash (IRELAND) With Northern Lights](https://thetivoli.com.au/events/ash)
-📆 Thu 10 Sep
-📍 The Tivoli, 52 Costin St
-💰 See link
-`rock` `live music` `concert`
-
-Ash and Northern Lights perform a concert at The Tivoli.
-
-#### [Skindred](https://thetriffid.com.au/all-events/skindred-tickets-ae781)
-📆 Sun 6 Sep
-📍 The Triffid
-💰 See link
-`rock` `live music` `gig` `band`
-
-Skindred at The Triffid is a concert / music event.
-
-#### [The Angels 'AM I EVER GONNA SEE YOUR FACE AGAIN... 50 YEARS ON'](https://thetriffid.com.au/all-events/the-angels-tickets-ae1404883)
-📆 Fri 11 Sep
-📍 The Triffid
-💰 See link
-`rock` `live music` `anniversary` `concert`
-
-The Angels 'AM I EVER GONNA SEE YOUR FACE AGAIN... 50 YEARS ON' at The Triffid is a concert / music event.
-
-#### [Big Love Festival 2026, Sunshine Coast](https://www.weekendnotes.com/big-love-festival-2026-sunshine-coast/)
-📆 Fri 11 Sep
-📍 WeekendNotes Brisbane
-💰 See link
-`festival` `music` `outdoor`
-
-Big Love Festival 2026 is a music festival event held on the Sunshine Coast.
-
-#### [DJ FigJam](https://eatstreetnorthshore.com.au/event/dj-figjam-2/)
-📆 Fri 4 Sep, 5:30 PM
-📍 Eat Street Northshore, 221D Macarthur Avenue, Hamilton, QLD, 4007
-💰 See link
-`dj` `dance` `music`
-
-DJ FigJam performs live music at Eat Street Northshore.
-
-#### [DJ Jonny Drama](https://eatstreetnorthshore.com.au/event/dj-jonny-drama/)
-📆 Sun 6 Sep, 4:15 PM
-📍 Eat Street Northshore, 221D Macarthur Avenue, Hamilton, QLD, 4007
-💰 See link
-`dj` `dance` `music`
-
-DJ Jonny Drama performs live music at Eat Street Northshore.
-
-#### [Prelude Dance Centre – 10 Years of Joy!](https://www.loganarts.com.au/event/prelude-dance-ten-years-joy/)
-📆 Sat 5 Sep
-📍 Kingston Butter Factory Cultural Precinct
-💰 See link
-`dance` `performance` `anniversary`
-
-Join us as we celebrate a decade of dance, growth and unforgettable memories with 10 Years of Joy!
-
-#### [Shailer Park SHS – Ignite Dance Academy – Magic](https://www.loganarts.com.au/event/shailer-park-ignite-dance-academy-magic/)
-📆 Tue 8 Sep
-📍 Kingston Butter Factory Cultural Precinct
-💰 See link
-`dance` `performance` `academy`
-
-Shailer Park SHS – Ignite Dance Academy – Magic
-
-#### [Wakakirri QLD Awards Night 2026](https://www.loganarts.com.au/event/wakakirri-qld-awards-night-2026/)
-📆 Tue 8 Sep
-📍 Logan Entertainment Centre
-💰 See link
-`dance` `awards` `performance`
-
-Wakakirri QLD Awards Night 2026
-
-#### [Friday Live Music](https://musick.com.au/gig/friday-live-music-2026-09-04-2/)
-📆 Fri 4 Sep
-📍 Sundowner Hotel Motel, Caboolture
-💰 See link
-`live` `music` `friday`
-
-Friday Live Music is a concert / music event at Sundowner Hotel Motel, Caboolture.
-
-#### [Live Music In The Courtyard](https://musick.com.au/gig/live-music-in-the-courtyard-2026-09-04/)
-📆 Fri 4 Sep
-📍 Regatta Hotel, Toowong
-💰 See link
-`live` `music` `courtyard`
-
-Live Music In The Courtyard is a concert / music event at Regatta Hotel, Toowong.
-
-#### [Live Music](https://musick.com.au/gig/live-music-2026-09-04-18/)
-📆 Fri 4 Sep
-📍 Pig 'N' Whistle Riverside, Brisbane City
-💰 See link
-`live` `music` `gig`
-
-Live Music is a concert / music event at Pig 'N' Whistle Riverside, Brisbane City.
-
-#### [Duelling Pianos Friday](https://musick.com.au/gig/duelling-pianos-friday-2026-09-04/)
-📆 Fri 4 Sep
-📍 Cloudland, Fortitude Valley
-💰 See link
-`piano` `live` `entertainment`
-
-Duelling Pianos Friday is a concert / music event at Cloudland, Fortitude Valley.
-
-#### [Live Country Music](https://musick.com.au/gig/live-country-music-2026-09-04-2/)
-📆 Fri 4 Sep
-📍 Honky Tonks, Fortitude Valley
-💰 See link
-`country` `live` `music`
-
-Live Country Music is a concert / music event at Honky Tonks, Fortitude Valley.
-
-#### [9 to 5: Dolly Parton Tribute](https://palacecinemas.com.au/9-to-5-dolly-parton-tribute)
-📆 Sat 5 Sep
-📍 Palace Cinemas Brisbane
-💰 See link
-`music` `tribute` `film`
-
-A 9 to 5 Dolly Parton tribute event held at Palace Cinemas Brisbane.
 
 #### [Club Angel (AUS) With Mincy & Jai Taylor](https://thetivoli.com.au/events/club-angel)
 📆 Sat 5 Sep
@@ -1840,6 +1760,94 @@ MKTO perform live at The Princess Theatre as a concert.
 
 With Nevertel (USA), Vana (NZ) & Outloved
 
+#### [DJ FigJam](https://eatstreetnorthshore.com.au/event/dj-figjam-2/)
+📆 Fri 4 Sep, 5:30 PM
+📍 Eat Street Northshore, 221D Macarthur Avenue, Hamilton, QLD, 4007
+💰 See link
+`dj` `dance` `music`
+
+DJ FigJam performs live music at Eat Street Northshore.
+
+#### [DJ Jonny Drama](https://eatstreetnorthshore.com.au/event/dj-jonny-drama/)
+📆 Sun 6 Sep, 4:15 PM
+📍 Eat Street Northshore, 221D Macarthur Avenue, Hamilton, QLD, 4007
+💰 See link
+`dj` `dance` `music`
+
+DJ Jonny Drama performs live music at Eat Street Northshore.
+
+#### [Go West with special guest Debbie Gibson](https://thefortitude.com.au/all-events/go-west-tickets-ae19843)
+📆 Fri 4 Sep
+📍 Fortitude Music Hall, 66 Doggett St
+💰 See link
+`pop` `live music` `concert`
+
+Go West with special guest Debbie Gibson is a concert held at Fortitude Music Hall.
+
+#### [Kodaline - Farewell Tour](https://thefortitude.com.au/all-events/kodaline-tickets-ae344555)
+📆 Sun 6 Sep
+📍 Fortitude Music Hall, 66 Doggett St
+💰 See link
+`rock` `live music` `tour`
+
+Kodaline - Farewell Tour is a concert held at Fortitude Music Hall.
+
+#### [Kimberley College Dance Showcase 2026](https://www.loganarts.com.au/event/kimberley-college-dance-showcase-2026/)
+📆 Thu 3 Sep
+📍 Logan Entertainment Centre
+💰 See link
+`dance` `performance` `showcase`
+
+Kimberley College Dance Showcase 2026 is a dance performance held at Logan Entertainment Centre.
+
+#### [Live Music](https://musick.com.au/gig/live-music-2026-09-04-9/)
+📆 Fri 4 Sep
+📍 Honky Tonks, Fortitude Valley
+💰 See link
+`live` `music` `gig`
+
+Live Music is a concert / music event at Honky Tonks, Fortitude Valley.
+
+#### [Friday Live Music](https://musick.com.au/gig/friday-live-music-2026-09-04-2/)
+📆 Fri 4 Sep
+📍 Sundowner Hotel Motel, Caboolture
+💰 See link
+`live` `music` `friday`
+
+Friday Live Music is a concert / music event at Sundowner Hotel Motel, Caboolture.
+
+#### [Live Music](https://musick.com.au/gig/live-music-2026-09-04-29/)
+📆 Fri 4 Sep
+📍 The Plough Inn, South Brisbane
+💰 See link
+`live` `music` `gig`
+
+Live Music is a concert / music event at The Plough Inn, South Brisbane.
+
+#### [Live Music In The Courtyard](https://musick.com.au/gig/live-music-in-the-courtyard-2026-09-04/)
+📆 Fri 4 Sep
+📍 Regatta Hotel, Toowong
+💰 See link
+`live` `music` `courtyard`
+
+Live Music In The Courtyard is a concert / music event at Regatta Hotel, Toowong.
+
+#### [Live Music](https://musick.com.au/gig/live-music-2026-09-04-18/)
+📆 Fri 4 Sep
+📍 Pig 'N' Whistle Riverside, Brisbane City
+💰 See link
+`live` `music` `gig`
+
+Live Music is a concert / music event at Pig 'N' Whistle Riverside, Brisbane City.
+
+#### [Live Country Music](https://musick.com.au/gig/live-country-music-2026-09-04-2/)
+📆 Fri 4 Sep
+📍 Honky Tonks, Fortitude Valley
+💰 See link
+`country` `live` `music`
+
+Live Country Music is a concert / music event at Honky Tonks, Fortitude Valley.
+
 #### [Morning Melodies](https://musick.com.au/gig/morning-melodies-2026-09-04/)
 📆 Fri 4 Sep
 📍 WestsideHQ, Corinda
@@ -1847,6 +1855,30 @@ With Nevertel (USA), Vana (NZ) & Outloved
 `morning` `music` `melodies`
 
 Morning Melodies is a concert / music event at WestsideHQ, Corinda.
+
+#### [Prelude Dance Centre – 10 Years of Joy!](https://www.loganarts.com.au/event/prelude-dance-ten-years-joy/)
+📆 Sat 5 Sep
+📍 Kingston Butter Factory Cultural Precinct
+💰 See link
+`dance` `performance` `anniversary`
+
+Join us as we celebrate a decade of dance, growth and unforgettable memories with 10 Years of Joy!
+
+#### [Shailer Park SHS – Ignite Dance Academy – Magic](https://www.loganarts.com.au/event/shailer-park-ignite-dance-academy-magic/)
+📆 Tue 8 Sep
+📍 Kingston Butter Factory Cultural Precinct
+💰 See link
+`dance` `performance` `academy`
+
+Shailer Park SHS – Ignite Dance Academy – Magic
+
+#### [Wakakirri QLD Awards Night 2026](https://www.loganarts.com.au/event/wakakirri-qld-awards-night-2026/)
+📆 Tue 8 Sep
+📍 Logan Entertainment Centre
+💰 See link
+`dance` `awards` `performance`
+
+Wakakirri QLD Awards Night 2026
 
 #### [Mi Casa Fridays](https://musick.com.au/gig/mi-casa-fridays-2026-09-04/)
 📆 Fri 4 Sep
@@ -1857,14 +1889,6 @@ Morning Melodies is a concert / music event at WestsideHQ, Corinda.
 Mi Casa Fridays is a concert / music event at Mi Casa Nightclub Brisbane, Fortitude Valley.
 
 ### 🤝 Social / Meetup
-
-#### [Moorooka Feast](https://brisbanefestival.com.au/events/moorooka-feast-26)
-📆 Thu 10 Sep
-📍 Brisbane Festival
-💰 See link
-`community` `food` `festival`
-
-Moorooka Feast is a social event at Brisbane Festival.
 
 #### [Giant Sing Along](https://brisbanefestival.com.au/events/giant-sing-along)
 📆 Fri 4 Sep
@@ -1882,70 +1906,6 @@ Daily tous les jours
 
 Board games are a great way to meet new people and have some fun! Even if you haven’t played for a while, join in for an afternoon of fun and games. Ideal for adults and seniors.
 
-#### [Dinner Meetup for Creatives in London](https://www.creativelunchclub.com/meetups/dinner-for-creatives-in-london-september-2026)
-📆 Fri 4 Sep, 7:15 PM
-📍 London
-💰 See link
-`networking` `creatives` `social`
-
-The Dinner Meetup for Creatives in London is a Social / Meetup event held in London.
-
-#### [Coffee Meetup for Creatives in Aarhus](https://www.creativelunchclub.com/meetups/coffee-for-creatives-in-aarhus-september-2026)
-📆 Sat 5 Sep, 11:00 AM
-📍 Aarhus
-💰 See link
-`networking` `creatives` `coffee`
-
-The Coffee Meetup for Creatives in Aarhus is a Social / Meetup event held in Aarhus.
-
-#### [Lunch Meetup for Creatives in Madrid](https://www.creativelunchclub.com/meetups/lunch-for-creatives-in-madrid-september-2026)
-📆 Sat 5 Sep, 1:45 PM
-📍 Madrid
-💰 See link
-`networking` `creatives` `lunch`
-
-The Lunch Meetup for Creatives in Madrid is a Social / Meetup event held in Madrid.
-
-#### [Breakfast Meetup for Creatives in Vienna](https://www.creativelunchclub.com/meetups/breakfast-for-creatives-in-vienna-september-2026)
-📆 Mon 7 Sep, 8:30 AM
-📍 Vienna
-💰 See link
-`networking` `creatives` `breakfast`
-
-The Breakfast Meetup for Creatives in Vienna is a Social / Meetup event held in Vienna.
-
-#### [Afterwork Meetup for Creatives in Manchester](https://www.creativelunchclub.com/meetups/afterwork-for-creatives-in-manchester-september-2026)
-📆 Tue 8 Sep, 6:30 PM
-📍 Manchester
-💰 See link
-`networking` `creatives` `afterwork`
-
-The Afterwork Meetup for Creatives in Manchester is a Social / Meetup event held in Manchester.
-
-#### [Picnic Meetup for Creatives in Berlin](https://www.creativelunchclub.com/meetups/picnic-meetup-for-creatives-in-berlin-mauerpark-september-2026)
-📆 Thu 10 Sep, 4:30 PM
-📍 Berlin
-💰 See link
-`networking` `creatives` `picnic`
-
-The Picnic Meetup for Creatives in Berlin is a Social / Meetup event held in Berlin.
-
-#### [Coffee Meetup for Creatives in Stockholm](https://www.creativelunchclub.com/meetups/coffee-for-creatives-in-stockholm-september-2026)
-📆 Sat 12 Sep, 1:00 AM
-📍 Stockholm
-💰 See link
-`networking` `creatives` `coffee`
-
-The Coffee Meetup for Creatives in Stockholm is a Social / Meetup event held in Stockholm.
-
-#### [Lunch Meetup for Creatives in Portland](https://www.creativelunchclub.com/meetups/lunch-for-creatives-in-portland-september-2026)
-📆 Sun 13 Sep, 12:00 PM
-📍 Portland
-💰 See link
-`networking` `creatives` `lunch`
-
-The Lunch Meetup for Creatives in Portland is a Social / Meetup event held in Portland.
-
 #### [Mayes Cottage Spring Soirée](https://www.loganarts.com.au/event/mayes-cottage-spring-soiree/)
 📆 Sat 5 Sep
 📍 Mayes Cottage
@@ -1960,7 +1920,7 @@ Get ready for the social event of Spring 2026. Mayes Cottage is hosting a 1930�
 💰 AUD 20
 `pinball` `competition` `gaming` `arcade`
 
-**Tickets will go on sale via THIS PAGE at Midday on Sunday the 2nd of August** Join us for a morning of manic head to head pinball competition in the Netherworld - Flip Frenzy! Over the course of roughly 3 hours, you’ll be pitted against a variety of opponents on a large selection of pinball […] \n
+**Tickets will go on sale via THIS PAGE at Midday on Sunday the 2nd of August** Join us for a morning of manic head to head pinball competition in the Netherworld - Flip Frenzy! Over the course of roughly 3 hours, you’ll be pitted against a variety of opponents on a large selection of pinball […]
 
 #### [Brisbane Pinball Club](https://www.netherworldarcade.com/event/brisbane-pinball-club/)
 📆 Tue 8 Sep, 3:00 PM
@@ -1968,7 +1928,7 @@ Get ready for the social event of Spring 2026. Mayes Cottage is hosting a 1930�
 💰 See link
 `pinball` `gaming` `club` `community`
 
-Every fortnight, the Brisbane Pinball Club meets in the Netherworld. Each meeting will require you to play 10 different pinball machines of the club\'s choosing at your own pace. If you\'ve ever wanted to join a Pinball club, this is your time to shine! It\'s open to absolutely everybody and all skill levels. Prizes awarded […] \n
+Every fortnight, the Brisbane Pinball Club meets in the Netherworld. Each meeting will require you to play 10 different pinball machines of the club's choosing at your own pace. If you've ever wanted to join a Pinball club, this is your time to shine! It's open to absolutely everybody and all skill levels. Prizes awarded […]
 
 #### [Netherworld Trivia](https://www.netherworldarcade.com/event/netherworld-trivia-4/)
 📆 Wed 9 Sep, 6:30 PM
@@ -1976,15 +1936,15 @@ Every fortnight, the Brisbane Pinball Club meets in the Netherworld. Each meetin
 💰 See link
 `trivia` `popculture` `gaming` `quiz`
 
-**Please note there is no Trivia on the 2nd of September due to the Omiya showcase happening throughout the week. Netherworld\'s weekly Trivia! Focusing on general pop culture, you’ve got to be current and not-so-current on your movie, television, games and weird event knowledge. Prizes for the top 3 teams and enamel pins for the […] \n
+**Please note there is no Trivia on the 2nd of September due to the Omiya showcase happening throughout the week. Netherworld's weekly Trivia! Focusing on general pop culture, you’ve got to be current and not-so-current on your movie, television, games and weird event knowledge. Prizes for the top 3 teams and enamel pins for the […]
 
-#### [Netherworld Melee – Super Smash Bros Melee Meetup](https://www.netherworldarcade.com/event/netherworld-melee-super-smash-bros-melee-meetup-3/)
-📆 Thu 10 Sep, 6:00 PM
-📍 Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006
+#### [Moorooka Feast](https://brisbanefestival.com.au/events/moorooka-feast-26)
+📆 Thu 10 Sep
+📍 Brisbane Festival
 💰 See link
-`gaming` `smashbros` `meetup` `retro`
+`community` `food` `festival`
 
-Get Ready! Join us monthly on a Thursday from 6pm for NETHERWORLD MELEE, a casual Super Smash Bros Melee meetup. The Gamecube platform fighter classic still has a rabid following over 20 years after its release and for good reason. Whether you’re new to the game or have hundreds of hours clocked, we invite you […] \n
+Moorooka Feast is a social event at Brisbane Festival.
 
 #### [Moorooka Block Party](https://brisbanefestival.com.au/events/moorooka-block-party-26)
 📆 Sat 12 Sep
@@ -1993,6 +1953,14 @@ Get Ready! Join us monthly on a Thursday from 6pm for NETHERWORLD MELEE, a casua
 `party` `community` `outdoor`
 
 Moorooka Block Party is a social event at Brisbane Festival.
+
+#### [Netherworld Melee – Super Smash Bros Melee Meetup](https://www.netherworldarcade.com/event/netherworld-melee-super-smash-bros-melee-meetup-3/)
+📆 Thu 10 Sep, 6:00 PM
+📍 Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006
+💰 See link
+`gaming` `smashbros` `meetup` `retro`
+
+Get Ready! Join us monthly on a Thursday from 6pm for NETHERWORLD MELEE, a casual Super Smash Bros Melee meetup. The Gamecube platform fighter classic still has a rabid following over 20 years after its release and for good reason. Whether you’re new to the game or have hundreds of hours clocked, we invite you […]
 
 #### [Movie Mixer Preview: Practical Magic 2](https://palacecinemas.com.au/curatif-midnight-margaritas-preview-practical-magic-2)
 📆 Wed 9 Sep
@@ -2026,6 +1994,22 @@ Members Advance Viewing: Make Believe Magic is a social event held at GOMA.
 
 Sunday Social is a social event held at South Bank Parklands.
 
+#### [Collectorama Fair, Nambour 2026](https://www.weekendnotes.com/collectorama-fair-nambour-2026/)
+📆 Sat 5 Sep
+📍 WeekendNotes Brisbane
+💰 See link
+`market` `collectables` `shopping`
+
+Collectorama Fair is a social market event held in Nambour.
+
+#### [What's On: Brisbane Markets This Weekend](https://www.weekendnotes.com/whats-on-brisbane-markets-this-weekend/)
+📆 Fri 4 Sep
+📍 WeekendNotes Brisbane
+💰 See link
+`markets` `shopping` `local`
+
+What's On: Brisbane Markets This Weekend is a social guide to local market events.
+
 #### [DAYBREAKER](https://brisbanefestival.com.au/events/daybreaker)
 📆 Sat 12 Sep
 📍 Brisbane Festival
@@ -2050,13 +2034,29 @@ SHANDY
 
 A St. Ali Italian Film Festival date night screening of Separate Beds at Palace Cinemas Brisbane.
 
-#### [Collectorama Fair, Nambour 2026](https://www.weekendnotes.com/collectorama-fair-nambour-2026/)
+#### [Hey Felicia! Presents MUSICAL DRAG BINGO](https://www.standup.com.au/event/hey-felicia-presents-musical-drag-bingo-2/)
+📆 Thu 3 Sep, 12:40 PM
+📍 The Sit Down Comedy Club
+💰 See link
+`drag` `bingo` `comedy`
+
+Hey Felicia! Presents MUSICAL DRAG BINGO is a social event held at The Sit Down Comedy Club.
+
+#### [End of Winter Drag Bingo Party! Ft. Shushu Funtanna & Scarlett Fever](https://theprinceconsort.com.au/whats-on/end-of-winter-drag-bingo-party-ft-shushu-funtanna--scarlett-fever.html)
 📆 Sat 5 Sep
+📍 The Prince Consort
+💰 See link
+`drag` `bingo` `party` `lgbtq`
+
+Free Drag Bingo event!
+
+#### [Father's Day by the River at Historic Rivermill](https://www.weekendnotes.com/fathers-day-by-the-river-at-historic-rivermill-334765/)
+📆 Sun 6 Sep
 📍 WeekendNotes Brisbane
 💰 See link
-`market` `collectables` `shopping`
+`fathersday` `family` `outdoor`
 
-Collectorama Fair is a social market event held in Nambour.
+Father's Day by the River is a social event held at Historic Rivermill.
 
 #### [Father's Day Retro Picnic](https://www.weekendnotes.com/fathers-day-retro-picnic-334764/)
 📆 Sun 6 Sep
@@ -2065,14 +2065,6 @@ Collectorama Fair is a social market event held in Nambour.
 `fathersday` `picnic` `outdoor`
 
 Father's Day Retro Picnic is a social community event.
-
-#### [What's On: Brisbane Markets This Weekend](https://www.weekendnotes.com/whats-on-brisbane-markets-this-weekend/)
-📆 Fri 4 Sep
-📍 WeekendNotes Brisbane
-💰 See link
-`markets` `shopping` `local`
-
-What's On: Brisbane Markets This Weekend is a social guide to local market events.
 
 #### [Fathers Day at Eat Street](https://eatstreetnorthshore.com.au/event/fathers-day-at-eat-street/)
 📆 Sun 6 Sep
@@ -2090,22 +2082,6 @@ Fathers Day at Eat Street is a social event held at Eat Street Northshore.
 
 ApocaRIC’s 2025: Halloween Mayhem - Fortitude Valley, Brisbane – brace yourself. Ric’s Bar and Backyard is about to unleash pure chaos this Halloween. On Thursday, October 31, ApocaRIC’s returns with a…
 
-#### [Hey Felicia! Presents MUSICAL DRAG BINGO](https://www.standup.com.au/event/hey-felicia-presents-musical-drag-bingo-2/)
-📆 Thu 3 Sep, 12:40 PM
-📍 The Sit Down Comedy Club
-💰 See link
-`drag` `bingo` `comedy`
-
-Hey Felicia! Presents MUSICAL DRAG BINGO is a social event held at The Sit Down Comedy Club.
-
-#### [End of Winter Drag Bingo Party! Ft. Shushu Funtanna & Scarlett Fever](https://theprinceconsort.com.au/whats-on/end-of-winter-drag-bingo-party-ft-shushu-funtanna--scarlett-fever.html)
-📆 Sat 5 Sep
-📍 The Prince Consort
-💰 See link
-`drag` `bingo` `party` `lgbtq`
-
-Free Drag Bingo event!
-
 #### [Espresso Martini Festival](https://thetriffid.com.au/all-events/espresso-martini-festival-tickets-ae1690418)
 📆 Sat 5 Sep
 📍 The Triffid
@@ -2113,14 +2089,6 @@ Free Drag Bingo event!
 `cocktails` `festival` `drinks` `social`
 
 Espresso Martini Festival at The Triffid is a social / meetup event.
-
-#### [Father's Day by the River at Historic Rivermill](https://www.weekendnotes.com/fathers-day-by-the-river-at-historic-rivermill-334765/)
-📆 Sun 6 Sep
-📍 WeekendNotes Brisbane
-💰 See link
-`fathersday` `family` `outdoor`
-
-Father's Day by the River is a social event held at Historic Rivermill.
 
 #### [Urban Cocktail Trail | Brisbane (QLD)](https://www.weekendnotes.com/urban-cocktail-trail-brisbane-qld-335225/)
 📆 Sat 12 Sep
@@ -2172,14 +2140,6 @@ QRAA | Flying Arts
 
 Miriam Battye
 
-#### [Costume Design Runway](https://brisbanefestival.com.au/events/costume-design-runway)
-📆 Sat 5 Sep
-📍 Brisbane Festival
-💰 See link
-`fashion` `design` `runway`
-
-The Costume Design Runway is an arts exhibition held at Brisbane Festival.
-
 #### [Lord Mayor’s Photographic Awards 2026](https://www.brisbaneunlocked.com.au/lord-mayors-photographic-awards-2026-2026-09-03)
 📆 Thu 3 Sep, 10:00 AM
 📍 Museum of Brisbane, Brisbane City
@@ -2187,6 +2147,14 @@ The Costume Design Runway is an arts exhibition held at Brisbane Festival.
 `photography` `brisbane` `exhibition`
 
 Brisbane through the lens of local photographers. The winners exhibition of the 2026 Lord Mayor’s Photographic Awards brings together striking photographic works that capture the city’s spirit - from familiar streets and riverside scenes to the fleeting moments, routines and char
+
+#### [Queen's Wharf Brisbane Art Prize](https://www.brisbaneunlocked.com.au/queens-wharf-brisbane-art-prize-2026-09-03)
+📆 Thu 3 Sep, 10:00 AM
+📍 Petrie Terrace Gallery, Petrie Terrace
+💰 See link
+`art` `prize` `gallery`
+
+In partnership with Queen’s Wharf Brisbane and The Star Brisbane, The Royal Queensland Art Society Brisbane Branch is pleased to present the 2026 Queen’s Wharf Brisbane Art Prize. Following on from the success of this exhibition in 2025 and with an expanded list of eligible mediu
 
 #### [Sharing the National Collection](https://www.ipswichartgallery.qld.gov.au/whats-on/sharing-the-national-collection)
 📆 Sat 16 Nov, 10:00 AM
@@ -2196,13 +2164,13 @@ Brisbane through the lens of local photographers. The winners exhibition of the 
 
 Ipswich Art Gallery currently hosts major works from the National Gallery of Australia’s collection.
 
-#### [Exhibition opening](https://www.loganarts.com.au/event/exhibition-opening-9/)
-📆 Fri 11 Sep
-📍 Logan Art Gallery
-💰 See link
-`art` `opening` `gallery`
+#### [Amanda Waschevski | People of Ipswich](https://www.ipswichartgallery.qld.gov.au/whats-on/amanda-waschevski-people-of-ipswich)
+📆 Wed 26 Aug, 10:00 AM
+📍 Ipswich Art Gallery
+💰 Free
+`photography` `local` `portrait`
 
-Exhibition opening
+People of Ipswich is a love letter to the city by award-winning photographer Amanda Waschevski.
 
 #### [Kuweni Dias Mendis & Grant x Wilkes: (In)Sight](https://metroarts.com.au/exhibition/insight/)
 📆 Thu 27 Aug
@@ -2236,14 +2204,6 @@ Ryan Presley, Sandra Selig
 
 The Tea & Tour: Kirstie Macleod event at the Museum of Brisbane is an Arts / Exhibition experience.
 
-#### [Stories You Wear: Magpie Goose](https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/)
-📆 Sat 22 Nov
-📍 Museum of Brisbane, King George Square (Brisbane City Hall)
-💰 See link
-`fashion` `design` `culture`
-
-The Stories You Wear: Magpie Goose event at the Museum of Brisbane is an Arts / Exhibition experience.
-
 #### [Perspectives of Brisbane](https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/)
 📆 Thu 3 Sep
 📍 Museum of Brisbane, King George Square (Brisbane City Hall)
@@ -2252,13 +2212,29 @@ The Stories You Wear: Magpie Goose event at the Museum of Brisbane is an Arts / 
 
 The Perspectives of Brisbane event at the Museum of Brisbane is an Arts / Exhibition experience.
 
-#### [Sorcerers from Bohemia: Picasso’s Saltimbanques](https://www.qagoma.qld.gov.au/exhibition/sorcerers-from-bohemia-picassos-saltimbanques)
-📆 Sat 14 Feb
-📍 QAG, Stanley Place, South Bank
-💰 Free
-`picasso` `art` `exhibition`
+#### [Luna, A Journey to the Moon](https://musick.com.au/gig/luna-a-journey-to-the-moon-2026-09-04/)
+📆 Fri 4 Sep
+📍 Fever Hub Brisbane, Australia
+💰 See link
+`space` `exhibition` `immersive`
 
-Sorcerers from Bohemia: Picasso’s Saltimbanques is an arts exhibition held at QAG.
+Luna, A Journey to the Moon is an arts / exhibition event at Fever Hub Brisbane, Australia.
+
+#### [Life Chronicles](https://musick.com.au/gig/life-chronicles-an-immersive-vr-journey-through-the-earth-s-history-2026-09-04/)
+📆 Fri 4 Sep
+📍 Fever Hub Brisbane, Australia
+💰 See link
+`history` `exhibition` `immersive`
+
+Life Chronicles is an arts / exhibition event at Fever Hub Brisbane, Australia.
+
+#### [Horizon of Khufu](https://musick.com.au/gig/horizon-of-khufu-journey-in-ancient-egypt-2026-09-04/)
+📆 Fri 4 Sep
+📍 Fever Hub Brisbane, Australia
+💰 See link
+`history` `exhibition` `immersive`
+
+Horizon of Khufu is an arts / exhibition event at Fever Hub Brisbane, Australia.
 
 #### [Vipoo Srivilasa: Express Yourself](https://www.qagoma.qld.gov.au/exhibition/vipoo-srivilasa-express-yourself)
 📆 Sat 11 Oct
@@ -2284,13 +2260,13 @@ Inscribing a Life is an arts exhibition held at GOMA.
 
 Snap Blak is an arts exhibition held at GOMA.
 
-#### [Tactile Art Experience](https://www.qagoma.qld.gov.au/event/tactile-art-experience-2026-09-08)
-📆 Tue 8 Sep, 10:30 AM
+#### [Screened to be Believed: The Jim Henson Company](https://www.qagoma.qld.gov.au/cinema/program/screened-to-be-believed-the-jim-henson-company)
+📆 Sat 12 Sep
 📍 GOMA, Stanley Place, South Bank
-💰 Book Now
-`art` `sensory` `exhibition`
+💰 Free
+`film` `puppets` `cinema`
 
-Tactile Art Experience is an arts exhibition held at GOMA.
+Screened to be Believed: The Jim Henson Company is an arts exhibition held at GOMA.
 
 #### [Book launch for ‘Sea Of Wonder’ by Kasey Rainbow](https://quickbrownfoxbookshop.com.au/book-launch-for-kasey-rainbowsaturday-5-september-230-330/)
 📆 Sat 5 Sep, 2:30 AM
@@ -2299,6 +2275,14 @@ Tactile Art Experience is an arts exhibition held at GOMA.
 `books` `literature` `author` `reading`
 
 You are invited to a book launch for ‘Sea Of Wonder’ by Kasey Rainbow on Saturday 5 September, 2:30-3:30. About the book: Welcome to the...
+
+#### [Croc! Lost Giants to Living Legends](https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends)
+📆 Fri 24 Oct
+📍 South Bank Parklands, Grey St, South Bank
+💰 See link
+`museum` `history` `nature`
+
+Croc! Lost Giants to Living Legends is an arts and exhibition event held at South Bank Parklands.
 
 #### [Undying: Abdul-Rahman Abdullah](https://www.visitsouthbank.com.au/events/undying-abdul-rahman-abdullah)
 📆 Thu 13 Aug
@@ -2372,14 +2356,6 @@ An ongoing exhibition showcasing delicate ceramic works, offering an intimate lo
 
 An exhibition exploring the intersection of textiles, storytelling, and contemporary Indigenous Australian fashion. It highlights the creative labor and cultural significance behind locally produced wearable art.
 
-#### [Mama Does Derby](https://brisbanepowerhouse.org/events/mama-does-derby/)
-📆 3 Sep 2026, 6:00 PM
-📍 Powerhouse Theatre, Brisbane Powerhouse, New Farm
-💰 $49.90–$59.90
-`theatre` `performance` `creative` `arts`
-
-A contemporary performance piece produced by the Windmill Production Company, exploring complex social dynamics through theatre.
-
 #### [Gilang Fradika – "Primal Visions"](https://mitchellfineartgallery.com/pages/2026-exhibition-calendar)
 📆 18 Aug to 5 Sep, 10:00 AM
 📍 Mitchell Fine Art, Fortitude Valley
@@ -2404,61 +2380,37 @@ A bi-weekly feature of local artistic talent at the Brisbane Institute of Art, o
 
 A massive gathering of local and international galleries designed to make art accessible; great for browsing and meeting creative people.
 
-#### [Queen's Wharf Brisbane Art Prize](https://www.brisbaneunlocked.com.au/queens-wharf-brisbane-art-prize-2026-09-03)
-📆 Thu 3 Sep, 10:00 AM
-📍 Petrie Terrace Gallery, Petrie Terrace
-💰 See link
-`art` `prize` `gallery`
-
-In partnership with Queen’s Wharf Brisbane and The Star Brisbane, The Royal Queensland Art Society Brisbane Branch is pleased to present the 2026 Queen’s Wharf Brisbane Art Prize. Following on from the success of this exhibition in 2025 and with an expanded list of eligible mediu
-
-#### [Upcoming Exhibitions](https://www.loganarts.com.au/event/upcoming-exhibitions/)
-📆 Sat 12 Sep
-📍 Logan Art Gallery
-💰 See link
-`art` `gallery` `exhibition`
-
-Upcoming Exhibitions is an arts exhibition held at Logan Art Gallery.
-
-#### [HAPPENING in Logan](https://www.loganarts.com.au/event/special-event-happening-in-logan/)
-📆 Fri 4 Sep
-📍 Logan Art Gallery
-💰 See link
-`art` `exhibition` `logan`
-
-HAPPENING in Logan is an arts exhibition held at Logan Art Gallery.
-
-#### [The Line & Rail Artspace: Beyond the classroom exhibition](https://www.loganarts.com.au/event/the-line-rail-artspace-beyond-the-classroom-exhibition/)
+#### [Costume Design Runway](https://brisbanefestival.com.au/events/costume-design-runway)
 📆 Sat 5 Sep
-📍 The Line & Rail Artspace
+📍 Brisbane Festival
 💰 See link
-`art` `exhibition` `education`
+`fashion` `design` `runway`
 
-The Line & Rail Artspace: Beyond the classroom exhibition
+The Costume Design Runway is an arts exhibition held at Brisbane Festival.
 
-#### [Luna, A Journey to the Moon](https://musick.com.au/gig/luna-a-journey-to-the-moon-2026-09-04/)
-📆 Fri 4 Sep
-📍 Fever Hub Brisbane, Australia
+#### [Exhibition opening](https://www.loganarts.com.au/event/exhibition-opening-9/)
+📆 Fri 11 Sep
+📍 Logan Art Gallery
 💰 See link
-`space` `exhibition` `immersive`
+`art` `opening` `gallery`
 
-Luna, A Journey to the Moon is an arts / exhibition event at Fever Hub Brisbane, Australia.
+Exhibition opening
 
-#### [Life Chronicles](https://musick.com.au/gig/life-chronicles-an-immersive-vr-journey-through-the-earth-s-history-2026-09-04/)
-📆 Fri 4 Sep
-📍 Fever Hub Brisbane, Australia
+#### [Stories You Wear: Magpie Goose](https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/)
+📆 Sat 22 Nov
+📍 Museum of Brisbane, King George Square (Brisbane City Hall)
 💰 See link
-`history` `exhibition` `immersive`
+`fashion` `design` `culture`
 
-Life Chronicles is an arts / exhibition event at Fever Hub Brisbane, Australia.
+The Stories You Wear: Magpie Goose event at the Museum of Brisbane is an Arts / Exhibition experience.
 
-#### [Horizon of Khufu](https://musick.com.au/gig/horizon-of-khufu-journey-in-ancient-egypt-2026-09-04/)
-📆 Fri 4 Sep
-📍 Fever Hub Brisbane, Australia
+#### [Movie Club Offer: MAIGRET AND THE DEAD LOVER](https://palacecinemas.com.au/palace-movie-club-offer-maigret-and-the-dead-lover)
+📆 Thu 10 Sep
+📍 Palace Cinemas Brisbane
 💰 See link
-`history` `exhibition` `immersive`
+`film` `cinema` `drama`
 
-Horizon of Khufu is an arts / exhibition event at Fever Hub Brisbane, Australia.
+A movie club offer screening of Maigret and the Dead Lover at Palace Cinemas Brisbane.
 
 #### [Father's Day Retro: Terminator 2: Judgement Day - 35th Anniversary](https://palacecinemas.com.au/fathers-day-retro-terminator-2)
 📆 Sun 6 Sep
@@ -2467,6 +2419,22 @@ Horizon of Khufu is an arts / exhibition event at Fever Hub Brisbane, Australia.
 `film` `retro` `scifi`
 
 A Father's Day retro screening of Terminator 2: Judgement Day at Palace Cinemas Brisbane.
+
+#### [Movie Club Offer: THE GREAT ARCH](https://palacecinemas.com.au/palace-movie-club-offer-the-great-arch)
+📆 Fri 4 Sep
+📍 Palace Cinemas Brisbane
+💰 See link
+`film` `cinema` `documentary`
+
+A movie club offer screening of The Great Arch at Palace Cinemas Brisbane.
+
+#### [ST. ALi Italian Film Festival Centrepiece Premiere: Sweetheart](https://palacecinemas.com.au/st-ali-italian-film-festival-centrepiece-premiere-sweetheart)
+📆 Sun 6 Sep
+📍 Palace Cinemas Brisbane
+💰 See link
+`film` `festival` `premiere`
+
+A St. Ali Italian Film Festival centrepiece premiere of Sweetheart at Palace Cinemas Brisbane.
 
 #### [Zoe Young](https://philipbacongalleries.com.au/zoe-young-2026)
 📆 Tue 11 Aug, 10:00 AM
@@ -2508,13 +2476,13 @@ Small Figures is an arts exhibition held at QAG.
 
 Multisensory Art Experience is an arts exhibition held at QAG.
 
-#### [Croc! Lost Giants to Living Legends](https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends)
-📆 Fri 24 Oct
-📍 South Bank Parklands, Grey St, South Bank
-💰 See link
-`museum` `history` `nature`
+#### [Tactile Art Experience](https://www.qagoma.qld.gov.au/event/tactile-art-experience-2026-09-08)
+📆 Tue 8 Sep, 10:30 AM
+📍 GOMA, Stanley Place, South Bank
+💰 Book Now
+`art` `sensory` `exhibition`
 
-Croc! Lost Giants to Living Legends is an arts and exhibition event held at South Bank Parklands.
+Tactile Art Experience is an arts exhibition held at GOMA.
 
 #### [Magic Globe](https://www.weekendnotes.com/magic-globe-334763/)
 📆 Sun 6 Sep
@@ -2532,6 +2500,14 @@ Magic Globe is an arts and performance event listed on WeekendNotes Brisbane.
 
 An immersive light-based installation piece created for the Brisbane Festival, designed to explore visual atmosphere in an outdoor public space.
 
+#### [Mama Does Derby](https://brisbanepowerhouse.org/events/mama-does-derby/)
+📆 3 Sep 2026, 6:00 PM
+📍 Powerhouse Theatre, Brisbane Powerhouse, New Farm
+💰 $49.90–$59.90
+`theatre` `performance` `creative` `arts`
+
+A contemporary performance piece produced by the Windmill Production Company, exploring complex social dynamics through theatre.
+
 #### [Tim Price – "The moon’s raining"](https://www.janmurphygallery.com.au/)
 📆 12 Aug to 5 Sep, 10:00 AM
 📍 Jan Murphy Gallery, New Farm
@@ -2548,13 +2524,29 @@ Contemporary art exhibition featuring new works by Tim Price. A quiet, contempla
 
 An exploration of light and environment through the lens of Adam Pyett’s distinct painterly style. Ideal for those interested in landscape study and artistic technique.
 
-#### [IAG Kids: Make Yourself at Home](https://www.ipswichartgallery.qld.gov.au/whats-on/iag-kids-make-yourself-at-home)
-📆 Sat 25 Jul, 10:00 AM
-📍 Ipswich Art Gallery
-💰 Free
-`kids` `family` `art`
+#### [Upcoming Exhibitions](https://www.loganarts.com.au/event/upcoming-exhibitions/)
+📆 Sat 12 Sep
+📍 Logan Art Gallery
+💰 See link
+`art` `gallery` `exhibition`
 
-A playful, sensory exhibition that explores what home means to children.
+Upcoming Exhibitions is an arts exhibition held at Logan Art Gallery.
+
+#### [HAPPENING in Logan](https://www.loganarts.com.au/event/special-event-happening-in-logan/)
+📆 Fri 4 Sep
+📍 Logan Art Gallery
+💰 See link
+`art` `exhibition` `logan`
+
+HAPPENING in Logan is an arts exhibition held at Logan Art Gallery.
+
+#### [The Line & Rail Artspace: Beyond the classroom exhibition](https://www.loganarts.com.au/event/the-line-rail-artspace-beyond-the-classroom-exhibition/)
+📆 Sat 5 Sep
+📍 The Line & Rail Artspace
+💰 See link
+`art` `exhibition` `education`
+
+The Line & Rail Artspace: Beyond the classroom exhibition
 
 #### [Dinos Alive](https://musick.com.au/gig/dinos-alive-an-immersive-experience-in-brisbane-2026-09-04/)
 📆 Fri 4 Sep
@@ -2564,30 +2556,6 @@ A playful, sensory exhibition that explores what home means to children.
 
 Dinos Alive is an arts / exhibition event at Fever Skygate | Exhibition and Immersive Experience centre, Brisbane Airport.
 
-#### [Movie Club Offer: MAIGRET AND THE DEAD LOVER](https://palacecinemas.com.au/palace-movie-club-offer-maigret-and-the-dead-lover)
-📆 Thu 10 Sep
-📍 Palace Cinemas Brisbane
-💰 See link
-`film` `cinema` `drama`
-
-A movie club offer screening of Maigret and the Dead Lover at Palace Cinemas Brisbane.
-
-#### [Movie Club Offer: THE GREAT ARCH](https://palacecinemas.com.au/palace-movie-club-offer-the-great-arch)
-📆 Fri 4 Sep
-📍 Palace Cinemas Brisbane
-💰 See link
-`film` `cinema` `documentary`
-
-A movie club offer screening of The Great Arch at Palace Cinemas Brisbane.
-
-#### [ST. ALi Italian Film Festival Centrepiece Premiere: Sweetheart](https://palacecinemas.com.au/st-ali-italian-film-festival-centrepiece-premiere-sweetheart)
-📆 Sun 6 Sep
-📍 Palace Cinemas Brisbane
-💰 See link
-`film` `festival` `premiere`
-
-A St. Ali Italian Film Festival centrepiece premiere of Sweetheart at Palace Cinemas Brisbane.
-
 #### [Father's Day Preview: Shaun the Sheep: The Beast of Mossy Bottom](https://palacecinemas.com.au/fathers-day-preview-shaun-the-sheep-the-beast-of-mossy-bottom)
 📆 Sun 6 Sep
 📍 Palace Cinemas Brisbane
@@ -2595,6 +2563,14 @@ A St. Ali Italian Film Festival centrepiece premiere of Sweetheart at Palace Cin
 `film` `family` `animation`
 
 A Father's Day preview screening of Shaun the Sheep: The Beast of Mossy Bottom at Palace Cinemas Brisbane.
+
+#### [IAG Kids: Make Yourself at Home](https://www.ipswichartgallery.qld.gov.au/whats-on/iag-kids-make-yourself-at-home)
+📆 Sat 25 Jul, 10:00 AM
+📍 Ipswich Art Gallery
+💰 Free
+`kids` `family` `art`
+
+A playful, sensory exhibition that explores what home means to children.
 
 ### 📌 Community / Other
 
@@ -2614,6 +2590,14 @@ Shannon Ruska | Tribal Experiences
 
 Quandamooka Yoolooburrabee Aboriginal Corporation
 
+#### [Free guided tours - Brisbane Botanic Gardens Mt Coot-tha](https://www.brisbaneunlocked.com.au/free-guided-tours-brisbane-botanic-gardens-mt-coot-tha-2026-09-03)
+📆 Thu 3 Sep, 11:00 AM
+📍 Brisbane Botanic Gardens Mt Coot-tha
+💰 See link
+`nature` `gardens` `free`
+
+Take a free volunteer guided walk to learn about the plants and features at Brisbane Botanic Gardens Mt Coot-tha . Our volunteer guides all have a love for Brisbane’s Botanic Gardens and a desire to share their passion and knowledge with visitors. Walking tours for individuals an
+
 #### [Galvanized - A Festival of Heritage](https://www.brisbaneunlocked.com.au/galvanized-a-festival-of-heritage-2026-09-03)
 📆 Thu 3 Sep, 2:00 PM
 📍 Ipswich and region
@@ -2621,22 +2605,6 @@ Quandamooka Yoolooburrabee Aboriginal Corporation
 `heritage` `history` `festival`
 
 Galvanized is the city’s festival of heritage, showcasing the best heritage experiences and events Ipswich has to offer.
-
-#### [Queens Wharf Brisbane Precinct Public Art Tour](https://www.qtix.com.au/whats-on/2026/mob-queens-wharf-brisbane-precinct-public-art-tour/)
-📆 Wed 29 Apr
-📍 Museum of Brisbane, Level 3, Brisbane City Hall
-💰 See link
-`tour` `history` `walking` `art`
-
-Step into Brisbane’s ever-evolving story with this expertly guided walking tour through the Queen’s Wharf Precinct.
-
-#### [Convict Brisbane Walking Tour](https://www.qtix.com.au/whats-on/2026/mob-convict-brisbane-walking-tour/)
-📆 Sat 11 Apr
-📍 Museum of Brisbane, Level 3, Brisbane City Hall
-💰 See link
-`tour` `history` `walking` `colonial`
-
-Explore Brisbane’s colonial history on this guided tour through the city’s convict past.
 
 #### [Brisbane Festival Village](https://www.mustdobrisbane.com/whats-on/brisbane-festival-2026)
 📆 Sat 5 Sep, ongoing
@@ -2653,6 +2621,14 @@ A central cultural hub for the festival featuring art installations, pop-up perf
 `history` `heritage` `community`
 
 A heritage-focused festival in Ipswich featuring historical displays and community engagement that dives into local history and culture.
+
+#### [Convict Brisbane Walking Tour](https://www.viabrisbane.com/events/convict-brisbane-walking-tour-museum-of-brisbane-brisbane-city/2026-05-09)
+📆 5 Sep 2026, 10:30 AM
+📍 Departs King George Square foyer, Brisbane City Hall
+💰 From $30
+`history` `walking` `tour` `intellectual`
+
+A guided historical walking tour exploring the convict origins of Brisbane, providing insight into the city's early development and social history.
 
 #### [Alive in the Sunshine: A Mt Coot-tha Festival](https://www.weekendnotes.com/alive-in-the-sunshine-a-mt-coottha-festival-334762/)
 📆 Sat 5 Sep
@@ -2694,13 +2670,13 @@ A community-focused gathering on the university campus featuring activities, sta
 
 Brisbane City Council
 
-#### [Riverfire by Australian Retirement Trust](https://brisbanefestival.com.au/events/riverfire-2026)
-📆 Sat 5 Sep
-📍 Brisbane Festival
-💰 Free
-`fireworks` `festival` `outdoor`
+#### [Pasta Club at OTTO](https://www.visitsouthbank.com.au/events/pasta-club-at-otto)
+📆 Wed 9 Sep
+📍 South Bank Parklands, Grey St, South Bank
+💰 See link
+`food` `dining` `social`
 
-Brisbane is set to erupt in colour with the spectacular Riverfire by Australian Retirement Trust.
+Pasta Club at OTTO is a community event held at South Bank Parklands.
 
 #### [A Fair Day Out](https://www.weekendnotes.com/a-fair-day-out-335224/)
 📆 Sat 12 Sep
@@ -2726,6 +2702,14 @@ The Home Show 2026 at Brisbane Convention & Exhibition Centre is a community eve
 
 The Yalari Dinner 2026 at Brisbane Convention & Exhibition Centre is a community event.
 
+#### [Riverfire by Australian Retirement Trust](https://brisbanefestival.com.au/events/riverfire-2026)
+📆 Sat 5 Sep
+📍 Brisbane Festival
+💰 Free
+`fireworks` `festival` `outdoor`
+
+Brisbane is set to erupt in colour with the spectacular Riverfire by Australian Retirement Trust.
+
 #### [Eat Street’s PANDAmonium](https://eatstreetnorthshore.com.au/event/eat-streets-pandamonium-7/)
 📆 Fri 4 Sep, 6:00 PM
 📍 Eat Street Northshore, 221D Macarthur Avenue, Hamilton, QLD, 4007
@@ -2742,13 +2726,13 @@ Eat Street's PANDAmonium is a community event held at Eat Street Northshore.
 
 Halo Loop 360 (W Dad) is a community event held at Eat Street Northshore.
 
-#### [Pasta Club at OTTO](https://www.visitsouthbank.com.au/events/pasta-club-at-otto)
-📆 Wed 9 Sep
+#### [All You Can Scoop Tiramisu At Ma Pa Me](https://www.visitsouthbank.com.au/events/all-you-can-scoop-tiramisu-at-ma-pa-me)
+📆 Tue 1 Sep
 📍 South Bank Parklands, Grey St, South Bank
 💰 See link
-`food` `dining` `social`
+`food` `dessert` `social`
 
-Pasta Club at OTTO is a community event held at South Bank Parklands.
+All You Can Scoop Tiramisu At Ma Pa Me is a community event held at South Bank Parklands.
 
 #### [Riverfire at Pig 'N' Whistle South Bank](https://www.visitsouthbank.com.au/events/riverfire-at-pig-n-whistle-south-bank)
 📆 Sat 5 Sep
@@ -2830,54 +2814,6 @@ Riverfire At Southbank Beer Garden is a community event held at South Bank Parkl
 
 Riverfire at The Plough Inn is a community event held at South Bank Parklands.
 
-#### [Riverfire At Poppies](https://www.visitsouthbank.com.au/events/riverfire-at-poppies)
-📆 Sat 5 Sep
-📍 South Bank Parklands, Grey St, South Bank
-💰 See link
-`fireworks` `dining` `social`
-
-Riverfire At Poppies is a community event held at South Bank Parklands.
-
-#### [Mac Fair 2026](https://www.weekendnotes.com/mac-fair-2026-335223/)
-📆 Sat 12 Sep
-📍 WeekendNotes Brisbane
-💰 See link
-`fair` `community` `family`
-
-Mac Fair 2026 is a community event listed on WeekendNotes Brisbane.
-
-#### [Teach Rural Career Fair](https://teach.qld.gov.au/events-and-community/teach-queensland-events/career-fairs)
-📆 Sat 5 Sep
-📍 Brisbane Convention & Exhibition Centre
-💰 See link
-`career` `education` `employment`
-
-The Teach Rural Career Fair at Brisbane Convention & Exhibition Centre is a community event.
-
-#### [Care Expo](https://careexpobrisbane.com.au/)
-📆 Fri 11 Sep
-📍 Brisbane Convention & Exhibition Centre
-💰 See link
-`health` `care` `support`
-
-The Care Expo at Brisbane Convention & Exhibition Centre is a community event.
-
-#### [All You Can Scoop Tiramisu At Ma Pa Me](https://www.visitsouthbank.com.au/events/all-you-can-scoop-tiramisu-at-ma-pa-me)
-📆 Tue 1 Sep
-📍 South Bank Parklands, Grey St, South Bank
-💰 See link
-`food` `dessert` `social`
-
-All You Can Scoop Tiramisu At Ma Pa Me is a community event held at South Bank Parklands.
-
-#### [Father's Day at Pig N Whistle](https://www.visitsouthbank.com.au/events/fathers-day-at-pig-n-whistle)
-📆 Sun 6 Sep
-📍 South Bank Parklands, Grey St, South Bank
-💰 See link
-`family` `dining` `social`
-
-Father's Day at Pig N Whistle is a community event held at South Bank Parklands.
-
 #### [Brisbane's Biggest Steak Frites](https://www.visitsouthbank.com.au/events/brisbanes-biggest-steak-frites)
 📆 Thu 3 Sep, 5:00 PM
 📍 South Bank Parklands, Grey St, South Bank
@@ -2886,13 +2822,13 @@ Father's Day at Pig N Whistle is a community event held at South Bank Parklands.
 
 Brisbane's Biggest Steak Frites is a community event held at South Bank Parklands.
 
-#### [The Great Australian Father's Day Brunch](https://www.visitsouthbank.com.au/events/the-great-australian-fathers-day-brunch)
-📆 Sun 6 Sep
+#### [Riverfire At Poppies](https://www.visitsouthbank.com.au/events/riverfire-at-poppies)
+📆 Sat 5 Sep
 📍 South Bank Parklands, Grey St, South Bank
 💰 See link
-`family` `brunch` `social`
+`fireworks` `dining` `social`
 
-The Great Australian Father's Day Brunch is a community event held at South Bank Parklands.
+Riverfire At Poppies is a community event held at South Bank Parklands.
 
 #### [$30 La Taco Vida At Poca Madre](https://www.visitsouthbank.com.au/events/30-la-taco-vida-at-poca-madre)
 📆 Mon 7 Sep
@@ -2942,6 +2878,46 @@ The best way to show Dad some love is with a good feed!
 
 The Wizard Express is a community event presented by the Mary Valley Rattler.
 
+#### [Mac Fair 2026](https://www.weekendnotes.com/mac-fair-2026-335223/)
+📆 Sat 12 Sep
+📍 WeekendNotes Brisbane
+💰 See link
+`fair` `community` `family`
+
+Mac Fair 2026 is a community event listed on WeekendNotes Brisbane.
+
+#### [Teach Rural Career Fair](https://teach.qld.gov.au/events-and-community/teach-queensland-events/career-fairs)
+📆 Sat 5 Sep
+📍 Brisbane Convention & Exhibition Centre
+💰 See link
+`career` `education` `employment`
+
+The Teach Rural Career Fair at Brisbane Convention & Exhibition Centre is a community event.
+
+#### [Care Expo](https://careexpobrisbane.com.au/)
+📆 Fri 11 Sep
+📍 Brisbane Convention & Exhibition Centre
+💰 See link
+`health` `care` `support`
+
+The Care Expo at Brisbane Convention & Exhibition Centre is a community event.
+
+#### [Father's Day at Pig N Whistle](https://www.visitsouthbank.com.au/events/fathers-day-at-pig-n-whistle)
+📆 Sun 6 Sep
+📍 South Bank Parklands, Grey St, South Bank
+💰 See link
+`family` `dining` `social`
+
+Father's Day at Pig N Whistle is a community event held at South Bank Parklands.
+
+#### [The Great Australian Father's Day Brunch](https://www.visitsouthbank.com.au/events/the-great-australian-fathers-day-brunch)
+📆 Sun 6 Sep
+📍 South Bank Parklands, Grey St, South Bank
+💰 See link
+`family` `brunch` `social`
+
+The Great Australian Father's Day Brunch is a community event held at South Bank Parklands.
+
 #### [Chevallum State School Strawberry Bonanza at Aussie World](https://www.weekendnotes.com/chevallum-state-school-strawberry-bonanza-at-aussie-world/)
 📆 Fri 4 Sep
 📍 WeekendNotes Brisbane
@@ -2958,7 +2934,81 @@ The Chevallum State School Strawberry Bonanza is a community festival held at Au
 
 Logan Business Distinction Awards 2026
 
+### 🎓 Public Lecture
+
+#### [Fashion Queensland in Conversation: Fashioning Brisbane: The Future of Fashion and Cultural Identity in our City](https://brisbanepowerhouse.org/events/fashion-queensland-in-conversation-2/)
+📆 Wed 9 Sep
+📍 Brisbane Powerhouse, 119 Lamington St
+💰 See link
+`fashion` `culture` `conversation`
+
+FASHION INFORMATIVE ENTERTAINING
+
+#### [Melbourne Q&A Event: Jebediah: Are We Ok?](https://palacecinemas.com.au/melbourne-qa-event-jebediah-are-we-ok)
+📆 Thu 10 Sep
+📍 Palace Cinemas Brisbane
+💰 See link
+`music` `qa` `documentary`
+
+A Melbourne Q&A event for the film Jebediah: Are We Ok? held at Palace Cinemas Brisbane.
+
+#### [South Bank Guided Tours](https://www.visitsouthbank.com.au/events/south-bank-guided-tours)
+📆 Sun 9 Nov
+📍 South Bank Parklands, Grey St, South Bank
+💰 See link
+`history` `tour` `walking`
+
+South Bank Guided Tours is a public lecture event held at South Bank Parklands.
+
+#### [LEVEL UP: How to Turn Every Setback into Your Next Advantage](https://creativemornings.com/talks/level-up-losing-forward-how-to-turn-every-setback-into-your-next-advantage)
+📆 Wed 9 Sep
+📍 Creative Mornings Brisbane
+💰 See link
+`business` `growth` `mindset`
+
+A public lecture on turning setbacks into advantages held at Creative Mornings Brisbane.
+
+#### [BIGSOUND 2026 (showcases & conference)](https://www.bigsound.org.au/tickets)
+📆 1–4 Sep, various times
+📍 Fortitude Valley
+💰 $565
+`music` `tech` `culture` `innovation`
+
+An intensive multi-day conference and showcase event where industry experts, musicians, and tech innovators discuss the future of the creative arts and music business.
+
 ### 🛠️ Workshop / Class
+
+#### [Skill Shots – Level Up Your Pinball Game](https://www.netherworldarcade.com/event/skill-shots-7/)
+📆 Sat 12 Sep, 10:00 AM
+📍 Netherworld, 186 Brunswick Street
+💰 See link
+`pinball` `gaming` `skills` `workshop`
+
+Ready to level up your pinball game? Join us once a month on a Saturday morning to hang and chat all things pinball! Whether you’re a budding beginner, a functional flipper or a multiball maestro, you’re welcome to come and sharpen up your skills and help others do the same. From starting a game to […]
+
+#### [Voice: The Make or Break Element with Natasha Lester](https://queenslandwriters.org.au/events/voice-the-make-or-break-element-with-natasha-lester)
+📆 Thu 10 Sep
+📍 Queensland Writers Centre
+💰 See link
+`writing` `fiction` `literature`
+
+Learn to grab your reader’s attention with the standout element every novel needs: voice. Book your place.
+
+#### [Australasian Dance Collective Mature Program](https://adc.au)
+📆 5 September 2026, various times
+📍 Judith Wright Arts Centre, Fortitude Valley
+💰 $20 single
+`dance` `workshop` `creative` `fitness`
+
+An inclusive dance workshop tailored for mature adults, focusing on movement, artistry, and physical expression in a professional studio setting.
+
+#### [Heidi Willis – 3‑Day Botanical Illustration Workshop](https://heidiwillis.com.au/painting-workshops-and-events-calendar-for-2024/)
+📆 4 Sep, 9:00 AM
+📍 Bienarte, Brisbane
+💰 Price on application
+`art` `workshop` `botanical` `painting`
+
+A deep-dive intensive workshop focusing on botanical illustration techniques in watercolour, led by a renowned professional artist.
 
 #### [Common People Dance Project Workshop](https://brisbanefestival.com.au/events/common-people-dance-project)
 📆 Sat 12 Sep
@@ -2967,6 +3017,14 @@ Logan Business Distinction Awards 2026
 `dance` `community` `movement`
 
 The Common People Dance Project Workshop is a workshop held at Brisbane Festival.
+
+#### [HipHop/Street Dance Workshop with Bring a Plate](https://brisbanefestival.com.au/events/dance-workshops-hiphoporstreet-dance)
+📆 Wed 9 Sep
+📍 Brisbane Festival
+💰 See link
+`hiphop` `dance` `street`
+
+The HipHop/Street Dance Workshop with Bring a Plate is a workshop held at Brisbane Festival.
 
 #### [Latin Dance Workshop with Rio Rhythmics Latin Dance Academy](https://brisbanefestival.com.au/events/dance-workshops-rio-rhythmics-latin-dance-academy)
 📆 Thu 10 Sep
@@ -2984,29 +3042,21 @@ The Latin Dance Workshop with Rio Rhythmics Latin Dance Academy is a workshop he
 
 Beat and Move Workshop: An African Dance Adventure with Yenenesh Nigusse is a workshop / class held at Brisbane Festival.
 
-#### [Australasian Dance Collective Mature Program](https://adc.au)
-📆 5 September 2026, various times
-📍 Judith Wright Arts Centre, Fortitude Valley
-💰 $20 single
-`dance` `workshop` `creative` `fitness`
+#### [Silversmithing & Jewellery Workshops](https://www.qtix.com.au/whats-on/2026/silversmithing-jewellery-workshops-2026/)
+📆 Sat 21 Feb
+📍 Queensland Museum Cobb+Co, Toowoomba
+💰 See link
+`jewellery` `craft` `teens` `making`
 
-An inclusive dance workshop tailored for mature adults, focusing on movement, artistry, and physical expression in a professional studio setting.
+Explore hands-on silversmithing workshops and jewellery making sessions created especially for teens.
 
-#### [QAGOMA Public Program: The Pop-Up Sock Puppet Studio](https://www.qagoma.qld.gov.au/stories/the-sock-puppet-studio-make-believe-magic-the-worlds-of-the-jim-henson-company-gallery-of-modern-art)
-📆 Sun 6 Sep, 9:00 AM
-📍 Verso Projects, South Bank
-💰 Free
-`craft` `art` `workshop` `free`
+#### [Ballet Foundations](https://www.queenslandballet.com.au/classes/dance-and-fitness-for-adults/courses)
+📆 Sat 5 Sep, time TBC
+📍 Thomas Dixon Centre, West End
+💰 $193
+`dance` `ballet` `workshop` `fitness`
 
-A lighthearted, creative workshop focused on puppet design and performance, inspired by the historical craft of Jim Henson's studio.
-
-#### [Heidi Willis – 3‑Day Botanical Illustration Workshop](https://heidiwillis.com.au/painting-workshops-and-events-calendar-for-2024/)
-📆 4 Sep, 9:00 AM
-📍 Bienarte, Brisbane
-💰 Price on application
-`art` `workshop` `botanical` `painting`
-
-A deep-dive intensive workshop focusing on botanical illustration techniques in watercolour, led by a renowned professional artist.
+A structured, beginner-friendly course in ballet technique held at a professional dance facility. It is designed for adults looking to build movement skills in an authentic and disciplined creative environment.
 
 #### [MOVE Workshop with Queensland Ballet](https://brisbanefestival.com.au/events/move-with-queensland-ballet)
 📆 Sun 6 Sep
@@ -3016,13 +3066,13 @@ A deep-dive intensive workshop focusing on botanical illustration techniques in 
 
 Queensland Ballet
 
-#### [HipHop/Street Dance Workshop with Bring a Plate](https://brisbanefestival.com.au/events/dance-workshops-hiphoporstreet-dance)
-📆 Wed 9 Sep
+#### [Line Dance Workshop with Footloose Fun](https://brisbanefestival.com.au/events/dance-workshops-line-dance-wor-footloose-fun)
+📆 Sun 6 Sep
 📍 Brisbane Festival
 💰 See link
-`hiphop` `dance` `street`
+`dance` `workshop` `fitness`
 
-The HipHop/Street Dance Workshop with Bring a Plate is a workshop held at Brisbane Festival.
+Line Dance Workshop with Footloose Fun is a workshop at Brisbane Festival.
 
 #### [Bollywood Dance Workshop with Dance Masala](https://brisbanefestival.com.au/events/bollywood-dance-workshops-dance-masala)
 📆 Fri 11 Sep
@@ -3040,29 +3090,13 @@ The Bollywood Dance Workshop with Dance Masala is a workshop held at Brisbane Fe
 
 The Bellydance Workshop with Brisbane Bellydance Academy is a workshop held at Brisbane Festival.
 
-#### [Ballet Foundations](https://www.queenslandballet.com.au/classes/dance-and-fitness-for-adults/courses)
-📆 Sat 5 Sep, time TBC
-📍 Thomas Dixon Centre, West End
-💰 $193
-`dance` `ballet` `workshop` `fitness`
-
-A structured, beginner-friendly course in ballet technique held at a professional dance facility. It is designed for adults looking to build movement skills in an authentic and disciplined creative environment.
-
-#### [Line Dance Workshop with Footloose Fun](https://brisbanefestival.com.au/events/dance-workshops-line-dance-wor-footloose-fun)
-📆 Sun 6 Sep
-📍 Brisbane Festival
+#### [Aqua yoga](https://www.brisbaneunlocked.com.au/aqua-yoga-2026-09-03)
+📆 Thu 3 Sep, 1:00 PM
+📍 Yeronga Park Memorial Swimming Pool, Yeronga
 💰 See link
-`dance` `workshop` `fitness`
+`yoga` `fitness` `water`
 
-Line Dance Workshop with Footloose Fun is a workshop at Brisbane Festival.
-
-#### [Function Well Mat Sessions](https://brisbanefestival.com.au/events/function-well-mat-sessions)
-📆 Wed 9 Sep
-📍 Brisbane Festival
-💰 See link
-`fitness` `wellness` `exercise`
-
-The Function Well Mat Sessions is a workshop held at Brisbane Festival.
+This is a low impact form of exercise that supports the body while still providing function and movement. Many yoga poses that you do in a class can be adapted for the pool, sometimes using the pool walls as if it were the studio floor. This is a GOLD event suitable for seniors.
 
 #### [50 Plus: Yoga for seniors](https://www.brisbaneunlocked.com.au/50-plus-yoga-for-seniors-2026-09-03)
 📆 Thu 3 Sep, 1:45 PM
@@ -3080,13 +3114,13 @@ Specifically designed for active individuals over 50, empowering you to maintain
 
 Do you have technology questions and don't know where to find help? In this relaxed session we will show you where to find support and information for using computers, tablets, smartphones, the Internet, troubleshooting tech queries and more.
 
-#### [Online Express Year of the Novel with Balli Jaswal](https://queenslandwriters.org.au/events/express-year-of-the-novel-with-balli-jaswal)
-📆 Sat 29 Aug
-📍 Queensland Writers Centre
+#### [Function Well Mat Sessions](https://brisbanefestival.com.au/events/function-well-mat-sessions)
+📆 Wed 9 Sep
+📍 Brisbane Festival
 💰 See link
-`writing` `novel` `literature`
+`fitness` `wellness` `exercise`
 
-Get the tools and support you need to complete the first draft of your novel, in this express version of Queensland Writers Centre's flagship program (online!). Book your place.
+The Function Well Mat Sessions is a workshop held at Brisbane Festival.
 
 #### [Functional fitness](https://www.brisbaneunlocked.com.au/functional-fitness-2026-09-03)
 📆 Thu 3 Sep, 12:15 PM
@@ -3120,22 +3154,6 @@ Bookings essential. Focus on aerobic fitness, strengthening with light weights, 
 
 Bookings essential. Enjoy a fun and effective body conditioning class from the comfort of a chair. Work on improving strength, toning, suppleness, balance and coordination at your own pace. This is a GOLD event suitable for seniors.
 
-#### [Aqua yoga](https://www.brisbaneunlocked.com.au/aqua-yoga-2026-09-03)
-📆 Thu 3 Sep, 1:00 PM
-📍 Yeronga Park Memorial Swimming Pool, Yeronga
-💰 See link
-`yoga` `fitness` `water`
-
-This is a low impact form of exercise that supports the body while still providing function and movement. Many yoga poses that you do in a class can be adapted for the pool, sometimes using the pool walls as if it were the studio floor. This is a GOLD event suitable for seniors.
-
-#### [Toddler Time: Make Yourself at Home](https://www.ipswichartgallery.qld.gov.au/whats-on/toddler-time-make-yourself-at-home)
-📆 Fri 31 Jul, 10:00 AM
-📍 Ipswich Art Gallery
-💰 Free
-`toddler` `play` `art`
-
-Join us in our Children's Gallery on Friday mornings for play-based explorations of our current IAG Kids exhibition.
-
 #### [Junior Book Club (Grades 2, 3, 4) Term Fee](https://madhattersbookshop.com.au/p/junior-book-club-grades-2-3-4)
 📆 Thu 3 Sep, 4:00 PM
 📍 The Mad Hatters Bookshop
@@ -3144,36 +3162,18 @@ Join us in our Children's Gallery on Friday mornings for play-based explorations
 
 Junior Book Club Term FeeTuesdays during school term, 4:00-5:00pm ---------- Come along to our Junior Book Club & chat books! Every month, kids chat about books & participate in bookish activities, including craft, puzzles & games. The dates for Term Three are: Tues July 14th Tues August 11th Tues September 15th This book club is suitable for independent readers in grades 2, 3, 4 with a reading age of 7-9. The reading theme for term three is Landscapes: Land, Sky & Sea. The books are available to collect in-store now! You can view the list of books here. Term fee is $30/term. It is a requirement to purchase the book club books from us. All JR book club members receive 15% off all reads in their age group. Please get in touch if your child is interested in attending!
 
-### 🎓 Public Lecture
-
-#### [Melbourne Q&A Event: Jebediah: Are We Ok?](https://palacecinemas.com.au/melbourne-qa-event-jebediah-are-we-ok)
-📆 Thu 10 Sep
-📍 Palace Cinemas Brisbane
+#### [Online Express Year of the Novel with Balli Jaswal](https://queenslandwriters.org.au/events/express-year-of-the-novel-with-balli-jaswal)
+📆 Sat 29 Aug
+📍 Queensland Writers Centre
 💰 See link
-`music` `qa` `documentary`
+`writing` `novel` `literature`
 
-A Melbourne Q&A event for the film Jebediah: Are We Ok? held at Palace Cinemas Brisbane.
+Get the tools and support you need to complete the first draft of your novel, in this express version of Queensland Writers Centre's flagship program (online!). Book your place.
 
-#### [LEVEL UP: How to Turn Every Setback into Your Next Advantage](https://creativemornings.com/talks/level-up-losing-forward-how-to-turn-every-setback-into-your-next-advantage)
-📆 Wed 9 Sep
-📍 Creative Mornings Brisbane
-💰 See link
-`business` `growth` `mindset`
+#### [Toddler Time: Make Yourself at Home](https://www.ipswichartgallery.qld.gov.au/whats-on/toddler-time-make-yourself-at-home)
+📆 Fri 31 Jul, 10:00 AM
+📍 Ipswich Art Gallery
+💰 Free
+`toddler` `play` `art`
 
-A public lecture on turning setbacks into advantages held at Creative Mornings Brisbane.
-
-#### [South Bank Guided Tours](https://www.visitsouthbank.com.au/events/south-bank-guided-tours)
-📆 Sun 9 Nov
-📍 South Bank Parklands, Grey St, South Bank
-💰 See link
-`history` `tour` `walking`
-
-South Bank Guided Tours is a public lecture event held at South Bank Parklands.
-
-#### [BIGSOUND 2026 (showcases & conference)](https://www.bigsound.org.au/tickets)
-📆 1–4 Sep, various times
-📍 Fortitude Valley
-💰 $565
-`music` `tech` `culture` `innovation`
-
-An intensive multi-day conference and showcase event where industry experts, musicians, and tech innovators discuss the future of the creative arts and music business.
+Join us in our Children's Gallery on Friday mornings for play-based explorations of our current IAG Kids exhibition.
