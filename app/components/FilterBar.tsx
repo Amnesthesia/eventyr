@@ -46,7 +46,11 @@ export default function FilterBar({ onSwipe }: Props) {
 							Unhide {hiddenCount} skipped
 						</button>
 					)}
-					<button type="button" className="filter-btn" onClick={onSwipe}>
+					<button
+						type="button"
+						className="filter-btn swipe-btn"
+						onClick={onSwipe}
+					>
 						<Layers size={12} strokeWidth={2.2} />
 						Swipe
 					</button>

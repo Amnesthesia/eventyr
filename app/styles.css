@@ -1837,3 +1837,16 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	font-size: 0.68rem;
 	font-weight: 600;
 }
+
+/* The one control here that opens a different mode rather than narrowing the
+   list, so it gets a hue. Teal, which the page already uses for "social":
+   an invitation rather than a warning. */
+.filter-btn.swipe-btn {
+	color: var(--hue-teal);
+	border-color: var(--hue-teal);
+}
+
+.filter-btn.swipe-btn:hover {
+	background: var(--hue-teal);
+	color: var(--bg);
+}
