@@ -3,10 +3,12 @@ import { join, relative } from "node:path";
 import { isPast, withinWindow } from "./adapters/normalise.ts";
 import {
 	DATA_ROOT,
+	DEFAULT_COST_LOCALE,
 	fmtDate,
 	getWeekRange,
 	isLikelyImageUrl,
 	loadCityConfig,
+	normaliseCurrency,
 	PROJECT_ROOT,
 	requireEnv,
 	toISODate,
@@ -27,6 +29,15 @@ const FORCE = ["1", "true", "yes"].includes(
 );
 const cityCfg = loadCityConfig(CITY);
 const CITY_NAME = cityCfg.name;
+// Defaults documented on CityConfig: a non-Australian city sets both in its
+// sources/{city}.yml rather than relying on these.
+const COST_LOCALE = {
+	locale: cityCfg.locale ?? DEFAULT_COST_LOCALE.locale,
+	currency: cityCfg.currency ?? DEFAULT_COST_LOCALE.currency,
+	// Needed by the schema.org dates on every page: a naive wall-clock string
+	// is ambiguous to a crawler. See isoWithOffset.
+	timezone: cityCfg.timezone ?? "Australia/Brisbane",
+};
 
 // Same window the scrape pass uses: today through the end of next week. Kept
 // here rather than imported from collect.ts so curate has no dependency on a
@@ -84,6 +95,10 @@ function cleanEvent(event: Record<string, unknown>): Record<string, unknown> {
 	for (const key of TEXT_FIELDS) {
 		if (key in out) out[key] = cleanText(out[key]);
 	}
+	// A foreign currency on a South East Queensland listing is the source's
+	// markup being wrong, not a real price. See normaliseCurrency.
+	if ("cost" in out)
+		out.cost = normaliseCurrency(out.cost, COST_LOCALE.currency);
 	for (const key of URL_FIELDS) {
 		if (key in out) out[key] = cleanUrl(out[key]);
 	}
@@ -262,6 +277,7 @@ function writeJson(
 		city_key: CITY,
 		week_start: toISODate(monday),
 		week_end: toISODate(sunday),
+		...COST_LOCALE,
 		generated_at: toISODate(new Date()),
 		events,
 	};

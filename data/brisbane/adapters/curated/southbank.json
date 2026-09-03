@@ -536,8 +536,8 @@
     },
     {
       "title": "Brisbane's Biggest Steak Frites",
-      "datetime": "Thu 3 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-03T17:00:00",
+      "datetime": "Fri 4 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-04T17:00:00",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/brisbanes-biggest-steak-frites",
@@ -702,7 +702,7 @@
       "category": "Concert / Music",
       "tags": [
         "theatre",
-        "play",
+        "drama",
         "performance"
       ],
       "social": false,
@@ -875,7 +875,7 @@
       "source": "Visit South Bank (South Bank Parklands)",
       "description": "",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Community / Other",
       "tags": [
         "festival",
         "fireworks",
@@ -895,13 +895,13 @@
       "link": "https://www.visitsouthbank.com.au/events/sunday-social",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Sunday Social is a social event held at South Bank Parklands.",
+      "description": "Sunday Social is a Social / Meetup event at South Bank Parklands.",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "social",
-        "community",
-        "gathering"
+        "weekend",
+        "community"
       ],
       "social": true,
       "intellectual": false,
@@ -917,13 +917,13 @@
       "link": "https://www.visitsouthbank.com.au/events/south-bank-guided-tours",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "South Bank Guided Tours is a public lecture event held at South Bank Parklands.",
+      "description": "South Bank Guided Tours is a Public Lecture event at South Bank Parklands.",
       "image": "",
       "category": "Public Lecture",
       "tags": [
         "history",
-        "tour",
-        "walking"
+        "walking",
+        "tour"
       ],
       "social": false,
       "intellectual": true,
@@ -939,13 +939,13 @@
       "link": "https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Croc! Lost Giants to Living Legends is an arts and exhibition event held at South Bank Parklands.",
+      "description": "Croc! Lost Giants to Living Legends is an Arts / Exhibition event at South Bank Parklands.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "exhibition",
         "nature",
-        "history"
+        "wildlife"
       ],
       "social": false,
       "intellectual": true,

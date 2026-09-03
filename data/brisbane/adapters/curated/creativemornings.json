@@ -8,14 +8,14 @@
   "events": [
     {
       "title": "Make a Map FieldTrip",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "datetime": "Tue 8 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-08T14:00:00",
       "datetime_end_iso": "",
       "location": "Creative Mornings Brisbane",
       "link": "https://creativemornings.com/talks/make-a-map-fieldtrip-845aee84-7265-4ebf-8d6c-fed12a2086b2",
       "cost": "See link",
       "source": "Creative Mornings Brisbane",
-      "description": "A workshop on mapping held at Creative Mornings Brisbane.",
+      "description": "The Make a Map FieldTrip at Creative Mornings Brisbane is a workshop / class event.",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
@@ -30,20 +30,20 @@
     },
     {
       "title": "LEVEL UP: How to Turn Every Setback into Your Next Advantage",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
+      "datetime": "Wed 9 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-09T11:00:00",
       "datetime_end_iso": "",
       "location": "Creative Mornings Brisbane",
       "link": "https://creativemornings.com/talks/level-up-losing-forward-how-to-turn-every-setback-into-your-next-advantage",
       "cost": "See link",
       "source": "Creative Mornings Brisbane",
-      "description": "A public lecture on turning setbacks into advantages held at Creative Mornings Brisbane.",
+      "description": "LEVEL UP: How to Turn Every Setback into Your Next Advantage at Creative Mornings Brisbane is a public lecture event.",
       "image": "",
       "category": "Public Lecture",
       "tags": [
-        "business",
+        "professional",
         "growth",
-        "mindset"
+        "business"
       ],
       "social": false,
       "intellectual": true,
@@ -51,46 +51,24 @@
       "creative": false
     },
     {
-      "title": "Feel it, Write it.",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
+      "title": "LEVEL UP: The Networking Playbook",
+      "datetime": "Thu 10 Sep, 12:30 PM",
+      "datetime_iso": "2026-09-10T12:30:00",
       "datetime_end_iso": "",
       "location": "Creative Mornings Brisbane",
-      "link": "https://creativemornings.com/talks/feel-it-write-it-c6aea832-3903-4f2b-a7c1-0dc5acd12b17",
+      "link": "https://creativemornings.com/talks/level-up-the-networking-playbook",
       "cost": "See link",
       "source": "Creative Mornings Brisbane",
-      "description": "A creative writing workshop held at Creative Mornings Brisbane.",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "writing",
-        "creative",
-        "expression"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "☀️ The World Wide Wander 2026: Walk Your Way to Insight, Ideas and Intention",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
-      "datetime_end_iso": "",
-      "location": "Creative Mornings Brisbane",
-      "link": "https://creativemornings.com/talks/the-world-wide-wander-2026-walk-your-way-to-insight-ideas-and-intention",
-      "cost": "See link",
-      "source": "Creative Mornings Brisbane",
-      "description": "A social meetup focused on walking and insight held at Creative Mornings Brisbane.",
+      "description": "LEVEL UP: The Networking Playbook at Creative Mornings Brisbane is a social / meetup event.",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
-        "walking",
-        "mindfulness",
-        "community"
+        "networking",
+        "business",
+        "professional"
       ],
       "social": true,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": false,
       "creative": false
     }

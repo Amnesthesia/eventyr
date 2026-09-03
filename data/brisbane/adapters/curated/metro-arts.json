@@ -8,8 +8,8 @@
   "events": [
     {
       "title": "Shandy",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
+      "datetime": "Fri 4 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-04T20:00:00",
       "datetime_end_iso": "",
       "location": "Metro Arts, Brisbane City",
       "link": "https://metroarts.com.au/event/shandy/",
@@ -23,7 +23,7 @@
         "performance",
         "arts"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -96,8 +96,8 @@
     },
     {
       "title": "Shandy",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
+      "datetime": "Fri 4 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-04T20:00:00",
       "datetime_end_iso": "",
       "location": "Metro Arts, Brisbane City",
       "link": "https://metroarts.com.au/event/shandy/",
@@ -111,7 +111,7 @@
         "performance",
         "arts"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -123,7 +123,7 @@
       "datetime_end_iso": "2026-09-25",
       "location": "Metro Arts, Brisbane City",
       "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
-      "cost": "FREE",
+      "cost": "See link",
       "source": "Metro Arts",
       "description": "FREE community events and workshops for actors to flex their muscles and meet other creatives. Facilitated by Imperfect Creatives and supported by Metro Arts",
       "image": "",
@@ -139,9 +139,53 @@
       "creative": true
     },
     {
+      "title": "Choral Cthonics",
+      "datetime": "Thu 27 Aug",
+      "datetime_iso": "2026-08-27",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A hum in the dark.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "experimental",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Kuweni Dias Mendis & Grant x Wilkes: (In)Sight",
+      "datetime": "Thu 27 Aug",
+      "datetime_iso": "2026-08-27",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/exhibition/insight/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "Step into the shadows.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "visual",
+        "arts",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Shandy",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
+      "datetime": "Fri 4 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-04T20:00:00",
       "datetime_end_iso": "",
       "location": "Metro Arts, Brisbane City",
       "link": "https://metroarts.com.au/event/shandy/",
@@ -155,7 +199,7 @@
         "performance",
         "arts"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true

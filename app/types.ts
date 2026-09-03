@@ -50,5 +50,12 @@ export interface CityData {
 	week_start: string;
 	week_end: string;
 	generated_at: string;
+	/** How this city's prices are written; curate copies these from
+	 * sources/{city}.yml. Absent on older data, which falls back to
+	 * DEFAULT_COST_LOCALE. */
+	locale?: string;
+	currency?: string;
+	/** IANA zone the naive event times are in; used for schema.org offsets. */
+	timezone?: string;
 	events: Event[];
 }

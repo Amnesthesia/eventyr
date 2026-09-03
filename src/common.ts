@@ -22,11 +22,14 @@ export {
 	CATEGORIES,
 	CATEGORY_EMOJI,
 	type Category,
+	type CostLocale,
+	DEFAULT_COST_LOCALE,
 	eventHash,
 	eventPath,
 	eventSlug,
 	isLikelyImageUrl,
 	KEY_TO_SLUG,
+	normaliseCurrency,
 	normaliseText,
 	SITE_URL,
 	slugify,
@@ -119,6 +122,13 @@ export interface CityConfig {
 	 * every event is kept, so an unconfigured city degrades rather than breaks.
 	 */
 	centre?: { lat: number; lng: number; radiusKm: number };
+	/**
+	 * How this city's prices are written. Defaults to en-AU/AUD
+	 * (DEFAULT_COST_LOCALE); a city outside Australia has to set both, and
+	 * curate copies them into data/{city}.json for the browser.
+	 */
+	locale?: string;
+	currency?: string;
 	sources: Record<SourceTier, SourceEntry[]>;
 }
 

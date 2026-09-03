@@ -4,6 +4,14 @@ import "@react/styles.css";
 import type { CityData } from "@react/types";
 import { KEY_TO_SLUG } from "@react/utils/citySlug";
 import { catToSlug, catShortName } from "@react/utils/categorySlug";
+import {
+	costLabel,
+	DEFAULT_COST_LOCALE,
+	eventPath,
+	isLikelyImageUrl,
+	isoWithOffset,
+	stripForDisplay,
+} from "../shared.ts";
 
 interface Props {
 	cityData: CityData;
@@ -44,6 +52,35 @@ const {
 const BASE_URL = "https://www.dothings.lol";
 
 const cityUrl = canonical ?? (categorySlug ? `${BASE_URL}/${slug}/${categorySlug}` : `${BASE_URL}/${slug}`);
+const cityName = cityData.city.split(",")[0];
+/** Per-city RSS, so a reader (and a crawler) can discover the feed from any
+ * page of that city rather than only by guessing the URL. */
+const feedUrl = `${BASE_URL}/${slug}/feed.xml`;
+
+/** "3–13 Sep" — a freshness signal in the description, and the thing a reader
+ * actually wants to know from a search result. Hand-formatted rather than via
+ * toLocaleDateString: ICU differs between builds ("Sep" vs "Sept") and this
+ * string is rendered into committed HTML. */
+const MONTHS_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function shortDate(iso: string): string {
+	const d = new Date(`${iso}T00:00:00Z`);
+	if (Number.isNaN(d.getTime())) return "";
+	return `${d.getUTCDate()} ${MONTHS_SHORT[d.getUTCMonth()]}`;
+}
+// Derived from the events, not from week_start/week_end. Those describe the
+// digest week — "31 Aug – 6 Sep" on a page built on 3 September, advertising
+// dates already in the past. The build date through the last event's date is
+// what the page actually covers, and it is stable for the life of the build.
+const eventDates = cityData.events
+	.map((e: { datetime_iso?: string }) => (e.datetime_iso ?? "").slice(0, 10))
+	.filter(Boolean)
+	.sort();
+const coverageFrom = cityData.generated_at || cityData.week_start;
+const coverageTo = eventDates[eventDates.length - 1] || cityData.week_end;
+const coverage =
+	coverageFrom && coverageTo && coverageFrom <= coverageTo
+		? [coverageFrom, coverageTo].map(shortDate).filter(Boolean).join(" – ")
+		: "";
 
 const ogTitle = titleOverride
 	? `${titleOverride} — dothings.lol`
@@ -51,11 +88,14 @@ const ogTitle = titleOverride
 	? `${catShortName(categoryLabel)} events in ${cityData.city} this week — dothings.lol`
 	: `Things to do in ${cityData.city} this week — dothings.lol`;
 
+// Kept under ~155 characters so Google shows the whole thing rather than
+// truncating mid-sentence, and front-loaded with the count, the city and the
+// dates — the three facts that decide whether the result gets clicked.
 const desc = descriptionOverride
 	? descriptionOverride
 	: categoryLabel
-	? `${cityData.events.length} ${catShortName(categoryLabel).toLowerCase()} events in ${cityData.city} this week. AI-curated and ranked from local sources.`
-	: `${cityData.events.length} curated events in ${cityData.city} this week — workshops, live music, talks, markets, art and more. AI-curated from dozens of local sources.`;
+	? `${cityData.events.length} ${catShortName(categoryLabel).toLowerCase()} events in ${cityName}${coverage ? `, ${coverage}` : ""}. Curated and ranked from local sources, updated weekly.`
+	: `${cityData.events.length} things to do in ${cityName}${coverage ? `, ${coverage}` : ""} — live music, workshops, markets, talks and art. Curated weekly from local sources.`;
 
 const availableCategories = (cityCategories ??
 	[...new Set(cityData.events.map((e: { category: string }) => e.category))])
@@ -63,28 +103,86 @@ const availableCategories = (cityCategories ??
 	.filter((c) => c.catSlug)
 	.sort((a, b) => a.label.localeCompare(b.label));
 
+const timezone = cityData.timezone ?? "Australia/Brisbane";
+const costLocale = {
+	locale: cityData.locale ?? DEFAULT_COST_LOCALE.locale,
+	currency: cityData.currency ?? DEFAULT_COST_LOCALE.currency,
+};
+
+const listed = cityData.events.slice(0, 20);
 const schema = {
 	"@context": "https://schema.org",
 	"@type": "ItemList",
-	name: `Events in ${cityData.city} this week`,
-	itemListElement: cityData.events.slice(0, 20).map((event, index) => ({
+	name: `Events in ${cityData.city}${coverage ? `, ${coverage}` : ""}`,
+	numberOfItems: listed.length,
+	itemListElement: listed.map((event, index) => ({
 		"@type": "ListItem",
 		position: index + 1,
 		item: {
 			"@type": "Event",
-			name: event.title,
-			description: event.description,
-			startDate: event.datetime_iso,
-			endDate: event.datetime_end_iso || undefined,
-			location: { "@type": "Place", name: event.location },
-			url: event.link || undefined,
+			name: stripForDisplay(event.title),
+			description: stripForDisplay(event.description) || undefined,
+			// With the city's UTC offset: a bare "2026-09-05T19:30:00" is
+			// ambiguous and a crawler may read it as UTC, which moves a 7:30pm
+			// gig to 5:30am the next day in a rich result.
+			startDate: isoWithOffset(event.datetime_iso, timezone),
+			endDate: isoWithOffset(event.datetime_end_iso, timezone),
+			// Google's Event rich results want an address, not just a venue name.
+			location: event.location
+				? {
+						"@type": "Place",
+						name: event.location,
+						address: {
+							"@type": "PostalAddress",
+							addressLocality: cityName,
+							addressRegion: "QLD",
+							addressCountry: "AU",
+						},
+					}
+				: undefined,
+			image: isLikelyImageUrl(event.image) ? event.image : undefined,
+			// Our own page for the event, not the source's: it is canonical, it
+			// always exists, and it links the list to pages we publish.
+			url: `${BASE_URL}${eventPath(cityData.city_key, event)}`,
 			eventStatus: "https://schema.org/EventScheduled",
-			organizer: { "@type": "Organization", name: event.source },
-			offers: event.cost
-				? { "@type": "Offer", description: event.cost }
+			eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+			organizer: event.source
+				? { "@type": "Organization", name: event.source }
+				: undefined,
+			offers: costLabel(event.cost, costLocale)
+				? {
+						"@type": "Offer",
+						description: costLabel(event.cost, costLocale),
+						priceCurrency: costLocale.currency,
+						availability: "https://schema.org/InStock",
+						url: `${BASE_URL}${eventPath(cityData.city_key, event)}`,
+					}
 				: undefined,
 		},
 	})),
+};
+
+/** SERP breadcrumbs, and it tells Google the site's shape. */
+const breadcrumbs = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	itemListElement: [
+		{ "@type": "ListItem", position: 1, name: "do things", item: `${BASE_URL}/` },
+		{ "@type": "ListItem", position: 2, name: cityName, item: `${BASE_URL}/${slug}` },
+		...(categoryLabel && categorySlug
+			? [
+					{
+						"@type": "ListItem",
+						position: 3,
+						name: catShortName(categoryLabel),
+						item: `${BASE_URL}/${slug}/${categorySlug}`,
+					},
+				]
+			: []),
+		...(titleOverride
+			? [{ "@type": "ListItem", position: 3, name: titleOverride, item: cityUrl }]
+			: []),
+	],
 };
 
 const websiteSchema = {
@@ -95,12 +193,12 @@ const websiteSchema = {
 	description:
 		"Weekly curated events guide for Brisbane, Gold Coast and Sunshine Coast",
 	keywords:
-		"Brisbane events, Gold Coast events, Sunshine Coast events, Goldie, Sunny Coast, AI-curated events, Claude, Gemini, Perplexity, ChatGPT",
+		"Brisbane events, Gold Coast events, Sunshine Coast events, Goldie, Sunny Coast, AI-curated events, Claude, Gemini, Perplexity, ChatGPT, Things to do in Brisbane, Things to do on the Gold Coast, Things to do on the Sunshine Coast, What's on in Brisbane, What's on on the Gold Coast, What's on on the Sunshine Coast, South East Queensland events, SEQ events",
 };
 ---
 
 <!doctype html>
-<html lang="en" data-theme="auto">
+<html lang="en-AU" data-theme="auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -108,11 +206,21 @@ const websiteSchema = {
     <meta name="description" content={desc} />
     <meta
       name="keywords"
-      content="events Brisbane, things to do Brisbane, BNE events, events Gold Coast, Goldie events, Gold Coast this weekend, events Sunshine Coast, Sunny Coast events, Noosa events, Maroochydore events, Caloundra events, SEQ events, South East Queensland events, AI events guide, Claude AI, Gemini, Perplexity, ChatGPT, OpenAI, AI-curated events"
+      content={`things to do in ${cityName}, ${cityName} events, what's on ${cityName}, events this week`}
+
+    <!--
+      max-image-preview:large is the one that matters: without it Google shows
+      a thumbnail or nothing for these pages, and the event images are the
+      reason to click. The -1s remove Google's own length caps on snippets and
+      video previews rather than accepting the defaults.
+    -->
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
-    <meta name="robots" content="index, follow" />
     <link rel="canonical" href={cityUrl} />
     <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="do things" />
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={desc} />
     <meta property="og:url" content={cityUrl} />
@@ -120,6 +228,13 @@ const websiteSchema = {
       property="og:image"
       content={ogImage ?? `${BASE_URL}/dothings-preview-dark.png`}
     />
+    <!-- Dimensions let a scraper lay the card out before the image loads, and
+         some (Slack, LinkedIn) skip an image with no declared size. Only for
+         our own card, whose size we know — an event's hotlinked image could be
+         anything. -->
+    {!ogImage && <meta property="og:image:width" content="1200" />}
+    {!ogImage && <meta property="og:image:height" content="630" />}
+    <meta property="og:image:alt" content={ogTitle} />
     <meta property="og:locale" content="en_AU" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={ogTitle} />
@@ -128,7 +243,18 @@ const websiteSchema = {
       name="twitter:image"
       content={ogImage ?? `${BASE_URL}/dothings-preview.jpg`}
     />
-    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="twitter:image:alt" content={ogTitle} />
+    <!-- Was #1a1a2e, a colour that appears nowhere in the palette. These are
+         --bg for each scheme, so the browser chrome matches the page. -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`Events in ${cityName} — dothings.lol`}
+      href={feedUrl}
+    />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/favicon.ico" />
     <script type="application/ld+json" set:html={JSON.stringify(schemaOverride ?? schema)} />
@@ -136,6 +262,7 @@ const websiteSchema = {
       type="application/ld+json"
       set:html={JSON.stringify(websiteSchema)}
     />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
     <script
       src="https://app.rybbit.io/api/script.js"
       data-site-id="0f3ec51f30bf"
@@ -160,6 +287,14 @@ const websiteSchema = {
     <script is:inline>
       const t = localStorage.getItem("theme");
       if (t) document.documentElement.setAttribute("data-theme", t);
+      // Both of these run BEFORE the body paints, which is the whole point.
+      // The intro used to be hidden by React in a useEffect — i.e. after
+      // hydration — so a returning visitor saw it render and then vanish.
+      // Moving the decision here removes the flicker; a cookie would not have,
+      // because document.cookie is read from JS at the same late moment
+      // localStorage is. Blocking and inline is what makes it early.
+      if (localStorage.getItem("hideCityIntro") === "true")
+        document.documentElement.classList.add("intro-hidden");
     </script>
   </head>
   <body>

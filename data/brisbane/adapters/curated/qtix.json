@@ -86,7 +86,7 @@
       "category": "Concert / Music",
       "tags": [
         "orchestra",
-        "singer-songwriter",
+        "singer",
         "symphony"
       ],
       "social": false,
@@ -108,8 +108,8 @@
       "category": "Concert / Music",
       "tags": [
         "opera",
-        "theatre",
-        "classical"
+        "classical",
+        "theatre"
       ],
       "social": false,
       "intellectual": false,
@@ -155,7 +155,7 @@
         "opera",
         "fusion"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -177,10 +177,32 @@
         "nature",
         "wildlife"
       ],
-      "social": false,
+      "social": true,
       "intellectual": true,
       "hands_on": true,
       "creative": false
+    },
+    {
+      "title": "Death of a Salesman",
+      "datetime": "Thu 3 Sep",
+      "datetime_iso": "2026-09-03",
+      "datetime_end_iso": "2026-09-06",
+      "location": "Lyric Theatre, QPAC",
+      "link": "https://www.qtix.com.au/whats-on/2026/death-of-a-salesman/",
+      "cost": "See link",
+      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
+      "description": "Emmy, Golden Globe and Tony Award-winner Anthony LaPaglia stars in Arthur Miller’s critically acclaimed production, Death of a Salesman.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "theatre",
+        "drama",
+        "classic"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     },
     {
       "title": "Strong is the New Pretty",
@@ -193,11 +215,11 @@
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
       "description": "Experience a nail-biting showdown and an inspiring story of determination, legacy and pride.",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Community / Other",
       "tags": [
         "theatre",
         "performance",
-        "storytelling"
+        "drama"
       ],
       "social": false,
       "intellectual": false,
@@ -206,8 +228,8 @@
     },
     {
       "title": "THE BOOK OF MORMON",
-      "datetime": "Thu 3 Sep, 12:39 PM",
-      "datetime_iso": "2026-09-03T12:39:00",
+      "datetime": "Thu 3 Sep, 7:33 PM",
+      "datetime_iso": "2026-09-03T19:33:00",
       "datetime_end_iso": "",
       "location": "Glasshouse Theatre, QPAC",
       "link": "https://www.qtix.com.au/whats-on/2026/the-book-of-mormon/",
@@ -240,8 +262,8 @@
       "category": "Concert / Music",
       "tags": [
         "opera",
-        "theatre",
-        "classical"
+        "classical",
+        "theatre"
       ],
       "social": false,
       "intellectual": false,
@@ -265,7 +287,7 @@
         "theatre",
         "showcase"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -309,7 +331,7 @@
         "opera",
         "fusion"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -325,11 +347,11 @@
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
       "description": "RocKwiz returns to QPAC for a special night of unique entertainment with a tailor made Brisbane show!",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Social / Meetup",
       "tags": [
         "quiz",
         "entertainment",
-        "comedy"
+        "music"
       ],
       "social": true,
       "intellectual": false,
@@ -353,7 +375,7 @@
         "student",
         "performance"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -364,7 +386,7 @@
       "datetime_iso": "2026-09-03",
       "datetime_end_iso": "2026-09-26",
       "location": "Magic Mirrors Spiegeltent, Verso Projects. Festival Village, South Bank",
-      "link": "https://www.qtix.com.au/whats-on/2026/bf-the-choir-of-man/",
+      "link": "https://www.qtix.com.au/whats-on/2026/bf-the-choir-man/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
       "description": "Direct from London’s West End, sensational singers deliver stunning harmonies and hit-filled singalongs from Queen to Katy Perry.",
@@ -372,10 +394,10 @@
       "category": "Concert / Music",
       "tags": [
         "choir",
-        "harmony",
+        "singalong",
         "pop"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -394,10 +416,10 @@
       "category": "Concert / Music",
       "tags": [
         "opera",
-        "showcase",
-        "vocal"
+        "vocal",
+        "showcase"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -415,9 +437,9 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "horn",
-        "ensemble",
-        "classical"
+        "classical",
+        "brass",
+        "ensemble"
       ],
       "social": false,
       "intellectual": false,
@@ -425,7 +447,7 @@
       "creative": true
     },
     {
-      "title": "QTIX Exclusive Offer Night at The Parkland",
+      "title": "Night at The Parkland",
       "datetime": "Fri 11 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-20",
@@ -438,7 +460,7 @@
       "category": "Concert / Music",
       "tags": [
         "outdoor",
-        "music",
+        "pop",
         "festival"
       ],
       "social": true,
@@ -504,7 +526,7 @@
       "category": "Concert / Music",
       "tags": [
         "orchestra",
-        "singer-songwriter",
+        "singer",
         "symphony"
       ],
       "social": false,
@@ -548,8 +570,8 @@
       "category": "Concert / Music",
       "tags": [
         "chamber",
-        "strings",
-        "classical"
+        "classical",
+        "strings"
       ],
       "social": false,
       "intellectual": false,
@@ -579,7 +601,7 @@
       "creative": true
     },
     {
-      "title": "Maestro 6: La Mer",
+      "title": "Queensland Symphony Orchestra Maestro 6: La Mer",
       "datetime": "Fri 4 Sep, 7:30 PM",
       "datetime_iso": "2026-09-04T19:30:00",
       "datetime_end_iso": "",
@@ -601,7 +623,7 @@
       "creative": true
     },
     {
-      "title": "Morning Masterworks 4: La Mer",
+      "title": "Queensland Symphony Orchestra Morning Masterworks 4: La Mer",
       "datetime": "Fri 4 Sep, 11:30 AM",
       "datetime_iso": "2026-09-04T11:30:00",
       "datetime_end_iso": "",
@@ -636,7 +658,7 @@
       "category": "Concert / Music",
       "tags": [
         "orchestra",
-        "singer-songwriter",
+        "singer",
         "symphony"
       ],
       "social": false,
@@ -658,8 +680,8 @@
       "category": "Concert / Music",
       "tags": [
         "opera",
-        "theatre",
-        "classical"
+        "classical",
+        "theatre"
       ],
       "social": false,
       "intellectual": false,
@@ -705,7 +727,7 @@
         "opera",
         "fusion"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -727,10 +749,32 @@
         "nature",
         "wildlife"
       ],
-      "social": false,
+      "social": true,
       "intellectual": true,
       "hands_on": true,
       "creative": false
+    },
+    {
+      "title": "Death of a Salesman",
+      "datetime": "Thu 3 Sep",
+      "datetime_iso": "2026-09-03",
+      "datetime_end_iso": "2026-09-06",
+      "location": "Lyric Theatre, QPAC",
+      "link": "https://www.qtix.com.au/whats-on/2026/death-of-a-salesman/",
+      "cost": "See link",
+      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
+      "description": "Emmy, Golden Globe and Tony Award-winner Anthony LaPaglia stars in Arthur Miller’s critically acclaimed production, Death of a Salesman.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "theatre",
+        "drama",
+        "classic"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     },
     {
       "title": "Strong is the New Pretty",
@@ -743,11 +787,11 @@
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
       "description": "Experience a nail-biting showdown and an inspiring story of determination, legacy and pride.",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Community / Other",
       "tags": [
         "theatre",
         "performance",
-        "storytelling"
+        "drama"
       ],
       "social": false,
       "intellectual": false,
@@ -756,8 +800,8 @@
     },
     {
       "title": "THE BOOK OF MORMON",
-      "datetime": "Thu 3 Sep, 12:40 PM",
-      "datetime_iso": "2026-09-03T12:40:00",
+      "datetime": "Thu 3 Sep, 7:33 PM",
+      "datetime_iso": "2026-09-03T19:33:00",
       "datetime_end_iso": "",
       "location": "Glasshouse Theatre, QPAC",
       "link": "https://www.qtix.com.au/whats-on/2026/the-book-of-mormon/",
@@ -790,8 +834,8 @@
       "category": "Concert / Music",
       "tags": [
         "opera",
-        "theatre",
-        "classical"
+        "classical",
+        "theatre"
       ],
       "social": false,
       "intellectual": false,
@@ -815,7 +859,7 @@
         "theatre",
         "showcase"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -857,7 +901,7 @@
       "tags": [
         "country",
         "opera",
-        "fusion"
+        "festival"
       ],
       "social": false,
       "intellectual": false,
@@ -877,9 +921,9 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "music",
         "quiz",
-        "entertainment",
-        "comedy"
+        "entertainment"
       ],
       "social": true,
       "intellectual": false,
@@ -901,8 +945,7 @@
       "tags": [
         "jazz",
         "student",
-        "performance",
-        "music"
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -915,17 +958,16 @@
       "datetime_iso": "2026-09-03",
       "datetime_end_iso": "2026-09-26",
       "location": "Magic Mirrors Spiegeltent, Verso Projects. Festival Village, South Bank",
-      "link": "https://www.qtix.com.au/whats-on/2026/bf-the-choir-of-man/",
+      "link": "https://www.qtix.com.au/whats-on/2026/bf-the-choir-man/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
       "description": "Direct from London’s West End, sensational singers deliver stunning harmonies and hit-filled singalongs from Queen to Katy Perry.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "musical",
-        "singalong",
-        "performance",
-        "theatre"
+        "singing",
+        "harmony",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -947,8 +989,7 @@
       "tags": [
         "opera",
         "vocal",
-        "performance",
-        "classical"
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -968,10 +1009,9 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "horn",
+        "horns",
         "ensemble",
-        "classical",
-        "music"
+        "classical"
       ],
       "social": false,
       "intellectual": false,
@@ -979,7 +1019,7 @@
       "creative": true
     },
     {
-      "title": "QTIX Exclusive Offer Night at The Parkland",
+      "title": "Night at The Parkland",
       "datetime": "Fri 11 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-20",
@@ -991,7 +1031,6 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "festival",
         "live",
         "music",
         "outdoor"
@@ -1016,8 +1055,7 @@
       "tags": [
         "orchestra",
         "classical",
-        "symphony",
-        "debussy"
+        "symphony"
       ],
       "social": false,
       "intellectual": false,
@@ -1039,8 +1077,7 @@
       "tags": [
         "orchestra",
         "classical",
-        "symphony",
-        "morning"
+        "symphony"
       ],
       "social": false,
       "intellectual": false,
@@ -1061,9 +1098,8 @@
       "category": "Concert / Music",
       "tags": [
         "orchestra",
-        "singer",
-        "classical",
-        "performance"
+        "symphony",
+        "classical"
       ],
       "social": false,
       "intellectual": false,
@@ -1085,8 +1121,7 @@
       "tags": [
         "meditative",
         "classical",
-        "performance",
-        "music"
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -1108,8 +1143,7 @@
       "tags": [
         "chamber",
         "strings",
-        "piano",
-        "classical"
+        "piano"
       ],
       "social": false,
       "intellectual": false,
@@ -1118,8 +1152,8 @@
     },
     {
       "title": "THE BOOK OF MORMON",
-      "datetime": "Thu 3 Sep, 12:40 PM",
-      "datetime_iso": "2026-09-03T12:40:00",
+      "datetime": "Thu 3 Sep, 7:33 PM",
+      "datetime_iso": "2026-09-03T19:33:00",
       "datetime_end_iso": "",
       "location": "Glasshouse Theatre, QPAC",
       "link": "https://www.qtix.com.au/whats-on/2026/the-book-of-mormon/",
@@ -1131,150 +1165,11 @@
       "tags": [
         "musical",
         "comedy",
-        "theatre",
-        "performance"
+        "theatre"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "ID It! Citizen Science Workshops",
-      "datetime": "Sat 15 Aug",
-      "datetime_iso": "2026-08-15",
-      "datetime_end_iso": "2026-11-07",
-      "location": "Queensland Museum Kurilpa, Brisbane",
-      "link": "https://www.qtix.com.au/whats-on/2026/id-it-citizen-science-workshops/",
-      "cost": "See link",
-      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Join ID It! Citizen science workshops and learn how to confidently identify local wildlife and contribute to meaningful environmental research.",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "science",
-        "wildlife",
-        "nature",
-        "learning"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": true,
-      "creative": false
-    },
-    {
-      "title": "Queens Wharf Brisbane Precinct Public Art Tour",
-      "datetime": "Wed 29 Apr",
-      "datetime_iso": "2026-04-29",
-      "datetime_end_iso": "2026-11-14",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall",
-      "link": "https://www.qtix.com.au/whats-on/2026/mob-queens-wharf-brisbane-precinct-public-art-tour/",
-      "cost": "See link",
-      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Step into Brisbane’s ever-evolving story with this expertly guided walking tour through the Queen’s Wharf Precinct.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "tour",
-        "history",
-        "walking",
-        "art"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Convict Brisbane Walking Tour",
-      "datetime": "Sat 11 Apr",
-      "datetime_iso": "2026-04-11",
-      "datetime_end_iso": "2026-11-21",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall",
-      "link": "https://www.qtix.com.au/whats-on/2026/mob-convict-brisbane-walking-tour/",
-      "cost": "See link",
-      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Explore Brisbane’s colonial history on this guided tour through the city’s convict past.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "tour",
-        "history",
-        "walking",
-        "colonial"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Silversmithing & Jewellery Workshops",
-      "datetime": "Sat 21 Feb",
-      "datetime_iso": "2026-02-21",
-      "datetime_end_iso": "2026-11-11",
-      "location": "Queensland Museum Cobb+Co, Toowoomba",
-      "link": "https://www.qtix.com.au/whats-on/2026/silversmithing-jewellery-workshops-2026/",
-      "cost": "See link",
-      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Explore hands-on silversmithing workshops and jewellery making sessions created especially for teens.",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "jewellery",
-        "craft",
-        "teens",
-        "making"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Textile & Leather Crafts Workshops",
-      "datetime": "Sat 7 Mar",
-      "datetime_iso": "2026-03-07",
-      "datetime_end_iso": "2026-10-24",
-      "location": "Queensland Museum Cobb+Co, Toowoomba",
-      "link": "https://www.qtix.com.au/whats-on/2026/textile-leather-crafts-workshops-2026/",
-      "cost": "See link",
-      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Explore traditional techniques in leatherworking and natural dyeing.",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "textiles",
-        "leather",
-        "craft",
-        "making"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Ekphrastic Writing Club",
-      "datetime": "Sat 2 May",
-      "datetime_iso": "2026-05-02",
-      "datetime_end_iso": "2026-12-05",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall",
-      "link": "https://www.qtix.com.au/whats-on/2026/mob-ekphrastic-writing-club/",
-      "cost": "See link",
-      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Ekphrasis has long been a vital craft tool used by poets, fiction writers, dramatists and essayists as a springboard for creative imaginings.",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "writing",
-        "poetry",
-        "literature",
-        "creative"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": true,
       "creative": true
     }
   ]

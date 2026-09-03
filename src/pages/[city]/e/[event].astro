@@ -9,17 +9,19 @@
 //
 // Deliberately no client:load island: this is one event, so it is plain static
 // HTML and works with JavaScript disabled.
+import { Fragment } from "astro/jsx-runtime";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import Base from "../../../layouts/Base.astro";
-import ShareButton from "@react/components/ShareButton";
-import AddToCalendar from "@react/components/AddToCalendar";
 import type { CityData, CityIndex, Event } from "@react/types";
 import { SLUG_TO_KEY } from "@react/utils/citySlug";
 import { catShortName, catToSlug } from "@react/utils/categorySlug";
 import {
+	costLabel,
+	DEFAULT_COST_LOCALE,
 	eventSlug,
 	isLikelyImageUrl,
+	isoWithOffset,
 	stripForDisplay,
 } from "../../../shared.ts";
 import { VIBE_LABELS, vibesOf } from "@react/utils/vibes";
@@ -53,41 +55,78 @@ const catSlug = catToSlug(event.category);
 // description is often the only place a ticket link appears.
 const title = stripForDisplay(event.title);
 const eventDescription = stripForDisplay(event.description);
+// null when the value names neither a price nor "free"; the row is dropped
+// rather than shown as "Cost — See link".
+const cost = costLabel(event.cost, {
+	locale: cityData.locale ?? DEFAULT_COST_LOCALE.locale,
+	currency: cityData.currency ?? DEFAULT_COST_LOCALE.currency,
+});
 
 // What the recipient of a shared link actually sees. Front-loads the facts
 // they need to decide whether to go: what, when, where.
-const shareDescription = [event.datetime, event.location, event.cost]
-	.filter((part: string) => part && part !== "—")
+const shareDescription = [event.datetime, event.location, cost]
+	.filter((part) => part && part !== "—")
 	.join(" · ");
 const description = [shareDescription, eventDescription]
 	.filter(Boolean)
 	.join(" — ")
 	.slice(0, 300);
 
+// Checked here as well as in curate, so already-published data is fixed
+// without re-running the pipeline. 61 of 139 scraped image URLs were dead —
+// see isLikelyImageUrl for the measurement and the rule.
+const ogImage = isLikelyImageUrl(event.image) ? event.image : undefined;
+
+const timezone = cityData.timezone ?? "Australia/Brisbane";
+const cityName = cityData.city.split(",")[0];
+
 const schema = {
 	"@context": "https://schema.org",
 	"@type": "Event",
 	name: title,
 	description: eventDescription || undefined,
-	startDate: event.datetime_iso || undefined,
-	endDate: event.datetime_end_iso || undefined,
+	// With the city's UTC offset. A bare "2026-09-05T19:30:00" is ambiguous and
+	// a crawler may read it as UTC, putting a 7:30pm gig at 5:30am the next day
+	// in the rich result.
+	startDate: isoWithOffset(event.datetime_iso, timezone),
+	endDate: isoWithOffset(event.datetime_end_iso, timezone),
+	// Google's Event rich results want a postal address, not just a venue
+	// name. The suburb is usually inside event.location, so the locality is the
+	// city and the venue name carries the rest.
 	location: event.location
-		? { "@type": "Place", name: event.location }
+		? {
+				"@type": "Place",
+				name: event.location,
+				address: {
+					"@type": "PostalAddress",
+					streetAddress: event.location,
+					addressLocality: cityName,
+					addressRegion: "QLD",
+					addressCountry: "AU",
+				},
+			}
 		: undefined,
+	image: ogImage ? [ogImage] : undefined,
 	url,
 	eventStatus: "https://schema.org/EventScheduled",
+	eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
 	organizer: event.source
 		? { "@type": "Organization", name: event.source }
 		: undefined,
-	offers: event.cost ? { "@type": "Offer", description: event.cost } : undefined,
+	offers: cost
+		? {
+				"@type": "Offer",
+				description: cost,
+				priceCurrency: cityData.currency ?? DEFAULT_COST_LOCALE.currency,
+				availability: "https://schema.org/InStock",
+				url: event.link || url,
+			}
+		: undefined,
+	isAccessibleForFree: cost === "free" || undefined,
 };
 
 const vibes = vibesOf(event as Event);
 
-// Checked here as well as in curate, so already-published data is fixed
-// without re-running the pipeline. 61 of 139 scraped image URLs were dead —
-// see isLikelyImageUrl for the measurement and the rule.
-const ogImage = isLikelyImageUrl(event.image) ? event.image : undefined;
 ---
 
 <Base
@@ -139,8 +178,12 @@ const ogImage = isLikelyImageUrl(event.image) ? event.image : undefined;
             event.location || "—"
           )}
         </dd>
-        <dt>Cost</dt>
-        <dd>{event.cost || "Not specified"}</dd>
+        {cost && (
+          <Fragment>
+            <dt>Cost</dt>
+            <dd>{cost}</dd>
+          </Fragment>
+        )}
         <dt>Source</dt>
         <dd>{event.source}</dd>
       </dl>
@@ -163,9 +206,36 @@ const ogImage = isLikelyImageUrl(event.image) ? event.image : undefined;
             Event website
           </a>
         )}
-        <AddToCalendar client:visible event={event} cityKey={cityKey} label="Add to calendar" />
-        <ShareButton client:visible event={event} cityKey={cityKey} label="Share" />
+        {/*
+          Plain markup wired by the module script below, NOT React islands.
+          Two client:visible islands here each hydrated their own React root on
+          a page that is otherwise static, which is what produced "Invalid hook
+          call" — and the page never needed React at all.
+
+          The share control stays an anchor to this page's own URL, so with no
+          JavaScript it is still a working link a reader can copy.
+        */}
+        <button type="button" class="filter-btn" data-action="calendar" hidden>
+          Add to calendar
+        </button>
+        <a class="filter-btn" data-action="share" href={url}>Share</a>
       </div>
+
+      <script
+        type="application/json"
+        data-event-json
+        set:html={JSON.stringify({
+          cityKey,
+          event: {
+            title,
+            datetime_iso: event.datetime_iso,
+            datetime_end_iso: event.datetime_end_iso,
+            location: event.location,
+            description: eventDescription,
+            link: event.link,
+          },
+        })}
+      />
 
       <p class="event-back">
         <a href={`/${slug}`}>← Everything on in {cityData.city.split(",")[0]} this week</a>
@@ -173,3 +243,40 @@ const ogImage = isLikelyImageUrl(event.image) ? event.image : undefined;
     </article>
   </main>
 </Base>
+
+<script>
+  // No framework: these two buttons are the only interactive things on the
+  // page, and both helpers are React-free.
+  import { downloadEventIcs, buildEventIcs } from "@react/utils/ics";
+  import { shareEvent } from "@react/utils/share";
+
+  const holder = document.querySelector("[data-event-json]");
+  if (holder?.textContent) {
+    const { event, cityKey } = JSON.parse(holder.textContent);
+
+    const calendar = document.querySelector("[data-action='calendar']");
+    // Revealed only once we know an .ics can actually be produced — an event
+    // with no parsable date would otherwise offer a broken download.
+    if (calendar && buildEventIcs(event, cityKey)) {
+      calendar.hidden = false;
+      calendar.addEventListener("click", () => downloadEventIcs(event, cityKey));
+    }
+
+    const share = document.querySelector("[data-action='share']");
+    share?.addEventListener("click", async (e) => {
+      // Let a modified click open the link normally, as any anchor would.
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      const outcome = await shareEvent(event, cityKey);
+      if (outcome === "copied") {
+        const previous = share.textContent;
+        share.textContent = "Copied";
+        setTimeout(() => {
+          share.textContent = previous;
+        }, 2000);
+      } else if (outcome === "failed") {
+        window.location.href = share.getAttribute("href");
+      }
+    });
+  }
+</script>

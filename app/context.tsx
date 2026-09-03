@@ -7,7 +7,11 @@ import {
 	useMemo,
 	useState,
 } from "react";
-import { TOP_PICK_THRESHOLD } from "../src/shared.ts";
+import {
+	type CostLocale,
+	DEFAULT_COST_LOCALE,
+	TOP_PICK_THRESHOLD,
+} from "../src/shared.ts";
 import { useColorTheme } from "./hooks/useColorTheme";
 import { useStarred } from "./hooks/useStarred";
 import type {
@@ -48,6 +52,8 @@ interface EventsContextValue {
 	setGroupBy: (mode: GroupBy) => void;
 	query: string;
 	setQuery: (query: string) => void;
+	/** Locale and currency for rendering prices, from the city's data file. */
+	costLocale: CostLocale;
 	/** Bounds for the date-range picker. Not the same as weekStart/weekEnd,
 	 * which describe the coverage this digest actually has. */
 	dateMin: string;
@@ -273,6 +279,11 @@ export function EventsProvider({
 	 */
 	const dateMin = cityData?.week_start ?? "";
 
+	const costLocale: CostLocale = {
+		locale: cityData?.locale ?? DEFAULT_COST_LOCALE.locale,
+		currency: cityData?.currency ?? DEFAULT_COST_LOCALE.currency,
+	};
+
 	const [coverageStart, coverageEnd] = useMemo(() => {
 		const dates = (cityData?.events ?? [])
 			.map((e) => (e.datetime_iso ?? "").slice(0, 10))
@@ -312,6 +323,7 @@ export function EventsProvider({
 		setGroupBy,
 		query,
 		setQuery,
+		costLocale,
 		dateMin,
 		dateMax,
 		categories,

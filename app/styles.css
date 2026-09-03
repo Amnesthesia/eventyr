@@ -421,6 +421,14 @@ header {
 	color: var(--muted);
 	line-height: 1.65;
 	margin: 0;
+	cursor: pointer;
+}
+
+/* Set by the blocking inline script in Base.astro's head, so a returning
+   visitor never sees this paint at all. The element stays in the HTML — it is
+   only hidden — which is deliberate: see the note in Intro.tsx. */
+.intro-hidden .city-intro {
+	display: none;
 }
 
 .city-intro a {
@@ -888,8 +896,19 @@ summary:hover .card-desc-toggle {
 	color: var(--cat);
 }
 
+/* Selected: the pill fills with its own hue and the label inverts.
+   `.filter-btn.active` and `.filter-btn[data-cat]` are both specificity
+   (0,2,0), so the later of the two used to win and left a black pill with
+   coloured text on it. These are (0,3,0) and settle it.
+
+   The label is var(--bg) rather than literal white so it inverts with the
+   theme: white on the dark hues in light mode (5.68:1 at worst) and near-black
+   on the light hues in dark mode (7.65:1). Literal white would be 2.2:1 on a
+   dark-mode pill. */
 .filter-btn[data-cat].active {
 	border-color: var(--cat);
+	background: var(--cat);
+	color: var(--bg);
 }
 
 .filter-btn[data-vibe] {
@@ -898,6 +917,8 @@ summary:hover .card-desc-toggle {
 
 .filter-btn[data-vibe].active {
 	border-color: var(--vibe);
+	background: var(--vibe);
+	color: var(--bg);
 }
 
 /* An excluded vibe must not look like a selected one, so the colour goes. */
@@ -978,7 +999,8 @@ summary:hover .card-desc-toggle {
 
 .tag-vibe.active {
 	border-color: var(--vibe);
-	background: color-mix(in srgb, var(--vibe) 18%, transparent);
+	background: var(--vibe);
+	color: var(--bg);
 }
 
 /* ── Fit score ──
@@ -1218,6 +1240,10 @@ summary:hover .card-desc-toggle {
 	   above, so the two can never disagree. */
 	article.card {
 		box-shadow: inset 3px 0 0 var(--cat);
+		/* Suppresses iOS's own long-press callout so it does not stack on top of
+		   the action sheet. Scoped to the width where the gesture is offered, so
+		   desktop link behaviour is untouched. */
+		-webkit-touch-callout: none;
 	}
 }
 
@@ -1241,6 +1267,121 @@ summary:hover .card-desc-toggle {
 	}
 	.filter-bar--cats .filters--date { order: 1; }
 	.filter-bar--cats .filters--cat  { order: 2; }
+}
+
+/* ── Long-press action sheet (mobile) ──
+   A bottom sheet rather than a popover on the card: on a phone the card can
+   be anywhere on screen but the thumb is always at the bottom. */
+.sheet-backdrop {
+	position: fixed;
+	inset: 0;
+	/* Above the date popover's 1000. */
+	z-index: 2000;
+	display: flex;
+	align-items: flex-end;
+	/* The card is position:relative with overflow:hidden, which does not clip a
+	   fixed descendant — but it does mean this must not be positioned
+	   absolutely, or it would be clipped to the card. */
+}
+
+/* Fills the backdrop behind the sheet and dismisses it. */
+.sheet-scrim {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background: rgba(0, 0, 0, 0.45);
+	cursor: pointer;
+}
+
+.sheet {
+	position: relative;
+}
+
+.sheet {
+	width: 100%;
+	background: var(--surface);
+	border-top: 2px solid var(--cat);
+	display: flex;
+	flex-direction: column;
+	/* Clears the home indicator on a notched phone. */
+	padding-bottom: env(safe-area-inset-bottom, 0);
+	animation: sheet-up 0.16s ease-out;
+}
+
+@keyframes sheet-up {
+	from {
+		transform: translateY(100%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.sheet {
+		animation: none;
+	}
+}
+
+.sheet-title {
+	margin: 0;
+	padding: 0.9rem 1rem 0.6rem;
+	font-size: 0.78rem
+	;
+	font-weight: 600;
+	color: var(--muted);
+	border-bottom: 1px solid var(--border);
+	/* One line: the sheet is about the actions, not about re-reading the card. */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.sheet-action {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	width: 100%;
+	/* 44px is the minimum comfortable touch target, and this is a
+	   thumb-operated menu. */
+	min-height: 2.9rem;
+	margin: 0;
+	padding: 0 1rem;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	color: var(--fg);
+	font-size: 0.88rem;
+	font-weight: 500;
+	text-align: left;
+	justify-content: flex-start;
+	cursor: pointer;
+}
+
+.sheet-action + .sheet-action {
+	border-top: 1px solid var(--border);
+}
+
+.sheet-action:active {
+	background: color-mix(in srgb, var(--cat) 12%, var(--surface));
+}
+
+.sheet-action svg {
+	flex-shrink: 0;
+	color: var(--cat);
+}
+
+.sheet-cancel {
+	color: var(--muted);
+	font-weight: 400;
+	justify-content: center;
+}
+
+.sheet-cancel svg {
+	display: none;
 }
 
 /* ── Single event page ──

@@ -74,8 +74,8 @@
     },
     {
       "title": "Yalari Dinner 2026",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-11T18:30:00",
       "datetime_end_iso": "",
       "location": "Brisbane Convention & Exhibition Centre",
       "link": "https://events.humanitix.com/2026-yalari-brisbane-gala-dinner",
@@ -87,7 +87,29 @@
       "tags": [
         "charity",
         "dinner",
-        "fundraiser"
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "AGHA Gifted – Brisbane",
+      "datetime": "Sun 19 Feb, 10:00 AM",
+      "datetime_iso": "2023-02-19T10:00:00",
+      "datetime_end_iso": "2026-10-18",
+      "location": "Brisbane Convention & Exhibition Centre",
+      "link": "https://agha.com.au/gifted-brisbane/",
+      "cost": "See link",
+      "source": "Brisbane Convention & Exhibition Centre",
+      "description": "The AGHA Gifted – Brisbane at Brisbane Convention & Exhibition Centre is a community event.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "retail",
+        "trade",
+        "gifts"
       ],
       "social": true,
       "intellectual": false,

@@ -7,24 +7,24 @@
   "week_end": "2026-09-06",
   "events": [
     {
-      "title": "Tea &#038; Tour: Kirstie Macleod",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "title": "Tea & Tour: Kirstie Macleod",
+      "datetime": "Sat 12 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-12T10:30:00",
       "datetime_end_iso": "",
       "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "The Tea & Tour: Kirstie Macleod event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "description": "Tea & Tour: Kirstie Macleod is an arts exhibition event held at Museum of Brisbane, King George Square (Brisbane City Hall).",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
         "tour",
-        "history"
+        "social"
       ],
       "social": true,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     },
@@ -37,13 +37,13 @@
       "link": "https://www.museumofbrisbane.com.au/whats-on/sachem-parkin-owens/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "The Artist in Residence: Sachém Parkin-Owens event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "description": "Artist in Residence: Sachém Parkin-Owens is an arts exhibition event held at Museum of Brisbane, King George Square (Brisbane City Hall).",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
         "residency",
-        "culture"
+        "creative"
       ],
       "social": false,
       "intellectual": false,
@@ -59,7 +59,7 @@
       "link": "https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "The Stories You Wear: Magpie Goose event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "description": "Stories You Wear: Magpie Goose is an arts exhibition event held at Museum of Brisbane, King George Square (Brisbane City Hall).",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
@@ -68,7 +68,7 @@
         "culture"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     },
@@ -81,13 +81,13 @@
       "link": "https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "The Perspectives of Brisbane event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "description": "Perspectives of Brisbane is an arts exhibition event held at Museum of Brisbane, King George Square (Brisbane City Hall).",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "brisbane",
         "history",
-        "photography"
+        "brisbane",
+        "exhibition"
       ],
       "social": false,
       "intellectual": true,
@@ -96,23 +96,23 @@
     },
     {
       "title": "Tea & Tour: Kirstie Macleod",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-12T10:30:00",
       "datetime_end_iso": "",
-      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
       "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "The Tea & Tour: Kirstie Macleod event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "description": "Tea & Tour: Kirstie Macleod is an arts exhibition event held at Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
         "tour",
-        "history"
+        "social"
       ],
       "social": true,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     }
