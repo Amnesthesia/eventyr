@@ -41,6 +41,14 @@ export function endOfMonth(iso: string): string {
 	);
 }
 
+/** Monday of the week containing `iso`, as YYYY-MM-DD. */
+export function startOfWeek(iso: string): string {
+	const d = new Date(`${iso}T00:00:00`);
+	if (Number.isNaN(d.getTime())) return iso;
+	// getDay: Sunday is 0, so Sunday belongs to the week that started six days ago.
+	return addDays(iso, -((d.getDay() + 6) % 7));
+}
+
 export function todayIso(): string {
 	return localDateStr(0);
 }

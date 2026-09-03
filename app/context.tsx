@@ -26,7 +26,7 @@ import type {
 	VibeKey,
 } from "./types";
 import { KEY_TO_SLUG } from "./utils/citySlug";
-import { endOfMonth, parseEndDate, todayIso } from "./utils/dates";
+import { endOfMonth, parseEndDate, startOfWeek, todayIso } from "./utils/dates";
 import type { GroupBy } from "./utils/grouping";
 import { matchesQuery, queryTokens } from "./utils/search";
 
@@ -339,6 +339,19 @@ export function EventsProvider({
 		];
 	}, [cityData]);
 
+	// The header range never starts before this week's Monday. The earliest
+	// event is an exhibition that opened in February, and "19 Feb – 13 Sep"
+	// on the masthead read as stale rather than as coverage. Falls back to the
+	// digest's own Monday until today is known client-side (see todayStr), so
+	// server and first client render agree.
+	const weekStart = useMemo(() => {
+		const floor = todayStr
+			? startOfWeek(todayStr)
+			: (cityData?.week_start ?? "");
+		const clamped = coverageStart < floor ? floor : coverageStart;
+		return coverageEnd && clamped > coverageEnd ? coverageEnd : clamped;
+	}, [coverageStart, coverageEnd, todayStr, cityData?.week_start]);
+
 	const value: EventsContextValue = {
 		cityData,
 		filtered,
@@ -385,7 +398,7 @@ export function EventsProvider({
 		// and clamping the date picker to the digest week would leave them in
 		// the data but unreachable. Deriving can't desync, and week_start /
 		// week_end keep their existing meaning for the pipeline's cache checks.
-		weekStart: coverageStart,
+		weekStart,
 		weekEnd: coverageEnd,
 		isEventPast,
 	};
