@@ -3,6 +3,7 @@ import { join } from "node:path";
 
 import {
 	DATA_ROOT,
+	eventHash,
 	loadCityConfig,
 	PROJECT_ROOT,
 	requireEnv,
@@ -10,30 +11,98 @@ import {
 
 const CITY = requireEnv("CITY");
 
-function parseDt(
-	s: string,
-): { start: string; end: string; allDay: boolean } | null {
-	if (!s) return null;
+/**
+ * Converts the pipeline's naive Brisbane wall-clock strings into the
+ * YYYYMMDDTHHMMSS stamps a VEVENT carries under `TZID=Australia/Brisbane`.
+ *
+ * Done by string surgery on purpose. The previous version did
+ * `new Date("2026-09-03T19:30:00").toISOString()`, which parses as the HOST's
+ * local time and writes back UTC — an identity only when the host is UTC. On
+ * an Australia/Brisbane machine every timed event came out ten hours early
+ * (a 7:30pm gig published as 9:30am) while CI happened to be right. The
+ * value is already local to `tz`, so it must not be converted at all.
+ */
+/** YYYYMMDD[THHMMSS] stamp from a naive wall-clock string, no conversion. */
+function stamp(value: string): string {
+	return value.replace(/[-:]/g, "");
+}
 
-	// Try datetime formats
-	const dtMatch = s.match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})(:\d{2})?$/);
-	if (dtMatch) {
-		const dt = new Date(s.length === 16 ? `${s}:00` : s);
-		if (Number.isNaN(dt.getTime())) return null;
-		const fmt = (d: Date) => d.toISOString().replace(/[-:]/g, "").slice(0, 15); // YYYYMMDDTHHmmss
-		const start = fmt(dt);
-		const end = fmt(new Date(dt.getTime() + 2 * 60 * 60 * 1000));
-		return { start, end, allDay: false };
+/** Adds days to a YYYY-MM-DD string, in UTC so no host offset creeps in. */
+function addDays(dateOnly: string, days: number): string {
+	const d = new Date(`${dateOnly}T00:00:00Z`);
+	d.setUTCDate(d.getUTCDate() + days);
+	return d.toISOString().slice(0, 10);
+}
+
+/** Adds hours to a naive YYYY-MM-DDTHH:MM:SS string, returning the same shape. */
+function addHours(naive: string, hours: number): string {
+	const d = new Date(`${naive}Z`);
+	d.setUTCHours(d.getUTCHours() + hours);
+	return d.toISOString().slice(0, 19);
+}
+
+const TIMED = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/;
+const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
+
+/**
+ * Converts the pipeline's naive Brisbane wall-clock strings into the stamps a
+ * VEVENT carries under `TZID=<city timezone>`.
+ *
+ * String surgery on purpose. The previous version did
+ * `new Date("2026-09-03T19:30:00").toISOString()`, which parses as the HOST's
+ * local time and writes back UTC — an identity only when the host is UTC. On
+ * an Australia/Brisbane machine every timed event came out ten hours early (a
+ * 7:30pm gig published as 9:30am) while CI happened to be correct. The value
+ * is already local to the TZID, so it must not be converted at all.
+ */
+function parseDt(
+	startIso: string,
+	endIso?: string,
+): { start: string; end: string; allDay: boolean } | null {
+	if (!startIso) return null;
+
+	if (TIMED.test(startIso)) {
+		const startNaive = startIso.length === 16 ? `${startIso}:00` : startIso;
+		// Both collection paths produce datetime_end_iso, and the calendar is
+		// the one consumer where an end time is load-bearing — multi-day runs
+		// were being published as two hours.
+		const endNaive =
+			endIso && TIMED.test(endIso) && endIso > startIso
+				? endIso.length === 16
+					? `${endIso}:00`
+					: endIso
+				: // ponytail: no usable end published, so assume 2h.
+					addHours(startNaive, 2);
+		return { start: stamp(startNaive), end: stamp(endNaive), allDay: false };
 	}
 
-	// Try date-only
-	const dateMatch = s.match(/^(\d{4}-\d{2}-\d{2})$/);
-	if (dateMatch) {
-		const start = s.replace(/-/g, "");
-		return { start, end: start, allDay: true };
+	if (DATE_ONLY.test(startIso)) {
+		// RFC 5545 §3.8.2.2: a VALUE=DATE DTEND is exclusive and must be later
+		// than DTSTART. Emitting start === end made every all-day event
+		// zero-length, which strict parsers drop entirely.
+		const lastDay =
+			endIso && DATE_ONLY.test(endIso) && endIso > startIso ? endIso : startIso;
+		return {
+			start: stamp(startIso),
+			end: stamp(addDays(lastDay, 1)),
+			allDay: true,
+		};
 	}
 
 	return null;
+}
+
+/**
+ * Stable per-event UID. The old `${CITY}-${index}` changed every week because
+ * rank.ts re-sorts by score, so subscribers saw every event rewritten and
+ * stable events change identity. Same basis as the RSS guid.
+ */
+function uidFor(city: string, ev: Record<string, unknown>): string {
+	// The hash lives in shared.ts, so this and rss.ts's guid cannot drift apart
+	// — they used to hold identical copies of it, including the comment about
+	// why the venue is in the basis. The `${city}-` prefix must stay: a changed
+	// UID makes calendar clients re-add every event.
+	return `${city}-${eventHash(city, ev)}`;
 }
 
 function esc(s: string): string {
@@ -59,7 +128,14 @@ function fold(line: string): string {
 
 function main(): void {
 	const cfg = loadCityConfig(CITY);
-	const tz = cfg.timezone ?? "UTC";
+	// No silent "UTC" fallback: that is exactly how every published .ics ended
+	// up stamped TZID=UTC while carrying Brisbane wall-clock times.
+	const tz = cfg.timezone;
+	if (!tz) {
+		throw new Error(
+			`✗ sources/${CITY}.yml declares no timezone. Add e.g. "timezone: Australia/Brisbane" — a wrong timezone silently shifts every event in the calendar.`,
+		);
+	}
 	const cityName = cfg.name;
 
 	const dataPath = join(DATA_ROOT, `${CITY}.json`);
@@ -86,7 +162,10 @@ function main(): void {
 	let count = 0;
 	for (let i = 0; i < events.length; i++) {
 		const ev = events[i];
-		const parsed = parseDt((ev.datetime_iso as string) ?? "");
+		const parsed = parseDt(
+			(ev.datetime_iso as string) ?? "",
+			(ev.datetime_end_iso as string) ?? undefined,
+		);
 		if (!parsed) continue;
 
 		const { start, end, allDay } = parsed;
@@ -94,12 +173,12 @@ function main(): void {
 			? `DTSTART;VALUE=DATE:${start}`
 			: `DTSTART;TZID=${tz}:${start}`;
 		const dtEnd = allDay
-			? `DTEND;VALUE=DATE:${start}`
+			? `DTEND;VALUE=DATE:${end}`
 			: `DTEND;TZID=${tz}:${end}`;
 
 		lines.push(
 			"BEGIN:VEVENT",
-			`UID:${CITY}-${i}@dothings`,
+			`UID:${uidFor(CITY, ev)}@dothings`,
 			dtStart,
 			dtEnd,
 			fold(`SUMMARY:${esc((ev.title as string) ?? "")}`),

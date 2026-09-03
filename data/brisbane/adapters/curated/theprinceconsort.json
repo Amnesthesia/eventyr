@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "theprinceconsort",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "End of Winter Drag Bingo Party! Ft. Shushu Funtanna & Scarlett Fever",
+      "datetime": "Sat 5 Sep",
+      "datetime_iso": "2026-09-05",
+      "datetime_end_iso": "",
+      "location": "The Prince Consort",
+      "link": "https://theprinceconsort.com.au/whats-on/end-of-winter-drag-bingo-party-ft-shushu-funtanna--scarlett-fever.html",
+      "cost": "See link",
+      "source": "The Prince Consort",
+      "description": "Free Drag Bingo event!",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "drag",
+        "bingo",
+        "party",
+        "lgbtq"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

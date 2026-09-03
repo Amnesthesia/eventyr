@@ -1,0 +1,54 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "brisbane-powerhouse",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Tiri: Te Araroa Woman Far Walking",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "2026-09-13",
+      "location": "Brisbane Powerhouse, 119 Lamington St",
+      "link": "https://brisbanepowerhouse.org/events/tiri-te-araroa-woman-far-walking/",
+      "cost": "See link",
+      "source": "Brisbane Powerhouse",
+      "description": "BRISBANE FESTIVAL",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "theatre",
+        "brisbane festival"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Fashion Queensland in Conversation: Fashioning Brisbane: The Future of Fashion and Cultural Identity in our City",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Brisbane Powerhouse, 119 Lamington St",
+      "link": "https://brisbanepowerhouse.org/events/fashion-queensland-in-conversation-2/",
+      "cost": "See link",
+      "source": "Brisbane Powerhouse",
+      "description": "FASHION INFORMATIVE ENTERTAINING",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "fashion",
+        "culture",
+        "conversation"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

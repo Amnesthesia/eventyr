@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "madhattersbookshop",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Junior Book Club (Grades 2, 3, 4) Term Fee",
+      "datetime": "Thu 3 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-03T16:00:00",
+      "datetime_end_iso": "2026-09-03T17:00:00",
+      "location": "The Mad Hatters Bookshop",
+      "link": "https://madhattersbookshop.com.au/p/junior-book-club-grades-2-3-4",
+      "cost": "$30.00 AUD",
+      "source": "The Mad Hatters Bookshop",
+      "description": "Junior Book Club Term FeeTuesdays during school term, 4:00-5:00pm\n----------\nCome along to our Junior Book Club & chat books! Every month, kids chat about books & participate in bookish activities, including craft, puzzles & games.\nThe dates for Term Three are:\n\nTues July 14th\nTues August 11th\nTues September 15th\n\nThis book club is suitable for independent readers in grades 2, 3, 4 with a reading age of 7-9. \n\nThe reading theme for term three is Landscapes: Land, Sky & Sea. The books are available to collect in-store now! You can view the list of books here. \n\nTerm fee is $30/term. It is a requirement to purchase the book club books from us. All JR book club members receive 15% off all reads in their age group.\n\nPlease get in touch if your child is interested in attending!",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "kids",
+        "books",
+        "reading",
+        "craft"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

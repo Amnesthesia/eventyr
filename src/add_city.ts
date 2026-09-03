@@ -1,131 +1,69 @@
+// Creates the two pieces of plumbing a new city needs: a sources/{city}.yml
+// skeleton, and an entry in digest.yml's dispatch options.
+//
+// It deliberately does NOT discover sources. That used to fan out to
+// Anthropic, Perplexity and Google and merge the prose each returned, which
+// discover.ts later measured as worthless — see its header: Claude wrapped its
+// JSON in prose, GPT-5 returned empty output, and neither found anything
+// Google's grounded answer had missed. `pnpm discover-sources` does the same
+// job in twelve narrow niche calls and reaches the long tail a broad "list
+// this city's event sources" question never gets to.
+
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import yaml from "js-yaml";
 import { PROJECT_ROOT, requireEnv, SOURCES_ROOT } from "./common.ts";
-import { AnthropicProvider } from "./providers/anthropic.ts";
-import type { SourceResult } from "./providers/base.ts";
-import { GoogleProvider } from "./providers/google.ts";
-import { OpenAIProvider } from "./providers/openai.ts";
 
 const CITY_NAME = requireEnv("CITY_NAME");
 const CITY_KEY = requireEnv("CITY_KEY");
 
 const DIGEST_WF = join(PROJECT_ROOT, ".github/workflows/digest.yml");
 
-function extractDomain(sourceStr: string): string {
-	const match = sourceStr.match(/\(([^)]+)\)/);
-	if (match) {
-		return match[1]
-			.replace(/^https?:\/\//, "")
-			.replace(/^www\./, "")
-			.split("/")[0]
-			.toLowerCase();
-	}
-	return sourceStr.toLowerCase();
-}
+/** The header comment yaml.dump cannot produce, and the centre placeholder a
+ * new city must fill in before its first curate. */
+const HEADER = `# Event sources for ${CITY_NAME}.
+#
+# Each entry declares how it is collected:
+#   method: scraper — we fetch its listingUrls ourselves (src/adapters/).
+#   method: llm     — no verified listing page, so LLM web search covers it.
+#
+# Every source starts as method: llm. Only probe-sources promotes one, once
+# it has verified a listing URL actually yields dated events.
+#
+# TODO: add this city's centre. Until it is here, curate.ts keeps every event
+# and cannot tell a local one from an interstate one (src/locality.ts).
+# Deliberately not written as a placeholder: coordinates that are present but
+# wrong are worse than absent, since every real venue is then "somewhere else".
+# radiusKm must stay smaller than the distance to the nearest other city in
+# sources/, or the two will swallow each other's events.
+#
+# centre:
+#   lat: -27.4698
+#   lng: 153.0251
+#   radiusKm: 50
+`;
 
-function mergeSources(target: SourceResult, incoming: SourceResult): void {
-	for (const tier of ["aggregators", "institutions", "independents"] as const) {
-		const existing = new Set(target[tier].map(extractDomain));
-		for (const source of incoming[tier]) {
-			const domain = extractDomain(source);
-			if (!existing.has(domain)) {
-				target[tier].push(source);
-				existing.add(domain);
-			}
-		}
-	}
-}
-
-function loadExistingSources(): SourceResult {
-	const outPath = join(SOURCES_ROOT, `${CITY_KEY}.yml`);
-	if (!existsSync(outPath)) {
-		return { aggregators: [], institutions: [], independents: [] };
-	}
-	const data = yaml.load(readFileSync(outPath, "utf-8")) as Record<
-		string,
-		unknown
-	>;
-	const src = (data?.sources ?? {}) as Record<string, string[]>;
-	return {
-		aggregators: [...(src.aggregators ?? [])],
-		institutions: [...(src.institutions ?? [])],
-		independents: [...(src.independents ?? [])],
-	};
-}
-
-async function discoverSources(existing: SourceResult): Promise<SourceResult> {
-	const sources: SourceResult = {
-		aggregators: [...existing.aggregators],
-		institutions: [...existing.institutions],
-		independents: [...existing.independents],
-	};
-
-	const anthropicKey = process.env.ANTHROPIC_API_KEY;
-	const perplexityKey = process.env.PERPLEXITY_API_KEY;
-	const googleKey = process.env.GOOGLE_API_KEY;
-
-	if (!anthropicKey && !perplexityKey && !googleKey) {
-		throw new Error(
-			"✗ No API keys set (need at least one of ANTHROPIC_API_KEY, PERPLEXITY_API_KEY, GOOGLE_API_KEY).",
-		);
-	}
-
-	if (anthropicKey) {
-		mergeSources(
-			sources,
-			await new AnthropicProvider(anthropicKey).findSources(CITY_NAME),
-		);
-	}
-	if (perplexityKey) {
-		mergeSources(
-			sources,
-			await new OpenAIProvider(
-				perplexityKey,
-				"https://api.perplexity.ai",
-				"sonar-pro",
-				"perplexity",
-			).findSources(CITY_NAME),
-		);
-	}
-	if (googleKey) {
-		mergeSources(
-			sources,
-			await new GoogleProvider(googleKey).findSources(CITY_NAME),
-		);
-	}
-
-	for (const tier of ["aggregators", "institutions", "independents"] as const) {
-		const before = existing[tier].length;
-		const after = sources[tier].length;
-		const added = after - before;
-		console.log(
-			`→ ${tier}: ${after} total (${added > 0 ? `+${added} new` : "no new"})`,
-		);
-	}
-	return sources;
-}
-
-function writeCityFile(sources: SourceResult): void {
+function writeCityFile(): boolean {
 	mkdirSync(SOURCES_ROOT, { recursive: true });
 	const outPath = join(SOURCES_ROOT, `${CITY_KEY}.yml`);
+	if (existsSync(outPath)) {
+		console.log(`→ ${outPath} already exists — left untouched.`);
+		return false;
+	}
 
 	const cityData = {
 		name: CITY_NAME,
-		sources: {
-			aggregators: sources.aggregators,
-			institutions: sources.institutions,
-			independents: sources.independents,
-		},
+		timezone: "Australia/Brisbane",
+		sources: { aggregators: [], institutions: [], independents: [] },
 	};
-
 	writeFileSync(
 		outPath,
-		yaml.dump(cityData, { noRefs: true, sortKeys: false }),
+		HEADER + yaml.dump(cityData, { noRefs: true, sortKeys: false }),
 		"utf-8",
 	);
 	console.log(`→ Written ${outPath}`);
+	return true;
 }
 
 function updateDigestWorkflow(): void {
@@ -153,23 +91,28 @@ function updateDigestWorkflow(): void {
 	console.log(`→ Added '${CITY_KEY}' to dispatch options in ${DIGEST_WF}`);
 }
 
-async function main(): Promise<void> {
-	const outPath = join(SOURCES_ROOT, `${CITY_KEY}.yml`);
-	const isUpdate = existsSync(outPath);
-
-	console.log(
-		`${isUpdate ? "Update" : "Add"} City — ${CITY_KEY} (${CITY_NAME})`,
-	);
+function main(): void {
+	console.log(`Add City — ${CITY_KEY} (${CITY_NAME})`);
 	console.log("=".repeat(50));
 
-	const existing = loadExistingSources();
-	const sources = await discoverSources(existing);
-	writeCityFile(sources);
+	const created = writeCityFile();
 	updateDigestWorkflow();
 
+	if (created) {
+		console.log("\nNext:");
+		console.log(
+			`  1. Set the real centre coordinates in sources/${CITY_KEY}.yml`,
+		);
+		console.log(
+			`  2. pnpm discover-sources --city=${CITY_KEY} --apply   # find sources`,
+		);
+		console.log(
+			`  3. pnpm probe-sources --city=${CITY_KEY} --apply      # promote the scrapable ones`,
+		);
+	}
 	console.log(
-		`✓ Done. Commit sources/${CITY_KEY}.yml${!isUpdate ? " and digest.yml" : ""} to complete the setup.`,
+		`✓ Done. Commit sources/${CITY_KEY}.yml${created ? " and digest.yml" : ""}.`,
 	);
 }
 
-await main();
+main();

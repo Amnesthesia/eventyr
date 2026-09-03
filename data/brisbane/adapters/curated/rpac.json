@@ -1,0 +1,54 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "rpac",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Geraldine Hickey - A Weight Off My Chest",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "Redland Performing Arts Centre (RPAC)",
+      "link": "https://rpac.com.au/what-s-on/all-events/geraldine-hickey-a-weight-off-my-chest/",
+      "cost": "See link",
+      "source": "Redland Performing Arts Centre (RPAC)",
+      "description": "This show is like a big warm hug from your favourite (undeniably queer) aunty.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Calamity Jane",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "Redland Performing Arts Centre (RPAC)",
+      "link": "https://rpac.com.au/what-s-on/all-events/calamity-jane/",
+      "cost": "See link",
+      "source": "Redland Performing Arts Centre (RPAC)",
+      "description": "The raucous revival that celebrates the wildest woman in the Wild West.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "theatre",
+        "musical",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

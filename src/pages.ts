@@ -3,18 +3,15 @@ import { join } from "node:path";
 
 import {
 	DATA_ROOT,
+	eventPath,
+	KEY_TO_SLUG,
 	PROJECT_ROOT,
+	SITE_URL,
 	TOP_PICK_THRESHOLD,
 	toISODate,
 } from "./common.ts";
 
-const BASE_URL = "https://www.dothings.lol";
-
-const KEY_TO_SLUG: Record<string, string> = {
-	brisbane: "brisbane",
-	goldcoast: "gold-coast",
-	sunnycoast: "sunshine-coast",
-};
+const BASE_URL = SITE_URL;
 
 const CATEGORY_SLUGS = [
 	"arts",
@@ -25,10 +22,15 @@ const CATEGORY_SLUGS = [
 	"workshops",
 ];
 
-function buildSitemap(
-	cities: Array<{ key: string; generated_at: string }>,
-	today: string,
-): string {
+interface CityMeta {
+	key: string;
+	generated_at: string;
+	/** Every event's own page. Pre-rendered so a shared link unfurls as that
+	 * event rather than as the city (src/pages/[city]/e/[event].astro). */
+	eventPaths: string[];
+}
+
+function buildSitemap(cities: CityMeta[], today: string): string {
 	const urls = [
 		`  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
 		...cities.flatMap((c) => {
@@ -38,7 +40,16 @@ function buildSitemap(
 				(cat) =>
 					`  <url>\n    <loc>${BASE_URL}/${slug}/${cat}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`,
 			);
-			return [cityUrl, ...catUrls];
+			// Lower priority than the city and category pages, and weekly like
+			// them: an event page is a share target first and a search result
+			// second. They are indexable — a hard 404 once the event rolls off is
+			// not a penalty, and GitHub Pages serves a real 404 — but they should
+			// not outrank the pages that are always there.
+			const eventUrls = c.eventPaths.map(
+				(path) =>
+					`  <url>\n    <loc>${BASE_URL}${path}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.5</priority>\n  </url>`,
+			);
+			return [cityUrl, ...catUrls, ...eventUrls];
 		}),
 	];
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
@@ -48,7 +59,7 @@ function main(): void {
 	mkdirSync(DATA_ROOT, { recursive: true });
 
 	const cities: Record<string, unknown>[] = [];
-	const cityMeta: Array<{ key: string; generated_at: string }> = [];
+	const cityMeta: CityMeta[] = [];
 
 	const jsonFiles = readdirSync(DATA_ROOT)
 		.filter(
@@ -78,6 +89,7 @@ function main(): void {
 			cityMeta.push({
 				key: payload.city_key as string,
 				generated_at: (payload.generated_at as string) ?? toISODate(new Date()),
+				eventPaths: events.map((e) => eventPath(payload.city_key as string, e)),
 			});
 		} catch {
 			console.log(`⚠ Skipping ${f} — could not parse`);

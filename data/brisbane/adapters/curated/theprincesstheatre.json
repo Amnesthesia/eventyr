@@ -1,0 +1,142 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "theprincesstheatre",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "MKTO (USA)",
+      "datetime": "Thu 3 Sep",
+      "datetime_iso": "2026-09-03",
+      "datetime_end_iso": "",
+      "location": "The Princess Theatre",
+      "link": "https://theprincesstheatre.com.au/events/mkto",
+      "cost": "Sold Out",
+      "source": "The Princess Theatre",
+      "description": "MKTO perform live at The Princess Theatre as a concert.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "pop",
+        "music",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Ocean Sleeper (AUS)",
+      "datetime": "Sat 5 Sep",
+      "datetime_iso": "2026-09-05",
+      "datetime_end_iso": "",
+      "location": "The Princess Theatre",
+      "link": "https://theprincesstheatre.com.au/events/ocean-sleeper",
+      "cost": "Sold Out",
+      "source": "The Princess Theatre",
+      "description": "With Nevertel (USA), Vana (NZ) & Outloved",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "metalcore",
+        "live",
+        "music"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Stories of Our Land (AUS)",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "The Princess Theatre",
+      "link": "https://theprincesstheatre.com.au/events/stories-of-our-land",
+      "cost": "See link",
+      "source": "The Princess Theatre",
+      "description": "Stories of Our Land is an arts and exhibition event held at The Princess Theatre.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "culture",
+        "history",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "MKTO (USA)",
+      "datetime": "Thu 3 Sep",
+      "datetime_iso": "2026-09-03",
+      "datetime_end_iso": "",
+      "location": "The Princess Theatre",
+      "link": "https://theprincesstheatre.com.au/events/mkto",
+      "cost": "Sold Out",
+      "source": "The Princess Theatre",
+      "description": "MKTO perform live at The Princess Theatre as a concert.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "pop",
+        "music",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Ocean Sleeper (AUS)",
+      "datetime": "Sat 5 Sep",
+      "datetime_iso": "2026-09-05",
+      "datetime_end_iso": "",
+      "location": "The Princess Theatre",
+      "link": "https://theprincesstheatre.com.au/events/ocean-sleeper",
+      "cost": "Sold Out",
+      "source": "The Princess Theatre",
+      "description": "With Nevertel (USA), Vana (NZ) & Outloved",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "metalcore",
+        "live",
+        "music"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Stories of Our Land (AUS)",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "The Princess Theatre",
+      "link": "https://theprincesstheatre.com.au/events/stories-of-our-land",
+      "cost": "See link",
+      "source": "The Princess Theatre",
+      "description": "Stories of Our Land is an arts and exhibition event held at The Princess Theatre.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "culture",
+        "history",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

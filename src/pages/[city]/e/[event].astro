@@ -1,0 +1,175 @@
+---
+// One page per event, so an event can be shared as a link that means something.
+//
+// Pre-rendered rather than resolved client-side, because the value of a share
+// link is mostly the preview WhatsApp/iMessage/Slack build from og:title and
+// og:description — and those crawlers run no JavaScript. A link that needed
+// the React app to work out which event was meant would unfurl as the generic
+// city page, which defeats the purpose.
+//
+// Deliberately no client:load island: this is one event, so it is plain static
+// HTML and works with JavaScript disabled.
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import Base from "../../../layouts/Base.astro";
+import ShareButton from "@react/components/ShareButton";
+import AddToCalendar from "@react/components/AddToCalendar";
+import type { CityData, CityIndex, Event } from "@react/types";
+import { SLUG_TO_KEY } from "@react/utils/citySlug";
+import { catShortName, catToSlug } from "@react/utils/categorySlug";
+import {
+	eventSlug,
+	isLikelyImageUrl,
+	stripForDisplay,
+} from "../../../shared.ts";
+import { VIBE_LABELS, vibesOf } from "@react/utils/vibes";
+
+export function getStaticPaths() {
+	const index: CityIndex = JSON.parse(
+		readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
+	);
+
+	return index.cities.flatMap((city) => {
+		const slug =
+			Object.entries(SLUG_TO_KEY).find(([, k]) => k === city.key)?.[0] ??
+			city.key;
+		const cityData: CityData = JSON.parse(
+			readFileSync(join(process.cwd(), `data/${city.key}.json`), "utf-8"),
+		);
+		return cityData.events.map((event) => ({
+			params: { city: slug, event: eventSlug(city.key, event) },
+			props: { cityData, event, cityKey: city.key },
+		}));
+	});
+}
+
+const { cityData, event, cityKey } = Astro.props;
+const slug = Astro.params.city as string;
+const BASE_URL = "https://www.dothings.lol";
+const url = `${BASE_URL}/${slug}/e/${Astro.params.event}`;
+const catSlug = catToSlug(event.category);
+
+// Stripped at render, not in the pipeline: the data keeps the URL because a
+// description is often the only place a ticket link appears.
+const title = stripForDisplay(event.title);
+const eventDescription = stripForDisplay(event.description);
+
+// What the recipient of a shared link actually sees. Front-loads the facts
+// they need to decide whether to go: what, when, where.
+const shareDescription = [event.datetime, event.location, event.cost]
+	.filter((part: string) => part && part !== "—")
+	.join(" · ");
+const description = [shareDescription, eventDescription]
+	.filter(Boolean)
+	.join(" — ")
+	.slice(0, 300);
+
+const schema = {
+	"@context": "https://schema.org",
+	"@type": "Event",
+	name: title,
+	description: eventDescription || undefined,
+	startDate: event.datetime_iso || undefined,
+	endDate: event.datetime_end_iso || undefined,
+	location: event.location
+		? { "@type": "Place", name: event.location }
+		: undefined,
+	url,
+	eventStatus: "https://schema.org/EventScheduled",
+	organizer: event.source
+		? { "@type": "Organization", name: event.source }
+		: undefined,
+	offers: event.cost ? { "@type": "Offer", description: event.cost } : undefined,
+};
+
+const vibes = vibesOf(event as Event);
+
+// Checked here as well as in curate, so already-published data is fixed
+// without re-running the pipeline. 61 of 139 scraped image URLs were dead —
+// see isLikelyImageUrl for the measurement and the rule.
+const ogImage = isLikelyImageUrl(event.image) ? event.image : undefined;
+---
+
+<Base
+  cityData={cityData}
+  slug={slug}
+  canonical={url}
+  title={title}
+  description={description}
+  ogType="article"
+  schema={schema}
+  ogImage={ogImage}
+>
+  <main class="event-page">
+    <nav class="event-crumbs" aria-label="Breadcrumb">
+      <a href={`/${slug}`}>{cityData.city.split(",")[0]}</a>
+      <span aria-hidden="true">/</span>
+      <a href={`/${slug}/${catSlug}`}>{catShortName(event.category)}</a>
+    </nav>
+
+    <article class="event-detail" data-cat={catSlug}>
+      <h1>{title}</h1>
+
+      {ogImage && (
+        <img
+          class="event-image"
+          src={ogImage}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+          {/* The extension check catches today's broken URLs, but these are
+              hotlinks to other people's servers and will rot. Removing the
+              element beats a broken-image placeholder, and an inline handler
+              works in the static HTML with no island. */}
+          onerror="this.remove()"
+        />
+      )}
+
+      <dl class="event-facts">
+        <dt>When</dt>
+        <dd>{event.datetime || "Date to be confirmed"}</dd>
+        <dt>Where</dt>
+        <dd>
+          {event.location_url ? (
+            <a href={event.location_url} target="_blank" rel="noopener">
+              {event.location || "—"}
+            </a>
+          ) : (
+            event.location || "—"
+          )}
+        </dd>
+        <dt>Cost</dt>
+        <dd>{event.cost || "Not specified"}</dd>
+        <dt>Source</dt>
+        <dd>{event.source}</dd>
+      </dl>
+
+      {eventDescription && (
+        <p class="event-description">{eventDescription}</p>
+      )}
+
+      {vibes.length > 0 && (
+        <ul class="event-vibes">
+          {vibes.map((key) => (
+            <li class="tag tag-vibe" data-vibe={key}>{VIBE_LABELS[key]}</li>
+          ))}
+        </ul>
+      )}
+
+      <div class="event-actions">
+        {event.link && (
+          <a class="filter-btn" href={event.link} target="_blank" rel="noopener">
+            Event website
+          </a>
+        )}
+        <AddToCalendar client:visible event={event} cityKey={cityKey} label="Add to calendar" />
+        <ShareButton client:visible event={event} cityKey={cityKey} label="Share" />
+      </div>
+
+      <p class="event-back">
+        <a href={`/${slug}`}>← Everything on in {cityData.city.split(",")[0]} this week</a>
+      </p>
+    </article>
+  </main>
+</Base>

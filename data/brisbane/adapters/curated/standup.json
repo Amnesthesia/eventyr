@@ -1,0 +1,164 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "standup",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "The Mitzi Project @ The Sit Down Comedy Club",
+      "datetime": "Thu 3 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-03T20:00:00",
+      "datetime_end_iso": "",
+      "location": "The Sit Down Comedy Club",
+      "link": "https://www.standup.com.au/event/the-mitzi-project-the-sit-down-comedy-club-72/",
+      "cost": "See link",
+      "source": "The Sit Down Comedy Club",
+      "description": "The Mitzi Project is a comedy event held at The Sit Down Comedy Club.",
+      "image": "https://www.standup.com.au/event/the-mitzi-project-the-sit-down-comedy-club-72/",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Comedy Allsorts @ The Sit Down Comedy Club",
+      "datetime": "Fri 4 Sep, 8:15 PM",
+      "datetime_iso": "2026-09-04T20:15:00",
+      "datetime_end_iso": "",
+      "location": "The Sit Down Comedy Club",
+      "link": "https://www.standup.com.au/event/comedy-allsorts-the-sit-down-comedy-club-81/",
+      "cost": "See link",
+      "source": "The Sit Down Comedy Club",
+      "description": "Comedy Allsorts is a comedy event held at The Sit Down Comedy Club.",
+      "image": "https://www.standup.com.au/event/comedy-allsorts-the-sit-down-comedy-club-81/",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Akmal: My Family and Other Criminals (Encore Performance)",
+      "datetime": "Sat 5 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-05T18:00:00",
+      "datetime_end_iso": "",
+      "location": "The Sit Down Comedy Club",
+      "link": "https://www.standup.com.au/event/akmal-my-family-and-other-criminals-encore-performance/",
+      "cost": "See link",
+      "source": "The Sit Down Comedy Club",
+      "description": "Akmal: My Family and Other Criminals (Encore Performance) is a comedy event held at The Sit Down Comedy Club.",
+      "image": "https://www.standup.com.au/event/akmal-my-family-and-other-criminals-encore-performance/",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Saturday Double Feature @ The Sit Down Comedy Club",
+      "datetime": "Sat 5 Sep, 8:15 PM",
+      "datetime_iso": "2026-09-05T20:15:00",
+      "datetime_end_iso": "",
+      "location": "The Sit Down Comedy Club",
+      "link": "https://www.standup.com.au/event/saturday-double-feature-the-sit-down-comedy-club-89/",
+      "cost": "See link",
+      "source": "The Sit Down Comedy Club",
+      "description": "Saturday Double Feature is a comedy event held at The Sit Down Comedy Club.",
+      "image": "https://www.standup.com.au/event/saturday-double-feature-the-sit-down-comedy-club-89/",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Hey Felicia! Presents MUSICAL DRAG BINGO",
+      "datetime": "Thu 3 Sep, 12:40 PM",
+      "datetime_iso": "2026-09-03T12:40:00",
+      "datetime_end_iso": "",
+      "location": "The Sit Down Comedy Club",
+      "link": "https://www.standup.com.au/event/hey-felicia-presents-musical-drag-bingo-2/",
+      "cost": "See link",
+      "source": "The Sit Down Comedy Club",
+      "description": "Hey Felicia! Presents MUSICAL DRAG BINGO is a social event held at The Sit Down Comedy Club.",
+      "image": "https://www.standup.com.au/event/hey-felicia-presents-musical-drag-bingo-2/",
+      "category": "Social / Meetup",
+      "tags": [
+        "drag",
+        "bingo",
+        "comedy"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Open Mic Night @ The Morrison Hotel",
+      "datetime": "Sun 6 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-06T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Morrison Hotel",
+      "link": "https://www.standup.com.au/event/open-mic-night-the-morrison-hotel-8/",
+      "cost": "See link",
+      "source": "The Sit Down Comedy Club",
+      "description": "Open Mic Night is a comedy event held at Morrison Hotel.",
+      "image": "https://www.standup.com.au/event/open-mic-night-the-morrison-hotel-8/",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "open mic",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Open Mic Night @ Forest Lake Tavern",
+      "datetime": "Sun 6 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-06T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Forest Lake Tavern",
+      "link": "https://www.standup.com.au/event/open-mic-night-forest-lake-tavern-9/",
+      "cost": "See link",
+      "source": "The Sit Down Comedy Club",
+      "description": "Open Mic Night is a comedy event held at Forest Lake Tavern.",
+      "image": "https://www.standup.com.au/event/open-mic-night-forest-lake-tavern-9/",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "open mic",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

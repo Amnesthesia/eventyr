@@ -9,3 +9,17 @@ node_modules/
 .astro/
 *.tsbuildinfo
 dist/
+
+# Adapter framework working data: raw fetched bodies, conditional-GET cache,
+# probe results. All regenerable, all unbounded.
+data/_raw/
+data/_cache/
+data/_probe/
+
+# Generated into public/ by ical.ts / pages.ts / rss.ts — never at the repo root
+/*.ics
+/sitemap.xml
+
+# Rejected scrape candidates, kept for diagnosing a bad yield
+data/*/adapters/rejected/
+

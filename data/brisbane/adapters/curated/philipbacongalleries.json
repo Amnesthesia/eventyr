@@ -1,0 +1,54 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "philipbacongalleries",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Zoe Young",
+      "datetime": "Tue 11 Aug, 10:00 AM",
+      "datetime_iso": "2026-08-11T10:00:00",
+      "datetime_end_iso": "2026-09-05T10:00:00",
+      "location": "Philip Bacon Galleries",
+      "link": "https://philipbacongalleries.com.au/zoe-young-2026",
+      "cost": "See link",
+      "source": "Philip Bacon Galleries",
+      "description": "Zoe Young is an exhibition held at Philip Bacon Galleries.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "painting",
+        "gallery",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Ralph Wilson",
+      "datetime": "Tue 8 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-08T10:00:00",
+      "datetime_end_iso": "2026-10-03T10:00:00",
+      "location": "Philip Bacon Galleries",
+      "link": "https://philipbacongalleries.com.au/ralph-wilson-2026",
+      "cost": "See link",
+      "source": "Philip Bacon Galleries",
+      "description": "Ralph Wilson is an exhibition held at Philip Bacon Galleries.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "painting",
+        "gallery",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

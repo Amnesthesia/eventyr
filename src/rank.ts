@@ -1,15 +1,26 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { GoogleGenAI } from "@google/genai";
-
 import {
 	DATA_ROOT,
 	fmtDate,
 	getWeekRange,
 	INTERESTS,
 	requireEnv,
+	TOP_PICK_THRESHOLD,
 	toISODate,
 } from "./common.ts";
+import { chunkArray, mapWithConcurrency } from "./providers/base.ts";
+import { geminiText, installUsageReporting } from "./providers/gemini.ts";
+
+const RANK_MODEL = "gemini-3.5-flash";
+/**
+ * Events per ranking call. One call for the whole city risked silently
+ * exceeding maxOutputTokens at 400+ events, and a parse failure assigns a
+ * neutral 5 to *every* event — losing the ranking entirely. Chunking bounds
+ * that blast radius to one chunk and lets the calls run concurrently.
+ */
+const RANK_CHUNK = 60;
 
 const CITY = requireEnv("CITY");
 const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
@@ -64,6 +75,7 @@ function parseScores(
 }
 
 async function main(): Promise<void> {
+	installUsageReporting();
 	const { monday, sunday } = getWeekRange();
 	const jsonPath = join(DATA_ROOT, `${CITY}.json`);
 
@@ -99,47 +111,56 @@ async function main(): Promise<void> {
 	console.log(`→ Scoring ${events.length} events with Google Gemini…`);
 
 	const ai = new GoogleGenAI({ apiKey: GOOGLE_API_KEY });
-	const response = await ai.models.generateContent({
-		model: "gemini-3.5-flash",
-		contents: buildRankUser(events),
-		config: {
+	// Chunked and concurrent: scores are per-event judgements with no
+	// cross-event reasoning, so a chunk boundary costs nothing, while one call
+	// for 400+ events risked a silent truncation that assigns a neutral 5 to
+	// every event and erases the ranking.
+	const chunks = chunkArray(
+		events.map((event, index) => ({ event, index })),
+		RANK_CHUNK,
+	);
+	const results = await mapWithConcurrency(chunks, 3, async (chunk, i) => {
+		const rawText = await geminiText(ai, {
+			stage: "rank",
+			model: RANK_MODEL,
+			contents: buildRankUser(chunk.map((c) => c.event)),
 			systemInstruction: RANK_SYSTEM,
 			maxOutputTokens: 8192,
-			responseMimeType: "application/json",
-			thinkingConfig: { thinkingBudget: 0 },
-		},
+			extraConfig: {
+				responseMimeType: "application/json",
+				thinkingConfig: { thinkingBudget: 0 },
+			},
+		});
+		const parsed = parseScores(rawText);
+		if (!parsed) {
+			console.warn(
+				`  ⚠ chunk ${i + 1}/${chunks.length}: could not parse scores — those events keep a neutral 5`,
+			);
+			console.warn(`  raw response: ${rawText.slice(0, 200)}`);
+			return;
+		}
+		// Indices are chunk-local; map them back to the city-wide array.
+		for (const { index, score } of parsed) {
+			const target = chunk[index];
+			if (target) events[target.index].score = score;
+		}
 	});
+	void results;
 
-	const rawText = response.text ?? "";
-	const scores = parseScores(rawText);
-
-	if (!scores) {
-		console.warn(
-			"  ⚠ Could not parse scores from response — assigning neutral score 5 to all events",
-		);
-		console.warn(`  raw response: ${rawText.slice(0, 300)}`);
-		for (const e of events) e.score = 5;
-	} else {
-		for (const { index, score } of scores) {
-			if (index >= 0 && index < events.length) {
-				events[index].score = score;
-			}
-		}
-		for (const e of events) {
-			if (!("score" in e)) e.score = 5;
-		}
+	for (const e of events) {
+		if (typeof e.score !== "number") e.score = 5;
 	}
 
 	events.sort(
 		(a, b) => ((b.score as number) ?? 0) - ((a.score as number) ?? 0),
 	);
 
-	if (scores) {
-		const high = events.filter((e) => ((e.score as number) ?? 0) >= 8).length;
-		console.log(
-			`→ Score distribution: ${high}/${events.length} events score ≥ 8 (${((100 * high) / events.length).toFixed(0)}%)`,
-		);
-	}
+	const high = events.filter(
+		(e) => ((e.score as number) ?? 0) >= TOP_PICK_THRESHOLD,
+	).length;
+	console.log(
+		`→ Score distribution: ${high}/${events.length} events score ≥ ${TOP_PICK_THRESHOLD} (${((100 * high) / events.length).toFixed(0)}%)`,
+	);
 
 	const updated = {
 		...payload,

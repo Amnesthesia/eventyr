@@ -7,6 +7,7 @@ import {
 	useMemo,
 	useState,
 } from "react";
+import { TOP_PICK_THRESHOLD } from "../src/shared.ts";
 import { useColorTheme } from "./hooks/useColorTheme";
 import { useStarred } from "./hooks/useStarred";
 import type {
@@ -20,7 +21,9 @@ import type {
 	VibeKey,
 } from "./types";
 import { KEY_TO_SLUG } from "./utils/citySlug";
-import { parseEndDate, todayIso } from "./utils/dates";
+import { endOfMonth, parseEndDate, todayIso } from "./utils/dates";
+import type { GroupBy } from "./utils/grouping";
+import { matchesQuery, queryTokens } from "./utils/search";
 
 interface EventsContextValue {
 	cityData: CityData;
@@ -41,6 +44,14 @@ interface EventsContextValue {
 	pastFilter: PastFilter;
 	setPastFilter: (v: PastFilter) => void;
 	vibeFilters: VibeFilters;
+	groupBy: GroupBy;
+	setGroupBy: (mode: GroupBy) => void;
+	query: string;
+	setQuery: (query: string) => void;
+	/** Bounds for the date-range picker. Not the same as weekStart/weekEnd,
+	 * which describe the coverage this digest actually has. */
+	dateMin: string;
+	dateMax: string;
 	setVibe: (key: VibeKey, state: TriState) => void;
 	resetVibes: () => void;
 	categories: string[];
@@ -88,6 +99,8 @@ export function EventsProvider({
 	const [dateRange, setDateRange] = useState<DateRange | null>(null);
 	const [activeTags, setActiveTags] = useState<string[]>([]);
 	const [pastFilter, setPastFilter] = useState<PastFilter>("no-past");
+	const [groupBy, setGroupBy] = useState<GroupBy>("none");
+	const [query, setQuery] = useState("");
 	const [vibeFilters, setVibeFilters] = useState<VibeFilters>({
 		intellectual: "any",
 		creative: "any",
@@ -138,15 +151,27 @@ export function EventsProvider({
 	);
 
 	const filtered = useMemo(() => {
+		// Tokenised once per query rather than once per event: normalising the
+		// query 395 times a keystroke is pure waste.
+		const tokens = queryTokens(query);
 		return cityData.events.filter((event) => {
+			if (!matchesQuery(event, tokens)) return false;
 			const catOk = activeCat === "All" || event.category === activeCat;
 
 			const dateOk = (() => {
 				if (!dateRange) return true;
 				if (!event.datetime_iso) return false;
 				const eventStart = event.datetime_iso.slice(0, 10);
+				// datetime_end_iso is the authoritative end, produced by both
+				// collection paths. Re-deriving it from the human string
+				// disagreed with it on real multi-day events (PyConAU's real
+				// end 30 Aug was guessed as 26 Aug), so selecting the last two
+				// days of a festival showed nothing. parseEndDate remains only
+				// as a fallback for older data with no end field.
 				const eventEnd =
-					parseEndDate(event.datetime || "", event.datetime_iso) || eventStart;
+					event.datetime_end_iso?.slice(0, 10) ||
+					parseEndDate(event.datetime || "", event.datetime_iso) ||
+					eventStart;
 				return eventStart <= dateRange.end && eventEnd >= dateRange.start;
 			})();
 
@@ -180,6 +205,7 @@ export function EventsProvider({
 		pastFilter,
 		vibeFilters,
 		todayStr,
+		query,
 	]);
 
 	const categories = useMemo(
@@ -191,19 +217,75 @@ export function EventsProvider({
 		const starredEvents: Event[] = [];
 		const picks: Event[] = [];
 		const rest: Event[] = [];
+		// A pick has to START inside the selected dates, not merely overlap them.
+		// The date filter itself is deliberately an overlap test — that is what
+		// makes selecting the last two days of a festival work — but it also
+		// admits a run that opened months ago, and "Picks" for Today showing an
+		// exhibition dated 1 January reads as a bug even though the exhibition
+		// is genuinely open today. Those stay in the list below, where grouping
+		// by date files them under "Ongoing" and says so.
+		const startsInRange = (e: Event): boolean => {
+			if (!dateRange) return true;
+			const start = (e.datetime_iso || "").slice(0, 10);
+			return !!start && start >= dateRange.start && start <= dateRange.end;
+		};
 		filtered.forEach((e) => {
 			const id = e.title + e.datetime_iso;
 			if (starred.has(id)) {
 				starredEvents.push(e);
 			}
-			if ((e.score || 0) >= 8 && picks.length < 9) {
+			if (
+				(e.score || 0) >= TOP_PICK_THRESHOLD &&
+				picks.length < 9 &&
+				startsInRange(e)
+			) {
 				picks.push(e);
 			} else {
 				rest.push(e);
 			}
 		});
 		return { starredEvents, picks, rest };
-	}, [filtered, starred]);
+	}, [filtered, starred, dateRange]);
+
+	/**
+	 * The furthest date the picker lets you choose.
+	 *
+	 * The latest date any event actually runs to — but capped at the end of the
+	 * month that the coverage ends in, because a single long-running exhibition
+	 * (one here closes in April 2027) would otherwise stretch the picker across
+	 * two years for the sake of one event.
+	 */
+	const dateMax = useMemo(() => {
+		const ends = (cityData?.events ?? [])
+			.map((e) => (e.datetime_end_iso || e.datetime_iso || "").slice(0, 10))
+			.filter(Boolean)
+			.sort();
+		const latest = ends[ends.length - 1] ?? cityData?.week_end ?? "";
+		if (!latest) return "";
+		const cap = endOfMonth(cityData?.week_end || latest);
+		return latest > cap ? cap : latest;
+	}, [cityData]);
+
+	/**
+	 * The earliest. The digest week's Monday, not the earliest date in the data:
+	 * that is a 2023 exhibition opening, and no one is picking 2023 — those
+	 * events surface anyway, because the date filter is an overlap test.
+	 */
+	const dateMin = cityData?.week_start ?? "";
+
+	const [coverageStart, coverageEnd] = useMemo(() => {
+		const dates = (cityData?.events ?? [])
+			.map((e) => (e.datetime_iso ?? "").slice(0, 10))
+			.filter(Boolean)
+			.sort();
+		const start = cityData?.week_start ?? "";
+		const end = cityData?.week_end ?? "";
+		if (dates.length === 0) return [start, end];
+		return [
+			start && start < dates[0] ? start : dates[0],
+			end && end > dates[dates.length - 1] ? end : dates[dates.length - 1],
+		];
+	}, [cityData]);
 
 	const value: EventsContextValue = {
 		cityData,
@@ -226,12 +308,23 @@ export function EventsProvider({
 		vibeFilters,
 		setVibe,
 		resetVibes,
+		groupBy,
+		setGroupBy,
+		query,
+		setQuery,
+		dateMin,
+		dateMax,
 		categories,
 		starredEvents,
 		picks,
 		rest,
-		weekStart: cityData.week_start,
-		weekEnd: cityData.week_end,
+		// Derived from the events rather than taken straight from
+		// week_start/week_end: the scrape pass now keeps next week's events too,
+		// and clamping the date picker to the digest week would leave them in
+		// the data but unreachable. Deriving can't desync, and week_start /
+		// week_end keep their existing meaning for the pipeline's cache checks.
+		weekStart: coverageStart,
+		weekEnd: coverageEnd,
 		isEventPast,
 	};
 

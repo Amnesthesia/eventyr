@@ -13,13 +13,32 @@ const MONTH_NUM: Record<string, number> = {
 	dec: 12,
 };
 
-export function localDateStr(offset: number): string {
+function localDateStr(offset: number): string {
 	const d = new Date();
 	return new Date(
 		d.getFullYear(),
 		d.getMonth(),
 		d.getDate() + offset,
 	).toLocaleDateString("sv");
+}
+
+/** Shifts a YYYY-MM-DD string by whole days. Built on local Date arithmetic
+ * rather than string maths so month and year ends are the platform's problem. */
+export function addDays(iso: string, days: number): string {
+	const d = new Date(`${iso}T00:00:00`);
+	if (Number.isNaN(d.getTime())) return iso;
+	d.setDate(d.getDate() + days);
+	return d.toLocaleDateString("sv");
+}
+
+/** Last day of the month containing `iso`, as YYYY-MM-DD. */
+export function endOfMonth(iso: string): string {
+	const d = new Date(`${iso}T00:00:00`);
+	if (Number.isNaN(d.getTime())) return iso;
+	// Day 0 of the next month is the last day of this one.
+	return new Date(d.getFullYear(), d.getMonth() + 1, 0).toLocaleDateString(
+		"sv",
+	);
 }
 
 export function todayIso(): string {
@@ -54,8 +73,4 @@ export function fmtRange(a: string, b: string): string {
 			month: "short",
 		});
 	return `${fmt(a)} – ${fmt(b)}`;
-}
-
-export function cacheBust(): string {
-	return new Date().toISOString().slice(0, 10);
 }

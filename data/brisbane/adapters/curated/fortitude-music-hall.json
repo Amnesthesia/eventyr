@@ -1,0 +1,142 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "fortitude-music-hall",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "The Cat Empire",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Fortitude Music Hall, 66 Doggett St",
+      "link": "https://thefortitude.com.au/all-events/the-cat-empire-tickets-ae2434",
+      "cost": "See link",
+      "source": "Fortitude Music Hall",
+      "description": "The Cat Empire is a concert held at Fortitude Music Hall.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "band",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Suzanne Vega",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "Fortitude Music Hall, 66 Doggett St",
+      "link": "https://thefortitude.com.au/all-events/suzanne-vega-tickets-ae1618",
+      "cost": "See link",
+      "source": "Fortitude Music Hall",
+      "description": "Suzanne Vega is a concert held at Fortitude Music Hall.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "singer songwriter",
+        "folk",
+        "live music"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Happy Mondays",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Fortitude Music Hall, 66 Doggett St",
+      "link": "https://thefortitude.com.au/all-events/happy-mondays-tickets-ae461",
+      "cost": "See link",
+      "source": "Fortitude Music Hall",
+      "description": "Happy Mondays is a concert held at Fortitude Music Hall.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "live music",
+        "band"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Go West with special guest Debbie Gibson",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "Fortitude Music Hall, 66 Doggett St",
+      "link": "https://thefortitude.com.au/all-events/go-west-tickets-ae19843",
+      "cost": "See link",
+      "source": "Fortitude Music Hall",
+      "description": "Go West with special guest Debbie Gibson is a concert held at Fortitude Music Hall.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "pop",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Kodaline - Farewell Tour",
+      "datetime": "Sun 6 Sep",
+      "datetime_iso": "2026-09-06",
+      "datetime_end_iso": "",
+      "location": "Fortitude Music Hall, 66 Doggett St",
+      "link": "https://thefortitude.com.au/all-events/kodaline-tickets-ae344555",
+      "cost": "See link",
+      "source": "Fortitude Music Hall",
+      "description": "Kodaline - Farewell Tour is a concert held at Fortitude Music Hall.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "live music",
+        "tour"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Cat Empire feat. Queensland Symphony Orchestra",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Fortitude Music Hall, 66 Doggett St",
+      "link": "https://thefortitude.com.au/all-events/the-cat-empire-tickets-ae2434",
+      "cost": "See link",
+      "source": "Fortitude Music Hall",
+      "description": "The Cat Empire feat. Queensland Symphony Orchestra is a concert held at Fortitude Music Hall.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "orchestra",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

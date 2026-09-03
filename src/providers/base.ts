@@ -6,6 +6,7 @@ import {
 	curatedPath,
 	fmtDate,
 	INTERESTS,
+	llmSourceStrings,
 	PROJECT_ROOT,
 	toISODate,
 } from "../common.ts";
@@ -14,28 +15,19 @@ export interface SearchResult {
 	events: Record<string, unknown>[];
 }
 
-export interface SourceResult {
-	aggregators: string[];
-	institutions: string[];
-	independents: string[];
-}
-
-export type SearchFocus = "general" | "music";
-
 export type CurateFunction = (
 	rawText: string,
 	cityName: string,
 	label: string,
-	focus: SearchFocus,
 ) => Promise<Record<string, unknown>[]>;
 
 export interface ProviderOptions {
+	city: string;
 	cityCfg: CityConfig;
 	tier: string;
 	weekStart: Date;
 	weekEnd: Date;
 	curate: CurateFunction;
-	focus: SearchFocus;
 }
 
 export const TIER_INSTRUCTIONS: Record<string, string> = {
@@ -53,18 +45,6 @@ export const TIER_INSTRUCTIONS: Record<string, string> = {
 		"where sources are closely related, but don't skip any.",
 };
 
-export const EXCLUDE_MUSIC_INSTRUCTION =
-	"Do NOT include concerts, gigs, festivals, DJ nights, or any live-music events in this pass — " +
-	"those are collected separately in a dedicated music search. Focus on everything else: talks, " +
-	"workshops, social events, exhibitions, outdoor activities, and other non-music categories.";
-
-export const MUSIC_ONLY_INSTRUCTION =
-	"Focus ONLY on live music for this pass: concerts, gigs, festivals, DJ nights with live acts, " +
-	"open mic music nights, classical/jazz/orchestral performances, and busking with scheduled sets. " +
-	"Be exhaustive — list every live music event you can find, big or small, mainstream or niche. " +
-	"The usual 'prefer smaller/niche over mainstream' guidance does NOT apply here — a touring act at " +
-	"a major venue still counts. Aim for at least 15 music events.";
-
 // A fixed grammar (rather than "note these fields" prose) keeps every
 // provider's raw output shaped the same way, which is what the downstream
 // extraction pass actually parses — free-form prose/tables/citation
@@ -81,11 +61,7 @@ export const OUTPUT_FORMAT_RULES =
 	"Z?'). If there's a more complete or exhaustive version of the answer, just do it and include " +
 	"it directly instead of asking permission — always take the most thorough option yourself.";
 
-export function focusInstruction(focus: SearchFocus): string {
-	return focus === "music" ? MUSIC_ONLY_INSTRUCTION : EXCLUDE_MUSIC_INSTRUCTION;
-}
-
-export function sourceNames(sources: string[]): string {
+function sourceNames(sources: string[]): string {
 	return sources
 		.map((s) => s.split("(")[0].trim().replace(/—\s*$/, "").trim())
 		.join(", ");
@@ -109,9 +85,40 @@ export function splitIntoBatches(text: string, maxChars = 6000): string[] {
 	return batches.length ? batches : [text];
 }
 
+/**
+ * Parses a JSON array out of an LLM response, tolerating the two things these
+ * responses actually do wrong: wrapping the array in prose/code fences, and
+ * getting cut off mid-array by the output token cap. On truncation it retries
+ * at the last complete object rather than losing the whole batch — a clipped
+ * final event should cost one event, not all of them.
+ */
+export function parseJsonArray<T>(raw: string, label?: string): T[] {
+	const cleaned = raw.replace(/```json|```/g, "").trim();
+	const start = cleaned.indexOf("[");
+	if (start === -1) return [];
+	let jsonStr = cleaned.slice(start);
+	const end = jsonStr.lastIndexOf("]");
+	if (end !== -1) jsonStr = jsonStr.slice(0, end + 1);
+	try {
+		return JSON.parse(jsonStr) as T[];
+	} catch {
+		const lastComplete = jsonStr.lastIndexOf("},");
+		if (lastComplete !== -1) {
+			try {
+				return JSON.parse(`${jsonStr.slice(0, lastComplete + 1)}]`) as T[];
+			} catch {
+				// fall through to the shared failure log
+			}
+		}
+		if (label) console.log(`  ✗ [${label}] Could not parse JSON response`);
+		return [];
+	}
+}
+
 export function chunkArray<T>(items: T[], size: number): T[][] {
 	const chunks: T[][] = [];
-	for (let i = 0; i < items.length; i += size) chunks.push(items.slice(i, i + size));
+	for (let i = 0; i < items.length; i += size)
+		chunks.push(items.slice(i, i + size));
 	return chunks;
 }
 
@@ -119,7 +126,6 @@ export abstract class BaseProvider {
 	abstract readonly name: string;
 	abstract readonly tiers: readonly string[];
 	abstract searchEvents(opts: ProviderOptions): Promise<SearchResult>;
-	abstract findSources(cityName: string): Promise<SourceResult>;
 
 	async collect(
 		city: string,
@@ -129,23 +135,20 @@ export abstract class BaseProvider {
 		force: boolean,
 		curate: CurateFunction,
 	): Promise<void> {
-		const jobs: Array<{ tier: string; focus: SearchFocus }> = [];
-		for (const tier of this.tiers) {
-			for (const focus of ["general", "music"] as const) {
-				jobs.push({ tier, focus });
-			}
-		}
-
-		// Each tier×focus search is independent, so run them concurrently
-		// instead of one at a time — this is what actually cuts wall-clock
-		// time, since the per-call token cost/cache behavior is fixed either
+		// One search per tier. There used to be a second "music" pass per tier,
+		// because a single mixed-category search spread one event budget across
+		// all six CATEGORIES and Concert/Music lost out. Music-heavy venues are
+		// now scraped directly (src/adapters/), so that workaround costs double
+		// the search calls for a problem it no longer solves.
+		//
+		// Each tier search is independent, so run them concurrently — that's
+		// what cuts wall-clock time, since per-call token cost is fixed either
 		// way. Errors are caught per-job so one failure doesn't take down the
 		// rest of the batch.
 		await Promise.all(
-			jobs.map(async ({ tier, focus }) => {
-				const tierKey = focus === "music" ? `${tier}-music` : tier;
-				const outPath = curatedPath(city, this.name, tierKey);
-				const label = `${this.name}/${tierKey}`;
+			this.tiers.map(async (tier) => {
+				const outPath = curatedPath(city, this.name, tier);
+				const label = `${this.name}/${tier}`;
 
 				if (!force && existsSync(outPath)) {
 					try {
@@ -163,18 +166,18 @@ export abstract class BaseProvider {
 
 				try {
 					const opts: ProviderOptions = {
+						city,
 						cityCfg,
 						tier,
 						weekStart,
 						weekEnd,
 						curate,
-						focus,
 					};
 					const { events } = await this.searchEvents(opts);
 					const payload = {
 						city_key: city,
 						provider: this.name,
-						tier: tierKey,
+						tier,
 						week_start: toISODate(weekStart),
 						week_end: toISODate(weekEnd),
 						events,
@@ -189,15 +192,9 @@ export abstract class BaseProvider {
 		);
 	}
 
-	protected buildFormatSystem(cityName: string, focus: SearchFocus = "general"): string {
+	protected buildFormatSystem(cityName: string): string {
 		const filterRule =
-			focus === "music"
-				? "1. FILTER: This batch was gathered specifically as live music (concerts, gigs, " +
-					"festivals, DJ nights, classical/jazz performances). Remove only sports, MLM, " +
-					"sales-pitch events, or things that are not actually music events. Do NOT filter " +
-					"by how well an event matches the interests above, and do NOT prefer niche/smaller " +
-					"acts over mainstream ones — keep every genuine music event, touring headliner or not."
-				: "1. FILTER: Remove any sports, MLM, sales-pitch, or clearly irrelevant events.";
+			"1. FILTER: Remove any sports, MLM, sales-pitch, or clearly irrelevant events.";
 		return `You are a personal events curator for someone in ${cityName} with these interests:
 ${INTERESTS}
 
@@ -298,71 +295,31 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 		}
 	}
 
-	protected buildSearchSystem(opts: ProviderOptions): string {
-		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
-		const cityName = cityCfg.name;
-		const sources = cityCfg.sources[tier as keyof CityConfig["sources"]] ?? [];
-		const tierInstruction = TIER_INSTRUCTIONS[tier] ?? "";
-		const sourceList = sources.map((s) => `  - ${s}`).join("\n");
-		const today = new Date();
-
-		return `You are an events researcher for ${cityName}. Today is ${today.toLocaleDateString("en-AU", { weekday: "long", day: "numeric", month: "long", year: "numeric" })}.
-Your job is to find in-person events happening THIS WEEK in ${cityName}:
-${fmtDate(weekStart)} to ${fmtDate(weekEnd)}.
-
-The person receiving this digest has the following interests:
-${INTERESTS}
-
-Sources to search (${tier.toUpperCase()}):
-${tierInstruction}
-
-${sourceList}
-
-For each event you find, note:
-  - Event name
-  - Date and time
-  - Venue / location (suburb)
-  - Ticket link or event page URL
-  - Cost (free or price)
-  - Category: one of ${JSON.stringify(CATEGORIES)}
-  - Source website
-  - Brief description of what the event is
-
-Rules:
-  - Only include events within ${fmtDate(weekStart)} – ${fmtDate(weekEnd)}.
-  - Apply the SKIP rules above — do not list sports, MLM, or sales-pitch events.
-  - Aim for at least 15 events.
-  - Include the direct URL for every event you list.
-
-${focusInstruction(focus)}`;
-	}
-
 	protected buildSearchUser(opts: ProviderOptions): string {
-		const { cityCfg, weekStart, weekEnd, focus } = opts;
-		const focusNote =
-			focus === "music"
-				? "Search specifically for concerts, gigs, festivals, and live music."
-				: "Skip concerts, gigs, and live music — those are handled in a separate search.";
+		const { cityCfg, weekStart, weekEnd } = opts;
+		const coverageNote =
+			"Cover every category: talks, workshops, social events, exhibitions, " +
+			"outdoor activities, and live music alike.";
 		return (
 			`Search for ${cityCfg.name} events this week (${fmtDate(weekStart)} to ${fmtDate(weekEnd)}). ` +
 			"Use web search on the sources listed in your instructions. " +
 			"Skip anything matching the SKIP criteria. " +
-			`${focusNote} ` +
+			`${coverageNote} ` +
 			"List every relevant event you find with full details and a direct URL. " +
 			"If you genuinely cannot find any relevant events after searching, respond only with: NO_EVENTS_FOUND"
 		);
 	}
 
 	protected buildOpenSystem(opts: ProviderOptions): string {
-		const { cityCfg, weekStart, weekEnd, focus } = opts;
+		const { cityCfg, weekStart, weekEnd } = opts;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
-		// Interest profile + format rules + focus instruction first: that
+		// Interest profile + format rules first: that
 		// block is byte-identical for every call (city/date included) sharing
-		// the same focus, which is what lets providers with automatic
+		// the same prefix, which is what lets providers with automatic
 		// prefix-based prompt caching (OpenAI, Gemini) actually hit cache
 		// instead of re-paying full price on every tier.
 		return (
-			`${INTERESTS}\n\n${OUTPUT_FORMAT_RULES}\n\n${focusInstruction(focus)}\n\n` +
+			`${INTERESTS}\n\n${OUTPUT_FORMAT_RULES}\n\n` +
 			`You are an events researcher for ${cityCfg.name}, Australia. ` +
 			`Find in-person events for ${dateRange} matching the interests above. ` +
 			"Search Eventbrite, Meetup, Humanitix, venue websites, community platforms, Facebook Events, and local guides."
@@ -370,30 +327,29 @@ ${focusInstruction(focus)}`;
 	}
 
 	protected buildOpenUser(opts: ProviderOptions): string {
-		const { cityCfg, weekStart, weekEnd, focus } = opts;
+		const { cityCfg, weekStart, weekEnd } = opts;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
-		const focusNote =
-			focus === "music"
-				? "Search specifically for concerts, gigs, festivals, and live music."
-				: "Skip concerts, gigs, and live music — those are handled in a separate search.";
+		const coverageNote =
+			"Cover every category: talks, workshops, social events, exhibitions, " +
+			"outdoor activities, and live music alike.";
 		return (
 			`What in-person events are happening in ${cityCfg.name} from ${dateRange}? ` +
 			"Search broadly. Prioritise intellectually stimulating, creative, and social or community-oriented events, but list every relevant in-person event you find. " +
-			`${focusNote} ` +
+			`${coverageNote} ` +
 			"Include full details and a direct URL for each. " +
 			"If you genuinely cannot find any relevant events after searching, respond only with: NO_EVENTS_FOUND"
 		);
 	}
 
 	protected buildTierSystem(opts: ProviderOptions): string {
-		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
+		const { cityCfg, tier, weekStart, weekEnd } = opts;
 		const cityName = cityCfg.name;
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
 		// Shared prefix first — identical across all three tiers for a given
-		// focus — so automatic prefix-based prompt caching (OpenAI, Gemini)
+		// tier — so automatic prefix-based prompt caching (OpenAI, Gemini)
 		// actually hits on the 2nd/3rd tier call instead of re-paying full
 		// price each time.
-		const sharedPrefix = `${OUTPUT_FORMAT_RULES}\n\n${focusInstruction(focus)}`;
+		const sharedPrefix = OUTPUT_FORMAT_RULES;
 
 		if (tier === "aggregators") {
 			return (
@@ -424,23 +380,22 @@ ${focusInstruction(focus)}`;
 	}
 
 	protected buildTierUser(opts: ProviderOptions): string {
-		const { cityCfg, tier, weekStart, weekEnd, focus } = opts;
+		const { cityCfg, tier, weekStart, weekEnd } = opts;
 		const cityName = cityCfg.name;
-		const sources = cityCfg.sources[tier as keyof CityConfig["sources"]] ?? [];
+		const sources = llmSourceStrings(cityCfg, tier, opts.city);
 		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
 		const noEventsNote =
 			"If you genuinely cannot find any relevant events after searching, respond only with: NO_EVENTS_FOUND";
-		const focusNote =
-			focus === "music"
-				? "Search specifically for concerts, gigs, festivals, and live music."
-				: "Skip concerts, gigs, and live music — those are handled in a separate search.";
+		const coverageNote =
+			"Cover every category: talks, workshops, social events, exhibitions, " +
+			"outdoor activities, and live music alike.";
 
 		if (tier === "aggregators") {
 			const names = sourceNames(sources);
 			return (
 				`What events are on in ${cityName} from ${dateRange}? ` +
 				`Search these event listing platforms: ${names}. ` +
-				`${focusNote} ` +
+				`${coverageNote} ` +
 				`List as many specific confirmed events as you can find. ${noEventsNote}`
 			);
 		}
@@ -449,7 +404,7 @@ ${focusInstruction(focus)}`;
 			return (
 				`What events are happening at ${cityName} cultural venues for ${dateRange}? ` +
 				`Venues to check include: ${names}. ` +
-				`${focusNote} ` +
+				`${coverageNote} ` +
 				`List every event you find. ${noEventsNote}`
 			);
 		}
@@ -458,54 +413,11 @@ ${focusInstruction(focus)}`;
 			return (
 				`What events are happening at small, independent ${cityName} venues and community groups from ${dateRange}? ` +
 				`Known venues to check include: ${names} — but also search for other independent venues and community events not on that list. ` +
-				`${focusNote} ` +
+				`${coverageNote} ` +
 				`List every event you can find. ${noEventsNote}`
 			);
 		}
 		return this.buildOpenUser(opts);
-	}
-
-	protected buildFindSourcesSystem(cityName: string): string {
-		return (
-			`You are helping set up an automated weekly events digest for ${cityName}. ` +
-			"Find the best websites for local in-person events and sort them into three tiers: " +
-			"AGGREGATORS (Eventbrite/Meetup-type platforms that index many events), " +
-			"INSTITUTIONS (universities, libraries, museums, galleries, theatres — each with unique programmes), " +
-			"INDEPENDENTS (small venues, bookshops, makerspaces, community groups rarely listed by aggregators). " +
-			'Return ONLY a JSON object: {"aggregators": [...], "institutions": [...], "independents": [...]}. ' +
-			'Each entry format: "Source Name (domain.com)". No markdown, no explanation.'
-		);
-	}
-
-	protected buildFindSourcesUser(cityName: string): string {
-		return (
-			`Find the best event discovery sources in ${cityName}. ` +
-			"Search for current, active websites. " +
-			"Return JSON with aggregators, institutions, and independents arrays."
-		);
-	}
-
-	protected parseSourcesJson(raw: string, label: string): SourceResult {
-		const cleaned = raw.replace(/```json|```/g, "").trim();
-		const match = cleaned.match(/\{[\s\S]*\}/);
-		if (!match) {
-			throw new Error(
-				`[${label}] No JSON in source discovery response. Raw: ${cleaned.slice(0, 300)}`,
-			);
-		}
-		const parsed = JSON.parse(match[0]);
-		for (const tier of [
-			"aggregators",
-			"institutions",
-			"independents",
-		] as const) {
-			console.log(`[${label}] Found ${(parsed[tier] ?? []).length} ${tier}`);
-		}
-		return {
-			aggregators: parsed.aggregators ?? [],
-			institutions: parsed.institutions ?? [],
-			independents: parsed.independents ?? [],
-		};
 	}
 
 	protected validateRaw(raw: string, label: string): void {
@@ -516,4 +428,37 @@ ${focusInstruction(focus)}`;
 			throw new Error(`[${label}] Response too short (${raw.length} chars)`);
 		}
 	}
+}
+
+/**
+ * Runs `worker` over every item with at most `limit` in flight, preserving
+ * input order in the result.
+ *
+ * Every LLM-backed pass in this pipeline wants the same shape: batch the work,
+ * run the batches together rather than one at a time, but don't fan out
+ * without a ceiling. A bare `Promise.all` over batches did the first two and
+ * not the third — dedupe's pair classifier could open ~67 simultaneous Gemini
+ * calls, which is how you collect 429s and pay for the retries. Serial loops
+ * are the opposite failure: the probe's URL discovery took 28 minutes for work
+ * that is entirely independent.
+ */
+export async function mapWithConcurrency<T, R>(
+	items: T[],
+	limit: number,
+	worker: (item: T, index: number) => Promise<R>,
+): Promise<R[]> {
+	const results = new Array<R>(items.length);
+	let next = 0;
+	const runners = Array.from(
+		{ length: Math.max(1, Math.min(limit, items.length)) },
+		async () => {
+			while (true) {
+				const i = next++;
+				if (i >= items.length) return;
+				results[i] = await worker(items[i], i);
+			}
+		},
+	);
+	await Promise.all(runners);
+	return results;
 }

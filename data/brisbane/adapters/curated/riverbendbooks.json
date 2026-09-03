@@ -1,0 +1,54 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "riverbendbooks",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "YESTERYEAR BOOKCLUB",
+      "datetime": "Sun 6 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-06T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Riverbend Books, Bulimba",
+      "link": "https://riverbendbooks.com.au/events/yesteryear-bookclub-2pm-sunday-6th-septmeber",
+      "cost": "$10.00",
+      "source": "Riverbend Books, Bulimba",
+      "description": "The Yesteryear Bookclub is a social meetup held at Riverbend Books, Bulimba.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "books",
+        "reading",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "ELISABETH GALVIN: Author of Mary Poppins, The Untold Story of P.L.Travers",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Riverbend Books",
+      "link": "https://riverbendbooks.com.au/events/elisabeth-galvin-author-of-mary-poppins-the-untold-story-of-pltravers-thursday-8-october-630pm-at-riverbend-books",
+      "cost": "from $10.00",
+      "source": "Riverbend Books, Bulimba",
+      "description": "Elisabeth Galvin presents a public lecture at Riverbend Books regarding the author of Mary Poppins.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "literature",
+        "author",
+        "biography"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

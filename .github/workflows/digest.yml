@@ -17,6 +17,11 @@ on:
         required: false
         type: boolean
         default: false
+      providers:
+        description: "Comma-separated search providers to run (google, anthropic, openai, perplexity). Keys can stay set for providers left out. openai is off by default: gpt-5 is the only OpenAI model with web search and it is not worth its cost here."
+        required: false
+        type: string
+        default: "google,anthropic,perplexity"
     secrets:
       ANTHROPIC_API_KEY:
         required: false
@@ -42,7 +47,7 @@ on:
         options:
           - brisbane
           - goldcoast
-            - sunnycoast
+          - sunnycoast
       recipient:
         description: "WhatsApp recipient number (e.g. 61412345678). Leave blank to use the default."
         required: false
@@ -53,6 +58,11 @@ on:
         required: false
         type: boolean
         default: false
+      providers:
+        description: "Comma-separated search providers to run (google, anthropic, openai, perplexity). Keys can stay set for providers left out. openai is off by default: gpt-5 is the only OpenAI model with web search and it is not worth its cost here."
+        required: false
+        type: string
+        default: "google,anthropic,perplexity"
 
 jobs:
   run-digest:
@@ -79,9 +89,33 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # Type-check and lint before spending any API budget: neither ran in CI
+      # before, which is how a broken tsconfig reference left the whole app
+      # unchecked.
+      - name: Typecheck and test
+        run: |
+          pnpm tsc --noEmit -p tsconfig.json
+          pnpm tsc --noEmit -p tsconfig.scripts.json
+          pnpm test
+
+      # Scrape first-party sources we have verified listing URLs for. Never
+      # blocks the run: the AI search below still covers every method: llm
+      # source regardless of how this goes.
+      - name: Scrape adapter sources
+        continue-on-error: true
+        env:
+          CITY: ${{ inputs.city }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          FORCE: ${{ inputs.force }}
+        run: pnpm collect-adapters
+
       - name: Collect events
         env:
           CITY: ${{ inputs.city }}
+          # Explicit, so which providers run is visible in the workflow rather
+          # than implied by which secrets happen to be set. A provider left out
+          # here keeps its key and simply does not run.
+          PROVIDERS: ${{ inputs.providers }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -92,6 +126,12 @@ jobs:
       - name: Curate events
         env:
           CITY: ${{ inputs.city }}
+          # Required: curate.ts now runs the dedupe pair classifier.
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          # Geocodes aggregator-tier locations to throw out events a national
+          # source listed under this city. Optional — without it every location
+          # is kept unchecked, which is the safe direction.
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           FORCE: ${{ inputs.force }}
         run: pnpm curate
 
@@ -116,6 +156,9 @@ jobs:
           CITY: ${{ inputs.city }}
         run: pnpm tsx --tsconfig tsconfig.scripts.json src/ical.ts
 
+      - name: Generate RSS feeds
+        run: pnpm rss
+
       - name: Update pages index
         run: pnpm tsx --tsconfig tsconfig.scripts.json src/pages.ts
 
@@ -131,13 +174,18 @@ jobs:
           git add "data/${CITY}.json" \
                   "data/${CITY}/" \
                   "${CITY^^}.md" "public/${CITY}.ics" "data/index.json" \
-                  public/sitemap.xml
+                  public/sitemap.xml public/*/feed.xml
           git diff --cached --quiet && exit 0
           git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           for attempt in 1 2 3; do
-            git pull --rebase origin main && git push && break
+            git pull --rebase origin main && git push && exit 0
             sleep $((attempt * 10))
           done
+          # Without this the loop's last command is `sleep`, which exits 0 —
+          # three failed pushes reported success and the week's data was
+          # discarded with the runner, with nothing red anywhere.
+          echo "::error::failed to push after 3 attempts"
+          exit 1
 
       - name: Send WhatsApp digest
         continue-on-error: true

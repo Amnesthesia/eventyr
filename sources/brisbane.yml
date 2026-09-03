@@ -1,141 +1,2736 @@
+# Event sources for Brisbane.
+#
+# Each entry declares how it is collected:
+#   method: scraper — we fetch its listingUrls ourselves (src/adapters/).
+#   method: llm     — no verified listing page, so LLM web search covers it.
+#
+# Everything else (homepage, venue, domains, notes, candidate listingUrls)
+# is kept regardless of method, so promoting a source to scraper is a
+# one-field change. `pnpm probe-sources --apply` does that promotion once
+# it has verified a listing URL actually yields dated events.
+
 name: Brisbane
+timezone: Australia/Brisbane
+# Centre of the publishing area, and how far out still counts as this city.
+# Used to drop events a national source listed here (src/locality.ts).
+# 50 km reaches Ipswich (28 km) and Caboolture (43 km) while excluding the Gold
+# Coast (67 km) and Toowoomba (116 km), which are separate cities with their own
+# feeds or none at all.
+centre:
+  lat: -27.4698
+  lng: 153.0251
+  radiusKm: 50
 sources:
   aggregators:
-  - Eventbrite Brisbane (eventbrite.com.au)
-  - Eventfinda Brisbane (brisbane.eventfinda.com.au)
-  - Humanitix Brisbane (events.humanitix.com/brisbane)
-  - Must Do Brisbane (mustdobrisbane.com/whats-on)
-  - The Urban List Brisbane (theurbanlist.com/brisbane)
-  - Broadsheet Brisbane (broadsheet.com.au/brisbane)
-  - Fever Brisbane (feverup.com/en/brisbane)
-  - WeekendNotes Brisbane (weekendnotes.com/brisbane)
-  - My Community Diary Queensland (mycommunitydiary.com.au)
-  - ClassBento Brisbane (classbento.com.au/workshops-brisbane)
-  - Meetup Brisbane groups (meetup.com)
-  - Visit Brisbane (visit.brisbane.qld.au/whats-on)
-  - Brisbane City Council What's On (brisbane.qld.gov.au/events-arts-and-culture/what-s-on-in-brisbane)
-  - Queensland.com Brisbane Events — Tourism & Events Queensland (queensland.com/au/en/things-to-do/events/brisbane-events)
-  - Concrete Playground Brisbane (concreteplayground.com/brisbane)
-  - Humanitix Brisbane (humanitix.com/au/events/brisbane)
-  - AllEvents Brisbane (allevents.in/brisbane)
-  - Eventfinda Brisbane (eventfinda.com.au/whatson/events/brisbane)
-  - Ticketmaster Brisbane (ticketmaster.com.au)
-  - Moshtix Brisbane (moshtix.com.au)
-  - Oztix Brisbane (oztix.com.au)
-  - The Creative Issue (thecreativeissue.com.au)
-  - Scenestr Brisbane (scenestr.com.au/brisbane)
-  - Musick.com.au Brisbane gigs listing (musick.com.au)
-  - Brisbane Unlocked (brisbaneunlocked.com.au)
-  - Secret Brisbane (secretbrisbane.co)
-  - Facebook Events (facebook.com/events)
-  - Mutual Events (mutualevents.com)
+    - name: Eventbrite Brisbane
+      method: llm
+      domains:
+        - eventbrite.com.au
+    - name: Eventfinda Brisbane
+      method: llm
+      domains:
+        - brisbane.eventfinda.com.au
+    - name: Humanitix Brisbane
+      method: llm
+      domains:
+        - events.humanitix.com
+    - name: Must Do Brisbane
+      method: llm
+      domains:
+        - mustdobrisbane.com
+      listingUrls:
+        - https://www.mustdobrisbane.com/whats-on
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-02: no listing page cleared the promotion gate.'
+    - name: The Urban List Brisbane
+      method: llm
+      domains:
+        - theurbanlist.com
+      homepage: https://theurbanlist.com/
+      listingUrls:
+        - https://theurbanlist.com/
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Broadsheet Brisbane
+      method: llm
+      domains:
+        - broadsheet.com.au
+    - name: Fever Brisbane
+      method: llm
+      domains:
+        - feverup.com
+    - name: WeekendNotes Brisbane
+      method: scraper
+      domains:
+        - weekendnotes.com
+      listingUrls:
+        - https://www.weekendnotes.com/brisbane/whats-on/
+        - https://www.weekendnotes.com/brisbane/
+        - https://www.weekendnotes.com/brisbane/markets/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 33 dated event(s) via html.'
+    - name: My Community Diary Queensland
+      method: llm
+      domains:
+        - mycommunitydiary.com.au
+    - name: ClassBento Brisbane
+      method: llm
+      domains:
+        - classbento.com.au
+    - name: Meetup Brisbane groups
+      method: llm
+      domains:
+        - meetup.com
+    - id: visitbrisbane
+      name: Visit Brisbane (Brisbane Economic Development Agency)
+      method: llm
+      domains:
+        - visit.brisbane.qld.au
+      homepage: https://visit.brisbane.qld.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: null
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+      schedule: weekly
+      note: >-
+        This is a city-wide aggregator, not a single venue (venue fields intentionally null). Task
+        flags "confirm events path" — not located this session (network blocked).
+    - id: brisbane-city-council
+      name: Brisbane City Council What's On
+      method: llm
+      domains:
+        - brisbane.qld.gov.au
+      homepage: https://www.brisbane.qld.gov.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: null
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+      schedule: weekly
+      note: >-
+        Candidate, city-wide aggregator (covers Botanic Gardens / Planetarium events too, which have
+        no dedicated domain). Not verified this session.
+    - name: Queensland.com Brisbane Events
+      method: llm
+      domains:
+        - queensland.com
+    - name: Concrete Playground Brisbane
+      method: llm
+      domains:
+        - concreteplayground.com
+      homepage: https://concreteplayground.com/
+      listingUrls:
+        - https://concreteplayground.com/brisbane/events
+      strategy: jsonld
+      schedule: weekly
+      venue:
+        name: Brisbane
+        address: Brisbane
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Humanitix Brisbane
+      method: llm
+      domains:
+        - humanitix.com
+    - name: AllEvents Brisbane
+      method: llm
+      domains:
+        - allevents.in
+    - name: Eventfinda Brisbane
+      method: llm
+      domains:
+        - eventfinda.com.au
+    - name: Ticketmaster Brisbane
+      method: llm
+      domains:
+        - ticketmaster.com.au
+    - name: Moshtix Brisbane
+      method: llm
+      domains:
+        - moshtix.com.au
+    - name: Oztix Brisbane
+      method: llm
+      domains:
+        - oztix.com.au
+    - name: The Creative Issue
+      method: llm
+      domains:
+        - thecreativeissue.com.au
+    - name: Scenestr Brisbane
+      method: llm
+      domains:
+        - scenestr.com.au
+      homepage: https://scenestr.com.au/
+      listingUrls:
+        - https://scenestr.com.au/events
+        - https://scenestr.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Musick.com.au Brisbane gigs listing
+      method: scraper
+      domains:
+        - musick.com.au
+      homepage: https://musick.com.au/
+      listingUrls:
+        - https://musick.com.au/events
+        - https://musick.com.au/brisbane/gigs
+        - https://musick.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 84 dated event(s) via html.'
+    - name: Brisbane Unlocked
+      method: scraper
+      domains:
+        - brisbaneunlocked.com.au
+      homepage: https://brisbaneunlocked.com.au/
+      listingUrls:
+        - https://www.brisbaneunlocked.com.au/events
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 24 dated event(s) via html.'
+    - name: Secret Brisbane
+      method: llm
+      domains:
+        - secretbrisbane.co
+    - name: Facebook Events
+      method: llm
+      domains:
+        - facebook.com
+    - name: Mutual Events
+      method: llm
+      domains:
+        - mutualevents.com
+    - name: BNE ART
+      method: llm
+      domains:
+        - bneart.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
   institutions:
-  - Brisbane City Council events (brisbane.qld.gov.au/whats-on)
-  - Queensland State Library (slq.qld.gov.au)
-  - QUT public events (qut.edu.au/events)
-  - UQ public events (events.uq.edu.au)
-  - Griffith University events (griffith.edu.au/events)
-  - Brisbane Powerhouse (brisbanepowerhouse.org)
-  - QAGOMA & Gallery of Modern Art (qagoma.qld.gov.au/whats-on)
-  - QPAC (qpac.com.au/whats-on)
-  - Queensland Museum Brisbane (museum.qld.gov.au/brisbane/queensland-museum)
-  - Museum of Brisbane (museumofbrisbane.com.au/whats-on)
-  - Judith Wright Centre (judithwrightcentre.com)
-  - South Bank Parklands events (visitsouthbank.com.au)
-  - Queensland Theatre (queenslandtheatre.com.au/whats-on)
-  - La Boite Theatre (laboite.com.au/whats-on)
-  - Queensland Symphony Orchestra (qso.com.au/whats-on)
-  - Queensland Ballet (queenslandballet.com.au/whats-on)
-  - Opera Queensland (operaq.com.au)
-  - Metro Arts (metroarts.com.au)
-  - Brisbane Festival (brisbanefestival.com.au)
-  - Brisbane Writers Festival (bwf.org.au)
-  - Queensland Writers Centre (queenslandwriters.org.au)
-  - Anywhere Festival (anywhere.is)
-  - The Tivoli (thetivoli.com.au)
-  - Fortitude Music Hall (fortitudemusichall.com.au)
-  - Brisbane Convention & Exhibition Centre (bcec.com.au)
-  - Riverstage (riverstage.com.au)
-  - Suncorp Stadium (suncorpstadium.com.au)
-  - City Botanic Gardens / Brisbane Botanic Gardens Mt Coot-tha events (via Brisbane
-    City Council)
-  - Queensland Maritime Museum (maritimemuseum.com.au)
-  - Queensland Museum (qm.qld.gov.au)
-  - Brisbane Convention & Exhibition Centre (bccem.com.au)
-  - The University of Queensland (uq.edu.au)
-  - Queensland Performing Arts Centre (QPAC) (qpac.com.au)
-  - Queensland Art Gallery | Gallery of Modern Art (QAGOMA) (qagoma.qld.gov.au)
-  - University of Queensland Union (UQU) (uqu.com.au/what-s-on)
+    - name: Brisbane City Council events
+      method: llm
+      domains:
+        - brisbane.qld.gov.au
+    - id: slq
+      name: State Library of Queensland
+      method: llm
+      domains:
+        - slq.qld.gov.au
+      homepage: https://www.slq.qld.gov.au/
+      listingUrls:
+        - https://www.slq.qld.gov.au/
+      strategy: html
+      venue:
+        name: State Library of Queensland
+        address: Stanley Place, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - SLQ
+          - State Library
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: QUT public events
+      method: llm
+      domains:
+        - qut.edu.au
+    - name: UQ public events
+      method: llm
+      domains:
+        - events.uq.edu.au
+    - id: griffith-art-museum
+      name: Griffith University Art Museum
+      method: llm
+      domains:
+        - griffith.edu.au
+      homepage: https://www.griffith.edu.au/griffith-university-art-museum
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Griffith University Art Museum
+        address: 226 Grey St
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - Griffith University Art Museum
+          - GUAM
+      schedule: weekly
+      note: Candidate — not verified this session.
+    - id: brisbane-powerhouse
+      name: Brisbane Powerhouse
+      method: scraper
+      domains:
+        - brisbanepowerhouse.org
+      homepage: https://www.brisbanepowerhouse.org/
+      listingUrls:
+        - https://brisbanepowerhouse.org/whats-on/
+      strategy: html
+      venue:
+        name: Brisbane Powerhouse
+        address: 119 Lamington St
+        suburb: New Farm
+        lat: null
+        lng: null
+        aliases:
+          - Brisbane Powerhouse
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 3 dated event(s) via html.'
+    - id: qagoma
+      name: Queensland Art Gallery | Gallery of Modern Art (QAGOMA)
+      method: scraper
+      domains:
+        - qagoma.qld.gov.au
+        - qtix.com.au
+      homepage: https://www.qagoma.qld.gov.au/
+      listingUrls:
+        - https://www.qagoma.qld.gov.au/whats-on/exhibitions/
+        - https://www.qagoma.qld.gov.au/whats-on
+        - https://www.qagoma.qld.gov.au/
+      strategy: html
+      venue:
+        name: Queensland Art Gallery | Gallery of Modern Art
+        address: Stanley Place, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - QAGOMA
+          - GOMA
+          - Queensland Art Gallery
+          - Gallery of Modern Art
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 22 dated event(s) via html.'
+    - id: qpac
+      name: Queensland Performing Arts Centre (QPAC)
+      method: scraper
+      domains:
+        - qpac.com.au
+        - qtix.com.au
+      homepage: https://www.qpac.com.au/
+      listingUrls:
+        - https://www.qpac.com.au/
+        - https://www.qpac.com.au/
+        - https://www.qpac.com.au/whats-on
+      strategy: html
+      venue:
+        name: Queensland Performing Arts Centre
+        address: Grey St, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - QPAC
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 29 dated event(s) via html.'
+    - id: qldmuseum
+      name: Queensland Museum
+      method: llm
+      domains:
+        - museum.qld.gov.au
+      homepage: https://www.museum.qld.gov.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Queensland Museum
+        address: Grey St, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - Queensland Museum
+          - QM
+      schedule: weekly
+      note: >-
+        Task flags "confirm the What's On path" — not located this session (network blocked).
+        listingUrls intentionally left empty rather than guessed.
+    - id: museum-of-brisbane
+      name: Museum of Brisbane (City Hall)
+      method: scraper
+      domains:
+        - museumofbrisbane.com.au
+      homepage: https://www.museumofbrisbane.com.au/
+      listingUrls:
+        - https://www.museumofbrisbane.com.au/whats-on
+        - https://www.museumofbrisbane.com.au/events
+      strategy: html
+      venue:
+        name: Museum of Brisbane
+        address: King George Square (Brisbane City Hall)
+        suburb: Brisbane City
+        lat: null
+        lng: null
+        aliases:
+          - Museum of Brisbane
+          - MoB
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 5 dated event(s) via html.'
+    - name: Judith Wright Centre
+      method: llm
+      domains:
+        - judithwrightcentre.com
+    - id: southbank
+      name: Visit South Bank (South Bank Parklands)
+      method: scraper
+      domains:
+        - visitsouthbank.com.au
+      homepage: https://www.visitsouthbank.com.au/
+      listingUrls:
+        - https://www.visitsouthbank.com.au/whats-on
+        - https://www.visitsouthbank.com.au/
+      strategy: html
+      venue:
+        name: South Bank Parklands
+        address: Grey St, South Bank
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - South Bank
+          - South Bank Parklands
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 48 dated event(s) via html.'
+    - id: queensland-theatre
+      name: Queensland Theatre
+      method: scraper
+      domains:
+        - queenslandtheatre.com.au
+      homepage: https://queenslandtheatre.com.au/
+      listingUrls:
+        - https://queenslandtheatre.com.au/whats-on
+        - https://queenslandtheatre.com.au/
+      strategy: html
+      venue:
+        name: Queensland Theatre
+        address: 78 Montague Rd
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - Queensland Theatre
+          - QT
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+    - id: la-boite
+      name: La Boite Theatre
+      method: scraper
+      domains:
+        - laboite.com.au
+      homepage: https://laboite.com.au/
+      listingUrls:
+        - https://laboite.com.au/season-2026
+      strategy: html
+      venue:
+        name: La Boite Theatre
+        address: null
+        suburb: Kelvin Grove
+        lat: null
+        lng: null
+        aliases:
+          - La Boite
+          - La Boite Theatre Company
+      schedule: weekly
+      note: >-
+        Verified by probe-sources 2026-09-02: 1 dated event(s) via html (listing URL found by web
+        search, then verified).
+    - name: Queensland Symphony Orchestra
+      method: scraper
+      domains:
+        - qso.com.au
+      homepage: https://qso.com.au/
+      listingUrls:
+        - https://qso.com.au/events
+        - https://qso.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+    - name: Queensland Ballet
+      method: llm
+      domains:
+        - queenslandballet.com.au
+      listingUrls:
+        - https://www.queenslandballet.com.au/performances/2026
+      homepage: https://queenslandballet.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Opera Queensland
+      method: scraper
+      domains:
+        - operaq.com.au
+      homepage: https://operaq.com.au/
+      listingUrls:
+        - https://operaq.com.au/whats-on/
+        - https://operaq.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+    - id: metro-arts
+      name: Metro Arts
+      method: scraper
+      domains:
+        - metroarts.com.au
+      homepage: https://metroarts.com.au/
+      listingUrls:
+        - https://metroarts.com.au/whats-on/
+        - https://metroarts.com.au/live-events/
+        - https://metroarts.com.au/
+      strategy: html
+      venue:
+        name: Metro Arts
+        address: null
+        suburb: Brisbane City
+        lat: null
+        lng: null
+        aliases:
+          - Metro Arts
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+    - id: brisbane-festival
+      name: Brisbane Festival
+      method: scraper
+      domains:
+        - brisbanefestival.com.au
+      homepage: https://brisbanefestival.com.au/
+      listingUrls:
+        - https://brisbanefestival.com.au/events
+        - https://www.brisbanefestival.com.au/whats-on
+        - https://brisbanefestival.com.au/
+      strategy: html
+      venue:
+        name: null
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 107 dated event(s) via html.'
+    - name: Brisbane Writers Festival
+      method: llm
+      domains:
+        - bwf.org.au
+      homepage: https://bwf.org.au/
+      listingUrls:
+        - https://bwf.org.au/
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Queensland Writers Centre
+      method: scraper
+      domains:
+        - queenslandwriters.org.au
+      homepage: https://queenslandwriters.org.au/
+      listingUrls:
+        - https://www.queenslandwriters.org.au/events
+        - https://queenslandwriters.org.au/whats-on
+      strategy: html
+      schedule: weekly
+      note: >-
+        Verified by probe-sources 2026-09-02: 8 dated event(s) via html (listing URL found by web
+        search, then verified).
+    - name: Anywhere Festival
+      method: llm
+      domains:
+        - anywhere.is
+      homepage: https://anywhere.is/
+      listingUrls:
+        - https://anywhere.is/events
+        - https://anywhere.is/
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - id: the-tivoli
+      name: The Tivoli
+      method: scraper
+      domains:
+        - thetivoli.com.au
+      homepage: https://thetivoli.com.au/
+      listingUrls:
+        - https://thetivoli.com.au/events
+        - https://thetivoli.com.au/
+      strategy: html
+      venue:
+        name: The Tivoli
+        address: 52 Costin St
+        suburb: Fortitude Valley
+        lat: null
+        lng: null
+        aliases:
+          - The Tivoli
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+    - id: fortitude-music-hall
+      name: Fortitude Music Hall
+      method: scraper
+      domains:
+        - fortitudemusichall.com.au
+        - thefortitudemusichall.com
+        - thefortitude.com.au
+      homepage: https://thefortitude.com.au/
+      listingUrls:
+        - https://thefortitude.com.au/
+      strategy: html
+      venue:
+        name: Fortitude Music Hall
+        address: 66 Doggett St
+        suburb: Fortitude Valley
+        lat: null
+        lng: null
+        aliases:
+          - Fortitude Music Hall
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 6 dated event(s) via html.'
+    - name: Brisbane Convention & Exhibition Centre
+      method: scraper
+      domains:
+        - bcec.com.au
+        - bccem.com.au
+      homepage: https://bcec.com.au/
+      listingUrls:
+        - https://www.bcec.com.au/whats-on/
+        - https://bcec.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+    - id: riverstage
+      name: Riverstage
+      method: llm
+      domains:
+        - riverstage.com.au
+        - riverstage.brisbane.qld.gov.au
+      homepage: https://riverstage.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Riverstage
+        address: Gardens Point Rd
+        suburb: Brisbane City
+        lat: null
+        lng: null
+        aliases:
+          - Riverstage
+      schedule: weekly
+      note: >-
+        Candidate — two conflicting domains in the existing source list, canonical one not confirmed
+        this session (network blocked).
+    - name: Suncorp Stadium
+      method: llm
+      domains:
+        - suncorpstadium.com.au
+      homepage: https://suncorpstadium.com.au/
+      listingUrls:
+        - https://www.suncorpstadium.com.au/what-s-on.aspx
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: City Botanic Gardens / Brisbane Botanic Gardens Mt Coot-tha events
+      method: llm
+    - id: maritime-museum
+      name: Queensland Maritime Museum
+      method: scraper
+      domains:
+        - maritimemuseum.com.au
+      homepage: https://www.maritimemuseum.com.au/
+      listingUrls:
+        - https://www.maritimemuseum.com.au/
+      strategy: html
+      venue:
+        name: Queensland Maritime Museum
+        address: 412 Stanley St
+        suburb: South Brisbane
+        lat: null
+        lng: null
+        aliases:
+          - Queensland Maritime Museum
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+    - name: Queensland Museum
+      method: llm
+      domains:
+        - qm.qld.gov.au
+    - id: uq-art-museum
+      name: UQ Art Museum
+      method: scraper
+      domains:
+        - art-museum.uq.edu.au
+        - uq.edu.au
+      homepage: https://art-museum.uq.edu.au/
+      listingUrls:
+        - https://art-museum.uq.edu.au/events
+      strategy: html
+      venue:
+        name: UQ Art Museum
+        address: William St
+        suburb: St Lucia
+        lat: null
+        lng: null
+        aliases:
+          - UQ Art Museum
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 3 dated event(s) via html.'
+    - name: University of Queensland Union
+      method: llm
+      domains:
+        - uqu.com.au
+    - id: qtix
+      name: QTIX (ticketing — delegate for QAGOMA, QPAC)
+      method: scraper
+      domains:
+        - qtix.com.au
+      homepage: https://www.qtix.com.au/
+      listingUrls:
+        - https://www.qtix.com.au/
+        - https://www.qtix.com.au/
+        - https://www.qtix.com.au/whats-on
+      strategy: html
+      venue:
+        name: QTIX
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases:
+          - QTIX
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 57 dated event(s) via html.'
+    - id: howard-smith-wharves
+      name: Howard Smith Wharves
+      method: llm
+      domains: []
+      homepage: null
+      strategy: html
+      venue:
+        name: Howard Smith Wharves
+        address: 5 Boundary St
+        suburb: Brisbane City
+        lat: null
+        lng: null
+        aliases:
+          - Howard Smith Wharves
+          - HSW
+      schedule: weekly
+      note: >-
+        Candidate — no domain hint found anywhere in the existing source list; homepage not guessed
+        (would need a live search to confirm rather than assumed). Needs verification before any URL
+        is written here.
+    - name: Artisan
+      method: llm
+      domains:
+        - artisan.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Brisbane Showgrounds
+      method: llm
+      domains:
+        - brisbaneshowgrounds.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Ipswich Art Gallery
+      method: scraper
+      domains:
+        - ipswichartgallery.qld.gov.au
+      note: >-
+        Verified by probe-sources 2026-09-02: 10 dated event(s) via html (listing URL found by web
+        search, then verified).
+      homepage: https://ipswichartgallery.qld.gov.au/
+      listingUrls:
+        - https://www.ipswichartgallery.qld.gov.au/whats-on/
+        - https://ipswichartgallery.qld.gov.au/
+      strategy: html
+      schedule: weekly
+    - name: LoganARTS
+      method: scraper
+      domains:
+        - loganarts.com.au
+      note: 'Verified by probe-sources 2026-09-02: 27 dated event(s) via html.'
+      homepage: https://loganarts.com.au/
+      listingUrls:
+        - https://loganarts.com.au/events
+        - https://loganarts.com.au/
+      strategy: html
+      schedule: weekly
+    - name: Redland Performing Arts Centre (RPAC)
+      method: scraper
+      domains:
+        - rpac.com.au
+      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+      homepage: https://rpac.com.au/
+      listingUrls:
+        - https://rpac.com.au/
+      strategy: html
+      schedule: weekly
+    - name: Queensland Youth Orchestras
+      method: llm
+      domains:
+        - qyo.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: QUT Gardens Theatre
+      method: llm
+      domains:
+        - gardenstheatre.qut.edu.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Camerata – Queensland's Chamber Orchestra
+      method: llm
+      domains:
+        - camerata.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Old Government House
+      method: llm
+      domains:
+        - oldgovernmenthouse.qut.edu.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Newstead House
+      method: llm
+      domains:
+        - newsteadhouse.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Royal Historical Society of Queensland
+      method: llm
+      domains:
+        - rhsq.edu.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Miegunyah House (Queensland Women's Historical Association)
+      method: llm
+      domains:
+        - miegunyahhouse.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: World Science Festival Brisbane
+      method: llm
+      domains:
+        - worldsciencefestival.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Onespace Gallery
+      method: llm
+      domains:
+        - onespace.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Birrunga Gallery
+      method: llm
+      domains:
+        - birrunga.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Creative Room Art Space
+      method: llm
+      domains:
+        - creativeroom.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: PARKER Contemporary
+      method: llm
+      domains:
+        - parkercontemporary.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Latrobe Art Space
+      method: llm
+      domains:
+        - latrobeartspace.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Graydon Gallery
+      method: llm
+      domains:
+        - graydongallery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Boxcopy
+      method: llm
+      domains:
+        - boxcopy.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Media Art Asia Pacific
+      method: llm
+      domains:
+        - maap.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: House Conspiracy
+      method: llm
+      domains:
+        - houseconspiracy.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: MacArthur Museum Brisbane
+      method: llm
+      domains:
+        - mmb.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Abbey Museum of Art and Archaeology
+      method: llm
+      domains:
+        - abbeymuseum.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Queensland Holocaust Museum
+      method: llm
+      domains:
+        - hmq.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Macleay Island Arts Complex
+      method: llm
+      domains:
+        - miac.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Ipswich Libraries
+      method: llm
+      domains:
+        - ipswichlibraries.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Logan City Council Libraries
+      method: llm
+      domains:
+        - loganlibraries.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Redcliffe Entertainment Centre
+      method: llm
+      domains:
+        - redcliffeentertainmentcentre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Ipswich Civic Centre
+      method: llm
+      domains:
+        - ipswichciviccentre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Studio 188
+      method: llm
+      domains:
+        - studio188.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Redland Art Gallery
+      method: llm
+      domains:
+        - artgallery.redland.qld.gov.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Queensland Academies Creative Industries
+      method: llm
+      domains:
+        - qaci.eq.edu.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: University of the Sunshine Coast
+      method: llm
+      domains:
+        - usc.edu.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Australian Catholic University
+      method: llm
+      domains:
+        - acu.edu.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: University of Southern Queensland
+      method: llm
+      domains:
+        - unisq.edu.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Southern Cross University
+      method: llm
+      domains:
+        - scu.edu.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: TAFE Queensland
+      method: llm
+      domains:
+        - tafeqld.edu.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Pip Theatre
+      method: llm
+      domains:
+        - piptheatre.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Observatory Theatre
+      method: llm
+      domains:
+        - observatorytheatre.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Nash Theatre
+      method: llm
+      domains:
+        - nashtheatre.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane Philharmonic Orchestra
+      method: llm
+      domains:
+        - bpo.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane Symphony Orchestra
+      method: llm
+      domains:
+        - brisbanesymphony.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Australasian Dance Collective
+      method: llm
+      domains:
+        - australasiandancecollective.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane City Opera
+      method: llm
+      domains:
+        - brisbanecityopera.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Phoenix Ensemble
+      method: llm
+      domains:
+        - phoenixensemble.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Savoyards Musical Theatre
+      method: llm
+      domains:
+        - savoyards.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Beenleigh Theatre Group
+      method: llm
+      domains:
+        - beenleightheatregroup.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Redcliffe Musical Theatre
+      method: llm
+      domains:
+        - redcliffemusicaltheatre.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane City Pops Orchestra
+      method: llm
+      domains:
+        - bcpo.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sunnybank Theatre Group
+      method: llm
+      domains:
+        - sunnybanktheatre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Ipswich Little Theatre
+      method: llm
+      domains:
+        - ilt.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Act 1 Theatre
+      method: llm
+      domains:
+        - act1theatre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: SunPAC
+      method: llm
+      domains:
+        - sunpac.net.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Centenary Theatre Group
+      method: llm
+      domains:
+        - centenarytheatre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sandgate Theatre
+      method: llm
+      domains:
+        - sandgatetheatre.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane Concert Orchestra
+      method: llm
+      domains:
+        - bco.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Queensland Choir
+      method: llm
+      domains:
+        - qldchoir.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Queensland Medical Orchestra
+      method: llm
+      domains:
+        - qmo.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Ensemble Q
+      method: llm
+      domains:
+        - ensembleqaustralia.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Indooroopilly Chamber Orchestra
+      method: llm
+      domains:
+        - ico.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Blue Roo Theatre Company
+      method: llm
+      domains:
+        - bluerootheatrecompany.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane History Group
+      method: llm
+      domains:
+        - brisbanehistorygroup.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane Astronomical Society
+      method: llm
+      domains:
+        - bas.asn.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sandgate Museum
+      method: llm
+      domains:
+        - sandgatemuseum.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Friends of the Brisbane Botanic Gardens & Sherwood Arboretum
+      method: llm
+      domains:
+        - fbbgsa.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: South East Queensland Astronomical Society
+      method: llm
+      domains:
+        - seqas.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Toowong and District Historical Society
+      method: llm
+      domains:
+        - toowonghistory.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Windsor & Districts' Historical Society
+      method: llm
+      domains:
+        - windsorhistorical.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Annerley-Stephens History Group
+      method: llm
+      domains:
+        - annerleystephenshistory.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Kenmore and District Historical Society
+      method: llm
+      domains:
+        - kenmorehistory.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Moggill Historical Society
+      method: llm
+      domains:
+        - moggillhistorical.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Richlands, Inala and Suburbs History Group
+      method: llm
+      domains:
+        - rihghistory.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane Tramway Museum
+      method: llm
+      domains:
+        - brisbanetramwaymuseum.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Redlands Coast Museum
+      method: llm
+      domains:
+        - redlandscoastmuseum.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Ipswich Historical Society
+      method: llm
+      domains:
+        - ipswichhistoricalsociety.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Friends of the Queensland Police Museum
+      method: llm
+      domains:
+        - friendsqpmuseum.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Wynnum Manly Historical Society
+      method: llm
+      domains:
+        - wmhs.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Fort Lytton Historical Association
+      method: llm
+      domains:
+        - fortlytton.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Friends of Toowong Cemetery
+      method: llm
+      domains:
+        - fotc.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Astronomical Association of Queensland
+      method: llm
+      domains:
+        - aaq.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Redlands Astronomical Society
+      method: llm
+      domains:
+        - ras.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Southern Astronomical Society
+      method: llm
+      domains:
+        - sas.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Chermside & Districts Historical Society
+      method: llm
+      domains:
+        - chermsidedistrict.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Centenary Suburbs Historical Society
+      method: llm
+      domains:
+        - cshsoc.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
   independents:
-  - Institute of Modern Art Brisbane (ima.org.au/ima-events)
-  - Milani Gallery West End (milanigallery.com.au/exhibitions)
-  - Jan Murphy Gallery Fortitude Valley (janmurphygallery.com.au)
-  - The Station Brisbane Fortitude Valley (thestationbrisbane.com)
-  - Lightspace gallery & events Fortitude Valley (lightspace.net.au)
-  - BY.ARTISANS West End — workshops, art classes, social events
-  - HSBNE Hackerspace Brisbane (hsbne.org)
-  - Brisbane Makerspace (brisbanemaker.space)
-  - The Triffid Fortitude Valley (thetriffid.com.au)
-  - Crowbar Brisbane Fortitude Valley (crowbarbrisbane.com.au)
-  - Fortitude Music Hall (thefortitude.com.au/whats-on)
-  - Black Bear Lodge Fortitude Valley (blackbearlodge.bar/events)
-  - Palace Cinemas Brisbane (palacecinemas.com.au/events)
-  - Dendy Powerhouse cinema New Farm (powerhouse.dendy.com.au)
-  - New Farm Cinemas (newfarmcinemas.com.au)
-  - Avid Reader bookshop & café West End (avidreader.com.au/events)
-  - The Bearded Lady West End — music, comedy, cabaret (thebeardedlady.com.au)
-  - The Boundary Hotel West End (theboundary.com.au)
-  - Wandering Cooks West End — food & community events (wanderingcooks.com.au)
-  - Archive Bar West End — open mic nights
-  - Newmarket Hotel — open mic comedy
-  - Creative Mornings Brisbane (creativemornings.com/cities/bne)
-  - Open Sessions Brisbane open mic circuit (theopensessions.com)
-  - Creative Lunch Club Brisbane (creativelunchclub.com/c/brisbane)
-  - Board Game BBQ Brisbane (boardgamebbq.com/events)
-  - Philosophy Cafe Meet Up Brisbane (meetup.com/The-Philosophy-Cafe-Meet-Up)
-  - Sonder Language Exchange at The Burrow West End (theburrowwestend.com.au)
-  - Riverbend Books, Bulimba (riverbendbooks.com.au/events)
-  - Where the Wild Things Are bookshop (wherethewildthingsare.com.au)
-  - Books@Stones, Stones Corner (booksatstones.com.au)
-  - Black Cat Books / Pulp Fiction Booksellers (pulpfictionbooks.com.au)
-  - The Mad Hatters Bookshop (madhattersbookshop.com.au)
-  - Bright and Early Books (brightandearlybooks.com.au)
-  - Scrumptious Reads, Red Hill (scrumptiousreads.com.au)
-  - The Zoo, Fortitude Valley (thezoo.com.au)
-  - The Brightside, Fortitude Valley (thebrightsidebrisbane.com.au)
-  - Crowbar Brisbane (crowbarbrisbane.com)
-  - Black Bear Lodge (blackbearlodge.com.au)
-  - Brooklyn Standard (brooklynstandard.com.au)
-  - Lefty's Music Hall (leftysmusichall.com)
-  - The Bearded Lady, West End (thebeardedladywestend.com)
-  - The Junk Bar, Ashgrove (thejunkbar.com.au)
-  - Ric's Bar, Fortitude Valley (ricsbar.com.au)
-  - It's Still A Secret (itsstillasecret.com.au)
-  - The Flamin' Galah (flamingalah.com.au)
-  - Valley Loft (valleyloft.com.au)
-  - The Princess Theatre, Woolloongabba (princesstheatre.com.au)
-  - The Old Museum, Bowen Hills (theoldmuseum.org)
-  - Doo-Bop Jazz Bar (doo-bop.com.au)
-  - Seven Hills Hub / Backbone Youth Arts (backbone.org.au)
-  - Jugglers Art Space, Fortitude Valley (jugglersartspace.com.au)
-  - Outer Space artist-run gallery (outerspace.org.au)
-  - Wonderland Festival / Wonderland Brisbane events
-  - shake & stir theatre co (shakeandstir.com.au)
-  - Circa contemporary circus (circa.org.au)
-  - Off the Grid Brisbane (offthegridbrisbane.com)
-  - VENTspace (ventspace.com.au)
-  - Side Gallery (sidegallery.com.au)
-  - Outer Space (outerspace.org)
-  - John Mills Himself (johnmillshimself.com.au)
-  - Brisbane Street Art Festival (bsafest.com.au)
-  - The Great Artist Market (thegreatartistmarket.com)
-  - West End Film Festival (westendfilmfestival.com.au)
-  - Connecting Things Brisbane (connectingthings.co)
-  - Brisbane Illustration Fair (brisbaneillustrationfair.com)
-  - Creatives Community Brisbane (creativescommunity.com.au)
-  - Quick Brown Fox Bookshop (quickbrownfoxbookshop.com.au/events-list)
-  - Brisbane Makerspace (brisbanemakerspace.com.au/workshops)
-  - The Princess Theatre (theprincesstheatre.com.au/whats-on)
-  - Fortitude Music Hall (thefortitudemusichall.com/whats-on)
-  - Riverstage (riverstage.brisbane.qld.gov.au/whats-on)
-  - Ad Astra (adastratheatre.com)
+    - id: ima
+      name: Institute of Modern Art (IMA)
+      method: llm
+      domains:
+        - ima.org.au
+      homepage: https://ima.org.au/
+      listingUrls:
+        - https://ima.org.au/exhibitions/
+        - https://ima.org.au/
+      strategy: html
+      venue:
+        name: Institute of Modern Art
+        address: 420 Brunswick St
+        suburb: Fortitude Valley
+        lat: null
+        lng: null
+        aliases:
+          - IMA
+          - Institute of Modern Art
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Milani Gallery West End
+      method: scraper
+      domains:
+        - milanigallery.com.au
+      homepage: https://milanigallery.com.au/
+      listingUrls:
+        - https://milanigallery.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 1 dated event(s) via html.'
+    - name: Jan Murphy Gallery Fortitude Valley
+      method: scraper
+      domains:
+        - janmurphygallery.com.au
+      homepage: https://janmurphygallery.com.au/
+      listingUrls:
+        - https://www.janmurphygallery.com.au/exhibitions/
+        - https://janmurphygallery.com.au/
+        - https://janmurphygallery.com.au/
+      strategy: html
+      schedule: weekly
+      note: >-
+        Verified by probe-sources 2026-09-02: 4 dated event(s) via html (listing URL found by web
+        search, then verified).
+    - name: The Station Brisbane Fortitude Valley
+      method: llm
+      domains:
+        - thestationbrisbane.com
+    - name: Lightspace gallery & events Fortitude Valley
+      method: llm
+      domains:
+        - lightspace.net.au
+    - name: BY.ARTISANS West End
+      method: llm
+    - name: HSBNE Hackerspace Brisbane
+      method: llm
+      domains:
+        - hsbne.org
+    - name: Brisbane Makerspace
+      method: llm
+      domains:
+        - brisbanemaker.space
+        - brisbanemakerspace.com.au
+      homepage: https://brisbanemaker.space/
+      listingUrls:
+        - https://brisbanemaker.space/whats-on
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: The Triffid Fortitude Valley
+      method: scraper
+      domains:
+        - thetriffid.com.au
+      homepage: https://thetriffid.com.au/
+      listingUrls:
+        - https://thetriffid.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 6 dated event(s) via html.'
+    - name: Crowbar Brisbane Fortitude Valley
+      method: llm
+      domains:
+        - crowbarbrisbane.com.au
+    - name: Black Bear Lodge Fortitude Valley
+      method: llm
+      domains:
+        - blackbearlodge.bar
+    - name: Palace Cinemas Brisbane
+      method: scraper
+      domains:
+        - palacecinemas.com.au
+      homepage: https://palacecinemas.com.au/
+      listingUrls:
+        - https://www.palacecinemas.com.au/cinemas/palace-barracks
+        - https://palacecinemas.com.au/events
+        - https://www.palacecinemas.com.au/cinemas/palace-james-st
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 28 dated event(s) via html.'
+    - name: Dendy Powerhouse cinema New Farm
+      method: llm
+      domains:
+        - powerhouse.dendy.com.au
+    - name: New Farm Cinemas
+      method: llm
+      domains:
+        - newfarmcinemas.com.au
+    - name: Avid Reader bookshop & café West End
+      method: llm
+      domains:
+        - avidreader.com.au
+    - name: The Bearded Lady West End
+      method: llm
+      domains:
+        - thebeardedlady.com.au
+    - name: The Boundary Hotel West End
+      method: scraper
+      domains:
+        - theboundary.com.au
+      homepage: https://theboundary.com.au/
+      listingUrls:
+        - https://theboundary.com.au/whats-on
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 1 dated event(s) via html.'
+    - name: Wandering Cooks West End
+      method: llm
+      domains:
+        - wanderingcooks.com.au
+    - name: Archive Bar West End
+      method: llm
+    - name: Newmarket Hotel
+      method: llm
+    - name: Creative Mornings Brisbane
+      method: scraper
+      domains:
+        - creativemornings.com
+      homepage: https://creativemornings.com/
+      listingUrls:
+        - https://creativemornings.com/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 4 dated event(s) via html.'
+    - name: Open Sessions Brisbane open mic circuit
+      method: llm
+      domains:
+        - theopensessions.com
+    - name: Creative Lunch Club Brisbane
+      method: scraper
+      domains:
+        - creativelunchclub.com
+      homepage: https://creativelunchclub.com/
+      listingUrls:
+        - https://www.creativelunchclub.com/meetups
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 8 dated event(s) via html.'
+    - name: Board Game BBQ Brisbane
+      method: llm
+      domains:
+        - boardgamebbq.com
+    - name: Philosophy Cafe Meet Up Brisbane
+      method: llm
+      domains:
+        - meetup.com
+    - name: Sonder Language Exchange at The Burrow West End
+      method: llm
+      domains:
+        - theburrowwestend.com.au
+    - name: Riverbend Books, Bulimba
+      method: scraper
+      domains:
+        - riverbendbooks.com.au
+      homepage: https://riverbendbooks.com.au/
+      listingUrls:
+        - https://riverbendbooks.com.au/events
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+    - name: Where the Wild Things Are bookshop
+      method: llm
+      domains:
+        - wherethewildthingsare.com.au
+    - name: Books@Stones, Stones Corner
+      method: llm
+      domains:
+        - booksatstones.com.au
+      homepage: https://booksatstones.com.au/
+      listingUrls:
+        - https://booksatstones.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Black Cat Books / Pulp Fiction Booksellers
+      method: llm
+      domains:
+        - pulpfictionbooks.com.au
+    - name: The Mad Hatters Bookshop
+      method: scraper
+      domains:
+        - madhattersbookshop.com.au
+      homepage: https://madhattersbookshop.com.au/
+      listingUrls:
+        - https://madhattersbookshop.com.au/c/event-tickets__1
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 1 dated event(s) via html.'
+    - name: Bright and Early Books
+      method: llm
+      domains:
+        - brightandearlybooks.com.au
+    - name: Scrumptious Reads, Red Hill
+      method: llm
+      domains:
+        - scrumptiousreads.com.au
+    - name: The Zoo, Fortitude Valley
+      method: llm
+      domains:
+        - thezoo.com.au
+    - name: The Brightside, Fortitude Valley
+      method: llm
+      domains:
+        - thebrightsidebrisbane.com.au
+    - name: Crowbar Brisbane
+      method: llm
+      domains:
+        - crowbarbrisbane.com
+    - name: Black Bear Lodge
+      method: llm
+      domains:
+        - blackbearlodge.com.au
+    - name: Brooklyn Standard
+      method: llm
+      domains:
+        - brooklynstandard.com.au
+    - name: Lefty's Music Hall
+      method: llm
+      domains:
+        - leftysmusichall.com
+    - name: The Bearded Lady, West End
+      method: llm
+      domains:
+        - thebeardedladywestend.com
+    - name: The Junk Bar, Ashgrove
+      method: llm
+      domains:
+        - thejunkbar.com.au
+    - name: Ric's Bar, Fortitude Valley
+      method: scraper
+      domains:
+        - ricsbar.com.au
+      homepage: https://ricsbar.com.au/
+      listingUrls:
+        - https://ricsbar.com.au/journal
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+    - name: It's Still A Secret
+      method: llm
+      domains:
+        - itsstillasecret.com.au
+    - name: The Flamin' Galah
+      method: llm
+      domains:
+        - flamingalah.com.au
+    - name: Valley Loft
+      method: llm
+      domains:
+        - valleyloft.com.au
+    - id: princess-theatre
+      name: Princess Theatre Woolloongabba
+      method: llm
+      domains:
+        - princesstheatre.com.au
+        - theprincesstheatre.com.au
+      homepage: https://princesstheatre.com.au/
+      listingUrls: []
+      strategy: html
+      venue:
+        name: Princess Theatre
+        address: 8 Annerley Rd
+        suburb: Woolloongabba
+        lat: null
+        lng: null
+        aliases:
+          - Princess Theatre
+      schedule: weekly
+      note: >-
+        Candidate — two conflicting domain variants in the existing source list, canonical one not
+        confirmed this session.
+    - name: The Old Museum, Bowen Hills
+      method: llm
+      domains:
+        - theoldmuseum.org
+    - name: Doo-Bop Jazz Bar
+      method: scraper
+      domains:
+        - doo-bop.com.au
+      homepage: https://doo-bop.com.au/
+      listingUrls:
+        - https://www.doo-bop.com.au/events
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 6 dated event(s) via html.'
+    - name: Seven Hills Hub / Backbone Youth Arts
+      method: llm
+      domains:
+        - backbone.org.au
+    - name: Jugglers Art Space, Fortitude Valley
+      method: llm
+      domains:
+        - jugglersartspace.com.au
+    - name: Outer Space artist-run gallery
+      method: llm
+      domains:
+        - outerspace.org.au
+    - name: Wonderland Festival / Wonderland Brisbane events
+      method: llm
+    - name: shake & stir theatre co
+      method: llm
+      domains:
+        - shakeandstir.com.au
+    - name: Circa contemporary circus
+      method: llm
+      domains:
+        - circa.org.au
+    - name: Off the Grid Brisbane
+      method: llm
+      domains:
+        - offthegridbrisbane.com
+    - name: VENTspace
+      method: llm
+      domains:
+        - ventspace.com.au
+    - name: Side Gallery
+      method: llm
+      domains:
+        - sidegallery.com.au
+      homepage: https://sidegallery.com.au/
+      listingUrls:
+        - https://sidegallery.com.au/exhibitions
+        - https://sidegallery.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Outer Space
+      method: llm
+      domains:
+        - outerspace.org
+    - name: John Mills Himself
+      method: llm
+      domains:
+        - johnmillshimself.com.au
+    - name: Brisbane Street Art Festival
+      method: llm
+      domains:
+        - bsafest.com.au
+    - name: The Great Artist Market
+      method: llm
+      domains:
+        - thegreatartistmarket.com
+    - name: West End Film Festival
+      method: llm
+      domains:
+        - westendfilmfestival.com.au
+      homepage: https://westendfilmfestival.com.au/
+      listingUrls:
+        - https://westendfilmfestival.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Connecting Things Brisbane
+      method: llm
+      domains:
+        - connectingthings.co
+      homepage: https://connectingthings.co/
+      listingUrls:
+        - https://connectingthings.co/
+      strategy: html
+      schedule: weekly
+      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+    - name: Brisbane Illustration Fair
+      method: llm
+      domains:
+        - brisbaneillustrationfair.com
+    - name: Creatives Community Brisbane
+      method: llm
+      domains:
+        - creativescommunity.com.au
+    - name: Quick Brown Fox Bookshop
+      method: scraper
+      domains:
+        - quickbrownfoxbookshop.com.au
+      homepage: https://quickbrownfoxbookshop.com.au/
+      listingUrls:
+        - https://quickbrownfoxbookshop.com.au/events
+        - https://quickbrownfoxbookshop.com.au/
+        - https://quickbrownfoxbookshop.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 8 dated event(s) via html.'
+    - name: The Princess Theatre
+      method: scraper
+      domains:
+        - theprincesstheatre.com.au
+      homepage: https://theprincesstheatre.com.au/
+      listingUrls:
+        - https://theprincesstheatre.com.au/whats-on
+        - https://theprincesstheatre.com.au/
+      strategy: html
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-02: 6 dated event(s) via html.'
+    - name: Riverstage
+      method: llm
+      domains:
+        - riverstage.brisbane.qld.gov.au
+    - name: Ad Astra
+      method: llm
+      domains:
+        - adastratheatre.com
+    - name: The Cave Inn
+      method: scraper
+      domains:
+        - thecaveinn.net
+      note: >-
+        Verified by probe-sources 2026-09-02: 11 dated event(s) via jsonld (listing URL found by web
+        search, then verified).
+      homepage: https://thecaveinn.net/
+      listingUrls:
+        - https://thecaveinn.net/events/
+      strategy: jsonld
+      schedule: weekly
+      venue:
+        name: The Cave Inn, 47 Balaclava St., Woolloongabba, QLD, 4102
+        address: 47 Balaclava St., Woolloongabba, QLD, 4102
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+    - name: Soapbox Beer
+      method: llm
+      domains:
+        - soapbox.beer
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: The Wickham
+      method: llm
+      domains:
+        - thewickham.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Blute's Bar
+      method: llm
+      domains:
+        - blutesbar.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Good Chat Comedy Club
+      method: scraper
+      domains:
+        - goodchatcomedy.com
+      note: >-
+        Verified by probe-sources 2026-09-02: 20 dated event(s) via html (listing URL found by web
+        search, then verified).
+      homepage: https://goodchatcomedy.com/
+      listingUrls:
+        - https://goodchatcomedy.com/
+      strategy: html
+      schedule: weekly
+    - name: Brisbane Comedy Festival
+      method: llm
+      domains:
+        - brisbanecomedyfestival.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: The Sit Down Comedy Club
+      method: scraper
+      domains:
+        - standup.com.au
+      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+      homepage: https://standup.com.au/
+      listingUrls:
+        - https://standup.com.au/
+      strategy: html
+      schedule: weekly
+    - name: Big Fork Theatre
+      method: scraper
+      domains:
+        - bigforktheatre.com
+      note: >-
+        Verified by probe-sources 2026-09-02: 7 dated event(s) via html (listing URL found by web
+        search, then verified).
+      homepage: https://bigforktheatre.com/
+      listingUrls:
+        - https://www.bigforktheatre.com/shows-events
+      strategy: html
+      schedule: weekly
+    - name: Brisbane Arts Theatre
+      method: llm
+      domains:
+        - artstheatre.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Brisbane Jazz Club
+      method: llm
+      domains:
+        - brisbanejazzclub.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Eat Street Northshore
+      method: scraper
+      domains:
+        - eatstreetnorthshore.com.au
+      note: >-
+        Verified by probe-sources 2026-09-02: 22 dated event(s) via jsonld (listing URL found by web
+        search, then verified).
+      homepage: https://eatstreetnorthshore.com.au/
+      listingUrls:
+        - https://eatstreetnorthshore.com.au/whats-on/
+      strategy: jsonld
+      schedule: weekly
+      venue:
+        name: Eat Street Northshore
+        address: 221D Macarthur Avenue
+        suburb: Hamilton
+        lat: null
+        lng: null
+        aliases: []
+    - name: Netherworld
+      method: scraper
+      domains:
+        - netherworldarcade.com
+      note: >-
+        Verified by probe-sources 2026-09-02: 8 dated event(s) via jsonld (listing URL found by web
+        search, then verified).
+      homepage: https://netherworldarcade.com/
+      listingUrls:
+        - https://www.netherworldarcade.com/events/
+      strategy: jsonld
+      schedule: weekly
+      venue:
+        name: Netherworld
+        address: 186 Brunswick Street
+        suburb: Fortitude Valley
+        lat: null
+        lng: null
+        aliases: []
+    - name: The Prince Consort
+      method: scraper
+      domains:
+        - theprinceconsort.com.au
+      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+      homepage: https://theprinceconsort.com.au/
+      listingUrls:
+        - https://theprinceconsort.com.au/
+      strategy: html
+      schedule: weekly
+    - name: Woolloongabba Art Gallery
+      method: llm
+      domains:
+        - wag.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Mitchell Fine Art
+      method: llm
+      domains:
+        - mitchellfineartgallery.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Philip Bacon Galleries
+      method: scraper
+      domains:
+        - philipbacongalleries.com.au
+      note: >-
+        Verified by probe-sources 2026-09-02: 1 dated event(s) via html (listing URL found by web
+        search, then verified).
+      homepage: https://philipbacongalleries.com.au/
+      listingUrls:
+        - https://philipbacongalleries.com.au/exhibitions
+      strategy: html
+      schedule: weekly
+    - name: FireWorks Gallery
+      method: llm
+      domains:
+        - fireworksgallery.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Lethbridge Gallery
+      method: llm
+      domains:
+        - lethbridgegallery.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Stranded Bar
+      method: llm
+      domains:
+        - strandedbar.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Alliance Française de Brisbane
+      method: llm
+      domains:
+        - afbrisbane.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Topology
+      method: llm
+      domains:
+        - topologymusic.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Queensland Wind Orchestra
+      method: llm
+      domains:
+        - qwo.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Queensland Wind and Brass
+      method: llm
+      domains:
+        - qwab.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Brisbane Excelsior Choir
+      method: llm
+      domains:
+        - brisbaneexcelsior.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Brisbane Chorale
+      method: llm
+      domains:
+        - brisbanechorale.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: The Australian Voices
+      method: llm
+      domains:
+        - theaustralianvoices.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Villanova Players
+      method: llm
+      domains:
+        - villanovaplayers.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Full Throttle Theatre
+      method: llm
+      domains:
+        - fullthrottletheatre.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Vulcana Women's Circus
+      method: llm
+      domains:
+        - vulcana.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Zen Zen Zo Physical Theatre
+      method: llm
+      domains:
+        - zenzenzo.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Digi Youth Arts
+      method: llm
+      domains:
+        - digiyoutharts.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Sit Down Comedy Club
+      method: llm
+      domains:
+        - sitdown.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Brisbane Comedy Festival
+      method: llm
+      domains:
+        - brisbanecomedyfestival.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Queensland Poetry Festival
+      method: llm
+      domains:
+        - queenslandpoetryfestival.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: BIGSOUND
+      method: llm
+      domains:
+        - bigsound.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Edwina Corlette Gallery
+      method: llm
+      domains:
+        - edwinacorlettegallery.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Andrew Baker Art Dealer
+      method: llm
+      domains:
+        - andrewbaker.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Woolloongabba Art Gallery
+      method: llm
+      domains:
+        - wagallery.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Jan Manton Gallery
+      method: llm
+      domains:
+        - janmantongallery.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Access Arts
+      method: llm
+      domains:
+        - accessarts.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Royal Queensland Art Society
+      method: llm
+      domains:
+        - rqas.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Kurilpa Hall
+      method: llm
+      domains:
+        - kurilpahall.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: West End Community House
+      method: llm
+      domains:
+        - westendch.org.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Eatons Hill Hotel
+      method: llm
+      domains:
+        - eatonshillhotel.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Kedron Wavell Services Club
+      method: llm
+      domains:
+        - kedronwavell.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: The Bowery
+      method: llm
+      domains:
+        - thebowery.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Story Bridge Hotel
+      method: llm
+      domains:
+        - storybridgehotel.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Alliance Hotel
+      method: llm
+      domains:
+        - alliancehotel.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Ballistic Beer Co
+      method: llm
+      domains:
+        - ballisticbeer.com
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Green Beacon Brewing
+      method: llm
+      domains:
+        - greenbeacon.beer
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Newstead Brewing Co
+      method: llm
+      domains:
+        - newsteadbrewing.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: West End Markets
+      method: llm
+      domains:
+        - westendmarkets.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Davies Park Market
+      method: llm
+      domains:
+        - daviesparkmarket.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Jan Powers Farmers Markets
+      method: llm
+      domains:
+        - janpowersfarmersmarkets.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Collective Markets South Bank
+      method: llm
+      domains:
+        - collectivemarkets.com.au
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Northey Street City Farm
+      method: llm
+      domains:
+        - northeystreetcityfarm.org
+      note: Suggested by discover-sources 2026-09-01; not yet verified.
+    - name: Suzie Wongs Good Time Bar
+      method: llm
+      domains:
+        - suziewongsgoodtimebar.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: O'Skulligans
+      method: llm
+      domains:
+        - oskulligans.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Felons Brewing Co
+      method: llm
+      domains:
+        - felonsbrewingco.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Outpost Bar
+      method: llm
+      domains:
+        - theoutpostbar.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Banshees Bar & Artspace
+      method: llm
+      domains:
+        - bansheesbar.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane Brewing Co
+      method: llm
+      domains:
+        - brisbanebrewing.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Stones Corner Hotel
+      method: llm
+      domains:
+        - stonescornerhotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Waterloo Hotel
+      method: llm
+      domains:
+        - waterloohotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sandstone Point Hotel
+      method: llm
+      domains:
+        - sandstonepointhotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Prince of Wales Hotel Nundah
+      method: llm
+      domains:
+        - princeofwaleshotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Caxton Hotel
+      method: llm
+      domains:
+        - caxton.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Royal Mail Hotel Goodna
+      method: llm
+      domains:
+        - royalmailgoodna.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Normanby Hotel
+      method: llm
+      domains:
+        - thenormanby.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Jubilee Hotel
+      method: llm
+      domains:
+        - jubileehotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Regatta Hotel
+      method: llm
+      domains:
+        - regattahotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Pineapple Hotel
+      method: llm
+      domains:
+        - pineapplehotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Scratch Bar
+      method: llm
+      domains:
+        - scratchbar.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Warehouse 25
+      method: llm
+      domains:
+        - warehousetwentyfive.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Osbourne Hotel
+      method: llm
+      domains:
+        - osbournehotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Can You Keep A Secret
+      method: llm
+      domains:
+        - canyoukeepasecret.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Chardons Corner Hotel
+      method: llm
+      domains:
+        - chardonscornerhotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Lord Alfred
+      method: llm
+      domains:
+        - thelordalfred.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Port Office Hotel
+      method: llm
+      domains:
+        - portofficehotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Superordinary
+      method: llm
+      domains:
+        - superordinary.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane German Club
+      method: llm
+      domains:
+        - brisbanegermanclub.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Studio Maverik
+      method: llm
+      domains:
+        - studiomaverik.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Half Dozen Group of Artists
+      method: llm
+      domains:
+        - hdg-artists.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Life Drawing Sessions
+      method: llm
+      domains:
+        - lifedrawingsessions.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Kuiper Projects
+      method: llm
+      domains:
+        - kuiperprojects.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane Institute of Art
+      method: llm
+      domains:
+        - brisart.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Land Street Gallery
+      method: llm
+      domains:
+        - landstreetgallery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Vacant Assembly
+      method: llm
+      domains:
+        - vacantassembly.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Impress Printmakers Studio and Gallery
+      method: llm
+      domains:
+        - impress.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Revival Art & Design Gallery
+      method: llm
+      domains:
+        - revivalartanddesign.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Red Hill Gallery
+      method: llm
+      domains:
+        - redhillgallery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Aspire Gallery
+      method: llm
+      domains:
+        - aspiregallery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Maud Creative
+      method: llm
+      domains:
+        - maud-creative.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Aboriginal Art Co
+      method: llm
+      domains:
+        - aboriginalart.co
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Suzanne O'Connell Gallery
+      method: llm
+      domains:
+        - suzanneoconnell.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: B.LOWE Art Gallery
+      method: llm
+      domains:
+        - bloweartgallery.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Artbalm
+      method: llm
+      domains:
+        - artbalm.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Brisbane Gallery
+      method: llm
+      domains:
+        - thebrisbanegallery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Makers Gallery
+      method: llm
+      domains:
+        - makersgalleryaustralia.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Atelier Art Classes
+      method: llm
+      domains:
+        - atelierartclasses.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sculptors Queensland
+      method: llm
+      domains:
+        - sculptorsqld.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Paper Boat Press
+      method: llm
+      domains:
+        - paperboatpress.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mas & Miek
+      method: llm
+      domains:
+        - masandmiek.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Clayschool Brisbane
+      method: llm
+      domains:
+        - clayschool.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Gap Sustainability Initiative
+      method: llm
+      domains:
+        - thegapsustainability.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Transition the Grove Inc.
+      method: llm
+      domains:
+        - transitionthegrove.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Community Place
+      method: llm
+      domains:
+        - thecommunityplace.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mas & Miek Ceramic House
+      method: llm
+      domains:
+        - theceramichouse.studio
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Field Trip Gallery
+      method: llm
+      domains:
+        - fieldtrip.gallery
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Bywater Design
+      method: llm
+      domains:
+        - bywaterdesign.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Robert Howard
+      method: llm
+      domains:
+        - roberthoward.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Woodturners Society of Queensland
+      method: llm
+      domains:
+        - wsqld.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Art from the Urban Wilderness
+      method: llm
+      domains:
+        - artfromtheurbanwilderness.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Ministry of Handmade
+      method: llm
+      domains:
+        - ministryofhandmade.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Nest Community
+      method: llm
+      domains:
+        - nestcommunity.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mac-Lace Leather
+      method: llm
+      domains:
+        - maclaceleather.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: ByMe Workshop
+      method: llm
+      domains:
+        - bymeworkshop.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Meekz Contemporary Jewellery
+      method: llm
+      domains:
+        - meekzcontemporaryjewellery.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: London Road Ironworks
+      method: llm
+      domains:
+        - londonroadironworks.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Savage Custom Knives
+      method: llm
+      domains:
+        - savagecustomknives.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Cracked Anvil Forge
+      method: llm
+      domains:
+        - crackedanvilforge.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: NGKnives
+      method: llm
+      domains:
+        - ngknives.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Reverse Garbage Queensland
+      method: llm
+      domains:
+        - reversegarbagequeensland.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Gather The Modern Mercantile
+      method: llm
+      domains:
+        - gatherthemodernmercantile.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sewing Gem Studio
+      method: llm
+      domains:
+        - sewinggem.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Lyndal's Sewing Classes
+      method: llm
+      domains:
+        - lyndalssewingclasses.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The StitchHouse
+      method: llm
+      domains:
+        - berninachermside.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: SewMasters Sewing Machines
+      method: llm
+      domains:
+        - sewmasters.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Wesley Taylor Art Studios
+      method: llm
+      domains:
+        - wesleytaylorartstudios.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Ceramic Studio
+      method: llm
+      domains:
+        - theceramicstudio.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mitra Ceramic House
+      method: llm
+      domains:
+        - mitraceramichouse.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mud 2 Mug
+      method: llm
+      domains:
+        - mud2mugandmore.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Luminous By Nature
+      method: llm
+      domains:
+        - luminousbynature.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Imprint Corner
+      method: llm
+      domains:
+        - imprintcorner.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Kintsugi Australia
+      method: llm
+      domains:
+        - kintsugi-australia.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Archives Fine Books
+      method: llm
+      domains:
+        - archivesfinebooks.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Bent Books
+      method: llm
+      domains:
+        - bentbooks.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Book Links QLD
+      method: llm
+      domains:
+        - booklinks.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Carindale Writers Group
+      method: llm
+      domains:
+        - carindalewritersgroup.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Cursive Knives
+      method: llm
+      domains:
+        - cursiveknives.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Hawkeye Publishing
+      method: llm
+      domains:
+        - hawkeyebooks.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Little Gnome
+      method: llm
+      domains:
+        - littlegnome.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Logical Unsanity
+      method: llm
+      domains:
+        - logicalunsanity.net
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mary Ryan's
+      method: llm
+      domains:
+        - maryryan.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Shelf Lovers
+      method: llm
+      domains:
+        - shelflovers.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tell Me How It Ends
+      method: llm
+      domains:
+        - tellmehowitends.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Book Garden
+      method: llm
+      domains:
+        - thebookgarden.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: University of Queensland Press
+      method: llm
+      domains:
+        - uqp.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Upbeat Arts
+      method: llm
+      domains:
+        - upbeatarts.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Women Writers Queensland
+      method: llm
+      domains:
+        - womenwritersqld.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: AndAlso Books
+      method: llm
+      domains:
+        - andalsobooks.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Vault Games
+      method: llm
+      domains:
+        - vaultgames.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Meeple & Mug
+      method: llm
+      domains:
+        - meepleandmug.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: League of Extraordinary Gamers
+      method: llm
+      domains:
+        - lxgbrisbane.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: More Than Meeples
+      method: llm
+      domains:
+        - morethanmeeples.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Dice Spot
+      method: llm
+      domains:
+        - thedicespot.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: UP Arcade
+      method: llm
+      domains:
+        - 1uparcade.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Lounge Asia
+      method: llm
+      domains:
+        - loungeasia.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Aloha Australia
+      method: llm
+      domains:
+        - alohaaustralia.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Conscious Connection Events
+      method: llm
+      domains:
+        - consciousconnectionevents.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: IsoTriv
+      method: llm
+      domains:
+        - isotriv.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Think Trivia
+      method: llm
+      domains:
+        - thinktrivia.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Quiz Meisters
+      method: llm
+      domains:
+        - quizmeisters.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Trivia Mill
+      method: llm
+      domains:
+        - triviamill.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Funky Bunch Trivia
+      method: llm
+      domains:
+        - funkybunch.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Not On Your Rider
+      method: llm
+      domains:
+        - notonyourrider.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Five Star Cinemas
+      method: llm
+      domains:
+        - fivestarcinemas.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Cineplex Australia
+      method: llm
+      domains:
+        - cineplex.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Blue Room Cinebar
+      method: llm
+      domains:
+        - blueroomcinebar.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Angelika Film Centre
+      method: llm
+      domains:
+        - angelikafilmcentre.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane International Film Festival
+      method: llm
+      domains:
+        - biff.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Australia Independent Film Festival
+      method: llm
+      domains:
+        - ausindefest.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: 'Container: Brisbane Film Society'
+      method: llm
+      domains:
+        - container.net.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Tivoli Drive-In
+      method: llm
+      domains:
+        - tivolidrivein.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Limelight Cinemas
+      method: llm
+      domains:
+        - limelightcinemas.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Queensland Film Festival
+      method: llm
+      domains:
+        - queenslandfilmfestival.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Bribie Cinemas
+      method: llm
+      domains:
+        - bribiecinemas.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Dendy Cinemas
+      method: llm
+      domains:
+        - dendy.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Milton Markets
+      method: llm
+      domains:
+        - miltonmarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Nundah Farmers Market
+      method: llm
+      domains:
+        - nundahmarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Carseldine Markets
+      method: llm
+      domains:
+        - carseldinemarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Cleveland Markets
+      method: llm
+      domains:
+        - clevelandmarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane City Markets
+      method: llm
+      domains:
+        - brisbanecitymarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Riverside Markets
+      method: llm
+      domains:
+        - theriversidemarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Kelvin Grove Village Markets
+      method: llm
+      domains:
+        - kelvingrovevillagemarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Paniyiri Greek Festival
+      method: llm
+      domains:
+        - paniyiri.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Wynnum Fringe
+      method: llm
+      domains:
+        - wynnumfringe.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Teneriffe Festival
+      method: llm
+      domains:
+        - teneriffefestival.org
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Stones Corner Festival
+      method: llm
+      domains:
+        - stonescornerfestival.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Ekka
+      method: llm
+      domains:
+        - ekka.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Abbey Medieval Festival
+      method: llm
+      domains:
+        - abbeymedievalfestival.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Suitcase Rummage
+      method: llm
+      domains:
+        - suitcaserummage.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Love Me Again Market
+      method: llm
+      domains:
+        - lovemeagainmarket.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: The Market Folk
+      method: llm
+      domains:
+        - themarketfolk.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Old Petrie Town Markets
+      method: llm
+      domains:
+        - oldpetrietown.com
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brookfield Show
+      method: llm
+      domains:
+        - brookfieldshow.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Pine Rivers Show
+      method: llm
+      domains:
+        - pineriversshow.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Redcliffe Show
+      method: llm
+      domains:
+        - redcliffeshow.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Samford Show
+      method: llm
+      domains:
+        - samfordshowsociety.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Mt Gravatt Show
+      method: llm
+      domains:
+        - mtgravattshow.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: QLD Vegan Markets
+      method: llm
+      domains:
+        - qldveganmarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Einbunpin Festival
+      method: llm
+      domains:
+        - einbunpinfestival.org.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Portside Wharf
+      method: llm
+      domains:
+        - portsidewharf.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Bardon Markets
+      method: llm
+      domains:
+        - bardonmarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Global Food Markets
+      method: llm
+      domains:
+        - globalfoodmarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Redlands Coast Collective Markets
+      method: llm
+      domains:
+        - redlandscoastcollectivemarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Brisbane German Week
+      method: llm
+      domains:
+        - germanweek.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Ipswich Show
+      method: llm
+      domains:
+        - ipswichshow.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Caboolture Show
+      method: llm
+      domains:
+        - cabooltureshow.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Scenic Rim Eat Local Month
+      method: llm
+      domains:
+        - eatlocalmonth.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Beenleigh Show
+      method: llm
+      domains:
+        - beenleighshow.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Caboolture Markets
+      method: llm
+      domains:
+        - caboolturemarkets.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Sherwood Community Festival
+      method: llm
+      domains:
+        - sherwoodfestival.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.

@@ -1,0 +1,54 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "milanigallery",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "16th Gwangju Biennale - You Must Change Your Life",
+      "datetime": "Sat 5 Sep",
+      "datetime_iso": "2026-09-05",
+      "datetime_end_iso": "2026-11-15",
+      "location": "Gwangju, South Korea",
+      "link": "https://milanigallery.com.au/exhibitions/16th-gwangju-biennale-you-must-change-your-life/",
+      "cost": "See link",
+      "source": "Milani Gallery West End",
+      "description": "Jean Barth",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "biennale",
+        "contemporary",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "National Works On Paper 2026",
+      "datetime": "Sat 5 Sep",
+      "datetime_iso": "2026-09-05",
+      "datetime_end_iso": "2026-11-22",
+      "location": "Mornington Peninsula Regional Gallery",
+      "link": "https://milanigallery.com.au/exhibitions/national-works-on-paper-2026/",
+      "cost": "See link",
+      "source": "Milani Gallery West End",
+      "description": "Ryan Presley, Sandra Selig",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "exhibition",
+        "paper",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

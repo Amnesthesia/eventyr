@@ -1,6 +1,5 @@
 import { fmtDate } from "../common.ts";
-import type { ProviderOptions, SearchFocus, SearchResult } from "./base.ts";
-import { focusInstruction } from "./base.ts";
+import type { ProviderOptions, SearchResult } from "./base.ts";
 import { OpenAIProvider } from "./openai.ts";
 
 export class PerplexityProvider extends OpenAIProvider {
@@ -15,7 +14,6 @@ export class PerplexityProvider extends OpenAIProvider {
 		cityName: string,
 		weekStart: Date,
 		weekEnd: Date,
-		focus: SearchFocus,
 	): string {
 		return `You are building a structured database of real local events.
 
@@ -44,26 +42,22 @@ Return a compact JSON array (no whitespace between elements):
 Search deeply across venue websites, local publications, Instagram-linked event pages, Facebook events, Eventbrite, Humanitix, council pages, and arts/community spaces.
 
 This is a fully automated pipeline with no human able to read or reply to your response — return only the JSON array, never an offer, question, or list of options. If there's a more complete or exhaustive version of the answer, just do it and include it directly instead of asking permission.
-
-${focusInstruction(focus)}`;
+`;
 	}
 
 	override async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
-		const { cityCfg, weekStart, weekEnd, tier, focus } = opts;
-		const tierKey = focus === "music" ? `${tier}-music` : tier;
-		const label = `${this.name}/${tierKey}`;
+		const { cityCfg, weekStart, weekEnd, tier } = opts;
+		const label = `${this.name}/${tier}`;
 		console.log(`  [${label}] Searching…`);
 
 		const systemMsg = this.buildPerplexitySystem(
 			cityCfg.name,
 			weekStart,
 			weekEnd,
-			focus,
 		);
 		const focusNote =
-			focus === "music"
-				? "Search specifically for concerts, gigs, festivals, and live music."
-				: "Skip concerts, gigs, and live music — those are handled in a separate search.";
+			"Cover every category — talks, workshops, social events, exhibitions, " +
+			"outdoor activities, and live music alike.";
 		const userMsg =
 			`Find events in ${cityCfg.name} between ${fmtDate(weekStart)} and ${fmtDate(weekEnd)}. ` +
 			`Search deeply across all local sources. ${focusNote} ` +
@@ -82,7 +76,7 @@ ${focusInstruction(focus)}`;
 		this.validateRaw(rawText, label);
 		console.log(`  [${label}] ${rawText.length} chars received`);
 
-		const events = await opts.curate(rawText, cityCfg.name, label, focus);
+		const events = await opts.curate(rawText, cityCfg.name, label);
 		return { events };
 	}
 }

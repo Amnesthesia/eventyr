@@ -1,0 +1,98 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "creativemornings",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Make a Map FieldTrip",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/make-a-map-fieldtrip-845aee84-7265-4ebf-8d6c-fed12a2086b2",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "A workshop on mapping held at Creative Mornings Brisbane.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "creative",
+        "mapping",
+        "design"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "LEVEL UP: How to Turn Every Setback into Your Next Advantage",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/level-up-losing-forward-how-to-turn-every-setback-into-your-next-advantage",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "A public lecture on turning setbacks into advantages held at Creative Mornings Brisbane.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "business",
+        "growth",
+        "mindset"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Feel it, Write it.",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/feel-it-write-it-c6aea832-3903-4f2b-a7c1-0dc5acd12b17",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "A creative writing workshop held at Creative Mornings Brisbane.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "writing",
+        "creative",
+        "expression"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "☀️ The World Wide Wander 2026: Walk Your Way to Insight, Ideas and Intention",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/the-world-wide-wander-2026-walk-your-way-to-insight-ideas-and-intention",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "A social meetup focused on walking and insight held at Creative Mornings Brisbane.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "walking",
+        "mindfulness",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

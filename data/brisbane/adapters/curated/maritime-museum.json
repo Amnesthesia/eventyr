@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "maritime-museum",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Bands in Parks: Twilight Jazz by the River",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Queensland Maritime Museum, 412 Stanley St",
+      "link": "https://maritimemuseum.com.au/eventsandexhibitions/twilightjazz/twilight-jazz-by-the-river-friday-11-september-2026/",
+      "cost": "Free Event",
+      "source": "Queensland Maritime Museum",
+      "description": "Bands in Parks: Twilight Jazz by the River is a Concert / Music event at Queensland Maritime Museum.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "jazz",
+        "music",
+        "outdoor",
+        "river"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

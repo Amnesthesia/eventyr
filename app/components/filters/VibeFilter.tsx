@@ -1,13 +1,7 @@
 import { useEventsContext } from "../../context";
-import type { TriState, VibeKey } from "../../types";
+import type { TriState } from "../../types";
+import { VIBE_KEYS, VIBE_LABELS } from "../../utils/vibes";
 
-const VIBE_LABELS: Record<VibeKey, string> = {
-	intellectual: "Stimulating",
-	creative: "Creative",
-	hands_on: "Hands On",
-	social: "Social",
-};
-const VIBE_KEYS: VibeKey[] = ["intellectual", "creative", "hands_on", "social"];
 const CYCLE: Record<TriState, TriState> = { any: "yes", yes: "no", no: "any" };
 
 export default function VibeFilter() {
@@ -37,6 +31,7 @@ export default function VibeFilter() {
 						type="button"
 						key={key}
 						className={cls}
+						data-vibe={key}
 						onClick={() => setVibe(key, CYCLE[state])}
 					>
 						{prefix}

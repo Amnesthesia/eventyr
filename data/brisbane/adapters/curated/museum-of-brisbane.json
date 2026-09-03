@@ -1,0 +1,120 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "museum-of-brisbane",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Tea &#038; Tour: Kirstie Macleod",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
+      "cost": "See link",
+      "source": "Museum of Brisbane (City Hall)",
+      "description": "The Tea & Tour: Kirstie Macleod event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "tour",
+        "history"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Artist in Residence: Sachém Parkin-Owens",
+      "datetime": "Sat 22 Nov",
+      "datetime_iso": "2025-11-22",
+      "datetime_end_iso": "2026-10-10",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/sachem-parkin-owens/",
+      "cost": "See link",
+      "source": "Museum of Brisbane (City Hall)",
+      "description": "The Artist in Residence: Sachém Parkin-Owens event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "residency",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Stories You Wear: Magpie Goose",
+      "datetime": "Sat 22 Nov",
+      "datetime_iso": "2025-11-22",
+      "datetime_end_iso": "2027-01-31",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/",
+      "cost": "See link",
+      "source": "Museum of Brisbane (City Hall)",
+      "description": "The Stories You Wear: Magpie Goose event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "fashion",
+        "design",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Perspectives of Brisbane",
+      "datetime": "Thu 3 Sep",
+      "datetime_iso": "2026-09-03",
+      "datetime_end_iso": "",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/",
+      "cost": "See link",
+      "source": "Museum of Brisbane (City Hall)",
+      "description": "The Perspectives of Brisbane event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "brisbane",
+        "history",
+        "photography"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Tea & Tour: Kirstie Macleod",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
+      "cost": "See link",
+      "source": "Museum of Brisbane (City Hall)",
+      "description": "The Tea & Tour: Kirstie Macleod event at the Museum of Brisbane is an Arts / Exhibition experience.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "tour",
+        "history"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

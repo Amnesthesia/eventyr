@@ -2,13 +2,22 @@ import { Calendar, Moon, Sun } from "lucide-react";
 import { useEventsContext } from "../context";
 import { KEY_TO_SLUG } from "../utils/citySlug";
 import { fmtRange } from "../utils/dates";
+import SearchBar from "./SearchBar";
 
 export default function Header() {
-	const { filtered, cities, cityKey, setCity, cityData, theme, toggleTheme } =
-		useEventsContext();
+	const {
+		filtered,
+		cities,
+		cityKey,
+		cityData,
+		theme,
+		toggleTheme,
+		weekStart,
+		weekEnd,
+	} = useEventsContext();
 
 	const meta = cityData
-		? `${fmtRange(cityData.week_start, cityData.week_end)} · ${filtered.length} events this week`
+		? `${fmtRange(weekStart, weekEnd)} · ${filtered.length} events`
 		: "loading…";
 
 	return (
@@ -19,6 +28,7 @@ export default function Header() {
 			</h1>
 			<span className="header-meta">{meta}</span>
 			<div className="header-controls">
+				<SearchBar />
 				{cities.length > 1 && (
 					<>
 						<nav className="city-nav" aria-label="City pages">

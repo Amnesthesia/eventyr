@@ -1,0 +1,120 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "doo-bop",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Michael Hynes",
+      "datetime": "Thu 3 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-03T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/ekzh4dajdxlhrlre9x55r7f5jz2d5m",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "Michael Hynes is a concert event at Doo-Bop Bar.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "jazz",
+        "live music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Michael Hynes",
+      "datetime": "Fri 4 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-04T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/53sn3emywea5jlrw6ggzs4a3l5etzt",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "Michael Hynes is a concert event at Doo-Bop Bar.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "jazz",
+        "live music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Peter King Trio",
+      "datetime": "Fri 4 Sep, 10:00 PM",
+      "datetime_iso": "2026-09-04T22:00:00",
+      "datetime_end_iso": "2026-09-05T01:00:00",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/yateyx4ttl8f3g6x33zm6wxat6gxbb",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "Peter King Trio is a concert event at Doo-Bop Bar.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "jazz",
+        "live music",
+        "trio"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Rachel Head",
+      "datetime": "Sat 5 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-05T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/rachel-head-4",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "Rachel Head is a concert event at Doo-Bop Bar.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "jazz",
+        "live music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Peter King Trio",
+      "datetime": "Sat 5 Sep, 10:00 PM",
+      "datetime_iso": "2026-09-05T22:00:00",
+      "datetime_end_iso": "2026-09-06T01:00:00",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/bfpzy9et44hbwlz2em8pzpp2e7cxn2",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "Peter King Trio is a concert event at Doo-Bop Bar.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "jazz",
+        "live music",
+        "trio"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

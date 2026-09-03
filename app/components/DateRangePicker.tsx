@@ -1,21 +1,16 @@
-import {
-	getLocalTimeZone,
-	today as getToday,
-	parseDate,
-} from "@internationalized/date";
-import { CalendarDays, ChevronLeft, ChevronRight, X } from "lucide-react";
+// A popover holding two native date inputs.
+//
+// Twice rebuilt: it began as a react-aria RangeCalendar (two dependencies for
+// one component, when the values here are already the YYYY-MM-DD strings
+// <input type="date"> speaks), and then the popover stopped appearing at all.
+// That was not hydration — the cause is CSS. Its parent `.filters` sets
+// `overflow-x: auto`, and the spec does not honour `overflow-y: visible` when
+// the other axis is auto, so the whole row is a scroll container and an
+// absolutely positioned panel hanging below the button is clipped by it.
+// `.filters--date` therefore opts out of scrolling and wraps instead.
+
+import { CalendarDays, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import type { DateValue, RangeValue } from "react-aria-components";
-import {
-	Button,
-	CalendarCell,
-	CalendarGrid,
-	CalendarGridBody,
-	CalendarGridHeader,
-	CalendarHeaderCell,
-	Heading,
-	RangeCalendar,
-} from "react-aria-components";
 import type { DateRange } from "../types";
 import { fmtRange } from "../utils/dates";
 
@@ -33,32 +28,44 @@ export default function DateRangePicker({
 	maxDate,
 }: Props) {
 	const [open, setOpen] = useState(false);
+	// Local, because a half-entered range must not filter the list down to
+	// nothing while the second date is still being chosen.
+	const [draft, setDraft] = useState<DateRange>({ start: "", end: "" });
 	const wrapperRef = useRef<HTMLSpanElement>(null);
-	const tz = getLocalTimeZone();
 
 	useEffect(() => {
 		if (!open) return;
 		function onClickOutside(e: MouseEvent) {
-			if (
-				wrapperRef.current &&
-				!wrapperRef.current.contains(e.target as Node)
-			) {
+			const target = e.target as Node | null;
+			// A native date picker panel is browser UI, not part of the page, so a
+			// click in one must not read as a click outside — that would close the
+			// popover mid-pick.
+			if (!target || !document.contains(target)) return;
+			if (wrapperRef.current && !wrapperRef.current.contains(target)) {
 				setOpen(false);
 			}
 		}
+		function onKeyDown(e: KeyboardEvent) {
+			if (e.key === "Escape") setOpen(false);
+		}
 		document.addEventListener("mousedown", onClickOutside);
-		return () => document.removeEventListener("mousedown", onClickOutside);
+		document.addEventListener("keydown", onKeyDown);
+		return () => {
+			document.removeEventListener("mousedown", onClickOutside);
+			document.removeEventListener("keydown", onKeyDown);
+		};
 	}, [open]);
 
-	const ariaValue = value
-		? { start: parseDate(value.start), end: parseDate(value.end) }
-		: null;
-
-	function handleCalendarChange(range: RangeValue<DateValue> | null) {
-		if (range) {
-			onChange({ start: range.start.toString(), end: range.end.toString() });
-			setOpen(false);
-		}
+	function edit(part: "start" | "end", raw: string) {
+		const next = { ...draft, [part]: raw };
+		setDraft(next);
+		if (!next.start || !next.end) return;
+		// A backwards range is the user picking the end first; read it either way
+		// rather than rejecting it.
+		const [start, end] =
+			next.start <= next.end ? [next.start, next.end] : [next.end, next.start];
+		onChange({ start, end });
+		setOpen(false);
 	}
 
 	const label = value ? fmtRange(value.start, value.end) : "date range";
@@ -68,7 +75,10 @@ export default function DateRangePicker({
 			<button
 				type="button"
 				className={`filter-btn date-filter${value ? " active" : ""}`}
-				onClick={() => setOpen((v) => !v)}
+				onClick={() => {
+					setDraft(value ?? { start: "", end: "" });
+					setOpen((v) => !v);
+				}}
 				aria-expanded={open}
 				aria-label={value ? `Date range: ${label}` : "Pick date range"}
 			>
@@ -81,6 +91,7 @@ export default function DateRangePicker({
 					className="filter-btn date-range-clear"
 					onClick={() => {
 						onChange(null);
+						setDraft({ start: "", end: "" });
 						setOpen(false);
 					}}
 					aria-label="Clear date range"
@@ -94,36 +105,26 @@ export default function DateRangePicker({
 					role="dialog"
 					aria-label="Select date range"
 				>
-					<RangeCalendar
-						className="range-calendar"
-						value={ariaValue}
-						onChange={handleCalendarChange}
-						defaultFocusedValue={ariaValue?.start ?? getToday(tz)}
-						minValue={minDate ? parseDate(minDate) : undefined}
-						maxValue={maxDate ? parseDate(maxDate) : undefined}
-					>
-						<header className="cal-header">
-							<Button slot="previous" className="cal-nav-btn">
-								<ChevronLeft size={13} />
-							</Button>
-							<Heading className="cal-heading" />
-							<Button slot="next" className="cal-nav-btn">
-								<ChevronRight size={13} />
-							</Button>
-						</header>
-						<CalendarGrid className="cal-grid">
-							<CalendarGridHeader>
-								{(day) => (
-									<CalendarHeaderCell className="cal-header-cell">
-										{day}
-									</CalendarHeaderCell>
-								)}
-							</CalendarGridHeader>
-							<CalendarGridBody>
-								{(date) => <CalendarCell date={date} className="cal-cell" />}
-							</CalendarGridBody>
-						</CalendarGrid>
-					</RangeCalendar>
+					<label className="date-picker-field">
+						From
+						<input
+							type="date"
+							value={draft.start}
+							min={minDate}
+							max={draft.end || maxDate}
+							onChange={(e) => edit("start", e.target.value)}
+						/>
+					</label>
+					<label className="date-picker-field">
+						To
+						<input
+							type="date"
+							value={draft.end}
+							min={draft.start || minDate}
+							max={maxDate}
+							onChange={(e) => edit("end", e.target.value)}
+						/>
+					</label>
 				</div>
 			)}
 		</span>
