@@ -30,15 +30,20 @@ interface CityMeta {
 	eventPaths: string[];
 }
 
+/**
+ * Every <loc> ends in a slash, matching what the server answers 200 to.
+ * Astro writes `<path>/index.html` and GitHub Pages 301s the slash-less form,
+ * so without this the whole sitemap was a list of redirects.
+ */
 function buildSitemap(cities: CityMeta[], today: string): string {
 	const urls = [
 		`  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
 		...cities.flatMap((c) => {
 			const slug = KEY_TO_SLUG[c.key] ?? c.key;
-			const cityUrl = `  <url>\n    <loc>${BASE_URL}/${slug}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`;
+			const cityUrl = `  <url>\n    <loc>${BASE_URL}/${slug}/</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`;
 			const catUrls = CATEGORY_SLUGS.map(
 				(cat) =>
-					`  <url>\n    <loc>${BASE_URL}/${slug}/${cat}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`,
+					`  <url>\n    <loc>${BASE_URL}/${slug}/${cat}/</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`,
 			);
 			// Lower priority than the city and category pages, and weekly like
 			// them: an event page is a share target first and a search result

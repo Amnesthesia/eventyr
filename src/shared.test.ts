@@ -102,11 +102,11 @@ test("eventSlug is readable, unique, and safe as a path segment", () => {
 test("eventPath uses the public city slug, not the city key", () => {
 	assert.equal(
 		eventPath("goldcoast", DICE),
-		`/gold-coast/e/${eventSlug("goldcoast", DICE)}`,
+		`/gold-coast/e/${eventSlug("goldcoast", DICE)}/`,
 	);
 	assert.equal(
 		eventPath("brisbane", DICE),
-		"/brisbane/e/dice-rolls-flagons-casual-board-game-meetup-b8wguc",
+		"/brisbane/e/dice-rolls-flagons-casual-board-game-meetup-b8wguc/",
 	);
 });
 

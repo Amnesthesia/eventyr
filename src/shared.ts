@@ -413,8 +413,15 @@ export function isLikelyImageUrl(value: unknown): boolean {
 	return /\.(jpe?g|png|webp|gif|avif)$/i.test(path);
 }
 
-/** Site-root-relative path to one event's own page. */
+/**
+ * Site-root-relative path to one event's own page.
+ *
+ * With the trailing slash, because that is the URL the server actually
+ * answers 200 to. Astro's default build format writes `<path>/index.html`, and
+ * GitHub Pages 301s `/path` to `/path/` — so the slash-less form made every
+ * sitemap entry, canonical and og:url point at a redirect.
+ */
 export function eventPath(cityKey: string, event: IdentifiableEvent): string {
 	const city = KEY_TO_SLUG[cityKey] ?? cityKey;
-	return `/${city}/e/${eventSlug(cityKey, event)}`;
+	return `/${city}/e/${eventSlug(cityKey, event)}/`;
 }

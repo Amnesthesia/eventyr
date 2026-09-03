@@ -48,7 +48,7 @@ export function getStaticPaths() {
 const { cityData, event, cityKey } = Astro.props;
 const slug = Astro.params.city as string;
 const BASE_URL = "https://www.dothings.lol";
-const url = `${BASE_URL}/${slug}/e/${Astro.params.event}`;
+const url = `${BASE_URL}/${slug}/e/${Astro.params.event}/`;
 const catSlug = catToSlug(event.category);
 
 // Stripped at render, not in the pipeline: the data keeps the URL because a
