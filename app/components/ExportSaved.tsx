@@ -42,6 +42,7 @@ export default function ExportSaved({ compact }: Props) {
 			</button>
 		);
 	}
+	if (saved.length === 0) return null;
 	return (
 		<button
 			type="button"

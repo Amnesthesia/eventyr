@@ -159,6 +159,7 @@ export default function SwipeMode({ onClose }: Props) {
 					{Math.min(history.length + 1, total)} / {total}
 				</span>
 				<span className="swipe-hint">swipe right to save, left to skip</span>
+				<ExportSaved compact />
 				<button
 					type="button"
 					className="theme-btn"

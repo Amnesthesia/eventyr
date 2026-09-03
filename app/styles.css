@@ -1839,14 +1839,22 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 }
 
 /* The one control here that opens a different mode rather than narrowing the
-   list, so it gets a hue. Teal, which the page already uses for "social":
-   an invitation rather than a warning. */
+   list, so it gets a hue. Amber: teal read poorly on the dark theme. */
 .filter-btn.swipe-btn {
-	color: var(--hue-teal);
-	border-color: var(--hue-teal);
+	color: var(--hue-amber);
+	border-color: var(--hue-amber);
 }
 
 .filter-btn.swipe-btn:hover {
-	background: var(--hue-teal);
+	background: var(--hue-amber);
 	color: var(--bg);
+}
+
+.theme-btn.saved-count:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.swipe-top .swipe-hint {
+	margin-right: auto;
 }
