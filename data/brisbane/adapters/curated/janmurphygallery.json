@@ -1,0 +1,32 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "janmurphygallery",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Adam Pyett: Stories of daylight",
+      "datetime": "Wed 2 Sep",
+      "datetime_iso": "2026-09-02",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Jan Murphy Gallery Fortitude Valley",
+      "link": "https://www.janmurphygallery.com.au/exhibition/adam_pyett_stories_of_daylight/",
+      "cost": "See link",
+      "source": "Jan Murphy Gallery Fortitude Valley",
+      "description": "Adam Pyett: Stories of daylight is an arts exhibition held at Jan Murphy Gallery Fortitude Valley.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "painting",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

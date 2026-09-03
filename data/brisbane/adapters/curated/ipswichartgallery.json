@@ -1,0 +1,230 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "ipswichartgallery",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Ties that bind",
+      "datetime": "Sat 27 Jun, 10:00 AM",
+      "datetime_iso": "2026-06-27T10:00:00",
+      "datetime_end_iso": "2026-09-06T17:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/ties-that-bind",
+      "cost": "FREE | No bookings are required to visit the exhibition",
+      "source": "Ipswich Art Gallery",
+      "description": "What binds us to home? What—or who—makes belonging possible? How do we carry our histories with us, and how do they shape the lands we inhabit?",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3282",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "history",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "IAG Kids: Make Yourself at Home",
+      "datetime": "Sat 25 Jul, 10:00 AM",
+      "datetime_iso": "2026-07-25T10:00:00",
+      "datetime_end_iso": "2026-11-08T17:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/iag-kids-make-yourself-at-home",
+      "cost": "FREE",
+      "source": "Ipswich Art Gallery",
+      "description": "A playful, sensory exhibition that explores what home means to children.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3182",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "kids",
+        "family",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Sharing the National Collection",
+      "datetime": "Sat 16 Nov, 10:00 AM",
+      "datetime_iso": "2024-11-16T10:00:00",
+      "datetime_end_iso": "2026-11-15T17:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/sharing-the-national-collection",
+      "cost": "FREE",
+      "source": "Ipswich Art Gallery",
+      "description": "Ipswich Art Gallery currently hosts major works from the National Gallery of Australia’s collection.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/2266",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "national",
+        "gallery"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "BRUTALIST / Baroque",
+      "datetime": "Sat 5 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-05T10:00:00",
+      "datetime_end_iso": "2026-11-22T17:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/brutalist-baroque",
+      "cost": "FREE | No bookings are required to visit the exhibition",
+      "source": "Ipswich Art Gallery",
+      "description": "COMING SOON — An exhibition by ceramic artists, Donalee Moriarty and Nicolette Johnson, exploring the shared qualities that unite their seemingly opposing styles.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3320",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "ceramics",
+        "art",
+        "sculpture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Toddler Time: Make Yourself at Home",
+      "datetime": "Fri 31 Jul, 10:00 AM",
+      "datetime_iso": "2026-07-31T10:00:00",
+      "datetime_end_iso": "2026-11-06T11:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/toddler-time-make-yourself-at-home",
+      "cost": "Free",
+      "source": "Ipswich Art Gallery",
+      "description": "Join us in our Children's Gallery on Friday mornings for play-based explorations of our current IAG Kids exhibition.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3283",
+      "category": "Workshop / Class",
+      "tags": [
+        "toddler",
+        "play",
+        "art"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Heritage Architecture Tour with Mark Tendys, ICC City Architect",
+      "datetime": "Sat 5 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-05T14:00:00",
+      "datetime_end_iso": "2026-09-05T15:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/heritage-architecture-tour-with-mark-tendys-city-architect-2026",
+      "cost": "FREE | Bookings Required",
+      "source": "Ipswich Art Gallery",
+      "description": "Delve into the hidden histories of Ipswich Art Gallery's building with Mark Tendys, Ipswich City Council's City Architect.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/2630",
+      "category": "Public Lecture",
+      "tags": [
+        "architecture",
+        "history",
+        "local"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Amanda Waschevski | People of Ipswich",
+      "datetime": "Wed 26 Aug, 10:00 AM",
+      "datetime_iso": "2026-08-26T10:00:00",
+      "datetime_end_iso": "2026-09-06T15:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/amanda-waschevski-people-of-ipswich",
+      "cost": "Free",
+      "source": "Ipswich Art Gallery",
+      "description": "People of Ipswich is a love letter to the city by award-winning photographer Amanda Waschevski.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3253",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "photography",
+        "local",
+        "portrait"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Jude Muduioa: Artist in Residence",
+      "datetime": "Mon 17 Aug",
+      "datetime_iso": "2026-08-17",
+      "datetime_end_iso": "2026-09-04",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/jude-muduioa-artist-in-residence",
+      "cost": "See link",
+      "source": "Ipswich Art Gallery",
+      "description": "Jude Muduioa is a ceramic artist who uses repetition and componentry to represent community and talk about identity.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/2912",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "ceramics",
+        "artist",
+        "identity"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Ties that bind",
+      "datetime": "Sat 27 Jun, 10:00 AM",
+      "datetime_iso": "2026-06-27T10:00:00",
+      "datetime_end_iso": "2026-09-06T17:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://ipswichartgallery.qld.gov.au/ties-that-bind",
+      "cost": "FREE | No bookings are required to visit the exhibition",
+      "source": "Ipswich Art Gallery",
+      "description": "What binds us to home? What—or who—makes belonging possible? How do we carry our histories with us, and how do they shape the lands we inhabit?",
+      "image": "https://ipswichartgallery.qld.gov.au/3282",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "history",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Sharing the National Collection",
+      "datetime": "Sat 16 Nov, 10:00 AM",
+      "datetime_iso": "2024-11-16T10:00:00",
+      "datetime_end_iso": "2026-11-15T17:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://ipswichartgallery.qld.gov.au/sharing-the-national-collection",
+      "cost": "FREE",
+      "source": "Ipswich Art Gallery",
+      "description": "Ipswich Art Gallery currently hosts major works from the National Gallery of Australia’s collection.",
+      "image": "https://ipswichartgallery.qld.gov.au/2266",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "national",
+        "gallery"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

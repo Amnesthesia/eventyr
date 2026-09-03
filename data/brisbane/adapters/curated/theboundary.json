@@ -1,0 +1,32 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "theboundary",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Father’s Day",
+      "datetime": "Sun 6 Sep",
+      "datetime_iso": "2026-09-06",
+      "datetime_end_iso": "",
+      "location": "The Boundary Hotel West End",
+      "link": "https://theboundary.com.au/events/fathers-day/",
+      "cost": "See link",
+      "source": "The Boundary Hotel West End",
+      "description": "The best way to show Dad some love is with a good feed!",
+      "image": "https://theboundary.com.au/events/fathers-day/",
+      "category": "Community / Other",
+      "tags": [
+        "fathers day",
+        "dining",
+        "family"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

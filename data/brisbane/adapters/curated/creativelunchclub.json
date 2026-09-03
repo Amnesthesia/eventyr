@@ -1,0 +1,186 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "creativelunchclub",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Dinner Meetup for Creatives in London",
+      "datetime": "Fri 4 Sep, 7:15 PM",
+      "datetime_iso": "2026-09-04T19:15:00",
+      "datetime_end_iso": "",
+      "location": "London",
+      "link": "https://www.creativelunchclub.com/meetups/dinner-for-creatives-in-london-september-2026",
+      "cost": "See link",
+      "source": "Creative Lunch Club Brisbane",
+      "description": "The Dinner Meetup for Creatives in London is a Social / Meetup event held in London.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "creatives",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Coffee Meetup for Creatives in Aarhus",
+      "datetime": "Sat 5 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-05T11:00:00",
+      "datetime_end_iso": "",
+      "location": "Aarhus",
+      "link": "https://www.creativelunchclub.com/meetups/coffee-for-creatives-in-aarhus-september-2026",
+      "cost": "See link",
+      "source": "Creative Lunch Club Brisbane",
+      "description": "The Coffee Meetup for Creatives in Aarhus is a Social / Meetup event held in Aarhus.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "creatives",
+        "coffee"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Lunch Meetup for Creatives in Madrid",
+      "datetime": "Sat 5 Sep, 1:45 PM",
+      "datetime_iso": "2026-09-05T13:45:00",
+      "datetime_end_iso": "",
+      "location": "Madrid",
+      "link": "https://www.creativelunchclub.com/meetups/lunch-for-creatives-in-madrid-september-2026",
+      "cost": "See link",
+      "source": "Creative Lunch Club Brisbane",
+      "description": "The Lunch Meetup for Creatives in Madrid is a Social / Meetup event held in Madrid.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "creatives",
+        "lunch"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Breakfast Meetup for Creatives in Vienna",
+      "datetime": "Mon 7 Sep, 8:30 AM",
+      "datetime_iso": "2026-09-07T08:30:00",
+      "datetime_end_iso": "",
+      "location": "Vienna",
+      "link": "https://www.creativelunchclub.com/meetups/breakfast-for-creatives-in-vienna-september-2026",
+      "cost": "See link",
+      "source": "Creative Lunch Club Brisbane",
+      "description": "The Breakfast Meetup for Creatives in Vienna is a Social / Meetup event held in Vienna.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "creatives",
+        "breakfast"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Afterwork Meetup for Creatives in Manchester",
+      "datetime": "Tue 8 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-08T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Manchester",
+      "link": "https://www.creativelunchclub.com/meetups/afterwork-for-creatives-in-manchester-september-2026",
+      "cost": "See link",
+      "source": "Creative Lunch Club Brisbane",
+      "description": "The Afterwork Meetup for Creatives in Manchester is a Social / Meetup event held in Manchester.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "creatives",
+        "afterwork"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Picnic Meetup for Creatives in Berlin",
+      "datetime": "Thu 10 Sep, 4:30 PM",
+      "datetime_iso": "2026-09-10T16:30:00",
+      "datetime_end_iso": "",
+      "location": "Berlin",
+      "link": "https://www.creativelunchclub.com/meetups/picnic-meetup-for-creatives-in-berlin-mauerpark-september-2026",
+      "cost": "See link",
+      "source": "Creative Lunch Club Brisbane",
+      "description": "The Picnic Meetup for Creatives in Berlin is a Social / Meetup event held in Berlin.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "creatives",
+        "picnic"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Coffee Meetup for Creatives in Stockholm",
+      "datetime": "Sat 12 Sep, 1:00 AM",
+      "datetime_iso": "2026-09-12T01:00:00",
+      "datetime_end_iso": "",
+      "location": "Stockholm",
+      "link": "https://www.creativelunchclub.com/meetups/coffee-for-creatives-in-stockholm-september-2026",
+      "cost": "See link",
+      "source": "Creative Lunch Club Brisbane",
+      "description": "The Coffee Meetup for Creatives in Stockholm is a Social / Meetup event held in Stockholm.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "creatives",
+        "coffee"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Lunch Meetup for Creatives in Portland",
+      "datetime": "Sun 13 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-13T12:00:00",
+      "datetime_end_iso": "",
+      "location": "Portland",
+      "link": "https://www.creativelunchclub.com/meetups/lunch-for-creatives-in-portland-september-2026",
+      "cost": "See link",
+      "source": "Creative Lunch Club Brisbane",
+      "description": "The Lunch Meetup for Creatives in Portland is a Social / Meetup event held in Portland.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "creatives",
+        "lunch"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

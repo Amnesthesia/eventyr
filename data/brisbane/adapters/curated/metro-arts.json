@@ -1,0 +1,186 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "metro-arts",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Shandy",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/event/shandy/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A taste of queer mayhem.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "queer",
+        "performance",
+        "arts"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Scene Roulette",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-25",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
+      "cost": "FREE",
+      "source": "Metro Arts",
+      "description": "FREE community events and workshops for actors to flex their muscles and meet other creatives. Facilitated by Imperfect Creatives and supported by Metro Arts",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "acting",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Choral Cthonics",
+      "datetime": "Thu 27 Aug",
+      "datetime_iso": "2026-08-27",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A hum in the dark.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "experimental",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Kuweni Dias Mendis & Grant x Wilkes: (In)Sight",
+      "datetime": "Thu 27 Aug",
+      "datetime_iso": "2026-08-27",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/exhibition/insight/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "Step into the shadows.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "visual",
+        "arts",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Shandy",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/event/shandy/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A taste of queer mayhem.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "queer",
+        "performance",
+        "arts"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Scene Roulette",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-25",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
+      "cost": "FREE",
+      "source": "Metro Arts",
+      "description": "FREE community events and workshops for actors to flex their muscles and meet other creatives. Facilitated by Imperfect Creatives and supported by Metro Arts",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "acting",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Shandy",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/event/shandy/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A taste of queer mayhem.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "queer",
+        "performance",
+        "arts"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Scene Roulette",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-25",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
+      "cost": "FREE",
+      "source": "Metro Arts",
+      "description": "FREE community events and workshops for actors to flex their muscles and meet other creatives. Facilitated by Imperfect Creatives and supported by Metro Arts",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "acting",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

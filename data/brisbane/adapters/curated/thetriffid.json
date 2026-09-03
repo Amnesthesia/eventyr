@@ -1,0 +1,148 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "thetriffid",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Triffid Sundays - September | Free Live Music in the Garden",
+      "datetime": "Sun 6 Sep",
+      "datetime_iso": "2026-09-06",
+      "datetime_end_iso": "2026-09-27",
+      "location": "The Triffid",
+      "link": "https://thetriffid.com.au/all-events/triffid-sundays-tickets-ae1693433",
+      "cost": "See link",
+      "source": "The Triffid Fortitude Valley",
+      "description": "Triffid Sundays at The Triffid is a concert / music event.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "free",
+        "garden",
+        "sunday"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Espresso Martini Festival",
+      "datetime": "Sat 5 Sep",
+      "datetime_iso": "2026-09-05",
+      "datetime_end_iso": "",
+      "location": "The Triffid",
+      "link": "https://thetriffid.com.au/all-events/espresso-martini-festival-tickets-ae1690418",
+      "cost": "See link",
+      "source": "The Triffid Fortitude Valley",
+      "description": "Espresso Martini Festival at The Triffid is a social / meetup event.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "cocktails",
+        "festival",
+        "drinks",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Skindred",
+      "datetime": "Sun 6 Sep",
+      "datetime_iso": "2026-09-06",
+      "datetime_end_iso": "",
+      "location": "The Triffid",
+      "link": "https://thetriffid.com.au/all-events/skindred-tickets-ae781",
+      "cost": "See link",
+      "source": "The Triffid Fortitude Valley",
+      "description": "Skindred at The Triffid is a concert / music event.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "live music",
+        "gig",
+        "band"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Angels 'AM I EVER GONNA SEE YOUR FACE AGAIN... 50 YEARS ON'",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "The Triffid",
+      "link": "https://thetriffid.com.au/all-events/the-angels-tickets-ae1404883",
+      "cost": "See link",
+      "source": "The Triffid Fortitude Valley",
+      "description": "The Angels 'AM I EVER GONNA SEE YOUR FACE AGAIN... 50 YEARS ON' at The Triffid is a concert / music event.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "live music",
+        "anniversary",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Swervedriver",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "The Triffid",
+      "link": "https://thetriffid.com.au/all-events/swervedriver-tickets-ae58648",
+      "cost": "See link",
+      "source": "The Triffid Fortitude Valley",
+      "description": "Swervedriver at The Triffid is a concert / music event.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "live music",
+        "gig",
+        "band"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Briscoe Sisters & BLAK:STORY:SONG in concert",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "The Triffid",
+      "link": "https://thetriffid.com.au/all-events/briscoe-sisters-tickets-ae1691103",
+      "cost": "See link",
+      "source": "The Triffid Fortitude Valley",
+      "description": "Briscoe Sisters & BLAK:STORY:SONG in concert at The Triffid is a concert / music event.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "concert",
+        "folk",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

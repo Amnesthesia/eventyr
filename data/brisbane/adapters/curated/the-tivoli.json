@@ -1,0 +1,164 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "the-tivoli",
+  "week_start": "2026-08-31",
+  "week_end": "2026-09-06",
+  "events": [
+    {
+      "title": "Bury Tomorrow (UK) With Gideon",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "The Tivoli, 52 Costin St",
+      "link": "https://thetivoli.com.au/events/bury-tomorrow",
+      "cost": "See link",
+      "source": "The Tivoli",
+      "description": "Bury Tomorrow and Gideon perform a concert at The Tivoli.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "metalcore",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Club Angel (AUS) With Mincy & Jai Taylor",
+      "datetime": "Sat 5 Sep",
+      "datetime_iso": "2026-09-05",
+      "datetime_end_iso": "",
+      "location": "The Tivoli, 52 Costin St",
+      "link": "https://thetivoli.com.au/events/club-angel",
+      "cost": "See link",
+      "source": "The Tivoli",
+      "description": "Few Tickets Left",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "electronic",
+        "club",
+        "dance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Ash (IRELAND) With Northern Lights",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "The Tivoli, 52 Costin St",
+      "link": "https://thetivoli.com.au/events/ash",
+      "cost": "See link",
+      "source": "The Tivoli",
+      "description": "Ash and Northern Lights perform a concert at The Tivoli.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Damned (UK) With The Darts (USA)",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "The Tivoli, 52 Costin St",
+      "link": "https://thetivoli.com.au/events/the-damned-26",
+      "cost": "See link",
+      "source": "The Tivoli",
+      "description": "The Damned and The Darts perform a concert at The Tivoli.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "punk",
+        "rock",
+        "live music"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Bury Tomorrow (UK) With Gideon",
+      "datetime": "Fri 4 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "",
+      "location": "The Tivoli, 52 Costin St",
+      "link": "https://thetivoli.com.au/events/bury-tomorrow",
+      "cost": "See link",
+      "source": "The Tivoli",
+      "description": "Bury Tomorrow and Gideon perform a concert at The Tivoli.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "metalcore",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Club Angel (AUS) With Mincy & Jai Taylor",
+      "datetime": "Sat 5 Sep",
+      "datetime_iso": "2026-09-05",
+      "datetime_end_iso": "",
+      "location": "The Tivoli, 52 Costin St",
+      "link": "https://thetivoli.com.au/events/club-angel",
+      "cost": "See link",
+      "source": "The Tivoli",
+      "description": "Few Tickets Left",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "electronic",
+        "club",
+        "dance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Ash (IRELAND) With Northern Lights",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "The Tivoli, 52 Costin St",
+      "link": "https://thetivoli.com.au/events/ash",
+      "cost": "See link",
+      "source": "The Tivoli",
+      "description": "Ash and Northern Lights perform a concert at The Tivoli.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}
