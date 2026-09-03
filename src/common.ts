@@ -19,6 +19,7 @@ export const SOURCES_ROOT = join(PROJECT_ROOT, "sources");
 // into Vite and fails the build. Re-exported here so pipeline modules keep
 // importing everything from common.ts.
 export {
+	byScoreThenSoonest,
 	CATEGORIES,
 	CATEGORY_EMOJI,
 	type Category,

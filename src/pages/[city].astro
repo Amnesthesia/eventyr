@@ -5,6 +5,7 @@ import Base from "../layouts/Base.astro";
 import EventApp from "@react/EventApp";
 import type { CityData, CityIndex } from "@react/types";
 import { SLUG_TO_KEY } from "@react/utils/citySlug";
+import { byScoreThenSoonest } from "../shared.ts";
 
 export function getStaticPaths() {
 	const index: CityIndex = JSON.parse(
@@ -19,7 +20,7 @@ export function getStaticPaths() {
 		const cityData: CityData = JSON.parse(
 			readFileSync(join(process.cwd(), `data/${city.key}.json`), "utf-8"),
 		);
-		cityData.events.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+		cityData.events.sort(byScoreThenSoonest);
 
 		return {
 			params: { city: slug },

@@ -2,6 +2,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { GoogleGenAI } from "@google/genai";
 import {
+	byScoreThenSoonest,
 	DATA_ROOT,
 	fmtDate,
 	getWeekRange,
@@ -151,9 +152,9 @@ async function main(): Promise<void> {
 		if (typeof e.score !== "number") e.score = 5;
 	}
 
-	events.sort(
-		(a, b) => ((b.score as number) ?? 0) - ((a.score as number) ?? 0),
-	);
+	// Score first, then soonest — see byScoreThenSoonest. This is the order the
+	// site inherits, so getting the tiebreak right here fixes every consumer.
+	events.sort(byScoreThenSoonest);
 
 	const high = events.filter(
 		(e) => ((e.score as number) ?? 0) >= TOP_PICK_THRESHOLD,
