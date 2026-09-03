@@ -1256,6 +1256,12 @@ summary:hover .card-desc-toggle {
 		   the action sheet. Scoped to the width where the gesture is offered, so
 		   desktop link behaviour is untouched. */
 		-webkit-touch-callout: none;
+		/* And its text-selection gesture. At ~500ms iOS starts selecting the
+		   text under the finger and fires touchcancel, which cancels the hold
+		   timer — so the sheet never opened, only a selection did. No
+		   selection, no takeover. */
+		-webkit-user-select: none;
+		user-select: none;
 	}
 }
 
