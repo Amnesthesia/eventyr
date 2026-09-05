@@ -15,7 +15,7 @@ on:
 jobs:
   add-city:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     permissions:
       contents: write
 
@@ -39,12 +39,21 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Create city skeleton
+        env:
+          CITY_NAME: ${{ inputs.city_name }}
+          CITY_KEY:  ${{ inputs.city_key }}
+        run: pnpm tsx --tsconfig tsconfig.scripts.json src/add_city.ts
+
       - name: Discover sources
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          CITY_NAME:         ${{ inputs.city_name }}
-          CITY_KEY:          ${{ inputs.city_key }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/add_city.ts
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: pnpm discover-sources --city=${{ inputs.city_key }} --apply
+
+      - name: Probe sources
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: pnpm probe-sources --city=${{ inputs.city_key }} --apply
 
       - name: Commit result
         run: |
