@@ -15,14 +15,18 @@ on:
 jobs:
   add-city:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     permissions:
       contents: write
-      workflows: write
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          # Falls back to the default token when ADD_CITY_PAT isn't set yet.
+          # That token can never push workflow-file changes, so the commit
+          # step below only stages digest.yml when the PAT is present.
+          token: ${{ secrets.ADD_CITY_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
@@ -38,17 +42,38 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Discover sources
+      - name: Create city skeleton
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          CITY_NAME:         ${{ inputs.city_name }}
-          CITY_KEY:          ${{ inputs.city_key }}
+          CITY_NAME: ${{ inputs.city_name }}
+          CITY_KEY:  ${{ inputs.city_key }}
         run: pnpm tsx --tsconfig tsconfig.scripts.json src/add_city.ts
 
+      - name: Discover sources
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: pnpm discover-sources --city=${{ inputs.city_key }} --apply
+
+      - name: Probe sources
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: pnpm probe-sources --city=${{ inputs.city_key }} --apply
+
       - name: Commit result
+        env:
+          HAS_PAT: ${{ secrets.ADD_CITY_PAT != '' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "sources/${{ inputs.city_key }}.yml" .github/workflows/digest.yml
+          if [ "$HAS_PAT" = "true" ]; then
+            git add "sources/${{ inputs.city_key }}.yml" .github/workflows/digest.yml
+          else
+            echo "→ No ADD_CITY_PAT secret — leaving digest.yml's dispatch options untouched."
+            git checkout -- .github/workflows/digest.yml
+            git add "sources/${{ inputs.city_key }}.yml"
+          fi
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
           git commit -m "feat: add ${{ inputs.city_key }} event sources"
           git push
