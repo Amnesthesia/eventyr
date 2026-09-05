@@ -1,5 +1,5 @@
-// Finds the real, non-SPA listing page for every source in sources/*.yml and
-// promotes the ones that work to method: scraper.
+// Finds the real, non-SPA listing page for every source in one city's
+// sources/{city}.yml and promotes the ones that work to method: scraper.
 //
 // How it works, per source:
 //
@@ -16,12 +16,11 @@
 // The model only ever proposes. A URL becomes a scraper listingUrl solely
 // because events came out of it here.
 //
-// Usage:
-//   pnpm probe-sources                     # all cities, dry run + report
+// Usage — always scoped to exactly one city, never a fleet run:
 //   pnpm probe-sources --city=brisbane
-//   pnpm probe-sources --only=qagoma.qld.gov.au,thetivoli.com.au
-//   pnpm probe-sources --apply             # write promotions back to the YAML
-//   pnpm probe-sources --report-only       # re-derive report from cached results
+//   pnpm probe-sources --city=brisbane --only=qagoma.qld.gov.au,thetivoli.com.au
+//   pnpm probe-sources --city=brisbane --apply         # write promotions back to the YAML
+//   pnpm probe-sources --city=brisbane --report-only   # re-derive report from cached results
 
 import {
 	appendFileSync,
@@ -250,11 +249,17 @@ const flag = (name: string): string | undefined =>
 		.slice(1)
 		.join("=");
 const has = (name: string): boolean => args.includes(`--${name}`);
-const CITIES = flag("city")?.split(",") ?? [
-	"brisbane",
-	"goldcoast",
-	"sunnycoast",
-];
+// Only enforced when run as a CLI — importing this module for its pure
+// helpers (as probe.test.ts does) must not exit the test process.
+const IS_MAIN = process.argv[1]?.endsWith("probe.ts");
+const cityArg = flag("city");
+if (IS_MAIN && (!cityArg || cityArg.includes(","))) {
+	console.error(
+		"probe-sources runs for one city at a time — pass --city=<key>, e.g. --city=brisbane.",
+	);
+	process.exit(1);
+}
+const CITIES = cityArg ? [cityArg] : [];
 const ONLY = flag("only")
 	?.split(",")
 	.map((s) => s.trim().toLowerCase());
@@ -1641,7 +1646,7 @@ async function main(): Promise<void> {
 
 // Guarded so the pure helpers above can be imported by tests without the
 // module running a whole probe as an import side effect.
-if (process.argv[1]?.endsWith("probe.ts")) {
+if (IS_MAIN) {
 	await main();
 	// Exit explicitly. Everything this script needed to write has been written
 	// by now, and an abandoned fetch left pending by the per-source timeout

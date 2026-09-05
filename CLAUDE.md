@@ -11,9 +11,11 @@ feeds at dothings.lol.
    It does NOT discover sources: that used to fan out to Anthropic, Perplexity and Google and
    merge the prose, which `discover.ts` later measured as worthless (see its header). Run
    `pnpm discover-sources` next, then `pnpm probe-sources`.
-1a. **`src/adapters/discover.ts`** (`pnpm discover-sources [--city=X] [--apply]`) — asks Gemini
+1a. **`src/adapters/discover.ts`** (`pnpm discover-sources --city=X [--apply]`) — asks Gemini
    for venues the city's list is missing, one grounded call per niche, all as `method: llm`.
-1b. **`src/adapters/probe.ts`** (`pnpm probe-sources [--city=X] [--apply]`) — asks Gemini
+   `--city` is required and single: discovery and probing always run for one city at a time,
+   never the whole fleet in one call.
+1b. **`src/adapters/probe.ts`** (`pnpm probe-sources --city=X [--apply]`) — asks Gemini
    (Google-Search-grounded) where each source lists its events, fetches every suggested URL
    plus two canonical paths, and keeps only those that actually yield dated events. With
    `--apply`, promotes those sources to `method: scraper` in `sources/{city}.yml` with their
