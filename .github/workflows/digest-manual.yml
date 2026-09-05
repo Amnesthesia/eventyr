@@ -1,0 +1,42 @@
+name: Events Digest — Manual (any city)
+
+# digest.yml's own workflow_dispatch restricts `city` to a fixed dropdown —
+# only the cities add_city.ts has registered there, which needs ADD_CITY_PAT
+# to ever land (see add-city.yml). This entry point takes the city as free
+# text instead, so a city can be digested manually before — or without —
+# being added to that dropdown.
+
+on:
+  workflow_dispatch:
+    inputs:
+      city:
+        description: "City slug matching a file in sources/ (e.g. brisbane, byronbay)"
+        required: true
+        type: string
+      recipient:
+        description: "WhatsApp recipient number (e.g. 61412345678). Leave blank to use the default."
+        required: false
+        type: string
+        default: ""
+      force:
+        description: "Re-collect even if this week's data already exists"
+        required: false
+        type: boolean
+        default: false
+      providers:
+        description: "Comma-separated search providers to run (google, anthropic, openai, perplexity)"
+        required: false
+        type: string
+        default: "google,anthropic,perplexity"
+
+jobs:
+  digest:
+    uses: ./.github/workflows/digest.yml
+    permissions:
+      contents: write
+    with:
+      city: ${{ inputs.city }}
+      recipient: ${{ inputs.recipient }}
+      force: ${{ inputs.force }}
+      providers: ${{ inputs.providers }}
+    secrets: inherit

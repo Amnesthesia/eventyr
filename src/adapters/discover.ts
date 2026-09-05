@@ -47,11 +47,17 @@ const flag = (name: string): string | undefined =>
 		?.split("=")
 		.slice(1)
 		.join("=");
-const CITIES = flag("city")?.split(",") ?? [
-	"brisbane",
-	"goldcoast",
-	"sunnycoast",
-];
+// Only enforced when run as a CLI — importing this module for its pure
+// helpers (as discover.test.ts does) must not exit the test process.
+const IS_MAIN = process.argv[1]?.endsWith("discover.ts");
+const cityArg = flag("city");
+if (IS_MAIN && (!cityArg || cityArg.includes(","))) {
+	console.error(
+		"discover-sources runs for one city at a time — pass --city=<key>, e.g. --city=brisbane.",
+	);
+	process.exit(1);
+}
+const CITY = cityArg ?? "";
 const APPLY = args.includes("--apply");
 
 const MODEL = "gemini-3.5-flash";
@@ -304,10 +310,8 @@ async function main(): Promise<void> {
 	if (!apiKey) throw new Error("GOOGLE_API_KEY env var is required");
 	const ai = new GoogleGenAI({ apiKey });
 
-	for (const city of CITIES) {
-		console.log(`\n=== ${city} ===`);
-		await discoverCity(city, ai);
-	}
+	console.log(`\n=== ${CITY} ===`);
+	await discoverCity(CITY, ai);
 	if (!APPLY) {
 		console.log("\nDry run — rerun with --apply to add these sources.");
 	}
@@ -315,4 +319,4 @@ async function main(): Promise<void> {
 
 // Guarded so the parser above can be imported by tests without the module
 // running a full discovery sweep as an import side effect.
-if (process.argv[1]?.endsWith("discover.ts")) await main();
+if (IS_MAIN) await main();
