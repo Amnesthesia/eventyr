@@ -77,3 +77,18 @@ jobs:
           fi
           git commit -m "feat: add ${{ inputs.city_key }} event sources"
           git push
+
+  # Runs after sources exist and have been probed, so a new city gets this
+  # week's events without waiting for its first weekly/manual digest run.
+  # Reuses digest.yml rather than duplicating its collect/curate/rank/publish
+  # steps here — see digest.yml's own checkout step for why it explicitly
+  # re-resolves the branch ref instead of the (potentially stale) triggering
+  # SHA: this job's checkout needs to see the commit the job above just made.
+  digest:
+    needs: add-city
+    uses: ./.github/workflows/digest.yml
+    permissions:
+      contents: write
+    with:
+      city: ${{ inputs.city_key }}
+    secrets: inherit

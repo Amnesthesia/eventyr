@@ -74,6 +74,13 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          # actions/checkout defaults to the SHA that triggered this run, not
+          # the branch's current tip. That's usually the same commit — but
+          # when add-city.yml chains straight into this workflow, its own job
+          # has just pushed sources/{city}.yml, and the default would miss it
+          # entirely. Explicit ref name always resolves to the live tip.
+          ref: ${{ github.ref }}
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
