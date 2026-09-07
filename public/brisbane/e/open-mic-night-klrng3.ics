@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Open mic night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-klrng3@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T170000
+DTEND;TZID=Australia/Brisbane:20260909T190000
+SUMMARY:Open mic night
+DESCRIPTION:Open mic night is hosted at Visible Ink\, Fortitude Valley\, Fo
+ rtitude Valley as a Concert / Music event.
+LOCATION:Visible Ink\, Fortitude Valley\, Fortitude Valley
+URL:https://musick.com.au/gig/open-mic-night-2026-09-09-2/
+END:VEVENT
+END:VCALENDAR

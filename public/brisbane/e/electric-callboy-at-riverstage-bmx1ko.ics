@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Electric Callboy at Riverstage
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-bmx1ko@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T170000
+DTEND;TZID=Australia/Brisbane:20260912T190000
+SUMMARY:Electric Callboy at Riverstage
+DESCRIPTION:Electric Callboy at Riverstage is a concert taking place at Riv
+ erstage\, Brisbane.
+LOCATION:Riverstage\, Brisbane
+URL:https://musick.com.au/gig/electric-callboy-tanzneid-world-tour-australi
+ a-2026-2026-09-12/
+END:VEVENT
+END:VCALENDAR

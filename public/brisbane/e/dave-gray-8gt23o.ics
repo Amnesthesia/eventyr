@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dave Gray
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-8gt23o@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T110000
+DTEND;TZID=Australia/Brisbane:20260909T130000
+SUMMARY:Dave Gray
+DESCRIPTION:Dave Gray performs at Blue Pacific Showroom\, Chermside as a Co
+ ncert / Music event.
+LOCATION:Blue Pacific Showroom\, Chermside
+URL:https://musick.com.au/gig/soundbites-dave-gray-entertainment-lounge-202
+ 6-09-09/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ting Lim | You For Real? One night only. Exclusive live taping
+ .
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1t3e2xm@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Ting Lim | You For Real? One night only. Exclusive live taping.
+DESCRIPTION:Ting Lim | You For Real? One night only. Exclusive live taping.
+  is a comedy event held at Ad Astra Theatre.
+LOCATION:Ad Astra Theatre
+URL:https://goodchatcomedy.com/shows/ting-lim-yo-for-real-one-night-only-ex
+ clusive-live-taping/
+END:VEVENT
+END:VCALENDAR

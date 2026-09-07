@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Undying: Abdul-Rahman Abdullah
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kktx7@dothings
+DTSTART;TZID=Australia/Brisbane:20260813T110000
+DTEND;TZID=Australia/Brisbane:20260813T130000
+SUMMARY:Undying: Abdul-Rahman Abdullah
+DESCRIPTION:
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/undying-abdul-rahman-abdullah
+END:VEVENT
+END:VCALENDAR

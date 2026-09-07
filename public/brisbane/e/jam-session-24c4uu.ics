@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jam session
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-24c4uu@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Jam session
+DESCRIPTION:Jam session is hosted at Club Noir\, Loganholme as a Concert / 
+ Music event.
+LOCATION:Club Noir\, Loganholme
+URL:https://musick.com.au/gig/jam-session-2026-09-09/
+END:VEVENT
+END:VCALENDAR

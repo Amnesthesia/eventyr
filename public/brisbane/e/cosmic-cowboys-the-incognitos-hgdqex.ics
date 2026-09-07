@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Cosmic Cowboys & The Incognitos
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hgdqex@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T190000
+DTEND;TZID=Australia/Brisbane:20260907T210000
+SUMMARY:Cosmic Cowboys & The Incognitos
+DESCRIPTION:Cosmic Cowboys & The Incognitos perform at The Triffid (Beer Ga
+ rden) as a Concert / Music event.
+LOCATION:The Triffid (Beer Garden)
+URL:https://musick.com.au/gig/triffid-sundays-cosmic-cowboys-the-incognitos
+ -2026-09-07/
+END:VEVENT
+END:VCALENDAR

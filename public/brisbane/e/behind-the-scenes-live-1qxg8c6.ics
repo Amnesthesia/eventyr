@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Behind the Scenes — Live
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1qxg8c6@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T080000
+DTEND;TZID=Australia/Brisbane:20260914T100000
+SUMMARY:Behind the Scenes — Live
+DESCRIPTION:Gain exclusive access to guests from The Jim Henson Company and
+  the Gallery at a very special Livestream and Q&A event / USA: Sun 13 Sep 
+ / AUS: Mon 14 Sep
+LOCATION:Queensland Art Gallery | Gallery of Modern Art\, Stanley Place\, S
+ outh Bank
+URL:https://www.qagoma.qld.gov.au/event/qagoma-live-2026-09-14
+END:VEVENT
+END:VCALENDAR

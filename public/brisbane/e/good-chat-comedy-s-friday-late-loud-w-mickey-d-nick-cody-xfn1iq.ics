@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Good Chat Comedy’s Friday Late & Loud w. Mickey D & Nick Cod
+ y!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xfn1iq@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T210000
+DTEND;TZID=Australia/Brisbane:20260911T230000
+SUMMARY:Good Chat Comedy’s Friday Late & Loud w. Mickey D & Nick Cody!
+DESCRIPTION:Good Chat Comedy’s Friday Late & Loud w. Mickey D & Nick Cody
+ ! is a comedy event held at 52 Petrie Terrace\, Petrie Terrace.
+LOCATION:52 Petrie Terrace\, Petrie Terrace
+URL:https://goodchatcomedy.com/shows/good-chat-comedys-friday-late-loud-w-m
+ ickey-d-nick-cody/
+END:VEVENT
+END:VCALENDAR

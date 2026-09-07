@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:No One Gets Out of Here Alive
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1d1cjoe@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T110000
+DTEND;TZID=Australia/Brisbane:20260909T130000
+SUMMARY:No One Gets Out of Here Alive
+DESCRIPTION:Dance & Opera
+LOCATION:Kite Terrace\, Thomas Dixon Centre\, 406 Montague Road \, West End
+URL:https://musick.com.au/gig/no-one-gets-out-of-here-alive-2026-09-09-2/
+END:VEVENT
+END:VCALENDAR

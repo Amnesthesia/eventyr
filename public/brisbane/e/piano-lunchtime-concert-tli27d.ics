@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Piano Lunchtime Concert
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-tli27d@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T123000
+DTEND;TZID=Australia/Brisbane:20260909T143000
+SUMMARY:Piano Lunchtime Concert
+DESCRIPTION:Dance & Opera
+LOCATION:Conservatorium Theatre - CT\, South Brisbane
+URL:https://musick.com.au/gig/piano-lunchtime-concert-2026-09-09/
+END:VEVENT
+END:VCALENDAR

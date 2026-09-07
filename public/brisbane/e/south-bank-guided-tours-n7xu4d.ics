@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:South Bank Guided Tours
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-n7xu4d@dothings
+DTSTART;TZID=Australia/Brisbane:20251109T100000
+DTEND;TZID=Australia/Brisbane:20251109T120000
+SUMMARY:South Bank Guided Tours
+DESCRIPTION:South Bank Guided Tours is a public lecture event held at South
+  Bank Parklands.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/south-bank-guided-tours
+END:VEVENT
+END:VCALENDAR

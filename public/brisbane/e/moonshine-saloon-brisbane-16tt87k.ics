@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Moonshine Saloon Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16tt87k@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190500
+DTEND;TZID=Australia/Brisbane:20260909T210500
+SUMMARY:Moonshine Saloon Brisbane
+DESCRIPTION:Theatre & Musicals
+LOCATION:Fever Hub Brisbane\, Australia
+URL:https://musick.com.au/gig/moonshine-saloon-brisbane-the-wild-west-cockt
+ ail-experience-2026-09-09/
+END:VEVENT
+END:VCALENDAR

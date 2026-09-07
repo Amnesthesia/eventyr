@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Life Chronicles
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-9o3zfe@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T100000
+DTEND;TZID=Australia/Brisbane:20260909T120000
+SUMMARY:Life Chronicles
+DESCRIPTION:Experiences
+LOCATION:Fever Hub Brisbane\, Australia
+URL:https://musick.com.au/gig/life-chronicles-an-immersive-vr-journey-throu
+ gh-the-earth-s-history-2026-09-09/
+END:VEVENT
+END:VCALENDAR

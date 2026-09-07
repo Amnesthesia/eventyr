@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Horizon of Khufu
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-fpkyil@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T100000
+DTEND;TZID=Australia/Brisbane:20260909T120000
+SUMMARY:Horizon of Khufu
+DESCRIPTION:Experiences
+LOCATION:Fever Hub Brisbane\, Australia
+URL:https://musick.com.au/gig/horizon-of-khufu-journey-in-ancient-egypt-202
+ 6-09-09/
+END:VEVENT
+END:VCALENDAR

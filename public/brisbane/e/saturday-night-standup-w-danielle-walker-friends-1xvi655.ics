@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Saturday Night Standup w/ Danielle Walker & Friends!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1xvi655@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Saturday Night Standup w/ Danielle Walker & Friends!
+DESCRIPTION:Saturday Night Standup w/ Danielle Walker & Friends! is a comed
+ y event held at Good Chat Comedy Club.
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/saturday-night-standup-w-danielle-walk
+ er-friends/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Nick Cody | Crusher
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1pg7d7d@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T173000
+DTEND;TZID=Australia/Brisbane:20260912T193000
+SUMMARY:Nick Cody | Crusher
+DESCRIPTION:Nick Cody | Crusher is a comedy event held at Good Chat Comedy 
+ Club.
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/nick-cody-crusher/
+END:VEVENT
+END:VCALENDAR

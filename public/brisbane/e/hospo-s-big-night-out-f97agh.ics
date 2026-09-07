@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hospo's Big Night Out!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-f97agh@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T170000
+DTEND;TZID=Australia/Brisbane:20260907T190000
+SUMMARY:Hospo's Big Night Out!
+DESCRIPTION:Hospo's Big Night Out! is hosted at The Alligator Club\, Fortit
+ ude Valley as a Social / Meetup event.
+LOCATION:The Alligator Club\, Fortitude Valley
+URL:https://musick.com.au/gig/hospos-big-night-out-2026-09-07/
+END:VEVENT
+END:VCALENDAR

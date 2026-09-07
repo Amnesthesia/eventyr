@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Movie club: The Man in the Hat (PG)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-rn9pzl@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T103000
+DTEND;TZID=Australia/Brisbane:20260908T123000
+SUMMARY:Movie club: The Man in the Hat (PG)
+DESCRIPTION:The Man in the Hat journeys through France in a Fiat 500 accomp
+ anied by a framed photograph of an unknown woman. He is pursued by five an
+ gry men in a Citroën Dyane. Why are they chasing him? And how can he shak
+ e them off? (2020) (95min).
+LOCATION:Brisbane Square Library
+URL:https://www.brisbaneunlocked.com.au/movie-club-the-man-in-the-hat-pg-20
+ 26-09-08
+END:VEVENT
+END:VCALENDAR

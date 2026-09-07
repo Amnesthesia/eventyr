@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Danielle Walker | Bittersweet
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-82b1ev@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T190000
+DTEND;TZID=Australia/Brisbane:20260917T210000
+SUMMARY:Danielle Walker | Bittersweet
+DESCRIPTION:Danielle Walker | Bittersweet is a comedy event held at Good Ch
+ at Comedy Club.
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/danielle-walker-bittersweet/
+END:VEVENT
+END:VCALENDAR

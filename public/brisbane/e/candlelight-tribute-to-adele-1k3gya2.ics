@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight: Tribute to Adele
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1k3gya2@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T183000
+DTEND;TZID=Australia/Brisbane:20260911T203000
+SUMMARY:Candlelight: Tribute to Adele
+DESCRIPTION:Candlelight: Tribute to Adele is a concert taking place at Sain
+ t John's Anglican Cathedral\, Brisbane.
+LOCATION:Saint John's Anglican Cathedral\, Brisbane
+URL:https://musick.com.au/gig/candlelight-tribute-to-adele-2026-09-11-e499/
+END:VEVENT
+END:VCALENDAR

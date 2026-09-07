@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Local Pianists and Singers
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1uu010a@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Local Pianists and Singers
+DESCRIPTION:Local Pianists and Singers perform at Doo-Bop Bar\, Brisbane Ci
+ ty as a Concert / Music event.
+LOCATION:Doo-Bop Bar\, Brisbane City
+URL:https://musick.com.au/gig/live-piano-bar-2026-09-09/
+END:VEVENT
+END:VCALENDAR

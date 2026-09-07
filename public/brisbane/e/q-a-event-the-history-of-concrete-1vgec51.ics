@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Q&A Event: The History of Concrete
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1vgec51@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T220000
+DTEND;TZID=Australia/Brisbane:20260908T000000
+SUMMARY:Q&A Event: The History of Concrete
+DESCRIPTION:The History of Concrete is a Q&A event held at Palace Cinemas B
+ risbane categorized as a Public Lecture.
+LOCATION:Palace Cinemas Brisbane
+URL:https://www.palacecinemas.com.au/cinemas/qa-event-the-history-of-concre
+ te
+END:VEVENT
+END:VCALENDAR

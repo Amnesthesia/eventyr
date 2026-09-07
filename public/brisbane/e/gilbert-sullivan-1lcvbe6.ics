@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Gilbert Sullivan
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1lcvbe6@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T190000
+DTEND;TZID=Australia/Brisbane:20260908T210000
+SUMMARY:Gilbert Sullivan
+DESCRIPTION:Theatre & Musicals
+LOCATION:Concert Hall\, South Brisbane
+URL:https://musick.com.au/gig/gilbert-sullivan-a-soiree-of-song-and-satire-
+ 2026-09-08/
+END:VEVENT
+END:VCALENDAR

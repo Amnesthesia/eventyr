@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Blanc de Blanc Encore
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-4zjv7c@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T203000
+DTEND;TZID=Australia/Brisbane:20260909T223000
+SUMMARY:Blanc de Blanc Encore
+DESCRIPTION:Theatre & Musicals
+LOCATION:The West End Electric\, West End
+URL:https://musick.com.au/gig/blanc-de-blanc-encore-2026-09-09/
+END:VEVENT
+END:VCALENDAR

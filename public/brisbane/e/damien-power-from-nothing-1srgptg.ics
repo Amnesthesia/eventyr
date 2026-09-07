@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Damien Power | From Nothing
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1srgptg@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T190000
+DTEND;TZID=Australia/Brisbane:20260915T210000
+SUMMARY:Damien Power | From Nothing
+DESCRIPTION:Damien Power | From Nothing is a comedy event held at 52 Petrie
+  Terrace\, Brisbane City.
+LOCATION:52 Petrie Terrace\, Brisbane City
+URL:https://goodchatcomedy.com/shows/damien-power-from-nothing/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight: Tribute to Taylor Swift
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-6q1zji@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T203000
+DTEND;TZID=Australia/Brisbane:20260912T223000
+SUMMARY:Candlelight: Tribute to Taylor Swift
+DESCRIPTION:Candlelight: Tribute to Taylor Swift is a concert taking place 
+ at Grand on Ann\, Brisbane.
+LOCATION:Grand on Ann\, Brisbane
+URL:https://musick.com.au/gig/candlelight-tribute-to-taylor-swift-2026-09-1
+ 2/
+END:VEVENT
+END:VCALENDAR

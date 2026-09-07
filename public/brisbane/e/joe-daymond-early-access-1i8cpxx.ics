@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Joe Daymond | Early Access
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1i8cpxx@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T160000
+DTEND;TZID=Australia/Brisbane:20260919T180000
+SUMMARY:Joe Daymond | Early Access
+DESCRIPTION:Joe Daymond | Early Access is a comedy event held at Good Chat 
+ Comedy Club.
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/joe-daymond-early-access/
+END:VEVENT
+END:VCALENDAR

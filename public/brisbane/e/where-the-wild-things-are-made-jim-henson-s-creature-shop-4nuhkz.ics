@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Where the Wild Things Are Made: Jim Henson's Creature Shop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-4nuhkz@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T000100
+DTEND;TZID=Australia/Brisbane:20260912T020100
+SUMMARY:Where the Wild Things Are Made: Jim Henson's Creature Shop
+DESCRIPTION:Where the Wild Things Are Made: Jim Henson's Creature Shop is a
+ n arts exhibition held at GOMA\, Stanley Place\, South Bank.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/cinema/program/where-the-wild-things-are-
+ made-jim-hensons-creature-shop
+END:VEVENT
+END:VCALENDAR

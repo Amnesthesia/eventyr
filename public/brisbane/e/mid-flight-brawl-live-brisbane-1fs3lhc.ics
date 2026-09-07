@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mid Flight Brawl LIVE! [Brisbane]
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1fs3lhc@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T140000
+DTEND;TZID=Australia/Brisbane:20260912T160000
+SUMMARY:Mid Flight Brawl LIVE! [Brisbane]
+DESCRIPTION:Mid Flight Brawl LIVE! [Brisbane] is a comedy event held at Goo
+ d Chat Comedy Club.
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/mid-flight-brawl-live-brisbane-2/
+END:VEVENT
+END:VCALENDAR

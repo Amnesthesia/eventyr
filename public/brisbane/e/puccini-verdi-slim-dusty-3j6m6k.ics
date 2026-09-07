@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Puccini\, Verdi\, Slim Dusty
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3j6m6k@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Puccini\, Verdi\, Slim Dusty
+DESCRIPTION:Puccini\, Verdi\, Slim Dusty is hosted at Opera Queensland Stud
+ io\, S01/140 Grey St\, South Brisbane OPERA Queensland is proudly supporte
+ d by Brisbane City Council as a Concert / Music event.
+LOCATION:Opera Queensland Studio\, S01/140 Grey St\, South Brisbane OPERA Q
+ ueensland is proudly supported by Brisbane City Council
+URL:https://musick.com.au/gig/are-you-lonesome-tonight-brisbane-festival-20
+ 26-09-09/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Gathering: Rochelle Pitt
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1qagll8@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T120000
+DTEND;TZID=Australia/Brisbane:20260909T140000
+SUMMARY:Gathering: Rochelle Pitt
+DESCRIPTION:Gathering: Rochelle Pitt is hosted at Queen Street Mall\, Brisb
+ ane City\, Brisbane City as a Concert / Music event.
+LOCATION:Queen Street Mall\, Brisbane City\, Brisbane City
+URL:https://musick.com.au/gig/gathering-rochelle-pitt-2026-09-09/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bill Bailey
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ec27v4@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T200000
+DTEND;TZID=Australia/Brisbane:20260918T220000
+SUMMARY:Bill Bailey
+DESCRIPTION:Bill Bailey is performing at the Brisbane Convention & Exhibiti
+ on Centre as a Concert / Music event.
+LOCATION:Brisbane Convention & Exhibition Centre
+URL:https://premier.ticketek.com.au/shows/show.aspx?sh=BLIBLLEB26
+END:VEVENT
+END:VCALENDAR

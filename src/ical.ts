@@ -1,4 +1,11 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import {
+	existsSync,
+	mkdirSync,
+	readdirSync,
+	readFileSync,
+	rmSync,
+	writeFileSync,
+} from "node:fs";
 import { join } from "node:path";
 
 import {
@@ -207,6 +214,7 @@ function main(): void {
 
 	let count = 0;
 	let files = 0;
+	const written = new Set<string>();
 	for (const ev of events) {
 		const block = vevent(ev);
 		if (!block) continue;
@@ -225,12 +233,24 @@ function main(): void {
 		];
 		// eventSlug is the same bounded, sanitised value the event page's route
 		// uses, so this path cannot escape eventDir.
-		writeFileSync(
-			join(eventDir, `${eventSlug(CITY, ev)}.ics`),
-			`${single.join("\r\n")}\r\n`,
-			"utf-8",
-		);
+		const name = `${eventSlug(CITY, ev)}.ics`;
+		writeFileSync(join(eventDir, name), `${single.join("\r\n")}\r\n`, "utf-8");
+		written.add(name);
 		files++;
+	}
+
+	// Whatever this run did not write is an event that has since been dropped —
+	// a cancelled listing, a wrong-city event curate now rejects. Without this
+	// the directory only ever grows and those files keep being served: the
+	// Vienna and Manchester meetups curate had already removed were still
+	// downloadable as calendar entries. A rule that can only add accumulates
+	// stale state no later run can correct.
+	let removed = 0;
+	for (const name of readdirSync(eventDir)) {
+		if (name.endsWith(".ics") && !written.has(name)) {
+			rmSync(join(eventDir, name));
+			removed++;
+		}
 	}
 
 	lines.push("END:VCALENDAR");
@@ -238,7 +258,8 @@ function main(): void {
 	const outPath = join(PROJECT_ROOT, "public", `${CITY}.ics`);
 	writeFileSync(outPath, `${lines.join("\r\n")}\r\n`, "utf-8");
 	console.log(
-		`→ Written ${CITY}.ics (${count} events) and ${files} per-event .ics under public/${citySlug}/e/`,
+		`→ Written ${CITY}.ics (${count} events) and ${files} per-event .ics under public/${citySlug}/e/` +
+			(removed > 0 ? `, removed ${removed} stale` : ""),
 	);
 }
 

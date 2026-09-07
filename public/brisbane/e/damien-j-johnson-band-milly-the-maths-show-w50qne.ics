@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Damien J Johnson Band\, Milly & the Maths Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-w50qne@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T180000
+DTEND;TZID=Australia/Brisbane:20260910T200000
+SUMMARY:Damien J Johnson Band\, Milly & the Maths Show
+DESCRIPTION:Damien J Johnson Band\, Milly & the Maths Show is a concert tak
+ ing place at The Cave Inn\, Woolloongabba.
+LOCATION:The Cave Inn\, Woolloongabba
+URL:https://musick.com.au/gig/damien-j-johnson-band-with-milly-the-maths-sh
+ ow-2026-09-10/
+END:VEVENT
+END:VCALENDAR

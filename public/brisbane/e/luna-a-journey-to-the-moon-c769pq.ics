@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Luna\, A Journey to the Moon
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-c769pq@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T100000
+DTEND;TZID=Australia/Brisbane:20260910T120000
+SUMMARY:Luna\, A Journey to the Moon
+DESCRIPTION:Experiences Fever
+LOCATION:Hub Brisbane\, Australia
+URL:https://musick.com.au/gig/luna-a-journey-to-the-moon-2026-09-10/
+END:VEVENT
+END:VCALENDAR

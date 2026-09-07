@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Scenes With Girls
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-19mojs1@dothings
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260920
+SUMMARY:Scenes With Girls
+DESCRIPTION:Presented by Salad Days Collective
+LOCATION:Queensland Theatre\, 78 Montague Rd
+URL:https://queenslandtheatre.com.au/plays/scenes-with-girls
+END:VEVENT
+END:VCALENDAR

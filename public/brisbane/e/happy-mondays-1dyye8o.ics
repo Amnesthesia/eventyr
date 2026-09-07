@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Happy Mondays
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dyye8o@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Happy Mondays
+DESCRIPTION:Happy Mondays performs at Fortitude Music Hall as a Concert / M
+ usic event.
+LOCATION:Fortitude Music Hall\, 66 Doggett St
+URL:https://thefortitude.com.au/all-events/happy-mondays-tickets-ae461
+END:VEVENT
+END:VCALENDAR
