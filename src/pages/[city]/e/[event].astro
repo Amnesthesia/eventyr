@@ -17,14 +17,15 @@ import type { CityData, CityIndex, Event } from "@react/types";
 import { SLUG_TO_KEY } from "@react/utils/citySlug";
 import { catShortName, catToSlug } from "@react/utils/categorySlug";
 import {
-	costAmount,
 	costLabel,
 	DEFAULT_COST_LOCALE,
 	eventSlug,
 	isLikelyImageUrl,
 	isoWithOffset,
+	offerSchema,
 	stripForDisplay,
 } from "../../../shared.ts";
+import { organizerUrlsFor } from "../../../organizers.ts";
 import { VIBE_LABELS, vibesOf } from "@react/utils/vibes";
 
 export function getStaticPaths() {
@@ -58,10 +59,11 @@ const title = stripForDisplay(event.title);
 const eventDescription = stripForDisplay(event.description);
 // null when the value names neither a price nor "free"; the row is dropped
 // rather than shown as "Cost — See link".
-const cost = costLabel(event.cost, {
+const costLocale = {
 	locale: cityData.locale ?? DEFAULT_COST_LOCALE.locale,
 	currency: cityData.currency ?? DEFAULT_COST_LOCALE.currency,
-});
+};
+const cost = costLabel(event.cost, costLocale);
 
 // What the recipient of a shared link actually sees. Front-loads the facts
 // they need to decide whether to go: what, when, where.
@@ -112,18 +114,18 @@ const schema = {
 	eventStatus: "https://schema.org/EventScheduled",
 	eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
 	organizer: event.source
-		? { "@type": "Organization", name: event.source }
-		: undefined,
-	offers: cost
 		? {
-				"@type": "Offer",
-				description: cost,
-				priceCurrency: cityData.currency ?? DEFAULT_COST_LOCALE.currency,
-				price: costAmount(event.cost) ?? undefined,
-				availability: "https://schema.org/InStock",
-				url: event.link || url,
+				"@type": "Organization",
+				name: event.source,
+				url: organizerUrlsFor(cityKey).get(event.source.toLowerCase()),
 			}
 		: undefined,
+	offers: offerSchema(
+		event.cost,
+		costLocale,
+		event.link || url,
+		cityData.generated_at,
+	),
 	isAccessibleForFree: cost === "free" || undefined,
 };
 

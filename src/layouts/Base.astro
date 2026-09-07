@@ -5,14 +5,14 @@ import type { CityData } from "@react/types";
 import { KEY_TO_SLUG } from "@react/utils/citySlug";
 import { catToSlug, catShortName } from "@react/utils/categorySlug";
 import {
-	costAmount,
-	costLabel,
 	DEFAULT_COST_LOCALE,
 	eventPath,
 	isLikelyImageUrl,
 	isoWithOffset,
+	offerSchema,
 	stripForDisplay,
 } from "../shared.ts";
+import { organizerUrlsFor } from "../organizers.ts";
 
 interface Props {
 	cityData: CityData;
@@ -117,6 +117,7 @@ const costLocale = {
 	currency: cityData.currency ?? DEFAULT_COST_LOCALE.currency,
 };
 
+const organizerUrl = organizerUrlsFor(cityData.city_key);
 const listed = cityData.events.slice(0, 20);
 const schema = {
 	"@context": "https://schema.org",
@@ -155,18 +156,18 @@ const schema = {
 			eventStatus: "https://schema.org/EventScheduled",
 			eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
 			organizer: event.source
-				? { "@type": "Organization", name: event.source }
-				: undefined,
-			offers: costLabel(event.cost, costLocale)
 				? {
-						"@type": "Offer",
-						description: costLabel(event.cost, costLocale),
-						priceCurrency: costLocale.currency,
-						price: costAmount(event.cost) ?? undefined,
-						availability: "https://schema.org/InStock",
-						url: `${BASE_URL}${eventPath(cityData.city_key, event)}`,
+						"@type": "Organization",
+						name: event.source,
+						url: organizerUrl.get(event.source.toLowerCase()),
 					}
 				: undefined,
+			offers: offerSchema(
+				event.cost,
+				costLocale,
+				`${BASE_URL}${eventPath(cityData.city_key, event)}`,
+				cityData.generated_at,
+			),
 		},
 	})),
 };

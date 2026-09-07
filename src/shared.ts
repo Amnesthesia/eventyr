@@ -255,6 +255,56 @@ export function costAmount(raw: unknown): number | null {
 	return Number.isFinite(parsed) ? parsed : null;
 }
 
+/** Every currency-marked amount in a cost string, so "$10 online | $15 door"
+ * and "$2–$12" become a low/high pair. Bare numbers are ignored: "2 for $20"
+ * must not read as a $2 ticket. */
+const MARKED_AMOUNT = /[$\u20ac\u00a3\u00a5]\s*(\d+(?:[.,]\d{1,2})?)/g;
+
+export function costRange(raw: unknown): { low: number; high: number } | null {
+	if (typeof raw !== "string") return null;
+	const amounts = [...raw.matchAll(MARKED_AMOUNT)]
+		.map((m) => Number(m[1].replace(",", ".")))
+		.filter(Number.isFinite);
+	if (amounts.length < 2) return null;
+	return { low: Math.min(...amounts), high: Math.max(...amounts) };
+}
+
+/**
+ * schema.org offers for an event, or undefined when the cost says nothing
+ * useful. A single price is an Offer; a range or an "online | door" pair is an
+ * AggregateOffer, because Google rejects a range in `price`. validFrom is the
+ * digest date: the offer was on sale when we saw it, which is what the field
+ * asks — not a guess at the on-sale date.
+ */
+export function offerSchema(
+	rawCost: unknown,
+	costLocale: CostLocale,
+	url: string,
+	validFrom?: string,
+): Record<string, unknown> | undefined {
+	const label = costLabel(rawCost, costLocale);
+	if (!label) return undefined;
+	const base = {
+		description: label,
+		priceCurrency: costLocale.currency,
+		availability: "https://schema.org/InStock",
+		url,
+		validFrom: validFrom || undefined,
+	};
+	const amount = costAmount(rawCost);
+	if (amount !== null) return { "@type": "Offer", ...base, price: amount };
+	const range = costRange(rawCost);
+	if (range) {
+		return {
+			"@type": "AggregateOffer",
+			...base,
+			lowPrice: range.low,
+			highPrice: range.high,
+		};
+	}
+	return { "@type": "Offer", ...base };
+}
+
 /**
  * What to show in an event's cost pill, or null to show nothing.
  *
@@ -441,4 +491,33 @@ export function isLikelyImageUrl(value: unknown): boolean {
 export function eventPath(cityKey: string, event: IdentifiableEvent): string {
 	const city = KEY_TO_SLUG[cityKey] ?? cityKey;
 	return `/${city}/e/${eventSlug(cityKey, event)}/`;
+}
+
+/** The subset of a sources/{city}.yml entry the organizer lookup needs. */
+export interface OrganizerSource {
+	name: string;
+	homepage?: string;
+	domains?: string[];
+}
+
+/**
+ * Venue name → its own website, for schema.org `organizer.url`. Only the
+ * institutions and independents tiers: an aggregator (Eventbrite, a gig guide)
+ * is where we found the event, not who is putting it on. Keyed on the lowercased
+ * source name, which is the yml `name` for scraped events and whatever the search
+ * model echoed for the rest — so a miss just leaves `url` out.
+ */
+export function organizerUrls(
+	sources: Partial<Record<string, OrganizerSource[]>> | undefined,
+): Map<string, string> {
+	const out = new Map<string, string>();
+	for (const tier of ["institutions", "independents"]) {
+		for (const entry of sources?.[tier] ?? []) {
+			const url =
+				entry.homepage ??
+				(entry.domains?.[0] ? `https://${entry.domains[0]}/` : null);
+			if (url) out.set(entry.name.toLowerCase(), url);
+		}
+	}
+	return out;
 }
