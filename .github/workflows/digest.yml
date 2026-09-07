@@ -69,6 +69,13 @@ jobs:
   run-digest:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    # One digest at a time across every caller. Two runs dispatched two minutes
+    # apart raced on the shared generated files (sitemap, every city's feed,
+    # index.json) and the later one lost its rebase and its whole city. Queued,
+    # not cancelled: the second run still has a week to publish.
+    concurrency:
+      group: digest
+      cancel-in-progress: false
     permissions:
       contents: write
     env:
@@ -191,8 +198,11 @@ jobs:
                   public/sitemap.xml public/*/feed.xml
           git diff --cached --quiet && exit 0
           git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
+          # -X theirs: during a rebase "theirs" is this run's commit. Every file
+          # it touches is regenerated output, so a content merge against a
+          # concurrent push is meaningless — this run's version is the fresh one.
           for attempt in 1 2 3; do
-            git pull --rebase origin main && git push && exit 0
+            git pull --rebase -X theirs origin main && git push && exit 0
             sleep $((attempt * 10))
           done
           # Without this the loop's last command is `sleep`, which exits 0 —
