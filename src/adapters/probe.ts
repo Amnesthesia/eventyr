@@ -35,7 +35,9 @@ import yaml from "js-yaml";
 import {
 	DATA_ROOT,
 	getWeekRange,
+	isSameSite,
 	loadCityConfig,
+	normaliseHost,
 	SOURCE_TIERS,
 	SOURCES_ROOT,
 	type SourceEntry,
@@ -53,6 +55,7 @@ import {
 	reportGeminiUsage,
 } from "../providers/gemini.ts";
 import { toCandidateEvent } from "./candidate.ts";
+import { countDateHits } from "./dates.ts";
 import {
 	extractJsonLdBlocks,
 	findEventNodes,
@@ -282,23 +285,6 @@ const REPORT_ONLY = has("report-only");
 
 // --- helpers --------------------------------------------------------------
 
-function normaliseHost(raw: string | undefined): string | null {
-	if (!raw) return null;
-	return (
-		raw
-			.replace(/^https?:\/\//, "")
-			.split("/")[0]
-			.toLowerCase()
-			.replace(/^www\./, "") || null
-	);
-}
-
-/**
- * Host equality with a dot boundary. A bare endsWith() accepted
- * "evil-qagoma.qld.gov.au" as belonging to "qagoma.qld.gov.au", and since a
- * verified URL is written into sources/{city}.yml by --apply, that would make
- * an attacker-registered lookalike a permanent scrape target.
- */
 /** www/trailing-slash-insensitive key for de-duplicating candidate URLs. */
 function canonical(url: string): string {
 	return url
@@ -306,22 +292,6 @@ function canonical(url: string): string {
 		.replace(/^www\./, "")
 		.replace(/\/$/, "")
 		.toLowerCase();
-}
-
-function isSameSite(candidate: string | null, host: string): boolean {
-	if (!candidate) return false;
-	return candidate === host || candidate.endsWith(`.${host}`);
-}
-
-function countDateHits(text: string): number {
-	const patterns = [
-		/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/gi,
-		/\b(mon|tue|wed|thu|fri|sat|sun)[a-z]*\b/gi,
-		/\b\d{1,2}\/\d{1,2}(\/\d{2,4})?\b/g,
-		/\b\d{4}-\d{2}-\d{2}\b/g,
-		/\b\d{1,2}\s*(am|pm)\b/gi,
-	];
-	return patterns.reduce((n, re) => n + (text.match(re)?.length ?? 0), 0);
 }
 
 function gatePassed(s: PageSignals): boolean {

@@ -138,6 +138,57 @@ export function createGeminiAnnotator(apiKey: string): AnnotateFn {
 	};
 }
 
+/** Identity for reusing a previous week's annotation: same title, start and
+ * venue. Matches the basis of eventHash in shared.ts. */
+export function annotationKey(event: Record<string, unknown>): string {
+	const s = (k: string): string =>
+		typeof event[k] === "string" ? (event[k] as string) : "";
+	return `${s("title")}|${s("datetime_iso")}|${s("location")}`;
+}
+
+/**
+ * Previous annotations, keyed by identity. The publishing window is two weeks,
+ * so every scraped event is seen at least twice and a season listing many
+ * times; the classification does not change between runs, so last week's file
+ * (already on disk, already committed) answers for it.
+ */
+export function previousAnnotationIndex(
+	previous: Record<string, unknown>[],
+): Map<string, Record<string, unknown>> {
+	const index = new Map<string, Record<string, unknown>>();
+	for (const e of previous) index.set(annotationKey(e), e);
+	return index;
+}
+
+/**
+ * Lifts a previously annotated event's judgement fields back into an
+ * Annotation, or null when the page's own description has since changed (the
+ * classification was made against different text). An empty page description
+ * accepts any previous record: that is exactly the case where the model wrote
+ * the description last time, and it is what we want to keep.
+ */
+export function reuseAnnotation(
+	event: Record<string, unknown>,
+	previous: Record<string, unknown> | undefined,
+): Annotation | null {
+	if (!previous || !isValidCategory(previous.category)) return null;
+	const pageDescription = (event.description as string) || "";
+	const prevDescription = (previous.description as string) || "";
+	if (pageDescription && pageDescription !== prevDescription) return null;
+	return {
+		category: previous.category,
+		tags: Array.isArray(previous.tags)
+			? previous.tags.filter((t): t is string => typeof t === "string")
+			: [],
+		social: previous.social === true,
+		intellectual: previous.intellectual === true,
+		hands_on: previous.hands_on === true,
+		creative: previous.creative === true,
+		...(pageDescription ? {} : { description: prevDescription }),
+		drop: false,
+	};
+}
+
 /** Merges judgement fields onto the deterministic event. Factual fields are
  * never touched; description is only filled when the page had none. */
 export function applyAnnotation(

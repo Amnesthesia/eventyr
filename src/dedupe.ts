@@ -230,10 +230,20 @@ export interface DedupeStats {
 	output: number;
 }
 
+/** One duplicate group: which input indices were merged, and which survived. */
+export interface DedupeGroup {
+	members: number[];
+	survivor: number;
+}
+
 export async function dedupeEventsSmart(
 	events: Record<string, unknown>[],
 	opts: { classify?: PairClassifyFn } = {},
-): Promise<{ events: Record<string, unknown>[]; stats: DedupeStats }> {
+): Promise<{
+	events: Record<string, unknown>[];
+	stats: DedupeStats;
+	groups: DedupeGroup[];
+}> {
 	const { settled, candidates } = planDedupe(events);
 	const ds = new DisjointSet(events.length);
 	for (const [i, j] of settled) ds.union(i, j);
@@ -268,8 +278,23 @@ export async function dedupeEventsSmart(
 
 	const keep = new Set(best.values());
 	const output = events.filter((_, i) => keep.has(i));
+	// Groups are exposed so the caller can see what was merged with what — which
+	// provider's find survived, and which judgement fields the survivor should
+	// inherit — without re-deriving the union-find.
+	const members = new Map<number, number[]>();
+	events.forEach((_, i) => {
+		const root = ds.find(i);
+		const list = members.get(root);
+		if (list) list.push(i);
+		else members.set(root, [i]);
+	});
+	const groups: DedupeGroup[] = [...members.entries()].map(([root, list]) => ({
+		members: list,
+		survivor: best.get(root) as number,
+	}));
 	return {
 		events: output,
+		groups,
 		stats: {
 			input: events.length,
 			settledPairs: settled.length,

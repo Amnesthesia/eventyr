@@ -12,7 +12,15 @@
 // thetivoli.com.au) is extracted once.
 
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import {
+	existsSync,
+	mkdirSync,
+	readdirSync,
+	readFileSync,
+	statSync,
+	unlinkSync,
+	writeFileSync,
+} from "node:fs";
 import { join } from "node:path";
 import { DATA_ROOT } from "../common.ts";
 import type { PageExtractFn, RawCandidateFields } from "./types.ts";
@@ -22,9 +30,41 @@ import type { PageExtractFn, RawCandidateFields } from "./types.ts";
  * so a prompt edit invalidates the cache instead of serving results the new
  * prompt would not have produced.
  */
-const PROMPT_VERSION = "v1";
+const PROMPT_VERSION = "v2";
 
 const CACHE_DIR = join(DATA_ROOT, "_cache", "extractions");
+
+/**
+ * Entries untouched for this long are deleted on the first write of a run. The
+ * cache now persists between CI runs (actions/cache), and a listing page's text
+ * changes most weeks, so stale entries would otherwise accumulate without
+ * bound.
+ */
+const MAX_AGE_DAYS = 60;
+let pruned = false;
+
+function pruneOnce(): void {
+	if (pruned) return;
+	pruned = true;
+	try {
+		const cutoff = Date.now() - MAX_AGE_DAYS * 86_400_000;
+		let removed = 0;
+		for (const name of readdirSync(CACHE_DIR)) {
+			const path = join(CACHE_DIR, name);
+			if (statSync(path).mtimeMs < cutoff) {
+				unlinkSync(path);
+				removed++;
+			}
+		}
+		if (removed > 0) {
+			console.log(
+				`  → [extraction-cache] pruned ${removed} entr${removed === 1 ? "y" : "ies"} older than ${MAX_AGE_DAYS} days`,
+			);
+		}
+	} catch {
+		// no cache dir yet, or unreadable — nothing to prune
+	}
+}
 
 interface CacheEntry {
 	promptVersion: string;
@@ -92,6 +132,7 @@ export function withExtractionCache(
 		// considered answer, not a dropped call.
 		try {
 			mkdirSync(CACHE_DIR, { recursive: true });
+			pruneOnce();
 			const entry: CacheEntry = {
 				promptVersion: PROMPT_VERSION,
 				sourceName,

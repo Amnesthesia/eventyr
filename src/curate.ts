@@ -1,24 +1,30 @@
 import {
 	existsSync,
+	mkdirSync,
 	readdirSync,
 	readFileSync,
 	statSync,
 	writeFileSync,
 } from "node:fs";
-import { join, relative } from "node:path";
+import { dirname, join, relative } from "node:path";
 import { isPast, withinWindow } from "./adapters/normalise.ts";
 import {
+	allSourceEntries,
 	DATA_ROOT,
 	DEFAULT_COST_LOCALE,
 	fmtDate,
 	getWeekRange,
 	isLikelyImageUrl,
 	loadCityConfig,
+	loadYieldLedger,
 	normaliseCurrency,
+	normaliseHost,
 	PROJECT_ROOT,
 	requireEnv,
 	toISODate,
+	yieldLedgerPath,
 } from "./common.ts";
+import type { DedupeGroup } from "./dedupe.ts";
 import { dedupeEventsSmart } from "./dedupe.ts";
 import { createGeminiPairClassifier } from "./dedupeClassifier.ts";
 import {
@@ -27,6 +33,7 @@ import {
 	withPlaceCache,
 } from "./locality.ts";
 import { installUsageReporting } from "./providers/gemini.ts";
+import { unlistedWorthProbing, updateLedger } from "./sourceYield.ts";
 import { cleanText, cleanUrl } from "./text.ts";
 
 const CITY = requireEnv("CITY");
@@ -103,6 +110,28 @@ function previousEvents(): Record<string, unknown>[] {
 	return Array.isArray(PREVIOUS?.events) ? PREVIOUS.events : [];
 }
 
+/** Curated inputs, each tagged with the provider directory it came from —
+ * that name is the only record of which provider found an event, and the
+ * per-provider yield report is what decides whether a paid provider is worth
+ * keeping on. */
+function findCuratedFiles(
+	baseDir: string,
+): { path: string; provider: string }[] {
+	if (!existsSync(baseDir)) return [];
+	const results: { path: string; provider: string }[] = [];
+	for (const entry of readdirSync(baseDir, { withFileTypes: true })) {
+		if (!entry.isDirectory()) continue;
+		const dir = join(baseDir, entry.name, "curated");
+		if (!existsSync(dir)) continue;
+		for (const file of readdirSync(dir)) {
+			if (file.endsWith(".json")) {
+				results.push({ path: join(dir, file), provider: entry.name });
+			}
+		}
+	}
+	return results.sort((a, b) => a.path.localeCompare(b.path));
+}
+
 function findJsonFiles(baseDir: string, subPath: string): string[] {
 	if (!existsSync(baseDir)) return [];
 	const results: string[] = [];
@@ -115,6 +144,73 @@ function findJsonFiles(baseDir: string, subPath: string): string[] {
 		}
 	}
 	return results.sort();
+}
+
+/** Marks which provider produced an event. Stripped before the digest is
+ * written — it is bookkeeping, not published data. */
+const PROVIDER_KEY = "_provider";
+/** Everything except this directory is an LLM search provider. */
+const SCRAPE_PROVIDER = "adapters";
+
+/**
+ * How much each provider actually contributed: events that survived dedupe,
+ * and events no other provider also found. The second number is the one that
+ * matters for a paid provider — a search that only re-finds what the scrapers
+ * already have is pure cost.
+ */
+function reportProviderYield(
+	events: Record<string, unknown>[],
+	groups: DedupeGroup[],
+): void {
+	const per = new Map<string, { total: number; unique: number }>();
+	for (const group of groups) {
+		const providers = new Set(
+			group.members.map((i) => (events[i][PROVIDER_KEY] as string) ?? "?"),
+		);
+		for (const provider of providers) {
+			const rec = per.get(provider) ?? { total: 0, unique: 0 };
+			rec.total++;
+			if (providers.size === 1) rec.unique++;
+			per.set(provider, rec);
+		}
+	}
+	const rows = [...per.entries()].sort((a, b) => b[1].unique - a[1].unique);
+	console.log("→ provider yield (events kept / found by that provider alone):");
+	for (const [provider, rec] of rows) {
+		console.log(
+			`    ${provider.padEnd(12)} ${String(rec.total).padStart(4)} / ${String(rec.unique).padStart(4)} unique`,
+		);
+	}
+}
+
+/**
+ * Records which sources the search actually found events on, so next week's
+ * prompts can name only those (see src/sourceYield.ts). Hosts belonging to no
+ * source are counted too and reported: the search finding a venue we have
+ * never heard of is exactly the signal probe-sources wants.
+ */
+function updateYieldLedger(week: string, linkHosts: string[]): void {
+	if (linkHosts.length === 0) return;
+	const ledger = updateLedger(
+		loadYieldLedger(CITY),
+		week,
+		linkHosts,
+		allSourceEntries(cityCfg),
+	);
+	const path = yieldLedgerPath(CITY);
+	mkdirSync(dirname(path), { recursive: true });
+	writeFileSync(path, JSON.stringify(ledger, null, 2), "utf-8");
+	const named = Object.keys(ledger.sources).length;
+	console.log(
+		`→ source yield: ${named} source(s) have produced a search event in the last ${ledger.weeks.length} recorded week(s)`,
+	);
+	const worth = unlistedWorthProbing(ledger).slice(0, 10);
+	if (worth.length > 0) {
+		console.log(
+			`  ${worth.length} host(s) the search keeps finding that are on no source list — worth \`pnpm probe-sources --city=${CITY} --only=${worth[0].host}\`:`,
+		);
+		console.log(`    ${worth.map((w) => `${w.host} (${w.count})`).join(", ")}`);
+	}
 }
 
 /**
@@ -229,7 +325,12 @@ async function mergeAndDeduplicate(
 	const allEvents: Record<string, unknown>[] = [];
 	const dropped = { past: 0, later: 0, undated: 0 };
 
-	for (const file of findJsonFiles(cityDir, "curated")) {
+	// Link hosts from the search providers only: the ledger governs which
+	// sources the *search* prompts name, and a scraped source is not in that
+	// list at all.
+	const searchLinkHosts: string[] = [];
+
+	for (const { path: file, provider } of findCuratedFiles(cityDir)) {
 		try {
 			const payload = JSON.parse(readFileSync(file, "utf-8")) as Record<
 				string,
@@ -266,7 +367,11 @@ async function mergeAndDeduplicate(
 						// word of a missing field.
 						dropped.undated++;
 					}
-					allEvents.push({ ...event, venue });
+					if (provider !== SCRAPE_PROVIDER) {
+						const host = normaliseHost(event.link as string);
+						if (host) searchLinkHosts.push(host);
+					}
+					allEvents.push({ ...event, venue, [PROVIDER_KEY]: provider });
 				}
 			}
 		} catch {
@@ -306,7 +411,7 @@ async function mergeAndDeduplicate(
 			carried.later++;
 			continue;
 		}
-		allEvents.push(event);
+		allEvents.push({ ...event, [PROVIDER_KEY]: "carried" });
 		carried.kept++;
 	}
 	console.log(
@@ -339,14 +444,17 @@ async function mergeAndDeduplicate(
 			"  ⚠ GOOGLE_API_KEY unset — deduping deterministically only, ambiguous pairs kept",
 		);
 	}
-	const { events, stats } = await dedupeEventsSmart(local, {
+	const { events, stats, groups } = await dedupeEventsSmart(local, {
 		classify: apiKey ? createGeminiPairClassifier(apiKey) : undefined,
 	});
 	console.log(
 		`→ ${stats.input} events in, ${stats.removed} duplicate(s) removed ` +
 			`(${stats.settledPairs} matched outright, ${stats.askedPairs} ambiguous pair(s) checked, ${stats.confirmedByLlm} confirmed)`,
 	);
-	return events;
+	reportProviderYield(local, groups);
+	updateYieldLedger(toISODate(monday), searchLinkHosts);
+	// Bookkeeping only — never published.
+	return events.map(({ [PROVIDER_KEY]: _provider, ...rest }) => rest);
 }
 
 function writeJson(

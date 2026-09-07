@@ -3,6 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import yaml from "js-yaml";
+import { sourceEarnsPlace, type YieldLedger } from "./sourceYield.ts";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -29,13 +30,33 @@ export {
 	eventPath,
 	eventSlug,
 	isLikelyImageUrl,
+	isSameSite,
 	KEY_TO_SLUG,
 	normaliseCurrency,
+	normaliseHost,
 	normaliseText,
 	SITE_URL,
 	slugify,
 	TOP_PICK_THRESHOLD,
 } from "./shared.ts";
+
+/** Where curate.ts records which llm sources the search actually produced
+ * events from. Committed with the data; read by llmSourceStrings(). */
+export function yieldLedgerPath(city: string): string {
+	return join(DATA_ROOT, city, "source-yield.json");
+}
+
+export function loadYieldLedger(city: string): YieldLedger | null {
+	try {
+		const ledger = JSON.parse(
+			readFileSync(yieldLedgerPath(city), "utf-8"),
+		) as YieldLedger;
+		if (!Array.isArray(ledger.weeks) || !ledger.sources) return null;
+		return ledger;
+	} catch {
+		return null;
+	}
+}
 
 export const INTERESTS = `
 WANT:
@@ -198,6 +219,10 @@ function barrenSourceNames(
  * drop that source to zero coverage silently, since promotion removes it from
  * the search list. Falling back costs one source's worth of search budget;
  * not falling back costs the venue entirely.
+ *
+ * Excludes llm sources the search has not produced an event from in a long
+ * while (see src/sourceYield.ts): most named sources never yield anything, and
+ * naming them costs tokens without steering the search anywhere useful.
  */
 export function llmSourceStrings(
 	cfg: CityConfig,
@@ -208,9 +233,21 @@ export function llmSourceStrings(
 	const barren = cityKey
 		? barrenSourceNames(cityKey, toISODate(getWeekRange().monday))
 		: new Set<string>();
+	const ledger = cityKey ? loadYieldLedger(cityKey) : null;
 	return entries
-		.filter((e) => e.method === "llm" || barren === null || barren.has(e.name))
+		.filter((e) =>
+			e.method === "llm"
+				? sourceEarnsPlace(e, ledger)
+				: barren === null || barren.has(e.name),
+		)
 		.map((e) => (e.domains?.[0] ? `${e.name} (${e.domains[0]})` : e.name));
+}
+
+/** Every source in the city, all tiers flattened. */
+export function allSourceEntries(cfg: CityConfig): SourceEntry[] {
+	const out: SourceEntry[] = [];
+	for (const tier of SOURCE_TIERS) out.push(...(cfg.sources?.[tier] ?? []));
+	return out;
 }
 
 /** Every scraper-backed source across all tiers, paired with its tier. */

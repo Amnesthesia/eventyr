@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { isDuplicateEvent } from "../common.ts";
-import { parseDateRange, parseSingleDateTime } from "./dates.ts";
+import { countDateHits, parseDateRange, parseSingleDateTime } from "./dates.ts";
 
 const REF = new Date("2026-06-01T00:00:00+10:00");
 
@@ -290,4 +290,25 @@ test("an open-ended run that is still on starts today", () => {
 	});
 	// An end already past is an archive listing, so it stays start-less.
 	assert.equal(parseDateRange("Until 1 Jan 2020", ref).startISO, null);
+});
+
+test("countDateHits: a real listing excerpt scores well above a dateless footer", () => {
+	const listing =
+		"Sat 12 Sep, 7:00pm — Jazz Night at The Tivoli. Sun 13 Sep, 3pm — Matinee.";
+	const footer =
+		"Follow us on Instagram and Facebook. Contact us. Privacy policy. Terms.";
+	assert.ok(countDateHits(listing) > 0);
+	assert.equal(countDateHits(footer), 0);
+});
+
+test("countDateHits: llmExtract skips exactly the batches with zero hits", () => {
+	// Mirrors the filter in llmExtract.ts's extractPage: a batch this cheap
+	// check rules out never reaches the model.
+	const batches = [
+		"Sat 12 Sep, 7:00pm — Jazz Night.",
+		"Related articles. Share this page. Subscribe to our newsletter.",
+		"Mon 14 Sep — Trivia at 8pm.",
+	];
+	const kept = batches.filter((b) => countDateHits(b) > 0);
+	assert.deepEqual(kept, [batches[0], batches[2]]);
 });

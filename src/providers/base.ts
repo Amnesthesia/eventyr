@@ -30,20 +30,45 @@ export interface ProviderOptions {
 	curate: CurateFunction;
 }
 
+// The named sources are the ones that have produced events before
+// (src/sourceYield.ts) — a steer, not a checklist. Measured over 18 weeks, a
+// quarter of everything the search found came from sites on no list at all, so
+// the instruction is to search beyond the names, not to tick them off.
 export const TIER_INSTRUCTIONS: Record<string, string> = {
 	aggregators:
-		"These sources often list the same events as each other. " +
+		"These platforms often list the same events as each other. " +
 		"Batch them into 1–2 broad `site:A OR site:B` queries — " +
 		"you do not need to search every source individually.",
 	institutions:
-		"Each institution runs its own independent programme. " +
-		"Check every source. Batch by type where sensible " +
-		"(e.g. universities together, major venues together).",
+		"Each institution runs its own programme. The named ones have listed " +
+		"relevant events before; search beyond them for other institutions too.",
 	independents:
-		"These are niche venues whose events rarely appear in aggregators. " +
-		"Check every source. Small `site:A OR site:B` batches are fine " +
-		"where sources are closely related, but don't skip any.",
+		"Niche venues whose events rarely appear in aggregators. The named ones " +
+		"have produced events before; most good finds are venues not on the list, " +
+		"so search broadly rather than checking names off.",
 };
+
+/**
+ * The tiers a provider runs, after the per-provider allowlist:
+ *   ANTHROPIC_TIERS=aggregators,institutions
+ * Search cost is per call, so dropping a tier from an expensive provider is
+ * the one lever that cuts its bill by a third at a stroke. Unset ⇒ all tiers.
+ */
+export function selectTiers(
+	providerName: string,
+	tiers: readonly string[],
+	env: NodeJS.ProcessEnv = process.env,
+): string[] {
+	const raw = env[`${providerName.toUpperCase()}_TIERS`];
+	if (!raw) return [...tiers];
+	const allow = new Set(
+		raw
+			.split(",")
+			.map((t) => t.trim())
+			.filter(Boolean),
+	);
+	return tiers.filter((t) => allow.has(t));
+}
 
 // A fixed grammar (rather than "note these fields" prose) keeps every
 // provider's raw output shaped the same way, which is what the downstream
@@ -145,8 +170,14 @@ export abstract class BaseProvider {
 		// what cuts wall-clock time, since per-call token cost is fixed either
 		// way. Errors are caught per-job so one failure doesn't take down the
 		// rest of the batch.
+		const tiers = selectTiers(this.name, this.tiers);
+		if (tiers.length < this.tiers.length) {
+			console.log(
+				`  → [${this.name}] tiers limited to ${tiers.join(", ") || "(none)"} by ${this.name.toUpperCase()}_TIERS`,
+			);
+		}
 		await Promise.all(
-			this.tiers.map(async (tier) => {
+			tiers.map(async (tier) => {
 				const outPath = curatedPath(city, this.name, tier);
 				const label = `${this.name}/${tier}`;
 
@@ -399,11 +430,15 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 				`List as many specific confirmed events as you can find. ${noEventsNote}`
 			);
 		}
+		// Named sources are the ones that have yielded events before (see
+		// src/sourceYield.ts) — a steer for the search, not a list to check off.
 		if (tier === "institutions") {
 			const names = sourceNames(sources);
 			return (
 				`What events are happening at ${cityName} cultural venues for ${dateRange}? ` +
-				`Venues to check include: ${names}. ` +
+				(names
+					? `Venues that have listed relevant events before include: ${names}. Search beyond them too. `
+					: "") +
 				`${coverageNote} ` +
 				`List every event you find. ${noEventsNote}`
 			);
@@ -412,7 +447,9 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 			const names = sourceNames(sources);
 			return (
 				`What events are happening at small, independent ${cityName} venues and community groups from ${dateRange}? ` +
-				`Known venues to check include: ${names} — but also search for other independent venues and community events not on that list. ` +
+				(names
+					? `Venues that have had relevant events before include: ${names}. Most good finds are not on that list — search widely for other independent venues and community events. `
+					: "Search widely for independent venues and community events. ") +
 				`${coverageNote} ` +
 				`List every event you can find. ${noEventsNote}`
 			);

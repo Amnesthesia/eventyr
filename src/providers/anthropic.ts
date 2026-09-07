@@ -6,21 +6,23 @@ import {
 	OUTPUT_FORMAT_RULES,
 	TIER_INSTRUCTIONS,
 } from "./base.ts";
+import { estimateUsd, recordUsage } from "./gemini.ts";
 
-// Kept on Sonnet 5 deliberately. The obvious cost lever — dropping to Haiku
-// 4.5 at half the token rate — is the wrong one twice over: agentic web search
-// is exactly where a small model degrades, and Haiku 4.5 predates 4.6 so it
-// cannot use dynamic filtering at all (it would need
-// allowed_callers: ["direct"], i.e. every raw search result back in context,
-// which is where this provider's cost actually goes).
-const SEARCH_MODEL = "claude-sonnet-5";
+// Sonnet 5 by default. Haiku 4.5 is half the token rate but agentic web search
+// is where a small model degrades most, so it is an experiment to run against
+// the usage file's unique-events-per-provider count, not a default:
+//   ANTHROPIC_SEARCH_MODEL=claude-haiku-4-5
+// (The earlier objection — Haiku cannot use the dynamic-filtering tool — is
+// moot: that tool variant returned NO_EVENTS_FOUND on every tier and is not
+// used. See the tool comment below.)
+const SEARCH_MODEL = process.env.ANTHROPIC_SEARCH_MODEL ?? "claude-sonnet-5";
 /**
- * Searches per tier. Web search bills $10 per 1,000 searches on top of tokens,
- * so 8 per tier across 3 tiers was $0.24 per city-week in search fees alone —
- * $37/year across three cities. Anthropic's own guidance is 1–3 searches for
- * simple lookups; four leaves room for a couple of retries on a tier.
+ * Searches per tier. This is the whole cost of the provider: each search's raw
+ * results (~15k tokens) are cache-written at 1.25× input, plus $10 per 1,000
+ * searches — about $0.06 per search on Sonnet 5, and nothing else in the call
+ * comes close. Anthropic's own guidance is 1–3 searches for lookups like this.
  */
-const MAX_WEB_SEARCHES = 4;
+const MAX_WEB_SEARCHES = 3;
 
 export class AnthropicProvider extends BaseProvider {
 	readonly name = "anthropic";
@@ -106,6 +108,19 @@ export class AnthropicProvider extends BaseProvider {
 		console.log(
 			`  [${label}] ${searchCalls} web search(es) | tokens: ${response.usage.input_tokens} in / ${response.usage.output_tokens} out | cache: ${cacheRead} read / ${cacheWrite} write`,
 		);
+		const call = {
+			calls: 1,
+			promptTokens: response.usage.input_tokens + cacheRead,
+			cachedTokens: cacheRead,
+			cacheWriteTokens: cacheWrite,
+			outputTokens: response.usage.output_tokens,
+			grounded: 1,
+			searchQueries: searchCalls,
+		};
+		recordUsage("search/anthropic", {
+			...call,
+			estimatedUsd: estimateUsd(SEARCH_MODEL, call),
+		});
 		if (response.stop_reason === "max_tokens") {
 			console.warn(
 				`  ⚠ [${label}] response hit max_tokens — the event list is truncated`,

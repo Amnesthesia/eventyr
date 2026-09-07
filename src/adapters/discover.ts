@@ -217,6 +217,9 @@ async function askNiche(
 			systemInstruction: SYSTEM_PROMPT,
 			search: true,
 			maxOutputTokens: 4000,
+			// gemini-3.5-flash thinks at "high" by default and bills the thoughts
+			// as output; listing venues it already knows does not need that.
+			extraConfig: { thinkingConfig: { thinkingLevel: "low" } },
 		});
 		return parseSuggestionLines(text, niche.tier);
 	} catch (err) {

@@ -298,3 +298,21 @@ export function parseDateRange(
 		endISO: end ? toBrisbaneISO(end, endHasTime) : null,
 	};
 }
+
+/**
+ * How many date-shaped fragments a piece of text contains. A free signal for
+ * "could this text yield a dated event at all?" — probe uses it to gate which
+ * pages get an extraction call, and llmExtract to skip batches (footers,
+ * related-content blocks) that cannot produce anything prepareCandidates would
+ * keep.
+ */
+export function countDateHits(text: string): number {
+	const patterns = [
+		/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/gi,
+		/\b(mon|tue|wed|thu|fri|sat|sun)[a-z]*\b/gi,
+		/\b\d{1,2}\/\d{1,2}(\/\d{2,4})?\b/g,
+		/\b\d{4}-\d{2}-\d{2}\b/g,
+		/\b\d{1,2}\s*(am|pm)\b/gi,
+	];
+	return patterns.reduce((n, re) => n + (text.match(re)?.length ?? 0), 0);
+}

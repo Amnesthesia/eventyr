@@ -90,6 +90,29 @@ export function eventHash(cityKey: string, event: IdentifiableEvent): string {
 	return (hash >>> 0).toString(36);
 }
 
+/** Bare lowercase host out of a URL or domain string, www. stripped. */
+export function normaliseHost(raw: string | undefined | null): string | null {
+	if (!raw) return null;
+	return (
+		raw
+			.replace(/^https?:\/\//, "")
+			.split("/")[0]
+			.toLowerCase()
+			.replace(/^www\./, "") || null
+	);
+}
+
+/**
+ * Host equality with a dot boundary. A bare endsWith() accepted
+ * "evil-qagoma.qld.gov.au" as belonging to "qagoma.qld.gov.au", and since a
+ * verified URL is written into sources/{city}.yml by probe --apply, that would
+ * make an attacker-registered lookalike a permanent scrape target.
+ */
+export function isSameSite(candidate: string | null, host: string): boolean {
+	if (!candidate) return false;
+	return candidate === host || candidate.endsWith(`.${host}`);
+}
+
 /**
  * Lowercased, diacritics stripped, everything else collapsed to single
  * hyphens. Used for URL segments; app/utils/search.ts shares the same

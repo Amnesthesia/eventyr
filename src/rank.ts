@@ -13,6 +13,7 @@ import {
 } from "./common.ts";
 import { chunkArray, mapWithConcurrency } from "./providers/base.ts";
 import { geminiText, installUsageReporting } from "./providers/gemini.ts";
+import { RANK_DESCRIPTION_CHARS, rankReuseKey } from "./rankReuse.ts";
 
 const RANK_MODEL = "gemini-3.5-flash";
 /**
@@ -49,7 +50,11 @@ type Event = Record<string, unknown>;
 function buildRankUser(events: Event[]): string {
 	const lines = events.map((e, i) => {
 		const tags = ((e.tags as string[]) ?? []).join(", ");
-		return `${i}. [${e.category ?? ""}] ${e.title ?? "Untitled"} | ${e.cost ?? ""} | ${e.description ?? ""} | tags: ${tags}`;
+		const description = ((e.description as string) ?? "").slice(
+			0,
+			RANK_DESCRIPTION_CHARS,
+		);
+		return `${i}. [${e.category ?? ""}] ${e.title ?? "Untitled"} | ${e.cost ?? ""} | ${description} | tags: ${tags}`;
 	});
 	return lines.join("\n");
 }
@@ -109,17 +114,40 @@ async function main(): Promise<void> {
 		`Ranking — ${payload.city as string} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
 	);
 	console.log("=".repeat(50));
-	console.log(`→ Scoring ${events.length} events with Google Gemini…`);
+
+	// Reuse last week's score wherever the event and everything the prompt
+	// shows about it are unchanged. Skipped entirely on FORCE — a forced run
+	// is asking for a fresh answer, not a cached one.
+	const previousByKey = new Map<string, number>();
+	if (!FORCE && existsSync(jsonPath)) {
+		for (const e of (payload.events as Event[]) ?? []) {
+			if (typeof e.score === "number") {
+				previousByKey.set(rankReuseKey(CITY, e), e.score);
+			}
+		}
+	}
+	const toScore: { event: Event; index: number }[] = [];
+	let reused = 0;
+	events.forEach((event, index) => {
+		const prev = previousByKey.get(rankReuseKey(CITY, event));
+		if (prev !== undefined) {
+			event.score = prev;
+			reused++;
+		} else {
+			toScore.push({ event, index });
+		}
+	});
+	console.log(
+		`→ Scoring ${toScore.length} of ${events.length} events with Google Gemini` +
+			`${reused > 0 ? ` (${reused} unchanged from last week, reused)` : ""}…`,
+	);
 
 	const ai = new GoogleGenAI({ apiKey: GOOGLE_API_KEY });
 	// Chunked and concurrent: scores are per-event judgements with no
 	// cross-event reasoning, so a chunk boundary costs nothing, while one call
 	// for 400+ events risked a silent truncation that assigns a neutral 5 to
 	// every event and erases the ranking.
-	const chunks = chunkArray(
-		events.map((event, index) => ({ event, index })),
-		RANK_CHUNK,
-	);
+	const chunks = chunkArray(toScore, RANK_CHUNK);
 	const results = await mapWithConcurrency(chunks, 3, async (chunk, i) => {
 		const rawText = await geminiText(ai, {
 			stage: "rank",

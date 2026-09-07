@@ -21,6 +21,7 @@ import {
 	splitIntoBatches,
 } from "../providers/base.ts";
 import { geminiText } from "../providers/gemini.ts";
+import { countDateHits } from "./dates.ts";
 import type { PageExtractFn, RawCandidateFields } from "./types.ts";
 
 const EXTRACT_MODEL = "gemini-3.1-flash-lite";
@@ -54,10 +55,7 @@ For each event found, produce a JSON object with exactly these fields:
   "address": string or null,
   "url": string or null,
   "price": string or null,
-  "imageUrl": string or null,
-  "organiser": string or null,
-  "category": string or null,
-  "sourceEventId": string or null
+  "imageUrl": string or null
 }
 
 Output ONLY a valid compact JSON array of these objects — no markdown, no code fences, no explanation, no whitespace/newlines between elements.`;
@@ -111,10 +109,30 @@ export function createGeminiPageExtractor(
 			maxOutputTokens: MAX_OUTPUT_TOKENS,
 			temperature: 0.1,
 		});
-		const events = parseJsonArray<RawCandidateFields>(text, label);
+		const events = parseJsonArray<Partial<RawCandidateFields>>(text, label);
 		// Drop entries that carry nothing usable — a stray heading or nav
-		// fragment the model mistook for an event, not a real extraction.
-		return events.filter((e) => !isEmptyFields(e));
+		// fragment the model mistook for an event, not a real extraction. The
+		// three fields nothing downstream reads (organiser, category,
+		// sourceEventId) are no longer asked for — they were a fifth of the
+		// output tokens — so they are filled in as null here.
+		return events
+			.map(
+				(e): RawCandidateFields => ({
+					title: e.title ?? null,
+					description: e.description ?? null,
+					startRaw: e.startRaw ?? null,
+					endRaw: e.endRaw ?? null,
+					venueName: e.venueName ?? null,
+					address: e.address ?? null,
+					url: e.url ?? null,
+					price: e.price ?? null,
+					imageUrl: e.imageUrl ?? null,
+					organiser: null,
+					category: null,
+					sourceEventId: null,
+				}),
+			)
+			.filter((e) => !isEmptyFields(e));
 	}
 
 	/**
@@ -195,7 +213,17 @@ export function createGeminiPageExtractor(
 		// the difference between a bounded run and an open-ended bill. The
 		// first batches hold the listing itself; later ones are footer and
 		// related-content boilerplate.
-		const batches = splitIntoBatches(pageText, 12000).slice(0, maxBatches);
+		const all = splitIntoBatches(pageText, 12000).slice(0, maxBatches);
+		// A batch with no date-shaped text cannot produce an event that
+		// prepareCandidates would keep (undated candidates are rejected), so
+		// asking costs a call and answers nothing. Footers and related-content
+		// blocks are what this skips.
+		const batches = all.filter((b) => countDateHits(b) > 0);
+		if (batches.length < all.length) {
+			console.log(
+				`  → [llmExtract/${sourceName}] skipped ${all.length - batches.length} dateless batch(es)`,
+			);
+		}
 		const results = await mapWithConcurrency(
 			batches,
 			MAX_CONCURRENT_CALLS,

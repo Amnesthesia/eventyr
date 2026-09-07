@@ -25,7 +25,14 @@ import {
 } from "../common.ts";
 import { mapWithConcurrency } from "../providers/base.ts";
 import { installUsageReporting } from "../providers/gemini.ts";
-import { applyAnnotation, createGeminiAnnotator } from "./annotate.ts";
+import {
+	type Annotation,
+	annotationKey,
+	applyAnnotation,
+	createGeminiAnnotator,
+	previousAnnotationIndex,
+	reuseAnnotation,
+} from "./annotate.ts";
 import { enrichCandidateTimes } from "./enrichTimes.ts";
 import { withExtractionCache } from "./extractionCache.ts";
 import { SourceFetcher } from "./fetch.ts";
@@ -183,18 +190,56 @@ async function collectSource(
 
 	let events: Record<string, unknown>[] = [];
 	let dropped = 0;
+	let reused = 0;
 	if (prepared.length > 0) {
-		const annotations = await annotate(
-			prepared.map((p) => p.event),
-			source.name,
+		// The publishing window is two weeks, so a scraped event is annotated at
+		// least twice, and a season listing many more times, for a
+		// classification that never changes between runs. Last week's file for
+		// this source (still on disk — it is only overwritten below) already has
+		// the answer for anything unchanged.
+		const previous = previousAnnotationIndex(
+			existsSync(outPath)
+				? ((
+						JSON.parse(readFileSync(outPath, "utf-8")) as {
+							events?: Record<string, unknown>[];
+						}
+					).events ?? [])
+				: [],
 		);
+		const annotationFor = new Map<number, Annotation>();
+		const toAnnotate: { event: Record<string, unknown>; index: number }[] = [];
+		prepared.forEach((p, i) => {
+			const reusedAnnotation = reuseAnnotation(
+				p.event,
+				previous.get(annotationKey(p.event)),
+			);
+			if (reusedAnnotation) {
+				annotationFor.set(i, reusedAnnotation);
+				reused++;
+			} else {
+				toAnnotate.push({ event: p.event, index: i });
+			}
+		});
+		if (toAnnotate.length > 0) {
+			const fresh = await annotate(
+				toAnnotate.map((t) => t.event),
+				source.name,
+			);
+			for (const [i, t] of toAnnotate.entries())
+				annotationFor.set(t.index, fresh[i]);
+		}
+		if (reused > 0) {
+			console.log(
+				`  → [${source.id}] ${reused}/${prepared.length} annotation(s) reused from last week`,
+			);
+		}
 		events = prepared
-			.map((p, i) => ({ event: p.event, a: annotations[i] }))
+			.map((p, i) => ({ event: p.event, a: annotationFor.get(i) }))
 			.filter(({ a }) => {
 				if (a?.drop) dropped++;
 				return !a?.drop;
 			})
-			.map(({ event, a }) => applyAnnotation(event, a));
+			.map(({ event, a }) => applyAnnotation(event, a as Annotation));
 	}
 
 	const payload = {

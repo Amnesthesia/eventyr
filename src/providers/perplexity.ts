@@ -1,5 +1,6 @@
 import { fmtDate } from "../common.ts";
 import type { ProviderOptions, SearchResult } from "./base.ts";
+import { estimateUsd, recordUsage } from "./gemini.ts";
 import { OpenAIProvider } from "./openai.ts";
 
 export class PerplexityProvider extends OpenAIProvider {
@@ -70,6 +71,19 @@ This is a fully automated pipeline with no human able to read or reply to your r
 				{ role: "system", content: systemMsg },
 				{ role: "user", content: userMsg },
 			],
+		});
+
+		const call = {
+			calls: 1,
+			promptTokens: response.usage?.prompt_tokens ?? 0,
+			outputTokens: response.usage?.completion_tokens ?? 0,
+			grounded: 1,
+			// Perplexity bills one request fee per call, not per query it ran.
+			searchQueries: 1,
+		};
+		recordUsage("search/perplexity", {
+			...call,
+			estimatedUsd: estimateUsd(this.model, call),
 		});
 
 		const rawText = response.choices[0]?.message?.content ?? "";

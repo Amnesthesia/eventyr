@@ -119,6 +119,22 @@ jobs:
           pnpm tsc --noEmit -p tsconfig.scripts.json
           pnpm test
 
+      # Fetch/extraction caches from the previous run. Pages are still fetched
+      # every week for fresh events, but an unchanged page is a 304 (no body)
+      # and its identical text hits the extraction cache, so only pages that
+      # actually changed pay for an extraction call. Without this the caches
+      # only ever existed on developer machines — a fresh runner re-extracted
+      # every page every week.
+      - name: Restore adapter caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/_cache
+            data/_raw
+          key: adapters-${{ inputs.city }}-${{ github.run_id }}
+          restore-keys: |
+            adapters-${{ inputs.city }}-
+
       # Scrape first-party sources we have verified listing URLs for. Never
       # blocks the run: the AI search below still covers every method: llm
       # source regardless of how this goes.
@@ -137,6 +153,11 @@ jobs:
           # than implied by which secrets happen to be set. A provider left out
           # here keeps its key and simply does not run.
           PROVIDERS: ${{ inputs.providers }}
+          # Anthropic costs ~$0.06 per web search and nothing else about the
+          # call matters, so it runs the two tiers where search beats scraping.
+          # Revisit against data/{city}/usage/*.json (unique events per
+          # provider) before widening.
+          ANTHROPIC_TIERS: aggregators,institutions
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
