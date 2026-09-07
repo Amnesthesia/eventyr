@@ -3,53 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "the-tivoli",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
-    {
-      "title": "Bury Tomorrow (UK) With Gideon",
-      "datetime": "Fri 4 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-04T19:00:00",
-      "datetime_end_iso": "",
-      "location": "The Tivoli, 52 Costin St",
-      "link": "https://thetivoli.com.au/events/bury-tomorrow",
-      "cost": "See link",
-      "source": "The Tivoli",
-      "description": "Bury Tomorrow and Gideon perform a concert at The Tivoli.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "metalcore",
-        "live music",
-        "concert"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Club Angel (AUS) With Mincy & Jai Taylor",
-      "datetime": "Sat 5 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-05T19:00:00",
-      "datetime_end_iso": "",
-      "location": "The Tivoli, 52 Costin St",
-      "link": "https://thetivoli.com.au/events/club-angel",
-      "cost": "See link",
-      "source": "The Tivoli",
-      "description": "Few Tickets Left",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "electronic",
-        "dance",
-        "dj"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Ash (IRELAND) With Northern Lights",
       "datetime": "Thu 10 Sep, 7:00 PM",
@@ -64,8 +20,8 @@
       "category": "Concert / Music",
       "tags": [
         "rock",
-        "live music",
-        "concert"
+        "live",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -87,7 +43,7 @@
       "tags": [
         "punk",
         "rock",
-        "live music"
+        "live"
       ],
       "social": false,
       "intellectual": false,
@@ -95,21 +51,21 @@
       "creative": true
     },
     {
-      "title": "Bury Tomorrow (UK) With Gideon",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
+      "title": "The Elements & Rockheads (NEPAL) High Volume Fest 2.0",
+      "datetime": "Thu 17 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-17T19:00:00",
       "datetime_end_iso": "",
       "location": "The Tivoli, 52 Costin St",
-      "link": "https://thetivoli.com.au/events/bury-tomorrow",
+      "link": "https://thetivoli.com.au/events/the-elements-and-rockheads",
       "cost": "See link",
       "source": "The Tivoli",
-      "description": "Bury Tomorrow and Gideon perform a concert at The Tivoli.",
+      "description": "The Elements and Rockheads perform at the High Volume Fest 2.0 at The Tivoli.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "metalcore",
-        "live music",
-        "concert"
+        "rock",
+        "festival",
+        "live"
       ],
       "social": false,
       "intellectual": false,
@@ -117,23 +73,23 @@
       "creative": true
     },
     {
-      "title": "Club Angel (AUS) With Mincy & Jai Taylor",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "title": "Health (USA) With Perturbator & King Yosef",
+      "datetime": "Fri 18 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-18T19:00:00",
       "datetime_end_iso": "",
       "location": "The Tivoli, 52 Costin St",
-      "link": "https://thetivoli.com.au/events/club-angel",
+      "link": "https://thetivoli.com.au/events/health",
       "cost": "See link",
       "source": "The Tivoli",
       "description": "Few Tickets Left",
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "industrial",
         "electronic",
-        "dance",
-        "dj"
+        "live"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -152,8 +108,52 @@
       "category": "Concert / Music",
       "tags": [
         "rock",
-        "live music",
-        "concert"
+        "live",
+        "music"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Damned (UK) With The Darts (USA)",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "The Tivoli, 52 Costin St",
+      "link": "https://thetivoli.com.au/events/the-damned-26",
+      "cost": "See link",
+      "source": "The Tivoli",
+      "description": "The Damned and The Darts perform a concert at The Tivoli.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "punk",
+        "rock",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Elements & Rockheads (NEPAL) High Volume Fest 2.0",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "The Tivoli, 52 Costin St",
+      "link": "https://thetivoli.com.au/events/the-elements-and-rockheads",
+      "cost": "See link",
+      "source": "The Tivoli",
+      "description": "The Elements and Rockheads perform at the High Volume Fest 2.0 at The Tivoli.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "festival",
+        "live"
       ],
       "social": false,
       "intellectual": false,

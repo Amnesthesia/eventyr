@@ -3,25 +3,113 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "metro-arts",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Shandy",
-      "datetime": "Fri 4 Sep, 8:00 PM",
-      "datetime_iso": "2026-09-04T20:00:00",
-      "datetime_end_iso": "",
+      "title": "Scene Roulette",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-25",
       "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/event/shandy/",
+      "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
+      "cost": "FREE",
+      "source": "Metro Arts",
+      "description": "FREE community events and workshops for actors to flex their muscles and meet other creatives. Facilitated by Imperfect Creatives and supported by Metro Arts",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "acting",
+        "theatre",
+        "networking"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "The Scramble",
+      "datetime": "Wed 16 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-16T19:30:00",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/event/the-scramble/",
       "cost": "See link",
       "source": "Metro Arts",
-      "description": "A taste of queer mayhem.",
+      "description": "A collision between wrestling and dance.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "queer",
+        "dance",
+        "wrestling",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "(In)Sight: Ritual Performance and Artists’ Talk",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/workshop/insight-ritual-performance-and-artists-talk/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "Developed from Dias Mendis’ performance research into Sri Lankan traditions.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
         "performance",
-        "arts"
+        "research",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Choral Cthonics",
+      "datetime": "Thu 27 Aug",
+      "datetime_iso": "2026-08-27",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A hum in the dark.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "experimental",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Kuweni Dias Mendis & Grant x Wilkes: (In)Sight",
+      "datetime": "Thu 27 Aug",
+      "datetime_iso": "2026-08-27",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/exhibition/insight/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "Step into the shadows.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "art",
+        "shadows"
       ],
       "social": false,
       "intellectual": false,
@@ -42,12 +130,78 @@
       "category": "Workshop / Class",
       "tags": [
         "acting",
-        "community",
-        "free"
+        "theatre",
+        "networking"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "The Scramble",
+      "datetime": "Wed 16 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-16T19:30:00",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/event/the-scramble/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A collision between wrestling and dance.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "dance",
+        "wrestling",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "(In)Sight: Ritual Performance and Artists’ Talk",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/workshop/insight-ritual-performance-and-artists-talk/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "Developed from Dias Mendis’ performance research into Sri Lankan traditions.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "performance",
+        "research",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "SHAUN JOHNSTON | THE SCRAMBLE",
+      "datetime": "Wed 16 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-16T19:30:00",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/event/the-scramble/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "SHAUN JOHNSTON | THE SCRAMBLE is an Arts / Exhibition event at Metro Arts, Brisbane City.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "dance",
+        "wrestling"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
       "creative": true
     },
     {
@@ -65,7 +219,7 @@
       "tags": [
         "performance",
         "experimental",
-        "arts"
+        "art"
       ],
       "social": false,
       "intellectual": false,
@@ -85,119 +239,9 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "visual",
-        "arts",
-        "exhibition"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Shandy",
-      "datetime": "Fri 4 Sep, 8:00 PM",
-      "datetime_iso": "2026-09-04T20:00:00",
-      "datetime_end_iso": "",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/event/shandy/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "A taste of queer mayhem.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "queer",
         "performance",
-        "arts"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Scene Roulette",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-09-25",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "FREE community events and workshops for actors to flex their muscles and meet other creatives. Facilitated by Imperfect Creatives and supported by Metro Arts",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "acting",
-        "community",
-        "free"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Choral Cthonics",
-      "datetime": "Thu 27 Aug",
-      "datetime_iso": "2026-08-27",
-      "datetime_end_iso": "2026-09-26",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "A hum in the dark.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "performance",
-        "experimental",
-        "arts"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Kuweni Dias Mendis & Grant x Wilkes: (In)Sight",
-      "datetime": "Thu 27 Aug",
-      "datetime_iso": "2026-08-27",
-      "datetime_end_iso": "2026-09-26",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/exhibition/insight/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "Step into the shadows.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "visual",
-        "arts",
-        "exhibition"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Shandy",
-      "datetime": "Fri 4 Sep, 8:00 PM",
-      "datetime_iso": "2026-09-04T20:00:00",
-      "datetime_end_iso": "",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/event/shandy/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "A taste of queer mayhem.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "queer",
-        "performance",
-        "arts"
+        "art",
+        "shadows"
       ],
       "social": false,
       "intellectual": false,
@@ -218,12 +262,56 @@
       "category": "Workshop / Class",
       "tags": [
         "acting",
-        "community",
-        "free"
+        "theatre",
+        "networking"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "The Scramble",
+      "datetime": "Wed 16 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-16T19:30:00",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/event/the-scramble/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A collision between wrestling and dance.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "dance",
+        "wrestling",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "(In)Sight: Ritual Performance and Artists’ Talk",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/workshop/insight-ritual-performance-and-artists-talk/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "Developed from Dias Mendis’ performance research into Sri Lankan traditions.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "performance",
+        "research",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
       "creative": true
     }
   ]

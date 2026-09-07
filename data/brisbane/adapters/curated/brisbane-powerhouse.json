@@ -3,11 +3,11 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "brisbane-powerhouse",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Tiri: Te Araroa Woman Far Walking",
+      "title": "Tiri: Te Araroa Woman Far Walking BRISBANE FESTIVAL",
       "datetime": "Thu 10 Sep, 6:30 PM",
       "datetime_iso": "2026-09-10T18:30:00",
       "datetime_end_iso": "2026-09-13",
@@ -15,13 +15,13 @@
       "link": "https://brisbanepowerhouse.org/events/tiri-te-araroa-woman-far-walking/",
       "cost": "See link",
       "source": "Brisbane Powerhouse",
-      "description": "BRISBANE FESTIVAL",
+      "description": "Tiri: Te Araroa Woman Far Walking is an arts event held at Brisbane Powerhouse.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "performance",
-        "theatre",
-        "brisbane festival"
+        "festival",
+        "theatre"
       ],
       "social": false,
       "intellectual": false,
@@ -38,17 +38,39 @@
       "cost": "See link",
       "source": "Brisbane Powerhouse",
       "description": "FASHION INFORMATIVE ENTERTAINING",
-      "image": "https://brisbanepowerhouse.org/events/fashion-queensland-in-conversation-2/",
+      "image": "",
       "category": "Public Lecture",
       "tags": [
         "fashion",
         "culture",
-        "conversation"
+        "discussion"
       ],
       "social": true,
       "intellectual": true,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "Tiri: Te Araroa Woman Far Walking",
+      "datetime": "Thu 10 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-10T18:30:00",
+      "datetime_end_iso": "2026-09-13",
+      "location": "Brisbane Powerhouse, 119 Lamington St",
+      "link": "https://brisbanepowerhouse.org/events/tiri-te-araroa-woman-far-walking/",
+      "cost": "See link",
+      "source": "Brisbane Powerhouse",
+      "description": "BRISBANE FESTIVAL POWERFUL AOTEAROA LEGACY",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "festival",
+        "theatre"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }

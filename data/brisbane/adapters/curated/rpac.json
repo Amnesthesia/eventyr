@@ -3,7 +3,31 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "rpac",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
-  "events": []
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Box Show",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Redland Performing Arts Centre (RPAC)",
+      "link": "https://rpac.com.au/what-s-on/all-events/the-box-show/",
+      "cost": "See link",
+      "source": "Redland Performing Arts Centre (RPAC)",
+      "description": "Ordinary household items are transformed into extraordinary musical instruments.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "performance",
+        "family",
+        "theatre"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

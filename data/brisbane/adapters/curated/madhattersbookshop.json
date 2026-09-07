@@ -3,14 +3,14 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "madhattersbookshop",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
     {
       "title": "Junior Book Club (Grades 2, 3, 4) Term Fee",
-      "datetime": "Fri 4 Sep, 4:00 PM",
-      "datetime_iso": "2026-09-04T16:00:00",
-      "datetime_end_iso": "2026-09-04T17:00:00",
+      "datetime": "Mon 7 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-07T16:00:00",
+      "datetime_end_iso": "2026-09-07T17:00:00",
       "location": "The Mad Hatters Bookshop",
       "link": "https://madhattersbookshop.com.au/p/junior-book-club-grades-2-3-4",
       "cost": "$30.00 AUD",
@@ -27,7 +27,30 @@
       "social": true,
       "intellectual": true,
       "hands_on": true,
-      "creative": true
+      "creative": false
+    },
+    {
+      "title": "Spring Book Swap",
+      "datetime": "Sat 19 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-19T10:00:00",
+      "datetime_end_iso": "2026-09-19T13:00:00",
+      "location": "The Mad Hatters Bookshop",
+      "link": "https://madhattersbookshop.com.au/p/spring-book-swap",
+      "cost": "$0.00 AUD",
+      "source": "The Mad Hatters Bookshop",
+      "description": "Time to spring clean your bookshelves and pop down to The Mad Hatters Bookshop for some new reads! Pop in between 10am-1pm on Saturday 19 September and bring a book to trade!\nThis Book Swap is a ONE-FOR-ONE trade with a limit of three books per person. \nRULES\n*No textbooks, reference materials, manuals or magazines*Max three books per person*Books in good condition accepted (no yellowed pages, speckling, stains or major tears) We reserve the right to reject books that are not clean or readable*No mass dumping of books",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "books",
+        "swap",
+        "community",
+        "reading"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     }
   ]
 }

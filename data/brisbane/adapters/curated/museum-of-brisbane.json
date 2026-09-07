@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "museum-of-brisbane",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
     {
       "title": "Tea & Tour: Kirstie Macleod",
@@ -15,13 +15,13 @@
       "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Tea & Tour: Kirstie Macleod is an arts exhibition event held at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "Tea & Tour: Kirstie Macleod is an Arts / Exhibition event at Museum of Brisbane, King George Square (Brisbane City Hall).",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
         "tour",
-        "social"
+        "culture"
       ],
       "social": true,
       "intellectual": false,
@@ -37,7 +37,7 @@
       "link": "https://www.museumofbrisbane.com.au/whats-on/sachem-parkin-owens/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Artist in Residence: Sachém Parkin-Owens is an arts exhibition event held at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "Artist in Residence: Sachém Parkin-Owens is an Arts / Exhibition event at Museum of Brisbane, King George Square (Brisbane City Hall).",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
@@ -59,39 +59,61 @@
       "link": "https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Stories You Wear: Magpie Goose is an arts exhibition event held at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "Stories You Wear: Magpie Goose is an Arts / Exhibition event at Museum of Brisbane, King George Square (Brisbane City Hall).",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "fashion",
         "design",
-        "culture"
+        "history"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Perspectives of Brisbane",
-      "datetime": "Thu 3 Sep",
-      "datetime_iso": "2026-09-03",
+      "datetime": "Mon 7 Sep",
+      "datetime_iso": "2026-09-07",
       "datetime_end_iso": "",
       "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Perspectives of Brisbane is an arts exhibition event held at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "Perspectives of Brisbane is an Arts / Exhibition event at Museum of Brisbane, King George Square (Brisbane City Hall).",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "history",
         "brisbane",
-        "exhibition"
+        "history",
+        "photography"
       ],
       "social": false,
       "intellectual": true,
       "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Crafty Party with Bonnie Hislop",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/crafty-party-bonnie-hislop/",
+      "cost": "See link",
+      "source": "Museum of Brisbane (City Hall)",
+      "description": "Crafty Party with Bonnie Hislop is a Workshop / Class event at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "craft",
+        "art",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -103,13 +125,13 @@
       "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Tea & Tour: Kirstie Macleod is an arts exhibition event held at Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000.",
+      "description": "Tea & Tour: Kirstie Macleod is an Arts / Exhibition event at Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
         "tour",
-        "social"
+        "culture"
       ],
       "social": true,
       "intellectual": false,

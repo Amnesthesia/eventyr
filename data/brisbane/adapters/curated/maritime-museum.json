@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "maritime-museum",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
     {
       "title": "Bands in Parks: Twilight Jazz by the River",
@@ -15,42 +15,19 @@
       "link": "https://maritimemuseum.com.au/eventsandexhibitions/twilightjazz/twilight-jazz-by-the-river-friday-11-september-2026/",
       "cost": "Free Event",
       "source": "Queensland Maritime Museum",
-      "description": "Bands in Parks: Twilight Jazz by the River is a Concert / Music event held at Queensland Maritime Museum, 412 Stanley St.",
+      "description": "Bands in Parks: Twilight Jazz by the River is a concert held at the Queensland Maritime Museum.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "jazz",
         "music",
         "outdoor",
-        "riverfront"
+        "river"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
-    },
-    {
-      "title": "Public tickets for Riverfire 2026 at QMM",
-      "datetime": "Thu 3 Sep",
-      "datetime_iso": "2026-09-03",
-      "datetime_end_iso": "",
-      "location": "Queensland Maritime Museum, 412 Stanley St",
-      "link": "https://maritimemuseum.com.au/public-tickets-for-riverfire-2026-at-qmm/",
-      "cost": "See link",
-      "source": "Queensland Maritime Museum",
-      "description": "Public tickets for Riverfire 2026 at QMM is a Community / Other event held at Queensland Maritime Museum, 412 Stanley St.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "riverfire",
-        "festival",
-        "viewing",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
     }
   ]
 }

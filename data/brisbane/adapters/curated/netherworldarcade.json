@@ -3,78 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "netherworldarcade",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
-    {
-      "title": "Blown A Wish III &#8211; Omiya 3-Night Music Showcase",
-      "datetime": "Tue 1 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-01T17:00:00",
-      "datetime_end_iso": "2026-09-03T20:00:00",
-      "location": "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006",
-      "link": "https://www.netherworldarcade.com/event/blown-a-wish-iii-omiya-3-night-showcase/",
-      "cost": "See link",
-      "source": "Netherworld",
-      "description": "&lt;p&gt;We are absolutely thrilled to welcome back Omiya Group for BLOWN A WISH III - their 3rd annual showcase sideshow in the Netherworld. 15 acts playing the arcade stage over 3 nights from Tuesday the 1st of September to Thursday the 3rd. TUESDAY FROM 5PM Greatsouth, Beryl, koady, Lottie McLeod &amp; Tickertape @‌greatsouthgreat@‌beryls_peril@‌koady@‌lottieemcleod@‌tickertape_ WEDNESDAY FROM 5PMSUPERNEW, [&hellip;]&lt;/p&gt;\\n",
-      "image": "https://www.netherworldarcade.com/wp-content/uploads/2026/08/OmiyaGroup.jpg",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "live",
-        "showcase",
-        "arcade"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Flip Frenzy",
-      "datetime": "Sat 5 Sep, 8:30 AM",
-      "datetime_iso": "2026-09-05T08:30:00",
-      "datetime_end_iso": "2026-09-05T12:00:00",
-      "location": "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006",
-      "link": "https://www.netherworldarcade.com/event/flip-frenzy-5/",
-      "cost": "AUD 20",
-      "source": "Netherworld",
-      "description": "&lt;p&gt;**Tickets will go on sale via THIS PAGE at Midday on Sunday the 2nd of August** Join us for a morning of manic head to head pinball competition in the Netherworld - Flip Frenzy! Over the course of roughly 3 hours, you’ll be pitted against a variety of opponents on a large selection of pinball [&hellip;]&lt;/p&gt;\\n",
-      "image": "https://www.netherworldarcade.com/wp-content/uploads/2021/01/NW-Poster-FF-Web.jpg",
-      "category": "Social / Meetup",
-      "tags": [
-        "pinball",
-        "competition",
-        "gaming",
-        "arcade"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": false
-    },
-    {
-      "title": "Dice Rolls &#038; Flagons &#8211; Casual Board Game Meetup",
-      "datetime": "Sun 6 Sep, 12:00 PM",
-      "datetime_iso": "2026-09-06T12:00:00",
-      "datetime_end_iso": "2026-09-06T16:00:00",
-      "location": "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006",
-      "link": "https://www.netherworldarcade.com/event/dice-rolls-flagons-casual-board-game-meetup-7/",
-      "cost": "See link",
-      "source": "Netherworld",
-      "description": "&lt;p&gt;Join us for Dice Rolls &amp; Flagons, a social board game event. Happening monthly on a Sunday afternoon in Netherworld’s Lost Souls bar. It’s a free to join event for solo players or groups to learn and play a range of brilliant board games guided by the Dice Rolls &amp; Flagons team! On the lineup [&hellip;]&lt;/p&gt;\\n",
-      "image": "https://www.netherworldarcade.com/wp-content/uploads/2025/05/Dice-Rolls-Flagons-Board-Game-Poster.jpg",
-      "category": "Social / Meetup",
-      "tags": [
-        "boardgames",
-        "social",
-        "gaming",
-        "casual"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": false
-    },
     {
       "title": "Brisbane Pinball Club",
       "datetime": "Tue 8 Sep, 3:00 PM",
@@ -91,11 +22,11 @@
         "pinball",
         "gaming",
         "club",
-        "community"
+        "social"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
       "creative": false
     },
     {
@@ -113,7 +44,7 @@
       "tags": [
         "trivia",
         "popculture",
-        "gaming",
+        "games",
         "quiz"
       ],
       "social": true,
@@ -135,12 +66,12 @@
       "category": "Social / Meetup",
       "tags": [
         "gaming",
+        "boardgames",
         "social",
-        "tabletop",
-        "strategy"
+        "tabletop"
       ],
       "social": true,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": true,
       "creative": false
     },
@@ -159,12 +90,12 @@
       "tags": [
         "gaming",
         "smashbros",
-        "meetup",
-        "retro"
+        "esports",
+        "social"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
       "creative": false
     },
     {
@@ -188,6 +119,98 @@
       "social": true,
       "intellectual": false,
       "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "The Snouts + Revelation Groove &#8211; Live in the Arcade",
+      "datetime": "Sun 13 Sep, 3:00 PM",
+      "datetime_iso": "2026-09-13T15:00:00",
+      "datetime_end_iso": "2026-09-13T17:30:00",
+      "location": "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006",
+      "link": "https://www.netherworldarcade.com/event/the-snouts-revelation-groove-live-in-the-arcade/",
+      "cost": "See link",
+      "source": "Netherworld",
+      "description": "&lt;p&gt;Join us this Sunday afternoon for an absolute ear hole party with two bands hailing from Meanjin/Brisbane - The Snouts &amp; Revelation Groove Live in the Arcade First up is eight-piece Revelation Groove. These beautiful humans will treat us with their blend of Latin-jazz-funk-soul-blues with keyboards, accordion, bass, guitar, saxophone, percussion, violin, drums and sweet, [&hellip;]&lt;/p&gt;\\n",
+      "image": "https://www.netherworldarcade.com/wp-content/uploads/2026/09/Sept13_web.jpg",
+      "category": "Concert / Music",
+      "tags": [
+        "livemusic",
+        "jazz",
+        "funk",
+        "arcade"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Belles &#038; Chimes Women&#8217;s Pinball Meetup",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
+      "datetime_end_iso": "2026-09-15T21:00:00",
+      "location": "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006",
+      "link": "https://www.netherworldarcade.com/event/belles-chimes-womens-pinball-meetup-2/",
+      "cost": "See link",
+      "source": "Netherworld",
+      "description": "&lt;p&gt;Join us on a Tuesday evening from 6pm for Belles and Chimes women\\'s pinball meetup in the Netherworld! Belles and Chimes (www.bellesandchimespinball.com) is a group of meetups established in 2013 that happens around the world to provide a casual, inclusive space to learn and play pinball with like minded folks. There\\'s no strict format - [&hellip;]&lt;/p&gt;\\n",
+      "image": "https://www.netherworldarcade.com/wp-content/uploads/2025/01/NW-Poster-BC-Web.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "pinball",
+        "women",
+        "gaming",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Loop De Loop Mini Animation Festival &#8211; Cheat",
+      "datetime": "Tue 15 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-15T19:00:00",
+      "datetime_end_iso": "2026-09-15T20:00:00",
+      "location": "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006",
+      "link": "https://www.netherworldarcade.com/event/loop-de-loop-mini-animation-festival-cheat/",
+      "cost": "See link",
+      "source": "Netherworld",
+      "description": "&lt;p&gt;Our next screening in September is CHEAT. Our most cunning and conniving theme, come watch some animated loops of life\\'s most sneaky cheats and hacks. This edition happens on Tuesday the 15th of September at 7pm and is free to join in. Loop de loop is a monthly mini-animation festival showing looping animations from all [&hellip;]&lt;/p&gt;\\n",
+      "image": "https://www.netherworldarcade.com/wp-content/uploads/2026/08/CHEAT_A3_Posterweb.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "animation",
+        "film",
+        "festival",
+        "screening"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Netherworld Trivia",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
+      "datetime_end_iso": "2026-09-16T21:00:00",
+      "location": "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006",
+      "link": "https://www.netherworldarcade.com/event/netherworld-trivia-5/",
+      "cost": "See link",
+      "source": "Netherworld",
+      "description": "&lt;p&gt;Netherworld\\'s weekly Trivia! Focusing on general pop culture, you’ve got to be current and not-so-current on your movie, television, games and weird event knowledge. Prizes for the top 3 teams and enamel pins for the winning team! It happens every Wednesday in the Netherworld at 6.30pm sharp. Registration is necessary and tables are seated on [&hellip;]&lt;/p&gt;\\n",
+      "image": "https://www.netherworldarcade.com/wp-content/uploads/2025/03/NW-Poster-Trivia-2023-Web.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "popculture",
+        "games",
+        "quiz"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
       "creative": false
     }
   ]

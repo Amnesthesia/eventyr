@@ -3,14 +3,14 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "queenslandwriters",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
     {
       "title": "Introduction to Creative Writing Bootcamp with Venero Armanno",
-      "datetime": "Sat 5 Sep, 10:30 AM",
-      "datetime_iso": "2026-09-05T10:30:00",
-      "datetime_end_iso": "2026-09-12T16:30:00",
+      "datetime": "Sat 12 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-12T10:30:00",
+      "datetime_end_iso": "2026-09-19T16:30:00",
       "location": "Queensland Writers Centre, State Library of Queensland South Brisbane Australia",
       "link": "https://www.queenslandwriters.org.au/events/introduction-to-creative-writing-venero-armanno",
       "cost": "See link",
@@ -51,10 +51,32 @@
       "creative": true
     },
     {
+      "title": "From Rejection to Request with January Gilchrist",
+      "datetime": "Sat 19 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-19T10:30:00",
+      "datetime_end_iso": "",
+      "location": "Queensland Writers Centre, Stanley Place South Brisbane, QLD, 4101 Australia",
+      "link": "https://www.queenslandwriters.org.au/events/from-rejection-to-request-with-january-gilchrist",
+      "cost": "See link",
+      "source": "Queensland Writers Centre",
+      "description": "A practical guide to querying and submitting your novel with strategy and confidence. Book your place (https://events.humanitix.com/from-rejection-to-request-with-january-gilchrist) .",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "writing",
+        "publishing",
+        "career"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": true
+    },
+    {
       "title": "Introduction to Creative Writing Bootcamp with Venero Armanno",
-      "datetime": "Sat 5 Sep, 10:30 AM",
-      "datetime_iso": "2026-09-05T10:30:00",
-      "datetime_end_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-12T10:30:00",
+      "datetime_end_iso": "2026-09-19",
       "location": "Queensland Writers Centre",
       "link": "https://queenslandwriters.org.au/events/introduction-to-creative-writing-venero-armanno",
       "cost": "See link",
@@ -66,28 +88,6 @@
         "writing",
         "creative",
         "bootcamp"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Online Express Year of the Novel with Balli Jaswal",
-      "datetime": "Sat 29 Aug, 10:30 AM",
-      "datetime_iso": "2026-08-29T10:30:00",
-      "datetime_end_iso": "2026-12-05",
-      "location": "Queensland Writers Centre",
-      "link": "https://queenslandwriters.org.au/events/express-year-of-the-novel-with-balli-jaswal",
-      "cost": "See link",
-      "source": "Queensland Writers Centre",
-      "description": "Get the tools and support you need to complete the first draft of your novel, in this express version of Queensland Writers Centre's flagship program (online!). Book your place.",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "writing",
-        "novel",
-        "creative"
       ],
       "social": false,
       "intellectual": true,
@@ -109,7 +109,7 @@
       "tags": [
         "writing",
         "fiction",
-        "creative"
+        "voice"
       ],
       "social": false,
       "intellectual": true,
@@ -131,7 +131,29 @@
       "tags": [
         "writing",
         "history",
-        "narrative"
+        "genealogy"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "From Rejection to Request with January Gilchrist",
+      "datetime": "Sat 19 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-19T10:30:00",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Queensland Writers Centre",
+      "link": "https://queenslandwriters.org.au/events/from-rejection-to-request-with-january-gilchrist",
+      "cost": "See link",
+      "source": "Queensland Writers Centre",
+      "description": "A practical guide to querying and submitting your novel with strategy and confidence. Book your place.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "writing",
+        "publishing",
+        "career"
       ],
       "social": false,
       "intellectual": true,

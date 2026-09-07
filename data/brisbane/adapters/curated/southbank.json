@@ -3,31 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "southbank",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
-    {
-      "title": "Riverfire by Australian Retirement Trust",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-by-australian-retirement-trust",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire by Australian Retirement Trust is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "festival",
-        "fireworks",
-        "outdoor"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
     {
       "title": "The Choir of Man",
       "datetime": "Thu 3 Sep",
@@ -37,13 +15,13 @@
       "link": "https://www.visitsouthbank.com.au/events/the-choir-of-man",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "The Choir of Man is a concert and music event held at South Bank Parklands.",
+      "description": "The Choir of Man is a concert performance held at South Bank Parklands.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "theatre",
         "music",
-        "performance"
+        "performance",
+        "theatre"
       ],
       "social": false,
       "intellectual": false,
@@ -59,13 +37,13 @@
       "link": "https://www.visitsouthbank.com.au/events/bright-nights-by-anz",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Bright Nights by ANZ is an arts and exhibition event held at South Bank Parklands.",
+      "description": "Bright Nights by ANZ is an arts exhibition held at South Bank Parklands.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "lights",
-        "art",
-        "outdoor"
+        "light",
+        "installation",
+        "art"
       ],
       "social": false,
       "intellectual": false,
@@ -81,7 +59,7 @@
       "link": "https://www.visitsouthbank.com.au/events/fijian-flying-circus",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Fijian Flying Circus is a concert and music event held at South Bank Parklands.",
+      "description": "Fijian Flying Circus is a concert performance held at South Bank Parklands.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -125,13 +103,13 @@
       "link": "https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Croc! Lost Giants to Living Legends is an arts and exhibition event held at South Bank Parklands.",
+      "description": "Croc! Lost Giants to Living Legends is an arts exhibition held at South Bank Parklands.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "museum",
         "history",
-        "nature"
+        "nature",
+        "exhibition"
       ],
       "social": false,
       "intellectual": true,
@@ -161,116 +139,6 @@
       "creative": false
     },
     {
-      "title": "Father's Day at Pig N Whistle",
-      "datetime": "Sun 6 Sep",
-      "datetime_iso": "2026-09-06",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/fathers-day-at-pig-n-whistle",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Father's Day at Pig N Whistle is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "family",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Riverfire at Pig 'N' Whistle South Bank",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-pig-n-whistle-south-bank",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire at Pig 'N' Whistle South Bank is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Riverfire at Ahmet's",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-ahmets",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire at Ahmet's is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Make a Night of Riverfire at Baba Ganouj",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/make-a-night-of-riverfire-at-baba-ganouj",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Make a Night of Riverfire at Baba Ganouj is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Riverfire at Azure",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-azure",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire at Azure is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "The Knock ‘Em Downs",
       "datetime": "Fri 4 Sep",
       "datetime_iso": "2026-09-04",
@@ -284,7 +152,7 @@
       "category": "Community / Other",
       "tags": [
         "games",
-        "social",
+        "family",
         "fun"
       ],
       "social": true,
@@ -301,13 +169,13 @@
       "link": "https://www.visitsouthbank.com.au/events/piano-man",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Piano Man is a concert and music event held at South Bank Parklands.",
+      "description": "Piano Man is a concert performance held at South Bank Parklands.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "piano",
-        "live",
-        "music"
+        "music",
+        "live"
       ],
       "social": false,
       "intellectual": false,
@@ -323,15 +191,81 @@
       "link": "https://www.visitsouthbank.com.au/events/daybreaker",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "DAYBREAKER is a social and meetup event held at South Bank Parklands.",
+      "description": "DAYBREAKER is a social meetup held at South Bank Parklands.",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "dance",
         "morning",
-        "wellness"
+        "fitness"
       ],
       "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Family Fun Day supported by Brisbane Airport",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/family-fun-day-supported-by-brisbane-airport",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Family Fun Day supported by Brisbane Airport is a social meetup held at South Bank Parklands.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "family",
+        "community",
+        "outdoor"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Pasifika Made",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/pasifika-made",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Pasifika Made is an arts exhibition held at South Bank Parklands.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "culture",
+        "craft",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "This Show is a Joke!",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "2026-09-26",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/this-show-is-a-joke",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "This Show is a Joke! is a concert performance held at South Bank Parklands.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "theatre"
+      ],
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -345,13 +279,13 @@
       "link": "https://www.visitsouthbank.com.au/events/strong-is-the-new-pretty",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Strong is the New Pretty is an arts and exhibition event held at South Bank Parklands.",
+      "description": "Strong is the New Pretty is an arts exhibition held at South Bank Parklands.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "photography",
-        "art",
-        "portrait"
+        "portrait",
+        "exhibition"
       ],
       "social": false,
       "intellectual": false,
@@ -367,13 +301,13 @@
       "link": "https://www.visitsouthbank.com.au/events/shel-we",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Shel We is an arts and exhibition event held at South Bank Parklands.",
+      "description": "Shel We is a concert performance held at South Bank Parklands.",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Concert / Music",
       "tags": [
-        "art",
-        "sculpture",
-        "exhibit"
+        "performance",
+        "theatre",
+        "arts"
       ],
       "social": false,
       "intellectual": false,
@@ -389,12 +323,12 @@
       "link": "https://www.visitsouthbank.com.au/events/are-you-lonesome-tonight-brisbane-festival",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Are You Lonesome Tonight: Brisbane Festival is a concert and music event held at South Bank Parklands.",
+      "description": "Are You Lonesome Tonight: Brisbane Festival is a concert performance held at South Bank Parklands.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "festival",
         "music",
+        "festival",
         "performance"
       ],
       "social": false,
@@ -403,141 +337,9 @@
       "creative": true
     },
     {
-      "title": "Riverfire at Naga Thai",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-naga-thai",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire at Naga Thai is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Riverfire at River Quay Fish",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-river-quay-fish",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire at River Quay Fish is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Riverfire At OTTO",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-otto",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire At OTTO is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Riverfire At Southbeach",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-southbeach",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire At Southbeach is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Riverfire At Southbank Beer Garden",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-southbank-beer-garden",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire At Southbank Beer Garden is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Riverfire at The Plough Inn",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-the-plough-inn",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire at The Plough Inn is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Brisbane's Biggest Steak Frites",
-      "datetime": "Fri 4 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-04T17:00:00",
+      "datetime": "Mon 7 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-07T17:00:00",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/brisbanes-biggest-steak-frites",
@@ -557,20 +359,20 @@
       "creative": false
     },
     {
-      "title": "The Book of Mormon The Musical",
-      "datetime": "Fri 31 Jul",
-      "datetime_iso": "2026-07-31",
-      "datetime_end_iso": "2026-09-06",
+      "title": "Anastasia The Musical",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
+      "datetime_end_iso": "2026-10-18",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/the-book-of-mormon-the-musical",
+      "link": "https://www.visitsouthbank.com.au/events/anastasia-the-musical",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "The Book of Mormon The Musical is a concert and music event held at South Bank Parklands.",
+      "description": "Anastasia The Musical is a concert performance held at South Bank Parklands.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "theatre",
         "musical",
+        "theatre",
         "performance"
       ],
       "social": false,
@@ -579,26 +381,26 @@
       "creative": true
     },
     {
-      "title": "The Great Australian Father's Day Brunch",
-      "datetime": "Sun 6 Sep",
-      "datetime_iso": "2026-09-06",
-      "datetime_end_iso": "",
+      "title": "The Book of Mormon The Musical",
+      "datetime": "Fri 31 Jul",
+      "datetime_iso": "2026-07-31",
+      "datetime_end_iso": "2026-10-04",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/the-great-australian-fathers-day-brunch",
+      "link": "https://www.visitsouthbank.com.au/events/the-book-of-mormon-the-musical",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "The Great Australian Father's Day Brunch is a community event held at South Bank Parklands.",
+      "description": "The Book of Mormon The Musical is a concert performance held at South Bank Parklands.",
       "image": "",
-      "category": "Community / Other",
+      "category": "Concert / Music",
       "tags": [
-        "family",
-        "brunch",
-        "social"
+        "musical",
+        "theatre",
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "Opera Queensland Young Artist Program Showcase: Viva La Voce",
@@ -609,12 +411,12 @@
       "link": "https://www.visitsouthbank.com.au/events/opera-queensland-young-artist-program-showcase-viva-la-voce",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Opera Queensland Young Artist Program Showcase: Viva La Voce is a concert and music event held at South Bank Parklands.",
+      "description": "Opera Queensland Young Artist Program Showcase: Viva La Voce is a concert performance held at South Bank Parklands.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "opera",
-        "showcase",
+        "classical",
         "performance"
       ],
       "social": false,
@@ -631,16 +433,16 @@
       "link": "https://www.visitsouthbank.com.au/events/rockwiz-rocks-brisbane",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "RocKwiz Rocks Brisbane is a concert and music event held at South Bank Parklands.",
+      "description": "RocKwiz Rocks Brisbane is a concert performance held at South Bank Parklands.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "quiz",
         "music",
+        "quiz",
         "performance"
       ],
-      "social": true,
-      "intellectual": true,
+      "social": false,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     },
@@ -653,13 +455,35 @@
       "link": "https://www.visitsouthbank.com.au/events/undying-abdul-rahman-abdullah",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Undying: Abdul-Rahman Abdullah is an arts and exhibition event held at South Bank Parklands.",
+      "description": "Undying: Abdul-Rahman Abdullah is an arts exhibition held at South Bank Parklands.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "art",
         "sculpture",
-        "exhibit"
+        "art",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Piano Man: Celebrating the Music of Billy Joel",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/piano-man-celebrating-the-music-of-billy-joel",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Piano Man: Celebrating the Music of Billy Joel is a concert performance held at South Bank Parklands.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "piano",
+        "tribute"
       ],
       "social": false,
       "intellectual": false,
@@ -675,260 +499,40 @@
       "link": "https://www.visitsouthbank.com.au/events/fragile-and-forever-ceramics-from-the-queensland-museum-collection",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Fragile and Forever: Ceramics from the Queensland Museum Collection is an arts and exhibition event held at South Bank Parklands.",
+      "description": "Fragile and Forever: Ceramics from the Queensland Museum Collection is an arts exhibition held at South Bank Parklands.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "ceramics",
-        "museum",
-        "history"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Death of a Salesman",
-      "datetime": "Fri 28 Aug",
-      "datetime_iso": "2026-08-28",
-      "datetime_end_iso": "2026-09-06",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/death-of-a-salesman",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Death of a Salesman is a concert and music event held at South Bank Parklands.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "theatre",
-        "drama",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Morning Masterworks 4: La Mer",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/morning-masterworks-4-la-mer",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Morning Masterworks 4: La Mer is a concert and music event held at South Bank Parklands.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "classical",
-        "orchestra",
-        "music"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Maestro 6: La Mer",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/maestro-6-la-mer",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Maestro 6: La Mer is a concert and music event held at South Bank Parklands.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "classical",
-        "orchestra",
-        "music"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Riverfire At Poppies",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-at-poppies",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Riverfire At Poppies is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fireworks",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "$30 La Taco Vida At Poca Madre",
-      "datetime": "Mon 7 Sep",
-      "datetime_iso": "2026-09-07",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/30-la-taco-vida-at-poca-madre",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "$30 La Taco Vida At Poca Madre is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Bottomless Weekends Banquet Experience At Ma Pa Me",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "2026-09-06",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/bottomless-weekends-banquet-experience-at-ma-pa-me",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Bottomless Weekends Banquet Experience At Ma Pa Me is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "$30 Steak Salad At Tipplers Tap",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "2026-09-11",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/30-steak-salad-at-tipplers-tap",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "$30 Steak Salad At Tipplers Tap is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "$38 Steak And Taters At Tippler's Tap",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "2026-09-11",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/38-steak-and-taters-at-tipplers-tap",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "$38 Steak And Taters At Tippler's Tap is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Riverfire by Australian Retirement Trust",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "2026-09-05",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/riverfire-by-australian-retirement-trust",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "festival",
-        "fireworks",
-        "outdoor"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Sunday Social",
-      "datetime": "Sun 5 Oct",
-      "datetime_iso": "2025-10-05",
-      "datetime_end_iso": "2026-12-31",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/sunday-social",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Sunday Social is a Social / Meetup event at South Bank Parklands.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "social",
-        "weekend",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "South Bank Guided Tours",
-      "datetime": "Sun 9 Nov",
-      "datetime_iso": "2025-11-09",
-      "datetime_end_iso": "2027-02-28",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/south-bank-guided-tours",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "South Bank Guided Tours is a Public Lecture event at South Bank Parklands.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
         "history",
-        "walking",
-        "tour"
+        "exhibition"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": false,
-      "creative": false
+      "creative": true
+    },
+    {
+      "title": "Georgie Carroll - Infectious - Brisbane",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/georgie-carroll---infectious---brisbane",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Georgie Carroll - Infectious - Brisbane is a concert performance held at South Bank Parklands.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     },
     {
       "title": "Croc! Lost Giants to Living Legends",
@@ -939,13 +543,13 @@
       "link": "https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Croc! Lost Giants to Living Legends is an Arts / Exhibition event at South Bank Parklands.",
+      "description": "Croc! Lost Giants to Living Legends is an arts exhibition held at South Bank Parklands.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "exhibition",
+        "history",
         "nature",
-        "wildlife"
+        "exhibition"
       ],
       "social": false,
       "intellectual": true,

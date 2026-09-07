@@ -3,119 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "palacecinemas",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
-    {
-      "title": "Q&A Event: Silenced",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
-      "datetime_end_iso": "",
-      "location": "Palace Cinemas Brisbane",
-      "link": "https://palacecinemas.com.au/qa-event-silenced",
-      "cost": "See link",
-      "source": "Palace Cinemas Brisbane",
-      "description": "Q&A Event: Silenced is a Public Lecture held at Palace Cinemas Brisbane.",
-      "image": "https://palacecinemas.com.au/SILENCED%20Hero%201680x560.png",
-      "category": "Public Lecture",
-      "tags": [
-        "film",
-        "qa",
-        "documentary"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "9 to 5: Dolly Parton Tribute",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "Palace Cinemas Brisbane",
-      "link": "https://palacecinemas.com.au/9-to-5-dolly-parton-tribute",
-      "cost": "See link",
-      "source": "Palace Cinemas Brisbane",
-      "description": "9 to 5: Dolly Parton Tribute is a Concert / Music event held at Palace Cinemas Brisbane.",
-      "image": "https://palacecinemas.com.au/9%20to%205%20Hero%201680x560.png",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "tribute",
-        "film"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Melbourne Q&A Event: Silenced",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "Palace Cinemas Brisbane",
-      "link": "https://palacecinemas.com.au/melbourne-qa-event-silenced",
-      "cost": "See link",
-      "source": "Palace Cinemas Brisbane",
-      "description": "Melbourne Q&A Event: Silenced is a Public Lecture held at Palace Cinemas Brisbane.",
-      "image": "https://palacecinemas.com.au/SILENCED%20Hero%201680x560.png",
-      "category": "Public Lecture",
-      "tags": [
-        "film",
-        "qa",
-        "documentary"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Father's Day Preview: Shaun the Sheep: The Beast of Mossy Bottom",
-      "datetime": "Sun 6 Sep",
-      "datetime_iso": "2026-09-06",
-      "datetime_end_iso": "",
-      "location": "Palace Cinemas Brisbane",
-      "link": "https://palacecinemas.com.au/fathers-day-preview-shaun-the-sheep-the-beast-of-mossy-bottom",
-      "cost": "See link",
-      "source": "Palace Cinemas Brisbane",
-      "description": "Father's Day Preview: Shaun the Sheep: The Beast of Mossy Bottom is an Arts / Exhibition event held at Palace Cinemas Brisbane.",
-      "image": "https://palacecinemas.com.au/SHAUN%20THE%20SHEEP%20-%20Hero%201680x560.png",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "film",
-        "family",
-        "preview"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Father's Day Retro: Terminator 2: Judgement Day - 35th Anniversary",
-      "datetime": "Sun 6 Sep",
-      "datetime_iso": "2026-09-06",
-      "datetime_end_iso": "",
-      "location": "Palace Cinemas Brisbane",
-      "link": "https://palacecinemas.com.au/fathers-day-retro-terminator-2",
-      "cost": "See link",
-      "source": "Palace Cinemas Brisbane",
-      "description": "Father's Day Retro: Terminator 2: Judgement Day - 35th Anniversary is an Arts / Exhibition event held at Palace Cinemas Brisbane.",
-      "image": "https://palacecinemas.com.au/20260820-fathersdayretro-terminator2-KeyArtBanner-1680x560px.jpg",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "film",
-        "retro",
-        "cinema"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Movie Mixer Preview: Practical Magic 2",
       "datetime": "Wed 9 Sep",
@@ -125,13 +15,13 @@
       "link": "https://palacecinemas.com.au/curatif-midnight-margaritas-preview-practical-magic-2",
       "cost": "See link",
       "source": "Palace Cinemas Brisbane",
-      "description": "Movie Mixer Preview: Practical Magic 2 is a Social / Meetup event held at Palace Cinemas Brisbane.",
+      "description": "A movie mixer preview of Practical Magic 2 at Palace Cinemas Brisbane, classified as an Arts / Exhibition event.",
       "image": "https://palacecinemas.com.au/20260805-midnightmargaritaspreview-practicalmagic2-KeyArtBanner-1680x560px.jpg",
-      "category": "Social / Meetup",
+      "category": "Arts / Exhibition",
       "tags": [
         "film",
-        "social",
-        "preview"
+        "cinema",
+        "social"
       ],
       "social": true,
       "intellectual": false,
@@ -147,15 +37,37 @@
       "link": "https://palacecinemas.com.au/st-ali-italian-film-festival-prosecco-preview-life-is-life",
       "cost": "See link",
       "source": "Palace Cinemas Brisbane",
-      "description": "ST. ALi Italian Film Festival Prosecco Preview: Life is Life is a Social / Meetup event held at Palace Cinemas Brisbane.",
+      "description": "A ST. ALi Italian Film Festival Prosecco Preview of Life is Life at Palace Cinemas Brisbane, classified as an Arts / Exhibition event.",
       "image": "https://palacecinemas.com.au/20260806-proseccopreview-lifeislife-iff-KeyArtBanner-1680x560px.jpg",
-      "category": "Social / Meetup",
+      "category": "Arts / Exhibition",
       "tags": [
         "film",
-        "festival",
-        "prosecco"
+        "italian",
+        "cinema"
       ],
-      "social": true,
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "ST. ALi Italian Film Festival Centrepiece Premiere: Sweetheart",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Palace Cinemas Brisbane",
+      "link": "https://palacecinemas.com.au/st-ali-italian-film-festival-centrepiece-premiere-sweetheart",
+      "cost": "See link",
+      "source": "Palace Cinemas Brisbane",
+      "description": "A ST. ALi Italian Film Festival Centrepiece Premiere of Sweetheart at Palace Cinemas Brisbane, classified as an Arts / Exhibition event.",
+      "image": "https://palacecinemas.com.au/20260810-centrepiecepremiere-sweetheart-iff-KeyArtBanner-1680x560px.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "italian",
+        "cinema"
+      ],
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true

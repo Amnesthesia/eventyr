@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "creativemornings",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
     {
       "title": "Make a Map FieldTrip",
@@ -15,13 +15,13 @@
       "link": "https://creativemornings.com/talks/make-a-map-fieldtrip-845aee84-7265-4ebf-8d6c-fed12a2086b2",
       "cost": "See link",
       "source": "Creative Mornings Brisbane",
-      "description": "The Make a Map FieldTrip at Creative Mornings Brisbane is a workshop / class event.",
+      "description": "A Make a Map FieldTrip hosted by Creative Mornings Brisbane categorized as a Workshop / Class.",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
         "creative",
         "mapping",
-        "design"
+        "fieldtrip"
       ],
       "social": true,
       "intellectual": false,
@@ -37,13 +37,13 @@
       "link": "https://creativemornings.com/talks/level-up-losing-forward-how-to-turn-every-setback-into-your-next-advantage",
       "cost": "See link",
       "source": "Creative Mornings Brisbane",
-      "description": "LEVEL UP: How to Turn Every Setback into Your Next Advantage at Creative Mornings Brisbane is a public lecture event.",
+      "description": "A LEVEL UP: How to Turn Every Setback into Your Next Advantage event hosted by Creative Mornings Brisbane categorized as a Public Lecture.",
       "image": "",
       "category": "Public Lecture",
       "tags": [
         "professional",
         "growth",
-        "business"
+        "inspiration"
       ],
       "social": false,
       "intellectual": true,
@@ -59,16 +59,60 @@
       "link": "https://creativemornings.com/talks/level-up-the-networking-playbook",
       "cost": "See link",
       "source": "Creative Mornings Brisbane",
-      "description": "LEVEL UP: The Networking Playbook at Creative Mornings Brisbane is a social / meetup event.",
+      "description": "A LEVEL UP: The Networking Playbook event hosted by Creative Mornings Brisbane categorized as a Social / Meetup.",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "networking",
-        "business",
-        "professional"
+        "professional",
+        "career"
       ],
       "social": true,
       "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Feel it, Write it.",
+      "datetime": "Wed 16 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-16T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/feel-it-write-it-c6aea832-3903-4f2b-a7c1-0dc5acd12b17",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "A Feel it, Write it. event hosted by Creative Mornings Brisbane categorized as a Workshop / Class.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "writing",
+        "creative",
+        "expression"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "☀️ The World Wide Wander 2026: Walk Your Way to Insight, Ideas and Intention",
+      "datetime": "Fri 18 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-18T12:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/the-world-wide-wander-2026-walk-your-way-to-insight-ideas-and-intention",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "A ☀️ The World Wide Wander 2026: Walk Your Way to Insight, Ideas and Intention event hosted by Creative Mornings Brisbane categorized as a Social / Meetup.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "walking",
+        "wellness",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
       "hands_on": false,
       "creative": false
     }

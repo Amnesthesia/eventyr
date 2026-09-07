@@ -3,53 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "theprincesstheatre",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
-    {
-      "title": "MKTO (USA)",
-      "datetime": "Thu 3 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-03T19:00:00",
-      "datetime_end_iso": "",
-      "location": "The Princess Theatre",
-      "link": "https://theprincesstheatre.com.au/events/mkto",
-      "cost": "Sold Out",
-      "source": "The Princess Theatre",
-      "description": "MKTO perform live at The Princess Theatre as a concert event.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "pop",
-        "music",
-        "live"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Ocean Sleeper (AUS)",
-      "datetime": "Sat 5 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-05T19:00:00",
-      "datetime_end_iso": "",
-      "location": "The Princess Theatre",
-      "link": "https://theprincesstheatre.com.au/events/ocean-sleeper",
-      "cost": "Sold Out",
-      "source": "The Princess Theatre",
-      "description": "With Nevertel (USA), Vana (NZ) & Outloved",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "metalcore",
-        "rock",
-        "live"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Stories of Our Land (AUS)",
       "datetime": "Thu 10 Sep, 6:00 PM",
@@ -59,35 +15,13 @@
       "link": "https://theprincesstheatre.com.au/events/stories-of-our-land",
       "cost": "See link",
       "source": "The Princess Theatre",
-      "description": "Stories of Our Land is an arts event held at The Princess Theatre.",
+      "description": "Music / Art / Performance",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "culture",
-        "history",
-        "stories"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "MKTO (USA)",
-      "datetime": "Thu 3 Sep",
-      "datetime_iso": "2026-09-03",
-      "datetime_end_iso": "",
-      "location": "The Princess Theatre",
-      "link": "https://theprincesstheatre.com.au/events/mkto",
-      "cost": "Sold Out",
-      "source": "The Princess Theatre",
-      "description": "MKTO perform live at The Princess Theatre as a concert event.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "pop",
-        "music",
-        "live"
+        "performance",
+        "art",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -95,21 +29,43 @@
       "creative": true
     },
     {
-      "title": "Ocean Sleeper (AUS)",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "title": "Robert Forster & His Swedish Band (AUS)",
+      "datetime": "Thu 17 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-17T19:30:00",
       "datetime_end_iso": "",
       "location": "The Princess Theatre",
-      "link": "https://theprincesstheatre.com.au/events/ocean-sleeper",
-      "cost": "Sold Out",
+      "link": "https://theprincesstheatre.com.au/events/robert-forster-and-his-swedish-band",
+      "cost": "See link",
       "source": "The Princess Theatre",
-      "description": "With Nevertel (USA), Vana (NZ) & Outloved",
+      "description": "Singer Songwriter",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "metalcore",
-        "rock",
-        "live"
+        "singer songwriter",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Kita Alexander (AUS)",
+      "datetime": "Sat 19 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-19T19:00:00",
+      "datetime_end_iso": "",
+      "location": "The Princess Theatre",
+      "link": "https://theprincesstheatre.com.au/events/kita-alexander-26",
+      "cost": "See link",
+      "source": "The Princess Theatre",
+      "description": "Pop\nWith Toy Shaw",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "pop",
+        "live music",
+        "concert"
       ],
       "social": false,
       "intellectual": false,
@@ -125,16 +81,60 @@
       "link": "https://theprincesstheatre.com.au/events/stories-of-our-land",
       "cost": "See link",
       "source": "The Princess Theatre",
-      "description": "Stories of Our Land is an arts event held at The Princess Theatre.",
+      "description": "Stories of Our Land (AUS) is an Arts / Exhibition event at The Princess Theatre.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "culture",
-        "history",
-        "stories"
+        "performance",
+        "art",
+        "music"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Robert Forster & His Swedish Band (AUS)",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "The Princess Theatre",
+      "link": "https://theprincesstheatre.com.au/events/robert-forster-and-his-swedish-band",
+      "cost": "See link",
+      "source": "The Princess Theatre",
+      "description": "Robert Forster & His Swedish Band (AUS) is a Concert / Music event at The Princess Theatre.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "singer songwriter",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Kita Alexander (AUS)",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "The Princess Theatre",
+      "link": "https://theprincesstheatre.com.au/events/kita-alexander-26",
+      "cost": "See link",
+      "source": "The Princess Theatre",
+      "description": "With Toy Shaw",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "pop",
+        "live music",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     }

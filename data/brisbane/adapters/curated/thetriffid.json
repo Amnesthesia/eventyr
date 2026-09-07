@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "thetriffid",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
     {
       "title": "Triffid Sundays - September | Free Live Music in the Garden",
@@ -20,8 +20,8 @@
       "category": "Concert / Music",
       "tags": [
         "live music",
-        "free",
         "garden",
+        "free",
         "sunday"
       ],
       "social": true,
@@ -30,44 +30,44 @@
       "creative": true
     },
     {
-      "title": "Espresso Martini Festival",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
+      "title": "mike. Upside Down Tour Pt. 3",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
       "datetime_end_iso": "",
       "location": "The Triffid",
-      "link": "https://thetriffid.com.au/all-events/espresso-martini-festival-tickets-ae1690418",
+      "link": "https://thetriffid.com.au/all-events/mike--tickets-ae581456",
       "cost": "See link",
       "source": "The Triffid Fortitude Valley",
-      "description": "The Espresso Martini Festival at The Triffid is a social / meetup event.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "cocktails",
-        "festival",
-        "drinks",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Skindred",
-      "datetime": "Sun 6 Sep",
-      "datetime_iso": "2026-09-06",
-      "datetime_end_iso": "",
-      "location": "The Triffid",
-      "link": "https://thetriffid.com.au/all-events/skindred-tickets-ae781",
-      "cost": "See link",
-      "source": "The Triffid Fortitude Valley",
-      "description": "Skindred at The Triffid is a concert / music event.",
+      "description": "mike. Upside Down Tour Pt. 3 at The Triffid is a concert / music event.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "rock",
+        "tour",
         "live music",
-        "gig",
+        "pop",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Lebanon Hanover",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "The Triffid",
+      "link": "https://thetriffid.com.au/all-events/lebanon-hanover-tickets-ae1065640",
+      "cost": "See link",
+      "source": "The Triffid Fortitude Valley",
+      "description": "Lebanon Hanover at The Triffid is a concert / music event.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "post-punk",
+        "concert",
         "band"
       ],
       "social": false,
@@ -113,7 +113,7 @@
       "tags": [
         "rock",
         "live music",
-        "gig",
+        "concert",
         "band"
       ],
       "social": false,
@@ -122,22 +122,22 @@
       "creative": true
     },
     {
-      "title": "Briscoe Sisters & BLAK:STORY:SONG in concert",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
+      "title": "To The Grave",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
       "datetime_end_iso": "",
       "location": "The Triffid",
-      "link": "https://thetriffid.com.au/all-events/briscoe-sisters-tickets-ae1691103",
+      "link": "https://thetriffid.com.au/all-events/to-the-grave-tickets-ae1325721",
       "cost": "See link",
       "source": "The Triffid Fortitude Valley",
-      "description": "Briscoe Sisters & BLAK:STORY:SONG in concert at The Triffid is a concert / music event.",
+      "description": "To The Grave at The Triffid is a concert / music event.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "metal",
         "live music",
         "concert",
-        "performance",
-        "acoustic"
+        "band"
       ],
       "social": false,
       "intellectual": false,

@@ -1,0 +1,170 @@
+{
+  "city_key": "brisbane",
+  "provider": "anthropic",
+  "tier": "institutions",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Brisbane Sculpture Festival 2026",
+      "datetime": "Mon 7 Sep, 8:00 AM",
+      "location": "George Clayton Park, Manly",
+      "link": "https://www.trumba.com/calendars/brisbane-city-council.rss?search=brisbane+festival",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Brisbane City Council / Sculptors Queensland",
+      "description": "An open-air exhibition featuring large-scale sculptural works from Queensland artists set along the Manly foreshore, encouraging casual engagement and conversation.",
+      "tags": [
+        "sculpture",
+        "art",
+        "free",
+        "outdoors"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-07T08:00:00",
+      "datetime_end_iso": "2026-09-07T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Wynnum Manly Jazz and Swing Festival",
+      "datetime": "Sat 5 Sep, 10:00 AM",
+      "location": "George Clayton Park, Manly",
+      "link": "https://www.topshowmusic.com.au/wynnumjazz/",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "Brisbane City Council / Topshow Music",
+      "description": "A local community music festival featuring live jazz and swing performances in an informal park setting, attracting music lovers from across Brisbane.",
+      "tags": [
+        "jazz",
+        "music",
+        "free",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-05T10:00:00",
+      "datetime_end_iso": "2026-09-06T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Strong Is The New Pretty",
+      "datetime": "Tue 1 Sep, 7:30 PM",
+      "location": "Playhouse, QPAC",
+      "link": "https://queenslandtheatre.com.au/whats-on",
+      "category": "Arts / Exhibition",
+      "cost": "$45",
+      "source": "Queensland Theatre",
+      "description": "A contemporary theatre production exploring themes of identity and resilience; QPAC often hosts post-show discussions relevant to the season.",
+      "tags": [
+        "theatre",
+        "performance",
+        "culture",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-01T19:30:00",
+      "datetime_end_iso": "2026-09-01T21:30:00",
+      "image": ""
+    },
+    {
+      "title": "Brisbane Portrait Prize 2026",
+      "datetime": "Tue 1 Sep, 10:00 AM",
+      "location": "State Library of Queensland, South Brisbane",
+      "link": "https://www.slq.qld.gov.au/discover/exhibitions",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "State Library of Queensland",
+      "description": "An exhibition showcasing portraiture entries celebrating the people and culture of Brisbane, offering a deep dive into local identity and artistic talent.",
+      "tags": [
+        "art",
+        "portraiture",
+        "culture",
+        "free"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-01T10:00:00",
+      "datetime_end_iso": "2026-09-19T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Dearly Departed: death in life",
+      "datetime": "Tue 1 Sep, 10:00 AM",
+      "location": "State Library of Queensland, South Brisbane",
+      "link": "https://www.slq.qld.gov.au/discover/exhibitions",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "State Library of Queensland",
+      "description": "A thoughtful exhibition exploring historical and contemporary cultural rituals surrounding death and memory, providing an intellectual perspective on human experience.",
+      "tags": [
+        "history",
+        "philosophy",
+        "exhibition",
+        "free"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false,
+      "datetime_iso": "2026-09-01T10:00:00",
+      "datetime_end_iso": "2026-09-19T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "The Edge Screens: Echoes of Brisbane",
+      "datetime": "Tue 1 Sep, 10:00 AM",
+      "location": "State Library of Queensland, South Brisbane",
+      "link": "https://www.slq.qld.gov.au/discover/exhibitions",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "State Library of Queensland",
+      "description": "An immersive digital and visual exhibition capturing the history and evolution of Brisbane, hosted within the creative hub of The Edge.",
+      "tags": [
+        "history",
+        "digital",
+        "art",
+        "free"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-01T10:00:00",
+      "datetime_end_iso": "2026-09-19T17:00:00",
+      "image": ""
+    },
+    {
+      "title": "Billy Missi'n Wakain Thamai",
+      "datetime": "Tue 1 Sep, 10:00 AM",
+      "location": "State Library of Queensland, South Brisbane",
+      "link": "https://www.slq.qld.gov.au/discover/exhibitions",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "State Library of Queensland",
+      "description": "An exhibition dedicated to the late Billy Missi, showcasing linocut prints that detail the celestial navigation and culture of Zenadth Kes (Torres Strait).",
+      "tags": [
+        "art",
+        "indigenous",
+        "culture",
+        "history"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-01T10:00:00",
+      "datetime_end_iso": "2026-09-19T17:00:00",
+      "image": ""
+    }
+  ]
+}

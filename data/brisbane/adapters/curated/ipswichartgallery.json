@@ -3,31 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "ipswichartgallery",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
-    {
-      "title": "Ties that bind",
-      "datetime": "Sat 27 Jun, 10:00 AM",
-      "datetime_iso": "2026-06-27T10:00:00",
-      "datetime_end_iso": "2026-09-06T17:00:00",
-      "location": "Ipswich Art Gallery",
-      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/ties-that-bind",
-      "cost": "FREE | No bookings are required to visit the exhibition",
-      "source": "Ipswich Art Gallery",
-      "description": "What binds us to home? What—or who—makes belonging possible? How do we carry our histories with us, and how do they shape the lands we inhabit?",
-      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3282",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "art",
-        "history",
-        "culture"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "IAG Kids: Make Yourself at Home",
       "datetime": "Sat 25 Jul, 10:00 AM",
@@ -42,12 +20,56 @@
       "category": "Arts / Exhibition",
       "tags": [
         "kids",
-        "family",
-        "art"
+        "exhibition",
+        "family"
       ],
       "social": false,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "BRUTALIST / Baroque",
+      "datetime": "Sat 5 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-05T10:00:00",
+      "datetime_end_iso": "2026-11-22T17:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/brutalist-baroque",
+      "cost": "FREE | No bookings are required to visit the exhibition",
+      "source": "Ipswich Art Gallery",
+      "description": "An exhibition by ceramic artists, Donalee Moriarty and Nicolette Johnson, exploring the shared qualities that unite their seemingly opposing styles.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3320",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "ceramics",
+        "art",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Noise of Time",
+      "datetime": "Sat 19 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-19T10:00:00",
+      "datetime_end_iso": "2026-11-29T17:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/Ian-Friend-The-Noise-of-Time",
+      "cost": "FREE | No bookings are required to visit the exhibition",
+      "source": "Ipswich Art Gallery",
+      "description": "COMING SOON - An exhibition of works on paper by Ipswich based Artist, Ian Friend.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3314",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "drawing",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
       "creative": true
     },
     {
@@ -64,30 +86,8 @@
       "category": "Arts / Exhibition",
       "tags": [
         "art",
-        "national",
-        "gallery"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "BRUTALIST / Baroque",
-      "datetime": "Sat 5 Sep, 10:00 AM",
-      "datetime_iso": "2026-09-05T10:00:00",
-      "datetime_end_iso": "2026-11-22T17:00:00",
-      "location": "Ipswich Art Gallery",
-      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/brutalist-baroque",
-      "cost": "FREE | No bookings are required to visit the exhibition",
-      "source": "Ipswich Art Gallery",
-      "description": "COMING SOON — An exhibition by ceramic artists, Donalee Moriarty and Nicolette Johnson, exploring the shared qualities that unite their seemingly opposing styles.",
-      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3320",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "ceramics",
-        "art",
-        "design"
+        "gallery",
+        "painting"
       ],
       "social": false,
       "intellectual": false,
@@ -114,46 +114,68 @@
       "social": true,
       "intellectual": false,
       "hands_on": true,
-      "creative": false
+      "creative": true
     },
     {
-      "title": "Heritage Architecture Tour with Mark Tendys, ICC City Architect",
-      "datetime": "Sat 5 Sep, 2:00 PM",
-      "datetime_iso": "2026-09-05T14:00:00",
-      "datetime_end_iso": "2026-09-05T15:00:00",
+      "title": "IAG Exhibition Preview: Ian Friend & Nathan Shepherdson",
+      "datetime": "Sat 19 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-19T16:00:00",
+      "datetime_end_iso": "2026-09-19T16:45:00",
       "location": "Ipswich Art Gallery",
-      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/heritage-architecture-tour-with-mark-tendys-city-architect-2026",
-      "cost": "FREE | Bookings Required",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/iag-exhibition-preview-ian-friend-and-nathan-shepherdson",
+      "cost": "FREE",
       "source": "Ipswich Art Gallery",
-      "description": "Delve into the hidden histories of Ipswich Art Gallery's building with Mark Tendys, Ipswich City Council's City Architect.",
-      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/2630",
+      "description": "Join artist Ian Friend and poet Nathan Shepherdson for a preview of IAG's exhibition, 'The Noise of Time.'",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3315",
       "category": "Public Lecture",
       "tags": [
-        "architecture",
-        "history",
-        "local"
+        "art",
+        "poetry",
+        "talk"
       ],
-      "social": false,
+      "social": true,
       "intellectual": true,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
-      "title": "Amanda Waschevski | People of Ipswich",
-      "datetime": "Wed 26 Aug, 10:00 AM",
-      "datetime_iso": "2026-08-26T10:00:00",
-      "datetime_end_iso": "2026-09-06T15:00:00",
+      "title": "IPSARI | The View From Here: A Community Exhibition",
+      "datetime": "Sat 19 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-19T10:00:00",
+      "datetime_end_iso": "2026-09-27T15:00:00",
       "location": "Ipswich Art Gallery",
-      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/amanda-waschevski-people-of-ipswich",
+      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/ipsari-the-view-from-here-a-community-exhibition",
       "cost": "Free",
       "source": "Ipswich Art Gallery",
-      "description": "People of Ipswich is a love letter to the city by award-winning photographer Amanda Waschevski.",
-      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3253",
+      "description": "A collective portrait of Ipswich through the diverse eyes of its residents.",
+      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/3334",
       "category": "Arts / Exhibition",
       "tags": [
+        "community",
         "photography",
-        "local",
-        "art"
+        "local"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "BRUTALIST / Baroque",
+      "datetime": "Sat 5 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-05T10:00:00",
+      "datetime_end_iso": "2026-11-22T17:00:00",
+      "location": "Ipswich Art Gallery",
+      "link": "https://ipswichartgallery.qld.gov.au/brutalist-baroque",
+      "cost": "FREE | No bookings are required to visit the exhibition",
+      "source": "Ipswich Art Gallery",
+      "description": "An exhibition by ceramic artists, Donalee Moriarty and Nicolette Johnson, exploring the shared qualities that unite their seemingly opposing styles.",
+      "image": "https://ipswichartgallery.qld.gov.au/3320",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "ceramics",
+        "art",
+        "exhibition"
       ],
       "social": false,
       "intellectual": false,
@@ -161,46 +183,46 @@
       "creative": true
     },
     {
-      "title": "Jude Muduioa: Artist in Residence",
-      "datetime": "Mon 17 Aug",
-      "datetime_iso": "2026-08-17",
-      "datetime_end_iso": "2026-09-04",
+      "title": "IAG Kids: Make Yourself at Home",
+      "datetime": "Sat 25 Jul, 10:00 AM",
+      "datetime_iso": "2026-07-25T10:00:00",
+      "datetime_end_iso": "2026-11-08T17:00:00",
       "location": "Ipswich Art Gallery",
-      "link": "https://www.ipswichartgallery.qld.gov.au/whats-on/jude-muduioa-artist-in-residence",
-      "cost": "See link",
+      "link": "https://ipswichartgallery.qld.gov.au/iag-kids-make-yourself-at-home",
+      "cost": "FREE",
       "source": "Ipswich Art Gallery",
-      "description": "Jude Muduioa is a ceramic artist who uses repetition and componentry to represent community and talk about identity.",
-      "image": "https://www.ipswichartgallery.qld.gov.au/whats-on/2912",
+      "description": "A playful, sensory exhibition that explores what home means to children.",
+      "image": "https://ipswichartgallery.qld.gov.au/3182",
       "category": "Arts / Exhibition",
       "tags": [
-        "ceramics",
-        "artist",
-        "identity"
+        "kids",
+        "exhibition",
+        "family"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
-      "title": "Ties that bind",
-      "datetime": "Sat 27 Jun, 10:00 AM",
-      "datetime_iso": "2026-06-27T10:00:00",
-      "datetime_end_iso": "2026-09-06T17:00:00",
+      "title": "The Noise of Time",
+      "datetime": "Sat 19 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-19T10:00:00",
+      "datetime_end_iso": "2026-11-29T17:00:00",
       "location": "Ipswich Art Gallery",
-      "link": "https://ipswichartgallery.qld.gov.au/ties-that-bind",
+      "link": "https://ipswichartgallery.qld.gov.au/Ian-Friend-The-Noise-of-Time",
       "cost": "FREE | No bookings are required to visit the exhibition",
       "source": "Ipswich Art Gallery",
-      "description": "What binds us to home? What—or who—makes belonging possible? How do we carry our histories with us, and how do they shape the lands we inhabit?",
-      "image": "https://ipswichartgallery.qld.gov.au/3282",
+      "description": "COMING SOON - An exhibition of works on paper by Ipswich based Artist, Ian Friend.",
+      "image": "https://ipswichartgallery.qld.gov.au/3314",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
-        "history",
-        "culture"
+        "drawing",
+        "exhibition"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     },
@@ -218,8 +240,8 @@
       "category": "Arts / Exhibition",
       "tags": [
         "art",
-        "national",
-        "gallery"
+        "gallery",
+        "painting"
       ],
       "social": false,
       "intellectual": false,

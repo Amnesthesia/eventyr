@@ -3,53 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "bcec",
-  "week_start": "2026-08-31",
-  "week_end": "2026-09-06",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
-    {
-      "title": "Teach Rural Career Fair",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "Brisbane Convention & Exhibition Centre",
-      "link": "https://teach.qld.gov.au/events-and-community/teach-queensland-events/career-fairs",
-      "cost": "See link",
-      "source": "Brisbane Convention & Exhibition Centre",
-      "description": "The Teach Rural Career Fair at Brisbane Convention & Exhibition Centre is a community event.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "career",
-        "education",
-        "employment"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "The Home Show 2026",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-09-13",
-      "location": "Brisbane Convention & Exhibition Centre",
-      "link": "https://tickets.eeanz.com/events/brisbane-home-show-september-2026",
-      "cost": "See link",
-      "source": "Brisbane Convention & Exhibition Centre",
-      "description": "The Home Show 2026 at Brisbane Convention & Exhibition Centre is a community event.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "home",
-        "renovation",
-        "design"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
     {
       "title": "Care Expo",
       "datetime": "Fri 11 Sep",
@@ -59,13 +15,13 @@
       "link": "https://careexpobrisbane.com.au/",
       "cost": "See link",
       "source": "Brisbane Convention & Exhibition Centre",
-      "description": "The Care Expo at Brisbane Convention & Exhibition Centre is a community event.",
+      "description": "Care Expo at Brisbane Convention & Exhibition Centre is a community event.",
       "image": "",
       "category": "Community / Other",
       "tags": [
         "health",
         "care",
-        "support"
+        "community"
       ],
       "social": true,
       "intellectual": false,
@@ -81,57 +37,13 @@
       "link": "https://events.humanitix.com/2026-yalari-brisbane-gala-dinner",
       "cost": "See link",
       "source": "Brisbane Convention & Exhibition Centre",
-      "description": "The Yalari Dinner 2026 at Brisbane Convention & Exhibition Centre is a community event.",
+      "description": "Yalari Dinner 2026 at Brisbane Convention & Exhibition Centre is a community event.",
       "image": "",
       "category": "Community / Other",
       "tags": [
         "charity",
         "dinner",
         "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "AGHA Gifted – Brisbane",
-      "datetime": "Sun 19 Feb, 10:00 AM",
-      "datetime_iso": "2023-02-19T10:00:00",
-      "datetime_end_iso": "2026-10-18",
-      "location": "Brisbane Convention & Exhibition Centre",
-      "link": "https://agha.com.au/gifted-brisbane/",
-      "cost": "See link",
-      "source": "Brisbane Convention & Exhibition Centre",
-      "description": "The AGHA Gifted – Brisbane at Brisbane Convention & Exhibition Centre is a community event.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "retail",
-        "trade",
-        "gifts"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Teach Rural Career Fair",
-      "datetime": "Sat 5 Sep",
-      "datetime_iso": "2026-09-05",
-      "datetime_end_iso": "",
-      "location": "Brisbane Convention & Exhibition Centre",
-      "link": "https://teach.qld.gov.au/events-and-community/teach-queensland-events/career-fairs",
-      "cost": "See link",
-      "source": "Brisbane Convention & Exhibition Centre",
-      "description": "The Teach Rural Career Fair at Brisbane Convention & Exhibition Centre is a community event.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "career",
-        "education",
-        "employment"
       ],
       "social": true,
       "intellectual": false,
@@ -161,6 +73,94 @@
       "creative": false
     },
     {
+      "title": "Bill Bailey",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Brisbane Convention & Exhibition Centre",
+      "link": "https://premier.ticketek.com.au/shows/show.aspx?sh=BLIBLLEB26",
+      "cost": "See link",
+      "source": "Brisbane Convention & Exhibition Centre",
+      "description": "Bill Bailey at Brisbane Convention & Exhibition Centre is a concert or music event.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Oz Comic-Con 2026",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Brisbane Convention & Exhibition Centre",
+      "link": "http://www.ozcomiccon.com/",
+      "cost": "See link",
+      "source": "Brisbane Convention & Exhibition Centre",
+      "description": "Oz Comic-Con 2026 at Brisbane Convention & Exhibition Centre is a community event.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "popculture",
+        "comics",
+        "fandom"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Brisbane’s Annual Wedding Expo",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Brisbane Convention & Exhibition Centre",
+      "link": "https://events.humanitix.com/brisbane-s-annual-wedding-expo-2026-nrdnv36v/tickets",
+      "cost": "See link",
+      "source": "Brisbane Convention & Exhibition Centre",
+      "description": "Brisbane’s Annual Wedding Expo at Brisbane Convention & Exhibition Centre is a community event.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "wedding",
+        "expo",
+        "planning"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "AGHA Gifted – Brisbane",
+      "datetime": "Sun 19 Feb, 10:00 AM",
+      "datetime_iso": "2023-02-19T10:00:00",
+      "datetime_end_iso": "2026-10-18",
+      "location": "Brisbane Convention & Exhibition Centre",
+      "link": "https://agha.com.au/gifted-brisbane/",
+      "cost": "See link",
+      "source": "Brisbane Convention & Exhibition Centre",
+      "description": "AGHA Gifted – Brisbane at Brisbane Convention & Exhibition Centre is a community event.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "retail",
+        "gifts",
+        "trade"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Care Expo",
       "datetime": "Fri 11 Sep",
       "datetime_iso": "2026-09-11",
@@ -169,18 +169,84 @@
       "link": "https://careexpobrisbane.com.au/",
       "cost": "See link",
       "source": "Brisbane Convention & Exhibition Centre",
-      "description": "The Care Expo at Brisbane Convention & Exhibition Centre is a community event.",
+      "description": "Care Expo at Brisbane Convention & Exhibition Centre is a community event.",
       "image": "",
       "category": "Community / Other",
       "tags": [
         "health",
         "care",
-        "support"
+        "community"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "The Home Show 2026",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-13",
+      "location": "Brisbane Convention & Exhibition Centre",
+      "link": "https://tickets.eeanz.com/events/brisbane-home-show-september-2026",
+      "cost": "See link",
+      "source": "Brisbane Convention & Exhibition Centre",
+      "description": "The Home Show 2026 at Brisbane Convention & Exhibition Centre is a community event.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "home",
+        "renovation",
+        "design"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Bill Bailey",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "",
+      "location": "Brisbane Convention & Exhibition Centre",
+      "link": "https://premier.ticketek.com.au/shows/show.aspx?sh=BLIBLLEB26",
+      "cost": "See link",
+      "source": "Brisbane Convention & Exhibition Centre",
+      "description": "Bill Bailey at Brisbane Convention & Exhibition Centre is a concert or music event.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Oz Comic-Con 2026",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Brisbane Convention & Exhibition Centre",
+      "link": "http://www.ozcomiccon.com/",
+      "cost": "See link",
+      "source": "Brisbane Convention & Exhibition Centre",
+      "description": "Oz Comic-Con 2026 at Brisbane Convention & Exhibition Centre is a community event.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "popculture",
+        "comics",
+        "fandom"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }
