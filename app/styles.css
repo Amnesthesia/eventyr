@@ -1585,6 +1585,26 @@ summary:hover .card-desc-toggle {
 	text-decoration: none;
 }
 
+/* ── FAQ ── */
+.faq {
+	padding: 1.25rem 12px;
+	border-top: 1px solid var(--border);
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.faq summary {
+	font-size: 0.85rem;
+	cursor: pointer;
+}
+
+.faq p {
+	font-size: 0.8rem;
+	color: var(--muted);
+	margin: 0.4rem 0 0;
+}
+
 /* ── Site footer ── */
 .site-footer {
 	border-top: 1px solid var(--border);

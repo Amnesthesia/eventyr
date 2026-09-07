@@ -74,6 +74,32 @@ export function parseEndDate(dt: string, startIso: string): string {
 	return startIso.slice(0, 10);
 }
 
+/**
+ * Whether an event is happening on any day within [from, to] (inclusive
+ * YYYY-MM-DD bounds) — an overlap test, not a start-date match, so a
+ * multi-day exhibition that opened weeks ago still counts as "on" today.
+ * datetime_end_iso is authoritative when present; parseEndDate is only a
+ * fallback for older data with no end field (see its own doc comment for why
+ * re-deriving it from datetime disagreed with the real end on real events).
+ */
+export function eventOverlapsRange(
+	event: {
+		datetime_iso?: string;
+		datetime_end_iso?: string;
+		datetime?: string;
+	},
+	from: string,
+	to: string,
+): boolean {
+	if (!event.datetime_iso) return false;
+	const start = event.datetime_iso.slice(0, 10);
+	const end =
+		event.datetime_end_iso?.slice(0, 10) ||
+		parseEndDate(event.datetime || "", event.datetime_iso) ||
+		start;
+	return start <= to && end >= from;
+}
+
 export function fmtRange(a: string, b: string): string {
 	const fmt = (d: string) =>
 		new Date(`${d}T00:00:00`).toLocaleDateString("en-AU", {

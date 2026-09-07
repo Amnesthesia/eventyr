@@ -35,6 +35,13 @@ interface Props {
 	 * page passes its own image where the source gave one: an unfurl showing
 	 * the actual event beats the site's generic card. */
 	ogImage?: string;
+	/** Set by src/pages/[city]/[timeframe].astro. Suppresses the FAQ block:
+	 * that block's text is identical on every page it appears on, and
+	 * near-duplicate boilerplate is exactly what Google's scaled-content-abuse
+	 * policy flags — worth avoiding across city + today + tomorrow + weekend
+	 * (4 near-identical FAQPage blocks per city) even though the event lists
+	 * themselves genuinely differ and aren't at risk. */
+	isTimeframe?: boolean;
 }
 
 const {
@@ -49,6 +56,7 @@ const {
 	ogType = "website",
 	schema: schemaOverride,
 	ogImage,
+	isTimeframe = false,
 } = Astro.props;
 const BASE_URL = "https://www.dothings.lol";
 
@@ -94,7 +102,7 @@ const ogTitle = titleOverride
 	? `${titleOverride} — dothings.lol`
 	: categoryLabel
 	? `${catShortName(categoryLabel)} events in ${cityData.city} this week — dothings.lol`
-	: `Things to do in ${cityData.city} this week — dothings.lol`;
+	: `What's on in ${cityData.city} this week — dothings.lol`;
 
 // Kept under ~155 characters so Google shows the whole thing rather than
 // truncating mid-sentence, and front-loaded with the count, the city and the
@@ -195,6 +203,58 @@ const breadcrumbs = {
 	],
 };
 
+// Only on the plain city page — not per-category (the answers are city-wide
+// facts, repeating them verbatim on every category page is duplicate content
+// for no benefit) and not on the /today//tomorrow//this-weekend/ pages
+// (isTimeframe): those already carry this same block, and 4 near-identical
+// FAQPage blocks per city is exactly the "identical structure, near-duplicate
+// content" pattern Google's scaled-content-abuse policy flags — the filtered
+// event lists on those pages are genuinely different and unaffected, only the
+// boilerplate FAQ riding along with them was the risk.
+const faqs =
+	categoryLabel || isTimeframe
+		? []
+		: [
+				{
+					q: `What's on in ${cityName} today?`,
+					a: `The list is grouped by date and today's events are under the "Today" heading — or jump straight to the <a href="/${slug}/today/">${cityName} events today</a> page.`,
+				},
+				{
+					q: `What's on in ${cityName} this weekend?`,
+					a: `See <a href="/${slug}/this-weekend/">what's on in ${cityName} this weekend</a> — live music, markets, workshops, talks and more, for Saturday and Sunday.`,
+				},
+				{
+					q: `What's on in ${cityName} tomorrow?`,
+					a: `Tomorrow's events sit under their own "Tomorrow" heading in the list, right after today's — or see the <a href="/${slug}/tomorrow/">${cityName} events tomorrow</a> page.`,
+				},
+				{
+					q: `What are the best social events in ${cityName}?`,
+					a: `Community meetups, markets, socials and mixed-age gatherings are curated in with everything else below — filter by the "Community" or "Social" category to see just those.`,
+				},
+				{
+					q: `Is there anything on in ${cityName} CBD?`,
+					a: `${cityData.events.length} events${coverage ? `, ${coverage},` : ""} are curated from inner-city and CBD venues alongside the wider ${cityName} area — search or filter below to narrow it down.`,
+				},
+			];
+
+const faqSchema = faqs.length
+	? {
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			// Plain text for the schema, not the same markup the visible <p>
+			// renders: an anchor tag in a JSON-LD text field is a Google Rich
+			// Results Test warning waiting to happen.
+			mainEntity: faqs.map((f) => ({
+				"@type": "Question",
+				name: f.q,
+				acceptedAnswer: {
+					"@type": "Answer",
+					text: f.a.replace(/<[^>]+>/g, ""),
+				},
+			})),
+		}
+	: null;
+
 const websiteSchema = {
 	"@context": "https://schema.org",
 	"@type": "WebSite",
@@ -273,6 +333,9 @@ const websiteSchema = {
       set:html={JSON.stringify(websiteSchema)}
     />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
+    {faqSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    )}
     <script
       src="https://app.rybbit.io/api/script.js"
       data-site-id="0f3ec51f30bf"
@@ -319,6 +382,16 @@ const websiteSchema = {
         </a>
       ))}
     </nav>
+    {faqs.length > 0 && (
+      <section class="faq" aria-label="Frequently asked questions">
+        {faqs.map(({ q, a }) => (
+          <details>
+            <summary>{q}</summary>
+            <p set:html={a} />
+          </details>
+        ))}
+      </section>
+    )}
     <footer class="site-footer">
       <nav>
         <a href="/brisbane/">Things to do in Brisbane</a>

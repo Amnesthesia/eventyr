@@ -26,7 +26,12 @@ import type {
 	VibeKey,
 } from "./types";
 import { KEY_TO_SLUG } from "./utils/citySlug";
-import { endOfMonth, parseEndDate, startOfWeek, todayIso } from "./utils/dates";
+import {
+	endOfMonth,
+	eventOverlapsRange,
+	startOfWeek,
+	todayIso,
+} from "./utils/dates";
 import type { GroupBy } from "./utils/grouping";
 import { matchesQuery, queryTokens } from "./utils/search";
 
@@ -84,6 +89,11 @@ interface EventsContextValue {
 	weekStart: string;
 	weekEnd: string;
 	isEventPast: (event: Event) => boolean;
+	/** "" until corrected client-side post-mount (see isEventPast above) — a
+	 * grouping/window calculation that needs "today" must use this rather than
+	 * calling todayIso() itself, or it disagrees between the build-time and
+	 * client-mount value and hydration mismatches. */
+	todayStr: string;
 }
 
 const EventsContext = createContext<EventsContextValue | null>(null);
@@ -134,7 +144,9 @@ export function EventsProvider({
 	const [dateRange, setDateRange] = useState<DateRange | null>(null);
 	const [activeTags, setActiveTags] = useState<string[]>([]);
 	const [pastFilter, setPastFilter] = useState<PastFilter>("no-past");
-	const [groupBy, setGroupBy] = useState<GroupBy>("none");
+	// "date" by default so the "Today"/"Tomorrow" section headings render
+	// without the reader having to find the grouping toggle first.
+	const [groupBy, setGroupBy] = useState<GroupBy>("date");
 	const [query, setQuery] = useState("");
 	const [vibeFilters, setVibeFilters] = useState<VibeFilters>({
 		intellectual: "any",
@@ -196,22 +208,8 @@ export function EventsProvider({
 			if (!matchesQuery(event, tokens)) return false;
 			const catOk = activeCat === "All" || event.category === activeCat;
 
-			const dateOk = (() => {
-				if (!dateRange) return true;
-				if (!event.datetime_iso) return false;
-				const eventStart = event.datetime_iso.slice(0, 10);
-				// datetime_end_iso is the authoritative end, produced by both
-				// collection paths. Re-deriving it from the human string
-				// disagreed with it on real multi-day events (PyConAU's real
-				// end 30 Aug was guessed as 26 Aug), so selecting the last two
-				// days of a festival showed nothing. parseEndDate remains only
-				// as a fallback for older data with no end field.
-				const eventEnd =
-					event.datetime_end_iso?.slice(0, 10) ||
-					parseEndDate(event.datetime || "", event.datetime_iso) ||
-					eventStart;
-				return eventStart <= dateRange.end && eventEnd >= dateRange.start;
-			})();
+			const dateOk =
+				!dateRange || eventOverlapsRange(event, dateRange.start, dateRange.end);
 
 			const tagsOk =
 				activeTags.length === 0 ||
@@ -403,6 +401,7 @@ export function EventsProvider({
 		weekStart,
 		weekEnd: coverageEnd,
 		isEventPast,
+		todayStr,
 	};
 
 	return (

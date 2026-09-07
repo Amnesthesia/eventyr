@@ -22,6 +22,9 @@ const CATEGORY_SLUGS = [
 	"workshops",
 ];
 
+// Matches the slugs src/pages/[city]/[timeframe].astro generates.
+const TIMEFRAME_SLUGS = ["today", "tomorrow", "this-weekend"];
+
 interface CityMeta {
 	key: string;
 	generated_at: string;
@@ -45,6 +48,13 @@ function buildSitemap(cities: CityMeta[], today: string): string {
 				(cat) =>
 					`  <url>\n    <loc>${BASE_URL}/${slug}/${cat}/</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`,
 			);
+			// These three change what they show every day (see [timeframe].astro
+			// and deploy.yml's daily rebuild), so lastmod is the build date rather
+			// than the underlying data's generated_at.
+			const timeframeUrls = TIMEFRAME_SLUGS.map(
+				(tf) =>
+					`  <url>\n    <loc>${BASE_URL}/${slug}/${tf}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>`,
+			);
 			// Lower priority than the city and category pages, and weekly like
 			// them: an event page is a share target first and a search result
 			// second. They are indexable — a hard 404 once the event rolls off is
@@ -54,7 +64,7 @@ function buildSitemap(cities: CityMeta[], today: string): string {
 				(path) =>
 					`  <url>\n    <loc>${BASE_URL}${path}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.5</priority>\n  </url>`,
 			);
-			return [cityUrl, ...catUrls, ...eventUrls];
+			return [cityUrl, ...catUrls, ...timeframeUrls, ...eventUrls];
 		}),
 	];
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;

@@ -8,6 +8,22 @@ on:
     workflows: ["Events — Weekly Digest"]
     types:
       - completed
+  schedule:
+    # Daily, so /today/, /tomorrow/ and /this-weekend/ (src/pages/[city]/[timeframe].astro)
+    # rebuild under the new day rather than staying pinned to whichever day the
+    # last push or weekly digest happened to land on. No data changes, no API
+    # calls — same build+deploy this workflow already does on every push.
+    #
+    # Off the hour (:18, not :00): GitHub's scheduler is busiest — and most
+    # likely to delay or drop a run — right at the top of every hour.
+    #
+    # A schedule trigger only fires while the repo has had a commit in the
+    # last 60 days (GitHub auto-disables idle scheduled workflows); weekly.yml
+    # already commits every week, well inside that window, so this is
+    # currently dormant risk, not a live one. If the weekly digest is ever
+    # paused, this rebuild silently stops too — that's the tell if /today/
+    # goes stale with no failed run to point at.
+    - cron: "18 18 * * *"
 
 permissions:
   contents: read
@@ -31,6 +47,11 @@ jobs:
         with:
           node-version: 22
           package-manager: pnpm@9
+        env:
+          # [timeframe].astro's today/tomorrow/this-weekend split reads the
+          # build machine's clock — pin it the same way digest.yml pins it for
+          # the pipeline, or a UTC runner puts "today" a day off in the evening.
+          TZ: Australia/Brisbane
 
   deploy:
     needs: build

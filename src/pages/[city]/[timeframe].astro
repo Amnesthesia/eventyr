@@ -1,0 +1,119 @@
+---
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import Base from "../../layouts/Base.astro";
+import EventApp from "@react/EventApp";
+import type { CityData, CityIndex } from "@react/types";
+import { SLUG_TO_KEY } from "@react/utils/citySlug";
+import { addDays, eventOverlapsRange } from "@react/utils/dates";
+import { byScoreThenSoonest } from "../../shared.ts";
+import { SITE_URL, toISODate } from "../../common.ts";
+
+const BASE_URL = SITE_URL;
+
+interface TimeframeRange {
+	slug: string;
+	from: string;
+	to: string;
+	title: string;
+	blurb: string;
+}
+
+export function getStaticPaths() {
+	const index: CityIndex = JSON.parse(
+		readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
+	);
+
+	// Computed once at build time from the real clock (not per-city data) —
+	// every city gets the same today/tomorrow/weekend dates. Correct only if
+	// the build runs under TZ=Australia/Brisbane (deploy.yml pins this on its
+	// daily schedule, the same way digest.yml pins it for the pipeline); a
+	// build under the runner's default UTC would put "today" a day off in the
+	// evening. Inlined here rather than a top-level helper: Astro's frontmatter
+	// compiler was dropping a separate function that only getStaticPaths called.
+	const today = toISODate(new Date());
+	const tomorrow = addDays(today, 1);
+	const dow = new Date(`${today}T00:00:00`).getDay(); // 0=Sun..6=Sat
+	let satIso: string;
+	let sunIso: string;
+	if (dow === 6) {
+		satIso = today;
+		sunIso = tomorrow;
+	} else if (dow === 0) {
+		// ponytail: Sunday only — Saturday just gone is already over, no point
+		// listing it under "this weekend". Upgrade if that ever needs revisiting.
+		satIso = today;
+		sunIso = today;
+	} else {
+		satIso = addDays(today, 6 - dow);
+		sunIso = addDays(satIso, 1);
+	}
+	const ranges: TimeframeRange[] = [
+		{ slug: "today", from: today, to: today, title: "events today", blurb: "today" },
+		{ slug: "tomorrow", from: tomorrow, to: tomorrow, title: "events tomorrow", blurb: "tomorrow" },
+		{ slug: "this-weekend", from: satIso, to: sunIso, title: "this weekend", blurb: "this weekend" },
+	];
+	const paths = [];
+
+	for (const city of index.cities) {
+		const citySlug =
+			Object.entries(SLUG_TO_KEY).find(([, k]) => k === city.key)?.[0] ??
+			city.key;
+
+		const cityData: CityData = JSON.parse(
+			readFileSync(join(process.cwd(), `data/${city.key}.json`), "utf-8"),
+		);
+
+		for (const range of ranges) {
+			const filteredData: CityData = {
+				...cityData,
+				// Shared with app/context.tsx's date-range filter, so a reader gets
+				// the same answer here as on the main page's date picker for the
+				// same range — an overlap test, not a start-date match, so a
+				// multi-day exhibition that opened weeks ago still counts as "on".
+				events: cityData.events
+					.filter((e) => eventOverlapsRange(e, range.from, range.to))
+					.sort(byScoreThenSoonest),
+			};
+
+			paths.push({
+				params: { city: citySlug, timeframe: range.slug },
+				props: {
+					cityData: filteredData,
+					allCities: index.cities,
+					range,
+				},
+			});
+		}
+	}
+
+	return paths;
+}
+
+const { cityData, allCities, range } = Astro.props;
+const citySlug = Astro.params.city as string;
+const cityName = cityData.city.split(",")[0];
+const canonical = `${BASE_URL}/${citySlug}/${range.slug}/`;
+const title =
+	range.slug === "this-weekend"
+		? `What's on in ${cityName} this weekend`
+		: `${cityName} ${range.title}`;
+const description = `${cityData.events.length} events on in ${cityName} ${range.blurb}. Curated and ranked from local sources, updated daily.`;
+---
+
+<Base
+  cityData={cityData}
+  slug={citySlug}
+  canonical={canonical}
+  title={title}
+  description={description}
+  isTimeframe
+>
+  {cityData.events.length === 0 && (
+    <p class="container city-intro">
+      Nothing dated {range.blurb} in {cityName} yet — see the
+      <a href={`/${citySlug}/`}>full week's events</a>.
+    </p>
+  )}
+  <EventApp client:load cityData={cityData} allCities={allCities} />
+</Base>

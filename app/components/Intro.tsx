@@ -47,10 +47,11 @@ export function Intro({ city }: { city: string }) {
 			onClick={hide}
 			title="click to hide"
 		>
-			Looking for genuinely interesting things to do in <strong>{city}</strong>?{" "}
-			dothings.lol is a curated event discovery platform that aggregates events
-			from dozens of local sources and uses multiple AI models to filter and
-			rank them — highlighting workshops, meetups, live music, community events,
+			Wondering what's on in <strong>{city}</strong> today, tomorrow or this
+			weekend? dothings.lol is a curated event discovery platform that
+			aggregates events from dozens of local sources — including {city} CBD
+			venues — and uses multiple AI models to filter and rank them —
+			highlighting workshops, meetups, live music, community and social events,
 			art classes, outdoor activities, talks, markets, and unique experiences
 			worth leaving the house for, without the clutter or spam found on most
 			event websites. Whether you're searching for things to do in{" "}
