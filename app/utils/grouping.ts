@@ -39,7 +39,10 @@ export function dateWindowFor(
 	const to = addDays(weekEnd, 7);
 	// A stale build — today already past the window — would otherwise bucket
 	// every event as "Later". Fall back to the digest week it was built for.
-	const from = today >= weekStart && today <= to ? today : weekStart;
+	// Today *before* the week is normal, not stale: the digest is built on
+	// Sunday for the week starting Monday and still carries Sunday's events,
+	// which must land under "Today" rather than "Ongoing".
+	const from = today <= to ? today : weekStart;
 	return { from, to };
 }
 

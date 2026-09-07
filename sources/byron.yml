@@ -1,0 +1,785 @@
+# Event sources for Byron Bay.
+#
+# Each entry declares how it is collected:
+#   method: scraper — we fetch its listingUrls ourselves (src/adapters/).
+#   method: llm     — no verified listing page, so LLM web search covers it.
+#
+# Every source starts as method: llm. Only probe-sources promotes one, once
+# it has verified a listing URL actually yields dated events.
+#
+# TODO: add this city's centre. Until it is here, curate.ts keeps every event
+# and cannot tell a local one from an interstate one (src/locality.ts).
+# Deliberately not written as a placeholder: coordinates that are present but
+# wrong are worse than absent, since every real venue is then "somewhere else".
+# radiusKm must stay smaller than the distance to the nearest other city in
+# sources/, or the two will swallow each other's events.
+#
+# centre:
+#   lat: -27.4698
+#   lng: 153.0251
+#   radiusKm: 50
+
+name: Byron Bay
+timezone: Australia/Brisbane
+sources:
+  aggregators: []
+  institutions:
+    - name: Lone Goat Gallery
+      method: llm
+      domains:
+        - lonegoatgallery.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron School of Art
+      method: llm
+      domains:
+        - byronschoolofart.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Gallery 3 Byron Bay
+      method: llm
+      domains:
+        - gallery3byronbay.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Thomgallery
+      method: llm
+      domains:
+        - thomgallery.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Pack Gallery Studio
+      method: llm
+      domains:
+        - packgallerystudio.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Ninbella
+      method: llm
+      domains:
+        - ninbella.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Art & Wine Co Byron Bay
+      method: llm
+      domains:
+        - artandwinecobyronbay.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Bay Contemporary Artspace
+      method: llm
+      domains:
+        - byronartspace.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Haven Gallery Byron Bay
+      method: llm
+      domains:
+        - havengallerybyron.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron School of Clay
+      method: llm
+      domains:
+        - bsoc.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Muddy Clay Play
+      method: llm
+      domains:
+        - muddyclayplay.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Villa Rustica Byron Bay
+      method: llm
+      domains:
+        - villarusticabyronbay.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Drill Hall Theatre Company
+      method: llm
+      domains:
+        - drillhalltheatre.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Mullumbimby Museum
+      method: llm
+      domains:
+        - mullumbimbymuseum.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Bangalow Historical Society
+      method: llm
+      domains:
+        - bangalowhistoricalsociety.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Community Centre
+      method: scraper
+      domains:
+        - byroncentre.com.au
+      note: 'Verified by probe-sources 2026-09-07: 12 dated event(s) via html.'
+      homepage: https://byroncentre.com.au/
+      listingUrls:
+        - https://www.byroncentre.com.au/bct/whats-on
+        - https://www.byroncentre.com.au/bcc/about/events
+      strategy: html
+    - name: Byron Youth Theatre
+      method: scraper
+      domains:
+        - byronyouththeatre.com
+      note: 'Verified by probe-sources 2026-09-07: 6 dated event(s) via html.'
+      homepage: https://byronyouththeatre.com/
+      listingUrls:
+        - https://www.byronyouththeatre.com/category/classes/
+      strategy: html
+    - name: Otherworld Byron Bay
+      method: llm
+      domains:
+        - otherworld.live
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Shire Council
+      method: scraper
+      domains:
+        - byron.nsw.gov.au
+      note: 'Verified by probe-sources 2026-09-07: 9 dated event(s) via html.'
+      homepage: https://byron.nsw.gov.au/
+      listingUrls:
+        - https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On
+      strategy: html
+    - name: Richmond Tweed Regional Library
+      method: llm
+      domains:
+        - rtrl.nsw.gov.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Theatre
+      method: scraper
+      domains:
+        - byrontheatre.com
+      note: 'Verified by probe-sources 2026-09-07: 3 dated event(s) via html.'
+      homepage: https://byrontheatre.com/
+      listingUrls:
+        - https://byrontheatre.com/
+      strategy: html
+    - name: Byron Community College
+      method: scraper
+      domains:
+        - byroncollege.org.au
+      note: 'Verified by probe-sources 2026-09-07: 3 dated event(s) via html.'
+      homepage: https://byroncollege.org.au/
+      listingUrls:
+        - https://byroncollege.org.au/course-category/earn/
+      strategy: html
+    - name: Coorabell Hall
+      method: llm
+      domains:
+        - coorabellhall.net
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Ewingsdale Community Association
+      method: llm
+      domains:
+        - ewingsdale.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Newrybar Community Hall
+      method: llm
+      domains:
+        - newrybarhall.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Bangalow A & I Hall
+      method: llm
+      domains:
+        - bangalowhall.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Mullumbimby Civic Memorial Hall
+      method: llm
+      domains:
+        - mullumcivic.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: South Golden Beach Community Centre
+      method: llm
+      domains:
+        - southgoldenbeachcommunitycentre.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Federal Halls
+      method: llm
+      domains:
+        - federalhalls.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: SAE Creative Media Institute
+      method: llm
+      domains:
+        - sae.edu.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Ocean Shores Community Centre
+      method: llm
+      domains:
+        - oceanshorescommunitycentre.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Theatre
+      method: scraper
+      domains:
+        - byrontheatre.com.au
+      note: 'Verified by probe-sources 2026-09-07: 3 dated event(s) via html.'
+      homepage: https://byrontheatre.com.au/
+      listingUrls:
+        - https://byrontheatre.com.au/
+      strategy: html
+    - name: Brunswick Picture House
+      method: llm
+      domains:
+        - brunswickpicturehouse.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Bangalow Theatre Company
+      method: llm
+      domains:
+        - bangalowtheatre.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Sprung Dance Theatre
+      method: llm
+      domains:
+        - sprung.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Ballet
+      method: llm
+      domains:
+        - byronballet.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: The Darling Theatre Company
+      method: llm
+      domains:
+        - thedarlingtheatrecompany.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Spaghetti Circus
+      method: llm
+      domains:
+        - spaghetticircus.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Bang! Academy of Performing Arts
+      method: llm
+      domains:
+        - bangacademyofperformingarts.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Lismore Theatre Company
+      method: llm
+      domains:
+        - lismoretheatrecompany.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Ballina Players
+      method: llm
+      domains:
+        - ballinaplayers.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: NORPA
+      method: llm
+      domains:
+        - norpa.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Bay Historical Society
+      method: llm
+      domains:
+        - byronbayhistoricalsociety.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Bay Stargazing
+      method: llm
+      domains:
+        - byronbaystargazing.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Mullum SEED
+      method: llm
+      domains:
+        - mullumseed.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Star Stuff
+      method: llm
+      domains:
+        - starstuff.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+  independents:
+    - name: Blah Blah Blah Improv
+      method: llm
+      domains:
+        - blahblahblahimprov.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Bay Comedy
+      method: llm
+      domains:
+        - byronbaycomedy.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Comedy Festival
+      method: llm
+      domains:
+        - byroncomedyfest.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Great Northern Hotel
+      method: scraper
+      domains:
+        - thenorthern.com.au
+      note: 'Verified by probe-sources 2026-09-07: 8 dated event(s) via jsonld.'
+      homepage: https://thenorthern.com.au/
+      listingUrls:
+        - https://thenorthern.com.au/whats-on/
+      strategy: jsonld
+    - name: Beach Hotel
+      method: llm
+      domains:
+        - beachhotel.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: The Railway Friendly Bar
+      method: llm
+      domains:
+        - therailsbyronbay.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Hotel Brunswick
+      method: scraper
+      domains:
+        - hotelbrunswick.com.au
+      note: 'Verified by probe-sources 2026-09-07: 7 dated event(s) via html.'
+      homepage: https://hotelbrunswick.com.au/
+      listingUrls:
+        - https://hotelbrunswick.com.au/whats-on/
+      strategy: html
+    - name: The Middle Pub
+      method: llm
+      domains:
+        - themiddlepub.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Mullumbimby Ex-Services Club
+      method: scraper
+      domains:
+        - mullumexservices.com.au
+      note: 'Verified by probe-sources 2026-09-07: 24 dated event(s) via jsonld.'
+      homepage: https://mullumexservices.com.au/
+      listingUrls:
+        - https://www.mullumexservices.com.au/events/
+        - https://www.mullumexservices.com.au/whats-on/
+      strategy: jsonld
+      venue:
+        name: Mullumbimby Ex-Services Club
+        address: 58 Dalley Street
+        suburb: Mullumbimby
+    - name: The Green Room Byron
+      method: llm
+      domains:
+        - thegreenroombyron.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Treehouse Byron Bay
+      method: llm
+      domains:
+        - treehousebyron.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: North Byron Hotel
+      method: llm
+      domains:
+        - northbyronhotel.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Bangalow Hotel
+      method: llm
+      domains:
+        - bangalowhotel.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Billinudgel Hotel
+      method: llm
+      domains:
+        - billinudgelhotel.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: The Eltham Hotel
+      method: llm
+      domains:
+        - elthampub.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Wandana Brewing Co
+      method: llm
+      domains:
+        - wandanabrewingco.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Ocean Shores Tavern
+      method: llm
+      domains:
+        - oceanshorestavern.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Lennox Hotel
+      method: llm
+      domains:
+        - thelennox.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Bay Services Club
+      method: scraper
+      domains:
+        - byronbayservicesclub.com.au
+      note: 'Verified by probe-sources 2026-09-07: 4 dated event(s) via html.'
+      homepage: https://byronbayservicesclub.com.au/
+      listingUrls:
+        - https://byronbayservicesclub.com.au/whats-on/
+      strategy: html
+    - name: Club Byron
+      method: llm
+      domains:
+        - clubbyron.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Stone & Wood Brewing Co
+      method: llm
+      domains:
+        - stoneandwood.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Woody's Surf Shack
+      method: llm
+      domains:
+        - woodysbyronbay.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Casa Luna
+      method: llm
+      domains:
+        - casalunabyronbay.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Marvell St Cafe & Bar
+      method: llm
+      domains:
+        - marvellstcafe.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Saltwater Social Club
+      method: llm
+      domains:
+        - saltwatersocialclub.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Club Lennox Sports
+      method: llm
+      domains:
+        - clublennox.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Ballina RSL
+      method: scraper
+      domains:
+        - ballinarsl.com.au
+      note: 'Verified by probe-sources 2026-09-07: 4 dated event(s) via jsonld.'
+      homepage: https://ballinarsl.com.au/
+      listingUrls:
+        - https://ballinarsl.com.au/events/
+      strategy: jsonld
+      venue:
+        name: Ballina RSL Auditorium
+        address: 1 Grant Street
+        suburb: Ballina
+    - name: Shaws Bay Hotel
+      method: llm
+      domains:
+        - shawsbayhotel.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Pack Gallery Studio
+      method: llm
+      domains:
+        - packgallerystudio.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Wheel of Life Studio
+      method: llm
+      domains:
+        - wheeloflifestudio.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Thomgallery
+      method: llm
+      domains:
+        - thomgallery.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Muckware Ceramics
+      method: scraper
+      domains:
+        - muckware.com
+      note: 'Verified by probe-sources 2026-09-07: 4 dated event(s) via html.'
+      homepage: https://muckware.com/
+      listingUrls:
+        - https://www.muckware.com/privateworkshops
+      strategy: html
+    - name: Keramika Ceramics
+      method: llm
+      domains:
+        - keramika.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Brooke Clunie
+      method: llm
+      domains:
+        - brookeclunie.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Damien Lucas
+      method: scraper
+      domains:
+        - damienlucassculpture.com
+      note: 'Verified by probe-sources 2026-09-07: 8 dated event(s) via html.'
+      homepage: https://damienlucassculpture.com/
+      listingUrls:
+        - https://www.damienlucassculpture.com/life-drawing-byron-shop
+        - https://www.damienlucassculpture.com/whats-on
+      strategy: html
+    - name: Create Art Studio
+      method: llm
+      domains:
+        - createart.studio
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Art-Alchemy
+      method: llm
+      domains:
+        - art-alchemy.org
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Studio Suvira
+      method: llm
+      domains:
+        - suviramcdonald.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Mullum Clayworkers
+      method: llm
+      domains:
+        - mullumclayworkers.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Nissarana Galleries
+      method: llm
+      domains:
+        - nissaranagalleries.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: The Space Cowboy Gallery
+      method: llm
+      domains:
+        - thespacecowboygallery.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Ochre Ceramics
+      method: llm
+      domains:
+        - ochreceramics.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Clay Workers Gallery
+      method: llm
+      domains:
+        - byronclayworkersgallery.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Gallery Cosmosis
+      method: llm
+      domains:
+        - gallerycosmosis.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Art Kind Gallery
+      method: llm
+      domains:
+        - artkind.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Shedding Community Workshop Inc
+      method: llm
+      domains:
+        - shedding.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Home Makers Club
+      method: llm
+      domains:
+        - homemakersclub.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Craft Social Byron Bay
+      method: llm
+      domains:
+        - craftsocialbyronbay.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Stitch Witch Studio
+      method: llm
+      domains:
+        - stitchwitch.studio
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Paperlove Bookarts
+      method: llm
+      domains:
+        - paperlovebookarts.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Abbey Garland
+      method: llm
+      domains:
+        - abbeygarland.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: The Artisan Forest
+      method: llm
+      domains:
+        - theartisanforest.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Writers Festival
+      method: llm
+      domains:
+        - byronwritersfestival.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: The Book Room Collective
+      method: llm
+      domains:
+        - thebookroomatbyron.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Friends of Libraries Byron Shire
+      method: llm
+      domains:
+        - byronbayfol.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Wildbilly Books
+      method: llm
+      domains:
+        - beachsidebookshops.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Poets Out Loud
+      method: llm
+      domains:
+        - poetsoutloud.org
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Dangerously Poetic
+      method: llm
+      domains:
+        - dangerouslypoetic.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Ocean Shores Country Club
+      method: scraper
+      domains:
+        - oceanshorescc.com.au
+      note: 'Verified by probe-sources 2026-09-07: 71 dated event(s) via jsonld.'
+      homepage: https://oceanshorescc.com.au/
+      listingUrls:
+        - https://oceanshorescc.com.au/whatson/
+        - https://oceanshorescc.com.au/events/
+      strategy: jsonld
+      venue:
+        name: Ocean Shores Country Club &#8211; Bowls Green
+        address: Ocean Shores Country Club - Orana Rd Ocean Shores
+        suburb: Ocean shores
+    - name: Brunswick Heads Bowling Club
+      method: llm
+      domains:
+        - brunswickbowlingclub.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Creative Language Academy
+      method: llm
+      domains:
+        - creativelanguageacademy.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Common People Brewing Co.
+      method: scraper
+      domains:
+        - commonpeoplebrewing.com.au
+      note: 'Verified by probe-sources 2026-09-07: 3 dated event(s) via html.'
+      homepage: https://commonpeoplebrewing.com.au/
+      listingUrls:
+        - https://commonpeoplebrewing.com.au/blogs/news
+      strategy: html
+    - name: The Surf House
+      method: llm
+      domains:
+        - thesurfhouse.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Bay Lindy Exchange
+      method: llm
+      domains:
+        - byronbaylindyexchange.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Federal Film Society
+      method: llm
+      domains:
+        - federalfilmsociety.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Nimbin Bush Theatre
+      method: scraper
+      domains:
+        - nimbinbushtheatre.com
+      note: 'Verified by probe-sources 2026-09-07: 4 dated event(s) via html.'
+      homepage: https://nimbinbushtheatre.com/
+      listingUrls:
+        - https://nimbinbushtheatre.com/events
+      strategy: html
+    - name: Star Court Theatre
+      method: scraper
+      domains:
+        - starcourttheatre.com.au
+      note: 'Verified by probe-sources 2026-09-07: 2 dated event(s) via html.'
+      homepage: https://starcourttheatre.com.au/
+      listingUrls:
+        - http://starcourttheatre.com.au/events
+      strategy: html
+    - name: Lismore Cinemas
+      method: llm
+      domains:
+        - lismorecinemas.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Kyogle Cinemas
+      method: llm
+      domains:
+        - kyoglecinemas.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: The Regent
+      method: llm
+      domains:
+        - the-regent.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Bay International Film Festival
+      method: llm
+      domains:
+        - bbff.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Bangalow Film Festival
+      method: llm
+      domains:
+        - bangalowfilmfestival.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Palace Byron Bay
+      method: scraper
+      domains:
+        - palacecinemas.com.au
+      note: 'Verified by probe-sources 2026-09-07: 3 dated event(s) via html.'
+      homepage: https://palacecinemas.com.au/
+      listingUrls:
+        - https://www.palacecinemas.com.au/events
+      strategy: html
+    - name: Byron Markets
+      method: llm
+      domains:
+        - byronmarkets.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Bangalow Market
+      method: llm
+      domains:
+        - bangalowmarket.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Mullumbimby Community Market
+      method: llm
+      domains:
+        - mullumbimbycommunitymarket.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Brunswick Heads Markets
+      method: llm
+      domains:
+        - brunswickheadsmarkets.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: New Brighton Farmers Market
+      method: llm
+      domains:
+        - newbrightonfarmersmarket.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Mullumbimby Farmers Market
+      method: llm
+      domains:
+        - mullumfarmersmarket.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Farmers Market
+      method: llm
+      domains:
+        - byronfarmersmarket.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Sample Food Festival
+      method: llm
+      domains:
+        - samplefoodevents.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Bangalow Billycart Derby
+      method: llm
+      domains:
+        - bangalowbillycart.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Mullumbimby Agricultural Show
+      method: llm
+      domains:
+        - mullumbimbyshow.org.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Starlight Festival
+      method: llm
+      domains:
+        - starlightfestival.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Wellness Festival
+      method: llm
+      domains:
+        - byronwellnessfestival.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Byron Bay Surf Festival
+      method: llm
+      domains:
+        - byronbaysurffestival.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Mullum Roots Festival
+      method: llm
+      domains:
+        - mullumrootsfestival.com
+      note: Suggested by discover-sources 2026-09-07; not yet verified.
+    - name: Streets Alive Brunswick Heads
+      method: llm
+      domains:
+        - streetsalivebrunswickheads.com.au
+      note: Suggested by discover-sources 2026-09-07; not yet verified.

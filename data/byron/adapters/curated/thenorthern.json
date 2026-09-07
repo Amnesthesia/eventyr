@@ -1,0 +1,98 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "thenorthern",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Piano Bar",
+      "datetime": "Wed 27 Jul",
+      "datetime_iso": "2022-07-27",
+      "datetime_end_iso": "2030-07-27T23:59:00",
+      "location": "Great Northern Hotel",
+      "link": "https://thenorthern.com.au/event/piano-bar/",
+      "cost": "See link",
+      "source": "Great Northern Hotel",
+      "description": "&lt;p&gt;BYRON BAY PIANO BAR @THE NORTHERN EVERY THURSDAY TO SATURDAY&lt;/p&gt;\\n",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "piano",
+        "live music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Backpacker Mondays &#8211; $9 Schooners &amp; Basic Spirits",
+      "datetime": "Mon 7 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-07T20:00:00",
+      "datetime_end_iso": "2026-09-07T20:00:00",
+      "location": "Great Northern Hotel",
+      "link": "https://thenorthern.com.au/event/backpacker-mondays-9-schooners-basic-spirits/2026-09-07/",
+      "cost": "See link",
+      "source": "Great Northern Hotel",
+      "description": "Backpacker Mondays at Great Northern Hotel is a Social / Meetup event.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "social",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "SIN &#8211; Service Industry Night &#8212; $9 schooners and basic spirits all night",
+      "datetime": "Tue 8 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-08T20:00:00",
+      "datetime_end_iso": "2026-09-08T20:00:00",
+      "location": "Great Northern Hotel",
+      "link": "https://thenorthern.com.au/event/sin-service-industry-night/2026-09-08/",
+      "cost": "See link",
+      "source": "Great Northern Hotel",
+      "description": "SIN - Service Industry Night at Great Northern Hotel is a Social / Meetup event.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "social",
+        "networking",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Joker Poker",
+      "datetime": "Fri 11 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-11T16:00:00",
+      "datetime_end_iso": "2026-09-11T16:00:00",
+      "location": "Great Northern Hotel",
+      "link": "https://thenorthern.com.au/event/joker-poker/2026-09-11/",
+      "cost": "See link",
+      "source": "Great Northern Hotel",
+      "description": "Joker Poker at Great Northern Hotel is a Social / Meetup event.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "games",
+        "social",
+        "pub"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

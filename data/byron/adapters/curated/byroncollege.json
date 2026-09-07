@@ -1,0 +1,79 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "byroncollege",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "*NEW* Build Your Own Website, Hands-On WordPress Masterclass",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-25T09:00:00",
+      "location": "Mullum",
+      "link": "https://byroncollege.org.au/course-details/?course_id=93360&course_type=w",
+      "cost": "$180",
+      "source": "Byron Community College",
+      "description": "Hands-on masterclass designed for entrepreneurs, freelancers, creatives, and small business owners who want to create a professional website themselves without needing advanced coding skills.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "wordpress",
+        "webdesign",
+        "business",
+        "tech"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Digital Marketing Masterclass",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "2026-09-23T09:00:00",
+      "location": "Mullum",
+      "link": "https://byroncollege.org.au/course-details/?course_id=92265&course_type=w",
+      "cost": "$180",
+      "source": "Byron Community College",
+      "description": "Join this hands-on digital marketing masterclass to gain practical strategies for growing a business from the ground up.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "marketing",
+        "business",
+        "digital",
+        "skills"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Responsible Conduct of Gaming",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "Tweed",
+      "link": "https://byroncollege.org.au/course-details/?course_id=63533&course_type=p",
+      "cost": "$160",
+      "source": "Byron Community College",
+      "description": "This L&GNSW Responsible Conduct of Gambling (RCG) course provides what is expected of you in the workplace and how you must promote responsible gambling behaviours to minimise gambling harm in gaming venues. This course is mandatory for all staff working with gaming machines in NSW.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "training",
+        "certification",
+        "professional",
+        "compliance"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

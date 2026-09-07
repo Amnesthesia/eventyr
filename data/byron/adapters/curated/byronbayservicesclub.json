@@ -1,0 +1,98 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "byronbayservicesclub",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "FREE KIDS ROOM",
+      "datetime": "Mon 7 Sep",
+      "datetime_iso": "2026-09-07",
+      "datetime_end_iso": "2026-09-13T17:30:00",
+      "location": "Byron Bay Services Club",
+      "link": "https://byronbayservicesclub.com.au/",
+      "cost": "See link",
+      "source": "Byron Bay Services Club",
+      "description": "Fully Supervised",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "kids",
+        "family",
+        "supervised"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "HAPPY HOUR",
+      "datetime": "Mon 7 Sep",
+      "datetime_iso": "2026-09-07",
+      "datetime_end_iso": "",
+      "location": "Byron Bay Services Club",
+      "link": "https://byronbayservicesclub.com.au/",
+      "cost": "$5.50 Schooners",
+      "source": "Byron Bay Services Club",
+      "description": "$5.50 Schooners",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "drinks",
+        "social",
+        "bar"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "STEAK Night",
+      "datetime": "Mon 7 Sep",
+      "datetime_iso": "2026-09-07",
+      "datetime_end_iso": "",
+      "location": "Byron Bay Services Club",
+      "link": "https://byronbayservicesclub.com.au/",
+      "cost": "ONLY $29",
+      "source": "Byron Bay Services Club",
+      "description": "Monday Night is.... Members Steak Night!! ONLY $29 for a Juicy Rump w/ Chips & Salad. Bistro open from 5.30pm",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "steak"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Parmi Night",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "Byron Bay Services Club",
+      "link": "https://byronbayservicesclub.com.au/",
+      "cost": "ONLY $23",
+      "source": "Byron Bay Services Club",
+      "description": "Tuesday Night is.... Members Parmi Night!! ONLY $23 for the BEST Parmi in Byron Bay!! Bistro open from 5.30pm",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "parmi"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

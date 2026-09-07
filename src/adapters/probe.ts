@@ -1412,7 +1412,9 @@ function createListingUrlFinder(apiKey: string): ListingUrlFinder {
 async function main(): Promise<void> {
 	installUsageReporting();
 	if (REPORT_ONLY) {
-		const cached = loadResults();
+		// Scoped: results.jsonl holds every city ever probed, and reporting it whole
+		// made a byron run look like it had probed Brisbane too.
+		const cached = loadResults().filter((r) => CITIES.includes(r.city));
 		report(cached);
 		if (APPLY) {
 			for (const city of CITIES) applyPromotions(city, cached, true);
@@ -1641,7 +1643,7 @@ async function main(): Promise<void> {
 	else {
 		console.log("\nDry run — rerun with --apply to promote verified sources.");
 	}
-	report(loadResults());
+	report(loadResults().filter((r) => CITIES.includes(r.city)));
 }
 
 // Guarded so the pure helpers above can be imported by tests without the

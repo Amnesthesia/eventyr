@@ -19,7 +19,7 @@ export default function CategoryFilter() {
 				onClick={() => {
 					setActiveCat("All");
 				}}
-				href={`/${cityKey}`}
+				href={`/${KEY_TO_SLUG[cityKey] ?? cityKey}/`}
 			>
 				All Categories
 			</a>
@@ -29,7 +29,7 @@ export default function CategoryFilter() {
 					className={`filter-btn${activeCat === cat ? " active" : ""}`}
 					data-cat={catToSlug(cat)}
 					onClick={() => setActiveCat(cat)}
-					href={`/${KEY_TO_SLUG[cityKey]}/${catToSlug(cat)}`}
+					href={`/${KEY_TO_SLUG[cityKey] ?? cityKey}/${catToSlug(cat)}/`}
 				>
 					{cat}
 				</a>

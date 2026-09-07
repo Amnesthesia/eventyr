@@ -241,6 +241,21 @@ const SINGLE_AMOUNT =
 	/^(?:([A-Za-z]{3})\s*)?[$\u20ac\u00a3\u00a5]?\s*(\d+(?:[.,]\d{1,2})?)$/;
 
 /**
+ * The price as a number for schema.org offers: 0 for free, the amount for a
+ * single-amount cost, null for ranges and everything else — a range needs an
+ * AggregateOffer, and guessing a number from it would be wrong.
+ */
+export function costAmount(raw: unknown): number | null {
+	if (typeof raw !== "string") return null;
+	const value = raw.trim();
+	if (FREE_COST.test(value)) return 0;
+	const amount = SINGLE_AMOUNT.exec(value);
+	if (!amount) return null;
+	const parsed = Number(amount[2].replace(",", "."));
+	return Number.isFinite(parsed) ? parsed : null;
+}
+
+/**
  * What to show in an event's cost pill, or null to show nothing.
  *
  * Presentation only: the raw value stays in the JSON and in the feeds, where

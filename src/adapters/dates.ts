@@ -22,7 +22,12 @@ import * as chrono from "chrono-node";
 
 export const BRISBANE_UTC_OFFSET_HOURS = 10;
 const OFFSET_MS = BRISBANE_UTC_OFFSET_HOURS * 3_600_000;
-const TIMEZONE = "Australia/Brisbane";
+// chrono takes an offset in minutes or a timezone *abbreviation*; an IANA name
+// is not recognised, so "Australia/Brisbane" silently fell back to the host
+// timezone and every scraped time on the UTC CI runner came out 10 hours late
+// (7 date tests fail under TZ=UTC with the string). Brisbane has no DST, so a
+// fixed offset is exact.
+const TIMEZONE = BRISBANE_UTC_OFFSET_HOURS * 60;
 
 export interface ParsedDateRange {
 	startISO: string | null;

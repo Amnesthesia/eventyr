@@ -314,11 +314,13 @@ export function EventsProvider({
 	}, [cityData]);
 
 	/**
-	 * The earliest. The digest week's Monday, not the earliest date in the data:
-	 * that is a 2023 exhibition opening, and no one is picking 2023 — those
-	 * events surface anyway, because the date filter is an overlap test.
+	 * The earliest. The day the digest was generated (a Sunday, the day before
+	 * its week starts — the same rule Base.astro uses for coverage), not the
+	 * earliest date in the data: that is a 2023 exhibition opening, and no one
+	 * is picking 2023 — those events surface anyway, because the date filter is
+	 * an overlap test.
 	 */
-	const dateMin = cityData?.week_start ?? "";
+	const dateMin = cityData?.generated_at || cityData?.week_start || "";
 
 	const costLocale: CostLocale = {
 		locale: cityData?.locale ?? DEFAULT_COST_LOCALE.locale,

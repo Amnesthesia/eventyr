@@ -172,6 +172,12 @@ test("the window runs from today to the end of next week", () => {
 		from: "2026-08-31",
 		to: "2026-09-13",
 	});
+	// Built on Sunday for the week starting Monday: today is before the week,
+	// and Sunday's carried-forward events belong under "Today".
+	assert.deepEqual(dateWindowFor("2026-09-14", "2026-09-20", "2026-09-13"), {
+		from: "2026-09-13",
+		to: "2026-09-27",
+	});
 });
 
 test("dateLabel names the year only when it differs from today's", () => {

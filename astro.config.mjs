@@ -5,6 +5,10 @@ import { fileURLToPath } from "node:url";
 export default defineConfig({
 	integrations: [react()],
 	output: "static",
+	// GitHub Pages serves <path>/index.html and 301s the slash-less URL, and a
+	// redirect is a page Google will not index. Enforced here so a slash-less
+	// internal link 404s in dev instead of silently working via the redirect.
+	trailingSlash: "always",
 	outDir: "./dist",
 	site: "https://www.dothings.lol",
 	vite: {

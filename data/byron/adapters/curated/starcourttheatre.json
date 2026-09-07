@@ -1,0 +1,56 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "starcourttheatre",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Star Court Theatre Games Show",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "",
+      "location": "Star Court Theatre",
+      "link": "http://starcourttheatre.com.au/events/sctgs26",
+      "cost": "FREE",
+      "source": "Star Court Theatre",
+      "description": "Star Court Theatre's very own free monthly improv event, 2 pre-selected teams, 3 judges, 1 timekeeper, 1 fabulous host & a faerie! \n\nIf you're in the audience you're safe, the teams are already chosen! Sit back and enjoy the show!",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "improv",
+        "comedy",
+        "performance",
+        "theatre"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Colours of Time",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Star Court Theatre",
+      "link": "http://starcourttheatre.com.au/events/timecolours",
+      "cost": "$18/$15",
+      "source": "Star Court Theatre",
+      "description": "Brought together by the unexpected inheritance of an abandoned house in rural Normandy, four cousins discover they share a mysterious family history. In 1895, their ancestor Adèle, then aged 21, leaves her hometown to search for her mother in Paris. She discovers a city on the cusp of modernity, bustling with new-found avant-garde creativity, with the rise of photography and the birth of Impressionist painting. As her descendants retrace her steps, they unravel Adèle’s surprising past. The two timelines of 1895 and 2024 intertwine and collide, confronting the cousins’ contemporary attitudes with life in late 19th century Paris, leaving everyone’s future forever changed.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "drama",
+        "history",
+        "storytelling"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

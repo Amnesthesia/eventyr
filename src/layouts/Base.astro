@@ -5,6 +5,7 @@ import type { CityData } from "@react/types";
 import { KEY_TO_SLUG } from "@react/utils/citySlug";
 import { catToSlug, catShortName } from "@react/utils/categorySlug";
 import {
+	costAmount,
 	costLabel,
 	DEFAULT_COST_LOCALE,
 	eventPath,
@@ -161,6 +162,7 @@ const schema = {
 						"@type": "Offer",
 						description: costLabel(event.cost, costLocale),
 						priceCurrency: costLocale.currency,
+						price: costAmount(event.cost) ?? undefined,
 						availability: "https://schema.org/InStock",
 						url: `${BASE_URL}${eventPath(cityData.city_key, event)}`,
 					}
@@ -309,7 +311,7 @@ const websiteSchema = {
     <nav class="category-nav" aria-label="Browse by category">
       {availableCategories.map(({ catSlug, label }) => (
         <a
-          href={`/${slug}/${catSlug}`}
+          href={`/${slug}/${catSlug}/`}
           class={categorySlug === catSlug ? "filter-btn active" : "filter-btn"}
         >
           {label}
@@ -318,9 +320,9 @@ const websiteSchema = {
     </nav>
     <footer class="site-footer">
       <nav>
-        <a href="/brisbane">Things to do in Brisbane</a>
-        <a href="/gold-coast">Things to do on the Gold Coast</a>
-        <a href="/sunshine-coast">Things to do on the Sunshine Coast</a>
+        <a href="/brisbane/">Things to do in Brisbane</a>
+        <a href="/gold-coast/">Things to do on the Gold Coast</a>
+        <a href="/sunshine-coast/">Things to do on the Sunshine Coast</a>
       </nav>
       <small>AI-curated events guide for South East Queensland &middot; <a href="/llms.txt">llms.txt</a></small>
     </footer>

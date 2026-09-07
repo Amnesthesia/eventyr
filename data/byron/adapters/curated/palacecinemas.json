@@ -1,0 +1,76 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "palacecinemas",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Movie Mixer Preview: Practical Magic 2",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Palace Byron Bay",
+      "link": "https://www.palacecinemas.com.au/curatif-midnight-margaritas-preview-practical-magic-2",
+      "cost": "See link",
+      "source": "Palace Byron Bay",
+      "description": "Movie Mixer Preview: Practical Magic 2 is a film event held at Palace Byron Bay categorized as Concert / Music.",
+      "image": "https://www.palacecinemas.com.au/20260805-midnightmargaritaspreview-practicalmagic2-KeyArtBanner-1680x560px.jpg",
+      "category": "Concert / Music",
+      "tags": [
+        "film",
+        "social",
+        "cinema"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "ST. ALi Italian Film Festival Prosecco Preview: Life is Life",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Palace Byron Bay",
+      "link": "https://www.palacecinemas.com.au/st-ali-italian-film-festival-prosecco-preview-life-is-life",
+      "cost": "See link",
+      "source": "Palace Byron Bay",
+      "description": "ST. ALi Italian Film Festival Prosecco Preview: Life is Life is a film event held at Palace Byron Bay categorized as Arts / Exhibition.",
+      "image": "https://www.palacecinemas.com.au/20260806-proseccopreview-lifeislife-iff-KeyArtBanner-1680x560px.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "italian",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "ST. ALi Italian Film Festival Centrepiece Premiere: Sweetheart",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Palace Byron Bay",
+      "link": "https://www.palacecinemas.com.au/st-ali-italian-film-festival-centrepiece-premiere-sweetheart",
+      "cost": "See link",
+      "source": "Palace Byron Bay",
+      "description": "ST. ALi Italian Film Festival Centrepiece Premiere: Sweetheart is a film event held at Palace Byron Bay categorized as Arts / Exhibition.",
+      "image": "https://www.palacecinemas.com.au/20260810-centrepiecepremiere-sweetheart-iff-KeyArtBanner-1680x560px.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "italian",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

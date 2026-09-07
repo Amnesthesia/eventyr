@@ -6,6 +6,10 @@ feeds at dothings.lol.
 
 ## Pipeline (mirrors `.github/workflows/digest.yml`, runs weekly via `weekly.yml`)
 
+Runs Sunday 06:00 AEST for the week starting Monday: `getWeekRange()` (`src/common.ts`) puts
+Sunday in the *coming* week, and `digest.yml` pins `TZ=Australia/Brisbane` so the UTC runner
+agrees on which day it is. Sunday's own events survive the run via curate's carry-forward (step 3).
+
 1. **`src/add_city.ts`** (one-off per city, `pnpm add-city`) — writes an empty
    `sources/{city}.yml` skeleton and registers the city in `digest.yml`'s dispatch options.
    It does NOT discover sources: that used to fan out to Anthropic, Perplexity and Google and
@@ -31,7 +35,9 @@ feeds at dothings.lol.
 3. **`src/curate.ts`** (`pnpm curate`) — merges every provider/tier curated file for the current
    week (including the per-source scrape files), applies the publishing window, geocodes
    aggregator-tier locations to throw out other cities' events (`src/locality.ts`), dedupes via
-   `src/dedupe.ts`, writes `data/{city}.json`.
+   `src/dedupe.ts`, writes `data/{city}.json`. Also carries forward every still-upcoming dated
+   event from the previous `data/{city}.json` (the per-source inputs were already overwritten by
+   collect), so a Sunday run keeps Sunday's events alongside next week's.
 4. **`src/rank.ts`** (`pnpm rank`) — Gemini scores each event 1–10 against `INTERESTS`
    (`src/common.ts`), writes scores back into `data/{city}.json`. `TOP_PICK_THRESHOLD` (7) decides
    what surfaces as a top pick.
@@ -116,6 +122,7 @@ needed a correction.
 
 ```bash
 export CITY=brisbane   # or goldcoast, sunnycoast
+export TZ=Australia/Brisbane   # week boundaries + "today" are local time; CI pins this too
 # at least one search provider key:
 export ANTHROPIC_API_KEY=...
 export PERPLEXITY_API_KEY=...

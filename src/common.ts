@@ -226,10 +226,21 @@ export function scraperSources(
 	return out;
 }
 
-export function getWeekRange(): { monday: Date; sunday: Date } {
-	const today = new Date();
+/**
+ * The Monday–Sunday week the digest is for, in host local time (the workflow
+ * pins TZ=Australia/Brisbane).
+ *
+ * Sunday belongs to the *coming* week on purpose: the digest runs Sunday
+ * morning for the week starting tomorrow, so the cron schedule depends on this
+ * branch. Every other day maps to the week already under way.
+ */
+export function getWeekRange(today = new Date()): {
+	monday: Date;
+	sunday: Date;
+} {
+	today = new Date(today);
 	today.setHours(0, 0, 0, 0);
-	// JS getDay(): 0=Sun, 1=Mon...6=Sat. We want the Monday of the current week.
+	// JS getDay(): 0=Sun, 1=Mon...6=Sat.
 	const day = today.getDay();
 	const daysToMonday = day === 0 ? 1 : 1 - day;
 	const monday = new Date(today);

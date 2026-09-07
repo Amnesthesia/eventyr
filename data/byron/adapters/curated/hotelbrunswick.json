@@ -1,0 +1,120 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "hotelbrunswick",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Joker Poker",
+      "datetime": "Mon 7 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-07T16:00:00",
+      "datetime_end_iso": "2026-09-07T19:00:00",
+      "location": "Hotel Brunswick",
+      "link": "https://hotelbrunswick.com.au/event/joker-poker-4-2/2026-09-09/",
+      "cost": "See link",
+      "source": "Hotel Brunswick",
+      "description": "Wednesdays 4-7PM Grab a seat and play. Win big!",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "poker",
+        "cards",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Raffle Night",
+      "datetime": "Mon 7 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-07T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Hotel Brunswick",
+      "link": "https://hotelbrunswick.com.au/event/raffle-night-thursdays-2-2/2026-09-10/",
+      "cost": "See link",
+      "source": "Hotel Brunswick",
+      "description": "Thursdays | Tix from 6PM Win Fruit, Veggie & Meat Trays Drawn 7PM",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "raffle",
+        "community",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "LIVE BABY LIVE | INXS TRIBUTE SHOW",
+      "datetime": "Fri 11 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-11T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Hotel Brunswick",
+      "link": "https://hotelbrunswick.com.au/event/live-baby-live-the-inxs-tribute-show/",
+      "cost": "See link",
+      "source": "Hotel Brunswick",
+      "description": "Fri 11 September Doors Open 6PM Tix On Sale",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "tribute",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "MELBOURNE SKA ORCHESTRA",
+      "datetime": "Fri 18 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-18T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Hotel Brunswick",
+      "link": "https://hotelbrunswick.com.au/event/melbourne-ska-orchestra/",
+      "cost": "See link",
+      "source": "Hotel Brunswick",
+      "description": "Fri 18 September Doors Open 6PM Tickets On Sale",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "ska",
+        "music",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "TROPIKALIA – BRAZILIAN PARTY",
+      "datetime": "Sat 19 Sep, 4:30 PM",
+      "datetime_iso": "2026-09-19T16:30:00",
+      "datetime_end_iso": "",
+      "location": "Hotel Brunswick",
+      "link": "https://hotelbrunswick.com.au/event/tropikalia-brazilian-party-2/",
+      "cost": "Free Entry",
+      "source": "Hotel Brunswick",
+      "description": "Sat 19 September From 4.30PM Free Entry",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "party",
+        "brazilian",
+        "dance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

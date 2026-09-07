@@ -78,7 +78,7 @@ export default function EventCard({
 			{...longPress}
 		>
 			<div className="card-top">
-				<a className="card-cat" href={`/${citySlug}/${catSlug}`}>
+				<a className="card-cat" href={`/${citySlug}/${catSlug}/`}>
 					<CategoryIcon name={event.category} size={11} strokeWidth={2.2} />
 					{event.category}
 				</a>

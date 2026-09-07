@@ -1,0 +1,146 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "byron-nsw",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "New Brighton Farmers Market",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "Tom Kendall Oval, Park Street, New Brighton 2483",
+      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/New-Brighton-Farmers-Market",
+      "cost": "See link",
+      "source": "Byron Shire Council",
+      "description": "The New Brighton Farmers Market is held every Tuesday morning at Tom Kendall Oval, Park Street, New Brighton.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "market",
+        "local",
+        "food",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Free Film Screening and Panel: The Plastic Country",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Brunswick Picture House, 30 Fingal Street, Brunswick Heads, NSW, 2483",
+      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/Free-Film-Screening-and-Panel-The-Plastic-Country",
+      "cost": "See link",
+      "source": "Byron Shire Council",
+      "description": "Join us for a special screening of The Plastic Country. A powerful new Australian documentary that uncovers the true scale of our nation’s plastic crisis.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "film",
+        "environment",
+        "documentary",
+        "panel"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Business of Doing Business",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Southern Cross University, Lismore Campus, Military Rd, East Lismore, 2480",
+      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/The-Business-of-Doing-Business",
+      "cost": "See link",
+      "source": "Byron Shire Council",
+      "description": "A practical four-part workshop series built by Northern Rivers business owners and operators, for Northern Rivers business owners and operators, around the real decisions businesses are dealing with right now.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "business",
+        "workshop",
+        "professional"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Mullumbimby Farmers Market",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Mullumbimby Showground, Main Arm Road, Mullumbimby 2482",
+      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/Mullumbimby-Farmers-Market",
+      "cost": "See link",
+      "source": "Byron Shire Council",
+      "description": "The Mullumbimby Farmers Market is held every Friday at the Mullumbimby Showground.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "market",
+        "local",
+        "food",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Upcycled Sewing and Craft Sessions 2026",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "The Re-Market, Byron Resource Recovery Centre, 115 The Manse Road, Myocum, 2481",
+      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/Upcycled-Sewing-and-Craft-Sessions-2026",
+      "cost": "See link",
+      "source": "Byron Shire Council",
+      "description": "Come along to an upcycled sewing and craft session. Sessions will be running every Friday at The Re-Market (Tip Shop) from now until the end of the year.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "sewing",
+        "craft",
+        "upcycling",
+        "sustainability"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Federal Community Market",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Federal Halls, 466 Federal Drive, Federal 2480",
+      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/Federal-Community-Market",
+      "cost": "See link",
+      "source": "Byron Shire Council",
+      "description": "Federal Community market is held on the third Sunday of the month at the Federal Halls.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "market",
+        "local",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

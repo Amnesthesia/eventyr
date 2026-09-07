@@ -1,0 +1,76 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "commonpeoplebrewing",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "This Thursday and Friday, it's a Smoked Meats Bonanza!",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Common People Brewing Co.",
+      "link": "https://commonpeoplebrewing.com.au/blogs/news/this-thursday-is-smoked-meats-day",
+      "cost": "See link",
+      "source": "Common People Brewing Co.",
+      "description": "This Thursday 9th and Friday 10th July, it's a Smoked Meats bonanza! Our pizza chefs are having a few days off, so we're doing a smoked meats plate. Pulled pork,...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "casual"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Solace Sunday Session",
+      "datetime": "Sun 13 Sep, 3:00 PM",
+      "datetime_iso": "2026-09-13T15:00:00",
+      "datetime_end_iso": "",
+      "location": "Common People Brewing Co.",
+      "link": "https://commonpeoplebrewing.com.au/blogs/news/solace-sunday-session",
+      "cost": "See link",
+      "source": "Common People Brewing Co.",
+      "description": "Dance your way into the long weekend with our Solace Sunday Session happening this Sunday from 3pm until late.Deep and minimal house from SPLF, ITOMAN, GSKIN and Mitsukaze. Plus special...",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "house",
+        "dance",
+        "dj"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Easter Sunday Funday!",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Common People Brewing Co.",
+      "link": "https://commonpeoplebrewing.com.au/blogs/news/easter-sunday-funday",
+      "cost": "See link",
+      "source": "Common People Brewing Co.",
+      "description": "Join us on Easter Sunday for beer, pizza, chocolate beer and chocolate pizza!Just in time for Easter, our brand new Bad Bunny Choc Baltic Porter will be on tap and...",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "holiday",
+        "beer",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

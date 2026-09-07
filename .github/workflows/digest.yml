@@ -48,6 +48,7 @@ on:
           - brisbane
           - goldcoast
           - sunnycoast
+          - byron
       recipient:
         description: "WhatsApp recipient number (e.g. 61412345678). Leave blank to use the default."
         required: false
@@ -70,6 +71,12 @@ jobs:
     timeout-minutes: 20
     permissions:
       contents: write
+    env:
+      # The pipeline's "today" and week boundaries come from host local time
+      # (getWeekRange / toISODate in src/common.ts). The runner is UTC; without
+      # this a Sunday 06:00 AEST run is still Saturday there and targets the
+      # week that is ending instead of the one starting tomorrow.
+      TZ: Australia/Brisbane
 
     steps:
       - name: Checkout repo

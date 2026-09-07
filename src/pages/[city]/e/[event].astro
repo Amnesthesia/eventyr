@@ -17,6 +17,7 @@ import type { CityData, CityIndex, Event } from "@react/types";
 import { SLUG_TO_KEY } from "@react/utils/citySlug";
 import { catShortName, catToSlug } from "@react/utils/categorySlug";
 import {
+	costAmount,
 	costLabel,
 	DEFAULT_COST_LOCALE,
 	eventSlug,
@@ -118,6 +119,7 @@ const schema = {
 				"@type": "Offer",
 				description: cost,
 				priceCurrency: cityData.currency ?? DEFAULT_COST_LOCALE.currency,
+				price: costAmount(event.cost) ?? undefined,
 				availability: "https://schema.org/InStock",
 				url: event.link || url,
 			}
@@ -141,9 +143,9 @@ const vibes = vibesOf(event as Event);
 >
   <main class="event-page">
     <nav class="event-crumbs" aria-label="Breadcrumb">
-      <a href={`/${slug}`}>{cityData.city.split(",")[0]}</a>
+      <a href={`/${slug}/`}>{cityData.city.split(",")[0]}</a>
       <span aria-hidden="true">/</span>
-      <a href={`/${slug}/${catSlug}`}>{catShortName(event.category)}</a>
+      <a href={`/${slug}/${catSlug}/`}>{catShortName(event.category)}</a>
     </nav>
 
     <article class="event-detail" data-cat={catSlug}>
@@ -238,7 +240,7 @@ const vibes = vibesOf(event as Event);
       />
 
       <p class="event-back">
-        <a href={`/${slug}`}>← Everything on in {cityData.city.split(",")[0]} this week</a>
+        <a href={`/${slug}/`}>← Everything on in {cityData.city.split(",")[0]} this week</a>
       </p>
     </article>
   </main>

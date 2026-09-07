@@ -38,7 +38,7 @@ export default function Header() {
 								return (
 									<a
 										key={c.key}
-										href={`/${slug}`}
+										href={`/${slug}/`}
 										className={`filter-btn${c.key === cityKey ? " active" : ""}`}
 									>
 										{c.name.split(",")[0]}
@@ -51,7 +51,7 @@ export default function Header() {
 							value={cityKey}
 							onChange={(e) => {
 								const slug = KEY_TO_SLUG[e.target.value] ?? e.target.value;
-								window.location.href = `/${slug}`;
+								window.location.href = `/${slug}/`;
 							}}
 						>
 							{cities.map((c) => (

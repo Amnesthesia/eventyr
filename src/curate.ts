@@ -47,15 +47,29 @@ const WINDOW_TO = toISODate(
 	new Date(getWeekRange().sunday.getTime() + 7 * 86_400_000),
 );
 
-function alreadyCuratedThisWeek(monday: Date): boolean {
-	const jsonPath = join(DATA_ROOT, `${CITY}.json`);
-	if (!existsSync(jsonPath)) return false;
+const OUT_PATH = join(DATA_ROOT, `${CITY}.json`);
+
+/** The digest already published: the cache-check key and the carry-forward
+ * input. "No file" and "unreadable file" are told apart so a corrupt digest
+ * does not look like a first run. */
+const PREVIOUS: Record<string, unknown> | null = (() => {
+	if (!existsSync(OUT_PATH)) return null;
 	try {
-		const payload = JSON.parse(readFileSync(jsonPath, "utf-8"));
-		return payload.week_start === toISODate(monday);
+		return JSON.parse(readFileSync(OUT_PATH, "utf-8"));
 	} catch {
-		return false;
+		console.log(
+			`  ⚠ previous digest unreadable, nothing carried forward: ${OUT_PATH}`,
+		);
+		return null;
 	}
+})();
+
+function alreadyCuratedThisWeek(monday: Date): boolean {
+	return PREVIOUS?.week_start === toISODate(monday);
+}
+
+function previousEvents(): Record<string, unknown>[] {
+	return Array.isArray(PREVIOUS?.events) ? PREVIOUS.events : [];
 }
 
 function findJsonFiles(baseDir: string, subPath: string): string[] {
@@ -234,6 +248,43 @@ async function mergeAndDeduplicate(
 			`${dropped.later} beyond the window; kept ${dropped.undated} undated`,
 	);
 
+	// Carry the previous digest forward. The run is on Sunday for the week
+	// starting Monday, and the per-source input files above were already
+	// overwritten with next week's results by collect — so without this,
+	// today's remaining events (and anything found last week that is still
+	// upcoming) would vanish from the site the morning they are being planned
+	// around. Appended after the fresh events so dedupe's tie-break keeps the
+	// fresh record. Undated events are not carried: they can never expire via
+	// isPast, so they would accumulate forever. Everything else does expire on
+	// the following run, so this cannot grow unbounded.
+	const carried = { kept: 0, total: 0, past: 0, later: 0, undated: 0 };
+	for (const rawEvent of previousEvents()) {
+		carried.total++;
+		const event = cleanEvent(rawEvent);
+		const start = (event.datetime_iso as string) || null;
+		const end = (event.datetime_end_iso as string) || null;
+		if (!start) {
+			carried.undated++;
+			continue;
+		}
+		if (isPast(start, end, WINDOW_FROM)) {
+			carried.past++;
+			continue;
+		}
+		if (!withinWindow(start, end, WINDOW_FROM, WINDOW_TO)) {
+			carried.later++;
+			continue;
+		}
+		allEvents.push(event);
+		carried.kept++;
+	}
+	console.log(
+		PREVIOUS
+			? `→ carried ${carried.kept} of ${carried.total} previously published event(s) forward ` +
+					`(dropped ${carried.past} past, ${carried.later} beyond the window, ${carried.undated} undated)`
+			: "→ no previous digest to carry forward",
+	);
+
 	// After the merge so both collection paths are governed identically, and
 	// after the window so a finished event is never paid for.
 	const local = await dropOtherCities(allEvents);
@@ -281,12 +332,11 @@ function writeJson(
 		generated_at: toISODate(new Date()),
 		events,
 	};
-	const outPath = join(DATA_ROOT, `${CITY}.json`);
-	writeFileSync(outPath, JSON.stringify(payload, null, 2), "utf-8");
+	writeFileSync(OUT_PATH, JSON.stringify(payload, null, 2), "utf-8");
 	console.log(
-		`→ Written ${relative(PROJECT_ROOT, outPath)} (${events.length} events)`,
+		`→ Written ${relative(PROJECT_ROOT, OUT_PATH)} (${events.length} events)`,
 	);
-	return outPath;
+	return OUT_PATH;
 }
 
 async function main(): Promise<void> {

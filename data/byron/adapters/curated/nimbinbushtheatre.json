@@ -1,0 +1,98 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "nimbinbushtheatre",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Double Life Of Veronique",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Nimbin Bush Theatre, 2 Blue Knob Road Nimbin NSW 2480",
+      "link": "https://nimbinbushtheatre.com/events/thjedouble-life-of-veronique/",
+      "cost": "See link",
+      "source": "Nimbin Bush Theatre",
+      "description": "The Double Life Of Veronique is an arts event held at Nimbin Bush Theatre.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "cinema",
+        "drama"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Cacao Ceremony",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Nimbin Bush Theatre, 2 Blue Knob Road Nimbin NSW 2480",
+      "link": "https://nimbinbushtheatre.com/events/cacao-ceremony-2/",
+      "cost": "See link",
+      "source": "Nimbin Bush Theatre",
+      "description": "Cacao Ceremony is a community event held at Nimbin Bush Theatre.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "wellness",
+        "ceremony",
+        "spiritual"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Stop Making Sense",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "",
+      "location": "Nimbin Bush Theatre, 2 Blue Knob Road Nimbin NSW 2480",
+      "link": "https://nimbinbushtheatre.com/events/stop-making-sense/",
+      "cost": "See link",
+      "source": "Nimbin Bush Theatre",
+      "description": "Stop Making Sense is a concert or music event held at Nimbin Bush Theatre.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "film",
+        "concert"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Nourishing Yin Yoga and Sound Healing",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Nimbin Bush Theatre, 2 Blue Knob Road Nimbin NSW 2480",
+      "link": "https://nimbinbushtheatre.com/events/nourishing-yin-yoga-and-sound-healing/",
+      "cost": "See link",
+      "source": "Nimbin Bush Theatre",
+      "description": "Nourishing Yin Yoga and Sound Healing is a workshop or class held at Nimbin Bush Theatre.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "yoga",
+        "wellness",
+        "healing"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

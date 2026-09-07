@@ -80,6 +80,12 @@ applied to **both** paths: the scrape pass filters its own output, and `curate.t
 filter to everything it merges. Events with no parsable date are kept, since they cannot be shown
 to be past.
 
+The digest runs **Sunday morning for the week starting Monday** (`getWeekRange` puts Sunday in the
+coming week). So that Sunday's own events don't vanish the morning they are being planned around,
+`curate.ts` also carries forward every still-upcoming event from the previous `data/{city}.json`
+and dedupes it against the fresh results. Undated events are not carried (they could never expire);
+everything else drops out via `isPast` on the following run.
+
 ### Is it even in this city?
 
 Some sources are national despite being listed under one city: `musick.com.au` is a country-wide
@@ -293,6 +299,7 @@ Measured effects of the current settings, on the same six Brisbane hosts:
 ```bash
 pnpm install
 export CITY=brisbane
+export TZ=Australia/Brisbane     # week boundaries and "today" come from local time; CI pins this too
 export GOOGLE_API_KEY=...        # required: curation, ranking, annotation, dedupe, probing
 export GOOGLE_MAPS_API_KEY=...   # optional: Geocoding API, for the locality check above
 export ANTHROPIC_API_KEY=...     # optional search providers
@@ -313,7 +320,8 @@ pnpm dev     # astro dev server
 - `.github/workflows/digest.yml` — reusable per-city workflow: typecheck/test → scrape → search →
   curate → rank → geocode → markdown → ical → rss → pages → build → commit. The scrape step is
   `continue-on-error` so an adapter failure degrades to search-only.
-- `.github/workflows/weekly.yml` — runs the three cities in sequence, Mondays 06:00 AEST.
+- `.github/workflows/weekly.yml` — runs the three cities in sequence, Sundays 06:00 AEST, for the
+  week starting the next day.
 - `.github/workflows/deploy.yml` — GitHub Pages.
 
 ## Data layout

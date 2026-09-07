@@ -1,0 +1,78 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "byrontheatre-2",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Dramaworks Evening 2026",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "Byron Theatre",
+      "link": "https://byrontheatre.com.au/theatre-events/dramaworks-evening-2026",
+      "cost": "See link",
+      "source": "Byron Theatre",
+      "description": "Excellent HSC Drama Performances from across the North Coast and Northern Rivers Schools.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "drama",
+        "performance",
+        "theatre",
+        "students"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Bombshells",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Byron Theatre",
+      "link": "https://byrontheatre.com.au/theatre-events/bombshells",
+      "cost": "See link",
+      "source": "Byron Theatre",
+      "description": "Byron Theatre presents",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "performance",
+        "drama"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Common Wealth",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Byron Theatre",
+      "link": "https://byrontheatre.com.au/theatre-events/common-wealth",
+      "cost": "See link",
+      "source": "Byron Theatre",
+      "description": "Special Event Screening + Live Q&A with director Kane Guglielmi",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "screening",
+        "qa",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}
