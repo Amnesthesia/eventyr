@@ -650,11 +650,21 @@ header {
 	border-bottom: 1px solid var(--border);
 }
 
+/* max-width: 100% on the shared class, not just the one row that happened to
+   have enough content to reveal it: several of this class's parents switch to
+   flex-direction: column below 640px with align-items: flex-start (see the
+   media queries further down), and in a column flex container flex-basis /
+   min-width govern the vertical (main) axis, not the horizontal (cross) one.
+   Without a direct box constraint, a `.filters` row's width silently stopped
+   being limited at all on a phone and rendered at full unclipped content
+   width, pushing the whole page into horizontal scroll instead of scrolling
+   internally the way overflow-x: auto intends. */
 .filters {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	gap: 0.3rem;
+	max-width: 100%;
 	overflow-x: auto;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
@@ -662,6 +672,7 @@ header {
 
 .filters--date {
 	min-width: 250px;
+	max-width: 100%;
 	/* Opts out of .filters' overflow-x: auto. A scroll container clips an
 	   absolutely positioned child, and this row holds the date-range popover —
 	   which is why the popover silently stopped appearing. Wrapping is the

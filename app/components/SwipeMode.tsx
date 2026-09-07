@@ -14,7 +14,6 @@
 import { Bookmark, RotateCcw, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { eventId, useEventsContext } from "../context";
-import { useModalDialog } from "../hooks/useModalDialog";
 import type { Event } from "../types";
 import { todayIso } from "../utils/dates";
 import { dateLabel } from "../utils/grouping";
@@ -117,17 +116,20 @@ export default function SwipeMode({ onClose }: Props) {
 		setDx(0);
 	}
 
-	// The handler closes over fly/undo, which are new functions on every
-	// render, so it lives in a ref and the effect below can run once. It used
-	// to be an effect with no dependency array at all: that re-bound the
-	// listener on every render — i.e. on every pointermove of a drag, which is
-	// a forced reflow per frame.
+	// The handler closes over fly/undo/onClose, which are new functions on
+	// every render, so it lives in a ref and the effect below can run once.
 	//
-	// Escape is not handled here: the dialog itself closes on Escape natively,
-	// which fires the `close` event useModalDialog listens for.
+	// Plain div + manual handling here, not the <dialog>/showModal() pattern
+	// used by the other two overlays: this component's entire interaction is a
+	// hand-rolled pointer drag, and WebKit's top-layer handling for an open
+	// <dialog> is known to interfere with custom touch/pointer gestures inside
+	// it on iOS — swiping stopped working on mobile the one time this was
+	// tried as a <dialog>. The focus-trap/Escape convenience isn't worth that
+	// risk for the component where a broken gesture breaks the whole feature.
 	const onKeyDownRef = useRef<(e: KeyboardEvent) => void>(() => {});
 	onKeyDownRef.current = (e: KeyboardEvent) => {
-		if (e.key === "ArrowRight") fly("save");
+		if (e.key === "Escape") onClose();
+		else if (e.key === "ArrowRight") fly("save");
 		else if (e.key === "ArrowLeft") fly("skip");
 		else if (e.key === "Backspace" || e.key === "z") undo();
 	};
@@ -135,10 +137,13 @@ export default function SwipeMode({ onClose }: Props) {
 	useEffect(() => {
 		const onKeyDown = (e: KeyboardEvent) => onKeyDownRef.current(e);
 		document.addEventListener("keydown", onKeyDown);
-		return () => document.removeEventListener("keydown", onKeyDown);
+		const previous = document.body.style.overflow;
+		document.body.style.overflow = "hidden";
+		return () => {
+			document.removeEventListener("keydown", onKeyDown);
+			document.body.style.overflow = previous;
+		};
 	}, []);
-
-	const { ref, close } = useModalDialog(onClose);
 
 	function onPointerDown(e: React.PointerEvent) {
 		if (e.pointerType === "mouse" && e.button !== 0) return;
@@ -167,9 +172,10 @@ export default function SwipeMode({ onClose }: Props) {
 	const total = history.length + deck.length;
 
 	return (
-		<dialog
-			ref={ref}
+		<div
 			className="swipe-backdrop"
+			role="dialog"
+			aria-modal="true"
 			aria-label="Swipe through events"
 		>
 			<div className="swipe-top">
@@ -181,7 +187,7 @@ export default function SwipeMode({ onClose }: Props) {
 				<button
 					type="button"
 					className="theme-btn"
-					onClick={close}
+					onClick={onClose}
 					aria-label="Close swipe mode"
 				>
 					<X size={12} strokeWidth={2} />
@@ -273,7 +279,7 @@ export default function SwipeMode({ onClose }: Props) {
 							{saved} saved · {history.length - saved} skipped
 						</p>
 						<ExportSaved />
-						<button type="button" className="filter-btn" onClick={close}>
+						<button type="button" className="filter-btn" onClick={onClose}>
 							Back to the list
 						</button>
 					</div>
@@ -306,6 +312,6 @@ export default function SwipeMode({ onClose }: Props) {
 					<Bookmark size={20} strokeWidth={2} />
 				</button>
 			</div>
-		</dialog>
+		</div>
 	);
 }
