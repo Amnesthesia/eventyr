@@ -1,0 +1,119 @@
+{
+  "city_key": "byron",
+  "provider": "google",
+  "tier": "open",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Plastic Country (Film)",
+      "datetime": "9 September 2026, 6:30 PM",
+      "location": "Brunswick Picture House, Brunswick Heads",
+      "link": "https://brunswickpicturehouse.com",
+      "category": "Arts / Exhibition",
+      "cost": "Check website",
+      "source": "Brunswick Picture House",
+      "description": "A screening of the thought-provoking documentary highlighting environmental challenges and local ecology, hosted in an intimate community cinema setting.",
+      "tags": [
+        "environment",
+        "film",
+        "community"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-09T18:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Art Space at Fletcher Street Cottage",
+      "datetime": "10 September 2026, 9:30 AM",
+      "location": "Fletcher Street Cottage, Byron Bay",
+      "link": "https://www.byroncentre.com.au",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Byron Community Centre",
+      "description": "A community-led creative space providing art materials and a supportive environment for locals to express themselves through various visual art mediums.",
+      "tags": [
+        "art",
+        "creative",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-10T09:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Michael Hing: How Are We Supposed to Live Like This? (Comedy)",
+      "datetime": "11 September 2026, 7:00 PM",
+      "location": "Brunswick Picture House, Brunswick Heads",
+      "link": "https://brunswickpicturehouse.com",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Brunswick Picture House",
+      "description": "A satirical stand-up performance exploring modern existential angst and societal structures, delivered by a sharp-witted cultural commentator.",
+      "tags": [
+        "comedy",
+        "culture",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Paint 'N' Platters Watercolour Workshop",
+      "datetime": "12 September 2026, 11:00 AM",
+      "location": "Byron Bay",
+      "link": "https://www.eventbrite.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "Eventbrite",
+      "description": "A relaxed social workshop focusing on watercolour techniques, designed for beginners to experiment with creativity in a supportive group setting.",
+      "tags": [
+        "art",
+        "workshop",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-12T11:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Ray O'Leary: I Can See O'Leary Now The Ray Has Gone (Comedy)",
+      "datetime": "12 September 2026, 7:00 PM",
+      "location": "Brunswick Picture House, Brunswick Heads",
+      "link": "https://brunswickpicturehouse.com",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Brunswick Picture House",
+      "description": "An evening of observational stand-up comedy at an intimate venue, known for hosting experimental and authentic comedic voices.",
+      "tags": [
+        "comedy",
+        "performance",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-12T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

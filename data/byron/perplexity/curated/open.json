@@ -1,0 +1,75 @@
+{
+  "city_key": "byron",
+  "provider": "perplexity",
+  "tier": "open",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Brush 'N Beats x The Lord Byron Distillery | Paint & Sip Party!",
+      "datetime": "Fri 11 Sep, 6:00 PM",
+      "location": "Lord Byron Distillery, Byron Bay",
+      "link": "https://www.eventbrite.com/d/australia--byron-bay/events/",
+      "category": "Workshop / Class",
+      "cost": "$65",
+      "source": "Eventbrite",
+      "description": "A social painting session held at a local craft distillery, combining artistic expression with a relaxed environment. Ideal for meeting locals while learning basic painting techniques.",
+      "tags": [
+        "art",
+        "workshop",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-11T18:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Paint ‘N’ Platters, watercolour workshop with grazing platters",
+      "datetime": "Sat 12 Sep, 11:00 AM",
+      "location": "Byron Bay Cavanbah Centre, Byron Bay",
+      "link": "https://www.eventbrite.com/d/australia--byron-bay/events/",
+      "category": "Workshop / Class",
+      "cost": "$80",
+      "source": "Eventbrite",
+      "description": "A guided watercolour painting workshop paired with food, focused on creative expression in a community setting. Good for those looking to practice artistic skills in a communal atmosphere.",
+      "tags": [
+        "art",
+        "workshop",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-12T11:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Cycle Workshop Byron Bay",
+      "datetime": "Sun 13 Sep, 11:30 AM",
+      "location": "Nirmala Temple, Byron Bay",
+      "link": "https://www.eventbrite.com/d/australia--byron-bay/events/",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Eventbrite",
+      "description": "An educational workshop focused on understanding physiological cycles and natural rhythms, designed for those interested in body awareness and health. Encourages discussion among participants in a grounded setting.",
+      "tags": [
+        "wellness",
+        "workshop",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-09-13T11:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

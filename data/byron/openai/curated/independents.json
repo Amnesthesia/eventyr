@@ -1,0 +1,147 @@
+{
+  "city_key": "byron",
+  "provider": "openai",
+  "tier": "independents",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Improvised Comedy Student Showcase",
+      "datetime": "8 Sep 2026, 7:30 PM",
+      "location": "Cavanbah Centre, Byron Bay",
+      "link": "https://www.blahblahblahimprov.com/events/improvised-comedy-student-showcase-byron-sept-26",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "Blah Blah Blah Improv",
+      "description": "A showcase of local students performing improvised comedy scenes, offering a fun and supportive look at the local improv community.",
+      "tags": [
+        "improv",
+        "comedy",
+        "performance",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-08T19:30:00",
+      "datetime_end_iso": "2026-09-08T20:30:00",
+      "image": ""
+    },
+    {
+      "title": "Screenworks Regional to Global 2026",
+      "datetime": "9 Sep 2026, 9:00 AM",
+      "location": "Lennox Head Cultural Centre, Lennox Head",
+      "link": "https://screenworks.com.au/opportunities/regional-to-global-2026/",
+      "category": "Public Lecture",
+      "cost": "$300",
+      "source": "Screenworks",
+      "description": "A significant two-day screen industry forum connecting regional creators with global opportunities, featuring panels and discussions with industry experts.",
+      "tags": [
+        "film",
+        "technology",
+        "creativity",
+        "networking"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-09T09:00:00",
+      "datetime_end_iso": "2026-09-10T20:00:00",
+      "image": ""
+    },
+    {
+      "title": "Plastic Country — community film screening & panel",
+      "datetime": "11 Sep 2026, 6:00 PM",
+      "location": "Lennox Head Cultural Centre, Lennox Head",
+      "link": "https://communityspaces.com.au/v1/tickets",
+      "category": "Public Lecture",
+      "cost": "Free",
+      "source": "Ballina Shire Council / Community Spaces",
+      "description": "A community screening of a documentary addressing environmental issues, followed by a panel discussion with local experts and advocates.",
+      "tags": [
+        "environment",
+        "documentary",
+        "discussion",
+        "free"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11T18:00:00",
+      "datetime_end_iso": "2026-09-11T20:30:00",
+      "image": ""
+    },
+    {
+      "title": "Paul George — Fire Pit Fridays",
+      "datetime": "11 Sep 2026, 5:00 PM",
+      "location": "Elements of Byron, Byron Bay",
+      "link": "https://byronbayexperience.com.au/whats-on-byron-bay/paul-george-fire-pit-fridays-elements-of-byron/",
+      "category": "Concert / Music",
+      "cost": "Free",
+      "source": "Elements of Byron / Byron Bay Experience",
+      "description": "Intimate live acoustic performance set around the outdoor fire pits at Elements of Byron.",
+      "tags": [
+        "music",
+        "acoustic",
+        "atmosphere",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11T17:00:00",
+      "datetime_end_iso": "2026-09-11T19:30:00",
+      "image": ""
+    },
+    {
+      "title": "Paint 'N' Platters — watercolour workshop",
+      "datetime": "12 Sep 2026, 11:00 AM",
+      "location": "Cavanbah Centre, Byron Bay",
+      "link": "https://happeningnext.com/event/paint-%E2%80%98n%E2%80%99-platters-watercolour-workshop-with-grazing-platters-eid1ef0l4rxst9r",
+      "category": "Workshop / Class",
+      "cost": "$80",
+      "source": "Create & Connect Art",
+      "description": "A social watercolour painting workshop that pairs creative instruction with grazing platters, encouraging conversation among participants.",
+      "tags": [
+        "art",
+        "painting",
+        "workshop",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-12T11:00:00",
+      "datetime_end_iso": "2026-09-12T13:00:00",
+      "image": ""
+    },
+    {
+      "title": "DAN SULTAN (SOLO)",
+      "datetime": "13 Sep 2026, 7:00 PM",
+      "location": "The Eltham Hotel, Eltham",
+      "link": "https://www.moshtix.com.au/v2/event/dan-sultan-solo/198606",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Eltham Hotel / Moshtix",
+      "description": "An intimate solo performance by renowned Australian artist Dan Sultan at the historic Eltham Hotel.",
+      "tags": [
+        "music",
+        "performance",
+        "live",
+        "gig"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-13T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

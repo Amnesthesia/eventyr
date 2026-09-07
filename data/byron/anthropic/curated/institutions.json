@@ -1,0 +1,119 @@
+{
+  "city_key": "byron",
+  "provider": "anthropic",
+  "tier": "institutions",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Ode Exhibition",
+      "datetime": "Until Fri 19 Sep, 10am–3pm",
+      "location": "Byron School of Art, Mullumbimby",
+      "link": "https://www.byronschoolofart.com/exhibitions",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Byron School of Art",
+      "description": "A curated art exhibition presented by the Byron School of Art, showcasing diverse local creative works in an intimate, community-focused gallery setting.",
+      "tags": [
+        "art",
+        "exhibition",
+        "free"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2025-08-25T10:00:00",
+      "datetime_end_iso": "2025-09-19T15:00:00",
+      "image": ""
+    },
+    {
+      "title": "Love For One Night",
+      "datetime": "27 Aug – 12 Sep 2026",
+      "location": "Eltham Hotel, Eltham NSW",
+      "link": "https://norpa.org.au/whats-on/",
+      "category": "Concert / Music",
+      "cost": "$30–$99",
+      "source": "NORPA",
+      "description": "A live, immersive performance experience by NORPA that blends music and theatre, hosted in the atmospheric setting of the historic Eltham Hotel.",
+      "tags": [
+        "theatre",
+        "music",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-08-27T18:00:00",
+      "datetime_end_iso": "2026-09-12T22:00:00",
+      "image": ""
+    },
+    {
+      "title": "Byron Theatre Multiple Shows – Theatre",
+      "datetime": "Tue 8 Sep, 6:30 PM",
+      "location": "Byron Theatre, Byron Bay",
+      "link": "https://www.byroncentre.com.au/",
+      "category": "Concert / Music",
+      "cost": "$30+",
+      "source": "Byron Community Centre",
+      "description": "A theatrical performance hosted at the community-run Byron Theatre, known for fostering local arts and diverse cultural expression.",
+      "tags": [
+        "theatre",
+        "culture",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-08T18:30:00",
+      "datetime_end_iso": "2026-09-08T20:30:00",
+      "image": ""
+    },
+    {
+      "title": "Byron Theatre Multiple Shows – Theatre",
+      "datetime": "Wed 9 Sep, 7:00 PM",
+      "location": "Byron Theatre, Byron Bay",
+      "link": "https://www.byroncentre.com.au/",
+      "category": "Concert / Music",
+      "cost": "$30+",
+      "source": "Byron Community Centre",
+      "description": "An evening of live theatrical performance at the Byron Community Centre, offering an intimate space for local artistic engagement.",
+      "tags": [
+        "theatre",
+        "arts",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-09T19:00:00",
+      "datetime_end_iso": "2026-09-09T21:00:00",
+      "image": ""
+    },
+    {
+      "title": "Byron Theatre Multiple Shows – Cinema",
+      "datetime": "Thu 10 Sep, 7:00 PM",
+      "location": "Byron Theatre, Byron Bay",
+      "link": "https://www.byroncentre.com.au/",
+      "category": "Concert / Music",
+      "cost": "$15–$25",
+      "source": "Byron Community Centre",
+      "description": "A curated film screening held at the Byron Theatre, often featuring independent or thought-provoking cinema that invites post-show conversation.",
+      "tags": [
+        "film",
+        "cinema",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-10T19:00:00",
+      "datetime_end_iso": "2026-09-10T21:00:00",
+      "image": ""
+    }
+  ]
+}

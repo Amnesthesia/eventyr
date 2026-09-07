@@ -1,0 +1,75 @@
+{
+  "city_key": "byron",
+  "provider": "anthropic",
+  "tier": "aggregators",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Byron Theatre – Cinema Screening",
+      "datetime": "Thu 10 Sep, 7:00 PM",
+      "location": "Byron Theatre, Byron Community Centre",
+      "link": "https://www.byroncentre.com.au/bct/whats-on",
+      "category": "Arts / Exhibition",
+      "cost": "Ticketed",
+      "source": "Byron Theatre",
+      "description": "An evening film screening at the local community hub, showcasing independent or curated cinema selections suitable for an engaged audience.",
+      "tags": [
+        "film",
+        "cinema",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-10T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Byron Theatre – Evening Program",
+      "datetime": "Fri 11 Sep, 7:00 PM",
+      "location": "Byron Theatre, Byron Community Centre",
+      "link": "https://www.byroncentre.com.au/bct/whats-on",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Byron Theatre",
+      "description": "A live performance event hosted at the Byron Theatre, featuring local or touring arts and music acts in an intimate setting.",
+      "tags": [
+        "performance",
+        "music",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Improv Course",
+      "datetime": "Ongoing through 8 Sep, 2026",
+      "location": "Cavanbah Centre, 249 Ewingsdale Road, Byron Bay",
+      "link": "https://byronbayexperience.com.au/byron-bay-events-guide-whats-on/",
+      "category": "Workshop / Class",
+      "cost": "Ticketed",
+      "source": "Local improv artists",
+      "description": "A hands-on, community-focused course teaching the fundamentals of improvisation and collaborative storytelling through active participation.",
+      "tags": [
+        "improv",
+        "workshop",
+        "creativity"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

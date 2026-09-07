@@ -1,0 +1,170 @@
+{
+  "city_key": "byron",
+  "provider": "openai",
+  "tier": "open",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Arts Factory Talent Show",
+      "datetime": "7 Sep 2026, 7:30 PM",
+      "location": "Arts Factory Garden Bar, 1 Skinners Shoot Rd, Byron Bay",
+      "link": "https://www.eventbrite.com.au/e/arts-factory-talent-show-tickets-1982475925861",
+      "category": "Concert / Music",
+      "cost": "A$5",
+      "source": "Arts Factory Garden Bar",
+      "description": "A local showcase featuring eclectic talent in the community-focused atmosphere of the Arts Factory garden.",
+      "tags": [
+        "performance",
+        "local",
+        "community",
+        "affordable"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-07T19:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Paradiso Presents: Havana Noche",
+      "datetime": "10 Sep 2026, 7:30 PM",
+      "location": "Paradiso Music Room, 6 Lawson St, Byron Bay",
+      "link": "https://www.eventbrite.com.au/e/paradiso-presents-havana-noche-with-kwasi-bruni-big-band-tickets-1999346864292",
+      "category": "Concert / Music",
+      "cost": "From A$10",
+      "source": "Paradiso Music Room",
+      "description": "An immersive live jazz and big band experience celebrating the sounds of Havana in an intimate venue.",
+      "tags": [
+        "jazz",
+        "live-music",
+        "performance",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-10T19:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Common Wealth — Special screening + live Q&A",
+      "datetime": "10 Sep 2026, 7:00 PM",
+      "location": "Byron Theatre, 69 Jonson St, Byron Bay",
+      "link": "https://www.byroncentre.com.au/theatre-events/common-wealth",
+      "category": "Public Lecture",
+      "cost": "Ticketed",
+      "source": "Byron Theatre / Byron Community Centre",
+      "description": "A special screening of the film followed by an in-person Q&A with director Kane Guglielmi, focusing on the themes of the documentary.",
+      "tags": [
+        "film",
+        "q&a",
+        "documentary",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-10T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Art Byron Gatherings — An Evening with Glenn Barkley & Alison Kubler",
+      "datetime": "11 Sep 2026, 5:30 PM",
+      "location": "Byron School of Art, 112 Dalley St, Mullumbimby",
+      "link": "https://www.eventbrite.com.au/e/art-byron-gatherings-an-evening-with-glenn-barkley-and-alison-kubler-tickets-1995397598933",
+      "category": "Public Lecture",
+      "cost": "Ticketed",
+      "source": "Lisa Cowan - Art Byron",
+      "description": "A thoughtful conversation on contemporary art featuring curator Glenn Barkley and writer Alison Kubler, hosted at the Byron School of Art.",
+      "tags": [
+        "art",
+        "discussion",
+        "philosophy",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11T17:30:00",
+      "datetime_end_iso": "2026-09-11T19:30:00",
+      "image": ""
+    },
+    {
+      "title": "Paint ‘N’ Platters — Watercolour workshop",
+      "datetime": "12 Sep 2026, 11:00 AM",
+      "location": "Cavanbah Centre, 249 Ewingsdale Rd, Byron Bay",
+      "link": "https://www.eventbrite.com.au/e/paint-n-platters-watercolour-workshop-with-grazing-platters-tickets-1997527926801",
+      "category": "Workshop / Class",
+      "cost": "A$80",
+      "source": "Emily Ferguson / Create & Connect Art",
+      "description": "A hands-on watercolour painting session paired with grazing platters, designed for a relaxed creative social environment.",
+      "tags": [
+        "art",
+        "workshop",
+        "painting",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-12T11:00:00",
+      "datetime_end_iso": "2026-09-12T13:00:00",
+      "image": ""
+    },
+    {
+      "title": "Block Print Workshop & Pop‑Up Boutique",
+      "datetime": "12 Sep 2026, 10:00 AM",
+      "location": "140 Jonson St, Byron Bay",
+      "link": "https://www.eventbrite.com.au/e/block-print-workshop-and-pop-up-boutique-tickets-1998867220665",
+      "category": "Workshop / Class",
+      "cost": "Ticketed",
+      "source": "Threads of India / Home Makers Club",
+      "description": "A practical workshop teaching traditional block printing techniques in the community space of the Home Makers Club.",
+      "tags": [
+        "craft",
+        "workshop",
+        "design",
+        "maker"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-12T10:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "NURTURE — Prenatal Yin Yoga",
+      "datetime": "13 Sep 2026, 11:00 AM",
+      "location": "Sol Method studio, 4/142 Bangalow Rd, Byron Bay",
+      "link": "https://www.solmethod.com.au/",
+      "category": "Workshop / Class",
+      "cost": "From A$30",
+      "source": "Sol Method",
+      "description": "A grounded, somatic-focused yoga session emphasizing gentle movement and breath, avoiding commercial wellness trends.",
+      "tags": [
+        "yoga",
+        "wellness",
+        "somatic",
+        "meditation"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-09-13T11:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

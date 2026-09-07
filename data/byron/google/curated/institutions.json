@@ -1,0 +1,163 @@
+{
+  "city_key": "byron",
+  "provider": "google",
+  "tier": "institutions",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Art Byron Gatherings - An Evening with Glenn Barkley and Alison Kubler",
+      "datetime": "11 September 2026",
+      "location": "Byron School of Art, Mullumbimby",
+      "link": "https://www.eventbrite.com.au/e/art-byron-gatherings-an-evening-with-glenn-barkley-and-alison-kubler-tickets-1189670089083",
+      "category": "Public Lecture",
+      "cost": "Contact Organiser",
+      "source": "Art Byron",
+      "description": "A curated conversation between prominent art figures Glenn Barkley and Alison Kubler, offering intellectual insights into the contemporary art scene.",
+      "tags": [
+        "art",
+        "culture",
+        "lecture"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "The Plastic Country",
+      "datetime": "9 September 2026",
+      "location": "Brunswick Picture House",
+      "link": "https://brunswickpicturehouse.com",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Brunswick Picture House",
+      "description": "A screening or event exploring environmental themes in a local context, hosted at the independent and atmospheric Brunswick Picture House.",
+      "tags": [
+        "environment",
+        "film",
+        "free"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Michael Hing: How Are We Supposed To Live Like This?",
+      "datetime": "11 September 2026",
+      "location": "Brunswick Picture House",
+      "link": "https://brunswickpicturehouse.com",
+      "category": "Concert / Music",
+      "cost": "Contact Organiser",
+      "source": "Brunswick Picture House",
+      "description": "A live comedy performance from Michael Hing, exploring modern societal tensions through an observational lens.",
+      "tags": [
+        "comedy",
+        "performance",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Ray O'Leary: I Can See O'Leary Now the Ray Has Gone",
+      "datetime": "12 September 2026",
+      "location": "Brunswick Picture House",
+      "link": "https://brunswickpicturehouse.com",
+      "category": "Concert / Music",
+      "cost": "Contact Organiser",
+      "source": "Brunswick Picture House",
+      "description": "An evening of stand-up comedy at the intimate Brunswick Picture House, known for its creative and engaged local audience.",
+      "tags": [
+        "comedy",
+        "performance",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Dramaworks Evening 2026",
+      "datetime": "8 September 2026",
+      "location": "Byron Theatre",
+      "link": "https://www.byroncentre.com.au",
+      "category": "Arts / Exhibition",
+      "cost": "$18.85-$25.00",
+      "source": "Byron Theatre",
+      "description": "A showcase of local dramatic works, highlighting the creativity and experimental performance culture within the Byron Shire.",
+      "tags": [
+        "theatre",
+        "performance",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "COMMON WEALTH Screening + Q&A",
+      "datetime": "10 September 2026",
+      "location": "Byron Theatre",
+      "link": "https://www.byroncentre.com.au",
+      "category": "Public Lecture",
+      "cost": "$26.40",
+      "source": "Byron Theatre",
+      "description": "A film screening followed by a structured Q&A, encouraging intellectual engagement with the themes of the documentary.",
+      "tags": [
+        "film",
+        "documentary",
+        "q&a"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "SunDance - THE UNFURLING",
+      "datetime": "13 September 2026",
+      "location": "Mullumbimby Civic Memorial Hall",
+      "link": "https://www.facebook.com/events/928551293656658",
+      "category": "Community / Other",
+      "cost": "Contact Organiser",
+      "source": "SunDance Byron Shire",
+      "description": "A community-oriented movement event focused on authentic, grounded expression and social connection in a shared space.",
+      "tags": [
+        "wellness",
+        "movement",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

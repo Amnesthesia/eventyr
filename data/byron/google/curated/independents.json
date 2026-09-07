@@ -1,0 +1,147 @@
+{
+  "city_key": "byron",
+  "provider": "google",
+  "tier": "independents",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Art Space: Fletcher Street Cottage",
+      "datetime": "10 September 2026",
+      "location": "Fletcher Street Cottage, Byron Bay",
+      "link": "https://byroncentre.com.au",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "Byron Community Centre",
+      "description": "A community-focused creative space providing a supportive environment for local artists and those engaging in creative projects at the community center.",
+      "tags": [
+        "art",
+        "community",
+        "exhibition",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Byron Seniors: Studio 55 Drama",
+      "datetime": "10 September 2026",
+      "location": "Byron Community Centre, 69 Jonson St, Byron Bay",
+      "link": "https://byroncentre.com.au",
+      "category": "Workshop / Class",
+      "cost": "Free",
+      "source": "Byron Community Centre",
+      "description": "An inclusive drama workshop series designed for seniors to explore performance, character building, and storytelling in a collaborative social group.",
+      "tags": [
+        "drama",
+        "theatre",
+        "community",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Block Print Workshop and Pop-Up Boutique",
+      "datetime": "11 September 2026",
+      "location": "140 Jonson St, Byron Bay",
+      "link": "https://eventbrite.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "Eventbrite",
+      "description": "A hands-on workshop focused on the traditional art of block printing, allowing participants to design and create their own textiles.",
+      "tags": [
+        "craft",
+        "art",
+        "workshop",
+        "design"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Brush 'N Beats x The Lord Byron Distillery",
+      "datetime": "11 September 2026",
+      "location": "Lord Byron Distillery, Byron Bay",
+      "link": "https://lordbyrondistillery.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "Lord Byron Distillery",
+      "description": "An informal creative session combining painting and music in the unique environment of a local craft distillery.",
+      "tags": [
+        "painting",
+        "art",
+        "music",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Paint 'N' Platters Watercolour Workshop",
+      "datetime": "12 September 2026",
+      "location": "Byron Bay",
+      "link": "https://eventbrite.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "Eventbrite",
+      "description": "A social and relaxed watercolour painting class designed for beginners to experiment with medium while sharing a platter of local food.",
+      "tags": [
+        "painting",
+        "art",
+        "workshop",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Cycle Workshop Byron Bay",
+      "datetime": "13 September 2026",
+      "location": "Nirmala Temple, Byron Bay",
+      "link": "https://eventbrite.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "Eventbrite",
+      "description": "A practical, hands-on workshop exploring the physiology and health cycles, aimed at building understanding through guided group discussion.",
+      "tags": [
+        "health",
+        "workshop",
+        "education",
+        "wellbeing"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}

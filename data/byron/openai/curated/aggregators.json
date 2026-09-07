@@ -1,0 +1,193 @@
+{
+  "city_key": "byron",
+  "provider": "openai",
+  "tier": "aggregators",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Talent Show – The OG Byron Experience",
+      "datetime": "7 Sep 2026, 7:30 PM",
+      "location": "The Arts Factory Garden Bar, 1 Skinners Shoot Rd, Byron Bay NSW",
+      "link": "https://artsfactorygardenbar.com/events",
+      "category": "Concert / Music",
+      "cost": "$5",
+      "source": "Arts Factory",
+      "description": "An open-stage event at the iconic Arts Factory, providing a platform for local performers to showcase their creative talents in an intimate, rustic setting.",
+      "tags": [
+        "music",
+        "performance",
+        "local",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-07T19:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Dear Sunday ‘Back To Business’ Tour",
+      "datetime": "10 Sep 2026, 6:00 PM",
+      "location": "The Arts Factory Garden Bar, 1 Skinners Shoot Rd, Byron Bay NSW",
+      "link": "https://artsfactorygardenbar.com/events",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "The Arts Factory",
+      "description": "An intimate gig featuring indie band Dear Sunday, set within the lush, laid-back environment of the Arts Factory gardens.",
+      "tags": [
+        "music",
+        "indie",
+        "gig",
+        "live"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-10T18:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Bootleg Rascal – Byron Bay",
+      "datetime": "11 Sep 2026, 6:00 PM",
+      "location": "The Arts Factory, 1 Skinners Shoot Rd, Byron Bay NSW",
+      "link": "https://www.songkick.com/es/concerts/43298167-bootleg-rascal-at-arts-factory",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Bootleg Rascal / Arts Factory",
+      "description": "Live performance by indie-fusion band Bootleg Rascal, known for their genre-bending sound, hosted at the historic Arts Factory venue.",
+      "tags": [
+        "music",
+        "indie",
+        "gig",
+        "concert"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11T18:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Brush 'N Beats x The Lord Byron Distillery | Paint & Sip Party",
+      "datetime": "11 Sep 2026, 6:00 PM",
+      "location": "Lord Byron Distillery, 4 Banksia Drive, Byron Bay NSW",
+      "link": "https://www.eventbrite.com.au/e/brush-n-beats-x-the-lord-byron-distillery-paint-sip-party-tickets-1985250526767",
+      "category": "Workshop / Class",
+      "cost": "Ticketed",
+      "source": "Brush 'N Beats",
+      "description": "A social painting session held at a local distillery, combining creative expression with a casual, guided group art experience.",
+      "tags": [
+        "art",
+        "workshop",
+        "social",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-11T18:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Paint ‘N’ Platters — watercolour workshop with grazing platters",
+      "datetime": "12 Sep 2026, 11:00 AM",
+      "location": "Byron Bay Cavanbah Centre - Sports & Cultural Complex, 249 Ewingsdale Rd, Byron Bay NSW",
+      "link": "https://www.eventbrite.com.au/e/paint-n-platters-watercolour-workshop-with-grazing-platters-tickets-1997527926801",
+      "category": "Workshop / Class",
+      "cost": "$80.00",
+      "source": "Emily Ferguson / Create & Connect Art",
+      "description": "A hands-on watercolour painting workshop paired with food, aimed at fostering creative connection in a group environment.",
+      "tags": [
+        "art",
+        "painting",
+        "workshop",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-12T11:00:00",
+      "datetime_end_iso": "2026-09-12T13:00:00",
+      "image": ""
+    },
+    {
+      "title": "Terrace Market (Haven Gallery)",
+      "datetime": "12 Sep 2026, 8:00 AM",
+      "location": "Haven Gallery, 102 Jonson St, Byron Bay NSW",
+      "link": "https://events.humanitix.com/terrace-market",
+      "category": "Arts / Exhibition",
+      "cost": "Free",
+      "source": "HAVEN GALLERY Byron Bay",
+      "description": "A community-oriented market hosted by Haven Gallery, featuring local art, design, and creative goods in a central Byron setting.",
+      "tags": [
+        "art",
+        "market",
+        "community",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-12T08:00:00",
+      "datetime_end_iso": "2026-09-12T13:00:00",
+      "image": ""
+    },
+    {
+      "title": "NO CIGAR | Aussie Tour with special guests",
+      "datetime": "12 Sep 2026, 8:00 PM",
+      "location": "The Northern - Byron Bay, 35–43 Jonson St, Byron Bay NSW",
+      "link": "https://www.moshtix.com.au/v2/event/no-cigar-aussie-tour-with-special-guests/197152",
+      "category": "Concert / Music",
+      "cost": "$45.39",
+      "source": "Select Music",
+      "description": "An evening of live indie-rock at The Northern, a classic Byron live music pub known for hosting touring acts.",
+      "tags": [
+        "music",
+        "indie",
+        "gig",
+        "live"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-12T20:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Cycle Workshop Byron Bay",
+      "datetime": "13 Sep 2026, 11:30 AM",
+      "location": "NIRMALA TEMPLE, 11 Banksia Drive, Byron Bay NSW",
+      "link": "https://happeningnext.com/event/cycle-workshop-byron-bay-eid1ef0l412n47a",
+      "category": "Workshop / Class",
+      "cost": "$54.26",
+      "source": "Yin Yoga with Bria",
+      "description": "A somatic and wellness-oriented workshop focused on the menstrual cycle, aimed at providing education and community support for body literacy.",
+      "tags": [
+        "wellness",
+        "workshop",
+        "education",
+        "health"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-09-13T11:30:00",
+      "datetime_end_iso": "2026-09-13T13:30:00",
+      "image": ""
+    }
+  ]
+}

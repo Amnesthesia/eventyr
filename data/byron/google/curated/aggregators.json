@@ -1,0 +1,141 @@
+{
+  "city_key": "byron",
+  "provider": "google",
+  "tier": "aggregators",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Plastic Country",
+      "datetime": "Wed 09 Sep, 6:30 PM",
+      "location": "Brunswick Picture House, Brunswick Heads",
+      "link": "https://brunswickpicturehouse.com",
+      "category": "Arts / Exhibition",
+      "cost": "Check website",
+      "source": "Brunswick Picture House",
+      "description": "A screening or performance exploring themes of environment and plastic waste, held at the intimate Brunswick Picture House.",
+      "tags": [
+        "environment",
+        "film",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-09T18:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Art Space: Fletcher Street Cottage",
+      "datetime": "Thu 10 Sep, 9:30 AM",
+      "location": "Fletcher Street Cottage, Byron Bay",
+      "link": "https://byroncentre.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "Byron Community Centre",
+      "description": "A community-focused creative session held at Fletcher Street Cottage, offering space for artistic expression in a supportive environment.",
+      "tags": [
+        "art",
+        "community",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-10T09:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Brush 'N Beats x The Lord Byron Distillery",
+      "datetime": "Fri 11 Sep, 6:00 PM",
+      "location": "Lord Byron Distillery, Byron Bay",
+      "link": "https://eventbrite.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "Lord Byron Distillery",
+      "description": "A social evening combining painting with music at a local distillery, perfect for meeting people in a creative setting.",
+      "tags": [
+        "art",
+        "social",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true,
+      "datetime_iso": "2026-09-11T18:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Michael Hing - How Are We Supposed to Live Like This?",
+      "datetime": "Fri 11 Sep, 7:00 PM",
+      "location": "Brunswick Picture House, Brunswick Heads",
+      "link": "https://brunswickpicturehouse.com",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Brunswick Picture House",
+      "description": "Stand-up comedy performance from Michael Hing, known for his incisive cultural and political commentary.",
+      "tags": [
+        "comedy",
+        "culture",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Ray O'Leary: I Can See O'Leary Now The Ray Has Gone",
+      "datetime": "Sat 12 Sep, 7:00 PM",
+      "location": "Brunswick Picture House, Brunswick Heads",
+      "link": "https://brunswickpicturehouse.com",
+      "category": "Concert / Music",
+      "cost": "Check website",
+      "source": "Brunswick Picture House",
+      "description": "A live comedy show featuring Ray O'Leary, known for his unique deadpan delivery and observational humor.",
+      "tags": [
+        "comedy",
+        "performance",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-12T19:00:00",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Cycle Workshop Byron Bay",
+      "datetime": "Sun 13 Sep, 11:30 AM",
+      "location": "NIRMALA TEMPLE, Byron Bay",
+      "link": "https://eventbrite.com.au",
+      "category": "Workshop / Class",
+      "cost": "Check website",
+      "source": "NIRMALA TEMPLE",
+      "description": "A hands-on workshop focused on bicycle maintenance and mechanics, suitable for those looking to learn practical skills.",
+      "tags": [
+        "workshop",
+        "maker",
+        "practical"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false,
+      "datetime_iso": "2026-09-13T11:30:00",
+      "datetime_end_iso": "",
+      "image": ""
+    }
+  ]
+}
