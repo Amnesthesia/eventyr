@@ -35,13 +35,14 @@ interface Props {
 	 * page passes its own image where the source gave one: an unfurl showing
 	 * the actual event beats the site's generic card. */
 	ogImage?: string;
-	/** Set by src/pages/[city]/[timeframe].astro. Suppresses the FAQ block:
-	 * that block's text is identical on every page it appears on, and
-	 * near-duplicate boilerplate is exactly what Google's scaled-content-abuse
-	 * policy flags — worth avoiding across city + today + tomorrow + weekend
-	 * (4 near-identical FAQPage blocks per city) even though the event lists
-	 * themselves genuinely differ and aren't at risk. */
-	isTimeframe?: boolean;
+	/** Set by src/pages/[city]/[timeframe].astro to "today" | "tomorrow" |
+	 * "this-weekend". Suppresses the FAQ block (its text is identical on every
+	 * page it appears on, and near-duplicate boilerplate is exactly what
+	 * Google's scaled-content-abuse policy flags — worth avoiding across city +
+	 * today + tomorrow + weekend even though the event lists themselves
+	 * genuinely differ and aren't at risk) and highlights the matching link in
+	 * the timeframe nav below. */
+	timeframeSlug?: string;
 }
 
 const {
@@ -56,7 +57,7 @@ const {
 	ogType = "website",
 	schema: schemaOverride,
 	ogImage,
-	isTimeframe = false,
+	timeframeSlug,
 } = Astro.props;
 const BASE_URL = "https://www.dothings.lol";
 
@@ -206,13 +207,13 @@ const breadcrumbs = {
 // Only on the plain city page — not per-category (the answers are city-wide
 // facts, repeating them verbatim on every category page is duplicate content
 // for no benefit) and not on the /today//tomorrow//this-weekend/ pages
-// (isTimeframe): those already carry this same block, and 4 near-identical
+// (timeframeSlug): those already carry this same block, and 4 near-identical
 // FAQPage blocks per city is exactly the "identical structure, near-duplicate
 // content" pattern Google's scaled-content-abuse policy flags — the filtered
 // event lists on those pages are genuinely different and unaffected, only the
 // boilerplate FAQ riding along with them was the risk.
 const faqs =
-	categoryLabel || isTimeframe
+	categoryLabel || timeframeSlug
 		? []
 		: [
 				{
@@ -372,6 +373,26 @@ const websiteSchema = {
   </head>
   <body>
     <slot />
+    <nav class="category-nav" aria-label="Browse by day">
+      <a
+        href={`/${slug}/`}
+        class={!timeframeSlug ? "filter-btn active" : "filter-btn"}
+      >
+        This week
+      </a>
+      {[
+        { tf: "today", label: "Today" },
+        { tf: "tomorrow", label: "Tomorrow" },
+        { tf: "this-weekend", label: "This weekend" },
+      ].map(({ tf, label }) => (
+        <a
+          href={`/${slug}/${tf}/`}
+          class={timeframeSlug === tf ? "filter-btn active" : "filter-btn"}
+        >
+          {label}
+        </a>
+      ))}
+    </nav>
     <nav class="category-nav" aria-label="Browse by category">
       {availableCategories.map(({ catSlug, label }) => (
         <a

@@ -109,12 +109,20 @@ interface ProviderProps {
 	children: ReactNode;
 	initialData: CityData;
 	allCities: City[];
+	/** Set by /today/, /tomorrow/, /this-weekend/ (src/pages/[city]/[timeframe].astro).
+	 * cityData.events is already restricted to that window server-side, but
+	 * without this the date-range state itself defaults to null — leaving the
+	 * "Today"/"Tomorrow" toggle buttons unpressed and, more importantly,
+	 * disabling the startsInRange check below that keeps a months-long-running
+	 * event out of "picks" just because it happens to overlap today. */
+	initialDateRange?: DateRange | null;
 }
 
 export function EventsProvider({
 	children,
 	initialData,
 	allCities,
+	initialDateRange = null,
 }: ProviderProps) {
 	const { theme, toggle: toggleTheme } = useColorTheme();
 	const {
@@ -141,7 +149,9 @@ export function EventsProvider({
 	}
 
 	const [activeCat, setActiveCat] = useState("All");
-	const [dateRange, setDateRange] = useState<DateRange | null>(null);
+	const [dateRange, setDateRange] = useState<DateRange | null>(
+		initialDateRange,
+	);
 	const [activeTags, setActiveTags] = useState<string[]>([]);
 	const [pastFilter, setPastFilter] = useState<PastFilter>("no-past");
 	// "date" by default so the "Today"/"Tomorrow" section headings render

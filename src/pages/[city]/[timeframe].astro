@@ -15,8 +15,6 @@ interface TimeframeRange {
 	slug: string;
 	from: string;
 	to: string;
-	title: string;
-	blurb: string;
 }
 
 export function getStaticPaths() {
@@ -49,9 +47,9 @@ export function getStaticPaths() {
 		sunIso = addDays(satIso, 1);
 	}
 	const ranges: TimeframeRange[] = [
-		{ slug: "today", from: today, to: today, title: "events today", blurb: "today" },
-		{ slug: "tomorrow", from: tomorrow, to: tomorrow, title: "events tomorrow", blurb: "tomorrow" },
-		{ slug: "this-weekend", from: satIso, to: sunIso, title: "this weekend", blurb: "this weekend" },
+		{ slug: "today", from: today, to: today },
+		{ slug: "tomorrow", from: tomorrow, to: tomorrow },
+		{ slug: "this-weekend", from: satIso, to: sunIso },
 	];
 	const paths = [];
 
@@ -94,11 +92,13 @@ const { cityData, allCities, range } = Astro.props;
 const citySlug = Astro.params.city as string;
 const cityName = cityData.city.split(",")[0];
 const canonical = `${BASE_URL}/${citySlug}/${range.slug}/`;
+// "this-weekend" -> "this weekend"; "today"/"tomorrow" pass through unchanged.
+const blurb = range.slug.replace("-", " ");
 const title =
 	range.slug === "this-weekend"
 		? `What's on in ${cityName} this weekend`
-		: `${cityName} ${range.title}`;
-const description = `${cityData.events.length} events on in ${cityName} ${range.blurb}. Curated and ranked from local sources, updated daily.`;
+		: `${cityName} events ${blurb}`;
+const description = `${cityData.events.length} events on in ${cityName} ${blurb}. Curated and ranked from local sources, updated daily.`;
 ---
 
 <Base
@@ -107,13 +107,18 @@ const description = `${cityData.events.length} events on in ${cityName} ${range.
   canonical={canonical}
   title={title}
   description={description}
-  isTimeframe
+  timeframeSlug={range.slug}
 >
   {cityData.events.length === 0 && (
     <p class="container city-intro">
-      Nothing dated {range.blurb} in {cityName} yet — see the
+      Nothing dated {blurb} in {cityName} yet — see the
       <a href={`/${citySlug}/`}>full week's events</a>.
     </p>
   )}
-  <EventApp client:load cityData={cityData} allCities={allCities} />
+  <EventApp
+    client:load
+    cityData={cityData}
+    allCities={allCities}
+    initialDateRange={{ start: range.from, end: range.to }}
+  />
 </Base>
