@@ -63,8 +63,16 @@ const MONTHS_SHORT = [
  * "Every Tues") and sometimes disagrees with the date we actually resolved.
  * Built by hand rather than via toLocaleString: ICU output differs between
  * Node builds ("Sep" vs "Sept"), and this string is committed to data files
- * and rendered on the site, so it should not depend on the runtime's ICU. */
-export function humanDatetime(naive: string | null): string {
+ * and rendered on the site, so it should not depend on the runtime's ICU.
+ *
+ * "Tue 8 Sep, 7:00 PM", or "Sat 2 May – Sat 5 Dec" when the end falls on a
+ * later day. The range matters: a season pass or exhibition whose card said
+ * only "Sat 2 May" read as a stale event in September, when it was still on
+ * and the end date was sitting right there in datetime_end_iso. */
+export function humanDatetime(
+	naive: string | null,
+	endNaive: string | null = null,
+): string {
 	if (!naive) return "";
 	const dateOnly = naive.length === 10;
 	// Parsed as UTC and read back in UTC so the wall-clock value passes
@@ -72,6 +80,16 @@ export function humanDatetime(naive: string | null): string {
 	const d = new Date(`${naive}${dateOnly ? "T00:00:00" : ""}Z`);
 	if (Number.isNaN(d.getTime())) return "";
 	const day = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS_SHORT[d.getUTCMonth()]}`;
+	if (endNaive && endNaive.slice(0, 10) > naive.slice(0, 10)) {
+		const e = new Date(`${endNaive.slice(0, 10)}T00:00:00Z`);
+		if (!Number.isNaN(e.getTime())) {
+			const year =
+				e.getUTCFullYear() !== d.getUTCFullYear()
+					? ` ${e.getUTCFullYear()}`
+					: "";
+			return `${day} – ${DAYS[e.getUTCDay()]} ${e.getUTCDate()} ${MONTHS_SHORT[e.getUTCMonth()]}${year}`;
+		}
+	}
 	if (dateOnly) return day;
 	const h24 = d.getUTCHours();
 	const h12 = h24 % 12 === 0 ? 12 : h24 % 12;
@@ -145,11 +163,12 @@ export function candidateToEvent(
 	source: SourceDefinition | undefined,
 ): Record<string, unknown> {
 	const datetimeIso = brisbaneNaive(c.startISO);
+	const datetimeEndIso = brisbaneNaive(c.endISO);
 	return {
 		title: c.title ?? "",
-		datetime: humanDatetime(datetimeIso),
+		datetime: humanDatetime(datetimeIso, datetimeEndIso),
 		datetime_iso: datetimeIso ?? "",
-		datetime_end_iso: brisbaneNaive(c.endISO) ?? "",
+		datetime_end_iso: datetimeEndIso ?? "",
 		location: composeLocation(c, source),
 		// Same scheme guard as image: a scraped url goes straight into an <a
 		// href> on the site, and new URL() happily parses "javascript:alert(1)".

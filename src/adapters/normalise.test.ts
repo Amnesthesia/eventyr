@@ -104,6 +104,29 @@ test("humanDatetime formats from the resolved instant, not the raw page text", (
 	assert.equal(humanDatetime(null), "");
 });
 
+test("humanDatetime shows the range when the end is a later day", () => {
+	assert.equal(
+		humanDatetime("2026-05-02", "2026-12-05"),
+		"Sat 2 May – Sat 5 Dec",
+	);
+	// A timed start still drops its time in a range: the span is the point.
+	assert.equal(
+		humanDatetime("2026-05-23T10:00:00", "2026-11-08"),
+		"Sat 23 May – Sun 8 Nov",
+	);
+	// Year only when it differs.
+	assert.equal(
+		humanDatetime("2026-05-29", "2027-08-11"),
+		"Fri 29 May – Wed 11 Aug 2027",
+	);
+	// Same day, or an end before the start, is not a range.
+	assert.equal(
+		humanDatetime("2026-09-08T19:00:00", "2026-09-08T22:00:00"),
+		"Tue 8 Sep, 7:00 PM",
+	);
+	assert.equal(humanDatetime("2026-09-08", "2026-09-07"), "Tue 8 Sep");
+});
+
 test("withinWindow keeps a multi-day event straddling the boundary", () => {
 	const mon = "2026-09-07";
 	const sun = "2026-09-13";

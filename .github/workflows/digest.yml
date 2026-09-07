@@ -18,10 +18,10 @@ on:
         type: boolean
         default: false
       providers:
-        description: "Comma-separated search providers to run (google, anthropic, openai, perplexity). Keys can stay set for providers left out. openai is off by default: gpt-5 is the only OpenAI model with web search and it is not worth its cost here."
+        description: "Comma-separated search providers to run (google, anthropic, openai, perplexity). Keys can stay set for providers left out. anthropic and openai are off by default on cost: Claude web search was the priciest provider per event, and gpt-5 is the only OpenAI model with web search."
         required: false
         type: string
-        default: "google,anthropic,perplexity"
+        default: "google,perplexity"
     secrets:
       ANTHROPIC_API_KEY:
         required: false
@@ -60,10 +60,10 @@ on:
         type: boolean
         default: false
       providers:
-        description: "Comma-separated search providers to run (google, anthropic, openai, perplexity). Keys can stay set for providers left out. openai is off by default: gpt-5 is the only OpenAI model with web search and it is not worth its cost here."
+        description: "Comma-separated search providers to run (google, anthropic, openai, perplexity). Keys can stay set for providers left out. anthropic and openai are off by default on cost: Claude web search was the priciest provider per event, and gpt-5 is the only OpenAI model with web search."
         required: false
         type: string
-        default: "google,anthropic,perplexity"
+        default: "google,perplexity"
 
 jobs:
   run-digest:

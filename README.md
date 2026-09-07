@@ -256,9 +256,9 @@ Knobs:
 | `PROVIDERS` | all with keys | Allowlist of search providers, e.g. `google,anthropic` |
 | `DISABLE_PROVIDERS` | — | Denylist, e.g. `openai`. Keys can stay set for providers left out |
 
-**OpenAI is off by default.** `gpt-5` is the only OpenAI model with web search, and it is not worth
-its cost for this task. Enable it with `PROVIDERS=google,anthropic,perplexity,openai` if that
-changes.
+**Anthropic and OpenAI are off by default in the weekly digest** (`google,perplexity`), both on
+cost: see the Anthropic figures below, and `gpt-5` is the only OpenAI model with web search. Enable
+either with the workflow's `providers` input or `PROVIDERS=google,perplexity,anthropic` locally.
 
 **Anthropic is the most expensive provider per event by a wide margin** — measured at ~$0.055 per
 event against Gemini's ~$0.0014, because web search bills $10 per 1,000 searches on top of tokens

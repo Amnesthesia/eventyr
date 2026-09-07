@@ -6,16 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:Gold Coast — do things
 X-WR-TIMEZONE:Australia/Brisbane
 BEGIN:VEVENT
-UID:goldcoast-1p05aqb@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T113000
-DTEND;TZID=Australia/Brisbane:20260908T133000
-SUMMARY:Sea Slug Survey in the Rocky Shores
-DESCRIPTION:A citizen science excursion to survey local sea slug population
- s at the rocky shore\, suitable for curious nature observers.
-LOCATION:Burleigh Heads
-URL:https://www.goldcoast.qld.gov.au
-END:VEVENT
-BEGIN:VEVENT
 UID:goldcoast-c77re7@dothings
 DTSTART;TZID=Australia/Brisbane:20260907T103000
 DTEND;TZID=Australia/Brisbane:20260907T123000
@@ -25,6 +15,16 @@ DESCRIPTION:A local community book club meeting to discuss selected literat
  ussion-based environment.
 LOCATION:Nerang Library
 URL:https://www.goldcoast.qld.gov.au/libraries
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1p05aqb@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T113000
+DTEND;TZID=Australia/Brisbane:20260908T133000
+SUMMARY:Sea Slug Survey in the Rocky Shores
+DESCRIPTION:A citizen science excursion to survey local sea slug population
+ s at the rocky shore\, suitable for curious nature observers.
+LOCATION:Burleigh Heads
+URL:https://www.goldcoast.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-7fgf7h@dothings
@@ -38,15 +38,15 @@ LOCATION:HOTA Cinema 2\, Surfers Paradise
 URL:https://hota.com.au/events
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-eebmzh@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T170000
-DTEND;TZID=Australia/Brisbane:20260910T190000
-SUMMARY:Twilight Seminar - AUSTRALIAN VALUES
-DESCRIPTION:An intellectually stimulating seminar exploring the evolution a
- nd interpretation of Australian societal values\, hosted at Bond Universit
- y.
-LOCATION:Bond University
-URL:https://bond.edu.au
+UID:goldcoast-i4nfjm@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T173000
+DTEND;TZID=Australia/Brisbane:20260910T193000
+SUMMARY:THE GREAT DEBATE - Surgeons vs Physicians
+DESCRIPTION:A lighthearted yet intellectually stimulating debate between me
+ dical professionals\, exploring systemic perspectives on their respective 
+ disciplines.
+LOCATION:HOTA\, Panorama Room\, Surfers Paradise
+URL:https://www.eventbrite.com.au/d/australia--bundall/hota/
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-lt3l7t@dothings
@@ -58,17 +58,6 @@ DESCRIPTION:A series of interactive sessions featuring artists discussing t
  erclasses.
 LOCATION:Wallace Nicoll Park\, Currumbin
 URL:https://www.swellsculpture.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1w0cg5y@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T100000
-DTEND;TZID=Australia/Brisbane:20260913T120000
-SUMMARY:Members Crafted through Clay Artist Talks
-DESCRIPTION:Pottery members discuss their creative processes and the techni
- cal aspects of their work in an intimate\, discussion-based studio environ
- ment.
-LOCATION:Benowa Studio\, Gold Coast
-URL:https://goldcoastpotters.com
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-n8o7f6@dothings
@@ -91,16 +80,25 @@ LOCATION:Mo's Desert Clubhouse\, Burleigh
 URL:https://experiencegoldcoast.com/events/mos-comedy-club
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-o7fztt@dothings
+UID:goldcoast-6gdwnl@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T093000
+DTEND;TZID=Australia/Brisbane:20260910T113000
+SUMMARY:Composting with Seed The Ground
+DESCRIPTION:A practical workshop on sustainable living\, focusing on home c
+ omposting techniques for regenerative gardening.
+LOCATION:Currumbin
+URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-eebmzh@dothings
 DTSTART;TZID=Australia/Brisbane:20260910T170000
 DTEND;TZID=Australia/Brisbane:20260910T190000
-SUMMARY:Miami Marketta Thursday Street Food & Free Live Music
-DESCRIPTION:A consistent weekly community gathering featuring local street 
- food stalls and rotating live music performances in a relaxed\, open-air i
- ndustrial setting. It functions as a social hub for locals to connect and 
- enjoy independent artists.
-LOCATION:Miami Marketta\, Miami
-URL:https://www.miamimarketta.com/
+SUMMARY:Twilight Seminar - AUSTRALIAN VALUES
+DESCRIPTION:An intellectually stimulating seminar exploring the evolution a
+ nd interpretation of Australian societal values\, hosted at Bond Universit
+ y.
+LOCATION:Bond University
+URL:https://bond.edu.au
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-gpx1vr@dothings
@@ -146,16 +144,6 @@ LOCATION:Sculptors Gallery\, 173 Ashmore Road\, Benowa
 URL:https://goldcoastpotters.com
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-9jpo0c@dothings
-DTSTART;VALUE=DATE:20260912
-DTEND;VALUE=DATE:20260913
-SUMMARY:Comedy Underground
-DESCRIPTION:An intimate stand-up comedy showcase featuring local and tourin
- g independent comedians in a basement venue atmosphere.
-LOCATION:The Basement\, Gold Coast
-URL:https://basedcomedy.com.au
-END:VEVENT
-BEGIN:VEVENT
 UID:goldcoast-1s2p8rc@dothings
 DTSTART;TZID=Australia/Brisbane:20260912T090000
 DTEND;TZID=Australia/Brisbane:20260912T110000
@@ -166,14 +154,47 @@ LOCATION:Gold Coast Regional Botanic Gardens\, Benowa
 URL:https://www.goldcoast.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-1sih4am@dothings
-DTSTART;TZID=Australia/Brisbane:20260907T110000
-DTEND;TZID=Australia/Brisbane:20260907T130000
-SUMMARY:Social Games at Broadbeach
-DESCRIPTION:A casual social gathering at the library featuring board games 
- and social interaction for community members.
-LOCATION:Broadbeach Library
-URL:https://www.goldcoast.qld.gov.au/libraries
+UID:goldcoast-lw6x79@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T190000
+DTEND;TZID=Australia/Brisbane:20260912T220000
+SUMMARY:Jazz Night
+DESCRIPTION:A live jazz performance in an intimate\, atmospheric lounge set
+ ting\, offering a space for music enthusiasts to gather.
+LOCATION:Roosevelt Lounge\, Broadbeach
+URL:https://musick.com.au/gold-coast/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-637w1v@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T090000
+DTEND;TZID=Australia/Brisbane:20260913T100000
+SUMMARY:Members Crafted through Clay Artist Talks
+DESCRIPTION:Ceramic artists share insights into their creative processes an
+ d the technical aspects of their work in this intimate exhibition-related 
+ talk.
+LOCATION:Sculptors Gallery\, 173 Ashmore Road\, Benowa
+URL:https://goldcoastpotters.com
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1w0cg5y@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T100000
+DTEND;TZID=Australia/Brisbane:20260913T120000
+SUMMARY:Members Crafted through Clay Artist Talks
+DESCRIPTION:Pottery members discuss their creative processes and the techni
+ cal aspects of their work in an intimate\, discussion-based studio environ
+ ment.
+LOCATION:Benowa Studio\, Gold Coast
+URL:https://goldcoastpotters.com
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-106ewhl@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T100000
+DTEND;TZID=Australia/Brisbane:20260907T160000
+SUMMARY:Between Wound & Repair – Solo Exhibition by Jo Kaiser
+DESCRIPTION:A solo exhibition by Jo Kaiser exploring themes of trauma and h
+ ealing through visual media.
+LOCATION:Studio 8 Currumbin\, Currumbin Waters
+URL:https://www.whatsongoldcoast.au/All-events/Between-Wound-and-Repair-Sol
+ o-Exhibition-by-Jo-Kaiser
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-km1ynr@dothings
@@ -197,45 +218,39 @@ LOCATION:Gold Coast Regional Botanic Gardens\, Benowa
 URL:https://www.goldcoast.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-1y6lkml@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T180000
-DTEND;TZID=Australia/Brisbane:20260909T210000
-SUMMARY:Resin Cheese Board Workshop
-DESCRIPTION:A hands-on creative workshop where participants learn to work w
- ith resin to create custom cheese boards\, suitable for beginners interest
- ed in design and craft.
-LOCATION:West Burleigh
-URL:https://www.eventbrite.com.au
+UID:goldcoast-1wruz3u@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T100000
+DTEND;TZID=Australia/Brisbane:20260908T160000
+SUMMARY:Between Wound & Repair – Solo Exhibition by Jo Kaiser
+DESCRIPTION:A solo exhibition by Jo Kaiser exploring themes of trauma and h
+ ealing through visual media.
+LOCATION:Studio 8 Currumbin\, Currumbin Waters
+URL:https://www.whatsongoldcoast.au/All-events/Between-Wound-and-Repair-Sol
+ o-Exhibition-by-Jo-Kaiser
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-6gdwnl@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T093000
-DTEND;TZID=Australia/Brisbane:20260910T113000
-SUMMARY:Composting with Seed The Ground
-DESCRIPTION:A practical workshop on sustainable living\, focusing on home c
- omposting techniques for regenerative gardening.
-LOCATION:Currumbin
-URL:https://www.goldcoast.qld.gov.au
+UID:goldcoast-o7fztt@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T170000
+DTEND;TZID=Australia/Brisbane:20260910T190000
+SUMMARY:Miami Marketta Thursday Street Food & Free Live Music
+DESCRIPTION:A consistent weekly community gathering featuring local street 
+ food stalls and rotating live music performances in a relaxed\, open-air i
+ ndustrial setting. It functions as a social hub for locals to connect and 
+ enjoy independent artists.
+LOCATION:Miami Marketta\, Miami
+URL:https://www.miamimarketta.com/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-srcgva@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T210000
-SUMMARY:Speak Easy Surfers Paradise
-DESCRIPTION:An open social event intended for casual conversation and commu
- nity engagement in a relaxed setting.
-LOCATION:The White Rhino\, Surfers Paradise
-URL:https://goldcoastspots.com/events
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1mna4yp@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T210000
-SUMMARY:Dear Seattle Regional Aus Tour 2026 with Seahaven
-DESCRIPTION:Indie-rock live music performance featuring Dear Seattle and Se
- ahaven in an intimate venue.
-LOCATION:Mo’s Desert Clubhouse\, Burleigh Heads
-URL:https://tixel.com/au/discover/Gold-Coast
+UID:goldcoast-ffrofn@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20261012
+SUMMARY:This Moment: White Rabbit Collection
+DESCRIPTION:An exhibition showcasing contemporary Chinese art from the pres
+ tigious White Rabbit collection\, offering an intellectually rich perspect
+ ive on modern cultural expression.
+LOCATION:HOTA Gallery\, Surfers Paradise
+URL:https://www.queensland.com/gb/en/things-to-do/arts-and-culture/gallerie
+ s-and-museums/hota-gold-coast
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-17ioi72@dothings
@@ -259,6 +274,18 @@ LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
 URL:https://hota.com.au/events
 END:VEVENT
 BEGIN:VEVENT
+UID:goldcoast-dzgdhp@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T193000
+DTEND;TZID=Australia/Brisbane:20260911T213000
+SUMMARY:QUARTET
+DESCRIPTION:A local production of the play 'Quartet' performed by the Gold 
+ Coast Little Theatre community\, focusing on the lives of retired opera si
+ ngers. It offers a classic theatre experience in an intimate\, long-runnin
+ g local venue.
+LOCATION:Gold Coast Little Theatre\, Southport
+URL:https://www.goldcoasttheatre.com.au/event-list
+END:VEVENT
+BEGIN:VEVENT
 UID:goldcoast-lolzym@dothings
 DTSTART;TZID=Australia/Brisbane:20260911T200000
 DTEND;TZID=Australia/Brisbane:20260911T220000
@@ -270,14 +297,14 @@ LOCATION:elsewhere\, Surfers Paradise
 URL:https://www.oztix.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-1lwgl99@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T080000
-DTEND;TZID=Australia/Brisbane:20260912T100000
-SUMMARY:NaturallyGC: Tarrabora Bushcare Tree Planting
-DESCRIPTION:A community-led environmental project involving native tree pla
- nting to restore local ecosystems.
-LOCATION:Tugun
-URL:https://www.goldcoast.qld.gov.au
+UID:goldcoast-9jpo0c@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Comedy Underground
+DESCRIPTION:An intimate stand-up comedy showcase featuring local and tourin
+ g independent comedians in a basement venue atmosphere.
+LOCATION:The Basement\, Gold Coast
+URL:https://basedcomedy.com.au
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-1953sa7@dothings
@@ -290,36 +317,14 @@ LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
 URL:https://hota.com.au/events
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-1syavva@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T140000
-DTEND;TZID=Australia/Brisbane:20260913T180000
-SUMMARY:Live Music Sunday
-DESCRIPTION:A curated selection of live acoustic and indie performances acr
- oss local Gold Coast venues\, providing an intimate atmosphere for casual 
- discovery of regional talent.
-LOCATION:Various Gold Coast venues
-URL:https://www.whatsongoldcoast.au/Home
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1va51dt@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T160000
-DTEND;TZID=Australia/Brisbane:20260913T180000
-SUMMARY:MANEVA & FABIO BRAZZA + TÚLIO - Brazilian Day
-DESCRIPTION:A cultural music showcase at Miami Marketta celebrating Brazili
- an music and arts with live performances in a relaxed\, social atmosphere.
-LOCATION:Miami Marketta\, Gold Coast
-URL:https://www.oztix.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-eelo9h@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T160000
-DTEND;TZID=Australia/Brisbane:20260913T200000
-SUMMARY:Seaside Sounds: Yacht Rock Sunset Session
-DESCRIPTION:An intimate\, community-focused outdoor music session by the co
- ast featuring live performances\, encouraging a relaxed atmosphere for loc
- als to congregate.
-LOCATION:Roughton Park\, Kirra
-URL:https://www.whatsongoldcoast.au
+UID:goldcoast-117v3qo@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T170000
+DTEND;TZID=Australia/Brisbane:20260912T210000
+SUMMARY:Miami Marketta Live Music
+DESCRIPTION:An authentic local market experience featuring live music perfo
+ rmances. Known as a community hub for creative locals to socialize.
+LOCATION:Miami Marketta\, Miami
+URL:https://musick.com.au/gold-coast/
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-1ptnt5x@dothings
@@ -343,15 +348,14 @@ LOCATION:Gallery 8\, Southport
 URL:https://www.gallery8.com.au/pop-up-exhibition
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-106ewhl@dothings
-DTSTART;TZID=Australia/Brisbane:20260907T100000
-DTEND;TZID=Australia/Brisbane:20260907T160000
-SUMMARY:Between Wound & Repair – Solo Exhibition by Jo Kaiser
-DESCRIPTION:A solo exhibition by Jo Kaiser exploring themes of trauma and h
- ealing through visual media.
-LOCATION:Studio 8 Currumbin\, Currumbin Waters
-URL:https://www.whatsongoldcoast.au/All-events/Between-Wound-and-Repair-Sol
- o-Exhibition-by-Jo-Kaiser
+UID:goldcoast-1sih4am@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T110000
+DTEND;TZID=Australia/Brisbane:20260907T130000
+SUMMARY:Social Games at Broadbeach
+DESCRIPTION:A casual social gathering at the library featuring board games 
+ and social interaction for community members.
+LOCATION:Broadbeach Library
+URL:https://www.goldcoast.qld.gov.au/libraries
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-ndztt2@dothings
@@ -375,17 +379,6 @@ LOCATION:Gallery 8\, Southport
 URL:https://www.gallery8.com.au/pop-up-exhibition
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-1wruz3u@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T100000
-DTEND;TZID=Australia/Brisbane:20260908T160000
-SUMMARY:Between Wound & Repair – Solo Exhibition by Jo Kaiser
-DESCRIPTION:A solo exhibition by Jo Kaiser exploring themes of trauma and h
- ealing through visual media.
-LOCATION:Studio 8 Currumbin\, Currumbin Waters
-URL:https://www.whatsongoldcoast.au/All-events/Between-Wound-and-Repair-Sol
- o-Exhibition-by-Jo-Kaiser
-END:VEVENT
-BEGIN:VEVENT
 UID:goldcoast-1vnvbs2@dothings
 DTSTART;TZID=Australia/Brisbane:20260909T090000
 DTEND;TZID=Australia/Brisbane:20260909T110000
@@ -394,6 +387,17 @@ DESCRIPTION:A seasonal showcase featuring various local artists in a collab
  orative pop-up gallery environment.
 LOCATION:Gallery 8\, Southport
 URL:https://www.gallery8.com.au/pop-up-exhibition
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1y6lkml@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T180000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Resin Cheese Board Workshop
+DESCRIPTION:A hands-on creative workshop where participants learn to work w
+ ith resin to create custom cheese boards\, suitable for beginners interest
+ ed in design and craft.
+LOCATION:West Burleigh
+URL:https://www.eventbrite.com.au
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-1h8i514@dothings
@@ -406,6 +410,26 @@ LOCATION:Gallery 8\, Southport
 URL:https://www.gallery8.com.au/pop-up-exhibition
 END:VEVENT
 BEGIN:VEVENT
+UID:goldcoast-srcgva@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Speak Easy Surfers Paradise
+DESCRIPTION:An open social event intended for casual conversation and commu
+ nity engagement in a relaxed setting.
+LOCATION:The White Rhino\, Surfers Paradise
+URL:https://goldcoastspots.com/events
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1mna4yp@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Dear Seattle Regional Aus Tour 2026 with Seahaven
+DESCRIPTION:Indie-rock live music performance featuring Dear Seattle and Se
+ ahaven in an intimate venue.
+LOCATION:Mo’s Desert Clubhouse\, Burleigh Heads
+URL:https://tixel.com/au/discover/Gold-Coast
+END:VEVENT
+BEGIN:VEVENT
 UID:goldcoast-1n1czzt@dothings
 DTSTART;TZID=Australia/Brisbane:20260911T090000
 DTEND;TZID=Australia/Brisbane:20260911T110000
@@ -416,16 +440,15 @@ LOCATION:Gallery 8\, Southport
 URL:https://www.gallery8.com.au/pop-up-exhibition
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-dzgdhp@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T193000
-DTEND;TZID=Australia/Brisbane:20260911T213000
-SUMMARY:QUARTET
-DESCRIPTION:A local production of the play 'Quartet' performed by the Gold 
- Coast Little Theatre community\, focusing on the lives of retired opera si
- ngers. It offers a classic theatre experience in an intimate\, long-runnin
- g local venue.
-LOCATION:Gold Coast Little Theatre\, Southport
-URL:https://www.goldcoasttheatre.com.au/event-list
+UID:goldcoast-1r9pv5s@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T200000
+DTEND;TZID=Australia/Brisbane:20260911T220000
+SUMMARY:Fresh Fridays at Comedy Underground
+DESCRIPTION:A curated stand-up comedy showcase featuring local talent in an
+  intimate venue environment.
+LOCATION:Comedy Underground\, Gold Coast
+URL:https://experiencegoldcoast.com/events/the-jazz-room-a-frank-sinatra--l
+ ouis-armstrong-tribute
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-ackfgi@dothings
@@ -437,6 +460,16 @@ DESCRIPTION:An intimate\, atmospheric live music performance featuring a tr
  ting.
 LOCATION:Bond University
 URL:https://bond.edu.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1lwgl99@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T080000
+DTEND;TZID=Australia/Brisbane:20260912T100000
+SUMMARY:NaturallyGC: Tarrabora Bushcare Tree Planting
+DESCRIPTION:A community-led environmental project involving native tree pla
+ nting to restore local ecosystems.
+LOCATION:Tugun
+URL:https://www.goldcoast.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-1su7uyi@dothings
@@ -491,6 +524,38 @@ LOCATION:Tedder Avenue\, Main Beach
 URL:https://www.whatsongoldcoast.au
 END:VEVENT
 BEGIN:VEVENT
+UID:goldcoast-1syavva@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T180000
+SUMMARY:Live Music Sunday
+DESCRIPTION:A curated selection of live acoustic and indie performances acr
+ oss local Gold Coast venues\, providing an intimate atmosphere for casual 
+ discovery of regional talent.
+LOCATION:Various Gold Coast venues
+URL:https://www.whatsongoldcoast.au/Home
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1va51dt@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T160000
+DTEND;TZID=Australia/Brisbane:20260913T180000
+SUMMARY:MANEVA & FABIO BRAZZA + TÚLIO - Brazilian Day
+DESCRIPTION:A cultural music showcase at Miami Marketta celebrating Brazili
+ an music and arts with live performances in a relaxed\, social atmosphere.
+LOCATION:Miami Marketta\, Gold Coast
+URL:https://www.oztix.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-eelo9h@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T160000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:Seaside Sounds: Yacht Rock Sunset Session
+DESCRIPTION:An intimate\, community-focused outdoor music session by the co
+ ast featuring live performances\, encouraging a relaxed atmosphere for loc
+ als to congregate.
+LOCATION:Roughton Park\, Kirra
+URL:https://www.whatsongoldcoast.au
+END:VEVENT
+BEGIN:VEVENT
 UID:goldcoast-5hk783@dothings
 DTSTART;TZID=Australia/Brisbane:20260907T090000
 DTEND;TZID=Australia/Brisbane:20260907T110000
@@ -513,16 +578,6 @@ URL:https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-august-se
  ptember-october-2026/
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-2wtb17@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T210000
-SUMMARY:Elegantly Wasted – Featuring the Songs of INXS
-DESCRIPTION:A tribute concert celebrating the musical legacy of INXS at the
-  Gold Coast's primary arts hub.
-LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
-URL:https://tixel.com/au/discover/Gold-Coast
-END:VEVENT
-BEGIN:VEVENT
 UID:goldcoast-1xpqbnb@dothings
 DTSTART;TZID=Australia/Brisbane:20260910T190000
 DTEND;TZID=Australia/Brisbane:20260910T210000
@@ -541,5 +596,15 @@ DESCRIPTION:Regular live music performances by local artists at The Grand H
  otel.
 LOCATION:The Grand Hotel\, Labrador
 URL:https://musick.com.au/gig/live-music-2026-09-05-21/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-2wtb17@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Elegantly Wasted – Featuring the Songs of INXS
+DESCRIPTION:A tribute concert celebrating the musical legacy of INXS at the
+  Gold Coast's primary arts hub.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://tixel.com/au/discover/Gold-Coast
 END:VEVENT
 END:VCALENDAR

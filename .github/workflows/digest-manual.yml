@@ -27,7 +27,7 @@ on:
         description: "Comma-separated search providers to run (google, anthropic, openai, perplexity)"
         required: false
         type: string
-        default: "google,anthropic,perplexity"
+        default: "google,perplexity"
 
 jobs:
   digest:
