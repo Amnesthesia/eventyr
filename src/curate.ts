@@ -1,4 +1,10 @@
-import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import {
+	existsSync,
+	readdirSync,
+	readFileSync,
+	statSync,
+	writeFileSync,
+} from "node:fs";
 import { join, relative } from "node:path";
 import { isPast, withinWindow } from "./adapters/normalise.ts";
 import {
@@ -64,8 +70,33 @@ const PREVIOUS: Record<string, unknown> | null = (() => {
 	}
 })();
 
+/**
+ * Skip only when this week's digest exists AND no curated input is newer than
+ * it. The week stamp alone missed a real case: a provider that failed in the
+ * morning run (max_tokens, nothing written) was collected by a re-dispatch 20
+ * minutes later, and curate skipped on the stamp — 16 events sat on disk,
+ * invisible until someone passed FORCE. mtime is trustworthy here: a checkout
+ * stamps every file at the same instant, so anything written during the run is
+ * strictly newer. Rank and geocode follow on their own, because writeJson
+ * drops ranked_at/geocoded_at.
+ *
+ * ponytail: within one run only — a fresh checkout stamps inputs and output
+ * alike, so an input committed by an earlier run is never "newer". Record the
+ * consumed inputs (path + hash) in the digest if cross-run matters.
+ */
 function alreadyCuratedThisWeek(monday: Date): boolean {
-	return PREVIOUS?.week_start === toISODate(monday);
+	if (PREVIOUS?.week_start !== toISODate(monday)) return false;
+	const outMtime = statSync(OUT_PATH).mtimeMs;
+	const newer = findJsonFiles(join(DATA_ROOT, CITY), "curated").filter(
+		(f) => statSync(f).mtimeMs > outMtime,
+	);
+	if (newer.length === 0) return true;
+	console.log(
+		`→ ${newer.length} curated input(s) newer than ${CITY}.json — re-curating:`,
+	);
+	for (const f of newer.slice(0, 5))
+		console.log(`    ${relative(DATA_ROOT, f)}`);
+	return false;
 }
 
 function previousEvents(): Record<string, unknown>[] {
