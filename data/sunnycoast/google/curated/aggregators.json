@@ -2,30 +2,73 @@
   "city_key": "sunnycoast",
   "provider": "google",
   "tier": "aggregators",
-  "week_start": "2026-08-24",
-  "week_end": "2026-08-30",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Sunshine Coast National Art Prize 2026 Finalists Exhibition",
-      "datetime": "24 August 2026 - 30 August 2026",
-      "location": "Caloundra Regional Gallery",
-      "link": "https://gallery.sunshinecoast.qld.gov.au",
+      "title": "Pacific Dance Showcase",
+      "datetime": "8 September 2026",
+      "location": "Caloundra",
+      "link": "https://www.sunshinecoast.qld.gov.au",
       "category": "Arts / Exhibition",
-      "cost": "Free",
+      "cost": "Contact organiser",
       "source": "Sunshine Coast Council",
-      "description": "An exhibition showcasing the finalists of a national art prize, featuring diverse contemporary works from across Australia. This provides an opportunity to engage with high-caliber visual art in a focused gallery setting.",
+      "description": "A cultural showcase featuring traditional and contemporary dance performances from the Pacific region, focusing on artistic heritage and community storytelling.",
       "tags": [
-        "art",
-        "exhibition",
-        "gallery",
-        "free"
+        "dance",
+        "culture",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true,
-      "datetime_iso": "2026-08-24",
-      "datetime_end_iso": "2026-10-11",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "image": ""
+    },
+    {
+      "title": "Big Love Festival",
+      "datetime": "11 September 2026",
+      "location": "Eudlo",
+      "link": "https://biglovefestival.com.au",
+      "category": "Concert / Music",
+      "cost": "Ticketed",
+      "source": "Big Love Festival",
+      "description": "A community-focused boutique music and arts festival set in the hinterland, emphasizing intimate performances, workshops, and a collaborative, creative atmosphere.",
+      "tags": [
+        "music",
+        "arts",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-13",
+      "image": ""
+    },
+    {
+      "title": "Mary Valley Scarecrow Festival",
+      "datetime": "7 September 2026",
+      "location": "Mary Valley (Imbil/Kandanga/Amamoor)",
+      "link": "https://www.maryvalleyartslink.com.au",
+      "category": "Community / Other",
+      "cost": "Free",
+      "source": "Mary Valley Arts Link",
+      "description": "A creative community trail across the Mary Valley townships where residents display imaginative, handmade scarecrows, fostering a fun and collaborative local spirit.",
+      "tags": [
+        "art",
+        "community",
+        "outdoor"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true,
+      "datetime_iso": "2026-09-07",
+      "datetime_end_iso": "2026-09-13",
       "image": ""
     }
   ]
