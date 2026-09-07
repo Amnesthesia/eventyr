@@ -4,6 +4,7 @@ import ExportSaved from "./components/ExportSaved";
 import FilterBar from "./components/FilterBar";
 import Header from "./components/Header";
 import { Intro } from "./components/Intro";
+import NotificationPrompt from "./components/NotificationPrompt";
 import SwipeMode from "./components/SwipeMode";
 import { useEventsContext } from "./context";
 import { dateWindowFor, groupEvents } from "./utils/grouping";
@@ -50,7 +51,10 @@ export default function AppShell() {
 							<div id="starred-section">
 								<div className="section-head">
 									<h2 className="section-label">saved</h2>
-									<ExportSaved />
+									<div className="section-head-actions">
+										<NotificationPrompt />
+										<ExportSaved />
+									</div>
 								</div>
 								<EventGrid events={starredEvents} isTopPick={false} />
 							</div>

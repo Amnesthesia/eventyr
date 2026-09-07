@@ -124,6 +124,17 @@ Note that the location is sent **exactly as it appears**, with no city appended.
 publishing city was tried and is actively wrong — it gives the geocoder a fallback it latches onto,
 and Toowoomba, Surfers Paradise and Newtown NSW all came back as "Brisbane QLD" at 0 km.
 
+## Progressive Web App (PWA) & Event Notifications
+
+The site is an installable PWA that runs offline and supports scheduled event notifications on phones:
+
+- **Installable on mobile**: Open in Safari (iOS) and tap **"Add to Home Screen"**, or in Chrome (Android) and tap **"Install App"**. The app runs in standalone display mode with dedicated touch icons (`public/icons/`) and Web App Manifest (`public/manifest.webmanifest`).
+- **Offline support**: `public/sw.js` precaches the app shell and uses a network-first strategy for pages with cache fallback, plus stale-while-revalidate for event data and static assets.
+- **1-hour event reminders**: Bookmarking (saving/starring) an event schedules a notification to fire **1 hour before the event begins** (or 8:00 AM on the day for all-day events). Supported via WICG Notification Triggers (`TimestampTrigger`), Service Worker messages, and foreground timers.
+- **8:00 AM daily morning digest**: Every morning at 8:00 AM, the app sends a digest notification summarizing all bookmarked events scheduled for today. Supported via Periodic Background Sync (`periodicsync`) in installed PWAs and automatic lifecycle checks on resume/open.
+- **Privacy-first & zero-backend**: Bookmarks and reminders are stored locally in the browser (`localStorage` and `IndexedDB`). No push servers, user accounts, or external tracking services are involved.
+- **Notification settings**: A status pill in the "saved" section indicates reminder status ("Reminders on", "Get reminders", or "Reminders blocked") and provides a **"Send test notification"** button to verify delivery.
+
 ## Source configuration
 
 `sources/{city}.yml` is the single source of truth per city. Three tiers
@@ -353,3 +364,6 @@ no registration — just write `{city_key, provider, tier, week_start, week_end,
   `extract.ts`, `embeddedJson.ts`, `llmExtract.ts`, `dates.ts`, `normalise.ts`, `annotate.ts`.
 - `src/dedupe.ts` / `src/dedupeClassifier.ts` — cross-source dedupe.
 - `app/` — React components; `src/pages/` — Astro pages.
+- `app/utils/notifications.ts` — 1-hour event reminders, 8:00 AM morning digest, and notification lifecycle.
+- `app/utils/pwaStorage.ts` — IndexedDB persistence for bookmarked events shared with the Service Worker.
+- `public/sw.js` / `public/manifest.webmanifest` — Service Worker (offline caching, sync, triggers) and PWA manifest.

@@ -326,8 +326,20 @@ const websiteSchema = {
       href={feedUrl}
     />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="do things" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script is:inline>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch(() => {});
+        });
+      }
+    </script>
     <script type="application/ld+json" set:html={JSON.stringify(schemaOverride ?? schema)} />
     <script
       type="application/ld+json"

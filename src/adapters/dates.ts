@@ -234,10 +234,7 @@ function parse(raw: string, referenceDate: Date): chrono.ParsedResult | null {
 	// precisely because it is gated on a month NAME being present: "Sep 16" and
 	// "16 Sep" are both unambiguous, so the two locales cannot disagree. Bare
 	// numerics never reach this branch and stay day-first.
-	if (
-		(!result || !result.start.isCertain("day")) &&
-		EXPLICIT_DATE.test(trimmed)
-	) {
+	if (!result?.start.isCertain("day") && EXPLICIT_DATE.test(trimmed)) {
 		const monthFirst = chrono.en.parse(trimmed, context, options)[0];
 		if (monthFirst?.start.isCertain("day")) result = monthFirst;
 	}

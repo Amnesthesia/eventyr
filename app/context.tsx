@@ -33,6 +33,12 @@ import {
 	todayIso,
 } from "./utils/dates";
 import type { GroupBy } from "./utils/grouping";
+import {
+	cancel1hReminder,
+	checkAndNotifyMorningDigest,
+	schedule1hReminder,
+	syncAllStarredEvents,
+} from "./utils/notifications";
 import { matchesQuery, queryTokens } from "./utils/search";
 
 /** The identity saved/hidden sets are keyed by. Not eventHash: stars already
@@ -125,11 +131,14 @@ export function EventsProvider({
 	initialDateRange = null,
 }: ProviderProps) {
 	const { theme, toggle: toggleTheme } = useColorTheme();
+	const cityData = initialData;
+	const cities = allCities;
+	const cityKey = initialData.city_key;
+
 	const {
 		set: starred,
-		toggle: toggleStar,
-		add: saveEvent,
-		remove: unsaveEvent,
+		add: baseSaveEvent,
+		remove: baseUnsaveEvent,
 	} = useStoredSet("eventyr:starred");
 	const {
 		set: hidden,
@@ -139,9 +148,54 @@ export function EventsProvider({
 	} = useStoredSet("eventyr:hidden");
 	const [hideLowScore, setHideLowScore] = useState(false);
 
-	const cityData = initialData;
-	const cities = allCities;
-	const cityKey = initialData.city_key;
+	const saveEvent = useCallback(
+		(id: string) => {
+			baseSaveEvent(id);
+			const ev = cityData.events.find((e) => eventId(e) === id);
+			if (ev) {
+				schedule1hReminder(ev, cityKey, true);
+			}
+		},
+		[baseSaveEvent, cityData.events, cityKey],
+	);
+
+	const unsaveEvent = useCallback(
+		(id: string) => {
+			baseUnsaveEvent(id);
+			cancel1hReminder(id);
+		},
+		[baseUnsaveEvent],
+	);
+
+	const toggleStar = useCallback(
+		(id: string) => {
+			if (starred.has(id)) {
+				unsaveEvent(id);
+			} else {
+				saveEvent(id);
+			}
+		},
+		[starred, saveEvent, unsaveEvent],
+	);
+
+	useEffect(() => {
+		if (cityData?.events) {
+			syncAllStarredEvents(cityData.events, starred, cityKey);
+		}
+
+		function onVisibilityChange() {
+			if (document.visibilityState === "visible") {
+				checkAndNotifyMorningDigest(cityData.events, starred, cityKey);
+			}
+		}
+
+		document.addEventListener("visibilitychange", onVisibilityChange);
+		window.addEventListener("focus", onVisibilityChange);
+		return () => {
+			document.removeEventListener("visibilitychange", onVisibilityChange);
+			window.removeEventListener("focus", onVisibilityChange);
+		};
+	}, [cityData.events, starred, cityKey]);
 
 	function setCity(key: string) {
 		const slug = KEY_TO_SLUG[key] ?? key;
