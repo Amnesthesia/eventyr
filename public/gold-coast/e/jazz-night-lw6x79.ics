@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jazz Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-lw6x79@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T190000
+DTEND;TZID=Australia/Brisbane:20260912T220000
+SUMMARY:Jazz Night
+DESCRIPTION:A live jazz performance in an intimate\, atmospheric lounge set
+ ting\, offering a space for music enthusiasts to gather.
+LOCATION:Roosevelt Lounge\, Broadbeach
+URL:https://musick.com.au/gold-coast/
+END:VEVENT
+END:VCALENDAR

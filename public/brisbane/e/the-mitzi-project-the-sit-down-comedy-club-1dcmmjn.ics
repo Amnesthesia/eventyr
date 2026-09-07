@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Mitzi Project @ The Sit Down Comedy Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dcmmjn@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T200000
+DTEND;TZID=Australia/Brisbane:20260910T220000
+SUMMARY:The Mitzi Project @ The Sit Down Comedy Club
+DESCRIPTION:The Mitzi Project @ The Sit Down Comedy Club is a comedy event 
+ held at The Sit Down Comedy Club.
+LOCATION:The Sit Down Comedy Club
+URL:https://www.standup.com.au/event/the-mitzi-project-the-sit-down-comedy-
+ club-73/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Improv Course
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-gcgd8i@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Improv Course
+DESCRIPTION:A hands-on\, community-focused course teaching the fundamentals
+  of improvisation and collaborative storytelling through active participat
+ ion.
+LOCATION:Cavanbah Centre\, 249 Ewingsdale Road\, Byron Bay
+URL:https://byronbayexperience.com.au/byron-bay-events-guide-whats-on/
+END:VEVENT
+END:VCALENDAR

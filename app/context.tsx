@@ -10,7 +10,7 @@ import {
 import {
 	type CostLocale,
 	DEFAULT_COST_LOCALE,
-	LOW_SCORE_THRESHOLD,
+	meetsScoreFloor,
 	TOP_PICK_THRESHOLD,
 } from "../src/shared.ts";
 import { useColorTheme } from "./hooks/useColorTheme";
@@ -146,7 +146,11 @@ export function EventsProvider({
 		remove: unhideEvent,
 		clear: clearHidden,
 	} = useStoredSet("eventyr:hidden");
-	const [hideLowScore, setHideLowScore] = useState(false);
+	// On by default. Below LOW_SCORE_THRESHOLD is mostly venue promotion —
+	// happy hours, "$13 Lunch Special", schnitzel nights — which the ranker
+	// scores 1–3 and which nobody opened this site to read. The toggle in the
+	// filter bar brings them back, so nothing is unreachable.
+	const [hideLowScore, setHideLowScore] = useState(true);
 
 	const saveEvent = useCallback(
 		(id: string) => {
@@ -267,8 +271,7 @@ export function EventsProvider({
 		const tokens = queryTokens(query);
 		return cityData.events.filter((event) => {
 			if (hidden.has(eventId(event))) return false;
-			if (hideLowScore && (event.score || 0) < LOW_SCORE_THRESHOLD)
-				return false;
+			if (hideLowScore && !meetsScoreFloor(event.score)) return false;
 			if (!matchesQuery(event, tokens)) return false;
 			const catOk = activeCat === "All" || event.category === activeCat;
 

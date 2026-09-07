@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Strong is the New Pretty
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1haaai3@dothings
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260920
+SUMMARY:Strong is the New Pretty
+DESCRIPTION:An exhibition celebrating strength\, identity\, and individuali
+ ty through photography\, part of the annual Brisbane Festival programming.
+LOCATION:Queensland Performing Arts Centre\, South Brisbane
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

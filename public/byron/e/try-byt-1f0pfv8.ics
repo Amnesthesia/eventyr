@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TRY BYT
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1f0pfv8@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T153000
+DTEND;TZID=Australia/Brisbane:20260907T163000
+SUMMARY:TRY BYT
+DESCRIPTION:Drama/ Theatre classes for 8-11 yr olds. TRY BYT classes are an
+  introduction to drama and theatre. Classes focus on improvisation skills\
+ , characterisation\, team building\, langauge skills\, and basic playbuild
+ ing. We offer performance opportunities however there is no pressure to pe
+ rform for those who just enjoy participating in class.
+LOCATION:UNITING CHURCH HALL\, DALLEY STREET\, MULLUMBIMBY
+URL:https://www.byronyouththeatre.com/classes-for-2022/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Run Wild through South Bank
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-axpqgy@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Run Wild through South Bank
+DESCRIPTION:Run Wild through South Bank is a community / other event at Bri
+ sbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/run-wild-through-south-bank
+END:VEVENT
+END:VCALENDAR

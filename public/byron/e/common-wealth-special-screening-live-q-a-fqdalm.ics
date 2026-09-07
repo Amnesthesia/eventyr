@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Common Wealth — Special screening + live Q&A
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-fqdalm@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Common Wealth — Special screening + live Q&A
+DESCRIPTION:A special screening of the film followed by an in-person Q&A wi
+ th director Kane Guglielmi\, focusing on the themes of the documentary.
+LOCATION:Byron Theatre\, 69 Jonson St\, Byron Bay
+URL:https://www.byroncentre.com.au/theatre-events/common-wealth
+END:VEVENT
+END:VCALENDAR

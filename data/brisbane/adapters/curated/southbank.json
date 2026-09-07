@@ -7,30 +7,8 @@
   "week_end": "2026-09-13",
   "events": [
     {
-      "title": "The Choir of Man",
-      "datetime": "Thu 3 Sep",
-      "datetime_iso": "2026-09-03",
-      "datetime_end_iso": "2026-09-26",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/the-choir-of-man",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "The Choir of Man is a concert performance held at South Bank Parklands.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "performance",
-        "theatre"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Bright Nights by ANZ",
-      "datetime": "Fri 4 Sep",
+      "datetime": "Fri 4 Sep – Sat 26 Sep",
       "datetime_iso": "2026-09-04",
       "datetime_end_iso": "2026-09-26",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -51,21 +29,21 @@
       "creative": true
     },
     {
-      "title": "Fijian Flying Circus",
-      "datetime": "Fri 4 Sep",
-      "datetime_iso": "2026-09-04",
-      "datetime_end_iso": "2026-10-04",
+      "title": "The Choir of Man",
+      "datetime": "Thu 3 Sep – Sat 26 Sep",
+      "datetime_iso": "2026-09-03",
+      "datetime_end_iso": "2026-09-26",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/fijian-flying-circus",
+      "link": "https://www.visitsouthbank.com.au/events/the-choir-of-man",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Fijian Flying Circus is a concert performance held at South Bank Parklands.",
+      "description": "The Choir of Man is a concert performance held at South Bank Parklands.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "circus",
+        "music",
         "performance",
-        "family"
+        "theatre"
       ],
       "social": false,
       "intellectual": false,
@@ -74,7 +52,7 @@
     },
     {
       "title": "Pasta Club at OTTO",
-      "datetime": "Wed 9 Sep",
+      "datetime": "Wed 9 Sep – Sun 13 Sep",
       "datetime_iso": "2026-09-09",
       "datetime_end_iso": "2026-09-13",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -95,30 +73,30 @@
       "creative": false
     },
     {
-      "title": "Croc! Lost Giants to Living Legends",
-      "datetime": "Fri 24 Oct",
-      "datetime_iso": "2025-10-24",
-      "datetime_end_iso": "2026-10-05",
+      "title": "DAYBREAKER",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends",
+      "link": "https://www.visitsouthbank.com.au/events/daybreaker",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Croc! Lost Giants to Living Legends is an arts exhibition held at South Bank Parklands.",
+      "description": "DAYBREAKER is a social meetup held at South Bank Parklands.",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Social / Meetup",
       "tags": [
-        "history",
-        "nature",
-        "exhibition"
+        "dance",
+        "morning",
+        "fitness"
       ],
-      "social": false,
-      "intellectual": true,
+      "social": true,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "All You Can Scoop Tiramisu At Ma Pa Me",
-      "datetime": "Tue 1 Sep",
+      "datetime": "Tue 1 Sep – Wed 30 Sep",
       "datetime_iso": "2026-09-01",
       "datetime_end_iso": "2026-09-30",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -140,7 +118,7 @@
     },
     {
       "title": "The Knock ‘Em Downs",
-      "datetime": "Fri 4 Sep",
+      "datetime": "Fri 4 Sep – Sat 26 Sep",
       "datetime_iso": "2026-09-04",
       "datetime_end_iso": "2026-09-26",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -162,7 +140,7 @@
     },
     {
       "title": "Piano Man",
-      "datetime": "Wed 9 Sep",
+      "datetime": "Wed 9 Sep – Sat 26 Sep",
       "datetime_iso": "2026-09-09",
       "datetime_end_iso": "2026-09-26",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -178,28 +156,6 @@
         "live"
       ],
       "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "DAYBREAKER",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/daybreaker",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "DAYBREAKER is a social meetup held at South Bank Parklands.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "dance",
-        "morning",
-        "fitness"
-      ],
-      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -250,7 +206,7 @@
     },
     {
       "title": "This Show is a Joke!",
-      "datetime": "Sun 20 Sep",
+      "datetime": "Sun 20 Sep – Sat 26 Sep",
       "datetime_iso": "2026-09-20",
       "datetime_end_iso": "2026-09-26",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -272,7 +228,7 @@
     },
     {
       "title": "Strong is the New Pretty",
-      "datetime": "Tue 1 Sep",
+      "datetime": "Tue 1 Sep – Sat 19 Sep",
       "datetime_iso": "2026-09-01",
       "datetime_end_iso": "2026-09-19",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -294,7 +250,7 @@
     },
     {
       "title": "Shel We",
-      "datetime": "Thu 10 Sep",
+      "datetime": "Thu 10 Sep – Sun 13 Sep",
       "datetime_iso": "2026-09-10",
       "datetime_end_iso": "2026-09-13",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -316,7 +272,7 @@
     },
     {
       "title": "Are You Lonesome Tonight: Brisbane Festival",
-      "datetime": "Wed 9 Sep",
+      "datetime": "Wed 9 Sep – Sat 12 Sep",
       "datetime_iso": "2026-09-09",
       "datetime_end_iso": "2026-09-12",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -337,30 +293,8 @@
       "creative": true
     },
     {
-      "title": "Brisbane's Biggest Steak Frites",
-      "datetime": "Mon 7 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-07T17:00:00",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/brisbanes-biggest-steak-frites",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Brisbane's Biggest Steak Frites is a community event held at South Bank Parklands.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Anastasia The Musical",
-      "datetime": "Wed 16 Sep",
+      "datetime": "Wed 16 Sep – Sun 18 Oct",
       "datetime_iso": "2026-09-16",
       "datetime_end_iso": "2026-10-18",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -381,8 +315,30 @@
       "creative": true
     },
     {
+      "title": "Croc! Lost Giants to Living Legends",
+      "datetime": "Fri 24 Oct 2025 – Mon 5 Oct 2026",
+      "datetime_iso": "2025-10-24",
+      "datetime_end_iso": "2026-10-05",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Croc! Lost Giants to Living Legends is an arts exhibition held at South Bank Parklands.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "history",
+        "nature",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "The Book of Mormon The Musical",
-      "datetime": "Fri 31 Jul",
+      "datetime": "Fri 31 Jul – Sun 4 Oct",
       "datetime_iso": "2026-07-31",
       "datetime_end_iso": "2026-10-04",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -404,7 +360,7 @@
     },
     {
       "title": "Opera Queensland Young Artist Program Showcase: Viva La Voce",
-      "datetime": "Fri 11 Sep",
+      "datetime": "Fri 11 Sep – Sat 12 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-12",
       "location": "South Bank Parklands, Grey St, South Bank",
@@ -426,14 +382,14 @@
     },
     {
       "title": "RocKwiz Rocks Brisbane",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-12T19:00:00",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/rockwiz-rocks-brisbane",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "RocKwiz Rocks Brisbane is a concert performance held at South Bank Parklands.",
+      "description": "",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -441,26 +397,26 @@
         "quiz",
         "performance"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Undying: Abdul-Rahman Abdullah",
-      "datetime": "Thu 13 Aug",
-      "datetime_iso": "2026-08-13",
+      "datetime": "Thu 13 Aug, 11:00 AM – Sat 7 Nov",
+      "datetime_iso": "2026-08-13T11:00:00",
       "datetime_end_iso": "2026-11-07",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/undying-abdul-rahman-abdullah",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Undying: Abdul-Rahman Abdullah is an arts exhibition held at South Bank Parklands.",
+      "description": "",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "sculpture",
         "art",
+        "sculpture",
         "exhibition"
       ],
       "social": false,
@@ -470,14 +426,14 @@
     },
     {
       "title": "Piano Man: Celebrating the Music of Billy Joel",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "datetime": "Thu 17 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-17T19:30:00",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/piano-man-celebrating-the-music-of-billy-joel",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Piano Man: Celebrating the Music of Billy Joel is a concert performance held at South Bank Parklands.",
+      "description": "",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -492,42 +448,42 @@
     },
     {
       "title": "Fragile and Forever: Ceramics from the Queensland Museum Collection",
-      "datetime": "Fri 29 May",
-      "datetime_iso": "2026-05-29",
+      "datetime": "Fri 29 May 2026, 9:30 AM – Wed 11 Aug 2027",
+      "datetime_iso": "2026-05-29T09:30:00",
       "datetime_end_iso": "2027-08-11",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/fragile-and-forever-ceramics-from-the-queensland-museum-collection",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Fragile and Forever: Ceramics from the Queensland Museum Collection is an arts exhibition held at South Bank Parklands.",
+      "description": "",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "ceramics",
         "history",
-        "exhibition"
+        "museum"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Georgie Carroll - Infectious - Brisbane",
-      "datetime": "Fri 18 Sep",
-      "datetime_iso": "2026-09-18",
+      "datetime": "Fri 18 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-18T19:30:00",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/georgie-carroll---infectious---brisbane",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Georgie Carroll - Infectious - Brisbane is a concert performance held at South Bank Parklands.",
+      "description": "",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "comedy",
         "performance",
-        "standup"
+        "live"
       ],
       "social": false,
       "intellectual": false,
@@ -535,8 +491,96 @@
       "creative": true
     },
     {
+      "title": "Bright Nights by ANZ",
+      "datetime": "Fri 4 Sep – Sat 26 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "2026-09-26",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/bright-nights-by-anz",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Bright Nights by ANZ is an arts exhibition held at South Bank Parklands.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "light",
+        "installation",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "DAYBREAKER",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "2026-09-12",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/daybreaker",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "DAYBREAKER is a social meetup held at South Bank Parklands.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "dance",
+        "morning",
+        "fitness"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Sunday Social",
+      "datetime": "Sun 5 Oct 2025, 2:00 PM – Thu 31 Dec 2026",
+      "datetime_iso": "2025-10-05T14:00:00",
+      "datetime_end_iso": "2026-12-31",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/sunday-social",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Sunday Social is a social event held at South Bank Parklands.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "social",
+        "sunday",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "South Bank Guided Tours",
+      "datetime": "Sun 9 Nov 2025, 10:00 AM – Sun 28 Feb 2027",
+      "datetime_iso": "2025-11-09T10:00:00",
+      "datetime_end_iso": "2027-02-28",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/south-bank-guided-tours",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "South Bank Guided Tours is a public lecture event held at South Bank Parklands.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "tour",
+        "history",
+        "walking"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Croc! Lost Giants to Living Legends",
-      "datetime": "Fri 24 Oct",
+      "datetime": "Fri 24 Oct 2025 – Mon 5 Oct 2026",
       "datetime_iso": "2025-10-24",
       "datetime_end_iso": "2026-10-05",
       "location": "South Bank Parklands, Grey St, South Bank",

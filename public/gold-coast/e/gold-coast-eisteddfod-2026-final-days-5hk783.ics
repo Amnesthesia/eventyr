@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Gold Coast Eisteddfod 2026 – Final Days
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-5hk783@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T090000
+DTEND;TZID=Australia/Brisbane:20260907T110000
+SUMMARY:Gold Coast Eisteddfod 2026 – Final Days
+DESCRIPTION:The concluding performances of the Gold Coast Eisteddfod\, show
+ casing regional talent in music\, dance\, and speech.
+LOCATION:Various Gold Coast venues\, Gold Coast
+URL:https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-august-se
+ ptember-october-2026/
+END:VEVENT
+END:VCALENDAR

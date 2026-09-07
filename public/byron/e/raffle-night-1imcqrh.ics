@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Raffle Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1imcqrh@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T180000
+DTEND;TZID=Australia/Brisbane:20260907T200000
+SUMMARY:Raffle Night
+DESCRIPTION:Thursdays | Tix from 6PM Win Fruit\, Veggie & Meat Trays Drawn 
+ 7PM
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/raffle-night-thursdays-2-2/2026-09-
+ 10/
+END:VEVENT
+END:VCALENDAR

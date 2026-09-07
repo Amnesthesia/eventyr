@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SWELL Artist-Led Sculpture Workshops
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-89n1pm@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T090000
+DTEND;TZID=Australia/Brisbane:20260913T170000
+SUMMARY:SWELL Artist-Led Sculpture Workshops
+DESCRIPTION:Hands-on sessions led by professional sculptors where participa
+ nts learn specific sculptural techniques in an outdoor environment.
+LOCATION:Wallace Nicoll Park / Currumbin Beach
+URL:https://www.swellsculpture.com.au
+END:VEVENT
+END:VCALENDAR

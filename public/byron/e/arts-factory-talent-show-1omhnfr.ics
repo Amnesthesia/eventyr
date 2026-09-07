@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Arts Factory Talent Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1omhnfr@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T193000
+DTEND;TZID=Australia/Brisbane:20260907T213000
+SUMMARY:Arts Factory Talent Show
+DESCRIPTION:A local showcase featuring eclectic talent in the community-foc
+ used atmosphere of the Arts Factory garden.
+LOCATION:Arts Factory Garden Bar\, 1 Skinners Shoot Rd\, Byron Bay
+URL:https://www.eventbrite.com.au/e/arts-factory-talent-show-tickets-198247
+ 5925861
+END:VEVENT
+END:VCALENDAR

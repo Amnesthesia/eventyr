@@ -109,15 +109,22 @@ test("humanDatetime shows the range when the end is a later day", () => {
 		humanDatetime("2026-05-02", "2026-12-05"),
 		"Sat 2 May – Sat 5 Dec",
 	);
-	// A timed start still drops its time in a range: the span is the point.
+	// A timed start keeps its time in a range. This used to drop it — the span
+	// was treated as the whole point — but "when does it start today?" is the
+	// question a card has to answer, and the time was already known.
 	assert.equal(
 		humanDatetime("2026-05-23T10:00:00", "2026-11-08"),
-		"Sat 23 May – Sun 8 Nov",
+		"Sat 23 May, 10:00 AM – Sun 8 Nov",
 	);
-	// Year only when it differs.
+	// A run crossing a new year is dated at BOTH ends: with the year on the end
+	// alone, a 2025 opening reads as this May.
 	assert.equal(
 		humanDatetime("2026-05-29", "2027-08-11"),
-		"Fri 29 May – Wed 11 Aug 2027",
+		"Fri 29 May 2026 – Wed 11 Aug 2027",
+	);
+	assert.equal(
+		humanDatetime("2023-09-20T10:00:00", "2027-01-26"),
+		"Wed 20 Sep 2023, 10:00 AM – Tue 26 Jan 2027",
 	);
 	// Same day, or an end before the start, is not a range.
 	assert.equal(

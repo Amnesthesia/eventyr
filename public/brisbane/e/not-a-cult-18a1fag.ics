@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Not a Cult*
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-18a1fag@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Not a Cult*
+DESCRIPTION:Not a Cult* is a community / other event at Brisbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/not-a-cult
+END:VEVENT
+END:VCALENDAR

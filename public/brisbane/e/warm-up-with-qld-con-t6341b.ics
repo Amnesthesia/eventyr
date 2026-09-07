@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Warm-up with QLD Con
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-t6341b@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Warm-up with QLD Con
+DESCRIPTION:Warm-up with QLD Con is a concert / music event at Brisbane Fes
+ tival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/warm-up-with-qld-con
+END:VEVENT
+END:VCALENDAR

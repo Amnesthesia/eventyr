@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Block Print Workshop & Pop‑Up Boutique
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-i5nj3w@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260912T120000
+SUMMARY:Block Print Workshop & Pop‑Up Boutique
+DESCRIPTION:A practical workshop teaching traditional block printing techni
+ ques in the community space of the Home Makers Club.
+LOCATION:140 Jonson St\, Byron Bay
+URL:https://www.eventbrite.com.au/e/block-print-workshop-and-pop-up-boutiqu
+ e-tickets-1998867220665
+END:VEVENT
+END:VCALENDAR

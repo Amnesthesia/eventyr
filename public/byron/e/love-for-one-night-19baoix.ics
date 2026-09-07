@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Love For One Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-19baoix@dothings
+DTSTART;TZID=Australia/Brisbane:20260827T180000
+DTEND;TZID=Australia/Brisbane:20260912T220000
+SUMMARY:Love For One Night
+DESCRIPTION:A live\, immersive performance experience by NORPA that blends 
+ music and theatre\, hosted in the atmospheric setting of the historic Elth
+ am Hotel.
+LOCATION:Eltham Hotel\, Eltham NSW
+URL:https://norpa.org.au/whats-on/
+END:VEVENT
+END:VCALENDAR

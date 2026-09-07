@@ -230,6 +230,7 @@ const vibes = vibesOf(event as Event);
         data-event-json
         set:html={JSON.stringify({
           cityKey,
+          timezone,
           event: {
             title,
             datetime_iso: event.datetime_iso,
@@ -250,20 +251,45 @@ const vibes = vibesOf(event as Event);
 
 <script>
   // No framework: these two buttons are the only interactive things on the
-  // page, and both helpers are React-free.
+  // page, and every helper is React-free.
   import { downloadEventIcs, buildEventIcs } from "@react/utils/ics";
+  import { calendarLinks } from "@react/utils/calendarLinks";
+  import { calendarTarget } from "@react/utils/platform";
   import { shareEvent } from "@react/utils/share";
 
   const holder = document.querySelector("[data-event-json]");
   if (holder?.textContent) {
-    const { event, cityKey } = JSON.parse(holder.textContent);
+    const { event, cityKey, timezone } = JSON.parse(holder.textContent);
 
     const calendar = document.querySelector("[data-action='calendar']");
     // Revealed only once we know an .ics can actually be produced — an event
-    // with no parsable date would otherwise offer a broken download.
+    // with no parsable date would otherwise offer a broken link.
     if (calendar && buildEventIcs(event, cityKey)) {
+      // The same platform guess the cards make: an Apple device gets the real
+      // .ics URL, which Safari hands to Calendar with no download step, and
+      // everyone else a prefilled Google Calendar. Falling back to the file
+      // only if neither link could be built.
+      const target = calendarTarget();
+      const link = calendarLinks(event, cityKey, timezone).find(
+        (l) => l.key === target,
+      );
       calendar.hidden = false;
-      calendar.addEventListener("click", () => downloadEventIcs(event, cityKey));
+      calendar.textContent = link?.href
+        ? `Add to ${link.label}`
+        : "Add to calendar";
+      if (link?.href) {
+        calendar.setAttribute("data-href", link.href);
+        calendar.addEventListener("click", () => {
+          // Apple's .ics is same-origin and must be handed to the OS; the web
+          // template is another site and belongs in its own tab.
+          if (target === "apple") window.location.href = link.href;
+          else window.open(link.href, "_blank", "noopener");
+        });
+      } else {
+        calendar.addEventListener("click", () =>
+          downloadEventIcs(event, cityKey),
+        );
+      }
     }
 
     const share = document.querySelector("[data-action='share']");

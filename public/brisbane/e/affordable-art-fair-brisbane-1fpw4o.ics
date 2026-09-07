@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Affordable Art Fair Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1fpw4o@dothings
+DTSTART;TZID=Australia/Brisbane:20260901T100000
+DTEND;TZID=Australia/Brisbane:20260930T170000
+SUMMARY:Affordable Art Fair Brisbane
+DESCRIPTION:A massive gathering of local and international galleries design
+ ed to make art accessible\; great for browsing and meeting creative people
+ .
+LOCATION:Brisbane Showgrounds\, Bowen Hills
+URL:https://affordableartfair.com/fairs/brisbane/
+END:VEVENT
+END:VCALENDAR

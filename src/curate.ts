@@ -7,7 +7,7 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { dirname, join, relative } from "node:path";
-import { isPast, withinWindow } from "./adapters/normalise.ts";
+import { humanDatetime, isPast, withinWindow } from "./adapters/normalise.ts";
 import {
 	allSourceEntries,
 	DATA_ROOT,
@@ -30,6 +30,7 @@ import { createGeminiPairClassifier } from "./dedupeClassifier.ts";
 import {
 	createGoogleGeocoder,
 	findElsewhere,
+	findForeign,
 	withPlaceCache,
 } from "./locality.ts";
 import { installUsageReporting } from "./providers/gemini.ts";
@@ -236,6 +237,20 @@ function cleanEvent(event: Record<string, unknown>): Record<string, unknown> {
 	for (const key of TEXT_FIELDS) {
 		if (key in out) out[key] = cleanText(out[key]);
 	}
+	// Re-derived, never trusted as written. The scrape path already builds this
+	// with humanDatetime, but the AI search path takes `datetime` straight from
+	// the model, which produced 24 different shapes in one city ("7-13 Sept",
+	// "12 September 2026", "Tue–Sun, 10am–5pm", "Fri 11 Sep, evening"). Every
+	// provenance funnels through cleanEvent, so this is the one place that can
+	// make them agree. The fallback keeps the model's own string for an event
+	// with no parsable ISO at all, rather than blanking the field.
+	out.datetime =
+		humanDatetime(
+			(out.datetime_iso as string) || null,
+			(out.datetime_end_iso as string) || null,
+		) ||
+		(out.datetime as string) ||
+		"";
 	// A foreign currency on a South East Queensland listing is the source's
 	// markup being wrong, not a real price. See normaliseCurrency.
 	if ("cost" in out)
@@ -260,62 +275,78 @@ const TIER_TO_VENUE: Record<string, string> = {
 };
 
 /**
- * Throws out events that are not in the city being published, but only from
- * the `aggregators` and `open` tiers.
+ * Throws out events that are not in the city being published, under two rules
+ * of different strength.
  *
- * Those are the tiers where a source promoted "for Brisbane" turns out to be
- * national — musick.com.au is a country-wide gig guide, and its verified
- * listing page put 40 Sydney, Melbourne, Adelaide and Perth events into one
- * Brisbane week. An `institutions` or `independents` source is a venue's own
- * site listing its own events, so it is trusted and never geocoded: that is
- * ~2/3 of the locations not sent to the API, and this week's one exception
- * (Opera Queensland touring to Toowoomba) is a rounding error against the cost
- * of checking every venue every week.
+ * **Wrong city** — the distance test — applies only to the `aggregators` and
+ * `open` tiers. Those are the tiers where a source promoted "for Brisbane"
+ * turns out to be national: musick.com.au is a country-wide gig guide, and its
+ * verified listing page put 40 Sydney, Melbourne, Adelaide and Perth events
+ * into one Brisbane week. An `institutions` or `independents` source is a
+ * venue's own site listing its own events, so it is trusted here — and it has
+ * to be, because "The Princess Theatre" geocodes to Melbourne while being a
+ * real Brisbane venue.
  *
- * Only the distinct location strings are geocoded, never one call per event.
+ * **Wrong country** applies to every tier. That is never a near-miss or an
+ * ambiguous venue name, and the tier trust turned out to be exploitable: a
+ * `method: scraper` source verified for Brisbane (creativelunchclub.com) lists
+ * meetups worldwide, and put eight events in Vienna, Manchester, Berlin,
+ * Stockholm, Portland, Montreal, Zurich and London on the site under an
+ * `independents` entry — where nothing ever looked at them.
+ *
+ * Only the distinct location strings are geocoded, never one call per event,
+ * and every answer is cached to disk, so widening the subject set to all tiers
+ * costs one run's worth of new venues and nothing thereafter.
  */
 async function dropOtherCities(
 	events: Record<string, unknown>[],
 ): Promise<Record<string, unknown>[]> {
-	const suspect = events.filter((e) => e.venue === "aggregator");
+	const locationOf = (e: Record<string, unknown>): string =>
+		((e.location as string) ?? "").trim();
 	const centre = cityCfg.centre;
 	const apiKey = process.env.GOOGLE_MAPS_API_KEY;
-	if (!centre || suspect.length === 0) {
-		if (!centre) {
-			console.log(
-				`  ⚠ no centre configured in sources/${CITY}.yml — keeping every location`,
-			);
-		}
-		return events;
-	}
+	const located = events.filter((e) => locationOf(e) !== "");
+	if (located.length === 0) return events;
 	// Same shape of degradation as the dedupe classifier below: the check is an
 	// improvement on top of curation, never a precondition for it, and dropping
 	// is the destructive direction — so no key means keep everything.
 	if (!apiKey) {
 		console.log(
-			"  ⚠ GOOGLE_MAPS_API_KEY unset — every aggregator location kept unchecked",
+			"  ⚠ GOOGLE_MAPS_API_KEY unset — every location kept unchecked",
 		);
 		return events;
 	}
+	if (!centre) {
+		console.log(
+			`  ⚠ no centre configured in sources/${CITY}.yml — only the outside-Australia check will run`,
+		);
+	}
 
 	const geocode = withPlaceCache(createGoogleGeocoder(apiKey), CITY);
-	const places = await geocode(
-		suspect.map((e) => ((e.location as string) ?? "").trim()),
-	);
-	const elsewhere = findElsewhere(places, centre);
+	const places = await geocode(located.map(locationOf));
+	// No centre still leaves the country rule usable: it needs no radius.
+	const elsewhere = centre ? findElsewhere(places, centre) : new Map();
+	const foreign = findForeign(places);
 	console.log(
 		`→ locality: ${geocode.stats.requested} location(s) geocoded, ` +
-			`${geocode.stats.cached} from cache, ${elsewhere.size} not in ${CITY_NAME}`,
+			`${geocode.stats.cached} from cache, ${elsewhere.size} not in ${CITY_NAME}, ` +
+			`${foreign.size} outside Australia`,
 	);
+	// Named individually, and separately by rule: the two have different
+	// remedies — a wrong-city hit means an aggregator needs watching, a foreign
+	// one means the source's listing page is not what it was promoted as.
 	for (const [location, why] of elsewhere) {
 		console.log(`    ✗ ${location} — ${why}`);
 	}
-	if (elsewhere.size === 0) return events;
-	return events.filter(
-		(e) =>
-			e.venue !== "aggregator" ||
-			!elsewhere.has(((e.location as string) ?? "").trim()),
-	);
+	for (const [location, why] of foreign) {
+		console.log(`    ✗✗ ${location} — ${why}`);
+	}
+	if (elsewhere.size === 0 && foreign.size === 0) return events;
+	return events.filter((e) => {
+		const location = locationOf(e);
+		if (foreign.has(location)) return false;
+		return e.venue !== "aggregator" || !elsewhere.has(location);
+	});
 }
 
 async function mergeAndDeduplicate(

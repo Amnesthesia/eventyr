@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:RocKwiz Rocks Brisbane (Brisbane Festival)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1cdqb00@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T190000
+DTEND;TZID=Australia/Brisbane:20260912T210000
+SUMMARY:RocKwiz Rocks Brisbane (Brisbane Festival)
+DESCRIPTION:A live\, interactive musical quiz show blending performance\, m
+ usic history\, and audience engagement as part of the annual arts festival
+ .
+LOCATION:QPAC Concert Hall
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

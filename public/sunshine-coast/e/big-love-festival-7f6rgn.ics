@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Big Love Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-7f6rgn@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260914
+SUMMARY:Big Love Festival
+DESCRIPTION:A community-focused boutique music and arts festival set in the
+  hinterland\, emphasizing intimate performances\, workshops\, and a collab
+ orative\, creative atmosphere.
+LOCATION:Eudlo
+URL:https://biglovefestival.com.au
+END:VEVENT
+END:VCALENDAR

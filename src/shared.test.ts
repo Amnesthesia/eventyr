@@ -7,6 +7,8 @@ import {
 	eventPath,
 	eventSlug,
 	isCurrencyCode,
+	LOW_SCORE_THRESHOLD,
+	meetsScoreFloor,
 	normaliseCurrency,
 	slugify,
 	stripForDisplay,
@@ -342,4 +344,19 @@ test("a missing or non-numeric score sorts last, not first", () => {
 	];
 	const sorted = [...events].sort(byScoreThenSoonest);
 	assert.equal(sorted[0].score, 5);
+});
+
+test("an unranked event is published, a low-scored one is not", () => {
+	// The asymmetry is the point. Below the floor is venue promotion — happy
+	// hours, "$13 Lunch Special" — which rank.ts scores 1. But an event with NO
+	// score has not been judged at all, and treating that as a zero would empty
+	// the site and both feeds the first time ranking failed, while reporting
+	// success.
+	assert.equal(meetsScoreFloor(1), false);
+	assert.equal(meetsScoreFloor(3), false);
+	assert.equal(meetsScoreFloor(LOW_SCORE_THRESHOLD), true);
+	assert.equal(meetsScoreFloor(9), true);
+	assert.equal(meetsScoreFloor(undefined), true);
+	assert.equal(meetsScoreFloor(null), true);
+	assert.equal(meetsScoreFloor("7"), true);
 });

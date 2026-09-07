@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dance Workshop with the cast of Shel We
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1xw5ekk@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Dance Workshop with the cast of Shel We
+DESCRIPTION:Dance Workshop with the cast of Shel We is a workshop / class e
+ vent at Brisbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/dance-workshop-with-shel-we
+END:VEVENT
+END:VCALENDAR

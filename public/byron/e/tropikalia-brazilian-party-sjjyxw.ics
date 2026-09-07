@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TROPIKALIA – BRAZILIAN PARTY
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-sjjyxw@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T163000
+DTEND;TZID=Australia/Brisbane:20260919T183000
+SUMMARY:TROPIKALIA – BRAZILIAN PARTY
+DESCRIPTION:Sat 19 September From 4.30PM Free Entry
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/tropikalia-brazilian-party-2/
+END:VEVENT
+END:VCALENDAR

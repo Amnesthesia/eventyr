@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Pinball Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-y1f5jp@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T150000
+DTEND;TZID=Australia/Brisbane:20260908T210000
+SUMMARY:Brisbane Pinball Club
+DESCRIPTION:Every fortnight\, the Brisbane Pinball Club meets in the Nether
+ world. Each meeting will require you to play 10 different pinball machines
+  of the club's choosing at your own pace. If you've ever wanted to join a 
+ Pinball club\, this is your time to shine! It's open to absolutely everybo
+ dy and all skill levels. Prizes awarded […]
+LOCATION:Netherworld\, 186 Brunswick Street\, Fortitude Valley\, QLD\, 4006
+URL:https://www.netherworldarcade.com/event/brisbane-pinball-club/
+END:VEVENT
+END:VCALENDAR

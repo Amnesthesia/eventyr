@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Sculpture Festival 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1mrd8e7@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T080000
+DTEND;TZID=Australia/Brisbane:20260907T170000
+SUMMARY:Brisbane Sculpture Festival 2026
+DESCRIPTION:A showcase of large-scale outdoor sculptural works set within t
+ he botanic gardens\, organized by Sculptors Queensland. An opportunity to 
+ walk through a curated landscape and engage with contemporary artistic pra
+ ctice.
+LOCATION:Brisbane Botanic Gardens Mt Coot-tha
+URL:https://brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:First BYT
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1e8xnps@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T163000
+DTEND;TZID=Australia/Brisbane:20260907T174500
+SUMMARY:First BYT
+DESCRIPTION:FIRST BYT is a brand new class for 12-14 year olds which commen
+ ced in 2019!! This drama and theatre course develops and builds on perform
+ ance technique\, acting\, vocal and improvisation skills for stage and scr
+ een.
+LOCATION:The Byron Community Cabin in Carlyle street\, Byron Bay
+URL:https://www.byronyouththeatre.com/first-byt/
+END:VEVENT
+END:VCALENDAR

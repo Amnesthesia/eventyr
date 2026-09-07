@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:AGHA Gifted – Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ekvj9e@dothings
+DTSTART;TZID=Australia/Brisbane:20230219T100000
+DTEND;TZID=Australia/Brisbane:20230219T120000
+SUMMARY:AGHA Gifted – Brisbane
+DESCRIPTION:AGHA Gifted – Brisbane at Brisbane Convention & Exhibition Ce
+ ntre is a community event.
+LOCATION:Brisbane Convention & Exhibition Centre
+URL:https://agha.com.au/gifted-brisbane/
+END:VEVENT
+END:VCALENDAR

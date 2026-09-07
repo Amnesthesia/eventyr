@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Members Crafted through Clay Artist Talks
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-637w1v@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T090000
+DTEND;TZID=Australia/Brisbane:20260913T100000
+SUMMARY:Members Crafted through Clay Artist Talks
+DESCRIPTION:Ceramic artists share insights into their creative processes an
+ d the technical aspects of their work in this intimate exhibition-related 
+ talk.
+LOCATION:Sculptors Gallery\, 173 Ashmore Road\, Benowa
+URL:https://goldcoastpotters.com
+END:VEVENT
+END:VCALENDAR

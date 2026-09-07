@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Cacao Ceremony
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-iiu2od@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Cacao Ceremony
+DESCRIPTION:Cacao Ceremony is a community event held at Nimbin Bush Theatre
+ .
+LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
+URL:https://nimbinbushtheatre.com/events/cacao-ceremony-2/
+END:VEVENT
+END:VCALENDAR

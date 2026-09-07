@@ -1324,15 +1324,19 @@ sources:
       domains:
         - theopensessions.com
     - name: Creative Lunch Club Brisbane
-      method: scraper
+      method: llm
       domains:
         - creativelunchclub.com
       homepage: https://creativelunchclub.com/
-      listingUrls:
-        - https://www.creativelunchclub.com/meetups
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 8 dated event(s) via html.'
+      note: >-
+        Demoted from scraper 2026-09-07. probe-sources verified
+        /meetups as yielding 8 dated events, which is true — but they were
+        Vienna, Manchester, Berlin, Stockholm, Portland, Montreal, Zurich and
+        London, and zero were in Brisbane. That page is a worldwide index, not
+        a city listing, so there is no listing URL to scrape. Left as llm so
+        the search can still find a real Brisbane meetup if one is posted.
     - name: Board Game BBQ Brisbane
       method: llm
       domains:

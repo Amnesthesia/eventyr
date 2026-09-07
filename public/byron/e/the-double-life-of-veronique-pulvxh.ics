@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Double Life Of Veronique
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-pulvxh@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:The Double Life Of Veronique
+DESCRIPTION:The Double Life Of Veronique is an arts event held at Nimbin Bu
+ sh Theatre.
+LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
+URL:https://nimbinbushtheatre.com/events/thjedouble-life-of-veronique/
+END:VEVENT
+END:VCALENDAR

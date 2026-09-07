@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art Explorers Session (ArtLab)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-17dbp4o@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T100000
+DTEND;TZID=Australia/Brisbane:20260911T120000
+SUMMARY:Art Explorers Session (ArtLab)
+DESCRIPTION:A creative\, hands-on workshop focused on artistic exploration 
+ and experimentation at HOTA's dedicated learning space.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://hota.com.au/events
+END:VEVENT
+END:VCALENDAR

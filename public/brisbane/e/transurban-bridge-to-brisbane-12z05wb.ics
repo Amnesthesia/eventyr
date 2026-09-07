@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Transurban Bridge to Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12z05wb@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Transurban Bridge to Brisbane
+DESCRIPTION:Transurban Bridge to Brisbane is a community / other event at B
+ risbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/transurban-bridge-to-brisbane
+END:VEVENT
+END:VCALENDAR

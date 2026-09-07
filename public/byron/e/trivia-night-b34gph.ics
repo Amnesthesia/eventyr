@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Trivia Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-b34gph@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T183000
+DTEND;TZID=Australia/Brisbane:20260917T200000
+SUMMARY:Trivia Night
+DESCRIPTION:Trivia Night – Every Thursday Bring your friends and join us 
+ for Trivia Night every Thursday evening. Enjoy a fun\, social atmosphere\,
+  great questions\, and prizes for winning teams. Every […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/trivia-night/2026-09-17/
+END:VEVENT
+END:VCALENDAR

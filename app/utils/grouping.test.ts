@@ -114,6 +114,54 @@ test("events inside a group are ordered by start time", () => {
 	);
 });
 
+test("events with the same start fall back to score, highest first", () => {
+	const groups = groupEvents(
+		[
+			// Every one of these is date-only on the same day, so they all tie on
+			// start and would otherwise come out in file order.
+			ev({ title: "dull", datetime_iso: "2026-09-04", score: 2 }),
+			ev({ title: "great", datetime_iso: "2026-09-04", score: 9 }),
+			ev({ title: "fine", datetime_iso: "2026-09-04", score: 5 }),
+			// A timed event still sorts after every all-day one, whatever it scores.
+			ev({ title: "timed", datetime_iso: "2026-09-04T09:00:00", score: 10 }),
+		],
+		"date",
+		WINDOW,
+		TODAY,
+	);
+	assert.deepEqual(
+		groups[0].events.map((e) => e.title),
+		["great", "fine", "dull", "timed"],
+	);
+});
+
+test("the ongoing group breaks end-date ties by score", () => {
+	const groups = groupEvents(
+		[
+			ev({
+				title: "dull",
+				datetime_iso: "2026-08-01",
+				datetime_end_iso: "2026-09-30",
+				score: 3,
+			}),
+			ev({
+				title: "great",
+				datetime_iso: "2026-08-02",
+				datetime_end_iso: "2026-09-30",
+				score: 8,
+			}),
+		],
+		"date",
+		WINDOW,
+		TODAY,
+	);
+	const ongoing = groups.find((g) => g.key === "ongoing");
+	assert.deepEqual(
+		ongoing?.events.map((e) => e.title),
+		["great", "dull"],
+	);
+});
+
 test("category groups keep the fixed CATEGORIES order and sort by time", () => {
 	const groups = groupEvents(
 		[

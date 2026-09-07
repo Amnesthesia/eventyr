@@ -7,13 +7,13 @@
   "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Scene Roulette",
-      "datetime": "Fri 11 Sep",
+      "title": "Workshop Scene Roulette",
+      "datetime": "Fri 11 Sep – Fri 25 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-25",
       "location": "Metro Arts, Brisbane City",
       "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
-      "cost": "FREE",
+      "cost": "See link",
       "source": "Metro Arts",
       "description": "FREE community events and workshops for actors to flex their muscles and meet other creatives. Facilitated by Imperfect Creatives and supported by Metro Arts",
       "image": "",
@@ -21,6 +21,7 @@
       "tags": [
         "acting",
         "theatre",
+        "community",
         "networking"
       ],
       "social": true,
@@ -30,7 +31,7 @@
     },
     {
       "title": "The Scramble",
-      "datetime": "Wed 16 Sep, 7:30 PM",
+      "datetime": "Wed 16 Sep, 7:30 PM – Sat 19 Sep",
       "datetime_iso": "2026-09-16T19:30:00",
       "datetime_end_iso": "2026-09-19",
       "location": "Metro Arts, Brisbane City",
@@ -74,7 +75,7 @@
     },
     {
       "title": "Choral Cthonics",
-      "datetime": "Thu 27 Aug",
+      "datetime": "Thu 27 Aug – Sat 26 Sep",
       "datetime_iso": "2026-08-27",
       "datetime_end_iso": "2026-09-26",
       "location": "Metro Arts, Brisbane City",
@@ -96,7 +97,7 @@
     },
     {
       "title": "Kuweni Dias Mendis & Grant x Wilkes: (In)Sight",
-      "datetime": "Thu 27 Aug",
+      "datetime": "Thu 27 Aug – Sat 26 Sep",
       "datetime_iso": "2026-08-27",
       "datetime_end_iso": "2026-09-26",
       "location": "Metro Arts, Brisbane City",
@@ -118,12 +119,12 @@
     },
     {
       "title": "Scene Roulette",
-      "datetime": "Fri 11 Sep",
+      "datetime": "Fri 11 Sep – Fri 25 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-25",
       "location": "Metro Arts, Brisbane City",
       "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
-      "cost": "FREE",
+      "cost": "See link",
       "source": "Metro Arts",
       "description": "FREE community events and workshops for actors to flex their muscles and meet other creatives. Facilitated by Imperfect Creatives and supported by Metro Arts",
       "image": "",
@@ -140,7 +141,7 @@
     },
     {
       "title": "The Scramble",
-      "datetime": "Wed 16 Sep, 7:30 PM",
+      "datetime": "Wed 16 Sep, 7:30 PM – Sat 19 Sep",
       "datetime_iso": "2026-09-16T19:30:00",
       "datetime_end_iso": "2026-09-19",
       "location": "Metro Arts, Brisbane City",
@@ -184,42 +185,21 @@
     },
     {
       "title": "SHAUN JOHNSTON | THE SCRAMBLE",
-      "datetime": "Wed 16 Sep, 7:30 PM",
+      "datetime": "Wed 16 Sep, 7:30 PM – Sat 19 Sep",
       "datetime_iso": "2026-09-16T19:30:00",
       "datetime_end_iso": "2026-09-19",
       "location": "Metro Arts, Brisbane City",
       "link": "https://metroarts.com.au/event/the-scramble/",
       "cost": "See link",
       "source": "Metro Arts",
-      "description": "SHAUN JOHNSTON | THE SCRAMBLE is an Arts / Exhibition event at Metro Arts, Brisbane City.",
+      "description": "A collision between wrestling and dance.",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Concert / Music",
       "tags": [
-        "performance",
         "dance",
-        "wrestling"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Choral Cthonics",
-      "datetime": "Thu 27 Aug",
-      "datetime_iso": "2026-08-27",
-      "datetime_end_iso": "2026-09-26",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "A hum in the dark.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
         "performance",
-        "experimental",
-        "art"
+        "wrestling",
+        "experimental"
       ],
       "social": false,
       "intellectual": false,
@@ -228,7 +208,7 @@
     },
     {
       "title": "Kuweni Dias Mendis & Grant x Wilkes: (In)Sight",
-      "datetime": "Thu 27 Aug",
+      "datetime": "Thu 27 Aug – Sat 26 Sep",
       "datetime_iso": "2026-08-27",
       "datetime_end_iso": "2026-09-26",
       "location": "Metro Arts, Brisbane City",
@@ -249,8 +229,31 @@
       "creative": true
     },
     {
+      "title": "CHORAL CTHONICS",
+      "datetime": "Thu 27 Aug – Sat 26 Sep",
+      "datetime_iso": "2026-08-27",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A hum in the dark.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "performance",
+        "experimental",
+        "sound",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Scene Roulette",
-      "datetime": "Fri 11 Sep",
+      "datetime": "Fri 11 Sep – Fri 25 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-25",
       "location": "Metro Arts, Brisbane City",
@@ -268,28 +271,6 @@
       "social": true,
       "intellectual": false,
       "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "The Scramble",
-      "datetime": "Wed 16 Sep, 7:30 PM",
-      "datetime_iso": "2026-09-16T19:30:00",
-      "datetime_end_iso": "2026-09-19",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/event/the-scramble/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "A collision between wrestling and dance.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "dance",
-        "wrestling",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
       "creative": true
     },
     {

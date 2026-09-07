@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:This Show is a Joke!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1k7yp39@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:This Show is a Joke!
+DESCRIPTION:This Show is a Joke! is a concert / music event held at Brisban
+ e Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/this-show-is-a-joke
+END:VEVENT
+END:VCALENDAR

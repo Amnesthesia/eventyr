@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Great Ocean Speaker Series | Place & Space: Public and Site-Sp
+ ecific Art with Jonathan Jones
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-uipwfu@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T123000
+DTEND;TZID=Australia/Brisbane:20260916T143000
+SUMMARY:Great Ocean Speaker Series | Place & Space: Public and Site-Specifi
+ c Art with Jonathan Jones
+DESCRIPTION:This Speaker Series responds to core teachings in Indigenous Ar
+ t History in the Australia Pacific Region\, inviting leading First Nations
+  and Great Ocean artists and curators to campus to speak to diverse themes
+  in contemporary practice.
+LOCATION:UQ Art Museum\, William St
+URL:https://art-museum.uq.edu.au/event/session/4187
+END:VEVENT
+END:VCALENDAR

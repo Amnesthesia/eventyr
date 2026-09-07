@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane's Big Italian Party Is Back: Festitalia Returns This 
+ September
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-qe2v6o@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Brisbane's Big Italian Party Is Back: Festitalia Returns This Septe
+ mber
+DESCRIPTION:Festitalia is a community festival celebrating Italian culture 
+ in Brisbane.
+LOCATION:WeekendNotes Brisbane
+URL:https://www.weekendnotes.com/brisbanes-big-italian-party-is-back-festit
+ alia-returns-this-september/
+END:VEVENT
+END:VCALENDAR

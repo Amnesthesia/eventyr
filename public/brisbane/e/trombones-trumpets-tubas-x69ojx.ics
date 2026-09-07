@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Trombones\, Trumpets & Tubas
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-x69ojx@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T190000
+DTEND;TZID=Australia/Brisbane:20260917T210000
+SUMMARY:Trombones\, Trumpets & Tubas
+DESCRIPTION:A genre-bending concert of fascinating and invigorating works f
+ eaturing trumpet\, trombone and tuba ensembles.
+LOCATION:Ian Hanger Recital Hall\, Queensland Conservatorium Griffith Unive
+ rsity
+URL:https://www.qtix.com.au/whats-on/2026/qcgu-trombones-trumpets-and-tubas
+ /
+END:VEVENT
+END:VCALENDAR

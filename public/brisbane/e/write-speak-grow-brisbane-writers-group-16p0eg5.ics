@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Write-Speak-Grow Brisbane Writers Group
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16p0eg5@dothings
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260914
+SUMMARY:Write-Speak-Grow Brisbane Writers Group
+DESCRIPTION:A supportive community group centered on the intersection of wr
+ iting\, public speaking\, and personal development.
+LOCATION:Brisbane (venue via Meetup)
+URL:https://www.meetup.com/writespeakgrow/
+END:VEVENT
+END:VCALENDAR

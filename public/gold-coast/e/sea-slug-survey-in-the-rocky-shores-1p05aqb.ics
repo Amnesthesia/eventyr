@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sea Slug Survey in the Rocky Shores
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1p05aqb@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T113000
+DTEND;TZID=Australia/Brisbane:20260908T133000
+SUMMARY:Sea Slug Survey in the Rocky Shores
+DESCRIPTION:A citizen science excursion to survey local sea slug population
+ s at the rocky shore\, suitable for curious nature observers.
+LOCATION:Burleigh Heads
+URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

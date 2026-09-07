@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Wisdom Within: A Course for Exploring Life's Big Questions
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3ag351@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260918
+SUMMARY:The Wisdom Within: A Course for Exploring Life's Big Questions
+DESCRIPTION:The Wisdom Within is a course exploring life's big questions.
+LOCATION:WeekendNotes Brisbane
+URL:https://www.weekendnotes.com/the-wisdom-within-a-course-for-exploring-l
+ ifes-big-questions/
+END:VEVENT
+END:VCALENDAR

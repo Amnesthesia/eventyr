@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wake Up & Sing! with the cast of Shel We
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-p2as17@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Wake Up & Sing! with the cast of Shel We
+DESCRIPTION:Wake Up & Sing!
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/wake-up-and-sing-with-the-cast-o
+ f-shel-we
+END:VEVENT
+END:VCALENDAR

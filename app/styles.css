@@ -1,3 +1,19 @@
+/* Self-hosted so the critical path has no third-party origin on it. Google
+   Fonts cost a render-blocking stylesheet on fonts.googleapis.com plus a font
+   fetch on fonts.gstatic.com — two extra origins and a two-step chain before
+   any text could paint. One variable file covers every weight the site uses
+   (400/500/600/700); no italic face because nothing here sets font-style. */
+@font-face {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url("/fonts/inter-latin.woff2") format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+		U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+		U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* ── Monochrome token layer ── */
 :root {
 	--pico-font-family-sans-serif: "Inter", system-ui, -apple-system, sans-serif;
@@ -559,8 +575,9 @@ header {
 }
 
 .filter-toggle input[type="checkbox"] {
-	width: 0.8rem;
-	height: 0.8rem;
+	/* >=24px: WCAG 2.2 target-size. The icon stays its old size. */
+	width: 24px;
+	height: 24px;
 	margin: 0;
 	accent-color: var(--fg);
 }
@@ -661,6 +678,9 @@ article.card.has-image > * {
 
 /* ── Star button ── */
 .star-btn {
+	/* >=24px: WCAG 2.2 target-size. The icon stays its old size. */
+	min-width: 24px;
+	min-height: 24px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -683,6 +703,9 @@ article.card.has-image > * {
    things a reader does with an event, and at 11px a muted glyph beside the
    cost pill disappears entirely. */
 .icon-btn {
+	/* >=24px: WCAG 2.2 target-size. The icon stays its old size. */
+	min-width: 24px;
+	min-height: 24px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -990,7 +1013,7 @@ summary:hover .card-desc-toggle {
 	   without depending on font metrics agreeing between them. */
 	display: inline-flex;
 	align-items: center;
-	height: 1.25rem;
+	height: 24px;
 	white-space: nowrap;
 	font-family: var(--mono);
 	font-size: 0.67rem;
@@ -1035,8 +1058,8 @@ summary:hover .card-desc-toggle {
 	justify-content: center;
 	/* Matched to the tags' own box (0.67rem at 1.55 line-height plus 0.2rem of
 	   padding ~= 1.24rem), so the two line up in the bottom row. */
-	width: 1.25rem;
-	height: 1.25rem;
+	width: 24px;
+	height: 24px;
 	box-sizing: border-box;
 	font-family: var(--mono);
 	font-size: 0.67rem;
@@ -1073,6 +1096,10 @@ summary:hover .card-desc-toggle {
 
 /* ── Clickable tags ── */
 .tag-btn {
+	/* >=24px: WCAG 2.2 target-size. The icon stays its old size. */
+	min-height: 24px;
+	display: inline-flex;
+	align-items: center;
 	cursor: pointer;
 	background: transparent;
 	font-family: var(--mono);
@@ -1139,6 +1166,8 @@ summary:hover .card-desc-toggle {
 .active-tag-chip {
 	display: inline-flex;
 	align-items: center;
+	/* >=24px: WCAG 2.2 target-size. The icon stays its old size. */
+	min-height: 24px;
 	gap: 0.25rem;
 	font-family: var(--mono);
 	font-size: 0.67rem;
@@ -1389,6 +1418,12 @@ summary:hover .card-desc-toggle {
 
 .sheet-action + .sheet-action {
 	border-top: 1px solid var(--border);
+}
+
+/* The calendar rows are anchors so a middle-click and "copy link" work; they
+   must not look like body links. */
+a.sheet-action {
+	text-decoration: none;
 }
 
 .sheet-action:active {
@@ -1666,40 +1701,43 @@ summary:hover .card-desc-toggle {
 	display: inline-flex;
 }
 
-.notif-pill {
+/* The reminders control is a .filter-btn like every other control in this row
+   — it used to be a rounded sans-serif pill next to two square mono buttons,
+   which read as a different site's widget. Only the two STATES are its own,
+   and they are colour alone so the shape never diverges again. */
+.notif-on {
+	/* The one green on the site. Readable on both themes, which is why it is a
+	   mid-tone rather than a saturated "success" green. */
+	--notif-on: #40b464;
+	border-color: color-mix(in srgb, var(--notif-on) 45%, transparent);
+	color: var(--notif-on);
+}
+
+.notif-on:hover {
+	border-color: var(--notif-on);
+	color: var(--notif-on);
+}
+
+.notif-blocked {
+	opacity: 0.55;
+	cursor: not-allowed;
+}
+
+/* Every control in this row carries an icon and a label, and .filter-btn is
+   not a flex container by default — without this the icon sits on the text
+   baseline and each button is a slightly different height. */
+.section-head-actions .filter-btn {
 	display: inline-flex;
 	align-items: center;
-	gap: 0.3rem;
-	font-size: 0.72rem;
-	font-weight: 500;
-	padding: 0.25rem 0.55rem;
-	border-radius: 9999px;
-	border: 1px solid var(--border);
-	background: var(--card-bg, transparent);
-	color: var(--muted);
-	cursor: pointer;
-	transition: all 0.15s ease;
-	line-height: 1.2;
+	justify-content: center;
+	gap: 0.35rem;
+	box-sizing: border-box;
+	height: 24px;
+	line-height: 1;
 }
 
-.notif-pill:hover {
-	border-color: var(--fg);
-	color: var(--fg);
-}
-
-.notif-pill.notif-active {
-	border-color: rgba(64, 180, 100, 0.4);
-	color: #40b464;
-	background: rgba(64, 180, 100, 0.08);
-}
-
-.notif-pill.notif-active:hover {
-	border-color: #40b464;
-}
-
-.notif-pill.notif-disabled {
-	opacity: 0.6;
-	cursor: not-allowed;
+.section-head-actions .filter-btn svg {
+	flex-shrink: 0;
 }
 
 .notif-popover {
@@ -1730,6 +1768,12 @@ summary:hover .card-desc-toggle {
 }
 
 .notif-close {
+	/* >=24px: WCAG 2.2 target-size. The icon stays its old size. */
+	min-width: 24px;
+	min-height: 24px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	background: none;
 	border: none;
 	padding: 0;
@@ -1996,4 +2040,382 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 
 .swipe-top .swipe-hint {
 	margin-right: auto;
+}
+
+/* ── Calendar target menu ──
+   The card's calendar button goes straight to whichever calendar the platform
+   suggests; this is the right-click escape hatch for when that guess is wrong.
+   Desktop only in practice — on touch the card's long-press opens the action
+   sheet, which lists the same routes. */
+.cal-wrap {
+	position: relative;
+	display: inline-flex;
+}
+
+.cal-menu {
+	position: absolute;
+	top: calc(100% + 0.25rem);
+	right: 0;
+	z-index: 2100;
+	display: flex;
+	flex-direction: column;
+	min-width: 11rem;
+	padding: 0.2rem 0;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 0.4rem;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+.cal-menu a,
+.cal-menu button {
+	margin: 0;
+	padding: 0.45rem 0.8rem;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	color: var(--fg);
+	font-size: 0.8rem;
+	font-weight: 500;
+	text-align: left;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.cal-menu a:hover,
+.cal-menu button:hover {
+	background: color-mix(in srgb, var(--cat) 12%, var(--surface));
+}
+
+/* ── Saved-events calendar ──
+   A week grid plus the QR code that moves a saved set to another device. The
+   backdrop is the action sheet's, but centred rather than bottom-anchored:
+   this is a reading surface, not a thumb menu. */
+.cal-modal-backdrop {
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem;
+}
+
+.cal-modal {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	/* Wide enough that all seven days fit BESIDE the QR sidebar, not under a
+	   horizontal scrollbar — showing the week at once is the whole point, and
+	   the sidebar costs 14rem of it. */
+	width: min(96rem, 100%);
+	height: min(92vh, 54rem);
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.cal-modal-head,
+.cal-modal-foot {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.6rem 0.8rem;
+	flex-shrink: 0;
+}
+
+.cal-modal-head {
+	justify-content: space-between;
+	border-bottom: 1px solid var(--border);
+}
+
+.cal-week-nav {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-size: 0.82rem;
+}
+
+/* Grid left, QR and actions right. The QR is the reason the modal exists —
+   it is what moves a saved set to a phone — so it sits beside the calendar
+   rather than below it, where a full week of events would push it off screen. */
+.cal-body {
+	flex: 1;
+	display: flex;
+	min-height: 0;
+}
+
+.cal-grid-scroll {
+	flex: 1;
+	min-width: 0;
+	overflow: auto;
+}
+
+.cal-side {
+	flex-shrink: 0;
+	width: 14rem;
+	display: flex;
+	flex-direction: column;
+	/* Centred rather than stacked from the top: the sidebar is much taller than
+	   its contents next to a full-height grid, and a code pinned to the top
+	   with empty space under it reads as a layout bug. */
+	justify-content: center;
+	gap: 1.2rem;
+	padding: 1rem;
+	border-left: 1px solid var(--border);
+	overflow-y: auto;
+}
+
+/* The sidebar shows the code outright; the toggle only exists where the panel
+   collapses into a strip under the grid. */
+.cal-qr-toggle {
+	display: none;
+}
+
+/* A time gutter plus seven equal day columns, shared by the three stacked
+   rows below so their columns line up. Wide enough that a title is readable;
+   narrower than this and the grid stops being worth drawing, so it scrolls
+   sideways on a phone instead of squeezing. */
+.cal-grid {
+	--cal-cols: 3.4rem repeat(7, minmax(5.4rem, 1fr));
+	min-width: 41rem;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.cal-row {
+	display: grid;
+	grid-template-columns: var(--cal-cols);
+}
+
+.cal-row--time {
+	flex: 1;
+}
+
+.cal-gutter {
+	font-size: 0.68rem;
+	color: var(--muted);
+}
+
+.cal-day-head {
+	display: flex;
+	align-items: baseline;
+	gap: 0.3rem;
+	padding: 0.4rem 0.5rem;
+	border-left: 1px solid var(--border);
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
+.cal-day-head small {
+	color: var(--muted);
+	font-weight: 400;
+}
+
+.cal-row--head {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	background: var(--surface);
+	border-bottom: 1px solid var(--border);
+}
+
+/* The strip is a band of empty cells drawing the column rules, with the bars
+   placed over them by grid-column/grid-row. Both live in the same grid, so a
+   bar spanning Tue–Fri sits exactly over those four columns. */
+.cal-row--allday {
+	grid-template-rows: repeat(var(--cal-allday-rows), auto);
+	border-bottom: 1px solid var(--border);
+	min-height: 1.8rem;
+}
+
+.cal-allday-label {
+	grid-column: 1;
+	grid-row: 1 / -1;
+	padding: 0.3rem 0.5rem 0 0;
+	text-align: right;
+}
+
+.cal-allday {
+	grid-row: 1 / -1;
+	border-left: 1px solid var(--border);
+}
+
+.cal-chip--allday {
+	align-self: start;
+	margin: 0.15rem 0.15rem 0;
+	white-space: nowrap;
+	z-index: 1;
+}
+
+/* The hour labels and the lanes are built from the same --cal-rows, so a
+   chip's percentage offset lands on the right hour. */
+.cal-hours {
+	display: grid;
+	grid-template-rows: repeat(var(--cal-rows), 2.6rem);
+	text-align: right;
+	padding-right: 0.5rem;
+}
+
+.cal-hours span {
+	/* Nudged up so the label sits ON its gridline rather than below it. */
+	transform: translateY(-0.4em);
+}
+
+.cal-lane {
+	position: relative;
+	border-left: 1px solid var(--border);
+	height: calc(var(--cal-rows) * 2.6rem);
+	background-image: linear-gradient(var(--border) 1px, transparent 1px);
+	background-size: 100% 2.6rem;
+}
+
+/* Tinted by category, the same --cat the cards and group headings use, so a
+   glance at the week reads the same way a glance at the list does. The left
+   rule carries the hue at full strength; the fill is a wash, because a week of
+   saturated blocks is unreadable. */
+.cal-chip {
+	display: block;
+	padding: 0.2rem 0.35rem;
+	border-radius: 0.25rem;
+	background: color-mix(in srgb, var(--cat, var(--border)) 16%, var(--surface));
+	border: 1px solid color-mix(in srgb, var(--cat, var(--border)) 40%, transparent);
+	border-left: 3px solid var(--cat, var(--border));
+	color: var(--fg);
+	font-size: 0.7rem;
+	line-height: 1.25;
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.cal-chip--timed {
+	position: absolute;
+	left: 0.15rem;
+	right: 0.15rem;
+	/* Overlapping events stack visually rather than being laid out side by
+	   side — a week of saved events rarely collides, and a full collision
+	   solver is a lot of code for a rare case. */
+}
+
+/* Clamped on the title alone, not on the chip: the chip also holds the <time>
+   line, and a -webkit-box counting that as one of its lines cut the title
+   mid-word with a sliver of a fourth line showing under the border. */
+.cal-chip-title {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	overflow: hidden;
+}
+
+.cal-chip--timed time {
+	display: block;
+	font-variant-numeric: tabular-nums;
+	color: var(--muted);
+	font-size: 0.62rem;
+}
+
+.cal-qr {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.6rem;
+	text-align: center;
+}
+
+.saved-qr {
+	border-radius: 0.25rem;
+	flex-shrink: 0;
+}
+
+.cal-note {
+	margin: 0;
+	max-width: 18rem;
+	font-size: 0.75rem;
+	color: var(--muted);
+}
+
+.cal-modal-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.cal-modal-actions .filter-btn {
+	justify-content: center;
+}
+
+/* Below this the sidebar has nowhere to go, so it becomes a footer strip and
+   the grid keeps the full width it needs to stay legible. */
+@media (max-width: 820px) {
+	.cal-body {
+		flex-direction: column;
+	}
+
+	.cal-side {
+		width: auto;
+		flex-shrink: 1;
+		justify-content: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.6rem;
+		padding: 0.7rem;
+		border-left: none;
+		border-top: 1px solid var(--border);
+	}
+
+	.cal-qr-toggle {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.35rem;
+		order: 1;
+	}
+
+	.cal-qr {
+		/* Full width so the code sits on its own row under the two buttons,
+		   rather than squeezing them off the strip when it opens. */
+		order: 3;
+		flex-basis: 100%;
+		flex-direction: row;
+		justify-content: center;
+		text-align: left;
+	}
+
+	.cal-modal-actions {
+		order: 2;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.saved-qr {
+		width: 118px;
+		height: 118px;
+	}
+}
+
+/* Shown only when a test notification demonstrably did not appear — the
+   button says "Sent!" for the success case. */
+.notif-test-failed {
+	margin: 0.5rem 0 0;
+	font-size: 0.72rem;
+	line-height: 1.45;
+	color: var(--muted);
+}
+
+/* The one action a visitor arriving on someone else's calendar link is
+   there for, so it is filled rather than outlined like its neighbours. */
+.cal-save-all {
+	border-color: var(--fg);
+	background: var(--fg);
+	color: var(--bg);
+}
+
+.cal-save-all:hover {
+	background: var(--fg);
+	color: var(--bg);
+	opacity: 0.85;
 }

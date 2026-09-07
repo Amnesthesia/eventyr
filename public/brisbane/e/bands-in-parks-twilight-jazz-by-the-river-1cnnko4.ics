@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bands in Parks: Twilight Jazz by the River
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1cnnko4@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T170000
+DTEND;TZID=Australia/Brisbane:20260911T190000
+SUMMARY:Bands in Parks: Twilight Jazz by the River
+DESCRIPTION:Bands in Parks: Twilight Jazz by the River is a Concert / Music
+  event held at Queensland Maritime Museum\, 412 Stanley St.
+LOCATION:Queensland Maritime Museum\, 412 Stanley St
+URL:https://maritimemuseum.com.au/eventsandexhibitions/twilightjazz/twiligh
+ t-jazz-by-the-river-friday-11-september-2026/
+END:VEVENT
+END:VCALENDAR

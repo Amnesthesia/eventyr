@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Suzanne Vega
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-bduww0@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Suzanne Vega
+DESCRIPTION:Suzanne Vega is a concert event held at Fortitude Music Hall.
+LOCATION:Fortitude Music Hall\, 66 Doggett St
+URL:https://thefortitude.com.au/all-events/suzanne-vega-tickets-ae1618
+END:VEVENT
+END:VCALENDAR

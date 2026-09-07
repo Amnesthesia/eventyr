@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane City Hall Organ Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-5tngn@dothings
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20261104
+SUMMARY:Brisbane City Hall Organ Tour
+DESCRIPTION:Explore the heritage-listed organ with insights from one of few
+  organists qualified to play this premier instrument.
+LOCATION:Museum of Brisbane\, Level 3\, Brisbane City Hall
+URL:https://www.qtix.com.au/whats-on/2026/mob-brisbane-city-hall-organ-tour
+ /
+END:VEVENT
+END:VCALENDAR

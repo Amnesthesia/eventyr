@@ -260,9 +260,15 @@ async function collectSource(
 	// a broken URL, not a quiet week. `past` is the red flag — a listing page
 	// for upcoming events should never yield finished ones.
 	if (timeStats.upgraded > 0 || timeStats.eligible > 0) {
+		// Broken down by extractor, not just totalled: four of them run in
+		// order, and a total alone cannot show that one has stopped matching.
+		const via = Object.entries(timeStats.via)
+			.filter(([, n]) => n > 0)
+			.map(([name, n]) => `${name} ${n}`)
+			.join(", ");
 		console.log(
 			`  ⏱ [${source.id}] ${timeStats.upgraded}/${timeStats.eligible} undated-time candidates got a time` +
-				` (${timeStats.fetched} detail page(s) fetched)`,
+				` (${timeStats.fetched} detail page(s) fetched${via ? `; via ${via}` : ""})`,
 		);
 	}
 	const drops = [

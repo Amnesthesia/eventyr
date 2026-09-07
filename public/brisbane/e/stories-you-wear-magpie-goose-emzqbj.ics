@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Stories You Wear: Magpie Goose
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-emzqbj@dothings
+DTSTART;VALUE=DATE:20251122
+DTEND;VALUE=DATE:20270201
+SUMMARY:Stories You Wear: Magpie Goose
+DESCRIPTION:Stories You Wear: Magpie Goose is an Arts / Exhibition event at
+  Museum of Brisbane\, King George Square (Brisbane City Hall).
+LOCATION:Museum of Brisbane\, King George Square (Brisbane City Hall)
+URL:https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/
+END:VEVENT
+END:VCALENDAR

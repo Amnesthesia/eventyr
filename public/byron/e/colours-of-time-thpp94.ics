@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Colours of Time
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-thpp94@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Colours of Time
+DESCRIPTION:Brought together by the unexpected inheritance of an abandoned 
+ house in rural Normandy\, four cousins discover they share a mysterious fa
+ mily history. In 1895\, their ancestor Adèle\, then aged 21\, leaves her 
+ hometown to search for her mother in Paris. She discovers a city on the cu
+ sp of modernity\, bustling with new-found avant-garde creativity\, with th
+ e rise of photography and the birth of Impressionist painting. As her desc
+ endants retrace her steps\, they unravel Adèle’s surprising past. The t
+ wo timelines of 1895 and 2024 intertwine and collide\, confronting the cou
+ sins’ contemporary attitudes with life in late 19th century Paris\, leav
+ ing everyone’s future forever changed.
+LOCATION:Star Court Theatre
+URL:http://starcourttheatre.com.au/events/timecolours
+END:VEVENT
+END:VCALENDAR

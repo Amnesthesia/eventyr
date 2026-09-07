@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:HipHop/Street Dance Workshop with Bring a Plate
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-y3nncz@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:HipHop/Street Dance Workshop with Bring a Plate
+DESCRIPTION:HipHop/Street Dance Workshop with Bring a Plate is a workshop /
+  class event at Brisbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/dance-workshops-hiphoporstreet-d
+ ance
+END:VEVENT
+END:VCALENDAR

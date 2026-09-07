@@ -213,10 +213,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # The per-event .ics files under public/*/e/ are committed for the
+          # same reason the city feed is: deploy.yml runs only `astro build`
+          # from a checkout, so anything public/ serves has to be in git.
           git add "data/${CITY}.json" \
                   "data/${CITY}/" \
                   "${CITY^^}.md" "public/${CITY}.ics" "data/index.json" \
-                  public/sitemap.xml public/*/feed.xml
+                  public/sitemap.xml public/*/feed.xml public/*/e/
           git diff --cached --quiet && exit 0
           git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           # -X theirs: during a rebase "theirs" is this run's commit. Every file

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Paul George — Fire Pit Fridays
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-v35hz5@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T170000
+DTEND;TZID=Australia/Brisbane:20260911T193000
+SUMMARY:Paul George — Fire Pit Fridays
+DESCRIPTION:Intimate live acoustic performance set around the outdoor fire 
+ pits at Elements of Byron.
+LOCATION:Elements of Byron\, Byron Bay
+URL:https://byronbayexperience.com.au/whats-on-byron-bay/paul-george-fire-p
+ it-fridays-elements-of-byron/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Federal Community Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-xl7l4y@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Federal Community Market
+DESCRIPTION:Federal Community market is held on the third Sunday of the mon
+ th at the Federal Halls.
+LOCATION:Federal Halls\, 466 Federal Drive\, Federal 2480
+URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
+ Federal-Community-Market
+END:VEVENT
+END:VCALENDAR

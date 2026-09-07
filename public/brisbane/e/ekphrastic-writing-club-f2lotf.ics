@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ekphrastic Writing Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-f2lotf@dothings
+DTSTART;VALUE=DATE:20260502
+DTEND;VALUE=DATE:20261206
+SUMMARY:Ekphrastic Writing Club
+DESCRIPTION:Ekphrasis has long been a vital craft tool used by poets\, fict
+ ion writers\, dramatists and essayists as a springboard for creative imagi
+ nings.
+LOCATION:Museum of Brisbane\, Level 3\, Brisbane City Hall
+URL:https://www.qtix.com.au/whats-on/2026/mob-ekphrastic-writing-club/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Strong is the New Pretty
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-aw75b1@dothings
+DTSTART;TZID=Australia/Brisbane:20260904T193000
+DTEND;TZID=Australia/Brisbane:20260904T213000
+SUMMARY:Strong is the New Pretty
+DESCRIPTION:Experience a nail-biting showdown and an inspiring story of det
+ ermination\, legacy and pride.
+LOCATION:Playhouse\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/queensland-theatre-company-strong
+ -is-the-new-pretty/
+END:VEVENT
+END:VCALENDAR

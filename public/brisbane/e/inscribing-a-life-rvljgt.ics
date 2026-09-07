@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Inscribing a Life
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-rvljgt@dothings
+DTSTART;TZID=Australia/Brisbane:20250927T100000
+DTEND;TZID=Australia/Brisbane:20250927T120000
+SUMMARY:Inscribing a Life
+DESCRIPTION:Inscribing a Life is an Arts / Exhibition event at GOMA\, Stanl
+ ey Place\, South Bank.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/exhibition/inscribing-a-life
+END:VEVENT
+END:VCALENDAR

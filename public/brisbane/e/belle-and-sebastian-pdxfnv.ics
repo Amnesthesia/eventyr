@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Belle and Sebastian
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-pdxfnv@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Belle and Sebastian
+DESCRIPTION:Belle and Sebastian is a concert event held at Fortitude Music 
+ Hall.
+LOCATION:Fortitude Music Hall\, 66 Doggett St
+URL:https://thefortitude.com.au/all-events/belle-and-sebastian-tickets-ae10
+ 5893
+END:VEVENT
+END:VCALENDAR

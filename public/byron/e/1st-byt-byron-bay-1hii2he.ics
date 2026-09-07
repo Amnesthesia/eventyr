@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:1ST BYT BYRON BAY
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1hii2he@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T163000
+DTEND;TZID=Australia/Brisbane:20260907T180000
+SUMMARY:1ST BYT BYRON BAY
+DESCRIPTION:Drama/ Theatre classes for 12-16 yr olds. 1st BYT classes explo
+ re all aspects of Drama and Theatre and leads towards a range of performan
+ ces\, sometimes with audiences!! There is no pressure to perform for those
+  who just enjoy participatng in class
+LOCATION:BYRON COMMUNITY CABIN\, CARLYLE STREET\, BYRON BAY
+URL:https://www.byronyouththeatre.com/classes-for-2022/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Happy Hour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-9mwyjv@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T160000
+DTEND;TZID=Australia/Brisbane:20260911T180000
+SUMMARY:Happy Hour
+DESCRIPTION:Happy Hour Unwind with great value drinks during Happy Hour at 
+ the club. It’s the perfect way to relax after work or ease into the week
+ end with friends. Mon–Thurs: 5pm […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/happy-hour-2/2026-09-11/
+END:VEVENT
+END:VCALENDAR

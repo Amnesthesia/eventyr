@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Business of Doing Business
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1au5u3o@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:The Business of Doing Business
+DESCRIPTION:A practical four-part workshop series built by Northern Rivers 
+ business owners and operators\, for Northern Rivers business owners and op
+ erators\, around the real decisions businesses are dealing with right now.
+LOCATION:Southern Cross University\, Lismore Campus\, Military Rd\, East Li
+ smore\, 2480
+URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
+ The-Business-of-Doing-Business
+END:VEVENT
+END:VCALENDAR

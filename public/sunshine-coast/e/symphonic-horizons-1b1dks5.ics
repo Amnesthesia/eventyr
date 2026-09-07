@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Symphonic Horizons
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1b1dks5@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:Symphonic Horizons
+DESCRIPTION:A performance by the local symphony orchestra\, providing an op
+ portunity to experience orchestral music and cultural engagement within th
+ e community.
+LOCATION:The Events Centre\, 20 Minchinton St\, Caloundra
+URL:https://theeventscentre.com.au
+END:VEVENT
+END:VCALENDAR

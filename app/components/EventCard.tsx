@@ -6,6 +6,7 @@ import { useLongPress } from "../hooks/useLongPress";
 import type { Event } from "../types";
 import { catToSlug } from "../utils/categorySlug";
 import { KEY_TO_SLUG } from "../utils/citySlug";
+import { displayDatetime } from "../utils/dates";
 import { VIBE_LABELS, vibesOf } from "../utils/vibes";
 import AddToCalendar from "./AddToCalendar";
 import CardActionSheet from "./CardActionSheet";
@@ -40,8 +41,15 @@ export default function EventCard({
 	isStarred,
 	onStarClick,
 }: Props) {
-	const { activeTags, toggleTag, cityKey, vibeFilters, setVibe, costLocale } =
-		useEventsContext();
+	const {
+		activeTags,
+		toggleTag,
+		cityKey,
+		vibeFilters,
+		setVibe,
+		costLocale,
+		todayStr,
+	} = useEventsContext();
 	const citySlug = KEY_TO_SLUG[cityKey] ?? cityKey;
 	const [sheetOpen, setSheetOpen] = useState(false);
 	const longPress = useLongPress(() => setSheetOpen(true));
@@ -132,7 +140,7 @@ export default function EventCard({
 			<div className="card-meta">
 				<span className="meta-row">
 					<CalendarDays size={11} strokeWidth={2.2} />
-					{event.datetime || "—"}
+					{displayDatetime(event, todayStr) || "—"}
 				</span>
 				<span className="meta-row">
 					<MapPin size={11} strokeWidth={2.2} />

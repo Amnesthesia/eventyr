@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Beat and Move Workshop: An African Dance Adventure with Yenene
+ sh Nigusse
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1iymxxf@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Beat and Move Workshop: An African Dance Adventure with Yenenesh Ni
+ gusse
+DESCRIPTION:Beat and Move Workshop: An African Dance Adventure with Yenenes
+ h Nigusse is a workshop / class event at Brisbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/beat-and-move-an-african-dance-a
+ dventure
+END:VEVENT
+END:VCALENDAR

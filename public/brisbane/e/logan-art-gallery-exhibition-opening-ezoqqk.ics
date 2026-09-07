@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Logan Art Gallery Exhibition opening
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ezoqqk@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T170000
+DTEND;TZID=Australia/Brisbane:20260911T190000
+SUMMARY:Logan Art Gallery Exhibition opening
+DESCRIPTION:Logan Art Gallery Exhibition opening is an arts exhibition held
+  at Logan Art Gallery.
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/exhibition-opening-9/
+END:VEVENT
+END:VCALENDAR

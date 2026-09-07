@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Michael Hing: How Are We Supposed to Live Like This? (Comedy)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-slzpjp@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:Michael Hing: How Are We Supposed to Live Like This? (Comedy)
+DESCRIPTION:A satirical stand-up performance exploring modern existential a
+ ngst and societal structures\, delivered by a sharp-witted cultural commen
+ tator.
+LOCATION:Brunswick Picture House\, Brunswick Heads
+URL:https://brunswickpicturehouse.com
+END:VEVENT
+END:VCALENDAR

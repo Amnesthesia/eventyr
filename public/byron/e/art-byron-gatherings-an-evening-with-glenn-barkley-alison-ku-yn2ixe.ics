@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art Byron Gatherings — An Evening with Glenn Barkley & Aliso
+ n Kubler
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-yn2ixe@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T173000
+DTEND;TZID=Australia/Brisbane:20260911T193000
+SUMMARY:Art Byron Gatherings — An Evening with Glenn Barkley & Alison Kub
+ ler
+DESCRIPTION:An intellectually engaging evening featuring a conversation bet
+ ween prominent art figures Glenn Barkley and Alison Kubler\, focusing on c
+ ontemporary art and culture.
+LOCATION:Byron School of Art\, 112 Dalley St\, Mullumbimby NSW 2482
+URL:https://www.eventbrite.com.au/e/art-byron-gatherings-an-evening-with-gl
+ enn-barkley-and-alison-kubler-tickets-1995397598933
+END:VEVENT
+END:VCALENDAR

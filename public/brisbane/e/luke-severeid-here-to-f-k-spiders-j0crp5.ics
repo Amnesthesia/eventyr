@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Luke Severeid: Here to F#@K Spiders
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-j0crp5@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T193000
+DTEND;TZID=Australia/Brisbane:20260908T213000
+SUMMARY:Luke Severeid: Here to F#@K Spiders
+DESCRIPTION:Luke Severeid: Here to F#@K Spiders is a comedy event held at T
+ he Sit Down Comedy Club.
+LOCATION:The Sit Down Comedy Club
+URL:https://www.standup.com.au/event/luke-severeid-here-to-fk-spiders/
+END:VEVENT
+END:VCALENDAR

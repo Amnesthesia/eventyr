@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Talent Show – The OG Byron Experience
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1gzacbs@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T193000
+DTEND;TZID=Australia/Brisbane:20260907T213000
+SUMMARY:Talent Show – The OG Byron Experience
+DESCRIPTION:An open-stage event at the iconic Arts Factory\, providing a pl
+ atform for local performers to showcase their creative talents in an intim
+ ate\, rustic setting.
+LOCATION:The Arts Factory Garden Bar\, 1 Skinners Shoot Rd\, Byron Bay NSW
+URL:https://artsfactorygardenbar.com/events
+END:VEVENT
+END:VCALENDAR

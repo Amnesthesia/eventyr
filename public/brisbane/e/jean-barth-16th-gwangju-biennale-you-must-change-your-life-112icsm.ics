@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jean Barth ‘ 16th Gwangju Biennale - You Must Change Your Li
+ fe ’
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-112icsm@dothings
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20261116
+SUMMARY:Jean Barth ‘ 16th Gwangju Biennale - You Must Change Your Life 
+ ’
+DESCRIPTION:Jean Barth ‘ 16th Gwangju Biennale - You Must Change Your Lif
+ e ’ is an Arts / Exhibition event at Gwangju\, South Korea.
+LOCATION:Gwangju\, South Korea
+URL:https://milanigallery.com.au/exhibitions/16th-gwangju-biennale-you-must
+ -change-your-life/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Archie Moore: Kith and Kin
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1p6r9tz@dothings
+DTSTART;TZID=Australia/Brisbane:20250927T100000
+DTEND;TZID=Australia/Brisbane:20250927T120000
+SUMMARY:Archie Moore: Kith and Kin
+DESCRIPTION:Archie Moore: Kith and Kin is an Arts / Exhibition event at GOM
+ A\, Stanley Place\, South Bank.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/exhibition/archie-moore-kith-and-kin
+END:VEVENT
+END:VCALENDAR

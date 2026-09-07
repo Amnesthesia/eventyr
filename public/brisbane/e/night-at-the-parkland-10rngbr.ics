@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Night at The Parkland
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-10rngbr@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260921
+SUMMARY:Night at The Parkland
+DESCRIPTION:Exclusive QTIX offer for Night at The Parkland. Enjoy live musi
+ c from Missy Higgins\, Human Nature\, PNAU\, The Temper Trap and more\, pl
+ us a complimentary Tempus Two wine at Roma Street Parkland.
+LOCATION:Roma Street Parkland
+URL:https://www.qtix.com.au/whats-on/2026/night-at-the-parkland-2026/
+END:VEVENT
+END:VCALENDAR

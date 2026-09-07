@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Damned (UK) With The Darts (USA)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1xj1ch5@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:The Damned (UK) With The Darts (USA)
+DESCRIPTION:The Damned and The Darts perform a concert at The Tivoli.
+LOCATION:The Tivoli\, 52 Costin St
+URL:https://thetivoli.com.au/events/the-damned-26
+END:VEVENT
+END:VCALENDAR

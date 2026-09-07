@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dear Seattle Regional Aus Tour 2026 with Seahaven
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1mna4yp@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Dear Seattle Regional Aus Tour 2026 with Seahaven
+DESCRIPTION:Indie-rock live music performance featuring Dear Seattle and Se
+ ahaven in an intimate venue.
+LOCATION:Mo’s Desert Clubhouse\, Burleigh Heads
+URL:https://tixel.com/au/discover/Gold-Coast
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wake Up and Sing! with Toowong State School Signing Choir
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1612005@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Wake Up and Sing! with Toowong State School Signing Choir
+DESCRIPTION:Wake Up & Sing!
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/wake-up-and-sing-toowong-state-s
+ chool-signing-choir
+END:VEVENT
+END:VCALENDAR

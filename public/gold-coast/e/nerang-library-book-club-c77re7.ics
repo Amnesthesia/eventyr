@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Nerang Library Book Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-c77re7@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T103000
+DTEND;TZID=Australia/Brisbane:20260907T123000
+SUMMARY:Nerang Library Book Club
+DESCRIPTION:A local community book club meeting to discuss selected literat
+ ure\; ideal for readers looking to connect with others in a relaxed\, disc
+ ussion-based environment.
+LOCATION:Nerang Library
+URL:https://www.goldcoast.qld.gov.au/libraries
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Generations & Dynasties: The Brady Family
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-i0s1xr@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Generations & Dynasties: The Brady Family
+DESCRIPTION:Generations & Dynasties: The Brady Family is a public lecture h
+ eld at Brisbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/generations-and-dynasties-the-br
+ ady-family
+END:VEVENT
+END:VCALENDAR

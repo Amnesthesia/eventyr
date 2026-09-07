@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lord Mayor's City Hall Concerts: David Bailey
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1exkxuf@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Lord Mayor's City Hall Concerts: David Bailey
+DESCRIPTION:Lord Mayor's City Hall Concerts
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/lord-mayors-city-hall-program-da
+ vid-bailey
+END:VEVENT
+END:VCALENDAR

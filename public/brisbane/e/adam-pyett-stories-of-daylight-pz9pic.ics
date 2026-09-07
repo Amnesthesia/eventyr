@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Adam Pyett – "Stories of daylight"
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-pz9pic@dothings
+DTSTART;TZID=Australia/Brisbane:20260902T100000
+DTEND;TZID=Australia/Brisbane:20260926T170000
+SUMMARY:Adam Pyett – "Stories of daylight"
+DESCRIPTION:An exploration of light and environment through the lens of Ada
+ m Pyett’s distinct painterly style. Ideal for those interested in landsc
+ ape study and artistic technique.
+LOCATION:Jan Murphy Gallery\, New Farm
+URL:https://www.janmurphygallery.com.au/
+END:VEVENT
+END:VCALENDAR

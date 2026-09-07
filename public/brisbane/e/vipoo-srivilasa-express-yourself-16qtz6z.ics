@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Vipoo Srivilasa: Express Yourself
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16qtz6z@dothings
+DTSTART;TZID=Australia/Brisbane:20251011T100000
+DTEND;TZID=Australia/Brisbane:20251011T120000
+SUMMARY:Vipoo Srivilasa: Express Yourself
+DESCRIPTION:Vipoo Srivilasa: Express Yourself is a Workshop / Class event a
+ t GOMA\, Stanley Place\, South Bank.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/exhibition/vipoo-srivilasa-express-yourse
+ lf
+END:VEVENT
+END:VCALENDAR

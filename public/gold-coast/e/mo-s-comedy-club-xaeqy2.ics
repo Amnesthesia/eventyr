@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mo's Comedy Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-xaeqy2@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T220000
+SUMMARY:Mo's Comedy Club
+DESCRIPTION:An intimate\, alternative comedy night hosted at a grassroots c
+ reative venue\, known for experimental and raw stand-up performances.
+LOCATION:Mo's Desert Clubhouse\, Burleigh
+URL:https://experiencegoldcoast.com/events/mos-comedy-club
+END:VEVENT
+END:VCALENDAR

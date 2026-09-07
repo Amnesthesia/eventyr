@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Scene Roulette
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-116quk5@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260926
+SUMMARY:Scene Roulette
+DESCRIPTION:FREE community events and workshops for actors to flex their mu
+ scles and meet other creatives. Facilitated by Imperfect Creatives and sup
+ ported by Metro Arts
+LOCATION:Metro Arts\, Brisbane City
+URL:https://metroarts.com.au/workshop/laneway-event-scene-roulette/
+END:VEVENT
+END:VCALENDAR

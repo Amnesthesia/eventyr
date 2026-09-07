@@ -80,21 +80,27 @@ export function humanDatetime(
 	const d = new Date(`${naive}${dateOnly ? "T00:00:00" : ""}Z`);
 	if (Number.isNaN(d.getTime())) return "";
 	const day = `${DAYS[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS_SHORT[d.getUTCMonth()]}`;
-	if (endNaive && endNaive.slice(0, 10) > naive.slice(0, 10)) {
-		const e = new Date(`${endNaive.slice(0, 10)}T00:00:00Z`);
-		if (!Number.isNaN(e.getTime())) {
-			const year =
-				e.getUTCFullYear() !== d.getUTCFullYear()
-					? ` ${e.getUTCFullYear()}`
-					: "";
-			return `${day} – ${DAYS[e.getUTCDay()]} ${e.getUTCDate()} ${MONTHS_SHORT[e.getUTCMonth()]}${year}`;
-		}
-	}
-	if (dateOnly) return day;
 	const h24 = d.getUTCHours();
 	const h12 = h24 % 12 === 0 ? 12 : h24 % 12;
 	const mins = String(d.getUTCMinutes()).padStart(2, "0");
-	return `${day}, ${h12}:${mins} ${h24 < 12 ? "AM" : "PM"}`;
+	// Kept separate from `day` so the multi-day branch can carry it too: a run
+	// that starts at a known time used to render as a bare date range, silently
+	// discarding a time we had. "Fri 4 Sep, 10:00 AM – Sat 26 Sep".
+	const time = dateOnly ? "" : `, ${h12}:${mins} ${h24 < 12 ? "AM" : "PM"}`;
+	if (endNaive && endNaive.slice(0, 10) > naive.slice(0, 10)) {
+		const e = new Date(`${endNaive.slice(0, 10)}T00:00:00Z`);
+		if (!Number.isNaN(e.getTime())) {
+			// A run that crosses a new year gets the year on BOTH ends, never only
+			// the end. Twenty of Brisbane's long exhibitions opened in 2023–2025,
+			// and "Wed 20 Sep, 10:00 AM – Tue 26 Jan 2027" reads as opening this
+			// September when it opened three years ago.
+			const spansYears = e.getUTCFullYear() !== d.getUTCFullYear();
+			const startYear = spansYears ? ` ${d.getUTCFullYear()}` : "";
+			const endYear = spansYears ? ` ${e.getUTCFullYear()}` : "";
+			return `${day}${startYear}${time} – ${DAYS[e.getUTCDay()]} ${e.getUTCDate()} ${MONTHS_SHORT[e.getUTCMonth()]}${endYear}`;
+		}
+	}
+	return `${day}${time}`;
 }
 
 /**

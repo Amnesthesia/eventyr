@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Active Socials – Bushwalking/Hiking Group
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kxwuo@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260914
+SUMMARY:Brisbane Active Socials – Bushwalking/Hiking Group
+DESCRIPTION:A social hiking group that organizes excursions through local n
+ atural trails\, encouraging interaction and outdoor exploration.
+LOCATION:Various Brisbane trailheads
+URL:https://www.facebook.com/BSHMeetup
+END:VEVENT
+END:VCALENDAR

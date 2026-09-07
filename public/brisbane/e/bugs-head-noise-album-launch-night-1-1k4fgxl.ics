@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bugs: Head Noise Album Launch Night 1
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1k4fgxl@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Bugs: Head Noise Album Launch Night 1
+DESCRIPTION:Indie-rock band Bugs celebrate their latest album release with 
+ an intimate live performance in a basement music venue.
+LOCATION:Crowbar Brisbane\, Fortitude Valley
+URL:https://crowbarbrisbane.com
+END:VEVENT
+END:VCALENDAR

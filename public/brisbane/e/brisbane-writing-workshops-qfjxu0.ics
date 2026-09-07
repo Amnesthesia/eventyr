@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Writing Workshops
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-qfjxu0@dothings
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260914
+SUMMARY:Brisbane Writing Workshops
+DESCRIPTION:Guided sessions focusing on specific writing techniques\, promp
+ ts\, and collaborative exercises for local writers.
+LOCATION:Brisbane (venue via Meetup)
+URL:https://www.meetup.com/brisbane-writing-workshops/
+END:VEVENT
+END:VCALENDAR

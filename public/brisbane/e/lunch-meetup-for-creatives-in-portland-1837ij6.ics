@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lunch Meetup for Creatives in Portland
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1837ij6@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T120000
+DTEND;TZID=Australia/Brisbane:20260913T140000
+SUMMARY:Lunch Meetup for Creatives in Portland
+DESCRIPTION:The Lunch Meetup for Creatives in Portland is a social event he
+ ld in Portland.
+LOCATION:Portland
+URL:https://www.creativelunchclub.com/meetups/lunch-for-creatives-in-portla
+ nd-september-2026
+END:VEVENT
+END:VCALENDAR

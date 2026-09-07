@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ralph Wilson
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12kvfrg@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T100000
+DTEND;TZID=Australia/Brisbane:20261003T100000
+SUMMARY:Ralph Wilson
+DESCRIPTION:Ralph Wilson is an arts exhibition held at Philip Bacon Galleri
+ es.
+LOCATION:Philip Bacon Galleries
+URL:https://philipbacongalleries.com.au/ralph-wilson-2026
+END:VEVENT
+END:VCALENDAR

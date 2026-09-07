@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Strong is the New Pretty
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1pjhm1a@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T193000
+DTEND;TZID=Australia/Brisbane:20260910T213000
+SUMMARY:Strong is the New Pretty
+DESCRIPTION:A theatrical performance exploring themes of empowerment and id
+ entity\, presented as part of the Brisbane Festival. Expect a curated\, ar
+ tistic experience in a major cultural venue.
+LOCATION:Playhouse\, QPAC
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

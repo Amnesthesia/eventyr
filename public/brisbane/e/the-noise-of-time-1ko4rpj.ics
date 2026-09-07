@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Noise of Time
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ko4rpj@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T100000
+DTEND;TZID=Australia/Brisbane:20261129T170000
+SUMMARY:The Noise of Time
+DESCRIPTION:COMING SOON - An exhibition of works on paper by Ipswich based 
+ Artist\, Ian Friend.
+LOCATION:Ipswich Art Gallery
+URL:https://www.ipswichartgallery.qld.gov.au/whats-on/Ian-Friend-The-Noise-
+ of-Time
+END:VEVENT
+END:VCALENDAR

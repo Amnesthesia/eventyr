@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tea & Tour: Kirstie Macleod
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1gmaast@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T103000
+DTEND;TZID=Australia/Brisbane:20260912T123000
+SUMMARY:Tea & Tour: Kirstie Macleod
+DESCRIPTION:Tea & Tour: Kirstie Macleod is an Arts / Exhibition event at Mu
+ seum of Brisbane\, King George Square (Brisbane City Hall).
+LOCATION:Museum of Brisbane\, King George Square (Brisbane City Hall)
+URL:https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/
+END:VEVENT
+END:VCALENDAR

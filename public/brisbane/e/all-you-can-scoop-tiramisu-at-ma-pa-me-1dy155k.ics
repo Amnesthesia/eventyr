@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:All You Can Scoop Tiramisu At Ma Pa Me
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dy155k@dothings
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20261001
+SUMMARY:All You Can Scoop Tiramisu At Ma Pa Me
+DESCRIPTION:All You Can Scoop Tiramisu At Ma Pa Me is a community event hel
+ d at South Bank Parklands.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/all-you-can-scoop-tiramisu-at-
+ ma-pa-me
+END:VEVENT
+END:VCALENDAR

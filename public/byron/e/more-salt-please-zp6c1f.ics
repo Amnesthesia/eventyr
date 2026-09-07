@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:More Salt Please
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-zp6c1f@dothings
+DTSTART;TZID=Australia/Brisbane:20260822T100000
+DTEND;TZID=Australia/Brisbane:20260912T160000
+SUMMARY:More Salt Please
+DESCRIPTION:A curated exhibition showcasing contemporary art practices\, of
+ fering a space for reflection on local culture and artistic inquiry.
+LOCATION:Lone Goat Gallery\, 28 Lawson St\, Byron Bay NSW 2481
+URL:https://www.lonegoatgallery.com/exhibitions
+END:VEVENT
+END:VCALENDAR

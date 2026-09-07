@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Catherine Dinkelmann — Be(longing) (Pop‑up artisan)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-c2l5ut@dothings
+DTSTART;TZID=Australia/Brisbane:20260821T100000
+DTEND;TZID=Australia/Brisbane:20261011T140000
+SUMMARY:Catherine Dinkelmann — Be(longing) (Pop‑up artisan)
+DESCRIPTION:A pop-up artisan display featuring ceramic works by Catherine D
+ inkelmann\, exploring themes of belonging and craftsmanship.
+LOCATION:Caloundra Regional Gallery Store\, Caloundra
+URL:https://prod-gallery.sunshinecoast.qld.gov.au/about/gallery-store/pop-u
+ p-artisan-catherine-dinkelmann-ceramics
+END:VEVENT
+END:VCALENDAR

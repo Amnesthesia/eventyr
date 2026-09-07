@@ -16,7 +16,10 @@ export default function NotificationPrompt() {
 	const [supported, setSupported] = useState(false);
 	const [permission, setPermission] =
 		useState<NotificationPermission>("default");
-	const [testSent, setTestSent] = useState(false);
+	// null = idle. The outcome matters: on a browser that quietly declines to
+	// show anything (Safari on macOS only delivers these to an installed web
+	// app) this used to confirm a notification the reader never saw.
+	const [testResult, setTestResult] = useState<"sent" | "failed" | null>(null);
 	const [showMenu, setShowMenu] = useState(false);
 
 	useEffect(() => {
@@ -39,9 +42,9 @@ export default function NotificationPrompt() {
 	}
 
 	async function handleTest() {
-		await sendTestNotification();
-		setTestSent(true);
-		setTimeout(() => setTestSent(false), 2000);
+		const shown = await sendTestNotification();
+		setTestResult(shown ? "sent" : "failed");
+		setTimeout(() => setTestResult(null), shown ? 2000 : 6000);
 	}
 
 	return (
@@ -49,35 +52,35 @@ export default function NotificationPrompt() {
 			{permission === "granted" ? (
 				<button
 					type="button"
-					className="notif-pill notif-active"
+					className="filter-btn notif-on"
 					onClick={() => setShowMenu((prev) => !prev)}
 					title="Notification reminders active (1h before & 8am digest)"
 					aria-label="Notification settings"
 					aria-expanded={showMenu}
 				>
-					<BellRing size={13} strokeWidth={2.2} />
+					<BellRing size={12} strokeWidth={2.2} />
 					<span>Reminders on</span>
 				</button>
 			) : permission === "denied" ? (
 				<button
 					type="button"
-					className="notif-pill notif-disabled"
+					className="filter-btn notif-blocked"
 					disabled
 					title="Notifications blocked in browser settings"
 					aria-label="Notifications blocked"
 				>
-					<BellOff size={13} strokeWidth={2.2} />
+					<BellOff size={12} strokeWidth={2.2} />
 					<span>Reminders blocked</span>
 				</button>
 			) : (
 				<button
 					type="button"
-					className="notif-pill notif-enable"
+					className="filter-btn"
 					onClick={handleEnable}
 					title="Get reminders 1h before events and at 8am"
 					aria-label="Enable event notification reminders"
 				>
-					<Bell size={13} strokeWidth={2.2} />
+					<Bell size={12} strokeWidth={2.2} />
 					<span>Get reminders</span>
 				</button>
 			)}
@@ -113,9 +116,9 @@ export default function NotificationPrompt() {
 						type="button"
 						className="notif-test-btn"
 						onClick={handleTest}
-						disabled={testSent}
+						disabled={testResult === "sent"}
 					>
-						{testSent ? (
+						{testResult === "sent" ? (
 							<>
 								<Check size={13} /> Sent!
 							</>
@@ -125,6 +128,13 @@ export default function NotificationPrompt() {
 							</>
 						)}
 					</button>
+					{testResult === "failed" && (
+						<p className="notif-test-failed">
+							Your browser didn't show it. Safari on macOS only delivers these
+							to an installed web app — add this site to your Dock, or use
+							Chrome.
+						</p>
+					)}
 				</div>
 			)}
 		</div>

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Shailer Park SHS – Ignite Dance Academy – Magic
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-14gyb8n@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T180000
+DTEND;TZID=Australia/Brisbane:20260908T200000
+SUMMARY:Shailer Park SHS – Ignite Dance Academy – Magic
+DESCRIPTION:Shailer Park SHS – Ignite Dance Academy – Magic is a concer
+ t or music event held at Kingston Butter Factory Cultural Precinct.
+LOCATION:Kingston Butter Factory Cultural Precinct
+URL:https://www.loganarts.com.au/event/shailer-park-ignite-dance-academy-ma
+ gic/
+END:VEVENT
+END:VCALENDAR

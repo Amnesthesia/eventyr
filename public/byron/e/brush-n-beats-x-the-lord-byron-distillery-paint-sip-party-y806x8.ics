@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brush 'N Beats x The Lord Byron Distillery | Paint & Sip Party
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-y806x8@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:Brush 'N Beats x The Lord Byron Distillery | Paint & Sip Party
+DESCRIPTION:A social painting session held at a local distillery\, combinin
+ g creative expression with a casual\, guided group art experience.
+LOCATION:Lord Byron Distillery\, 4 Banksia Drive\, Byron Bay NSW
+URL:https://www.eventbrite.com.au/e/brush-n-beats-x-the-lord-byron-distille
+ ry-paint-sip-party-tickets-1985250526767
+END:VEVENT
+END:VCALENDAR

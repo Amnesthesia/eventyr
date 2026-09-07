@@ -13,7 +13,7 @@ type Event = Record<string, unknown>;
 export const RANK_DESCRIPTION_CHARS = 300;
 /** Bump when RANK_SYSTEM or the fields it reads change meaning, so a reused
  * score can never answer a question the current prompt no longer asks. */
-export const RANK_PROMPT_VERSION = "v1";
+export const RANK_PROMPT_VERSION = "v2";
 
 /**
  * What a score is actually a judgement of: the event's identity (title, start,

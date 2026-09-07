@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Logan Drama Festival 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-8o19sy@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T180000
+DTEND;TZID=Australia/Brisbane:20260916T200000
+SUMMARY:Logan Drama Festival 2026
+DESCRIPTION:Logan Drama Festival 2026 is an arts exhibition held at Kingsto
+ n Butter Factory Cultural Precinct.
+LOCATION:Kingston Butter Factory Cultural Precinct
+URL:https://www.loganarts.com.au/event/logan-drama-festival/
+END:VEVENT
+END:VCALENDAR

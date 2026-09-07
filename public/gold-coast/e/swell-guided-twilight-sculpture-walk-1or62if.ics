@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SWELL Guided Twilight Sculpture Walk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1or62if@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:SWELL Guided Twilight Sculpture Walk
+DESCRIPTION:An evening guided tour exploring the sculpture installations un
+ der lighting\, providing deeper context into the works and artist motivati
+ ons.
+LOCATION:Currumbin Beach ocean walkway
+URL:https://www.swellsculpture.com.au
+END:VEVENT
+END:VCALENDAR

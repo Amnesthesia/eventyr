@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Miami Marketta Thursday Street Food & Free Live Music
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-o7fztt@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T170000
+DTEND;TZID=Australia/Brisbane:20260910T190000
+SUMMARY:Miami Marketta Thursday Street Food & Free Live Music
+DESCRIPTION:A consistent weekly community gathering featuring local street 
+ food stalls and rotating live music performances in a relaxed\, open-air i
+ ndustrial setting. It functions as a social hub for locals to connect and 
+ enjoy independent artists.
+LOCATION:Miami Marketta\, Miami
+URL:https://www.miamimarketta.com/
+END:VEVENT
+END:VCALENDAR

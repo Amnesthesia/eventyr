@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sorcerers from Bohemia: Picasso’s Saltimbanques
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1sg8bjf@dothings
+DTSTART;TZID=Australia/Brisbane:20260214T100000
+DTEND;TZID=Australia/Brisbane:20260214T120000
+SUMMARY:Sorcerers from Bohemia: Picasso’s Saltimbanques
+DESCRIPTION:Sorcerers from Bohemia: Picasso’s Saltimbanques is an Arts / 
+ Exhibition event at QAG\, Stanley Place\, South Bank.
+LOCATION:QAG\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/exhibition/sorcerers-from-bohemia-picasso
+ s-saltimbanques
+END:VEVENT
+END:VCALENDAR

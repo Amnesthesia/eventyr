@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Glenn Barkley — Impression Sessions (handbuilding & stamp ma
+ king) — Weekend workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-12xxypu@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:Glenn Barkley — Impression Sessions (handbuilding & stamp making)
+  — Weekend workshop
+DESCRIPTION:A hands-on\, two-day intensive pottery workshop focused on hand
+ building techniques and creating custom stamps under the guidance of a pro
+ fessional artist.
+LOCATION:Byron School of Art\, 112 Dalley St\, Mullumbimby NSW 2482
+URL:https://www.byronschoolofart.com/glenn-barkley-impression-sessions
+END:VEVENT
+END:VCALENDAR

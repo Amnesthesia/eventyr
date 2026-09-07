@@ -92,19 +92,31 @@ function startDate(event: Event): string {
 	return (event.datetime_iso ?? "").slice(0, 10);
 }
 
+/** Descending score, the tie-break for both comparators below. Without it a
+ * tie falls back to file order, and inside a date group every date-only event
+ * ties with every other — so a score-2 event could sit above a score-9 one for
+ * no reason a reader can see. */
+function byScore(a: Event, b: Event): number {
+	return (b.score || 0) - (a.score || 0);
+}
+
 /** Ascending by start instant, so a group reads down the day. Undated sinks to
  * the bottom, and a date with no time sits before that day's timed events —
  * which is what an all-day event is. */
 function byStartTime(a: Event, b: Event): number {
-	return (a.datetime_iso || "9999").localeCompare(b.datetime_iso || "9999");
+	const cmp = (a.datetime_iso || "9999").localeCompare(
+		b.datetime_iso || "9999",
+	);
+	return cmp !== 0 ? cmp : byScore(a, b);
 }
 
 /** Ascending by end date: for something already running when the window
  * opened, a start time months ago says nothing, but "closes soonest" does. */
 function byEndDate(a: Event, b: Event): number {
-	return (a.datetime_end_iso || "9999").localeCompare(
+	const cmp = (a.datetime_end_iso || "9999").localeCompare(
 		b.datetime_end_iso || "9999",
 	);
+	return cmp !== 0 ? cmp : byScore(a, b);
 }
 
 function groupByDate(

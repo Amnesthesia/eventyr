@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Henson Archive
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-19hzwn2@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T103000
+DTEND;TZID=Australia/Brisbane:20260913T113000
+SUMMARY:Henson Archive
+DESCRIPTION:Henson Archive is an Arts / Exhibition event at GOMA\, Stanley 
+ Place\, South Bank.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/event/hensonarchive-2026-09-13
+END:VEVENT
+END:VCALENDAR

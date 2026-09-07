@@ -8,7 +8,7 @@
   "events": [
     {
       "title": "Upcoming Exhibitions",
-      "datetime": "Sat 12 Sep",
+      "datetime": "Sat 12 Sep – Sat 24 Oct",
       "datetime_iso": "2026-09-12",
       "datetime_end_iso": "2026-10-24",
       "location": "Logan Art Gallery",
@@ -30,7 +30,7 @@
     },
     {
       "title": "fACTory | indelarts Drama Workshop Series 2026",
-      "datetime": "Tue 14 Jul",
+      "datetime": "Tue 14 Jul – Tue 15 Sep",
       "datetime_iso": "2026-07-14",
       "datetime_end_iso": "2026-09-15",
       "location": "Kingston Butter Factory Cultural Precinct",
@@ -52,7 +52,7 @@
     },
     {
       "title": "The Line & Rail Artspace: Beyond the classroom exhibition",
-      "datetime": "Sat 5 Sep",
+      "datetime": "Sat 5 Sep – Sat 10 Oct",
       "datetime_iso": "2026-09-05",
       "datetime_end_iso": "2026-10-10",
       "location": "The Line & Rail Artspace",
@@ -73,45 +73,45 @@
       "creative": true
     },
     {
-      "title": "Wakakirri QLD Awards Night 2026",
-      "datetime": "Tue 8 Sep, 7:15 PM",
-      "datetime_iso": "2026-09-08T19:15:00",
-      "datetime_end_iso": "",
-      "location": "Logan Entertainment Centre",
-      "link": "https://www.loganarts.com.au/event/wakakirri-qld-awards-night-2026/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Wakakirri QLD Awards Night 2026 is a community event held at Logan Entertainment Centre.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "awards",
-        "performance",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Shailer Park SHS – Ignite Dance Academy – Magic",
-      "datetime": "Tue 8 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-08T18:00:00",
+      "datetime": "Tue 8 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-08T17:30:00",
       "datetime_end_iso": "",
       "location": "Kingston Butter Factory Cultural Precinct",
       "link": "https://www.loganarts.com.au/event/shailer-park-ignite-dance-academy-magic/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Shailer Park SHS – Ignite Dance Academy – Magic is a concert or music event held at Kingston Butter Factory Cultural Precinct.",
+      "description": "Shailer Park SHS – Ignite Dance Academy – Magic is a concert / music event at Kingston Butter Factory Cultural Precinct.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "dance",
         "performance",
-        "student"
+        "school"
       ],
       "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Wakakirri QLD Awards Night 2026",
+      "datetime": "Tue 8 Sep, 6:45 PM",
+      "datetime_iso": "2026-09-08T18:45:00",
+      "datetime_end_iso": "",
+      "location": "Logan Entertainment Centre",
+      "link": "https://www.loganarts.com.au/event/wakakirri-qld-awards-night-2026/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Wakakirri QLD Awards Night 2026 is a concert / music event at Logan Entertainment Centre.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "awards",
+        "dance",
+        "performance"
+      ],
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -140,14 +140,14 @@
     },
     {
       "title": "Logan Business Distinction Awards 2026",
-      "datetime": "Fri 11 Sep, 6:45 PM",
-      "datetime_iso": "2026-09-11T18:45:00",
+      "datetime": "Fri 11 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-11T18:00:00",
       "datetime_end_iso": "",
       "location": "Logan Entertainment Centre",
       "link": "https://www.loganarts.com.au/event/logan-business-distinction-awards-2026/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Logan Business Distinction Awards 2026 is a community event held at Logan Entertainment Centre.",
+      "description": "Logan Business Distinction Awards 2026 is a community / other event at Logan Entertainment Centre.",
       "image": "",
       "category": "Community / Other",
       "tags": [
@@ -184,7 +184,7 @@
     },
     {
       "title": "Underdog Film Fest 2026",
-      "datetime": "Sat 12 Sep, 11:00 AM",
+      "datetime": "Sat 12 Sep, 11:00 AM – Sun 13 Sep",
       "datetime_iso": "2026-09-12T11:00:00",
       "datetime_end_iso": "2026-09-13",
       "location": "Kingston Butter Factory Cultural Precinct",
@@ -197,28 +197,6 @@
       "tags": [
         "film",
         "cinema",
-        "festival"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Logan Drama Festival 2026",
-      "datetime": "Wed 16 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-16T18:00:00",
-      "datetime_end_iso": "",
-      "location": "Kingston Butter Factory Cultural Precinct",
-      "link": "https://www.loganarts.com.au/event/logan-drama-festival/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Logan Drama Festival 2026 is an arts exhibition held at Kingston Butter Factory Cultural Precinct.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "drama",
-        "theatre",
         "festival"
       ],
       "social": true,
@@ -246,6 +224,28 @@
       "social": true,
       "intellectual": false,
       "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Logan Drama Festival 2026",
+      "datetime": "Wed 16 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-16T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Kingston Butter Factory Cultural Precinct",
+      "link": "https://www.loganarts.com.au/event/logan-drama-festival/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Logan Drama Festival 2026 is an arts exhibition held at Kingston Butter Factory Cultural Precinct.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "drama",
+        "theatre",
+        "festival"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
       "creative": true
     },
     {
@@ -294,8 +294,8 @@
     },
     {
       "title": "Silver Series: Do You Know the Way to San Jose",
-      "datetime": "Fri 18 Sep, 11:00 AM",
-      "datetime_iso": "2026-09-18T11:00:00",
+      "datetime": "Fri 18 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-18T10:00:00",
       "datetime_end_iso": "",
       "location": "Logan Entertainment Centre",
       "link": "https://www.loganarts.com.au/event/silver-series-do-you-know-the-way-to-san-jose/",
@@ -312,28 +312,6 @@
       "social": false,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "KRANK| Clay trinkets",
-      "datetime": "Sat 19 Sep, 10:30 AM",
-      "datetime_iso": "2026-09-19T10:30:00",
-      "datetime_end_iso": "",
-      "location": "Mayes Cottage",
-      "link": "https://www.loganarts.com.au/event/krank-clay-trinkets/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "KRANK| Clay trinkets is a workshop or class held at Mayes Cottage.",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "clay",
-        "craft",
-        "kids"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
       "creative": true
     },
     {
@@ -359,9 +337,53 @@
       "creative": true
     },
     {
+      "title": "KRANK| Clay trinkets",
+      "datetime": "Sat 19 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-19T10:30:00",
+      "datetime_end_iso": "",
+      "location": "Mayes Cottage",
+      "link": "https://www.loganarts.com.au/event/krank-clay-trinkets/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "KRANK| Clay trinkets is a workshop or class held at Mayes Cottage.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "clay",
+        "craft",
+        "kids"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Hallelujah Academy of Performing Arts – Cirque Wonder",
+      "datetime": "Sat 19 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-19T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Kingston Butter Factory Cultural Precinct",
+      "link": "https://www.loganarts.com.au/event/hallelujah-academy-performing-arts-cirque-wonder/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Hallelujah Academy of Performing Arts – Cirque Wonder is a concert / music event at Kingston Butter Factory Cultural Precinct.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "circus",
+        "performance",
+        "dance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Saralanga 2026",
-      "datetime": "Sun 20 Sep, 4:00 PM",
-      "datetime_iso": "2026-09-20T16:00:00",
+      "datetime": "Sun 20 Sep, 3:30 PM",
+      "datetime_iso": "2026-09-20T15:30:00",
       "datetime_end_iso": "",
       "location": "Logan Entertainment Centre",
       "link": "https://www.loganarts.com.au/event/saralanga-2026/",
@@ -371,8 +393,8 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "dance",
         "culture",
+        "dance",
         "performance"
       ],
       "social": true,
@@ -382,7 +404,7 @@
     },
     {
       "title": "Upcoming Exhibitions",
-      "datetime": "Sat 12 Sep",
+      "datetime": "Sat 12 Sep – Sat 24 Oct",
       "datetime_iso": "2026-09-12",
       "datetime_end_iso": "2026-10-24",
       "location": "Art Gallery",
@@ -404,7 +426,7 @@
     },
     {
       "title": "fACTory | indelarts Drama Workshop Series 2026",
-      "datetime": "Tue 14 Jul",
+      "datetime": "Tue 14 Jul – Tue 15 Sep",
       "datetime_iso": "2026-07-14",
       "datetime_end_iso": "2026-09-15",
       "location": "KBF",
@@ -426,7 +448,7 @@
     },
     {
       "title": "The Line & Rail Artspace: Beyond the classroom exhibition",
-      "datetime": "Sat 5 Sep",
+      "datetime": "Sat 5 Sep – Sat 10 Oct",
       "datetime_iso": "2026-09-05",
       "datetime_end_iso": "2026-10-10",
       "location": "The Line & Rail Artspace",
@@ -447,43 +469,21 @@
       "creative": true
     },
     {
-      "title": "Wakakirri QLD Awards Night 2026",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "LEC",
-      "link": "https://www.loganarts.com.au/event/wakakirri-qld-awards-night-2026/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Wakakirri QLD Awards Night 2026 is a community event held at LEC.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "awards",
-        "performance",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Shailer Park SHS – Ignite Dance Academy – Magic",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "datetime": "Tue 8 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-08T17:30:00",
       "datetime_end_iso": "",
       "location": "KBF",
       "link": "https://www.loganarts.com.au/event/shailer-park-ignite-dance-academy-magic/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Shailer Park SHS – Ignite Dance Academy – Magic is a concert or music event held at KBF.",
+      "description": "Shailer Park SHS – Ignite Dance Academy – Magic is a concert / music event at KBF.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "dance",
         "performance",
-        "student"
+        "school"
       ],
       "social": false,
       "intellectual": false,
@@ -491,21 +491,43 @@
       "creative": true
     },
     {
+      "title": "Wakakirri QLD Awards Night 2026",
+      "datetime": "Tue 8 Sep, 6:45 PM",
+      "datetime_iso": "2026-09-08T18:45:00",
+      "datetime_end_iso": "",
+      "location": "LEC",
+      "link": "https://www.loganarts.com.au/event/wakakirri-qld-awards-night-2026/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Wakakirri QLD Awards Night 2026 is a concert / music event at LEC.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "awards",
+        "dance",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Exhibition opening",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-11T17:00:00",
       "datetime_end_iso": "",
       "location": "Art Gallery",
       "link": "https://www.loganarts.com.au/event/exhibition-opening-9/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Exhibition opening is an arts exhibition held at Art Gallery.",
+      "description": "Exhibition opening is an arts / exhibition event at Art Gallery.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
-        "opening",
-        "gallery"
+        "exhibition",
+        "opening"
       ],
       "social": true,
       "intellectual": false,
@@ -514,14 +536,14 @@
     },
     {
       "title": "Logan Business Distinction Awards 2026",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-11T18:00:00",
       "datetime_end_iso": "",
       "location": "LEC",
       "link": "https://www.loganarts.com.au/event/logan-business-distinction-awards-2026/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Logan Business Distinction Awards 2026 is a community event held at LEC.",
+      "description": "Logan Business Distinction Awards 2026 is a community / other event at LEC.",
       "image": "",
       "category": "Community / Other",
       "tags": [
@@ -536,14 +558,14 @@
     },
     {
       "title": "Life drawing | Afternoon session",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 1:30 PM",
+      "datetime_iso": "2026-09-12T13:30:00",
       "datetime_end_iso": "",
       "location": "Art Gallery",
       "link": "https://www.loganarts.com.au/event/life-drawing-afternoon/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Life drawing | Afternoon session is a workshop or class held at Art Gallery.",
+      "description": "Life drawing | Afternoon session is a workshop / class event at Art Gallery.",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
@@ -551,21 +573,21 @@
         "drawing",
         "creative"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true
     },
     {
       "title": "Underdog Film Fest 2026",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 11:00 AM – Sun 13 Sep",
+      "datetime_iso": "2026-09-12T11:00:00",
       "datetime_end_iso": "2026-09-13",
       "location": "KBF",
       "link": "https://www.loganarts.com.au/event/underdog-film-fest-2026/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Underdog Film Fest 2026 is an arts exhibition held at KBF.",
+      "description": "Underdog Film Fest 2026 is an arts / exhibition event at KBF.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
@@ -579,25 +601,25 @@
       "creative": true
     },
     {
-      "title": "Logan Drama Festival 2026",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "title": "Logan Community Printmakers | Intermediate",
+      "datetime": "Wed 16 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-16T10:00:00",
       "datetime_end_iso": "",
-      "location": "KBF",
-      "link": "https://www.loganarts.com.au/event/logan-drama-festival/",
+      "location": "Art Gallery",
+      "link": "https://www.loganarts.com.au/event/logan-community-printmakers-intermediate-3/",
       "cost": "See link",
       "source": "LoganARTS",
-      "description": "Logan Drama Festival 2026 is an arts exhibition held at KBF.",
+      "description": "Logan Community Printmakers | Intermediate is a workshop / class event at Art Gallery.",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Workshop / Class",
       "tags": [
-        "drama",
-        "theatre",
-        "festival"
+        "art",
+        "printmaking",
+        "creative"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     }
   ]

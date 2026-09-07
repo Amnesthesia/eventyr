@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Psychologically‑Informed Creative Wellbeing Experience
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1wi27dw@dothings
+DTSTART;TZID=Australia/Brisbane:20260829T130000
+DTEND;TZID=Australia/Brisbane:20260919T160000
+SUMMARY:Psychologically‑Informed Creative Wellbeing Experience
+DESCRIPTION:A 4-week series integrating psychological principles with creat
+ ive practice to promote personal wellbeing and self-reflection in a group 
+ setting.
+LOCATION:Cooroy Butter Factory Arts Centre\, Cooroy
+URL:https://events.humanitix.com/psychologically-informed-creative-wellbein
+ g-experience-intensive
+END:VEVENT
+END:VCALENDAR

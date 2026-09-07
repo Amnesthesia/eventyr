@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12son4z@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T180000
+DTEND;TZID=Australia/Brisbane:20260907T190000
+SUMMARY:Yoga
+DESCRIPTION:Come and Join us for a weekly yoga class organised by The Works
+ hed Inner West Inc. For more information\, visit their website or Facebook
+  page .
+LOCATION:St Lucia Community Hall\, St Lucia
+URL:https://www.brisbaneunlocked.com.au/yoga-2026-09-07-6
+END:VEVENT
+END:VCALENDAR

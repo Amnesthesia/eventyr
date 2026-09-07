@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Undying: Abdul-Rahman Abdullah
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1edqucp@dothings
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20261108
+SUMMARY:Undying: Abdul-Rahman Abdullah
+DESCRIPTION:Undying: Abdul-Rahman Abdullah is an arts exhibition held at So
+ uth Bank Parklands.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/undying-abdul-rahman-abdullah
+END:VEVENT
+END:VCALENDAR

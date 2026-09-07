@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mosaic Lamp Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7adj2y@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260912T120000
+SUMMARY:Mosaic Lamp Workshop
+DESCRIPTION:An intimate\, hands-on craft workshop where participants learn 
+ to create their own intricate mosaic lamps in a studio setting.
+LOCATION:Arthur Street\, Fortitude Valley
+URL:https://www.eventbrite.com.au
+END:VEVENT
+END:VCALENDAR

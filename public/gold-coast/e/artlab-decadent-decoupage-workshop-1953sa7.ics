@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ArtLab Decadent Decoupage Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1953sa7@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260912T130000
+SUMMARY:ArtLab Decadent Decoupage Workshop
+DESCRIPTION:A focused craft session teaching the technique of decoupage\, a
+ llowing participants to create their own decorative art pieces.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://hota.com.au/events
+END:VEVENT
+END:VCALENDAR

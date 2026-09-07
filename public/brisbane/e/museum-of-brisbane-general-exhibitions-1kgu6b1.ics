@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Museum of Brisbane – General Exhibitions
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1kgu6b1@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T100000
+DTEND;TZID=Australia/Brisbane:20260913T170000
+SUMMARY:Museum of Brisbane – General Exhibitions
+DESCRIPTION:Ongoing curated exhibitions showcasing Brisbane's local history
+ \, cultural evolution\, and artistic output. A great spot for quiet reflec
+ tion and exploring civic narratives.
+LOCATION:Museum of Brisbane\, Brisbane City
+URL:https://brisbanesuburbsonlinenews.com.au/whats-on-brisbane-for-lovers-o
+ f-the-arts/
+END:VEVENT
+END:VCALENDAR

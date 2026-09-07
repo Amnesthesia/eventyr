@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:KRANK| Clay trinkets
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15efhfz@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T103000
+DTEND;TZID=Australia/Brisbane:20260919T123000
+SUMMARY:KRANK| Clay trinkets
+DESCRIPTION:KRANK| Clay trinkets is a workshop or class held at Mayes Cotta
+ ge.
+LOCATION:Mayes Cottage
+URL:https://www.loganarts.com.au/event/krank-clay-trinkets/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Let’s get arty for preschoolers | Sculpt a crafty creature
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-8pkvpk@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T100000
+DTEND;TZID=Australia/Brisbane:20260918T120000
+SUMMARY:Let’s get arty for preschoolers | Sculpt a crafty creature
+DESCRIPTION:Let’s get arty for preschoolers | Sculpt a crafty creature is
+  a workshop or class held at Logan Art Gallery.
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/lets-get-arty-for-preschoolers-sculp
+ t-a-crafty-creature/
+END:VEVENT
+END:VCALENDAR

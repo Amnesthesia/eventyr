@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Edge Screens: Echoes of Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1uefo36@dothings
+DTSTART;TZID=Australia/Brisbane:20260901T100000
+DTEND;TZID=Australia/Brisbane:20260919T170000
+SUMMARY:The Edge Screens: Echoes of Brisbane
+DESCRIPTION:An immersive digital and visual exhibition capturing the histor
+ y and evolution of Brisbane\, hosted within the creative hub of The Edge.
+LOCATION:State Library of Queensland\, South Brisbane
+URL:https://www.slq.qld.gov.au/discover/exhibitions
+END:VEVENT
+END:VCALENDAR

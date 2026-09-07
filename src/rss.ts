@@ -14,6 +14,7 @@ import {
 	eventHash,
 	eventPath,
 	KEY_TO_SLUG,
+	meetsScoreFloor,
 	PROJECT_ROOT,
 	SITE_URL,
 } from "./common.ts";
@@ -104,29 +105,34 @@ function buildFeed(payload: Payload): string {
 	const feedUrl = `${SITE_URL}/${slug}/feed.xml`;
 	const built = new Date().toUTCString();
 
-	const items = payload.events.map((event) => {
-		const date = pubDate(str(event, "datetime_iso"));
-		// The source's own URL when it gave one, otherwise this event's page on
-		// the site. Previously an event with no per-event URL had no <link> at
-		// all, so a reader had nowhere to click; now there is always somewhere.
-		const link =
-			str(event, "link") || `${SITE_URL}${eventPath(payload.city_key, event)}`;
-		const category = str(event, "category");
-		return [
-			"    <item>",
-			`      <title>${esc(str(event, "title"))}</title>`,
-			`      <link>${esc(link)}</link>`,
-			`      <guid isPermaLink="false">${esc(guidFor(event, payload.city_key))}</guid>`,
-			// Omitted rather than faked when the date didn't parse — unlike the
-			// iCal feed, which has to drop the event entirely.
-			date ? `      <pubDate>${date}</pubDate>` : "",
-			category ? `      <category>${esc(category)}</category>` : "",
-			`      <description>${esc(itemDescription(event))}</description>`,
-			"    </item>",
-		]
-			.filter(Boolean)
-			.join("\n");
-	});
+	// Same floor the site and the iCal feed apply: a reader subscribing to
+	// "this week's events" should not be sent the pub's lunch special.
+	const items = payload.events
+		.filter((event) => meetsScoreFloor(event.score))
+		.map((event) => {
+			const date = pubDate(str(event, "datetime_iso"));
+			// The source's own URL when it gave one, otherwise this event's page on
+			// the site. Previously an event with no per-event URL had no <link> at
+			// all, so a reader had nowhere to click; now there is always somewhere.
+			const link =
+				str(event, "link") ||
+				`${SITE_URL}${eventPath(payload.city_key, event)}`;
+			const category = str(event, "category");
+			return [
+				"    <item>",
+				`      <title>${esc(str(event, "title"))}</title>`,
+				`      <link>${esc(link)}</link>`,
+				`      <guid isPermaLink="false">${esc(guidFor(event, payload.city_key))}</guid>`,
+				// Omitted rather than faked when the date didn't parse — unlike the
+				// iCal feed, which has to drop the event entirely.
+				date ? `      <pubDate>${date}</pubDate>` : "",
+				category ? `      <category>${esc(category)}</category>` : "",
+				`      <description>${esc(itemDescription(event))}</description>`,
+				"    </item>",
+			]
+				.filter(Boolean)
+				.join("\n");
+		});
 
 	return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">

@@ -8,8 +8,8 @@
   "events": [
     {
       "title": "The Spyro Experiment 2.0",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "datetime": "Thu 17 Sep, 8:30 PM",
+      "datetime_iso": "2026-09-17T20:30:00",
       "datetime_end_iso": "",
       "location": "52 Petrie Terrace, Petrie Terrace",
       "link": "https://goodchatcomedy.com/shows/the-spyro-experiment-2-0/",
@@ -21,7 +21,7 @@
       "tags": [
         "comedy",
         "performance",
-        "live"
+        "standup"
       ],
       "social": false,
       "intellectual": false,
@@ -30,8 +30,8 @@
     },
     {
       "title": "Good Chat Comedy’s Friday Late & Loud w. Mickey D & Nick Cody!",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 9:00 PM",
+      "datetime_iso": "2026-09-11T21:00:00",
       "datetime_end_iso": "",
       "location": "52 Petrie Terrace, Petrie Terrace",
       "link": "https://goodchatcomedy.com/shows/good-chat-comedys-friday-late-loud-w-mickey-d-nick-cody/",
@@ -43,17 +43,17 @@
       "tags": [
         "comedy",
         "standup",
-        "live"
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Damien Power | From Nothing",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
+      "datetime": "Tue 15 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-15T19:00:00",
       "datetime_end_iso": "",
       "location": "52 Petrie Terrace, Brisbane City",
       "link": "https://goodchatcomedy.com/shows/damien-power-from-nothing/",
@@ -74,8 +74,8 @@
     },
     {
       "title": "Danielle Walker | Bittersweet",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "datetime": "Thu 17 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-17T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/danielle-walker-bittersweet/",
@@ -96,8 +96,8 @@
     },
     {
       "title": "Wednesday Night Comedy @ Good Chat Comedy Club!",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
+      "datetime": "Wed 9 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-09T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/wednesday-night-comedy-good-chat-comedy-club-28/",
@@ -109,17 +109,17 @@
       "tags": [
         "comedy",
         "standup",
-        "live"
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "The Spyro Experiment",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
+      "datetime": "Thu 10 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-10T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/the-spyro-experiment/",
@@ -130,8 +130,8 @@
       "category": "Community / Other",
       "tags": [
         "comedy",
-        "performance",
-        "live"
+        "standup",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -140,8 +140,8 @@
     },
     {
       "title": "Friday Night Comedy w/ Nick Cody & Friends!",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-11T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/friday-night-comedy-w-nick-cody-friends/",
@@ -153,17 +153,17 @@
       "tags": [
         "comedy",
         "standup",
-        "live"
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Good Chat Comedy’s Friday Late & Loud w. Mickey D & Nick Cody!",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 9:00 PM",
+      "datetime_iso": "2026-09-11T21:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/good-chat-comedys-friday-late-loud-w-mickey-d-nick-cody/",
@@ -175,17 +175,17 @@
       "tags": [
         "comedy",
         "standup",
-        "live"
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Mid Flight Brawl LIVE! [Brisbane – Encore Session!]",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-12T12:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/mid-flight-brawl-live-brisbane-encore-session/",
@@ -196,18 +196,18 @@
       "category": "Community / Other",
       "tags": [
         "comedy",
-        "podcast",
-        "live"
+        "standup",
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Mid Flight Brawl LIVE! [Brisbane]",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-12T14:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/mid-flight-brawl-live-brisbane-2/",
@@ -218,18 +218,18 @@
       "category": "Community / Other",
       "tags": [
         "comedy",
-        "podcast",
-        "live"
+        "standup",
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Luke Heggie | Work In Progress",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-12T16:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/luke-heggie-work-in-progress/",
@@ -250,8 +250,8 @@
     },
     {
       "title": "Nick Cody | Crusher",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-12T17:30:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/nick-cody-crusher/",
@@ -272,8 +272,8 @@
     },
     {
       "title": "Saturday Night Standup w/ Nick Cody & Friends!",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 12 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-12T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/saturday-night-standup-w-nick-cody-friends/",
@@ -285,17 +285,17 @@
       "tags": [
         "comedy",
         "standup",
-        "live"
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Damien Power | From Nothing",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
+      "datetime": "Tue 15 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-15T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/damien-power-from-nothing/",
@@ -316,8 +316,8 @@
     },
     {
       "title": "Wednesday Night Comedy @ Good Chat Comedy Club!",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "datetime": "Wed 16 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-16T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/wednesday-night-comedy-good-chat-comedy-club-29/",
@@ -329,17 +329,17 @@
       "tags": [
         "comedy",
         "standup",
-        "live"
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Danielle Walker | Bittersweet",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "datetime": "Thu 17 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-17T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/danielle-walker-bittersweet/",
@@ -360,8 +360,8 @@
     },
     {
       "title": "The Spyro Experiment 2.0",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "datetime": "Thu 17 Sep, 8:30 PM",
+      "datetime_iso": "2026-09-17T20:30:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/the-spyro-experiment-2-0/",
@@ -372,8 +372,8 @@
       "category": "Community / Other",
       "tags": [
         "comedy",
-        "performance",
-        "live"
+        "standup",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -382,8 +382,8 @@
     },
     {
       "title": "Friday Night Comedy w/ Brendhan Lovegrove & Friends!",
-      "datetime": "Fri 18 Sep",
-      "datetime_iso": "2026-09-18",
+      "datetime": "Fri 18 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-18T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/friday-night-comedy-w-brendhan-lovegrove-friends/",
@@ -395,17 +395,17 @@
       "tags": [
         "comedy",
         "standup",
-        "live"
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Good Chat Comedy’s Friday Late & Loud w/ Danielle Walker & Craig Quartermaine",
-      "datetime": "Fri 18 Sep",
-      "datetime_iso": "2026-09-18",
+      "datetime": "Fri 18 Sep, 9:00 PM",
+      "datetime_iso": "2026-09-18T21:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/good-chats-friday-late-loud-w-danielle-walker-craig-quartermaine/",
@@ -417,17 +417,17 @@
       "tags": [
         "comedy",
         "standup",
-        "live"
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Joe Daymond | Early Access",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
+      "datetime": "Sat 19 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-19T16:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/joe-daymond-early-access/",
@@ -448,8 +448,8 @@
     },
     {
       "title": "Brendhan Lovegrove [NZ] | Bury Me Happy",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
+      "datetime": "Sat 19 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-19T17:30:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/brendhan-lovegrove-nz-bury-me-happy/",
@@ -470,8 +470,8 @@
     },
     {
       "title": "Saturday Night Standup w/ Danielle Walker & Friends!",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
+      "datetime": "Sat 19 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-19T19:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/saturday-night-standup-w-danielle-walker-friends/",
@@ -483,17 +483,17 @@
       "tags": [
         "comedy",
         "standup",
-        "live"
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "Ting Lim | You For Real? One night only. Exclusive live taping.",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
+      "datetime": "Sat 19 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-19T19:00:00",
       "datetime_end_iso": "",
       "location": "Ad Astra Theatre",
       "link": "https://goodchatcomedy.com/shows/ting-lim-yo-for-real-one-night-only-exclusive-live-taping/",
@@ -505,7 +505,7 @@
       "tags": [
         "comedy",
         "standup",
-        "taping"
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -514,8 +514,8 @@
     },
     {
       "title": "Joe Daymond | Early Access",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
+      "datetime": "Sat 19 Sep, 9:00 PM",
+      "datetime_iso": "2026-09-19T21:00:00",
       "datetime_end_iso": "",
       "location": "Good Chat Comedy Club",
       "link": "https://goodchatcomedy.com/shows/joe-daymond-early-access-2/",

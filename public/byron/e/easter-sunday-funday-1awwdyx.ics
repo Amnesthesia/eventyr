@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Easter Sunday Funday!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1awwdyx@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Easter Sunday Funday!
+DESCRIPTION:Join us on Easter Sunday for beer\, pizza\, chocolate beer and 
+ chocolate pizza!Just in time for Easter\, our brand new Bad Bunny Choc Bal
+ tic Porter will be on tap and...
+LOCATION:Common People Brewing Co.
+URL:https://commonpeoplebrewing.com.au/blogs/news/easter-sunday-funday
+END:VEVENT
+END:VCALENDAR

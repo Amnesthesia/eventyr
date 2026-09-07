@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Block Print Workshop and Pop-Up Boutique
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-77d311@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Block Print Workshop and Pop-Up Boutique
+DESCRIPTION:A hands-on workshop focused on the traditional art of block pri
+ nting\, allowing participants to design and create their own textiles.
+LOCATION:140 Jonson St\, Byron Bay
+URL:https://eventbrite.com.au
+END:VEVENT
+END:VCALENDAR

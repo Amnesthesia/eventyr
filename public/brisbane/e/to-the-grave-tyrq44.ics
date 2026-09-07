@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:To The Grave
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-tyrq44@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:To The Grave
+DESCRIPTION:To The Grave at The Triffid is a concert / music event.
+LOCATION:The Triffid
+URL:https://thetriffid.com.au/all-events/to-the-grave-tickets-ae1325721
+END:VEVENT
+END:VCALENDAR

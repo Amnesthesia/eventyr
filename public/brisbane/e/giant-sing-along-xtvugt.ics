@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Giant Sing Along
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xtvugt@dothings
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260927
+SUMMARY:Giant Sing Along
+DESCRIPTION:Mic check\, one\, two.
+LOCATION:Festival Village\, South Bank
+URL:https://www.brisbaneunlocked.com.au/giant-sing-along-2026-09-04
+END:VEVENT
+END:VCALENDAR

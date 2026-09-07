@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Wetlands by Paper Hands
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xmqo5b@dothings
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20261001
+SUMMARY:The Wetlands by Paper Hands
+DESCRIPTION:An immersive art installation and exhibition exploring the natu
+ ral history and biodiversity of the local wetlands environment.
+LOCATION:Boondall Wetlands Environment Centre
+URL:https://brisbane.qld.gov.au
+END:VEVENT
+END:VCALENDAR

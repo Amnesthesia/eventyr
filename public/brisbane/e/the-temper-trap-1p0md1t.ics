@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Temper Trap
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1p0md1t@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:The Temper Trap
+DESCRIPTION:Night at the Parkland
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/the-temper-trap
+END:VEVENT
+END:VCALENDAR

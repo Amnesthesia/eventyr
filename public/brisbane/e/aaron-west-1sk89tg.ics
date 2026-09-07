@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Aaron West
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1sk89tg@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T170000
+DTEND;TZID=Australia/Brisbane:20260913T184500
+SUMMARY:Aaron West
+DESCRIPTION:Aaron West is a concert event held at Eat Street Northshore.
+LOCATION:Eat Street Northshore\, 221D Macarthur Avenue\, Hamilton\, QLD\, 4
+ 007
+URL:https://eatstreetnorthshore.com.au/event/aaron-west-2/
+END:VEVENT
+END:VCALENDAR

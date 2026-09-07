@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Preservation Talk: Military Items
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12o7k3m@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Preservation Talk: Military Items
+DESCRIPTION:A lecture and discussion on the historical preservation of mili
+ tary artifacts\, led by experts from the museum and archives sector. Perfe
+ ct for those interested in history and material culture.
+LOCATION:Anzac Square Memorial Galleries
+URL:https://www.slq.qld.gov.au
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight: Tribute to TOOL
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-ackfgi@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Candlelight: Tribute to TOOL
+DESCRIPTION:An intimate\, atmospheric live music performance featuring a tr
+ ibute to the band TOOL\, lit by thousands of candles in a unique venue set
+ ting.
+LOCATION:Bond University
+URL:https://bond.edu.au
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Men’s and Women’s Golf Comp
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-rnczqa@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Men’s and Women’s Golf Comp
+DESCRIPTION:Men’s and Women’s Golf Comp is a sporting event held at Oce
+ an Shores Country Club.
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/mens-and-womens-golf-comp/2026-09-19
+ /
+END:VEVENT
+END:VCALENDAR

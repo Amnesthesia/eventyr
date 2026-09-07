@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wednesday Bridge
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1xd61un@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T180000
+DTEND;TZID=Australia/Brisbane:20260916T203000
+SUMMARY:Wednesday Bridge
+DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
+  cards with our Bridge groups in the Sunset Room. Whether you’re an expe
+ rienced player or looking to find […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/wednesday-evening-bridge/2026-09-16/
+END:VEVENT
+END:VCALENDAR

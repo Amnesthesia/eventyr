@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Talk of the Town: True crime\, death and the live body
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-rbosp9@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Talk of the Town: True crime\, death and the live body
+DESCRIPTION:Talk of the Town: True crime\, death and the live body is a pub
+ lic lecture event at Brisbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/talk-of-the-town-2
+END:VEVENT
+END:VCALENDAR

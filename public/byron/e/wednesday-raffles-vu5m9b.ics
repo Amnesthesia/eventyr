@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wednesday Raffles
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-vu5m9b@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T180000
+DTEND;TZID=Australia/Brisbane:20260909T190000
+SUMMARY:Wednesday Raffles
+DESCRIPTION:Join us for a night of great prize-winning fun! With Meat Trays
+  and Gift Cards to be won every Wednesday night\, you won’t want to miss
+  this weekly event! Be sure to come in and grab a feed and a drink before 
+ the draws begin! Tickets are on sale every Wednesday from 6pm\, with draws
+  […]
+LOCATION:Mullumbimby Ex-Services Club\, 58 Dalley Street\, Mullumbimby\, NS
+ W\, 2482
+URL:https://www.mullumexservices.com.au/event/wednesday-raffles-2/2026-09-0
+ 9/
+END:VEVENT
+END:VCALENDAR

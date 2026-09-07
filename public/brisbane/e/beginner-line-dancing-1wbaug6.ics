@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Beginner line dancing
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1wbaug6@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T173000
+DTEND;TZID=Australia/Brisbane:20260907T183000
+SUMMARY:Beginner line dancing
+DESCRIPTION:Bookings essential. Improve your memory\, stay active\, and hav
+ e fun at the same time. It's a fantastic way to make new friends\, and no 
+ partner is required. Everyone is welcome.
+LOCATION:Wynnum Municipal Hall\, Wynnum
+URL:https://www.brisbaneunlocked.com.au/beginner-line-dancing-2026-09-07
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Richard Dunn
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-19o6omn@dothings
+DTSTART;TZID=Australia/Brisbane:20260221T100000
+DTEND;TZID=Australia/Brisbane:20260221T120000
+SUMMARY:Richard Dunn
+DESCRIPTION:Richard Dunn is an Arts / Exhibition event at QAG\, Stanley Pla
+ ce\, South Bank.
+LOCATION:QAG\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/exhibition/richard-dunn
+END:VEVENT
+END:VCALENDAR

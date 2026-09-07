@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ash – ‘1977’ 30th Anniversary Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1w35bx4@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T200000
+DTEND;TZID=Australia/Brisbane:20260910T230000
+SUMMARY:Ash – ‘1977’ 30th Anniversary Tour
+DESCRIPTION:Live performance by the iconic indie band Ash\, celebrating thr
+ ee decades of their debut album. A high-energy night perfect for fans of n
+ ostalgic guitar-driven rock.
+LOCATION:The Tivoli\, Fortitude Valley
+URL:https://tixel.com/au/discover/Brisbane
+END:VEVENT
+END:VCALENDAR

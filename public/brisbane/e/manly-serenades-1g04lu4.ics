@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Manly Serenades
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1g04lu4@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Manly Serenades
+DESCRIPTION:Brisbane Serenades
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/brisbane-serenades-manly
+END:VEVENT
+END:VCALENDAR

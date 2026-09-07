@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Morning Melodies with Tommy Memphis
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1ulxi4g@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T100000
+DTEND;TZID=Australia/Brisbane:20260911T113000
+SUMMARY:Morning Melodies with Tommy Memphis
+DESCRIPTION:Friday 11 September Doors: 9.30am Show: 10.00 - 11.30am Tickets
+  $20 We are excited to introduce the popular Tommy Memphis to Ballina RSL 
+ Morning Melodies! Just as Hamburg was the crucible that forged the Beatles
+ \, a venue where they honed their craft with marathon 6-7 hour sessions\, 
+ sometimes performing 7 nights a week\, it takes a […]
+LOCATION:Ballina RSL Auditorium\, 1 Grant Street\, Ballina\, NSW\, 2478
+URL:https://ballinarsl.com.au/event/morning-melodies-with-tommy-memphis/
+END:VEVENT
+END:VCALENDAR

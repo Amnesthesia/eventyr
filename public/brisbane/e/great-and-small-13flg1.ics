@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Great and Small
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-13flg1@dothings
+DTSTART;TZID=Australia/Brisbane:20250621T100000
+DTEND;TZID=Australia/Brisbane:20250621T120000
+SUMMARY:Great and Small
+DESCRIPTION:Great and Small is an Arts / Exhibition event at QAG\, Stanley 
+ Place\, South Bank.
+LOCATION:QAG\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/exhibition/great-and-small
+END:VEVENT
+END:VCALENDAR

@@ -42,6 +42,9 @@ Calibration rules — follow these strictly:
 - Only exceptional fits score 9–10 (perfect match, rare)
 - Do NOT score more than 15% of events above 7
 - Sports, MLM, sales events score 1–2
+- Venue promotions score 1: a happy hour, meal deal, drink special or raffle
+  is the venue selling its usual menu, not something to go to. Score the
+  promotion, not the venue — a good pub's "$13 Lunch Special" is still a 1.
 
 Return ONLY a JSON array: [{"index": 0, "score": 7}, ...]. No markdown, no explanation.`;
 

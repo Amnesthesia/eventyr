@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Film screening — Cerulean Limerence by Filippa Edghill
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1y8gdd2@dothings
+DTSTART;TZID=Australia/Brisbane:20260822T100000
+DTEND;TZID=Australia/Brisbane:20260912T160000
+SUMMARY:Film screening — Cerulean Limerence by Filippa Edghill
+DESCRIPTION:An experimental film presentation exploring themes of obsession
+  and landscape\, presented as part of the gallery's rotation of visual wor
+ ks.
+LOCATION:Lone Goat Gallery\, 28 Lawson St\, Byron Bay NSW 2481
+URL:https://www.lonegoatgallery.com/
+END:VEVENT
+END:VCALENDAR

@@ -1,18 +1,41 @@
-import { useMemo, useState } from "react";
+import { CalendarRange } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
 import EventGrid from "./components/EventGrid";
 import ExportSaved from "./components/ExportSaved";
 import FilterBar from "./components/FilterBar";
 import Header from "./components/Header";
 import { Intro } from "./components/Intro";
 import NotificationPrompt from "./components/NotificationPrompt";
+import SavedCalendar from "./components/SavedCalendar";
 import SwipeMode from "./components/SwipeMode";
 import { useEventsContext } from "./context";
 import { dateWindowFor, groupEvents } from "./utils/grouping";
+import { eventsFromIds, parseSavedIds } from "./utils/savedLink";
 
 export default function AppShell() {
-	const { cityData, starredEvents, picks, rest, groupBy, todayStr } =
+	const { cityData, cityKey, starredEvents, picks, rest, groupBy, todayStr } =
 		useEventsContext();
 	const [swiping, setSwiping] = useState(false);
+	// null = closed. A non-null value is the set the calendar is showing, which
+	// is either this browser's saved events or the ones a shared link named.
+	const [calendar, setCalendar] = useState<{
+		events: typeof starredEvents;
+		shared: boolean;
+	} | null>(null);
+
+	// A #cal= link opens straight into the calendar with the sender's events.
+	// Read after mount, never during render: the fragment is not part of the
+	// static HTML and reading it earlier would mismatch hydration. No new route
+	// is needed because this page already ships the whole city's events.
+	useEffect(() => {
+		const ids = parseSavedIds(window.location.hash);
+		if (!ids) return;
+		const events = eventsFromIds(ids, cityData.events, cityKey);
+		setCalendar({ events, shared: true });
+		// Cleared so a reload, or a later "share link", does not reopen someone
+		// else's set over the viewer's own.
+		history.replaceState(null, "", window.location.pathname);
+	}, [cityData.events, cityKey]);
 
 	// Only the long "all events" list is grouped. Saved and picks are already
 	// short and already labelled, and splitting a nine-card section further
@@ -53,6 +76,20 @@ export default function AppShell() {
 									<h2 className="section-label">saved</h2>
 									<div className="section-head-actions">
 										<NotificationPrompt />
+										<button
+											type="button"
+											className="filter-btn"
+											onClick={() =>
+												setCalendar({
+													events: starredEvents,
+													shared: false,
+												})
+											}
+											title="See your saved events on a week calendar"
+										>
+											<CalendarRange size={12} strokeWidth={2.2} />
+											<span>Calendar</span>
+										</button>
 										<ExportSaved />
 									</div>
 								</div>
@@ -81,6 +118,14 @@ export default function AppShell() {
 					</>
 				)}
 			</main>
+
+			{calendar && (
+				<SavedCalendar
+					events={calendar.events}
+					shared={calendar.shared}
+					onClose={() => setCalendar(null)}
+				/>
+			)}
 		</>
 	);
 }

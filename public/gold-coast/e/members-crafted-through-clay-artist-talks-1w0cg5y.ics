@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Members Crafted through Clay Artist Talks
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1w0cg5y@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T100000
+DTEND;TZID=Australia/Brisbane:20260913T120000
+SUMMARY:Members Crafted through Clay Artist Talks
+DESCRIPTION:Pottery members discuss their creative processes and the techni
+ cal aspects of their work in an intimate\, discussion-based studio environ
+ ment.
+LOCATION:Benowa Studio\, Gold Coast
+URL:https://goldcoastpotters.com
+END:VEVENT
+END:VCALENDAR

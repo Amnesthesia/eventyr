@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Composting with Seed The Ground
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-6gdwnl@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T093000
+DTEND;TZID=Australia/Brisbane:20260910T113000
+SUMMARY:Composting with Seed The Ground
+DESCRIPTION:A practical workshop on sustainable living\, focusing on home c
+ omposting techniques for regenerative gardening.
+LOCATION:Currumbin
+URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

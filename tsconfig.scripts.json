@@ -13,5 +13,9 @@
     "composite": true,
     "types": ["node"]
   },
-  "include": ["src"]
+  "include": ["src"],
+  // src/pages and src/layouts belong to the Astro app, not the pipeline: they
+  // use the @react alias and DOM lib, neither of which this config has. They
+  // are typechecked by tsconfig.json, which includes them.
+  "exclude": ["src/pages", "src/layouts"]
 }

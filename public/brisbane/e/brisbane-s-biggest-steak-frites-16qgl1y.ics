@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane's Biggest Steak Frites
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16qgl1y@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T170000
+DTEND;TZID=Australia/Brisbane:20260907T190000
+SUMMARY:Brisbane's Biggest Steak Frites
+DESCRIPTION:Brisbane's Biggest Steak Frites is a community event held at So
+ uth Bank Parklands.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/brisbanes-biggest-steak-frites
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:You're a Good Man\, Charlie Brown (Matinee)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1xf4gru@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T140000
+DTEND;TZID=Australia/Brisbane:20260912T160000
+SUMMARY:You're a Good Man\, Charlie Brown (Matinee)
+DESCRIPTION:A matinee performance of the community musical based on the Pea
+ nuts comic strip\, perfect for a relaxed afternoon of theatre.
+LOCATION:Noosa Arts Theatre\, 163 Weyba Road\, Noosaville
+URL:https://www.noosaartstheatre.org.au
+END:VEVENT
+END:VCALENDAR

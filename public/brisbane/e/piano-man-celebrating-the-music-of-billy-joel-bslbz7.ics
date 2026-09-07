@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Piano Man: Celebrating the Music of Billy Joel
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-bslbz7@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Piano Man: Celebrating the Music of Billy Joel
+DESCRIPTION:Piano Man: Celebrating the Music of Billy Joel is a concert per
+ formance held at South Bank Parklands.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/piano-man-celebrating-the-musi
+ c-of-billy-joel
+END:VEVENT
+END:VCALENDAR

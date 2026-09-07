@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:DAYBREAKER
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-eydqjq@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:DAYBREAKER
+DESCRIPTION:DAYBREAKER is a social / meetup event held at Brisbane Festival
+ .
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/daybreaker
+END:VEVENT
+END:VCALENDAR

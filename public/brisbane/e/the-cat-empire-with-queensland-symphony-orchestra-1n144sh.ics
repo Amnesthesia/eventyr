@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Cat Empire with Queensland Symphony Orchestra
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1n144sh@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T193000
+DTEND;TZID=Australia/Brisbane:20260913T213000
+SUMMARY:The Cat Empire with Queensland Symphony Orchestra
+DESCRIPTION:Limited tickets remain
+LOCATION:Queensland Symphony Orchestra
+URL:https://qso.com.au/events/2026/concert-specials-2026/the-cat-empire-wit
+ h-queensland-symphony-orchestra
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:$38 Steak And Taters At Tippler's Tap
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-jsjvjn@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260912
+SUMMARY:$38 Steak And Taters At Tippler's Tap
+DESCRIPTION:$38 Steak And Taters At Tippler's Tap is a community event held
+  at South Bank Parklands.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/38-steak-and-taters-at-tippler
+ s-tap
+END:VEVENT
+END:VCALENDAR

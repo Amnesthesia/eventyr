@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Screenworks Regional to Global 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1ckeckh@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T090000
+DTEND;TZID=Australia/Brisbane:20260910T200000
+SUMMARY:Screenworks Regional to Global 2026
+DESCRIPTION:A significant two-day screen industry forum connecting regional
+  creators with global opportunities\, featuring panels and discussions wit
+ h industry experts.
+LOCATION:Lennox Head Cultural Centre\, Lennox Head
+URL:https://screenworks.com.au/opportunities/regional-to-global-2026/
+END:VEVENT
+END:VCALENDAR

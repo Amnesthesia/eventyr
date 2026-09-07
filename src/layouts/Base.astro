@@ -139,7 +139,13 @@ const schema = {
 		item: {
 			"@type": "Event",
 			name: stripForDisplay(event.title),
-			description: stripForDisplay(event.description) || undefined,
+			// No description here on purpose. It is a *recommended*, not a required,
+			// Event property; Google's event experience is fed by single-event pages
+			// rather than list pages; and the event's own page (eventPath below)
+			// already carries the full Event schema including the description.
+			// Duplicating it here was the single largest contributor to a ~350 KB
+			// JSON-LD block, and the visible card still renders the text, so no
+			// crawler loses anything.
 			// With the city's UTC offset: a bare "2026-09-05T19:30:00" is
 			// ambiguous and a crawler may read it as UTC, which moves a 7:30pm
 			// gig to 5:30am the next day in a rich result.
@@ -278,6 +284,7 @@ const websiteSchema = {
     <meta
       name="keywords"
       content={`things to do in ${cityName}, ${cityName} events, what's on ${cityName}, events this week`}
+    />
 
     <!--
       max-image-preview:large is the one that matters: without it Google shows
@@ -334,42 +341,49 @@ const websiteSchema = {
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <script is:inline>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch(() => {});
+      // Both of these wait for load: neither is needed to render the page, and
+      // as a plain <script src> the BuyMeACoffee widget was parser-blocking on
+      // a third-party origin — the browser could not paint until cdnjs
+      // answered.
+      window.addEventListener("load", () => {
+        if ("serviceWorker" in navigator)
+          navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch((err) => {
+            // Logged, not swallowed. A failed registration leaves
+            // serviceWorker.ready pending forever, and notifications then do
+            // nothing with no error anywhere — which is exactly how the test
+            // notification came to look broken.
+            console.warn("Service worker registration failed:", err);
+          });
+        const bmc = document.createElement("script");
+        bmc.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js";
+        Object.assign(bmc.dataset, {
+          name: "BMC-Widget",
+          cfasync: "false",
+          id: "amnesthesia",
+          description: "Support me on Buy me a coffee!",
+          message: "Like this project? Buy me a coffee!",
+          position: "Right",
+          x_margin: "18",
+          color: "#aaa",
+          y_margin: "18",
         });
-      }
+        document.body.appendChild(bmc);
+      });
     </script>
-    <script type="application/ld+json" set:html={JSON.stringify(schemaOverride ?? schema)} />
-    <script
-      type="application/ld+json"
-      set:html={JSON.stringify(websiteSchema)}
+    <!-- Self-hosted (@font-face in app/styles.css). Preloaded because the font
+         is only discovered once the CSS has parsed, and that is a request
+         chain; the preload starts it in parallel instead. -->
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/inter-latin.woff2"
+      crossorigin
     />
-    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
-    {faqSchema && (
-      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-    )}
     <script
       src="https://app.rybbit.io/api/script.js"
       data-site-id="0f3ec51f30bf"
       defer></script>
-    <script
-      data-name="BMC-Widget"
-      data-cfasync="false"
-      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-      data-id="amnesthesia"
-      data-description="Support me on Buy me a coffee!"
-      data-message="Like this project? Buy me a coffee!"
-      data-position="Right"
-      data-x_margin="18"
-      data-color="#aaa"
-      data-y_margin="18"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <script is:inline>
       const t = localStorage.getItem("theme");
       if (t) document.documentElement.setAttribute("data-theme", t);
@@ -433,5 +447,18 @@ const websiteSchema = {
       </nav>
       <small>AI-curated events guide for South East Queensland &middot; <a href="/llms.txt">llms.txt</a></small>
     </footer>
+    <!-- Down here, not in <head>: the ItemList alone is ~350 KB, and in the
+         head it sat in front of the stylesheet link, so the preload scanner
+         could not see a single resource until it had parsed all of it. Google
+         reads JSON-LD anywhere in the document. -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaOverride ?? schema)} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(websiteSchema)}
+    />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbs)} />
+    {faqSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    )}
   </body>
 </html>

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Triffid Sundays - September | Free Live Music in the Garden
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ghjn23@dothings
+DTSTART;VALUE=DATE:20260906
+DTEND;VALUE=DATE:20260928
+SUMMARY:Triffid Sundays - September | Free Live Music in the Garden
+DESCRIPTION:Triffid Sundays at The Triffid is a concert / music event.
+LOCATION:The Triffid
+URL:https://thetriffid.com.au/all-events/triffid-sundays-tickets-ae1693433
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Artist in Residence: Sachém Parkin-Owens
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-iehc1t@dothings
+DTSTART;VALUE=DATE:20251122
+DTEND;VALUE=DATE:20261011
+SUMMARY:Artist in Residence: Sachém Parkin-Owens
+DESCRIPTION:Artist in Residence: Sachém Parkin-Owens is an Arts / Exhibiti
+ on event at Museum of Brisbane\, King George Square (Brisbane City Hall).
+LOCATION:Museum of Brisbane\, King George Square (Brisbane City Hall)
+URL:https://www.museumofbrisbane.com.au/whats-on/sachem-parkin-owens/
+END:VEVENT
+END:VCALENDAR

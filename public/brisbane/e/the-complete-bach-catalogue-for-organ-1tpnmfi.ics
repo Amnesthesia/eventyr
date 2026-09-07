@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Complete Bach Catalogue for Organ
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1tpnmfi@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T060000
+DTEND;TZID=Australia/Brisbane:20260913T080000
+SUMMARY:The Complete Bach Catalogue for Organ
+DESCRIPTION:An ambitious and marathon musical performance featuring the com
+ plete works of Bach for organ\, offering a deep-dive experience for classi
+ cal music enthusiasts.
+LOCATION:Concert Hall\, QPAC
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

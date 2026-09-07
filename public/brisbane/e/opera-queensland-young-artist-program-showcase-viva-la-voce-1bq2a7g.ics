@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Opera Queensland Young Artist Program Showcase: Viva La Voce
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1bq2a7g@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:Opera Queensland Young Artist Program Showcase: Viva La Voce
+DESCRIPTION:Opera Queensland Young Artist Program Showcase: Viva La Voce is
+  a concert performance held at South Bank Parklands.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/opera-queensland-young-artist-
+ program-showcase-viva-la-voce
+END:VEVENT
+END:VCALENDAR

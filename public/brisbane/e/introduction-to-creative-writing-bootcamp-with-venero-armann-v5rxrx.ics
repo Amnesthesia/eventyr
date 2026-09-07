@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Introduction to Creative Writing Bootcamp with Venero Armanno
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-v5rxrx@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T103000
+DTEND;TZID=Australia/Brisbane:20260919T163000
+SUMMARY:Introduction to Creative Writing Bootcamp with Venero Armanno
+DESCRIPTION:Interested in kickstarting your creative writing\, or in need o
+ f a refresher? Book your place (https://events.humanitix.com/introduction-
+ to-creative-writing-bootcamp-with-venero-armanno) .
+LOCATION:Queensland Writers Centre\, State Library of Queensland South Bris
+ bane Australia
+URL:https://www.queenslandwriters.org.au/events/introduction-to-creative-wr
+ iting-venero-armanno
+END:VEVENT
+END:VCALENDAR

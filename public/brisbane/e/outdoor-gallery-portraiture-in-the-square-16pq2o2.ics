@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Outdoor Gallery: Portraiture in the Square
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16pq2o2@dothings
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20261012
+SUMMARY:Outdoor Gallery: Portraiture in the Square
+DESCRIPTION:A curated outdoor public art display featuring diverse portrait
+ ure works located in the vibrant Fish Lane precinct.
+LOCATION:Town Square\, Fish Lane
+URL:https://brisbane.qld.gov.au
+END:VEVENT
+END:VCALENDAR

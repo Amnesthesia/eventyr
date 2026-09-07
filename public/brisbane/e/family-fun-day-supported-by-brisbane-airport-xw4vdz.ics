@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Family Fun Day supported by Brisbane Airport
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xw4vdz@dothings
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260927
+SUMMARY:Family Fun Day supported by Brisbane Airport
+DESCRIPTION:Get ready for take-off!
+LOCATION:Festival Village\, South Bank
+URL:https://www.brisbaneunlocked.com.au/family-fun-day-supported-by-brisban
+ e-airport-2026-09-04
+END:VEVENT
+END:VCALENDAR

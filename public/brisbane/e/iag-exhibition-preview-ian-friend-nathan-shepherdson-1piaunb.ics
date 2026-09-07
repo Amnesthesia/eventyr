@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:IAG Exhibition Preview: Ian Friend & Nathan Shepherdson
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1piaunb@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T160000
+DTEND;TZID=Australia/Brisbane:20260919T164500
+SUMMARY:IAG Exhibition Preview: Ian Friend & Nathan Shepherdson
+DESCRIPTION:Join artist Ian Friend and poet Nathan Shepherdson for a previe
+ w of IAG's exhibition\, 'The Noise of Time.'
+LOCATION:Ipswich Art Gallery
+URL:https://www.ipswichartgallery.qld.gov.au/whats-on/iag-exhibition-previe
+ w-ian-friend-and-nathan-shepherdson
+END:VEVENT
+END:VCALENDAR

@@ -32,6 +32,8 @@ export {
 	isLikelyImageUrl,
 	isSameSite,
 	KEY_TO_SLUG,
+	LOW_SCORE_THRESHOLD,
+	meetsScoreFloor,
 	normaliseCurrency,
 	normaliseHost,
 	normaliseText,
@@ -83,6 +85,12 @@ SKIP ENTIRELY — do not include:
   - "Business opportunity" seminars, MLMs, hustle culture, crypto hype, or sales funnels
   - Ultra-touristy events designed mainly for Instagram/photos
   - Generic nightclub events or heavy drinking culture
+  - Venue promotions rather than events: happy hours, drink specials, meal
+    deals ("$13 Lunch Special", "Steak Night", "2 for 1 Tuesday", bottomless
+    brunch), loyalty nights, raffles, meat trays, pokies or gaming promotions.
+    A pub putting a price on its usual menu is advertising, not an event —
+    even when it recurs weekly and has a name. A ticketed dinner with a
+    guest chef, a food festival, or a cooking class IS an event.
   - Influencer-style wellness events with little substance
   - Online-only events unless strongly tied to the local community
 `;

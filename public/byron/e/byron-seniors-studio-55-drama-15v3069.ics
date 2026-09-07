@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Byron Seniors: Studio 55 Drama
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-15v3069@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Byron Seniors: Studio 55 Drama
+DESCRIPTION:An inclusive drama workshop series designed for seniors to expl
+ ore performance\, character building\, and storytelling in a collaborative
+  social group.
+LOCATION:Byron Community Centre\, 69 Jonson St\, Byron Bay
+URL:https://byroncentre.com.au
+END:VEVENT
+END:VCALENDAR

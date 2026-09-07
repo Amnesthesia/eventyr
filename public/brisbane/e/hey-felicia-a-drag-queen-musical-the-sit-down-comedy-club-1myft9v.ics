@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hey Felicia! A Drag Queen Musical @ The Sit Down Comedy Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1myft9v@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T143000
+DTEND;TZID=Australia/Brisbane:20260912T163000
+SUMMARY:Hey Felicia! A Drag Queen Musical @ The Sit Down Comedy Club
+DESCRIPTION:Hey Felicia! A Drag Queen Musical @ The Sit Down Comedy Club is
+  a concert / music event held at The Sit Down Comedy Club.
+LOCATION:The Sit Down Comedy Club
+URL:https://www.standup.com.au/event/hey-felicia-a-drag-queen-musical-the-s
+ it-down-comedy-club-16/
+END:VEVENT
+END:VCALENDAR

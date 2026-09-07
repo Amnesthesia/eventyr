@@ -1,10 +1,13 @@
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import {
 	DATA_ROOT,
 	eventHash,
+	eventSlug,
+	KEY_TO_SLUG,
 	loadCityConfig,
+	meetsScoreFloor,
 	PROJECT_ROOT,
 	requireEnv,
 } from "./common.ts";
@@ -147,7 +150,13 @@ function main(): void {
 		string,
 		unknown
 	>;
-	const events = (payload.events as Record<string, unknown>[]) ?? [];
+	// Below LOW_SCORE_THRESHOLD is mostly venue promotion — happy hours, meal
+	// deals, schnitzel nights — which rank.ts scores 1. The site hides these by
+	// default and a subscriber has no toggle at all, so a feed carrying them
+	// would be the one place they still reached a reader.
+	const events = ((payload.events as Record<string, unknown>[]) ?? []).filter(
+		(e) => meetsScoreFloor(e.score),
+	);
 
 	const lines: string[] = [
 		"BEGIN:VCALENDAR",
@@ -159,42 +168,78 @@ function main(): void {
 		`X-WR-TIMEZONE:${tz}`,
 	];
 
-	let count = 0;
-	for (let i = 0; i < events.length; i++) {
-		const ev = events[i];
+	// One builder for both outputs. The per-event files below carry the same
+	// VEVENT — the same UID especially, so adding one event and subscribing to
+	// the city feed do not produce two copies of it.
+	function vevent(ev: Record<string, unknown>): string[] | null {
 		const parsed = parseDt(
 			(ev.datetime_iso as string) ?? "",
 			(ev.datetime_end_iso as string) ?? undefined,
 		);
-		if (!parsed) continue;
-
+		if (!parsed) return null;
 		const { start, end, allDay } = parsed;
-		const dtStart = allDay
-			? `DTSTART;VALUE=DATE:${start}`
-			: `DTSTART;TZID=${tz}:${start}`;
-		const dtEnd = allDay
-			? `DTEND;VALUE=DATE:${end}`
-			: `DTEND;TZID=${tz}:${end}`;
-
-		lines.push(
+		return [
 			"BEGIN:VEVENT",
 			`UID:${uidFor(CITY, ev)}@dothings`,
-			dtStart,
-			dtEnd,
+			allDay ? `DTSTART;VALUE=DATE:${start}` : `DTSTART;TZID=${tz}:${start}`,
+			allDay ? `DTEND;VALUE=DATE:${end}` : `DTEND;TZID=${tz}:${end}`,
 			fold(`SUMMARY:${esc((ev.title as string) ?? "")}`),
 			fold(`DESCRIPTION:${esc((ev.description as string) ?? "")}`),
 			fold(`LOCATION:${esc((ev.location as string) ?? "")}`),
 			fold(`URL:${(ev.link as string) ?? ""}`),
 			"END:VEVENT",
-		);
+		];
+	}
+
+	// One .ics per event, at public/{citySlug}/e/{slug}.ics — a sibling of the
+	// event page rather than a file inside it, so a static host never has to
+	// decide whether the path is a directory or a file.
+	//
+	// A file in public/ rather than an Astro endpoint route, which was tried
+	// first: `trailingSlash: "always"` makes the DEV server 404 every route
+	// whose path ends in an extension, so the link worked in a build and was
+	// broken in `astro dev`. public/ bypasses routing entirely and behaves the
+	// same in both — which is also why these have to be committed: deploy.yml
+	// runs `astro build` from a checkout and never runs this script.
+	const citySlug = KEY_TO_SLUG[CITY] ?? CITY;
+	const eventDir = join(PROJECT_ROOT, "public", citySlug, "e");
+	mkdirSync(eventDir, { recursive: true });
+
+	let count = 0;
+	let files = 0;
+	for (const ev of events) {
+		const block = vevent(ev);
+		if (!block) continue;
+		lines.push(...block);
 		count++;
+
+		const single = [
+			"BEGIN:VCALENDAR",
+			"VERSION:2.0",
+			`PRODID:-//do things//${CITY}//EN`,
+			"CALSCALE:GREGORIAN",
+			fold(`X-WR-CALNAME:${esc((ev.title as string) ?? "")}`),
+			`X-WR-TIMEZONE:${tz}`,
+			...block,
+			"END:VCALENDAR",
+		];
+		// eventSlug is the same bounded, sanitised value the event page's route
+		// uses, so this path cannot escape eventDir.
+		writeFileSync(
+			join(eventDir, `${eventSlug(CITY, ev)}.ics`),
+			`${single.join("\r\n")}\r\n`,
+			"utf-8",
+		);
+		files++;
 	}
 
 	lines.push("END:VCALENDAR");
 
 	const outPath = join(PROJECT_ROOT, "public", `${CITY}.ics`);
 	writeFileSync(outPath, `${lines.join("\r\n")}\r\n`, "utf-8");
-	console.log(`→ Written ${CITY}.ics (${count} events)`);
+	console.log(
+		`→ Written ${CITY}.ics (${count} events) and ${files} per-event .ics under public/${citySlug}/e/`,
+	);
 }
 
 main();

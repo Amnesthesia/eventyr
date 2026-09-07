@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Social Games at Broadbeach
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1sih4am@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T110000
+DTEND;TZID=Australia/Brisbane:20260907T130000
+SUMMARY:Social Games at Broadbeach
+DESCRIPTION:A casual social gathering at the library featuring board games 
+ and social interaction for community members.
+LOCATION:Broadbeach Library
+URL:https://www.goldcoast.qld.gov.au/libraries
+END:VEVENT
+END:VCALENDAR

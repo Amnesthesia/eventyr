@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Twilight Seminar - AUSTRALIAN VALUES
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-eebmzh@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T170000
+DTEND;TZID=Australia/Brisbane:20260910T190000
+SUMMARY:Twilight Seminar - AUSTRALIAN VALUES
+DESCRIPTION:An intellectually stimulating seminar exploring the evolution a
+ nd interpretation of Australian societal values\, hosted at Bond Universit
+ y.
+LOCATION:Bond University
+URL:https://bond.edu.au
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:groundwork: 50 years of art\, artists\, education and communit
+ y
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1th1ngs@dothings
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+SUMMARY:groundwork: 50 years of art\, artists\, education and community
+DESCRIPTION:Our 2026 program groundwork honours five decades of art\, artis
+ ts\, education and community at UQ Art Museum.
+LOCATION:UQ Art Museum\, William St
+URL:https://art-museum.uq.edu.au/event/session/4157
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Byron Theatre – Cinema Screening
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1lsrdji@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Byron Theatre – Cinema Screening
+DESCRIPTION:An evening film screening at the local community hub\, showcasi
+ ng independent or curated cinema selections suitable for an engaged audien
+ ce.
+LOCATION:Byron Theatre\, Byron Community Centre
+URL:https://www.byroncentre.com.au/bct/whats-on
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Afterwork Meetup for Creatives in Manchester
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-14at5xu@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T183000
+DTEND;TZID=Australia/Brisbane:20260908T203000
+SUMMARY:Afterwork Meetup for Creatives in Manchester
+DESCRIPTION:The Afterwork Meetup for Creatives in Manchester is a social ev
+ ent held in Manchester.
+LOCATION:Manchester
+URL:https://www.creativelunchclub.com/meetups/afterwork-for-creatives-in-ma
+ nchester-september-2026
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:50 Plus: Tap dancing for Seniors
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-55uwfv@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T134500
+DTEND;TZID=Australia/Brisbane:20260907T144500
+SUMMARY:50 Plus: Tap dancing for Seniors
+DESCRIPTION:Learn to make music with your feet in this fun tap class design
+ ed for beginners. Enjoy a mix of classic show tunes\, Broadway\, and popul
+ ar music as you learn the exciting rhythms of tap dance. Dance for seniors
+  boosts heart and lung health\, strengthens bones and muscles to prevent
+LOCATION:Fifty Plus Centre\, Brisbane City
+URL:https://www.brisbaneunlocked.com.au/50-plus-tap-dancing-for-seniors-202
+ 6-09-07
+END:VEVENT
+END:VCALENDAR

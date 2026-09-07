@@ -26,8 +26,11 @@
 //     distinct location is geocoded at most once per run.
 //   * Results are cached on disk per city and committed, so a venue seen in an
 //     earlier week is never geocoded again.
-//   * Only the tier that has actually been wrong is checked at all (see
-//     curate.ts) — this week that was 96 distinct locations, not 331 events.
+//   * Every tier is geocoded, but the two rules they feed differ in strength:
+//     the distance test still only judges the aggregator tier, while the
+//     outside-Australia test judges all of them (see curate.ts). Widening the
+//     subject set costs one run of new venues and nothing after — the cache is
+//     committed.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -44,6 +47,17 @@ export interface Place {
 	lng: number;
 	/** The geocoder's own formatted_address, so a drop can be explained. */
 	label: string;
+	/**
+	 * The geocoder's own country for this place, as a two-letter code. Null
+	 * when it named none, which is no opinion rather than "nowhere".
+	 */
+	country?: string | null;
+	/**
+	 * Positively somewhere other than Australia — the country component said
+	 * so. Optional because entries cached before this existed have no opinion,
+	 * and absent reads as false.
+	 */
+	foreign?: boolean;
 }
 
 /**
@@ -117,14 +131,68 @@ export function findElsewhere(
 	return out;
 }
 
+/**
+ * The locations that resolved outside Australia, mapped to the same kind of
+ * human-readable reason.
+ *
+ * Separate from findElsewhere because it is trusted far more widely. The
+ * distance test only runs on the aggregator tier, where a source promoted "for
+ * Brisbane" turns out to be national — a venue's own site is trusted, and "The
+ * Princess Theatre" geocodes to Melbourne while being a real Brisbane venue.
+ * Being in a different *country*, though, is never a near-miss: a
+ * `method: scraper` source verified for Brisbane turned out to list meetups
+ * worldwide, and eight events in Vienna, Berlin, London, Portland, Montreal,
+ * Zurich, Stockholm and Manchester reached the site under an `independents`
+ * entry. So this rule applies to every tier, and needs no centre or radius.
+ */
+export function findForeign(
+	places: Map<string, Place | null>,
+): Map<string, string> {
+	const out = new Map<string, string>();
+	for (const [location, place] of places) {
+		if (!place?.foreign) continue;
+		// Checked again on the way out, not only when the flag was set. Entries
+		// cached before the country check existed were flagged by a broken
+		// inference ("the AU-restricted search failed, so it must be abroad"),
+		// and one of them was Opera Queensland at "S01/140 Grey St, South
+		// Brisbane QLD 4101, Australia". Re-reading the label here means a stale
+		// cache heals itself instead of needing a migration, and costs nothing.
+		if (/,\s*Australia$/i.test(place.label)) continue;
+		out.set(location, `${place.label} — not in Australia`);
+	}
+	return out;
+}
+
 interface GeocodeResponse {
 	status?: string;
 	error_message?: string;
 	results?: {
 		formatted_address?: string;
 		types?: string[];
+		address_components?: { types?: string[]; short_name?: string }[];
 		geometry?: { location?: { lat?: number; lng?: number } };
 	}[];
+}
+
+/**
+ * The country the geocoder actually put this place in, as a two-letter code,
+ * or null when it named none.
+ *
+ * Read from address_components rather than inferred from the search having
+ * failed under `components=country:AU`. That inference was wrong and dropped a
+ * real event: "Opera Queensland, S01/140 Grey St, South Brisbane QLD 4101"
+ * returns ZERO_RESULTS under the country filter — the unit prefix defeats it —
+ * and then resolved, unrestricted, to an address plainly in Australia. An
+ * AU-restricted miss is not evidence of being abroad; only a country component
+ * that says so is.
+ */
+function countryOf(result: {
+	address_components?: { types?: string[]; short_name?: string }[];
+}): string | null {
+	const country = (result.address_components ?? []).find((c) =>
+		(c.types ?? []).includes("country"),
+	);
+	return country?.short_name ?? null;
 }
 
 /** Statuses that are a real answer about the address rather than a problem
@@ -140,63 +208,95 @@ const NO_SUCH_PLACE = new Set(["ZERO_RESULTS", "INVALID_REQUEST"]);
  */
 const TOO_COARSE = new Set(["country", "administrative_area_level_1"]);
 
+/**
+ * `undefined` means the request itself failed and must not be cached — the
+ * third state the Geocoder contract describes, which a Map models by leaving
+ * the key out entirely.
+ */
+type Lookup = Place | null | undefined;
+
 export function createGoogleGeocoder(apiKey: string): Geocoder {
+	// The location goes in exactly as it appears, with no city appended.
+	// Appending the publishing city was tried and is actively wrong: it gives
+	// the geocoder a fallback it latches onto, and "Queensland Museum Cobb+Co,
+	// Toowoomba", "Home of the Arts, Surfers Paradise" and "Enmore Theatre,
+	// Newtown" all came back as "Brisbane QLD" at 0 km — the filter would have
+	// dropped nothing at all.
+	async function lookup(
+		location: string,
+		restrictToAU: boolean,
+	): Promise<Lookup> {
+		const params = new URLSearchParams({ address: location, key: apiKey });
+		if (restrictToAU) params.set("components", "country:AU");
+		try {
+			const res = await fetch(`${ENDPOINT}?${params}`, {
+				signal: AbortSignal.timeout(TIMEOUT_MS),
+			});
+			const body = (await res.json()) as GeocodeResponse;
+			if (body.status === "OK") {
+				const top = body.results?.[0];
+				const at = top?.geometry?.location;
+				const coarse = (top?.types ?? []).some((ty) => TOO_COARSE.has(ty));
+				if (coarse) return null;
+				if (typeof at?.lat === "number" && typeof at?.lng === "number") {
+					return {
+						lat: at.lat,
+						lng: at.lng,
+						label: top?.formatted_address ?? location,
+						country: top ? countryOf(top) : null,
+					};
+				}
+			}
+			if (NO_SUCH_PLACE.has(body.status ?? "")) return null;
+			console.error(
+				`  ⚠ [locality] ${body.status ?? res.status} for "${location}"${
+					body.error_message ? `: ${body.error_message}` : ""
+				} — keeping it`,
+			);
+			return undefined;
+		} catch (err) {
+			console.error(
+				`  ⚠ [locality] "${location}" failed: ${(err as Error).message} — keeping it`,
+			);
+			return undefined;
+		}
+	}
+
 	return async function geocode(locations) {
 		const results = await mapWithConcurrency(
 			locations,
 			MAX_CONCURRENT,
 			async (location): Promise<[string, Place | null][]> => {
-				// The location goes in exactly as it appears, with no city appended.
-				// Appending the publishing city was tried and is actively wrong: it
-				// gives the geocoder a fallback it latches onto, and "Queensland
-				// Museum Cobb+Co, Toowoomba", "Home of the Arts, Surfers Paradise"
-				// and "Enmore Theatre, Newtown" all came back as "Brisbane QLD" at
-				// 0 km — the filter would have dropped nothing at all.
-				//
-				// Restricting to Australia is enough disambiguation on its own: bare
-				// venue names resolve correctly ("The Zoo" → Fortitude Valley, "Ric's
-				// Bar" → Fortitude Valley), and anything that does not is kept.
-				const params = new URLSearchParams({
-					address: location,
-					components: "country:AU",
-					key: apiKey,
-				});
-				try {
-					const res = await fetch(`${ENDPOINT}?${params}`, {
-						signal: AbortSignal.timeout(TIMEOUT_MS),
-					});
-					const body = (await res.json()) as GeocodeResponse;
-					if (body.status === "OK") {
-						const top = body.results?.[0];
-						const at = top?.geometry?.location;
-						const coarse = (top?.types ?? []).some((ty) => TOO_COARSE.has(ty));
-						if (coarse) return [[location, null]];
-						if (typeof at?.lat === "number" && typeof at?.lng === "number") {
-							return [
-								[
-									location,
-									{
-										lat: at.lat,
-										lng: at.lng,
-										label: top?.formatted_address ?? location,
-									},
-								],
-							];
-						}
-					}
-					if (NO_SUCH_PLACE.has(body.status ?? "")) return [[location, null]];
-					console.error(
-						`  ⚠ [locality] ${body.status ?? res.status} for "${location}"${
-							body.error_message ? `: ${body.error_message}` : ""
-						} — keeping it`,
-					);
-					return [];
-				} catch (err) {
-					console.error(
-						`  ⚠ [locality] "${location}" failed: ${(err as Error).message} — keeping it`,
-					);
-					return [];
-				}
+				// Australia first, and for almost every location that is the only
+				// call: bare venue names resolve correctly under the restriction
+				// ("The Zoo" → Fortitude Valley, "Ric's Bar" → Fortitude Valley).
+				const local = await lookup(location, true);
+				if (local !== null) return local ? [[location, local]] : [];
+
+				// The AU-restricted search found no such place. That used to end
+				// here as "no opinion, keep it", which is why eight events in
+				// Vienna, Berlin, London and five other cities reached a Brisbane
+				// digest — "Vienna" cannot resolve inside country:AU, so it could
+				// only ever come back ZERO_RESULTS. One unrestricted retry answers
+				// the actual question.
+				const anywhere = await lookup(location, false);
+				if (!anywhere) return anywhere === null ? [[location, null]] : [];
+				// Foreign only when the result SAYS it is somewhere other than
+				// Australia. The restricted search failing is not evidence: the
+				// filter also misses real Australian addresses (a unit prefix is
+				// enough to defeat it), and treating that as "abroad" dropped a
+				// Brisbane Opera Queensland event whose own resolved address ended
+				// in "QLD 4101, Australia". A missing country component is no
+				// opinion either, and no opinion means keep.
+				// Two independent guards, because dropping is the destructive
+				// direction and one bad verdict removes a real event silently: the
+				// country component must say non-AU, AND the address the geocoder
+				// printed must not itself end in "Australia".
+				const foreign =
+					anywhere.country !== null &&
+					anywhere.country !== "AU" &&
+					!/,\s*Australia$/i.test(anywhere.label);
+				return [[location, { ...anywhere, foreign }]];
 			},
 		);
 		return new Map(results.flat());

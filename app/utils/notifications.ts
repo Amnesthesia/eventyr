@@ -85,12 +85,26 @@ export async function requestNotificationPermission(): Promise<NotificationPermi
 /**
  * Returns the active ServiceWorkerRegistration.
  */
+/** How long to wait for a service worker before giving up on it. */
+const SW_READY_TIMEOUT_MS = 3000;
+
 export async function getSwRegistration(): Promise<ServiceWorkerRegistration | null> {
 	if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) {
 		return null;
 	}
 	try {
-		return await navigator.serviceWorker.ready;
+		// Raced against a timeout, not merely awaited. `serviceWorker.ready`
+		// never rejects — if registration failed (Base.astro swallows that
+		// error) or no worker ever activates, it stays pending forever, so a
+		// bare await here hangs the caller silently. That is why the test
+		// notification appeared to do nothing at all: the await never returned,
+		// and the fallback below it was unreachable.
+		return await Promise.race([
+			navigator.serviceWorker.ready,
+			new Promise<null>((resolve) =>
+				setTimeout(() => resolve(null), SW_READY_TIMEOUT_MS),
+			),
+		]);
 	} catch {
 		return null;
 	}
@@ -367,27 +381,72 @@ export async function syncAllStarredEvents(
 /**
  * Sends a test notification to verify delivery on device.
  */
-export async function sendTestNotification(): Promise<void> {
-	if (!canUseNotifications()) return;
+const TEST_TAG = "test-notification";
+const TEST_TITLE = "Notifications Active";
+const TEST_BODY =
+	"You'll receive a reminder 1 hour before bookmarked events and a morning digest at 8am.";
+
+/**
+ * Shows a notification now, and reports whether one actually appeared.
+ *
+ * The return value is the point. This used to be `Promise<void>`, so the UI
+ * said "Sent!" whether or not anything reached the tray — and on a browser
+ * that shows nothing (Safari on macOS only delivers these to an installed web
+ * app) the button confirmed a notification the reader never saw.
+ *
+ * "It appeared" is checked with positive evidence — the registration is asked
+ * whether a notification with our tag now exists — rather than inferred from
+ * showNotification() not throwing, which it does not do when the platform
+ * quietly declines.
+ */
+export async function sendTestNotification(): Promise<boolean> {
+	if (!canUseNotifications()) return false;
 	if (Notification.permission !== "granted") {
 		const perm = await requestNotificationPermission();
-		if (perm !== "granted") return;
+		if (perm !== "granted") return false;
 	}
 
+	// A previous test with the same tag would be REPLACED rather than shown
+	// again, which on some platforms means no alert at all the second time.
 	const reg = await getSwRegistration();
+	try {
+		for (const existing of (await reg?.getNotifications({ tag: TEST_TAG })) ??
+			[]) {
+			existing.close();
+		}
+	} catch {
+		// getNotifications is not universally implemented; not being able to
+		// tidy up is not a reason to skip the notification itself.
+	}
+
 	if (reg) {
-		await reg.showNotification("Notifications Active", {
-			body: "You'll receive a reminder 1 hour before bookmarked events and a morning digest at 8am.",
+		try {
+			await reg.showNotification(TEST_TITLE, {
+				body: TEST_BODY,
+				icon: "/icons/icon-192.png",
+				badge: "/icons/icon-192.png",
+				tag: TEST_TAG,
+				data: { url: "/#starred-section" },
+			});
+			const shown = await reg.getNotifications({ tag: TEST_TAG });
+			if (shown.length > 0) return true;
+		} catch {
+			// Fall through to the constructor, which some browsers support even
+			// where the service-worker route is refused.
+		}
+	}
+
+	// No worker, or the worker route produced nothing. The Notification
+	// constructor is unavailable on Android Chrome, which throws here — hence
+	// the try.
+	try {
+		new Notification(TEST_TITLE, {
+			body: TEST_BODY,
 			icon: "/icons/icon-192.png",
-			badge: "/icons/icon-192.png",
-			tag: "test-notification",
-			data: { url: "/#starred-section" },
+			tag: TEST_TAG,
 		});
-	} else {
-		new Notification("Notifications Active", {
-			body: "You'll receive a reminder 1 hour before bookmarked events and a morning digest at 8am.",
-			icon: "/icons/icon-192.png",
-			tag: "test-notification",
-		});
+		return true;
+	} catch {
+		return false;
 	}
 }

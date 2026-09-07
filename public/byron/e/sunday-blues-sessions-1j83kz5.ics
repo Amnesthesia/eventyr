@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Blues Sessions
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1j83kz5@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T143000
+DTEND;TZID=Australia/Brisbane:20260913T173000
+SUMMARY:Sunday Blues Sessions
+DESCRIPTION:Every Sunday 2.30pm – 5.30pm SEPTEMBER 13 - Keeping North 20 
+ - Mojo Webb Happy Hours 2.30pm – 5.30pm $12 Cocktails - Skrewball Espres
+ so Martini / Chocolate Hazelnut Martini / Sourpuss / Turkish Delight $6 Se
+ lected Craft Beer Schooners $6 Selected Wine Glass 150mL Menu SOMETHING LI
+ GHT TO SHARE Garlic Bread […]
+LOCATION:Ballina RSL Boardwalk\, 1 Grant Street\, Ballina\, New South Wales
+ \, 2478
+URL:https://ballinarsl.com.au/event/sunday-blues-sessions/
+END:VEVENT
+END:VCALENDAR

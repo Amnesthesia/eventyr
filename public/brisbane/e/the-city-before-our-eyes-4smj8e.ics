@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The City Before Our Eyes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-4smj8e@dothings
+DTSTART;TZID=Australia/Brisbane:20260307T100000
+DTEND;TZID=Australia/Brisbane:20260307T120000
+SUMMARY:The City Before Our Eyes
+DESCRIPTION:The City Before Our Eyes is an Arts / Exhibition event at GOMA\
+ , Stanley Place\, South Bank.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/exhibition/the-city-before-our-eyes
+END:VEVENT
+END:VCALENDAR

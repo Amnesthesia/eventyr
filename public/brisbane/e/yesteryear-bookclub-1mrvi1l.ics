@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:YESTERYEAR BOOKCLUB
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1mrvi1l@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:YESTERYEAR BOOKCLUB
+DESCRIPTION:The Yesteryear Bookclub is a social meetup held at Riverbend Bo
+ oks\, Bulimba.
+LOCATION:Riverbend Books\, Bulimba
+URL:https://riverbendbooks.com.au/events/yesteryear-bookclub-2pm-sunday-6th
+ -septmeber
+END:VEVENT
+END:VCALENDAR

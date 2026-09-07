@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Croc! Lost Giants to Living Legends
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-f8lyjc@dothings
+DTSTART;VALUE=DATE:20251024
+DTEND;VALUE=DATE:20261006
+SUMMARY:Croc! Lost Giants to Living Legends
+DESCRIPTION:Croc! Lost Giants to Living Legends is an arts exhibition held 
+ at South Bank Parklands.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-leg
+ ends
+END:VEVENT
+END:VCALENDAR

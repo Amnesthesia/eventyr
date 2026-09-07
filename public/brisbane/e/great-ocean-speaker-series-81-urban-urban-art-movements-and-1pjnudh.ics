@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Great Ocean Speaker Series | 81% Urban: Urban Art Movements an
+ d Artist Collectives with Libby Harward
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1pjnudh@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T123000
+DTEND;TZID=Australia/Brisbane:20260909T143000
+SUMMARY:Great Ocean Speaker Series | 81% Urban: Urban Art Movements and Art
+ ist Collectives with Libby Harward
+DESCRIPTION:This Speaker Series responds to core teachings in Indigenous Ar
+ t History in the Australia Pacific Region\, inviting leading First Nations
+  and Great Ocean artists and curators to campus to speak to diverse themes
+  in contemporary practice.
+LOCATION:UQ Art Museum\, William St
+URL:https://art-museum.uq.edu.au/event/session/4186
+END:VEVENT
+END:VCALENDAR

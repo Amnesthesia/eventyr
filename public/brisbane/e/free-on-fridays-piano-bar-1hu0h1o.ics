@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Free on Fridays – Piano Bar
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1hu0h1o@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:Free on Fridays – Piano Bar
+DESCRIPTION:A relaxed weekly social event at the QPAC Piano Bar featuring l
+ ive music\, providing a space for informal connection in an artistic setti
+ ng.
+LOCATION:QPAC Piano Bar\, South Bank
+URL:https://www.qpac.com.au/
+END:VEVENT
+END:VCALENDAR

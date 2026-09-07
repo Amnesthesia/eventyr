@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Solace Sunday Session
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-7938kc@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T150000
+DTEND;TZID=Australia/Brisbane:20260913T170000
+SUMMARY:Solace Sunday Session
+DESCRIPTION:Dance your way into the long weekend with our Solace Sunday Ses
+ sion happening this Sunday from 3pm until late.Deep and minimal house from
+  SPLF\, ITOMAN\, GSKIN and Mitsukaze. Plus special...
+LOCATION:Common People Brewing Co.
+URL:https://commonpeoplebrewing.com.au/blogs/news/solace-sunday-session
+END:VEVENT
+END:VCALENDAR

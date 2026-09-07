@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:This Moment: Highlights from the White Rabbit Collection
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-n8o7f6@dothings
+DTSTART;TZID=Australia/Brisbane:20260418T100000
+DTEND;TZID=Australia/Brisbane:20261018T160000
+SUMMARY:This Moment: Highlights from the White Rabbit Collection
+DESCRIPTION:An exhibition featuring significant contemporary Chinese art\, 
+ highlighting unique cultural perspectives and modern creative expression.
+LOCATION:HOTA\, Surfers Paradise
+URL:https://hota.com.au/events/white-rabbit-gallery
+END:VEVENT
+END:VCALENDAR

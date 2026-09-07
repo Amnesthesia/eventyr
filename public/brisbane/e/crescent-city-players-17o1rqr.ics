@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Crescent City Players
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-17o1rqr@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T171500
+DTEND;TZID=Australia/Brisbane:20260912T191500
+SUMMARY:Crescent City Players
+DESCRIPTION:Crescent City Players is a concert event held at Eat Street Nor
+ thshore.
+LOCATION:Eat Street Northshore\, 221D Macarthur Avenue\, Hamilton\, QLD\, 4
+ 007
+URL:https://eatstreetnorthshore.com.au/event/crescent-city-players/
+END:VEVENT
+END:VCALENDAR

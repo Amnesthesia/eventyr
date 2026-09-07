@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Piano Man
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1iv107f@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260927
+SUMMARY:Piano Man
+DESCRIPTION:Gather round the baby grand for a wild late-night singalong.
+LOCATION:South Bank Town Hall - Festival Village
+URL:https://www.brisbaneunlocked.com.au/piano-man-2026-06-09
+END:VEVENT
+END:VCALENDAR

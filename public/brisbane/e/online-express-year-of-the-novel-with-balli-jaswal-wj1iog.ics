@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Online Express Year of the Novel with Balli Jaswal
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-wj1iog@dothings
+DTSTART;TZID=Australia/Brisbane:20260829T103000
+DTEND;TZID=Australia/Brisbane:20260829T123000
+SUMMARY:Online Express Year of the Novel with Balli Jaswal
+DESCRIPTION:Get the tools and support you need to complete the first draft 
+ of your novel\, in this express version of Queensland Writers Centre's fla
+ gship program (online!). Book your place.
+LOCATION:Queensland Writers Centre
+URL:https://queenslandwriters.org.au/events/express-year-of-the-novel-with-
+ balli-jaswal
+END:VEVENT
+END:VCALENDAR

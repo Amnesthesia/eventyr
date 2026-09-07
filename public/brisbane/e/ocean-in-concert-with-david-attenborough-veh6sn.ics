@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ocean In Concert with David Attenborough
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-veh6sn@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T183000
+DTEND;TZID=Australia/Brisbane:20260916T203000
+SUMMARY:Ocean In Concert with David Attenborough
+DESCRIPTION:New show added! Experience a live screening of the stunning nat
+ ure documentary feature Ocean with David Attenborough\, accompanied by Cam
+ erata – Queensland’s Chamber Orchestra.
+LOCATION:Concert Hall\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/bf-ocean-in-concert-with-david-at
+ tenborough/
+END:VEVENT
+END:VCALENDAR

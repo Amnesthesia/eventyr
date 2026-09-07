@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Q Horns: Rack em up!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-cl6sfd@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:Q Horns: Rack em up!
+DESCRIPTION:Q Horns present a diverse collection of works for Horn Ensemble
+ .
+LOCATION:Ian Hanger Recital Hall\, Queensland Conservatorium Griffith Unive
+ rsity
+URL:https://www.qtix.com.au/whats-on/2026/qcgu-q-horns/
+END:VEVENT
+END:VCALENDAR

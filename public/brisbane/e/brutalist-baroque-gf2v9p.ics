@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BRUTALIST / Baroque
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-gf2v9p@dothings
+DTSTART;TZID=Australia/Brisbane:20260905T100000
+DTEND;TZID=Australia/Brisbane:20261122T170000
+SUMMARY:BRUTALIST / Baroque
+DESCRIPTION:An exhibition by ceramic artists\, Donalee Moriarty and Nicolet
+ te Johnson\, exploring the shared qualities that unite their seemingly opp
+ osing styles.
+LOCATION:Ipswich Art Gallery
+URL:https://www.ipswichartgallery.qld.gov.au/whats-on/brutalist-baroque
+END:VEVENT
+END:VCALENDAR

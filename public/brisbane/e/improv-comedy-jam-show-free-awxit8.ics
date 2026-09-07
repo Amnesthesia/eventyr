@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Improv Comedy Jam Show (FREE)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-awxit8@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T180000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:Improv Comedy Jam Show (FREE)
+DESCRIPTION:Brisbane's best free improv comedy show! The Improv Comedy Jam 
+ Show is an improvised comedy showcase extravaganza! The stage is set for a
+  high-stakes collision of rising stars and seasoned pros. Together\, they 
+ weave spontaneous prompts into pure comedic improvised wildfire. Witness l
+ ightning in a bottle as the quick-thinking comedians bring the house down 
+ in totally made-up-on the-spot scenes of hilarity. FREE EVENT - GRAB YOUR 
+ FREE TICKET NOW
+LOCATION:Big Fork Theatre\, 252 Saint Pauls Terrace Fortitude Valley\, QLD\
+ , 4000 Australia
+URL:https://www.bigforktheatre.com/shows-events/wlhjrl2t4m76nww-sy9m5-p9jml
+ -c34lm-axl7c-wsk4c-km5c3-fdbb4-mg5nf-kfkjp-cn53k-t2hfl-n6ger-rjs29-kdb9x-n
+ 8wff-w78e6-lz7yw-2xjsg-h5w3z-prctl-em6wf-jg67r-rabx7-csyyw-4dck7-7rs6a
+END:VEVENT
+END:VCALENDAR

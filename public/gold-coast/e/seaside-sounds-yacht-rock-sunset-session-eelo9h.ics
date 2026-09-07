@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Seaside Sounds: Yacht Rock Sunset Session
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-eelo9h@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T160000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:Seaside Sounds: Yacht Rock Sunset Session
+DESCRIPTION:An intimate\, community-focused outdoor music session by the co
+ ast featuring live performances\, encouraging a relaxed atmosphere for loc
+ als to congregate.
+LOCATION:Roughton Park\, Kirra
+URL:https://www.whatsongoldcoast.au
+END:VEVENT
+END:VCALENDAR

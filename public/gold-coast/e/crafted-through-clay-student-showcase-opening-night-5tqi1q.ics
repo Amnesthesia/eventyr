@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Crafted Through Clay Student Showcase Opening Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-5tqi1q@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:Crafted Through Clay Student Showcase Opening Night
+DESCRIPTION:An opening night event showcasing ceramics from local students\
+ , offering a chance to meet the makers and engage with the Gold Coast pott
+ ery community.
+LOCATION:Sculptors Gallery\, 173 Ashmore Road\, Benowa
+URL:https://goldcoastpotters.com
+END:VEVENT
+END:VCALENDAR

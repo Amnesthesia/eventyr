@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:(In)Sight: Ritual Performance and Artists’ Talk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7zwb1p@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:(In)Sight: Ritual Performance and Artists’ Talk
+DESCRIPTION:Developed from Dias Mendis’ performance research into Sri Lan
+ kan traditions.
+LOCATION:Metro Arts\, Brisbane City
+URL:https://metroarts.com.au/workshop/insight-ritual-performance-and-artist
+ s-talk/
+END:VEVENT
+END:VCALENDAR

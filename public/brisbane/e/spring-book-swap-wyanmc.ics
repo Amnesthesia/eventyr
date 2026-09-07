@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Spring Book Swap
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-wyanmc@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T100000
+DTEND;TZID=Australia/Brisbane:20260919T130000
+SUMMARY:Spring Book Swap
+DESCRIPTION:Spring Book Swap Saturday 19th September\, 10am-1pm **Please re
+ gister for the book swap so we can gauge how much space we need on the day
+ . *Select quantity for number of people attending*Select click & collect >
+  reserve now to reserve a ticket. Time to spring clean your bookshelves an
+ d pop down to The Mad Hatters Bookshop for some new reads! Pop in between 
+ 10am-1pm on Saturday 19 September and bring a book to trade! This Book Swa
+ p is a ONE-FOR-ONE trade with a limit of three books per person. RULES *No
+  textbooks\, reference materials\, manuals or magazines*Max three books pe
+ r person*Books in good condition accepted (no yellowed pages\, speckling\,
+  stains or major tears) We reserve the right to reject books that are not 
+ clean or readable*No mass dumping of books
+LOCATION:The Mad Hatters Bookshop
+URL:https://madhattersbookshop.com.au/p/spring-book-swap
+END:VEVENT
+END:VCALENDAR

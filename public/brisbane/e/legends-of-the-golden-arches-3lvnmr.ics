@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LEGENDS (of the Golden Arches)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3lvnmr@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:LEGENDS (of the Golden Arches)
+DESCRIPTION:LEGENDS (of the Golden Arches) is a concert / music event held 
+ at Brisbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/legends-of-the-golden-arches
+END:VEVENT
+END:VCALENDAR

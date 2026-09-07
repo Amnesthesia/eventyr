@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:QLD Flood Game YWP Social Event
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1z0j9ut@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T170000
+DTEND;TZID=Australia/Brisbane:20260909T190000
+SUMMARY:QLD Flood Game YWP Social Event
+DESCRIPTION:An interactive 'Flood Game' session for Young Water Professiona
+ ls designed to simulate real-world decision-making and systems thinking in
+  disaster management. A highly collaborative event focusing on problem-sol
+ ving.
+LOCATION:Stantec Brisbane\, South Brisbane
+URL:https://www.awa.asn.au
+END:VEVENT
+END:VCALENDAR

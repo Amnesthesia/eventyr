@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Vet’s Stableford Single
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-12f11c3@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T110000
+DTEND;TZID=Australia/Brisbane:20260917T160000
+SUMMARY:Vet’s Stableford Single
+DESCRIPTION:Women's Stableford Single
+LOCATION:Ocean Shores Golf Course\, Ocean Shores Country Club - Orana Rd Oc
+ ean Shores
+URL:https://oceanshorescc.com.au/event/vets-stableford-single/2026-09-17/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Byron Farmers Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1ds6vp6@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T070000
+DTEND;TZID=Australia/Brisbane:20260910T110000
+SUMMARY:Byron Farmers Market
+DESCRIPTION:Weekly gathering of local farmers and community members promoti
+ ng sustainable food practices and connection with the land.
+LOCATION:Butler Street Reserve\, Byron Bay
+URL:https://byronfarmersmarket.com.au
+END:VEVENT
+END:VCALENDAR

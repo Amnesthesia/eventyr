@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Paint 'N' Platters Watercolour Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-duk3g5@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T110000
+DTEND;TZID=Australia/Brisbane:20260912T130000
+SUMMARY:Paint 'N' Platters Watercolour Workshop
+DESCRIPTION:A relaxed social workshop focusing on watercolour techniques\, 
+ designed for beginners to experiment with creativity in a supportive group
+  setting.
+LOCATION:Byron Bay
+URL:https://www.eventbrite.com.au
+END:VEVENT
+END:VCALENDAR

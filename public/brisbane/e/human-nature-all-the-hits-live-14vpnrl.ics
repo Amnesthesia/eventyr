@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Human Nature: All The Hits Live
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-14vpnrl@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Human Nature: All The Hits Live
+DESCRIPTION:Night at the Parkland
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/human-nature-all-the-hits-live
+END:VEVENT
+END:VCALENDAR

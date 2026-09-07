@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:VietJet Redcliffe KiteFest - FREE Entry
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-14tdowk@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+SUMMARY:VietJet Redcliffe KiteFest - FREE Entry
+DESCRIPTION:VietJet Redcliffe KiteFest is a community event featuring kite 
+ flying and family activities.
+LOCATION:WeekendNotes Brisbane
+URL:https://www.weekendnotes.com/vietjet-redcliffe-kitefest-free-entry/
+END:VEVENT
+END:VCALENDAR

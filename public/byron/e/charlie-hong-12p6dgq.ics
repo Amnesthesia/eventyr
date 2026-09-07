@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Charlie Hong
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-12p6dgq@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T180000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Charlie Hong
+DESCRIPTION:Saturday 19 September from 6pm
+LOCATION:Ballina RSL Boardwalk\, 1 Grant Street\, Ballina\, New South Wales
+ \, 2478
+URL:https://ballinarsl.com.au/event/charlie-hong/
+END:VEVENT
+END:VCALENDAR

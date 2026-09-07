@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Plastic Country — community film screening & panel
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1pqcr6e@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T203000
+SUMMARY:Plastic Country — community film screening & panel
+DESCRIPTION:A community screening of a documentary addressing environmental
+  issues\, followed by a panel discussion with local experts and advocates.
+LOCATION:Lennox Head Cultural Centre\, Lennox Head
+URL:https://communityspaces.com.au/v1/tickets
+END:VEVENT
+END:VCALENDAR

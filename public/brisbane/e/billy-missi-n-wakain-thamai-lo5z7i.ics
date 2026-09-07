@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Billy Missi'n Wakain Thamai
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-lo5z7i@dothings
+DTSTART;TZID=Australia/Brisbane:20260901T100000
+DTEND;TZID=Australia/Brisbane:20260919T170000
+SUMMARY:Billy Missi'n Wakain Thamai
+DESCRIPTION:An exhibition dedicated to the late Billy Missi\, showcasing li
+ nocut prints that detail the celestial navigation and culture of Zenadth K
+ es (Torres Strait).
+LOCATION:State Library of Queensland\, South Brisbane
+URL:https://www.slq.qld.gov.au/discover/exhibitions
+END:VEVENT
+END:VCALENDAR

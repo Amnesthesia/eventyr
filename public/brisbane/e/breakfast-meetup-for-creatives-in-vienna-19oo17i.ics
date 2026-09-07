@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Breakfast Meetup for Creatives in Vienna
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-19oo17i@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T083000
+DTEND;TZID=Australia/Brisbane:20260907T103000
+SUMMARY:Breakfast Meetup for Creatives in Vienna
+DESCRIPTION:The Breakfast Meetup for Creatives in Vienna is a Social / Meet
+ up event held at Vienna.
+LOCATION:Vienna
+URL:https://www.creativelunchclub.com/meetups/breakfast-for-creatives-in-vi
+ enna-september-2026
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Members Advance Viewing: Make Believe Magic
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1g3plpz@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T080000
+DTEND;TZID=Australia/Brisbane:20260912T100000
+SUMMARY:Members Advance Viewing: Make Believe Magic
+DESCRIPTION:Members Advance Viewing: Make Believe Magic is a Social / Meetu
+ p event at GOMA\, Stanley Place\, South Bank.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/event/members-advance-viewing-make-believ
+ e-magic-2026-09-12
+END:VEVENT
+END:VCALENDAR

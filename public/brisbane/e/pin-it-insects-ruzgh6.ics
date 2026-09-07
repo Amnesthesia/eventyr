@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pin It! Insects
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ruzgh6@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Pin It! Insects
+DESCRIPTION:A hands-on workshop focused on entomology and preservation tech
+ niques\, allowing participants to work closely with specimen preparation.
+LOCATION:Queensland Museum Kurilpa
+URL:https://www.museum.qld.gov.au
+END:VEVENT
+END:VCALENDAR

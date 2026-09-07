@@ -8,7 +8,7 @@
   "events": [
     {
       "title": "Care Expo",
-      "datetime": "Fri 11 Sep",
+      "datetime": "Fri 11 Sep – Sat 12 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-12",
       "location": "Brisbane Convention & Exhibition Centre",
@@ -52,7 +52,7 @@
     },
     {
       "title": "The Home Show 2026",
-      "datetime": "Fri 11 Sep",
+      "datetime": "Fri 11 Sep – Sun 13 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-13",
       "location": "Brisbane Convention & Exhibition Centre",
@@ -74,20 +74,20 @@
     },
     {
       "title": "Bill Bailey",
-      "datetime": "Fri 18 Sep",
-      "datetime_iso": "2026-09-18",
+      "datetime": "Fri 18 Sep, 8:00 PM – Sat 19 Sep",
+      "datetime_iso": "2026-09-18T20:00:00",
       "datetime_end_iso": "2026-09-19",
       "location": "Brisbane Convention & Exhibition Centre",
       "link": "https://premier.ticketek.com.au/shows/show.aspx?sh=BLIBLLEB26",
       "cost": "See link",
       "source": "Brisbane Convention & Exhibition Centre",
-      "description": "Bill Bailey at Brisbane Convention & Exhibition Centre is a concert or music event.",
+      "description": "Bill Bailey is performing at the Brisbane Convention & Exhibition Centre as a Concert / Music event.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "comedy",
         "performance",
-        "live"
+        "entertainment"
       ],
       "social": false,
       "intellectual": false,
@@ -96,7 +96,7 @@
     },
     {
       "title": "Oz Comic-Con 2026",
-      "datetime": "Sat 19 Sep",
+      "datetime": "Sat 19 Sep – Sun 20 Sep",
       "datetime_iso": "2026-09-19",
       "datetime_end_iso": "2026-09-20",
       "location": "Brisbane Convention & Exhibition Centre",
@@ -140,7 +140,7 @@
     },
     {
       "title": "AGHA Gifted – Brisbane",
-      "datetime": "Sun 19 Feb, 10:00 AM",
+      "datetime": "Sun 19 Feb 2023, 10:00 AM – Sun 18 Oct 2026",
       "datetime_iso": "2023-02-19T10:00:00",
       "datetime_end_iso": "2026-10-18",
       "location": "Brisbane Convention & Exhibition Centre",
@@ -162,7 +162,7 @@
     },
     {
       "title": "Care Expo",
-      "datetime": "Fri 11 Sep",
+      "datetime": "Fri 11 Sep – Sat 12 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-12",
       "location": "Brisbane Convention & Exhibition Centre",
@@ -184,7 +184,7 @@
     },
     {
       "title": "The Home Show 2026",
-      "datetime": "Fri 11 Sep",
+      "datetime": "Fri 11 Sep – Sun 13 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-13",
       "location": "Brisbane Convention & Exhibition Centre",
@@ -228,7 +228,7 @@
     },
     {
       "title": "Oz Comic-Con 2026",
-      "datetime": "Sat 19 Sep",
+      "datetime": "Sat 19 Sep – Sun 20 Sep",
       "datetime_iso": "2026-09-19",
       "datetime_end_iso": "2026-09-20",
       "location": "Brisbane Convention & Exhibition Centre",

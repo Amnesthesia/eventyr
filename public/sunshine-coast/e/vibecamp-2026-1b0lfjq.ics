@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Vibecamp 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1b0lfjq@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T170000
+DTEND;TZID=Australia/Brisbane:20260911T190000
+SUMMARY:Vibecamp 2026
+DESCRIPTION:A multi-day intellectual and social gathering designed for curi
+ ous people to share ideas\, host discussions\, and participate in communit
+ y-driven workshops in an outdoor\, relaxed setting. The event focuses on f
+ ostering authentic connections between intellectually engaged attendees.
+LOCATION:Habitat Noosa Everglades Eco Camp
+URL:https://www.eventbrite.com.au/d/australia--sunshine-coast/events/
+END:VEVENT
+END:VCALENDAR

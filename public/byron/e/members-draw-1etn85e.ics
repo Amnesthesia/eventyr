@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Members Draw
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1etn85e@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:Members Draw
+DESCRIPTION:Members Draw Join us for our regular Members Draw\, with great 
+ prizes up for grabs each week. It’s the perfect reason to pop into the c
+ lub\, enjoy a drink\, and […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/members-draw-2/2026-09-11/
+END:VEVENT
+END:VCALENDAR

@@ -5,5 +5,28 @@
   "source_id": "queensland-theatre",
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
-  "events": []
+  "events": [
+    {
+      "title": "Scenes With Girls",
+      "datetime": "Fri 4 Sep – Sat 19 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Queensland Theatre, 78 Montague Rd",
+      "link": "https://queenslandtheatre.com.au/plays/scenes-with-girls",
+      "cost": "See link",
+      "source": "Queensland Theatre",
+      "description": "Presented by Salad Days Collective",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "drama",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

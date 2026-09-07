@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Picnic Meetup for Creatives in Berlin
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-k05xzo@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T163000
+DTEND;TZID=Australia/Brisbane:20260910T183000
+SUMMARY:Picnic Meetup for Creatives in Berlin
+DESCRIPTION:The Picnic Meetup for Creatives in Berlin is a social event hel
+ d in Berlin.
+LOCATION:Berlin
+URL:https://www.creativelunchclub.com/meetups/picnic-meetup-for-creatives-i
+ n-berlin-mauerpark-september-2026
+END:VEVENT
+END:VCALENDAR

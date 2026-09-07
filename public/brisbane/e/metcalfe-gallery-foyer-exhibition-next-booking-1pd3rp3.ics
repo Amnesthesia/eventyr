@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Metcalfe Gallery – Foyer Exhibition (Next Booking)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1pd3rp3@dothings
+DTSTART;TZID=Australia/Brisbane:20260903T090000
+DTEND;TZID=Australia/Brisbane:20260916T160000
+SUMMARY:Metcalfe Gallery – Foyer Exhibition (Next Booking)
+DESCRIPTION:A bi-weekly feature of local artistic talent at the Brisbane In
+ stitute of Art\, offering an authentic glimpse into the city's vibrant art
+ s scene.
+LOCATION:Brisbane Institute of Art\, Windsor
+URL:https://www.brisart.org/metcalfe-gallery
+END:VEVENT
+END:VCALENDAR

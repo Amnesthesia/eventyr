@@ -11,14 +11,16 @@ export function eventUrl(event: Event, cityKey: string): string {
 	return `${SITE_URL}${eventPath(cityKey, event)}`;
 }
 
-export async function shareEvent(
-	event: Event,
-	cityKey: string,
+/** Native share sheet where there is one, clipboard where there is not. The
+ * saved-events calendar shares a link that is not an event, so this is the
+ * half both callers have in common. */
+export async function shareUrl(
+	url: string,
+	title: string,
 ): Promise<ShareOutcome> {
-	const url = eventUrl(event, cityKey);
 	try {
 		if (navigator.share) {
-			await navigator.share({ title: event.title, text: event.title, url });
+			await navigator.share({ title, text: title, url });
 			return "shared";
 		}
 		await navigator.clipboard.writeText(url);
@@ -29,4 +31,11 @@ export async function shareEvent(
 		if ((err as Error)?.name === "AbortError") return "cancelled";
 		return "failed";
 	}
+}
+
+export async function shareEvent(
+	event: Event,
+	cityKey: string,
+): Promise<ShareOutcome> {
+	return shareUrl(eventUrl(event, cityKey), event.title);
 }

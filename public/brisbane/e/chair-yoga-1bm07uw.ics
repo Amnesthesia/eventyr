@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Chair yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1bm07uw@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T133000
+DTEND;TZID=Australia/Brisbane:20260907T143000
+SUMMARY:Chair yoga
+DESCRIPTION:Bookings essential. Enjoy being supported by the chair as you s
+ tretch and strengthen your body with both seated and standing poses. This 
+ is a GOLD event suitable for seniors.
+LOCATION:The Community Place\, Kalinga
+URL:https://www.brisbaneunlocked.com.au/chair-yoga-2026-09-07
+END:VEVENT
+END:VCALENDAR

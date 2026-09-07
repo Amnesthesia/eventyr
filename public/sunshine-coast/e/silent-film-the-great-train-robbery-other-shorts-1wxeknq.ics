@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Silent Film - The Great Train Robbery & other shorts
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1wxeknq@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Silent Film - The Great Train Robbery & other shorts
+DESCRIPTION:A screening of classic silent films at a historic theatre\, off
+ ering an immersive look into the origins of cinema history.
+LOCATION:Majestic Theatre\, 3 Factory Street\, Pomona
+URL:https://www.themajestictheatre.com.au
+END:VEVENT
+END:VCALENDAR

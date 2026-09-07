@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:IPSARI | The View From Here: A Community Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1mcq2v7@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T100000
+DTEND;TZID=Australia/Brisbane:20260927T150000
+SUMMARY:IPSARI | The View From Here: A Community Exhibition
+DESCRIPTION:A collective portrait of Ipswich through the diverse eyes of it
+ s residents.
+LOCATION:Ipswich Art Gallery
+URL:https://www.ipswichartgallery.qld.gov.au/whats-on/ipsari-the-view-from-
+ here-a-community-exhibition
+END:VEVENT
+END:VCALENDAR

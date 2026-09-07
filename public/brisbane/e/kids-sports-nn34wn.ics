@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Kids sports
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-nn34wn@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T160000
+DTEND;TZID=Australia/Brisbane:20260907T170000
+SUMMARY:Kids sports
+DESCRIPTION:Bookings essential. Fun\, high energy park games that the whole
+  family can enjoy! Every session combines active play with skill building 
+ challenges that improve coordination\, fitness\, and teamwork.
+LOCATION:Yeronga Memorial Park\, Yeronga
+URL:https://www.brisbaneunlocked.com.au/kids-sports-2026-09-07
+END:VEVENT
+END:VCALENDAR

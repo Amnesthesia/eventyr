@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SunDance - THE UNFURLING
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1d08v5k@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:SunDance - THE UNFURLING
+DESCRIPTION:A community-oriented movement event focused on authentic\, grou
+ nded expression and social connection in a shared space.
+LOCATION:Mullumbimby Civic Memorial Hall
+URL:https://www.facebook.com/events/928551293656658
+END:VEVENT
+END:VCALENDAR

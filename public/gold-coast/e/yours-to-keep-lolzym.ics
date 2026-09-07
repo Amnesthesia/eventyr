@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yours To Keep
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-lolzym@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T200000
+DTEND;TZID=Australia/Brisbane:20260911T220000
+SUMMARY:Yours To Keep
+DESCRIPTION:An intimate live music event held at elsewhere\, known for its 
+ focus on underground indie and electronic sounds and its local community v
+ ibe.
+LOCATION:elsewhere\, Surfers Paradise
+URL:https://www.oztix.com.au
+END:VEVENT
+END:VCALENDAR

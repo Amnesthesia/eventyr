@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:NaturallyGC: Tarrabora Bushcare Tree Planting
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1lwgl99@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T080000
+DTEND;TZID=Australia/Brisbane:20260912T100000
+SUMMARY:NaturallyGC: Tarrabora Bushcare Tree Planting
+DESCRIPTION:A community-led environmental project involving native tree pla
+ nting to restore local ecosystems.
+LOCATION:Tugun
+URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

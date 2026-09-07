@@ -31,6 +31,23 @@ export const TOP_PICK_THRESHOLD = 7;
 /** Below this a score is "low": the optional site filter hides these. */
 export const LOW_SCORE_THRESHOLD = 4;
 
+/**
+ * Whether an event is worth publishing at all.
+ *
+ * Below the threshold is mostly venue promotion — happy hours, meal deals,
+ * schnitzel nights — which rank.ts scores 1 and which nobody opened this site
+ * to read.
+ *
+ * An event with NO score is kept. A missing score means rank.ts has not judged
+ * it (a failed call, a skipped stage, a hand-added fixture), not that it
+ * scored zero — and treating "not judged" as "not worth showing" would empty
+ * the site and both feeds the first time ranking failed, while reporting
+ * success.
+ */
+export function meetsScoreFloor(score: unknown): boolean {
+	return typeof score !== "number" || score >= LOW_SCORE_THRESHOLD;
+}
+
 export const SITE_URL = "https://www.dothings.lol";
 
 /** City key → the slug used in public URLs. Shared so the site, the sitemap

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Southern Cross Soloists
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-p4f4ug@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:Southern Cross Soloists
+DESCRIPTION:An intimate performance by the Southern Cross Soloists\, featur
+ ing high-caliber classical chamber music in a historic local setting.
+LOCATION:Majestic Theatre\, 3 Factory Street\, Pomona
+URL:https://www.themajestictheatre.com.au
+END:VEVENT
+END:VCALENDAR

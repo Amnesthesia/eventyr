@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Perspectives of Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1icukz@dothings
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:Perspectives of Brisbane
+DESCRIPTION:Perspectives of Brisbane is an Arts / Exhibition event at Museu
+ m of Brisbane\, King George Square (Brisbane City Hall).
+LOCATION:Museum of Brisbane\, King George Square (Brisbane City Hall)
+URL:https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/
+END:VEVENT
+END:VCALENDAR

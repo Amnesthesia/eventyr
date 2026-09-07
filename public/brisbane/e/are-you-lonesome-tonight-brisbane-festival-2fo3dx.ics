@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Are You Lonesome Tonight – Brisbane Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-2fo3dx@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T140000
+DTEND;TZID=Australia/Brisbane:20260909T160000
+SUMMARY:Are You Lonesome Tonight – Brisbane Festival
+DESCRIPTION:Arrive in your jeans and boots\, or your tuxedos and ball gowns
+ . A unique celebration of country music and opera\, featuring arias and so
+ ngs by Puccini\,...
+LOCATION:Opera Queensland
+URL:https://www.oq.com.au/whats-on/are-you-lonesome-tonight-brisbane-festiv
+ al/
+END:VEVENT
+END:VCALENDAR

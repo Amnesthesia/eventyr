@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Scramble
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-nunidd@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T193000
+DTEND;TZID=Australia/Brisbane:20260916T213000
+SUMMARY:The Scramble
+DESCRIPTION:A collision between wrestling and dance.
+LOCATION:Metro Arts\, Brisbane City
+URL:https://metroarts.com.au/event/the-scramble/
+END:VEVENT
+END:VCALENDAR

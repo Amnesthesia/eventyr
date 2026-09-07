@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Quandamooka Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1173r5f@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Quandamooka Festival
+DESCRIPTION:Quandamooka Festival is a community / other event at Brisbane F
+ estival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/quandamooka-festival-26
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Casey Donovan
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-b3dnbe@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T150000
+DTEND;TZID=Australia/Brisbane:20260920T170000
+SUMMARY:Casey Donovan
+DESCRIPTION:Sunday 20 September 2026 Tickets: $60 Doors: 2.30pm Show: 3pm A
+ ustralia’s powerhouse vocalist Casey Donovan is set to embark on her big
+ gest national tour yet in 2026 with “THIS IS ME”. Called the Queen of 
+ New Year’s Eve by the Australian media\; Casey has cemented her place as
+  one of Australia’s most beloved […]
+LOCATION:Ballina RSL Auditorium\, 1 Grant Street\, Ballina\, NSW\, 2478
+URL:https://ballinarsl.com.au/event/casey-donovan/
+END:VEVENT
+END:VCALENDAR

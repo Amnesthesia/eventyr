@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SWELL Fringe – Artist Talks\, Masterclasses & Live Music
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-lt3l7t@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T100000
+DTEND;TZID=Australia/Brisbane:20260913T210000
+SUMMARY:SWELL Fringe – Artist Talks\, Masterclasses & Live Music
+DESCRIPTION:A series of interactive sessions featuring artists discussing t
+ heir creative processes\, alongside live performances and skill-based mast
+ erclasses.
+LOCATION:Wallace Nicoll Park\, Currumbin
+URL:https://www.swellsculpture.com.au
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tuesday Steak Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-5r1ui@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T173000
+DTEND;TZID=Australia/Brisbane:20260908T210000
+SUMMARY:Tuesday Steak Night
+DESCRIPTION:Join us at Mullum for our Tuesday Steak Night! Enjoy a succulen
+ t steak\, plus\, a complimentary drink.*
+LOCATION:Mullumbimby Ex-Services Club\, 58 Dalley Street\, Mullumbimby\, NS
+ W\, 2482
+URL:https://www.mullumexservices.com.au/event/steak-night/2026-09-08/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lisa Henson in Conversation
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1x0ym9i@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T110000
+DTEND;TZID=Australia/Brisbane:20260912T120000
+SUMMARY:Lisa Henson in Conversation
+DESCRIPTION:Lisa Henson in Conversation is a Public Lecture event at GOMA\,
+  Stanley Place\, South Bank.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/event/lisahensonconversation-2026-09-12
+END:VEVENT
+END:VCALENDAR

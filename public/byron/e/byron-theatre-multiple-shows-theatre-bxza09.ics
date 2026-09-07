@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Byron Theatre Multiple Shows – Theatre
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-bxza09@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T183000
+DTEND;TZID=Australia/Brisbane:20260908T203000
+SUMMARY:Byron Theatre Multiple Shows – Theatre
+DESCRIPTION:A theatrical performance hosted at the community-run Byron Thea
+ tre\, known for fostering local arts and diverse cultural expression.
+LOCATION:Byron Theatre\, Byron Bay
+URL:https://www.byroncentre.com.au/
+END:VEVENT
+END:VCALENDAR

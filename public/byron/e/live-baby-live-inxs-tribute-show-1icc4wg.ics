@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LIVE BABY LIVE | INXS TRIBUTE SHOW
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1icc4wg@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:LIVE BABY LIVE | INXS TRIBUTE SHOW
+DESCRIPTION:Fri 11 September Doors Open 6PM Tix On Sale
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/live-baby-live-the-inxs-tribute-sho
+ w/
+END:VEVENT
+END:VCALENDAR

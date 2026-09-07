@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Maleny Biennial Quilt Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1qatgtu@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T090000
+DTEND;TZID=Australia/Brisbane:20260912T170000
+SUMMARY:Maleny Biennial Quilt Show
+DESCRIPTION:A curated display of local textile artistry and heritage quilt 
+ making techniques\, offering a look into regional creative communities.
+LOCATION:Maleny Showground\, Maleny
+URL:https://oursc.com.au/whats-on/spring-into-september-with-sunshine-coast
+ -events
+END:VEVENT
+END:VCALENDAR

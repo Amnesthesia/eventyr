@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bloom — Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1w71k6e@dothings
+DTSTART;TZID=Australia/Brisbane:20260829T100000
+DTEND;TZID=Australia/Brisbane:20260926T160000
+SUMMARY:Bloom — Exhibition
+DESCRIPTION:A recurring exhibition exploring the intersection of local ecol
+ ogy and art through the lens of wildflowers. Ideal for those interested in
+  botany\, local environment\, and creative displays.
+LOCATION:The Little Red Cottage\, Maleny
+URL:https://www.littleredcottage.com.au/
+END:VEVENT
+END:VCALENDAR

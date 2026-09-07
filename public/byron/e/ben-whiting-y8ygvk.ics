@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ben Whiting
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-y8ygvk@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T180000
+DTEND;TZID=Australia/Brisbane:20260912T210000
+SUMMARY:Ben Whiting
+DESCRIPTION:Saturday 12 September Free from 6pm Born by the sea in Northern
+  NSW\, BW started writing songs and formed his first band at age 12. Unlik
+ e most kids\, BW was touring as an early teen and being mentored by Buzz B
+ idstrup (THE ANGELS & GANGgajang) experiencing & creating a career that ha
+ s seen him share […]
+LOCATION:Ballina RSL Boardwalk\, 1 Grant Street\, Ballina\, New South Wales
+ \, 2478
+URL:https://ballinarsl.com.au/event/ben-whiting/
+END:VEVENT
+END:VCALENDAR

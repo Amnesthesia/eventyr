@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brendhan Lovegrove [NZ] | Bury Me Happy
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1c80da8@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Brendhan Lovegrove [NZ] | Bury Me Happy
+DESCRIPTION:Brendhan Lovegrove [NZ] | Bury Me Happy is a comedy event held 
+ at Good Chat Comedy Club.
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/brendhan-lovegrove-nz-bury-me-happy/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:50 Plus: Spanish for absolute beginners
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hzg2pd@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T121500
+DTEND;TZID=Australia/Brisbane:20260907T140000
+SUMMARY:50 Plus: Spanish for absolute beginners
+DESCRIPTION:Ever wanted to learn Spanish! This Spanish class is aimed at ab
+ solute beginners. If you have never attempted to learn Spanish before but 
+ have always wondered if you could\, this may be the class for you. The cla
+ ss will be structured and will start at the very beginning with partic
+LOCATION:Fifty Plus Centre\, Brisbane City
+URL:https://www.brisbaneunlocked.com.au/50-plus-spanish-for-absolute-beginn
+ ers-2026-09-07
+END:VEVENT
+END:VCALENDAR

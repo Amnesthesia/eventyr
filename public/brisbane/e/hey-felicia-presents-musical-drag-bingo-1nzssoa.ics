@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hey Felicia! Presents MUSICAL DRAG BINGO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nzssoa@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T120400
+DTEND;TZID=Australia/Brisbane:20260907T140400
+SUMMARY:Hey Felicia! Presents MUSICAL DRAG BINGO
+DESCRIPTION:Hey Felicia! Presents MUSICAL DRAG BINGO is a social / meetup e
+ vent held at The Sit Down Comedy Club.
+LOCATION:The Sit Down Comedy Club
+URL:https://www.standup.com.au/event/hey-felicia-presents-musical-drag-bing
+ o-2/
+END:VEVENT
+END:VCALENDAR

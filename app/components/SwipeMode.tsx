@@ -105,13 +105,24 @@ export default function SwipeMode({ onClose }: Props) {
 		setDx(0);
 	}
 
+	// The handler closes over fly/undo/onClose, which are new functions on every
+	// render, so it lives in a ref and the effect below can run once. It used to
+	// be an effect with no dependency array at all: that re-bound the listener
+	// and read *and wrote* document.body.style.overflow on every render — i.e.
+	// on every pointermove of a drag, which is a forced reflow per frame. Worse,
+	// `previous` was re-captured after the first pass, by which point it was
+	// already "hidden", so closing swipe mode restored the wrong value and left
+	// the page unscrollable.
+	const onKeyDownRef = useRef<(e: KeyboardEvent) => void>(() => {});
+	onKeyDownRef.current = (e: KeyboardEvent) => {
+		if (e.key === "Escape") onClose();
+		else if (e.key === "ArrowRight") fly("save");
+		else if (e.key === "ArrowLeft") fly("skip");
+		else if (e.key === "Backspace" || e.key === "z") undo();
+	};
+
 	useEffect(() => {
-		function onKeyDown(e: KeyboardEvent) {
-			if (e.key === "Escape") onClose();
-			else if (e.key === "ArrowRight") fly("save");
-			else if (e.key === "ArrowLeft") fly("skip");
-			else if (e.key === "Backspace" || e.key === "z") undo();
-		}
+		const onKeyDown = (e: KeyboardEvent) => onKeyDownRef.current(e);
 		document.addEventListener("keydown", onKeyDown);
 		const previous = document.body.style.overflow;
 		document.body.style.overflow = "hidden";
@@ -119,7 +130,7 @@ export default function SwipeMode({ onClose }: Props) {
 			document.removeEventListener("keydown", onKeyDown);
 			document.body.style.overflow = previous;
 		};
-	});
+	}, []);
 
 	function onPointerDown(e: React.PointerEvent) {
 		if (e.pointerType === "mouse" && e.button !== 0) return;

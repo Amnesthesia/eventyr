@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Byron Seniors Club: Elder Beats Drumming
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1fbm2yq@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T103000
+DTEND;TZID=Australia/Brisbane:20260915T123000
+SUMMARY:Byron Seniors Club: Elder Beats Drumming
+DESCRIPTION:Byron Seniors Club: Elder Beats Drumming is a workshop / class 
+ held at Byron Community Centre.
+LOCATION:Byron Community Centre
+URL:https://www.byroncentre.com.au/community-events/seniors-drumming
+END:VEVENT
+END:VCALENDAR

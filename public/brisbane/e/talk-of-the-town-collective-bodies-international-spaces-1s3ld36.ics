@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Talk of the Town: Collective bodies\, international spaces
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1s3ld36@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Talk of the Town: Collective bodies\, international spaces
+DESCRIPTION:Talk of the Town: Collective bodies\, international spaces is a
+  public lecture event at Brisbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/talk-of-the-town-3
+END:VEVENT
+END:VCALENDAR

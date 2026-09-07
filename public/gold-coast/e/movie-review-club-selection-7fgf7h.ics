@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Movie Review Club Selection
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-7fgf7h@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T133000
+DTEND;TZID=Australia/Brisbane:20260909T160000
+SUMMARY:Movie Review Club Selection
+DESCRIPTION:A community gathering for film enthusiasts to view a curated se
+ lection followed by an informal discussion about the themes and production
+ .
+LOCATION:HOTA Cinema 2\, Surfers Paradise
+URL:https://hota.com.au/events
+END:VEVENT
+END:VCALENDAR

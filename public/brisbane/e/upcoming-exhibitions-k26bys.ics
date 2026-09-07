@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Upcoming Exhibitions
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-k26bys@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20261025
+SUMMARY:Upcoming Exhibitions
+DESCRIPTION:Upcoming Exhibitions is an arts exhibition held at Logan Art Ga
+ llery.
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/upcoming-exhibitions/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dearly Departed: death in life
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1wxhc9q@dothings
+DTSTART;TZID=Australia/Brisbane:20260901T100000
+DTEND;TZID=Australia/Brisbane:20260919T170000
+SUMMARY:Dearly Departed: death in life
+DESCRIPTION:A thoughtful exhibition exploring historical and contemporary c
+ ultural rituals surrounding death and memory\, providing an intellectual p
+ erspective on human experience.
+LOCATION:State Library of Queensland\, South Brisbane
+URL:https://www.slq.qld.gov.au/discover/exhibitions
+END:VEVENT
+END:VCALENDAR

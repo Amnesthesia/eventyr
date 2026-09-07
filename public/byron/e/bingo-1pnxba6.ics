@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bingo
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1pnxba6@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T110000
+DTEND;TZID=Australia/Brisbane:20260910T140000
+SUMMARY:Bingo
+DESCRIPTION:Dabble in a game of Bingo with friends at Mullum! Join us for o
+ ne (or all) of four sessions every week. Get settled with your coffee of c
+ hoice from 10am\, ready for eyes down at 11am.
+LOCATION:Mullumbimby Ex-Services Club\, 58 Dalley Street\, Mullumbimby\, NS
+ W\, 2482
+URL:https://www.mullumexservices.com.au/event/bingo/2026-09-10/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Box Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-m1c2at@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:The Box Show
+DESCRIPTION:Ordinary household items are transformed into extraordinary mus
+ ical instruments.
+LOCATION:Redland Performing Arts Centre (RPAC)
+URL:https://rpac.com.au/what-s-on/all-events/the-box-show/
+END:VEVENT
+END:VCALENDAR

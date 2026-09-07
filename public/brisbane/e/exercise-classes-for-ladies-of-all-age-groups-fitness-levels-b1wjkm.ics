@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Exercise Classes for Ladies of All Age Groups & Fitness Levels
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-b1wjkm@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T174500
+DTEND;TZID=Australia/Brisbane:20260907T183000
+SUMMARY:Exercise Classes for Ladies of All Age Groups & Fitness Levels
+DESCRIPTION:Ladies\, looking to feel stronger\, fitter and happier in 2026 
+ without the gym pressure? As a Certified Fitness Instructor/PT\, I run wom
+ en-only group exercise classes at the Wynnum Community Centre — fun\, fr
+ iendly and suitable for all age groups & fitness levels. No mirrors No jud
+ g
+LOCATION:Wynnum Community Centre\, Wynnum
+URL:https://www.brisbaneunlocked.com.au/exercise-classes-for-ladies-of-all-
+ age-groups-fitness-levels-2026-09-07
+END:VEVENT
+END:VCALENDAR

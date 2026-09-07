@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ghost Care at Black Bear Lodge
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-z0t0y1@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T193000
+DTEND;TZID=Australia/Brisbane:20260910T220000
+SUMMARY:Ghost Care at Black Bear Lodge
+DESCRIPTION:An intimate gig featuring indie rock outfit Ghost Care in the c
+ ozy\, curated atmosphere of Black Bear Lodge. Known for supporting local s
+ ubcultures and emerging talent.
+LOCATION:Black Bear Lodge\, Fortitude Valley
+URL:https://tixel.com/au/discover/Brisbane
+END:VEVENT
+END:VCALENDAR

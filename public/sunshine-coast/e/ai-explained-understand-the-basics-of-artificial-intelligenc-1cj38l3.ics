@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:AI Explained – Understand the Basics of Artificial Intellige
+ nce
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1cj38l3@dothings
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260917
+SUMMARY:AI Explained – Understand the Basics of Artificial Intelligence
+DESCRIPTION:A series of information sessions demystifying AI technology\, h
+ ow it works\, and its role in modern society\, designed for the curious ge
+ neral public.
+LOCATION:Sunshine Coast Libraries (various branches)
+URL:https://library.sunshinecoast.qld.gov.au/whats-on
+END:VEVENT
+END:VCALENDAR

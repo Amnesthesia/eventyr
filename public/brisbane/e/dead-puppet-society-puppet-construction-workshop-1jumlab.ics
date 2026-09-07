@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dead Puppet Society: Puppet Construction Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jumlab@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Dead Puppet Society: Puppet Construction Workshop
+DESCRIPTION:Dead Puppet Society: Puppet Construction Workshop is a workshop
+  / class event at Brisbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/dead-puppet-society-puppet-const
+ ruction-workshop
+END:VEVENT
+END:VCALENDAR

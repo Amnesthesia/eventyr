@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wake Up & Sing! with Cheep Trill Choir
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1eteubd@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Wake Up & Sing! with Cheep Trill Choir
+DESCRIPTION:Wake Up & Sing!
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/wake-up-and-sing-cheep-trill
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Write Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1s7o0up@dothings
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260914
+SUMMARY:Brisbane Write Club
+DESCRIPTION:A community-driven gathering for writers of all levels to share
+  work\, receive peer feedback\, and discuss the craft of writing.
+LOCATION:Brisbane (venue via Meetup)
+URL:https://www.meetup.com/brisbane-write-club/
+END:VEVENT
+END:VCALENDAR

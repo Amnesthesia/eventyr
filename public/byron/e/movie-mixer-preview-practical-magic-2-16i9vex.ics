@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Movie Mixer Preview: Practical Magic 2
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-16i9vex@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:Movie Mixer Preview: Practical Magic 2
+DESCRIPTION:Movie Mixer Preview: Practical Magic 2 is a film event held at 
+ Palace Byron Bay categorized as Concert / Music.
+LOCATION:Palace Byron Bay
+URL:https://www.palacecinemas.com.au/curatif-midnight-margaritas-preview-pr
+ actical-magic-2
+END:VEVENT
+END:VCALENDAR

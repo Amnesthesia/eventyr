@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Luke Heggie | Work In Progress
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-znxgsf@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Luke Heggie | Work In Progress
+DESCRIPTION:Luke Heggie | Work In Progress is a comedy event held at Good C
+ hat Comedy Club.
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/luke-heggie-work-in-progress/
+END:VEVENT
+END:VCALENDAR

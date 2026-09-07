@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Convict Brisbane Walking Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1drlx27@dothings
+DTSTART;VALUE=DATE:20260411
+DTEND;VALUE=DATE:20261122
+SUMMARY:Convict Brisbane Walking Tour
+DESCRIPTION:Explore Brisbane’s colonial history on this guided tour throu
+ gh the city’s convict past.
+LOCATION:Museum of Brisbane\, Level 3\, Brisbane City Hall
+URL:https://www.qtix.com.au/whats-on/2026/mob-convict-brisbane-walking-tour
+ /
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Members Happy Hour 5-7pm
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1mqwiee@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T170000
+DTEND;TZID=Australia/Brisbane:20260909T190000
+SUMMARY:Members Happy Hour 5-7pm
+DESCRIPTION:Members can enjoy happy hour every day at Mullum! Monday: 5pm -
+  6pm Tuesday: 5pm - 6pm Wednesday: 5pm - 7pm Thursday: 5pm - 6pm Friday: 5
+ pm - 7pm Saturday: 2:30pm - 4:30pm Sunday: 5pm - 6pm Click here to become 
+ a member. Terms & conditions apply. Members only promotion. Directed to me
+ mbers […]
+LOCATION:Mullumbimby Ex-Services Club\, 58 Dalley Street\, Mullumbimby\, NS
+ W\, 2482
+URL:https://www.mullumexservices.com.au/event/members-happy-hour-5-7/2026-0
+ 9-09/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lunch Meetup for Creatives in Zurich
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3b9q3e@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T121500
+DTEND;TZID=Australia/Brisbane:20260917T141500
+SUMMARY:Lunch Meetup for Creatives in Zurich
+DESCRIPTION:The Lunch Meetup for Creatives in Zurich is a social event held
+  in Zurich.
+LOCATION:Zurich
+URL:https://www.creativelunchclub.com/meetups/lunch-for-creatives-in-zurich
+ -torro-studio-september-2026
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Live Music Night at The Rails
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-b7gzpw@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T190000
+DTEND;TZID=Australia/Brisbane:20260912T220000
+SUMMARY:Live Music Night at The Rails
+DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
+ musicians in an intimate\, open-air beer garden setting. Perfect for casua
+ l listening and soaking up the local atmosphere.
+LOCATION:The Railway Friendly Bar\, Byron Bay
+URL:https://therailsbyronbay.com/
+END:VEVENT
+END:VCALENDAR

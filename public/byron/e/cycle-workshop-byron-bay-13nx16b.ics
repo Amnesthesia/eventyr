@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Cycle Workshop Byron Bay
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-13nx16b@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T113000
+DTEND;TZID=Australia/Brisbane:20260913T133000
+SUMMARY:Cycle Workshop Byron Bay
+DESCRIPTION:A somatic and wellness-oriented workshop focused on the menstru
+ al cycle\, aimed at providing education and community support for body lit
+ eracy.
+LOCATION:NIRMALA TEMPLE\, 11 Banksia Drive\, Byron Bay NSW
+URL:https://happeningnext.com/event/cycle-workshop-byron-bay-eid1ef0l412n47
+ a
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Function Well Mat Sessions
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16a2wd3@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:Function Well Mat Sessions
+DESCRIPTION:Function Well Mat Sessions is a workshop / class event at Brisb
+ ane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/function-well-mat-sessions
+END:VEVENT
+END:VCALENDAR

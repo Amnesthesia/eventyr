@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yalari Dinner 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-x45l9s@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T183000
+DTEND;TZID=Australia/Brisbane:20260911T203000
+SUMMARY:Yalari Dinner 2026
+DESCRIPTION:Yalari Dinner 2026 at Brisbane Convention & Exhibition Centre i
+ s a community event.
+LOCATION:Brisbane Convention & Exhibition Centre
+URL:https://events.humanitix.com/2026-yalari-brisbane-gala-dinner
+END:VEVENT
+END:VCALENDAR

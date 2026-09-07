@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Queens Wharf Brisbane Precinct Public Art Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1cjkwdg@dothings
+DTSTART;VALUE=DATE:20260429
+DTEND;VALUE=DATE:20261115
+SUMMARY:Queens Wharf Brisbane Precinct Public Art Tour
+DESCRIPTION:Step into Brisbane’s ever-evolving story with this expertly g
+ uided walking tour through the Queen’s Wharf Precinct.
+LOCATION:Museum of Brisbane\, Level 3\, Brisbane City Hall
+URL:https://www.qtix.com.au/whats-on/2026/mob-queens-wharf-brisbane-precinc
+ t-public-art-tour/
+END:VEVENT
+END:VCALENDAR

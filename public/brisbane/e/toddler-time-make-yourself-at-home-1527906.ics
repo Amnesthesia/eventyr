@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Toddler Time: Make Yourself at Home
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1527906@dothings
+DTSTART;TZID=Australia/Brisbane:20260731T100000
+DTEND;TZID=Australia/Brisbane:20261106T110000
+SUMMARY:Toddler Time: Make Yourself at Home
+DESCRIPTION:Join us in our Children's Gallery on Friday mornings for play-b
+ ased explorations of our current IAG Kids exhibition.
+LOCATION:Ipswich Art Gallery
+URL:https://www.ipswichartgallery.qld.gov.au/whats-on/toddler-time-make-you
+ rself-at-home
+END:VEVENT
+END:VCALENDAR

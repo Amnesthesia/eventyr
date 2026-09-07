@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Aqua fitness
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-13wot33@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T113000
+DTEND;TZID=Australia/Brisbane:20260907T123000
+SUMMARY:Aqua fitness
+DESCRIPTION:Experience an excellent\, low-impact cross-training workout in 
+ the water. Feel the benefits of exercise without the pain. Using minimum-i
+ mpact movement\, participants will develop strength\, mobility and movemen
+ t in a fun environment. This is a GOLD event suitable for seniors.
+LOCATION:Jindalee Pool\, Jindalee
+URL:https://www.brisbaneunlocked.com.au/aqua-fitness-2026-09-07-2
+END:VEVENT
+END:VCALENDAR

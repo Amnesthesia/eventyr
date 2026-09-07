@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Aqua fitness
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-13q6mpa@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T173000
+DTEND;TZID=Australia/Brisbane:20260907T183000
+SUMMARY:Aqua fitness
+DESCRIPTION:Bookings essential. Experience an excellent\, low-impact cross-
+ training workout in the water. Feel the benefits of exercise without the p
+ ain. Using minimum impact movements\, participants will develop strength\,
+  mobility and movement in a fun environment.
+LOCATION:Musgrave Park Pool\, South Brisbane
+URL:https://www.brisbaneunlocked.com.au/aqua-fitness-2026-09-07
+END:VEVENT
+END:VCALENDAR

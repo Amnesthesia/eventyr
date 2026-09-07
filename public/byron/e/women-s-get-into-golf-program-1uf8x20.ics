@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Women’s “Get Into Golf” Program
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1uf8x20@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T150000
+DTEND;TZID=Australia/Brisbane:20260912T163000
+SUMMARY:Women’s “Get Into Golf” Program
+DESCRIPTION:Ocean Shores is offering a fantastic opportunity for women to l
+ earn golf\, improve your game\, build confidence\, and enjoy golf in a fun
+ \, supportive environment. Our Women’s Golf Program\, conducted […]
+LOCATION:Ocean Shores Golf Course\, Ocean Shores Country Club - Orana Rd Oc
+ ean Shores
+URL:https://oceanshorescc.com.au/event/womens-get-into-golf-training/2026-0
+ 9-12/
+END:VEVENT
+END:VCALENDAR

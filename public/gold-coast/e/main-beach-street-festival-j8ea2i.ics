@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Main Beach Street Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-j8ea2i@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T130000
+DTEND;TZID=Australia/Brisbane:20260913T150000
+SUMMARY:Main Beach Street Festival
+DESCRIPTION:A local street celebration featuring community stalls\, local a
+ rtisans\, and street performance aimed at engaging the local Gold Coast ne
+ ighborhood.
+LOCATION:Tedder Avenue\, Main Beach
+URL:https://www.whatsongoldcoast.au
+END:VEVENT
+END:VCALENDAR

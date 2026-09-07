@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mullumbimby Farmers Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-14mws59@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T070000
+DTEND;TZID=Australia/Brisbane:20260911T110000
+SUMMARY:Mullumbimby Farmers Market
+DESCRIPTION:A bustling community market known for attracting locals and reg
+ ional producers\, fostering a strong sense of community and connection to 
+ sustainable agriculture.
+LOCATION:Mullumbimby Showground\, Mullumbimby
+URL:https://mullumfarmersmarket.org.au
+END:VEVENT
+END:VCALENDAR

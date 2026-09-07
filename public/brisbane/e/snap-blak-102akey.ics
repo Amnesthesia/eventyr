@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Snap! Blak
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-102akey@dothings
+DTSTART;TZID=Australia/Brisbane:20250830T100000
+DTEND;TZID=Australia/Brisbane:20250830T120000
+SUMMARY:Snap! Blak
+DESCRIPTION:Snap! Blak is an Arts / Exhibition event at GOMA\, Stanley Plac
+ e\, South Bank.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/exhibition/snap-blak
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:2026 Compose Program
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-iiflct@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T183000
+DTEND;TZID=Australia/Brisbane:20260919T203000
+SUMMARY:2026 Compose Program
+DESCRIPTION:Final Presentation
+LOCATION:Queensland Symphony Orchestra
+URL:https://qso.com.au/events/2026/education/2026-compose-program
+END:VEVENT
+END:VCALENDAR

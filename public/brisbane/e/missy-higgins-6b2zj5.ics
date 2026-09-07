@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Missy Higgins
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-6b2zj5@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Missy Higgins
+DESCRIPTION:Night at the Parkland
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/missy-higgins
+END:VEVENT
+END:VCALENDAR

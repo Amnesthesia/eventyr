@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Choir of Man
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1xaqzdo@dothings
+DTSTART;TZID=Australia/Brisbane:20260903T180000
+DTEND;TZID=Australia/Brisbane:20260926T220000
+SUMMARY:The Choir of Man
+DESCRIPTION:A high-energy\, immersive stage show combining music\, dance\, 
+ and spoken word in a pub-style atmosphere that breaks down the barrier bet
+ ween performer and audience.
+LOCATION:Brisbane Festival venues
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

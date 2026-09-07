@@ -5,8 +5,10 @@ import { test } from "node:test";
 import { DATA_ROOT, loadCityConfig } from "./common.ts";
 import {
 	type CityCentre,
+	createGoogleGeocoder,
 	distanceKm,
 	findElsewhere,
+	findForeign,
 	type Geocoder,
 	type Place,
 	withPlaceCache,
@@ -59,6 +61,103 @@ test("an unresolved or failed location is kept, never dropped", () => {
 	// A request that failed is absent from the map entirely, which is the other
 	// way a location reaches findElsewhere without an answer.
 	assert.equal(findElsewhere(places, BRISBANE).size, 0);
+});
+
+test("findForeign drops what resolved outside Australia, on any tier", () => {
+	const places = new Map<string, Place | null>([
+		["The Triffid, Newstead", PLACES["The Triffid, Newstead"]],
+		// Far outside the radius, but in Australia: a wrong-city question, not a
+		// wrong-country one, so this rule must not claim it.
+		["Enmore Theatre, Newtown", PLACES["Enmore Theatre, Newtown"]],
+		["Zzzz Nonexistent Venue", null],
+		[
+			"Vienna",
+			{ lat: 48.2082, lng: 16.3738, label: "Vienna, Austria", foreign: true },
+		],
+	]);
+	const foreign = findForeign(places);
+	assert.deepEqual([...foreign.keys()], ["Vienna"]);
+	assert.match(foreign.get("Vienna") ?? "", /Vienna, Austria/);
+});
+
+test("an AU address the country filter misses is NOT called foreign", () => {
+	// The regression this guards. "Opera Queensland, S01/140 Grey St" returns
+	// ZERO_RESULTS under components=country:AU — the unit prefix defeats it —
+	// and the first version inferred "the AU search failed, so it is abroad",
+	// which dropped a real Brisbane event whose own resolved address ended in
+	// "QLD 4101, Australia". An AU-restricted miss is not evidence.
+	const places = new Map<string, Place | null>([
+		[
+			"Opera Queensland",
+			{
+				lat: -27.4748,
+				lng: 153.0175,
+				label: "S01/140 Grey St, South Brisbane QLD 4101, Australia",
+				// Exactly what a stale cache entry looks like: flagged by the old
+				// broken inference, with no country recorded.
+				foreign: true,
+			},
+		],
+	]);
+	assert.equal(findForeign(places).size, 0);
+});
+
+test("a location Australia does not know is retried without the restriction", async (t) => {
+	const calls: string[] = [];
+	t.mock.method(globalThis, "fetch", async (url: string | URL) => {
+		const params = new URL(String(url)).searchParams;
+		const restricted = params.get("components") === "country:AU";
+		calls.push(`${params.get("address")}|${restricted ? "AU" : "any"}`);
+		// "Vienna" cannot resolve inside country:AU — the only answer available
+		// under the restriction is ZERO_RESULTS, which used to end as "keep it".
+		if (params.get("address") === "Vienna" && restricted) {
+			return new Response(JSON.stringify({ status: "ZERO_RESULTS" }));
+		}
+		return new Response(
+			JSON.stringify({
+				status: "OK",
+				results: [
+					{
+						formatted_address:
+							params.get("address") === "Vienna"
+								? "Vienna, Austria"
+								: "Stratton St, Newstead QLD",
+						types: ["establishment"],
+						address_components: [
+							{
+								types: ["country", "political"],
+								short_name: params.get("address") === "Vienna" ? "AT" : "AU",
+							},
+						],
+						geometry: { location: { lat: 1, lng: 2 } },
+					},
+				],
+			}),
+		);
+	});
+
+	const places = await createGoogleGeocoder("key")(["Vienna", "The Triffid"]);
+	assert.equal(places.get("Vienna")?.foreign, true);
+	assert.equal(places.get("Vienna")?.country, "AT");
+	assert.match(places.get("Vienna")?.label ?? "", /Austria/);
+	// A location Australia does know costs exactly one call, so the retry is
+	// paid for only where the cheap question failed.
+	assert.equal(places.get("The Triffid")?.foreign, undefined);
+	assert.deepEqual(calls.sort(), ["The Triffid|AU", "Vienna|AU", "Vienna|any"]);
+});
+
+test("a place nobody knows stays unknown rather than becoming foreign", async (t) => {
+	t.mock.method(
+		globalThis,
+		"fetch",
+		async () =>
+			// Both passes agree there is no such place. That is a real answer, and it
+			// means "keep it" — not "it must be abroad".
+			new Response(JSON.stringify({ status: "ZERO_RESULTS" })),
+	);
+	const places = await createGoogleGeocoder("key")(["Zzzz Nonexistent Venue"]);
+	assert.equal(places.get("Zzzz Nonexistent Venue"), null);
+	assert.equal(findForeign(places).size, 0);
 });
 
 test("the Gold Coast and Brisbane do not swallow each other", () => {

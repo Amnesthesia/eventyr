@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Choral Cthonics
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-93gquj@dothings
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260927
+SUMMARY:Choral Cthonics
+DESCRIPTION:A hum in the dark.
+LOCATION:Metro Arts\, Brisbane City
+URL:https://metroarts.com.au/exhibition/choral-cthonics/
+END:VEVENT
+END:VCALENDAR

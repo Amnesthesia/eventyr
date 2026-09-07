@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Year 12 Visual Arts Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-43zvcz@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260912T140000
+SUMMARY:Year 12 Visual Arts Exhibition
+DESCRIPTION:A showcase of emerging talent from local high school senior art
+  students\, hosted at a community-focused artist studio space.
+LOCATION:Mint Art House
+URL:https://mintarthouse.com
+END:VEVENT
+END:VCALENDAR

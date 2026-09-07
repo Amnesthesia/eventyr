@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:From Rejection to Request with January Gilchrist
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3jf08p@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T103000
+DTEND;TZID=Australia/Brisbane:20260919T123000
+SUMMARY:From Rejection to Request with January Gilchrist
+DESCRIPTION:A practical guide to querying and submitting your novel with st
+ rategy and confidence. Book your place (https://events.humanitix.com/from-
+ rejection-to-request-with-january-gilchrist) .
+LOCATION:Queensland Writers Centre\, Stanley Place South Brisbane\, QLD\, 4
+ 101 Australia
+URL:https://www.queenslandwriters.org.au/events/from-rejection-to-request-w
+ ith-january-gilchrist
+END:VEVENT
+END:VCALENDAR

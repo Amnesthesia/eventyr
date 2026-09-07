@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Life drawing | Afternoon session
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-b9drj5@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T133000
+DTEND;TZID=Australia/Brisbane:20260912T153000
+SUMMARY:Life drawing | Afternoon session
+DESCRIPTION:Life drawing | Afternoon session is a workshop or class held at
+  Logan Art Gallery.
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/life-drawing-afternoon/
+END:VEVENT
+END:VCALENDAR

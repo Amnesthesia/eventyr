@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Threatened Species Day Walk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-obyr4q@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T100000
+DTEND;TZID=Australia/Brisbane:20260908T120000
+SUMMARY:Threatened Species Day Walk
+DESCRIPTION:A guided educational walk through the botanic gardens focusing 
+ on local biodiversity and the importance of protecting endangered flora an
+ d fauna.
+LOCATION:Gold Coast Regional Botanic Gardens\, Benowa
+URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

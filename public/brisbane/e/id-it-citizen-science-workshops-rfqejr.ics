@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ID It! Citizen Science Workshops
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-rfqejr@dothings
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20261108
+SUMMARY:ID It! Citizen Science Workshops
+DESCRIPTION:Join ID It! Citizen science workshops and learn how to confiden
+ tly identify local wildlife and contribute to meaningful environmental res
+ earch.
+LOCATION:Queensland Museum Kurilpa\, Brisbane
+URL:https://www.qtix.com.au/whats-on/2026/id-it-citizen-science-workshops/
+END:VEVENT
+END:VCALENDAR

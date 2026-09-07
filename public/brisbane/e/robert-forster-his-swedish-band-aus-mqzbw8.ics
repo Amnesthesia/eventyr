@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Robert Forster & His Swedish Band (AUS)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mqzbw8@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T193000
+DTEND;TZID=Australia/Brisbane:20260917T213000
+SUMMARY:Robert Forster & His Swedish Band (AUS)
+DESCRIPTION:Singer Songwriter
+LOCATION:The Princess Theatre
+URL:https://theprincesstheatre.com.au/events/robert-forster-and-his-swedish
+ -band
+END:VEVENT
+END:VCALENDAR

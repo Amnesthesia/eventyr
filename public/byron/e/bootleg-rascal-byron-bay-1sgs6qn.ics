@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bootleg Rascal – Byron Bay
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1sgs6qn@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:Bootleg Rascal – Byron Bay
+DESCRIPTION:Live performance by indie-fusion band Bootleg Rascal\, known fo
+ r their genre-bending sound\, hosted at the historic Arts Factory venue.
+LOCATION:The Arts Factory\, 1 Skinners Shoot Rd\, Byron Bay NSW
+URL:https://www.songkick.com/es/concerts/43298167-bootleg-rascal-at-arts-fa
+ ctory
+END:VEVENT
+END:VCALENDAR

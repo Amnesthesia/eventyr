@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Cleveland Fitting Day
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1nfv9t4@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T080000
+DTEND;TZID=Australia/Brisbane:20260909T120000
+SUMMARY:Cleveland Fitting Day
+DESCRIPTION:Cleveland Golf\, Srixon & XXIO Custom Fitting Day Experience th
+ e latest equipment from Cleveland Golf\, Srixon and XXIO and discover what
+  the right equipment\, professionally fitted to your swing\, can […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/clevelandsrixonxxio-fitting-day/
+END:VEVENT
+END:VCALENDAR

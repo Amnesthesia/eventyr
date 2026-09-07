@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mandy Quadrio: Kukunna Wurraweena – Commissioners Circle Pro
+ ject 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-z9ayfc@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T100000
+DTEND;TZID=Australia/Brisbane:20260908T120000
+SUMMARY:Mandy Quadrio: Kukunna Wurraweena – Commissioners Circle Project 
+ 2026
+DESCRIPTION:An exhibition featuring sculptural works by palawa artist Mandy
+  Quadrio that engage with colonial history and identity through the use of
+  steel wool and other industrial materials.
+LOCATION:Institute of Modern Art\, Fortitude Valley
+URL:https://www.ima.org.au/exhibition/current-exhibition/
+END:VEVENT
+END:VCALENDAR

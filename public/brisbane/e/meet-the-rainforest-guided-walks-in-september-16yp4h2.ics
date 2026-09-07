@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Meet the Rainforest Guided Walks in September
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16yp4h2@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Meet the Rainforest Guided Walks in September
+DESCRIPTION:Meet the Rainforest Guided Walks are educational walking sessio
+ ns in nature.
+LOCATION:WeekendNotes Brisbane
+URL:https://www.weekendnotes.com/meet-the-rainforest-guided-walks-in-septem
+ ber/
+END:VEVENT
+END:VCALENDAR

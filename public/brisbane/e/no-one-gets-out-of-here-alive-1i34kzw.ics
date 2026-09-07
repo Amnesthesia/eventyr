@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:No One Gets Out of Here Alive
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1i34kzw@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:No One Gets Out of Here Alive
+DESCRIPTION:No One Gets Out of Here Alive is a performance event held at Br
+ isbane Festival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/no-one-gets-out-of-here-alive
+END:VEVENT
+END:VCALENDAR

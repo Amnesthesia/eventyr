@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Shel We (Brisbane Festival)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1wkxf6q@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260913T220000
+SUMMARY:Shel We (Brisbane Festival)
+DESCRIPTION:A theatrical production showcased as part of the Brisbane Festi
+ val\, focusing on experimental storytelling and creative performance.
+LOCATION:Cremorne Theatre\, QPAC
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

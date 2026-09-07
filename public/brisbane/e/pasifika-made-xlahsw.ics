@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pasifika Made
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xlahsw@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Pasifika Made
+DESCRIPTION:Pasifika Made is an arts / exhibition event held at Brisbane Fe
+ stival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/pasifika-made-26
+END:VEVENT
+END:VCALENDAR

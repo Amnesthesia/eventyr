@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tiri: Te Araroa Woman Far Walking BRISBANE FESTIVAL
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1tw71nv@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T183000
+DTEND;TZID=Australia/Brisbane:20260910T203000
+SUMMARY:Tiri: Te Araroa Woman Far Walking BRISBANE FESTIVAL
+DESCRIPTION:Tiri: Te Araroa Woman Far Walking is an arts event held at Bris
+ bane Powerhouse.
+LOCATION:Brisbane Powerhouse\, 119 Lamington St
+URL:https://brisbanepowerhouse.org/events/tiri-te-araroa-woman-far-walking/
+END:VEVENT
+END:VCALENDAR

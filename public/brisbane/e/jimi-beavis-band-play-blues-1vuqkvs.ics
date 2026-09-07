@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jimi Beavis & Band play blues!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1vuqkvs@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:Jimi Beavis & Band play blues!
+DESCRIPTION:Jimi and band are back and playing blues\, again. at The Cave I
+ nn almost every second-Sunday-of-the-month. Starting on Jan 11! With Dave 
+ McGuire on guitar\, Grace King on drums and vocals\, Casey Glennen on doub
+ le bass and Jimi has been here the whole time singing and playing harmonic
+ a. 2pm-4pm\, $10 at the door! [button link="https://www.facebook.com/share
+ /18aLXJzTs7/"] Facebook Event[/button]
+LOCATION:47 Balaclava St\, Woolloongabba\, QLD\, Australia\, Queensland
+URL:https://thecaveinn.net/events/jimi-beavis-band-play-blues-with-special-
+ guests-from-shade-hadie-930-317-433/
+END:VEVENT
+END:VCALENDAR

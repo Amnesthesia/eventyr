@@ -10,8 +10,10 @@ import {
 	Share2,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useEventsContext } from "../context";
 import type { Event } from "../types";
-import { buildEventIcs, downloadEventIcs } from "../utils/ics";
+import { calendarLinks } from "../utils/calendarLinks";
+import { downloadEventIcs } from "../utils/ics";
 import { shareEvent } from "../utils/share";
 
 interface Props {
@@ -29,10 +31,15 @@ export default function CardActionSheet({
 	onStarClick,
 	onClose,
 }: Props) {
+	const { cityData } = useEventsContext();
 	const [copied, setCopied] = useState(false);
-	// No date means no calendar entry, so that row is not offered rather than
-	// offered and broken.
-	const canAddToCalendar = buildEventIcs(event, cityKey) !== null;
+	// Every calendar route, not just the download: this sheet is the
+	// discoverable place to pick one when the button's platform guess is wrong.
+	// No date means no calendar entry at all, and calendarLinks drops the rows
+	// it cannot build — the download row is the only unconditional one, so a
+	// list of exactly that means there is nothing real to offer.
+	const calendars = calendarLinks(event, cityKey, cityData.timezone);
+	const canAddToCalendar = calendars.some((link) => link.href !== null);
 
 	useEffect(() => {
 		function onKeyDown(e: KeyboardEvent) {
@@ -88,19 +95,37 @@ export default function CardActionSheet({
 					{isStarred ? <BookmarkCheck size={16} /> : <Bookmark size={16} />}
 					{isStarred ? "Remove pin" : "Pin to Top Picks"}
 				</button>
-				{canAddToCalendar && (
-					<button
-						type="button"
-						className="sheet-action"
-						onClick={() => {
-							downloadEventIcs(event, cityKey);
-							onClose();
-						}}
-					>
-						<CalendarPlus size={16} />
-						Add to calendar
-					</button>
-				)}
+				{canAddToCalendar &&
+					calendars.map((link) =>
+						link.href ? (
+							<a
+								key={link.key}
+								className="sheet-action"
+								href={link.href}
+								// Apple's .ics is same-origin and has to be handed to the
+								// OS; the web templates are another site.
+								target={link.key === "apple" ? undefined : "_blank"}
+								rel="noopener"
+								onClick={onClose}
+							>
+								<CalendarPlus size={16} />
+								{link.label}
+							</a>
+						) : (
+							<button
+								key={link.key}
+								type="button"
+								className="sheet-action"
+								onClick={() => {
+									downloadEventIcs(event, cityKey);
+									onClose();
+								}}
+							>
+								<CalendarPlus size={16} />
+								{link.label}
+							</button>
+						),
+					)}
 				<button type="button" className="sheet-action" onClick={handleShare}>
 					{copied ? <Check size={16} /> : <Share2 size={16} />}
 					{copied ? "Link copied" : "Share"}

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ICEHOUSE
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-uk6u93@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:ICEHOUSE
+DESCRIPTION:Night at the Parkland
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/icehouse-26
+END:VEVENT
+END:VCALENDAR

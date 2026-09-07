@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Friday Night Comedy w/ Brendhan Lovegrove & Friends!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1q1xvqz@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Friday Night Comedy w/ Brendhan Lovegrove & Friends!
+DESCRIPTION:Friday Night Comedy w/ Brendhan Lovegrove & Friends! is a comed
+ y event held at Good Chat Comedy Club.
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/friday-night-comedy-w-brendhan-lovegro
+ ve-friends/
+END:VEVENT
+END:VCALENDAR

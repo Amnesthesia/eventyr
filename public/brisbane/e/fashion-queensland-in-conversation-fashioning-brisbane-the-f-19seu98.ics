@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Fashion Queensland in Conversation: Fashioning Brisbane: The F
+ uture of Fashion and Cultural Identity in our City
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-19seu98@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T183000
+DTEND;TZID=Australia/Brisbane:20260909T203000
+SUMMARY:Fashion Queensland in Conversation: Fashioning Brisbane: The Future
+  of Fashion and Cultural Identity in our City
+DESCRIPTION:FASHION INFORMATIVE ENTERTAINING
+LOCATION:Brisbane Powerhouse\, 119 Lamington St
+URL:https://brisbanepowerhouse.org/events/fashion-queensland-in-conversatio
+ n-2/
+END:VEVENT
+END:VCALENDAR

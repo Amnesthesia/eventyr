@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Little Artist’s Eye Spy
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-w9qm4j@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T100000
+DTEND;TZID=Australia/Brisbane:20260907T170000
+SUMMARY:Little Artist’s Eye Spy
+DESCRIPTION:Polish your peepers! You never know what you might spot. There 
+ is plenty for little eyes to spy with this free MoB Kids activity sheet. T
+ ransform your Museum visit into an exciting game of Eye Spy and discover d
+ etails you might otherwise have missed. Can you spot the flowers? Thi
+LOCATION:Museum of Brisbane\, Brisbane City
+URL:https://www.brisbaneunlocked.com.au/little-artists-eye-spy-2026-09-07
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Scorched Earth
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1xjd0my@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Scorched Earth
+DESCRIPTION:Scorched Earth is a concert / music event held at Brisbane Fest
+ ival.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/scorched-earth
+END:VEVENT
+END:VCALENDAR

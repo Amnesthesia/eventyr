@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Village Green Wellbeing Sessions & Talks
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nnqfq8@dothings
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260914
+SUMMARY:Village Green Wellbeing Sessions & Talks
+DESCRIPTION:A series of informal sessions and discussions focused on wellbe
+ ing and community connection held in a relaxed outdoor festival setting.
+LOCATION:Festival Village Green\, South Bank
+URL:https://www.mustdobrisbane.com/whats-on/brisbane-festival-2026
+END:VEVENT
+END:VCALENDAR

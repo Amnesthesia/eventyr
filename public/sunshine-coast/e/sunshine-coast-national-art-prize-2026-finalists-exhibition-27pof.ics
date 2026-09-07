@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunshine Coast National Art Prize 2026 Finalists Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-27pof@dothings
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20261012
+SUMMARY:Sunshine Coast National Art Prize 2026 Finalists Exhibition
+DESCRIPTION:An exhibition showcasing the finalists of a national art prize\
+ , featuring diverse contemporary works from across Australia. This provide
+ s an opportunity to engage with high-caliber visual art in a focused galle
+ ry setting.
+LOCATION:Caloundra Regional Gallery
+URL:https://gallery.sunshinecoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

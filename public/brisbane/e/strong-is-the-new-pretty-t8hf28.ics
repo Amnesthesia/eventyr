@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Strong is the New Pretty
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-t8hf28@dothings
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260920
+SUMMARY:Strong is the New Pretty
+DESCRIPTION:Strong is the New Pretty is an arts exhibition held at South Ba
+ nk Parklands.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/strong-is-the-new-pretty
+END:VEVENT
+END:VCALENDAR

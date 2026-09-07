@@ -22,7 +22,9 @@
     "probe-sources": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/probe.ts",
     "discover-sources": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/discover.ts",
     "test-adapter": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/testUrl.ts",
-    "test": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts' 'app/**/*.test.ts'",
+    "test:pipeline": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts'",
+    "test:app": "tsx --tsconfig tsconfig.json --test 'app/**/*.test.ts' 'app/**/*.test.tsx'",
+    "test": "pnpm test:pipeline && pnpm test:app",
     "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app && pnpm test"
   },
   "dependencies": {
@@ -37,6 +39,7 @@
     "js-yaml": "^4.1.1",
     "lucide-react": "^0.469.0",
     "openai": "^6.38.0",
+    "qrcode-generator": "^2.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "robots-parser": "^3.0.1"

@@ -108,3 +108,61 @@ export function fmtRange(a: string, b: string): string {
 		});
 	return `${fmt(a)} – ${fmt(b)}`;
 }
+
+const MONTHS_SHORT = [
+	"Jan",
+	"Feb",
+	"Mar",
+	"Apr",
+	"May",
+	"Jun",
+	"Jul",
+	"Aug",
+	"Sep",
+	"Oct",
+	"Nov",
+	"Dec",
+];
+
+/** "5 Dec", with the year only when it is not the one in `iso`'s sibling.
+ * Hand-built for the same reason normalise.ts's humanDatetime is: ICU output
+ * differs between Node builds ("Sep" vs "Sept"), and this sits next to strings
+ * that formatter produced. */
+export function shortDate(iso: string): string {
+	const d = new Date(`${iso.slice(0, 10)}T00:00:00Z`);
+	if (Number.isNaN(d.getTime())) return iso;
+	return `${d.getUTCDate()} ${MONTHS_SHORT[d.getUTCMonth()]}`;
+}
+
+/**
+ * What a card should print for an event's date.
+ *
+ * Usually the pipeline's own `datetime` string. The exception is a run that
+ * has already opened and has not closed — an exhibition, a season, a weekly
+ * workshop. Those are dated from their START, which for the long ones is 2023,
+ * and a saved-events list full of "Sat 29 Aug, 10:30 AM" reads as a list of
+ * things already missed. It is the single most common way this site has been
+ * misread.
+ *
+ * `today` is the viewer's own date (context's todayStr), not the build's, so
+ * this cannot go stale between the weekly digest and the day it is read. An
+ * empty `today` — the pre-hydration render — returns the plain string, so the
+ * server and the first client render agree.
+ */
+export function displayDatetime(
+	event: {
+		datetime?: string;
+		datetime_iso?: string;
+		datetime_end_iso?: string;
+	},
+	today: string,
+): string {
+	const fallback = event.datetime || "";
+	if (!today) return fallback;
+	const start = (event.datetime_iso || "").slice(0, 10);
+	const end = (event.datetime_end_iso || "").slice(0, 10);
+	// Both bounds are required: without an end this is a one-off that started
+	// today at the earliest, and "on now" would be a claim we cannot make.
+	if (!start || !end || start >= today || end < today) return fallback;
+	return `On now — until ${shortDate(end)}`;
+}

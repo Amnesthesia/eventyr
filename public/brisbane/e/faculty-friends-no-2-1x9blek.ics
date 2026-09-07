@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Faculty & Friends No.2
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1x9blek@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Faculty & Friends No.2
+DESCRIPTION:Assoc. Professor Michele Walsh leads QCGU faculty and guests in
+  a vibrant program of chamber music for strings and piano.
+LOCATION:Ian Hanger Recital Hall\, Queensland Conservatorium Griffith Unive
+ rsity
+URL:https://www.qtix.com.au/whats-on/2026/qcgu-faculty-friends-2/
+END:VEVENT
+END:VCALENDAR

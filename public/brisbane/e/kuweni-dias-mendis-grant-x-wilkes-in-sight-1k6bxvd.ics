@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Kuweni Dias Mendis & Grant x Wilkes: (In)Sight
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1k6bxvd@dothings
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260927
+SUMMARY:Kuweni Dias Mendis & Grant x Wilkes: (In)Sight
+DESCRIPTION:Step into the shadows.
+LOCATION:Metro Arts\, Brisbane City
+URL:https://metroarts.com.au/exhibition/insight/
+END:VEVENT
+END:VCALENDAR

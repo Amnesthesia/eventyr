@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Logan Business Distinction Awards 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1witwkm@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T184500
+DTEND;TZID=Australia/Brisbane:20260911T204500
+SUMMARY:Logan Business Distinction Awards 2026
+DESCRIPTION:Logan Business Distinction Awards 2026 is a community event hel
+ d at Logan Entertainment Centre.
+LOCATION:Logan Entertainment Centre
+URL:https://www.loganarts.com.au/event/logan-business-distinction-awards-20
+ 26/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Make a Map FieldTrip
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-10ldiqk@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T140000
+DTEND;TZID=Australia/Brisbane:20260908T160000
+SUMMARY:Make a Map FieldTrip
+DESCRIPTION:A Make a Map FieldTrip hosted by Creative Mornings Brisbane cat
+ egorized as a Workshop / Class.
+LOCATION:Creative Mornings Brisbane
+URL:https://creativemornings.com/talks/make-a-map-fieldtrip-845aee84-7265-4
+ ebf-8d6c-fed12a2086b2
+END:VEVENT
+END:VCALENDAR

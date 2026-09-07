@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bangalow Farmers Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1yql6zx@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T070000
+DTEND;TZID=Australia/Brisbane:20260912T110000
+SUMMARY:Bangalow Farmers Market
+DESCRIPTION:Community-led market in the historic village of Bangalow\, gath
+ ering growers and residents for local produce and conversation.
+LOCATION:Piccabeen Park\, Bangalow
+URL:https://byronfarmersmarket.com.au
+END:VEVENT
+END:VCALENDAR

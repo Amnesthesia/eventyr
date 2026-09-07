@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Byron Seniors: Chair Yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-yc36aa@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T100000
+DTEND;TZID=Australia/Brisbane:20260908T120000
+SUMMARY:Byron Seniors: Chair Yoga
+DESCRIPTION:Byron Seniors: Chair Yoga is a workshop / class held at Byron C
+ ommunity Centre.
+LOCATION:Byron Community Centre
+URL:https://www.byroncentre.com.au/community-events/chair-yoga
+END:VEVENT
+END:VCALENDAR

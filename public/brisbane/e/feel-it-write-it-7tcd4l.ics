@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Feel it\, Write it.
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7tcd4l@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T190000
+DTEND;TZID=Australia/Brisbane:20260916T210000
+SUMMARY:Feel it\, Write it.
+DESCRIPTION:A Feel it\, Write it. event hosted by Creative Mornings Brisban
+ e categorized as a Workshop / Class.
+LOCATION:Creative Mornings Brisbane
+URL:https://creativemornings.com/talks/feel-it-write-it-c6aea832-3903-4f2b-
+ a7c1-0dc5acd12b17
+END:VEVENT
+END:VCALENDAR

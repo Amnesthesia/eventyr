@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Verso Projects
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1plpd3l@dothings
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260927
+SUMMARY:Verso Projects
+DESCRIPTION:A series of creative and collaborative art projects housed with
+ in the Festival Village\, offering an exploratory space for festival-goers
+ .
+LOCATION:Festival Village\, South Bank
+URL:https://brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

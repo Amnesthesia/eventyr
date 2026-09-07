@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Byron Theatre – Evening Program
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-s7lwwm@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:Byron Theatre – Evening Program
+DESCRIPTION:A live performance event hosted at the Byron Theatre\, featurin
+ g local or touring arts and music acts in an intimate setting.
+LOCATION:Byron Theatre\, Byron Community Centre
+URL:https://www.byroncentre.com.au/bct/whats-on
+END:VEVENT
+END:VCALENDAR

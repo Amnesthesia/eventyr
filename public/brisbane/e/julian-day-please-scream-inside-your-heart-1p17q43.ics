@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Julian Day: Please scream inside your heart
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1p17q43@dothings
+DTSTART;TZID=Australia/Brisbane:20260904T100000
+DTEND;TZID=Australia/Brisbane:20260926T150000
+SUMMARY:Julian Day: Please scream inside your heart
+DESCRIPTION:An immersive sound and installation work by Julian Day that exp
+ lores the physical and psychological sensations of collective anxiety thro
+ ugh experimental audio.
+LOCATION:IMA Belltower\, Fortitude Valley
+URL:https://www.ima.org.au/exhibitions/maw-brisfest/
+END:VEVENT
+END:VCALENDAR

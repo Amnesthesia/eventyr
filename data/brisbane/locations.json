@@ -10,11 +10,37 @@
       "lng": 153.025295,
       "label": "Park Avenue at Southbank, 410 Stanley St, South Brisbane QLD 4101, Australia"
     },
+    "47 Balaclava St, Woolloongabba, QLD, Australia, Queensland": {
+      "lat": -27.4905706,
+      "lng": 153.0384165,
+      "label": "47 Balaclava St, Woolloongabba QLD 4102, Australia"
+    },
+    "52 Petrie Terrace, Brisbane City": {
+      "lat": -27.4649469,
+      "lng": 153.0130058,
+      "label": "52 Petrie Terrace, QLD 4000, Australia"
+    },
+    "52 Petrie Terrace, Petrie Terrace": {
+      "lat": -27.4649469,
+      "lng": 153.0130058,
+      "label": "52 Petrie Terrace, QLD 4000, Australia"
+    },
+    "Ad Astra Theatre": {
+      "lat": -27.4616374,
+      "lng": 153.0142749,
+      "label": "210 Petrie Terrace, QLD 4000, Australia"
+    },
     "Airlie Beach Hotel, Airlie Beach": {
       "lat": -20.2689265,
       "lng": 148.7208778,
       "label": "16 The Esplanade, Airlie Beach QLD 4802, Australia"
     },
+    "Anzac Square Memorial Galleries": {
+      "lat": -27.4662874,
+      "lng": 153.0264532,
+      "label": "285 Ann St, Brisbane City QLD 4000, Australia"
+    },
+    "Art Gallery": null,
     "Arthur Davis Park, Sandgate": {
       "lat": -27.3123023,
       "lng": 153.0697253,
@@ -25,12 +51,28 @@
       "lng": 153.0416779,
       "label": "Arthur St, Fortitude Valley QLD, Australia"
     },
+    "Berlin": {
+      "lat": 52.52000659999999,
+      "lng": 13.404954,
+      "label": "Berlin, Germany",
+      "foreign": true
+    },
     "Bienarte, Brisbane": {
       "lat": -27.4399375,
       "lng": 153.043991,
       "label": "15 Nariel St, Albion QLD 4010, Australia"
     },
     "BIG FAN, Morningside": null,
+    "Big Fork Theatre, 252 Saint Pauls Terrace Fortitude Valley, QLD, 4000 Australia": {
+      "lat": -27.4570194,
+      "lng": 153.0302569,
+      "label": "Lv 2, 252 St Pauls Ter, Fortitude Valley QLD 4000, Australia"
+    },
+    "Billinudgel Hotel, Billinudgel": {
+      "lat": -28.5038889,
+      "lng": 153.5269444,
+      "label": "1/1 Wilfred St, Billinudgel NSW 2483, Australia"
+    },
     "Black Bear Lodge, Fortitude Valley": {
       "lat": -27.4580598,
       "lng": 153.034764,
@@ -71,6 +113,26 @@
       "lng": 153.0260341,
       "label": "Brisbane City QLD, Australia"
     },
+    "Brisbane City Hall, Brisbane City, Brisbane City": {
+      "lat": -27.4686893,
+      "lng": 153.0238365,
+      "label": "64 Adelaide St, Brisbane City QLD 4000, Australia"
+    },
+    "Brisbane Convention & Exhibition Centre": {
+      "lat": -27.4764671,
+      "lng": 153.0184001,
+      "label": "Grey St, South Brisbane QLD 4101, Australia"
+    },
+    "Brisbane Entertainment Centre, Boondall": {
+      "lat": -27.3422417,
+      "lng": 153.0703722,
+      "label": "Brisbane Entertainment Centre, 1 Melaleuca Dr, Boondall QLD 4034, Australia"
+    },
+    "Brisbane Festival": {
+      "lat": -27.4704528,
+      "lng": 153.0260341,
+      "label": "Brisbane QLD, Australia"
+    },
     "Brisbane Festival venues": {
       "lat": -27.4704528,
       "lng": 153.0260341,
@@ -80,6 +142,11 @@
       "lat": -27.4329133,
       "lng": 153.0356154,
       "label": "41 Grafton St, Windsor QLD 4030, Australia"
+    },
+    "Brisbane Powerhouse, 119 Lamington St": {
+      "lat": -27.4690169,
+      "lng": 153.0543438,
+      "label": "Yuggera and Turrbal Country, 119 Lamington St, New Farm QLD 4005, Australia"
     },
     "Brisbane Showgrounds": {
       "lat": -27.4503048,
@@ -111,6 +178,11 @@
       "lng": 153.0347416,
       "label": "1/322 Brunswick St, Fortitude Valley QLD 4006, Australia"
     },
+    "Bulimba Riverside Park, Bulimba": {
+      "lat": -27.4539433,
+      "lng": 153.053833,
+      "label": "Bulimba Riverside Park, 57 Addison Ave, Bulimba QLD 4171, Australia"
+    },
     "Burnie Brae Centre, Chermside": {
       "lat": -27.3899876,
       "lng": 153.0345069,
@@ -135,6 +207,11 @@
       "lat": -27.4649469,
       "lng": 153.0130058,
       "label": "52 Petrie Terrace, QLD 4000, Australia"
+    },
+    "Central Caboolture, Caboolture": {
+      "lat": -27.0831741,
+      "lng": 152.9516555,
+      "label": "Corner of Hasking Street and, Beerburrum Rd, Caboolture QLD 4510, Australia"
     },
     "Chattahoochee Joes Honky Tonk, Fortitude Valley": {
       "lat": -27.458245,
@@ -161,6 +238,21 @@
       "lng": 152.9973449,
       "label": "via Woodhill, 23-25 William St, Beaudesert QLD 4285, Australia"
     },
+    "Club Noir, Loganholme": {
+      "lat": -27.6729874,
+      "lng": 153.1826829,
+      "label": "3994 Pacific Hwy, Loganholme QLD 4129, Australia"
+    },
+    "Concert Hall, Grey St, South Bank": {
+      "lat": -27.4744482,
+      "lng": 153.0190691,
+      "label": "Corner Melbourne St and Grey St, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "Concert Hall, QPAC": {
+      "lat": -27.4744482,
+      "lng": 153.0190691,
+      "label": "Corner Melbourne St and Grey St, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
     "Concert Hall, QPAC (South Bank)": {
       "lat": -27.4744482,
       "lng": 153.0190691,
@@ -171,15 +263,40 @@
       "lng": 153.0190691,
       "label": "Corner Melbourne St and Grey St, Melbourne St, South Brisbane QLD 4101, Australia"
     },
+    "Conservatorium Theatre - CT, South Brisbane": {
+      "lat": -27.4768825,
+      "lng": 153.0208285,
+      "label": "S01/140 Grey St, South Brisbane QLD 4101, Australia"
+    },
+    "Conservatorium Theatre, Queensland Conservatorium Griffith University": {
+      "lat": -27.4764882,
+      "lng": 153.0205543,
+      "label": "S01/140 Grey St, South Brisbane QLD 4101, Australia"
+    },
     "Conservatorium Theatre, South Brisbane": {
       "lat": -27.4764882,
       "lng": 153.0205543,
       "label": "S01/140 Grey St, South Brisbane QLD 4101, Australia"
     },
+    "Creative Mornings Brisbane": {
+      "lat": -27.4704528,
+      "lng": 153.0260341,
+      "label": "Brisbane QLD, Australia"
+    },
     "Creative Room Art Space, Hill End": {
       "lat": -33.0326812,
       "lng": 149.4167779,
       "label": "Hill End NSW 2850, Australia"
+    },
+    "Cremorne Theatre - QPAC, South Brisbane": {
+      "lat": -27.4746451,
+      "lng": 153.0199478,
+      "label": "Queensland Performing Arts Centre, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "Cremorne Theatre, Grey St, South Bank": {
+      "lat": -27.4746451,
+      "lng": 153.0199478,
+      "label": "Queensland Performing Arts Centre, Melbourne St, South Brisbane QLD 4101, Australia"
     },
     "Cremorne Theatre, QPAC": {
       "lat": -27.4746451,
@@ -211,6 +328,16 @@
       "lng": 153.0290455,
       "label": "101 Edward St, Brisbane City QLD 4000, Australia"
     },
+    "Downfall Creek Bushland Centre": {
+      "lat": -27.3896138,
+      "lng": 153.0047934,
+      "label": "815 Rode Rd, Chermside West QLD 4032, Australia"
+    },
+    "Eat Street Northshore, 221D Macarthur Avenue, Hamilton, QLD, 4007": {
+      "lat": -27.4438961,
+      "lng": 153.0797179,
+      "label": "221D MacArthur Ave, Hamilton QLD 4007, Australia"
+    },
     "Festival Village Green, South Bank": {
       "lat": -27.4791458,
       "lng": 153.0219405,
@@ -241,6 +368,21 @@
       "lng": 153.0261831,
       "label": "Central railway station, Brisbane, Brisbane City QLD 4000, Australia"
     },
+    "Forest Lake Community Hall, Forest Lake": {
+      "lat": -27.6183071,
+      "lng": 152.9723705,
+      "label": "60 College Ave, Forest Lake QLD 4078, Australia"
+    },
+    "Forest Lake Tavern": {
+      "lat": -27.6246954,
+      "lng": 152.969777,
+      "label": "245 Forest Lake Blvd, Forest Lake QLD 4078, Australia"
+    },
+    "Fortitude Music Hall, 66 Doggett St": {
+      "lat": -27.4527834,
+      "lng": 153.0433078,
+      "label": "66 Doggett St, Teneriffe QLD 4005, Australia"
+    },
     "Fortitude Valley": {
       "lat": -27.457826,
       "lng": 153.0356579,
@@ -256,10 +398,35 @@
       "lng": 115.7401709,
       "label": "Peter Hughes Dr, Fremantle WA 6160, Australia"
     },
+    "Garden City Library": {
+      "lat": -27.5612436,
+      "lng": 153.081064,
+      "label": "Level R4 - Yellow Car Park Westfield Mount Gravatt Cnr Logan Road &, Kessels Rd, Upper Mount Gravatt QLD 4122, Australia"
+    },
     "George Clayton Park, Manly": {
       "lat": -27.4465701,
       "lng": 153.1848806,
       "label": "George Clayton Park, 55 Upper Esplanade, Manly QLD 4179, Australia"
+    },
+    "Glasshouse Theatre, Grey St, South Bank": {
+      "lat": -27.475361,
+      "lng": 153.0196846,
+      "label": "Russell St, South Brisbane QLD 4101, Australia"
+    },
+    "Glasshouse Theatre, QPAC": {
+      "lat": -27.475361,
+      "lng": 153.0196846,
+      "label": "Russell St, South Brisbane QLD 4101, Australia"
+    },
+    "GOMA, Stanley Place, South Bank": {
+      "lat": -27.47056,
+      "lng": 153.0171334,
+      "label": "Stanley Pl, South Brisbane QLD 4101, Australia"
+    },
+    "Good Chat Comedy Club": {
+      "lat": -27.464929,
+      "lng": 153.0129872,
+      "label": "Inside Caxton St Brewing Co, 52 Petrie Terrace, Brisbane City QLD 4006, Australia"
     },
     "Grand on Ann, Brisbane": {
       "lat": -27.4650353,
@@ -276,7 +443,18 @@
       "lng": 153.0000807,
       "label": "Grinstead Park, 130 Shand St, Alderley QLD 4051, Australia"
     },
+    "Gwangju, South Korea": {
+      "lat": 35.15008220000001,
+      "lng": 126.8559071,
+      "label": "Gwangju, South Korea",
+      "foreign": true
+    },
     "Hamilton Library": {
+      "lat": -27.4378972,
+      "lng": 153.0642407,
+      "label": "36 Racecourse Rd, Ascot QLD 4007, Australia"
+    },
+    "Hamilton Town Hall, Hamilton": {
       "lat": -27.4378972,
       "lng": 153.0642407,
       "label": "36 Racecourse Rd, Ascot QLD 4007, Australia"
@@ -286,15 +464,35 @@
       "lng": 153.062062,
       "label": "Hawthorne Park, 140 Riding Rd, Hawthorne QLD 4171, Australia"
     },
+    "Hey Chica!, Fortitude Valley": {
+      "lat": -27.4580512,
+      "lng": 153.0343356,
+      "label": "T11-14/315 Brunswick St, Fortitude Valley QLD 4006, Australia"
+    },
     "Honky Tonks, Fortitude Valley": {
       "lat": -27.4577477,
       "lng": 153.0328901,
       "label": "204 Wickham St, Fortitude Valley QLD 4006, Australia"
     },
+    "Hub Brisbane, Australia": {
+      "lat": -27.4704528,
+      "lng": 153.0260341,
+      "label": "Brisbane QLD, Australia"
+    },
     "Huxtable Park, Chermside West": {
       "lat": -27.3882,
       "lng": 153.0171917,
       "label": "Huxtable Park, Chermside West QLD 4032, Australia"
+    },
+    "Ian Hanger Recital Hall, Queensland Conservatorium Griffith University": {
+      "lat": -27.4768825,
+      "lng": 153.0208285,
+      "label": "140 Grey St, South Brisbane QLD 4101, Australia"
+    },
+    "IMA Belltower, Fortitude Valley": {
+      "lat": -27.4594373,
+      "lng": 153.037087,
+      "label": "Judith Wright Arts Centre, Ground Floor/420 Brunswick St, Fortitude Valley QLD 4006, Australia"
     },
     "Inala Library": {
       "lat": -27.6003518,
@@ -306,6 +504,11 @@
       "lng": 152.973936,
       "label": "60 Stamford Rd, Indooroopilly QLD 4068, Australia"
     },
+    "Institute of Modern Art, Fortitude Valley": {
+      "lat": -27.4594373,
+      "lng": 153.037087,
+      "label": "Judith Wright Arts Centre, Ground Floor/420 Brunswick St, Fortitude Valley QLD 4006, Australia"
+    },
     "Ipswich": {
       "lat": -27.6146134,
       "lng": 152.7608368,
@@ -316,20 +519,60 @@
       "lng": 152.7608368,
       "label": "Queensland, Australia"
     },
+    "Ipswich Art Gallery": {
+      "lat": -27.6146595,
+      "lng": 152.7590892,
+      "label": "D'Arcy Doyle Place, Ipswich QLD 4305, Australia"
+    },
+    "Jan Murphy Gallery Fortitude Valley": {
+      "lat": -27.4606019,
+      "lng": 153.0379188,
+      "label": "486 Brunswick St, Fortitude Valley QLD 4006, Australia"
+    },
     "Jan Murphy Gallery, New Farm": {
       "lat": -27.4606019,
       "lng": 153.0379188,
       "label": "486 Brunswick St, Fortitude Valley QLD 4006, Australia"
+    },
+    "Jindalee Boat Ramp Park, Jindalee": {
+      "lat": -27.5310412,
+      "lng": 152.9285494,
+      "label": "Jindalee Boat Ramp Park, 110/96 Mount Ommaney Dr, Jindalee QLD 4074, Australia"
     },
     "Jindalee Pool, Jindalee": {
       "lat": -27.5327095,
       "lng": 152.9427041,
       "label": "11 Yallambee Rd, Jindalee QLD 4074, Australia"
     },
+    "KBF": {
+      "lat": -31.7696528,
+      "lng": 115.7654401,
+      "label": "36A Gwendoline Dr, Beldon WA 6027, Australia"
+    },
+    "Kedron-Wavell Services Club, Chermside": {
+      "lat": -27.3853561,
+      "lng": 153.0353278,
+      "label": "21 Kittyhawk Dr, Chermside QLD 4032, Australia"
+    },
+    "Kenmore Library": {
+      "lat": -27.5060516,
+      "lng": 152.9385841,
+      "label": "9 Brookfield Rd, Kenmore QLD 4069, Australia"
+    },
     "Kingscliff Beach Hotel, Kingscliff": {
       "lat": -28.2554704,
       "lng": 153.576035,
       "label": "102 Marine Parade, Kingscliff NSW 2487, Australia"
+    },
+    "Kingston Butter Factory Cultural Precinct": {
+      "lat": -27.6580263,
+      "lng": 153.1204331,
+      "label": "270 Jacaranda Ave, Kingston QLD 4114, Australia"
+    },
+    "Kite Terrace, Thomas Dixon Centre, 406 Montague Road , West End": {
+      "lat": -27.4865594,
+      "lng": 153.0017913,
+      "label": "406 Montague Rd, West End QLD 4101, Australia"
     },
     "Kite Terrace, Thomas Dixon Centre, West End": {
       "lat": -27.4865594,
@@ -347,6 +590,22 @@
       "lng": 153.0294291,
       "label": "Level Two/169 Mary St, Brisbane City QLD 4000, Australia"
     },
+    "LEC": {
+      "lat": -37.834357,
+      "lng": 144.9736746,
+      "label": "Suite 15.02/390 St Kilda Rd, Melbourne VIC 3004, Australia"
+    },
+    "Lefty's Music Hall, Petrie Terrace": {
+      "lat": -27.4645492,
+      "lng": 153.0129935,
+      "label": "15 Caxton St, Petrie Terrace QLD 4000, Australia"
+    },
+    "Libby Leshgold Gallery, Vancouver, Canada": {
+      "lat": 49.2675096,
+      "lng": -123.0933376,
+      "label": "520 E 1st Ave, Vancouver, BC V5T 1A7, Canada",
+      "foreign": true
+    },
     "Liberty Hall": {
       "lat": -33.8937908,
       "lng": 151.2255878,
@@ -356,6 +615,37 @@
       "lat": -33.8937908,
       "lng": 151.2255878,
       "label": "220 Errol Flynn Blvd, Moore Park NSW 2021, Australia"
+    },
+    "Logan Art Gallery": {
+      "lat": -27.6422793,
+      "lng": 153.1047811,
+      "label": "Wembley Rd & Jacaranda Avenue, Logan Central QLD 4114, Australia"
+    },
+    "Logan Entertainment Centre": {
+      "lat": -27.6433193,
+      "lng": 153.102453,
+      "label": "170 Wembley Rd, Logan Central QLD 4114, Australia"
+    },
+    "London": {
+      "lat": 51.5072178,
+      "lng": -0.1275862,
+      "label": "London, UK",
+      "foreign": true
+    },
+    "Lota Camping Reserve, Lota": {
+      "lat": -27.4662194,
+      "lng": 153.1921364,
+      "label": "Lota Camping Reserve, Lota, 710 Esplanade, Lota QLD 4179, Australia"
+    },
+    "Lyric Theatre, Grey St, South Bank": {
+      "lat": -27.4742412,
+      "lng": 153.0194865,
+      "label": "Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "Lyric Theatre, QPAC": {
+      "lat": -27.4742412,
+      "lng": 153.0194865,
+      "label": "Melbourne St, South Brisbane QLD 4101, Australia"
     },
     "Lyric Theatre, South Brisbane": {
       "lat": -27.4742412,
@@ -367,7 +657,38 @@
       "lng": 153.0219405,
       "label": "South Bank, South Brisbane QLD, Australia"
     },
+    "Magic Mirrors Spiegeltent, Verso Projects. Festival Village, South Bank": {
+      "lat": -27.4791458,
+      "lng": 153.0219405,
+      "label": "South Bank, South Brisbane QLD, Australia"
+    },
+    "Manchester": {
+      "lat": 53.4807593,
+      "lng": -2.2426305,
+      "label": "Manchester, UK",
+      "foreign": true
+    },
+    "Mayes Cottage": {
+      "lat": -27.6525972,
+      "lng": 153.1167236,
+      "label": "20 Mawarra St, Kingston QLD 4114, Australia"
+    },
+    "Melbourne Street Green, Grey St, South Bank": {
+      "lat": -27.4741095,
+      "lng": 153.018771,
+      "label": "Grey Street &, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "Metro Arts, Brisbane City": {
+      "lat": -27.4782127,
+      "lng": 153.0121325,
+      "label": "97 Boundary St, West End QLD 4101, Australia"
+    },
     "Mi Casa Nightclub Brisbane, Fortitude Valley": {
+      "lat": -27.4571345,
+      "lng": 153.0329476,
+      "label": "239 Brunswick St, Fortitude Valley QLD 4006, Australia"
+    },
+    "Mi Casa Nightclub, Brisbane, Fortitude Valley": {
       "lat": -27.4571345,
       "lng": 153.0329476,
       "label": "239 Brunswick St, Fortitude Valley QLD 4006, Australia"
@@ -387,6 +708,27 @@
       "lng": 153.0394211,
       "label": "86 Arthur St, Fortitude Valley QLD 4006, Australia"
     },
+    "Montreal": {
+      "lat": 45.5018869,
+      "lng": -73.56739189999999,
+      "label": "Montreal, QC, Canada",
+      "foreign": true
+    },
+    "Mornington Peninsula Regional Gallery": {
+      "lat": -38.2372536,
+      "lng": 145.0519417,
+      "label": "Civic Reserve, Unit 2/350 Dunns Rd, Mornington VIC 3931, Australia"
+    },
+    "Mt Coot-tha Library": {
+      "lat": -27.475767,
+      "lng": 152.9764734,
+      "label": "Mount Coot-tha QLD, Australia"
+    },
+    "Mt Gravatt Library": {
+      "lat": -27.53851,
+      "lng": 153.08024,
+      "label": "8 Creek Rd, Mount Gravatt QLD 4122, Australia"
+    },
     "Mt Gravatt PCYC, Upper Mount Gravatt": {
       "lat": -27.5526005,
       "lng": 153.07359,
@@ -402,15 +744,40 @@
       "lng": 153.0238277,
       "label": "Level 3, Brisbane City Hall, 64 Adelaide St, Brisbane City QLD 4000, Australia"
     },
+    "Museum of Brisbane, King George Square (Brisbane City Hall)": {
+      "lat": -27.4686797,
+      "lng": 153.0238277,
+      "label": "Level 3, Brisbane City Hall, 64 Adelaide St, Brisbane City QLD 4000, Australia"
+    },
     "Museum of Brisbane, Level 3 City Hall, King George Square": {
       "lat": -27.4685063,
       "lng": 153.0239259,
       "label": "87C Roma St, Brisbane City QLD 4000, Australia"
     },
+    "Museum of Brisbane, Level 3, Brisbane City Hall": {
+      "lat": -27.4686797,
+      "lng": 153.0238277,
+      "label": "Level 3, Brisbane City Hall, 64 Adelaide St, Brisbane City QLD 4000, Australia"
+    },
     "Musgrave Park Pool, South Brisbane": {
       "lat": -27.4803263,
       "lng": 153.0164167,
       "label": "100 Edmondstone St, South Brisbane QLD 4101, Australia"
+    },
+    "Netherworld, 186 Brunswick Street": {
+      "lat": -27.4559203,
+      "lng": 153.0320273,
+      "label": "186 Brunswick St, Fortitude Valley QLD 4006, Australia"
+    },
+    "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006": {
+      "lat": -27.4559203,
+      "lng": 153.0320273,
+      "label": "186 Brunswick St, Fortitude Valley QLD 4006, Australia"
+    },
+    "Newmarket Hotel": {
+      "lat": -33.921637,
+      "lng": 151.196504,
+      "label": "889 Botany Rd, Mascot NSW 2020, Australia"
     },
     "Northshore Tennis Centre, Hamilton": {
       "lat": -27.444378,
@@ -422,7 +789,27 @@
       "lng": 152.353272,
       "label": "34 Woongarra St, Bundaberg Central QLD 4670, Australia"
     },
+    "Old Inala Hall, Inala": {
+      "lat": -27.5900623,
+      "lng": 152.9764339,
+      "label": "Rosemary St & Abelia St, Inala QLD 4077, Australia"
+    },
+    "Opera Queensland": {
+      "lat": -27.4764404,
+      "lng": 153.0208229,
+      "label": "S01/140 Grey St, South Brisbane QLD 4101, Australia"
+    },
+    "Opera Queensland Studio": {
+      "lat": -27.4764404,
+      "lng": 153.0208229,
+      "label": "S01/140 Grey St, South Brisbane QLD 4101, Australia"
+    },
     "Opera Queensland Studio, S01/140 Grey St, South Brisbane": {
+      "lat": -27.4764404,
+      "lng": 153.0208229,
+      "label": "S01/140 Grey St, South Brisbane QLD 4101, Australia"
+    },
+    "Opera Queensland Studio, S01/140 Grey St, South Brisbane OPERA Queensland is proudly supported by Brisbane City Council": {
       "lat": -27.4764404,
       "lng": 153.0208229,
       "label": "S01/140 Grey St, South Brisbane QLD 4101, Australia"
@@ -437,20 +824,45 @@
       "lng": 153.0309346,
       "label": "Annerley QLD, Australia"
     },
+    "Palace Cinemas Brisbane": {
+      "lat": -27.4704528,
+      "lng": 153.0260341,
+      "label": "Brisbane QLD, Australia"
+    },
     "Petrie Terrace Gallery, Petrie Terrace": {
       "lat": -27.4628275,
       "lng": 153.0143832,
       "label": "Petrie Terrace QLD 4000, Australia"
+    },
+    "Philip Bacon Galleries": {
+      "lat": -27.4605456,
+      "lng": 153.0380368,
+      "label": "2 Arthur St, Fortitude Valley QLD 4006, Australia"
     },
     "Pig 'N' Whistle Riverside, Brisbane City": {
       "lat": -27.4667958,
       "lng": 153.0302774,
       "label": "Riverside Centre, 123 Eagle St, Brisbane City QLD 4000, Australia"
     },
+    "Playhouse, Grey St, South Bank": {
+      "lat": -27.4751251,
+      "lng": 153.02037,
+      "label": "Russell St, South Brisbane QLD 4101, Australia"
+    },
+    "Playhouse, QPAC": {
+      "lat": -27.4751251,
+      "lng": 153.02037,
+      "label": "Russell St, South Brisbane QLD 4101, Australia"
+    },
     "Port Beach Brewery, North Fremantle": {
       "lat": -32.0370794,
       "lng": 115.7512733,
       "label": "44 Tydeman Rd, North Fremantle WA 6159, Australia"
+    },
+    "Portland": {
+      "lat": -38.3420842,
+      "lng": 141.6012039,
+      "label": "Portland VIC 3305, Australia"
     },
     "Powerhouse Theatre, Brisbane Powerhouse, New Farm": {
       "lat": -27.4690169,
@@ -461,6 +873,11 @@
       "lat": -37.8107288,
       "lng": 144.9724639,
       "label": "163 Spring St, Melbourne VIC 3000, Australia"
+    },
+    "QAG, Stanley Place, South Bank": {
+      "lat": -27.4724407,
+      "lng": 153.0185946,
+      "label": "Stanley Pl, South Brisbane QLD 4101, Australia"
     },
     "QAGOMA (GOMA), South Bank": {
       "lat": -27.4710245,
@@ -482,6 +899,26 @@
       "lng": 153.0193023,
       "label": "Cultural Precinct Cnr Grey, Melbourne St, South Brisbane QLD 4101, Australia"
     },
+    "QPAC Piano Bar, South Bank": {
+      "lat": -27.4742755,
+      "lng": 153.0193023,
+      "label": "Cultural Precinct Cnr Grey, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "QPAC, Grey St, South Bank": {
+      "lat": -27.4742755,
+      "lng": 153.0193023,
+      "label": "Cultural Precinct Cnr Grey, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "QTIX": {
+      "lat": -27.4741922,
+      "lng": 153.0191414,
+      "label": "Corner Grey St and, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "Qudos Bank Arena, Sydney Olympic Park": {
+      "lat": -33.8443,
+      "lng": 151.0621,
+      "label": "19 Edwin Flack Ave, Sydney Olympic Park NSW 2127, Australia"
+    },
     "Queen Street Mall Stage": {
       "lat": -27.4702671,
       "lng": 153.0244501,
@@ -492,25 +929,111 @@
       "lng": 153.0252416,
       "label": "Queen St, Brisbane City QLD 4000, Australia"
     },
+    "Queensland Art Gallery | Gallery of Modern Art, Stanley Place, South Bank": {
+      "lat": -27.47056,
+      "lng": 153.0171334,
+      "label": "Stanley Pl, South Brisbane QLD 4101, Australia"
+    },
+    "Queensland Maritime Museum, 412 Stanley St": {
+      "lat": -27.4818335,
+      "lng": 153.0256466,
+      "label": "412 Stanley St, South Brisbane QLD 4101, Australia"
+    },
+    "Queensland Museum Cobb+Co, Toowoomba": {
+      "lat": -27.5555214,
+      "lng": 151.9646503,
+      "label": "27 Lindsay St, Toowoomba City QLD 4350, Australia"
+    },
+    "Queensland Museum Kurilpa": {
+      "lat": -27.473109,
+      "lng": 153.0181887,
+      "label": "Corner of Grey and, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "Queensland Museum Kurilpa, Brisbane": {
+      "lat": -27.473109,
+      "lng": 153.0181887,
+      "label": "Corner of Grey and, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
     "Queensland Performing Arts Centre (QPAC), South Brisbane, South Brisbane": {
       "lat": -27.4742755,
       "lng": 153.0193023,
       "label": "Cultural Precinct Cnr Grey, Melbourne St, South Brisbane QLD 4101, Australia"
     },
+    "Queensland Performing Arts Centre, Grey St, South Bank": {
+      "lat": -27.4742755,
+      "lng": 153.0193023,
+      "label": "Cultural Precinct Cnr Grey, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "Queensland Performing Arts Centre, South Brisbane": {
+      "lat": -27.4742755,
+      "lng": 153.0193023,
+      "label": "Cultural Precinct Cnr Grey, Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "Queensland Symphony Orchestra": null,
     "Queensland Symphony Orchestra Studio, 114 Grey Street, South Brisbane, South Brisbane": {
       "lat": -27.4755943,
       "lng": 153.0201178,
       "label": "114 Grey St, South Brisbane QLD 4101, Australia"
+    },
+    "Queensland Theatre, 78 Montague Rd": {
+      "lat": -27.471831,
+      "lng": 153.0139996,
+      "label": "78 Montague Rd, South Brisbane QLD 4101, Australia"
+    },
+    "Queensland Writers Centre": {
+      "lat": -27.4708253,
+      "lng": 153.018127,
+      "label": "Level 2, State Library of Queensland, Queensland Cultural Centre, Stanley Pl, South Brisbane QLD 4101, Australia"
+    },
+    "Queensland Writers Centre, Stanley Place South Brisbane, QLD, 4101 Australia": {
+      "lat": -27.4708253,
+      "lng": 153.018127,
+      "label": "Level 2, State Library of Queensland, Queensland Cultural Centre, Stanley Pl, South Brisbane QLD 4101, Australia"
+    },
+    "Queensland Writers Centre, State Library of Queensland South Brisbane Australia": {
+      "lat": -27.4708253,
+      "lng": 153.018127,
+      "label": "Level 2, State Library of Queensland, Queensland Cultural Centre, Stanley Pl, South Brisbane QLD 4101, Australia"
     },
     "QUIVR, Fortitude Valley": {
       "lat": -27.4579275,
       "lng": 153.036081,
       "label": "5D Winn St, Fortitude Valley QLD 4006, Australia"
     },
+    "Redcliffe Entertainment Centre, Redcliffe": {
+      "lat": -27.2255556,
+      "lng": 153.1119444,
+      "label": "Downs St, Redcliffe QLD 4020, Australia"
+    },
+    "Redland Performing Arts Centre (RPAC)": {
+      "lat": -27.5253584,
+      "lng": 153.2638977,
+      "label": "2/16 Middle St, Cleveland QLD 4163, Australia"
+    },
     "Regatta Hotel, Toowong": {
       "lat": -27.4824998,
       "lng": 152.9964758,
       "label": "543 Coronation Dr, Toowong QLD 4066, Australia"
+    },
+    "Regent Park, Cannon Hill": {
+      "lat": -27.467546,
+      "lng": 153.081263,
+      "label": "Regent Park, 801A Wynnum Rd, Cannon Hill QLD 4170, Australia"
+    },
+    "Riverbend Books": {
+      "lat": -27.4510765,
+      "lng": 153.0561396,
+      "label": "Shop 4/77 Oxford St, Bulimba QLD 4171, Australia"
+    },
+    "Riverbend Books, Bulimba": {
+      "lat": -27.4510765,
+      "lng": 153.0561396,
+      "label": "Shop 4/77 Oxford St, Bulimba QLD 4171, Australia"
+    },
+    "Riverstage, Brisbane": {
+      "lat": -27.4791587,
+      "lng": 153.0300464,
+      "label": "59 Gardens Point Rd, Brisbane City QLD 4000, Australia"
     },
     "Rochedale Community Hall, Rochedale": {
       "lat": -27.5769718,
@@ -527,6 +1050,11 @@
       "lng": 144.9785584,
       "label": "200 Batman Ave, Melbourne VIC 3004, Australia"
     },
+    "Roma Street Parkland": {
+      "lat": -27.4630081,
+      "lng": 153.0189415,
+      "label": "Roma Street Parkland, 1 Parkland Blvd, Brisbane City QLD 4000, Australia"
+    },
     "Roma Street Parkland Amphitheatre": {
       "lat": -27.4627955,
       "lng": 153.0201387,
@@ -541,6 +1069,11 @@
       "lat": -27.4637734,
       "lng": 153.0299292,
       "label": "373 Ann St, Brisbane City QLD 4000, Australia"
+    },
+    "Seven Hills Hub, Seven Hills": {
+      "lat": -27.477427,
+      "lng": 153.0735084,
+      "label": "28 Tallowwood St, Seven Hills QLD 4170, Australia"
     },
     "Shaw Park Tennis Centre, Wooloowin": {
       "lat": -27.4061607,
@@ -557,6 +1090,11 @@
       "lng": 152.976926,
       "label": "Mount Coot-Tha Rd, Mount Coot-tha QLD 4066, Australia"
     },
+    "Skygate | Exhibition and Immersive Experience centre, Brisbane Airport": {
+      "lat": -27.4149568,
+      "lng": 153.0813798,
+      "label": "1/7 The Cct, Brisbane Airport QLD 4008, Australia"
+    },
     "Soapbox Beer, Fortitude Valley": {
       "lat": -27.4581965,
       "lng": 153.0321917,
@@ -566,6 +1104,11 @@
       "lat": -27.4739853,
       "lng": 153.0199639,
       "label": "Stanley St, South Brisbane QLD 4101, Australia"
+    },
+    "South Bank Parklands, Grey St, South Bank": {
+      "lat": -27.4753665,
+      "lng": 153.0208068,
+      "label": "South Bank Parklands, Clem Jones Promenade, South Brisbane QLD 4101, Australia"
     },
     "South Bank Piazza": {
       "lat": -27.4773325,
@@ -612,6 +1155,12 @@
       "lng": 153.0181294,
       "label": "Cultural Precinct, Stanley Pl, South Brisbane QLD 4101, Australia"
     },
+    "Stockholm": {
+      "lat": 59.3327036,
+      "lng": 18.0656255,
+      "label": "Stockholm, Sweden",
+      "foreign": true
+    },
     "Sundowner Hotel Motel, Caboolture": {
       "lat": -27.085168,
       "lng": 152.9793191,
@@ -622,10 +1171,30 @@
       "lng": 153.0578918,
       "label": "65 Gager St, Sunnybank QLD 4109, Australia"
     },
+    "Teralba Park, Everton Park": {
+      "lat": -27.4020924,
+      "lng": 152.9803742,
+      "label": "Teralba Park, 120 Pullen Rd, Everton Park QLD 4053, Australia"
+    },
+    "The Alligator Club, Fortitude Valley": {
+      "lat": -27.4578126,
+      "lng": 153.034829,
+      "label": "Warner Lane, 8 Warner St, Fortitude Valley QLD 4006, Australia"
+    },
     "The Back Room Brisbane, Annerley": {
       "lat": -27.518712,
       "lng": 153.029249,
       "label": "688 Ipswich Rd, Annerley QLD 4103, Australia"
+    },
+    "The Brightside, Fortitude Valley": {
+      "lat": -27.4570567,
+      "lng": 153.0351002,
+      "label": "27 Warner St, Fortitude Valley QLD 4006, Australia"
+    },
+    "The Cave Inn, 47 Balaclava St., Woolloongabba, QLD, 4102": {
+      "lat": -27.4905706,
+      "lng": 153.0384165,
+      "label": "47 Balaclava St, Woolloongabba QLD 4102, Australia"
     },
     "The Cave Inn, Woolloongabba": {
       "lat": -27.4905706,
@@ -642,15 +1211,41 @@
       "lng": 153.1320934,
       "label": "30 Esplanade Bulcock Beach, Caloundra QLD 4551, Australia"
     },
+    "The Fortitude Music Hall, Brisbane": {
+      "lat": -27.4577936,
+      "lng": 153.034627,
+      "label": "312-318 Brunswick St, Fortitude Valley QLD 4006, Australia"
+    },
     "The Junk Bar, Ashgrove": {
       "lat": -27.4452807,
       "lng": 152.9940196,
       "label": "Ashgrove QLD 4060, Australia"
     },
+    "The Line & Rail Artspace": {
+      "lat": -33.869454,
+      "lng": 151.2205063,
+      "label": "The Gunnery, Unit 43/51 Cowper Wharf Roadway, Woolloomooloo NSW 2011, Australia"
+    },
+    "The Mad Hatters Bookshop": {
+      "lat": -27.4543334,
+      "lng": 153.1858906,
+      "label": "Shop 3, Manly 7 Day Markets, 50 Cambridge Parade, Manly QLD 4179, Australia"
+    },
+    "The Maraboon Tavern, Emerald, Emerald": {
+      "lat": -23.5162582,
+      "lng": 148.1571807,
+      "label": "Corner Hospital Road &, Esmond St, Emerald QLD 4720, Australia"
+    },
     "The Plough Inn, South Brisbane": {
       "lat": -27.4783601,
       "lng": 153.0224917,
       "label": "29 Stanley St Plaza, South Brisbane QLD 4101, Australia"
+    },
+    "The Powerstation, Auckland": {
+      "lat": -36.8662425,
+      "lng": 174.7611804,
+      "label": "33 Mount Eden Road, Eden Terrace, Auckland 1023, New Zealand",
+      "foreign": true
     },
     "The Princess Theatre": {
       "lat": -37.8107288,
@@ -677,10 +1272,30 @@
       "lng": 153.0066624,
       "label": "186 Given Ter, Paddington QLD 4064, Australia"
     },
+    "The Timber Yard, Port Melbourne": {
+      "lat": -37.8331021,
+      "lng": 144.9214743,
+      "label": "351 Plummer St, Port Melbourne VIC 3207, Australia"
+    },
+    "The Tivoli, 52 Costin St": {
+      "lat": -27.4521218,
+      "lng": 153.0315037,
+      "label": "52 Costin St, Fortitude Valley QLD 4006, Australia"
+    },
     "The Tivoli, Fortitude Valley": {
       "lat": -27.4521218,
       "lng": 153.0315037,
       "label": "52 Costin St, Fortitude Valley QLD 4006, Australia"
+    },
+    "The Triffid": {
+      "lat": -27.4523211,
+      "lng": 153.0419127,
+      "label": "7/9 Stratton St, Newstead QLD 4006, Australia"
+    },
+    "The Triffid (Beer Garden)": {
+      "lat": -27.4523211,
+      "lng": 153.0419127,
+      "label": "7/9 Stratton St, Newstead QLD 4006, Australia"
     },
     "The Triffid, 7/9 Stratton Street, Newstead": {
       "lat": -27.4523211,
@@ -707,6 +1322,16 @@
       "lng": 153.0121618,
       "label": "125 Boundary St, West End QLD 4101, Australia"
     },
+    "Tony Gould Gallery, Grey St, South Bank": {
+      "lat": -27.4746838,
+      "lng": 153.019991,
+      "label": "Melbourne St, South Brisbane QLD 4101, Australia"
+    },
+    "Tony Gould Gallery, QPAC": {
+      "lat": -27.4746838,
+      "lng": 153.019991,
+      "label": "Melbourne St, South Brisbane QLD 4101, Australia"
+    },
     "Toowong Library": {
       "lat": -27.4855427,
       "lng": 152.993186,
@@ -721,6 +1346,11 @@
       "lat": -28.1686639,
       "lng": 153.5438528,
       "label": "2 Wharf St, Tweed Heads NSW 2485, Australia"
+    },
+    "UQ Art Museum, William St": {
+      "lat": -27.4965028,
+      "lng": 153.0119939,
+      "label": "James and Mary Emelia, Mayne Centre Building, University Dr, St Lucia QLD 4067, Australia"
     },
     "Various Brisbane trailheads": {
       "lat": -27.4704528,
@@ -741,6 +1371,17 @@
       "lat": -27.4791458,
       "lng": 153.0219405,
       "label": "South Bank, South Brisbane QLD, Australia"
+    },
+    "Vienna": {
+      "lat": 48.20806959999999,
+      "lng": 16.3713095,
+      "label": "Vienna, Austria",
+      "foreign": true
+    },
+    "Visible Ink, Fortitude Valley, Fortitude Valley": {
+      "lat": -27.4545351,
+      "lng": 153.0347197,
+      "label": "5 Green Square Cl, Fortitude Valley QLD 4006, Australia"
     },
     "Wallaby Hotel, Mudgeeraba": {
       "lat": -28.0770854,
@@ -791,6 +1432,11 @@
       "lat": -27.5198172,
       "lng": 153.0243239,
       "label": "Yeronga Memorial Park, Ipswich Rd, Yeronga QLD 4105, Australia"
+    },
+    "Zurich": {
+      "lat": -33.8390055,
+      "lng": 151.2097196,
+      "label": "118 Mount St, North Sydney NSW 2060, Australia"
     }
   }
 }

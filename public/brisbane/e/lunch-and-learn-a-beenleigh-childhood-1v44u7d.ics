@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lunch and Learn | A Beenleigh Childhood
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1v44u7d@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T120000
+DTEND;TZID=Australia/Brisbane:20260917T140000
+SUMMARY:Lunch and Learn | A Beenleigh Childhood
+DESCRIPTION:Lunch and Learn | A Beenleigh Childhood is a public lecture hel
+ d at The Line & Rail Artspace.
+LOCATION:The Line & Rail Artspace
+URL:https://www.loganarts.com.au/event/lunch-and-learn-a-beenleigh-childhoo
+ d/
+END:VEVENT
+END:VCALENDAR

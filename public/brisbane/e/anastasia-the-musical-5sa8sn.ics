@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ANASTASIA the Musical
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-5sa8sn@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T130000
+DTEND;TZID=Australia/Brisbane:20260916T150000
+SUMMARY:ANASTASIA the Musical
+DESCRIPTION:ANASTASIA the Broadway Musical\, the romantic and adventure-fil
+ led hit musical inspired by the beloved film\, is coming to Brisbane.
+LOCATION:Lyric Theatre\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/anastasia-the-musical/
+END:VEVENT
+END:VCALENDAR

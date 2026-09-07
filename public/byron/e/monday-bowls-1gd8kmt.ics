@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Monday Bowls
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1gd8kmt@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T120000
+DTEND;TZID=Australia/Brisbane:20260914T180000
+SUMMARY:Monday Bowls
+DESCRIPTION:Monday Bowls is a community event held at Ocean Shores Country 
+ Club.
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/monday-bowls/2026-09-14/
+END:VEVENT
+END:VCALENDAR

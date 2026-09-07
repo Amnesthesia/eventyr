@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Are You Lonesome Tonight
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-w2gw56@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T140000
+DTEND;TZID=Australia/Brisbane:20260911T150000
+SUMMARY:Are You Lonesome Tonight
+DESCRIPTION:An afternoon performance by Opera Queensland\, offering a refle
+ ctive and intimate musical experience within a historic-style tent structu
+ re.
+LOCATION:Magic Mirrors Spiegeltent\, South Bank
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

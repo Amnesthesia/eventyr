@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Trivia Tuesdays
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1q6y8vl@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T183000
+DTEND;TZID=Australia/Brisbane:20260908T203000
+SUMMARY:Trivia Tuesdays
+DESCRIPTION:Every Tuesday Free Entry Register 6.15pm Play 6.30pm Venue: Spo
+ rts Lounge MC: Sean C Alternating with Mitch Prizes: 1st: $100 RSL Gift Ca
+ rd 2nd: $50 RSL Gift Card 3rd $25 RSL Gift Card Bonus Round: $10 Gift Card
+  Head’s or Tails: $10 Gift Card Rules: No Electronic Devices: Use of mob
+ ile phones or other electronic […]
+LOCATION:Level One\, 1 Grant St\, Ballina
+URL:https://ballinarsl.com.au/event/trivia-tuesdays/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BEAT THE BOOKSELLER TRIVIA
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-t6qjlz@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T183000
+DTEND;TZID=Australia/Brisbane:20260914T203000
+SUMMARY:BEAT THE BOOKSELLER TRIVIA
+DESCRIPTION:Beat the Bookseller Trivia is a social meetup held at Riverbend
+  Books.
+LOCATION:Riverbend Books
+URL:https://riverbendbooks.com.au/events/beat-the-bookseller-trivia-monday-
+ september-14th-630pm-at-riverbend-books
+END:VEVENT
+END:VCALENDAR

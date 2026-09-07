@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Stop Making Sense
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1gtl5pq@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Stop Making Sense
+DESCRIPTION:Stop Making Sense is a concert or music event held at Nimbin Bu
+ sh Theatre.
+LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
+URL:https://nimbinbushtheatre.com/events/stop-making-sense/
+END:VEVENT
+END:VCALENDAR

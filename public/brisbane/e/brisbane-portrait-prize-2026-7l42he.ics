@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Portrait Prize 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7l42he@dothings
+DTSTART;TZID=Australia/Brisbane:20260901T100000
+DTEND;TZID=Australia/Brisbane:20260919T170000
+SUMMARY:Brisbane Portrait Prize 2026
+DESCRIPTION:An exhibition showcasing portraiture entries celebrating the pe
+ ople and culture of Brisbane\, offering a deep dive into local identity an
+ d artistic talent.
+LOCATION:State Library of Queensland\, South Brisbane
+URL:https://www.slq.qld.gov.au/discover/exhibitions
+END:VEVENT
+END:VCALENDAR

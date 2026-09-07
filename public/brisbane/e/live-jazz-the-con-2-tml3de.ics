@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Live Jazz @ the Con #2
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-tml3de@dothings
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260911
+SUMMARY:Live Jazz @ the Con #2
+DESCRIPTION:The Jazz Department presents a vibrant showcase of student tale
+ nt\, featuring a diverse program of ensembles and performances.
+LOCATION:Ian Hanger Recital Hall\, Queensland Conservatorium Griffith Unive
+ rsity
+URL:https://www.qtix.com.au/whats-on/2026/qcgu-live-jazz-at-the-con-2/
+END:VEVENT
+END:VCALENDAR

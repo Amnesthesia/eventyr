@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-14tj3d6@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T111500
+DTEND;TZID=Australia/Brisbane:20260907T121500
+SUMMARY:Yoga
+DESCRIPTION:Booking essential. Focus on a range of movements to relax the m
+ ind and body. Stretching\, breathing\, strength and balance exercises are 
+ included by incorporating standing poses and mat work into the session. Th
+ is is a GOLD event suitable for seniors.
+LOCATION:Sherwood Neighbourhood Centre\, Sherwood
+URL:https://www.brisbaneunlocked.com.au/yoga-2026-09-07-3
+END:VEVENT
+END:VCALENDAR
