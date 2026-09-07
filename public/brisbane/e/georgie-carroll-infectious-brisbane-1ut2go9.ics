@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Georgie Carroll - Infectious - Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ut2go9@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T193000
+DTEND;TZID=Australia/Brisbane:20260918T213000
+SUMMARY:Georgie Carroll - Infectious - Brisbane
+DESCRIPTION:
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/georgie-carroll---infectious--
+ -brisbane
+END:VEVENT
+END:VCALENDAR

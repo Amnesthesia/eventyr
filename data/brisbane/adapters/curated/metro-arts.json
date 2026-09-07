@@ -7,7 +7,7 @@
   "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Workshop Scene Roulette",
+      "title": "Scene Roulette",
       "datetime": "Fri 11 Sep – Fri 25 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-25",
@@ -21,7 +21,6 @@
       "tags": [
         "acting",
         "theatre",
-        "community",
         "networking"
       ],
       "social": true,
@@ -60,13 +59,13 @@
       "link": "https://metroarts.com.au/workshop/insight-ritual-performance-and-artists-talk/",
       "cost": "See link",
       "source": "Metro Arts",
-      "description": "Developed from Dias Mendis’ performance research into Sri Lankan traditions.",
+      "description": "Part of NIGHT MOVES, this public program accompanies (In)Sight , a collaborative exhibition by Kuweni Dias Mendis and Grant x Wilkes exploring what it means to see and be seen. Within the exhibition, light, reflection and image unsettle perception.",
       "image": "",
       "category": "Public Lecture",
       "tags": [
+        "art",
         "performance",
-        "research",
-        "culture"
+        "talk"
       ],
       "social": false,
       "intellectual": true,
@@ -82,13 +81,13 @@
       "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
       "cost": "See link",
       "source": "Metro Arts",
-      "description": "A hum in the dark.",
+      "description": "Featuring work by Dean Ansell, Cicadas (Maria Molina & Celeste Ricci), CAConrad, Léuli Eshrāghi, Mikhail Karikis, Jazz Money, Tina Stefanou.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
         "performance",
-        "experimental",
-        "art"
+        "exhibition"
       ],
       "social": false,
       "intellectual": false,
@@ -104,17 +103,17 @@
       "link": "https://metroarts.com.au/exhibition/insight/",
       "cost": "See link",
       "source": "Metro Arts",
-      "description": "Step into the shadows.",
+      "description": "Interactive sensory experience, testing what it means to see and be seen.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "performance",
         "art",
-        "shadows"
+        "interactive",
+        "sensory"
       ],
       "social": false,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -170,13 +169,13 @@
       "link": "https://metroarts.com.au/workshop/insight-ritual-performance-and-artists-talk/",
       "cost": "See link",
       "source": "Metro Arts",
-      "description": "Developed from Dias Mendis’ performance research into Sri Lankan traditions.",
+      "description": "Part of NIGHT MOVES, this public program accompanies (In)Sight , a collaborative exhibition by Kuweni Dias Mendis and Grant x Wilkes exploring what it means to see and be seen. Within the exhibition, light, reflection and image unsettle perception.",
       "image": "",
       "category": "Public Lecture",
       "tags": [
+        "art",
         "performance",
-        "research",
-        "culture"
+        "talk"
       ],
       "social": false,
       "intellectual": true,
@@ -207,6 +206,28 @@
       "creative": true
     },
     {
+      "title": "Choral Cthonics",
+      "datetime": "Thu 27 Aug – Sat 26 Sep",
+      "datetime_iso": "2026-08-27",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "Featuring work by Dean Ansell, Cicadas (Maria Molina & Celeste Ricci), CAConrad, Léuli Eshrāghi, Mikhail Karikis, Jazz Money, Tina Stefanou.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "performance",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Kuweni Dias Mendis & Grant x Wilkes: (In)Sight",
       "datetime": "Thu 27 Aug – Sat 26 Sep",
       "datetime_iso": "2026-08-27",
@@ -215,40 +236,17 @@
       "link": "https://metroarts.com.au/exhibition/insight/",
       "cost": "See link",
       "source": "Metro Arts",
-      "description": "Step into the shadows.",
+      "description": "Interactive sensory experience, testing what it means to see and be seen.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "performance",
         "art",
-        "shadows"
+        "interactive",
+        "sensory"
       ],
       "social": false,
       "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "CHORAL CTHONICS",
-      "datetime": "Thu 27 Aug – Sat 26 Sep",
-      "datetime_iso": "2026-08-27",
-      "datetime_end_iso": "2026-09-26",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "A hum in the dark.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "performance",
-        "experimental",
-        "sound",
-        "art"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -274,6 +272,28 @@
       "creative": true
     },
     {
+      "title": "The Scramble",
+      "datetime": "Wed 16 Sep, 7:30 PM – Sat 19 Sep",
+      "datetime_iso": "2026-09-16T19:30:00",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Metro Arts, Brisbane City",
+      "link": "https://metroarts.com.au/event/the-scramble/",
+      "cost": "See link",
+      "source": "Metro Arts",
+      "description": "A collision between wrestling and dance.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "dance",
+        "wrestling",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "(In)Sight: Ritual Performance and Artists’ Talk",
       "datetime": "Sat 19 Sep",
       "datetime_iso": "2026-09-19",
@@ -282,13 +302,13 @@
       "link": "https://metroarts.com.au/workshop/insight-ritual-performance-and-artists-talk/",
       "cost": "See link",
       "source": "Metro Arts",
-      "description": "Developed from Dias Mendis’ performance research into Sri Lankan traditions.",
+      "description": "Part of NIGHT MOVES, this public program accompanies (In)Sight , a collaborative exhibition by Kuweni Dias Mendis and Grant x Wilkes exploring what it means to see and be seen. Within the exhibition, light, reflection and image unsettle perception.",
       "image": "",
       "category": "Public Lecture",
       "tags": [
+        "art",
         "performance",
-        "research",
-        "culture"
+        "talk"
       ],
       "social": false,
       "intellectual": true,

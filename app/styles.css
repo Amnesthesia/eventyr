@@ -31,6 +31,27 @@
 	--surface: #fff;
 	--mono: "SFMono-Regular", "Consolas", "Liberation Mono", monospace;
 
+	/* Type scale. Four small steps and three large, on a 15px base. The floor
+	   is 11px: the old smallest tier (0.67rem) was 10px, worn by every tag,
+	   score and filter pill — the controls a thumb has to hit and an eye has to
+	   read most often. Nothing goes below --t-2xs. */
+	--t-2xs: 0.733rem; /* 11px */
+	--t-xs: 0.8rem; /* 12px */
+	--t-sm: 0.867rem; /* 13px */
+	--t-md: 1.067rem; /* 16px */
+	--t-lg: 1.2rem; /* 18px */
+	--t-xl: 1.467rem; /* 22px */
+
+	/* 4px spacing scale. Used by the layout rules below; older ad-hoc rem gaps
+	   are migrated as rules are touched rather than in one sweep. */
+	--s1: 4px;
+	--s2: 8px;
+	--s3: 12px;
+	--s4: 16px;
+	--s5: 20px;
+	--s6: 24px;
+	--s8: 32px;
+
 	--pico-background-color: var(--bg);
 	--pico-color: var(--fg);
 	--pico-muted-color: var(--muted);
@@ -162,9 +183,89 @@
 	--pico-h3-color: var(--fg);
 }
 
+/* ── Base text and interaction ── */
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+	text-wrap: balance;
+}
+
+/* One focus indicator for the whole site. Pico draws focus as a box-shadow on
+   buttons, and most controls here reset box-shadow to none to kill Pico's
+   button chrome — which silently deleted the focus ring on every icon button,
+   tag and pill. An outline is independent of box-shadow, so no reset can
+   remove it. :is() puts this at (0,2,0), above Pico's own `outline: none` on
+   bare elements. Solid --fg, not the 10%-alpha --pico-primary-focus, because a
+   focus indicator has to clear 3:1 against whatever it sits on. */
+:is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+	outline: 2px solid var(--fg);
+	outline-offset: 2px;
+}
+
+/* Press feedback on the small square controls. Hover states are gated to a
+   real pointer so a touch does not leave a card stuck in its hover state. */
+:is(.filter-btn, .tag-btn, .tag-vibe, .star-btn, .icon-btn, .theme-btn):active {
+	transform: scale(0.96);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+/* Thumb-sized on touch. 24px is the WCAG 2.2 AA floor and the desktop density
+   the power user wants; a phone gets 28px without changing the type. */
+@media (pointer: coarse) {
+	.filter-btn,
+	.tag,
+	.tag-btn,
+	.card-score,
+	.theme-btn {
+		height: 28px;
+		min-height: 28px;
+	}
+	.card-score {
+		width: 28px;
+	}
+}
+
+/* Hidden until focused: the first Tab on the page lands here. */
+.skip-link {
+	position: absolute;
+	top: var(--s2);
+	left: var(--s2);
+	z-index: 3000;
+	padding: var(--s2) var(--s3);
+	background: var(--fg);
+	color: var(--bg);
+	font-family: var(--mono);
+	font-size: var(--t-xs);
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+	transform: translateY(-200%);
+}
+
+.skip-link:focus-visible {
+	transform: none;
+	outline-color: var(--bg);
+	outline-offset: -4px;
+}
+
 /* ── Layout ── */
 main {
-	padding: 12px;
+	padding: var(--s3);
 }
 
 /* ── Site header ── */
@@ -203,7 +304,7 @@ header {
 }
 
 .header-meta {
-	font-size: 0.8rem;
+	font-size: var(--t-xs);
 	color: var(--muted);
 	margin: 0;
 }
@@ -216,6 +317,11 @@ header {
 	gap: 0.35rem;
 	padding: 0 0.4rem;
 	height: 1.6rem;
+	/* Both a flex item (in .header-controls) and, below 640px, a grid item —
+	   both layout modes default an item's own minimum size to its content's,
+	   which blocked this from shrinking below the search input's own natural
+	   width and overflowed the header row by the difference. */
+	min-width: 0;
 	box-sizing: border-box;
 	/* Clips rather than grows. Pico's own input height is ~3rem, and until our
 	   rules apply — which in `pnpm dev` is after first paint, because Vite
@@ -229,9 +335,13 @@ header {
 	background: var(--bg);
 }
 
+/* The ring goes on the bar, not the input inside it: the input has no box of
+   its own to outline, so it is exempted from the global rule below. */
 .search-bar:focus-within {
 	border-color: var(--fg);
 	color: var(--fg);
+	outline: 2px solid var(--fg);
+	outline-offset: 2px;
 }
 
 /* Two classes deep on purpose. Pico sets `padding`, `margin-bottom` and a
@@ -242,7 +352,7 @@ header {
    Do not flatten this back to `.search-input`. */
 .search-bar .search-input {
 	font: inherit;
-	font-size: 0.75rem;
+	font-size: var(--t-xs);
 	width: 11rem;
 	max-width: 32vw;
 	/* 100%, not a pixel value: the bar is 1.6rem border-box, so a hardcoded
@@ -267,7 +377,7 @@ header {
 
 .search-count {
 	font-family: var(--mono);
-	font-size: 0.65rem;
+	font-size: var(--t-2xs);
 	color: var(--muted);
 	flex-shrink: 0;
 }
@@ -356,9 +466,13 @@ header {
 
 .city-select {
 	width: auto;
-	max-width: 250px;
+	min-width: 0;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	font-family: var(--mono);
-	font-size: 0.72rem;
+	font-size: var(--t-2xs);
 	font-weight: 600;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
@@ -368,10 +482,46 @@ header {
 	padding: 0.18rem 0.5rem;
 	cursor: pointer;
 	border-radius: 0;
-	outline: none;
 	height: auto;
 	box-shadow: none;
 	margin-bottom: 0px;
+}
+
+.header-icons {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+/* Below 640px, .header-controls switches from flex to grid: a flex item's
+   flex-basis: 100% asks for "all of the line", but the line's own width at
+   that point is still being resolved against the row's other items, and at
+   phone widths that circularity was landing header-icons off the edge of the
+   viewport instead of on its own line. A grid says outright which row each
+   child is on — search and the city select share the first, the icon cluster
+   owns the second and spans both columns — so there's no line-width guess
+   left for the browser to get wrong. */
+@media (max-width: 640px) {
+	.header-controls {
+		display: grid;
+		/* minmax(0, 1fr), not a bare 1fr: a grid track's automatic minimum is
+		   its content's natural size, so a bare 1fr still refused to shrink the
+		   search field below its own min-content width and overflowed the
+		   viewport by exactly that much — the grid-level version of the same
+		   min-width:auto trap flex items have. */
+		/* The select's column also needs an explicit shrinkable max: a plain
+		   `auto` track is inflexible next to a 1fr one, so the browser drained
+		   the search field toward zero before ever conceding an inch from the
+		   select, and the two together still ran past the viewport. */
+		grid-template-columns: minmax(0, 1fr) minmax(0, 45%);
+		align-items: center;
+		column-gap: 0.4rem;
+		row-gap: 0.4rem;
+	}
+	.header-icons {
+		grid-column: 1 / -1;
+		justify-content: flex-end;
+	}
 }
 
 .city-select:hover {
@@ -395,41 +545,48 @@ header {
 	margin-top: 0.5rem;
 }
 
+/* The day heading is the main anchor when scanning a 280-event week, so it is
+   the largest type on the list page — larger than the card titles under it,
+   which it used to be smaller than. */
 .group-label {
 	display: flex;
 	align-items: baseline;
-	gap: 0.5rem;
-	font-size: 0.78rem;
-	font-weight: 600;
-	letter-spacing: 0.04em;
+	gap: var(--s2);
+	font-size: var(--t-lg);
+	font-weight: 700;
+	letter-spacing: -0.01em;
 	/* Inherits the category accent when grouping by category, and --cat falls
 	   back to --muted, so the by-date headings stay monochrome. */
 	color: var(--cat);
 	margin: 0;
-	padding: 1.4rem 0 0.5rem;
+	padding: var(--s8) 0 var(--s2);
 	border-bottom: 1px solid var(--border);
-	margin-bottom: 0.9rem;
+	margin-bottom: var(--s3);
+}
+
+/* By-date headings are --fg, not --muted: --cat's fallback is --muted, which
+   is right for a coloured-axis fallback but wrong for the page's primary
+   heading. Category grouping still colours them. */
+.group-label:not([data-cat]),
+.group-label[data-cat=""] {
+	color: var(--fg);
 }
 
 .group-count {
 	font-family: var(--mono);
-	font-size: 0.67rem;
+	font-size: var(--t-2xs);
 	font-weight: 400;
+	font-variant-numeric: tabular-nums;
 	color: var(--muted);
 }
 
-.filter-label {
-	font-size: 0.68rem;
-	font-weight: 600;
-	letter-spacing: 0.12em;
-	text-transform: uppercase;
-	color: var(--muted);
-	align-self: center;
-	margin-right: 0.15rem;
+.header-meta,
+.search-count {
+	font-variant-numeric: tabular-nums;
 }
 
 .section-label {
-	font-size: 0.68rem;
+	font-size: var(--t-2xs);
 	font-weight: 600;
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
@@ -438,18 +595,26 @@ header {
 }
 
 /* ── City intro (SEO paragraph) ── */
+.city-intro-wrap {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--s3);
+	padding: var(--s2) 0;
+}
+
 .city-intro {
-	font-size: 0.8rem;
+	font-size: var(--t-xs);
 	color: var(--muted);
 	line-height: 1.65;
 	margin: 0;
-	cursor: pointer;
+	max-width: 90ch;
+	text-wrap: pretty;
 }
 
 /* Set by the blocking inline script in Base.astro's head, so a returning
    visitor never sees this paint at all. The element stays in the HTML — it is
    only hidden — which is deliberate: see the note in Intro.tsx. */
-.intro-hidden .city-intro {
+.intro-hidden .city-intro-wrap {
 	display: none;
 }
 
@@ -506,18 +671,70 @@ header {
 	flex-wrap: wrap;
 }
 
+/* Takes whatever the date controls leave and scrolls inside it. The old fixed
+   `calc(100% - 280px)` squeezed the row to a few pills between 640 and 900px. */
 .filters--cat {
-	max-width: calc(100% - 280px);
+	flex: 1 1 auto;
+	min-width: 0;
 }
 
-@media (max-width: 640px) {
-	.filters--cat {
-		max-width: 100%;
+/* The primary row — dates and categories — stays put while 400 cards scroll
+   past; the vibe and grouping rows below it do not. It sits as a direct child
+   of <main> (not inside .filter-bar-wrapper) because sticky only holds while
+   its parent is on screen, and <main> is the whole page. The negative margin
+   lets its background cover main's side padding so cards never peek past it. */
+.filter-bar--cats {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background: var(--bg);
+	margin: 0 calc(-1 * var(--s3));
+	padding: var(--s2) var(--s3);
+	border-bottom: 1px solid var(--border);
+}
+
+/* Secondary filters collapse behind one button on a phone, where three rows
+   of pills pushed the first event below the fold. A plain state-driven
+   .open class, not <details>/<summary>: Chromium hides a closed <details>'s
+   content through an internal not-rendered state rather than a plain
+   `display: none` UA rule, and unlike older engines that cannot be overridden
+   by author CSS — so "always open above 900px, closed below it" had no
+   CSS-only way to express with a real <details>. */
+.filters-more-toggle {
+	display: none;
+	cursor: pointer;
+}
+
+.filters-more {
+	display: none;
+	flex-direction: column;
+	/* The vibe row and the grouping/tools row read as one blended row at the
+	   old var(--s2): they are two different kinds of filter and want a beat
+	   of space between them, not just the row's own internal item gap. */
+	gap: var(--s4);
+}
+
+.filters-more.open {
+	display: flex;
+}
+
+@media (max-width: 899px) {
+	.filters-more-toggle {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--s1);
+		width: fit-content;
+	}
+}
+
+@media (min-width: 900px) {
+	.filters-more {
+		display: flex;
 	}
 }
 
 .filter-btn {
-	font-size: 0.7rem;
+	font-size: var(--t-2xs);
 	font-weight: 500;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
@@ -550,19 +767,11 @@ header {
 	color: var(--bg);
 }
 
-.filter-sep {
-	width: 1px;
-	height: 1.2em;
-	background: var(--border);
-	align-self: center;
-	flex-shrink: 0;
-}
-
 .filter-toggle {
 	display: flex;
 	align-items: center;
 	gap: 0.35rem;
-	font-size: 0.7rem;
+	font-size: var(--t-2xs);
 	font-weight: 500;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
@@ -621,8 +830,48 @@ article.card > footer {
 	background: none;
 }
 
+/* 0.65, not the old 0.45: at 0.45 the muted meta text fell to ~2.5:1. The
+   "past" chip in the date row says what the dimming means. */
 article.card.event-past {
-	opacity: 0.45;
+	opacity: 0.65;
+}
+
+.card-past {
+	display: inline-flex;
+	align-items: center;
+	height: 18px;
+	padding: 0 var(--s1);
+	margin-left: var(--s1);
+	border: 1px solid var(--border);
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	line-height: 1;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--muted);
+}
+
+/* Hover states only where a hover exists. A touch must not leave a card stuck
+   in its hover state, and on touch the calendar/share buttons stay visible
+   because there is no hover to reveal them. */
+@media (hover: hover) and (pointer: fine) {
+	article.card:hover {
+		border-color: var(--fg);
+	}
+
+	/* Calendar and share on every one of 450 cards is chrome, not content. They
+	   appear when the card is the one being read (hover or focus inside it);
+	   the bookmark and the cost pill stay, being the two things scanned for. */
+	.card-top-right .icon-btn {
+		opacity: 0;
+		transition: opacity 0.12s;
+	}
+
+	article.card:hover .card-top-right .icon-btn,
+	article.card:focus-within .card-top-right .icon-btn,
+	.card-top-right .icon-btn[aria-expanded="true"] {
+		opacity: 1;
+	}
 }
 
 /* Category accent: one inset rule, on the top edge.
@@ -721,10 +970,10 @@ article.card.has-image > * {
 	transition: opacity 0.12s;
 }
 
+/* Colour, not opacity: the hover-reveal above owns this element's opacity. */
 .icon-btn:hover {
-	color: var(--cat);
+	color: var(--fg);
 	background: transparent;
-	opacity: 0.65;
 }
 
 .star-btn:hover {
@@ -740,18 +989,24 @@ article.card.has-image > * {
 	fill: currentColor;
 }
 
+/* Set like the category pill in the filter bar — same mono, same tracking,
+   same case — so the label on the card and the control that filters by it read
+   as one object. */
 .card-cat {
 	display: flex;
 	align-items: center;
-	gap: 0.3rem;
-	font-size: 0.72rem;
+	gap: var(--s1);
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
 	font-weight: 500;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 	/* Icon inherits this via currentColor. */
 	color: var(--cat);
 	text-decoration: none;
 }
 .card-cat:hover {
-	color: var(--color);
+	color: var(--fg);
 }
 
 .card-cat svg {
@@ -763,7 +1018,7 @@ article.card.has-image > * {
 
 .card-cost {
 	font-family: var(--mono);
-	font-size: 0.68rem;
+	font-size: var(--t-2xs);
 	font-weight: 600;
 	padding: 0.1rem 0.45rem;
 	border: 1px solid var(--border);
@@ -784,8 +1039,10 @@ article.card.has-image > * {
 }
 
 /* ── Card title ── */
+/* 16px against 12px meta and 11px labels: the old 0.95rem sat 2px above the
+   body text and the card had no lead. */
 .card-title {
-	font-size: 0.95rem;
+	font-size: var(--t-md);
 	font-weight: 700;
 	line-height: 1.3;
 	letter-spacing: -0.02em;
@@ -824,10 +1081,16 @@ article.card.has-image > * {
 .meta-row {
 	display: flex;
 	align-items: flex-start;
-	gap: 0.35rem;
-	font-size: 0.78rem;
+	gap: var(--s1);
+	font-size: var(--t-xs);
 	color: var(--muted);
 	line-height: 1.4;
+}
+
+/* When decides whether to go; where only decides how. The date row is full
+   foreground, the location stays muted. */
+.meta-row:first-child {
+	color: var(--fg);
 }
 
 .meta-row svg {
@@ -860,9 +1123,11 @@ article.card.has-image > * {
 }
 
 /* ── Description ── */
+/* Small margins: the card already has a 0.65rem gap between blocks, and the old
+   1rem on top of it left a two-sentence description floating in a hole. */
 .card-desc-details,
 .card-desc--plain {
-	margin: 1rem 0;
+	margin: var(--s1) 0;
 	flex-grow: 1;
 }
 
@@ -877,17 +1142,13 @@ article.card.has-image > * {
 	display: none;
 }
 
-.card-desc-details summary:focus-visible {
-	outline: none;
-	box-shadow: 0 0 0 2px var(--fg);
-}
-
 .card-desc {
 	display: block;
-	font-size: 0.8rem;
+	font-size: var(--t-xs);
 	color: var(--muted);
 	line-height: 1.55;
 	margin: 0;
+	text-wrap: pretty;
 }
 
 /* Five lines, then cut. Sources started returning full event blurbs and a
@@ -905,7 +1166,7 @@ article.card.has-image > * {
 .card-desc-toggle {
 	display: inline-block;
 	margin-top: 0.35rem;
-	font-size: 0.72rem;
+	font-size: var(--t-2xs);
 	font-weight: 500;
 	color: var(--fg);
 	text-decoration: underline;
@@ -969,6 +1230,13 @@ summary:hover .card-desc-toggle {
 	/* Without this a flex item refuses to shrink below its content, which is
 	   what let a long tag row push the card wider than its grid column. */
 	min-width: 0;
+	/* Pins the score/tags row to the card's bottom edge on its own — the
+	   flex-grow on .card-desc-details/.card-desc--plain only does that when a
+	   description actually renders. An event with none (Wednesday Night Comedy
+	   at Good Chat Comedy Club, e.g.) skips both, so there was no spacer left
+	   to push this row down and it floated up under the location line instead,
+	   on a card the grid still stretched to match its taller row-mates. */
+	margin-top: auto;
 }
 
 /* One line that scrolls, rather than wrapping to three and making this card
@@ -983,17 +1251,27 @@ summary:hover .card-desc-toggle {
 	/* Keeps a swipe over the tags from scrolling the page behind it. */
 	overscroll-behavior-x: contain;
 	scrollbar-width: thin;
-	scrollbar-color: var(--border) transparent;
 	align-items: center;
 	/* Symmetric on purpose. Reserving scrollbar space only at the bottom made
 	   the row's box taller below its chips, and since .card-bottom centres the
 	   boxes rather than their contents, the score sat visibly lower than the
 	   tags beside it. */
 	padding: 2px 0;
+	/* Fades the last 24px so a clipped chip reads as "more, scroll for it"
+	   rather than looking cut off. Harmless when nothing overflows — the fade
+	   sits past the content, over the row's own background. */
+	mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent);
+	-webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent);
 }
 
 .card-tags > * {
 	flex-shrink: 0;
+}
+
+/* The scrollbar is the only cue that chips are clipped, so it is drawn in
+   --muted rather than --border, which vanished on the card surface. */
+.card-tags {
+	scrollbar-color: var(--muted) transparent;
 }
 
 .card-tags::-webkit-scrollbar {
@@ -1001,7 +1279,7 @@ summary:hover .card-desc-toggle {
 }
 
 .card-tags::-webkit-scrollbar-thumb {
-	background: var(--border);
+	background: var(--muted);
 }
 
 .card-tags button {
@@ -1016,7 +1294,7 @@ summary:hover .card-desc-toggle {
 	height: 24px;
 	white-space: nowrap;
 	font-family: var(--mono);
-	font-size: 0.67rem;
+	font-size: var(--t-2xs);
 	line-height: 1;
 	padding: 0 0.42rem;
 	border: 1px solid var(--border);
@@ -1062,7 +1340,7 @@ summary:hover .card-desc-toggle {
 	height: 24px;
 	box-sizing: border-box;
 	font-family: var(--mono);
-	font-size: 0.67rem;
+	font-size: var(--t-2xs);
 	font-variant-numeric: tabular-nums;
 	font-weight: 600;
 	background: transparent;
@@ -1085,13 +1363,29 @@ summary:hover .card-desc-toggle {
 
 .state h2 {
 	color: var(--fg);
-	font-size: 0.95rem;
+	font-size: var(--t-md);
 	font-weight: 600;
-	margin-bottom: 0.4rem;
+	margin-bottom: var(--s1);
 }
 
 .state p {
-	font-size: 0.85rem;
+	font-size: var(--t-sm);
+	max-width: 44ch;
+	margin: 0 auto var(--s4);
+	text-wrap: pretty;
+}
+
+/* One muted sentence under a section label — the score legend under "picks". */
+.section-note {
+	margin: calc(-1 * var(--s1)) 0 var(--s3);
+	font-size: var(--t-xs);
+	color: var(--muted);
+}
+
+.section-note .card-score {
+	vertical-align: middle;
+	margin: 0 var(--s1);
+	--cat: var(--muted);
 }
 
 /* ── Clickable tags ── */
@@ -1103,7 +1397,7 @@ summary:hover .card-desc-toggle {
 	cursor: pointer;
 	background: transparent;
 	font-family: var(--mono);
-	font-size: 0.67rem;
+	font-size: var(--t-2xs);
 	padding: 0.1rem 0.42rem;
 	border: 1px solid var(--border);
 	color: var(--muted);
@@ -1155,7 +1449,7 @@ summary:hover .card-desc-toggle {
 
 .active-tags-label {
 	font-family: var(--mono);
-	font-size: 0.65rem;
+	font-size: var(--t-2xs);
 	font-weight: 600;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
@@ -1170,7 +1464,7 @@ summary:hover .card-desc-toggle {
 	min-height: 24px;
 	gap: 0.25rem;
 	font-family: var(--mono);
-	font-size: 0.67rem;
+	font-size: var(--t-2xs);
 	padding: 0.1rem 0.42rem;
 	border: 1px solid var(--fg);
 	background: var(--fg);
@@ -1231,7 +1525,7 @@ summary:hover .card-desc-toggle {
 	display: flex;
 	flex-direction: column;
 	gap: 0.25rem;
-	font-size: 0.72rem;
+	font-size: var(--t-2xs);
 	text-transform: uppercase;
 	letter-spacing: 0.06em;
 	color: var(--muted);
@@ -1239,7 +1533,7 @@ summary:hover .card-desc-toggle {
 
 .date-picker-field input {
 	font: inherit;
-	font-size: 0.85rem;
+	font-size: var(--t-sm);
 	font-family: var(--mono);
 	text-transform: none;
 	letter-spacing: normal;
@@ -1250,11 +1544,6 @@ summary:hover .card-desc-toggle {
 	padding: 0.35rem 0.4rem;
 	margin: 0;
 	box-shadow: none;
-}
-
-.date-picker-field input:focus-visible {
-	outline: none;
-	box-shadow: 0 0 0 2px var(--fg);
 }
 
 /* The indicator is the whole affordance on this control, so make it look like
@@ -1294,7 +1583,8 @@ summary:hover .card-desc-toggle {
 	}
 }
 
-/*
+/* Four city pills wrapped to a second header line on a phone; one select
+   holds them in the space of a single pill. */
 @media (max-width: 640px) {
 	.city-nav {
 		display: none;
@@ -1304,7 +1594,6 @@ summary:hover .card-desc-toggle {
 		display: block;
 	}
 }
-	*/
 
 @media (max-width: 640px) {
 	.filter-bar--cats {
@@ -1322,6 +1611,48 @@ summary:hover .card-desc-toggle {
 		align-items: flex-start;
 		gap: 0.4rem;
 	}
+}
+
+/* ── Native <dialog> resets ──
+   The three overlays (action sheet, saved calendar, swipe deck) are <dialog>
+   elements opened with showModal(): that is what gives them a focus trap,
+   Escape, focus restore and the top layer for free — the hand-rolled versions
+   had aria-modal but let Tab walk the page behind them. The UA styles a dialog
+   as a centred bordered box; these undo that so the existing full-screen
+   backdrop classes keep working unchanged. */
+dialog.sheet-backdrop,
+dialog.swipe-backdrop {
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	max-height: none;
+	margin: 0;
+	border: 0;
+	background: transparent;
+	color: inherit;
+	overflow: hidden;
+}
+
+dialog.sheet-backdrop {
+	padding: 0;
+}
+
+/* The scrim button inside the dialog carries the tint, so the UA backdrop
+   must not double it. */
+dialog::backdrop {
+	background: transparent;
+}
+
+/* Our classes set display:flex, which would beat the UA's display:none for a
+   closed dialog. Nothing renders a closed one for longer than the frame
+   between mount and showModal(), but that frame must not flash. */
+dialog:not([open]) {
+	display: none;
+}
+
+/* Replaces three copies of document.body.style.overflow = "hidden". */
+body:has(dialog[open]) {
+	overflow: hidden;
 }
 
 /* ── Long-press action sheet (mobile) ──
@@ -1383,8 +1714,7 @@ summary:hover .card-desc-toggle {
 .sheet-title {
 	margin: 0;
 	padding: 0.9rem 1rem 0.6rem;
-	font-size: 0.78rem
-	;
+	font-size: var(--t-xs);
 	font-weight: 600;
 	color: var(--muted);
 	border-bottom: 1px solid var(--border);
@@ -1409,7 +1739,7 @@ summary:hover .card-desc-toggle {
 	box-shadow: none;
 	background: transparent;
 	color: var(--fg);
-	font-size: 0.88rem;
+	font-size: var(--t-sm);
 	font-weight: 500;
 	text-align: left;
 	justify-content: flex-start;
@@ -1459,7 +1789,7 @@ a.sheet-action {
 	display: flex;
 	align-items: center;
 	gap: 0.4rem;
-	font-size: 0.72rem;
+	font-size: var(--t-2xs);
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 	color: var(--muted);
@@ -1510,11 +1840,11 @@ a.sheet-action {
 	grid-template-columns: max-content 1fr;
 	gap: 0.4rem 1rem;
 	margin: 0 0 1.5rem;
-	font-size: 0.85rem;
+	font-size: var(--t-sm);
 }
 
 .event-facts dt {
-	font-size: 0.68rem;
+	font-size: var(--t-2xs);
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: var(--muted);
@@ -1572,7 +1902,7 @@ a.sheet-action {
 	padding: 0 0.6rem;
 	margin: 0;
 	line-height: 1;
-	font-size: 0.75rem;
+	font-size: var(--t-xs);
 	width: auto;
 	text-decoration: none;
 	vertical-align: middle;
@@ -1585,7 +1915,7 @@ a.sheet-action {
 
 .event-back {
 	margin: 1.25rem 0 0;
-	font-size: 0.8rem;
+	font-size: var(--t-xs);
 }
 
 .event-back a {
@@ -1630,12 +1960,12 @@ a.sheet-action {
 }
 
 .faq summary {
-	font-size: 0.85rem;
+	font-size: var(--t-sm);
 	cursor: pointer;
 }
 
 .faq p {
-	font-size: 0.8rem;
+	font-size: var(--t-xs);
 	color: var(--muted);
 	margin: 0.4rem 0 0;
 }
@@ -1656,7 +1986,7 @@ a.sheet-action {
 }
 
 .site-footer nav a {
-	font-size: 0.78rem;
+	font-size: var(--t-xs);
 	color: var(--muted);
 	text-decoration: none;
 }
@@ -1666,7 +1996,7 @@ a.sheet-action {
 }
 
 .site-footer small {
-	font-size: 0.72rem;
+	font-size: var(--t-2xs);
 	color: var(--muted);
 }
 
@@ -1751,7 +2081,7 @@ a.sheet-action {
 	border: 1px solid var(--border);
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 	z-index: 100;
-	font-size: 0.76rem;
+	font-size: var(--t-xs);
 	line-height: 1.4;
 	color: var(--fg);
 }
@@ -1764,7 +2094,7 @@ a.sheet-action {
 }
 
 .notif-popover-header strong {
-	font-size: 0.8rem;
+	font-size: var(--t-xs);
 }
 
 .notif-close {
@@ -1790,7 +2120,7 @@ a.sheet-action {
 
 .notif-pwa-tip {
 	margin: 0 0 0.5rem 0;
-	font-size: 0.7rem;
+	font-size: var(--t-2xs);
 	color: var(--muted);
 	border-left: 2px solid var(--border);
 	padding-left: 0.4rem;
@@ -1800,7 +2130,7 @@ a.sheet-action {
 	display: inline-flex;
 	align-items: center;
 	gap: 0.35rem;
-	font-size: 0.72rem;
+	font-size: var(--t-2xs);
 	padding: 0.25rem 0.55rem;
 	border-radius: 4px;
 	background: transparent;
@@ -1847,7 +2177,7 @@ a.sheet-action {
 .swipe-progress,
 .swipe-hint {
 	font-family: var(--mono);
-	font-size: 0.68rem;
+	font-size: var(--t-2xs);
 	color: var(--muted);
 	white-space: nowrap;
 }
@@ -2017,7 +2347,7 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	gap: 0.25rem;
 	padding: 0 0.4rem;
 	font-family: var(--mono);
-	font-size: 0.68rem;
+	font-size: var(--t-2xs);
 	font-weight: 600;
 }
 
@@ -2076,7 +2406,7 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	box-shadow: none;
 	background: transparent;
 	color: var(--fg);
-	font-size: 0.8rem;
+	font-size: var(--t-xs);
 	font-weight: 500;
 	text-align: left;
 	text-decoration: none;
@@ -2093,10 +2423,12 @@ body:has(.swipe-backdrop) #bmc-wbtn {
    A week grid plus the QR code that moves a saved set to another device. The
    backdrop is the action sheet's, but centred rather than bottom-anchored:
    this is a reading surface, not a thumb menu. */
+/* dialog.sheet-backdrop zeroes padding at (0,1,1); this needs to win it back. */
+dialog.cal-modal-backdrop,
 .cal-modal-backdrop {
 	align-items: center;
 	justify-content: center;
-	padding: 0.75rem;
+	padding: var(--s3);
 }
 
 .cal-modal {
@@ -2132,7 +2464,7 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	display: flex;
 	align-items: center;
 	gap: 0.4rem;
-	font-size: 0.82rem;
+	font-size: var(--t-xs);
 }
 
 /* Grid left, QR and actions right. The QR is the reason the modal exists —
@@ -2193,7 +2525,7 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 }
 
 .cal-gutter {
-	font-size: 0.68rem;
+	font-size: var(--t-2xs);
 	color: var(--muted);
 }
 
@@ -2203,7 +2535,7 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	gap: 0.3rem;
 	padding: 0.4rem 0.5rem;
 	border-left: 1px solid var(--border);
-	font-size: 0.75rem;
+	font-size: var(--t-xs);
 	font-weight: 600;
 }
 
@@ -2282,7 +2614,7 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	border: 1px solid color-mix(in srgb, var(--cat, var(--border)) 40%, transparent);
 	border-left: 3px solid var(--cat, var(--border));
 	color: var(--fg);
-	font-size: 0.7rem;
+	font-size: var(--t-2xs);
 	line-height: 1.25;
 	text-decoration: none;
 	overflow: hidden;
@@ -2313,7 +2645,7 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	display: block;
 	font-variant-numeric: tabular-nums;
 	color: var(--muted);
-	font-size: 0.62rem;
+	font-size: var(--t-2xs);
 }
 
 .cal-qr {
@@ -2332,7 +2664,7 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 .cal-note {
 	margin: 0;
 	max-width: 18rem;
-	font-size: 0.75rem;
+	font-size: var(--t-xs);
 	color: var(--muted);
 }
 
@@ -2401,7 +2733,7 @@ body:has(.swipe-backdrop) #bmc-wbtn {
    button says "Sent!" for the success case. */
 .notif-test-failed {
 	margin: 0.5rem 0 0;
-	font-size: 0.72rem;
+	font-size: var(--t-2xs);
 	line-height: 1.45;
 	color: var(--muted);
 }

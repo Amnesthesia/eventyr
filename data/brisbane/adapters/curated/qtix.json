@@ -15,13 +15,14 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-are-you-lonesome-tonight/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Enjoy a unique celebration of country music and opera.",
+      "description": "A unique celebration of country music and opera, featuring arias and songs by Puccini, Verdi, Slim Dusty, Troy Cassar-Daly, and Dolly Parton.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "country",
         "opera",
-        "music"
+        "country",
+        "music",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -103,13 +104,14 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-shel-we/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages!",
+      "description": "Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages and is now coming to QPAC's Cremorne Theatre!",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "theatre",
         "performance",
-        "comedy"
+        "comedy",
+        "arts"
       ],
       "social": false,
       "intellectual": false,
@@ -205,28 +207,6 @@
       "creative": true
     },
     {
-      "title": "THE BOOK OF MORMON",
-      "datetime": "Mon 7 Sep, 7:39 PM",
-      "datetime_iso": "2026-09-07T19:39:00",
-      "datetime_end_iso": "",
-      "location": "Glasshouse Theatre, QPAC",
-      "link": "https://www.qtix.com.au/whats-on/2026/the-book-of-mormon/",
-      "cost": "See link",
-      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Hello again! Brisbane, the Mormons are back! Don’t miss the outrageous musical comedy that has become an international sensation.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "musical",
-        "comedy",
-        "theatre"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "ANASTASIA the Musical",
       "datetime": "Wed 16 Sep – Sun 18 Oct",
       "datetime_iso": "2026-09-16",
@@ -257,12 +237,13 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-legends-of-the-golden-arches/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "A rip-roaring ride into the depths of the Chinese afterlife.",
+      "description": "A rip-roaring ride into the depths of the Chinese afterlife at QPAC’s Cremorne Theatre!",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "theatre",
         "performance",
+        "arts",
         "drama"
       ],
       "social": false,
@@ -279,13 +260,14 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-are-you-lonesome-tonight/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Enjoy a unique celebration of country music and opera.",
+      "description": "A unique celebration of country music and opera, featuring arias and songs by Puccini, Verdi, Slim Dusty, Troy Cassar-Daly, and Dolly Parton.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "country",
         "opera",
-        "music"
+        "country",
+        "music",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -359,7 +341,7 @@
       "creative": true
     },
     {
-      "title": "Opera Queensland Young Artist Program Showcase",
+      "title": "Young Artist Program Showcase",
       "datetime": "Fri 11 Sep – Sat 12 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-12",
@@ -372,8 +354,9 @@
       "category": "Concert / Music",
       "tags": [
         "opera",
-        "vocal",
-        "performance"
+        "showcase",
+        "performance",
+        "vocals"
       ],
       "social": false,
       "intellectual": false,
@@ -609,13 +592,14 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-shel-we/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages!",
+      "description": "Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages and is now coming to QPAC's Cremorne Theatre!",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "theatre",
         "performance",
-        "comedy"
+        "comedy",
+        "arts"
       ],
       "social": false,
       "intellectual": false,
@@ -667,28 +651,6 @@
       "creative": true
     },
     {
-      "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "QTIX",
-      "link": "https://www.qtix.com.au/whats-on/2026/make-believe-magic-the-worlds-of-the-jim-henson-company/",
-      "cost": "See link",
-      "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Step into Jim Henson’s magical worlds in Brisbane’s exclusive exhibition.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "exhibition",
-        "film",
-        "design"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Are You Lonesome Tonight?",
       "datetime": "Wed 9 Sep – Sat 12 Sep",
       "datetime_iso": "2026-09-09",
@@ -697,13 +659,14 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-are-you-lonesome-tonight/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Enjoy a unique celebration of country music and opera.",
+      "description": "A unique celebration of country music and opera, featuring arias and songs by Puccini, Verdi, Slim Dusty, Troy Cassar-Daly, and Dolly Parton.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "country",
         "opera",
-        "music"
+        "country",
+        "music",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -755,7 +718,7 @@
       "creative": true
     },
     {
-      "title": "Class of 2026 Musical Theatre Showcase",
+      "title": "Queensland Academy of Excellence in Musical Theatre Class of 2026 Musical Theatre Showcase",
       "datetime": "Thu 10 Sep – Sat 19 Sep",
       "datetime_iso": "2026-09-10",
       "datetime_end_iso": "2026-09-19",
@@ -785,13 +748,14 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-shel-we/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages!",
+      "description": "Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages and is now coming to QPAC's Cremorne Theatre!",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "theatre",
         "performance",
-        "comedy"
+        "comedy",
+        "arts"
       ],
       "social": false,
       "intellectual": false,
@@ -888,8 +852,8 @@
     },
     {
       "title": "THE BOOK OF MORMON",
-      "datetime": "Mon 7 Sep, 7:39 PM",
-      "datetime_iso": "2026-09-07T19:39:00",
+      "datetime": "Mon 7 Sep, 8:23 PM",
+      "datetime_iso": "2026-09-07T20:23:00",
       "datetime_end_iso": "",
       "location": "Glasshouse Theatre, QPAC",
       "link": "https://www.qtix.com.au/whats-on/2026/the-book-of-mormon/",
@@ -901,7 +865,8 @@
       "tags": [
         "musical",
         "comedy",
-        "theatre"
+        "theatre",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -939,12 +904,13 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-legends-of-the-golden-arches/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "A rip-roaring ride into the depths of the Chinese afterlife.",
+      "description": "A rip-roaring ride into the depths of the Chinese afterlife at QPAC’s Cremorne Theatre!",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "theatre",
         "performance",
+        "arts",
         "drama"
       ],
       "social": false,
@@ -961,13 +927,14 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-are-you-lonesome-tonight/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Enjoy a unique celebration of country music and opera.",
+      "description": "A unique celebration of country music and opera, featuring arias and songs by Puccini, Verdi, Slim Dusty, Troy Cassar-Daly, and Dolly Parton.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "country",
         "opera",
-        "music"
+        "country",
+        "music",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -1041,7 +1008,7 @@
       "creative": true
     },
     {
-      "title": "Opera Queensland Young Artist Program Showcase",
+      "title": "Young Artist Program Showcase",
       "datetime": "Fri 11 Sep – Sat 12 Sep",
       "datetime_iso": "2026-09-11",
       "datetime_end_iso": "2026-09-12",
@@ -1054,8 +1021,9 @@
       "category": "Concert / Music",
       "tags": [
         "opera",
-        "vocal",
-        "performance"
+        "showcase",
+        "performance",
+        "vocals"
       ],
       "social": false,
       "intellectual": false,
@@ -1291,13 +1259,14 @@
       "link": "https://www.qtix.com.au/whats-on/2026/bf-shel-we/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages!",
+      "description": "Off-beat, upbeat and heartwarming, Shel We has delighted audiences of all ages and is now coming to QPAC's Cremorne Theatre!",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "theatre",
         "performance",
-        "comedy"
+        "comedy",
+        "arts"
       ],
       "social": false,
       "intellectual": false,
@@ -1350,8 +1319,8 @@
     },
     {
       "title": "THE BOOK OF MORMON",
-      "datetime": "Mon 7 Sep, 7:39 PM",
-      "datetime_iso": "2026-09-07T19:39:00",
+      "datetime": "Mon 7 Sep, 8:23 PM",
+      "datetime_iso": "2026-09-07T20:23:00",
       "datetime_end_iso": "",
       "location": "Glasshouse Theatre, QPAC",
       "link": "https://www.qtix.com.au/whats-on/2026/the-book-of-mormon/",
@@ -1363,7 +1332,8 @@
       "tags": [
         "musical",
         "comedy",
-        "theatre"
+        "theatre",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -1467,15 +1437,16 @@
       "link": "https://www.qtix.com.au/whats-on/2026/textile-leather-crafts-workshops-2026/",
       "cost": "See link",
       "source": "QTIX (ticketing — delegate for QAGOMA, QPAC)",
-      "description": "Explore traditional techniques in leatherworking and natural dyeing.",
+      "description": "Explore traditional techniques in leatherworking and natural dyeing, guided by skilled artisans in hands-on, creative workshops.",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "craft",
         "textiles",
-        "leather"
+        "leather",
+        "crafts",
+        "workshop"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true

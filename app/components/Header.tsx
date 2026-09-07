@@ -62,30 +62,36 @@ export default function Header() {
 						</select>
 					</>
 				)}
-				<ExportSaved compact />
-				{cityKey && (
-					<a
-						className="theme-btn"
-						href={`/${cityKey}.ics`}
-						download
-						aria-label="Subscribe to calendar"
-						title="Download calendar (.ics)"
-					>
-						<Calendar size={12} strokeWidth={2} />
-					</a>
-				)}
-				<button
-					type="button"
-					className="theme-btn"
-					aria-label="Toggle dark mode"
-					onClick={toggleTheme}
-				>
-					{theme === "dark" ? (
-						<Sun size={12} strokeWidth={2} />
-					) : (
-						<Moon size={12} strokeWidth={2} />
+				{/* Its own flex line below 640px (see .header-icons): the search
+				    field and city switcher already claim most of a phone's width, and
+				    without a forced break these three icons ran off the right edge of
+				    the viewport instead of wrapping under it. */}
+				<div className="header-icons">
+					<ExportSaved compact />
+					{cityKey && (
+						<a
+							className="theme-btn"
+							href={`/${cityKey}.ics`}
+							download
+							aria-label="Subscribe to calendar"
+							title="Download calendar (.ics)"
+						>
+							<Calendar size={12} strokeWidth={2} />
+						</a>
 					)}
-				</button>
+					<button
+						type="button"
+						className="theme-btn"
+						aria-label="Toggle dark mode"
+						onClick={toggleTheme}
+					>
+						{theme === "dark" ? (
+							<Sun size={12} strokeWidth={2} />
+						) : (
+							<Moon size={12} strokeWidth={2} />
+						)}
+					</button>
+				</div>
 			</div>
 		</header>
 	);

@@ -15,13 +15,13 @@
       "link": "https://brisbanefestival.com.au/events/shel-we",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Shel We is a concert / music event held at Brisbane Festival.",
+      "description": "Playful, enchanting dance, full of mischief.",
       "image": "https://brisbanefestival.com.au/hero-image",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
+        "dance",
         "performance",
-        "theatre",
-        "music"
+        "arts"
       ],
       "social": false,
       "intellectual": false,
@@ -37,13 +37,13 @@
       "link": "https://brisbanefestival.com.au/events/no-one-gets-out-of-here-alive",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "No One Gets Out of Here Alive is a concert / music event held at Brisbane Festival.",
+      "description": "Created by The Farm — known for bold physicality, emotional directness, and irreverent theatricality — No One Gets Out of Here Alive confronts mortality into a deeply visceral experience that takes us beyond words into the nature of dying.",
       "image": "https://brisbanefestival.com.au/copy-of-setinstonemedia_thefarm_0426_farm-theatre-co-046-(2)",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
-        "performance",
         "theatre",
-        "drama"
+        "performance",
+        "contemporary"
       ],
       "social": false,
       "intellectual": false,
@@ -59,15 +59,15 @@
       "link": "https://brisbanefestival.com.au/events/are-you-lonesome-tonight",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Are You Lonesome Tonight is a concert / music event held at Brisbane Festival.",
+      "description": "Arrive in your jeans and boots, or your tuxedos and ball gowns.",
       "image": "https://brisbanefestival.com.au/are-you-lonesome-tonight_dylan-evans-photography_hero-shot2",
       "category": "Concert / Music",
       "tags": [
+        "music",
         "performance",
-        "theatre",
-        "music"
+        "social"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -81,16 +81,16 @@
       "link": "https://brisbanefestival.com.au/events/tiri-te-araroa-woman-far-walking",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Tiri: Te Araroa Woman Far Walking is a concert / music event held at Brisbane Festival.",
+      "description": "An extraordinary mapping of Aotearoa New Zealand through the eyes of Te Tiriti o Waitangi Mahana.",
       "image": "https://brisbanefestival.com.au/tiri_-te-araroa-woman-far-walking-credit-signy-bjorg",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
-        "performance",
-        "theatre",
+        "indigenous",
+        "culture",
         "storytelling"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
@@ -103,18 +103,18 @@
       "link": "https://brisbanefestival.com.au/events/daybreaker",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "DAYBREAKER is a social / meetup event held at Brisbane Festival.",
+      "description": "DAYBREAKER is a global, alcohol-free morning dance and wellness event that combines yoga, fitness, and high-energy dance to start the day with joy and community.",
       "image": "https://brisbanefestival.com.au/bf26_social_1080x1080_no_image-daybreaker",
       "category": "Social / Meetup",
       "tags": [
+        "wellness",
         "dance",
-        "morning",
-        "party"
+        "yoga"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": true
+      "hands_on": true,
+      "creative": false
     },
     {
       "title": "LEGENDS (of the Golden Arches)",
@@ -125,13 +125,13 @@
       "link": "https://brisbanefestival.com.au/events/legends-of-the-golden-arches",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "LEGENDS (of the Golden Arches) is a concert / music event held at Brisbane Festival.",
+      "description": "A rip-roaring ride plunging two best friends into the depths of the Chinese afterlife, crossing genres, realities, and theatrical convention with infectious zest.",
       "image": "https://brisbanefestival.com.au/legends-hero-large",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
-        "performance",
         "theatre",
-        "comedy"
+        "comedy",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -147,13 +147,13 @@
       "link": "https://brisbanefestival.com.au/events/scorched-earth",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Scorched Earth is a concert / music event held at Brisbane Festival.",
+      "description": "A murder. An interrogation. A clouded world of fantasy and fear.",
       "image": "https://brisbanefestival.com.au/brisbane-festival-scorched-earth-credit-pato-cassinoni",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
-        "performance",
         "theatre",
-        "drama"
+        "drama",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -169,13 +169,13 @@
       "link": "https://brisbanefestival.com.au/events/this-show-is-a-joke",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "This Show is a Joke! is a concert / music event held at Brisbane Festival.",
+      "description": "Hold onto your cowpats! After nearly two decades of seriously silly nonsense, Matt and Rich (aka The Listies) have whipped up their most ridiculous show yet — a turbo-charged mash-up of fan favourites, slapstick, songs, and a fresh batch of brand-new, freshly hatched gags. It's a comedy extravaganza for kidults aged 4 to 4 million (dinosaurs welcome).",
       "image": "https://brisbanefestival.com.au/hero-image-this-show-is-a-joke-1-photo-credit-andrew-wuttke",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
         "comedy",
-        "performance",
-        "theatre"
+        "family",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -191,18 +191,18 @@
       "link": "https://brisbanefestival.com.au/events/generations-and-dynasties-the-brady-family",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Generations & Dynasties: The Brady Family is a public lecture held at Brisbane Festival.",
+      "description": "A powerful afternoon of storytelling, captivating conversation, and exploring how cultural legacy is passed down the generations through music.",
       "image": "https://brisbanefestival.com.au/bf26_generations_bradyfamily_fa_(1)",
       "category": "Public Lecture",
       "tags": [
-        "history",
-        "family",
-        "talk"
+        "storytelling",
+        "music",
+        "culture"
       ],
-      "social": false,
+      "social": true,
       "intellectual": true,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "Generations & Dynasties: The Briscoe Sisters",
@@ -213,18 +213,18 @@
       "link": "https://brisbanefestival.com.au/events/generations-and-dynasties-the-briscoe-sisters",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Generations & Dynasties: The Briscoe Sisters is a public lecture held at Brisbane Festival.",
+      "description": "A heartfelt and unforgettable afternoon of conversation, connection and soulful music.",
       "image": "https://brisbanefestival.com.au/bf26_generations_briscoesisters_fa_",
       "category": "Public Lecture",
       "tags": [
-        "history",
-        "family",
-        "talk"
+        "storytelling",
+        "music",
+        "culture"
       ],
-      "social": false,
+      "social": true,
       "intellectual": true,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "Bleachers",
@@ -235,13 +235,13 @@
       "link": "https://brisbanefestival.com.au/events/bleachers",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Bleachers is a concert / music event held at Brisbane Festival.",
+      "description": "Stories of loneliness and togetherness sit side by side in this new disability-led dance-theatre work by Sprung Ensemble — a collective of 10 d/Deaf and disabled artists from Bundjalung Country in Northern NSW.",
       "image": "https://brisbanefestival.com.au/thomas-oliver_sprung_hires-17-(1)",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
-        "performance",
+        "dance",
         "theatre",
-        "drama"
+        "disability"
       ],
       "social": false,
       "intellectual": false,
@@ -257,15 +257,15 @@
       "link": "https://brisbanefestival.com.au/events/night-moves-the-scramble",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night Moves",
+      "description": "Two men hit the mat with scrappy energy, in a charged physical duet where exertion, resistance and care collide. They twist, tussle, grapple and brace — toe to toe in a work of dance-meets-wrestling that bristles with male intimacy, contest, and connection.",
       "image": "https://brisbanefestival.com.au/the-scramble_luther-wilson-and-nathan-turtur_photog-andrea-mae_mg_7096",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
+        "dance",
         "performance",
-        "music",
-        "night"
+        "physicality"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -279,13 +279,13 @@
       "link": "https://brisbanefestival.com.au/events/attenboroughs-ocean-in-concert",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Attenborough's Ocean in Concert is a concert / music event held at Brisbane Festival.",
+      "description": "Sir David Attenborough’s greatest message of hope brought to life, live by Camerata.",
       "image": "https://brisbanefestival.com.au/selling-fast-(1)",
       "category": "Concert / Music",
       "tags": [
+        "classical",
         "nature",
-        "ocean",
-        "music"
+        "orchestra"
       ],
       "social": false,
       "intellectual": false,
@@ -301,13 +301,13 @@
       "link": "https://brisbanefestival.com.au/events/make-believe-magic",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Make, Believe, Magic: The Worlds of The Jim Henson Company is an arts / exhibition event held at Brisbane Festival.",
+      "description": "Dance your cares away! The wild and wonderful creatures of ‘The Jim Henson Company’ are coming to GOMA. QAGOMA and Brisbane Festival are thrilled to be welcoming the Fraggles exclusively to Brisbane this September.",
       "image": "https://brisbanefestival.com.au/qagoma_the-jim-henson-company-exhibition_1920x1080",
       "category": "Arts / Exhibition",
       "tags": [
-        "film",
-        "design",
-        "history"
+        "puppets",
+        "family",
+        "exhibition"
       ],
       "social": false,
       "intellectual": false,
@@ -323,13 +323,13 @@
       "link": "https://brisbanefestival.com.au/events/moorooka-feast-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Moorooka Feast is a Community / Other event at Brisbane Festival.",
+      "description": "Join us for an evening of delicious food, great company, and meaningful connections as we gather around the table to celebrate community.",
       "image": "https://brisbanefestival.com.au/moorooka-feast_brisbane-festival_nikita-pere-58",
-      "category": "Community / Other",
+      "category": "Social / Meetup",
       "tags": [
         "community",
         "food",
-        "festival"
+        "local"
       ],
       "social": true,
       "intellectual": false,
@@ -345,13 +345,13 @@
       "link": "https://brisbanefestival.com.au/events/common-people-dance-eisteddfod-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Common People Dance Eisteddfod is a concert / music event held at Brisbane Festival.",
+      "description": "Seven teams. One trophy. Unlimited glory. Let the battle begin!",
       "image": "https://brisbanefestival.com.au/common-people-credit-joel-devereux",
-      "category": "Concert / Music",
+      "category": "Social / Meetup",
       "tags": [
         "dance",
-        "community",
-        "performance"
+        "competition",
+        "community"
       ],
       "social": true,
       "intellectual": false,
@@ -367,16 +367,16 @@
       "link": "https://brisbanefestival.com.au/events/pasifika-made-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Pasifika Made is an arts / exhibition event held at Brisbane Festival.",
+      "description": "Where Ancestral Knowledge Meets Contemporary Pacific Arts",
       "image": "https://brisbanefestival.com.au/pasifikamade_bf_jadeferguson_@visualpoetssociety08.05_1655_re-edit-(1)",
       "category": "Arts / Exhibition",
       "tags": [
+        "pacific",
         "culture",
-        "art",
-        "pacific"
+        "art"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
@@ -389,12 +389,12 @@
       "link": "https://brisbanefestival.com.au/events/moorooka-block-party-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Moorooka Block Party is a social / meetup event held at Brisbane Festival.",
+      "description": "We are heading back to transform Peggs Park once again into one great big celebration of culture and community. It’s time to bring back the sounds, flavours and stories for one of the south side's most anticipated events of the year.",
       "image": "https://brisbanefestival.com.au/jason-heera-hero",
       "category": "Social / Meetup",
       "tags": [
         "community",
-        "party",
+        "culture",
         "local"
       ],
       "social": true,
@@ -411,15 +411,15 @@
       "link": "https://brisbanefestival.com.au/events/brisbane-serenades-manly",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Brisbane Serenades",
+      "description": "A feel-good night of thrills, tunes and good times by the coast.",
       "image": "https://brisbanefestival.com.au/copy-of-dsc03073-(1)",
       "category": "Concert / Music",
       "tags": [
         "music",
-        "performance",
-        "outdoor"
+        "local",
+        "performance"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -433,13 +433,13 @@
       "link": "https://brisbanefestival.com.au/events/family-day-by-brisbane-airport",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Family Fun Day supported by Brisbane Airport is a social / meetup event held at Brisbane Festival.",
+      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
       "image": "https://brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
         "family",
-        "community",
-        "kids"
+        "free",
+        "entertainment"
       ],
       "social": true,
       "intellectual": false,
@@ -455,7 +455,7 @@
       "link": "https://brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "The Complete Bach Catalogue for Organ is a concert / music event held at Brisbane Festival.",
+      "description": "From quiet contemplation to awe-inspiring grandeur.",
       "image": "https://brisbanefestival.com.au/the-complete-bach-catalogue-brisbane-festival-credit-pete-wallis",
       "category": "Concert / Music",
       "tags": [
@@ -477,7 +477,7 @@
       "link": "https://brisbanefestival.com.au/events/rockwiz-rocks-brisbane",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "RocKwiz Rocks Brisbane is a concert / music event at Brisbane Festival.",
+      "description": "Get ready Brissy, we are coming back to celebrate your fine city!",
       "image": "https://brisbanefestival.com.au/3",
       "category": "Concert / Music",
       "tags": [
@@ -499,7 +499,7 @@
       "link": "https://brisbanefestival.com.au/events/the-cruel-sea-with-magic-dirt",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "The Cruel Sea are an ARIA-winning Australian rock institution led by Tex Perkins, known for ‘The Honeymoon Is Over’ and ‘Better Get a Lawyer’.",
       "image": "https://brisbanefestival.com.au/the-cruel-sea-HOLDING-IMAGE",
       "category": "Concert / Music",
       "tags": [
@@ -521,11 +521,11 @@
       "link": "https://brisbanefestival.com.au/events/the-temper-trap",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "The Temper Trap, creators of the global hit ‘Sweet Disposition’, bring their soaring, cinematic sound to Brisbane. With over a billion streams and two ARIA #1 albums, expect a powerful live set of timeless, emotional anthems, both old and new.",
       "image": "https://brisbanefestival.com.au/the-temper-trap2",
       "category": "Concert / Music",
       "tags": [
-        "indie",
+        "rock",
         "live",
         "music"
       ],
@@ -543,7 +543,7 @@
       "link": "https://brisbanefestival.com.au/events/human-nature-all-the-hits-live",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "Human Nature are one of Australia’s most successful pop vocal groups, known for flawless harmonies, slick showmanship and feel-good live energy.",
       "image": "https://brisbanefestival.com.au/human-nature",
       "category": "Concert / Music",
       "tags": [
@@ -565,7 +565,7 @@
       "link": "https://brisbanefestival.com.au/events/icehouse-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "Back by popular demand, ICEHOUSE return with their legendary live energy and timeless hits like ‘Great Southern Land’, ‘Crazy’, and ‘Electric Blue’.",
       "image": "https://brisbanefestival.com.au/icehouse(1)",
       "category": "Concert / Music",
       "tags": [
@@ -587,7 +587,7 @@
       "link": "https://brisbanefestival.com.au/events/pnau",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "ARIA Award-winning electronic duo PNAU have become one of Australia’s most influential acts, evolving from Sydney’s underground scene to global charts.",
       "image": "https://brisbanefestival.com.au/pnau",
       "category": "Concert / Music",
       "tags": [
@@ -609,11 +609,11 @@
       "link": "https://brisbanefestival.com.au/events/missy-higgins",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "Missy Higgins, one of Australia’s most beloved voices, brings her iconic hits ‘Scar’, ‘The Special Two’, ‘Steer’ and ‘Futon Couch’ to the stage.",
       "image": "https://brisbanefestival.com.au/missy-higgins-(1)",
       "category": "Concert / Music",
       "tags": [
-        "folk",
+        "pop",
         "live",
         "music"
       ],
@@ -631,13 +631,13 @@
       "link": "https://brisbanefestival.com.au/events/lord-mayors-city-hall-program-david-bailey",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Lord Mayor's City Hall Concerts",
+      "description": "Pipes, wheels, and reels — Buster Keaton's classic set to a live, original score.",
       "image": "https://brisbanefestival.com.au/david-bailey_bf25_credit_j-ruckli",
       "category": "Concert / Music",
       "tags": [
-        "classical",
-        "concert",
-        "music"
+        "film",
+        "score",
+        "classical"
       ],
       "social": false,
       "intellectual": false,
@@ -653,16 +653,16 @@
       "link": "https://brisbanefestival.com.au/events/lord-mayors-city-hall-program-east-of-west",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Lord Mayor's City Hall Concerts",
+      "description": "Storytelling spun over rich traditional rhythms.",
       "image": "https://brisbanefestival.com.au/east-of-west-by-vanessa-van-dalsen-6",
       "category": "Concert / Music",
       "tags": [
-        "jazz",
-        "concert",
-        "music"
+        "music",
+        "storytelling",
+        "rhythm"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
@@ -675,13 +675,13 @@
       "link": "https://brisbanefestival.com.au/events/warm-up-with-qld-con",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Warm-up with QLD Con is a concert / music event at Brisbane Festival.",
+      "description": "An energising musical warm-up to the day by the river.",
       "image": "https://brisbanefestival.com.au/morning-sessions_qcgu_greg-harm",
       "category": "Concert / Music",
       "tags": [
         "music",
-        "performance",
-        "live"
+        "morning",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -697,15 +697,15 @@
       "link": "https://brisbanefestival.com.au/events/piano-man",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Piano Man is a concert / music event at Brisbane Festival.",
+      "description": "Gather round the baby grand for a wild late-night singalong.",
       "image": "https://brisbanefestival.com.au/piano-man_trevor-jones_-trentino-priori",
-      "category": "Concert / Music",
+      "category": "Social / Meetup",
       "tags": [
-        "piano",
         "music",
-        "performance"
+        "singalong",
+        "social"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -719,13 +719,13 @@
       "link": "https://brisbanefestival.com.au/events/not-a-cult",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Not a Cult* is a community / other event at Brisbane Festival.",
+      "description": "A public spectacle of disconcerting joy.",
       "image": "https://brisbanefestival.com.au/counterpilot_notacult_hero4_bymorganroberts2",
-      "category": "Community / Other",
+      "category": "Arts / Exhibition",
       "tags": [
         "performance",
-        "arts",
-        "theatre"
+        "spectacle",
+        "art"
       ],
       "social": false,
       "intellectual": false,
@@ -741,16 +741,16 @@
       "link": "https://brisbanefestival.com.au/events/sunrise-ceremony-bikki-wantimaa",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Sunrise Ceremony: Bikki Wantimaa is a community / other event at Brisbane Festival.",
+      "description": "Each Friday morning the Sunrise Ceremony: Bikki Wantimaa acknowledges and gives thanks to the lands on which the Festival takes place, honouring First Nations peoples who have witnessed the sunrise on these lands for thousands of years.",
       "image": "https://brisbanefestival.com.au/finnmullen109a9521-crop",
       "category": "Community / Other",
       "tags": [
+        "indigenous",
         "ceremony",
-        "culture",
-        "community"
+        "culture"
       ],
       "social": true,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": false
     },
@@ -763,13 +763,13 @@
       "link": "https://brisbanefestival.com.au/events/dance-with-tom",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dance with Tom is a workshop / class event at Brisbane Festival.",
+      "description": "Join Tom for a joyful live stage experience celebrating Language from the Yugambeh Region, Culture and storytelling through movement, music and dance.",
       "image": "https://brisbanefestival.com.au/9_dancewithtom_c-1267_iview_programpage_3600x2025_clean",
       "category": "Workshop / Class",
       "tags": [
         "dance",
-        "movement",
-        "exercise"
+        "indigenous",
+        "culture"
       ],
       "social": true,
       "intellectual": false,
@@ -785,11 +785,11 @@
       "link": "https://brisbanefestival.com.au/events/dead-puppet-society-sculptures-and-sips-workshops",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dead Puppet Society: Sculptures & Sips Workshops is a workshop / class event at Brisbane Festival.",
+      "description": "Love art and design with a side of champagne? Dive into one of Dead Puppet Society’s Sculptures & Sips workshops. Create and take home your own handmade creation, connect with like-minded makers, and work alongside Dead Puppet Society artisans in their Fabrication Workshop — where the puppets and props from their productions are imagined, designed, and brought to life.",
       "image": "https://brisbanefestival.com.au/sculptures-and-sips-6_georgia-haupt",
       "category": "Workshop / Class",
       "tags": [
-        "puppets",
+        "art",
         "craft",
         "social"
       ],
@@ -807,13 +807,13 @@
       "link": "https://brisbanefestival.com.au/events/dead-puppet-society-puppet-construction-workshop",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dead Puppet Society: Puppet Construction Workshop is a workshop / class event at Brisbane Festival.",
+      "description": "Puppet Construction takes puppetry manipulation skills to the next level by allowing young people to design, craft and build their very own tabletop sized puppet.",
       "image": "https://brisbanefestival.com.au/table-top",
       "category": "Workshop / Class",
       "tags": [
         "puppets",
         "craft",
-        "making"
+        "youth"
       ],
       "social": false,
       "intellectual": false,
@@ -829,18 +829,18 @@
       "link": "https://brisbanefestival.com.au/events/quandamooka-festival-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Quandamooka Festival is a community / other event at Brisbane Festival.",
+      "description": "Get away from the city for a vibrant celebration of Culture on Stradbroke Island.",
       "image": "https://brisbanefestival.com.au/quandamooka_bf25_credit_nikki-michail-@nikkimichail",
       "category": "Community / Other",
       "tags": [
         "culture",
         "festival",
-        "community"
+        "outdoor"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
       "title": "Love Me Again Market: Morningside",
@@ -851,12 +851,12 @@
       "link": "https://brisbanefestival.com.au/events/love-me-again-market-morningside",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Love Me Again Market: Morningside is a social / meetup event at Brisbane Festival.",
+      "description": "Love Me Again Market is curating a special Brisbane Festival edition combining pre-loved fashion, music, community and great vibes all in one unforgettable day.",
       "image": "https://brisbanefestival.com.au/lmam-5-year-birthday-2025-taylor-kezia-photography-38",
       "category": "Social / Meetup",
       "tags": [
+        "fashion",
         "market",
-        "shopping",
         "community"
       ],
       "social": true,
@@ -873,40 +873,18 @@
       "link": "https://brisbanefestival.com.au/events/mindful-art-mornings-at-museum-of-brisbane",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Mindful Art Mornings at Museum of Brisbane is a workshop / class event at Brisbane Festival.",
+      "description": "Mindful Art Morning invites early risers to the Museum before opening hours for a gentle, guided moment of pause.",
       "image": "https://brisbanefestival.com.au/mob-mindful-art-mornings-photo-katie-bennett",
       "category": "Workshop / Class",
       "tags": [
         "art",
         "mindfulness",
-        "creative"
+        "museum"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true
-    },
-    {
-      "title": "Transurban Bridge to Brisbane",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/transurban-bridge-to-brisbane",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Transurban Bridge to Brisbane is a community / other event at Brisbane Festival.",
-      "image": "https://brisbanefestival.com.au/5km-start",
-      "category": "Community / Other",
-      "tags": [
-        "sport",
-        "fitness",
-        "outdoor"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
     },
     {
       "title": "Talk of the Town: True crime, death and the live body",
@@ -917,13 +895,13 @@
       "link": "https://brisbanefestival.com.au/events/talk-of-the-town-2",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Talk of the Town: True crime, death and the live body is a public lecture event at Brisbane Festival.",
+      "description": "We are living through a cultural obsession with true crime.",
       "image": "https://brisbanefestival.com.au/scorched-earth-credit-soundofphotography",
       "category": "Public Lecture",
       "tags": [
-        "talk",
         "crime",
-        "philosophy"
+        "philosophy",
+        "culture"
       ],
       "social": false,
       "intellectual": true,
@@ -939,18 +917,18 @@
       "link": "https://brisbanefestival.com.au/events/talk-of-the-town-3",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Talk of the Town: Collective bodies, international spaces is a public lecture event at Brisbane Festival.",
+      "description": "Originating in the 18th Century, international circus arts have evolved beyond the Big Top.",
       "image": "https://brisbanefestival.com.au/escape-_-credit-cheryl-mann-(1)",
       "category": "Public Lecture",
       "tags": [
-        "talk",
-        "society",
-        "politics"
+        "circus",
+        "history",
+        "arts"
       ],
       "social": false,
       "intellectual": true,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "Flipside Circus Workshops",
@@ -961,13 +939,13 @@
       "link": "https://brisbanefestival.com.au/events/flipside-circus-workshops",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Flipside Circus Workshops is a workshop / class event at Brisbane Festival.",
+      "description": "Step right up and give some circus skills a go!",
       "image": "https://brisbanefestival.com.au/26_flipside-circus_ground-based-workshops_on-location-credit-pete-wallis-(3)",
       "category": "Workshop / Class",
       "tags": [
         "circus",
-        "fitness",
-        "movement"
+        "skills",
+        "active"
       ],
       "social": true,
       "intellectual": false,
@@ -983,13 +961,13 @@
       "link": "https://brisbanefestival.com.au/events/common-people-dance-project",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Common People Dance Project Workshop is a workshop / class event at Brisbane Festival.",
+      "description": "Discover the joy of choreographed dance, celebrate community, and lose yourself in the moment!",
       "image": "https://brisbanefestival.com.au/common-people-dance-project-claudia-baxter",
       "category": "Workshop / Class",
       "tags": [
         "dance",
         "community",
-        "movement"
+        "active"
       ],
       "social": true,
       "intellectual": false,
@@ -1005,13 +983,13 @@
       "link": "https://brisbanefestival.com.au/events/dance-workshops-hiphoporstreet-dance",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "HipHop/Street Dance Workshop with Bring a Plate is a workshop / class event at Brisbane Festival.",
+      "description": "Inclusive sessions that celebrate movement, creativity, and connection.",
       "image": "https://brisbanefestival.com.au/bring-a-plate-6-feb-24_0504-(3)-(4)-(4)-min-(2)",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "hiphop",
-        "movement"
+        "dance",
+        "inclusive"
       ],
       "social": true,
       "intellectual": false,
@@ -1027,13 +1005,13 @@
       "link": "https://brisbanefestival.com.au/events/bollywood-dance-workshops-dance-masala",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Bollywood Dance Workshop with Dance Masala is a workshop / class event at Brisbane Festival.",
+      "description": "Celebrating culture, community, and confidence through dance.",
       "image": "https://brisbanefestival.com.au/powerhouse_credit-smit-mehta",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "bollywood",
-        "movement"
+        "dance",
+        "culture"
       ],
       "social": true,
       "intellectual": false,
@@ -1049,13 +1027,13 @@
       "link": "https://brisbanefestival.com.au/events/beat-and-move-an-african-dance-adventure",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Beat and Move Workshop: An African Dance Adventure with Yenenesh Nigusse is a workshop / class event at Brisbane Festival.",
+      "description": "Every beat inspires movement, every rhythm tells a story, and everyone becomes part of the celebration.",
       "image": "https://brisbanefestival.com.au/dsc00595",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "african",
-        "movement"
+        "dance",
+        "rhythm"
       ],
       "social": true,
       "intellectual": false,
@@ -1071,13 +1049,13 @@
       "link": "https://brisbanefestival.com.au/events/function-well-mat-sessions",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Function Well Mat Sessions is a workshop / class event at Brisbane Festival.",
+      "description": "Power Pilates, Sound Healing, Breathwork, Frequency & Flow, Frequency & Flow",
       "image": "https://brisbanefestival.com.au/function-well-mat-sessions-(breathwork)",
       "category": "Workshop / Class",
       "tags": [
-        "fitness",
-        "yoga",
-        "health"
+        "pilates",
+        "wellness",
+        "fitness"
       ],
       "social": false,
       "intellectual": false,
@@ -1093,13 +1071,13 @@
       "link": "https://brisbanefestival.com.au/events/dance-workshops-rio-rhythmics-latin-dance-academy",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Latin Dance Workshop with Rio Rhythmics Latin Dance Academy is a workshop / class event at Brisbane Festival.",
+      "description": "A joyful journey through the rhythms and cultures of Latin America and the Caribbean.",
       "image": "https://brisbanefestival.com.au/rio-rhythmics-carnaval-2",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "latin",
-        "movement"
+        "dance",
+        "culture"
       ],
       "social": true,
       "intellectual": false,
@@ -1115,15 +1093,15 @@
       "link": "https://brisbanefestival.com.au/events/prita-tina-yeganeh-patterns-of-connection-workshop",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Patterns of Connection Workshop with Prita Tina Yeganeh is a workshop / class event at Brisbane Festival.",
+      "description": "Create your own visual language. A hands-on introduction to visual storytelling and collective making.",
       "image": "https://brisbanefestival.com.au/prita-tina-yeganeh_-patterns-of-connection_-photographer-thomas-oliver",
       "category": "Workshop / Class",
       "tags": [
         "art",
-        "connection",
+        "storytelling",
         "creative"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true
@@ -1137,13 +1115,13 @@
       "link": "https://brisbanefestival.com.au/events/dance-workshops-belly-dance",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Bellydance Workshop with Brisbane Bellydance Academy is a workshop / class event at Brisbane Festival.",
+      "description": "Come experience the joy of bellydancing.",
       "image": "https://brisbanefestival.com.au/1bc93829-5afc-4311-8cb7-0db186334f95",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "bellydance",
-        "movement"
+        "dance",
+        "fitness"
       ],
       "social": true,
       "intellectual": false,
@@ -1159,13 +1137,13 @@
       "link": "https://brisbanefestival.com.au/events/mob-presents-mindful-art-morning",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "MoB Presents: Mindful Art Morning Workshop with Nadine McDonald-Dowd is a workshop / class event at Brisbane Festival.",
+      "description": "Hands on Country – floral workshop with Blak Botanics",
       "image": "https://brisbanefestival.com.au/mob-mindful-art-mornings-photo-katie-bennett",
       "category": "Workshop / Class",
       "tags": [
         "art",
-        "mindfulness",
-        "creative"
+        "floral",
+        "mindful"
       ],
       "social": false,
       "intellectual": false,
@@ -1181,7 +1159,7 @@
       "link": "https://brisbanefestival.com.au/events/writing-picture-books-with-jack-carty",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Writing Picture Books Workshop with Jack Carty is a workshop / class event at Brisbane Festival.",
+      "description": "Join Queensland-based author and singer-songwriter Jack Carty for a fun, hands-on 90-minute workshop exploring the art of writing picture books for young readers. With four books published through Scholastic Australia, international releases, and more on the way, Jack digs into the craft and creativity behind picture book writing. What makes a great idea, how to shape it into a story, and how to find your own voice.",
       "image": "https://brisbanefestival.com.au/jack-carty-by-maria-christina-2",
       "category": "Workshop / Class",
       "tags": [
@@ -1203,17 +1181,17 @@
       "link": "https://brisbanefestival.com.au/events/wake-up-and-sing-toowong-state-school-signing-choir",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Wake Up & Sing!",
+      "description": "Join the Toowong State School Signing Choir for a morning of singing and learning some basic Auslan signs. The choir consists of Auslan (Australian Sign Language) students from Years 4–6 who are Deaf, hard of hearing and hearing, and will perform a selection of popular songs to brighten your day.",
       "image": "https://brisbanefestival.com.au/even-cgen-2022-2",
-      "category": "Concert / Music",
+      "category": "Workshop / Class",
       "tags": [
-        "singing",
         "choir",
-        "music"
+        "auslan",
+        "singing"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -1225,17 +1203,17 @@
       "link": "https://brisbanefestival.com.au/events/wake-up-and-sing-with-the-cast-of-shel-we",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Wake Up & Sing!",
+      "description": "Join in the chorus as we start the day with song and play!",
       "image": "https://brisbanefestival.com.au/sbp-5",
-      "category": "Concert / Music",
+      "category": "Workshop / Class",
       "tags": [
         "singing",
-        "performance",
-        "music"
+        "music",
+        "community"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -1247,17 +1225,17 @@
       "link": "https://brisbanefestival.com.au/events/wake-up-and-sing-cheep-trill",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Wake Up & Sing!",
+      "description": "Come along, raise your voice, and discover why singing together is one of life's simple pleasures.",
       "image": "https://brisbanefestival.com.au/photo-1-(1)",
-      "category": "Concert / Music",
+      "category": "Workshop / Class",
       "tags": [
-        "singing",
         "choir",
-        "music"
+        "singing",
+        "community"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -1269,13 +1247,13 @@
       "link": "https://brisbanefestival.com.au/events/dance-workshop-with-shel-we",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dance Workshop with the cast of Shel We is a workshop / class event at Brisbane Festival.",
+      "description": "Delight in this upbeat, full of mischief enchanting dance style.",
       "image": "https://brisbanefestival.com.au/sbp-5",
       "category": "Workshop / Class",
       "tags": [
         "dance",
-        "movement",
-        "performance"
+        "performance",
+        "active"
       ],
       "social": true,
       "intellectual": false,
@@ -1291,7 +1269,7 @@
       "link": "https://brisbanefestival.com.au/events/run-wild-through-south-bank",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Run Wild through South Bank is a community / other event at Brisbane Festival.",
+      "description": "Experience the energy of Brisbane Festival",
       "image": "https://brisbanefestival.com.au/dgb07kno7qonvm6kwcqznug7",
       "category": "Community / Other",
       "tags": [
@@ -1301,7 +1279,7 @@
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": false
     },
     {
@@ -1313,13 +1291,13 @@
       "link": "https://www.brisbanefestival.com.au/events/shel-we",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Shel We is a concert / music event held at Brisbane Festival.",
+      "description": "Playful, enchanting dance, full of mischief.",
       "image": "https://www.brisbanefestival.com.au/hero-image",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
+        "dance",
         "performance",
-        "theatre",
-        "music"
+        "arts"
       ],
       "social": false,
       "intellectual": false,
@@ -1335,13 +1313,13 @@
       "link": "https://www.brisbanefestival.com.au/events/no-one-gets-out-of-here-alive",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "No One Gets Out of Here Alive is a concert / music event held at Brisbane Festival.",
+      "description": "Created by The Farm — known for bold physicality, emotional directness, and irreverent theatricality — No One Gets Out of Here Alive confronts mortality into a deeply visceral experience that takes us beyond words into the nature of dying.",
       "image": "https://www.brisbanefestival.com.au/copy-of-setinstonemedia_thefarm_0426_farm-theatre-co-046-(2)",
       "category": "Concert / Music",
       "tags": [
-        "performance",
         "theatre",
-        "drama"
+        "performance",
+        "arts"
       ],
       "social": false,
       "intellectual": false,
@@ -1357,15 +1335,15 @@
       "link": "https://www.brisbanefestival.com.au/events/are-you-lonesome-tonight",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Are You Lonesome Tonight is a concert / music event held at Brisbane Festival.",
+      "description": "Arrive in your jeans and boots, or your tuxedos and ball gowns.",
       "image": "https://www.brisbanefestival.com.au/are-you-lonesome-tonight_dylan-evans-photography_hero-shot2",
       "category": "Concert / Music",
       "tags": [
+        "music",
         "performance",
-        "theatre",
-        "music"
+        "social"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1379,16 +1357,16 @@
       "link": "https://www.brisbanefestival.com.au/events/tiri-te-araroa-woman-far-walking",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Tiri: Te Araroa Woman Far Walking is a concert / music event held at Brisbane Festival.",
+      "description": "An extraordinary mapping of Aotearoa New Zealand through the eyes of Te Tiriti o Waitangi Mahana.",
       "image": "https://www.brisbanefestival.com.au/tiri_-te-araroa-woman-far-walking-credit-signy-bjorg",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
-        "performance",
-        "theatre",
-        "storytelling"
+        "mapping",
+        "culture",
+        "history"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
@@ -1401,18 +1379,18 @@
       "link": "https://www.brisbanefestival.com.au/events/daybreaker",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "DAYBREAKER is a social / meetup event held at Brisbane Festival.",
+      "description": "DAYBREAKER is a global, alcohol-free morning dance and wellness event that combines yoga, fitness, and high-energy dance to start the day with joy and community.",
       "image": "https://www.brisbanefestival.com.au/bf26_social_1080x1080_no_image-daybreaker",
       "category": "Social / Meetup",
       "tags": [
+        "wellness",
         "dance",
-        "morning",
-        "party"
+        "morning"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": true
+      "hands_on": true,
+      "creative": false
     },
     {
       "title": "LEGENDS (of the Golden Arches)",
@@ -1423,13 +1401,13 @@
       "link": "https://www.brisbanefestival.com.au/events/legends-of-the-golden-arches",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "LEGENDS (of the Golden Arches) is a concert / music event held at Brisbane Festival.",
+      "description": "A rip-roaring ride plunging two best friends into the depths of the Chinese afterlife, crossing genres, realities, and theatrical convention with infectious zest.",
       "image": "https://www.brisbanefestival.com.au/legends-hero-large",
       "category": "Concert / Music",
       "tags": [
-        "performance",
         "theatre",
-        "comedy"
+        "comedy",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -1445,13 +1423,13 @@
       "link": "https://www.brisbanefestival.com.au/events/scorched-earth",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Scorched Earth is a concert / music event held at Brisbane Festival.",
+      "description": "A murder. An interrogation. A clouded world of fantasy and fear.",
       "image": "https://www.brisbanefestival.com.au/brisbane-festival-scorched-earth-credit-pato-cassinoni",
       "category": "Concert / Music",
       "tags": [
-        "performance",
         "theatre",
-        "drama"
+        "drama",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -1467,13 +1445,13 @@
       "link": "https://www.brisbanefestival.com.au/events/this-show-is-a-joke",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "This Show is a Joke! is a concert / music event held at Brisbane Festival.",
+      "description": "Hold onto your cowpats! After nearly two decades of seriously silly nonsense, Matt and Rich (aka The Listies) have whipped up their most ridiculous show yet — a turbo-charged mash-up of fan favourites, slapstick, songs, and a fresh batch of brand-new, freshly hatched gags. It's a comedy extravaganza for kidults aged 4 to 4 million (dinosaurs welcome).",
       "image": "https://www.brisbanefestival.com.au/hero-image-this-show-is-a-joke-1-photo-credit-andrew-wuttke",
       "category": "Concert / Music",
       "tags": [
         "comedy",
-        "performance",
-        "theatre"
+        "kids",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -1489,18 +1467,18 @@
       "link": "https://www.brisbanefestival.com.au/events/generations-and-dynasties-the-brady-family",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Generations & Dynasties: The Brady Family is a public lecture held at Brisbane Festival.",
+      "description": "A powerful afternoon of storytelling, captivating conversation, and exploring how cultural legacy is passed down the generations through music.",
       "image": "https://www.brisbanefestival.com.au/bf26_generations_bradyfamily_fa_(1)",
       "category": "Public Lecture",
       "tags": [
-        "history",
-        "family",
-        "talk"
+        "storytelling",
+        "music",
+        "family"
       ],
-      "social": false,
+      "social": true,
       "intellectual": true,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "Generations & Dynasties: The Briscoe Sisters",
@@ -1511,18 +1489,18 @@
       "link": "https://www.brisbanefestival.com.au/events/generations-and-dynasties-the-briscoe-sisters",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Generations & Dynasties: The Briscoe Sisters is a public lecture held at Brisbane Festival.",
+      "description": "A heartfelt and unforgettable afternoon of conversation, connection and soulful music.",
       "image": "https://www.brisbanefestival.com.au/bf26_generations_briscoesisters_fa_",
       "category": "Public Lecture",
       "tags": [
-        "history",
-        "family",
-        "talk"
+        "storytelling",
+        "music",
+        "family"
       ],
-      "social": false,
+      "social": true,
       "intellectual": true,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "Bleachers",
@@ -1533,13 +1511,13 @@
       "link": "https://www.brisbanefestival.com.au/events/bleachers",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Bleachers is a concert / music event held at Brisbane Festival.",
+      "description": "Stories of loneliness and togetherness sit side by side in this new disability-led dance-theatre work by Sprung Ensemble — a collective of 10 d/Deaf and disabled artists from Bundjalung Country in Northern NSW.",
       "image": "https://www.brisbanefestival.com.au/thomas-oliver_sprung_hires-17-(1)",
       "category": "Concert / Music",
       "tags": [
-        "performance",
+        "dance",
         "theatre",
-        "drama"
+        "disability"
       ],
       "social": false,
       "intellectual": false,
@@ -1555,15 +1533,15 @@
       "link": "https://www.brisbanefestival.com.au/events/night-moves-the-scramble",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night Moves",
+      "description": "Two men hit the mat with scrappy energy, in a charged physical duet where exertion, resistance and care collide. They twist, tussle, grapple and brace — toe to toe in a work of dance-meets-wrestling that bristles with male intimacy, contest, and connection.",
       "image": "https://www.brisbanefestival.com.au/the-scramble_luther-wilson-and-nathan-turtur_photog-andrea-mae_mg_7096",
       "category": "Concert / Music",
       "tags": [
-        "performance",
-        "music",
-        "night"
+        "dance",
+        "wrestling",
+        "performance"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1577,13 +1555,13 @@
       "link": "https://www.brisbanefestival.com.au/events/attenboroughs-ocean-in-concert",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Attenborough's Ocean in Concert is a concert / music event held at Brisbane Festival.",
+      "description": "Sir David Attenborough’s greatest message of hope brought to life, live by Camerata.",
       "image": "https://www.brisbanefestival.com.au/selling-fast-(1)",
       "category": "Concert / Music",
       "tags": [
+        "classical",
         "nature",
-        "ocean",
-        "music"
+        "orchestra"
       ],
       "social": false,
       "intellectual": false,
@@ -1599,13 +1577,13 @@
       "link": "https://www.brisbanefestival.com.au/events/make-believe-magic",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Make, Believe, Magic: The Worlds of The Jim Henson Company is an arts / exhibition event held at Brisbane Festival.",
+      "description": "Dance your cares away! The wild and wonderful creatures of ‘The Jim Henson Company’ are coming to GOMA. QAGOMA and Brisbane Festival are thrilled to be welcoming the Fraggles exclusively to Brisbane this September.",
       "image": "https://www.brisbanefestival.com.au/qagoma_the-jim-henson-company-exhibition_1920x1080",
       "category": "Arts / Exhibition",
       "tags": [
+        "puppets",
         "film",
-        "design",
-        "history"
+        "exhibition"
       ],
       "social": false,
       "intellectual": false,
@@ -1614,20 +1592,20 @@
     },
     {
       "title": "Moorooka Feast",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
+      "datetime": "Thu 10 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-10T18:00:00",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
       "link": "https://www.brisbanefestival.com.au/events/moorooka-feast-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Moorooka Feast is a social / meetup event held at Brisbane Festival.",
+      "description": "Join us for an evening of delicious food, great company, and meaningful connections as we gather around the table to celebrate community.",
       "image": "https://www.brisbanefestival.com.au/moorooka-feast_brisbane-festival_nikita-pere-58",
       "category": "Social / Meetup",
       "tags": [
         "food",
         "community",
-        "local"
+        "dinner"
       ],
       "social": true,
       "intellectual": false,
@@ -1643,13 +1621,13 @@
       "link": "https://www.brisbanefestival.com.au/events/common-people-dance-eisteddfod-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Common People Dance Eisteddfod is a concert / music event held at Brisbane Festival.",
+      "description": "Seven teams. One trophy. Unlimited glory. Let the battle begin!",
       "image": "https://www.brisbanefestival.com.au/common-people-credit-joel-devereux",
-      "category": "Concert / Music",
+      "category": "Social / Meetup",
       "tags": [
         "dance",
-        "community",
-        "performance"
+        "competition",
+        "community"
       ],
       "social": true,
       "intellectual": false,
@@ -1665,16 +1643,16 @@
       "link": "https://www.brisbanefestival.com.au/events/pasifika-made-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Pasifika Made is an arts / exhibition event held at Brisbane Festival.",
+      "description": "Where Ancestral Knowledge Meets Contemporary Pacific Arts",
       "image": "https://www.brisbanefestival.com.au/pasifikamade_bf_jadeferguson_@visualpoetssociety08.05_1655_re-edit-(1)",
       "category": "Arts / Exhibition",
       "tags": [
+        "pacific",
         "culture",
-        "art",
-        "pacific"
+        "arts"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
@@ -1687,13 +1665,13 @@
       "link": "https://www.brisbanefestival.com.au/events/moorooka-block-party-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Moorooka Block Party is a social / meetup event held at Brisbane Festival.",
+      "description": "We are heading back to transform Peggs Park once again into one great big celebration of culture and community. It’s time to bring back the sounds, flavours and stories for one of the south side's most anticipated events of the year.",
       "image": "https://www.brisbanefestival.com.au/jason-heera-hero",
       "category": "Social / Meetup",
       "tags": [
         "community",
-        "party",
-        "local"
+        "culture",
+        "party"
       ],
       "social": true,
       "intellectual": false,
@@ -1702,20 +1680,20 @@
     },
     {
       "title": "Manly Serenades",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 11 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-11T19:00:00",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
       "link": "https://www.brisbanefestival.com.au/events/brisbane-serenades-manly",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Brisbane Serenades",
+      "description": "A feel-good night of thrills, tunes and good times by the coast.",
       "image": "https://www.brisbanefestival.com.au/copy-of-dsc03073-(1)",
       "category": "Concert / Music",
       "tags": [
         "music",
-        "performance",
-        "local"
+        "coastal",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -1731,18 +1709,18 @@
       "link": "https://www.brisbanefestival.com.au/events/family-day-by-brisbane-airport",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Family Fun Day supported by Brisbane Airport is a social / meetup event held at Brisbane Festival.",
+      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
       "image": "https://www.brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
       "category": "Social / Meetup",
       "tags": [
         "family",
-        "community",
-        "kids"
+        "kids",
+        "free"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": false
+      "hands_on": true,
+      "creative": true
     },
     {
       "title": "The Complete Bach Catalogue for Organ",
@@ -1753,13 +1731,13 @@
       "link": "https://www.brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "The Complete Bach Catalogue for Organ is a concert / music event held at Brisbane Festival.",
+      "description": "From quiet contemplation to awe-inspiring grandeur.",
       "image": "https://www.brisbanefestival.com.au/the-complete-bach-catalogue-brisbane-festival-credit-pete-wallis",
       "category": "Concert / Music",
       "tags": [
-        "classical",
+        "bach",
         "organ",
-        "bach"
+        "classical"
       ],
       "social": false,
       "intellectual": false,
@@ -1775,16 +1753,16 @@
       "link": "https://www.brisbanefestival.com.au/events/rockwiz-rocks-brisbane",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "RocKwiz Rocks Brisbane is a concert / music event at Brisbane Festival.",
+      "description": "Get ready Brissy, we are coming back to celebrate your fine city!",
       "image": "https://www.brisbanefestival.com.au/3",
       "category": "Concert / Music",
       "tags": [
+        "quiz",
         "music",
-        "trivia",
-        "performance"
+        "trivia"
       ],
       "social": true,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
@@ -1797,7 +1775,7 @@
       "link": "https://www.brisbanefestival.com.au/events/the-cruel-sea-with-magic-dirt",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "The Cruel Sea are an ARIA-winning Australian rock institution led by Tex Perkins, known for ‘The Honeymoon Is Over’ and ‘Better Get a Lawyer’.",
       "image": "https://www.brisbanefestival.com.au/the-cruel-sea-HOLDING-IMAGE",
       "category": "Concert / Music",
       "tags": [
@@ -1819,11 +1797,11 @@
       "link": "https://www.brisbanefestival.com.au/events/the-temper-trap",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "The Temper Trap, creators of the global hit ‘Sweet Disposition’, bring their soaring, cinematic sound to Brisbane. With over a billion streams and two ARIA #1 albums, expect a powerful live set of timeless, emotional anthems, both old and new.",
       "image": "https://www.brisbanefestival.com.au/the-temper-trap2",
       "category": "Concert / Music",
       "tags": [
-        "indie",
+        "rock",
         "live",
         "music"
       ],
@@ -1841,7 +1819,7 @@
       "link": "https://www.brisbanefestival.com.au/events/human-nature-all-the-hits-live",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "Human Nature are one of Australia’s most successful pop vocal groups, known for flawless harmonies, slick showmanship and feel-good live energy.",
       "image": "https://www.brisbanefestival.com.au/human-nature",
       "category": "Concert / Music",
       "tags": [
@@ -1863,7 +1841,7 @@
       "link": "https://www.brisbanefestival.com.au/events/icehouse-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "Back by popular demand, ICEHOUSE return with their legendary live energy and timeless hits like ‘Great Southern Land’, ‘Crazy’, and ‘Electric Blue’.",
       "image": "https://www.brisbanefestival.com.au/icehouse(1)",
       "category": "Concert / Music",
       "tags": [
@@ -1871,7 +1849,7 @@
         "live",
         "music"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1885,15 +1863,15 @@
       "link": "https://www.brisbanefestival.com.au/events/pnau",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "ARIA Award-winning electronic duo PNAU have become one of Australia’s most influential acts, evolving from Sydney’s underground scene to global charts.",
       "image": "https://www.brisbanefestival.com.au/pnau",
       "category": "Concert / Music",
       "tags": [
         "electronic",
-        "live",
+        "dance",
         "music"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1907,15 +1885,15 @@
       "link": "https://www.brisbanefestival.com.au/events/missy-higgins",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Night at the Parkland",
+      "description": "Missy Higgins, one of Australia’s most beloved voices, brings her iconic hits ‘Scar’, ‘The Special Two’, ‘Steer’ and ‘Futon Couch’ to the stage.",
       "image": "https://www.brisbanefestival.com.au/missy-higgins-(1)",
       "category": "Concert / Music",
       "tags": [
-        "folk",
-        "live",
-        "music"
+        "pop",
+        "singer-songwriter",
+        "live"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1929,12 +1907,12 @@
       "link": "https://www.brisbanefestival.com.au/events/lord-mayors-city-hall-program-david-bailey",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Lord Mayor's City Hall Concerts",
+      "description": "Pipes, wheels, and reels — Buster Keaton's classic set to a live, original score.",
       "image": "https://www.brisbanefestival.com.au/david-bailey_bf25_credit_j-ruckli",
       "category": "Concert / Music",
       "tags": [
-        "classical",
-        "concert",
+        "film",
+        "silent",
         "music"
       ],
       "social": false,
@@ -1951,12 +1929,12 @@
       "link": "https://www.brisbanefestival.com.au/events/lord-mayors-city-hall-program-east-of-west",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Lord Mayor's City Hall Concerts",
+      "description": "Storytelling spun over rich traditional rhythms.",
       "image": "https://www.brisbanefestival.com.au/east-of-west-by-vanessa-van-dalsen-6",
       "category": "Concert / Music",
       "tags": [
-        "jazz",
-        "concert",
+        "storytelling",
+        "rhythm",
         "music"
       ],
       "social": false,
@@ -1973,13 +1951,13 @@
       "link": "https://www.brisbanefestival.com.au/events/warm-up-with-qld-con",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Warm-up with QLD Con is a concert / music event at Brisbane Festival.",
+      "description": "An energising musical warm-up to the day by the river.",
       "image": "https://www.brisbanefestival.com.au/morning-sessions_qcgu_greg-harm",
       "category": "Concert / Music",
       "tags": [
         "music",
-        "performance",
-        "live"
+        "morning",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -1995,15 +1973,15 @@
       "link": "https://www.brisbanefestival.com.au/events/piano-man",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Piano Man is a concert / music event at Brisbane Festival.",
+      "description": "Gather round the baby grand for a wild late-night singalong.",
       "image": "https://www.brisbanefestival.com.au/piano-man_trevor-jones_-trentino-priori",
       "category": "Concert / Music",
       "tags": [
+        "singalong",
         "piano",
-        "music",
-        "performance"
+        "social"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -2017,13 +1995,13 @@
       "link": "https://www.brisbanefestival.com.au/events/not-a-cult",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Not a Cult* is a community / other event at Brisbane Festival.",
+      "description": "A public spectacle of disconcerting joy.",
       "image": "https://www.brisbanefestival.com.au/counterpilot_notacult_hero4_bymorganroberts2",
       "category": "Community / Other",
       "tags": [
         "performance",
-        "arts",
-        "theatre"
+        "spectacle",
+        "art"
       ],
       "social": false,
       "intellectual": false,
@@ -2039,13 +2017,13 @@
       "link": "https://www.brisbanefestival.com.au/events/sunrise-ceremony-bikki-wantimaa",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Sunrise Ceremony: Bikki Wantimaa is a community / other event at Brisbane Festival.",
+      "description": "Each Friday morning the Sunrise Ceremony: Bikki Wantimaa acknowledges and gives thanks to the lands on which the Festival takes place, honouring First Nations peoples who have witnessed the sunrise on these lands for thousands of years.",
       "image": "https://www.brisbanefestival.com.au/finnmullen109a9521-crop",
       "category": "Community / Other",
       "tags": [
         "ceremony",
-        "culture",
-        "community"
+        "first nations",
+        "culture"
       ],
       "social": true,
       "intellectual": false,
@@ -2061,17 +2039,17 @@
       "link": "https://www.brisbanefestival.com.au/events/dance-with-tom",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dance with Tom is a workshop / class event at Brisbane Festival.",
+      "description": "Join Tom for a joyful live stage experience celebrating Language from the Yugambeh Region, Culture and storytelling through movement, music and dance.",
       "image": "https://www.brisbanefestival.com.au/9_dancewithtom_c-1267_iview_programpage_3600x2025_clean",
-      "category": "Workshop / Class",
+      "category": "Concert / Music",
       "tags": [
         "dance",
-        "movement",
-        "exercise"
+        "culture",
+        "storytelling"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
       "creative": true
     },
     {
@@ -2083,13 +2061,13 @@
       "link": "https://www.brisbanefestival.com.au/events/dead-puppet-society-sculptures-and-sips-workshops",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dead Puppet Society: Sculptures & Sips Workshops is a workshop / class event at Brisbane Festival.",
+      "description": "Love art and design with a side of champagne? Dive into one of Dead Puppet Society’s Sculptures & Sips workshops. Create and take home your own handmade creation, connect with like-minded makers, and work alongside Dead Puppet Society artisans in their Fabrication Workshop — where the puppets and props from their productions are imagined, designed, and brought to life.",
       "image": "https://www.brisbanefestival.com.au/sculptures-and-sips-6_georgia-haupt",
       "category": "Workshop / Class",
       "tags": [
-        "puppets",
-        "craft",
-        "social"
+        "sculpture",
+        "art",
+        "craft"
       ],
       "social": true,
       "intellectual": false,
@@ -2105,13 +2083,13 @@
       "link": "https://www.brisbanefestival.com.au/events/dead-puppet-society-puppet-construction-workshop",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dead Puppet Society: Puppet Construction Workshop is a workshop / class event at Brisbane Festival.",
+      "description": "Puppet Construction takes puppetry manipulation skills to the next level by allowing young people to design, craft and build their very own tabletop sized puppet.",
       "image": "https://www.brisbanefestival.com.au/table-top",
       "category": "Workshop / Class",
       "tags": [
         "puppets",
         "craft",
-        "making"
+        "kids"
       ],
       "social": false,
       "intellectual": false,
@@ -2127,18 +2105,18 @@
       "link": "https://www.brisbanefestival.com.au/events/quandamooka-festival-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Quandamooka Festival is a community / other event at Brisbane Festival.",
+      "description": "Get away from the city for a vibrant celebration of Culture on Stradbroke Island.",
       "image": "https://www.brisbanefestival.com.au/quandamooka_bf25_credit_nikki-michail-@nikkimichail",
       "category": "Community / Other",
       "tags": [
-        "culture",
         "festival",
+        "culture",
         "community"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
       "title": "Love Me Again Market: Morningside",
@@ -2149,12 +2127,12 @@
       "link": "https://www.brisbanefestival.com.au/events/love-me-again-market-morningside",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Love Me Again Market: Morningside is a social / meetup event at Brisbane Festival.",
+      "description": "Love Me Again Market is curating a special Brisbane Festival edition combining pre-loved fashion, music, community and great vibes all in one unforgettable day.",
       "image": "https://www.brisbanefestival.com.au/lmam-5-year-birthday-2025-taylor-kezia-photography-38",
       "category": "Social / Meetup",
       "tags": [
         "market",
-        "shopping",
+        "fashion",
         "community"
       ],
       "social": true,
@@ -2171,40 +2149,18 @@
       "link": "https://www.brisbanefestival.com.au/events/mindful-art-mornings-at-museum-of-brisbane",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Mindful Art Mornings at Museum of Brisbane is a workshop / class event at Brisbane Festival.",
+      "description": "Mindful Art Morning invites early risers to the Museum before opening hours for a gentle, guided moment of pause.",
       "image": "https://www.brisbanefestival.com.au/mob-mindful-art-mornings-photo-katie-bennett",
       "category": "Workshop / Class",
       "tags": [
         "art",
         "mindfulness",
-        "creative"
+        "museum"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true
-    },
-    {
-      "title": "Transurban Bridge to Brisbane",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/transurban-bridge-to-brisbane",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Transurban Bridge to Brisbane is a community / other event at Brisbane Festival.",
-      "image": "https://www.brisbanefestival.com.au/5km-start",
-      "category": "Community / Other",
-      "tags": [
-        "sport",
-        "fitness",
-        "outdoor"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
     },
     {
       "title": "Talk of the Town: True crime, death and the live body",
@@ -2215,13 +2171,13 @@
       "link": "https://www.brisbanefestival.com.au/events/talk-of-the-town-2",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Talk of the Town: True crime, death and the live body is a public lecture event at Brisbane Festival.",
+      "description": "We are living through a cultural obsession with true crime.",
       "image": "https://www.brisbanefestival.com.au/scorched-earth-credit-soundofphotography",
       "category": "Public Lecture",
       "tags": [
+        "true crime",
         "talk",
-        "crime",
-        "philosophy"
+        "culture"
       ],
       "social": false,
       "intellectual": true,
@@ -2237,13 +2193,13 @@
       "link": "https://www.brisbanefestival.com.au/events/talk-of-the-town-3",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Talk of the Town: Collective bodies, international spaces is a public lecture event at Brisbane Festival.",
+      "description": "Originating in the 18th Century, international circus arts have evolved beyond the Big Top.",
       "image": "https://www.brisbanefestival.com.au/escape-_-credit-cheryl-mann-(1)",
       "category": "Public Lecture",
       "tags": [
-        "talk",
-        "society",
-        "politics"
+        "circus",
+        "history",
+        "talk"
       ],
       "social": false,
       "intellectual": true,
@@ -2259,15 +2215,15 @@
       "link": "https://www.brisbanefestival.com.au/events/flipside-circus-workshops",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Flipside Circus Workshops is a workshop / class event at Brisbane Festival.",
+      "description": "Step right up and give some circus skills a go!",
       "image": "https://www.brisbanefestival.com.au/26_flipside-circus_ground-based-workshops_on-location-credit-pete-wallis-(3)",
       "category": "Workshop / Class",
       "tags": [
         "circus",
-        "fitness",
-        "movement"
+        "skills",
+        "active"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true
@@ -2281,13 +2237,13 @@
       "link": "https://www.brisbanefestival.com.au/events/common-people-dance-project",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Common People Dance Project Workshop is a workshop / class event at Brisbane Festival.",
+      "description": "Discover the joy of choreographed dance, celebrate community, and lose yourself in the moment!",
       "image": "https://www.brisbanefestival.com.au/common-people-dance-project-claudia-baxter",
       "category": "Workshop / Class",
       "tags": [
         "dance",
         "community",
-        "movement"
+        "active"
       ],
       "social": true,
       "intellectual": false,
@@ -2303,13 +2259,13 @@
       "link": "https://www.brisbanefestival.com.au/events/dance-workshops-hiphoporstreet-dance",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "HipHop/Street Dance Workshop with Bring a Plate is a workshop / class event at Brisbane Festival.",
+      "description": "Inclusive sessions that celebrate movement, creativity, and connection.",
       "image": "https://www.brisbanefestival.com.au/bring-a-plate-6-feb-24_0504-(3)-(4)-(4)-min-(2)",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "hiphop",
-        "movement"
+        "dance",
+        "active"
       ],
       "social": true,
       "intellectual": false,
@@ -2325,13 +2281,13 @@
       "link": "https://www.brisbanefestival.com.au/events/bollywood-dance-workshops-dance-masala",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Bollywood Dance Workshop with Dance Masala is a workshop / class event at Brisbane Festival.",
+      "description": "Celebrating culture, community, and confidence through dance.",
       "image": "https://www.brisbanefestival.com.au/powerhouse_credit-smit-mehta",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "bollywood",
-        "movement"
+        "dance",
+        "culture"
       ],
       "social": true,
       "intellectual": false,
@@ -2347,13 +2303,13 @@
       "link": "https://www.brisbanefestival.com.au/events/beat-and-move-an-african-dance-adventure",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Beat and Move Workshop: An African Dance Adventure with Yenenesh Nigusse is a workshop / class event at Brisbane Festival.",
+      "description": "Every beat inspires movement, every rhythm tells a story, and everyone becomes part of the celebration.",
       "image": "https://www.brisbanefestival.com.au/dsc00595",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "african",
-        "movement"
+        "dance",
+        "rhythm"
       ],
       "social": true,
       "intellectual": false,
@@ -2369,13 +2325,13 @@
       "link": "https://www.brisbanefestival.com.au/events/function-well-mat-sessions",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Function Well Mat Sessions is a workshop / class event at Brisbane Festival.",
+      "description": "Power Pilates, Sound Healing, Breathwork, Frequency & Flow, Frequency & Flow",
       "image": "https://www.brisbanefestival.com.au/function-well-mat-sessions-(breathwork)",
       "category": "Workshop / Class",
       "tags": [
-        "fitness",
-        "yoga",
-        "health"
+        "pilates",
+        "wellness",
+        "active"
       ],
       "social": false,
       "intellectual": false,
@@ -2391,13 +2347,13 @@
       "link": "https://www.brisbanefestival.com.au/events/dance-workshops-rio-rhythmics-latin-dance-academy",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Latin Dance Workshop with Rio Rhythmics Latin Dance Academy is a workshop / class event at Brisbane Festival.",
+      "description": "A joyful journey through the rhythms and cultures of Latin America and the Caribbean.",
       "image": "https://www.brisbanefestival.com.au/rio-rhythmics-carnaval-2",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "latin",
-        "movement"
+        "dance",
+        "rhythm"
       ],
       "social": true,
       "intellectual": false,
@@ -2413,12 +2369,12 @@
       "link": "https://www.brisbanefestival.com.au/events/prita-tina-yeganeh-patterns-of-connection-workshop",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Patterns of Connection Workshop with Prita Tina Yeganeh is a workshop / class event at Brisbane Festival.",
+      "description": "Create your own visual language. A hands-on introduction to visual storytelling and collective making.",
       "image": "https://www.brisbanefestival.com.au/prita-tina-yeganeh_-patterns-of-connection_-photographer-thomas-oliver",
       "category": "Workshop / Class",
       "tags": [
         "art",
-        "connection",
+        "storytelling",
         "creative"
       ],
       "social": true,
@@ -2435,13 +2391,13 @@
       "link": "https://www.brisbanefestival.com.au/events/dance-workshops-belly-dance",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Bellydance Workshop with Brisbane Bellydance Academy is a workshop / class event at Brisbane Festival.",
+      "description": "Come experience the joy of bellydancing.",
       "image": "https://www.brisbanefestival.com.au/1bc93829-5afc-4311-8cb7-0db186334f95",
       "category": "Workshop / Class",
       "tags": [
-        "dance",
         "bellydance",
-        "movement"
+        "dance",
+        "active"
       ],
       "social": true,
       "intellectual": false,
@@ -2457,13 +2413,13 @@
       "link": "https://www.brisbanefestival.com.au/events/mob-presents-mindful-art-morning",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "MoB Presents: Mindful Art Morning Workshop with Nadine McDonald-Dowd is a workshop / class event at Brisbane Festival.",
+      "description": "Hands on Country – floral workshop with Blak Botanics",
       "image": "https://www.brisbanefestival.com.au/mob-mindful-art-mornings-photo-katie-bennett",
       "category": "Workshop / Class",
       "tags": [
         "art",
-        "mindfulness",
-        "creative"
+        "floral",
+        "craft"
       ],
       "social": false,
       "intellectual": false,
@@ -2479,7 +2435,7 @@
       "link": "https://www.brisbanefestival.com.au/events/writing-picture-books-with-jack-carty",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Writing Picture Books Workshop with Jack Carty is a workshop / class event at Brisbane Festival.",
+      "description": "Join Queensland-based author and singer-songwriter Jack Carty for a fun, hands-on 90-minute workshop exploring the art of writing picture books for young readers. With four books published through Scholastic Australia, international releases, and more on the way, Jack digs into the craft and creativity behind picture book writing. What makes a great idea, how to shape it into a story, and how to find your own voice.",
       "image": "https://www.brisbanefestival.com.au/jack-carty-by-maria-christina-2",
       "category": "Workshop / Class",
       "tags": [
@@ -2501,17 +2457,17 @@
       "link": "https://www.brisbanefestival.com.au/events/wake-up-and-sing-toowong-state-school-signing-choir",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Wake Up & Sing!",
+      "description": "Join the Toowong State School Signing Choir for a morning of singing and learning some basic Auslan signs. The choir consists of Auslan (Australian Sign Language) students from Years 4–6 who are Deaf, hard of hearing and hearing, and will perform a selection of popular songs to brighten your day.",
       "image": "https://www.brisbanefestival.com.au/even-cgen-2022-2",
-      "category": "Concert / Music",
+      "category": "Workshop / Class",
       "tags": [
         "singing",
-        "choir",
+        "auslan",
         "music"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -2523,17 +2479,17 @@
       "link": "https://www.brisbanefestival.com.au/events/wake-up-and-sing-with-the-cast-of-shel-we",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Wake Up & Sing!",
+      "description": "Join in the chorus as we start the day with song and play!",
       "image": "https://www.brisbanefestival.com.au/sbp-5",
-      "category": "Concert / Music",
+      "category": "Workshop / Class",
       "tags": [
         "singing",
-        "performance",
-        "music"
+        "music",
+        "community"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -2545,9 +2501,9 @@
       "link": "https://www.brisbanefestival.com.au/events/wake-up-and-sing-cheep-trill",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Wake Up & Sing!",
+      "description": "Come along, raise your voice, and discover why singing together is one of life's simple pleasures.",
       "image": "https://www.brisbanefestival.com.au/photo-1-(1)",
-      "category": "Concert / Music",
+      "category": "Workshop / Class",
       "tags": [
         "singing",
         "choir",
@@ -2555,7 +2511,7 @@
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -2567,40 +2523,18 @@
       "link": "https://www.brisbanefestival.com.au/events/dance-workshop-with-shel-we",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dance Workshop with the cast of Shel We is a workshop / class event at Brisbane Festival.",
+      "description": "Delight in this upbeat, full of mischief enchanting dance style.",
       "image": "https://www.brisbanefestival.com.au/sbp-5",
       "category": "Workshop / Class",
       "tags": [
         "dance",
-        "movement",
+        "active",
         "performance"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
       "creative": true
-    },
-    {
-      "title": "Run Wild through South Bank",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/run-wild-through-south-bank",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Run Wild through South Bank is a community / other event at Brisbane Festival.",
-      "image": "https://www.brisbanefestival.com.au/dgb07kno7qonvm6kwcqznug7",
-      "category": "Community / Other",
-      "tags": [
-        "running",
-        "fitness",
-        "outdoor"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
     },
     {
       "title": "No One Gets Out of Here Alive",
@@ -2611,13 +2545,13 @@
       "link": "https://brisbanefestival.com.au/events/no-one-gets-out-of-here-alive",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "For everyone who’s going to die…",
+      "description": "Created by The Farm — known for bold physicality, emotional directness, and irreverent theatricality — No One Gets Out of Here Alive confronts mortality into a deeply visceral experience that takes us beyond words into the nature of dying.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "theatre",
         "performance",
-        "arts"
+        "death"
       ],
       "social": false,
       "intellectual": true,
@@ -2677,18 +2611,18 @@
       "link": "https://brisbanefestival.com.au/events/daybreaker",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Wake up and DANCE!",
+      "description": "DAYBREAKER is a global, alcohol-free morning dance and wellness event that combines yoga, fitness, and high-energy dance to start the day with joy and community.",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Social / Meetup",
       "tags": [
         "dance",
-        "party",
+        "wellness",
         "morning"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": true
+      "hands_on": true,
+      "creative": false
     }
   ]
 }

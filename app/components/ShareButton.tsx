@@ -10,6 +10,7 @@ import { useState } from "react";
 import { eventPath } from "../../src/shared.ts";
 import type { Event } from "../types";
 import { shareEvent } from "../utils/share";
+import { noteInterest } from "../utils/taste";
 
 interface Props {
 	event: Event;
@@ -38,6 +39,11 @@ export default function ShareButton({
 		if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
 		e.preventDefault();
 		const outcome = await shareEvent(event, cityKey);
+		// Counted on intent, not on success: a cancelled share sheet still says
+		// this event was worth reaching for, and "copied" vs "shared" is a
+		// platform detail. A failure falls through to the event's own page
+		// below, which is not a reason to forget the interest either.
+		noteInterest(event, cityKey, "share");
 		if (outcome === "copied") {
 			setCopied(true);
 			setTimeout(() => setCopied(false), 2000);

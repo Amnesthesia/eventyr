@@ -1,3 +1,4 @@
+import { X } from "lucide-react";
 import { useEffect } from "react";
 
 /** Matches the key the blocking script in Base.astro's head reads. */
@@ -41,25 +42,31 @@ export function Intro({ city }: { city: string }) {
 	}, []);
 
 	return (
-		// biome-ignore lint/a11y/useKeyWithClickEvents: dismissable decoration, not a control — the text stays reachable in the DOM
-		<article
-			className="container city-intro"
-			onClick={hide}
-			title="click to hide"
-		>
-			Wondering what's on in <strong>{city}</strong> today, tomorrow or this
-			weekend? dothings.lol is a curated event discovery platform that
-			aggregates events from dozens of local sources — including {city} CBD
-			venues — and uses multiple AI models to filter and rank them —
-			highlighting workshops, meetups, live music, community and social events,
-			art classes, outdoor activities, talks, markets, and unique experiences
-			worth leaving the house for, without the clutter or spam found on most
-			event websites. Whether you're searching for things to do in{" "}
-			<a href="/brisbane/">Brisbane</a> this weekend, creative events on the{" "}
-			<a href="/gold-coast/">Gold Coast</a>, or social activities on the{" "}
-			<a href="/sunshine-coast/">Sunshine Coast</a>, dothings.lol helps you
-			discover high-signal local events in one clean, minimal interface without
-			ads.
-		</article>
+		<div className="container city-intro-wrap">
+			<p className="city-intro">
+				Wondering what's on in <strong>{city}</strong> today, tomorrow or this
+				weekend? dothings.lol is a curated event discovery platform that
+				aggregates events from dozens of local sources — including {city} CBD
+				venues — and uses multiple AI models to filter and rank them —
+				highlighting workshops, meetups, live music, community and social
+				events, art classes, outdoor activities, talks, markets, and unique
+				experiences worth leaving the house for, without the clutter or spam
+				found on most event websites. Whether you're searching for things to do
+				in <a href="/brisbane/">Brisbane</a> this weekend, creative events on
+				the <a href="/gold-coast/">Gold Coast</a>, social activities on the{" "}
+				<a href="/sunshine-coast/">Sunshine Coast</a>, or something on in{" "}
+				<a href="/byron/">Byron Bay</a>, dothings.lol helps you discover
+				high-signal local events in one clean, minimal interface without ads.
+			</p>
+			<button
+				type="button"
+				className="icon-btn"
+				onClick={hide}
+				aria-label="Dismiss introduction"
+				title="Dismiss"
+			>
+				<X size={16} strokeWidth={2} />
+			</button>
+		</div>
 	);
 }

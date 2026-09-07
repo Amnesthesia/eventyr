@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lord Mayor's Seniors Cabaret Showcase
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-wt54zw@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T110000
+DTEND;TZID=Australia/Brisbane:20260909T130000
+SUMMARY:Lord Mayor's Seniors Cabaret Showcase
+DESCRIPTION:Brisbane's Lord Mayor's Seniors Cabaret is back with a free sho
+ wcase celebrating Legends and Icons — the people\, moments and music tha
+ t shaped generations. Seniors get expert guidance in a non-competitive spa
+ ce to develop their creative talents\, then perform the results. Seven Hil
+ ls Hub hosts the…
+LOCATION:Seven Hills Hub\, Seven Hills
+URL:https://musick.com.au/gig/lord-mayors-seniors-cabaret-showcase-2026-09-
+ 09/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Luna\, A Journey to the Moon
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kmvxki@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T100000
+DTEND;TZID=Australia/Brisbane:20260910T120000
+SUMMARY:Luna\, A Journey to the Moon
+DESCRIPTION:Luna is an immersive VR experience that walks you through the A
+ pollo 11 mission—from NASA training grounds to the lunar surface. You'll
+  suit up like an astronaut\, blast off aboard the Saturn V\, and step onto
+  the Moon while hearing authentic NASA transmissions and astronaut reflect
+ ions. It's a…
+LOCATION:Fever Hub\, Brisbane\, Australia
+URL:https://musick.com.au/gig/luna-a-journey-to-the-moon-2026-09-10/
+END:VEVENT
+END:VCALENDAR

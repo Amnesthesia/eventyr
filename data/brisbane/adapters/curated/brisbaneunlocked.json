@@ -7,29 +7,6 @@
   "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Cardio tennis",
-      "datetime": "Mon 7 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-07T19:00:00",
-      "datetime_end_iso": "2026-09-07T20:00:00",
-      "location": "Northshore Tennis Centre, Hamilton",
-      "link": "https://www.brisbaneunlocked.com.au/cardio-tennis-2026-09-07",
-      "cost": "See link",
-      "source": "Brisbane Unlocked",
-      "description": "Bookings essential. This is a fun, social, high-energy group fitness session that combines tennis with a great cardio workout to music. No tennis experience is required.",
-      "image": "https://xwqmmcpcubdtlshsvzsi.supabase.co/storage/v1/object/public/submission-images/listings/bab63613-818d-4f06-b471-bd2455ce2b15.jpg",
-      "category": "Workshop / Class",
-      "tags": [
-        "tennis",
-        "fitness",
-        "cardio",
-        "music"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": false
-    },
-    {
       "title": "Stories You Wear: Magpie Goose",
       "datetime": "Tue 8 Sep",
       "datetime_iso": "2026-09-08",
@@ -61,16 +38,15 @@
       "link": "https://www.brisbaneunlocked.com.au/piano-man-2026-06-09",
       "cost": "See link",
       "source": "Brisbane Unlocked",
-      "description": "Gather round the baby grand for a wild late-night singalong.",
+      "description": "Discover gigs, markets, experiences, venues and neighbourhood events across Brisbane in one warm, local-first guide.",
       "image": "https://xwqmmcpcubdtlshsvzsi.supabase.co/storage/v1/object/public/submission-images/listings/f6e97470-ee74-4a12-bfd1-f5e73d493356.jpg",
       "category": "Concert / Music",
       "tags": [
-        "music",
-        "singalong",
-        "performance",
-        "social"
+        "piano",
+        "live",
+        "music"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -538,6 +514,28 @@
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "First 5 Forever babies, books and rhymes",
+      "datetime": "Tue 8 Sep, 10:45 AM",
+      "datetime_iso": "2026-09-08T10:45:00",
+      "datetime_end_iso": "2026-09-08T11:15:00",
+      "location": "Carindale Library",
+      "link": "https://www.brisbaneunlocked.com.au/first-5-forever-babies-books-and-rhymes-2026-09-08",
+      "cost": "See link",
+      "source": "Brisbane Unlocked",
+      "description": "Meet other parents and babies for a fun rhyme time session of singing, clapping and dancing. Learn songs and action rhymes to nurture your baby's pre-literacy, communication, language and social skills. Ideal for babies aged up to one year. No bookings are required, but places ar",
+      "image": "https://xwqmmcpcubdtlshsvzsi.supabase.co/storage/v1/object/public/submission-images/listings/ff87ca87-e52a-4cbc-8842-6c6e9f43d72a.jpg",
+      "category": "Workshop / Class",
+      "tags": [
+        "babies",
+        "literacy",
+        "parenting"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
     }
   ]
 }

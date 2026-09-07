@@ -143,7 +143,7 @@ const vibes = vibesOf(event as Event);
   schema={schema}
   ogImage={ogImage}
 >
-  <main class="event-page">
+  <main id="main" class="event-page">
     <nav class="event-crumbs" aria-label="Breadcrumb">
       <a href={`/${slug}/`}>{cityData.city.split(",")[0]}</a>
       <span aria-hidden="true">/</span>
@@ -238,6 +238,15 @@ const vibes = vibesOf(event as Event);
             location: event.location,
             description: eventDescription,
             link: event.link,
+            // Not used by the calendar or share helpers: these are what
+            // noteInterest counts, so a share or an add-to-calendar from this
+            // page feeds the taste profile exactly as it does from a card.
+            category: event.category,
+            tags: event.tags,
+            social: event.social,
+            intellectual: event.intellectual,
+            hands_on: event.hands_on,
+            creative: event.creative,
           },
         })}
       />
@@ -256,6 +265,7 @@ const vibes = vibesOf(event as Event);
   import { calendarLinks } from "@react/utils/calendarLinks";
   import { calendarTarget } from "@react/utils/platform";
   import { shareEvent } from "@react/utils/share";
+  import { noteInterest } from "@react/utils/taste";
 
   const holder = document.querySelector("[data-event-json]");
   if (holder?.textContent) {
@@ -280,15 +290,17 @@ const vibes = vibesOf(event as Event);
       if (link?.href) {
         calendar.setAttribute("data-href", link.href);
         calendar.addEventListener("click", () => {
+          noteInterest(event, cityKey, "calendar");
           // Apple's .ics is same-origin and must be handed to the OS; the web
           // template is another site and belongs in its own tab.
           if (target === "apple") window.location.href = link.href;
           else window.open(link.href, "_blank", "noopener");
         });
       } else {
-        calendar.addEventListener("click", () =>
-          downloadEventIcs(event, cityKey),
-        );
+        calendar.addEventListener("click", () => {
+          downloadEventIcs(event, cityKey);
+          noteInterest(event, cityKey, "calendar");
+        });
       }
     }
 
@@ -298,6 +310,7 @@ const vibes = vibesOf(event as Event);
       if (e.metaKey || e.ctrlKey || e.shiftKey) return;
       e.preventDefault();
       const outcome = await shareEvent(event, cityKey);
+      noteInterest(event, cityKey, "share");
       if (outcome === "copied") {
         const previous = share.textContent;
         share.textContent = "Copied";

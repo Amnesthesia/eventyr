@@ -5,6 +5,7 @@ import {
 	useContext,
 	useEffect,
 	useMemo,
+	useRef,
 	useState,
 } from "react";
 import {
@@ -40,6 +41,15 @@ import {
 	syncAllStarredEvents,
 } from "./utils/notifications";
 import { matchesQuery, queryTokens } from "./utils/search";
+import {
+	bumpTaste,
+	loadTaste,
+	logTasteProfile,
+	onTasteChange,
+	rankByTaste,
+	saveTaste,
+	type TasteProfile,
+} from "./utils/taste";
 
 /** The identity saved/hidden sets are keyed by. Not eventHash: stars already
  * in people's localStorage use this basis, and changing it would lose them. */
@@ -89,6 +99,9 @@ interface EventsContextValue {
 	setVibe: (key: VibeKey, state: TriState) => void;
 	resetVibes: () => void;
 	categories: string[];
+	/** Bookmark/share/calendar counts per tag, vibe and category. Exposed so
+	 * the swipe deck can order itself the same way the picks row does. */
+	taste: TasteProfile;
 	starredEvents: Event[];
 	picks: Event[];
 	rest: Event[];
@@ -146,29 +159,57 @@ export function EventsProvider({
 		remove: unhideEvent,
 		clear: clearHidden,
 	} = useStoredSet("eventyr:hidden");
+	// What this browser tends to single out, used to order Top Picks and the
+	// swipe deck. Empty until MIN_SIGNAL interactions, at which point they
+	// start leaning personal.
+	const [taste, setTaste] = useState<TasteProfile>(loadTaste);
+	// Shares and calendar adds are counted by noteInterest, which writes
+	// straight to localStorage from components that may not have this context.
+	// Without this the state here would go stale and the next bookmark would
+	// overwrite those counts.
+	useEffect(() => onTasteChange(setTaste), []);
 	// On by default. Below LOW_SCORE_THRESHOLD is mostly venue promotion —
 	// happy hours, "$13 Lunch Special", schnitzel nights — which the ranker
 	// scores 1–3 and which nobody opened this site to read. The toggle in the
 	// filter bar brings them back, so nothing is unreachable.
 	const [hideLowScore, setHideLowScore] = useState(true);
 
+	/** Count this event's tags, vibes and category in or out of the taste
+	 * profile. An id with no matching event (starred in an earlier week, now
+	 * aged out of the data) changes nothing: the facets to count are gone. That
+	 * only ever loses a decrement, and bumpTaste clamps at zero. */
+	const bumpTasteFor = useCallback(
+		(id: string, delta: number) => {
+			const ev = cityData.events.find((e) => eventId(e) === id);
+			if (!ev) return;
+			setTaste((prev) => {
+				const next = bumpTaste(prev, ev, delta);
+				saveTaste(next);
+				return next;
+			});
+		},
+		[cityData.events],
+	);
+
 	const saveEvent = useCallback(
 		(id: string) => {
 			baseSaveEvent(id);
+			bumpTasteFor(id, 1);
 			const ev = cityData.events.find((e) => eventId(e) === id);
 			if (ev) {
 				schedule1hReminder(ev, cityKey, true);
 			}
 		},
-		[baseSaveEvent, cityData.events, cityKey],
+		[baseSaveEvent, bumpTasteFor, cityData.events, cityKey],
 	);
 
 	const unsaveEvent = useCallback(
 		(id: string) => {
 			baseUnsaveEvent(id);
+			bumpTasteFor(id, -1);
 			cancel1hReminder(id);
 		},
-		[baseUnsaveEvent],
+		[baseUnsaveEvent, bumpTasteFor],
 	);
 
 	const toggleStar = useCallback(
@@ -321,15 +362,22 @@ export function EventsProvider({
 		[cityData, hidden],
 	);
 
+	// From cityData.events, not `filtered`: this populates the category pills
+	// themselves, and deriving it from the filtered list made it depend on
+	// activeCat — once a click narrowed the list to one category, the pill row
+	// shrank to that one pill with no way back except the (also narrowed) "All"
+	// link. A static per-category page (src/pages/[city]/[category].astro)
+	// already ships only that category's events, so this still comes out to a
+	// single pill there — which is exactly right, since there is no other
+	// category's data on that page to switch to client-side.
 	const categories = useMemo(
-		() => [...new Set(filtered.map((e) => e.category).filter(Boolean))],
-		[filtered],
+		() => [...new Set(cityData.events.map((e) => e.category).filter(Boolean))],
+		[cityData],
 	);
 
 	const { starredEvents, picks, rest } = useMemo(() => {
 		const starredEvents: Event[] = [];
-		const picks: Event[] = [];
-		const rest: Event[] = [];
+		const eligible: Event[] = [];
 		// A pick has to START inside the selected dates, not merely overlap them.
 		// The date filter itself is deliberately an overlap test — that is what
 		// makes selecting the last two days of a festival work — but it also
@@ -342,22 +390,32 @@ export function EventsProvider({
 			const start = (e.datetime_iso || "").slice(0, 10);
 			return !!start && start >= dateRange.start && start <= dateRange.end;
 		};
+		const unstarred: Event[] = [];
 		filtered.forEach((e) => {
+			// A saved event lives only in the "saved" section once it's starred —
+			// it used to fall through into picks/rest too, so the exact same card
+			// rendered twice on any page with a save on it.
 			if (starred.has(eventId(e))) {
 				starredEvents.push(e);
+				return;
 			}
-			if (
-				(e.score || 0) >= TOP_PICK_THRESHOLD &&
-				picks.length < 9 &&
-				startsInRange(e)
-			) {
-				picks.push(e);
-			} else {
-				rest.push(e);
+			unstarred.push(e);
+			if ((e.score || 0) >= TOP_PICK_THRESHOLD && startsInRange(e)) {
+				eligible.push(e);
 			}
 		});
+		// Which nine of the eligible events surface is where personalisation
+		// happens: rankByTaste reorders them by score plus how well they match
+		// what this browser has bookmarked, so the row leans toward saved tags,
+		// vibes and categories without anything dropping below the score
+		// threshold. An empty profile leaves the pipeline's own order alone.
+		const picks = rankByTaste(eligible, taste).slice(0, 9);
+		const pickIds = new Set(picks.map(eventId));
+		// Everything the picks row did not take, still in the incoming score
+		// order — including eligible events beyond the nine.
+		const rest = unstarred.filter((e) => !pickIds.has(eventId(e)));
 		return { starredEvents, picks, rest };
-	}, [filtered, starred, dateRange]);
+	}, [filtered, starred, dateRange, taste]);
 
 	/**
 	 * The furthest date the picker lets you choose.
@@ -419,6 +477,16 @@ export function EventsProvider({
 		return coverageEnd && clamped > coverageEnd ? coverageEnd : clamped;
 	}, [coverageStart, coverageEnd, todayStr, cityData?.week_start]);
 
+	// Printed once per load, after picks exist. The feature is invisible by
+	// design — a reordered row looks like no feature at all — so this is the
+	// only way to see what the profile is doing.
+	const logged = useRef(false);
+	useEffect(() => {
+		if (logged.current) return;
+		logged.current = true;
+		logTasteProfile(taste, picks);
+	}, [taste, picks]);
+
 	const value: EventsContextValue = {
 		cityData,
 		filtered,
@@ -458,6 +526,7 @@ export function EventsProvider({
 		dateMax,
 		categories,
 		starredEvents,
+		taste,
 		picks,
 		rest,
 		// Derived from the events rather than taken straight from

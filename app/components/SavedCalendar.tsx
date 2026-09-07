@@ -20,6 +20,7 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { eventPath } from "../../src/shared.ts";
 import { eventId, useEventsContext } from "../context";
+import { useModalDialog } from "../hooks/useModalDialog";
 import type { Event } from "../types";
 import { catToSlug } from "../utils/categorySlug";
 import { addDays, shortDate, startOfWeek } from "../utils/dates";
@@ -69,18 +70,7 @@ export default function SavedCalendar({ events, shared, onClose }: Props) {
 		setQrOpen(!window.matchMedia("(max-width: 820px)").matches);
 	}, []);
 
-	useEffect(() => {
-		function onKeyDown(e: KeyboardEvent) {
-			if (e.key === "Escape") onClose();
-		}
-		document.addEventListener("keydown", onKeyDown);
-		const previous = document.body.style.overflow;
-		document.body.style.overflow = "hidden";
-		return () => {
-			document.removeEventListener("keydown", onKeyDown);
-			document.body.style.overflow = previous;
-		};
-	}, [onClose]);
+	const { ref, close } = useModalDialog(onClose);
 
 	const { lanes, allDayBars, allDayLanes, firstHour, lastHour } = useMemo(
 		() => weekLayout(events, weekStart),
@@ -110,19 +100,18 @@ export default function SavedCalendar({ events, shared, onClose }: Props) {
 	}
 
 	return (
-		<div className="sheet-backdrop cal-modal-backdrop">
+		<dialog
+			ref={ref}
+			className="sheet-backdrop cal-modal-backdrop"
+			aria-label="Saved events calendar"
+		>
 			<button
 				type="button"
 				className="sheet-scrim"
 				aria-label="Close calendar"
-				onClick={onClose}
+				onClick={close}
 			/>
-			<div
-				className="cal-modal"
-				role="dialog"
-				aria-modal="true"
-				aria-label="Saved events calendar"
-			>
+			<div className="cal-modal">
 				<div className="cal-modal-head">
 					<div className="cal-week-nav">
 						<button
@@ -148,7 +137,7 @@ export default function SavedCalendar({ events, shared, onClose }: Props) {
 					<button
 						type="button"
 						className="icon-btn"
-						onClick={onClose}
+						onClick={close}
 						aria-label="Close"
 					>
 						<X size={18} />
@@ -311,6 +300,6 @@ export default function SavedCalendar({ events, shared, onClose }: Props) {
 					</aside>
 				</div>
 			</div>
-		</div>
+		</dialog>
 	);
 }

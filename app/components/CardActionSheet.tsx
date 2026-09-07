@@ -9,12 +9,14 @@ import {
 	Check,
 	Share2,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useEventsContext } from "../context";
+import { useModalDialog } from "../hooks/useModalDialog";
 import type { Event } from "../types";
 import { calendarLinks } from "../utils/calendarLinks";
 import { downloadEventIcs } from "../utils/ics";
 import { shareEvent } from "../utils/share";
+import { noteInterest } from "../utils/taste";
 
 interface Props {
 	event: Event;
@@ -33,6 +35,7 @@ export default function CardActionSheet({
 }: Props) {
 	const { cityData } = useEventsContext();
 	const [copied, setCopied] = useState(false);
+	const { ref, close } = useModalDialog(onClose);
 	// Every calendar route, not just the download: this sheet is the
 	// discoverable place to pick one when the button's platform guess is wrong.
 	// No date means no calendar entry at all, and calendarLinks drops the rows
@@ -41,55 +44,37 @@ export default function CardActionSheet({
 	const calendars = calendarLinks(event, cityKey, cityData.timezone);
 	const canAddToCalendar = calendars.some((link) => link.href !== null);
 
-	useEffect(() => {
-		function onKeyDown(e: KeyboardEvent) {
-			if (e.key === "Escape") onClose();
-		}
-		document.addEventListener("keydown", onKeyDown);
-		// The page behind a modal sheet must not scroll under it.
-		const previous = document.body.style.overflow;
-		document.body.style.overflow = "hidden";
-		return () => {
-			document.removeEventListener("keydown", onKeyDown);
-			document.body.style.overflow = previous;
-		};
-	}, [onClose]);
-
 	async function handleShare() {
 		const outcome = await shareEvent(event, cityKey);
+		noteInterest(event, cityKey, "share");
 		if (outcome === "copied") {
 			// Held open briefly so the "Link copied" state is actually seen.
 			setCopied(true);
-			setTimeout(onClose, 900);
+			setTimeout(close, 900);
 			return;
 		}
-		if (outcome !== "cancelled") onClose();
+		if (outcome !== "cancelled") close();
 	}
 
 	return (
-		<div className="sheet-backdrop">
+		<dialog ref={ref} className="sheet-backdrop" aria-label={event.title}>
 			{/* A real button rather than a click handler on the backdrop div: it is
-			    focusable, it announces itself, and it needs no keyboard handler of
-			    its own. Escape closes the sheet too. */}
+			    focusable and it announces itself. Escape closes the sheet too, via
+			    the dialog's own handling. */}
 			<button
 				type="button"
 				className="sheet-scrim"
 				aria-label="Close menu"
-				onClick={onClose}
+				onClick={close}
 			/>
-			<div
-				className="sheet"
-				role="dialog"
-				aria-modal="true"
-				aria-label={event.title}
-			>
+			<div className="sheet">
 				<p className="sheet-title">{event.title}</p>
 				<button
 					type="button"
 					className="sheet-action"
 					onClick={() => {
 						onStarClick();
-						onClose();
+						close();
 					}}
 				>
 					{isStarred ? <BookmarkCheck size={16} /> : <Bookmark size={16} />}
@@ -106,7 +91,10 @@ export default function CardActionSheet({
 								// OS; the web templates are another site.
 								target={link.key === "apple" ? undefined : "_blank"}
 								rel="noopener"
-								onClick={onClose}
+								onClick={() => {
+									noteInterest(event, cityKey, "calendar");
+									close();
+								}}
 							>
 								<CalendarPlus size={16} />
 								{link.label}
@@ -118,7 +106,8 @@ export default function CardActionSheet({
 								className="sheet-action"
 								onClick={() => {
 									downloadEventIcs(event, cityKey);
-									onClose();
+									noteInterest(event, cityKey, "calendar");
+									close();
 								}}
 							>
 								<CalendarPlus size={16} />
@@ -134,11 +123,11 @@ export default function CardActionSheet({
 				<button
 					type="button"
 					className="sheet-action sheet-cancel"
-					onClick={onClose}
+					onClick={close}
 				>
 					Cancel
 				</button>
 			</div>
-		</div>
+		</dialog>
 	);
 }

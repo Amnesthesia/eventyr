@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:‘Sister City’ Children’s Art Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15qnrn@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T140000
+DTEND;TZID=Australia/Brisbane:20260919T160000
+SUMMARY:‘Sister City’ Children’s Art Workshop
+DESCRIPTION:The Line & Rail Artspace is pleased to host fun and creative co
+ mmunity art workshop inspired by the theme “Our Town Logan.”
+LOCATION:The Line & Rail Artspace
+URL:https://www.loganarts.com.au/event/sister-city-childrens-art-workshop-2
+ /
+END:VEVENT
+END:VCALENDAR

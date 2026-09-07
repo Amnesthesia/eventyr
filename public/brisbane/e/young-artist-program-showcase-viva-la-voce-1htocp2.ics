@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Young Artist Program Showcase: Viva La Voce
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1htocp2@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T110000
+DTEND;TZID=Australia/Brisbane:20260910T130000
+SUMMARY:Young Artist Program Showcase: Viva La Voce
+DESCRIPTION:Young Artist Program Showcase: Viva La Voce live at Opera Queen
+ sland Studio\, S01/140 Grey St\, South Brisbane OPERA Queensland is proudl
+ y supported by Br...
+LOCATION:Opera Queensland Studio\, S01/140 Grey St\, South Brisbane
+URL:https://musick.com.au/gig/young-artist-program-showcase-viva-la-voce-20
+ 26-09-10/
+END:VEVENT
+END:VCALENDAR

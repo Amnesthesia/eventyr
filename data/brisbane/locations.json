@@ -358,6 +358,12 @@
       "lng": 153.0260341,
       "label": "Brisbane QLD, Australia"
     },
+    "Fever Hub, Brisbane, Australia": {
+      "lat": -27.4704528,
+      "lng": 153.0260341,
+      "label": "Brisbane QLD, Australia",
+      "country": "AU"
+    },
     "Fever Skygate | Exhibition and Immersive Experience centre, Brisbane Airport": {
       "lat": -27.4157924,
       "lng": 153.0776187,
@@ -759,10 +765,22 @@
       "lng": 153.0238277,
       "label": "Level 3, Brisbane City Hall, 64 Adelaide St, Brisbane City QLD 4000, Australia"
     },
+    "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000": {
+      "lat": -27.4686797,
+      "lng": 153.0238277,
+      "label": "Level 3, Brisbane City Hall, 64 Adelaide St, Brisbane City QLD 4000, Australia",
+      "country": "AU"
+    },
     "Musgrave Park Pool, South Brisbane": {
       "lat": -27.4803263,
       "lng": 153.0164167,
       "label": "100 Edmondstone St, South Brisbane QLD 4101, Australia"
+    },
+    "Musick.com.au Brisbane gigs listing, South Bank, Brisbane City": {
+      "lat": -27.4791458,
+      "lng": 153.0219405,
+      "label": "South Bank, South Brisbane QLD, Australia",
+      "country": "AU"
     },
     "Netherworld, 186 Brunswick Street": {
       "lat": -27.4559203,
@@ -918,6 +936,12 @@
       "lat": -33.8443,
       "lng": 151.0621,
       "label": "19 Edwin Flack Ave, Sydney Olympic Park NSW 2127, Australia"
+    },
+    "Qudos Bank Arena, Sydney Olympic Park · Sydney": {
+      "lat": -33.8443,
+      "lng": 151.0621,
+      "label": "19 Edwin Flack Ave, Sydney Olympic Park NSW 2127, Australia",
+      "country": "AU"
     },
     "Queen Street Mall Stage": {
       "lat": -27.4702671,
@@ -1135,6 +1159,12 @@
       "lng": 153.0219405,
       "label": "South Bank, South Brisbane QLD, Australia"
     },
+    "Sports Central Caboolture, Caboolture": {
+      "lat": -27.0831741,
+      "lng": 152.9516555,
+      "label": "Corner of Hasking Street and, Beerburrum Rd, Caboolture QLD 4510, Australia",
+      "country": "AU"
+    },
     "St Lucia": {
       "lat": -27.5020948,
       "lng": 152.9968212,
@@ -1277,6 +1307,12 @@
       "lng": 144.9214743,
       "label": "351 Plummer St, Port Melbourne VIC 3207, Australia"
     },
+    "The Timber Yard, Port Melbourne · Melbourne": {
+      "lat": -37.8331021,
+      "lng": 144.9214743,
+      "label": "351 Plummer St, Port Melbourne VIC 3207, Australia",
+      "country": "AU"
+    },
     "The Tivoli, 52 Costin St": {
       "lat": -27.4521218,
       "lng": 153.0315037,
@@ -1296,6 +1332,12 @@
       "lat": -27.4523211,
       "lng": 153.0419127,
       "label": "7/9 Stratton St, Newstead QLD 4006, Australia"
+    },
+    "The Triffid Fortitude Valley": {
+      "lat": -27.4523211,
+      "lng": 153.0419127,
+      "label": "7/9 Stratton St, Newstead QLD 4006, Australia",
+      "country": "AU"
     },
     "The Triffid, 7/9 Stratton Street, Newstead": {
       "lat": -27.4523211,

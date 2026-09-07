@@ -11,39 +11,39 @@
       "datetime": "Sat 12 Sep, 10:30 AM",
       "datetime_iso": "2026-09-12T10:30:00",
       "datetime_end_iso": "",
-      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
       "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Tea & Tour: Kirstie Macleod is an Arts / Exhibition event at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "Enjoy an exclusive Tea & Tour with one of Brisbane’s most distinctive collectors - Malcolm Enright. This special session gives you a rare look inside his remarkable collections and the stories behind them.",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Public Lecture",
       "tags": [
-        "art",
+        "history",
         "tour",
         "culture"
       ],
       "social": true,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
       "title": "Artist in Residence: Sachém Parkin-Owens",
       "datetime": "Sat 22 Nov 2025 – Sat 10 Oct 2026",
       "datetime_iso": "2025-11-22",
       "datetime_end_iso": "2026-10-10",
-      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
       "link": "https://www.museumofbrisbane.com.au/whats-on/sachem-parkin-owens/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Artist in Residence: Sachém Parkin-Owens is an Arts / Exhibition event at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "Martin Edge is a Queensland artist whose playful works capture moments from his everyday life, including both real and imagined adventures. For his Artist in Residence project at Museum of Brisbane, Edge will transform the walls of the Fairfax Gallery with a large-scale mural created over three weeks. Visitors are invited to watch and engage with the artist as the work unfolds, offering a rare insight into his creative process.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
-        "residency",
-        "creative"
+        "mural",
+        "painting"
       ],
       "social": false,
       "intellectual": false,
@@ -55,20 +55,20 @@
       "datetime": "Sat 22 Nov 2025 – Sun 31 Jan 2027",
       "datetime_iso": "2025-11-22",
       "datetime_end_iso": "2027-01-31",
-      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
       "link": "https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Stories You Wear: Magpie Goose is an Arts / Exhibition event at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "This exhibition Stories You Wear: Magpie Goose is a exhibition in collaborate with Magpie Goose, a proudly Aboriginal owned and led fashion and social enterprise, to celebrate extraordinary First Peoples cultural stories and designs. This exclusive to Brisbane exhibition offers a deep dive into the work of some of the region’s most talented First Peoples artists and designers. Using clothing as a canvas for storytelling, this exciting collaboration will connect audiences with the rich and diverse cultural expressions of First Peoples communities in Queensland and beyond.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "fashion",
-        "design",
-        "history"
+        "indigenous",
+        "design"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     },
@@ -77,17 +77,17 @@
       "datetime": "Mon 7 Sep",
       "datetime_iso": "2026-09-07",
       "datetime_end_iso": "",
-      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
       "link": "https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Perspectives of Brisbane is an Arts / Exhibition event at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "Perspectives of Brisbane is a compelling snapshot of Brisbane’s history, our city's milestone moments and the unique culture of our creative and connected city.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "brisbane",
         "history",
-        "photography"
+        "brisbane",
+        "culture"
       ],
       "social": false,
       "intellectual": true,
@@ -99,17 +99,17 @@
       "datetime": "Thu 17 Sep",
       "datetime_iso": "2026-09-17",
       "datetime_end_iso": "",
-      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
       "link": "https://www.museumofbrisbane.com.au/whats-on/crafty-party-bonnie-hislop/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Crafty Party with Bonnie Hislop is a Workshop / Class event at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "Don't just deck the halls these holidays, cover them with sparkles with a very special crafty party brought to you by Tinsel Queen, Rachel Burke.",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
         "craft",
-        "art",
-        "social"
+        "party",
+        "design"
       ],
       "social": true,
       "intellectual": false,
@@ -125,18 +125,18 @@
       "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Tea & Tour: Kirstie Macleod is an Arts / Exhibition event at Museum of Brisbane, King George Square (Brisbane City Hall).",
+      "description": "Enjoy an exclusive Tea & Tour with one of Brisbane’s most distinctive collectors - Malcolm Enright. This special session gives you a rare look inside his remarkable collections and the stories behind them.",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Public Lecture",
       "tags": [
-        "art",
+        "history",
         "tour",
         "culture"
       ],
       "social": true,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
-      "creative": true
+      "creative": false
     }
   ]
 }

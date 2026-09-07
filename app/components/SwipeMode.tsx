@@ -1,17 +1,24 @@
 // Tinder-style pass over the current list: right saves, left hides.
 //
 // The deck is derived live from `filtered` minus saved events, so the category
-// and vibe filters shown at the top narrow it in place. Committing a swipe
-// saves or hides the event, which removes it from the deck, and the next one
-// is simply the new front. Undo reverses the write and pins the undone event
-// to the front until the next swipe — it would otherwise reappear at its
-// sorted position, possibly hundreds of cards deep.
+// and vibe filters shown at the top narrow it in place. It is ordered the same
+// way the Top Picks row is — score plus how well the event matches what this
+// browser saves, shares and calendars — so the cards worth swiping right on
+// come first instead of being buried a hundred deep. It re-orders as you go:
+// each save feeds the profile, so the deck learns during the session.
+//
+// Committing a swipe saves or hides the event, which removes it from the deck,
+// and the next one is simply the new front. Undo reverses the write and pins
+// the undone event to the front until the next swipe — it would otherwise
+// reappear at its sorted position, possibly hundreds of cards deep.
 import { Bookmark, RotateCcw, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { eventId, useEventsContext } from "../context";
+import { useModalDialog } from "../hooks/useModalDialog";
 import type { Event } from "../types";
 import { todayIso } from "../utils/dates";
 import { dateLabel } from "../utils/grouping";
+import { rankByTaste } from "../utils/taste";
 import EventCard from "./EventCard";
 import ExportSaved from "./ExportSaved";
 import VibeFilter from "./filters/VibeFilter";
@@ -41,10 +48,15 @@ export default function SwipeMode({ onClose }: Props) {
 		isEventPast,
 		activeCat,
 		setActiveCat,
+		taste,
 	} = useEventsContext();
 	const deck = useMemo(
-		() => filtered.filter((e) => !starred.has(eventId(e))),
-		[filtered, starred],
+		() =>
+			rankByTaste(
+				filtered.filter((e) => !starred.has(eventId(e))),
+				taste,
+			),
+		[filtered, starred, taste],
 	);
 	// Every category in the city, not the ones left in `filtered`: once one is
 	// picked the filtered list holds only that one, and the row must still
@@ -105,18 +117,17 @@ export default function SwipeMode({ onClose }: Props) {
 		setDx(0);
 	}
 
-	// The handler closes over fly/undo/onClose, which are new functions on every
-	// render, so it lives in a ref and the effect below can run once. It used to
-	// be an effect with no dependency array at all: that re-bound the listener
-	// and read *and wrote* document.body.style.overflow on every render — i.e.
-	// on every pointermove of a drag, which is a forced reflow per frame. Worse,
-	// `previous` was re-captured after the first pass, by which point it was
-	// already "hidden", so closing swipe mode restored the wrong value and left
-	// the page unscrollable.
+	// The handler closes over fly/undo, which are new functions on every
+	// render, so it lives in a ref and the effect below can run once. It used
+	// to be an effect with no dependency array at all: that re-bound the
+	// listener on every render — i.e. on every pointermove of a drag, which is
+	// a forced reflow per frame.
+	//
+	// Escape is not handled here: the dialog itself closes on Escape natively,
+	// which fires the `close` event useModalDialog listens for.
 	const onKeyDownRef = useRef<(e: KeyboardEvent) => void>(() => {});
 	onKeyDownRef.current = (e: KeyboardEvent) => {
-		if (e.key === "Escape") onClose();
-		else if (e.key === "ArrowRight") fly("save");
+		if (e.key === "ArrowRight") fly("save");
 		else if (e.key === "ArrowLeft") fly("skip");
 		else if (e.key === "Backspace" || e.key === "z") undo();
 	};
@@ -124,13 +135,10 @@ export default function SwipeMode({ onClose }: Props) {
 	useEffect(() => {
 		const onKeyDown = (e: KeyboardEvent) => onKeyDownRef.current(e);
 		document.addEventListener("keydown", onKeyDown);
-		const previous = document.body.style.overflow;
-		document.body.style.overflow = "hidden";
-		return () => {
-			document.removeEventListener("keydown", onKeyDown);
-			document.body.style.overflow = previous;
-		};
+		return () => document.removeEventListener("keydown", onKeyDown);
 	}, []);
+
+	const { ref, close } = useModalDialog(onClose);
 
 	function onPointerDown(e: React.PointerEvent) {
 		if (e.pointerType === "mouse" && e.button !== 0) return;
@@ -159,10 +167,9 @@ export default function SwipeMode({ onClose }: Props) {
 	const total = history.length + deck.length;
 
 	return (
-		<div
+		<dialog
+			ref={ref}
 			className="swipe-backdrop"
-			role="dialog"
-			aria-modal="true"
 			aria-label="Swipe through events"
 		>
 			<div className="swipe-top">
@@ -174,7 +181,7 @@ export default function SwipeMode({ onClose }: Props) {
 				<button
 					type="button"
 					className="theme-btn"
-					onClick={onClose}
+					onClick={close}
 					aria-label="Close swipe mode"
 				>
 					<X size={12} strokeWidth={2} />
@@ -266,7 +273,7 @@ export default function SwipeMode({ onClose }: Props) {
 							{saved} saved · {history.length - saved} skipped
 						</p>
 						<ExportSaved />
-						<button type="button" className="filter-btn" onClick={onClose}>
+						<button type="button" className="filter-btn" onClick={close}>
 							Back to the list
 						</button>
 					</div>
@@ -299,6 +306,6 @@ export default function SwipeMode({ onClose }: Props) {
 					<Bookmark size={20} strokeWidth={2} />
 				</button>
 			</div>
-		</div>
+		</dialog>
 	);
 }

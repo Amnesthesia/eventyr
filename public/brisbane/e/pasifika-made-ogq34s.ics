@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pasifika Made
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ogq34s@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Pasifika Made
+DESCRIPTION:Pasifika Made returns to Brisbane Festival in 2026\, bringing t
+ ogether Pacific and First Nations artists\, cultural practitioners and com
+ munity across a program of cultural and contemporary live performance\, wo
+ rkshops\, artist talks\, knowledge sharing\, live demonstrations and a cul
+ tural marketplace experience. Transforming Festival Village into a gatheri
+ ng place for art\, culture and connection\, Pasifika Made presents Pacific
+  arts through both ancestral practice and a contemporary lens.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/pasifika-made
+END:VEVENT
+END:VCALENDAR

@@ -30,7 +30,7 @@ import type { PageExtractFn, RawCandidateFields } from "./types.ts";
  * so a prompt edit invalidates the cache instead of serving results the new
  * prompt would not have produced.
  */
-const PROMPT_VERSION = "v2";
+const PROMPT_VERSION = "v3";
 
 const CACHE_DIR = join(DATA_ROOT, "_cache", "extractions");
 

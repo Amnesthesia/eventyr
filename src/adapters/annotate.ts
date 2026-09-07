@@ -33,7 +33,6 @@ export interface Annotation {
 	intellectual: boolean;
 	hands_on: boolean;
 	creative: boolean;
-	description?: string;
 	drop: boolean;
 }
 
@@ -53,7 +52,6 @@ For each event you are given, decide only:
 - "hands_on": true if attendees actively make or do something (workshops, classes, participatory sessions).
 - "creative": true if it is arts-led (exhibitions, performance, film, music, literature, design).
   More than one of these may be true. All four may be false.
-- "description": ONLY when the input description is empty — then write one plain sentence describing the event using nothing but the title, venue and category given. Invent no facts (no lineups, no prices, no times). If the input description is non-empty, omit this field entirely.
 - "drop": true ONLY for things this digest never lists: spectator sport, MLM/network marketing, sales pitches or product demos, purely online/streamed events, and private hire/venue-booking listings. Everything else is false. Do NOT drop something for being niche, mainstream, small, or uninteresting.
 
 Return ONLY a compact JSON array, one object per input event, in the same order, each with an "i" field echoing the input index. No markdown, no code fences, no commentary.`;
@@ -77,10 +75,6 @@ function coerce(raw: Record<string, unknown> | undefined): Annotation {
 	const tags = Array.isArray(raw.tags)
 		? raw.tags.filter((t): t is string => typeof t === "string").slice(0, 4)
 		: [];
-	const description =
-		typeof raw.description === "string" && raw.description.trim()
-			? raw.description.trim()
-			: undefined;
 	return {
 		category: isValidCategory(raw.category)
 			? raw.category
@@ -90,7 +84,6 @@ function coerce(raw: Record<string, unknown> | undefined): Annotation {
 		intellectual: raw.intellectual === true,
 		hands_on: raw.hands_on === true,
 		creative: raw.creative === true,
-		...(description ? { description } : {}),
 		drop: raw.drop === true,
 	};
 }
@@ -163,9 +156,15 @@ export function previousAnnotationIndex(
 /**
  * Lifts a previously annotated event's judgement fields back into an
  * Annotation, or null when the page's own description has since changed (the
- * classification was made against different text). An empty page description
- * accepts any previous record: that is exactly the case where the model wrote
- * the description last time, and it is what we want to keep.
+ * classification was made against different text). An event with no
+ * description at all accepts any previous record — there is no text for the
+ * classification to have been made against.
+ *
+ * This used to also carry a model-written description forward for events
+ * whose page had none. That fallback ("X is a concert / music event held at
+ * Y") was a guess by construction and is gone; enrichTimes.ts now takes the
+ * real description from the event's own page instead, and an event it cannot
+ * describe stays undescribed rather than templated.
  */
 export function reuseAnnotation(
 	event: Record<string, unknown>,
@@ -184,13 +183,12 @@ export function reuseAnnotation(
 		intellectual: previous.intellectual === true,
 		hands_on: previous.hands_on === true,
 		creative: previous.creative === true,
-		...(pageDescription ? {} : { description: prevDescription }),
 		drop: false,
 	};
 }
 
-/** Merges judgement fields onto the deterministic event. Factual fields are
- * never touched; description is only filled when the page had none. */
+/** Merges judgement fields onto the deterministic event. Factual fields,
+ * description included, are never touched. */
 export function applyAnnotation(
 	event: Record<string, unknown>,
 	a: Annotation,
@@ -203,6 +201,44 @@ export function applyAnnotation(
 		intellectual: a.intellectual,
 		hands_on: a.hands_on,
 		creative: a.creative,
-		description: (event.description as string) || (a.description ?? ""),
+		description: (event.description as string) || "",
 	};
+}
+
+/**
+ * Descriptions written by the retired annotate fallback, which composed one
+ * sentence out of the title, venue and category when a page gave no
+ * description of its own: "The Spyro Experiment is a comedy event held at
+ * Good Chat Comedy Club." They tell a reader nothing the card already shows,
+ * and rank.ts scored 170 of them off that text alone, which is what pinned
+ * most of the digest to 4–6.
+ *
+ * Nothing generates these any more (adapters now take the real description
+ * off the event's own detail page), but carry-forward keeps republishing the
+ * ones already in data/{city}.json — indefinitely for a long-running
+ * exhibition — so they are dropped on the way through. Blanked rather than
+ * dropping the event: everything else about the record is still good, and an
+ * empty description renders as nothing rather than as filler.
+ *
+ * Matched on the shape the prompt produced — the description opens with the
+ * event's own title, says "is a…", and stops inside a sentence or two.
+ * Verified against the 453-event digest that carried them: 163 of 163 matched
+ * with no false positive on real page copy.
+ *
+ * ponytail: delete once no data/{city}.json contains one — check with
+ * `grep -c 'is a .* held at' data/*.json`.
+ */
+const RETIRED_TEMPLATE_CATEGORY_WORD =
+	/\b(event|exhibition|concert|show|performance|workshop|class|festival|screening|gig|meetup|comedy|social)\b/i;
+
+export function isRetiredTemplateDescription(
+	event: Record<string, unknown>,
+): boolean {
+	const description = ((event.description as string) ?? "").trim();
+	const title = ((event.title as string) ?? "").trim();
+	if (!title || description.length >= 160) return false;
+	if (!description.toLowerCase().startsWith(`${title.toLowerCase()} is `)) {
+		return false;
+	}
+	return RETIRED_TEMPLATE_CATEGORY_WORD.test(description);
 }

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Artist in Residence: Sachém Parkin-Owens
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1u9erzz@dothings
+DTSTART;VALUE=DATE:20251122
+DTEND;VALUE=DATE:20261011
+SUMMARY:Artist in Residence: Sachém Parkin-Owens
+DESCRIPTION:Martin Edge is a Queensland artist whose playful works capture 
+ moments from his everyday life\, including both real and imagined adventur
+ es. For his Artist in Residence project at Museum of Brisbane\, Edge will 
+ transform the walls of the Fairfax Gallery with a large-scale mural create
+ d over three weeks. Visitors are invited to watch and engage with the arti
+ st as the work unfolds\, offering a rare insight into his creative process
+ .
+LOCATION:Museum of Brisbane\, Level 3\, Brisbane City Hall King George Squa
+ re\, Brisbane 4000
+URL:https://www.museumofbrisbane.com.au/whats-on/sachem-parkin-owens/
+END:VEVENT
+END:VCALENDAR

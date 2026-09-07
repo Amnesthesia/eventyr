@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
 	annotationKey,
+	isRetiredTemplateDescription,
 	previousAnnotationIndex,
 	reuseAnnotation,
 } from "./annotate.ts";
@@ -59,13 +60,14 @@ test("reuseAnnotation refuses to reuse when the page's own description changed",
 });
 
 test("reuseAnnotation accepts when the current page has no description at all", () => {
-	// This is the case where the model wrote the description last time — exactly
-	// what should be kept, not treated as a mismatch.
-	const previous = event({ description: "Model-written description." });
+	// No text for the classification to have been made against, so nothing to
+	// mismatch. The classification is reused; no description is invented.
+	const previous = event({ description: "Last week's page description." });
 	const current = event({ description: "" });
 	const reused = reuseAnnotation(current, previous);
 	assert.ok(reused);
-	assert.equal(reused?.description, "Model-written description.");
+	assert.equal(reused?.category, "Concert / Music");
+	assert.equal("description" in (reused ?? {}), false);
 });
 
 test("reuseAnnotation returns null with nothing to reuse from", () => {
@@ -75,4 +77,69 @@ test("reuseAnnotation returns null with nothing to reuse from", () => {
 test("reuseAnnotation returns null when the previous record has no valid category", () => {
 	const previous = event({ category: "Not A Real Category" });
 	assert.equal(reuseAnnotation(event(), previous), null);
+});
+
+function described(
+	title: string,
+	description: string,
+): Record<string, unknown> {
+	return { title, description };
+}
+
+test("the retired annotate template is recognised", () => {
+	for (const [title, description] of [
+		[
+			"The Spyro Experiment",
+			"The Spyro Experiment is a comedy event held at Good Chat Comedy Club.",
+		],
+		[
+			"Sunday Social",
+			"Sunday Social is a social event held at South Bank Parklands.",
+		],
+		[
+			"Richard Dunn",
+			"Richard Dunn is an Arts / Exhibition event at QAG, Stanley Place, South Bank.",
+		],
+		["Aria Cook", "Aria Cook is a concert at Eat Street Northshore."],
+	]) {
+		assert.equal(
+			isRetiredTemplateDescription(described(title, description)),
+			true,
+			description,
+		);
+	}
+});
+
+test("real page copy is never mistaken for the template", () => {
+	for (const [title, description] of [
+		// Opens with the title and says "is a", but is the venue's own copy.
+		[
+			"DAYBREAKER",
+			"DAYBREAKER is a global, alcohol-free morning dance and wellness event that combines yoga, fitness, and high-energy dance to start the day with joy and community.",
+		],
+		[
+			"Shel We",
+			"Delight in this upbeat, full of mischief enchanting dance style.",
+		],
+		[
+			"Pony Club",
+			"Pony Club is commissioned and developed through Observatory Theatre's Telescope New Writing Program, with support from Arts Queensland and the Australia Council.",
+		],
+		["Gig Night", ""],
+	]) {
+		assert.equal(
+			isRetiredTemplateDescription(described(title, description)),
+			false,
+			description,
+		);
+	}
+});
+
+test("an event with no title cannot match", () => {
+	assert.equal(
+		isRetiredTemplateDescription(
+			described("", " is a comedy event held at X."),
+		),
+		false,
+	);
 });

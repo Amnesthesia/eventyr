@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bill Bailey
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-cywn9s@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Bill Bailey
+DESCRIPTION:Ticketek's website is up and running\, but it looks as though o
+ ur system has picked up on some unusual activity from your current visit. 
+ It's temporarily keeping you from accessing our site.
+LOCATION:Brisbane Convention & Exhibition Centre
+URL:https://premier.ticketek.com.au/shows/show.aspx?sh=BLIBLLEB26
+END:VEVENT
+END:VCALENDAR

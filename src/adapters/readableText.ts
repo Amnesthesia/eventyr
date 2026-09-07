@@ -12,7 +12,7 @@ import he from "he";
 // the extraction prompt — and the event titles — verbatim.
 const decodeEntities = (text: string): string => he.decode(text);
 
-const BOILERPLATE_TAGS =
+export const BOILERPLATE_TAGS =
 	/<(script|style|noscript|svg|header|footer|nav)\b[^>]*>[\s\S]*?<\/\1>/gi;
 const LINK_TAG = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
 export function stripToReadableText(html: string, baseUrl: string): string {

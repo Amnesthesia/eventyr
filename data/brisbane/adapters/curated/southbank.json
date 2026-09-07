@@ -15,13 +15,14 @@
       "link": "https://www.visitsouthbank.com.au/events/bright-nights-by-anz",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Bright Nights by ANZ is an arts exhibition held at South Bank Parklands.",
+      "description": "Bright Nights by ANZ transforms the Brisbane River into a dazzling, choreographed canvas of water, light, and sound. Floating fountains, waterscreens, amazing animated water features and water jets shooting up to 80 meters high, all pierced by a stunning laser light show, this bold installation fills the Festival Village precinct with colour, energy and emotion.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "light",
-        "installation",
-        "art"
+        "water",
+        "festival",
+        "outdoor"
       ],
       "social": false,
       "intellectual": false,
@@ -37,15 +38,16 @@
       "link": "https://www.visitsouthbank.com.au/events/the-choir-of-man",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "The Choir of Man is a concert performance held at South Bank Parklands.",
+      "description": "Olivier Award-nominated, West End acclaimed, and globally adored, hundreds of thousands of fans across four continents can't be wrong. This is the show the whole world has been raising a glass to. Stunning harmonies and foot-stomping singalongs, brimming with hits, all with a real bar on stage. A wildly talented cast of nine (extra)ordinary guys, world-class tap dancers, slam poets, multi-instrumentalists and powerhouse singers, serve it all live.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "theatre",
         "music",
         "performance",
-        "theatre"
+        "live"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -59,15 +61,15 @@
       "link": "https://www.visitsouthbank.com.au/events/pasta-club-at-otto",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Pasta Club at OTTO is a community event held at South Bank Parklands.",
+      "description": "You’re invited to Pasta Club at OTTO Ristorante , a tour of Italy with pastas and paired wines available Wednesday to Sunday, from 12pm to 3pm.",
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "food",
         "dining",
-        "social"
+        "italian",
+        "food"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": false
@@ -81,18 +83,19 @@
       "link": "https://www.visitsouthbank.com.au/events/daybreaker",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "DAYBREAKER is a social meetup held at South Bank Parklands.",
+      "description": "DAYBREAKER is a global, alcohol-free morning dance and wellness event that combines yoga, fitness, and high-energy dance to start the day with joy and community.",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Workshop / Class",
       "tags": [
+        "wellness",
+        "yoga",
         "dance",
-        "morning",
-        "fitness"
+        "morning"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": true
+      "hands_on": true,
+      "creative": false
     },
     {
       "title": "All You Can Scoop Tiramisu At Ma Pa Me",
@@ -103,15 +106,15 @@
       "link": "https://www.visitsouthbank.com.au/events/all-you-can-scoop-tiramisu-at-ma-pa-me",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "All You Can Scoop Tiramisu At Ma Pa Me is a community event held at South Bank Parklands.",
+      "description": "Tiramisu has officially become a competitive sport. Ma Pa Me is putting a Southeast Asian spin on the Italian classic with Brisbane’s first all-you-can-scoop tiramisu experience, and there’s only one rule: make your scoop count.",
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "food",
         "dessert",
-        "social"
+        "food",
+        "asian"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": false
@@ -125,17 +128,18 @@
       "link": "https://www.visitsouthbank.com.au/events/the-knock-em-downs",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "The Knock ‘Em Downs is a community event held at South Bank Parklands.",
+      "description": "Step inside the colourful carnival tent, where nostalgia has taken a curious twist, and the carnies have turned into clowns! Take a trip back in time to the side shows of old - a strange and bewildering world featuring a variety of side show games sure to test your skill, with big prizes to be won. This off-beat encounter will tickle your ribs and wobble your funny bone!",
       "image": "",
       "category": "Community / Other",
       "tags": [
+        "carnival",
         "games",
         "family",
         "fun"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": false
     },
     {
@@ -147,15 +151,16 @@
       "link": "https://www.visitsouthbank.com.au/events/piano-man",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Piano Man is a concert performance held at South Bank Parklands.",
+      "description": "Australia's favourite piano man, Trevor Jones, brings his signature late night piano bar party to the Brisbane Festival.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "piano",
+        "live",
         "music",
-        "live"
+        "party"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -169,17 +174,18 @@
       "link": "https://www.visitsouthbank.com.au/events/family-fun-day-supported-by-brisbane-airport",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Family Fun Day supported by Brisbane Airport is a social meetup held at South Bank Parklands.",
+      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
         "family",
-        "community",
-        "outdoor"
+        "kids",
+        "entertainment",
+        "free"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": false
     },
     {
@@ -191,17 +197,18 @@
       "link": "https://www.visitsouthbank.com.au/events/pasifika-made",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Pasifika Made is an arts exhibition held at South Bank Parklands.",
+      "description": "Pasifika Made returns to Brisbane Festival in 2026, bringing together Pacific and First Nations artists, cultural practitioners and community across a program of cultural and contemporary live performance, workshops, artist talks, knowledge sharing, live demonstrations and a cultural marketplace experience. Transforming Festival Village into a gathering place for art, culture and connection, Pasifika Made presents Pacific arts through both ancestral practice and a contemporary lens.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "culture",
-        "craft",
-        "exhibition"
+        "performance",
+        "workshop",
+        "art"
       ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -213,11 +220,12 @@
       "link": "https://www.visitsouthbank.com.au/events/this-show-is-a-joke",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "This Show is a Joke! is a concert performance held at South Bank Parklands.",
+      "description": "Hold onto your cowpats! After nearly two decades of seriously silly nonsense, Matt and Rich (aka The Listies) have whipped up their most ridiculous show yet — a turbo-charged mash-up of fan favourites, slapstick, songs, and a fresh batch of brand-new, freshly hatched gags. It's a comedy extravaganza for kidults aged 4 to 4 million (dinosaurs welcome).",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "comedy",
+        "kids",
         "performance",
         "theatre"
       ],
@@ -235,16 +243,17 @@
       "link": "https://www.visitsouthbank.com.au/events/strong-is-the-new-pretty",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Strong is the New Pretty is an arts exhibition held at South Bank Parklands.",
+      "description": "Suzie Miller, the celebrated Australian playwright behind sell-out smash hit RBG: Of Many, One and international phenomenon Prima Facie, turns her extraordinary talents to the historical formation of the AFLW in this world premiere.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "photography",
-        "portrait",
-        "exhibition"
+        "theatre",
+        "drama",
+        "sports",
+        "history"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
@@ -257,13 +266,14 @@
       "link": "https://www.visitsouthbank.com.au/events/shel-we",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Shel We is a concert performance held at South Bank Parklands.",
+      "description": "What do you get when trees, ghosts and deer combine in a mischievous mix by one of Aotearoa's most ingenious dancers, storytellers and award-winning choreographers? You'll find yourself in the offbeat, playful world of Shel We by Tupua Tigafua.",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
+        "dance",
         "performance",
-        "theatre",
-        "arts"
+        "storytelling",
+        "art"
       ],
       "social": false,
       "intellectual": false,
@@ -279,18 +289,41 @@
       "link": "https://www.visitsouthbank.com.au/events/are-you-lonesome-tonight-brisbane-festival",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Are You Lonesome Tonight: Brisbane Festival is a concert performance held at South Bank Parklands.",
+      "description": "‍ A unique celebration of country music and opera, featuring arias and songs by Puccini, Verdi, Slim Dusty, Troy Cassar-Daly, Dolly Parton and more.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "opera",
+        "country",
         "music",
-        "festival",
-        "performance"
+        "fusion"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "Brisbane's Biggest Steak Frites",
+      "datetime": "Tue 8 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-08T17:00:00",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/brisbanes-biggest-steak-frites",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Looking for the ultimate Brisbane steak night? Every Monday from 5pm, Cálida Steak & Bar i s serving the biggest steak frites in Brisbane.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "steak",
+        "dining",
+        "food"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     },
     {
       "title": "Anastasia The Musical",
@@ -301,12 +334,13 @@
       "link": "https://www.visitsouthbank.com.au/events/anastasia-the-musical",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Anastasia The Musical is a concert performance held at South Bank Parklands.",
+      "description": "ANASTASIA, the spectacular Broadway musical inspired by the beloved film, arrives at the Lyric Theatre, QPAC from 16 September for a strictly limited season!",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "musical",
         "theatre",
+        "broadway",
         "performance"
       ],
       "social": false,
@@ -323,18 +357,19 @@
       "link": "https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Croc! Lost Giants to Living Legends is an arts exhibition held at South Bank Parklands.",
+      "description": "Walk alongside one of the planet’s most powerful and fascinating animals, on a journey stretching back over 130million years with Queensland Museum’s Croc! Lost Giants to Living Legends exhibition.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "history",
+        "museum",
         "nature",
-        "exhibition"
+        "history",
+        "science"
       ],
       "social": false,
       "intellectual": true,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
       "title": "The Book of Mormon The Musical",
@@ -345,12 +380,13 @@
       "link": "https://www.visitsouthbank.com.au/events/the-book-of-mormon-the-musical",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "The Book of Mormon The Musical is a concert performance held at South Bank Parklands.",
+      "description": "The New York Times calls it “the best musical of this century”. The Washington Post says, “it is the kind of evening that restores your faith in musicals”. And Entertainment Weekly says, “grade A: the funniest musical of all time”. It’s THE BOOK OF MORMON , the nine-time Tony Award®-winning Best Musical.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
         "musical",
         "theatre",
+        "comedy",
         "performance"
       ],
       "social": false,
@@ -367,7 +403,7 @@
       "link": "https://www.visitsouthbank.com.au/events/opera-queensland-young-artist-program-showcase-viva-la-voce",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Opera Queensland Young Artist Program Showcase: Viva La Voce is a concert performance held at South Bank Parklands.",
+      "description": "",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -389,16 +425,17 @@
       "link": "https://www.visitsouthbank.com.au/events/rockwiz-rocks-brisbane",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "",
+      "description": "Get ready Brissy, RocKwiz are coming back to celebrate. Proudly part of the 2026 Brisbane Festival, RocKwiz presents a tailor made Brisbane show. From Cloudland and Festival Hall to the Fortitude Music Hall, from the Bee Gees to the 'Finger, The Saints to Savage Garden, The Grates to The Veronicas. RocKwiz will celebrate them all. Julia Zemiro, Brian Nankervis, the RocKwiz Orkestra, special guests, and punter contestants from the crowd will spin through trivia rounds, smash breakout musical interludes all in a live mixtape of fun and friendly competition. From the depths of \"Pig City\" to that \"Striped Sunlight Sound\" of Robert Forster and The Go-Betweens … RocKwiz Rocks Brisbane!",
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "trivia",
         "music",
-        "quiz",
-        "performance"
+        "competition",
+        "live"
       ],
       "social": true,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
@@ -433,12 +470,13 @@
       "link": "https://www.visitsouthbank.com.au/events/piano-man-celebrating-the-music-of-billy-joel",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "",
+      "description": "For more than 50 years, American singer, songwriter and pianist Billy Joel has made an indelible mark on the American songbook. With 33 top 40 hits, 5 Grammy Awards and over 160 million albums worldwide, he is one of the most successful artists of all time. This September at the Brisbane Convention & Exhibition Centre, QSO under the baton of Jessica Gethin will celebrate Billy Joel in Piano Man. Directed by Mark Sutcliffe and starring Phil Burton, Alinta Chidzey, Jess Hitchcock and Josh Piterman, Piano Man features new orchestral arrangements by Nicholas Buc covering his greatest hits including Just the Way You Are, She's Always a Woman, New York State of Mind, Only the Good Die Young, Vienna and of course Piano Man. Featuring: Mark Sutcliffe director Nicholas Buc arranger Phil Burton vocalist Alinta Chidzey vocalist Jess Hitchcock vocalist Josh Piterman vocalist *Please note: This concert does not feature Billy Joel in person. Piano Man is presented in association with Make My Mark.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "orchestra",
+        "billyjoel",
         "music",
-        "piano",
         "tribute"
       ],
       "social": false,
@@ -491,6 +529,160 @@
       "creative": true
     },
     {
+      "title": "$30 La Taco Vida At Poca Madre",
+      "datetime": "Mon 14 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/30-la-taco-vida-at-poca-madre",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Feeling extra? Upgrade your lunch with a refreshing Casa Margarita for an extra $10. Available Monday to Friday, 11:30am to 2:30pm.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "lunch",
+        "tacos",
+        "mexican"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Bottomless Weekends Banquet Experience At Ma Pa Me",
+      "datetime": "Sat 12 Sep – Sun 13 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "2026-09-13",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/bottomless-weekends-banquet-experience-at-ma-pa-me",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Wave goodbye to your regular weekend plans because Ma Pa Me's Bottomless Weekends Banquet is an absolute game-changer for $99pp.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "dining",
+        "banquet",
+        "food"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "$30 Steak Salad At Tipplers Tap",
+      "datetime": "Thu 10 Sep – Fri 11 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "2026-09-11",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/30-steak-salad-at-tipplers-tap",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "lunch",
+        "steak",
+        "dining"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "$38 Steak And Taters At Tippler's Tap",
+      "datetime": "Thu 10 Sep – Fri 11 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "2026-09-11",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/38-steak-and-taters-at-tipplers-tap",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "lunch",
+        "steak",
+        "dining"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "$19 Lunch Special At River Quay Fish",
+      "datetime": "Mon 14 Sep – Fri 18 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "2026-09-18",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/19-lunch-special-at-river-quay-fish",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Settle in for the ultimate mid-week dining experience at River Quay Fish! Offering a delicious $19 lunch special each Monday to Friday (between 11:30am and 3pm), enjoy your choice of main at their beautiful riverside restaurant.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "lunch",
+        "seafood",
+        "dining"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Ma Pa Me's $19 Lunch Menu",
+      "datetime": "Mon 14 Sep – Fri 18 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "2026-09-18",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/ma-pa-mes-19-lunch-menu",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "When it comes to a delicious weekday lunch deal, it doesn't get much better than a meal at Ma Pa Me!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "lunch",
+        "dining",
+        "food"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Start Your Week Right With $12 Pides at Ahmet's",
+      "datetime": "Mon 14 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/pides-at-ahmets",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Every Monday and Tuesday, enjoy $12 pides at Ahmet's all day. That's right! All-day-long, with walk-in's welcome.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "lunch",
+        "turkish",
+        "food"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Bright Nights by ANZ",
       "datetime": "Fri 4 Sep – Sat 26 Sep",
       "datetime_iso": "2026-09-04",
@@ -499,13 +691,14 @@
       "link": "https://www.visitsouthbank.com.au/events/bright-nights-by-anz",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Bright Nights by ANZ is an arts exhibition held at South Bank Parklands.",
+      "description": "Bright Nights by ANZ transforms the Brisbane River into a dazzling, choreographed canvas of water, light, and sound. Floating fountains, waterscreens, amazing animated water features and water jets shooting up to 80 meters high, all pierced by a stunning laser light show, this bold installation fills the Festival Village precinct with colour, energy and emotion.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "light",
-        "installation",
-        "art"
+        "water",
+        "festival",
+        "outdoor"
       ],
       "social": false,
       "intellectual": false,
@@ -516,66 +709,23 @@
       "title": "DAYBREAKER",
       "datetime": "Sat 12 Sep",
       "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "2026-09-12",
+      "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/daybreaker",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "DAYBREAKER is a social meetup held at South Bank Parklands.",
+      "description": "DAYBREAKER is a global, alcohol-free morning dance and wellness event that combines yoga, fitness, and high-energy dance to start the day with joy and community.",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Workshop / Class",
       "tags": [
+        "wellness",
+        "yoga",
         "dance",
-        "morning",
-        "fitness"
+        "morning"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Sunday Social",
-      "datetime": "Sun 5 Oct 2025, 2:00 PM – Thu 31 Dec 2026",
-      "datetime_iso": "2025-10-05T14:00:00",
-      "datetime_end_iso": "2026-12-31",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/sunday-social",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Sunday Social is a social event held at South Bank Parklands.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "social",
-        "sunday",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "South Bank Guided Tours",
-      "datetime": "Sun 9 Nov 2025, 10:00 AM – Sun 28 Feb 2027",
-      "datetime_iso": "2025-11-09T10:00:00",
-      "datetime_end_iso": "2027-02-28",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/south-bank-guided-tours",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "South Bank Guided Tours is a public lecture event held at South Bank Parklands.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "tour",
-        "history",
-        "walking"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
+      "hands_on": true,
       "creative": false
     },
     {
@@ -587,18 +737,85 @@
       "link": "https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Croc! Lost Giants to Living Legends is an arts exhibition held at South Bank Parklands.",
+      "description": "Walk alongside one of the planet’s most powerful and fascinating animals, on a journey stretching back over 130million years with Queensland Museum’s Croc! Lost Giants to Living Legends exhibition.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "history",
+        "museum",
         "nature",
-        "exhibition"
+        "history",
+        "science"
       ],
       "social": false,
       "intellectual": true,
       "hands_on": false,
-      "creative": true
+      "creative": false
+    },
+    {
+      "title": "Baba Ganouj",
+      "datetime": "Tue 1 Sep 2026 – Sun 28 Feb 2027",
+      "datetime_iso": "2026-09-01",
+      "datetime_end_iso": "2027-02-28",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/places/baba-ganouj",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "A wholly unique concept showcasing thousands of years of tradition, Baba Ganouj combines fresh cuisine with traditional cooking methods to give South Bank patrons a taste of authentic Lebanese dishes.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "lebanese",
+        "dining",
+        "food"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "The Cake Bar",
+      "datetime": "Thu 25 Jun 2026 – Fri 31 Dec 2027",
+      "datetime_iso": "2026-06-25",
+      "datetime_end_iso": "2027-12-31",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/places/the-cake-bar",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "If choosing just one cake has always felt like an impossible task, South Bank's newest dessert destination is about to solve that problem.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "dessert",
+        "cake",
+        "food"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Azure",
+      "datetime": "Wed 24 Jun 2026 – Sun 31 Jan 2027",
+      "datetime_iso": "2026-06-24",
+      "datetime_end_iso": "2027-01-31",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/places/azure",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Bringing the flavours of Southern Europe to South Bank, Azure Mediterranean is a vibrant dining destination inspired by the relaxed coastal lifestyle of the Mediterranean. Designed for long lunches, sunset drinks and shared dining experiences, the venue combines warm hospitality with a welcoming atmosphere.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "mediterranean",
+        "dining",
+        "food"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     }
   ]
 }

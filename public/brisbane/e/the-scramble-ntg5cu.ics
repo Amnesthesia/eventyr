@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Scramble
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ntg5cu@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:The Scramble
+DESCRIPTION:Two men hit the mat with scrappy energy\, in a charged physical
+  duet where exertion\, resistance and care collide. They twist\, tussle\, 
+ grapple and brace — toe to toe in a work of dance-meets-wrestling that b
+ ristles with male intimacy\, contest\, and connection.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/night-moves-the-scramble
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Where the Wild Things Are Made: Jim Henson’s Creature Shop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ielqa9@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T000100
+DTEND;TZID=Australia/Brisbane:20260912T020100
+SUMMARY:Where the Wild Things Are Made: Jim Henson’s Creature Shop
+DESCRIPTION:Presented alongside the ‘Make\, Believe\, Magic: The Worlds o
+ f The Jim Henson Company’ special exhibition (12 September 2026 – 18 A
+ pril 2027)\, ‘Where the Wild Things Are Made: Jim Henson’s Creature Sh
+ op’ celebrates the skill and craftsmanship of the artisans at Jim Henson
+ ’s Creature Shop. Highlighting the diverse portfolio of expressive chara
+ cters and creatures made by the Company for external productions\, the sel
+ ected films showcase the work of Jim Henson’s Creature Shop and how it c
+ ontinues to shape the landscape of cinematic storytelling. An important fa
+ cet of The Jim Henson Company\, Jim Henson’s Creature Shop is internatio
+ nally renowned for creating pioneering techniques that bring extraordinary
+  characters and stories to life. Formally established following the releas
+ e of Labyrinth in 1986\, Jim Henson’s Creature Shop continues to be an e
+ nduring creative hub where performance and craftsmanship is paired with ex
+ perimentation and ground-breaking technical innovation to transform the im
+ aginary into reality. [sponsorLogos block] QAGOMA acknowledges the generou
+ s assistance of the National Film and Sound Archive of Australia\, Canberr
+ a\; the Norwegian Film Institute\, Oslo and the Revival House\, Perth in p
+ roviding materials for this program. Program curated by Victoria Wareham\,
+  Australian Cinémathèque with additional film note writing by Rebekah Br
+ ammer.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/cinema/program/where-the-wild-things-are-
+ made-jim-hensons-creature-shop
+END:VEVENT
+END:VCALENDAR

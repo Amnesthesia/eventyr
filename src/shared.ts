@@ -54,6 +54,7 @@ export const SITE_URL = "https://www.dothings.lol";
  * and the RSS feeds can't disagree about a city's address. */
 export const KEY_TO_SLUG: Record<string, string> = {
 	brisbane: "brisbane",
+	byron: "byron",
 	goldcoast: "gold-coast",
 	sunnycoast: "sunshine-coast",
 };

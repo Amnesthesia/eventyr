@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Electro Swiggety
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-4ntvqq@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:Electro Swiggety
+DESCRIPTION:
+LOCATION:Eat Street Northshore\, 221D Macarthur Avenue\, Hamilton\, QLD\, 4
+ 007
+URL:https://eatstreetnorthshore.com.au/event/electro-swiggety/
+END:VEVENT
+END:VCALENDAR

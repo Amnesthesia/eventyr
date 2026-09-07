@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Fragile and Forever: Ceramics from the Queensland Museum Colle
+ ction
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-b01jv6@dothings
+DTSTART;TZID=Australia/Brisbane:20260529T093000
+DTEND;TZID=Australia/Brisbane:20260529T113000
+SUMMARY:Fragile and Forever: Ceramics from the Queensland Museum Collection
+DESCRIPTION:
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/fragile-and-forever-ceramics-f
+ rom-the-queensland-museum-collection
+END:VEVENT
+END:VCALENDAR

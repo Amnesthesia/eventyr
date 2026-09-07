@@ -33,7 +33,7 @@ import {
 	previousAnnotationIndex,
 	reuseAnnotation,
 } from "./annotate.ts";
-import { enrichCandidateTimes } from "./enrichTimes.ts";
+import { enrichFromDetailPage } from "./enrichTimes.ts";
 import { withExtractionCache } from "./extractionCache.ts";
 import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
@@ -170,23 +170,31 @@ async function collectSource(
 	const adapter = createPageAdapter(source, { fetcher, extractPage });
 	const { result, candidates: raw } = await runAdapter(adapter);
 
-	// Listing pages print "Sat 5 Sep" where the event's own page says
+	// Window-filter first so the detail-page pass only fetches for events we
+	// will publish: a venue's season listing is mostly "later", and those pages
+	// were being fetched for nothing.
+	const first = prepareCandidates(raw, source, WINDOW_FROM, WINDOW_TO);
+	writeRejections(source.id, first.rejected);
+
+	// Listing cards print "Sat 5 Sep" where the event's own page says
 	// "Saturday 05 Sep 2026, 10:30AM" — 43% of events arrived without a time
-	// for that reason alone. Deterministic and LLM-free, and it can only ever
-	// add a time to the day the listing already gave. See enrichTimes.ts.
-	const { candidates, stats: timeStats } = await enrichCandidateTimes(
-		raw,
+	// for that reason alone — and show a genre badge ("Experiences") where the
+	// page has a real description. Deterministic and LLM-free; a time can only
+	// ever be added to the day the listing already gave. See enrichTimes.ts.
+	const { candidates, stats: timeStats } = await enrichFromDetailPage(
+		first.prepared.map((p) => p.candidate),
 		source,
 		fetcher,
 	);
-
-	const { prepared, stats, rejected } = prepareCandidates(
+	// Re-run on the enriched candidates: pure and cheap, and the one case where
+	// a JSON-LD start moves an event out of the window is handled correctly.
+	const { prepared, stats: windowStats } = prepareCandidates(
 		candidates,
 		source,
 		WINDOW_FROM,
 		WINDOW_TO,
 	);
-	writeRejections(source.id, rejected);
+	const stats: PrepareStats = { ...first.stats, kept: windowStats.kept };
 
 	let events: Record<string, unknown>[] = [];
 	let dropped = 0;
@@ -269,6 +277,13 @@ async function collectSource(
 		console.log(
 			`  ⏱ [${source.id}] ${timeStats.upgraded}/${timeStats.eligible} undated-time candidates got a time` +
 				` (${timeStats.fetched} detail page(s) fetched${via ? `; via ${via}` : ""})`,
+		);
+	}
+	// The ratio is the signal: 0/54 on a source whose pages plainly have copy
+	// means the extractors have stopped matching, not that the venue is terse.
+	if (timeStats.thin > 0) {
+		console.log(
+			`  ✎ [${source.id}] ${timeStats.described}/${timeStats.thin} thin descriptions filled from detail pages`,
 		);
 	}
 	const drops = [

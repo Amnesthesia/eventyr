@@ -268,9 +268,9 @@ const websiteSchema = {
 	name: "do things",
 	url: "https://www.dothings.lol/",
 	description:
-		"Weekly curated events guide for Brisbane, Gold Coast and Sunshine Coast",
+		"Weekly curated events guide for Brisbane, Gold Coast, Sunshine Coast and Byron Bay",
 	keywords:
-		"Brisbane events, Gold Coast events, Sunshine Coast events, Goldie, Sunny Coast, AI-curated events, Claude, Gemini, Perplexity, ChatGPT, Things to do in Brisbane, Things to do on the Gold Coast, Things to do on the Sunshine Coast, What's on in Brisbane, What's on on the Gold Coast, What's on on the Sunshine Coast, South East Queensland events, SEQ events",
+		"Brisbane events, Gold Coast events, Sunshine Coast events, Byron Bay events, Goldie, Sunny Coast, AI-curated events, Claude, Gemini, Perplexity, ChatGPT, Things to do in Brisbane, Things to do on the Gold Coast, Things to do on the Sunshine Coast, Things to do in Byron Bay, What's on in Brisbane, What's on on the Gold Coast, What's on on the Sunshine Coast, What's on in Byron Bay, South East Queensland events, SEQ events",
 };
 ---
 
@@ -398,6 +398,7 @@ const websiteSchema = {
     </script>
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to events</a>
     <slot />
     <nav class="category-nav" aria-label="Browse by day">
       <a
@@ -444,8 +445,10 @@ const websiteSchema = {
         <a href="/brisbane/">Things to do in Brisbane</a>
         <a href="/gold-coast/">Things to do on the Gold Coast</a>
         <a href="/sunshine-coast/">Things to do on the Sunshine Coast</a>
+        <a href="/byron/">Things to do in Byron Bay</a>
+        <a href={feedUrl}>RSS feed</a>
       </nav>
-      <small>AI-curated events guide for South East Queensland &middot; <a href="/llms.txt">llms.txt</a></small>
+      <small>AI-curated events guide for South East Queensland and Byron Bay &middot; <a href="/llms.txt">llms.txt</a></small>
     </footer>
     <!-- Down here, not in <head>: the ItemList alone is ~350 KB, and in the
          head it sat in front of the stylesheet link, so the preload scanner

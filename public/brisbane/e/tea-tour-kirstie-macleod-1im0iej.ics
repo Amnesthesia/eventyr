@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tea & Tour: Kirstie Macleod
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1im0iej@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T103000
+DTEND;TZID=Australia/Brisbane:20260912T123000
+SUMMARY:Tea & Tour: Kirstie Macleod
+DESCRIPTION:Enjoy an exclusive Tea & Tour with one of Brisbane’s most dis
+ tinctive collectors - Malcolm Enright. This special session gives you a ra
+ re look inside his remarkable collections and the stories behind them.
+LOCATION:Museum of Brisbane\, Level 3\, Brisbane City Hall King George Squa
+ re\, Brisbane 4000
+URL:https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/
+END:VEVENT
+END:VCALENDAR

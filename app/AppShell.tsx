@@ -13,8 +13,26 @@ import { dateWindowFor, groupEvents } from "./utils/grouping";
 import { eventsFromIds, parseSavedIds } from "./utils/savedLink";
 
 export default function AppShell() {
-	const { cityData, cityKey, starredEvents, picks, rest, groupBy, todayStr } =
-		useEventsContext();
+	const {
+		cityData,
+		cityKey,
+		starredEvents,
+		picks,
+		rest,
+		groupBy,
+		todayStr,
+		activeCat,
+		setActiveCat,
+		dateRange,
+		setDateRange,
+		activeTags,
+		toggleTag,
+		resetVibes,
+		query,
+		setQuery,
+		hideLowScore,
+		setHideLowScore,
+	} = useEventsContext();
 	const [swiping, setSwiping] = useState(false);
 	// null = closed. A non-null value is the set the calendar is showing, which
 	// is either this browser's saved events or the ones a shared link named.
@@ -51,6 +69,23 @@ export default function AppShell() {
 	// context.tsx — so the pre-mount render matches SSR exactly and the real
 	// "today" only ever arrives as a post-hydration update, not a mismatch.
 	const today = todayStr || cityData?.week_start || "";
+
+	const hasActiveFilters =
+		activeCat !== "All" ||
+		!!dateRange ||
+		activeTags.length > 0 ||
+		query.trim().length > 0 ||
+		hideLowScore;
+
+	function clearFilters() {
+		setActiveCat("All");
+		setDateRange(null);
+		activeTags.forEach(toggleTag);
+		resetVibes();
+		setQuery("");
+		setHideLowScore(false);
+	}
+
 	const groups = useMemo(() => {
 		const window = dateWindowFor(
 			cityData?.week_start ?? "",
@@ -64,7 +99,7 @@ export default function AppShell() {
 		<>
 			<Header />
 
-			<main>
+			<main id="main">
 				{cityData && (
 					<>
 						{cityData && <Intro city={cityData.city} />}
@@ -99,22 +134,52 @@ export default function AppShell() {
 						{picks.length > 0 && (
 							<div id="top-picks-section">
 								<h2 className="section-label">picks</h2>
+								<p className="section-note">
+									Scored 1–10 against a fixed interest profile — see the FAQ
+									below for what it weighs.
+								</p>
 								<EventGrid events={picks} isTopPick={true} />
 							</div>
 						)}
-						<h2 className="section-label">all events</h2>
-						<div className="separator" />
-						{groups.map((group) => (
-							<section key={group.key} className="event-group">
-								{group.label && (
-									<h3 className="group-label" data-cat={group.cat}>
-										{group.label}
-										<span className="group-count">{group.events.length}</span>
-									</h3>
+						{rest.length === 0 &&
+						picks.length === 0 &&
+						starredEvents.length === 0 ? (
+							<div className="state">
+								<h2>Nothing matches</h2>
+								<p>
+									{hasActiveFilters
+										? "No events fit the current filters and search."
+										: "No events are scheduled for this view."}
+								</p>
+								{hasActiveFilters && (
+									<button
+										type="button"
+										className="filter-btn"
+										onClick={clearFilters}
+									>
+										Clear filters
+									</button>
 								)}
-								<EventGrid events={group.events} isTopPick={false} />
-							</section>
-						))}
+							</div>
+						) : (
+							<>
+								<h2 className="section-label">all events</h2>
+								<div className="separator" />
+								{groups.map((group) => (
+									<section key={group.key} className="event-group">
+										{group.label && (
+											<h3 className="group-label" data-cat={group.cat}>
+												{group.label}
+												<span className="group-count">
+													{group.events.length}
+												</span>
+											</h3>
+										)}
+										<EventGrid events={group.events} isTopPick={false} />
+									</section>
+								))}
+							</>
+						)}
 					</>
 				)}
 			</main>

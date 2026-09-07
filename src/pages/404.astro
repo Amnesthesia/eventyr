@@ -9,11 +9,21 @@ import "@react/styles.css";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Not found — do things</title>
     <meta name="robots" content="noindex" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <!-- Self-hosted (@font-face in app/styles.css, imported above) — this page
+         used to pull Inter from fonts.googleapis.com instead, the one place on
+         the site still paying for a third-party font chain the rest of the
+         site removed. -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/inter-latin.woff2"
+      crossorigin
     />
     <script is:inline>
       const t = localStorage.getItem("theme");
@@ -21,23 +31,26 @@ import "@react/styles.css";
     </script>
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to navigation</a>
     <header>
       <a href="/" class="site-name">&gt;&nbsp;do things</a>
       <div class="header-controls">
         <a href="/brisbane/" class="filter-btn">Brisbane</a>
         <a href="/gold-coast/" class="filter-btn">Gold Coast</a>
         <a href="/sunshine-coast/" class="filter-btn">Sunshine Coast</a>
+        <a href="/byron/" class="filter-btn">Byron Bay</a>
       </div>
     </header>
-    <main>
+    <main id="main">
       <div class="not-found">
-        <span class="not-found-code">404</span>
-        <h2>Nothing here.</h2>
+        <span class="not-found-code" aria-hidden="true">404</span>
+        <h1>Nothing here.</h1>
         <p>This page doesn't exist. Pick a city and find something to do:</p>
-        <nav class="not-found-nav">
+        <nav class="not-found-nav" aria-label="Cities">
           <a href="/brisbane/" class="filter-btn active">Brisbane</a>
           <a href="/gold-coast/" class="filter-btn active">Gold Coast</a>
           <a href="/sunshine-coast/" class="filter-btn active">Sunshine Coast</a>
+          <a href="/byron/" class="filter-btn active">Byron Bay</a>
         </nav>
       </div>
     </main>
@@ -63,7 +76,7 @@ import "@react/styles.css";
     margin: 0 0 0.5rem;
   }
 
-  .not-found h2 {
+  .not-found h1 {
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: -0.03em;
@@ -72,7 +85,7 @@ import "@react/styles.css";
   }
 
   .not-found p {
-    font-size: 0.85rem;
+    font-size: var(--t-sm);
     color: var(--muted);
     margin: 0;
   }
@@ -86,7 +99,7 @@ import "@react/styles.css";
 
   .not-found-nav .filter-btn {
     text-decoration: none;
-    font-size: 0.72rem;
+    font-size: var(--t-2xs);
     height: auto;
     padding: 0.35rem 0.8rem;
   }

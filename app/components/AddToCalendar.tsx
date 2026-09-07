@@ -16,6 +16,7 @@ import type { Event } from "../types";
 import { calendarLinks } from "../utils/calendarLinks";
 import { downloadEventIcs } from "../utils/ics";
 import { type CalendarTarget, calendarTarget } from "../utils/platform";
+import { noteInterest } from "../utils/taste";
 
 interface Props {
 	event: Event;
@@ -81,6 +82,7 @@ export default function AddToCalendar({
 				rel="noopener"
 				aria-label={`Add ${event.title} to ${primary.label}`}
 				title={`Add to ${primary.label} — right-click for other calendars`}
+				onClick={() => noteInterest(event, cityKey, "calendar")}
 				onContextMenu={(e) => {
 					e.preventDefault();
 					setMenuOpen(true);
@@ -99,7 +101,10 @@ export default function AddToCalendar({
 								href={link.href}
 								target={link.key === "apple" ? undefined : "_blank"}
 								rel="noopener"
-								onClick={() => setMenuOpen(false)}
+								onClick={() => {
+									noteInterest(event, cityKey, "calendar");
+									setMenuOpen(false);
+								}}
 							>
 								{link.label}
 							</a>
@@ -110,6 +115,7 @@ export default function AddToCalendar({
 								role="menuitem"
 								onClick={() => {
 									downloadEventIcs(event, cityKey);
+									noteInterest(event, cityKey, "calendar");
 									setMenuOpen(false);
 								}}
 							>

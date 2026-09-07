@@ -7,6 +7,7 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { dirname, join, relative } from "node:path";
+import { isRetiredTemplateDescription } from "./adapters/annotate.ts";
 import { humanDatetime, isPast, withinWindow } from "./adapters/normalise.ts";
 import {
 	allSourceEntries,
@@ -424,7 +425,14 @@ async function mergeAndDeduplicate(
 	// fresh record. Undated events are not carried: they can never expire via
 	// isPast, so they would accumulate forever. Everything else does expire on
 	// the following run, so this cannot grow unbounded.
-	const carried = { kept: 0, total: 0, past: 0, later: 0, undated: 0 };
+	const carried = {
+		kept: 0,
+		total: 0,
+		past: 0,
+		later: 0,
+		undated: 0,
+		detemplated: 0,
+	};
 	for (const rawEvent of previousEvents()) {
 		carried.total++;
 		const event = cleanEvent(rawEvent);
@@ -442,13 +450,21 @@ async function mergeAndDeduplicate(
 			carried.later++;
 			continue;
 		}
+		// Stripped before dedupe on purpose: with the filler gone, dedupe's
+		// completeness tie-break prefers a freshly scraped copy that has a real
+		// description over the carried one.
+		if (isRetiredTemplateDescription(event)) {
+			event.description = "";
+			carried.detemplated++;
+		}
 		allEvents.push({ ...event, [PROVIDER_KEY]: "carried" });
 		carried.kept++;
 	}
 	console.log(
 		PREVIOUS
 			? `→ carried ${carried.kept} of ${carried.total} previously published event(s) forward ` +
-					`(dropped ${carried.past} past, ${carried.later} beyond the window, ${carried.undated} undated)`
+					`(dropped ${carried.past} past, ${carried.later} beyond the window, ${carried.undated} undated` +
+					`${carried.detemplated > 0 ? `; blanked ${carried.detemplated} retired template description(s)` : ""})`
 			: "→ no previous digest to carry forward",
 	);
 

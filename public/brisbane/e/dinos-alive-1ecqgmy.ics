@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dinos Alive
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ecqgmy@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T090000
+DTEND;TZID=Australia/Brisbane:20260910T110000
+SUMMARY:Dinos Alive
+DESCRIPTION:Dinos Alive is a walk-through dinosaur exhibition at Brisbane A
+ irport featuring 40+ life-size animated replicas. You'll encounter T-Rex\,
+  Stegosaurus\, Velociraptors and others in themed Jurassic settings\, plus
+  a virtual aquarium with sea creatures. Kids can try the "Budding Experts"
+  palaeontologist…
+LOCATION:Fever Skygate | Exhibition and Immersive Experience centre\, Brisb
+ ane Airport
+URL:https://musick.com.au/gig/dinos-alive-an-immersive-experience-in-brisba
+ ne-2026-09-10/
+END:VEVENT
+END:VCALENDAR

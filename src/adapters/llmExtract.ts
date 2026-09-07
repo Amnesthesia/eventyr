@@ -40,6 +40,7 @@ Your ONLY job is extraction. Do not filter, judge relevance, or categorise. Do n
 Rules — follow these strictly:
 - Copy every field's value EXACTLY as written on the page. Never invent, infer, paraphrase, or compute a value.
 - If a field is not present on the page for a given event, output null for it. Never guess, default, or fill it from another field (e.g. never invent a date from the title).
+- "description" is descriptive prose about the event. A bare genre or category label ("Theatre & Musicals", "Experiences", "Dance & Opera"), a status badge ("Sold Out", "Few Tickets Left", "New"), or a time or date line ("10am Daily") is NOT a description — output null for description in that case rather than copying the label.
 - For dates and times, copy the raw text exactly as it appears (e.g. "Sat 14 Jun, 7:00 PM" or "5 – 19 September"). Do NOT convert it to ISO format or compute what date it means — that happens elsewhere.
 - Extract every distinct event on the page, including every row of a list or table. If the same event is mentioned more than once, list it once.
 - If the page text describes a single exhibition/season with multiple listed session dates, that is still one event — extraction here is about full listing pages showing many different events, not about splitting one event's sessions apart.
