@@ -15,12 +15,12 @@ import { Bookmark, RotateCcw, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { eventId, useEventsContext } from "../context";
 import type { Event } from "../types";
+import { catShortName, catToSlug } from "../utils/categorySlug";
 import { todayIso } from "../utils/dates";
 import { dateLabel } from "../utils/grouping";
 import { rankByTaste } from "../utils/taste";
+import { VIBE_KEYS, VIBE_LABELS } from "../utils/vibes";
 import EventCard from "./EventCard";
-import ExportSaved from "./ExportSaved";
-import VibeFilter from "./filters/VibeFilter";
 
 /** Drag past this many pixels and letting go commits the swipe. */
 const COMMIT_PX = 90;
@@ -47,6 +47,8 @@ export default function SwipeMode({ onClose }: Props) {
 		isEventPast,
 		activeCat,
 		setActiveCat,
+		vibes,
+		toggleVibe,
 		taste,
 	} = useEventsContext();
 	const deck = useMemo(
@@ -183,7 +185,6 @@ export default function SwipeMode({ onClose }: Props) {
 					{Math.min(history.length + 1, total)} / {total}
 				</span>
 				<span className="swipe-hint">swipe right to save, left to skip</span>
-				<ExportSaved compact />
 				<button
 					type="button"
 					className="theme-btn"
@@ -194,29 +195,43 @@ export default function SwipeMode({ onClose }: Props) {
 				</button>
 			</div>
 
+			{/* Same rule as the header: no "all" pill, deselect by pressing the
+			    lit chip, and nothing is coloured until it is chosen. */}
 			<div className="swipe-filters">
-				<span className="filters">
-					<button
-						type="button"
-						className={`filter-btn${activeCat === "All" ? " active" : ""}`}
-						onClick={() => setActiveCat("All")}
-						aria-pressed={activeCat === "All"}
-					>
-						All Categories
-					</button>
-					{categories.map((cat) => (
-						<button
-							type="button"
-							key={cat}
-							className={`filter-btn${activeCat === cat ? " active" : ""}`}
-							onClick={() => setActiveCat(cat)}
-							aria-pressed={activeCat === cat}
-						>
-							{cat}
-						</button>
-					))}
+				<span className="chips">
+					{categories.map((cat) => {
+						const on = activeCat === cat;
+						return (
+							<button
+								type="button"
+								key={cat}
+								data-cat={catToSlug(cat)}
+								className={`chip${on ? " chip--on" : ""}`}
+								onClick={() => setActiveCat(on ? "All" : cat)}
+								aria-pressed={on}
+							>
+								{catShortName(cat)}
+							</button>
+						);
+					})}
 				</span>
-				<VibeFilter />
+				<span className="chips">
+					{VIBE_KEYS.map((key) => {
+						const on = vibes.includes(key);
+						return (
+							<button
+								type="button"
+								key={key}
+								data-vibe={key}
+								className={`chip chip--vibe${on ? " chip--on" : ""}`}
+								onClick={() => toggleVibe(key)}
+								aria-pressed={on}
+							>
+								{VIBE_LABELS[key]}
+							</button>
+						);
+					})}
+				</span>
 			</div>
 
 			{when && (
@@ -278,7 +293,6 @@ export default function SwipeMode({ onClose }: Props) {
 						<p>
 							{saved} saved · {history.length - saved} skipped
 						</p>
-						<ExportSaved />
 						<button type="button" className="filter-btn" onClick={onClose}>
 							Back to the list
 						</button>

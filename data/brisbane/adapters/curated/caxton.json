@@ -5,5 +5,28 @@
   "source_id": "caxton",
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
-  "events": []
+  "events": [
+    {
+      "title": "NFL Down Under Package",
+      "datetime": "Fri 11 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-11T10:00:00",
+      "datetime_end_iso": "2026-09-11T14:30:00",
+      "location": "Caxton Hotel",
+      "link": "https://caxton.com.au/event/nfl-down-under-package/",
+      "cost": "See link",
+      "source": "Caxton Hotel",
+      "description": "Book our 4-hour food &amp; beverage package for the LA Rams and San Fran. 49-ers game happening down under! Schooners of Coors, roaming platters, a chance to win a 49-ers jersey, and the game live &amp; loud on our big screen. 18+ Event. Terms and conditions apply. The Caxton promotes the responsible service and consumption of alcohol. Book now!",
+      "image": "https://caxton.com.au/wp-content/uploads/2026/09/NFL-website-1.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "sport",
+        "food",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

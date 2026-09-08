@@ -19,6 +19,13 @@ export const VIBE_LABELS: Record<VibeKey, string> = {
 	social: "Social",
 };
 
+/** Lowercased vibe labels, for stripping free tags that collide with one.
+ * "social" and "hands on" exist in both vocabularies, and the same word in two
+ * chips with two meanings is the defect this removes. */
+export const VIBE_LABEL_SET = new Set(
+	Object.values(VIBE_LABELS).map((l) => l.toLowerCase()),
+);
+
 /** The vibes an event actually has, in a stable order. */
 export function vibesOf(event: Event): VibeKey[] {
 	return VIBE_KEYS.filter((key) => event[key] === true);

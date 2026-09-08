@@ -46,7 +46,7 @@ const SYSTEM_PROMPT = `You are classifying events that have already been extract
 For each event you are given, decide only:
 
 - "category": EXACTLY one of ${CATEGORIES.map((c) => `"${c}"`).join(", ")}. Pick the closest fit; use "Community / Other" when nothing else fits.
-- "tags": 1-5 tags, ONLY from this list: ${TAGS.join(", ")}. Add every listed tag that is true of the event, even when the listing does not use the word (a stand-up night is "comedy","standup"; a brewery tour is "drinks","tour"; any night the audience can perform is "open mic"; a talk, panel or Q&A is "talk"). Do not pad — one tag is fine. Never emit a tag that is not on the list, and never emit "free".
+- "tags": 3-8 tags, ONLY from this list: ${TAGS.join(", ")}. Add every listed tag that is true of the event, even when the listing does not use the word (a stand-up night is "comedy","standup"; a brewery tour is "drinks","tour"; any night the audience can perform is "open mic"; a philosophy talk is "philosophy"; a pub quiz is "trivia","drinks"). Emit the general AND the specific when both are true — a jazz gig is "music","live music","jazz". Do not invent filler to reach eight. Never emit a tag that is not on the list, and never emit "free".
 
 - "social": true if the main draw is meeting/being around other people (meetups, socials, parties, markets).
 - "intellectual": true if it is talk-, idea- or learning-led (lectures, panels, debates, science/philosophy/history).
@@ -151,11 +151,12 @@ export function createGeminiAnnotator(apiKey: string): AnnotateFn {
  * same problem and solves it the other way, by persisting its version into
  * the payload it writes.)
  */
-export const ANNOTATE_PROMPT_VERSION = "v3";
+export const ANNOTATE_PROMPT_VERSION = "v4";
 
 /** Matches the prompt's own ceiling. Was an unexplained 4 while the prompt
- * asked for more, so tags past the fourth were silently thrown away. */
-const MAX_TAGS = 5;
+ * asked for more, so tags past the fourth were silently thrown away — the cap
+ * and the prompt have to move together or one of them is a lie. */
+const MAX_TAGS = 8;
 
 /** Identity for reusing a previous week's annotation: same title, start and
  * venue. Matches the basis of eventHash in shared.ts. */

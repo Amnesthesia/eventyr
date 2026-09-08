@@ -20,9 +20,7 @@ export interface Event {
 	venue?: string;
 }
 
-export type TriState = "yes" | "no" | "any";
 export type VibeKey = "intellectual" | "creative" | "hands_on" | "social";
-export type VibeFilters = Record<VibeKey, TriState>;
 export type PastFilter = "no-past" | "all" | "only-past";
 
 export interface City {

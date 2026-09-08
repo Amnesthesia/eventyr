@@ -7,9 +7,9 @@ const PAST_CYCLE: Record<PastFilterType, PastFilterType> = {
 	"only-past": "no-past",
 };
 const PAST_LABEL: Record<PastFilterType, string> = {
-	"no-past": "No Past",
-	all: "All Events",
-	"only-past": "Past Events",
+	"no-past": "Hide past",
+	all: "Include past",
+	"only-past": "Only past",
 };
 
 export default function PastFilter() {
@@ -18,13 +18,7 @@ export default function PastFilter() {
 	return (
 		<button
 			type="button"
-			className={
-				pastFilter === "only-past"
-					? "filter-btn active"
-					: pastFilter === "no-past"
-						? "filter-btn vibe-no"
-						: "filter-btn"
-			}
+			className={`chip${pastFilter !== "no-past" ? " chip--on" : ""}`}
 			onClick={() => setPastFilter(PAST_CYCLE[pastFilter])}
 		>
 			{PAST_LABEL[pastFilter]}

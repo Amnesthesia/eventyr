@@ -111,10 +111,9 @@
       "image": "https://www.netherworldarcade.com/wp-content/uploads/2026/02/SkillShots-Poster.jpg",
       "category": "Workshop / Class",
       "tags": [
-        "pinball",
+        "games",
         "gaming",
-        "skills",
-        "free"
+        "beginners"
       ],
       "social": true,
       "intellectual": false,
@@ -229,29 +228,6 @@
         "gaming",
         "fightinggames",
         "esports",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Brisbane Pinball Club",
-      "datetime": "Tue 8 Sep, 3:00 PM",
-      "datetime_iso": "2026-09-08T15:00:00",
-      "datetime_end_iso": "2026-09-08T21:00:00",
-      "location": "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006",
-      "link": "https://www.netherworldarcade.com/event/brisbane-pinball-club/",
-      "cost": "See link",
-      "source": "Netherworld",
-      "description": "&lt;p&gt;Every fortnight, the Brisbane Pinball Club meets in the Netherworld. Each meeting will require you to play 10 different pinball machines of the club\\'s choosing at your own pace. If you\\'ve ever wanted to join a Pinball club, this is your time to shine! It\\'s open to absolutely everybody and all skill levels. Prizes awarded [&hellip;]&lt;/p&gt;\\n",
-      "image": "https://www.netherworldarcade.com/wp-content/uploads/2026/01/BPCweb.png",
-      "category": "Social / Meetup",
-      "tags": [
-        "pinball",
-        "gaming",
-        "club",
         "social"
       ],
       "social": true,
@@ -440,6 +416,27 @@
       ],
       "social": true,
       "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Fighting Spirits &#8211; Casual Fighting Game Night",
+      "datetime": "Thu 17 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-17T18:00:00",
+      "datetime_end_iso": "2026-09-17T22:00:00",
+      "location": "Netherworld, 186 Brunswick Street, Fortitude Valley, QLD, 4006",
+      "link": "https://www.netherworldarcade.com/event/fighting-spirits-casual-fighting-game-night-2/",
+      "cost": "See link",
+      "source": "Netherworld",
+      "description": "&lt;p&gt;Join us for FIGHTING SPIRITS, a monthly Fighting Game event happening in the Lost Souls area of Netherworld. REGO: https://www.start.gg/tournament/fightingspirits Get involved in casual play of a variety of games, With Street Fighter 6 and various anime fighting titles BYO games and controllers absolutely welcome, with most games played on PS5. Bring your own controller, [&hellip;]&lt;/p&gt;\\n",
+      "image": "https://www.netherworldarcade.com/wp-content/uploads/2025/11/Street-Fighter-2025-poster.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "games",
+        "gaming"
+      ],
+      "social": true,
+      "intellectual": false,
       "hands_on": false,
       "creative": false
     }

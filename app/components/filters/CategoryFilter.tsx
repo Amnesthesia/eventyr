@@ -1,4 +1,4 @@
-import { catToSlug } from "@react/utils/categorySlug";
+import { catShortName, catToSlug } from "@react/utils/categorySlug";
 import { KEY_TO_SLUG } from "@react/utils/citySlug";
 import { useEffect } from "react";
 import { useEventsContext } from "../../context";
@@ -7,8 +7,8 @@ export default function CategoryFilter() {
 	const { categories, activeCat, setActiveCat, cityKey } = useEventsContext();
 	const citySlug = KEY_TO_SLUG[cityKey] ?? cityKey;
 
-	// Marks the one pill a per-category static page carries as active on load.
-	// Safe now (unlike the effect this replaced): `categories` comes from
+	// Marks the one chip a per-category static page carries as active on load.
+	// Safe (unlike the effect this replaced): `categories` comes from
 	// cityData.events, not from the activeCat-dependent `filtered` list, so it
 	// cannot change as a result of this running and cannot re-trigger itself.
 	useEffect(() => {
@@ -25,32 +25,31 @@ export default function CategoryFilter() {
 	// discard the very state change the click just made.
 	const canFilterInPlace = categories.length > 1;
 
-	function selectCat(cat: string, e: React.MouseEvent) {
-		if (!canFilterInPlace) return;
-		e.preventDefault();
-		setActiveCat(cat);
-	}
-
 	return (
-		<span className="filters filters--cat">
-			<a
-				className={`filter-btn${activeCat === "All" || !activeCat ? " active" : ""}`}
-				onClick={(e) => selectCat("All", e)}
-				href={`/${citySlug}/`}
-			>
-				All Categories
-			</a>
-			{categories.map((cat) => (
-				<a
-					key={cat}
-					className={`filter-btn${activeCat === cat ? " active" : ""}`}
-					data-cat={catToSlug(cat)}
-					onClick={(e) => selectCat(cat, e)}
-					href={`/${citySlug}/${catToSlug(cat)}/`}
-				>
-					{cat}
-				</a>
-			))}
-		</span>
+		<div className="chips chips--cat">
+			{categories.map((cat) => {
+				const on = activeCat === cat;
+				// Deselecting is a click on the lit chip: there is no "all
+				// categories" pill any more, because a black pill for "no filter"
+				// was the loudest thing on the page saying nothing.
+				const href = on ? `/${citySlug}/` : `/${citySlug}/${catToSlug(cat)}/`;
+				return (
+					<a
+						key={cat}
+						className={`chip${on ? " chip--on" : ""}`}
+						data-cat={catToSlug(cat)}
+						href={href}
+						aria-current={on ? "true" : undefined}
+						onClick={(e) => {
+							if (!canFilterInPlace) return;
+							e.preventDefault();
+							setActiveCat(on ? "All" : cat);
+						}}
+					>
+						{catShortName(cat)}
+					</a>
+				);
+			})}
+		</div>
 	);
 }

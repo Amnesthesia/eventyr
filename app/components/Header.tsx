@@ -1,84 +1,95 @@
-import { Calendar, Moon, Sun } from "lucide-react";
-import { useEventsContext } from "../context";
+import { CalendarDays, Layers, Minus, Moon, Plus, Sun } from "lucide-react";
+import { useId, useState } from "react";
+import { eventId, useEventsContext } from "../context";
 import { KEY_TO_SLUG } from "../utils/citySlug";
-import { fmtRange } from "../utils/dates";
-import ExportSaved from "./ExportSaved";
+import ActiveFilterStrip from "./filters/ActiveFilterStrip";
+import CategoryFilter from "./filters/CategoryFilter";
+import MoreFilters from "./filters/MoreFilters";
+import WhenFilter from "./filters/WhenFilter";
+import PreferencesPane from "./PreferencesPane";
 import SearchBar from "./SearchBar";
 
-export default function Header() {
-	const {
-		filtered,
-		cities,
-		cityKey,
-		cityData,
-		theme,
-		toggleTheme,
-		weekStart,
-		weekEnd,
-	} = useEventsContext();
+interface Props {
+	onSwipe: () => void;
+	onOpenCalendar: () => void;
+}
 
-	const meta = cityData
-		? `${fmtRange(weekStart, weekEnd)} · ${filtered.length} events`
-		: "loading…";
+/**
+ * Two tiers and a disclosure, sticky over the list.
+ *
+ * Row 1 is scope (where, what text, this browser's own stuff), row 2 is the
+ * two filters people actually reach for (when, category), and everything else
+ * is behind MORE FILTERS. The five equal-weight rows this replaced put ~350px
+ * of chrome above the first event and gave the reader nothing to read first.
+ */
+export default function Header({ onSwipe, onOpenCalendar }: Props) {
+	const { cities, cityKey, cityData, starred, theme, toggleTheme } =
+		useEventsContext();
+	// Against the whole city, not the filtered list: "my saved events" means all
+	// of them, not the ones the current category happens to leave visible.
+	const savedCount = cityData.events.filter((e) =>
+		starred.has(eventId(e)),
+	).length;
+	// Closed on both sides of hydration — the server has no way to know, and a
+	// disclosure that pops open after mount is worse than one press.
+	const [moreOpen, setMoreOpen] = useState(false);
+	const moreId = useId();
 
 	return (
-		<header>
-			<h1 className="site-name">
-				<a href="/">&gt;&nbsp;do things</a>{" "}
-				<span className="vague">in {cityData?.city?.split(",")[0]}</span>
-			</h1>
-			<span className="header-meta">{meta}</span>
-			<div className="header-controls">
-				<SearchBar />
-				{cities.length > 1 && (
-					<>
-						<nav className="city-nav" aria-label="City pages">
-							{cities.map((c) => {
-								const slug = KEY_TO_SLUG[c.key] ?? c.key;
-								return (
-									<a
-										key={c.key}
-										href={`/${slug}/`}
-										className={`filter-btn${c.key === cityKey ? " active" : ""}`}
-									>
-										{c.name.split(",")[0]}
-									</a>
-								);
-							})}
-						</nav>
-						<select
-							className="city-select city-select--mobile"
-							value={cityKey}
-							onChange={(e) => {
-								const slug = KEY_TO_SLUG[e.target.value] ?? e.target.value;
-								window.location.href = `/${slug}/`;
-							}}
-						>
-							{cities.map((c) => (
-								<option key={c.key} value={c.key}>
-									{c.name.split(",")[0]}
-								</option>
-							))}
-						</select>
-					</>
+		<header className="app-header">
+			<div className="hdr-row hdr-row--scope">
+				<h1 className="site-name">
+					<a href="/">&gt;&nbsp;do things</a> <span className="vague">in</span>
+				</h1>
+				{cities.length > 1 ? (
+					<select
+						className="city-select"
+						aria-label="City"
+						value={cityKey}
+						onChange={(e) => {
+							const slug = KEY_TO_SLUG[e.target.value] ?? e.target.value;
+							window.location.href = `/${slug}/`;
+						}}
+					>
+						{cities.map((c) => (
+							<option key={c.key} value={c.key}>
+								{c.name.split(",")[0]}
+							</option>
+						))}
+					</select>
+				) : (
+					<span className="city-static">{cityData?.city?.split(",")[0]}</span>
 				)}
-				{/* Its own flex line below 640px (see .header-icons): the search
-				    field and city switcher already claim most of a phone's width, and
-				    without a forced break these three icons ran off the right edge of
-				    the viewport instead of wrapping under it. */}
-				<div className="header-icons">
-					<ExportSaved compact />
-					{cityKey && (
-						<a
-							className="theme-btn"
-							href={`/${cityKey}.ics`}
-							download
-							aria-label="Subscribe to calendar"
-							title="Download calendar (.ics)"
-						>
-							<Calendar size={12} strokeWidth={2} />
-						</a>
-					)}
+				<div className="hdr-tools">
+					<SearchBar />
+					{/* Opens the saved week; the .ics download lives inside that view,
+					    which is the only place it is worth offering — exporting from a
+					    corner button meant downloading a file to find out what was in
+					    it. */}
+					<button
+						type="button"
+						className="theme-btn saved-count"
+						onClick={onOpenCalendar}
+						disabled={savedCount === 0}
+						title="See your saved events on a week calendar"
+					>
+						<CalendarDays size={12} strokeWidth={2} />
+						Saved {savedCount}
+					</button>
+					{/* Neither of these narrows the list, so neither belongs in the
+					    filter disclosure: one opens a different mode, the other is a
+					    settings pane. No .ics link here any more — exporting 600+
+					    events is nobody's intent, and the saved section has its own
+					    export for the set that is worth subscribing to. */}
+					<button
+						type="button"
+						className="theme-btn swipe-btn"
+						onClick={onSwipe}
+						aria-label="Swipe through events"
+						title="Swipe through events one at a time"
+					>
+						<Layers size={12} strokeWidth={2} />
+					</button>
 					<button
 						type="button"
 						className="theme-btn"
@@ -91,8 +102,35 @@ export default function Header() {
 							<Moon size={12} strokeWidth={2} />
 						)}
 					</button>
+					<PreferencesPane compact />
 				</div>
 			</div>
+
+			<div className="hdr-row hdr-row--refine">
+				<WhenFilter />
+				<span className="hdr-divider" aria-hidden="true" />
+				<CategoryFilter />
+				<button
+					type="button"
+					className="more-toggle"
+					onClick={() => setMoreOpen((open) => !open)}
+					aria-expanded={moreOpen}
+					aria-controls={moreId}
+				>
+					{moreOpen ? "Fewer filters" : "More filters"}
+					{moreOpen ? (
+						<Minus size={11} strokeWidth={2.4} />
+					) : (
+						<Plus size={11} strokeWidth={2.4} />
+					)}
+				</button>
+			</div>
+
+			<div id={moreId} hidden={!moreOpen}>
+				{moreOpen && <MoreFilters />}
+			</div>
+
+			<ActiveFilterStrip />
 		</header>
 	);
 }

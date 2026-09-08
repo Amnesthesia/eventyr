@@ -1,14 +1,12 @@
-import { CalendarRange } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import EventGrid from "./components/EventGrid";
-import ExportSaved from "./components/ExportSaved";
-import FilterBar from "./components/FilterBar";
 import Header from "./components/Header";
 import { Intro } from "./components/Intro";
 import NotificationPrompt from "./components/NotificationPrompt";
+import ResultsHeader from "./components/ResultsHeader";
 import SavedCalendar from "./components/SavedCalendar";
 import SwipeMode from "./components/SwipeMode";
-import { useEventsContext } from "./context";
+import { eventId, useEventsContext } from "./context";
 import { dateWindowFor, groupEvents } from "./utils/grouping";
 import { eventsFromIds, parseSavedIds } from "./utils/savedLink";
 
@@ -21,17 +19,9 @@ export default function AppShell() {
 		rest,
 		groupBy,
 		todayStr,
-		activeCat,
-		setActiveCat,
-		dateRange,
-		setDateRange,
-		activeTags,
-		toggleTag,
-		resetVibes,
-		query,
-		setQuery,
-		minScore,
-		setMinScore,
+		starred,
+		hasActiveFilters,
+		clearAllFilters,
 		tagPrefs,
 	} = useEventsContext();
 	const [swiping, setSwiping] = useState(false);
@@ -71,22 +61,6 @@ export default function AppShell() {
 	// "today" only ever arrives as a post-hydration update, not a mismatch.
 	const today = todayStr || cityData?.week_start || "";
 
-	const hasActiveFilters =
-		activeCat !== "All" ||
-		!!dateRange ||
-		activeTags.length > 0 ||
-		query.trim().length > 0 ||
-		minScore > 0;
-
-	function clearFilters() {
-		setActiveCat("All");
-		setDateRange(null);
-		activeTags.forEach(toggleTag);
-		resetVibes();
-		setQuery("");
-		setMinScore(0);
-	}
-
 	const groups = useMemo(() => {
 		const window = dateWindowFor(
 			cityData?.week_start ?? "",
@@ -105,13 +79,21 @@ export default function AppShell() {
 
 	return (
 		<>
-			<Header />
+			<Header
+				onSwipe={() => setSwiping(true)}
+				onOpenCalendar={() =>
+					setCalendar({
+						events: cityData.events.filter((e) => starred.has(eventId(e))),
+						shared: false,
+					})
+				}
+			/>
 
 			<main id="main">
 				{cityData && (
 					<>
 						{cityData && <Intro city={cityData.city} />}
-						<FilterBar onSwipe={() => setSwiping(true)} />
+						<ResultsHeader />
 						{swiping && <SwipeMode onClose={() => setSwiping(false)} />}
 						{starredEvents.length > 0 && (
 							<div id="starred-section">
@@ -119,21 +101,6 @@ export default function AppShell() {
 									<h2 className="section-label">saved</h2>
 									<div className="section-head-actions">
 										<NotificationPrompt />
-										<button
-											type="button"
-											className="filter-btn"
-											onClick={() =>
-												setCalendar({
-													events: starredEvents,
-													shared: false,
-												})
-											}
-											title="See your saved events on a week calendar"
-										>
-											<CalendarRange size={12} strokeWidth={2.2} />
-											<span>Calendar</span>
-										</button>
-										<ExportSaved />
 									</div>
 								</div>
 								<EventGrid events={starredEvents} isTopPick={false} />
@@ -163,7 +130,7 @@ export default function AppShell() {
 									<button
 										type="button"
 										className="filter-btn"
-										onClick={clearFilters}
+										onClick={clearAllFilters}
 									>
 										Clear filters
 									</button>

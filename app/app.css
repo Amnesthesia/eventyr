@@ -1,0 +1,8 @@
+/* The single stylesheet the site loads.
+ *
+ * Both halves come through one module on purpose: as two separate imports the
+ * browser could hold pico's defaults without our overrides on top of them —
+ * which is a screen of giant blue buttons snapping into place a frame later.
+ * One file cannot be half-applied. */
+@import "./pico.scss";
+@import "./styles.css";

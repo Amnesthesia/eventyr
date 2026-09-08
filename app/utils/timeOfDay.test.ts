@@ -22,12 +22,13 @@ test("a date with no time has no band", () => {
 	assert.equal(bandOf({ title: "x" } as Event), null);
 });
 
-test("an event with no time is never filtered out", () => {
-	// A filter that silently drops what it cannot read is worse than one that
-	// admits it: excluding these would hide a third of the listings.
+test("an event with no start time is dropped once a band is chosen", () => {
+	// Picking "morning" is a question about the clock; a date-only run has no
+	// answer to it. With no band chosen it is not filtered at all.
 	const undated = at("2026-09-09");
-	assert.ok(matchesTimeBands(undated, ["morning"]));
-	assert.ok(matchesTimeBands(undated, ["evening"]));
+	assert.ok(!matchesTimeBands(undated, ["morning"]));
+	assert.ok(!matchesTimeBands(undated, ["evening"]));
+	assert.ok(matchesTimeBands(undated, []));
 });
 
 test("multiple bands can be selected at once", () => {

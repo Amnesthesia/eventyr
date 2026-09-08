@@ -425,14 +425,11 @@ test("a standing exhibition is not a top pick", () => {
 	);
 });
 
-test("no tag restates a vibe", () => {
-	// The four vibe booleans are their own filter. A tag saying the same thing
-	// splits one intent across two controls — and measured on real data, every
-	// event tagged "workshop" scored hands_on, every "talk" scored
-	// intellectual, every "party" and "networking" scored social.
-	//
-	// Genres are not affected and must not be: "jazz" is also 100% creative,
-	// but it says something "creative" cannot.
+test("no tag restates a vibe, but broad subjects survive", () => {
+	// The four vibe booleans are their own filter, so a tag saying the same
+	// thing splits one intent across two controls. Measured: every event tagged
+	// "workshop" scored hands_on, every "talk" scored intellectual, every
+	// "party"/"networking" scored social.
 	for (const vibeish of [
 		"social",
 		"creative",
@@ -440,15 +437,14 @@ test("no tag restates a vibe", () => {
 		"hands on",
 		"workshop",
 		"talk",
+		"lecture",
 		"party",
 		"networking",
-		"performance",
-		"music",
-		"art",
+		"meetup",
 	]) {
 		assert.ok(
 			!TAGS.includes(vibeish as (typeof TAGS)[number]),
-			`${vibeish} restates a vibe or category and must not be a tag`,
+			`${vibeish} restates a vibe and must not be a tag`,
 		);
 		assert.deepEqual(
 			stripUselessTags([vibeish], "Brisbane", "Some Venue"),
@@ -457,9 +453,24 @@ test("no tag restates a vibe", () => {
 		);
 	}
 
-	// The specific survives.
-	for (const keep of ["jazz", "exhibition", "market", "ceramics", "trivia"]) {
-		assert.ok(TAGS.includes(keep as (typeof TAGS)[number]));
+	// Broad SUBJECTS are not vibes and must stay: these are the three
+	// most-used tags in the data (art 182, music 196, performance 133) and
+	// exactly what a reader reaches for to say "more of this". Precision comes
+	// from also emitting the specific tag, not from withholding the general one.
+	for (const keep of [
+		"art",
+		"music",
+		"performance",
+		"jazz",
+		"exhibition",
+		"market",
+		"ceramics",
+		"trivia",
+	]) {
+		assert.ok(
+			TAGS.includes(keep as (typeof TAGS)[number]),
+			`${keep} is a real subject and must remain available`,
+		);
 		assert.deepEqual(stripUselessTags([keep], "Brisbane", "Some Venue"), [
 			keep,
 		]);

@@ -50,14 +50,15 @@ export function bandOf(event: Event): TimeBand | null {
 /**
  * Whether an event passes the selected bands.
  *
- * No selection means no filtering. An event with no start time always passes:
- * excluding it would hide a third of the listings behind a filter that cannot
- * actually judge them, and a filter that silently drops what it cannot read is
- * worse than one that admits it.
+ * No selection means no filtering. With a band selected, an event carrying no
+ * start time is dropped: "what is on this evening" is a question about the
+ * clock, and a run-all-week exhibition with a date but no time is not an
+ * answer to it. Roughly a third of listings are date-only, so this filter cuts
+ * hard — which is the point of choosing a band at all.
  */
 export function matchesTimeBands(event: Event, bands: TimeBand[]): boolean {
 	if (bands.length === 0) return true;
 	const band = bandOf(event);
-	if (band === null) return true;
+	if (band === null) return false;
 	return bands.includes(band);
 }

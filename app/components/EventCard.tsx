@@ -46,8 +46,8 @@ export default function EventCard({
 		tagPrefs,
 		toggleTag,
 		cityKey,
-		vibeFilters,
-		setVibe,
+		vibes,
+		toggleVibe,
 		costLocale,
 		todayStr,
 	} = useEventsContext();
@@ -194,15 +194,13 @@ export default function EventCard({
 						<button
 							type="button"
 							key={key}
-							className={`tag tag-vibe${vibeFilters[key] === "yes" ? " active" : ""}`}
+							className={`tag tag-vibe${vibes.includes(key) ? " active" : ""}`}
 							data-vibe={key}
 							// Toggles the vibe filter rather than the tag filter: these are
 							// booleans on the event, not free-text tags, and VibeFilter in
 							// the bar above is the control they belong to.
-							onClick={() =>
-								setVibe(key, vibeFilters[key] === "yes" ? "any" : "yes")
-							}
-							aria-pressed={vibeFilters[key] === "yes"}
+							onClick={() => toggleVibe(key)}
+							aria-pressed={vibes.includes(key)}
 						>
 							{VIBE_LABELS[key]}
 						</button>
@@ -230,9 +228,17 @@ export default function EventCard({
 									? `${tag} — you asked for more of these`
 									: tagPrefs[tag] === -1
 										? `${tag} — you asked for less of these`
-										: undefined
+										: `Filter by ${tag}`
 							}
 						>
+							{/* The "+" says the chip adds a filter. Without it the tags
+							    read as decoration and nobody pressed them. It is dropped
+							    once the tag IS the filter, where the chip removes it. */}
+							{!activeTags.includes(tag) && (
+								<span className="tag-plus" aria-hidden="true">
+									+&nbsp;
+								</span>
+							)}
 							{tag}
 						</button>
 					))}

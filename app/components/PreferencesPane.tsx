@@ -17,7 +17,12 @@ import { useModalDialog } from "../hooks/useModalDialog";
  */
 const RATEABLE_TAGS = 150;
 
-export default function PreferencesPane() {
+interface Props {
+	/** Header form: icon only, sized like the theme button. */
+	compact?: boolean;
+}
+
+export default function PreferencesPane({ compact }: Props = {}) {
 	const { filtered, tagPrefs } = useEventsContext();
 	const [open, setOpen] = useState(false);
 
@@ -49,12 +54,17 @@ export default function PreferencesPane() {
 		<>
 			<button
 				type="button"
-				className={`filter-btn${rated > 0 ? " active" : ""}`}
+				className={
+					compact
+						? `theme-btn${rated > 0 ? " theme-btn--on" : ""}`
+						: `filter-btn${rated > 0 ? " active" : ""}`
+				}
 				onClick={() => setOpen(true)}
+				aria-label="Preferences"
 				title="Choose the kinds of event you want more or less of"
 			>
 				<SlidersHorizontal size={12} strokeWidth={2.2} />
-				Preferences{rated > 0 && ` (${rated})`}
+				{!compact && <>Preferences{rated > 0 && ` (${rated})`}</>}
 			</button>
 
 			{open && <PreferencesDialog tags={tags} onClose={() => setOpen(false)} />}

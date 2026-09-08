@@ -93,6 +93,14 @@
 	   than inheriting whichever colour happens to be in scope. */
 	--cat: var(--muted);
 	--vibe: var(--muted);
+
+	/* Chip contract. Unselected is always this neutral; colour means chosen. */
+	--chip-bg: #fff;
+	--chip-border: #d8d7d3;
+	--chip-fg: #5a5a55;
+	/* The disclosure panel's tint, so "more filters" reads as a drawer over the
+	   page rather than two more rows of the header. */
+	--panel: #f7f6f4;
 }
 
 [data-cat="talks"] {
@@ -181,6 +189,10 @@
 	--pico-h1-color: var(--fg);
 	--pico-h2-color: var(--fg);
 	--pico-h3-color: var(--fg);
+	--chip-bg: var(--surface);
+	--chip-border: #2e2e2e;
+	--chip-fg: #9a9a9a;
+	--panel: #0f0f0f;
 }
 
 /* ── Base text and interaction ── */
@@ -455,8 +467,550 @@ header {
 	gap: 0.3rem;
 }
 
-.city-nav .filter-btn {
+.city-nav /* ── Header (sticky, two tiers + a disclosure) ──
+   Row 1 is scope, row 2 is the two filters people actually use, everything
+   else is behind MORE FILTERS. The five equal-weight rows this replaced put
+   ~350px of chrome above the first event and made nothing read as primary.
+
+   astro-island is an unknown element and so inline by default; sticky inside
+   an inline parent is confined to the anonymous block around it and scrolls
+   straight off. One declaration is cheaper than moving the header into main. */
+astro-island {
+	display: block;
+}
+
+.app-header {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: var(--s2);
+	padding: var(--s3) var(--s3) 0;
+	background: var(--bg);
+	border-bottom: 1px solid var(--border);
+}
+
+.hdr-row {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	min-width: 0;
+}
+
+/* A beat below the wordmark row: the two tiers are different kinds of
+   control, and at the header's own gap they read as one block of chrome. */
+.hdr-row--refine {
+	padding-top: var(--s2);
+	padding-bottom: var(--s2);
+}
+
+.hdr-tools {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	min-width: 0;
+}
+
+/* Bigger than the filter chips below them on purpose: search is the fastest
+   way through 600 events, and these are the controls a returning reader
+   reaches for before any filter. */
+.hdr-tools .search-bar {
+	height: 36px;
+	padding: 0 0.6rem;
+	gap: 0.5rem;
+}
+
+.search-key {
+	font-family: var(--mono);
+	font-size: var(--t-xs);
+	line-height: 1;
+	color: var(--muted);
+}
+
+.hdr-tools .search-bar .search-input {
+	font-size: var(--t-sm);
+	width: 16rem;
+}
+
+.hdr-tools .theme-btn {
+	width: 36px;
+	height: 36px;
+}
+
+.hdr-tools .theme-btn.saved-count {
+	width: auto;
+	padding: 0 0.55rem;
+	font-size: var(--t-xs);
+}
+
+.hdr-divider {
+	width: 1px;
+	align-self: stretch;
+	min-height: 20px;
+	background: var(--border);
+	margin: 0 0.2rem;
+}
+
+.city-static {
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+/* ── Chips ──
+   One contract for every chip on the page: unselected is white with a hairline
+   and grey text, selected is filled. Never the other way round — the old bar
+   coloured every unselected category pill and went black on the selected one,
+   so the loudest things on screen marked what nobody had picked. */
+.chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.3rem;
+	min-width: 0;
+}
+
+/* The category row is the one that can outgrow its line; it scrolls rather
+   than wrapping so the MORE FILTERS toggle stays on the same row as it. */
+.when-filter {
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	flex-shrink: 0;
+}
+
+/* min-width: 0 is what makes overflow-x actually scroll: without it a flex
+   item's automatic minimum is its content's width, so the row pushed the whole
+   page into horizontal scroll on a phone instead of scrolling inside itself. */
+.chips--cat {
+	flex: 1 1 auto;
+	/* width: 0 with flex-grow, not min-width: 0 — a flex item's min-content
+	   contribution still floors the row without it, and this row's content is
+	   six category chips wider than a phone. It grows straight back to the
+	   space left over. */
+	width: 0;
+	min-width: 0;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.chips--cat::-webkit-scrollbar {
+	display: none;
+}
+
+.chip,
+.more-toggle,
+.strip-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	height: 26px;
+	padding: 0 0.55rem;
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	font-weight: 500;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	border: 1px solid var(--chip-border);
+	background: var(--chip-bg);
+	color: var(--chip-fg);
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0;
+	width: auto;
+	cursor: pointer;
 	text-decoration: none;
+	transition:
+		border-color 0.12s,
+		color 0.12s,
+		background 0.12s;
+}
+
+.chip:hover:not(:disabled),
+.more-toggle:hover {
+	border-color: var(--fg);
+	color: var(--fg);
+	background: var(--chip-bg);
+}
+
+.chip--on {
+	background: var(--fg);
+	border-color: var(--fg);
+	color: var(--bg);
+}
+
+/* A selected category fills with its own hue — the same accent the cards
+   carry, which is what makes the colour legible without a legend. --bg rather
+   than literal white so it inverts with the theme. */
+.chip[data-cat].chip--on,
+.chip[data-cat].chip--on:hover {
+	background: var(--cat);
+	border-color: var(--cat);
+	color: var(--bg);
+}
+
+/* Vibes are the one exception to "never colour an unselected chip": they are a
+   closed four-value vocabulary shared with the cards, and the tint is what
+   separates them from the free tags they sit next to. */
+.chip--vibe {
+	text-transform: lowercase;
+	letter-spacing: 0;
+	color: var(--vibe);
+	border-color: color-mix(in srgb, var(--vibe) 40%, var(--chip-border));
+	background: color-mix(in srgb, var(--vibe) 8%, var(--chip-bg));
+}
+
+.chip--vibe.chip--on,
+.chip--vibe.chip--on:hover {
+	background: var(--vibe);
+	border-color: var(--vibe);
+	color: var(--bg);
+}
+
+/* Free tags are content, not UI labels, so they keep their own casing. */
+.chips--pool .chip {
+	text-transform: lowercase;
+	letter-spacing: 0;
+}
+
+.chip-count {
+	font-size: 0.9em;
+	opacity: 0.55;
+	font-variant-numeric: tabular-nums;
+}
+
+.chip--on .chip-count {
+	opacity: 0.8;
+}
+
+/* Nothing in the current result set carries this tag. Dimmed and inert rather
+   than hidden: a chip that disappears as you filter is a moving target, and a
+   chip still advertising a global count it can no longer deliver is a lie. */
+.chip--zero,
+.chip--zero:hover {
+	opacity: 0.32;
+	background: color-mix(in srgb, var(--chip-fg) 14%, var(--chip-bg));
+	border-color: var(--chip-border);
+	color: var(--chip-fg);
+	cursor: default;
+	pointer-events: none;
+}
+
+/* ── Segmented controls (when, min score, group by) ──
+   Joined rather than gapped: exactly one segment is always on, which a row of
+   separate chips cannot say. */
+.seg {
+	display: inline-flex;
+	flex-shrink: 0;
+	/* A <fieldset>, for the grouping semantics — so its UA margin, padding and
+	   min-width all have to go before it looks like one control. Pico also
+	   gives a fieldset `width: 100%`, which made it claim the whole header row
+	   and wrap the category chips onto a line of their own. */
+	margin: 0;
+	padding: 0;
+	min-width: 0;
+	width: auto;
+	border: 1px solid var(--chip-border);
+	background: var(--chip-bg);
+}
+
+.seg-btn {
+	height: 26px;
+	padding: 0 0.6rem;
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	font-weight: 500;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	width: auto;
+	margin: 0;
+	border: 0;
+	border-right: 1px solid var(--chip-border);
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	color: var(--chip-fg);
+	cursor: pointer;
+}
+
+.seg-btn:last-child {
+	border-right: 0;
+}
+
+.seg-btn:hover {
+	color: var(--fg);
+	background: transparent;
+}
+
+.seg-btn--on,
+.seg-btn--on:hover {
+	background: var(--fg);
+	color: var(--bg);
+}
+
+.more-toggle {
+	margin-left: auto;
+}
+
+/* ── MORE FILTERS panel ──
+   Tinted and full-bleed so it reads as a drawer pulled out of the header
+   rather than two more permanent rows of it. */
+.more-panel {
+	display: flex;
+	flex-direction: column;
+	gap: var(--s3);
+	margin: 0 calc(-1 * var(--s3));
+	padding: var(--s3);
+	background: var(--panel);
+	border-top: 1px solid var(--border);
+}
+
+.frow {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--s3);
+	min-width: 0;
+}
+
+/* Fixed gutter: the labels line up down the left edge, which is what lets the
+   eye skip a row it does not care about. */
+.frow-label {
+	flex: 0 0 5.5rem;
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--muted);
+	line-height: 26px;
+}
+
+.frow-body {
+	flex: 1 1 auto;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: var(--s2);
+}
+
+.frow-body--inline {
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.frow-empty {
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	color: var(--muted);
+	line-height: 26px;
+}
+
+/* Two classes deep, like .search-bar .search-input: pico styles
+   `input:not(…)` at (0,1,1) with its own ~3rem height and padding, which a
+   lone class loses to. */
+.frow-body .tag-typeahead {
+	width: 22rem;
+	max-width: 100%;
+	height: 26px;
+	margin: 0;
+	padding: 0 0.5rem;
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	line-height: 1;
+	border: 1px solid var(--chip-border);
+	border-radius: 0;
+	background: var(--chip-bg);
+	color: var(--fg);
+	box-shadow: none;
+}
+
+.frow-body .tag-typeahead:focus {
+	border-color: var(--fg);
+	box-shadow: none;
+}
+
+/* ── Active filter strip ──
+   Renders only when something is actually filtering, which is what replaced
+   the "All Categories" / "All Vibes" / "All Tags" pills: no filter applied is
+   now the absence of this strip rather than three black pills announcing it. */
+.filter-strip {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.3rem;
+	padding: var(--s2) 0;
+	border-top: 1px solid var(--border);
+}
+
+.filter-strip .frow-label {
+	flex: 0 0 auto;
+	margin-right: 0.2rem;
+}
+
+.strip-chip {
+	text-transform: none;
+	letter-spacing: 0;
+	background: var(--fg);
+	border-color: var(--fg);
+	color: var(--bg);
+	gap: 0.3rem;
+}
+
+.strip-chip:hover {
+	opacity: 0.75;
+	background: var(--fg);
+	color: var(--bg);
+}
+
+.strip-clear {
+	/* margin-bottom: 0 — pico's button margin is what pushed this off the
+	   strip's baseline. */
+	margin: 0 0 0 0.3rem;
+	padding: 0;
+	width: auto;
+	border: 0;
+	background: none;
+	box-shadow: none;
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+}
+
+.strip-clear:hover {
+	color: var(--fg);
+	background: none;
+}
+
+/* ── Results header ──
+   The count lives here, not in the masthead, because there it never visibly
+   reacted to a filter. It is the largest thing on the row and the one number
+   that changes on every interaction. Grouping is view state, so it sits with
+   the results rather than in the filter stack. */
+.results-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--s3);
+	padding: var(--s4) 0 var(--s2);
+}
+
+.results-count {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5rem;
+	margin: 0;
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted);
+}
+
+.results-count strong {
+	font-size: var(--t-xl);
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	font-variant-numeric: tabular-nums;
+	color: var(--fg);
+}
+
+.results-range::before {
+	content: "·";
+	margin-right: 0.4rem;
+}
+
+.results-group {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.results-group .frow-label {
+	flex: 0 0 auto;
+}
+
+/* The "+" that says a card tag adds a filter. Muted, because the tag is the
+   content and the sign is only the affordance. */
+.tag-plus {
+	opacity: 0.45;
+	margin-right: -0.1rem;
+}
+
+.tag-btn.active .tag-plus {
+	opacity: 0.8;
+}
+
+@media (max-width: 640px) {
+	.app-header {
+		gap: var(--s1);
+	}
+	/* The icon cluster gets its own line and the search field takes what is
+	   left of it. Without a shrinkable search input the row's min-content width
+	   is wider than a phone, and a flex item can overflow its container's cross
+	   axis — which put the whole page into horizontal scroll. */
+	.hdr-tools {
+		flex: 1 1 100%;
+		margin-left: 0;
+	}
+	.hdr-tools .search-bar {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+	.search-bar .search-input {
+		width: 100%;
+		/* An <input>'s automatic minimum is its `size` attribute's width, so it
+		   refuses to shrink without this and drags the row past the viewport. */
+		min-width: 0;
+	}
+	/* The category chips take a line of their own on a phone; sharing one with
+	   the when-control left them 60px wide. */
+	.chips--cat {
+		flex: 1 1 100%;
+	}
+	/* The gutter costs more than it buys on a phone: the label goes above its
+	   row and the chips get the full width. */
+	.frow {
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+	.frow-label {
+		line-height: 1.6;
+	}
+	.frow-body .tag-typeahead {
+		width: 100%;
+	}
+	.hdr-row--refine {
+		gap: 0.4rem;
+	}
+	.hdr-divider {
+		display: none;
+	}
+}
+
+.filter-btn {
+	text-decoration: none;
+}
+
+.date-filter {
+	margin-bottom: 0px;
 }
 
 /* ── City selector ── */
@@ -471,20 +1025,26 @@ header {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	font-family: var(--mono);
-	font-size: var(--t-2xs);
-	font-weight: 600;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	border: 1px solid var(--border);
-	background: var(--bg);
-	color: var(--fg);
-	padding: 0.18rem 0.5rem;
-	cursor: pointer;
+	/* Reads as part of the wordmark it completes — "do things in Brisbane" —
+	   so it takes the wordmark's type, not the mono of the filter chips, and
+	   a rule under it instead of a box around it. */
+	font-family: inherit;
+	font-size: 1.05rem;
+	font-weight: 700;
+	letter-spacing: -0.025em;
+	text-transform: none;
+	border: 0;
+	border-bottom: 2px solid var(--fg);
 	border-radius: 0;
+	/* background-color only: pico draws the chevron with background-image, and
+	   the shorthand would take it with it. */
+	background-color: transparent;
+	color: var(--fg);
+	padding: 0 1.5rem 0.1rem 0.1rem;
 	height: auto;
+	cursor: pointer;
 	box-shadow: none;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .header-icons {
@@ -524,12 +1084,10 @@ header {
 	}
 }
 
-.city-select:hover {
-	border-color: var(--fg);
-}
-
+.city-select:hover,
 .city-select:focus {
-	border-color: var(--fg);
+	border-bottom-color: var(--fg);
+	opacity: 0.75;
 }
 
 .city-select option {
@@ -630,18 +1188,6 @@ header {
 	text-decoration-color: var(--fg);
 }
 
-/* ── Filter bar ── */
-.filter-bar {
-	display: flex;
-	justify-content: space-between;
-	border-bottom: 1px solid var(--border);
-	margin-bottom: 0;
-}
-
-/* Desktop: categories left, dates right */
-.filter-bar--cats .filters--cat { order: 1; }
-.filter-bar--cats .filters--date { order: 2; }
-
 .separator {
 	height: 1px;
 	width: 100%;
@@ -650,101 +1196,8 @@ header {
 	border-bottom: 1px solid var(--border);
 }
 
-/* max-width: 100% on the shared class, not just the one row that happened to
-   have enough content to reveal it: several of this class's parents switch to
-   flex-direction: column below 640px with align-items: flex-start (see the
-   media queries further down), and in a column flex container flex-basis /
-   min-width govern the vertical (main) axis, not the horizontal (cross) one.
-   Without a direct box constraint, a `.filters` row's width silently stopped
-   being limited at all on a phone and rendered at full unclipped content
-   width, pushing the whole page into horizontal scroll instead of scrolling
-   internally the way overflow-x: auto intends. */
-.filters {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	gap: 0.3rem;
-	max-width: 100%;
-	overflow-x: auto;
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
-}
-
-.filters--date {
-	min-width: 250px;
-	max-width: 100%;
-	/* Opts out of .filters' overflow-x: auto. A scroll container clips an
-	   absolutely positioned child, and this row holds the date-range popover —
-	   which is why the popover silently stopped appearing. Wrapping is the
-	   right behaviour for four controls anyway; scrolling is for the long
-	   category row. */
-	overflow: visible;
-	flex-wrap: wrap;
-}
-
-/* Takes whatever the date controls leave and scrolls inside it. The old fixed
-   `calc(100% - 280px)` squeezed the row to a few pills between 640 and 900px. */
-.filters--cat {
-	flex: 1 1 auto;
-	min-width: 0;
-}
-
-/* The primary row — dates and categories — stays put while 400 cards scroll
-   past; the vibe and grouping rows below it do not. It sits as a direct child
-   of <main> (not inside .filter-bar-wrapper) because sticky only holds while
-   its parent is on screen, and <main> is the whole page. The negative margin
-   lets its background cover main's side padding so cards never peek past it. */
-.filter-bar--cats {
-	position: sticky;
-	top: 0;
-	z-index: 10;
-	background: var(--bg);
-	margin: 0 calc(-1 * var(--s3));
-	padding: var(--s2) var(--s3);
-	border-bottom: 1px solid var(--border);
-}
-
-/* Secondary filters collapse behind one button on a phone, where three rows
-   of pills pushed the first event below the fold. A plain state-driven
-   .open class, not <details>/<summary>: Chromium hides a closed <details>'s
-   content through an internal not-rendered state rather than a plain
-   `display: none` UA rule, and unlike older engines that cannot be overridden
-   by author CSS — so "always open above 900px, closed below it" had no
-   CSS-only way to express with a real <details>. */
-.filters-more-toggle {
-	display: none;
-	cursor: pointer;
-}
-
-.filters-more {
-	display: none;
-	flex-direction: column;
-	/* The vibe row and the grouping/tools row read as one blended row at the
-	   old var(--s2): they are two different kinds of filter and want a beat
-	   of space between them, not just the row's own internal item gap. */
-	gap: var(--s4);
-}
-
-.filters-more.open {
-	display: flex;
-}
-
-@media (max-width: 899px) {
-	.filters-more-toggle {
-		display: inline-flex;
-		align-items: center;
-		gap: var(--s1);
-		width: fit-content;
-	}
-}
-
-@media (min-width: 900px) {
-	.filters-more {
-		display: flex;
-	}
-}
-
 .filter-btn {
+	margin-bottom: 0;
 	font-size: var(--t-2xs);
 	font-weight: 500;
 	letter-spacing: 0.06em;
@@ -776,36 +1229,6 @@ header {
 	border-color: var(--fg);
 	background: var(--fg);
 	color: var(--bg);
-}
-
-.filter-toggle {
-	display: flex;
-	align-items: center;
-	gap: 0.35rem;
-	font-size: var(--t-2xs);
-	font-weight: 500;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	font-family: var(--mono);
-	color: var(--muted);
-	cursor: pointer;
-	padding: 0.2rem 0;
-	user-select: none;
-	margin-bottom: 0;
-}
-
-.filter-toggle input[type="checkbox"] {
-	/* >=24px: WCAG 2.2 target-size. The icon stays its old size. */
-	width: 24px;
-	height: 24px;
-	margin: 0;
-	accent-color: var(--fg);
-}
-
-.filter-btn.vibe-no {
-	border-color: var(--fg);
-	color: var(--fg);
-	background: transparent;
 }
 
 /* ── Card grid ── */
@@ -1204,42 +1627,6 @@ summary:hover .card-desc-toggle {
 }
 
 
-/* The category filter buttons carry the same accent as the cards, which is
-   what makes the colour legible without a legend taking up space. */
-.filter-btn[data-cat] {
-	color: var(--cat);
-}
-
-/* Selected: the pill fills with its own hue and the label inverts.
-   `.filter-btn.active` and `.filter-btn[data-cat]` are both specificity
-   (0,2,0), so the later of the two used to win and left a black pill with
-   coloured text on it. These are (0,3,0) and settle it.
-
-   The label is var(--bg) rather than literal white so it inverts with the
-   theme: white on the dark hues in light mode (5.68:1 at worst) and near-black
-   on the light hues in dark mode (7.65:1). Literal white would be 2.2:1 on a
-   dark-mode pill. */
-.filter-btn[data-cat].active {
-	border-color: var(--cat);
-	background: var(--cat);
-	color: var(--bg);
-}
-
-.filter-btn[data-vibe] {
-	color: var(--vibe);
-}
-
-.filter-btn[data-vibe].active {
-	border-color: var(--vibe);
-	background: var(--vibe);
-	color: var(--bg);
-}
-
-/* An excluded vibe must not look like a selected one, so the colour goes. */
-.filter-btn[data-vibe].vibe-no {
-	color: var(--muted);
-}
-
 /* ── Tags ── */
 .card-bottom {
 	display: flex;
@@ -1440,66 +1827,6 @@ summary:hover .card-desc-toggle {
 	color: var(--bg);
 }
 
-/* ── Active tags bar (below filter bar) ── */
-.filter-bar-wrapper {
-	border-bottom: 1px solid var(--border);
-	padding: 0.75rem 0;
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-}
-
-.filter-bar button {
-	margin-bottom: 0;
-}
-
-.filter-bar-wrapper .filter-bar {
-	border-bottom: none;
-}
-
-.active-tags-bar {
-	display: flex;
-	align-items: center;
-	gap: 0.3rem;
-	padding: 0.4rem 0 0.6rem;
-	flex-wrap: wrap;
-}
-
-.active-tags-label {
-	font-family: var(--mono);
-	font-size: var(--t-2xs);
-	font-weight: 600;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	color: var(--muted);
-	margin-right: 0.2rem;
-}
-
-.active-tag-chip {
-	display: inline-flex;
-	align-items: center;
-	/* >=24px: WCAG 2.2 target-size. The icon stays its old size. */
-	min-height: 24px;
-	gap: 0.25rem;
-	font-family: var(--mono);
-	font-size: var(--t-2xs);
-	padding: 0.1rem 0.42rem;
-	border: 1px solid var(--fg);
-	background: var(--fg);
-	color: var(--bg);
-	cursor: pointer;
-	border-radius: 0;
-	box-shadow: none;
-	line-height: inherit;
-	transition: opacity 0.12s;
-}
-
-.active-tag-chip:hover {
-	opacity: 0.75;
-	background: var(--fg);
-	border-color: var(--fg);
-}
-
 /* ── Date range picker ── */
 .date-range-wrapper {
 	display: inline-flex;
@@ -1512,10 +1839,26 @@ summary:hover .card-desc-toggle {
 	z-index: 200;
 }
 
-.date-range-wrapper .filter-btn {
-	display: block;
+.date-range-wrapper {
 	align-items: center;
+}
+
+/* Matches the segmented control it now sits beside: .filter-btn is 24px and a
+   block, which left the picker sitting a couple of pixels high and short. */
+.date-range-wrapper .filter-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 26px;
 	gap: 0.3rem;
+	border-color: var(--chip-border);
+	background: var(--chip-bg);
+	color: var(--chip-fg);
+}
+
+.date-range-wrapper .filter-btn:hover {
+	border-color: var(--fg);
+	color: var(--fg);
 }
 
 .date-range-clear {
@@ -1610,24 +1953,6 @@ summary:hover .card-desc-toggle {
 
 	.city-select--mobile {
 		display: block;
-	}
-}
-
-@media (max-width: 640px) {
-	.filter-bar--cats {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 0.4rem;
-	}
-	.filter-bar--cats .filters--date { order: 1; }
-	.filter-bar--cats .filters--cat  { order: 2; }
-
-	/* Same treatment for the group-by row now that it shares the line with
-	   the score/swipe tools: side by side they clipped "By Category". */
-	.filter-bar--group {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 0.4rem;
 	}
 }
 
@@ -2289,148 +2614,6 @@ a.sheet-action {
 	margin-top: var(--s3);
 }
 
-/* ── Tag filter ──
-   The tag row scrolls rather than wrapping: it is the longest row in the bar
-   (24 chips before "more"), and letting it wrap pushed everything below it
-   down by three lines on a phone. Same treatment .filters--cat already gets. */
-.filters--tag {
-	flex-wrap: nowrap;
-	overflow-x: auto;
-}
-
-.tag-filter-btn {
-	/* Wider than the bar's usual 0.3rem: the count sits inside the same pill as
-	   the label, so without real space between them they read as one token. */
-	gap: 0.5rem;
-	text-transform: none; /* tags are lowercase content, not UI labels */
-	letter-spacing: 0;
-}
-
-/* The count is context, not the label — it must not compete with the tag. */
-.tag-filter-count {
-	font-size: 0.9em;
-	opacity: 0.55;
-	font-variant-numeric: tabular-nums;
-}
-
-.tag-filter-btn.active .tag-filter-count {
-	opacity: 0.8;
-}
-
-/* ── Min-score picker ──
-   A row of score chips rather than a select: the same bare-number-in-a-square
-   the cards use for a fit score, on the same border-strength ramp, so a 9 in
-   the filter looks like a 9 on a card. The control reads as a threshold —
-   chips below the chosen value dim to show what is being excluded — which a
-   dropdown cannot convey at all. The "Any score" pill names the control, so
-   there is no separate label, matching "All Vibes" and "Ungrouped".
-
-   Native radios do the keyboard work (arrow keys, roving tabindex, group
-   semantics); only the box is restyled. */
-.score-picker {
-	display: inline-flex;
-	align-items: center;
-	gap: 0.25rem;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	line-height: 1;
-}
-
-
-.score-picker .score-chip {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	box-sizing: border-box;
-	/* Without this the flex row shrinks a 24px chip to its 11px digit —
-	   .card-score carries the same guard for the same reason. */
-	flex-shrink: 0;
-	/* Every rule here is scoped to .score-picker rather than using the bare
-	   class: Pico ships `label:has([type="radio"]) { width: fit-content }`,
-	   which at 0-1-1 outranks a lone class and collapsed each chip to the
-	   width of its digit. */
-	width: 24px;
-	height: 24px;
-	font-family: var(--mono);
-	font-size: var(--t-2xs);
-	font-variant-numeric: tabular-nums;
-	font-weight: 600;
-	color: var(--fg);
-	background: transparent;
-	/* Same construction as .card-score: the border carries the magnitude and
-	   the digit stays legible. Mixed against --surface, not transparent. */
-	border: 2px solid
-		color-mix(in srgb, var(--fg) var(--score-tint, 100%), var(--surface));
-	/* Square, like every other box on the site — .filter-btn, .card-score and
-	   .tag-btn are all radius 0. */
-	border-radius: 0;
-	/* Pico gives every <label> a margin-bottom. On a 24px chip that made the
-	   group 29.8px tall and, once centred, pushed the chips ~3px above their
-	   own box — which is what knocked the picker out of line with the SWIPE
-	   button beside it. */
-	margin: 0;
-	cursor: pointer;
-	transition: opacity 0.12s ease, background-color 0.12s ease;
-}
-
-/* "Any score" is words, not a score, so it gets a pill and no ramp — and it
-   names the whole control, which is why there is no separate label. Matched to
-   .filter-btn's type so it reads as one of the bar's pills. */
-.score-picker .score-chip--any {
-	width: auto;
-	padding: 0 0.45rem;
-	font-weight: 500;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	border-color: var(--border);
-}
-
-/* Below the threshold: what is currently being filtered out. */
-.score-picker .score-chip--out {
-	opacity: 0.3;
-}
-
-/* The chosen threshold. */
-.score-picker .score-chip--on {
-	background: var(--fg);
-	border-color: var(--fg);
-	color: var(--bg);
-	opacity: 1;
-}
-
-.score-picker .score-chip:hover {
-	border-color: var(--fg);
-}
-
-/* The radio itself is the accessible control; it is hidden, not removed, so
-   focus still lands on it — hence :focus-visible is mirrored onto the box. */
-.score-picker .score-chip input {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	clip-path: inset(50%);
-	white-space: nowrap;
-}
-
-.score-picker .score-chip:has(input:focus-visible) {
-	outline: 2px solid var(--fg);
-	outline-offset: 2px;
-}
-
-@media (pointer: coarse) {
-	.score-picker .score-chip {
-		width: 28px;
-		height: 28px;
-	}
-	.score-picker .score-chip--any {
-		width: auto;
-	}
-}
-
 /* ── Swipe mode ──
    One card at a time over the whole viewport. Right saves, left hides; the
    card follows the finger and tilts, and a pair of stamps fade in as the drag
@@ -2619,10 +2802,6 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	padding-top: 0.6rem;
 }
 
-.swipe-filters .filters {
-	flex-shrink: 0;
-}
-
 /* Saved count in the header. Click exports them; the icon says what it is. */
 .theme-btn.saved-count {
 	width: auto;
@@ -2630,19 +2809,25 @@ body:has(.swipe-backdrop) #bmc-wbtn {
 	padding: 0 0.4rem;
 	font-family: var(--mono);
 	font-size: var(--t-2xs);
-	font-weight: 600;
+	font-weight: 500;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 }
 
 /* The one control here that opens a different mode rather than narrowing the
    list, so it gets a hue. Amber: teal read poorly on the dark theme. */
-.filter-btn.swipe-btn {
+.theme-btn.swipe-btn {
 	color: var(--hue-amber);
+	border-color: color-mix(in srgb, var(--hue-amber) 45%, transparent);
+}
+
+.theme-btn.swipe-btn:hover {
 	border-color: var(--hue-amber);
 }
 
-.filter-btn.swipe-btn:hover {
-	background: var(--hue-amber);
-	color: var(--bg);
+/* Preferences with something rated: the icon says the pane has been used. */
+.theme-btn--on {
+	border-color: var(--fg);
 }
 
 .theme-btn.saved-count:disabled {

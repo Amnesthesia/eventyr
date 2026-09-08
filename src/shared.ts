@@ -63,19 +63,22 @@ export function meetsScoreFloor(score: unknown): boolean {
  * this list does not cover are almost all synonyms of something in it
  * (cinema→film, pottery→ceramics, lecture→talk, pub→drinks).
  *
- * Deliberately absent: "music", "art", "social", "community", "performance",
- * "creative", "culture". They restate the category or a vibe boolean — over a
- * thousand tag slots that divide nothing — and standing preferences punish
- * broad tags hardest: "less music" would sink half the week.
+ * Broad subject tags are IN, on purpose. "art" (182 events), "music" (196)
+ * and "performance" (133) are the most-used tags in the data and are exactly
+ * what someone reaches for to say "more of this" — dropping them for
+ * restating a category made the vocabulary worse, not more precise. Precision
+ * comes from ALSO emitting the specific tag, not from withholding the general
+ * one: an event is "music" AND "jazz".
  *
- * Also absent, one level down: "workshop", "talk", "party", "networking".
- * Those are not merely correlated with a vibe, they ARE one — the vibe
- * definitions name them outright ("hands_on: workshops, classes",
- * "intellectual: talk-led", "social: parties, markets") and every event
- * carrying them scored the matching vibe in 100% of cases. A reader who wants
- * hands-on things already has the Hands On filter; a duplicate tag beside it
- * splits one intent across two controls. Genres and concrete formats stay:
- * "jazz" is also 100% creative but says something "creative" cannot.
+ * What is genuinely absent is anything that restates one of the four VIBE
+ * booleans, because those are their own filter: "social", "creative",
+ * "intellectual", and the formats the vibe definitions name outright —
+ * "workshop" (hands_on: "workshops, classes"), "talk"/"lecture"/"discussion"
+ * (intellectual: "talk-led"), "party"/"networking"/"meetup" (social:
+ * "parties, meetups"). Every event carrying those scored the matching vibe in
+ * 100% of cases, so a tag beside the vibe filter splits one intent across two
+ * controls. Genres are unaffected: "jazz" is also 100% creative, but says
+ * something "creative" cannot.
  *
  * "free" is also absent because it is not a judgement. It is derived from the
  * event's own cost field in curate.ts; the annotator never sees cost, and when
@@ -87,6 +90,12 @@ export function meetsScoreFloor(score: unknown): boolean {
 export const TAGS = [
 	// music
 	"live music",
+	"music",
+	"concert",
+	"band",
+	"orchestra",
+	"choir",
+	"nightlife",
 	"dj",
 	"jazz",
 	"rock",
@@ -117,7 +126,14 @@ export const TAGS = [
 	"open mic",
 	"film",
 	// visual arts and making
+	"art",
 	"exhibition",
+	"gallery",
+	"performance",
+	"storytelling",
+	"literature",
+	"textiles",
+	"fashion",
 	"painting",
 	"drawing",
 	"ceramics",
@@ -138,6 +154,8 @@ export const TAGS = [
 	"activism",
 	"environment",
 	"nature",
+	"wildlife",
+	"adventure",
 	"gardening",
 	// format
 	"tour",
@@ -149,6 +167,10 @@ export const TAGS = [
 	"games",
 	"gaming",
 	"charity",
+	"competition",
+	"shopping",
+	"community",
+	"culture",
 	// body
 	"fitness",
 	"yoga",
@@ -160,6 +182,7 @@ export const TAGS = [
 	"sport",
 	"wellness",
 	"meditation",
+	"pilates",
 	// food and drink
 	"food",
 	"dining",
@@ -199,9 +222,9 @@ export const TAG_SET: ReadonlySet<string> = new Set<string>(TAGS);
  */
 const VACUOUS_TAGS = new Set([
 	// Vibe restatements. The four vibe booleans are their own filter, and a tag
-	// saying the same thing splits one intent across two controls. Kept here as
-	// well as out of TAGS so the AI-search path and already-published data get
-	// cleaned, not just future annotations.
+	// saying the same thing splits one intent across two controls. Listed here
+	// as well as omitted from TAGS so the AI-search path and already-published
+	// data get cleaned, not only future annotations.
 	"social",
 	"creative",
 	"intellectual",
@@ -213,15 +236,20 @@ const VACUOUS_TAGS = new Set([
 	"talk",
 	"talks",
 	"lecture",
+	"lectures",
+	"discussion",
 	"party",
+	"parties",
 	"networking",
-	"performance",
-	"community",
-	"culture",
-	"entertainment",
+	"meetup",
+	"meetups",
+	"interactive",
+	// Vague to the point of describing anything. NOTE: broad *subjects* like
+	// "art", "music" and "performance" are deliberately NOT here — they are the
+	// most-used tags in the data and exactly what a reader reaches for. Only
+	// words that carry no subject at all belong in this list.
 	"live",
-	"music",
-	"art",
+	"entertainment",
 	"immersive",
 	"unique",
 	"fun",
@@ -240,6 +268,10 @@ const VACUOUS_TAGS = new Set([
 	"other",
 	"local",
 	"new",
+	"active",
+	"relax",
+	"skills",
+	"learning",
 ]);
 
 /**

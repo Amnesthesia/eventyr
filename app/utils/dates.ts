@@ -56,6 +56,20 @@ export function tomorrowIso(): string {
 	return localDateStr(1);
 }
 
+/**
+ * The coming weekend, as an inclusive range.
+ *
+ * Same rule as the build-time /this-weekend/ page (src/pages/[city]/[timeframe].astro):
+ * Saturday and Sunday of the week we are in, except on Sunday itself, when the
+ * Saturday just gone is over and the weekend is today alone.
+ */
+export function weekendRange(iso: string): { start: string; end: string } {
+	const dow = new Date(`${iso}T00:00:00`).getDay(); // 0=Sun..6=Sat
+	if (dow === 0) return { start: iso, end: iso };
+	const sat = dow === 6 ? iso : addDays(iso, 6 - dow);
+	return { start: sat, end: addDays(sat, 1) };
+}
+
 export function parseEndDate(dt: string, startIso: string): string {
 	if (!startIso) return "";
 	const year = startIso.slice(0, 4);

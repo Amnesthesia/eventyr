@@ -244,7 +244,7 @@ ${filterRule}
    - source:      website or organisation name (string)
    - description: 1–2 sentences describing what the event actually is — what happens,
                   who runs it, what to expect. Be specific, not generic.
-   - tags:        1–5 tags, ONLY from this list: ${TAGS.join(", ")}
+   - tags:        3–8 tags, ONLY from this list: ${TAGS.join(", ")}
                   Add every listed tag that is true of the event. Never invent one, and
                   never emit "free" — it is derived from the event's own cost.
    - social:      true if the event has significant group/social interaction (meetups, socials, networking, group classes)

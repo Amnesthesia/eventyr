@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { displayDatetime, shortDate } from "./dates";
+import { displayDatetime, shortDate, weekendRange } from "./dates";
 
 const TODAY = "2026-09-07";
 
@@ -84,4 +84,22 @@ test("shortDate is hand-built, so it cannot drift with the runtime's ICU", () =>
 	assert.equal(shortDate("2026-09-05"), "5 Sep");
 	assert.equal(shortDate("2026-12-26T10:00:00"), "26 Dec");
 	assert.equal(shortDate("not a date"), "not a date");
+});
+
+test("the weekend is the coming Saturday and Sunday, and today alone on a Sunday", () => {
+	// Same rule the build-time /this-weekend/ page uses; the two disagreeing
+	// would send the WEEKEND tab and that page to different dates.
+	assert.deepEqual(weekendRange("2026-09-08"), {
+		start: "2026-09-12",
+		end: "2026-09-13",
+	}); // Tuesday
+	assert.deepEqual(weekendRange("2026-09-12"), {
+		start: "2026-09-12",
+		end: "2026-09-13",
+	}); // Saturday
+	// Sunday: the Saturday just gone is over, so the weekend is today only.
+	assert.deepEqual(weekendRange("2026-09-13"), {
+		start: "2026-09-13",
+		end: "2026-09-13",
+	});
 });

@@ -22,8 +22,6 @@ import type {
 	DateRange,
 	Event,
 	PastFilter,
-	TriState,
-	VibeFilters,
 	VibeKey,
 } from "./types";
 import { KEY_TO_SLUG } from "./utils/citySlug";
@@ -102,7 +100,15 @@ interface EventsContextValue {
 	timeBands: TimeBand[];
 	toggleTimeBand: (band: TimeBand) => void;
 	clearTimeBands: () => void;
-	vibeFilters: VibeFilters;
+	/** Selected vibes. Empty = any vibe. ANDed, like tags. */
+	vibes: VibeKey[];
+	toggleVibe: (key: VibeKey) => void;
+	clearVibes: () => void;
+	/** True when anything at all narrows the list. Drives the FILTERING BY
+	 * strip and the empty state's "clear filters" offer, from one definition
+	 * rather than two that drift. */
+	hasActiveFilters: boolean;
+	clearAllFilters: () => void;
 	groupBy: GroupBy;
 	setGroupBy: (mode: GroupBy) => void;
 	query: string;
@@ -113,8 +119,6 @@ interface EventsContextValue {
 	 * which describe the coverage this digest actually has. */
 	dateMin: string;
 	dateMax: string;
-	setVibe: (key: VibeKey, state: TriState) => void;
-	resetVibes: () => void;
 	categories: string[];
 	/** Bookmark/share/calendar counts per tag, vibe and category. Exposed so
 	 * the swipe deck can order itself the same way the picks row does. */
@@ -302,12 +306,7 @@ export function EventsProvider({
 	// without the reader having to find the grouping toggle first.
 	const [groupBy, setGroupBy] = useState<GroupBy>("date");
 	const [query, setQuery] = useState("");
-	const [vibeFilters, setVibeFilters] = useState<VibeFilters>({
-		intellectual: "any",
-		creative: "any",
-		hands_on: "any",
-		social: "any",
-	});
+	const [vibes, setVibes] = useState<VibeKey[]>([]);
 
 	const toggleTag = useCallback((tag: string) => {
 		setActiveTags((prev) =>
@@ -315,17 +314,38 @@ export function EventsProvider({
 		);
 	}, []);
 
-	const setVibe = useCallback((key: VibeKey, state: TriState) => {
-		setVibeFilters((prev) => ({ ...prev, [key]: state }));
+	const toggleVibe = useCallback((key: VibeKey) => {
+		setVibes((prev) =>
+			prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],
+		);
 	}, []);
 
-	const resetVibes = useCallback(() => {
-		setVibeFilters({
-			intellectual: "any",
-			creative: "any",
-			hands_on: "any",
-			social: "any",
-		});
+	const clearVibes = useCallback(() => setVibes([]), []);
+
+	// One definition of "something is filtering". The FILTERING BY strip, the
+	// empty state and CLEAR ALL all read it, so a new filter cannot be added to
+	// one of the three and forgotten in the other two.
+	const hasActiveFilters =
+		activeCat !== "All" ||
+		dateRange !== null ||
+		activeTags.length > 0 ||
+		vibes.length > 0 ||
+		timeBands.length > 0 ||
+		query.trim().length > 0 ||
+		minScore !== LOW_SCORE_THRESHOLD ||
+		pastFilter !== "no-past";
+
+	const clearAllFilters = useCallback(() => {
+		setActiveCat("All");
+		setDateRange(null);
+		setActiveTags([]);
+		setVibes([]);
+		setTimeBands([]);
+		setQuery("");
+		// Back to the default floor, not 0: "clear the filters" means the view a
+		// first-time visitor gets, and that one hides venue promotion.
+		setMinScore(LOW_SCORE_THRESHOLD);
+		setPastFilter("no-past");
 	}, []);
 
 	// This is a static site rebuilt weekly, so "today" at server-render
@@ -383,12 +403,7 @@ export function EventsProvider({
 			if (pastFilter === "no-past" && isPast) return false;
 			if (pastFilter === "only-past" && !isPast) return false;
 
-			const vibeOk = (
-				Object.entries(vibeFilters) as [VibeKey, TriState][]
-			).every(([key, state]) => {
-				if (state === "any") return true;
-				return state === "yes" ? event[key] === true : event[key] !== true;
-			});
+			const vibeOk = vibes.every((key) => event[key] === true);
 
 			return catOk && dateOk && tagsOk && vibeOk;
 		});
@@ -398,7 +413,7 @@ export function EventsProvider({
 		dateRange,
 		activeTags,
 		pastFilter,
-		vibeFilters,
+		vibes,
 		todayStr,
 		query,
 		hidden,
@@ -590,9 +605,11 @@ export function EventsProvider({
 		timeBands,
 		toggleTimeBand,
 		clearTimeBands,
-		vibeFilters,
-		setVibe,
-		resetVibes,
+		vibes,
+		toggleVibe,
+		clearVibes,
+		hasActiveFilters,
+		clearAllFilters,
 		groupBy,
 		setGroupBy,
 		query,

@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-08T12:05:08.893Z",
+  "updated_at": "2026-09-08T12:21:37.297Z",
   "stages": {
     "collect/extract": {
-      "calls": 999,
-      "promptTokens": 3314433,
-      "outputTokens": 1555636,
+      "calls": 1175,
+      "promptTokens": 3893109,
+      "outputTokens": 1810200,
       "cachedTokens": 0,
       "cacheWriteTokens": 0,
       "thoughtTokens": 0,
@@ -12,12 +12,12 @@
       "searchQueries": 0,
       "failures": 0,
       "retries": 1,
-      "estimatedUsd": 0.9536976999999999
+      "estimatedUsd": 1.1133909
     },
     "annotate": {
-      "calls": 254,
-      "promptTokens": 289351,
-      "outputTokens": 71885,
+      "calls": 294,
+      "promptTokens": 326330,
+      "outputTokens": 75545,
       "cachedTokens": 0,
       "cacheWriteTokens": 0,
       "thoughtTokens": 0,
@@ -25,7 +25,7 @@
       "searchQueries": 0,
       "failures": 0,
       "retries": 1,
-      "estimatedUsd": 0.05768909999999999
+      "estimatedUsd": 0.06285099999999999
     },
     "dedupe": {
       "calls": 461,
