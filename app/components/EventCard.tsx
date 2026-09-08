@@ -43,6 +43,7 @@ export default function EventCard({
 }: Props) {
 	const {
 		activeTags,
+		tagPrefs,
 		toggleTag,
 		cityKey,
 		vibeFilters,
@@ -210,9 +211,27 @@ export default function EventCard({
 						<button
 							type="button"
 							key={tag}
-							className={`tag tag-btn${activeTags.includes(tag) ? " active" : ""}`}
+							// A stated preference is marked on the tag that caused it.
+							// Ordering alone is invisible — in the default date-grouped
+							// view a card only moves within its own day, so there was no
+							// way to tell the setting had done anything. Showing which
+							// tag moved it makes the reason legible on the card itself.
+							className={`tag tag-btn${activeTags.includes(tag) ? " active" : ""}${
+								tagPrefs[tag] === 1
+									? " tag-pref-more"
+									: tagPrefs[tag] === -1
+										? " tag-pref-less"
+										: ""
+							}`}
 							onClick={() => toggleTag(tag)}
 							aria-pressed={activeTags.includes(tag)}
+							title={
+								tagPrefs[tag] === 1
+									? `${tag} — you asked for more of these`
+									: tagPrefs[tag] === -1
+										? `${tag} — you asked for less of these`
+										: undefined
+							}
 						>
 							{tag}
 						</button>

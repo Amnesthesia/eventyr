@@ -32,6 +32,7 @@ export default function AppShell() {
 		setQuery,
 		minScore,
 		setMinScore,
+		tagPrefs,
 	} = useEventsContext();
 	const [swiping, setSwiping] = useState(false);
 	// null = closed. A non-null value is the set the calendar is showing, which
@@ -92,8 +93,15 @@ export default function AppShell() {
 			cityData?.week_end ?? "",
 			today,
 		);
-		return groupEvents(rest, groupBy, window, today);
-	}, [rest, groupBy, cityData?.week_start, cityData?.week_end, today]);
+		return groupEvents(rest, groupBy, window, today, tagPrefs);
+	}, [
+		rest,
+		groupBy,
+		cityData?.week_start,
+		cityData?.week_end,
+		today,
+		tagPrefs,
+	]);
 
 	return (
 		<>

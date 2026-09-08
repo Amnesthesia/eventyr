@@ -5,5 +5,28 @@
   "source_id": "janmurphygallery",
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
-  "events": []
+  "events": [
+    {
+      "title": "Adam Pyett",
+      "datetime": "Wed 2 Sep – Sat 26 Sep",
+      "datetime_iso": "2026-09-02",
+      "datetime_end_iso": "2026-09-26",
+      "location": "Jan Murphy Gallery Fortitude Valley",
+      "link": "https://janmurphygallery.com.au/",
+      "cost": "See link",
+      "source": "Jan Murphy Gallery Fortitude Valley",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "painting",
+        "contemporary",
+        "gallery"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

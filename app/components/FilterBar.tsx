@@ -6,7 +6,9 @@ import ActiveTagsBar from "./filters/ActiveTagsBar";
 import CategoryFilter from "./filters/CategoryFilter";
 import DateFilter from "./filters/DateFilter";
 import GroupByFilter from "./filters/GroupByFilter";
+import TagFilter from "./filters/TagFilter";
 import VibeFilter from "./filters/VibeFilter";
+import PreferencesPane from "./PreferencesPane";
 
 interface Props {
 	onSwipe: () => void;
@@ -94,9 +96,13 @@ export default function FilterBar({ onSwipe }: Props) {
 				<div className="filter-bar filter-bar--vibe">
 					<VibeFilter />
 				</div>
+				<div className="filter-bar filter-bar--tag">
+					<TagFilter />
+				</div>
 				<div className="filter-bar filter-bar--group">
 					<GroupByFilter />
 					<span className="filters filters--tools">
+						<PreferencesPane />
 						{/* Real radios, visually hidden: arrow-key navigation, the
 						    roving tabindex and single-choice semantics all come free, and
 						    a threshold is genuinely a single-choice control.

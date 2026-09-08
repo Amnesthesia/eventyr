@@ -78,7 +78,7 @@ sources:
       listingUrls:
         - https://feverup.com/en/brisbane
       strategy: html
-      note: 'Verified by probe-sources 2026-09-08: 37 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 40 dated event(s) via html.'
     - name: WeekendNotes Brisbane
       method: scraper
       domains:

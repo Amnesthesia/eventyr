@@ -235,3 +235,59 @@ test("logTasteProfile survives an empty profile and empty picks", () => {
 		Object.assign(console, real);
 	}
 });
+
+test("an explicit tag preference outranks any score", () => {
+	// The point of stating a preference: it has to beat what the counts infer.
+	// An additive bonus would let a high enough score float an unwanted event
+	// back to the top, which reads as the setting being ignored.
+	const raffle = {
+		title: "Members Raffle",
+		score: 9,
+		tags: ["raffle"],
+	} as Event;
+	const talk = {
+		title: "AI Ethics Talk",
+		score: 5,
+		tags: ["lecture"],
+	} as Event;
+	const ranked = rankByTaste([raffle, talk], {}, { raffle: -1 });
+	assert.deepEqual(
+		ranked.map((e) => e.title),
+		["AI Ethics Talk", "Members Raffle"],
+	);
+});
+
+test("a wanted tag sorts first even on a lower score", () => {
+	const wanted = { title: "Board Games", score: 5, tags: ["games"] } as Event;
+	const higher = { title: "Big Gig", score: 9, tags: ["music"] } as Event;
+	const ranked = rankByTaste([higher, wanted], {}, { games: 1 });
+	assert.deepEqual(
+		ranked.map((e) => e.title),
+		["Board Games", "Big Gig"],
+	);
+});
+
+test("unwanted beats wanted when an event carries both", () => {
+	// Saying no to raffles means an event that is both a raffle and live music
+	// is still a raffle.
+	const both = {
+		title: "Raffle + Live Music",
+		score: 8,
+		tags: ["raffle", "music"],
+	} as Event;
+	const plain = { title: "Quiet Reading", score: 4, tags: ["books"] } as Event;
+	const ranked = rankByTaste([both, plain], {}, { raffle: -1, music: 1 });
+	assert.deepEqual(
+		ranked.map((e) => e.title),
+		["Quiet Reading", "Raffle + Live Music"],
+	);
+});
+
+test("no stated preference leaves the incoming order alone", () => {
+	const a = { title: "A", score: 7, tags: ["x"] } as Event;
+	const b = { title: "B", score: 7, tags: ["y"] } as Event;
+	assert.deepEqual(
+		rankByTaste([a, b], {}, {}).map((e) => e.title),
+		["A", "B"],
+	);
+});

@@ -4,6 +4,7 @@ import { CATEGORIES } from "../../src/shared.ts";
 import type { Event } from "../types";
 import { catToSlug } from "./categorySlug";
 import { addDays, todayIso } from "./dates";
+import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs";
 
 export type GroupBy = "none" | "date" | "category";
 
@@ -103,6 +104,26 @@ function byScore(a: Event, b: Event): number {
 /** Ascending by start instant, so a group reads down the day. Undated sinks to
  * the bottom, and a date with no time sits before that day's timed events —
  * which is what an all-day event is. */
+/**
+ * Wraps a comparator so stated tag preferences win inside every group.
+ *
+ * Each group re-sorts by time, which silently discarded the preference
+ * ordering the list arrived in — so in the default date view, marking a tag
+ * "less" appeared to do nothing at all while working perfectly in Ungrouped.
+ * Sorting has to know about preferences here too, not just upstream.
+ *
+ * Within a group only: the day an event happens on is a fact and preferences
+ * do not move it to another day. They decide where it sits among that day's
+ * events.
+ */
+function withPrefs(
+	compare: (a: Event, b: Event) => number,
+	prefs: TagPrefs,
+): (a: Event, b: Event) => number {
+	if (!hasTagPrefs(prefs)) return compare;
+	return (a, b) => prefTier(b, prefs) - prefTier(a, prefs) || compare(a, b);
+}
+
 function byStartTime(a: Event, b: Event): number {
 	const cmp = (a.datetime_iso || "9999").localeCompare(
 		b.datetime_iso || "9999",
@@ -123,6 +144,7 @@ function groupByDate(
 	events: Event[],
 	window: DateWindow,
 	today: string,
+	prefs: TagPrefs,
 ): EventGroup[] {
 	// Buckets come from the window, not from the data, and an event lands in
 	// exactly one of them — keyed on its start date. A run that opened before
@@ -151,7 +173,7 @@ function groupByDate(
 			groups.push({
 				key: day,
 				label: dateLabel(day, today),
-				events: [...dayEvents].sort(byStartTime),
+				events: [...dayEvents].sort(withPrefs(byStartTime, prefs)),
 			});
 		}
 	}
@@ -162,21 +184,21 @@ function groupByDate(
 		groups.push({
 			key: "ongoing",
 			label: "Ongoing",
-			events: [...ongoing].sort(byEndDate),
+			events: [...ongoing].sort(withPrefs(byEndDate, prefs)),
 		});
 	}
 	if (later.length > 0) {
 		groups.push({
 			key: "later",
 			label: "Later",
-			events: [...later].sort(byStartTime),
+			events: [...later].sort(withPrefs(byStartTime, prefs)),
 		});
 	}
 	if (undated.length > 0) {
 		groups.push({
 			key: "undated",
 			label: "Date to be confirmed",
-			events: [...undated].sort(byStartTime),
+			events: [...undated].sort(withPrefs(byStartTime, prefs)),
 		});
 	}
 	return groups;
@@ -187,9 +209,10 @@ export function groupEvents(
 	mode: GroupBy,
 	window: DateWindow,
 	today: string = todayIso(),
+	prefs: TagPrefs = {},
 ): EventGroup[] {
 	if (mode === "none") return [{ key: "all", label: "", events }];
-	if (mode === "date") return groupByDate(events, window, today);
+	if (mode === "date") return groupByDate(events, window, today, prefs);
 
 	const buckets = new Map<string, Event[]>();
 	for (const event of events) {
@@ -208,6 +231,6 @@ export function groupEvents(
 		key: key || "uncategorised",
 		label: key || "Uncategorised",
 		cat: key ? catToSlug(key) : undefined,
-		events: [...(buckets.get(key) ?? [])].sort(byStartTime),
+		events: [...(buckets.get(key) ?? [])].sort(withPrefs(byStartTime, prefs)),
 	}));
 }

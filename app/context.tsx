@@ -13,7 +13,6 @@ import {
 	DEFAULT_COST_LOCALE,
 	isTopPick,
 	LOW_SCORE_THRESHOLD,
-	TOP_PICK_THRESHOLD,
 } from "../src/shared.ts";
 import { useColorTheme } from "./hooks/useColorTheme";
 import { useStoredSet } from "./hooks/useStoredSet";
@@ -42,6 +41,12 @@ import {
 	syncAllStarredEvents,
 } from "./utils/notifications";
 import { matchesQuery, queryTokens } from "./utils/search";
+import {
+	cycleTagPref,
+	loadTagPrefs,
+	saveTagPrefs,
+	type TagPrefs,
+} from "./utils/tagPrefs";
 import {
 	bumpTaste,
 	loadTaste,
@@ -85,6 +90,11 @@ interface EventsContextValue {
 	setDateRange: (range: DateRange | null) => void;
 	activeTags: string[];
 	toggleTag: (tag: string) => void;
+	clearTags: () => void;
+	/** Stated tag preferences: 1 wanted, -1 unwanted. See tagPrefs.ts. */
+	tagPrefs: TagPrefs;
+	cycleTagPreference: (tag: string) => void;
+	clearTagPrefs: () => void;
 	pastFilter: PastFilter;
 	setPastFilter: (v: PastFilter) => void;
 	vibeFilters: VibeFilters;
@@ -260,6 +270,21 @@ export function EventsProvider({
 		initialDateRange,
 	);
 	const [activeTags, setActiveTags] = useState<string[]>([]);
+	// Stated preferences, unlike the inferred taste profile, are the reader's
+	// own settings — they persist across sessions from the first click.
+	const [tagPrefs, setTagPrefs] = useState<TagPrefs>(loadTagPrefs);
+	const cycleTagPreference = useCallback((tag: string) => {
+		setTagPrefs((prev) => {
+			const next = cycleTagPref(prev, tag);
+			saveTagPrefs(next);
+			return next;
+		});
+	}, []);
+	const clearTags = useCallback(() => setActiveTags([]), []);
+	const clearTagPrefs = useCallback(() => {
+		setTagPrefs({});
+		saveTagPrefs({});
+	}, []);
 	const [pastFilter, setPastFilter] = useState<PastFilter>("no-past");
 	// "date" by default so the "Today"/"Tomorrow" section headings render
 	// without the reader having to find the grouping toggle first.
@@ -425,17 +450,22 @@ export function EventsProvider({
 		// what this browser has bookmarked, so the row leans toward saved tags,
 		// vibes and categories without anything dropping below the score
 		// threshold. An empty profile leaves the pipeline's own order alone.
-		const picks = rankByTaste(eligible, taste).slice(0, 9);
+		const picks = rankByTaste(eligible, taste, tagPrefs).slice(0, 9);
 		const pickIds = new Set(picks.map(eventId));
 		// Everything the picks row did not take, still in the incoming score
 		// order — including eligible events beyond the nine.
-		const rest = unstarred.filter((e) => !pickIds.has(eventId(e)));
+		const rest = rankByTaste(
+			unstarred.filter((e) => !pickIds.has(eventId(e))),
+			taste,
+			tagPrefs,
+		);
 		return { starredEvents, picks, rest };
 	}, [
 		filtered,
 		starred,
 		dateRange,
 		taste,
+		tagPrefs,
 		// Picks fall back to the published week when no date filter is set, so
 		// the window is a real input to this memo.
 		cityData?.week_start,
@@ -537,6 +567,10 @@ export function EventsProvider({
 		setDateRange,
 		activeTags,
 		toggleTag,
+		clearTags,
+		tagPrefs,
+		cycleTagPreference,
+		clearTagPrefs,
 		pastFilter,
 		setPastFilter,
 		vibeFilters,

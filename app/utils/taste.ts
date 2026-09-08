@@ -10,6 +10,7 @@
 
 import { eventHash } from "../../src/shared.ts";
 import type { Event } from "../types";
+import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs";
 import { vibesOf } from "./vibes";
 
 /** tag/vibe/category key -> how many bookmarked events carried it. */
@@ -141,16 +142,29 @@ export function tasteBoost(event: Event, taste: TasteProfile): number {
 
 /** Events ordered by score plus taste boost, highest first.
  *
+ * Explicit tag preferences come first and are absolute: wanted tags sort ahead
+ * of everything, unwanted behind everything, and only within a band does the
+ * score-plus-boost ordering apply. A stated preference has to beat an inferred
+ * one — an additive bonus would let a high enough score float an event the
+ * reader has explicitly asked to see less of back to the top, which reads as
+ * the setting being ignored. See tagPrefs.ts.
+ *
  * Stable: ties keep the incoming order, which is already score-desc then
  * soonest-first from the pipeline, so an empty profile is a no-op. */
-export function rankByTaste(events: Event[], taste: TasteProfile): Event[] {
+export function rankByTaste(
+	events: Event[],
+	taste: TasteProfile,
+	prefs: TagPrefs = {},
+): Event[] {
+	const usePrefs = hasTagPrefs(prefs);
 	return events
 		.map((event, index) => ({
 			event,
 			index,
+			tier: usePrefs ? prefTier(event, prefs) : 0,
 			rank: (event.score || 0) + tasteBoost(event, taste),
 		}))
-		.sort((a, b) => b.rank - a.rank || a.index - b.index)
+		.sort((a, b) => b.tier - a.tier || b.rank - a.rank || a.index - b.index)
 		.map((entry) => entry.event);
 }
 

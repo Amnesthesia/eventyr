@@ -36,6 +36,7 @@ export {
 	KEY_TO_SLUG,
 	LOW_SCORE_THRESHOLD,
 	meetsScoreFloor,
+	mergeTagVariants,
 	normaliseCurrency,
 	normaliseHost,
 	normaliseText,

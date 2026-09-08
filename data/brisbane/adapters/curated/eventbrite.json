@@ -282,29 +282,6 @@
       "creative": true
     },
     {
-      "title": "The Silence Paradox: What AI Is Teaching Us About Being Human",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
-      "datetime_end_iso": "",
-      "location": "Caxton Street Brewing Company, Milton",
-      "link": "https://www.eventbrite.com/e/the-silence-paradox-what-ai-is-teaching-us-about-being-human-tickets-1997244773883?aff=ebdssbdestsearch",
-      "cost": "See link",
-      "source": "Eventbrite Brisbane",
-      "description": "Talks on Tuesdays: Real lectures in your favourite venues. 45-min + Q&A with Chris Rhyss",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "ai",
-        "philosophy",
-        "technology",
-        "talk"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Nick Cody | Crusher",
       "datetime": "Sat 12 Sep, 5:30 PM",
       "datetime_iso": "2026-09-12T17:30:00",
@@ -456,6 +433,28 @@
         "symposium",
         "healthcare",
         "professional"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "DAMA QLD: 2026 Spring Professional Meet Up",
+      "datetime": "Wed 9 Sep, 4:30 PM",
+      "datetime_iso": "2026-09-09T16:30:00",
+      "datetime_end_iso": "",
+      "location": "Australian Retirement Trust, Brisbane Central",
+      "link": "https://www.eventbrite.com.au/e/dama-qld-2026-spring-professional-meet-up-tickets-1998217756099?aff=ebdssbdestsearch",
+      "cost": "See link",
+      "source": "Eventbrite Brisbane",
+      "description": "We're back for another epic night of networking and first grade presentations from the DAMA QLD community!",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "professional",
+        "data"
       ],
       "social": true,
       "intellectual": true,

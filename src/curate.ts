@@ -18,6 +18,7 @@ import {
 	isLikelyImageUrl,
 	loadCityConfig,
 	loadYieldLedger,
+	mergeTagVariants,
 	normaliseCurrency,
 	normaliseHost,
 	PROJECT_ROOT,
@@ -259,7 +260,9 @@ function cleanEvent(event: Record<string, unknown>): Record<string, unknown> {
 	for (const key of URL_FIELDS) {
 		if (key in out) out[key] = cleanUrl(out[key]);
 	}
-	if (Array.isArray(out.tags)) out.tags = out.tags.map(cleanText);
+	if (Array.isArray(out.tags)) {
+		out.tags = out.tags.map((t) => cleanText(t).trim().toLowerCase());
+	}
 	// Stricter than the other URLs: an extension-less image URL is an
 	// extraction fault rather than a real picture, and 61 of 139 were dead.
 	// See isLikelyImageUrl.
@@ -500,6 +503,31 @@ async function mergeAndDeduplicate(
 	);
 	reportProviderYield(local, groups);
 	updateYieldLedger(toISODate(monday), searchLinkHosts);
+
+	// Collapse tag variants now the whole week is in one place — this is the
+	// only point that can see the corpus, and the merge is corpus-driven on
+	// purpose (see mergeTagVariants).
+	const canonical = mergeTagVariants(
+		events.map((e) => e.tags as string[] | undefined),
+	);
+	let rewritten = 0;
+	for (const event of events) {
+		if (!Array.isArray(event.tags)) continue;
+		const before = event.tags as string[];
+		const after = [...new Set(before.map((t) => canonical.get(t) ?? t))];
+		if (after.join("\u0000") !== before.join("\u0000")) rewritten++;
+		event.tags = after;
+	}
+	if (canonical.size > 0) {
+		const merged = new Set(
+			[...canonical].filter(([from, to]) => from !== to).map(([from]) => from),
+		);
+		console.log(
+			`→ tags: ${merged.size} variant(s) merged onto their canonical spelling ` +
+				`(${[...merged].slice(0, 6).join(", ")}${merged.size > 6 ? ", …" : ""}), ${rewritten} event(s) rewritten`,
+		);
+	}
+
 	// Bookkeeping only — never published.
 	return events.map(({ [PROVIDER_KEY]: _provider, ...rest }) => rest);
 }

@@ -11,7 +11,7 @@
       "datetime": "Sat 12 Sep, 10:30 AM",
       "datetime_iso": "2026-09-12T10:30:00",
       "datetime_end_iso": "",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
@@ -33,7 +33,7 @@
       "datetime": "Sat 22 Nov 2025 – Sat 10 Oct 2026",
       "datetime_iso": "2025-11-22",
       "datetime_end_iso": "2026-10-10",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/sachem-parkin-owens/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
@@ -43,7 +43,8 @@
       "tags": [
         "art",
         "mural",
-        "painting"
+        "creative",
+        "process"
       ],
       "social": false,
       "intellectual": false,
@@ -55,7 +56,7 @@
       "datetime": "Sat 22 Nov 2025 – Sun 31 Jan 2027",
       "datetime_iso": "2025-11-22",
       "datetime_end_iso": "2027-01-31",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
@@ -65,6 +66,7 @@
       "tags": [
         "fashion",
         "indigenous",
+        "culture",
         "design"
       ],
       "social": false,
@@ -74,10 +76,10 @@
     },
     {
       "title": "Perspectives of Brisbane",
-      "datetime": "Mon 7 Sep",
-      "datetime_iso": "2026-09-07",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
       "datetime_end_iso": "",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
@@ -87,7 +89,8 @@
       "tags": [
         "history",
         "brisbane",
-        "culture"
+        "culture",
+        "exhibition"
       ],
       "social": false,
       "intellectual": true,
@@ -99,7 +102,7 @@
       "datetime": "Thu 17 Sep",
       "datetime_iso": "2026-09-17",
       "datetime_end_iso": "",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/crafty-party-bonnie-hislop/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
@@ -109,7 +112,8 @@
       "tags": [
         "craft",
         "party",
-        "design"
+        "holiday",
+        "creative"
       ],
       "social": true,
       "intellectual": false,

@@ -49,6 +49,45 @@ export function meetsScoreFloor(score: unknown): boolean {
 }
 
 /**
+ * Collapses tag variants that mean the same thing onto one spelling.
+ *
+ * The annotator is a language model run once per source, so the same idea
+ * comes back spelled differently across sources: "art" (98 events) beside
+ * "arts" (8), "craft" beside "crafts", "tour" beside "tours". They split the
+ * filter row into near-duplicate chips and split a stated preference in half —
+ * saying "less art" left the eight "arts" events untouched.
+ *
+ * Merging is corpus-driven rather than by a stemming rule: a variant only
+ * collapses when BOTH spellings actually occur, and the more common one wins.
+ * A blind `/s$/` strip would turn "fitness" into "fitnes" and "business" into
+ * "busines" — inventing tags nothing uses, which is worse than the duplicates.
+ */
+export function mergeTagVariants(
+	eventsTags: (string[] | undefined)[],
+): Map<string, string> {
+	const counts = new Map<string, number>();
+	for (const tags of eventsTags) {
+		for (const tag of tags ?? []) {
+			const key = tag.trim().toLowerCase();
+			if (key) counts.set(key, (counts.get(key) ?? 0) + 1);
+		}
+	}
+	const canonical = new Map<string, string>();
+	for (const [tag, count] of counts) {
+		// Only ever the plural→singular direction, and only when the singular
+		// is itself a tag someone used.
+		const singular = tag.endsWith("s") ? tag.slice(0, -1) : null;
+		if (!singular) continue;
+		const singularCount = counts.get(singular);
+		if (singularCount === undefined) continue;
+		const winner = singularCount >= count ? singular : tag;
+		canonical.set(tag, winner);
+		canonical.set(singular, winner);
+	}
+	return canonical;
+}
+
+/**
  * Whether an event belongs in Top Picks for the window being shown.
  *
  * Scoring high is necessary but not sufficient: the event also has to BE this

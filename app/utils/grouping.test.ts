@@ -239,3 +239,40 @@ test("startOfWeek is the Monday, with Sunday belonging to the week before", () =
 	assert.equal(startOfWeek("2026-09-06"), "2026-08-31"); // Sunday
 	assert.equal(startOfWeek("2026-08-31"), "2026-08-31"); // Monday itself
 });
+
+test("stated preferences sort within each date group", () => {
+	// Each group re-sorts by start time, which silently discarded the
+	// preference ordering the list arrived in: marking a tag "less" did nothing
+	// at all in the default date view while working perfectly in Ungrouped.
+	const window = { from: "2026-09-07", to: "2026-09-20" };
+	const at = (hour: number, title: string, tags: string[]) =>
+		({
+			title,
+			tags,
+			datetime_iso: `2026-09-08T${String(hour).padStart(2, "0")}:00:00`,
+		}) as Event;
+
+	// Raffle is earliest, so time order alone would put it first.
+	const events = [
+		at(10, "Raffle", ["raffle"]),
+		at(14, "Lecture", ["lecture"]),
+		at(18, "Workshop", ["workshop"]),
+	];
+
+	const plain = groupEvents(events, "date", window, "2026-09-08");
+	assert.deepEqual(
+		plain[0].events.map((e) => e.title),
+		["Raffle", "Lecture", "Workshop"],
+		"without preferences the group is purely chronological",
+	);
+
+	const withPrefs = groupEvents(events, "date", window, "2026-09-08", {
+		raffle: -1,
+		workshop: 1,
+	});
+	assert.deepEqual(
+		withPrefs[0].events.map((e) => e.title),
+		["Workshop", "Lecture", "Raffle"],
+		"wanted first, unwanted last, chronological in between",
+	);
+});
