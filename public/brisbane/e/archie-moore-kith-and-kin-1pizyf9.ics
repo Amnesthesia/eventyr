@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Archie Moore: kith and kin
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1pizyf9@dothings
+DTSTART;TZID=Australia/Brisbane:20250927T100000
+DTEND;TZID=Australia/Brisbane:20250927T120000
+SUMMARY:Archie Moore: kith and kin
+DESCRIPTION:This artwork won the 2024 Venice Biennale's Golden Lion — and
+  Australians can see it at home in Brisbane.
+LOCATION:GOMA\, Brisbane
+URL:https://www.qagoma.qld.gov.au/exhibition/archie-moore-kith-and-kin
+END:VEVENT
+END:VCALENDAR

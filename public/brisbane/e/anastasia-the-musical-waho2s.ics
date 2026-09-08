@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Anastasia The Musical
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-waho2s@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20261019
+SUMMARY:Anastasia The Musical
+DESCRIPTION:The hit Broadway musical ANASTASIA arrives in Brisbane this Sep
+ tember\, bringing romance and adventure to QPAC
+LOCATION:Must Do Brisbane
+URL:https://www.mustdobrisbane.com/whats-on/anastasia-musical-qpac
+END:VEVENT
+END:VCALENDAR

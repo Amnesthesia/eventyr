@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wednesday Night Entertainment
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1u0x82t@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T210000
+DTEND;TZID=Australia/Brisbane:20260916T230000
+SUMMARY:Wednesday Night Entertainment
+DESCRIPTION:Join us for Wednesday Night Entertainment at Ric's Bar + Backya
+ rd on Wednesday\, 16th Sep 2026. Discover local talent and enjoy live ente
+ rtainment. Book your table now!
+LOCATION:Ric's Bar\, Fortitude Valley
+URL:https://surreal.live/en-au/event/rics-bar-backyard_backyard-dj-5nhuh7
+END:VEVENT
+END:VCALENDAR

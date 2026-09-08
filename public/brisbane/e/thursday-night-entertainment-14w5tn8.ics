@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Thursday Night Entertainment
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-14w5tn8@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T193000
+DTEND;TZID=Australia/Brisbane:20260910T213000
+SUMMARY:Thursday Night Entertainment
+DESCRIPTION:
+LOCATION:Ric's Backyard
+URL:https://surreal.live/en-au/event/rics-bar-backyard_thursday-night-live-
+ music-4bmuua
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Big Chillout: Motown Spectacular
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-10aqni7@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:The Big Chillout: Motown Spectacular
+DESCRIPTION:Motown Meets 60's Rock. Celebrating the The Big Chill movie sou
+ ndtrack with the timeless classics.
+LOCATION:Redcliffe Entertainment Centre
+URL:https://www.redcliffeentertainmentcentre.com.au/Events/The-Big-Chillout
+END:VEVENT
+END:VCALENDAR

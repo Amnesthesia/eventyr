@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Stories You Wear: Magpie Goose
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-emzqbj@dothings
+DTSTART;VALUE=DATE:20251122
+DTEND;VALUE=DATE:20270201
+SUMMARY:Stories You Wear: Magpie Goose
+DESCRIPTION:This exhibition Stories You Wear: Magpie Goose is a exhibition 
+ in collaborate with Magpie Goose\, a proudly Aboriginal owned and led fash
+ ion and social enterprise\, to celebrate extraordinary First Peoples cultu
+ ral stories and designs. This exclusive to Brisbane exhibition offers a de
+ ep dive into the work of some of the region’s most talented First People
+ s artists and designers. Using clothing as a canvas for storytelling\, thi
+ s exciting collaboration will connect audiences with the rich and diverse 
+ cultural expressions of First Peoples communities in Queensland and beyond
+ .
+LOCATION:Museum of Brisbane\, King George Square (Brisbane City Hall)
+URL:https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/
+END:VEVENT
+END:VCALENDAR

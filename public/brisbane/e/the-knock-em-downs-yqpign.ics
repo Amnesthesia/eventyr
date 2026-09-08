@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Knock ‘Em Downs
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-yqpign@dothings
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260927
+SUMMARY:The Knock ‘Em Downs
+DESCRIPTION:Step inside the colourful carnival tent\, where nostalgia has t
+ aken a curious twist\, and the carnies have turned into clowns! Take a tri
+ p back in time to the side shows of old - a strange and bewildering world 
+ featuring a variety of side show games sure to test your skill\, with big 
+ prizes to be won. This off-beat encounter will tickle your ribs and wobble
+  your funny bone!
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/the-knock-em-downs
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Friday Night Entertainment
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-numgib@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:Friday Night Entertainment
+DESCRIPTION:
+LOCATION:Ric's Backyard
+URL:https://surreal.live/en-au/event/rics-bar-backyard_friday-live-bands-yn
+ ukmp
+END:VEVENT
+END:VCALENDAR

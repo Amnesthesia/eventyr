@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Crafty Party with Bonnie Hislop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ltxbnl@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Crafty Party with Bonnie Hislop
+DESCRIPTION:Don't just deck the halls these holidays\, cover them with spar
+ kles with a very special crafty party brought to you by Tinsel Queen\, Rac
+ hel Burke.
+LOCATION:Museum of Brisbane\, King George Square (Brisbane City Hall)
+URL:https://www.museumofbrisbane.com.au/whats-on/crafty-party-bonnie-hislop
+ /
+END:VEVENT
+END:VCALENDAR

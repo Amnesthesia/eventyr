@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Attenborough's Ocean in Concert
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-18utclv@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:Attenborough's Ocean in Concert
+DESCRIPTION:Sir David Attenborough’s greatest message of hope brought to 
+ life\, live by Camerata.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/attenboroughs-ocean-in-concert
+END:VEVENT
+END:VCALENDAR

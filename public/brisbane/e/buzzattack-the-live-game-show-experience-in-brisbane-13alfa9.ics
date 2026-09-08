@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BuzzAttack: The Live Game Show Experience in Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-13alfa9@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20261130
+SUMMARY:BuzzAttack: The Live Game Show Experience in Brisbane
+DESCRIPTION:Fever Immersive Center in Brisbane is a place that hosts a dive
+ rse variety of immersive entertainment activities\, events\, and experienc
+ es. Our cutting-edge facility provides world-class Virtual Realit...
+LOCATION:Fever Immersive Center in Brisbane
+URL:https://feverup.com/m/671991
+END:VEVENT
+END:VCALENDAR

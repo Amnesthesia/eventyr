@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brewery Tours
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-b7hu3d@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T120000
+DTEND;TZID=Australia/Brisbane:20260909T140000
+SUMMARY:Brewery Tours
+DESCRIPTION:Get behind the scenes of a working brewery & learn about the ma
+ gic of beer and brewing!
+LOCATION:Felons Brewing Co
+URL:https://felonsbrewingco.com.au/blogs/weekly/brewery-tours
+END:VEVENT
+END:VCALENDAR

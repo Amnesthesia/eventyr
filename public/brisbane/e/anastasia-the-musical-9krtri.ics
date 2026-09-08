@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Anastasia The Musical
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-9krtri@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20261019
+SUMMARY:Anastasia The Musical
+DESCRIPTION:ANASTASIA\, the spectacular Broadway musical inspired by the be
+ loved film\, arrives at the Lyric Theatre\, QPAC from 16 September for a s
+ trictly limited season!
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/anastasia-the-musical
+END:VEVENT
+END:VCALENDAR

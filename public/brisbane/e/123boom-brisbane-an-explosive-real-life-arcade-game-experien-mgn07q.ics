@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:123Boom! Brisbane - An Explosive Real-Life Arcade Game Experie
+ nce
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mgn07q@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270101
+SUMMARY:123Boom! Brisbane - An Explosive Real-Life Arcade Game Experience
+DESCRIPTION:Grab your friends and tackle 6 epic challenges at 123Boom! in B
+ risbane! It’s the ultimate immersive gaming experience. Get your tickets
+ !
+LOCATION:123Boom! Brisbane
+URL:https://feverup.com/m/480023
+END:VEVENT
+END:VCALENDAR

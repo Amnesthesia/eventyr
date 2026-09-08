@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Luna\, A Journey to the Moon
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-6k4y55@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20261101
+SUMMARY:Luna\, A Journey to the Moon
+DESCRIPTION:Explore space in Luna: A Journey to the Moon\, a free-roam VR a
+ dventure blending history\, education\, and immersive fun. Get your ticket
+ s!
+LOCATION:Fever Immersive Center in Brisbane
+URL:https://feverup.com/m/662311
+END:VEVENT
+END:VCALENDAR

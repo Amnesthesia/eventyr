@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lord Mayor's Seniors Cabaret Showcase
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-124cjq3@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T110000
+DTEND;TZID=Australia/Brisbane:20260908T130000
+SUMMARY:Lord Mayor's Seniors Cabaret Showcase
+DESCRIPTION:Free cabaret showcase for Brisbane seniors at Kedron-Wavell Ser
+ vices Club. This year's theme celebrates legends and icons — the people\
+ , moments and music that shaped generations. Participants develop creative
+  talents in a supportive\, non-competitive environment\, with expert guida
+ nce helping them…
+LOCATION:Kedron-Wavell Services Club\, Chermside
+URL:https://musick.com.au/gig/lord-mayors-seniors-cabaret-showcase-2026-09-
+ 08/
+END:VEVENT
+END:VCALENDAR

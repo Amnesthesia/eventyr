@@ -1,0 +1,54 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "aggregators",
+  "source_id": "concreteplayground",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Negroni Month, Brisbane 2026",
+      "datetime": "Tue 1 Sep – Wed 30 Sep",
+      "datetime_iso": "2026-09-01",
+      "datetime_end_iso": "2026-09-30",
+      "location": "Brisbane",
+      "link": "https://concreteplayground.com/",
+      "cost": "AUD 0",
+      "source": "Concrete Playground Brisbane",
+      "description": "Bars and restaurants across Brisbane are celebrating Negroni Month with special menus, events and twists on the classic cocktail.",
+      "image": "https://cdn.concreteplayground.com/content/uploads/2026/08/4-5-1920x1080.png",
+      "category": "Social / Meetup",
+      "tags": [
+        "cocktails",
+        "drinks",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Archie Moore: kith and kin",
+      "datetime": "Sat 27 Sep 2025, 10:00 AM – Sun 18 Oct 2026",
+      "datetime_iso": "2025-09-27T10:00:00",
+      "datetime_end_iso": "2026-10-18",
+      "location": "GOMA, Brisbane",
+      "link": "https://www.qagoma.qld.gov.au/exhibition/archie-moore-kith-and-kin",
+      "cost": "AUD 0",
+      "source": "Concrete Playground Brisbane",
+      "description": "This artwork won the 2024 Venice Biennale's Golden Lion — and Australians can see it at home in Brisbane.",
+      "image": "https://cdn.concreteplayground.com/content/uploads/2024/04/Kith-and-Kin_01_Venice-Biennale_Andrea-Rossetti_supplied-1920x1080.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

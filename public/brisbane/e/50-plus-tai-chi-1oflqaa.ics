@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:50 Plus: Tai chi
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1oflqaa@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T083000
+DTEND;TZID=Australia/Brisbane:20260909T093000
+SUMMARY:50 Plus: Tai chi
+DESCRIPTION:Tai chi\, or taijiquan in Chinese\, an outstanding gem of tradi
+ tional Chinese culture that is valuable in promoting health\, developing c
+ ombat and self-defence skills\, and improving concentration and overall we
+ ll-being. Although it is a branch of the Chinese martial arts (Wushu)\, it
+LOCATION:Fifty Plus Centre\, Brisbane City
+URL:https://www.brisbaneunlocked.com.au/50-plus-tai-chi-2026-09-08
+END:VEVENT
+END:VCALENDAR
