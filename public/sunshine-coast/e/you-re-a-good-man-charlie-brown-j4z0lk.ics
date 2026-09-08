@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:You’re a Good Man\, Charlie Brown
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-j4z0lk@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260928
+SUMMARY:You’re a Good Man\, Charlie Brown
+DESCRIPTION:DATESPreview: Thursday 10 September at 7:30pm – all tickets $
+ 32Opening night: Friday 11 September at 7:30pmMatinees: 12\, 13\, 19\, 20\
+ , 26\, 27 September at 2pmEvenings: 18\, 25 September at 7:30pm TICKETSAdu
+ lts $42 | Concessions $35 | Member/Group $32 | U18 $15 GENREMusical SYNOPS
+ ISCharles Schulz’s beloved comic comes to life in Clark Gesner’s class
+ ic musical\, You’re Read More ...
+LOCATION:Noosa Arts Theatre\, Noosaville · Noosa + North
+URL:https://www.noosaartstheatre.org.au/charlie-brown/
+END:VEVENT
+END:VCALENDAR

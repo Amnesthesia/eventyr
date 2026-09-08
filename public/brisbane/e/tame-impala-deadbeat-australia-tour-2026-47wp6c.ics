@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tame Impala - Deadbeat Australia Tour 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-47wp6c@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T193000
+DTEND;TZID=Australia/Brisbane:20260911T213000
+SUMMARY:Tame Impala - Deadbeat Australia Tour 2026
+DESCRIPTION:Tame Impala - Deadbeat Australia Tour 2026\, PRESENTED BY: ...\
+ , Brisbane Entertainment Centre\, Brisbane\, Queensland\, 9 September 2026
+  - 11 September 2026\,
+LOCATION:Brisbane Entertainment Centre\, Boondall\, Queensland
+URL:https://brisbane.eventfinda.com.au/2026/tame-impala-deadbeat-australia-
+ tour-2026/brisbane/boondall
+END:VEVENT
+END:VCALENDAR

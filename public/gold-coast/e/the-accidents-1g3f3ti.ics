@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:THE ACCIDENTS
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1g3f3ti@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T070000
+DTEND;TZID=Australia/Brisbane:20260919T090000
+SUMMARY:THE ACCIDENTS
+DESCRIPTION:The Accidents are a band with hard earned experience that will 
+ rock your socks off. You will hear songs from the 60’s through to curren
+ t radio hits performed with energy and passion...... Songs from AC/DC\, Ri
+ hanna\, Calvin Harris\, Cee Lo Green\, Stevie Wonder\, John Mayer\, Jessie
+  J\, Adele\, Cold Chisel and many more it`s a show not to be missed.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/the-accidents-2/
+END:VEVENT
+END:VCALENDAR

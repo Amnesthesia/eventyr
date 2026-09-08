@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:‘Make\, Believe\, Magic’ Cinema programs
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-t19b92@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:‘Make\, Believe\, Magic’ Cinema programs
+DESCRIPTION:Get ready to experience your favourite Jim Henson characters\, 
+ creatures and fantastical worlds on the big screen with three free cinema 
+ programs at GOMA
+LOCATION:QAGOMA
+URL:https://www.mustdobrisbane.com/whats-on/make-believe-magic-cinema-progr
+ ams-qagoma
+END:VEVENT
+END:VCALENDAR

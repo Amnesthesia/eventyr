@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Hangout & New Friends@Goldie's Tavern West End
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1d3d12y@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T133000
+DTEND;TZID=Australia/Brisbane:20260913T163000
+SUMMARY:Sunday Hangout & New Friends@Goldie's Tavern West End
+DESCRIPTION:Come along for a relaxed Sunday\, meet some new faces\, grab a 
+ drink and enjoy some good company. No plans\, no pressure\, just a fun aft
+ ernoon together! Come solo or bring a f
+LOCATION:Goldie's Tavern West End\, Corner of Melbourne & Merivale Street\,
+  South Brisbane QLD 4101\, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-no-plans-club/events/316335374/
+END:VEVENT
+END:VCALENDAR

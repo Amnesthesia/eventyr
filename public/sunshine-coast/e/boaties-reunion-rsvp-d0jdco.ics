@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Boaties Reunion RSVP
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-d0jdco@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Boaties Reunion RSVP
+DESCRIPTION:
+LOCATION:Bluff Function
+URL:https://alexsurfclub.com.au/event/boaties-reunion-rsvp/
+END:VEVENT
+END:VCALENDAR

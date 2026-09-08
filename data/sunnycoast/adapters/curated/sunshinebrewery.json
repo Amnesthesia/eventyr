@@ -1,0 +1,76 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "sunshinebrewery",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Korean Feast with a Cold Beer",
+      "datetime": "Fri 11 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-11T12:00:00",
+      "datetime_end_iso": "2026-09-11T19:00:00",
+      "location": "Sunshine Brewery",
+      "link": "https://sunshinebrewery.com.au/event/korean-feast-with-a-cold-beer/",
+      "cost": "See link",
+      "source": "Sunshine Brewery",
+      "description": "Imagine Crispy Fried Chicken with a spicy authentic Korean sauce &#8230;&#8230;&#8230; sounds like all you need is a beer to top it off! We are very excited to host Sean Kim and his Korean Food Cart here at the brewery for lunch and dinner. &#8211; Craig says, &#8220;BEST wrap ever &#8230;.&#8221; &nbsp;",
+      "image": "https://sunshinebrewery.com.au/wp-content/uploads/2023/11/Korean-chicken-skewers-scaled.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "beer",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "BBQ Masterclass &#8211; Eat Meat Repeat..",
+      "datetime": "Sat 12 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-12T12:00:00",
+      "datetime_end_iso": "2026-09-12T16:00:00",
+      "location": "Sunshine Brewery",
+      "link": "https://sunshinebrewery.com.au/event/last-bbq-masterclass-for-the-year/",
+      "cost": "See link",
+      "source": "Sunshine Brewery",
+      "description": "Learn from the Best &#8211; This four-hour masterclass will allow you take your Low &amp; Slow BBQ skillset to the next level. We will cover everything from temperature control, flavour profiling &amp; trimming selected cuts.This is an interactive class allowing for plenty of opportunities for Q&amp;A. Not to mention a 10 protein, 6-course feast of award-winning BBQ all cooked over charcoal &amp; wood. Book you tickets here What&#8217;s Included $80 Cotton Tree Meats voucher 10 different types of smoked meats served over 6 courses Low &amp; Slow recipe magnet 2 x Sunshine Brewery beers 4 hours of hardcore BBQ talk NOTE This is the LAST class for the year",
+      "image": "https://sunshinebrewery.com.au/wp-content/uploads/2021/03/Brisket.jpg",
+      "category": "Workshop / Class",
+      "tags": [
+        "bbq",
+        "cooking",
+        "food"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Safe Sunday Unplugged",
+      "datetime": "Sun 13 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-13T12:00:00",
+      "datetime_end_iso": "2026-09-13T18:00:00",
+      "location": "Sunshine Brewery",
+      "link": "https://sunshinebrewery.com.au/event/safe-sunday-unplugged-2/",
+      "cost": "See link",
+      "source": "Sunshine Brewery",
+      "description": "Every Sunday we are welcoming people to BYO instruments or use the guitar supplied to strum a tune; sing a song or just jam ….",
+      "image": "https://sunshinebrewery.com.au/wp-content/uploads/2026/09/Safe-Sunday-Unplugged-pic.jpg",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "jam",
+        "acoustic"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

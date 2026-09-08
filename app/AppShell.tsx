@@ -30,8 +30,8 @@ export default function AppShell() {
 		resetVibes,
 		query,
 		setQuery,
-		hideLowScore,
-		setHideLowScore,
+		minScore,
+		setMinScore,
 	} = useEventsContext();
 	const [swiping, setSwiping] = useState(false);
 	// null = closed. A non-null value is the set the calendar is showing, which
@@ -75,7 +75,7 @@ export default function AppShell() {
 		!!dateRange ||
 		activeTags.length > 0 ||
 		query.trim().length > 0 ||
-		hideLowScore;
+		minScore > 0;
 
 	function clearFilters() {
 		setActiveCat("All");
@@ -83,7 +83,7 @@ export default function AppShell() {
 		activeTags.forEach(toggleTag);
 		resetVibes();
 		setQuery("");
-		setHideLowScore(false);
+		setMinScore(0);
 	}
 
 	const groups = useMemo(() => {

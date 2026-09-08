@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:David Green - when it rains the roof leaks
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-w0g29z@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20261004
+SUMMARY:David Green - when it rains the roof leaks
+DESCRIPTION:
+LOCATION:Anthea Polson Art
+URL:https://antheapolsonart.com.au/view-exhibitions/?exhibition_id=15901
+END:VEVENT
+END:VCALENDAR

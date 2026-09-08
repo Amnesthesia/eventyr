@@ -48,6 +48,47 @@ export function meetsScoreFloor(score: unknown): boolean {
 	return typeof score !== "number" || score >= LOW_SCORE_THRESHOLD;
 }
 
+/**
+ * Whether an event belongs in Top Picks for the window being shown.
+ *
+ * Scoring high is necessary but not sufficient: the event also has to BE this
+ * week. A months-long exhibition that scores 8 is genuinely good and genuinely
+ * open, but it opened in January and closes in December, so it would occupy a
+ * pick slot every week until it closed — and the picks list is meant to answer
+ * "what should I do this week", not "what is permanently available".
+ *
+ * So both ends have to land inside the window. An event with no end date is a
+ * single occasion and qualifies on its start alone; an event whose end runs
+ * past the window is a standing fixture and stays in the main list, where
+ * grouping files it under "Ongoing" and says so.
+ *
+ * Dates are compared as YYYY-MM-DD prefixes, which is why they can be
+ * compared as strings — ISO dates sort lexicographically.
+ */
+export function isTopPick(
+	event: {
+		score?: unknown;
+		datetime_iso?: unknown;
+		datetime_end_iso?: unknown;
+	},
+	windowStart: string,
+	windowEnd: string,
+): boolean {
+	const score = typeof event.score === "number" ? event.score : 0;
+	if (score < TOP_PICK_THRESHOLD) return false;
+
+	const start = String(event.datetime_iso ?? "").slice(0, 10);
+	if (!start) return false;
+	// Without a window (no dates known) fall back to the score alone rather
+	// than dropping everything.
+	if (!windowStart || !windowEnd) return true;
+	if (start < windowStart || start > windowEnd) return false;
+
+	const end = String(event.datetime_end_iso ?? "").slice(0, 10);
+	if (!end) return true;
+	return end <= windowEnd;
+}
+
 export const SITE_URL = "https://www.dothings.lol";
 
 /** City key → the slug used in public URLs. Shared so the site, the sitemap

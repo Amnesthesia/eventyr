@@ -1,0 +1,125 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "creativeroom",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Ethnic Carpet | Watercolour and Oil Pastel Workshop",
+      "datetime": "Sat 12 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-12T12:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Room Art Space",
+      "link": "https://www.creativeroom.com.au/event-details/ethnic-carpet-watercolour-and-oil-pastel-workshop-2",
+      "cost": "See link",
+      "source": "Creative Room Art Space",
+      "description": "Join us for a mixed-media workshop blending watercolour and oil pastels to create vibrant art inspired by traditional decorative motifs.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "painting",
+        "workshop",
+        "creative"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Creative Landscape | Acrylic Painting Workshop",
+      "datetime": "Sun 13 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-13T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Room Art Space",
+      "link": "https://www.creativeroom.com.au/event-details/creative-landscape-acrylic-painting-workshop-1",
+      "cost": "See link",
+      "source": "Creative Room Art Space",
+      "description": "This acrylic painting workshop builds on our Colour Theory course, exploring the split-complementary colour scheme through a landscape composition.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "painting",
+        "acrylic",
+        "landscape",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Asian Ink Techniques Workshop",
+      "datetime": "Sun 20 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-20T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Room Art Space",
+      "link": "https://www.creativeroom.com.au/event-details/asian-ink-techniques-workshop",
+      "cost": "See link",
+      "source": "Creative Room Art Space",
+      "description": "Discover the expressive beauty of Asian ink painting and calligraphy in this relaxed, beginner-friendly workshop.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "ink",
+        "calligraphy",
+        "art",
+        "workshop"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Drawing for Beginners | Morning sessions | 10-Week Course",
+      "datetime": "Wed 9 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-09T10:30:00",
+      "datetime_end_iso": "",
+      "location": "Creative Room Art Space",
+      "link": "https://www.creativeroom.com.au/event-details/drawing-for-beginners-morning-sessions-10-week-course",
+      "cost": "See link",
+      "source": "Creative Room Art Space",
+      "description": "Starts 9 September 2026, 2.5-hour tutored classes for Adults, Wednesday mornings 10:30am–1pm, small group setting with all materials included.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "drawing",
+        "beginner",
+        "art",
+        "course"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Drawing for Beginners | Evening sessions | 10-Week Course",
+      "datetime": "Wed 9 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-09T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Creative Room Art Space",
+      "link": "https://www.creativeroom.com.au/event-details/drawing-for-beginners-evening-sessions-10-week-course",
+      "cost": "See link",
+      "source": "Creative Room Art Space",
+      "description": "Starts 9 September 2026, 2.5-hour tutored classes for Adults, Wednesday evenings 5:30pm–8:00pm, small group setting with all materials included",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "drawing",
+        "beginner",
+        "art",
+        "course"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

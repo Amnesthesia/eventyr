@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Renters And Housing Union (RAHU) Ipswich Branch Launch
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-2xipfy@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T140000
+DTEND;TZID=Australia/Brisbane:20260919T160000
+SUMMARY:Renters And Housing Union (RAHU) Ipswich Branch Launch
+DESCRIPTION:Join RAHU at Banshees to officially launch our Ipswich branch!
+LOCATION:Banshees Bar & Artspace
+URL:https://bansheesbar.com.au/event/renters-and-housing-union-rahu-ipswich
+ -branch-launch
+END:VEVENT
+END:VCALENDAR

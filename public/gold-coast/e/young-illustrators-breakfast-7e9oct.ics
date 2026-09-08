@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Young Illustrators' Breakfast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-7e9oct@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T073000
+DTEND;TZID=Australia/Brisbane:20260911T093000
+SUMMARY:Young Illustrators' Breakfast
+DESCRIPTION:Gather 'round\, young artists! Join us for a magical morning of
+  creativity and breakfast. This special event features the talented childr
+ en’s illustrators\, Sami Bayly and Mick Elliott . Delight in a delicious
+  breakfast spread and let your imagination soar as we share stories\, swap
+  tips\, and sketch our way through a morning of fun. From quirky character
+ s to vibrant landscapes\, this illustrator breakfast is sure to inspire yo
+ ur next masterpiece! Don’t miss this unique opportunity to meet the arti
+ sts behind your favourite books and discover the joy of illustration.
+LOCATION:Qantas Founders Museum
+URL:https://storyfest.com.au/
+END:VEVENT
+END:VCALENDAR

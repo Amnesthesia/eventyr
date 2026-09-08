@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Nurse Georgie Carroll – Infectious – Encore Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1aolx20@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T193000
+DTEND;TZID=Australia/Brisbane:20260919T213000
+SUMMARY:Nurse Georgie Carroll – Infectious – Encore Show
+DESCRIPTION:Stand Up Comedy\, Georgie Carroll\, Infectious\, What's On\, No
+ osa\, The J Theatre
+LOCATION:The J Noosa
+URL:https://www.thej.com.au/georgie-carroll-infectious-encore/
+END:VEVENT
+END:VCALENDAR

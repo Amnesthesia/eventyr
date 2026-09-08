@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SWELL Masquerade Ball
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-142gwox@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T180000
+DTEND;TZID=Australia/Brisbane:20260918T200000
+SUMMARY:SWELL Masquerade Ball
+DESCRIPTION:Join us for an unforgettable evening of live jazz\, vintage gla
+ mour and coastal charm at the SWELL Masquerade Ball.
+LOCATION:Fringe Pavillion\, Currumbin
+URL:https://www.swellsculpture.com.au/activity/swell-masquerade-ball/
+END:VEVENT
+END:VCALENDAR

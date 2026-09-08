@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Quandamooka Festival 2026 feat. Dan Sultan
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jslqzi@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260912T120000
+SUMMARY:Quandamooka Festival 2026 feat. Dan Sultan
+DESCRIPTION:Quandamooka Festival 2026 feat. Dan Sultan\, Two days of music\
+ , ...\, QUAMPI Arts & Culture Centre\, Brisbane\, Queensland\, 12 Septembe
+ r 2026 - 13 September 20
+LOCATION:QUAMPI Arts & Culture Centre\, Port Of Brisbane\, Queensland
+URL:https://brisbane.eventfinda.com.au/2026/quandamooka-festival-2026-feat-
+ dan-sultan/brisbane
+END:VEVENT
+END:VCALENDAR

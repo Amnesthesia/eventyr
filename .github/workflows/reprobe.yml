@@ -1,0 +1,166 @@
+# Re-verify every city's sources on a schedule.
+#
+# probe-sources both promotes (llm → scraper, once a listing URL is proven to
+# yield dated events) and demotes (scraper → llm, for anything it re-checked
+# and could not verify). Until this workflow existed it only ran from
+# add-city.yml, i.e. exactly once per city, which broke both halves:
+#
+#   - Promotion never caught up with reality. 695 of 950 `method: llm` sources
+#     had never been probed at all, most of them added by discover-sources
+#     after their city's one and only probe run. "Not scrapable" mostly meant
+#     "not yet looked at".
+#   - Demotion could never fire. A source promoted under an older, looser gate
+#     stayed a scraper for ever, even after barren.json had shown it scraping
+#     zero for weeks. A rule that can only add accumulates stale state that no
+#     later run corrects.
+#
+# Monthly rather than weekly: probing re-fetches every source and spends model
+# calls on listing-URL discovery, and source listings do not churn weekly. It
+# runs a few days before the month's digests so a promotion lands with a full
+# week ahead of it.
+name: Re-probe Sources
+
+on:
+  schedule:
+    # 03:00 UTC = 13:00 Brisbane, on the 3rd. Off the hour and off the 1st,
+    # where GitHub's scheduler is busiest.
+    - cron: "0 3 3 * *"
+  workflow_dispatch:
+    inputs:
+      city:
+        description: "Single city key to re-probe, or blank for all"
+        required: false
+        type: string
+
+jobs:
+  reprobe:
+    runs-on: ubuntu-latest
+    # Long, because probing is deliberately polite: one request per second per
+    # host, with a 180s per-source ceiling.
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    env:
+      # Week boundaries and "today" are local time; the pipeline pins this
+      # everywhere so a UTC runner agrees on which day it is.
+      TZ: Australia/Brisbane
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # A cached chromium rather than `playwright install`, which downloads
+      # ~95 MB on every run — the single largest fixed cost in this job, far
+      # bigger than any page it renders. Playwright is still the driver; it is
+      # pointed at this binary through CHROME_PATH below.
+      - name: Set up chromium for the render pass
+        id: setup-chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      # probe-sources takes one city at a time by design, so the set is
+      # resolved from the source files rather than duplicated here — a city
+      # added later is picked up with no edit to this workflow.
+      - name: Re-probe each city
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          ONLY_CITY: ${{ inputs.city }}
+        run: |
+          set -uo pipefail
+          if [ -n "${ONLY_CITY}" ]; then
+            cities="${ONLY_CITY}"
+          else
+            cities=$(ls sources/*.yml | xargs -n1 basename | sed 's/\.yml$//')
+          fi
+          failed=""
+          for city in $cities; do
+            echo "::group::probe $city"
+            # One city failing must not cost the others their run, but it must
+            # still fail the job at the end — a silent skip is how coverage
+            # disappears while the run stays green.
+            pnpm probe-sources --city="$city" --force --apply || failed="$failed $city"
+            echo "::endgroup::"
+          done
+          if [ -n "$failed" ]; then
+            echo "::error::probe failed for:$failed"
+            exit 1
+          fi
+
+      # The browser rung, last and narrowest. It runs on a shortlist scored from
+      # evidence a wall cannot hide (the host's own sitemap, and what the AI
+      # search has actually found there), so it is never pointed at pages that
+      # would yield nothing — on the first full run, 53 hosts took 147s and
+      # produced 20 candidate paths, of which probe verified 4.
+      #
+      # It only ever *proposes*: harvested URLs are written as candidate
+      # listingUrls with method left as llm, and the second probe pass below is
+      # what promotes them, on extracted events. A failed render costs a URL
+      # nobody uses, never a wrong promotion.
+      - name: Render walled sources to find static paths
+        if: always()
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+        run: |
+          set -uo pipefail
+          pnpm tsx --tsconfig tsconfig.scripts.json src/adapters/triage.ts --render-candidates
+          pnpm render-sources --limit=60 --apply || echo "::warning::render pass failed — deterministic paths are unaffected"
+
+      # Verifies whatever the render proposed. Separate from the first probe
+      # step because the candidates only exist after it.
+      - name: Verify rendered candidates
+        if: always()
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          ONLY_CITY: ${{ inputs.city }}
+        run: |
+          set -uo pipefail
+          if [ -n "${ONLY_CITY}" ]; then
+            cities="${ONLY_CITY}"
+          else
+            cities=$(ls sources/*.yml | xargs -n1 basename | sed 's/\.yml$//')
+          fi
+          for city in $cities; do
+            echo "::group::verify $city"
+            pnpm probe-sources --city="$city" --force --apply || echo "::warning::verify failed for $city"
+            echo "::endgroup::"
+          done
+
+      - name: Report what changed
+        if: always()
+        run: |
+          pnpm tsx --tsconfig tsconfig.scripts.json src/adapters/triage.ts || true
+          git --no-pager diff --stat sources/ || true
+
+      # Committed even when a city failed above: the cities that did verify
+      # should keep their result rather than being thrown away with the run.
+      - name: Commit source changes
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # sources/ only: data/_probe/ is gitignored on purpose (raw bodies,
+          # conditional-GET cache and probe logs are all regenerable and
+          # unbounded), so the durable output of a run is the YAML change.
+          git add sources/
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: re-probe sources"
+          git push

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:MIRRORBALL EXPRESS DUO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1hpn2kv@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T023000
+DTEND;TZID=Australia/Brisbane:20260913T043000
+SUMMARY:MIRRORBALL EXPRESS DUO
+DESCRIPTION:The first LIVE act to create a concept show featuring mashups o
+ f the best 80's and 90's hits in one Step back in time as Mirrorball Expre
+ ss Duo and relive all of the glory of the 80s and 90s.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/mirrorball-express/
+END:VEVENT
+END:VCALENDAR

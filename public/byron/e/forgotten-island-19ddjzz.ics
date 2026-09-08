@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Forgotten Island
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-19ddjzz@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Forgotten Island
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/coming-soon/forgotten-island/
+END:VEVENT
+END:VCALENDAR

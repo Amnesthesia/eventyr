@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:14th Annual Black Tie Gala
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1rbtgxl@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T180000
+DTEND;TZID=Australia/Brisbane:20260912T200000
+SUMMARY:14th Annual Black Tie Gala
+DESCRIPTION:Event Name: 14th Annual Farm Animal Rescue Black Tie Gala Date 
+ & Time: Saturday\, 12 September 2026\, 6:00 PM Location: The Westin Brisba
+ ne Event Description: ✨ Australia’s Only Vegan Black Tie Gala ✨ Join
+  us for a magical evening of elegance\, indulgence\, and compassion at the
+  14th Annual Farm An
+LOCATION:The Westin Brisbane\, Tesla\, 111 Mary St\, Brisbane City QLD 4000
+ \, Australia\, Brisbane\, QL
+URL:https://allevents.in/brisbane/14th-annual-black-tie-gala/20002993589974
+ 3
+END:VEVENT
+END:VCALENDAR

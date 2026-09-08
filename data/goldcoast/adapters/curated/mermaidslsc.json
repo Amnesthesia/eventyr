@@ -1,0 +1,208 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "mermaidslsc",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Barra Monday",
+      "datetime": "Mon 14 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Life Saving Club",
+      "link": "https://www.mermaidslsc.org.au/whats-on/#",
+      "cost": "$19",
+      "source": "Mermaid Beach Surf Life Saving Club",
+      "description": "Committed to being a premier Surf Life Saving Club and providing excellence in Surf Life Saving services to Mermaid Beach.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "bar",
+        "social",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Kids Eat Free",
+      "datetime": "Mon 14 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Life Saving Club",
+      "link": "https://www.mermaidslsc.org.au/whats-on/#",
+      "cost": "See link",
+      "source": "Mermaid Beach Surf Life Saving Club",
+      "description": "Committed to being a premier Surf Life Saving Club and providing excellence in Surf Life Saving services to Mermaid Beach.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "family",
+        "kids",
+        "dining"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Steak Night",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Life Saving Club",
+      "link": "https://www.mermaidslsc.org.au/whats-on/#",
+      "cost": "$19",
+      "source": "Mermaid Beach Surf Life Saving Club",
+      "description": "Committed to being a premier Surf Life Saving Club and providing excellence in Surf Life Saving services to Mermaid Beach.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "dining",
+        "food",
+        "steak"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Chefs specials",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Life Saving Club",
+      "link": "https://www.mermaidslsc.org.au/whats-on/#",
+      "cost": "See link",
+      "source": "Mermaid Beach Surf Life Saving Club",
+      "description": "Committed to being a premier Surf Life Saving Club and providing excellence in Surf Life Saving services to Mermaid Beach.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "dining",
+        "food",
+        "specials"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Parmi Night",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Life Saving Club",
+      "link": "https://www.mermaidslsc.org.au/whats-on/#",
+      "cost": "$19",
+      "source": "Mermaid Beach Surf Life Saving Club",
+      "description": "Committed to being a premier Surf Life Saving Club and providing excellence in Surf Life Saving services to Mermaid Beach.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "dining",
+        "food",
+        "parmi"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Members Draw",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Life Saving Club",
+      "link": "https://www.mermaidslsc.org.au/whats-on/#",
+      "cost": "See link",
+      "source": "Mermaid Beach Surf Life Saving Club",
+      "description": "Committed to being a premier Surf Life Saving Club and providing excellence in Surf Life Saving services to Mermaid Beach.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "members",
+        "social",
+        "raffle"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Breakfast",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Life Saving Club",
+      "link": "https://www.mermaidslsc.org.au/whats-on/#",
+      "cost": "See link",
+      "source": "Mermaid Beach Surf Life Saving Club",
+      "description": "Committed to being a premier Surf Life Saving Club and providing excellence in Surf Life Saving services to Mermaid Beach.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "breakfast",
+        "food",
+        "dining"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Trivia",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Life Saving Club",
+      "link": "https://www.mermaidslsc.org.au/whats-on/#",
+      "cost": "See link",
+      "source": "Mermaid Beach Surf Life Saving Club",
+      "description": "Committed to being a premier Surf Life Saving Club and providing excellence in Surf Life Saving services to Mermaid Beach.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "quiz",
+        "games"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Chefs Specials",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Life Saving Club",
+      "link": "https://www.mermaidslsc.org.au/whats-on/#",
+      "cost": "See link",
+      "source": "Mermaid Beach Surf Life Saving Club",
+      "description": "Committed to being a premier Surf Life Saving Club and providing excellence in Surf Life Saving services to Mermaid Beach.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "dining",
+        "food",
+        "specials"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

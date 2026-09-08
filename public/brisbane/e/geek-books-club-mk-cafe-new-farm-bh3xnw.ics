@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Geek Books Club @ MK Cafe\, New Farm
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-bh3xnw@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T110000
+DTEND;TZID=Australia/Brisbane:20260912T123000
+SUMMARY:Geek Books Club @ MK Cafe\, New Farm
+DESCRIPTION:***Rendezvous with Rama*** For geeks who enjoy reading science 
+ fiction\, fantasy\, and tech-focused fiction [Rendezvous with Rama ](https
+ ://www.amazon.com.au/Rendezvous-Ram
+LOCATION:MK Cafe Australia\, Brunswick St opposite new farm park\, Brisbane
+ \, Brisbane
+URL:https://www.meetup.com/brisbane-social-geeks/events/316053464/
+END:VEVENT
+END:VCALENDAR

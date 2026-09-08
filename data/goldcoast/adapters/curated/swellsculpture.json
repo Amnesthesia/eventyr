@@ -1,0 +1,148 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "swellsculpture",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Swimming Through a Universe of Sound – An immersive listening experience by Corrina Bonshek",
+      "datetime": "Sun 13 Sep, 4:30 PM",
+      "datetime_iso": "2026-09-13T16:30:00",
+      "datetime_end_iso": "",
+      "location": "Currumbin Beach",
+      "link": "https://www.swellsculpture.com.au/activity/swimming-through-a-universe-of-sound/",
+      "cost": "See link",
+      "source": "SWELL Sculpture Festival Currumbin",
+      "description": "As the sun sets over the ocean, lie beneath the evening sky and experience sound in a different way.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "soundscape",
+        "immersive",
+        "outdoor",
+        "music"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Your Light in Motion: Create A Moving Sculpture",
+      "datetime": "Sun 13 Sep, 1:00 PM",
+      "datetime_iso": "2026-09-13T13:00:00",
+      "datetime_end_iso": "",
+      "location": "Fringe Pavillion, Currumbin",
+      "link": "https://www.swellsculpture.com.au/activity/your-light-in-motion-create-a-moving-sculpture/",
+      "cost": "See link",
+      "source": "SWELL Sculpture Festival Currumbin",
+      "description": "Join us for a moment of creativity, calm, and connection. Light in Motion invites you to create your own suspended sculpture inspired by Lumie",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "sculpture",
+        "art",
+        "creative",
+        "kids"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "SWELL Masquerade Ball",
+      "datetime": "Fri 18 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-18T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Fringe Pavillion, Currumbin",
+      "link": "https://www.swellsculpture.com.au/activity/swell-masquerade-ball/",
+      "cost": "See link",
+      "source": "SWELL Sculpture Festival Currumbin",
+      "description": "Join us for an unforgettable evening of live jazz, vintage glamour and coastal charm at the SWELL Masquerade Ball.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "jazz",
+        "party",
+        "glamour",
+        "dance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Recycled Monsters: Hand Sewn Soft Sculpture Workshop",
+      "datetime": "Sat 12 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-12T10:00:00",
+      "datetime_end_iso": "",
+      "location": "SWELL Smalls Gallery, Currumbin",
+      "link": "https://www.swellsculpture.com.au/activity/recycled-monsters-hand-sewn-soft-sculpture-workshop/",
+      "cost": "See link",
+      "source": "SWELL Sculpture Festival Currumbin",
+      "description": "Join BySkye Sewing for a fun monster making workshop where kids turn recycled fabrics into quirky soft sculptures full of personality.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "sewing",
+        "kids",
+        "craft",
+        "recycled"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Rug Hooking Sketches with Fleur Brett",
+      "datetime": "Sat 12 Sep, 1:00 PM",
+      "datetime_iso": "2026-09-12T13:00:00",
+      "datetime_end_iso": "",
+      "location": "Fringe Pavillion, Currumbin",
+      "link": "https://www.swellsculpture.com.au/activity/rug-hooking-sketches-with-fleur-brett/",
+      "cost": "See link",
+      "source": "SWELL Sculpture Festival Currumbin",
+      "description": "Concentrating on the technique of punch rug hooking, you will draw up a local landscape image onto fabric to make a small rug hooked sketch.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "textiles",
+        "art",
+        "craft",
+        "design"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Painted Wall Hanging with Monte Lupo",
+      "datetime": "Sun 13 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-13T10:00:00",
+      "datetime_end_iso": "",
+      "location": "Len Wort Park, Currumbin",
+      "link": "https://www.swellsculpture.com.au/activity/painted-wall-hanging-with-monte-lupo/",
+      "cost": "See link",
+      "source": "SWELL Sculpture Festival Currumbin",
+      "description": "Kids will design and paint their own 15cm timber wall hanging using vibrant acrylics, with fun bird images available for inspiration",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "painting",
+        "kids",
+        "art",
+        "craft"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

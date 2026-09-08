@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Junk Bar
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1afp3ck@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:The Junk Bar
+DESCRIPTION:Set in the Saskwatchian inspired Basement of The Junk Bar in Ne
+ w Farm\, Brisbane. We are here on the Second Saturday of the month 2:00 - 
+ 4:00pm. Check the webpage for dates.
+LOCATION:The Junk Bar\, New Farm\, Brisbane
+URL:https://www.lifedrawingsessions.com.au/the-junk-bar
+END:VEVENT
+END:VCALENDAR

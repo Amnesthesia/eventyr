@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:NO CIGAR
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-6r190y@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:NO CIGAR
+DESCRIPTION:NO CIGAR are bringing their brand of ‘semi rock’ to Austral
+ ia this spring\, with thirteen lively shows on the cards for their biggest
+  run in Australia to date . NO CIGAR have carved out a unique niche blendi
+ ng indie\, surf\, and alternative rock into a sound that's as rhythm-drive
+ n as it is emotionally resonant\, earning a fiercely loyal following acros
+ s Australia\, the UK\, the US and Europe. They are no strangers to the Aus
+ tralian shores and audiences\, making this their fourth headline excursion
+  across the ditch. Spanning the breadth of their catalogue\, the show will
+  likely include a few unreleased numbers\, giving Australia the first snea
+ k peak of what’s next for NO CIGAR.
+LOCATION:Miami Marketta (18+)
+URL:https://www.miamimarketta.com/ticketed-events/no-cigar
+END:VEVENT
+END:VCALENDAR

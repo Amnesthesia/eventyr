@@ -94,3 +94,40 @@ test("a scraper source that returned nothing falls back to the AI search", () =>
 	const searched = llmSourceStrings(cfg, "institutions");
 	assert.deepEqual(searched, ["Searched Venue (c.com)"]);
 });
+
+test("a site already scraped is not also named in the search prompts", () => {
+	// The same source gets listed twice under domain variants —
+	// discover-sources adds `eventfinda.com.au` beside an existing
+	// `brisbane.eventfinda.com.au` — and promotion only touches the entry it
+	// verified, leaving the twin on `llm`. The twin then named an
+	// already-scraped site in the prompts: budget spent rediscovering events we
+	// hold exact data for, plus duplicates for dedupe to clean up.
+	const cfg = {
+		name: "Test",
+		sources: {
+			aggregators: [
+				{
+					name: "Eventfinda Test",
+					method: "scraper" as const,
+					domains: ["test.eventfinda.com.au"],
+					listingUrls: ["https://test.eventfinda.com.au/whatson"],
+				},
+				// Same site, different host, still on llm.
+				{
+					name: "Eventfinda Test",
+					method: "llm" as const,
+					domains: ["eventfinda.com.au"],
+				},
+				{
+					name: "Unrelated Blog",
+					method: "llm" as const,
+					domains: ["someblog.com.au"],
+				},
+			],
+			institutions: [],
+			independents: [],
+		},
+	};
+	const strings = llmSourceStrings(cfg, "aggregators");
+	assert.deepEqual(strings, ["Unrelated Blog (someblog.com.au)"]);
+});

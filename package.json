@@ -25,7 +25,8 @@
     "test:pipeline": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts'",
     "test:app": "tsx --tsconfig tsconfig.json --test 'app/**/*.test.ts' 'app/**/*.test.tsx'",
     "test": "pnpm test:pipeline && pnpm test:app",
-    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app && pnpm test"
+    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app && pnpm test",
+    "render-sources": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/render.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",
@@ -41,8 +42,7 @@
     "openai": "^6.38.0",
     "qrcode-generator": "^2.0.4",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "robots-parser": "^3.0.1"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.15",
@@ -51,6 +51,7 @@
     "@types/node": "^25.8.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "playwright": "^1.63.0",
     "sass": "^1.100.0",
     "tsx": "^4.22.0",
     "typescript": "^5.6.2"

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Alexander Ball
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-alp0mq@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T180000
+DTEND;TZID=Australia/Brisbane:20260912T200000
+SUMMARY:The Alexander Ball
+DESCRIPTION:The Alexander Ball | Saturday 12 Sept 2026\, 6:00 pm | The Prin
+ cess Theatre\, Brisbane
+LOCATION:The Princess Theatre\, 8 Annerley Rd\, Brisbane\, QLD\, 4102
+URL:https://www.ticketmaster.com.au/the-alexander-ball-brisbane-12-09-2026/
+ event/250064AF9BE03FAD
+END:VEVENT
+END:VCALENDAR

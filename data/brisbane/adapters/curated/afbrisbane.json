@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "afbrisbane",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Micro-Folie at the Cube (QUT Gardens Point)",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "the Cube (QUT Gardens Point)",
+      "link": "https://www.afbrisbane.com/whats-on/micro-folie/",
+      "cost": "See link",
+      "source": "Alliance Française de Brisbane",
+      "description": "Thanks to a unique partnership between Alliance Française de Brisbane and QUT, you can now embark on a cultural journey like no\nother and visit iconic venues such as the Louvre Museum, the Palace of Versailles, and the Picasso Museum, all right here in our vibrant\ncity.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "culture",
+        "museum",
+        "digital",
+        "art"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

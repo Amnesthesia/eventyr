@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Guided Kayak Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1j1m05w@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T093000
+DTEND;TZID=Australia/Brisbane:20260910T113000
+SUMMARY:Brisbane Guided Kayak Tour
+DESCRIPTION:Tickets 🎫 Ticket for 1 person for a guided kayak tour Ticket
+ s include: Kayak & paddle Local guide All necessary equipment Life jacket 
+ Sunscreen General Info 📅 Date: various dates (select when you purchase)
+  🕒 Time: 11am ⏳ Duration: 1 hour 30 minutes 📍 Location: Riverlife 
+ Adventure Centre 👤 Age requirement: 8+ ❓ For this event\, all sales a
+ re final and tickets can’t be refunded\, changed or modified. For more i
+ nformation\, please refer to our T&Cs Description Discover Brisbane on a g
+ uided kayak tour and see the city from a unique angle as you glide along t
+ he Brisbane River. Try paddling while standing (gondola style)\, rafting i
+ n a line\, and walking on the kayak backs. You’ll be the captain of your
+  own kayak as you paddle your way under the Story Bridge or past South Ban
+ k!
+LOCATION:Riverlife Adventure Centre
+URL:https://feverup.com/m/93839
+END:VEVENT
+END:VCALENDAR

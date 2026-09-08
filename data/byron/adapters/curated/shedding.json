@@ -1,0 +1,102 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "shedding",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "UPSKILL",
+      "datetime": "Sat 12 Sep, 8:30 AM",
+      "datetime_iso": "2026-09-12T08:30:00",
+      "datetime_end_iso": "2026-09-12T13:00:00",
+      "location": "Shedding, 18 Prince Street, Mullumbimby",
+      "link": "https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmentType=52989924",
+      "cost": "$50.00",
+      "source": "Shedding Community Workshop Inc",
+      "description": "Our UPSKILL Intro is the place to start your Shedding journey! This one off 4.5 hour workshop introduces you to our space and our tools at Shedding. UPSKILL is an induction and introduction to the fundamentals of carpentry and building, and an attitude towards learning that will put you on the path to self-empowerment and success. It is the doorway into our world of creativity and skill-sharing – once you have completed this workshop you’re ready to jump into our future workshops.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "carpentry",
+        "woodwork",
+        "skills",
+        "induction"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "SPACEMAKERS",
+      "datetime": "Wed 9 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-09T10:00:00",
+      "datetime_end_iso": "2026-09-09T15:00:00",
+      "location": "Shedding, 18 Prince Street, Mullumbimby",
+      "link": "https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmentType=52993822",
+      "cost": "$20.00 suggested donation",
+      "source": "Shedding Community Workshop Inc",
+      "description": "We welcome you to join our SPACEMAKERS Workshop, where we collaboratively design and build a range of projects for our workshop space. We will work together, learning about design, context, installation, renovation and retro-fitting space.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "design",
+        "building",
+        "renovation",
+        "collaboration"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "REPAIR CAFE",
+      "datetime": "Wed 9 Sep, 1:30 PM",
+      "datetime_iso": "2026-09-09T13:30:00",
+      "datetime_end_iso": "2026-09-09T16:30:00",
+      "location": "Shedding, 18 Prince Street, Mullumbimby",
+      "link": "https://shedding.com.au/",
+      "cost": "By Donation",
+      "source": "Shedding Community Workshop Inc",
+      "description": "Drop in to The Repair Cafe on a Saturday between 1.30-4.30pm with your items to repair, or to volunteer. Instead of throwing away a wobbly bike, wonky furniture or torn clothes, bring them to The Repair Cafe. Just drop in on a Saturday afternoon between 1.30-4.30pm and be prepared to learn how to help revive your bikes, furniture, clothes and household treasures.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "repair",
+        "sustainability",
+        "community",
+        "diy"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "EMPOWER",
+      "datetime": "Thu 10 Sep, 8:30 AM",
+      "datetime_iso": "2026-09-10T08:30:00",
+      "datetime_end_iso": "2026-09-10T17:30:00",
+      "location": "Shedding, 18 Prince Street, Mullumbimby",
+      "link": "https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmentType=52990335",
+      "cost": "$100",
+      "source": "Shedding Community Workshop Inc",
+      "description": "EMPOWER is a hands-on training program designed to inspire like-minded individuals and organisations to share Shedding’s practices, learnings, resources and networks to empower communities near and far with practical carpentry and building skills in safe and supportive environments.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "carpentry",
+        "training",
+        "community",
+        "skills"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "slq",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "A Night by the Fire with Jo-Anne Driessens",
+      "datetime": "Thu 17 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-17T17:30:00",
+      "datetime_end_iso": "",
+      "location": "State Library of Queensland, Stanley Place, South Bank",
+      "link": "https://www.slq.qld.gov.au/whats-on/night-fire-jo-anne-driessens",
+      "cost": "See link",
+      "source": "State Library of Queensland",
+      "description": "Presented by State Library to coincide with our Through Mununjali eyes exhibition currently on display, a powerful tribute to Mununjali photojournalist Wayne Coolwell and his legacy.Join us and enjoy the heat of the campfire, while listening to Wayne's friend and colleague, Jo-Anne Driessens, share memories of him, and what his work means for the future generations.Come along to listen, learn, and share.Light refreshments will be provided.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "indigenous",
+        "photography",
+        "history",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Photo Conservation Workshop",
+      "datetime": "Wed 16 Sep, 10:00 AM – Wed 14 Oct",
+      "datetime_iso": "2026-09-16T10:00:00",
+      "datetime_end_iso": "2026-10-14",
+      "location": "State Library of Queensland, Stanley Place, South Bank",
+      "link": "https://www.slq.qld.gov.au/whats-on/photo-conservation-workshop",
+      "cost": "See link",
+      "source": "State Library of Queensland",
+      "description": "Join us for a morning of learning and sharing stories from photographs. This is a free workshop for Aboriginal and/or Torres Strait Islander people.We invite you to join us for a free and informative morning focused on the care and preservation of photographs.This session will provide valuable insights into the best practices for their protection and longevity.This talk will be presented by State Library’s preservation team who will share expert tips on how to properly store and care for photographs, helping you appreciate them while ensuring they remain in good condition for years to come. This is an excellent opportunity to learn practical techniques for preserving your photos and to connect with others.Tea and coffee will be provided.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "photography",
+        "preservation",
+        "indigenous",
+        "free"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

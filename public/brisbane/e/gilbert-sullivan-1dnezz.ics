@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Gilbert & Sullivan
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dnezz@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T130000
+DTEND;TZID=Australia/Brisbane:20260909T150000
+SUMMARY:Gilbert & Sullivan
+DESCRIPTION:Gilbert & Sullivan\, It’s Sumptuous! It’s Silly! It’s ...
+ \, Concert Hall - QPAC\, Brisbane\, Queensland\, 6 September 2026 - 9 Sept
+ ember 2026\,
+LOCATION:Concert Hall - QPAC\, South Brisbane\, Queensland
+URL:https://brisbane.eventfinda.com.au/2026/gilbert-sullivan/brisbane
+END:VEVENT
+END:VCALENDAR

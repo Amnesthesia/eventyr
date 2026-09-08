@@ -1,0 +1,79 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "kingsbeachtavern",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Larrikin Puppet Show",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Kings Beach Tavern, Caloundra",
+      "link": "https://kingsbeachtavern.com.au/events/the-larrikin-puppet-show/",
+      "cost": "See link",
+      "source": "Kings Beach Tavern, Caloundra",
+      "description": "Kick off the school holidays with a morning of puppets, laughter and family entertainment at Kings Beach Tavern.&nbsp;The Larrikin Puppet Show is bringing a fun-filled performance for the kids on Saturday 19 September from 11.00am. Gather the family, enjoy a morning of entertainment and make a day of it at your local.&nbsp;Bookings are recommended.",
+      "image": "https://kingsbeachtavern.com.au/events/the-larrikin-puppet-show/",
+      "category": "Concert / Music",
+      "tags": [
+        "family",
+        "puppets",
+        "kids",
+        "entertainment"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Cirque Le Strange",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Kings Beach Tavern, Caloundra",
+      "link": "https://kingsbeachtavern.com.au/events/cirque-le-strange/",
+      "cost": "See link",
+      "source": "Kings Beach Tavern, Caloundra",
+      "description": "The punk circus of your craziest dreams is coming to Sunny Coast.&nbsp;Live and direct from the underground party scene comes Cirque Le Strange by Oozing Future. This unforgettable collection of carnies has to be seen to be believed. Featuring surreal and unusual acts that test the limits of the human body, this show has to be seen to be believed.Meet the world-famous body modification star The Lizardman, as seen on Ripley&#8217;s Believe It or Not! See the bendiest woman in the southern hemisphere, queen of contortion Soliana Ersie! Catch punk clown Captain Ruin creating mischief and mayhem, before hanging weights off his private parts! See gender-bending draglesque creature Winter Greene, winner of Mx Burlesque Victoria 2025! And watch in awe as pole dancing siren Thembot entrances you with erotic skill and strength.This is your chance to join the strangest show of the year for a truly surreal night out at the punk circus.Kings Beach Tavern, CaloundraSaturday 19 September, 7:30PMTICKETS JUST $29.60",
+      "image": "https://kingsbeachtavern.com.au/events/cirque-le-strange/",
+      "category": "Concert / Music",
+      "tags": [
+        "circus",
+        "punk",
+        "performance",
+        "variety"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Oktoberfest",
+      "datetime": "Sat 19 Sep – Sun 4 Oct",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-10-04",
+      "location": "Kings Beach Tavern, Caloundra",
+      "link": "https://kingsbeachtavern.com.au/events/oktoberfest/",
+      "cost": "See link",
+      "source": "Kings Beach Tavern, Caloundra",
+      "description": "Get ready for two weeks of Oktoberfest celebrations at Kings Beach Tavern from Saturday 19 September to Sunday 4 October.Settle into the Beer Garden and enjoy a selection of German-inspired food specials, including giant pretzels, bratwurst, schnitzels and more, alongside steins of beer available all day, every day throughout the celebration.Grand Finale | Sunday 4 OctoberWe&#8217;re finishing Oktoberfest with a family-friendly celebration in the Beer Garden.Kids Face Painting12.30pm-2.30pmStein Holding CompetitionPut your strength to the test for your chance to win a $100 PASS voucher.Whether you&#8217;re here for the German-inspired eats, cold steins or the ultimate stein-holding challenge, Oktoberfest is on at Kings Beach Tavern.",
+      "image": "https://kingsbeachtavern.com.au/events/oktoberfest/",
+      "category": "Social / Meetup",
+      "tags": [
+        "oktoberfest",
+        "beer",
+        "food",
+        "festival"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:KillPill\, HISS\, Eat City
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-tzm37e@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T200000
+DTEND;TZID=Australia/Brisbane:20260912T220000
+SUMMARY:KillPill\, HISS\, Eat City
+DESCRIPTION:Following the success of their SOLD-OUT show from earlier this 
+ year\, Brisbane's grungy\, garage metal punks HISS return to Banshees on S
+ eptember 12th\, with local heavyweights and headliners KillPill!
+LOCATION:Banshees Bar & Artspace
+URL:https://bansheesbar.com.au/event/killpill-hiss-eat-city
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Resin Art Class in Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1rjuzux@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270101
+SUMMARY:Resin Art Class in Brisbane
+DESCRIPTION:With expert guidance and all materials provided\, create your m
+ asterpiece in a friendly & inspiring environment. Get your tickets now!
+LOCATION:Shop 2B 826 Ann Street
+URL:https://feverup.com/m/185832
+END:VEVENT
+END:VCALENDAR

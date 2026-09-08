@@ -1,0 +1,76 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "landandseabrewery",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "TRIVIA HAPPENS",
+      "datetime": "Wed 9 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-09T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Land & Sea Brewery",
+      "link": "https://landandseabrewery.com/",
+      "cost": "See link",
+      "source": "Land & Sea Brewery",
+      "description": "Wednesday Night 6pm. Ryan asks the questions. A case for first, two four packs for second, a jug for third. Happy hour runs right up to kick off.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "pub",
+        "games"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Meat Raffle",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Land & Sea Brewery",
+      "link": "https://landandseabrewery.com/",
+      "cost": "See link",
+      "source": "Land & Sea Brewery",
+      "description": "Friday Night. Two big trays from Butchers of Noosa and two 4-packs of Noosa Beer. Happy hour runs right into the draw at six, and the proceeds go to Koala Crusaders.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "raffle",
+        "charity",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Parmi Night",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Land & Sea Brewery",
+      "link": "https://landandseabrewery.com/",
+      "cost": "See link",
+      "source": "Land & Sea Brewery",
+      "description": "Thursday Night. Chicken parmi, chips, salad and a schooner for $29. Classic, Hawaiian, Italian or Mexican. Thursday's easiest decision.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dinner",
+        "pub"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

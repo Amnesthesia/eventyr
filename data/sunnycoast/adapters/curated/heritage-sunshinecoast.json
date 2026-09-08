@@ -1,0 +1,33 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "heritage-sunshinecoast",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Spring school holidays",
+      "datetime": "Sat 19 Sep – Sat 3 Oct",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-10-03",
+      "location": "Sunshine Coast Heritage",
+      "link": "https://heritage.sunshinecoast.qld.gov.au/about/programs-and-events/spring-school-holidays",
+      "cost": "See link",
+      "source": "Sunshine Coast Heritage",
+      "description": "Join us for hands-on heritage and creative play | 19 September - 3 October",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "heritage",
+        "family",
+        "creative",
+        "kids"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

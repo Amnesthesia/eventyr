@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Thirst Trap
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mppg5k@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T200000
+DTEND;TZID=Australia/Brisbane:20260912T220000
+SUMMARY:Thirst Trap
+DESCRIPTION:Thirst Trap are an Australian indie alternative band with a rep
+ utation for ripping through stages with high-energy\, unforgettable perfor
+ m...
+LOCATION:Felons Brewing Co
+URL:https://felonsbrewingco.com.au/blogs/whats-on/thirst-trap
+END:VEVENT
+END:VCALENDAR

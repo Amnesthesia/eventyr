@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Blood on the Clocktower
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-vbokyk@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T193000
+DTEND;TZID=Australia/Brisbane:20260909T213000
+SUMMARY:Blood on the Clocktower
+DESCRIPTION:BLOOD ON THE CLOCKTOWER SESSION: Wednesday September 9th at 7.3
+ 0pm ****Tickets will go on sale from midday on Thursday the 6th of August 
+ via this page Join us for a new event in the Netherworld – Blood on the 
+ Clocktower! There’s been some busy traffic in this clocktower\, so we’
+ re now running this event fortnightly\, alternating between Tuesday and Su
+ nday evenings. Led by a grimoire wielding host\, each participant will be 
+ given a role to play in an interactive social deduction game where death i
+ s not the end. Be ready for a night of lies\, mystery and death for up to 
+ 16 players. Blood in the Clocktower is an Australian made game in the vein
+  of Werewolf and Mafia by The Pandemonium Institute. You can check them ou
+ t via http://bloodontheclocktower.com // @bloodontheclocktower The session
+  happens in the Lost Souls area of Netherworld. Each ticket comes with you
+ r first drink and can be grabbed via www.netherworldarcade.com .
+LOCATION:Netherworld\, 186 Brunswick Street
+URL:https://www.netherworldarcade.com/event/blood-on-the-clocktower-5/
+END:VEVENT
+END:VCALENDAR

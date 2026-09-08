@@ -1,0 +1,32 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "finnmccoolsgoldcoast",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Burgers",
+      "datetime": "Mon 14 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "",
+      "location": "Finn McCool's Gold Coast",
+      "link": "http://finnmccoolsgoldcoast.com.au/events/monday-burgers/",
+      "cost": "See link",
+      "source": "Finn McCool's Gold Coast",
+      "description": "Mondays can be a drag, but not when you can look forward to a delicious $18 burger at Finns!From 5pm every Monday, take your pick from The Finn’s Beef Burger, Fried Chicken Burger, Steak Sandwich and Finn&#8217;s Blt!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "deals"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Free Live Entertainment with Tommy Hynes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-w3lqbt@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T173000
+DTEND;TZID=Australia/Brisbane:20260913T203000
+SUMMARY:Free Live Entertainment with Tommy Hynes
+DESCRIPTION:Join Us for our Free Live Entertainment from 5.30pm to 8.30pm.
+LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
+ , 4575
+URL:https://clubkawana.com.au/event/free-live-entertainment-with-tommy-hyne
+ s/
+END:VEVENT
+END:VCALENDAR

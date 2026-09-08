@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wittonga Park Bushcare Group
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1cp8o07@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T080000
+DTEND;TZID=Australia/Brisbane:20260920T100000
+SUMMARY:Wittonga Park Bushcare Group
+DESCRIPTION:The Wittonga Park Bushcare Group is restoring the headwaters of
+  Fish Creek within Wittonga Park\, The Gap. After the big community planti
+ ng in 2019 to celebrate SOWN’s 25th anniversary\, new convenors Natalie 
+ and Diane have taken on the group. This is a Habitat Brisbane group and is
+  supported by Brisbane City Council and SOWN. The […]
+LOCATION:Wittonga Park\, Wittonga Park\, THE GAP\, QLD\, 4061
+URL:https://thegapsustainability.org/event/wittonga-park-bushcare-group-2/2
+ 026-09-20/
+END:VEVENT
+END:VCALENDAR

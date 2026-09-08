@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sirromet Winery Tour and Wine Tasting
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-10dopqu@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20270306
+SUMMARY:Sirromet Winery Tour and Wine Tasting
+DESCRIPTION:Sirromet Winery Tour and Wine Tasting in Gold Coast. Get your t
+ ickets on Fever now!
+LOCATION:Sirromet Winery
+URL:https://feverup.com/m/173501
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:MOTH | Monica Usher
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15epfcb@dothings
+DTSTART;TZID=Australia/Brisbane:20260904T100000
+DTEND;TZID=Australia/Brisbane:20260913T140000
+SUMMARY:MOTH | Monica Usher
+DESCRIPTION:In this exhibition\, Monica Usher returns to a favourite subjec
+ t\, the Moth. The moth lends a whimsical narrative through which she tries
+  to convey a sense of wonder about the world around her\, inviting the vie
+ wer into realms where every living thing is sacred and anything is possibl
+ e. 𝗢𝗣𝗘𝗡𝗜𝗡𝗚 𝗘𝗩𝗘𝗡𝗧: Friday September 4th
+ \, 6:00pm – 8:00pm 𝗪𝗵𝗲𝗿𝗲: Field Trip Gallery Gallery 1 1 
+ Latrobe Tce\, Paddington Brisbane\, Queensland 4064 𝗦𝗵𝗼𝘄 𝗿
+ 𝘂𝗻𝘀: September 4th – September 13th\, 2026 𝗩𝗶𝗲𝘄𝗶
+ 𝗻𝗴 𝗵𝗼𝘂𝗿𝘀: Friday: 10:00 AM – 4:00PM + Opening Event
+  Saturday: 10:00 AM – 4:00 PM Sunday: 10:00 AM – 2:00 PM Monday: CLOSE
+ D Tuesday: CLOSED Wednesday: 10:00AM – 2:00 PM Thursday: 10:00AM – 4:0
+ 0PM
+LOCATION:Field Trip\, 1 Latrobe Terrace\, Paddington
+URL:https://www.fieldtrip.gallery/exhibitions/moth
+END:VEVENT
+END:VCALENDAR

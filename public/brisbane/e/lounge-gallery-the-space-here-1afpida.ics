@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LOUNGE GALLERY | The Space Here
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1afpida@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20261018
+SUMMARY:LOUNGE GALLERY | The Space Here
+DESCRIPTION:Exhibition dates: 11 September – 17 October 2026 Gallery Walk
+ through/Opening Event: 12 September 2026\, 2 – 3pm | Refreshments: 3 –
+  4:30pm RSVP HERE
+LOCATION:Onespace Gallery
+URL:https://onespace.com.au/exhibition/lounge-gallery-the-space-here/
+END:VEVENT
+END:VCALENDAR

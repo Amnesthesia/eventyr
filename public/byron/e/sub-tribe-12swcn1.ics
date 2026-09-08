@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SUB-TRIBE
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-12swcn1@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T160000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:SUB-TRIBE
+DESCRIPTION:SUB-TRIBE LIVE AT HOTEL BRUNSWICK SUNDAY 13 SEPTEMBER | FROM 4P
+ M | FREE EVENT From the roots of Aotearoa (New Zealand) comes SUB-TRIBE 
+ — a 7-piece dub-fusion powerhouse delivering heavy bass\, glitchy beats 
+ and soaring harmonies. Blending blues-soaked dub\, chunky skank reggae\, j
+ azz-hop and ragga dancehall\, SUB-TRIBE take audiences on a genre-hopping 
+ journey that keeps dancefloors moving and heads nodding. Known for their h
+ igh-energy live shows and feel-good vibes\, SUB-TRIBE have carved out a so
+ und often described as “Unprecedented Dub-Fusion.” Since forming in 20
+ 17 and touring alongside Salmonella Dub\, the band has built a strong repu
+ tation across Australia and New Zealand\, appearing at major festivals inc
+ luding WOMADelaide\, Good Love Festival\, Kuranda Roots and Island Vibes. 
+ With releases spanning deep\, rolling dub\, soulful lovers rock and bass-d
+ riven dancefloor anthems\, SUB-TRIBE bring a live show that’s equal part
+ s groove\, grit and celebration. w/ support | Free Entry Come skank\, sway
+  and get deep in the low end.
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/sub-tribe-3/
+END:VEVENT
+END:VCALENDAR

@@ -13,7 +13,11 @@ import {
 } from "./common.ts";
 import { chunkArray, mapWithConcurrency } from "./providers/base.ts";
 import { geminiText, installUsageReporting } from "./providers/gemini.ts";
-import { RANK_DESCRIPTION_CHARS, rankReuseKey } from "./rankReuse.ts";
+import {
+	RANK_DESCRIPTION_CHARS,
+	RANK_PROMPT_VERSION,
+	rankReuseKey,
+} from "./rankReuse.ts";
 
 const RANK_MODEL = "gemini-3.5-flash";
 /**
@@ -37,10 +41,18 @@ ${INTERESTS}
 You will receive a numbered list of events. Score each one 1–10 for how well it matches the interests above.
 
 Calibration rules — follow these strictly:
-- Most events should score 4–6 (decent but not exciting)
-- Strong matches score 7–8 (clearly relevant, good fit)
-- Only exceptional fits score 9–10 (perfect match, rare)
-- Do NOT score more than 15% of events above 7
+- 7 is the bar for a top pick. Treat it as scarce: AT MOST 1 IN 10 events in
+  the list may score 7 or higher. This is a hard cap on 7+, not on 8+.
+- Most events score 4–6. A 6 is the right score for something genuinely
+  relevant that is nonetheless ordinary — a regular weekly meetup, a standing
+  club night, a workshop in a series that runs every month. Being on-topic is
+  not enough for a 7.
+- 7–8 is for a specific occasion worth rearranging an evening for: a named
+  speaker, a one-off, an opening, a festival programme item.
+- 9–10 is for a handful per city per week at most, and only when the match is
+  both on-topic AND unusual enough that missing it would be a shame.
+- Recurrence lowers the score. If the same thing happens every week, it is a 6
+  at best however well it matches — it will still be on next week.
 - Sports, MLM, sales events score 1–2
 - Venue promotions score 1: a happy hour, meal deal, drink special or raffle
   is the venue selling its usual menu, not something to go to. Score the
@@ -97,11 +109,21 @@ async function main(): Promise<void> {
 		unknown
 	>;
 
-	if (!FORCE && payload.ranked_at === toISODate(monday)) {
+	// The prompt version is part of "already ranked", not just the date. Stored
+	// scores were answers to whatever RANK_SYSTEM asked at the time, so a
+	// calibration change has to re-ask even within the same week.
+	const storedVersion = payload.rank_prompt_version;
+	const sameVersion = storedVersion === RANK_PROMPT_VERSION;
+	if (!FORCE && payload.ranked_at === toISODate(monday) && sameVersion) {
 		console.log(
 			"→ Already ranked for this week — skipping. Set FORCE=true to re-rank.",
 		);
 		return;
+	}
+	if (!sameVersion && storedVersion !== undefined) {
+		console.log(
+			`→ Scores were written under prompt ${String(storedVersion)}, now ${RANK_PROMPT_VERSION} — re-scoring every event.`,
+		);
 	}
 
 	const events = ((payload.events as Event[]) ?? []).map((e) => {
@@ -121,8 +143,13 @@ async function main(): Promise<void> {
 	// Reuse last week's score wherever the event and everything the prompt
 	// shows about it are unchanged. Skipped entirely on FORCE — a forced run
 	// is asking for a fresh answer, not a cached one.
+	// Reuse needs the stored scores to have come from the current prompt.
+	// RANK_PROMPT_VERSION is inside rankReuseKey, but that alone can never
+	// invalidate anything: the key is recomputed for both sides of the
+	// comparison, so both always carry the *current* version and always match.
+	// The version has to be read back from the file to mean anything.
 	const previousByKey = new Map<string, number>();
-	if (!FORCE && existsSync(jsonPath)) {
+	if (!FORCE && sameVersion && existsSync(jsonPath)) {
 		for (const e of (payload.events as Event[]) ?? []) {
 			if (typeof e.score === "number") {
 				previousByKey.set(rankReuseKey(CITY, e), e.score);
@@ -197,6 +224,7 @@ async function main(): Promise<void> {
 	const updated = {
 		...payload,
 		ranked_at: toISODate(monday),
+		rank_prompt_version: RANK_PROMPT_VERSION,
 		events,
 	};
 

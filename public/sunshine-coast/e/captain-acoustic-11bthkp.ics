@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Captain Acoustic
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-11bthkp@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T133000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:Captain Acoustic
+DESCRIPTION:Live Music 1.30pm to 4pm
+LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
+ D\, 4551
+URL:https://www.caloundrapowerboat.com.au/event/captain-acoustic-2/
+END:VEVENT
+END:VCALENDAR

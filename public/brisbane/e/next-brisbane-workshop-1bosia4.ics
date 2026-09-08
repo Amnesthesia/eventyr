@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Next Brisbane workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1bosia4@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260914
+SUMMARY:Next Brisbane workshop
+DESCRIPTION:Kintsugi class in Sydney\, Melbourne\, Brisbane\, Canberra and 
+ Perth. ☆ Beginner’s Kintsugi Workshop In this beginners class you will
+  learn some of the basic techniques of Kintsugi\, philosophy and history. 
+ In this class modern materials are used so it can be learnt by anyone with
+  ease. Once you’ve done this class\, you can repair your … Continue re
+ ading kintsugi Class
+LOCATION:Brisbane
+URL:https://kintsugi-australia.com.au/class/
+END:VEVENT
+END:VCALENDAR

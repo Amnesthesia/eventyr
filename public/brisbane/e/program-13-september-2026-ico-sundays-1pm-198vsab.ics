@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Program 13 September 2026 – ICO Sundays @ 1pm
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-198vsab@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Program 13 September 2026 – ICO Sundays @ 1pm
+DESCRIPTION:Welcome to our second ICO Sundays @ 1pm concert for 2026. We ho
+ pe you have enjoyed a symphony of memorable moments this year.
+LOCATION:Indooroopilly Chamber Orchestra
+URL:https://ico.org.au/program-13-september-2026-ico-sundays-1pm/
+END:VEVENT
+END:VCALENDAR

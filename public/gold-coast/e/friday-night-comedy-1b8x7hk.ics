@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Friday Night Comedy
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1b8x7hk@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:Friday Night Comedy
+DESCRIPTION:Every Friday night we are taking over upstairs at Madocke with 
+ a line up of the best comedians from around Australia and internationally 
+ at one of the Gold Coast's newest and coolest little breweries. Belgian be
+ ers\, big laughs and the perfect way to knock off for the week with a laug
+ h. Every week from 7pm at Madocke Beer Brewing Company.
+LOCATION:Madocke Beer Brewing Company
+URL:https://basedcomedy.com.au/the-shows/madocke-beer-brewing-company.html
+END:VEVENT
+END:VCALENDAR

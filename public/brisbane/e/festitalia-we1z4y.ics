@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Festitalia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-we1z4y@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Festitalia
+DESCRIPTION:Festitalia returns with a celebration of Italian culture\, food
+ \, family\, and 10\,000 Cannoli!
+LOCATION:Brisbane Showgrounds
+URL:http://www.brisbaneshowgrounds.com.au/whats-on/festitalia-2026/
+END:VEVENT
+END:VCALENDAR

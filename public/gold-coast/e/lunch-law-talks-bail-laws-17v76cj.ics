@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lunch Law Talks: Bail Laws
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-17v76cj@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T130000
+DTEND;TZID=Australia/Brisbane:20260908T150000
+SUMMARY:Lunch Law Talks: Bail Laws
+DESCRIPTION:Bail is a fundamental part of Australia's criminal justice syst
+ em\, based on the principle that a person is presumed innocent until prove
+ n guilty. Under the Bail Act 2013 (NSW) \, courts must determine whether a
+ n accused person poses an unacceptable risk of failing to appear in court\
+ , committing further offences\, endangering others\, or interfering with t
+ he administration of justice. Bail decisions therefore require a careful b
+ alance between protecting the rights of the accused and ensuring community
+  safety. Recent high-profile domestic violence and youth crime cases have 
+ intensified public debate about whether that balance is being achieved.
+LOCATION:Southern Cross University Gold Coast
+URL:https://www.scu.edu.au/business-law-and-arts/events/lunch-law-talks-sep
+ tember/
+END:VEVENT
+END:VCALENDAR

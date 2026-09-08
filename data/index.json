@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-09-07",
+  "generated_at": "2026-09-08",
   "cities": [
     {
       "key": "brisbane",
       "name": "Brisbane",
       "week_start": "2026-09-07",
       "week_end": "2026-09-13",
-      "event_count": 462,
-      "top_pick_count": 114
+      "event_count": 767,
+      "top_pick_count": 38
     },
     {
       "key": "byron",
       "name": "Byron Bay",
       "week_start": "2026-09-07",
       "week_end": "2026-09-13",
-      "event_count": 178,
-      "top_pick_count": 32
+      "event_count": 229,
+      "top_pick_count": 6
     },
     {
       "key": "goldcoast",
       "name": "Gold Coast",
       "week_start": "2026-09-07",
       "week_end": "2026-09-13",
-      "event_count": 57,
-      "top_pick_count": 17
+      "event_count": 332,
+      "top_pick_count": 19
     },
     {
       "key": "sunnycoast",
       "name": "Sunshine Coast",
       "week_start": "2026-09-07",
       "week_end": "2026-09-13",
-      "event_count": 25,
-      "top_pick_count": 11
+      "event_count": 276,
+      "top_pick_count": 5
     }
   ]
 }

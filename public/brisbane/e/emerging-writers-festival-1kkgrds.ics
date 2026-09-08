@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Emerging Writers Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1kkgrds@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Emerging Writers Festival
+DESCRIPTION:Join authors including Evelyn Araluen\, Penny Tangey\, and Mari
+ a Takolander at the Emerging Writers Festival.
+LOCATION:The Wheeler Centre\, 176 Little Lonsdale Street\, Melbourne\, Vict
+ oria\, 3000
+URL:https://www.uqp.com.au/events/emerging-writers-festival-2
+END:VEVENT
+END:VCALENDAR

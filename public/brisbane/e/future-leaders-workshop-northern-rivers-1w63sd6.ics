@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Future Leaders Workshop\, Northern Rivers
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1w63sd6@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T090000
+DTEND;TZID=Australia/Brisbane:20260917T110000
+SUMMARY:Future Leaders Workshop\, Northern Rivers
+DESCRIPTION:Join us for Future Leaders\, a free full-day workshop facilitat
+ ed by world record-breaking pilot and leadership development speaker\, Lac
+ hie Smart. With engaging content\, practical activities\, and a supportive
+  environment\, the event aims to inspire students to unlock their potentia
+ l\, lead with confidence\, and make a positive impact in their schools and
+  communities.
+LOCATION:Northern Rivers
+URL:https://www.scu.edu.au/engage/schools-engagement-program/future-leaders
+ /northern-rivers-future-leaders/
+END:VEVENT
+END:VCALENDAR

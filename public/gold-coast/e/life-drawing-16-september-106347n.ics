@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Life Drawing - 16 September
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-106347n@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T180000
+DTEND;TZID=Australia/Brisbane:20260916T200000
+SUMMARY:Life Drawing - 16 September
+DESCRIPTION:This unguided two hour life drawing session offers a great oppo
+ rtunity to practice drawing from a live model\, ideal for all skill levels
+ . Join us and refine your creative skills in a relaxed\, welcoming environ
+ ment. The session includes shorter poses ranging from 1 - 5mins\, followed
+  by longer poses of 10 and 20mins. #block-3da2fbdec87b9ed34cb2 { } #block-
+ 3da2fbdec87b9ed34cb2 .sqs-html-content { } #block-3da2fbdec87b9ed34cb2 { m
+ ix-blend-mode: var(--tweak-text-block-blend )\; border-radius: var(--tweak
+ -text-block-radius)\; } @media screen and (max-width: 767px) { #block-3da2
+ fbdec87b9ed34cb2 { } } @media screen and (max-width: 767px) { #block-3da2f
+ bdec87b9ed34cb2 .sqs-html-content { } } @media screen and (max-width: 767p
+ x) { } Book Tickets #block-yui_3_17_2_1_1784011846361_2089 { --sqs-block-c
+ ontent-flex: 0\; } #block-yui_3_17_2_1_1784011846361_2089 { --opacity: 100
+ %\; --translate-x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --scale-x
+ : 100%\; --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-x: 5
+ 0%\; --origin-y: 50%\; --block-transform: none\; opacity: var(--opacity\, 
+ 1)\; transform: var(--block-transform)\; transform-origin: var(--origin-x)
+  var(--origin-y)\; }
+LOCATION:Mint Art House\, 87 West Burleigh Road
+URL:https://www.mintarthouse.com/events/life-drawing-16-september
+END:VEVENT
+END:VCALENDAR

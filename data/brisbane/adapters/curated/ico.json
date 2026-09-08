@@ -1,0 +1,32 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "ico",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Program 13 September 2026 – ICO Sundays @ 1pm",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Indooroopilly Chamber Orchestra",
+      "link": "https://ico.org.au/program-13-september-2026-ico-sundays-1pm/",
+      "cost": "See link",
+      "source": "Indooroopilly Chamber Orchestra",
+      "description": "Welcome to our second ICO Sundays @ 1pm concert for 2026. We hope you have enjoyed a symphony of memorable moments this year.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "orchestra",
+        "classical",
+        "music"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

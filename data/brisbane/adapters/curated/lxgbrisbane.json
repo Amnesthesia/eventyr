@@ -1,0 +1,54 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "lxgbrisbane",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "LXG GAMING MEETUP (incl LXG RPG)",
+      "datetime": "Sun 13 Sep, 9:00 AM",
+      "datetime_iso": "2026-09-13T09:00:00",
+      "datetime_end_iso": "2026-09-13T17:00:00",
+      "location": "QLD Contract Bridge Club, 67 Ipswich Road",
+      "link": "https://lxgbrisbane.com/event/lxg-meetup-incl-lxg-rpg-sept-2026/",
+      "cost": "See link",
+      "source": "League of Extraordinary Gamers",
+      "description": "",
+      "image": "https://lxgbrisbane.com/wp-content/uploads/2017/02/Grilling-Games-Icon-e1620181985109.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "gaming",
+        "rpg",
+        "tabletop"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "LXG GAMING MEETUP (incl LXG RPG)",
+      "datetime": "Sun 13 Sep, 9:00 AM",
+      "datetime_iso": "2026-09-13T09:00:00",
+      "datetime_end_iso": "2026-09-13T17:00:00",
+      "location": "QLD Contract Bridge Club, 67 Ipswich Road, Woolloongabba, QLD, 4102",
+      "link": "https://lxgbrisbane.com/event/lxg-meetup-incl-lxg-rpg-sept-2026/",
+      "cost": "See link",
+      "source": "League of Extraordinary Gamers",
+      "description": "",
+      "image": "https://lxgbrisbane.com/wp-content/uploads/2017/02/Grilling-Games-Icon-e1620181985109.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "gaming",
+        "rpg",
+        "tabletop"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Next event September 19th
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-zt0edu@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Next event September 19th
+DESCRIPTION:This month we have our working group meeting at Payne Road stat
+ e School library. See the below map for the directions. We will discuss ea
+ ch of our three main projects: The Platypus\, Energy Independence\, and En
+ hancing Existing Capabilities\, and will give an update on...
+LOCATION:Payne Road state School library\, 57 Paten Road
+URL:https://thegapsustainability.org/next-event-september-19th/
+END:VEVENT
+END:VCALENDAR

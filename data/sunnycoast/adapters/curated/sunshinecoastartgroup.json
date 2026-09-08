@@ -1,0 +1,32 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "sunshinecoastartgroup",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Sewing Group",
+      "datetime": "Sat 19 Sep, 9:30 AM",
+      "datetime_iso": "2026-09-19T09:30:00",
+      "datetime_end_iso": "",
+      "location": "SCArt Art Studio",
+      "link": "https://sunshinecoastartgroup.com.au/event-6429439",
+      "cost": "See link",
+      "source": "Sunshine Coast Art Group",
+      "description": "",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "sewing",
+        "crafts",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

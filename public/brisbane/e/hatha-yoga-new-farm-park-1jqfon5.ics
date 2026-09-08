@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hatha Yoga @ New farm park
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jqfon5@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T100000
+DTEND;TZID=Australia/Brisbane:20260909T110000
+SUMMARY:Hatha Yoga @ New farm park
+DESCRIPTION:Newly certified yoga teacher (200 hours of training) from Thail
+ and\, I teach a Hatha Yoga at New Farm Park. Join us to disconnect\, stret
+ ch\, and meet new people. I’m French
+LOCATION:New Farm Park\, 1042 Brunswick St\, New Farm QLD 4005\, 1042 Bruns
+ wick St\, New Farm QLD 4005\, New Farm\, New Farm
+URL:https://www.meetup.com/meetup-group-vqywwnyc/events/316395284/
+END:VEVENT
+END:VCALENDAR

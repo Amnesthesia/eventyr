@@ -1,0 +1,230 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "scu",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "R U OK? Day",
+      "datetime": "Thu 10 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-10T11:00:00",
+      "datetime_end_iso": "",
+      "location": "Southern Cross University Gold Coast",
+      "link": "https://www.scu.edu.au/current-students/services-and-support/counselling/workshops-and-events/ruok-event/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Ask R U OK? Any Day because life happens every day.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "wellbeing",
+        "mentalhealth",
+        "support"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "CHSA Warmer Wednesdays",
+      "datetime": "Wed 9 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-09T12:00:00",
+      "datetime_end_iso": "",
+      "location": "Coffs Harbour",
+      "link": "https://www.scu.edu.au/engage/events/chsa-wednesday-lunch/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Warmer Wednesdays, held every Wednesday during term 4, with different soups every week.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "food",
+        "community",
+        "student"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "CHSA Frozen Thursdays",
+      "datetime": "Thu 10 Sep, 9:30 AM",
+      "datetime_iso": "2026-09-10T09:30:00",
+      "datetime_end_iso": "",
+      "location": "Coffs Harbour",
+      "link": "https://www.scu.edu.au/engage/events/chsa-thursday-lunch/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Swing by the Uni Lounge and grab 1 FREE frozen meal from the freezer — perfect to heat up whenever suits you. Available from 9:30am until all gone!",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "food",
+        "free",
+        "student"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "CoastRs Pilates Class",
+      "datetime": "Wed 9 Sep, 8:30 AM",
+      "datetime_iso": "2026-09-09T08:30:00",
+      "datetime_end_iso": "",
+      "location": "Gold Coast",
+      "link": "https://www.scu.edu.au/engage/events/coastrs-pilates-class/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Join us for a free Move Well Pilates Class every Wednesday during term 4",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "pilates",
+        "fitness",
+        "wellness"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Gold Coast Volunteering Community Barbeque",
+      "datetime": "Wed 9 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-09T11:00:00",
+      "datetime_end_iso": "",
+      "location": "Gold Coast",
+      "link": "https://www.scu.edu.au/engage/events/coastrs-stress-less-day/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Take a break and de-stress with us at our volunteering community barbeque",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "volunteering",
+        "bbq",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "CoastRs Student Club Event - Affirmation Card Workshop",
+      "datetime": "Wed 9 Sep, 11:30 AM",
+      "datetime_iso": "2026-09-09T11:30:00",
+      "datetime_end_iso": "",
+      "location": "Gold Coast",
+      "link": "https://www.scu.edu.au/engage/events/coastrs-workshop/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Check out the range of activities on offer!",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "craft",
+        "wellbeing",
+        "student"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Gold Coast Innovation Hub Brunch Like a Boss",
+      "datetime": "Tue 15 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-15T10:00:00",
+      "datetime_end_iso": "",
+      "location": "Gold Coast",
+      "link": "https://www.scu.edu.au/engage/events/gold-coast-innovation-hub---brunch-like-a-boss/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Following a spectacular Brunch event in July, we’re heading back to the same plush Level 4 Event Space for an equally engaging and encouraging session this September.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "business",
+        "brunch"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Learning Adviser Gold Coast Library Drop-in",
+      "datetime": "Mon 7 Sep, 12:00 PM – Wed 7 Oct",
+      "datetime_iso": "2026-09-07T12:00:00",
+      "datetime_end_iso": "2026-10-07",
+      "location": "Gold Coast",
+      "link": "https://www.scu.edu.au/current-students/learning-zone/gc-learning-adviser-drop-in-t4-gc/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Need quick advice on an assessment, referencing, study skills, or understanding feedback? Drop in and chat with a Learning Adviser",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "study",
+        "academic",
+        "support"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Future Leaders Workshop, Northern Rivers",
+      "datetime": "Thu 17 Sep, 9:00 AM",
+      "datetime_iso": "2026-09-17T09:00:00",
+      "datetime_end_iso": "",
+      "location": "Northern Rivers",
+      "link": "https://www.scu.edu.au/engage/schools-engagement-program/future-leaders/northern-rivers-future-leaders/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Join us for Future Leaders, a free full-day workshop facilitated by world record-breaking pilot and leadership development speaker, Lachie Smart. With engaging content, practical activities, and a supportive environment, the event aims to inspire students to unlock their potential, lead with confidence, and make a positive impact in their schools and communities.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "leadership",
+        "students",
+        "training"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Lunch Law Talks: Bail Laws",
+      "datetime": "Tue 8 Sep, 1:00 PM",
+      "datetime_iso": "2026-09-08T13:00:00",
+      "datetime_end_iso": "",
+      "location": "Southern Cross University Gold Coast",
+      "link": "https://www.scu.edu.au/business-law-and-arts/events/lunch-law-talks-september/",
+      "cost": "See link",
+      "source": "Southern Cross University Gold Coast",
+      "description": "Bail is a fundamental part of Australia's criminal justice system, based on the principle that a person is presumed innocent until proven guilty. Under the Bail Act 2013 (NSW) , courts must determine whether an accused person poses an unacceptable risk of failing to appear in court, committing further offences, endangering others, or interfering with the administration of justice. Bail decisions therefore require a careful balance between protecting the rights of the accused and ensuring community safety. Recent high-profile domestic violence and youth crime cases have intensified public debate about whether that balance is being achieved.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "law",
+        "justice",
+        "politics"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

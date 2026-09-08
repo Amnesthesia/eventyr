@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Stoics Philosophers @ September Meetup
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1l8ehyh@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T090000
+DTEND;TZID=Australia/Brisbane:20260913T110000
+SUMMARY:Brisbane Stoics Philosophers @ September Meetup
+DESCRIPTION:This is a meetup for people who are interested in applying stoi
+ c principles to their lives or would like to find out more about [Stoicism
+ ](https://en.wikipedia.org/wiki/Sto
+LOCATION:New Farm Library\, 135 Sydney St\, New Farm\, QL\, New Farm\, QL
+URL:https://www.meetup.com/brisbane-social-geeks/events/316068087/
+END:VEVENT
+END:VCALENDAR

@@ -11,19 +11,21 @@
 
 name: Sunshine Coast
 timezone: Australia/Brisbane
-# See sources/brisbane.yml for what this is. 40 km from Maroochydore reaches
-# Noosa (28 km), Caloundra (17 km) and Maleny (27 km) while excluding Gympie
-# (65 km) and Brisbane (91 km).
 centre:
   lat: -26.6528
-  lng: 153.0920
+  lng: 153.092
   radiusKm: 40
 sources:
   aggregators:
     - name: Visit Sunshine Coast
-      method: llm
+      method: scraper
       domains:
         - visitsunshinecoast.com
+      homepage: https://visitsunshinecoast.com/
+      listingUrls:
+        - https://www.visitsunshinecoast.com/whats-on
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 5 dated event(s) via html.'
     - name: Events.Sunshine Coast
       method: llm
       domains:
@@ -41,45 +43,88 @@ sources:
       domains:
         - eventbrite.com.au
     - name: Meetup
-      method: llm
+      method: scraper
       domains:
         - meetup.com
+      homepage: https://meetup.com/
+      listingUrls:
+        - https://www.meetup.com/find/au--sunshine-coast/
+      strategy: jsonld
+      venue:
+        name: Peregian Digital Hub
+        address: 253-255 David Low Way, Peregian Beach, al
+        suburb: Peregian Beach
+      note: >-
+        Verified by probe-sources 2026-09-08: 25 dated event(s) via jsonld (listing URL found by web
+        search, then verified).
     - name: Humanitix
-      method: llm
+      method: scraper
       domains:
         - humanitix.com
+      homepage: https://humanitix.com/
+      listingUrls:
+        - https://humanitix.com/au/events/online
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: The Urban List Sunshine Coast
       method: llm
       domains:
         - theurbanlist.com
     - name: Weekend Notes Sunshine Coast
-      method: llm
+      method: scraper
       domains:
         - weekendnotes.com
+      listingUrls:
+        - https://www.weekendnotes.com/sunshine-coast/whats-on/
+      strategy: html
+      note: >-
+        Verified by probe-sources 2026-09-08: 18 dated event(s) via html (listing URL found by web
+        search, then verified).
     - name: Sunshine Coast Point
       method: llm
       domains:
         - sunshinecoastpoint.com.au
     - name: Locals in the Loop
-      method: llm
+      method: scraper
       domains:
         - localsintheloop.com.au
+      homepage: https://localsintheloop.com.au/
+      listingUrls:
+        - https://localsintheloop.com.au/whats-on/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
     - name: My Guide Sunshine Coast
-      method: llm
+      method: scraper
       domains:
         - myguidesunshinecoast.com
+      homepage: https://myguidesunshinecoast.com/
+      listingUrls:
+        - https://www.myguidesunshinecoast.com/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: Tourism Sunshine Coast
-      method: llm
+      method: scraper
       domains:
         - tourismsunshinecoast.com.au
+      homepage: https://tourismsunshinecoast.com.au/
+      listingUrls:
+        - https://tourismsunshinecoast.com.au/coolum/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: Visit Noosa
       method: llm
       domains:
         - visitnoosa.com.au
     - name: Whatslively Sunshine Coast gig guide
-      method: llm
+      method: scraper
       domains:
         - whatslively.com
+      homepage: https://whatslively.com/
+      listingUrls:
+        - https://whatslively.com/gig-guide
+        - https://whatslively.com/music-festivals/QLD
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 21 dated event(s) via html.'
     - name: Lively 50+ Sunshine Coast events
       method: llm
       domains:
@@ -93,13 +138,23 @@ sources:
       domains:
         - thingstodosunshinecoast.com.au
     - name: YELO Sunshine Coast Gig Guide
-      method: llm
+      method: scraper
       domains:
         - yelo.live
+      homepage: https://yelo.live/
+      listingUrls:
+        - https://yelo.live/gigs/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: Bandsintown Sunshine Coast
-      method: llm
+      method: scraper
       domains:
         - bandsintown.com
+      homepage: https://bandsintown.com/
+      listingUrls:
+        - https://bandsintown.com/whats-on
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 35 dated event(s) via html.'
     - name: Hello Sunshine Magazine
       method: llm
       domains:
@@ -129,9 +184,14 @@ sources:
       domains:
         - theweekendedition.com.au
     - name: AllEvents.in
-      method: llm
+      method: scraper
       domains:
         - allevents.in
+      homepage: https://allevents.in/
+      listingUrls:
+        - https://allevents.in/whats-on
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 12 dated event(s) via html.'
   institutions:
     - name: Sunshine Coast Council Events
       method: llm
@@ -146,33 +206,75 @@ sources:
       domains:
         - gallery.sunshinecoast.qld.gov.au
     - name: Noosa Regional Gallery
-      method: llm
+      method: scraper
       domains:
         - noosaregionalgallery.com.au
+        - galleries.noosa.qld.gov.au
+      homepage: https://noosaregionalgallery.com.au/
+      listingUrls:
+        - https://www.noosaregionalgallery.com.au/exhibitions/
+        - https://www.noosaregionalgallery.com.au/whats-on/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: The Events Centre, Caloundra
-      method: llm
+      method: scraper
       domains:
         - theeventscentre.com.au
+      homepage: https://theeventscentre.com.au/
+      listingUrls:
+        - https://theeventscentre.com.au/whats-on/
+        - https://theeventscentre.com.au/event/hscc/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
     - name: The J Noosa
-      method: llm
+      method: scraper
       domains:
         - thej.com.au
+      homepage: https://thej.com.au/
+      listingUrls:
+        - https://www.thej.com.au/category/whats-on/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: Majestic Theatre Pomona
-      method: llm
+      method: scraper
       domains:
+        - majestictheatre.com.au
         - majestictheatrepomona.com.au
+      homepage: https://majestictheatre.com.au/
+      listingUrls:
+        - https://majestictheatre.com.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 18 dated event(s) via html.'
     - name: Venue 114, Bokarina
-      method: llm
+      method: scraper
       domains:
         - venue114.com.au
+      homepage: https://venue114.com.au/
+      listingUrls:
+        - https://venue114.com.au/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: University of the Sunshine Coast
-      method: llm
+      method: scraper
       domains:
+        - usc.edu.au
         - unisc.edu.au
+      homepage: https://usc.edu.au/
+      listingUrls:
+        - https://usc.edu.au/events
+        - https://usc.edu.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 8 dated event(s) via html.'
     - name: UniSC Arena
-      method: llm
+      method: scraper
       domains:
         - austadiums.com
+      homepage: https://austadiums.com/
+      listingUrls:
+        - https://www.austadiums.com/sport/events
+        - https://www.austadiums.com/sport/tickets
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 79 dated event(s) via html.'
     - name: Sunshine Coast Stadium
       method: llm
       domains:
@@ -188,43 +290,42 @@ sources:
     - name: Maroochy Regional Bushland Botanic Garden
       method: llm
       domains:
+        - friendsbbgmaroochy.org.au
         - friendsofmaroochybotanicgardens.org.au
     - name: Noosa Arts Theatre
       method: llm
       domains:
         - noosaartstheatre.org.au
     - name: Lind Lane Theatre, Nambour
-      method: llm
+      method: scraper
       domains:
         - lindlane.com.au
+      homepage: https://lindlane.com.au/
+      listingUrls:
+        - https://www.lindlane.com.au/whats-on
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: Black Box Theatre, Nambour
       method: llm
       domains:
         - blackboxtheatre.com.au
     - name: Study Sunshine Coast events
-      method: llm
+      method: scraper
       domains:
         - studysunshinecoast.com.au
-    - name: Noosa Regional Gallery
-      method: llm
-      domains:
-        - galleries.noosa.qld.gov.au
+      homepage: https://studysunshinecoast.com.au/
+      listingUrls:
+        - https://www.studysunshinecoast.com.au/events/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
     - name: Noosa Council Libraries
       method: llm
       domains:
         - libraries.noosa.qld.gov.au
-    - name: Maroochy Regional Bushland Botanic Garden
-      method: llm
-      domains:
-        - friendsbbgmaroochy.org.au
     - name: Mary Cairncross Scenic Reserve
       method: llm
       domains:
         - marycairncrossreserve.sunshinecoast.qld.gov.au
-    - name: Majestic Theatre Pomona
-      method: llm
-      domains:
-        - majestictheatre.com.au
     - name: Tourism and Events Queensland - Sunshine Coast
       method: llm
       domains:
@@ -233,14 +334,15 @@ sources:
       method: llm
       domains:
         - sceia.com.au
-    - name: University of the Sunshine Coast
-      method: llm
-      domains:
-        - usc.edu.au
     - name: TAFE Queensland
-      method: llm
+      method: scraper
       domains:
         - tafeqld.edu.au
+      homepage: https://tafeqld.edu.au/
+      listingUrls:
+        - https://tafeqld.edu.au/news-and-events/news
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: Noosa Shire Museum
       method: llm
       domains:
@@ -272,10 +374,14 @@ sources:
         - eumundimuseum.org
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Sunshine Coast Heritage
-      method: llm
+      method: scraper
       domains:
         - heritage.sunshinecoast.qld.gov.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://heritage.sunshinecoast.qld.gov.au/
+      listingUrls:
+        - https://heritage.sunshinecoast.qld.gov.au/
+      strategy: html
     - name: Landsborough Shire Historical Museum
       method: llm
       domains:
@@ -291,31 +397,51 @@ sources:
       domains:
         - thestationsc.com.au
     - name: Banana Bender Pub, Palmview
-      method: llm
+      method: scraper
       domains:
         - thebananabenderpub.com
+      homepage: https://thebananabenderpub.com/
+      listingUrls:
+        - https://thebananabenderpub.com/events/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: Norton Music Factory, Caloundra
       method: llm
       domains:
         - nortonmusic.com.au
     - name: Kings Beach Tavern, Caloundra
-      method: llm
+      method: scraper
       domains:
         - kingsbeachtavern.com.au
+      homepage: https://kingsbeachtavern.com.au/
+      listingUrls:
+        - https://kingsbeachtavern.com.au/whats-on/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
     - name: Duporth Tavern, Maroochydore
       method: llm
       domains:
         - duporthtavern.com.au
     - name: Pulse Bar & Live Music, Maroochydore
-      method: llm
+      method: scraper
       domains:
         - pulsebar.com.au
+      homepage: https://pulsebar.com.au/
+      listingUrls:
+        - https://pulsebar.com.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: Parental Guidance, Maroochydore
       method: llm
     - name: The Presynct Venue & Bar, Nambour
-      method: llm
+      method: scraper
       domains:
         - thepresynct.com.au
+      homepage: https://thepresynct.com.au/
+      listingUrls:
+        - https://thepresynct.com.au/whats-on/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 5 dated event(s) via html.'
     - name: Boston Shaker Bar, Mooloolaba
       method: llm
     - name: The Dock @ The Wharf, Mooloolaba
@@ -349,19 +475,30 @@ sources:
     - name: Annie's Books on Peregian
       method: llm
       domains:
+        - anniesbooksonperegian.com.au
         - anniesbooks.com.au
     - name: Rosetta Books, Maleny
-      method: llm
+      method: scraper
       domains:
         - rosettabooks.com.au
+      homepage: https://rosettabooks.com.au/
+      listingUrls:
+        - https://rosettabooks.com.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: The Bookshop at Caloundra
       method: llm
       domains:
         - thebookshopcaloundra.com.au
     - name: Harry Hartog, Maroochydore
-      method: llm
+      method: scraper
       domains:
         - harryhartog.com.au
+      homepage: https://harryhartog.com.au/
+      listingUrls:
+        - https://harryhartog.com.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: Kickback Books
       method: llm
     - name: The River Read, Noosaville
@@ -369,9 +506,14 @@ sources:
       domains:
         - theriverread.com.au
     - name: Noosa Jazz Club
-      method: llm
+      method: scraper
       domains:
         - noosajazzclub.com
+      homepage: https://noosajazzclub.com/
+      listingUrls:
+        - https://www.noosajazzclub.com/category/whats-on/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: Sunshine Coast Music and Events / Mudjimba Night Markets
       method: llm
       domains:
@@ -383,9 +525,19 @@ sources:
     - name: Coolum Civic Centre
       method: llm
     - name: Caloundra RSL
-      method: llm
+      method: scraper
       domains:
         - caloundrarsl.com.au
+      homepage: https://caloundrarsl.com.au/
+      listingUrls:
+        - https://caloundrarsl.com.au/events/
+        - https://caloundrarsl.com.au/wp-json/tribe/events/v1/events
+      strategy: jsonld
+      venue:
+        name: Caloundra RSL Services Club
+        address: Caloundra RSL
+        suburb: Caloundra
+      note: 'Verified by probe-sources 2026-09-08: 66 dated event(s) via jsonld.'
     - name: Dicky Beach Surf Club
       method: llm
     - name: Sunshine Coast Multicultural Network
@@ -405,21 +557,37 @@ sources:
       domains:
         - nightquarter.com.au
     - name: Imperial Hotel Eumundi
-      method: llm
+      method: scraper
       domains:
         - imperialhoteleumundi.com.au
+      homepage: https://imperialhoteleumundi.com.au/
+      listingUrls:
+        - https://www.imperialhoteleumundi.com.au/whats-on?format=json
+        - https://www.imperialhoteleumundi.com.au/whats-on
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
     - name: Norton Music Factory
-      method: llm
+      method: scraper
       domains:
         - nortonmusicfactory.com.au
+      homepage: https://nortonmusicfactory.com.au/
+      listingUrls:
+        - https://nortonmusicfactory.com.au/events/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: The Shed Palmview
       method: llm
       domains:
         - theshedpalmview.com.au
     - name: Blackflag Brewing
-      method: llm
+      method: scraper
       domains:
         - blackflagbrewing.com.au
+      homepage: https://blackflagbrewing.com.au/
+      listingUrls:
+        - https://www.blackflagbrewing.com.au/pages/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 5 dated event(s) via html.'
     - name: Sofar Sounds Sunshine Coast
       method: llm
       domains:
@@ -457,9 +625,20 @@ sources:
       domains:
         - troubadourwagons.com.au
     - name: Sunny Games & Socials
-      method: llm
+      method: scraper
       domains:
         - meetup.com
+      homepage: https://meetup.com/
+      listingUrls:
+        - https://www.meetup.com/find/au--sunshine-coast/
+      strategy: jsonld
+      venue:
+        name: Peregian Digital Hub
+        address: 253-255 David Low Way, Peregian Beach, al
+        suburb: Peregian Beach
+      note: >-
+        Verified by probe-sources 2026-09-08: 25 dated event(s) via jsonld (listing URL found by web
+        search, then verified).
     - name: New to the Sunshine Coast Meetup
       method: llm
       domains:
@@ -473,46 +652,66 @@ sources:
       domains:
         - sunshinecoastchamber.ca
     - name: Maleny Community Centre
-      method: llm
+      method: scraper
       domains:
         - malenycommunitycentre.org
+      homepage: https://malenycommunitycentre.org/
+      listingUrls:
+        - https://malenycommunitycentre.org/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 5 dated event(s) via html.'
     - name: Sunshine Coast Maker Space
       method: llm
       domains:
         - sunshinecoastmakerspace.com.au
-    - name: Annie's Books on Peregian
-      method: llm
-      domains:
-        - anniesbooksonperegian.com.au
     - name: Caloundra Arts Centre
-      method: llm
+      method: scraper
       domains:
         - caloundraartsandcrafts.org.au
+      homepage: https://caloundraartsandcrafts.org.au/
+      listingUrls:
+        - https://caloundraartsandcrafts.org.au/whats-on
+        - https://caloundraartsandcrafts.org.au/wp-json/tribe/events/v1/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 21 dated event(s) via html.'
     - name: IN | artist run initiative
       method: llm
       domains:
         - in-ari.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Cooroy Butter Factory Arts Centre
-      method: llm
+      method: scraper
       domains:
         - cooroybutterfactory.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://cooroybutterfactory.com.au/
+      listingUrls:
+        - https://cooroybutterfactory.com.au/events
+        - https://cooroybutterfactory.com.au/exhibitions/
+      strategy: html
     - name: Yandina Historic House
       method: llm
       domains:
         - yandinahistorichouse.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Noosa Shire Arts & Crafts Association
-      method: llm
+      method: scraper
       domains:
         - noosaartsandcrafts.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://noosaartsandcrafts.org.au/
+      listingUrls:
+        - https://noosaartsandcrafts.org.au/
+      strategy: html
     - name: Pomona Railway Station Gallery
-      method: llm
+      method: scraper
       domains:
         - pomonagallery.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://pomonagallery.com.au/
+      listingUrls:
+        - https://pomonagallery.com.au/
+      strategy: html
     - name: Sunshine Coast Symphony Orchestra
       method: llm
       domains:
@@ -539,15 +738,23 @@ sources:
         - noosaorchestra.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Sunshine Coast Youth Orchestra
-      method: llm
+      method: scraper
       domains:
         - scyo.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://scyo.org.au/
+      listingUrls:
+        - https://scyo.org.au/wp-json/tribe/events/v1/events
+      strategy: html
     - name: Noosa Film Society
-      method: llm
+      method: scraper
       domains:
         - noosafilmsoc.org
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://noosafilmsoc.org/
+      listingUrls:
+        - https://noosafilmsoc.org/screenings/2019/
+      strategy: html
     - name: Maleny Film Society
       method: llm
       domains:
@@ -574,15 +781,28 @@ sources:
         - buderimtavern.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Tewantin Noosa RSL
-      method: llm
+      method: scraper
       domains:
         - noosarsl.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 22 dated event(s) via jsonld.'
+      homepage: https://noosarsl.com.au/
+      listingUrls:
+        - https://noosarsl.com.au/events
+        - https://noosarsl.com.au/wp-json/tribe/events/v1/events
+      strategy: jsonld
+      venue:
+        name: Tewantin Noosa RSL
+        address: 1 Memorial Ave
+        suburb: Tewantin
     - name: Maroochy RSL
-      method: llm
+      method: scraper
       domains:
         - maroochyrsl.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 10 dated event(s) via html.'
+      homepage: https://maroochyrsl.com.au/
+      listingUrls:
+        - https://maroochyrsl.com.au/wp-json/tribe/events/v1/events
+      strategy: html
     - name: Nambour RSL Club
       method: llm
       domains:
@@ -609,20 +829,38 @@ sources:
         - terellabrewing.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Land & Sea Brewery
-      method: llm
+      method: scraper
       domains:
         - landandseabrewery.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://landandseabrewery.com/
+      listingUrls:
+        - https://www.landandseabrewery.com/whats-on
+      strategy: html
     - name: Caloundra Power Boat Club
-      method: llm
+      method: scraper
       domains:
         - caloundrapowerboat.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 44 dated event(s) via jsonld.'
+      homepage: https://caloundrapowerboat.com.au/
+      listingUrls:
+        - https://caloundrapowerboat.com.au/events
+        - https://caloundrapowerboat.com.au/wp-json/tribe/events/v1/events
+        - https://www.caloundrapowerboat.com.au/shows/
+      strategy: jsonld
+      venue:
+        name: Caloundra Power Boat Club
+        address: 2 Lamerough Parade
+        suburb: Golden Beach
     - name: Alexandra Headland Surf Life Saving Club
-      method: llm
+      method: scraper
       domains:
         - alexsurfclub.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://alexsurfclub.com.au/
+      listingUrls:
+        - https://alexsurfclub.com.au/club/whats-on/
+      strategy: html
     - name: The Surf Club Mooloolaba
       method: llm
       domains:
@@ -639,10 +877,14 @@ sources:
         - theoldambulancestation.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Sunshine Coast Art Group
-      method: llm
+      method: scraper
       domains:
         - sunshinecoastartgroup.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://sunshinecoastartgroup.com.au/
+      listingUrls:
+        - https://sunshinecoastartgroup.com.au/
+      strategy: html
     - name: Salti Reads Caloundra
       method: llm
       domains:
@@ -669,45 +911,80 @@ sources:
         - sunshinecoastbrewery.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Sunshine Brewery
-      method: llm
+      method: scraper
       domains:
         - sunshinebrewery.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://sunshinebrewery.com.au/
+      listingUrls:
+        - https://sunshinebrewery.com.au/wp-json/tribe/events/v1/events
+      strategy: html
     - name: Club Mooloolaba
       method: llm
       domains:
         - clubmooloolaba.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Club Kawana
-      method: llm
+      method: scraper
       domains:
         - clubkawana.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 22 dated event(s) via jsonld.'
+      homepage: https://clubkawana.com.au/
+      listingUrls:
+        - https://clubkawana.com.au/whats-on/
+        - https://clubkawana.com.au/wp-json/tribe/events/v1/events
+      strategy: jsonld
+      venue:
+        name: Club Kawana
+        address: Club Kawana 476 Nicklin Way
+        suburb: Wurtulla
     - name: Coolum Beach Sports Club
-      method: llm
+      method: scraper
       domains:
         - coolumbeachsports.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 25 dated event(s) via jsonld.'
+      homepage: https://coolumbeachsports.com.au/
+      listingUrls:
+        - https://coolumbeachsports.com.au/events-calendar/
+        - https://coolumbeachsports.com.au/wp-json/tribe/events/v1/events
+      strategy: jsonld
+      venue:
+        name: Coolum Beach Sports Club
+        address: null
+        suburb: null
     - name: Palmwoods Bowls Club
       method: llm
       domains:
         - palmwoodsbowlsclub.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: DIVE Theatre Collective
-      method: llm
+      method: scraper
       domains:
         - divetheatre.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via jsonld.'
+      homepage: https://divetheatre.com/
+      listingUrls:
+        - https://divetheatre.com/events/
+      strategy: jsonld
+      venue:
+        name: Black Box Theatre, Nambour
+        address: ''
+        suburb: null
     - name: Spiral Inc
       method: llm
       domains:
         - spiralinc.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Buderim War Memorial Community Association
-      method: llm
+      method: scraper
       domains:
         - bwmca.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 7 dated event(s) via html.'
+      homepage: https://bwmca.com.au/
+      listingUrls:
+        - https://www.bwmca.com.au/events-2-1?format=json
+        - https://www.bwmca.com.au/events-2-1
+      strategy: html
     - name: Buderim Youth Theatre of Excellence
       method: llm
       domains:
@@ -716,17 +993,13 @@ sources:
     - name: Funny Coast Comedy
       method: llm
       domains:
+        - funnycoastcomedy.com.au
         - funnycoast.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Sunshine Coast Comedy Festival
       method: llm
       domains:
         - sunshinecoastcomedyfestival.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
-    - name: Funny Coast Comedy
-      method: llm
-      domains:
-        - funnycoastcomedy.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Big Pineapple Music Festival
       method: llm

@@ -1,0 +1,164 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "aggregators",
+  "source_id": "whatsongoldcoast",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Lecture Me: Dirk Yates + Tutorial ~ Kathy Mackey",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "What's On Gold Coast, Burleigh Heads",
+      "link": "https://www.whatsongoldcoast.au/All-events/Lecture-Me-1-Dirk-Yates-Tutorial-Kathy-Mackey-1992400462417",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "2PP presents a lecture on Contemporary art from Dirk Yates and follow up tutorial with Kathy Mackey.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "art",
+        "lecture",
+        "tutorial"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Surfers Paradise Beachfront Markets",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "What's On Gold Coast, Surfers Paradise",
+      "link": "https://www.whatsongoldcoast.au/All-events/Surfers-Paradise-Beachfront-Markets",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "A free, family-friendly outdoor shopping experience by the beachside, every Wednesday, Friday and Saturday from 4pm to 9pm.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "market",
+        "outdoor",
+        "family"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "SWELL Sculpture Festival Active & Healthy Wellness Program",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "What's On Gold Coast, Currumbin",
+      "link": "https://www.whatsongoldcoast.au/All-events/SWELL-Sculpture-Festival-Active-and-Healthy-Wellness-Program",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "Showcasing some of the Gold Coast’s Active & Healthy best health and wellbeing offerings.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "wellness",
+        "health",
+        "fitness"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "SWELL Sculpture Festival",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "What's On Gold Coast, Currumbin",
+      "link": "https://www.whatsongoldcoast.au/All-events/SWELL-Sculpture-Festival-5d7b3fc61bc245d8271ed744",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "10 days of sculpture on the beach! SWELL Sculpture Festival is for everyone! Come and see for yourself!...",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "sculpture",
+        "beach",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Art Explorers with Ainslee Palmer",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "What's On Gold Coast, Surfers Paradise",
+      "link": "https://www.whatsongoldcoast.au/All-events/Art-Explorers-with-Ainslee-Palmer",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "Inviting children and their parents/carers to connect with art through movement and storytelling, encouraging curiosity, creativity and fun!",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "kids",
+        "art",
+        "storytelling"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Dreamworld Night Market",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Coomera",
+      "link": "https://www.whatsongoldcoast.au/All-events/Dreamworld-Night-Market-62d0efd316f416de60fa4005",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "Moonlight Night Market is the Northern Gold Coast's newest food market, located inside Dreamworld!...",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "market",
+        "food",
+        "night"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Crafted Through Clay: 50 years of learning Student Showcase",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Benowa",
+      "link": "https://www.whatsongoldcoast.au/All-events/Crafted-Through-Clay-50-years-of-learning-Student-Showcase",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "Exhibition of student work celebrating 50 years of the Gold Coast Potters Association.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "pottery",
+        "exhibition",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

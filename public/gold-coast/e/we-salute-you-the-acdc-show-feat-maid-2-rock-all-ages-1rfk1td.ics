@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:WE SALUTE YOU: The ACDC Show feat. Maid 2 Rock (All Ages)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1rfk1td@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T120000
+DTEND;TZID=Australia/Brisbane:20260920T140000
+SUMMARY:WE SALUTE YOU: The ACDC Show feat. Maid 2 Rock (All Ages)
+DESCRIPTION:Prepare for the ultimate high-voltage rock revival as the elect
+ rifying anthems of AC/DC collide with the powerhouse hits of the greatest 
+ Women of Rock! For more information & tickets hit the below Book Now butto
+ n.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/we-salute-you-the-acdc-show-f
+ eat-maid-2-rock-all-ages
+END:VEVENT
+END:VCALENDAR

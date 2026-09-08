@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:PICTURE BOOKS ARE NOT JUST FOR LITTLE CHILDREN!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1czo067@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T153000
+DTEND;TZID=Australia/Brisbane:20260910T173000
+SUMMARY:PICTURE BOOKS ARE NOT JUST FOR LITTLE CHILDREN!
+DESCRIPTION:with Jane Godwin In this stimulating and interactive session\, 
+ we’ll explore picture books from every angle and the many opportunities 
+ they bring to a classroom or family story time - whether with 5-year-olds 
+ or 15-year-olds. Drawing on her experience as both publisher and writer\, 
+ and using examples from picture books around the world\, Jane explores the
+  power of this art form to enlighten\, entertain\, inspire and educate.
+LOCATION:LSODE Campus
+URL:https://storyfest.com.au/
+END:VEVENT
+END:VCALENDAR

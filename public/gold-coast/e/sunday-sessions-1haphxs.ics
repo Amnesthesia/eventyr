@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Sessions
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1haphxs@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T150000
+DTEND;TZID=Australia/Brisbane:20260920T235900
+SUMMARY:Sunday Sessions
+DESCRIPTION:
+LOCATION:Club Broadbeach\, 169 Surf Parade
+URL:https://www.clubbroadbeach.com.au/event/sunday-sessions/2026-09-20/
+END:VEVENT
+END:VCALENDAR

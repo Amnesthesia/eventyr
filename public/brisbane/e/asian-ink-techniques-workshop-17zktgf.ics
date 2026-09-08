@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Asian Ink Techniques Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-17zktgf@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T140000
+DTEND;TZID=Australia/Brisbane:20260920T160000
+SUMMARY:Asian Ink Techniques Workshop
+DESCRIPTION:Discover the expressive beauty of Asian ink painting and callig
+ raphy in this relaxed\, beginner-friendly workshop.
+LOCATION:Creative Room Art Space
+URL:https://www.creativeroom.com.au/event-details/asian-ink-techniques-work
+ shop
+END:VEVENT
+END:VCALENDAR

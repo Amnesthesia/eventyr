@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Afternoon Brisbane Half-Day Brewery Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1tbxtw6@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270308
+SUMMARY:Afternoon Brisbane Half-Day Brewery Tour
+DESCRIPTION:Afternoon Brisbane Half-Day Brewery Tour in Brisbane. Get your 
+ tickets on Fever now!
+LOCATION:The Prince Consort Hotel
+URL:https://feverup.com/m/177997
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Creative Generation
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-2vy0qe@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20261012
+SUMMARY:Creative Generation
+DESCRIPTION:Celebrate a rising generation of young artists in the Creative 
+ Generation exhibition. Featuring high quality artwork across a diverse ran
+ ge of media\, materials and techniques from Year 11 and 12 students across
+  the North Coast (South) region (from Gympie\, to Maleny and down to Calou
+ ndra). At the exhibition opening award winners will be announced who will 
+ have their work exhibited in GOMA in 2027. For many of the students in thi
+ s exhibition this will be their first exhibition showcase.
+LOCATION:Cooroy Butter Factory Arts Centre\, 11 MAPLE ST\, COOROY
+URL:https://cooroybutterfactory.com.au/exhibitions/
+END:VEVENT
+END:VCALENDAR

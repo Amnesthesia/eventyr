@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mamma Mia! The Musical at The Star Gold Coast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-tjehfh@dothings
+DTSTART;TZID=Australia/Brisbane:20260904T140000
+DTEND;TZID=Australia/Brisbane:20260904T160000
+SUMMARY:Mamma Mia! The Musical at The Star Gold Coast
+DESCRIPTION:Mamma Mia! hits the Gold Coast this September 2026 for a limite
+ d season\, celebrating 25 years with ABBA classics\, feel-good vibes and p
+ lenty of laughs.
+LOCATION:Inside Gold Coast What's On
+URL:https://www.insidegoldcoast.com.au/whatson/mamma-mia-the-musical-star-g
+ old-coast
+END:VEVENT
+END:VCALENDAR

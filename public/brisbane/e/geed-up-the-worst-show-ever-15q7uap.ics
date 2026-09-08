@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:GEED UP “The Worst Show Ever”
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15q7uap@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T200000
+DTEND;TZID=Australia/Brisbane:20260912T214500
+SUMMARY:GEED UP “The Worst Show Ever”
+DESCRIPTION:
+LOCATION:Eat Street Northshore\, 221D Macarthur Avenue\, Hamilton\, QLD\, 4
+ 007
+URL:https://eatstreetnorthshore.com.au/event/geed-up-the-worst-show-ever-4/
+END:VEVENT
+END:VCALENDAR

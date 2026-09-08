@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jo Mackenzie Pottery Classes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-sunaef@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T180000
+DTEND;TZID=Australia/Brisbane:20260914T210000
+SUMMARY:Jo Mackenzie Pottery Classes
+DESCRIPTION:Jo\, from Amare Ceramics\, teaches hand building and wheel thro
+ wing at both the Mudgeeraba and Benowa Studios.
+LOCATION:Benowa and Mudgeeraba Studios
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+END:VCALENDAR

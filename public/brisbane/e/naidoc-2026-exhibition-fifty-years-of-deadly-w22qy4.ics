@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:NAIDOC 2026 Exhibition: Fifty Years of Deadly
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-w22qy4@dothings
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20261001
+SUMMARY:NAIDOC 2026 Exhibition: Fifty Years of Deadly
+DESCRIPTION:Curated by Margie Kennedy (COOEE Program Manager) this moving e
+ xhibition is a visual truth telling that honours the past\, speaks to the 
+ present and empowers the future\, through powerful images\, cultural conte
+ nt and stories. Fifty Years of Deadly captures the strength of Elders\, th
+ e vision of youth and the legacy that continues to shape their communities
+ .
+LOCATION:Redlands Coast Museum
+URL:https://redlandscoastmuseum.org.au/exhibitions/naidoc-2026-exhibition-f
+ ifty-years-of-deadly/
+END:VEVENT
+END:VCALENDAR

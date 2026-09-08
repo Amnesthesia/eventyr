@@ -135,6 +135,19 @@ jobs:
           restore-keys: |
             adapters-${{ inputs.city }}-
 
+      # For the handful of sources with strategy: render, whose events only
+      # exist after JavaScript runs. A cached binary rather than
+      # `playwright install`, which downloads ~95 MB every run. Not fatal:
+      # collect-adapters degrades to the deterministic path with a warning if
+      # no browser is available, so a bad install costs those few sources
+      # rather than the whole scrape.
+      - name: Set up chromium for render-strategy sources
+        id: setup-chrome
+        continue-on-error: true
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
       # Scrape first-party sources we have verified listing URLs for. Never
       # blocks the run: the AI search below still covers every method: llm
       # source regardless of how this goes.
@@ -144,6 +157,7 @@ jobs:
           CITY: ${{ inputs.city }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force }}
+          CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
         run: pnpm collect-adapters
 
       - name: Collect events

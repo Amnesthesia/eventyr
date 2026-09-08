@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "sunpac",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Faulty Towers: The Original Dining Experience",
+      "datetime": "Fri 18 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-18T19:00:00",
+      "datetime_end_iso": "",
+      "location": "SunPAC",
+      "link": "https://www.sunpac.net.au/faulty-towers-the-original-dining-experience-2/",
+      "cost": "$ 89",
+      "source": "SunPAC",
+      "description": "Basil, Manuel and Sybil are in town – and they’re bringing a healthy dose of mayhem to your door. Fully immersive, highly interactive and completely original…",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "theatre",
+        "interactive",
+        "dining"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

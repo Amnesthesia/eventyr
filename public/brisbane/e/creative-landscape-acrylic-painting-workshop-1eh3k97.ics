@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Creative Landscape | Acrylic Painting Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1eh3k97@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:Creative Landscape | Acrylic Painting Workshop
+DESCRIPTION:This acrylic painting workshop builds on our Colour Theory cour
+ se\, exploring the split-complementary colour scheme through a landscape c
+ omposition.
+LOCATION:Creative Room Art Space
+URL:https://www.creativeroom.com.au/event-details/creative-landscape-acryli
+ c-painting-workshop-1
+END:VEVENT
+END:VCALENDAR

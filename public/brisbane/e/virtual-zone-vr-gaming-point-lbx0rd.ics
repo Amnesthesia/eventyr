@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Virtual Zone: VR Gaming Point
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-lbx0rd@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20261101
+SUMMARY:Virtual Zone: VR Gaming Point
+DESCRIPTION:Grab your crew and step into the action at Virtual Zone: VR Gam
+ ing Point\, Brisbane’s ultimate destination for immersive VR gaming. Get
+  your tickets!
+LOCATION:Fever Immersive Center in Brisbane
+URL:https://feverup.com/m/648778
+END:VEVENT
+END:VCALENDAR

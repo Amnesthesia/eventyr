@@ -1,0 +1,76 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "janpowersfarmersmarkets",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "POWERHOUSE",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "Jan Powers Farmers Markets",
+      "link": "https://janpowersfarmersmarkets.com.au/powerhouse-farmers-markets",
+      "cost": "See link",
+      "source": "Jan Powers Farmers Markets",
+      "description": "The Jan Powers Farmers Markets Powerhouse has drawn strong crowds of food-lovers and smart shoppers since the arts venue opened in 2000.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "market",
+        "local"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Eagle Farm",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Jan Powers Farmers Markets",
+      "link": "https://janpowersfarmersmarkets.com.au/eagle-farm-markets",
+      "cost": "See link",
+      "source": "Jan Powers Farmers Markets",
+      "description": "Public Car Parking is available at the Infield Car Park via Gate 7 via Nudgee Road (behind the Racecourse Village Shopping Centre). Click for Google Map Referenc e. Then proceed on foot through the pedestrian tunnel into the market. Disabled car parking is available at the front of the market via Gate 4 off Racecourse Rd.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "market",
+        "food",
+        "local"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "MANLY",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Jan Powers Farmers Markets",
+      "link": "https://janpowersfarmersmarkets.com.au/manly-farmers-markets",
+      "cost": "See link",
+      "source": "Jan Powers Farmers Markets",
+      "description": "Every 1st and 3rd Saturday of the Month Manly Harbour Royal Esplanade, Manly. Between Cambridge & Cardigan Parades.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "market",
+        "food",
+        "local"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

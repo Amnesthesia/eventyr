@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Author Talk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-w0eh9f@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T140000
+DTEND;TZID=Australia/Brisbane:20260908T160000
+SUMMARY:Author Talk
+DESCRIPTION:Meet author Gillian Wills
+LOCATION:Clifton Library\, Clifton\, QLD 4361
+URL:https://www.eventbrite.com.au/e/meet-the-author-gillian-wills-clifton-l
+ ibrary-tickets-1993638104237
+END:VEVENT
+END:VCALENDAR

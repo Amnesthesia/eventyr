@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:REDLAND ART AWARDS 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1etr8ok@dothings
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:REDLAND ART AWARDS 2026
+DESCRIPTION:The Redland Art Awards is a biennial contemporary painting comp
+ etition. Entries are open to artists who are Australian citizens or perman
+ ent residents\, who currently reside in Australia\, and are aged 18 years 
+ or over at the opening of the prize on Tuesday 5 May\, 2026.
+LOCATION:Redland Art Gallery
+URL:https://au.openforms.com/Form/97a29701-657a-4bae-80ce-036652ca460b
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:KOREABOO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-n2x82a@dothings
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260920
+SUMMARY:KOREABOO
+DESCRIPTION:Discussions of inter-country adoption\, culturally contextual r
+ eferences to diet and body image. Theatrical haze\, smoke and flashing lig
+ hts. Suitable for ages 14+
+LOCATION:La Boite Theatre\, Kelvin Grove
+URL:https://laboite.com.au/shows/koreaboo
+END:VEVENT
+END:VCALENDAR

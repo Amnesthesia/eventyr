@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jason Delphin
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-10rolx2@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T040000
+DTEND;TZID=Australia/Brisbane:20260909T063000
+SUMMARY:Jason Delphin
+DESCRIPTION:
+LOCATION:Beach Hotel
+URL:https://www.beachhotel.com.au/event/jason-delphin-13/
+END:VEVENT
+END:VCALENDAR

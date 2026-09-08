@@ -5,8 +5,9 @@ import {
 	CATEGORY_EMOJI,
 	DATA_ROOT,
 	fmtDate,
+	isTopPick,
 	PROJECT_ROOT,
-	TOP_PICK_THRESHOLD,
+	toISODate,
 } from "./common.ts";
 
 type Event = Record<string, unknown>;
@@ -18,12 +19,12 @@ function writeMarkdown(
 	cityName: string,
 	cityKey: string,
 ): void {
-	const topPicks = events.filter(
-		(e) => ((e.score as number) ?? 0) >= TOP_PICK_THRESHOLD,
-	);
-	const remaining = events.filter(
-		(e) => ((e.score as number) ?? 0) < TOP_PICK_THRESHOLD,
-	);
+	// Both ends inside the week: a months-long run scores high but is not a
+	// pick, or it would hold a slot every week until it closed. See isTopPick.
+	const windowStart = toISODate(monday);
+	const windowEnd = toISODate(sunday);
+	const topPicks = events.filter((e) => isTopPick(e, windowStart, windowEnd));
+	const remaining = events.filter((e) => !isTopPick(e, windowStart, windowEnd));
 
 	const lines: string[] = [];
 

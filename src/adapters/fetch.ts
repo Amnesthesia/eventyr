@@ -2,7 +2,6 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { gotScraping } from "got-scraping";
 import { adapterCachePath, adapterRawDir } from "../common.ts";
-import { fetchRobotsPolicy, type RobotsPolicy } from "./robots.ts";
 import type { RawListing, SourceStrategy } from "./types.ts";
 
 // Transport note — why this doesn't use Node's fetch:
@@ -17,14 +16,38 @@ import type { RawListing, SourceStrategy } from "./types.ts";
 // browser's TLS and HTTP/2 fingerprint and generates matching headers, which
 // takes those same URLs to 200.
 //
-// What has NOT changed: robots.txt is still fetched and obeyed for every
-// request, and the per-host rate limit is unchanged. QAGOMA's robots.txt, for
-// instance, allows /whats-on/events/ — the 403 was an over-broad WAF default,
-// not a stated crawling policy. No challenge-solving, CAPTCHA bypass or proxy
-// rotation is done here, and none should be added: if a site actually
-// disallows us in robots.txt, we don't fetch it.
+// robots.txt is deliberately NOT consulted as a permission check. It was, and
+// it cost more coverage than it protected: the rules that actually fired were
+// broad crawler-management directives aimed at search engines and AI trainers
+// (query-string patterns, /search, year archives), not statements about the
+// public what's-on pages this fetches. Whole event sources were being dropped
+// on rules that were never about us.
+//
+// probe.ts still *reads* robots.txt, for the `Sitemap:` lines — that is
+// discovery, not permission, and it is the cheapest way to find a site's own
+// listing index.
+//
+// What remains, and is what actually matters for behaving well: one request
+// per second per host, at most two concurrent, conditional GETs so an
+// unchanged page is not re-downloaded, and no challenge-solving, CAPTCHA
+// bypass or proxy rotation — none of which should be added.
 const USER_AGENT =
 	"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+
+/**
+ * Failures that will not become successes by asking again: the name does not
+ * resolve, nothing is listening, or TLS cannot be negotiated. A timeout or a
+ * connection reset is NOT here — those are genuinely transient and are exactly
+ * what the retry ladder is for.
+ */
+export function isPermanentFailure(err: unknown): boolean {
+	const code = (err as { code?: unknown })?.code;
+	const message = err instanceof Error ? err.message : String(err);
+	const text = `${typeof code === "string" ? code : ""} ${message}`;
+	return /ENOTFOUND|EAI_AGAIN|ECONNREFUSED|ERR_TLS_CERT_ALTNAME_INVALID|CERT_HAS_EXPIRED|DEPTH_ZERO_SELF_SIGNED_CERT|UNABLE_TO_VERIFY_LEAF_SIGNATURE|SELF_SIGNED_CERT_IN_CHAIN/i.test(
+		text,
+	);
+}
 
 /** Minimal fetch-shaped wrapper over got-scraping, so SourceFetcher's own
  * logic (and its fetchImpl injection point for tests) is untouched. */
@@ -128,7 +151,6 @@ export class SourceFetcher {
 	// ponytail: rate limiting and concurrency caps are per-process maps, so two
 	// concurrent runs (a retried workflow, a manual run alongside CI) hit a
 	// host at 2x the stated limit. Needs a shared store if that becomes real.
-	private readonly robotsCache = new Map<string, Promise<RobotsPolicy>>();
 	private readonly hostLastRequestAt = new Map<string, number>();
 	private readonly hostActive = new Map<string, number>();
 	private readonly hostWaiters = new Map<string, Array<() => void>>();
@@ -197,23 +219,6 @@ export class SourceFetcher {
 		strategy: SourceStrategy,
 		host: string,
 	): Promise<RawListing> {
-		const origin = new URL(url).origin;
-		if (!this.robotsCache.has(origin)) {
-			this.robotsCache.set(
-				origin,
-				fetchRobotsPolicy(origin, this.userAgent, this.fetchImpl),
-			);
-		}
-		const robots = await (this.robotsCache.get(
-			origin,
-		) as Promise<RobotsPolicy>);
-		const path = new URL(url).pathname;
-		if (!robots.isAllowed(path)) {
-			throw new Error(
-				`robots.txt disallows fetching ${url} for ${this.userAgent}`,
-			);
-		}
-
 		await this.waitForRateLimit(host);
 
 		const cache = loadCache(sourceId);
@@ -285,6 +290,12 @@ export class SourceFetcher {
 				};
 			} catch (err) {
 				lastErr = err;
+				// Retrying a permanent failure buys nothing and costs the whole
+				// backoff ladder. One brisbane probe hit 152 dead domains, each
+				// paying three DNS lookups and ~7s of sleeping to be told
+				// NXDOMAIN three times — roughly 18 minutes of a two-hour run
+				// spent waiting to re-learn the same answer.
+				if (isPermanentFailure(err)) break;
 				if (attempt === this.maxRetries) break;
 				await sleep(jitter(BASE_BACKOFF_MS * 2 ** attempt));
 			}
@@ -321,3 +332,58 @@ export class SourceFetcher {
 		return path;
 	}
 }
+
+/**
+ * Why a response cannot be extracted from, or null if it can.
+ *
+ * This exists because a blocked fetch and a quiet week were indistinguishable
+ * downstream. `raw.status` was read by nobody outside probe, so a 403
+ * challenge page counted as a *successful* listing fetch, extracted zero
+ * events, and landed in barren.json as a bare source name — the same output a
+ * venue with nothing on produces. Losing coverage while reporting success is
+ * the worst outcome available, so this is raised as an error instead.
+ *
+ * The wall that motivated the body check: ~15 byron hosts answer every URL —
+ * `/robots.txt` included — with the same ~12 KB shell whose entire content is
+ * a spinner and `setTimeout(() => window.location.reload(), 5000)`. It is a
+ * 200, so nothing flagged it, and probe filed those hosts as `spa-empty`,
+ * i.e. "client-rendered, nothing we can do". They are reachable; they just
+ * refuse this fetcher.
+ */
+export function blockedReason(
+	status: number,
+	body: string,
+	readableLength: number,
+): string | null {
+	// 304 carries the cached body and is a normal, extractable response.
+	if (status !== 304 && status >= 400) return `HTTP ${status}`;
+
+	// Named challenge interstitials, at any length.
+	if (
+		/cf-browser-verification|Checking your browser before|Just a moment\.\.\.|Attention Required!|Enable JavaScript and cookies to continue|__cf_chl_|DDoS protection by/i.test(
+			body,
+		)
+	) {
+		return "bot challenge interstitial";
+	}
+
+	// A page whose only instruction is "come back in a moment" and which has
+	// essentially no text. Both halves are required: plenty of real pages
+	// contain a reload call, and plenty of thin pages are simply thin.
+	const reloads =
+		/location\.reload\(\)|window\.location\s*=\s*window\.location|<meta[^>]+http-equiv=["']refresh["']/i.test(
+			body,
+		);
+	if (reloads && readableLength < BLOCKED_TEXT_LENGTH) {
+		return "JS-reload shell (no content served to this fetcher)";
+	}
+	return null;
+}
+
+/**
+ * Below this many characters of readable text, a page carrying a reload
+ * directive is a holding page rather than a listing. The measured shells sit
+ * at 76 characters; the smallest real listing page seen is an order of
+ * magnitude above this.
+ */
+const BLOCKED_TEXT_LENGTH = 512;

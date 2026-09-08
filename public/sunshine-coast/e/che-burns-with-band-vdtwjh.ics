@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Che Burns With Band
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-vdtwjh@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Che Burns With Band
+DESCRIPTION:Che Burns returns to Blackflag in Coolum\, taking over the main
+  venue for a massive hometown show with his full band. Following a run of 
+ sold-out performances and a recent Song of the Year win at the Sunshine Co
+ ast Music Awards\, Che is bringing his biggest live production yet to the 
+ Sunshine Coast. Joined by Cora\, Happy Valley and Cherry Nova for a night 
+ of live music you won’t want to miss.
+LOCATION:Blackflag Coolum
+URL:https://tickets.oztix.com.au/outlet/event/12a3e2b6-62bb-4d96-ab6f-6e3ee
+ 5a55b41
+END:VEVENT
+END:VCALENDAR

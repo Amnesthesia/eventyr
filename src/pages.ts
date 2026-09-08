@@ -4,10 +4,10 @@ import { join } from "node:path";
 import {
 	DATA_ROOT,
 	eventPath,
+	isTopPick,
 	KEY_TO_SLUG,
 	PROJECT_ROOT,
 	SITE_URL,
-	TOP_PICK_THRESHOLD,
 	toISODate,
 } from "./common.ts";
 
@@ -97,8 +97,12 @@ function main(): void {
 				week_start: payload.week_start,
 				week_end: payload.week_end,
 				event_count: events.length,
-				top_pick_count: events.filter(
-					(e) => ((e.score as number) ?? 0) >= TOP_PICK_THRESHOLD,
+				top_pick_count: events.filter((e) =>
+					isTopPick(
+						e,
+						payload.week_start as string,
+						payload.week_end as string,
+					),
 				).length,
 			});
 			cityMeta.push({

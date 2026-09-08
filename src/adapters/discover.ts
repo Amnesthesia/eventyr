@@ -162,11 +162,10 @@ function normaliseHost(raw: unknown): string | null {
 		.toLowerCase()
 		.replace(/^www\./, "");
 	if (!/^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(host)) return null;
-	if (
-		/eventbrite|humanitix|moshtix|oztix|ticketmaster|facebook|instagram|meetup|eventfinda|allevents|trybooking|tripadvisor/i.test(
-			host,
-		)
-	) {
+	// Kept in step with probe.ts's PLATFORMS: login-walled or link-in-bio hosts
+	// only, where no URL returns an event list. Ticketing aggregators are not
+	// filtered here — probe fetches them and promotes on extracted events.
+	if (/facebook|instagram|linktr\.ee|tripadvisor/i.test(host)) {
 		return null;
 	}
 	return host;

@@ -11,9 +11,16 @@ type Event = Record<string, unknown>;
  * purposes, and keeps the prompt small — the longest seen so far is 4,884
  * chars for a field the score barely needs the tail of. */
 export const RANK_DESCRIPTION_CHARS = 300;
-/** Bump when RANK_SYSTEM or the fields it reads change meaning, so a reused
- * score can never answer a question the current prompt no longer asks. */
-export const RANK_PROMPT_VERSION = "v2";
+/**
+ * Bump when RANK_SYSTEM or the fields it reads change meaning, so a reused
+ * score can never answer a question the current prompt no longer asks.
+ *
+ * Being inside rankReuseKey is NOT what makes this work — the key is
+ * recomputed for both sides of the comparison, so both always carry the
+ * current version and always match. rank.ts persists this value into
+ * data/{city}.json and compares it on read; that is the check with teeth.
+ */
+export const RANK_PROMPT_VERSION = "v3";
 
 /**
  * What a score is actually a judgement of: the event's identity (title, start,

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Open Mic Night @ The Morrison Hotel
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1aoe7vi@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T180000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:Open Mic Night @ The Morrison Hotel
+DESCRIPTION:
+LOCATION:Morrison Hotel
+URL:https://www.standup.com.au/event/open-mic-night-the-morrison-hotel-9/
+END:VEVENT
+END:VCALENDAR

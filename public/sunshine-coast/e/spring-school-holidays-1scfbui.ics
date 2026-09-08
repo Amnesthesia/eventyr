@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Spring school holidays
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1scfbui@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20261004
+SUMMARY:Spring school holidays
+DESCRIPTION:Join us for hands-on heritage and creative play | 19 September 
+ - 3 October
+LOCATION:Sunshine Coast Heritage
+URL:https://heritage.sunshinecoast.qld.gov.au/about/programs-and-events/spr
+ ing-school-holidays
+END:VEVENT
+END:VCALENDAR

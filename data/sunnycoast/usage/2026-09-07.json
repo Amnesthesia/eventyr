@@ -1,0 +1,57 @@
+{
+  "updated_at": "2026-09-08T09:24:46.036Z",
+  "stages": {
+    "collect/extract": {
+      "calls": 62,
+      "promptTokens": 203450,
+      "outputTokens": 99534,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.06015860000000001
+    },
+    "annotate": {
+      "calls": 44,
+      "promptTokens": 68036,
+      "outputTokens": 23296,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.016122000000000004
+    },
+    "dedupe": {
+      "calls": 9,
+      "promptTokens": 33346,
+      "outputTokens": 2313,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.0042598
+    },
+    "rank": {
+      "calls": 10,
+      "promptTokens": 45857,
+      "outputTokens": 8128,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.0340771
+    }
+  }
+}

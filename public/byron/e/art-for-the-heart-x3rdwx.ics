@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:art for the heart
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-x3rdwx@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:art for the heart
+DESCRIPTION:Facilitated by local artists Paula Bannan & Leeby Sotheren. Thi
+ s class is designed to relax and reset your nervous system through tapping
+  into the joy of creating art. No skill necessary! All materials provided
+LOCATION:Pack Gallery Studio\, 3 Acacia Street Byron Industrial Estate
+URL:https://www.events.humantix.com/packgallerystudio
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,33 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "packgallerystudio",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "art for the heart",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Pack Gallery Studio, 3 Acacia Street Byron Industrial Estate",
+      "link": "https://www.events.humantix.com/packgallerystudio",
+      "cost": "$48 per person",
+      "source": "Pack Gallery Studio",
+      "description": "Facilitated by local artists Paula Bannan & Leeby Sotheren. This class is designed to relax and reset your nervous system through tapping into the joy of creating art. No skill necessary! All materials provided",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "wellness",
+        "creative",
+        "beginner"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

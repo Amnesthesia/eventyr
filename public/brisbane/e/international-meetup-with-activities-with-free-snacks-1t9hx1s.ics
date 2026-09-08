@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:INTERNATIONAL MEETUP WITH ACTIVITIES with free snacks! 🍿
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1t9hx1s@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T173000
+DTEND;TZID=Australia/Brisbane:20260909T203000
+SUMMARY:INTERNATIONAL MEETUP WITH ACTIVITIES with free snacks! 🍿
+DESCRIPTION:*By joining our events\, you consent to your image being shared
+  on social media. 📸📹🤳🏻 INTERNATIONAL MEETUP @ THE STOCK EXCHAN
+ GE HOTEL 2 GROUPS HOSTING
+LOCATION:The Stock Exchange Hotel (Charlotte Room)\, 131 Edward Street\, Br
+ isbane\, Brisbane\, Brisbane
+URL:https://www.meetup.com/international-local-language-exchange-southbank-
+ brisbane/events/315610757/
+END:VEVENT
+END:VCALENDAR

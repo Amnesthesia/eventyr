@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jazz In The Park
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-17bzodz@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T130000
+DTEND;TZID=Australia/Brisbane:20260913T170000
+SUMMARY:Jazz In The Park
+DESCRIPTION:BWMCA Presents: Annual Jazz in the Park Buderim Join us for an 
+ afternoon of sizzling hot Jazz entertainment! Listen to the captivating pe
+ rformances showcasing our local talent on the Sunshine Coast. The afternoo
+ n starts with the next generation of Jazz Musicians on the Coast - The Sun
+ shine Coast Grammar School Band followed by The Dean Doyle Quartet and the
+  Grand Finale presented by the hugely popular June Garber Quintet . Don’
+ t miss out on this wonderful event! Food stalls and raffles will be availa
+ ble for everyone to enjoy. Please be aware that alcohol is not permitted i
+ n the park\; however\, you may purchase and consume it in the designated a
+ rea. Visit: https://www.bwmca.com.au/jazz-in-the-park for further informat
+ ion. We extend our heartfelt gratitude to our sponsors: Bendigo Community 
+ Bank - Buderim Branch Brent Mickelberg MP Sunshine Coast Council Cage Secu
+ rity Your Mates Brewery
+LOCATION:Buderim Village Park\, Cnr King & Church Street
+URL:https://www.bwmca.com.au/events-2-1/jazz-in-the-park-fhke6
+END:VEVENT
+END:VCALENDAR

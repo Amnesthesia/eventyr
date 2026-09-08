@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wealth\, Power and the Stories We Tell
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-r0q974@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T071500
+DTEND;TZID=Australia/Brisbane:20260909T083000
+SUMMARY:Wealth\, Power and the Stories We Tell
+DESCRIPTION:A facilitated breakfast for Philanthropy Australia Conference 2
+ 026 delegates asking not just how we give more â but how we give diff
+ erently.
+LOCATION:Cafe Muse
+URL:https://www.brisbaneunlocked.com.au/wealth-power-and-the-stories-we-tel
+ l-2026-09-09
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dreamworld Night Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-tomugm@dothings
+DTSTART;VALUE=DATE:20240809
+DTEND;VALUE=DATE:20270328
+SUMMARY:Dreamworld Night Market
+DESCRIPTION:Experience the Dreamworld Night Market on the Northern Gold Coa
+ st\, held every Friday and Saturday evening inside Dreamworld. Enjoy a vib
+ rant night out with a...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/dreamworld-night-market
+END:VEVENT
+END:VCALENDAR

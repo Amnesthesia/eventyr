@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:New Brighton Farmers Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-chm3zi@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:New Brighton Farmers Market
+DESCRIPTION:The New Brighton Farmers Market is held every Tuesday morning a
+ t Tom Kendall Oval\, Park Street\, New Brighton.
+LOCATION:Tom Kendall Oval\, Park Street\, New Brighton 2483
+URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
+ New-Brighton-Farmers-Market
+END:VEVENT
+END:VCALENDAR

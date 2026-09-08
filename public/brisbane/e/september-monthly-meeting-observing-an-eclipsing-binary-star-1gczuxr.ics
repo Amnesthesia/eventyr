@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:September Monthly Meeting – Observing an Eclipsing Binary St
+ ar with a 2.3m Telescope
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1gczuxr@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T160000
+DTEND;TZID=Australia/Brisbane:20260919T180000
+SUMMARY:September Monthly Meeting – Observing an Eclipsing Binary Star wi
+ th a 2.3m Telescope
+DESCRIPTION:Our meetings include brief business\, a main presentation and i
+ tems of astronomical news or activities from members.
+LOCATION:Parnell Lecture Theatre 07-222\, Parnel Building\, University of Q
+ ueensland\, St Lucia QLD 4067
+URL:https://www.aaq.org.au/events/september-monthly-meeting-2/
+END:VEVENT
+END:VCALENDAR

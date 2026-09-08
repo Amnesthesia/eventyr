@@ -1,0 +1,32 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "pulsebar",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "NO CIGAR: AUSSIE TOUR",
+      "datetime": "Thu 10 Sep, 9:00 PM",
+      "datetime_iso": "2026-09-10T21:00:00",
+      "datetime_end_iso": "",
+      "location": "Pulse Bar & Live Music, Maroochydore",
+      "link": "https://megatix.com.au/events/no-cigar-aussie-tour-with-special-guests",
+      "cost": "See link",
+      "source": "Pulse Bar & Live Music, Maroochydore",
+      "description": "NO CIGAR are bringing their brand of ‘semi rock’ to Australia this spring, with thirteen lively shows on the cards for their biggest run in Australia to date.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "live music",
+        "tour"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

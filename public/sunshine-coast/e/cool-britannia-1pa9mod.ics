@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:COOL BRITANNIA
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1pa9mod@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T200000
+DTEND;TZID=Australia/Brisbane:20260919T223000
+SUMMARY:COOL BRITANNIA
+DESCRIPTION:Cool Britannia bring their epic 90s Britpop extravaganza to Imp
+ erial Hotel\, Eumundi on Saturday 19 September!
+LOCATION:Imperial Hotel Eumundi
+URL:https://www.imperialhoteleumundi.com.au/whats-on/zjvsmm4lqypl1qbvu0x09e
+ l2twb6w2
+END:VEVENT
+END:VCALENDAR

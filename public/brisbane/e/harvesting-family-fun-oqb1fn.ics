@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Harvesting & Family Fun
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-oqb1fn@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20270622
+SUMMARY:Harvesting & Family Fun
+DESCRIPTION:Hand the kids the shovel\, the show bag\, and the beekeeping su
+ it and watch what happens. Three days of sixth-generation farmland\, Queen
+ sland's largest carrot farm\, Kalbar Show fireworks\, edible flower pickin
+ g\, and golden honey straight from the hive. Every meal tastes better when
+  you helped grow it.
+LOCATION:Scenic Rim Eat Local Month
+URL:https://eatlocalmonth.com.au/
+END:VEVENT
+END:VCALENDAR

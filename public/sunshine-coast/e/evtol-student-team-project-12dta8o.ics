@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:eVTOL Student Team Project
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-12dta8o@dothings
+DTSTART;VALUE=DATE:20260203
+DTEND;VALUE=DATE:20261209
+SUMMARY:eVTOL Student Team Project
+DESCRIPTION:The eVTOL student team – a collaborative effort between the M
+ anufacturing Excellence Forum (Sunshine Coast) Ltd (MEFSC)\, University of
+  the Sunshine Coast (UniSC)\,…
+LOCATION:Study Sunshine Coast events
+URL:https://www.studysunshinecoast.com.au/event/evtol-student-team-project/
+END:VEVENT
+END:VCALENDAR

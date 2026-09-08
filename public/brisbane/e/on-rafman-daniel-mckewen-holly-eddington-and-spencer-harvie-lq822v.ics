@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:On Rafman: Daniel McKewen\, Holly Eddington\, and Spencer Harv
+ ie
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-lq822v@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:On Rafman: Daniel McKewen\, Holly Eddington\, and Spencer Harvie
+DESCRIPTION:Join us at the IMA for our second On Rafman lectures—a series
+  of short presentations by academics\, artists\, curators\, and writers th
+ at unpick the central…
+LOCATION:Institute of Modern Art\, 420 Brunswick St
+URL:https://www.ima.org.au/ima-events/on-rafman-daniel-mckewan-holly-edding
+ ton-and-spencer-harvie/
+END:VEVENT
+END:VCALENDAR

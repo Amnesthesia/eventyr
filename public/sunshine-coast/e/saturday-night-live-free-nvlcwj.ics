@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Saturday Night Live & Free
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-nvlcwj@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T170000
+DTEND;TZID=Australia/Brisbane:20260919T233000
+SUMMARY:Saturday Night Live & Free
+DESCRIPTION:Saturday Night Live & Free 5.00pm – Rick the Rockstar 9.00pm 
+ – Alter Egos Please note: While we do our best to keep our Live & Free E
+ ntertainment schedule up to date\, last-minute changes can occur. For the 
+ latest information and any schedule updates\, please follow our social med
+ ia channels.
+LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
+ nd\, 4551
+URL:https://caloundrarsl.com.au/event/saturday-night-live-free-12/
+END:VEVENT
+END:VCALENDAR

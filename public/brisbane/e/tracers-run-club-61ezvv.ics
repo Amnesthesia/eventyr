@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TRACERS RUN CLUB
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-61ezvv@dothings
+DTSTART;TZID=Australia/Brisbane:20260606T063000
+DTEND;TZID=Australia/Brisbane:20261205T073000
+SUMMARY:TRACERS RUN CLUB
+DESCRIPTION:DEPARTING VACANT ASSEMBLY 6.30AM NEXT RUN SATURDAY 26TH SEPTEMB
+ ER - FIRST AND LAST SATURDAY OF EACH MONTH - ALL WELCOME! #block-664741935
+ 56f4dfd79f5 { } #block-66474193556f4dfd79f5 .sqs-html-content { } #block-6
+ 6474193556f4dfd79f5 { mix-blend-mode: var(--tweak-text-block-blend )\; bor
+ der-radius: var(--tweak-text-block-radius)\; } @media screen and (max-widt
+ h: 767px) { #block-66474193556f4dfd79f5 { } } @media screen and (max-width
+ : 767px) { #block-66474193556f4dfd79f5 .sqs-html-content { } } @media scre
+ en and (max-width: 767px) { }
+LOCATION:Vacant Assembly
+URL:https://www.vacantassembly.com/events/run-club
+END:VEVENT
+END:VCALENDAR

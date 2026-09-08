@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The CACAphonics
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1d439b1@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T180000
+DTEND;TZID=Australia/Brisbane:20260909T213000
+SUMMARY:The CACAphonics
+DESCRIPTION:
+LOCATION:Caloundra Arts Centre Association\, 5 North Street
+URL:https://caloundraartscentre.org.au/event/the-cacaphonics/2026-09-09/
+END:VEVENT
+END:VCALENDAR

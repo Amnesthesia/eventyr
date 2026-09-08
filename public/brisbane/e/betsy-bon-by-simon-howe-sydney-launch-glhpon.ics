@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:'Betsy & Bon' by Simon Howe Sydney Launch
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-glhpon@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T103000
+DTEND;TZID=Australia/Brisbane:20260912T123000
+SUMMARY:'Betsy & Bon' by Simon Howe Sydney Launch
+DESCRIPTION:Join Simon in sharing his latest book\, Betsy and Bon .
+LOCATION:Upstairs at Gleebooks\, 49 Glebe Point Road\, Glebe\, NSW\, 2037
+URL:https://www.uqp.com.au/events/betsy-bon-by-simon-howe-sydney-launch
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:We Are Not Aligned - Exhibition by Shiloh Perry
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-178dwpz@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T170000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:We Are Not Aligned - Exhibition by Shiloh Perry
+DESCRIPTION:Come join us for the opening event of Shiloh’s solo exhibitio
+ n “We Are Not Aligned” on Saturday 19th September. My hand wasn’t th
+ ere and my eye didn’t see A misalignment in life My body has forgotten m
+ y mind A communication breakdown Reality of a past gone A feeling that som
+ ething is broken Chaos without a voice A ripple trying to escape Something
+  inside….. That just needed to be seen This exhibition is viewable in th
+ e Mint Art House gallery from September 19 - 26. #block-53253ab0414af6f480
+ 4d { } #block-53253ab0414af6f4804d .sqs-html-content { } #block-53253ab041
+ 4af6f4804d { mix-blend-mode: var(--tweak-text-block-blend )\; border-radiu
+ s: var(--tweak-text-block-radius)\; } @media screen and (max-width: 767px)
+  { #block-53253ab0414af6f4804d { } } @media screen and (max-width: 767px) 
+ { #block-53253ab0414af6f4804d .sqs-html-content { } } @media screen and (m
+ ax-width: 767px) { }
+LOCATION:Mint Art House\, 87 West Burleigh Road
+URL:https://www.mintarthouse.com/events/we-are-not-aligned-exhibition-by-sh
+ iloh-perry
+END:VEVENT
+END:VCALENDAR

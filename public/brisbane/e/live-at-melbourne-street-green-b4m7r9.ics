@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Live at Melbourne Street Green
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-b4m7r9@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T173000
+DTEND;TZID=Australia/Brisbane:20260911T193000
+SUMMARY:Live at Melbourne Street Green
+DESCRIPTION:Live at Melbourne Street Green\, Live Acts. Local ...\, Queensl
+ and Performing Arts Centre (QPAC)\, Brisbane\, Queensland\, 4 September 20
+ 26 - 30 October 2026\,
+LOCATION:Queensland Performing Arts Centre (QPAC)\, South Brisbane\, Queens
+ land
+URL:https://brisbane.eventfinda.com.au/2026/live-at-melbourne-street-green/
+ brisbane
+END:VEVENT
+END:VCALENDAR

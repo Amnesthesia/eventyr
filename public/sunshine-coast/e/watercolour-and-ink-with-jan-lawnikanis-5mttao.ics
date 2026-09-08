@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Watercolour and Ink with Jan Lawnikanis
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-5mttao@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Watercolour and Ink with Jan Lawnikanis
+DESCRIPTION:Below is a list of the upcoming workshops. Here you will find a
+ ll the details and also how to pay. Once you have paid the full amount\, y
+ ou will be sent a confirmation\, a receipt and a materials list where requ
+ ired. There are always many more workshops being planned so if there is an
+ ything in particular
+LOCATION:Noosa Shire Arts & Crafts Association
+URL:http://noosaartsandcrafts.org.au/book-a-workshop/
+END:VEVENT
+END:VCALENDAR

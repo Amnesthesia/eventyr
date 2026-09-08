@@ -1,0 +1,55 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "maroochyrsl",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Wednesday Bingo",
+      "datetime": "Wed 9 Sep, 9:15 AM",
+      "datetime_iso": "2026-09-09T09:15:00",
+      "datetime_end_iso": "2026-09-09T09:15:00",
+      "location": "Maroochy RSL",
+      "link": "https://maroochyrsl.com.au/event/wednesday-bingo-2/2026-09-09/",
+      "cost": "See link",
+      "source": "Maroochy RSL",
+      "description": "&nbsp; Wednesday Bingo sessions will be held from 9:15am until 11:15am. Selling commences – 8:15am Eyes down – 9:15am Food and refreshments available for purchase. Experience the best bingo in town with cash prizes to be won. If you haven’t played bingo before it is easy to pick up, and the bingo staff can show you how to play on the day. It is a great opportunity to bring friends or make new ones.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "bingo",
+        "games",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Kings of Las Vegas Lunch &#038; Tribute Show",
+      "datetime": "Wed 9 Sep, 11:30 AM",
+      "datetime_iso": "2026-09-09T11:30:00",
+      "datetime_end_iso": "2026-09-09T15:00:00",
+      "location": "Maroochy RSL",
+      "link": "https://maroochyrsl.com.au/event/kings-of-las-vegas-lunch-tribute-show/",
+      "cost": "See link",
+      "source": "Maroochy RSL",
+      "description": "Step into the glitz and glamour of Las Vegas as three legendary music icons come to life in one spectacular afternoon! Enjoy the unforgettable hits of Elvis Presley, Frankie Valli &amp; The Four Seasons, and Neil Diamond, performed by an outstanding tribute artist who captures the sound, style and charisma of these timeless entertainers. Your ticket includes a delicious one-course lunch featuring roast chicken supreme, potato gratin, broccolini, and red wine, roasted garlic &amp; tarragon jus, followed by an afternoon packed with classic hits you&#8217;ll know and love. &#8211; Wednesday September 9, arrival 11.30am &#8211; $35 per person (includes one-course lunch and show) &#8211; Courtesy bus available &#8211; This is an 18+ event Purchase your ticket here. Dietaries will be catered for during the booking process. T&amp;Cs apply.",
+      "image": "https://maroochyrsl.com.au/wp-content/uploads/2026/08/Sold-Out-TVL-1.jpg",
+      "category": "Concert / Music",
+      "tags": [
+        "tribute",
+        "music",
+        "lunch",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

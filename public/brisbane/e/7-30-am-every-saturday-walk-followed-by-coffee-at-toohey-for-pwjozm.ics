@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:7.30 am - EVERY SATURDAY- Walk followed by coffee at Toohey Fo
+ rest.....
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-pwjozm@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T073000
+DTEND;TZID=Australia/Brisbane:20260912T103000
+SUMMARY:7.30 am - EVERY SATURDAY- Walk followed by coffee at Toohey Forest.
+ ....
+DESCRIPTION:Meet us at the Salisbury Hotel car park at 7.30. We will walk u
+ p a bit of a hill to where the toilets are\, just meet us there if you don
+ 't want to walk up the little hill.
+LOCATION:Salisbury Hotel\, 668 Toohey Rd\, Salisbury\, QL\, Salisbury\, QL
+URL:https://www.meetup.com/brisbane-riverside-walkers-and-social-activities
+ -group/events/316436523/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,230 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "kyoglecinemas",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Wheels Across Australia",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/now-showing/wheels-across-australia/",
+      "cost": "$11.00",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "https://www.kyoglecinemas.com.au/coming-soon/wheels-across-australia/",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "documentary",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "A Match Made In Melbourne",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/now-showing/a-match-made-in-melbourne/",
+      "cost": "$11.00",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "https://www.kyoglecinemas.com.au/coming-soon/a-match-made-in-melbourne/",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "comedy",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Dog Stars",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/now-showing/the-dog-stars/",
+      "cost": "See link",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "https://www.kyoglecinemas.com.au/coming-soon/the-dog-stars/",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "drama",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Fall 2: Deadpoint",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/now-showing/fall-2-deadpoint/",
+      "cost": "See link",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "https://www.kyoglecinemas.com.au/coming-soon/fall-2-deadpoint/",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "thriller",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Practical Magic 2",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/coming-soon/practical-magic-2/",
+      "cost": "See link",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "https://www.kyoglecinemas.com.au/coming-soon/practical-magic-2/",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "fantasy",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Runner",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/coming-soon/runner/",
+      "cost": "See link",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "https://www.kyoglecinemas.com.au/coming-soon/runner/",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "drama",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Forgotten Island",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/coming-soon/forgotten-island/",
+      "cost": "See link",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "adventure",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Practical Magic 2",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/coming-soon/practical-magic-2/",
+      "cost": "See link",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "fantasy",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Runner",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/coming-soon/runner/",
+      "cost": "See link",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "drama",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Forgotten Island",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "Kyogle Cinemas",
+      "link": "https://www.kyoglecinemas.com.au/coming-soon/forgotten-island/",
+      "cost": "See link",
+      "source": "Kyogle Cinemas",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "adventure",
+        "cinema"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

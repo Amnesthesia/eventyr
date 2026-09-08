@@ -11,30 +11,45 @@
 
 name: Gold Coast
 timezone: Australia/Brisbane
-# See sources/brisbane.yml for what this is. 35 km from Southport reaches
-# Coolangatta (21 km) and Tweed Heads (23 km) while excluding Brisbane (67 km).
 centre:
   lat: -28.0167
-  lng: 153.4000
+  lng: 153.4
   radiusKm: 35
 sources:
   aggregators:
     - name: What's On Gold Coast
-      method: llm
+      method: scraper
       domains:
         - whatsongoldcoast.au
+        - whatsonegoldcoast.com.au
+      homepage: https://whatsongoldcoast.au/
+      listingUrls:
+        - https://www.whatsongoldcoast.au/All-events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 9 dated event(s) via html.'
     - name: Experience Gold Coast / Destination Gold Coast
-      method: llm
+      method: scraper
       domains:
         - experiencegoldcoast.com
+      homepage: https://experiencegoldcoast.com/
+      listingUrls:
+        - https://experiencegoldcoast.com/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 9 dated event(s) via html.'
     - name: The Urban List Gold Coast
       method: llm
       domains:
         - theurbanlist.com
     - name: Inside Gold Coast What's On
-      method: llm
+      method: scraper
       domains:
         - insidegoldcoast.com.au
+      homepage: https://insidegoldcoast.com.au/
+      listingUrls:
+        - https://www.insidegoldcoast.com.au/whatson
+        - https://www.insidegoldcoast.com.au/whatson/once
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 16 dated event(s) via html.'
     - name: Eventfinda Gold Coast
       method: llm
       domains:
@@ -44,33 +59,59 @@ sources:
       domains:
         - eventbrite.com.au
     - name: Humanitix Gold Coast
-      method: llm
+      method: scraper
       domains:
         - humanitix.com
+      homepage: https://humanitix.com/
+      listingUrls:
+        - https://humanitix.com/au/events/online
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: Meetup Gold Coast
       method: llm
       domains:
         - meetup.com
     - name: Fever Gold Coast
-      method: llm
+      method: scraper
       domains:
         - feverup.com
+      homepage: https://feverup.com/
+      listingUrls:
+        - https://feverup.com/en/gold-coast
+      strategy: html
+      note: >-
+        Verified by probe-sources 2026-09-08: 45 dated event(s) via html (listing URL found by web
+        search, then verified).
     - name: Bandsintown Gold Coast
-      method: llm
+      method: scraper
       domains:
         - bandsintown.com
+      listingUrls:
+        - https://bandsintown.com/whats-on
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 36 dated event(s) via html.'
     - name: Songkick Gold Coast
       method: llm
       domains:
         - songkick.com
     - name: Yelo Gold Coast Gig Guide
-      method: llm
+      method: scraper
       domains:
         - yelo.live
+      homepage: https://yelo.live/
+      listingUrls:
+        - https://yelo.live/gigs/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: Scout Magazine Gold Coast
-      method: llm
+      method: scraper
       domains:
         - scoutmagazine.com.au
+      homepage: https://scoutmagazine.com.au/
+      listingUrls:
+        - https://www.scoutmagazine.com.au/tag/whatson/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: Gold Coast Australia events guide
       method: llm
       domains:
@@ -100,22 +141,28 @@ sources:
       domains:
         - weekendnotes.com
     - name: Destination Gold Coast
-      method: llm
+      method: scraper
       domains:
         - destinationgoldcoast.com
-    - name: What's On Gold Coast
-      method: llm
-      domains:
-        - whatsonegoldcoast.com.au
+      homepage: https://destinationgoldcoast.com/
+      listingUrls:
+        - https://destinationgoldcoast.com/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 9 dated event(s) via html.'
   institutions:
     - name: City of Gold Coast
       method: llm
       domains:
         - goldcoast.qld.gov.au
     - name: HOTA, Home of the Arts
-      method: llm
+      method: scraper
       domains:
         - hota.com.au
+      homepage: https://hota.com.au/
+      listingUrls:
+        - https://hota.com.au/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 10 dated event(s) via html.'
     - name: Bond University events
       method: llm
       domains:
@@ -127,27 +174,51 @@ sources:
     - name: The Star Gold Coast
       method: llm
       domains:
+        - thestargoldcoast.com.au
         - star.com.au
     - name: Gold Coast Convention and Exhibition Centre
-      method: llm
+      method: scraper
       domains:
         - gccec.com.au
+      homepage: https://gccec.com.au/
+      listingUrls:
+        - https://www.gccec.com.au/whats-on/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: People First Stadium / Heritage Bank Stadium
       method: llm
       domains:
         - peoplefirststadium.com.au
+      listingUrls:
+        - https://peoplefirststadium.com.au/whats-on
+        - https://peoplefirststadium.com.au/events/aflw-gold-coast-suns-vs--collingwood-
+        - https://peoplefirststadium.com.au/events/aflw-gold-coast-suns-vs--st-kilda-
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
     - name: Currumbin Wildlife Sanctuary events
-      method: llm
+      method: scraper
       domains:
         - currumbinsanctuary.com.au
+      listingUrls:
+        - https://currumbinsanctuary.com.au/visit/see-and-do/whats-on/
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://currumbinsanctuary.com.au/
+      strategy: html
     - name: Sea World / Village Roadshow theme park events
       method: llm
       domains:
         - seaworld.com.au
     - name: Gold Coast Turf Club / Magic Millions
-      method: llm
+      method: scraper
       domains:
         - gctc.com.au
+      homepage: https://gctc.com.au/
+      listingUrls:
+        - https://gctc.com.au/wp-json/tribe/events/v1/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 9 dated event(s) via html.'
     - name: AACTA Festival
       method: llm
       domains:
@@ -161,21 +232,36 @@ sources:
       domains:
         - pacificairshow.com
     - name: SWELL Sculpture Festival Currumbin
-      method: llm
+      method: scraper
       domains:
         - swellsculpture.com.au
+      homepage: https://swellsculpture.com.au/
+      listingUrls:
+        - https://www.swellsculpture.com.au/whats-on/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
     - name: Bleach* Festival
-      method: llm
+      method: scraper
       domains:
         - bleachfestival.com.au
+      homepage: https://bleachfestival.com.au/
+      listingUrls:
+        - https://bleachfestival.com.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: Gold Coast Film Festival
       method: llm
       domains:
         - gcfilmfestival.com
     - name: Somerset Storyfest
-      method: llm
+      method: scraper
       domains:
         - storyfest.com.au
+      homepage: https://storyfest.com.au/
+      listingUrls:
+        - https://storyfest.com.au/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
     - name: Griffith University Events Calendar
       method: llm
       domains:
@@ -191,9 +277,15 @@ sources:
     - name: Sea World, Movie World, Dreamworld
       method: llm
     - name: Southern Cross University Gold Coast
-      method: llm
+      method: scraper
       domains:
         - scu.edu.au
+      homepage: https://scu.edu.au/
+      listingUrls:
+        - https://www.scu.edu.au/engage/events/
+        - https://www.scu.edu.au/business-law-and-arts/events/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 17 dated event(s) via html.'
     - name: Q1 SkyPoint
       method: llm
       domains:
@@ -203,13 +295,14 @@ sources:
       domains:
         - dreamworld.com.au
     - name: City of Gold Coast Libraries
-      method: llm
+      method: scraper
       domains:
         - cityofgoldcoast.com.au
-    - name: The Star Gold Coast
-      method: llm
-      domains:
-        - thestargoldcoast.com.au
+      homepage: https://cityofgoldcoast.com.au/
+      listingUrls:
+        - https://cityofgoldcoast.com.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
     - name: Gold Coast Public Library Webinars and Online Events
       method: llm
       domains:
@@ -240,25 +333,37 @@ sources:
         - friendsgcrbg.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: TAFE Queensland Gold Coast
-      method: llm
+      method: scraper
       domains:
         - tafeqld.edu.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://tafeqld.edu.au/
+      listingUrls:
+        - https://tafeqld.edu.au/news-and-events/news
+      strategy: html
     - name: Yugambeh Museum
       method: llm
       domains:
         - yugambeh.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Anthea Polson Art
-      method: llm
+      method: scraper
       domains:
         - antheapolsonart.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://antheapolsonart.com.au/
+      listingUrls:
+        - https://antheapolsonart.com.au/exhibitions/
+      strategy: html
     - name: Gallery One
-      method: llm
+      method: scraper
       domains:
         - gallery-one.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://gallery-one.com.au/
+      listingUrls:
+        - https://gallery-one.com.au/exhibition/
+      strategy: html
     - name: Royal Queensland Art Society Gold Coast Gallery
       method: llm
       domains:
@@ -290,10 +395,15 @@ sources:
         - davidhart.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Gold Coast Potters Association
-      method: llm
+      method: scraper
       domains:
         - goldcoastpotters.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 9 dated event(s) via html.'
+      homepage: https://goldcoastpotters.com/
+      listingUrls:
+        - https://goldcoastpotters.com/classes/
+        - https://goldcoastpotters.com/events/
+      strategy: html
     - name: The Gold Coast Art School
       method: llm
       domains:
@@ -335,10 +445,15 @@ sources:
         - boomerangart.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Currumbin RSL
-      method: llm
+      method: scraper
       domains:
         - currumbinrsl.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 20 dated event(s) via html.'
+      homepage: https://currumbinrsl.com.au/
+      listingUrls:
+        - https://currumbinrsl.com.au/wp-json/tribe/events/v1/events
+        - https://www.currumbinrsl.com.au/events/
+      strategy: html
     - name: Southport Surf Life Saving Club
       method: llm
       domains:
@@ -355,10 +470,14 @@ sources:
         - nobbyssurfclub.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Mermaid Beach Surf Life Saving Club
-      method: llm
+      method: scraper
       domains:
         - mermaidslsc.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 9 dated event(s) via html.'
+      homepage: https://mermaidslsc.org.au/
+      listingUrls:
+        - https://www.mermaidslsc.org.au/whats-on/
+      strategy: html
     - name: Palm Beach Surf Life Saving Club
       method: llm
       domains:
@@ -373,62 +492,112 @@ sources:
       method: llm
       domains:
         - surfersparadiseslsc.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
+      listingUrls:
+        - https://surfersparadiseslsc.com.au/whats-on/
     - name: Club Mermaid
       method: llm
       domains:
         - clubmermaid.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Paradise Point Bowls Club
-      method: llm
+      method: scraper
       domains:
         - paradisepointbowls.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 28 dated event(s) via html.'
+      homepage: https://paradisepointbowls.com.au/
+      listingUrls:
+        - https://www.paradisepointbowls.com.au/whats-on/
+      strategy: html
     - name: Club Broadbeach
-      method: llm
+      method: scraper
       domains:
         - clubbroadbeach.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 37 dated event(s) via jsonld.'
+      homepage: https://clubbroadbeach.com.au/
+      listingUrls:
+        - https://www.clubbroadbeach.com.au/whats-on/
+        - https://clubbroadbeach.com.au/wp-json/tribe/events/v1/events
+      strategy: jsonld
+      venue:
+        name: Club Broadbeach
+        address: 169 Surf Parade
+        suburb: Broadbeach
     - name: Club Musgrave
-      method: llm
+      method: scraper
       domains:
         - clubmusgrave.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://clubmusgrave.com.au/
+      listingUrls:
+        - https://clubmusgrave.com.au/whats-on
+      strategy: html
     - name: Tallebudgera Surf Club
-      method: llm
+      method: scraper
       domains:
         - tallesurfclub.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://tallesurfclub.com/
+      listingUrls:
+        - https://tallesurfclub.com/events/
+      strategy: html
     - name: Coolangatta Surf Life Saving Club
-      method: llm
+      method: scraper
       domains:
         - coolangattasurfclub.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 24 dated event(s) via jsonld.'
+      homepage: https://coolangattasurfclub.com/
+      listingUrls:
+        - https://coolangattasurfclub.com/events/
+      strategy: jsonld
+      venue:
+        name: ''
+        address: ''
+        suburb: null
     - name: Burleigh Sports Club
-      method: llm
+      method: scraper
       domains:
         - burleighsports.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
+      homepage: https://burleighsports.com.au/
+      listingUrls:
+        - https://www.burleighsports.com.au/events/
+      strategy: html
     - name: Burleigh Leagues Club
-      method: llm
+      method: scraper
       domains:
         - burleighleagues.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 9 dated event(s) via html.'
+      homepage: https://burleighleagues.com.au/
+      listingUrls:
+        - https://burleighleagues.com.au/events/
+      strategy: html
     - name: Club Mudgeeraba
       method: llm
       domains:
         - clubmudgeeraba.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Gold Coast Bowls and Community Club
-      method: llm
+      method: scraper
       domains:
         - gclawnbowls.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
+      homepage: https://gclawnbowls.com.au/
+      listingUrls:
+        - https://gclawnbowls.com.au/wp-json/tribe/events/v1/events
+      strategy: html
     - name: Nerang Community Bowls Club
-      method: llm
+      method: scraper
       domains:
         - nerangbowls.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 8 dated event(s) via html.'
+      homepage: https://nerangbowls.com.au/
+      listingUrls:
+        - https://nerangbowls.com.au/whats-on/
+      strategy: html
     - name: Wallaby Hotel
       method: llm
       domains:
@@ -440,10 +609,14 @@ sources:
         - pimpamatavern.net.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Nerang RSL & Memorial Club
-      method: llm
+      method: scraper
       domains:
         - nerangrsl.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
+      homepage: https://nerangrsl.com.au/
+      listingUrls:
+        - https://nerangrsl.com.au/
+      strategy: html
     - name: Helensvale Tavern
       method: llm
       domains:
@@ -495,20 +668,28 @@ sources:
         - gcco.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: National Academy of Performing Arts
-      method: llm
+      method: scraper
       domains:
         - napa.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://napa.com.au/
+      listingUrls:
+        - http://napa.com.au/calendar
+      strategy: html
     - name: Harmony in Paradise
       method: llm
       domains:
         - harmonyinparadise.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: The Blenders Chorus
-      method: llm
+      method: scraper
       domains:
         - theblenders.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://theblenders.com.au/
+      listingUrls:
+        - https://www.theblenders.com.au/events
+      strategy: html
     - name: Mixed Vocal Project
       method: llm
       domains:
@@ -553,7 +734,12 @@ sources:
       method: llm
       domains:
         - tmlittletheatre.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
+      listingUrls:
+        - https://www.tmlittletheatre.com.au/calendar
     - name: Elements Theatre Co
       method: llm
       domains:
@@ -590,10 +776,15 @@ sources:
         - friendsofoperainc.org
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: The Farm
-      method: llm
+      method: scraper
       domains:
         - thefarm.company
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
+      homepage: https://thefarm.company/
+      listingUrls:
+        - https://www.thefarm.company/calendar?format=json
+        - https://www.thefarm.company/calendar
+      strategy: html
     - name: Tamborine Mountain Regional Botanic Gardens
       method: llm
       domains:
@@ -603,7 +794,13 @@ sources:
       method: llm
       domains:
         - goldcoastastronomy.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
+      listingUrls:
+        - https://goldcoastastronomy.com.au/calendar
+        - https://goldcoastastronomy.com.au/shop/workshops/8
     - name: Springbrook Research Observatory
       method: llm
       domains:
@@ -615,10 +812,14 @@ sources:
         - goldcoastfhs.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Gecko Environment Council
-      method: llm
+      method: scraper
       domains:
         - gecko.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://gecko.org.au/
+      listingUrls:
+        - https://gecko.org.au/category/events/
+      strategy: html
     - name: Watergum
       method: llm
       domains:
@@ -640,10 +841,14 @@ sources:
         - templinhistoricalmuseum.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Friends of Federation Walk
-      method: llm
+      method: scraper
       domains:
         - federationwalk.org
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://federationwalk.org/
+      listingUrls:
+        - https://federationwalk.org/events/
+      strategy: html
     - name: Tamborine Mountain Landcare
       method: llm
       domains:
@@ -666,13 +871,23 @@ sources:
       note: Suggested by discover-sources 2026-09-02; not yet verified.
   independents:
     - name: Miami Marketta
-      method: llm
+      method: scraper
       domains:
         - miamimarketta.com
+      homepage: https://miamimarketta.com/
+      listingUrls:
+        - https://www.miamimarketta.com/ticketed-events?format=json
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 10 dated event(s) via html.'
     - name: Mo's Desert Clubhouse
-      method: llm
+      method: scraper
       domains:
         - mosdesertclubhouse.com
+      homepage: https://mosdesertclubhouse.com/
+      listingUrls:
+        - https://www.mosdesertclubhouse.com/whatson
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 9 dated event(s) via html.'
     - name: The SoundLounge, Currumbin RSL
       method: llm
       domains:
@@ -699,6 +914,14 @@ sources:
       method: llm
       domains:
         - 19karen.com.au
+      listingUrls:
+        - https://www.19karen.com.au/exhibitions/
+        - https://www.19karen.com.au/category/events/
+        - https://www.19karen.com.au/exhibitions/directors-choice-group-show/
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
     - name: The Walls Art Space, Miami
       method: llm
       domains:
@@ -728,11 +951,18 @@ sources:
     - name: Gold Coast TechSpace
       method: llm
       domains:
+        - goldcoasttechspace.org.au
         - gctechspace.org
     - name: Cohort Innovation Space
-      method: llm
+      method: scraper
       domains:
         - cohortspace.com.au
+      homepage: https://cohortspace.com.au/
+      listingUrls:
+        - https://cohortspace.com.au/wp-json/tribe/events/v1/events
+        - https://cohortspace.com.au/events/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
     - name: Gold Coast Board Games Club
       method: llm
       domains:
@@ -753,10 +983,9 @@ sources:
       method: llm
     - name: Burleigh Town Hotel
       method: llm
-    - name: Tallebudgera Surf Club
-      method: llm
-    - name: Currumbin RSL
-      method: llm
+      domains:
+        - burleightownhotel.com.au
+      note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Cauldron Distillery, Tamborine Mountain
       method: llm
     - name: Meraki Connection, Burleigh Heads
@@ -787,18 +1016,39 @@ sources:
       method: llm
       domains:
         - dendevine.com.au
+      listingUrls:
+        - https://dendevine.com.au/whats-on
+        - https://www.youtube.com/youtubei/v1/player?prettyPrint=false
+        - https://www.weebly.com/app/marketing/leadForm/4b24a2c1-e4de-4818-8362-8c9d68f1c4bf
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
     - name: Soho Place
       method: llm
     - name: elsewhere, Surfers Paradise
-      method: llm
+      method: scraper
       domains:
         - elsewherebar.com
+      homepage: https://elsewherebar.com/
+      listingUrls:
+        - https://www.elsewherebar.com/events?format=json
+        - https://www.elsewherebar.com/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
     - name: Burleigh Bazaar
       method: llm
+      domains:
+        - burleighbazaar.com.au
     - name: Mint Art House, Burleigh Heads
-      method: llm
+      method: scraper
       domains:
         - mintarthouse.com
+      homepage: https://mintarthouse.com/
+      listingUrls:
+        - https://www.mintarthouse.com/events?format=json
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
     - name: The Hive Art Gallery & Studio, Currumbin Waters
       method: llm
       domains:
@@ -855,18 +1105,10 @@ sources:
       method: llm
       domains:
         - thecraftparlour.com.au
-    - name: Burleigh Bazaar
-      method: llm
-      domains:
-        - burleighbazaar.com.au
     - name: The Shedrock
       method: llm
       domains:
         - theshedrock.com
-    - name: Gold Coast TechSpace
-      method: llm
-      domains:
-        - goldcoasttechspace.org.au
     - name: Gallery 8
       method: llm
       domains:
@@ -929,30 +1171,51 @@ sources:
         - groundwatercmf.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Southport Sharks
-      method: llm
+      method: scraper
       domains:
         - southportsharks.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 47 dated event(s) via html.'
+      homepage: https://southportsharks.com.au/
+      listingUrls:
+        - https://southportsharks.com.au/whats-on/
+      strategy: html
     - name: SOPO Southport RSL
-      method: llm
+      method: scraper
       domains:
         - sopo.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 12 dated event(s) via jsonld.'
+      homepage: https://sopo.com.au/
+      listingUrls:
+        - https://sopo.com.au/events/
+      strategy: jsonld
+      venue:
+        name: Palm Springs
+        address: ''
+        suburb: null
     - name: Club Helensvale
-      method: llm
+      method: scraper
       domains:
         - clubhelensvale.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 11 dated event(s) via html.'
+      homepage: https://clubhelensvale.com.au/
+      listingUrls:
+        - https://clubhelensvale.com.au/wp-json/tribe/events/v1/events
+        - https://clubhelensvale.com.au/events/
+      strategy: html
     - name: Southport Bowls Club
       method: llm
       domains:
         - theclubsouthport.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Southport Yacht Club
-      method: llm
+      method: scraper
       domains:
         - southportyachtclub.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://southportyachtclub.com.au/
+      listingUrls:
+        - https://southportyachtclub.com.au/whats-on/
+      strategy: html
     - name: Kurrawa Surf Club
       method: llm
       domains:
@@ -1009,10 +1272,19 @@ sources:
         - burleighbrewing.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Twin Towns Clubs & Resorts
-      method: llm
+      method: scraper
       domains:
         - twintowns.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 32 dated event(s) via jsonld.'
+      homepage: https://twintowns.com.au/
+      listingUrls:
+        - https://twintowns.com.au/whats-on/
+        - https://twintowns.com.au/events/
+      strategy: jsonld
+      venue:
+        name: The Stage (18+)
+        address: 2 Wharf st, Tweed Heads, NSW 2486
+        suburb: null
     - name: Seagulls Rugby League Football Club
       method: llm
       domains:
@@ -1044,20 +1316,28 @@ sources:
         - draculas.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Based Comedy
-      method: llm
+      method: scraper
       domains:
         - basedcomedy.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
+      homepage: https://basedcomedy.com.au/
+      listingUrls:
+        - https://basedcomedy.com.au/
+      strategy: html
     - name: GC Laughs Festival
       method: llm
       domains:
         - gclaughs.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Blah Blah Blah Improv
-      method: llm
+      method: scraper
       domains:
         - blahblahblahimprov.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://blahblahblahimprov.com/
+      listingUrls:
+        - https://www.blahblahblahimprov.com/shows
+      strategy: html
     - name: Bare Comedy
       method: llm
       domains:
@@ -1084,30 +1364,37 @@ sources:
         - comedycommune.store
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Gold Coast Tavern
-      method: llm
+      method: scraper
       domains:
         - goldcoasttavern.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://goldcoasttavern.com.au/
+      listingUrls:
+        - https://goldcoasttavern.com.au/whats-on/
+      strategy: html
     - name: Mano's Bar & Grill
       method: llm
       domains:
         - manostedderave.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
-    - name: Burleigh Town Hotel
-      method: llm
-      domains:
-        - burleightownhotel.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: RQ's Tavern Robina
-      method: llm
+      method: scraper
       domains:
         - rqsrobina.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://rqsrobina.com.au/
+      listingUrls:
+        - https://rqsrobina.com.au/whatson/
+      strategy: html
     - name: Finn McCool's Gold Coast
-      method: llm
+      method: scraper
       domains:
         - finnmccoolsgoldcoast.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://finnmccoolsgoldcoast.com.au/
+      listingUrls:
+        - http://finnmccoolsgoldcoast.com.au/whats-on/
+      strategy: html
     - name: Cecil Hotel, Southport
       method: llm
       domains:

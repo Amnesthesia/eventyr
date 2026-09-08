@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tony
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1vwypec@dothings
+DTSTART;TZID=Australia/Brisbane:20260825T123000
+DTEND;TZID=Australia/Brisbane:20260825T143000
+SUMMARY:Tony
+DESCRIPTION:A 19-year-old Anthony Bourdain travels to Provincetown and stum
+ bles into the chaotic world of a restaurant kitchen\, setting off a summer
+  that will shape the cou
+LOCATION:Cinema 2
+URL:https://hota.com.au/events/tony
+END:VEVENT
+END:VCALENDAR

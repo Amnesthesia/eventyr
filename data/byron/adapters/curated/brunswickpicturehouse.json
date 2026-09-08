@@ -1,0 +1,100 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "brunswickpicturehouse",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Plastic Country",
+      "datetime": "Wed 9 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-09T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Brunswick Picture House, Brunswick Heads NSW",
+      "link": "https://brunswickpicturehouse.com/the-plastic-country-9-sep/",
+      "cost": "GENERAL — Free screening but registration mandatory",
+      "source": "Brunswick Picture House",
+      "description": "Join us for a special screening of The Plastic Country , a powerful new Australian documentary that uncovers the true scale of our nation’s plastic crisis and its impacts on our environment, wildlife, and human health. A panel with the filmmaker, some local ocean advocates and community changemakers will follow the screening. Following filmmaker and ocean advocate Kal Glanznig, The Plastic Country takes audiences on a remarkable journey across Australia, from the remote shores of East Arnhem Land to bustling urban waterways and the halls of Parliament House. Along the way, Kal meets scientists, Traditional Owners, wildlife carers, campaigners and industry leaders who reveal how deeply plastic pollution has infiltrated our ecosystems and increasingly, our own bodies. Filmed over two years and featuring music from acclaimed First Nations band King Stingray, the documentary blends breathtaking Australian landscapes with personal storytelling and investigative journalism to explore one of the most pressing environmental and public health challenges of our time. Australia is one of the highest producers of plastic waste per person in the world, with Australians using around three times the global average amount of plastic. The Plastic Country shines a light on the consequences of this dependence while highlighting practical solutions that are already helping reduce plastic pollution and create a more sustainable future. More than a documentary, The Plastic Country is a call to action. It aims to shift the conversation around plastic pollution from a distant environmental concern to an urgent human health and policy issue, encouraging stronger action to reduce plastic production, support reusable alternatives, and prevent waste at its source. Whether you’re passionate about protecting our oceans, concerned about human health, or interested in creating positive change in your community, this screening offers an inspiring and eye-opening opportunity to learn, reflect and take action. Come along, be informed, and discover how together we can help turn the tide on plastic pollution.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "documentary",
+        "environment",
+        "activism",
+        "film"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Michael Hing: How Are We Supposed To Live Like This?",
+      "datetime": "Fri 11 Sep, 7:00 AM",
+      "datetime_iso": "2026-09-11T07:00:00",
+      "datetime_end_iso": "",
+      "location": "Brunswick Picture House, Brunswick Heads NSW",
+      "link": "https://brunswickpicturehouse.com/michael-hing-how-are-we-supposed-to-live-like-this-11-sep/",
+      "cost": "GENERAL — $38 (inclusive of booking fee)",
+      "source": "Brunswick Picture House",
+      "description": "Life is increasingly insane. Nothing makes sense. Everything is chaos, and we’re all just expected to keep on going? The planet is on fire, money is imaginary, we are ruled over by a moronic class of preening narcissists, but every day you’re just meant to go to work and come home and pretend you don’t notice that we’re being gouged at every corner and there are fewer and fewer Arnott’s shapes in every packet. Unrelated to all this, Michael Hing is developing a brand new hour of comedy.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "standup",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Ray O’Leary: I Can See O’Leary Now the Ray Has Gone",
+      "datetime": "Sat 12 Sep, 7:00 AM",
+      "datetime_iso": "2026-09-12T07:00:00",
+      "datetime_end_iso": "",
+      "location": "Brunswick Picture House, Brunswick Heads NSW",
+      "link": "https://brunswickpicturehouse.com/ray-oleary-i-can-see-oleary-now-ray-has-gone-12-sep/",
+      "cost": "GENERAL — $40 (plus booking fee)",
+      "source": "Brunswick Picture House",
+      "description": "When Ray O’Leary (Taskmaster NZ, Have You Been Paying Attention?, Best Show nominee Melbourne Comedy Festival) was born, winter changed to spring, a new star appeared in the heavens, and a double rainbow spontaneously appeared. With this auspicious start, it is no wonder he became leader of North Korea in 1994 until his untimely death in 2011. Despite this minor setback, he found time to bring you a whole new show.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "standup",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Brunswick Heads Public School presents Beachside Boogie",
+      "datetime": "Tue 15 Sep, 12:30 PM – Wed 16 Sep",
+      "datetime_iso": "2026-09-15T12:30:00",
+      "datetime_end_iso": "2026-09-16",
+      "location": "Brunswick Picture House, Brunswick Heads NSW",
+      "link": "https://brunswickpicturehouse.com/brunswick-heads-public-school-presents-beachside-boogie-15-16-sep/",
+      "cost": "GENERAL — DAY 12:30PM SHOWS — $10 (plus booking fee); GENERAL — NIGHT 5:30PM SHOWS — $15 (plus booking fee)",
+      "source": "Brunswick Picture House",
+      "description": "Brand new musical from BH Public School! Dive into Brunswick Heads Public school’s latest family musical, Beachside Boogie, an unforgettable adventure on what begins as an ordinary day of Term 4 Sport celebrating friendship, courage and growing up in Bruns.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "musical",
+        "family",
+        "theatre",
+        "local"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

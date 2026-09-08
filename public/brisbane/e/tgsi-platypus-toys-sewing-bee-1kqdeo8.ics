@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TGSI Platypus Toys Sewing Bee
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1kqdeo8@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T123000
+DTEND;TZID=Australia/Brisbane:20260918T143000
+SUMMARY:TGSI Platypus Toys Sewing Bee
+DESCRIPTION:Join Us to Create Platypus Toys for a Good Cause! Help us craft
+  adorable platypus toys to sell within the community and raise funds for o
+ ur platypus rewilding project. No prior experience is necessary! If you ca
+ n\, please bring your own sewing machine and any materials you’re willin
+ g to share (fabric\, thread\, stuffing\, buttons\, etc.). […]
+LOCATION:Paten Park Native Nursery\, 57 Paten Road
+URL:https://thegapsustainability.org/event/tgsi-platypus-toys-sewing-bee-2-
+ 2-3/2026-09-18/
+END:VEVENT
+END:VCALENDAR

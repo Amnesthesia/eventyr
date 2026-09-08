@@ -98,7 +98,8 @@ needed a correction.
   `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`, `curatedPath()`; re-exports
   everything from `shared.ts` so pipeline modules have one import site.
 - `src/adapters/` — the scrape path: `probe.ts` (find/verify listing URLs), `fetch.ts`
-  (`robots-parser` for robots.txt, rate limits, conditional GET), `extract.ts` (JSON-LD),
+  (rate limits, conditional GET; robots.txt is deliberately not consulted as a
+  permission check — see its header), `extract.ts` (JSON-LD),
   `embeddedJson.ts`
   (Next.js/hydration state), `llmExtract.ts` (LLM over page text), `dates.ts` (all date
   parsing — never an LLM), `normalise.ts`, `annotate.ts`, `collect.ts`.
@@ -235,7 +236,7 @@ Apply these to new code in this repo. They exist because each one has already co
 
 ### Libraries and style
 
-- **Use a proven library for parsing and transport.** Dates, HTML, robots, TLS fingerprinting — all
+- **Use a proven library for parsing and transport.** Dates, HTML, TLS fingerprinting — all
   have correct implementations. Hand-rolled regex is a bug queue.
 - **Verify an edit landed.** After a scripted edit, grep for the result before building on it.
 - **Comment the why, especially the non-obvious.** Note the failure a guard prevents and the measured

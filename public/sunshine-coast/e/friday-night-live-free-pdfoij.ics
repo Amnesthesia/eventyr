@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Friday Night Live & Free
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-pdfoij@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T153000
+DTEND;TZID=Australia/Brisbane:20260918T220000
+SUMMARY:Friday Night Live & Free
+DESCRIPTION:Friday Night Live & Free 3.30pm – Nick Rivers 7.30pm – TBC 
+ Please note: While we do our best to keep our Live & Free Entertainment sc
+ hedule up to date\, last-minute changes can occur. For the latest informat
+ ion and any schedule updates\, please follow our social media channels.
+LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
+ nd\, 4551
+URL:https://caloundrarsl.com.au/event/friday-night-live-free-7/
+END:VEVENT
+END:VCALENDAR

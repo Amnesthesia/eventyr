@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Faulty Towers: The Original Dining Experience
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-2ve944@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T190000
+DTEND;TZID=Australia/Brisbane:20260918T210000
+SUMMARY:Faulty Towers: The Original Dining Experience
+DESCRIPTION:Basil\, Manuel and Sybil are in town – and they’re bringing
+  a healthy dose of mayhem to your door. Fully immersive\, highly interacti
+ ve and completely original…
+LOCATION:SunPAC
+URL:https://www.sunpac.net.au/faulty-towers-the-original-dining-experience-
+ 2/
+END:VEVENT
+END:VCALENDAR

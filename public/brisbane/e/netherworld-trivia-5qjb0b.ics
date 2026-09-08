@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Netherworld Trivia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-5qjb0b@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T183000
+DTEND;TZID=Australia/Brisbane:20260916T210000
+SUMMARY:Netherworld Trivia
+DESCRIPTION:Netherworld’s weekly Trivia! Focusing on general pop culture\
+ , you’ve got to be current and not-so-current on your movie\, television
+ \, games and weird event knowledge. Prizes for the top 3 teams and enamel 
+ pins for the winning team! It happens every Wednesday in the Netherworld a
+ t 6.30pm sharp. Registration is necessary and tables are seated on a first
+  in best dressed basis. Registration opens the Thursday beforehand and you
+  can sign up via trivia.netherworldarcade.com.
+LOCATION:Netherworld\, 186 Brunswick Street
+URL:https://www.netherworldarcade.com/event/netherworld-trivia-5/
+END:VEVENT
+END:VCALENDAR

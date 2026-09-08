@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Young Writers' Dinner
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-ifq586@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T170000
+DTEND;TZID=Australia/Brisbane:20260910T190000
+SUMMARY:Young Writers' Dinner
+DESCRIPTION:Step into the ultimate arena of literacy fun! The Great Young W
+ riters’ Showdown is a fast-paced\, laugh-filled games night designed for
+  curious minds aged 10 and up. Work with our stellar line up of authors to
+  compete in a variety of challenges. From nail-biting spelling bee rounds 
+ to chaotic book cover guessing and laugh-out-loud illustration challenges\
+ , this event celebrates words in all their wild forms. Bring your skills\,
+  flex your pencils\, and compete for glory\, because in this game\, the ri
+ ght word wins! Participating authors include Sami Bayly\, Mick Elliott\, G
+ eorge Ivanoff\, Rachel Jackson\, Richard Kinnon and Liv Lorkin.
+LOCATION:Nogo Station
+URL:https://storyfest.com.au/
+END:VEVENT
+END:VCALENDAR

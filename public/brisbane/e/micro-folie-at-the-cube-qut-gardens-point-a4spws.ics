@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Micro-Folie at the Cube (QUT Gardens Point)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-a4spws@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Micro-Folie at the Cube (QUT Gardens Point)
+DESCRIPTION:Thanks to a unique partnership between Alliance Française de B
+ risbane and QUT\, you can now embark on a cultural journey like no other a
+ nd visit iconic venues such as the Louvre Museum\, the Palace of Versaille
+ s\, and the Picasso Museum\, all right here in our vibrant city.
+LOCATION:the Cube (QUT Gardens Point)
+URL:https://www.afbrisbane.com/whats-on/micro-folie/
+END:VEVENT
+END:VCALENDAR

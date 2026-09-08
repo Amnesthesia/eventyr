@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Repair Cafe The Gap
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ub3bpp@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T093000
+DTEND;TZID=Australia/Brisbane:20260919T120000
+SUMMARY:Repair Cafe The Gap
+DESCRIPTION:We operate on the third Saturday of every month\, except Decemb
+ er\, from 10am – 1pm. Bookings are preferred\, but not essential. Bookin
+ gs open on the first Saturday of the month\, via this link: https://www.tr
+ ybooking.com/eventlist/repaircafethegap?embed Our volunteer repairers have
+  a great range of skills between them. These are the sorts of things they 
+ will be happy […]
+LOCATION:Rivercity Church Basement\, 59 Settlement Road\, The Gap\, QLD\, 4
+ 061
+URL:https://thegapsustainability.org/event/repair-cafe-the-gap/2026-09-19/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Koala Breakfast at Currumbin Wildlife Sanctuary
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1uta096@dothings
+DTSTART;VALUE=DATE:20240807
+DTEND;VALUE=DATE:20261228
+SUMMARY:Koala Breakfast at Currumbin Wildlife Sanctuary
+DESCRIPTION:Enjoy a delicious breakfast alongside an Aussie Icon.Spend your
+  morning with passionate Wildlife Keepers in the presence of everyone's fa
+ vourite Aussie icon ...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/koala-breakfast-at-currumbin-wi
+ ldlife-sanctuary
+END:VEVENT
+END:VCALENDAR

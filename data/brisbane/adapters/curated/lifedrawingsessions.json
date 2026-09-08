@@ -1,0 +1,98 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "lifedrawingsessions",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Junk Bar",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "The Junk Bar, New Farm, Brisbane",
+      "link": "https://www.lifedrawingsessions.com.au/the-junk-bar",
+      "cost": "See link",
+      "source": "Life Drawing Sessions",
+      "description": "Set in the Saskwatchian inspired Basement of The Junk Bar in New Farm, Brisbane. We are here on the Second Saturday of the month 2:00 - 4:00pm. Check the webpage for dates.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "drawing",
+        "creative"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Miami Marketta",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Miami Marketta, Gold Coast",
+      "link": "https://www.lifedrawingsessions.com.au/miami-marketta",
+      "cost": "See link",
+      "source": "Life Drawing Sessions",
+      "description": "Our newest venture on the Gold Coast! Join us at the infamous Miami Marketta on the 1st & 3rd Wednesday of the month.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "drawing",
+        "creative"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "THE JUNK BAR",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "The Junk Bar, New Farm, Brisbane",
+      "link": "https://www.lifedrawingsessions.com.au/the-junk-bar",
+      "cost": "See link",
+      "source": "Life Drawing Sessions",
+      "description": "Set in the Saskwatchian inspired Basement of The Junk Bar in New Farm, Brisbane. We are here on the Second Saturday of the month 2:00 - 4:00pm. Check the webpage for dates.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "drawing",
+        "creative"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "MIAMI MARKETTA",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Miami Marketta, Gold Coast",
+      "link": "https://lifedrawingsessions.com.au/miami-marketta",
+      "cost": "See link",
+      "source": "Life Drawing Sessions",
+      "description": "Our newest venture on the Gold Coast! Join us at the infamous Miami Marketta on the 1st & 3rd Wednesday of the month.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "drawing",
+        "creative"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

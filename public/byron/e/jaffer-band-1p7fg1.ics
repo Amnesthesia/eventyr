@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jaffer Band
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1p7fg1@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T180000
+DTEND;TZID=Australia/Brisbane:20260910T220000
+SUMMARY:Jaffer Band
+DESCRIPTION:
+LOCATION:Beach Hotel
+URL:https://www.beachhotel.com.au/event/jaffer-band/
+END:VEVENT
+END:VCALENDAR

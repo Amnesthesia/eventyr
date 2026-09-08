@@ -1,0 +1,79 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "bangacademyofperformingarts",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Junior Acting & Musical Theatre",
+      "datetime": "Tue 8 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-08T16:00:00",
+      "datetime_end_iso": "2026-09-08T17:00:00",
+      "location": "Bangalow",
+      "link": "https://bangacademyofperformingarts.com/courses",
+      "cost": "See link",
+      "source": "Bang! Academy of Performing Arts",
+      "description": "We offer Acting & Musical Theatre classes in Bangalow for students aged 6-12yrs (Primary). Having the ability to think creatively and work collaboratively is what we encourage at BANG! Students will learn the dramatic techniques of characterisation, improvisation, physical theatre and script work alongside life skills such as group work, listening, taking direction and offering ideas and all while having a fun time! At the end of each term there will be a short 15 minute presentation for families to share what we have worked on through the term. All BANG! facilitators are industry professionals and are highly trained in their field within the Performing Arts. Most hold tertiary degrees in either Education and/or the Performing Arts! We value what we teach and love sharing what we know!",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "acting",
+        "musical theatre",
+        "kids",
+        "performing arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Pre-Teen Acting & Musical Theatre",
+      "datetime": "Tue 8 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-08T17:00:00",
+      "datetime_end_iso": "2026-09-08T18:00:00",
+      "location": "Bangalow",
+      "link": "https://bangacademyofperformingarts.com/courses",
+      "cost": "See link",
+      "source": "Bang! Academy of Performing Arts",
+      "description": "We offer Acting & Musical Theatre classes in Bangalow for students aged 6-12yrs (Primary). Having the ability to think creatively and work collaboratively is what we encourage at BANG! Students will learn the dramatic techniques of characterisation, improvisation, physical theatre and script work alongside life skills such as group work, listening, taking direction and offering ideas and all while having a fun time! At the end of each term there will be a short 15 minute presentation for families to share what we have worked on through the term. All BANG! facilitators are industry professionals and are highly trained in their field within the Performing Arts. Most hold tertiary degrees in either Education and/or the Performing Arts! We value what we teach and love sharing what we know!",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "acting",
+        "musical theatre",
+        "kids",
+        "performing arts"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Teens Acting for Stage & Screen - Rhythm Academy",
+      "datetime": "Tue 8 Sep, 4:30 PM",
+      "datetime_iso": "2026-09-08T16:30:00",
+      "datetime_end_iso": "2026-09-08T18:00:00",
+      "location": "Bangalow",
+      "link": "https://bangacademyofperformingarts.com/rhythm-courses-2",
+      "cost": "See link",
+      "source": "Bang! Academy of Performing Arts",
+      "description": "Rhythm is our teen base. We offer term by term courses in the Performing Arts for teens to build skills, confidence and work towards solid outcomes. We aim to pin point what teens want, and tailor our courses to allow students to not only enjoy what they are learning but to hopefully then use their skills to promote local employment opportunities and performing arts culture within our local region. We hope to connect the dots between teens and pre-proffessional industry experience.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "acting",
+        "teens",
+        "performing arts",
+        "drama"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

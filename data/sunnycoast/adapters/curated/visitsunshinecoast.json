@@ -1,0 +1,98 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "aggregators",
+  "source_id": "visitsunshinecoast",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Mary Valley Scarecrow Festival",
+      "datetime": "Tue 1 Sep – Wed 30 Sep",
+      "datetime_iso": "2026-09-01",
+      "datetime_end_iso": "2026-09-30",
+      "location": "Imbil",
+      "link": "https://www.visitsunshinecoast.com/event/56b265fe7b935fbe730e5033/mary-valley-scarecrow-festival",
+      "cost": "See link",
+      "source": "Visit Sunshine Coast",
+      "description": "The Mary Valley Scarecrow Festival is back! It's a popular Sunshine Coast event that began in Maleny",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "festival",
+        "family",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Big Love Festival",
+      "datetime": "Fri 11 Sep – Sun 13 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-13",
+      "location": "Eudlo",
+      "link": "https://www.visitsunshinecoast.com/event/6a826c1ddc7fc4af0c22293c/big-love-festival",
+      "cost": "See link",
+      "source": "Visit Sunshine Coast",
+      "description": "Awaken your heart, expand your mind, and celebrate community at the Big Love Festival 2026 a one-of-",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "festival",
+        "community",
+        "music"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Heart of Gold International Short Film Festival",
+      "datetime": "Sat 12 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Gympie",
+      "link": "https://www.visitsunshinecoast.com/event/66aaede985243f271046961c/heart-of-gold-international-short-film-festival",
+      "cost": "See link",
+      "source": "Visit Sunshine Coast",
+      "description": "Every year Gympie comes alive with film lovers from far and wide to celebrate short films that are u",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "cinema",
+        "festival"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Mitchell Creek Rock N Blues Festival",
+      "datetime": "Fri 19 Sep 2025 – Sun 20 Sep 2026",
+      "datetime_iso": "2025-09-19",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Kandanga",
+      "link": "https://www.visitsunshinecoast.com/event/56b262d7d5f1565045da686c/mitchell-creek-rock-n-blues-festival",
+      "cost": "See link",
+      "source": "Visit Sunshine Coast",
+      "description": "A unique boutique music and camping event designed to get you out of town and take you on an advent",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "blues",
+        "festival"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Felons x Brisbane Festival Run Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mxhz2d@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Felons x Brisbane Festival Run Club
+DESCRIPTION:Brisbane Festival's back for another lap and we’re stoked to 
+ be the official beer! To celebrate\, we’re hosting a special run club th
+ at finishes at ...
+LOCATION:Felons Brewing Co
+URL:https://felonsbrewingco.com.au/blogs/whats-on/brisbane-festival-x-felon
+ s-run-club
+END:VEVENT
+END:VCALENDAR

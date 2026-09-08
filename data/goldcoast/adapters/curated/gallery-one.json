@@ -1,0 +1,32 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "gallery-one",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Anna Fitzpatrick",
+      "datetime": "Sat 5 Sep – Wed 30 Sep",
+      "datetime_iso": "2026-09-05",
+      "datetime_end_iso": "2026-09-30",
+      "location": "Gallery One",
+      "link": "https://gallery-one.com.au/exhibition/anna-fitzpatrick/",
+      "cost": "See link",
+      "source": "Gallery One",
+      "description": "Boxing Day on Sydney Harbour",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "photography",
+        "gallery",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

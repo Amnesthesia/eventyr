@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Line Dancing
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-uzx58p@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T183000
+DTEND;TZID=Australia/Brisbane:20260911T203000
+SUMMARY:Line Dancing
+DESCRIPTION:YEEHAW\, BALLINA! Line Dancing is back on Fri Sept 11th! Free E
+ ntry
+LOCATION:The Courtyard
+URL:https://www.shawsbayhotel.com.au/whats-on/line-dancing/
+END:VEVENT
+END:VCALENDAR

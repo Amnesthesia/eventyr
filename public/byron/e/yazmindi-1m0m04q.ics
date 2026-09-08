@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:YAZMINDI
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1m0m04q@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T180000
+DTEND;TZID=Australia/Brisbane:20260910T203000
+SUMMARY:YAZMINDI
+DESCRIPTION:HOTEL BRUNSWICK | THU 10 SEPT Yazmindi’s authentic sound and 
+ evocative stories are a far-reaching crowd-favourite. A cornerstone of her
+  musical prowess is her ability to craft authentic stories and evocative s
+ oundscapes that build around her swelling harmonies. Yazmindi takes an hon
+ est\, and sometimes tongue-in-cheek approach to authentically reflect on p
+ owerful moments of love\, loss\, societal pressures\, youthful optimism\, 
+ and determination. Traversing genres\, a common theme of empowerment\, esp
+ ecially towards young women runs strong and true to Yazmindi’s core valu
+ es. FREE ENTRY
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/yazmindi-6/
+END:VEVENT
+END:VCALENDAR

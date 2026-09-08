@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sierra
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ta6c04@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T200000
+DTEND;TZID=Australia/Brisbane:20260911T220000
+SUMMARY:Sierra
+DESCRIPTION:Raw. Infectious. Groovy. Sierra is on a mission to make you mov
+ e. Brisbane born & raised trio featuring Charlie Mitchell on guitar and vo
+ cals\, ...
+LOCATION:Felons Brewing Co
+URL:https://felonsbrewingco.com.au/blogs/whats-on/sierra
+END:VEVENT
+END:VCALENDAR

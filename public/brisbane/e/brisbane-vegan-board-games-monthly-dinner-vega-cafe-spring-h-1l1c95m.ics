@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Vegan Board Games + monthly dinner @ Vega Cafe\, Spri
+ ng Hill
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1l1c95m@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:Brisbane Vegan Board Games + monthly dinner @ Vega Cafe\, Spring Hi
+ ll
+DESCRIPTION:Come along to our event on the second Friday of every month whe
+ re you can eat\, drink\, chat and play games with like-minded people! We p
+ rovide games and will help you learn
+LOCATION:Vega Cafe\, 448 Boundary St\, 1\, Spring Hill\, Spring Hill
+URL:https://www.meetup.com/brisveganmeetup/events/315437743/
+END:VEVENT
+END:VCALENDAR

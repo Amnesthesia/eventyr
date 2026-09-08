@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bayside Waterfront Walk with Optional Dinner
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-48zmli@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T163000
+DTEND;TZID=Australia/Brisbane:20260913T193000
+SUMMARY:Bayside Waterfront Walk with Optional Dinner
+DESCRIPTION:Please join us and enjoy a relaxed walk with sea views\, sea br
+ eezes overlooking beautiful Moreton Bay and a walk through the locally pop
+ ular Mangrove Boardwalk. The Walk:
+LOCATION:Wynnum Jetty\, Wynnum Esplanade\, Wynnum\, QL\, Wynnum\, QL
+URL:https://www.meetup.com/friends-you-havent-met-yet/events/315648319/
+END:VEVENT
+END:VCALENDAR

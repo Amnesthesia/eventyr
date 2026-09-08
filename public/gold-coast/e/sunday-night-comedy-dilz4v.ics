@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Night Comedy
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-dilz4v@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T183000
+DTEND;TZID=Australia/Brisbane:20260913T203000
+SUMMARY:Sunday Night Comedy
+DESCRIPTION:Fill your night with laughter at Atrium Bar’s Comedy Club\, p
+ resented by Based Comedy and hosted by local radio personality Danny Lakey
+ ! Enjoy a new line up of local and national comedians every week\, and set
+ tle into one of our comfy bean bags for a night full of fun and food. Rese
+ rve space for your group at the link.
+LOCATION:Atrium Bar
+URL:https://basedcomedy.com.au/the-shows/atrium-bar.html
+END:VEVENT
+END:VCALENDAR

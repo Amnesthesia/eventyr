@@ -62,10 +62,15 @@ import {
 	jsonLdNodeToRawFields,
 } from "./extract.ts";
 import { withExtractionCache } from "./extractionCache.ts";
+import {
+	feedUrlsFromHtml,
+	parseFeed,
+	wpJsonRoutesToFeedUrls,
+} from "./feeds.ts";
 import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
 import { brisbaneNaive, isPast, withinWindow } from "./normalise.ts";
-import { stripToReadableText } from "./readableText.ts";
+import { densestWindow, stripToReadableText } from "./readableText.ts";
 import type { PageExtractFn, RawCandidateFields } from "./types.ts";
 
 // --- tuning ---------------------------------------------------------------
@@ -95,6 +100,12 @@ const MAX_KEPT_URLS = 3;
  */
 const MAX_EVALUATIONS = 2;
 /**
+ * Feed URLs tried per source. They are free to evaluate (no model call), so
+ * the only cost is the fetch — but one hostile <head> full of <link rel> tags
+ * must not open an unbounded number of them.
+ */
+const MAX_FEED_CANDIDATES = 4;
+/**
  * Promotion needs two things, because they answer two different questions.
  *
  * MIN_DATED_TO_PROMOTE — "is this a listing page at all?" A magazine homepage
@@ -102,7 +113,7 @@ const MAX_EVALUATIONS = 2;
  * theurbanlist.com/ was promoted under the old ≥1 rule and then scraped zero
  * every week).
  *
- * MIN_IN_WINDOW_TO_PROMOTE — "is there anything to publish?" One is enough:
+ * MIN_UPCOMING_TO_PROMOTE — "is there anything still to come?" One is enough:
  * a real venue listing page during a quiet fortnight still belongs on the
  * scrape path (Queensland Theatre's /whats-on had 5 dated, 1 upcoming).
  *
@@ -112,11 +123,24 @@ const MAX_EVALUATIONS = 2;
  * (doo-bop's /events: 30 dated, 30 past, 0 upcoming).
  */
 const MIN_DATED_TO_PROMOTE = 3;
-// Two, not one: a single in-window event is as easily an article, a stray
-// heading or a venue-hire page as a real listing, and the marginal promotions
-// it produced (national aggregators yielding one event a week) cost a weekly
-// fetch and extraction for nothing.
-const MIN_IN_WINDOW_TO_PROMOTE = 2;
+/**
+ * One *upcoming* event is enough — where upcoming means anywhere in the
+ * future, not just inside the fortnight we happen to publish next.
+ *
+ * This was 2-inside-the-window, which asked the "is there anything to
+ * publish?" question so strictly that it swallowed the "is this a real
+ * listing?" question too, and rejected 30 sources that had genuinely
+ * extracted events: Suncorp Stadium (26 dated, all beyond the window),
+ * Queensland Theatre (5 dated, 1 in window — the very case the docstring
+ * above cites as one that *should* promote), Backbone (22 dated).
+ *
+ * The risk the old value guarded against — an article or venue-hire page with
+ * one stray date — is carried by MIN_DATED_TO_PROMOTE and MAX_PAST_RATIO
+ * instead, which is where it belongs: those ask about the page, this asks
+ * about the programme. A venue with a quiet fortnight but a season on sale is
+ * still a scrape target; the weekly window filter decides what publishes.
+ */
+const MIN_UPCOMING_TO_PROMOTE = 1;
 const MAX_PAST_RATIO = 10;
 /**
  * Sources per batched listing-URL request, and how many of those requests run
@@ -128,16 +152,40 @@ const MAX_PAST_RATIO = 10;
 const DISCOVERY_MODEL = "gemini-3.1-flash-lite";
 const URL_BATCH_SIZE = 20;
 const URL_BATCH_CONCURRENCY = 4;
-const CONCURRENT_HOSTS = 6;
+/**
+ * Sources probed at once.
+ *
+ * Raised from 6: this work is I/O-bound against *different* hosts, and the
+ * politeness that matters (1 req/s, 2 concurrent) is enforced per host inside
+ * SourceFetcher, so a higher ceiling here does not hit any single site harder.
+ * Gemini calls are bounded separately by the shared limiter in
+ * providers/gemini.ts, so they queue rather than burst.
+ *
+ * What this actually buys: a brisbane run is 427 hosts, and the long pole is
+ * hosts that are slow or dead rather than anything compute-bound.
+ */
+const CONCURRENT_HOSTS = Number(process.env.PROBE_CONCURRENT_HOSTS ?? 20);
 /** Wall-clock ceiling per source. Generous — a source legitimately fetches a
  * sitemap tree plus several pages — but finite. */
 const SOURCE_TIMEOUT_MS = Number(
 	process.env.PROBE_SOURCE_TIMEOUT_MS ?? 180_000,
 );
 
-// Platforms that gate listings behind logins/APIs — they stay on LLM search.
-const PLATFORMS =
-	/eventbrite|meetup|facebook|humanitix|ticketmaster|moshtix|oztix|eventfinda|allevents|tripadvisor|feverup|songkick|bandsintown|instagram|linktr\.ee/i;
+/**
+ * Hosts that stay on LLM search because there is genuinely nothing to fetch:
+ * their listings sit behind a login or are a link-in-bio redirect, so no URL
+ * we could request returns an event list.
+ *
+ * The ticketing aggregators are deliberately NOT here any more. They were,
+ * on the grounds that they gate listings behind logins/APIs — but that was
+ * never tested, and when it was, feverup.com yielded 120 candidates (56 in
+ * window) through the ordinary ladder while allevents.in fetched fine and
+ * extracted nothing. Neither outcome is something a regex should be deciding
+ * in advance: probe fetches them and promotes only on extracted events, so
+ * the ones that work earn their place and the ones that do not are recorded
+ * as declined. Code decides.
+ */
+const PLATFORMS = /facebook|instagram|linktr\.ee|tripadvisor/i;
 
 const RESULTS_PATH = join(DATA_ROOT, "_probe", "results.jsonl");
 /**
@@ -189,7 +237,6 @@ type Classification =
 	| "html"
 	| "spa-empty"
 	| "no-events"
-	| "robots-disallowed"
 	| "blocked"
 	| "dead"
 	| "platform"
@@ -230,7 +277,7 @@ interface ProbeResult {
 
 interface PageAttempt {
 	url: string;
-	via: "declared" | "sitemap" | "llm" | "common" | "homepage";
+	via: "declared" | "sitemap" | "llm" | "common" | "homepage" | "feed";
 	textLength: number;
 	dateHits: number;
 	jsonLdNodes: number;
@@ -240,6 +287,7 @@ interface PageAttempt {
 	dated?: number;
 	inWindow?: number;
 	past?: number;
+	later?: number;
 	outcome: string;
 }
 
@@ -346,8 +394,8 @@ interface Fetched {
  * Path patterns that name an events listing. Used to filter a site's own
  * sitemap — the cheap, deterministic equivalent of a `site: inurl:` search,
  * with no third-party API and no tokens. (An actual Google dork would mean
- * either a Custom Search key or fetching google.com/search, which Google's
- * robots.txt disallows and this fetcher honours.)
+ * either a Custom Search key or scraping google.com/search, which reliably
+ * serves a challenge page rather than results.)
  */
 const LISTING_PATH =
 	/\/(whats[-_]?on|what-s-on|events?|event[-_]?calendar|calendar|shows?|performances?|programme?|line[-_]?up|gigs?|gig[-_]?guide|upcoming|exhibitions?|workshops?|classes|screenings?|buy[-_]?tickets|tickets?|this[-_]?week)(\/|$|\?)/i;
@@ -504,7 +552,7 @@ function dumpSitemap(
  *
  * This is the deterministic equivalent of a `site: inurl:events` search. A real
  * Google dork would need a Custom Search key or a fetch of google.com/search,
- * which Google's robots.txt disallows and this fetcher honours.
+ * which serves a challenge page rather than results.
  */
 async function sitemapCandidates(
 	prober: Prober,
@@ -659,6 +707,56 @@ class Prober {
 		return "error" in page ? null : page.body;
 	}
 
+	/**
+	 * A site's own event API, parsed deterministically — no model, no budget.
+	 * Returns null when the body is not a feed, so the caller falls through to
+	 * the paid path.
+	 */
+	evaluateFeed(page: Fetched): {
+		strategy: "html";
+		titles: string[];
+		count: number;
+		inWindow: number;
+		past: number;
+		later: number;
+	} | null {
+		const feed = parseFeed(page.body, page.url);
+		if (!feed) return null;
+		const fields = feed.events;
+		const events = fields
+			.map((f) =>
+				toCandidateEvent(f, {
+					sourceId: "probe",
+					sourceUrl: page.url,
+					fetchedAt: new Date().toISOString(),
+					strategy: "feed",
+				}),
+			)
+			.filter((c) => c.title && c.startISO);
+		let inWindow = 0;
+		let past = 0;
+		let later = 0;
+		for (const c of events) {
+			const start = brisbaneNaive(c.startISO);
+			const end = brisbaneNaive(c.endISO);
+			if (isPast(start, end, WINDOW_FROM)) past++;
+			else if (withinWindow(start, end, WINDOW_FROM, WINDOW_TO)) inWindow++;
+			else later++;
+		}
+		return {
+			// Descriptive only: SourceEntry.strategy is documented as not
+			// switching behaviour, and pageAdapter re-recognises the feed by
+			// response shape at collect time. Widening the stored enum would
+			// repeat the "ics"/"rss" mistake types.ts warns about.
+			strategy: "html",
+			titles: events.slice(0, 3).map((c) => c.title as string),
+			count: events.length,
+			inWindow,
+			past,
+			later,
+		};
+	}
+
 	async fetchPage(
 		sourceId: string,
 		url: string,
@@ -700,6 +798,7 @@ class Prober {
 		count: number;
 		inWindow: number;
 		past: number;
+		later: number;
 	} | null> {
 		// A listing page earns promotion on events in the window we actually
 		// publish, not on raw totals — otherwise an archive, which always has
@@ -717,16 +816,22 @@ class Prober {
 				.filter((c) => c.title && c.startISO);
 		const countWindow = (
 			fields: RawCandidateFields[],
-		): { inWindow: number; past: number } => {
+		): { inWindow: number; past: number; later: number } => {
 			let inWindow = 0;
 			let past = 0;
+			let later = 0;
 			for (const c of datedEvents(fields)) {
 				const start = brisbaneNaive(c.startISO);
 				const end = brisbaneNaive(c.endISO);
 				if (isPast(start, end, WINDOW_FROM)) past++;
 				else if (withinWindow(start, end, WINDOW_FROM, WINDOW_TO)) inWindow++;
+				// Beyond the publishing window but still ahead of us. This used
+				// to fall into no bucket at all, so a venue whose programme
+				// starts next month counted as zero: Suncorp Stadium extracted
+				// 26 dated events, 0 past, and was rejected as having none.
+				else later++;
 			}
-			return { inWindow, past };
+			return { inWindow, past, later };
 		};
 		const dated = (fields: RawCandidateFields[]): string[] =>
 			fields
@@ -757,7 +862,11 @@ class Prober {
 		// One batch's worth only. Probing answers "does this page list dated
 		// events?", and a listing page answers that at the top; the tail is
 		// footer and related-content boilerplate. Halves the calls per page.
-		const text = stripToReadableText(page.body, page.url).slice(0, 12000);
+		// The densest 12 KB, not the first: classbento.com.au has 3832
+		// date-shaped fragments and none in its first 12 KB, so reading from
+		// position 0 concluded that a page with thousands of dated workshops
+		// listed no events at all.
+		const text = densestWindow(stripToReadableText(page.body, page.url), 12000);
 		const fields = await this.extractPage(text, sourceName);
 		const titles = dated(fields);
 		if (titles.length === 0) return null;
@@ -866,6 +975,7 @@ async function probeEntry(
 			count: number;
 			inWindow: number;
 			past: number;
+			later: number;
 		};
 	}[] = [];
 	let best: PageSignals | null = null;
@@ -888,7 +998,50 @@ async function probeEntry(
 		best = homePage.signals;
 	}
 
+	// Feed candidates go to the front of the queue: they are exact, need no
+	// model call, and answer definitively either way. beachhotel.com.au is the
+	// case in point — every HTML URL on it returns a bot-wall shell, while its
+	// own wp-json route serves 384 upcoming events over plain HTTP.
+	//
+	// Nothing here is guessed. The URLs come from what the site says about
+	// itself: its <link rel> tags, and its /wp-json/ route index. Guessing the
+	// tribe/events path across 24 hosts scored 1/24, whereas asking the route
+	// index found Modern Events Calendar on two of the very same hosts.
+	const feedCandidates: string[] = [];
+	if (!("error" in homePage)) {
+		feedCandidates.push(...feedUrlsFromHtml(homePage.body, homePage.url));
+		// A signal that costs nothing decides whether the extra fetch happens:
+		// only ask for a WordPress route index on something that looks like
+		// WordPress.
+		if (/\/wp-json\/|wp-content/i.test(homePage.body)) {
+			const root = await prober.fetchPage(
+				sourceId,
+				new URL("/wp-json/", homePage.url).href,
+				host,
+			);
+			if (!("error" in root)) {
+				feedCandidates.push(
+					...wpJsonRoutesToFeedUrls(root.body, new URL(homePage.url).origin),
+				);
+			}
+		}
+		// Squarespace answers ?format=json on any real collection path, so the
+		// listing candidates the sitemap already produced double as feed URLs.
+		// The 404s seen when probing this by hand came from guessing /events on
+		// sites that have no such page — not from the API being absent.
+		if (/squarespace|static1\.squarespace\.com/i.test(homePage.body)) {
+			for (const c of candidates.slice(0, 2)) {
+				feedCandidates.push(
+					`${c.url}${c.url.includes("?") ? "&" : "?"}format=json`,
+				);
+			}
+		}
+	}
+
 	const queue: { url: string; via: PageAttempt["via"]; page?: Fetched }[] = [
+		...[...new Set(feedCandidates)]
+			.slice(0, MAX_FEED_CANDIDATES)
+			.map((url) => ({ url, via: "feed" as const })),
 		...candidates.slice(0, MAX_CANDIDATE_FETCHES),
 		...("error" in homePage
 			? []
@@ -912,6 +1065,50 @@ async function probeEntry(
 		}
 		if (!best || page.signals.textLength > best.textLength) best = page.signals;
 
+		// Deterministic and free, so it neither needs nor spends the evaluation
+		// budget — and a feed that answers "nothing" is a real answer, recorded
+		// as such rather than falling through to a paid guess at the same page.
+		const feedVerdict = prober.evaluateFeed(page);
+		if (feedVerdict) {
+			log.push({
+				url: page.url,
+				via,
+				textLength: page.signals.textLength,
+				dateHits: page.signals.dateHits,
+				jsonLdNodes: 0,
+				events: feedVerdict.inWindow,
+				dated: feedVerdict.count,
+				inWindow: feedVerdict.inWindow,
+				past: feedVerdict.past,
+				later: feedVerdict.later,
+				outcome: `${feedVerdict.inWindow} in window, ${feedVerdict.later} later, ${feedVerdict.past} past (${feedVerdict.count} dated) via feed`,
+			});
+			if (feedVerdict.count > 0) {
+				verified.push({ url: page.url, via, page, verdict: feedVerdict });
+			}
+			continue;
+		}
+
+		// A URL fetched *because* it claimed to be a feed is judged only as a
+		// feed. Letting it fall through here spent one of the two paid
+		// evaluations on, variously, an RSS document, a route index and a
+		// wp/v2/pages descriptor — starving the real listing page behind it.
+		// Measured: Byron Community College, a working scraper source with 3
+		// events, came back "no-events" and would have been demoted, because
+		// its /course-category/earn/ listing was never reached.
+		if (via === "feed") {
+			log.push({
+				url: page.url,
+				via,
+				textLength: page.signals.textLength,
+				dateHits: page.signals.dateHits,
+				jsonLdNodes: page.signals.jsonLdEventNodes,
+				events: null,
+				outcome: "not a recognised feed format",
+			});
+			continue;
+		}
+
 		if (evaluations >= MAX_EVALUATIONS) break;
 		evaluations++;
 		const verdict = await prober.evaluate(page, entry.name);
@@ -925,8 +1122,9 @@ async function probeEntry(
 			dated: verdict?.count ?? 0,
 			inWindow: verdict?.inWindow ?? 0,
 			past: verdict?.past ?? 0,
+			later: verdict?.later ?? 0,
 			outcome: verdict
-				? `${verdict.inWindow} in window, ${verdict.past} past (${verdict.count} dated) via ${verdict.strategy}`
+				? `${verdict.inWindow} in window, ${verdict.later} later, ${verdict.past} past (${verdict.count} dated) via ${verdict.strategy}`
 				: gatePassed(page.signals)
 					? "no events extracted"
 					: "below signal gate (shell or non-listing page)",
@@ -944,11 +1142,16 @@ async function probeEntry(
 		// which promoted magazine homepages on a single incidental date and
 		// archives on hundreds of finished ones — 15 of the 53 sources it
 		// promoted went on to scrape zero.
+		const upcomingOf = (v: { inWindow: number; later: number }) =>
+			v.inWindow + v.later;
 		const qualifying = verified.filter(
 			(v) =>
 				v.verdict.count >= MIN_DATED_TO_PROMOTE &&
-				v.verdict.inWindow >= MIN_IN_WINDOW_TO_PROMOTE &&
-				v.verdict.past <= MAX_PAST_RATIO * v.verdict.inWindow,
+				upcomingOf(v.verdict) >= MIN_UPCOMING_TO_PROMOTE &&
+				// Archive check now measured against everything still ahead, so a
+				// gallery listing finished shows beside a season on sale is not
+				// judged only on the fortnight in front of it.
+				v.verdict.past <= MAX_PAST_RATIO * upcomingOf(v.verdict),
 		);
 		if (qualifying.length === 0) {
 			return {
@@ -959,13 +1162,13 @@ async function probeEntry(
 				attempts: log,
 				errors: [
 					...errors,
-					`no listing page cleared the gate (needs ${MIN_DATED_TO_PROMOTE}+ dated events, ${MIN_IN_WINDOW_TO_PROMOTE}+ inside ${WINDOW_FROM}..${WINDOW_TO}, and not archive-dominated)`,
+					`no listing page cleared the gate (needs ${MIN_DATED_TO_PROMOTE}+ dated events, ${MIN_UPCOMING_TO_PROMOTE}+ still upcoming, and not archive-dominated)`,
 				],
 			};
 		}
 		verified = qualifying.sort(
 			(a, b) =>
-				b.verdict.inWindow - a.verdict.inWindow ||
+				upcomingOf(b.verdict) - upcomingOf(a.verdict) ||
 				b.verdict.count - a.verdict.count,
 		);
 		// Sites commonly serve the same listing at two paths (/events and
@@ -1001,11 +1204,9 @@ async function probeEntry(
 	// read" from "we never got a page at all", since the fixes differ.
 	const allFailed = log.every((a) => a.events === null);
 	const cls: Classification = allFailed
-		? errors.some((e) => /robots\.txt disallows/.test(e))
-			? "robots-disallowed"
-			: errors.some((e) => /HTTP 403/.test(e))
-				? "blocked"
-				: "dead"
+		? errors.some((e) => /HTTP 403/.test(e))
+			? "blocked"
+			: "dead"
 		: classifyFailure(best);
 
 	return {
@@ -1293,8 +1494,9 @@ export interface ListingUrlRequest {
  * back because names repeat across the source lists and so can't be the key.
  *
  * The answers are never trusted. Every URL returned is fetched and has to
- * yield MIN_IN_WINDOW_TO_PROMOTE dated events inside the publishing window
- * before its source is promoted, and off-host answers are dropped outright.
+ * clear the promotion gate — MIN_DATED_TO_PROMOTE dated events, at least
+ * MIN_UPCOMING_TO_PROMOTE of them still ahead — before its source is
+ * promoted, and off-host answers are dropped outright.
  */
 export interface ListingUrlFinder {
 	batch(sources: ListingUrlRequest[]): Promise<Map<string, string[]>>;
@@ -1475,23 +1677,59 @@ async function main(): Promise<void> {
 	 * exactly why this needs to sit above them — the hang was in something they
 	 * do not cover.
 	 */
-	async function probeWithTimeout(item: {
-		entry: SourceEntry;
-		city: string;
-		tier: SourceTier;
-	}): Promise<ProbeResult | null> {
+	/**
+	 * probeEntry under a per-source deadline, falling back to a `dead` result.
+	 *
+	 * Both passes go through here. Pass 2 used to call probeEntry directly with
+	 * no deadline at all, and one source that never settled hung a whole
+	 * goldcoast run: 116 of 117 pass-2 sources done, then 28 minutes of
+	 * nothing, no report, no promotions applied, and the process still alive at
+	 * 2% CPU. A timeout that only covers one of two call sites is not a timeout
+	 * — which is why the fallback lives in here rather than at the caller.
+	 */
+	async function probeWithDeadline(
+		entry: SourceEntry,
+		city: string,
+		tier: SourceTier,
+		suggested: Map<string, string[]>,
+	): Promise<ProbeResult> {
+		const startedAt = Date.now();
 		let timer: NodeJS.Timeout | undefined;
 		const timeout = new Promise<null>((resolve) => {
 			timer = setTimeout(() => resolve(null), SOURCE_TIMEOUT_MS);
 		});
+		let settled: ProbeResult | null;
 		try {
-			return await Promise.race([
-				probeEntry(item.entry, item.city, item.tier, prober, suggestedByHost),
+			settled = await Promise.race([
+				probeEntry(entry, city, tier, prober, suggested),
 				timeout,
 			]);
 		} finally {
 			if (timer) clearTimeout(timer);
 		}
+		return (
+			settled ??
+			({
+				city,
+				tier,
+				name: entry.name,
+				host: normaliseHost(entry.domains?.[0]),
+				probedAt: new Date().toISOString(),
+				classification: "dead",
+				homepage: entry.homepage ?? null,
+				listingUrls: [],
+				strategy: null,
+				candidatesFound: 0,
+				sampleTitles: [],
+				venue: null,
+				foundVia: null,
+				signals: null,
+				attempts: [],
+				errors: [
+					`timed out after ${Math.round((Date.now() - startedAt) / 1000)}s — recorded as dead so the run can finish`,
+				],
+			} satisfies ProbeResult)
+		);
 	}
 
 	// Serialised: applyPromotions reads the YAML, rewrites it whole, and the
@@ -1510,33 +1748,15 @@ async function main(): Promise<void> {
 			const item = work[index++];
 			// Logged before the work starts, not after: when a source hangs, the
 			// last line printed is the only clue to which one it was.
-			const startedAt = Date.now();
 			console.log(
 				`  … [${completed + 1}/${work.length}] ${item.entry.name.slice(0, 44)}`,
 			);
-			const timedOut = await probeWithTimeout(item);
-			const result: ProbeResult =
-				timedOut ??
-				({
-					city: item.city,
-					tier: item.tier,
-					name: item.entry.name,
-					host: normaliseHost(item.entry.domains?.[0]),
-					probedAt: new Date().toISOString(),
-					classification: "dead",
-					homepage: item.entry.homepage ?? null,
-					listingUrls: [],
-					strategy: null,
-					candidatesFound: 0,
-					sampleTitles: [],
-					venue: null,
-					foundVia: null,
-					signals: null,
-					attempts: [],
-					errors: [
-						`timed out after ${Math.round((Date.now() - startedAt) / 1000)}s — recorded as dead so the run can finish`,
-					],
-				} satisfies ProbeResult);
+			const result = await probeWithDeadline(
+				item.entry,
+				item.city,
+				item.tier,
+				suggestedByHost,
+			);
 			appendResult(result);
 			completed++;
 			if (APPLY && completed % APPLY_EVERY === 0) await flushPromotions();
@@ -1588,11 +1808,10 @@ async function main(): Promise<void> {
 		if (retry.length > 0) {
 			let n = 0;
 			await mapWithConcurrency(retry, CONCURRENT_HOSTS, async (item) => {
-				const result = await probeEntry(
+				const result = await probeWithDeadline(
 					item.entry,
 					item.city,
 					item.tier,
-					prober,
 					asked,
 				);
 				appendResult(result);

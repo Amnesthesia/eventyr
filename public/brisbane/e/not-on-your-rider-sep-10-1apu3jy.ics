@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Not On Your Rider - Sep 10
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1apu3jy@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Not On Your Rider - Sep 10
+DESCRIPTION:Gather your team and join host and writer Aimon Clark (The Crea
+ ses/Isolation Trivia) alongside bandleader and music genius Simi Lacroix t
+ o cheer on...
+LOCATION:Felons Brewing Co
+URL:https://felonsbrewingco.com.au/blogs/whats-on/not-on-your-rider-july-9
+END:VEVENT
+END:VCALENDAR

@@ -5,8 +5,9 @@ import {
 	CATEGORY_EMOJI,
 	DATA_ROOT,
 	fmtDate,
+	isTopPick,
 	requireEnv,
-	TOP_PICK_THRESHOLD,
+	toISODate,
 } from "./common.ts";
 
 const CITY = requireEnv("CITY");
@@ -83,12 +84,12 @@ function formatWhatsapp(
 		];
 	}
 
-	const topPicks = events.filter(
-		(e) => ((e.score as number) ?? 0) >= TOP_PICK_THRESHOLD,
-	);
-	const remaining = events.filter(
-		(e) => ((e.score as number) ?? 0) < TOP_PICK_THRESHOLD,
-	);
+	// Both ends inside the week — see isTopPick. A standing exhibition is still
+	// in the digest, just not presented as one of this week's picks.
+	const windowStart = toISODate(monday);
+	const windowEnd = toISODate(sunday);
+	const topPicks = events.filter((e) => isTopPick(e, windowStart, windowEnd));
+	const remaining = events.filter((e) => !isTopPick(e, windowStart, windowEnd));
 
 	const messages: string[] = [];
 

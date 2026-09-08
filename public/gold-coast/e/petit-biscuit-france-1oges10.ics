@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:petit biscuit (france)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1oges10@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T170000
+DTEND;TZID=Australia/Brisbane:20260921T220000
+SUMMARY:petit biscuit (france)
+DESCRIPTION:#block-fdaf71a59953e0cfcb39 { --opacity: 100%\; --translate-x: 
+ 0px\; --translate-y: 0px\; --rotation: 0deg\; --scale-x: 100%\; --scale-y:
+  100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-x: 50%\; --origin-y: 50
+ %\; --block-transform: none\; opacity: var(--opacity\, 1)\; transform: var
+ (--block-transform)\; transform-origin: var(--origin-x) var(--origin-y)\; 
+ } In 2026\, Petit Biscuit returns to his roots: powerful\, emotional\, and
+  unifying electronic music. He kicked off the year with the release of Mov
+ ement I\, featuring tracks like his acclaimed rework of Radiohead’s Ever
+ ything In Its Right Place and The Forest (feat. Amixem)\, followed by Move
+ ment II\, including Let You Know (feat. Sonia Ammar) and Close Your Eyes (
+ with Forester). He capped off the summer with his first-ever DJ sets\, des
+ igned for major electronic stages. A renowned French electronic music prod
+ ucer\, Petit Biscuit has become a leading independent figure on the global
+  music scene. His success is built on a strong creative vision\, a clear m
+ usical direction\, and a rare ability to blend emotion with sonic power. W
+ ith 4 billion streams\, worldwide tours\, millions of YouTube views\, and 
+ two critically acclaimed albums (Presence & Parachute)\, 2026 marks a new 
+ chapter: sharper sound\, heavyweight collaborations\, and renewed stage en
+ ergy. Petit Biscuit now stands stronger than ever as a key reference in th
+ e French electronic scene. Presave Your Tickets Now! #block-90bbb21105b431
+ a26837 { --stroke-style: none\;--stroke-thickness: 6px\; } #block-90bbb211
+ 05b431a26837 .sqs-html-content { --tweak-text-block-padding: 6% 6% 6% 6%\;
+  --tweak-text-block-padding: initial\; } #block-90bbb21105b431a26837 { mix
+ -blend-mode: var(--tweak-text-block-blend )\; border-radius: var(--tweak-t
+ ext-block-radius)\; } #block-90bbb21105b431a26837 { --tweak-text-block-rad
+ ius: 0px 0px 0px 0px\; } #block-90bbb21105b431a26837 { } @media screen and
+  (max-width: 767px) { #block-90bbb21105b431a26837 { } } @media screen and 
+ (max-width: 767px) { #block-90bbb21105b431a26837 .sqs-html-content { } } @
+ media screen and (max-width: 767px) { } tickets #block-9fdd6abbc40a9092b6f
+ e { --sqs-block-content-flex: 0\; } #block-9fdd6abbc40a9092b6fe { --opacit
+ y: 100%\; --translate-x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --s
+ cale-x: 100%\; --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origi
+ n-x: 50%\; --origin-y: 50%\; --block-transform: none\; opacity: var(--opac
+ ity\, 1)\; transform: var(--block-transform)\; transform-origin: var(--ori
+ gin-x) var(--origin-y)\; }
+LOCATION:elsewhere\, 23 Cavill Avenue
+URL:https://www.elsewherebar.com/events/petitbiscuit
+END:VEVENT
+END:VCALENDAR

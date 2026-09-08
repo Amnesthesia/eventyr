@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:CATH & HIM
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-11gehgz@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T023000
+DTEND;TZID=Australia/Brisbane:20260920T043000
+SUMMARY:CATH & HIM
+DESCRIPTION:Cath & Him bring together their incredible musical talents to c
+ reate the most versatile Duo going around. With over 450 songs in their re
+ pertoire of classic party tracks and of course the best of today's hits\, 
+ no one misses out when Cath & Him perform. With over 13 years of experienc
+ e performing to a wide variety of audiences\, covering all styles of music
+  including: Pop\, Rock\, Disco\, Country etc. from the 1950's - Current To
+ p 40\, Cath & Him will have the crowd cheering for more. iF you're up for 
+ a sing-a-long\, dance or even just to sit\, relax and listen to\, then you
+ 're in for a real treat when Cath & Him take the stage.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/cath-him/
+END:VEVENT
+END:VCALENDAR

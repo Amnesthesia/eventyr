@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:2.5-Hour Ultimate Learn to Surf Adventure
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1i50q37@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270308
+SUMMARY:2.5-Hour Ultimate Learn to Surf Adventure
+DESCRIPTION:2.5-Hour Ultimate Learn to Surf Adventure in Gold Coast. Get yo
+ ur tickets on Fever now!
+LOCATION:1509 Gold Coast Hwy
+URL:https://feverup.com/m/167532
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bombshells
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-819q2@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Bombshells
+DESCRIPTION:With singing\, dancing\, comedy and the joys of sheer honesty\,
+  Joanna Murray-Smith's acclaimed play Bombshells is a journey from crisis 
+ to hilarity\, via the thoughts of a group of women all linked by more than
+  just their proximity to the edge\; a nervous bride-to-be\, an exhausted y
+ oung mother\, a widow with a yearning for the unexpected\, a broken-hearte
+ d cactus lover\, and a feisty teenage talent-quest competitor.
+LOCATION:Byron Theatre
+URL:https://www.byroncentre.com.au/theatre-events/bombshells
+END:VEVENT
+END:VCALENDAR

@@ -7,6 +7,28 @@
   "week_end": "2026-09-13",
   "events": [
     {
+      "title": "No One Gets Out of Here Alive",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/no-one-gets-out-of-here-alive",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Created by The Farm — known for bold physicality, emotional directness, and irreverent theatricality — No One Gets Out of Here Alive confronts mortality into a deeply visceral experience that takes us beyond words into the nature of dying.",
+      "image": "https://brisbanefestival.com.au/copy-of-setinstonemedia_thefarm_0426_farm-theatre-co-046-(2)",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "performance",
+        "death"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Shel We",
       "datetime": "Thu 10 Sep",
       "datetime_iso": "2026-09-10",
@@ -22,28 +44,6 @@
         "dance",
         "performance",
         "arts"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "No One Gets Out of Here Alive",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/no-one-gets-out-of-here-alive",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Created by The Farm — known for bold physicality, emotional directness, and irreverent theatricality — No One Gets Out of Here Alive confronts mortality into a deeply visceral experience that takes us beyond words into the nature of dying.",
-      "image": "https://brisbanefestival.com.au/copy-of-setinstonemedia_thefarm_0426_farm-theatre-co-046-(2)",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "performance",
-        "contemporary"
       ],
       "social": false,
       "intellectual": false,
@@ -85,9 +85,9 @@
       "image": "https://brisbanefestival.com.au/tiri_-te-araroa-woman-far-walking-credit-signy-bjorg",
       "category": "Arts / Exhibition",
       "tags": [
-        "indigenous",
+        "mapping",
         "culture",
-        "storytelling"
+        "history"
       ],
       "social": false,
       "intellectual": true,
@@ -107,9 +107,9 @@
       "image": "https://brisbanefestival.com.au/bf26_social_1080x1080_no_image-daybreaker",
       "category": "Social / Meetup",
       "tags": [
-        "wellness",
         "dance",
-        "yoga"
+        "wellness",
+        "morning"
       ],
       "social": true,
       "intellectual": false,
@@ -117,21 +117,21 @@
       "creative": false
     },
     {
-      "title": "LEGENDS (of the Golden Arches)",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/legends-of-the-golden-arches",
+      "link": "https://brisbanefestival.com.au/events/make-believe-magic",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "A rip-roaring ride plunging two best friends into the depths of the Chinese afterlife, crossing genres, realities, and theatrical convention with infectious zest.",
-      "image": "https://brisbanefestival.com.au/legends-hero-large",
+      "description": "Dance your cares away! The wild and wonderful creatures of ‘The Jim Henson Company’ are coming to GOMA. QAGOMA and Brisbane Festival are thrilled to be welcoming the Fraggles exclusively to Brisbane this September.",
+      "image": "https://brisbanefestival.com.au/qagoma_the-jim-henson-company-exhibition_1920x1080",
       "category": "Arts / Exhibition",
       "tags": [
-        "theatre",
-        "comedy",
-        "performance"
+        "puppets",
+        "film",
+        "exhibition"
       ],
       "social": false,
       "intellectual": false,
@@ -149,11 +149,77 @@
       "source": "Brisbane Festival",
       "description": "A murder. An interrogation. A clouded world of fantasy and fear.",
       "image": "https://brisbanefestival.com.au/brisbane-festival-scorched-earth-credit-pato-cassinoni",
-      "category": "Arts / Exhibition",
+      "category": "Concert / Music",
       "tags": [
         "theatre",
         "drama",
         "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "LEGENDS (of the Golden Arches)",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/legends-of-the-golden-arches",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "A rip-roaring ride plunging two best friends into the depths of the Chinese afterlife, crossing genres, realities, and theatrical convention with infectious zest.",
+      "image": "https://brisbanefestival.com.au/legends-hero-large",
+      "category": "Concert / Music",
+      "tags": [
+        "theatre",
+        "comedy",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Bleachers",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/bleachers",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Stories of loneliness and togetherness sit side by side in this new disability-led dance-theatre work by Sprung Ensemble — a collective of 10 d/Deaf and disabled artists from Bundjalung Country in Northern NSW.",
+      "image": "https://brisbanefestival.com.au/thomas-oliver_sprung_hires-17-(1)",
+      "category": "Concert / Music",
+      "tags": [
+        "dance",
+        "theatre",
+        "disability"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Not a Cult*",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/not-a-cult",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "A public spectacle of disconcerting joy.",
+      "image": "https://brisbanefestival.com.au/counterpilot_notacult_hero4_bymorganroberts2",
+      "category": "Community / Other",
+      "tags": [
+        "performance",
+        "spectacle",
+        "art"
       ],
       "social": false,
       "intellectual": false,
@@ -171,16 +237,104 @@
       "source": "Brisbane Festival",
       "description": "Hold onto your cowpats! After nearly two decades of seriously silly nonsense, Matt and Rich (aka The Listies) have whipped up their most ridiculous show yet — a turbo-charged mash-up of fan favourites, slapstick, songs, and a fresh batch of brand-new, freshly hatched gags. It's a comedy extravaganza for kidults aged 4 to 4 million (dinosaurs welcome).",
       "image": "https://brisbanefestival.com.au/hero-image-this-show-is-a-joke-1-photo-credit-andrew-wuttke",
-      "category": "Arts / Exhibition",
+      "category": "Concert / Music",
       "tags": [
         "comedy",
-        "family",
+        "kids",
         "performance"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "Manly Serenades",
+      "datetime": "Fri 11 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-11T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/brisbane-serenades-manly",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "A feel-good night of thrills, tunes and good times by the coast.",
+      "image": "https://brisbanefestival.com.au/copy-of-dsc03073-(1)",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "coastal",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Moorooka Block Party",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/moorooka-block-party-26",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "We are heading back to transform Peggs Park once again into one great big celebration of culture and community. It’s time to bring back the sounds, flavours and stories for one of the south side's most anticipated events of the year.",
+      "image": "https://brisbanefestival.com.au/jason-heera-hero",
+      "category": "Social / Meetup",
+      "tags": [
+        "community",
+        "culture",
+        "party"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Moorooka Feast",
+      "datetime": "Thu 10 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-10T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/moorooka-feast-26",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Join us for an evening of delicious food, great company, and meaningful connections as we gather around the table to celebrate community.",
+      "image": "https://brisbanefestival.com.au/moorooka-feast_brisbane-festival_nikita-pere-58",
+      "category": "Social / Meetup",
+      "tags": [
+        "food",
+        "community",
+        "dinner"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Sunrise Ceremony: Bikki Wantimaa",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/sunrise-ceremony-bikki-wantimaa",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Each Friday morning the Sunrise Ceremony: Bikki Wantimaa acknowledges and gives thanks to the lands on which the Festival takes place, honouring First Nations peoples who have witnessed the sunrise on these lands for thousands of years.",
+      "image": "https://brisbanefestival.com.au/finnmullen109a9521-crop",
+      "category": "Community / Other",
+      "tags": [
+        "ceremony",
+        "first nations",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     },
     {
       "title": "Generations & Dynasties: The Brady Family",
@@ -197,7 +351,7 @@
       "tags": [
         "storytelling",
         "music",
-        "culture"
+        "family"
       ],
       "social": true,
       "intellectual": true,
@@ -219,7 +373,7 @@
       "tags": [
         "storytelling",
         "music",
-        "culture"
+        "family"
       ],
       "social": true,
       "intellectual": true,
@@ -227,21 +381,43 @@
       "creative": true
     },
     {
-      "title": "Bleachers",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "title": "Pasifika Made",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/bleachers",
+      "link": "https://brisbanefestival.com.au/events/pasifika-made-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Stories of loneliness and togetherness sit side by side in this new disability-led dance-theatre work by Sprung Ensemble — a collective of 10 d/Deaf and disabled artists from Bundjalung Country in Northern NSW.",
-      "image": "https://brisbanefestival.com.au/thomas-oliver_sprung_hires-17-(1)",
+      "description": "Where Ancestral Knowledge Meets Contemporary Pacific Arts",
+      "image": "https://brisbanefestival.com.au/pasifikamade_bf_jadeferguson_@visualpoetssociety08.05_1655_re-edit-(1)",
       "category": "Arts / Exhibition",
       "tags": [
-        "dance",
-        "theatre",
-        "disability"
+        "pacific",
+        "culture",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Complete Bach Catalogue for Organ",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "From quiet contemplation to awe-inspiring grandeur.",
+      "image": "https://brisbanefestival.com.au/the-complete-bach-catalogue-brisbane-festival-credit-pete-wallis",
+      "category": "Concert / Music",
+      "tags": [
+        "bach",
+        "organ",
+        "classical"
       ],
       "social": false,
       "intellectual": false,
@@ -259,11 +435,11 @@
       "source": "Brisbane Festival",
       "description": "Two men hit the mat with scrappy energy, in a charged physical duet where exertion, resistance and care collide. They twist, tussle, grapple and brace — toe to toe in a work of dance-meets-wrestling that bristles with male intimacy, contest, and connection.",
       "image": "https://brisbanefestival.com.au/the-scramble_luther-wilson-and-nathan-turtur_photog-andrea-mae_mg_7096",
-      "category": "Arts / Exhibition",
+      "category": "Concert / Music",
       "tags": [
         "dance",
-        "performance",
-        "physicality"
+        "wrestling",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -293,48 +469,26 @@
       "creative": true
     },
     {
-      "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
+      "title": "RocKwiz Rocks Brisbane",
       "datetime": "Sat 12 Sep",
       "datetime_iso": "2026-09-12",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/make-believe-magic",
+      "link": "https://brisbanefestival.com.au/events/rockwiz-rocks-brisbane",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dance your cares away! The wild and wonderful creatures of ‘The Jim Henson Company’ are coming to GOMA. QAGOMA and Brisbane Festival are thrilled to be welcoming the Fraggles exclusively to Brisbane this September.",
-      "image": "https://brisbanefestival.com.au/qagoma_the-jim-henson-company-exhibition_1920x1080",
-      "category": "Arts / Exhibition",
+      "description": "Get ready Brissy, we are coming back to celebrate your fine city!",
+      "image": "https://brisbanefestival.com.au/3",
+      "category": "Concert / Music",
       "tags": [
-        "puppets",
-        "family",
-        "exhibition"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Moorooka Feast",
-      "datetime": "Thu 10 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-10T18:00:00",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/moorooka-feast-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Join us for an evening of delicious food, great company, and meaningful connections as we gather around the table to celebrate community.",
-      "image": "https://brisbanefestival.com.au/moorooka-feast_brisbane-festival_nikita-pere-58",
-      "category": "Social / Meetup",
-      "tags": [
-        "community",
-        "food",
-        "local"
+        "quiz",
+        "music",
+        "trivia"
       ],
       "social": true,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "Common People Dance Eisteddfod",
@@ -352,138 +506,6 @@
         "dance",
         "competition",
         "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Pasifika Made",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/pasifika-made-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Where Ancestral Knowledge Meets Contemporary Pacific Arts",
-      "image": "https://brisbanefestival.com.au/pasifikamade_bf_jadeferguson_@visualpoetssociety08.05_1655_re-edit-(1)",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "pacific",
-        "culture",
-        "art"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Moorooka Block Party",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/moorooka-block-party-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "We are heading back to transform Peggs Park once again into one great big celebration of culture and community. It’s time to bring back the sounds, flavours and stories for one of the south side's most anticipated events of the year.",
-      "image": "https://brisbanefestival.com.au/jason-heera-hero",
-      "category": "Social / Meetup",
-      "tags": [
-        "community",
-        "culture",
-        "local"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Manly Serenades",
-      "datetime": "Fri 11 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-11T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/brisbane-serenades-manly",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A feel-good night of thrills, tunes and good times by the coast.",
-      "image": "https://brisbanefestival.com.au/copy-of-dsc03073-(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "local",
-        "performance"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Family Fun Day supported by Brisbane Airport",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/family-day-by-brisbane-airport",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
-      "image": "https://brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
-      "category": "Community / Other",
-      "tags": [
-        "family",
-        "free",
-        "entertainment"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "The Complete Bach Catalogue for Organ",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "From quiet contemplation to awe-inspiring grandeur.",
-      "image": "https://brisbanefestival.com.au/the-complete-bach-catalogue-brisbane-festival-credit-pete-wallis",
-      "category": "Concert / Music",
-      "tags": [
-        "classical",
-        "organ",
-        "bach"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "RocKwiz Rocks Brisbane",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/rockwiz-rocks-brisbane",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Get ready Brissy, we are coming back to celebrate your fine city!",
-      "image": "https://brisbanefestival.com.au/3",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "trivia",
-        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -557,6 +579,72 @@
       "creative": true
     },
     {
+      "title": "Piano Man",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/piano-man",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Gather round the baby grand for a wild late-night singalong.",
+      "image": "https://brisbanefestival.com.au/piano-man_trevor-jones_-trentino-priori",
+      "category": "Concert / Music",
+      "tags": [
+        "singalong",
+        "piano",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Dance with Tom",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/dance-with-tom",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Join Tom for a joyful live stage experience celebrating Language from the Yugambeh Region, Culture and storytelling through movement, music and dance.",
+      "image": "https://brisbanefestival.com.au/9_dancewithtom_c-1267_iview_programpage_3600x2025_clean",
+      "category": "Concert / Music",
+      "tags": [
+        "dance",
+        "culture",
+        "storytelling"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Family Fun Day supported by Brisbane Airport",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/family-day-by-brisbane-airport",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
+      "image": "https://brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
+      "category": "Social / Meetup",
+      "tags": [
+        "family",
+        "kids",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
       "title": "ICEHOUSE",
       "datetime": "Fri 18 Sep",
       "datetime_iso": "2026-09-18",
@@ -573,7 +661,7 @@
         "live",
         "music"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -592,10 +680,10 @@
       "category": "Concert / Music",
       "tags": [
         "electronic",
-        "live",
+        "dance",
         "music"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -614,30 +702,8 @@
       "category": "Concert / Music",
       "tags": [
         "pop",
-        "live",
-        "music"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Lord Mayor's City Hall Concerts: David Bailey",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/lord-mayors-city-hall-program-david-bailey",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Pipes, wheels, and reels — Buster Keaton's classic set to a live, original score.",
-      "image": "https://brisbanefestival.com.au/david-bailey_bf25_credit_j-ruckli",
-      "category": "Concert / Music",
-      "tags": [
-        "film",
-        "score",
-        "classical"
+        "singer-songwriter",
+        "live"
       ],
       "social": false,
       "intellectual": false,
@@ -657,167 +723,13 @@
       "image": "https://brisbanefestival.com.au/east-of-west-by-vanessa-van-dalsen-6",
       "category": "Concert / Music",
       "tags": [
-        "music",
         "storytelling",
-        "rhythm"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Warm-up with QLD Con",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/warm-up-with-qld-con",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "An energising musical warm-up to the day by the river.",
-      "image": "https://brisbanefestival.com.au/morning-sessions_qcgu_greg-harm",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "morning",
-        "performance"
+        "rhythm",
+        "music"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Piano Man",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/piano-man",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Gather round the baby grand for a wild late-night singalong.",
-      "image": "https://brisbanefestival.com.au/piano-man_trevor-jones_-trentino-priori",
-      "category": "Social / Meetup",
-      "tags": [
-        "music",
-        "singalong",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Not a Cult*",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/not-a-cult",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A public spectacle of disconcerting joy.",
-      "image": "https://brisbanefestival.com.au/counterpilot_notacult_hero4_bymorganroberts2",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "performance",
-        "spectacle",
-        "art"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Sunrise Ceremony: Bikki Wantimaa",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/sunrise-ceremony-bikki-wantimaa",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Each Friday morning the Sunrise Ceremony: Bikki Wantimaa acknowledges and gives thanks to the lands on which the Festival takes place, honouring First Nations peoples who have witnessed the sunrise on these lands for thousands of years.",
-      "image": "https://brisbanefestival.com.au/finnmullen109a9521-crop",
-      "category": "Community / Other",
-      "tags": [
-        "indigenous",
-        "ceremony",
-        "culture"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Dance with Tom",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/dance-with-tom",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Join Tom for a joyful live stage experience celebrating Language from the Yugambeh Region, Culture and storytelling through movement, music and dance.",
-      "image": "https://brisbanefestival.com.au/9_dancewithtom_c-1267_iview_programpage_3600x2025_clean",
-      "category": "Workshop / Class",
-      "tags": [
-        "dance",
-        "indigenous",
-        "culture"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Dead Puppet Society: Sculptures & Sips Workshops",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/dead-puppet-society-sculptures-and-sips-workshops",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Love art and design with a side of champagne? Dive into one of Dead Puppet Society’s Sculptures & Sips workshops. Create and take home your own handmade creation, connect with like-minded makers, and work alongside Dead Puppet Society artisans in their Fabrication Workshop — where the puppets and props from their productions are imagined, designed, and brought to life.",
-      "image": "https://brisbanefestival.com.au/sculptures-and-sips-6_georgia-haupt",
-      "category": "Workshop / Class",
-      "tags": [
-        "art",
-        "craft",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Dead Puppet Society: Puppet Construction Workshop",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/dead-puppet-society-puppet-construction-workshop",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Puppet Construction takes puppetry manipulation skills to the next level by allowing young people to design, craft and build their very own tabletop sized puppet.",
-      "image": "https://brisbanefestival.com.au/table-top",
-      "category": "Workshop / Class",
-      "tags": [
-        "puppets",
-        "craft",
-        "youth"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
       "creative": true
     },
     {
@@ -833,58 +745,14 @@
       "image": "https://brisbanefestival.com.au/quandamooka_bf25_credit_nikki-michail-@nikkimichail",
       "category": "Community / Other",
       "tags": [
-        "culture",
         "festival",
-        "outdoor"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Love Me Again Market: Morningside",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/love-me-again-market-morningside",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Love Me Again Market is curating a special Brisbane Festival edition combining pre-loved fashion, music, community and great vibes all in one unforgettable day.",
-      "image": "https://brisbanefestival.com.au/lmam-5-year-birthday-2025-taylor-kezia-photography-38",
-      "category": "Social / Meetup",
-      "tags": [
-        "fashion",
-        "market",
+        "culture",
         "community"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
-    },
-    {
-      "title": "Mindful Art Mornings at Museum of Brisbane",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/mindful-art-mornings-at-museum-of-brisbane",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Mindful Art Morning invites early risers to the Museum before opening hours for a gentle, guided moment of pause.",
-      "image": "https://brisbanefestival.com.au/mob-mindful-art-mornings-photo-katie-bennett",
-      "category": "Workshop / Class",
-      "tags": [
-        "art",
-        "mindfulness",
-        "museum"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
     },
     {
       "title": "Talk of the Town: True crime, death and the live body",
@@ -899,8 +767,8 @@
       "image": "https://brisbanefestival.com.au/scorched-earth-credit-soundofphotography",
       "category": "Public Lecture",
       "tags": [
-        "crime",
-        "philosophy",
+        "true crime",
+        "talk",
         "culture"
       ],
       "social": false,
@@ -923,12 +791,78 @@
       "tags": [
         "circus",
         "history",
-        "arts"
+        "talk"
       ],
       "social": false,
       "intellectual": true,
       "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Dead Puppet Society: Sculptures & Sips Workshops",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/dead-puppet-society-sculptures-and-sips-workshops",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Love art and design with a side of champagne? Dive into one of Dead Puppet Society’s Sculptures & Sips workshops. Create and take home your own handmade creation, connect with like-minded makers, and work alongside Dead Puppet Society artisans in their Fabrication Workshop — where the puppets and props from their productions are imagined, designed, and brought to life.",
+      "image": "https://brisbanefestival.com.au/sculptures-and-sips-6_georgia-haupt",
+      "category": "Workshop / Class",
+      "tags": [
+        "sculpture",
+        "art",
+        "craft"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
       "creative": true
+    },
+    {
+      "title": "Dead Puppet Society: Puppet Construction Workshop",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/dead-puppet-society-puppet-construction-workshop",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Puppet Construction takes puppetry manipulation skills to the next level by allowing young people to design, craft and build their very own tabletop sized puppet.",
+      "image": "https://brisbanefestival.com.au/table-top",
+      "category": "Workshop / Class",
+      "tags": [
+        "puppets",
+        "craft",
+        "kids"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Love Me Again Market: Morningside",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/love-me-again-market-morningside",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Love Me Again Market is curating a special Brisbane Festival edition combining pre-loved fashion, music, community and great vibes all in one unforgettable day.",
+      "image": "https://brisbanefestival.com.au/lmam-5-year-birthday-2025-taylor-kezia-photography-38",
+      "category": "Social / Meetup",
+      "tags": [
+        "market",
+        "fashion",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     },
     {
       "title": "Flipside Circus Workshops",
@@ -947,7 +881,7 @@
         "skills",
         "active"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true
@@ -989,7 +923,7 @@
       "tags": [
         "hiphop",
         "dance",
-        "inclusive"
+        "active"
       ],
       "social": true,
       "intellectual": false,
@@ -1055,7 +989,7 @@
       "tags": [
         "pilates",
         "wellness",
-        "fitness"
+        "active"
       ],
       "social": false,
       "intellectual": false,
@@ -1077,7 +1011,7 @@
       "tags": [
         "latin",
         "dance",
-        "culture"
+        "rhythm"
       ],
       "social": true,
       "intellectual": false,
@@ -1101,28 +1035,6 @@
         "storytelling",
         "creative"
       ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Bellydance Workshop with Brisbane Bellydance Academy",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/dance-workshops-belly-dance",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Come experience the joy of bellydancing.",
-      "image": "https://brisbanefestival.com.au/1bc93829-5afc-4311-8cb7-0db186334f95",
-      "category": "Workshop / Class",
-      "tags": [
-        "bellydance",
-        "dance",
-        "fitness"
-      ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
@@ -1143,7 +1055,7 @@
       "tags": [
         "art",
         "floral",
-        "mindful"
+        "craft"
       ],
       "social": false,
       "intellectual": false,
@@ -1169,28 +1081,6 @@
       ],
       "social": false,
       "intellectual": true,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Wake Up and Sing! with Toowong State School Signing Choir",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/wake-up-and-sing-toowong-state-school-signing-choir",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Join the Toowong State School Signing Choir for a morning of singing and learning some basic Auslan signs. The choir consists of Auslan (Australian Sign Language) students from Years 4–6 who are Deaf, hard of hearing and hearing, and will perform a selection of popular songs to brighten your day.",
-      "image": "https://brisbanefestival.com.au/even-cgen-2022-2",
-      "category": "Workshop / Class",
-      "tags": [
-        "choir",
-        "auslan",
-        "singing"
-      ],
-      "social": true,
-      "intellectual": false,
       "hands_on": true,
       "creative": true
     },
@@ -1229,9 +1119,9 @@
       "image": "https://brisbanefestival.com.au/photo-1-(1)",
       "category": "Workshop / Class",
       "tags": [
-        "choir",
         "singing",
-        "community"
+        "choir",
+        "music"
       ],
       "social": true,
       "intellectual": false,
@@ -1252,8 +1142,8 @@
       "category": "Workshop / Class",
       "tags": [
         "dance",
-        "performance",
-        "active"
+        "active",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -1283,6 +1173,28 @@
       "creative": false
     },
     {
+      "title": "No One Gets Out of Here Alive",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/no-one-gets-out-of-here-alive",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Created by The Farm — known for bold physicality, emotional directness, and irreverent theatricality — No One Gets Out of Here Alive confronts mortality into a deeply visceral experience that takes us beyond words into the nature of dying.",
+      "image": "https://www.brisbanefestival.com.au/copy-of-setinstonemedia_thefarm_0426_farm-theatre-co-046-(2)",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "performance",
+        "death"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Shel We",
       "datetime": "Thu 10 Sep",
       "datetime_iso": "2026-09-10",
@@ -1296,28 +1208,6 @@
       "category": "Arts / Exhibition",
       "tags": [
         "dance",
-        "performance",
-        "arts"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "No One Gets Out of Here Alive",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/no-one-gets-out-of-here-alive",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Created by The Farm — known for bold physicality, emotional directness, and irreverent theatricality — No One Gets Out of Here Alive confronts mortality into a deeply visceral experience that takes us beyond words into the nature of dying.",
-      "image": "https://www.brisbanefestival.com.au/copy-of-setinstonemedia_thefarm_0426_farm-theatre-co-046-(2)",
-      "category": "Concert / Music",
-      "tags": [
-        "theatre",
         "performance",
         "arts"
       ],
@@ -1383,8 +1273,8 @@
       "image": "https://www.brisbanefestival.com.au/bf26_social_1080x1080_no_image-daybreaker",
       "category": "Social / Meetup",
       "tags": [
-        "wellness",
         "dance",
+        "wellness",
         "morning"
       ],
       "social": true,
@@ -1393,21 +1283,21 @@
       "creative": false
     },
     {
-      "title": "LEGENDS (of the Golden Arches)",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/legends-of-the-golden-arches",
+      "link": "https://www.brisbanefestival.com.au/events/make-believe-magic",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "A rip-roaring ride plunging two best friends into the depths of the Chinese afterlife, crossing genres, realities, and theatrical convention with infectious zest.",
-      "image": "https://www.brisbanefestival.com.au/legends-hero-large",
-      "category": "Concert / Music",
+      "description": "Dance your cares away! The wild and wonderful creatures of ‘The Jim Henson Company’ are coming to GOMA. QAGOMA and Brisbane Festival are thrilled to be welcoming the Fraggles exclusively to Brisbane this September.",
+      "image": "https://www.brisbanefestival.com.au/qagoma_the-jim-henson-company-exhibition_1920x1080",
+      "category": "Arts / Exhibition",
       "tags": [
-        "theatre",
-        "comedy",
-        "performance"
+        "puppets",
+        "film",
+        "exhibition"
       ],
       "social": false,
       "intellectual": false,
@@ -1437,6 +1327,72 @@
       "creative": true
     },
     {
+      "title": "LEGENDS (of the Golden Arches)",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/legends-of-the-golden-arches",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "A rip-roaring ride plunging two best friends into the depths of the Chinese afterlife, crossing genres, realities, and theatrical convention with infectious zest.",
+      "image": "https://www.brisbanefestival.com.au/legends-hero-large",
+      "category": "Concert / Music",
+      "tags": [
+        "theatre",
+        "comedy",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Bleachers",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/bleachers",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Stories of loneliness and togetherness sit side by side in this new disability-led dance-theatre work by Sprung Ensemble — a collective of 10 d/Deaf and disabled artists from Bundjalung Country in Northern NSW.",
+      "image": "https://www.brisbanefestival.com.au/thomas-oliver_sprung_hires-17-(1)",
+      "category": "Concert / Music",
+      "tags": [
+        "dance",
+        "theatre",
+        "disability"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Not a Cult*",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/not-a-cult",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "A public spectacle of disconcerting joy.",
+      "image": "https://www.brisbanefestival.com.au/counterpilot_notacult_hero4_bymorganroberts2",
+      "category": "Community / Other",
+      "tags": [
+        "performance",
+        "spectacle",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "This Show is a Joke!",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
@@ -1457,6 +1413,94 @@
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "Manly Serenades",
+      "datetime": "Fri 11 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-11T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/brisbane-serenades-manly",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "A feel-good night of thrills, tunes and good times by the coast.",
+      "image": "https://www.brisbanefestival.com.au/copy-of-dsc03073-(1)",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "coastal",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Moorooka Block Party",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/moorooka-block-party-26",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "We are heading back to transform Peggs Park once again into one great big celebration of culture and community. It’s time to bring back the sounds, flavours and stories for one of the south side's most anticipated events of the year.",
+      "image": "https://www.brisbanefestival.com.au/jason-heera-hero",
+      "category": "Social / Meetup",
+      "tags": [
+        "community",
+        "culture",
+        "party"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Moorooka Feast",
+      "datetime": "Thu 10 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-10T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/moorooka-feast-26",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Join us for an evening of delicious food, great company, and meaningful connections as we gather around the table to celebrate community.",
+      "image": "https://www.brisbanefestival.com.au/moorooka-feast_brisbane-festival_nikita-pere-58",
+      "category": "Social / Meetup",
+      "tags": [
+        "food",
+        "community",
+        "dinner"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Sunrise Ceremony: Bikki Wantimaa",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/sunrise-ceremony-bikki-wantimaa",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Each Friday morning the Sunrise Ceremony: Bikki Wantimaa acknowledges and gives thanks to the lands on which the Festival takes place, honouring First Nations peoples who have witnessed the sunrise on these lands for thousands of years.",
+      "image": "https://www.brisbanefestival.com.au/finnmullen109a9521-crop",
+      "category": "Community / Other",
+      "tags": [
+        "ceremony",
+        "first nations",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     },
     {
       "title": "Generations & Dynasties: The Brady Family",
@@ -1503,21 +1547,43 @@
       "creative": true
     },
     {
-      "title": "Bleachers",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "title": "Pasifika Made",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/bleachers",
+      "link": "https://www.brisbanefestival.com.au/events/pasifika-made-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Stories of loneliness and togetherness sit side by side in this new disability-led dance-theatre work by Sprung Ensemble — a collective of 10 d/Deaf and disabled artists from Bundjalung Country in Northern NSW.",
-      "image": "https://www.brisbanefestival.com.au/thomas-oliver_sprung_hires-17-(1)",
+      "description": "Where Ancestral Knowledge Meets Contemporary Pacific Arts",
+      "image": "https://www.brisbanefestival.com.au/pasifikamade_bf_jadeferguson_@visualpoetssociety08.05_1655_re-edit-(1)",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "pacific",
+        "culture",
+        "arts"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Complete Bach Catalogue for Organ",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "From quiet contemplation to awe-inspiring grandeur.",
+      "image": "https://www.brisbanefestival.com.au/the-complete-bach-catalogue-brisbane-festival-credit-pete-wallis",
       "category": "Concert / Music",
       "tags": [
-        "dance",
-        "theatre",
-        "disability"
+        "bach",
+        "organ",
+        "classical"
       ],
       "social": false,
       "intellectual": false,
@@ -1569,48 +1635,26 @@
       "creative": true
     },
     {
-      "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
+      "title": "RocKwiz Rocks Brisbane",
       "datetime": "Sat 12 Sep",
       "datetime_iso": "2026-09-12",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/make-believe-magic",
+      "link": "https://www.brisbanefestival.com.au/events/rockwiz-rocks-brisbane",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Dance your cares away! The wild and wonderful creatures of ‘The Jim Henson Company’ are coming to GOMA. QAGOMA and Brisbane Festival are thrilled to be welcoming the Fraggles exclusively to Brisbane this September.",
-      "image": "https://www.brisbanefestival.com.au/qagoma_the-jim-henson-company-exhibition_1920x1080",
-      "category": "Arts / Exhibition",
+      "description": "Get ready Brissy, we are coming back to celebrate your fine city!",
+      "image": "https://www.brisbanefestival.com.au/3",
+      "category": "Concert / Music",
       "tags": [
-        "puppets",
-        "film",
-        "exhibition"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Moorooka Feast",
-      "datetime": "Thu 10 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-10T18:00:00",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/moorooka-feast-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Join us for an evening of delicious food, great company, and meaningful connections as we gather around the table to celebrate community.",
-      "image": "https://www.brisbanefestival.com.au/moorooka-feast_brisbane-festival_nikita-pere-58",
-      "category": "Social / Meetup",
-      "tags": [
-        "food",
-        "community",
-        "dinner"
+        "quiz",
+        "music",
+        "trivia"
       ],
       "social": true,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "Common People Dance Eisteddfod",
@@ -1631,138 +1675,6 @@
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Pasifika Made",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/pasifika-made-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Where Ancestral Knowledge Meets Contemporary Pacific Arts",
-      "image": "https://www.brisbanefestival.com.au/pasifikamade_bf_jadeferguson_@visualpoetssociety08.05_1655_re-edit-(1)",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "pacific",
-        "culture",
-        "arts"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Moorooka Block Party",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/moorooka-block-party-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "We are heading back to transform Peggs Park once again into one great big celebration of culture and community. It’s time to bring back the sounds, flavours and stories for one of the south side's most anticipated events of the year.",
-      "image": "https://www.brisbanefestival.com.au/jason-heera-hero",
-      "category": "Social / Meetup",
-      "tags": [
-        "community",
-        "culture",
-        "party"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Manly Serenades",
-      "datetime": "Fri 11 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-11T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/brisbane-serenades-manly",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A feel-good night of thrills, tunes and good times by the coast.",
-      "image": "https://www.brisbanefestival.com.au/copy-of-dsc03073-(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "coastal",
-        "performance"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Family Fun Day supported by Brisbane Airport",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/family-day-by-brisbane-airport",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
-      "image": "https://www.brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
-      "category": "Social / Meetup",
-      "tags": [
-        "family",
-        "kids",
-        "free"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "The Complete Bach Catalogue for Organ",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "From quiet contemplation to awe-inspiring grandeur.",
-      "image": "https://www.brisbanefestival.com.au/the-complete-bach-catalogue-brisbane-festival-credit-pete-wallis",
-      "category": "Concert / Music",
-      "tags": [
-        "bach",
-        "organ",
-        "classical"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "RocKwiz Rocks Brisbane",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/rockwiz-rocks-brisbane",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Get ready Brissy, we are coming back to celebrate your fine city!",
-      "image": "https://www.brisbanefestival.com.au/3",
-      "category": "Concert / Music",
-      "tags": [
-        "quiz",
-        "music",
-        "trivia"
-      ],
-      "social": true,
-      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
@@ -1833,6 +1745,72 @@
       "creative": true
     },
     {
+      "title": "Piano Man",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/piano-man",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Gather round the baby grand for a wild late-night singalong.",
+      "image": "https://www.brisbanefestival.com.au/piano-man_trevor-jones_-trentino-priori",
+      "category": "Concert / Music",
+      "tags": [
+        "singalong",
+        "piano",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Dance with Tom",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/dance-with-tom",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Join Tom for a joyful live stage experience celebrating Language from the Yugambeh Region, Culture and storytelling through movement, music and dance.",
+      "image": "https://www.brisbanefestival.com.au/9_dancewithtom_c-1267_iview_programpage_3600x2025_clean",
+      "category": "Concert / Music",
+      "tags": [
+        "dance",
+        "culture",
+        "storytelling"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Family Fun Day supported by Brisbane Airport",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/family-day-by-brisbane-airport",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
+      "image": "https://www.brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
+      "category": "Social / Meetup",
+      "tags": [
+        "family",
+        "kids",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
       "title": "ICEHOUSE",
       "datetime": "Fri 18 Sep",
       "datetime_iso": "2026-09-18",
@@ -1899,28 +1877,6 @@
       "creative": true
     },
     {
-      "title": "Lord Mayor's City Hall Concerts: David Bailey",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/lord-mayors-city-hall-program-david-bailey",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Pipes, wheels, and reels — Buster Keaton's classic set to a live, original score.",
-      "image": "https://www.brisbanefestival.com.au/david-bailey_bf25_credit_j-ruckli",
-      "category": "Concert / Music",
-      "tags": [
-        "film",
-        "silent",
-        "music"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Lord Mayor's City Hall Concerts: East of West",
       "datetime": "Tue 15 Sep",
       "datetime_iso": "2026-09-15",
@@ -1943,87 +1899,21 @@
       "creative": true
     },
     {
-      "title": "Warm-up with QLD Con",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "title": "Quandamooka Festival",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/warm-up-with-qld-con",
+      "link": "https://www.brisbanefestival.com.au/events/quandamooka-festival-26",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "An energising musical warm-up to the day by the river.",
-      "image": "https://www.brisbanefestival.com.au/morning-sessions_qcgu_greg-harm",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "morning",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Piano Man",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/piano-man",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Gather round the baby grand for a wild late-night singalong.",
-      "image": "https://www.brisbanefestival.com.au/piano-man_trevor-jones_-trentino-priori",
-      "category": "Concert / Music",
-      "tags": [
-        "singalong",
-        "piano",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Not a Cult*",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/not-a-cult",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A public spectacle of disconcerting joy.",
-      "image": "https://www.brisbanefestival.com.au/counterpilot_notacult_hero4_bymorganroberts2",
+      "description": "Get away from the city for a vibrant celebration of Culture on Stradbroke Island.",
+      "image": "https://www.brisbanefestival.com.au/quandamooka_bf25_credit_nikki-michail-@nikkimichail",
       "category": "Community / Other",
       "tags": [
-        "performance",
-        "spectacle",
-        "art"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Sunrise Ceremony: Bikki Wantimaa",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/sunrise-ceremony-bikki-wantimaa",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Each Friday morning the Sunrise Ceremony: Bikki Wantimaa acknowledges and gives thanks to the lands on which the Festival takes place, honouring First Nations peoples who have witnessed the sunrise on these lands for thousands of years.",
-      "image": "https://www.brisbanefestival.com.au/finnmullen109a9521-crop",
-      "category": "Community / Other",
-      "tags": [
-        "ceremony",
-        "first nations",
-        "culture"
+        "festival",
+        "culture",
+        "community"
       ],
       "social": true,
       "intellectual": false,
@@ -2031,26 +1921,48 @@
       "creative": false
     },
     {
-      "title": "Dance with Tom",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "title": "Talk of the Town: True crime, death and the live body",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/dance-with-tom",
+      "link": "https://www.brisbanefestival.com.au/events/talk-of-the-town-2",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Join Tom for a joyful live stage experience celebrating Language from the Yugambeh Region, Culture and storytelling through movement, music and dance.",
-      "image": "https://www.brisbanefestival.com.au/9_dancewithtom_c-1267_iview_programpage_3600x2025_clean",
-      "category": "Concert / Music",
+      "description": "We are living through a cultural obsession with true crime.",
+      "image": "https://www.brisbanefestival.com.au/scorched-earth-credit-soundofphotography",
+      "category": "Public Lecture",
       "tags": [
-        "dance",
-        "culture",
-        "storytelling"
+        "true crime",
+        "talk",
+        "culture"
       ],
-      "social": true,
-      "intellectual": false,
+      "social": false,
+      "intellectual": true,
       "hands_on": false,
-      "creative": true
+      "creative": false
+    },
+    {
+      "title": "Talk of the Town: Collective bodies, international spaces",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/talk-of-the-town-3",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "Originating in the 18th Century, international circus arts have evolved beyond the Big Top.",
+      "image": "https://www.brisbanefestival.com.au/escape-_-credit-cheryl-mann-(1)",
+      "category": "Public Lecture",
+      "tags": [
+        "circus",
+        "history",
+        "talk"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
     },
     {
       "title": "Dead Puppet Society: Sculptures & Sips Workshops",
@@ -2097,28 +2009,6 @@
       "creative": true
     },
     {
-      "title": "Quandamooka Festival",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/quandamooka-festival-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Get away from the city for a vibrant celebration of Culture on Stradbroke Island.",
-      "image": "https://www.brisbanefestival.com.au/quandamooka_bf25_credit_nikki-michail-@nikkimichail",
-      "category": "Community / Other",
-      "tags": [
-        "festival",
-        "culture",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Love Me Again Market: Morningside",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
@@ -2137,72 +2027,6 @@
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Mindful Art Mornings at Museum of Brisbane",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/mindful-art-mornings-at-museum-of-brisbane",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Mindful Art Morning invites early risers to the Museum before opening hours for a gentle, guided moment of pause.",
-      "image": "https://www.brisbanefestival.com.au/mob-mindful-art-mornings-photo-katie-bennett",
-      "category": "Workshop / Class",
-      "tags": [
-        "art",
-        "mindfulness",
-        "museum"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Talk of the Town: True crime, death and the live body",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/talk-of-the-town-2",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "We are living through a cultural obsession with true crime.",
-      "image": "https://www.brisbanefestival.com.au/scorched-earth-credit-soundofphotography",
-      "category": "Public Lecture",
-      "tags": [
-        "true crime",
-        "talk",
-        "culture"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Talk of the Town: Collective bodies, international spaces",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/talk-of-the-town-3",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Originating in the 18th Century, international circus arts have evolved beyond the Big Top.",
-      "image": "https://www.brisbanefestival.com.au/escape-_-credit-cheryl-mann-(1)",
-      "category": "Public Lecture",
-      "tags": [
-        "circus",
-        "history",
-        "talk"
-      ],
-      "social": false,
-      "intellectual": true,
       "hands_on": false,
       "creative": false
     },
@@ -2383,28 +2207,6 @@
       "creative": true
     },
     {
-      "title": "Bellydance Workshop with Brisbane Bellydance Academy",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/dance-workshops-belly-dance",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Come experience the joy of bellydancing.",
-      "image": "https://www.brisbanefestival.com.au/1bc93829-5afc-4311-8cb7-0db186334f95",
-      "category": "Workshop / Class",
-      "tags": [
-        "bellydance",
-        "dance",
-        "active"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
       "title": "MoB Presents: Mindful Art Morning Workshop with Nadine McDonald-Dowd",
       "datetime": "Fri 11 Sep",
       "datetime_iso": "2026-09-11",
@@ -2445,28 +2247,6 @@
       ],
       "social": false,
       "intellectual": true,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Wake Up and Sing! with Toowong State School Signing Choir",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/wake-up-and-sing-toowong-state-school-signing-choir",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Join the Toowong State School Signing Choir for a morning of singing and learning some basic Auslan signs. The choir consists of Auslan (Australian Sign Language) students from Years 4–6 who are Deaf, hard of hearing and hearing, and will perform a selection of popular songs to brighten your day.",
-      "image": "https://www.brisbanefestival.com.au/even-cgen-2022-2",
-      "category": "Workshop / Class",
-      "tags": [
-        "singing",
-        "auslan",
-        "music"
-      ],
-      "social": true,
-      "intellectual": false,
       "hands_on": true,
       "creative": true
     },
@@ -2537,87 +2317,21 @@
       "creative": true
     },
     {
-      "title": "No One Gets Out of Here Alive",
-      "datetime": "Wed 9 Sep – Sat 12 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "2026-09-12",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/no-one-gets-out-of-here-alive",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Created by The Farm — known for bold physicality, emotional directness, and irreverent theatricality — No One Gets Out of Here Alive confronts mortality into a deeply visceral experience that takes us beyond words into the nature of dying.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "performance",
-        "death"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Shel We",
-      "datetime": "Thu 10 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "2026-09-13",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/shel-we",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Playful, enchanting dance, full of mischief.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "dance",
-        "performance",
-        "arts"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Are You Lonesome Tonight",
-      "datetime": "Wed 9 Sep – Sat 12 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "2026-09-12",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/are-you-lonesome-tonight",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Arrive in your jeans and boots, or your tuxedos and ball gowns.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "performance",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "DAYBREAKER",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "title": "Run Wild through South Bank",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/daybreaker",
+      "link": "https://www.brisbanefestival.com.au/events/run-wild-through-south-bank",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "DAYBREAKER is a global, alcohol-free morning dance and wellness event that combines yoga, fitness, and high-energy dance to start the day with joy and community.",
-      "image": "",
-      "category": "Social / Meetup",
+      "description": "Experience the energy of Brisbane Festival",
+      "image": "https://www.brisbanefestival.com.au/dgb07kno7qonvm6kwcqznug7",
+      "category": "Community / Other",
       "tags": [
-        "dance",
-        "wellness",
-        "morning"
+        "running",
+        "fitness",
+        "outdoor"
       ],
       "social": true,
       "intellectual": false,

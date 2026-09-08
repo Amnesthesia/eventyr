@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Future of Sport
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-ks3qvd@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:The Future of Sport
+DESCRIPTION:Come along to the UniSC Arena for a night with key players\, wh
+ o work on and off the sporting field. Joining them are our expert teaching
+  staff to discuss all things sport­ – a global and fast-moving industry
+  – and where the future is heading\, including right here in our regions
+ .
+LOCATION:UniSC Arena
+URL:https://usc.edu.au/community/events/the-future-of-sport
+END:VEVENT
+END:VCALENDAR

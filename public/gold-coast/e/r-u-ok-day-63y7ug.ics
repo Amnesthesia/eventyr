@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:R U OK? Day
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-63y7ug@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T110000
+DTEND;TZID=Australia/Brisbane:20260910T130000
+SUMMARY:R U OK? Day
+DESCRIPTION:Ask R U OK? Any Day because life happens every day.
+LOCATION:Southern Cross University Gold Coast
+URL:https://www.scu.edu.au/current-students/services-and-support/counsellin
+ g/workshops-and-events/ruok-event/
+END:VEVENT
+END:VCALENDAR

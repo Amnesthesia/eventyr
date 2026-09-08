@@ -1,0 +1,33 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "lonegoatgallery",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Lucas and the Midsomer Murders",
+      "datetime": "Sat 19 Sep – Sat 17 Oct",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-10-17",
+      "location": "Lone Goat Gallery",
+      "link": "https://lonegoatgallery.com/exhibitions/lucas-and-the-midsomer-murders",
+      "cost": "See link",
+      "source": "Lone Goat Gallery",
+      "description": "Lone Goat Gallery is a contemporary art space, presenting emerging and established artists from the Northern Rivers region and beyond. Located in the Byron Bay Library building in downtown Byron Bay, just a short walk from Main Beach.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "contemporary",
+        "art",
+        "gallery",
+        "byron"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

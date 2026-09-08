@@ -1,0 +1,98 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "redcliffeentertainmentcentre",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "REALITY - A Musical",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "Redcliffe Entertainment Centre",
+      "link": "https://www.redcliffeentertainmentcentre.com.au/Events/REALITY",
+      "cost": "See link",
+      "source": "Redcliffe Entertainment Centre",
+      "description": "Announcing the WORLD PREMIERE of Ian McFadyen’s new musical - REALITY",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "musical",
+        "theatre",
+        "premiere"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Grace Arts Academy Gala",
+      "datetime": "Tue 15 Sep",
+      "datetime_iso": "2026-09-15",
+      "datetime_end_iso": "",
+      "location": "Redcliffe Entertainment Centre",
+      "link": "https://www.redcliffeentertainmentcentre.com.au/Events/Grace-Arts-Academy-Gala",
+      "cost": "See link",
+      "source": "Redcliffe Entertainment Centre",
+      "description": "Grace Academy Gala presents a spectacular event celebrating the incredible talents of our students across Music and Dance.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "dance",
+        "music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Big Chillout: Motown Spectacular",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "",
+      "location": "Redcliffe Entertainment Centre",
+      "link": "https://www.redcliffeentertainmentcentre.com.au/Events/The-Big-Chillout",
+      "cost": "See link",
+      "source": "Redcliffe Entertainment Centre",
+      "description": "Motown Meets 60's Rock. Celebrating the The Big Chill movie soundtrack with the timeless classics.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "motown",
+        "rock",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "QLD College of Dance Youth: A Christmas Story",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Redcliffe Entertainment Centre",
+      "link": "https://www.redcliffeentertainmentcentre.com.au/Events/QLD-College-of-Dance-2027",
+      "cost": "See link",
+      "source": "Redcliffe Entertainment Centre",
+      "description": "QLD College of Dance A Christmas Story",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "dance",
+        "christmas",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

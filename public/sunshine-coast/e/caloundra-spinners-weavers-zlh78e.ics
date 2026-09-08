@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Caloundra Spinners & Weavers
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-zlh78e@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Caloundra Spinners & Weavers
+DESCRIPTION:
+LOCATION:Caloundra Arts Centre
+URL:https://caloundraartscentre.org.au/group/caloundra-spinners-weavers/
+END:VEVENT
+END:VCALENDAR

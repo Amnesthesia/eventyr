@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Colin Dodds
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-57c95t@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T133000
+DTEND;TZID=Australia/Brisbane:20260920T163000
+SUMMARY:Colin Dodds
+DESCRIPTION:Live Music 1.30pm to 4.30pm
+LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
+ D\, 4551
+URL:https://www.caloundrapowerboat.com.au/event/colin-dodds/
+END:VEVENT
+END:VCALENDAR

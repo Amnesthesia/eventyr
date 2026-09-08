@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SESSION 26 (All Ages)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-13b2el3@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T180000
+DTEND;TZID=Australia/Brisbane:20260920T200000
+SUMMARY:SESSION 26 (All Ages)
+DESCRIPTION:Whether you’re looking to see new music\, support rising gold
+  coast talent\, or want to have an amazing night out\, this event can deli
+ ver on all of it. Come discover musicians on the rise and be a part of the
+  moment before everyone else is talking about it. BOOK NOW BELOW.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/session-26-all-ages
+END:VEVENT
+END:VCALENDAR

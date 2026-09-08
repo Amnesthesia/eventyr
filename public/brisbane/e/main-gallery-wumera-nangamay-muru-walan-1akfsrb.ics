@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:MAIN GALLERY | Wumera Nangamay: Muru Walan
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1akfsrb@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20261018
+SUMMARY:MAIN GALLERY | Wumera Nangamay: Muru Walan
+DESCRIPTION:Onespace proudly presents KONSTANTINA’S exhibition\, Wumera N
+ angamay: Muru Walan\, launching this September.
+LOCATION:Onespace Gallery
+URL:https://onespace.com.au/exhibition/main-gallery-wumera-nangamay-muru-wa
+ lan/
+END:VEVENT
+END:VCALENDAR

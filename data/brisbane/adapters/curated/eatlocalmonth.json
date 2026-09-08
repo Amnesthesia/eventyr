@@ -1,0 +1,76 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "eatlocalmonth",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Fields of Fun in Every Region",
+      "datetime": "Sat 12 Sep 2026 – Mon 14 Jun 2027",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "2027-06-14",
+      "location": "Scenic Rim Eat Local Month",
+      "link": "https://eatlocalmonth.com.au/",
+      "cost": "See link",
+      "source": "Scenic Rim Eat Local Month",
+      "description": "A weekend of occasions, each one worthy of your best hat. Race day at Beaudesert. An exclusive eight-course showcase at Blume. Estate wines overlooking Lake Wyaralong. Then Sunday begins before dawn, floating above ancient peaks in a hot air balloon as the Scenic Rim reveals itself below. Dress for it.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "scenic rim",
+        "outdoor"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Harvesting & Family Fun",
+      "datetime": "Sat 19 Sep 2026 – Mon 21 Jun 2027",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2027-06-21",
+      "location": "Scenic Rim Eat Local Month",
+      "link": "https://eatlocalmonth.com.au/",
+      "cost": "See link",
+      "source": "Scenic Rim Eat Local Month",
+      "description": "Hand the kids the shovel, the show bag, and the beekeeping suit and watch what happens. Three days of sixth-generation farmland, Queensland's largest carrot farm, Kalbar Show fireworks, edible flower picking, and golden honey straight from the hive. Every meal tastes better when you helped grow it.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "family",
+        "farming",
+        "food"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "A Weekend for the Senses",
+      "datetime": "Sat 19 Sep 2026 – Mon 21 Jun 2027",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2027-06-21",
+      "location": "Scenic Rim Eat Local Month",
+      "link": "https://eatlocalmonth.com.au/",
+      "cost": "See link",
+      "source": "Scenic Rim Eat Local Month",
+      "description": "This weekend asks you to get involved. Churn butter on a sixth-generation farm, harvest mystery garden ingredients before cooking them into something extraordinary, feast fireside high above the valley, then close Sunday with working beehives and a native rainforest orchard walk as the sun sets over Main Range.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "cooking",
+        "farming",
+        "nature"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

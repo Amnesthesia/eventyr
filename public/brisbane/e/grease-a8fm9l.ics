@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Grease
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-a8fm9l@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260921
+SUMMARY:Grease
+DESCRIPTION:Whether you're seeing Grease for the first time or returning to
+  relive the nostalgia this feel-good musical guarantees an unforgettable n
+ ight out.
+LOCATION:Ipswich Civic Centre
+URL:https://www.ipswichciviccentre.com.au/event/grease-2/
+END:VEVENT
+END:VCALENDAR

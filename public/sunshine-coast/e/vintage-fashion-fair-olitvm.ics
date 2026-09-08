@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Vintage Fashion Fair
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-olitvm@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T090000
+DTEND;TZID=Australia/Brisbane:20260918T110000
+SUMMARY:Vintage Fashion Fair
+DESCRIPTION:Look out for some great fashion styles and unique pieces. Vinta
+ ge Clothing\, Accessories\, Jewellery\, Records & More!
+LOCATION:Maleny Community Centre
+URL:https://malenycc.org/event/vintage-fashion-fair-3/
+END:VEVENT
+END:VCALENDAR

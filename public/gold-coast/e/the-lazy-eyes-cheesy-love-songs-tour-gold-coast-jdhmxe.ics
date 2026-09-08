@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Lazy Eyes - Cheesy Love Songs Tour (GOLD COAST)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-jdhmxe@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:The Lazy Eyes - Cheesy Love Songs Tour (GOLD COAST)
+DESCRIPTION:The Lazy Eyes return for a national Australian tour celebrating
+  their highly anticipated second album. Appearing at Mo's Desert Clubhouse
+  on Saturday 19 September. GET IN EARLY! For more information & tickets hi
+ t the below Book Now button.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/the-lazy-eyes-cheesy-love-son
+ gs-tour-gold-coast
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Start Up Student Art Prize
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1pzym40@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20261012
+SUMMARY:Start Up Student Art Prize
+DESCRIPTION:An ArtsNational Noosa sponsored Prize exhibition of artworks by
+  Yrs 10-12 students from the North Coast (South) schools region. This exhi
+ bition will take place at the same time as the annual Creative Gen exhibit
+ ion. Works in ‘ Start Up ” will be for sale and a selection of works w
+ ill also be shown in the end of year Eclectica Prize. One student will be 
+ selected for a $1000 ArtsNational Noosa Sponsored prize.
+LOCATION:Cooroy Butter Factory Arts Centre\, 11 MAPLE ST\, COOROY
+URL:https://cooroybutterfactory.com.au/exhibition-call-out/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Michael Jones Pottery Classes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1hg0y38@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T180000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Michael Jones Pottery Classes
+DESCRIPTION:His classes accommodate beginners to advanced students in both 
+ wheel throwing and hand building.
+LOCATION:Benowa Studio
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+END:VCALENDAR

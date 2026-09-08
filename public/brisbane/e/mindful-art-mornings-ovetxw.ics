@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mindful Art Mornings
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ovetxw@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T073000
+DTEND;TZID=Australia/Brisbane:20260909T083000
+SUMMARY:Mindful Art Mornings
+DESCRIPTION:Mindful Art Mornings Start your day with intention at Museum of
+  Brisbane. Mindful Art Morning invites early risers to the Museum before o
+ pening hours for a gentle\, guided moment of pause. Within the calm of the
+  gallery\, this rotating program offers an artist-led mindful experien
+LOCATION:Level 3\, Brisbane City Hall\, King George Square\, 64 Adelaide St
+ reet\, Brisbane\, QLD\, Australia\, Queensland 4000
+URL:https://www.brisbaneunlocked.com.au/mindful-art-mornings-2026-09-09-2
+END:VEVENT
+END:VCALENDAR

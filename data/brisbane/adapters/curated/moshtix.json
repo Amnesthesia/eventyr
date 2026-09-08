@@ -1,0 +1,54 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "aggregators",
+  "source_id": "moshtix",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Luke Severeid: Here To F@#K Sp...",
+      "datetime": "Thu 10 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-10T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Multiple Venues",
+      "link": "https://www.moshtix.com.au/v2/event/luke-severeid-here-to-fk-spiders-tour/196079",
+      "cost": "See link",
+      "source": "Moshtix Brisbane",
+      "description": "Buy Luke Severeid: Here To F@#K Spiders Tour tickets for 2026 at Moshtix. Taking place at Multiple Venues on September 10th, 2026, you can find more ticket and event information, lineup, artists, set times and extra show dates online.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "tour",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Multiply The Good: Through Eve...",
+      "datetime": "Sun 13 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-13T17:00:00",
+      "datetime_end_iso": "",
+      "location": "Monphell House",
+      "link": "https://www.moshtix.com.au/v2/event/multiply-the-good-through-every-season-melbourne/199000",
+      "cost": "See link",
+      "source": "Moshtix Brisbane",
+      "description": "Buy Multiply The Good: Through Every Season *MELBOURNE* tickets for 2026 at Moshtix. Taking place at Monphell House on September 13rd, 2026, you can find more ticket and event information, lineup, artists, set times and extra show dates online.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community",
+        "gathering",
+        "seasonal"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

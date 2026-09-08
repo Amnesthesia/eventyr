@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TGSI Working Group Meeting
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-k4ozbx@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T080000
+DTEND;TZID=Australia/Brisbane:20260915T170000
+SUMMARY:TGSI Working Group Meeting
+DESCRIPTION:Come and join us to help progress one three main projects: The 
+ Platypus Project: The Platypus once called The Gap home. Can we bring it b
+ ack and what would it take? Join us in our quest to make The Gap habitable
+  for the Platypus once again. Community Energy: Energy is essential for ou
+ r quality of […]
+LOCATION:The Gap High School Library\, 1020 Waterworks Road\, The Gap\, 406
+ 1
+URL:https://thegapsustainability.org/event/tgsi-working-group-meeting-2/202
+ 6-09-15/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Guided tour & lunch at Palette Restaurant
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-11ntot2@dothings
+DTSTART;TZID=Australia/Brisbane:20260611T113000
+DTEND;TZID=Australia/Brisbane:20260611T133000
+SUMMARY:Guided tour & lunch at Palette Restaurant
+DESCRIPTION:Enjoy the This Moment: Highlights from the White Rabbit Collect
+ ion of Chinese Contemporary Art guided tour\, followed by 2-course lunch w
+ ith a glass of wine at P
+LOCATION:Palette Restaurant
+URL:https://hota.com.au/events/this-moment-experience-palette-restaurant
+END:VEVENT
+END:VCALENDAR

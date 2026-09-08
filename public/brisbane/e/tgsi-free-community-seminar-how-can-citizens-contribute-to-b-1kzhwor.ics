@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TGSI Free Community Seminar – How can citizens contribute to
+  better communities
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1kzhwor@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T190000
+DTEND;TZID=Australia/Brisbane:20260915T200000
+SUMMARY:TGSI Free Community Seminar – How can citizens contribute to bett
+ er communities
+DESCRIPTION:Join us this month for a seminar by Damien\, who will speak abo
+ ut citizens and how the contribution that each of us makes is critical to 
+ a thriving community. Damien will also present a number of new software to
+ ols that will allow you to have your say on matters of importance in The G
+ ap. Everyone […]
+LOCATION:The Gap High School Library\, 1020 Waterworks Road\, The Gap\, 406
+ 1
+URL:https://thegapsustainability.org/event/tgsi-free-community-seminar-how-
+ can-citizens-contribute-to-better-communities/
+END:VEVENT
+END:VCALENDAR

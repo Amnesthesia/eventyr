@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Comedy Underground Saturday Showcase
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1gwl4u3@dothings
+DTSTART;TZID=Australia/Brisbane:20250315T190000
+DTEND;TZID=Australia/Brisbane:20250315T210000
+SUMMARY:Comedy Underground Saturday Showcase
+DESCRIPTION:A 90 minute showcase of hand-picked talent Every Saturday night
+  Comedy Underground in the Basement is a showcase of hand-picked talent th
+ at runs for 90 minutes.
+LOCATION:Basement
+URL:https://hota.com.au/events/comedy-underground-saturday-showcase
+END:VEVENT
+END:VCALENDAR

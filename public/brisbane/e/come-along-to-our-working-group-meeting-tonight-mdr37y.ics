@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Come along to our working group meeting tonight
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mdr37y@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Come along to our working group meeting tonight
+DESCRIPTION:Every second month we hold a working group meeting to progress 
+ our three main projects - Energy Independence\, the Platypus project and E
+ nhancing existing capabilities. Hope you can join us tonight at The Gap St
+ ate High School's library.
+LOCATION:The Gap State High School's library\, 57 Paten Road
+URL:https://thegapsustainability.org/come-along-to-our-working-group-meetin
+ g-tonight/
+END:VEVENT
+END:VCALENDAR

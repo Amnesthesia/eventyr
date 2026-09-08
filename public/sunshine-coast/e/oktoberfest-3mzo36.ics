@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Oktoberfest
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-3mzo36@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20261005
+SUMMARY:Oktoberfest
+DESCRIPTION:Get ready for two weeks of Oktoberfest celebrations at Kings Be
+ ach Tavern from Saturday 19 September to Sunday 4 October.Settle into the 
+ Beer Garden and enjoy a selection of German-inspired food specials\, inclu
+ ding giant pretzels\, bratwurst\, schnitzels and more\, alongside steins o
+ f beer available all day\, every day throughout the celebration.Grand Fina
+ le | Sunday 4 OctoberWe’re finishing Oktoberfest with a family-friendly 
+ celebration in the Beer Garden.Kids Face Painting12.30pm-2.30pmStein Holdi
+ ng CompetitionPut your strength to the test for your chance to win a $100 
+ PASS voucher.Whether you’re here for the German-inspired eats\, cold ste
+ ins or the ultimate stein-holding challenge\, Oktoberfest is on at Kings B
+ each Tavern.
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:https://kingsbeachtavern.com.au/events/oktoberfest/
+END:VEVENT
+END:VCALENDAR

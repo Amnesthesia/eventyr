@@ -1,0 +1,56 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "ipswichlibraries",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Gruffalo Trail Launch and Kids’ Fun Day",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Ipswich Libraries",
+      "link": "https://ipswich.spydus.com/cgi-bin/spydus.exe/ENQ/OPAC/EVSESENQ?ENTRY=gruffalo&ENTRY_NAME=BS&ENTRY_TYPE=K&SORTS=ESD.SDTE%5DESD.STIM&GQ=DOGS&ISGLB=0&NRECS=30&QRY=EVSCFLG%3A0+%2B+EVSEDTE%3A%22%3E%3DTODAY%22&QRYTEXT=Upcoming+events",
+      "cost": "See link",
+      "source": "Ipswich Libraries",
+      "description": "First 5 Forever is an initiative of the Queensland Government, coordinated by State Library of Queensland and delivered in partnership with local government.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "kids",
+        "family",
+        "fun",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Library Adventure Morning",
+      "datetime": "Wed 16 Sep, 9:30 AM",
+      "datetime_iso": "2026-09-16T09:30:00",
+      "datetime_end_iso": "",
+      "location": "Ipswich Libraries",
+      "link": "https://ipswich.spydus.com/cgi-bin/spydus.exe/ENQ/OPAC/EVSESENQ?SETLVL=&RNI=1681048",
+      "cost": "See link",
+      "source": "Ipswich Libraries",
+      "description": "Discover the Library. Drop in any time during the morning to share in fun library activities. \n Ages 0-5 years. Free Drop-In Event.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "kids",
+        "free",
+        "early learning",
+        "activities"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

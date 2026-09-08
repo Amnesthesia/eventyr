@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Holy Days
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1609l46@dothings
+DTSTART;TZID=Australia/Brisbane:20260806T164500
+DTEND;TZID=Australia/Brisbane:20260806T184500
+SUMMARY:Holy Days
+DESCRIPTION:A lost boy in search of heaven\, three offbeat nuns on a missio
+ n\, a car powered by God (and stolen money). This is a road trip like no o
+ ther. A comedic near trag
+LOCATION:Cinema 2
+URL:https://hota.com.au/events/holy-days
+END:VEVENT
+END:VCALENDAR

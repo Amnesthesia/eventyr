@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:By Any Means (M)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-kjatq8@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T143000
+DTEND;TZID=Australia/Brisbane:20260912T163000
+SUMMARY:By Any Means (M)
+DESCRIPTION:
+LOCATION:Majestic Theatre\, 1 Eacham Place Malanda
+URL:https://www.imdb.com/title/tt34379051/
+END:VEVENT
+END:VCALENDAR

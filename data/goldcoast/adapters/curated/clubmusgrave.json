@@ -1,0 +1,32 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "clubmusgrave",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "australian poker league",
+      "datetime": "Wed 9 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-09T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Club Musgrave",
+      "link": "https://clubmusgrave.com/event/poker/2026-09-11/",
+      "cost": "See link",
+      "source": "Club Musgrave",
+      "description": "Club Musgrave | APL Approved Venue Wednesdays 5:30pm Fridays 12pm &nbsp; Join the Action at Club Musgrave’s Texas Hold ’Em Poker Nights! Test your skills and win real cash prizes<a class=\"excerpt-read-more\" href=\"https://clubmusgrave.com/event/poker/2026-09-11/\" title=\"ReadAustralian Poker League\">... Read more &raquo;</a>",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "poker",
+        "cards",
+        "gaming"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

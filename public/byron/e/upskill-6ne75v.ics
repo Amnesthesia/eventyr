@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:UPSKILL
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-6ne75v@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T083000
+DTEND;TZID=Australia/Brisbane:20260912T130000
+SUMMARY:UPSKILL
+DESCRIPTION:Our UPSKILL Intro is the place to start your Shedding journey! 
+ This one off 4.5 hour workshop introduces you to our space and our tools a
+ t Shedding. UPSKILL is an induction and introduction to the fundamentals o
+ f carpentry and building\, and an attitude towards learning that will put 
+ you on the path to self-empowerment and success. It is the doorway into ou
+ r world of creativity and skill-sharing – once you have completed this w
+ orkshop you’re ready to jump into our future workshops.
+LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
+URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
+ tType=52989924
+END:VEVENT
+END:VCALENDAR

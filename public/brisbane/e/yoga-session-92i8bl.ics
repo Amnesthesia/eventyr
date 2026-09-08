@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yoga Session
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-92i8bl@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T180000
+DTEND;TZID=Australia/Brisbane:20260914T200000
+SUMMARY:Yoga Session
+DESCRIPTION:Introductory Yoga Class for Beginners Free Session – Tuesday 
+ 7th April 5:30pm Flamingo Studio 2 next to toilets on level 1\, must regis
+ ter first below for free session Find balance\, get flexible\, and stay st
+ rong with yoga classes in Brisbane. Looking for calming indoor activities 
+ to try? Join this introductory yoga to begin your yoga …
+LOCATION:Wesley Taylor Art Studios
+URL:https://www.wesleytaylorartstudios.com.au/yoga
+END:VEVENT
+END:VCALENDAR

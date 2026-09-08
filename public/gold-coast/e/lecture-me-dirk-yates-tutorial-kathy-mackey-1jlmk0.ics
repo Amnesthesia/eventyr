@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lecture Me: Dirk Yates + Tutorial ~ Kathy Mackey
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1jlmk0@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Lecture Me: Dirk Yates + Tutorial ~ Kathy Mackey
+DESCRIPTION:2PP presents a lecture on Contemporary art from Dirk Yates and 
+ follow up tutorial with Kathy Mackey.
+LOCATION:City of Gold Coast Libraries
+URL:https://www.whatsongoldcoast.au/All-events/Lecture-Me-1-Dirk-Yates-Tuto
+ rial-Kathy-Mackey-1992400462417
+END:VEVENT
+END:VCALENDAR

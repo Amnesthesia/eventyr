@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:WEAR THE FOX HAT
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-6b2jj2@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T163000
+DTEND;TZID=Australia/Brisbane:20260912T220000
+SUMMARY:WEAR THE FOX HAT
+DESCRIPTION:WEAR THE FOX HAT | Live at Hotel Brunswick Sat 12 September | F
+ rom 4.30 PM | FREE EVENT Get set for an epic afternoon of live music as We
+ ar the Fox Hat bring their high-energy Northern Rivers pub rock sound to t
+ he Hotel Brunswick stage! From 4.30PM • Followed by DJ • Free Entry
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/wear-the-fox-hat-6/
+END:VEVENT
+END:VCALENDAR

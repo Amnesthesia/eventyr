@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Author Event
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-13byp14@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:Author Event
+DESCRIPTION:Listen to writer and musician Gillian Wills in conversation wit
+ h artist Mostyn Bramley-Moore. They will discuss Gillian's horse-whisperer
+  of a memoir Elvis and Me published by Hawkeye. Gillian's book will be ava
+ ilable for purchase. There will also be a performance by classical guitari
+ sts Tristan and Aeden Wood.
+LOCATION:Eltham Central Pavilion\, Eltham Central Park\, Eltham\, VIC
+URL:https://nillumbiku3a.org.au/event/guest6/
+END:VEVENT
+END:VCALENDAR

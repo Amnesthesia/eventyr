@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:WET FELTED BOWL WORKSHOP
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-uisqpp@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T093000
+DTEND;TZID=Australia/Brisbane:20260912T113000
+SUMMARY:WET FELTED BOWL WORKSHOP
+DESCRIPTION:WET FELTED BOWL WORKSHOP FOR ADULTS Saturday 12 September 2026 
+ 9.30am - 1.30pm Join Agnès to learn how to wet felt a bowl using colourfu
+ l merino silk blends and corriedale wool in a private location in Mullumbi
+ mby. Including choice of wool colour + GF generous morning tea. Complete b
+ eginners welcome. Min 6 participants - Max 8 participants. Cost:
+LOCATION:The Artisan Forest
+URL:https://theartisanforest.com.au/product/wet-felted-bowl-workshopsaturda
+ y-12-september-2026/
+END:VEVENT
+END:VCALENDAR

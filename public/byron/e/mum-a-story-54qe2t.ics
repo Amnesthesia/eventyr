@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:MUM – A STORY
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-54qe2t@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:MUM – A STORY
+DESCRIPTION:This is a fundraiser for the premiere production of Stephen Edg
+ ar’s "The Eldershaw Chronicles" adapted for the stage and directed by Gr
+ egory Aitken designed by Sunita Bailey (When The Rain Stops Falling).
+LOCATION:Drill Hall Theatre Company
+URL:https://drillhalltheatre.org.au/mum-a-story/
+END:VEVENT
+END:VCALENDAR

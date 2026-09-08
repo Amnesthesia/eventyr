@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Gillys Line Dancing
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1k4x2x@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T180000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:Gillys Line Dancing
+DESCRIPTION:Dust off your boots and join us for a fun-filled afternoon of G
+ illys Line Dancing at the Kings Beach Tavern on Sunday 13 September! 🕺
+ 💃 Kicking off from 6PM\, it’s the perfect afternoon for beginners and
+  seasoned dancers alike—bring your friends\, learn some moves\, and soak
+  up the good vibes. Don’t miss out on the toe-tappin’ action!
+LOCATION:Kings Beach Tavern\, Caloundra · Caloundra + Kawana
+URL:https://tickets.oztix.com.au/outlet/event/8d27c209-8600-435b-9d74-25275
+ fd6e3b0
+END:VEVENT
+END:VCALENDAR

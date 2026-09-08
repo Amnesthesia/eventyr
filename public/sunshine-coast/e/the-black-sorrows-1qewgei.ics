@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Black Sorrows
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1qewgei@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T140000
+DTEND;TZID=Australia/Brisbane:20260920T160000
+SUMMARY:The Black Sorrows
+DESCRIPTION:See The Black Sorrows live at the Sunshine Surfy for their Quin
+ tessential Best of Tour.
+LOCATION:Sunshine Beach SLSC\, Sunshine Beach · Noosa + North
+URL:https://events.humanitix.com/the-black-sorrows-ykakcnnm
+END:VEVENT
+END:VCALENDAR

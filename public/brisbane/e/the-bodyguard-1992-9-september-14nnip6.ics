@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Bodyguard (1992) | 9 September
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-14nnip6@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T173000
+DTEND;TZID=Australia/Brisbane:20260909T193000
+SUMMARY:The Bodyguard (1992) | 9 September
+DESCRIPTION:Eventbrite - The Star Brisbane presents The Bodyguard (1992) | 
+ 9 September - Wednesday\, September 9\, 2026 at The Star Brisbane - Leisur
+ e Deck\, Brisbane City\, QLD. Find event and ticket information.
+LOCATION:The Star Brisbane - Leisure Deck\, South Bank
+URL:https://www.eventbrite.com.au/e/the-bodyguard-1992-9-september-tickets-
+ 1995059473591?aff=ebdssbdestsearch
+END:VEVENT
+END:VCALENDAR

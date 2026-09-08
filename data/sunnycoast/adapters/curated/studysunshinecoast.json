@@ -1,0 +1,76 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "studysunshinecoast",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Generation Innovation",
+      "datetime": "Tue 24 Mar – Fri 2 Oct",
+      "datetime_iso": "2026-03-24",
+      "datetime_end_iso": "2026-10-02",
+      "location": "Study Sunshine Coast events",
+      "link": "https://www.studysunshinecoast.com.au/event/generation-innovation/",
+      "cost": "See link",
+      "source": "Study Sunshine Coast events",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "innovation",
+        "youth",
+        "networking"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "STUFFit – Certificate III in Events",
+      "datetime": "Thu 5 Feb – Wed 4 Nov",
+      "datetime_iso": "2026-02-05",
+      "datetime_end_iso": "2026-11-04",
+      "location": "Study Sunshine Coast events",
+      "link": "https://www.studysunshinecoast.com.au/event/stuff-it-certificate-iii-in-events/",
+      "cost": "See link",
+      "source": "Study Sunshine Coast events",
+      "description": "",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "events",
+        "training",
+        "education"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "eVTOL Student Team Project",
+      "datetime": "Tue 3 Feb – Tue 8 Dec",
+      "datetime_iso": "2026-02-03",
+      "datetime_end_iso": "2026-12-08",
+      "location": "Study Sunshine Coast events",
+      "link": "https://www.studysunshinecoast.com.au/event/evtol-student-team-project/",
+      "cost": "See link",
+      "source": "Study Sunshine Coast events",
+      "description": "The eVTOL student team – a collaborative effort between the Manufacturing Excellence Forum (Sunshine Coast) Ltd (MEFSC), University of the Sunshine Coast (UniSC),…",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "engineering",
+        "technology",
+        "student"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

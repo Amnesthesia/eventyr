@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Strong is the New Pretty
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-t8hf28@dothings
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260920
+SUMMARY:Strong is the New Pretty
+DESCRIPTION:Suzie Miller\, the celebrated Australian playwright behind sell
+ -out smash hit RBG: Of Many\, One and international phenomenon Prima Facie
+ \, turns her extraordinary talents to the historical formation of the AFLW
+  in this world premiere.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/strong-is-the-new-pretty
+END:VEVENT
+END:VCALENDAR

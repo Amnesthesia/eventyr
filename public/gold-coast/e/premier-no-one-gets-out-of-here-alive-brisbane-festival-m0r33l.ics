@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:PREMIER - no one gets out of here alive - Brisbane festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-m0r33l@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T200000
+SUMMARY:PREMIER - no one gets out of here alive - Brisbane festival
+DESCRIPTION:For everyone who is going to die…
+LOCATION:The Farm
+URL:https://www.thefarm.company/calendar/no-one-gets-out-of-here-alive
+END:VEVENT
+END:VCALENDAR

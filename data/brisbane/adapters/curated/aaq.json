@@ -1,0 +1,32 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "aaq",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "September Monthly Meeting – Observing an Eclipsing Binary Star with a 2.3m Telescope",
+      "datetime": "Sat 19 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-19T16:00:00",
+      "datetime_end_iso": "",
+      "location": "Parnell Lecture Theatre 07-222, Parnel Building, University of Queensland, St Lucia QLD 4067",
+      "link": "https://www.aaq.org.au/events/september-monthly-meeting-2/",
+      "cost": "See link",
+      "source": "Astronomical Association of Queensland",
+      "description": "Our meetings include brief business, a main presentation and items of astronomical news or activities from members.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "astronomy",
+        "science",
+        "space"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yogalates
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-koa50t@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T070000
+DTEND;TZID=Australia/Brisbane:20260909T080000
+SUMMARY:Yogalates
+DESCRIPTION:Yoga and Pilates fusion\, a fitness routine that combines Pilat
+ es exercises with the postures and breathing techniques of yoga. Suitable 
+ for all ages\, no previous yoga experience required.
+LOCATION:Guyatt Park\, St Lucia
+URL:https://www.brisbaneunlocked.com.au/yogalates-2026-09-08
+END:VEVENT
+END:VCALENDAR

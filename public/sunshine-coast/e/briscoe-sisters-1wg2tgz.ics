@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Briscoe Sisters
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1wg2tgz@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T180000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:Briscoe Sisters
+DESCRIPTION:Hailing from Yalanji country in Far North QLD\, Briscoe Sisters
+  have been performing their songs and cultural stories for over two decade
+ s. From their early days being recognised as Port Fairy’s Folk Festival
+ ’s Matons Young Talent of the year in 2005 and top 4 Deadly’s new tale
+ nt in 2004\, the sisters Deline\, Merindi and Naurita spent 10 years touri
+ ng to national major events and Festivals across Australia. Highlights inc
+ lue performing at CIAF 2018\, Tandanya Spirit Festival in South Australia 
+ and performing alongside Yothu Yindi Band at the Yarrabah Music Festival i
+ n 2018. With recent performances at Woodford Folk Festival and at The Sydn
+ ey Opera House\, Briscoe Sisters are back on tour and performing select Fe
+ stivals across Australia bringing Kuku Yalanji language and song to audien
+ ces once again. Deline\, Merindi and Naurita’s sister harmonies\, traine
+ d in gospel singing from their youth\, makes for an incredibe live show. G
+ rounded in their culture and families\, these sisters continue to bring gr
+ eat healing and empowerment through their music.
+LOCATION:Maleny Community Centre
+URL:https://malenycc.org/event/briscoe-sisters/
+END:VEVENT
+END:VCALENDAR

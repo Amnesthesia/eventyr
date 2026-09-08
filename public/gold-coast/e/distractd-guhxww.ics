@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Distractd
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-guhxww@dothings
+DTSTART;TZID=Australia/Brisbane:20260701T180000
+DTEND;TZID=Australia/Brisbane:20260701T200000
+SUMMARY:Distractd
+DESCRIPTION:Join us on the first Wednesday of every month for DISTRACTD —
+  a warm\, neurodivergent-affirming event series exploring ADHD\, autism an
+ d neurodiversity. Each mont
+LOCATION:Basement
+URL:https://hota.com.au/events/2026-distractd
+END:VEVENT
+END:VCALENDAR

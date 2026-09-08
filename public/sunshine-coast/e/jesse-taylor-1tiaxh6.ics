@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jesse Taylor
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1tiaxh6@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Jesse Taylor
+DESCRIPTION:The Peregian Beach Hotel\, family owned and family run. We love
+  our local area and absolutely love welcoming you to our little piece of p
+ aradise here in Peregian Beach.
+LOCATION:Peregian Beach Hotel\, Peregian Beach · Coolum + Peregian · 3pm
+URL:https://peregianbeachhotel.com.au/whats-on/
+END:VEVENT
+END:VCALENDAR

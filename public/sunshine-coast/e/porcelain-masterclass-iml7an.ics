@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:PORCELAIN MASTERCLASS
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-iml7an@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T090000
+DTEND;TZID=Australia/Brisbane:20260913T150000
+SUMMARY:PORCELAIN MASTERCLASS
+DESCRIPTION:Make beautiful translucent porcelain vases with a colourful sur
+ face design with contemporary ceramic artist Tania Vrancic. Explore your o
+ wn creativity through mono-printing\, stenciling\, and painting with colou
+ rful porcelain using slip-casting methods. Hand-build vases\, jewellery\, 
+ and Christmas ornaments with your slabs. Enjoy this intuitive process to f
+ ree your imagination. You will learn how to best prepare your work for fir
+ ing and how to polish the surfaces after firing.
+LOCATION:Cooroy Butter Factory Arts Centre
+URL:https://events.humanitix.com/porcelain-masterclass
+END:VEVENT
+END:VCALENDAR

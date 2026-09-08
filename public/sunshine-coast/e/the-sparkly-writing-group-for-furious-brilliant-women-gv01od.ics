@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Sparkly Writing Group for Furious Brilliant Women.
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-gv01od@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T093000
+DTEND;TZID=Australia/Brisbane:20260917T113000
+SUMMARY:The Sparkly Writing Group for Furious Brilliant Women.
+DESCRIPTION:We’ll start by meeting one another\, having a cuppa and settl
+ ing into the group. This is for women who want to write out their frustrat
+ ions and spend time with other women w
+LOCATION:Victoria Vanstone\, 46 sundew street\, sunshine coast\, sunshine c
+ oast
+URL:https://www.meetup.com/the-sparkly-writing-group-for-furious-brilliant-
+ women/events/316292470/
+END:VEVENT
+END:VCALENDAR

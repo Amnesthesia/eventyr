@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:THE GOLDEN HOURS
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-199aru4@dothings
+DTSTART;TZID=Australia/Brisbane:20260523T150000
+DTEND;TZID=Australia/Brisbane:20271225T180000
+SUMMARY:THE GOLDEN HOURS
+DESCRIPTION:No screens\, all presence. Screen devices left at the door. Joi
+ n these ongoing sessions to play\, read\, sew or converse with those aroun
+ d you in a delibrate space for grounding and reconnection. You are invited
+  to bring projects\, work\, boardgames or anything else so long as it is n
+ ot screen-based. Hosted by Greg Grodecki\, gold coin donation. #block-def0
+ 6c94008b4b51006e { --stroke-style: none\;--stroke-thickness: 6px\; } #bloc
+ k-def06c94008b4b51006e .sqs-html-content { --tweak-text-block-padding: 6% 
+ 6% 6% 6%\; --tweak-text-block-padding: initial\; } #block-def06c94008b4b51
+ 006e { mix-blend-mode: var(--tweak-text-block-blend )\; border-radius: var
+ (--tweak-text-block-radius)\; } #block-def06c94008b4b51006e { --tweak-text
+ -block-radius: 0px 0px 0px 0px\; } #block-def06c94008b4b51006e { } @media 
+ screen and (max-width: 767px) { #block-def06c94008b4b51006e { } } @media s
+ creen and (max-width: 767px) { #block-def06c94008b4b51006e .sqs-html-conte
+ nt { } } @media screen and (max-width: 767px) { } DATES + TIMES: 4th Sunda
+ y every month Next installment: July 26th 3:00PM - 6:00PM WALK IN DONATION
+  #block-8ac95ebeec55c801959f { --stroke-style: none\;--stroke-thickness: 6
+ px\; } #block-8ac95ebeec55c801959f .sqs-html-content { --tweak-text-block-
+ padding: 6% 6% 6% 6%\; --tweak-text-block-padding: initial\; } #block-8ac9
+ 5ebeec55c801959f { mix-blend-mode: var(--tweak-text-block-blend )\; border
+ -radius: var(--tweak-text-block-radius)\; } #block-8ac95ebeec55c801959f { 
+ --tweak-text-block-radius: 0px 0px 0px 0px\; } #block-8ac95ebeec55c801959f
+  { } @media screen and (max-width: 767px) { #block-8ac95ebeec55c801959f { 
+ } } @media screen and (max-width: 767px) { #block-8ac95ebeec55c801959f .sq
+ s-html-content { } } @media screen and (max-width: 767px) { } LEARN MORE #
+ block-yui_3_17_2_1_1780378643799_4053 { --sqs-block-content-flex: 0\; } #b
+ lock-yui_3_17_2_1_1780378643799_4053 { --opacity: 100%\; --translate-x: 0p
+ x\; --translate-y: 0px\; --rotation: 0deg\; --scale-x: 100%\; --scale-y: 1
+ 00%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-x: 50%\; --origin-y: 50%\
+ ; --block-transform: none\; opacity: var(--opacity\, 1)\; transform: var(-
+ -block-transform)\; transform-origin: var(--origin-x) var(--origin-y)\; }
+LOCATION:Vacant Assembly
+URL:https://www.vacantassembly.com/events/the-golden-hours
+END:VEVENT
+END:VCALENDAR

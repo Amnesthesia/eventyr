@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LEVEL UP: The Networking Playbook
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1o7owyf@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T123000
+DTEND;TZID=Australia/Brisbane:20260910T143000
+SUMMARY:LEVEL UP: The Networking Playbook
+DESCRIPTION:AI can't replace human relationships—and if you want to grow 
+ in your career\, business\, or personal life\, networking is still one of 
+ your best bets. Is networ...
+LOCATION:Creative Mornings Brisbane
+URL:https://creativemornings.com/talks/level-up-the-networking-playbook
+END:VEVENT
+END:VCALENDAR

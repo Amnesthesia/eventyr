@@ -1,0 +1,186 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "unisq",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Soil Management Training",
+      "datetime": "Thu 17 Sep – Fri 18 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "2026-09-18",
+      "location": "University of Southern Queensland, Warwick QLD",
+      "link": "https://unisq.edu.au/",
+      "cost": "See link",
+      "source": "University of Southern Queensland",
+      "description": "",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "agriculture",
+        "soil",
+        "training"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Goat supply chain tour",
+      "datetime": "Tue 15 Sep – Sat 19 Sep",
+      "datetime_iso": "2026-09-15",
+      "datetime_end_iso": "2026-09-19",
+      "location": "University of Southern Queensland, Cunnamulla QLD / Condobolin NSW",
+      "link": "https://unisq.edu.au/",
+      "cost": "See link",
+      "source": "University of Southern Queensland",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "agriculture",
+        "livestock",
+        "tour"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Heart of Country Courage",
+      "datetime": "Fri 11 Sep – Sun 13 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-13",
+      "location": "University of Southern Queensland, St George QLD",
+      "link": "https://www.heartkids.org.au/event/heart-of-country-courage/",
+      "cost": "See link",
+      "source": "University of Southern Queensland",
+      "description": "Attend Heart of Country Courage at St George Showgrounds, a fundraising event proudly supporting HeartKids and Sober in the Country.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "fundraiser",
+        "charity",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Sticky Beak Field Day: soils, crops and pastures",
+      "datetime": "Wed 9 Sep, 12:45 PM",
+      "datetime_iso": "2026-09-09T12:45:00",
+      "datetime_end_iso": "",
+      "location": "University of Southern Queensland, Mitchell QLD",
+      "link": "https://www.trybooking.com/events/landing/1615454",
+      "cost": "See link",
+      "source": "University of Southern Queensland",
+      "description": "Join Mitchell Landcare, ConnectAg, DPI, RSQ and Applied Ag at McLean family property Abbieglassie. Get on the front foot with options for drought prep",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "agriculture",
+        "farming",
+        "field day"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Personalised Cropping Decisions for Drought Resilience - Tuckerang",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "University of Southern Queensland, Tuckerang, QLD",
+      "link": "https://unisq.edu.au/",
+      "cost": "See link",
+      "source": "University of Southern Queensland",
+      "description": "",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "agriculture",
+        "drought",
+        "farming"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Personalised Cropping Decisions for Drought Resilience - Roma",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "University of Southern Queensland, Roma, QLD",
+      "link": "https://unisq.edu.au/",
+      "cost": "See link",
+      "source": "University of Southern Queensland",
+      "description": "",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "agriculture",
+        "drought",
+        "farming"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Rural First Aid Training - Winton",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "University of Southern Queensland, Winton, QLD",
+      "link": "https://unisq.edu.au/",
+      "cost": "See link",
+      "source": "University of Southern Queensland",
+      "description": "",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "first aid",
+        "training",
+        "safety"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Rural First Aid Training - Boulia",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
+      "datetime_end_iso": "",
+      "location": "University of Southern Queensland, Boulia, QLD",
+      "link": "https://unisq.edu.au/",
+      "cost": "See link",
+      "source": "University of Southern Queensland",
+      "description": "",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "first aid",
+        "training",
+        "safety"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

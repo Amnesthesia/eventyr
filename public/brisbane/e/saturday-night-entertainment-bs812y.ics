@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Saturday Night Entertainment
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-bs812y@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T190000
+DTEND;TZID=Australia/Brisbane:20260912T210000
+SUMMARY:Saturday Night Entertainment
+DESCRIPTION:Join us Saturday night for some live entertainment. Tiffany Gra
+ ce will be performing her original songs alongside country pop and acousti
+ c covers\, and Glassy will be on the decks spinning pop\, house\, and danc
+ e tracks. It's free entry\, so come through and enjoy the music. Great for
+  a Saturday night out with friends.
+LOCATION:Ric's Backyard
+URL:https://surreal.live/en-au/event/rics-bar-backyard_saturday-live-bands-
+ bd2xll
+END:VEVENT
+END:VCALENDAR

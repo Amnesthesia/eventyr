@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Snorkel with Turtles Gold Coast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-13cjfmm@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20261231
+SUMMARY:Snorkel with Turtles Gold Coast
+DESCRIPTION:Snorkel with Turtles Gold Coast in Gold Coast. Get your tickets
+  on Fever now!
+LOCATION:139-151 Chinderah Bay Dr
+URL:https://feverup.com/m/167409
+END:VEVENT
+END:VCALENDAR

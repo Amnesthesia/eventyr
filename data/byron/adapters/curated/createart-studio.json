@@ -1,0 +1,33 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "createart-studio",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Little Picasso's Wednesdays 10-11:15am 🎨 age: 4-8yo",
+      "datetime": "Wed 9 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-09T10:00:00",
+      "datetime_end_iso": "2026-09-09T11:15:00",
+      "location": "Create Art Studio",
+      "link": "https://createart.studio/collections/kids-lil-picassos/products/little-picassos-package-4-class-pack",
+      "cost": "$99.00",
+      "source": "Create Art Studio",
+      "description": "These classes are perfect for your little ones on Wednesday mornings for Little Picassos —a playful and nurturing art class designed. These sessions are all about sensory discovery and joyful creativity, where children explore paint, collage, clay, and natural materials in a relaxed, welcoming environment. Parents are welcome to join but not necessary.",
+      "image": "https://createart.studio/collections/kids-lil-picassos/products/little-picassos-package-4-class-pack",
+      "category": "Workshop / Class",
+      "tags": [
+        "kids",
+        "art",
+        "creative",
+        "painting"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SPACEMAKERS
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1ghjz2m@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T100000
+DTEND;TZID=Australia/Brisbane:20260909T150000
+SUMMARY:SPACEMAKERS
+DESCRIPTION:We welcome you to join our SPACEMAKERS Workshop\, where we coll
+ aboratively design and build a range of projects for our workshop space. W
+ e will work together\, learning about design\, context\, installation\, re
+ novation and retro-fitting space.
+LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
+URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
+ tType=52993822
+END:VEVENT
+END:VCALENDAR

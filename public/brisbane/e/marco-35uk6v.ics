@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Marco
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-35uk6v@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T170000
+DTEND;TZID=Australia/Brisbane:20260908T190000
+SUMMARY:Marco
+DESCRIPTION:Marco. live at Sports Central Caboolture\, Brisbane. on Tuesday
+  8 September 2026. from 5:00pm.
+LOCATION:Sports Central Caboolture\, Caboolture
+URL:https://musick.com.au/gig/marco-2026-09-08/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Night Entertainment
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1d5vrfk@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T190000
+DTEND;TZID=Australia/Brisbane:20260920T210000
+SUMMARY:Sunday Night Entertainment
+DESCRIPTION:Join us for Sunday Night Entertainment at Ric's Bar + Backyard 
+ on Sunday\, 20th Sep 2026. Discover local talent and enjoy live entertainm
+ ent. Book your table now!
+LOCATION:Ric's Backyard
+URL:https://surreal.live/en-au/event/rics-bar-backyard_live-music-sunday-8f
+ 0qf6
+END:VEVENT
+END:VCALENDAR

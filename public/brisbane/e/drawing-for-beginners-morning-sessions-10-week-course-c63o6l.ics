@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Drawing for Beginners | Morning sessions | 10-Week Course
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-c63o6l@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T103000
+DTEND;TZID=Australia/Brisbane:20260909T123000
+SUMMARY:Drawing for Beginners | Morning sessions | 10-Week Course
+DESCRIPTION:Starts 9 September 2026\, 2.5-hour tutored classes for Adults\,
+  Wednesday mornings 10:30am–1pm\, small group setting with all materials
+  included.
+LOCATION:Creative Room Art Space
+URL:https://www.creativeroom.com.au/event-details/drawing-for-beginners-mor
+ ning-sessions-10-week-course
+END:VEVENT
+END:VCALENDAR

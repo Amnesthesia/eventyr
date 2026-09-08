@@ -7,24 +7,45 @@
   "week_end": "2026-09-13",
   "events": [
     {
-      "title": "New Brighton Farmers Market",
+      "title": "Services Australia Mobile Service Centre - Byron Bay",
       "datetime": "Tue 8 Sep",
       "datetime_iso": "2026-09-08",
       "datetime_end_iso": "",
-      "location": "Tom Kendall Oval, Park Street, New Brighton 2483",
-      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/New-Brighton-Farmers-Market",
+      "location": "Byron Bay Services Club car park, 132 Jonson Street, Byron Bay 2480",
+      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/Services-Australia-Mobile-Service-Centre-Byron-Bay",
       "cost": "See link",
       "source": "Byron Shire Council",
-      "description": "The New Brighton Farmers Market is held every Tuesday morning at Tom Kendall Oval, Park Street, New Brighton.",
+      "description": "The Australian Government Services Australia Mobile Service Centre - will be in Byron Bay",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
-        "market",
-        "local",
-        "food",
+        "government",
+        "services",
         "community"
       ],
-      "social": true,
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Services Australia Mobile Service Centre - Mullumbimby",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Station Street near the library, Station Street, Mullumbimby 2482",
+      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/Services-Australia-Mobile-Service-Centre-Mullumbimby",
+      "cost": "See link",
+      "source": "Byron Shire Council",
+      "description": "The Australian Government's mobile service centre will be visiting Mullumbimby.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "government",
+        "services",
+        "community"
+      ],
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": false
@@ -119,6 +140,28 @@
       "intellectual": false,
       "hands_on": true,
       "creative": true
+    },
+    {
+      "title": "New Brighton Farmers Market",
+      "datetime": "Tue 15 Sep",
+      "datetime_iso": "2026-09-15",
+      "datetime_end_iso": "",
+      "location": "Tom Kendall Oval, Park Street, New Brighton 2483",
+      "link": "https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/New-Brighton-Farmers-Market",
+      "cost": "See link",
+      "source": "Byron Shire Council",
+      "description": "The New Brighton Farmers Market is held every Tuesday morning at Tom Kendall Oval, Park Street, New Brighton.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "market",
+        "food",
+        "local"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     },
     {
       "title": "Federal Community Market",

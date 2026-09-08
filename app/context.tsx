@@ -11,7 +11,8 @@ import {
 import {
 	type CostLocale,
 	DEFAULT_COST_LOCALE,
-	meetsScoreFloor,
+	isTopPick,
+	LOW_SCORE_THRESHOLD,
 	TOP_PICK_THRESHOLD,
 } from "../src/shared.ts";
 import { useColorTheme } from "./hooks/useColorTheme";
@@ -75,8 +76,9 @@ interface EventsContextValue {
 	hideEvent: (id: string) => void;
 	unhideEvent: (id: string) => void;
 	clearHidden: () => void;
-	hideLowScore: boolean;
-	setHideLowScore: (v: boolean) => void;
+	/** Lowest score an event may have and still show. 0 shows everything. */
+	minScore: number;
+	setMinScore: (v: number) => void;
 	activeCat: string;
 	setActiveCat: (cat: string) => void;
 	dateRange: DateRange | null;
@@ -168,11 +170,17 @@ export function EventsProvider({
 	// Without this the state here would go stale and the next bookmark would
 	// overwrite those counts.
 	useEffect(() => onTasteChange(setTaste), []);
-	// On by default. Below LOW_SCORE_THRESHOLD is mostly venue promotion —
-	// happy hours, "$13 Lunch Special", schnitzel nights — which the ranker
-	// scores 1–3 and which nobody opened this site to read. The toggle in the
-	// filter bar brings them back, so nothing is unreachable.
-	const [hideLowScore, setHideLowScore] = useState(true);
+	// Defaults to LOW_SCORE_THRESHOLD, which is where it has always effectively
+	// sat: below 4 is mostly venue promotion — happy hours, "$13 Lunch
+	// Special", schnitzel nights — which the ranker scores 1–3 and which nobody
+	// opened this site to read.
+	//
+	// A threshold rather than the old on/off toggle because the scrape path now
+	// returns enough events that "hide the junk" and "show me only the good
+	// ones" are different asks: Brisbane went from 462 to 751 in one run. The
+	// select in the filter bar reaches every value including 0, so nothing is
+	// unreachable.
+	const [minScore, setMinScore] = useState<number>(LOW_SCORE_THRESHOLD);
 
 	/** Count this event's tags, vibes and category in or out of the taste
 	 * profile. An id with no matching event (starred in an earlier week, now
@@ -312,7 +320,12 @@ export function EventsProvider({
 		const tokens = queryTokens(query);
 		return cityData.events.filter((event) => {
 			if (hidden.has(eventId(event))) return false;
-			if (hideLowScore && !meetsScoreFloor(event.score)) return false;
+			// An unscored event is never hidden by this filter — ranking can be
+			// absent (a fresh scrape, a failed rank pass) and a missing score is
+			// not a low one. Same rule meetsScoreFloor applies for the feeds.
+			if (typeof event.score === "number" && event.score < minScore) {
+				return false;
+			}
 			if (!matchesQuery(event, tokens)) return false;
 			const catOk = activeCat === "All" || event.category === activeCat;
 
@@ -351,7 +364,7 @@ export function EventsProvider({
 		todayStr,
 		query,
 		hidden,
-		hideLowScore,
+		minScore,
 	]);
 
 	// Counted against the whole city, not `filtered`: hidden events are by
@@ -385,10 +398,13 @@ export function EventsProvider({
 		// exhibition dated 1 January reads as a bug even though the exhibition
 		// is genuinely open today. Those stay in the list below, where grouping
 		// by date files them under "Ongoing" and says so.
-		const startsInRange = (e: Event): boolean => {
-			if (!dateRange) return true;
-			const start = (e.datetime_iso || "").slice(0, 10);
-			return !!start && start >= dateRange.start && start <= dateRange.end;
+		// The window picks are judged against: whatever the user has filtered to,
+		// else the published week. It used to fall back to "no window at all"
+		// when no filter was set, which is exactly when a months-long run could
+		// sit in Picks every week.
+		const pickWindow = {
+			start: dateRange?.start ?? cityData?.week_start ?? "",
+			end: dateRange?.end ?? cityData?.week_end ?? "",
 		};
 		const unstarred: Event[] = [];
 		filtered.forEach((e) => {
@@ -400,7 +416,7 @@ export function EventsProvider({
 				return;
 			}
 			unstarred.push(e);
-			if ((e.score || 0) >= TOP_PICK_THRESHOLD && startsInRange(e)) {
+			if (isTopPick(e, pickWindow.start, pickWindow.end)) {
 				eligible.push(e);
 			}
 		});
@@ -415,7 +431,16 @@ export function EventsProvider({
 		// order — including eligible events beyond the nine.
 		const rest = unstarred.filter((e) => !pickIds.has(eventId(e)));
 		return { starredEvents, picks, rest };
-	}, [filtered, starred, dateRange, taste]);
+	}, [
+		filtered,
+		starred,
+		dateRange,
+		taste,
+		// Picks fall back to the published week when no date filter is set, so
+		// the window is a real input to this memo.
+		cityData?.week_start,
+		cityData?.week_end,
+	]);
 
 	/**
 	 * The furthest date the picker lets you choose.
@@ -504,8 +529,8 @@ export function EventsProvider({
 		hideEvent,
 		unhideEvent,
 		clearHidden,
-		hideLowScore,
-		setHideLowScore,
+		minScore,
+		setMinScore,
 		activeCat,
 		setActiveCat,
 		dateRange,

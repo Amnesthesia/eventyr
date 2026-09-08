@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "thelordalfred",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Sparkle & Sip",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "The Lord Alfred",
+      "link": "https://thelordalfred.com.au/events/sparkle-sip/",
+      "cost": "See link",
+      "source": "The Lord Alfred",
+      "description": "The NRL finals are here and we’re getting ready to cheer in style.Join us at The Lord Alfred for a jersey bedazzle session hosted by Eleyna Benzenati, aka Your Sports Girlie. Bring your NRL jersey and get it game-day ready with plenty of sparkle for the finals game.For $45pp, you’ll get all the bedazzling items you need, grazing boards to share and a drink on arrival.Bookings are essential, so grab your mates and get ready to sparke and sip.",
+      "image": "https://thelordalfred.com.au/events/sparkle-sip/",
+      "category": "Workshop / Class",
+      "tags": [
+        "craft",
+        "nrl",
+        "social",
+        "sports"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

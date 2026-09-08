@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Book Club: What are we Reading?
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ijbmmo@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T101500
+DTEND;TZID=Australia/Brisbane:20260909T121500
+SUMMARY:Book Club: What are we Reading?
+DESCRIPTION:Apologies for the late late notice\, hope to see you there! We 
+ request everyone choose the book they are reading or\, one that was memora
+ ble to share with the group. This al
+LOCATION:New Farm Library\, 135 Sydney Street New Farm Qld 4005\, Brisbane\
+ , Brisbane
+URL:https://www.meetup.com/the-power-of-women-in-our-sixties/events/3164411
+ 39/
+END:VEVENT
+END:VCALENDAR

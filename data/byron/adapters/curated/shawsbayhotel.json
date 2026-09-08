@@ -1,0 +1,32 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "shawsbayhotel",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Line Dancing",
+      "datetime": "Fri 11 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-11T18:30:00",
+      "datetime_end_iso": "",
+      "location": "The Courtyard",
+      "link": "https://www.shawsbayhotel.com.au/whats-on/line-dancing/",
+      "cost": "See link",
+      "source": "Shaws Bay Hotel",
+      "description": "YEEHAW, BALLINA! Line Dancing is back on Fri Sept 11th! Free Entry",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "dance",
+        "country",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

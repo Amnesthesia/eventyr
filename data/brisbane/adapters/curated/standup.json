@@ -96,8 +96,8 @@
     },
     {
       "title": "Hey Felicia! Presents MUSICAL DRAG BINGO",
-      "datetime": "Mon 7 Sep, 8:24 PM",
-      "datetime_iso": "2026-09-07T20:24:00",
+      "datetime": "Tue 8 Sep, 8:12 PM",
+      "datetime_iso": "2026-09-08T20:12:00",
       "datetime_end_iso": "",
       "location": "The Sit Down Comedy Club",
       "link": "https://www.standup.com.au/event/hey-felicia-presents-musical-drag-bingo-2/",
@@ -115,28 +115,6 @@
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Open Mic Night @ The Newmarket Hotel",
-      "datetime": "Mon 7 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-07T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Newmarket Hotel",
-      "link": "https://www.standup.com.au/event/open-mic-night-the-newmarket-hotel-571/",
-      "cost": "See link",
-      "source": "The Sit Down Comedy Club",
-      "description": "",
-      "image": "https://www.standup.com.au/event/open-mic-night-the-newmarket-hotel-571/",
-      "category": "Concert / Music",
-      "tags": [
-        "comedy",
-        "open mic",
-        "performance"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
       "creative": true
     },
     {
@@ -159,6 +137,29 @@
       "social": true,
       "intellectual": false,
       "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Open Mic Night @ The Morrison Hotel",
+      "datetime": "Sun 13 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-13T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Morrison Hotel",
+      "link": "https://www.standup.com.au/event/open-mic-night-the-morrison-hotel-9/",
+      "cost": "See link",
+      "source": "The Sit Down Comedy Club",
+      "description": "",
+      "image": "https://www.standup.com.au/event/open-mic-night-the-morrison-hotel-9/",
+      "category": "Concert / Music",
+      "tags": [
+        "open mic",
+        "comedy",
+        "performance",
+        "local"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
       "creative": true
     }
   ]

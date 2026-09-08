@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Art of Presence: Physical Theatre Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-svefc4@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T190000
+DTEND;TZID=Australia/Brisbane:20260913T230000
+SUMMARY:The Art of Presence: Physical Theatre Workshop
+DESCRIPTION:Join us for an immersive journey that combines physicality\, cr
+ eativity\, and storytelling to explore the powerful connection between bod
+ y\, mind\, and social space. Gain fresh perspectives and experience our in
+ novative approach to transforming complex social issues into beautiful\, e
+ mbodied poetic stories on stage. This unique creative experience will help
+  you develop body awareness\, self-expression\, voice\, confidence\, and a
+ cting skills\, while strengthening social connections. You’ll be welcome
+ d into the D.I.V.E. Collective’s training space\, taking part in the sam
+ e warm-ups\, exercises\, and creative routines we use to prepare for our p
+ erformances.
+LOCATION:Heart of Gold Film Festival
+URL:https://events.humanitix.com/2026heartofgold?occurrence=2026-09-13
+END:VEVENT
+END:VCALENDAR

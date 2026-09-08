@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Victorian State Ballet presents Beauty and The Beast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1oye4es@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T133000
+DTEND;TZID=Australia/Brisbane:20260911T153000
+SUMMARY:Victorian State Ballet presents Beauty and The Beast
+DESCRIPTION:Featuring internationally recognised artists in leading roles i
+ n a rich display of outstanding skill! One of the world’s most loved fai
+ ry tale classics is retold through excellent staging\, beautiful costumes\
+ , superb classical ballet skill and choreography which honour the spirit o
+ f this magical work - an inspiring\, impacting\, entertaining and memorabl
+ e experience for the whole family!
+LOCATION:Byron Theatre
+URL:https://www.byroncentre.com.au/theatre-events/victorian-state-ballet-pr
+ esents-beauty-and-the-beast
+END:VEVENT
+END:VCALENDAR

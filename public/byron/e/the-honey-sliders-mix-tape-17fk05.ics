@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Honey Sliders' Mix Tape
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-17fk05@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T200000
+DTEND;TZID=Australia/Brisbane:20260919T220000
+SUMMARY:The Honey Sliders' Mix Tape
+DESCRIPTION:Press rewind and start from the top - this is The Honey Sliders
+ ’ Mix Tape. A carefully curated collection of songs\, arranged in a spec
+ ial sequence to celebrate the music that inspired\, influenced\, and shape
+ d the band’s journey. Like the classic cassette compilations of decades 
+ past\, The Mix Tape unfolds across two sides\, taking audiences on a music
+ al road trip through beloved classics\, hidden treasures\, and unforgettab
+ le moments from the golden age of rock\, soul\, country\, folk\, and blues
+ .
+LOCATION:Byron Theatre
+URL:https://www.byroncentre.com.au/theatre-events/the-honey-sliders-mix-tap
+ e
+END:VEVENT
+END:VCALENDAR

@@ -7,28 +7,6 @@
   "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Make a Map FieldTrip",
-      "datetime": "Tue 8 Sep, 2:00 PM",
-      "datetime_iso": "2026-09-08T14:00:00",
-      "datetime_end_iso": "",
-      "location": "Creative Mornings Brisbane",
-      "link": "https://creativemornings.com/talks/make-a-map-fieldtrip-845aee84-7265-4ebf-8d6c-fed12a2086b2",
-      "cost": "See link",
-      "source": "Creative Mornings Brisbane",
-      "description": "We’ve become so dependent on phones do we even know how to read maps any more? And when was the last time you made your own map? In this FieldTrip we’ll be g...",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "creative",
-        "mapping",
-        "design"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
       "title": "LEVEL UP: How to Turn Every Setback into Your Next Advantage",
       "datetime": "Wed 9 Sep, 11:00 AM",
       "datetime_iso": "2026-09-09T11:00:00",
@@ -103,17 +81,18 @@
       "link": "https://creativemornings.com/talks/the-world-wide-wander-2026-walk-your-way-to-insight-ideas-and-intention",
       "cost": "See link",
       "source": "Creative Mornings Brisbane",
-      "description": "",
+      "description": "For this special FieldTrip, we're joining Walkshop Four of Street Wisdom's World Wide Wander 2026, with CreativeMornings' very own founder, Tina Roth Eisenbe...",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Workshop / Class",
       "tags": [
         "walking",
         "mindfulness",
-        "community"
+        "creativity",
+        "networking"
       ],
       "social": true,
-      "intellectual": false,
-      "hands_on": false,
+      "intellectual": true,
+      "hands_on": true,
       "creative": false
     }
   ]

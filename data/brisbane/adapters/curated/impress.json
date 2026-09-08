@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "impress",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "WOMEN IN PRINT",
+      "datetime": "Thu 10 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Impress Printmakers Studio and Gallery, 134 Kedron Park Road Wooloowin Brisbane Australia",
+      "link": "https://impress.org.au/",
+      "cost": "See link",
+      "source": "Impress Printmakers Studio and Gallery",
+      "description": "Let's celebrate women in printmaking with: Exhibition Opening party Talks Demonstrations and more... This will be 2 weeks of celebrating women in print making...",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "printmaking",
+        "art",
+        "exhibition",
+        "women"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

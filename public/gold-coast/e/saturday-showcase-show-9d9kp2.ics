@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Saturday Showcase Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-9d9kp2@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Saturday Showcase Show
+DESCRIPTION:Every Saturday night\, Based Comedy presents Comedy Underground
+  in The Basement. It's a weekly showcase of hand-picked talent from all ov
+ er the Australia and around the world. Big name acts\, up-and-coming crush
+ ers and the wild\, subversive and unique voices making waves in live comed
+ y. Saturday nights in The Basement are packed with 90 minutes of side spli
+ tting laughs\, and fresh new line ups every week. Comedy Underground is th
+ e Gold Coast's home of the very best live comedy. Comedy Underground is pr
+ esented by Based Comedy and HOTA\, Home of the Arts.
+LOCATION:Comedy Underground
+URL:https://basedcomedy.com.au/the-shows/comedy-underground.html
+END:VEVENT
+END:VCALENDAR

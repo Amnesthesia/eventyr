@@ -1,0 +1,56 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "sandstonepointhotel",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "READY FOR A MONSTROUS AMOUNT OF FUN?",
+      "datetime": "Sat 19 Sep – Mon 5 Oct",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-10-05",
+      "location": "Sandstone Point",
+      "link": "https://sandstonepointhotel.com.au/event/the-monster-jump/",
+      "cost": "See link",
+      "source": "Sandstone Point Hotel",
+      "description": "The Monster Jump is back and bigger than ever! Bounce, climb, slide and conquer your way through the ultimate school holiday adventure, returning to Sandstone Point from 19 September – 5 October. Take on a 280+ metre inflatable obstacle course packed with more than 30 epic challenges, including […]",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "family",
+        "active",
+        "outdoor",
+        "kids"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "DON’T PACK IT IN WHEN THE SUN GOES DOWN",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Sandstone Point Hotel",
+      "link": "https://sandstonepointhotel.com.au/event/anglers-afterparty/",
+      "cost": "See link",
+      "source": "Sandstone Point Hotel",
+      "description": "The fishing might be finished, but the festival isn’t. Head straight from the waterfront to the official Angler’s Afterparty, Friday 25th & Saturday 26th September. Celebrate a cracking day of fishing, great food and epic live music acts with Aussie pub bangers, plenty of drinks and […]",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "party",
+        "festival",
+        "nightlife"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

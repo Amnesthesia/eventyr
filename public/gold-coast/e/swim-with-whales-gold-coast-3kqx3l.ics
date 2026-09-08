@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Swim with Whales Gold Coast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-3kqx3l@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20261012
+SUMMARY:Swim with Whales Gold Coast
+DESCRIPTION:Swim with Whales Gold Coast in Gold Coast. Get your tickets on 
+ Fever now!
+LOCATION:139-151 Chinderah Bay Dr
+URL:https://feverup.com/m/178224
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Monthly Sober Awkward Morning Tea
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-llq8u@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T083000
+DTEND;TZID=Australia/Brisbane:20260913T100000
+SUMMARY:Monthly Sober Awkward Morning Tea
+DESCRIPTION:**Sober Awkward Women’s Meetup – Mudjimba 🌿** Come join 
+ a bunch of brilliant\, like-minded women for a relaxed\, real-life catch-u
+ p on the Sunshine Coast. This **women-onl
+LOCATION:Power Memorial Park\, Mudjimba\, Sunshine Coast\, Sunshine Coast
+URL:https://www.meetup.com/soberawkward/events/316322518/
+END:VEVENT
+END:VCALENDAR

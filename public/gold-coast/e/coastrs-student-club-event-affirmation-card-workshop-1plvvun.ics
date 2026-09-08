@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:CoastRs Student Club Event - Affirmation Card Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1plvvun@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T113000
+DTEND;TZID=Australia/Brisbane:20260909T133000
+SUMMARY:CoastRs Student Club Event - Affirmation Card Workshop
+DESCRIPTION:Check out the range of activities on offer!
+LOCATION:Gold Coast
+URL:https://www.scu.edu.au/engage/events/coastrs-workshop/
+END:VEVENT
+END:VCALENDAR

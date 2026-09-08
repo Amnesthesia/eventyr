@@ -1,0 +1,56 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "redlandscoastmuseum",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Babies and Toddlers : Textiles Exhibition",
+      "datetime": "Wed 17 Jun – Wed 30 Sep",
+      "datetime_iso": "2026-06-17",
+      "datetime_end_iso": "2026-09-30",
+      "location": "Redlands Coast Museum",
+      "link": "https://redlandscoastmuseum.org.au/exhibitions/babies-and-toddlers-textiles-exhibition/",
+      "cost": "See link",
+      "source": "Redlands Coast Museum",
+      "description": "Take a nostalgic journey through the early years of childhood with our Babies & Toddlers exhibition.\nFeaturing beautiful garments, accessories, and treasured keepsakes, this charming display showcases how babies and toddlers were cared for, dressed, and celebrated across generations.\nA highlight of the exhibition is a beautifully restored baby pram from the Museum’s collection, carefully brought back to life by our dedicated volunteers.\nDiscover the stories behind these special items, reminisce about days gone by, and share your own memories as you explore this heartwarming exhibition.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "history",
+        "textiles",
+        "family",
+        "museum"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "NAIDOC 2026 Exhibition: Fifty Years of Deadly",
+      "datetime": "Fri 3 Jul – Wed 30 Sep",
+      "datetime_iso": "2026-07-03",
+      "datetime_end_iso": "2026-09-30",
+      "location": "Redlands Coast Museum",
+      "link": "https://redlandscoastmuseum.org.au/exhibitions/naidoc-2026-exhibition-fifty-years-of-deadly/",
+      "cost": "See link",
+      "source": "Redlands Coast Museum",
+      "description": "Curated by Margie Kennedy (COOEE Program Manager) this moving exhibition is a visual truth telling that honours the past, speaks to the present and empowers the future, through powerful images, cultural content and stories. Fifty Years of Deadly captures the strength of Elders, the vision of youth and the legacy that continues to shape their communities.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "indigenous",
+        "culture",
+        "history",
+        "photography"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

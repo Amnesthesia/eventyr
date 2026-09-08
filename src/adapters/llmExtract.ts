@@ -211,18 +211,33 @@ export function createGeminiPageExtractor(
 		// Cap the fan-out. A single 389 KB listing page reduced to 171 KB of
 		// text produced 16 concurrent 12K-token calls, and page size is
 		// entirely up to the site — across ~84 listing URLs per city that is
-		// the difference between a bounded run and an open-ended bill. The
-		// first batches hold the listing itself; later ones are footer and
-		// related-content boilerplate.
-		const all = splitIntoBatches(pageText, 12000).slice(0, maxBatches);
+		// the difference between a bounded run and an open-ended bill.
+		//
+		// Which batches to keep is chosen by date density, not by position.
+		// This used to take the first `maxBatches`, on the assumption that the
+		// listing sits at the top and the tail is footer boilerplate. Measured
+		// against the cached bodies, that assumption fails on exactly the pages
+		// that were producing nothing: classbento.com.au's workshop listing has
+		// 3832 date-shaped fragments in 4.1 MB of text and **none of them in
+		// the first 12 KB**, and theurbanlist's what's-on has 15 of its 100 in
+		// the first 12 KB. Ranking by density costs nothing (countDateHits is
+		// free), keeps the same ceiling, and points the calls at the listing
+		// instead of the masthead.
+		const all = splitIntoBatches(pageText, 12000);
 		// A batch with no date-shaped text cannot produce an event that
 		// prepareCandidates would keep (undated candidates are rejected), so
-		// asking costs a call and answers nothing. Footers and related-content
-		// blocks are what this skips.
-		const batches = all.filter((b) => countDateHits(b) > 0);
-		if (batches.length < all.length) {
+		// asking costs a call and answers nothing. Footers, nav and
+		// related-content blocks are what this skips.
+		const scored = all
+			.map((text) => ({ text, hits: countDateHits(text) }))
+			.filter((b) => b.hits > 0);
+		const batches = scored
+			.sort((a, b) => b.hits - a.hits)
+			.slice(0, maxBatches)
+			.map((b) => b.text);
+		if (all.length > batches.length) {
 			console.log(
-				`  → [llmExtract/${sourceName}] skipped ${all.length - batches.length} dateless batch(es)`,
+				`  → [llmExtract/${sourceName}] ${all.length} batch(es) → ${batches.length} densest (${all.length - scored.length} dateless)`,
 			);
 		}
 		const results = await mapWithConcurrency(

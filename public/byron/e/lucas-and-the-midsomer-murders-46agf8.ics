@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lucas and the Midsomer Murders
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-46agf8@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20261018
+SUMMARY:Lucas and the Midsomer Murders
+DESCRIPTION:Lone Goat Gallery is a contemporary art space\, presenting emer
+ ging and established artists from the Northern Rivers region and beyond. L
+ ocated in the Byron Bay Library building in downtown Byron Bay\, just a sh
+ ort walk from Main Beach.
+LOCATION:Lone Goat Gallery
+URL:https://lonegoatgallery.com/exhibitions/lucas-and-the-midsomer-murders
+END:VEVENT
+END:VCALENDAR

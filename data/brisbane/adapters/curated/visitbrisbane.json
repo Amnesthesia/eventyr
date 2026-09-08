@@ -1,0 +1,101 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "aggregators",
+  "source_id": "visitbrisbane",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "PRECIOUS",
+      "datetime": "Tue 8 Sep, 8:08 PM",
+      "datetime_iso": "2026-09-08T20:08:00",
+      "datetime_end_iso": "",
+      "location": "Visit Brisbane (Brisbane Economic Development Agency)",
+      "link": "https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/precious-4cd2",
+      "cost": "See link",
+      "source": "Visit Brisbane (Brisbane Economic Development Agency)",
+      "description": "Prepare to be amazed with Museum of Brisbane's exhibition, Precious, showcasing the most awe-inspiring collections across Brisbane with more than 3,000 items from around 30 remarkable collections and collectors. From international dolls to Queensland Rugby League memorabilia, model ships to ornamental eggs, immerse yourself in the incredible stories of some of the prolific collectors of Brisbane, and get to know what makes a keepsake and collectible truly Precious .",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "exhibition",
+        "history",
+        "collections"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "MAKE, BELIEVE, MAGIC - THE WORLDS OF THE JIM HENSON COMPANY",
+      "datetime": "Sat 12 Sep 2026, 10:00 AM – Sun 18 Apr 2027",
+      "datetime_iso": "2026-09-12T10:00:00",
+      "datetime_end_iso": "2027-04-18",
+      "location": "Visit Brisbane (Brisbane Economic Development Agency)",
+      "link": "https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/make-believe-magic-the-worlds-of-the-jim-henson-company-78eb",
+      "cost": "See link",
+      "source": "Visit Brisbane (Brisbane Economic Development Agency)",
+      "description": "Celebrating 70 years of creativity and innovation, the exclusive-to-Brisbane exhibition ‘Make, Believe, Magic: The Worlds of The Jim Henson Company’ will be an unprecedented exploration of world-building and imaginative storytelling. Immense and immersive, the exhibition will explore the Company’s dynamic trajectory from practical puppetry to today’s animatronic and digital innovations, and will feature hundreds of objects from Fraggle Rock, The Dark Crystal, Labyrinth, the Muppets and Sesame Street.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "exhibition",
+        "film",
+        "puppetry",
+        "design"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "MICRO MUSEUM",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "Museum of Brisbane",
+      "link": "https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/micro-museum-fc3b",
+      "cost": "See link",
+      "source": "Visit Brisbane (Brisbane Economic Development Agency)",
+      "description": "For maximum fun for mini museumgoers, the curators of tomorrow are invited to bring their imagination to life at Museum of Brisbane’s Micro Museum, offering immersive and interactive experiences. Little art lovers of all ages are encouraged to get hands-on and create their own 'Micro Museum' where children can select, sort and arrange their own curated collections from a huge range of vintage treasures.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "kids",
+        "art",
+        "interactive",
+        "family"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "BLUEY’S WORLD",
+      "datetime": "Tue 8 Sep",
+      "datetime_iso": "2026-09-08",
+      "datetime_end_iso": "",
+      "location": "Northshore Pavilion, Brisbane, Queensland",
+      "link": "https://visit.brisbane.qld.au/whats-on/northern-suburbs/eat-and-drink-events/blueys-world-5fa7",
+      "cost": "See link",
+      "source": "Visit Brisbane (Brisbane Economic Development Agency)",
+      "description": "Bluey’s World is a one-of-a-kind immersive experience at the Northshore Pavilion in Brisbane, Queensland, where you can play the Bluey way - for real life! Embark on a brand-new immersive journey with Bluey, Bingo, Mum and Dad in their iconic Queenslander home, backyard and beyond. Explore your favourite rooms, play interactive games, and keep your eyes peeled for surprises around every corner…and maybe even a Longdog or two!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "family",
+        "kids",
+        "immersive",
+        "entertainment"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

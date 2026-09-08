@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "wesleytaylorartstudios",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Yoga Session",
+      "datetime": "Mon 14 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-14T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Wesley Taylor Art Studios",
+      "link": "https://www.wesleytaylorartstudios.com.au/yoga",
+      "cost": "$5",
+      "source": "Wesley Taylor Art Studios",
+      "description": "Introductory Yoga Class for Beginners Free Session – Tuesday 7th April 5:30pm Flamingo Studio 2 next to toilets on level 1, must register first below for free session Find balance, get flexible, and stay strong with yoga classes in Brisbane. Looking for calming indoor activities to try? Join this introductory yoga to begin your yoga …",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "yoga",
+        "fitness",
+        "wellness",
+        "free"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

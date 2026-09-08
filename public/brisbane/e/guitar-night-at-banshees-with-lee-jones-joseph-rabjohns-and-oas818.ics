@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Guitar Night at Banshees with Lee Jones\, Joseph Rabjohns and 
+ Karen Arango
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-oas818@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T200000
+DTEND;TZID=Australia/Brisbane:20260918T220000
+SUMMARY:Guitar Night at Banshees with Lee Jones\, Joseph Rabjohns and Karen
+  Arango
+DESCRIPTION:An Evening of Jazz-Rock\, Blues\, Acoustic and Classical Origin
+ al Instrumentals
+LOCATION:Banshees Bar & Artspace
+URL:https://bansheesbar.com.au/event/guitar-night-at-banshees
+END:VEVENT
+END:VCALENDAR

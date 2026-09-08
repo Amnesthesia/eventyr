@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Exhibition opening
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ex1yvl@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T170000
+DTEND;TZID=Australia/Brisbane:20260911T190000
+SUMMARY:Exhibition opening
+DESCRIPTION:Mayor Jon Raven and Councillors of the City of Logan invite you
+  to celebrate the opening of two new exhibitions\, Artwaves and Ripple eff
+ ect | Out of Artwaves: Nature of my bodies by Xin Weng on Friday 11 Septem
+ ber at 5 pm
+LOCATION:Art Gallery
+URL:https://www.loganarts.com.au/event/exhibition-opening-9/
+END:VEVENT
+END:VCALENDAR

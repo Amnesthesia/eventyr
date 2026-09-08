@@ -6,17 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:Gold Coast — do things
 X-WR-TIMEZONE:Australia/Brisbane
 BEGIN:VEVENT
-UID:goldcoast-c77re7@dothings
-DTSTART;TZID=Australia/Brisbane:20260907T103000
-DTEND;TZID=Australia/Brisbane:20260907T123000
-SUMMARY:Nerang Library Book Club
-DESCRIPTION:A local community book club meeting to discuss selected literat
- ure\; ideal for readers looking to connect with others in a relaxed\, disc
- ussion-based environment.
-LOCATION:Nerang Library
-URL:https://www.goldcoast.qld.gov.au/libraries
-END:VEVENT
-BEGIN:VEVENT
 UID:goldcoast-1p05aqb@dothings
 DTSTART;TZID=Australia/Brisbane:20260908T113000
 DTEND;TZID=Australia/Brisbane:20260908T133000
@@ -24,6 +13,112 @@ SUMMARY:Sea Slug Survey in the Rocky Shores
 DESCRIPTION:A citizen science excursion to survey local sea slug population
  s at the rocky shore\, suitable for curious nature observers.
 LOCATION:Burleigh Heads
+URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-guhxww@dothings
+DTSTART;TZID=Australia/Brisbane:20260701T180000
+DTEND;TZID=Australia/Brisbane:20260701T200000
+SUMMARY:Distractd
+DESCRIPTION:Join us on the first Wednesday of every month for DISTRACTD —
+  a warm\, neurodivergent-affirming event series exploring ADHD\, autism an
+ d neurodiversity. Each mont
+LOCATION:Basement
+URL:https://hota.com.au/events/2026-distractd
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-xaeqy2@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T220000
+SUMMARY:Mo's Comedy Club
+DESCRIPTION:An intimate\, alternative comedy night hosted at a grassroots c
+ reative venue\, known for experimental and raw stand-up performances.
+LOCATION:Mo's Desert Clubhouse\, Burleigh
+URL:https://experiencegoldcoast.com/events/mos-comedy-club
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-i4nfjm@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T173000
+DTEND;TZID=Australia/Brisbane:20260910T193000
+SUMMARY:THE GREAT DEBATE - Surgeons vs Physicians
+DESCRIPTION:A lighthearted yet intellectually stimulating debate between me
+ dical professionals\, exploring systemic perspectives on their respective 
+ disciplines.
+LOCATION:HOTA\, Panorama Room\, Surfers Paradise
+URL:https://www.eventbrite.com.au/d/australia--bundall/hota/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-31cawp@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T084500
+DTEND;TZID=Australia/Brisbane:20260912T160000
+SUMMARY:AWSN Event: Beginner friendly capture the flag
+DESCRIPTION:Facilitated by Margeaux Prince and Paula Sillars\, this hands-o
+ n\, beginner-friendly workshop is designed to help you build confidence an
+ d learn the fundamentals of CTF in a supportive and inclusive environment.
+  When: Sat 12 Sept\, 8:45AM Where: Cohort Innovation Space Learn more here
+LOCATION:Cohort Innovation Space\, 16 Nexus Way
+URL:https://cohortspace.com.au/event/awsn-event-beginner-friendly-capture-t
+ he-flag/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-43rald@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:BURNERS ON THE GOLD COAST - Meet Up at EL RANCHERO
+DESCRIPTION:So many new faces in this group since Modifyre\, and honestly t
+ he number of people who came up to me saying they'd love to connect down h
+ ere was too many to ignore. So let's do it. This is our first meet-up. Lim
+ ited capacity. For more information & tickets hit the below Book Now butto
+ n.
+LOCATION:Mo's Desert Clubhouse (El Ranchero)
+URL:https://www.mosdesertclubhouse.com/events/burners-on-the-gold-coast-mee
+ t-up-at-el-ranchero
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1ow837s@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T163000
+DTEND;TZID=Australia/Brisbane:20260913T183000
+SUMMARY:Swimming Through a Universe of Sound – An immersive listening exp
+ erience by Corrina Bonshek
+DESCRIPTION:As the sun sets over the ocean\, lie beneath the evening sky an
+ d experience sound in a different way.
+LOCATION:Currumbin Beach
+URL:https://www.swellsculpture.com.au/activity/swimming-through-a-universe-
+ of-sound/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-oytauu@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T183000
+DTEND;TZID=Australia/Brisbane:20260916T203000
+SUMMARY:LIFE DRAWING SESSIONS - SEPTEMBER 16
+DESCRIPTION:Join us for a curated evening of Life Drawing with Live Music i
+ n Studio 56 at the Miami Marketta. At Life Drawing Sessions our focus is n
+ ot on the outcome of your drawing\, rather it is about the process of givi
+ ng into the act of creating with music and muse. This event embraces peopl
+ e of all drawing levels from novice to maestro.
+LOCATION:Miami Marketta
+URL:https://www.miamimarketta.com/ticketed-events/life-drawing-sep16
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1jlmk0@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Lecture Me: Dirk Yates + Tutorial ~ Kathy Mackey
+DESCRIPTION:2PP presents a lecture on Contemporary art from Dirk Yates and 
+ follow up tutorial with Kathy Mackey.
+LOCATION:City of Gold Coast Libraries
+URL:https://www.whatsongoldcoast.au/All-events/Lecture-Me-1-Dirk-Yates-Tuto
+ rial-Kathy-Mackey-1992400462417
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-obyr4q@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T100000
+DTEND;TZID=Australia/Brisbane:20260908T120000
+SUMMARY:Threatened Species Day Walk
+DESCRIPTION:A guided educational walk through the botanic gardens focusing 
+ on local biodiversity and the importance of protecting endangered flora an
+ d fauna.
+LOCATION:Gold Coast Regional Botanic Gardens\, Benowa
 URL:https://www.goldcoast.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
@@ -38,46 +133,13 @@ LOCATION:HOTA Cinema 2\, Surfers Paradise
 URL:https://hota.com.au/events
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-i4nfjm@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T173000
-DTEND;TZID=Australia/Brisbane:20260910T193000
-SUMMARY:THE GREAT DEBATE - Surgeons vs Physicians
-DESCRIPTION:A lighthearted yet intellectually stimulating debate between me
- dical professionals\, exploring systemic perspectives on their respective 
- disciplines.
-LOCATION:HOTA\, Panorama Room\, Surfers Paradise
-URL:https://www.eventbrite.com.au/d/australia--bundall/hota/
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-lt3l7t@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T100000
-DTEND;TZID=Australia/Brisbane:20260913T210000
-SUMMARY:SWELL Fringe – Artist Talks\, Masterclasses & Live Music
-DESCRIPTION:A series of interactive sessions featuring artists discussing t
- heir creative processes\, alongside live performances and skill-based mast
- erclasses.
-LOCATION:Wallace Nicoll Park\, Currumbin
-URL:https://www.swellsculpture.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-n8o7f6@dothings
-DTSTART;TZID=Australia/Brisbane:20260418T100000
-DTEND;TZID=Australia/Brisbane:20261018T160000
-SUMMARY:This Moment: Highlights from the White Rabbit Collection
-DESCRIPTION:An exhibition featuring significant contemporary Chinese art\, 
- highlighting unique cultural perspectives and modern creative expression.
-LOCATION:HOTA\, Surfers Paradise
-URL:https://hota.com.au/events/white-rabbit-gallery
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-xaeqy2@dothings
+UID:goldcoast-m0r33l@dothings
 DTSTART;TZID=Australia/Brisbane:20260909T190000
-DTEND;TZID=Australia/Brisbane:20260909T220000
-SUMMARY:Mo's Comedy Club
-DESCRIPTION:An intimate\, alternative comedy night hosted at a grassroots c
- reative venue\, known for experimental and raw stand-up performances.
-LOCATION:Mo's Desert Clubhouse\, Burleigh
-URL:https://experiencegoldcoast.com/events/mos-comedy-club
+DTEND;TZID=Australia/Brisbane:20260909T200000
+SUMMARY:PREMIER - no one gets out of here alive - Brisbane festival
+DESCRIPTION:For everyone who is going to die…
+LOCATION:The Farm
+URL:https://www.thefarm.company/calendar/no-one-gets-out-of-here-alive
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-6gdwnl@dothings
@@ -101,15 +163,14 @@ LOCATION:Bond University
 URL:https://bond.edu.au
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-gpx1vr@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T080000
-DTEND;TZID=Australia/Brisbane:20260913T200000
-SUMMARY:SWELL Sculpture Festival
-DESCRIPTION:A large-scale outdoor sculpture exhibition showcasing contempor
- ary works from local and international artists along the Currumbin beachfr
- ont.
-LOCATION:Currumbin Beach\, Currumbin QLD
-URL:https://www.swellsculpture.com.au
+UID:goldcoast-1xt41c0@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T200000
+SUMMARY:no one gets out of here alive - BRISBANE FESTIVAL
+DESCRIPTION:For everyone who is going to die…
+LOCATION:The Farm
+URL:https://www.thefarm.company/calendar/no-one-gets-out-of-here-alive-d48p
+ z
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-89n1pm@dothings
@@ -122,26 +183,38 @@ LOCATION:Wallace Nicoll Park / Currumbin Beach
 URL:https://www.swellsculpture.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-1or62if@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
-DTEND;TZID=Australia/Brisbane:20260911T200000
-SUMMARY:SWELL Guided Twilight Sculpture Walk
-DESCRIPTION:An evening guided tour exploring the sculpture installations un
- der lighting\, providing deeper context into the works and artist motivati
- ons.
-LOCATION:Currumbin Beach ocean walkway
+UID:goldcoast-lt3l7t@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T100000
+DTEND;TZID=Australia/Brisbane:20260913T210000
+SUMMARY:SWELL Fringe – Artist Talks\, Masterclasses & Live Music
+DESCRIPTION:A series of interactive sessions featuring artists discussing t
+ heir creative processes\, alongside live performances and skill-based mast
+ erclasses.
+LOCATION:Wallace Nicoll Park\, Currumbin
 URL:https://www.swellsculpture.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-5tqi1q@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
+UID:goldcoast-1juc2o1@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
 DTEND;TZID=Australia/Brisbane:20260911T200000
-SUMMARY:Crafted Through Clay Student Showcase Opening Night
-DESCRIPTION:An opening night event showcasing ceramics from local students\
- , offering a chance to meet the makers and engage with the Gold Coast pott
- ery community.
-LOCATION:Sculptors Gallery\, 173 Ashmore Road\, Benowa
-URL:https://goldcoastpotters.com
+SUMMARY:no one gets out of here alive - BRISBANE FESTIVAL
+DESCRIPTION:For everyone who is going to die…
+LOCATION:The Farm
+URL:https://www.thefarm.company/calendar/no-one-gets-out-of-here-alive-d48p
+ z-tfsew
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1nbtb8y@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20270419
+SUMMARY:QAGOMA presents: Make\, Believe\, Magic: The Worlds of the Jim Hens
+ on Company
+DESCRIPTION:Celebrating 70 years of creativity and innovation\, the exclusi
+ ve-to-Brisbane exhibition ‘Make\, Believe\, Magic: The Worlds of The Jim
+  Henson Company.
+LOCATION:Inside Gold Coast What's On
+URL:https://www.insidegoldcoast.com.au/whatson/qagoma-presents-make-believe
+ -magic-the-worlds-of-the-jim-henson-company
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-1s2p8rc@dothings
@@ -154,25 +227,14 @@ LOCATION:Gold Coast Regional Botanic Gardens\, Benowa
 URL:https://www.goldcoast.qld.gov.au
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-lw6x79@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T190000
-DTEND;TZID=Australia/Brisbane:20260912T220000
-SUMMARY:Jazz Night
-DESCRIPTION:A live jazz performance in an intimate\, atmospheric lounge set
- ting\, offering a space for music enthusiasts to gather.
-LOCATION:Roosevelt Lounge\, Broadbeach
-URL:https://musick.com.au/gold-coast/
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-637w1v@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T090000
-DTEND;TZID=Australia/Brisbane:20260913T100000
-SUMMARY:Members Crafted through Clay Artist Talks
-DESCRIPTION:Ceramic artists share insights into their creative processes an
- d the technical aspects of their work in this intimate exhibition-related 
- talk.
-LOCATION:Sculptors Gallery\, 173 Ashmore Road\, Benowa
-URL:https://goldcoastpotters.com
+UID:goldcoast-d28nhj@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T140000
+DTEND;TZID=Australia/Brisbane:20260912T150000
+SUMMARY:no one gets out of here alive - BRISBANE FESTIVAL
+DESCRIPTION:For everyone who is going to die…
+LOCATION:The Farm
+URL:https://www.thefarm.company/calendar/no-one-gets-out-of-here-alive-d48p
+ z-tfsew-6bm5g
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-1w0cg5y@dothings
@@ -186,36 +248,102 @@ LOCATION:Benowa Studio\, Gold Coast
 URL:https://goldcoastpotters.com
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-106ewhl@dothings
-DTSTART;TZID=Australia/Brisbane:20260907T100000
-DTEND;TZID=Australia/Brisbane:20260907T160000
-SUMMARY:Between Wound & Repair – Solo Exhibition by Jo Kaiser
-DESCRIPTION:A solo exhibition by Jo Kaiser exploring themes of trauma and h
- ealing through visual media.
-LOCATION:Studio 8 Currumbin\, Currumbin Waters
-URL:https://www.whatsongoldcoast.au/All-events/Between-Wound-and-Repair-Sol
- o-Exhibition-by-Jo-Kaiser
+UID:goldcoast-106347n@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T180000
+DTEND;TZID=Australia/Brisbane:20260916T200000
+SUMMARY:Life Drawing - 16 September
+DESCRIPTION:This unguided two hour life drawing session offers a great oppo
+ rtunity to practice drawing from a live model\, ideal for all skill levels
+ . Join us and refine your creative skills in a relaxed\, welcoming environ
+ ment. The session includes shorter poses ranging from 1 - 5mins\, followed
+  by longer poses of 10 and 20mins. #block-3da2fbdec87b9ed34cb2 { } #block-
+ 3da2fbdec87b9ed34cb2 .sqs-html-content { } #block-3da2fbdec87b9ed34cb2 { m
+ ix-blend-mode: var(--tweak-text-block-blend )\; border-radius: var(--tweak
+ -text-block-radius)\; } @media screen and (max-width: 767px) { #block-3da2
+ fbdec87b9ed34cb2 { } } @media screen and (max-width: 767px) { #block-3da2f
+ bdec87b9ed34cb2 .sqs-html-content { } } @media screen and (max-width: 767p
+ x) { } Book Tickets #block-yui_3_17_2_1_1784011846361_2089 { --sqs-block-c
+ ontent-flex: 0\; } #block-yui_3_17_2_1_1784011846361_2089 { --opacity: 100
+ %\; --translate-x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --scale-x
+ : 100%\; --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-x: 5
+ 0%\; --origin-y: 50%\; --block-transform: none\; opacity: var(--opacity\, 
+ 1)\; transform: var(--block-transform)\; transform-origin: var(--origin-x)
+  var(--origin-y)\; }
+LOCATION:Mint Art House\, 87 West Burleigh Road
+URL:https://www.mintarthouse.com/events/life-drawing-16-september
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-km1ynr@dothings
-DTSTART;TZID=Australia/Brisbane:20260907T140000
-DTEND;TZID=Australia/Brisbane:20260907T160000
-SUMMARY:Chess Get Together at Elanora
-DESCRIPTION:An open community chess session inviting players of all levels 
- to practice and socialize over a game.
-LOCATION:Elanora Library
-URL:https://www.goldcoast.qld.gov.au/libraries
+UID:goldcoast-p7lmrz@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T180000
+DTEND;TZID=Australia/Brisbane:20260917T210000
+SUMMARY:Forró No Marketta - September 17
+DESCRIPTION:Forró No Marketta - Free Monthly Dance Night Step into the rhy
+ thm of Brazil with Forró No Marketta\, a free monthly night of music\, da
+ ncing and good vibes. Kick things off with a free forró lesson at 6pm\, t
+ hen enjoy social dancing and a DJ set from 7pm. Forró is a lively and pla
+ yful partner dance from the North of Brazil\, perfect for beginners and se
+ asoned dancers alike. With street food\, great company and our signature B
+ razilian caipirinhas flowing\, it’s the ultimate midweek escape. Join us
+  every third Thursday of the month and experience something a little diffe
+ rent.
+LOCATION:Miami Marketta - Cargo Stage
+URL:https://www.miamimarketta.com/ticketed-events/forro-no-marketta-sept17
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-obyr4q@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T100000
-DTEND;TZID=Australia/Brisbane:20260908T120000
-SUMMARY:Threatened Species Day Walk
-DESCRIPTION:A guided educational walk through the botanic gardens focusing 
- on local biodiversity and the importance of protecting endangered flora an
- d fauna.
-LOCATION:Gold Coast Regional Botanic Gardens\, Benowa
-URL:https://www.goldcoast.qld.gov.au
+UID:goldcoast-n8o7f6@dothings
+DTSTART;TZID=Australia/Brisbane:20260418T100000
+DTEND;TZID=Australia/Brisbane:20261018T160000
+SUMMARY:This Moment: Highlights from the White Rabbit Collection
+DESCRIPTION:An exhibition featuring significant contemporary Chinese art\, 
+ highlighting unique cultural perspectives and modern creative expression.
+LOCATION:HOTA\, Surfers Paradise
+URL:https://hota.com.au/events/white-rabbit-gallery
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-noiqoc@dothings
+DTSTART;TZID=Australia/Brisbane:20260611T113000
+DTEND;TZID=Australia/Brisbane:20260611T133000
+SUMMARY:This Moment Experience - The Exhibitionist Bar
+DESCRIPTION:Enjoy the This Moment: Highlights from the White Rabbit Collect
+ ion of Chinese Contemporary Art guided tour\, followed by Pizza\, Alcoholi
+ c Spritz and 360 views at
+LOCATION:Level 5 · The Exhibitionist Bar
+URL:https://hota.com.au/events/this-moment-experience-the-exhibitionist-bar
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1609l46@dothings
+DTSTART;TZID=Australia/Brisbane:20260806T164500
+DTEND;TZID=Australia/Brisbane:20260806T184500
+SUMMARY:Holy Days
+DESCRIPTION:A lost boy in search of heaven\, three offbeat nuns on a missio
+ n\, a car powered by God (and stolen money). This is a road trip like no o
+ ther. A comedic near trag
+LOCATION:Cinema 2
+URL:https://hota.com.au/events/holy-days
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-6wmlvn@dothings
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20261012
+SUMMARY:This Moment: Highlights from the White Rabbit Collection of Chinese
+  Contemporary Art
+DESCRIPTION:This Moment: Highlights from the White Rabbit Collection of Chi
+ nese Contemporary ArtImage Credit: Kung Wen-Yi 鞏文宜\, RX78-2 2015\, c
+ eramic. White Rabbit Collect...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/this-moment-highlights-from-the
+ -white-rabbit-collection-of-chinese-contemporary-art
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1vwypec@dothings
+DTSTART;TZID=Australia/Brisbane:20260825T123000
+DTEND;TZID=Australia/Brisbane:20260825T143000
+SUMMARY:Tony
+DESCRIPTION:A 19-year-old Anthony Bourdain travels to Provincetown and stum
+ bles into the chaotic world of a restaurant kitchen\, setting off a summer
+  that will shape the cou
+LOCATION:Cinema 2
+URL:https://hota.com.au/events/tony
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-1wruz3u@dothings
@@ -227,6 +355,84 @@ DESCRIPTION:A solo exhibition by Jo Kaiser exploring themes of trauma and h
 LOCATION:Studio 8 Currumbin\, Currumbin Waters
 URL:https://www.whatsongoldcoast.au/All-events/Between-Wound-and-Repair-Sol
  o-Exhibition-by-Jo-Kaiser
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-17v76cj@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T130000
+DTEND;TZID=Australia/Brisbane:20260908T150000
+SUMMARY:Lunch Law Talks: Bail Laws
+DESCRIPTION:Bail is a fundamental part of Australia's criminal justice syst
+ em\, based on the principle that a person is presumed innocent until prove
+ n guilty. Under the Bail Act 2013 (NSW) \, courts must determine whether a
+ n accused person poses an unacceptable risk of failing to appear in court\
+ , committing further offences\, endangering others\, or interfering with t
+ he administration of justice. Bail decisions therefore require a careful b
+ alance between protecting the rights of the accused and ensuring community
+  safety. Recent high-profile domestic violence and youth crime cases have 
+ intensified public debate about whether that balance is being achieved.
+LOCATION:Southern Cross University Gold Coast
+URL:https://www.scu.edu.au/business-law-and-arts/events/lunch-law-talks-sep
+ tember/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-386k8@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270307
+SUMMARY:Premium Springbrook Natural Bridge\, Glow Worm Cave & Skywalk
+DESCRIPTION:Premium Springbrook Natural Bridge\, Glow Worm Cave & Skywalk i
+ n Brisbane. Get your tickets on Fever now!
+LOCATION:Multiple locations
+URL:https://feverup.com/m/172583
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1732pac@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T093000
+DTEND;TZID=Australia/Brisbane:20260909T123000
+SUMMARY:Cherie Noble Pottery Classes
+DESCRIPTION:She teaches all aspects of ceramics including wheel\, hand buil
+ ding\, sculpture and surface decoration.
+LOCATION:Mudgeeraba Studio
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1hg0y38@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T180000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Michael Jones Pottery Classes
+DESCRIPTION:His classes accommodate beginners to advanced students in both 
+ wheel throwing and hand building.
+LOCATION:Benowa Studio
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1aoftjn@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T204500
+DTEND;TZID=Australia/Brisbane:20260909T224500
+SUMMARY:The Board Gamers
+DESCRIPTION:People of all ages love board games. They’re entertaining\, s
+ timulate the mind\, enhance the memory and exercise cognitive skills. Most
+  importantly\, they’re a whole lot of fun. You’re invited to join a ne
+ w group at Twin Towns\, The Board Gamers. It’s the perfect excuse to get
+  out of the house\, connect socially with other members and make new frien
+ ds\, and enjoy morning tea and a chat. The best part\, it’s all free. Se
+ cond and fourth Wednesday of the month from 10.45am-12pm Qld\, Signatures 
+ on the Lobby Level at The Sebel Twin Towns.
+LOCATION:Twin Towns\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/the-board-gamers/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1czo067@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T153000
+DTEND;TZID=Australia/Brisbane:20260910T173000
+SUMMARY:PICTURE BOOKS ARE NOT JUST FOR LITTLE CHILDREN!
+DESCRIPTION:with Jane Godwin In this stimulating and interactive session\, 
+ we’ll explore picture books from every angle and the many opportunities 
+ they bring to a classroom or family story time - whether with 5-year-olds 
+ or 15-year-olds. Drawing on her experience as both publisher and writer\, 
+ and using examples from picture books around the world\, Jane explores the
+  power of this art form to enlighten\, entertain\, inspire and educate.
+LOCATION:LSODE Campus
+URL:https://storyfest.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-o7fztt@dothings
@@ -253,15 +459,33 @@ URL:https://www.queensland.com/gb/en/things-to-do/arts-and-culture/gallerie
  s-and-museums/hota-gold-coast
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-17ioi72@dothings
+UID:goldcoast-gpx1vr@dothings
 DTSTART;TZID=Australia/Brisbane:20260911T080000
-DTEND;TZID=Australia/Brisbane:20260913T120000
-SUMMARY:SWELL Active & Healthy Wellness Program
-DESCRIPTION:A series of grounded movement\, meditation\, and wellness sessi
- ons held in the park during the SWELL festival\, designed to connect commu
- nity members through activity.
-LOCATION:Len Wort Park\, Currumbin
-URL:https://www.whatsongoldcoast.au
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:SWELL Sculpture Festival
+DESCRIPTION:A large-scale outdoor sculpture exhibition showcasing contempor
+ ary works from local and international artists along the Currumbin beachfr
+ ont.
+LOCATION:Currumbin Beach\, Currumbin QLD
+URL:https://www.swellsculpture.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1q0qzbl@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T093000
+DTEND;TZID=Australia/Brisbane:20260911T113000
+SUMMARY:CREATIVE WRITING WORKSHOP
+DESCRIPTION:with Louise Park This professional learning masterclass equips 
+ adults with practical\, research-informed strategies to move young writers
+  beyond formulaic narrative structures and into more sophisticated\, purpo
+ seful writing. Drawing on techniques used by bestselling author Louise Par
+ k (Last Man Out)\, participants explore how accomplished writers make deci
+ sions about language\, structure\, characterisation and meaning. The works
+ hop focuses on helping students develop a stronger authorial voice\, creat
+ e vivid and engaging descriptions\, understand how readers construct meani
+ ng\, and use editing as a powerful tool to improve writing rather than sim
+ ply correct errors.
+LOCATION:LSODE Campus
+URL:https://storyfest.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-17dbp4o@dothings
@@ -272,6 +496,46 @@ DESCRIPTION:A creative\, hands-on workshop focused on artistic exploration
  and experimentation at HOTA's dedicated learning space.
 LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
 URL:https://hota.com.au/events
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-5tqi1q@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:Crafted Through Clay Student Showcase Opening Night
+DESCRIPTION:An opening night event showcasing ceramics from local students\
+ , offering a chance to meet the makers and engage with the Gold Coast pott
+ ery community.
+LOCATION:Sculptors Gallery\, 173 Ashmore Road\, Benowa
+URL:https://goldcoastpotters.com
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-6r190y@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:NO CIGAR
+DESCRIPTION:NO CIGAR are bringing their brand of ‘semi rock’ to Austral
+ ia this spring\, with thirteen lively shows on the cards for their biggest
+  run in Australia to date . NO CIGAR have carved out a unique niche blendi
+ ng indie\, surf\, and alternative rock into a sound that's as rhythm-drive
+ n as it is emotionally resonant\, earning a fiercely loyal following acros
+ s Australia\, the UK\, the US and Europe. They are no strangers to the Aus
+ tralian shores and audiences\, making this their fourth headline excursion
+  across the ditch. Spanning the breadth of their catalogue\, the show will
+  likely include a few unreleased numbers\, giving Australia the first snea
+ k peak of what’s next for NO CIGAR.
+LOCATION:Miami Marketta (18+)
+URL:https://www.miamimarketta.com/ticketed-events/no-cigar
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1or62if@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:SWELL Guided Twilight Sculpture Walk
+DESCRIPTION:An evening guided tour exploring the sculpture installations un
+ der lighting\, providing deeper context into the works and artist motivati
+ ons.
+LOCATION:Currumbin Beach ocean walkway
+URL:https://www.swellsculpture.com.au
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-dzgdhp@dothings
@@ -295,160 +559,6 @@ DESCRIPTION:An intimate live music event held at elsewhere\, known for its
  ibe.
 LOCATION:elsewhere\, Surfers Paradise
 URL:https://www.oztix.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-9jpo0c@dothings
-DTSTART;VALUE=DATE:20260912
-DTEND;VALUE=DATE:20260913
-SUMMARY:Comedy Underground
-DESCRIPTION:An intimate stand-up comedy showcase featuring local and tourin
- g independent comedians in a basement venue atmosphere.
-LOCATION:The Basement\, Gold Coast
-URL:https://basedcomedy.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1953sa7@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T100000
-DTEND;TZID=Australia/Brisbane:20260912T130000
-SUMMARY:ArtLab Decadent Decoupage Workshop
-DESCRIPTION:A focused craft session teaching the technique of decoupage\, a
- llowing participants to create their own decorative art pieces.
-LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
-URL:https://hota.com.au/events
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-117v3qo@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T170000
-DTEND;TZID=Australia/Brisbane:20260912T210000
-SUMMARY:Miami Marketta Live Music
-DESCRIPTION:An authentic local market experience featuring live music perfo
- rmances. Known as a community hub for creative locals to socialize.
-LOCATION:Miami Marketta\, Miami
-URL:https://musick.com.au/gold-coast/
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1ptnt5x@dothings
-DTSTART;TZID=Australia/Brisbane:20260907T090000
-DTEND;TZID=Australia/Brisbane:20260907T170000
-SUMMARY:Rise and Shine Exhibition by Rupneet Kaur
-DESCRIPTION:An art exhibition by Rupneet Kaur showcasing contemporary works
-  in a community library setting.
-LOCATION:Upper Coomera Library\, Upper Coomera
-URL:https://www.whatsongoldcoast.au/All-events/Rise-and-Shine-Exhibition-by
- -Rupneet-Kaur
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1k25luo@dothings
-DTSTART;TZID=Australia/Brisbane:20260907T090000
-DTEND;TZID=Australia/Brisbane:20260907T110000
-SUMMARY:Spring Pop-Up Exhibition
-DESCRIPTION:A seasonal showcase featuring various local artists in a collab
- orative pop-up gallery environment.
-LOCATION:Gallery 8\, Southport
-URL:https://www.gallery8.com.au/pop-up-exhibition
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1sih4am@dothings
-DTSTART;TZID=Australia/Brisbane:20260907T110000
-DTEND;TZID=Australia/Brisbane:20260907T130000
-SUMMARY:Social Games at Broadbeach
-DESCRIPTION:A casual social gathering at the library featuring board games 
- and social interaction for community members.
-LOCATION:Broadbeach Library
-URL:https://www.goldcoast.qld.gov.au/libraries
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-ndztt2@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T090000
-DTEND;TZID=Australia/Brisbane:20260908T170000
-SUMMARY:Rise and Shine Exhibition by Rupneet Kaur
-DESCRIPTION:An art exhibition by Rupneet Kaur showcasing contemporary works
-  in a community library setting.
-LOCATION:Upper Coomera Library\, Upper Coomera
-URL:https://www.whatsongoldcoast.au/All-events/Rise-and-Shine-Exhibition-by
- -Rupneet-Kaur
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1pv0gtd@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T090000
-DTEND;TZID=Australia/Brisbane:20260908T110000
-SUMMARY:Spring Pop-Up Exhibition
-DESCRIPTION:A seasonal showcase featuring various local artists in a collab
- orative pop-up gallery environment.
-LOCATION:Gallery 8\, Southport
-URL:https://www.gallery8.com.au/pop-up-exhibition
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1vnvbs2@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T090000
-DTEND;TZID=Australia/Brisbane:20260909T110000
-SUMMARY:Spring Pop-Up Exhibition
-DESCRIPTION:A seasonal showcase featuring various local artists in a collab
- orative pop-up gallery environment.
-LOCATION:Gallery 8\, Southport
-URL:https://www.gallery8.com.au/pop-up-exhibition
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1y6lkml@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T180000
-DTEND;TZID=Australia/Brisbane:20260909T210000
-SUMMARY:Resin Cheese Board Workshop
-DESCRIPTION:A hands-on creative workshop where participants learn to work w
- ith resin to create custom cheese boards\, suitable for beginners interest
- ed in design and craft.
-LOCATION:West Burleigh
-URL:https://www.eventbrite.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1h8i514@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T090000
-DTEND;TZID=Australia/Brisbane:20260910T110000
-SUMMARY:Spring Pop-Up Exhibition
-DESCRIPTION:A seasonal showcase featuring various local artists in a collab
- orative pop-up gallery environment.
-LOCATION:Gallery 8\, Southport
-URL:https://www.gallery8.com.au/pop-up-exhibition
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-srcgva@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T210000
-SUMMARY:Speak Easy Surfers Paradise
-DESCRIPTION:An open social event intended for casual conversation and commu
- nity engagement in a relaxed setting.
-LOCATION:The White Rhino\, Surfers Paradise
-URL:https://goldcoastspots.com/events
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1mna4yp@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T210000
-SUMMARY:Dear Seattle Regional Aus Tour 2026 with Seahaven
-DESCRIPTION:Indie-rock live music performance featuring Dear Seattle and Se
- ahaven in an intimate venue.
-LOCATION:Mo’s Desert Clubhouse\, Burleigh Heads
-URL:https://tixel.com/au/discover/Gold-Coast
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1n1czzt@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T090000
-DTEND;TZID=Australia/Brisbane:20260911T110000
-SUMMARY:Spring Pop-Up Exhibition
-DESCRIPTION:A seasonal showcase featuring various local artists in a collab
- orative pop-up gallery environment.
-LOCATION:Gallery 8\, Southport
-URL:https://www.gallery8.com.au/pop-up-exhibition
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1r9pv5s@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T200000
-DTEND;TZID=Australia/Brisbane:20260911T220000
-SUMMARY:Fresh Fridays at Comedy Underground
-DESCRIPTION:A curated stand-up comedy showcase featuring local talent in an
-  intimate venue environment.
-LOCATION:Comedy Underground\, Gold Coast
-URL:https://experiencegoldcoast.com/events/the-jazz-room-a-frank-sinatra--l
- ouis-armstrong-tribute
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-ackfgi@dothings
@@ -482,14 +592,14 @@ LOCATION:Gallery 8\, Southport
 URL:https://www.gallery8.com.au/pop-up-exhibition
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-43zvcz@dothings
+UID:goldcoast-1953sa7@dothings
 DTSTART;TZID=Australia/Brisbane:20260912T100000
-DTEND;TZID=Australia/Brisbane:20260912T140000
-SUMMARY:Year 12 Visual Arts Exhibition
-DESCRIPTION:A showcase of emerging talent from local high school senior art
-  students\, hosted at a community-focused artist studio space.
-LOCATION:Mint Art House
-URL:https://mintarthouse.com
+DTEND;TZID=Australia/Brisbane:20260912T130000
+SUMMARY:ArtLab Decadent Decoupage Workshop
+DESCRIPTION:A focused craft session teaching the technique of decoupage\, a
+ llowing participants to create their own decorative art pieces.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://hota.com.au/events
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-1k2c0u4@dothings
@@ -501,6 +611,48 @@ DESCRIPTION:A creative exhibition showcasing floral arrangements using nati
  ge.
 LOCATION:Currumbin
 URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-kf3ppw@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T130000
+DTEND;TZID=Australia/Brisbane:20260912T150000
+SUMMARY:Rug Hooking Sketches with Fleur Brett
+DESCRIPTION:Concentrating on the technique of punch rug hooking\, you will 
+ draw up a local landscape image onto fabric to make a small rug hooked ske
+ tch.
+LOCATION:Fringe Pavillion\, Currumbin
+URL:https://www.swellsculpture.com.au/activity/rug-hooking-sketches-with-fl
+ eur-brett/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-117v3qo@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T170000
+DTEND;TZID=Australia/Brisbane:20260912T210000
+SUMMARY:Miami Marketta Live Music
+DESCRIPTION:An authentic local market experience featuring live music perfo
+ rmances. Known as a community hub for creative locals to socialize.
+LOCATION:Miami Marketta\, Miami
+URL:https://musick.com.au/gold-coast/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-lw6x79@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T190000
+DTEND;TZID=Australia/Brisbane:20260912T220000
+SUMMARY:Jazz Night
+DESCRIPTION:A live jazz performance in an intimate\, atmospheric lounge set
+ ting\, offering a space for music enthusiasts to gather.
+LOCATION:Roosevelt Lounge\, Broadbeach
+URL:https://musick.com.au/gold-coast/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-mky1df@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T210000
+DTEND;TZID=Australia/Brisbane:20260912T230000
+SUMMARY:Peach Pimsittha Pottery Classes
+DESCRIPTION:Her class offers a welcoming space to anyone wanting to learn t
+ he basics of wheel throwing and hand building.
+LOCATION:Benowa and Mudgeeraba Studios
+URL:https://goldcoastpotters.com/classes/#enquire
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-1yn2px7@dothings
@@ -524,27 +676,6 @@ LOCATION:Tedder Avenue\, Main Beach
 URL:https://www.whatsongoldcoast.au
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-1syavva@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T140000
-DTEND;TZID=Australia/Brisbane:20260913T180000
-SUMMARY:Live Music Sunday
-DESCRIPTION:A curated selection of live acoustic and indie performances acr
- oss local Gold Coast venues\, providing an intimate atmosphere for casual 
- discovery of regional talent.
-LOCATION:Various Gold Coast venues
-URL:https://www.whatsongoldcoast.au/Home
-END:VEVENT
-BEGIN:VEVENT
-UID:goldcoast-1va51dt@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T160000
-DTEND;TZID=Australia/Brisbane:20260913T180000
-SUMMARY:MANEVA & FABIO BRAZZA + TÚLIO - Brazilian Day
-DESCRIPTION:A cultural music showcase at Miami Marketta celebrating Brazili
- an music and arts with live performances in a relaxed\, social atmosphere.
-LOCATION:Miami Marketta\, Gold Coast
-URL:https://www.oztix.com.au
-END:VEVENT
-BEGIN:VEVENT
 UID:goldcoast-eelo9h@dothings
 DTSTART;TZID=Australia/Brisbane:20260913T160000
 DTEND;TZID=Australia/Brisbane:20260913T200000
@@ -556,15 +687,280 @@ LOCATION:Roughton Park\, Kirra
 URL:https://www.whatsongoldcoast.au
 END:VEVENT
 BEGIN:VEVENT
-UID:goldcoast-5hk783@dothings
-DTSTART;TZID=Australia/Brisbane:20260907T090000
-DTEND;TZID=Australia/Brisbane:20260907T110000
-SUMMARY:Gold Coast Eisteddfod 2026 – Final Days
-DESCRIPTION:The concluding performances of the Gold Coast Eisteddfod\, show
- casing regional talent in music\, dance\, and speech.
-LOCATION:Various Gold Coast venues\, Gold Coast
-URL:https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-august-se
- ptember-october-2026/
+UID:goldcoast-llt319@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T093000
+DTEND;TZID=Australia/Brisbane:20260914T123000
+SUMMARY:Danielle Clarke Pottery Classes
+DESCRIPTION:Danielle loves wheel throwing and the endless possibilities for
+  exploration that pottery offers.
+LOCATION:Benowa Studio
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-sunaef@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T180000
+DTEND;TZID=Australia/Brisbane:20260914T210000
+SUMMARY:Jo Mackenzie Pottery Classes
+DESCRIPTION:Jo\, from Amare Ceramics\, teaches hand building and wheel thro
+ wing at both the Mudgeeraba and Benowa Studios.
+LOCATION:Benowa and Mudgeeraba Studios
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-exptmq@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T180000
+DTEND;TZID=Australia/Brisbane:20260914T210000
+SUMMARY:Porsche Owen Pottery Classes
+DESCRIPTION:Porsche often sets a project for each term yet enables the flex
+ ibility for students to decide if they wish to join in or focus on a proje
+ ct of their own imagination.
+LOCATION:Benowa and Mudgeeraba Studios
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1qz8v9l@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T213000
+DTEND;TZID=Australia/Brisbane:20260914T233000
+SUMMARY:Tina Aquim Pottery Classes
+DESCRIPTION:Classes are held weekly in three hour sessions running for 5 or
+  10 weeks. Classes are friendly\, relaxed and all levels of experience are
+  welcome from
+LOCATION:Mudgeeraba Studio
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-z16oxn@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T190000
+DTEND;TZID=Australia/Brisbane:20260917T210000
+SUMMARY:Coastal Social RETURNS with PASH (ADL) + Seeing Violet + Jett Linds
+ ay + Santo Domingo
+DESCRIPTION:Coastal Social is a new live music series backing the next wave
+  of local artists. The perfect GC Thursday date/social night. Vol 5. featu
+ res Adelaide stars PASH + Seeing Violet + Jett Lindsay + Santo Domingo. Fo
+ r more information & tickets hit the below Book Now button.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/coastal-social-returns-with-p
+ ash-adl-seeing-violet-jett-lindsay-santo-domingo
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-az4lya@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T180000
+DTEND;TZID=Australia/Brisbane:20260918T200000
+SUMMARY:The Jazz Room: A Frank Sinatra & Louis Armstrong Tribute
+DESCRIPTION:⭐ Join us at The Jazz Room as we celebrate two of the most in
+ fluential musicians of all time: Frank Sinatra and Louis Armstrong. Experi
+ ence their timeless music reimagined by a talented live band in an intimat
+ e setting. Get your tickets for The Jazz Room: A Frank Sinatra & Louis Arm
+ strong Tribute in Gold Coast! Highlights 🌟 Celebrate the legacies of mu
+ sic legends Frank Sinatra and Louis Armstrong 🎵 Enjoy their most iconic
+  songs\, like Fly Me to the Moon and What a Wonderful World\, reimagined i
+ n a powerful live tribute concert ❤️ Celebrate their immeasurable impa
+ ct on music\, culture\, and society 🍷 Hosted in a chic\, intimate venue
+ —perfect for a night of music and connection 🎁 Gift memories to someo
+ ne special! Purchase a gift card for The Jazz Room here General Info 📅 
+ Dates and times: select your date & time directly in the ticket selector 
+ ⏳ Duration: 1 hour 📍 Location: Broadbeach Cultural Centre (within Bro
+ adbeach Cultural Precinct) 👤 Age requirement: 18+ ♿ Accessibility: th
+ is venue is wheelchair accessible 🪑 Please note: tables are shared and 
+ seating is assigned on a first-come\, first-served basis within each zone 
+ ❓ For more information\, please consult the FAQs of this experience here
+  ✨ If you would like to book a private show or buy tickets for a large g
+ roup (30+ people)\, click here ❤️ Health notice: users can review the 
+ health notice present in the FAQ here Programme Fly Me To The Moon - Frank
+  Sinatra My Way - Frank Sinatra What a Wonderful World - Louis Armstrong W
+ hen You’re Smiling - Louis Armstrong …and many more! Description Step 
+ into The Jazz Room for a musical journey through the songs of Frank Sinatr
+ a and Louis Armstrong. From Sinatra’s effortless swing style to Armstron
+ g’s unforgettable voice and trumpet\, their music comes alive once again
+  in a heartfelt live tribute performance. Don’t miss this celebration of
+  two icons whose influence shaped the world of jazz and popular music. Get
+  your tickets for The Jazz Room: A Frank Sinatra & Louis Armstrong Tribute
+  in Gold Coast! Seating Map
+LOCATION:Broadbeach Cultural Centre (within Broadbeach Cultural Precinct)
+URL:https://feverup.com/m/502565
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1ez8nnr@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T180000
+DTEND;TZID=Australia/Brisbane:20260918T220000
+SUMMARY:VENEZUELA FUNDRAISER CONCERT
+DESCRIPTION:Stand with Venezuela: Community Fundraiser In the wake of the r
+ ecent earthquake\, it's time for us to show up and show out. Join us for a
+ n event fueled by community\, compassion\, and action! Let's turn our coll
+ ective good energy into tangible support during these incredibly difficult
+  times. What to Expect Live Music by: No Nation Mango Matic DJ Juan Carlex
+ x DJ Victor Lopes Incredible artists bringing the healing power of sound. 
+ Great Food and Drinks: Grab a plate\, connect with the community\, and fue
+ l up for a good cause. Tattoo Raffle: Try your luck to win a fresh piece o
+ f ink from Voltio Tattoo (worth $1200)*. Good Energy: A community coming t
+ ogether in solidarity to make a real difference. All proceeds go directly 
+ to Venezuelan earthquake relief efforts. Come through\, give back\, and sh
+ are the love! Let's turn our good energy into tangible support. Date: 18th
+  September\, from 6pm Location: Miami Marketta
+LOCATION:Miami Marketta
+URL:https://www.miamimarketta.com/ticketed-events/venezuelafundraiser
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-142gwox@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T180000
+DTEND;TZID=Australia/Brisbane:20260918T200000
+SUMMARY:SWELL Masquerade Ball
+DESCRIPTION:Join us for an unforgettable evening of live jazz\, vintage gla
+ mour and coastal charm at the SWELL Masquerade Ball.
+LOCATION:Fringe Pavillion\, Currumbin
+URL:https://www.swellsculpture.com.au/activity/swell-masquerade-ball/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-11h26xn@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20261004
+SUMMARY:Veronica Cay - betwixt and between
+DESCRIPTION:
+LOCATION:Anthea Polson Art
+URL:https://antheapolsonart.com.au/view-exhibitions/?exhibition_id=15899
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-w0g29z@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20261004
+SUMMARY:David Green - when it rains the roof leaks
+DESCRIPTION:
+LOCATION:Anthea Polson Art
+URL:https://antheapolsonart.com.au/view-exhibitions/?exhibition_id=15901
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-178dwpz@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T170000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:We Are Not Aligned - Exhibition by Shiloh Perry
+DESCRIPTION:Come join us for the opening event of Shiloh’s solo exhibitio
+ n “We Are Not Aligned” on Saturday 19th September. My hand wasn’t th
+ ere and my eye didn’t see A misalignment in life My body has forgotten m
+ y mind A communication breakdown Reality of a past gone A feeling that som
+ ething is broken Chaos without a voice A ripple trying to escape Something
+  inside….. That just needed to be seen This exhibition is viewable in th
+ e Mint Art House gallery from September 19 - 26. #block-53253ab0414af6f480
+ 4d { } #block-53253ab0414af6f4804d .sqs-html-content { } #block-53253ab041
+ 4af6f4804d { mix-blend-mode: var(--tweak-text-block-blend )\; border-radiu
+ s: var(--tweak-text-block-radius)\; } @media screen and (max-width: 767px)
+  { #block-53253ab0414af6f4804d { } } @media screen and (max-width: 767px) 
+ { #block-53253ab0414af6f4804d .sqs-html-content { } } @media screen and (m
+ ax-width: 767px) { }
+LOCATION:Mint Art House\, 87 West Burleigh Road
+URL:https://www.mintarthouse.com/events/we-are-not-aligned-exhibition-by-sh
+ iloh-perry
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-jdhmxe@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:The Lazy Eyes - Cheesy Love Songs Tour (GOLD COAST)
+DESCRIPTION:The Lazy Eyes return for a national Australian tour celebrating
+  their highly anticipated second album. Appearing at Mo's Desert Clubhouse
+  on Saturday 19 September. GET IN EARLY! For more information & tickets hi
+ t the below Book Now button.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/the-lazy-eyes-cheesy-love-son
+ gs-tour-gold-coast
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-atnxrz@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T140000
+DTEND;TZID=Australia/Brisbane:20260920T220000
+SUMMARY:THE OPEN FONDA
+DESCRIPTION:🇨🇱 THE OPEN FONDA ‘26 — The Biggest Chilean Fonda on 
+ the Gold Coast 📅 Sunday 20 September 2026 ⏰ 2:00 PM – 10:00 PM 📍
+  Miami Marketta The Open Fonda takes over Miami Marketta for a full day fa
+ mily-friendly Chilean celebration\, bringing together music\, food\, dance
+  and culture in a vibrant community atmosphere — all in the heart of the
+  Gold Coast. 🎶 Live Music & DJs 🎺 Live cumbia & dancefloor favourite
+ s by Kachimbaz (Sydney) 🎸 Chilean rock & pop classics by Mr. Veneno (Br
+ isbane) 🎧 Firing up the party: DJ Dabito (Gold Coast) & DJ Maria Pina (
+ Sydney) 💃 Traditional Chilean Cueca performance by Danza Montun (Brisba
+ ne) 🍴 Food & Drinks 🥟 A Chilean classics food feast — empanadas\, 
+ choripán\, mote con huesillo and much more. 🍹 Sip and celebrate like a
+ t home with piscolas\, terremotos\, Chilean wine and more. ❤️ Feeling 
+ Chileno de Corazón? 💃 Sign up for our Cueca Contest \, show your moves
+  and celebrate our traditions together. 🎨🎯 Dive into a full day of t
+ raditional games\, arts & crafts for kids and plenty of fun for all ages. 
+ 👨‍👩‍👧‍👦 Bring the family\, come with friends\, enjoy gre
+ at food\, dance all afternoon and let’s celebrate Chile together. 🎟
+ ️ Limited tickets available ✨ Produced by Casa Babylon
+LOCATION:Miami Marketta
+URL:https://www.miamimarketta.com/ticketed-events/theopenfonda
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1gwl4u3@dothings
+DTSTART;TZID=Australia/Brisbane:20250315T190000
+DTEND;TZID=Australia/Brisbane:20250315T210000
+SUMMARY:Comedy Underground Saturday Showcase
+DESCRIPTION:A 90 minute showcase of hand-picked talent Every Saturday night
+  Comedy Underground in the Basement is a showcase of hand-picked talent th
+ at runs for 90 minutes.
+LOCATION:Basement
+URL:https://hota.com.au/events/comedy-underground-saturday-showcase
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-worgns@dothings
+DTSTART;VALUE=DATE:20260103
+DTEND;VALUE=DATE:20261206
+SUMMARY:Quiet Hour
+DESCRIPTION:On the first Saturday of every month between 9am-10am we offer 
+ Quiet Hour in HOTA Gallery. Our Quiet Hour is provided to ensure a relaxed
+  and calm environment f
+LOCATION:HOTA Gallery
+URL:https://hota.com.au/events/quiet-hour
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-ojlhfy@dothings
+DTSTART;VALUE=DATE:20260730
+DTEND;VALUE=DATE:20261118
+SUMMARY:Candlelight Concerts - Imperial Hotel Gold Coast
+DESCRIPTION:Candlelight concerts bring the magic of a live\, multi-sensory 
+ musical experience to awe-inspiring locations never used for this purpose 
+ on the Gold Coast. Th...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/candlelight-concerts--imperial-
+ hotel-gold-coast
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-16it2nf@dothings
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260913
+SUMMARY:Jodie Wells - Soft Petals\, Bold Spirits
+DESCRIPTION:
+LOCATION:Anthea Polson Art
+URL:https://antheapolsonart.com.au/view-exhibitions/?exhibition_id=16253
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-12xm0gn@dothings
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20261001
+SUMMARY:Anna Fitzpatrick
+DESCRIPTION:Boxing Day on Sydney Harbour
+LOCATION:Gallery One
+URL:https://gallery-one.com.au/exhibition/anna-fitzpatrick/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-ndztt2@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T090000
+DTEND;TZID=Australia/Brisbane:20260908T170000
+SUMMARY:Rise and Shine Exhibition by Rupneet Kaur
+DESCRIPTION:An art exhibition by Rupneet Kaur showcasing contemporary works
+  in a community library setting.
+LOCATION:Upper Coomera Library\, Upper Coomera
+URL:https://www.whatsongoldcoast.au/All-events/Rise-and-Shine-Exhibition-by
+ -Rupneet-Kaur
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1pv0gtd@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T090000
+DTEND;TZID=Australia/Brisbane:20260908T110000
+SUMMARY:Spring Pop-Up Exhibition
+DESCRIPTION:A seasonal showcase featuring various local artists in a collab
+ orative pop-up gallery environment.
+LOCATION:Gallery 8\, Southport
+URL:https://www.gallery8.com.au/pop-up-exhibition
 END:VEVENT
 BEGIN:VEVENT
 UID:goldcoast-litoqa@dothings
@@ -578,6 +974,260 @@ URL:https://www.ikonix.com.au/ultimate-guide-to-gold-coast-events-august-se
  ptember-october-2026/
 END:VEVENT
 BEGIN:VEVENT
+UID:goldcoast-dahzbl@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270202
+SUMMARY:Fingal Head Learn-to-Surf Day Trip from the Gold Coast or Byron Bay
+DESCRIPTION:📱 Smartphone tickets ⚡ Instant access to your tickets Ride
+  the waves at Fingal Head on a full-day surf adventure! Just a short hop s
+ outh from the Gold Coast\, this stunning spot offers perfect breaks for le
+ arning to surf. Enjoy back-to-back 90-minute lessons\, feast on lunch and 
+ snacks\, and get a chance to see whales and dolphins on a lighthouse tour.
+  Plus\, master the art of boomerang throwing and take home a pro photo pac
+ kage to remember the day. Get your tickets for Fingal Head Learn-to-Surf D
+ ay Trip from the Gold Coast or Byron Bay! Highlights 🏄‍♂️ Master 
+ surfing with two 90-minute lessons at scenic Fingal Head. 🐋 Spot whales
+  and dolphins on a lighthouse tour. 🪃 Learn the art of boomerang throwi
+ ng. What's included? ✔️ All surfing equipment provided for an unparall
+ eled experience. ✔️ FREE photo package to capture your thrilling momen
+ ts. ✔️ 100% stand-up guarantee\, ensuring you ride the waves with conf
+ idence. ✔️ Delicious lunch included to refuel your adventures. ✔️ 
+ Comfortable transport by air-conditioned minivan for a hassle-free journey
+ . ✔️ Two 1.5-hour surf lessons\, tailored to elevate your skills. Addi
+ tional Information 👶 Infants can ride in a pram or need to sit on an ad
+ ult's lap. 🐕 Service animals are welcome. 🚆 Public transportation op
+ tions are available nearby. 🏋️‍♂️ A moderate level of physical 
+ fitness is required. 🩳 Bring swimming gear\, beach towel\, sunscreen\, 
+ and a sun hat. 👧 Children under 12 must be accompanied by an adult. �
+ � Please inform us of any specific dietary requirements at the time of b
+ ooking. Why choose Fever? ✔️ Millions of users book every month. ✔
+ ️ The best prices and availability at all times. ✔️ Thousands of uni
+ que experiences. ✔️ Verified user reviews. ✔️ 24/7 customer servic
+ e. Experience available in the following language(s): Spanish\, English\, 
+ Japanese\, French Experience supplied by: Australian Surfing Adventures Al
+ l ticket sales are final and cannot be refunded\, exchanged\, or otherwise
+  modified. Click here to check out the T&Cs .
+LOCATION:Multiple locations
+URL:https://feverup.com/m/167346
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-uovpud@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20261102
+SUMMARY:Whale Watching by Sea World Cruises
+DESCRIPTION:Tickets 🎫 Ticket for one adult (ages 14+) General Informatio
+ n 📅 Dates and times: Various dates and times (select during purchase) 
+ 📍 Location: Sea World Whale Watch\, Sea World Cruises Terminal 👤 Age
+  requirement: 14+ ❓ Please note: Whale watching season is late May to ea
+ rly November ❗ For this event\, all sales are final and tickets can’t 
+ be refunded\, changed or modified. For more information\, please refer to 
+ our T&Cs Description Witness Humpback Whales on the Gold Coast! This whale
+  watching cruise departs from Sea World in Main Beach and continues past S
+ outh Stradbroke Island. With marine naturalists on board\, you can enjoy a
+  front-row seat to all the action from six external viewing platforms and 
+ tiered stadium seating from sea level to the sun deck. The spacious decks 
+ all around the vessel and smaller passenger numbers ensure that the experi
+ ence is a personal one with the freedom to move around and enjoy uninterru
+ pted views of the Humpback Whales wherever you are on the boat.
+LOCATION:130 Seaworld Dr
+URL:https://feverup.com/m/90409
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-5786eg@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20261030
+SUMMARY:Surfers Paradise to Wavebreak Island Pelican Cruise + Picnic
+DESCRIPTION:Surfers Paradise to Wavebreak Island Pelican Cruise + Picnic in
+  Gold Coast. Get your tickets on Fever now!
+LOCATION:Lionel Perry Park
+URL:https://feverup.com/m/178205
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-79n9vi@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T070000
+DTEND;TZID=Australia/Brisbane:20260909T090000
+SUMMARY:Let's Roam Gold Coast Scavenger Hunt: Gold Coast Community Charm!
+DESCRIPTION:Tickets 🎫 Entry for 1 device on the Let's Roam Gold Coast Sc
+ avenger Hunt Highlights 🚶‍♂️ Walk to all the best landmarks and h
+ idden gems ✔️ Work with your team or compete against them 📱 Each pl
+ ayer chooses an interactive role\, with challenges varying by person Gener
+ al Information 📅 Date and time: you can start the scavenger hunt whenev
+ er you want 📍 Location: 47 Nerang St ⏳ Duration: 2 hours 👤 Age req
+ uirement: All ages ❓ For this event\, all sales are final and tickets ca
+ n’t be refunded\, changed or modified. For more information\, please ref
+ er to our T&Cs Description Looking for fun things to do in Gold Coast? Try
+  a Gold Coast photo scavenger hunt. Walk to all the best landmarks and hid
+ den gems\, answer trivia questions\, and solve challenges with Let’s Roa
+ m\, #1 app-led scavenger hunt company! On Gold Coast Community Charm\, you
+  will be going on an enthralling tour around Gold Coast checking out the a
+ rt\, history\, and culture along the way. You’ll see groups of friends c
+ ompeting to unearth fun facts\, taking ridiculous pictures\, and deciding 
+ who will be the next scavenger hunt champion! Work with your team or compe
+ te against them as you learn new facts and create memorable experiences. L
+ et’s Roam Scavenger Hunts are great as an everyday activity\, or for bac
+ helorette parties\, birthday parties\, corporate team building events\, an
+ d more!
+LOCATION:47 Nerang St
+URL:https://feverup.com/m/90410
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1vnvbs2@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T090000
+DTEND;TZID=Australia/Brisbane:20260909T110000
+SUMMARY:Spring Pop-Up Exhibition
+DESCRIPTION:A seasonal showcase featuring various local artists in a collab
+ orative pop-up gallery environment.
+LOCATION:Gallery 8\, Southport
+URL:https://www.gallery8.com.au/pop-up-exhibition
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1y6lkml@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T180000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Resin Cheese Board Workshop
+DESCRIPTION:A hands-on creative workshop where participants learn to work w
+ ith resin to create custom cheese boards\, suitable for beginners interest
+ ed in design and craft.
+LOCATION:West Burleigh
+URL:https://www.eventbrite.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-13cjfmm@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20261231
+SUMMARY:Snorkel with Turtles Gold Coast
+DESCRIPTION:Snorkel with Turtles Gold Coast in Gold Coast. Get your tickets
+  on Fever now!
+LOCATION:139-151 Chinderah Bay Dr
+URL:https://feverup.com/m/167409
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1h8i514@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T090000
+DTEND;TZID=Australia/Brisbane:20260910T110000
+SUMMARY:Spring Pop-Up Exhibition
+DESCRIPTION:A seasonal showcase featuring various local artists in a collab
+ orative pop-up gallery environment.
+LOCATION:Gallery 8\, Southport
+URL:https://www.gallery8.com.au/pop-up-exhibition
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-nxq2td@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T100000
+DTEND;TZID=Australia/Brisbane:20260910T113000
+SUMMARY:Cuppa & Chat | Fun & Ageless
+DESCRIPTION:Join us for our relaxed Cuppa & Chat morning – a casual drop-
+ in on the 2nd Thursday of each month to enjoy a warm drink while chatting 
+ and connecting with others in a friendly\, welcoming environment. It’s t
+ he perfect way to unwind\, meet new people\, and enjoy good company at you
+ r own pace. Currumbin RSL Members get their cuppa on us! Not a member yet?
+  Ask us about joining on the day.
+LOCATION:165 Duringan Street\, Currumbin\, QLD\, Australia\, Queensland 422
+ 3
+URL:https://www.currumbinrsl.com.au/event/cuppa-chat-fun-ageless-4/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-ifq586@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T170000
+DTEND;TZID=Australia/Brisbane:20260910T190000
+SUMMARY:Young Writers' Dinner
+DESCRIPTION:Step into the ultimate arena of literacy fun! The Great Young W
+ riters’ Showdown is a fast-paced\, laugh-filled games night designed for
+  curious minds aged 10 and up. Work with our stellar line up of authors to
+  compete in a variety of challenges. From nail-biting spelling bee rounds 
+ to chaotic book cover guessing and laugh-out-loud illustration challenges\
+ , this event celebrates words in all their wild forms. Bring your skills\,
+  flex your pencils\, and compete for glory\, because in this game\, the ri
+ ght word wins! Participating authors include Sami Bayly\, Mick Elliott\, G
+ eorge Ivanoff\, Rachel Jackson\, Richard Kinnon and Liv Lorkin.
+LOCATION:Nogo Station
+URL:https://storyfest.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-paf5su@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T173000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:VIVA LA SALSA - September 10
+DESCRIPTION:Get ready to dance the night away at Viva La Salsa \, Hola Mark
+ etta's free monthly salsa social. Whether you're stepping onto the dance f
+ loor for the first time or looking to refine your moves\, everyone is welc
+ ome. Kick off the evening with a free Advanced Salsa lesson at 5:30pm \, f
+ ollowed by a free Beginners lesson at 6:30pm . From 7pm \, the dance floor
+  comes alive with social dancing\, great music and an unbeatable atmospher
+ e. Make a night of it with Miami Marketta's famous street food\, fully sto
+ cked bars and vibrant laneway vibes. Grab your friends\, bring your dancin
+ g shoes and join us for an evening of Latin rhythms\, good company and ple
+ nty of fun. Schedule 💃 Advanced Lesson: 5:30pm 🕺 Beginners Lesson: 6
+ :30pm 🎶 Social Dancing: From 7:00pm Free entry. Everyone is welcome.
+LOCATION:Miami Marketta - Cargo Stage
+URL:https://www.miamimarketta.com/ticketed-events/viva-la-salsa-sept10
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-srcgva@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Speak Easy Surfers Paradise
+DESCRIPTION:An open social event intended for casual conversation and commu
+ nity engagement in a relaxed setting.
+LOCATION:The White Rhino\, Surfers Paradise
+URL:https://goldcoastspots.com/events
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1qa7nd1@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Dear Seattle Regional Aus Tour 2026
+DESCRIPTION:Sydney punk rockers Dear Seattle are hitting the road this Augu
+ st\, announcing an extensive regional Australian headline tour with very s
+ pecial guests Seahaven (US) who will be making their debut visit to our sh
+ ores\, and Bad Neighbour. Tickets are on sale now via Destroy All Lines Wi
+ th a distinctive Aussie tinge to their emotive and propulsive wares\, Dear
+  Seattle are a headbanging-with-heart punk rock band from Sydney’s North
+ ern Beaches. One part mosh pit\, and one part love letter\, the band have 
+ created a truly unique and powerful style of songwriting that’s connecti
+ ng with fans across Australia and the rest of the world. Whether charming 
+ Missy Higgins herself with their 2019 triple j Like A Version of "The Spec
+ ial Two"\, launching their own beer\, burning up the charts and airwaves\,
+  or penning melodic\, sing along anthems\, Dear Seattle are a band who bui
+ ld unforgettable moments with charming execution. Their latest album\, TOY
+  (Domestic La La)\, released last year and marked a major milestone for th
+ e band\, debuting at #4 on the ARIA Albums Chart and earning Dear Seattle 
+ their first ever Top 10 ARIA chart position. Following a massive year of s
+ hows all over the world\, TOY was re-released earlier this year as an expa
+ nded edition featuring two bonus tracks. Joining Dear Seattle on their tre
+ k across Australia is Seahaven\, an alternative rock band from Torrance\, 
+ California\, known for blending emotionally raw songwriting with melodic\,
+  atmospheric guitar-driven music. Over nearly two decades\, the band has e
+ arned a devoted following through acclaimed releases including Winter Fore
+ ver\, Reverie Lagoon: Music for Escapism Only\, Halo of Hurt\, and their s
+ elf-titled 2026 album. With introspective lyrics\, dynamic arrangements\, 
+ and a sound that balances melancholy with soaring hooks\, Seahaven continu
+ es to evolve while staying true to the honesty that has defined the band f
+ rom the beginning. With special guests Seahaven (USA)\, Bad Neighbour and 
+ Wifecult. WILL SELL OUT / GET IN EARLY! Doors at 7pm. El Ranchero back dec
+ k/bar and Spanish Girl Food Co will be open from 6pm for preshow dinner an
+ d drinks. DEAR SEATTLE Mo's Desert Clubhouse (GOLD COAST) Thursday 10 Sept
+ ember 2026 // 7pm doors Tickets $59.90 inc BF // 18+ Mo's is Burleigh Head
+ s' most loved music venue\, licensed bars\, creative studios and cultural 
+ hub. The Warehouse & El Ranchero both boast epic bar menus\, cocktails and
+  craft beers. Mo's is a fully licensed venue\, all guests are required to 
+ show ID on entry. Tickets will only be refunded through event cancellation
+  or production of a medical certificate within 24hrs of show doors.
+LOCATION:Mo's Desert Clubhouse
+URL:https://tickets.oztix.com.au/outlet/event/f5c99a80-f2bc-45b0-affb-739a3
+ 06389c9
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-2wtb17@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Elegantly Wasted – Featuring the Songs of INXS
+DESCRIPTION:A tribute concert celebrating the musical legacy of INXS at the
+  Gold Coast's primary arts hub.
+LOCATION:HOTA\, Home of the Arts\, Surfers Paradise
+URL:https://tixel.com/au/discover/Gold-Coast
+END:VEVENT
+BEGIN:VEVENT
 UID:goldcoast-1xpqbnb@dothings
 DTSTART;TZID=Australia/Brisbane:20260910T190000
 DTEND;TZID=Australia/Brisbane:20260910T210000
@@ -588,6 +1238,42 @@ LOCATION:The Grand Hotel\, Labrador
 URL:https://musick.com.au/gig/live-music-2026-09-05-21/
 END:VEVENT
 BEGIN:VEVENT
+UID:goldcoast-1n1czzt@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T090000
+DTEND;TZID=Australia/Brisbane:20260911T110000
+SUMMARY:Spring Pop-Up Exhibition
+DESCRIPTION:A seasonal showcase featuring various local artists in a collab
+ orative pop-up gallery environment.
+LOCATION:Gallery 8\, Southport
+URL:https://www.gallery8.com.au/pop-up-exhibition
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1b8x7hk@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:Friday Night Comedy
+DESCRIPTION:Every Friday night we are taking over upstairs at Madocke with 
+ a line up of the best comedians from around Australia and internationally 
+ at one of the Gold Coast's newest and coolest little breweries. Belgian be
+ ers\, big laughs and the perfect way to knock off for the week with a laug
+ h. Every week from 7pm at Madocke Beer Brewing Company.
+LOCATION:Madocke Beer Brewing Company
+URL:https://basedcomedy.com.au/the-shows/madocke-beer-brewing-company.html
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-efbzam@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:Dear Sunday 'Back In Business' Tour
+DESCRIPTION:Dear Sunday return to stages around the country this September 
+ for a run of headline shows with special guests Spici Water\, Mermaid Wate
+ rs and Runrayrun. For more information & tickets hit the below Book Now bu
+ tton.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/dear-sunday-back-in-business-
+ tour
+END:VEVENT
+BEGIN:VEVENT
 UID:goldcoast-uxryza@dothings
 DTSTART;TZID=Australia/Brisbane:20260911T190000
 DTEND;TZID=Australia/Brisbane:20260911T210000
@@ -596,5 +1282,1368 @@ DESCRIPTION:Regular live music performances by local artists at The Grand H
  otel.
 LOCATION:The Grand Hotel\, Labrador
 URL:https://musick.com.au/gig/live-music-2026-09-05-21/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1r9pv5s@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T200000
+DTEND;TZID=Australia/Brisbane:20260911T220000
+SUMMARY:Fresh Fridays at Comedy Underground
+DESCRIPTION:A curated stand-up comedy showcase featuring local talent in an
+  intimate venue environment.
+LOCATION:Comedy Underground\, Gold Coast
+URL:https://experiencegoldcoast.com/events/the-jazz-room-a-frank-sinatra--l
+ ouis-armstrong-tribute
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1lh7syx@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T230000
+DTEND;TZID=Australia/Brisbane:20260912T033000
+SUMMARY:Laura king (Melb)
+DESCRIPTION:laura King is a leading force in Australia’s contemporary tec
+ hno/trance scene\, and for the last decade she’s been bridging the gap b
+ etween global trends and local flavour - all a reflection of her passion a
+ nd vast experiences within our dance music world. She loves to craft sets 
+ that reflect the full spectrum of her musical journey\, driven by intuitio
+ n and refined by years of experience. Laura's sound is both deeply persona
+ l\, yet always future focused. Rooted in the underground and shaped by bot
+ h global dance floors and the wide-open energy of the Australian bush. Her
+  style is anchored by techno and trance with merging elements of contempor
+ ary hard dance\, groove\, psychedelic sub genres\, tribe\, tekno and all t
+ hings fast\, quirky and bottom heavy. A true selector at heart <3 Laura's 
+ really honing in on her productions at the moment\, and after a decade of 
+ djing a unique and original sound has certainly emerged - fusing together 
+ a quirky\, stripped back\, driving style of techno/trance. Her most recent
+  track has just been released on 'Selected' Berlin. Laura’s love and com
+ mitment to her craft and our scene is undeniable! #block-23d1ce845569b8cb7
+ 788 { --stroke-style: none\;--stroke-thickness: 6px\; } #block-23d1ce84556
+ 9b8cb7788 .sqs-html-content { --tweak-text-block-padding: 6% 6% 6% 6%\; --
+ tweak-text-block-padding: initial\; } #block-23d1ce845569b8cb7788 { mix-bl
+ end-mode: var(--tweak-text-block-blend )\; border-radius: var(--tweak-text
+ -block-radius)\; } #block-23d1ce845569b8cb7788 { --tweak-text-block-radius
+ : 0px 0px 0px 0px\; } #block-23d1ce845569b8cb7788 { } @media screen and (m
+ ax-width: 767px) { #block-23d1ce845569b8cb7788 { } } @media screen and (ma
+ x-width: 767px) { #block-23d1ce845569b8cb7788 .sqs-html-content { } } @med
+ ia screen and (max-width: 767px) { } #block-690fd52595fb2c24b9a5 { --opaci
+ ty: 100%\; --translate-x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --
+ scale-x: 100%\; --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --orig
+ in-x: 50%\; --origin-y: 50%\; --block-transform: none\; opacity: var(--opa
+ city\, 1)\; transform: var(--block-transform)\; transform-origin: var(--or
+ igin-x) var(--origin-y)\; }
+LOCATION:elsewhere\, 23 Cavill Avenue
+URL:https://www.elsewherebar.com/events/lauraking
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-9jpo0c@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Comedy Underground
+DESCRIPTION:An intimate stand-up comedy showcase featuring local and tourin
+ g independent comedians in a basement venue atmosphere.
+LOCATION:The Basement\, Gold Coast
+URL:https://basedcomedy.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1efg1r9@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20261129
+SUMMARY:Candlelight: Vivaldi's Four Seasons
+DESCRIPTION:Bond University is hosting this Candlelight: Vivaldi
+LOCATION:Bond University
+URL:https://feverup.com/m/636873
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1d7b182@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260912T140000
+SUMMARY:CHERRY PICKERS MARKET - SEPTEMBER 12
+DESCRIPTION:Cherry Pickers Market is open to all sellers — from curated v
+ intage to wardrobe clear-outs\, vinyl slingers to local makers. It’s all
+  about bringing the community together and getting behind the secondhand a
+ nd slow fashion movement. Hosted at one of Gold Coast’s most iconic venu
+ es — Miami Marketta. We’ve been so lucky to call this place home since
+  2020. Now held once a month on a Saturday from 10AM-2PM. We can’t wait 
+ to see you at the next Cherry Pickers Market!
+LOCATION:Miami Marketta (All Ages)
+URL:https://www.miamimarketta.com/ticketed-events/cherrypickers-sept12
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-15y2mxd@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260912T140000
+SUMMARY:Year 12 Visual Arts Exhibition - presented by Robina State High Sch
+ ool
+DESCRIPTION:Come visit the Mint Art House gallery 10-2pm to view the Robina
+  State High School Year 12 Visual Arts students exhibition. This exhibitio
+ n showcases major bodies of work from Robina State High School's Year 12 V
+ isual Arts cohort\; the culmination of a year of exploration\, experimenta
+ tion and growth. From bold statements to quiet observations\, these works 
+ offer a genuine glimpse into how young people see and interpret the world 
+ around them. #block-8b17745f8fa929dc3d50 { } #block-8b17745f8fa929dc3d50 .
+ sqs-html-content { } #block-8b17745f8fa929dc3d50 { mix-blend-mode: var(--t
+ weak-text-block-blend )\; border-radius: var(--tweak-text-block-radius)\; 
+ } @media screen and (max-width: 767px) { #block-8b17745f8fa929dc3d50 { } }
+  @media screen and (max-width: 767px) { #block-8b17745f8fa929dc3d50 .sqs-h
+ tml-content { } } @media screen and (max-width: 767px) { }
+LOCATION:Mint Art House\, 87 West Burleigh Road
+URL:https://www.mintarthouse.com/events/robina-shs-year-12-visual-arts-exhi
+ bition
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-vktdn7@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T150000
+DTEND;TZID=Australia/Brisbane:20260912T170000
+SUMMARY:BLACKEN FOREVER - Nationwide Festival (QLD)
+DESCRIPTION:Blacken Forever is a nationwide celebration of music and solida
+ rity\, bringing people together to support the movement to Save The Black 
+ Wreath. From the biggest cities to the heart of the Dead Centre\, concerts
+  will erupt simultaneously across the country\, featuring some of Australi
+ a’s best heavy bands. One day\, one movement. One shot to Save The Black
+  Wreath. Blacken Forever is a national show of strength\, unity and noise.
+  Support the cause to save one of Australia's best heavy festival events. 
+ QLD's only Blacken fundraiser event takes place at Gold Coast's Mo's Deser
+ t Clubhouse on Saturday 12 September and will feature:\\ HELM (rare show) 
+ SNAKE MOUNTAIN BLIND GIRLS HOLYSTONE COUCH WIZARD AWFUL NOISE BUNNY RACKET
+  with LAGERSTEIN DJ SET Foodtruck onsite. Licensed bar in operation. Come 
+ and help save an Australian heavy scene institution! LTD TIX GET IN EARLY.
+  Proudly supported by Mo's Desert Clubhouse and Beats Cartel BLACKEN FOREV
+ ER - QLD Fundraiser Saturday 12 September 2026 // 3pm doors $50 GA // ALL 
+ AGES EVENT (Under 12s FREE) *Anyone under 18 must be accompanied by a pare
+ nt or guardian and vacate the venue by 8pm Mo's Desert Clubhouse is the Go
+ ld Coast's premier destination live music venue in the Burleigh Arts Quart
+ e All GA punters will be requested to show ID
+LOCATION:Mo's Desert Clubhouse
+URL:https://tickets.oztix.com.au/outlet/event/2dd17d6d-72fb-4777-99fc-0cd2a
+ a5b4dc5
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-5sltr@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T190000
+DTEND;TZID=Australia/Brisbane:20260912T210000
+SUMMARY:Saturday Showcase Show
+DESCRIPTION:Every Saturday night\, Based Comedy presents Comedy Underground
+  in The Basement. It's a weekly showcase of hand-picked talent from all ov
+ er the Australia and around the world. Big name acts\, up-and-coming crush
+ ers and the wild\, subversive and unique voices making waves in live comed
+ y. Saturday nights in The Basement are packed with 90 minutes of side spli
+ tting laughs\, and fresh new line ups every week. Comedy Underground is th
+ e Gold Coast's home of the very best live comedy. Comedy Underground is pr
+ esented by Based Comedy and HOTA\, Home of the Arts.
+LOCATION:Comedy Underground
+URL:https://basedcomedy.com.au/the-shows/comedy-underground.html
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-9fe9h8@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T100000
+DTEND;TZID=Australia/Brisbane:20260913T120000
+SUMMARY:Painted Wall Hanging with Monte Lupo
+DESCRIPTION:Kids will design and paint their own 15cm timber wall hanging u
+ sing vibrant acrylics\, with fun bird images available for inspiration
+LOCATION:Len Wort Park\, Currumbin
+URL:https://www.swellsculpture.com.au/activity/painted-wall-hanging-with-mo
+ nte-lupo/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1syavva@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T180000
+SUMMARY:Live Music Sunday
+DESCRIPTION:A curated selection of live acoustic and indie performances acr
+ oss local Gold Coast venues\, providing an intimate atmosphere for casual 
+ discovery of regional talent.
+LOCATION:Various Gold Coast venues
+URL:https://www.whatsongoldcoast.au/Home
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-nbh0fr@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T160000
+DTEND;TZID=Australia/Brisbane:20260913T210000
+SUMMARY:MANEVA & FABIO BRAZZA + TÚLIO - Brazilian Day
+DESCRIPTION:SUNDAY 13th of September | Miami Marketta | Gold Coast For the 
+ first time as part of the Brazilian Day Experience\, one of Brazil's most 
+ beloved bands\, Maneva\, brings their acclaimed live show to the Gold Coas
+ t for a special night celebrating Brazilian music\, culture\, and communit
+ y. With a career spanning over two decades\, MANEVA has become one of the 
+ biggest names in Brazilian reggae\, captivating millions of fans through t
+ heir uplifting melodies\, powerful lyrics\, and unforgettable live perform
+ ances. Known for hits such as Lágrimas de Alegria\, Luz Que Me Traz Paz\,
+  and O Destino Não Quis\, the band has built a devoted following througho
+ ut Brazil and around the world\, delivering a unique blend of reggae\, roc
+ k\, and Brazilian rhythms that continues to inspire audiences of all ages.
+  Sharing the stage is renowned Brazilian rapper\, poet\, and songwriter F
+ ÁBIO BRAZZA\, one of the most respected voices in contemporary Brazilian 
+ hip-hop. Celebrated for his intelligent lyricism\, storytelling\, and powe
+ rful social commentary\, Fábio Brazza's performances combine energy\, aut
+ henticity\, and artistry in a way that resonates deeply with audiences. Op
+ ening the celebration is Gold Coast-based Brazilian artist TÚLIO\, whose 
+ music reflects the vibrant spirit of modern Brazil while representing the 
+ strength and passion of Australia's Brazilian community. More than just a 
+ concert\, Brazilian Day Experience is a celebration of everything that mak
+ es Brazil unique. Enjoy authentic Brazilian food\, cultural experiences\, 
+ art\, community connections\, and an atmosphere filled with the colours\, 
+ flavours\, rhythms\, and energy that have made Brazilian culture famous wo
+ rldwide. Whether you're Brazilian\, have Brazilian roots\, or simply love 
+ great music and cultural experiences\, this is your opportunity to be part
+  of an unforgettable event bringing the heart of Brazil to the Gold Coast.
+  One day. Three incredible artists. One unforgettable Brazilian celebratio
+ n. Presented by Tropical Lab and Folia's Entertainment.
+LOCATION:Miami Marketta
+URL:https://www.miamimarketta.com/ticketed-events/maneva
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-dilz4v@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T183000
+DTEND;TZID=Australia/Brisbane:20260913T203000
+SUMMARY:Sunday Night Comedy
+DESCRIPTION:Fill your night with laughter at Atrium Bar’s Comedy Club\, p
+ resented by Based Comedy and hosted by local radio personality Danny Lakey
+ ! Enjoy a new line up of local and national comedians every week\, and set
+ tle into one of our comfy bean bags for a night full of fun and food. Rese
+ rve space for your group at the link.
+LOCATION:Atrium Bar
+URL:https://basedcomedy.com.au/the-shows/atrium-bar.html
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-18j9yye@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:SCRABBLE
+DESCRIPTION:
+LOCATION:Nerang Community Bowls Club\, Cayuga Street Nerang QLD 4211
+URL:https://nerangbowls.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-rtp9u3@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T180000
+DTEND;TZID=Australia/Brisbane:20260914T200000
+SUMMARY:Weekly Rehearsal (1)
+DESCRIPTION:Open for everyone! If you would like to attend this rehearsal\,
+  please let us know by clicking the button below.
+LOCATION:A.B. Paterson College
+URL:https://www.theblenders.com.au/event-details/weekly-rehearsal-1-2026-09
+ -14-18-00
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1uv7fu2@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260920
+SUMMARY:BROADWAY KIDS: THE JUNGLE BOOK
+DESCRIPTION:
+LOCATION:National Academy of Performing Arts
+URL:https://napa.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-vldhrg@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T180000
+DTEND;TZID=Australia/Brisbane:20260918T200000
+SUMMARY:Synergy 360° Session
+DESCRIPTION:SYNERGY 360° SESSION IS FINALLY HERE ☆ For one MEGA special\
+ , and rare night on the Gold Coast. Our first ever boiler room inspired\, 
+ 360 session. Where the dancefloor surrounds the booth\, where we all becom
+ e one\, connected by the rhythm of sound. ♡︎ This one is HUGE. Synergy
+  welcomes Monika Ross\, Ross Weightman AKA ROSSCO\, Federico Gonzales\, to
+  bless your ear drums. All coming together to provide groovy blends of ban
+ ging electronic rhythms to take you on a journey. MONIKA ROSS Our headline
+ r\, is a widely respected DJ and producer with raw\, authentic sounds that
+  move effortlessly through minimal\, house\, breaks and garage. Fresh from
+  her European tour\, we welcome her home. Her dynamic sets and signature s
+ ound have led to appearances at some of the most iconic venues worldwide i
+ ncluding SASH (Sydney)\, Fabric (London)\, Club der Visionaere (Berlin)\, 
+ Watergate (Berlin)\, PAL (Hamburg)\, and Oxford Underground (Sydney)\, amo
+ ng others. ROSS WEIGHTMAN (ROSSCO) Joining her is Ross Weightman AKA ROSSC
+ O\, spins house music rooted in deep\, funky\, progressive grooves\, to ma
+ ke you move. He has a big energy you will feel it when he does what he lov
+ es! Beyond the booth\, you may also recognise him from Love Island Austral
+ ia! FELIPE GONZALES Opening the journey is FELIPE GONZALEZ\, blending the 
+ ultimate progressive\, organic house with melodic sounds sets shaped by hi
+ s Argentinian roots. Felipe has the ability of reading the room and shapes
+  his selections around the energy of the crowd. Get here early to watch th
+ e magic unfold. This is going to be one for the books. We would love YOU t
+ o experience it with us. Limited capacity\, don't sleep on it! ONE LOVE 
+ ♡︎ Synergy familiiiliaaaa ꩜ Who are Synergy? heeEeelllloooo there :)
+  we’re over the moon you found us. Synergy is an independent music event
+ s organiser originating in Bristol\, England\, that crossed the pond to su
+ nny Straya. A collective built around the power of music to bring people t
+ ogether\, to bless your ear drums with incredible music. Our events create
+  high energy spaces\, a dance floor where you feel free\, a place to let l
+ oose\, get weird and be you :) A place you feel comfy. Like home. Surround
+ ed by good vibez. With a focus on raw\, finely selected electronic music. 
+ A little gritty-funky-underground flavour. No commercial ere. You share th
+ e same values? come shake a leg. All aboard Synergy kruuuuu! FOLLOW THE JO
+ URNEY - for more Synergy adventures ♡︎ @synergyevents._ Doors at 6pm (
+ 18+) with the venue's El Ranchero back deck and bar open from 6pm for pres
+ how dinner and drinks. SYNERGY Mo's Desert Clubhouse / Burleigh Heads Frid
+ ay 18 September 2026 Mo's is Burleigh Heads' most loved music venue\, lice
+ nsed bars\, creative studios and cultural hub. The Warehouse & El Ranchero
+  both boast epic bar menus\, cocktails and craft beers. Mo's is a fully li
+ censed venue\, all guests are required to show ID on entry. Tickets will o
+ nly be refunded through event cancellation or production of a medical cert
+ ificate within 24hrs of show doors.
+LOCATION:Mo's Desert Clubhouse
+URL:https://tickets.oztix.com.au/outlet/event/3a48ae6b-dcf4-429a-8df1-50d4c
+ 2762369
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-bgn2zz@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T190000
+DTEND;TZID=Australia/Brisbane:20260918T210000
+SUMMARY:Friday Night Comedy
+DESCRIPTION:Every Friday night we are taking over upstairs at Madocke with 
+ a line up of the best comedians from around Australia and internationally 
+ at one of the Gold Coast's newest and coolest little breweries. Belgian be
+ ers\, big laughs and the perfect way to knock off for the week with a laug
+ h. Every week from 7pm at Madocke Beer Brewing Company.
+LOCATION:Madocke Beer Brewing Company
+URL:https://basedcomedy.com.au/the-shows/madocke-beer-brewing-company.html
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-55w5qd@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T230000
+DTEND;TZID=Australia/Brisbane:20260919T033000
+SUMMARY:lowbrain (Perth)
+DESCRIPTION:Boorloo / Perth-based producer Lowbrain is the West Coast of Au
+ s’s biggest up and comer in dance music and is already making his mark o
+ n the local and international dance scenes. Debuting in 2024 on Perth labe
+ l Lab Six Records\, Lowbrain is now working closely with the team at Love 
+ Clvb / Sweat It Out and working on some sneaky bits with Luude’s No Inst
+ ruction label. Lowbrain has received strong support from the local music s
+ cene in Perth\, having headlined shows at the Vault and for Tina Says’ B
+ ody Control as well as having supported the likes of Bella Claxton\, LO’
+ 99\, Tina Says and Solsta. Lowbrain effortlessly blends hip-hop-influenced
+  heaters with bumpy classic flows\, or four on the floor bangers with two-
+ step slammers\, displaying huge versatility and always leaving you wonderi
+ ng what he’s going to do next. Despite hailing from the most isolated ca
+ pital city in the world\, Lowbrain’s reach is undeniable with his tracks
+  already making waves on the global club circuit with support on his ID ca
+ talogue including Interplanetary Criminal\, Club Angel\, Bushbaby\, Benwal
+ \, Badger\, Its Murph\, Morgan Seatree\, and many more. Lowbrain has also 
+ received consistent industry recognition amounting several BBC Radio 1 spi
+ ns\, A George FM Drive spotlight and Mahi Mix takeover\, multiple simultan
+ eous Spotify + Apple Music editorial placements and plenty of chatter on v
+ arious Triple J specialty programs. Kicking off 2026 and with a focus on h
+ is unreleased club-heavers\, Lowbrain is touching down with a USB full of 
+ IDs and live set exclusives\, featuring a ton of collabs with both local a
+ nd international heavyweights. #block-5df3c5a122ab703bfd16 { --stroke-styl
+ e: none\;--stroke-thickness: 6px\; } #block-5df3c5a122ab703bfd16 .sqs-html
+ -content { --tweak-text-block-padding: 6% 6% 6% 6%\; --tweak-text-block-pa
+ dding: initial\; } #block-5df3c5a122ab703bfd16 { mix-blend-mode: var(--twe
+ ak-text-block-blend )\; border-radius: var(--tweak-text-block-radius)\; } 
+ #block-5df3c5a122ab703bfd16 { --tweak-text-block-radius: 0px 0px 0px 0px\;
+  } #block-5df3c5a122ab703bfd16 { } @media screen and (max-width: 767px) { 
+ #block-5df3c5a122ab703bfd16 { } } @media screen and (max-width: 767px) { #
+ block-5df3c5a122ab703bfd16 .sqs-html-content { } } @media screen and (max-
+ width: 767px) { } tickets #block-4feaea89706c8e04f3bd { --sqs-block-conten
+ t-flex: 0\; } #block-4feaea89706c8e04f3bd { --opacity: 100%\; --translate-
+ x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --scale-x: 100%\; --scale
+ -y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-x: 50%\; --origin-y:
+  50%\; --block-transform: none\; opacity: var(--opacity\, 1)\; transform: 
+ var(--block-transform)\; transform-origin: var(--origin-x) var(--origin-y)
+ \; }
+LOCATION:elsewhere\, 23 Cavill Avenue
+URL:https://www.elsewherebar.com/events/lowbrain
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-4u5c4n@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:ROCKIN’ REVIVAL FEST
+DESCRIPTION:Mark your calendars! Saturday 19 September\, Rockin’ Revival 
+ Fest is rolling into Gold Coast Tavern for a huge day of live music\, clas
+ sic cars\, rock ‘n’ roll\, retro markets and vintage culture. Expect l
+ oud engines\, killer tunes\, dancing and all-day rockabilly vibes from sta
+ rt to finish. RSVP to join us for the day festival and get your tickets to
+  the official Rockin’ Revival Fest Afterparty\, featuring international 
+ rock ’n’ roll powerhouse Lance Lipinsky (USA) live as part of his Down
+  Under Tour 2026!
+LOCATION:Gold Coast Tavern
+URL:https://goldcoasttavern.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-5z58t7@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T180000
+DTEND;TZID=Australia/Brisbane:20260919T220000
+SUMMARY:CHUTNEY
+DESCRIPTION:"Beloved Gold Coast five-piece Chutney are dusting off their in
+ struments and returning to the stage for a massive night of indie rock at 
+ Miami Marketta on Saturday\, September 19th. After spending a little too l
+ ong away from the stage\, the boys are back and ready to make some noise i
+ n one of the Gold Coast’s favourite live music rooms. Joining us for the
+  night are local legends Tomorrow’s Forecast and Mermaid Waters\, with o
+ ne more very special support act still to be announced! Expect loud guitar
+ s\, questionable behaviour\, cold beers and a healthy serving of condiment
+  rock."
+LOCATION:Miami Marketta (18+)
+URL:https://www.miamimarketta.com/ticketed-events/chutney2026
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-9d9kp2@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Saturday Showcase Show
+DESCRIPTION:Every Saturday night\, Based Comedy presents Comedy Underground
+  in The Basement. It's a weekly showcase of hand-picked talent from all ov
+ er the Australia and around the world. Big name acts\, up-and-coming crush
+ ers and the wild\, subversive and unique voices making waves in live comed
+ y. Saturday nights in The Basement are packed with 90 minutes of side spli
+ tting laughs\, and fresh new line ups every week. Comedy Underground is th
+ e Gold Coast's home of the very best live comedy. Comedy Underground is pr
+ esented by Based Comedy and HOTA\, Home of the Arts.
+LOCATION:Comedy Underground
+URL:https://basedcomedy.com.au/the-shows/comedy-underground.html
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-7y3azk@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T133000
+DTEND;TZID=Australia/Brisbane:20260920T170000
+SUMMARY:Sunday Sessions
+DESCRIPTION:Slow Sundays done properly. Think bowls in the sun\, live local
+  music\, the smell of BBQ in the air \, and a drink in hand while the afte
+ rnoon rolls on. Bring the crew\, claim a spot\, and settle into the rhythm
+  of a Sunday well spent. Feeling hungry? Level up the afternoon with a Fla
+ vours Experience Platter and keep the good times going. Every Sunday: Live
+  local music Social bowls BBQ and great food Good people\, good vibes Bowl
+ s. Beats. BBQ. Your Sunday sorted.
+LOCATION:Gold Coast Bowls and Community Club
+URL:https://gclawnbowls.com.au/event/sunday-sessions/2026-09-20/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1haphxs@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T150000
+DTEND;TZID=Australia/Brisbane:20260920T235900
+SUMMARY:Sunday Sessions
+DESCRIPTION:
+LOCATION:Club Broadbeach\, 169 Surf Parade
+URL:https://www.clubbroadbeach.com.au/event/sunday-sessions/2026-09-20/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1oges10@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T170000
+DTEND;TZID=Australia/Brisbane:20260921T220000
+SUMMARY:petit biscuit (france)
+DESCRIPTION:#block-fdaf71a59953e0cfcb39 { --opacity: 100%\; --translate-x: 
+ 0px\; --translate-y: 0px\; --rotation: 0deg\; --scale-x: 100%\; --scale-y:
+  100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-x: 50%\; --origin-y: 50
+ %\; --block-transform: none\; opacity: var(--opacity\, 1)\; transform: var
+ (--block-transform)\; transform-origin: var(--origin-x) var(--origin-y)\; 
+ } In 2026\, Petit Biscuit returns to his roots: powerful\, emotional\, and
+  unifying electronic music. He kicked off the year with the release of Mov
+ ement I\, featuring tracks like his acclaimed rework of Radiohead’s Ever
+ ything In Its Right Place and The Forest (feat. Amixem)\, followed by Move
+ ment II\, including Let You Know (feat. Sonia Ammar) and Close Your Eyes (
+ with Forester). He capped off the summer with his first-ever DJ sets\, des
+ igned for major electronic stages. A renowned French electronic music prod
+ ucer\, Petit Biscuit has become a leading independent figure on the global
+  music scene. His success is built on a strong creative vision\, a clear m
+ usical direction\, and a rare ability to blend emotion with sonic power. W
+ ith 4 billion streams\, worldwide tours\, millions of YouTube views\, and 
+ two critically acclaimed albums (Presence & Parachute)\, 2026 marks a new 
+ chapter: sharper sound\, heavyweight collaborations\, and renewed stage en
+ ergy. Petit Biscuit now stands stronger than ever as a key reference in th
+ e French electronic scene. Presave Your Tickets Now! #block-90bbb21105b431
+ a26837 { --stroke-style: none\;--stroke-thickness: 6px\; } #block-90bbb211
+ 05b431a26837 .sqs-html-content { --tweak-text-block-padding: 6% 6% 6% 6%\;
+  --tweak-text-block-padding: initial\; } #block-90bbb21105b431a26837 { mix
+ -blend-mode: var(--tweak-text-block-blend )\; border-radius: var(--tweak-t
+ ext-block-radius)\; } #block-90bbb21105b431a26837 { --tweak-text-block-rad
+ ius: 0px 0px 0px 0px\; } #block-90bbb21105b431a26837 { } @media screen and
+  (max-width: 767px) { #block-90bbb21105b431a26837 { } } @media screen and 
+ (max-width: 767px) { #block-90bbb21105b431a26837 .sqs-html-content { } } @
+ media screen and (max-width: 767px) { } tickets #block-9fdd6abbc40a9092b6f
+ e { --sqs-block-content-flex: 0\; } #block-9fdd6abbc40a9092b6fe { --opacit
+ y: 100%\; --translate-x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --s
+ cale-x: 100%\; --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origi
+ n-x: 50%\; --origin-y: 50%\; --block-transform: none\; opacity: var(--opac
+ ity\, 1)\; transform: var(--block-transform)\; transform-origin: var(--ori
+ gin-x) var(--origin-y)\; }
+LOCATION:elsewhere\, 23 Cavill Avenue
+URL:https://www.elsewherebar.com/events/petitbiscuit
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-13b2el3@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T180000
+DTEND;TZID=Australia/Brisbane:20260920T200000
+SUMMARY:SESSION 26 (All Ages)
+DESCRIPTION:Whether you’re looking to see new music\, support rising gold
+  coast talent\, or want to have an amazing night out\, this event can deli
+ ver on all of it. Come discover musicians on the rise and be a part of the
+  moment before everyone else is talking about it. BOOK NOW BELOW.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/session-26-all-ages
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-14ctgl7@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T183000
+DTEND;TZID=Australia/Brisbane:20260920T203000
+SUMMARY:Sunday Night Comedy
+DESCRIPTION:Fill your night with laughter at Atrium Bar’s Comedy Club\, p
+ resented by Based Comedy and hosted by local radio personality Danny Lakey
+ ! Enjoy a new line up of local and national comedians every week\, and set
+ tle into one of our comfy bean bags for a night full of fun and food. Rese
+ rve space for your group at the link.
+LOCATION:Atrium Bar
+URL:https://basedcomedy.com.au/the-shows/atrium-bar.html
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1uta096@dothings
+DTSTART;VALUE=DATE:20240807
+DTEND;VALUE=DATE:20261228
+SUMMARY:Koala Breakfast at Currumbin Wildlife Sanctuary
+DESCRIPTION:Enjoy a delicious breakfast alongside an Aussie Icon.Spend your
+  morning with passionate Wildlife Keepers in the presence of everyone's fa
+ vourite Aussie icon ...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/koala-breakfast-at-currumbin-wi
+ ldlife-sanctuary
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-114wny0@dothings
+DTSTART;VALUE=DATE:20240808
+DTEND;VALUE=DATE:20270131
+SUMMARY:Grazy Arvo with Koalas at Currumbin Wildlife Sanctuary
+DESCRIPTION:A Koala-lity AfternoonRelax and enjoy a special afternoon with 
+ Koalas at the Currumbin Wildlife Sanctuary Koala Habitat precinct.Spend so
+ me 'Koality' time wi...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/grazy-arvo-with-koalas-at-curru
+ mbin-wildlife-sanctuary
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-tomugm@dothings
+DTSTART;VALUE=DATE:20240809
+DTEND;VALUE=DATE:20270328
+SUMMARY:Dreamworld Night Market
+DESCRIPTION:Experience the Dreamworld Night Market on the Northern Gold Coa
+ st\, held every Friday and Saturday evening inside Dreamworld. Enjoy a vib
+ rant night out with a...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/dreamworld-night-market
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-cq2ep4@dothings
+DTSTART;VALUE=DATE:20260222
+DTEND;VALUE=DATE:20270301
+SUMMARY:Paradise Country Koala Breakfast
+DESCRIPTION:Relax on a Sunday morning with buffet breakfast at the Farmhous
+ e Restaurant. In this encounter you'll enjoy a visit from cute Koalas as t
+ hey snack on their b...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/paradise-country-koala-breakfas
+ t
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-11ntot2@dothings
+DTSTART;TZID=Australia/Brisbane:20260611T113000
+DTEND;TZID=Australia/Brisbane:20260611T133000
+SUMMARY:Guided tour & lunch at Palette Restaurant
+DESCRIPTION:Enjoy the This Moment: Highlights from the White Rabbit Collect
+ ion of Chinese Contemporary Art guided tour\, followed by 2-course lunch w
+ ith a glass of wine at P
+LOCATION:Palette Restaurant
+URL:https://hota.com.au/events/this-moment-experience-palette-restaurant
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-g1o2i5@dothings
+DTSTART;TZID=Australia/Brisbane:20260617T160000
+DTEND;TZID=Australia/Brisbane:20260617T180000
+SUMMARY:Dumpling Masterclass
+DESCRIPTION:Roll up your sleeves and join us at The Exhibitionist Bar for a
+  hands-on dumpling masterclass that’s equal parts skill-building and ser
+ iously good fun. You’ll l
+LOCATION:Level 5 · Rooftop Terrace (Indoor Mez Lvl 5)
+URL:https://hota.com.au/events/dumpling-masterclass
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1hrus4x@dothings
+DTSTART;VALUE=DATE:20260812
+DTEND;VALUE=DATE:20261130
+SUMMARY:Prison Island
+DESCRIPTION:Prison Island is an interactive adventure where teams take on 3
+ 9 thrilling challenge cells. Perfect for all ages and group types includin
+ g friends\, families\,...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/prison-island
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-tjehfh@dothings
+DTSTART;TZID=Australia/Brisbane:20260904T140000
+DTEND;TZID=Australia/Brisbane:20260904T160000
+SUMMARY:Mamma Mia! The Musical at The Star Gold Coast
+DESCRIPTION:Mamma Mia! hits the Gold Coast this September 2026 for a limite
+ d season\, celebrating 25 years with ABBA classics\, feel-good vibes and p
+ lenty of laughs.
+LOCATION:Inside Gold Coast What's On
+URL:https://www.insidegoldcoast.com.au/whatson/mamma-mia-the-musical-star-g
+ old-coast
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-167zxqr@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T120000
+DTEND;TZID=Australia/Brisbane:20260907T140000
+SUMMARY:Learning Adviser Gold Coast Library Drop-in
+DESCRIPTION:Need quick advice on an assessment\, referencing\, study skills
+ \, or understanding feedback? Drop in and chat with a Learning Adviser
+LOCATION:Gold Coast
+URL:https://www.scu.edu.au/current-students/learning-zone/gc-learning-advis
+ er-drop-in-t4-gc/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1mnqt4x@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T103000
+DTEND;TZID=Australia/Brisbane:20260908T120000
+SUMMARY:Tech Related Travel Tips | Fun & Ageless
+DESCRIPTION:Discover how to make your next trip stress-free with our beginn
+ er-friendly 1.5-hour workshop. Learn simple\, easy ways to use your digita
+ l devices as a travel guide\, translator\, and organiser\, plus get handy 
+ tips for packing smart\, navigating safely\, and staying connected. Perfec
+ t for anyone looking to take the hassle out of holiday planning. Tea/Coffe
+ e station available. Located upstairs at Currumbin RSL Presented by Claire
+  from Basic Tech
+LOCATION:165 Duringan St\, Currumbin QLD 4223\, Australia
+URL:https://www.currumbinrsl.com.au/event/tech-related-travel-tips-fun-agel
+ ess/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-19shacx@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:Surfers Paradise Beachfront Markets
+DESCRIPTION:A free\, family-friendly outdoor shopping experience by the bea
+ chside\, every Wednesday\, Friday and Saturday from 4pm to 9pm.
+LOCATION:City of Gold Coast Libraries
+URL:https://www.whatsongoldcoast.au/All-events/Surfers-Paradise-Beachfront-
+ Markets
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1i50q37@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270308
+SUMMARY:2.5-Hour Ultimate Learn to Surf Adventure
+DESCRIPTION:2.5-Hour Ultimate Learn to Surf Adventure in Gold Coast. Get yo
+ ur tickets on Fever now!
+LOCATION:1509 Gold Coast Hwy
+URL:https://feverup.com/m/167532
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1wuu2xh@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270101
+SUMMARY:2 Hour Surf Lesson At The Spit\, Main Beach ( 13 years and up)
+DESCRIPTION:2 Hour Surf Lesson At The Spit\, Main Beach ( 13 years and up) 
+ in Gold Coast. Get your tickets on Fever now!
+LOCATION:Get Wet Surf School
+URL:https://feverup.com/m/166284
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-3kqx3l@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20261012
+SUMMARY:Swim with Whales Gold Coast
+DESCRIPTION:Swim with Whales Gold Coast in Gold Coast. Get your tickets on 
+ Fever now!
+LOCATION:139-151 Chinderah Bay Dr
+URL:https://feverup.com/m/178224
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-19kiy7q@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270308
+SUMMARY:Gold Coast Boat Hire Self-Drive with No License Required
+DESCRIPTION:Gold Coast Boat Hire Self-Drive with No License Required in Gol
+ d Coast. Get your tickets on Fever now!
+LOCATION:Multiple locations
+URL:https://feverup.com/m/177867
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-n8btp5@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20270308
+SUMMARY:Half Day Gold Coast Brewery Tour
+DESCRIPTION:Half Day Gold Coast Brewery Tour in Brisbane. Get your tickets 
+ on Fever now!
+LOCATION:Multiple locations
+URL:https://feverup.com/m/172964
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-dbj9j8@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20261020
+SUMMARY:Gold Coast's Broadwater Private Calm Water Fishing
+DESCRIPTION:📱 Smartphone tickets ⚡ Instant access to your tickets Hop 
+ aboard 'Beachcomber' for an exclusive fishing adventure in the serene wate
+ rs of the Gold Coast's Broadwater! Perfect for up to 8 friends\, our spaci
+ ous yet agile boat ensures a cozy fishing trip\, come rain or shine\, than
+ ks to its extended roof and wind protectors. No need to worry about comfor
+ t—we've got a marine toilet and hand-washing facilities. Enjoy complimen
+ tary snacks\, soft drinks\, and water on us\, and test your skills with ou
+ r assortment of fishing rods. Ready to reel in the big one? Get your ticke
+ ts for Gold Coast's Broadwater Private Calm Water Fishing! Highlights 🎣
+  Experience the thrill of Calm-water Fishing on the Gold Coast's Broadwate
+ r. 🛥 Enjoy a Private Charter with shelter from the elements for up to 8
+  guests. 🍹 Relish complimentary snacks and drinks while you fish with a
+  variety of rods. What's included? ✔️ Fishing gear to make your catch 
+ of the day possible. ✔️ Soda/Pop and Bottled water to quench your thir
+ st. ✔️ Snacks to keep your energy up during the adventure. Additional 
+ Information 👶 Infants and small children are welcome in a pram or strol
+ ler. 🐾 Service animals are allowed. 🚫 Travelers with spinal injuries
+  are advised against participating. ❤️ It's also not recommended for t
+ hose with poor cardiovascular health. 💪 The experience is suitable for 
+ all physical fitness levels. Why choose Fever? ✔️ Millions of users bo
+ ok every month. ✔️ The best prices and availability at all times. ✔
+ ️ Thousands of unique experiences. ✔️ Verified user reviews. ✔️ 
+ 24/7 customer service. Experience available in the following language(s): 
+ English\, German Experience supplied by: Beachcomber Charters All ticket s
+ ales are final and cannot be refunded\, exchanged\, or otherwise modified.
+  Click here to check out the T&Cs .
+LOCATION:Boat Ramp
+URL:https://feverup.com/m/166791
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1wdey2c@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T083000
+DTEND;TZID=Australia/Brisbane:20260909T103000
+SUMMARY:CoastRs Pilates Class
+DESCRIPTION:Join us for a free Move Well Pilates Class every Wednesday duri
+ ng term 4
+LOCATION:Gold Coast
+URL:https://www.scu.edu.au/engage/events/coastrs-pilates-class/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-17ztlq@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T100000
+DTEND;TZID=Australia/Brisbane:20260909T120000
+SUMMARY:ArtVo Illusions Immersive Gallery Experience
+DESCRIPTION:Tickets 🎫 Ticket for 1 adult (ages 16+) Highlights 🖼️ U
+ sers with a range of interests will enjoy this gallery 🖌️ Become part
+  of the art at the incredible ArtVo Gold Coast General Information 📅 Da
+ tes: various dates (select a date during purchase) 🕒 Times: Redeemable 
+ during operating hours - Monday–Friday: 10 a.m.– 5 p.m. - Saturday–S
+ unday: 10 a.m.–5 p.m. 📍 Location: ArtVo\, Robina Town Centre ⏳ Dura
+ tion: 2 to 4 hours Approx. 👤 Age requirement: 16+ ❓ For this event\, 
+ all sales are final and tickets can’t be refunded\, changed or modified.
+  For more information\, please refer to our T&Cs Description Step into a w
+ orld of optical illusions! ArtVo is an immersive art or ‘trick art’ ga
+ llery\, the first of its kind in Australia\, where you are encouraged to t
+ ouch the art and become part of the art by taking photographs from designa
+ ted points on the floors of the gallery. The larger than life murals allow
+  people of all ages to come face to face with wild animals\, scale rocky c
+ revasses\, and surf the ultimate pipelines. Stretching over 1400 square me
+ tres\, visitors can walk through a variety of different zones\, each with 
+ its own spectacular theme. Immerse yourself in the wonderful world of hype
+ r-realistic murals and incredible works of art.
+LOCATION:ArtVo\, Robina Town Centre
+URL:https://feverup.com/m/90408
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-15sjmra@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T110000
+DTEND;TZID=Australia/Brisbane:20260909T130000
+SUMMARY:Gold Coast Volunteering Community Barbeque
+DESCRIPTION:Take a break and de-stress with us at our volunteering communit
+ y barbeque
+LOCATION:Gold Coast
+URL:https://www.scu.edu.au/engage/events/coastrs-stress-less-day/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1plvvun@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T113000
+DTEND;TZID=Australia/Brisbane:20260909T133000
+SUMMARY:CoastRs Student Club Event - Affirmation Card Workshop
+DESCRIPTION:Check out the range of activities on offer!
+LOCATION:Gold Coast
+URL:https://www.scu.edu.au/engage/events/coastrs-workshop/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-13auwuh@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T120000
+DTEND;TZID=Australia/Brisbane:20260909T140000
+SUMMARY:CHSA Warmer Wednesdays
+DESCRIPTION:Warmer Wednesdays\, held every Wednesday during term 4\, with d
+ ifferent soups every week.
+LOCATION:Coffs Harbour
+URL:https://www.scu.edu.au/engage/events/chsa-wednesday-lunch/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-13q7ntp@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T140000
+DTEND;TZID=Australia/Brisbane:20260909T160000
+SUMMARY:Prison Island Gold Coast
+DESCRIPTION:⭐ Prison Island: The Ultimate Action Game Arrives on Gold Coa
+ st! Step into Prison Island\, an interactive adventure where you and your 
+ team take on 39 thrilling challenge cells. Perfect for all ages and group 
+ types—friends\, families\, or co-workers. Are you ready to take on the c
+ hallenge? Highlights ⏱️ 60 to 120 minutes\, 39 unique themed cells\, 1
+  adrenaline-fueled team challenge 👥 Team up in groups of 2 to 5—ideal
+  for friends\, families & co-workers 🧠 A thrilling mix of mental puzzle
+ s\, physical challenges & team coordination 🏆 Work with your team to co
+ llect as many points as possible before time runs out 🥳 Perfect for any
+  occasion! Birthday celebrations\, team building & bachelor(ette) parties
+ — the bride or groom plays for free ! 🎁 Gift memories to someone spec
+ ial! Purchase a gift card here General Info 📅 Date: choose in the ticke
+ t selector ⏳ Duration: 60 to 120 minutes 📍 Venue: 29 Cavill Ave\, Sur
+ fers Paradise QLD 4217\, Australia 👤 Age requirement: 7+. For teams wit
+ hout adults (18+)\, all members must be at least 14 to participate. For ch
+ ildren up to 14 years old\, at least one accompanying adult is required fo
+ r every group of 4 children. 👞 Comfortable clothing suitable for light 
+ physical activity must be worn (e.g.\, sneakers\, pants\, and a t-shirt). 
+ High heels or flip-flops are not permitted ♿ Accessibility: while the ve
+ nue is wheelchair accessible\, the layout and nature of certain challenges
+  make the experience unsuitable for individuals with mobility impairments 
+ ❓ Please consult the FAQs of this experience here Description Dive into 
+ 60-120 minutes of heart-pounding fun & an unforgettable group experience a
+ t Prison Island on Gold Coast! Prison Island is an interactive adventure t
+ hat combines the thrill of escape rooms with physical and mental challenge
+ s. Instead of escaping from a single room\, teams of 2 to 5 players will t
+ ake on a series of tasks in thematically designed cells\, all while racing
+  against the clock to earn points. Each cell offers a unique challenge\, w
+ hether it's a physical test of balance or dexterity\, or a mental puzzle r
+ equiring logic and quick thinking. Will your team come out on top? Let’s
+  find out… Get your tickets today for Prison Island on Gold Coast!
+LOCATION:Prison Island Gold Coast
+URL:https://feverup.com/m/652182
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1cdz19x@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T183000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:DRAG QUEEN BINGO | 9 September
+DESCRIPTION:Forget nanna bingo - this is full-blown DRAG BINGO CHAOS 💅
+ 🎉 Round up your crew and settle in for a wild night of laughs\, games a
+ nd outrageous fun\, hosted by the iconic Drag Bingo GC! Featuring epic Dra
+ g performances as well as DJ VICES dropping banging tunes throughout the n
+ ight! 🎶🔥 The party comes to you with our exclusive Drag Bingo-themed
+  cocktails delivered straight to your table \, plus feast your way through
+  the incredible street food vendors at Miami Marketta . Loud\, proud and t
+ otally unforgettable - you’ve been warned 😉 MA15+ event This is a saf
+ e\, inclusive and accepting space. No children or babies — strictly no e
+ xceptions.
+LOCATION:Studio 56 (18+)
+URL:https://www.miamimarketta.com/ticketed-events/dragbingo-sept9
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-mqdp41@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20261229
+SUMMARY:2 Hour Private Surf Lesson at Surfers Paradise
+DESCRIPTION:📱 Smartphone tickets ⚡ Instant access to your tickets Read
+ y to catch some waves and improve your surfing skills? Grab a 2 Hour Priva
+ te Surf Lesson at Surfers Paradise! Personal coaching\, small groups\, and
+  a whole lot of fun guarantee an awesome time in the water. No need to wor
+ ry about safety\, we got you covered. Book now and let’s surf! Get your 
+ tickets for 2 Hour Private Surf Lesson at Surfers Paradise! Highlights �
+ � Personalized surfing experience tailored to all levels\, with 2-hour p
+ rivate lessons providing individualized coaching and attention to detail. 
+ 👨‍👩‍👧 Safe and inclusive environment\, with a 1 instructor pe
+ r 5 participants ratio ensuring a high level of supervision and guidance. 
+ 🚙 Convenient location at the Spit carpark with options for pickups\, in
+ clusive of equipment and amenities for a hassle-free surfing adventure. Wh
+ at's included? ✔️ Admission to 2 Hour Private Surf Lesson at Surfers P
+ aradise ✔️ Personalized coaching tailored to your surfing level ✔️
+  1-on-1 attention from a dedicated surf coach ✔️ Safety ensured with 1
+  instructor per 5 participants ✔️ All equipment provided for the lesso
+ n Additional Information 👶 Infants and small children can ride in a pra
+ m or stroller 🏥 Not recommended for travelers with spinal injuries or p
+ oor cardiovascular health 📞 Ensure the provided phone number is reachab
+ le on the day of the surf lesson Why choose Fever? ✔️ Millions of user
+ s book every month. ✔️ The best prices and availability at all times. 
+ ✔️ Thousands of unique experiences. ✔️ Verified user reviews. ✔
+ ️ 24/7 customer service.
+LOCATION:Get Wet Surf School
+URL:https://feverup.com/m/166272
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1n0mtl7@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20261221
+SUMMARY:Midday Broadwater Sailing Cruise includes snacks & drinks
+DESCRIPTION:📱 Smartphone tickets ⚡ Instant access to your tickets Emba
+ rk on an amazing adventure with Sun sailing’s Midday Broadwater Sailing 
+ Cruise! Set sail on our 38ft yacht with a small group under the Gold Coast
+  sun. Enjoy sipping sparkling wine\, water\, or beer as you take in the st
+ unning views. Let us pamper you for 2 hours\, cruising past iconic spots l
+ ike Marina Mirage and SeaWorld\, with a high chance of spotting dolphins a
+ nd sea turtles. Indulge in delicious snacks and drinks on board. Unwind an
+ d make memories! Get your tickets for Midday Broadwater Sailing Cruise inc
+ ludes snacks & drinks! Highlights ⛵ Intimate midday cruises on a 38ft sa
+ iling yacht for up to 10 guests. Sip sparkling wine while the sun sets ove
+ r Gold Coast hinterland. Spectacular. 🥂 2-hour cruise to relax on the d
+ eck with a stunning view. Let us take care of you - a perfect way to unwin
+ d during the day. 🌅 Unmissable experience sailing the Southport Broadwa
+ ter\, past Marina Mirage\, and spotting dolphins & sea turtles. Includes s
+ nacks and drinks. What's included? ✔️ Admission to Midday Broadwater S
+ ailing Cruise includes snacks & drinks ✔️ 38ft sailing yacht with a ma
+ x of 10 guests for an intimate experience ✔️ Sip on sparkling wine\, w
+ ater\, or beer while enjoying the Gold Coast hinterland view ✔️ 2-hour
+  cruise to relax on the deck and enjoy the splendid scenery ✔️ Unforge
+ ttable experience not to be missed with dolphins and sea turtles sightings
+  Additional Information 🐶 Service animals allowed onboard the 38ft sail
+ ing yacht 🚍 Public transportation options available nearby 💪 Suitabl
+ e for all physical fitness levels\, no specific requirements or restrictio
+ ns Why choose Fever? ✔️ Millions of users book every month. ✔️ The
+  best prices and availability at all times. ✔️ Thousands of unique exp
+ eriences. ✔️ Verified user reviews. ✔️ 24/7 customer service.
+LOCATION:Seaworld Drive Boatramp
+URL:https://feverup.com/m/166503
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1sp9rgq@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20261220
+SUMMARY:Sunset Sailing Cruise includes snacks & drinks
+DESCRIPTION:📱 Smartphone tickets ⚡ Instant access to your tickets ⏳ 
+ Duration: up to 2 hours 👉 Available in English Hop aboard our cozy 38ft
+  yacht\, limited to just 10 adventurers\, for an unforgettable sunset sail
+ . Toast with sparkling wine\, water\, or beer as the sun dips behind the G
+ old Coast hinterland\, painting the sky in dazzling colors. Enjoy the sun'
+ s shimmer on the water and the breathtaking hues of its descent during our
+  2-hour journey. It's an experience you won't want to miss. Get your ticke
+ ts for Sunset Sailing Cruise includes snacks & drinks! Highlights 🌅 Int
+ imate sunset cruises with a stunning Gold Coast backdrop. 🍹 Sip sparkli
+ ng wine or beer while soaking in breathtaking views. 🐬 Spot dolphins an
+ d sea turtles during a magical 2-hour journey. What's included? ✔️ An 
+ individual plate of snacks featuring Cheese and biscuits\, fruit\, and a s
+ weet surprise. ✔️ Enjoy 2 glasses of your choice of sparkling wine/wat
+ er or beer included in our cruise. Additional Information 🐾 Service ani
+ mals are welcome to accompany their owners. 🚆 Nearby public transportat
+ ion options make this experience easily accessible. 🏋️ This experienc
+ e is suitable for guests of all physical fitness levels. Why choose Fever?
+  ✔️ Millions of users book every month. ✔️ The best prices and ava
+ ilability at all times. ✔️ Thousands of unique experiences. ✔️ Ver
+ ified user reviews. ✔️ 24/7 customer service. Experience supplied by S
+ un Sailing Gold Coast All ticket sales are final and cannot be refunded\, 
+ exchanged\, or otherwise modified. Click here to check out the T&Cs .
+LOCATION:Seaworld Drive Boatramp
+URL:https://feverup.com/m/172896
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1oxaz7v@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T070000
+DTEND;TZID=Australia/Brisbane:20260910T093000
+SUMMARY:Innovations in complex organisations
+DESCRIPTION:Start your morning with great coffee\, a delicious breakfast an
+ d big conversations around leading innovation☕🥐 Innovation is rarely 
+ straightforward. Across industries\, leaders must navigate legacy systems\
+ , regulation\, workforce pressures\, competing stakeholder needs and the c
+ hallenge of turning ambitious ideas into meaningful outcomes. Register to 
+ join here! This breakfast panel explores ‘Innovation in Complex Organisa
+ tions’\, with practical lessons on leadership\, transformation and creat
+ ing meaningful change that apply far beyond healthcare. [Hear from industr
+ y leaders] Andrew (Drew) Hebbron MBA GAICD ( Queensland Ambulance Service 
+ ) Aarti Bajaj (AMS) ( Lumus Imaging ) Craig Rowsell ( Gold Coast Health an
+ d Knowledge Precinct ) Whether you’re a business leader\, founder or cur
+ ious professional\, this is a great opportunity to connect with the commun
+ ity over breakfast and leave with fresh ideas. [ Griffith University MBA E
+ vent Details] Date: Thursday 10 September Time: 7:00am – 9:30am Location
+ : Cohort Innovation Space Register to join here!
+LOCATION:Cohort Event Space\, 16 Nexus Way
+URL:https://cohortspace.com.au/event/innovations-in-complex-organisations/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-63y7ug@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T110000
+DTEND;TZID=Australia/Brisbane:20260910T130000
+SUMMARY:R U OK? Day
+DESCRIPTION:Ask R U OK? Any Day because life happens every day.
+LOCATION:Southern Cross University Gold Coast
+URL:https://www.scu.edu.au/current-students/services-and-support/counsellin
+ g/workshops-and-events/ruok-event/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-14ihrkz@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T140000
+DTEND;TZID=Australia/Brisbane:20260910T160000
+SUMMARY:ROUTE 66
+DESCRIPTION:Route 66 Band was formed in 2004 and is known as a country rock
+  band with a flavour from the 50s---2000s rock to modern up tempo country 
+ music and a touch of rockabilly. The band has introduced good up tempo cou
+ ntry music & rockabilly into their repertoire with a great beat for the da
+ ncers.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/route-66/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1qyw38@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Dreamworld Night Market
+DESCRIPTION:Moonlight Night Market is the Northern Gold Coast's newest food
+  market\, located inside Dreamworld!...
+LOCATION:Coomera
+URL:https://www.whatsongoldcoast.au/All-events/Dreamworld-Night-Market-62d0
+ efd316f416de60fa4005
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-10506tn@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T030000
+DTEND;TZID=Australia/Brisbane:20260911T050000
+SUMMARY:WHITEY
+DESCRIPTION:Whitey has spent his adult life working in bands around Melbour
+ ne. Dave is an accomplished drummer\, an excellent singer and front person
+ \, and an exceptional guitarist with 39 years of live working experience b
+ ehind him. For the last 20 years Dave has been at the front of bands eithe
+ r singing\, or singing and playing guitar. Dave has been living and workin
+ g on the Gold Coast & Brisbane now for 15 years playing solo & filling in 
+ when required playing & entertaining with songs from the 60’s through to
+  today
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/whitey/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-7e9oct@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T073000
+DTEND;TZID=Australia/Brisbane:20260911T093000
+SUMMARY:Young Illustrators' Breakfast
+DESCRIPTION:Gather 'round\, young artists! Join us for a magical morning of
+  creativity and breakfast. This special event features the talented childr
+ en’s illustrators\, Sami Bayly and Mick Elliott . Delight in a delicious
+  breakfast spread and let your imagination soar as we share stories\, swap
+  tips\, and sketch our way through a morning of fun. From quirky character
+ s to vibrant landscapes\, this illustrator breakfast is sure to inspire yo
+ ur next masterpiece! Don’t miss this unique opportunity to meet the arti
+ sts behind your favourite books and discover the joy of illustration.
+LOCATION:Qantas Founders Museum
+URL:https://storyfest.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-qicqz4@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T200000
+DTEND;TZID=Australia/Brisbane:20260911T220000
+SUMMARY:DENNIS KNIGHT & BLUE JEANS
+DESCRIPTION:
+LOCATION:Nerang Community Bowls Club\, Cayuga Street Nerang QLD 4211
+URL:https://nerangbowls.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-plehfu@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20270228
+SUMMARY:Small-Group Gin Masterclass in Gold Coast
+DESCRIPTION:Small-Group Gin Masterclass in Gold Coast in Gold Coast. Get yo
+ ur tickets on Fever now!
+LOCATION:486 Scottsdale Dr
+URL:https://feverup.com/m/177827
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-ia0tya@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Crafted Beer Festival 2026
+DESCRIPTION:The Crafted Beer Festival is loaded for another epic day of bee
+ rs\, brews & beaches in Broadbeach on Saturday 12th September 2026.
+LOCATION:Inside Gold Coast What's On
+URL:https://www.insidegoldcoast.com.au/whatson/crafted-beer-cider-festival
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-arnnya@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T023000
+DTEND;TZID=Australia/Brisbane:20260912T043000
+SUMMARY:ALEX BOWEN
+DESCRIPTION:After having a #1 blues song in Australia\, Alex Bowen landed b
+ ack on the scene in 2020 with his popular single ‘I Believed In Us’\, 
+ which took him back on the road selling out National Australian tours and 
+ quickly became a notable voice on the Australian scene. Born and raised in
+  the rock and blues scene of Newcastle Australia\, he now resides on the G
+ old Coast\, producing his flavour of Singer-Songwriter/Americana/Indie-Pop
+  from his home studio. Encompassing a raw honest voice\, and a vocal range
+  likened to Bruce Springsteen\, James Bay & Kings Of Leon. His preferred s
+ tyle is Chris Stapleton\, Michael Jackson\, Diesel\, John Mayer etc. makin
+ g this a show not to be missed
+LOCATION:Juniors\, Cnr Fraser Dr &\, Leisure Dr\, Banora Point NSW 2486\, A
+ ustralia
+URL:https://twintowns.com.au/events/alex-bowen/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1so3r33@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T023000
+DTEND;TZID=Australia/Brisbane:20260912T043000
+SUMMARY:REWIND
+DESCRIPTION:Rewind is a powerhouse of classic 70s music. You all will be tr
+ ansported back to the 70s where music was at its best. This Duo is a must 
+ see. We are REWIND. Rewinding back to the 70s so you can experience the mu
+ sic today. Brett Healy and Jimmy Dee front this creation for you to enjoy.
+  Songs from Alice Cooper\, America\, Santana\, John Cougar\, Pink Floyd\, 
+ Bachman Turner\, Steppenwolf\, Bad Company\, Peter Frampton\, Eric Clapton
+  and more
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/rewind-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-12gsu34@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T070000
+DTEND;TZID=Australia/Brisbane:20260912T090000
+SUMMARY:DOUBLE OR NOTHIN
+DESCRIPTION:Double or Nothin cover band have been rockin for a couple of ye
+ ars on the Gold Coast SE QLD but have settled on their line up in 2023 whe
+ n lead singer Deevo joined the band. With a strong backline in Davo on the
+  bass and Seano on the drums\, blended in with rockin leads from Stevo\, t
+ he band have continued to practice hard and develop an extensive repertoir
+ e with classic songs from the 60s through to the 2000s
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/double-or-nothing/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1hpn2kv@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T023000
+DTEND;TZID=Australia/Brisbane:20260913T043000
+SUMMARY:MIRRORBALL EXPRESS DUO
+DESCRIPTION:The first LIVE act to create a concept show featuring mashups o
+ f the best 80's and 90's hits in one Step back in time as Mirrorball Expre
+ ss Duo and relive all of the glory of the 80s and 90s.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/mirrorball-express/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-e7todu@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T040000
+DTEND;TZID=Australia/Brisbane:20260913T060000
+SUMMARY:CHESTER DUO
+DESCRIPTION:Chester Duo is a proven act having rocked pubs & Clubs througho
+ ut Australia. Having performed regularly in Venue's in Southeast Queenslan
+ d they have a big following. Playing hits to please all genera’s from Th
+ e Beatles\, Guns and Roses\, Greenday\, B52`s and The Rolling Stones. Ches
+ ter's great crowd inter-action and great song selection ensures a quality 
+ performance to be enjoyed by all every time.
+LOCATION:Club Banora Lounge\, 2 Leisure Dr\, Banora Point NSW 2486\, Austra
+ lia
+URL:https://twintowns.com.au/events/chester-duo-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-qj6w18@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T070000
+DTEND;TZID=Australia/Brisbane:20260913T090000
+SUMMARY:BAND X
+DESCRIPTION:Band X – Brisbane’s Hardest Rocking Party Band. Playing all
+  the hits of the 80’s\, 90’s and now.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/band-x-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1mp9mgs@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T133000
+DTEND;TZID=Australia/Brisbane:20260913T170000
+SUMMARY:Sunday Sessions
+DESCRIPTION:Slow Sundays done properly. Think bowls in the sun\, live local
+  music\, the smell of BBQ in the air \, and a drink in hand while the afte
+ rnoon rolls on. Bring the crew\, claim a spot\, and settle into the rhythm
+  of a Sunday well spent. Feeling hungry? Level up the afternoon with a Fla
+ vours Experience Platter and keep the good times going. Every Sunday: Live
+  local music Social bowls BBQ and great food Good people\, good vibes Bowl
+ s. Beats. BBQ. Your Sunday sorted.
+LOCATION:Gold Coast Bowls and Community Club
+URL:https://gclawnbowls.com.au/event/sunday-sessions/2026-09-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1bzcv78@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T150000
+DTEND;TZID=Australia/Brisbane:20260913T235900
+SUMMARY:Sunday Sessions
+DESCRIPTION:
+LOCATION:Club Broadbeach\, 169 Surf Parade
+URL:https://www.clubbroadbeach.com.au/event/sunday-sessions/2026-09-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-18txoal@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T010000
+DTEND;TZID=Australia/Brisbane:20260914T030000
+SUMMARY:TAHLIA WILSON
+DESCRIPTION:This talented young singer/songwriter from Byron Bay has perfor
+ med on the busking stage at the Blues Fest\, played at Tamworth Country Mu
+ sic Festival and had the honour of playing at the famous Bluebird Café in
+  Nashville.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/tahlia-wilson/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-9435us@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T210000
+DTEND;TZID=Australia/Brisbane:20260915T230000
+SUMMARY:THE RETURN OF … NOSTALGIA
+DESCRIPTION:Bring your singing voice & sing along with us! Together\, we’
+ ll step back in time & revisit some of the most iconic tunes of the 50’s
+ \, 60’s & 70’s. Songs like ‘Delilah’ (Tom Jones)\, ‘Sweet Caroli
+ ne’ (Neil Diamond)\, ‘There Goes My Everything’ (Engelbert Humperdin
+ ck)\, ‘Love Is In The Air’ (John Paul Young)\, ‘Where Do I Begin’ 
+ (Shirley Bassey)\, ‘Alfie’ (Cilla Black)\, ‘The Way We Were’ (Barb
+ ra Streisand). Why not join us… you’ll have a ball!
+LOCATION:The Showroom\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/the-return-of-nostalgia/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-vdxh90@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T090000
+DTEND;TZID=Australia/Brisbane:20260917T110000
+SUMMARY:Future Leaders Workshop\, Northern Rivers
+DESCRIPTION:Join us for Future Leaders\, a free full-day workshop facilitat
+ ed by world record-breaking pilot and leadership development speaker\, Lac
+ hie Smart. With engaging content\, practical activities\, and a supportive
+  environment\, the event aims to inspire students to unlock their potentia
+ l\, lead with confidence\, and make a positive impact in their schools and
+  communities.
+LOCATION:Northern Rivers
+URL:https://www.scu.edu.au/engage/schools-engagement-program/future-leaders
+ /northern-rivers-future-leaders/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-p169yw@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T140000
+DTEND;TZID=Australia/Brisbane:20260917T160000
+SUMMARY:TOMMY MEMPHIS
+DESCRIPTION:He's a little bit rock! he's a little bit country crooner\, blu
+ es and sometimes funky. If you love to laugh and be entertained climb aboa
+ rd the T-Train
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/tommy-memphis/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1hk8gsl@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T030000
+DTEND;TZID=Australia/Brisbane:20260918T050000
+SUMMARY:JEFF CAMILLERI
+DESCRIPTION:A great singer and a hot guitarist is the best way to describe 
+ Jeff Camilleri. Jeff Camilleri is a seasoned performer with a very appeali
+ ng voice. He performs all the hits from the 60’s through to current that
+  everyone loves and his ability to read the audience is why he is so popul
+ ar wherever he plays.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/jeff-camilleri-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-lsjvwm@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T023000
+DTEND;TZID=Australia/Brisbane:20260919T043000
+SUMMARY:VANESSA LEA & ROAD TRAIN
+DESCRIPTION:With years of experience behind Vanessa Lea and Road Train\, ge
+ t ready to rock. Vanessa Lea the little girl with a big voice has been sin
+ ging up a storm and winning hearts wherever she has performed. Roger Fayne
+ s a multi-instrumentalist has worked with many great Australian bands from
+  The Masters Apprentices\, Koo De Tah and Stevie Wright Band and more.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/vanessa-lea-road-train/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1d7zipj@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T023000
+DTEND;TZID=Australia/Brisbane:20260919T043000
+SUMMARY:WEEMAN
+DESCRIPTION:Weeman - Damian is one of Queensland’s most sought-after Solo
+  Artists. Guitar\, Vocals and a killer repertoire filled with Bangers and 
+ Classics.
+LOCATION:Juniors\, Cnr Fraser Dr &\, Leisure Dr\, Banora Point NSW 2486\, A
+ ustralia
+URL:https://twintowns.com.au/events/weeman/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1g3f3ti@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T070000
+DTEND;TZID=Australia/Brisbane:20260919T090000
+SUMMARY:THE ACCIDENTS
+DESCRIPTION:The Accidents are a band with hard earned experience that will 
+ rock your socks off. You will hear songs from the 60’s through to curren
+ t radio hits performed with energy and passion...... Songs from AC/DC\, Ri
+ hanna\, Calvin Harris\, Cee Lo Green\, Stevie Wonder\, John Mayer\, Jessie
+  J\, Adele\, Cold Chisel and many more it`s a show not to be missed.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/the-accidents-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-nssunl@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T183000
+DTEND;TZID=Australia/Brisbane:20260919T203000
+SUMMARY:KARAOKE
+DESCRIPTION:
+LOCATION:Nerang Community Bowls Club\, Cayuga Street Nerang QLD 4211
+URL:https://nerangbowls.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-q0w5rq@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T003000
+DTEND;TZID=Australia/Brisbane:20260920T023000
+SUMMARY:A SALUTE TO ROY ORBISON
+DESCRIPTION:Direct from Las Vegas\, YOU GOT IT! A SALUTE TO ROY ORBISON is 
+ an unforgettable concert experience\, starring multi-award-winning artist 
+ John Stephan. Superstar Roy Orbison was one of the world’s greatest and 
+ most successful rock’n’roll music legends of all time. Wesley Orbison\
+ , Roy Orbison’s eldest son\, is proud to fully endorse and present this 
+ show honouring and remembering his father. It features narration from Wesl
+ ey\, who delivers a very personal narrative of Roy’s intriguing yet trag
+ ic life. Internationally renowned artist John Stephan has a voice filled w
+ ith warmth\, emotion and a four-octave range. Known as ‘The Voice’\, J
+ ohn will take audience on an incredible trip through the storied career of
+  Orbison\, covering a multitude of his chart-topping hits. Relive the glor
+ y days as John Stephan performs iconic songs such as Pretty Woman\, Crying
+ \, I Drove All Night\, Leah\, Working for the Man\, Blue Bayou\, Only the 
+ Lonely\, In Dreams\, Blue Angel\, You Got It\, Running Scared and many mor
+ e. This is a concert experience not to be missed!
+LOCATION:The Showroom\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/a-salute-to-roy-orbison/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-11gehgz@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T023000
+DTEND;TZID=Australia/Brisbane:20260920T043000
+SUMMARY:CATH & HIM
+DESCRIPTION:Cath & Him bring together their incredible musical talents to c
+ reate the most versatile Duo going around. With over 450 songs in their re
+ pertoire of classic party tracks and of course the best of today's hits\, 
+ no one misses out when Cath & Him perform. With over 13 years of experienc
+ e performing to a wide variety of audiences\, covering all styles of music
+  including: Pop\, Rock\, Disco\, Country etc. from the 1950's - Current To
+ p 40\, Cath & Him will have the crowd cheering for more. iF you're up for 
+ a sing-a-long\, dance or even just to sit\, relax and listen to\, then you
+ 're in for a real treat when Cath & Him take the stage.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/cath-him/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-50k6j5@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T040000
+DTEND;TZID=Australia/Brisbane:20260920T060000
+SUMMARY:BODY & SOUL DUO
+DESCRIPTION:Sandra Beynon (vocals\, percussion) and Sean Mullen (guitar) pr
+ esent everything from jazz to country to RNB and funk to hard rock and met
+ al – whatever the audience wants! Their state-of-the-art customised back
+ ing tracks and full PA system deliver a great sound that belies its two-pe
+ rson presentation. Over 900 tunes from the 50s right through to Top 10 wil
+ l cover everyone’s taste. Presentation\, energy\, professionalism of ove
+ r 35 years in the industry\, versatility and talent combined with percussi
+ on and cleverly integrated guitar laying means you won’t be disappointed
+ .
+LOCATION:Club Banora Lounge\, 2 Leisure Dr\, Banora Point NSW 2486\, Austra
+ lia
+URL:https://twintowns.com.au/events/body-soul-duo-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1c0o6d2@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T070000
+DTEND;TZID=Australia/Brisbane:20260920T090000
+SUMMARY:SUPERCHEEZE
+DESCRIPTION:“Supercheeze”\, is based on the Northern Rivers of NSW. In 
+ early 2017 the decision was made to scratch off the mould\, crank up the g
+ riller and once again melt some fine cheddar in the name of high-value ent
+ ertainment. The mission statement is simple\; play upbeat ‘cheezy’ hit
+  songs that many will know\, with a positive vibe\, great musicianship\, h
+ igh quality production\, get everyone in the audience dancing\, singing\, 
+ laughing\, and generally having a grand old time. The Supercheeze fondue-p
+ ot consists of Roy Wilders on lead vocals (when he’s not touring his nat
+ ive Ireland in search of the elusive mozzarell potato) Mick Dunham on guit
+ ar and co-lead vocals\, Dean Jones on guitar and co-lead vocals\, Greg Str
+ ong on bass guitar and co-lead vocals. And sitting behind the kit with occ
+ asional lead vocals Mark Bridges\, who once claimed the title of downhill 
+ cheese-rolling champion of Clunes three years consecutively……..amazing
+ ! So just remember……when life gets you down\, don’t just whine\, get
+  some ‘Cheeze’ into you\, and dance the night away!
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/supercheeze-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:goldcoast-1rfk1td@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T120000
+DTEND;TZID=Australia/Brisbane:20260920T140000
+SUMMARY:WE SALUTE YOU: The ACDC Show feat. Maid 2 Rock (All Ages)
+DESCRIPTION:Prepare for the ultimate high-voltage rock revival as the elect
+ rifying anthems of AC/DC collide with the powerhouse hits of the greatest 
+ Women of Rock! For more information & tickets hit the below Book Now butto
+ n.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/we-salute-you-the-acdc-show-f
+ eat-maid-2-rock-all-ages
 END:VEVENT
 END:VCALENDAR

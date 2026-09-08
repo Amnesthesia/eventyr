@@ -5,5 +5,28 @@
   "source_id": "la-boite",
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
-  "events": []
+  "events": [
+    {
+      "title": "KOREABOO",
+      "datetime": "Wed 2 Sep – Sat 19 Sep",
+      "datetime_iso": "2026-09-02",
+      "datetime_end_iso": "2026-09-19",
+      "location": "La Boite Theatre, Kelvin Grove",
+      "link": "https://laboite.com.au/shows/koreaboo",
+      "cost": "See link",
+      "source": "La Boite Theatre",
+      "description": "Discussions of inter-country adoption, culturally contextual references to diet and body image. Theatrical haze, smoke and flashing lights. Suitable for ages 14+",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "performance",
+        "drama"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Night Entertainment
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-gmdjes@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T190000
+DTEND;TZID=Australia/Brisbane:20260913T210000
+SUMMARY:Sunday Night Entertainment
+DESCRIPTION:Velvet Arcade is bringing the goods Sunday night with a solid m
+ ix of covers — everything from classics to modern hits. This three-piece
+  knows when to keep it smooth and when to turn it up. It's free to come th
+ rough\, so grab your mates and catch some live music. They've got acoustic
+ \, rock\, country\, pop — the range is there.
+LOCATION:Ric's Backyard
+URL:https://surreal.live/en-au/event/rics-bar-backyard_live-music-sunday-s-
+ o7lg
+END:VEVENT
+END:VCALENDAR

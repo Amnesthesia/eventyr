@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BBX2026: LEGO Fane Expo
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3bjuka@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260914
+SUMMARY:BBX2026: LEGO Fane Expo
+DESCRIPTION:Brought to you by BrisBricks\, BBX2026 returns to Brisbane for 
+ a weekend celebrating creativity\, imagination and the joy of LEGO buildin
+ g.
+LOCATION:Brisbane Showgrounds
+URL:http://www.brisbaneshowgrounds.com.au/whats-on/bbx2026-lego-fane-expo/
+END:VEVENT
+END:VCALENDAR

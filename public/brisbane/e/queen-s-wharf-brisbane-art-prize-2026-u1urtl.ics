@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Queen’s Wharf Brisbane Art Prize 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-u1urtl@dothings
+DTSTART;TZID=Australia/Brisbane:20260815T190000
+DTEND;TZID=Australia/Brisbane:20260815T210000
+SUMMARY:Queen’s Wharf Brisbane Art Prize 2026
+DESCRIPTION:THE STORIES OF BRISBANE AND SURROUNDS TOLD THROUGH ART. In part
+ nership with Queen's Wharf Brisbane and The Star Brisbane\, The Royal Quee
+ nsland Art Society Brisbane Branch is pleased to present the 2025 Queen’
+ s Wharf Brisbane Art Prize. Artists are asked to submit an artwork that re
+ flects what makes Brisbane and its surrounding attractions unique. Tell us
+  the story of what you love about Brisbane and your connection to it throu
+ gh your art.
+LOCATION:Royal Queensland Art Society
+URL:https://rqas.com.au/event/qwbap-2026/
+END:VEVENT
+END:VCALENDAR

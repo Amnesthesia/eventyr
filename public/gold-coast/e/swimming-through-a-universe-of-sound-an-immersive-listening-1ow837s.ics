@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Swimming Through a Universe of Sound – An immersive listenin
+ g experience by Corrina Bonshek
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1ow837s@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T163000
+DTEND;TZID=Australia/Brisbane:20260913T183000
+SUMMARY:Swimming Through a Universe of Sound – An immersive listening exp
+ erience by Corrina Bonshek
+DESCRIPTION:As the sun sets over the ocean\, lie beneath the evening sky an
+ d experience sound in a different way.
+LOCATION:Currumbin Beach
+URL:https://www.swellsculpture.com.au/activity/swimming-through-a-universe-
+ of-sound/
+END:VEVENT
+END:VCALENDAR

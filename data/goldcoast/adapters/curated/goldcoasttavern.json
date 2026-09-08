@@ -1,0 +1,33 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "goldcoasttavern",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "ROCKIN’ REVIVAL FEST",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Gold Coast Tavern",
+      "link": "https://goldcoasttavern.com.au/",
+      "cost": "See link",
+      "source": "Gold Coast Tavern",
+      "description": "Mark your calendars! Saturday 19 September, Rockin’ Revival Fest is rolling into Gold Coast Tavern for a huge day of live music, classic cars, rock ‘n’ roll, retro markets and vintage culture. Expect loud engines, killer tunes, dancing and all-day rockabilly vibes from start to finish. RSVP to join us for the day festival and get your tickets to the official Rockin’ Revival Fest Afterparty, featuring international rock ’n’ roll powerhouse Lance Lipinsky (USA) live as part of his Down Under Tour 2026!",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rockabilly",
+        "live music",
+        "vintage",
+        "festival"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

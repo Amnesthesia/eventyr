@@ -30,12 +30,12 @@ test("normalises hosts and tolerates list markers the model was told not to add"
 	);
 });
 
-test("drops platforms, bare labels and malformed lines", () => {
+test("drops login-walled hosts, bare labels and malformed lines", () => {
 	const out = parseSuggestionLines(
 		[
 			"Here are the venues I found:", // prose, no pipe
-			"Some Venue|eventbrite.com.au", // ticketing platform
-			"Another|facebook.com", // social
+			"Another|facebook.com", // login-walled
+			"Bio|linktr.ee", // link-in-bio, never a listing
 			"Broken|localhost", // no dot
 			"|nohost.com", // no name
 			"No Domain|", // no host
@@ -48,4 +48,19 @@ test("drops platforms, bare labels and malformed lines", () => {
 		["realvenue.com.au"],
 	);
 	assert.equal(out[0].tier, "institutions");
+});
+
+test("ticketing aggregators are no longer filtered out in advance", () => {
+	// They used to be dropped on the untested assumption that their listings
+	// are all login-gated. When that was actually measured, feverup.com yielded
+	// 120 candidates through the ordinary ladder. Whether one works is probe's
+	// call, made on extracted events, not a regex's call made in advance.
+	const out = parseSuggestionLines(
+		["A|eventbrite.com.au", "B|humanitix.com", "C|moshtix.com.au"].join("\n"),
+		"aggregators",
+	);
+	assert.deepEqual(
+		out.map((s) => s.host),
+		["eventbrite.com.au", "humanitix.com", "moshtix.com.au"],
+	);
 });

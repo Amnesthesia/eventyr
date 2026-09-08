@@ -11,11 +11,6 @@
 
 name: Brisbane
 timezone: Australia/Brisbane
-# Centre of the publishing area, and how far out still counts as this city.
-# Used to drop events a national source listed here (src/locality.ts).
-# 50 km reaches Ipswich (28 km) and Caboolture (43 km) while excluding the Gold
-# Coast (67 km) and Toowoomba (116 km), which are separate cities with their own
-# feeds or none at all.
 centre:
   lat: -27.4698
   lng: 153.0251
@@ -23,26 +18,44 @@ centre:
 sources:
   aggregators:
     - name: Eventbrite Brisbane
-      method: llm
+      method: scraper
       domains:
         - eventbrite.com.au
+      note: 'Verified by probe-sources 2026-09-08: 12 dated event(s) via html.'
+      homepage: https://www.eventbrite.com.au/
+      listingUrls:
+        - https://www.eventbrite.com.au/d/australia--brisbane/events--this-week/
+      strategy: html
     - name: Eventfinda Brisbane
-      method: llm
+      method: scraper
       domains:
         - brisbane.eventfinda.com.au
+        - eventfinda.com.au
+      homepage: https://brisbane.eventfinda.com.au/
+      listingUrls:
+        - https://brisbane.eventfinda.com.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 14 dated event(s) via html.'
     - name: Humanitix Brisbane
-      method: llm
+      method: scraper
       domains:
+        - humanitix.com
         - events.humanitix.com
+      homepage: https://humanitix.com/
+      listingUrls:
+        - https://humanitix.com/au/events/online
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: Must Do Brisbane
-      method: llm
+      method: scraper
       domains:
         - mustdobrisbane.com
       listingUrls:
         - https://www.mustdobrisbane.com/whats-on
       strategy: html
       schedule: weekly
-      note: 'Demoted by probe-sources 2026-09-02: no listing page cleared the promotion gate.'
+      note: 'Verified by probe-sources 2026-09-08: 12 dated event(s) via html.'
+      homepage: https://mustdobrisbane.com/
     - name: The Urban List Brisbane
       method: llm
       domains:
@@ -58,9 +71,14 @@ sources:
       domains:
         - broadsheet.com.au
     - name: Fever Brisbane
-      method: llm
+      method: scraper
       domains:
         - feverup.com
+      homepage: https://feverup.com/
+      listingUrls:
+        - https://feverup.com/en/brisbane
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 37 dated event(s) via html.'
     - name: WeekendNotes Brisbane
       method: scraper
       domains:
@@ -68,10 +86,9 @@ sources:
       listingUrls:
         - https://www.weekendnotes.com/brisbane/whats-on/
         - https://www.weekendnotes.com/brisbane/
-        - https://www.weekendnotes.com/brisbane/markets/
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 33 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 40 dated event(s) via html.'
     - name: My Community Diary Queensland
       method: llm
       domains:
@@ -81,16 +98,24 @@ sources:
       domains:
         - classbento.com.au
     - name: Meetup Brisbane groups
-      method: llm
+      method: scraper
       domains:
         - meetup.com
+      homepage: https://meetup.com/
+      listingUrls:
+        - https://www.meetup.com/find/au--brisbane/
+      strategy: jsonld
+      venue:
+        name: Weeping Fig Avenue
+        address: Weeping Fig Ave, Brisbane City, QL
+        suburb: Brisbane City
+      note: 'Verified by probe-sources 2026-09-08: 46 dated event(s) via jsonld.'
     - id: visitbrisbane
       name: Visit Brisbane (Brisbane Economic Development Agency)
-      method: llm
+      method: scraper
       domains:
         - visit.brisbane.qld.au
       homepage: https://visit.brisbane.qld.au/
-      listingUrls: []
       strategy: html
       venue:
         name: null
@@ -100,16 +125,15 @@ sources:
         lng: null
         aliases: []
       schedule: weekly
-      note: >-
-        This is a city-wide aggregator, not a single venue (venue fields intentionally null). Task
-        flags "confirm events path" — not located this session (network blocked).
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      listingUrls:
+        - https://visit.brisbane.qld.au/whats-on/whats-on-this-week
     - id: brisbane-city-council
       name: Brisbane City Council What's On
       method: llm
       domains:
         - brisbane.qld.gov.au
       homepage: https://www.brisbane.qld.gov.au/
-      listingUrls: []
       strategy: html
       venue:
         name: null
@@ -127,7 +151,7 @@ sources:
       domains:
         - queensland.com
     - name: Concrete Playground Brisbane
-      method: llm
+      method: scraper
       domains:
         - concreteplayground.com
       homepage: https://concreteplayground.com/
@@ -142,27 +166,40 @@ sources:
         lat: null
         lng: null
         aliases: []
-      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
-    - name: Humanitix Brisbane
-      method: llm
-      domains:
-        - humanitix.com
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via jsonld.'
     - name: AllEvents Brisbane
-      method: llm
+      method: scraper
       domains:
         - allevents.in
-    - name: Eventfinda Brisbane
-      method: llm
-      domains:
-        - eventfinda.com.au
+      homepage: https://allevents.in/
+      listingUrls:
+        - https://allevents.in/whats-on
+        - https://allevents.in/brisbane/all
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 40 dated event(s) via html.'
     - name: Ticketmaster Brisbane
-      method: llm
+      method: scraper
       domains:
         - ticketmaster.com.au
+      homepage: https://ticketmaster.com.au/
+      listingUrls:
+        - https://www.ticketmaster.com.au/discover/brisbane
+        - https://www.ticketmaster.com.au/brisbane-lions-tickets/artist/800824
+      strategy: jsonld
+      venue:
+        name: The Fortitude Music Hall
+        address: 312-318 Brunswick Street
+        suburb: Brisbane
+      note: 'Verified by probe-sources 2026-09-08: 15 dated event(s) via jsonld.'
     - name: Moshtix Brisbane
-      method: llm
+      method: scraper
       domains:
         - moshtix.com.au
+      homepage: https://moshtix.com.au/
+      listingUrls:
+        - https://moshtix.com.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: Oztix Brisbane
       method: llm
       domains:
@@ -188,12 +225,10 @@ sources:
         - musick.com.au
       homepage: https://musick.com.au/
       listingUrls:
-        - https://musick.com.au/events
         - https://musick.com.au/brisbane/gigs
-        - https://musick.com.au/
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 84 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 64 dated event(s) via html.'
     - name: Brisbane Unlocked
       method: scraper
       domains:
@@ -203,7 +238,7 @@ sources:
         - https://www.brisbaneunlocked.com.au/events
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 24 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 23 dated event(s) via html.'
     - name: Secret Brisbane
       method: llm
       domains:
@@ -228,7 +263,7 @@ sources:
         - brisbane.qld.gov.au
     - id: slq
       name: State Library of Queensland
-      method: llm
+      method: scraper
       domains:
         - slq.qld.gov.au
       homepage: https://www.slq.qld.gov.au/
@@ -245,22 +280,25 @@ sources:
           - SLQ
           - State Library
       schedule: weekly
-      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: QUT public events
-      method: llm
+      method: scraper
       domains:
         - qut.edu.au
+      listingUrls:
+        - https://www.qut.edu.au/events
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: UQ public events
       method: llm
       domains:
         - events.uq.edu.au
     - id: griffith-art-museum
       name: Griffith University Art Museum
-      method: llm
+      method: scraper
       domains:
         - griffith.edu.au
       homepage: https://www.griffith.edu.au/griffith-university-art-museum
-      listingUrls: []
       strategy: html
       venue:
         name: Griffith University Art Museum
@@ -272,7 +310,9 @@ sources:
           - Griffith University Art Museum
           - GUAM
       schedule: weekly
-      note: Candidate — not verified this session.
+      note: 'Verified by probe-sources 2026-09-08: 5 dated event(s) via html.'
+      listingUrls:
+        - https://griffith.edu.au/events
     - id: brisbane-powerhouse
       name: Brisbane Powerhouse
       method: scraper
@@ -291,7 +331,7 @@ sources:
         aliases:
           - Brisbane Powerhouse
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 3 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - id: qagoma
       name: Queensland Art Gallery | Gallery of Modern Art (QAGOMA)
       method: scraper
@@ -302,7 +342,6 @@ sources:
       listingUrls:
         - https://www.qagoma.qld.gov.au/whats-on/exhibitions/
         - https://www.qagoma.qld.gov.au/whats-on
-        - https://www.qagoma.qld.gov.au/
       strategy: html
       venue:
         name: Queensland Art Gallery | Gallery of Modern Art
@@ -316,7 +355,7 @@ sources:
           - Queensland Art Gallery
           - Gallery of Modern Art
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 22 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 19 dated event(s) via html.'
     - id: qpac
       name: Queensland Performing Arts Centre (QPAC)
       method: scraper
@@ -325,7 +364,6 @@ sources:
         - qtix.com.au
       homepage: https://www.qpac.com.au/
       listingUrls:
-        - https://www.qpac.com.au/
         - https://www.qpac.com.au/
         - https://www.qpac.com.au/whats-on
       strategy: html
@@ -338,14 +376,13 @@ sources:
         aliases:
           - QPAC
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 29 dated event(s) via html.'
-    - id: qldmuseum
-      name: Queensland Museum
+      note: 'Verified by probe-sources 2026-09-08: 15 dated event(s) via html.'
+    - name: Queensland Museum
       method: llm
       domains:
+        - qm.qld.gov.au
         - museum.qld.gov.au
       homepage: https://www.museum.qld.gov.au/
-      listingUrls: []
       strategy: html
       venue:
         name: Queensland Museum
@@ -356,7 +393,6 @@ sources:
         aliases:
           - Queensland Museum
           - QM
-      schedule: weekly
       note: >-
         Task flags "confirm the What's On path" — not located this session (network blocked).
         listingUrls intentionally left empty rather than guessed.
@@ -380,7 +416,7 @@ sources:
           - Museum of Brisbane
           - MoB
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 5 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
     - name: Judith Wright Centre
       method: llm
       domains:
@@ -405,7 +441,7 @@ sources:
           - South Bank
           - South Bank Parklands
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 48 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 27 dated event(s) via html.'
     - id: queensland-theatre
       name: Queensland Theatre
       method: scraper
@@ -426,7 +462,7 @@ sources:
           - Queensland Theatre
           - QT
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - id: la-boite
       name: La Boite Theatre
       method: scraper
@@ -434,7 +470,7 @@ sources:
         - laboite.com.au
       homepage: https://laboite.com.au/
       listingUrls:
-        - https://laboite.com.au/season-2026
+        - https://laboite.com.au/shows
       strategy: html
       venue:
         name: La Boite Theatre
@@ -446,9 +482,7 @@ sources:
           - La Boite
           - La Boite Theatre Company
       schedule: weekly
-      note: >-
-        Verified by probe-sources 2026-09-02: 1 dated event(s) via html (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: Queensland Symphony Orchestra
       method: scraper
       domains:
@@ -459,7 +493,7 @@ sources:
         - https://qso.com.au/
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: Queensland Ballet
       method: llm
       domains:
@@ -476,7 +510,7 @@ sources:
         - operaq.com.au
       homepage: https://operaq.com.au/
       listingUrls:
-        - https://operaq.com.au/whats-on/
+        - https://operaq.com.au/whats-on
         - https://operaq.com.au/
       strategy: html
       schedule: weekly
@@ -490,7 +524,6 @@ sources:
       listingUrls:
         - https://metroarts.com.au/whats-on/
         - https://metroarts.com.au/live-events/
-        - https://metroarts.com.au/
       strategy: html
       venue:
         name: Metro Arts
@@ -501,7 +534,7 @@ sources:
         aliases:
           - Metro Arts
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 8 dated event(s) via html.'
     - id: brisbane-festival
       name: Brisbane Festival
       method: scraper
@@ -511,7 +544,6 @@ sources:
       listingUrls:
         - https://brisbanefestival.com.au/events
         - https://www.brisbanefestival.com.au/whats-on
-        - https://brisbanefestival.com.au/
       strategy: html
       venue:
         name: null
@@ -521,30 +553,32 @@ sources:
         lng: null
         aliases: []
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 107 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 40 dated event(s) via html.'
     - name: Brisbane Writers Festival
       method: llm
       domains:
         - bwf.org.au
       homepage: https://bwf.org.au/
       listingUrls:
-        - https://bwf.org.au/
+        - https://bwf.org.au/whats-on
       strategy: html
       schedule: weekly
-      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
     - name: Queensland Writers Centre
       method: scraper
       domains:
         - queenslandwriters.org.au
       homepage: https://queenslandwriters.org.au/
       listingUrls:
-        - https://www.queenslandwriters.org.au/events
+        - https://www.queenslandwriters.org.au/events?format=json&format=json
         - https://queenslandwriters.org.au/whats-on
+        - https://www.queenslandwriters.org.au/events
       strategy: html
       schedule: weekly
-      note: >-
-        Verified by probe-sources 2026-09-02: 8 dated event(s) via html (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 10 dated event(s) via html.'
     - name: Anywhere Festival
       method: llm
       domains:
@@ -575,7 +609,7 @@ sources:
         aliases:
           - The Tivoli
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 7 dated event(s) via html.'
     - id: fortitude-music-hall
       name: Fortitude Music Hall
       method: scraper
@@ -596,7 +630,7 @@ sources:
         aliases:
           - Fortitude Music Hall
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 6 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 5 dated event(s) via html.'
     - name: Brisbane Convention & Exhibition Centre
       method: scraper
       domains:
@@ -608,7 +642,7 @@ sources:
         - https://bcec.com.au/
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 10 dated event(s) via html.'
     - id: riverstage
       name: Riverstage
       method: llm
@@ -616,7 +650,6 @@ sources:
         - riverstage.com.au
         - riverstage.brisbane.qld.gov.au
       homepage: https://riverstage.com.au/
-      listingUrls: []
       strategy: html
       venue:
         name: Riverstage
@@ -631,7 +664,7 @@ sources:
         Candidate — two conflicting domains in the existing source list, canonical one not confirmed
         this session (network blocked).
     - name: Suncorp Stadium
-      method: llm
+      method: scraper
       domains:
         - suncorpstadium.com.au
       homepage: https://suncorpstadium.com.au/
@@ -639,12 +672,12 @@ sources:
         - https://www.suncorpstadium.com.au/what-s-on.aspx
       strategy: html
       schedule: weekly
-      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: City Botanic Gardens / Brisbane Botanic Gardens Mt Coot-tha events
       method: llm
     - id: maritime-museum
       name: Queensland Maritime Museum
-      method: scraper
+      method: llm
       domains:
         - maritimemuseum.com.au
       homepage: https://www.maritimemuseum.com.au/
@@ -660,11 +693,7 @@ sources:
         aliases:
           - Queensland Maritime Museum
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
-    - name: Queensland Museum
-      method: llm
-      domains:
-        - qm.qld.gov.au
+      note: 'Demoted by probe-sources 2026-09-08: no listing page cleared the promotion gate.'
     - id: uq-art-museum
       name: UQ Art Museum
       method: scraper
@@ -684,7 +713,7 @@ sources:
         aliases:
           - UQ Art Museum
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 3 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
     - name: University of Queensland Union
       method: llm
       domains:
@@ -697,7 +726,6 @@ sources:
       homepage: https://www.qtix.com.au/
       listingUrls:
         - https://www.qtix.com.au/
-        - https://www.qtix.com.au/
         - https://www.qtix.com.au/whats-on
       strategy: html
       venue:
@@ -709,11 +737,10 @@ sources:
         aliases:
           - QTIX
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 57 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 25 dated event(s) via html.'
     - id: howard-smith-wharves
       name: Howard Smith Wharves
       method: llm
-      domains: []
       homepage: null
       strategy: html
       venue:
@@ -731,25 +758,30 @@ sources:
         (would need a live search to confirm rather than assumed). Needs verification before any URL
         is written here.
     - name: Artisan
-      method: llm
+      method: scraper
       domains:
         - artisan.org.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://artisan.org.au/
+      listingUrls:
+        - https://artisan.org.au/pages/events
+      strategy: html
     - name: Brisbane Showgrounds
-      method: llm
+      method: scraper
       domains:
         - brisbaneshowgrounds.com.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://brisbaneshowgrounds.com.au/
+      listingUrls:
+        - http://www.brisbaneshowgrounds.com.au/whats-on/
+      strategy: html
     - name: Ipswich Art Gallery
       method: scraper
       domains:
         - ipswichartgallery.qld.gov.au
-      note: >-
-        Verified by probe-sources 2026-09-02: 10 dated event(s) via html (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
       homepage: https://ipswichartgallery.qld.gov.au/
       listingUrls:
-        - https://www.ipswichartgallery.qld.gov.au/whats-on/
         - https://ipswichartgallery.qld.gov.au/
       strategy: html
       schedule: weekly
@@ -757,28 +789,32 @@ sources:
       method: scraper
       domains:
         - loganarts.com.au
-      note: 'Verified by probe-sources 2026-09-02: 27 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 16 dated event(s) via html.'
       homepage: https://loganarts.com.au/
       listingUrls:
-        - https://loganarts.com.au/events
         - https://loganarts.com.au/
+        - https://loganarts.com.au/events
       strategy: html
       schedule: weekly
     - name: Redland Performing Arts Centre (RPAC)
       method: scraper
       domains:
         - rpac.com.au
-      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
       homepage: https://rpac.com.au/
       listingUrls:
         - https://rpac.com.au/
       strategy: html
       schedule: weekly
     - name: Queensland Youth Orchestras
-      method: llm
+      method: scraper
       domains:
         - qyo.org.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://qyo.org.au/
+      listingUrls:
+        - https://www.qyo.org.au/whats-on?format=json&format=json
+      strategy: html
     - name: QUT Gardens Theatre
       method: llm
       domains:
@@ -810,30 +846,46 @@ sources:
         - miegunyahhouse.org.au
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: World Science Festival Brisbane
-      method: llm
+      method: scraper
       domains:
         - worldsciencefestival.com.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://worldsciencefestival.com.au/
+      listingUrls:
+        - https://worldsciencefestival.com.au/events/
+      strategy: html
     - name: Onespace Gallery
-      method: llm
+      method: scraper
       domains:
         - onespace.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
+      homepage: https://onespace.com.au/
+      listingUrls:
+        - https://onespace.com.au/exhibitions/
+      strategy: html
     - name: Birrunga Gallery
       method: llm
       domains:
         - birrunga.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Creative Room Art Space
-      method: llm
+      method: scraper
       domains:
         - creativeroom.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 5 dated event(s) via html.'
+      homepage: https://creativeroom.com.au/
+      listingUrls:
+        - https://www.creativeroom.com.au/workshops
+      strategy: html
     - name: PARKER Contemporary
-      method: llm
+      method: scraper
       domains:
         - parkercontemporary.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://parkercontemporary.com.au/
+      listingUrls:
+        - https://www.parkercontemporary.com.au/exhibitions?format=json&format=json
+      strategy: html
     - name: Latrobe Art Space
       method: llm
       domains:
@@ -865,10 +917,19 @@ sources:
         - mmb.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Abbey Museum of Art and Archaeology
-      method: llm
+      method: scraper
       domains:
         - abbeymuseum.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via jsonld.'
+      homepage: https://abbeymuseum.com.au/
+      listingUrls:
+        - https://abbeymuseum.com.au/events/
+        - https://abbeymuseum.com.au/wp-json/tribe/events/v1/events
+      strategy: jsonld
+      venue:
+        name: Abbeystowe
+        address: 579 Old Toorbul Point Rd.
+        suburb: Caboolture
     - name: Queensland Holocaust Museum
       method: llm
       domains:
@@ -880,65 +941,103 @@ sources:
         - miac.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Ipswich Libraries
-      method: llm
+      method: scraper
       domains:
         - ipswichlibraries.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://ipswichlibraries.com.au/
+      listingUrls:
+        - https://www.ipswichlibraries.com.au/whats-on/children/
+      strategy: html
     - name: Logan City Council Libraries
       method: llm
       domains:
         - loganlibraries.org
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Redcliffe Entertainment Centre
-      method: llm
+      method: scraper
       domains:
         - redcliffeentertainmentcentre.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
+      homepage: https://redcliffeentertainmentcentre.com.au/
+      listingUrls:
+        - https://redcliffeentertainmentcentre.com.au/whats-on
+      strategy: html
     - name: Ipswich Civic Centre
-      method: llm
+      method: scraper
       domains:
         - ipswichciviccentre.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://ipswichciviccentre.com.au/
+      listingUrls:
+        - https://www.ipswichciviccentre.com.au/whats-on/
+      strategy: html
     - name: Studio 188
       method: llm
       domains:
         - studio188.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Redland Art Gallery
-      method: llm
+      method: scraper
       domains:
         - artgallery.redland.qld.gov.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      listingUrls:
+        - https://artgallery.redland.qld.gov.au/exhibitions/redland-art-awards-2026/
+      homepage: https://artgallery.redland.qld.gov.au/
+      strategy: html
     - name: Queensland Academies Creative Industries
       method: llm
       domains:
         - qaci.eq.edu.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: University of the Sunshine Coast
-      method: llm
+      method: scraper
       domains:
         - usc.edu.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 8 dated event(s) via html.'
+      homepage: https://usc.edu.au/
+      listingUrls:
+        - https://usc.edu.au/events
+        - https://usc.edu.au/
+      strategy: html
     - name: Australian Catholic University
-      method: llm
+      method: scraper
       domains:
         - acu.edu.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://acu.edu.au/
+      listingUrls:
+        - https://acu.edu.au/
+      strategy: html
     - name: University of Southern Queensland
-      method: llm
+      method: scraper
       domains:
         - unisq.edu.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
+      homepage: https://unisq.edu.au/
+      listingUrls:
+        - https://www.unisq.edu.au/research/sqnnsw-hub/events
+      strategy: html
     - name: Southern Cross University
-      method: llm
+      method: scraper
       domains:
         - scu.edu.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 17 dated event(s) via html.'
+      homepage: https://scu.edu.au/
+      listingUrls:
+        - https://www.scu.edu.au/engage/events/
+        - https://www.scu.edu.au/business-law-and-arts/events/
+      strategy: html
     - name: TAFE Queensland
-      method: llm
+      method: scraper
       domains:
         - tafeqld.edu.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://tafeqld.edu.au/
+      listingUrls:
+        - https://tafeqld.edu.au/news-and-events/news
+      strategy: html
     - name: Pip Theatre
       method: llm
       domains:
@@ -960,10 +1059,14 @@ sources:
         - bpo.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Brisbane Symphony Orchestra
-      method: llm
+      method: scraper
       domains:
         - brisbanesymphony.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://brisbanesymphony.org.au/
+      listingUrls:
+        - https://brisbanesymphony.org.au/concerts/
+      strategy: html
     - name: Australasian Dance Collective
       method: llm
       domains:
@@ -995,10 +1098,14 @@ sources:
         - redcliffemusicaltheatre.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Brisbane City Pops Orchestra
-      method: llm
+      method: scraper
       domains:
         - bcpo.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://bcpo.org.au/
+      listingUrls:
+        - https://bcpo.org.au/
+      strategy: html
     - name: Sunnybank Theatre Group
       method: llm
       domains:
@@ -1015,10 +1122,14 @@ sources:
         - act1theatre.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: SunPAC
-      method: llm
+      method: scraper
       domains:
         - sunpac.net.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://sunpac.net.au/
+      listingUrls:
+        - https://www.sunpac.net.au/whats-on/
+      strategy: html
     - name: Centenary Theatre Group
       method: llm
       domains:
@@ -1050,10 +1161,14 @@ sources:
         - ensembleqaustralia.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Indooroopilly Chamber Orchestra
-      method: llm
+      method: scraper
       domains:
         - ico.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://ico.org.au/
+      listingUrls:
+        - https://ico.org.au/tag/soloist/
+      strategy: html
     - name: Blue Roo Theatre Company
       method: llm
       domains:
@@ -1070,30 +1185,47 @@ sources:
         - bas.asn.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Sandgate Museum
-      method: llm
+      method: scraper
       domains:
         - sandgatemuseum.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://sandgatemuseum.com.au/
+      listingUrls:
+        - https://sandgatemuseum.com.au/wp-json/tribe/events/v1/events
+        - https://sandgatemuseum.com.au/events
+      strategy: html
     - name: Friends of the Brisbane Botanic Gardens & Sherwood Arboretum
       method: llm
       domains:
         - fbbgsa.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: South East Queensland Astronomical Society
-      method: llm
+      method: scraper
       domains:
         - seqas.org
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://seqas.org/
+      listingUrls:
+        - https://seqas.org/events
+      strategy: html
     - name: Toowong and District Historical Society
-      method: llm
+      method: scraper
       domains:
         - toowonghistory.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://toowonghistory.org.au/
+      listingUrls:
+        - https://toowonghistory.org.au/events/
+      strategy: html
     - name: Windsor & Districts' Historical Society
-      method: llm
+      method: scraper
       domains:
         - windsorhistorical.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://windsorhistorical.org.au/
+      listingUrls:
+        - https://windsorhistorical.org.au/events/
+      strategy: html
     - name: Annerley-Stephens History Group
       method: llm
       domains:
@@ -1120,10 +1252,14 @@ sources:
         - brisbanetramwaymuseum.org
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Redlands Coast Museum
-      method: llm
+      method: scraper
       domains:
         - redlandscoastmuseum.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://redlandscoastmuseum.org.au/
+      listingUrls:
+        - https://redlandscoastmuseum.org.au/exhibitions/
+      strategy: html
     - name: Ipswich Historical Society
       method: llm
       domains:
@@ -1145,15 +1281,23 @@ sources:
         - fortlytton.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Friends of Toowong Cemetery
-      method: llm
+      method: scraper
       domains:
         - fotc.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://fotc.au/
+      listingUrls:
+        - https://www.fotc.au/research/
+      strategy: html
     - name: Astronomical Association of Queensland
-      method: llm
+      method: scraper
       domains:
         - aaq.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://aaq.org.au/
+      listingUrls:
+        - https://www.aaq.org.au/about/awards/
+      strategy: html
     - name: Redlands Astronomical Society
       method: llm
       domains:
@@ -1177,13 +1321,12 @@ sources:
   independents:
     - id: ima
       name: Institute of Modern Art (IMA)
-      method: llm
+      method: scraper
       domains:
         - ima.org.au
       homepage: https://ima.org.au/
       listingUrls:
         - https://ima.org.au/exhibitions/
-        - https://ima.org.au/
       strategy: html
       venue:
         name: Institute of Modern Art
@@ -1195,31 +1338,28 @@ sources:
           - IMA
           - Institute of Modern Art
       schedule: weekly
-      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: Milani Gallery West End
       method: scraper
       domains:
         - milanigallery.com.au
       homepage: https://milanigallery.com.au/
       listingUrls:
-        - https://milanigallery.com.au/
+        - https://milanigallery.com.au/exhibitions/
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 1 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: Jan Murphy Gallery Fortitude Valley
       method: scraper
       domains:
         - janmurphygallery.com.au
       homepage: https://janmurphygallery.com.au/
       listingUrls:
-        - https://www.janmurphygallery.com.au/exhibitions/
-        - https://janmurphygallery.com.au/
+        - https://www.janmurphygallery.com.au/upcoming/
         - https://janmurphygallery.com.au/
       strategy: html
       schedule: weekly
-      note: >-
-        Verified by probe-sources 2026-09-02: 4 dated event(s) via html (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: The Station Brisbane Fortitude Valley
       method: llm
       domains:
@@ -1254,7 +1394,7 @@ sources:
         - https://thetriffid.com.au/
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 6 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
     - name: Crowbar Brisbane Fortitude Valley
       method: llm
       domains:
@@ -1271,14 +1411,19 @@ sources:
       listingUrls:
         - https://www.palacecinemas.com.au/cinemas/palace-barracks
         - https://palacecinemas.com.au/events
-        - https://www.palacecinemas.com.au/cinemas/palace-james-st
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 28 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 18 dated event(s) via html.'
     - name: Dendy Powerhouse cinema New Farm
       method: llm
       domains:
         - powerhouse.dendy.com.au
+      listingUrls:
+        - https://powerhouse.dendy.com.au/graphql
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
     - name: New Farm Cinemas
       method: llm
       domains:
@@ -1292,7 +1437,7 @@ sources:
       domains:
         - thebeardedlady.com.au
     - name: The Boundary Hotel West End
-      method: scraper
+      method: llm
       domains:
         - theboundary.com.au
       homepage: https://theboundary.com.au/
@@ -1300,7 +1445,7 @@ sources:
         - https://theboundary.com.au/whats-on
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 1 dated event(s) via html.'
+      note: 'Demoted by probe-sources 2026-09-08: no listing page cleared the promotion gate.'
     - name: Wandering Cooks West End
       method: llm
       domains:
@@ -1318,7 +1463,7 @@ sources:
         - https://creativemornings.com/
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 4 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
     - name: Open Sessions Brisbane open mic circuit
       method: llm
       domains:
@@ -1331,20 +1476,28 @@ sources:
       strategy: html
       schedule: weekly
       note: >-
-        Demoted from scraper 2026-09-07. probe-sources verified
-        /meetups as yielding 8 dated events, which is true — but they were
-        Vienna, Manchester, Berlin, Stockholm, Portland, Montreal, Zurich and
-        London, and zero were in Brisbane. That page is a worldwide index, not
-        a city listing, so there is no listing URL to scrape. Left as llm so
-        the search can still find a real Brisbane meetup if one is posted.
+        Demoted from scraper 2026-09-07. probe-sources verified /meetups as yielding 8 dated events,
+        which is true — but they were Vienna, Manchester, Berlin, Stockholm, Portland, Montreal,
+        Zurich and London, and zero were in Brisbane. That page is a worldwide index, not a city
+        listing, so there is no listing URL to scrape. Left as llm so the search can still find a
+        real Brisbane meetup if one is posted.
     - name: Board Game BBQ Brisbane
       method: llm
       domains:
         - boardgamebbq.com
     - name: Philosophy Cafe Meet Up Brisbane
-      method: llm
+      method: scraper
       domains:
         - meetup.com
+      homepage: https://meetup.com/
+      listingUrls:
+        - https://www.meetup.com/find/au--brisbane/
+      strategy: jsonld
+      venue:
+        name: Weeping Fig Avenue
+        address: Weeping Fig Ave, Brisbane City, QL
+        suburb: Brisbane City
+      note: 'Verified by probe-sources 2026-09-08: 46 dated event(s) via jsonld.'
     - name: Sonder Language Exchange at The Burrow West End
       method: llm
       domains:
@@ -1358,7 +1511,7 @@ sources:
         - https://riverbendbooks.com.au/events
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: Where the Wild Things Are bookshop
       method: llm
       domains:
@@ -1386,15 +1539,20 @@ sources:
         - https://madhattersbookshop.com.au/c/event-tickets__1
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 1 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
     - name: Bright and Early Books
       method: llm
       domains:
         - brightandearlybooks.com.au
     - name: Scrumptious Reads, Red Hill
-      method: llm
+      method: scraper
       domains:
         - scrumptiousreads.com.au
+      homepage: https://scrumptiousreads.com.au/
+      listingUrls:
+        - https://scrumptiousreads.com.au/
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: The Zoo, Fortitude Valley
       method: llm
       domains:
@@ -1407,6 +1565,12 @@ sources:
       method: llm
       domains:
         - crowbarbrisbane.com
+      listingUrls:
+        - https://crowbarbrisbane.com/tickets/
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
     - name: Black Bear Lodge
       method: llm
       domains:
@@ -1433,10 +1597,11 @@ sources:
         - ricsbar.com.au
       homepage: https://ricsbar.com.au/
       listingUrls:
+        - https://ricsbar.com.au/whats-on/
         - https://ricsbar.com.au/journal
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 19 dated event(s) via html.'
     - name: It's Still A Secret
       method: llm
       domains:
@@ -1456,7 +1621,6 @@ sources:
         - princesstheatre.com.au
         - theprincesstheatre.com.au
       homepage: https://princesstheatre.com.au/
-      listingUrls: []
       strategy: html
       venue:
         name: Princess Theatre
@@ -1485,9 +1649,14 @@ sources:
       schedule: weekly
       note: 'Verified by probe-sources 2026-09-02: 6 dated event(s) via html.'
     - name: Seven Hills Hub / Backbone Youth Arts
-      method: llm
+      method: scraper
       domains:
         - backbone.org.au
+      homepage: https://backbone.org.au/
+      listingUrls:
+        - https://backbone.org.au/2026-backbone-festival
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: Jugglers Art Space, Fortitude Valley
       method: llm
       domains:
@@ -1515,16 +1684,15 @@ sources:
       domains:
         - ventspace.com.au
     - name: Side Gallery
-      method: llm
+      method: scraper
       domains:
         - sidegallery.com.au
       homepage: https://sidegallery.com.au/
       listingUrls:
         - https://sidegallery.com.au/exhibitions
-        - https://sidegallery.com.au/
       strategy: html
       schedule: weekly
-      note: 'Demoted by probe-sources 2026-09-01: no listing page cleared the promotion gate.'
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: Outer Space
       method: llm
       domains:
@@ -1577,10 +1745,9 @@ sources:
       listingUrls:
         - https://quickbrownfoxbookshop.com.au/events
         - https://quickbrownfoxbookshop.com.au/
-        - https://quickbrownfoxbookshop.com.au/
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 8 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: The Princess Theatre
       method: scraper
       domains:
@@ -1591,11 +1758,7 @@ sources:
         - https://theprincesstheatre.com.au/
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-02: 6 dated event(s) via html.'
-    - name: Riverstage
-      method: llm
-      domains:
-        - riverstage.brisbane.qld.gov.au
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
     - name: Ad Astra
       method: llm
       domains:
@@ -1604,9 +1767,7 @@ sources:
       method: scraper
       domains:
         - thecaveinn.net
-      note: >-
-        Verified by probe-sources 2026-09-02: 11 dated event(s) via jsonld (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 12 dated event(s) via jsonld.'
       homepage: https://thecaveinn.net/
       listingUrls:
         - https://thecaveinn.net/events/
@@ -1638,9 +1799,7 @@ sources:
       method: scraper
       domains:
         - goodchatcomedy.com
-      note: >-
-        Verified by probe-sources 2026-09-02: 20 dated event(s) via html (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 24 dated event(s) via html.'
       homepage: https://goodchatcomedy.com/
       listingUrls:
         - https://goodchatcomedy.com/
@@ -1649,13 +1808,21 @@ sources:
     - name: Brisbane Comedy Festival
       method: llm
       domains:
+        - brisbanecomedyfestival.com
         - brisbanecomedyfestival.com.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
+      listingUrls:
+        - https://www.brisbanecomedyfestival.com/events/melanie-bracewell/
+        - https://www.brisbanecomedyfestival.com/events/tom-cashman/
+        - https://arep.co/api/v1/cn/campaign-uri?$filter=oid%3D6760
     - name: The Sit Down Comedy Club
       method: scraper
       domains:
         - standup.com.au
-      note: 'Verified by probe-sources 2026-09-02: 7 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 7 dated event(s) via html.'
       homepage: https://standup.com.au/
       listingUrls:
         - https://standup.com.au/
@@ -1665,12 +1832,10 @@ sources:
       method: scraper
       domains:
         - bigforktheatre.com
-      note: >-
-        Verified by probe-sources 2026-09-02: 7 dated event(s) via html (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 12 dated event(s) via html.'
       homepage: https://bigforktheatre.com/
       listingUrls:
-        - https://www.bigforktheatre.com/shows-events
+        - https://www.bigforktheatre.com/shows-events?format=json&format=json
       strategy: html
       schedule: weekly
     - name: Brisbane Arts Theatre
@@ -1687,12 +1852,11 @@ sources:
       method: scraper
       domains:
         - eatstreetnorthshore.com.au
-      note: >-
-        Verified by probe-sources 2026-09-02: 22 dated event(s) via jsonld (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 24 dated event(s) via jsonld.'
       homepage: https://eatstreetnorthshore.com.au/
       listingUrls:
         - https://eatstreetnorthshore.com.au/whats-on/
+        - https://eatstreetnorthshore.com.au/wp-json/tribe/events/v1/events
       strategy: jsonld
       schedule: weekly
       venue:
@@ -1706,13 +1870,12 @@ sources:
       method: scraper
       domains:
         - netherworldarcade.com
-      note: >-
-        Verified by probe-sources 2026-09-02: 8 dated event(s) via jsonld (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 19 dated event(s) via html.'
       homepage: https://netherworldarcade.com/
       listingUrls:
+        - https://netherworldarcade.com/wp-json/tribe/events/v1/events
         - https://www.netherworldarcade.com/events/
-      strategy: jsonld
+      strategy: html
       schedule: weekly
       venue:
         name: Netherworld
@@ -1725,17 +1888,23 @@ sources:
       method: scraper
       domains:
         - theprinceconsort.com.au
-      note: 'Verified by probe-sources 2026-09-02: 2 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
       homepage: https://theprinceconsort.com.au/
       listingUrls:
         - https://theprinceconsort.com.au/
       strategy: html
       schedule: weekly
     - name: Woolloongabba Art Gallery
-      method: llm
+      method: scraper
       domains:
         - wag.com.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+        - wagallery.com.au
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://wag.com.au/
+      listingUrls:
+        - https://wag.com.au/calendar/2017/
+        - https://wag.com.au/calendar/
+      strategy: html
     - name: Mitchell Fine Art
       method: llm
       domains:
@@ -1745,9 +1914,7 @@ sources:
       method: scraper
       domains:
         - philipbacongalleries.com.au
-      note: >-
-        Verified by probe-sources 2026-09-02: 1 dated event(s) via html (listing URL found by web
-        search, then verified).
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
       homepage: https://philipbacongalleries.com.au/
       listingUrls:
         - https://philipbacongalleries.com.au/exhibitions
@@ -1759,20 +1926,28 @@ sources:
         - fireworksgallery.com.au
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Lethbridge Gallery
-      method: llm
+      method: scraper
       domains:
         - lethbridgegallery.com
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://lethbridgegallery.com/
+      listingUrls:
+        - https://lethbridgegallery.com/exhibitions/
+      strategy: html
     - name: Stranded Bar
       method: llm
       domains:
         - strandedbar.com.au
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Alliance Française de Brisbane
-      method: llm
+      method: scraper
       domains:
         - afbrisbane.com
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://afbrisbane.com/
+      listingUrls:
+        - https://www.afbrisbane.com/whats-on/
+      strategy: html
     - name: Topology
       method: llm
       domains:
@@ -1814,10 +1989,14 @@ sources:
         - fullthrottletheatre.com.au
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Vulcana Women's Circus
-      method: llm
+      method: scraper
       domains:
         - vulcana.org.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      listingUrls:
+        - https://vulcana.org.au/whats-on/
+      homepage: https://vulcana.org.au/
+      strategy: html
     - name: Zen Zen Zo Physical Theatre
       method: llm
       domains:
@@ -1832,11 +2011,6 @@ sources:
       method: llm
       domains:
         - sitdown.com.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
-    - name: Brisbane Comedy Festival
-      method: llm
-      domains:
-        - brisbanecomedyfestival.com
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Queensland Poetry Festival
       method: llm
@@ -1858,11 +2032,6 @@ sources:
       domains:
         - andrewbaker.com.au
       note: Suggested by discover-sources 2026-09-01; not yet verified.
-    - name: Woolloongabba Art Gallery
-      method: llm
-      domains:
-        - wagallery.com.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Jan Manton Gallery
       method: llm
       domains:
@@ -1874,10 +2043,15 @@ sources:
         - accessarts.org.au
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Royal Queensland Art Society
-      method: llm
+      method: scraper
       domains:
         - rqas.com.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 10 dated event(s) via html.'
+      homepage: https://rqas.com.au/
+      listingUrls:
+        - https://rqas.com.au/wp-json/tribe/events/v1/events
+        - https://rqas.com.au/events/
+      strategy: html
     - name: Kurilpa Hall
       method: llm
       domains:
@@ -1889,10 +2063,14 @@ sources:
         - westendch.org.au
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Eatons Hill Hotel
-      method: llm
+      method: scraper
       domains:
         - eatonshillhotel.com.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://eatonshillhotel.com.au/
+      listingUrls:
+        - https://www.eatonshillhotel.com.au/event/
+      strategy: html
     - name: Kedron Wavell Services Club
       method: llm
       domains:
@@ -1917,7 +2095,12 @@ sources:
       method: llm
       domains:
         - ballisticbeer.com
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
+      listingUrls:
+        - https://ballisticbeer.com/pages/events
     - name: Green Beacon Brewing
       method: llm
       domains:
@@ -1939,10 +2122,14 @@ sources:
         - daviesparkmarket.com.au
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Jan Powers Farmers Markets
-      method: llm
+      method: scraper
       domains:
         - janpowersfarmersmarkets.com.au
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://janpowersfarmersmarkets.com.au/
+      listingUrls:
+        - https://janpowersfarmersmarkets.com.au/
+      strategy: html
     - name: Collective Markets South Bank
       method: llm
       domains:
@@ -1964,20 +2151,28 @@ sources:
         - oskulligans.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Felons Brewing Co
-      method: llm
+      method: scraper
       domains:
         - felonsbrewingco.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
+      homepage: https://felonsbrewingco.com.au/
+      listingUrls:
+        - https://felonsbrewingco.com.au/blogs/whats-on
+      strategy: html
     - name: The Outpost Bar
       method: llm
       domains:
         - theoutpostbar.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Banshees Bar & Artspace
-      method: llm
+      method: scraper
       domains:
         - bansheesbar.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 10 dated event(s) via html.'
+      homepage: https://bansheesbar.com.au/
+      listingUrls:
+        - https://bansheesbar.com.au/gigs
+      strategy: html
     - name: Brisbane Brewing Co
       method: llm
       domains:
@@ -1994,20 +2189,28 @@ sources:
         - waterloohotel.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Sandstone Point Hotel
-      method: llm
+      method: scraper
       domains:
         - sandstonepointhotel.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://sandstonepointhotel.com.au/
+      listingUrls:
+        - https://sandstonepointhotel.com.au/event/
+      strategy: html
     - name: Prince of Wales Hotel Nundah
       method: llm
       domains:
         - princeofwaleshotel.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Caxton Hotel
-      method: llm
+      method: scraper
       domains:
         - caxton.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://caxton.com.au/
+      listingUrls:
+        - https://caxton.com.au/wp-json/tribe/events/v1/events
+      strategy: html
     - name: Royal Mail Hotel Goodna
       method: llm
       domains:
@@ -2024,15 +2227,23 @@ sources:
         - jubileehotel.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Regatta Hotel
-      method: llm
+      method: scraper
       domains:
         - regattahotel.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://regattahotel.com.au/
+      listingUrls:
+        - https://regattahotel.com.au/whats-on/
+      strategy: html
     - name: Pineapple Hotel
-      method: llm
+      method: scraper
       domains:
         - pineapplehotel.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
+      homepage: https://pineapplehotel.com.au/
+      listingUrls:
+        - https://pineapplehotel.com.au/whats-on/
+      strategy: html
     - name: The Scratch Bar
       method: llm
       domains:
@@ -2044,10 +2255,14 @@ sources:
         - warehousetwentyfive.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Osbourne Hotel
-      method: llm
+      method: scraper
       domains:
         - osbournehotel.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://osbournehotel.com.au/
+      listingUrls:
+        - https://osbournehotel.com.au/whats-on/
+      strategy: html
     - name: Can You Keep A Secret
       method: llm
       domains:
@@ -2059,20 +2274,32 @@ sources:
         - chardonscornerhotel.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: The Lord Alfred
-      method: llm
+      method: scraper
       domains:
         - thelordalfred.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://thelordalfred.com.au/
+      listingUrls:
+        - https://thelordalfred.com.au/whats-on/
+      strategy: html
     - name: Port Office Hotel
-      method: llm
+      method: scraper
       domains:
         - portofficehotel.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://portofficehotel.com.au/
+      listingUrls:
+        - https://portofficehotel.com.au/whats-on/
+      strategy: html
     - name: Superordinary
-      method: llm
+      method: scraper
       domains:
         - superordinary.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://superordinary.com.au/
+      listingUrls:
+        - https://superordinary.com.au/events
+      strategy: html
     - name: Brisbane German Club
       method: llm
       domains:
@@ -2089,10 +2316,15 @@ sources:
         - hdg-artists.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Life Drawing Sessions
-      method: llm
+      method: scraper
       domains:
         - lifedrawingsessions.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
+      homepage: https://lifedrawingsessions.com.au/
+      listingUrls:
+        - https://www.lifedrawingsessions.com.au/events
+        - https://lifedrawingsessions.com.au/
+      strategy: html
     - name: Kuiper Projects
       method: llm
       domains:
@@ -2104,20 +2336,32 @@ sources:
         - brisart.org
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Land Street Gallery
-      method: llm
+      method: scraper
       domains:
         - landstreetgallery.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://landstreetgallery.com.au/
+      listingUrls:
+        - https://www.landstreetgallery.com.au/exhibitions
+      strategy: html
     - name: Vacant Assembly
-      method: llm
+      method: scraper
       domains:
         - vacantassembly.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 8 dated event(s) via html.'
+      homepage: https://vacantassembly.com/
+      listingUrls:
+        - https://www.vacantassembly.com/events?format=json&format=json
+      strategy: html
     - name: Impress Printmakers Studio and Gallery
-      method: llm
+      method: scraper
       domains:
         - impress.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://impress.org.au/
+      listingUrls:
+        - https://impress.org.au/
+      strategy: html
     - name: Revival Art & Design Gallery
       method: llm
       domains:
@@ -2182,22 +2426,42 @@ sources:
       method: llm
       domains:
         - paperboatpress.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
+      listingUrls:
+        - https://paperboatpress.com/
+        - https://paperboatpress.com/en-ca
     - name: Mas & Miek
       method: llm
       domains:
         - masandmiek.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Clayschool Brisbane
-      method: llm
+      method: scraper
       domains:
         - clayschool.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://clayschool.com.au/
+      listingUrls:
+        - https://www.clayschool.com.au/workshops?format=json&format=json
+      strategy: html
     - name: The Gap Sustainability Initiative
-      method: llm
+      method: scraper
       domains:
         - thegapsustainability.org
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 24 dated event(s) via jsonld.'
+      homepage: https://thegapsustainability.org/
+      listingUrls:
+        - https://thegapsustainability.org/events/
+        - https://thegapsustainability.org/wp-json/tribe/events/v1/events
+        - https://thegapsustainability.org/category/events/
+      strategy: jsonld
+      venue:
+        name: Paten Park Native Nursery
+        address: 57 Paten Road
+        suburb: THE GAP
     - name: Transition the Grove Inc.
       method: llm
       domains:
@@ -2214,10 +2478,15 @@ sources:
         - theceramichouse.studio
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Field Trip Gallery
-      method: llm
+      method: scraper
       domains:
         - fieldtrip.gallery
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
+      homepage: https://fieldtrip.gallery/
+      listingUrls:
+        - https://www.fieldtrip.gallery/exhibitions?format=json&format=json
+        - https://www.fieldtrip.gallery/exhibitions
+      strategy: html
     - name: Bywater Design
       method: llm
       domains:
@@ -2239,10 +2508,19 @@ sources:
         - artfromtheurbanwilderness.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Ministry of Handmade
-      method: llm
+      method: scraper
       domains:
         - ministryofhandmade.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via jsonld.'
+      homepage: https://ministryofhandmade.com.au/
+      listingUrls:
+        - https://ministryofhandmade.com.au/events
+        - https://ministryofhandmade.com.au/wp-json/tribe/events/v1/events
+      strategy: jsonld
+      venue:
+        name: Ministry of Handmade Studio
+        address: 11 Eclipse Street
+        suburb: Bridgeman Downs
     - name: The Nest Community
       method: llm
       domains:
@@ -2259,10 +2537,14 @@ sources:
         - bymeworkshop.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Meekz Contemporary Jewellery
-      method: llm
+      method: scraper
       domains:
         - meekzcontemporaryjewellery.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://meekzcontemporaryjewellery.com.au/
+      listingUrls:
+        - https://meekzcontemporaryjewellery.com.au/collections/workshops
+      strategy: html
     - name: London Road Ironworks
       method: llm
       domains:
@@ -2314,10 +2596,14 @@ sources:
         - sewmasters.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Wesley Taylor Art Studios
-      method: llm
+      method: scraper
       domains:
         - wesleytaylorartstudios.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://wesleytaylorartstudios.com.au/
+      listingUrls:
+        - https://www.wesleytaylorartstudios.com.au/events/
+      strategy: html
     - name: The Ceramic Studio
       method: llm
       domains:
@@ -2342,12 +2628,22 @@ sources:
       method: llm
       domains:
         - imprintcorner.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
+      listingUrls:
+        - https://imprintcorner.com.au/workshops/
+        - https://imprintcorner.com.au/workshop/
     - name: Kintsugi Australia
-      method: llm
+      method: scraper
       domains:
         - kintsugi-australia.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 4 dated event(s) via html.'
+      homepage: https://kintsugi-australia.com.au/
+      listingUrls:
+        - https://kintsugi-australia.com.au/
+      strategy: html
     - name: Archives Fine Books
       method: llm
       domains:
@@ -2362,7 +2658,14 @@ sources:
       method: llm
       domains:
         - booklinks.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
+      listingUrls:
+        - https://booklinks.org.au/whats-on/
+        - https://booklinks.org.au/exhibitions/
+        - https://booklinks.org.au/whats-on/bookings/
     - name: Carindale Writers Group
       method: llm
       domains:
@@ -2374,10 +2677,14 @@ sources:
         - cursiveknives.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Hawkeye Publishing
-      method: llm
+      method: scraper
       domains:
         - hawkeyebooks.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 9 dated event(s) via html.'
+      homepage: https://hawkeyebooks.com.au/
+      listingUrls:
+        - https://hawkeyebooks.com.au/pages/events
+      strategy: html
     - name: Little Gnome
       method: llm
       domains:
@@ -2409,10 +2716,15 @@ sources:
         - thebookgarden.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: University of Queensland Press
-      method: llm
+      method: scraper
       domains:
         - uqp.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 8 dated event(s) via html.'
+      homepage: https://uqp.com.au/
+      listingUrls:
+        - https://www.uqp.com.au/events
+        - https://www.uqp.com.au/events/~/featured
+      strategy: html
     - name: Upbeat Arts
       method: llm
       domains:
@@ -2439,10 +2751,15 @@ sources:
         - meepleandmug.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: League of Extraordinary Gamers
-      method: llm
+      method: scraper
       domains:
         - lxgbrisbane.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      homepage: https://lxgbrisbane.com/
+      listingUrls:
+        - https://lxgbrisbane.com/wp-json/tribe/events/v1/events
+        - https://lxgbrisbane.com/events/
+      strategy: html
     - name: More Than Meeples
       method: llm
       domains:
@@ -2479,15 +2796,24 @@ sources:
         - isotriv.com
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Think Trivia
-      method: llm
+      method: scraper
       domains:
         - thinktrivia.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 25 dated event(s) via html.'
+      homepage: https://thinktrivia.com.au/
+      listingUrls:
+        - https://www.thinktrivia.com.au/weeklyevents?format=json&format=json
+        - https://www.thinktrivia.com.au/weeklyevents
+      strategy: html
     - name: Quiz Meisters
-      method: llm
+      method: scraper
       domains:
         - quizmeisters.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://quizmeisters.com/
+      listingUrls:
+        - https://www.quizmeisters.com/find-a-show/qld
+      strategy: html
     - name: Trivia Mill
       method: llm
       domains:
@@ -2499,10 +2825,14 @@ sources:
         - funkybunch.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Not On Your Rider
-      method: llm
+      method: scraper
       domains:
         - notonyourrider.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://notonyourrider.com/
+      listingUrls:
+        - https://notonyourrider.com/whats-on
+      strategy: html
     - name: Five Star Cinemas
       method: llm
       domains:
@@ -2562,7 +2892,12 @@ sources:
       method: llm
       domains:
         - dendy.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: >-
+        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
+        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
+        if they yield events.
+      listingUrls:
+        - https://www.dendy.com.au/graphql
     - name: Milton Markets
       method: llm
       domains:
@@ -2674,10 +3009,14 @@ sources:
         - mtgravattshow.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: QLD Vegan Markets
-      method: llm
+      method: scraper
       domains:
         - qldveganmarkets.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://qldveganmarkets.com.au/
+      listingUrls:
+        - https://www.qldveganmarkets.com.au/events
+      strategy: html
     - name: Einbunpin Festival
       method: llm
       domains:
@@ -2699,10 +3038,14 @@ sources:
         - globalfoodmarkets.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Redlands Coast Collective Markets
-      method: llm
+      method: scraper
       domains:
         - redlandscoastcollectivemarkets.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
+      homepage: https://redlandscoastcollectivemarkets.com.au/
+      listingUrls:
+        - https://redlandscoastcollectivemarkets.com.au/
+      strategy: html
     - name: Brisbane German Week
       method: llm
       domains:
@@ -2719,20 +3062,28 @@ sources:
         - cabooltureshow.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Scenic Rim Eat Local Month
-      method: llm
+      method: scraper
       domains:
         - eatlocalmonth.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
+      homepage: https://eatlocalmonth.com.au/
+      listingUrls:
+        - https://www.eatlocalmonth.com.au/eat-local-month-itineraries/
+      strategy: html
     - name: Beenleigh Show
       method: llm
       domains:
         - beenleighshow.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Caboolture Markets
-      method: llm
+      method: scraper
       domains:
         - caboolturemarkets.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
+      homepage: https://caboolturemarkets.com.au/
+      listingUrls:
+        - https://caboolturemarkets.com.au/whats-on
+      strategy: html
     - name: Sherwood Community Festival
       method: llm
       domains:

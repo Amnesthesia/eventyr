@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:CoastRs Pilates Class
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1wdey2c@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T083000
+DTEND;TZID=Australia/Brisbane:20260909T103000
+SUMMARY:CoastRs Pilates Class
+DESCRIPTION:Join us for a free Move Well Pilates Class every Wednesday duri
+ ng term 4
+LOCATION:Gold Coast
+URL:https://www.scu.edu.au/engage/events/coastrs-pilates-class/
+END:VEVENT
+END:VCALENDAR

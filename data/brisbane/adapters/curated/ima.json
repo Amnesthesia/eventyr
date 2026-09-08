@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "ima",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "On Rafman: Daniel McKewen, Holly Eddington, and Spencer Harvie",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Institute of Modern Art, 420 Brunswick St",
+      "link": "https://www.ima.org.au/ima-events/on-rafman-daniel-mckewan-holly-eddington-and-spencer-harvie/",
+      "cost": "See link",
+      "source": "Institute of Modern Art (IMA)",
+      "description": "Join us at the IMA for our second On Rafman lectures—a series of short presentations by academics, artists, curators, and writers that unpick the central…",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "art",
+        "lecture",
+        "contemporary",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

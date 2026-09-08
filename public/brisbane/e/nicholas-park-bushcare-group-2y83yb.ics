@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Nicholas Park Bushcare Group
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-2y83yb@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T073000
+DTEND;TZID=Australia/Brisbane:20260916T093000
+SUMMARY:Nicholas Park Bushcare Group
+DESCRIPTION:This is an Habitat Brisbane Bushcare Group under the leadership
+  of Janet Mangan. The group meets every second Wednesday morning from 7.30
+  – 9.30 am. This site features good remnant dry rainforest\, in particul
+ ar an enormous Hard Quandong (Elaeocarpus obovatus)\, and other creek spec
+ ies including Weeping Lilli Pilli\, Black Bean\, Green Kamala\, Native Gra
+ pe vine\, […]
+LOCATION:Nicholas Park\, Tandara Street\, THE GAP\, QLD\, 4061
+URL:https://thegapsustainability.org/event/nicholas-park-bushcare-group-2/2
+ 026-09-16/
+END:VEVENT
+END:VCALENDAR

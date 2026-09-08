@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:WEEMAN
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1d7zipj@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T023000
+DTEND;TZID=Australia/Brisbane:20260919T043000
+SUMMARY:WEEMAN
+DESCRIPTION:Weeman - Damian is one of Queensland’s most sought-after Solo
+  Artists. Guitar\, Vocals and a killer repertoire filled with Bangers and 
+ Classics.
+LOCATION:Juniors\, Cnr Fraser Dr &\, Leisure Dr\, Banora Point NSW 2486\, A
+ ustralia
+URL:https://twintowns.com.au/events/weeman/
+END:VEVENT
+END:VCALENDAR

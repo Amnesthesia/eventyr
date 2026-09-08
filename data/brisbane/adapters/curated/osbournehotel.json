@@ -1,0 +1,32 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "osbournehotel",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Drag Bingo",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Osbourne Hotel, 766 Ann St, Fortitude Valley QLD",
+      "link": "https://osbournehotel.com.au/Whats-On/drag-bingo-september/",
+      "cost": "See link",
+      "source": "Osbourne Hotel",
+      "description": "Drag Bingo is coming back to the Osbourne Hotel on Sunday 20 September. Join Haus of Drag Bingo from 1pm.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "drag",
+        "bingo",
+        "entertainment"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

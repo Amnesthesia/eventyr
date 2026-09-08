@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:A Weekend for the Senses
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-48dn7e@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20270622
+SUMMARY:A Weekend for the Senses
+DESCRIPTION:This weekend asks you to get involved. Churn butter on a sixth-
+ generation farm\, harvest mystery garden ingredients before cooking them i
+ nto something extraordinary\, feast fireside high above the valley\, then 
+ close Sunday with working beehives and a native rainforest orchard walk as
+  the sun sets over Main Range.
+LOCATION:Scenic Rim Eat Local Month
+URL:https://eatlocalmonth.com.au/
+END:VEVENT
+END:VCALENDAR

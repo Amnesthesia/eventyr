@@ -1,0 +1,54 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "thej",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Sweet Sweat Set 2026 – Karaka Orchestra",
+      "datetime": "Fri 18 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-18T19:30:00",
+      "datetime_end_iso": "",
+      "location": "The J Noosa",
+      "link": "https://www.thej.com.au/sweet-sweat-set-karaka-orchestra/",
+      "cost": "See link",
+      "source": "The J Noosa",
+      "description": "Sweet Sweat Set 2026 Karaka Orchestra, The J Noosa, What's On,",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "orchestra",
+        "music",
+        "live"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Nurse Georgie Carroll – Infectious – Encore Show",
+      "datetime": "Sat 19 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-19T19:30:00",
+      "datetime_end_iso": "",
+      "location": "The J Noosa",
+      "link": "https://www.thej.com.au/georgie-carroll-infectious-encore/",
+      "cost": "See link",
+      "source": "The J Noosa",
+      "description": "Stand Up Comedy, Georgie Carroll, Infectious, What's On, Noosa, The J Theatre",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

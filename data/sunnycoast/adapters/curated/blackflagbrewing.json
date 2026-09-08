@@ -1,0 +1,120 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "blackflagbrewing",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "TRIVIA NIGHT",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Blackflag Mooloolaba",
+      "link": "https://blackflagbrewing.com.au/",
+      "cost": "See link",
+      "source": "Blackflag Brewing",
+      "description": "Get the brains trust together for another epic trivia night at your fave laneway bar. Free to play, and prizes to be won!",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "LATTES FOR MILFS",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Blackflag Mooloolaba",
+      "link": "https://blackflagbrewing.com.au/",
+      "cost": "See link",
+      "source": "Blackflag Brewing",
+      "description": "LATTES FOR MILFS ️ will be hitting the stage at Mooloolaba next month! Supported by local faves THE PHOSPHENES and TOMOHUNG, you can expect one epic night of live musicccc! FREE ENTRY, 18+",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "rock",
+        "free"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "RAW ORDIO WHITE PARTY",
+      "datetime": "Sat 12 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-12T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Blackflag Bundaberg",
+      "link": "https://tickets.oztix.com.au/outlet/event/8f695955-0fe5-44d9-be10-b8bf8d038f6f",
+      "cost": "See link",
+      "source": "Blackflag Brewing",
+      "description": "Bundy, get ready to dress in white and party all night as RAW ORDIO bring their high-energy live electronic rock show to Blackflag! Iconic rock anthems, huge beats, live performance and a dance floor that doesn’t stop. Doors open at 5pm, with two killer opening acts from 7pm followed by Raw Ordio.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "electronic",
+        "rock",
+        "party"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Che Burns With Band",
+      "datetime": "Sat 19 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-19T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Blackflag Coolum",
+      "link": "https://tickets.oztix.com.au/outlet/event/12a3e2b6-62bb-4d96-ab6f-6e3ee5a55b41",
+      "cost": "See link",
+      "source": "Blackflag Brewing",
+      "description": "Che Burns returns to Blackflag in Coolum, taking over the main venue for a massive hometown show with his full band. Following a run of sold-out performances and a recent Song of the Year win at the Sunshine Coast Music Awards, Che is bringing his biggest live production yet to the Sunshine Coast. Joined by Cora, Happy Valley and Cherry Nova for a night of live music you won’t want to miss.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "local",
+        "rock"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "raise the flag",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Blackflag Mooloolaba",
+      "link": "https://blackflagbrewing.com.au/",
+      "cost": "See link",
+      "source": "Blackflag Brewing",
+      "description": "With MIKE WEBB, CDOTM - KANZEE, MIXUS B2B SEVII, KENNO - JEEM FREE ENTRY, 18+",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "dj",
+        "dance",
+        "party"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Eagle Farm
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-cjx35@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Eagle Farm
+DESCRIPTION:Public Car Parking is available at the Infield Car Park via Gat
+ e 7 via Nudgee Road (behind the Racecourse Village Shopping Centre). Click
+  for Google Map Referenc e. Then proceed on foot through the pedestrian tu
+ nnel into the market. Disabled car parking is available at the front of th
+ e market via Gate 4 off Racecourse Rd.
+LOCATION:Jan Powers Farmers Markets
+URL:https://janpowersfarmersmarkets.com.au/eagle-farm-markets
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TAHLIA WILSON
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-18txoal@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T010000
+DTEND;TZID=Australia/Brisbane:20260914T030000
+SUMMARY:TAHLIA WILSON
+DESCRIPTION:This talented young singer/songwriter from Byron Bay has perfor
+ med on the busking stage at the Blues Fest\, played at Tamworth Country Mu
+ sic Festival and had the honour of playing at the famous Bluebird Café in
+  Nashville.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/tahlia-wilson/
+END:VEVENT
+END:VCALENDAR

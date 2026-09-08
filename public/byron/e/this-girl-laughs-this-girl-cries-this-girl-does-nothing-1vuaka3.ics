@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:This Girl Laughs\, This Girl Cries\, This Girl Does Nothing
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1vuaka3@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:This Girl Laughs\, This Girl Cries\, This Girl Does Nothing
+DESCRIPTION:This modern day fairy tale written by one of Australia’s este
+ emed playwrights for young audiences\, revolves around three young sisters
+  who are left in a forest by their woodcutter father and forced to find th
+ eir own way in the world. From a classical beginning\, three resolutions a
+ re made — one sister walks one way to find purpose\, one the other to fi
+ nd adventure\, and the third stays right where she is to create a home. Th
+ e three sisters traverse the globe in their unique ways to find themselves
+  and heal.
+LOCATION:Drill Hall Theatre
+URL:https://www.byronyouththeatre.com/this-girl-laughs-this-girl-cries-this
+ -girl-does-nothing/
+END:VEVENT
+END:VCALENDAR

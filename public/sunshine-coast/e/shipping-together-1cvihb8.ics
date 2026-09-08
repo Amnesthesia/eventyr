@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Shipping together
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1cvihb8@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T173000
+DTEND;TZID=Australia/Brisbane:20260916T193000
+SUMMARY:Shipping together
+DESCRIPTION:**What happens to Engineering and Design collaboration when any
+ one can build?** Join us for our next ProductTank Sunshine Coast meetup! 
+ 🚀 AI tools mean anyone can ship a
+LOCATION:Peregian Digital Hub\, 253-255 David Low Way\, Peregian Beach\, al
+ \, Peregian Beach\, al
+URL:https://www.meetup.com/producttank-sunshine-coast/events/316177792/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:NO CIGAR: AUSSIE TOUR
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-z96bg2@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T210000
+DTEND;TZID=Australia/Brisbane:20260910T230000
+SUMMARY:NO CIGAR: AUSSIE TOUR
+DESCRIPTION:NO CIGAR are bringing their brand of ‘semi rock’ to Austral
+ ia this spring\, with thirteen lively shows on the cards for their biggest
+  run in Australia to date.
+LOCATION:Pulse Bar & Live Music\, Maroochydore
+URL:https://megatix.com.au/events/no-cigar-aussie-tour-with-special-guests
+END:VEVENT
+END:VCALENDAR

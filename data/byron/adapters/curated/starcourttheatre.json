@@ -8,8 +8,8 @@
   "events": [
     {
       "title": "The Star Court Theatre Games Show",
-      "datetime": "Fri 18 Sep",
-      "datetime_iso": "2026-09-18",
+      "datetime": "Fri 18 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-18T19:00:00",
       "datetime_end_iso": "",
       "location": "Star Court Theatre",
       "link": "http://starcourttheatre.com.au/events/sctgs26",
@@ -22,9 +22,9 @@
         "improv",
         "comedy",
         "performance",
-        "theatre"
+        "free"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true

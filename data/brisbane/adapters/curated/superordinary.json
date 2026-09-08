@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "superordinary",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Sandbox Music Festival – Brisbane",
+      "datetime": "Fri 18 Sep, 10:00 PM",
+      "datetime_iso": "2026-09-18T22:00:00",
+      "datetime_end_iso": "",
+      "location": "Superordinary",
+      "link": "https://superordinary.com.au/events/sandbox-music-festival-brisbane",
+      "cost": "See link",
+      "source": "Superordinary",
+      "description": "World-class artists, immersive production and one of Brisbane's most iconic warehouse venues transformed into a festival playground.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "festival",
+        "music",
+        "warehouse",
+        "dance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

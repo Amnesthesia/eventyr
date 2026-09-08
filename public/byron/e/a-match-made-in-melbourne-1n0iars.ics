@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:A Match Made In Melbourne
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1n0iars@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:A Match Made In Melbourne
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/now-showing/a-match-made-in-melbourne/
+END:VEVENT
+END:VCALENDAR

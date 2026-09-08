@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ALEX BOWEN
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-arnnya@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T023000
+DTEND;TZID=Australia/Brisbane:20260912T043000
+SUMMARY:ALEX BOWEN
+DESCRIPTION:After having a #1 blues song in Australia\, Alex Bowen landed b
+ ack on the scene in 2020 with his popular single ‘I Believed In Us’\, 
+ which took him back on the road selling out National Australian tours and 
+ quickly became a notable voice on the Australian scene. Born and raised in
+  the rock and blues scene of Newcastle Australia\, he now resides on the G
+ old Coast\, producing his flavour of Singer-Songwriter/Americana/Indie-Pop
+  from his home studio. Encompassing a raw honest voice\, and a vocal range
+  likened to Bruce Springsteen\, James Bay & Kings Of Leon. His preferred s
+ tyle is Chris Stapleton\, Michael Jackson\, Diesel\, John Mayer etc. makin
+ g this a show not to be missed
+LOCATION:Juniors\, Cnr Fraser Dr &\, Leisure Dr\, Banora Point NSW 2486\, A
+ ustralia
+URL:https://twintowns.com.au/events/alex-bowen/
+END:VEVENT
+END:VCALENDAR

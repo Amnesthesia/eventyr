@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bugs
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ac5rk@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Bugs
+DESCRIPTION:Bugs are launching Head Noise\, their fourth album\, at Crowbar
+  in the Valley. Thursday's show features Sam Cromack from Ball Park Music\
+ , plus Supernew and Dirty Harry. These are the Brisbane outfit's first liv
+ e dates since October's Saving A Bug's Life fundraiser for bassist Jordan 
+ Brunoli. The…
+LOCATION:Crowbar Brisbane\, Fortitude Valley
+URL:https://musick.com.au/gig/bugs-head-noise-album-launch-at-crowbar-brisb
+ ane-2026-09-10/
+END:VEVENT
+END:VCALENDAR

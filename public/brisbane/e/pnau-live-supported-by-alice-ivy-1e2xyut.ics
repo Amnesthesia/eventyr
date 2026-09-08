@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:PNAU (live) Supported by Alice Ivy
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1e2xyut@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T180000
+DTEND;TZID=Australia/Brisbane:20260919T200000
+SUMMARY:PNAU (live) Supported by Alice Ivy
+DESCRIPTION:ARIA Award-winning electronic duo PNAU have become one of Austr
+ alia’s most influential acts\, evolving from Sydney’s underground scen
+ e to global charts. With hits like Chameleon\, Go Bang and Cold Heart with
+  Elton John and Dua Lipa\, they return this September with their full-scal
+ e live show for The Ni
+LOCATION:Roma Street Parkland\, Brisbane\, QLD\, Australia\, Queensland 400
+ 0\, 3D Parkland Blvd\, Brisbane City QLD 4000\, Australia\, Brisbane\, QL
+URL:https://allevents.in/brisbane/pnau-live-supported-by-alice-ivy/20003016
+ 5496355
+END:VEVENT
+END:VCALENDAR

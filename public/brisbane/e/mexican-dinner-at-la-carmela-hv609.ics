@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:🌮 Mexican Dinner at La Carmela
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hv609@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T180000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:🌮 Mexican Dinner at La Carmela
+DESCRIPTION:Come join Brisbane Young Meditators (20s and 30s) for Mexican d
+ inner at La Carmela restaurant. They have good tacos at decent prices. See
+  their menu here f
+LOCATION:La Carmela\, 25 Caxton Street\, Petrie Terrace\, Petrie Terrace
+URL:https://www.meetup.com/brisbane-young-meditators-20s-and-30s/events/316
+ 325492/
+END:VEVENT
+END:VCALENDAR

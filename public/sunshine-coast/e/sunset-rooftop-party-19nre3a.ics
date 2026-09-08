@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SUNSET ROOFTOP PARTY
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-19nre3a@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T140000
+DTEND;TZID=Australia/Brisbane:20260911T160000
+SUMMARY:SUNSET ROOFTOP PARTY
+DESCRIPTION:Get ready for an unforgettable SUNSET at ARTE ROOFTOP MAROOCHYD
+ ORE with the best Groove\, Disco\, House & Tech music. Friday September 11
+ th A sunset with wine and cocktails\, brought to life by 6 Sunshine Coast 
+ DJs playing the best Groove\, Disco\, House & Tech music for the perfect s
+ unset vibe.
+LOCATION:Locals in the Loop
+URL:https://localsintheloop.com.au/listing/sunset-rooftop-party/
+END:VEVENT
+END:VCALENDAR

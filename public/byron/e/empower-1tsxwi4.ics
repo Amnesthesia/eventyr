@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:EMPOWER
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1tsxwi4@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T083000
+DTEND;TZID=Australia/Brisbane:20260910T173000
+SUMMARY:EMPOWER
+DESCRIPTION:EMPOWER is a hands-on training program designed to inspire like
+ -minded individuals and organisations to share Shedding’s practices\, le
+ arnings\, resources and networks to empower communities near and far with 
+ practical carpentry and building skills in safe and supportive environment
+ s.
+LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
+URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
+ tType=52990335
+END:VEVENT
+END:VCALENDAR

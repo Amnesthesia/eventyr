@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:A SALUTE TO ROY ORBISON
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-q0w5rq@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T003000
+DTEND;TZID=Australia/Brisbane:20260920T023000
+SUMMARY:A SALUTE TO ROY ORBISON
+DESCRIPTION:Direct from Las Vegas\, YOU GOT IT! A SALUTE TO ROY ORBISON is 
+ an unforgettable concert experience\, starring multi-award-winning artist 
+ John Stephan. Superstar Roy Orbison was one of the world’s greatest and 
+ most successful rock’n’roll music legends of all time. Wesley Orbison\
+ , Roy Orbison’s eldest son\, is proud to fully endorse and present this 
+ show honouring and remembering his father. It features narration from Wesl
+ ey\, who delivers a very personal narrative of Roy’s intriguing yet trag
+ ic life. Internationally renowned artist John Stephan has a voice filled w
+ ith warmth\, emotion and a four-octave range. Known as ‘The Voice’\, J
+ ohn will take audience on an incredible trip through the storied career of
+  Orbison\, covering a multitude of his chart-topping hits. Relive the glor
+ y days as John Stephan performs iconic songs such as Pretty Woman\, Crying
+ \, I Drove All Night\, Leah\, Working for the Man\, Blue Bayou\, Only the 
+ Lonely\, In Dreams\, Blue Angel\, You Got It\, Running Scared and many mor
+ e. This is a concert experience not to be missed!
+LOCATION:The Showroom\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/a-salute-to-roy-orbison/
+END:VEVENT
+END:VCALENDAR

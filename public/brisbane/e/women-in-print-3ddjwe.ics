@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:WOMEN IN PRINT
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3ddjwe@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260921
+SUMMARY:WOMEN IN PRINT
+DESCRIPTION:Let's celebrate women in printmaking with: Exhibition Opening p
+ arty Talks Demonstrations and more... This will be 2 weeks of celebrating 
+ women in print making...
+LOCATION:Impress Printmakers Studio and Gallery\, 134 Kedron Park Road Wool
+ oowin Brisbane Australia
+URL:https://impress.org.au/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Noosa Rocks – Tribute Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-vsnmif@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Noosa Rocks – Tribute Festival
+DESCRIPTION:Get ready for NOOSA ROCKS! The biggest rock tribute fest around
+ . With 5 awesome tribute shows to... Blink 182 Green Day Red Hot Chili Pep
+ pers The Offspring Foo Fighters This will be a massive night at The V Room
+  - Villa Noosa Hotel\, so grab your tickets asap! Featuring some of the be
+ st Perth based musicians touring Australia this September! Proudly Present
+ ed by Bosh Events
+LOCATION:Villa Noosa Hotel\, Noosaville · Noosa + North
+URL:https://tickets.oztix.com.au/outlet/event/7ee4cfda-7261-4e02-92dc-e1537
+ a3587f5
+END:VEVENT
+END:VCALENDAR

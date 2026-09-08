@@ -3,18 +3,28 @@
 // Adapters fetch and parse known event sources deterministically; the LLM is
 // only used downstream (Phase 4) as a normaliser over already-extracted data.
 
-/** How a source's listing pages are fetched. */
-export type SourceStrategy = "jsonld" | "html";
+/**
+ * How a source's listing pages are fetched.
+ *
+ * "render" means the page is fetched through a real browser (render.ts) because
+ * its events only exist after JavaScript runs and probe could verify no static
+ * URL for it. It is the narrowest and most expensive path, so probe only
+ * assigns it when a render actually produced dated events — never speculatively.
+ */
+export type SourceStrategy = "jsonld" | "html" | "render";
 
 /**
  * Which path actually produced an event, recorded on its provenance. "api" is
- * the embedded hydration JSON path (embeddedJson.ts), which has no matching
- * fetch strategy — it is discovered in the body of a page fetched as "html".
+ * the embedded hydration JSON path (embeddedJson.ts) and "feed" is a site's
+ * own event API (feeds.ts — The Events Calendar, Modern Events Calendar,
+ * Squarespace); neither has a matching fetch strategy, because both are
+ * recognised from the body of something fetched as "html".
  *
  * "ics" and "rss" used to be in this union with no implementation behind
- * them anywhere, so a source declaring one silently ran the HTML path.
+ * them anywhere, so a source declaring one silently ran the HTML path. Every
+ * value here must stay backed by a real branch in pageAdapter.extract().
  */
-export type ExtractionStrategy = SourceStrategy | "api";
+export type ExtractionStrategy = SourceStrategy | "api" | "feed";
 
 export interface VenueRecord {
 	name: string;

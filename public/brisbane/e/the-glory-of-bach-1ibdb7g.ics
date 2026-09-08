@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Glory of Bach
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ibdb7g@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T150000
+DTEND;TZID=Australia/Brisbane:20260913T163000
+SUMMARY:The Glory of Bach
+DESCRIPTION:Tickets: https://www.trybooking.com/events/landing/1611693 Step
+  into the profound beauty\, brilliance and spiritual depth of J.S. Bach as
+  the Director of M
+LOCATION:St Stephen's Cathedral\, 249 Elizabeth St\, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-baroque-and-chamber-music-meetup-group/
+ events/316382045/
+END:VEVENT
+END:VCALENDAR

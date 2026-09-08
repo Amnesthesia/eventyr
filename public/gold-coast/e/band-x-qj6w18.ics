@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BAND X
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-qj6w18@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T070000
+DTEND;TZID=Australia/Brisbane:20260913T090000
+SUMMARY:BAND X
+DESCRIPTION:Band X – Brisbane’s Hardest Rocking Party Band. Playing all
+  the hits of the 80’s\, 90’s and now.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/band-x-2/
+END:VEVENT
+END:VCALENDAR

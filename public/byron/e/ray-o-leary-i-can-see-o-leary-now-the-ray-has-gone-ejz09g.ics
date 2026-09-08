@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ray O’Leary: I Can See O’Leary Now the Ray Has Gone
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-ejz09g@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T070000
+DTEND;TZID=Australia/Brisbane:20260912T090000
+SUMMARY:Ray O’Leary: I Can See O’Leary Now the Ray Has Gone
+DESCRIPTION:When Ray O’Leary (Taskmaster NZ\, Have You Been Paying Attent
+ ion?\, Best Show nominee Melbourne Comedy Festival) was born\, winter chan
+ ged to spring\, a new star appeared in the heavens\, and a double rainbow 
+ spontaneously appeared. With this auspicious start\, it is no wonder he be
+ came leader of North Korea in 1994 until his untimely death in 2011. Despi
+ te this minor setback\, he found time to bring you a whole new show.
+LOCATION:Brunswick Picture House\, Brunswick Heads NSW
+URL:https://brunswickpicturehouse.com/ray-oleary-i-can-see-oleary-now-ray-h
+ as-gone-12-sep/
+END:VEVENT
+END:VCALENDAR

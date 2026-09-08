@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:JEFF CAMILLERI
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1hk8gsl@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T030000
+DTEND;TZID=Australia/Brisbane:20260918T050000
+SUMMARY:JEFF CAMILLERI
+DESCRIPTION:A great singer and a hot guitarist is the best way to describe 
+ Jeff Camilleri. Jeff Camilleri is a seasoned performer with a very appeali
+ ng voice. He performs all the hits from the 60’s through to current that
+  everyone loves and his ability to read the audience is why he is so popul
+ ar wherever he plays.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/jeff-camilleri-2/
+END:VEVENT
+END:VCALENDAR

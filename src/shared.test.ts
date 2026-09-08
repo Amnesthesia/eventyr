@@ -7,6 +7,7 @@ import {
 	eventPath,
 	eventSlug,
 	isCurrencyCode,
+	isTopPick,
 	LOW_SCORE_THRESHOLD,
 	meetsScoreFloor,
 	normaliseCurrency,
@@ -359,4 +360,65 @@ test("an unranked event is published, a low-scored one is not", () => {
 	assert.equal(meetsScoreFloor(undefined), true);
 	assert.equal(meetsScoreFloor(null), true);
 	assert.equal(meetsScoreFloor("7"), true);
+});
+
+test("a standing exhibition is not a top pick", () => {
+	// It scores high and it is genuinely open, but it opened in January and
+	// closes in December — so it would hold a pick slot every week until it
+	// closed, and Picks is meant to answer "what should I do this week".
+	const week = ["2026-09-07", "2026-09-13"] as const;
+
+	const longRun = {
+		score: 9,
+		datetime_iso: "2026-01-15T10:00:00",
+		datetime_end_iso: "2026-12-20T17:00:00",
+	};
+	assert.equal(isTopPick(longRun, ...week), false);
+
+	// A run that opened earlier but closes inside the week is still not a pick:
+	// it did not start this week either.
+	assert.equal(
+		isTopPick(
+			{
+				score: 9,
+				datetime_iso: "2026-08-01T10:00:00",
+				datetime_end_iso: "2026-09-10T17:00:00",
+			},
+			...week,
+		),
+		false,
+	);
+
+	// A single occasion with no end date qualifies on its start alone.
+	assert.equal(
+		isTopPick({ score: 8, datetime_iso: "2026-09-09T19:00:00" }, ...week),
+		true,
+	);
+
+	// A festival that both opens and closes inside the week is exactly what
+	// picks are for.
+	assert.equal(
+		isTopPick(
+			{
+				score: 7,
+				datetime_iso: "2026-09-08T19:00:00",
+				datetime_end_iso: "2026-09-12T22:00:00",
+			},
+			...week,
+		),
+		true,
+	);
+
+	// The score bar still applies, and an undated event can never be a pick.
+	assert.equal(
+		isTopPick({ score: 6, datetime_iso: "2026-09-09T19:00:00" }, ...week),
+		false,
+	);
+	assert.equal(isTopPick({ score: 9 }, ...week), false);
+
+	// With no window known, fall back to the score rather than dropping all.
+	assert.equal(
+		isTopPick({ score: 9, datetime_iso: "2026-09-09T19:00:00" }, "", ""),
+		true,
+	);
 });

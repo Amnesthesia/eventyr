@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Author Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jsivwc@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T130000
+DTEND;TZID=Australia/Brisbane:20260920T150000
+SUMMARY:Author Workshop
+DESCRIPTION:Anne Freeman Stories with spice: Bypass the cringe and bring th
+ e smoulder writing workshop
+LOCATION:Smith's Alternative\, Canberra\, ACT 2601
+URL:https://events.humanitix.com/anne-freeman-stories-with-spice
+END:VEVENT
+END:VCALENDAR

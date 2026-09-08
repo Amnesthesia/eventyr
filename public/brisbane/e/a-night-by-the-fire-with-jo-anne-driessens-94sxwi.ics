@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:A Night by the Fire with Jo-Anne Driessens
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-94sxwi@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T173000
+DTEND;TZID=Australia/Brisbane:20260917T193000
+SUMMARY:A Night by the Fire with Jo-Anne Driessens
+DESCRIPTION:Presented by State Library to coincide with our Through Mununja
+ li eyes exhibition currently on display\, a powerful tribute to Mununjali 
+ photojournalist Wayne Coolwell and his legacy.Join us and enjoy the heat o
+ f the campfire\, while listening to Wayne's friend and colleague\, Jo-Anne
+  Driessens\, share memories of him\, and what his work means for the futur
+ e generations.Come along to listen\, learn\, and share.Light refreshments 
+ will be provided.
+LOCATION:State Library of Queensland\, Stanley Place\, South Bank
+URL:https://www.slq.qld.gov.au/whats-on/night-fire-jo-anne-driessens
+END:VEVENT
+END:VCALENDAR

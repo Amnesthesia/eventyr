@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:River Walk - Botanic Gardens + South Bank
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-lfg3fv@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T173000
+DTEND;TZID=Australia/Brisbane:20260913T193000
+SUMMARY:River Walk - Botanic Gardens + South Bank
+DESCRIPTION:**Event details:** After having some success with this event in
+  winter\, now booking in some summer walks ... with the heat of Brisbane s
+ ummer\, will be holding these walks i
+LOCATION:City Botanic Gardens\, 147 Alice Street\, CBD\, Brisbane\, Brisban
+ e
+URL:https://www.meetup.com/brisbane-ramblers/events/316125494/
+END:VEVENT
+END:VCALENDAR

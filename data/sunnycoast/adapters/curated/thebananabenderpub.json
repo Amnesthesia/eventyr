@@ -1,0 +1,33 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "thebananabenderpub",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "FAMILY KARAOKE",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Banana Bender Pub",
+      "link": "http://39936025.hs-sites.com/2026-family-karaoke",
+      "cost": "FREE EVENT",
+      "source": "Banana Bender Pub, Palmview",
+      "description": "If you’ve been hunting for family karaoke on the coast that doesn’t take itself too seriously, you’ve found it. Beer Garden Belters is your monthly excuse to grab the fam, a mic, butcher a classic, or absolutely nail it - all in the laid-back chaos of the Banana Bender beer garden. Kids, parents, mates… everyone’s welcome",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "karaoke",
+        "family",
+        "music",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

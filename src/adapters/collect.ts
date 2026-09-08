@@ -44,6 +44,7 @@ import {
 } from "./normalise.ts";
 import { createPageAdapter } from "./pageAdapter.ts";
 import { loadSourceRegistry } from "./registry.ts";
+import { closeRenderBrowser, renderFetch } from "./render.ts";
 import { runAdapter } from "./runner.ts";
 import type { PageExtractFn, SourceDefinition } from "./types.ts";
 
@@ -76,12 +77,29 @@ const WINDOW_TO = toISODate(new Date(sunday.getTime() + 7 * 86_400_000));
  * (safe, but it re-searches everything), and a stale one from last week is
  * ignored outright.
  */
-function writeBarren(names: string[]): void {
+/**
+ * `names` is the contract barrenSourceNames() reads, so it stays a bare list.
+ * `reasons` is additive, and exists because the bare list could not tell a
+ * refused fetch from a venue with nothing on: a 403 challenge page, a rotted
+ * URL, an annotation crash and a quiet week all wrote the same single line.
+ * Diagnosis had to re-run the scrape to learn which it was.
+ */
+function writeBarren(names: string[], reasons: Map<string, string>): void {
 	const path = barrenSourcesPath(CITY);
 	mkdirSync(dirname(path), { recursive: true });
 	writeFileSync(
 		path,
-		JSON.stringify({ week_start: toISODate(monday), names }, null, 2),
+		JSON.stringify(
+			{
+				week_start: toISODate(monday),
+				names,
+				reasons: Object.fromEntries(
+					names.map((n) => [n, reasons.get(n) ?? "no reason recorded"]),
+				),
+			},
+			null,
+			2,
+		),
 		"utf-8",
 	);
 }
@@ -143,7 +161,13 @@ async function collectSource(
 	fetcher: SourceFetcher,
 	annotate: ReturnType<typeof createGeminiAnnotator>,
 	extractPage: PageExtractFn,
-): Promise<{ kept: number; stats: PrepareStats; suspect: boolean }> {
+): Promise<{
+	kept: number;
+	stats: PrepareStats;
+	suspect: boolean;
+	/** Why nothing was kept. Only meaningful when kept === 0. */
+	reason: string;
+}> {
 	const outPath = curatedPath(CITY, "adapters", source.id);
 	if (alreadyCollected(outPath)) {
 		// Report what the existing file holds, not zero: returning 0 here
@@ -164,6 +188,7 @@ async function collectSource(
 				kept: existing,
 			},
 			suspect: false,
+			reason: "already collected this week",
 		};
 	}
 
@@ -316,7 +341,18 @@ async function collectSource(
 		);
 	}
 	for (const err of result.errors) console.error(`      ! ${err}`);
-	return { kept: events.length, stats, suspect };
+	// Why this source produced nothing, in the order that matters: a refusal or
+	// crash outranks an empty page, because they need opposite remedies.
+	const reason = result.errors.length
+		? result.errors.join("; ")
+		: result.listingsFetched === 0
+			? "no listing pages fetched"
+			: archiveLike
+				? `all ${stats.past} event(s) on the page have already happened — listing URL is probably an archive`
+				: extractedNothing
+					? `fetched ${result.listingsFetched} page(s), extracted nothing — extraction problem, not an empty listing`
+					: `${stats.total} found, none inside the window`;
+	return { kept: events.length, stats, suspect, reason };
 }
 
 async function main(): Promise<void> {
@@ -331,11 +367,26 @@ async function main(): Promise<void> {
 	}
 	console.log(`→ ${sources.length} scraper source(s)`);
 
-	// One shared fetcher for the whole run: its robots cache, per-host
+	// One shared fetcher for the whole run: its per-host
 	// interval and concurrency caps are instance state, so a per-source
 	// instance would make the rate limiting meaningless for sources that
 	// share a host.
 	const fetcher = new SourceFetcher();
+	/**
+	 * Sources whose events only exist after JavaScript runs, fetched through a
+	 * real browser. Separate instance so the browser path cannot inherit the
+	 * conditional-GET behaviour that assumes a plain HTTP body, but with the
+	 * same per-host politeness. Created lazily: most runs have no render
+	 * sources at all and should never launch a browser.
+	 */
+	let renderFetcher: SourceFetcher | undefined;
+	const fetcherFor = (source: SourceDefinition): SourceFetcher => {
+		if (source.strategy !== "render") return fetcher;
+		if (!renderFetcher) {
+			renderFetcher = new SourceFetcher({ fetchImpl: renderFetch });
+		}
+		return renderFetcher;
+	};
 	// Retry-on-empty stays ON here: these are listing pages already verified to
 	// yield events, so an empty result means a dropped call, not a quiet week.
 	// The cache means pages the probe just extracted cost nothing.
@@ -349,21 +400,23 @@ async function main(): Promise<void> {
 	const totals = { found: 0, past: 0, later: 0, undated: 0 };
 	const suspects: string[] = [];
 	const barren: string[] = [];
+	const barrenReasons = new Map<string, string>();
 	// Sources run concurrently. They are independent, and the per-host rate
 	// limiting lives in the shared SourceFetcher rather than in this loop, so
 	// serialising here bought nothing but wall-clock: 23 sources took as long
 	// as the slowest 23 pages end to end.
 	await mapWithConcurrency(sources, SOURCE_CONCURRENCY, async (source) => {
 		try {
-			const { kept, stats, suspect } = await collectSource(
+			const { kept, stats, suspect, reason } = await collectSource(
 				source,
-				fetcher,
+				fetcherFor(source),
 				annotate,
 				extractPage,
 			);
 			if (kept === 0) {
 				barren.push(source.name);
-				writeBarren(barren);
+				barrenReasons.set(source.name, reason);
+				writeBarren(barren, barrenReasons);
 			}
 			if (suspect) suspects.push(source.id);
 			total += kept;
@@ -373,7 +426,8 @@ async function main(): Promise<void> {
 			totals.undated += stats.noDate;
 		} catch (err) {
 			barren.push(source.name);
-			writeBarren(barren);
+			barrenReasons.set(source.name, (err as Error).message);
+			writeBarren(barren, barrenReasons);
 			// runAdapter already isolates per-source failures; this catches the
 			// rest (annotation blowup, unwritable path) so one bad source can't
 			// end the run.
@@ -382,7 +436,9 @@ async function main(): Promise<void> {
 	});
 	// Anything that produced nothing goes back to the AI search this run, so a
 	// rotted listing URL degrades to search coverage instead of no coverage.
-	writeBarren(barren);
+	// One browser for the whole run, so it closes once — not per source.
+	await closeRenderBrowser();
+	writeBarren(barren, barrenReasons);
 	if (barren.length > 0) {
 		console.log(
 			`⚠ ${barren.length} scraper source(s) returned nothing — AI search will cover them: ${barren.join(", ")}`,

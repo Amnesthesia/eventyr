@@ -1,0 +1,33 @@
+{
+  "city_key": "byron",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "drillhalltheatre",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "MUM – A STORY",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Drill Hall Theatre Company",
+      "link": "https://drillhalltheatre.org.au/mum-a-story/",
+      "cost": "See link",
+      "source": "Drill Hall Theatre Company",
+      "description": "This is a fundraiser for the premiere production of Stephen Edgar’s \"The Eldershaw Chronicles\" adapted for the stage and directed by Gregory Aitken designed by Sunita Bailey (When The Rain Stops Falling).",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "fundraiser",
+        "drama",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

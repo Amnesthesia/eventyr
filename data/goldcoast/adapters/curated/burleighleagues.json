@@ -1,0 +1,54 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "burleighleagues",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Members Draw",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Burleigh Leagues Club",
+      "link": "https://burleighleagues.com.au/events/members-draw/",
+      "cost": "See link",
+      "source": "Burleigh Leagues Club",
+      "description": "Join us every Wednesday night for your chance to win BIG! Our members draw jackpot starts at $5,000 and increases by $100 every week. PLUS a guaranteed $250 cash consolation prize if the jackpot is not won.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "raffle",
+        "members",
+        "cash"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Surf and Turf Raffles",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Burleigh Leagues Club",
+      "link": "https://burleighleagues.com.au/events/surf-and-turf-raffles/",
+      "cost": "See link",
+      "source": "Burleigh Leagues Club",
+      "description": "Don't miss our Surf & Turf Raffles! Every Thursday Night, you'll have a chance to win a share of 30 fantastic prizes. Tickets on Sale from 5:30pm | Drawn at 7pm PRIZES 10 Meat Trays 8 x Roast Trays 6 x Super Meat Trays 3 x Tasman Super Seafood Vouchers $100 3 x Tasman Seafood Vouchers $50 PLUS, PICK A BOX! Jackpot Starts at $100 and increases each week by $100 until won!",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "raffle",
+        "prizes",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

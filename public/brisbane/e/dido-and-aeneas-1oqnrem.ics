@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dido and Aeneas
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1oqnrem@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T203000
+SUMMARY:Dido and Aeneas
+DESCRIPTION:Join us as Lumens Chamber Choir brings Henry Purcell's Dido and
+  Aeneas to life on the stage. With soloists Beth Allen\, Zachary Vella\, C
+ assie Barnett and A
+LOCATION:St Peters Performing Arts Centre\, 66 Harts Rd.\, Indooroopilly 40
+ 68\, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-baroque-and-chamber-music-meetup-group/
+ events/316453382/
+END:VEVENT
+END:VCALENDAR

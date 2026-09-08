@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sold out : Suzanne Vega | Flying With Angels Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1psl6qh@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T193000
+DTEND;TZID=Australia/Brisbane:20260913T213000
+SUMMARY:Sold out : Suzanne Vega | Flying With Angels Tour
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/suzanne-vega-flying-with-angels-to
+ ur/
+END:VEVENT
+END:VCALENDAR

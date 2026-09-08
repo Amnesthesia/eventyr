@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Julian Lage
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-kiy9z@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T200000
+DTEND;TZID=Australia/Brisbane:20260918T220000
+SUMMARY:Julian Lage
+DESCRIPTION:Julian Lage tours Australia for the first time\, continuing cel
+ ebrations of his breakthrough solo album from 2015\, 'World's Fair'.
+LOCATION:Byron Theatre
+URL:https://www.byroncentre.com.au/theatre-events/julian-lage
+END:VEVENT
+END:VCALENDAR

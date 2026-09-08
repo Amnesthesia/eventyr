@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Folk'N'Shanty Night with The Salty Sirens & Súnas
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ne3d0y@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T200000
+DTEND;TZID=Australia/Brisbane:20260919T220000
+SUMMARY:Folk'N'Shanty Night with The Salty Sirens & Súnas
+DESCRIPTION:A night of sea shanties and Celtic folk with The Salty Sirens a
+ nd Súnas.
+LOCATION:Banshees Bar & Artspace
+URL:https://bansheesbar.com.au/event/folknshanty-night
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Logan Community Printmakers | Intermediate
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1eq0rgl@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T100000
+DTEND;TZID=Australia/Brisbane:20260916T120000
+SUMMARY:Logan Community Printmakers | Intermediate
+DESCRIPTION:Step into the creative buzz of the Logan Community Printmakers 
+ (LCP)\, a thriving group of passionate artists who make full use of Logan 
+ Art Gallery’s impressive printing press. This workshop invites experienc
+ ed printmakers to learn\, experiment and refine their practice in a suppor
+ tive\, skill‑rich environment.
+LOCATION:Art Gallery
+URL:https://www.loganarts.com.au/event/logan-community-printmakers-intermed
+ iate-3/
+END:VEVENT
+END:VCALENDAR

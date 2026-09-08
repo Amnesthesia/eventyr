@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SUNDAY BRUNSDAY
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-14jnby@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T160000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:SUNDAY BRUNSDAY
+DESCRIPTION:Join us every Sunday for an unforgettable afternoon of live mus
+ ic\, delicious food\, great vibes and company. Showcasing amazing talent w
+ ith some of the best live music around. Admission is free\, so bring your 
+ friends and family for an enjoyable experience for all involved. The perfe
+ ct Sunday Session View Gig Guide
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/sundays-brunsday/2026-09-13/
+END:VEVENT
+END:VCALENDAR

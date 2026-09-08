@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday catch up
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jfn7gi@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T163000
+DTEND;TZID=Australia/Brisbane:20260913T180000
+SUMMARY:Sunday catch up
+DESCRIPTION:We'll be at Comuna Cantina\, Creek Street\, Brisbane from aroun
+ d 4:30pm as soon as the Bach concert at St Stephen's finishes. Feel free t
+ o drop in for a drin
+LOCATION:Comuna Cantina\, 12 Creek St\, Brisbane City QLD 4000\, Australia\
+ , Brisbane City\, Brisbane City
+URL:https://www.meetup.com/brisbane-baroque-and-chamber-music-meetup-group/
+ events/316438996/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Are You Lonesome Tonight Brisbane Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1gshagz@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T140000
+DTEND;TZID=Australia/Brisbane:20260910T160000
+SUMMARY:Are You Lonesome Tonight Brisbane Festival
+DESCRIPTION:A unique celebration of country music and opera\, featuring ari
+ as and songs by Puccini\, Verdi\, Slim Dusty\, Troy Cassar-Daly\, Dolly Pa
+ rton and more. A cast of young Australian singers are set to perform with 
+ soaring harmonies\, masterful musicianship and an irresistible energy. Ret
+ urning for a third
+LOCATION:The Spiegeltent\, Brisbane\, QL
+URL:https://allevents.in/brisbane/are-you-lonesome-tonight-brisbane-festiva
+ l/200030664186718
+END:VEVENT
+END:VCALENDAR

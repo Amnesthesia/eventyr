@@ -1,0 +1,76 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "aggregators",
+  "source_id": "localsintheloop",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "SALSA NIGHT",
+      "datetime": "Fri 18 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-18T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Locals in the Loop",
+      "link": "https://localsintheloop.com.au/listing/salsa-night/",
+      "cost": "See link",
+      "source": "Locals in the Loop",
+      "description": "TWO CUBANS COME TOGETHER TO BRING YOU THE BEST OF CUBAN SALSA!",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "salsa",
+        "dance",
+        "cuban"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Iré a Mi Salsa – Salsa Classes | Beginner & Intermediate",
+      "datetime": "Thu 10 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-10T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Locals in the Loop",
+      "link": "https://localsintheloop.com.au/listing/ire-a-mi-salsa-salsa-classes-beginner-intermediate/",
+      "cost": "See link",
+      "source": "Locals in the Loop",
+      "description": "Get moving, meet new people and learn the art of authentic Cuban salsa",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "salsa",
+        "dance",
+        "beginner"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "SUNSET ROOFTOP PARTY",
+      "datetime": "Fri 11 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-11T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Locals in the Loop",
+      "link": "https://localsintheloop.com.au/listing/sunset-rooftop-party/",
+      "cost": "See link",
+      "source": "Locals in the Loop",
+      "description": "Get ready for an unforgettable SUNSET at ARTE ROOFTOP MAROOCHYDORE with the best Groove, Disco, House & Tech music. Friday September 11th A sunset with wine and cocktails, brought to life by 6 Sunshine Coast DJs playing the best Groove, Disco, House & Tech music for the perfect sunset vibe.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "house",
+        "disco",
+        "rooftop"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

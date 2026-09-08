@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Silky Roads
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dhox6x@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T200000
+DTEND;TZID=Australia/Brisbane:20260919T220000
+SUMMARY:Silky Roads
+DESCRIPTION:Get ready to groove with Silky Roads\, the Sydney-based electro
+ -funk-pop sensation that's been turning heads and moving feet. This high-e
+ nergy quart...
+LOCATION:Felons Brewing Co
+URL:https://felonsbrewingco.com.au/blogs/whats-on/silky-roads
+END:VEVENT
+END:VCALENDAR

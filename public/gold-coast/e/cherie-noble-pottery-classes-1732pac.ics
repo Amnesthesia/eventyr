@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Cherie Noble Pottery Classes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1732pac@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T093000
+DTEND;TZID=Australia/Brisbane:20260909T123000
+SUMMARY:Cherie Noble Pottery Classes
+DESCRIPTION:She teaches all aspects of ceramics including wheel\, hand buil
+ ding\, sculpture and surface decoration.
+LOCATION:Mudgeeraba Studio
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+END:VCALENDAR

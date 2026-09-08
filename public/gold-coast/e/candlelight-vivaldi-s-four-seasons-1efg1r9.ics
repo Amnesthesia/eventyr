@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight: Vivaldi's Four Seasons
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1efg1r9@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20261129
+SUMMARY:Candlelight: Vivaldi's Four Seasons
+DESCRIPTION:Bond University is hosting this Candlelight: Vivaldi
+LOCATION:Bond University
+URL:https://feverup.com/m/636873
+END:VEVENT
+END:VCALENDAR

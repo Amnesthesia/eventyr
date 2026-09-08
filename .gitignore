@@ -23,3 +23,7 @@ data/_probe/
 # Rejected scrape candidates, kept for diagnosing a bad yield
 data/*/adapters/rejected/
 
+# Playwright MCP scratch output (snapshots, console logs) from probing a page
+# by hand
+.playwright-mcp/
+

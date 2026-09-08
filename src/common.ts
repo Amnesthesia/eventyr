@@ -3,6 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import yaml from "js-yaml";
+import { isSameSite, normaliseHost } from "./shared.ts";
 import { sourceEarnsPlace, type YieldLedger } from "./sourceYield.ts";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -31,6 +32,7 @@ export {
 	eventSlug,
 	isLikelyImageUrl,
 	isSameSite,
+	isTopPick,
 	KEY_TO_SLUG,
 	LOW_SCORE_THRESHOLD,
 	meetsScoreFloor,
@@ -133,7 +135,7 @@ export interface SourceEntry {
 	 * so this never switches behaviour. Only the two values the adapter can
 	 * actually produce are allowed.
 	 */
-	strategy?: "jsonld" | "html";
+	strategy?: "jsonld" | "html" | "render";
 	venue?: {
 		name?: string | null;
 		address?: string | null;
@@ -242,10 +244,44 @@ export function llmSourceStrings(
 		? barrenSourceNames(cityKey, toISODate(getWeekRange().monday))
 		: new Set<string>();
 	const ledger = cityKey ? loadYieldLedger(cityKey) : null;
+
+	/**
+	 * Sites already covered by a scraper that produced events this week.
+	 *
+	 * Needed because the same source is sometimes listed twice under domain
+	 * variants — discover-sources adds `eventfinda.com.au` beside an existing
+	 * `brisbane.eventfinda.com.au`, `humanitix.com` beside
+	 * `events.humanitix.com` — with one entry promoted to scraper and its twin
+	 * left on `llm`. Promotion then removes only the entry it touched, so the
+	 * twin kept naming an already-scraped site in the search prompts: search
+	 * budget spent to rediscover events we hold exact data for, and duplicate
+	 * candidates for dedupe to reconcile.
+	 *
+	 * Matched on site as well as name, since the whole problem is that the two
+	 * entries disagree about the domain. A barren scraper is deliberately not
+	 * counted — that is exactly when the search should cover for it.
+	 */
+	const covered = scraperSources(cfg)
+		.filter(({ entry }) => !(barren === null || barren.has(entry.name)))
+		.flatMap(({ entry }) => [
+			entry.name,
+			...(entry.domains ?? []).map((d) => normaliseHost(d) ?? ""),
+		])
+		.filter(Boolean);
+	const alreadyScraped = (e: SourceEntry): boolean =>
+		covered.some(
+			(c) =>
+				c === e.name ||
+				(e.domains ?? []).some((d) => {
+					const host = normaliseHost(d);
+					return host ? isSameSite(host, c) : false;
+				}),
+		);
+
 	return entries
 		.filter((e) =>
 			e.method === "llm"
-				? sourceEarnsPlace(e, ledger)
+				? sourceEarnsPlace(e, ledger) && !alreadyScraped(e)
 				: barren === null || barren.has(e.name),
 		)
 		.map((e) => (e.domains?.[0] ? `${e.name} (${e.domains[0]})` : e.name));

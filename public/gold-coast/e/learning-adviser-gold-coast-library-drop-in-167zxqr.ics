@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Learning Adviser Gold Coast Library Drop-in
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-167zxqr@dothings
+DTSTART;TZID=Australia/Brisbane:20260907T120000
+DTEND;TZID=Australia/Brisbane:20260907T140000
+SUMMARY:Learning Adviser Gold Coast Library Drop-in
+DESCRIPTION:Need quick advice on an assessment\, referencing\, study skills
+ \, or understanding feedback? Drop in and chat with a Learning Adviser
+LOCATION:Gold Coast
+URL:https://www.scu.edu.au/current-students/learning-zone/gc-learning-advis
+ er-drop-in-t4-gc/
+END:VEVENT
+END:VCALENDAR

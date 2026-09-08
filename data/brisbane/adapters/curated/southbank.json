@@ -305,8 +305,8 @@
     },
     {
       "title": "Brisbane's Biggest Steak Frites",
-      "datetime": "Tue 8 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-08T17:00:00",
+      "datetime": "Wed 9 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-09T17:00:00",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/brisbanes-biggest-steak-frites",
@@ -316,11 +316,11 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
+        "food",
         "steak",
-        "dining",
-        "food"
+        "dining"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false

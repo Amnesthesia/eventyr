@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Sessions
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-7y3azk@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T133000
+DTEND;TZID=Australia/Brisbane:20260920T170000
+SUMMARY:Sunday Sessions
+DESCRIPTION:Slow Sundays done properly. Think bowls in the sun\, live local
+  music\, the smell of BBQ in the air \, and a drink in hand while the afte
+ rnoon rolls on. Bring the crew\, claim a spot\, and settle into the rhythm
+  of a Sunday well spent. Feeling hungry? Level up the afternoon with a Fla
+ vours Experience Platter and keep the good times going. Every Sunday: Live
+  local music Social bowls BBQ and great food Good people\, good vibes Bowl
+ s. Beats. BBQ. Your Sunday sorted.
+LOCATION:Gold Coast Bowls and Community Club
+URL:https://gclawnbowls.com.au/event/sunday-sessions/2026-09-20/
+END:VEVENT
+END:VCALENDAR

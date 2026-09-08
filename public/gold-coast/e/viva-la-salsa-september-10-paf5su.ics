@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:VIVA LA SALSA - September 10
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-paf5su@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T173000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:VIVA LA SALSA - September 10
+DESCRIPTION:Get ready to dance the night away at Viva La Salsa \, Hola Mark
+ etta's free monthly salsa social. Whether you're stepping onto the dance f
+ loor for the first time or looking to refine your moves\, everyone is welc
+ ome. Kick off the evening with a free Advanced Salsa lesson at 5:30pm \, f
+ ollowed by a free Beginners lesson at 6:30pm . From 7pm \, the dance floor
+  comes alive with social dancing\, great music and an unbeatable atmospher
+ e. Make a night of it with Miami Marketta's famous street food\, fully sto
+ cked bars and vibrant laneway vibes. Grab your friends\, bring your dancin
+ g shoes and join us for an evening of Latin rhythms\, good company and ple
+ nty of fun. Schedule 💃 Advanced Lesson: 5:30pm 🕺 Beginners Lesson: 6
+ :30pm 🎶 Social Dancing: From 7:00pm Free entry. Everyone is welcome.
+LOCATION:Miami Marketta - Cargo Stage
+URL:https://www.miamimarketta.com/ticketed-events/viva-la-salsa-sept10
+END:VEVENT
+END:VCALENDAR

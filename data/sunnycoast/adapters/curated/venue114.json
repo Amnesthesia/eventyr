@@ -1,0 +1,33 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "venue114",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "ICN QLD Sunshine Coast Coastal Championships",
+      "datetime": "Sat 19 Sep, 8:45 AM",
+      "datetime_iso": "2026-09-19T08:45:00",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Venue 114, Bokarina",
+      "link": "https://venue114.com.au/events/icn-qld-sunshine-coast-coastal-championships",
+      "cost": "See link",
+      "source": "Venue 114, Bokarina",
+      "description": "The ICN QLD – Sunshine Coast Coastal Championships 2026 brings the ICN QLD stage to one of Australia’s most iconic coastal destinations for an exciting day of natural fitness, modelling and bodybuilding competition.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "fitness",
+        "bodybuilding",
+        "competition",
+        "sports"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

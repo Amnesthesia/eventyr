@@ -7,26 +7,26 @@
   "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Are You Lonesome Tonight - Opera Queensland",
-      "datetime": "Wed 9 Sep – Sat 12 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "2026-09-12",
+      "title": "The Wisdom Within: A Course for Exploring Life's Big Questions",
+      "datetime": "Mon 14 Sep – Thu 17 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "2026-09-17",
       "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/are-you-lonesome-tonight-opera-queensland/",
+      "link": "https://www.weekendnotes.com/the-wisdom-within-a-course-for-exploring-lifes-big-questions/",
       "cost": "See link",
       "source": "WeekendNotes Brisbane",
       "description": "",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Workshop / Class",
       "tags": [
-        "opera",
-        "music",
-        "performance"
+        "philosophy",
+        "course",
+        "learning"
       ],
       "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
     },
     {
       "title": "Bravehearts Day",
@@ -51,26 +51,26 @@
       "creative": false
     },
     {
-      "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
-      "datetime": "Sat 12 Sep 2026 – Sun 18 Apr 2027",
+      "title": "Mary Valley Rattler presents the Wizard Express",
+      "datetime": "Sat 12 Sep",
       "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "2027-04-18",
+      "datetime_end_iso": "",
       "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/make-believe-magic-the-worlds-of-the-jim-henson-company-331233/",
+      "link": "https://www.weekendnotes.com/mary-valley-rattler-presents-the-wizard-express/",
       "cost": "See link",
       "source": "WeekendNotes Brisbane",
       "description": "",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Community / Other",
       "tags": [
-        "exhibition",
-        "design",
-        "film"
+        "train",
+        "family",
+        "experience"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
       "title": "RocKwiz Rocks Brisbane",
@@ -95,25 +95,25 @@
       "creative": true
     },
     {
-      "title": "Mary Valley Rattler presents the Wizard Express",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "title": "Bush Kindy - Kirra and Coco",
+      "datetime": "Tue 15 Sep",
+      "datetime_iso": "2026-09-15",
       "datetime_end_iso": "",
       "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/mary-valley-rattler-presents-the-wizard-express/",
+      "link": "https://www.weekendnotes.com/bush-kindy-kirra-and-coco-335226/",
       "cost": "See link",
       "source": "WeekendNotes Brisbane",
       "description": "",
       "image": "",
-      "category": "Community / Other",
+      "category": "Workshop / Class",
       "tags": [
-        "train",
-        "family",
-        "experience"
+        "nature",
+        "kids",
+        "learning"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": false
     },
     {
@@ -139,26 +139,49 @@
       "creative": true
     },
     {
-      "title": "RSPCA Cupcake Day",
-      "datetime": "Thu 17 Sep",
+      "title": "Crafty Party at Museum of Brisbane",
+      "datetime": "Thu 17 Sep – Thu 12 Nov",
       "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
+      "datetime_end_iso": "2026-11-12",
       "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/rspca-cupcake-day-335366/",
+      "link": "https://www.weekendnotes.com/crafty-party-at-museum-of-brisbane/",
       "cost": "See link",
       "source": "WeekendNotes Brisbane",
       "description": "",
       "image": "",
-      "category": "Community / Other",
+      "category": "Workshop / Class",
       "tags": [
-        "charity",
-        "baking",
+        "craft",
+        "art",
         "social"
       ],
       "social": true,
       "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Jim Henson's Labyrinth in Concert",
+      "datetime": "Sat 19 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-09-20",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/jim-hensons-labyrinth-in-concert-335602/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "film",
+        "music",
+        "fantasy",
+        "orchestra"
+      ],
+      "social": false,
+      "intellectual": false,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "VietJet Redcliffe KiteFest - FREE Entry",
@@ -183,65 +206,43 @@
       "creative": false
     },
     {
-      "title": "Brisbane Portrait Prize Finalists Exhibition 2026",
-      "datetime": "Sat 19 Sep – Sun 8 Nov",
+      "title": "Spring School Holidays at Bankfoot House",
+      "datetime": "Sat 19 Sep – Sat 3 Oct",
       "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "2026-11-08",
+      "datetime_end_iso": "2026-10-03",
       "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/brisbane-portrait-prize-finalists-exhibition-2026/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "art",
-        "exhibition",
-        "portrait"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "The Wisdom Within: A Course for Exploring Life's Big Questions",
-      "datetime": "Mon 14 Sep – Thu 17 Sep",
-      "datetime_iso": "2026-09-14",
-      "datetime_end_iso": "2026-09-17",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/the-wisdom-within-a-course-for-exploring-lifes-big-questions/",
+      "link": "https://www.weekendnotes.com/spring-school-holidays-at-bankfoot-house/",
       "cost": "See link",
       "source": "WeekendNotes Brisbane",
       "description": "",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "philosophy",
-        "course",
+        "kids",
+        "holiday",
         "learning"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": true,
       "creative": false
     },
     {
-      "title": "Queensland Theatre Company: Strong Is The New Pretty",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
+      "title": "Are You Lonesome Tonight - Opera Queensland",
+      "datetime": "Wed 9 Sep – Sat 12 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "2026-09-12",
       "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/queensland-theatre-company-strong-is-the-new-pretty-334766/",
+      "link": "https://www.weekendnotes.com/are-you-lonesome-tonight-opera-queensland/",
       "cost": "See link",
       "source": "WeekendNotes Brisbane",
       "description": "",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Concert / Music",
       "tags": [
-        "theatre",
-        "performance",
-        "drama"
+        "opera",
+        "music",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -271,6 +272,139 @@
       "creative": true
     },
     {
+      "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
+      "datetime": "Sat 12 Sep 2026 – Sun 18 Apr 2027",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "2027-04-18",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/make-believe-magic-the-worlds-of-the-jim-henson-company-331233/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "exhibition",
+        "design",
+        "film"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Brisbane Portrait Prize Finalists Exhibition 2026",
+      "datetime": "Sat 19 Sep – Sun 8 Nov",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-11-08",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/brisbane-portrait-prize-finalists-exhibition-2026/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "portrait"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "FLAME BBQ & Music Festival",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/flame-bbq-music-festival-335610/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "bbq",
+        "music",
+        "festival",
+        "outdoor"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "This Show is a Joke! - Brisbane Festival",
+      "datetime": "Sun 20 Sep – Sat 26 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "2026-09-26",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/this-show-is-a-joke-brisbane-festival/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance",
+        "festival"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Brisbane's Big Italian Party Is Back: Festitalia Returns This September",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/brisbanes-big-italian-party-is-back-festitalia-returns-this-september/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "italian",
+        "festival",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "A Fair Day Out",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/a-fair-day-out-335224/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "festival",
+        "community",
+        "inclusive"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Mac Fair 2026",
       "datetime": "Sat 12 Sep",
       "datetime_iso": "2026-09-12",
@@ -286,6 +420,28 @@
         "market",
         "fair",
         "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Urban Cocktail Trail | Brisbane (QLD)",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/urban-cocktail-trail-brisbane-qld-335225/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "cocktails",
+        "social",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -313,6 +469,28 @@
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "RSPCA Cupcake Day",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/rspca-cupcake-day-335366/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "charity",
+        "baking",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     },
     {
       "title": "Toowoomba Carnival of Flowers 2026",
@@ -359,6 +537,29 @@
       "creative": false
     },
     {
+      "title": "Redcliffe Kitefest",
+      "datetime": "Sat 19 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-09-20",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/redcliffe-kitefest-335611/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "family",
+        "outdoor",
+        "festival",
+        "kites"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Secret Garden in September",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
@@ -381,268 +582,26 @@
       "creative": false
     },
     {
-      "title": "Brisbane's Big Italian Party Is Back: Festitalia Returns This September",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
+      "title": "The Wisdom Within: A Course for Exploring Life's Big Questions",
+      "datetime": "Mon 14 Sep – Thu 17 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "2026-09-17",
       "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/brisbanes-big-italian-party-is-back-festitalia-returns-this-september/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "italian",
-        "festival",
-        "culture"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Urban Cocktail Trail | Brisbane (QLD)",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/urban-cocktail-trail-brisbane-qld-335225/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "cocktails",
-        "social",
-        "drinks"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "A Fair Day Out",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/a-fair-day-out-335224/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "festival",
-        "community",
-        "inclusive"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Bush Kindy - Kirra and Coco",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/bush-kindy-kirra-and-coco-335226/",
+      "link": "https://www.weekendnotes.com/the-wisdom-within-a-course-for-exploring-lifes-big-questions/",
       "cost": "See link",
       "source": "WeekendNotes Brisbane",
       "description": "",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "nature",
-        "kids",
-        "learning"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": false
-    },
-    {
-      "title": "Crafty Party at Museum of Brisbane",
-      "datetime": "Thu 17 Sep – Thu 12 Nov",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "2026-11-12",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/crafty-party-at-museum-of-brisbane/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "craft",
-        "art",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Spring School Holidays at Bankfoot House",
-      "datetime": "Sat 19 Sep – Sat 3 Oct",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "2026-10-03",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/spring-school-holidays-at-bankfoot-house/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "kids",
-        "holiday",
+        "philosophy",
+        "course",
         "learning"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": true,
       "creative": false
-    },
-    {
-      "title": "This Show is a Joke! - Brisbane Festival",
-      "datetime": "Sun 20 Sep – Sat 26 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "2026-09-26",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/this-show-is-a-joke-brisbane-festival/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "comedy",
-        "performance",
-        "festival"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Big Love Festival 2026, Sunshine Coast",
-      "datetime": "Fri 11 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-09-13",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/big-love-festival-2026-sunshine-coast/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "festival",
-        "music",
-        "outdoor"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Brisbane's Big Italian Party Is Back: Festitalia Returns This September",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/brisbanes-big-italian-party-is-back-festitalia-returns-this-september/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "italian",
-        "festival",
-        "culture"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "RocKwiz Rocks Brisbane",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/rockwiz-rocks-brisbane/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "quiz",
-        "performance"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Urban Cocktail Trail | Brisbane (QLD)",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/urban-cocktail-trail-brisbane-qld-335225/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "cocktails",
-        "social",
-        "drinks"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Queensland Theatre Company: Strong Is The New Pretty",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/queensland-theatre-company-strong-is-the-new-pretty-334766/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "performance",
-        "drama"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
     },
     {
       "title": "Bravehearts Day",
@@ -689,25 +648,25 @@
       "creative": false
     },
     {
-      "title": "The Wisdom Within: A Course for Exploring Life's Big Questions",
-      "datetime": "Mon 14 Sep – Thu 17 Sep",
-      "datetime_iso": "2026-09-14",
-      "datetime_end_iso": "2026-09-17",
+      "title": "Urban Cocktail Trail | Brisbane (QLD)",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
       "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/the-wisdom-within-a-course-for-exploring-lifes-big-questions/",
+      "link": "https://www.weekendnotes.com/urban-cocktail-trail-brisbane-qld-335225/",
       "cost": "See link",
       "source": "WeekendNotes Brisbane",
       "description": "",
       "image": "",
-      "category": "Workshop / Class",
+      "category": "Social / Meetup",
       "tags": [
-        "philosophy",
-        "course",
-        "learning"
+        "cocktails",
+        "social",
+        "drinks"
       ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": true,
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
       "creative": false
     },
     {
@@ -731,6 +690,28 @@
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "Brisbane's Big Italian Party Is Back: Festitalia Returns This September",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/brisbanes-big-italian-party-is-back-festitalia-returns-this-september/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "italian",
+        "festival",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     },
     {
       "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
@@ -777,6 +758,50 @@
       "creative": false
     },
     {
+      "title": "Big Love Festival 2026, Sunshine Coast",
+      "datetime": "Fri 11 Sep – Sun 13 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-13",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/big-love-festival-2026-sunshine-coast/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "festival",
+        "music",
+        "outdoor"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "RocKwiz Rocks Brisbane",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "WeekendNotes Brisbane",
+      "link": "https://www.weekendnotes.com/rockwiz-rocks-brisbane/",
+      "cost": "See link",
+      "source": "WeekendNotes Brisbane",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "quiz",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "A Fair Day Out",
       "datetime": "Sat 12 Sep",
       "datetime_iso": "2026-09-12",
@@ -792,28 +817,6 @@
         "festival",
         "community",
         "inclusive"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Brisbane's Big Italian Party Is Back: Festitalia Returns This September",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
-      "location": "WeekendNotes Brisbane",
-      "link": "https://www.weekendnotes.com/brisbanes-big-italian-party-is-back-festitalia-returns-this-september/",
-      "cost": "See link",
-      "source": "WeekendNotes Brisbane",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "italian",
-        "festival",
-        "culture"
       ],
       "social": true,
       "intellectual": false,

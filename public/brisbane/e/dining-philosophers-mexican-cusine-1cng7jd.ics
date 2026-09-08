@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:🍽Dining Philosophers @ Mexican Cusine🍷
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1cng7jd@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T183000
+DTEND;TZID=Australia/Brisbane:20260918T200000
+SUMMARY:🍽Dining Philosophers @ Mexican Cusine🍷
+DESCRIPTION:***What is the good life?*** Dine with the Wise at the [El Tori
+ to](https://eltoritomexican.com.au/) restaurant. Join us for deep conversa
+ tion answering thought-provoking
+LOCATION:El Torito.\, 146 Boundary St\, West End.\, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-social-geeks/events/316086702/
+END:VEVENT
+END:VCALENDAR

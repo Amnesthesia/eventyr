@@ -129,8 +129,8 @@
       "image": "https://eatstreetnorthshore.com.au/wp-content/uploads/erin-shay-5-e1766136626486.jpg",
       "category": "Concert / Music",
       "tags": [
-        "live music",
         "band",
+        "live music",
         "performance"
       ],
       "social": false,
@@ -151,8 +151,8 @@
       "image": "https://eatstreetnorthshore.com.au/wp-content/uploads/crescent-city-main-stage.jpg",
       "category": "Concert / Music",
       "tags": [
-        "live music",
         "jazz",
+        "live music",
         "performance"
       ],
       "social": false,
@@ -239,9 +239,9 @@
       "image": "https://eatstreetnorthshore.com.au/wp-content/uploads/Aria-Cook-Promo-2026-2.jpg",
       "category": "Concert / Music",
       "tags": [
-        "live music",
         "singer",
-        "performance"
+        "live music",
+        "acoustic"
       ],
       "social": false,
       "intellectual": false,
@@ -261,8 +261,8 @@
       "image": "https://eatstreetnorthshore.com.au/wp-content/uploads/aaron-west-7-e1772400155347.jpg",
       "category": "Concert / Music",
       "tags": [
-        "live music",
         "singer",
+        "live music",
         "performance"
       ],
       "social": false,
@@ -283,9 +283,9 @@
       "image": "https://eatstreetnorthshore.com.au/wp-content/uploads/Jerome-6.jpg",
       "category": "Concert / Music",
       "tags": [
+        "singer",
         "live music",
-        "performance",
-        "singer"
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -305,11 +305,231 @@
       "image": "https://eatstreetnorthshore.com.au/wp-content/uploads/Aaron-West-10.jpg",
       "category": "Concert / Music",
       "tags": [
+        "band",
+        "live music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Mojo Dollz",
+      "datetime": "Fri 11 Sep, 5:15 PM",
+      "datetime_iso": "2026-09-11T17:15:00",
+      "datetime_end_iso": "2026-09-11T19:15:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/mojo-dollz-2",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/mojo-dollz-main-stage-5-1.jpg?fit=1365%2C1365&quality=89&ssl=1",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "entertainment",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Erin Shay Band",
+      "datetime": "Fri 11 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-11T20:00:00",
+      "datetime_end_iso": "2026-09-11T21:45:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/erin-shay-band",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/erin-shay-5-e1766136626486.jpg?fit=480%2C621&quality=89&ssl=1",
+      "category": "Concert / Music",
+      "tags": [
         "live music",
         "band",
         "performance"
       ],
-      "social": false,
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Crescent City Players",
+      "datetime": "Sat 12 Sep, 5:15 PM",
+      "datetime_iso": "2026-09-12T17:15:00",
+      "datetime_end_iso": "2026-09-12T19:15:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/crescent-city-players",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/crescent-city-main-stage.jpg?fit=1536%2C1536&quality=89&ssl=1",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "jazz",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "GEED UP &#8220;The Worst Show Ever&#8221;",
+      "datetime": "Sat 12 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-12T20:00:00",
+      "datetime_end_iso": "2026-09-12T21:45:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/geed-up-the-worst-show-ever-4",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/geed-up-10.jpg?fit=480%2C480&quality=89&ssl=1",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "performance",
+        "entertainment"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Aaron West",
+      "datetime": "Sun 13 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-13T17:00:00",
+      "datetime_end_iso": "2026-09-13T18:45:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/aaron-west-2",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/aaron-west-7-e1772400155347.jpg?fit=480%2C514&quality=89&ssl=1",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "singer",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "DJ FigJam",
+      "datetime": "Fri 11 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-11T17:30:00",
+      "datetime_end_iso": "2026-09-11T21:30:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/dj-figjam-3",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/dj-figjam-opensky-1.jpg?fit=480%2C480&quality=89&ssl=1",
+      "category": "Concert / Music",
+      "tags": [
+        "dj",
+        "music",
+        "party"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Isla Grande Spanish Guitars",
+      "datetime": "Fri 11 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-11T17:30:00",
+      "datetime_end_iso": "2026-09-11T19:30:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/isla-grande-spanish-guitars",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/Isla-Grande-Spanish-Duo-scaled.jpg?fit=1920%2C2560&quality=89&ssl=1",
+      "category": "Concert / Music",
+      "tags": [
+        "guitar",
+        "live music",
+        "acoustic"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Electro Swiggety",
+      "datetime": "Fri 11 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-11T18:00:00",
+      "datetime_end_iso": "2026-09-11T21:00:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/electro-swiggety",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/Electro-Swiggety-3.jpg?fit=1536%2C1536&quality=89&ssl=1",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "performance",
+        "entertainment"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Eat Street&#8217;s PANDAmonium",
+      "datetime": "Fri 11 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-11T18:00:00",
+      "datetime_end_iso": "2026-09-11T21:00:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/eat-streets-pandamonium-8",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/Panda-Bears-W-Kid.jpg?fit=480%2C480&quality=89&ssl=1",
+      "category": "Community / Other",
+      "tags": [
+        "family",
+        "entertainment",
+        "event"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "DJ FigJam",
+      "datetime": "Sat 12 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-12T17:30:00",
+      "datetime_end_iso": "2026-09-12T21:30:00",
+      "location": "Eat Street Northshore, 221D Macarthur Avenue",
+      "link": "https://eatstreetnorthshore.com.au/event/dj-figjam-4",
+      "cost": "See link",
+      "source": "Eat Street Northshore",
+      "description": "",
+      "image": "https://i0.wp.com/eatstreetnorthshore.com.au/wp-content/uploads/dj-figjam-1-1.jpg?fit=480%2C480&quality=89&ssl=1",
+      "category": "Concert / Music",
+      "tags": [
+        "dj",
+        "music",
+        "party"
+      ],
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true

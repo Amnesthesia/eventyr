@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Port Fairy Literary Weekend
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ve9euk@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Port Fairy Literary Weekend
+DESCRIPTION:Join Frogsong author Melissa Manning and Blue Giant author Jord
+ an Prosser at Port Fairy Literary Weekend this September.
+LOCATION:Reardon Theatre\, Port Fairy VIC\, Australia
+URL:https://www.uqp.com.au/events/port-fairy-literary-weekend
+END:VEVENT
+END:VCALENDAR

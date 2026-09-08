@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Brewery Full Day Tour with Lunch
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-118q167@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20270308
+SUMMARY:Brisbane Brewery Full Day Tour with Lunch
+DESCRIPTION:Brisbane Brewery Full Day Tour with Lunch in Brisbane. Get your
+  tickets on Fever now!
+LOCATION:The Prince Consort Hotel
+URL:https://feverup.com/m/178007
+END:VEVENT
+END:VCALENDAR

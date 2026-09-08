@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LIFE DRAWING SESSIONS - SEPTEMBER 16
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-oytauu@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T183000
+DTEND;TZID=Australia/Brisbane:20260916T203000
+SUMMARY:LIFE DRAWING SESSIONS - SEPTEMBER 16
+DESCRIPTION:Join us for a curated evening of Life Drawing with Live Music i
+ n Studio 56 at the Miami Marketta. At Life Drawing Sessions our focus is n
+ ot on the outcome of your drawing\, rather it is about the process of givi
+ ng into the act of creating with music and muse. This event embraces peopl
+ e of all drawing levels from novice to maestro.
+LOCATION:Miami Marketta
+URL:https://www.miamimarketta.com/ticketed-events/life-drawing-sep16
+END:VEVENT
+END:VCALENDAR

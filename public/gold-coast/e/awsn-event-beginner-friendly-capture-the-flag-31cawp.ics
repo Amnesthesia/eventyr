@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:AWSN Event: Beginner friendly capture the flag
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-31cawp@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T084500
+DTEND;TZID=Australia/Brisbane:20260912T160000
+SUMMARY:AWSN Event: Beginner friendly capture the flag
+DESCRIPTION:Facilitated by Margeaux Prince and Paula Sillars\, this hands-o
+ n\, beginner-friendly workshop is designed to help you build confidence an
+ d learn the fundamentals of CTF in a supportive and inclusive environment.
+  When: Sat 12 Sept\, 8:45AM Where: Cohort Innovation Space Learn more here
+LOCATION:Cohort Innovation Space\, 16 Nexus Way
+URL:https://cohortspace.com.au/event/awsn-event-beginner-friendly-capture-t
+ he-flag/
+END:VEVENT
+END:VCALENDAR

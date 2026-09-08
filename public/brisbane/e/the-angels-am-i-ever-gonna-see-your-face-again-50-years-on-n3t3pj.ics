@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Angels 'AM I EVER GONNA SEE YOUR FACE AGAIN... 50 YEARS ON
+ '
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-n3t3pj@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T210000
+SUMMARY:The Angels 'AM I EVER GONNA SEE YOUR FACE AGAIN... 50 YEARS ON'
+DESCRIPTION:Find The Angels 'AM I EVER GONNA SEE YOUR FACE AGAIN... 50 YEAR
+ S ON' tickets at www.thetriffid.com.au | Videos\, biography\, tour dates\,
+  performance times. VIP packages available.
+LOCATION:The Triffid Fortitude Valley
+URL:https://thetriffid.com.au/all-events/the-angels-tickets-ae1404883
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Porsche Owen Pottery Classes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-exptmq@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T180000
+DTEND;TZID=Australia/Brisbane:20260914T210000
+SUMMARY:Porsche Owen Pottery Classes
+DESCRIPTION:Porsche often sets a project for each term yet enables the flex
+ ibility for students to decide if they wish to join in or focus on a proje
+ ct of their own imagination.
+LOCATION:Benowa and Mudgeeraba Studios
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+END:VCALENDAR

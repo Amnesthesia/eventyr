@@ -9,8 +9,9 @@
 // llmExtract.ts for the "never invent, null if absent" contract that keeps
 // this consistent with "adapters never guess".
 //
-// Order is strictly cheapest-first: JSON-LD, then embedded hydration JSON
-// (embeddedJson.ts), then the LLM over reduced page text.
+// Order is strictly cheapest-first: a site's own event feed/API (feeds.ts),
+// then JSON-LD, then embedded hydration JSON (embeddedJson.ts), then the LLM
+// over reduced page text.
 //
 // A source with real structured data (JSON-LD on every page) never touches
 // the LLM path at all — this only falls through to it per-listing, so one
@@ -25,6 +26,8 @@ import {
 	findEventNodes,
 	jsonLdNodeToRawFields,
 } from "./extract.ts";
+import { parseFeed } from "./feeds.ts";
+import { blockedReason } from "./fetch.ts";
 import { stripToReadableText } from "./readableText.ts";
 import type {
 	CandidateEvent,
@@ -68,6 +71,37 @@ export function createPageAdapter(
 			if (!raw.bodyPath) return [];
 			const body = readFileSync(raw.bodyPath, "utf-8");
 			const referenceDate = now();
+
+			// "Nothing there" and "we were refused" need different remedies, so
+			// a blocked response throws rather than returning zero events. The
+			// throw is caught per-listing by runAdapter and reported against
+			// this URL; returning [] instead put a 403 challenge page and a
+			// genuinely quiet venue into barren.json as identical bare names.
+			const blocked = blockedReason(
+				raw.status,
+				body,
+				stripToReadableText(body, raw.url).length,
+			);
+			if (blocked) throw new Error(blocked);
+
+			// A site's own event API, when a listing URL points at one. Recognised
+			// by response shape rather than by URL or content-type, so a feed
+			// served as text/html still parses and a URL that merely looks like
+			// an API cannot fake its way in.
+			//
+			// Note the empty case is deliberately NOT a fall-through: a feed that
+			// answered with nothing is a verified negative, and continuing down
+			// the ladder would spend an LLM call re-reading a JSON body as prose.
+			const feed = parseFeed(body, raw.url);
+			if (feed) {
+				return feed.events.map((fields) =>
+					toCandidateEvent(
+						fields,
+						provenanceFor(source, raw, "feed"),
+						referenceDate,
+					),
+				);
+			}
 
 			const jsonLdNodes = findEventNodes(extractJsonLdBlocks(body));
 			if (jsonLdNodes.length > 0) {

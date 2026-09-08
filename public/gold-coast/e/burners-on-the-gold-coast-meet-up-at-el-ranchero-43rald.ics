@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BURNERS ON THE GOLD COAST - Meet Up at EL RANCHERO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-43rald@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:BURNERS ON THE GOLD COAST - Meet Up at EL RANCHERO
+DESCRIPTION:So many new faces in this group since Modifyre\, and honestly t
+ he number of people who came up to me saying they'd love to connect down h
+ ere was too many to ignore. So let's do it. This is our first meet-up. Lim
+ ited capacity. For more information & tickets hit the below Book Now butto
+ n.
+LOCATION:Mo's Desert Clubhouse (El Ranchero)
+URL:https://www.mosdesertclubhouse.com/events/burners-on-the-gold-coast-mee
+ t-up-at-el-ranchero
+END:VEVENT
+END:VCALENDAR

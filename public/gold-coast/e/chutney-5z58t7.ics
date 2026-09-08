@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:CHUTNEY
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-5z58t7@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T180000
+DTEND;TZID=Australia/Brisbane:20260919T220000
+SUMMARY:CHUTNEY
+DESCRIPTION:"Beloved Gold Coast five-piece Chutney are dusting off their in
+ struments and returning to the stage for a massive night of indie rock at 
+ Miami Marketta on Saturday\, September 19th. After spending a little too l
+ ong away from the stage\, the boys are back and ready to make some noise i
+ n one of the Gold Coast’s favourite live music rooms. Joining us for the
+  night are local legends Tomorrow’s Forecast and Mermaid Waters\, with o
+ ne more very special support act still to be announced! Expect loud guitar
+ s\, questionable behaviour\, cold beers and a healthy serving of condiment
+  rock."
+LOCATION:Miami Marketta (18+)
+URL:https://www.miamimarketta.com/ticketed-events/chutney2026
+END:VEVENT
+END:VCALENDAR

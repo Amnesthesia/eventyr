@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Night at The Parkland - Aloe Blacc
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-14imxa6@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:Night at The Parkland - Aloe Blacc
+DESCRIPTION:InformationApproximate Running Times - Gates: 6:00pm Birren: 6:
+ 20pm WILSN: 7.00pm Main Act: 8:00pm Grammy-nominated Aloe Blacc is a globa
+ l powerhouse whose music uplifts and unites. From hits like Wake Me Up\, T
+ he Man\, and I Need A Dollar to his mission-driven album Stand Together\, 
+ Aloe delivers soul
+LOCATION:Roma Street Parkland\, Brisbane\, QL
+URL:https://allevents.in/brisbane/night-at-the-parkland-aloe-blacc/21000463
+ 3839244
+END:VEVENT
+END:VCALENDAR

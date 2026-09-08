@@ -167,3 +167,54 @@ test("the same venue written two ways still merges without asking", () => {
 	assert.equal(settled.length, 1);
 	assert.equal(candidates.length, 0);
 });
+
+test("a cross-midnight twin with no event link is merged away", () => {
+	// Measured case: "The Silence Paradox" appeared twice at Caxton Street
+	// Brewing Company on consecutive days — once from a scrape with a real
+	// /e/... listing URL, once from a search summary whose only link was
+	// eventbrite.com.au and whose date was a day out.
+	//
+	// It could never merge before: the ±1-day window gathered the pair, stage 1
+	// requires equal dates, and the classifier prompt is told different dates
+	// mean different events. So the two stages left a hole between them.
+	const scraped = {
+		title: "The Silence Paradox: What AI Is Teaching Us About Being Human",
+		datetime_iso: "2026-09-09T18:30:00",
+		location: "Caxton Street Brewing Company, Milton",
+		link: "https://www.eventbrite.com/e/the-silence-paradox-tickets-123",
+	};
+	const summary = {
+		title: "The Silence Paradox: What AI Is Teaching Us About Being Human",
+		datetime_iso: "2026-09-08T19:00:00",
+		location: "Caxton Street Brewing Company, Petrie Terrace",
+		link: "https://www.eventbrite.com.au",
+	};
+	const { settled } = planDedupe([scraped, summary]);
+	assert.equal(
+		settled.length,
+		1,
+		"the pair is settled without asking the model",
+	);
+
+	// The record with a real listing URL is the one kept.
+	assert.ok(completeness(scraped) > completeness(summary));
+});
+
+test("a real two-night run is never merged by that rule", () => {
+	// Both nights carry their own listing URL, so neither is a guess and the
+	// exception does not apply — deleting a real event is unrecoverable.
+	const friday = {
+		title: "Hamlet",
+		datetime_iso: "2026-09-11T19:30:00",
+		location: "La Boite Theatre",
+		link: "https://laboite.com.au/hamlet/fri",
+	};
+	const saturday = {
+		title: "Hamlet",
+		datetime_iso: "2026-09-12T19:30:00",
+		location: "La Boite Theatre",
+		link: "https://laboite.com.au/hamlet/sat",
+	};
+	const { settled } = planDedupe([friday, saturday]);
+	assert.equal(settled.length, 0, "consecutive nights stay separate events");
+});

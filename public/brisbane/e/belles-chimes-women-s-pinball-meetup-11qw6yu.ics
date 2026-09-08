@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Belles & Chimes Women’s Pinball Meetup
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-11qw6yu@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T180000
+DTEND;TZID=Australia/Brisbane:20260915T210000
+SUMMARY:Belles & Chimes Women’s Pinball Meetup
+DESCRIPTION:Join us on a Tuesday evening from 6pm for Belles and Chimes wom
+ en’s pinball meetup in the Netherworld! Belles and Chimes (www.bellesand
+ chimespinball.com) is a group of meetups established in 2013 that happens 
+ around the world to provide a casual\, inclusive space to learn and play p
+ inball with like minded folks. There’s no strict format – all you need
+  to do is meet up\, grab a drink and play! It will happen monthly on Tuesd
+ ays throughout the year. It’s free to join in and is open to women and n
+ on-binary persons of all skills levels.
+LOCATION:Netherworld\, 186 Brunswick Street
+URL:https://www.netherworldarcade.com/event/belles-chimes-womens-pinball-me
+ etup-2/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "tallesurfclub",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Live Music",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Tallebudgera Surf Club",
+      "link": "https://tallesurfclub.com/event/live-music/",
+      "cost": "See link",
+      "source": "Tallebudgera Surf Club",
+      "description": "Dine and drink in the wonderful ambience created by some of the Gold Coast’s best local talent.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "local",
+        "entertainment"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

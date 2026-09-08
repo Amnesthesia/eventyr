@@ -1,0 +1,32 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "gccec",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Australasian Majors",
+      "datetime": "Fri 18 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Gold Coast Convention and Exhibition Centre",
+      "link": "https://www.gccec.com.au/event/australasian-majors/",
+      "cost": "See link",
+      "source": "Gold Coast Convention and Exhibition Centre",
+      "description": "The biggest Trans-Tasman Cheerleading Showdown All the Best Teams will be there!! Be crowned the true Australasian Champions at this epic two day championship! This event offers the biggest and best production of any event company with the most awards and bids! You will not find a better experience anywhere!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "cheerleading",
+        "competition",
+        "sports"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Author Talk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15cz7zs@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Author Talk
+DESCRIPTION:What’s On Meet the Author: Gillian Wills Step into the world 
+ of Gillian Wills’ novel Big Music\, a thrilling blend of melody\, mayhem
+ \, and mystery set in a college for rock and classical musicians.
+LOCATION:Wynnum Library\, Wynnum\, QLD
+URL:https://thecommunityleader.com.au/events/meet-the-author-gillian-wills/
+END:VEVENT
+END:VCALENDAR

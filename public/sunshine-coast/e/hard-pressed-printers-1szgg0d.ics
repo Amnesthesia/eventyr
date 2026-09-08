@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hard Pressed Printers
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1szgg0d@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T130000
+DTEND;TZID=Australia/Brisbane:20260909T160000
+SUMMARY:Hard Pressed Printers
+DESCRIPTION:
+LOCATION:Caloundra Arts Centre Association\, 5 North Street
+URL:https://caloundraartscentre.org.au/event/hard-pressed-printers/2026-09-
+ 09/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:KARAOKE
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-nssunl@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T183000
+DTEND;TZID=Australia/Brisbane:20260919T203000
+SUMMARY:KARAOKE
+DESCRIPTION:
+LOCATION:Nerang Community Bowls Club\, Cayuga Street Nerang QLD 4211
+URL:https://nerangbowls.com.au/
+END:VEVENT
+END:VCALENDAR

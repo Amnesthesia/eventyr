@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Superb seminar coming up next week
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ikxyxc@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T193000
+DTEND;TZID=Australia/Brisbane:20260915T213000
+SUMMARY:Superb seminar coming up next week
+DESCRIPTION:Join us next Tuesday evening\, 7.30pm for our next seminar at T
+ he Gap State High School Library. Our guest speaker Mr Leo Lee is the curr
+ ent president of Save our Waterways now (SOWN)\, and will talk to us about
+  how to keep the creeks in The Gap healthy and how to...
+LOCATION:The Gap State High School Library\, 57 Paten Road
+URL:https://thegapsustainability.org/superb-seminar-coming-up-next-week/
+END:VEVENT
+END:VCALENDAR

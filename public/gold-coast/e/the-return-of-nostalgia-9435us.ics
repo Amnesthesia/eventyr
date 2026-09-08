@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:THE RETURN OF … NOSTALGIA
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-9435us@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T210000
+DTEND;TZID=Australia/Brisbane:20260915T230000
+SUMMARY:THE RETURN OF … NOSTALGIA
+DESCRIPTION:Bring your singing voice & sing along with us! Together\, we’
+ ll step back in time & revisit some of the most iconic tunes of the 50’s
+ \, 60’s & 70’s. Songs like ‘Delilah’ (Tom Jones)\, ‘Sweet Caroli
+ ne’ (Neil Diamond)\, ‘There Goes My Everything’ (Engelbert Humperdin
+ ck)\, ‘Love Is In The Air’ (John Paul Young)\, ‘Where Do I Begin’ 
+ (Shirley Bassey)\, ‘Alfie’ (Cilla Black)\, ‘The Way We Were’ (Barb
+ ra Streisand). Why not join us… you’ll have a ball!
+LOCATION:The Showroom\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/the-return-of-nostalgia/
+END:VEVENT
+END:VCALENDAR

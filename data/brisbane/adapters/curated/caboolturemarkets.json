@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "caboolturemarkets",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "2026 Caboolture Show",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Caboolture Markets",
+      "link": "https://caboolturemarkets.com.au/caboolture-show/",
+      "cost": "See link",
+      "source": "Caboolture Markets",
+      "description": "Including Triple B Rodeo Series “Winter Showdown”",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "show",
+        "rodeo",
+        "family",
+        "local"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

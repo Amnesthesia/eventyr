@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Run4Rum & Friends vol. III
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1iop1mb@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T170000
+DTEND;TZID=Australia/Brisbane:20260919T190000
+SUMMARY:Run4Rum & Friends vol. III
+DESCRIPTION:RUN4RUM & FRIENDS VOL. IIISabato 19.09.26 Organizzano un Trail 
+ autogestito ad Asolo.📍 Ritrovo ore 8:30 presso il parcheggio del Calzat
+ urificio Scarpa Via Enrico Fermi 1 31011 Asolo (TV).⏱️ La partenza dei
+  percorsi sarà scaglionata come di seguito indicato:* 12 km D+ 390 parten
+ za ore 09:30\;* 20 km D+
+LOCATION:AllEvents.in
+URL:https://allevents.in/asolo/run4rum-and-friends-vol-iii-tickets/80003229
+ 003126?ref=search-event-globe
+END:VEVENT
+END:VCALENDAR

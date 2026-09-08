@@ -1,14 +1,283 @@
 {
   "places": {
+    "130 Seaworld Dr": {
+      "lat": -27.9661458,
+      "lng": 153.4267577,
+      "label": "130 Seaworld Dr, Main Beach QLD 4217, Australia",
+      "country": "AU"
+    },
+    "139-151 Chinderah Bay Dr": {
+      "lat": -28.2388601,
+      "lng": 153.5514607,
+      "label": "139-151 Chinderah Bay Dr, Chinderah NSW 2487, Australia",
+      "country": "AU"
+    },
+    "1509 Gold Coast Hwy": {
+      "lat": -28.0999833,
+      "lng": 153.4619599,
+      "label": "1509 Gold Coast Hwy, Palm Beach QLD 4221, Australia",
+      "country": "AU"
+    },
+    "165 Duringan St, Currumbin QLD 4223, Australia": {
+      "lat": -28.1373325,
+      "lng": 153.4736055,
+      "label": "Currumbin Palm Beach Rsl Club, 165 Duringan St, Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
+    "165 Duringan Street, Currumbin, QLD, Australia, Queensland 4223": {
+      "lat": -28.1373325,
+      "lng": 153.4736055,
+      "label": "Currumbin Palm Beach Rsl Club, 165 Duringan St, Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
+    "18 Coyne St": {
+      "lat": -27.6348328,
+      "lng": 152.7428178,
+      "label": "18 Coyne St, One Mile QLD 4305, Australia",
+      "country": "AU"
+    },
+    "36 Cavill Ave": {
+      "lat": -28.0019992,
+      "lng": 153.4278866,
+      "label": "36 Cavill Ave, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "47 Nerang St": {
+      "lat": -27.96776,
+      "lng": 153.4130214,
+      "label": "47 Nerang St, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "486 Scottsdale Dr": {
+      "lat": -28.1000615,
+      "lng": 153.4059214,
+      "label": "486 Scottsdale Dr, Varsity Lakes QLD 4227, Australia",
+      "country": "AU"
+    },
+    "850 Mount Cotton Rd": {
+      "lat": -27.5947597,
+      "lng": 153.2308021,
+      "label": "850 Mount Cotton Rd, Mount Cotton QLD 4165, Australia",
+      "country": "AU"
+    },
+    "A.B. Paterson College": {
+      "lat": -27.9274375,
+      "lng": 153.3590359,
+      "label": "10 A B Paterson Dr, Arundel QLD 4214, Australia",
+      "country": "AU"
+    },
+    "Anthea Polson Art": {
+      "lat": -27.9782839,
+      "lng": 153.4253063,
+      "label": "29 Tedder Ave, Main Beach QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Art Lift": {
+      "lat": 44.7916225,
+      "lng": 20.4985379,
+      "label": "Ulcinjska 26, Beograd 11000, Serbia",
+      "country": "RS",
+      "foreign": true
+    },
+    "ArtVo, Robina Town Centre": {
+      "lat": -28.0788278,
+      "lng": 153.3862003,
+      "label": "Shop, Between LUSH and Nike Store, Ground Floor/5062 Robina Town Centre Dr, Robina QLD 4226, Australia",
+      "country": "AU"
+    },
+    "Atrium Bar": {
+      "lat": -28.031991,
+      "lng": 153.428593,
+      "label": "The Star Gold Coast, Casino Level, 1 Casino Drive, 1 Casino Dr, Broadbeach QLD 4218, Australia",
+      "country": "AU"
+    },
+    "Aviary": null,
+    "Banana Bender Pub, Palmview · Caloundra + Kawana": {
+      "lat": -26.7502018,
+      "lng": 153.0465505,
+      "label": "1 Downunder Dr, Palmview QLD 4553, Australia",
+      "country": "AU"
+    },
+    "Basement": null,
+    "Benowa": {
+      "lat": -28.0099412,
+      "lng": 153.3910447,
+      "label": "Benowa QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Benowa and Mudgeeraba Studios": {
+      "lat": -28.0099412,
+      "lng": 153.3910447,
+      "label": "Benowa QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Benowa Studio": {
+      "lat": -28.0099412,
+      "lng": 153.3910447,
+      "label": "Benowa QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Benowa Studio, Gold Coast": {
+      "lat": -28.0099412,
+      "lng": 153.3910447,
+      "label": "Benowa QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Blackflag Brewing Coolum": {
+      "lat": -26.5248571,
+      "lng": 153.064887,
+      "label": "10 Lomandra Place, Coolum Beach QLD 4573, Australia",
+      "country": "AU"
+    },
+    "Blackflag Brewing Coolum, Coolum Beach · Coolum + Peregian": {
+      "lat": -26.5248571,
+      "lng": 153.064887,
+      "label": "10 Lomandra Place, Coolum Beach QLD 4573, Australia",
+      "country": "AU"
+    },
+    "Blackflag Brewing Mooloolaba, Mooloolaba · Maroochydore + Mooloolaba": {
+      "lat": -26.6811259,
+      "lng": 153.1199158,
+      "label": "13 Brisbane Rd, Mooloolaba QLD 4557, Australia",
+      "country": "AU"
+    },
+    "Boat Ramp": null,
+    "Bond University": {
+      "lat": -28.0730934,
+      "lng": 153.4166377,
+      "label": "14 University Dr, Robina QLD 4226, Australia",
+      "country": "AU"
+    },
+    "Bowlers Lounge": {
+      "lat": 40.7220583,
+      "lng": -73.9573587,
+      "label": "Bowlers' Lounge, Brooklyn, NY 11249, USA",
+      "country": "US",
+      "foreign": true
+    },
+    "Brisbane": {
+      "lat": -27.4704528,
+      "lng": 153.0260341,
+      "label": "Brisbane QLD, Australia",
+      "country": "AU"
+    },
+    "Broadbeach Cultural Centre (within Broadbeach Cultural Precinct)": {
+      "lat": -28.0357582,
+      "lng": 153.4241168,
+      "label": "61 Sunshine Blvd, Mermaid Waters QLD 4218, Australia",
+      "country": "AU"
+    },
     "Burleigh Heads": {
       "lat": -28.1033061,
       "lng": 153.4235791,
       "label": "Burleigh Heads QLD 4220, Australia"
     },
+    "Burleigh Leagues Club": {
+      "lat": -28.0630416,
+      "lng": 153.4305112,
+      "label": "80 Pacific Ave, Miami QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Burleigh Sports Club": {
+      "lat": -28.0794143,
+      "lng": 153.4318389,
+      "label": "111 Christine Ave, Burleigh Waters QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Byron Bay": {
+      "lat": -28.6421823,
+      "lng": 153.6108065,
+      "label": "Byron Bay NSW 2481, Australia",
+      "country": "AU"
+    },
+    "Cinema 2": {
+      "lat": -34.035248,
+      "lng": 151.1024114,
+      "label": "Cinema 2, Miranda NSW 2228, Australia",
+      "country": "AU"
+    },
+    "City of Gold Coast Libraries": {
+      "lat": -28.0074829,
+      "lng": 153.3446649,
+      "label": "Gold Coast, QLD, Australia",
+      "country": "AU"
+    },
+    "Club Banora Lounge, 2 Leisure Dr, Banora Point NSW 2486, Australia": {
+      "lat": -28.215183,
+      "lng": 153.5374682,
+      "label": "2 Leisure Dr, Banora Point NSW 2486, Australia",
+      "country": "AU"
+    },
+    "Club Broadbeach, 169 Surf Parade": {
+      "lat": -28.0211709,
+      "lng": 153.431654,
+      "label": "169 Surf Parade, Broadbeach QLD 4218, Australia",
+      "country": "AU"
+    },
+    "Club Broadbeach, 169 Surf Parade, Broadbeach, QLD, 4218": {
+      "lat": -28.0211709,
+      "lng": 153.431654,
+      "label": "169 Surf Parade, Broadbeach QLD 4218, Australia",
+      "country": "AU"
+    },
+    "Club Helensvale": {
+      "lat": -27.919836,
+      "lng": 153.3354187,
+      "label": "20-28 Discovery Dr, Helensvale QLD 4212, Australia",
+      "country": "AU"
+    },
+    "Club Musgrave": {
+      "lat": -27.9563074,
+      "lng": 153.3953172,
+      "label": "Musgrave Ave &, Kumbari Ave, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "Coffs Harbour": {
+      "lat": -30.2962013,
+      "lng": 153.1138924,
+      "label": "Coffs Harbour NSW 2450, Australia",
+      "country": "AU"
+    },
+    "Cohort Event Space, 16 Nexus Way": {
+      "lat": -27.962447,
+      "lng": 153.3860959,
+      "label": "16 Nexus Way, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "Cohort Event Space, 16 Nexus Way, Gold Coast, Queensland, 4215": {
+      "lat": -27.9624287,
+      "lng": 153.3860839,
+      "label": "16 Nexus Way, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "Cohort Innovation Space, 16 Nexus Way": {
+      "lat": -27.9624287,
+      "lng": 153.3860839,
+      "label": "16 Nexus Way, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "Comedy Underground": {
+      "lat": -31.9302731,
+      "lng": 115.8928893,
+      "label": "22 Lyric Ln, Maylands WA 6051, Australia",
+      "country": "AU"
+    },
     "Comedy Underground, Gold Coast": {
       "lat": -27.9769248,
       "lng": 153.380936,
       "label": "Gold Coast QLD, Australia"
+    },
+    "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225": {
+      "lat": -28.1669975,
+      "lng": 153.5370176,
+      "label": "61 Marine Parade, Coolangatta QLD 4225, Australia",
+      "country": "AU"
+    },
+    "Coomera": {
+      "lat": -27.846439,
+      "lng": 153.343953,
+      "label": "Coomera QLD, Australia",
+      "country": "AU"
     },
     "Currumbin": {
       "lat": -28.1374671,
@@ -20,25 +289,146 @@
       "lng": 153.4871254,
       "label": "Currumbin Beach, Queensland, Australia"
     },
+    "Currumbin Beach ocean walkway": {
+      "lat": -28.1277268,
+      "lng": 153.4871254,
+      "label": "Currumbin Beach, Queensland, Australia",
+      "country": "AU"
+    },
     "Currumbin Beach, Currumbin": {
       "lat": -28.1277268,
       "lng": 153.4871254,
       "label": "Currumbin Beach, Queensland, Australia"
+    },
+    "Currumbin Beach, Currumbin QLD": {
+      "lat": -28.1277268,
+      "lng": 153.4871254,
+      "label": "Currumbin Beach, Queensland, Australia",
+      "country": "AU"
+    },
+    "Destination Gold Coast": {
+      "lat": -27.9769248,
+      "lng": 153.380936,
+      "label": "Gold Coast QLD, Australia",
+      "country": "AU"
+    },
+    "elsewhere, 23 Cavill Avenue": {
+      "lat": -28.001681,
+      "lng": 153.429232,
+      "label": "23 Cavill Ave, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "elsewhere, 23 Cavill Avenue Surfers Paradise, QLD, 4217 Australia": {
+      "lat": -28.001681,
+      "lng": 153.429232,
+      "label": "23 Cavill Ave, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
     },
     "elsewhere, Surfers Paradise": {
       "lat": -28.001681,
       "lng": 153.429232,
       "label": "23 Cavill Ave, Surfers Paradise QLD 4217, Australia"
     },
+    "Experience Gold Coast / Destination Gold Coast": {
+      "lat": -28.0296368,
+      "lng": 153.4326017,
+      "label": "301N/12 Charles Ave, Broadbeach QLD 4218, Australia",
+      "country": "AU"
+    },
+    "Finn McCool's Gold Coast": {
+      "lat": -28.0016414,
+      "lng": 153.4278493,
+      "label": "39 Cavill Ave, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Frenzy Food Court": {
+      "lat": 17.5623377,
+      "lng": 78.4545862,
+      "label": "Frenzy Food Court, 6-222, Malla Reddy University Rd, Maisammaguda, Bhadurpalle, Hyderabad, Telangana 500100, India",
+      "country": "IN",
+      "foreign": true
+    },
+    "Fringe Pavillion, Currumbin": {
+      "lat": -28.1374671,
+      "lng": 153.4755579,
+      "label": "Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
     "Gallery 8, Southport": {
       "lat": -27.9732322,
       "lng": 153.411086,
       "label": "8 Ferry Rd, Southport QLD 4215, Australia"
     },
+    "Gallery One": {
+      "lat": -34.9767073,
+      "lng": 138.6201684,
+      "label": "1 Torrens St, Mitcham SA 5062, Australia",
+      "country": "AU"
+    },
+    "Gawandii Room @ Ballina Surf Club": {
+      "lat": -28.8679839,
+      "lng": 153.5779979,
+      "label": "Gawandii Beach, East Ballina NSW 2478, Australia",
+      "country": "AU"
+    },
+    "Get Wet Surf School": {
+      "lat": -27.9379102,
+      "lng": 153.4265705,
+      "label": "507 Seaworld Dr, Main Beach QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Gold Coast": {
+      "lat": -27.9769248,
+      "lng": 153.380936,
+      "label": "Gold Coast QLD, Australia",
+      "country": "AU"
+    },
+    "Gold Coast Bowls and Community Club": {
+      "lat": -28.0256335,
+      "lng": 153.4148911,
+      "label": "14 Kalimna Dr, Broadbeach Waters QLD 4218, Australia",
+      "country": "AU"
+    },
+    "Gold Coast Convention and Exhibition Centre": {
+      "lat": -28.0279056,
+      "lng": 153.4285876,
+      "label": "2684-2690 Gold Coast Hwy, Broadbeach QLD 4218, Australia",
+      "country": "AU"
+    },
+    "Gold Coast Little Theatre, Southport": {
+      "lat": -27.971689,
+      "lng": 153.416275,
+      "label": "21A Scarborough St, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
     "Gold Coast Regional Botanic Gardens, Benowa": {
       "lat": -28.008307,
       "lng": 153.385225,
       "label": "Gold Coast Regional Botanic Gardens, 230 Ashmore Rd, Benowa QLD 4217, Australia"
+    },
+    "Gold Coast Tavern": {
+      "lat": -28.000099,
+      "lng": 153.4137185,
+      "label": "150 Bundall Rd, Bundall QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Heroes Gaming, 36 Scarborough Street, SOUTHPORT QLD 4215": {
+      "lat": -27.9707248,
+      "lng": 153.414745,
+      "label": "36 Scarborough St, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "HOTA Cinema 2, Surfers Paradise": {
+      "lat": -28.0014535,
+      "lng": 153.4162592,
+      "label": "135 Bundall Rd, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "HOTA Gallery": {
+      "lat": -28.002499,
+      "lng": 153.4163491,
+      "label": "135 Bundall Rd, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
     },
     "HOTA Gallery, Surfers Paradise": {
       "lat": -28.002499,
@@ -60,6 +450,121 @@
       "lng": 153.4162592,
       "label": "135 Bundall Rd, Surfers Paradise QLD 4217, Australia"
     },
+    "Imperial Hotel Eumundi, Eumundi · Nambour + Hinterland": {
+      "lat": -26.4757402,
+      "lng": 152.9511114,
+      "label": "1 Etheridge St, Eumundi QLD 4562, Australia",
+      "country": "AU"
+    },
+    "Inside Gold Coast What's On": {
+      "lat": -28.1030334,
+      "lng": 153.4267255,
+      "label": "1/15-17 Dover Dr, West Burleigh QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Juniors, Cnr Fraser Dr &, Leisure Dr, Banora Point NSW 2486, Australia": {
+      "lat": -28.2134258,
+      "lng": 153.5227456,
+      "label": "Leisure Dr & Fraser Dr, Banora Point NSW 2486, Australia",
+      "country": "AU"
+    },
+    "Kaktus Bar": {
+      "lat": -27.9551895,
+      "lng": 153.3849623,
+      "label": "Olsen Ave &, Musgrave Ave, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "Kings Beach Tavern, Caloundra · Caloundra + Kawana": {
+      "lat": -26.8007369,
+      "lng": 153.1426623,
+      "label": "43 Burgess St, Kings Beach QLD 4551, Australia",
+      "country": "AU"
+    },
+    "Len Wort Park, Currumbin": {
+      "lat": -28.1367016,
+      "lng": 153.4911812,
+      "label": "Len Wort Park, 29a Teemangum St, Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
+    "Level 1, 36 Scarborough Street, SOUTHPORT QLD 4215": {
+      "lat": -27.9708299,
+      "lng": 153.414862,
+      "label": "Level 1/36 Scarborough St, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "Level 5 · Rooftop Terrace (Indoor Mez Lvl 5)": null,
+    "Level 5 · The Exhibitionist Bar": {
+      "lat": -28.0024981,
+      "lng": 153.4163485,
+      "label": "Level 5/135 Bundall Rd, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Lionel Perry Park": {
+      "lat": -28.0025859,
+      "lng": 153.4251855,
+      "label": "Lionel Perry Park, 52 Peninsular Dr, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "LSODE Campus": {
+      "lat": -23.4419746,
+      "lng": 144.2826695,
+      "label": "Landsborough Hwy, Longreach QLD 4730, Australia",
+      "country": "AU"
+    },
+    "Madocke Beer Brewing Company": {
+      "lat": -27.9769086,
+      "lng": 153.3893277,
+      "label": "286 Southport Nerang Rd, Ashmore QLD 4214, Australia",
+      "country": "AU"
+    },
+    "Maleny RSL, Maleny · Nambour + Hinterland": {
+      "lat": -26.6313202,
+      "lng": 152.960382,
+      "label": "Nambour QLD 4560, Australia",
+      "country": "AU"
+    },
+    "Mapleton Public House, Mapleton · Nambour + Hinterland": {
+      "lat": -26.624369,
+      "lng": 152.8661785,
+      "label": "2 Flaxton Dr, Mapleton QLD 4560, Australia",
+      "country": "AU"
+    },
+    "Mariners Cove": {
+      "lat": -37.917642,
+      "lng": 147.725712,
+      "label": "2-8 Victoria St, Paynesville VIC 3880, Australia",
+      "country": "AU"
+    },
+    "Mermaid Beach Surf Life Saving Club": {
+      "lat": -28.0413306,
+      "lng": 153.4366182,
+      "label": "Mermaid Beach QLD 4218, Australia",
+      "country": "AU"
+    },
+    "Miami Marketta": {
+      "lat": -28.0637849,
+      "lng": 153.4357647,
+      "label": "23 Hillcrest Parade, Miami QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Miami Marketta - Cargo Stage": {
+      "lat": -28.0637849,
+      "lng": 153.4357647,
+      "label": "23 Hillcrest Parade, Miami QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Miami Marketta (18+)": {
+      "lat": -28.0637849,
+      "lng": 153.4357647,
+      "label": "23 Hillcrest Parade, Miami QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Miami Marketta (All Ages)": {
+      "lat": -28.0637849,
+      "lng": 153.4357647,
+      "label": "23 Hillcrest Parade, Miami QLD 4220, Australia",
+      "country": "AU"
+    },
     "Miami Marketta, Gold Coast": {
       "lat": -28.0637849,
       "lng": 153.4357647,
@@ -75,25 +580,203 @@
       "lng": 153.4431843,
       "label": "5/87 W Burleigh Rd, Burleigh Heads QLD 4220, Australia"
     },
+    "Mint Art House, 87 West Burleigh Road": {
+      "lat": -28.0923713,
+      "lng": 153.4431843,
+      "label": "5/87 W Burleigh Rd, Burleigh Heads QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Mo's Desert Clubhouse": {
+      "lat": -28.1074318,
+      "lng": 153.4232599,
+      "label": "6/36 Central Dr, Burleigh Heads QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Mo's Desert Clubhouse (El Ranchero)": {
+      "lat": -28.1074318,
+      "lng": 153.4232599,
+      "label": "6/36 Central Dr, Burleigh Heads QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Mo's Desert Clubhouse, Burleigh": {
+      "lat": -28.1074318,
+      "lng": 153.4232599,
+      "label": "6/36 Central Dr, Burleigh Heads QLD 4220, Australia",
+      "country": "AU"
+    },
     "Mo’s Desert Clubhouse, Burleigh Heads": {
       "lat": -28.1074318,
       "lng": 153.4232599,
       "label": "6/36 Central Dr, Burleigh Heads QLD 4220, Australia"
+    },
+    "Mudgeeraba Studio": {
+      "lat": -28.0905164,
+      "lng": 153.3662878,
+      "label": "Mudgeeraba QLD 4213, Australia",
+      "country": "AU"
+    },
+    "Multiple locations": null,
+    "National Academy of Performing Arts": {
+      "lat": -28.103459,
+      "lng": 153.4298111,
+      "label": "3 Stevenson Ct, Burleigh Heads QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Nerang Community Bowls Club, Cayuga Street Nerang QLD 4211": {
+      "lat": -28.0050891,
+      "lng": 153.3391401,
+      "label": "20 Cayuga St, Nerang QLD 4211, Australia",
+      "country": "AU"
+    },
+    "Nogo Station": null,
+    "Noosa Arts Theatre, Noosaville · Noosa + North": {
+      "lat": -26.3645433,
+      "lng": 152.9676695,
+      "label": "Noosa, QLD, Australia",
+      "country": "AU"
+    },
+    "Northern Rivers": {
+      "lat": -29.2758152,
+      "lng": 153.0147578,
+      "label": "Northern Rivers, NSW, Australia",
+      "country": "AU"
+    },
+    "Palette Restaurant": {
+      "lat": -28.0024603,
+      "lng": 153.4159805,
+      "label": "135 Bundall Rd, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Palm Springs": {
+      "lat": -18.4199628,
+      "lng": 127.8451511,
+      "label": "Duncan Rd, Ord River WA 6770, Australia",
+      "country": "AU"
+    },
+    "Paradise Point Bowls Club": {
+      "lat": -27.8846816,
+      "lng": 153.3893267,
+      "label": "22 Thrush Ave, Paradise Point QLD 4216, Australia",
+      "country": "AU"
+    },
+    "Peregian Beach Hotel, Peregian Beach · Coolum + Peregian": {
+      "lat": -26.4807077,
+      "lng": 153.0952896,
+      "label": "221-229 David Low Way, Peregian Beach QLD 4573, Australia",
+      "country": "AU"
+    },
+    "Peregian Beach Hotel, Peregian Beach · Coolum + Peregian · 3pm": {
+      "lat": -26.4807077,
+      "lng": 153.0952896,
+      "label": "221-229 David Low Way, Peregian Beach QLD 4573, Australia",
+      "country": "AU"
+    },
+    "Peregian Beach Hotel, Peregian Beach · Coolum + Peregian · 5:30pm": {
+      "lat": -26.4807077,
+      "lng": 153.0952896,
+      "label": "221-229 David Low Way, Peregian Beach QLD 4573, Australia",
+      "country": "AU"
+    },
+    "Platinum Nightclub": {
+      "lat": 32.4748857,
+      "lng": -114.753706,
+      "label": "C. 23 2301A, Residencias, 83448 San Luis Río Colorado, Son., Mexico",
+      "country": "MX",
+      "foreign": true
+    },
+    "Prison Island Gold Coast": {
+      "lat": -28.001621,
+      "lng": 153.4288781,
+      "label": "29 Cavill Ave, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Pulse Bar & Nightclub, Maroochydore · Maroochydore + Mooloolaba": {
+      "lat": -26.652485,
+      "lng": 153.092468,
+      "label": "19 Duporth Ave, Maroochydore QLD 4558, Australia",
+      "country": "AU"
+    },
+    "Qantas Founders Museum": {
+      "lat": -23.4395048,
+      "lng": 144.27127,
+      "label": "1 Hudson Fysh Drive, Longreach Airport, Terminal Building, Landsborough Hwy, Longreach QLD 4730, Australia",
+      "country": "AU"
     },
     "Roosevelt Lounge, Broadbeach": {
       "lat": -28.0297012,
       "lng": 153.4314786,
       "label": "F&B 02, 75 Surf Parade, Broadbeach QLD 4218, Australia"
     },
+    "Roughton Park, Kirra": {
+      "lat": -28.167371,
+      "lng": 153.5292286,
+      "label": "Roughton Park, 74 Musgrave St, Coolangatta QLD 4225, Australia",
+      "country": "AU"
+    },
+    "RQ's Tavern Robina": {
+      "lat": -28.0569444,
+      "lng": 153.3944444,
+      "label": "361 State Route 7, Robina QLD 4226, Australia",
+      "country": "AU"
+    },
     "Sculptors Gallery, 173 Ashmore Road, Benowa": {
       "lat": -28.0092584,
       "lng": 153.3946672,
       "label": "Potters & Society of Sculptor, 173 Ashmore Rd, Benowa QLD 4217, Australia"
     },
+    "Sea World": {
+      "lat": -27.9572417,
+      "lng": 153.4255161,
+      "label": "Seaworld Dr, Main Beach QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Seaworld Drive Boatramp": {
+      "lat": -27.9529333,
+      "lng": 153.4268034,
+      "label": "Seaworld Dr, Main Beach QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Seductions": null,
+    "Southern Cross University Gold Coast": {
+      "lat": -28.1686714,
+      "lng": 153.5186189,
+      "label": "Gold Coast Airport, Terminal Dr, Bilinga QLD 4225, Australia",
+      "country": "AU"
+    },
+    "Southport Sharks": {
+      "lat": -27.9556399,
+      "lng": 153.384824,
+      "label": "Corner Olsen and, Musgrave Ave, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "Studio 56 (18+)": {
+      "lat": -37.3096178,
+      "lng": 144.1227387,
+      "label": "Eighteenth St, Hepburn VIC 3461, Australia",
+      "country": "AU"
+    },
     "Studio 8 Currumbin, Currumbin Waters": {
       "lat": -28.141991,
       "lng": 153.4712783,
       "label": "Unit 8/5 Traders Way, Currumbin Waters QLD 4223, Australia"
+    },
+    "Sunshine Beach SLSC, Sunshine Beach · Noosa + North": {
+      "lat": -26.3645433,
+      "lng": 152.9676695,
+      "label": "Noosa, QLD, Australia",
+      "country": "AU"
+    },
+    "SWELL Smalls Gallery, Currumbin": {
+      "lat": -28.1374671,
+      "lng": 153.4755579,
+      "label": "Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
+    "Tallebudgera Surf Club": {
+      "lat": -28.1004107,
+      "lng": 153.4623308,
+      "label": "1505 Gold Coast Hwy, Palm Beach QLD 4221, Australia",
+      "country": "AU"
     },
     "Tedder Avenue, Main Beach": {
       "lat": -27.978847,
@@ -105,11 +788,72 @@
       "lng": 153.380936,
       "label": "Gold Coast QLD, Australia"
     },
+    "The Events Centre": {
+      "lat": -26.8027366,
+      "lng": 153.1305894,
+      "label": "20 Minchinton St, Caloundra QLD 4551, Australia",
+      "country": "AU"
+    },
+    "The Events Centre, Caloundra · Caloundra + Kawana": {
+      "lat": -26.8027366,
+      "lng": 153.1305894,
+      "label": "20 Minchinton St, Caloundra QLD 4551, Australia",
+      "country": "AU"
+    },
+    "The Farm": {
+      "lat": -28.0297929,
+      "lng": 152.5662909,
+      "label": "490 Tunstall Rd, Charlwood QLD 4309, Australia",
+      "country": "AU"
+    },
     "The Grand Hotel, Labrador": {
       "lat": -27.9418695,
       "lng": 153.4083404,
       "label": "360 Marine Parade, Labrador QLD 4215, Australia"
     },
+    "The J, Noosa Junction · Noosa + North": {
+      "lat": -26.396301,
+      "lng": 153.088391,
+      "label": "60 Noosa Dr, Noosa Heads QLD 4567, Australia",
+      "country": "AU"
+    },
+    "The Nook, Cooroy · Noosa + North": {
+      "lat": -26.3645433,
+      "lng": 152.9676695,
+      "label": "Noosa, QLD, Australia",
+      "country": "AU"
+    },
+    "The Presynct, Nambour · Nambour + Hinterland": {
+      "lat": -26.6263727,
+      "lng": 152.9606348,
+      "label": "15 Ann St, Nambour QLD 4560, Australia",
+      "country": "AU"
+    },
+    "The Savvy Squire, Mooloolaba · Maroochydore + Mooloolaba": {
+      "lat": -26.6837499,
+      "lng": 153.1227915,
+      "label": "123 Parkyn Parade, Mooloolaba QLD 4557, Australia",
+      "country": "AU"
+    },
+    "The Shed at Banana Bender Pub, Palmview · Caloundra + Kawana": {
+      "lat": -26.7504966,
+      "lng": 153.0465138,
+      "label": "73 Frizzo Rd, Palmview QLD 4553, Australia",
+      "country": "AU"
+    },
+    "The Showroom, 2 Wharf st, Tweed Heads, NSW 2486": {
+      "lat": -28.1686484,
+      "lng": 153.54442,
+      "label": "2 Wharf St, Tweed Heads West NSW 2485, Australia",
+      "country": "AU"
+    },
+    "The Stage (18+), 2 Wharf st, Tweed Heads, NSW 2486": {
+      "lat": -28.1685927,
+      "lng": 153.5440989,
+      "label": "18/2 Wharf St, Tweed Heads NSW 2485, Australia",
+      "country": "AU"
+    },
+    "The Studio": null,
     "The White Rhino, Surfers Paradise": {
       "lat": -28.0015451,
       "lng": 153.4274789,
@@ -119,6 +863,12 @@
       "lat": -28.148911,
       "lng": 153.4917903,
       "label": "Tugun QLD 4224, Australia"
+    },
+    "Twin Towns, 2 Wharf st, Tweed Heads, NSW 2486": {
+      "lat": -28.1685927,
+      "lng": 153.5440989,
+      "label": "2 Wharf St, Tweed Heads NSW 2485, Australia",
+      "country": "AU"
     },
     "Upper Coomera Library, Upper Coomera": {
       "lat": -27.8689054,
@@ -134,6 +884,48 @@
       "lat": -27.9769248,
       "lng": 153.380936,
       "label": "Gold Coast QLD, Australia"
+    },
+    "Villa Noosa Hotel, Noosaville · Noosa + North": {
+      "lat": -26.3645433,
+      "lng": 152.9676695,
+      "label": "Noosa, QLD, Australia",
+      "country": "AU"
+    },
+    "Wallace Nicoll Park / Currumbin Beach": {
+      "lat": -28.12856,
+      "lng": 153.48544,
+      "label": "Wallace Nicoll Park, Pacific Parade, Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
+    "Wallace Nicoll Park, Currumbin": {
+      "lat": -28.12856,
+      "lng": 153.48544,
+      "label": "Wallace Nicoll Park, Pacific Parade, Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
+    "West Burleigh": {
+      "lat": -28.112159,
+      "lng": 153.441475,
+      "label": "West Burleigh, Burleigh Heads QLD 4220, Australia",
+      "country": "AU"
+    },
+    "What's On Gold Coast, Burleigh Heads": {
+      "lat": -28.1033061,
+      "lng": 153.4235791,
+      "label": "Burleigh Heads QLD 4220, Australia",
+      "country": "AU"
+    },
+    "What's On Gold Coast, Currumbin": {
+      "lat": -28.1374671,
+      "lng": 153.4755579,
+      "label": "Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
+    "What's On Gold Coast, Surfers Paradise": {
+      "lat": -28.0771715,
+      "lng": 153.3649412,
+      "label": "Swimming Pool, 47 Railway St, Mudgeeraba QLD 4213, Australia",
+      "country": "AU"
     },
     "Willow Vale": {
       "lat": -34.4323433,

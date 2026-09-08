@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Safe Sunday Unplugged
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1xk1z6q@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T120000
+DTEND;TZID=Australia/Brisbane:20260913T180000
+SUMMARY:Safe Sunday Unplugged
+DESCRIPTION:Every Sunday we are welcoming people to BYO instruments or use 
+ the guitar supplied to strum a tune\; sing a song or just jam ….
+LOCATION:Sunshine Brewery
+URL:https://sunshinebrewery.com.au/event/safe-sunday-unplugged-2/
+END:VEVENT
+END:VCALENDAR

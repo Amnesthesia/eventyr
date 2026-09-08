@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:12 th Sept. - Story Bridge Hotel
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-qsc7cs@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T140200
+DTEND;TZID=Australia/Brisbane:20260919T190100
+SUMMARY:12 th Sept. - Story Bridge Hotel
+DESCRIPTION:Come and join us for an afternoon of socializing at the Story B
+ ridge Hotel\, starting at 2 pm (every 1st Saturday of every month). We mee
+ t in the bar next to the 'Step Down'
+LOCATION:The Story Bridge Hotel\, 200 Main Street\, Kangaroo Point\, Brisba
+ ne\, Brisbane
+URL:https://www.meetup.com/brisbane-riverside-walkers-and-social-activities
+ -group/events/315394500/
+END:VEVENT
+END:VCALENDAR

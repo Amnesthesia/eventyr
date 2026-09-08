@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Megan Cope\, Vernon Ah Kee ‘ Dreams Nursed in Darkness ’
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1smmu1u@dothings
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20261116
+SUMMARY:Megan Cope\, Vernon Ah Kee ‘ Dreams Nursed in Darkness ’
+DESCRIPTION:Works by Megan Cope and Vernon Ah Kee are included in the exhib
+ ition Dreams Nursed in Darkness at Hazelhurst Art Centre from September 12
+  to November 15.
+LOCATION:Hazelhurst Arts Centre
+URL:https://milanigallery.com.au/exhibitions/dreams-nursed-in-darkness/
+END:VEVENT
+END:VCALENDAR

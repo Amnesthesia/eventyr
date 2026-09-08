@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Currimundi Lake Twilight Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1duqg82@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T160000
+DTEND;TZID=Australia/Brisbane:20260918T180000
+SUMMARY:Currimundi Lake Twilight Market
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/currimundi-lake-twilight-market-333645/
+END:VEVENT
+END:VCALENDAR

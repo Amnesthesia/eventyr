@@ -1,0 +1,186 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "uqp",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Author Talk with Nikki Mottram at Gatton Library",
+      "datetime": "Wed 9 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-09T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Gatton Library, Lockyer Valley Cultural Centre, 34 Lake Apex Dr, Gatton QLD 4343",
+      "link": "https://www.uqp.com.au/events/author-talk-with-nikki-mottram-at-gatton-library",
+      "cost": "See link",
+      "source": "University of Queensland Press",
+      "description": "Join Toowoomba author Nikki Mottram at the Gatton Library for an in-conversation event with Edwina Shaw about Nikki's upcoming novel Helidon .",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "literature",
+        "books",
+        "author"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Emerging Writers Festival",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "The Wheeler Centre, 176 Little Lonsdale Street, Melbourne, Victoria, 3000",
+      "link": "https://www.uqp.com.au/events/emerging-writers-festival-2",
+      "cost": "See link",
+      "source": "University of Queensland Press",
+      "description": "Join authors including Evelyn Araluen, Penny Tangey, and Maria Takolander at the Emerging Writers Festival.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "literature",
+        "writing",
+        "festival"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "FEAST with Sarah Malik and Siang Lu at Sydney Fringe",
+      "datetime": "Thu 10 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-10T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Hurstville Entertainment Centre, 16 MacMahon Street, Hurstville 2220 (Bediagal Country)",
+      "link": "https://www.uqp.com.au/events/feast-sarah-malik-and-siang-lu-at-sydney-fringe",
+      "cost": "See link",
+      "source": "University of Queensland Press",
+      "description": "Enjoy a homestyle Malaysian dinner by Sarah Tiong (MasterChef Australia) while delighting in food stories from six of Australia’s funniest writers.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "literature",
+        "dinner"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Port Fairy Literary Weekend",
+      "datetime": "Fri 11 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "",
+      "location": "Reardon Theatre, Port Fairy VIC, Australia",
+      "link": "https://www.uqp.com.au/events/port-fairy-literary-weekend",
+      "cost": "See link",
+      "source": "University of Queensland Press",
+      "description": "Join Frogsong author Melissa Manning and Blue Giant author Jordan Prosser at Port Fairy Literary Weekend this September.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "literature",
+        "festival",
+        "books"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Creative Illustration with Simon Howe",
+      "datetime": "Fri 11 Sep, 4:30 PM",
+      "datetime_iso": "2026-09-11T16:30:00",
+      "datetime_end_iso": "",
+      "location": "Stanton Library, 234 Miller Street, North Sydney, NSW 2060",
+      "link": "https://www.uqp.com.au/events/creative-illustration-with-simon-howe",
+      "cost": "See link",
+      "source": "University of Queensland Press",
+      "description": "Get creative in this illustration session with the talented Simon Howe as we celebrate the release of his latest book, Betsy and Bon !",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "illustration",
+        "art",
+        "kids"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "'Helidon' by Nikki Mottram Brisbane Launch",
+      "datetime": "Fri 11 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-11T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Avid Reader Bookshop, 193 Boundary St, West End QLD 4101",
+      "link": "https://www.uqp.com.au/events/helidon-by-nikki-mottram-brisbane-launch",
+      "cost": "See link",
+      "source": "University of Queensland Press",
+      "description": "Join us in Brisbane for the launch of Helidon by Nikki Mottram.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "books",
+        "literature",
+        "launch"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "'Betsy & Bon' by Simon Howe Sydney Launch",
+      "datetime": "Sat 12 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-12T10:30:00",
+      "datetime_end_iso": "",
+      "location": "Upstairs at Gleebooks, 49 Glebe Point Road, Glebe, NSW, 2037",
+      "link": "https://www.uqp.com.au/events/betsy-bon-by-simon-howe-sydney-launch",
+      "cost": "See link",
+      "source": "University of Queensland Press",
+      "description": "Join Simon in sharing his latest book, Betsy and Bon .",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "books",
+        "literature",
+        "launch"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "'Common Places' Adelaide Launch",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Imprints Booksellers, 107 Hindley St, Adelaide SA 5000, Australia",
+      "link": "https://www.uqp.com.au/events/common-places-adelaide-launch",
+      "cost": "See link",
+      "source": "University of Queensland Press",
+      "description": "Join us and Imprints Booksellers for the launch of Gillian Hagenus' suburban gothic story collection, Common Places",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "books",
+        "literature",
+        "launch"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

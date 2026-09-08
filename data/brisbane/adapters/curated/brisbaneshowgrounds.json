@@ -1,0 +1,79 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "brisbaneshowgrounds",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "BBX2026: LEGO Fane Expo",
+      "datetime": "Sat 12 Sep – Sun 13 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "2026-09-13",
+      "location": "Brisbane Showgrounds",
+      "link": "http://www.brisbaneshowgrounds.com.au/whats-on/bbx2026-lego-fane-expo/",
+      "cost": "See link",
+      "source": "Brisbane Showgrounds",
+      "description": "Brought to you by BrisBricks, BBX2026 returns to Brisbane for a weekend celebrating creativity, imagination and the joy of LEGO building.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "lego",
+        "family",
+        "creative",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Sabo Sample Sale",
+      "datetime": "Sat 19 Sep, 8:30 AM",
+      "datetime_iso": "2026-09-19T08:30:00",
+      "datetime_end_iso": "",
+      "location": "Brisbane Showgrounds",
+      "link": "http://www.brisbaneshowgrounds.com.au/whats-on/sabo-sample-sale/",
+      "cost": "See link",
+      "source": "Brisbane Showgrounds",
+      "description": "Join one of SABO’s most anticipated annual community events - the Brisbane Sample Sale. Discover rare, archival and one-of-a-kind SABO pieces, including exclusive samples, past favourites and styles you won’t find anywhere else. A unique opportunity to uncover something special and take home a piece of SABO history.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "fashion",
+        "shopping",
+        "sale",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Festitalia",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "Brisbane Showgrounds",
+      "link": "http://www.brisbaneshowgrounds.com.au/whats-on/festitalia-2026/",
+      "cost": "See link",
+      "source": "Brisbane Showgrounds",
+      "description": "Festitalia returns with a celebration of Italian culture, food, family, and 10,000 Cannoli!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "italian",
+        "culture",
+        "food",
+        "festival"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

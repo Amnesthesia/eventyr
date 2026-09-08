@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Prison Island
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1hrus4x@dothings
+DTSTART;VALUE=DATE:20260812
+DTEND;VALUE=DATE:20261130
+SUMMARY:Prison Island
+DESCRIPTION:Prison Island is an interactive adventure where teams take on 3
+ 9 thrilling challenge cells. Perfect for all ages and group types includin
+ g friends\, families\,...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/prison-island
+END:VEVENT
+END:VCALENDAR

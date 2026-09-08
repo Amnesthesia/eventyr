@@ -1,0 +1,32 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "sidegallery",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Rae Haynes — Ecstatic Threads",
+      "datetime": "Thu 10 Sep – Sat 19 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Side Gallery",
+      "link": "https://sidegallery.com.au/exhibitions/ecstatic-threads",
+      "cost": "See link",
+      "source": "Side Gallery",
+      "description": "Rae Haynes (she/ they) is a contemporary artist and educator who lives and works in Magadjin/ Brisbane, Australia. Rae has exhibited widely in independent spaces and art museums, most recently with projects for Outer Space (2025), The Brisbane Festival (2023), the Wallach Art Gallery, Columbia University, New York (2021), Institute of Modern Art (IMA) (2020), and the Museum of Brisbane (2019). Rae completed a Doctor of Philosophy in Visual Arts (2009) with the support of an Australian Postgraduate Award for research and is a Senior Lecturer (Visual Arts) at QUT.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "contemporary art",
+        "visual arts",
+        "exhibition"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

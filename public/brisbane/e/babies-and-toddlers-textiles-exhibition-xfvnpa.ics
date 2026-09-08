@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Babies and Toddlers : Textiles Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xfvnpa@dothings
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20261001
+SUMMARY:Babies and Toddlers : Textiles Exhibition
+DESCRIPTION:Take a nostalgic journey through the early years of childhood w
+ ith our Babies & Toddlers exhibition. Featuring beautiful garments\, acces
+ sories\, and treasured keepsakes\, this charming display showcases how bab
+ ies and toddlers were cared for\, dressed\, and celebrated across generati
+ ons. A highlight of the exhibition is a beautifully restored baby pram fro
+ m the Museum’s collection\, carefully brought back to life by our dedica
+ ted volunteers. Discover the stories behind these special items\, reminisc
+ e about days gone by\, and share your own memories as you explore this hea
+ rtwarming exhibition.
+LOCATION:Redlands Coast Museum
+URL:https://redlandscoastmuseum.org.au/exhibitions/babies-and-toddlers-text
+ iles-exhibition/
+END:VEVENT
+END:VCALENDAR

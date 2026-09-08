@@ -127,6 +127,26 @@ class DisjointSet {
 	}
 }
 
+/**
+ * Whether an event's link points at the event rather than at a site root.
+ *
+ * A bare domain is the shape a search summary produces when it knows the
+ * venue but not the listing. Note it does NOT mean "low quality" on its own —
+ * 117 of 1588 events legitimately carry a venue homepage because that is all
+ * their listing offered — so this only ever breaks a tie between two records
+ * of the same event.
+ */
+export function hasSpecificLink(event: Record<string, unknown>): boolean {
+	const link = typeof event.link === "string" ? event.link.trim() : "";
+	if (!link) return false;
+	try {
+		const { pathname, search } = new URL(link);
+		return pathname.replace(/\/+$/, "") !== "" || search !== "";
+	} catch {
+		return false;
+	}
+}
+
 /** More complete = more fields a reader actually benefits from. */
 export function completeness(event: Record<string, unknown>): number {
 	const str = (k: string): string =>
@@ -134,7 +154,10 @@ export function completeness(event: Record<string, unknown>): number {
 	let score = 0;
 	if (str("image")) score += 2;
 	if (str("location")) score += 2;
-	if (str("link")) score += 2;
+	// A link to the event itself beats a link to the venue's front door: a
+	// search summary that only knows "it's on at eventbrite.com.au" is a
+	// weaker record than a scrape carrying /e/the-silence-paradox-...
+	if (str("link")) score += hasSpecificLink(event) ? 2 : 1;
 	const description = str("description");
 	if (description) score += 1;
 	if (description.length > 120) score += 1;
@@ -203,12 +226,31 @@ export function planDedupe(events: Record<string, unknown>[]): {
 					}
 					continue;
 				}
-				// Adjacent days are never auto-merged: a genuinely recurring event
-				// runs on consecutive nights with the identical title, and
-				// collapsing those would lose a real event. But a strong title
-				// match across midnight is exactly the all-day/late-night drift
-				// case, so it goes to the model rather than being dropped
-				// silently by the same-day similarity band.
+				// Adjacent days are never auto-merged on title alone: a genuinely
+				// recurring event runs on consecutive nights with the identical
+				// title, and collapsing those would lose a real event.
+				//
+				// One exception, and it cannot lose a real event. When the title
+				// and venue agree and exactly one of the pair has no
+				// event-specific link, that record is a search summary that
+				// guessed the date — not a second night. Merging keeps the record
+				// that has a real listing URL and drops the guess.
+				//
+				// This closes a hole between the two stages. The ±1-day window
+				// exists for midnight drift, but stage 1 requires equal dates and
+				// the classifier prompt is told "different dates ⇒ different
+				// events", so before this a cross-midnight pair could never merge
+				// however identical it was — measured on "The Silence Paradox",
+				// listed twice at the same venue on consecutive days, one record
+				// linking only to eventbrite.com.au.
+				if (
+					sim >= AUTO_MATCH &&
+					venuesAgree(events[i], events[j]) &&
+					hasSpecificLink(events[i]) !== hasSpecificLink(events[j])
+				) {
+					settled.push(i < j ? [i, j] : [j, i]);
+					continue;
+				}
 				if (sim >= MAYBE_MIN) candidates.push(i < j ? [i, j] : [j, i]);
 			}
 		}

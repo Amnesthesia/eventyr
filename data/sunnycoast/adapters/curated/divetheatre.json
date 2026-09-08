@@ -1,0 +1,33 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "divetheatre",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "The Art of Presence: Physical Theatre Workshop",
+      "datetime": "Sun 13 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-13T19:00:00",
+      "datetime_end_iso": "2026-09-13T23:00:00",
+      "location": "Heart of Gold Film Festival",
+      "link": "https://events.humanitix.com/2026heartofgold?occurrence=2026-09-13",
+      "cost": "AUD 15",
+      "source": "DIVE Theatre Collective",
+      "description": "Join us for an immersive journey that combines physicality, creativity, and storytelling to explore the powerful connection between body, mind, and social space. Gain fresh perspectives and experience our innovative approach to transforming complex social issues into beautiful, embodied poetic stories on stage.    This unique creative experience will help you develop body awareness, self-expression, voice, confidence, and acting skills, while strengthening social connections. You’ll be welcomed into the D.I.V.E. Collective’s training space, taking part in the same warm-ups, exercises, and creative routines we use to prepare for our performances.",
+      "image": "https://divetheatre.com/wp-content/uploads/2024/11/240518194444_BJA2684-scaled-e1732011142973.jpg",
+      "category": "Workshop / Class",
+      "tags": [
+        "theatre",
+        "acting",
+        "performance",
+        "creative"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "ipswichciviccentre",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Post Modern Cabaret @ Studio 188",
+      "datetime": "Sat 12 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-12T19:30:00",
+      "datetime_end_iso": "",
+      "location": "Studio 188",
+      "link": "https://www.ipswichciviccentre.com.au/event/post-modern-cabaret-188/",
+      "cost": "See link",
+      "source": "Ipswich Civic Centre",
+      "description": "Modern Meets Vintage at Post Modern Cabaret, a spectacular evening of jazz, swing and reimagined contemporary favourites.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "jazz",
+        "swing",
+        "cabaret",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Grease",
+      "datetime": "Sat 12 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Ipswich Civic Centre",
+      "link": "https://www.ipswichciviccentre.com.au/event/grease-2/",
+      "cost": "See link",
+      "source": "Ipswich Civic Centre",
+      "description": "Whether you're seeing Grease for the first time or returning to relive the nostalgia this feel-good musical guarantees an unforgettable night out.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "musical",
+        "theatre",
+        "nostalgia",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

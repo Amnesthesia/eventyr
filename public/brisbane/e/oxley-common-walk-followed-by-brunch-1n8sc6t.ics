@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Oxley Common walk followed by brunch!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1n8sc6t@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T073000
+DTEND;TZID=Australia/Brisbane:20260920T093000
+SUMMARY:Oxley Common walk followed by brunch!
+DESCRIPTION:Join us for an early morning walk at 'Oxley Common' at 7.30 am 
+ at the 'Oxley Common' walking path. The trail is on Sherwood Road\, Rockle
+ a - past the markets - going towards
+LOCATION:Oxley Common (Oxley Creek Park)\, Sherwood Road\, Rocklea\, Rockle
+ a
+URL:https://www.meetup.com/brisbane-riverside-walkers-and-social-activities
+ -group/events/315837038/
+END:VEVENT
+END:VCALENDAR

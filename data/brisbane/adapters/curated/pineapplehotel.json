@@ -1,0 +1,32 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "pineapplehotel",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Trivia Night",
+      "datetime": "Wed 9 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-09T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Pineapple Hotel",
+      "link": "https://pineapplehotel.com.au/whats-on/trivianight/",
+      "cost": "See link",
+      "source": "Pineapple Hotel",
+      "description": "Every Wednesday in the Garden Bar! Free to entry ! Prizes to be won ! Registration from 6:30pm, trivia starts 7pm. Book now in the top right! https://pineappleh",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

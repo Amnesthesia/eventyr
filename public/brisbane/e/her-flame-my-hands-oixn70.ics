@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:HER FLAME MY HANDS
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-oixn70@dothings
+DTSTART;TZID=Australia/Brisbane:20260901T100000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:HER FLAME MY HANDS
+DESCRIPTION:A daughters journey through grief\, growth and clay
+LOCATION:Vacant Assembly
+URL:https://www.vacantassembly.com/events/her-flame-my-hands-september
+END:VEVENT
+END:VCALENDAR

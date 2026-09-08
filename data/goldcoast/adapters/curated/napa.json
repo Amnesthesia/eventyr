@@ -1,0 +1,33 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "napa",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "BROADWAY KIDS: THE JUNGLE BOOK",
+      "datetime": "Thu 17 Sep – Sat 19 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "2026-09-19",
+      "location": "National Academy of Performing Arts",
+      "link": "https://napa.com.au/",
+      "cost": "See link",
+      "source": "National Academy of Performing Arts",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "musical",
+        "theatre",
+        "kids",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

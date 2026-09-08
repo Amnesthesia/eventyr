@@ -1,0 +1,54 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "imperialhoteleumundi",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "COOL BRITANNIA",
+      "datetime": "Sat 19 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-19T20:00:00",
+      "datetime_end_iso": "2026-09-19T22:30:00",
+      "location": "Imperial Hotel Eumundi",
+      "link": "https://www.imperialhoteleumundi.com.au/whats-on/zjvsmm4lqypl1qbvu0x09el2twb6w2",
+      "cost": "See link",
+      "source": "Imperial Hotel Eumundi",
+      "description": "Cool Britannia bring their epic 90s Britpop extravaganza to Imperial Hotel, Eumundi on Saturday 19 September!",
+      "image": "https://images.squarespace-cdn.com/content/v1/69b78a3145d0397a7d526604/1779934659216-OH6P59BZX3RUVHGH6UTP/FB+Banner+%282%29.jpg",
+      "category": "Concert / Music",
+      "tags": [
+        "britpop",
+        "live music",
+        "90s"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "COOL BRITANNIA",
+      "datetime": "Sat 19 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-19T20:00:00",
+      "datetime_end_iso": "",
+      "location": "Imperial Hotel Eumundi",
+      "link": "https://www.imperialhoteleumundi.com.au/whats-on/zjvsmm4lqypl1qbvu0x09el2twb6w2",
+      "cost": "See link",
+      "source": "Imperial Hotel Eumundi",
+      "description": "Cool Britannia bring their epic 90s Britpop extravaganza to Imperial Hotel, Eumundi on Saturday 19 September!",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "britpop",
+        "live music",
+        "90s"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

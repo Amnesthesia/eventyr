@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Glenella Street Park Buchcare
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-2mwy59@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T153000
+DTEND;TZID=Australia/Brisbane:20260919T173000
+SUMMARY:Glenella Street Park Buchcare
+DESCRIPTION:Glenella Street Park bushcare is on the third Saturday of every
+  month except January. The working bee starts at 3:30 pm and goes until 5:
+ 30 pm\, daylight permitting. The bushcare site is situated on one side of 
+ Fish Creek with a track between 77 Glenella Street and Lochinvar Lane The 
+ Gap. You need to wear […]
+LOCATION:Glenella Street Park\, 77 Glenella Street\, THE GAP\, QLD\, 4061
+URL:https://thegapsustainability.org/event/glenella-street-park-buchcare/20
+ 26-09-19/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ROCKIN’ REVIVAL FEST
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-4u5c4n@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:ROCKIN’ REVIVAL FEST
+DESCRIPTION:Mark your calendars! Saturday 19 September\, Rockin’ Revival 
+ Fest is rolling into Gold Coast Tavern for a huge day of live music\, clas
+ sic cars\, rock ‘n’ roll\, retro markets and vintage culture. Expect l
+ oud engines\, killer tunes\, dancing and all-day rockabilly vibes from sta
+ rt to finish. RSVP to join us for the day festival and get your tickets to
+  the official Rockin’ Revival Fest Afterparty\, featuring international 
+ rock ’n’ roll powerhouse Lance Lipinsky (USA) live as part of his Down
+  Under Tour 2026!
+LOCATION:Gold Coast Tavern
+URL:https://goldcoasttavern.com.au/
+END:VEVENT
+END:VCALENDAR

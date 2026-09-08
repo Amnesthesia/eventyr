@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Generation Innovation
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-18zdbni@dothings
+DTSTART;VALUE=DATE:20260324
+DTEND;VALUE=DATE:20261003
+SUMMARY:Generation Innovation
+DESCRIPTION:
+LOCATION:Study Sunshine Coast events
+URL:https://www.studysunshinecoast.com.au/event/generation-innovation/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,76 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "burleighsports",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Trivia",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Burleigh Sports Club",
+      "link": "https://www.burleighsports.com.au/events/trivia/",
+      "cost": "See link",
+      "source": "Burleigh Sports Club",
+      "description": "Join us every Wednesday with iconic Gold Coaster, Terry 'Tappa' Teece, as he hosts his own special blend of Trivia!",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "quiz",
+        "social"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Thursday Night Raffles",
+      "datetime": "Thu 10 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "",
+      "location": "Burleigh Sports Club",
+      "link": "https://www.burleighsports.com.au/events/thursday-night-raffles/",
+      "cost": "See link",
+      "source": "Burleigh Sports Club",
+      "description": "Join us every Thursday for our Surf & Turf Raffles and win meat trays and seafood from Scales Seafood.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "raffle",
+        "community",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "LIVING IN THE 70'S n 80'S HOMEGROWN EDITION",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "Burleigh Sports Club",
+      "link": "https://www.burleighsports.com.au/events/living-in-the-70s-n-80s-homegrown-edition/",
+      "cost": "See link",
+      "source": "Burleigh Sports Club",
+      "description": "Living in the 70’s & 80’s HOMEGROWN EDITION delivers the ultimate Aussie pub rock experience, performing iconic hits from legends including AC/DC, Cold Chisel, INXS and Dragon. A favourite across the Gold Coast, this high-energy tribute band keeps the crowd singing all night long.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "rock",
+        "live music",
+        "tribute"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

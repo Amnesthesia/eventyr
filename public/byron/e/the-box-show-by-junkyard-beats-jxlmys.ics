@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:THE BOX SHOW by Junkyard Beats
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-jxlmys@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T163000
+DTEND;TZID=Australia/Brisbane:20260914T183000
+SUMMARY:THE BOX SHOW by Junkyard Beats
+DESCRIPTION:Get ready for THE BOX SHOW — an award-winning\, interactive f
+ amily theatre adventure from Junkyard Beats \, directed and co-written by 
+ Nigel Turner-Carroll .
+LOCATION:Byron Theatre
+URL:https://www.byroncentre.com.au/theatre-events/the-box-show-by-junkyard-
+ beats
+END:VEVENT
+END:VCALENDAR

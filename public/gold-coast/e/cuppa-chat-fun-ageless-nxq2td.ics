@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Cuppa & Chat | Fun & Ageless
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-nxq2td@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T100000
+DTEND;TZID=Australia/Brisbane:20260910T113000
+SUMMARY:Cuppa & Chat | Fun & Ageless
+DESCRIPTION:Join us for our relaxed Cuppa & Chat morning – a casual drop-
+ in on the 2nd Thursday of each month to enjoy a warm drink while chatting 
+ and connecting with others in a friendly\, welcoming environment. It’s t
+ he perfect way to unwind\, meet new people\, and enjoy good company at you
+ r own pace. Currumbin RSL Members get their cuppa on us! Not a member yet?
+  Ask us about joining on the day.
+LOCATION:165 Duringan Street\, Currumbin\, QLD\, Australia\, Queensland 422
+ 3
+URL:https://www.currumbinrsl.com.au/event/cuppa-chat-fun-ageless-4/
+END:VEVENT
+END:VCALENDAR

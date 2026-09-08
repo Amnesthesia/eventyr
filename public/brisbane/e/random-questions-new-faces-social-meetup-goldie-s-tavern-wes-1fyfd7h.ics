@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Random Questions & New Faces Social Meetup @Goldie's Tavern We
+ st End
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1fyfd7h@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T223000
+SUMMARY:Random Questions & New Faces Social Meetup @Goldie's Tavern West En
+ d
+DESCRIPTION:Looking for an easy way to meet new people? Come join us for a 
+ fun and casual night of random questions\, interesting conversations and a
+  few laughs. Grab a question from th
+LOCATION:Goldie's Tavern West End\, Corner of Melbourne & Merivale Street\,
+  South Brisbane QLD 4101\, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-no-plans-club/events/316277307/
+END:VEVENT
+END:VCALENDAR

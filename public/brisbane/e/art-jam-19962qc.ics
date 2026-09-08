@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art Jam!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-19962qc@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T150000
+DTEND;TZID=Australia/Brisbane:20260913T170000
+SUMMARY:Art Jam!
+DESCRIPTION:Join us on Sunday September 13 at Banshees Bar and Artspace to 
+ get your creativity flowing!
+LOCATION:Banshees Bar & Artspace
+URL:https://bansheesbar.com.au/event/art-jam-september
+END:VEVENT
+END:VCALENDAR

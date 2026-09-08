@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:VANESSA LEA & ROAD TRAIN
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-lsjvwm@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T023000
+DTEND;TZID=Australia/Brisbane:20260919T043000
+SUMMARY:VANESSA LEA & ROAD TRAIN
+DESCRIPTION:With years of experience behind Vanessa Lea and Road Train\, ge
+ t ready to rock. Vanessa Lea the little girl with a big voice has been sin
+ ging up a storm and winning hearts wherever she has performed. Roger Fayne
+ s a multi-instrumentalist has worked with many great Australian bands from
+  The Masters Apprentices\, Koo De Tah and Stevie Wright Band and more.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/vanessa-lea-road-train/
+END:VEVENT
+END:VCALENDAR

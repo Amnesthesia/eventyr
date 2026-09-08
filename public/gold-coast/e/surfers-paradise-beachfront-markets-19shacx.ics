@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Surfers Paradise Beachfront Markets
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-19shacx@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:Surfers Paradise Beachfront Markets
+DESCRIPTION:A free\, family-friendly outdoor shopping experience by the bea
+ chside\, every Wednesday\, Friday and Saturday from 4pm to 9pm.
+LOCATION:City of Gold Coast Libraries
+URL:https://www.whatsongoldcoast.au/All-events/Surfers-Paradise-Beachfront-
+ Markets
+END:VEVENT
+END:VCALENDAR

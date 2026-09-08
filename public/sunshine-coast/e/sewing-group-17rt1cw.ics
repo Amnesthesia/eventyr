@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sewing Group
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-17rt1cw@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T093000
+DTEND;TZID=Australia/Brisbane:20260919T113000
+SUMMARY:Sewing Group
+DESCRIPTION:
+LOCATION:SCArt Art Studio
+URL:https://sunshinecoastartgroup.com.au/event-6429439
+END:VEVENT
+END:VCALENDAR

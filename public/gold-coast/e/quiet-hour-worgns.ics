@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Quiet Hour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-worgns@dothings
+DTSTART;VALUE=DATE:20260103
+DTEND;VALUE=DATE:20261206
+SUMMARY:Quiet Hour
+DESCRIPTION:On the first Saturday of every month between 9am-10am we offer 
+ Quiet Hour in HOTA Gallery. Our Quiet Hour is provided to ensure a relaxed
+  and calm environment f
+LOCATION:HOTA Gallery
+URL:https://hota.com.au/events/quiet-hour
+END:VEVENT
+END:VCALENDAR

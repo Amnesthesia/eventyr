@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Photo Conservation Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1gnhcmq@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T100000
+DTEND;TZID=Australia/Brisbane:20260916T120000
+SUMMARY:Photo Conservation Workshop
+DESCRIPTION:Join us for a morning of learning and sharing stories from phot
+ ographs. This is a free workshop for Aboriginal and/or Torres Strait Islan
+ der people.We invite you to join us for a free and informative morning foc
+ used on the care and preservation of photographs.This session will provide
+  valuable insights into the best practices for their protection and longev
+ ity.This talk will be presented by State Library’s preservation team who
+  will share expert tips on how to properly store and care for photographs\
+ , helping you appreciate them while ensuring they remain in good condition
+  for years to come. This is an excellent opportunity to learn practical te
+ chniques for preserving your photos and to connect with others.Tea and cof
+ fee will be provided.
+LOCATION:State Library of Queensland\, Stanley Place\, South Bank
+URL:https://www.slq.qld.gov.au/whats-on/photo-conservation-workshop
+END:VEVENT
+END:VCALENDAR

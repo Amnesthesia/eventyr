@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:FULL MOON REGGAE PARTY FT. SKYEATER
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1grbph5@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T160000
+DTEND;TZID=Australia/Brisbane:20260920T200000
+SUMMARY:FULL MOON REGGAE PARTY FT. SKYEATER
+DESCRIPTION:FULL MOON REGGAE PARTY | Sunday 20 September\, from 4PM | Free 
+ Event The beer garden comes alive under the full moon for a soulful reggae
+  celebration! Join us for an arvo of live music\, good vibes\, and cold dr
+ inks\, where the rhythm moves your body and the music lifts your spirit. G
+ et ready for SKYEATER — dreamy dub\, trip-hop\, and soulful pop with rev
+ erb-soaked piano\, soaring vocals\, and reggae-infused beats. Changing the
+  world one song at a time\, Sky Eater is here to have fun\, spread some jo
+ y\, and lift your spirit — all at once! So gather your crew\, feel the b
+ eat\, and get on board the full moon reggae celebration!
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/full-moon-reggae-ft-skyeater/
+END:VEVENT
+END:VCALENDAR

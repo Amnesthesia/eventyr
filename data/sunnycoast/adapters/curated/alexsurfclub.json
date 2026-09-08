@@ -1,0 +1,54 @@
+{
+  "city_key": "sunnycoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "alexsurfclub",
+  "week_start": "2026-09-07",
+  "week_end": "2026-09-13",
+  "events": [
+    {
+      "title": "Business by the Beach",
+      "datetime": "Wed 16 Sep, 7:30 AM",
+      "datetime_iso": "2026-09-16T07:30:00",
+      "datetime_end_iso": "",
+      "location": "Beachside Cafe",
+      "link": "https://alexsurfclub.com.au/event/business-by-the-beach/",
+      "cost": "See link",
+      "source": "Alexandra Headland Surf Life Saving Club",
+      "description": "Start your workday with a coffee, ocean views and great local connections at Alex Surf Club. Hosted by ABA Advice Beyond Accounting.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "networking",
+        "business",
+        "coffee"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Boaties Reunion RSVP",
+      "datetime": "Sat 12 Sep",
+      "datetime_iso": "2026-09-12",
+      "datetime_end_iso": "",
+      "location": "Bluff Function",
+      "link": "https://alexsurfclub.com.au/event/boaties-reunion-rsvp/",
+      "cost": "See link",
+      "source": "Alexandra Headland Surf Life Saving Club",
+      "description": "",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "reunion",
+        "social",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

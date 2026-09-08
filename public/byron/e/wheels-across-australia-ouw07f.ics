@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wheels Across Australia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-ouw07f@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Wheels Across Australia
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/now-showing/wheels-across-australia/
+END:VEVENT
+END:VCALENDAR
