@@ -4,11 +4,18 @@ import { useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
 
 /**
- * Tags offered to rate. The same short head the tag filter uses, and for the
- * same reason: Brisbane's week carries 522 distinct tags, 267 of them on a
- * single event. Rating a tag that appears once is effort spent on nothing.
+ * Tags offered to rate.
+ *
+ * Far more than the filter row shows, because the two answer different
+ * questions: the filter is "narrow this view now", where a short head is
+ * enough, while this is "set up how the site treats me", which is worth
+ * scrolling. 40 was too few — it cut off around 8 events per tag and hid most
+ * of what a reader would actually want to veto.
+ *
+ * Still bounded: of ~515 distinct tags in a Brisbane week, 267 appear on a
+ * single event, and rating those is effort spent on nothing.
  */
-const RATEABLE_TAGS = 40;
+const RATEABLE_TAGS = 150;
 
 export default function PreferencesPane() {
 	const { filtered, tagPrefs } = useEventsContext();
@@ -97,7 +104,8 @@ function PreferencesDialog({
 				<p className="prefs-note">
 					Tap once for <strong>more</strong> of a kind of event, twice for{" "}
 					<strong>less</strong>. More sorts first, less sorts last — whatever it
-					scored.
+					scored. Showing the {tags.length} most common tags; search finds the
+					rest.
 				</p>
 				<div className="prefs-tags">
 					{tags.map((tag) => {

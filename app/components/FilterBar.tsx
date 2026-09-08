@@ -7,6 +7,7 @@ import CategoryFilter from "./filters/CategoryFilter";
 import DateFilter from "./filters/DateFilter";
 import GroupByFilter from "./filters/GroupByFilter";
 import TagFilter from "./filters/TagFilter";
+import TimeOfDayFilter from "./filters/TimeOfDayFilter";
 import VibeFilter from "./filters/VibeFilter";
 import PreferencesPane from "./PreferencesPane";
 
@@ -95,6 +96,9 @@ export default function FilterBar({ onSwipe }: Props) {
 			<div id={moreId} className={`filters-more${moreOpen ? " open" : ""}`}>
 				<div className="filter-bar filter-bar--vibe">
 					<VibeFilter />
+				</div>
+				<div className="filter-bar filter-bar--time">
+					<TimeOfDayFilter />
 				</div>
 				<div className="filter-bar filter-bar--tag">
 					<TagFilter />

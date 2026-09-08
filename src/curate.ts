@@ -23,6 +23,7 @@ import {
 	normaliseHost,
 	PROJECT_ROOT,
 	requireEnv,
+	stripUselessTags,
 	toISODate,
 	yieldLedgerPath,
 } from "./common.ts";
@@ -349,7 +350,14 @@ async function dropOtherCities(
 	return events.filter((e) => {
 		const location = locationOf(e);
 		if (foreign.has(location)) return false;
-		return e.venue !== "aggregator" || !elsewhere.has(location);
+		// Every tier, not just aggregators. The old rule assumed a venue-tier
+		// source only lists its own city, and 128 scraper sources later that is
+		// plainly false: QTIX ticketed a Toowoomba museum workshop under
+		// brisbane's institutions, and a life-drawing organiser listed Miami
+		// Marketta on the Gold Coast under independents. Both were already being
+		// geocoded and correctly identified as elsewhere — the drop just never
+		// applied to them.
+		return !elsewhere.has(location);
 	});
 }
 
@@ -511,10 +519,27 @@ async function mergeAndDeduplicate(
 		events.map((e) => e.tags as string[] | undefined),
 	);
 	let rewritten = 0;
+	let stripped = 0;
 	for (const event of events) {
 		if (!Array.isArray(event.tags)) continue;
 		const before = event.tags as string[];
-		const after = [...new Set(before.map((t) => canonical.get(t) ?? t))];
+		const merged = [...new Set(before.map((t) => canonical.get(t) ?? t))];
+		// Tags that cannot divide the list are worse than no tag now that
+		// preferences act on them — see stripUselessTags.
+		const cleaned = stripUselessTags(
+			merged,
+			CITY_NAME,
+			(event.location as string) ?? "",
+		);
+		stripped += merged.length - cleaned.length;
+		// "free" is a fact about the cost field, not a judgement, so code sets
+		// it rather than the annotator — which never sees cost. Asked to guess,
+		// it agreed with the cost on only 17 of 43 free events, erring in both
+		// directions.
+		const cost = ((event.cost as string) ?? "").trim();
+		const isFree = /^(free|free entry|no charge|\$?0(\.00)?)$/i.test(cost);
+		const after = cleaned.filter((t) => t !== "free");
+		if (isFree) after.push("free");
 		if (after.join("\u0000") !== before.join("\u0000")) rewritten++;
 		event.tags = after;
 	}
@@ -524,7 +549,8 @@ async function mergeAndDeduplicate(
 		);
 		console.log(
 			`→ tags: ${merged.size} variant(s) merged onto their canonical spelling ` +
-				`(${[...merged].slice(0, 6).join(", ")}${merged.size > 6 ? ", …" : ""}), ${rewritten} event(s) rewritten`,
+				`(${[...merged].slice(0, 6).join(", ")}${merged.size > 6 ? ", …" : ""}), ` +
+				`${stripped} useless tag(s) dropped, ${rewritten} event(s) rewritten`,
 		);
 	}
 

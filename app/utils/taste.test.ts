@@ -3,6 +3,7 @@ import { test } from "node:test";
 import type { Event } from "../types";
 import {
 	bumpTaste,
+	effectiveTaste,
 	eventKeys,
 	loadTaste,
 	logTasteProfile,
@@ -289,5 +290,40 @@ test("no stated preference leaves the incoming order alone", () => {
 	assert.deepEqual(
 		rankByTaste([a, b], {}, {}).map((e) => e.title),
 		["A", "B"],
+	);
+});
+
+test("rating tags personalises the profile with no bookmarks at all", () => {
+	// Preferences used to be a sort tier only, so the profile never learned
+	// from them and the taste readout kept reporting "not personalised" however
+	// many tags had been rated.
+	const comedy = { title: "Comedy", score: 5, tags: ["comedy"] } as Event;
+	assert.equal(tasteBoost(comedy, {}), 0, "an empty profile boosts nothing");
+	const stated = effectiveTaste({}, { comedy: 1 });
+	assert.ok(
+		tasteBoost(comedy, stated) > 0,
+		"a stated preference is a signal on its own",
+	);
+});
+
+test("an unwanted tag is removed from the profile, not just outranked", () => {
+	// Bookmarking karaoke then saying "less karaoke" has to actually undo the
+	// learned weight, or the profile keeps recommending it inside its band.
+	const karaoke = { title: "Karaoke", score: 6, tags: ["karaoke"] } as Event;
+	const learned = { "tag:karaoke": 4, "cat:Concert / Music": 4 };
+	assert.ok(tasteBoost(karaoke, learned) > 0);
+	assert.equal(
+		tasteBoost(karaoke, effectiveTaste(learned, { karaoke: -1 })),
+		0,
+	);
+});
+
+test("within a band, more wanted tags ranks higher", () => {
+	const two = { title: "Two", score: 5, tags: ["comedy", "improv"] } as Event;
+	const one = { title: "One", score: 5, tags: ["comedy"] } as Event;
+	const ranked = rankByTaste([one, two], {}, { comedy: 1, improv: 1 });
+	assert.deepEqual(
+		ranked.map((e) => e.title),
+		["Two", "One"],
 	);
 });

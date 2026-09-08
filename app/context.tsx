@@ -56,6 +56,7 @@ import {
 	saveTaste,
 	type TasteProfile,
 } from "./utils/taste";
+import { matchesTimeBands, type TimeBand } from "./utils/timeOfDay";
 
 /** The identity saved/hidden sets are keyed by. Not eventHash: stars already
  * in people's localStorage use this basis, and changing it would lose them. */
@@ -97,6 +98,10 @@ interface EventsContextValue {
 	clearTagPrefs: () => void;
 	pastFilter: PastFilter;
 	setPastFilter: (v: PastFilter) => void;
+	/** Selected time-of-day bands. Empty = any time. */
+	timeBands: TimeBand[];
+	toggleTimeBand: (band: TimeBand) => void;
+	clearTimeBands: () => void;
 	vibeFilters: VibeFilters;
 	groupBy: GroupBy;
 	setGroupBy: (mode: GroupBy) => void;
@@ -286,6 +291,13 @@ export function EventsProvider({
 		saveTagPrefs({});
 	}, []);
 	const [pastFilter, setPastFilter] = useState<PastFilter>("no-past");
+	const [timeBands, setTimeBands] = useState<TimeBand[]>([]);
+	const toggleTimeBand = useCallback((band: TimeBand) => {
+		setTimeBands((prev) =>
+			prev.includes(band) ? prev.filter((b) => b !== band) : [...prev, band],
+		);
+	}, []);
+	const clearTimeBands = useCallback(() => setTimeBands([]), []);
 	// "date" by default so the "Today"/"Tomorrow" section headings render
 	// without the reader having to find the grouping toggle first.
 	const [groupBy, setGroupBy] = useState<GroupBy>("date");
@@ -367,6 +379,7 @@ export function EventsProvider({
 				""
 			).slice(0, 10);
 			const isPast = endDate ? endDate < todayStr : false;
+			if (!matchesTimeBands(event, timeBands)) return false;
 			if (pastFilter === "no-past" && isPast) return false;
 			if (pastFilter === "only-past" && !isPast) return false;
 
@@ -390,6 +403,7 @@ export function EventsProvider({
 		query,
 		hidden,
 		minScore,
+		timeBands,
 	]);
 
 	// Counted against the whole city, not `filtered`: hidden events are by
@@ -573,6 +587,9 @@ export function EventsProvider({
 		clearTagPrefs,
 		pastFilter,
 		setPastFilter,
+		timeBands,
+		toggleTimeBand,
+		clearTimeBands,
 		vibeFilters,
 		setVibe,
 		resetVibes,

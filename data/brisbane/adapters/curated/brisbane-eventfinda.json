@@ -7,94 +7,6 @@
   "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Gilbert & Sullivan",
-      "datetime": "Wed 9 Sep, 1:00 PM",
-      "datetime_iso": "2026-09-09T13:00:00",
-      "datetime_end_iso": "",
-      "location": "Concert Hall - QPAC, South Brisbane, Queensland",
-      "link": "https://brisbane.eventfinda.com.au/2026/gilbert-sullivan/brisbane",
-      "cost": "See link",
-      "source": "Eventfinda Brisbane",
-      "description": "Gilbert & Sullivan, It&rsquo;s Sumptuous! It&rsquo;s Silly! It&rsquo;s ..., Concert Hall - QPAC, Brisbane, Queensland, 6 September 2026 - 9 September 2026,",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "opera",
-        "theatre",
-        "classical"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Pool",
-      "datetime": "Wed 9 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-09T17:00:00",
-      "datetime_end_iso": "",
-      "location": "Sidetracked Southport, Southport, Queensland",
-      "link": "https://brisbane.eventfinda.com.au/2026/free-pool/gold-coast/southport",
-      "cost": "See link",
-      "source": "Eventfinda Brisbane",
-      "description": "Pool, Wednesdays don&rsquo;t have to be boring. Grab a drink, grab your ..., Sidetracked Southport, Gold Coast, Queensland, 29 July 2026 - 14 October 2026,",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "games",
-        "social",
-        "casual"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Opera Queensland Young Artist Program Showcase: Viva La Voce",
-      "datetime": "Thu 10 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-10T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Redland Performing Arts Centre, Cleveland, Queensland",
-      "link": "https://brisbane.eventfinda.com.au/2026/young-artist-program-showcase-viva-la-voce2/brisbane",
-      "cost": "See link",
-      "source": "Eventfinda Brisbane",
-      "description": "Opera Queensland Young Artist Program Showcase: Viva La Voce, For more than 35 ..., Redland Performing Arts Centre, Brisbane, Queensland, 10 September 2026",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "opera",
-        "classical",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "The Performer",
-      "datetime": "Thu 10 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-10T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Armitage Centre, Toowoomba City, Toowoomba & District",
-      "link": "https://brisbane.eventfinda.com.au/2026/the-performer/toowoomba",
-      "cost": "See link",
-      "source": "Eventfinda Brisbane",
-      "description": "The Performer, Christian media billionaire John Jay Moil has everything he ..., Armitage Centre, Toowoomba, Queensland, 10 September 2026 - 12 September 20",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "drama",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "What’s in the Woods? | Spring",
       "datetime": "Thu 10 Sep, 10:00 AM",
       "datetime_iso": "2026-09-10T10:00:00",
@@ -137,6 +49,48 @@
       "intellectual": false,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "Comedy Cha Cha Thursdays",
+      "datetime": "Thu 10 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-10T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Warehouse 25, Milton, Queensland",
+      "link": "https://brisbane.eventfinda.com.au/2026/comedy-cha-cha-thursdays/brisbane",
+      "cost": "See link",
+      "source": "Eventfinda Brisbane",
+      "description": "Comedy Cha Cha Thursdays, Laugh. Drink. Repeat. Comedy Cha Cha is Brisbane's ..., Warehouse 25, Brisbane, Queensland, 10 September 2026 - 8 October 2026,",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "comedy",
+        "standup",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Queensland Symphony Orchestra: Symphonic Stories",
+      "datetime": "Thu 10 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-10T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Empire Theatres, Toowoomba City, Toowoomba & District",
+      "link": "https://brisbane.eventfinda.com.au/2026/queensland-symphony-orchestra-symphonic-stories/toowoomba",
+      "cost": "See link",
+      "source": "Eventfinda Brisbane",
+      "description": "Queensland Symphony Orchestra: Symphonic Stories, At its heart is Copland&rsquo;s Clarinet ..., Empire Theatres, Toowoomba, Queensland, 10 September 2026,",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "classical"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     },
     {
       "title": "Live at Melbourne Street Green",
@@ -205,23 +159,21 @@
       "creative": false
     },
     {
-      "title": "Quandamooka Festival 2026 feat. Dan Sultan",
-      "datetime": "Sat 12 Sep, 10:00 AM",
-      "datetime_iso": "2026-09-12T10:00:00",
+      "title": "The Performer",
+      "datetime": "Fri 11 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-11T19:00:00",
       "datetime_end_iso": "",
-      "location": "QUAMPI Arts & Culture Centre, Port Of Brisbane, Queensland",
-      "link": "https://brisbane.eventfinda.com.au/2026/quandamooka-festival-2026-feat-dan-sultan/brisbane",
+      "location": "Armitage Centre, Toowoomba City, Toowoomba & District",
+      "link": "https://brisbane.eventfinda.com.au/2026/the-performer/toowoomba",
       "cost": "See link",
       "source": "Eventfinda Brisbane",
-      "description": "Quandamooka Festival 2026 feat. Dan Sultan, Two days of music, ..., QUAMPI Arts & Culture Centre, Brisbane, Queensland, 12 September 2026 - 13 September 20",
+      "description": "The Performer, Christian media billionaire John Jay Moil has everything he ..., Armitage Centre, Toowoomba, Queensland, 10 September 2026 - 12 September 20",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
-        "festival",
-        "music",
-        "culture"
+        "theatre"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -249,6 +201,26 @@
       "creative": true
     },
     {
+      "title": "Are You Lonesome Tonight: Festival",
+      "datetime": "Sat 12 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-12T11:00:00",
+      "datetime_end_iso": "",
+      "location": "Cultural Forecourt, South Bank Brisbane, South Bank, Queensland",
+      "link": "https://brisbane.eventfinda.com.au/2026/are-you-lonesome-tonight-brisbane-festival/brisbane",
+      "cost": "See link",
+      "source": "Eventfinda Brisbane",
+      "description": "Are You Lonesome Tonight: Festival, Arrive in your ..., Cultural Forecourt, South Bank Brisbane, Brisbane, Queensland, 9 September 2026 - 12 September 2026",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "festival"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Vice City - Fortitude Valley's True Crime Tour",
       "datetime": "Sat 12 Sep, 4:30 PM",
       "datetime_iso": "2026-09-12T16:30:00",
@@ -271,9 +243,52 @@
       "creative": false
     },
     {
+      "title": "Opera Queensland Young Artist Program Showcase: Viva La Voce",
+      "datetime": "Sat 12 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-12T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Opera Queensland Rehearsal Studio, South Brisbane, Queensland",
+      "link": "https://brisbane.eventfinda.com.au/2026/young-artist-program-showcase-viva-la-voce/brisbane",
+      "cost": "See link",
+      "source": "Eventfinda Brisbane",
+      "description": "Opera Queensland Young Artist Program Showcase: Viva La Voce, For ..., Opera Queensland Rehearsal Studio, Brisbane, Queensland, 11 September 2026 - 12 Sept",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "opera",
+        "singing"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Quandamooka Festival 2026 feat. Dan Sultan",
+      "datetime": "Sun 13 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-13T10:00:00",
+      "datetime_end_iso": "",
+      "location": "QUAMPI Arts & Culture Centre, Port Of Brisbane, Queensland",
+      "link": "https://brisbane.eventfinda.com.au/2026/quandamooka-festival-2026-feat-dan-sultan/brisbane",
+      "cost": "See link",
+      "source": "Eventfinda Brisbane",
+      "description": "Quandamooka Festival 2026 feat. Dan Sultan, Two days of music, ..., QUAMPI Arts & Culture Centre, Brisbane, Queensland, 12 September 2026 - 13 September 20",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "festival",
+        "indigenous"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "BuzzAttack Brings the Thrill of a Live TV Game Show to Austr",
-      "datetime": "Sat 12 Sep, 10:00 AM",
-      "datetime_iso": "2026-09-12T10:00:00",
+      "datetime": "Sun 13 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-13T10:00:00",
       "datetime_end_iso": "",
       "location": "Fever Hub Brisbane, Fortitude Valley, Queensland",
       "link": "https://brisbane.eventfinda.com.au/2026/buzzattack-brings-the-thrill-of-live-tv-game-show-to-australia/brisbane",
@@ -284,12 +299,33 @@
       "category": "Social / Meetup",
       "tags": [
         "games",
-        "interactive",
-        "entertainment"
+        "trivia"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Kidchella",
+      "datetime": "Sun 13 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-13T10:00:00",
+      "datetime_end_iso": "",
+      "location": "Surfers Paradise Esplanade, Surfers Paradise, Queensland",
+      "link": "https://brisbane.eventfinda.com.au/2026/kidchella/gold-coast",
+      "cost": "See link",
+      "source": "Eventfinda Brisbane",
+      "description": "Kidchella, GOOD VIBES. LITTLE HUMANS. ONE BIG WEEKEND. <br /> ..., Surfers Paradise Esplanade, Gold Coast, Queensland, 12 September 2026 - 13 September 202",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "festival",
+        "kids",
+        "family"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
       "creative": false
     }
   ]

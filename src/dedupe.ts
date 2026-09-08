@@ -92,8 +92,65 @@ function venuesAgree(
 		la.includes(lb) ||
 		lb.includes(la) ||
 		diceSimilarity(la, lb) > 0.6 ||
-		first(la) === first(lb)
+		first(la) === first(lb) ||
+		acronymMatch(la, lb)
 	);
+}
+
+/**
+ * Whether one venue string is the other's acronym.
+ *
+ * Venues are named in full by one source and by initials by another, and no
+ * amount of string similarity connects them: "Queensland Performing Arts
+ * Centre, South Brisbane" against "Playhouse, QPAC" scores 0.10. Measured on a
+ * real duplicate — "Strong is the new pretty" appeared three times on the same
+ * date because every pair of its venue spellings looked unrelated, so all
+ * three went to the classifier, which is told to answer false when venues
+ * differ.
+ *
+ * Three letters minimum: two-letter initialisms collide constantly.
+ */
+export function acronymMatch(la: string, lb: string): boolean {
+	const tokens = (v: string): string[] =>
+		v.split(" ").filter((w) => w.length >= 3);
+	for (const [long, short] of [
+		[la, lb],
+		[lb, la],
+	]) {
+		const words = tokens(long);
+		const candidates = new Set(tokens(short));
+		if (candidates.size === 0) continue;
+		// Prefixes, not the whole string: the acronym covers the venue's name
+		// and the source usually appends a suburb after it. "queensland
+		// performing arts centre south brisbane" initialises to "qpacsb", which
+		// matches nothing — the answer is in its first four words.
+		let acronym = "";
+		for (const word of words) {
+			acronym += word[0];
+			if (acronym.length >= 3 && candidates.has(acronym)) return true;
+		}
+	}
+	return false;
+}
+
+/**
+ * Whether a title is specific enough that two same-date events sharing it are
+ * one event, whatever their venue strings say.
+ *
+ * The venue check exists for generic names — "Trivia Night" at Netherworld and
+ * at the Junk Bar really are two events. But it also blocked genuine
+ * duplicates whose sources spell the venue differently: "Strong is the new
+ * pretty" was published three times on one date as South Bank Parklands, as
+ * Queensland Performing Arts Centre and as Playhouse/QPAC, and no pair of
+ * those looked alike.
+ *
+ * Four words is the line because that is what separates a programme title from
+ * a category label. Every generic collision in the data so far is one or two
+ * words ("trivia night", "life drawing", "open mic", "live music").
+ */
+export function isDistinctiveTitle(normalisedTitle: string): boolean {
+	const words = normalisedTitle.split(/\s+/).filter(Boolean);
+	return words.length >= 4;
 }
 
 function dateKey(event: Record<string, unknown>): string {
@@ -216,7 +273,10 @@ export function planDedupe(events: Record<string, unknown>[]): {
 						// venues is two different events ("Trivia Night" at
 						// Netherworld and at the Junk Bar). isDuplicateEvent
 						// never sees the venue, so ask rather than assume.
-						if (venuesAgree(events[i], events[j])) {
+						if (
+							venuesAgree(events[i], events[j]) ||
+							isDistinctiveTitle(fpA.title)
+						) {
 							settled.push(i < j ? [i, j] : [j, i]);
 						} else {
 							candidates.push(i < j ? [i, j] : [j, i]);

@@ -6,33 +6,6 @@ METHOD:PUBLISH
 X-WR-CALNAME:Byron Bay — do things
 X-WR-TIMEZONE:Australia/Brisbane
 BEGIN:VEVENT
-UID:byron-1ghjz2m@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T100000
-DTEND;TZID=Australia/Brisbane:20260909T150000
-SUMMARY:SPACEMAKERS
-DESCRIPTION:We welcome you to join our SPACEMAKERS Workshop\, where we coll
- aboratively design and build a range of projects for our workshop space. W
- e will work together\, learning about design\, context\, installation\, re
- novation and retro-fitting space.
-LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
-URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
- tType=52993822
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-6zzyvj@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T133000
-DTEND;TZID=Australia/Brisbane:20260909T163000
-SUMMARY:REPAIR CAFE
-DESCRIPTION:Drop in to The Repair Cafe on a Saturday between 1.30-4.30pm wi
- th your items to repair\, or to volunteer. Instead of throwing away a wobb
- ly bike\, wonky furniture or torn clothes\, bring them to The Repair Cafe.
-  Just drop in on a Saturday afternoon between 1.30-4.30pm and be prepared 
- to learn how to help revive your bikes\, furniture\, clothes and household
-  treasures.
-LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
-URL:https://shedding.com.au/
-END:VEVENT
-BEGIN:VEVENT
 UID:byron-19baoix@dothings
 DTSTART;TZID=Australia/Brisbane:20260827T180000
 DTEND;TZID=Australia/Brisbane:20260912T220000
@@ -44,15 +17,28 @@ LOCATION:Eltham Hotel\, Eltham NSW
 URL:https://norpa.org.au/whats-on/
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1ckeckh@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T090000
-DTEND;TZID=Australia/Brisbane:20260910T200000
-SUMMARY:Screenworks Regional to Global 2026
-DESCRIPTION:A significant two-day screen industry forum connecting regional
-  creators with global opportunities\, featuring panels and discussions wit
- h industry experts.
-LOCATION:Lennox Head Cultural Centre\, Lennox Head
-URL:https://screenworks.com.au/opportunities/regional-to-global-2026/
+UID:byron-gcgd8i@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Improv Course
+DESCRIPTION:A hands-on\, community-focused course teaching the fundamentals
+  of improvisation and collaborative storytelling through active participat
+ ion.
+LOCATION:Cavanbah Centre\, 249 Ewingsdale Road\, Byron Bay
+URL:https://byronbayexperience.com.au/byron-bay-events-guide-whats-on/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1ghjz2m@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T100000
+DTEND;TZID=Australia/Brisbane:20260909T150000
+SUMMARY:SPACEMAKERS
+DESCRIPTION:We welcome you to join our SPACEMAKERS Workshop\, where we coll
+ aboratively design and build a range of projects for our workshop space. W
+ e will work together\, learning about design\, context\, installation\, re
+ novation and retro-fitting space.
+LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
+URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
+ tType=52993822
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-17l92ul@dothings
@@ -93,6 +79,19 @@ LOCATION:Brunswick Picture House\, Brunswick Heads NSW
 URL:https://brunswickpicturehouse.com/the-plastic-country-9-sep/
 END:VEVENT
 BEGIN:VEVENT
+UID:byron-pulvxh@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:The Double Life Of Veronique
+DESCRIPTION:Two women\, born on the same day in different countries\, live 
+ separate lives yet share an inexplicable emotional connection. Weronika is
+  a young Polish singer with an extraordinary voice\; Véronique is a Frenc
+ h music teacher who begins to sense that somewhere\, somehow\, she has nev
+ er been entirely alone.
+LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
+URL:https://nimbinbushtheatre.com/events/thjedouble-life-of-veronique/
+END:VEVENT
+BEGIN:VEVENT
 UID:byron-yn2ixe@dothings
 DTSTART;TZID=Australia/Brisbane:20260911T173000
 DTEND;TZID=Australia/Brisbane:20260911T193000
@@ -106,26 +105,32 @@ URL:https://www.eventbrite.com.au/e/art-byron-gatherings-an-evening-with-gl
  enn-barkley-and-alison-kubler-tickets-1995397598933
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-12xxypu@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T100000
-DTEND;TZID=Australia/Brisbane:20260913T160000
-SUMMARY:Glenn Barkley — Impression Sessions (handbuilding & stamp making)
-  — Weekend workshop
-DESCRIPTION:A hands-on\, two-day intensive pottery workshop focused on hand
- building techniques and creating custom stamps under the guidance of a pro
- fessional artist.
-LOCATION:Byron School of Art\, 112 Dalley St\, Mullumbimby NSW 2482
-URL:https://www.byronschoolofart.com/glenn-barkley-impression-sessions
+UID:byron-6ne75v@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T083000
+DTEND;TZID=Australia/Brisbane:20260912T130000
+SUMMARY:UPSKILL
+DESCRIPTION:Our UPSKILL Intro is the place to start your Shedding journey! 
+ This one off 4.5 hour workshop introduces you to our space and our tools a
+ t Shedding. UPSKILL is an induction and introduction to the fundamentals o
+ f carpentry and building\, and an attitude towards learning that will put 
+ you on the path to self-empowerment and success. It is the doorway into ou
+ r world of creativity and skill-sharing – once you have completed this w
+ orkshop you’re ready to jump into our future workshops.
+LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
+URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
+ tType=52989924
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-kiy9z@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T200000
-DTEND;TZID=Australia/Brisbane:20260918T220000
-SUMMARY:Julian Lage
-DESCRIPTION:Julian Lage tours Australia for the first time\, continuing cel
- ebrations of his breakthrough solo album from 2015\, 'World's Fair'.
-LOCATION:Byron Theatre
-URL:https://www.byroncentre.com.au/theatre-events/julian-lage
+UID:byron-1gtl5pq@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Stop Making Sense
+DESCRIPTION:David Byrne walks onto an empty stage carrying a guitar and a c
+ assette player. “Hi\, I’ve got a tape I want to play.” From that won
+ derfully simple beginning\, Stop Making Sense gradually builds into one of
+  the most exhilarating concert films ever made.
+LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
+URL:https://nimbinbushtheatre.com/events/stop-making-sense/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-485jj2@dothings
@@ -150,25 +155,173 @@ LOCATION:Lone Goat Gallery\, 28 Lawson St\, Byron Bay NSW 2481
 URL:https://www.lonegoatgallery.com/
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-gcgd8i@dothings
-DTSTART;VALUE=DATE:20260908
-DTEND;VALUE=DATE:20260909
-SUMMARY:Improv Course
-DESCRIPTION:A hands-on\, community-focused course teaching the fundamentals
-  of improvisation and collaborative storytelling through active participat
- ion.
-LOCATION:Cavanbah Centre\, 249 Ewingsdale Road\, Byron Bay
-URL:https://byronbayexperience.com.au/byron-bay-events-guide-whats-on/
+UID:byron-6zzyvj@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T133000
+DTEND;TZID=Australia/Brisbane:20260909T163000
+SUMMARY:REPAIR CAFE
+DESCRIPTION:Drop in to The Repair Cafe on a Saturday between 1.30-4.30pm wi
+ th your items to repair\, or to volunteer. Instead of throwing away a wobb
+ ly bike\, wonky furniture or torn clothes\, bring them to The Repair Cafe.
+  Just drop in on a Saturday afternoon between 1.30-4.30pm and be prepared 
+ to learn how to help revive your bikes\, furniture\, clothes and household
+  treasures.
+LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
+URL:https://shedding.com.au/
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1t8ojzp@dothings
-DTSTART;VALUE=DATE:20260908
-DTEND;VALUE=DATE:20260909
-SUMMARY:Dramaworks Evening 2026
-DESCRIPTION:A showcase of local dramatic works\, highlighting the creativit
- y and experimental performance culture within the Byron Shire.
+UID:byron-x3rdwx@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:art for the heart
+DESCRIPTION:Facilitated by local artists Paula Bannan & Leeby Sotheren. Thi
+ s class is designed to relax and reset your nervous system through tapping
+  into the joy of creating art. No skill necessary! All materials provided
+LOCATION:Pack Gallery Studio\, 3 Acacia Street Byron Industrial Estate
+URL:https://www.events.humantix.com/packgallerystudio
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1tsxwi4@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T083000
+DTEND;TZID=Australia/Brisbane:20260910T173000
+SUMMARY:EMPOWER
+DESCRIPTION:EMPOWER is a hands-on training program designed to inspire like
+ -minded individuals and organisations to share Shedding’s practices\, le
+ arnings\, resources and networks to empower communities near and far with 
+ practical carpentry and building skills in safe and supportive environment
+ s.
+LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
+URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
+ tType=52990335
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-fqdalm@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Common Wealth — Special screening + live Q&A
+DESCRIPTION:A special screening of the film followed by an in-person Q&A wi
+ th director Kane Guglielmi\, focusing on the themes of the documentary.
+LOCATION:Byron Theatre\, 69 Jonson St\, Byron Bay
+URL:https://www.byroncentre.com.au/theatre-events/common-wealth
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-54qe2t@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:MUM – A STORY
+DESCRIPTION:This is a fundraiser for the premiere production of Stephen Edg
+ ar’s "The Eldershaw Chronicles" adapted for the stage and directed by Gr
+ egory Aitken designed by Sunita Bailey (When The Rain Stops Falling).
+LOCATION:Drill Hall Theatre Company
+URL:https://drillhalltheatre.org.au/mum-a-story/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-o7chuq@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T070000
+DTEND;TZID=Australia/Brisbane:20260911T090000
+SUMMARY:Michael Hing: How Are We Supposed To Live Like This?
+DESCRIPTION:Life is increasingly insane. Nothing makes sense. Everything is
+  chaos\, and we’re all just expected to keep on going? The planet is on 
+ fire\, money is imaginary\, we are ruled over by a moronic class of preeni
+ ng narcissists\, but every day you’re just meant to go to work and come 
+ home and pretend you don’t notice that we’re being gouged at every cor
+ ner and there are fewer and fewer Arnott’s shapes in every packet. Unrel
+ ated to all this\, Michael Hing is developing a brand new hour of comedy.
+LOCATION:Brunswick Picture House\, Brunswick Heads NSW
+URL:https://brunswickpicturehouse.com/michael-hing-how-are-we-supposed-to-l
+ ive-like-this-11-sep/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1pqcr6e@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T203000
+SUMMARY:Plastic Country — community film screening & panel
+DESCRIPTION:A community screening of a documentary addressing environmental
+  issues\, followed by a panel discussion with local experts and advocates.
+LOCATION:Lennox Head Cultural Centre\, Lennox Head
+URL:https://communityspaces.com.au/v1/tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-uisqpp@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T093000
+DTEND;TZID=Australia/Brisbane:20260912T113000
+SUMMARY:WET FELTED BOWL WORKSHOP
+DESCRIPTION:WET FELTED BOWL WORKSHOP FOR ADULTS Saturday 12 September 2026 
+ 9.30am - 1.30pm Join Agnès to learn how to wet felt a bowl using colourfu
+ l merino silk blends and corriedale wool in a private location in Mullumbi
+ mby. Including choice of wool colour + GF generous morning tea. Complete b
+ eginners welcome. Min 6 participants - Max 8 participants. Cost:
+LOCATION:The Artisan Forest
+URL:https://theartisanforest.com.au/product/wet-felted-bowl-workshopsaturda
+ y-12-september-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-12xxypu@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:Glenn Barkley — Impression Sessions (handbuilding & stamp making)
+  — Weekend workshop
+DESCRIPTION:A hands-on\, two-day intensive pottery workshop focused on hand
+ building techniques and creating custom stamps under the guidance of a pro
+ fessional artist.
+LOCATION:Byron School of Art\, 112 Dalley St\, Mullumbimby NSW 2482
+URL:https://www.byronschoolofart.com/glenn-barkley-impression-sessions
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1vs15ia@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T190000
+DTEND;TZID=Australia/Brisbane:20260913T210000
+SUMMARY:DAN SULTAN (SOLO)
+DESCRIPTION:An intimate solo performance by renowned Australian artist Dan 
+ Sultan at the historic Eltham Hotel.
+LOCATION:The Eltham Hotel\, Eltham
+URL:https://www.moshtix.com.au/v2/event/dan-sultan-solo/198606
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-dj4348@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:15 Sept - Life Drawing Byron
+DESCRIPTION:Your space in class is reserved once full payment has been rece
+ ived. If you cannot attend the course or forgot\, unfortunately\, your tic
+ ket is not refundable. But if you are aware you can't participate in the c
+ lass\, you are welcome to pass your ticket to someone else to take your pl
+ ace! Your spot is not transferrable after the event.
+LOCATION:Damien Lucas
+URL:https://www.damienlucassculpture.com/life-drawing-byron-shop/life-drawi
+ ng-byron-3-276fb-5fwxw-2a4zk-6688l-9bspj-kresl-bmlm6-yp3pg-8b8zk-gdp5r-dgr
+ 8a-hrkzm-r4ddt-rcwak-w8zxk-bhm8j-2mtg7
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-o2w7zt@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T190000
+DTEND;TZID=Australia/Brisbane:20260918T210000
+SUMMARY:The Star Court Theatre Games Show
+DESCRIPTION:Star Court Theatre's very own free monthly improv event\, 2 pre
+ -selected teams\, 3 judges\, 1 timekeeper\, 1 fabulous host & a faerie! If
+  you're in the audience you're safe\, the teams are already chosen! Sit ba
+ ck and enjoy the show!
+LOCATION:Star Court Theatre
+URL:http://starcourttheatre.com.au/events/sctgs26
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-kiy9z@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T200000
+DTEND;TZID=Australia/Brisbane:20260918T220000
+SUMMARY:Julian Lage
+DESCRIPTION:Julian Lage tours Australia for the first time\, continuing cel
+ ebrations of his breakthrough solo album from 2015\, 'World's Fair'.
 LOCATION:Byron Theatre
-URL:https://www.byroncentre.com.au
+URL:https://www.byroncentre.com.au/theatre-events/julian-lage
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-zp6c1f@dothings
+DTSTART;TZID=Australia/Brisbane:20260822T100000
+DTEND;TZID=Australia/Brisbane:20260912T160000
+SUMMARY:More Salt Please
+DESCRIPTION:A curated exhibition showcasing contemporary art practices\, of
+ fering a space for reflection on local culture and artistic inquiry.
+LOCATION:Lone Goat Gallery\, 28 Lawson St\, Byron Bay NSW 2481
+URL:https://www.lonegoatgallery.com/exhibitions
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-avbkez@dothings
@@ -183,6 +336,27 @@ LOCATION:Damien Lucas
 URL:https://www.damienlucassculpture.com/new-events/2020/2/18/life-drawing-
  fndma-95gdz-p4jc5-74gmg-69kdh-gcp44-p5cpa-th28y-pm9bh-5nfte-2plrc-mn7dg-p8
  jl3-jwfe9-p7t9w-ajhfb
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-bxza09@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T183000
+DTEND;TZID=Australia/Brisbane:20260908T203000
+SUMMARY:Byron Theatre Multiple Shows – Theatre
+DESCRIPTION:A theatrical performance hosted at the community-run Byron Thea
+ tre\, known for fostering local arts and diverse cultural expression.
+LOCATION:Byron Theatre\, Byron Bay
+URL:https://www.byroncentre.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-391lcd@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T190000
+DTEND;TZID=Australia/Brisbane:20260908T220000
+SUMMARY:Live Music Night at The Rails
+DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
+ musicians in an intimate\, open-air beer garden setting. Perfect for casua
+ l listening and soaking up the local atmosphere.
+LOCATION:The Railway Friendly Bar\, Byron Bay
+URL:https://therailsbyronbay.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1qnlpde@dothings
@@ -213,6 +387,27 @@ URL:https://www.byronyouththeatre.com/this-girl-laughs-this-girl-cries-this
  -girl-does-nothing/
 END:VEVENT
 BEGIN:VEVENT
+UID:byron-16i9vex@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:Movie Mixer Preview: Practical Magic 2
+DESCRIPTION:
+LOCATION:Palace Byron Bay
+URL:https://www.palacecinemas.com.au/curatif-midnight-margaritas-preview-pr
+ actical-magic-2
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1ckeckh@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T090000
+DTEND;TZID=Australia/Brisbane:20260910T200000
+SUMMARY:Screenworks Regional to Global 2026
+DESCRIPTION:A significant two-day screen industry forum connecting regional
+  creators with global opportunities\, featuring panels and discussions wit
+ h industry experts.
+LOCATION:Lennox Head Cultural Centre\, Lennox Head
+URL:https://screenworks.com.au/opportunities/regional-to-global-2026/
+END:VEVENT
+BEGIN:VEVENT
 UID:byron-xxt3k3@dothings
 DTSTART;TZID=Australia/Brisbane:20260909T100000
 DTEND;TZID=Australia/Brisbane:20260909T120000
@@ -224,6 +419,18 @@ DESCRIPTION:A casual\, untutored life drawing session with some materials p
 LOCATION:Damien Lucas
 URL:https://www.damienlucassculpture.com/new-events/2020/2/18/life-drawing-
  fndma-95gdz-p4jc5-74gmg-69kdh-gcp44-p5cpa-th28y-pm9bh-fdlrl
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-guy5dv@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T180000
+DTEND;TZID=Australia/Brisbane:20260909T203000
+SUMMARY:Wednesday Bridge
+DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
+  cards with our Bridge groups in the Sunset Room. Whether you’re an expe
+ rienced player or looking to find […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/wednesday-evening-bridge/2026-09-09/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-819q2@dothings
@@ -238,706 +445,6 @@ DESCRIPTION:With singing\, dancing\, comedy and the joys of sheer honesty\,
  d cactus lover\, and a feisty teenage talent-quest competitor.
 LOCATION:Byron Theatre
 URL:https://www.byroncentre.com.au/theatre-events/bombshells
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-x3rdwx@dothings
-DTSTART;VALUE=DATE:20260910
-DTEND;VALUE=DATE:20260911
-SUMMARY:art for the heart
-DESCRIPTION:Facilitated by local artists Paula Bannan & Leeby Sotheren. Thi
- s class is designed to relax and reset your nervous system through tapping
-  into the joy of creating art. No skill necessary! All materials provided
-LOCATION:Pack Gallery Studio\, 3 Acacia Street Byron Industrial Estate
-URL:https://www.events.humantix.com/packgallerystudio
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-15v3069@dothings
-DTSTART;VALUE=DATE:20260910
-DTEND;VALUE=DATE:20260911
-SUMMARY:Byron Seniors: Studio 55 Drama
-DESCRIPTION:An inclusive drama workshop series designed for seniors to expl
- ore performance\, character building\, and storytelling in a collaborative
-  social group.
-LOCATION:Byron Community Centre\, 69 Jonson St\, Byron Bay
-URL:https://byroncentre.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1ds6vp6@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T070000
-DTEND;TZID=Australia/Brisbane:20260910T110000
-SUMMARY:Byron Farmers Market
-DESCRIPTION:Weekly gathering of local farmers and community members promoti
- ng sustainable food practices and connection with the land.
-LOCATION:Butler Street Reserve\, Byron Bay
-URL:https://byronfarmersmarket.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1tsxwi4@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T083000
-DTEND;TZID=Australia/Brisbane:20260910T173000
-SUMMARY:EMPOWER
-DESCRIPTION:EMPOWER is a hands-on training program designed to inspire like
- -minded individuals and organisations to share Shedding’s practices\, le
- arnings\, resources and networks to empower communities near and far with 
- practical carpentry and building skills in safe and supportive environment
- s.
-LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
-URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
- tType=52990335
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1sajwn3@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T093000
-DTEND;TZID=Australia/Brisbane:20260910T113000
-SUMMARY:Art Space: Fletcher Street Cottage
-DESCRIPTION:A community-focused creative session held at Fletcher Street Co
- ttage\, offering space for artistic expression in a supportive environment
- .
-LOCATION:Fletcher Street Cottage\, Byron Bay
-URL:https://byroncentre.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-vny6ao@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T180000
-DTEND;TZID=Australia/Brisbane:20260910T200000
-SUMMARY:Dear Sunday ‘Back To Business’ Tour
-DESCRIPTION:An intimate gig featuring indie band Dear Sunday\, set within t
- he lush\, laid-back environment of the Arts Factory gardens.
-LOCATION:The Arts Factory Garden Bar\, 1 Skinners Shoot Rd\, Byron Bay NSW
-URL:https://artsfactorygardenbar.com/events
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1m0m04q@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T180000
-DTEND;TZID=Australia/Brisbane:20260910T203000
-SUMMARY:YAZMINDI
-DESCRIPTION:HOTEL BRUNSWICK | THU 10 SEPT Yazmindi’s authentic sound and 
- evocative stories are a far-reaching crowd-favourite. A cornerstone of her
-  musical prowess is her ability to craft authentic stories and evocative s
- oundscapes that build around her swelling harmonies. Yazmindi takes an hon
- est\, and sometimes tongue-in-cheek approach to authentically reflect on p
- owerful moments of love\, loss\, societal pressures\, youthful optimism\, 
- and determination. Traversing genres\, a common theme of empowerment\, esp
- ecially towards young women runs strong and true to Yazmindi’s core valu
- es. FREE ENTRY
-LOCATION:Hotel Brunswick
-URL:https://hotelbrunswick.com.au/event/yazmindi-6/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-fqdalm@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T210000
-SUMMARY:Common Wealth — Special screening + live Q&A
-DESCRIPTION:A special screening of the film followed by an in-person Q&A wi
- th director Kane Guglielmi\, focusing on the themes of the documentary.
-LOCATION:Byron Theatre\, 69 Jonson St\, Byron Bay
-URL:https://www.byroncentre.com.au/theatre-events/common-wealth
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-z6a0gy@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T193000
-DTEND;TZID=Australia/Brisbane:20260910T213000
-SUMMARY:Paradiso Presents: Havana Noche
-DESCRIPTION:An immersive live jazz and big band experience celebrating the 
- sounds of Havana in an intimate venue.
-LOCATION:Paradiso Music Room\, 6 Lawson St\, Byron Bay
-URL:https://www.eventbrite.com.au/e/paradiso-presents-havana-noche-with-kwa
- si-bruni-big-band-tickets-1999346864292
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-pulvxh@dothings
-DTSTART;VALUE=DATE:20260911
-DTEND;VALUE=DATE:20260912
-SUMMARY:The Double Life Of Veronique
-DESCRIPTION:Two women\, born on the same day in different countries\, live 
- separate lives yet share an inexplicable emotional connection. Weronika is
-  a young Polish singer with an extraordinary voice\; Véronique is a Frenc
- h music teacher who begins to sense that somewhere\, somehow\, she has nev
- er been entirely alone.
-LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
-URL:https://nimbinbushtheatre.com/events/thjedouble-life-of-veronique/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-azj6y5@dothings
-DTSTART;VALUE=DATE:20260911
-DTEND;VALUE=DATE:20260912
-SUMMARY:Upcycled Sewing and Craft Sessions 2026
-DESCRIPTION:Come along to an upcycled sewing and craft session. Sessions wi
- ll be running every Friday at The Re-Market (Tip Shop) from now until the 
- end of the year.
-LOCATION:The Re-Market\, Byron Resource Recovery Centre\, 115 The Manse Roa
- d\, Myocum\, 2481
-URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
- Upcycled-Sewing-and-Craft-Sessions-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-77d311@dothings
-DTSTART;VALUE=DATE:20260911
-DTEND;VALUE=DATE:20260912
-SUMMARY:Block Print Workshop and Pop-Up Boutique
-DESCRIPTION:A hands-on workshop focused on the traditional art of block pri
- nting\, allowing participants to design and create their own textiles.
-LOCATION:140 Jonson St\, Byron Bay
-URL:https://eventbrite.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-o7chuq@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T070000
-DTEND;TZID=Australia/Brisbane:20260911T090000
-SUMMARY:Michael Hing: How Are We Supposed To Live Like This?
-DESCRIPTION:Life is increasingly insane. Nothing makes sense. Everything is
-  chaos\, and we’re all just expected to keep on going? The planet is on 
- fire\, money is imaginary\, we are ruled over by a moronic class of preeni
- ng narcissists\, but every day you’re just meant to go to work and come 
- home and pretend you don’t notice that we’re being gouged at every cor
- ner and there are fewer and fewer Arnott’s shapes in every packet. Unrel
- ated to all this\, Michael Hing is developing a brand new hour of comedy.
-LOCATION:Brunswick Picture House\, Brunswick Heads NSW
-URL:https://brunswickpicturehouse.com/michael-hing-how-are-we-supposed-to-l
- ive-like-this-11-sep/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-14mws59@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T070000
-DTEND;TZID=Australia/Brisbane:20260911T110000
-SUMMARY:Mullumbimby Farmers Market
-DESCRIPTION:A bustling community market known for attracting locals and reg
- ional producers\, fostering a strong sense of community and connection to 
- sustainable agriculture.
-LOCATION:Mullumbimby Showground\, Mullumbimby
-URL:https://mullumfarmersmarket.org.au
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-v35hz5@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T170000
-DTEND;TZID=Australia/Brisbane:20260911T193000
-SUMMARY:Paul George — Fire Pit Fridays
-DESCRIPTION:Intimate live acoustic performance set around the outdoor fire 
- pits at Elements of Byron.
-LOCATION:Elements of Byron\, Byron Bay
-URL:https://byronbayexperience.com.au/whats-on-byron-bay/paul-george-fire-p
- it-fridays-elements-of-byron/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1pqcr6e@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
-DTEND;TZID=Australia/Brisbane:20260911T203000
-SUMMARY:Plastic Country — community film screening & panel
-DESCRIPTION:A community screening of a documentary addressing environmental
-  issues\, followed by a panel discussion with local experts and advocates.
-LOCATION:Lennox Head Cultural Centre\, Lennox Head
-URL:https://communityspaces.com.au/v1/tickets
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1sgs6qn@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
-DTEND;TZID=Australia/Brisbane:20260911T200000
-SUMMARY:Bootleg Rascal – Byron Bay
-DESCRIPTION:Live performance by indie-fusion band Bootleg Rascal\, known fo
- r their genre-bending sound\, hosted at the historic Arts Factory venue.
-LOCATION:The Arts Factory\, 1 Skinners Shoot Rd\, Byron Bay NSW
-URL:https://www.songkick.com/es/concerts/43298167-bootleg-rascal-at-arts-fa
- ctory
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-y806x8@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
-DTEND;TZID=Australia/Brisbane:20260911T200000
-SUMMARY:Brush 'N Beats x The Lord Byron Distillery | Paint & Sip Party
-DESCRIPTION:A social painting session held at a local distillery\, combinin
- g creative expression with a casual\, guided group art experience.
-LOCATION:Lord Byron Distillery\, 4 Banksia Drive\, Byron Bay NSW
-URL:https://www.eventbrite.com.au/e/brush-n-beats-x-the-lord-byron-distille
- ry-paint-sip-party-tickets-1985250526767
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-ejz09g@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T070000
-DTEND;TZID=Australia/Brisbane:20260912T090000
-SUMMARY:Ray O’Leary: I Can See O’Leary Now the Ray Has Gone
-DESCRIPTION:When Ray O’Leary (Taskmaster NZ\, Have You Been Paying Attent
- ion?\, Best Show nominee Melbourne Comedy Festival) was born\, winter chan
- ged to spring\, a new star appeared in the heavens\, and a double rainbow 
- spontaneously appeared. With this auspicious start\, it is no wonder he be
- came leader of North Korea in 1994 until his untimely death in 2011. Despi
- te this minor setback\, he found time to bring you a whole new show.
-LOCATION:Brunswick Picture House\, Brunswick Heads NSW
-URL:https://brunswickpicturehouse.com/ray-oleary-i-can-see-oleary-now-ray-h
- as-gone-12-sep/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1yql6zx@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T070000
-DTEND;TZID=Australia/Brisbane:20260912T110000
-SUMMARY:Bangalow Farmers Market
-DESCRIPTION:Community-led market in the historic village of Bangalow\, gath
- ering growers and residents for local produce and conversation.
-LOCATION:Piccabeen Park\, Bangalow
-URL:https://byronfarmersmarket.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-6ne75v@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T083000
-DTEND;TZID=Australia/Brisbane:20260912T130000
-SUMMARY:UPSKILL
-DESCRIPTION:Our UPSKILL Intro is the place to start your Shedding journey! 
- This one off 4.5 hour workshop introduces you to our space and our tools a
- t Shedding. UPSKILL is an induction and introduction to the fundamentals o
- f carpentry and building\, and an attitude towards learning that will put 
- you on the path to self-empowerment and success. It is the doorway into ou
- r world of creativity and skill-sharing – once you have completed this w
- orkshop you’re ready to jump into our future workshops.
-LOCATION:Shedding\, 18 Prince Street\, Mullumbimby
-URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
- tType=52989924
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-uisqpp@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T093000
-DTEND;TZID=Australia/Brisbane:20260912T113000
-SUMMARY:WET FELTED BOWL WORKSHOP
-DESCRIPTION:WET FELTED BOWL WORKSHOP FOR ADULTS Saturday 12 September 2026 
- 9.30am - 1.30pm Join Agnès to learn how to wet felt a bowl using colourfu
- l merino silk blends and corriedale wool in a private location in Mullumbi
- mby. Including choice of wool colour + GF generous morning tea. Complete b
- eginners welcome. Min 6 participants - Max 8 participants. Cost:
-LOCATION:The Artisan Forest
-URL:https://theartisanforest.com.au/product/wet-felted-bowl-workshopsaturda
- y-12-september-2026/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-i5nj3w@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T100000
-DTEND;TZID=Australia/Brisbane:20260912T120000
-SUMMARY:Block Print Workshop & Pop‑Up Boutique
-DESCRIPTION:A practical workshop teaching traditional block printing techni
- ques in the community space of the Home Makers Club.
-LOCATION:140 Jonson St\, Byron Bay
-URL:https://www.eventbrite.com.au/e/block-print-workshop-and-pop-up-boutiqu
- e-tickets-1998867220665
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-duk3g5@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T110000
-DTEND;TZID=Australia/Brisbane:20260912T130000
-SUMMARY:Paint 'N' Platters Watercolour Workshop
-DESCRIPTION:A relaxed social workshop focusing on watercolour techniques\, 
- designed for beginners to experiment with creativity in a supportive group
-  setting.
-LOCATION:Byron Bay
-URL:https://www.eventbrite.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-r9tkt1@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T200000
-DTEND;TZID=Australia/Brisbane:20260912T220000
-SUMMARY:NO CIGAR | Aussie Tour with special guests
-DESCRIPTION:An evening of live indie-rock at The Northern\, a classic Byron
-  live music pub known for hosting touring acts.
-LOCATION:The Northern - Byron Bay\, 35–43 Jonson St\, Byron Bay NSW
-URL:https://www.moshtix.com.au/v2/event/no-cigar-aussie-tour-with-special-g
- uests/197152
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1d08v5k@dothings
-DTSTART;VALUE=DATE:20260913
-DTEND;VALUE=DATE:20260914
-SUMMARY:SunDance - THE UNFURLING
-DESCRIPTION:A community-oriented movement event focused on authentic\, grou
- nded expression and social connection in a shared space.
-LOCATION:Mullumbimby Civic Memorial Hall
-URL:https://www.facebook.com/events/928551293656658
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-13nx16b@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T113000
-DTEND;TZID=Australia/Brisbane:20260913T133000
-SUMMARY:Cycle Workshop Byron Bay
-DESCRIPTION:A somatic and wellness-oriented workshop focused on the menstru
- al cycle\, aimed at providing education and community support for body lit
- eracy.
-LOCATION:NIRMALA TEMPLE\, 11 Banksia Drive\, Byron Bay NSW
-URL:https://happeningnext.com/event/cycle-workshop-byron-bay-eid1ef0l412n47
- a
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-12swcn1@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T160000
-DTEND;TZID=Australia/Brisbane:20260913T200000
-SUMMARY:SUB-TRIBE
-DESCRIPTION:SUB-TRIBE LIVE AT HOTEL BRUNSWICK SUNDAY 13 SEPTEMBER | FROM 4P
- M | FREE EVENT From the roots of Aotearoa (New Zealand) comes SUB-TRIBE 
- — a 7-piece dub-fusion powerhouse delivering heavy bass\, glitchy beats 
- and soaring harmonies. Blending blues-soaked dub\, chunky skank reggae\, j
- azz-hop and ragga dancehall\, SUB-TRIBE take audiences on a genre-hopping 
- journey that keeps dancefloors moving and heads nodding. Known for their h
- igh-energy live shows and feel-good vibes\, SUB-TRIBE have carved out a so
- und often described as “Unprecedented Dub-Fusion.” Since forming in 20
- 17 and touring alongside Salmonella Dub\, the band has built a strong repu
- tation across Australia and New Zealand\, appearing at major festivals inc
- luding WOMADelaide\, Good Love Festival\, Kuranda Roots and Island Vibes. 
- With releases spanning deep\, rolling dub\, soulful lovers rock and bass-d
- riven dancefloor anthems\, SUB-TRIBE bring a live show that’s equal part
- s groove\, grit and celebration. w/ support | Free Entry Come skank\, sway
-  and get deep in the low end.
-LOCATION:Hotel Brunswick
-URL:https://hotelbrunswick.com.au/event/sub-tribe-3/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1vs15ia@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T190000
-DTEND;TZID=Australia/Brisbane:20260913T210000
-SUMMARY:DAN SULTAN (SOLO)
-DESCRIPTION:An intimate solo performance by renowned Australian artist Dan 
- Sultan at the historic Eltham Hotel.
-LOCATION:The Eltham Hotel\, Eltham
-URL:https://www.moshtix.com.au/v2/event/dan-sultan-solo/198606
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-dj4348@dothings
-DTSTART;VALUE=DATE:20260915
-DTEND;VALUE=DATE:20260916
-SUMMARY:15 Sept - Life Drawing Byron
-DESCRIPTION:Your space in class is reserved once full payment has been rece
- ived. If you cannot attend the course or forgot\, unfortunately\, your tic
- ket is not refundable. But if you are aware you can't participate in the c
- lass\, you are welcome to pass your ticket to someone else to take your pl
- ace! Your spot is not transferrable after the event.
-LOCATION:Damien Lucas
-URL:https://www.damienlucassculpture.com/life-drawing-byron-shop/life-drawi
- ng-byron-3-276fb-5fwxw-2a4zk-6688l-9bspj-kresl-bmlm6-yp3pg-8b8zk-gdp5r-dgr
- 8a-hrkzm-r4ddt-rcwak-w8zxk-bhm8j-2mtg7
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-163q3j3@dothings
-DTSTART;TZID=Australia/Brisbane:20260916T100000
-DTEND;TZID=Australia/Brisbane:20260916T120000
-SUMMARY:Morning Life Drawing Byron
-DESCRIPTION:A casual\, untutored life drawing session with some materials p
- rovided. Life drawing Byron is held every Wednesday Morning with a differe
- nt model and a variety of poses. so come and join us! All levels welcome\,
-  including those who think they can’t draw! Every Wednesday 10am - 12pm
-LOCATION:Damien Lucas
-URL:https://www.damienlucassculpture.com/new-events/2020/2/18/life-drawing-
- fndma-95gdz-p4jc5-74gmg-69kdh-gcp44-p5cpa-th28y-pm9bh-fdlrl-zatgx
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1gtl5pq@dothings
-DTSTART;VALUE=DATE:20260918
-DTEND;VALUE=DATE:20260919
-SUMMARY:Stop Making Sense
-DESCRIPTION:David Byrne walks onto an empty stage carrying a guitar and a c
- assette player. “Hi\, I’ve got a tape I want to play.” From that won
- derfully simple beginning\, Stop Making Sense gradually builds into one of
-  the most exhilarating concert films ever made.
-LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
-URL:https://nimbinbushtheatre.com/events/stop-making-sense/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1rdu1cw@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T150000
-DTEND;TZID=Australia/Brisbane:20260918T170000
-SUMMARY:Private Workshop (sold out)
-DESCRIPTION:#block-8b34ab08adac19fb3e41 .image-styles-wrapper { clip-path: 
- var(--product-shape-mask)\; -webkit-clip-path: var(--product-shape-mask)\;
-  --product-shape-mask: unset\; } #block-8b34ab08adac19fb3e41 .image-styles
- -wrapper { overflow: hidden\; position: relative\; --border-top-left-radiu
- s: 0px\; --border-top-right-radius: 0px\; --border-bottom-left-radius: 0px
- \; --border-bottom-right-radius: 0px\;border-radius: var(--border-top-left
- -radius) var(--border-top-right-radius) var(--border-bottom-right-radius) 
- var(--border-bottom-left-radius)\; --product-block-aspect-ratio: 1 / 1\; }
- @media screen and (max-width: 767px) { #block-8b34ab08adac19fb3e41 .image-
- styles-wrapper { --border-top-left-radius: 0px\; --border-top-right-radius
- : 0px\; --border-bottom-left-radius: 0px\; --border-bottom-right-radius: 0
- px\; border-radius: var(--border-top-left-radius) var(--border-top-right-r
- adius) var(--border-bottom-right-radius) var(--border-bottom-left-radius)\
- ; --product-block-aspect-ratio: 1 / 1\; } } Private workshop from A$350.00
-  Date: Select Date Friday September 4th 2:30pm-4:30pm Sunday September 6th
-  10am-12pm Thursday September 10th 10am-12pm Tuesday September 15th 10am-1
- 2pm Sunday September 20th 10am-12pm Thursday September 24th 10am-12pm Tues
- day 29th 10am-12pm Friday October 2nd 3pm-5pm Sunday October 4th 10am-12pm
-  Thursday October 8th 10am-12pm Tuesday October 13th 10am-12pm Friday Octo
- ber 16th 3pm-5pm Sunday October 18th 10am-12pm Wednesday October 21st 10am
- -12pm Wheel/Hand: Select Wheel/Hand Wheel throwing Hand building People: S
- elect People 1 person 2 people Add to cart Only 1 available Only 1 availab
- le Only 1 available Only 1 available Only 1 available Only 1 available Onl
- y 1 available Only 1 available Only 1 available Only 1 available Only 1 av
- ailable Only 1 available Only 1 available Only 1 available Only 1 availabl
- e Only 1 available Only 1 available Only 1 available Only 1 available Only
-  1 available Only 1 available Only 1 available Only 1 available Only 1 ava
- ilable Only 1 available Only 1 available Only 1 available Only 1 available
-  Only 1 available Only 1 available Only 1 available Only 1 available Only 
- 1 available Only 1 available Only 1 available Only 1 available Only 1 avai
- lable Only 1 available Only 1 available Only 1 available Only 1 available 
- Only 1 available Only 1 available Only 1 available Only 1 available Only 1
-  available Only 1 available Only 1 available Only 1 available Only 1 avail
- able Only 1 available #block-8b34ab08adac19fb3e41 { --opacity: 100%\; --tr
- anslate-x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --scale-x: 100%\;
-  --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-x: 50%\; --o
- rigin-y: 50%\; --block-transform: none\; opacity: var(--opacity\, 1)\; tra
- nsform: var(--block-transform)\; transform-origin: var(--origin-x) var(--o
- rigin-y)\; } #block-8b34ab08adac19fb3e41 { --product-block-display-image: 
- block\; --product-block-display-title: inline-block\; --product-block-disp
- lay-price: block\; --product-block-display-excerpt: none\; --product-block
- -display-purchase-controls: flex\; --product-block-display-variant-control
- s: block\; --product-block-display-quantity: block\; --product-block-displ
- ay-quick-view: none\; --product-block-alignment: left\; --product-block-di
- splay-quantity: block\; } [data-website-component-id="8b34ab08adac19fb3e41
- "] { border-color: var(--product-block-stroke-color)\; } @media screen and
-  (max-width: 767px) { #block-8b34ab08adac19fb3e41 { --product-block-displa
- y-image: block\; --product-block-display-title: inline-block\; --product-b
- lock-display-price: block\; --product-block-display-excerpt: none\; --prod
- uct-block-display-purchase-controls: flex\; --product-block-display-varian
- t-controls: block\; --product-block-display-quantity: block\; --product-bl
- ock-display-quick-view: none\; --product-block-alignment: left\; } } #bloc
- k-8b34ab08adac19fb3e41 { } #block-8b34ab08adac19fb3e41 .product-block-cont
- ent { } #block-8b34ab08adac19fb3e41 { mix-blend-mode: var(--product-block-
- blend-mode )\; border-radius: var(--product-block-border-radius)\; } @medi
- a screen and (max-width: 767px) { #block-8b34ab08adac19fb3e41 { } } @media
-  screen and (max-width: 767px) { #block-8b34ab08adac19fb3e41 .product-bloc
- k-content { } } @media screen and (max-width: 767px) { } document.querySel
- ector('[data-definition-name="website.components.product"] .product-block'
- ).classList.add('is-first-product-block')\; Join Grace from Muckware for p
- rivate wheel-throwing or hand building pottery classes in the Byron Bay Hi
- nterland. Tailored private workshops to your skill level\, whether you're 
- new to clay or looking to build on your skills\, this one-on-one session i
- s a personalised class to suit your ambitions and love of clay. Enjoy full
-  use of the studio while you immerse yourself in 2 hours of hands-on ceram
- ic practice. No experience is needed. Come with a project in mind\, Pinter
- est mood board or simply arrive on the day and see what you create. Great 
- for individuals or pairs. #block-00c85bd57bf9fe097cb2 { --stroke-style: no
- ne\;--stroke-thickness: 6px\; } #block-00c85bd57bf9fe097cb2 .sqs-html-cont
- ent { --tweak-text-block-padding: 6% 6% 6% 6%\; --tweak-text-block-padding
- : initial\; } #block-00c85bd57bf9fe097cb2 { mix-blend-mode: var(--tweak-te
- xt-block-blend )\; border-radius: var(--tweak-text-block-radius)\; } #bloc
- k-00c85bd57bf9fe097cb2 { --tweak-text-block-radius: 0px 0px 0px 0px\; } #b
- lock-00c85bd57bf9fe097cb2 { } @media screen and (max-width: 767px) { #bloc
- k-00c85bd57bf9fe097cb2 { } } @media screen and (max-width: 767px) { #block
- -00c85bd57bf9fe097cb2 .sqs-html-content { } } @media screen and (max-width
- : 767px) { } What to expect? All tools\, aprons\, clay\, glaze\, moulds ar
- e supplied. Wheel throwing - Beginners will learn to create simple cup and
-  ceramic bowl forms. Intermediate and practiced potters can explore advanc
- ed shapes like ceramic plates or taller pieces. Grace will handle trimming
-  and glazing. Hand building workshop - You can focus on one large ceramic 
- art piece or create 3 to 5 smaller works. You’ll learn a mix of pinch po
- t\, coiling\, and slab-building techniques used in handmade pottery. Prici
- ng Wheel throwing Each person will have their own wheel. Includes 3-5 whee
- l thrown pieces. Trimmed\, fired and glazed in your choice of glaze. $350 
- for 1 person (private session) $220 per person for 2 people (Maximum 2 peo
- ple per class) Hand building Includes 1-5 hand built pieces (depending on 
- size) fired and glazed in your choice of glaze. $350 for one person $220 p
- er person for two people Cancellation policy Rescheduling is available up 
- to 24 hours prior to booking date. Cancellation and full refund available 
- 48 hours prior to booking date. #block-f9439fc645e6a0206005 { --accordion-
- item-padding-top: 30px\; --accordion-item-padding-bottom: 30px\; --accordi
- on-item-padding-left: 0px\; --accordion-item-padding-right: 0px\; --accord
- ion-icon-size: 24px\; --accordion-icon-thickness: 3px\; --accordion-descri
- ption-padding-top: 0px\; --accordion-description-padding-bottom: 30px\; --
- accordion-description-padding-left: 0px\; --accordion-description-padding-
- right: 0px\; --accordion-description-width: 70%\; --accordion-divider-thic
- kness: 1px\; --accordion-divider-opacity: 1\; } #block-f9439fc645e6a020600
- 5 { --stroke-style: solid\;--stroke-thickness: 2px\; --tweak-accordion-blo
- ck-stroke-color: hsla(var(--white-hsl)\, 1) \; border-width: var(--stroke-
- thickness)\; border-style: var(--stroke-style)\; box-sizing: border-box\; 
- height: 100%\; } #block-f9439fc645e6a0206005 .accordion-items-container { 
- --tweak-accordion-block-padding: 6% 6% 6% 6%\; padding: var(--tweak-accord
- ion-block-padding)\; } #block-f9439fc645e6a0206005 { mix-blend-mode: var(-
- -tweak-accordion-block-blend )\; border-radius: var(--tweak-accordion-bloc
- k-radius)\; } #block-f9439fc645e6a0206005 { --tweak-accordion-block-radius
- : 0px 0px 0px 0px\; }#block-f9439fc645e6a0206005 { border-radius: var(--tw
- eak-accordion-block-radius)\; } #block-f9439fc645e6a0206005 { }
-LOCATION:Muckware\, 853 Hinterland Way
-URL:https://www.muckware.com/privateworkshops/privateworkshop-sep18
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1xy9tfo@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T180000
-DTEND;TZID=Australia/Brisbane:20260918T220000
-SUMMARY:MELBOURNE SKA ORCHESTRA
-DESCRIPTION:Monte Loco Rides Again… Melbourne Ska Orchestra are coming to
-  Hotel Brunswick Friday 18th September. Don’t miss out! Hot off the heel
- s of a wild year touring Canada and Australia in 2025\, Melbourne Ska Orch
- estra just can’t keep still. The spaghetti western wagon trail rolls on 
- with the super deluxe edition of their acclaimed album The Ballad of Monte
-  Loco with all the faves\, plus a swag of brand-new tracks\, blistering li
- ve recordings\, and honky tonk renditions of MSO staples. It’s braver\, 
- meaner and wilder than anything they’ve done before. So saddle up\, part
- ner: this here posse is riding into a town near you\, and you do not want 
- to miss the showdown. Playing Hotel Brunswick Friday 18th September | Door
- s 6PM
-LOCATION:Hotel Brunswick
-URL:https://hotelbrunswick.com.au/event/melbourne-ska-orchestra/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-o2w7zt@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T190000
-DTEND;TZID=Australia/Brisbane:20260918T210000
-SUMMARY:The Star Court Theatre Games Show
-DESCRIPTION:Star Court Theatre's very own free monthly improv event\, 2 pre
- -selected teams\, 3 judges\, 1 timekeeper\, 1 fabulous host & a faerie! If
-  you're in the audience you're safe\, the teams are already chosen! Sit ba
- ck and enjoy the show!
-LOCATION:Star Court Theatre
-URL:http://starcourttheatre.com.au/events/sctgs26
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-17fk05@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T200000
-DTEND;TZID=Australia/Brisbane:20260919T220000
-SUMMARY:The Honey Sliders' Mix Tape
-DESCRIPTION:Press rewind and start from the top - this is The Honey Sliders
- ’ Mix Tape. A carefully curated collection of songs\, arranged in a spec
- ial sequence to celebrate the music that inspired\, influenced\, and shape
- d the band’s journey. Like the classic cassette compilations of decades 
- past\, The Mix Tape unfolds across two sides\, taking audiences on a music
- al road trip through beloved classics\, hidden treasures\, and unforgettab
- le moments from the golden age of rock\, soul\, country\, folk\, and blues
- .
-LOCATION:Byron Theatre
-URL:https://www.byroncentre.com.au/theatre-events/the-honey-sliders-mix-tap
- e
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-thpp94@dothings
-DTSTART;VALUE=DATE:20260920
-DTEND;VALUE=DATE:20260921
-SUMMARY:Colours of Time
-DESCRIPTION:Brought together by the unexpected inheritance of an abandoned 
- house in rural Normandy\, four cousins discover they share a mysterious fa
- mily history. In 1895\, their ancestor Adèle\, then aged 21\, leaves her 
- hometown to search for her mother in Paris. She discovers a city on the cu
- sp of modernity\, bustling with new-found avant-garde creativity\, with th
- e rise of photography and the birth of Impressionist painting. As her desc
- endants retrace her steps\, they unravel Adèle’s surprising past. The t
- wo timelines of 1895 and 2024 intertwine and collide\, confronting the cou
- sins’ contemporary attitudes with life in late 19th century Paris\, leav
- ing everyone’s future forever changed.
-LOCATION:Star Court Theatre
-URL:http://starcourttheatre.com.au/events/timecolours
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-xl7l4y@dothings
-DTSTART;VALUE=DATE:20260920
-DTEND;VALUE=DATE:20260921
-SUMMARY:Federal Community Market
-DESCRIPTION:Federal Community market is held on the third Sunday of the mon
- th at the Federal Halls.
-LOCATION:Federal Halls\, 466 Federal Drive\, Federal 2480
-URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
- Federal-Community-Market
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1grbph5@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T160000
-DTEND;TZID=Australia/Brisbane:20260920T200000
-SUMMARY:FULL MOON REGGAE PARTY FT. SKYEATER
-DESCRIPTION:FULL MOON REGGAE PARTY | Sunday 20 September\, from 4PM | Free 
- Event The beer garden comes alive under the full moon for a soulful reggae
-  celebration! Join us for an arvo of live music\, good vibes\, and cold dr
- inks\, where the rhythm moves your body and the music lifts your spirit. G
- et ready for SKYEATER — dreamy dub\, trip-hop\, and soulful pop with rev
- erb-soaked piano\, soaring vocals\, and reggae-infused beats. Changing the
-  world one song at a time\, Sky Eater is here to have fun\, spread some jo
- y\, and lift your spirit — all at once! So gather your crew\, feel the b
- eat\, and get on board the full moon reggae celebration!
-LOCATION:Hotel Brunswick
-URL:https://hotelbrunswick.com.au/event/full-moon-reggae-ft-skyeater/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1rca85d@dothings
-DTSTART;VALUE=DATE:20220727
-DTEND;VALUE=DATE:20220728
-SUMMARY:Piano Bar
-DESCRIPTION:BYRON BAY PIANO BAR @THE NORTHERN EVERY THURSDAY TO SATURDAY
-LOCATION:Great Northern Hotel
-URL:https://thenorthern.com.au/event/piano-bar/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-zp6c1f@dothings
-DTSTART;TZID=Australia/Brisbane:20260822T100000
-DTEND;TZID=Australia/Brisbane:20260912T160000
-SUMMARY:More Salt Please
-DESCRIPTION:A curated exhibition showcasing contemporary art practices\, of
- fering a space for reflection on local culture and artistic inquiry.
-LOCATION:Lone Goat Gallery\, 28 Lawson St\, Byron Bay NSW 2481
-URL:https://www.lonegoatgallery.com/exhibitions
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1oa62ai@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T080000
-DTEND;TZID=Australia/Brisbane:20260908T110000
-SUMMARY:New Brighton Farmers Market
-DESCRIPTION:A community-focused market featuring local growers and makers\,
-  ideal for engaging with the local food system and connecting with the Nor
- th Byron community.
-LOCATION:New Brighton Oval\, New Brighton
-URL:https://newbrightonfarmersmarket.org.au
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1tbhts3@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T111500
-DTEND;TZID=Australia/Brisbane:20260908T131500
-SUMMARY:Tai Chi
-DESCRIPTION:This gentle and flowing Tai Chi course is based on a program de
- veloped by Dr Paul Lam for people with arthritis\, but is suitable for any
- one looking to improve their strength\, flexibility and balance.
-LOCATION:Byron Community Centre
-URL:https://www.byroncentre.com.au/community-events/tai-chi
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-bxza09@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T183000
-DTEND;TZID=Australia/Brisbane:20260908T203000
-SUMMARY:Byron Theatre Multiple Shows – Theatre
-DESCRIPTION:A theatrical performance hosted at the community-run Byron Thea
- tre\, known for fostering local arts and diverse cultural expression.
-LOCATION:Byron Theatre\, Byron Bay
-URL:https://www.byroncentre.com.au/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1q6y8vl@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T183000
-DTEND;TZID=Australia/Brisbane:20260908T203000
-SUMMARY:Trivia Tuesdays
-DESCRIPTION:Every Tuesday Free Entry Register 6.15pm Play 6.30pm Venue: Spo
- rts Lounge MC: Sean C Alternating with Mitch Prizes: 1st: $100 RSL Gift Ca
- rd 2nd: $50 RSL Gift Card 3rd $25 RSL Gift Card Bonus Round: $10 Gift Card
-  Head’s or Tails: $10 Gift Card Rules: No Electronic Devices: Use of mob
- ile phones or other electronic […]
-LOCATION:Level One\, 1 Grant St\, Ballina
-URL:https://ballinarsl.com.au/event/trivia-tuesdays/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-391lcd@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T190000
-DTEND;TZID=Australia/Brisbane:20260908T220000
-SUMMARY:Live Music Night at The Rails
-DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
- musicians in an intimate\, open-air beer garden setting. Perfect for casua
- l listening and soaking up the local atmosphere.
-LOCATION:The Railway Friendly Bar\, Byron Bay
-URL:https://therailsbyronbay.com/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-16i9vex@dothings
-DTSTART;VALUE=DATE:20260909
-DTEND;VALUE=DATE:20260910
-SUMMARY:Movie Mixer Preview: Practical Magic 2
-DESCRIPTION:
-LOCATION:Palace Byron Bay
-URL:https://www.palacecinemas.com.au/curatif-midnight-margaritas-preview-pr
- actical-magic-2
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1ipmep8@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T190000
-DTEND;TZID=Australia/Brisbane:20260909T220000
-SUMMARY:Live Music Night at The Rails
-DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
- musicians in an intimate\, open-air beer garden setting. Perfect for casua
- l listening and soaking up the local atmosphere.
-LOCATION:The Railway Friendly Bar\, Byron Bay
-URL:https://therailsbyronbay.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-6ob6ss@dothings
@@ -960,17 +467,25 @@ URL:https://www.palacecinemas.com.au/st-ali-italian-film-festival-prosecco-
  preview-life-is-life
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1au5u3o@dothings
+UID:byron-15v3069@dothings
 DTSTART;VALUE=DATE:20260910
 DTEND;VALUE=DATE:20260911
-SUMMARY:The Business of Doing Business
-DESCRIPTION:A practical four-part workshop series built by Northern Rivers 
- business owners and operators\, for Northern Rivers business owners and op
- erators\, around the real decisions businesses are dealing with right now.
-LOCATION:Southern Cross University\, Lismore Campus\, Military Rd\, East Li
- smore\, 2480
-URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
- The-Business-of-Doing-Business
+SUMMARY:Byron Seniors: Studio 55 Drama
+DESCRIPTION:An inclusive drama workshop series designed for seniors to expl
+ ore performance\, character building\, and storytelling in a collaborative
+  social group.
+LOCATION:Byron Community Centre\, 69 Jonson St\, Byron Bay
+URL:https://byroncentre.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-kjrxpi@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T093000
+DTEND;TZID=Australia/Brisbane:20260910T113000
+SUMMARY:Art Space: Fletcher Street Cottage
+DESCRIPTION:Express yourself through art! Whether it's painting\, drawing\,
+  clay or collage\, this is your chance to explore your creativity.
+LOCATION:Byron Community Centre
+URL:https://www.byroncentre.com.au/community-events/byron-art-space
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-18e9kg@dothings
@@ -1089,6 +604,16 @@ LOCATION:Muckware\, 853 Hinterland Way
 URL:https://www.muckware.com/privateworkshops/privateworkshop-sep10
 END:VEVENT
 BEGIN:VEVENT
+UID:byron-vny6ao@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T180000
+DTEND;TZID=Australia/Brisbane:20260910T200000
+SUMMARY:Dear Sunday ‘Back To Business’ Tour
+DESCRIPTION:An intimate gig featuring indie band Dear Sunday\, set within t
+ he lush\, laid-back environment of the Arts Factory gardens.
+LOCATION:The Arts Factory Garden Bar\, 1 Skinners Shoot Rd\, Byron Bay NSW
+URL:https://artsfactorygardenbar.com/events
+END:VEVENT
+BEGIN:VEVENT
 UID:byron-1lsrdji@dothings
 DTSTART;TZID=Australia/Brisbane:20260910T190000
 DTEND;TZID=Australia/Brisbane:20260910T210000
@@ -1100,63 +625,39 @@ LOCATION:Byron Theatre\, Byron Community Centre
 URL:https://www.byroncentre.com.au/bct/whats-on
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1ecjgye@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T220000
-SUMMARY:Live Music Night at The Rails
-DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
- musicians in an intimate\, open-air beer garden setting. Perfect for casua
- l listening and soaking up the local atmosphere.
-LOCATION:The Railway Friendly Bar\, Byron Bay
-URL:https://therailsbyronbay.com/
+UID:byron-z6a0gy@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T193000
+DTEND;TZID=Australia/Brisbane:20260910T213000
+SUMMARY:Paradiso Presents: Havana Noche
+DESCRIPTION:An immersive live jazz and big band experience celebrating the 
+ sounds of Havana in an intimate venue.
+LOCATION:Paradiso Music Room\, 6 Lawson St\, Byron Bay
+URL:https://www.eventbrite.com.au/e/paradiso-presents-havana-noche-with-kwa
+ si-bruni-big-band-tickets-1999346864292
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-54qe2t@dothings
+UID:byron-azj6y5@dothings
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
-SUMMARY:MUM – A STORY
-DESCRIPTION:This is a fundraiser for the premiere production of Stephen Edg
- ar’s "The Eldershaw Chronicles" adapted for the stage and directed by Gr
- egory Aitken designed by Sunita Bailey (When The Rain Stops Falling).
-LOCATION:Drill Hall Theatre Company
-URL:https://drillhalltheatre.org.au/mum-a-story/
+SUMMARY:Upcycled Sewing and Craft Sessions 2026
+DESCRIPTION:Come along to an upcycled sewing and craft session. Sessions wi
+ ll be running every Friday at The Re-Market (Tip Shop) from now until the 
+ end of the year.
+LOCATION:The Re-Market\, Byron Resource Recovery Centre\, 115 The Manse Roa
+ d\, Myocum\, 2481
+URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
+ Upcycled-Sewing-and-Craft-Sessions-2026
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-82j4wq@dothings
-DTSTART;VALUE=DATE:20260911
-DTEND;VALUE=DATE:20260912
-SUMMARY:Build Your Own Website\, Hands-On WordPress Masterclass
-DESCRIPTION:Hands-on masterclass designed for entrepreneurs\, freelancers\,
-  creatives\, and small business owners who want to create a professional w
- ebsite themselves without needing advanced coding skills.
-LOCATION:Mullum
-URL:https://byroncollege.org.au/course-details/?course_id=93360&course_type
- =w
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1oye4es@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T133000
-DTEND;TZID=Australia/Brisbane:20260911T153000
-SUMMARY:Victorian State Ballet presents Beauty and The Beast
-DESCRIPTION:Featuring internationally recognised artists in leading roles i
- n a rich display of outstanding skill! One of the world’s most loved fai
- ry tale classics is retold through excellent staging\, beautiful costumes\
- , superb classical ballet skill and choreography which honour the spirit o
- f this magical work - an inspiring\, impacting\, entertaining and memorabl
- e experience for the whole family!
-LOCATION:Byron Theatre
-URL:https://www.byroncentre.com.au/theatre-events/victorian-state-ballet-pr
- esents-beauty-and-the-beast
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-uzx58p@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T183000
-DTEND;TZID=Australia/Brisbane:20260911T203000
-SUMMARY:Line Dancing
-DESCRIPTION:YEEHAW\, BALLINA! Line Dancing is back on Fri Sept 11th! Free E
- ntry
-LOCATION:The Courtyard
-URL:https://www.shawsbayhotel.com.au/whats-on/line-dancing/
+UID:byron-1sgs6qn@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:Bootleg Rascal – Byron Bay
+DESCRIPTION:Live performance by indie-fusion band Bootleg Rascal\, known fo
+ r their genre-bending sound\, hosted at the historic Arts Factory venue.
+LOCATION:The Arts Factory\, 1 Skinners Shoot Rd\, Byron Bay NSW
+URL:https://www.songkick.com/es/concerts/43298167-bootleg-rascal-at-arts-fa
+ ctory
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-s7lwwm@dothings
@@ -1169,139 +670,77 @@ LOCATION:Byron Theatre\, Byron Community Centre
 URL:https://www.byroncentre.com.au/bct/whats-on
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-us08c5@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T190000
-DTEND;TZID=Australia/Brisbane:20260911T220000
-SUMMARY:Live Music Night at The Rails
-DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
- musicians in an intimate\, open-air beer garden setting. Perfect for casua
- l listening and soaking up the local atmosphere.
-LOCATION:The Railway Friendly Bar\, Byron Bay
-URL:https://therailsbyronbay.com/
+UID:byron-ejz09g@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T070000
+DTEND;TZID=Australia/Brisbane:20260912T090000
+SUMMARY:Ray O’Leary: I Can See O’Leary Now the Ray Has Gone
+DESCRIPTION:When Ray O’Leary (Taskmaster NZ\, Have You Been Paying Attent
+ ion?\, Best Show nominee Melbourne Comedy Festival) was born\, winter chan
+ ged to spring\, a new star appeared in the heavens\, and a double rainbow 
+ spontaneously appeared. With this auspicious start\, it is no wonder he be
+ came leader of North Korea in 1994 until his untimely death in 2011. Despi
+ te this minor setback\, he found time to bring you a whole new show.
+LOCATION:Brunswick Picture House\, Brunswick Heads NSW
+URL:https://brunswickpicturehouse.com/ray-oleary-i-can-see-oleary-now-ray-h
+ as-gone-12-sep/
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1t8gu1e@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T190000
-DTEND;TZID=Australia/Brisbane:20260911T210000
-SUMMARY:Victorian State Ballet presents Beauty and The Beast
-DESCRIPTION:The Victorian State Ballet proudly presents Beauty and The Beas
- t.
-LOCATION:Byron Community Centre
-URL:https://www.byroncentre.com.au/theatre-events/victorian-state-ballet-pr
- esents-beauty-and-the-beast
+UID:byron-i5nj3w@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T100000
+DTEND;TZID=Australia/Brisbane:20260912T120000
+SUMMARY:Block Print Workshop & Pop‑Up Boutique
+DESCRIPTION:A practical workshop teaching traditional block printing techni
+ ques in the community space of the Home Makers Club.
+LOCATION:140 Jonson St\, Byron Bay
+URL:https://www.eventbrite.com.au/e/block-print-workshop-and-pop-up-boutiqu
+ e-tickets-1998867220665
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1mkp342@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T080000
+UID:byron-1nq29qg@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T110000
 DTEND;TZID=Australia/Brisbane:20260912T130000
-SUMMARY:Terrace Market (Haven Gallery)
-DESCRIPTION:A community-oriented market hosted by Haven Gallery\, featuring
-  local art\, design\, and creative goods in a central Byron setting.
-LOCATION:Haven Gallery\, 102 Jonson St\, Byron Bay NSW
-URL:https://events.humanitix.com/terrace-market
+SUMMARY:Paint ‘N’ Platters — watercolour workshop with grazing platte
+ rs
+DESCRIPTION:A hands-on watercolour painting workshop paired with food\, aim
+ ed at fostering creative connection in a group environment.
+LOCATION:Byron Bay Cavanbah Centre - Sports & Cultural Complex\, 249 Ewings
+ dale Rd\, Byron Bay NSW
+URL:https://www.eventbrite.com.au/e/paint-n-platters-watercolour-workshop-w
+ ith-grazing-platters-tickets-1997527926801
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-y8ygvk@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T180000
-DTEND;TZID=Australia/Brisbane:20260912T210000
-SUMMARY:Ben Whiting
-DESCRIPTION:Saturday 12 September Free from 6pm Born by the sea in Northern
-  NSW\, BW started writing songs and formed his first band at age 12. Unlik
- e most kids\, BW was touring as an early teen and being mentored by Buzz B
- idstrup (THE ANGELS & GANGgajang) experiencing & creating a career that ha
- s seen him share […]
-LOCATION:Ballina RSL Boardwalk\, 1 Grant Street\, Ballina\, New South Wales
- \, 2478
-URL:https://ballinarsl.com.au/event/ben-whiting/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-b7gzpw@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T190000
+UID:byron-r9tkt1@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T200000
 DTEND;TZID=Australia/Brisbane:20260912T220000
-SUMMARY:Live Music Night at The Rails
-DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
- musicians in an intimate\, open-air beer garden setting. Perfect for casua
- l listening and soaking up the local atmosphere.
-LOCATION:The Railway Friendly Bar\, Byron Bay
-URL:https://therailsbyronbay.com/
+SUMMARY:NO CIGAR | Aussie Tour with special guests
+DESCRIPTION:An evening of live indie-rock at The Northern\, a classic Byron
+  live music pub known for hosting touring acts.
+LOCATION:The Northern - Byron Bay\, 35–43 Jonson St\, Byron Bay NSW
+URL:https://www.moshtix.com.au/v2/event/no-cigar-aussie-tour-with-special-g
+ uests/197152
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-ouw07f@dothings
-DTSTART;VALUE=DATE:20260913
-DTEND;VALUE=DATE:20260914
-SUMMARY:Wheels Across Australia
-DESCRIPTION:
-LOCATION:Kyogle Cinemas
-URL:https://www.kyoglecinemas.com.au/now-showing/wheels-across-australia/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-iiu2od@dothings
-DTSTART;VALUE=DATE:20260913
-DTEND;VALUE=DATE:20260914
-SUMMARY:Cacao Ceremony
-DESCRIPTION:Join Lisa for a transformative cacao ceremony that nurtures the
-  heart and soul. Experience the magic of ceremonial cacao\, guided meditat
- ion\, and intention-setting in a sacred\, welcoming space. Immerse yoursel
- f in ambient music by Michael Skinner as you connect deeply with yourself 
- and the moment. Let this ceremony be a time for reflection\, healing\, and
-  opening to new possibilities.
-LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
-URL:https://nimbinbushtheatre.com/events/cacao-ceremony-2/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-ydctcp@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T110000
-DTEND;TZID=Australia/Brisbane:20260913T130000
-SUMMARY:NURTURE — Prenatal Yin Yoga
-DESCRIPTION:A grounded\, somatic-focused yoga session emphasizing gentle mo
- vement and breath\, avoiding commercial wellness trends.
-LOCATION:Sol Method studio\, 4/142 Bangalow Rd\, Byron Bay
-URL:https://www.solmethod.com.au/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-7938kc@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T150000
-DTEND;TZID=Australia/Brisbane:20260913T170000
-SUMMARY:Solace Sunday Session
-DESCRIPTION:Dance your way into the long weekend with our Solace Sunday Ses
- sion happening this Sunday from 3pm until late.Deep and minimal house from
-  SPLF\, ITOMAN\, GSKIN and Mitsukaze. Plus special...
-LOCATION:Common People Brewing Co.
-URL:https://commonpeoplebrewing.com.au/blogs/news/solace-sunday-session
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1qo1t2r@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T190000
-DTEND;TZID=Australia/Brisbane:20260913T220000
-SUMMARY:Live Music Night at The Rails
-DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
- musicians in an intimate\, open-air beer garden setting. Perfect for casua
- l listening and soaking up the local atmosphere.
-LOCATION:The Railway Friendly Bar\, Byron Bay
-URL:https://therailsbyronbay.com/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-jxlmys@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T163000
-DTEND;TZID=Australia/Brisbane:20260914T183000
-SUMMARY:THE BOX SHOW by Junkyard Beats
-DESCRIPTION:Get ready for THE BOX SHOW — an award-winning\, interactive f
- amily theatre adventure from Junkyard Beats \, directed and co-written by 
- Nigel Turner-Carroll .
-LOCATION:Byron Theatre
-URL:https://www.byroncentre.com.au/theatre-events/the-box-show-by-junkyard-
- beats
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-chm3zi@dothings
-DTSTART;VALUE=DATE:20260915
-DTEND;VALUE=DATE:20260916
-SUMMARY:New Brighton Farmers Market
-DESCRIPTION:The New Brighton Farmers Market is held every Tuesday morning a
- t Tom Kendall Oval\, Park Street\, New Brighton.
-LOCATION:Tom Kendall Oval\, Park Street\, New Brighton 2483
-URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
- New-Brighton-Farmers-Market
+UID:byron-12swcn1@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T160000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:SUB-TRIBE
+DESCRIPTION:SUB-TRIBE LIVE AT HOTEL BRUNSWICK SUNDAY 13 SEPTEMBER | FROM 4P
+ M | FREE EVENT From the roots of Aotearoa (New Zealand) comes SUB-TRIBE 
+ — a 7-piece dub-fusion powerhouse delivering heavy bass\, glitchy beats 
+ and soaring harmonies. Blending blues-soaked dub\, chunky skank reggae\, j
+ azz-hop and ragga dancehall\, SUB-TRIBE take audiences on a genre-hopping 
+ journey that keeps dancefloors moving and heads nodding. Known for their h
+ igh-energy live shows and feel-good vibes\, SUB-TRIBE have carved out a so
+ und often described as “Unprecedented Dub-Fusion.” Since forming in 20
+ 17 and touring alongside Salmonella Dub\, the band has built a strong repu
+ tation across Australia and New Zealand\, appearing at major festivals inc
+ luding WOMADelaide\, Good Love Festival\, Kuranda Roots and Island Vibes. 
+ With releases spanning deep\, rolling dub\, soulful lovers rock and bass-d
+ riven dancefloor anthems\, SUB-TRIBE bring a live show that’s equal part
+ s groove\, grit and celebration. w/ support | Free Entry Come skank\, sway
+  and get deep in the low end.
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/sub-tribe-3/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1uzwth1@dothings
@@ -1420,37 +859,36 @@ LOCATION:Muckware\, 853 Hinterland Way
 URL:https://www.muckware.com/privateworkshops/privateworkshop-sep15
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1fbm2yq@dothings
-DTSTART;TZID=Australia/Brisbane:20260915T103000
-DTEND;TZID=Australia/Brisbane:20260915T123000
-SUMMARY:Byron Seniors Club: Elder Beats Drumming
-DESCRIPTION:“The seniors that attend this amazing session are some of the
-  most vibrant energetic characters of their age on the planet.” – Gare
- th Jones\, Sound Synergy
-LOCATION:Byron Community Centre
-URL:https://www.byroncentre.com.au/community-events/seniors-drumming
+UID:byron-163q3j3@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T100000
+DTEND;TZID=Australia/Brisbane:20260916T120000
+SUMMARY:Morning Life Drawing Byron
+DESCRIPTION:A casual\, untutored life drawing session with some materials p
+ rovided. Life drawing Byron is held every Wednesday Morning with a differe
+ nt model and a variety of poses. so come and join us! All levels welcome\,
+  including those who think they can’t draw! Every Wednesday 10am - 12pm
+LOCATION:Damien Lucas
+URL:https://www.damienlucassculpture.com/new-events/2020/2/18/life-drawing-
+ fndma-95gdz-p4jc5-74gmg-69kdh-gcp44-p5cpa-th28y-pm9bh-fdlrl-zatgx
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1k5hve3@dothings
-DTSTART;TZID=Australia/Brisbane:20260917T180000
-DTEND;TZID=Australia/Brisbane:20260917T203000
-SUMMARY:Ben Whiting
-DESCRIPTION:BEN WHITING | Hotel Brunswick | Thursday 17 September 6pm An al
- luring voice with rock beneath the surface Ben Whiting is a seasoned singe
- r-songwriter whose sound blends sun-soaked reggae grooves\, classic rock g
- rit and thoughtful folk songwriting. Raised on a steady diet of The Police
-  and Bob Marley\, and shaped by years of jamming\, touring and festival st
- ages\, Whiting delivers music that feels both familiar and entirely his ow
- n. With a “virtually flawless” voice (Faster Louder) at the centre\, h
- is live shows move effortlessly between laid-back rhythms\, soaring melodi
- es and dynamic rock moments. Having previously played major festivals incl
- uding Splendour In The Grass and shared stages with artists like Katy Perr
- y\, Grinspoon and The Angels\, Whiting brings a confident\, polished perfo
- rmance that suits both relaxed afternoon sessions and attentive listeners 
- alike. Expect warm grooves\, rich vocals and songs that stay with you. Liv
- e at Hotel Brunswick 📅 Thursday 17 September 🕑 6:00pm | Free Gig
+UID:byron-1xy9tfo@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T180000
+DTEND;TZID=Australia/Brisbane:20260918T220000
+SUMMARY:MELBOURNE SKA ORCHESTRA
+DESCRIPTION:Monte Loco Rides Again… Melbourne Ska Orchestra are coming to
+  Hotel Brunswick Friday 18th September. Don’t miss out! Hot off the heel
+ s of a wild year touring Canada and Australia in 2025\, Melbourne Ska Orch
+ estra just can’t keep still. The spaghetti western wagon trail rolls on 
+ with the super deluxe edition of their acclaimed album The Ballad of Monte
+  Loco with all the faves\, plus a swag of brand-new tracks\, blistering li
+ ve recordings\, and honky tonk renditions of MSO staples. It’s braver\, 
+ meaner and wilder than anything they’ve done before. So saddle up\, part
+ ner: this here posse is riding into a town near you\, and you do not want 
+ to miss the showdown. Playing Hotel Brunswick Friday 18th September | Door
+ s 6PM
 LOCATION:Hotel Brunswick
-URL:https://hotelbrunswick.com.au/event/ben-whiting-6/
+URL:https://hotelbrunswick.com.au/event/melbourne-ska-orchestra/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-46agf8@dothings
@@ -1465,41 +903,6 @@ LOCATION:Lone Goat Gallery
 URL:https://lonegoatgallery.com/exhibitions/lucas-and-the-midsomer-murders
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1iu3f9y@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260920
-SUMMARY:Nourishing Yin Yoga and Sound Healing
-DESCRIPTION:Immerse yourself in a morning of deep relaxation and rejuvenati
- on at the Nimbin Bush Theatre with Nourishing Yin Yoga with Chrissy follow
- ed by a transformative Crystal Bowl Sound Bath with Karolynka. Let Chrissy
-  guide you through gentle yin yoga postures designed to restore balance\, 
- release tension\, and nourish your body and soul while being enveloped by 
- the ethereal sounds of Armandine's crystal bowls\, creating vibrational ha
- rmony that soothes the mind and spirit. Set against the serene backdrop of
-  the Nimbin Bush Theatre\, this unique experience is the perfect way to un
- wind\, reconnect\, and recharge. Don't miss this magical journey of sound 
- and stillness!
-LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
-URL:https://nimbinbushtheatre.com/events/nourishing-yin-yoga-and-sound-heal
- ing/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-sjjyxw@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T163000
-DTEND;TZID=Australia/Brisbane:20260919T220000
-SUMMARY:TROPIKALIA – BRAZILIAN PARTY
-DESCRIPTION:Tropikalia – A journey Through Brazilian Music Tropikalia bri
- ngs the best of Brazilian music and good vibes to Hotel Brunswick . Expect
-  a day filled with live music\, tropical energy and a dance floor that doe
- sn’t stop. Groove Bahia Band will be playing a mix of Brazilian favourit
- es\, while DJ Victor Lopes keeps the party rolling with Brazilian beats. W
- hether you’re Brazilian or just love great music and a fun atmosphere\, 
- Tropikalia is all about bringing people together for a proper celebration.
-  FREE EVENT
-LOCATION:Hotel Brunswick
-URL:https://hotelbrunswick.com.au/event/tropikalia-brazilian-party-2/
-END:VEVENT
-BEGIN:VEVENT
 UID:byron-ezj3vu@dothings
 DTSTART;VALUE=DATE:20260920
 DTEND;VALUE=DATE:20260921
@@ -1508,6 +911,24 @@ DESCRIPTION:
 LOCATION:Palace Byron Bay
 URL:https://www.palacecinemas.com.au/st-ali-italian-film-festival-centrepie
  ce-premiere-sweetheart
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-thpp94@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Colours of Time
+DESCRIPTION:Brought together by the unexpected inheritance of an abandoned 
+ house in rural Normandy\, four cousins discover they share a mysterious fa
+ mily history. In 1895\, their ancestor Adèle\, then aged 21\, leaves her 
+ hometown to search for her mother in Paris. She discovers a city on the cu
+ sp of modernity\, bustling with new-found avant-garde creativity\, with th
+ e rise of photography and the birth of Impressionist painting. As her desc
+ endants retrace her steps\, they unravel Adèle’s surprising past. The t
+ wo timelines of 1895 and 2024 intertwine and collide\, confronting the cou
+ sins’ contemporary attitudes with life in late 19th century Paris\, leav
+ ing everyone’s future forever changed.
+LOCATION:Star Court Theatre
+URL:http://starcourttheatre.com.au/events/timecolours
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-pekzwv@dothings
@@ -1626,6 +1047,567 @@ LOCATION:Muckware\, 853 Hinterland Way
 URL:https://www.muckware.com/privateworkshops/privateworkshop-sep20
 END:VEVENT
 BEGIN:VEVENT
+UID:byron-1rca85d@dothings
+DTSTART;VALUE=DATE:20220727
+DTEND;VALUE=DATE:20220728
+SUMMARY:Piano Bar
+DESCRIPTION:BYRON BAY PIANO BAR @THE NORTHERN EVERY THURSDAY TO SATURDAY
+LOCATION:Great Northern Hotel
+URL:https://thenorthern.com.au/event/piano-bar/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1oa62ai@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T080000
+DTEND;TZID=Australia/Brisbane:20260908T110000
+SUMMARY:New Brighton Farmers Market
+DESCRIPTION:A community-focused market featuring local growers and makers\,
+  ideal for engaging with the local food system and connecting with the Nor
+ th Byron community.
+LOCATION:New Brighton Oval\, New Brighton
+URL:https://newbrightonfarmersmarket.org.au
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1q6y8vl@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T183000
+DTEND;TZID=Australia/Brisbane:20260908T203000
+SUMMARY:Trivia Tuesdays
+DESCRIPTION:Every Tuesday Free Entry Register 6.15pm Play 6.30pm Venue: Spo
+ rts Lounge MC: Sean C Alternating with Mitch Prizes: 1st: $100 RSL Gift Ca
+ rd 2nd: $50 RSL Gift Card 3rd $25 RSL Gift Card Bonus Round: $10 Gift Card
+  Head’s or Tails: $10 Gift Card Rules: No Electronic Devices: Use of mob
+ ile phones or other electronic […]
+LOCATION:Level One\, 1 Grant St\, Ballina
+URL:https://ballinarsl.com.au/event/trivia-tuesdays/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1fkkigj@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T183000
+DTEND;TZID=Australia/Brisbane:20260908T203000
+SUMMARY:Dramaworks Evening 2026
+DESCRIPTION:Excellent HSC Drama Performances from across the North Coast an
+ d Northern Rivers Schools.
+LOCATION:Byron Theatre
+URL:https://www.byroncentre.com.au/theatre-events/dramaworks-evening-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1n0iars@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:A Match Made In Melbourne
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/now-showing/a-match-made-in-melbourne/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-ckwf4b@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:The Dog Stars
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/now-showing/the-dog-stars/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-10jay7q@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:Fall 2: Deadpoint
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/now-showing/fall-2-deadpoint/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1ipmep8@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T190000
+DTEND;TZID=Australia/Brisbane:20260909T220000
+SUMMARY:Live Music Night at The Rails
+DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
+ musicians in an intimate\, open-air beer garden setting. Perfect for casua
+ l listening and soaking up the local atmosphere.
+LOCATION:The Railway Friendly Bar\, Byron Bay
+URL:https://therailsbyronbay.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-4n9vln@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Practical Magic 2
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/coming-soon/practical-magic-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-fgxh3v@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:Runner
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/coming-soon/runner/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1ds6vp6@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T070000
+DTEND;TZID=Australia/Brisbane:20260910T110000
+SUMMARY:Byron Farmers Market
+DESCRIPTION:Weekly gathering of local farmers and community members promoti
+ ng sustainable food practices and connection with the land.
+LOCATION:Butler Street Reserve\, Byron Bay
+URL:https://byronfarmersmarket.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1m0m04q@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T180000
+DTEND;TZID=Australia/Brisbane:20260910T203000
+SUMMARY:YAZMINDI
+DESCRIPTION:HOTEL BRUNSWICK | THU 10 SEPT Yazmindi’s authentic sound and 
+ evocative stories are a far-reaching crowd-favourite. A cornerstone of her
+  musical prowess is her ability to craft authentic stories and evocative s
+ oundscapes that build around her swelling harmonies. Yazmindi takes an hon
+ est\, and sometimes tongue-in-cheek approach to authentically reflect on p
+ owerful moments of love\, loss\, societal pressures\, youthful optimism\, 
+ and determination. Traversing genres\, a common theme of empowerment\, esp
+ ecially towards young women runs strong and true to Yazmindi’s core valu
+ es. FREE ENTRY
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/yazmindi-6/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1f8ej2m@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T183000
+DTEND;TZID=Australia/Brisbane:20260910T200000
+SUMMARY:Trivia Night
+DESCRIPTION:Trivia Night – Every Thursday Bring your friends and join us 
+ for Trivia Night every Thursday evening. Enjoy a fun\, social atmosphere\,
+  great questions\, and prizes for winning teams. Every […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/trivia-night/2026-09-10/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1ecjgye@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T190000
+DTEND;TZID=Australia/Brisbane:20260910T220000
+SUMMARY:Live Music Night at The Rails
+DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
+ musicians in an intimate\, open-air beer garden setting. Perfect for casua
+ l listening and soaking up the local atmosphere.
+LOCATION:The Railway Friendly Bar\, Byron Bay
+URL:https://therailsbyronbay.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-82j4wq@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Build Your Own Website\, Hands-On WordPress Masterclass
+DESCRIPTION:Hands-on masterclass designed for entrepreneurs\, freelancers\,
+  creatives\, and small business owners who want to create a professional w
+ ebsite themselves without needing advanced coding skills.
+LOCATION:Mullum
+URL:https://byroncollege.org.au/course-details/?course_id=93360&course_type
+ =w
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1v8fevu@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Practical Magic 2
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/coming-soon/practical-magic-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-70yyey@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Runner
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/coming-soon/runner/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-14mws59@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T070000
+DTEND;TZID=Australia/Brisbane:20260911T110000
+SUMMARY:Mullumbimby Farmers Market
+DESCRIPTION:A bustling community market known for attracting locals and reg
+ ional producers\, fostering a strong sense of community and connection to 
+ sustainable agriculture.
+LOCATION:Mullumbimby Showground\, Mullumbimby
+URL:https://mullumfarmersmarket.org.au
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1oye4es@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T133000
+DTEND;TZID=Australia/Brisbane:20260911T153000
+SUMMARY:Victorian State Ballet presents Beauty and The Beast
+DESCRIPTION:Featuring internationally recognised artists in leading roles i
+ n a rich display of outstanding skill! One of the world’s most loved fai
+ ry tale classics is retold through excellent staging\, beautiful costumes\
+ , superb classical ballet skill and choreography which honour the spirit o
+ f this magical work - an inspiring\, impacting\, entertaining and memorabl
+ e experience for the whole family!
+LOCATION:Byron Theatre
+URL:https://www.byroncentre.com.au/theatre-events/victorian-state-ballet-pr
+ esents-beauty-and-the-beast
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-v35hz5@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T170000
+DTEND;TZID=Australia/Brisbane:20260911T193000
+SUMMARY:Paul George — Fire Pit Fridays
+DESCRIPTION:Intimate live acoustic performance set around the outdoor fire 
+ pits at Elements of Byron.
+LOCATION:Elements of Byron\, Byron Bay
+URL:https://byronbayexperience.com.au/whats-on-byron-bay/paul-george-fire-p
+ it-fridays-elements-of-byron/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-y806x8@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T180000
+DTEND;TZID=Australia/Brisbane:20260911T200000
+SUMMARY:Brush 'N Beats x The Lord Byron Distillery | Paint & Sip Party
+DESCRIPTION:A social painting session held at a local distillery\, combinin
+ g creative expression with a casual\, guided group art experience.
+LOCATION:Lord Byron Distillery\, 4 Banksia Drive\, Byron Bay NSW
+URL:https://www.eventbrite.com.au/e/brush-n-beats-x-the-lord-byron-distille
+ ry-paint-sip-party-tickets-1985250526767
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-uzx58p@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T183000
+DTEND;TZID=Australia/Brisbane:20260911T203000
+SUMMARY:Line Dancing
+DESCRIPTION:YEEHAW\, BALLINA! Line Dancing is back on Fri Sept 11th! Free E
+ ntry
+LOCATION:The Courtyard
+URL:https://www.shawsbayhotel.com.au/whats-on/line-dancing/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-us08c5@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T190000
+DTEND;TZID=Australia/Brisbane:20260911T220000
+SUMMARY:Live Music Night at The Rails
+DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
+ musicians in an intimate\, open-air beer garden setting. Perfect for casua
+ l listening and soaking up the local atmosphere.
+LOCATION:The Railway Friendly Bar\, Byron Bay
+URL:https://therailsbyronbay.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1yql6zx@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T070000
+DTEND;TZID=Australia/Brisbane:20260912T110000
+SUMMARY:Bangalow Farmers Market
+DESCRIPTION:Community-led market in the historic village of Bangalow\, gath
+ ering growers and residents for local produce and conversation.
+LOCATION:Piccabeen Park\, Bangalow
+URL:https://byronfarmersmarket.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1mkp342@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T080000
+DTEND;TZID=Australia/Brisbane:20260912T130000
+SUMMARY:Terrace Market (Haven Gallery)
+DESCRIPTION:A community-oriented market hosted by Haven Gallery\, featuring
+  local art\, design\, and creative goods in a central Byron setting.
+LOCATION:Haven Gallery\, 102 Jonson St\, Byron Bay NSW
+URL:https://events.humanitix.com/terrace-market
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-y8ygvk@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T180000
+DTEND;TZID=Australia/Brisbane:20260912T210000
+SUMMARY:Ben Whiting
+DESCRIPTION:Saturday 12 September Free from 6pm Born by the sea in Northern
+  NSW\, BW started writing songs and formed his first band at age 12. Unlik
+ e most kids\, BW was touring as an early teen and being mentored by Buzz B
+ idstrup (THE ANGELS & GANGgajang) experiencing & creating a career that ha
+ s seen him share […]
+LOCATION:Ballina RSL Boardwalk\, 1 Grant Street\, Ballina\, New South Wales
+ \, 2478
+URL:https://ballinarsl.com.au/event/ben-whiting/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-b7gzpw@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T190000
+DTEND;TZID=Australia/Brisbane:20260912T220000
+SUMMARY:Live Music Night at The Rails
+DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
+ musicians in an intimate\, open-air beer garden setting. Perfect for casua
+ l listening and soaking up the local atmosphere.
+LOCATION:The Railway Friendly Bar\, Byron Bay
+URL:https://therailsbyronbay.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-ouw07f@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Wheels Across Australia
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/now-showing/wheels-across-australia/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-iiu2od@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Cacao Ceremony
+DESCRIPTION:Join Lisa for a transformative cacao ceremony that nurtures the
+  heart and soul. Experience the magic of ceremonial cacao\, guided meditat
+ ion\, and intention-setting in a sacred\, welcoming space. Immerse yoursel
+ f in ambient music by Michael Skinner as you connect deeply with yourself 
+ and the moment. Let this ceremony be a time for reflection\, healing\, and
+  opening to new possibilities.
+LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
+URL:https://nimbinbushtheatre.com/events/cacao-ceremony-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1d08v5k@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:SunDance - THE UNFURLING
+DESCRIPTION:A community-oriented movement event focused on authentic\, grou
+ nded expression and social connection in a shared space.
+LOCATION:Mullumbimby Civic Memorial Hall
+URL:https://www.facebook.com/events/928551293656658
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-ydctcp@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T110000
+DTEND;TZID=Australia/Brisbane:20260913T130000
+SUMMARY:NURTURE — Prenatal Yin Yoga
+DESCRIPTION:A grounded\, somatic-focused yoga session emphasizing gentle mo
+ vement and breath\, avoiding commercial wellness trends.
+LOCATION:Sol Method studio\, 4/142 Bangalow Rd\, Byron Bay
+URL:https://www.solmethod.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-13nx16b@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T113000
+DTEND;TZID=Australia/Brisbane:20260913T133000
+SUMMARY:Cycle Workshop Byron Bay
+DESCRIPTION:A somatic and wellness-oriented workshop focused on the menstru
+ al cycle\, aimed at providing education and community support for body lit
+ eracy.
+LOCATION:NIRMALA TEMPLE\, 11 Banksia Drive\, Byron Bay NSW
+URL:https://happeningnext.com/event/cycle-workshop-byron-bay-eid1ef0l412n47
+ a
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-7938kc@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T150000
+DTEND;TZID=Australia/Brisbane:20260913T170000
+SUMMARY:Solace Sunday Session
+DESCRIPTION:Dance your way into the long weekend with our Solace Sunday Ses
+ sion happening this Sunday from 3pm until late.Deep and minimal house from
+  SPLF\, ITOMAN\, GSKIN and Mitsukaze. Plus special...
+LOCATION:Common People Brewing Co.
+URL:https://commonpeoplebrewing.com.au/blogs/news/solace-sunday-session
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-yx1y9r@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T150000
+DTEND;TZID=Australia/Brisbane:20260913T180000
+SUMMARY:Sunday Sessions
+DESCRIPTION:Sunday Sessions Get ready for your new favorite weekend traditi
+ on: Sunday Sessions with the Swamp Cats!\, we are turning up the energy ev
+ ery single week from 3:00 pm to 6:00 pm Here is what you can look forward 
+ to at our Sunday Sessions: Live Host Band: will be anchoring the afternoon
+ \, bringing their signature groove […]
+LOCATION:Mullumbimby Ex-Services Club\, 58 Dalley Street\, Mullumbimby\, NS
+ W\, 2482
+URL:https://www.mullumexservices.com.au/event/sunday-sessions/2026-09-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-14jnby@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T160000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:SUNDAY BRUNSDAY
+DESCRIPTION:Join us every Sunday for an unforgettable afternoon of live mus
+ ic\, delicious food\, great vibes and company. Showcasing amazing talent w
+ ith some of the best live music around. Admission is free\, so bring your 
+ friends and family for an enjoyable experience for all involved. The perfe
+ ct Sunday Session View Gig Guide
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/sundays-brunsday/2026-09-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1qo1t2r@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T190000
+DTEND;TZID=Australia/Brisbane:20260913T220000
+SUMMARY:Live Music Night at The Rails
+DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
+ musicians in an intimate\, open-air beer garden setting. Perfect for casua
+ l listening and soaking up the local atmosphere.
+LOCATION:The Railway Friendly Bar\, Byron Bay
+URL:https://therailsbyronbay.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1aowqx1@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T121500
+DTEND;TZID=Australia/Brisbane:20260914T160000
+SUMMARY:Monday Bridge
+DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
+  cards with our Bridge groups in the Sunset Room. Whether you’re an expe
+ rienced player or looking to find […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/monday-mid-day-bridge/2026-09-14/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-jxlmys@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T163000
+DTEND;TZID=Australia/Brisbane:20260914T183000
+SUMMARY:THE BOX SHOW by Junkyard Beats
+DESCRIPTION:Get ready for THE BOX SHOW — an award-winning\, interactive f
+ amily theatre adventure from Junkyard Beats \, directed and co-written by 
+ Nigel Turner-Carroll .
+LOCATION:Byron Theatre
+URL:https://www.byroncentre.com.au/theatre-events/the-box-show-by-junkyard-
+ beats
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-chm3zi@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:New Brighton Farmers Market
+DESCRIPTION:The New Brighton Farmers Market is held every Tuesday morning a
+ t Tom Kendall Oval\, Park Street\, New Brighton.
+LOCATION:Tom Kendall Oval\, Park Street\, New Brighton 2483
+URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
+ New-Brighton-Farmers-Market
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1fbm2yq@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T103000
+DTEND;TZID=Australia/Brisbane:20260915T123000
+SUMMARY:Byron Seniors Club: Elder Beats Drumming
+DESCRIPTION:“The seniors that attend this amazing session are some of the
+  most vibrant energetic characters of their age on the planet.” – Gare
+ th Jones\, Sound Synergy
+LOCATION:Byron Community Centre
+URL:https://www.byroncentre.com.au/community-events/seniors-drumming
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1xd61un@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T180000
+DTEND;TZID=Australia/Brisbane:20260916T203000
+SUMMARY:Wednesday Bridge
+DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
+  cards with our Bridge groups in the Sunset Room. Whether you’re an expe
+ rienced player or looking to find […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/wednesday-evening-bridge/2026-09-16/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-19ddjzz@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Forgotten Island
+DESCRIPTION:
+LOCATION:Kyogle Cinemas
+URL:https://www.kyoglecinemas.com.au/coming-soon/forgotten-island/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1k5hve3@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T180000
+DTEND;TZID=Australia/Brisbane:20260917T203000
+SUMMARY:Ben Whiting
+DESCRIPTION:BEN WHITING | Hotel Brunswick | Thursday 17 September 6pm An al
+ luring voice with rock beneath the surface Ben Whiting is a seasoned singe
+ r-songwriter whose sound blends sun-soaked reggae grooves\, classic rock g
+ rit and thoughtful folk songwriting. Raised on a steady diet of The Police
+  and Bob Marley\, and shaped by years of jamming\, touring and festival st
+ ages\, Whiting delivers music that feels both familiar and entirely his ow
+ n. With a “virtually flawless” voice (Faster Louder) at the centre\, h
+ is live shows move effortlessly between laid-back rhythms\, soaring melodi
+ es and dynamic rock moments. Having previously played major festivals incl
+ uding Splendour In The Grass and shared stages with artists like Katy Perr
+ y\, Grinspoon and The Angels\, Whiting brings a confident\, polished perfo
+ rmance that suits both relaxed afternoon sessions and attentive listeners 
+ alike. Expect warm grooves\, rich vocals and songs that stay with you. Liv
+ e at Hotel Brunswick 📅 Thursday 17 September 🕑 6:00pm | Free Gig
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/ben-whiting-6/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-b34gph@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T183000
+DTEND;TZID=Australia/Brisbane:20260917T200000
+SUMMARY:Trivia Night
+DESCRIPTION:Trivia Night – Every Thursday Bring your friends and join us 
+ for Trivia Night every Thursday evening. Enjoy a fun\, social atmosphere\,
+  great questions\, and prizes for winning teams. Every […]
+LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
+ lub - Orana Rd Ocean Shores
+URL:https://oceanshorescc.com.au/event/trivia-night/2026-09-17/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-1iu3f9y@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Nourishing Yin Yoga and Sound Healing
+DESCRIPTION:Immerse yourself in a morning of deep relaxation and rejuvenati
+ on at the Nimbin Bush Theatre with Nourishing Yin Yoga with Chrissy follow
+ ed by a transformative Crystal Bowl Sound Bath with Karolynka. Let Chrissy
+  guide you through gentle yin yoga postures designed to restore balance\, 
+ release tension\, and nourish your body and soul while being enveloped by 
+ the ethereal sounds of Armandine's crystal bowls\, creating vibrational ha
+ rmony that soothes the mind and spirit. Set against the serene backdrop of
+  the Nimbin Bush Theatre\, this unique experience is the perfect way to un
+ wind\, reconnect\, and recharge. Don't miss this magical journey of sound 
+ and stillness!
+LOCATION:Nimbin Bush Theatre\, 2 Blue Knob Road Nimbin NSW 2480
+URL:https://nimbinbushtheatre.com/events/nourishing-yin-yoga-and-sound-heal
+ ing/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-sjjyxw@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T163000
+DTEND;TZID=Australia/Brisbane:20260919T220000
+SUMMARY:TROPIKALIA – BRAZILIAN PARTY
+DESCRIPTION:Tropikalia – A journey Through Brazilian Music Tropikalia bri
+ ngs the best of Brazilian music and good vibes to Hotel Brunswick . Expect
+  a day filled with live music\, tropical energy and a dance floor that doe
+ sn’t stop. Groove Bahia Band will be playing a mix of Brazilian favourit
+ es\, while DJ Victor Lopes keeps the party rolling with Brazilian beats. W
+ hether you’re Brazilian or just love great music and a fun atmosphere\, 
+ Tropikalia is all about bringing people together for a proper celebration.
+  FREE EVENT
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/tropikalia-brazilian-party-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-17fk05@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T200000
+DTEND;TZID=Australia/Brisbane:20260919T220000
+SUMMARY:The Honey Sliders' Mix Tape
+DESCRIPTION:Press rewind and start from the top - this is The Honey Sliders
+ ’ Mix Tape. A carefully curated collection of songs\, arranged in a spec
+ ial sequence to celebrate the music that inspired\, influenced\, and shape
+ d the band’s journey. Like the classic cassette compilations of decades 
+ past\, The Mix Tape unfolds across two sides\, taking audiences on a music
+ al road trip through beloved classics\, hidden treasures\, and unforgettab
+ le moments from the golden age of rock\, soul\, country\, folk\, and blues
+ .
+LOCATION:Byron Theatre
+URL:https://www.byroncentre.com.au/theatre-events/the-honey-sliders-mix-tap
+ e
+END:VEVENT
+BEGIN:VEVENT
+UID:byron-xl7l4y@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Federal Community Market
+DESCRIPTION:Federal Community market is held on the third Sunday of the mon
+ th at the Federal Halls.
+LOCATION:Federal Halls\, 466 Federal Drive\, Federal 2480
+URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
+ Federal-Community-Market
+END:VEVENT
+BEGIN:VEVENT
 UID:byron-b3dnbe@dothings
 DTSTART;TZID=Australia/Brisbane:20260920T150000
 DTEND;TZID=Australia/Brisbane:20260920T170000
@@ -1666,6 +1648,23 @@ LOCATION:Hotel Brunswick
 URL:https://hotelbrunswick.com.au/event/sundays-brunsday/2026-09-20/
 END:VEVENT
 BEGIN:VEVENT
+UID:byron-1grbph5@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T160000
+DTEND;TZID=Australia/Brisbane:20260920T200000
+SUMMARY:FULL MOON REGGAE PARTY FT. SKYEATER
+DESCRIPTION:FULL MOON REGGAE PARTY | Sunday 20 September\, from 4PM | Free 
+ Event The beer garden comes alive under the full moon for a soulful reggae
+  celebration! Join us for an arvo of live music\, good vibes\, and cold dr
+ inks\, where the rhythm moves your body and the music lifts your spirit. G
+ et ready for SKYEATER — dreamy dub\, trip-hop\, and soulful pop with rev
+ erb-soaked piano\, soaring vocals\, and reggae-infused beats. Changing the
+  world one song at a time\, Sky Eater is here to have fun\, spread some jo
+ y\, and lift your spirit — all at once! So gather your crew\, feel the b
+ eat\, and get on board the full moon reggae celebration!
+LOCATION:Hotel Brunswick
+URL:https://hotelbrunswick.com.au/event/full-moon-reggae-ft-skyeater/
+END:VEVENT
+BEGIN:VEVENT
 UID:byron-yc36aa@dothings
 DTSTART;TZID=Australia/Brisbane:20260908T100000
 DTEND;TZID=Australia/Brisbane:20260908T120000
@@ -1680,6 +1679,17 @@ LOCATION:Byron Community Centre
 URL:https://www.byroncentre.com.au/community-events/chair-yoga
 END:VEVENT
 BEGIN:VEVENT
+UID:byron-1tbhts3@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T111500
+DTEND;TZID=Australia/Brisbane:20260908T131500
+SUMMARY:Tai Chi
+DESCRIPTION:This gentle and flowing Tai Chi course is based on a program de
+ veloped by Dr Paul Lam for people with arthritis\, but is suitable for any
+ one looking to improve their strength\, flexibility and balance.
+LOCATION:Byron Community Centre
+URL:https://www.byroncentre.com.au/community-events/tai-chi
+END:VEVENT
+BEGIN:VEVENT
 UID:byron-7ukure@dothings
 DTSTART;TZID=Australia/Brisbane:20260908T180000
 DTEND;TZID=Australia/Brisbane:20260908T203000
@@ -1687,33 +1697,6 @@ SUMMARY:Jason Delphin
 DESCRIPTION:
 LOCATION:Beach Hotel
 URL:https://www.beachhotel.com.au/event/jason-delphin-13/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1n0iars@dothings
-DTSTART;VALUE=DATE:20260909
-DTEND;VALUE=DATE:20260910
-SUMMARY:A Match Made In Melbourne
-DESCRIPTION:
-LOCATION:Kyogle Cinemas
-URL:https://www.kyoglecinemas.com.au/now-showing/a-match-made-in-melbourne/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-ckwf4b@dothings
-DTSTART;VALUE=DATE:20260909
-DTEND;VALUE=DATE:20260910
-SUMMARY:The Dog Stars
-DESCRIPTION:
-LOCATION:Kyogle Cinemas
-URL:https://www.kyoglecinemas.com.au/now-showing/the-dog-stars/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-10jay7q@dothings
-DTSTART;VALUE=DATE:20260909
-DTEND;VALUE=DATE:20260910
-SUMMARY:Fall 2: Deadpoint
-DESCRIPTION:
-LOCATION:Kyogle Cinemas
-URL:https://www.kyoglecinemas.com.au/now-showing/fall-2-deadpoint/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-10rolx2@dothings
@@ -1734,34 +1717,17 @@ LOCATION:Beach Hotel
 URL:https://www.beachhotel.com.au/event/tahlia-matheson-10/
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-guy5dv@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T180000
-DTEND;TZID=Australia/Brisbane:20260909T203000
-SUMMARY:Wednesday Bridge
-DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
-  cards with our Bridge groups in the Sunset Room. Whether you’re an expe
- rienced player or looking to find […]
-LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
- lub - Orana Rd Ocean Shores
-URL:https://oceanshorescc.com.au/event/wednesday-evening-bridge/2026-09-09/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-fgxh3v@dothings
+UID:byron-1au5u3o@dothings
 DTSTART;VALUE=DATE:20260910
 DTEND;VALUE=DATE:20260911
-SUMMARY:Runner
-DESCRIPTION:
-LOCATION:Kyogle Cinemas
-URL:https://www.kyoglecinemas.com.au/coming-soon/runner/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-4n9vln@dothings
-DTSTART;VALUE=DATE:20260910
-DTEND;VALUE=DATE:20260911
-SUMMARY:Practical Magic 2
-DESCRIPTION:
-LOCATION:Kyogle Cinemas
-URL:https://www.kyoglecinemas.com.au/coming-soon/practical-magic-2/
+SUMMARY:The Business of Doing Business
+DESCRIPTION:A practical four-part workshop series built by Northern Rivers 
+ business owners and operators\, for Northern Rivers business owners and op
+ erators\, around the real decisions businesses are dealing with right now.
+LOCATION:Southern Cross University\, Lismore Campus\, Military Rd\, East Li
+ smore\, 2480
+URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
+ The-Business-of-Doing-Business
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1bgy695@dothings
@@ -1780,36 +1746,6 @@ SUMMARY:Jaffer Band
 DESCRIPTION:
 LOCATION:Beach Hotel
 URL:https://www.beachhotel.com.au/event/jaffer-band/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1f8ej2m@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T183000
-DTEND;TZID=Australia/Brisbane:20260910T200000
-SUMMARY:Trivia Night
-DESCRIPTION:Trivia Night – Every Thursday Bring your friends and join us 
- for Trivia Night every Thursday evening. Enjoy a fun\, social atmosphere\,
-  great questions\, and prizes for winning teams. Every […]
-LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
- lub - Orana Rd Ocean Shores
-URL:https://oceanshorescc.com.au/event/trivia-night/2026-09-10/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-70yyey@dothings
-DTSTART;VALUE=DATE:20260911
-DTEND;VALUE=DATE:20260912
-SUMMARY:Runner
-DESCRIPTION:
-LOCATION:Kyogle Cinemas
-URL:https://www.kyoglecinemas.com.au/coming-soon/runner/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1v8fevu@dothings
-DTSTART;VALUE=DATE:20260911
-DTEND;VALUE=DATE:20260912
-SUMMARY:Practical Magic 2
-DESCRIPTION:
-LOCATION:Kyogle Cinemas
-URL:https://www.kyoglecinemas.com.au/coming-soon/practical-magic-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-umb6lp@dothings
@@ -1858,15 +1794,6 @@ URL:https://hotelbrunswick.com.au/event/live-baby-live-the-inxs-tribute-sho
  w/
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-1gfnglk@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T030000
-DTEND;TZID=Australia/Brisbane:20260912T053000
-SUMMARY:TiTi
-DESCRIPTION:
-LOCATION:Beach Hotel
-URL:https://www.beachhotel.com.au/event/titi-5/
-END:VEVENT
-BEGIN:VEVENT
 UID:byron-6b2jj2@dothings
 DTSTART;TZID=Australia/Brisbane:20260912T163000
 DTEND;TZID=Australia/Brisbane:20260912T220000
@@ -1893,45 +1820,6 @@ LOCATION:Ballina RSL Boardwalk\, 1 Grant Street\, Ballina\, New South Wales
 URL:https://ballinarsl.com.au/event/sunday-blues-sessions/
 END:VEVENT
 BEGIN:VEVENT
-UID:byron-yx1y9r@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T150000
-DTEND;TZID=Australia/Brisbane:20260913T180000
-SUMMARY:Sunday Sessions
-DESCRIPTION:Sunday Sessions Get ready for your new favorite weekend traditi
- on: Sunday Sessions with the Swamp Cats!\, we are turning up the energy ev
- ery single week from 3:00 pm to 6:00 pm Here is what you can look forward 
- to at our Sunday Sessions: Live Host Band: will be anchoring the afternoon
- \, bringing their signature groove […]
-LOCATION:Mullumbimby Ex-Services Club\, 58 Dalley Street\, Mullumbimby\, NS
- W\, 2482
-URL:https://www.mullumexservices.com.au/event/sunday-sessions/2026-09-13/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-14jnby@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T160000
-DTEND;TZID=Australia/Brisbane:20260913T200000
-SUMMARY:SUNDAY BRUNSDAY
-DESCRIPTION:Join us every Sunday for an unforgettable afternoon of live mus
- ic\, delicious food\, great vibes and company. Showcasing amazing talent w
- ith some of the best live music around. Admission is free\, so bring your 
- friends and family for an enjoyable experience for all involved. The perfe
- ct Sunday Session View Gig Guide
-LOCATION:Hotel Brunswick
-URL:https://hotelbrunswick.com.au/event/sundays-brunsday/2026-09-13/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1aowqx1@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T121500
-DTEND;TZID=Australia/Brisbane:20260914T160000
-SUMMARY:Monday Bridge
-DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
-  cards with our Bridge groups in the Sunset Room. Whether you’re an expe
- rienced player or looking to find […]
-LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
- lub - Orana Rd Ocean Shores
-URL:https://oceanshorescc.com.au/event/monday-mid-day-bridge/2026-09-14/
-END:VEVENT
-BEGIN:VEVENT
 UID:byron-zftp5t@dothings
 DTSTART;TZID=Australia/Brisbane:20260915T123000
 DTEND;TZID=Australia/Brisbane:20260915T143000
@@ -1943,49 +1831,5 @@ DESCRIPTION:Brand new musical from BH Public School! Dive into Brunswick He
 LOCATION:Brunswick Picture House\, Brunswick Heads NSW
 URL:https://brunswickpicturehouse.com/brunswick-heads-public-school-present
  s-beachside-boogie-15-16-sep/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-1xd61un@dothings
-DTSTART;TZID=Australia/Brisbane:20260916T180000
-DTEND;TZID=Australia/Brisbane:20260916T203000
-SUMMARY:Wednesday Bridge
-DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
-  cards with our Bridge groups in the Sunset Room. Whether you’re an expe
- rienced player or looking to find […]
-LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
- lub - Orana Rd Ocean Shores
-URL:https://oceanshorescc.com.au/event/wednesday-evening-bridge/2026-09-16/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-19ddjzz@dothings
-DTSTART;VALUE=DATE:20260917
-DTEND;VALUE=DATE:20260918
-SUMMARY:Forgotten Island
-DESCRIPTION:
-LOCATION:Kyogle Cinemas
-URL:https://www.kyoglecinemas.com.au/coming-soon/forgotten-island/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-b34gph@dothings
-DTSTART;TZID=Australia/Brisbane:20260917T183000
-DTEND;TZID=Australia/Brisbane:20260917T200000
-SUMMARY:Trivia Night
-DESCRIPTION:Trivia Night – Every Thursday Bring your friends and join us 
- for Trivia Night every Thursday evening. Enjoy a fun\, social atmosphere\,
-  great questions\, and prizes for winning teams. Every […]
-LOCATION:Ocean Shores Country Club – Bowls Green\, Ocean Shores Country C
- lub - Orana Rd Ocean Shores
-URL:https://oceanshorescc.com.au/event/trivia-night/2026-09-17/
-END:VEVENT
-BEGIN:VEVENT
-UID:byron-12p6dgq@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T180000
-DTEND;TZID=Australia/Brisbane:20260919T210000
-SUMMARY:Charlie Hong
-DESCRIPTION:Ballina RSL Free Entertainment\, Ballina Free Entertainment\, B
- allina RSL Bands
-LOCATION:Ballina RSL Boardwalk\, 1 Grant Street\, Ballina\, New South Wales
- \, 2478
-URL:https://ballinarsl.com.au/event/charlie-hong/
 END:VEVENT
 END:VCALENDAR

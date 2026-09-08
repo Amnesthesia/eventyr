@@ -9,7 +9,7 @@
 // way an AI-search one does.
 
 import { GoogleGenAI } from "@google/genai";
-import { CATEGORIES } from "../common.ts";
+import { CATEGORIES, TAG_SET, TAGS } from "../common.ts";
 import {
 	chunkArray,
 	mapWithConcurrency,
@@ -46,7 +46,8 @@ const SYSTEM_PROMPT = `You are classifying events that have already been extract
 For each event you are given, decide only:
 
 - "category": EXACTLY one of ${CATEGORIES.map((c) => `"${c}"`).join(", ")}. Pick the closest fit; use "Community / Other" when nothing else fits.
-- "tags": 3-4 short lowercase topic tags (e.g. "jazz", "free", "outdoor", "philosophy"). No hashes, no punctuation.
+- "tags": 1-5 tags, ONLY from this list: ${TAGS.join(", ")}. Add every listed tag that is true of the event, even when the listing does not use the word (a stand-up night is "comedy","standup"; a brewery tour is "drinks","tour"; any night the audience can perform is "open mic"; a talk, panel or Q&A is "talk"). Do not pad — one tag is fine. Never emit a tag that is not on the list, and never emit "free".
+
 - "social": true if the main draw is meeting/being around other people (meetups, socials, parties, markets).
 - "intellectual": true if it is talk-, idea- or learning-led (lectures, panels, debates, science/philosophy/history).
 - "hands_on": true if attendees actively make or do something (workshops, classes, participatory sessions).
@@ -70,10 +71,18 @@ function defaultAnnotation(): Annotation {
 	};
 }
 
-function coerce(raw: Record<string, unknown> | undefined): Annotation {
+export function coerce(raw: Record<string, unknown> | undefined): Annotation {
 	if (!raw) return defaultAnnotation();
 	const tags = Array.isArray(raw.tags)
-		? raw.tags.filter((t): t is string => typeof t === "string").slice(0, 4)
+		? raw.tags
+				.filter((t): t is string => typeof t === "string")
+				// The model proposes; this decides. Anything off-list is dropped
+				// rather than trusted, which is what makes the closed vocabulary
+				// in shared.ts actually closed. "free" is derived from cost in
+				// curate.ts, so a guessed one is discarded here too.
+				.map((t) => t.trim().toLowerCase())
+				.filter((t) => TAG_SET.has(t) && t !== "free")
+				.slice(0, MAX_TAGS)
 		: [];
 	return {
 		category: isValidCategory(raw.category)
@@ -131,12 +140,29 @@ export function createGeminiAnnotator(apiKey: string): AnnotateFn {
 	};
 }
 
+/**
+ * Bump when SYSTEM_PROMPT changes what it asks for, so a reused annotation can
+ * never answer a question the current prompt no longer asks.
+ *
+ * It is part of the reuse KEY rather than a value compared on read: last
+ * week's file was written under the old prompt and carries no version field,
+ * so a stored-version comparison would have nothing to compare against. A
+ * changed key simply misses, and the event is re-annotated. (rank.ts has the
+ * same problem and solves it the other way, by persisting its version into
+ * the payload it writes.)
+ */
+export const ANNOTATE_PROMPT_VERSION = "v3";
+
+/** Matches the prompt's own ceiling. Was an unexplained 4 while the prompt
+ * asked for more, so tags past the fourth were silently thrown away. */
+const MAX_TAGS = 5;
+
 /** Identity for reusing a previous week's annotation: same title, start and
  * venue. Matches the basis of eventHash in shared.ts. */
 export function annotationKey(event: Record<string, unknown>): string {
 	const s = (k: string): string =>
 		typeof event[k] === "string" ? (event[k] as string) : "";
-	return `${s("title")}|${s("datetime_iso")}|${s("location")}`;
+	return `${ANNOTATE_PROMPT_VERSION}|${s("title")}|${s("datetime_iso")}|${s("location")}`;
 }
 
 /**

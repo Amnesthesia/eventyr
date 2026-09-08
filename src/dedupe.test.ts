@@ -1,9 +1,11 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
+	acronymMatch,
 	type CandidatePair,
 	completeness,
 	dedupeEventsSmart,
+	isDistinctiveTitle,
 	planDedupe,
 } from "./dedupe.ts";
 
@@ -217,4 +219,44 @@ test("a real two-night run is never merged by that rule", () => {
 	};
 	const { settled } = planDedupe([friday, saturday]);
 	assert.equal(settled.length, 0, "consecutive nights stay separate events");
+});
+
+test("a distinctive title on one date is one event, whatever the venue string", () => {
+	// Measured: "Strong is the new pretty" was published three times for the
+	// same date as South Bank Parklands, as Queensland Performing Arts Centre
+	// and as Playhouse/QPAC. No pair of those venue strings looked alike, so
+	// all three went to the classifier, which is told to answer false when
+	// venues differ — and three copies reached the site.
+	assert.ok(isDistinctiveTitle("strong is the new pretty"));
+	// Generic labels stay behind the venue check: these really are two events.
+	assert.ok(!isDistinctiveTitle("trivia night"));
+	assert.ok(!isDistinctiveTitle("open mic"));
+	assert.ok(!isDistinctiveTitle("life drawing"));
+
+	const at = (location: string) => ({
+		title: "Strong Is The New Pretty",
+		datetime_iso: "2026-09-01",
+		location,
+	});
+	const { settled, candidates } = planDedupe([
+		at("South Bank Parklands, Grey St, South Bank"),
+		at("Playhouse, QPAC"),
+	]);
+	assert.equal(settled.length, 1, "settled without asking the model");
+	assert.equal(candidates.length, 0);
+});
+
+test("an acronym is recognised as the same venue", () => {
+	// "Queensland Performing Arts Centre, South Brisbane" against "Playhouse,
+	// QPAC" scores 0.10 on string similarity — nothing connects them but the
+	// initialism, and the acronym is a prefix of the name with the suburb
+	// appended after it.
+	assert.ok(
+		acronymMatch(
+			"queensland performing arts centre south brisbane",
+			"playhouse qpac",
+		),
+	);
+	// Two unrelated venues must not collide.
+	assert.ok(!acronymMatch("the triffid", "the zoo"));
 });

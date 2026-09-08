@@ -42,6 +42,9 @@ export {
 	normaliseText,
 	SITE_URL,
 	slugify,
+	stripUselessTags,
+	TAG_SET,
+	TAGS,
 	TOP_PICK_THRESHOLD,
 } from "./shared.ts";
 

@@ -121,6 +121,53 @@ function groupStats(taste: TasteProfile): { maxes: number[]; saves: number } {
 	return { maxes, saves };
 }
 
+/**
+ * The profile actually used for scoring: what behaviour inferred, plus what the
+ * reader stated outright.
+ *
+ * Stated preferences were previously only a sort tier, so the profile itself
+ * never learned from them — the taste readout kept saying "not personalised"
+ * however many tags you had rated. A rating is a deliberate signal and the
+ * strongest one available, so it enters at the group's full weight rather than
+ * as one more bookmark, and an unwanted tag is removed outright rather than
+ * merely outweighed.
+ *
+ * MIN_SIGNAL is satisfied by ratings too: it exists so a single accidental
+ * bookmark cannot rewrite the picks row, and deliberately rating tags in a
+ * preferences pane is not an accident.
+ */
+export function effectiveTaste(
+	taste: TasteProfile,
+	prefs: TagPrefs,
+): TasteProfile {
+	if (!hasTagPrefs(prefs)) return taste;
+	const next = { ...taste };
+	// At least 1, so ratings work from a standing start with no bookmarks.
+	const { maxes } = groupStats(taste);
+	const tagMax = Math.max(1, maxes[0] ?? 0);
+	for (const [tag, pref] of Object.entries(prefs)) {
+		const key = `tag:${tag}`;
+		if (pref === 1) next[key] = tagMax;
+		else delete next[key];
+	}
+	// cat: is what groupStats counts as an interaction, so a reader who has
+	// only ever rated tags still clears MIN_SIGNAL and gets personalised order.
+	const rated = Object.values(prefs).filter((v) => v === 1).length;
+	if (rated > 0) {
+		next[STATED_SIGNAL_KEY] = Math.max(
+			next[STATED_SIGNAL_KEY] ?? 0,
+			MIN_SIGNAL,
+		);
+	}
+	return next;
+}
+
+/** Carries the "this reader has expressed intent" signal into groupStats
+ * without pretending a category was bookmarked. Prefixed as a category
+ * because that is the group groupStats counts interactions from, and named so
+ * it cannot collide with a real one. */
+const STATED_SIGNAL_KEY = "cat:__stated__";
+
 /** How well an event matches the profile, in score points (0..MAX_BOOST). */
 export function tasteBoost(event: Event, taste: TasteProfile): number {
 	const { maxes, saves } = groupStats(taste);
@@ -157,12 +204,15 @@ export function rankByTaste(
 	prefs: TagPrefs = {},
 ): Event[] {
 	const usePrefs = hasTagPrefs(prefs);
+	// Ratings feed the profile as well as the tier, so within a band an event
+	// matching two wanted tags outranks one matching a single wanted tag.
+	const profile = effectiveTaste(taste, prefs);
 	return events
 		.map((event, index) => ({
 			event,
 			index,
 			tier: usePrefs ? prefTier(event, prefs) : 0,
-			rank: (event.score || 0) + tasteBoost(event, taste),
+			rank: (event.score || 0) + tasteBoost(event, profile),
 		}))
 		.sort((a, b) => b.tier - a.tier || b.rank - a.rank || a.index - b.index)
 		.map((entry) => entry.event);

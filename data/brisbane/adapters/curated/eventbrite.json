@@ -7,6 +7,29 @@
   "week_end": "2026-09-13",
   "events": [
     {
+      "title": "The Whisky Archives",
+      "datetime": "Fri 11 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-11T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Xennox Diamonds",
+      "link": "https://www.eventbrite.com.au/e/the-whisky-archives-tickets-1998832115665?aff=ebdssbdestsearch",
+      "cost": "From A$74.37",
+      "source": "Eventbrite Brisbane",
+      "description": "Revisit five exceptional whiskies from the Xennox archives, curated by host Shane Batchelor to celebrate his five remarkable years.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "whisky",
+        "tasting",
+        "drinks",
+        "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "MIKA HEGGEMANN (Berlin) — Nu Trance Rave",
       "datetime": "Fri 11 Sep, 10:00 PM",
       "datetime_iso": "2026-09-11T22:00:00",
@@ -30,27 +53,27 @@
       "creative": true
     },
     {
-      "title": "The Whisky Archives",
-      "datetime": "Fri 11 Sep, 5:30 PM",
-      "datetime_iso": "2026-09-11T17:30:00",
+      "title": "Girls Night Out Carina - Drag Bingo hosted by Lulu LeMans",
+      "datetime": "Fri 11 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-11T18:00:00",
       "datetime_end_iso": "",
-      "location": "Xennox Diamonds",
-      "link": "https://www.eventbrite.com.au/e/the-whisky-archives-tickets-1998832115665?aff=ebdssbdestsearch",
-      "cost": "From A$74.37",
+      "location": "Carina Leagues Club",
+      "link": "https://www.eventbrite.com/e/girls-night-out-carina-drag-bingo-hosted-by-lulu-lemans-tickets-1995283152621?aff=ebdssbdestsearch",
+      "cost": "From A$48.96",
       "source": "Eventbrite Brisbane",
-      "description": "Revisit five exceptional whiskies from the Xennox archives, curated by host Shane Batchelor to celebrate his five remarkable years.",
+      "description": "Get ready to have a blast at Girls Night Out - Drag Bingo Fundraiser Small Steps for Hannah with the fabulous host Lulu LeMans & friends!",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
-        "whisky",
-        "tasting",
-        "drinks",
+        "drag",
+        "bingo",
+        "fundraiser",
         "social"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": false
+      "creative": true
     },
     {
       "title": "SOUTH EAST QUEENSLAND TATTOO AND ARTS EXHIBITION",
@@ -207,29 +230,6 @@
         "dance",
         "party",
         "colombian"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Girls Night Out Carina - Drag Bingo hosted by Lulu LeMans",
-      "datetime": "Fri 11 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-11T18:00:00",
-      "datetime_end_iso": "",
-      "location": "Carina Leagues Club",
-      "link": "https://www.eventbrite.com/e/girls-night-out-carina-drag-bingo-hosted-by-lulu-lemans-tickets-1995283152621?aff=ebdssbdestsearch",
-      "cost": "See link",
-      "source": "Eventbrite Brisbane",
-      "description": "Get ready to have a blast at Girls Night Out - Drag Bingo Fundraiser Small Steps for Hannah with the fabulous host Lulu LeMans & friends!",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "drag",
-        "bingo",
-        "fundraiser",
-        "social"
       ],
       "social": true,
       "intellectual": false,

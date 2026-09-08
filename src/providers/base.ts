@@ -8,6 +8,7 @@ import {
 	INTERESTS,
 	llmSourceStrings,
 	PROJECT_ROOT,
+	TAGS,
 	toISODate,
 } from "../common.ts";
 
@@ -243,8 +244,9 @@ ${filterRule}
    - source:      website or organisation name (string)
    - description: 1–2 sentences describing what the event actually is — what happens,
                   who runs it, what to expect. Be specific, not generic.
-   - tags:        3–4 short lowercase topic tags reflecting subject matter, format, and cost,
-                  e.g. ["philosophy", "lecture", "free"] or ["art", "workshop", "beginners"]
+   - tags:        1–5 tags, ONLY from this list: ${TAGS.join(", ")}
+                  Add every listed tag that is true of the event. Never invent one, and
+                  never emit "free" — it is derived from the event's own cost.
    - social:      true if the event has significant group/social interaction (meetups, socials, networking, group classes)
    - intellectual: true if the event is primarily idea- or knowledge-focused (lectures, talks, debates, book clubs, trivia)
    - hands_on:    true if participants actively make, build, or do something (workshops, craft, coding, cooking)

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T09:24:37.521Z",
+  "updated_at": "2026-09-08T12:05:25.828Z",
   "stages": {
     "collect/extract": {
       "calls": 53,
@@ -28,9 +28,9 @@
       "estimatedUsd": 0.0185578
     },
     "dedupe": {
-      "calls": 18,
-      "promptTokens": 59462,
-      "outputTokens": 4554,
+      "calls": 60,
+      "promptTokens": 201891,
+      "outputTokens": 15322,
       "cachedTokens": 0,
       "cacheWriteTokens": 0,
       "thoughtTokens": 0,
@@ -38,12 +38,12 @@
       "searchQueries": 0,
       "failures": 0,
       "retries": 0,
-      "estimatedUsd": 0.007767800000000001
+      "estimatedUsd": 0.026317900000000005
     },
     "rank": {
-      "calls": 12,
-      "promptTokens": 57490,
-      "outputTokens": 9871,
+      "calls": 18,
+      "promptTokens": 84568,
+      "outputTokens": 14428,
       "cachedTokens": 0,
       "cacheWriteTokens": 0,
       "thoughtTokens": 0,
@@ -51,7 +51,7 @@
       "searchQueries": 0,
       "failures": 0,
       "retries": 0,
-      "estimatedUsd": 0.0419245
+      "estimatedUsd": 0.061440400000000006
     }
   }
 }

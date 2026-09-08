@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
 	annotationKey,
+	coerce,
 	isRetiredTemplateDescription,
 	previousAnnotationIndex,
 	reuseAnnotation,
@@ -142,4 +143,33 @@ test("an event with no title cannot match", () => {
 		),
 		false,
 	);
+});
+
+test("tags are constrained to the vocabulary, and free is never taken from the model", () => {
+	// The closed list is only closed if code enforces it: 30+ independent
+	// calls per run measurably drifted on spelling ("open mic"/"openmic",
+	// "standup"/"stand-up") when asked to invent tags from prose.
+	const annotation = coerce({
+		category: "Concert / Music",
+		tags: [
+			"live music",
+			"JAZZ",
+			" comedy ",
+			"vibrant",
+			"brisbane",
+			"free",
+			"open-mic",
+		],
+	});
+	assert.deepEqual(annotation.tags, ["live music", "jazz", "comedy"]);
+});
+
+test("more than four tags survive coercion", () => {
+	// The cap was an unexplained 4 while the prompt asked for more, so a fifth
+	// tag was silently discarded and nobody could see it happening.
+	const annotation = coerce({
+		category: "Community / Other",
+		tags: ["workshop", "craft", "ceramics", "beginners", "kids", "family"],
+	});
+	assert.equal(annotation.tags.length, 5);
 });
