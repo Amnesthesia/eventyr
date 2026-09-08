@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Your Light in Motion: Create A Moving Sculpture
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1693uxt@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T130000
+DTEND;TZID=Australia/Brisbane:20260913T150000
+SUMMARY:Your Light in Motion: Create A Moving Sculpture
+DESCRIPTION:Join us for a moment of creativity\, calm\, and connection. Lig
+ ht in Motion invites you to create your own suspended sculpture inspired b
+ y Lumie
+LOCATION:Fringe Pavillion\, Currumbin
+URL:https://www.swellsculpture.com.au/activity/your-light-in-motion-create-
+ a-moving-sculpture/
+END:VEVENT
+END:VCALENDAR

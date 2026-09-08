@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Silver Swans
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-10h7nuc@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T090000
+DTEND;TZID=Australia/Brisbane:20260908T100000
+SUMMARY:Silver Swans
+DESCRIPTION:You’re never TUTU old! Release your inner dancer! Join our Si
+ lver Swans class\, specially designed ballet classes for 55 year old’s a
+ nd over (though there is no upper or lower age limit). Benefits of the cla
+ ss: improve balance – minimising falls slowing down ageing (connected to
+  c
+LOCATION:Hamilton Town Hall\, Hamilton
+URL:https://www.brisbaneunlocked.com.au/silver-swans-2026-09-07
+END:VEVENT
+END:VCALENDAR

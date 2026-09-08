@@ -7,28 +7,6 @@
   "week_end": "2026-09-13",
   "events": [
     {
-      "title": "Gilbert & Sullivan: A Soiree of Song and Satire",
-      "datetime": "Wed 9 Sep, 1:00 PM",
-      "datetime_iso": "2026-09-09T13:00:00",
-      "datetime_end_iso": "",
-      "location": "Queensland Performing Arts Centre, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/2026/gilbert-and-sullivan/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "A joyful concert-style celebration of wit and melody, honouring the much-loved Gilbert &amp; Sullivan repertoire at QPAC&#x2019;s Concert Hall.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "classical",
-        "opera",
-        "theatre"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Brisbane Festival",
       "datetime": "Fri 4 Sep – Sat 26 Sep",
       "datetime_iso": "2026-09-04",
@@ -97,8 +75,8 @@
     },
     {
       "title": "THE BOOK OF MORMON",
-      "datetime": "Tue 8 Sep, 8:47 PM",
-      "datetime_iso": "2026-09-08T20:47:00",
+      "datetime": "Tue 8 Sep, 10:17 PM",
+      "datetime_iso": "2026-09-08T22:17:00",
       "datetime_end_iso": "",
       "location": "Glasshouse Theatre, Grey St, South Bank",
       "link": "https://www.qpac.com.au/whats-on/2026/the-book-of-mormon/",
@@ -109,8 +87,7 @@
       "category": "Concert / Music",
       "tags": [
         "musical",
-        "comedy",
-        "theatre"
+        "comedy"
       ],
       "social": false,
       "intellectual": false,
@@ -296,8 +273,8 @@
     },
     {
       "title": "THE BOOK OF MORMON",
-      "datetime": "Tue 8 Sep, 8:47 PM",
-      "datetime_iso": "2026-09-08T20:47:00",
+      "datetime": "Tue 8 Sep, 10:17 PM",
+      "datetime_iso": "2026-09-08T22:17:00",
       "datetime_end_iso": "",
       "location": "Glasshouse Theatre, Grey St, South Bank",
       "link": "https://www.qpac.com.au/whats-on/2026/the-book-of-mormon/",
@@ -308,8 +285,7 @@
       "category": "Concert / Music",
       "tags": [
         "musical",
-        "comedy",
-        "theatre"
+        "comedy"
       ],
       "social": false,
       "intellectual": false,
@@ -369,14 +345,11 @@
       "link": "https://www.qpac.com.au/whats-on/2026/live-at-melbourne-street-green/",
       "cost": "See link",
       "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "Live Acts. Local Talent. Free on Fridays. This is the perfect way to kickstart your weekend with a weekly program of free performances.",
+      "description": "This is the perfect way to kickstart your weekend with a weekly program of free performances.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "live",
-        "music",
-        "free",
-        "outdoor"
+        "live music"
       ],
       "social": true,
       "intellectual": false,
@@ -388,7 +361,7 @@
       "datetime": "Tue 8 Sep – Fri 11 Sep",
       "datetime_iso": "2026-09-08",
       "datetime_end_iso": "2026-09-11",
-      "location": "Artists in Classrooms, Grey St, South Bank",
+      "location": "Queensland Performing Arts Centre, Grey St, South Bank",
       "link": "https://www.qpac.com.au/whats-on/creative-learning/enviro-beats-workshop/",
       "cost": "See link",
       "source": "Queensland Performing Arts Centre (QPAC)",
@@ -396,12 +369,9 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "music",
-        "environment",
-        "kids",
-        "percussion"
+        "environment"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true

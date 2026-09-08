@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art Explorers with Ainslee Palmer
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1m4a29h@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Art Explorers with Ainslee Palmer
+DESCRIPTION:Inviting children and their parents/carers to connect with art 
+ through movement and storytelling\, encouraging curiosity\, creativity and
+  fun!
+LOCATION:City of Gold Coast Libraries
+URL:https://www.whatsongoldcoast.au/All-events/Art-Explorers-with-Ainslee-P
+ almer
+END:VEVENT
+END:VCALENDAR

@@ -13,6 +13,8 @@ import {
 	normaliseCurrency,
 	slugify,
 	stripForDisplay,
+	stripUselessTags,
+	TAGS,
 } from "./shared.ts";
 
 const DICE = {
@@ -421,4 +423,45 @@ test("a standing exhibition is not a top pick", () => {
 		isTopPick({ score: 9, datetime_iso: "2026-09-09T19:00:00" }, "", ""),
 		true,
 	);
+});
+
+test("no tag restates a vibe", () => {
+	// The four vibe booleans are their own filter. A tag saying the same thing
+	// splits one intent across two controls — and measured on real data, every
+	// event tagged "workshop" scored hands_on, every "talk" scored
+	// intellectual, every "party" and "networking" scored social.
+	//
+	// Genres are not affected and must not be: "jazz" is also 100% creative,
+	// but it says something "creative" cannot.
+	for (const vibeish of [
+		"social",
+		"creative",
+		"intellectual",
+		"hands on",
+		"workshop",
+		"talk",
+		"party",
+		"networking",
+		"performance",
+		"music",
+		"art",
+	]) {
+		assert.ok(
+			!TAGS.includes(vibeish as (typeof TAGS)[number]),
+			`${vibeish} restates a vibe or category and must not be a tag`,
+		);
+		assert.deepEqual(
+			stripUselessTags([vibeish], "Brisbane", "Some Venue"),
+			[],
+			`${vibeish} must also be stripped from already-published data`,
+		);
+	}
+
+	// The specific survives.
+	for (const keep of ["jazz", "exhibition", "market", "ceramics", "trivia"]) {
+		assert.ok(TAGS.includes(keep as (typeof TAGS)[number]));
+		assert.deepEqual(stripUselessTags([keep], "Brisbane", "Some Venue"), [
+			keep,
+		]);
+	}
 });

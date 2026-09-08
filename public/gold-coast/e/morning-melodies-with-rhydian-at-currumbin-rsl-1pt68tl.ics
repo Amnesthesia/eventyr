@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Morning Melodies with Rhydian at Currumbin RSL
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1pt68tl@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T103000
+DTEND;TZID=Australia/Brisbane:20260908T120000
+SUMMARY:Morning Melodies with Rhydian at Currumbin RSL
+DESCRIPTION:Join us on the second Tuesday of each month for our FREE Monthl
+ y Morning Melodies\, a delightful musical experience now located downstair
+ s in the lounge area at Currumbin RSL. This FREE event begins at 10:30am t
+ hrough to 12:00pm\, with doors to the club opening at 10:00am\, giving you
+  plenty of time to find a seat and get comfortable. Each month will featur
+ es a new artist performing all the best tunes from the 60s\, 70s and 80s! 
+ This is a non-ticketed event open to members and non-members\, so mark you
+ r calendars for a truly enchanting morning. We also invite you to enjoy a 
+ delicious lunch afterwards and recommend booking a table in advance.
+LOCATION:165 Duringan Street\, Currumbin\, QLD\, Australia\, Queensland 422
+ 3
+URL:https://www.currumbinrsl.com.au/event/morning-melodies-with-rhydian-at-
+ currumbin-rsl/
+END:VEVENT
+END:VCALENDAR

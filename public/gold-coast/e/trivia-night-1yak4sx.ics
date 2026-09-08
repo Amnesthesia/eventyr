@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Trivia Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1yak4sx@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T183000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Trivia Night
+DESCRIPTION:Don’t miss out on the fun – form your team today and join u
+ s for a night of trivia excitement!
+LOCATION:Club Broadbeach\, 169 Surf Parade
+URL:https://www.clubbroadbeach.com.au/event/trivia-night/2026-09-10/
+END:VEVENT
+END:VCALENDAR

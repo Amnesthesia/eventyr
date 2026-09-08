@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Trivia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1sgm8zk@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Trivia
+DESCRIPTION:Committed to being a premier Surf Life Saving Club and providin
+ g excellence in Surf Life Saving services to Mermaid Beach.
+LOCATION:Mermaid Beach Surf Life Saving Club
+URL:https://www.mermaidslsc.org.au/whats-on/#
+END:VEVENT
+END:VCALENDAR

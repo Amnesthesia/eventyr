@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Spring School Holidays at Bankfoot House
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1s8awcg@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20261004
+SUMMARY:Spring School Holidays at Bankfoot House
+DESCRIPTION:Spring School Holidays at Bankfoot House features workshops and
+  activities for children.
+LOCATION:WeekendNotes Brisbane
+URL:https://www.weekendnotes.com/spring-school-holidays-at-bankfoot-house/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Rose Powell
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-aebu8b@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T170000
+DTEND;TZID=Australia/Brisbane:20260908T190000
+SUMMARY:Rose Powell
+DESCRIPTION:Rose Powell. live at Sports Central Caboolture\, Brisbane. on T
+ uesday 8 September 2026. from 5:00pm.
+LOCATION:Sports Central Caboolture\, Caboolture
+URL:https://musick.com.au/gig/rose-powell-2026-09-08/
+END:VEVENT
+END:VCALENDAR

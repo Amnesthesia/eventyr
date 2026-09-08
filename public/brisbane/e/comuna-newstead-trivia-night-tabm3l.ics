@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Comuna Newstead Trivia Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-tabm3l@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T180000
+DTEND;TZID=Australia/Brisbane:20260908T203000
+SUMMARY:Comuna Newstead Trivia Night
+DESCRIPTION:Spice up your Tuesday nights with Think Trivia at Comuna Newste
+ ad. Step into a vibrant Mexican cantina setting where colourful energy\, c
+ lever questions and free live entertainment come together for a night full
+  of fun! Test your knowledge\, taste the tacos and tequila\, and see if yo
+ ur crew can turn bold answers into brilliant prizes. Book your table now a
+ nd let the good times roll at Comuna Newstead!
+LOCATION:Comuna Newstead\, 27 Cunningham Street
+URL:https://www.thinktrivia.com.au/weeklyevents/comuna-newstead-trivia-nigh
+ t
+END:VEVENT
+END:VCALENDAR

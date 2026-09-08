@@ -1,9 +1,15 @@
 {
   "week_start": "2026-09-07",
   "names": [
-    "Humanitix Brisbane"
+    "Humanitix Brisbane",
+    "QUT public events",
+    "Opera Queensland",
+    "Queensland Theatre"
   ],
   "reasons": {
-    "Humanitix Brisbane": "4 found, none inside the window"
+    "Humanitix Brisbane": "4 found, none inside the window",
+    "QUT public events": "6 found, none inside the window",
+    "Opera Queensland": "discover: getaddrinfo ENOTFOUND operaq.com.au",
+    "Queensland Theatre": "10 found, none inside the window"
   }
 }

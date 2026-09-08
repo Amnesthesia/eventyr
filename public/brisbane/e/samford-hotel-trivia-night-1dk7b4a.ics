@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Samford Hotel Trivia Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dk7b4a@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T183000
+DTEND;TZID=Australia/Brisbane:20260908T193000
+SUMMARY:Samford Hotel Trivia Night
+DESCRIPTION:Escape to the rustic charm of the Samford Hotel for a free\, fu
+ n night of trivia with Think Trivia! Gather your friends and family\, enjo
+ y the relaxed country style atmosphere\, and settle in for an evening of q
+ uestions\, laughs\, games and friendly competition. Entry is free and with
+  great prizes up for grabs\, it is the perfect excuse to book a table and 
+ make a night of it in beautiful Samford Valley. Bookings: (07) 3289 1212
+LOCATION:Samford Hotel\, Main Street
+URL:https://www.thinktrivia.com.au/weeklyevents/samford-hotel-trivia-night
+END:VEVENT
+END:VCALENDAR

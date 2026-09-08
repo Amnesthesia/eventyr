@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art Space: Fletcher Street Cottage
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-kjrxpi@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T093000
+DTEND;TZID=Australia/Brisbane:20260910T113000
+SUMMARY:Art Space: Fletcher Street Cottage
+DESCRIPTION:Express yourself through art! Whether it's painting\, drawing\,
+  clay or collage\, this is your chance to explore your creativity.
+LOCATION:Byron Community Centre
+URL:https://www.byroncentre.com.au/community-events/byron-art-space
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SWELL Sculpture Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1npbhyo@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260921
+SUMMARY:SWELL Sculpture Festival
+DESCRIPTION:An open-air art exhibition featuring large-scale sculptures fro
+ m local and international artists displayed along the coastline. It serves
+  as a significant creative hub for the Gold Coast community.
+LOCATION:Currumbin Beach\, Currumbin
+URL:https://goldcoastinfo.net/gold-coast-in-september/
+END:VEVENT
+END:VCALENDAR

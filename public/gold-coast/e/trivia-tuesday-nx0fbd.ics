@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Trivia Tuesday
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-nx0fbd@dothings
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:Trivia Tuesday
+DESCRIPTION:TRIVIA TUESDAYS Are you ready to put your brainpower to the tes
+ t? Join us for a night of fun and challenge...
+LOCATION:Paradise Point Bowls Club
+URL:https://www.paradisepointbowls.com.au/event/trivia-tuesday/
+END:VEVENT
+END:VCALENDAR

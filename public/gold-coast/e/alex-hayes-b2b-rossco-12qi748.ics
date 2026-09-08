@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Alex Hayes B2B Rossco
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-12qi748@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Alex Hayes B2B Rossco
+DESCRIPTION:Celebrate Father's Day at Kaktus Bar with $20 Birria Sunday\, l
+ ive vinyl DJs\, charity beard trims\, raffle prizes and family-friendly fu
+ n
+LOCATION:Kaktus Bar
+URL:https://kaktus.southportsharks.com.au/events/alex-hayes-b2b-rossco/
+END:VEVENT
+END:VCALENDAR

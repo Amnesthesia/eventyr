@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Paint ‘N’ Platters — watercolour workshop with grazing p
+ latters
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:byron-1nq29qg@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T110000
+DTEND;TZID=Australia/Brisbane:20260912T130000
+SUMMARY:Paint ‘N’ Platters — watercolour workshop with grazing platte
+ rs
+DESCRIPTION:A hands-on watercolour painting workshop paired with food\, aim
+ ed at fostering creative connection in a group environment.
+LOCATION:Byron Bay Cavanbah Centre - Sports & Cultural Complex\, 249 Ewings
+ dale Rd\, Byron Bay NSW
+URL:https://www.eventbrite.com.au/e/paint-n-platters-watercolour-workshop-w
+ ith-grazing-platters-tickets-1997527926801
+END:VEVENT
+END:VCALENDAR

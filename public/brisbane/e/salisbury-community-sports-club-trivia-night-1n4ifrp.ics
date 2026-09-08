@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Salisbury Community Sports Club Trivia Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1n4ifrp@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T183000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:Salisbury Community Sports Club Trivia Night
+DESCRIPTION:Settle in for a cracking night at Salisbury Community Sports Cl
+ ub with Think Trivia! Enjoy free weekly entertainment in a relaxed local s
+ etting\, where great food\, cold drinks and community spirit come together
+  for a night of fun questions and friendly rivalry. Round up your team\, g
+ rab a table\, and see if your brainpower can bowl over the competition and
+  land you some amazing prizes. NB: Max. 10 players per team. Bookings: (07
+ ) 3277 2274
+LOCATION:Salisbury Community Sports Club\, 37 Ainsworth Street
+URL:https://www.thinktrivia.com.au/weeklyevents/salisbury-community-sports-
+ club-trivia-night
+END:VEVENT
+END:VCALENDAR

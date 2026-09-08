@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Line Dancing Class
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-wpa8tb@dothings
+DTSTART;TZID=Australia/Brisbane:20260908T090000
+DTEND;TZID=Australia/Brisbane:20260908T110000
+SUMMARY:Line Dancing Class
+DESCRIPTION:Weekly Line Dancing Join us every week for a morning of fun and
+  fitness\, held in the Diggers Bar! Line dancing runs from 9:00 am – 12:
+ 00 Noon \, with dancers arriving from 8:45 am . All levels welcome\, and i
+ t’s free to join! Member’s Only! For more info\, contact the club on 0
+ 7 5447 1766. Instructor Siobhan Wright.
+LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave
+URL:https://www.noosarsl.com.au/entertainment/line-dancing-class-2-2/2026-0
+ 9-08/
+END:VEVENT
+END:VCALENDAR

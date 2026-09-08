@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:FREE Thursday Trivia at Currumbin RSL
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-62b7yi@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T183000
+DTEND;TZID=Australia/Brisbane:20260910T210000
+SUMMARY:FREE Thursday Trivia at Currumbin RSL
+DESCRIPTION:FREE trivia on Thursday! 🚨 Great prizes up for grabs. Gather
+  your crew and see if you can win the evening. Rego from 6:30pm with a 7pm
+  start. No table bookings required\, just rock up and register when you ar
+ rive
+LOCATION:165 Duringan Street\, Currumbin\, QLD\, Australia\, Queensland 422
+ 3
+URL:https://www.currumbinrsl.com.au/event/free-thursday-trivia-at-currumbin
+ -rsl-37/
+END:VEVENT
+END:VCALENDAR

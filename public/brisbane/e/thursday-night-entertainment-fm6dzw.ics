@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Thursday Night Entertainment
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-fm6dzw@dothings
+DTSTART;TZID=Australia/Brisbane:20260910T180000
+DTEND;TZID=Australia/Brisbane:20260910T200000
+SUMMARY:Thursday Night Entertainment
+DESCRIPTION:Thursday Night Entertainment. live at Chattahoochee Joes Honky 
+ Tonk\, Brisbane. on Thursday 10 September 2026. from 6:00pm.
+LOCATION:Chattahoochee Joes Honky Tonk\, Fortitude Valley
+URL:https://musick.com.au/gig/thursday-night-entertainment-2026-09-10/
+END:VEVENT
+END:VCALENDAR

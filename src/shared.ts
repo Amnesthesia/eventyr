@@ -68,6 +68,15 @@ export function meetsScoreFloor(score: unknown): boolean {
  * thousand tag slots that divide nothing — and standing preferences punish
  * broad tags hardest: "less music" would sink half the week.
  *
+ * Also absent, one level down: "workshop", "talk", "party", "networking".
+ * Those are not merely correlated with a vibe, they ARE one — the vibe
+ * definitions name them outright ("hands_on: workshops, classes",
+ * "intellectual: talk-led", "social: parties, markets") and every event
+ * carrying them scored the matching vibe in 100% of cases. A reader who wants
+ * hands-on things already has the Hands On filter; a duplicate tag beside it
+ * splits one intent across two controls. Genres and concrete formats stay:
+ * "jazz" is also 100% creative but says something "creative" cannot.
+ *
  * "free" is also absent because it is not a judgement. It is derived from the
  * event's own cost field in curate.ts; the annotator never sees cost, and when
  * it was asked to guess, only 17 of 43 free events came out agreeing with it.
@@ -120,7 +129,6 @@ export const TAGS = [
 	"poetry",
 	"books",
 	// ideas and world
-	"talk",
 	"history",
 	"science",
 	"philosophy",
@@ -132,7 +140,6 @@ export const TAGS = [
 	"nature",
 	"gardening",
 	// format
-	"workshop",
 	"tour",
 	"market",
 	"festival",
@@ -141,8 +148,6 @@ export const TAGS = [
 	"raffle",
 	"games",
 	"gaming",
-	"party",
-	"networking",
 	"charity",
 	// body
 	"fitness",
@@ -193,6 +198,30 @@ export const TAG_SET: ReadonlySet<string> = new Set<string>(TAGS);
  * maintain, and it would need editing every time a city is added.
  */
 const VACUOUS_TAGS = new Set([
+	// Vibe restatements. The four vibe booleans are their own filter, and a tag
+	// saying the same thing splits one intent across two controls. Kept here as
+	// well as out of TAGS so the AI-search path and already-published data get
+	// cleaned, not just future annotations.
+	"social",
+	"creative",
+	"intellectual",
+	"hands on",
+	"hands-on",
+	"handson",
+	"workshop",
+	"workshops",
+	"talk",
+	"talks",
+	"lecture",
+	"party",
+	"networking",
+	"performance",
+	"community",
+	"culture",
+	"entertainment",
+	"live",
+	"music",
+	"art",
 	"immersive",
 	"unique",
 	"fun",

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane German Club Trivia Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-n16l9m@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T183000
+DTEND;TZID=Australia/Brisbane:20260909T210000
+SUMMARY:Brisbane German Club Trivia Night
+DESCRIPTION:Bring a little Bavarian buzz to your Wednesday night at the Bri
+ sbane German Club with Think Trivia! Enjoy free trivia surrounded by class
+ ic German hospitality\, lively club atmosphere and plenty of good-natured 
+ fun. Rally your team\, settle in for a spirited trivia challenge\, and see
+  if your table has what it takes to win awesome prizes. Book now and make 
+ trivia night something to say Prost about! Bookings: (07) 3391 2434
+LOCATION:Brisbane German Club\, 416 Vulture Street
+URL:https://www.thinktrivia.com.au/weeklyevents/brisbane-german-club-trivia
+ -night
+END:VEVENT
+END:VCALENDAR

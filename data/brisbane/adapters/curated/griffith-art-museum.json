@@ -5,5 +5,84 @@
   "source_id": "griffith-art-museum",
   "week_start": "2026-09-07",
   "week_end": "2026-09-13",
-  "events": []
+  "events": [
+    {
+      "title": "How to Pitch and Write for the Conversation",
+      "datetime": "Wed 9 Sep",
+      "datetime_iso": "2026-09-09",
+      "datetime_end_iso": "",
+      "location": "Griffith University Art Museum, 226 Grey St",
+      "link": "https://griffith.edu.au/event/82494",
+      "cost": "See link",
+      "source": "Griffith University Art Museum",
+      "description": "Please join us for this one hour editor talk (40 minute presentation + 20 minute Q&A) from an Editor at The Conversation.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "writing"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Inclusive Research in Action",
+      "datetime": "Tue 15 Sep",
+      "datetime_iso": "2026-09-15",
+      "datetime_end_iso": "",
+      "location": "Griffith University Art Museum, 226 Grey St",
+      "link": "https://griffith.edu.au/event/82354",
+      "cost": "See link",
+      "source": "Griffith University Art Museum",
+      "description": "This three-part series is designed to equip emerging researchers, ECRs, and researchers new to inclusive research with the theoretical grounding, methodological insights, and practical strategies needed to conduct inclusive research that is ethical, impactful, and responsive to diverse communities.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "science"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "eResearch Essentials: Introduction to Nectar Cloud",
+      "datetime": "Tue 15 Sep",
+      "datetime_iso": "2026-09-15",
+      "datetime_end_iso": "",
+      "location": "Griffith University Art Museum, 226 Grey St",
+      "link": "https://griffith.edu.au/event/82733",
+      "cost": "See link",
+      "source": "Griffith University Art Museum",
+      "description": "Learn how to access Nectar Cloud, what resources are available, how to create virtual machines, and tips for applying for allocations.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "technology"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Executive Masterclass - Are you ready to build your business beyond borders?",
+      "datetime": "Tue 15 Sep",
+      "datetime_iso": "2026-09-15",
+      "datetime_end_iso": "",
+      "location": "Griffith University Art Museum, 226 Grey St",
+      "link": "https://griffith.edu.au/event/82739",
+      "cost": "See link",
+      "source": "Griffith University Art Museum",
+      "description": "Join Dr Anne Cullen and MBA alumnus James Pearce to discover practical lessons in global leadership, collaboration and resilience from firsthand experience navigating international business and complex projects.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

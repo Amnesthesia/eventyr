@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Friday Night Live Music – Livin in the 70s
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1flpbj@dothings
+DTSTART;TZID=Australia/Brisbane:20260911T200000
+DTEND;TZID=Australia/Brisbane:20260911T230000
+SUMMARY:Friday Night Live Music – Livin in the 70s
+DESCRIPTION:Playing live in the Diggers Bar\, Livin in the 70s is the ultim
+ ate\, classic Rock Tribute show. With over 3 hours of music from such lege
+ ndary artists such as\, Fleetwood [...]
+LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
+URL:https://www.noosarsl.com.au/entertainment/friday-night-live-entertainme
+ nt-livin-in-the-70s/
+END:VEVENT
+END:VCALENDAR
