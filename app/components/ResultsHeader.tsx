@@ -12,7 +12,12 @@ export default function ResultsHeader() {
 		<div className="results-head">
 			<p className="results-count">
 				<strong>{filtered.length}</strong>
-				<span>of {cityData.events.length} events match</span>
+				{/* "events match" is the first thing dropped on a phone — the big
+				    number beside "of 698" already says what it is. */}
+				<span>
+					of {cityData.events.length}{" "}
+					<span className="results-word">events match</span>
+				</span>
 				<span className="results-range">{fmtRange(weekStart, weekEnd)}</span>
 			</p>
 			<div className="results-group">

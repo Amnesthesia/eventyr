@@ -231,14 +231,6 @@ export default function EventCard({
 										: `Filter by ${tag}`
 							}
 						>
-							{/* The "+" says the chip adds a filter. Without it the tags
-							    read as decoration and nobody pressed them. It is dropped
-							    once the tag IS the filter, where the chip removes it. */}
-							{!activeTags.includes(tag) && (
-								<span className="tag-plus" aria-hidden="true">
-									+&nbsp;
-								</span>
-							)}
 							{tag}
 						</button>
 					))}

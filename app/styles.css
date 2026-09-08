@@ -974,7 +974,10 @@ astro-island {
 		flex: 1 1 auto;
 		min-width: 0;
 	}
-	.search-bar .search-input {
+	/* Three classes deep to outrank the desktop `.hdr-tools .search-bar
+	   .search-input` width above — at two it lost, kept its 16rem, and pushed
+	   the icon cluster off a 320px screen. */
+	.hdr-tools .search-bar .search-input {
 		width: 100%;
 		/* An <input>'s automatic minimum is its `size` attribute's width, so it
 		   refuses to shrink without this and drags the row past the viewport. */
@@ -999,6 +1002,32 @@ astro-island {
 	}
 	.hdr-row--refine {
 		gap: 0.4rem;
+	}
+	/* The count and the grouping control stay on one row on a phone; it is the
+	   count's own text that wraps, onto a second line under itself, rather than
+	   the two blocks squeezing each other. */
+	.results-head {
+		flex-wrap: nowrap;
+		align-items: center;
+		gap: 0.5rem;
+		padding-top: var(--s3);
+	}
+	.results-count {
+		flex-wrap: wrap;
+		row-gap: 0.15rem;
+	}
+	.results-range {
+		flex-basis: 100%;
+	}
+	.results-range::before {
+		content: none;
+	}
+	.results-word {
+		display: none;
+	}
+	/* The segments say what they group by; the word is the first thing to go. */
+	.results-group .frow-label {
+		display: none;
 	}
 	.hdr-divider {
 		display: none;
