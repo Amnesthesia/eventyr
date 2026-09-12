@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Play With Clay with Monte Lupo
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1eh4096@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T100000
+DTEND;TZID=Australia/Brisbane:20260913T120000
+SUMMARY:Play With Clay with Monte Lupo
+DESCRIPTION:Unleash your creativity with Monte Lupo! Have a play on the pot
+ tery wheel and experience the joy of working with clay.
+LOCATION:Len Wort Park\, Currumbin
+URL:https://www.swellsculpture.com.au/activity/play-with-clay-with-monte-lu
+ po/
+END:VEVENT
+END:VCALENDAR

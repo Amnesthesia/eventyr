@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Trivia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-970t1w@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:Trivia
+DESCRIPTION:Join us every Wednesday with iconic Gold Coaster\, Terry 'Tappa
+ ' Teece\, as he hosts his own special blend of Trivia!
+LOCATION:Burleigh Sports Club
+URL:https://www.burleighsports.com.au/events/trivia/
+END:VEVENT
+END:VCALENDAR

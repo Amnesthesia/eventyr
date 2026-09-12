@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Live Music Sunday
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1jxtxp1@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Live Music Sunday
+DESCRIPTION:Free live music at Harley & Hudson Coffee Bar.
+LOCATION:What's On Gold Coast\, Southport
+URL:https://www.whatsongoldcoast.au/All-events/Live-Music-Sunday
+END:VEVENT
+END:VCALENDAR

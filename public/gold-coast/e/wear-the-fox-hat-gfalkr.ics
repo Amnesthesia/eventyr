@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:WEAR THE FOX HAT
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-gfalkr@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T040000
+DTEND;TZID=Australia/Brisbane:20260927T060000
+SUMMARY:WEAR THE FOX HAT
+DESCRIPTION:Having originally formed 11-12 years ago\, Wear the Fox Hat is 
+ one of the most exciting covers bands to emerge from Northern NSW in recen
+ t years. The band offers a wealth of experience and a vast knowledge of po
+ pular music genres. Wear the Fox Hat boasts some great vocal harmonies\, a
+ ccompanied by strong instrumental backing. Mixed with exceptional vocals a
+ nd quality reproductions of songs from some of the best acts in popular mu
+ sic history – you’re in for a thoroughly enjoyable experience from the
+  first song to last resounding note.
+LOCATION:Club Banora Lounge\, 2 Leisure Dr\, Banora Point NSW 2486\, Austra
+ lia
+URL:https://twintowns.com.au/events/wear-the-fox-hat/
+END:VEVENT
+END:VCALENDAR

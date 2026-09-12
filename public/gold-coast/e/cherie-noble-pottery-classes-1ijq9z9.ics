@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Cherie Noble Pottery Classes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1ijq9z9@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T093000
+DTEND;TZID=Australia/Brisbane:20260919T123000
+SUMMARY:Cherie Noble Pottery Classes
+DESCRIPTION:Classes are held weekly in three hour sessions running for 5 or
+  10 weeks. Classes are friendly\, relaxed and all levels of experience are
+  welcome from
+LOCATION:Mudgeeraba Studio
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+END:VCALENDAR

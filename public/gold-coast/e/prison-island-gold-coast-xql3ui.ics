@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Prison Island Gold Coast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-xql3ui@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T100000
+DTEND;TZID=Australia/Brisbane:20260913T120000
+SUMMARY:Prison Island Gold Coast
+DESCRIPTION:Discover the ultimate team adventure in Gold Coast: 39 thrillin
+ g challenges await! Inspired by escape rooms and game shows\, Prison Islan
+ d is an action-packed team experience where you'll conquer 39 unique chall
+ enge cells\, combining physical\, mental and skill-based tasks. Earn point
+ s\, work together\, and put your teamwork to the ultimate test.
+LOCATION:Prison Island Gold Coast
+URL:https://feverup.com/m/652182
+END:VEVENT
+END:VCALENDAR

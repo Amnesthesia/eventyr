@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:IGNITION DUO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1p3dus3@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T023000
+DTEND;TZID=Australia/Brisbane:20260927T043000
+SUMMARY:IGNITION DUO
+DESCRIPTION:Featuring male and female lead vocals and incorporating a rich 
+ blend of vocal harmonies and soulful grooves\, Ignition can cover a large 
+ and diverse range of songs and styles. From laid back dinner tunes to danc
+ e floor fillers\, Ignition play all your favourite songs from the 70’s t
+ hrough to the latest hits. Get the party started with Ignition!
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/ignition-duo-2/
+END:VEVENT
+END:VCALENDAR

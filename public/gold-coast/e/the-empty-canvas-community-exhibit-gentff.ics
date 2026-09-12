@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Empty Canvas Community Exhibit
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-gentff@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:The Empty Canvas Community Exhibit
+DESCRIPTION:An open community art exhibition providing a platform for local
+  creators to display their work in a public gallery setting.
+LOCATION:Robina
+URL:https://www.whatsongoldcoast.com.au
+END:VEVENT
+END:VCALENDAR

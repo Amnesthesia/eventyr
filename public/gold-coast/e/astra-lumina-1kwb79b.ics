@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Astra Lumina
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1kwb79b@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20261011
+SUMMARY:Astra Lumina
+DESCRIPTION:Some nights are better shared. Grab 4 tickets to Astra Lumina f
+ or just $99 and save up to $81 on standard pricing. Spend an evening at th
+ e Gold Coast’s #1 after-dark experience with the people you love\, for l
+ ess! This offer is only available for four weeks only\, so book your group
+  in before it’s gone!
+LOCATION:Currumbin Wildlife Sanctuary events
+URL:https://currumbinsanctuary.com.au/
+END:VEVENT
+END:VCALENDAR

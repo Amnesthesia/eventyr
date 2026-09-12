@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wil Sargisson Quartet
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-11d8emc@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Wil Sargisson Quartet
+DESCRIPTION:An intimate live jazz performance by the Wil Sargisson Quartet\
+ , known for their technical skill and classic sound. Ideal for those looki
+ ng for a sophisticated musical experience in a dedicated performance setti
+ ng.
+LOCATION:Southport
+URL:https://www.whatsongoldcoast.com.au
+END:VEVENT
+END:VCALENDAR

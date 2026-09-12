@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Board Gamers
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1tii90b@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T204500
+DTEND;TZID=Australia/Brisbane:20260923T224500
+SUMMARY:The Board Gamers
+DESCRIPTION:People of all ages love board games. They’re entertaining\, s
+ timulate the mind\, enhance the memory and exercise cognitive skills. Most
+  importantly\, they’re a whole lot of fun. You’re invited to join a ne
+ w group at Twin Towns\, The Board Gamers. It’s the perfect excuse to get
+  out of the house\, connect socially with other members and make new frien
+ ds\, and enjoy morning tea and a chat. The best part\, it’s all free. Se
+ cond and fourth Wednesday of the month from 10.45am-12pm Qld\, Signatures 
+ on the Lobby Level at The Sebel Twin Towns.
+LOCATION:Twin Towns\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/the-board-gamers/
+END:VEVENT
+END:VCALENDAR

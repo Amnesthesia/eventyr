@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Coastal Markets – Coolangatta
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-y8grdb@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:The Coastal Markets – Coolangatta
+DESCRIPTION:One of the region’s largest and most vibrant beachfront marke
+ t experiences\, bringing together hundreds of vendors.
+LOCATION:City of Gold Coast Libraries
+URL:https://www.whatsongoldcoast.au/All-events/The-Coastal-Markets-Coolanga
+ tta
+END:VEVENT
+END:VCALENDAR

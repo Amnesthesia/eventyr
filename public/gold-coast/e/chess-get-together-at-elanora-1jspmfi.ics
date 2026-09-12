@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Chess Get Together at Elanora
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1jspmfi@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:Chess Get Together at Elanora
+DESCRIPTION:A casual\, recurring community gathering for chess enthusiasts 
+ of all skill levels to play and discuss the game.
+LOCATION:Elanora Library
+URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

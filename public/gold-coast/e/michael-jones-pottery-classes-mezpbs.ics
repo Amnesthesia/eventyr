@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Michael Jones Pottery Classes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-mezpbs@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T180000
+DTEND;TZID=Australia/Brisbane:20260916T210000
+SUMMARY:Michael Jones Pottery Classes
+DESCRIPTION:Classes are held weekly in three hour sessions running for 5 or
+  10 weeks. Classes are friendly\, relaxed and all levels of experience are
+  welcome from
+LOCATION:Benowa Studio
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+END:VCALENDAR

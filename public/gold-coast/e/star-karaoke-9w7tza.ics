@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:star karaoke
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-9w7tza@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T180000
+DTEND;TZID=Australia/Brisbane:20260926T220000
+SUMMARY:star karaoke
+DESCRIPTION:Unleash your inner superstar and join us for an unforgettable n
+ ight of karaoke fun! Whether you’re a seasoned performer or just love si
+ nging along with friends\, our stage is yours ... Read more »
+LOCATION:Club Musgrave
+URL:https://clubmusgrave.com/event/star-karaoke/
+END:VEVENT
+END:VCALENDAR

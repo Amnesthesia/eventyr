@@ -3,9 +3,31 @@
   "provider": "adapters",
   "tier": "aggregators",
   "source_id": "insidegoldcoast",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
+    {
+      "title": "Harbour Town Get Outlet Sale",
+      "datetime": "Thu 10 Sep – Sun 13 Sep",
+      "datetime_iso": "2026-09-10",
+      "datetime_end_iso": "2026-09-13",
+      "location": "Inside Gold Coast What's On",
+      "link": "https://www.insidegoldcoast.com.au/whatson/harbour-town-get-outlet-sale",
+      "cost": "See link",
+      "source": "Inside Gold Coast What's On",
+      "description": "Harbour Town's Get Outlet Sale is on this week Thursday 10th September - Sunday 13th September. Enjoy HUGE sales from big brands! Test your luck at Harbour Town's Get Outlet Sale Candy Bar with over $8,000 in prizes!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "shopping",
+        "market",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
     {
       "title": "Ultimate Father’s Day Experience Pack",
       "datetime": "Sat 5 Sep – Sun 13 Sep",
@@ -27,6 +49,28 @@
       "intellectual": false,
       "hands_on": true,
       "creative": false
+    },
+    {
+      "title": "SWELL Sculpture Festival 2026",
+      "datetime": "Fri 11 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-11",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Inside Gold Coast What's On",
+      "link": "https://www.insidegoldcoast.com.au/whatson/swell-sculpture-festival",
+      "cost": "See link",
+      "source": "Inside Gold Coast What's On",
+      "description": "Experience sculptures created by artists from far & wide in the 24th annual Festival.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "sculpture",
+        "festival",
+        "outdoor"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     },
     {
       "title": "Mamma Mia! The Musical at The Star Gold Coast",
@@ -95,119 +139,31 @@
       "creative": false
     },
     {
-      "title": "Cantina Night – Every Tuesday at 4 Pines x Boardriders Coolangatta",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "title": "Sunday Roast at Ember",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
       "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/cantina-night-every-tuesday-at-4-pines-coolangatta",
+      "link": "https://www.insidegoldcoast.com.au/whatson/sunday-roast-at-ember",
       "cost": "See link",
       "source": "Inside Gold Coast What's On",
-      "description": "Taco Tuesday hits 4 Pines x Boardriders with $5 tacos, $15 nachos and $12 margaritas.",
+      "description": "A Sunday roast is a beloved tradition, but at Ember Bar & Grill, we do it differently.",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
-        "tacos",
-        "tuesday",
-        "dining"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Trivia Wednesdays at 4 Pines x Boardriders Coolangatta",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/trivia-wednesdays-at-4-pines-x-boardriders-coolangatta",
-      "cost": "See link",
-      "source": "Inside Gold Coast What's On",
-      "description": "Wednesday trivia hits 4 Pines x Boardriders with prizes and a $25 burger and pint deal.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "trivia",
-        "pub",
-        "games"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Live with the Pines – Every Thursday at 4 Pines x Boardriders Coolangatta",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "",
-      "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/live-with-the-pines-every-thursday-at-4-pines-x-boardriders-coolangatta",
-      "cost": "See link",
-      "source": "Inside Gold Coast What's On",
-      "description": "Catch live music every Thursday at 4 Pines x Boardriders, plus $15 burgers and chips from 7pm.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "livemusic",
-        "pub",
-        "dining"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "SWELL Sculpture Festival 2026",
-      "datetime": "Fri 11 Sep – Sun 20 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-09-20",
-      "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/swell-sculpture-festival",
-      "cost": "See link",
-      "source": "Inside Gold Coast What's On",
-      "description": "Experience sculptures created by artists from far & wide in the 24th annual Festival.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "sculpture",
-        "festival",
-        "outdoor"
+        "roast",
+        "dining",
+        "sunday"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Crafted Beer Festival 2026",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "2026-09-12",
-      "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/crafted-beer-cider-festival",
-      "cost": "See link",
-      "source": "Inside Gold Coast What's On",
-      "description": "The Crafted Beer Festival is loaded for another epic day of beers, brews & beaches in Broadbeach on Saturday 12th September 2026.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "beer",
-        "festival",
-        "music"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
       "title": "Spritz & Share at SANDFIRE",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
       "location": "Inside Gold Coast What's On",
       "link": "https://www.insidegoldcoast.com.au/whatson/spritz-share-at-sandfire",
@@ -215,11 +171,55 @@
       "source": "Inside Gold Coast What's On",
       "description": "Turn your weekend brunch into a full-blown spritz session with SANDFIRE’s Spritz & Share experience.",
       "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Aboriginal Art Sale at Art Yarramunua Gallery",
+      "datetime": "Thu 2 Apr – Thu 31 Dec",
+      "datetime_iso": "2026-04-02",
+      "datetime_end_iso": "2026-12-31",
+      "location": "Inside Gold Coast What's On",
+      "link": "https://www.insidegoldcoast.com.au/whatson/aboriginal-art-sale-at-art-yarramunua-gallery",
+      "cost": "See link",
+      "source": "Inside Gold Coast What's On",
+      "description": "Art Yarramunua Gallery in Burleigh Heads is currently hosting an exclusive art sale, with up to 50% off all artwork.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Yappy Hour – Every Sunday at 4 Pines x Boardriders Coolangatta",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Inside Gold Coast What's On",
+      "link": "https://www.insidegoldcoast.com.au/whatson/yappy-hour-every-sunday",
+      "cost": "See link",
+      "source": "Inside Gold Coast What's On",
+      "description": "Bring your pup to Yappy Hour at 4 Pines x Boardriders every Sunday.",
+      "image": "",
       "category": "Social / Meetup",
       "tags": [
-        "brunch",
-        "spritz",
-        "weekend"
+        "dogs",
+        "social",
+        "pub"
       ],
       "social": true,
       "intellectual": false,
@@ -249,50 +249,6 @@
       "creative": true
     },
     {
-      "title": "Sunday Roast at Ember",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/sunday-roast-at-ember",
-      "cost": "See link",
-      "source": "Inside Gold Coast What's On",
-      "description": "A Sunday roast is a beloved tradition, but at Ember Bar & Grill, we do it differently.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "roast",
-        "dining",
-        "sunday"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Yappy Hour – Every Sunday at 4 Pines x Boardriders Coolangatta",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/yappy-hour-every-sunday",
-      "cost": "See link",
-      "source": "Inside Gold Coast What's On",
-      "description": "Bring your pup to Yappy Hour at 4 Pines x Boardriders every Sunday.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "dogs",
-        "social",
-        "pub"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Our Shout – Every Monday at 4 Pines x Boardriders Coolangatta",
       "datetime": "Mon 14 Sep",
       "datetime_iso": "2026-09-14",
@@ -315,43 +271,66 @@
       "creative": false
     },
     {
-      "title": "SANDFIRE Spring Launch 2026",
-      "datetime": "Fri 18 Sep",
-      "datetime_iso": "2026-09-18",
-      "datetime_end_iso": "2026-09-18",
+      "title": "Cantina Night – Every Tuesday at 4 Pines x Boardriders Coolangatta",
+      "datetime": "Tue 15 Sep",
+      "datetime_iso": "2026-09-15",
+      "datetime_end_iso": "",
       "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/sandfire-spring-launch",
+      "link": "https://www.insidegoldcoast.com.au/whatson/cantina-night-every-tuesday-at-4-pines-coolangatta",
       "cost": "See link",
       "source": "Inside Gold Coast What's On",
-      "description": "Celebrate spring at SANDFIRE with Veuve Clicquot, roaming bites, free-flowing drinks and live music.",
+      "description": "Taco Tuesday hits 4 Pines x Boardriders with $5 tacos, $15 nachos and $12 margaritas.",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
-        "spring",
-        "party",
-        "music"
+        "food",
+        "dining",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
-      "title": "Crafted Beer Festival 2026",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "title": "Trivia Wednesdays at 4 Pines x Boardriders Coolangatta",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
       "datetime_end_iso": "",
       "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/crafted-beer-cider-festival",
+      "link": "https://www.insidegoldcoast.com.au/whatson/trivia-wednesdays-at-4-pines-x-boardriders-coolangatta",
       "cost": "See link",
       "source": "Inside Gold Coast What's On",
-      "description": "The Crafted Beer Festival is loaded for another epic day of beers, brews & beaches in Broadbeach on Saturday 12th September 2026.",
+      "description": "Wednesday trivia hits 4 Pines x Boardriders with prizes and a $25 burger and pint deal.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Live with the Pines – Every Thursday at 4 Pines x Boardriders Coolangatta",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "",
+      "location": "Inside Gold Coast What's On",
+      "link": "https://www.insidegoldcoast.com.au/whatson/live-with-the-pines-every-thursday-at-4-pines-x-boardriders-coolangatta",
+      "cost": "See link",
+      "source": "Inside Gold Coast What's On",
+      "description": "Catch live music every Thursday at 4 Pines x Boardriders, plus $15 burgers and chips from 7pm.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "beer",
-        "festival",
-        "music"
+        "music",
+        "live music",
+        "food",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -359,26 +338,69 @@
       "creative": true
     },
     {
-      "title": "SANDFIRE Spring Launch 2026",
+      "title": "Rock On Ice: The Variety Ice Skating Show",
       "datetime": "Fri 18 Sep",
       "datetime_iso": "2026-09-18",
       "datetime_end_iso": "",
       "location": "Inside Gold Coast What's On",
-      "link": "https://www.insidegoldcoast.com.au/whatson/sandfire-spring-launch",
+      "link": "https://www.insidegoldcoast.com.au/whatson/rock-on-ice-the-variety-ice-skating-show",
       "cost": "See link",
       "source": "Inside Gold Coast What's On",
-      "description": "Celebrate spring at SANDFIRE with Veuve Clicquot, roaming bites, free-flowing drinks and live music.",
+      "description": "Paradise Resort is turning up the volume with its all-new Ice-Skating Spectacular, Rock On Ice.",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Concert / Music",
       "tags": [
-        "spring",
-        "party",
-        "music"
+        "performance",
+        "dance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Gabby’s Dollhouse Fairylandia – School Holiday Fun at The Pines Elanora",
+      "datetime": "Mon 21 Sep – Sun 4 Oct",
+      "datetime_iso": "2026-09-21",
+      "datetime_end_iso": "2026-10-04",
+      "location": "Inside Gold Coast What's On",
+      "link": "https://www.insidegoldcoast.com.au/whatson/gabbys-dollhouse-fairylandia-school-holiday-fun-at-the-pines-elanora",
+      "cost": "See link",
+      "source": "Inside Gold Coast What's On",
+      "description": "Inspired by the enchanting world of Fairylandia, little dreamers are invited to let their creativity bloom with two weeks of magical, hands-on activities!",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "kids",
+        "family",
+        "craft"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Harbour Town Get Outlet Sale",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Inside Gold Coast What's On",
+      "link": "https://www.insidegoldcoast.com.au/whatson/harbour-town-get-outlet-sale",
+      "cost": "See link",
+      "source": "Inside Gold Coast What's On",
+      "description": "Enjoy four days of savings as Harbour Town’s iconic Get Outlet Sale returns from Thursday 10th September - Sunday 13th September 2026.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "shopping",
+        "market",
+        "community"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     }
   ]
 }

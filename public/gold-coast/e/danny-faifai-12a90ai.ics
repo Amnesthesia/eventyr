@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:DANNY FAIFAI
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-12a90ai@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T030000
+DTEND;TZID=Australia/Brisbane:20260925T050000
+SUMMARY:DANNY FAIFAI
+DESCRIPTION:Danny Faifai continues wow audiences locally\, nationally and a
+ round the globe with his soulful tenor vocal power. Danny has acquired rec
+ ognition for his natural ability to master most genres of music. From Soul
+ \, Motown\, Country\, Pop\, R & B and Hip Hop\, Danny’s dynamic approach
+  continues to leave to leave crowds in awe! Anyone who meets Danny would a
+ gree his music and infectious character leaves a lasting impression.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/danny-faifai/
+END:VEVENT
+END:VCALENDAR

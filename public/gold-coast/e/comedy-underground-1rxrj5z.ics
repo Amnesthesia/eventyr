@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Comedy Underground
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1rxrj5z@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Comedy Underground
+DESCRIPTION:A live\, unpolished stand-up comedy showcase featuring local ta
+ lent in an intimate\, underground venue.
+LOCATION:The Basement\, Gold Coast
+URL:https://basedcomedy.com.au
+END:VEVENT
+END:VCALENDAR

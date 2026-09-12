@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:AI Prompting for Technical Writer – 1 Day Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1be0b13@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:AI Prompting for Technical Writer – 1 Day Workshop
+DESCRIPTION:An intensive one-day workshop focused on mastering AI prompting
+  techniques specifically designed for technical communication and document
+ ation workflows.
+LOCATION:Regus Surfers Paradise\, Surfers Paradise
+URL:https://evnts.au/town/gold-coast
+END:VEVENT
+END:VCALENDAR

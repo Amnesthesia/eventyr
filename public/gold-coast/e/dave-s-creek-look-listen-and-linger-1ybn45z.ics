@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dave's Creek - Look\, Listen and Linger
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1ybn45z@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T073000
+DTEND;TZID=Australia/Brisbane:20260920T093000
+SUMMARY:Dave's Creek - Look\, Listen and Linger
+DESCRIPTION:A mindful group bushwalk emphasizing observational learning and
+  appreciation of the natural environment.
+LOCATION:Nerang
+URL:https://www.goldcoastbushwalkers.org.au
+END:VEVENT
+END:VCALENDAR

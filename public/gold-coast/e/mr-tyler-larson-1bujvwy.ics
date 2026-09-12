@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mr. Tyler Larson
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1bujvwy@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Mr. Tyler Larson
+DESCRIPTION:
+LOCATION:Solo Piano at Von Maur
+URL:https://www.bandsintown.com/e/108531374-mr.-tyler-larson-at-von-maur?ca
+ me_from=257&utm_medium=web&utm_source=home&utm_campaign=event
+END:VEVENT
+END:VCALENDAR

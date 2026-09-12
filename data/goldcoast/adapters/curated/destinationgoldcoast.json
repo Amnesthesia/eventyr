@@ -3,9 +3,53 @@
   "provider": "adapters",
   "tier": "aggregators",
   "source_id": "destinationgoldcoast",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
+    {
+      "title": "Gold Coast T100 Triathlon & 10km Run",
+      "datetime": "Sat 21 Mar 2026 – Sun 21 Mar 2027",
+      "datetime_iso": "2026-03-21",
+      "datetime_end_iso": "2027-03-21",
+      "location": "Destination Gold Coast",
+      "link": "https://destinationgoldcoast.com/events/gold-coast-t100-triathlon--10km-run",
+      "cost": "See link",
+      "source": "Destination Gold Coast",
+      "description": "Race the Australian dream of sun, surf and sand as you swim, bike, run throughout Queensland's iconic Gold Coast. Known for its flat terrain, this course wil...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "sport",
+        "running",
+        "outdoor"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Gold Coast Running Festival",
+      "datetime": "Sun 26 Apr 2026 – Sun 18 Apr 2027",
+      "datetime_iso": "2026-04-26",
+      "datetime_end_iso": "2027-04-18",
+      "location": "Destination Gold Coast",
+      "link": "https://destinationgoldcoast.com/events/gold-coast-running-festival",
+      "cost": "See link",
+      "source": "Destination Gold Coast",
+      "description": "Welcome to the Gold Coast and the 15th anniversary of the von Bibra Mitsubishi Gold Coast Running Festival presented by Mastery Schools Australia.Come and ru...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "sport",
+        "running",
+        "outdoor"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
     {
       "title": "Grazy Arvo with Koalas at Currumbin Wildlife Sanctuary",
       "datetime": "Thu 8 Aug 2024 – Sat 30 Jan 2027",

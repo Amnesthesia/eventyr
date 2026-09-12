@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Weekly Rehearsal (1)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-kery3z@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T180000
+DTEND;TZID=Australia/Brisbane:20260921T200000
+SUMMARY:Weekly Rehearsal (1)
+DESCRIPTION:Open for everyone! If you would like to attend this rehearsal\,
+  please let us know by clicking the button below.
+LOCATION:A.B. Paterson College
+URL:https://www.theblenders.com.au/event-details/weekly-rehearsal-1-2026-09
+ -21-18-00
+END:VEVENT
+END:VCALENDAR

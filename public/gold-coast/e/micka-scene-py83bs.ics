@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Micka Scene
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-py83bs@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Micka Scene
+DESCRIPTION:
+LOCATION:Burleigh Leagues Club
+URL:https://burleighleagues.com.au/events/micka-scene/
+END:VEVENT
+END:VCALENDAR

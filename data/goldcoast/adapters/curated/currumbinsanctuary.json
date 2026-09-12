@@ -1,0 +1,128 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "currumbinsanctuary",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "Astra Lumina",
+      "datetime": "Fri 18 Sep – Sat 10 Oct",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "2026-10-10",
+      "location": "Currumbin Wildlife Sanctuary events",
+      "link": "https://currumbinsanctuary.com.au/",
+      "cost": "$99",
+      "source": "Currumbin Wildlife Sanctuary events",
+      "description": "Some nights are better shared. Grab 4 tickets to Astra Lumina for just $99 and save up to $81 on standard pricing. Spend an evening at the Gold Coast’s #1 after-dark experience with the people you love, for less! This offer is only available for four weeks only, so book your group in before it’s gone!",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "design",
+        "performance",
+        "culture",
+        "outdoor"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Meet the Quokkas",
+      "datetime": "Fri 18 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Currumbin Wildlife Sanctuary events",
+      "link": "https://currumbinsanctuary.com.au/",
+      "cost": "See link",
+      "source": "Currumbin Wildlife Sanctuary events",
+      "description": "The Quokkas are moving 4,000km closer! Join us between 18 – 20 September when we welcome the arrival of two Quokkas. Expect activities for the whole family, and something extra special for our members… Oh and, you can get into the draw to win a trip for two to Rottnest Island, sponsored by Trip.com. Cancel any plans, this weekend is not to be missed!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "nature",
+        "wildlife",
+        "family",
+        "kids",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Help Name the Quokkas",
+      "datetime": "Fri 18 Sep – Mon 5 Oct",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "2026-10-05",
+      "location": "Currumbin Wildlife Sanctuary events",
+      "link": "https://currumbinsanctuary.com.au/",
+      "cost": "See link",
+      "source": "Currumbin Wildlife Sanctuary events",
+      "description": "We need your help naming the newest arrivals! Enter for your chance to name the Quokkas and win a trip for two to Rottnest Island worth over $2,600, thanks to Trip.com.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community",
+        "competition",
+        "raffle"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Jaw-Dropping Croc Talks",
+      "datetime": "Sat 19 Sep – Sun 27 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-09-27",
+      "location": "Currumbin Wildlife Sanctuary events",
+      "link": "https://currumbinsanctuary.com.au/",
+      "cost": "See link",
+      "source": "Currumbin Wildlife Sanctuary events",
+      "description": "Back by popular demand, only for a very short time! Join our reptile experts for a wild, behind-the-scenes look at Crocodiles and Alligators. During this live talk, you’ll get to discover their quirks, their power and what it truly takes to care for these ancient predators. Expect awesome facts, epic keeper stories, and if the timing’s right, maybe even a live feeding demonstration. Included in your Day Pass. Free for members.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "nature",
+        "wildlife",
+        "science",
+        "history"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "School Holiday Programs",
+      "datetime": "Tue 22 Sep – Fri 2 Oct",
+      "datetime_iso": "2026-09-22",
+      "datetime_end_iso": "2026-10-02",
+      "location": "Currumbin Wildlife Sanctuary events",
+      "link": "https://currumbinsanctuary.com.au/",
+      "cost": "See link",
+      "source": "Currumbin Wildlife Sanctuary events",
+      "description": "Your next school holidays are sorted: Kids programs are back! Birds, reptiles, mammals, insects – there is something for every kid in the family. Led by our qualified educators, with real animal encounters and outdoor learning that doesn’t feel like school. Booking siblings or friends into the same program? Save 5% with code WILD5 ! National Trust QLD members, add you membership number after saving the code for an extra 15% off. Spaces remain in Teens and Bee programs only! Lock in your children’s spots now.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "nature",
+        "wildlife",
+        "kids",
+        "youth",
+        "outdoor",
+        "science"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

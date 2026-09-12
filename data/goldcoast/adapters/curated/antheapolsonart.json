@@ -3,31 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "antheapolsonart",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "Jodie Wells - Soft Petals, Bold Spirits",
-      "datetime": "Sat 29 Aug – Sat 12 Sep",
-      "datetime_iso": "2026-08-29",
-      "datetime_end_iso": "2026-09-12",
-      "location": "Anthea Polson Art",
-      "link": "https://antheapolsonart.com.au/view-exhibitions/?exhibition_id=16253",
-      "cost": "See link",
-      "source": "Anthea Polson Art",
-      "description": "",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "painting",
-        "gallery",
-        "art"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Veronica Cay - betwixt and between",
       "datetime": "Sat 19 Sep – Sat 3 Oct",

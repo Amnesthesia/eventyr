@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Aboriginal Art Sale at Art Yarramunua Gallery
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1h4936w@dothings
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20270101
+SUMMARY:Aboriginal Art Sale at Art Yarramunua Gallery
+DESCRIPTION:Art Yarramunua Gallery in Burleigh Heads is currently hosting a
+ n exclusive art sale\, with up to 50% off all artwork.
+LOCATION:Inside Gold Coast What's On
+URL:https://www.insidegoldcoast.com.au/whatson/aboriginal-art-sale-at-art-y
+ arramunua-gallery
+END:VEVENT
+END:VCALENDAR

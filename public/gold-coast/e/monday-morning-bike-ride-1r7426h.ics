@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Monday morning bike ride
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1r7426h@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T073000
+DTEND;TZID=Australia/Brisbane:20260914T093000
+SUMMARY:Monday morning bike ride
+DESCRIPTION:A community-led morning cycling excursion organized by the loca
+ l bushwalking club for members and active community residents.
+LOCATION:Southport
+URL:https://www.goldcoastbushwalkers.org.au
+END:VEVENT
+END:VCALENDAR

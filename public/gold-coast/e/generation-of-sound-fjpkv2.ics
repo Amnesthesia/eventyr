@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Generation of Sound
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-fjpkv2@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T180000
+DTEND;TZID=Australia/Brisbane:20260927T200000
+SUMMARY:Generation of Sound
+DESCRIPTION:The UK Dance classics you grew up raving to all night long. GEN
+ ERATION OF SOUND - a proper night of GBX\, Clubland Classics\, big anthems
+  and all the tunes you remember feat. Bebe Amadeus For more information & 
+ tickets hit the below Book Now button.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/generation-of-sound
+END:VEVENT
+END:VCALENDAR

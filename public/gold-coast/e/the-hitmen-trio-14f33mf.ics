@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:THE HITMEN TRIO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-14f33mf@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T140000
+DTEND;TZID=Australia/Brisbane:20260924T160000
+SUMMARY:THE HITMEN TRIO
+DESCRIPTION:Local favourites- THE HITMEN are a fun party band performing le
+ thal hits from the 70s\, 80s & beyond. Songs we all know\, that make the p
+ arty go! They’ll take a good shot at getting you moving with hits by Bon
+  Jovi\, Abba\, Aha\, Prince\, Van Halen\, Tom Petty\, Disco\, Bruno Mars\,
+  Police & more. A killer night\, guaranteed!
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/the-hitmen-trio/
+END:VEVENT
+END:VCALENDAR

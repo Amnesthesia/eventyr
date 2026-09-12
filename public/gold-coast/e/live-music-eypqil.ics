@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Live Music
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-eypqil@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Live Music
+DESCRIPTION:Dine and drink in the wonderful ambience created by some of the
+  Gold Coast’s best local talent.
+LOCATION:Tallebudgera Surf Club
+URL:https://tallesurfclub.com/event/live-music/
+END:VEVENT
+END:VCALENDAR

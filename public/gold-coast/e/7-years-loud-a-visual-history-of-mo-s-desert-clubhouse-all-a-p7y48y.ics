@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:7 YEARS LOUD: A Visual History of Mo's Desert Clubhouse (ALL A
+ GES)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-p7y48y@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T180000
+DTEND;TZID=Australia/Brisbane:20260925T200000
+SUMMARY:7 YEARS LOUD: A Visual History of Mo's Desert Clubhouse (ALL AGES)
+DESCRIPTION:7 YEARS LOUD: A Visual History of Mo's Desert Clubhouse is a cu
+ rated photographic retrospective\, celebrating the seven year journey of G
+ old Coast's most awarded live music venue\, as captured by a talented shoo
+ ter collective. Limited Capacity for a one-off unique event. Book Now.
+LOCATION:Mo's Desert Clubhouse
+URL:https://www.mosdesertclubhouse.com/events/7-years-loud-a-visual-history
+ -of-mos-desert-clubhouse-all-ages
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Twilight Seminar: Rethinking Australian Security\, Threat\, an
+ d Resilience
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1657y5c@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Twilight Seminar: Rethinking Australian Security\, Threat\, and Res
+ ilience
+DESCRIPTION:An academic lecture and discussion panel exploring contemporary
+  challenges in Australian national security and social resilience.
+LOCATION:Gregor Heiner Theatre\, Bond University
+URL:https://bond.edu.au
+END:VEVENT
+END:VCALENDAR

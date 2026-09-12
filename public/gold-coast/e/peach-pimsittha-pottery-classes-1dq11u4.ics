@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Peach Pimsittha Pottery Classes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1dq11u4@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T210000
+DTEND;TZID=Australia/Brisbane:20260919T230000
+SUMMARY:Peach Pimsittha Pottery Classes
+DESCRIPTION:Classes are held weekly in three hour sessions running for 5 or
+  10 weeks. Classes are friendly\, relaxed and all levels of experience are
+  welcome from
+LOCATION:Benowa and Mudgeeraba Studios
+URL:https://goldcoastpotters.com/classes/#enquire
+END:VEVENT
+END:VCALENDAR

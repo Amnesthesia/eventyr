@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:CAPTAIN WOW DUO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1v2vstk@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T023000
+DTEND;TZID=Australia/Brisbane:20260926T043000
+SUMMARY:CAPTAIN WOW DUO
+DESCRIPTION:Have been playing professionally for over 20years. We've played
+  well over 3000 shows. We sing tunes from the late 60's 70's 80's\, 90's\,
+  2000's and Current. We can play a whole night of “party & dance hits" o
+ r we can start the night with "unplugged sing along".
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/captain-wow-duo-2/
+END:VEVENT
+END:VCALENDAR

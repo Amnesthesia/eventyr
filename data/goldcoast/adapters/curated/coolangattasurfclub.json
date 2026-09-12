@@ -3,135 +3,23 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "coolangattasurfclub",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
-      "title": "Kids Eat Free",
-      "datetime": "Wed 9 Sep, 3:00 AM",
-      "datetime_iso": "2026-09-09T03:00:00",
-      "datetime_end_iso": "2026-09-09T06:30:00",
+      "title": "Jag The Joker",
+      "datetime": "Sun 13 Sep, 12:30 AM",
+      "datetime_iso": "2026-09-13T00:30:00",
+      "datetime_end_iso": "2026-09-13T03:30:00",
       "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
-      "link": "https://coolangattasurfclub.com/events/kids-eat-free/",
+      "link": "https://coolangattasurfclub.com/events/jag-the-joker/",
       "cost": "AUD 0",
       "source": "Coolangatta Surf Life Saving Club",
-      "description": "Kids Eat Free from 5pm - Tuesdays    Every Tuesday from 5pm.    Kids eat free with any main meal purchased.    One nippers meal per main meal ordered (excludes breads, sides, snack, start &amp; share &amp; seniors meals).    T&amp;C's apply. Child must be present. No takeaway. Members only.    &nbsp;",
-      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Kids-Eat-Free-2026-POS-SCREEN.png",
+      "description": "Every Friday from 2:30pm - 5:30pm    Join us for Jag the Joker every Friday!    Just use your membership card in gaming from 2:30pm to earn entries.    Draws from 3:30pm - 5:30pm.    T&amp;Cs Apply. Must be present to win. Member Promotion Only. Gamble Responsibly, Gambling Helpline 1800 858 858",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Jag-the-Joker-2026-POS-SCREEN.png",
       "category": "Community / Other",
       "tags": [
-        "family",
-        "dining",
-        "kids"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Wednesday Schnitzel Night",
-      "datetime": "Thu 10 Sep, 3:00 AM",
-      "datetime_iso": "2026-09-10T03:00:00",
-      "datetime_end_iso": "2026-09-10T06:30:00",
-      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
-      "link": "https://coolangattasurfclub.com/events/wednesday-schnitzel-night/",
-      "cost": "AUD 17.50",
-      "source": "Coolangatta Surf Life Saving Club",
-      "description": "WEDNESDAYS FROM 5PM  Midweek dinners just got sorted 🙌  Join us every Wednesday at Cooly Surf Club for Schnitzel Night! Tuck into a 250g chicken breast schnitzel served with crispy chips and fresh salad for only $17.50.  Feeling extra hungry? Level it up with a classic parmi or a tasty garlic prawn topper for just $5 more.  Exclusive to members only. Not a member yet? It’s easy — sign up at reception when you arrive.",
-      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/03/COOLY-Schnitzel-Night-POS-SCREEN-1.png",
-      "category": "Community / Other",
-      "tags": [
-        "dining",
-        "food",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Wednesday Night Members Draw + Community Raffles",
-      "datetime": "Thu 10 Sep, 4:00 AM",
-      "datetime_iso": "2026-09-10T04:00:00",
-      "datetime_end_iso": "2026-09-10T06:00:00",
-      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
-      "link": "https://coolangattasurfclub.com/events/wednesday-night-members-draw-community-raffles/",
-      "cost": "AUD 0",
-      "source": "Coolangatta Surf Life Saving Club",
-      "description": "WEDNESDAYS FROM 6PM  Fall more in love with your local right here at Cooly Surf Club! Don't miss our Wednesday Night Members Draw!     Join us at the club every Wednesday for your chance to win up to $5,000!   Draws will take place every Wednesday at 6:15pm and 7:15pm. No winnner? There's a $200 consolation prize drawn at 7:30pm.     Jackpot starts at $2,000 &amp; increases by $200 weekly!   $200 consolation prize weekly    While you're here, we're also running our weekly Community Raffles, with prizes up for grabs each week!     Community Raffles | Raffle drawn from 7PM   Tickets on sale from 6pm | $2 for 10 numbers    The proceeds of our community raffles will go to a local charity, not-for-profit or community group. Join our community &amp; nominate your organisation or community group to become a beneficiary of the monthly raffle sales.     The March 2026 Community Raffles Beneficiary is the Cooly2Molokai Paddle Group.    Cooly2Molokai is a Grassroots prone paddling group, born on Coolangatta Beach. What started as two friends picking up a new sport, has turned into a group that supports our local paddlers achieve their wildest dreams, training together, racing together, and experiencing the ocean on a whole new level. A shared love of the power and beauty of the ocean, healthy competition, and commitment to the paddling community saw Cooly2Molokai born. The group provides a support system for paddlers attempting to cross the Channel of Bones, through training together, encouraging team bonding through involvement in volunteer movements such as Surf Life Saving, and logistical and financial assistance for our paddlers.",
-      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/03/COOLY-Wednesday-Members-Draw-POS-SCREEN.png",
-      "category": "Community / Other",
-      "tags": [
-        "raffle",
-        "charity",
         "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Thursday Steak Night",
-      "datetime": "Fri 11 Sep, 3:00 AM",
-      "datetime_iso": "2026-09-11T03:00:00",
-      "datetime_end_iso": "2026-09-11T06:30:00",
-      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
-      "link": "https://coolangattasurfclub.com/events/thursday-steak-night/",
-      "cost": "AUD 27",
-      "source": "Coolangatta Surf Life Saving Club",
-      "description": "THURSDAYS FROM 5PM  Deciding what to have for dinner can be tough…     But every Thursday, we’ve made it easy at Cooly Surf Club! Enjoy a juicy 300g Rump with chips, salad, and your choice of sauce for just $27 at our Thursday Night Steak Night!     Want to make it even better? Add creamy garlic prawns for just $7!    Available for members only. Not a member? Sign up at reception when you arrive. See you soon!",
-      "image": "https://coolangattasurfclub.com/wp-content/uploads/2025/05/COOLY-Steak-Special-POS-SCREEN.png",
-      "category": "Community / Other",
-      "tags": [
-        "dining",
-        "food",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Market Night Raffles",
-      "datetime": "Fri 11 Sep, 3:30 AM",
-      "datetime_iso": "2026-09-11T03:30:00",
-      "datetime_end_iso": "2026-09-11T05:00:00",
-      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
-      "link": "https://coolangattasurfclub.com/events/market-night-raffles/",
-      "cost": "AUD 0",
-      "source": "Coolangatta Surf Life Saving Club",
-      "description": "Thursdays from 5:30pm - 7pm    Tickets are $2 each and are on sale from 5:30pm.    Drawn at 7pm.    Prizes include meat trays, seafood trays and fruit trays.    T&amp;Cs Apply. Must be present to win. Gamble Responsibly, Gambling Helpline 1800 858 858    &nbsp;",
-      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Market-Night-Raffles-POS-SCREEN.png",
-      "category": "Community / Other",
-      "tags": [
-        "raffle",
-        "community",
-        "prizes"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Friday Raffles",
-      "datetime": "Sat 12 Sep, 3:00 AM",
-      "datetime_iso": "2026-09-12T03:00:00",
-      "datetime_end_iso": "2026-09-12T04:00:00",
-      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
-      "link": "https://coolangattasurfclub.com/events/friday-raffles/",
-      "cost": "AUD 0",
-      "source": "Coolangatta Surf Life Saving Club",
-      "description": "Every Friday from 5pm - 6pm     7 prizes to be won including meat, seafood and fruit trays. Tickets on sale from 5pm, drawn at 6pm.    T&amp;C's Apply. Must be present to win. Gamble Responsibly, Gambling Helpline 1800 858 858",
-      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/Friday-Raffles-TV.png",
-      "category": "Community / Other",
-      "tags": [
-        "raffle",
-        "community",
-        "prizes"
       ],
       "social": true,
       "intellectual": false,
@@ -161,6 +49,26 @@
       "creative": false
     },
     {
+      "title": "Pirate&#8217;s Plunder",
+      "datetime": "Mon 14 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-14T14:00:00",
+      "datetime_end_iso": "2026-09-14T03:00:00",
+      "location": "",
+      "link": "https://coolangattasurfclub.com/events/pirates-plunder/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Ahoy! Pirate’s Plunder is here, giving members the chance to strike hidden treasure! You could win a share in up to $2,250 each week!    Join us every Sunday from 2pm - 5pm!    Simply use your membership card in gaming from 2pm to enter.    Draws from 3pm - 5pm.    Make sure you join us on the last Sunday of the month where the bounty increases and you could win a share in up to $6,000! Just make sure you swipe your member card from 12pm on the day to validate your entries.    T&amp;Cs Apply. Must be present to win. Please Gamble Responsibly. Member Promotion Only.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Pirates-Plunder-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Sunday Raffles",
       "datetime": "Mon 14 Sep, 1:00 AM",
       "datetime_iso": "2026-09-14T01:00:00",
@@ -176,6 +84,26 @@
         "raffle",
         "community",
         "prizes"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Diamond Dollars",
+      "datetime": "Wed 16 Sep, 1:00 AM",
+      "datetime_iso": "2026-09-16T01:00:00",
+      "datetime_end_iso": "2026-09-16T04:00:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/diamond-dollars/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Tuesdays from 3pm - 6pm    Join us every Tuesday for our Diamond Dollars Promotion! You could win a share in $500 Cash!    Simply use your membership card in gaming from 3pm to earn entries.    Draws from 4pm - 6pm ever Tuesday.    T&amp;Cs Apply. Must be present to win. Member Promotion Only. Gamble Responsibly, Gambling Helpline 1800 858 858",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Diamond-Dollars-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "community"
       ],
       "social": true,
       "intellectual": false,
@@ -249,6 +177,26 @@
       "creative": false
     },
     {
+      "title": "Cooly Cash Splash",
+      "datetime": "Thu 17 Sep, 10:00 PM – Fri 18 Sep",
+      "datetime_iso": "2026-09-17T22:00:00",
+      "datetime_end_iso": "2026-09-18T04:30:00",
+      "location": "",
+      "link": "https://coolangattasurfclub.com/events/cooly-cash-splash/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Cooly Cash Splash gives members the chance to win a share in $750 cash every Thursday at Coolangatta Surf Club.  Draws run from 3pm - 6:30pm, with entries earned from gaming turnover between 12pm and 6:30pm.  T&amp;C's Apply. Please Gamble Responsibly. Member Promotion Only.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/05/Cooly-Cash-Splash-POS.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Thursday Steak Night",
       "datetime": "Fri 18 Sep, 3:00 AM",
       "datetime_iso": "2026-09-18T03:00:00",
@@ -293,6 +241,26 @@
       "creative": false
     },
     {
+      "title": "Money Bank",
+      "datetime": "Sat 19 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-19T14:00:00",
+      "datetime_end_iso": "2026-09-19T05:30:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/money-bank/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Money Bank Fridays at Coolangatta Surf Club gives members the chance to win guaranteed weekly cash.    Draws run every Friday from 4pm - 7pm, with an additional 7:30pm jackpot draw starting at $250 cash.    $800 cash guaranteed to be won weekly.    T&amp;C's Apply. Please Gamble Responsibly. Member Promotion Only.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/05/Money-Bank-POS.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Friday Raffles",
       "datetime": "Sat 19 Sep, 3:00 AM",
       "datetime_iso": "2026-09-19T03:00:00",
@@ -315,6 +283,26 @@
       "creative": false
     },
     {
+      "title": "Jag The Joker",
+      "datetime": "Sun 20 Sep, 12:30 AM",
+      "datetime_iso": "2026-09-20T00:30:00",
+      "datetime_end_iso": "2026-09-20T03:30:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/jag-the-joker/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Every Friday from 2:30pm - 5:30pm    Join us for Jag the Joker every Friday!    Just use your membership card in gaming from 2:30pm to earn entries.    Draws from 3:30pm - 5:30pm.    T&amp;Cs Apply. Must be present to win. Member Promotion Only. Gamble Responsibly, Gambling Helpline 1800 858 858",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Jag-the-Joker-2026-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Saturday Raffles",
       "datetime": "Sun 20 Sep, 2:30 AM",
       "datetime_iso": "2026-09-20T02:30:00",
@@ -330,6 +318,278 @@
         "raffle",
         "charity",
         "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Pirate&#8217;s Plunder",
+      "datetime": "Mon 21 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-21T14:00:00",
+      "datetime_end_iso": "2026-09-21T03:00:00",
+      "location": "",
+      "link": "https://coolangattasurfclub.com/events/pirates-plunder/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Ahoy! Pirate’s Plunder is here, giving members the chance to strike hidden treasure! You could win a share in up to $2,250 each week!    Join us every Sunday from 2pm - 5pm!    Simply use your membership card in gaming from 2pm to enter.    Draws from 3pm - 5pm.    Make sure you join us on the last Sunday of the month where the bounty increases and you could win a share in up to $6,000! Just make sure you swipe your member card from 12pm on the day to validate your entries.    T&amp;Cs Apply. Must be present to win. Please Gamble Responsibly. Member Promotion Only.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Pirates-Plunder-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Sunday Raffles",
+      "datetime": "Mon 21 Sep, 1:00 AM",
+      "datetime_iso": "2026-09-21T01:00:00",
+      "datetime_end_iso": "2026-09-21T02:00:00",
+      "location": "",
+      "link": "https://coolangattasurfclub.com/events/sunday-raffles/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Every Sunday from 3pm-4pm      Sunday Raffles - 3 mega and 2 regular meat trays up for grabs. Tickets on sale from 3pm, drawn at 4pm.    T&amp;Cs Apply. Must be present to win. Please Gamble Responsibly.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/Sunday-Raffles-TV.png",
+      "category": "Community / Other",
+      "tags": [
+        "community",
+        "raffle"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Diamond Dollars",
+      "datetime": "Wed 23 Sep, 1:00 AM",
+      "datetime_iso": "2026-09-23T01:00:00",
+      "datetime_end_iso": "2026-09-23T04:00:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/diamond-dollars/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Tuesdays from 3pm - 6pm    Join us every Tuesday for our Diamond Dollars Promotion! You could win a share in $500 Cash!    Simply use your membership card in gaming from 3pm to earn entries.    Draws from 4pm - 6pm ever Tuesday.    T&amp;Cs Apply. Must be present to win. Member Promotion Only. Gamble Responsibly, Gambling Helpline 1800 858 858",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Diamond-Dollars-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Kids Eat Free",
+      "datetime": "Wed 23 Sep, 3:00 AM",
+      "datetime_iso": "2026-09-23T03:00:00",
+      "datetime_end_iso": "2026-09-23T06:30:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/kids-eat-free/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Kids Eat Free from 5pm - Tuesdays    Every Tuesday from 5pm.    Kids eat free with any main meal purchased.    One nippers meal per main meal ordered (excludes breads, sides, snack, start &amp; share &amp; seniors meals).    T&amp;C's apply. Child must be present. No takeaway. Members only.    &nbsp;",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Kids-Eat-Free-2026-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "family",
+        "kids"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Wednesday Schnitzel Night",
+      "datetime": "Thu 24 Sep, 3:00 AM",
+      "datetime_iso": "2026-09-24T03:00:00",
+      "datetime_end_iso": "2026-09-24T06:30:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/wednesday-schnitzel-night/",
+      "cost": "AUD 17.50",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "WEDNESDAYS FROM 5PM  Midweek dinners just got sorted 🙌  Join us every Wednesday at Cooly Surf Club for Schnitzel Night! Tuck into a 250g chicken breast schnitzel served with crispy chips and fresh salad for only $17.50.  Feeling extra hungry? Level it up with a classic parmi or a tasty garlic prawn topper for just $5 more.  Exclusive to members only. Not a member yet? It’s easy — sign up at reception when you arrive.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/03/COOLY-Schnitzel-Night-POS-SCREEN-1.png",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Wednesday Night Members Draw + Community Raffles",
+      "datetime": "Thu 24 Sep, 4:00 AM",
+      "datetime_iso": "2026-09-24T04:00:00",
+      "datetime_end_iso": "2026-09-24T06:00:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/wednesday-night-members-draw-community-raffles/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "WEDNESDAYS FROM 6PM  Fall more in love with your local right here at Cooly Surf Club! Don't miss our Wednesday Night Members Draw!     Join us at the club every Wednesday for your chance to win up to $5,000!   Draws will take place every Wednesday at 6:15pm and 7:15pm. No winnner? There's a $200 consolation prize drawn at 7:30pm.     Jackpot starts at $2,000 &amp; increases by $200 weekly!   $200 consolation prize weekly    While you're here, we're also running our weekly Community Raffles, with prizes up for grabs each week!     Community Raffles | Raffle drawn from 7PM   Tickets on sale from 6pm | $2 for 10 numbers    The proceeds of our community raffles will go to a local charity, not-for-profit or community group. Join our community &amp; nominate your organisation or community group to become a beneficiary of the monthly raffle sales.     The March 2026 Community Raffles Beneficiary is the Cooly2Molokai Paddle Group.    Cooly2Molokai is a Grassroots prone paddling group, born on Coolangatta Beach. What started as two friends picking up a new sport, has turned into a group that supports our local paddlers achieve their wildest dreams, training together, racing together, and experiencing the ocean on a whole new level. A shared love of the power and beauty of the ocean, healthy competition, and commitment to the paddling community saw Cooly2Molokai born. The group provides a support system for paddlers attempting to cross the Channel of Bones, through training together, encouraging team bonding through involvement in volunteer movements such as Surf Life Saving, and logistical and financial assistance for our paddlers.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/03/COOLY-Wednesday-Members-Draw-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "community",
+        "raffle",
+        "charity"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Cooly Cash Splash",
+      "datetime": "Thu 24 Sep, 10:00 PM – Fri 25 Sep",
+      "datetime_iso": "2026-09-24T22:00:00",
+      "datetime_end_iso": "2026-09-25T04:30:00",
+      "location": "",
+      "link": "https://coolangattasurfclub.com/events/cooly-cash-splash/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Cooly Cash Splash gives members the chance to win a share in $750 cash every Thursday at Coolangatta Surf Club.  Draws run from 3pm - 6:30pm, with entries earned from gaming turnover between 12pm and 6:30pm.  T&amp;C's Apply. Please Gamble Responsibly. Member Promotion Only.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/05/Cooly-Cash-Splash-POS.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Thursday Steak Night",
+      "datetime": "Fri 25 Sep, 3:00 AM",
+      "datetime_iso": "2026-09-25T03:00:00",
+      "datetime_end_iso": "2026-09-25T06:30:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/thursday-steak-night/",
+      "cost": "AUD 27",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "THURSDAYS FROM 5PM  Deciding what to have for dinner can be tough…     But every Thursday, we’ve made it easy at Cooly Surf Club! Enjoy a juicy 300g Rump with chips, salad, and your choice of sauce for just $27 at our Thursday Night Steak Night!     Want to make it even better? Add creamy garlic prawns for just $7!    Available for members only. Not a member? Sign up at reception when you arrive. See you soon!",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2025/05/COOLY-Steak-Special-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Market Night Raffles",
+      "datetime": "Fri 25 Sep, 3:30 AM",
+      "datetime_iso": "2026-09-25T03:30:00",
+      "datetime_end_iso": "2026-09-25T05:00:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/market-night-raffles/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Thursdays from 5:30pm - 7pm    Tickets are $2 each and are on sale from 5:30pm.    Drawn at 7pm.    Prizes include meat trays, seafood trays and fruit trays.    T&amp;Cs Apply. Must be present to win. Gamble Responsibly, Gambling Helpline 1800 858 858    &nbsp;",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Market-Night-Raffles-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "community",
+        "raffle"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Money Bank",
+      "datetime": "Sat 26 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-26T14:00:00",
+      "datetime_end_iso": "2026-09-26T05:30:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/money-bank/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Money Bank Fridays at Coolangatta Surf Club gives members the chance to win guaranteed weekly cash.    Draws run every Friday from 4pm - 7pm, with an additional 7:30pm jackpot draw starting at $250 cash.    $800 cash guaranteed to be won weekly.    T&amp;C's Apply. Please Gamble Responsibly. Member Promotion Only.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/05/Money-Bank-POS.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Friday Raffles",
+      "datetime": "Sat 26 Sep, 3:00 AM",
+      "datetime_iso": "2026-09-26T03:00:00",
+      "datetime_end_iso": "2026-09-26T04:00:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/friday-raffles/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Every Friday from 5pm - 6pm     7 prizes to be won including meat, seafood and fruit trays. Tickets on sale from 5pm, drawn at 6pm.    T&amp;C's Apply. Must be present to win. Gamble Responsibly, Gambling Helpline 1800 858 858",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/Friday-Raffles-TV.png",
+      "category": "Community / Other",
+      "tags": [
+        "community",
+        "raffle"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Jag The Joker",
+      "datetime": "Sun 27 Sep, 12:30 AM",
+      "datetime_iso": "2026-09-27T00:30:00",
+      "datetime_end_iso": "2026-09-27T03:30:00",
+      "location": "Coolangatta Surf Club, 61 Marine Parade, Coolangatta, QLD, 4225",
+      "link": "https://coolangattasurfclub.com/events/jag-the-joker/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Every Friday from 2:30pm - 5:30pm    Join us for Jag the Joker every Friday!    Just use your membership card in gaming from 2:30pm to earn entries.    Draws from 3:30pm - 5:30pm.    T&amp;Cs Apply. Must be present to win. Member Promotion Only. Gamble Responsibly, Gambling Helpline 1800 858 858",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/01/COOLY-Jag-the-Joker-2026-POS-SCREEN.png",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Saturday Raffles",
+      "datetime": "Sun 27 Sep, 2:30 AM",
+      "datetime_iso": "2026-09-27T02:30:00",
+      "datetime_end_iso": "2026-09-27T03:30:00",
+      "location": "",
+      "link": "https://coolangattasurfclub.com/events/saturday-raffles/",
+      "cost": "AUD 0",
+      "source": "Coolangatta Surf Life Saving Club",
+      "description": "Every Saturday from 12pm- 1:30pm    Join us every Saturday for our Saturday Raffles. All proceeds go directly to supporting our Surf Lifesavers!    Tickets are $2 and are on sale from 12pm.    Drawn at 1:30pm.    T&amp;Cs Apply. Must be present to win. Please Gamble Responsibly.",
+      "image": "https://coolangattasurfclub.com/wp-content/uploads/2026/02/COOLY-Saturday-Raffles-TV-HOR.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "community",
+        "raffle",
+        "charity"
       ],
       "social": true,
       "intellectual": false,

@@ -3,139 +3,29 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "paradisepointbowls",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
-      "title": "Trivia Tuesday",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "title": "Bula Bliss: Win a Fiji Holiday for 2 – Major Draw",
+      "datetime": "Sun 20 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-20T12:00:00",
       "datetime_end_iso": "",
       "location": "Paradise Point Bowls Club",
-      "link": "https://www.paradisepointbowls.com.au/event/trivia-tuesday/",
+      "link": "https://www.paradisepointbowls.com.au/event/eofy-bill-busters-major-draw-copy/",
       "cost": "See link",
       "source": "Paradise Point Bowls Club",
-      "description": "TRIVIA TUESDAYS Are you ready to put your brainpower to the test? Join us for a night of fun and challenge...",
+      "description": "🌴 BULA BLISS – WIN A FIJI HOLIDAY FOR 2! ✈️🏝️ Imagine yourself relaxing in paradise with crystal-clear water, tropical sunsets…",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
-        "trivia",
-        "fun",
-        "social"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Musical Bingo",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "Paradise Point Bowls Club",
-      "link": "https://www.paradisepointbowls.com.au/event/musical-bingo/",
-      "cost": "See link",
-      "source": "Paradise Point Bowls Club",
-      "description": "",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "bingo",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Wednesday Night Raffles",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "Paradise Point Bowls Club",
-      "link": "https://www.paradisepointbowls.com.au/event/wednesday-night-raffles/",
-      "cost": "See link",
-      "source": "Paradise Point Bowls Club",
-      "description": "",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "raffle",
         "community",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Friday Raffles",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Paradise Point Bowls Club",
-      "link": "https://www.paradisepointbowls.com.au/event/friday-raffles/",
-      "cost": "See link",
-      "source": "Paradise Point Bowls Club",
-      "description": "Get ready to kick off the weekend with a bang, our Friday raffle is better than ever! 20 x $50 Meat...",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
         "raffle",
-        "social",
-        "community"
+        "competition"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Sunday Raffle",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Paradise Point Bowls Club",
-      "link": "https://www.paradisepointbowls.com.au/event/sunday-raffle/",
-      "cost": "See link",
-      "source": "Paradise Point Bowls Club",
-      "description": "Support our Paradise Point Junior Bowlers and get a chance to feed the family! There are Meat Trays to win every week.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "raffle",
-        "community",
-        "charity"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Juniors Training",
-      "datetime": "Mon 14 Sep",
-      "datetime_iso": "2026-09-14",
-      "datetime_end_iso": "",
-      "location": "Paradise Point Bowls Club",
-      "link": "https://www.paradisepointbowls.com.au/event/juniors-training/",
-      "cost": "See link",
-      "source": "Paradise Point Bowls Club",
-      "description": "Free Junior Bowls Training every Monday night at Paradise Point Bowls. 4:30pm-6pm. 8 - 18 years old.",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "bowls",
-        "sports",
-        "training"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
       "creative": false
     }
   ]

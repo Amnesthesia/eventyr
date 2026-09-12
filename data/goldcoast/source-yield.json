@@ -1,11 +1,13 @@
 {
   "weeks": [
-    "2026-09-07"
+    "2026-09-07",
+    "2026-09-14"
   ],
   "sources": {
     "hota.com.au": {
       "weeksHit": [
-        "2026-09-07"
+        "2026-09-07",
+        "2026-09-14"
       ]
     },
     "queensland.com": {
@@ -25,12 +27,14 @@
     },
     "miamimarketta.com": {
       "weeksHit": [
-        "2026-09-07"
+        "2026-09-07",
+        "2026-09-14"
       ]
     },
     "swellsculpture.com.au": {
       "weeksHit": [
-        "2026-09-07"
+        "2026-09-07",
+        "2026-09-14"
       ]
     },
     "whatsongoldcoast.au": {
@@ -45,7 +49,8 @@
     },
     "bond.edu.au": {
       "weeksHit": [
-        "2026-09-07"
+        "2026-09-07",
+        "2026-09-14"
       ]
     },
     "mintarthouse.com": {
@@ -55,17 +60,30 @@
     },
     "goldcoast.qld.gov.au": {
       "weeksHit": [
-        "2026-09-07"
+        "2026-09-07",
+        "2026-09-14"
       ]
     },
     "basedcomedy.com.au": {
       "weeksHit": [
-        "2026-09-07"
+        "2026-09-07",
+        "2026-09-14"
       ]
     },
     "gallery8.com.au": {
       "weeksHit": [
-        "2026-09-07"
+        "2026-09-07",
+        "2026-09-14"
+      ]
+    },
+    "soundlounge.com.au": {
+      "weeksHit": [
+        "2026-09-14"
+      ]
+    },
+    "gallery-one.com.au": {
+      "weeksHit": [
+        "2026-09-14"
       ]
     }
   },
@@ -87,8 +105,8 @@
       "lastWeek": "2026-09-07"
     },
     "whatsongoldcoast.com.au": {
-      "count": 1,
-      "lastWeek": "2026-09-07"
+      "count": 4,
+      "lastWeek": "2026-09-14"
     },
     "goldcoastspots.com": {
       "count": 1,
@@ -101,6 +119,22 @@
     "ikonix.com.au": {
       "count": 1,
       "lastWeek": "2026-09-07"
+    },
+    "tickets.oztix.com.au": {
+      "count": 2,
+      "lastWeek": "2026-09-14"
+    },
+    "rockabillyaustralia.com": {
+      "count": 1,
+      "lastWeek": "2026-09-14"
+    },
+    "goldcoastbushwalkers.org.au": {
+      "count": 5,
+      "lastWeek": "2026-09-14"
+    },
+    "evnts.au": {
+      "count": 1,
+      "lastWeek": "2026-09-14"
     }
   }
 }

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Trivia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-5pbmjw@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T183000
+DTEND;TZID=Australia/Brisbane:20260914T203000
+SUMMARY:Trivia
+DESCRIPTION:FREE to play! Come in and test your wits against other teams wi
+ th our professional Trivia quizmasters Think Trivia. Bragging rights and g
+ reat prizes are up for grabs for 1st\, 2nd\, and 3rd!! Register your team 
+ from 6:30pm for a 7:00pm start!
+LOCATION:Seductions
+URL:https://sopo.com.au/events/free-trivia/
+END:VEVENT
+END:VCALENDAR

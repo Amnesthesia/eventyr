@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Australia’s Anti‑Money Laundering Tranche 2 Reforms
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1o9rngv@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T130000
+DTEND;TZID=Australia/Brisbane:20260925T150000
+SUMMARY:Australia’s Anti‑Money Laundering Tranche 2 Reforms
+DESCRIPTION:Event Overview: Australia’s Anti-Money Laundering Tranche 2 R
+ eforms
+LOCATION:Gold Coast
+URL:https://www.scu.edu.au/business-law-and-arts/events/tranche-2-reforms/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ANH DO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-nkt6i@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T053000
+DTEND;TZID=Australia/Brisbane:20260925T073000
+SUMMARY:ANH DO
+DESCRIPTION:Anh Do’s bestselling book The Happiest Refugee has made reade
+ rs laugh and cry\, and was described by Russell Crowe as 'the most surpris
+ ing and inspiring read I have had in years.' Anh’s stage show takes it a
+  step further\, combining stand-up comedy with real life stories\, photos 
+ and filmed pieces to retell his amazing story. When one of Australia’s m
+ ost talented comedians delves deep into his own life’s joys and sorrows\
+ , the result is an unforgettable night at the theatre that leaves an audie
+ nce uplifted and quite simply experiencing... happiness. 'Irrepressible go
+ od humour\, infectious energy and bright optimism' The Sydney Morning Hera
+ ld 'The happiest audience experience I have ever had' …ArtsHub 'Two thum
+ bs\, five stars\, show of the season' The Music
+LOCATION:The Showroom\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/anh-do/
+END:VEVENT
+END:VCALENDAR

@@ -3,59 +3,35 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "cityofgoldcoast",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
-      "title": "Lecture Me: Dirk Yates + Tutorial ~ Kathy Mackey",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "title": "FISAF Australia National Championships",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
       "location": "City of Gold Coast Libraries",
-      "link": "https://www.whatsongoldcoast.au/All-events/Lecture-Me-1-Dirk-Yates-Tutorial-Kathy-Mackey-1992400462417",
+      "link": "https://www.whatsongoldcoast.au/All-events/FISAF-Australia-National-Championships",
       "cost": "See link",
       "source": "City of Gold Coast Libraries",
-      "description": "2PP presents a lecture on Contemporary art from Dirk Yates and follow up tutorial with Kathy Mackey.",
+      "description": "Catch the best invitational talent in sport aerobics.",
       "image": "",
-      "category": "Public Lecture",
+      "category": "Community / Other",
       "tags": [
-        "art",
-        "contemporary",
-        "lecture",
-        "tutorial"
+        "sport",
+        "competition",
+        "performance"
       ],
       "social": false,
-      "intellectual": true,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Surfers Paradise Beachfront Markets",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "City of Gold Coast Libraries",
-      "link": "https://www.whatsongoldcoast.au/All-events/Surfers-Paradise-Beachfront-Markets",
-      "cost": "See link",
-      "source": "City of Gold Coast Libraries",
-      "description": "A free, family-friendly outdoor shopping experience by the beachside, every Wednesday, Friday and Saturday from 4pm to 9pm.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "market",
-        "outdoor",
-        "family",
-        "shopping"
-      ],
-      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
       "title": "SWELL Sculpture Festival Active & Healthy Wellness Program",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
       "location": "City of Gold Coast Libraries",
       "link": "https://www.whatsongoldcoast.au/All-events/SWELL-Sculpture-Festival-Active-and-Healthy-Wellness-Program",
@@ -66,8 +42,11 @@
       "category": "Workshop / Class",
       "tags": [
         "wellness",
-        "health",
-        "fitness"
+        "fitness",
+        "yoga",
+        "meditation",
+        "pilates",
+        "community"
       ],
       "social": true,
       "intellectual": false,
@@ -75,50 +54,93 @@
       "creative": false
     },
     {
-      "title": "SWELL Sculpture Festival",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "title": "HOTA Farmers and Artisan Market",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
       "location": "City of Gold Coast Libraries",
-      "link": "https://www.whatsongoldcoast.au/All-events/SWELL-Sculpture-Festival-5d7b3fc61bc245d8271ed744",
+      "link": "https://www.whatsongoldcoast.au/All-events/HOTA-Farmers-and-Artisan-Market-60deb811cdcec11c46c40065",
       "cost": "See link",
       "source": "City of Gold Coast Libraries",
-      "description": "10 days of sculpture on the beach! SWELL Sculpture Festival is for everyone! Come and see for yourself!...",
+      "description": "The HOTA Markets are one of the Gold Coast's most vibrant community markets, held every Sunday morning, in the iconic HOTA precinct.",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Social / Meetup",
       "tags": [
-        "sculpture",
-        "festival",
-        "outdoor",
-        "art"
+        "market",
+        "shopping",
+        "food",
+        "community"
       ],
-      "social": false,
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Carrara Markets Car Boot Sale",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "City of Gold Coast Libraries",
+      "link": "https://www.whatsongoldcoast.au/All-events/Carrara-Markets-Car-Boot-Sale-5ee186dcef56931323e5e481",
+      "cost": "See link",
+      "source": "City of Gold Coast Libraries",
+      "description": "Carrara Markets is famous for its Sunday morning Car Boot Sale!...",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "market",
+        "shopping",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Live Music Sunday",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "City of Gold Coast Libraries",
+      "link": "https://www.whatsongoldcoast.au/All-events/Live-Music-Sunday",
+      "cost": "See link",
+      "source": "City of Gold Coast Libraries",
+      "description": "Free live music at Harley &amp; Hudson Coffee Bar.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "acoustic"
+      ],
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
-      "title": "Art Explorers with Ainslee Palmer",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "title": "The Coastal Markets – Coolangatta",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
       "location": "City of Gold Coast Libraries",
-      "link": "https://www.whatsongoldcoast.au/All-events/Art-Explorers-with-Ainslee-Palmer",
+      "link": "https://www.whatsongoldcoast.au/All-events/The-Coastal-Markets-Coolangatta",
       "cost": "See link",
       "source": "City of Gold Coast Libraries",
-      "description": "Inviting children and their parents/carers to connect with art through movement and storytelling, encouraging curiosity, creativity and fun!",
+      "description": "One of the region’s largest and most vibrant beachfront market experiences, bringing together hundreds of vendors.",
       "image": "",
-      "category": "Workshop / Class",
+      "category": "Social / Meetup",
       "tags": [
-        "kids",
-        "art",
-        "storytelling",
-        "creative"
+        "market",
+        "shopping",
+        "community"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": true,
-      "creative": true
+      "hands_on": false,
+      "creative": false
     }
   ]
 }

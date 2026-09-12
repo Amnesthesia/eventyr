@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday session with ‘JEFF CAMILIERI’
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-dhtb3a@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T143000
+DTEND;TZID=Australia/Brisbane:20260913T163000
+SUMMARY:Sunday session with ‘JEFF CAMILIERI’
+DESCRIPTION:
+LOCATION:Nerang Community Bowls Club\, Cayuga Street Nerang QLD 4211
+URL:https://nerangbowls.com.au/
+END:VEVENT
+END:VCALENDAR

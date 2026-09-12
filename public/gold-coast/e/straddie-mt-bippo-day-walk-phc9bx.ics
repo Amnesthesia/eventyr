@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Straddie - Mt Bippo Day Walk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-phc9bx@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T070000
+DTEND;TZID=Australia/Brisbane:20260916T090000
+SUMMARY:Straddie - Mt Bippo Day Walk
+DESCRIPTION:A guided day trek through natural trails near Nerang\, focusing
+  on shared adventure and exploring local wilderness with a group.
+LOCATION:Nerang
+URL:https://www.goldcoastbushwalkers.org.au
+END:VEVENT
+END:VCALENDAR

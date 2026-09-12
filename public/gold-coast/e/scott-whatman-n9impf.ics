@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SCOTT WHATMAN
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-n9impf@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T010000
+DTEND;TZID=Australia/Brisbane:20260921T030000
+SUMMARY:SCOTT WHATMAN
+DESCRIPTION:Scott has an incredibly large vocal range which enables him to 
+ perform a very diverse range of music. He loves performing with both acous
+ tic and electric guitar and makes great use of both at his solo shows. Sco
+ tt performs classics like Hotel California (The Eagles) Crazy Little Thing
+  Called Love (Queen)\, songs by Pink Floyd\, Fleetwood Mac and Eric Clapto
+ n as well as current songs by Bruno Mars\, Ed Sheeran\, George Ezra\, The 
+ Chainsmokers\, Charlie Puth and Sam Smith
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/scott-whatman/
+END:VEVENT
+END:VCALENDAR

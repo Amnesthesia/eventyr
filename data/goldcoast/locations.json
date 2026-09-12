@@ -66,6 +66,12 @@
       "label": "10 A B Paterson Dr, Arundel QLD 4214, Australia",
       "country": "AU"
     },
+    "Alcotraz Gold Coast: Cell Block Two-Nine": {
+      "lat": -28.001621,
+      "lng": 153.4288781,
+      "label": "29 Cavill Ave, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
     "Anthea Polson Art": {
       "lat": -27.9782839,
       "lng": 153.4253063,
@@ -190,6 +196,12 @@
       "label": "Byron Bay NSW 2481, Australia",
       "country": "AU"
     },
+    "Cinema 1": {
+      "lat": -35.0237081,
+      "lng": 117.8833008,
+      "label": "Albany Town Hall, 217 York St, Albany WA 6330, Australia",
+      "country": "AU"
+    },
     "Cinema 2": {
       "lat": -34.035248,
       "lng": 151.1024114,
@@ -279,6 +291,12 @@
       "label": "Coomera QLD, Australia",
       "country": "AU"
     },
+    "Coyote’s Roadhouse, Maroochydore · Maroochydore + Mooloolaba": {
+      "lat": -26.6526799,
+      "lng": 153.0914827,
+      "label": "12-20 Ocean St, Maroochydore QLD 4558, Australia",
+      "country": "AU"
+    },
     "Currumbin": {
       "lat": -28.1374671,
       "lng": 153.4755579,
@@ -306,10 +324,32 @@
       "label": "Currumbin Beach, Queensland, Australia",
       "country": "AU"
     },
+    "Currumbin Wildlife Sanctuary events": {
+      "lat": -28.1355576,
+      "lng": 153.4885428,
+      "label": "Currumbin Wildlife Sanctuary, 28 Tomewin St, Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
+    "Dan Rath": null,
+    "DEAD EYES w/ VERSUS ME": null,
     "Destination Gold Coast": {
       "lat": -27.9769248,
       "lng": 153.380936,
       "label": "Gold Coast QLD, Australia",
+      "country": "AU"
+    },
+    "Drake University - Ivalas Quartet": {
+      "lat": 41.6030995,
+      "lng": -93.6546481,
+      "label": "2507 University Ave, Des Moines, IA 50311, USA",
+      "country": "US",
+      "foreign": true
+    },
+    "El Ranchero": null,
+    "Elanora Library": {
+      "lat": -28.1357511,
+      "lng": 153.4696183,
+      "label": "The Pines Shopping Centre, Guineas Creek Rd, Elanora QLD 4221, Australia",
       "country": "AU"
     },
     "elsewhere, 23 Cavill Avenue": {
@@ -335,6 +375,90 @@
       "label": "301N/12 Charles Ave, Broadbeach QLD 4218, Australia",
       "country": "AU"
     },
+    "Fever Gold Coast": {
+      "lat": -28.0033026,
+      "lng": 153.3426552,
+      "label": "9/11 Lawrence Dr, Nerang QLD 4211, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, 1509 Gold Coast Hwy": {
+      "lat": -28.0999833,
+      "lng": 153.4619599,
+      "label": "1509 Gold Coast Hwy, Palm Beach QLD 4221, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, 18 Coyne St": {
+      "lat": -28.1683351,
+      "lng": 153.5253737,
+      "label": "18 Coyne St, Coolangatta QLD 4225, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, 36 Cavill Ave": {
+      "lat": -28.0019992,
+      "lng": 153.4278866,
+      "label": "36 Cavill Ave, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, 464 Marine Parade": {
+      "lat": -27.9327523,
+      "lng": 153.4056152,
+      "label": "464 Marine Parade, Biggera Waters QLD 4216, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, 47 Nerang St": {
+      "lat": -27.96776,
+      "lng": 153.4130214,
+      "label": "47 Nerang St, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, 486 Scottsdale Dr": {
+      "lat": -28.1000615,
+      "lng": 153.4059214,
+      "label": "486 Scottsdale Dr, Varsity Lakes QLD 4227, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, 850 Mount Cotton Rd": {
+      "lat": -27.5947597,
+      "lng": 153.2308021,
+      "label": "850 Mount Cotton Rd, Mount Cotton QLD 4165, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, Boat Ramp": {
+      "lat": -27.9769248,
+      "lng": 153.380936,
+      "label": "Gold Coast QLD, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, Brisbane": {
+      "lat": -27.9769248,
+      "lng": 153.380936,
+      "label": "Gold Coast QLD, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, Byron Bay": {
+      "lat": -28.6331186,
+      "lng": 153.5809107,
+      "label": "12c Centennial Cct, Byron Bay NSW 2481, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, Fingal Head": {
+      "lat": -28.2008861,
+      "lng": 153.5658875,
+      "label": "Fingal Head NSW 2487, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, Lionel Perry Park": {
+      "lat": -28.0025859,
+      "lng": 153.4251855,
+      "label": "Lionel Perry Park, 52 Peninsular Dr, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Fever Gold Coast, Seaworld Drive Boatramp": {
+      "lat": -27.9529333,
+      "lng": 153.4268034,
+      "label": "Seaworld Dr, Main Beach QLD 4217, Australia",
+      "country": "AU"
+    },
     "Finn McCool's Gold Coast": {
       "lat": -28.0016414,
       "lng": 153.4278493,
@@ -354,6 +478,12 @@
       "label": "Currumbin QLD 4223, Australia",
       "country": "AU"
     },
+    "Gallery 8, 8 Ferry Road, Southport": {
+      "lat": -27.9732322,
+      "lng": 153.411086,
+      "label": "8 Ferry Rd, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
     "Gallery 8, Southport": {
       "lat": -27.9732322,
       "lng": 153.411086,
@@ -363,6 +493,12 @@
       "lat": -34.9767073,
       "lng": 138.6201684,
       "label": "1 Torrens St, Mitcham SA 5062, Australia",
+      "country": "AU"
+    },
+    "Gallery One, Bundall": {
+      "lat": -28.0116997,
+      "lng": 153.4040074,
+      "label": "Bundall QLD 4217, Australia",
       "country": "AU"
     },
     "Gawandii Room @ Ballina Surf Club": {
@@ -412,6 +548,31 @@
       "label": "150 Bundall Rd, Bundall QLD 4217, Australia",
       "country": "AU"
     },
+    "Gold Coast Tavern, Bundall": {
+      "lat": -28.000099,
+      "lng": 153.4137185,
+      "label": "150 Bundall Rd, Bundall QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Greenwood Lounge": {
+      "lat": -31.8248911,
+      "lng": 115.8045866,
+      "label": "Greenwood WA 6024, Australia",
+      "country": "AU"
+    },
+    "Gregor Heiner Theatre, Bond University": {
+      "lat": -28.0755231,
+      "lng": 153.4162469,
+      "label": "14 University Dr, Robina QLD 4226, Australia",
+      "country": "AU"
+    },
+    "HERITAGE ASSEMBLY OF GOD SUNDAY NIGHT": {
+      "lat": 41.65250750000001,
+      "lng": -93.6121715,
+      "label": "5051 NE 5th St, Des Moines, IA 50313, USA",
+      "country": "US",
+      "foreign": true
+    },
     "Heroes Gaming, 36 Scarborough Street, SOUTHPORT QLD 4215": {
       "lat": -27.9707248,
       "lng": 153.414745,
@@ -425,6 +586,12 @@
       "country": "AU"
     },
     "HOTA Gallery": {
+      "lat": -28.002499,
+      "lng": 153.4163491,
+      "label": "135 Bundall Rd, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "HOTA Gallery, 135 Bundall Road, Surfers Paradise": {
       "lat": -28.002499,
       "lng": 153.4163491,
       "label": "135 Bundall Rd, Surfers Paradise QLD 4217, Australia",
@@ -462,6 +629,13 @@
       "label": "1/15-17 Dover Dr, West Burleigh QLD 4220, Australia",
       "country": "AU"
     },
+    "Johnson Auditorium": {
+      "lat": 34.2414259,
+      "lng": -118.5289441,
+      "label": "Vincennes St, Northridge, CA 91330, USA",
+      "country": "US",
+      "foreign": true
+    },
     "Juniors, Cnr Fraser Dr &, Leisure Dr, Banora Point NSW 2486, Australia": {
       "lat": -28.2134258,
       "lng": 153.5227456,
@@ -474,10 +648,22 @@
       "label": "Olsen Ave &, Musgrave Ave, Southport QLD 4215, Australia",
       "country": "AU"
     },
+    "Kings Beach Tavern": {
+      "lat": -26.8007369,
+      "lng": 153.1426623,
+      "label": "43 Burgess St, Kings Beach QLD 4551, Australia",
+      "country": "AU"
+    },
     "Kings Beach Tavern, Caloundra · Caloundra + Kawana": {
       "lat": -26.8007369,
       "lng": 153.1426623,
       "label": "43 Burgess St, Kings Beach QLD 4551, Australia",
+      "country": "AU"
+    },
+    "Kokomo Cruises": {
+      "lat": -27.9689867,
+      "lng": 153.4253381,
+      "label": "74 Seaworld Dr, Main Beach QLD 4217, Australia",
       "country": "AU"
     },
     "Len Wort Park, Currumbin": {
@@ -539,6 +725,12 @@
       "lat": -28.0413306,
       "lng": 153.4366182,
       "label": "Mermaid Beach QLD 4218, Australia",
+      "country": "AU"
+    },
+    "Mermaid Waters Hotel": {
+      "lat": -28.0472312,
+      "lng": 153.4258085,
+      "label": "Markeri St &, Sunshine Blvd, Mermaid Waters QLD 4218, Australia",
       "country": "AU"
     },
     "Miami Marketta": {
@@ -609,6 +801,12 @@
       "lng": 153.4232599,
       "label": "6/36 Central Dr, Burleigh Heads QLD 4220, Australia"
     },
+    "Mooloolah Valley Country Club, Mooloolah Valley · Nambour + Hinterland": {
+      "lat": -26.7742037,
+      "lng": 153.0092546,
+      "label": "Club Mooloolah Valley Country, 129 Connection Rd, Glenview QLD 4553, Australia",
+      "country": "AU"
+    },
     "Mudgeeraba Studio": {
       "lat": -28.0905164,
       "lng": 153.3662878,
@@ -620,6 +818,12 @@
       "lat": -28.103459,
       "lng": 153.4298111,
       "label": "3 Stevenson Ct, Burleigh Heads QLD 4220, Australia",
+      "country": "AU"
+    },
+    "Nerang": {
+      "lat": -27.9893655,
+      "lng": 153.3364827,
+      "label": "Nerang QLD 4211, Australia",
       "country": "AU"
     },
     "Nerang Community Bowls Club, Cayuga Street Nerang QLD 4211": {
@@ -641,10 +845,28 @@
       "label": "Northern Rivers, NSW, Australia",
       "country": "AU"
     },
+    "Norton Music Factory, Caloundra West · Caloundra + Kawana": {
+      "lat": -26.7944767,
+      "lng": 153.1113036,
+      "label": "13 Bronwyn St, Caloundra West QLD 4551, Australia",
+      "country": "AU"
+    },
+    "Numinbah Valley": {
+      "lat": -28.1631457,
+      "lng": 153.2182441,
+      "label": "Numinbah Valley QLD 4211, Australia",
+      "country": "AU"
+    },
     "Palette Restaurant": {
       "lat": -28.0024603,
       "lng": 153.4159805,
       "label": "135 Bundall Rd, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Palm Beach": {
+      "lat": -33.6040404,
+      "lng": 151.3253852,
+      "label": "Palm Beach NSW 2108, Australia",
       "country": "AU"
     },
     "Palm Springs": {
@@ -684,6 +906,13 @@
       "country": "MX",
       "foreign": true
     },
+    "Porch Fest Des Moines": {
+      "lat": 41.5896139,
+      "lng": -93.61639629999999,
+      "label": "Des Moines, IA, USA",
+      "country": "US",
+      "foreign": true
+    },
     "Prison Island Gold Coast": {
       "lat": -28.001621,
       "lng": 153.4288781,
@@ -700,6 +929,24 @@
       "lat": -23.4395048,
       "lng": 144.27127,
       "label": "1 Hudson Fysh Drive, Longreach Airport, Terminal Building, Landsborough Hwy, Longreach QLD 4730, Australia",
+      "country": "AU"
+    },
+    "Regus Surfers Paradise, Surfers Paradise": {
+      "lat": -28.0020708,
+      "lng": 153.4265468,
+      "label": "Level 13/50 Cavill Ave, Surfers Paradise QLD 4217, Australia",
+      "country": "AU"
+    },
+    "Riverview Park": {
+      "lat": -28.8181919,
+      "lng": 153.2672787,
+      "label": "Riverview Park, 210 Union St, South Lismore NSW 2480, Australia",
+      "country": "AU"
+    },
+    "Robina": {
+      "lat": -28.0677329,
+      "lng": 153.397418,
+      "label": "Robina QLD 4226, Australia",
       "country": "AU"
     },
     "Roosevelt Lounge, Broadbeach": {
@@ -737,10 +984,23 @@
       "country": "AU"
     },
     "Seductions": null,
+    "Sharks Events Centre": {
+      "lat": -27.9557535,
+      "lng": 153.385103,
+      "label": "Corner Olsen &, Musgrave Ave, Southport QLD 4215, Australia",
+      "country": "AU"
+    },
+    "Solo Piano at Von Maur": null,
     "Southern Cross University Gold Coast": {
       "lat": -28.1686714,
       "lng": 153.5186189,
       "label": "Gold Coast Airport, Terminal Dr, Bilinga QLD 4225, Australia",
+      "country": "AU"
+    },
+    "Southport": {
+      "lat": -27.9718794,
+      "lng": 153.4063059,
+      "label": "Southport QLD, Australia",
       "country": "AU"
     },
     "Southport Sharks": {
@@ -760,7 +1020,19 @@
       "lng": 153.4712783,
       "label": "Unit 8/5 Traders Way, Currumbin Waters QLD 4223, Australia"
     },
+    "Sunshine Beach SLSC": {
+      "lat": -26.4060752,
+      "lng": 153.1119921,
+      "label": "Duke St, Sunshine Beach QLD 4567, Australia",
+      "country": "AU"
+    },
     "Sunshine Beach SLSC, Sunshine Beach · Noosa + North": {
+      "lat": -26.3645433,
+      "lng": 152.9676695,
+      "label": "Noosa, QLD, Australia",
+      "country": "AU"
+    },
+    "Sunshine Beach Surf Club, Sunshine Beach · Noosa + North": {
       "lat": -26.3645433,
       "lng": 152.9676695,
       "label": "Noosa, QLD, Australia",
@@ -782,6 +1054,13 @@
       "lat": -27.978847,
       "lng": 153.4250347,
       "label": "Tedder Ave, Main Beach QLD 4217, Australia"
+    },
+    "Terrace Tuesday Memorial Union Terrace Ames, IA": {
+      "lat": 42.0240726,
+      "lng": -93.6486019,
+      "label": "Union Dr, Ames, IA, USA",
+      "country": "US",
+      "foreign": true
     },
     "The Basement, Gold Coast": {
       "lat": -27.9769248,
@@ -817,6 +1096,12 @@
       "label": "60 Noosa Dr, Noosa Heads QLD 4567, Australia",
       "country": "AU"
     },
+    "The Moorings": {
+      "lat": -33.83981929999999,
+      "lng": 151.2115362,
+      "label": "275 Alfred Street, North Sydney NSW 2060, Australia",
+      "country": "AU"
+    },
     "The Nook, Cooroy · Noosa + North": {
       "lat": -26.3645433,
       "lng": 152.9676695,
@@ -829,6 +1114,7 @@
       "label": "15 Ann St, Nambour QLD 4560, Australia",
       "country": "AU"
     },
+    "The Reunion Beatles (& Beyond!)": null,
     "The Savvy Squire, Mooloolaba · Maroochydore + Mooloolaba": {
       "lat": -26.6837499,
       "lng": 153.1227915,
@@ -847,6 +1133,12 @@
       "label": "2 Wharf St, Tweed Heads West NSW 2485, Australia",
       "country": "AU"
     },
+    "The SoundLounge, Currumbin": {
+      "lat": -28.1374457,
+      "lng": 153.4739445,
+      "label": "165 Duringan St, Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
     "The Stage (18+), 2 Wharf st, Tweed Heads, NSW 2486": {
       "lat": -28.1685927,
       "lng": 153.5440989,
@@ -854,10 +1146,22 @@
       "country": "AU"
     },
     "The Studio": null,
+    "The Stuffed Olive": {
+      "lat": -30.9791828,
+      "lng": 150.255975,
+      "label": "295 Conadilly St, Gunnedah NSW 2380, Australia",
+      "country": "AU"
+    },
     "The White Rhino, Surfers Paradise": {
       "lat": -28.0015451,
       "lng": 153.4274789,
       "label": "Shop 38/40/55 Circle On Cavill, Cavill Ave, Surfers Paradise QLD 4217, Australia"
+    },
+    "Thrive Church": {
+      "lat": -30.327347,
+      "lng": 149.783789,
+      "label": "75 Maitland St, Narrabri NSW 2390, Australia",
+      "country": "AU"
     },
     "Tugun": {
       "lat": -28.148911,
@@ -870,10 +1174,30 @@
       "label": "2 Wharf St, Tweed Heads NSW 2485, Australia",
       "country": "AU"
     },
+    "Union Park": {
+      "lat": 41.8839452,
+      "lng": -87.6655371,
+      "label": "Union Park, 1501 W Randolph St, Chicago, IL 60606, USA",
+      "country": "US",
+      "foreign": true
+    },
+    "Union Park PorchFest 2026": {
+      "lat": -33.8922511,
+      "lng": 151.2714535,
+      "label": "Bondi Beach NSW 2026, Australia",
+      "country": "AU"
+    },
     "Upper Coomera Library, Upper Coomera": {
       "lat": -27.8689054,
       "lng": 153.3042858,
       "label": "Corner Reserve and Abraham Roads, Upper Coomera QLD 4209, Australia"
+    },
+    "Val Air Ballroom": {
+      "lat": 41.5852394,
+      "lng": -93.7063757,
+      "label": "301 Ashworth Rd, West Des Moines, IA 50265, USA",
+      "country": "US",
+      "foreign": true
     },
     "Various Gold Coast venues": {
       "lat": -27.9769248,
@@ -915,10 +1239,28 @@
       "label": "Burleigh Heads QLD 4220, Australia",
       "country": "AU"
     },
+    "What's On Gold Coast, Carrara": {
+      "lat": -28.0771715,
+      "lng": 153.3649412,
+      "label": "Swimming Pool, 47 Railway St, Mudgeeraba QLD 4213, Australia",
+      "country": "AU"
+    },
+    "What's On Gold Coast, Coolangatta": {
+      "lat": -28.1703145,
+      "lng": 153.5304729,
+      "label": "Coolangatta QLD, Australia",
+      "country": "AU"
+    },
     "What's On Gold Coast, Currumbin": {
       "lat": -28.1374671,
       "lng": 153.4755579,
       "label": "Currumbin QLD 4223, Australia",
+      "country": "AU"
+    },
+    "What's On Gold Coast, Southport": {
+      "lat": -28.0771715,
+      "lng": 153.3649412,
+      "label": "Swimming Pool, 47 Railway St, Mudgeeraba QLD 4213, Australia",
       "country": "AU"
     },
     "What's On Gold Coast, Surfers Paradise": {
@@ -931,6 +1273,33 @@
       "lat": -34.4323433,
       "lng": 150.4728553,
       "label": "Willow Vale NSW 2575, Australia"
+    },
+    "Wilson's Orchard & Farm (Des Moines)": {
+      "lat": 41.4796268,
+      "lng": -93.7713607,
+      "label": "3201 15th Ave, Cumming, IA 50061, USA",
+      "country": "US",
+      "foreign": true
+    },
+    "Wooly's": {
+      "lat": 41.5900515,
+      "lng": -93.6108976,
+      "label": "504 E Locust St, Des Moines, IA 50309, USA",
+      "country": "US",
+      "foreign": true
+    },
+    "xBk Live": {
+      "lat": 41.59978090000001,
+      "lng": -93.6496023,
+      "label": "1159 24th St, Des Moines, IA 50311, USA",
+      "country": "US",
+      "foreign": true
+    },
+    "Yulagi Space, Currumbin": {
+      "lat": -28.1374671,
+      "lng": 153.4755579,
+      "label": "Currumbin QLD 4223, Australia",
+      "country": "AU"
     }
   }
 }

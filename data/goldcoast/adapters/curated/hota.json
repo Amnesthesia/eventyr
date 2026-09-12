@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "hota",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Guided tour & lunch at Palette Restaurant",
@@ -122,55 +122,9 @@
       "creative": true
     },
     {
-      "title": "Holy Days",
-      "datetime": "Thu 6 Aug, 4:45 PM – Tue 8 Sep",
-      "datetime_iso": "2026-08-06T16:45:00",
-      "datetime_end_iso": "2026-09-08",
-      "location": "Cinema 2",
-      "link": "https://hota.com.au/events/holy-days",
-      "cost": "See link",
-      "source": "HOTA, Home of the Arts",
-      "description": "A lost boy in search of heaven, three offbeat nuns on a mission, a car powered by God (and stolen money). This is a road trip like no other. A comedic near trag",
-      "image": "https://hota.com.au/api/img/05c92aac-03d1-0235-0767-bdf54020d78e/3e0c3d87-3203-4a57-94e3-e79eb1011ebb/docs.jpg?v=f5c7bb7976c8244371e21ad3e6ac32fd&w=700&fm=webp",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "film",
-        "cinema",
-        "drama",
-        "comedy"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "ArtLab – Decadent Decoupage",
-      "datetime": "Sat 8 Aug – Sat 12 Sep",
-      "datetime_iso": "2026-08-08",
-      "datetime_end_iso": "2026-09-12",
-      "location": "The Studio",
-      "link": "https://hota.com.au/events/artlab-decadent-decoupage",
-      "cost": "See link",
-      "source": "HOTA, Home of the Arts",
-      "description": "ArtLab workshops respond to HOTA Gallery exhibitions, providing kids with the opportunity to explore ideas, materials and techniques and create unique artworks",
-      "image": "https://hota.com.au/api/img/05c92aac-03d1-0235-0767-bdf54020d78e/7e471c36-9160-4db4-ab62-b5463153b120/docs.jpg?v=0b1710d539171dbe9d6d01403d127c32&w=700&fm=webp",
-      "category": "Workshop / Class",
-      "tags": [
-        "kids",
-        "art",
-        "craft",
-        "workshop"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
       "title": "Tony",
-      "datetime": "Tue 25 Aug, 12:30 PM – Wed 16 Sep",
-      "datetime_iso": "2026-08-25T12:30:00",
+      "datetime": "Tue 25 Aug, 10:20 AM – Wed 16 Sep",
+      "datetime_iso": "2026-08-25T10:20:00",
       "datetime_end_iso": "2026-09-16",
       "location": "Cinema 2",
       "link": "https://hota.com.au/events/tony",
@@ -181,9 +135,28 @@
       "category": "Arts / Exhibition",
       "tags": [
         "film",
-        "cinema",
-        "biography",
-        "documentary"
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "& Sons",
+      "datetime": "Thu 27 Aug, 10:15 AM – Wed 16 Sep",
+      "datetime_iso": "2026-08-27T10:15:00",
+      "datetime_end_iso": "2026-09-16",
+      "location": "Cinema 1",
+      "link": "https://hota.com.au/events/sons",
+      "cost": "See link",
+      "source": "HOTA, Home of the Arts",
+      "description": "It’s been almost 20 years since an ‘incident’ tore apart the Dyer home. An incident that has a name - Andy. Andy’s the reason his world-famous father, Andrew, n",
+      "image": "https://hota.com.au/api/img/05c92aac-03d1-0235-0767-bdf54020d78e/828682d0-3822-4e25-9034-79bff6475ca0/docs.jpg?v=83938132d5a6cd4144775eb24082448c&w=700&fm=webp",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "performance"
       ],
       "social": false,
       "intellectual": false,

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Here and Now: Gold Coast Triennial
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1lj0l0n@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260921
+SUMMARY:Here and Now: Gold Coast Triennial
+DESCRIPTION:A major exhibition highlighting the creative pulse of the Gold 
+ Coast region\, showcasing contemporary works from local artists across div
+ erse mediums.
+LOCATION:HOTA Gallery\, 135 Bundall Road\, Surfers Paradise
+URL:https://hota.com.au
+END:VEVENT
+END:VCALENDAR

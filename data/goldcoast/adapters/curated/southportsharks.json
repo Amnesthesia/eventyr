@@ -3,341 +3,11 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "southportsharks",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
-      "title": "$18 Schnitzel Night",
-      "datetime": "Tue 8 Sep, 5:30 PM",
-      "datetime_iso": "2026-09-08T17:30:00",
-      "datetime_end_iso": "",
-      "location": "Frenzy Food Court",
-      "link": "https://frenzys.southportsharks.com.au/events/schnitzel-night/",
-      "cost": "$18",
-      "source": "Southport Sharks",
-      "description": "Every Tuesday night, members can enjoy a classic chicken schnitzel served with chips, fresh salad and your choice of sauce for just $18.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "dining",
-        "food",
-        "members"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Half Price Wednesdays",
-      "datetime": "Wed 9 Sep, 4:00 PM",
-      "datetime_iso": "2026-09-09T16:00:00",
-      "datetime_end_iso": "",
-      "location": "Aviary",
-      "link": "https://aviary.southportsharks.com.au/events/half-price-wednesdays/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "Soak up the midweek buzz with half price food every Wednesday at Aviary Rooftop Bar. From golden hour to good times, this is your midweek excuse to round up your mates and graze in style.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "dining",
-        "drinks",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Healthcare Heroes Night",
-      "datetime": "Wed 9 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-09T17:00:00",
-      "datetime_end_iso": "",
-      "location": "Kaktus Bar",
-      "link": "https://kaktus.southportsharks.com.au/events/healthcare-heroes-night/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "Every Wednesday, we’re celebrating our healthcare amigos with 25% off your bill at Kaktus Bar! Simply show your employee ID.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "dining",
-        "drinks",
-        "discount"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "$20 Pasta Night",
-      "datetime": "Wed 9 Sep, 5:30 PM",
-      "datetime_iso": "2026-09-09T17:30:00",
-      "datetime_end_iso": "",
-      "location": "Frenzy Food Court",
-      "link": "https://frenzys.southportsharks.com.au/events/pasta-night/",
-      "cost": "$20",
-      "source": "Southport Sharks",
-      "description": "Make your Wednesday night one to look forward to with an exclusive members midweek special at Southport Sharks; our $20 Pesto Pasta!",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "dining",
-        "food",
-        "members"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Free Trivia",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
-      "datetime_end_iso": "",
-      "location": "Southport Sharks",
-      "link": "https://southportsharks.com.au/events/trivia/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "Join us for free trivia every Wednesday night at Southport Sharks! Prizes to be won, food & drink specials to enjoy.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "trivia",
-        "games",
-        "free"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Cash Builder",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "",
-      "location": "Southport Sharks",
-      "link": "https://southportsharks.com.au/events/cash-builder/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "gaming",
-        "prizes",
-        "members"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Locals Sip & Save",
-      "datetime": "Thu 10 Sep, 4:00 PM",
-      "datetime_iso": "2026-09-10T16:00:00",
-      "datetime_end_iso": "",
-      "location": "Aviary",
-      "link": "https://aviary.southportsharks.com.au/events/locals-night/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "We’re extending the good vibes and great value every Thursday — a full afternoon and evening of sips and skyline views designed with our Gold Coast locals in mind.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "drinks",
-        "social",
-        "locals"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "$6 Taco Therapy",
-      "datetime": "Thu 10 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-10T17:00:00",
-      "datetime_end_iso": "",
-      "location": "Kaktus Bar",
-      "link": "https://kaktus.southportsharks.com.au/events/taco-therapy/",
-      "cost": "$6",
-      "source": "Southport Sharks",
-      "description": "Thursdays are even tastier thanks to delicious tacos at Kaktus, for only $6 each! Grab your amigos and treat your tastebuds to great value.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "dining",
-        "tacos",
-        "food"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "$25 Steak Night",
-      "datetime": "Thu 10 Sep, 5:30 PM",
-      "datetime_iso": "2026-09-10T17:30:00",
-      "datetime_end_iso": "",
-      "location": "Frenzy Food Court",
-      "link": "https://frenzys.southportsharks.com.au/events/steak-night/",
-      "cost": "$25",
-      "source": "Southport Sharks",
-      "description": "Members can enjoy a classic steak dinner every Thursday night at Southport Sharks for just $25, the best value for dining!",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "dining",
-        "steak",
-        "members"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Raffles",
-      "datetime": "Thu 10 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-10T18:00:00",
-      "datetime_end_iso": "",
-      "location": "Southport Sharks",
-      "link": "https://southportsharks.com.au/events/raffles/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "Every Thursday from 6pm and Sunday from midday (12pm) purchase your raffle tickets for your chance to win some great prizes.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "raffle",
-        "prizes",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Members Cash Giveaways",
-      "datetime": "Thu 10 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-10T18:30:00",
-      "datetime_end_iso": "",
-      "location": "Southport Sharks",
-      "link": "https://southportsharks.com.au/events/members-cash-giveaway/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "prizes",
-        "members",
-        "cash"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "$5k Fridays",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Southport Sharks",
-      "link": "https://southportsharks.com.au/events/5k-fridays/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "$5K Fridays gives Southport Sharks members the chance to win a share of $5,000 cash every Friday. Five members will win $1000 each.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "prizes",
-        "members",
-        "cash"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Spring Cash Saturdays",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "Southport Sharks",
-      "link": "https://southportsharks.com.au/events/spring-cash-saturdays/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "Sharks members can win a share of $4,000 cash every Saturday at Southport Sharks! Four members will win $1,000 each.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "prizes",
-        "members",
-        "cash"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Kids Eat Free",
-      "datetime": "Sat 12 Sep, 7:30 AM",
-      "datetime_iso": "2026-09-12T07:30:00",
-      "datetime_end_iso": "",
-      "location": "Frenzy Food Court",
-      "link": "https://frenzys.southportsharks.com.au/events/kids-eat-free/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "Bring everyone along and enjoy kids eat free every Saturday morning from our buffet breakfast, and every Monday night from our buffet dinner.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "family",
-        "dining",
-        "kids"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Weekend Buffet Breakfast",
-      "datetime": "Sat 12 Sep, 7:30 AM",
-      "datetime_iso": "2026-09-12T07:30:00",
-      "datetime_end_iso": "",
-      "location": "Frenzy Food Court",
-      "link": "https://frenzys.southportsharks.com.au/events/weekend-buffet-breakfast/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "Start your weekend right with a value-filled buffet breakfast! Enjoy a spread of hot and cold favourites, fresh pastries, fruit, and more.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "breakfast",
-        "buffet",
-        "dining"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Weekend Buffet Breakfast",
+      "title": "Frenzy Food Court Weekend Buffet Breakfast",
       "datetime": "Sun 13 Sep, 7:30 AM",
       "datetime_iso": "2026-09-13T07:30:00",
       "datetime_end_iso": "",
@@ -349,9 +19,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "breakfast",
-        "buffet",
-        "dining"
+        "food",
+        "family"
       ],
       "social": false,
       "intellectual": false,
@@ -359,7 +28,7 @@
       "creative": false
     },
     {
-      "title": "$20 Birria Sunday",
+      "title": "Kaktus Bar $20 Birria Sunday",
       "datetime": "Sun 13 Sep, 11:00 AM",
       "datetime_iso": "2026-09-13T11:00:00",
       "datetime_end_iso": "",
@@ -371,9 +40,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "dining",
         "food",
-        "sunday"
+        "dining"
       ],
       "social": false,
       "intellectual": false,
@@ -381,7 +49,7 @@
       "creative": false
     },
     {
-      "title": "Raffles",
+      "title": "Southport Sharks Raffles",
       "datetime": "Sun 13 Sep, 12:00 PM",
       "datetime_iso": "2026-09-13T12:00:00",
       "datetime_end_iso": "",
@@ -394,7 +62,6 @@
       "category": "Community / Other",
       "tags": [
         "raffle",
-        "prizes",
         "community"
       ],
       "social": true,
@@ -403,29 +70,7 @@
       "creative": false
     },
     {
-      "title": "Members Cash Giveaways",
-      "datetime": "Sun 13 Sep, 2:30 PM",
-      "datetime_iso": "2026-09-13T14:30:00",
-      "datetime_end_iso": "",
-      "location": "Southport Sharks",
-      "link": "https://southportsharks.com.au/events/members-cash-giveaway/",
-      "cost": "See link",
-      "source": "Southport Sharks",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "prizes",
-        "members",
-        "cash"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Rolling Riches",
+      "title": "Southport Sharks Rolling Riches",
       "datetime": "Sun 13 Sep, 3:00 PM",
       "datetime_iso": "2026-09-13T15:00:00",
       "datetime_end_iso": "",
@@ -437,17 +82,15 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "prizes",
-        "members",
-        "cash"
+        "community"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
-      "title": "Free Sunday Kids Show",
+      "title": "Frenzy Food Court Free Sunday Kids Show",
       "datetime": "Sun 13 Sep, 5:00 PM",
       "datetime_iso": "2026-09-13T17:00:00",
       "datetime_end_iso": "",
@@ -460,16 +103,15 @@
       "category": "Community / Other",
       "tags": [
         "kids",
-        "family",
-        "show"
+        "family"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
-      "title": "Kids Eat Free",
+      "title": "Frenzy Food Court Kids Eat Free",
       "datetime": "Mon 14 Sep, 5:30 PM",
       "datetime_iso": "2026-09-14T17:30:00",
       "datetime_end_iso": "",
@@ -481,9 +123,9 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "family",
-        "dining",
-        "kids"
+        "food",
+        "kids",
+        "family"
       ],
       "social": false,
       "intellectual": false,
@@ -491,7 +133,7 @@
       "creative": false
     },
     {
-      "title": "$18 Schnitzel Night",
+      "title": "Frenzy Food Court $18 Schnitzel Night",
       "datetime": "Tue 15 Sep, 5:30 PM",
       "datetime_iso": "2026-09-15T17:30:00",
       "datetime_end_iso": "",
@@ -503,9 +145,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "dining",
         "food",
-        "members"
+        "dining"
       ],
       "social": false,
       "intellectual": false,
@@ -513,7 +154,7 @@
       "creative": false
     },
     {
-      "title": "Half Price Wednesdays",
+      "title": "Aviary Half Price Wednesdays",
       "datetime": "Wed 16 Sep, 4:00 PM",
       "datetime_iso": "2026-09-16T16:00:00",
       "datetime_end_iso": "",
@@ -525,9 +166,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "dining",
-        "drinks",
-        "social"
+        "food",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -535,7 +175,7 @@
       "creative": false
     },
     {
-      "title": "Healthcare Heroes Night",
+      "title": "Kaktus Bar Healthcare Heroes Night",
       "datetime": "Wed 16 Sep, 5:00 PM",
       "datetime_iso": "2026-09-16T17:00:00",
       "datetime_end_iso": "",
@@ -547,17 +187,16 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "dining",
-        "drinks",
-        "discount"
+        "food",
+        "drinks"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
-      "title": "$20 Pasta Night",
+      "title": "Frenzy Food Court $20 Pasta Night",
       "datetime": "Wed 16 Sep, 5:30 PM",
       "datetime_iso": "2026-09-16T17:30:00",
       "datetime_end_iso": "",
@@ -569,9 +208,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "dining",
         "food",
-        "members"
+        "dining"
       ],
       "social": false,
       "intellectual": false,
@@ -579,7 +217,7 @@
       "creative": false
     },
     {
-      "title": "Free Trivia",
+      "title": "Southport Sharks Free Trivia",
       "datetime": "Wed 16 Sep, 6:30 PM",
       "datetime_iso": "2026-09-16T18:30:00",
       "datetime_end_iso": "",
@@ -593,7 +231,7 @@
       "tags": [
         "trivia",
         "games",
-        "free"
+        "drinks"
       ],
       "social": true,
       "intellectual": true,
@@ -601,7 +239,7 @@
       "creative": false
     },
     {
-      "title": "Cash Builder",
+      "title": "Southport Sharks Cash Builder",
       "datetime": "Thu 17 Sep",
       "datetime_iso": "2026-09-17",
       "datetime_end_iso": "",
@@ -613,17 +251,15 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "gaming",
-        "prizes",
-        "members"
+        "community"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
-      "title": "Locals Sip & Save",
+      "title": "Aviary Locals Sip & Save",
       "datetime": "Thu 17 Sep, 4:00 PM",
       "datetime_iso": "2026-09-17T16:00:00",
       "datetime_end_iso": "",
@@ -633,11 +269,9 @@
       "source": "Southport Sharks",
       "description": "We’re extending the good vibes and great value every Thursday — a full afternoon and evening of sips and skyline views designed with our Gold Coast locals in mind.",
       "image": "",
-      "category": "Community / Other",
+      "category": "Social / Meetup",
       "tags": [
-        "drinks",
-        "social",
-        "locals"
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -645,7 +279,7 @@
       "creative": false
     },
     {
-      "title": "$6 Taco Therapy",
+      "title": "Kaktus Bar $6 Taco Therapy",
       "datetime": "Thu 17 Sep, 5:00 PM",
       "datetime_iso": "2026-09-17T17:00:00",
       "datetime_end_iso": "",
@@ -657,9 +291,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "dining",
-        "tacos",
-        "food"
+        "food",
+        "dining"
       ],
       "social": true,
       "intellectual": false,
@@ -667,7 +300,7 @@
       "creative": false
     },
     {
-      "title": "$25 Steak Night",
+      "title": "Frenzy Food Court $25 Steak Night",
       "datetime": "Thu 17 Sep, 5:30 PM",
       "datetime_iso": "2026-09-17T17:30:00",
       "datetime_end_iso": "",
@@ -679,9 +312,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "dining",
-        "steak",
-        "members"
+        "food",
+        "dining"
       ],
       "social": false,
       "intellectual": false,
@@ -689,7 +321,7 @@
       "creative": false
     },
     {
-      "title": "Raffles",
+      "title": "Southport Sharks Raffles",
       "datetime": "Thu 17 Sep, 6:00 PM",
       "datetime_iso": "2026-09-17T18:00:00",
       "datetime_end_iso": "",
@@ -702,7 +334,6 @@
       "category": "Community / Other",
       "tags": [
         "raffle",
-        "prizes",
         "community"
       ],
       "social": true,
@@ -711,7 +342,7 @@
       "creative": false
     },
     {
-      "title": "Members Cash Giveaways",
+      "title": "Southport Sharks Members Cash Giveaways",
       "datetime": "Thu 17 Sep, 6:30 PM",
       "datetime_iso": "2026-09-17T18:30:00",
       "datetime_end_iso": "",
@@ -723,17 +354,15 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "prizes",
-        "members",
-        "cash"
+        "community"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
-      "title": "$5k Fridays",
+      "title": "Southport Sharks $5k Fridays",
       "datetime": "Fri 18 Sep",
       "datetime_iso": "2026-09-18",
       "datetime_end_iso": "",
@@ -745,17 +374,37 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "prizes",
-        "members",
-        "cash"
+        "community"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
-      "title": "Spring Cash Saturdays",
+      "title": "Aviary Rooftop Rodeo Fridays",
+      "datetime": "Fri 18 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-18T17:00:00",
+      "datetime_end_iso": "",
+      "location": "Aviary",
+      "link": "https://aviary.southportsharks.com.au/events/rooftop-rodeo-presents-giddy-up-fridays/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "We’re turning up the western energy with themed tunes, cocktails, shooters, pizzas and plenty of rooftop atmosphere as the sun goes down over the Gold Coast.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "nightlife",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Southport Sharks Spring Cash Saturdays",
       "datetime": "Sat 19 Sep",
       "datetime_iso": "2026-09-19",
       "datetime_end_iso": "",
@@ -767,17 +416,15 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "prizes",
-        "members",
-        "cash"
+        "community"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
-      "title": "Kids Eat Free",
+      "title": "Frenzy Food Court Kids Eat Free",
       "datetime": "Sat 19 Sep, 7:30 AM",
       "datetime_iso": "2026-09-19T07:30:00",
       "datetime_end_iso": "",
@@ -789,9 +436,9 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "family",
-        "dining",
-        "kids"
+        "food",
+        "kids",
+        "family"
       ],
       "social": false,
       "intellectual": false,
@@ -799,7 +446,7 @@
       "creative": false
     },
     {
-      "title": "Weekend Buffet Breakfast",
+      "title": "Frenzy Food Court Weekend Buffet Breakfast",
       "datetime": "Sat 19 Sep, 7:30 AM",
       "datetime_iso": "2026-09-19T07:30:00",
       "datetime_end_iso": "",
@@ -811,9 +458,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "breakfast",
-        "buffet",
-        "dining"
+        "food",
+        "family"
       ],
       "social": false,
       "intellectual": false,
@@ -821,7 +467,7 @@
       "creative": false
     },
     {
-      "title": "Alex Hayes B2B Rossco",
+      "title": "Kaktus Bar Alex Hayes B2B Rossco",
       "datetime": "Sat 19 Sep, 7:00 PM",
       "datetime_iso": "2026-09-19T19:00:00",
       "datetime_end_iso": "",
@@ -835,6 +481,9 @@
       "tags": [
         "music",
         "dj",
+        "nightlife",
+        "raffle",
+        "charity",
         "family"
       ],
       "social": true,
@@ -843,7 +492,7 @@
       "creative": true
     },
     {
-      "title": "Weekend Buffet Breakfast",
+      "title": "Frenzy Food Court Weekend Buffet Breakfast",
       "datetime": "Sun 20 Sep, 7:30 AM",
       "datetime_iso": "2026-09-20T07:30:00",
       "datetime_end_iso": "",
@@ -856,7 +505,6 @@
       "category": "Community / Other",
       "tags": [
         "food",
-        "breakfast",
         "family"
       ],
       "social": false,
@@ -865,7 +513,7 @@
       "creative": false
     },
     {
-      "title": "$20 Birria Sunday",
+      "title": "Kaktus Bar $20 Birria Sunday",
       "datetime": "Sun 20 Sep, 11:00 AM",
       "datetime_iso": "2026-09-20T11:00:00",
       "datetime_end_iso": "",
@@ -878,7 +526,6 @@
       "category": "Community / Other",
       "tags": [
         "food",
-        "sunday",
         "dining"
       ],
       "social": false,
@@ -887,7 +534,7 @@
       "creative": false
     },
     {
-      "title": "Raffles",
+      "title": "Southport Sharks Raffles",
       "datetime": "Sun 20 Sep, 12:00 PM",
       "datetime_iso": "2026-09-20T12:00:00",
       "datetime_end_iso": "",
@@ -900,7 +547,6 @@
       "category": "Community / Other",
       "tags": [
         "raffle",
-        "prizes",
         "community"
       ],
       "social": true,
@@ -909,7 +555,47 @@
       "creative": false
     },
     {
-      "title": "Free Sunday Kids Show",
+      "title": "Southport Sharks Members Cash Giveaways",
+      "datetime": "Sun 20 Sep, 2:30 PM",
+      "datetime_iso": "2026-09-20T14:30:00",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/members-cash-giveaway/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Southport Sharks Rolling Riches",
+      "datetime": "Sun 20 Sep, 3:00 PM",
+      "datetime_iso": "2026-09-20T15:00:00",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/rolling-riches/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Every Sunday, Southport Sharks Members will have the chance to take home a win from our Rolling Riches promotion.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Frenzy Food Court Free Sunday Kids Show",
       "datetime": "Sun 20 Sep, 5:00 PM",
       "datetime_iso": "2026-09-20T17:00:00",
       "datetime_end_iso": "",
@@ -922,8 +608,506 @@
       "category": "Community / Other",
       "tags": [
         "kids",
+        "family"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Frenzy Food Court Kids Eat Free",
+      "datetime": "Mon 21 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-21T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Frenzy Food Court",
+      "link": "https://frenzys.southportsharks.com.au/events/kids-eat-free/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Bring everyone along and enjoy kids eat free every Saturday morning from our buffet breakfast, and every Monday night from our buffet dinner.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "kids",
+        "family"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Frenzy Food Court $18 Schnitzel Night",
+      "datetime": "Tue 22 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-22T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Frenzy Food Court",
+      "link": "https://frenzys.southportsharks.com.au/events/schnitzel-night/",
+      "cost": "$18",
+      "source": "Southport Sharks",
+      "description": "Every Tuesday night, members can enjoy a classic chicken schnitzel served with chips, fresh salad and your choice of sauce for just $18.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Aviary Half Price Wednesdays",
+      "datetime": "Wed 23 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-23T16:00:00",
+      "datetime_end_iso": "",
+      "location": "Aviary",
+      "link": "https://aviary.southportsharks.com.au/events/half-price-wednesdays/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Soak up the midweek buzz with half price food every Wednesday at Aviary Rooftop Bar. From golden hour to good times, this is your midweek excuse to round up your mates and graze in style.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Kaktus Bar Healthcare Heroes Night",
+      "datetime": "Wed 23 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-23T17:00:00",
+      "datetime_end_iso": "",
+      "location": "Kaktus Bar",
+      "link": "https://kaktus.southportsharks.com.au/events/healthcare-heroes-night/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Every Wednesday, we’re celebrating our healthcare amigos with 25% off your bill at Kaktus Bar! Simply show your employee ID.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Frenzy Food Court $20 Pasta Night",
+      "datetime": "Wed 23 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-23T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Frenzy Food Court",
+      "link": "https://frenzys.southportsharks.com.au/events/pasta-night/",
+      "cost": "$20",
+      "source": "Southport Sharks",
+      "description": "Make your Wednesday night one to look forward to with an exclusive members midweek special at Southport Sharks; our $20 Pesto Pasta!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Southport Sharks Free Trivia",
+      "datetime": "Wed 23 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-23T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/trivia/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Join us for free trivia every Wednesday night at Southport Sharks! Prizes to be won, food & drink specials to enjoy.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Southport Sharks Cash Builder",
+      "datetime": "Thu 24 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/cash-builder/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Aviary Locals Sip & Save",
+      "datetime": "Thu 24 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-24T16:00:00",
+      "datetime_end_iso": "",
+      "location": "Aviary",
+      "link": "https://aviary.southportsharks.com.au/events/locals-night/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "We’re extending the good vibes and great value every Thursday — a full afternoon and evening of sips and skyline views designed with our Gold Coast locals in mind.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Kaktus Bar $6 Taco Therapy",
+      "datetime": "Thu 24 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-24T17:00:00",
+      "datetime_end_iso": "",
+      "location": "Kaktus Bar",
+      "link": "https://kaktus.southportsharks.com.au/events/taco-therapy/",
+      "cost": "$6",
+      "source": "Southport Sharks",
+      "description": "Thursdays are even tastier thanks to delicious tacos at Kaktus, for only $6 each! Grab your amigos and treat your tastebuds to great value.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Frenzy Food Court $25 Steak Night",
+      "datetime": "Thu 24 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-24T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Frenzy Food Court",
+      "link": "https://frenzys.southportsharks.com.au/events/steak-night/",
+      "cost": "$25",
+      "source": "Southport Sharks",
+      "description": "Members can enjoy a classic steak dinner every Thursday night at Southport Sharks for just $25, the best value for dining!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Southport Sharks Raffles",
+      "datetime": "Thu 24 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-24T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/raffles/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Every Thursday from 6pm and Sunday from midday (12pm) purchase your raffle tickets for your chance to win some great prizes.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "raffle",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Southport Sharks Members Cash Giveaways",
+      "datetime": "Thu 24 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-24T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/members-cash-giveaway/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Southport Sharks $5k Fridays",
+      "datetime": "Fri 25 Sep",
+      "datetime_iso": "2026-09-25",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/5k-fridays/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "$5K Fridays gives Southport Sharks members the chance to win a share of $5,000 cash every Friday. Five members will win $1000 each.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Aviary Rooftop Rodeo Fridays",
+      "datetime": "Fri 25 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-25T17:00:00",
+      "datetime_end_iso": "",
+      "location": "Aviary",
+      "link": "https://aviary.southportsharks.com.au/events/rooftop-rodeo-presents-giddy-up-fridays/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "We’re turning up the western energy with themed tunes, cocktails, shooters, pizzas and plenty of rooftop atmosphere as the sun goes down over the Gold Coast.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "nightlife",
+        "food",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Sharks Events Centre Fletch & Hindy Live",
+      "datetime": "Fri 25 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-25T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Sharks Events Centre",
+      "link": "https://eventscentre.southportsharks.com.au/events/fletch-hindy-live/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Get ready for a night of laughs, legends and league with Fletch and Hindy at Southport Sharks. Unfiltered footy chat and comedy!",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Southport Sharks Spring Cash Saturdays",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/spring-cash-saturdays/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Sharks members can win a share of $4,000 cash every Saturday at Southport Sharks! Four members will win $1,000 each.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Frenzy Food Court Kids Eat Free",
+      "datetime": "Sat 26 Sep, 7:30 AM",
+      "datetime_iso": "2026-09-26T07:30:00",
+      "datetime_end_iso": "",
+      "location": "Frenzy Food Court",
+      "link": "https://frenzys.southportsharks.com.au/events/kids-eat-free/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Bring everyone along and enjoy kids eat free every Saturday morning from our buffet breakfast, and every Monday night from our buffet dinner.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
         "family",
-        "free"
+        "kids"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Frenzy Food Court Weekend Buffet Breakfast",
+      "datetime": "Sat 26 Sep, 7:30 AM",
+      "datetime_iso": "2026-09-26T07:30:00",
+      "datetime_end_iso": "",
+      "location": "Frenzy Food Court",
+      "link": "https://frenzys.southportsharks.com.au/events/weekend-buffet-breakfast/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Start your weekend right with a value-filled buffet breakfast! Enjoy a spread of hot and cold favourites, fresh pastries, fruit, and more.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Frenzy Food Court Weekend Buffet Breakfast",
+      "datetime": "Sun 27 Sep, 7:30 AM",
+      "datetime_iso": "2026-09-27T07:30:00",
+      "datetime_end_iso": "",
+      "location": "Frenzy Food Court",
+      "link": "https://frenzys.southportsharks.com.au/events/weekend-buffet-breakfast/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Start your weekend right with a value-filled buffet breakfast! Enjoy a spread of hot and cold favourites, fresh pastries, fruit, and more.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Kaktus Bar $20 Birria Sunday",
+      "datetime": "Sun 27 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-27T11:00:00",
+      "datetime_end_iso": "",
+      "location": "Kaktus Bar",
+      "link": "https://kaktus.southportsharks.com.au/events/birria-sunday/",
+      "cost": "$20",
+      "source": "Southport Sharks",
+      "description": "Sundays, sorted.Rich, slow-cooked birria. Done your way. Every Sunday, dive into our $20 Birria Menu — slow-cooked, rich, and built to hit properly.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "drinks"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Southport Sharks Raffles",
+      "datetime": "Sun 27 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-27T12:00:00",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/raffles/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Every Thursday from 6pm and Sunday from midday (12pm) purchase your raffle tickets for your chance to win some great prizes.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "raffle",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Southport Sharks Members Cash Giveaways",
+      "datetime": "Sun 27 Sep, 2:30 PM",
+      "datetime_iso": "2026-09-27T14:30:00",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/members-cash-giveaway/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Southport Sharks Rolling Riches",
+      "datetime": "Sun 27 Sep, 3:00 PM",
+      "datetime_iso": "2026-09-27T15:00:00",
+      "datetime_end_iso": "",
+      "location": "Southport Sharks",
+      "link": "https://southportsharks.com.au/events/rolling-riches/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Every Sunday, Southport Sharks Members will have the chance to take home a win from our Rolling Riches promotion.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Frenzy Food Court Free Sunday Kids Show",
+      "datetime": "Sun 27 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-27T17:00:00",
+      "datetime_end_iso": "",
+      "location": "Frenzy Food Court",
+      "link": "https://frenzys.southportsharks.com.au/events/kids-show/",
+      "cost": "See link",
+      "source": "Southport Sharks",
+      "description": "Enjoy a fun-filled Sunday at Southport Sharks with our free Kids Show! Perfect for families looking to keep the little ones entertained.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "kids",
+        "family"
       ],
       "social": true,
       "intellectual": false,

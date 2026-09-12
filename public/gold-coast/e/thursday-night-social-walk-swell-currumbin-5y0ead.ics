@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Thursday Night Social walk Swell Currumbin
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-5y0ead@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T173000
+DTEND;TZID=Australia/Brisbane:20260917T193000
+SUMMARY:Thursday Night Social walk Swell Currumbin
+DESCRIPTION:An evening community walk focused on socializing and viewing th
+ e SWELL art installations in a relaxed group setting.
+LOCATION:Currumbin
+URL:https://www.goldcoastbushwalkers.org.au
+END:VEVENT
+END:VCALENDAR

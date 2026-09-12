@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "theblenders",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Weekly Rehearsal (1)",
@@ -23,6 +23,29 @@
         "choir",
         "music",
         "rehearsal"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Weekly Rehearsal (1)",
+      "datetime": "Mon 21 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-21T18:00:00",
+      "datetime_end_iso": "",
+      "location": "A.B. Paterson College",
+      "link": "https://www.theblenders.com.au/event-details/weekly-rehearsal-1-2026-09-21-18-00",
+      "cost": "See link",
+      "source": "The Blenders Chorus",
+      "description": "Open for everyone! If you would like to attend this rehearsal, please let us know by clicking the button below.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "music",
+        "choir",
+        "singing",
+        "community"
       ],
       "social": true,
       "intellectual": false,

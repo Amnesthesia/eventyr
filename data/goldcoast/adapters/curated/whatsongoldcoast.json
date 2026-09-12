@@ -3,58 +3,14 @@
   "provider": "adapters",
   "tier": "aggregators",
   "source_id": "whatsongoldcoast",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
-      "title": "Lecture Me: Dirk Yates + Tutorial ~ Kathy Mackey",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "",
-      "location": "What's On Gold Coast, Burleigh Heads",
-      "link": "https://www.whatsongoldcoast.au/All-events/Lecture-Me-1-Dirk-Yates-Tutorial-Kathy-Mackey-1992400462417",
-      "cost": "See link",
-      "source": "What's On Gold Coast",
-      "description": "2PP presents a lecture on Contemporary art from Dirk Yates and follow up tutorial with Kathy Mackey.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "art",
-        "lecture",
-        "tutorial"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Surfers Paradise Beachfront Markets",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "What's On Gold Coast, Surfers Paradise",
-      "link": "https://www.whatsongoldcoast.au/All-events/Surfers-Paradise-Beachfront-Markets",
-      "cost": "See link",
-      "source": "What's On Gold Coast",
-      "description": "A free, family-friendly outdoor shopping experience by the beachside, every Wednesday, Friday and Saturday from 4pm to 9pm.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "market",
-        "outdoor",
-        "family"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "SWELL Sculpture Festival Active & Healthy Wellness Program",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "2026-09-13",
       "location": "What's On Gold Coast, Currumbin",
       "link": "https://www.whatsongoldcoast.au/All-events/SWELL-Sculpture-Festival-Active-and-Healthy-Wellness-Program",
       "cost": "See link",
@@ -64,8 +20,10 @@
       "category": "Workshop / Class",
       "tags": [
         "wellness",
-        "health",
-        "fitness"
+        "fitness",
+        "yoga",
+        "pilates",
+        "community"
       ],
       "social": true,
       "intellectual": false,
@@ -73,11 +31,100 @@
       "creative": false
     },
     {
-      "title": "SWELL Sculpture Festival",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "title": "HOTA Farmers and Artisan Market",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "2026-09-13",
+      "location": "What's On Gold Coast, Surfers Paradise",
+      "link": "https://www.whatsongoldcoast.au/All-events/HOTA-Farmers-and-Artisan-Market-60deb811cdcec11c46c40065",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "The HOTA Markets are one of the Gold Coast's most vibrant community markets, held every Sunday morning, in the iconic HOTA precinct.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "market",
+        "shopping",
+        "community",
+        "food"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Carrara Markets Car Boot Sale",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "2026-09-13",
+      "location": "What's On Gold Coast, Carrara",
+      "link": "https://www.whatsongoldcoast.au/All-events/Carrara-Markets-Car-Boot-Sale-5ee186dcef56931323e5e481",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "Carrara Markets is famous for its Sunday morning Car Boot Sale!...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "market",
+        "shopping",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Live Music Sunday",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
-      "location": "What's On Gold Coast, Currumbin",
+      "location": "What's On Gold Coast, Southport",
+      "link": "https://www.whatsongoldcoast.au/All-events/Live-Music-Sunday",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "Free live music at Harley &amp; Hudson Coffee Bar.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "coffee"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Coastal Markets – Coolangatta",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "2026-09-13T11:00:00",
+      "location": "What's On Gold Coast, Coolangatta",
+      "link": "https://www.whatsongoldcoast.au/All-events/The-Coastal-Markets-Coolangatta",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "One of the region’s largest and most vibrant beachfront market experiences, bringing together hundreds of vendors.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "market",
+        "shopping",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "SWELL Sculpture Festival",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
+      "location": "Currumbin",
       "link": "https://www.whatsongoldcoast.au/All-events/SWELL-Sculpture-Festival-5d7b3fc61bc245d8271ed744",
       "cost": "See link",
       "source": "What's On Gold Coast",
@@ -85,80 +132,39 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
+        "exhibition",
         "sculpture",
-        "beach",
-        "art"
+        "outdoor",
+        "festival"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
-      "title": "Art Explorers with Ainslee Palmer",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "title": "Numinbah-Holding Tight Community field days",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
-      "location": "What's On Gold Coast, Surfers Paradise",
-      "link": "https://www.whatsongoldcoast.au/All-events/Art-Explorers-with-Ainslee-Palmer",
+      "location": "Numinbah Valley",
+      "link": "https://www.whatsongoldcoast.au/All-events/Numinbah-Holding-Tight-Community-field-days-2026",
       "cost": "See link",
       "source": "What's On Gold Coast",
-      "description": "Inviting children and their parents/carers to connect with art through movement and storytelling, encouraging curiosity, creativity and fun!",
+      "description": "Join our Holding Tight community field day to help restore habitat linking Springbrook and Lamington National Parks.",
       "image": "",
-      "category": "Workshop / Class",
+      "category": "Community / Other",
       "tags": [
-        "kids",
-        "art",
-        "storytelling"
+        "community",
+        "environment",
+        "nature",
+        "wildlife"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Dreamworld Night Market",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Coomera",
-      "link": "https://www.whatsongoldcoast.au/All-events/Dreamworld-Night-Market-62d0efd316f416de60fa4005",
-      "cost": "See link",
-      "source": "What's On Gold Coast",
-      "description": "Moonlight Night Market is the Northern Gold Coast's newest food market, located inside Dreamworld!...",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "market",
-        "food",
-        "night"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
       "creative": false
-    },
-    {
-      "title": "Crafted Through Clay: 50 years of learning Student Showcase",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Benowa",
-      "link": "https://www.whatsongoldcoast.au/All-events/Crafted-Through-Clay-50-years-of-learning-Student-Showcase",
-      "cost": "See link",
-      "source": "What's On Gold Coast",
-      "description": "Exhibition of student work celebrating 50 years of the Gold Coast Potters Association.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "pottery",
-        "exhibition",
-        "art"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
     }
   ]
 }

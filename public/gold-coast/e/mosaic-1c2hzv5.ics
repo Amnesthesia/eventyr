@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:MOSAIC
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1c2hzv5@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T070000
+DTEND;TZID=Australia/Brisbane:20260926T090000
+SUMMARY:MOSAIC
+DESCRIPTION:Gold Coast band\, MOSAIC\, perform the smash hits of the 80s. A
+ uthentic covers including Blondie\, Phil Collins\, Cold Chisel\, INXS\, Th
+ e Divinyls\, The Cars\, just to name a few\, MOSAIC are the Ultimate 80s F
+ lashback.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/mosaic/
+END:VEVENT
+END:VCALENDAR

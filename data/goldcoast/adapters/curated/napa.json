@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "napa",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "BROADWAY KIDS: THE JUNGLE BOOK",
@@ -23,6 +23,56 @@
         "theatre",
         "kids",
         "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "COLLEGE SENIOR MUSICAL",
+      "datetime": "Sat 26 Sep – Sun 27 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "2026-09-27",
+      "location": "National Academy of Performing Arts",
+      "link": "https://napa.com.au/",
+      "cost": "See link",
+      "source": "National Academy of Performing Arts",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "musical",
+        "performance",
+        "theatre"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "CHARLOTTE’S WEB THE MUSICAL",
+      "datetime": "Sat 26 Sep – Sun 27 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "2026-09-27",
+      "location": "National Academy of Performing Arts",
+      "link": "https://napa.com.au/",
+      "cost": "See link",
+      "source": "National Academy of Performing Arts",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "musical",
+        "performance",
+        "theatre",
+        "kids",
+        "family"
       ],
       "social": false,
       "intellectual": false,

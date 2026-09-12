@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Help Me Please
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-m9q5g1@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T173000
+DTEND;TZID=Australia/Brisbane:20260926T193000
+SUMMARY:Help Me Please
+DESCRIPTION:You probably already know me from reading the news. In 2018\, I
+  dressed up as a sewing needle and hid inside a strawberry. There should b
+ e a French word for the moment you realize a bald dude actually has a pony
+ tail. I'm so used to failure that success represents an existential threat
+ . "His mind works like no other” ★★★★★ – Chortle (UK) “The
+  speed and frequency of his jokes is dizzying… Buckle up.” ★★★
+ ★ – The Guardian "Book yesterday” ★★★★ – The Age New Faces
+  of Comedy\, Just For Laughs Montreal\, 2025 Winner: Best of the Fest\, Sy
+ dney Comedy Festival\, 2025 Winner: Director’s Choice Award\, Melbourne 
+ International Comedy Festival\, 2025 alist.com.au
+LOCATION:Dan Rath
+URL:https://basedcomedy.com.au/the-shows/dan-rath.html
+END:VEVENT
+END:VCALENDAR

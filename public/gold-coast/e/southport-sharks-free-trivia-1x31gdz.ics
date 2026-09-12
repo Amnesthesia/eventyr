@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Southport Sharks Free Trivia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1x31gdz@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T183000
+DTEND;TZID=Australia/Brisbane:20260923T203000
+SUMMARY:Southport Sharks Free Trivia
+DESCRIPTION:Join us for free trivia every Wednesday night at Southport Shar
+ ks! Prizes to be won\, food & drink specials to enjoy.
+LOCATION:Southport Sharks
+URL:https://southportsharks.com.au/events/trivia/
+END:VEVENT
+END:VCALENDAR

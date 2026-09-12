@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SWELL Sculpture Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-13p48ik@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260921
+SUMMARY:SWELL Sculpture Festival
+DESCRIPTION:An annual outdoor exhibition featuring large-scale installation
+ s by local and international artists along the Currumbin coastline.
+LOCATION:Currumbin Beach
+URL:https://www.swellsculpture.com.au
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SANDFIRE Spring Launch 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1n8g0p9@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:SANDFIRE Spring Launch 2026
+DESCRIPTION:Celebrate spring at SANDFIRE with Veuve Clicquot\, roaming bite
+ s\, free-flowing drinks and live music.
+LOCATION:Inside Gold Coast What's On
+URL:https://www.insidegoldcoast.com.au/whatson/sandfire-spring-launch
+END:VEVENT
+END:VCALENDAR

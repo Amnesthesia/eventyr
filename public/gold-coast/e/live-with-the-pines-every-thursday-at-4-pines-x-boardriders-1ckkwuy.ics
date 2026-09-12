@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Live with the Pines – Every Thursday at 4 Pines x Boardrider
+ s Coolangatta
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1ckkwuy@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Live with the Pines – Every Thursday at 4 Pines x Boardriders Coo
+ langatta
+DESCRIPTION:Catch live music every Thursday at 4 Pines x Boardriders\, plus
+  $15 burgers and chips from 7pm.
+LOCATION:Inside Gold Coast What's On
+URL:https://www.insidegoldcoast.com.au/whatson/live-with-the-pines-every-th
+ ursday-at-4-pines-x-boardriders-coolangatta
+END:VEVENT
+END:VCALENDAR

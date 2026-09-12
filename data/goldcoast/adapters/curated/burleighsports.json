@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "burleighsports",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Trivia",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
       "datetime_end_iso": "",
       "location": "Burleigh Sports Club",
       "link": "https://www.burleighsports.com.au/events/trivia/",
@@ -20,8 +20,8 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "quiz",
-        "social"
+        "games",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -30,8 +30,8 @@
     },
     {
       "title": "Thursday Night Raffles",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
       "datetime_end_iso": "",
       "location": "Burleigh Sports Club",
       "link": "https://www.burleighsports.com.au/events/thursday-night-raffles/",
@@ -42,8 +42,7 @@
       "category": "Social / Meetup",
       "tags": [
         "raffle",
-        "community",
-        "social"
+        "community"
       ],
       "social": true,
       "intellectual": false,

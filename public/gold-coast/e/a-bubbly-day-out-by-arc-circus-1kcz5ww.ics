@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:A Bubbly Day Out by ARC Circus
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1kcz5ww@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:A Bubbly Day Out by ARC Circus
+DESCRIPTION:These interactive wellbeing classes introduce children to mindf
+ ulness techniques in playful and creative ways. Tapping into their imagina
+ tion\,
+LOCATION:Yulagi Space\, Currumbin
+URL:https://www.swellsculpture.com.au/activity/a-bubbly-day-out-by-arc-circ
+ us/
+END:VEVENT
+END:VCALENDAR

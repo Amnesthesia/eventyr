@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TEN LEFT FEET
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-juxq90@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T070000
+DTEND;TZID=Australia/Brisbane:20260927T090000
+SUMMARY:TEN LEFT FEET
+DESCRIPTION:Ten Left Feet can’t dance. But we can play great rock music t
+ hat makes you move. We deliver a high-energy mix of soft and hard rock hit
+ s from the 70s and 80s\, alongside stylish 60s anthems from The Beatles an
+ d other legendary rock mongers. Our feet might be clumsy\, but our hands a
+ re tight\, and our groove is non-stop. We play the music. You bring the fe
+ et.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/ten-left-feet/
+END:VEVENT
+END:VCALENDAR

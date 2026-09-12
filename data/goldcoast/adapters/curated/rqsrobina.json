@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "rqsrobina",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "FREE POOL",
-      "datetime": "Wed 9 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-09T17:00:00",
+      "datetime": "Sun 13 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-13T17:00:00",
       "datetime_end_iso": "",
       "location": "RQ's Tavern Robina",
       "link": "https://rqsrobina.com.au/bookings/",
@@ -20,8 +20,7 @@
       "category": "Social / Meetup",
       "tags": [
         "games",
-        "social",
-        "free"
+        "community"
       ],
       "social": true,
       "intellectual": false,

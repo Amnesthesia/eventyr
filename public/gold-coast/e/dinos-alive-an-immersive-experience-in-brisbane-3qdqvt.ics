@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dinos Alive: An Immersive Experience in Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-3qdqvt@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T090000
+DTEND;TZID=Australia/Brisbane:20260913T110000
+SUMMARY:Dinos Alive: An Immersive Experience in Brisbane
+DESCRIPTION:Go back millions of years to a land ruled by giants. This immer
+ sive experience brings you face-to-face with the fearsome and spectacular 
+ dinosaurs that dominated the animal world for 140 million years. From turk
+ ey-sized Velociraptors to the mighty T-Rex\, interact with life-sized\, mo
+ ving animatronic replicas of a large variety of species in their natural J
+ urassic habitat. Step into another world and learn something new in an exp
+ erience that's fun for the whole family.
+LOCATION:Fever Gold Coast\, Brisbane
+URL:https://feverup.com/m/603530
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Minute to Win It
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-mbj2ks@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T203000
+DTEND;TZID=Australia/Brisbane:20260916T223000
+SUMMARY:Minute to Win It
+DESCRIPTION:
+LOCATION:Heroes Gaming\, 36 Scarborough Street\, SOUTHPORT QLD 4215
+URL:https://sopo.com.au/events/minute-to-win-it/
+END:VEVENT
+END:VCALENDAR

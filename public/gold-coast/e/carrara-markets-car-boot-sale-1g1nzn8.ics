@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Carrara Markets Car Boot Sale
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1g1nzn8@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Carrara Markets Car Boot Sale
+DESCRIPTION:Carrara Markets is famous for its Sunday morning Car Boot Sale!
+ ...
+LOCATION:City of Gold Coast Libraries
+URL:https://www.whatsongoldcoast.au/All-events/Carrara-Markets-Car-Boot-Sal
+ e-5ee186dcef56931323e5e481
+END:VEVENT
+END:VCALENDAR

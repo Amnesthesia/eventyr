@@ -3,13 +3,35 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "tallesurfclub",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
+      "title": "Seniors Lunch Special",
+      "datetime": "Mon 14 Sep – Fri 18 Sep",
+      "datetime_iso": "2026-09-14",
+      "datetime_end_iso": "2026-09-18",
+      "location": "Tallebudgera Surf Club",
+      "link": "https://tallesurfclub.com/event/seniors-lunch-special/",
+      "cost": "See link",
+      "source": "Tallebudgera Surf Club",
+      "description": "Seniors lunch specials available for lunch Monday to Friday. View Seniors Menu.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "seniors"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Live Music",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
       "datetime_end_iso": "",
       "location": "Tallebudgera Surf Club",
       "link": "https://tallesurfclub.com/event/live-music/",
@@ -19,11 +41,13 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "music",
         "live music",
-        "local",
-        "entertainment"
+        "food",
+        "dining",
+        "drinks"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true

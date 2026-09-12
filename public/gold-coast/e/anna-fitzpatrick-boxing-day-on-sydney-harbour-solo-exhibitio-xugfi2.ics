@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Anna Fitzpatrick – Boxing Day on Sydney Harbour (Solo Exhibi
+ tion)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-xugfi2@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20261001
+SUMMARY:Anna Fitzpatrick – Boxing Day on Sydney Harbour (Solo Exhibition)
+DESCRIPTION:A solo exhibition by artist Anna Fitzpatrick\, presenting a ser
+ ies of works themed around harbour life and coastal aesthetics.
+LOCATION:Gallery One\, Bundall
+URL:https://gallery-one.com.au/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Gold Coast Rocks - Tribute Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-p0lfcp@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Gold Coast Rocks - Tribute Festival
+DESCRIPTION:A live music event featuring tribute bands performing classic r
+ ock hits for local music fans.
+LOCATION:Mermaid Waters Hotel
+URL:https://tickets.oztix.com.au
+END:VEVENT
+END:VCALENDAR
