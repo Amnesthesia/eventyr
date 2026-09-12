@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Aboriginal Centre for Performing Arts: Community Showcase
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1x8my5v@dothings
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:The Aboriginal Centre for Performing Arts: Community Showcase
+DESCRIPTION:More than a performance\, it's real time creation
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/aboriginal-centre-for-performing
+ -arts-community-showcase
+END:VEVENT
+END:VCALENDAR

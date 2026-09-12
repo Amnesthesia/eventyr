@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Author Hour with Nikki Mottram at Ipswich Central Library
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15uqbn4@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T100000
+DTEND;TZID=Australia/Brisbane:20260917T120000
+SUMMARY:Author Hour with Nikki Mottram at Ipswich Central Library
+DESCRIPTION:Join Nikki Mottram as she shares the story behind Helidon\, the
+  latest instalment in the best-selling Dana Gibson series.
+LOCATION:1 Nicholas Street\, Ipswich QLD 4305
+URL:https://www.uqp.com.au/events/author-hour-with-nikki-mottram-at-ipswich
+ -central-library
+END:VEVENT
+END:VCALENDAR

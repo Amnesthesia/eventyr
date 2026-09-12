@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hatha yoga class 🪷✨
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-y4p0x4@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T183000
+DTEND;TZID=Australia/Brisbane:20260921T193000
+SUMMARY:Hatha yoga class 🪷✨
+DESCRIPTION:
+LOCATION:New Farm\, Methyr Rd\, Brisbane\, Brisbane
+URL:https://www.meetup.com/meetup-group-vqywwnyc/events/316366856/
+END:VEVENT
+END:VCALENDAR

@@ -3,35 +3,15 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "museum-of-brisbane",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "Tea & Tour: Kirstie Macleod",
-      "datetime": "Sat 12 Sep, 10:30 AM",
-      "datetime_iso": "2026-09-12T10:30:00",
-      "datetime_end_iso": "",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
-      "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
-      "cost": "See link",
-      "source": "Museum of Brisbane (City Hall)",
-      "description": "Enjoy an exclusive Tea & Tour with one of Brisbane’s most distinctive collectors - Malcolm Enright. This special session gives you a rare look inside his remarkable collections and the stories behind them.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "tour"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
     {
       "title": "Artist in Residence: Sachém Parkin-Owens",
       "datetime": "Sat 22 Nov 2025 – Sat 10 Oct 2026",
       "datetime_iso": "2025-11-22",
       "datetime_end_iso": "2026-10-10",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/sachem-parkin-owens/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
@@ -39,7 +19,10 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
         "exhibition",
+        "gallery",
+        "performance",
         "painting"
       ],
       "social": false,
@@ -52,7 +35,7 @@
       "datetime": "Sat 22 Nov 2025 – Sun 31 Jan 2027",
       "datetime_iso": "2025-11-22",
       "datetime_end_iso": "2027-01-31",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/stories-you-wear/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
@@ -60,9 +43,13 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
         "exhibition",
+        "gallery",
+        "fashion",
         "indigenous",
-        "design"
+        "culture",
+        "storytelling"
       ],
       "social": false,
       "intellectual": false,
@@ -71,10 +58,10 @@
     },
     {
       "title": "Perspectives of Brisbane",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
@@ -82,8 +69,11 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
         "exhibition",
-        "history"
+        "gallery",
+        "history",
+        "culture"
       ],
       "social": false,
       "intellectual": true,
@@ -95,7 +85,7 @@
       "datetime": "Thu 17 Sep",
       "datetime_iso": "2026-09-17",
       "datetime_end_iso": "",
-      "location": "Museum of Brisbane, Level 3, Brisbane City Hall King George Square, Brisbane 4000",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/crafty-party-bonnie-hislop/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
@@ -103,34 +93,15 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "craft"
+        "art",
+        "craft",
+        "design",
+        "community"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
       "creative": true
-    },
-    {
-      "title": "Tea & Tour: Kirstie Macleod",
-      "datetime": "Sat 12 Sep, 10:30 AM",
-      "datetime_iso": "2026-09-12T10:30:00",
-      "datetime_end_iso": "",
-      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
-      "link": "https://www.museumofbrisbane.com.au/whats-on/kirstie-macleod/",
-      "cost": "See link",
-      "source": "Museum of Brisbane (City Hall)",
-      "description": "Enjoy an exclusive Tea & Tour with one of Brisbane’s most distinctive collectors - Malcolm Enright. This special session gives you a rare look inside his remarkable collections and the stories behind them.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "history",
-        "tour",
-        "culture"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
     }
   ]
 }

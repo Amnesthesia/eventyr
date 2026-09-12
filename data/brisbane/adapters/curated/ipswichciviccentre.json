@@ -3,32 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "ipswichciviccentre",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "Post Modern Cabaret @ Studio 188",
-      "datetime": "Sat 12 Sep, 7:30 PM",
-      "datetime_iso": "2026-09-12T19:30:00",
-      "datetime_end_iso": "",
-      "location": "Studio 188",
-      "link": "https://www.ipswichciviccentre.com.au/event/post-modern-cabaret-188/",
-      "cost": "See link",
-      "source": "Ipswich Civic Centre",
-      "description": "Modern Meets Vintage at Post Modern Cabaret, a spectacular evening of jazz, swing and reimagined contemporary favourites.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "jazz",
-        "swing",
-        "cabaret",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Grease",
       "datetime": "Sat 12 Sep – Sun 20 Sep",
@@ -50,6 +27,79 @@
       "social": false,
       "intellectual": false,
       "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Frozen Jr with Fusion Arts Inc",
+      "datetime": "Wed 23 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-23T11:00:00",
+      "datetime_end_iso": "",
+      "location": "Ipswich Civic Centre",
+      "link": "https://www.ipswichciviccentre.com.au/event/frozen-jr-with-fusion-arts-inc/",
+      "cost": "See link",
+      "source": "Ipswich Civic Centre",
+      "description": "Join Fusion Arts Inc and your favourite Frozen characters on a magical adventure through Arendelle!",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "musical",
+        "performance",
+        "kids",
+        "family"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Ipswich Esports Cup",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "Ipswich Civic Centre",
+      "link": "https://www.ipswichciviccentre.com.au/event/ipswich-esports-cup/",
+      "cost": "See link",
+      "source": "Ipswich Civic Centre",
+      "description": "A brand new, community-driven celebration of gaming, esports, creativity, and future opportunities for young people across Queensland",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "gaming",
+        "technology",
+        "youth",
+        "community",
+        "competition"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Rainbow Choir Tulmur Edition – MELT Festival 2026 – Join the Choir",
+      "datetime": "Sun 27 Sep – Sat 7 Nov",
+      "datetime_iso": "2026-09-27",
+      "datetime_end_iso": "2026-11-07",
+      "location": "Ipswich Civic Centre",
+      "link": "https://www.ipswichciviccentre.com.au/event/rainbow-choir-tulmur-edition/",
+      "cost": "See link",
+      "source": "Ipswich Civic Centre",
+      "description": "Join Rainbow Choir Tulmur Edition for MELT Festival 2026 a safe and inclusive place for all. No singing experience necessary.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "music",
+        "choir",
+        "singing",
+        "lgbtq",
+        "community",
+        "beginners"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
       "creative": true
     }
   ]

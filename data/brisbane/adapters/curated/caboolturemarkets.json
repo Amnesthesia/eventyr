@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "caboolturemarkets",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "2026 Caboolture Show",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
       "datetime_end_iso": "",
       "location": "Caboolture Markets",
       "link": "https://caboolturemarkets.com.au/caboolture-show/",
@@ -19,10 +19,11 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "show",
-        "rodeo",
-        "family",
-        "local"
+        "market",
+        "festival",
+        "sport",
+        "community",
+        "culture"
       ],
       "social": true,
       "intellectual": false,

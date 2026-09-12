@@ -3,7 +3,94 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "sandgatemuseum",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "Tea with History &#8211; September 2026",
+      "datetime": "Thu 24 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-24T10:00:00",
+      "datetime_end_iso": "2026-09-24T12:00:00",
+      "location": "Museum",
+      "link": "https://www.sandgatemuseum.com.au/event/tea-with-history/",
+      "cost": "$15.00",
+      "source": "Sandgate Museum",
+      "description": "Due to popular demand and in fairness to all, bookings will be taken no more than one month ahead, with payment at time of booking.",
+      "image": "https://www.sandgatemuseum.com.au/wp-content/uploads/2023/12/Unsplash-tea-with-history.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "history",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Bald Hills Cemetery Walk &#8211; Saturday 26 September",
+      "datetime": "Sat 26 Sep, 9:30 AM",
+      "datetime_iso": "2026-09-26T09:30:00",
+      "datetime_end_iso": "2026-09-26T12:00:00",
+      "location": "Bald Hills Cemetery (225 Barrett Street, Bracken Ridge)",
+      "link": "https://www.sandgatemuseum.com.au/event/guided-history-walk-bald-hills-cemetery-saturday-11-april/",
+      "cost": "$30.00",
+      "source": "Sandgate Museum",
+      "description": "PURCHASE TICKETS",
+      "image": "https://www.sandgatemuseum.com.au/wp-content/uploads/2025/04/Bald-Hills-Cemetery-01.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "history",
+        "tour",
+        "walking"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Tea with History &#8211; September 2026",
+      "datetime": "Thu 24 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-24T10:00:00",
+      "datetime_end_iso": "2026-09-24T12:00:00",
+      "location": "Museum",
+      "link": "https://www.sandgatemuseum.com.au/event/tea-with-history/",
+      "cost": "15.00",
+      "source": "Sandgate Museum",
+      "description": "&lt;p&gt;Due to popular demand and in fairness to all, bookings will be taken no more than one month ahead, with payment at time of booking.&lt;/p&gt;\\n",
+      "image": "https://www.sandgatemuseum.com.au/wp-content/uploads/2023/12/Unsplash-tea-with-history.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "history",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Bald Hills Cemetery Walk &#8211; Saturday 26 September",
+      "datetime": "Sat 26 Sep, 9:30 AM",
+      "datetime_iso": "2026-09-26T09:30:00",
+      "datetime_end_iso": "2026-09-26T12:00:00",
+      "location": "Bald Hills Cemetery (225 Barrett Street, Bracken Ridge), 4017",
+      "link": "https://www.sandgatemuseum.com.au/event/guided-history-walk-bald-hills-cemetery-saturday-11-april/",
+      "cost": "30.00",
+      "source": "Sandgate Museum",
+      "description": "&lt;p&gt;PURCHASE TICKETS&lt;/p&gt;\\n",
+      "image": "https://www.sandgatemuseum.com.au/wp-content/uploads/2025/04/Bald-Hills-Cemetery-01.jpg",
+      "category": "Community / Other",
+      "tags": [
+        "history",
+        "tour",
+        "walking"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

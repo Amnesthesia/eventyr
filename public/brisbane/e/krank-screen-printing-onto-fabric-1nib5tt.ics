@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:KRANK | Screen printing onto fabric
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nib5tt@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T100000
+DTEND;TZID=Australia/Brisbane:20260924T120000
+SUMMARY:KRANK | Screen printing onto fabric
+DESCRIPTION:Join us this school holidays with artist and printmaker Nancy B
+ rown to explore the art of screen printing. Learn how to create your own d
+ esign\, block it out on the screen\, and print onto fabric!
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/krank-screen-printing-onto-fabric/
+END:VEVENT
+END:VCALENDAR

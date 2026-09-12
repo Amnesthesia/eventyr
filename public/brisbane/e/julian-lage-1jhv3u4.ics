@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Julian Lage
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jhv3u4@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Julian Lage
+DESCRIPTION:A highly acclaimed jazz guitarist performing an intimate concer
+ t at the historic Old Museum.
+LOCATION:The Old Museum\, Bowen Hills
+URL:https://www.songkick.com/metro-areas/26778-australia-brisbane/september
+ -2026
+END:VEVENT
+END:VCALENDAR

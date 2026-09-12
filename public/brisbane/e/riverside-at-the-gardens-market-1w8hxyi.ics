@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Riverside at the Gardens Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1w8hxyi@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T080000
+DTEND;TZID=Australia/Brisbane:20260913T150000
+SUMMARY:Riverside at the Gardens Market
+DESCRIPTION:Nestled in the beautiful City Botanic Gardens\, our market is t
+ he perfect Sunday escape. Discover a vibrant mix of arts and crafts stalls
+ \, sip on freshly brewed coffee\, and treat yourself to delicious croissan
+ ts\, pancakes\, and a wide variety of international food delights. Spend t
+LOCATION:City Botanic Gardens\, Brisbane City
+URL:https://www.brisbaneunlocked.com.au/riverside-at-the-gardens-market-202
+ 6-09-12
+END:VEVENT
+END:VCALENDAR

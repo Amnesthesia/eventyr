@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Werewolf
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-wjvu2r@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Werewolf
+DESCRIPTION:Attention: Multiple new occurrences confirmed. Healthy citizens
+  report to safehouses by sunset.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/werewolf
+END:VEVENT
+END:VCALENDAR

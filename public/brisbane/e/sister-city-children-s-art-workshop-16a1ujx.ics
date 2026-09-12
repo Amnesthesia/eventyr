@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:‘Sister City’ Children’s Art Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16a1ujx@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T100000
+DTEND;TZID=Australia/Brisbane:20260926T120000
+SUMMARY:‘Sister City’ Children’s Art Workshop
+DESCRIPTION:Logan Art Gallery is pleased to host fun and creative community
+  art workshop inspired by the theme “Our Town Logan.”
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/sister-city-childrens-art-workshop/
+END:VEVENT
+END:VCALENDAR

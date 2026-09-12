@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BRIS: Games Night (ages 25-35)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-10s6odg@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T180000
+DTEND;TZID=Australia/Brisbane:20260917T200000
+SUMMARY:BRIS: Games Night (ages 25-35)
+DESCRIPTION:A curated social event designed for people in their late 20s an
+ d 30s to connect through board games and structured social interaction.
+LOCATION:Caxton St Brewing\, Brisbane
+URL:https://www.tickettailor.com
+END:VEVENT
+END:VCALENDAR

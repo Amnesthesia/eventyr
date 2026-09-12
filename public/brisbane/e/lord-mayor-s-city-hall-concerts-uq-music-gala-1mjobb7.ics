@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lord Mayor's City Hall Concerts: UQ Music Gala
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1mjobb7@dothings
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:Lord Mayor's City Hall Concerts: UQ Music Gala
+DESCRIPTION:Join us for a sensational gala hour\, where you’ll be dazzled
+  by some of The University of Queensland's finest emerging artists.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/lord-mayors-city-hall-program-uq
+ -music-gala
+END:VEVENT
+END:VCALENDAR

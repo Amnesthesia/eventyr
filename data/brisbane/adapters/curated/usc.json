@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "usc",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Thought Leadership Breakfast Series: Beyond the balance sheet: Driving future success and growth through accounting",
@@ -37,37 +37,15 @@
       "link": "https://usc.edu.au/community/events/the-future-of-sport",
       "cost": "See link",
       "source": "University of the Sunshine Coast",
-      "description": "Come along to the UniSC Arena for a night with key players, who work on and off the sporting field. Joining them are our expert teaching staff to discuss all things sport­ – a global and fast-moving industry – and where the future is heading, including right here in our regions.",
+      "description": "Come along for a night to hear from key players, who work on and off the sporting field. Joining them are our expert teaching staff to discuss all things sport­ – a global and fast-moving industry – and where the future is heading, including right here in our regions.",
       "image": "",
       "category": "Public Lecture",
       "tags": [
         "sport",
-        "career",
-        "industry"
+        "history",
+        "science"
       ],
       "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Headstart Information Evening – Online",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "",
-      "location": "University of the Sunshine Coast",
-      "link": "https://usc.edu.au/community/events/headstart-information-evening-online",
-      "cost": "See link",
-      "source": "University of the Sunshine Coast",
-      "description": "Our Headstart Information Evenings are for students in Years 10-12 and their parents to learn more about the program, including how to apply, what to expect and more.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "education",
-        "university",
-        "students"
-      ],
-      "social": false,
       "intellectual": true,
       "hands_on": false,
       "creative": false
@@ -134,6 +112,26 @@
         "industry"
       ],
       "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Healthy brains for life",
+      "datetime": "Wed 23 Sep",
+      "datetime_iso": "2026-09-23",
+      "datetime_end_iso": "",
+      "location": "University of the Sunshine Coast",
+      "link": "https://usc.edu.au/community/events/healthy-brains-for-life",
+      "cost": "See link",
+      "source": "University of the Sunshine Coast",
+      "description": "Research shows that certain lifestyle factors can reduce the risk of dementia, support cognitive function and modify brain ageing processes. Learn evidence-based strategies in this presentation to look after your brain health now and into the future. Hear from healthy ageing expert Associate Profesor Sophie Andrews.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "science"
+      ],
+      "social": false,
       "intellectual": true,
       "hands_on": false,
       "creative": false

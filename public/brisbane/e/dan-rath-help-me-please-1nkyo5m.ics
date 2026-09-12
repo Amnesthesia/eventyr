@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dan Rath | Help Me Please
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nkyo5m@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T190000
+DTEND;TZID=Australia/Brisbane:20260925T210000
+SUMMARY:Dan Rath | Help Me Please
+DESCRIPTION:Join the crew at Good Chat Comedy for an hour with Sydney's cul
+ t favourite comedian\, Dan Rath! A-List Entertainment presents You probabl
+ y already know ...
+LOCATION:Ad Astra Theatre
+URL:https://goodchatcomedy.com/shows/dan-rath-help-me-please/
+END:VEVENT
+END:VCALENDAR

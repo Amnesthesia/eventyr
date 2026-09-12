@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art 101 | Visible mending for teens
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-78sies@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T120000
+DTEND;TZID=Australia/Brisbane:20260925T140000
+SUMMARY:Art 101 | Visible mending for teens
+DESCRIPTION:In this brief introduction to the slow art of visible mending\,
+  we will explore simple hand stitching methods for mending small holes in 
+ clothing. You will learn the methods for hand-patching and simple darning 
+ or needleweaving. Bring in some clothing with wear-spots\, holes or stains
+  that won’t budge\, and with some time\, patience\, and a little bit of 
+ extra thread\, you can give old clothes a personal touch and extend its we
+ arability!
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/art-101-visible-mending-for-teens/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art & Eats: Beyond The Gallery – Art\, Community and Connect
+ ion
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-yzz6y8@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T100000
+DTEND;TZID=Australia/Brisbane:20260920T120000
+SUMMARY:Art & Eats: Beyond The Gallery – Art\, Community and Connection
+DESCRIPTION:A community-focused morning gathering exploring the intersectio
+ n of art\, local culture\, and social connection.
+LOCATION:RQAS Brisbane Gallery (Petrie Terrace Gallery)\, Petrie Terrace
+URL:https://rqas.com.au/
+END:VEVENT
+END:VCALENDAR

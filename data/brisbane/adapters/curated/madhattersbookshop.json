@@ -3,54 +3,7 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "madhattersbookshop",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": [
-    {
-      "title": "Junior Book Club (Grades 2, 3, 4) Term Fee",
-      "datetime": "Wed 9 Sep, 4:00 PM",
-      "datetime_iso": "2026-09-09T16:00:00",
-      "datetime_end_iso": "2026-09-09T17:00:00",
-      "location": "The Mad Hatters Bookshop",
-      "link": "https://madhattersbookshop.com.au/p/junior-book-club-grades-2-3-4",
-      "cost": "$30.00 AUD",
-      "source": "The Mad Hatters Bookshop",
-      "description": "Come along to our Junior Book Club & chat books! Every month, kids chat about books & participate in bookish activities, including craft, puzzles & games.\nThe dates for Term Three are:\n\nTues July 14th\nTues August 11th\nTues September 15th\n\nThis book club is suitable for independent readers in grades 2, 3, 4 with a reading age of 7-9. \n\nThe reading theme for term three is Landscapes: Land, Sky & Sea. The books are available to collect in-store now! You can view the list of books here. \n\nTerm fee is $30/term. It is a requirement to purchase the book club books from us. All JR book club members receive 15% off all reads in their age group.\n\nPlease get in touch if your child is interested in attending!",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "kids",
-        "books",
-        "reading",
-        "craft"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Spring Book Swap",
-      "datetime": "Sat 19 Sep, 10:00 AM",
-      "datetime_iso": "2026-09-19T10:00:00",
-      "datetime_end_iso": "2026-09-19T13:00:00",
-      "location": "The Mad Hatters Bookshop",
-      "link": "https://madhattersbookshop.com.au/p/spring-book-swap",
-      "cost": "$0.00 AUD",
-      "source": "The Mad Hatters Bookshop",
-      "description": "Time to spring clean your bookshelves and pop down to The Mad Hatters Bookshop for some new reads! Pop in between 10am-1pm on Saturday 19 September and bring a book to trade!\nThis Book Swap is a ONE-FOR-ONE trade with a limit of three books per person. \nRULES\n*No textbooks, reference materials, manuals or magazines*Max three books per person*Books in good condition accepted (no yellowed pages, speckling, stains or major tears) We reserve the right to reject books that are not clean or readable*No mass dumping of books",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "books",
-        "swap",
-        "community",
-        "free"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    }
-  ]
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": []
 }

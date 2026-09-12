@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Taylah Little
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-17ynn3v@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T190000
+DTEND;TZID=Australia/Brisbane:20260915T210000
+SUMMARY:Taylah Little
+DESCRIPTION:
+LOCATION:Doo-Bop Bar\, 101 Edward Street Brisbane City\, QLD\, 4000 Austral
+ ia
+URL:https://www.doo-bop.com.au/events/jtmyhlwnmb85235wm4ktr52my94j6b
+END:VEVENT
+END:VCALENDAR

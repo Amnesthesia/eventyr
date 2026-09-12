@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Fox Studios
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1wtgtjk@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Fox Studios
+DESCRIPTION:Fox Studios is our newest book club for 18+ readers\, run by a 
+ passionate local...
+LOCATION:Quick Brown Fox Bookshop
+URL:https://quickbrownfoxbookshop.com.au/fox-studios-anxious-people-monday-
+ 13-july-y-600-700/
+END:VEVENT
+END:VCALENDAR

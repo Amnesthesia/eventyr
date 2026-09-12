@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Green Velvet (USA)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1hbmbxv@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T190000
+DTEND;TZID=Australia/Brisbane:20260925T210000
+SUMMARY:Green Velvet (USA)
+DESCRIPTION:Green Velvet\, house music legend and the icon behind tracks su
+ ch as 'La La Land'\, 'Percolator' and 'Flash'\, brings his hypnotic tech-h
+ ouse to Brisbane's The Tivoli this September. Shaping dance floors since t
+ he early '90s\, he remains one of the genre's most electric performers. A 
+ true pioneer of house music. One night only.
+LOCATION:The Tivoli\, 52 Costin St
+URL:https://thetivoli.com.au/events/green-velvet
+END:VEVENT
+END:VCALENDAR

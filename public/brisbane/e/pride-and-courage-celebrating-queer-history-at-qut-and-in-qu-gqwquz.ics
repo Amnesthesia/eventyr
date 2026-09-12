@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pride and Courage: Celebrating queer history at QUT and in Que
+ ensland
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-gqwquz@dothings
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:Pride and Courage: Celebrating queer history at QUT and in Queensla
+ nd
+DESCRIPTION:The QUT Centre for Justice and the QUT Digital Media Research C
+ entre will host a special Pride Month event on September 24 at Kelvin Grov
+ e to celebrate the people\, stories and acts of courage that have shaped q
+ ueer history at QUT and across Queensland.
+LOCATION:E Block\, QUT Kelvin Grove
+URL:https://www.qut.edu.au/events?id=205852
+END:VEVENT
+END:VCALENDAR

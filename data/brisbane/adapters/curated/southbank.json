@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "southbank",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Bright Nights by ANZ",
@@ -28,6 +28,29 @@
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "ADVENTURE BEGINS AT SOUTH BANK THESE SCHOOL HOLIDAYS",
+      "datetime": "Mon 21 Sep – Sun 4 Oct",
+      "datetime_iso": "2026-09-21",
+      "datetime_end_iso": "2026-10-04",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/adventure-begins-at-south-bank-these-school-holidays",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Gather the family, grab your Adventure Trail map from the Visitor Information Centre and set off on a self-guided mission around the precinct.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "kids",
+        "family",
+        "outdoor",
+        "adventure"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
     },
     {
       "title": "The Choir of Man",
@@ -54,9 +77,9 @@
     },
     {
       "title": "Pasta Club at OTTO",
-      "datetime": "Wed 9 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "2026-09-13",
+      "datetime": "Wed 16 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-16",
+      "datetime_end_iso": "2026-09-20",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/pasta-club-at-otto",
       "cost": "See link",
@@ -65,36 +88,57 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
+        "food",
         "dining",
-        "italian",
-        "food"
+        "wine"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
-      "title": "DAYBREAKER",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
+      "title": "Bluey's Beach Day with Streets Ice Cream",
+      "datetime": "Sat 19 Sep, 10:00 AM – Sun 20 Sep",
+      "datetime_iso": "2026-09-19T10:00:00",
+      "datetime_end_iso": "2026-09-20",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/daybreaker",
+      "link": "https://www.visitsouthbank.com.au/events/blueys-beach-day-with-streets-ice-cream",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "DAYBREAKER is a global, alcohol-free morning dance and wellness event that combines yoga, fitness, and high-energy dance to start the day with joy and community.",
+      "description": "Keep the kiddos entertained these school holidays with a range of free fun, family-friendly activities across the South Bank precinct.",
       "image": "",
-      "category": "Workshop / Class",
+      "category": "Community / Other",
       "tags": [
-        "wellness",
-        "yoga",
-        "dance",
-        "morning"
+        "kids",
+        "family"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Breakfast Is Coming To Azure",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/breakfast-is-coming-to-azure",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Available Saturday and Sunday, 7.30am to 11am, the new menu features breakfast favourites, Mediterranean-inspired dishes, good coffee and optional mimosas overlooking the Brisbane River.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "coffee",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
       "creative": false
     },
     {
@@ -116,6 +160,28 @@
       ],
       "social": false,
       "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Sunrise Ceremony: Bikki Wantimaa",
+      "datetime": "Fri 25 Sep",
+      "datetime_iso": "2026-09-25",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/sunrise-ceremony-bikki-wantimaa",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Each Friday morning the Sunrise Ceremony: Bikki Wantimaa acknowledges and gives thanks to the lands on which the Festival takes place, honouring First Nations peoples who have witnessed the sunrise on these lands for thousands of years.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "culture",
+        "indigenous",
+        "history"
+      ],
+      "social": true,
+      "intellectual": true,
       "hands_on": false,
       "creative": false
     },
@@ -281,32 +347,9 @@
       "creative": true
     },
     {
-      "title": "Are You Lonesome Tonight: Brisbane Festival",
-      "datetime": "Wed 9 Sep – Sat 12 Sep",
-      "datetime_iso": "2026-09-09",
-      "datetime_end_iso": "2026-09-12",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/are-you-lonesome-tonight-brisbane-festival",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "‍ A unique celebration of country music and opera, featuring arias and songs by Puccini, Verdi, Slim Dusty, Troy Cassar-Daly, Dolly Parton and more.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "opera",
-        "country",
-        "music",
-        "fusion"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Brisbane's Biggest Steak Frites",
-      "datetime": "Wed 9 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-09T17:00:00",
+      "datetime": "Sun 13 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-13T17:00:00",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/brisbanes-biggest-steak-frites",
@@ -317,7 +360,6 @@
       "category": "Community / Other",
       "tags": [
         "food",
-        "steak",
         "dining"
       ],
       "social": true,
@@ -395,21 +437,23 @@
       "creative": true
     },
     {
-      "title": "Opera Queensland Young Artist Program Showcase: Viva La Voce",
-      "datetime": "Fri 11 Sep – Sat 12 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-09-12",
+      "title": "Betsy Balloon and the Very Great Terrible Flood",
+      "datetime": "Wed 23 Sep – Sat 26 Sep",
+      "datetime_iso": "2026-09-23",
+      "datetime_end_iso": "2026-09-26",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/opera-queensland-young-artist-program-showcase-viva-la-voce",
+      "link": "https://www.visitsouthbank.com.au/events/betsy-balloon-and-the-very-great-terrible-flood",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "",
+      "description": "A rambunctious modern fable. Welcome to the island of Helium where Betsy lives with her balloon-factory-owning family. They're cheerful, a bit money-mad and life is on the up. But when the world turns against balloons, their world pops and Betsy must start a new life in a faraway city with her eccentric uncle, Hercules Snark, an inventor of mostly half-finished things. Unfortunately, Snark has problems of his own. In his city, it never stops raining. The streets are flooding. And things, quite literally, are starting to sink. Betsy Balloon is a rambunctious modern fable presented with original music and illustration based on a story by Bill Manhire. Betsy Balloon and the Very Great Terrible Flood is part of Brisbane Festival.",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
-        "opera",
-        "classical",
-        "performance"
+        "theatre",
+        "performance",
+        "literature",
+        "kids",
+        "family"
       ],
       "social": false,
       "intellectual": false,
@@ -417,25 +461,24 @@
       "creative": true
     },
     {
-      "title": "RocKwiz Rocks Brisbane",
-      "datetime": "Sat 12 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-12T19:00:00",
-      "datetime_end_iso": "",
+      "title": "ESCAPE",
+      "datetime": "Wed 23 Sep – Sun 27 Sep",
+      "datetime_iso": "2026-09-23",
+      "datetime_end_iso": "2026-09-27",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/rockwiz-rocks-brisbane",
+      "link": "https://www.visitsouthbank.com.au/events/escape",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Get ready Brissy, RocKwiz are coming back to celebrate. Proudly part of the 2026 Brisbane Festival, RocKwiz presents a tailor made Brisbane show. From Cloudland and Festival Hall to the Fortitude Music Hall, from the Bee Gees to the 'Finger, The Saints to Savage Garden, The Grates to The Veronicas. RocKwiz will celebrate them all. Julia Zemiro, Brian Nankervis, the RocKwiz Orkestra, special guests, and punter contestants from the crowd will spin through trivia rounds, smash breakout musical interludes all in a live mixtape of fun and friendly competition. From the depths of \"Pig City\" to that \"Striped Sunlight Sound\" of Robert Forster and The Go-Betweens … RocKwiz Rocks Brisbane!",
+      "description": "A boundary-breaking fusion of human movement and physical structures. DIAVOLO | Architecture in Motion® productions explore innovation and celebrate the complexity of the human condition with an undefinable blend of dance, stunt work, acrobatics, circus arts, and pedestrian movement. The work is athletic, captivating, and visceral. This is a show that will leave you breathless. Visceral and high-octane, ESCAPE blends complex, moving architectural structures with multi-talented performers to create a blood-pumping and emotional multimedia experience. Along with DIAVOLO's signature athletic movement aesthetic, ESCAPE features a collection of the company's most famous architectural structures. Each evokes a story unique to its design, echoing themes of exploration, danger, fear, survival, resilience, and connection, all brought to life through a soundtrack spanning decades and genres, from pop and EDM to rock.",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
-        "trivia",
-        "music",
-        "competition",
-        "live"
+        "dance",
+        "circus",
+        "performance"
       ],
-      "social": true,
-      "intellectual": true,
+      "social": false,
+      "intellectual": false,
       "hands_on": false,
       "creative": true
     },
@@ -478,6 +521,29 @@
         "billyjoel",
         "music",
         "tribute"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Eclipse: Pink Floyd Orchestrated - Brisbane",
+      "datetime": "Fri 25 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-25T19:30:00",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/eclipse-pink-floyd-orchestrated---brisbane",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "concert",
+        "orchestra"
       ],
       "social": false,
       "intellectual": false,
@@ -529,6 +595,53 @@
       "creative": true
     },
     {
+      "title": "Maestro 7: Symphonic Dances",
+      "datetime": "Fri 25 Sep, 7:30 PM – Sat 26 Sep",
+      "datetime_iso": "2026-09-25T19:30:00",
+      "datetime_end_iso": "2026-09-26",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/maestro-7-symphonic-dances",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "concert",
+        "orchestra",
+        "classical"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Agnes Obel",
+      "datetime": "Thu 24 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-24T20:00:00",
+      "datetime_end_iso": "",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/agnes-obel",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "concert",
+        "pop"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "$30 La Taco Vida At Poca Madre",
       "datetime": "Mon 14 Sep",
       "datetime_iso": "2026-09-14",
@@ -552,9 +665,9 @@
     },
     {
       "title": "Bottomless Weekends Banquet Experience At Ma Pa Me",
-      "datetime": "Sat 12 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "2026-09-13",
+      "datetime": "Sat 19 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-09-20",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/bottomless-weekends-banquet-experience-at-ma-pa-me",
       "cost": "See link",
@@ -563,20 +676,20 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
+        "food",
         "dining",
-        "banquet",
-        "food"
+        "drinks"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
       "title": "$30 Steak Salad At Tipplers Tap",
-      "datetime": "Thu 10 Sep – Fri 11 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "2026-09-11",
+      "datetime": "Thu 17 Sep – Fri 18 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "2026-09-18",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/30-steak-salad-at-tipplers-tap",
       "cost": "See link",
@@ -585,20 +698,19 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "lunch",
-        "steak",
+        "food",
         "dining"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
       "title": "$38 Steak And Taters At Tippler's Tap",
-      "datetime": "Thu 10 Sep – Fri 11 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "2026-09-11",
+      "datetime": "Thu 17 Sep – Fri 18 Sep",
+      "datetime_iso": "2026-09-17",
+      "datetime_end_iso": "2026-09-18",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/38-steak-and-taters-at-tipplers-tap",
       "cost": "See link",
@@ -607,11 +719,10 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "lunch",
-        "steak",
+        "food",
         "dining"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
@@ -706,24 +817,24 @@
       "creative": true
     },
     {
-      "title": "DAYBREAKER",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
+      "title": "ADVENTURE BEGINS AT SOUTH BANK THESE SCHOOL HOLIDAYS",
+      "datetime": "Mon 21 Sep – Sun 4 Oct",
+      "datetime_iso": "2026-09-21",
+      "datetime_end_iso": "2026-10-04",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/daybreaker",
+      "link": "https://www.visitsouthbank.com.au/events/adventure-begins-at-south-bank-these-school-holidays",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "DAYBREAKER is a global, alcohol-free morning dance and wellness event that combines yoga, fitness, and high-energy dance to start the day with joy and community.",
+      "description": "Gather the family, grab your Adventure Trail map from the Visitor Information Centre and set off on a self-guided mission around the precinct.",
       "image": "",
-      "category": "Workshop / Class",
+      "category": "Community / Other",
       "tags": [
-        "wellness",
-        "yoga",
-        "dance",
-        "morning"
+        "kids",
+        "family",
+        "outdoor",
+        "adventure"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": false

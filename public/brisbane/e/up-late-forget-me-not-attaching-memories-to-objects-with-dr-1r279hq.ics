@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Up late | Forget me not: attaching memories to objects with Dr
+  Hilda Maclean
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1r279hq@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T173000
+DTEND;TZID=Australia/Brisbane:20260917T193000
+SUMMARY:Up late | Forget me not: attaching memories to objects with Dr Hild
+ a Maclean
+DESCRIPTION:How do you capture a memory of a person\, place or event? What 
+ do you decide to keep and for how long? When is it time to let it go? Will
+  it become a gift or garbage?
+LOCATION:Art Gallery
+URL:https://www.loganarts.com.au/event/up-late-lecture-series-forget-me-not
+ -attaching-memories-to-objects/
+END:VEVENT
+END:VCALENDAR

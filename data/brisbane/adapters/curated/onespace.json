@@ -3,52 +3,7 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "onespace",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": [
-    {
-      "title": "MAIN GALLERY | Wumera Nangamay: Muru Walan",
-      "datetime": "Fri 11 Sep – Sat 17 Oct",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-10-17",
-      "location": "Onespace Gallery",
-      "link": "https://onespace.com.au/exhibition/main-gallery-wumera-nangamay-muru-walan/",
-      "cost": "See link",
-      "source": "Onespace Gallery",
-      "description": "Onespace proudly presents KONSTANTINA’S exhibition, Wumera Nangamay: Muru Walan, launching this September.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "art",
-        "exhibition",
-        "contemporary"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "LOUNGE GALLERY | The Space Here",
-      "datetime": "Fri 11 Sep – Sat 17 Oct",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-10-17",
-      "location": "Onespace Gallery",
-      "link": "https://onespace.com.au/exhibition/lounge-gallery-the-space-here/",
-      "cost": "See link",
-      "source": "Onespace Gallery",
-      "description": "Exhibition dates: 11 September – 17 October 2026 Gallery Walkthrough/Opening Event: 12 September 2026, 2 – 3pm | Refreshments: 3 – 4:30pm RSVP HERE",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "art",
-        "exhibition",
-        "opening"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    }
-  ]
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": []
 }

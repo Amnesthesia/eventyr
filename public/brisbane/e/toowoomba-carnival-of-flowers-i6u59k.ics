@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Toowoomba Carnival of Flowers
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-i6u59k@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20261006
+SUMMARY:Toowoomba Carnival of Flowers
+DESCRIPTION:Toowoomba Carnival of Flowers returns this spring with blooms\,
+  food and family fun.
+LOCATION:Must Do Brisbane
+URL:https://www.mustdobrisbane.com/whats-on/toowoomba-carnival-flowers-toow
+ oomba
+END:VEVENT
+END:VCALENDAR

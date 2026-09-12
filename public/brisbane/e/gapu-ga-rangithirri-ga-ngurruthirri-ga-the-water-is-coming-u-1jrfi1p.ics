@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:GAPU GA RANGITHIRRI GA NGURRUTHIRRI GA the water is coming up\
+ , the water is going away
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jrfi1p@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20261022
+SUMMARY:GAPU GA RANGITHIRRI GA NGURRUTHIRRI GA the water is coming up\, the
+  water is going away
+DESCRIPTION:the water is coming up\, the water is going away
+LOCATION:Woolloongabba Art Gallery
+URL:https://wag.com.au/calendar/2017/gapu-ga-rangithirri-ga-ngurruthirri-ga
+ /
+END:VEVENT
+END:VCALENDAR

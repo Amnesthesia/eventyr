@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mirandi Riwoe in conversation at Indooroopilly Library
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-vlcyxp@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T180000
+DTEND;TZID=Australia/Brisbane:20260917T200000
+SUMMARY:Mirandi Riwoe in conversation at Indooroopilly Library
+DESCRIPTION:From the award-winning\, bestselling author Mirandi Riwoe\, com
+ es the story of an Irish-Chinese family over four generations in Australia
+ .
+LOCATION:Indooroopilly Library\, Indooroopilly Shopping Centre Level 4\, 32
+ 2 Moggill Road Indooroopilly\, QLD 4068
+URL:https://www.uqp.com.au/events/mirandi-riwoe-in-conversation-at-indooroo
+ pilly-library-a-short-history-of-longans
+END:VEVENT
+END:VCALENDAR

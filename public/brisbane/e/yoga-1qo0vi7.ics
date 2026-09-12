@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1qo0vi7@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T150000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:Yoga
+DESCRIPTION:Focus on a range of movements to relax the mind and body. Stret
+ ching\, breathing\, strength and balance exercises are included by incorpo
+ rating mat work into the session.
+LOCATION:New Farm Park\, New Farm
+URL:https://www.brisbaneunlocked.com.au/yoga-2026-09-13
+END:VEVENT
+END:VCALENDAR

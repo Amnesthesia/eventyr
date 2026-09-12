@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mt Cootha Citriodora/Spotted Gum Hike - challenging (~ 6km)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-94eurf@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T063000
+DTEND;TZID=Australia/Brisbane:20260920T093000
+SUMMARY:Mt Cootha Citriodora/Spotted Gum Hike - challenging (~ 6km)
+DESCRIPTION:Kickstart your Sunday 🌞 with a heart-pumping hike up the Cit
+ riodora Trail/Spotted Gum. This is famous for its steep\, lemon-scented eu
+ calyptus forest and a
+LOCATION:Mount Cootha\, Mount Cootha\, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-active-socials/events/316496375/
+END:VEVENT
+END:VCALENDAR

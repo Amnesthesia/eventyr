@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Neel Kolhatkar | Black Belt Comedy
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12gncvw@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T173000
+DTEND;TZID=Australia/Brisbane:20260926T193000
+SUMMARY:Neel Kolhatkar | Black Belt Comedy
+DESCRIPTION:Join the crew at Good Chat Comedy Club for the latest hour from
+  Aussie comic and viral sensation\, Neel Kolhatkar! Australian Comedian NE
+ EL KOLHATKAR is brin ...
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/neel-kolhatkar-black-belt-comedy/
+END:VEVENT
+END:VCALENDAR

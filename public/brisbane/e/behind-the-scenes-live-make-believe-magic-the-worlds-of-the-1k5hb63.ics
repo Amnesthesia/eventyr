@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Behind the Scenes\, Live Make\, Believe\, Magic: The Worlds of
+  The Jim Henson Company
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1k5hb63@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T080000
+DTEND;TZID=Australia/Brisbane:20260914T090000
+SUMMARY:Behind the Scenes\, Live Make\, Believe\, Magic: The Worlds of The 
+ Jim Henson Company
+DESCRIPTION:An insider look at the artistry and technical innovation behind
+  the Jim Henson Company’s iconic puppetry and creature design.
+LOCATION:Gallery of Modern Art (GOMA)
+URL:https://www.qagoma.qld.gov.au
+END:VEVENT
+END:VCALENDAR

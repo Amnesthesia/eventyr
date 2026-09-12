@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Reflective Motives: Online Reading Group
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12w0ugs@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T100000
+DTEND;TZID=Australia/Brisbane:20261106T120000
+SUMMARY:Reflective Motives: Online Reading Group
+DESCRIPTION:Join us to discuss key texts by Elder\, educator and philosophe
+ r Dr Aunty Mary Graham\, who will be presenting the keynote conversation w
+ ith Tristen Harwood at Reflective Motives in November.
+LOCATION:UQ Art Museum\, William St
+URL:https://art-museum.uq.edu.au/event/session/4183
+END:VEVENT
+END:VCALENDAR

@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "sunpac",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Faulty Towers: The Original Dining Experience",
@@ -28,6 +28,28 @@
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "Australian Natural Bodybuilders",
+      "datetime": "Sat 26 Sep, 9:30 AM",
+      "datetime_iso": "2026-09-26T09:30:00",
+      "datetime_end_iso": "",
+      "location": "SunPAC",
+      "link": "https://www.sunpac.net.au/australian-natural-bodybuilders/",
+      "cost": "$ 59",
+      "source": "SunPAC",
+      "description": "ANB – QLD ANB QLD State Pro Qualifier 2026 ANB Queensland is back for Season B 2026! Join us as ANB Australia kicks off Season B 2026 in Queensland for an incredible day of natural bodybuilding, fitness and physique competition. Watch athletes from across Queensland and beyond step onto the ANB stage after months of […]",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "sport",
+        "fitness",
+        "competition"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     }
   ]
 }

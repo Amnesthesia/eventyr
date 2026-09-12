@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Thursday Night Live @ The Sit Down Comedy Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-6ufbyr@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T200000
+DTEND;TZID=Australia/Brisbane:20260917T220000
+SUMMARY:Thursday Night Live @ The Sit Down Comedy Club
+DESCRIPTION:
+LOCATION:The Sit Down Comedy Club
+URL:https://www.standup.com.au/event/thursday-night-live-the-sit-down-comed
+ y-club-2/
+END:VEVENT
+END:VCALENDAR

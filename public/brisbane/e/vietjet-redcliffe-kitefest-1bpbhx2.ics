@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:VietJet Redcliffe KiteFest
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1bpbhx2@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+SUMMARY:VietJet Redcliffe KiteFest
+DESCRIPTION:A spectacular weekend of giant kites\, colourful displays and f
+ amily-friendly fun is coming to Clontarf for this year's VietJet Redcliffe
+  KiteFest
+LOCATION:Clontarf
+URL:https://www.mustdobrisbane.com/whats-on/vietjet-redcliffe-kitefest-clon
+ tarf
+END:VEVENT
+END:VCALENDAR

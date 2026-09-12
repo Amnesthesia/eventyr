@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hinterland Heritage Wine Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15d1tok@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20261228
+SUMMARY:Hinterland Heritage Wine Tour
+DESCRIPTION:Hinterland Heritage Wine Tour in Brisbane. Get your tickets on 
+ Fever now!
+LOCATION:11 Wandoo St
+URL:https://feverup.com/m/177901
+END:VEVENT
+END:VCALENDAR

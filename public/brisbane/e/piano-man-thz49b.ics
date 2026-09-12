@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Piano Man
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-thz49b@dothings
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260927
+SUMMARY:Piano Man
+DESCRIPTION:Australia's favourite piano man\, Trevor Jones\, brings his sig
+ nature late night piano bar party to the Brisbane Festival.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/piano-man
+END:VEVENT
+END:VCALENDAR

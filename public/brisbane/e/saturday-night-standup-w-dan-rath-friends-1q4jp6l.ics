@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Saturday Night Standup w/ Dan Rath & Friends!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1q4jp6l@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T190000
+DTEND;TZID=Australia/Brisbane:20260926T210000
+SUMMARY:Saturday Night Standup w/ Dan Rath & Friends!
+DESCRIPTION:
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/saturday-night-standup-w-dan-rath-frie
+ nds/
+END:VEVENT
+END:VCALENDAR

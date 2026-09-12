@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lord Mayor’s Photographic Awards 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hl8d5n@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T100000
+DTEND;TZID=Australia/Brisbane:20260913T170000
+SUMMARY:Lord Mayor’s Photographic Awards 2026
+DESCRIPTION:Brisbane through the lens of local photographers. The winners e
+ xhibition of the 2026 Lord Mayor’s Photographic Awards brings together s
+ triking photographic works that capture the city’s spirit - from familia
+ r streets and riverside scenes to the fleeting moments\, routines and char
+LOCATION:Museum of Brisbane\, Brisbane City
+URL:https://www.brisbaneunlocked.com.au/lord-mayors-photographic-awards-202
+ 6-2026-09-13
+END:VEVENT
+END:VCALENDAR

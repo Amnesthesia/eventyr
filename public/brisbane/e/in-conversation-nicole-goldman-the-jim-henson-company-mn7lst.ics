@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:In Conversation: Nicole Goldman\, The Jim Henson Company
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mn7lst@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T143000
+DTEND;TZID=Australia/Brisbane:20260914T153000
+SUMMARY:In Conversation: Nicole Goldman\, The Jim Henson Company
+DESCRIPTION:Nicole Goldman discusses the creative legacy\, design philosoph
+ y\, and storytelling techniques used by the Jim Henson Company.
+LOCATION:Gallery of Modern Art (GOMA)
+URL:https://www.qagoma.qld.gov.au
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Sunday Setup | A Singles Mixer! (Under 50s)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1qapx69@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T150000
+DTEND;TZID=Australia/Brisbane:20260927T170000
+SUMMARY:The Sunday Setup | A Singles Mixer! (Under 50s)
+DESCRIPTION:Brisbane's most interactive singles mixer returns\, with comedi
+ an Shad Wicka at the helm. MEET LIKE-MINDED PEOPLE.MAKE NEW FRIENDS.MEET T
+ HAT SPECIAL SOM ...
+LOCATION:Caxton Street Brewing Company – Upstairs: ‘The Tasting Room’
+URL:https://goodchatcomedy.com/shows/the-sunday-setup-a-singles-mixer-under
+ -50s/
+END:VEVENT
+END:VCALENDAR

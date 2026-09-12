@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "lifedrawingsessions",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "The Junk Bar",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
       "datetime_end_iso": "",
       "location": "The Junk Bar, New Farm, Brisbane",
       "link": "https://www.lifedrawingsessions.com.au/the-junk-bar",
@@ -21,7 +21,8 @@
       "tags": [
         "art",
         "drawing",
-        "creative"
+        "performance",
+        "craft"
       ],
       "social": false,
       "intellectual": false,
@@ -30,8 +31,8 @@
     },
     {
       "title": "Miami Marketta",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
       "datetime_end_iso": "",
       "location": "Miami Marketta, Gold Coast",
       "link": "https://www.lifedrawingsessions.com.au/miami-marketta",
@@ -39,21 +40,22 @@
       "source": "Life Drawing Sessions",
       "description": "Our newest venture on the Gold Coast! Join us at the infamous Miami Marketta on the 1st & 3rd Wednesday of the month.",
       "image": "",
-      "category": "Workshop / Class",
+      "category": "Social / Meetup",
       "tags": [
-        "art",
-        "drawing",
-        "creative"
+        "market",
+        "food",
+        "drinks",
+        "community"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
-      "hands_on": true,
-      "creative": true
+      "hands_on": false,
+      "creative": false
     },
     {
       "title": "THE JUNK BAR",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
       "datetime_end_iso": "",
       "location": "The Junk Bar, New Farm, Brisbane",
       "link": "https://www.lifedrawingsessions.com.au/the-junk-bar",
@@ -65,7 +67,8 @@
       "tags": [
         "art",
         "drawing",
-        "creative"
+        "performance",
+        "craft"
       ],
       "social": false,
       "intellectual": false,
@@ -74,8 +77,8 @@
     },
     {
       "title": "MIAMI MARKETTA",
-      "datetime": "Wed 9 Sep",
-      "datetime_iso": "2026-09-09",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
       "datetime_end_iso": "",
       "location": "Miami Marketta, Gold Coast",
       "link": "https://lifedrawingsessions.com.au/miami-marketta",
@@ -83,16 +86,17 @@
       "source": "Life Drawing Sessions",
       "description": "Our newest venture on the Gold Coast! Join us at the infamous Miami Marketta on the 1st & 3rd Wednesday of the month.",
       "image": "",
-      "category": "Workshop / Class",
+      "category": "Social / Meetup",
       "tags": [
-        "art",
-        "drawing",
-        "creative"
+        "market",
+        "food",
+        "drinks",
+        "community"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
-      "hands_on": true,
-      "creative": true
+      "hands_on": false,
+      "creative": false
     }
   ]
 }

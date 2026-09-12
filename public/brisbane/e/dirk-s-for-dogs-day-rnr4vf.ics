@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dirk’s for Dogs Day
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-rnr4vf@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Dirk’s for Dogs Day
+DESCRIPTION:Dirk’s in Woolloongabba is putting its best paw forward with 
+ its inaugural Dirk’s for Dogs Day
+LOCATION:Woolloongabba
+URL:https://www.mustdobrisbane.com/whats-on/dirks-dogs-day-woolloongabba
+END:VEVENT
+END:VCALENDAR

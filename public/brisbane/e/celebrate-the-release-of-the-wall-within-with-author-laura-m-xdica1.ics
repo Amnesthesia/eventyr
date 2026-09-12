@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Celebrate the release of The Wall Within with author Laura Mor
+ ris
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xdica1@dothings
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:Celebrate the release of The Wall Within with author Laura Morris
+DESCRIPTION:The Wall Within - Book Launch with Laura Morris
+LOCATION:Where The Wild Things Are Bookshop\, West End\, QLD 4101
+URL:https://wherethewildthingsare.com.au/pages/14600-TheWallWithin-BookLaun
+ chwithLauraMorris
+END:VEVENT
+END:VCALENDAR

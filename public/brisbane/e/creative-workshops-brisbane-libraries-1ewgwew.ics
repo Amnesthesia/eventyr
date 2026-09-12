@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Creative Workshops – Brisbane Libraries
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ewgwew@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T100000
+DTEND;TZID=Australia/Brisbane:20260918T170000
+SUMMARY:Creative Workshops – Brisbane Libraries
+DESCRIPTION:A rotating schedule of community-based workshops covering creat
+ ive skills\, digital literacy\, and writing.
+LOCATION:Brisbane City Council Libraries\, Various
+URL:https://www.trumba.com/events-calendar/brisbane/brisbane-libraries/libr
+ ary/events/acitivites/classes/workshops/babies-books-and-rhymes/children-s
+ -storytime/computer-classes/internet-classes/live
+END:VEVENT
+END:VCALENDAR

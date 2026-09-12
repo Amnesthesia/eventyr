@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Botanic By Night: NightGlow
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1k9gegs@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20261011
+SUMMARY:Botanic By Night: NightGlow
+DESCRIPTION:A spectacular after-dark experience is set to transform Brisban
+ e's Botanic Gardens into an illuminated wonderland of native wildlife!
+LOCATION:Brisbane Botanic Gardens Mt Coot-tha
+URL:https://www.mustdobrisbane.com/whats-on/botanic-night-nightglow-brisban
+ e-botanic-gardens-mt-coot-tha
+END:VEVENT
+END:VCALENDAR

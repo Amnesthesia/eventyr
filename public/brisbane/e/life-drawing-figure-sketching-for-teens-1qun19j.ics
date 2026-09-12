@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Life drawing | Figure sketching for teens
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1qun19j@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T133000
+DTEND;TZID=Australia/Brisbane:20260923T153000
+SUMMARY:Life drawing | Figure sketching for teens
+DESCRIPTION:Looking for a creative way to spend your school holidays? Join 
+ us for a special teens only life drawing workshop and discover the art of 
+ drawing from a live model in a fun\, relaxed\, and supportive environment.
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/life-drawing-figure-sketching-for-te
+ ens/
+END:VEVENT
+END:VCALENDAR

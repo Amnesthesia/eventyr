@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:PRECIOUS
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1bhv4a0@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T060600
+DTEND;TZID=Australia/Brisbane:20260913T080600
+SUMMARY:PRECIOUS
+DESCRIPTION:Prepare to be amazed with Museum of Brisbane's exhibition\, Pre
+ cious\, showcasing the most awe-inspiring collections across Brisbane with
+  more than 3\,000 items from around 30 remarkable collections and collecto
+ rs. From international dolls to Queensland Rugby League memorabilia\, mode
+ l ships to ornamental eggs\, immerse yourself in the incredible stories of
+  some of the prolific collectors of Brisbane\, and get to know what makes 
+ a keepsake and collectible truly Precious .
+LOCATION:Visit Brisbane (Brisbane Economic Development Agency)
+URL:https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/
+ precious-4cd2
+END:VEVENT
+END:VCALENDAR

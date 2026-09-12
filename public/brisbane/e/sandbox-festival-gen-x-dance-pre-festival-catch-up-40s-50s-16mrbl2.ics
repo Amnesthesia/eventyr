@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sandbox Festival - Gen X Dance & Pre-Festival Catch-Up (40s & 
+ 50s)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16mrbl2@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T160000
+DTEND;TZID=Australia/Brisbane:20260918T210000
+SUMMARY:Sandbox Festival - Gen X Dance & Pre-Festival Catch-Up (40s & 50s)
+DESCRIPTION:**Ready for a massive day of electronic music?** Join us for Sa
+ ndbox Music Festival at Superordinary in Hamilton! We're gathering a frien
+ dly group of Gen X
+LOCATION:Superordinary\, 175 MacArthur Ave\, Hamilton QLD 4007\, Brisbane\,
+  Brisbane
+URL:https://www.meetup.com/brisbanes-edm-day-clubbing-festival-crew-40s-50s
+ /events/315984390/
+END:VEVENT
+END:VCALENDAR

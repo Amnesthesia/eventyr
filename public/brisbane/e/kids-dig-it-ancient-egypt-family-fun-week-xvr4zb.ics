@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Kids Dig It! Ancient Egypt Family Fun Week
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xvr4zb@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T093000
+DTEND;TZID=Australia/Brisbane:20260923T150000
+SUMMARY:Kids Dig It! Ancient Egypt Family Fun Week
+DESCRIPTION:Kids Dig It! will be back for the September school holidays wit
+ h Ancient Egypt Family Fun. Join us at the Abbey Museum for three days of 
+ hands on\, educational fun for the whole family. Kids can: Practise archer
+ y Uncover Egyptian artefacts in the Archaeological dig Create Egyptian-ins
+ pired artworks Learn about the process of Mummification in […]
+LOCATION:Abbey Museum of Art and Archaeology\, 31 The Abbey Place\, Caboolt
+ ure\, QLD\, 4510
+URL:https://abbeymuseum.com.au/event/kids-dig-it-ancient-egypt-family-fun-w
+ eek/
+END:VEVENT
+END:VCALENDAR

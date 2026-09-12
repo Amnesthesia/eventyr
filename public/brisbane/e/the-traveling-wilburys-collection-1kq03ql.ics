@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Traveling Wilburys Collection
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1kq03ql@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:The Traveling Wilburys Collection
+DESCRIPTION:Featuring all the hits of the Traveling Wilburys PLUS the class
+ ics from each individual artist.
+LOCATION:Redcliffe Entertainment Centre
+URL:https://www.redcliffeentertainmentcentre.com.au/Events/Traveling-Wilbur
+ ys
+END:VEVENT
+END:VCALENDAR

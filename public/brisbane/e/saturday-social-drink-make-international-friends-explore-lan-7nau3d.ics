@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Saturday Social: Drink & Make International Friends - Explore 
+ Language & Culture
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7nau3d@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T180000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Saturday Social: Drink & Make International Friends - Explore Langu
+ age & Culture
+DESCRIPTION:*Date & Time:* **Saturday\, 19 September 2026** 6:00 PM - 9:00 
+ PM *Location:* **Criterion\, Brisbane City** Come join us for a fun night 
+ out\, where you can meet people from
+LOCATION:Criterion Tavern\, 239 George St\, Brisbane City QLD 4000 · Brisb
+ ane\, Brisbane\, Brisbane
+URL:https://www.meetup.com/saturday-drinks-international-friends/events/316
+ 250302/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Anisa Nandaula | From The Notebook\, Vol 5.
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mqxo28@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T183000
+DTEND;TZID=Australia/Brisbane:20260921T203000
+SUMMARY:Anisa Nandaula | From The Notebook\, Vol 5.
+DESCRIPTION:Join the crew at Good Chat Comedy Club for a work in progress h
+ our with rising star of Australian comedy\, Anisa Nandaula! AS SEEN ON TAL
+ KIN' 'BOUT ...
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/anisa-nandaula-from-the-notebook-vol-5
+ /
+END:VEVENT
+END:VCALENDAR

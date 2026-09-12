@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Walk at Kangaroo Point - EVERY THURSDAY.
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-80cq5@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T173000
+DTEND;TZID=Australia/Brisbane:20260917T193000
+SUMMARY:Walk at Kangaroo Point - EVERY THURSDAY.
+DESCRIPTION:Joint us for a walk starting at the Holman Street Ferry termina
+ l every Thursday for a walk around Kangaroo Point. This walk is with anoth
+ er meet up group - Brisbane Social
+LOCATION:Holman Street Ferry Terminal\, Captain Burke Park\, Kangaroo Point
+ \, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-riverside-walkers-and-social-activities
+ -group/events/316309349/
+END:VEVENT
+END:VCALENDAR

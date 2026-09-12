@@ -3,31 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "riverbendbooks",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "YESTERYEAR BOOKCLUB",
-      "datetime": "Sun 13 Sep, 2:00 PM",
-      "datetime_iso": "2026-09-13T14:00:00",
-      "datetime_end_iso": "",
-      "location": "Riverbend Books, Bulimba",
-      "link": "https://riverbendbooks.com.au/events/yesteryear-bookclub-2pm-sunday-6th-septmeber",
-      "cost": "$10.00",
-      "source": "Riverbend Books, Bulimba",
-      "description": "A special supplementary edition to the Riverbend Readers bookclub, in which we will discuss Yesteryear by Caro Claire Burke.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "books",
-        "literature",
-        "discussion"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
     {
       "title": "BEAT THE BOOKSELLER TRIVIA",
       "datetime": "Mon 14 Sep, 6:30 PM",
@@ -35,7 +13,7 @@
       "datetime_end_iso": "",
       "location": "Riverbend Books",
       "link": "https://riverbendbooks.com.au/events/beat-the-bookseller-trivia-monday-september-14th-630pm-at-riverbend-books",
-      "cost": "from $100.00",
+      "cost": "$100.00",
       "source": "Riverbend Books, Bulimba",
       "description": "Beat The Bookseller is back for our third session of 2026! Aimon from Isolation Trivia will be back with his brilliant set of questions to puzzle us all. This time, we will be donating proceeds to Sing-Sing-Sing - a choir for people living with dementia and for people who care for someone w",
       "image": "",
@@ -49,6 +27,30 @@
       "intellectual": true,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "LOUISE SHELLSHEAR: JACK THE HATTER",
+      "datetime": "Wed 23 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-23T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Riverbend Books",
+      "link": "https://riverbendbooks.com.au/events/louise-shellshear-jack-the-hatter-wednesday-23rd-september-630pm-at-riverbend-books",
+      "cost": "$0.00",
+      "source": "Riverbend Books, Bulimba",
+      "description": "Ian Matheson will be in conversation with Louise Shellshear for her book Jack the Hatter. ABOUT THE BOOK Where’s the best place to hide, for a young man on the run from the law, in a brand-new country, with a brand-new name and identity? In plain sight. Maybe the best strategy for a man on the",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "literature",
+        "books",
+        "writing",
+        "storytelling",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }

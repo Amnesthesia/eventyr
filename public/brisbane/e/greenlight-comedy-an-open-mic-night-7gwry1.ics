@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Greenlight Comedy [An Open Mic Night]
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7gwry1@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T190000
+DTEND;TZID=Australia/Brisbane:20260922T210000
+SUMMARY:Greenlight Comedy [An Open Mic Night]
+DESCRIPTION:Join the crew at Good Chat Comedy Club for Greenlight Comedy! A
+  monthly open mic concept show from Henry Sheerman! Greenlight Comedy is t
+ he open mic where y ...
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/greenlight-comedy-an-open-mic-night-7/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Great Ocean Speaker Series | Indigenous Perspectives on Curati
+ on with Kimberley Moulton
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-11blu4w@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T123000
+DTEND;TZID=Australia/Brisbane:20260923T143000
+SUMMARY:Great Ocean Speaker Series | Indigenous Perspectives on Curation wi
+ th Kimberley Moulton
+DESCRIPTION:This Speaker Series responds to core teachings in Indigenous Ar
+ t History in the Australia Pacific Region\, inviting leading First Nations
+  and Great Ocean artists and curators to campus to speak to diverse themes
+  in contemporary practice.
+LOCATION:UQ Art Museum\, William St
+URL:https://art-museum.uq.edu.au/event/session/4189
+END:VEVENT
+END:VCALENDAR

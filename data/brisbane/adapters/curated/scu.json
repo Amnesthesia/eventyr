@@ -3,47 +3,25 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "scu",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
-      "title": "R U OK? Day",
-      "datetime": "Thu 10 Sep, 11:00 AM",
-      "datetime_iso": "2026-09-10T11:00:00",
-      "datetime_end_iso": "",
-      "location": "Southern Cross University",
-      "link": "https://www.scu.edu.au/current-students/services-and-support/counselling/workshops-and-events/ruok-event/",
-      "cost": "See link",
-      "source": "Southern Cross University",
-      "description": "Ask R U OK? Any Day because life happens every day.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "mental health",
-        "wellbeing",
-        "support"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "CHSA Warmer Wednesdays",
-      "datetime": "Wed 9 Sep, 12:00 PM",
-      "datetime_iso": "2026-09-09T12:00:00",
+      "title": "CHSA Sub Tuesdays",
+      "datetime": "Tue 15 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-15T12:00:00",
       "datetime_end_iso": "",
       "location": "Coffs Harbour",
-      "link": "https://www.scu.edu.au/engage/events/chsa-wednesday-lunch/",
+      "link": "https://www.scu.edu.au/engage/events/chsa-tuesday-lunch-bar/",
       "cost": "See link",
       "source": "Southern Cross University",
-      "description": "Warmer Wednesdays, held every Wednesday during term 4, with different soups every week.",
+      "description": "FREE subway lunch hosted by the Coffs Harbour Student Association.",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "food",
         "community",
-        "student"
+        "students"
       ],
       "social": true,
       "intellectual": false,
@@ -51,92 +29,27 @@
       "creative": false
     },
     {
-      "title": "CHSA Frozen Thursdays",
-      "datetime": "Thu 10 Sep, 9:30 AM",
-      "datetime_iso": "2026-09-10T09:30:00",
+      "title": "CHSA Yoga",
+      "datetime": "Tue 15 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-15T17:00:00",
       "datetime_end_iso": "",
       "location": "Coffs Harbour",
-      "link": "https://www.scu.edu.au/engage/events/chsa-thursday-lunch/",
+      "link": "https://www.scu.edu.au/engage/events/chsa-yoga/",
       "cost": "See link",
       "source": "Southern Cross University",
-      "description": "Swing by the Uni Lounge and grab 1 FREE frozen meal from the freezer — perfect to heat up whenever suits you. Available from 9:30am until all gone!",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "free",
-        "student"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "CoastRs Pilates Class",
-      "datetime": "Wed 9 Sep, 8:30 AM",
-      "datetime_iso": "2026-09-09T08:30:00",
-      "datetime_end_iso": "",
-      "location": "Gold Coast",
-      "link": "https://www.scu.edu.au/engage/events/coastrs-pilates-class/",
-      "cost": "See link",
-      "source": "Southern Cross University",
-      "description": "Join us for a free Move Well Pilates Class every Wednesday during term 4",
+      "description": "Free yoga provided by the SCU Coffs Harbour Student Association.",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "pilates",
         "fitness",
-        "free"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": false
-    },
-    {
-      "title": "Gold Coast Volunteering Community Barbeque",
-      "datetime": "Wed 9 Sep, 11:00 AM",
-      "datetime_iso": "2026-09-09T11:00:00",
-      "datetime_end_iso": "",
-      "location": "Gold Coast",
-      "link": "https://www.scu.edu.au/engage/events/coastrs-stress-less-day/",
-      "cost": "See link",
-      "source": "Southern Cross University",
-      "description": "Take a break and de-stress with us at our volunteering community barbeque",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "volunteering",
-        "bbq",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "CoastRs Student Club Event - Affirmation Card Workshop",
-      "datetime": "Wed 9 Sep, 11:30 AM",
-      "datetime_iso": "2026-09-09T11:30:00",
-      "datetime_end_iso": "",
-      "location": "Gold Coast",
-      "link": "https://www.scu.edu.au/engage/events/coastrs-workshop/",
-      "cost": "See link",
-      "source": "Southern Cross University",
-      "description": "Check out the range of activities on offer!",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "craft",
-        "student",
-        "wellbeing"
+        "yoga",
+        "wellness",
+        "students"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
-      "creative": true
+      "creative": false
     },
     {
       "title": "Gold Coast Innovation Hub Brunch Like a Boss",
@@ -156,6 +69,50 @@
         "brunch"
       ],
       "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "CoastRs Pilates Class",
+      "datetime": "Wed 16 Sep, 8:30 AM",
+      "datetime_iso": "2026-09-16T08:30:00",
+      "datetime_end_iso": "",
+      "location": "Gold Coast",
+      "link": "https://www.scu.edu.au/engage/events/coastrs-pilates-class/",
+      "cost": "See link",
+      "source": "Southern Cross University",
+      "description": "Join us for a free Move Well Pilates Class every Wednesday during term 4",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "fitness",
+        "pilates",
+        "wellness",
+        "students"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Australia’s Anti‑Money Laundering Tranche 2 Reforms",
+      "datetime": "Fri 25 Sep, 1:00 PM",
+      "datetime_iso": "2026-09-25T13:00:00",
+      "datetime_end_iso": "",
+      "location": "Gold Coast",
+      "link": "https://www.scu.edu.au/business-law-and-arts/events/tranche-2-reforms/",
+      "cost": "See link",
+      "source": "Southern Cross University",
+      "description": "Event Overview: Australia’s Anti-Money Laundering Tranche 2 Reforms",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "history",
+        "technology"
+      ],
+      "social": false,
       "intellectual": true,
       "hands_on": false,
       "creative": false
@@ -183,6 +140,28 @@
       "creative": false
     },
     {
+      "title": "LEXSA Toastie Mondays",
+      "datetime": "Mon 14 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-14T12:00:00",
+      "datetime_end_iso": "",
+      "location": "Northern Rivers",
+      "link": "https://www.scu.edu.au/engage/events/lexsa-toastie-mondays/",
+      "cost": "See link",
+      "source": "Southern Cross University",
+      "description": "Start your week with a toastie provided by LEXSA",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "food",
+        "community",
+        "students"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Future Leaders Workshop, Northern Rivers",
       "datetime": "Thu 17 Sep, 9:00 AM",
       "datetime_iso": "2026-09-17T09:00:00",
@@ -205,21 +184,20 @@
       "creative": false
     },
     {
-      "title": "Lunch Law Talks: Bail Laws",
-      "datetime": "Tue 8 Sep, 1:00 PM",
-      "datetime_iso": "2026-09-08T13:00:00",
+      "title": "Australia’s Anti‑Money Laundering Tranche 2 Reforms",
+      "datetime": "Fri 25 Sep, 1:00 PM",
+      "datetime_iso": "2026-09-25T13:00:00",
       "datetime_end_iso": "",
       "location": "Southern Cross University",
-      "link": "https://www.scu.edu.au/business-law-and-arts/events/lunch-law-talks-september/",
+      "link": "https://www.scu.edu.au/business-law-and-arts/events/tranche-2-reforms/",
       "cost": "See link",
       "source": "Southern Cross University",
-      "description": "Bail is a fundamental part of Australia's criminal justice system, based on the principle that a person is presumed innocent until proven guilty. Under the Bail Act 2013 (NSW) , courts must determine whether an accused person poses an unacceptable risk of failing to appear in court, committing further offences, endangering others, or interfering with the administration of justice. Bail decisions therefore require a careful balance between protecting the rights of the accused and ensuring community safety. Recent high-profile domestic violence and youth crime cases have intensified public debate about whether that balance is being achieved.",
+      "description": "Event Overview: Australia’s Anti-Money Laundering Tranche 2 Reforms",
       "image": "",
       "category": "Public Lecture",
       "tags": [
-        "law",
-        "justice",
-        "debate"
+        "history",
+        "technology"
       ],
       "social": false,
       "intellectual": true,

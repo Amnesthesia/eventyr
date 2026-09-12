@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Saralanga 2026 The Queensland Celebration of Sri Lankan Perfor
+ ming Arts
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-142s0pg@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T153000
+DTEND;TZID=Australia/Brisbane:20260920T173000
+SUMMARY:Saralanga 2026 The Queensland Celebration of Sri Lankan Performing 
+ Arts
+DESCRIPTION:The Queensland Celebration of Sri Lankan Performing Arts
+LOCATION:Logan Entertainment Centre
+URL:https://www.loganarts.com.au/event/saralanga-2026/
+END:VEVENT
+END:VCALENDAR

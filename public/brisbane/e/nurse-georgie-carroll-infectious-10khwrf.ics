@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Nurse Georgie Carroll: Infectious
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-10khwrf@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T200000
+DTEND;TZID=Australia/Brisbane:20260918T220000
+SUMMARY:Nurse Georgie Carroll: Infectious
+DESCRIPTION:Nurse Georgie Carroll returns to Brisbane with her brand-new\, 
+ razor-sharp show\, Infectious.
+LOCATION:Concert Hall\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/nurse-georgie-carroll-infectious/
+END:VEVENT
+END:VCALENDAR

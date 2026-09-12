@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brother Ali (USA) w/ Horrorshow
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-moolkv@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T200000
+DTEND;TZID=Australia/Brisbane:20260919T220000
+SUMMARY:Brother Ali (USA) w/ Horrorshow
+DESCRIPTION:Find Brother Ali (USA) w/ Horrorshow tickets at www.thetriffid.
+ com.au | Videos\, biography\, tour dates\, performance times. VIP packages
+  available.
+LOCATION:The Triffid
+URL:https://thetriffid.com.au/all-events/brother-ali-tickets-ae78216
+END:VEVENT
+END:VCALENDAR

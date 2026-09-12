@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lord Mayor's Children's Program: TheatreDome
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-h5fww8@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Lord Mayor's Children's Program: TheatreDome
+DESCRIPTION:Amidst a theatrical storm\, can our contestants perform?
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/lord-mayors-childrens-program-th
+ eatredome-26
+END:VEVENT
+END:VCALENDAR

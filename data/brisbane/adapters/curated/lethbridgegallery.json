@@ -3,7 +3,34 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "lethbridgegallery",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "Scott Breton",
+      "datetime": "Fri 25 Sep – Tue 13 Oct",
+      "datetime_iso": "2026-09-25",
+      "datetime_end_iso": "2026-10-13",
+      "location": "Lethbridge Gallery",
+      "link": "https://lethbridgegallery.com/artist/",
+      "cost": "See link",
+      "source": "Lethbridge Gallery",
+      "description": "Brisbane-based figurative artist Scott Breton combines classical training with a uniquely contemporary vision to explore the living presence of figure, form and space in his work. With a practice informed by deep study of traditional drawing, painting and sculptural media, Breton’s compositions often convey a sense of aliveness and psychological depth, where gesture and structure meet imagination and atmosphere. A recipient of Australia’s prestigious A.M.E. Bale Travelling Scholarship, his work bridges the enduring principles of representational art with fresh insights into the human experience. Breton’s upcoming exhibition offers a new chapter in his ongoing investigation of form, psyche and the poetic potential of the painted surface.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "painting",
+        "sculpture",
+        "drawing",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

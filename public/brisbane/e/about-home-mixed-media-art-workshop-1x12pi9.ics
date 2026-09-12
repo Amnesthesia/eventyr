@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:About Home | Mixed Media Art Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1x12pi9@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T140000
+DTEND;TZID=Australia/Brisbane:20260927T160000
+SUMMARY:About Home | Mixed Media Art Workshop
+DESCRIPTION:Join Brisbane-based artist Monique Baqués for a hands-on mixed
+  media workshop exploring ideas of home\, belonging and memory.
+LOCATION:Creative Room Art Space
+URL:https://www.creativeroom.com.au/event-details/about-home-mixed-media-ar
+ t-workshop
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Collagraph and Beyond
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-x2nink@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260928
+SUMMARY:Collagraph and Beyond
+DESCRIPTION:How to Book a Workshop ... After selecting a workshop from the 
+ Workshop Program Book your place using the form below\, then Pay by DIRECT
+  DEPOSIT as soon as possible after making the booking. Look for...
+LOCATION:Impress Printmakers Studio and Gallery\, 134 Kedron Park Road Wool
+ oowin Brisbane Australia
+URL:https://impress.org.au/workshop-booking-form.html
+END:VEVENT
+END:VCALENDAR

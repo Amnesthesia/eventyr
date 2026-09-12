@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "ima",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "On Rafman: Daniel McKewen, Holly Eddington, and Spencer Harvie",
@@ -22,6 +22,30 @@
         "art",
         "lecture",
         "contemporary",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "On Rafman: Audrey Jo Pfister, Nicholas Carah, Maria Gemma Brown, Kyle Weise",
+      "datetime": "Sun 27 Sep",
+      "datetime_iso": "2026-09-27",
+      "datetime_end_iso": "",
+      "location": "Institute of Modern Art, 420 Brunswick St",
+      "link": "https://www.ima.org.au/ima-events/on-rafman-audrey-jo-pfister-nicholas-carah-maria-gemma-brown-kyle-weise/",
+      "cost": "See link",
+      "source": "Institute of Modern Art (IMA)",
+      "description": "Join us at the IMA for our third and final On Rafman lectures—a series of short presentations by academics, artists, curators, and writers that unpick…",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "art",
+        "performance",
+        "philosophy",
+        "history",
         "culture"
       ],
       "social": false,

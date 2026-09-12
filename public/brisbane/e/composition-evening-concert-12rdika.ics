@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Composition Evening Concert
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12rdika@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T190000
+DTEND;TZID=Australia/Brisbane:20260923T210000
+SUMMARY:Composition Evening Concert
+DESCRIPTION:Come along and experience an evening of new and original works 
+ from our Composition students. Prepare for an eclectic array of musical of
+ ferings.
+LOCATION:Ian Hanger Recital Hall\, Queensland Conservatorium Griffith Unive
+ rsity
+URL:https://www.qtix.com.au/whats-on/2026/qcgu-composition-evening-concert/
+END:VEVENT
+END:VCALENDAR

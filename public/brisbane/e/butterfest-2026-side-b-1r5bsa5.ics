@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BUTTERFEST 2026 — SIDE B
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1r5bsa5@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T130000
+DTEND;TZID=Australia/Brisbane:20260920T150000
+SUMMARY:BUTTERFEST 2026 — SIDE B
+DESCRIPTION:Find BUTTERFEST 2026 — SIDE A tickets at www.thetriffid.com.a
+ u | Videos\, biography\, tour dates\, performance times. VIP packages avai
+ lable.
+LOCATION:The Triffid
+URL:https://thetriffid.com.au/all-events/butterfest-tickets-ae1691293
+END:VEVENT
+END:VCALENDAR

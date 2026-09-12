@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BRISBANE Latin Dance Party & FREE Salsa Class every Sunday @ P
+ ig N Whistle
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mklg9q@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T183000
+DTEND;TZID=Australia/Brisbane:20260913T235900
+SUMMARY:BRISBANE Latin Dance Party & FREE Salsa Class every Sunday @ Pig N 
+ Whistle
+DESCRIPTION:Sunday Salsa Seduction nights at the Pig N Whistle begins at 6.
+ 30pm with a Free beginners Salsa class (All Welcome) from some of the lead
+ ing teachers in Brisbane\, followed
+LOCATION:Pig N Whistle Brunswick Street\, 315-318 Brunswick Street\, Fortit
+ ude Valley\, Brisbane\, Brisbane
+URL:https://www.meetup.com/sunday-salsa-seduction-at-the-pig-n-whistle/even
+ ts/316250866/
+END:VEVENT
+END:VCALENDAR

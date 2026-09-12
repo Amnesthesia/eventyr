@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dining in the Dark: A Unique Blindfolded Dining Experience at 
+ C’est Bon
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-19b0zhj@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T201500
+DTEND;TZID=Australia/Brisbane:20260917T221500
+SUMMARY:Dining in the Dark: A Unique Blindfolded Dining Experience at C’e
+ st Bon
+DESCRIPTION:Your blindfold is your passport to a whole new sensory experien
+ ce. With sight out of the picture\, discover what your other senses have b
+ een dying to tell you. A revelatory night\, paired with great food.
+LOCATION:C'est Bon Restaurant & Le Bon Bar
+URL:https://feverup.com/m/94441
+END:VEVENT
+END:VCALENDAR

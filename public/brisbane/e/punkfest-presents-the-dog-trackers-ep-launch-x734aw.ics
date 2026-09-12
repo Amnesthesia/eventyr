@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Punkfest presents: The Dog Trackers EP Launch
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-x734aw@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T190000
+DTEND;TZID=Australia/Brisbane:20260919T210000
+SUMMARY:Punkfest presents: The Dog Trackers EP Launch
+DESCRIPTION:A local underground punk showcase featuring The Dog Trackers EP
+  launch with support from local bands.
+LOCATION:PFR Lounge\, Fortitude Valley
+URL:https://pigguide.com.au/
+END:VEVENT
+END:VCALENDAR

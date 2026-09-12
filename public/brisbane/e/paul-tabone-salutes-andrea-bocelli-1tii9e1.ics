@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Paul Tabone Salutes Andrea Bocelli
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1tii9e1@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Paul Tabone Salutes Andrea Bocelli
+DESCRIPTION:Experience the soaring beauty and emotional power of the music 
+ made famous by Andrea Bocelli\, performed by Australia's favourite tenor.
+LOCATION:Redcliffe Entertainment Centre
+URL:https://www.redcliffeentertainmentcentre.com.au/Events/Paul-Tabone
+END:VEVENT
+END:VCALENDAR

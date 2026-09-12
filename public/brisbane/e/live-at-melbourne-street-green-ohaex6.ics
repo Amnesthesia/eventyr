@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Live at Melbourne Street Green
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ohaex6@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Live at Melbourne Street Green
+DESCRIPTION:Live Acts. Local Talent. Free on Fridays. This is the perfect w
+ ay to kickstart your weekend with a weekly program of free performances.
+LOCATION:Melbourne Street Green\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/live-at-melbourne-street-green/
+END:VEVENT
+END:VCALENDAR

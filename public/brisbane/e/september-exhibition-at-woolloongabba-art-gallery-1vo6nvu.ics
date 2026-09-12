@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:September Exhibition at Woolloongabba Art Gallery
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1vo6nvu@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T100000
+DTEND;TZID=Australia/Brisbane:20260914T120000
+SUMMARY:September Exhibition at Woolloongabba Art Gallery
+DESCRIPTION:A curated exhibition showcasing contemporary works from local a
+ nd regional artists in a long-standing independent gallery space.
+LOCATION:Woolloongabba Art Gallery\, Woolloongabba
+URL:https://wag.com.au/
+END:VEVENT
+END:VCALENDAR

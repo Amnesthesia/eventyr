@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Taylah Little Trio
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1qm4ygk@dothings
+DTSTART;TZID=Australia/Brisbane:20260912T220000
+DTEND;TZID=Australia/Brisbane:20260913T010000
+SUMMARY:Taylah Little Trio
+DESCRIPTION:
+LOCATION:Doo-Bop Bar\, 101 Edward Street Brisbane City\, QLD\, 4000 Austral
+ ia
+URL:https://www.doo-bop.com.au/events/taylah-little-trio-2
+END:VEVENT
+END:VCALENDAR

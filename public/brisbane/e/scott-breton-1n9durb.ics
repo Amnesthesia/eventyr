@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Scott Breton
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1n9durb@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20261014
+SUMMARY:Scott Breton
+DESCRIPTION:Brisbane-based figurative artist Scott Breton combines classica
+ l training with a uniquely contemporary vision to explore the living prese
+ nce of figure\, form and space in his work. With a practice informed by de
+ ep study of traditional drawing\, painting and sculptural media\, Breton
+ ’s compositions often convey a sense of aliveness and psychological dept
+ h\, where gesture and structure meet imagination and atmosphere. A recipie
+ nt of Australia’s prestigious A.M.E. Bale Travelling Scholarship\, his w
+ ork bridges the enduring principles of representational art with fresh ins
+ ights into the human experience. Breton’s upcoming exhibition offers a n
+ ew chapter in his ongoing investigation of form\, psyche and the poetic po
+ tential of the painted surface.
+LOCATION:Lethbridge Gallery
+URL:https://lethbridgegallery.com/artist/
+END:VEVENT
+END:VCALENDAR

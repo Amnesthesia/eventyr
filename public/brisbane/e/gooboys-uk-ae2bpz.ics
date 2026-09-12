@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:GOOBOYS [UK]
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ae2bpz@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:GOOBOYS [UK]
+DESCRIPTION:2x Grammy nominated. Multi-platinum. Over 10 million monthly Sp
+ otify listeners. From Tomorrowland and Ushuaïa Ibiza to collaborations wi
+ th MEDUZA\, ...
+LOCATION:Felons Brewing Co
+URL:https://felonsbrewingco.com.au/blogs/whats-on/gooboys-uk
+END:VEVENT
+END:VCALENDAR

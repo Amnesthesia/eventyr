@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Spring School Holidays at Museum of Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1fg6yoy@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20261006
+SUMMARY:Spring School Holidays at Museum of Brisbane
+DESCRIPTION:Get creative at Museum of Brisbane these school holidays with a
+  range of fun\, free and low-cost activities for all ages
+LOCATION:Museum of Brisbane
+URL:https://www.mustdobrisbane.com/whats-on-whats-on-kids/spring-school-hol
+ idays-museum-brisbane-2026
+END:VEVENT
+END:VCALENDAR

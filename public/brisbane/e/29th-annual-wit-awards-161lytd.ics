@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:29th Annual WiT Awards
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-161lytd@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T180000
+DTEND;TZID=Australia/Brisbane:20260925T200000
+SUMMARY:29th Annual WiT Awards
+DESCRIPTION:Let’s come together to honour and celebrate the achievements 
+ of extraordinary women making waves in STEM. The WiT Awards honour the div
+ erse and powerful ways women challenge the status quo\, recognising advoca
+ cy\, mentorship\, innovation\, and transformative ideas that improve the l
+ ives of Queenslander
+LOCATION:Brisbane City Hall\, Adelaide Street\, Brisbane City\, Queensland\
+ , Brisbane\, QL
+URL:https://allevents.in/brisbane/29th-annual-wit-awards/200030671021948
+END:VEVENT
+END:VCALENDAR

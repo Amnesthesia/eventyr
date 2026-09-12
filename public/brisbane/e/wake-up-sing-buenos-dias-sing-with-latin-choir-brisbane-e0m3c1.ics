@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wake Up & Sing!: ¡Buenos Días! Sing with Latin Choir Brisban
+ e
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-e0m3c1@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Wake Up & Sing!: ¡Buenos Días! Sing with Latin Choir Brisbane
+DESCRIPTION:Morning sounds different when people sing together.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/wake-up-and-sing-buenos-dias-sin
+ g-with-latin-choir-brisbane
+END:VEVENT
+END:VCALENDAR

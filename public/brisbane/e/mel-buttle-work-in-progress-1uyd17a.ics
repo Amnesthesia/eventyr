@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mel Buttle | Work In Progress
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1uyd17a@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T180000
+DTEND;TZID=Australia/Brisbane:20260927T200000
+SUMMARY:Mel Buttle | Work In Progress
+DESCRIPTION:Come along and see Australian comedy favourite\, Mel Buttle\, t
+ rying out some new jokes! Mel delights audiences all over the country\, bo
+ asting a prolific and ...
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/mel-buttle-work-in-progress-2/
+END:VEVENT
+END:VCALENDAR

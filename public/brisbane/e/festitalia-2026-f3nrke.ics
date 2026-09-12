@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Festitalia 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-f3nrke@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T103000
+DTEND;TZID=Australia/Brisbane:20260920T123000
+SUMMARY:Festitalia 2026
+DESCRIPTION:A community-led cultural festival celebrating Italian history\,
+  art\, and heritage through food\, music\, and tradition.
+LOCATION:RNA Showgrounds\, Bowen Hills
+URL:https://www.oztix.com.au
+END:VEVENT
+END:VCALENDAR

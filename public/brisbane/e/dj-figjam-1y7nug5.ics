@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:DJ FigJam
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1y7nug5@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T161500
+DTEND;TZID=Australia/Brisbane:20260913T201500
+SUMMARY:DJ FigJam
+DESCRIPTION:
+LOCATION:Eat Street Northshore\, 221D Macarthur Avenue\, Hamilton\, QLD\, 4
+ 007
+URL:https://eatstreetnorthshore.com.au/event/dj-figjam-7/
+END:VEVENT
+END:VCALENDAR

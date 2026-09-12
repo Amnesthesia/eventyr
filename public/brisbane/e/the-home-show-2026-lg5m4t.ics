@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Home Show 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-lg5m4t@dothings
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260914
+SUMMARY:The Home Show 2026
+DESCRIPTION:Would you like a FREE property report comparing local agents' r
+ esults\, commissions\, reviews and more? (optional) Select Yes\, SMS me a 
+ link from LocalAgentFinder No Thanks
+LOCATION:Brisbane Convention & Exhibition Centre
+URL:https://tickets.eeanz.com/events/brisbane-home-show-september-2026
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:FLAME BBQ & Music Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15nqdpe@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:FLAME BBQ & Music Festival
+DESCRIPTION:FLAME BBQ & Music Festival has something for everyone\, from de
+ licious BBQ fare and live music to fun rides and kids' activities
+LOCATION:Must Do Brisbane
+URL:https://www.mustdobrisbane.com/whats-on/flame-bbq-music-festival-jimboo
+ mba
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:WSQ 40th Annual Watercolour Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1a17o82@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260921
+SUMMARY:WSQ 40th Annual Watercolour Exhibition
+DESCRIPTION:Celebrate 40 years of watercolour with vibrant art and hands-on
+  creativity at this free Brisbane exhibition.
+LOCATION:Must Do Brisbane
+URL:https://www.mustdobrisbane.com/whats-on/wsq-40th-annual-watercolour-exh
+ ibition-mt-coot-tha
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Volunteering with Paten Park Native Nursery
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-4uw677@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T090000
+DTEND;TZID=Australia/Brisbane:20260922T160000
+SUMMARY:Volunteering with Paten Park Native Nursery
+DESCRIPTION:Volunteering can be done any day and time during the nursery op
+ ening hours. Please email or phone the nursery directly to organise your f
+ irst time. Paten Park Native Nursery is a not-for-profit community organis
+ ation whose objective is the propagation and promotion of the indigenous p
+ lants of SE Qld. This is achieved through providing educational and […]
+LOCATION:Paten Park Native Nursery\, 57 Paten Road\, THE GAP\, QLD\, 4061
+URL:https://thegapsustainability.org/event/volunteering-with-paten-park-nat
+ ive-nursery/2026-09-22/
+END:VEVENT
+END:VCALENDAR

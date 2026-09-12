@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Movie Club Offer: THE GREAT ARCH
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7e0ifq@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260928
+SUMMARY:Movie Club Offer: THE GREAT ARCH
+DESCRIPTION:
+LOCATION:Palace Cinemas Brisbane
+URL:https://palacecinemas.com.au/palace-movie-club-offer-the-great-arch
+END:VEVENT
+END:VCALENDAR

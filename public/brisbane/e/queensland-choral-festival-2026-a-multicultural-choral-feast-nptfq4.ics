@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Queensland Choral Festival 2026 A Multicultural Choral Feast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-nptfq4@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T183000
+DTEND;TZID=Australia/Brisbane:20260926T203000
+SUMMARY:Queensland Choral Festival 2026 A Multicultural Choral Feast
+DESCRIPTION:Australia is a vibrant cultural melting pot with a long history
+  of immigration\, enriching its social structure. From Indigenous peoples 
+ to waves of immigrants from Europe\, Asia\, and Africa\, Australia thrives
+  on its multicultural diversity\, with music being one of the most powerfu
+ l cultural mediums.
+LOCATION:Logan Entertainment Centre
+URL:https://www.loganarts.com.au/event/queensland-choral-festival-2026/
+END:VEVENT
+END:VCALENDAR

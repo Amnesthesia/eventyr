@@ -3,15 +3,15 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "osbournehotel",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Drag Bingo",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
-      "location": "Osbourne Hotel, 766 Ann St, Fortitude Valley QLD",
+      "location": "Osbourne Hotel",
       "link": "https://osbournehotel.com.au/Whats-On/drag-bingo-september/",
       "cost": "See link",
       "source": "Osbourne Hotel",
@@ -21,12 +21,36 @@
       "tags": [
         "drag",
         "bingo",
-        "entertainment"
+        "games",
+        "nightlife"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "AFL Grand Final",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "Osbourne Hotel",
+      "link": "https://osbournehotel.com.au/Whats-On/afl-grandfinal/",
+      "cost": "See link",
+      "source": "Osbourne Hotel",
+      "description": "Watch the AFL Grand Final at Osbourne Hotel with giant screens, 31 taps, game-day atmosphere and DJs after the final siren. Book now.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "sport",
+        "nightlife",
+        "dj",
+        "music"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     }
   ]
 }

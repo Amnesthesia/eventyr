@@ -3,7 +3,29 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "toowonghistory",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "Member meeting dates for 2026",
+      "datetime": "Fri 25 Sep",
+      "datetime_iso": "2026-09-25",
+      "datetime_end_iso": "",
+      "location": "West Toowong Bowls Club, Bywong St, Toowong",
+      "link": "https://toowonghistory.org.au/",
+      "cost": "See link",
+      "source": "Toowong and District Historical Society",
+      "description": "",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "community",
+        "history"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

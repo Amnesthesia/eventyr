@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Quiz Room Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-6yjgas@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20270101
+SUMMARY:Quiz Room Brisbane
+DESCRIPTION:Experience the excitement of a live TV quiz with spotlights\, b
+ uzzers and tons of action at Quiz Room Brisbane. Get your tickets now!
+LOCATION:Quiz Room Brisbane
+URL:https://feverup.com/m/468139
+END:VEVENT
+END:VCALENDAR

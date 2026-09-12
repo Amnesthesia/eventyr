@@ -3,7 +3,184 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "doo-bop",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "Taylah Little",
+      "datetime": "Tue 15 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-15T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/jtmyhlwnmb85235wm4ktr52my94j6b",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Graham Hobson",
+      "datetime": "Wed 16 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-16T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/qnagprqftliindsinlzkzfn0vlkder",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Michael Hynes",
+      "datetime": "Thu 17 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-17T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/ldlpuywskeqjzalrmp8v4m6qj74tfy",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Kelsey Giarola",
+      "datetime": "Fri 18 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-18T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/8juxl6guoeq5e3a2rbvuatca8rfn3o",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Michael Hynes & Jeremy O'Connor",
+      "datetime": "Fri 18 Sep, 10:00 PM – Sat 19 Sep",
+      "datetime_iso": "2026-09-18T22:00:00",
+      "datetime_end_iso": "2026-09-19T01:00:00",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/48iyvusedljkhv3hm16o4fg2zkqtyc",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Michael Hynes",
+      "datetime": "Sat 19 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-19T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/5p81bxkjpwi1c9bqdrmer6y8r36q8j",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Peter King Trio",
+      "datetime": "Sat 19 Sep, 10:00 PM – Sun 20 Sep",
+      "datetime_iso": "2026-09-19T22:00:00",
+      "datetime_end_iso": "2026-09-20T01:00:00",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/ctvn5fh0bpi5wxsj7puzuwuutmp76i",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Taylah Little Trio",
+      "datetime": "Sat 12 Sep, 10:00 PM – Sun 13 Sep",
+      "datetime_iso": "2026-09-12T22:00:00",
+      "datetime_end_iso": "2026-09-13T01:00:00",
+      "location": "Doo-Bop Bar, 101 Edward Street Brisbane City, QLD, 4000 Australia",
+      "link": "https://www.doo-bop.com.au/events/taylah-little-trio-2",
+      "cost": "See link",
+      "source": "Doo-Bop Jazz Bar",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

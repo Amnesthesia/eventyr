@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Drawing for Beginners | Morning sessions | 9-Week Course
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-17g8ds5@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T103000
+DTEND;TZID=Australia/Brisbane:20260916T123000
+SUMMARY:Drawing for Beginners | Morning sessions | 9-Week Course
+DESCRIPTION:Join our newly started Drawing Course\, with nine sessions stil
+ l ahead. Wednesday mornings\, 10:30 am to 1 pm\, in a small group setting 
+ with all materials included.
+LOCATION:Creative Room Art Space
+URL:https://www.creativeroom.com.au/event-details/drawing-for-beginners-mor
+ ning-sessions-9-week-course
+END:VEVENT
+END:VCALENDAR

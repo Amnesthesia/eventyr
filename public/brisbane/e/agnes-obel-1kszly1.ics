@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Agnes Obel
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1kszly1@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T200000
+DTEND;TZID=Australia/Brisbane:20260924T220000
+SUMMARY:Agnes Obel
+DESCRIPTION:The Danish singer\, songwriter and pianist known for her ethere
+ al\, chamber-pop sound comes to QPAC!
+LOCATION:Concert Hall\, QPAC
+URL:https://www.qtix.com.au/whats-on/2026/agnes-obel/
+END:VEVENT
+END:VCALENDAR

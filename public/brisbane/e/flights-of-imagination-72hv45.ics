@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Flights of Imagination
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-72hv45@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T150000
+DTEND;TZID=Australia/Brisbane:20260918T170000
+SUMMARY:Flights of Imagination
+DESCRIPTION:Join author and artist Maria Speyer for a reading of her pictur
+ e book A Feather on a Wing \, followed by an optional hands-on translation
+  workshop
+LOCATION:Sir Llew Edwards Building (14)\, Room 216\, The University of Quee
+ nsland\, St. Lucia
+URL:https://www.uqp.com.au/events/flights-of-imagination
+END:VEVENT
+END:VCALENDAR

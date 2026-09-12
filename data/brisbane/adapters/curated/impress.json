@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "impress",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "WOMEN IN PRINT",
@@ -15,17 +15,40 @@
       "link": "https://impress.org.au/",
       "cost": "See link",
       "source": "Impress Printmakers Studio and Gallery",
-      "description": "Let's celebrate women in printmaking with: Exhibition, Opening party, Talks, Demonstrations and more... This will be 2 weeks of celebrating women in print making...",
+      "description": "Let's celebrate women in printmaking with: Exhibition 10/9/2026 to 20/9/2026 Opening party - 11/9 from 6pm to 8pm Arrtist's Talks - 13/9 from 2pm to 3pm Kristina Hall Michelle Bowden Tanya Wallace Meredith Mcleod Demo day - 19/9 from 1pm This will be 2 weeks of celebrating women in print making...",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
         "exhibition",
-        "painting",
-        "drawing",
-        "design"
+        "gallery",
+        "performance",
+        "women"
       ],
       "social": true,
       "intellectual": true,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Collagraph and Beyond",
+      "datetime": "Sat 26 Sep – Sun 27 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "2026-09-27",
+      "location": "Impress Printmakers Studio and Gallery, 134 Kedron Park Road Wooloowin Brisbane Australia",
+      "link": "https://impress.org.au/workshop-booking-form.html",
+      "cost": "$385 / $365 for members",
+      "source": "Impress Printmakers Studio and Gallery",
+      "description": "How to Book a Workshop ... After selecting a workshop from the Workshop Program Book your place using the form below, then Pay by DIRECT DEPOSIT as soon as possible after making the booking. Look for...",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "design",
+        "beginners"
+      ],
+      "social": false,
+      "intellectual": false,
       "hands_on": true,
       "creative": true
     }

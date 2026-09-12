@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bleachers
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-8mjwu7@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T180000
+DTEND;TZID=Australia/Brisbane:20260916T200000
+SUMMARY:Bleachers
+DESCRIPTION:An intimate theatrical production performed in the Underground 
+ Theatre at the Brisbane Powerhouse.
+LOCATION:Brisbane Powerhouse Underground Theatre\, New Farm
+URL:https://brisbanepowerhouse.org/events/bleachers/
+END:VEVENT
+END:VCALENDAR

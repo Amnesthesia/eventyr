@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Comedy Allsorts @ The Sit Down Comedy Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1enmjat@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T200000
+DTEND;TZID=Australia/Brisbane:20260918T220000
+SUMMARY:Comedy Allsorts @ The Sit Down Comedy Club
+DESCRIPTION:
+LOCATION:The Sit Down Comedy Club
+URL:https://www.standup.com.au/event/comedy-allsorts-the-sit-down-comedy-cl
+ ub-83/
+END:VEVENT
+END:VCALENDAR

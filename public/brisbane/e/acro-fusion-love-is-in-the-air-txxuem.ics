@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Acro Fusion – Love is in the Air
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-txxuem@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T173000
+DTEND;TZID=Australia/Brisbane:20260923T193000
+SUMMARY:Acro Fusion – Love is in the Air
+DESCRIPTION:Acro Fusion presents Love is in the Air on Wednesday 23 Septemb
+ er\, 2026.
+LOCATION:Kingston Butter Factory Cultural Precinct
+URL:https://www.loganarts.com.au/event/acro-fusion-love-is-in-the-air/
+END:VEVENT
+END:VCALENDAR

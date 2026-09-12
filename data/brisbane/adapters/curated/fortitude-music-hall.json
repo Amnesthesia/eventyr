@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "fortitude-music-hall",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "The Cat Empire",
@@ -29,21 +29,21 @@
       "creative": true
     },
     {
-      "title": "Suzanne Vega",
-      "datetime": "Sat 12 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-12T19:00:00",
+      "title": "Aaron Chen",
+      "datetime": "Tue 22 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-22T19:30:00",
       "datetime_end_iso": "",
       "location": "Fortitude Music Hall, 66 Doggett St",
-      "link": "https://thefortitude.com.au/all-events/suzanne-vega-tickets-ae1618",
+      "link": "https://thefortitude.com.au/all-events/aaron-chen-tickets-ae1459877",
       "cost": "See link",
       "source": "Fortitude Music Hall",
-      "description": "Find Suzanne Vega tickets at www.thefortitude.com.au | Videos, biography, tour dates, performance times. VIP packages available.",
+      "description": "Find Aaron Chen 'Technology' tickets at www.thefortitude.com.au | Videos, biography, tour dates, performance times. VIP packages available.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "singer songwriter",
-        "folk",
-        "live music"
+        "comedy",
+        "standup",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -51,21 +51,22 @@
       "creative": true
     },
     {
-      "title": "Happy Mondays",
-      "datetime": "Wed 9 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-09T19:00:00",
+      "title": "Ashnikko",
+      "datetime": "Fri 25 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-25T19:30:00",
       "datetime_end_iso": "",
       "location": "Fortitude Music Hall, 66 Doggett St",
-      "link": "https://thefortitude.com.au/all-events/happy-mondays-tickets-ae461",
+      "link": "https://thefortitude.com.au/all-events/ashnikko-tickets-ae1252945",
       "cost": "See link",
       "source": "Fortitude Music Hall",
-      "description": "Find Happy Mondays tickets at www.thefortitude.com.au | Videos, biography, tour dates, performance times. VIP packages available.",
+      "description": "Find Ashnikko tickets at www.thefortitude.com.au | Videos, biography, tour dates, performance times. VIP packages available.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "rock",
         "live music",
-        "alternative"
+        "music",
+        "concert",
+        "pop"
       ],
       "social": false,
       "intellectual": false,
@@ -95,6 +96,30 @@
       "creative": true
     },
     {
+      "title": "Violent Soho",
+      "datetime": "Fri 25 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-25T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Fortitude Music Hall, 66 Doggett St",
+      "link": "https://thefortitude.com.au/all-events/violent-soho-tickets-ae1668267",
+      "cost": "See link",
+      "source": "Fortitude Music Hall",
+      "description": "Find Violent Soho tickets at www.thefortitude.com.au | Videos, biography, tour dates, performance times. VIP packages available.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "music",
+        "concert",
+        "rock",
+        "indie"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "The Cat Empire feat. Queensland Symphony Orchestra",
       "datetime": "Sun 13 Sep",
       "datetime_iso": "2026-09-13",
@@ -110,6 +135,28 @@
         "live music",
         "orchestra",
         "fusion"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Aaron Chen 'Technology'",
+      "datetime": "Tue 22 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-22T19:30:00",
+      "datetime_end_iso": "",
+      "location": "Fortitude Music Hall, 66 Doggett St",
+      "link": "https://thefortitude.com.au/all-events/aaron-chen-tickets-ae1459877",
+      "cost": "See link",
+      "source": "Fortitude Music Hall",
+      "description": "Find Aaron Chen 'Technology' tickets at www.thefortitude.com.au | Videos, biography, tour dates, performance times. VIP packages available.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "standup",
+        "performance"
       ],
       "social": false,
       "intellectual": false,

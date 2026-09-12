@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:STEAM Sundays
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-5w6l68@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T110000
+DTEND;TZID=Australia/Brisbane:20260913T120000
+SUMMARY:STEAM Sundays
+DESCRIPTION:Explore science\, technology\, reading and art during this hand
+ s-on\, drop in session. Each week\, challenge your thinking and bring out 
+ your creative side with new technology in a fun environment. Ideal for all
+  ages.
+LOCATION:Indooroopilly Library
+URL:https://www.brisbaneunlocked.com.au/steam-sundays-2026-09-13
+END:VEVENT
+END:VCALENDAR

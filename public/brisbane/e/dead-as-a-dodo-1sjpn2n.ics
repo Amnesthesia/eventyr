@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dead as a Dodo
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1sjpn2n@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Dead as a Dodo
+DESCRIPTION:Deep within the underworld\, two skeleton friends\, a Dodo and 
+ a boy\, tirelessly dig for fresh bones. Their ancient skeletal forms are d
+ eteriorating\, and without them\, they will disappear completely. One day\
+ , something peculiar happens: the Dodo miraculously sprouts feathers! A wa
+ ve of transformation begins\, shattering the established order of the dead
+ .
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/dead-as-a-dodo
+END:VEVENT
+END:VCALENDAR

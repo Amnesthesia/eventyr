@@ -3,7 +3,31 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "quizmeisters",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "Jimmys On The Mall",
+      "datetime": "Wed 16 Sep",
+      "datetime_iso": "2026-09-16",
+      "datetime_end_iso": "",
+      "location": "Jimmys On The Mall, Brisbane city",
+      "link": "https://www.quizmeisters.com/venues/qld-jimmys-on-the-mall",
+      "cost": "See link",
+      "source": "Quiz Meisters",
+      "description": "Trivia at Jimmys On The Mall is on every Wednesday at 5:30m with your host .",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

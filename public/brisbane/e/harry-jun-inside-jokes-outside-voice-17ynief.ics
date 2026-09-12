@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Harry Jun | Inside Jokes\, Outside Voice
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-17ynief@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T190000
+DTEND;TZID=Australia/Brisbane:20260924T210000
+SUMMARY:Harry Jun | Inside Jokes\, Outside Voice
+DESCRIPTION:
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/harry-jun-inside-jokes-outside-voice/
+END:VEVENT
+END:VCALENDAR

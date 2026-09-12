@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "kintsugi-australia",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Next Melbourne workshop",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
+      "datetime": "Sat 19 Sep",
+      "datetime_iso": "2026-09-19",
       "datetime_end_iso": "",
       "location": "Melbourne",
       "link": "https://kintsugi-australia.com.au/class/",
@@ -19,10 +19,11 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "kintsugi",
         "craft",
-        "art",
-        "japanese"
+        "design",
+        "history",
+        "philosophy",
+        "beginners"
       ],
       "social": false,
       "intellectual": true,
@@ -31,9 +32,9 @@
     },
     {
       "title": "Next Brisbane workshop",
-      "datetime": "Sat 12 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "2026-09-13",
+      "datetime": "Sat 19 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-09-20",
       "location": "Brisbane",
       "link": "https://kintsugi-australia.com.au/class/",
       "cost": "See link",
@@ -42,10 +43,11 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "kintsugi",
         "craft",
-        "art",
-        "japanese"
+        "design",
+        "history",
+        "philosophy",
+        "beginners"
       ],
       "social": false,
       "intellectual": true,
@@ -54,9 +56,9 @@
     },
     {
       "title": "Next Canberra workshop",
-      "datetime": "Sat 12 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "2026-09-13",
+      "datetime": "Sat 19 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-09-20",
       "location": "Canberra",
       "link": "https://kintsugi-australia.com.au/class/",
       "cost": "See link",
@@ -65,10 +67,11 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "kintsugi",
         "craft",
-        "art",
-        "japanese"
+        "design",
+        "history",
+        "philosophy",
+        "beginners"
       ],
       "social": false,
       "intellectual": true,
@@ -77,9 +80,9 @@
     },
     {
       "title": "Next Perth",
-      "datetime": "Sat 12 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "2026-09-13",
+      "datetime": "Sat 19 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-19",
+      "datetime_end_iso": "2026-09-20",
       "location": "Perth",
       "link": "https://kintsugi-australia.com.au/class/",
       "cost": "See link",
@@ -88,10 +91,11 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "kintsugi",
         "craft",
-        "art",
-        "japanese"
+        "design",
+        "history",
+        "philosophy",
+        "beginners"
       ],
       "social": false,
       "intellectual": true,

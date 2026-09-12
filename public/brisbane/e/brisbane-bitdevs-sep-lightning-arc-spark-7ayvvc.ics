@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane BitDevs Sep - Lightning/Arc/Spark
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7ayvvc@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T170000
+DTEND;TZID=Australia/Brisbane:20260913T200000
+SUMMARY:Brisbane BitDevs Sep - Lightning/Arc/Spark
+DESCRIPTION:**New Location\, New Time.** Arrive from 5:00pm for a 5:15pm st
+ art\, at the Brisbane Square Library. **About Brisbane BitDevs**: A techni
+ cal discussion for
+LOCATION:Brisbane Square Library\, 266 George street Brisbane city\, CBD\, 
+ Brisbane\, Brisbane
+URL:https://www.meetup.com/bitcoin_brisbane/events/316235415/
+END:VEVENT
+END:VCALENDAR

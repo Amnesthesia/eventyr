@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mosaic Lamp Workshop in Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-buvjtl@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20270312
+SUMMARY:Mosaic Lamp Workshop in Brisbane
+DESCRIPTION:Mosaic Lamp Workshop in Brisbane in Brisbane. Get your tickets 
+ on Fever now!
+LOCATION:Art Masterclass Fortitude Valley
+URL:https://feverup.com/m/163478
+END:VEVENT
+END:VCALENDAR

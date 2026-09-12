@@ -3,31 +3,31 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "brisbaneshowgrounds",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
-      "title": "BBX2026: LEGO Fane Expo",
-      "datetime": "Sat 12 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "2026-09-13",
+      "title": "Transurban Bridge To Brisbane presented by Brooks",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
+      "datetime_end_iso": "",
       "location": "Brisbane Showgrounds",
-      "link": "http://www.brisbaneshowgrounds.com.au/whats-on/bbx2026-lego-fane-expo/",
+      "link": "http://www.brisbaneshowgrounds.com.au/whats-on/transurban-bridge-to-brisbane-presented-by-brooks/",
       "cost": "See link",
       "source": "Brisbane Showgrounds",
-      "description": "Brought to you by BrisBricks, BBX2026 returns to Brisbane for a weekend celebrating creativity, imagination and the joy of LEGO building.",
+      "description": "Join thousands of runners, walkers, and wheelers as we take over the Gateway Bridge and streets of Brisbane on Sunday 13 September 2026 for an unforgettable morning.",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Community / Other",
       "tags": [
-        "lego",
-        "family",
-        "creative",
-        "exhibition"
+        "running",
+        "walking",
+        "sport",
+        "community"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
       "title": "Sabo Sample Sale",
@@ -69,6 +69,29 @@
         "culture",
         "food",
         "festival"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Your Local Wedding Guide Brisbane Expo",
+      "datetime": "Sun 27 Sep",
+      "datetime_iso": "2026-09-27",
+      "datetime_end_iso": "",
+      "location": "Brisbane Showgrounds",
+      "link": "http://www.brisbaneshowgrounds.com.au/whats-on/your-local-wedding-guide-brisbane-expo-5/",
+      "cost": "See link",
+      "source": "Brisbane Showgrounds",
+      "description": "Your Local Wedding Guide Brisbane Expo invites you to enjoy a free and fantastic day of wedding planning with a large lineup of the best wedding industry professionals in South East Queensland.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "shopping",
+        "fashion",
+        "design",
+        "community"
       ],
       "social": true,
       "intellectual": false,

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Generations & Dynasties: The Briscoe Sisters
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-umh88b@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T140000
+DTEND;TZID=Australia/Brisbane:20260917T160000
+SUMMARY:Generations & Dynasties: The Briscoe Sisters
+DESCRIPTION:Yalanji trio\, Briscoe Sisters\, bring language and song to the
+  stage with a powerful\, grounded presence.
+LOCATION:Magic Mirrors Spiegeltent\, Verso Projects. Festival Village\, Sou
+ th Bank
+URL:https://www.qtix.com.au/whats-on/2026/bf-generations-and-dynasties-the-
+ briscoe-sisters/
+END:VEVENT
+END:VCALENDAR

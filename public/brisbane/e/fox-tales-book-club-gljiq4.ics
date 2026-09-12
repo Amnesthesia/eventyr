@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Fox Tales Book Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-gljiq4@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20261001
+SUMMARY:Fox Tales Book Club
+DESCRIPTION:Fox Tales is designed for readers aged 10 and up who are ready 
+ for more complex stories and broader...
+LOCATION:Quick Brown Fox Bookshop
+URL:https://quickbrownfoxbookshop.com.au/fox-tales-the-wave-wednesday-30-se
+ ptember-930-1030/
+END:VEVENT
+END:VCALENDAR

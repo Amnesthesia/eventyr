@@ -3,31 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "qso",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "Symphonic Stories: Toowoomba",
-      "datetime": "Thu 10 Sep, 7:30 PM",
-      "datetime_iso": "2026-09-10T19:30:00",
-      "datetime_end_iso": "",
-      "location": "Queensland Symphony Orchestra",
-      "link": "https://qso.com.au/events/2026/regional-concerts-and-events/symphonic-stories-toowoomba",
-      "cost": "See link",
-      "source": "Queensland Symphony Orchestra",
-      "description": "Conductor Nil Venditti leads Queensland Symphony Orchestra through a program of bold contrasts and vibrant textures. At its heart is Copland’s Clarinet Concerto, performed by Section Principal Irit Silver, a work of spacious lyricism and jazzy rhythmic drive. The concert also features playful gems from Bernstein&nbsp;and Gershwin, two jubilant movements from Tchaikovsky’s Polish Symphony, a world premiere from QSO Compose alumnus Jonathan Platz, and more.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "orchestra",
-        "classical",
-        "symphony"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "The Cat Empire with Queensland Symphony Orchestra",
       "datetime": "Sun 13 Sep, 7:30 PM",
@@ -73,6 +51,30 @@
       "creative": true
     },
     {
+      "title": "Maestro 7: Symphonic Dances",
+      "datetime": "Fri 25 Sep, 7:30 PM – Sat 26 Sep",
+      "datetime_iso": "2026-09-25T19:30:00",
+      "datetime_end_iso": "2026-09-26T19:30:00",
+      "location": "Queensland Symphony Orchestra",
+      "link": "https://qso.com.au/events/2026/maestro-series/maestro-7-symphonic-dances",
+      "cost": "See link",
+      "source": "Queensland Symphony Orchestra",
+      "description": "From folk steps to final farewells, this concert is built around the joy of dance. At its heart is Rachmaninov’s final major work Symphonic Dances. Written in exile, it is filled with sweeping emotion, nostalgia, and the echoes of a life in motion. Led by Chief Conductor Umberto Clerici, it’s a powerful blend of elegance and vitality complete with an unforgettable saxophone solo. &nbsp; The evening begins with Dvořák’s Slavonic Dances, bursting with Bohemian spirit and irresistible folk...",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "concert",
+        "orchestra",
+        "classical"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "The Cat Empire with Queensland Symphony Orchestra",
       "datetime": "Sun 13 Sep, 7:30 PM",
       "datetime_iso": "2026-09-13T19:30:00",
@@ -88,6 +90,30 @@
         "orchestra",
         "live music",
         "fusion"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Maestro 7: Symphonic Dances",
+      "datetime": "Fri 25 Sep, 7:30 PM – Sat 26 Sep",
+      "datetime_iso": "2026-09-25T19:30:00",
+      "datetime_end_iso": "2026-09-26T19:30:00",
+      "location": "Queensland Symphony Orchestra",
+      "link": "https://qso.com.au/events/2026/maestro-series/maestro-7-symphonic-dances",
+      "cost": "See link",
+      "source": "Queensland Symphony Orchestra",
+      "description": "From folk steps to final farewells, this concert is built around the joy of dance. At its heart is Rachmaninov’s final major work Symphonic Dances. Written in exile, it is filled with sweeping emotion, nostalgia, and the echoes of a life in motion. Led by Chief Conductor Umberto Clerici, it’s a powerful blend of elegance and vitality complete with an unforgettable saxophone solo. &nbsp; The evening begins with Dvořák’s Slavonic Dances, bursting with Bohemian spirit and irresistible folk...",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "concert",
+        "orchestra",
+        "classical"
       ],
       "social": false,
       "intellectual": false,

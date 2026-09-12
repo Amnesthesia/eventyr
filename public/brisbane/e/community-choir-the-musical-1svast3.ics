@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Community Choir: The Musical
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1svast3@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Community Choir: The Musical
+DESCRIPTION:A heartwarming and hilarious tale written by Emma Dean\, direct
+ ed by Belinda Raisin\, and performed almost entirely by local community me
+ mbers — many stepping on stage for the very first time.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/community-choir-the-musical-26
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Community Serenades
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-uuzd64@dothings
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:Community Serenades
+DESCRIPTION:Join us for an afternoon of dancing with Bring a Plate.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/community-serenades
+END:VEVENT
+END:VCALENDAR

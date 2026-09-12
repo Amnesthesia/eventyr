@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:New to Brisbane Fresh Connections!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-drzt30@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T200000
+DTEND;TZID=Australia/Brisbane:20260919T230000
+SUMMARY:New to Brisbane Fresh Connections!
+DESCRIPTION:Join Westend Fresh Connections for a casual and fun Local Activ
+ ities Mixer aimed at newcomers to the area. This event is perfect for soci
+ al butterflies looking to make new
+LOCATION:The Fourth Monkey Cocktail Bar & Grill\, 58 Mollison St\, South Br
+ isbane\, QL\, South Brisbane\, QL
+URL:https://www.meetup.com/westend-singles-social-networking-meetup-group/e
+ vents/314355982/
+END:VEVENT
+END:VCALENDAR

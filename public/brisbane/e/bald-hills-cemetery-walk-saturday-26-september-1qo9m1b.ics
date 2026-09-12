@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bald Hills Cemetery Walk – Saturday 26 September
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1qo9m1b@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T093000
+DTEND;TZID=Australia/Brisbane:20260926T120000
+SUMMARY:Bald Hills Cemetery Walk – Saturday 26 September
+DESCRIPTION:PURCHASE TICKETS
+LOCATION:Bald Hills Cemetery (225 Barrett Street\, Bracken Ridge)
+URL:https://www.sandgatemuseum.com.au/event/guided-history-walk-bald-hills-
+ cemetery-saturday-11-april/
+END:VEVENT
+END:VCALENDAR

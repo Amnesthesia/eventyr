@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "artgallery-redland",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "REDLAND ART AWARDS 2026",
@@ -15,12 +15,14 @@
       "link": "https://au.openforms.com/Form/97a29701-657a-4bae-80ce-036652ca460b",
       "cost": "See link",
       "source": "Redland Art Gallery",
-      "description": "The Redland Art Awards is a biennial contemporary painting competition. Entries are open to artists who are Australian citizens or permanent residents, who currently reside in Australia, and are aged 18 years or over at the opening of the prize on Tuesday 5 May, 2026. In 2026 the Redland Art Awards primary award is an acquisitive prize of $20,000. In 2026 the Redland Art Awards second prize is $6,000 and the third prize is $3,000. Additionally, there is the Meredith Foxton People’s Choice Award, proudly sponsored by Redland Yurara Art Society Inc, of $1,000 and the RAMP Member’s Choice Award of $500.",
+      "description": "The Redland Art Awards is a biennial contemporary painting competition. Entries are open to artists who are Australian citizens or permanent residents, who currently reside in Australia, and are aged 18 years or over at the opening of the prize on Tuesday 5 May, 2026.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
         "exhibition",
-        "painting"
+        "painting",
+        "competition"
       ],
       "social": false,
       "intellectual": false,

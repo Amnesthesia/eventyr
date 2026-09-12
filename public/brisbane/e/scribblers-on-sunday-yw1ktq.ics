@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Scribblers on Sunday
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-yw1ktq@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T091500
+DTEND;TZID=Australia/Brisbane:20260913T113000
+SUMMARY:Scribblers on Sunday
+DESCRIPTION:This group meets on the second Sunday of the month. Friendly\, 
+ multi-age poetry and prose writers meeting in a supportive environment the
+  second Sunday of the month.
+LOCATION:Carindale Library
+URL:https://www.brisbaneunlocked.com.au/scribblers-on-sunday-2026-09-12
+END:VEVENT
+END:VCALENDAR

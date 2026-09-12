@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Doggie District
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1s5nkck@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Doggie District
+DESCRIPTION:Doggie District is coming to Breakfast Creek Lifestyle Precinct
+  on Saturday\, 19 September\, for a free day of fun.
+LOCATION:Breakfast Creek Lifestyle Precinct
+URL:https://www.mustdobrisbane.com/whats-on/doggie-district-breakfast-creek
+ -lifestyle-precinct
+END:VEVENT
+END:VCALENDAR

@@ -3,52 +3,28 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "brisbane-powerhouse",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
-      "title": "Tiri: Te Araroa Woman Far Walking BRISBANE FESTIVAL",
-      "datetime": "Thu 10 Sep, 6:30 PM – Sun 13 Sep",
-      "datetime_iso": "2026-09-10T18:30:00",
-      "datetime_end_iso": "2026-09-13",
+      "title": "Bleachers",
+      "datetime": "Wed 16 Sep, 6:00 PM – Sat 19 Sep",
+      "datetime_iso": "2026-09-16T18:00:00",
+      "datetime_end_iso": "2026-09-19",
       "location": "Brisbane Powerhouse, 119 Lamington St",
-      "link": "https://brisbanepowerhouse.org/events/tiri-te-araroa-woman-far-walking/",
+      "link": "https://brisbanepowerhouse.org/events/bleachers/",
       "cost": "See link",
       "source": "Brisbane Powerhouse",
-      "description": "Woven into a deeply emotional tapestry celebrating wāhine Māori and the emergent rangatahi who will take Aotearoa forward, Witi Ihimaera’s extraordinary play will shine once again in this astonishing new production.",
+      "description": "Rooted in the artists' lived experiences, Bleachers delves into isolation, connection, relationships, and belonging.",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "theatre",
-        "performance",
-        "maori",
-        "culture"
+        "art",
+        "exhibition",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Fashion Queensland in Conversation: Fashioning Brisbane: The Future of Fashion and Cultural Identity in our City",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
-      "datetime_end_iso": "",
-      "location": "Brisbane Powerhouse, 119 Lamington St",
-      "link": "https://brisbanepowerhouse.org/events/fashion-queensland-in-conversation-2/",
-      "cost": "See link",
-      "source": "Brisbane Powerhouse",
-      "description": "As Brisbane prepares for a defining decade, what role will fashion play in shaping the city's cultural identity? Join Fashion Queensland for an inspiring evening of conversation exploring the intersection of fashion, creativity, design, storytelling and placemaking, and the influence fashion has on how a city is experienced, remembered and celebrated.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "fashion",
-        "design",
-        "culture",
-        "brisbane"
-      ],
-      "social": true,
-      "intellectual": true,
       "hands_on": false,
       "creative": true
     }

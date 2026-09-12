@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mindful Art Mornings
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-a8ewfv@dothings
+DTSTART;TZID=Australia/Brisbane:20260909T073000
+DTEND;TZID=Australia/Brisbane:20260930T073000
+SUMMARY:Mindful Art Mornings
+DESCRIPTION:Mindful Art Morning invites early risers to the Museum before o
+ pening hours for a gentle\, guided moment of pause.
+LOCATION:Museum of Brisbane\, Level 3\, Brisbane City Hall
+URL:https://www.qtix.com.au/whats-on/2026/mob-mindful-art-mornings/
+END:VEVENT
+END:VCALENDAR

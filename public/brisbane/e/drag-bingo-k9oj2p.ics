@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Drag Bingo
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-k9oj2p@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Drag Bingo
+DESCRIPTION:Drag Bingo is coming back to the Osbourne Hotel on Sunday 20 Se
+ ptember. Join Haus of Drag Bingo from 1pm.
+LOCATION:Osbourne Hotel
+URL:https://osbournehotel.com.au/Whats-On/drag-bingo-september/
+END:VEVENT
+END:VCALENDAR

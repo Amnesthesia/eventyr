@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bleachers (Audio Described Performance)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-igko8f@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T180000
+DTEND;TZID=Australia/Brisbane:20260918T200000
+SUMMARY:Bleachers (Audio Described Performance)
+DESCRIPTION:An intimate theatrical production with an added audio-descripti
+ on service for accessibility.
+LOCATION:Brisbane Powerhouse Underground Theatre\, New Farm
+URL:https://brisbanepowerhouse.org/events/bleachers/
+END:VEVENT
+END:VCALENDAR

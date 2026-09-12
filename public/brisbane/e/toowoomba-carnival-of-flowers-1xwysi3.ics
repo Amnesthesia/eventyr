@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Toowoomba Carnival of Flowers
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1xwysi3@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T090000
+DTEND;TZID=Australia/Brisbane:20260920T173000
+SUMMARY:Toowoomba Carnival of Flowers
+DESCRIPTION:
+LOCATION:Brisbane\, 69 Ann Street\, Brisbane\, Brisbane
+URL:https://www.meetup.com/meetup-group-nlxtpdzv/events/315913184/
+END:VEVENT
+END:VCALENDAR

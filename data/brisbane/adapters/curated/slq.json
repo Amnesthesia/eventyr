@@ -3,9 +3,32 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "slq",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
+    {
+      "title": "The Explainer Series: Supermarkets",
+      "datetime": "Thu 24 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-24T18:30:00",
+      "datetime_end_iso": "",
+      "location": "State Library of Queensland, Stanley Place, South Bank",
+      "link": "https://www.slq.qld.gov.au/whats-on/explainer-series-supermarkets",
+      "cost": "See link",
+      "source": "State Library of Queensland",
+      "description": "The Explainer Series is about exploring the questions we’re all asking.Supermarkets are part of everyday life, but there’s a lot more happening in the aisles than deciding what’s for dinner. From pricing and loyalty programs to store layouts, online shopping and the growing influence of AI, the way we buy our groceries is changing fast. The Explainer Series: Supermarkets will take a look behind the shelves to explore how Australian supermarkets became the giants they are today - and where they might be heading next. As smaller stores, home delivery, automated fulfillment and personalised shopping reshape the supermarket experience, what do we gain from all that convenience, and what might we be giving up? Join us as we unpack the power and psychology of supermarkets, the technology changing the way we shop, and what the supermarket of the future might look like.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "history",
+        "technology",
+        "shopping",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
     {
       "title": "A Night by the Fire with Jo-Anne Driessens",
       "datetime": "Thu 17 Sep, 5:30 PM",

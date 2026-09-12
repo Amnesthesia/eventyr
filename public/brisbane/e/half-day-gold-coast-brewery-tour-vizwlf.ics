@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Half Day Gold Coast Brewery Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-vizwlf@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20270312
+SUMMARY:Half Day Gold Coast Brewery Tour
+DESCRIPTION:Half Day Gold Coast Brewery Tour in Brisbane. Get your tickets 
+ on Fever now!
+LOCATION:Multiple locations
+URL:https://feverup.com/m/172964
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Crafty Fox Makers Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-2tat1d@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Crafty Fox Makers Night
+DESCRIPTION:Crafty Fox Makers Night is a relaxed\, welcoming evening of cre
+ ativity at Quick Brown Fox Bookshop for ages 18+. Bring along a craft you
+ ’re already...
+LOCATION:Quick Brown Fox Bookshop
+URL:https://quickbrownfoxbookshop.com.au/crafty-fox-makers-evening-wednesda
+ y-8-april-6-8pm/
+END:VEVENT
+END:VCALENDAR

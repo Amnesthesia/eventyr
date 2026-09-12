@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Street Tree TLC
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1uyob10@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T073000
+DTEND;TZID=Australia/Brisbane:20260926T090000
+SUMMARY:Street Tree TLC
+DESCRIPTION:Join us to provide the street trees lining our neighbourhood wi
+ th tender loving care. We meet at 7.30am and usually finish by 9am. Please
+  bring a shovel or small pick to dig up grass around the tree\, gloves\, h
+ at and water bottle. Email Monika at thegapsustainability@gmail.com for th
+ is week's location. You may have noticed that […]
+LOCATION:The Gap\, Contact organiser for address\, The Gap\, QLD\, 4061
+URL:https://thegapsustainability.org/event/street-tree-tlc-3/2026-09-26/
+END:VEVENT
+END:VCALENDAR

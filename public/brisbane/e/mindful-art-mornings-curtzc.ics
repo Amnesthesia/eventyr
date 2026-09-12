@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mindful Art Mornings
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-curtzc@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T073000
+DTEND;TZID=Australia/Brisbane:20260916T093000
+SUMMARY:Mindful Art Mornings
+DESCRIPTION:A guided session combining art appreciation with mindfulness pr
+ actice in a quiet gallery environment.
+LOCATION:Museum of Brisbane\, Brisbane City Hall
+URL:https://www.brisbane.qld.gov.au
+END:VEVENT
+END:VCALENDAR

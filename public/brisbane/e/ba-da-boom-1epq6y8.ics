@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ba Da Boom
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1epq6y8@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T180000
+DTEND;TZID=Australia/Brisbane:20260925T200000
+SUMMARY:Ba Da Boom
+DESCRIPTION:Dr. Rebecca Lloyd-Jones leads a student ensemble performing cla
+ ssic and contemporary percussion works.
+LOCATION:Ian Hanger Recital Hall\, Queensland Conservatorium Griffith Unive
+ rsity
+URL:https://www.qtix.com.au/whats-on/2026/qcgu-ba-da-boom/
+END:VEVENT
+END:VCALENDAR

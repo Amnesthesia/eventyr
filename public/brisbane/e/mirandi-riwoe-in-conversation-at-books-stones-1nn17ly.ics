@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mirandi Riwoe in conversation at Books@Stones
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nn17ly@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T183000
+DTEND;TZID=Australia/Brisbane:20260922T203000
+SUMMARY:Mirandi Riwoe in conversation at Books@Stones
+DESCRIPTION:Join us on Tuesday 22 September\, 6:30pm for a special Books@St
+ ones event with award-winning author Mirandi Riwoe.
+LOCATION:Books@Stones\, Stones Corner QLD\, Australia
+URL:https://www.uqp.com.au/events/mirandi-riwoe-in-conversation-at-books-st
+ ones-a-short-history-of-longans
+END:VEVENT
+END:VCALENDAR

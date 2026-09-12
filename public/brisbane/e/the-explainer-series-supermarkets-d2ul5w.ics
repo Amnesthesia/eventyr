@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Explainer Series: Supermarkets
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-d2ul5w@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T183000
+DTEND;TZID=Australia/Brisbane:20260924T203000
+SUMMARY:The Explainer Series: Supermarkets
+DESCRIPTION:The Explainer Series is about exploring the questions we’re a
+ ll asking.Supermarkets are part of everyday life\, but there’s a lot mor
+ e happening in the aisles than deciding what’s for dinner. From pricing 
+ and loyalty programs to store layouts\, online shopping and the growing in
+ fluence of AI\, the way we buy our groceries is changing fast. The Explain
+ er Series: Supermarkets will take a look behind the shelves to explore how
+  Australian supermarkets became the giants they are today - and where they
+  might be heading next. As smaller stores\, home delivery\, automated fulf
+ illment and personalised shopping reshape the supermarket experience\, wha
+ t do we gain from all that convenience\, and what might we be giving up? J
+ oin us as we unpack the power and psychology of supermarkets\, the technol
+ ogy changing the way we shop\, and what the supermarket of the future migh
+ t look like.
+LOCATION:State Library of Queensland\, Stanley Place\, South Bank
+URL:https://www.slq.qld.gov.au/whats-on/explainer-series-supermarkets
+END:VEVENT
+END:VCALENDAR

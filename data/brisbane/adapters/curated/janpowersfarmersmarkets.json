@@ -3,31 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "janpowersfarmersmarkets",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "POWERHOUSE",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "Jan Powers Farmers Markets",
-      "link": "https://janpowersfarmersmarkets.com.au/powerhouse-farmers-markets",
-      "cost": "See link",
-      "source": "Jan Powers Farmers Markets",
-      "description": "The Jan Powers Farmers Markets Powerhouse has drawn strong crowds of food-lovers and smart shoppers since the arts venue opened in 2000.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "market",
-        "local"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
     {
       "title": "Eagle Farm",
       "datetime": "Sun 13 Sep",

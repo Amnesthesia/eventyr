@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LOUISE SHELLSHEAR: JACK THE HATTER
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1l5dwtr@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T183000
+DTEND;TZID=Australia/Brisbane:20260923T203000
+SUMMARY:LOUISE SHELLSHEAR: JACK THE HATTER
+DESCRIPTION:Ian Matheson will be in conversation with Louise Shellshear for
+  her book Jack the Hatter. ABOUT THE BOOK Where’s the best place to hide
+ \, for a young man on the run from the law\, in a brand-new country\, with
+  a brand-new name and identity? In plain sight. Maybe the best strategy fo
+ r a man on the
+LOCATION:Riverbend Books
+URL:https://riverbendbooks.com.au/events/louise-shellshear-jack-the-hatter-
+ wednesday-23rd-september-630pm-at-riverbend-books
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Shel We
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-11c4nw3@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:Shel We
+DESCRIPTION:Off-beat\, upbeat and heartwarming\, Shel We has delighted audi
+ ences of all ages and is now coming to QPAC's Cremorne Theatre!
+LOCATION:Cremorne Theatre\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/bf-shel-we/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wolf by Circa
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12v69a7@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T193000
+DTEND;TZID=Australia/Brisbane:20260925T213000
+SUMMARY:Wolf by Circa
+DESCRIPTION:The world is going to the dogs. Be a wolf.
+LOCATION:Redland Performing Arts Centre (RPAC)
+URL:https://rpac.com.au/what-s-on/all-events/wolf-by-circa/
+END:VEVENT
+END:VCALENDAR

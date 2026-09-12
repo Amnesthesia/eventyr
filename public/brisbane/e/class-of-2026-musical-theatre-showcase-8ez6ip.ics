@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Class of 2026 Musical Theatre Showcase
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-8ez6ip@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T140000
+DTEND;TZID=Australia/Brisbane:20260919T160000
+SUMMARY:Class of 2026 Musical Theatre Showcase
+DESCRIPTION:Discover the next generation of professional musical theatre ta
+ lent with this dynamic industry showcase.
+LOCATION:Tony Gould Gallery\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/qcgu-class-of-2026-musical-theatr
+ e-showcase/
+END:VEVENT
+END:VCALENDAR

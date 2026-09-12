@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Physical Movement Workshop Arts Workshop with the cast of ESCA
+ PE
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1b74ypt@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Physical Movement Workshop Arts Workshop with the cast of ESCAPE
+DESCRIPTION:A fusion of contemporary dance\, acrobatics\, and theatre.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/diavolo-dance-and-circus-arts-wo
+ rkshop
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Hula Hoop Workshop with Vulcana Circus
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dxww2t@dothings
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:Hula Hoop Workshop with Vulcana Circus
+DESCRIPTION:Join this relaxed\, drop-in hula hoop workshop facilitated by V
+ ulcana Circus\, where you can learn new tricks\, build confidence\, improv
+ e your skills or simply have fun. Suitable for all experience levels.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/hula-hoop-workshops
+END:VEVENT
+END:VCALENDAR

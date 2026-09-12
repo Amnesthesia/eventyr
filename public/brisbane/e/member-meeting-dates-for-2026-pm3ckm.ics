@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Member meeting dates for 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-pm3ckm@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Member meeting dates for 2026
+DESCRIPTION:
+LOCATION:West Toowong Bowls Club\, Bywong St\, Toowong
+URL:https://toowonghistory.org.au/
+END:VEVENT
+END:VCALENDAR

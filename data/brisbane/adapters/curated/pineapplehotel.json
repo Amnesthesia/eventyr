@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "pineapplehotel",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Trivia Night",
-      "datetime": "Wed 9 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-09T19:00:00",
+      "datetime": "Wed 16 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-16T19:00:00",
       "datetime_end_iso": "",
       "location": "Pineapple Hotel",
       "link": "https://pineapplehotel.com.au/whats-on/trivianight/",
@@ -21,7 +21,8 @@
       "tags": [
         "trivia",
         "games",
-        "social"
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": false,

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Close Enough for Country (Open Mic)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1gaq95c@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T030000
+DTEND;TZID=Australia/Brisbane:20260921T073000
+SUMMARY:Close Enough for Country (Open Mic)
+DESCRIPTION:Latest installment of our weekly country\, blues\, folk\, rock\
+ , eclectic open mic night. With a feature act every week at 6:30 Join the 
+ Close Enough For Country group on FB to stay up to date with the weekly fe
+ ature act and more: https://www.facebook.com/groups/2943918739215871
+LOCATION:The Cave Inn\, 47 Balaclava St.\, Woolloongabba\, QLD\, 4102
+URL:https://thecaveinn.net/events/close-enough-for-country-open-mic-4-497-2
+ 70/
+END:VEVENT
+END:VCALENDAR

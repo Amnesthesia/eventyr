@@ -3,9 +3,33 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "sandstonepointhotel",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
+    {
+      "title": "All Aboard for a Little Skippers Adventure!",
+      "datetime": "Thu 24 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "",
+      "location": "Sandstone Point Hotel",
+      "link": "https://sandstonepointhotel.com.au/event/little-skippers-kids-club-2/",
+      "cost": "See link",
+      "source": "Sandstone Point Hotel",
+      "description": "These school holidays set sail for a day of fun at Sandstone Point Hotel! On Thursday, September 24th or October 1st, take a breather while the kids dive into a morning of hands-on activities at Little Skippers Kids Club. The fun kicks off at 10:00am painting their very […]",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "kids",
+        "family",
+        "craft",
+        "painting",
+        "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
     {
       "title": "READY FOR A MONSTROUS AMOUNT OF FUN?",
       "datetime": "Sat 19 Sep – Mon 5 Oct",
@@ -31,8 +55,8 @@
     },
     {
       "title": "DON’T PACK IT IN WHEN THE SUN GOES DOWN",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
       "datetime_end_iso": "",
       "location": "Sandstone Point Hotel",
       "link": "https://sandstonepointhotel.com.au/event/anglers-afterparty/",
@@ -42,10 +66,13 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "live music",
         "music",
-        "party",
-        "festival",
-        "nightlife"
+        "concert",
+        "band",
+        "nightlife",
+        "food",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,

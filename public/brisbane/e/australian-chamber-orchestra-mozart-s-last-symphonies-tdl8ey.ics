@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Australian Chamber Orchestra Mozart’s Last Symphonies
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-tdl8ey@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T190000
+DTEND;TZID=Australia/Brisbane:20260922T210000
+SUMMARY:Australian Chamber Orchestra Mozart’s Last Symphonies
+DESCRIPTION:Experience one of the greatest chamber orchestras in the world 
+ at its joyous and inspirational best.
+LOCATION:Concert Hall\, QPAC
+URL:https://www.qtix.com.au/whats-on/2026/australian-chamber-orchestra-moza
+ rts-last-symphonies/
+END:VEVENT
+END:VCALENDAR

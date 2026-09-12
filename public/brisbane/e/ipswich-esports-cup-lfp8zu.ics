@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ipswich Esports Cup
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-lfp8zu@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Ipswich Esports Cup
+DESCRIPTION:A brand new\, community-driven celebration of gaming\, esports\
+ , creativity\, and future opportunities for young people across Queensland
+LOCATION:Ipswich Civic Centre
+URL:https://www.ipswichciviccentre.com.au/event/ipswich-esports-cup/
+END:VEVENT
+END:VCALENDAR

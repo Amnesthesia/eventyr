@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Edgar Allan Poe Speakeasy
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mz51fp@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20270117
+SUMMARY:Edgar Allan Poe Speakeasy
+DESCRIPTION:Experience Edgar Allan Poe’s work reimagined\, as told by the
+  Poe Historians\, while savoring a chilling cocktail in Brisbane. Get your
+  tickets now!
+LOCATION:Judith Wright Arts Centre\, 420 Brunswick St & Cnr\, Berwick Stree
+ t\, Fortitude Valley
+URL:https://feverup.com/m/683784
+END:VEVENT
+END:VCALENDAR

@@ -3,31 +3,7 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "artisan",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": [
-    {
-      "title": "MADE 2026",
-      "datetime": "Thu 10 Sep, 8:00 AM",
-      "datetime_iso": "2026-09-10T08:00:00",
-      "datetime_end_iso": "",
-      "location": "State Library of Queensland",
-      "link": "https://artisan.org.au/pages/made-2026#m26-register",
-      "cost": "See link",
-      "source": "Artisan",
-      "description": "artisan's inaugural Queensland Craft and Design Sector Symposium, putting makers at the centre of the conversation about the future of contemporary craft and design in Australia.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "craft",
-        "design",
-        "symposium",
-        "australia"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    }
-  ]
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": []
 }

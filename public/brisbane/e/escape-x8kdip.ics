@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ESCAPE
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-x8kdip@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260928
+SUMMARY:ESCAPE
+DESCRIPTION:A boundary-breaking fusion of human movement and physical struc
+ tures. DIAVOLO | Architecture in Motion® productions explore innovation a
+ nd celebrate the complexity of the human condition with an undefinable ble
+ nd of dance\, stunt work\, acrobatics\, circus arts\, and pedestrian movem
+ ent. The work is athletic\, captivating\, and visceral. This is a show tha
+ t will leave you breathless. Visceral and high-octane\, ESCAPE blends comp
+ lex\, moving architectural structures with multi-talented performers to cr
+ eate a blood-pumping and emotional multimedia experience. Along with DIAVO
+ LO's signature athletic movement aesthetic\, ESCAPE features a collection 
+ of the company's most famous architectural structures. Each evokes a story
+  unique to its design\, echoing themes of exploration\, danger\, fear\, su
+ rvival\, resilience\, and connection\, all brought to life through a sound
+ track spanning decades and genres\, from pop and EDM to rock.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/escape
+END:VEVENT
+END:VCALENDAR

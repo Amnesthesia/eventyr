@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Piano Bar
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3c2pds@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Piano Bar
+DESCRIPTION:Enjoy our intimate Piano Bar\, offering a truly enchanting post
+ -theatre experience.
+LOCATION:QPAC\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/piano-bar/
+END:VEVENT
+END:VCALENDAR

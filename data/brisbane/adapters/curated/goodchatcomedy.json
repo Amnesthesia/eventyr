@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "goodchatcomedy",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "The Spyro Experiment 2.0",
@@ -15,35 +15,12 @@
       "link": "https://goodchatcomedy.com/shows/the-spyro-experiment-2-0/",
       "cost": "See link",
       "source": "Good Chat Comedy Club",
-      "description": "",
+      "description": "Join the crew at Good Chat Comedy Club for Brisbane crusher Josh Spyro's weirdest and wildest stand-up anomaly to date! Josh Spyro wants to conduct an ...",
       "image": "",
       "category": "Community / Other",
       "tags": [
         "comedy",
-        "performance",
         "standup"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Good Chat Comedy’s Friday Late & Loud w. Mickey D & Nick Cody!",
-      "datetime": "Fri 11 Sep, 9:00 PM",
-      "datetime_iso": "2026-09-11T21:00:00",
-      "datetime_end_iso": "",
-      "location": "52 Petrie Terrace, Petrie Terrace",
-      "link": "https://goodchatcomedy.com/shows/good-chat-comedys-friday-late-loud-w-mickey-d-nick-cody/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -90,204 +67,6 @@
         "performance"
       ],
       "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Wednesday Night Comedy @ Good Chat Comedy Club!",
-      "datetime": "Wed 9 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-09T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Good Chat Comedy Club",
-      "link": "https://goodchatcomedy.com/shows/wednesday-night-comedy-good-chat-comedy-club-28/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "The Spyro Experiment",
-      "datetime": "Thu 10 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-10T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Good Chat Comedy Club",
-      "link": "https://goodchatcomedy.com/shows/the-spyro-experiment/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Friday Night Comedy w/ Nick Cody & Friends!",
-      "datetime": "Fri 11 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-11T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Good Chat Comedy Club",
-      "link": "https://goodchatcomedy.com/shows/friday-night-comedy-w-nick-cody-friends/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "Kick off your weekend with an evening of comedy at Brisbane's cult favourite comedy destination, Good Chat Comedy Club! Spend your Friday night the rig ...",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "comedy",
-        "standup",
-        "nightlife"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Good Chat Comedy’s Friday Late & Loud w. Mickey D & Nick Cody!",
-      "datetime": "Fri 11 Sep, 9:00 PM",
-      "datetime_iso": "2026-09-11T21:00:00",
-      "datetime_end_iso": "",
-      "location": "Good Chat Comedy Club",
-      "link": "https://goodchatcomedy.com/shows/good-chat-comedys-friday-late-loud-w-mickey-d-nick-cody/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Mid Flight Brawl LIVE! [Brisbane – Encore Session!]",
-      "datetime": "Sat 12 Sep, 12:00 PM",
-      "datetime_iso": "2026-09-12T12:00:00",
-      "datetime_end_iso": "",
-      "location": "Good Chat Comedy Club",
-      "link": "https://goodchatcomedy.com/shows/mid-flight-brawl-live-brisbane-encore-session/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Mid Flight Brawl LIVE! [Brisbane]",
-      "datetime": "Sat 12 Sep, 2:00 PM",
-      "datetime_iso": "2026-09-12T14:00:00",
-      "datetime_end_iso": "",
-      "location": "Good Chat Comedy Club",
-      "link": "https://goodchatcomedy.com/shows/mid-flight-brawl-live-brisbane-2/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Luke Heggie | Work In Progress",
-      "datetime": "Sat 12 Sep, 4:00 PM",
-      "datetime_iso": "2026-09-12T16:00:00",
-      "datetime_end_iso": "",
-      "location": "Good Chat Comedy Club",
-      "link": "https://goodchatcomedy.com/shows/luke-heggie-work-in-progress/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "Join the crew at Good Chat Comedy Club for a work in progress hour with critically-acclaimed Australian comedian, Luke Heggie! A master of deadpan comedy, L ...",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Nick Cody | Crusher",
-      "datetime": "Sat 12 Sep, 5:30 PM",
-      "datetime_iso": "2026-09-12T17:30:00",
-      "datetime_end_iso": "",
-      "location": "Good Chat Comedy Club",
-      "link": "https://goodchatcomedy.com/shows/nick-cody-crusher/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "Join the crew at Good Chat Comedy Club for an hour with Aussie comedy and radio legend, Nick Cody! Nick Cody is back where he belongs, saying hilarious/dist ...",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Saturday Night Standup w/ Nick Cody & Friends!",
-      "datetime": "Sat 12 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-12T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Good Chat Comedy Club",
-      "link": "https://goodchatcomedy.com/shows/saturday-night-standup-w-nick-cody-friends/",
-      "cost": "See link",
-      "source": "Good Chat Comedy Club",
-      "description": "Spend your Saturday the right way, with a night full of laughs, at Brisbane’s cult favourite comedy destination, Good Chat Comedy Club x We've got the ...",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "comedy",
-        "standup",
-        "nightlife"
-      ],
-      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -367,13 +146,12 @@
       "link": "https://goodchatcomedy.com/shows/the-spyro-experiment-2-0/",
       "cost": "See link",
       "source": "Good Chat Comedy Club",
-      "description": "",
+      "description": "Join the crew at Good Chat Comedy Club for Brisbane crusher Josh Spyro's weirdest and wildest stand-up anomaly to date! Josh Spyro wants to conduct an ...",
       "image": "",
       "category": "Community / Other",
       "tags": [
         "comedy",
-        "standup",
-        "performance"
+        "standup"
       ],
       "social": false,
       "intellectual": false,
@@ -389,7 +167,7 @@
       "link": "https://goodchatcomedy.com/shows/friday-night-comedy-w-brendhan-lovegrove-friends/",
       "cost": "See link",
       "source": "Good Chat Comedy Club",
-      "description": "Spend your Friday night the right way, with an evening of laughs at Good Chat Comedy Club on Caxton St! Located inside a gorgeous, heritage-listed, purpose- ...",
+      "description": "",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -411,15 +189,15 @@
       "link": "https://goodchatcomedy.com/shows/good-chats-friday-late-loud-w-danielle-walker-craig-quartermaine/",
       "cost": "See link",
       "source": "Good Chat Comedy Club",
-      "description": "",
+      "description": "Kick on with the crew at Good Chat Comedy for Friday Late & Loud! Brisbane's newest and rowdiest late night comedy showcase! It’s Friday night, the ...",
       "image": "",
       "category": "Community / Other",
       "tags": [
         "comedy",
         "standup",
-        "performance"
+        "nightlife"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -447,7 +225,7 @@
       "creative": true
     },
     {
-      "title": "Brendhan Lovegrove [NZ] | Bury Me Happy",
+      "title": "Brendhan Lovegrove & Tama Alexander | Kiwi Comedy Hour",
       "datetime": "Sat 19 Sep, 5:30 PM",
       "datetime_iso": "2026-09-19T17:30:00",
       "datetime_end_iso": "",
@@ -455,13 +233,12 @@
       "link": "https://goodchatcomedy.com/shows/brendhan-lovegrove-nz-bury-me-happy/",
       "cost": "See link",
       "source": "Good Chat Comedy Club",
-      "description": "Join the crew at Good Chat Comedy Club for an hour with Kiwi comedy legend, Brendhan Lovegrove! Winner of the 2015 NZ Comedy Guild Award for Best Male Comed ...",
+      "description": "Multiple Winner / Nominee for the NZ Comedian of the Year over the last 20 years. Brendhan is a favourite on the NZ Comedy Circuit and a much-loved regular ...",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Community / Other",
       "tags": [
         "comedy",
-        "standup",
-        "performance"
+        "standup"
       ],
       "social": false,
       "intellectual": false,
@@ -477,7 +254,7 @@
       "link": "https://goodchatcomedy.com/shows/saturday-night-standup-w-danielle-walker-friends/",
       "cost": "See link",
       "source": "Good Chat Comedy Club",
-      "description": "Spend your Saturday night the right way, with an evening of laughs at Good Chat Comedy Club on Caxton St!Located inside a gorgeous, heritage-listed, purpose ...",
+      "description": "",
       "image": "",
       "category": "Concert / Music",
       "tags": [
@@ -528,6 +305,324 @@
         "comedy",
         "standup",
         "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Anisa Nandaula | From The Notebook, Vol 5.",
+      "datetime": "Mon 21 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-21T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/anisa-nandaula-from-the-notebook-vol-5/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "Join the crew at Good Chat Comedy Club for a work in progress hour with rising star of Australian comedy, Anisa Nandaula! AS SEEN ON TALKIN' 'BOUT ...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Greenlight Comedy [An Open Mic Night]",
+      "datetime": "Tue 22 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-22T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/greenlight-comedy-an-open-mic-night-7/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "Join the crew at Good Chat Comedy Club for Greenlight Comedy! A monthly open mic concept show from Henry Sheerman! Greenlight Comedy is the open mic where y ...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup",
+        "open mic"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Wednesday Night Comedy @ Good Chat Comedy Club!",
+      "datetime": "Wed 23 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-23T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/wednesday-night-comedy-good-chat-comedy-club-30/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Harry Jun | Inside Jokes, Outside Voice",
+      "datetime": "Thu 24 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-24T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/harry-jun-inside-jokes-outside-voice/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Three Women Walk Into A Bar (w/ Ting Lim, Jemma Bayley & Mary Gore)",
+      "datetime": "Thu 24 Sep, 8:30 PM",
+      "datetime_iso": "2026-09-24T20:30:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/three-women-walk-into-a-bar-w-ting-lim-jemma-bayley-mary-gore/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup",
+        "women"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Dan Rath | Help Me Please",
+      "datetime": "Fri 25 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-25T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Ad Astra Theatre",
+      "link": "https://goodchatcomedy.com/shows/dan-rath-help-me-please/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "Join the crew at Good Chat Comedy for an hour with Sydney's cult favourite comedian, Dan Rath! A-List Entertainment presents You probably already know ...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Friday Night Comedy w/ Harry Jun & Friends!",
+      "datetime": "Fri 25 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-25T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/friday-night-comedy-w-harry-jun-friends/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup",
+        "nightlife"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Dan Rath | Help Me Please [New Show By Demand]",
+      "datetime": "Fri 25 Sep, 8:30 PM",
+      "datetime_iso": "2026-09-25T20:30:00",
+      "datetime_end_iso": "",
+      "location": "Ad Astra Theatre",
+      "link": "https://goodchatcomedy.com/shows/dan-rath-help-me-please-new-show-by-demand/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "Join the crew at Good Chat Comedy for an hour with Sydney's cult favourite comedian, Dan Rath! New show added by demand! A-List Entertainment presents ...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Harry Jun | Inside Jokes, Outside Voice [Encore!]",
+      "datetime": "Fri 25 Sep, 9:00 PM",
+      "datetime_iso": "2026-09-25T21:00:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/harry-jun-inside-jokes-outside-voice-encore/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Tales From Brisgard; A DnD Comedy Show",
+      "datetime": "Sat 26 Sep, 3:00 PM",
+      "datetime_iso": "2026-09-26T15:00:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/tales-from-brisgard-a-dnd-comedy-show-8/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "Join Jaimeson Gilders and a gaggle of Brisbane comedians on a whirlwind Dungeons and Dragons adventure! Welcome to Brisgard: the most beautiful mid-size fan ...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "gaming"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Neel Kolhatkar | Black Belt Comedy",
+      "datetime": "Sat 26 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-26T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/neel-kolhatkar-black-belt-comedy/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "Join the crew at Good Chat Comedy Club for the latest hour from Aussie comic and viral sensation, Neel Kolhatkar! Australian Comedian NEEL KOLHATKAR is brin ...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Saturday Night Standup w/ Dan Rath & Friends!",
+      "datetime": "Sat 26 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-26T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/saturday-night-standup-w-dan-rath-friends/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Shad & Pete Save The World!",
+      "datetime": "Sat 26 Sep, 9:30 PM",
+      "datetime_iso": "2026-09-26T21:30:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/shad-pete-save-the-world-5/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "We all have problems – and who better to solve yours than two unqualified comedians with nothing better to do on a Saturday night!",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Sunday Setup | A Singles Mixer! (Under 50s)",
+      "datetime": "Sun 27 Sep, 3:00 PM",
+      "datetime_iso": "2026-09-27T15:00:00",
+      "datetime_end_iso": "",
+      "location": "Caxton Street Brewing Company – Upstairs: ‘The Tasting Room’",
+      "link": "https://goodchatcomedy.com/shows/the-sunday-setup-a-singles-mixer-under-50s/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "Brisbane's most interactive singles mixer returns, with comedian Shad Wicka at the helm. MEET LIKE-MINDED PEOPLE.MAKE NEW FRIENDS.MEET THAT SPECIAL SOM ...",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "community",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Mel Buttle | Work In Progress",
+      "datetime": "Sun 27 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-27T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Good Chat Comedy Club",
+      "link": "https://goodchatcomedy.com/shows/mel-buttle-work-in-progress-2/",
+      "cost": "See link",
+      "source": "Good Chat Comedy Club",
+      "description": "Come along and see Australian comedy favourite, Mel Buttle, trying out some new jokes! Mel delights audiences all over the country, boasting a prolific and ...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "comedy",
+        "standup"
       ],
       "social": false,
       "intellectual": false,

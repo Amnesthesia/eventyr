@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Michael Hynes & Jeremy O'Connor
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15cx1hi@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T220000
+DTEND;TZID=Australia/Brisbane:20260919T010000
+SUMMARY:Michael Hynes & Jeremy O'Connor
+DESCRIPTION:
+LOCATION:Doo-Bop Bar\, 101 Edward Street Brisbane City\, QLD\, 4000 Austral
+ ia
+URL:https://www.doo-bop.com.au/events/48iyvusedljkhv3hm16o4fg2zkqtyc
+END:VEVENT
+END:VCALENDAR

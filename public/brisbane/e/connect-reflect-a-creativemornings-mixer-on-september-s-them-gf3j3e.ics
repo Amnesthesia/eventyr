@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Connect + Reflect: A CreativeMornings Mixer on September's The
+ me: CURRENT
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-gf3j3e@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T160000
+DTEND;TZID=Australia/Brisbane:20260924T180000
+SUMMARY:Connect + Reflect: A CreativeMornings Mixer on September's Theme: C
+ URRENT
+DESCRIPTION:❤️ Connect & Reflect is a mixer designed to bring the Creat
+ iveMornings community together around our monthly global themes. ✨What's
+  a Global Theme?✨ Eac...
+LOCATION:Creative Mornings Brisbane
+URL:https://creativemornings.com/talks/connect-reflect-a-creativemornings-m
+ ixer-on-september-s-theme-nakhlah
+END:VEVENT
+END:VCALENDAR

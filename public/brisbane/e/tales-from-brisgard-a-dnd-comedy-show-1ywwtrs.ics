@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tales From Brisgard\; A DnD Comedy Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ywwtrs@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T150000
+DTEND;TZID=Australia/Brisbane:20260926T170000
+SUMMARY:Tales From Brisgard\; A DnD Comedy Show
+DESCRIPTION:Join Jaimeson Gilders and a gaggle of Brisbane comedians on a w
+ hirlwind Dungeons and Dragons adventure! Welcome to Brisgard: the most bea
+ utiful mid-size fan ...
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/tales-from-brisgard-a-dnd-comedy-show-
+ 8/
+END:VEVENT
+END:VCALENDAR

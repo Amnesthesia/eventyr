@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wondai Garden Expo Spring 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hziekf@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260928
+SUMMARY:Wondai Garden Expo Spring 2026
+DESCRIPTION:
+LOCATION:WeekendNotes Brisbane
+URL:https://www.weekendnotes.com/wondai-garden-expo-spring-2026/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:A Regency Ball at Abbey
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xcn016@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T180000
+DTEND;TZID=Australia/Brisbane:20260926T210000
+SUMMARY:A Regency Ball at Abbey
+DESCRIPTION:An Evening of Dance Join us in September for A Regency Ball at 
+ the Abbey as part of the Museum’s 40th Birthday Celebrations and the Abb
+ ey History Festival. The evening will consist of over two hours of dancing
+ \, with refreshments and a light repast offered mid-way through to sustain
+  your energy and attention. The evening […]
+LOCATION:St Michael’s College – Hall\, 1-63 The Abbey Place\, Cabooltur
+ e\, Queensland\, 4510
+URL:https://abbeymuseum.com.au/event/a-regency-ball-at-abbey/
+END:VEVENT
+END:VCALENDAR

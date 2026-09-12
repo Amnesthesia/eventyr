@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Haunted Brisbane CBD Ghost Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-91ls96@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20270312
+SUMMARY:Haunted Brisbane CBD Ghost Tour
+DESCRIPTION:Haunted Brisbane CBD Ghost Tour in Brisbane. Get your tickets o
+ n Fever now!
+LOCATION:Brisbane City Hall
+URL:https://feverup.com/m/177720
+END:VEVENT
+END:VCALENDAR

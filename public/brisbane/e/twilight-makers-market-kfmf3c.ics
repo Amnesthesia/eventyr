@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Twilight Makers Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kfmf3c@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T160000
+DTEND;TZID=Australia/Brisbane:20260919T180000
+SUMMARY:Twilight Makers Market
+DESCRIPTION:A local market event showcasing handmade goods and creative cra
+ ftsmanship from regional makers in an outdoor harbour setting.
+LOCATION:Raby Bay Harbour\, Cleveland
+URL:https://www.facebook.com
+END:VEVENT
+END:VCALENDAR

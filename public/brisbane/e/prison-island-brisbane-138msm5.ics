@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Prison Island Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-138msm5@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20261130
+SUMMARY:Prison Island Brisbane
+DESCRIPTION:Prison Island Brisbane challenges you to work together as a tea
+ m to complete exciting tasks in 35 unique cells. Get your tickets now!
+LOCATION:Prison Island Brisbane
+URL:https://feverup.com/m/411577
+END:VEVENT
+END:VCALENDAR

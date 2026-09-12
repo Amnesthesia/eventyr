@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Riverbend Teacher Librarians Book Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1xzfhiq@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T163000
+DTEND;TZID=Australia/Brisbane:20260916T183000
+SUMMARY:Riverbend Teacher Librarians Book Club
+DESCRIPTION:Keep up-to-date with the leading titles shaping Australia's kid
+ lit landscape.
+LOCATION:Riverbend Books\, Shop 4/77 Oxford St\, Bulimba QLD 4171
+URL:https://www.uqp.com.au/events/riverbend-teacher-librarians-book-club
+END:VEVENT
+END:VCALENDAR

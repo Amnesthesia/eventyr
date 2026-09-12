@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pop Choir Rehearsal Brisbane - Geebung
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1mwt9yn@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T183000
+DTEND;TZID=Australia/Brisbane:20260914T203000
+SUMMARY:Pop Choir Rehearsal Brisbane - Geebung
+DESCRIPTION:
+LOCATION:Geebung Bowls Club\, 357 Robinson Rd W\, Zillmere\, QL\, Zillmere\
+ , QL
+URL:https://www.meetup.com/soul-song-brisbane-pop-choir/events/316265094/
+END:VEVENT
+END:VCALENDAR

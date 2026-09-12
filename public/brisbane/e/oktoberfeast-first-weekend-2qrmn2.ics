@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:OktoberFEAST – First Weekend
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-2qrmn2@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:OktoberFEAST – First Weekend
+DESCRIPTION:
+LOCATION:Eat Street Northshore\, 221D Macarthur Avenue
+URL:https://eatstreetnorthshore.com.au/event/oktoberfeast
+END:VEVENT
+END:VCALENDAR

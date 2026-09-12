@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Members Lecture: Make\, Believe\, Magic - Part 1
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-13cacnf@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T110000
+DTEND;TZID=Australia/Brisbane:20260916T120000
+SUMMARY:Members Lecture: Make\, Believe\, Magic - Part 1
+DESCRIPTION:A curated lecture exploring the evolution of puppetry and visua
+ l arts within the Jim Henson exhibition at GOMA.
+LOCATION:Gallery of Modern Art (GOMA)
+URL:https://www.qagoma.qld.gov.au
+END:VEVENT
+END:VCALENDAR

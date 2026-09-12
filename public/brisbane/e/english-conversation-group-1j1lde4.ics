@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:English conversation group
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1j1lde4@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T133000
+DTEND;TZID=Australia/Brisbane:20260913T143000
+SUMMARY:English conversation group
+DESCRIPTION:This friendly and informal group meets in the library every Tue
+ sday\, Thursday\, Friday and Sunday. Come along to make new friends and im
+ prove your English. Learners of all levels are welcome.
+LOCATION:Brisbane Square Library
+URL:https://www.brisbaneunlocked.com.au/english-conversation-group-2026-09-
+ 13
+END:VEVENT
+END:VCALENDAR

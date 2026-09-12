@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Abbey History Festival: Celebrating 40 Years of The Abbey Muse
+ um
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1k5uija@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Abbey History Festival: Celebrating 40 Years of The Abbey Museum
+DESCRIPTION:Celebrating 40 years of the Abbey Museum\, the Abbey History Fe
+ stival features reenactment\, markets\, workshops\, dances and entertainme
+ nt across all of history. From the team that deliver the Abbey Medieval Fe
+ stival. Tickets on Sale in June
+LOCATION:Abbeystowe\, 579 Old Toorbul Point Rd.\, Caboolture\, QLD\, 4510
+URL:https://abbeymuseum.com.au/event/abbey-history-festival-celebrating-40-
+ years-of-the-abbey-museum/
+END:VEVENT
+END:VCALENDAR

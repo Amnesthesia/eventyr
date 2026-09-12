@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dancing Queer - Sun\, 13 Sep 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ce0d85@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T173000
+DTEND;TZID=Australia/Brisbane:20260913T193000
+SUMMARY:Dancing Queer - Sun\, 13 Sep 2026
+DESCRIPTION:Come and join us for a Sunday late afternoon dance session\, sp
+ ecially organised for Queer Community and their friends. * Full name and s
+ ignature are requi
+LOCATION:Hamilton Town Hall\, Cnr Rossiter Pde & Racecourse Rd\, Hamilton\,
+  Hamilton
+URL:https://www.meetup.com/brisbanequeerdance/events/316336649/
+END:VEVENT
+END:VCALENDAR

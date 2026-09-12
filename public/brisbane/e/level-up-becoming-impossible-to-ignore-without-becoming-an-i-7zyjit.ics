@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LEVEL UP: Becoming Impossible to Ignore (Without Becoming an I
+ nfluencer)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7zyjit@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T130000
+DTEND;TZID=Australia/Brisbane:20260922T150000
+SUMMARY:LEVEL UP: Becoming Impossible to Ignore (Without Becoming an Influe
+ ncer)
+DESCRIPTION:You don't need to become an influencer or constantly create ori
+ ginal content to become known for what you do. In this practical FieldTrip
+ \, PR expert\, author ...
+LOCATION:Creative Mornings Brisbane
+URL:https://creativemornings.com/talks/level-up-becoming-impossible-to-igno
+ re-without-becoming-an-influencer
+END:VEVENT
+END:VCALENDAR

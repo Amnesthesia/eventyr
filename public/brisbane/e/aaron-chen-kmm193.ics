@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Aaron Chen
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kmm193@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Aaron Chen
+DESCRIPTION:Award-winning comedian Aaron Chen is coming to tour the world w
+ ith his new show\, Technology. It deals with technology.
+LOCATION:Concert Hall\, QPAC
+URL:https://www.qtix.com.au/whats-on/2026/aaron-chen/
+END:VEVENT
+END:VCALENDAR

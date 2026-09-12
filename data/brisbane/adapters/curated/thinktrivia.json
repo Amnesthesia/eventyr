@@ -3,14 +3,83 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "thinktrivia",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
+      "title": "Mermaid Beach Surf Club Trivia Night",
+      "datetime": "Sun 13 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-13T17:30:00",
+      "datetime_end_iso": "2026-09-13T20:00:00",
+      "location": "Mermaid Beach Surf Club, 172 Hedges Avenue",
+      "link": "https://www.thinktrivia.com.au/weeklyevents/mermaid-beach-surf-club-trivia-night",
+      "cost": "See link",
+      "source": "Think Trivia",
+      "description": "Your weekend deserves a fun finish, and trivia with Think Trivia at the Mermaid Beach Surf Club is the perfect choice. Bring the family, invite your friends, and enjoy free live multimedia trivia featuring questions about the old, the new, the weird and the wonderful. There are prizes and giveaways up for grabs, so book your team a table now! Bookings: (07) 5575 3211",
+      "image": "https://images.squarespace-cdn.com/content/v1/5ea50db356f3d073f3e2a808/1611092553401-R94BLX1E98OWHFZPM1W0/TT+MBS+Flyer+20210117.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "SOPO Trivia Night",
+      "datetime": "Mon 14 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-14T18:30:00",
+      "datetime_end_iso": "2026-09-14T21:00:00",
+      "location": "SOPO, 36 Scarborough Street",
+      "link": "https://www.thinktrivia.com.au/weeklyevents/sopo-trivia-night",
+      "cost": "See link",
+      "source": "Think Trivia",
+      "description": "Start your week with a spark at SOPO Southport! Think Trivia is bringing Monday night entertainment to the heart of Southport with a free game full of fun, fast thinking, surprise answers and plenty of table versus table energy. Settle in, get your team ready, and see if you can turn the first night of the week into a winning one with great prizes up for grabs. Book your table now and make Monday night your reason to head to SOPO! NB: Max. 8 players per team. Bookings: (07) 5552 4200",
+      "image": "https://images.squarespace-cdn.com/content/v1/5ea50db356f3d073f3e2a808/1776887050193-1SPEFIG9MCLS5V0N2162/SOP_0426+IG+Monday+Night+Trivia.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Stafford Tavern Trivia Night",
+      "datetime": "Mon 14 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-14T18:30:00",
+      "datetime_end_iso": "2026-09-14T21:00:00",
+      "location": "Stafford Tavern, 51/55 Webster Rd, Stafford QLD 4053",
+      "link": "https://www.thinktrivia.com.au/weeklyevents/stafford-tavern-trivia-night",
+      "cost": "See link",
+      "source": "Think Trivia",
+      "description": "Make Monday night your trivia night at the Stafford Tavern. Bring your friends, round up the family, and settle in for a free evening of entertainment with Think Trivia. Expect a lively multimedia game filled with clever questions, surprising topics, and plenty of laughs along the way. With prizes and giveaways on offer, there is every reason to book a table, build your team, and join the fun. See you at the Stafford Tavern! Bookings: (07) 3513 2100",
+      "image": "https://images.squarespace-cdn.com/content/v1/5ea50db356f3d073f3e2a808/1658058179012-ZZPEPMZEA11INB8F601Z/TT-SFT-Socials-100715.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Club Southside Trivia Night",
-      "datetime": "Tue 8 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-08T18:00:00",
-      "datetime_end_iso": "2026-09-08T20:30:00",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
+      "datetime_end_iso": "2026-09-15T20:30:00",
       "location": "Club Southside, 76 Mount Gravatt Capalaba Road",
       "link": "https://www.thinktrivia.com.au/weeklyevents/club-southside-trivia-night",
       "cost": "See link",
@@ -20,8 +89,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -30,9 +100,9 @@
     },
     {
       "title": "Gold Coast Tavern Trivia Night",
-      "datetime": "Tue 8 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-08T18:00:00",
-      "datetime_end_iso": "2026-09-08T20:30:00",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
+      "datetime_end_iso": "2026-09-15T20:30:00",
       "location": "Gold Coast Tavern, 150 Bundall Road",
       "link": "https://www.thinktrivia.com.au/weeklyevents/gold-coast-tavern-trivia-night",
       "cost": "See link",
@@ -42,8 +112,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -52,9 +123,9 @@
     },
     {
       "title": "The Star Gold Coast Trivia Night",
-      "datetime": "Tue 8 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-08T18:00:00",
-      "datetime_end_iso": "2026-09-08T20:30:00",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
+      "datetime_end_iso": "2026-09-15T20:30:00",
       "location": "The Star Gold Coast, 1 Casino Drive",
       "link": "https://www.thinktrivia.com.au/weeklyevents/thestargoldcoasttrivianight",
       "cost": "See link",
@@ -64,8 +135,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -74,9 +146,9 @@
     },
     {
       "title": "Comuna Newstead Trivia Night",
-      "datetime": "Tue 8 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-08T18:00:00",
-      "datetime_end_iso": "2026-09-08T20:30:00",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
+      "datetime_end_iso": "2026-09-15T20:30:00",
       "location": "Comuna Newstead, 27 Cunningham Street",
       "link": "https://www.thinktrivia.com.au/weeklyevents/comuna-newstead-trivia-night",
       "cost": "See link",
@@ -86,8 +158,10 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -96,9 +170,9 @@
     },
     {
       "title": "Samford Hotel Trivia Night",
-      "datetime": "Tue 8 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-08T18:30:00",
-      "datetime_end_iso": "2026-09-08T19:30:00",
+      "datetime": "Tue 15 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-15T18:30:00",
+      "datetime_end_iso": "2026-09-15T19:30:00",
       "location": "Samford Hotel, Main Street",
       "link": "https://www.thinktrivia.com.au/weeklyevents/samford-hotel-trivia-night",
       "cost": "See link",
@@ -108,8 +182,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -118,9 +193,9 @@
     },
     {
       "title": "Montague Hotel Trivia Night",
-      "datetime": "Tue 8 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-08T18:30:00",
-      "datetime_end_iso": "2026-09-08T21:00:00",
+      "datetime": "Tue 15 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-15T18:30:00",
+      "datetime_end_iso": "2026-09-15T21:00:00",
       "location": "Montague Hotel, 363 Montague Road",
       "link": "https://www.thinktrivia.com.au/weeklyevents/montague-hotel-trivia-night",
       "cost": "See link",
@@ -130,8 +205,10 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -140,9 +217,9 @@
     },
     {
       "title": "10 Toes Brewery Buderim Trivia Night",
-      "datetime": "Wed 9 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-09T18:00:00",
-      "datetime_end_iso": "2026-09-09T20:30:00",
+      "datetime": "Wed 16 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-16T18:00:00",
+      "datetime_end_iso": "2026-09-16T20:30:00",
       "location": "10 Toes Brewery Buderim, 1-5 Pittards Road",
       "link": "https://www.thinktrivia.com.au/weeklyevents/ten-toes-brewery-buderim-trivia-night",
       "cost": "See link",
@@ -152,8 +229,11 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "beer"
+        "games",
+        "beer",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -162,9 +242,9 @@
     },
     {
       "title": "The Yankee's Restaurant & Bar Hope Island Trivia Night",
-      "datetime": "Wed 9 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-09T18:00:00",
-      "datetime_end_iso": "2026-09-09T20:30:00",
+      "datetime": "Wed 16 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-16T18:00:00",
+      "datetime_end_iso": "2026-09-16T20:30:00",
       "location": "The Yankee&#39;s Restaurant &amp; Bar Hope Island, Shop 2 &amp; 3, Level 1/12 Santa Barbara Rd",
       "link": "https://www.thinktrivia.com.au/weeklyevents/the-yankees-restaurant-bar-hope-island-trivia-night",
       "cost": "See link",
@@ -174,8 +254,10 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -184,9 +266,9 @@
     },
     {
       "title": "Tetto Rooftop Bar Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
-      "datetime_end_iso": "2026-09-09T21:00:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
+      "datetime_end_iso": "2026-09-16T21:00:00",
       "location": "Tetto Rooftop Bar, 807 Stafford Road",
       "link": "https://www.thinktrivia.com.au/weeklyevents/tetto-rooftop-bar-trivia-night",
       "cost": "See link",
@@ -196,8 +278,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "rooftop"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -206,9 +289,9 @@
     },
     {
       "title": "Club Raby Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
-      "datetime_end_iso": "2026-09-09T21:00:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
+      "datetime_end_iso": "2026-09-16T21:00:00",
       "location": "Club Raby Bay, 164 -172 Middle Street",
       "link": "https://www.thinktrivia.com.au/weeklyevents/cleveland-bowls-club-trivia-night",
       "cost": "See link",
@@ -218,8 +301,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -228,9 +312,9 @@
     },
     {
       "title": "Crafty's Sports Bar Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
-      "datetime_end_iso": "2026-09-09T21:00:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
+      "datetime_end_iso": "2026-09-16T21:00:00",
       "location": "Crafty&#39;s, 147-189 Brisbane Road",
       "link": "https://www.thinktrivia.com.au/weeklyevents/craftys-sports-bar-trivia-night",
       "cost": "See link",
@@ -240,8 +324,10 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "sports"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -250,9 +336,9 @@
     },
     {
       "title": "Kingscliff Beach Hotel Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
-      "datetime_end_iso": "2026-09-09T21:00:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
+      "datetime_end_iso": "2026-09-16T21:00:00",
       "location": "Kingscliff Beach Hotel, 102 Marine Parade",
       "link": "https://www.thinktrivia.com.au/weeklyevents/kingscliff-beach-hotel-trivia-night",
       "cost": "See link",
@@ -262,8 +348,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -272,9 +359,9 @@
     },
     {
       "title": "Brisbane German Club Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
-      "datetime_end_iso": "2026-09-09T21:00:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
+      "datetime_end_iso": "2026-09-16T21:00:00",
       "location": "Brisbane German Club, 416 Vulture Street",
       "link": "https://www.thinktrivia.com.au/weeklyevents/brisbane-german-club-trivia-night",
       "cost": "See link",
@@ -284,8 +371,10 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -294,9 +383,9 @@
     },
     {
       "title": "BMD Northcliffe Surf Club Trivia Night",
-      "datetime": "Thu 10 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-10T18:00:00",
-      "datetime_end_iso": "2026-09-10T20:30:00",
+      "datetime": "Thu 17 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-17T18:00:00",
+      "datetime_end_iso": "2026-09-17T20:30:00",
       "location": "BMD Northcliffe Surf Club, 51 Garfield Terrace",
       "link": "https://www.thinktrivia.com.au/weeklyevents/bmd-northcliffe-surf-club-trivia-night",
       "cost": "See link",
@@ -306,8 +395,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -316,9 +406,9 @@
     },
     {
       "title": "10 Toes Brewery Sugar Rd Trivia Night",
-      "datetime": "Thu 10 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-10T18:00:00",
-      "datetime_end_iso": "2026-09-10T20:30:00",
+      "datetime": "Thu 17 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-17T18:00:00",
+      "datetime_end_iso": "2026-09-17T20:30:00",
       "location": "10 Toes Brewery, 127A Sugar Road",
       "link": "https://www.thinktrivia.com.au/weeklyevents/10-toes-brewery-sugar-rd-trivia-night",
       "cost": "See link",
@@ -328,8 +418,10 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "beer"
+        "games",
+        "beer",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -338,9 +430,9 @@
     },
     {
       "title": "The Sunny Trivia Night",
-      "datetime": "Thu 10 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-10T18:30:00",
-      "datetime_end_iso": "2026-09-10T21:00:00",
+      "datetime": "Thu 17 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-17T18:30:00",
+      "datetime_end_iso": "2026-09-17T21:00:00",
       "location": "The Sunny, 470 McCullough Street",
       "link": "https://www.thinktrivia.com.au/weeklyevents/sunnybank-community-amp-sports-club-trivia-night",
       "cost": "See link",
@@ -350,8 +442,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -360,9 +453,9 @@
     },
     {
       "title": "Salisbury Community Sports Club Trivia Night",
-      "datetime": "Thu 10 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-10T18:30:00",
-      "datetime_end_iso": "2026-09-10T21:00:00",
+      "datetime": "Thu 17 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-17T18:30:00",
+      "datetime_end_iso": "2026-09-17T21:00:00",
       "location": "Salisbury Community Sports Club, 37 Ainsworth Street",
       "link": "https://www.thinktrivia.com.au/weeklyevents/salisbury-community-sports-club-trivia-night",
       "cost": "See link",
@@ -372,8 +465,102 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "food",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "McLeod Country Golf Club Trivia Night (Monthly)",
+      "datetime": "Fri 25 Sep, 6:45 PM",
+      "datetime_iso": "2026-09-25T18:45:00",
+      "datetime_end_iso": "2026-09-25T21:15:00",
+      "location": "McLeod Country Golf Club, 61 Gertrude McLeod Crescent",
+      "link": "https://www.thinktrivia.com.au/weeklyevents/1o8p972qsjz9jk2qvvkek27fqgsokq",
+      "cost": "See link",
+      "source": "Think Trivia",
+      "description": "Tee up your Friday night at McLeod Country Golf Club with Think Trivia! Join us for a free monthly night of entertainment where clever questions, big laughs, team spirit and a little friendly rivalry all come together. Whether you are a trivia regular or just keen for a great social night out, there is plenty of fun to be had from the first question to the final round. Form your team, book your table, and see if you can stay on course, land the winning answers and walk away with great prizes. See you there! Bookings: (07) 3376 3666",
+      "image": "https://images.squarespace-cdn.com/content/v1/5ea50db356f3d073f3e2a808/1783650200565-DXFVQOW6SNPOPVTIYNGV/TT+MCG+Flyer+100726.png",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Mermaid Beach Surf Club Trivia Night",
+      "datetime": "Sun 13 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-13T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Mermaid Beach Surf Club, 172 Hedges Avenue Mermaid Beach, QLD, 4218 Australia",
+      "link": "https://www.thinktrivia.com.au/weeklyevents/mermaid-beach-surf-club-trivia-night",
+      "cost": "See link",
+      "source": "Think Trivia",
+      "description": "Your weekend deserves a fun finish, and trivia with Think Trivia at the Mermaid Beach Surf Club is the perfect choice. Bring the family, invite your friends, and enjoy free live multimedia trivia featuring questions about the old, the new, the weird and the wonderful. There are prizes and giveaways up for grabs, so book your team a table now! Bookings: (07) 5575 3211",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "SOPO Trivia Night",
+      "datetime": "Mon 14 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-14T18:30:00",
+      "datetime_end_iso": "",
+      "location": "SOPO, 36 Scarborough Street Southport, Queensland, 4215 Australia",
+      "link": "https://www.thinktrivia.com.au/weeklyevents/sopo-trivia-night",
+      "cost": "See link",
+      "source": "Think Trivia",
+      "description": "Start your week with a spark at SOPO Southport! Think Trivia is bringing Monday night entertainment to the heart of Southport with a free game full of fun, fast thinking, surprise answers and plenty of table versus table energy. Settle in, get your team ready, and see if you can turn the first night of the week into a winning one with great prizes up for grabs. Book your table now and make Monday night your reason to head to SOPO! NB: Max. 8 players per team. Bookings: (07) 5552 4200",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Stafford Tavern Trivia Night",
+      "datetime": "Mon 14 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-14T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Stafford Tavern, 51/55 Webster Rd, Stafford QLD 4053 Australia",
+      "link": "https://www.thinktrivia.com.au/weeklyevents/stafford-tavern-trivia-night",
+      "cost": "See link",
+      "source": "Think Trivia",
+      "description": "Make Monday night your trivia night at the Stafford Tavern. Bring your friends, round up the family, and settle in for a free evening of entertainment with Think Trivia. Expect a lively multimedia game filled with clever questions, surprising topics, and plenty of laughs along the way. With prizes and giveaways on offer, there is every reason to book a table, build your team, and join the fun. See you at the Stafford Tavern! Bookings: (07) 3513 2100",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -382,8 +569,8 @@
     },
     {
       "title": "Club Southside Trivia Night",
-      "datetime": "Tue 8 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-08T18:00:00",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
       "datetime_end_iso": "",
       "location": "Club Southside, 76 Mount Gravatt Capalaba Road Upper Mount Gravatt, QLD, 4122 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/club-southside-trivia-night",
@@ -394,8 +581,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -404,8 +592,8 @@
     },
     {
       "title": "Gold Coast Tavern Trivia Night",
-      "datetime": "Tue 8 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-08T18:00:00",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
       "datetime_end_iso": "",
       "location": "Gold Coast Tavern, 150 Bundall Road Bundall, QLD, 4217 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/gold-coast-tavern-trivia-night",
@@ -416,8 +604,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -426,20 +615,21 @@
     },
     {
       "title": "The Star Gold Coast Trivia Night",
-      "datetime": "Tue 8 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-08T18:00:00",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
       "datetime_end_iso": "",
       "location": "The Star Gold Coast, 1 Casino Drive Broadbeach, QLD, 4218 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/thestargoldcoasttrivianight",
       "cost": "See link",
       "source": "Think Trivia",
-      "description": "Add a little extra sparkle to your Tuesday night with Think Trivia at The Star Gold Coast! Join us in the Sports Bar at one of the Gold Coast’s premier entertainment destinations for a free night of trivia, laughs, and friendly competition. Gather your friends, book your team a table, and play for your chance to win incredible prizes in a venue that brings the excitement from start to finish. See you at The Star Gold Coast! Bookings: stargcdining@star.com.au (mailto:stargcdining@star.com.au) or (07) 5592 8757",
+      "description": "Add a little extra sparkle to your Tuesday night with Think Trivia at The Star Gold Coast! Join us in the Sports Bar at one of the Gold Coast’s premier entertainment destinations for a free night of trivia, laughs, and friendly competition. Gather your friends, book your team a table, and play for your chance to win incredible prizes in a venue that brings the excitement from start to finish. See you at The Star Gold Coast! Bookings: stargcdining@star.com.au or (07) 5592 8757",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -448,8 +638,8 @@
     },
     {
       "title": "Comuna Newstead Trivia Night",
-      "datetime": "Tue 8 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-08T18:00:00",
+      "datetime": "Tue 15 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-15T18:00:00",
       "datetime_end_iso": "",
       "location": "Comuna Newstead, 27 Cunningham Street Newstead, Queensland, 4006 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/comuna-newstead-trivia-night",
@@ -460,8 +650,10 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -470,8 +662,8 @@
     },
     {
       "title": "Samford Hotel Trivia Night",
-      "datetime": "Tue 8 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-08T18:30:00",
+      "datetime": "Tue 15 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-15T18:30:00",
       "datetime_end_iso": "",
       "location": "Samford Hotel, Main Street Samford Valley, QLD, 4520 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/samford-hotel-trivia-night",
@@ -482,8 +674,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -492,8 +685,8 @@
     },
     {
       "title": "Montague Hotel Trivia Night",
-      "datetime": "Tue 8 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-08T18:30:00",
+      "datetime": "Tue 15 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-15T18:30:00",
       "datetime_end_iso": "",
       "location": "Montague Hotel, 363 Montague Road West End, QLD, 4101 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/montague-hotel-trivia-night",
@@ -504,8 +697,10 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -514,20 +709,23 @@
     },
     {
       "title": "10 Toes Brewery Buderim Trivia Night",
-      "datetime": "Wed 9 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-09T18:00:00",
+      "datetime": "Wed 16 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-16T18:00:00",
       "datetime_end_iso": "",
       "location": "10 Toes Brewery Buderim, 1-5 Pittards Road Buderim, QLD, 4556 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/ten-toes-brewery-buderim-trivia-night",
       "cost": "See link",
       "source": "Think Trivia",
-      "description": "Pour yourself into a great night out at 10 Toes Brewery Buderim! Gather your crew and join Think Trivia at this Sunshine Coast craft beer favourite, where good vibes, fresh brews, tasty eats and free trivia come together. Test your knowledge, enjoy a few laughs, and play for your chance to win rad prizes. Book your team a table and make it a trivia night worth raising a glass to!",
+      "description": "Pour yourself into a great night out at 10 Toes Brewery Buderim! Gather your crew and join Think Trivia at this Sunshine Coast craft beer favourite, where good vibes, fresh brews, tasty eats and free trivia come together. Test your knowledge, enjoy a few laughs, and play for your chance to win rad p",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "beer"
+        "games",
+        "beer",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -536,20 +734,22 @@
     },
     {
       "title": "The Yankee's Restaurant & Bar Hope Island Trivia Night",
-      "datetime": "Wed 9 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-09T18:00:00",
+      "datetime": "Wed 16 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-16T18:00:00",
       "datetime_end_iso": "",
       "location": "The Yankee's Restaurant & Bar Hope Island, Shop 2 & 3, Level 1/12 Santa Barbara Rd Hope Island, QLD Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/the-yankees-restaurant-bar-hope-island-trivia-night",
       "cost": "See link",
       "source": "Think Trivia",
-      "description": "Make your next trivia night one to remember at Yankees Hope Island Bar &amp; Restaurant. Round up your friends and family for a free night of entertainment with Think Trivia, complete with American-style food, cool drinks, a beautiful view over the water and an upbeat atmosphere. Test your knowl",
+      "description": "Make your next trivia night one to remember at Yankees Hope Island Bar & Restaurant. Round up your friends and family for a free night of entertainment with Think Trivia, complete with American-style food, cool drinks, a beautiful view over the water and an upbeat atmosphere. Test your knowledge, share a few laughs, and compete for your chance to win great prizes. Book your team a table and join the fun at Yankees Hope Island! Bookings: (07) 5615 0014",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -558,20 +758,21 @@
     },
     {
       "title": "Tetto Rooftop Bar Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
       "datetime_end_iso": "",
       "location": "Tetto Rooftop Bar, 807 Stafford Road Everton Park, QLD, 4053 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/tetto-rooftop-bar-trivia-night",
-      "cost": "free",
+      "cost": "See link",
       "source": "Think Trivia",
       "description": "Take trivia to new heights at Tetto Rooftop Bar! Gather your friends and family for a free night of trivia with Think Trivia at this coastal Italian inspired rooftop spot in Everton Park, where the drinks are flowing, the vibes are showing and the atmosphere feels made for a good time. Enjoy a lively mix of questions, laughs and friendly competition while you play for your chance to win great prizes. Book your team a table and join us on the rooftop! Bookings: (07) 3355 3319",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "rooftop"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -580,20 +781,21 @@
     },
     {
       "title": "Club Raby Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
       "datetime_end_iso": "",
       "location": "Club Raby Bay, 164 -172 Middle Street Cleveland, QLD, 4163 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/cleveland-bowls-club-trivia-night",
-      "cost": "free",
+      "cost": "See link",
       "source": "Think Trivia",
       "description": "Bring some extra excitement to your evening at Club Raby Bay with free trivia presented by Think Trivia! Bring your friends together for an evening full of great questions, lively laughs, friendly competition and plenty of prize winning chances. Settle in, enjoy the bayside atmosphere, and see if your team has what it takes to come out on top. Book your table now and join the fun at Club Raby Bay! Bookings: (07) 3286 1161",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -602,20 +804,22 @@
     },
     {
       "title": "Crafty's Sports Bar Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
       "datetime_end_iso": "",
       "location": "Crafty's, 147-189 Brisbane Road Biggera Waters, QLD, 4216 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/craftys-sports-bar-trivia-night",
-      "cost": "free",
+      "cost": "See link",
       "source": "Think Trivia",
       "description": "Swap the sidelines for the spotlight at Crafty’s Sports Bar. Think Trivia is taking over with a free night of quick thinking, bold guesses and plenty of team rivalry in one of the Gold Coast’s most social sports bar settings. Fuel up with great eats, grab your favourite drink, and see whether your crew has the knowledge to beat the field and claim a prize. Book your table now and get ready for fun Wednesday night of trivia at Crafty’s. See you there! Bookings: (07) 5528 9974",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "sports"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -624,20 +828,21 @@
     },
     {
       "title": "Kingscliff Beach Hotel Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
       "datetime_end_iso": "",
       "location": "Kingscliff Beach Hotel, 102 Marine Parade Kingscliff, NSW, 2487 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/kingscliff-beach-hotel-trivia-night",
-      "cost": "free",
+      "cost": "See link",
       "source": "Think Trivia",
       "description": "Shake off the midweek routine with a night out and some free, fun entertainment at the Kingscliff Beach Hotel. Think Trivia is bringing the questions, the laughs and the competitive spark to one of Kingscliff’s favourite beachside venues. Rally your sharpest minds, settle in for a great evening by the coast, and see whether your team can claim the bragging rights and take home a prize. Tables fill fast, so lock in your spot and make Wednesday night your trivia night at Kingscliff Beach Hotel. Bookings: (02) 6674 1406",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -646,20 +851,22 @@
     },
     {
       "title": "Brisbane German Club Trivia Night",
-      "datetime": "Wed 9 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-09T18:30:00",
+      "datetime": "Wed 16 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-16T18:30:00",
       "datetime_end_iso": "",
       "location": "Brisbane German Club, 416 Vulture Street East Brisbane, QLD, 4169 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/brisbane-german-club-trivia-night",
-      "cost": "free",
+      "cost": "See link",
       "source": "Think Trivia",
       "description": "Bring a little Bavarian buzz to your Wednesday night at the Brisbane German Club with Think Trivia! Enjoy free trivia surrounded by classic German hospitality, lively club atmosphere and plenty of good-natured fun. Rally your team, settle in for a spirited trivia challenge, and see if your table has what it takes to win awesome prizes. Book now and make trivia night something to say Prost about! Bookings: (07) 3391 2434",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "food",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -668,20 +875,21 @@
     },
     {
       "title": "BMD Northcliffe Surf Club Trivia Night",
-      "datetime": "Thu 10 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-10T18:00:00",
+      "datetime": "Thu 17 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-17T18:00:00",
       "datetime_end_iso": "",
       "location": "BMD Northcliffe Surf Club, 51 Garfield Terrace Surfers Paradise, QLD, 4217 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/bmd-northcliffe-surf-club-trivia-night",
-      "cost": "free",
+      "cost": "See link",
       "source": "Think Trivia",
       "description": "Make Thursday night the highlight of your week at BMD Northcliffe Surf Club with Think Trivia! Enjoy free entertainment, ocean views, plenty of fun and a fast-moving mix of questions that will have every table fired up. Round up your smartest crew, book your table, and play for your chance to score great prizes. Thursday night trivia is calling! Bookings: (07) 5539 8091",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -690,8 +898,8 @@
     },
     {
       "title": "10 Toes Brewery Sugar Rd Trivia Night",
-      "datetime": "Thu 10 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-10T18:00:00",
+      "datetime": "Thu 17 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-17T18:00:00",
       "datetime_end_iso": "",
       "location": "10 Toes Brewery, 127A Sugar Road Alexandra Headland, QLD, 4572 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/10-toes-brewery-sugar-rd-trivia-night",
@@ -702,8 +910,10 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "beer"
+        "games",
+        "beer",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,
@@ -712,42 +922,21 @@
     },
     {
       "title": "The Sunny Trivia Night",
-      "datetime": "Thu 10 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-10T18:30:00",
+      "datetime": "Thu 17 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-17T18:30:00",
       "datetime_end_iso": "",
       "location": "The Sunny, 470 McCullough Street Sunnybank, QLD, 4109 Australia",
       "link": "https://www.thinktrivia.com.au/weeklyevents/sunnybank-community-amp-sports-club-trivia-night",
-      "cost": "free",
+      "cost": "See link",
       "source": "Think Trivia",
       "description": "Give your week a bright little boost at The Sunny with Think Trivia. Get ready for a free night packed with fun, fast thinking questions, lively entertainment and plenty of moments that will have your table cheering. Round up your team, soak up the buzzing club atmosphere, and play for your chance to win some fantastic prizes. Book your table now and join us in the Sunrise Espresso Lounge at The Sunny! See you there :D Bookings: (07) 3323 9600",
       "image": "",
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "free",
-        "games"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Salisbury Community Sports Club Trivia Night",
-      "datetime": "Thu 10 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-10T18:30:00",
-      "datetime_end_iso": "",
-      "location": "Salisbury Community Sports Club, 37 Ainsworth Street Salisbury, QLD, 4107 Australia",
-      "link": "https://www.thinktrivia.com.au/weeklyevents/salisbury-community-sports-club-trivia-night",
-      "cost": "free",
-      "source": "Think Trivia",
-      "description": "Settle in for a cracking night at Salisbury Community Sports Club with Think Trivia! Enjoy free weekly entertainment in a relaxed local setting, where great food, cold drinks and community spirit come together for a night of fun questions and friendly rivalry. Round up your team, grab a table, and see if your brainpower can bowl over the competition and land you some amazing prizes. NB: Max. 10 players per team. Bookings: (07) 3277 2274",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "trivia",
-        "free",
-        "games"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": true,

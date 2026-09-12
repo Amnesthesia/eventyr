@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wake Up & Sing! with One Voice Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-72pi18@dothings
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:Wake Up & Sing! with One Voice Brisbane
+DESCRIPTION:Changing the world… one voice at a time.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/wake-up-and-sing-with-one-voice-
+ brisbane
+END:VEVENT
+END:VCALENDAR

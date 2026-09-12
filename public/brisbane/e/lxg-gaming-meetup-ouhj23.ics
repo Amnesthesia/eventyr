@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LXG GAMING MEETUP
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ouhj23@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T090000
+DTEND;TZID=Australia/Brisbane:20260927T170000
+SUMMARY:LXG GAMING MEETUP
+DESCRIPTION:
+LOCATION:QLD Contract Bridge Club\, 67 Ipswich Road
+URL:https://lxgbrisbane.com/event/lxg-meetup-sept-2026/
+END:VEVENT
+END:VCALENDAR

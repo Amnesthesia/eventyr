@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:$20-BeLeste Dance(Jindalee) Latin\, Ballroom\, Street Social D
+ ancing(All Welcome)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-t1x8tt@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T180000
+DTEND;TZID=Australia/Brisbane:20260913T203000
+SUMMARY:$20-BeLeste Dance(Jindalee) Latin\, Ballroom\, Street Social Dancin
+ g(All Welcome)
+DESCRIPTION:Popular BELESTE DANCE SOCIAL DANCING SUNDAYS - DFO Jindalee (Lo
+ cated in the Goodlife Health Centre on Level 1) Don't look at the bookings
+  as we get between 50-80 people al
+LOCATION:Goodlife Health Centre\, DFO Jindalee\, Level 1\, 16 Amazon Place\
+ , Jindalee\, Jindalee
+URL:https://www.meetup.com/sw-brisbane-partner-dance-meetup-20s-50s/events/
+ 316250731/
+END:VEVENT
+END:VCALENDAR

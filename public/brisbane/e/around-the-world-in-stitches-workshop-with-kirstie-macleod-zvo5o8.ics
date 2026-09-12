@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Around the World in Stitches Workshop with Kirstie Macleod
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-zvo5o8@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T103000
+DTEND;TZID=Australia/Brisbane:20260913T133000
+SUMMARY:Around the World in Stitches Workshop with Kirstie Macleod
+DESCRIPTION:Join Textile Artist Kirstie Macleod in this Around the World wo
+ rkshop where participants will create a "World Embroidery Sampler"\, learn
+  and stitch motifs and techniques inspired by different cultures whose sti
+ tching is represented in panels in the Red Dress. These stitches inclu
+LOCATION:Brisbane City Hall
+URL:https://www.brisbaneunlocked.com.au/around-the-world-in-stitches-worksh
+ op-with-kirstie-macleod-2026-09-13
+END:VEVENT
+END:VCALENDAR

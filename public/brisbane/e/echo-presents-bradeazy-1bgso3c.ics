@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ECHO presents: BRADEAZY
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1bgso3c@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T210000
+DTEND;TZID=Australia/Brisbane:20260926T230000
+SUMMARY:ECHO presents: BRADEAZY
+DESCRIPTION:Something new is coming to The Beaumont. ECHO presents Bradeazy
+ \, live Saturday 26th September\, joined by Emvee\, Justice Patterson\, JB
+ art and Ayana. Bradeazy is a Miami-based DJ blowing up right now\, blendin
+ g tech-house and bass house with viral internet energy. His breakout track
+ s "Up Down" and "B
+LOCATION:The Beaumont Brisbane\, Brisbane\, Queensland\, Australia\, Brisba
+ ne\, QL
+URL:https://allevents.in/brisbane/echo-presents-bradeazy/200030596532220
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bright Nights by ANZ – Brisbane Festival Installation
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1d993n8@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T180000
+DTEND;TZID=Australia/Brisbane:20260918T200000
+SUMMARY:Bright Nights by ANZ – Brisbane Festival Installation
+DESCRIPTION:A public art installation and light display curated as part of 
+ the Brisbane Festival\, designed for exploration in public spaces.
+LOCATION:Brisbane CBD and South Bank precincts\, Brisbane City
+URL:https://www.brisbanefestival.com.au/
+END:VEVENT
+END:VCALENDAR

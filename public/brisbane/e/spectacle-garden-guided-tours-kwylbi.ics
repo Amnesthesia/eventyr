@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Spectacle Garden Guided Tours
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kwylbi@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T100000
+DTEND;TZID=Australia/Brisbane:20260914T120000
+SUMMARY:Spectacle Garden Guided Tours
+DESCRIPTION:A guided educational tour of the Spectacle Garden featuring det
+ ailed insights into horticulture and garden design.
+LOCATION:Roma Street Parkland
+URL:https://www.oztix.com.au
+END:VEVENT
+END:VCALENDAR

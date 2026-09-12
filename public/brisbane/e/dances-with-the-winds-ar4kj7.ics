@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dances with the Winds
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ar4kj7@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T193000
+DTEND;TZID=Australia/Brisbane:20260919T213000
+SUMMARY:Dances with the Winds
+DESCRIPTION:An evening of classical and contemporary wind ensemble music he
+ ld in the heritage-listed Old Museum building.
+LOCATION:The Old Museum\, Bowen Hills
+URL:https://www.oldmuseum.com.au
+END:VEVENT
+END:VCALENDAR

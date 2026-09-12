@@ -3,7 +3,34 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "theprinceconsort",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "Greaser Garage Party - September!",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "The Prince Consort",
+      "link": "https://theprinceconsort.com.au/whats-on/greaser-garage-party--september.html",
+      "cost": "See link",
+      "source": "The Prince Consort",
+      "description": "Greaser Garage Party is back! September 26 / 2 stages / $10 bucks / full noise! Ft. The Drop Beers Krystal Rivers Call The Mourning Th...",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "music",
+        "concert",
+        "band",
+        "rock",
+        "punk",
+        "nightlife"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

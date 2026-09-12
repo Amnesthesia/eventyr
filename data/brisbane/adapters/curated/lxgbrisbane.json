@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "lxgbrisbane",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "LXG GAMING MEETUP (incl LXG RPG)",
@@ -29,6 +29,28 @@
       "creative": false
     },
     {
+      "title": "LXG GAMING MEETUP",
+      "datetime": "Sun 27 Sep, 9:00 AM",
+      "datetime_iso": "2026-09-27T09:00:00",
+      "datetime_end_iso": "2026-09-27T17:00:00",
+      "location": "QLD Contract Bridge Club, 67 Ipswich Road",
+      "link": "https://lxgbrisbane.com/event/lxg-meetup-sept-2026/",
+      "cost": "See link",
+      "source": "League of Extraordinary Gamers",
+      "description": "&nbsp;",
+      "image": "https://lxgbrisbane.com/wp-content/uploads/revslider/homepage/event-LXGMeetup-e1619444029418.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "games",
+        "gaming",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "LXG GAMING MEETUP (incl LXG RPG)",
       "datetime": "Sun 13 Sep, 9:00 AM",
       "datetime_iso": "2026-09-13T09:00:00",
@@ -44,6 +66,28 @@
         "gaming",
         "rpg",
         "tabletop"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "LXG GAMING MEETUP",
+      "datetime": "Sun 27 Sep, 9:00 AM",
+      "datetime_iso": "2026-09-27T09:00:00",
+      "datetime_end_iso": "2026-09-27T17:00:00",
+      "location": "QLD Contract Bridge Club, 67 Ipswich Road, Woolloongabba, QLD, 4102",
+      "link": "https://lxgbrisbane.com/event/lxg-meetup-sept-2026/",
+      "cost": "See link",
+      "source": "League of Extraordinary Gamers",
+      "description": "&lt;p&gt;&nbsp;&lt;/p&gt;\\n",
+      "image": "https://lxgbrisbane.com/wp-content/uploads/revslider/homepage/event-LXGMeetup-e1619444029418.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "games",
+        "gaming",
+        "community"
       ],
       "social": true,
       "intellectual": false,

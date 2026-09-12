@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yin Yoga | Mondays | 7:30 - 8:20am
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dce6ks@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T073000
+DTEND;TZID=Australia/Brisbane:20260914T082000
+SUMMARY:Yin Yoga | Mondays | 7:30 - 8:20am
+DESCRIPTION:Discover the Healing Power of Yin Yoga! Do you constantly feel 
+ stressed\, tired\, or stiff? It might be time to try Yin Yoga! 🧘 Yin Yo
+ ga is the perfect an
+LOCATION:Weeping Fig Avenue\, Weeping Fig Ave\, Brisbane City\, QL
+URL:https://www.meetup.com/newdawnhealthandwellness-redlands/events/3164634
+ 45/
+END:VEVENT
+END:VCALENDAR

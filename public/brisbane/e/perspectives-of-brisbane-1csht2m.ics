@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Perspectives of Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1csht2m@dothings
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Perspectives of Brisbane
+DESCRIPTION:Perspectives of Brisbane is a compelling snapshot of Brisbane
+ ’s history\, our city's milestone moments and the unique culture of our 
+ creative and connected city.
+LOCATION:Museum of Brisbane\, King George Square (Brisbane City Hall)
+URL:https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/
+END:VEVENT
+END:VCALENDAR

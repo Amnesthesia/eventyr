@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Creative Perks of Motherhood
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1aegfmf@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T100000
+DTEND;TZID=Australia/Brisbane:20260922T120000
+SUMMARY:The Creative Perks of Motherhood
+DESCRIPTION:Motherhood is often framed as the end of a creative life—but 
+ what if birth helps you bloom instead? In this workshop\, we'll explore ho
+ w caregiving\, and espec...
+LOCATION:Creative Mornings Brisbane
+URL:https://creativemornings.com/talks/the-creative-perks-of-motherhood
+END:VEVENT
+END:VCALENDAR

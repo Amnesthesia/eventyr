@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Create your own Superhero with DESIRAI: Festival Village
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1l6dy50@dothings
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+SUMMARY:Create your own Superhero with DESIRAI: Festival Village
+DESCRIPTION:Awaken your inner superhero – digital Illustration with DESIR
+ AI
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/create-your-own-superhero-with-d
+ esirai-festival-village
+END:VEVENT
+END:VCALENDAR

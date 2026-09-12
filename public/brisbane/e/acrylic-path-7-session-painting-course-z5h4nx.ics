@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Acrylic Path | 7-Session Painting Course
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-z5h4nx@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T110000
+DTEND;TZID=Australia/Brisbane:20260924T130000
+SUMMARY:Acrylic Path | 7-Session Painting Course
+DESCRIPTION:Learn to paint with acrylics from the ground up in a course bui
+ lt to grow with you.
+LOCATION:Creative Room Art Space
+URL:https://www.creativeroom.com.au/event-details/acrylic-path-7-session-pa
+ inting-course
+END:VEVENT
+END:VCALENDAR

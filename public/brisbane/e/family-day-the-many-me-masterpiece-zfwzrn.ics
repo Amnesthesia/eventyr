@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Family day | The many-me masterpiece
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-zfwzrn@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T140000
+DTEND;TZID=Australia/Brisbane:20260926T160000
+SUMMARY:Family day | The many-me masterpiece
+DESCRIPTION:Come together as a family for a relaxed crafternoon at Logan Ar
+ t Gallery. Inspired by Ripple Effect artist Xin Weng\, this collaborative 
+ workshop explores the puzzle of personal identity\, asking how our friends
+ \, family\, and culture shape who we are.
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/family-day-the-many-me-masterpiece/
+END:VEVENT
+END:VCALENDAR

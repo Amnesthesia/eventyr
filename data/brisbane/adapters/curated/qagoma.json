@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "qagoma",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Make-Believe Magic: The Worlds of The Jim Henson Company",
@@ -30,7 +30,7 @@
       "creative": true
     },
     {
-      "title": "Archie Moore: Kith and Kin",
+      "title": "Archie Moore: kith and kin",
       "datetime": "Sat 27 Sep 2025, 10:00 AM – Sun 18 Oct 2026",
       "datetime_iso": "2025-09-27T10:00:00",
       "datetime_end_iso": "2026-10-18",
@@ -42,10 +42,10 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "art",
-        "first nations",
+        "firstnations",
         "history",
-        "exhibition"
+        "art",
+        "installation"
       ],
       "social": false,
       "intellectual": true,
@@ -237,7 +237,7 @@
       "creative": true
     },
     {
-      "title": "Make Believe Magic: The Worlds of The Jim Henson Company",
+      "title": "Make Believe: Magic, the Worlds of The Jim Henson Company",
       "datetime": "Sat 12 Sep 2026, 10:00 AM – Sun 18 Apr 2027",
       "datetime_iso": "2026-09-12T10:00:00",
       "datetime_end_iso": "2027-04-18",
@@ -249,10 +249,13 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
         "exhibition",
-        "puppetry",
+        "gallery",
+        "performance",
         "film",
-        "design"
+        "design",
+        "culture"
       ],
       "social": false,
       "intellectual": false,
@@ -276,75 +279,6 @@
         "history",
         "art",
         "installation"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Members Advance Viewing: Make Believe Magic",
-      "datetime": "Sat 12 Sep, 8:00 AM",
-      "datetime_iso": "2026-09-12T08:00:00",
-      "datetime_end_iso": "2026-09-12T10:00:00",
-      "location": "GOMA, Stanley Place, South Bank",
-      "link": "https://www.qagoma.qld.gov.au/event/members-advance-viewing-make-believe-magic-2026-09-12",
-      "cost": "Buy Tickets",
-      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
-      "description": "Be among the first to experience ’’ at a special preview for Members and their guests. Book online or contact QTIX on 136 246. Free for Premium Members, or by redeeming a free ticket voucher – please contact the Members Office on or email to RSVP.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "members",
-        "preview",
-        "exclusive",
-        "art"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Lisa Henson in Conversation",
-      "datetime": "Sat 12 Sep, 11:00 AM",
-      "datetime_iso": "2026-09-12T11:00:00",
-      "datetime_end_iso": "2026-09-12T12:00:00",
-      "location": "GOMA, Stanley Place, South Bank",
-      "link": "https://www.qagoma.qld.gov.au/event/lisahensonconversation-2026-09-12",
-      "cost": "Buy Tickets",
-      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
-      "description": "Join Lisa Henson, CEO of The Jim Henson Company for a rare and intimate conversation reflecting on 70 years of the company’s creativity and innovation. Discover the stories behind some of the most cherished characters in screen history and hear firsthand how The Jim Henson Company continues to push the boundaries of puppetry, animatronics and digital animation to reinvent storytelling for every generation. In conversation with writer and broadcaster Benjamin Law. This event is sold out. Sign up to join the waitlist to be notified when a spot becomes available.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "talk",
-        "film",
-        "puppetry",
-        "design"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Henson Archive",
-      "datetime": "Sun 13 Sep, 10:30 AM",
-      "datetime_iso": "2026-09-13T10:30:00",
-      "datetime_end_iso": "2026-09-13T11:30:00",
-      "location": "GOMA, Stanley Place, South Bank",
-      "link": "https://www.qagoma.qld.gov.au/event/hensonarchive-2026-09-13",
-      "cost": "Buy Tickets",
-      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
-      "description": "Behind every puppet in 'Make, Believe, Magic: The Worlds of The Jim Henson Company' lies a story. How did these treasured objects come to be, and what does it take to bring them all the way to Brisbane for this exclusive exhibition? Join Karen Falk (Archives Director and historian, The Jim Henson Company) in conversation with Amanda Slack-Smith (Curatorial Manager, Australian Cinémathèque and curator ‘Make, Believe, Magic’) as they reveal the fascinating stories behind many of the characters featured in the exhibition.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "history",
-        "archive",
-        "puppetry",
-        "curator"
       ],
       "social": false,
       "intellectual": true,

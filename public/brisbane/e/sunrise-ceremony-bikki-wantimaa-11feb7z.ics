@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunrise Ceremony: Bikki Wantimaa
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-11feb7z@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Sunrise Ceremony: Bikki Wantimaa
+DESCRIPTION:Each Friday morning the Sunrise Ceremony: Bikki Wantimaa acknow
+ ledges and gives thanks to the lands on which the Festival takes place\, h
+ onouring First Nations peoples who have witnessed the sunrise on these lan
+ ds for thousands of years.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/sunrise-ceremony-bikki-wantima
+ a
+END:VEVENT
+END:VCALENDAR

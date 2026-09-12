@@ -3,7 +3,32 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "wag",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "GAPU GA RANGITHIRRI GA NGURRUTHIRRI GA the water is coming up, the water is going away",
+      "datetime": "Sat 26 Sep – Wed 21 Oct",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "2026-10-21",
+      "location": "Woolloongabba Art Gallery",
+      "link": "https://wag.com.au/calendar/2017/gapu-ga-rangithirri-ga-ngurruthirri-ga/",
+      "cost": "See link",
+      "source": "Woolloongabba Art Gallery",
+      "description": "the water is coming up, the water is going away",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "performance",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

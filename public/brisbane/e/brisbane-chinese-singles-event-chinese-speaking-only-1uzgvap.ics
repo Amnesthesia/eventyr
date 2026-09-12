@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:布里斯班｜华人华裔单身见面会｜全中文交流 B
+ risbane Chinese Singles Event | Chinese-speaking Only
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1uzgvap@dothings
+DTSTART;TZID=Australia/Brisbane:20260919T150000
+DTEND;TZID=Australia/Brisbane:20260919T170000
+SUMMARY:布里斯班｜华人华裔单身见面会｜全中文交流 Brisba
+ ne Chinese Singles Event | Chinese-speaking Only
+DESCRIPTION:🏙️ 布里斯班｜华人华裔单身见面会 我们在悉
+ 尼做线下 Meetup 已经七八年了。 这几年，我们认识了很
+ 多来自不同背景的朋友，也一直在做一件很简单的事情
+ ：让生活在澳洲的人，有机会在线下认识新朋友。 这一
+ 次，我们第一次来到布里斯班，希望邀请 15 位在布里斯
+ 班生活的华人华裔单身朋友，坐下来聊聊天，认识一些
+LOCATION:Criterion Tavern\, 239 George St\, Brisbane City QLD 4000\, Brisba
+ ne\, Brisbane
+URL:https://www.meetup.com/sydney-chinese-english-language-exchange-meetup-
+ group/events/316513110/
+END:VEVENT
+END:VCALENDAR

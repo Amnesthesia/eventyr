@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Cheryomushki
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hxhr6q@dothings
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260927
+SUMMARY:Brisbane Cheryomushki
+DESCRIPTION:Shostakovich’s operetta Cheryomushki wittily tackles a housin
+ g crisis with waltzes and folk song\, conducted by Richard Mills.
+LOCATION:Conservatorium Theatre\, Queensland Conservatorium Griffith Univer
+ sity
+URL:https://www.qtix.com.au/whats-on/2026/qcgu-brisbane-cheryomushki/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Betsy Balloon and the Very Great Terrible Flood
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1npc7k2@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Betsy Balloon and the Very Great Terrible Flood
+DESCRIPTION:They’re cheerful\, a bit money-mad and life is on the up. But
+  when the world turns against balloons\, their world pops and Betsy must s
+ tart a new life in a faraway city with her eccentric uncle\, Hercules Snar
+ k\, an inventor of mostly half-finished things.
+LOCATION:Brisbane Festival
+URL:https://brisbanefestival.com.au/events/betsy-balloon-and-the-very-great
+ -terrible-flood
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Welcome to the next 2026 AWS Brisbane Well-Architected User Gr
+ oup Meetup
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-r5aitb@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T173000
+DTEND;TZID=Australia/Brisbane:20260922T203000
+SUMMARY:Welcome to the next 2026 AWS Brisbane Well-Architected User Group M
+ eetup
+DESCRIPTION:Hi Architects\, Welcome to our next AWS Brisbane Well-Architect
+ ed User Group Meetup!!! 🥳 At each meetup we covered off various pillars
+  in detail\, best-pr
+LOCATION:Amazon Web Services Brisbane Office\, Level 30\, 300 George St\, B
+ risbane\, Brisbane
+URL:https://www.meetup.com/aws-brisbane-well-architected-user-group/events/
+ 316263292/
+END:VEVENT
+END:VCALENDAR

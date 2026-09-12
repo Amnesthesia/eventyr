@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Michael Hynes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hiyqqk@dothings
+DTSTART;TZID=Australia/Brisbane:20260917T190000
+DTEND;TZID=Australia/Brisbane:20260917T210000
+SUMMARY:Michael Hynes
+DESCRIPTION:
+LOCATION:Doo-Bop Bar\, 101 Edward Street Brisbane City\, QLD\, 4000 Austral
+ ia
+URL:https://www.doo-bop.com.au/events/ldlpuywskeqjzalrmp8v4m6qj74tfy
+END:VEVENT
+END:VCALENDAR

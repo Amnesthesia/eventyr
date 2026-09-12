@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Shad & Pete Save The World!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-gc8pti@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T213000
+DTEND;TZID=Australia/Brisbane:20260926T233000
+SUMMARY:Shad & Pete Save The World!
+DESCRIPTION:We all have problems – and who better to solve yours than two
+  unqualified comedians with nothing better to do on a Saturday night!
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/shad-pete-save-the-world-5/
+END:VEVENT
+END:VCALENDAR

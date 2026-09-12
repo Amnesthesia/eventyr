@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Husky in Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1sjxg4q@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T190000
+DTEND;TZID=Australia/Brisbane:20260926T210000
+SUMMARY:Husky in Brisbane
+DESCRIPTION:🎶 Don't Miss Husky Live in Brisbane on Saturday\, September 
+ 26\, 2026! 🎶 Are you ready to experience Husky like never before? With 
+ chart-topping hits like Сколько стоят деньги?\, Track 03
+  and Иуда and 319.5K+ devoted fans\, Husky is taking over Black Bear L
+ odge this Saturday\, September 26\, 2026\, and
+LOCATION:Black Bear Lodge\, Black Bear Lodge\, Brisbane\, QL\, Australia\, 
+ Brisbane\, QL
+URL:https://allevents.in/brisbane/husky-in-brisbane/3300030462812402
+END:VEVENT
+END:VCALENDAR

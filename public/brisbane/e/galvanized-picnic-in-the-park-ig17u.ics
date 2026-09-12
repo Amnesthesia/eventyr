@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Galvanized Picnic in the Park
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ig17u@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T110000
+DTEND;TZID=Australia/Brisbane:20260913T140000
+SUMMARY:Galvanized Picnic in the Park
+DESCRIPTION:You can round out your Galvanized festival experience and settl
+ e in for a relaxed Picnic in the Park with live big band music in the beau
+ tiful surrounds of the Bush and Orchid Houses. This vibrant afternoon invi
+ tes visitors to linger\, explore and soak up the timeless charm of one
+LOCATION:Queens Park Ipswich
+URL:https://www.brisbaneunlocked.com.au/galvanized-picnic-in-the-park-2026-
+ 09-13
+END:VEVENT
+END:VCALENDAR

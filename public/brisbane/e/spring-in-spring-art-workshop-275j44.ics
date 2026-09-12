@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Spring in Spring Art Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-275j44@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T113000
+DTEND;TZID=Australia/Brisbane:20260922T130000
+SUMMARY:Spring in Spring Art Workshop
+DESCRIPTION:Join us on Tuesday 22 September\, 11:30am–1:00pm to create a 
+ beautiful piece of spring-inspired art. Using watercolour and mixed media\
+ ,...
+LOCATION:Quick Brown Fox Bookshop
+URL:https://quickbrownfoxbookshop.com.au/arty-fox-spring-into-spring-arttue
+ sday-22-september-11-30-1-00/
+END:VEVENT
+END:VCALENDAR

@@ -3,7 +3,74 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "qut",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "Pride and Courage: Celebrating queer history at QUT and in Queensland",
+      "datetime": "Thu 24 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "",
+      "location": "E Block, QUT Kelvin Grove",
+      "link": "https://www.qut.edu.au/events?id=205852",
+      "cost": "See link",
+      "source": "QUT public events",
+      "description": "The QUT Centre for Justice and the QUT Digital Media Research Centre will host a special Pride Month event on September 24 at Kelvin Grove to celebrate the people, stories and acts of courage that have shaped queer history at QUT and across Queensland.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "history",
+        "lgbtq",
+        "culture",
+        "community"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Free QCE revision lectures return to QUT",
+      "datetime": "Tue 22 Sep – Wed 23 Sep",
+      "datetime_iso": "2026-09-22",
+      "datetime_end_iso": "2026-09-23",
+      "location": "Gardens Point",
+      "link": "https://www.qut.edu.au/events?id=205670",
+      "cost": "See link",
+      "source": "QUT public events",
+      "description": "",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "science",
+        "students",
+        "history"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Campus tours",
+      "datetime": "Thu 24 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "",
+      "location": "Gardens Point and Kelvin Grove campuses",
+      "link": "https://www.qut.edu.au/study/events/campus-tours",
+      "cost": "See link",
+      "source": "QUT public events",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "tour",
+        "community"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

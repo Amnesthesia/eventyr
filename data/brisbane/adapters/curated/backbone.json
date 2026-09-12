@@ -3,31 +3,7 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "backbone",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": [
-    {
-      "title": "SHOOTING LIVE PERFORMANCE WITH GDOCS",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "",
-      "location": "Seven Hills Hub",
-      "link": "https://backbone.org.au/",
-      "cost": "See link",
-      "source": "Seven Hills Hub / Backbone Youth Arts",
-      "description": "",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "photography",
-        "performance",
-        "media",
-        "skills"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    }
-  ]
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": []
 }

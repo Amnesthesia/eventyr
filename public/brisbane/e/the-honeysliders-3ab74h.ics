@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Honeysliders
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3ab74h@dothings
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:The Honeysliders
+DESCRIPTION:Featuring 3 x ARIA Award nominated singer\, guitarist and song 
+ writer Danny Widdicombe (The Wilson Pickers\, Bernard Fanning\, Tim Rogers
+ )\, The Honey ...
+LOCATION:Felons Brewing Co
+URL:https://felonsbrewingco.com.au/blogs/whats-on/the-honeysliders-1
+END:VEVENT
+END:VCALENDAR

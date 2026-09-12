@@ -3,49 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "creativemornings",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "LEVEL UP: How to Turn Every Setback into Your Next Advantage",
-      "datetime": "Wed 9 Sep, 11:00 AM",
-      "datetime_iso": "2026-09-09T11:00:00",
-      "datetime_end_iso": "",
-      "location": "Creative Mornings Brisbane",
-      "link": "https://creativemornings.com/talks/level-up-losing-forward-how-to-turn-every-setback-into-your-next-advantage",
-      "cost": "See link",
-      "source": "Creative Mornings Brisbane",
-      "description": "Setbacks, rejections, and dead-end pitches aren't the end of a creative career — they're often the turning point. In this FieldTrip, Vinny Anand (Executive P...",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "writing"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "LEVEL UP: The Networking Playbook",
-      "datetime": "Thu 10 Sep, 12:30 PM",
-      "datetime_iso": "2026-09-10T12:30:00",
-      "datetime_end_iso": "",
-      "location": "Creative Mornings Brisbane",
-      "link": "https://creativemornings.com/talks/level-up-the-networking-playbook",
-      "cost": "See link",
-      "source": "Creative Mornings Brisbane",
-      "description": "AI can't replace human relationships—and if you want to grow in your career, business, or personal life, networking is still one of your best bets. Is networ...",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "technology"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": true,
-      "creative": false
-    },
     {
       "title": "Feel it, Write it.",
       "datetime": "Wed 16 Sep, 7:00 PM",
@@ -85,6 +45,95 @@
       "social": true,
       "intellectual": true,
       "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "The Creative Perks of Motherhood",
+      "datetime": "Tue 22 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-22T10:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/the-creative-perks-of-motherhood",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "Motherhood is often framed as the end of a creative life—but what if birth helps you bloom instead? In this workshop, we'll explore how caregiving, and espec...",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "writing",
+        "design",
+        "community"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "LEVEL UP: Becoming Impossible to Ignore (Without Becoming an Influencer)",
+      "datetime": "Tue 22 Sep, 1:00 PM",
+      "datetime_iso": "2026-09-22T13:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/level-up-becoming-impossible-to-ignore-without-becoming-an-influencer",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "You don't need to become an influencer or constantly create original content to become known for what you do. In this practical FieldTrip, PR expert, author ...",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "design",
+        "writing",
+        "technology",
+        "community"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "From SEO Keyword to Repurposing Content Plan",
+      "datetime": "Wed 23 Sep, 1:00 PM",
+      "datetime_iso": "2026-09-23T13:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/from-seo-keyword-to-repurposing-content-plan",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "Most creatives know they should be showing up online consistently — but creating content from scratch every week is exhausting. What if one piece of content ...",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "design",
+        "technology",
+        "writing",
+        "community"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Connect + Reflect: A CreativeMornings Mixer on September's Theme: CURRENT",
+      "datetime": "Thu 24 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-24T16:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/connect-reflect-a-creativemornings-mixer-on-september-s-theme-nakhlah",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "❤️ Connect &amp; Reflect is a mixer designed to bring the CreativeMornings community together around our monthly global themes. ✨What's a Global Theme?✨ Eac...",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "community",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
       "creative": false
     }
   ]

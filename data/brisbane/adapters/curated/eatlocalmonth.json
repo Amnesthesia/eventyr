@@ -3,31 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "eatlocalmonth",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "Fields of Fun in Every Region",
-      "datetime": "Sat 12 Sep 2026 – Mon 14 Jun 2027",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "2027-06-14",
-      "location": "Scenic Rim Eat Local Month",
-      "link": "https://eatlocalmonth.com.au/",
-      "cost": "See link",
-      "source": "Scenic Rim Eat Local Month",
-      "description": "A weekend of occasions, each one worthy of your best hat. Race day at Beaudesert. An exclusive eight-course showcase at Blume. Estate wines overlooking Lake Wyaralong. Then Sunday begins before dawn, floating above ancient peaks in a hot air balloon as the Scenic Rim reveals itself below. Dress for it.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "scenic rim",
-        "outdoor"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
     {
       "title": "Harvesting & Family Fun",
       "datetime": "Sat 19 Sep 2026 – Mon 21 Jun 2027",
@@ -70,6 +48,30 @@
       "social": true,
       "intellectual": false,
       "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Winter Harvest Weekend",
+      "datetime": "Sat 26 Sep 2026 – Mon 28 Jun 2027",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "2027-06-28",
+      "location": "Scenic Rim Eat Local Month",
+      "link": "https://eatlocalmonth.com.au/",
+      "cost": "See link",
+      "source": "Scenic Rim Eat Local Month",
+      "description": "This is how Eat Local Month finishes for 2026. With flavour and flair. A lavender terrace dinner at Kooroomba. A main street transformed into a festival of 60 producers. Fireworks over Kalbar. Line dancing at the Harvest Hoedown. Three days of the Scenic Rim at its most alive. Be right in the middle of it.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "festival",
+        "food",
+        "dining",
+        "community",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
       "creative": false
     }
   ]

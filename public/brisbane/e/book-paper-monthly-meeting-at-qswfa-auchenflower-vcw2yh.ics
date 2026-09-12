@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:'Book & Paper' monthly meeting at QSWFA\, Auchenflower
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-vcw2yh@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T093000
+DTEND;TZID=Australia/Brisbane:20260914T140000
+SUMMARY:'Book & Paper' monthly meeting at QSWFA\, Auchenflower
+DESCRIPTION:On the second Monday of every month\, the 'Book & Paper' group 
+ meet at the HQ of the Qld Spinners\, Weavers & Fibre Artists (QSWFA) in Au
+ chenflower. Show &
+LOCATION:Queensland Spinners Weavers & Fibre Artists\, 12 Payne St\, Auchen
+ flower\, QL\, Auchenflower\, QL
+URL:https://www.meetup.com/bookbinding-club/events/316464558/
+END:VEVENT
+END:VCALENDAR

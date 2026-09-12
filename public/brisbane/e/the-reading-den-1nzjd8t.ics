@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Reading Den
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nzjd8t@dothings
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20261001
+SUMMARY:The Reading Den
+DESCRIPTION:Reading Den is our adult book club for readers aged 18 and over
+ . This is...
+LOCATION:Quick Brown Fox Bookshop
+URL:https://quickbrownfoxbookshop.com.au/the-reading-den-the-correspondentw
+ ednesday-30-september-600-700/
+END:VEVENT
+END:VCALENDAR

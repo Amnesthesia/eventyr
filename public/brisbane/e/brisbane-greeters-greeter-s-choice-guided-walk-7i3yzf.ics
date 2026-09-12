@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Greeters - Greeter's Choice guided walk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7i3yzf@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T100000
+DTEND;TZID=Australia/Brisbane:20260913T123000
+SUMMARY:Brisbane Greeters - Greeter's Choice guided walk
+DESCRIPTION:Join one of our welcoming and experienced Brisbane Greeters as 
+ they share their knowledge and passion for Brisbane on this guided walking
+  tour. Explore our booking site to discover a Brisbane Greeters walk to su
+ it you\, whether it be in the CBD or one of our most historically sign
+LOCATION:Brisbane City Hall\, Brisbane City
+URL:https://www.brisbaneunlocked.com.au/brisbane-greeters-greeters-choice-g
+ uided-walk-2026-09-13
+END:VEVENT
+END:VCALENDAR

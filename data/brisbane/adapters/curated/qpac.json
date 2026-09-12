@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "qpac",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Brisbane Festival",
@@ -30,141 +30,9 @@
       "creative": true
     },
     {
-      "title": "Gilbert & Sullivan: A Soiree of Song and Satire",
-      "datetime": "Wed 9 Sep, 1:00 PM",
-      "datetime_iso": "2026-09-09T13:00:00",
-      "datetime_end_iso": "",
-      "location": "Concert Hall, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/2026/gilbert-and-sullivan/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "A joyful concert-style celebration of wit and melody, honouring the much-loved Gilbert & Sullivan repertoire.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "classical",
-        "opera",
-        "theatre"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Strong is the New Pretty",
-      "datetime": "Wed 9 Sep, 1:00 PM – Sat 19 Sep",
-      "datetime_iso": "2026-09-09T13:00:00",
-      "datetime_end_iso": "2026-09-19",
-      "location": "Playhouse, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/2026/queensland-theatre-company-strong-is-the-new-pretty/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "Experience a nail-biting showdown and an inspiring story of determination, legacy and pride.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "performance",
-        "drama"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "THE BOOK OF MORMON",
-      "datetime": "Tue 8 Sep, 10:17 PM",
-      "datetime_iso": "2026-09-08T22:17:00",
-      "datetime_end_iso": "",
-      "location": "Glasshouse Theatre, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/2026/the-book-of-mormon/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "Hello again! Brisbane, the Mormons are back! Don’t miss the outrageous musical comedy that has become an international sensation.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "musical",
-        "comedy"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Piano Bar",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "QPAC, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/2026/piano-bar/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "Enjoy our intimate Piano Bar, offering a truly enchanting post-theatre experience.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "piano",
-        "music",
-        "social"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Live at Melbourne Street Green",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Melbourne Street Green, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/2026/live-at-melbourne-street-green/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "Live Acts. Local Talent. Free on Fridays. This is the perfect way to kickstart your weekend with a weekly program of free performances.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "live",
-        "music",
-        "free",
-        "outdoor"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Class of 2026 Musical Theatre Showcase",
-      "datetime": "Thu 10 Sep, 7:00 PM – Sat 19 Sep",
-      "datetime_iso": "2026-09-10T19:00:00",
-      "datetime_end_iso": "2026-09-19",
-      "location": "Tony Gould Gallery, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/2026/qcgu-class-of-2026-musical-theatre-showcase/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "Discover the next generation of professional musical theatre talent with this dynamic industry showcase.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "musical",
-        "theatre",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Shel We",
-      "datetime": "Thu 10 Sep, 6:30 PM – Sun 13 Sep",
-      "datetime_iso": "2026-09-10T18:30:00",
+      "datetime": "Sun 13 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-13T14:00:00",
       "datetime_end_iso": "2026-09-13",
       "location": "Cremorne Theatre, Grey St, South Bank",
       "link": "https://www.qpac.com.au/whats-on/2026/bf-shel-we/",
@@ -176,31 +44,10 @@
       "tags": [
         "theatre",
         "performance",
-        "arts"
+        "family",
+        "kids"
       ],
       "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "RocKwiz Rocks Brisbane",
-      "datetime": "Sat 12 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-12T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Concert Hall, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/2026/bf-rockwiz-rocks-brisbane/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "RocKwiz returns to QPAC for a special night of unique entertainment with a tailor made Brisbane show!",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "quiz",
-        "entertainment"
-      ],
-      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -223,6 +70,116 @@
         "bach"
       ],
       "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Strong is the New Pretty",
+      "datetime": "Sun 13 Sep, 6:07 AM",
+      "datetime_iso": "2026-09-13T06:07:00",
+      "datetime_end_iso": "",
+      "location": "Playhouse, Grey St, South Bank",
+      "link": "https://www.qpac.com.au/whats-on/2026/queensland-theatre-company-strong-is-the-new-pretty/",
+      "cost": "See link",
+      "source": "Queensland Performing Arts Centre (QPAC)",
+      "description": "Experience a nail-biting showdown and an inspiring story of determination, legacy and pride.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Class of 2026 Musical Theatre Showcase",
+      "datetime": "Sat 19 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-19T14:00:00",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Tony Gould Gallery, Grey St, South Bank",
+      "link": "https://www.qpac.com.au/whats-on/2026/qcgu-class-of-2026-musical-theatre-showcase/",
+      "cost": "See link",
+      "source": "Queensland Performing Arts Centre (QPAC)",
+      "description": "Discover the next generation of professional musical theatre talent with this dynamic industry showcase.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "musical",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "THE BOOK OF MORMON",
+      "datetime": "Sun 13 Sep, 6:07 AM",
+      "datetime_iso": "2026-09-13T06:07:00",
+      "datetime_end_iso": "",
+      "location": "Glasshouse Theatre, Grey St, South Bank",
+      "link": "https://www.qpac.com.au/whats-on/2026/the-book-of-mormon/",
+      "cost": "See link",
+      "source": "Queensland Performing Arts Centre (QPAC)",
+      "description": "Hello again! Brisbane, the Mormons are back! Don’t miss the outrageous musical comedy that has become an international sensation.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "musical",
+        "comedy",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Piano Bar",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "",
+      "location": "QPAC, Grey St, South Bank",
+      "link": "https://www.qpac.com.au/whats-on/2026/piano-bar/",
+      "cost": "See link",
+      "source": "Queensland Performing Arts Centre (QPAC)",
+      "description": "Enjoy our intimate Piano Bar, offering a truly enchanting post-theatre experience.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Live at Melbourne Street Green",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "",
+      "location": "Melbourne Street Green, Grey St, South Bank",
+      "link": "https://www.qpac.com.au/whats-on/2026/live-at-melbourne-street-green/",
+      "cost": "See link",
+      "source": "Queensland Performing Arts Centre (QPAC)",
+      "description": "Live Acts. Local Talent. Free on Fridays. This is the perfect way to kickstart your weekend with a weekly program of free performances.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "performance"
+      ],
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -272,9 +229,52 @@
       "creative": true
     },
     {
+      "title": "LEGENDS (of the Golden Arches)",
+      "datetime": "Thu 17 Sep, 6:30 PM – Sun 20 Sep",
+      "datetime_iso": "2026-09-17T18:30:00",
+      "datetime_end_iso": "2026-09-20",
+      "location": "Cremorne Theatre, Grey St, South Bank",
+      "link": "https://www.qpac.com.au/whats-on/2026/bf-legends-of-the-golden-arches/",
+      "cost": "See link",
+      "source": "Queensland Performing Arts Centre (QPAC)",
+      "description": "A rip-roaring ride into the depths of the Chinese afterlife at QPAC&#x2019;s Cremorne Theatre!",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Nurse Georgie Carroll: Infectious",
+      "datetime": "Fri 18 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-18T20:00:00",
+      "datetime_end_iso": "",
+      "location": "Concert Hall, Grey St, South Bank",
+      "link": "https://www.qpac.com.au/whats-on/2026/nurse-georgie-carroll-infectious/",
+      "cost": "See link",
+      "source": "Queensland Performing Arts Centre (QPAC)",
+      "description": "Nurse Georgie Carroll returns to Brisbane with her brand-new, razor-sharp show, Infectious.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "comedy",
+        "standup",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "THE BOOK OF MORMON",
-      "datetime": "Tue 8 Sep, 10:17 PM",
-      "datetime_iso": "2026-09-08T22:17:00",
+      "datetime": "Sun 13 Sep, 6:07 AM",
+      "datetime_iso": "2026-09-13T06:07:00",
       "datetime_end_iso": "",
       "location": "Glasshouse Theatre, Grey St, South Bank",
       "link": "https://www.qpac.com.au/whats-on/2026/the-book-of-mormon/",
@@ -282,10 +282,12 @@
       "source": "Queensland Performing Arts Centre (QPAC)",
       "description": "Hello again! Brisbane, the Mormons are back! Don’t miss the outrageous musical comedy that has become an international sensation.",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Arts / Exhibition",
       "tags": [
+        "theatre",
         "musical",
-        "comedy"
+        "comedy",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -294,8 +296,8 @@
     },
     {
       "title": "Piano Bar",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
       "datetime_end_iso": "",
       "location": "QPAC, Grey St, South Bank",
       "link": "https://www.qpac.com.au/whats-on/2026/piano-bar/",
@@ -305,9 +307,9 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "piano",
         "music",
-        "social"
+        "live music",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -315,31 +317,9 @@
       "creative": true
     },
     {
-      "title": "Queensland Theatre Company Strong is the New Pretty",
-      "datetime": "Wed 9 Sep, 1:00 PM – Sat 19 Sep",
-      "datetime_iso": "2026-09-09T13:00:00",
-      "datetime_end_iso": "2026-09-19",
-      "location": "Playhouse, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/2026/queensland-theatre-company-strong-is-the-new-pretty/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "Experience a nail-biting showdown and an inspiring story of determination, legacy and pride.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "drama",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Live at Melbourne Street Green",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
       "datetime_end_iso": "",
       "location": "Melbourne Street Green, Grey St, South Bank",
       "link": "https://www.qpac.com.au/whats-on/2026/live-at-melbourne-street-green/",
@@ -349,7 +329,9 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "live music"
+        "music",
+        "live music",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -357,29 +339,9 @@
       "creative": true
     },
     {
-      "title": "Enviro-Beats Workshop",
-      "datetime": "Tue 8 Sep – Fri 11 Sep",
-      "datetime_iso": "2026-09-08",
-      "datetime_end_iso": "2026-09-11",
-      "location": "Queensland Performing Arts Centre, Grey St, South Bank",
-      "link": "https://www.qpac.com.au/whats-on/creative-learning/enviro-beats-workshop/",
-      "cost": "See link",
-      "source": "Queensland Performing Arts Centre (QPAC)",
-      "description": "Turn rubbish into rhythm in the high-energy Enviro-Beats workshop with the Junkyard Beats team.",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "environment"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
       "title": "Shel We",
-      "datetime": "Thu 10 Sep, 6:30 PM – Sun 13 Sep",
-      "datetime_iso": "2026-09-10T18:30:00",
+      "datetime": "Sun 13 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-13T14:00:00",
       "datetime_end_iso": "2026-09-13",
       "location": "Cremorne Theatre, Grey St, South Bank",
       "link": "https://www.qpac.com.au/whats-on/2026/bf-shel-we/",
@@ -391,7 +353,52 @@
       "tags": [
         "theatre",
         "performance",
-        "arts"
+        "family",
+        "kids"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Class of 2026 Musical Theatre Showcase",
+      "datetime": "Sat 19 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-19T14:00:00",
+      "datetime_end_iso": "2026-09-19",
+      "location": "Tony Gould Gallery, Grey St, South Bank",
+      "link": "https://www.qpac.com.au/whats-on/2026/qcgu-class-of-2026-musical-theatre-showcase/",
+      "cost": "See link",
+      "source": "Queensland Performing Arts Centre (QPAC)",
+      "description": "Discover the next generation of professional musical theatre talent with this dynamic industry showcase.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "musical",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Complete Bach Catalogue for Organ",
+      "datetime": "Sun 13 Sep, 6:00 AM",
+      "datetime_iso": "2026-09-13T06:00:00",
+      "datetime_end_iso": "",
+      "location": "Concert Hall, Grey St, South Bank",
+      "link": "https://www.qpac.com.au/whats-on/2026/bf-the-complete-bach-catalogue-for-organ/",
+      "cost": "See link",
+      "source": "Queensland Performing Arts Centre (QPAC)",
+      "description": "Renowned Australian organist Calvin Bowman leads audiences through the complete organ works of Johann Sebastian Bach.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "classical",
+        "organ",
+        "bach"
       ],
       "social": false,
       "intellectual": false,

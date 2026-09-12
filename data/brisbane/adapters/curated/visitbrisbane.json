@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "aggregators",
   "source_id": "visitbrisbane",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "PRECIOUS",
-      "datetime": "Tue 8 Sep, 10:16 PM",
-      "datetime_iso": "2026-09-08T22:16:00",
+      "datetime": "Sun 13 Sep, 6:06 AM",
+      "datetime_iso": "2026-09-13T06:06:00",
       "datetime_end_iso": "",
       "location": "Visit Brisbane (Brisbane Economic Development Agency)",
       "link": "https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/precious-4cd2",
@@ -19,17 +19,20 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "exhibition"
+        "art",
+        "exhibition",
+        "history",
+        "design"
       ],
       "social": false,
-      "intellectual": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "MAKE, BELIEVE, MAGIC - THE WORLDS OF THE JIM HENSON COMPANY",
-      "datetime": "Sat 12 Sep 2026, 10:00 AM – Sun 18 Apr 2027",
-      "datetime_iso": "2026-09-12T10:00:00",
+      "datetime": "Sat 12 Sep 2026 – Sun 18 Apr 2027",
+      "datetime_iso": "2026-09-12",
       "datetime_end_iso": "2027-04-18",
       "location": "Visit Brisbane (Brisbane Economic Development Agency)",
       "link": "https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/make-believe-magic-the-worlds-of-the-jim-henson-company-78eb",
@@ -39,10 +42,11 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
+        "art",
         "exhibition",
-        "film",
-        "puppetry",
-        "design"
+        "performance",
+        "design",
+        "technology"
       ],
       "social": false,
       "intellectual": false,
@@ -51,8 +55,8 @@
     },
     {
       "title": "MICRO MUSEUM",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
       "location": "Museum of Brisbane",
       "link": "https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/micro-museum-fc3b",
@@ -62,20 +66,22 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "kids",
         "art",
-        "interactive",
-        "family"
+        "exhibition",
+        "kids",
+        "family",
+        "design",
+        "craft"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true
     },
     {
       "title": "BLUEY’S WORLD",
-      "datetime": "Tue 8 Sep",
-      "datetime_iso": "2026-09-08",
+      "datetime": "Sun 13 Sep",
+      "datetime_iso": "2026-09-13",
       "datetime_end_iso": "",
       "location": "Northshore Pavilion, Brisbane, Queensland",
       "link": "https://visit.brisbane.qld.au/whats-on/northern-suburbs/eat-and-drink-events/blueys-world-5fa7",
@@ -85,10 +91,9 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "family",
         "kids",
-        "immersive",
-        "entertainment"
+        "family",
+        "games"
       ],
       "social": false,
       "intellectual": false,

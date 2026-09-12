@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "loganarts",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Upcoming Exhibitions",
@@ -73,116 +73,6 @@
       "creative": true
     },
     {
-      "title": "Shailer Park SHS – Ignite Dance Academy – Magic",
-      "datetime": "Tue 8 Sep, 5:30 PM",
-      "datetime_iso": "2026-09-08T17:30:00",
-      "datetime_end_iso": "",
-      "location": "KBF",
-      "link": "https://www.loganarts.com.au/event/shailer-park-ignite-dance-academy-magic/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Shailer Park State High School's Ignite Dance Academy presents Magic on Tuesday 8 September, 2026.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "performance",
-        "youth"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Wakakirri QLD Awards Night 2026",
-      "datetime": "Tue 8 Sep, 6:45 PM",
-      "datetime_iso": "2026-09-08T18:45:00",
-      "datetime_end_iso": "",
-      "location": "LEC",
-      "link": "https://www.loganarts.com.au/event/wakakirri-qld-awards-night-2026/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Wakakirri is a nationwide initiative for Australian schools that provides a platform for students to express their thoughts, ideas, and aspirations through the art of storytelling and dance. Inspired by the belief that great stories can inspire change, Wakakirri is designed to promote student engagement and well-being in schools through the creation and performance of captivating Story-Dances. ​",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "storytelling",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Exhibition opening",
-      "datetime": "Fri 11 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-11T17:00:00",
-      "datetime_end_iso": "",
-      "location": "Art Gallery",
-      "link": "https://www.loganarts.com.au/event/exhibition-opening-9/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Mayor Jon Raven and Councillors of the City of Logan invite you to celebrate the opening of two new exhibitions, Artwaves and Ripple effect | Out of Artwaves: Nature of my bodies by Xin Weng on Friday 11 September at 5 pm",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "art",
-        "opening",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Logan Business Distinction Awards 2026",
-      "datetime": "Fri 11 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-11T18:00:00",
-      "datetime_end_iso": "",
-      "location": "LEC",
-      "link": "https://www.loganarts.com.au/event/logan-business-distinction-awards-2026/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Join us for the region’s premier business event of the year on Friday, 11th September 2026 at the Logan Entertainment Centre . Arrive at 6:00 PM to roll out the red carpet and celebrate the incredible achievements, innovation, and resilience of our local business community.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "business",
-        "awards",
-        "networking"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Life drawing | Afternoon session",
-      "datetime": "Sat 12 Sep, 1:30 PM",
-      "datetime_iso": "2026-09-12T13:30:00",
-      "datetime_end_iso": "",
-      "location": "Art Gallery",
-      "link": "https://www.loganarts.com.au/event/life-drawing-afternoon/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "art",
-        "drawing",
-        "creative"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
       "title": "Underdog Film Fest 2026",
       "datetime": "Sat 12 Sep, 11:00 AM – Sun 13 Sep",
       "datetime_iso": "2026-09-12T11:00:00",
@@ -224,6 +114,120 @@
       "social": true,
       "intellectual": false,
       "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Logan Drama Festival 2026",
+      "datetime": "Wed 16 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-16T18:00:00",
+      "datetime_end_iso": "",
+      "location": "KBF",
+      "link": "https://www.loganarts.com.au/event/logan-drama-festival/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Join us for the annual Logan Drama Festival - a vibrant celebration of creativity, talent, and storytelling from the heart of our community.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "performance",
+        "festival",
+        "culture",
+        "community"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Lunch and Learn | A Beenleigh Childhood",
+      "datetime": "Thu 17 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-17T12:00:00",
+      "datetime_end_iso": "",
+      "location": "The Line & Rail Artspace",
+      "link": "https://www.loganarts.com.au/event/lunch-and-learn-a-beenleigh-childhood/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Join Local Heritage Specialist Dr Hilda Maclean to learn more about what life was like growing up in a country town.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "history",
+        "local",
+        "talk"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Up late | Forget me not: attaching memories to objects with Dr Hilda Maclean",
+      "datetime": "Thu 17 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-17T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Art Gallery",
+      "link": "https://www.loganarts.com.au/event/up-late-lecture-series-forget-me-not-attaching-memories-to-objects/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "How do you capture a memory of a person, place or event? What do you decide to keep and for how long? When is it time to let it go? Will it become a gift or garbage?",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "history",
+        "philosophy",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Let’s get arty for preschoolers | Sculpt a crafty creature",
+      "datetime": "Fri 18 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-18T10:00:00",
+      "datetime_end_iso": "",
+      "location": "Art Gallery",
+      "link": "https://www.loganarts.com.au/event/lets-get-arty-for-preschoolers-sculpt-a-crafty-creature/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Read, rhyme, and create at Logan Art Gallery! Bring your little one for a fun, creative session designed especially for curious preschoolers.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "craft",
+        "kids",
+        "family"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Silver Series: Do You Know the Way to San Jose",
+      "datetime": "Fri 18 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-18T10:00:00",
+      "datetime_end_iso": "",
+      "location": "LEC",
+      "link": "https://www.loganarts.com.au/event/silver-series-do-you-know-the-way-to-san-jose/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "The best of Burt Bacharach and Hal David",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "concert",
+        "pop"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
       "creative": true
     },
     {
@@ -290,116 +294,6 @@
       "social": false,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Shailer Park SHS – Ignite Dance Academy – Magic",
-      "datetime": "Tue 8 Sep, 5:30 PM",
-      "datetime_iso": "2026-09-08T17:30:00",
-      "datetime_end_iso": "",
-      "location": "Kingston Butter Factory Cultural Precinct",
-      "link": "https://www.loganarts.com.au/event/shailer-park-ignite-dance-academy-magic/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Shailer Park State High School's Ignite Dance Academy presents Magic on Tuesday 8 September, 2026.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "performance",
-        "youth"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Wakakirri QLD Awards Night 2026",
-      "datetime": "Tue 8 Sep, 6:45 PM",
-      "datetime_iso": "2026-09-08T18:45:00",
-      "datetime_end_iso": "",
-      "location": "Logan Entertainment Centre",
-      "link": "https://www.loganarts.com.au/event/wakakirri-qld-awards-night-2026/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Wakakirri is a nationwide initiative for Australian schools that provides a platform for students to express their thoughts, ideas, and aspirations through the art of storytelling and dance. Inspired by the belief that great stories can inspire change, Wakakirri is designed to promote student engagement and well-being in schools through the creation and performance of captivating Story-Dances. ​",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "storytelling",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Logan Art Gallery Exhibition opening",
-      "datetime": "Fri 11 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-11T17:00:00",
-      "datetime_end_iso": "",
-      "location": "Logan Art Gallery",
-      "link": "https://www.loganarts.com.au/event/exhibition-opening-9/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Mayor Jon Raven and Councillors of the City of Logan invite you to celebrate the opening of two new exhibitions, Artwaves and Ripple effect | Out of Artwaves: Nature of my bodies by Xin Weng on Friday 11 September at 5 pm",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "art",
-        "opening",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Logan Business Distinction Awards 2026",
-      "datetime": "Fri 11 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-11T18:00:00",
-      "datetime_end_iso": "",
-      "location": "Logan Entertainment Centre",
-      "link": "https://www.loganarts.com.au/event/logan-business-distinction-awards-2026/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "Join us for the region’s premier business event of the year on Friday, 11th September 2026 at the Logan Entertainment Centre . Arrive at 6:00 PM to roll out the red carpet and celebrate the incredible achievements, innovation, and resilience of our local business community.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "business",
-        "awards",
-        "networking"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Life drawing | Afternoon session",
-      "datetime": "Sat 12 Sep, 1:30 PM",
-      "datetime_iso": "2026-09-12T13:30:00",
-      "datetime_end_iso": "",
-      "location": "Logan Art Gallery",
-      "link": "https://www.loganarts.com.au/event/life-drawing-afternoon/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "art",
-        "drawing",
-        "creative"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
       "creative": true
     },
     {
@@ -491,6 +385,28 @@
       "creative": false
     },
     {
+      "title": "Up late | Forget me not: attaching memories to objects with Dr Hilda Maclean",
+      "datetime": "Thu 17 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-17T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Logan Art Gallery",
+      "link": "https://www.loganarts.com.au/event/up-late-lecture-series-forget-me-not-attaching-memories-to-objects/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "How do you capture a memory of a person, place or event? What do you decide to keep and for how long? When is it time to let it go? Will it become a gift or garbage?",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "history",
+        "philosophy",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Let’s get arty for preschoolers | Sculpt a crafty creature",
       "datetime": "Fri 18 Sep, 10:00 AM",
       "datetime_iso": "2026-09-18T10:00:00",
@@ -513,7 +429,7 @@
       "creative": true
     },
     {
-      "title": "Silver Series: Do You Know the Way to San Jose",
+      "title": "Silver Series: Do You Know the Way to San Jose The best of Burt Bacharach and Hal David",
       "datetime": "Fri 18 Sep, 10:00 AM",
       "datetime_iso": "2026-09-18T10:00:00",
       "datetime_end_iso": "",
@@ -526,34 +442,13 @@
       "category": "Concert / Music",
       "tags": [
         "music",
-        "tribute",
-        "performance"
+        "live music",
+        "concert",
+        "pop"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "‘Sister City’ Children’s Art Workshop",
-      "datetime": "Sat 19 Sep, 2:00 PM",
-      "datetime_iso": "2026-09-19T14:00:00",
-      "datetime_end_iso": "",
-      "location": "The Line & Rail Artspace",
-      "link": "https://www.loganarts.com.au/event/sister-city-childrens-art-workshop-2/",
-      "cost": "See link",
-      "source": "LoganARTS",
-      "description": "The Line & Rail Artspace is pleased to host fun and creative community art workshop inspired by the theme “Our Town Logan.”",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "art",
-        "community",
-        "workshop"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
       "creative": true
     },
     {
@@ -601,7 +496,29 @@
       "creative": true
     },
     {
-      "title": "Saralanga 2026",
+      "title": "‘Sister City’ Children’s Art Workshop",
+      "datetime": "Sat 19 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-19T14:00:00",
+      "datetime_end_iso": "",
+      "location": "The Line & Rail Artspace",
+      "link": "https://www.loganarts.com.au/event/sister-city-childrens-art-workshop-2/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "The Line & Rail Artspace is pleased to host fun and creative community art workshop inspired by the theme “Our Town Logan.”",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "community",
+        "workshop"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Saralanga 2026 The Queensland Celebration of Sri Lankan Performing Arts",
       "datetime": "Sun 20 Sep, 3:30 PM",
       "datetime_iso": "2026-09-20T15:30:00",
       "datetime_end_iso": "",
@@ -613,13 +530,262 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "culture",
-        "dance",
-        "performance"
+        "music",
+        "performance",
+        "culture"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Artist-Led | Foodie friends with YEAHYEAHCHLOE",
+      "datetime": "Tue 22 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-22T10:00:00",
+      "datetime_end_iso": "",
+      "location": "Logan Art Gallery",
+      "link": "https://www.loganarts.com.au/event/artist-led-foodie-friends-with-yeahyeahchloe/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Join artist YEAHYEAHCHLOE in this hands-on creative school holiday workshop, turning paper into playful 3D food characters. Explore a range of fun paper decorating techniques including curling, fringing, cutting, layering, and collage.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "craft",
+        "design",
+        "kids"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Life drawing | Figure sketching for teens",
+      "datetime": "Wed 23 Sep, 1:30 PM",
+      "datetime_iso": "2026-09-23T13:30:00",
+      "datetime_end_iso": "",
+      "location": "Logan Art Gallery",
+      "link": "https://www.loganarts.com.au/event/life-drawing-figure-sketching-for-teens/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Looking for a creative way to spend your school holidays? Join us for a special teens only life drawing workshop and discover the art of drawing from a live model in a fun, relaxed, and supportive environment.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "drawing",
+        "youth"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "KRANK | Kerbside Creatures: Recycled assemblage sculpture art",
+      "datetime": "Wed 23 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-23T10:00:00",
+      "datetime_end_iso": "",
+      "location": "Living Museum of Logan",
+      "link": "https://www.loganarts.com.au/event/krank-kerbside-creature-recycled-assemblage-sculpture-art/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Join artist Anthony Vanghoua Vue at Living Museum of Logan to transform everyday items into imaginative assemblage sculptures! For ages 5-17",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "sculpture",
+        "craft",
+        "kids",
+        "youth"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Acro Fusion – Love is in the Air",
+      "datetime": "Wed 23 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-23T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Kingston Butter Factory Cultural Precinct",
+      "link": "https://www.loganarts.com.au/event/acro-fusion-love-is-in-the-air/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Acro Fusion presents Love is in the Air on Wednesday 23 September, 2026.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "performance",
+        "dance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "KRANK | Screen printing onto fabric",
+      "datetime": "Thu 24 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-24T10:00:00",
+      "datetime_end_iso": "",
+      "location": "Logan Art Gallery",
+      "link": "https://www.loganarts.com.au/event/krank-screen-printing-onto-fabric/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Join us this school holidays with artist and printmaker Nancy Brown to explore the art of screen printing. Learn how to create your own design, block it out on the screen, and print onto fabric!",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "craft",
+        "design",
+        "youth"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Art 101 | Visible mending for teens",
+      "datetime": "Fri 25 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-25T12:00:00",
+      "datetime_end_iso": "",
+      "location": "Logan Art Gallery",
+      "link": "https://www.loganarts.com.au/event/art-101-visible-mending-for-teens/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "In this brief introduction to the slow art of visible mending, we will explore simple hand stitching methods for mending small holes in clothing. You will learn the methods for hand-patching and simple darning or needleweaving. Bring in some clothing with wear-spots, holes or stains that won’t budge, and with some time, patience, and a little bit of extra thread, you can give old clothes a personal touch and extend its wearability!",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "craft",
+        "textiles",
+        "design",
+        "youth"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "The Ultimate Magic Show featuring Jonas Jost",
+      "datetime": "Fri 25 Sep, 1:30 PM",
+      "datetime_iso": "2026-09-25T13:30:00",
+      "datetime_end_iso": "",
+      "location": "Logan Entertainment Centre",
+      "link": "https://www.loganarts.com.au/event/the-ultimate-magic-show/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "The ULTIMATE Magic Show – A highly popular action-packed family show, featuring hilarious comedy and mind-blowing magic for kids and adults alike.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "performance",
+        "comedy",
+        "kids",
+        "family"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Family day | The many-me masterpiece",
+      "datetime": "Sat 26 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-26T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Logan Art Gallery",
+      "link": "https://www.loganarts.com.au/event/family-day-the-many-me-masterpiece/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Come together as a family for a relaxed crafternoon at Logan Art Gallery. Inspired by Ripple Effect artist Xin Weng, this collaborative workshop explores the puzzle of personal identity, asking how our friends, family, and culture shape who we are.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "craft",
+        "family",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "‘Sister City’ Children’s Art Workshop",
+      "datetime": "Sat 26 Sep, 10:00 AM",
+      "datetime_iso": "2026-09-26T10:00:00",
+      "datetime_end_iso": "",
+      "location": "Logan Art Gallery",
+      "link": "https://www.loganarts.com.au/event/sister-city-childrens-art-workshop/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Logan Art Gallery is pleased to host fun and creative community art workshop inspired by the theme “Our Town Logan.”",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "craft",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Queensland Choral Festival 2026 A Multicultural Choral Feast",
+      "datetime": "Sat 26 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-26T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Logan Entertainment Centre",
+      "link": "https://www.loganarts.com.au/event/queensland-choral-festival-2026/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Australia is a vibrant cultural melting pot with a long history of immigration, enriching its social structure. From Indigenous peoples to waves of immigrants from Europe, Asia, and Africa, Australia thrives on its multicultural diversity, with music being one of the most powerful cultural mediums.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "choir",
+        "singing",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "KRANK| Jewellery Making",
+      "datetime": "Sat 26 Sep, 10:30 AM",
+      "datetime_iso": "2026-09-26T10:30:00",
+      "datetime_end_iso": "",
+      "location": "Mayes Cottage",
+      "link": "https://www.loganarts.com.au/event/krank-jewellery-making/",
+      "cost": "See link",
+      "source": "LoganARTS",
+      "description": "Learn how to twist and shape coiled wire and crystals into beautiful handmade jewellery. You’ll get creative, make something sparkly and unique and enjoy a relaxing craft session in the peaceful surroundings of Mayes Cottage.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "craft",
+        "design",
+        "youth"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
       "creative": true
     }
   ]

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Enchanted Fox
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1lohx9l@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Enchanted Fox
+DESCRIPTION:This Book Club is for fans of speculative fiction which encompa
+ sses many genres including Fantasy\, Science Fiction\, Dystopian\, Time Tr
+ avel\,...
+LOCATION:Quick Brown Fox Bookshop
+URL:https://quickbrownfoxbookshop.com.au/enchanted-fox-water-moonthursday-2
+ 4-september-600-700pm/
+END:VEVENT
+END:VCALENDAR
