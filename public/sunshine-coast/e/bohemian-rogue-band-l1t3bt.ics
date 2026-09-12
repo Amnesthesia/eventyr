@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bohemian Rogue Band
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-l1t3bt@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Bohemian Rogue Band
+DESCRIPTION:
+LOCATION:Mooloolah Valley Country Club\, Mooloolah Valley · Nambour + Hint
+ erland
+URL:https://yelo.live/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:HIGH VOLTAGE
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-syg8q6@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T180000
+DTEND;TZID=Australia/Brisbane:20260926T200000
+SUMMARY:HIGH VOLTAGE
+DESCRIPTION:High Voltage – The AC/DC Experience returns on Saturday\, Sep
+ tember 26 \, bringing the raw power\, blistering guitar solos and iconic a
+ nthems that made AC/DC one of the greatest rock bands of all time.
+LOCATION:Norton Music Factory
+URL:https://tickets.oztix.com.au/outlet/event/ee4e0347-23ca-4df4-8cbf-26f99
+ 163095a
+END:VEVENT
+END:VCALENDAR

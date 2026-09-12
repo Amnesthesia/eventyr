@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Spring School Holidays – Geckoes Wildlife Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1h6l0ld@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T113000
+DTEND;TZID=Australia/Brisbane:20260923T123000
+SUMMARY:Spring School Holidays – Geckoes Wildlife Show
+DESCRIPTION:Tickets Open Monday 3rd August 📅 Wednesday\, 23rd September 
+ ⏰ 11.30 AM – 12.30 PM 📍 Sunshine Coast Function Centre @ Caloundra 
+ RSL Let Martin and the team entertain the kids with their Wildlife show wi
+ th Goannas\, Tawny frogmouth Owl\, Pig Nosed Turtle plus more Ausie wildli
+ fe. This free event is sure to entertain and […]
+LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
+ nd\, 4551
+URL:https://caloundrarsl.com.au/event/spring-school-holidays-geckoes-wildli
+ fe-show/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Billy vs Elton
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-iayu8j@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T193000
+DTEND;TZID=Australia/Brisbane:20260925T213000
+SUMMARY:Billy vs Elton
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/billy-vs-elton/
+END:VEVENT
+END:VCALENDAR

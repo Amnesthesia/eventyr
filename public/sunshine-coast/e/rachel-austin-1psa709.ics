@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Rachel Austin
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1psa709@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T170000
+DTEND;TZID=Australia/Brisbane:20260913T190000
+SUMMARY:Rachel Austin
+DESCRIPTION:Join Rachel las she plays a set of human-influenced songs in th
+ e build up to the production of Human Museum at this iconic theater at the
+  edges of Harrisonburg\, Virginia. Bring a picnic and listen — Rachel pl
+ ays 5-6pm\, Human Museum 6-7:45pm.
+LOCATION:Musician in Residence for Human Museum
+URL:https://www.bandsintown.com/e/108287580-rachel-austin-at-silk-moth-stag
+ e?came_from=257&utm_medium=web&utm_source=home&utm_campaign=event
+END:VEVENT
+END:VCALENDAR

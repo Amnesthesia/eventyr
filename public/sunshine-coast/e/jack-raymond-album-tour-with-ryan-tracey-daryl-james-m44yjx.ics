@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jack Raymond Album Tour with Ryan Tracey & Daryl James
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-m44yjx@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Jack Raymond Album Tour with Ryan Tracey & Daryl James
+DESCRIPTION:You can return to our homepage by clicking here \, or you can t
+ ry searching for the content you are seeking by clicking here .
+LOCATION:Mapleton Public House\, Mapleton · Nambour + Hinterland
+URL:https://www.mapleton.pub/events
+END:VEVENT
+END:VCALENDAR

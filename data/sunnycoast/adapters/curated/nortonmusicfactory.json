@@ -3,7 +3,33 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "nortonmusicfactory",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "HIGH VOLTAGE",
+      "datetime": "Sat 26 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-26T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Norton Music Factory",
+      "link": "https://tickets.oztix.com.au/outlet/event/ee4e0347-23ca-4df4-8cbf-26f99163095a",
+      "cost": "See link",
+      "source": "Norton Music Factory",
+      "description": "High Voltage – The AC/DC Experience returns on Saturday, September 26 , bringing the raw power, blistering guitar solos and iconic anthems that made AC/DC one of the greatest rock bands of all time.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "music",
+        "concert",
+        "band",
+        "rock",
+        "tribute"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

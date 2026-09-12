@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Grease
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-hgxdng@dothings
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260927
+SUMMARY:Grease
+DESCRIPTION:Grease is the Word\, Little Seed Theatre Company\, Youth Theatr
+ e. The J Theatre\, Noosa
+LOCATION:The J Noosa
+URL:https://www.thej.com.au/grease/
+END:VEVENT
+END:VCALENDAR

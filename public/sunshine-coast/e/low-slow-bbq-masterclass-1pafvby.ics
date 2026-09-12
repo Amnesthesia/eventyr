@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Low & Slow BBQ Masterclass
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1pafvby@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T120000
+DTEND;TZID=Australia/Brisbane:20260926T160000
+SUMMARY:Low & Slow BBQ Masterclass
+DESCRIPTION:The Bovine Technicians are at it again – four hours of learni
+ ng\, cooking\, eating 10 different proteins and a few beers to wash it dow
+ n… These classes sell out quick so be sure to book your tickets early. G
+ et all the info and book your tickets here
+LOCATION:Sunshine Brewery
+URL:https://sunshinebrewery.com.au/event/low-slow-bbq-masterclass-3/
+END:VEVENT
+END:VCALENDAR

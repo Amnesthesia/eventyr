@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Royal Mail Tewantin Open Mic
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-f1pmlw@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T190000
+DTEND;TZID=Australia/Brisbane:20260923T210000
+SUMMARY:Royal Mail Tewantin Open Mic
+DESCRIPTION:This new event is fortnightly starting on Wed 23 Sept 7pm first
+  act. Provided gear is PA\, 2 X mic\, acoustic guitar\, full size electric
+  piano\, and stomp. Percussionists please bring cajon/ congas etc. It is o
+ pen to all styles and abilities. Don't feel intimidated\, you will only fi
+ nd respect and encouragement here. Enq to Rev Billy on 0400278280.
+LOCATION:Locals in the Loop
+URL:https://localsintheloop.com.au/listing/royal-mail-tewantin-open-mic/
+END:VEVENT
+END:VCALENDAR

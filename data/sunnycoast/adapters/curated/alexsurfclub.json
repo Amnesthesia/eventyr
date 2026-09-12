@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "alexsurfclub",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Business by the Beach",
@@ -22,28 +22,6 @@
         "networking",
         "business",
         "coffee"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Boaties Reunion RSVP",
-      "datetime": "Sat 12 Sep",
-      "datetime_iso": "2026-09-12",
-      "datetime_end_iso": "",
-      "location": "Bluff Function",
-      "link": "https://alexsurfclub.com.au/event/boaties-reunion-rsvp/",
-      "cost": "See link",
-      "source": "Alexandra Headland Surf Life Saving Club",
-      "description": "",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "reunion",
-        "social",
-        "community"
       ],
       "social": true,
       "intellectual": false,

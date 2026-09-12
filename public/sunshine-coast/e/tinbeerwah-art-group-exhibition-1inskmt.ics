@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tinbeerwah Art Group Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1inskmt@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T090000
+DTEND;TZID=Australia/Brisbane:20260920T170000
+SUMMARY:Tinbeerwah Art Group Exhibition
+DESCRIPTION:A curated exhibition showcasing works by the Tinbeerwah Art Gro
+ up\, celebrating local creative talent.
+LOCATION:Tinbeerwah
+URL:https://www.innoosa.com.au
+END:VEVENT
+END:VCALENDAR

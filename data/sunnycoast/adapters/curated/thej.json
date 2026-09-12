@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "thej",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Sweet Sweat Set 2026 – Karaka Orchestra",
@@ -44,6 +44,29 @@
         "comedy",
         "standup",
         "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Grease",
+      "datetime": "Thu 24 Sep – Sat 26 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "2026-09-26",
+      "location": "The J Noosa",
+      "link": "https://www.thej.com.au/grease/",
+      "cost": "See link",
+      "source": "The J Noosa",
+      "description": "Grease is the Word, Little Seed Theatre Company, Youth Theatre. The J Theatre, Noosa",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "musical",
+        "performance",
+        "youth"
       ],
       "social": false,
       "intellectual": false,

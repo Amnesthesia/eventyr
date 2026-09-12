@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Coolum- Coffee & Chin Wag
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-214c1q@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T063000
+DTEND;TZID=Australia/Brisbane:20260914T073000
+SUMMARY:Coolum- Coffee & Chin Wag
+DESCRIPTION:## About the event Head on down to Coolum Coastal Beach walk fo
+ r a coffee & a chin wag with Shane and the crew. **\\*Location**: open\, s
+ eated area of the C
+LOCATION:Coolum Coastal Board Walk\, 102 Yandina Coolum Road\, Coolum Beach
+ \, Coolum Beach
+URL:https://www.meetup.com/grab-life-by-the-balls-laidback-social-events-fo
+ r-blokes/events/316518618/
+END:VEVENT
+END:VCALENDAR

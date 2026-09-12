@@ -3,75 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "malenycommunitycentre",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "Trivia Night",
-      "datetime": "Fri 11 Sep, 5:30 PM",
-      "datetime_iso": "2026-09-11T17:30:00",
-      "datetime_end_iso": "",
-      "location": "Maleny Community Centre",
-      "link": "https://malenycc.org/event/trivia-night-2/",
-      "cost": "See link",
-      "source": "Maleny Community Centre",
-      "description": "<p><!-- wp:paragraph --></p> <p>Maleny Refugee Advocacy Group Fundraiser Trivia Night with Quiz Master Mark Hawkins.</p> <p><!-- /wp:paragraph --></p> <p><!-- wp:paragraph --></p> <p>Friday 11th September 2026<br />Maleny Community Centre<br />Doors open at 5.30pm for 6.15pm start.</p> <p><!-- /wp:paragraph --></p> <p><!-- wp:paragraph --></p> <p>Bring your own snacks.<br />Bar will be open.<br />Tea, coffee &amp; slices are available.<br />Bring cash for games.<br />Trivia winner prizes.<br />Silent auction.</p> <p><!-- /wp:paragraph --></p> <p><!-- wp:paragraph --></p> <p>Contact Ann to book:<br />Phone 0407 138 182<br />Email malenyrefugeeadvocacygroup@gmail.com</p> <p><!-- /wp:paragraph --></p>",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "trivia",
-        "fundraiser",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "The Richest Woman in the World",
-      "datetime": "Sat 12 Sep, 3:00 PM",
-      "datetime_iso": "2026-09-12T15:00:00",
-      "datetime_end_iso": "",
-      "location": "Maleny Community Centre",
-      "link": "https://malenycc.org/event/the-richest-woman-in-the-world/",
-      "cost": "See link",
-      "source": "Maleny Community Centre",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "theatre",
-        "performance",
-        "arts"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "The Richest Woman in the World",
-      "datetime": "Sat 12 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-12T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Maleny Community Centre",
-      "link": "https://malenycc.org/event/the-richest-woman-in-the-world-copy/",
-      "cost": "See link",
-      "source": "Maleny Community Centre",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "theatre",
-        "performance",
-        "arts"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Briscoe Sisters",
       "datetime": "Sun 13 Sep, 6:00 PM",

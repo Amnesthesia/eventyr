@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LA SALSA PARTY
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1yso3d6@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T190000
+DTEND;TZID=Australia/Brisbane:20260925T210000
+SUMMARY:LA SALSA PARTY
+DESCRIPTION:🎶 La Salsa is BACK in Maroochydore Sunshine Coast! 💃🕺
+LOCATION:Locals in the Loop
+URL:https://localsintheloop.com.au/listing/la-salsa-party/
+END:VEVENT
+END:VCALENDAR

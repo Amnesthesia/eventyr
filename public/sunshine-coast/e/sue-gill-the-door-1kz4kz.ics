@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sue Gill – ‘The Door’
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1kz4kz@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T100000
+DTEND;TZID=Australia/Brisbane:20260914T120000
+SUMMARY:Sue Gill – ‘The Door’
+DESCRIPTION:An exhibition featuring new works by artist Sue Gill at a local
+  gallery space.
+LOCATION:Cool Art Gallery\, Sunshine Coast
+URL:https://coolartgallery.com.au/gallery/
+END:VEVENT
+END:VCALENDAR

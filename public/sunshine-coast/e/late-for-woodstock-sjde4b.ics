@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Late for Woodstock
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-sjde4b@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T193000
+DTEND;TZID=Australia/Brisbane:20260925T223000
+SUMMARY:Late for Woodstock
+DESCRIPTION:60's 70's Tribute band - Keeping the Sounds & Soul of the Woods
+ tock Era Live! The 60's and 70's did more than just pass by – they gave 
+ rise to the adolescence of a new world. This legacy of peace\, love and wo
+ rld vision was etched in stone by an amazing collection of songs and sound
+ s that […]
+LOCATION:Coolum Beach Sports Club
+URL:https://coolumbeachsports.com.au/events-calendar/late-for-woodstock-7/
+END:VEVENT
+END:VCALENDAR

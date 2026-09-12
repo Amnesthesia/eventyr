@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Buderim- Coffee & Chin Wag
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1l9zcbb@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T063000
+DTEND;TZID=Australia/Brisbane:20260914T073000
+SUMMARY:Buderim- Coffee & Chin Wag
+DESCRIPTION:## About the event Head on down to Rue Bourbon Coffee for a cof
+ fee & a chin wag with Cliff and the crew. We run these catch-ups weekly\, 
+ so if you can’t ma
+LOCATION:Rue Bourbon\, 89 Burnett St\, Buderim\, Buderim
+URL:https://www.meetup.com/grab-life-by-the-balls-laidback-social-events-fo
+ r-blokes/events/316518641/
+END:VEVENT
+END:VCALENDAR

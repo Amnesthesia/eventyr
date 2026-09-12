@@ -1,35 +1,39 @@
 {
-  "week_start": "2026-09-07",
+  "week_start": "2026-09-14",
   "names": [
     "Humanitix",
     "My Guide Sunshine Coast",
     "Tourism Sunshine Coast",
-    "Bandsintown Sunshine Coast",
     "Noosa Regional Gallery",
     "Lind Lane Theatre, Nambour",
     "TAFE Queensland",
-    "Rosetta Books, Maleny",
+    "Pulse Bar & Live Music, Maroochydore",
     "Noosa Jazz Club",
-    "Norton Music Factory",
-    "UniSC Arena",
+    "Caloundra Arts Centre",
     "Pomona Railway Station Gallery",
+    "Cooroy Butter Factory Arts Centre",
     "Sunshine Coast Youth Orchestra",
-    "Noosa Film Society"
+    "Noosa Film Society",
+    "Noosa Shire Arts & Crafts Association",
+    "DIVE Theatre Collective",
+    "UniSC Arena"
   ],
   "reasons": {
     "Humanitix": "4 found, none inside the window",
-    "My Guide Sunshine Coast": "33 found, none inside the window",
+    "My Guide Sunshine Coast": "extract https://www.myguidesunshinecoast.com/events: HTTP 403",
     "Tourism Sunshine Coast": "27 found, none inside the window",
-    "Bandsintown Sunshine Coast": "extract https://bandsintown.com/whats-on: HTTP 403",
     "Noosa Regional Gallery": "23 found, none inside the window",
-    "Lind Lane Theatre, Nambour": "all 1 event(s) on the page have already happened — listing URL is probably an archive",
+    "Lind Lane Theatre, Nambour": "2 found, none inside the window",
     "TAFE Queensland": "12 found, none inside the window",
-    "Rosetta Books, Maleny": "all 3 event(s) on the page have already happened — listing URL is probably an archive",
+    "Pulse Bar & Live Music, Maroochydore": "5 found, none inside the window",
     "Noosa Jazz Club": "6 found, none inside the window",
-    "Norton Music Factory": "15 found, none inside the window",
-    "UniSC Arena": "80 found, none inside the window",
+    "Caloundra Arts Centre": "extract https://caloundraartsandcrafts.org.au/whats-on: HTTP 401; extract https://caloundraartsandcrafts.org.au/wp-json/tribe/events/v1/events: HTTP 401",
     "Pomona Railway Station Gallery": "3 found, none inside the window",
+    "Cooroy Butter Factory Arts Centre": "extract https://cooroybutterfactory.com.au/events: JS-reload shell (no content served to this fetcher); extract https://cooroybutterfactory.com.au/exhibitions/: JS-reload shell (no content served to this fetcher)",
     "Sunshine Coast Youth Orchestra": "4 found, none inside the window",
-    "Noosa Film Society": "all 6 event(s) on the page have already happened — listing URL is probably an archive"
+    "Noosa Film Society": "all 6 event(s) on the page have already happened — listing URL is probably an archive",
+    "Noosa Shire Arts & Crafts Association": "4 found, none inside the window",
+    "DIVE Theatre Collective": "extract https://divetheatre.com/events/: HTTP 403",
+    "UniSC Arena": "80 found, none inside the window"
   }
 }

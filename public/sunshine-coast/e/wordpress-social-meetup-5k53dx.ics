@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:👋 WordPress Social Meetup
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-5k53dx@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T100000
+DTEND;TZID=Australia/Brisbane:20260925T113000
+SUMMARY:👋 WordPress Social Meetup
+DESCRIPTION:This month we're keeping it casual\, a social meetup with no se
+ t topic. Come along to chat about anything WordPress: projects you're work
+ ing on\, problems y
+LOCATION:Salty Spaces\, The Wharf Mooloolaba\, 123 Parkyn Parade\, Mooloola
+ ba QLD 4557\, Mooloolaba\, Mooloolaba
+URL:https://www.meetup.com/wordpress-sunshine-coast/events/316507822/
+END:VEVENT
+END:VCALENDAR

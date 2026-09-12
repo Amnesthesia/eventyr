@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Warana- Coffee & Chin Wag
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-lrup69@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T071500
+DTEND;TZID=Australia/Brisbane:20260914T084500
+SUMMARY:Warana- Coffee & Chin Wag
+DESCRIPTION:Head on down to Jimmy's for a coffee & a chin wag with Karl and
+  the crew (they'll be sitting outside the cafe\, undercover). We run these
+  catch-ups weekly\,
+LOCATION:Jimmy’s Catering\, 3/179 Nicklin Way\, Warana\, Warana
+URL:https://www.meetup.com/grab-life-by-the-balls-laidback-social-events-fo
+ r-blokes/events/316518858/
+END:VEVENT
+END:VCALENDAR

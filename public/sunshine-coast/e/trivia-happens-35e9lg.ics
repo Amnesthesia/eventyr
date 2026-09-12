@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TRIVIA HAPPENS
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-35e9lg@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T180000
+DTEND;TZID=Australia/Brisbane:20260916T200000
+SUMMARY:TRIVIA HAPPENS
+DESCRIPTION:Wednesday Night 6pm. Ryan asks the questions. A case for first\
+ , two four packs for second\, a jug for third. Happy hour runs right up to
+  kick off.
+LOCATION:Land & Sea Brewery
+URL:https://landandseabrewery.com/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jack Raymond - "Mr.Know it all"- Album Launch (Mapleton Pub)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-i20p0d@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T180000
+DTEND;TZID=Australia/Brisbane:20260925T200000
+SUMMARY:Jack Raymond - "Mr.Know it all"- Album Launch (Mapleton Pub)
+DESCRIPTION:Jack Raymond returns to the Mapleton Pub as part of the launch 
+ tour for his new album
+LOCATION:Locals in the Loop
+URL:https://localsintheloop.com.au/listing/jack-raymond-mr-know-it-all-albu
+ m-launch-mapleton-pub/
+END:VEVENT
+END:VCALENDAR

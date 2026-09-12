@@ -1,0 +1,109 @@
+{
+  "updated_at": "2026-09-12T20:24:29.164Z",
+  "stages": {
+    "collect/extract": {
+      "calls": 61,
+      "promptTokens": 200191,
+      "outputTokens": 97921,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.05918750000000002
+    },
+    "annotate": {
+      "calls": 36,
+      "promptTokens": 62988,
+      "outputTokens": 16960,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.013082800000000002
+    },
+    "search/google": {
+      "calls": 4,
+      "promptTokens": 2832,
+      "outputTokens": 2789,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 4,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.0013988000000000002
+    },
+    "curate/extract": {
+      "calls": 5,
+      "promptTokens": 5293,
+      "outputTokens": 3702,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.0020101
+    },
+    "curate/enrich": {
+      "calls": 5,
+      "promptTokens": 12062,
+      "outputTokens": 4348,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.0029454
+    },
+    "search/perplexity": {
+      "calls": 1,
+      "promptTokens": 284,
+      "outputTokens": 762,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 1,
+      "searchQueries": 1,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.020282
+    },
+    "dedupe": {
+      "calls": 9,
+      "promptTokens": 33339,
+      "outputTokens": 2295,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.0042519
+    },
+    "rank": {
+      "calls": 5,
+      "promptTokens": 23489,
+      "outputTokens": 4244,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.0176567
+    }
+  }
+}

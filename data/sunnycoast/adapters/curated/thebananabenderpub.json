@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "thebananabenderpub",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "FAMILY KARAOKE",
@@ -23,6 +23,76 @@
         "family",
         "music",
         "social"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "TRIBUTE FESTIVAL 26′",
+      "datetime": "Fri 25 Sep",
+      "datetime_iso": "2026-09-25",
+      "datetime_end_iso": "",
+      "location": "Banana Bender Pub",
+      "link": "http://39936025.hs-sites.com/ultimate_tribute_festival_26",
+      "cost": "$37 + BOOKING FEES",
+      "source": "Banana Bender Pub, Palmview",
+      "description": "The Ultimate Tribute Festival '26 \n\nGet ready for a night of unforgettable music, Friday, Sep 25th, six top tribute acts one epic show.\n\nA night of timeless hits of ABBA, Bee Gees, Neil Diamond, Barbra Streisand, Creedence Clearwater Revival, Fleetwood Mac Experience in a non-stop celebration of classic anthems. Music that shapped generations. – each delivering a 40 min set of iconic hits.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "music",
+        "concert",
+        "tribute"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "BINGO LOCO",
+      "datetime": "Sat 26 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-26T17:00:00",
+      "datetime_end_iso": "",
+      "location": "Banana Bender Pub",
+      "link": "http://39936025.hs-sites.com/2026-bingo-loco-september",
+      "cost": "FROM $51 + BOOKING FEES",
+      "source": "Banana Bender Pub, Palmview",
+      "description": "Bingo Loco: a wild 3-hour show with rave rounds, dance-offs, epic prizes & nonstop energy. Saturday 26th September.\nPALMVIEW!!! Strap yourselves, in because the world's LARGEST BINGO RAVE is heading to the Bender for a massive event! Grab your tickets now,",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "bingo",
+        "nightlife",
+        "dance",
+        "music",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "JUNIOR OPEN MIC NIGHT SEPTEMBER",
+      "datetime": "Sun 27 Sep",
+      "datetime_iso": "2026-09-27",
+      "datetime_end_iso": "",
+      "location": "Banana Bender Pub",
+      "link": "http://39936025.hs-sites.com/2026-junior-open-mic-night-september",
+      "cost": "FREE EVENT",
+      "source": "Banana Bender Pub, Palmview",
+      "description": "The Banana Bender is all about backing fresh talent, and this year we’re giving the juniors the entire stage to themselves. Back after a popular demand - Friday 10th July from 3-10pm. Bring your instruments and your cheer squad. Full backline supplied thanks to Mooloolaba Music",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "open mic",
+        "music",
+        "youth",
+        "community"
       ],
       "social": true,
       "intellectual": false,

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Welcoming Week Community Picnic
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1us2grc@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T100000
+DTEND;TZID=Australia/Brisbane:20260920T120000
+SUMMARY:Welcoming Week Community Picnic
+DESCRIPTION:A casual outdoor gathering designed to foster community connect
+ ions and celebrate diversity through social interaction in a park setting.
+LOCATION:Cotton Tree Park\, Maroochydore
+URL:https://events.sunshinecoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

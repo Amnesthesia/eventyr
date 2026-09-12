@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Che Burns
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1s1bwo9@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Che Burns
+DESCRIPTION:
+LOCATION:Peregian Beach Hotel\, Peregian Beach · Coolum + Peregian
+URL:https://peregianbeachhotel.com.au/whats-on/
+END:VEVENT
+END:VCALENDAR

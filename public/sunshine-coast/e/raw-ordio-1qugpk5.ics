@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Raw Ordio
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1qugpk5@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T140000
+DTEND;TZID=Australia/Brisbane:20260913T160000
+SUMMARY:Raw Ordio
+DESCRIPTION:
+LOCATION:Sunshine Beach Surf Club\, Sunshine Beach · Noosa + North
+URL:https://surfclub.sunshinebeachslsc.com.au/whats-on/raw-ordio/
+END:VEVENT
+END:VCALENDAR

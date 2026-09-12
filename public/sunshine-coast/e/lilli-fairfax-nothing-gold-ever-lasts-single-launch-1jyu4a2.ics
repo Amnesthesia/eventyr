@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lilli Fairfax ‘Nothing Gold Ever Lasts’ Single Launch
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1jyu4a2@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T180000
+DTEND;TZID=Australia/Brisbane:20260918T200000
+SUMMARY:Lilli Fairfax ‘Nothing Gold Ever Lasts’ Single Launch
+DESCRIPTION:An intimate single launch event featuring singer-songwriter Lil
+ li Fairfax at a local creative arts venue known for supporting original mu
+ sic.
+LOCATION:The Presynct\, Nambour
+URL:https://musick.com.au/gig/lilli-fairfax-nothing-gold-ever-lasts-single-
+ launch-at-the-presynct-2026-09-18/
+END:VEVENT
+END:VCALENDAR

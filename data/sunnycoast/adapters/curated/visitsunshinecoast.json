@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "aggregators",
   "source_id": "visitsunshinecoast",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "Mary Valley Scarecrow Festival",
@@ -93,6 +93,28 @@
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "LifeFlight Sunshine Coast Family Fun Day",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "Marcoola",
+      "link": "https://www.visitsunshinecoast.com/event/6a83f9cc82e82e4e7f6b0b0e/lifeflight-sunshine-coast-family-fun-day",
+      "cost": "See link",
+      "source": "Visit Sunshine Coast",
+      "description": "Join in for a fun-filled family day to celebrate the opening of LifeFlight's Sunshine Coast Visitor",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community",
+        "family",
+        "kids"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     }
   ]
 }

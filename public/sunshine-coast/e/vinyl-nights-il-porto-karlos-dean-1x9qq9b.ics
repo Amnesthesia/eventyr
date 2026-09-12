@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Vinyl Nights: il Porto – Karlos Dean
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1x9qq9b@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Vinyl Nights: il Porto – Karlos Dean
+DESCRIPTION:
+LOCATION:Peregian Beach Hotel\, Peregian Beach · Coolum + Peregian
+URL:https://peregianbeachhotel.com.au/whats-on/
+END:VEVENT
+END:VCALENDAR

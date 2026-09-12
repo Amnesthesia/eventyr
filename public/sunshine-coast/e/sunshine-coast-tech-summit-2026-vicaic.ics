@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunshine Coast Tech Summit 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-vicaic@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T133000
+DTEND;TZID=Australia/Brisbane:20260916T153000
+SUMMARY:Sunshine Coast Tech Summit 2026
+DESCRIPTION:A gathering of local professionals and enthusiasts exploring em
+ erging technologies\, regional innovation\, and future digital trends.
+LOCATION:Altitude Nine\, Maroochydore
+URL:https://events.sunshinecoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

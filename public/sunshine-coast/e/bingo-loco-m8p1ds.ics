@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BINGO LOCO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-m8p1ds@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T170000
+DTEND;TZID=Australia/Brisbane:20260926T190000
+SUMMARY:BINGO LOCO
+DESCRIPTION:Bingo Loco: a wild 3-hour show with rave rounds\, dance-offs\, 
+ epic prizes & nonstop energy. Saturday 26th September. PALMVIEW!!! Strap y
+ ourselves\, in because the world's LARGEST BINGO RAVE is heading to the Be
+ nder for a massive event! Grab your tickets now\,
+LOCATION:Banana Bender Pub
+URL:http://39936025.hs-sites.com/2026-bingo-loco-september
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:APL Poker – $26 Buy In
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-wbsqkr@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T040000
+DTEND;TZID=Australia/Brisbane:20260925T080000
+SUMMARY:APL Poker – $26 Buy In
+DESCRIPTION:Every Thursday Night $26 Buy In \\ $26 Freeze Out Rego: 6pm \\ 
+ Start: 6.30pm \\ Late Rego: 8.30pm
+LOCATION:Caloundra RSL Services Club
+URL:https://caloundrarsl.com.au/event/apl-poker-26-buy-in/2026-09-24/
+END:VEVENT
+END:VCALENDAR

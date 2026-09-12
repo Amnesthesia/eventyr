@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bill Bailey | Vaudevillean
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-amsl65@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T200000
+DTEND;TZID=Australia/Brisbane:20260924T220000
+SUMMARY:Bill Bailey | Vaudevillean
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/bill-bailey-vaudevillean/
+END:VEVENT
+END:VCALENDAR

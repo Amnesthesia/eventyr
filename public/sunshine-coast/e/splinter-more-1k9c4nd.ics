@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Splinter • More
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1k9c4nd@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T120000
+DTEND;TZID=Australia/Brisbane:20260913T140000
+SUMMARY:Splinter • More
+DESCRIPTION:
+LOCATION:Metro Social
+URL:https://whatslively.com/de5f84115155d615eb3896e7c3734cf2da3c9e0c
+END:VEVENT
+END:VCALENDAR

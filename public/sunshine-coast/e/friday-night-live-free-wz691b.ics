@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Friday Night Live & Free
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-wz691b@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T153000
+DTEND;TZID=Australia/Brisbane:20260925T220000
+SUMMARY:Friday Night Live & Free
+DESCRIPTION:Friday Night Live & Free 3.30pm – Marco 7.30pm – Kool Inten
+ tions Please note: While we do our best to keep our Live & Free Entertainm
+ ent schedule up to date\, last-minute changes can occur. For the latest in
+ formation and any schedule updates\, please follow our social media channe
+ ls.
+LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
+ nd\, 4551
+URL:https://caloundrarsl.com.au/event/friday-night-live-free-8/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Poco Loco
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-844bjh@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T190000
+DTEND;TZID=Australia/Brisbane:20260926T220000
+SUMMARY:Poco Loco
+DESCRIPTION:Live Music 7pm to 10pm
+LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
+ D\, 4551
+URL:https://www.caloundrapowerboat.com.au/event/poco-loco/
+END:VEVENT
+END:VCALENDAR

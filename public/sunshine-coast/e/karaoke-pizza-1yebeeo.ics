@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Karaoke & Pizza
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1yebeeo@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T160000
+DTEND;TZID=Australia/Brisbane:20260926T190000
+SUMMARY:Karaoke & Pizza
+DESCRIPTION:It’s Karaoke time! Our good Friend Rowan from Quizmical Sound
+  & Vision has put together a Karaoke session – Quizmical Karaoke! So\, g
+ et your voice in tune and join us for the fun from 4pm to 7pm – register
+  your name and song from 4pm and be ready to start from 4.30pm\,. This is 
+ all about participation and having fun\, so be prepared to join in. And ou
+ r local Pizza shop – Fratelli’s Pizza is delivering pizza’s from 5pm
+  on with no delivery charge. Menus in the venue\, just phone through your 
+ order.
+LOCATION:Sunshine Brewery
+URL:https://sunshinebrewery.com.au/event/karaoke-2/
+END:VEVENT
+END:VCALENDAR

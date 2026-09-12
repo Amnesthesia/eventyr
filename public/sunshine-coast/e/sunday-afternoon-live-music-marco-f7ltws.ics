@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Afternoon Live Music – Marco
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-f7ltws@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T110000
+DTEND;TZID=Australia/Brisbane:20260913T140000
+SUMMARY:Sunday Afternoon Live Music – Marco
+DESCRIPTION:Marco\, a club favourite and a true professional and accomplish
+ ed Vocalist\, he performs in a fun and energetic style.
+LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
+URL:https://www.noosarsl.com.au/entertainment/sunday-afternoon-live-music-m
+ arco/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Saltburn
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1bylebm@dothings
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:Saltburn
+DESCRIPTION:
+LOCATION:Peregian Beach Hotel\, Peregian Beach · Coolum + Peregian
+URL:https://peregianbeachhotel.com.au/whats-on/
+END:VEVENT
+END:VCALENDAR

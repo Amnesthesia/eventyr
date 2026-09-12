@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mirandi Riwoe Book Launch
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1mc9ozh@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T173000
+DTEND;TZID=Australia/Brisbane:20260924T193000
+SUMMARY:Mirandi Riwoe Book Launch
+DESCRIPTION:Buy Mirandi Riwoe Book Launch 24 Sept 5.30pm by from your local
+  bookstore. Join us for a Red Room Soiree to celebrate the launch of A Sho
+ rt H...
+LOCATION:Rosetta Books\, Maleny
+URL:https://rosettabooks.com.au/p/mirandi-riwoe-book-launch-24-sept-5-30pm
+END:VEVENT
+END:VCALENDAR

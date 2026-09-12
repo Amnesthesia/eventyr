@@ -3,7 +3,31 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "rosettabooks",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
-  "events": []
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
+  "events": [
+    {
+      "title": "Mirandi Riwoe Book Launch",
+      "datetime": "Thu 24 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-24T17:30:00",
+      "datetime_end_iso": "",
+      "location": "Rosetta Books, Maleny",
+      "link": "https://rosettabooks.com.au/p/mirandi-riwoe-book-launch-24-sept-5-30pm",
+      "cost": "5.00 AUD",
+      "source": "Rosetta Books, Maleny",
+      "description": "Buy Mirandi Riwoe Book Launch 24 Sept 5.30pm by from your local bookstore. Join us for a Red Room Soiree to celebrate the launch of&nbsp;A Short H...",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "literature",
+        "books",
+        "writing",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

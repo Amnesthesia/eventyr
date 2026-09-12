@@ -3,41 +3,19 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "harryhartog",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "Meet The Author: Joshua Hortinela",
-      "datetime": "Wed 9 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-09T18:00:00",
-      "datetime_end_iso": "",
-      "location": "Harry Hartog Narellan",
-      "link": "https://harryhartog.com.au/pages/upcoming-events",
-      "cost": "See link",
-      "source": "Harry Hartog, Maroochydore",
-      "description": "More than simply a space lined with shelves, Harry Hartog is a meeting place between the worlds found inside books and the world around us. Our bookshops are for the adventurer, the student of life and the next generation of reader. Old fashioned quality and creative ideas are the cornerstone of our community.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "author",
-        "books",
-        "literature"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Book Launch with Zoe Bingly-Pullin",
       "datetime": "Thu 17 Sep, 6:00 PM",
       "datetime_iso": "2026-09-17T18:00:00",
       "datetime_end_iso": "",
       "location": "Harry Hartog Bondi Junction",
-      "link": "https://harryhartog.com.au/pages/upcoming-events",
+      "link": "https://harryhartog.com.au/",
       "cost": "See link",
       "source": "Harry Hartog, Maroochydore",
-      "description": "More than simply a space lined with shelves, Harry Hartog is a meeting place between the worlds found inside books and the world around us. Our bookshops are for the adventurer, the student of life and the next generation of reader. Old fashioned quality and creative ideas are the cornerstone of our community.",
+      "description": "",
       "image": "",
       "category": "Public Lecture",
       "tags": [
@@ -46,6 +24,29 @@
         "launch"
       ],
       "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Book Launch with A.J. Mackinnon",
+      "datetime": "Thu 24 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-24T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Harry Hartog Mosman",
+      "link": "https://harryhartog.com.au/",
+      "cost": "See link",
+      "source": "Harry Hartog, Maroochydore",
+      "description": "",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "literature",
+        "books",
+        "writing",
+        "storytelling"
+      ],
+      "social": false,
       "intellectual": true,
       "hands_on": false,
       "creative": true

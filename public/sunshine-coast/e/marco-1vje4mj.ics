@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Marco
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1vje4mj@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T133000
+DTEND;TZID=Australia/Brisbane:20260927T163000
+SUMMARY:Marco
+DESCRIPTION:Live Music 1.30pm to 4.30pm
+LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
+ D\, 4551
+URL:https://www.caloundrapowerboat.com.au/event/marco-2/
+END:VEVENT
+END:VCALENDAR

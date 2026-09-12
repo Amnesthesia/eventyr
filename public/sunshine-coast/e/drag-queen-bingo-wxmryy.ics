@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Drag Queen Bingo
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-wxmryy@dothings
+DTSTART;TZID=Australia/Brisbane:20260914T180000
+DTEND;TZID=Australia/Brisbane:20260914T200000
+SUMMARY:Drag Queen Bingo
+DESCRIPTION:A high-energy\, immersive social night featuring comedy\, perfo
+ rmance\, and the classic game of bingo hosted by local drag performers.
+LOCATION:Kings Beach Tavern\, 43 Burgess Street\, Caloundra
+URL:https://oztix.com.au
+END:VEVENT
+END:VCALENDAR

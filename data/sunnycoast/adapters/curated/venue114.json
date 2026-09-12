@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "venue114",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "ICN QLD Sunshine Coast Coastal Championships",
@@ -28,6 +28,29 @@
       "intellectual": false,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "Frequency: The Secret of Everything screening and Q&A",
+      "datetime": "Wed 23 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-23T18:30:00",
+      "datetime_end_iso": "2026-09-23",
+      "location": "Venue 114, Bokarina",
+      "link": "https://venue114.com.au/events/frequency-the-secret-of-everything-screening-and-q-a",
+      "cost": "See link",
+      "source": "Venue 114, Bokarina",
+      "description": "Filmmakers Kaia Roman and Zappy Zapolin investigate emerging frequency technologies alongside leading voices, including Dr. Joe Dispenza, Bruce H. Lipton, Gregg Braden, Lynne McTaggart, Veda Austin, Michael Beckwith, Foster Gamble, Kimberly Carter Gamble, Rollin McCraty, and many more.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "film",
+        "science",
+        "philosophy",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }

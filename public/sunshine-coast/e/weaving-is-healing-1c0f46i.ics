@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Weaving is Healing
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1c0f46i@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Weaving is Healing
+DESCRIPTION:A hands-on workshop focused on the traditional craft of weaving
+ \, framed through a wellness and mindfulness lens to promote personal heal
+ ing and creative expression.
+LOCATION:Weavery HQ\, Sunshine Coast
+URL:https://eventbrite.com.au
+END:VEVENT
+END:VCALENDAR

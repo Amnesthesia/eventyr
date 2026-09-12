@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Strung Out
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-p7cxp6@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Strung Out
+DESCRIPTION:
+LOCATION:Kings Beach Tavern\, Caloundra · Caloundra + Kawana
+URL:https://tickets.oztix.com.au/outlet/event/3ec43d96-d2fb-4b0c-b426-44103
+ 3ec3bd2
+END:VEVENT
+END:VCALENDAR

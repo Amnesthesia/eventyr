@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Monday Night Trivia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1sl8ohj@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T183000
+DTEND;TZID=Australia/Brisbane:20260921T200000
+SUMMARY:Monday Night Trivia
+DESCRIPTION:Are you a trivia whiz? Show off your skills at The Caloundra Po
+ wer Boat Club’s Monday Night Trivia! Join us at 6.30 PM for a thrilling 
+ competition and a shot at winning some incredible prizes!
+LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade
+URL:https://www.caloundrapowerboat.com.au/event/monday-night-trivia/2026-09
+ -21/
+END:VEVENT
+END:VCALENDAR

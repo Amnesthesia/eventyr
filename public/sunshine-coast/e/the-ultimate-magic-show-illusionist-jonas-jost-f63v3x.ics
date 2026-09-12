@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The ULTIMATE Magic Show | Illusionist Jonas Jost
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-f63v3x@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T110000
+DTEND;TZID=Australia/Brisbane:20260923T130000
+SUMMARY:The ULTIMATE Magic Show | Illusionist Jonas Jost
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/the-ultimate-magic-show/
+END:VEVENT
+END:VCALENDAR

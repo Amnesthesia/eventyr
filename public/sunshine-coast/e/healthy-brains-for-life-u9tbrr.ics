@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Healthy brains for life
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-u9tbrr@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Healthy brains for life
+DESCRIPTION:Research shows that certain lifestyle factors can reduce the ri
+ sk of dementia\, support cognitive function and modify brain ageing proces
+ ses. Learn evidence-based strategies in this presentation to look after yo
+ ur brain health now and into the future. Hear from healthy ageing expert A
+ ssociate Profesor Sophie Andrews.
+LOCATION:University of the Sunshine Coast
+URL:https://usc.edu.au/community/events/healthy-brains-for-life
+END:VEVENT
+END:VCALENDAR

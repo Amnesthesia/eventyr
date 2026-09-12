@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Free Live Entertainment with Rachel Ellen
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1xs1xt1@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T113000
+DTEND;TZID=Australia/Brisbane:20260924T143000
+SUMMARY:Free Live Entertainment with Rachel Ellen
+DESCRIPTION:Join Us for Free Live Entertainment on Thursday from 11.30am to
+  2.30pm.
+LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
+ , 4575
+URL:https://clubkawana.com.au/event/free-live-entertainment-with-rachel-ell
+ en-5/2026-09-24/
+END:VEVENT
+END:VCALENDAR

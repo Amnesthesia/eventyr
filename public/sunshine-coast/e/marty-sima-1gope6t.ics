@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Marty Sima
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1gope6t@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T153000
+DTEND;TZID=Australia/Brisbane:20260913T173000
+SUMMARY:Marty Sima
+DESCRIPTION:Marty Sima is an experienced acoustic guitarist and singer know
+ n for delivering polished\, feel-good covers of popular favourites. With a
+  warm vocal style and confident musicianship\, Marty creates engaging live
+  performances that suit relaxed listening or upbeat social atmospheres. Hi
+ s repertoire spans decades and genres\, reimagined with an acoustic edge t
+ hat feels both familiar and fresh. Professional\, reliable\, and easy to w
+ ork with\, Marty brings quality sound\, strong crowd connection\, and a ge
+ nuine love of live music to every performance.
+LOCATION:Maroochy RSL
+URL:https://maroochyrsl.com.au/event/marty-sima-2/
+END:VEVENT
+END:VCALENDAR

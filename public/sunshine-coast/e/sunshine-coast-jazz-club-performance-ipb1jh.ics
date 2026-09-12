@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunshine Coast Jazz Club Performance
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-ipb1jh@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Sunshine Coast Jazz Club Performance
+DESCRIPTION:A live jazz performance hosted by the local society\, focusing 
+ on musical appreciation and community engagement for enthusiasts.
+LOCATION:Sunshine Coast Jazz Club venue
+URL:https://sunshinecoastjazzclub.com.au
+END:VEVENT
+END:VCALENDAR

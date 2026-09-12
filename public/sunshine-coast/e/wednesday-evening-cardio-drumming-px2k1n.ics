@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wednesday Evening Cardio Drumming
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-px2k1n@dothings
+DTSTART;TZID=Australia/Brisbane:20260916T183000
+DTEND;TZID=Australia/Brisbane:20260916T193000
+SUMMARY:Wednesday Evening Cardio Drumming
+DESCRIPTION:NOTE: This is the last class before the school holidays. Resumi
+ ng on the 7th October.🥁 If you are looking for a workout that doesn't p
+ ut too much stress on feet and hips.
+LOCATION:Buderim Cricket Club\, 176 Ballinger Rd\, Buderim\, QL\, Buderim\,
+  QL
+URL:https://www.meetup.com/sunshine-coast-cardio-drumming-workout-while-you
+ -rockout/events/316293846/
+END:VEVENT
+END:VCALENDAR

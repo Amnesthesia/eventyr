@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:You're a Good Man\, Charlie Brown (Musical)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-15qhvnx@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T193000
+DTEND;TZID=Australia/Brisbane:20260918T213000
+SUMMARY:You're a Good Man\, Charlie Brown (Musical)
+DESCRIPTION:A live theatre production of the classic musical\, performed by
+  the local Noosa Arts Theatre community.
+LOCATION:Noosa Arts Theatre
+URL:https://www.noosaartstheatre.org.au
+END:VEVENT
+END:VCALENDAR

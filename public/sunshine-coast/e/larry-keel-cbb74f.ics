@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Larry Keel
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-cbb74f@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Larry Keel
+DESCRIPTION:
+LOCATION:Rivanna River Company
+URL:https://www.bandsintown.com/e/107947275-larry-keel-at-rivanna-river-com
+ pany?came_from=257&utm_medium=web&utm_source=home&utm_campaign=top_event_f
+ eatured
+END:VEVENT
+END:VCALENDAR

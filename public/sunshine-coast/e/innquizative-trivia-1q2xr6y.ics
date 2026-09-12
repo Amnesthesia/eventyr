@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:InnQuizative Trivia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1q2xr6y@dothings
+DTSTART;TZID=Australia/Brisbane:20260913T163000
+DTEND;TZID=Australia/Brisbane:20260913T190000
+SUMMARY:InnQuizative Trivia
+DESCRIPTION:Every Sunday at 5pm for some brain-busting fun InnQUIZitive Tri
+ via! Gather your friends and show off your knowledge on a wide range of to
+ pics. From pop culture to history\, there's [...]
+LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
+URL:https://www.noosarsl.com.au/entertainment/trivia-2-2/2026-09-13/
+END:VEVENT
+END:VCALENDAR

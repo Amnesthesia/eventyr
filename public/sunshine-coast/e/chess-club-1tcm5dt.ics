@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Chess Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1tcm5dt@dothings
+DTSTART;TZID=Australia/Brisbane:20260915T100000
+DTEND;TZID=Australia/Brisbane:20260915T120000
+SUMMARY:Chess Club
+DESCRIPTION:
+LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
+URL:https://www.noosarsl.com.au/entertainment/chess-club/2026-09-15/
+END:VEVENT
+END:VCALENDAR

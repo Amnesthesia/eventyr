@@ -3,53 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "theeventscentre",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
-    {
-      "title": "What’s in the Woods? | SPRING",
-      "datetime": "Wed 9 Sep, 9:00 AM",
-      "datetime_iso": "2026-09-09T09:00:00",
-      "datetime_end_iso": "",
-      "location": "The Events Centre, Caloundra",
-      "link": "https://theeventscentre.com.au/event/whats-in-the-woods-spring/",
-      "cost": "See link",
-      "source": "The Events Centre, Caloundra",
-      "description": "",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "family",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Geraldine Hickey | A Weight Off My Chest",
-      "datetime": "Sat 12 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-12T19:00:00",
-      "datetime_end_iso": "",
-      "location": "The Events Centre, Caloundra",
-      "link": "https://theeventscentre.com.au/event/geraldine-hickey-a-weight-off-my-chest/",
-      "cost": "See link",
-      "source": "The Events Centre, Caloundra",
-      "description": "",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Symphonic Horizons | Sunshine Coast Symphony Orchestra",
       "datetime": "Sun 13 Sep, 2:00 PM",
@@ -73,7 +29,7 @@
       "creative": true
     },
     {
-      "title": "Sold out : Suzanne Vega | Flying With Angels Tour",
+      "title": "Suzanne Vega | Flying With Angels Tour",
       "datetime": "Sun 13 Sep, 7:30 PM",
       "datetime_iso": "2026-09-13T19:30:00",
       "datetime_end_iso": "",
@@ -85,9 +41,10 @@
       "image": "",
       "category": "Concert / Music",
       "tags": [
+        "music",
+        "live music",
         "folk",
-        "singer-songwriter",
-        "live"
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -95,12 +52,55 @@
       "creative": true
     },
     {
-      "title": "What’s in the Woods? | SPRING",
-      "datetime": "Wed 9 Sep, 9:00 AM",
-      "datetime_iso": "2026-09-09T09:00:00",
+      "title": "The ULTIMATE Magic Show | Illusionist Jonas Jost",
+      "datetime": "Wed 23 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-23T11:00:00",
       "datetime_end_iso": "",
       "location": "The Events Centre, Caloundra",
-      "link": "https://theeventscentre.com.au/event/whats-in-the-woods-spring/",
+      "link": "https://theeventscentre.com.au/event/the-ultimate-magic-show/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "circus"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Bill Bailey | Vaudevillean",
+      "datetime": "Thu 24 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-24T20:00:00",
+      "datetime_end_iso": "",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/bill-bailey-vaudevillean/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "comedy",
+        "standup",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Finnegan the Fart Detective",
+      "datetime": "Thu 24 Sep, 9:30 AM",
+      "datetime_iso": "2026-09-24T09:30:00",
+      "datetime_end_iso": "",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/finnegan-the-fart-detective/",
       "cost": "See link",
       "source": "The Events Centre, Caloundra",
       "description": "",
@@ -108,6 +108,7 @@
       "category": "Arts / Exhibition",
       "tags": [
         "theatre",
+        "kids",
         "family",
         "performance"
       ],
@@ -117,20 +118,21 @@
       "creative": true
     },
     {
-      "title": "Geraldine Hickey | A Weight Off My Chest",
-      "datetime": "Sat 12 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-12T19:00:00",
+      "title": "Billy vs Elton",
+      "datetime": "Fri 25 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-25T19:30:00",
       "datetime_end_iso": "",
       "location": "The Events Centre, Caloundra",
-      "link": "https://theeventscentre.com.au/event/geraldine-hickey-a-weight-off-my-chest/",
+      "link": "https://theeventscentre.com.au/event/billy-vs-elton/",
       "cost": "See link",
       "source": "The Events Centre, Caloundra",
       "description": "",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "comedy",
-        "standup",
+        "music",
+        "live music",
+        "tribute",
         "performance"
       ],
       "social": false,
@@ -154,6 +156,73 @@
         "orchestra",
         "classical",
         "symphony"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Suzanne Vega | Flying With Angels Tour",
+      "datetime": "Sun 13 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-13T19:30:00",
+      "datetime_end_iso": "",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/suzanne-vega-flying-with-angels-tour/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "folk",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The ULTIMATE Magic Show | Illusionist Jonas Jost",
+      "datetime": "Wed 23 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-23T11:00:00",
+      "datetime_end_iso": "",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/the-ultimate-magic-show/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "circus"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Finnegan the Fart Detective",
+      "datetime": "Thu 24 Sep, 9:30 AM",
+      "datetime_iso": "2026-09-24T09:30:00",
+      "datetime_end_iso": "",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/finnegan-the-fart-detective/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "kids",
+        "family",
+        "performance"
       ],
       "social": false,
       "intellectual": false,

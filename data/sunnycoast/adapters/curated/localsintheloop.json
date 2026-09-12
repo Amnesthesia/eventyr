@@ -3,9 +3,100 @@
   "provider": "adapters",
   "tier": "aggregators",
   "source_id": "localsintheloop",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
+    {
+      "title": "Phil Barlow Deep Treasures EP Launch Cooroy",
+      "datetime": "Sun 13 Sep, 3:00 PM",
+      "datetime_iso": "2026-09-13T15:00:00",
+      "datetime_end_iso": "",
+      "location": "Locals in the Loop",
+      "link": "https://localsintheloop.com.au/listing/phil-barlow-deep-treasures-ep-launch/",
+      "cost": "See link",
+      "source": "Locals in the Loop",
+      "description": "Phil Barlow 'Deep Treasures' EP Launch Sunday 13 September | 3pm | 13+ | BYO Deep Treasures is a collection of songs shaped by a slow and profound inner journey of healing. It is a musical passage through loss, acceptance, courage and faith. Captured raw in single-take solo-acoustic recordings, these songs hold the aliveness of the emotional transformation Phil was experiencing when they were written. They are not about perfection, they are about the raw and vulnerable human journey through relationships, trust, change, forgiveness and growth. In the cosy atmosphere of The Nook, Phil will perform the EP in its stripped-back solo-acoustic form and share some of the stories behind the songs.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "acoustic",
+        "performance",
+        "storytelling"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "WALK FOR CHANGE CHARITY RAFFLE ❤️",
+      "datetime": "Sun 27 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-27T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Locals in the Loop",
+      "link": "https://localsintheloop.com.au/listing/walk-for-change-charity-raffle-%e2%9d%a4%ef%b8%8f/",
+      "cost": "See link",
+      "source": "Locals in the Loop",
+      "description": "Local ladies making a big bid for charity",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "charity",
+        "raffle",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Royal Mail Tewantin Open Mic",
+      "datetime": "Wed 23 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-23T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Locals in the Loop",
+      "link": "https://localsintheloop.com.au/listing/royal-mail-tewantin-open-mic/",
+      "cost": "See link",
+      "source": "Locals in the Loop",
+      "description": "This new event is fortnightly starting on Wed 23 Sept 7pm first act. Provided gear is PA, 2 X mic, acoustic guitar, full size electric piano, and stomp. Percussionists please bring cajon/ congas etc. It is open to all styles and abilities. Don't feel intimidated, you will only find respect and encouragement here. Enq to Rev Billy on 0400278280.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "open mic",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "LA SALSA PARTY",
+      "datetime": "Fri 25 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-25T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Locals in the Loop",
+      "link": "https://localsintheloop.com.au/listing/la-salsa-party/",
+      "cost": "See link",
+      "source": "Locals in the Loop",
+      "description": "🎶 La Salsa is BACK in Maroochydore Sunshine Coast! 💃🕺",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "dance",
+        "music",
+        "nightlife"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
     {
       "title": "SALSA NIGHT",
       "datetime": "Fri 18 Sep, 7:00 PM",
@@ -29,48 +120,48 @@
       "creative": true
     },
     {
-      "title": "Iré a Mi Salsa – Salsa Classes | Beginner & Intermediate",
-      "datetime": "Thu 10 Sep, 6:30 PM",
-      "datetime_iso": "2026-09-10T18:30:00",
+      "title": "Jack Raymond - \"Mr.Know it all\"- Album Launch (Mapleton Pub)",
+      "datetime": "Fri 25 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-25T18:00:00",
       "datetime_end_iso": "",
       "location": "Locals in the Loop",
-      "link": "https://localsintheloop.com.au/listing/ire-a-mi-salsa-salsa-classes-beginner-intermediate/",
+      "link": "https://localsintheloop.com.au/listing/jack-raymond-mr-know-it-all-album-launch-mapleton-pub/",
       "cost": "See link",
       "source": "Locals in the Loop",
-      "description": "Get moving, meet new people and learn the art of authentic Cuban salsa",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "salsa",
-        "dance",
-        "beginner"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "SUNSET ROOFTOP PARTY",
-      "datetime": "Fri 11 Sep, 2:00 PM",
-      "datetime_iso": "2026-09-11T14:00:00",
-      "datetime_end_iso": "",
-      "location": "Locals in the Loop",
-      "link": "https://localsintheloop.com.au/listing/sunset-rooftop-party/",
-      "cost": "See link",
-      "source": "Locals in the Loop",
-      "description": "Get ready for an unforgettable SUNSET at ARTE ROOFTOP MAROOCHYDORE with the best Groove, Disco, House & Tech music. Friday September 11th A sunset with wine and cocktails, brought to life by 6 Sunshine Coast DJs playing the best Groove, Disco, House & Tech music for the perfect sunset vibe.",
+      "description": "Jack Raymond returns to the Mapleton Pub as part of the launch tour for his new album",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "house",
-        "disco",
-        "rooftop"
+        "music",
+        "live music",
+        "concert"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
+    },
+    {
+      "title": "Introduction to Mindfulness and Meditation",
+      "datetime": "Mon 31 Aug, 6:00 PM – Mon 21 Sep",
+      "datetime_iso": "2026-08-31T18:00:00",
+      "datetime_end_iso": "2026-09-21T19:00:00",
+      "location": "Locals in the Loop, 483 Mountain View Road",
+      "link": "https://localsintheloop.com.au/listing/introduction-to-mindfulness-and-meditation/",
+      "cost": "See link",
+      "source": "Locals in the Loop",
+      "description": "Learn practical mindfulness and meditation techniques to help calm a busy mind, manage everyday stress, improve sleep and feel more present.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "wellness",
+        "meditation",
+        "beginners"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
     }
   ]
 }

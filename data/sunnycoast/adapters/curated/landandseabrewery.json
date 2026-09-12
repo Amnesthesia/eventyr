@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "landandseabrewery",
-  "week_start": "2026-09-07",
-  "week_end": "2026-09-13",
+  "week_start": "2026-09-14",
+  "week_end": "2026-09-20",
   "events": [
     {
       "title": "TRIVIA HAPPENS",
-      "datetime": "Wed 9 Sep, 6:00 PM",
-      "datetime_iso": "2026-09-09T18:00:00",
+      "datetime": "Wed 16 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-16T18:00:00",
       "datetime_end_iso": "",
       "location": "Land & Sea Brewery",
       "link": "https://landandseabrewery.com/",
@@ -20,29 +20,8 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "pub",
-        "games"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Meat Raffle",
-      "datetime": "Fri 11 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "",
-      "location": "Land & Sea Brewery",
-      "link": "https://landandseabrewery.com/",
-      "cost": "See link",
-      "source": "Land & Sea Brewery",
-      "description": "Friday Night. Two big trays from Butchers of Noosa and two 4-packs of Noosa Beer. Happy hour runs right into the draw at six, and the proceeds go to Koala Crusaders.",
-      "image": "",
-      "category": "Social / Meetup",
-      "tags": [
-        "raffle",
-        "charity",
+        "games",
+        "drinks",
         "community"
       ],
       "social": true,
@@ -51,9 +30,32 @@
       "creative": false
     },
     {
+      "title": "Meat Raffle",
+      "datetime": "Fri 18 Sep",
+      "datetime_iso": "2026-09-18",
+      "datetime_end_iso": "",
+      "location": "Land & Sea Brewery",
+      "link": "https://landandseabrewery.com/",
+      "cost": "See link",
+      "source": "Land & Sea Brewery",
+      "description": "Friday Night. Two big trays from Butchers of Noosa and two 4-packs of Noosa Beer. Happy hour runs right into the draw at six, and the proceeds go to Koala Crusaders.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "raffle",
+        "charity",
+        "community",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "Parmi Night",
-      "datetime": "Thu 10 Sep",
-      "datetime_iso": "2026-09-10",
+      "datetime": "Thu 17 Sep",
+      "datetime_iso": "2026-09-17",
       "datetime_end_iso": "",
       "location": "Land & Sea Brewery",
       "link": "https://landandseabrewery.com/",
@@ -64,10 +66,10 @@
       "category": "Community / Other",
       "tags": [
         "food",
-        "dinner",
-        "pub"
+        "dining",
+        "drinks"
       ],
-      "social": false,
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": false
