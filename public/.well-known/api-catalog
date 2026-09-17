@@ -1,0 +1,19 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.dothings.lol/ai/",
+      "service-desc": [
+        {
+          "href": "https://www.dothings.lol/ai/openapi.yaml",
+          "type": "application/yaml"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://www.dothings.lol/ai/",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}
