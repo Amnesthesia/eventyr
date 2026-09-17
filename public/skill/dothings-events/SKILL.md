@@ -27,9 +27,9 @@ Prefer the MCP server when connected: `https://mcp.dothings.lol/mcp`.
    - `timeframe`: `today` | `tomorrow` | `this_weekend` | `this_week` | `next_week`
    - `date`: `YYYY-MM-DD`
 
-   Optional: `category` (one of the six below), `max_results` (1–100, default 30 — **pass 60 for
-   a single day or a weekend ask**; those results also carry every exhibition still running that
-   day, and a low cap can push same-day evening events out of the returned set).
+   Optional: `category` (one of the six below), `max_results` (1–100, default 100). Events
+   starting inside the requested window always come back before ones merely running through it
+   (a standing exhibition, say), so the default rarely needs raising.
 
    Categories, exactly: `Public Lecture`, `Workshop / Class`, `Concert / Music`, `Social / Meetup`,
    `Arts / Exhibition`, `Community / Other`. Don't invent others.

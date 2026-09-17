@@ -100,9 +100,9 @@ export function registerTools(server: McpServer): void {
 					.max(100)
 					.optional()
 					.describe(
-						"Cap on returned events (default 30). Ask for ~60 on a single " +
-							"day or a weekend: those results also carry every exhibition " +
-							"still running that day, so a low cap can cut the evening off.",
+						"Cap on returned events (default 100, max 100). Events starting " +
+							"inside the requested window are always returned before ones " +
+							"merely running through it, so this rarely needs raising.",
 					),
 			},
 		},

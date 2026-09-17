@@ -17,7 +17,10 @@ import {
 	type Timeframe,
 } from "./resolveTimeframe.ts";
 
-const DEFAULT_MAX_RESULTS = 200;
+// Matches the zod schema's own max(100) in tools.ts — the default must never
+// exceed what a caller is allowed to explicitly ask for, or omitting the
+// param silently returns more than passing max_results=100 would.
+const DEFAULT_MAX_RESULTS = 100;
 
 /** Events that actually start inside the requested window rank above ones
  * merely overlapping it. A day file lists every event running that day, so a
@@ -76,12 +79,12 @@ export async function gatherEvents(
 	const plan = opts.date
 		? resolveExplicitDate(opts.date, cityToday, availableDates)
 		: resolveTimeframe(
-			// biome-ignore lint/style/noNonNullAssertion: tools.ts already enforced exactly one of timeframe/date
-			opts.timeframe!,
-			cityToday,
-			availableDates,
-			Boolean(entry.week),
-		);
+				// biome-ignore lint/style/noNonNullAssertion: tools.ts already enforced exactly one of timeframe/date
+				opts.timeframe!,
+				cityToday,
+				availableDates,
+				Boolean(entry.week),
+			);
 
 	if (plan.kind === "unavailable") {
 		return {
