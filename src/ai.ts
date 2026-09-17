@@ -451,6 +451,11 @@ ${cityList}
    server instead, with list_cities and get_events tools over the same data.
    Not available to ChatGPT or Gemini, which don't support MCP.
 
+5. An assistant that supports installable Agent Skills can load
+   https://www.dothings.lol/skill/dothings-events/SKILL.md instead of reading
+   this file — it covers the same fetch order plus a preference-memory
+   protocol for tailoring picks across conversations.
+
 ## Fields
 
 Every file has: data_as_of (the date this data was generated — treat listings

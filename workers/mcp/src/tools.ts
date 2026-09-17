@@ -99,7 +99,11 @@ export function registerTools(server: McpServer): void {
 					.min(1)
 					.max(100)
 					.optional()
-					.describe("Cap on returned events (default 30)."),
+					.describe(
+						"Cap on returned events (default 30). Ask for ~60 on a single " +
+							"day or a weekend: those results also carry every exhibition " +
+							"still running that day, so a low cap can cut the evening off.",
+					),
 			},
 		},
 		async ({ city, timeframe, date, category, max_results }) => {

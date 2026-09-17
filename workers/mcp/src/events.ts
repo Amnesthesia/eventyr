@@ -17,7 +17,29 @@ import {
 	type Timeframe,
 } from "./resolveTimeframe.ts";
 
-const DEFAULT_MAX_RESULTS = 30;
+const DEFAULT_MAX_RESULTS = 200;
+
+/** Events that actually start inside the requested window rank above ones
+ * merely overlapping it. A day file lists every event running that day, so a
+ * multi-year exhibition sorts above everything that starts today on a plain
+ * `start` sort and eats the whole max_results cap — measured on brisbane
+ * 2026-09-17: 0 of the 30 returned events started that day, with 153 hidden.
+ * Nothing is dropped here, the ongoing ones just sort after. */
+export function sortForWindow<T extends { start: string }>(
+	events: T[],
+	windowStart: string,
+	windowEnd: string,
+): T[] {
+	const startsInWindow = (e: T) => {
+		const day = e.start.slice(0, 10);
+		return day >= windowStart && day <= windowEnd;
+	};
+	return [...events].sort(
+		(a, b) =>
+			Number(startsInWindow(b)) - Number(startsInWindow(a)) ||
+			a.start.localeCompare(b.start),
+	);
+}
 
 export interface EventsResult {
 	available: true;
@@ -54,12 +76,12 @@ export async function gatherEvents(
 	const plan = opts.date
 		? resolveExplicitDate(opts.date, cityToday, availableDates)
 		: resolveTimeframe(
-				// biome-ignore lint/style/noNonNullAssertion: tools.ts already enforced exactly one of timeframe/date
-				opts.timeframe!,
-				cityToday,
-				availableDates,
-				Boolean(entry.week),
-			);
+			// biome-ignore lint/style/noNonNullAssertion: tools.ts already enforced exactly one of timeframe/date
+			opts.timeframe!,
+			cityToday,
+			availableDates,
+			Boolean(entry.week),
+		);
 
 	if (plan.kind === "unavailable") {
 		return {
@@ -72,11 +94,15 @@ export async function gatherEvents(
 
 	let events: CompactEvent[];
 	let resolved: string;
+	let windowStart: string;
+	let windowEnd: string;
 
 	if (plan.kind === "day") {
 		const file = await fetchFile<DayFile>(dayFileUrl(entry, plan.date));
 		events = file.events;
 		resolved = plan.date;
+		windowStart = plan.date;
+		windowEnd = plan.date;
 	} else if (plan.kind === "days") {
 		const files = await Promise.all(
 			plan.dates.map((d) => fetchFile<DayFile>(dayFileUrl(entry, d))),
@@ -87,6 +113,8 @@ export async function gatherEvents(
 			...new Map(files.flatMap((f) => f.events).map((e) => [e.id, e])).values(),
 		];
 		resolved = plan.dates.join(",");
+		windowStart = plan.dates[0];
+		windowEnd = plan.dates[plan.dates.length - 1];
 	} else {
 		const url = weekFileUrl(entry, opts.category);
 		if (!url) {
@@ -100,11 +128,13 @@ export async function gatherEvents(
 		const file = await fetchFile<WeekFile>(url);
 		events = file.events;
 		resolved = `week-${file.week_start}`;
+		windowStart = file.week_start;
+		windowEnd = file.week_end;
 	}
 
 	if (opts.category)
 		events = events.filter((e) => e.category === opts.category);
-	events = [...events].sort((a, b) => a.start.localeCompare(b.start));
+	events = sortForWindow(events, windowStart, windowEnd);
 
 	const maxResults = opts.maxResults ?? DEFAULT_MAX_RESULTS;
 	const capped = events.slice(0, maxResults);
