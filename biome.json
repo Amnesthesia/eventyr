@@ -12,7 +12,8 @@
 			"app/**/*.ts",
 			"app/**/*.tsx",
 			"scripts/**/*.ts",
-			"scripts/**/*.tsx"
+			"scripts/**/*.tsx",
+			"workers/**/*.ts"
 		]
 	},
 	"formatter": {

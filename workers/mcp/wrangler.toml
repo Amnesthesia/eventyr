@@ -1,0 +1,7 @@
+name = "eventyr-mcp"
+main = "src/index.ts"
+compatibility_date = "2026-09-17"
+
+routes = [
+	{ pattern = "mcp.dothings.lol", custom_domain = true }
+]

@@ -332,6 +332,14 @@ const websiteSchema = {
       href={feedUrl}
     />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <!-- RFC 8288 web links for AI agent discovery (RFC 9727 §3). Real HTTP
+         Link headers aren't possible on GitHub Pages (no header config), so
+         these ride as <link> tags instead — a valid serialisation under
+         RFC 8288 §3, though a checker that only reads response headers won't
+         see them. -->
+    <link rel="service-desc" type="application/yaml" href="/ai/openapi.yaml" />
+    <link rel="service-doc" href="/llms.txt" />
+    <link rel="describedby" href="/llms.txt" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
