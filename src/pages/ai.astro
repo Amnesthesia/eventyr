@@ -1,0 +1,203 @@
+---
+// Human-facing page explaining the machine-facing /llms.txt + /ai/ feed
+// (src/ai.ts). Standalone rather than built on layouts/Base.astro: Base is
+// built around one city's CityData (its own nav, its ItemList schema), and
+// this page isn't about any one city — same reasoning src/pages/404.astro
+// already followed for its own standalone head+header.
+import "@react/pico.scss";
+import "@react/styles.css";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import type { CityIndex } from "@react/types";
+import { KEY_TO_SLUG } from "@react/utils/citySlug";
+
+const index: CityIndex = JSON.parse(
+	readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
+);
+const cities = index.cities.map((c) => ({
+	name: c.name,
+	slug: KEY_TO_SLUG[c.key] ?? c.key,
+}));
+
+const BASE_URL = "https://www.dothings.lol";
+const title = "Use dothings.lol with your AI assistant";
+const description =
+	"Point Claude, ChatGPT or Gemini at dothings.lol's machine-readable events feed to get personalised recommendations or a full week's itinerary.";
+
+const prompts = [
+	{
+		label: "Recommend events today",
+		text: `Fetch ${BASE_URL}/llms.txt, then recommend events in [city] for today based on what you know about me.`,
+	},
+	{
+		label: "Plan my week",
+		text: `Fetch ${BASE_URL}/llms.txt, then plan my week in [city] based on what you know about me.`,
+	},
+];
+---
+
+<html lang="en-AU" data-theme="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} — do things</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={`${BASE_URL}/ai/`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="do things" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={`${BASE_URL}/ai/`} />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/inter-latin.woff2"
+      crossorigin
+    />
+    <script is:inline>
+      const t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    </script>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header>
+      <p class="site-name"><a href="/">&gt;&nbsp;do things</a></p>
+      <div class="header-controls">
+        {cities.map((c) => (
+          <a href={`/${c.slug}/`} class="filter-btn">{c.name}</a>
+        ))}
+      </div>
+    </header>
+    <main id="main" class="ai-page">
+      <h1>{title}</h1>
+      <p class="ai-lead">
+        dothings.lol publishes its curated, ranked events as plain static
+        JSON — no login, no API key. An AI assistant with web browsing can
+        read it directly and use whatever it already knows about your tastes
+        to recommend events or put together an itinerary. Copy one of these
+        into a chat:
+      </p>
+
+      <div class="prompt-cards">
+        {prompts.map((p) => (
+          <div class="prompt-card">
+            <div class="prompt-card-head">
+              <span>{p.label}</span>
+              <button type="button" class="filter-btn" data-copy={p.text}>Copy</button>
+            </div>
+            <pre>{p.text}</pre>
+          </div>
+        ))}
+      </div>
+
+      <p class="ai-note">
+        Your assistant needs web browsing (or a similar "fetch a URL" tool)
+        enabled for this to work — without it, it can't reach
+        <a href="/llms.txt">llms.txt</a> or the data behind it.
+      </p>
+
+      <h2>For developers</h2>
+      <p>
+        The feed itself lives under <a href="/ai/index.json">/ai/index.json</a>,
+        with one JSON file per city per day and per week — see
+        <a href="/llms.txt">/llms.txt</a> for the full field reference, or
+        wire up a ChatGPT Custom GPT Action against
+        <a href="/ai/openapi.yaml">/ai/openapi.yaml</a>.
+      </p>
+    </main>
+    <footer class="site-footer">
+      <nav>
+        {cities.map((c) => (
+          <a href={`/${c.slug}/`}>Things to do in {c.name}</a>
+        ))}
+      </nav>
+      <small>AI-curated events guide for South East Queensland and Byron Bay &middot; <a href="/llms.txt">llms.txt</a></small>
+    </footer>
+    <script>
+      for (const button of document.querySelectorAll("[data-copy]")) {
+        button.addEventListener("click", async () => {
+          const text = button.getAttribute("data-copy") ?? "";
+          try {
+            await navigator.clipboard.writeText(text);
+            const previous = button.textContent;
+            button.textContent = "Copied";
+            setTimeout(() => {
+              button.textContent = previous;
+            }, 2000);
+          } catch {
+            // Clipboard permission denied or unavailable (e.g. non-HTTPS
+            // local preview) — the prompt is still selectable/copyable by
+            // hand from the <pre>, so this fails quietly rather than
+            // blocking the page.
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  .ai-page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding-top: var(--s5);
+    padding-bottom: var(--s8);
+  }
+
+  .ai-page h1 {
+    font-size: var(--t-xl);
+    letter-spacing: -0.03em;
+    margin: 0 0 var(--s3);
+  }
+
+  .ai-lead,
+  .ai-note {
+    color: var(--muted);
+    font-size: var(--t-sm);
+    line-height: 1.6;
+  }
+
+  .ai-note {
+    margin-top: var(--s5);
+  }
+
+  .prompt-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s3);
+    margin: var(--s4) 0;
+  }
+
+  .prompt-card {
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .prompt-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--s2) var(--s3);
+    border-bottom: 1px solid var(--border);
+    font-size: var(--t-xs);
+    font-weight: 600;
+  }
+
+  .prompt-card pre {
+    margin: 0;
+    padding: var(--s3);
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: var(--mono);
+    font-size: var(--t-sm);
+    color: var(--fg);
+  }
+</style>

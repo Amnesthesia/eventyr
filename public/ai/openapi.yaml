@@ -1,0 +1,245 @@
+openapi: 3.1.0
+info:
+  title: dothings.lol events feed
+  version: "1.0.0"
+  description: >
+    Read-only, static JSON feed of curated local events for South East
+    Queensland and Byron Bay (Brisbane, Gold Coast, Sunshine Coast, Byron
+    Bay), for an AI assistant to use when recommending events or planning an
+    itinerary for a person. No authentication, no rate limits — every
+    response below is a static file rebuilt weekly. Always call getIndex
+    first to discover which city_key/date/weekStart values currently exist;
+    a date or weekStart not listed there will 404. Prefer getDayEvents over
+    getWeekEvents when the question is about a single day — it returns a
+    much smaller payload.
+servers:
+  - url: https://www.dothings.lol
+paths:
+  /ai/index.json:
+    get:
+      operationId: getIndex
+      summary: List every city and the day/week files currently available for it
+      description: >
+        Call this first. Returns every city this site covers, with its
+        city_key (use this in the other two operations), IANA timezone, a
+        data_as_of date (how fresh that city's data is — treat it as possibly
+        stale if more than a few days old), and the exact URLs of every day
+        file and week file that exist right now. A city can have zero of
+        either if its weekly refresh hasn't run yet.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Index"
+  /ai/{city}/{date}.json:
+    get:
+      operationId: getDayEvents
+      summary: Get every event on in one city on one specific day
+      description: >
+        Use this for "what's on today/tomorrow/this Friday" questions. Only
+        dates listed under that city's "days" array in getIndex exist; a date
+        further out than the current week's data (or already in the past)
+        returns 404. An event that spans multiple days is repeated in every
+        day file it covers.
+      parameters:
+        - name: city
+          in: path
+          required: true
+          description: A city_key from getIndex, e.g. "brisbane".
+          schema:
+            type: string
+            example: brisbane
+        - name: date
+          in: path
+          required: true
+          description: The day, as YYYY-MM-DD, from that city's "days" list in getIndex.
+          schema:
+            type: string
+            format: date
+            example: "2026-09-17"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DayFile"
+        "404":
+          description: No file for that city/date combination — call getIndex to see what exists.
+  /ai/{city}/week-{weekStart}.json:
+    get:
+      operationId: getWeekEvents
+      summary: Get every event on in one city for a whole week
+      description: >
+        Use this for "plan my week" or "what's on this week" questions. Named
+        for the Monday the week starts on. If the response is large, prefer
+        fetching one day at a time with getDayEvents instead, or check
+        getIndex's "week_categories" for that city — a week whose full file
+        exceeded ~200 KB is also split into one smaller file per category.
+      parameters:
+        - name: city
+          in: path
+          required: true
+          description: A city_key from getIndex, e.g. "brisbane".
+          schema:
+            type: string
+            example: brisbane
+        - name: weekStart
+          in: path
+          required: true
+          description: >
+            The Monday the week starts on, as YYYY-MM-DD, from that city's
+            "week" URL in getIndex (the file is named week-{weekStart}.json —
+            pass just the date here).
+          schema:
+            type: string
+            format: date
+            example: "2026-09-14"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WeekFile"
+        "404":
+          description: No week file for that city/weekStart combination — call getIndex to see what exists.
+components:
+  schemas:
+    Event:
+      type: object
+      description: One event, already filtered to the ones worth recommending.
+      required: [id, title, start, url]
+      properties:
+        id:
+          type: string
+          description: Stable identifier, unique within a city.
+        title:
+          type: string
+        start:
+          type: string
+          format: date-time
+          description: >
+            ISO 8601 with a UTC offset, already in the city's own local time
+            (e.g. "2026-09-18T19:30:00+10:00").
+        end:
+          type: [string, "null"]
+          format: date-time
+          description: Same format as start, or null when no end time is published — never a guess.
+        location:
+          type: string
+          description: Venue or address, as a plain string.
+        category:
+          type: string
+          enum:
+            - Public Lecture
+            - Workshop / Class
+            - Concert / Music
+            - Social / Meetup
+            - Arts / Exhibition
+            - Community / Other
+        price:
+          type: [number, "null"]
+          description: In the city's local currency. Null when the price is a range or not stated as a single number — see "free" instead.
+        free:
+          type: boolean
+        description:
+          type: string
+          description: One line, HTML/markdown already stripped, roughly 200 characters.
+        url:
+          type: string
+          format: uri
+          description: The event's own page on dothings.lol. Always link to this.
+    DayFile:
+      type: object
+      required: [data_as_of, city, city_key, timezone, date, events]
+      properties:
+        data_as_of:
+          type: string
+          format: date
+          description: When this city's data was last regenerated. Mention this to the user if it looks stale.
+        city:
+          type: string
+        city_key:
+          type: string
+        timezone:
+          type: string
+          description: IANA zone the start/end times above are written in.
+        date:
+          type: string
+          format: date
+        events:
+          type: array
+          items:
+            $ref: "#/components/schemas/Event"
+    WeekFile:
+      type: object
+      required: [data_as_of, city, city_key, timezone, week_start, week_end, events]
+      properties:
+        data_as_of:
+          type: string
+          format: date
+        city:
+          type: string
+        city_key:
+          type: string
+        timezone:
+          type: string
+        week_start:
+          type: string
+          format: date
+        week_end:
+          type: string
+          format: date
+        events:
+          type: array
+          items:
+            $ref: "#/components/schemas/Event"
+    Index:
+      type: object
+      required: [data_as_of, cities]
+      properties:
+        data_as_of:
+          type: string
+          format: date
+        cities:
+          type: array
+          items:
+            type: object
+            required: [city, city_key, slug, timezone, data_as_of, days, week, week_categories]
+            properties:
+              city:
+                type: string
+              city_key:
+                type: string
+                description: Pass this as {city} in getDayEvents/getWeekEvents.
+              slug:
+                type: string
+                description: The city's URL segment on the human-facing site.
+              timezone:
+                type: string
+              data_as_of:
+                type: string
+                format: date
+              days:
+                type: array
+                items:
+                  type: string
+                description: Full URL paths of every day file currently available, e.g. "/ai/brisbane/2026-09-17.json".
+              week:
+                type: [string, "null"]
+                description: Full URL path of the week file, or null if none is available.
+              week_categories:
+                type: array
+                description: Present only when the full week file was too large and got split by category.
+                items:
+                  type: object
+                  properties:
+                    category:
+                      type: string
+                    slug:
+                      type: string
+                    file:
+                      type: string

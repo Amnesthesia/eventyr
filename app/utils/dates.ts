@@ -1,17 +1,11 @@
-const MONTH_NUM: Record<string, number> = {
-	jan: 1,
-	feb: 2,
-	mar: 3,
-	apr: 4,
-	may: 5,
-	jun: 6,
-	jul: 7,
-	aug: 8,
-	sep: 9,
-	oct: 10,
-	nov: 11,
-	dec: 12,
-};
+// Single source of truth lives in src/shared.ts, which the pipeline's /ai
+// feed builder (src/ai.ts) also reads — a second copy here is exactly how the
+// site and that feed would end up disagreeing about which day an event
+// belongs to. Imported from shared.ts, not common.ts: common.ts reads the
+// filesystem and cannot be bundled for the browser.
+import { eventOverlapsRange, parseEndDate } from "../../src/shared.ts";
+
+export { eventOverlapsRange, parseEndDate };
 
 function localDateStr(offset: number): string {
 	const d = new Date();
@@ -68,50 +62,6 @@ export function weekendRange(iso: string): { start: string; end: string } {
 	if (dow === 0) return { start: iso, end: iso };
 	const sat = dow === 6 ? iso : addDays(iso, 6 - dow);
 	return { start: sat, end: addDays(sat, 1) };
-}
-
-export function parseEndDate(dt: string, startIso: string): string {
-	if (!startIso) return "";
-	const year = startIso.slice(0, 4);
-	const pad = (n: number) => String(n).padStart(2, "0");
-	const short = dt.match(/\b(\d{1,2})\s*[–—-]\s*(\d{1,2})\s+([A-Za-z]{3})\b/);
-	if (short) {
-		const mon = MONTH_NUM[short[3].toLowerCase()];
-		if (mon) return `${year}-${pad(mon)}-${pad(+short[2])}`;
-	}
-	const all = [...dt.matchAll(/\b(\d{1,2})\s+([A-Za-z]{3})\b/g)];
-	if (all.length >= 2) {
-		const last = all[all.length - 1];
-		const mon = MONTH_NUM[last[2].toLowerCase()];
-		if (mon) return `${year}-${pad(mon)}-${pad(+last[1])}`;
-	}
-	return startIso.slice(0, 10);
-}
-
-/**
- * Whether an event is happening on any day within [from, to] (inclusive
- * YYYY-MM-DD bounds) — an overlap test, not a start-date match, so a
- * multi-day exhibition that opened weeks ago still counts as "on" today.
- * datetime_end_iso is authoritative when present; parseEndDate is only a
- * fallback for older data with no end field (see its own doc comment for why
- * re-deriving it from datetime disagreed with the real end on real events).
- */
-export function eventOverlapsRange(
-	event: {
-		datetime_iso?: string;
-		datetime_end_iso?: string;
-		datetime?: string;
-	},
-	from: string,
-	to: string,
-): boolean {
-	if (!event.datetime_iso) return false;
-	const start = event.datetime_iso.slice(0, 10);
-	const end =
-		event.datetime_end_iso?.slice(0, 10) ||
-		parseEndDate(event.datetime || "", event.datetime_iso) ||
-		start;
-	return start <= to && end >= from;
 }
 
 export function fmtRange(a: string, b: string): string {
