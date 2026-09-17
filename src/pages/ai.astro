@@ -10,6 +10,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { CityIndex } from "@react/types";
 import { KEY_TO_SLUG } from "@react/utils/citySlug";
+import { MCP_INSTALL_URL, MCP_URL } from "@react/utils/mcpInstall";
 
 const index: CityIndex = JSON.parse(
 	readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
@@ -34,6 +35,7 @@ const prompts = [
 		text: `Fetch ${BASE_URL}/llms.txt, then plan my week in [city] based on what you know about me.`,
 	},
 ];
+
 ---
 
 <html lang="en-AU" data-theme="auto">
@@ -71,6 +73,7 @@ const prompts = [
     <header>
       <p class="site-name"><a href="/">&gt;&nbsp;do things</a></p>
       <div class="header-controls">
+        <a href={MCP_INSTALL_URL} class="filter-btn" target="_blank" rel="noopener">Connect via MCP</a>
         {cities.map((c) => (
           <a href={`/${c.slug}/`} class="filter-btn">{c.name}</a>
         ))}
@@ -101,16 +104,19 @@ const prompts = [
       <p class="ai-note">
         Your assistant needs web browsing (or a similar "fetch a URL" tool)
         enabled for this to work — without it, it can't reach
-        <a href="/llms.txt">llms.txt</a> or the data behind it.
+        <a href="/llms.txt">llms.txt</a> or the data behind it. Prefer a
+        direct connection? Use the "Connect via MCP" button above — it works
+        with clients that support the Model Context Protocol.
       </p>
 
       <h2>For developers</h2>
       <p>
         The feed itself lives under <a href="/ai/index.json">/ai/index.json</a>,
         with one JSON file per city per day and per week — see
-        <a href="/llms.txt">/llms.txt</a> for the full field reference, or
-        wire up a ChatGPT Custom GPT Action against
-        <a href="/ai/openapi.yaml">/ai/openapi.yaml</a>.
+        <a href="/llms.txt">/llms.txt</a> for the full field reference, wire
+        up a ChatGPT Custom GPT Action against
+        <a href="/ai/openapi.yaml">/ai/openapi.yaml</a>, or point an MCP
+        client at <a href={MCP_URL}>{MCP_URL}</a> directly.
       </p>
     </main>
     <footer class="site-footer">

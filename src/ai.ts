@@ -446,6 +446,11 @@ ${cityList}
    https://www.dothings.lol/ai/openapi.yaml (operations getIndex,
    getDayEvents, getWeekEvents).
 
+4. Claude specifically (Desktop, claude.ai, Claude Code) can skip fetching
+   this file by hand and connect to https://mcp.dothings.lol/mcp as an MCP
+   server instead, with list_cities and get_events tools over the same data.
+   Not available to ChatGPT or Gemini, which don't support MCP.
+
 ## Fields
 
 Every file has: data_as_of (the date this data was generated — treat listings

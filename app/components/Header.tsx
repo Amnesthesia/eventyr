@@ -1,7 +1,16 @@
-import { CalendarDays, Layers, Minus, Moon, Plus, Sun } from "lucide-react";
+import {
+	CalendarDays,
+	Layers,
+	Minus,
+	Moon,
+	Plug,
+	Plus,
+	Sun,
+} from "lucide-react";
 import { useId, useState } from "react";
 import { eventId, useEventsContext } from "../context";
 import { KEY_TO_SLUG } from "../utils/citySlug";
+import { MCP_INSTALL_URL } from "../utils/mcpInstall";
 import ActiveFilterStrip from "./filters/ActiveFilterStrip";
 import CategoryFilter from "./filters/CategoryFilter";
 import MoreFilters from "./filters/MoreFilters";
@@ -90,6 +99,16 @@ export default function Header({ onSwipe, onOpenCalendar }: Props) {
 					>
 						<Layers size={12} strokeWidth={2} />
 					</button>
+					<a
+						className="theme-btn"
+						href={MCP_INSTALL_URL}
+						target="_blank"
+						rel="noopener"
+						aria-label="Connect via MCP"
+						title="Connect your AI assistant via MCP"
+					>
+						<Plug size={12} strokeWidth={2} />
+					</a>
 					<button
 						type="button"
 						className="theme-btn"
