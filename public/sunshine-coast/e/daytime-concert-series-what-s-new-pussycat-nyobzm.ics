@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Daytime Concert Series | What’s New Pussycat?
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-nyobzm@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T110000
+DTEND;TZID=Australia/Brisbane:20260930T130000
+SUMMARY:Daytime Concert Series | What’s New Pussycat?
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/whats-new-pussycat/
+END:VEVENT
+END:VCALENDAR

@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "thebananabenderpub",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "FAMILY KARAOKE",
@@ -30,35 +30,59 @@
       "creative": true
     },
     {
+      "title": "SCHOOL HOLIDAY FAMILY TRIVIA NIGHT",
+      "datetime": "Thu 24 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "",
+      "location": "Banana Bender Pub",
+      "link": "https://bookings.nowbookit.com/?accountid=2d1ff32c-188f-41ef-a245-110f74f8832b&theme=light&accent=hex%2Cffeb3b%2Cef6c00&venueid=4502&date=2026-09-24&serviceids=event_LE8QTHHCW3OC4_1787030027013",
+      "cost": "FREE EVENT",
+      "source": "Banana Bender Pub, Palmview",
+      "description": "School holidays just got a whole lot more fun with our FREE Family Trivia Night at the Banana Bender Pub Thursday 24th September packed with laughs\nkid-friendly trivia, big prizes and unbeatable family vibes. DOORS 5:30PM. Book your group table today!",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "trivia",
+        "games",
+        "kids",
+        "family",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
       "title": "TRIBUTE FESTIVAL 26′",
       "datetime": "Fri 25 Sep",
       "datetime_iso": "2026-09-25",
       "datetime_end_iso": "",
-      "location": "Banana Bender Pub",
-      "link": "http://39936025.hs-sites.com/ultimate_tribute_festival_26",
+      "location": "Banana Bender Pub, Palmview",
+      "link": "https://moshtix.com.au/v2/event/the-ultimate-tribute-festival/198637",
       "cost": "$37 + BOOKING FEES",
       "source": "Banana Bender Pub, Palmview",
-      "description": "The Ultimate Tribute Festival '26 \n\nGet ready for a night of unforgettable music, Friday, Sep 25th, six top tribute acts one epic show.\n\nA night of timeless hits of ABBA, Bee Gees, Neil Diamond, Barbra Streisand, Creedence Clearwater Revival, Fleetwood Mac Experience in a non-stop celebration of classic anthems. Music that shapped generations. – each delivering a 40 min set of iconic hits.",
+      "description": "The Ultimate Tribute Festival '26\nGet ready for a night of unforgettable music, Friday, Sep 25th, six top tribute acts one epic show.\nA night of timeless hits of ABBA, Bee Gees, Neil Diamond, Barbra Streisand, Creedence Clearwater Revival, Fleetwood Mac Experience in a non-stop celebration of classic anthems. Music that shapped generations. – each delivering a 40 min set of iconic hits.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "live music",
         "music",
+        "live music",
         "concert",
         "tribute"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
     },
     {
       "title": "BINGO LOCO",
-      "datetime": "Sat 26 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-26T17:00:00",
+      "datetime": "Sat 26 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-26T18:00:00",
       "datetime_end_iso": "",
-      "location": "Banana Bender Pub",
-      "link": "http://39936025.hs-sites.com/2026-bingo-loco-september",
+      "location": "Banana Bender Pub, Palmview",
+      "link": "https://www.eventbrite.com.au/e/bingo-loco-palmview-the-banana-bender-pub-saturday-26th-sept-tickets-1993834364256?aff=oddtdtcreator",
       "cost": "FROM $51 + BOOKING FEES",
       "source": "Banana Bender Pub, Palmview",
       "description": "Bingo Loco: a wild 3-hour show with rave rounds, dance-offs, epic prizes & nonstop energy. Saturday 26th September.\nPALMVIEW!!! Strap yourselves, in because the world's LARGEST BINGO RAVE is heading to the Bender for a massive event! Grab your tickets now,",
@@ -66,37 +90,83 @@
       "category": "Social / Meetup",
       "tags": [
         "bingo",
-        "nightlife",
         "dance",
-        "music",
-        "community"
+        "nightlife",
+        "games"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "TINY HUMANS",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "Banana Bender Pub, Palmview",
+      "link": "https://mudcrabmusic.flicket.io/events/709a4427-fa70-49ab-aac1-2add0e4e0cbb",
+      "cost": "FROM $20",
+      "source": "Banana Bender Pub, Palmview",
+      "description": "Saturday 26th Spetember, Tiny Humans Dancing under the sea is bringing a proper kids rave dance party to the Sunshine Coast - packed with huge tunes, under the sea theming, confetti blasts, bubble machines, games, lighting effects and non-stop energy for little legends and their grown-ups.",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "dance",
+        "kids",
+        "family",
+        "music"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     },
     {
       "title": "JUNIOR OPEN MIC NIGHT SEPTEMBER",
       "datetime": "Sun 27 Sep",
       "datetime_iso": "2026-09-27",
       "datetime_end_iso": "",
-      "location": "Banana Bender Pub",
+      "location": "Banana Bender",
       "link": "http://39936025.hs-sites.com/2026-junior-open-mic-night-september",
       "cost": "FREE EVENT",
       "source": "Banana Bender Pub, Palmview",
       "description": "The Banana Bender is all about backing fresh talent, and this year we’re giving the juniors the entire stage to themselves. Back after a popular demand - Friday 10th July from 3-10pm. Bring your instruments and your cheer squad. Full backline supplied thanks to Mooloolaba Music",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Concert / Music",
       "tags": [
-        "open mic",
         "music",
-        "youth",
-        "community"
+        "live music",
+        "open mic",
+        "youth"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "AUDIO HOLICS FESTIVAL W/MARINO MELLINO",
+      "datetime": "Fri 2 Oct, 2:00 PM",
+      "datetime_iso": "2026-10-02T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Banana Bender Pub, Palmview",
+      "link": "http://39936025.hs-sites.com/2026-audio-holics",
+      "cost": "See link",
+      "source": "Banana Bender Pub, Palmview",
+      "description": "Friday 2nd October - The most awaited festival of the year is back on the Coast, once again powered by AUDIOHOLICS, the out of this world audiovisual experience brought to life by the master himself, MARIANO MELLINO.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "electronic",
+        "dj",
+        "festival"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
       "creative": true
     }
   ]

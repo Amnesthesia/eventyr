@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Reconnecting with Nature at the Maroochy Regional Bushland Bot
+ anic Garden
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-18clhkl@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T083000
+DTEND;TZID=Australia/Brisbane:20261004T103000
+SUMMARY:Reconnecting with Nature at the Maroochy Regional Bushland Botanic 
+ Garden
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/reconnecting-with-nature-at-the-maroochy-r
+ egional-bushland-botanic-garden-321431/
+END:VEVENT
+END:VCALENDAR

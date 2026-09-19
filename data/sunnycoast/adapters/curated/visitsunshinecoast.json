@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "aggregators",
   "source_id": "visitsunshinecoast",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Mary Valley Scarecrow Festival",
@@ -22,28 +22,6 @@
         "festival",
         "family",
         "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Big Love Festival",
-      "datetime": "Fri 11 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-09-13",
-      "location": "Eudlo",
-      "link": "https://www.visitsunshinecoast.com/event/6a826c1ddc7fc4af0c22293c/big-love-festival",
-      "cost": "See link",
-      "source": "Visit Sunshine Coast",
-      "description": "Awaken your heart, expand your mind, and celebrate community at the Big Love Festival 2026 a one-of-",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "festival",
-        "community",
-        "music"
       ],
       "social": true,
       "intellectual": false,
@@ -115,6 +93,99 @@
       "intellectual": false,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "Passport to Malt & Mayhem Oktoberfest style",
+      "datetime": "Sat 3 Oct",
+      "datetime_iso": "2026-10-03",
+      "datetime_end_iso": "",
+      "location": "Kuluin",
+      "link": "https://www.visitsunshinecoast.com/event/6a9b707eed9ad8e8213bf3de/passport-to-malt-and-mayhem-oktoberfest-style",
+      "cost": "See link",
+      "source": "Visit Sunshine Coast",
+      "description": "Sunshine Coast's ultimate Oktoberfest brewery adventure\n\nGrab a passport and climb aboard for a uniq",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "beer",
+        "drinks",
+        "tour",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "The Great Noosa Trail Walk",
+      "datetime": "Sat 3 Oct – Mon 5 Oct",
+      "datetime_iso": "2026-10-03",
+      "datetime_end_iso": "2026-10-05",
+      "location": "Cooroy",
+      "link": "https://www.visitsunshinecoast.com/event/690ba074d31112e018a419f6/the-great-noosa-trail-walk",
+      "cost": "See link",
+      "source": "Visit Sunshine Coast",
+      "description": "Step into nature and experience one of Queensland's most unique walking events.\n\nThe Great Noosa Tra",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "nature",
+        "walking",
+        "adventure"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Moffat Beach: Vintage Vibes Street Party",
+      "datetime": "Thu 24 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "",
+      "location": "Moffat Beach",
+      "link": "https://www.visitsunshinecoast.com/event/6aab726eb900c1cd0512b238/moffat-beach-vintage-vibes-street-party?queryID=1dcd1b87952edc52039c105f534e60fd",
+      "cost": "See link",
+      "source": "Visit Sunshine Coast",
+      "description": "The Moffat Beach Street Party returns to Seaview Terrace on Thursday 24 September 2026, from 4pm to",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "community",
+        "festival",
+        "music",
+        "live music"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Kingfisha - Highly Recommended Tour, Sunshine Coast - Full Moon Dance",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "Visit Sunshine Coast",
+      "link": "https://www.visitsunshinecoast.com/event/6aab546f856aca8c2fb03dd0/kingfisha-highly-recommended-tour-sunshine-coast-full-moon-dance?queryID=1dcd1b87952edc52039c105f534e60fd",
+      "cost": "See link",
+      "source": "Visit Sunshine Coast",
+      "description": "Full Moon Dance featuring Kingfisha, The Steele Syndicate, The Madtones ft Andy V and DJ Outlook.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "band",
+        "electronic",
+        "dj",
+        "dance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }

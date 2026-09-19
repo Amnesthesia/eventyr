@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:MANHATTAN SHORT – Film Festival 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-d2hmru@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T110000
+DTEND;TZID=Australia/Brisbane:20261002T130000
+SUMMARY:MANHATTAN SHORT – Film Festival 2026
+DESCRIPTION:$26.00 Adult / $23.00 Concession / Special Discount for Noosa F
+ ilm Society members (Use your existing NFS code\, limit of 2 x tickets)
+LOCATION:The J Noosa
+URL:https://www.thej.com.au/manhattan-short-2026/
+END:VEVENT
+END:VCALENDAR

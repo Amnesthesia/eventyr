@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight: Ed Sheeran Meets Coldplay
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-12j6b58@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T210000
+DTEND;TZID=Australia/Brisbane:20260926T230000
+SUMMARY:Candlelight: Ed Sheeran Meets Coldplay
+DESCRIPTION:A late-night atmospheric concert featuring melodic tributes to 
+ Ed Sheeran and Coldplay in an intimate setting.
+LOCATION:Imperial Hotel Eumundi\, Eumundi
+URL:https://www.myguidesunshinecoast.com/events/september-2026
+END:VEVENT
+END:VCALENDAR

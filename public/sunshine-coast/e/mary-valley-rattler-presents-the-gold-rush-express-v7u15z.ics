@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mary Valley Rattler presents the Gold Rush Express
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-v7u15z@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Mary Valley Rattler presents the Gold Rush Express
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/mary-valley-rattler-presents-the-gold-rush
+ -express/
+END:VEVENT
+END:VCALENDAR

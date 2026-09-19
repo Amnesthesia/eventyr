@@ -3,29 +3,53 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "alexsurfclub",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
-      "title": "Business by the Beach",
-      "datetime": "Wed 16 Sep, 7:30 AM",
-      "datetime_iso": "2026-09-16T07:30:00",
+      "title": "NIPPER SUPPORT CREW",
+      "datetime": "Fri 25 Sep",
+      "datetime_iso": "2026-09-25",
       "datetime_end_iso": "",
-      "location": "Beachside Cafe",
-      "link": "https://alexsurfclub.com.au/event/business-by-the-beach/",
+      "location": "Alexandra Headland SLSC",
+      "link": "https://alexsurfclub.com.au/event/nipper-support-crew/",
       "cost": "See link",
       "source": "Alexandra Headland Surf Life Saving Club",
-      "description": "Start your workday with a coffee, ocean views and great local connections at Alex Surf Club. Hosted by ABA Advice Beyond Accounting.",
+      "description": "There are multiple ways you can support our nippers at Alex. From roles as Officials at Carnivals, to flipping burgers on the BBQ, leading nippers through their weekly sessions or in Water Safety. We require one Water Safety Officer for every five Nippers.",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
-        "networking",
-        "business",
-        "coffee"
+        "community",
+        "sport",
+        "kids",
+        "family"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
+      "creative": false
+    },
+    {
+      "title": "Beach Clean Up",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "Alex Heads Beach, in front of the surf club",
+      "link": "https://alexsurfclub.com.au/event/beach-clean-up/",
+      "cost": "See link",
+      "source": "Alexandra Headland Surf Life Saving Club",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community",
+        "environment",
+        "nature",
+        "outdoor"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
       "creative": false
     }
   ]

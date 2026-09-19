@@ -1,7 +1,8 @@
 {
   "weeks": [
     "2026-09-07",
-    "2026-09-14"
+    "2026-09-14",
+    "2026-09-21"
   ],
   "sources": {
     "eventbrite.com.au": {
@@ -13,13 +14,15 @@
     "sunshinecoast.qld.gov.au": {
       "weeksHit": [
         "2026-09-07",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-09-21"
       ]
     },
     "noosaartstheatre.org.au": {
       "weeksHit": [
         "2026-09-07",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-09-21"
       ]
     },
     "theeventscentre.com.au": {
@@ -59,7 +62,28 @@
     },
     "visitsunshinecoast.com": {
       "weeksHit": [
-        "2026-09-14"
+        "2026-09-14",
+        "2026-09-21"
+      ]
+    },
+    "sunshinecoastpoint.com.au": {
+      "weeksHit": [
+        "2026-09-21"
+      ]
+    },
+    "sunshinecoastartgroup.com.au": {
+      "weeksHit": [
+        "2026-09-21"
+      ]
+    },
+    "myguidesunshinecoast.com": {
+      "weeksHit": [
+        "2026-09-21"
+      ]
+    },
+    "humanitix.com": {
+      "weeksHit": [
+        "2026-09-21"
       ]
     }
   },
@@ -85,8 +109,8 @@
       "lastWeek": "2026-09-07"
     },
     "oursc.com.au": {
-      "count": 2,
-      "lastWeek": "2026-09-07"
+      "count": 4,
+      "lastWeek": "2026-09-21"
     },
     "sunshinevalleygazette.com.au": {
       "count": 1,
@@ -123,6 +147,30 @@
     "heartofgold.com.au": {
       "count": 1,
       "lastWeek": "2026-09-14"
+    },
+    "brisbanekids.com.au": {
+      "count": 4,
+      "lastWeek": "2026-09-21"
+    },
+    "aaaart.online": {
+      "count": 2,
+      "lastWeek": "2026-09-21"
+    },
+    "artsnational.au": {
+      "count": 1,
+      "lastWeek": "2026-09-21"
+    },
+    "eventbrite.com": {
+      "count": 1,
+      "lastWeek": "2026-09-21"
+    },
+    "coolumadvertiser.com.au": {
+      "count": 4,
+      "lastWeek": "2026-09-21"
+    },
+    "gjugg.is": {
+      "count": 1,
+      "lastWeek": "2026-09-21"
     }
   }
 }

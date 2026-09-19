@@ -3,7 +3,32 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "cooroybutterfactory",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Sunprint to Story: Cyanotype as Collage",
+      "datetime": "Sat 3 Oct, 10:00 AM",
+      "datetime_iso": "2026-10-03T10:00:00",
+      "datetime_end_iso": "2026-10-03T15:00:00",
+      "location": "Cooroy Butter Factory Arts Centre",
+      "link": "https://events.humanitix.com/sunprint-to-sunstory",
+      "cost": "$145|$140 Members",
+      "source": "Cooroy Butter Factory Arts Centre",
+      "description": "Join local mixed media artist Sue Bradshaw for a hands-on workshop making cyanotype sunprints and collage. You’ll unite light, objects and paper to create a visual story. Open to all skill levels, this workshop invites you to bring small objects and images to weave into your story. If you are not sure where to begin, Sue will offer inspiration, guidance, and a range of examples to spark ideas. By day’s end, each student will leave with a finished sunprint story of their own.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "craft",
+        "photography",
+        "design",
+        "beginners"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
 }

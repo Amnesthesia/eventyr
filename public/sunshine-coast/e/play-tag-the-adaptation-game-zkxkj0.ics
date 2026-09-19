@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Play TAG: The Adaptation Game
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-zkxkj0@dothings
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:Play TAG: The Adaptation Game
+DESCRIPTION:Join us for The Adaptation Game (TAG) — an interactive game w
+ here you’ll navigate real-world climate scenarios\, make decisions\, and
+  discover how the choices we make can help build a more prepared and resil
+ ient community.
+LOCATION:UniSC Sunshine Coast\, Sippy Downs
+URL:https://usc.edu.au/community/events/play-tag-the-adaptation-game
+END:VEVENT
+END:VCALENDAR

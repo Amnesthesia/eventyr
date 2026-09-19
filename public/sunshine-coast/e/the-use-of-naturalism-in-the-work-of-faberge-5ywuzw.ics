@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Use of Naturalism in the Work of Fabergé
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-5ywuzw@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T174500
+DTEND;TZID=Australia/Brisbane:20260921T191500
+SUMMARY:The Use of Naturalism in the Work of Fabergé
+DESCRIPTION:A scholarly lecture exploring the influence of natural forms on
+  the intricate craftsmanship of Carl Fabergé\, perfect for those interest
+ ed in design history.
+LOCATION:ANSC Caloundra\, Caloundra
+URL:https://www.artsnational.au
+END:VEVENT
+END:VCALENDAR

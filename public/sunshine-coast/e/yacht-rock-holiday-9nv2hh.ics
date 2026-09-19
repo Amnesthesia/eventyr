@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yacht Rock Holiday
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-9nv2hh@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T160000
+DTEND;TZID=Australia/Brisbane:20261004T180000
+SUMMARY:Yacht Rock Holiday
+DESCRIPTION:Featuring classics from Toto\, Hall & Oates\, Doobie Brothers\,
+  Christopher Cross and many other Yacht Rock favourites!
+LOCATION:Sunshine Beach Surf Club
+URL:https://events.humanitix.com/yacht-rock-holiday-k2g8352c
+END:VEVENT
+END:VCALENDAR

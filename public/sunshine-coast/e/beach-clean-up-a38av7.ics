@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Beach Clean Up
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-a38av7@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Beach Clean Up
+DESCRIPTION:
+LOCATION:Alex Heads Beach\, in front of the surf club
+URL:https://alexsurfclub.com.au/event/beach-clean-up/
+END:VEVENT
+END:VCALENDAR

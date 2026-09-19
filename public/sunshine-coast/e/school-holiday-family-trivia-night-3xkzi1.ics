@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SCHOOL HOLIDAY FAMILY TRIVIA NIGHT
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-3xkzi1@dothings
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:SCHOOL HOLIDAY FAMILY TRIVIA NIGHT
+DESCRIPTION:School holidays just got a whole lot more fun with our FREE Fam
+ ily Trivia Night at the Banana Bender Pub Thursday 24th September packed w
+ ith laughs kid-friendly trivia\, big prizes and unbeatable family vibes. D
+ OORS 5:30PM. Book your group table today!
+LOCATION:Banana Bender Pub
+URL:https://bookings.nowbookit.com/?accountid=2d1ff32c-188f-41ef-a245-110f7
+ 4f8832b&theme=light&accent=hex%2Cffeb3b%2Cef6c00&venueid=4502&date=2026-09
+ -24&serviceids=event_LE8QTHHCW3OC4_1787030027013
+END:VEVENT
+END:VCALENDAR

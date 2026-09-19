@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:STUFFit – Certificate III in Events
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-38vd49@dothings
+DTSTART;VALUE=DATE:20260205
+DTEND;VALUE=DATE:20261105
+SUMMARY:STUFFit – Certificate III in Events
+DESCRIPTION:Certificate III in Events…
+LOCATION:Study Sunshine Coast events
+URL:https://www.studysunshinecoast.com.au/event/stuff-it-certificate-iii-in
+ -events/
+END:VEVENT
+END:VCALENDAR

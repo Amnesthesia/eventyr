@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Out of the Round (Session 2)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-3lnmu5@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T100000
+DTEND;TZID=Australia/Brisbane:20260927T120000
+SUMMARY:Out of the Round (Session 2)
+DESCRIPTION:A hands-on pottery workshop session providing an opportunity to
+  refine ceramic skills in a community studio setting.
+LOCATION:Sunshine Coast Art Group Pottery Studio
+URL:https://sunshinecoastartgroup.com.au
+END:VEVENT
+END:VCALENDAR

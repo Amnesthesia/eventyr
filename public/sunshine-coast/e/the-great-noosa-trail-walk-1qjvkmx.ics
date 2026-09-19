@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Great Noosa Trail Walk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1qjvkmx@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261006
+SUMMARY:The Great Noosa Trail Walk
+DESCRIPTION:Step into nature and experience one of Queensland's most unique
+  walking events. The Great Noosa Tra
+LOCATION:Cooroy
+URL:https://www.visitsunshinecoast.com/event/690ba074d31112e018a419f6/the-g
+ reat-noosa-trail-walk
+END:VEVENT
+END:VCALENDAR

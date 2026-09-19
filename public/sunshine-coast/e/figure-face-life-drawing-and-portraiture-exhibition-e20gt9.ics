@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:“Figure & Face” Life Drawing and Portraiture Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-e20gt9@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T090000
+DTEND;TZID=Australia/Brisbane:20260924T150000
+SUMMARY:“Figure & Face” Life Drawing and Portraiture Exhibition
+DESCRIPTION:An exhibition focusing on the human form through various artist
+ ic mediums at the historic Buderim Craft Cottage.
+LOCATION:Atrium Gallery\, Buderim Craft Cottage\, Buderim
+URL:https://www.coolumadvertiser.com.au/community-notices/
+END:VEVENT
+END:VCALENDAR

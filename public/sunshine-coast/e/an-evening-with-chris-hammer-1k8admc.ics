@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:An Evening with Chris Hammer
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1k8admc@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T183000
+DTEND;TZID=Australia/Brisbane:20261001T203000
+SUMMARY:An Evening with Chris Hammer
+DESCRIPTION:An Evening with Chris Hammer\, Noosa\, What's On
+LOCATION:The J Noosa
+URL:https://www.thej.com.au/an-evening-with-chris-hammer/
+END:VEVENT
+END:VCALENDAR

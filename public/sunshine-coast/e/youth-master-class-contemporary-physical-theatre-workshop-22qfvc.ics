@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Youth Master Class: Contemporary Physical Theatre Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-22qfvc@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T093000
+DTEND;TZID=Australia/Brisbane:20260929T113000
+SUMMARY:Youth Master Class: Contemporary Physical Theatre Workshop
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/ymc-contemporary-physical-theatre-
+ workshop/
+END:VEVENT
+END:VCALENDAR

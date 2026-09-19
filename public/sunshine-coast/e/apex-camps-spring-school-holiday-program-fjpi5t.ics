@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Apex Camps Spring School Holiday Program
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-fjpi5t@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T081500
+DTEND;TZID=Australia/Brisbane:20260921T101500
+SUMMARY:Apex Camps Spring School Holiday Program
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/apex-camps-spring-school-holiday-program/
+END:VEVENT
+END:VCALENDAR

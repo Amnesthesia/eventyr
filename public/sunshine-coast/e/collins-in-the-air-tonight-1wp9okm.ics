@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Collins In The Air Tonight
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1wp9okm@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T150000
+DTEND;TZID=Australia/Brisbane:20260927T170000
+SUMMARY:Collins In The Air Tonight
+DESCRIPTION:Collins In The Air Tonight! SUNDAY 27 SEPTEMBER | KING'S BEACH 
+ TAVERN Get ready to dance\, sing\, and feel every iconic beat of Phil Coll
+ ins and Genesis! From the thunderous drum fill of In the Air Tonight to th
+ e irresistible grooves of Sussudio\, Easy Lover\, Don't Lose My Number\, I
+ nvisible Touch and Another Day In Paradise\, this show is pure ’80s ener
+ gy from start to finish. With a powerhouse band\, soaring vocals\, and hit
+ s that defined a decade\, this is the ultimate retro party -> the kind of 
+ night you’ll be talking about all week. Feel it coming… grab your mate
+ s\, grab your tickets\, and let’s Phil it!
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:https://tickets.oztix.com.au/outlet/event/1020f82b-f9eb-4d95-87ea-f3f01
+ d4e8cc3
+END:VEVENT
+END:VCALENDAR

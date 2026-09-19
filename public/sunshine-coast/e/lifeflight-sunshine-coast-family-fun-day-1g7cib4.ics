@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LifeFlight Sunshine Coast Family Fun Day
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1g7cib4@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:LifeFlight Sunshine Coast Family Fun Day
+DESCRIPTION:Join in for a fun-filled family day to celebrate the opening of
+  LifeFlight's Sunshine Coast Visitor
+LOCATION:Marcoola
+URL:https://www.visitsunshinecoast.com/event/6a83f9cc82e82e4e7f6b0b0e/lifef
+ light-sunshine-coast-family-fun-day
+END:VEVENT
+END:VCALENDAR

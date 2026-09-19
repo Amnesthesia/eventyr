@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Afternoon Live Music – Fabian
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1eka061@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T110000
+DTEND;TZID=Australia/Brisbane:20260920T140000
+SUMMARY:Sunday Afternoon Live Music – Fabian
+DESCRIPTION:The one and only Fabian is back again. Never a boring afternoon
+  out with Fabian in the building - get ready to put your dancing shoes on.
+LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
+URL:https://www.noosarsl.com.au/entertainment/sunday-afternoon-live-music-f
+ abian/
+END:VEVENT
+END:VCALENDAR

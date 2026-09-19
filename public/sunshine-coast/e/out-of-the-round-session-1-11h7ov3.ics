@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Out of the Round (Session 1)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-11h7ov3@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T100000
+DTEND;TZID=Australia/Brisbane:20260926T120000
+SUMMARY:Out of the Round (Session 1)
+DESCRIPTION:A hands-on pottery workshop focused on wheel-throwing technique
+ s in a collaborative studio environment.
+LOCATION:Sunshine Coast Art Group Pottery Studio
+URL:https://sunshinecoastartgroup.com.au
+END:VEVENT
+END:VCALENDAR

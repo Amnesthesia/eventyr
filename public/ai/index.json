@@ -83,11 +83,17 @@
       "city_key": "sunnycoast",
       "slug": "sunshine-coast",
       "timezone": "Australia/Brisbane",
-      "data_as_of": "2026-09-13",
+      "data_as_of": "2026-09-20",
       "days": [
-        "/ai/sunshine-coast/2026-09-20.json"
+        "/ai/sunshine-coast/2026-09-21.json",
+        "/ai/sunshine-coast/2026-09-22.json",
+        "/ai/sunshine-coast/2026-09-23.json",
+        "/ai/sunshine-coast/2026-09-24.json",
+        "/ai/sunshine-coast/2026-09-25.json",
+        "/ai/sunshine-coast/2026-09-26.json",
+        "/ai/sunshine-coast/2026-09-27.json"
       ],
-      "week": "/ai/sunshine-coast/week-2026-09-14.json",
+      "week": "/ai/sunshine-coast/week-2026-09-21.json",
       "week_categories": []
     }
   ]

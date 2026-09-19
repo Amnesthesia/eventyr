@@ -3,53 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "thej",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
-    {
-      "title": "Sweet Sweat Set 2026 – Karaka Orchestra",
-      "datetime": "Fri 18 Sep, 7:30 PM",
-      "datetime_iso": "2026-09-18T19:30:00",
-      "datetime_end_iso": "",
-      "location": "The J Noosa",
-      "link": "https://www.thej.com.au/sweet-sweat-set-karaka-orchestra/",
-      "cost": "See link",
-      "source": "The J Noosa",
-      "description": "Sweet Sweat Set 2026 Karaka Orchestra, The J Noosa, What's On,",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "orchestra",
-        "music",
-        "live"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Nurse Georgie Carroll – Infectious – Encore Show",
-      "datetime": "Sat 19 Sep, 7:30 PM",
-      "datetime_iso": "2026-09-19T19:30:00",
-      "datetime_end_iso": "",
-      "location": "The J Noosa",
-      "link": "https://www.thej.com.au/georgie-carroll-infectious-encore/",
-      "cost": "See link",
-      "source": "The J Noosa",
-      "description": "Stand Up Comedy, Georgie Carroll, Infectious, What's On, Noosa, The J Theatre",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Grease",
       "datetime": "Thu 24 Sep – Sat 26 Sep",
@@ -69,6 +25,74 @@
         "youth"
       ],
       "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Librarian",
+      "datetime": "Wed 30 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-30T11:00:00",
+      "datetime_end_iso": "",
+      "location": "The J Noosa",
+      "link": "https://www.thej.com.au/the-librarian/",
+      "cost": "See link",
+      "source": "The J Noosa",
+      "description": "The Librarian, Children's theatre, September school holidays, The J",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "performance",
+        "kids",
+        "family"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "An Evening with Chris Hammer",
+      "datetime": "Thu 1 Oct, 6:30 PM",
+      "datetime_iso": "2026-10-01T18:30:00",
+      "datetime_end_iso": "",
+      "location": "The J Noosa",
+      "link": "https://www.thej.com.au/an-evening-with-chris-hammer/",
+      "cost": "See link",
+      "source": "The J Noosa",
+      "description": "An Evening with Chris Hammer, Noosa, What's On",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "literature",
+        "books",
+        "writing",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "MANHATTAN SHORT – Film Festival 2026",
+      "datetime": "Fri 2 Oct, 11:00 AM",
+      "datetime_iso": "2026-10-02T11:00:00",
+      "datetime_end_iso": "",
+      "location": "The J Noosa",
+      "link": "https://www.thej.com.au/manhattan-short-2026/",
+      "cost": "See link",
+      "source": "The J Noosa",
+      "description": "$26.00 Adult / $23.00 Concession / Special Discount for Noosa Film Society members (Use your existing NFS code, limit of 2 x tickets)",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "festival",
+        "culture"
+      ],
+      "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true

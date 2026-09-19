@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Meditation Creations – Art Studio Session
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1nf8hw2@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T130000
+DTEND;TZID=Australia/Brisbane:20260923T150000
+SUMMARY:Meditation Creations – Art Studio Session
+DESCRIPTION:An open-format creative session in the Chenrezig Art Studio des
+ igned to foster mindfulness through artistic expression.
+LOCATION:Chenrezig Art Studio\, Eudlo
+URL:https://humanitix.com/au/search/au--queensland/Sunshine%20Coast%20NAAID
+ OC
+END:VEVENT
+END:VCALENDAR

@@ -1,5 +1,11 @@
 {
   "places": {
+    "5 South St": {
+      "lat": -30.9846076,
+      "lng": 150.2558985,
+      "label": "5 South St, Gunnedah NSW 2380, Australia",
+      "country": "AU"
+    },
     "Abbey 301": {
       "lat": 18.7616715,
       "lng": 73.36858819999999,
@@ -7,12 +13,51 @@
       "country": "IN",
       "foreign": true
     },
+    "Alex Heads Beach, in front of the surf club": {
+      "lat": -26.6701833,
+      "lng": 153.1085057,
+      "label": "Alexandra Headland Beach, Queensland, Australia",
+      "country": "AU"
+    },
+    "Alexandra Headland SLSC": {
+      "lat": -26.6706454,
+      "lng": 153.108003,
+      "label": "Alexandra Headland QLD, Australia",
+      "country": "AU"
+    },
     "AllEvents.in": null,
+    "Alliance Française d'Ahmedabad": {
+      "lat": 23.0125804,
+      "lng": 72.5335743,
+      "label": "Shyamal Cross Rd, beside Food Corporation of India, Manekbaug, Shyamal, Ahmedabad, Gujarat 380015, India",
+      "country": "IN",
+      "foreign": true
+    },
     "Altitude Nine, Maroochydore": {
       "lat": -26.6583228,
       "lng": 153.0912497,
       "label": "Corner First Ave And, South Sea Islander Way, Maroochydore QLD 4558, Australia",
       "country": "AU"
+    },
+    "Amla Tree Jungle Resort | Best Resort in Bhopal": {
+      "lat": 23.0940714,
+      "lng": 77.3958662,
+      "label": "Kolar Road, Kalapani, Jod, Gol, Bhopal, Madhya Pradesh 462042, India",
+      "country": "IN",
+      "foreign": true
+    },
+    "ANSC Caloundra, Caloundra": {
+      "lat": -26.8043999,
+      "lng": 153.1254643,
+      "label": "Caloundra QLD 4551, Australia",
+      "country": "AU"
+    },
+    "Arose Foods Party Lawn": {
+      "lat": 23.008483,
+      "lng": 72.48508799999999,
+      "label": "Arose Foods, Karnavati Club Rd, YMCA to, Bopal, Mohamadpura, Ahmedabad, Gujarat 380058, India",
+      "country": "IN",
+      "foreign": true
     },
     "Arthshila Patna": {
       "lat": 25.611435,
@@ -27,10 +72,22 @@
       "label": "Maroochy Regional Bushland Botanic Garden, 51 Palm Creek Rd, Tanawha QLD 4554, Australia",
       "country": "AU"
     },
+    "Atrium Gallery, Buderim Craft Cottage, Buderim": {
+      "lat": -26.6849558,
+      "lng": 153.0544738,
+      "label": "5 Main St, Buderim QLD 4556, Australia",
+      "country": "AU"
+    },
     "Avoca Beach Theatre": {
       "lat": -33.4715638,
       "lng": 151.4365626,
       "label": "69 Avoca Dr, Avoca Beach NSW 2251, Australia",
+      "country": "AU"
+    },
+    "Banana Bender": {
+      "lat": -26.7502018,
+      "lng": 153.0465505,
+      "label": "1 Downunder Dr, Palmview QLD 4553, Australia",
       "country": "AU"
     },
     "Banana Bender Pub": {
@@ -51,16 +108,35 @@
       "label": "1 Downunder Dr, Palmview QLD 4553, Australia",
       "country": "AU"
     },
+    "Beach Bar Cotton Tree, Shop 2, Essence, 13, 15 The Esplanade, Maroochydore QLD 4558, Maroochydore, Maroochydore": {
+      "lat": -26.655274,
+      "lng": 153.0978547,
+      "label": "Shop 2, Essence, 13, 15 The Esplanade, Maroochydore QLD 4558, Australia",
+      "country": "AU"
+    },
     "Beachside Cafe": {
       "lat": -27.9446935,
       "lng": 153.4100459,
       "label": "AQUA, 300 Marine Parade, Southport QLD 4215, Australia",
       "country": "AU"
     },
+    "Belgaum-Jamboti Road, SH 54, Belagavi, Karnataka - 590014": {
+      "lat": 15.6480875,
+      "lng": 74.4952969,
+      "label": "JFXW+64M, Bacholi, Karnataka 591302, India",
+      "country": "IN",
+      "foreign": true
+    },
     "Black Bear Lodge": {
       "lat": -27.4580598,
       "lng": 153.034764,
       "label": "1/322 Brunswick St, Fortitude Valley QLD 4006, Australia",
+      "country": "AU"
+    },
+    "Black Box Theatre, Nambour": {
+      "lat": -26.6273881,
+      "lng": 152.9620152,
+      "label": "William St, Nambour QLD 4560, Australia",
       "country": "AU"
     },
     "Blackflag Brewing Coolum": {
@@ -73,6 +149,12 @@
       "lat": -26.5248571,
       "lng": 153.064887,
       "label": "10 Lomandra Place, Coolum Beach QLD 4573, Australia",
+      "country": "AU"
+    },
+    "Blackflag Brewing Mooloolaba": {
+      "lat": -26.6811259,
+      "lng": 153.1199158,
+      "label": "13 Brisbane Rd, Mooloolaba QLD 4557, Australia",
       "country": "AU"
     },
     "Blackflag Brewing Mooloolaba, Mooloolaba · Maroochydore + Mooloolaba": {
@@ -223,11 +305,37 @@
       "label": "19 West Terrace, Caloundra QLD 4551, Australia",
       "country": "AU"
     },
+    "Castaways Beach Club": {
+      "lat": -26.4300002,
+      "lng": 153.1049618,
+      "label": "Castaways Beach QLD, Australia",
+      "country": "AU"
+    },
+    "Chandan Multiplex, Road, Sherkhi, Vadodara, Gujarat, India": {
+      "lat": 22.3350211,
+      "lng": 73.08876920000002,
+      "label": "83PQ+2G2 Chandan Multiplex, Road, Sherkhi, Vadodara, Gujarat 391330, India",
+      "country": "IN",
+      "foreign": true
+    },
+    "Chenrezig Art Studio, Eudlo": {
+      "lat": -26.7395463,
+      "lng": 152.9064539,
+      "label": "33 Johnsons Road, 50/72 mi, Eudlo QLD 4554, Australia",
+      "country": "AU"
+    },
     "Chunar Road": {
       "lat": -38.357967,
       "lng": 144.9270221,
       "label": "Chunar Grove, McCrae VIC 3938, Australia",
       "country": "AU"
+    },
+    "CIDCO Exhibition Centre": {
+      "lat": 19.0679119,
+      "lng": 72.99346899999999,
+      "label": "Sector 30, Vashi, Navi Mumbai, Maharashtra 400703, India",
+      "country": "IN",
+      "foreign": true
     },
     "Clark Place Park, Caloundra": {
       "lat": -26.8071823,
@@ -238,6 +346,12 @@
       "lat": -27.4588631,
       "lng": 153.0349129,
       "label": "641 Ann St, Fortitude Valley QLD 4006, Australia",
+      "country": "AU"
+    },
+    "Club 77": {
+      "lat": -33.8744397,
+      "lng": 151.2157209,
+      "label": "77 William St, Darlinghurst NSW 2010, Australia",
       "country": "AU"
     },
     "Club Kawana, Club Kawana 476 Nicklin Way": {
@@ -278,10 +392,22 @@
       "label": "7-13 Elizabeth St, Coolum Beach QLD 4573, Australia",
       "country": "AU"
     },
+    "Coolum Civic Centre, Coolum Beach": {
+      "lat": -26.5308589,
+      "lng": 153.0906524,
+      "label": "Coolum Civic Centre, 2-4 Park St, Coolum Beach QLD 4573, Australia",
+      "country": "AU"
+    },
     "Coolum Coastal Board Walk, 102 Yandina Coolum Road, Coolum Beach, Coolum Beach": {
       "lat": -26.5351814,
       "lng": 153.0831443,
       "label": "102 Yandina Coolum Rd, Coolum Beach QLD 4573, Australia",
+      "country": "AU"
+    },
+    "Cooroy": {
+      "lat": -26.4174227,
+      "lng": 152.9104417,
+      "label": "Cooroy QLD 4563, Australia",
       "country": "AU"
     },
     "Cooroy Butter Factory Arts Centre": {
@@ -305,6 +431,18 @@
       "lat": -26.6544331,
       "lng": 153.0962182,
       "label": "Cotton Tree Park, 40-50 Cotton Tree Parade, Maroochydore QLD 4558, Australia",
+      "country": "AU"
+    },
+    "Coyote’s Roadhouse": {
+      "lat": -26.6526799,
+      "lng": 153.0914827,
+      "label": "12-20 Ocean St, Maroochydore QLD 4558, Australia",
+      "country": "AU"
+    },
+    "Coyote’s Roadhouse, Maroochydore": {
+      "lat": -26.6526799,
+      "lng": 153.0914827,
+      "label": "12-20 Ocean St, Maroochydore QLD 4558, Australia",
       "country": "AU"
     },
     "Coyote’s Roadhouse, Maroochydore · Maroochydore + Mooloolaba": {
@@ -333,6 +471,13 @@
       "country": "IN",
       "foreign": true
     },
+    "Downtown Social House": {
+      "lat": 26.6447312,
+      "lng": -81.87012039999999,
+      "label": "1406 Hendry St, Fort Myers, FL 33901, USA",
+      "country": "US",
+      "foreign": true
+    },
     "EagleBank Arena": {
       "lat": 38.8268505,
       "lng": -77.30967299999999,
@@ -352,6 +497,19 @@
       "label": "8175 Buena Vista Rd, Independence, OR 97351, USA",
       "country": "US",
       "foreign": true
+    },
+    "Empress Garden": {
+      "lat": 18.5125968,
+      "lng": 73.89850419999999,
+      "label": "Empress Garden, Kavade Mala, Ghorpadi, Pune, Maharashtra 411001, India",
+      "country": "IN",
+      "foreign": true
+    },
+    "Enmore Theatre": {
+      "lat": -33.8989556,
+      "lng": 151.1741389,
+      "label": "118-132 Enmore Rd, Newtown NSW 2042, Australia",
+      "country": "AU"
     },
     "Eudlo": {
       "lat": -26.7263836,
@@ -377,6 +535,19 @@
       "country": "US",
       "foreign": true
     },
+    "Factory Theatre": {
+      "lat": -33.9057364,
+      "lng": 151.1655558,
+      "label": "105 Victoria Rd, Marrickville NSW 2204, Australia",
+      "country": "AU"
+    },
+    "Fatehabad Rd, Taj Nagari Phase 1, R.K. Puram Phase-2, Basai Khurd, Agra, UP 282004": {
+      "lat": 27.1578777,
+      "lng": 78.0544576,
+      "label": "Fatehabad Rd, R.K. Puram Phase-2, Uttar Pradesh, India",
+      "country": "IN",
+      "foreign": true
+    },
     "Forest Hills Stadium - Forest Hills, NY": {
       "lat": 40.7192438,
       "lng": -73.84992679999999,
@@ -394,6 +565,13 @@
       "lat": 39.1302341,
       "lng": -77.7462314,
       "label": "36441 Blueridge View Ln, Purcellville, VA 20132, USA",
+      "country": "US",
+      "foreign": true
+    },
+    "Frisco Flyers": {
+      "lat": 33.1655731,
+      "lng": -96.8311004,
+      "label": "6300 Flyers Way, Frisco, TX 75034, USA",
       "country": "US",
       "foreign": true
     },
@@ -422,6 +600,12 @@
       "lat": -33.912422,
       "lng": 151.160837,
       "label": "115 Marrickville Rd, Marrickville NSW 2204, Australia",
+      "country": "AU"
+    },
+    "Gosford Regional Library": {
+      "lat": -33.4272232,
+      "lng": 151.3426224,
+      "label": "123a Donnison St, Gosford NSW 2250, Australia",
       "country": "AU"
     },
     "Gympie": {
@@ -460,6 +644,12 @@
       "label": "Narellan Town Center, Narellan NSW 2567, Australia",
       "country": "AU"
     },
+    "Harry Hartog Tuggeranong": {
+      "lat": -35.4170279,
+      "lng": 149.0668705,
+      "label": "Shop 111/112 South Point Shopping Centre, Greenway ACT 2900, Australia",
+      "country": "AU"
+    },
     "Heart of Gold Film Festival": {
       "lat": -26.1878199,
       "lng": 152.6587012,
@@ -491,6 +681,12 @@
       "country": "AU"
     },
     "Imperial Hotel Eumundi": {
+      "lat": -26.4757402,
+      "lng": 152.9511114,
+      "label": "1 Etheridge St, Eumundi QLD 4562, Australia",
+      "country": "AU"
+    },
+    "Imperial Hotel Eumundi, Eumundi": {
       "lat": -26.4757402,
       "lng": 152.9511114,
       "label": "1 Etheridge St, Eumundi QLD 4562, Australia",
@@ -596,10 +792,22 @@
       "label": "16 Kronk Ct, Bli Bli QLD 4560, Australia",
       "country": "AU"
     },
+    "Kuluin": {
+      "lat": -26.6561441,
+      "lng": 153.0568433,
+      "label": "Kuluin QLD, Australia",
+      "country": "AU"
+    },
     "Land & Sea Brewery": {
       "lat": -26.408304,
       "lng": 153.0433734,
       "label": "19 Venture Dr, Noosaville QLD 4566, Australia",
+      "country": "AU"
+    },
+    "Landsborough Museum": {
+      "lat": -26.8094482,
+      "lng": 152.9647958,
+      "label": "4 Maleny St, Landsborough QLD 4550, Australia",
       "country": "AU"
     },
     "Late Checkout": null,
@@ -615,11 +823,23 @@
       "label": "15 Caxton St, Petrie Terrace QLD 4000, Australia",
       "country": "AU"
     },
+    "Liberty Hall": {
+      "lat": -33.8937908,
+      "lng": 151.2255878,
+      "label": "220 Errol Flynn Blvd, Moore Park NSW 2021, Australia",
+      "country": "AU"
+    },
     "Locals in the Loop": null,
     "Locals in the Loop, 483 Mountain View Road": {
       "lat": -26.7829003,
       "lng": 152.8495178,
       "label": "483 Mountain View Rd, Maleny QLD 4552, Australia",
+      "country": "AU"
+    },
+    "Lot 6, Mooloolaba Esplanade, Mooloolaba": {
+      "lat": -26.6813095,
+      "lng": 153.1212395,
+      "label": "6 Mooloolaba Espl, Mooloolaba QLD 4557, Australia",
       "country": "AU"
     },
     "Main Pavilion, Maleny Showgrounds": {
@@ -645,6 +865,12 @@
       "label": "23 Maple St, Maleny QLD 4552, Australia",
       "country": "AU"
     },
+    "Maleny Community Centre Verandah Room": {
+      "lat": -26.7586917,
+      "lng": 152.8514606,
+      "label": "23 Maple St, Maleny QLD 4552, Australia",
+      "country": "AU"
+    },
     "Maleny RSL, Maleny": {
       "lat": -26.7581187,
       "lng": 152.8485022,
@@ -660,6 +886,18 @@
       "lat": -26.762965,
       "lng": 152.84604,
       "label": "13 Maleny Stanley River Rd, Maleny QLD 4552, Australia"
+    },
+    "Mapleton Public House": {
+      "lat": -26.624369,
+      "lng": 152.8661785,
+      "label": "2 Flaxton Dr, Mapleton QLD 4560, Australia",
+      "country": "AU"
+    },
+    "Mapleton Public House, Mapleton": {
+      "lat": -26.624369,
+      "lng": 152.8661785,
+      "label": "2 Flaxton Dr, Mapleton QLD 4560, Australia",
+      "country": "AU"
     },
     "Mapleton Public House, Mapleton · Nambour + Hinterland": {
       "lat": -26.624369,
@@ -685,10 +923,22 @@
       "label": "105 Memorial Ave, Maroochydore QLD 4558, Australia",
       "country": "AU"
     },
+    "Maroochydore Library, Cotton Tree, 44 Sixth Avenue, Cotton Tree, Sunshine Coast, Sunshine Coast": {
+      "lat": -26.6557655,
+      "lng": 153.1015722,
+      "label": "44 Sixth Ave, Maroochydore QLD 4558, Australia",
+      "country": "AU"
+    },
     "Maroochydore, Alexandra Pde, Maroochydore, Maroochydore": {
       "lat": -26.6582886,
       "lng": 153.1036571,
       "label": "Alexandra Parade, Maroochydore QLD, Australia",
+      "country": "AU"
+    },
+    "Mary Immaculate Catholic Church, Waverley": {
+      "lat": -33.9007165,
+      "lng": 151.2549651,
+      "label": "45A Victoria St, Waverley NSW 2024, Australia",
       "country": "AU"
     },
     "Mary Valley (Imbil/Kandanga/Amamoor)": {
@@ -748,10 +998,34 @@
       "label": "Sunshine Coast QLD, Australia",
       "country": "AU"
     },
+    "Moffat Beach": {
+      "lat": -26.7934372,
+      "lng": 153.1354905,
+      "label": "Moffat Beach QLD 4551, Australia",
+      "country": "AU"
+    },
+    "Mooloolaba Esplanade": {
+      "lat": -26.6784354,
+      "lng": 153.1183754,
+      "label": "Mooloolaba Espl, Mooloolaba QLD 4557, Australia",
+      "country": "AU"
+    },
+    "Mooloolaba Esplanade, Mooloolaba": {
+      "lat": -26.6547678,
+      "lng": 153.0961059,
+      "label": "The Esplanade, Maroochydore QLD 4558, Australia",
+      "country": "AU"
+    },
     "Mooloolaba Tennis Club, 112 Lady Musgrave Dr, Mooloolaba, QL, Mooloolaba, QL": {
       "lat": -26.687024,
       "lng": 153.1018804,
       "label": "112 Lady Musgrave Dr, Mooloolaba QLD 4557, Australia",
+      "country": "AU"
+    },
+    "Mooloolah Valley Country Club": {
+      "lat": -26.7742037,
+      "lng": 153.0092546,
+      "label": "Club Mooloolah Valley Country, 129 Connection Rd, Glenview QLD 4553, Australia",
       "country": "AU"
     },
     "Mooloolah Valley Country Club, Mooloolah Valley · Nambour + Hinterland": {
@@ -760,12 +1034,24 @@
       "label": "Club Mooloolah Valley Country, 129 Connection Rd, Glenview QLD 4553, Australia",
       "country": "AU"
     },
+    "MoshPit": {
+      "lat": -33.9054732,
+      "lng": 151.1811163,
+      "label": "642A King St, Erskineville NSW 2043, Australia",
+      "country": "AU"
+    },
     "mriga EduSpace": {
       "lat": 23.0299809,
       "lng": 72.5092605,
       "label": "H-01, Hasubhai Bungalows, Near, Iskcon Cross Rd, Satellite, Ahmedabad, Gujarat 380015, India",
       "country": "IN",
       "foreign": true
+    },
+    "Musgrave Park": {
+      "lat": -30.58005,
+      "lng": 132.893295,
+      "label": "Musgrave Park, Yellabinna SA 5690, Australia",
+      "country": "AU"
     },
     "Musician in Residence for Human Museum": null,
     "Nambour": {
@@ -842,6 +1128,12 @@
       "label": "13 Bronwyn St, Caloundra West QLD 4551, Australia",
       "country": "AU"
     },
+    "Norton Music Factory, Caloundra West": {
+      "lat": -26.7944767,
+      "lng": 153.1113036,
+      "label": "13 Bronwyn St, Caloundra West QLD 4551, Australia",
+      "country": "AU"
+    },
     "Norton Music Factory, Caloundra West · Caloundra + Kawana": {
       "lat": -26.7944767,
       "lng": 153.1113036,
@@ -910,6 +1202,19 @@
       "country": "AU"
     },
     "Party Hall 1, PSN Club House": null,
+    "Patna Museum": {
+      "lat": 25.612727,
+      "lng": 85.1332734,
+      "label": "Buddh Marg, Lodipur, Patna, Bihar 800001, India",
+      "country": "IN",
+      "foreign": true
+    },
+    "Peregian Beach Hotel": {
+      "lat": -26.4807077,
+      "lng": 153.0952896,
+      "label": "221-229 David Low Way, Peregian Beach QLD 4573, Australia",
+      "country": "AU"
+    },
     "Peregian Beach Hotel, Peregian Beach · Coolum + Peregian": {
       "lat": -26.4807077,
       "lng": 153.0952896,
@@ -945,6 +1250,13 @@
       "lng": 151.1524822,
       "label": "77 Brighton St, Petersham NSW 2049, Australia",
       "country": "AU"
+    },
+    "Pickle Play - Pickleball Academy & Arena": {
+      "lat": 23.0584627,
+      "lng": 72.4896683,
+      "label": "Aryaman Ln, beside Anurita Bunglows, Thaltej, Shilaj, Ahmedabad, Gujarat 380059, India",
+      "country": "IN",
+      "foreign": true
     },
     "Pilates Success, 3/4 Grebe Street, Peregian Beach, Sunshine Coast, Sunshine Coast": {
       "lat": -26.481421,
@@ -1137,6 +1449,12 @@
       "label": "Noosa, QLD, Australia",
       "country": "AU"
     },
+    "Sunshine Beach Surf Club": {
+      "lat": -26.4041711,
+      "lng": 153.1022382,
+      "label": "Sunshine Beach QLD 4567, Australia",
+      "country": "AU"
+    },
     "Sunshine Beach Surf Club, Sunshine Beach · Noosa + North": {
       "lat": -26.3645433,
       "lng": 152.9676695,
@@ -1158,6 +1476,12 @@
       "lat": -26.732801,
       "lng": 153.044807,
       "label": "Pound, 14 Sippy Creek Rd, Tanawha QLD 4556, Australia",
+      "country": "AU"
+    },
+    "Sunshine Coast Art Group Pottery Studio": {
+      "lat": -26.6770911,
+      "lng": 153.0950244,
+      "label": "1 William Parker Pl, Buderim QLD 4556, Australia",
       "country": "AU"
     },
     "Sunshine Coast Heritage": {
@@ -1182,6 +1506,12 @@
       "lat": -27.4418491,
       "lng": 153.0760884,
       "label": "175 MacArthur Ave, Hamilton QLD 4007, Australia",
+      "country": "AU"
+    },
+    "Sydney Opera House": {
+      "lat": -33.8567844,
+      "lng": 151.2152967,
+      "label": "Bennelong Point, Sydney NSW 2000, Australia",
       "country": "AU"
     },
     "Tally Ho Theater": {
@@ -1245,6 +1575,12 @@
       "label": "20 Minchinton St, Caloundra QLD 4551, Australia",
       "country": "AU"
     },
+    "The Imperial Hotel Eumundi": {
+      "lat": -26.4757402,
+      "lng": 152.9511114,
+      "label": "1 Etheridge St, Eumundi QLD 4562, Australia",
+      "country": "AU"
+    },
     "The Island Surf and Expresso, 15 Mudjimba Esplanade, Mudjimba, Sunshine Coast, Sunshine Coast": {
       "lat": -26.6148311,
       "lng": 153.1002953,
@@ -1281,10 +1617,28 @@
       "label": "Maleny QLD 4552, Australia",
       "country": "AU"
     },
+    "The Living Room Theatre": {
+      "lat": -33.9037117,
+      "lng": 151.1641668,
+      "label": "21 Shepherd St, Marrickville NSW 2204, Australia",
+      "country": "AU"
+    },
+    "The Lord Gladstone Hotel": {
+      "lat": -33.8877766,
+      "lng": 151.2013945,
+      "label": "115 Regent St, Chippendale NSW 2008, Australia",
+      "country": "AU"
+    },
     "The Nook, Cooroy · Noosa + North": {
       "lat": -26.3645433,
       "lng": 152.9676695,
       "label": "Noosa, QLD, Australia",
+      "country": "AU"
+    },
+    "The Open Door": {
+      "lat": -37.980381,
+      "lng": 145.22534,
+      "label": "110 Ann St, Dandenong VIC 3175, Australia",
       "country": "AU"
     },
     "The Palace": {
@@ -1311,10 +1665,22 @@
       "label": "15 Ann St, Nambour QLD 4560, Australia",
       "country": "AU"
     },
+    "The Savvy Squire Mooloolaba": {
+      "lat": -26.6837499,
+      "lng": 153.1227915,
+      "label": "123 Parkyn Parade, Mooloolaba QLD 4557, Australia",
+      "country": "AU"
+    },
     "The Savvy Squire, Mooloolaba · Maroochydore + Mooloolaba": {
       "lat": -26.6837499,
       "lng": 153.1227915,
       "label": "123 Parkyn Parade, Mooloolaba QLD 4557, Australia",
+      "country": "AU"
+    },
+    "The Shed at Banana Bender Pub, Palmview": {
+      "lat": -26.7504966,
+      "lng": 153.0465138,
+      "label": "73 Frizzo Rd, Palmview QLD 4553, Australia",
       "country": "AU"
     },
     "The Shed at Banana Bender Pub, Palmview · Caloundra + Kawana": {
@@ -1386,6 +1752,36 @@
       "label": "32 Olympic Way, Sippy Downs QLD 4556, Australia",
       "country": "AU"
     },
+    "UniSC Arena, 32 Olympic Way, Sippy Downs, QLD 4556": {
+      "lat": -26.7167668,
+      "lng": 153.0682097,
+      "label": "32 Olympic Way, Sippy Downs QLD 4556, Australia",
+      "country": "AU"
+    },
+    "UniSC Moreton Bay": {
+      "lat": -27.2708225,
+      "lng": 152.9816741,
+      "label": "1 Moreton Parade, Petrie QLD 4502, Australia",
+      "country": "AU"
+    },
+    "UniSC Moreton Bay, 1 Moreton Bay Parade, Petrie, QLD 4502": {
+      "lat": -27.2708225,
+      "lng": 152.9816741,
+      "label": "1 Moreton Parade, Petrie QLD 4502, Australia",
+      "country": "AU"
+    },
+    "UniSC Sunshine Coast": {
+      "lat": -26.7175689,
+      "lng": 153.0651253,
+      "label": "90 Sippy Downs Dr, Sippy Downs QLD 4556, Australia",
+      "country": "AU"
+    },
+    "UniSC Sunshine Coast, Sippy Downs": {
+      "lat": -26.7175689,
+      "lng": 153.0651253,
+      "label": "90 Sippy Downs Dr, Sippy Downs QLD 4556, Australia",
+      "country": "AU"
+    },
     "University of the Sunshine Coast": {
       "lat": -26.7175689,
       "lng": 153.0651253,
@@ -1403,6 +1799,18 @@
       "lat": -26.4157758,
       "lng": 152.5892615,
       "label": "Upper Kandanga QLD 4570, Australia",
+      "country": "AU"
+    },
+    "UTS": {
+      "lat": -33.8836537,
+      "lng": 151.2006119,
+      "label": "15 Broadway, Ultimo NSW 2007, Australia",
+      "country": "AU"
+    },
+    "Various sites in Maleny, Montville, Flaxton and Mapleton": {
+      "lat": -26.6636322,
+      "lng": 152.8798444,
+      "label": "Flaxton QLD 4560, Australia",
       "country": "AU"
     },
     "Various Venues Sunshine Coast, Palmer Resort, Peregian Springs, Noosa Springs, Pelican Waters, Mooloolaba, Caboolture, Sunshine Coast, Sunshine Coast": {
@@ -1430,6 +1838,19 @@
       "label": "46 Sundew St, Mudjimba QLD 4564, Australia",
       "country": "AU"
     },
+    "View , Music Bar & Lounge": {
+      "lat": 33.8557167,
+      "lng": -118.2999725,
+      "label": "1431 W Knox St, Torrance, CA 90501, USA",
+      "country": "US",
+      "foreign": true
+    },
+    "Villa Noosa Hotel, Noosaville": {
+      "lat": -26.4014357,
+      "lng": 153.0635991,
+      "label": "19 Mary St, Noosaville QLD 4566, Australia",
+      "country": "AU"
+    },
     "Villa Noosa Hotel, Noosaville · Noosa + North": {
       "lat": -26.3645433,
       "lng": 152.9676695,
@@ -1442,6 +1863,12 @@
       "label": "6109 Wolftown-Hood Rd, Madison, VA 22727, USA",
       "country": "US",
       "foreign": true
+    },
+    "Visit Sunshine Coast": {
+      "lat": -26.6525452,
+      "lng": 153.0892902,
+      "label": "Level 3/8 Maroochydore Rd, Maroochydore QLD 4558, Australia",
+      "country": "AU"
     },
     "Walnut Creek Winery": {
       "lat": 39.4538795,
@@ -1469,6 +1896,13 @@
       "country": "US",
       "foreign": true
     },
+    "Willoughby Workspaces at The Charlton Abbott": {
+      "lat": 41.6346231,
+      "lng": -81.4106662,
+      "label": "37903 Euclid Ave, Willoughby, OH 44094, USA",
+      "country": "US",
+      "foreign": true
+    },
     "Wings and Tins Dee Why": {
       "lat": -33.7537453,
       "lng": 151.285469,
@@ -1479,6 +1913,13 @@
       "lat": 28.5274385,
       "lng": 77.22057439999999,
       "label": "A1, DLF South Court, Saket District Centre, District Centre, Sector 6, Pushp Vihar, New Delhi, Delhi 110017, India",
+      "country": "IN",
+      "foreign": true
+    },
+    "ಶ್ರೀಕರ ನಾರಾಯಣ ಧಾರ್ಮಿಕ ಪ್ರತಿಷ್ಠಾನ- ಶಿರಡಿ ಸಾಯಿ ಬಾಬ ಮಂದಿರ": {
+      "lat": 12.914332,
+      "lng": 77.51142159999999,
+      "label": "875, KG Rd, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098, India",
       "country": "IN",
       "foreign": true
     }

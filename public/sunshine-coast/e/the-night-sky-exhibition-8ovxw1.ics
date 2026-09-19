@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Night Sky exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-8ovxw1@dothings
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20270221
+SUMMARY:The Night Sky exhibition
+DESCRIPTION:Our shared darkness
+LOCATION:Landsborough Museum
+URL:https://heritage.sunshinecoast.qld.gov.au/
+END:VEVENT
+END:VCALENDAR

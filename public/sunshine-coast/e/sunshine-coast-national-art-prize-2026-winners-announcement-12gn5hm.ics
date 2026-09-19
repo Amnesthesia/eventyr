@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunshine Coast National Art Prize 2026 Winners Announcement
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-12gn5hm@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T180000
+DTEND;TZID=Australia/Brisbane:20260924T200000
+SUMMARY:Sunshine Coast National Art Prize 2026 Winners Announcement
+DESCRIPTION:An evening event celebrating the winners of the National Art Pr
+ ize\, featuring a showcase of contemporary visual arts and an opportunity 
+ to meet local and visiting artists.
+LOCATION:Caloundra Regional Gallery
+URL:https://gallery.sunshinecoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

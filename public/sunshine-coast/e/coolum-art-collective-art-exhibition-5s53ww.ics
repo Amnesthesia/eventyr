@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Coolum Art Collective Art Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-5s53ww@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T090000
+DTEND;TZID=Australia/Brisbane:20260927T170000
+SUMMARY:Coolum Art Collective Art Exhibition
+DESCRIPTION:An exhibition showcasing the work of local artists within the C
+ oolum Art Collective\, providing an opportunity to view regional creative 
+ output and engage with the artists.
+LOCATION:Coolum Civic Centre\, Coolum Beach
+URL:https://www.sunshinecoastpoint.com.au
+END:VEVENT
+END:VCALENDAR

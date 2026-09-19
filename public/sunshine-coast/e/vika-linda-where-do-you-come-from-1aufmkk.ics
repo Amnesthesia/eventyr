@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Vika & Linda | Where Do You Come From?
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1aufmkk@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T193000
+DTEND;TZID=Australia/Brisbane:20261002T213000
+SUMMARY:Vika & Linda | Where Do You Come From?
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/vika-and-linda/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight: Tribute to Michael Jackson
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1ck2n0c@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T190000
+DTEND;TZID=Australia/Brisbane:20260926T210000
+SUMMARY:Candlelight: Tribute to Michael Jackson
+DESCRIPTION:An atmospheric tribute performance featuring string arrangement
+ s of Michael Jackson's hits by candlelight.
+LOCATION:Imperial Hotel Eumundi\, Eumundi
+URL:https://www.myguidesunshinecoast.com/events/september-2026
+END:VEVENT
+END:VCALENDAR

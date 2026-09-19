@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Coral Futures Symposium
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1u29fsu@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T090000
+DTEND;TZID=Australia/Brisbane:20261003T110000
+SUMMARY:Coral Futures Symposium
+DESCRIPTION:Held in conjunction with the exhibition Coral Futures\, this sy
+ mposium brings together artists\, First Nations knowledge holders\, and re
+ searchers to explore what it means to think\, imagine\, and act alongside 
+ coral in a time of ecological upheaval.
+LOCATION:UniSC Sunshine Coast
+URL:https://usc.edu.au/community/events/coral-futures-symposium
+END:VEVENT
+END:VCALENDAR

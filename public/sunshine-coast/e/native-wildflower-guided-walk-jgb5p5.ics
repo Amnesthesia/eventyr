@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Native Wildflower Guided Walk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-jgb5p5@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Native Wildflower Guided Walk
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/native-wildflower-guided-walk/
+END:VEVENT
+END:VCALENDAR

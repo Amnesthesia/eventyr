@@ -6,23 +6,27 @@ METHOD:PUBLISH
 X-WR-CALNAME:Sunshine Coast — do things
 X-WR-TIMEZONE:Australia/Brisbane
 BEGIN:VEVENT
-UID:sunnycoast-s9pf6v@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T150000
-DTEND;TZID=Australia/Brisbane:20260913T170000
-SUMMARY:Phil Barlow Deep Treasures EP Launch Cooroy
-DESCRIPTION:Phil Barlow 'Deep Treasures' EP Launch Sunday 13 September | 3p
- m | 13+ | BYO Deep Treasures is a collection of songs shaped by a slow and
-  profound inner journey of healing. It is a musical passage through loss\,
-  acceptance\, courage and faith. Captured raw in single-take solo-acoustic
-  recordings\, these songs hold the aliveness of the emotional transformati
- on Phil was experiencing when they were written. They are not about perfec
- tion\, they are about the raw and vulnerable human journey through relatio
- nships\, trust\, change\, forgiveness and growth. In the cosy atmosphere o
- f The Nook\, Phil will perform the EP in its stripped-back solo-acoustic f
- orm and share some of the stories behind the songs.
-LOCATION:Locals in the Loop
-URL:https://localsintheloop.com.au/listing/phil-barlow-deep-treasures-ep-la
- unch/
+UID:sunnycoast-1u29fsu@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T090000
+DTEND;TZID=Australia/Brisbane:20261003T110000
+SUMMARY:Coral Futures Symposium
+DESCRIPTION:Held in conjunction with the exhibition Coral Futures\, this sy
+ mposium brings together artists\, First Nations knowledge holders\, and re
+ searchers to explore what it means to think\, imagine\, and act alongside 
+ coral in a time of ecological upheaval.
+LOCATION:UniSC Sunshine Coast
+URL:https://usc.edu.au/community/events/coral-futures-symposium
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-5ywuzw@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T174500
+DTEND;TZID=Australia/Brisbane:20260921T191500
+SUMMARY:The Use of Naturalism in the Work of Fabergé
+DESCRIPTION:A scholarly lecture exploring the influence of natural forms on
+  the intricate craftsmanship of Carl Fabergé\, perfect for those interest
+ ed in design history.
+LOCATION:ANSC Caloundra\, Caloundra
+URL:https://www.artsnational.au
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-1mc9ozh@dothings
@@ -36,6 +40,196 @@ LOCATION:Rosetta Books\, Maleny
 URL:https://rosettabooks.com.au/p/mirandi-riwoe-book-launch-24-sept-5-30pm
 END:VEVENT
 BEGIN:VEVENT
+UID:sunnycoast-6gp9qh@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T100000
+DTEND;TZID=Australia/Brisbane:20260925T120000
+SUMMARY:Sunshine Coast National Art Prize 2026 – Judge’s Walk and Talk
+DESCRIPTION:A gallery walk-through with the exhibition judge\, providing de
+ ep insights into the curation and winning entries of the National Art Priz
+ e.
+LOCATION:Caloundra Regional Gallery\, Caloundra
+URL:https://oursc.com.au/whats-on/spring-into-september-with-sunshine-coast
+ -events
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-zkxkj0@dothings
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:Play TAG: The Adaptation Game
+DESCRIPTION:Join us for The Adaptation Game (TAG) — an interactive game w
+ here you’ll navigate real-world climate scenarios\, make decisions\, and
+  discover how the choices we make can help build a more prepared and resil
+ ient community.
+LOCATION:UniSC Sunshine Coast\, Sippy Downs
+URL:https://usc.edu.au/community/events/play-tag-the-adaptation-game
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1qjvkmx@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261006
+SUMMARY:The Great Noosa Trail Walk
+DESCRIPTION:Step into nature and experience one of Queensland's most unique
+  walking events. The Great Noosa Tra
+LOCATION:Cooroy
+URL:https://www.visitsunshinecoast.com/event/690ba074d31112e018a419f6/the-g
+ reat-noosa-trail-walk
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-138djfs@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T100000
+DTEND;TZID=Australia/Brisbane:20261003T150000
+SUMMARY:Sunprint to Story: Cyanotype as Collage
+DESCRIPTION:Join local mixed media artist Sue Bradshaw for a hands-on works
+ hop making cyanotype sunprints and collage. You’ll unite light\, objects
+  and paper to create a visual story. Open to all skill levels\, this works
+ hop invites you to bring small objects and images to weave into your story
+ . If you are not sure where to begin\, Sue will offer inspiration\, guidan
+ ce\, and a range of examples to spark ideas. By day’s end\, each student
+  will leave with a finished sunprint story of their own.
+LOCATION:Cooroy Butter Factory Arts Centre
+URL:https://events.humanitix.com/sunprint-to-sunstory
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-9807u0@dothings
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20261012
+SUMMARY:Sunshine Coast National Art Prize 2026 Finalists Exhibition
+DESCRIPTION:A high-profile exhibition showcasing the finalists of the prest
+ igious National Art Prize\, featuring diverse contemporary works from arti
+ sts across Australia. It serves as a great space for quiet contemplation a
+ nd observing current trends in the visual arts.
+LOCATION:Caloundra Regional Gallery\, Felicity House\, Caloundra
+URL:https://gallery.sunshinecoast.qld.gov.au/exhibitions
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-c2l5ut@dothings
+DTSTART;TZID=Australia/Brisbane:20260821T100000
+DTEND;TZID=Australia/Brisbane:20261011T140000
+SUMMARY:Catherine Dinkelmann — Be(longing) (Pop‑up artisan)
+DESCRIPTION:A pop-up artisan display featuring ceramic works by Catherine D
+ inkelmann\, exploring themes of belonging and craftsmanship.
+LOCATION:Caloundra Regional Gallery Store\, Caloundra
+URL:https://prod-gallery.sunshinecoast.qld.gov.au/about/gallery-store/pop-u
+ p-artisan-catherine-dinkelmann-ceramics
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-27pof@dothings
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20261012
+SUMMARY:Sunshine Coast National Art Prize 2026 Finalists Exhibition
+DESCRIPTION:An exhibition showcasing the finalists of a national art prize\
+ , featuring diverse contemporary works from across Australia. This provide
+ s an opportunity to engage with high-caliber visual art in a focused galle
+ ry setting.
+LOCATION:Caloundra Regional Gallery
+URL:https://gallery.sunshinecoast.qld.gov.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-12th4sw@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T090000
+DTEND;TZID=Australia/Brisbane:20260921T110000
+SUMMARY:Rangebow Festival 2026
+DESCRIPTION:A multi-day festival celebrating diversity\, arts\, and culture
+  through a series of community-focused events across the Sunshine Coast Hi
+ nterland.
+LOCATION:Various sites in Maleny\, Montville\, Flaxton and Mapleton
+URL:https://www.visitsunshinecoast.com/whats-on
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-u9tbrr@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Healthy brains for life
+DESCRIPTION:Research shows that certain lifestyle factors can reduce the ri
+ sk of dementia\, support cognitive function and modify brain ageing proces
+ ses. Learn evidence-based strategies in this presentation to look after yo
+ ur brain health now and into the future. Hear from healthy ageing expert A
+ ssociate Profesor Sophie Andrews.
+LOCATION:University of the Sunshine Coast
+URL:https://usc.edu.au/community/events/healthy-brains-for-life
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-6fg5e9@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T100000
+DTEND;TZID=Australia/Brisbane:20260923T120000
+SUMMARY:Meditation Creations – Yoga Nidra with Clay & Watercolours
+DESCRIPTION:A guided session combining Yoga Nidra meditation with tactile c
+ reative practice using clay and watercolours in a peaceful studio setting.
+LOCATION:Chenrezig Art Studio\, Eudlo
+URL:https://humanitix.com/au/search/au--queensland/Sunshine%20Coast%20NAAID
+ OC
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-e20gt9@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T090000
+DTEND;TZID=Australia/Brisbane:20260924T150000
+SUMMARY:“Figure & Face” Life Drawing and Portraiture Exhibition
+DESCRIPTION:An exhibition focusing on the human form through various artist
+ ic mediums at the historic Buderim Craft Cottage.
+LOCATION:Atrium Gallery\, Buderim Craft Cottage\, Buderim
+URL:https://www.coolumadvertiser.com.au/community-notices/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-12gn5hm@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T180000
+DTEND;TZID=Australia/Brisbane:20260924T200000
+SUMMARY:Sunshine Coast National Art Prize 2026 Winners Announcement
+DESCRIPTION:An evening event celebrating the winners of the National Art Pr
+ ize\, featuring a showcase of contemporary visual arts and an opportunity 
+ to meet local and visiting artists.
+LOCATION:Caloundra Regional Gallery
+URL:https://gallery.sunshinecoast.qld.gov.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-16jftlt@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Spring Bird Survey at Mary Cairncross Scenic Reserve - FREE Event
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/spring-bird-survey-at-mary-cairncross-scen
+ ic-reserve-free-event/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-5s53ww@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T090000
+DTEND;TZID=Australia/Brisbane:20260927T170000
+SUMMARY:Coolum Art Collective Art Exhibition
+DESCRIPTION:An exhibition showcasing the work of local artists within the C
+ oolum Art Collective\, providing an opportunity to view regional creative 
+ output and engage with the artists.
+LOCATION:Coolum Civic Centre\, Coolum Beach
+URL:https://www.sunshinecoastpoint.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1k501e3@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T193000
+DTEND;TZID=Australia/Brisbane:20260925T213000
+SUMMARY:Inspector Drake & The Black Widow by BATS
+DESCRIPTION:BATS THEATRE COMPANY PROUDLY PRESENTS - INSPECTOR DRAKE AND THE
+  BLACK WIDOW Imagine if Fawlty Towers meets a murder mystery. That is\, es
+ sentially\, Inspector Drake and the Black Widow. A classic English farce f
+ eaturing a cross between ‘Inspector Clouseau’ and ‘And Then There We
+ re None’ will have you laughing out loud and forgetting about the outsid
+ e world. A dead body is found\, whilst dusting at 3am\, which sets up a pl
+ ay that is an amusing parody of the whodunnit genre\, that’s packed with
+  lots of visual gags\, subtle adult innuendo\, all topped with a touch of 
+ cross-dressing. The plot\, set in the 1920s \, has Sergeant Plod send for 
+ the infamous Inspector Drake to help solve the murder of John Johnson who 
+ has been stabbed in the back whilst wearing his wife’s dress. The two ar
+ e thwarted by a series of women who look suspiciously alike\, with triplet
+ s born two months apart\, a missing semi-tropical spider and a lustful wid
+ ow. Just a few of the obstacles facing Inspector Drake. Imagine Basil Fawl
+ ty playing Inspector Clouseau playing Inspector Drake? What can possibly g
+ o wrong? From the Team at BATS Theatre\, that brought you ‘Sex Please\, 
+ We’re Sixty’. PERFORMANCE DATES: Friday\, 25 September 2026 at 7.30pm 
+ Saturday\, 26 September 2026 at 2.00pm and 7.30pm Friday\, 2 October 2026 
+ at 7.30pm Saturday\, 3 October 2026 at 2.00pm and 7.30pm
+LOCATION:Buderim War Memorial Community Association\, 50 Burnett Street
+URL:https://www.bwmca.com.au/events-2-1/inspector-drake-the-black-widow-by-
+ bats
+END:VEVENT
+BEGIN:VEVENT
 UID:sunnycoast-1w8dqzg@dothings
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
@@ -43,6 +237,26 @@ SUMMARY:Caloundra Repair Cafe
 DESCRIPTION:
 LOCATION:Weekend Notes Sunshine Coast
 URL:https://www.weekendnotes.com/caloundra-repair-cafe/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-11h7ov3@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T100000
+DTEND;TZID=Australia/Brisbane:20260926T120000
+SUMMARY:Out of the Round (Session 1)
+DESCRIPTION:A hands-on pottery workshop focused on wheel-throwing technique
+ s in a collaborative studio environment.
+LOCATION:Sunshine Coast Art Group Pottery Studio
+URL:https://sunshinecoastartgroup.com.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-3lnmu5@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T100000
+DTEND;TZID=Australia/Brisbane:20260927T120000
+SUMMARY:Out of the Round (Session 2)
+DESCRIPTION:A hands-on pottery workshop session providing an opportunity to
+  refine ceramic skills in a community studio setting.
+LOCATION:Sunshine Coast Art Group Pottery Studio
+URL:https://sunshinecoastartgroup.com.au
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-1sforfc@dothings
@@ -58,163 +272,64 @@ URL:https://www.meetup.com/theosophy-in-australia-sunshine-coast-lodge/even
  ts/316349532/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-7f6rgn@dothings
-DTSTART;VALUE=DATE:20260911
-DTEND;VALUE=DATE:20260914
-SUMMARY:Big Love Festival
-DESCRIPTION:A community-focused boutique music and arts festival set in the
-  hinterland\, emphasizing intimate performances\, workshops\, and a collab
- orative\, creative atmosphere.
-LOCATION:Eudlo
-URL:https://biglovefestival.com.au
+UID:sunnycoast-1k8admc@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T183000
+DTEND;TZID=Australia/Brisbane:20261001T203000
+SUMMARY:An Evening with Chris Hammer
+DESCRIPTION:An Evening with Chris Hammer\, Noosa\, What's On
+LOCATION:The J Noosa
+URL:https://www.thej.com.au/an-evening-with-chris-hammer/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-iml7an@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T090000
-DTEND;TZID=Australia/Brisbane:20260913T150000
-SUMMARY:PORCELAIN MASTERCLASS
-DESCRIPTION:Make beautiful translucent porcelain vases with a colourful sur
- face design with contemporary ceramic artist Tania Vrancic. Explore your o
- wn creativity through mono-printing\, stenciling\, and painting with colou
- rful porcelain using slip-casting methods. Hand-build vases\, jewellery\, 
- and Christmas ornaments with your slabs. Enjoy this intuitive process to f
- ree your imagination. You will learn how to best prepare your work for fir
- ing and how to polish the surfaces after firing.
-LOCATION:Cooroy Butter Factory Arts Centre
-URL:https://events.humanitix.com/porcelain-masterclass
+UID:sunnycoast-8ovxw1@dothings
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20270221
+SUMMARY:The Night Sky exhibition
+DESCRIPTION:Our shared darkness
+LOCATION:Landsborough Museum
+URL:https://heritage.sunshinecoast.qld.gov.au/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1psa709@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T170000
-DTEND;TZID=Australia/Brisbane:20260913T190000
-SUMMARY:Rachel Austin
-DESCRIPTION:Join Rachel las she plays a set of human-influenced songs in th
- e build up to the production of Human Museum at this iconic theater at the
-  edges of Harrisonburg\, Virginia. Bring a picnic and listen — Rachel pl
- ays 5-6pm\, Human Museum 6-7:45pm.
-LOCATION:Musician in Residence for Human Museum
-URL:https://www.bandsintown.com/e/108287580-rachel-austin-at-silk-moth-stag
- e?came_from=257&utm_medium=web&utm_source=home&utm_campaign=event
+UID:sunnycoast-d2hmru@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T110000
+DTEND;TZID=Australia/Brisbane:20261002T130000
+SUMMARY:MANHATTAN SHORT – Film Festival 2026
+DESCRIPTION:$26.00 Adult / $23.00 Concession / Special Discount for Noosa F
+ ilm Society members (Use your existing NFS code\, limit of 2 x tickets)
+LOCATION:The J Noosa
+URL:https://www.thej.com.au/manhattan-short-2026/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-8o4pcz@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T193000
-DTEND;TZID=Australia/Brisbane:20260913T213000
-SUMMARY:Suzanne Vega | Flying With Angels Tour
-DESCRIPTION:
-LOCATION:The Events Centre\, Caloundra
-URL:https://theeventscentre.com.au/event/suzanne-vega-flying-with-angels-to
- ur/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1cvihb8@dothings
-DTSTART;TZID=Australia/Brisbane:20260916T173000
-DTEND;TZID=Australia/Brisbane:20260916T193000
-SUMMARY:Shipping together
-DESCRIPTION:**What happens to Engineering and Design collaboration when any
- one can build?** Join us for our next ProductTank Sunshine Coast meetup! 
- 🚀 AI tools mean anyone can ship a
-LOCATION:Peregian Digital Hub\, 253-255 David Low Way\, Peregian Beach\, al
- \, Peregian Beach\, al
-URL:https://www.meetup.com/producttank-sunshine-coast/events/316177792/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-gv01od@dothings
-DTSTART;TZID=Australia/Brisbane:20260917T093000
-DTEND;TZID=Australia/Brisbane:20260917T113000
-SUMMARY:The Sparkly Writing Group for Furious Brilliant Women.
-DESCRIPTION:We’ll start by meeting one another\, having a cuppa and settl
- ing into the group. This is for women who want to write out their frustrat
- ions and spend time with other women w
-LOCATION:Victoria Vanstone\, 46 sundew street\, sunshine coast\, sunshine c
- oast
-URL:https://www.meetup.com/the-sparkly-writing-group-for-furious-brilliant-
- women/events/316292470/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-13ol8l6@dothings
-DTSTART;TZID=Australia/Brisbane:20260917T180000
-DTEND;TZID=Australia/Brisbane:20260917T200000
-SUMMARY:Rob McWilliams Band at The Jazz Sessions
-DESCRIPTION:Rob McWilliams Band Professor Rob McWilliams has led an interes
- ting life. A musician and composer\, playing trumpet\, flugelhorn and pian
- o\, he has been part of the jazz scene for many years\, originally playing
-  professionally in Melbourne with artists such as Wilbur Wilde and Paul Gr
- abowsky. His studies and high level of musicianship led him to the USA whe
- re he took up the post of Professor of Music at the University of Wisconsi
- n\, Oshkosh and ended up as Head of Music there for several years. As a te
- acher he has presented at major music conferences in Japan\, Hong Kong\, t
- he UK\, Singapore\, Europe\, China and Australia and is a published author
- . As a musician he has performed with many jazz greats including Nat Adder
- ley\, Vincent Herring\, Dee Dee Bridgewater\, Eddie Daniels\, Ed Shaughnes
- sy and Dale Barlow – a resume that is the envy of many an Australian jaz
- z musician! A talented musician\, composer and arranger\, Rob has had many
-  opportunities over the years to create and perform his music to audiences
-  all over the world. Now living back in Australia\, he works for Yamaha Mu
- sic conducting music workshops around Australia as well as teaching at the
-  Jazz Music Institute in Brisbane\, conducting\, composing\, arranging mus
- ic and performing regularly around Australia either as a side man or with 
- his own jazz ensemble. Though he is a Professor with an incredible and imp
- ressive Curriculum Vitae\, he is a warm and down-to-earth performer with a
-  genuine connection to the audience\, bringing the music alive. This maste
- rful musician in now bringing his music to the Sunshine Coast\, performing
-  with his band at The Jazz Sessions at The Presynct on Thurs 17th Sep. Joi
- ned on this gig by a stellar line-up of local Brisbane & Sunshine Coast mu
- sicians\, they have come together to perform unique interpretations of jaz
- z standards and some of Rob’s original compositions. Be prepared for an 
- evening of sophistication\, smooth jazz and world-class musicianship. VENU
- E & EVENT DETAILS 📅 Thursday 17th September 📍The Presynct\, Upstairs
- - 15 Ann St\, Nambour ⏰ Doors 6:00pm | Event 6:30pm -9:00pm 🚗 Parking
-  available behind the Venue 🎟 Tickets $25-$45 🩴 NO Thongs Permitted 
- 🚱 NO Outside Drink bottles If you’re looking for a unique concert exp
- erience\, look no further than The Jazz Sessions at The Presynct. This hid
- den gem offers intimate shows for listeners in a beautifully curated venue
- . These are listening concerts where people can come together to enjoy liv
- e music in a true jazz club experience. We ask that talking is kept to a q
- uiet whisper as audience members are actively listening to and connecting 
- with the artists in a relaxed and comfortable setting. These concerts give
-  guests the opportunity to experience exceptional musicianship in an intim
- ate setting.
+UID:sunnycoast-1apqne0@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T180000
+DTEND;TZID=Australia/Brisbane:20261003T200000
+SUMMARY:Michael St George
+DESCRIPTION:MICHAEL ST GEORGE + ROOTS N BLOOM Jamaican roots. Reggae. Dub. 
+ Spoken word. Conscious music. The Presynct welcomes internationally acclai
+ med Jamaican-born Michael St George for a special night of roots reggae\, 
+ dub poetry\, rhythm and powerful storytelling. Born in Portland\, Jamaica 
+ and raised in Kingston\, Michael St George is a poet\, singer\, songwriter
+  and renowned dub performance artist whose music brings together roots reg
+ gae\, spoken word\, world rhythms and jazz\, carrying messages of social j
+ ustice\, connection\, universal love and positive change. With a career sp
+ anning decades and continents\, Michael has performed and collaborated wit
+ h artists across Jamaica\, Canada and Australia\, including OKA\, Dennis B
+ ovell\, Earl “Chinna” Smith and Ollie McGill of The Cat Empire. In Aus
+ tralia\, he has toured with OKA\, collaborated on their The Sunset Session
+ s\, performed at the Sydney Opera House and was the closing act at GARMA 2
+ 017. Joining Michael are Sunshine Coast special guests ROOTS N BLOOM - a c
+ ollective of women brought together through music\, culture and community.
+  Their beautiful vocal harmonies\, global influences and heartfelt storyte
+ lling create music centred around connection\, joy and belonging. Together
+ \, Michael St George and Roots N Bloom make this a night built around regg
+ ae\, roots\, soul and community - uplifting live music with something to s
+ ay. Come early\, grab a drink and settle in for a night of conscious music
+  and positive vibes. 📅 Saturday 3rd October ⏰ Doors 6:00pm (Happy Hou
+ r) | Event Doors from 7:00pm 🎟 General $35+BF | Door $40 🔞 18+ Event
+  🩴 NO Thongs Permitted 🚱 NO Outside Drink bottles
 LOCATION:The Presynct Venue & Bar\, Nambour
-URL:https://tickets.oztix.com.au/outlet/event/e1223444-6003-4f28-ab1c-5484a
- 7cf1519
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1jyu4a2@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T180000
-DTEND;TZID=Australia/Brisbane:20260918T200000
-SUMMARY:Lilli Fairfax ‘Nothing Gold Ever Lasts’ Single Launch
-DESCRIPTION:An intimate single launch event featuring singer-songwriter Lil
- li Fairfax at a local creative arts venue known for supporting original mu
- sic.
-LOCATION:The Presynct\, Nambour
-URL:https://musick.com.au/gig/lilli-fairfax-nothing-gold-ever-lasts-single-
- launch-at-the-presynct-2026-09-18/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1c0f46i@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260920
-SUMMARY:Weaving is Healing
-DESCRIPTION:A hands-on workshop focused on the traditional craft of weaving
- \, framed through a wellness and mindfulness lens to promote personal heal
- ing and creative expression.
-LOCATION:Weavery HQ\, Sunshine Coast
-URL:https://eventbrite.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1iop1mb@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T170000
-DTEND;TZID=Australia/Brisbane:20260919T190000
-SUMMARY:Run4Rum & Friends vol. III
-DESCRIPTION:RUN4RUM & FRIENDS VOL. IIISabato 19.09.26 Organizzano un Trail 
- autogestito ad Asolo.📍 Ritrovo ore 8:30 presso il parcheggio del Calzat
- urificio Scarpa Via Enrico Fermi 1 31011 Asolo (TV).⏱️ La partenza dei
-  percorsi sarà scaglionata come di seguito indicato:* 12 km D+ 390 parten
- za ore 09:30\;* 20 km D+
-LOCATION:AllEvents.in
-URL:https://allevents.in/asolo/run4rum-and-friends-vol-iii-tickets/80003229
- 003126?ref=search-event-globe
+URL:https://tickets.oztix.com.au/outlet/event/4cb2eee3-995d-4071-93e9-6896a
+ 10b8047
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-12dta8o@dothings
@@ -228,52 +343,6 @@ LOCATION:Study Sunshine Coast events
 URL:https://www.studysunshinecoast.com.au/event/evtol-student-team-project/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1ql9d6w@dothings
-DTSTART;TZID=Australia/Brisbane:20260718T100000
-DTEND;TZID=Australia/Brisbane:20260913T150000
-SUMMARY:CONTINUUM (TACA Members’ Exhibition)
-DESCRIPTION:A curated exhibition showcasing contemporary ceramic works from
-  members of The Australian Ceramics Association\, highlighting diverse tec
- hniques and artistic approaches.
-LOCATION:Noosa Regional Gallery\, Tewantin
-URL:https://australianceramics.com/exhibitions/continuum
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1cj38l3@dothings
-DTSTART;VALUE=DATE:20260818
-DTEND;VALUE=DATE:20260917
-SUMMARY:AI Explained – Understand the Basics of Artificial Intelligence
-DESCRIPTION:A series of information sessions demystifying AI technology\, h
- ow it works\, and its role in modern society\, designed for the curious ge
- neral public.
-LOCATION:Sunshine Coast Libraries (various branches)
-URL:https://library.sunshinecoast.qld.gov.au/whats-on
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-9807u0@dothings
-DTSTART;VALUE=DATE:20260821
-DTEND;VALUE=DATE:20261012
-SUMMARY:Sunshine Coast National Art Prize 2026 Finalists Exhibition
-DESCRIPTION:A high-profile exhibition showcasing the finalists of the prest
- igious National Art Prize\, featuring diverse contemporary works from arti
- sts across Australia. It serves as a great space for quiet contemplation a
- nd observing current trends in the visual arts.
-LOCATION:Caloundra Regional Gallery\, Felicity House\, Caloundra
-URL:https://gallery.sunshinecoast.qld.gov.au/exhibitions
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-27pof@dothings
-DTSTART;VALUE=DATE:20260824
-DTEND;VALUE=DATE:20261012
-SUMMARY:Sunshine Coast National Art Prize 2026 Finalists Exhibition
-DESCRIPTION:An exhibition showcasing the finalists of a national art prize\
- , featuring diverse contemporary works from across Australia. This provide
- s an opportunity to engage with high-caliber visual art in a focused galle
- ry setting.
-LOCATION:Caloundra Regional Gallery
-URL:https://gallery.sunshinecoast.qld.gov.au
-END:VEVENT
-BEGIN:VEVENT
 UID:sunnycoast-1w71k6e@dothings
 DTSTART;TZID=Australia/Brisbane:20260829T100000
 DTEND;TZID=Australia/Brisbane:20260926T160000
@@ -285,333 +354,67 @@ LOCATION:The Little Red Cottage\, Maleny
 URL:https://www.littleredcottage.com.au/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1wi27dw@dothings
-DTSTART;TZID=Australia/Brisbane:20260829T130000
-DTEND;TZID=Australia/Brisbane:20260919T160000
-SUMMARY:Psychologically‑Informed Creative Wellbeing Experience
-DESCRIPTION:A 4-week series integrating psychological principles with creat
- ive practice to promote personal wellbeing and self-reflection in a group 
- setting.
-LOCATION:Cooroy Butter Factory Arts Centre\, Cooroy
-URL:https://events.humanitix.com/psychologically-informed-creative-wellbein
- g-experience-intensive
+UID:sunnycoast-j4z0lk@dothings
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260928
+SUMMARY:You’re a Good Man\, Charlie Brown
+DESCRIPTION:DATESPreview: Thursday 10 September at 7:30pm – all tickets $
+ 32Opening night: Friday 11 September at 7:30pmMatinees: 12\, 13\, 19\, 20\
+ , 26\, 27 September at 2pmEvenings: 18\, 25 September at 7:30pm TICKETSAdu
+ lts $42 | Concessions $35 | Member/Group $32 | U18 $15 GENREMusical SYNOPS
+ ISCharles Schulz’s beloved comic comes to life in Clark Gesner’s class
+ ic musical\, You’re Read More ...
+LOCATION:Noosa Arts Theatre\, Noosaville · Noosa + North
+URL:https://www.noosaartstheatre.org.au/charlie-brown/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-xgocd3@dothings
-DTSTART;TZID=Australia/Brisbane:20260831T180000
-DTEND;TZID=Australia/Brisbane:20260921T190000
-SUMMARY:Introduction to Mindfulness and Meditation
-DESCRIPTION:Learn practical mindfulness and meditation techniques to help c
- alm a busy mind\, manage everyday stress\, improve sleep and feel more pre
- sent.
-LOCATION:Locals in the Loop\, 483 Mountain View Road
-URL:https://localsintheloop.com.au/listing/introduction-to-mindfulness-and-
- meditation/
+UID:sunnycoast-2vy0qe@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20261012
+SUMMARY:Creative Generation
+DESCRIPTION:Celebrate a rising generation of young artists in the Creative 
+ Generation exhibition. Featuring high quality artwork across a diverse ran
+ ge of media\, materials and techniques from Year 11 and 12 students across
+  the North Coast (South) region (from Gympie\, to Maleny and down to Calou
+ ndra). At the exhibition opening award winners will be announced who will 
+ have their work exhibited in GOMA in 2027. For many of the students in thi
+ s exhibition this will be their first exhibition showcase.
+LOCATION:Cooroy Butter Factory Arts Centre\, 11 MAPLE ST\, COOROY
+URL:https://cooroybutterfactory.com.au/exhibitions/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1unxlyz@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T003000
-DTEND;TZID=Australia/Brisbane:20260913T023000
-SUMMARY:Dhanji Kumar & The Rashtriya Orcashtra
-DESCRIPTION:Dhanji with The Rashtriya Orcashtra live behind him\, horns\, b
- ass\, drums\, the whole jazz-funk-boom-bap engine that made Ruab sound lik
- e nothing else in Indian hip-hop. Thaltej Blues. Teji. RVAB. The tracks yo
- u learned the words to even if Gujarati isn't your first language.This is 
- Ahmedabad's own art
-LOCATION:To Be Announced
-URL:https://allevents.in/ahmedabad/dhanji-kumar-and-the-rashtriya-orcashtra
- -tickets/80003151275733?ref=search-event-globe
+UID:sunnycoast-1pzym40@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20261012
+SUMMARY:Start Up Student Art Prize
+DESCRIPTION:An ArtsNational Noosa sponsored Prize exhibition of artworks by
+  Yrs 10-12 students from the North Coast (South) schools region. This exhi
+ bition will take place at the same time as the annual Creative Gen exhibit
+ ion. Works in ‘ Start Up ” will be for sale and a selection of works w
+ ill also be shown in the end of year Eclectica Prize. One student will be 
+ selected for a $1000 ArtsNational Noosa Sponsored prize.
+LOCATION:Cooroy Butter Factory Arts Centre\, 11 MAPLE ST\, COOROY
+URL:https://cooroybutterfactory.com.au/exhibition-call-out/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-llq8u@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T083000
-DTEND;TZID=Australia/Brisbane:20260913T100000
-SUMMARY:Monthly Sober Awkward Morning Tea
-DESCRIPTION:**Sober Awkward Women’s Meetup – Mudjimba 🌿** Come join 
- a bunch of brilliant\, like-minded women for a relaxed\, real-life catch-u
- p on the Sunshine Coast. This **women-onl
-LOCATION:Power Memorial Park\, Mudjimba\, Sunshine Coast\, Sunshine Coast
-URL:https://www.meetup.com/soberawkward/events/316322518/
+UID:sunnycoast-1inskmt@dothings
+DTSTART;TZID=Australia/Brisbane:20260918T090000
+DTEND;TZID=Australia/Brisbane:20260920T170000
+SUMMARY:Tinbeerwah Art Group Exhibition
+DESCRIPTION:A curated exhibition showcasing works by the Tinbeerwah Art Gro
+ up\, celebrating local creative talent.
+LOCATION:Tinbeerwah
+URL:https://www.innoosa.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1xk1z6q@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T120000
-DTEND;TZID=Australia/Brisbane:20260913T180000
-SUMMARY:Safe Sunday Unplugged
-DESCRIPTION:Every Sunday we are welcoming people to BYO instruments or use 
- the guitar supplied to strum a tune\; sing a song or just jam ….
-LOCATION:Sunshine Brewery
-URL:https://sunshinebrewery.com.au/event/safe-sunday-unplugged-2/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-17bzodz@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T130000
-DTEND;TZID=Australia/Brisbane:20260913T170000
-SUMMARY:Jazz In The Park
-DESCRIPTION:BWMCA Presents: Annual Jazz in the Park Buderim Join us for an 
- afternoon of sizzling hot Jazz entertainment! Listen to the captivating pe
- rformances showcasing our local talent on the Sunshine Coast. The afternoo
- n starts with the next generation of Jazz Musicians on the Coast - The Sun
- shine Coast Grammar School Band followed by The Dean Doyle Quartet and the
-  Grand Finale presented by the hugely popular June Garber Quintet . Don’
- t miss out on this wonderful event! Food stalls and raffles will be availa
- ble for everyone to enjoy. Please be aware that alcohol is not permitted i
- n the park\; however\, you may purchase and consume it in the designated a
- rea. Visit: https://www.bwmca.com.au/jazz-in-the-park for further informat
- ion. We extend our heartfelt gratitude to our sponsors: Bendigo Community 
- Bank - Buderim Branch Brent Mickelberg MP Sunshine Coast Council Cage Secu
- rity Your Mates Brewery
-LOCATION:Buderim Village Park\, Cnr King & Church Street
-URL:https://www.bwmca.com.au/events-2-1/jazz-in-the-park-fhke6
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-p4f4ug@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T140000
-DTEND;TZID=Australia/Brisbane:20260913T160000
-SUMMARY:Southern Cross Soloists
-DESCRIPTION:An intimate performance by the Southern Cross Soloists\, featur
- ing high-caliber classical chamber music in a historic local setting.
-LOCATION:Majestic Theatre\, 3 Factory Street\, Pomona
-URL:https://www.themajestictheatre.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1b1dks5@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T140000
-DTEND;TZID=Australia/Brisbane:20260913T160000
-SUMMARY:Symphonic Horizons
-DESCRIPTION:A performance by the local symphony orchestra\, providing an op
- portunity to experience orchestral music and cultural engagement within th
- e community.
-LOCATION:The Events Centre\, 20 Minchinton St\, Caloundra
-URL:https://theeventscentre.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1wg2tgz@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T180000
-DTEND;TZID=Australia/Brisbane:20260913T200000
-SUMMARY:Briscoe Sisters
-DESCRIPTION:Hailing from Yalanji country in Far North QLD\, Briscoe Sisters
-  have been performing their songs and cultural stories for over two decade
- s. From their early days being recognised as Port Fairy’s Folk Festival
- ’s Matons Young Talent of the year in 2005 and top 4 Deadly’s new tale
- nt in 2004\, the sisters Deline\, Merindi and Naurita spent 10 years touri
- ng to national major events and Festivals across Australia. Highlights inc
- lue performing at CIAF 2018\, Tandanya Spirit Festival in South Australia 
- and performing alongside Yothu Yindi Band at the Yarrabah Music Festival i
- n 2018. With recent performances at Woodford Folk Festival and at The Sydn
- ey Opera House\, Briscoe Sisters are back on tour and performing select Fe
- stivals across Australia bringing Kuku Yalanji language and song to audien
- ces once again. Deline\, Merindi and Naurita’s sister harmonies\, traine
- d in gospel singing from their youth\, makes for an incredibe live show. G
- rounded in their culture and families\, these sisters continue to bring gr
- eat healing and empowerment through their music.
-LOCATION:Maleny Community Centre
-URL:https://malenycc.org/event/briscoe-sisters/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1fi4g3z@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T100000
-DTEND;TZID=Australia/Brisbane:20260914T120000
-SUMMARY:Sunshine Coast National Art Prize 2026 Finalists Exhibition
-DESCRIPTION:A curated exhibition showcasing the finalists of the Sunshine C
- oast National Art Prize\, representing a broad spectrum of contemporary ar
- tistic practice.
-LOCATION:Caloundra Regional Gallery\, Caloundra
-URL:https://gallery.sunshinecoast.qld.gov.au/exhibitions/sunshine-coast-nat
- ional-art-prize-2026-finalists-exhibition
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-ocz1w9@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T183000
-DTEND;TZID=Australia/Brisbane:20260914T203000
-SUMMARY:Open Mic Night
-DESCRIPTION:A recurring weekly space for local musicians and performers to 
- showcase their talents in an informal\, community-focused setting.
-LOCATION:Banana Bender Pub\, Palmview
-URL:https://bananabenderpub.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1tcm5dt@dothings
-DTSTART;TZID=Australia/Brisbane:20260915T100000
-DTEND;TZID=Australia/Brisbane:20260915T120000
-SUMMARY:Chess Club
-DESCRIPTION:
-LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
-URL:https://www.noosarsl.com.au/entertainment/chess-club/2026-09-15/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-vicaic@dothings
-DTSTART;TZID=Australia/Brisbane:20260916T133000
-DTEND;TZID=Australia/Brisbane:20260916T153000
-SUMMARY:Sunshine Coast Tech Summit 2026
-DESCRIPTION:A gathering of local professionals and enthusiasts exploring em
- erging technologies\, regional innovation\, and future digital trends.
-LOCATION:Altitude Nine\, Maroochydore
-URL:https://events.sunshinecoast.qld.gov.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-35e9lg@dothings
-DTSTART;TZID=Australia/Brisbane:20260916T180000
-DTEND;TZID=Australia/Brisbane:20260916T200000
-SUMMARY:TRIVIA HAPPENS
-DESCRIPTION:Wednesday Night 6pm. Ryan asks the questions. A case for first\
- , two four packs for second\, a jug for third. Happy hour runs right up to
-  kick off.
-LOCATION:Land & Sea Brewery
-URL:https://landandseabrewery.com/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-10n7f0n@dothings
-DTSTART;TZID=Australia/Brisbane:20260917T190000
-DTEND;TZID=Australia/Brisbane:20260917T210000
-SUMMARY:Monte Loco Rides Again? Melbourne Ska Orchestra
-DESCRIPTION:Hot off the heels of a wild year touring Canada and Australia i
- n 2025\, Melbourne Ska Orchestra just can't keep still. The spaghetti west
- ern wagon trail rolls on with the super deluxe edition of their acclaimed 
- album The Ballad of Monte Loco with all the faves\, plus a swag of brand-n
- ew tracks\, blistering live recordings\, and honky tonk renditions of MSO 
- staples. It's braver\, meaner and wilder than anything they've done before
- . So saddle up\, partner: this here posse is riding into a town near you\,
-  and you do not want to miss the showdown!
-LOCATION:Kings Beach Tavern\, Caloundra · Caloundra + Kawana
-URL:https://tickets.oztix.com.au/outlet/event/2c43e278-8681-4da3-be0e-f255e
- 4c33557
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1u0rls5@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T120000
-DTEND;TZID=Australia/Brisbane:20260918T140000
-SUMMARY:Mitchell Creek Rock ’n’ Blues Festival 2026
-DESCRIPTION:A multi-day music festival focused on rock and blues genres hel
- d in an outdoor bush setting.
-LOCATION:Mitchell Creek\, Sunshine Coast
-URL:https://www.visitsunshinecoast.com/guide/sunshine-coast-events
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-nvydps@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T173000
-DTEND;TZID=Australia/Brisbane:20260918T193000
-SUMMARY:Exhibition Opening: Kim Guthrie's Newer Documents 2026
-DESCRIPTION:The opening night for artist Kim Guthrie’s latest exhibition\
- , offering a chance to view contemporary works and engage with the local a
- rt community.
-LOCATION:Noosa Regional Gallery
-URL:https://www.noosaregionalgallery.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-13erx1c@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T190000
-DTEND;TZID=Australia/Brisbane:20260918T210000
-SUMMARY:Sweet Sweat Set 2026 – Karaka Orchestra
-DESCRIPTION:A live orchestral performance showcase at The J\, an establishe
- d community theatre space in Noosa.
-LOCATION:The J\, Noosa Heads
-URL:https://yelo.live/gigs/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-15qhvnx@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T193000
-DTEND;TZID=Australia/Brisbane:20260918T213000
-SUMMARY:You're a Good Man\, Charlie Brown (Musical)
-DESCRIPTION:A live theatre production of the classic musical\, performed by
-  the local Noosa Arts Theatre community.
-LOCATION:Noosa Arts Theatre
-URL:https://www.noosaartstheatre.org.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-10oycx8@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260920
-SUMMARY:Meet the Rainforest Guided Walks in September
+UID:sunnycoast-6mipw3@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:The Garden in Layers at Noosa Botanic Gardens
 DESCRIPTION:
 LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/meet-the-rainforest-guided-walks-in-septem
- ber/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1sv17z8@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T123000
-DTEND;TZID=Australia/Brisbane:20260919T153000
-SUMMARY:Ground & Flow – A Beginner-Friendly Qigong Workshop
-DESCRIPTION:# Ground & Flow – A Beginner-Friendly Qigong Workshop *Curiou
- s about Qigong and how this ancient practice can support greater balance\,
-  energy and wellbein
-LOCATION:Pilates Success\, 3/4 Grebe Street\, Peregian Beach\, Sunshine Coa
- st\, Sunshine Coast
-URL:https://www.meetup.com/noosa-wellbeing-experiences/events/316246272/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-qswimu@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T183000
-DTEND;TZID=Australia/Brisbane:20260919T200000
-SUMMARY:Murder Unscripted (Interactive ) 1950 Hollywood: Chapter 2| In Maro
- ochydore
-DESCRIPTION:**THIS IS A PAID EVENT. TIX LINK BELOW** **Murder Unscripted 
- — An interactive Mystery Night- Chapter 2 Diamond Pavillion ( Hollywood 
- 1950)** Tickets available to purchase o
-LOCATION:Peregian Digital Hub\, 253-255 David Low Way\, Peregian Beach\, al
-URL:https://www.meetup.com/tttclub/events/315595599/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-44qk72@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T190000
-DTEND;TZID=Australia/Brisbane:20260919T210000
-SUMMARY:Body Type
-DESCRIPTION:Over the past decade\, Body Type have established themselves as
-  one of Australia’s most acclaimed and compelling bands. Since forming i
- n Sydney in 2016\, they have released two celebrated albums\, earned an Au
- stralian Music Prize nomination\, toured extensively throughout Australia\
- , Europe and the UK\, and shared stages with Foo Fighters\, Fontaines D.C.
- \, Pixies\, Big Thief\, Warpaint\, Sleater-Kinney and Cate Le Bon. Now\, t
- he four-piece return with Tally\, their third album and most ambitious wor
- k to date. Marking the band’s tenth anniversary\, Tally captures a group
-  taking stock\, embracing change and pushing their sound into bold new ter
- ritory while retaining the wit\, charm and sharp observations that have be
- come their trademark. Recorded in Los Angeles with acclaimed producer Stel
- la Mozgawa (Warpaint\, Courtney Barnett)\, Tally draws inspiration from a 
- wide range of sources: the work of artist Louise Bourgeois\, misty drives 
- through the Hollywood Hills\, 10 years of history as a band. The album tra
- nsforms the everyday into something surreal\, witty and profound while exp
- loring love\, friendship\, insecurity and the strange beauty hidden within
-  ordinary life.
-LOCATION:Mapleton Public House\, Mapleton · Nambour + Hinterland
-URL:https://tickets.oztix.com.au/outlet/event/a9cfa2c2-da5d-4e03-ba34-599ef
- 0462b19
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1z2k2u@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T190000
-DTEND;TZID=Australia/Brisbane:20260919T210000
-SUMMARY:Cirque Le Strange
-DESCRIPTION:Roll up\, roll up! The punk circus of your craziest dreams is c
- oming to town. Live and direct from the underground party scene comes Cirq
- ue Le Strange by Oozing Future. This unforgettable collection of carnies a
- nd queers has to be seen to believed! Featuring surreal and unusual acts t
- hat test the limits of the human body\, this show is like nothing you’ve
-  ever seen before. Meet the King of the Freaks – world-famous body modif
- ication star The Lizardman\, as seen on Ripley’s Believe it or Not! See 
- the bendiest woman in the southern hemisphere\, queen of contortion Solian
- a Ersie! Catch punk clown Captain Ruin creating mischief and mayhem\, befo
- re hanging weights off his private parts! See gender-bending draglesque cr
- eature Winter Greene\, winner of Mx Burlesque Victoria 2025! And watch in 
- awe as pole dancing siren Thembot entrances you with erotic skill and stre
- ngth. All this and more is ready to hit the road and explode on stage in a
-  town near you. With ten stops on our first national tour\, this is your c
- hance to join the freaks for a truly surreal night out at the punk circus!
-LOCATION:Kings Beach Tavern\, Caloundra · Caloundra + Kawana
-URL:https://tickets.oztix.com.au/outlet/event/ac7e60ff-0e07-47a6-b057-f9acf
- 111b296
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1pa9mod@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T200000
-DTEND;TZID=Australia/Brisbane:20260919T223000
-SUMMARY:COOL BRITANNIA
-DESCRIPTION:Cool Britannia bring their epic 90s Britpop extravaganza to Imp
- erial Hotel\, Eumundi on Saturday 19 September!
-LOCATION:Imperial Hotel Eumundi
-URL:https://www.imperialhoteleumundi.com.au/whats-on/zjvsmm4lqypl1qbvu0x09e
- l2twb6w2
+URL:https://www.weekendnotes.com/the-garden-in-layers-at-noosa-botanic-gard
+ ens/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-ipb1jh@dothings
@@ -624,6 +427,16 @@ LOCATION:Sunshine Coast Jazz Club venue
 URL:https://sunshinecoastjazzclub.com.au
 END:VEVENT
 BEGIN:VEVENT
+UID:sunnycoast-1us2grc@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T100000
+DTEND;TZID=Australia/Brisbane:20260920T120000
+SUMMARY:Welcoming Week Community Picnic
+DESCRIPTION:A casual outdoor gathering designed to foster community connect
+ ions and celebrate diversity through social interaction in a park setting.
+LOCATION:Cotton Tree Park\, Maroochydore
+URL:https://events.sunshinecoast.qld.gov.au
+END:VEVENT
+BEGIN:VEVENT
 UID:sunnycoast-8brdp6@dothings
 DTSTART;TZID=Australia/Brisbane:20260920T110000
 DTEND;TZID=Australia/Brisbane:20260920T130000
@@ -632,6 +445,16 @@ DESCRIPTION:An open\, creative session at the gallery encouraging visitors
  of all ages to engage with artistic processes and materials.
 LOCATION:Noosa Regional Gallery
 URL:https://www.noosa.qld.gov.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-m0g4q4@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T140000
+DTEND;TZID=Australia/Brisbane:20260920T160000
+SUMMARY:You're a Good Man\, Charlie Brown (Musical)
+DESCRIPTION:A live theatre production of the classic musical\, performed by
+  the local Noosa Arts Theatre community.
+LOCATION:Noosa Arts Theatre
+URL:https://www.noosaartstheatre.org.au
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-ceoktj@dothings
@@ -664,31 +487,35 @@ URL:https://www.weekendnotes.com/maroochy-wetlands-sanctuary-reserve-bird-w
  alk-in-september/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-u9tbrr@dothings
-DTSTART;VALUE=DATE:20260923
-DTEND;VALUE=DATE:20260924
-SUMMARY:Healthy brains for life
-DESCRIPTION:Research shows that certain lifestyle factors can reduce the ri
- sk of dementia\, support cognitive function and modify brain ageing proces
- ses. Learn evidence-based strategies in this presentation to look after yo
- ur brain health now and into the future. Hear from healthy ageing expert A
- ssociate Profesor Sophie Andrews.
-LOCATION:University of the Sunshine Coast
-URL:https://usc.edu.au/community/events/healthy-brains-for-life
+UID:sunnycoast-1tvqqa2@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T183000
+DTEND;TZID=Australia/Brisbane:20260921T203000
+SUMMARY:Namba Breakdown – False Front 45\, Zealot\, Sidewalk\, Red Eclips
+ e & Foül
+DESCRIPTION:A night of heavy alternative rock music at Black Box Theatre wi
+ th bands False Front 45\, Zealot\, Red Eclipse\, Sidewalk\, and Foül.
+LOCATION:Black Box Theatre\, Nambour
+URL:https://events.humanitix.com/namba-breakdown-black-box-theatre
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-10bugh5@dothings
-DTSTART;TZID=Australia/Brisbane:20260923T183000
-DTEND;TZID=Australia/Brisbane:20260923T203000
-SUMMARY:Frequency: The Secret of Everything screening and Q&A
-DESCRIPTION:Filmmakers Kaia Roman and Zappy Zapolin investigate emerging fr
- equency technologies alongside leading voices\, including Dr. Joe Dispenza
- \, Bruce H. Lipton\, Gregg Braden\, Lynne McTaggart\, Veda Austin\, Michae
- l Beckwith\, Foster Gamble\, Kimberly Carter Gamble\, Rollin McCraty\, and
-  many more.
-LOCATION:Venue 114\, Bokarina
-URL:https://venue114.com.au/events/frequency-the-secret-of-everything-scree
- ning-and-q-a
+UID:sunnycoast-1d2amzh@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T100000
+DTEND;TZID=Australia/Brisbane:20260922T120000
+SUMMARY:Chess Club
+DESCRIPTION:
+LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
+URL:https://www.noosarsl.com.au/entertainment/chess-club/2026-09-22/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1nf8hw2@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T130000
+DTEND;TZID=Australia/Brisbane:20260923T150000
+SUMMARY:Meditation Creations – Art Studio Session
+DESCRIPTION:An open-format creative session in the Chenrezig Art Studio des
+ igned to foster mindfulness through artistic expression.
+LOCATION:Chenrezig Art Studio\, Eudlo
+URL:https://humanitix.com/au/search/au--queensland/Sunshine%20Coast%20NAAID
+ OC
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-f1pmlw@dothings
@@ -704,23 +531,36 @@ LOCATION:Locals in the Loop
 URL:https://localsintheloop.com.au/listing/royal-mail-tewantin-open-mic/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-amsl65@dothings
+UID:sunnycoast-1hvmm8z@dothings
 DTSTART;TZID=Australia/Brisbane:20260924T200000
 DTEND;TZID=Australia/Brisbane:20260924T220000
-SUMMARY:Bill Bailey | Vaudevillean
+SUMMARY:Sold out : Bill Bailey | Vaudevillean
 DESCRIPTION:
 LOCATION:The Events Centre\, Caloundra
 URL:https://theeventscentre.com.au/event/bill-bailey-vaudevillean/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-16jftlt@dothings
-DTSTART;VALUE=DATE:20260925
-DTEND;VALUE=DATE:20260926
-SUMMARY:Spring Bird Survey at Mary Cairncross Scenic Reserve - FREE Event
-DESCRIPTION:
-LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/spring-bird-survey-at-mary-cairncross-scen
- ic-reserve-free-event/
+UID:sunnycoast-ohddsu@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T090000
+DTEND;TZID=Australia/Brisbane:20260925T150000
+SUMMARY:“Figure & Face” Life Drawing and Portraiture Exhibition
+DESCRIPTION:Continuing exhibition of life drawing and portraiture showcasin
+ g local artistic talent.
+LOCATION:Atrium Gallery\, Buderim Craft Cottage\, Buderim
+URL:https://www.coolumadvertiser.com.au/community-notices/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-jdxpno@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T100000
+DTEND;TZID=Australia/Brisbane:20260925T120000
+SUMMARY:Cr Ted Hungerford At The OPO
+DESCRIPTION:If you have thoughts or concerns regarding the Council\, now is
+  the perfect time to connect with your local Councillor. Join us for a con
+ versation with Cr. Ted\, your elected representative\, to discuss the loca
+ l issues that are important to you.
+LOCATION:Buderim War Memorial Community Association\, 50 Burnett Street
+URL:https://www.bwmca.com.au/events-2-1/cr-ted-hungerford-feb-2025-z4fmj-ca
+ bsd-g7ce8
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-5k53dx@dothings
@@ -735,6 +575,39 @@ LOCATION:Salty Spaces\, The Wharf Mooloolaba\, 123 Parkyn Parade\, Mooloola
 URL:https://www.meetup.com/wordpress-sunshine-coast/events/316507822/
 END:VEVENT
 BEGIN:VEVENT
+UID:sunnycoast-bszigh@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T180000
+DTEND;TZID=Australia/Brisbane:20260925T200000
+SUMMARY:ALPHABET SOUP
+DESCRIPTION:The Presynct presents ALPHABET SOUP 🌈🥫 A big\, bold\, glo
+ riously queer night of cabaret\, comedy\, games\, dancing and all your fav
+ ourite 80s queer anthems! Hosted by the fabulous Rhoda Mann & Sista Agains
+ t The Machine\, Alphabet Soup is serving up a colourful night of entertain
+ ment\, laughs\, music and unapologetic queer joy. Expect iconic 80s anthem
+ s\, fabulous performances\, ridiculous fun and plenty of reasons to hit th
+ e dance floor. Whether you’re part of the LGBTQI+ community or a friend 
+ and ally\, everyone is welcome at the table - and there’s always room fo
+ r more Alphabet Soup. 🌈 ✨ CABARET 🪩 DANCING 🎲 GAMES 😂 COMEDY
+  🌈 80s QUEER ANTHEMS Come colourful. Come fabulous. Come as you are. 
+ 📅 Friday 25th September ⏰ Doors 6PM for Happy Gay Hour 🎟 Early Bir
+ d $15+BF | General $20+BF | Door $30 🔞 18+ Event 🩴 NO Thongs Permitt
+ ed 🚱 NO Outside Drink bottles
+LOCATION:The Presynct Venue & Bar\, Nambour
+URL:https://tickets.oztix.com.au/outlet/event/09a6135f-9b87-462b-a533-6233b
+ 63e0490
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1jp6w75@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T183000
+DTEND;TZID=Australia/Brisbane:20260925T203000
+SUMMARY:Jack Raymond – “Mr Know It All” Album Launch
+DESCRIPTION:An intimate album launch performance by singer-songwriter Jack 
+ Raymond in a relaxed\, community-oriented local pub setting.
+LOCATION:Mapleton Public House\, Mapleton
+URL:https://gjugg.is/event/jack-raymond-mr-know-it-all-album-launch-mapleto
+ n-pub/37940e80-fa31-4ef5-a441-84a1aee23c10
+END:VEVENT
+BEGIN:VEVENT
 UID:sunnycoast-11qgupa@dothings
 DTSTART;TZID=Australia/Brisbane:20260925T190000
 DTEND;TZID=Australia/Brisbane:20260925T210000
@@ -746,32 +619,37 @@ LOCATION:Maroochydore\, Alexandra Pde\, Maroochydore\, Maroochydore
 URL:https://www.meetup.com/tttclub/events/315951862/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1k501e3@dothings
+UID:sunnycoast-7j9p61@dothings
 DTSTART;TZID=Australia/Brisbane:20260925T193000
 DTEND;TZID=Australia/Brisbane:20260925T213000
-SUMMARY:Inspector Drake & The Black Widow by BATS
-DESCRIPTION:BATS THEATRE COMPANY PROUDLY PRESENTS - INSPECTOR DRAKE AND THE
-  BLACK WIDOW Imagine if Fawlty Towers meets a murder mystery. That is\, es
- sentially\, Inspector Drake and the Black Widow. A classic English farce f
- eaturing a cross between ‘Inspector Clouseau’ and ‘And Then There We
- re None’ will have you laughing out loud and forgetting about the outsid
- e world. A dead body is found\, whilst dusting at 3am\, which sets up a pl
- ay that is an amusing parody of the whodunnit genre\, that’s packed with
-  lots of visual gags\, subtle adult innuendo\, all topped with a touch of 
- cross-dressing. The plot\, set in the 1920s \, has Sergeant Plod send for 
- the infamous Inspector Drake to help solve the murder of John Johnson who 
- has been stabbed in the back whilst wearing his wife’s dress. The two ar
- e thwarted by a series of women who look suspiciously alike\, with triplet
- s born two months apart\, a missing semi-tropical spider and a lustful wid
- ow. Just a few of the obstacles facing Inspector Drake. Imagine Basil Fawl
- ty playing Inspector Clouseau playing Inspector Drake? What can possibly g
- o wrong? From the Team at BATS Theatre\, that brought you ‘Sex Please\, 
- We’re Sixty’. PERFORMANCE DATES: Friday\, 25 September 2026 at 7.30pm 
- Saturday\, 26 September 2026 at 2.00pm and 7.30pm Friday\, 2 October 2026 
- at 7.30pm Saturday\, 3 October 2026 at 2.00pm and 7.30pm
-LOCATION:Buderim War Memorial Community Association\, 50 Burnett Street
-URL:https://www.bwmca.com.au/events-2-1/inspector-drake-the-black-widow-by-
- bats
+SUMMARY:You're a Good Man\, Charlie Brown (Musical)
+DESCRIPTION:A local community theatre production of the classic musical\, p
+ erformed by the Noosa Arts Theatre company in an intimate\, live stage set
+ ting.
+LOCATION:Noosa Arts Theatre
+URL:https://www.noosaartstheatre.org.au
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-a38av7@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Beach Clean Up
+DESCRIPTION:
+LOCATION:Alex Heads Beach\, in front of the surf club
+URL:https://alexsurfclub.com.au/event/beach-clean-up/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1o4l49k@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Kingfisha - Highly Recommended Tour\, Sunshine Coast - Full Moon Da
+ nce
+DESCRIPTION:Full Moon Dance featuring Kingfisha\, The Steele Syndicate\, Th
+ e Madtones ft Andy V and DJ Outlook.
+LOCATION:Visit Sunshine Coast
+URL:https://www.visitsunshinecoast.com/event/6aab546f856aca8c2fb03dd0/kingf
+ isha-highly-recommended-tour-sunshine-coast-full-moon-dance?queryID=1dcd1b
+ 87952edc52039c105f534e60fd
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-1b4tqvp@dothings
@@ -782,6 +660,26 @@ DESCRIPTION:
 LOCATION:Weekend Notes Sunshine Coast
 URL:https://www.weekendnotes.com/shorebirds-festival-at-golden-beach-cotton
  -tree/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-ywqasf@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T090000
+DTEND;TZID=Australia/Brisbane:20260926T150000
+SUMMARY:“Figure & Face” Life Drawing and Portraiture Exhibition
+DESCRIPTION:Continuing exhibition of life drawing and portraiture showcasin
+ g local artistic talent.
+LOCATION:Atrium Gallery\, Buderim Craft Cottage\, Buderim
+URL:https://www.coolumadvertiser.com.au/community-notices/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1kak5lo@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T100000
+DTEND;TZID=Australia/Brisbane:20260926T160000
+SUMMARY:Where It Began Art Exhibition
+DESCRIPTION:A diverse exhibition hosted by the Artists Alliance Australia f
+ eaturing various creative works in a local gallery setting.
+LOCATION:Caloundra Arts Centre
+URL:https://aaaart.online
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-rke8y@dothings
@@ -812,225 +710,259 @@ URL:https://www.bwmca.com.au/events-2-1/inspector-drake-the-black-widow-by-
  bats-k9h22
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-c2l5ut@dothings
-DTSTART;TZID=Australia/Brisbane:20260821T100000
-DTEND;TZID=Australia/Brisbane:20261011T140000
-SUMMARY:Catherine Dinkelmann — Be(longing) (Pop‑up artisan)
-DESCRIPTION:A pop-up artisan display featuring ceramic works by Catherine D
- inkelmann\, exploring themes of belonging and craftsmanship.
-LOCATION:Caloundra Regional Gallery Store\, Caloundra
-URL:https://prod-gallery.sunshinecoast.qld.gov.au/about/gallery-store/pop-u
- p-artisan-catherine-dinkelmann-ceramics
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-j4z0lk@dothings
-DTSTART;VALUE=DATE:20260910
-DTEND;VALUE=DATE:20260928
-SUMMARY:You’re a Good Man\, Charlie Brown
-DESCRIPTION:DATESPreview: Thursday 10 September at 7:30pm – all tickets $
- 32Opening night: Friday 11 September at 7:30pmMatinees: 12\, 13\, 19\, 20\
- , 26\, 27 September at 2pmEvenings: 18\, 25 September at 7:30pm TICKETSAdu
- lts $42 | Concessions $35 | Member/Group $32 | U18 $15 GENREMusical SYNOPS
- ISCharles Schulz’s beloved comic comes to life in Clark Gesner’s class
- ic musical\, You’re Read More ...
-LOCATION:Noosa Arts Theatre\, Noosaville · Noosa + North
-URL:https://www.noosaartstheatre.org.au/charlie-brown/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-17e4jl5@dothings
-DTSTART;VALUE=DATE:20260913
-DTEND;VALUE=DATE:20260914
-SUMMARY:Rescue Greyhounds Yoga on the Sunshine Coast
-DESCRIPTION:
-LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/rescue-greyhounds-yoga-on-the-sunshine-coa
- st/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-9c1y60@dothings
-DTSTART;VALUE=DATE:20260913
-DTEND;VALUE=DATE:20260914
-SUMMARY:Louella & Jarrod
-DESCRIPTION:
-LOCATION:Peregian Beach Hotel\, Peregian Beach · Coolum + Peregian
-URL:https://peregianbeachhotel.com.au/whats-on/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1k9c4nd@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T120000
-DTEND;TZID=Australia/Brisbane:20260913T140000
-SUMMARY:Splinter • More
-DESCRIPTION:
-LOCATION:Metro Social
-URL:https://whatslively.com/de5f84115155d615eb3896e7c3734cf2da3c9e0c
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-13w1x8x@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T133000
-DTEND;TZID=Australia/Brisbane:20260913T160000
-SUMMARY:The Path as a Way of Being
-DESCRIPTION:Wendy Dixon: **The Path as a Way of Being** We may speak of enl
- ightenment\, higher consciousness\, wisdom or service. Yet *At The Feet of
-  the Master* and *L
-LOCATION:Suncare Community Centre\, 2-6 George Street\, Maroochydore\, Maro
- ochydore
-URL:https://www.meetup.com/theosophy-in-australia-sunshine-coast-lodge/even
- ts/316348937/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1qugpk5@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T140000
-DTEND;TZID=Australia/Brisbane:20260913T160000
-SUMMARY:Raw Ordio
-DESCRIPTION:
-LOCATION:Sunshine Beach Surf Club\, Sunshine Beach · Noosa + North
-URL:https://surfclub.sunshinebeachslsc.com.au/whats-on/raw-ordio/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-8tdbsb@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T140000
-DTEND;TZID=Australia/Brisbane:20260913T160000
-SUMMARY:You're a Good Man\, Charlie Brown (Matinee)
-DESCRIPTION:A matinee performance of the community musical based on the Pea
- nuts comic strip.
-LOCATION:Noosa Arts Theatre\, 163 Weyba Road\, Noosaville
+UID:sunnycoast-jr9iwi@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T140000
+DTEND;TZID=Australia/Brisbane:20260926T160000
+SUMMARY:You're a Good Man\, Charlie Brown (Musical)
+DESCRIPTION:A local community theatre production of the classic musical\, p
+ erformed by the Noosa Arts Theatre company in an intimate\, live stage set
+ ting.
+LOCATION:Noosa Arts Theatre
 URL:https://www.noosaartstheatre.org.au
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-i46thl@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T143000
-DTEND;TZID=Australia/Brisbane:20260913T163000
-SUMMARY:Toast and Tunes at Late Checkout | 13th Sept | 10:00 am
-DESCRIPTION:SoundRise Sunday: Toast & Tunes ☀️Sunday\, 13th Sept 202610
- :00 AM – 12 PMLate Checkout\, Lower ParelWe’re bringing back Toast & T
- unes with Nidhi Wagle Collective - a high-energy live set\, brunch\, cockt
- ails and all the right Sunday morning energy. Think soulful vocals\, infec
- tious grooves\, your favourit
-LOCATION:Late Checkout
-URL:https://allevents.in/mumbai/toast-and-tunes-at-late-checkout-13th-sept-
- 10-00-am-tickets/80002929830980?ref=search-event-globe
+UID:sunnycoast-1ipmk97@dothings
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:JUNIOR OPEN MIC NIGHT SEPTEMBER
+DESCRIPTION:The Banana Bender is all about backing fresh talent\, and this 
+ year we’re giving the juniors the entire stage to themselves. Back after
+  a popular demand - Friday 10th July from 3-10pm. Bring your instruments a
+ nd your cheer squad. Full backline supplied thanks to Mooloolaba Music
+LOCATION:Banana Bender
+URL:http://39936025.hs-sites.com/2026-junior-open-mic-night-september
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1q2xr6y@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T163000
-DTEND;TZID=Australia/Brisbane:20260913T190000
-SUMMARY:InnQuizative Trivia
-DESCRIPTION:Every Sunday at 5pm for some brain-busting fun InnQUIZitive Tri
- via! Gather your friends and show off your knowledge on a wide range of to
- pics. From pop culture to history\, there's [...]
-LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
-URL:https://www.noosarsl.com.au/entertainment/trivia-2-2/2026-09-13/
+UID:sunnycoast-19c37s0@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T090000
+DTEND;TZID=Australia/Brisbane:20260927T150000
+SUMMARY:“Figure & Face” Life Drawing and Portraiture Exhibition
+DESCRIPTION:Final day of the exhibition showcasing local work in life drawi
+ ng and portraiture.
+LOCATION:Atrium Gallery\, Buderim Craft Cottage\, Buderim
+URL:https://www.coolumadvertiser.com.au/community-notices/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1l9zcbb@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T063000
-DTEND;TZID=Australia/Brisbane:20260914T073000
-SUMMARY:Buderim- Coffee & Chin Wag
-DESCRIPTION:## About the event Head on down to Rue Bourbon Coffee for a cof
- fee & a chin wag with Cliff and the crew. We run these catch-ups weekly\, 
- so if you can’t ma
-LOCATION:Rue Bourbon\, 89 Burnett St\, Buderim\, Buderim
-URL:https://www.meetup.com/grab-life-by-the-balls-laidback-social-events-fo
- r-blokes/events/316518641/
+UID:sunnycoast-n1snjv@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T100000
+DTEND;TZID=Australia/Brisbane:20260927T140000
+SUMMARY:Where It Began Art Exhibition
+DESCRIPTION:A diverse exhibition hosted by the Artists Alliance Australia f
+ eaturing various creative works in a local gallery setting.
+LOCATION:Caloundra Arts Centre
+URL:https://aaaart.online
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-214c1q@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T063000
-DTEND;TZID=Australia/Brisbane:20260914T073000
-SUMMARY:Coolum- Coffee & Chin Wag
-DESCRIPTION:## About the event Head on down to Coolum Coastal Beach walk fo
- r a coffee & a chin wag with Shane and the crew. **\\*Location**: open\, s
- eated area of the C
-LOCATION:Coolum Coastal Board Walk\, 102 Yandina Coolum Road\, Coolum Beach
- \, Coolum Beach
-URL:https://www.meetup.com/grab-life-by-the-balls-laidback-social-events-fo
- r-blokes/events/316518618/
+UID:sunnycoast-v7x3lf@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T140000
+DTEND;TZID=Australia/Brisbane:20260927T160000
+SUMMARY:You're a Good Man\, Charlie Brown (Musical)
+DESCRIPTION:A local community theatre production of the classic musical\, p
+ erformed by the Noosa Arts Theatre company in an intimate\, live stage set
+ ting.
+LOCATION:Noosa Arts Theatre
+URL:https://www.noosaartstheatre.org.au
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-lrup69@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T071500
-DTEND;TZID=Australia/Brisbane:20260914T084500
-SUMMARY:Warana- Coffee & Chin Wag
-DESCRIPTION:Head on down to Jimmy's for a coffee & a chin wag with Karl and
-  the crew (they'll be sitting outside the cafe\, undercover). We run these
-  catch-ups weekly\,
-LOCATION:Jimmy’s Catering\, 3/179 Nicklin Way\, Warana\, Warana
-URL:https://www.meetup.com/grab-life-by-the-balls-laidback-social-events-fo
- r-blokes/events/316518858/
+UID:sunnycoast-5whtp4@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T160000
+DTEND;TZID=Australia/Brisbane:20260927T210000
+SUMMARY:Multicultural Moon Festival
+DESCRIPTION:A community-focused festival celebrating cultural diversity and
+  the lunar calendar\, featuring performances\, traditional arts\, and comm
+ unal interaction.
+LOCATION:Lot 6\, Mooloolaba Esplanade\, Mooloolaba
+URL:https://brisbanekids.com.au
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1kz4kz@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T100000
-DTEND;TZID=Australia/Brisbane:20260914T120000
-SUMMARY:Sue Gill – ‘The Door’
-DESCRIPTION:An exhibition featuring new works by artist Sue Gill at a local
-  gallery space.
-LOCATION:Cool Art Gallery\, Sunshine Coast
-URL:https://coolartgallery.com.au/gallery/
+UID:sunnycoast-22qfvc@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T093000
+DTEND;TZID=Australia/Brisbane:20260929T113000
+SUMMARY:Youth Master Class: Contemporary Physical Theatre Workshop
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/ymc-contemporary-physical-theatre-
+ workshop/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-ool320@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T113000
-DTEND;TZID=Australia/Brisbane:20260914T143000
-SUMMARY:Monday Lunch Show – Neil Diamond Tribute Show
-DESCRIPTION:2026 – Neil Diamond Tribute Show Performed by Steve Cummins B
- uy Now Tickets $39.00 Monday\, 14th September 2026 Doors Open at 11:00 AM 
- Show 11.30 AM – 2:30 PM Please note: 2 Course Meal is Served on a 50/50 
- basis
-LOCATION:Caloundra RSL Services Club
-URL:https://caloundrarsl.com.au/event/monday-lunch-show-neil-diamond-tribut
- e-show-2/
+UID:sunnycoast-1ww9q9j@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T221500
+DTEND;TZID=Australia/Brisbane:20260929T231500
+SUMMARY:Introduction to Spanish for Beginners
+DESCRIPTION:**✨ LEARN SPANISH THE FUN WAY! ✨** **Introduction to Spanis
+ h Session** 📅 Tuesday\\\, 29th September \\| 🕥 10:15am–11:15am �
+ � Maroochydore Library\, Meeting
+LOCATION:Maroochydore Library\, Cotton Tree\, 44 Sixth Avenue\, Cotton Tree
+ \, Sunshine Coast\, Sunshine Coast
+URL:https://www.meetup.com/meetup-group-rvjygvbd/events/316283038/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-wxmryy@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T180000
-DTEND;TZID=Australia/Brisbane:20260914T200000
-SUMMARY:Drag Queen Bingo
-DESCRIPTION:A high-energy\, immersive social night featuring comedy\, perfo
- rmance\, and the classic game of bingo hosted by local drag performers.
-LOCATION:Kings Beach Tavern\, 43 Burgess Street\, Caloundra
-URL:https://oztix.com.au
+UID:sunnycoast-1am16mv@dothings
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Meet the Rainforest Guided Walks in September
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/meet-the-rainforest-guided-walks-in-septem
+ ber/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-ks3qvd@dothings
-DTSTART;VALUE=DATE:20260916
-DTEND;VALUE=DATE:20260917
-SUMMARY:The Future of Sport
-DESCRIPTION:Come along for a night to hear from key players\, who work on a
- nd off the sporting field. Joining them are our expert teaching staff to d
- iscuss all things sport­ – a global and fast-moving industry – and wh
- ere the future is heading\, including right here in our regions.
-LOCATION:UniSC Arena
-URL:https://usc.edu.au/community/events/the-future-of-sport
+UID:sunnycoast-sx0fxb@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T103000
+DTEND;TZID=Australia/Brisbane:20260930T123000
+SUMMARY:Maleny Community Centre 2026 Annual General Meeting
+DESCRIPTION:The AGM is an opportunity to reflect on the past year\, celebra
+ te our achievements\, and look ahead to the future of the Centre. We are d
+ elighted to welcome Dave Southern as our guest speaker. Dave led the team 
+ that designed and hand-carved the magnificent timber entrance doors to the
+  Main Hall—one of the Centre’s most recognisable and treasured feature
+ s. He will share insights into his artistic journey\, his work as a woodca
+ rver\, and the inspiration behind his craft. Dave will also assist in a sp
+ ecial unveiling. We hope you can join us for what promises to be an enjoya
+ ble and inspiring morning as we celebrate our Centre\, its history\, and t
+ he people who have contributed to its success. Date: Wednesday 30th Septem
+ ber 2026 Time: 10.30am Venue: Verandah Room\, Maleny Community Centre
+LOCATION:Maleny Community Centre Verandah Room
+URL:https://malenycc.org/event/maleny-community-centre-2026-annual-general-
+ meeting/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-2vy0qe@dothings
-DTSTART;VALUE=DATE:20260917
-DTEND;VALUE=DATE:20261012
-SUMMARY:Creative Generation
-DESCRIPTION:Celebrate a rising generation of young artists in the Creative 
- Generation exhibition. Featuring high quality artwork across a diverse ran
- ge of media\, materials and techniques from Year 11 and 12 students across
-  the North Coast (South) region (from Gympie\, to Maleny and down to Calou
- ndra). At the exhibition opening award winners will be announced who will 
- have their work exhibited in GOMA in 2027. For many of the students in thi
- s exhibition this will be their first exhibition showcase.
-LOCATION:Cooroy Butter Factory Arts Centre\, 11 MAPLE ST\, COOROY
-URL:https://cooroybutterfactory.com.au/exhibitions/
+UID:sunnycoast-c7wyiv@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T183000
+DTEND;TZID=Australia/Brisbane:20261002T203000
+SUMMARY:Jack Raymond - Album Launch (NOOSA)
+DESCRIPTION:Jack Raymond returns to Noosa to celebrate the release of his n
+ ew album\, Mr Know It All.
+LOCATION:Locals in the Loop
+URL:https://localsintheloop.com.au/listing/jack-raymond-album-launch-noosa/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1pzym40@dothings
-DTSTART;VALUE=DATE:20260917
-DTEND;VALUE=DATE:20261012
-SUMMARY:Start Up Student Art Prize
-DESCRIPTION:An ArtsNational Noosa sponsored Prize exhibition of artworks by
-  Yrs 10-12 students from the North Coast (South) schools region. This exhi
- bition will take place at the same time as the annual Creative Gen exhibit
- ion. Works in ‘ Start Up ” will be for sale and a selection of works w
- ill also be shown in the end of year Eclectica Prize. One student will be 
- selected for a $1000 ArtsNational Noosa Sponsored prize.
-LOCATION:Cooroy Butter Factory Arts Centre\, 11 MAPLE ST\, COOROY
-URL:https://cooroybutterfactory.com.au/exhibition-call-out/
+UID:sunnycoast-amu9z6@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T193000
+DTEND;TZID=Australia/Brisbane:20261002T203000
+SUMMARY:Inspector Drake & The Black Widow by BATS
+DESCRIPTION:BATS THEATRE COMPANY PROUDLY PRESENTS - INSPECTOR DRAKE AND THE
+  BLACK WIDOW Imagine if Fawlty Towers meets a murder mystery. That is\, es
+ sentially\, Inspector Drake and the Black Widow. A classic English farce f
+ eaturing a cross between ‘Inspector Clouseau’ and ‘And Then There We
+ re None’ will have you laughing out loud and forgetting about the outsid
+ e world. A dead body is found\, whilst dusting at 3am\, which sets up a pl
+ ay that is an amusing parody of the whodunnit genre\, that’s packed with
+  lots of visual gags\, subtle adult innuendo\, all topped with a touch of 
+ cross-dressing. The plot\, set in the 1920s \, has Sergeant Plod send for 
+ the infamous Inspector Drake to help solve the murder of John Johnson who 
+ has been stabbed in the back whilst wearing his wife’s dress. The two ar
+ e thwarted by a series of women who look suspiciously alike\, with triplet
+ s born two months apart\, a missing semi-tropical spider and a lustful wid
+ ow. Just a few of the obstacles facing Inspector Drake. Imagine Basil Fawl
+ ty playing Inspector Clouseau playing Inspector Drake? What can possibly g
+ o wrong? From the Team at BATS Theatre\, that brought you ‘Sex Please\, 
+ We’re Sixty’. PERFORMANCE DATES: Friday\, 25 September 2026 at 7.30pm 
+ Saturday\, 26 September 2026 at 2.00pm and 7.30pm Friday\, 2 October 2026 
+ at 7.30pm Saturday\, 3 October 2026 at 2.00pm and 7.30pm
+LOCATION:Buderim War Memorial Community Association\, 50 Burnett Street
+URL:https://www.bwmca.com.au/events-2-1/inspector-drake-the-black-widow-by-
+ bats-mtypz
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-jgb5p5@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Native Wildflower Guided Walk
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/native-wildflower-guided-walk/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-p5s75x@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T090000
+DTEND;TZID=Australia/Brisbane:20261003T110000
+SUMMARY:Sound Healing With Tuning Forks
+DESCRIPTION:2 Day Workshop with Teacher Anita Cassidy-Bowman What’s cover
+ ed in this Level 1 Tuning Forks Workshop Harmonic Spectrum Unweighted Tuni
+ ng Forks Create healing musical intervals for specific health issues Trigg
+ er mental relaxation Release stuck energy Enhance wellness Ground and cent
+ re yourself and your client Otto Weighted Tuning Forks – 32\, 64 and 128
+  Hertz Create a positive mindset Reduce stress Trigger physical relaxation
+  Attain a sense of physical well being Relieve pain Reduce muscle and join
+ t tension
+LOCATION:Maleny Community Centre Verandah Room
+URL:https://malenycc.org/event/sound-healing-with-tuning-forks/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-qaiot5@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T140000
+DTEND;TZID=Australia/Brisbane:20261003T160000
+SUMMARY:Inspector Drake & The Black Widow by BATS
+DESCRIPTION:BATS THEATRE COMPANY PROUDLY PRESENTS - INSPECTOR DRAKE AND THE
+  BLACK WIDOW Imagine if Fawlty Towers meets a murder mystery. That is\, es
+ sentially\, Inspector Drake and the Black Widow. A classic English farce f
+ eaturing a cross between ‘Inspector Clouseau’ and ‘And Then There We
+ re None’ will have you laughing out loud and forgetting about the outsid
+ e world. A dead body is found\, whilst dusting at 3am\, which sets up a pl
+ ay that is an amusing parody of the whodunnit genre\, that’s packed with
+  lots of visual gags\, subtle adult innuendo\, all topped with a touch of 
+ cross-dressing. The plot\, set in the 1920s \, has Sergeant Plod send for 
+ the infamous Inspector Drake to help solve the murder of John Johnson who 
+ has been stabbed in the back whilst wearing his wife’s dress. The two ar
+ e thwarted by a series of women who look suspiciously alike\, with triplet
+ s born two months apart\, a missing semi-tropical spider and a lustful wid
+ ow. Just a few of the obstacles facing Inspector Drake. Imagine Basil Fawl
+ ty playing Inspector Clouseau playing Inspector Drake? What can possibly g
+ o wrong? From the Team at BATS Theatre\, that brought you ‘Sex Please\, 
+ We’re Sixty’. PERFORMANCE DATES: Friday\, 25 September 2026 at 7.30pm 
+ Saturday\, 26 September 2026 at 2.00pm and 7.30pm Friday\, 2 October 2026 
+ at 7.30pm Saturday\, 3 October 2026 at 2.00pm and 7.30pm
+LOCATION:Buderim War Memorial Community Association\, 50 Burnett Street
+URL:https://www.bwmca.com.au/events-2-1/inspector-drake-the-black-widow-by-
+ bats-k9h22-hec85
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-u62j2g@dothings
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:thrifter market
+DESCRIPTION:Join the legends from Thrifter for the ultimate long-weekend ma
+ rket. Bringing great beer\, incredible pre-loved fashion and the best comm
+ unity vibes together under one roof!
+LOCATION:Blackflag Coolum
+URL:https://blackflagbrewing.com.au/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-18clhkl@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T083000
+DTEND;TZID=Australia/Brisbane:20261004T103000
+SUMMARY:Reconnecting with Nature at the Maroochy Regional Bushland Botanic 
+ Garden
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/reconnecting-with-nature-at-the-maroochy-r
+ egional-bushland-botanic-garden-321431/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1nexwev@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T163000
+DTEND;TZID=Australia/Brisbane:20261004T200000
+SUMMARY:THE SINGING ROADSHOW
+DESCRIPTION:Mama Kin Spender are thrilled to announce The SINGING ROADSHOW 
+ \, an extension of their sold out annual Choir Camps. This traveling\, min
+ i festival is an all-in\, sing along\, song and story-telling bonanza\, un
+ folding at The Imperial Hotel Eumundi on Sunday the 4th of October.
+LOCATION:Imperial Hotel Eumundi
+URL:https://www.imperialhoteleumundi.com.au/whats-on/5cojcc03ad08uz8fb15rg4
+ gc6jh248
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-xgocd3@dothings
+DTSTART;TZID=Australia/Brisbane:20260831T180000
+DTEND;TZID=Australia/Brisbane:20260921T190000
+SUMMARY:Introduction to Mindfulness and Meditation
+DESCRIPTION:Learn practical mindfulness and meditation techniques to help c
+ alm a busy mind\, manage everyday stress\, improve sleep and feel more pre
+ sent.
+LOCATION:Locals in the Loop\, 483 Mountain View Road
+URL:https://localsintheloop.com.au/listing/introduction-to-mindfulness-and-
+ meditation/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-2lc8zq@dothings
@@ -1040,15 +972,6 @@ SUMMARY:Toowoomba Carnival of Flowers 2026
 DESCRIPTION:
 LOCATION:Weekend Notes Sunshine Coast
 URL:https://www.weekendnotes.com/toowoomba-carnival-of-flowers-2026-332644/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1eutjoe@dothings
-DTSTART;VALUE=DATE:20260918
-DTEND;VALUE=DATE:20260919
-SUMMARY:Cotton Tree Twilight Markets
-DESCRIPTION:
-LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/cotton-tree-twilight-markets/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-olitvm@dothings
@@ -1061,171 +984,13 @@ LOCATION:Maleny Community Centre
 URL:https://malenycc.org/event/vintage-fashion-fair-3/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1inskmt@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T090000
-DTEND;TZID=Australia/Brisbane:20260920T170000
-SUMMARY:Tinbeerwah Art Group Exhibition
-DESCRIPTION:A curated exhibition showcasing works by the Tinbeerwah Art Gro
- up\, celebrating local creative talent.
-LOCATION:Tinbeerwah
-URL:https://www.innoosa.com.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1duqg82@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T160000
-DTEND;TZID=Australia/Brisbane:20260918T180000
-SUMMARY:Currimundi Lake Twilight Market
+UID:sunnycoast-j82gvy@dothings
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+SUMMARY:VietJet Redcliffe KiteFest - FREE Entry
 DESCRIPTION:
 LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/currimundi-lake-twilight-market-333645/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-hkhgnf@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T190000
-DTEND;TZID=Australia/Brisbane:20260918T210000
-SUMMARY:SALSA NIGHT
-DESCRIPTION:TWO CUBANS COME TOGETHER TO BRING YOU THE BEST OF CUBAN SALSA!
-LOCATION:Locals in the Loop
-URL:https://localsintheloop.com.au/listing/salsa-night/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1mmv00j@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T193000
-DTEND;TZID=Australia/Brisbane:20260918T213000
-SUMMARY:Disgraceland
-DESCRIPTION:Disgraceland | Live at Kings Beach Tavern Friday 18 September 
- 🎸🔥 Australia\, brace yourself. Disgraceland are about to Wipeout the
-  country one pub at a time and they are rolling into Kings Beach for a nig
- ht that will feel like a greatest-hits party you never want to end. With a
-  new single dropping\, a tour already gaining serious momentum\, and crowd
- s packing out shows across the country\, this is quickly shaping up as the
- ir biggest run yet. They have been sharing stages with Aussie rock icons l
- ike Rose Tattoo and Baby Animals\, and the word is well and truly out. So 
- what’s the deal? Punked-up\, high-energy versions of every song you ever
-  loved. The kind of set where you go from “I know this one” to “how 
- am I already yelling the chorus” in about 10 seconds 🤘😄 Expect: No
- n-stop singalongs and dancefloor chaos (the fun kind) A packed pub vibe wi
- th huge energy from the first song A setlist full of familiar bangers\, re
- charged and turned up If you’ve seen Disgraceland before\, you already k
- now what’s coming. If you haven’t\, this is your chance to fix that. T
- ickets are moving fast for this one. Get in early and don’t be the perso
- n hearing about it the next day 🎟️🍻
-LOCATION:Kings Beach Tavern\, Caloundra · Caloundra + Kawana
-URL:https://tickets.oztix.com.au/outlet/event/501aa04d-f678-4063-b24e-70576
- 6476c6b
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-cbb74f@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260920
-SUMMARY:Larry Keel
-DESCRIPTION:
-LOCATION:Rivanna River Company
-URL:https://www.bandsintown.com/e/107947275-larry-keel-at-rivanna-river-com
- pany?came_from=257&utm_medium=web&utm_source=home&utm_campaign=top_event_f
- eatured
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1scfbui@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20261004
-SUMMARY:Spring school holidays
-DESCRIPTION:Join us for hands-on heritage and creative play | 19 September 
- - 3 October
-LOCATION:Sunshine Coast Heritage
-URL:https://heritage.sunshinecoast.qld.gov.au/about/programs-and-events/spr
- ing-school-holidays
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-3mwf4e@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260920
-SUMMARY:Mooloolaba Sunsets Market - FREE Entry
-DESCRIPTION:
-LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/mooloolaba-sunsets-market-free-entry/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-82ce2m@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260920
-SUMMARY:Alexandra Headland Sunshine Coast Collective Markets 2026
-DESCRIPTION:
-LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/alexandra-headland-sunshine-coast-collecti
- ve-markets-2026/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-qwjt99@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T080000
-DTEND;TZID=Australia/Brisbane:20260920T120000
-SUMMARY:3 Mountain Bike Orienteering Events in one Weekend
-DESCRIPTION:**Hi all!** **More info to come but you can come along and do a
- ll three or just one!** **I’ll be at each event to guide you through the
-  process & dependi
-LOCATION:Various Venues Sunshine Coast\, Palmer Resort\, Peregian Springs\,
-  Noosa Springs\, Pelican Waters\, Mooloolaba\, Caboolture\, Sunshine Coast
- \, Sunshine Coast
-URL:https://www.meetup.com/sunshine-coast-orienteering-adventure-meetup-gro
- up/events/316343925/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-17rt1cw@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T093000
-DTEND;TZID=Australia/Brisbane:20260919T113000
-SUMMARY:Sewing Group
-DESCRIPTION:
-LOCATION:SCArt Art Studio
-URL:https://sunshinecoastartgroup.com.au/event-6429439
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1hyhpee@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T140000
-DTEND;TZID=Australia/Brisbane:20260919T160000
-SUMMARY:You're a Good Man\, Charlie Brown (Musical)
-DESCRIPTION:A live theatre production of the classic musical\, performed by
-  the local Noosa Arts Theatre community.
-LOCATION:Noosa Arts Theatre
-URL:https://www.noosaartstheatre.org.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-nvlcwj@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T170000
-DTEND;TZID=Australia/Brisbane:20260919T233000
-SUMMARY:Saturday Night Live & Free
-DESCRIPTION:Saturday Night Live & Free 5.00pm – Rick the Rockstar 9.00pm 
- – Alter Egos Please note: While we do our best to keep our Live & Free E
- ntertainment schedule up to date\, last-minute changes can occur. For the 
- latest information and any schedule updates\, please follow our social med
- ia channels.
-LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
- nd\, 4551
-URL:https://caloundrarsl.com.au/event/saturday-night-live-free-12/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-vdtwjh@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T190000
-DTEND;TZID=Australia/Brisbane:20260919T210000
-SUMMARY:Che Burns With Band
-DESCRIPTION:Che Burns returns to Blackflag in Coolum\, taking over the main
-  venue for a massive hometown show with his full band. Following a run of 
- sold-out performances and a recent Song of the Year win at the Sunshine Co
- ast Music Awards\, Che is bringing his biggest live production yet to the 
- Sunshine Coast. Joined by Cora\, Happy Valley and Cherry Nova for a night 
- of live music you won’t want to miss.
-LOCATION:Blackflag Coolum
-URL:https://tickets.oztix.com.au/outlet/event/12a3e2b6-62bb-4d96-ab6f-6e3ee
- 5a55b41
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1aolx20@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T193000
-DTEND;TZID=Australia/Brisbane:20260919T213000
-SUMMARY:Nurse Georgie Carroll – Infectious – Encore Show
-DESCRIPTION:Stand Up Comedy\, Georgie Carroll\, Infectious\, What's On\, No
- osa\, The J Theatre
-LOCATION:The J Noosa
-URL:https://www.thej.com.au/georgie-carroll-infectious-encore/
+URL:https://www.weekendnotes.com/vietjet-redcliffe-kitefest-free-entry/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-1ppofaq@dothings
@@ -1248,602 +1013,39 @@ LOCATION:Weekend Notes Sunshine Coast
 URL:https://www.weekendnotes.com/secret-garden-in-september-334119/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-6mipw3@dothings
-DTSTART;VALUE=DATE:20260920
-DTEND;VALUE=DATE:20260921
-SUMMARY:The Garden in Layers at Noosa Botanic Gardens
-DESCRIPTION:
-LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/the-garden-in-layers-at-noosa-botanic-gard
- ens/
+UID:sunnycoast-1myuete@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T030000
+DTEND;TZID=Australia/Brisbane:20260920T050000
+SUMMARY:Chasing Sun(Sets) III — JOEZI x MASSUMA
+DESCRIPTION:THE MONOLITH PROJECT PRESENTS: CHASING SUN(SETS) IIIJOEZI x MAS
+ SUMATHE SEASON FINALEThree dates. One lake. One home. One final sunset.Sat
+ urday\, September 19\, Chasing Sun(Sets) returns to Castaways Beach Club f
+ or the closing chapter of the 2026 lakefront season.JOEZI and MASSUMA brin
+ g the finale into
+LOCATION:Castaways Beach Club
+URL:https://allevents.in/chicago/chasing-sunsets-iii-joezi-x-massuma-ticket
+ s/80003431876974?ref=search-event-globe
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-16ztnu5@dothings
-DTSTART;VALUE=DATE:20260920
-DTEND;VALUE=DATE:20260921
-SUMMARY:Beccy Cole – Through The Haze Tour
-DESCRIPTION:Don’t miss this opportunity to experience Beccy Cole and her 
- band in full flight as she celebrates a new musical dawn with Through The 
- Haze .
-LOCATION:The Savvy Squire\, Mooloolaba · Maroochydore + Mooloolaba
-URL:https://beccycole.com/tour-dates/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1us2grc@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T100000
-DTEND;TZID=Australia/Brisbane:20260920T120000
-SUMMARY:Welcoming Week Community Picnic
-DESCRIPTION:A casual outdoor gathering designed to foster community connect
- ions and celebrate diversity through social interaction in a park setting.
-LOCATION:Cotton Tree Park\, Maroochydore
-URL:https://events.sunshinecoast.qld.gov.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1qewgei@dothings
+UID:sunnycoast-tvqd2p@dothings
 DTSTART;TZID=Australia/Brisbane:20260920T140000
 DTEND;TZID=Australia/Brisbane:20260920T160000
 SUMMARY:The Black Sorrows
 DESCRIPTION:See The Black Sorrows live at the Sunshine Surfy for their Quin
  tessential Best of Tour.
-LOCATION:Sunshine Beach SLSC\, Sunshine Beach · Noosa + North
+LOCATION:Sunshine Beach SLSC
 URL:https://events.humanitix.com/the-black-sorrows-ykakcnnm
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-m0g4q4@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T140000
-DTEND;TZID=Australia/Brisbane:20260920T160000
-SUMMARY:You're a Good Man\, Charlie Brown (Musical)
-DESCRIPTION:A live theatre production of the classic musical\, performed by
-  the local Noosa Arts Theatre community.
-LOCATION:Noosa Arts Theatre
-URL:https://www.noosaartstheatre.org.au
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-p7cxp6@dothings
-DTSTART;VALUE=DATE:20260923
-DTEND;VALUE=DATE:20260924
-SUMMARY:Strung Out
-DESCRIPTION:
-LOCATION:Kings Beach Tavern\, Caloundra · Caloundra + Kawana
-URL:https://tickets.oztix.com.au/outlet/event/3ec43d96-d2fb-4b0c-b426-44103
- 3ec3bd2
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1h6l0ld@dothings
-DTSTART;TZID=Australia/Brisbane:20260923T113000
-DTEND;TZID=Australia/Brisbane:20260923T123000
-SUMMARY:Spring School Holidays – Geckoes Wildlife Show
-DESCRIPTION:Tickets Open Monday 3rd August 📅 Wednesday\, 23rd September 
- ⏰ 11.30 AM – 12.30 PM 📍 Sunshine Coast Function Centre @ Caloundra 
- RSL Let Martin and the team entertain the kids with their Wildlife show wi
- th Goannas\, Tawny frogmouth Owl\, Pig Nosed Turtle plus more Ausie wildli
- fe. This free event is sure to entertain and […]
-LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
- nd\, 4551
-URL:https://caloundrarsl.com.au/event/spring-school-holidays-geckoes-wildli
- fe-show/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-19aj9eu@dothings
-DTSTART;VALUE=DATE:20260924
-DTEND;VALUE=DATE:20260925
-SUMMARY:Snake Boss Reptile Show
-DESCRIPTION:Snake Boss Reptile Show at Kings Beach TavernGet ready for a wi
- ld school holiday experience at Kings Beach Tavern.Snake Boss is bringing 
- an exciting reptile show to the venue on Thursday 24 September from 11.00a
- m. Get up close to some amazing reptiles and learn more about these fascin
- ating creatures in an entertaining experience for the whole family.Bring t
- he kids along\, enjoy a family lunch and make a day of it at Kings Beach T
- avern.Thursday 24 SeptemberShow starts at 11.00amBookings are recommended.
-LOCATION:Kings Beach Tavern
-URL:https://kingsbeachtavern.com.au/events/snake-boss-reptile-show/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-m44yjx@dothings
-DTSTART;VALUE=DATE:20260925
-DTEND;VALUE=DATE:20260926
-SUMMARY:Jack Raymond Album Tour with Ryan Tracey & Daryl James
-DESCRIPTION:You can return to our homepage by clicking here \, or you can t
- ry searching for the content you are seeking by clicking here .
-LOCATION:Mapleton Public House\, Mapleton · Nambour + Hinterland
-URL:https://www.mapleton.pub/events
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-wbsqkr@dothings
-DTSTART;TZID=Australia/Brisbane:20260925T040000
-DTEND;TZID=Australia/Brisbane:20260925T080000
-SUMMARY:APL Poker – $26 Buy In
-DESCRIPTION:Every Thursday Night $26 Buy In \\ $26 Freeze Out Rego: 6pm \\ 
- Start: 6.30pm \\ Late Rego: 8.30pm
-LOCATION:Caloundra RSL Services Club
-URL:https://caloundrarsl.com.au/event/apl-poker-26-buy-in/2026-09-24/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-jdxpno@dothings
-DTSTART;TZID=Australia/Brisbane:20260925T100000
-DTEND;TZID=Australia/Brisbane:20260925T120000
-SUMMARY:Cr Ted Hungerford At The OPO
-DESCRIPTION:If you have thoughts or concerns regarding the Council\, now is
-  the perfect time to connect with your local Councillor. Join us for a con
- versation with Cr. Ted\, your elected representative\, to discuss the loca
- l issues that are important to you.
-LOCATION:Buderim War Memorial Community Association\, 50 Burnett Street
-URL:https://www.bwmca.com.au/events-2-1/cr-ted-hungerford-feb-2025-z4fmj-ca
- bsd-g7ce8
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-wz691b@dothings
-DTSTART;TZID=Australia/Brisbane:20260925T153000
-DTEND;TZID=Australia/Brisbane:20260925T220000
-SUMMARY:Friday Night Live & Free
-DESCRIPTION:Friday Night Live & Free 3.30pm – Marco 7.30pm – Kool Inten
- tions Please note: While we do our best to keep our Live & Free Entertainm
- ent schedule up to date\, last-minute changes can occur. For the latest in
- formation and any schedule updates\, please follow our social media channe
- ls.
-LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
- nd\, 4551
-URL:https://caloundrarsl.com.au/event/friday-night-live-free-8/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-i20p0d@dothings
-DTSTART;TZID=Australia/Brisbane:20260925T180000
-DTEND;TZID=Australia/Brisbane:20260925T200000
-SUMMARY:Jack Raymond - "Mr.Know it all"- Album Launch (Mapleton Pub)
-DESCRIPTION:Jack Raymond returns to the Mapleton Pub as part of the launch 
- tour for his new album
-LOCATION:Locals in the Loop
-URL:https://localsintheloop.com.au/listing/jack-raymond-mr-know-it-all-albu
- m-launch-mapleton-pub/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-bszigh@dothings
-DTSTART;TZID=Australia/Brisbane:20260925T180000
-DTEND;TZID=Australia/Brisbane:20260925T200000
-SUMMARY:ALPHABET SOUP
-DESCRIPTION:The Presynct presents ALPHABET SOUP 🌈🥫 A big\, bold\, glo
- riously queer night of cabaret\, comedy\, games\, dancing and all your fav
- ourite 80s queer anthems! Hosted by the fabulous Rhoda Mann & Sista Agains
- t The Machine\, Alphabet Soup is serving up a colourful night of entertain
- ment\, laughs\, music and unapologetic queer joy. Expect iconic 80s anthem
- s\, fabulous performances\, ridiculous fun and plenty of reasons to hit th
- e dance floor. Whether you’re part of the LGBTQI+ community or a friend 
- and ally\, everyone is welcome at the table - and there’s always room fo
- r more Alphabet Soup. 🌈 ✨ CABARET 🪩 DANCING 🎲 GAMES 😂 COMEDY
-  🌈 80s QUEER ANTHEMS Come colourful. Come fabulous. Come as you are. 
- 📅 Friday 25th September ⏰ Doors 6PM for Happy Gay Hour 🎟 Early Bir
- d $15+BF | General $20+BF | Door $30 🔞 18+ Event 🩴 NO Thongs Permitt
- ed 🚱 NO Outside Drink bottles
-LOCATION:The Presynct Venue & Bar\, Nambour
-URL:https://tickets.oztix.com.au/outlet/event/09a6135f-9b87-462b-a533-6233b
- 63e0490
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1yso3d6@dothings
-DTSTART;TZID=Australia/Brisbane:20260925T190000
-DTEND;TZID=Australia/Brisbane:20260925T210000
-SUMMARY:LA SALSA PARTY
-DESCRIPTION:🎶 La Salsa is BACK in Maroochydore Sunshine Coast! 💃🕺
-LOCATION:Locals in the Loop
-URL:https://localsintheloop.com.au/listing/la-salsa-party/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-sjde4b@dothings
-DTSTART;TZID=Australia/Brisbane:20260925T193000
-DTEND;TZID=Australia/Brisbane:20260925T223000
-SUMMARY:Late for Woodstock
-DESCRIPTION:60's 70's Tribute band - Keeping the Sounds & Soul of the Woods
- tock Era Live! The 60's and 70's did more than just pass by – they gave 
- rise to the adolescence of a new world. This legacy of peace\, love and wo
- rld vision was etched in stone by an amazing collection of songs and sound
- s that […]
-LOCATION:Coolum Beach Sports Club
-URL:https://coolumbeachsports.com.au/events-calendar/late-for-woodstock-7/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1g1vvqt@dothings
-DTSTART;VALUE=DATE:20260926
-DTEND;VALUE=DATE:20260928
-SUMMARY:Wondai Garden Expo Spring 2026
-DESCRIPTION:
-LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/wondai-garden-expo-spring-2026/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-vhbxfb@dothings
-DTSTART;TZID=Australia/Brisbane:20260926T170000
-DTEND;TZID=Australia/Brisbane:20260926T233000
-SUMMARY:Saturday Night Live & Free
-DESCRIPTION:Saturday Night Live & Free 5.00pm – David Lee 9.00pm – Red 
- Rock Please note: While we do our best to keep our Live & Free Entertainme
- nt schedule up to date\, last-minute changes can occur. For the latest inf
- ormation and any schedule updates\, please follow our social media channel
- s.
-LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
- nd\, 4551
-URL:https://caloundrarsl.com.au/event/saturday-night-live-free-13/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-6z7e6g@dothings
-DTSTART;TZID=Australia/Brisbane:20260926T233000
-DTEND;TZID=Australia/Brisbane:20260927T013000
-SUMMARY:DONBURS - UNIT 03: BLACK BLOOD | AHMEDABAD
-DESCRIPTION:There are parties you attend. There are nights you remember. An
- d then there are nights that permanently alter the way you see the undergr
- ound.DONBURS returns with UNIT 03: BLACK BLOOD\, its most intense and unco
- mpromising chapter yet.This time\, we are going where the underground gets
-  darker\, harder a
-LOCATION:TBA
-URL:https://allevents.in/ahmedabad/donburs-unit-03-black-blood-ahmedabad-ti
- ckets/80001283268859?ref=search-event-globe
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1ttw094@dothings
-DTSTART;VALUE=DATE:20260927
-DTEND;VALUE=DATE:20260928
-SUMMARY:JUNIOR OPEN MIC NIGHT SEPTEMBER
-DESCRIPTION:The Banana Bender is all about backing fresh talent\, and this 
- year we’re giving the juniors the entire stage to themselves. Back after
-  a popular demand - Friday 10th July from 3-10pm. Bring your instruments a
- nd your cheer squad. Full backline supplied thanks to Mooloolaba Music
-LOCATION:Banana Bender Pub
-URL:http://39936025.hs-sites.com/2026-junior-open-mic-night-september
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1w1sbpf@dothings
-DTSTART;TZID=Australia/Brisbane:20260927T160000
-DTEND;TZID=Australia/Brisbane:20260927T180000
-SUMMARY:Gujarati Jamanvaar 2026
-DESCRIPTION:🌟 Dive into the Flavors of Gujarat at Gujarati Jamanvaar 202
- 6! 🌟Get ready for a sumptuous celebration that will tantalize your tast
- e buds and warm your heart! Join us for a delightful Gujarati Food Experie
- nce where you will revel in the rich culinary traditions of Gujarat with y
- our fellow Prestige S
-LOCATION:Party Hall 1\, PSN Club House
-URL:https://allevents.in/bangalore/gujarati-jamanvaar-2026-tickets/80003835
- 763848?ref=search-event-globe
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-18zdbni@dothings
-DTSTART;VALUE=DATE:20260324
-DTEND;VALUE=DATE:20261003
-SUMMARY:Generation Innovation
-DESCRIPTION:
-LOCATION:Study Sunshine Coast events
-URL:https://www.studysunshinecoast.com.au/event/generation-innovation/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1d91npu@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T100000
-DTEND;TZID=Australia/Brisbane:20260913T140000
-SUMMARY:SCARS - Open Day
-DESCRIPTION:Sunshine Coast Animal Refuge proudly presents “Open Day” We
-  will have lots of fun activities and education for families* who want to 
- support rescue cats and dogs and learn how to welcome a new pet into their
-  home. Come and enjoy kids’ activities\, education and demonstrations\, 
- guided tours of the Shelter\, a Doggy Kissing Booth\, a charity sausage si
- zzle\, and a coffee van. The SCARS Market will also be open for a special 
- day of sales. ‍As part of the Open Day we will be running our silly Dog 
- Plop Jackpot. Purchase a ticket for a square of land in our dog yard and i
- f one of our rescue dogs plops on your land you will win the jackpot – 2
- 0% of the ticket sales. Help us sell all 100 squares of land to raise vita
- l funds for our rescue cats and dogs and make the jackpot reach $10\,000!!
-  Purchase your Dog Plop Jackpot ticket here: https://rafflelink.com/r/scar
- s/dogplop26 ‍* We look forward to welcoming visitors of all ages\, but p
- lease note that this will not be an event for family pets to attend. They 
- will be invited back for Santa Paws later this year.
-LOCATION:Sunshine Coast Animal Refuge\, 28 Sippy Creek Road
-URL:https://www.bwmca.com.au/events-2-1/scars-open-day
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-f7ltws@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T110000
-DTEND;TZID=Australia/Brisbane:20260913T140000
-SUMMARY:Sunday Afternoon Live Music – Marco
-DESCRIPTION:Marco\, a club favourite and a true professional and accomplish
- ed Vocalist\, he performs in a fun and energetic style.
+UID:sunnycoast-19sm8sm@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T163000
+DTEND;TZID=Australia/Brisbane:20260920T190000
+SUMMARY:InnQuizative Trivia
+DESCRIPTION:Every Sunday at 5pm for some brain-busting fun InnQUIZitive Tri
+ via! Gather your friends and show off your knowledge on a wide range of to
+ pics. From pop culture to history\, there's [...]
 LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
-URL:https://www.noosarsl.com.au/entertainment/sunday-afternoon-live-music-m
- arco/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-11bthkp@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T133000
-DTEND;TZID=Australia/Brisbane:20260913T160000
-SUMMARY:Captain Acoustic
-DESCRIPTION:Live Music 1.30pm to 4pm
-LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
- D\, 4551
-URL:https://www.caloundrapowerboat.com.au/event/captain-acoustic-2/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1gope6t@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T153000
-DTEND;TZID=Australia/Brisbane:20260913T173000
-SUMMARY:Marty Sima
-DESCRIPTION:Marty Sima is an experienced acoustic guitarist and singer know
- n for delivering polished\, feel-good covers of popular favourites. With a
-  warm vocal style and confident musicianship\, Marty creates engaging live
-  performances that suit relaxed listening or upbeat social atmospheres. Hi
- s repertoire spans decades and genres\, reimagined with an acoustic edge t
- hat feels both familiar and fresh. Professional\, reliable\, and easy to w
- ork with\, Marty brings quality sound\, strong crowd connection\, and a ge
- nuine love of live music to every performance.
-LOCATION:Maroochy RSL
-URL:https://maroochyrsl.com.au/event/marty-sima-2/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-w3lqbt@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T173000
-DTEND;TZID=Australia/Brisbane:20260913T203000
-SUMMARY:Free Live Entertainment with Tommy Hynes
-DESCRIPTION:Join Us for our Free Live Entertainment from 5.30pm to 8.30pm.
-LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
- , 4575
-URL:https://clubkawana.com.au/event/free-live-entertainment-with-tommy-hyne
- s/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1k4x2x@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T180000
-DTEND;TZID=Australia/Brisbane:20260913T200000
-SUMMARY:Gillys Line Dancing
-DESCRIPTION:Dust off your boots and join us for a fun-filled afternoon of G
- illys Line Dancing at the Kings Beach Tavern on Sunday 13 September! 🕺
- 💃 Kicking off from 6PM\, it’s the perfect afternoon for beginners and
-  seasoned dancers alike—bring your friends\, learn some moves\, and soak
-  up the good vibes. Don’t miss out on the toe-tappin’ action!
-LOCATION:Kings Beach Tavern\, Caloundra · Caloundra + Kawana
-URL:https://tickets.oztix.com.au/outlet/event/8d27c209-8600-435b-9d74-25275
- fd6e3b0
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-eqa6pu@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T044500
-DTEND;TZID=Australia/Brisbane:20260914T064500
-SUMMARY:Barber Battle Liverpool - Freestyle Registration
-DESCRIPTION:Competitors will have 30 mins to create their Freestyle look.Th
- is is a cut and style competition.You can produce a mod\, mullet\, pompado
- ur or any style you decide on\, anything goes in this competition. If you 
- finish quicker this will have no advantage. The overall stying and finishe
- d look will also b
-LOCATION:Content
-URL:https://allevents.in/liverpool/barber-battle-liverpool-freestyle-regist
- ration-tickets/80001885059263?ref=search-event-globe
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-qhd9h7@dothings
-DTSTART;TZID=Australia/Brisbane:20260915T090000
-DTEND;TZID=Australia/Brisbane:20260915T110000
-SUMMARY:Line Dancing Class
-DESCRIPTION:Weekly Line Dancing Join us every week for a morning of fun and
-  fitness\, held in the Diggers Bar! Line dancing runs from 9:00 am – 12:
- 00 Noon\, with dancers [...]
-LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave
-URL:https://www.noosarsl.com.au/entertainment/line-dancing-class-2-2/2026-0
- 9-15/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-px2k1n@dothings
-DTSTART;TZID=Australia/Brisbane:20260916T183000
-DTEND;TZID=Australia/Brisbane:20260916T193000
-SUMMARY:Wednesday Evening Cardio Drumming
-DESCRIPTION:NOTE: This is the last class before the school holidays. Resumi
- ng on the 7th October.🥁 If you are looking for a workout that doesn't p
- ut too much stress on feet and hips.
-LOCATION:Buderim Cricket Club\, 176 Ballinger Rd\, Buderim\, QL\, Buderim\,
-  QL
-URL:https://www.meetup.com/sunshine-coast-cardio-drumming-workout-while-you
- -rockout/events/316293846/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-86p7de@dothings
-DTSTART;TZID=Australia/Brisbane:20260917T113000
-DTEND;TZID=Australia/Brisbane:20260917T143000
-SUMMARY:Free Live Entertainment with Marco
-DESCRIPTION:Join Us for Free Live Entertainment on Thursday from 11.30am to
-  2.30pm.
-LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
- , 4575
-URL:https://clubkawana.com.au/event/free-live-entertainment-with-marco/2026
- -09-17/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-pdfoij@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T153000
-DTEND;TZID=Australia/Brisbane:20260918T220000
-SUMMARY:Friday Night Live & Free
-DESCRIPTION:Friday Night Live & Free 3.30pm – Nick Rivers 7.30pm – TBC 
- Please note: While we do our best to keep our Live & Free Entertainment sc
- hedule up to date\, last-minute changes can occur. For the latest informat
- ion and any schedule updates\, please follow our social media channels.
-LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
- nd\, 4551
-URL:https://caloundrarsl.com.au/event/friday-night-live-free-7/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-14roxqt@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T173000
-DTEND;TZID=Australia/Brisbane:20260918T203000
-SUMMARY:Free Live Entertainment with Rob Szakaly
-DESCRIPTION:Join Us for our Free Live Entertainment from 5.30pm to 8.30pm.
-LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
- , 4575
-URL:https://clubkawana.com.au/event/free-live-entertainment-with-rob-szakal
- y/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1j89rsy@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T190000
-DTEND;TZID=Australia/Brisbane:20260918T220000
-SUMMARY:Mars Madex
-DESCRIPTION:Live Music 7pm to 10pm
-LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
- D\, 4551
-URL:https://www.caloundrapowerboat.com.au/event/mars-madex-3/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-hlc17v@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T190000
-DTEND;TZID=Australia/Brisbane:20260918T230000
-SUMMARY:Eighties Recall
-DESCRIPTION:Chris Reynolds with either Donovan or David shredding on guitar
-  and our updated set of crowd pleasers\, we bring the full 80s Recall vibe
-  with a fresh approach\, using professional backing tracks and cool lighti
- ng\, we can create a big polished sound. This allows us to focus on qualit
- y shows\, attract our fan base\, and […]
-LOCATION:Coolum Beach Sports Club
-URL:https://coolumbeachsports.com.au/events-calendar/eighties-recall-12/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-xslg5l@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260920
-SUMMARY:The Larrikin Puppet Show
-DESCRIPTION:Kick off the school holidays with a morning of puppets\, laught
- er and family entertainment at Kings Beach Tavern. The Larrikin Puppet Sho
- w is bringing a fun-filled performance for the kids on Saturday 19 Septemb
- er from 11.00am. Gather the family\, enjoy a morning of entertainment and 
- make a day of it at your local. Bookings are recommended.
-LOCATION:Kings Beach Tavern
-URL:https://kingsbeachtavern.com.au/events/the-larrikin-puppet-show/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-i6b2er@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20261005
-SUMMARY:Oktoberfest
-DESCRIPTION:Get ready for two weeks of Oktoberfest celebrations at Kings Be
- ach Tavern from Saturday 19 September to Sunday 4 October.Settle into the 
- Beer Garden and enjoy a selection of German-inspired food specials\, inclu
- ding giant pretzels\, bratwurst\, schnitzels and more\, alongside steins o
- f beer available all day\, every day throughout the celebration.Grand Fina
- le | Sunday 4 OctoberWe’re finishing Oktoberfest with a family-friendly 
- celebration in the Beer Garden.Kids Face Painting12.30pm-2.30pmStein Holdi
- ng CompetitionPut your strength to the test for your chance to win a $100 
- PASS voucher.Whether you’re here for the German-inspired eats\, cold ste
- ins or the ultimate stein-holding challenge\, Oktoberfest is on at Kings B
- each Tavern.
-LOCATION:Kings Beach Tavern
-URL:https://kingsbeachtavern.com.au/events/oktoberfest/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-aa8ltx@dothings
-DTSTART;VALUE=DATE:20260919
-DTEND;VALUE=DATE:20260920
-SUMMARY:Raise The Flag
-DESCRIPTION:From live music to awesome parties and festivals\, there’s al
- ways something happening at Blackflag’s venues.
-LOCATION:Blackflag Brewing Mooloolaba\, Mooloolaba · Maroochydore + Mooloo
- laba
-URL:https://www.blackflagbrewing.com.au/pages/events
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1jyi0dh@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T173000
-DTEND;TZID=Australia/Brisbane:20260919T203000
-SUMMARY:Free Live Entertainment with Fin Zerner
-DESCRIPTION:Join Us for our Free Live Entertainment from 5.30pm to 8.30pm.
-LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
- , 4575
-URL:https://clubkawana.com.au/event/free-live-entertainment-with-fin-zerner
- /
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-6mqd7@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T180000
-DTEND;TZID=Australia/Brisbane:20260919T200000
-SUMMARY:SIDETRACKED
-DESCRIPTION:SIDETRACKED VOL#5 Come and get immersed in a 6 hour techno bath
-  full of various styles to keep your brain in full spin out mode. Expect h
- ypnotic\, hardgroove\, acid\, peak time and tribal techno\, there’s lite
- rally something for everyone to shake down or thrash out too. We have mana
- ged to lock in two fully loaded big guns of the harder techno scene - HÆV
- ØK\, a local lass who is uncompromising in her mixes and Sükatrapz from 
- the French underground scene bringing you some absolute dancefloor devasta
- tion! We also have resident RABBiTS ON SATURN bringing some tribal techno\
- , SIQIAN with his trademark hypnotic/hardgroove flavour\, BELTER playing a
- s deep as the Mariana Trench and KUTAA with some slamming peak time. DJs: 
- 🎶 HÆVØK SÜKATRAPZ RABBITS ON SATURN SIQIAN BELTER JEZ Come take a jo
- urney with us as we all get that little bit sidetracked. Please note: ❗
- ️❗️This is a licensed venue\, over 18’s only… strictly NO BYO! 
- ❌ Dress to dance\, closed in shoes are a must (no thongs) We are buildin
- g a community of respect there is zero tolerance for any abuse towards sta
- ff or other guests ☠️ Rave safe\, bring your friends\, make new friend
- s and remember PLUR 🫶👌🏻 📅 Friday 19th September ⏰ Doors 6:00
- pm (Happy Hour) 🎟 Early Bird $20+BF | General $25+BF | Door $30 🔞 18
- + Event 🩴 NO Thongs Permitted 🚱 NO Outside Drink bottles
-LOCATION:The Presynct Venue & Bar\, Nambour
-URL:https://tickets.oztix.com.au/outlet/event/46eefa31-5307-49bb-8559-b3ed3
- 94af74e
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-yvkv2c@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T190000
-DTEND;TZID=Australia/Brisbane:20260919T220000
-SUMMARY:dRAMA qUEEN
-DESCRIPTION:Live Music 7pm to 10pm
-LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
- D\, 4551
-URL:https://www.caloundrapowerboat.com.au/event/drama-queen/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1ps45js@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T190000
-DTEND;TZID=Australia/Brisbane:20260919T210000
-SUMMARY:Masters of Grunge – Pearl Jam vs Nirvana
-DESCRIPTION:Get tickets on Humanitix - Masters of Grunge - The Pearl Jam an
- d Nirvana Show. Banana Bender Pub\, 1 Downunder Dr\, Palmview QLD 4553\, A
- ustralia. Saturday 19th September 2026. Find event information.
-LOCATION:The Shed at Banana Bender Pub\, Palmview · Caloundra + Kawana
-URL:https://events.humanitix.com/masters-of-grunge-pearl-jam-vs-nirvana
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-vsnmif@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T190000
-DTEND;TZID=Australia/Brisbane:20260919T210000
-SUMMARY:Noosa Rocks – Tribute Festival
-DESCRIPTION:Get ready for NOOSA ROCKS! The biggest rock tribute fest around
- . With 5 awesome tribute shows to... Blink 182 Green Day Red Hot Chili Pep
- pers The Offspring Foo Fighters This will be a massive night at The V Room
-  - Villa Noosa Hotel\, so grab your tickets asap! Featuring some of the be
- st Perth based musicians touring Australia this September! Proudly Present
- ed by Bosh Events
-LOCATION:Villa Noosa Hotel\, Noosaville · Noosa + North
-URL:https://tickets.oztix.com.au/outlet/event/7ee4cfda-7261-4e02-92dc-e1537
- a3587f5
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-l1t3bt@dothings
-DTSTART;VALUE=DATE:20260920
-DTEND;VALUE=DATE:20260921
-SUMMARY:Bohemian Rogue Band
-DESCRIPTION:
-LOCATION:Mooloolah Valley Country Club\, Mooloolah Valley · Nambour + Hint
- erland
-URL:https://yelo.live/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-66dbkn@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T114500
-DTEND;TZID=Australia/Brisbane:20260920T134500
-SUMMARY:September Mums Brunch
-DESCRIPTION:September will be a Lunch instead of a Brunch this month ladies
-  as we are heading to Sully’s 💃 🌼Please RSVP BY 15th Sept🌼 I ha
- ve a table for 4 pre-book
-LOCATION:Sully’s Rooftop Bar Mooloolaba\, Level 12/ 10 Brisbane Road Mool
- oolaba Sunshine Coast\, Mooloolaba\, Mooloolaba
-URL:https://www.meetup.com/mums-off-duty-sunshine-coast/events/316440371/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-57c95t@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T133000
-DTEND;TZID=Australia/Brisbane:20260920T163000
-SUMMARY:Colin Dodds
-DESCRIPTION:Live Music 1.30pm to 4.30pm
-LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
- D\, 4551
-URL:https://www.caloundrapowerboat.com.au/event/colin-dodds/
+URL:https://www.noosarsl.com.au/entertainment/trivia-2-2/2026-09-20/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-14xcfpf@dothings
@@ -1856,12 +1058,14 @@ URL:https://www.weekendnotes.com/bushland-holiday-program-journey-stick-adv
  enture/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-l5zz72@dothings
+UID:sunnycoast-28ogwu@dothings
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 SUMMARY:Lucid Safari
-DESCRIPTION:
-LOCATION:Peregian Beach Hotel\, Peregian Beach · Coolum + Peregian
+DESCRIPTION:The Peregian Beach Hotel\, family owned and family run. We love
+  our local area and absolutely love welcoming you to our little piece of p
+ aradise here in Peregian Beach.
+LOCATION:Peregian Beach Hotel
 URL:https://peregianbeachhotel.com.au/whats-on/
 END:VEVENT
 BEGIN:VEVENT
@@ -1888,23 +1092,51 @@ URL:https://www.weekendnotes.com/turtlecare-hatchling-club-school-holiday-a
  ctivity-for-ages-5-to-10-334474/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-f63v3x@dothings
-DTSTART;TZID=Australia/Brisbane:20260923T110000
-DTEND;TZID=Australia/Brisbane:20260923T130000
-SUMMARY:The ULTIMATE Magic Show | Illusionist Jonas Jost
+UID:sunnycoast-1msodum@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Strung Out
 DESCRIPTION:
-LOCATION:The Events Centre\, Caloundra
-URL:https://theeventscentre.com.au/event/the-ultimate-magic-show/
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:https://tickets.oztix.com.au/outlet/event/3ec43d96-d2fb-4b0c-b426-44103
+ 3ec3bd2
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-hgxdng@dothings
+UID:sunnycoast-13za52o@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T180000
+DTEND;TZID=Australia/Brisbane:20260923T200000
+SUMMARY:TRIVIA HAPPENS
+DESCRIPTION:Wednesday Night 6pm. Ryan asks the questions. A case for first\
+ , two four packs for second\, a jug for third. Happy hour runs right up to
+  kick off.
+LOCATION:Land & Sea Brewery
+URL:https://landandseabrewery.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-10bugh5@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T183000
+DTEND;TZID=Australia/Brisbane:20260923T203000
+SUMMARY:Frequency: The Secret of Everything screening and Q&A
+DESCRIPTION:Filmmakers Kaia Roman and Zappy Zapolin investigate emerging fr
+ equency technologies alongside leading voices\, including Dr. Joe Dispenza
+ \, Bruce H. Lipton\, Gregg Braden\, Lynne McTaggart\, Veda Austin\, Michae
+ l Beckwith\, Foster Gamble\, Kimberly Carter Gamble\, Rollin McCraty\, and
+  many more.
+LOCATION:Venue 114\, Bokarina
+URL:https://venue114.com.au/events/frequency-the-secret-of-everything-scree
+ ning-and-q-a
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-fbuhku@dothings
 DTSTART;VALUE=DATE:20260924
-DTEND;VALUE=DATE:20260927
-SUMMARY:Grease
-DESCRIPTION:Grease is the Word\, Little Seed Theatre Company\, Youth Theatr
- e. The J Theatre\, Noosa
-LOCATION:The J Noosa
-URL:https://www.thej.com.au/grease/
+DTEND;VALUE=DATE:20260925
+SUMMARY:Moffat Beach: Vintage Vibes Street Party
+DESCRIPTION:The Moffat Beach Street Party returns to Seaview Terrace on Thu
+ rsday 24 September 2026\, from 4pm to
+LOCATION:Moffat Beach
+URL:https://www.visitsunshinecoast.com/event/6aab726eb900c1cd0512b238/moffa
+ t-beach-vintage-vibes-street-party?queryID=1dcd1b87952edc52039c105f534e60f
+ d
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-16i2rzw@dothings
@@ -1917,100 +1149,61 @@ URL:https://www.weekendnotes.com/spring-school-holidays-at-landsborough-mus
  eum-free-events/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1xs1xt1@dothings
-DTSTART;TZID=Australia/Brisbane:20260924T113000
-DTEND;TZID=Australia/Brisbane:20260924T143000
-SUMMARY:Free Live Entertainment with Rachel Ellen
-DESCRIPTION:Join Us for Free Live Entertainment on Thursday from 11.30am to
-  2.30pm.
-LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
- , 4575
-URL:https://clubkawana.com.au/event/free-live-entertainment-with-rachel-ell
- en-5/2026-09-24/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-cesreu@dothings
-DTSTART;VALUE=DATE:20260925
-DTEND;VALUE=DATE:20260926
-SUMMARY:TRIBUTE FESTIVAL 26′
-DESCRIPTION:The Ultimate Tribute Festival '26 Get ready for a night of unfo
- rgettable music\, Friday\, Sep 25th\, six top tribute acts one epic show. 
- A night of timeless hits of ABBA\, Bee Gees\, Neil Diamond\, Barbra Streis
- and\, Creedence Clearwater Revival\, Fleetwood Mac Experience in a non-sto
- p celebration of classic anthems. Music that shapped generations. – each
-  delivering a 40 min set of iconic hits.
-LOCATION:Banana Bender Pub
-URL:http://39936025.hs-sites.com/ultimate_tribute_festival_26
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-10py1fx@dothings
-DTSTART;VALUE=DATE:20260925
-DTEND;VALUE=DATE:20260926
-SUMMARY:Pornstar Supercar
-DESCRIPTION:From live music to awesome parties and festivals\, there’s al
- ways something happening at Blackflag’s venues.
-LOCATION:Blackflag Brewing Mooloolaba\, Mooloolaba · Maroochydore + Mooloo
- laba
-URL:https://www.blackflagbrewing.com.au/pages/events
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1s1bwo9@dothings
-DTSTART;VALUE=DATE:20260925
-DTEND;VALUE=DATE:20260926
-SUMMARY:Che Burns
-DESCRIPTION:
-LOCATION:Peregian Beach Hotel\, Peregian Beach · Coolum + Peregian
-URL:https://peregianbeachhotel.com.au/whats-on/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-i42pna@dothings
+UID:sunnycoast-1yso3d6@dothings
 DTSTART;TZID=Australia/Brisbane:20260925T190000
-DTEND;TZID=Australia/Brisbane:20260925T220000
-SUMMARY:Tuscany Mellor
-DESCRIPTION:Live Music 7pm to 10pm
-LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
- D\, 4551
-URL:https://www.caloundrapowerboat.com.au/event/tuscany-mellor/
+DTEND;TZID=Australia/Brisbane:20260925T210000
+SUMMARY:LA SALSA PARTY
+DESCRIPTION:🎶 La Salsa is BACK in Maroochydore Sunshine Coast! 💃🕺
+LOCATION:Locals in the Loop
+URL:https://localsintheloop.com.au/listing/la-salsa-party/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-iayu8j@dothings
+UID:sunnycoast-sjde4b@dothings
 DTSTART;TZID=Australia/Brisbane:20260925T193000
-DTEND;TZID=Australia/Brisbane:20260925T213000
-SUMMARY:Billy vs Elton
-DESCRIPTION:
-LOCATION:The Events Centre\, Caloundra
-URL:https://theeventscentre.com.au/event/billy-vs-elton/
+DTEND;TZID=Australia/Brisbane:20260925T223000
+SUMMARY:Late for Woodstock
+DESCRIPTION:60's 70's Tribute band - Keeping the Sounds & Soul of the Woods
+ tock Era Live! The 60's and 70's did more than just pass by – they gave 
+ rise to the adolescence of a new world. This legacy of peace\, love and wo
+ rld vision was etched in stone by an amazing collection of songs and sound
+ s that […]
+LOCATION:Coolum Beach Sports Club
+URL:https://coolumbeachsports.com.au/events-calendar/late-for-woodstock-7/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1mo0n66@dothings
-DTSTART;VALUE=DATE:20260926
-DTEND;VALUE=DATE:20260927
-SUMMARY:Candlelight: Tribute to Michael Jackson at The Imperial Hotel Eumun
- di
-DESCRIPTION:
-LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/candlelight-tribute-to-michael-jackson-at-
- the-imperial-hotel-eumundi/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1x6wuuf@dothings
-DTSTART;VALUE=DATE:20260926
-DTEND;VALUE=DATE:20260927
-SUMMARY:Candlelight: Ed Sheeran Meets Coldplay at The Imperial Hotel Eumund
- i
-DESCRIPTION:
-LOCATION:Weekend Notes Sunshine Coast
-URL:https://www.weekendnotes.com/candlelight-ed-sheeran-meets-coldplay-at-t
- he-imperial-hotel-eumundi/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-1x9qq9b@dothings
-DTSTART;VALUE=DATE:20260926
-DTEND;VALUE=DATE:20260927
-SUMMARY:Vinyl Nights: il Porto – Karlos Dean
-DESCRIPTION:
-LOCATION:Peregian Beach Hotel\, Peregian Beach · Coolum + Peregian
-URL:https://peregianbeachhotel.com.au/whats-on/
+UID:sunnycoast-1s3jo01@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T210000
+DTEND;TZID=Australia/Brisbane:20260925T230000
+SUMMARY:Taking Back Saturday – Emo & Pop Punk Night
+DESCRIPTION:🖤 I’M IN THE BUSINESS OF MISERY 🖤 TAKING BACK SATURDAY 
+ EMO & POP PUNK NIGHT FRIDAY 25TH SEPTEMBER 2026 KINGS BEACH TAVERN CALOUND
+ RA DOORS @ 9PM 18+ ✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰ 
+ Join us for a night of MMRS\, closing the god damn door and marching to Th
+ e Black Parade. ✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰ SOU
+ NDS LIKE: Fall Out Boy : My Chemical Romance : Paramore : blink-182 : Pani
+ c! At The Disco : Bring Me The Horizon : Avril Lavigne : Green Day : Linki
+ n Park : Mayday Parade : A Day To Remember : The All-American Rejects : Su
+ m 41 : Good Charlotte : Taking Back Sunday : Pierce The Veil : The Used : 
+ Evanescence : AFI : The Red Jumpsuit Apparatus : Neck Deep : Sleeping With
+  Sirens : The Story So Far : Trophy Eyes : You Me At Six : The Veronicas :
+  Metro Station : Real Friends : Stand Atlantic : Yellowcard : The Offsprin
+ g : Story Of The Year : Citizen : Turnover : Basement : Title Fight : Mode
+ rn Baseball : Jimmy Eat World : +44 : Kisschasy : Tonight Alive : Boys Lik
+ e Girls : Knuckle Puck : State Champs : Hot Mulligan : The Wonder Years : 
+ We The Kings : New Found Glory : 30 Seconds To Mars : Gym Glass Heroes : 3
+ OH!3 : The Amity Affliction : Bad Omens : Twenty One Pilots : The Maine : 
+ Box Car Racer : Relient K : The Academy Is… : Cobra Starship : Motion Ci
+ ty Soundtrack : Cute Is What We Aim For : Dashboard Confessional + HEAPS M
+ ORE! Come and dance the night away with us to all your pop punk and emo fa
+ ves!! ✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰ Taking Back S
+ aturday do not tolerate anti social behaviour and ask everyone to look aft
+ er #1 and look after all Our events may feature moving and flashing lights
+ . If you have photosensitivity or any related concerns\, feel free to reac
+ h out to us with any questions! Please read the Plus One Co. company T&Cs 
+ carefully prior to purchasing your ticket - https://bit.ly/PurchaseTCs
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:https://tickets.oztix.com.au/outlet/event/ea410848-a3bd-4db2-aa66-7a945
+ 6e97aac
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-1pafvby@dothings
@@ -2025,44 +1218,18 @@ LOCATION:Sunshine Brewery
 URL:https://sunshinebrewery.com.au/event/low-slow-bbq-masterclass-3/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1yebeeo@dothings
-DTSTART;TZID=Australia/Brisbane:20260926T160000
-DTEND;TZID=Australia/Brisbane:20260926T190000
-SUMMARY:Karaoke & Pizza
-DESCRIPTION:It’s Karaoke time! Our good Friend Rowan from Quizmical Sound
-  & Vision has put together a Karaoke session – Quizmical Karaoke! So\, g
- et your voice in tune and join us for the fun from 4pm to 7pm – register
-  your name and song from 4pm and be ready to start from 4.30pm\,. This is 
- all about participation and having fun\, so be prepared to join in. And ou
- r local Pizza shop – Fratelli’s Pizza is delivering pizza’s from 5pm
-  on with no delivery charge. Menus in the venue\, just phone through your 
- order.
-LOCATION:Sunshine Brewery
-URL:https://sunshinebrewery.com.au/event/karaoke-2/
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-m8p1ds@dothings
+UID:sunnycoast-vhbxfb@dothings
 DTSTART;TZID=Australia/Brisbane:20260926T170000
-DTEND;TZID=Australia/Brisbane:20260926T190000
-SUMMARY:BINGO LOCO
-DESCRIPTION:Bingo Loco: a wild 3-hour show with rave rounds\, dance-offs\, 
- epic prizes & nonstop energy. Saturday 26th September. PALMVIEW!!! Strap y
- ourselves\, in because the world's LARGEST BINGO RAVE is heading to the Be
- nder for a massive event! Grab your tickets now\,
-LOCATION:Banana Bender Pub
-URL:http://39936025.hs-sites.com/2026-bingo-loco-september
-END:VEVENT
-BEGIN:VEVENT
-UID:sunnycoast-syg8q6@dothings
-DTSTART;TZID=Australia/Brisbane:20260926T180000
-DTEND;TZID=Australia/Brisbane:20260926T200000
-SUMMARY:HIGH VOLTAGE
-DESCRIPTION:High Voltage – The AC/DC Experience returns on Saturday\, Sep
- tember 26 \, bringing the raw power\, blistering guitar solos and iconic a
- nthems that made AC/DC one of the greatest rock bands of all time.
-LOCATION:Norton Music Factory
-URL:https://tickets.oztix.com.au/outlet/event/ee4e0347-23ca-4df4-8cbf-26f99
- 163095a
+DTEND;TZID=Australia/Brisbane:20260926T233000
+SUMMARY:Saturday Night Live & Free
+DESCRIPTION:Saturday Night Live & Free 5.00pm – David Lee 9.00pm – Red 
+ Rock Please note: While we do our best to keep our Live & Free Entertainme
+ nt schedule up to date\, last-minute changes can occur. For the latest inf
+ ormation and any schedule updates\, please follow our social media channel
+ s.
+LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
+ nd\, 4551
+URL:https://caloundrarsl.com.au/event/saturday-night-live-free-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:sunnycoast-4f61we@dothings
@@ -2098,6 +1265,633 @@ URL:https://tickets.oztix.com.au/outlet/event/8b8b7cbe-e723-4a52-b605-5f720
  487b3e9
 END:VEVENT
 BEGIN:VEVENT
+UID:sunnycoast-1ck2n0c@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T190000
+DTEND;TZID=Australia/Brisbane:20260926T210000
+SUMMARY:Candlelight: Tribute to Michael Jackson
+DESCRIPTION:An atmospheric tribute performance featuring string arrangement
+ s of Michael Jackson's hits by candlelight.
+LOCATION:Imperial Hotel Eumundi\, Eumundi
+URL:https://www.myguidesunshinecoast.com/events/september-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-12j6b58@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T210000
+DTEND;TZID=Australia/Brisbane:20260926T230000
+SUMMARY:Candlelight: Ed Sheeran Meets Coldplay
+DESCRIPTION:A late-night atmospheric concert featuring melodic tributes to 
+ Ed Sheeran and Coldplay in an intimate setting.
+LOCATION:Imperial Hotel Eumundi\, Eumundi
+URL:https://www.myguidesunshinecoast.com/events/september-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-6z7e6g@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T233000
+DTEND;TZID=Australia/Brisbane:20260927T013000
+SUMMARY:DONBURS - UNIT 03: BLACK BLOOD | AHMEDABAD
+DESCRIPTION:There are parties you attend. There are nights you remember. An
+ d then there are nights that permanently alter the way you see the undergr
+ ound.DONBURS returns with UNIT 03: BLACK BLOOD\, its most intense and unco
+ mpromising chapter yet.This time\, we are going where the underground gets
+  darker\, harder a
+LOCATION:TBA
+URL:https://allevents.in/ahmedabad/donburs-unit-03-black-blood-ahmedabad-ti
+ ckets/80001283268859?ref=search-event-globe
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1wp9okm@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T150000
+DTEND;TZID=Australia/Brisbane:20260927T170000
+SUMMARY:Collins In The Air Tonight
+DESCRIPTION:Collins In The Air Tonight! SUNDAY 27 SEPTEMBER | KING'S BEACH 
+ TAVERN Get ready to dance\, sing\, and feel every iconic beat of Phil Coll
+ ins and Genesis! From the thunderous drum fill of In the Air Tonight to th
+ e irresistible grooves of Sussudio\, Easy Lover\, Don't Lose My Number\, I
+ nvisible Touch and Another Day In Paradise\, this show is pure ’80s ener
+ gy from start to finish. With a powerhouse band\, soaring vocals\, and hit
+ s that defined a decade\, this is the ultimate retro party -> the kind of 
+ night you’ll be talking about all week. Feel it coming… grab your mate
+ s\, grab your tickets\, and let’s Phil it!
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:https://tickets.oztix.com.au/outlet/event/1020f82b-f9eb-4d95-87ea-f3f01
+ d4e8cc3
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1w1sbpf@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T160000
+DTEND;TZID=Australia/Brisbane:20260927T180000
+SUMMARY:Gujarati Jamanvaar 2026
+DESCRIPTION:🌟 Dive into the Flavors of Gujarat at Gujarati Jamanvaar 202
+ 6! 🌟Get ready for a sumptuous celebration that will tantalize your tast
+ e buds and warm your heart! Join us for a delightful Gujarati Food Experie
+ nce where you will revel in the rich culinary traditions of Gujarat with y
+ our fellow Prestige S
+LOCATION:Party Hall 1\, PSN Club House
+URL:https://allevents.in/bangalore/gujarati-jamanvaar-2026-tickets/80003835
+ 763848?ref=search-event-globe
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-dvtj60@dothings
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:Bushland Holiday Program: Habitat Makers
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/bushland-holiday-program-habitat-makers/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1uxzzf4@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T183000
+DTEND;TZID=Australia/Brisbane:20260928T200000
+SUMMARY:Monday Night Trivia
+DESCRIPTION:Are you a trivia whiz? Show off your skills at The Caloundra Po
+ wer Boat Club’s Monday Night Trivia! Join us at 6.30 PM for a thrilling 
+ competition and a shot at winning some incredible prizes!
+LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade
+URL:https://www.caloundrapowerboat.com.au/event/monday-night-trivia/2026-09
+ -28/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-n483d9@dothings
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Bushland Holiday Program: Little Scientists - Platypus
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/bushland-holiday-program-little-scientists
+ -platypus/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-10q2zbw@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T140000
+DTEND;TZID=Australia/Brisbane:20261002T160000
+SUMMARY:AUDIO HOLICS FESTIVAL W/MARINO MELLINO
+DESCRIPTION:Friday 2nd October - The most awaited festival of the year is b
+ ack on the Coast\, once again powered by AUDIOHOLICS\, the out of this wor
+ ld audiovisual experience brought to life by the master himself\, MARIANO 
+ MELLINO.
+LOCATION:Banana Bender Pub\, Palmview
+URL:http://39936025.hs-sites.com/2026-audio-holics
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-45xe6d@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T183000
+DTEND;TZID=Australia/Brisbane:20261002T203000
+SUMMARY:WOODHILL
+DESCRIPTION:WOODHILL RETURN TO NORTON MUSIC FACTORY Hailing from Cronulla i
+ n Sydney\, WoodHill have built a reputation as one of Australia’s most e
+ xciting live rock acts. Their powerful mix of ’90s grunge influences\, d
+ riving riffs and modern rock has earned them a loyal following\, with pack
+ ed headline shows and fans who keep coming back for more. .
+LOCATION:Norton Music Factory
+URL:https://tickets.oztix.com.au/outlet/event/3abc9ad1-b3c2-4e7f-842f-c3a7c
+ d920120
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-17mqhss@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T190000
+DTEND;TZID=Australia/Brisbane:20261002T210000
+SUMMARY:GREASE THE MUSICAL
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/grease-the-musical/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1lgvopq@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T190000
+DTEND;TZID=Australia/Brisbane:20261002T210000
+SUMMARY:Brit Fest – Noosa
+DESCRIPTION:Brit Fest is returning to Noosa! Taking over Villa Noosa once a
+ gain after a huge show in 2024\, this tribute-packed event features an inc
+ redible selection of shows that will transport you straight to the UK. Oas
+ is Coldplay Robbie Williams Blur The Jam Madness The Beatles (unplugged wi
+ th Brendan Gaspari) Doors open at 7PM and with such an epic lineup\, you
+ ’ll want to arrive early to grab your spot. Don’t miss your chance to 
+ relive the greatest hits from the UK’s most celebrated artists—all in 
+ one night\, at one iconic venue. Book now and be part of Brit Fest\, where
+  the best of British music comes to life!
+LOCATION:Villa Noosa Hotel\, Noosaville
+URL:https://tickets.oztix.com.au/outlet/event/8d908303-417a-4852-89ab-3ad58
+ 6772278
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1aufmkk@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T193000
+DTEND;TZID=Australia/Brisbane:20261002T213000
+SUMMARY:Vika & Linda | Where Do You Come From?
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/vika-and-linda/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-jks3i1@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T153000
+DTEND;TZID=Australia/Brisbane:20261003T170000
+SUMMARY:No Phone Analog Group 20s to 40s Maroochydore
+DESCRIPTION:*Are you new to the Coast? Work from home and going stir crazy?
+  Single? Travelling through in a van? Visiting from overseas? Or just keen
+  to meet people on the same vibe?*
+LOCATION:Beach Bar Cotton Tree\, Shop 2\, Essence\, 13\, 15 The Esplanade\,
+  Maroochydore QLD 4558\, Maroochydore\, Maroochydore
+URL:https://www.meetup.com/no-phone-sunshine-coast-social-group/events/3164
+ 30008/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-cv8dxu@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T083000
+DTEND;TZID=Australia/Brisbane:20261004T100000
+SUMMARY:Monthly Sober Awkward Morning Tea
+DESCRIPTION:**Sober Awkward Women’s Meetup – Mudjimba 🌿** Come join 
+ a bunch of brilliant\, like-minded women for a relaxed\, real-life catch-u
+ p on the Sunshine Coast. This **women-onl
+LOCATION:Power Memorial Park\, Mudjimba\, Sunshine Coast\, Sunshine Coast
+URL:https://www.meetup.com/soberawkward/events/314115924/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1mvyof2@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T090000
+DTEND;TZID=Australia/Brisbane:20261004T110000
+SUMMARY:Royal Scottish Country Dance Society
+DESCRIPTION:Dancers of all levels are invited to a fun day of Scottish coun
+ try dancing in beautiful Maleny. Classes in the morning and a social in th
+ e afternoon with music by Thistle Dhu. Reserve a place now – pay on the 
+ day!
+LOCATION:Maleny Community Centre
+URL:https://malenycc.org/event/royal-scottish-country-dance-society/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-38vd49@dothings
+DTSTART;VALUE=DATE:20260205
+DTEND;VALUE=DATE:20261105
+SUMMARY:STUFFit – Certificate III in Events
+DESCRIPTION:Certificate III in Events…
+LOCATION:Study Sunshine Coast events
+URL:https://www.studysunshinecoast.com.au/event/stuff-it-certificate-iii-in
+ -events/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-18zdbni@dothings
+DTSTART;VALUE=DATE:20260324
+DTEND;VALUE=DATE:20261003
+SUMMARY:Generation Innovation
+DESCRIPTION:
+LOCATION:Study Sunshine Coast events
+URL:https://www.studysunshinecoast.com.au/event/generation-innovation/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-ym3dao@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:FAMILY KARAOKE
+DESCRIPTION:If you’ve been hunting for family karaoke on the coast that d
+ oesn’t take itself too seriously\, you’ve found it. Beer Garden Belter
+ s is your monthly excuse to grab the fam\, a mic\, butcher a classic\, or 
+ absolutely nail it - all in the laid-back chaos of the Banana Bender beer 
+ garden. Kids\, parents\, mates… everyone’s welcome
+LOCATION:Banana Bender Pub
+URL:http://39936025.hs-sites.com/2026-family-karaoke
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1tzmc7s@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Anna & Jordan
+DESCRIPTION:The Peregian Beach Hotel\, family owned and family run. We love
+  our local area and absolutely love welcoming you to our little piece of p
+ aradise here in Peregian Beach.
+LOCATION:Peregian Beach Hotel
+URL:https://peregianbeachhotel.com.au/whats-on/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-g2q708@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Beccy Cole – Through The Haze Tour
+DESCRIPTION:Don’t miss this opportunity to experience Beccy Cole and her 
+ band in full flight as she celebrates a new musical dawn with Through The 
+ Haze .
+LOCATION:The Savvy Squire Mooloolaba
+URL:https://beccycole.com/tour-dates/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-axoidd@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Bohemian Rogue Band
+DESCRIPTION:
+LOCATION:Mooloolah Valley Country Club
+URL:https://yelo.live/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1eka061@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T110000
+DTEND;TZID=Australia/Brisbane:20260920T140000
+SUMMARY:Sunday Afternoon Live Music – Fabian
+DESCRIPTION:The one and only Fabian is back again. Never a boring afternoon
+  out with Fabian in the building - get ready to put your dancing shoes on.
+LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave\, Tewantin\, Queensland\, 4565
+URL:https://www.noosarsl.com.au/entertainment/sunday-afternoon-live-music-f
+ abian/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-66dbkn@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T114500
+DTEND;TZID=Australia/Brisbane:20260920T134500
+SUMMARY:September Mums Brunch
+DESCRIPTION:September will be a Lunch instead of a Brunch this month ladies
+  as we are heading to Sully’s 💃 🌼Please RSVP BY 15th Sept🌼 I ha
+ ve a table for 4 pre-book
+LOCATION:Sully’s Rooftop Bar Mooloolaba\, Level 12/ 10 Brisbane Road Mool
+ oolaba Sunshine Coast\, Mooloolaba\, Mooloolaba
+URL:https://www.meetup.com/mums-off-duty-sunshine-coast/events/316440371/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-57c95t@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T133000
+DTEND;TZID=Australia/Brisbane:20260920T163000
+SUMMARY:Colin Dodds
+DESCRIPTION:Live Music 1.30pm to 4.30pm
+LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
+ D\, 4551
+URL:https://www.caloundrapowerboat.com.au/event/colin-dodds/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1nbss7o@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T140000
+DTEND;TZID=Australia/Brisbane:20260920T170000
+SUMMARY:Veteran Family Fun Day 2026
+DESCRIPTION:Maroochy RSL is proud to host a special day of family-friendly 
+ fun in honour of our current and former serving personnel and their famili
+ es. This FREE community event promises a relaxed and enjoyable atmosphere 
+ with something for everyone\, including a live band\, magician\, competiti
+ ons\, prizes\, balloon artist\, face painting and light refreshments. Comp
+ limentary beer\, wine and soft drinks will be available\, with a licensed 
+ area on site for the purchase of additional beverages. Admission is FREE. 
+ Bookings are essential. GET YOUR FREE TICKETS HERE Proof of ADF service is
+  required upon entry. Accepted forms of identification include: • Curren
+ t Maroochy RSL Member\, Life Subscriber or Life Member card • RSL Sub Br
+ anch card (members of other Sub Branches) • Australian Defence Force ID 
+ • Defence Force discharge papers (must be presented with photo ID such a
+ s a driver’s licence) • DVA Gold\, White or Orange Card (must be prese
+ nted with photo ID) Each Veteran is entitled to bring one adult guest and 
+ up to four children . If you require additional guests\, please contact in
+ fo@maroochyrsl.com.au prior to the event.
+LOCATION:Maroochy RSL
+URL:https://maroochyrsl.com.au/event/veteran-family-fun-day-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-n7lt0z@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T063000
+DTEND;TZID=Australia/Brisbane:20260921T073000
+SUMMARY:Buderim- Coffee & Chin Wag
+DESCRIPTION:## About the event Head on down to Rue Bourbon Coffee for a cof
+ fee & a chin wag with Cliff and the crew. We run these catch-ups weekly\, 
+ so if you can’t ma
+LOCATION:Rue Bourbon\, 89 Burnett St\, Buderim\, Buderim
+URL:https://www.meetup.com/grab-life-by-the-balls-laidback-social-events-fo
+ r-blokes/events/316616392/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-10o7key@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T063000
+DTEND;TZID=Australia/Brisbane:20260921T073000
+SUMMARY:Coolum- Coffee & Chin Wag
+DESCRIPTION:## About the event Head on down to Coolum Coastal Beach walk fo
+ r a coffee & a chin wag with Shane and the crew. **\\*Location**: open\, s
+ eated area of the C
+LOCATION:Coolum Coastal Board Walk\, 102 Yandina Coolum Road\, Coolum Beach
+ \, Coolum Beach
+URL:https://www.meetup.com/grab-life-by-the-balls-laidback-social-events-fo
+ r-blokes/events/316616340/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-10zius5@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T071500
+DTEND;TZID=Australia/Brisbane:20260921T084500
+SUMMARY:Warana- Coffee & Chin Wag
+DESCRIPTION:Head on down to Jimmy's for a coffee & a chin wag with Karl and
+  the crew (they'll be sitting outside the cafe\, undercover). We run these
+  catch-ups weekly\,
+LOCATION:Jimmy’s Catering\, 3/179 Nicklin Way\, Warana\, Warana
+URL:https://www.meetup.com/grab-life-by-the-balls-laidback-social-events-fo
+ r-blokes/events/316616592/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-fjpi5t@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T081500
+DTEND;TZID=Australia/Brisbane:20260921T101500
+SUMMARY:Apex Camps Spring School Holiday Program
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/apex-camps-spring-school-holiday-program/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-k9ga53@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T090000
+DTEND;TZID=Australia/Brisbane:20260922T110000
+SUMMARY:Line Dancing Class
+DESCRIPTION:Weekly Line Dancing Join us every week for a morning of fun and
+  fitness\, held in the Diggers Bar! Line dancing runs from 9:00 am – 12:
+ 00 Noon\, with dancers [...]
+LOCATION:Tewantin Noosa RSL\, 1 Memorial Ave
+URL:https://www.noosarsl.com.au/entertainment/line-dancing-class-2-2/2026-0
+ 9-22/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-12udl4x@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T103000
+DTEND;TZID=Australia/Brisbane:20260922T113000
+SUMMARY:Zumba With Tianna
+DESCRIPTION:Healthy Sunshine Coast is excited to offer Zumba sessions with 
+ Tianna Balmer in Buderim. Zumba is for all ages and abilities. No skills o
+ r experience is required. Participants are tought basic\, easy to learn mo
+ vements to follow and dance along to at their own pace. Every class feels 
+ like a dance party! Zumba has many benefits\; it targets a variety of musc
+ le groups at once\, so you burn calories while having fun. When in doubt\,
+  dance it out! Every Tuesday: 10.30 am to 11.30 am Provider: Tianna Balmer
+  0421 833 971 zumbawithtianna@gmail.com Bookings: are required - cash on t
+ he day (preferred)\, eftpos on the day or online - www.trybooking.com/CFSC
+ A Cost: $10 general fee or $5 health care/pensioner card Please note: You 
+ must be registered with Healthy Sunshine Coast to join in the activities -
+  registration is one-time\, free and easy. Register here: https://our.suns
+ hinecoast.qld.gov.au/LP=356
+LOCATION:Buderim War Memorial Community Hall\, 1 Main Street
+URL:https://www.bwmca.com.au/events-2-1/2fyzyf3n2bxs2tw-ypdfw-fm9wm-3cw9f-t
+ zf4j-fhg69-lbczg-wdtah-h8wp3-b84b7-pb8nm-cc82k-58jdc
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-f63v3x@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T110000
+DTEND;TZID=Australia/Brisbane:20260923T130000
+SUMMARY:The ULTIMATE Magic Show | Illusionist Jonas Jost
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/the-ultimate-magic-show/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1h6l0ld@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T113000
+DTEND;TZID=Australia/Brisbane:20260923T123000
+SUMMARY:Spring School Holidays – Geckoes Wildlife Show
+DESCRIPTION:Tickets Open Monday 3rd August 📅 Wednesday\, 23rd September 
+ ⏰ 11.30 AM – 12.30 PM 📍 Sunshine Coast Function Centre @ Caloundra 
+ RSL Let Martin and the team entertain the kids with their Wildlife show wi
+ th Goannas\, Tawny frogmouth Owl\, Pig Nosed Turtle plus more Ausie wildli
+ fe. This free event is sure to entertain and […]
+LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
+ nd\, 4551
+URL:https://caloundrarsl.com.au/event/spring-school-holidays-geckoes-wildli
+ fe-show/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-3xkzi1@dothings
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:SCHOOL HOLIDAY FAMILY TRIVIA NIGHT
+DESCRIPTION:School holidays just got a whole lot more fun with our FREE Fam
+ ily Trivia Night at the Banana Bender Pub Thursday 24th September packed w
+ ith laughs kid-friendly trivia\, big prizes and unbeatable family vibes. D
+ OORS 5:30PM. Book your group table today!
+LOCATION:Banana Bender Pub
+URL:https://bookings.nowbookit.com/?accountid=2d1ff32c-188f-41ef-a245-110f7
+ 4f8832b&theme=light&accent=hex%2Cffeb3b%2Cef6c00&venueid=4502&date=2026-09
+ -24&serviceids=event_LE8QTHHCW3OC4_1787030027013
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-hgxdng@dothings
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260927
+SUMMARY:Grease
+DESCRIPTION:Grease is the Word\, Little Seed Theatre Company\, Youth Theatr
+ e. The J Theatre\, Noosa
+LOCATION:The J Noosa
+URL:https://www.thej.com.au/grease/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-gumszm@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T113000
+DTEND;TZID=Australia/Brisbane:20260924T143000
+SUMMARY:Free Live Entertainment with Mickey Diamond
+DESCRIPTION:Join Us for Free Live Entertainment on Thursday from 11.30am to
+  2.30pm.
+LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
+ , 4575
+URL:https://clubkawana.com.au/event/free-live-entertainment-with-mickey-dia
+ mond-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-196vaup@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:TRIBUTE FESTIVAL 26′
+DESCRIPTION:The Ultimate Tribute Festival '26 Get ready for a night of unfo
+ rgettable music\, Friday\, Sep 25th\, six top tribute acts one epic show. 
+ A night of timeless hits of ABBA\, Bee Gees\, Neil Diamond\, Barbra Streis
+ and\, Creedence Clearwater Revival\, Fleetwood Mac Experience in a non-sto
+ p celebration of classic anthems. Music that shapped generations. – each
+  delivering a 40 min set of iconic hits.
+LOCATION:Banana Bender Pub\, Palmview
+URL:https://moshtix.com.au/v2/event/the-ultimate-tribute-festival/198637
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-9bfs63@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Pornstar Supercar
+DESCRIPTION:From live music to awesome parties and festivals\, there’s al
+ ways something happening at Blackflag’s venues.
+LOCATION:Blackflag Brewing Mooloolaba
+URL:https://www.blackflagbrewing.com.au/pages/events
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-o78xg9@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Che Burns
+DESCRIPTION:The Peregian Beach Hotel\, family owned and family run. We love
+  our local area and absolutely love welcoming you to our little piece of p
+ aradise here in Peregian Beach.
+LOCATION:Peregian Beach Hotel
+URL:https://peregianbeachhotel.com.au/whats-on/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-18i2f8a@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Jack Raymond Album Tour with Ryan Tracey & Daryl James
+DESCRIPTION:You can return to our homepage by clicking here \, or you can t
+ ry searching for the content you are seeking by clicking here .
+LOCATION:Mapleton Public House
+URL:https://www.mapleton.pub/events
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-wz691b@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T153000
+DTEND;TZID=Australia/Brisbane:20260925T220000
+SUMMARY:Friday Night Live & Free
+DESCRIPTION:Friday Night Live & Free 3.30pm – Marco 7.30pm – Kool Inten
+ tions Please note: While we do our best to keep our Live & Free Entertainm
+ ent schedule up to date\, last-minute changes can occur. For the latest in
+ formation and any schedule updates\, please follow our social media channe
+ ls.
+LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
+ nd\, 4551
+URL:https://caloundrarsl.com.au/event/friday-night-live-free-8/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-wbbv6l@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T173000
+DTEND;TZID=Australia/Brisbane:20260925T203000
+SUMMARY:Free Live Entertainment with Harry Morris
+DESCRIPTION:Join Us for our Free Live Entertainment from 5.30pm to 8.30pm.
+LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
+ , 4575
+URL:https://clubkawana.com.au/event/free-live-entertainment-with-harry-morr
+ is/2026-09-25/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-i42pna@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T190000
+DTEND;TZID=Australia/Brisbane:20260925T220000
+SUMMARY:Tuscany Mellor
+DESCRIPTION:Live Music 7pm to 10pm
+LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
+ D\, 4551
+URL:https://www.caloundrapowerboat.com.au/event/tuscany-mellor/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-iayu8j@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T193000
+DTEND;TZID=Australia/Brisbane:20260925T213000
+SUMMARY:Billy vs Elton
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/billy-vs-elton/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1g7cib4@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:LifeFlight Sunshine Coast Family Fun Day
+DESCRIPTION:Join in for a fun-filled family day to celebrate the opening of
+  LifeFlight's Sunshine Coast Visitor
+LOCATION:Marcoola
+URL:https://www.visitsunshinecoast.com/event/6a83f9cc82e82e4e7f6b0b0e/lifef
+ light-sunshine-coast-family-fun-day
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1g1vvqt@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260928
+SUMMARY:Wondai Garden Expo Spring 2026
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/wondai-garden-expo-spring-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-87rh5r@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Vinyl Nights: il Porto – Karlos Dean
+DESCRIPTION:The Peregian Beach Hotel\, family owned and family run. We love
+  our local area and absolutely love welcoming you to our little piece of p
+ aradise here in Peregian Beach.
+LOCATION:Peregian Beach Hotel
+URL:https://peregianbeachhotel.com.au/whats-on/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1yebeeo@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T160000
+DTEND;TZID=Australia/Brisbane:20260926T190000
+SUMMARY:Karaoke & Pizza
+DESCRIPTION:It’s Karaoke time! Our good Friend Rowan from Quizmical Sound
+  & Vision has put together a Karaoke session – Quizmical Karaoke! So\, g
+ et your voice in tune and join us for the fun from 4pm to 7pm – register
+  your name and song from 4pm and be ready to start from 4.30pm\,. This is 
+ all about participation and having fun\, so be prepared to join in. And ou
+ r local Pizza shop – Fratelli’s Pizza is delivering pizza’s from 5pm
+  on with no delivery charge. Menus in the venue\, just phone through your 
+ order.
+LOCATION:Sunshine Brewery
+URL:https://sunshinebrewery.com.au/event/karaoke-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-o3gnr7@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T173000
+DTEND;TZID=Australia/Brisbane:20260926T203000
+SUMMARY:Free Live Entertainment with Lachlan Flanagan
+DESCRIPTION:Join Us for our Free Live Entertainment from 5.30pm to 8.30pm.
+LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
+ , 4575
+URL:https://clubkawana.com.au/event/free-live-entertainment-with-lachlan-fl
+ anagan/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-syg8q6@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T180000
+DTEND;TZID=Australia/Brisbane:20260926T200000
+SUMMARY:HIGH VOLTAGE
+DESCRIPTION:High Voltage – The AC/DC Experience returns on Saturday\, Sep
+ tember 26 \, bringing the raw power\, blistering guitar solos and iconic a
+ nthems that made AC/DC one of the greatest rock bands of all time.
+LOCATION:Norton Music Factory
+URL:https://tickets.oztix.com.au/outlet/event/ee4e0347-23ca-4df4-8cbf-26f99
+ 163095a
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1fdcxgs@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T180000
+DTEND;TZID=Australia/Brisbane:20260926T200000
+SUMMARY:BINGO LOCO
+DESCRIPTION:Bingo Loco: a wild 3-hour show with rave rounds\, dance-offs\, 
+ epic prizes & nonstop energy. Saturday 26th September. PALMVIEW!!! Strap y
+ ourselves\, in because the world's LARGEST BINGO RAVE is heading to the Be
+ nder for a massive event! Grab your tickets now\,
+LOCATION:Banana Bender Pub\, Palmview
+URL:https://www.eventbrite.com.au/e/bingo-loco-palmview-the-banana-bender-p
+ ub-saturday-26th-sept-tickets-1993834364256?aff=oddtdtcreator
+END:VEVENT
+BEGIN:VEVENT
 UID:sunnycoast-844bjh@dothings
 DTSTART;TZID=Australia/Brisbane:20260926T190000
 DTEND;TZID=Australia/Brisbane:20260926T220000
@@ -2108,12 +1902,41 @@ LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
 URL:https://www.caloundrapowerboat.com.au/event/poco-loco/
 END:VEVENT
 BEGIN:VEVENT
-UID:sunnycoast-1bylebm@dothings
+UID:sunnycoast-fcq01f@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T200000
+DTEND;TZID=Australia/Brisbane:20260926T220000
+SUMMARY:Giddy Up Strut feat. The Nashville Jukebox
+DESCRIPTION:Nashville is Calling! 🎸🤠 Get ready to dust off your boots
+  and experience the electric energy of Broadway without leaving town! Welc
+ ome to Giddy Up Strut—the ultimate honky-tonk experience bringing you a 
+ night of cold drinks\, Southern hospitality\, and a crowd ready to party. 
+ This isn't just a concert\; it's a full-blown Nashville takeover. Here is 
+ what’s on the lineup: Live Country Anthems: Sing your heart out with our
+  powerhouse band The Nashville Jukebox as they belt out the biggest hits f
+ rom modern icons like Luke Combs\, Jelly Roll\, Lainey Wilson\, and so muc
+ h more. Boot Scootin’ Boogie: Whether you’re a pro or have two left fe
+ et\, the team at Queens Country & Line Dance will be on the floor to guide
+  you. We’ll have you spinning\, stomping\, and strutting in no time—no
+  expertise required! Non-Stop Vibes: When the band takes a breath\, the pa
+ rty doesn't stop. We'll have all your favourite country bangers keeping th
+ e energy high. Wild Turkey: Grab your complimentary Wild Turkey Drink card
+  upon entry to hand in across the bar. Grab your friends\, get your countr
+ y look on\, grab a cold one\, and get ready for the best night of country 
+ music you’ve ever had. Don’t just listen to the music—live it. We’
+ ll see you at Giddy Up Strut!
+LOCATION:Villa Noosa Hotel\, Noosaville
+URL:https://tickets.oztix.com.au/outlet/event/74a2b0d1-0d26-44fd-8345-2ac84
+ 1c9d628
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-hs2y5u@dothings
 DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260928
 SUMMARY:Saltburn
-DESCRIPTION:
-LOCATION:Peregian Beach Hotel\, Peregian Beach · Coolum + Peregian
+DESCRIPTION:The Peregian Beach Hotel\, family owned and family run. We love
+  our local area and absolutely love welcoming you to our little piece of p
+ aradise here in Peregian Beach.
+LOCATION:Peregian Beach Hotel
 URL:https://peregianbeachhotel.com.au/whats-on/
 END:VEVENT
 BEGIN:VEVENT
@@ -2125,5 +1948,174 @@ DESCRIPTION:Live Music 1.30pm to 4.30pm
 LOCATION:Caloundra Power Boat Club\, 2 Lamerough Parade\, Golden Beach\, QL
  D\, 4551
 URL:https://www.caloundrapowerboat.com.au/event/marco-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-19u98lk@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T103000
+DTEND;TZID=Australia/Brisbane:20260929T113000
+SUMMARY:Zumba With Tianna
+DESCRIPTION:Healthy Sunshine Coast is excited to offer Zumba sessions with 
+ Tianna Balmer in Buderim. Zumba is for all ages and abilities. No skills o
+ r experience is required. Participants are tought basic\, easy to learn mo
+ vements to follow and dance along to at their own pace. Every class feels 
+ like a dance party! Zumba has many benefits\; it targets a variety of musc
+ le groups at once\, so you burn calories while having fun. When in doubt\,
+  dance it out! Every Tuesday: 10.30 am to 11.30 am Provider: Tianna Balmer
+  0421 833 971 zumbawithtianna@gmail.com Bookings: are required - cash on t
+ he day (preferred)\, eftpos on the day or online - www.trybooking.com/CFSC
+ A Cost: $10 general fee or $5 health care/pensioner card Please note: You 
+ must be registered with Healthy Sunshine Coast to join in the activities -
+  registration is one-time\, free and easy. Register here: https://our.suns
+ hinecoast.qld.gov.au/LP=356
+LOCATION:Buderim War Memorial Community Hall\, 1 Main Street
+URL:https://www.bwmca.com.au/events-2-1/2fyzyf3n2bxs2tw-ypdfw-fm9wm-3cw9f-t
+ zf4j-fhg69-lbczg-wdtah-h8wp3-b84b7-pb8nm-cc82k-58jdc-rtnm2
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-nyobzm@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T110000
+DTEND;TZID=Australia/Brisbane:20260930T130000
+SUMMARY:Daytime Concert Series | What’s New Pussycat?
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/whats-new-pussycat/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-q6k2av@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T080000
+DTEND;TZID=Australia/Brisbane:20261001T100000
+SUMMARY:Sunny Coast Women Solopreneurs: Your offsite 2026-27 strategic plan
+ ning day
+DESCRIPTION:Your FY results are in so it’s officially Strategic Planning 
+ Season! Imagine being in the room with equally motivated like-minded indiv
+ iduals ready to make this financial year their best yet. While you work on
+  your own strategy and performance goals\, you get to meet\, mingle\, make
+  new friends and swap ideas. We make it easy\, fun\, engaging and energisi
+ ng. What’s in store: Celebrate the wins of the last 12 months with other
+  people who understand the solopreneur journey The opportunity to check in
+  on your own ambitions as well as where you want to take your enterprise F
+ uture-casting with our Futurist & Strategy Keynote Special Guest Speaker o
+ n self-leadership Special Guest Speaker on financial sustainability Clear 
+ direction and mission for the next 12 months specific to your business Foo
+ d & Fun Arrival morning tea and opportunity to network with other particip
+ ants Optional lunch to mingle with other participants after the workshop T
+ ake-aways Personal workbook Strategy-on-a-page
+LOCATION:Maleny Community Centre Verandah Room
+URL:https://malenycc.org/event/sunny-coast-women-solopreneurs-your-offsite-
+ 2026-27-strategic-planning-day/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1ucblr@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T110000
+DTEND;TZID=Australia/Brisbane:20261001T120000
+SUMMARY:Spring School Holidays – Mr Fye Magic Show
+DESCRIPTION:Tickets Open Monday 3rd August 📅 Thursday 1st October ⏰ 11
+ .00 AM – 12.00 PM 📍 Sunshine Coast Function Centre @ Caloundra RSL Mr
+  Fye the Magician is a very colourful and animated character that is suita
+ ble for kids and adults alike. Relying on his crazy sense of humour and in
+ credible magic skills he will […]
+LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
+ nd\, 4551
+URL:https://caloundrarsl.com.au/event/spring-school-holidays-mr-fye-magic-s
+ how/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-s9velg@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T113000
+DTEND;TZID=Australia/Brisbane:20261001T143000
+SUMMARY:Free Live Entertainment with Billy Guy
+DESCRIPTION:Join Us for Free Live Entertainment on Thursday from 11.30am to
+  2.30pm.
+LOCATION:Club Kawana\, Club Kawana 476 Nicklin Way\, Wurtulla\, Queensland\
+ , 4575
+URL:https://clubkawana.com.au/event/free-live-entertainment-with-billy-guy/
+ 2026-10-01/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1mwlt1e@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T040000
+DTEND;TZID=Australia/Brisbane:20261002T080000
+SUMMARY:APL Poker – $26 Buy In
+DESCRIPTION:Every Thursday Night $26 Buy In \\ $26 Freeze Out Rego: 6pm \\ 
+ Start: 6.30pm \\ Late Rego: 8.30pm
+LOCATION:Caloundra RSL Services Club
+URL:https://caloundrarsl.com.au/event/apl-poker-26-buy-in/2026-10-01/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-116vz4b@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T210000
+DTEND;TZID=Australia/Brisbane:20261002T230000
+SUMMARY:Superficial Pop Party
+DESCRIPTION:We will be spinning all your fav pop anthems all night long at 
+ our Pop Party! Tickets are going to move faster than you can say youcouldw
+ atchmepulluponyourbodylikeitssummertakemyclothesoffinthewatersplasharound 
+ andgetyoublessedlikeholywateridontknowwhatyouwerewaitingforyouknowthativeb
+ een waitingforyou Get yours now! Sounds like: Charli XCX • Chappell Roan
+  • Sabrina Carpenter • Doechii • Addison Rae • Tate McRae • SZA 
+ • Troye Sivan • Olivia Rodrigo • Billie Eilish • Lady Gaga • Gra
+ cie Abrams • Beyoncé • Ariana Grande • Carly Rae Jepsen • ROSÉ 
+ • Dua Lipa • Rihanna • Taylor Swift • JENNIE • MUNA • Miley Cy
+ rus • Caroline Polachek • Robyn • ROSALÍA • BLACKPINK • Selena 
+ Gomez • Britney Spears • Lana Del Rey • Kesha • LISA • Tove Lo 
+ • Remi Wolf • Tinashe • JADE • boygenius • MARINA • Kacey Musg
+ raves + MORE Our events may feature moving and flashing lights. If you hav
+ e photosensitivity or any related concerns\, feel free to reach out to us 
+ with any questions! Please read the Plus One Co. company T&Cs carefully pr
+ ior to purchasing your ticket - https://bit.ly/PurchaseTCs
+LOCATION:Kings Beach Tavern\, Caloundra
+URL:https://tickets.oztix.com.au/outlet/event/89c8a9f1-d35d-484d-bc7d-da52c
+ 19d478a
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1186dlc@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Passport to Malt & Mayhem Oktoberfest style
+DESCRIPTION:Sunshine Coast's ultimate Oktoberfest brewery adventure Grab a 
+ passport and climb aboard for a uniq
+LOCATION:Kuluin
+URL:https://www.visitsunshinecoast.com/event/6a9b707eed9ad8e8213bf3de/passp
+ ort-to-malt-and-mayhem-oktoberfest-style
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-v7u15z@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Mary Valley Rattler presents the Gold Rush Express
+DESCRIPTION:
+LOCATION:Weekend Notes Sunshine Coast
+URL:https://www.weekendnotes.com/mary-valley-rattler-presents-the-gold-rush
+ -express/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-vz00u3@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T080000
+DTEND;TZID=Australia/Brisbane:20261003T140000
+SUMMARY:Wild Women Adventure Race
+DESCRIPTION:**Feel like you’re ready to commit to an adventure?** **Conta
+ ct me now to express interest in partnering up to train for this awesome e
+ vent.** **The Wild
+LOCATION:Peregian Digital Hub\, 253-255 David Low Way\, Peregian Beach\, al
+URL:https://www.meetup.com/sunshine-coast-orienteering-adventure-meetup-gro
+ up/events/315914126/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-9nv2hh@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T160000
+DTEND;TZID=Australia/Brisbane:20261004T180000
+SUMMARY:Yacht Rock Holiday
+DESCRIPTION:Featuring classics from Toto\, Hall & Oates\, Doobie Brothers\,
+  Christopher Cross and many other Yacht Rock favourites!
+LOCATION:Sunshine Beach Surf Club
+URL:https://events.humanitix.com/yacht-rock-holiday-k2g8352c
+END:VEVENT
+BEGIN:VEVENT
+UID:sunnycoast-1o4hz0u@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T170000
+DTEND;TZID=Australia/Brisbane:20261004T190000
+SUMMARY:Burn The Floor
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/burn-the-floor/
 END:VEVENT
 END:VCALENDAR

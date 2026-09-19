@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:FAMILY KARAOKE
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-ym3dao@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:FAMILY KARAOKE
+DESCRIPTION:If you’ve been hunting for family karaoke on the coast that d
+ oesn’t take itself too seriously\, you’ve found it. Beer Garden Belter
+ s is your monthly excuse to grab the fam\, a mic\, butcher a classic\, or 
+ absolutely nail it - all in the laid-back chaos of the Banana Bender beer 
+ garden. Kids\, parents\, mates… everyone’s welcome
+LOCATION:Banana Bender Pub
+URL:http://39936025.hs-sites.com/2026-family-karaoke
+END:VEVENT
+END:VCALENDAR

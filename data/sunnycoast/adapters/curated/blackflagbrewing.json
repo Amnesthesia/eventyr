@@ -3,52 +3,32 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "blackflagbrewing",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
-      "title": "Che Burns With Band",
-      "datetime": "Sat 19 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-19T19:00:00",
+      "title": "thrifter market",
+      "datetime": "Sun 4 Oct",
+      "datetime_iso": "2026-10-04",
       "datetime_end_iso": "",
       "location": "Blackflag Coolum",
-      "link": "https://tickets.oztix.com.au/outlet/event/12a3e2b6-62bb-4d96-ab6f-6e3ee5a55b41",
-      "cost": "See link",
-      "source": "Blackflag Brewing",
-      "description": "Che Burns returns to Blackflag in Coolum, taking over the main venue for a massive hometown show with his full band. Following a run of sold-out performances and a recent Song of the Year win at the Sunshine Coast Music Awards, Che is bringing his biggest live production yet to the Sunshine Coast. Joined by Cora, Happy Valley and Cherry Nova for a night of live music you won’t want to miss.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "live music",
-        "local",
-        "rock"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "raise the flag",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Blackflag Mooloolaba",
       "link": "https://blackflagbrewing.com.au/",
       "cost": "See link",
       "source": "Blackflag Brewing",
-      "description": "With MIKE WEBB, CDOTM - KANZEE, MIXUS B2B SEVII, KENNO - JEEM FREE ENTRY, 18+",
+      "description": "Join the legends from Thrifter for the ultimate long-weekend market. Bringing great beer, incredible pre-loved fashion and the best community vibes together under one roof!",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Social / Meetup",
       "tags": [
-        "dj",
-        "dance",
-        "party"
+        "market",
+        "shopping",
+        "community",
+        "beer",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     }
   ]
 }

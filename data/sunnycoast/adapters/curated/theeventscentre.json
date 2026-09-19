@@ -3,54 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "theeventscentre",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
-    {
-      "title": "Symphonic Horizons | Sunshine Coast Symphony Orchestra",
-      "datetime": "Sun 13 Sep, 2:00 PM",
-      "datetime_iso": "2026-09-13T14:00:00",
-      "datetime_end_iso": "",
-      "location": "The Events Centre, Caloundra",
-      "link": "https://theeventscentre.com.au/event/symphonic-horizons-scso/",
-      "cost": "See link",
-      "source": "The Events Centre, Caloundra",
-      "description": "",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "orchestra",
-        "classical",
-        "symphony"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Suzanne Vega | Flying With Angels Tour",
-      "datetime": "Sun 13 Sep, 7:30 PM",
-      "datetime_iso": "2026-09-13T19:30:00",
-      "datetime_end_iso": "",
-      "location": "The Events Centre, Caloundra",
-      "link": "https://theeventscentre.com.au/event/suzanne-vega-flying-with-angels-tour/",
-      "cost": "See link",
-      "source": "The Events Centre, Caloundra",
-      "description": "",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "live music",
-        "folk",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "The ULTIMATE Magic Show | Illusionist Jonas Jost",
       "datetime": "Wed 23 Sep, 11:00 AM",
@@ -73,28 +28,6 @@
       "creative": true
     },
     {
-      "title": "Bill Bailey | Vaudevillean",
-      "datetime": "Thu 24 Sep, 8:00 PM",
-      "datetime_iso": "2026-09-24T20:00:00",
-      "datetime_end_iso": "",
-      "location": "The Events Centre, Caloundra",
-      "link": "https://theeventscentre.com.au/event/bill-bailey-vaudevillean/",
-      "cost": "See link",
-      "source": "The Events Centre, Caloundra",
-      "description": "",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "comedy",
-        "standup",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Finnegan the Fart Detective",
       "datetime": "Thu 24 Sep, 9:30 AM",
       "datetime_iso": "2026-09-24T09:30:00",
@@ -110,6 +43,28 @@
         "theatre",
         "kids",
         "family",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Sold out : Bill Bailey | Vaudevillean",
+      "datetime": "Thu 24 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-24T20:00:00",
+      "datetime_end_iso": "",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/bill-bailey-vaudevillean/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "comedy",
+        "standup",
         "performance"
       ],
       "social": false,
@@ -141,34 +96,35 @@
       "creative": true
     },
     {
-      "title": "Symphonic Horizons | Sunshine Coast Symphony Orchestra",
-      "datetime": "Sun 13 Sep, 2:00 PM",
-      "datetime_iso": "2026-09-13T14:00:00",
+      "title": "Youth Master Class: Contemporary Physical Theatre Workshop",
+      "datetime": "Tue 29 Sep, 9:30 AM",
+      "datetime_iso": "2026-09-29T09:30:00",
       "datetime_end_iso": "",
       "location": "The Events Centre, Caloundra",
-      "link": "https://theeventscentre.com.au/event/symphonic-horizons-scso/",
+      "link": "https://theeventscentre.com.au/event/ymc-contemporary-physical-theatre-workshop/",
       "cost": "See link",
       "source": "The Events Centre, Caloundra",
       "description": "",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Workshop / Class",
       "tags": [
-        "orchestra",
-        "classical",
-        "symphony"
+        "theatre",
+        "dance",
+        "youth",
+        "performance"
       ],
       "social": false,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
-      "title": "Suzanne Vega | Flying With Angels Tour",
-      "datetime": "Sun 13 Sep, 7:30 PM",
-      "datetime_iso": "2026-09-13T19:30:00",
+      "title": "Daytime Concert Series | What’s New Pussycat?",
+      "datetime": "Wed 30 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-30T11:00:00",
       "datetime_end_iso": "",
       "location": "The Events Centre, Caloundra",
-      "link": "https://theeventscentre.com.au/event/suzanne-vega-flying-with-angels-tour/",
+      "link": "https://theeventscentre.com.au/event/whats-new-pussycat/",
       "cost": "See link",
       "source": "The Events Centre, Caloundra",
       "description": "",
@@ -177,7 +133,73 @@
       "tags": [
         "music",
         "live music",
-        "folk",
+        "concert"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "GREASE THE MUSICAL",
+      "datetime": "Fri 2 Oct, 7:00 PM – Sun 4 Oct",
+      "datetime_iso": "2026-10-02T19:00:00",
+      "datetime_end_iso": "2026-10-04",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/grease-the-musical/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "theatre",
+        "musical",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Vika & Linda | Where Do You Come From?",
+      "datetime": "Fri 2 Oct, 7:30 PM",
+      "datetime_iso": "2026-10-02T19:30:00",
+      "datetime_end_iso": "",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/vika-and-linda/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "concert",
+        "pop"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Burn The Floor",
+      "datetime": "Sun 4 Oct, 5:00 PM",
+      "datetime_iso": "2026-10-04T17:00:00",
+      "datetime_end_iso": "",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/burn-the-floor/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "dance",
         "performance"
       ],
       "social": false,
@@ -222,6 +244,28 @@
         "theatre",
         "kids",
         "family",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Bill Bailey | Vaudevillean",
+      "datetime": "Thu 24 Sep, 8:00 PM",
+      "datetime_iso": "2026-09-24T20:00:00",
+      "datetime_end_iso": "",
+      "location": "The Events Centre, Caloundra",
+      "link": "https://theeventscentre.com.au/event/bill-bailey-vaudevillean/",
+      "cost": "See link",
+      "source": "The Events Centre, Caloundra",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "comedy",
+        "standup",
         "performance"
       ],
       "social": false,

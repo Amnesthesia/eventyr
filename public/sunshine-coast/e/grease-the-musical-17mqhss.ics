@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:GREASE THE MUSICAL
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-17mqhss@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T190000
+DTEND;TZID=Australia/Brisbane:20261002T210000
+SUMMARY:GREASE THE MUSICAL
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/grease-the-musical/
+END:VEVENT
+END:VCALENDAR

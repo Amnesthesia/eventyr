@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Burn The Floor
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1o4hz0u@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T170000
+DTEND;TZID=Australia/Brisbane:20261004T190000
+SUMMARY:Burn The Floor
+DESCRIPTION:
+LOCATION:The Events Centre\, Caloundra
+URL:https://theeventscentre.com.au/event/burn-the-floor/
+END:VEVENT
+END:VCALENDAR

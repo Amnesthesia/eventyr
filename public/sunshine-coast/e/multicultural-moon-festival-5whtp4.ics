@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Multicultural Moon Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-5whtp4@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T160000
+DTEND;TZID=Australia/Brisbane:20260927T210000
+SUMMARY:Multicultural Moon Festival
+DESCRIPTION:A community-focused festival celebrating cultural diversity and
+  the lunar calendar\, featuring performances\, traditional arts\, and comm
+ unal interaction.
+LOCATION:Lot 6\, Mooloolaba Esplanade\, Mooloolaba
+URL:https://brisbanekids.com.au
+END:VEVENT
+END:VCALENDAR

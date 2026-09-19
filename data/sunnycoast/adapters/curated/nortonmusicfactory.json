@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "nortonmusicfactory",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "HIGH VOLTAGE",
@@ -25,6 +25,30 @@
         "band",
         "rock",
         "tribute"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "WOODHILL",
+      "datetime": "Fri 2 Oct, 6:30 PM",
+      "datetime_iso": "2026-10-02T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Norton Music Factory",
+      "link": "https://tickets.oztix.com.au/outlet/event/3abc9ad1-b3c2-4e7f-842f-c3a7cd920120",
+      "cost": "See link",
+      "source": "Norton Music Factory",
+      "description": "WOODHILL RETURN TO NORTON MUSIC FACTORY \n\nHailing from Cronulla in Sydney, WoodHill have built a reputation as one of Australia’s most exciting live rock acts. Their powerful mix of ’90s grunge influences, driving riffs and modern rock has earned them a loyal following, with packed headline shows and fans who keep coming back for more. .",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "live music",
+        "music",
+        "concert",
+        "band",
+        "rock"
       ],
       "social": false,
       "intellectual": false,

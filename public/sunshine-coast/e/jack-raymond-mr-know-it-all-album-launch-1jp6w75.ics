@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jack Raymond – “Mr Know It All” Album Launch
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1jp6w75@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T183000
+DTEND;TZID=Australia/Brisbane:20260925T203000
+SUMMARY:Jack Raymond – “Mr Know It All” Album Launch
+DESCRIPTION:An intimate album launch performance by singer-songwriter Jack 
+ Raymond in a relaxed\, community-oriented local pub setting.
+LOCATION:Mapleton Public House\, Mapleton
+URL:https://gjugg.is/event/jack-raymond-mr-know-it-all-album-launch-mapleto
+ n-pub/37940e80-fa31-4ef5-a441-84a1aee23c10
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Rangebow Festival 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-12th4sw@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T090000
+DTEND;TZID=Australia/Brisbane:20260921T110000
+SUMMARY:Rangebow Festival 2026
+DESCRIPTION:A multi-day festival celebrating diversity\, arts\, and culture
+  through a series of community-focused events across the Sunshine Coast Hi
+ nterland.
+LOCATION:Various sites in Maleny\, Montville\, Flaxton and Mapleton
+URL:https://www.visitsunshinecoast.com/whats-on
+END:VEVENT
+END:VCALENDAR

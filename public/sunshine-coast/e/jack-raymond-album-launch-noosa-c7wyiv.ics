@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jack Raymond - Album Launch (NOOSA)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-c7wyiv@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T183000
+DTEND;TZID=Australia/Brisbane:20261002T203000
+SUMMARY:Jack Raymond - Album Launch (NOOSA)
+DESCRIPTION:Jack Raymond returns to Noosa to celebrate the release of his n
+ ew album\, Mr Know It All.
+LOCATION:Locals in the Loop
+URL:https://localsintheloop.com.au/listing/jack-raymond-album-launch-noosa/
+END:VEVENT
+END:VCALENDAR

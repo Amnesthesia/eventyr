@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Where It Began Art Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1kak5lo@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T100000
+DTEND;TZID=Australia/Brisbane:20260926T160000
+SUMMARY:Where It Began Art Exhibition
+DESCRIPTION:A diverse exhibition hosted by the Artists Alliance Australia f
+ eaturing various creative works in a local gallery setting.
+LOCATION:Caloundra Arts Centre
+URL:https://aaaart.online
+END:VEVENT
+END:VCALENDAR

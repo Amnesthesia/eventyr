@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//sunnycoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Spring School Holidays – Mr Fye Magic Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:sunnycoast-1ucblr@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T110000
+DTEND;TZID=Australia/Brisbane:20261001T120000
+SUMMARY:Spring School Holidays – Mr Fye Magic Show
+DESCRIPTION:Tickets Open Monday 3rd August 📅 Thursday 1st October ⏰ 11
+ .00 AM – 12.00 PM 📍 Sunshine Coast Function Centre @ Caloundra RSL Mr
+  Fye the Magician is a very colourful and animated character that is suita
+ ble for kids and adults alike. Relying on his crazy sense of humour and in
+ credible magic skills he will […]
+LOCATION:Caloundra RSL Services Club\, Caloundra RSL\, Caloundra\, Queensla
+ nd\, 4551
+URL:https://caloundrarsl.com.au/event/spring-school-holidays-mr-fye-magic-s
+ how/
+END:VEVENT
+END:VCALENDAR

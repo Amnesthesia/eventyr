@@ -3,31 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "sunshinebrewery",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
-    {
-      "title": "Safe Sunday Unplugged",
-      "datetime": "Sun 13 Sep, 12:00 PM",
-      "datetime_iso": "2026-09-13T12:00:00",
-      "datetime_end_iso": "2026-09-13T18:00:00",
-      "location": "Sunshine Brewery",
-      "link": "https://sunshinebrewery.com.au/event/safe-sunday-unplugged-2/",
-      "cost": "See link",
-      "source": "Sunshine Brewery",
-      "description": "Every Sunday we are welcoming people to BYO instruments or use the guitar supplied to strum a tune; sing a song or just jam ….",
-      "image": "https://sunshinebrewery.com.au/wp-content/uploads/2026/09/Safe-Sunday-Unplugged-pic.jpg",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "jam",
-        "acoustic"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
     {
       "title": "Low &#038; Slow BBQ Masterclass",
       "datetime": "Sat 26 Sep, 12:00 PM",
@@ -75,6 +53,30 @@
       "intellectual": false,
       "hands_on": true,
       "creative": true
+    },
+    {
+      "title": "Dress up for Oktoberfest Celebrations!",
+      "datetime": "Sat 3 Oct, 11:30 AM",
+      "datetime_iso": "2026-10-03T11:30:00",
+      "datetime_end_iso": "2026-10-03T19:00:00",
+      "location": "Sunshine Brewery",
+      "link": "https://sunshinebrewery.com.au/event/dress-up-for-oktoberfest-celebrations/",
+      "cost": "See link",
+      "source": "Sunshine Brewery",
+      "description": "Sunshine Coast’s Ultimate Oktoberfest Brewery Adventure Grab your passport and climb aboard for a unique Hop-on, Hop-off Beer Journey, visiting seven independent breweries in seven hours. At each stop you will discover a brand-new Oktoberfest inspired beer brewed just for this event. So dust off the Lederhosen, pull on your Dirndl and embrace the Oktoberfest spirit with great beer, delicious food, entertainment and an unforgettable day celebrating independent craft brewing Cost $35 Gives you: 1 a branded wristband which is your access to the hop-on, hop-off buses doing rounds of all seven breweries 2 A lanyard and passport to get stamped at each brewery 3 Freedom to explore at your own pace with Buses doing the rounds on a set timetable. There will be at least four buses doing the circuit continuously over the seven hours, with a set bus timetable to be released, so you can visit as many as you like for as long as you like. Hopefully you make it around all seven and get to sample the beer made specifically to celebrate this event. Visit every brewery, collect all seven stamps and experience the incredible diversity of the Sunshine Coast’s independent brewing scene. The seven breweries involved include: Sunshine Coast Brewery Kunda Park, Sunshine Brewery* Kuluin, 10 Toes Brewing Alexanda Headlands*, Your Mates Brewing Warana, Slipstream Brewing* Birtinya, Moffat Beach Brewing Caloundra and Brouhaha Brewing* Baringa. * = starting point for first bus departures at midday. A set bus departure timetable will be released closer to the event when numbers are determined Get you tickets here",
+      "image": "https://sunshinebrewery.com.au/wp-content/uploads/2026/08/Phil-Nadine-scaled.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "beer",
+        "drinks",
+        "tour",
+        "festival",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     }
   ]
 }
