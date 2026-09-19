@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tour for Visitors with Hearing Loss
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ywbdoo@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T101500
+DTEND;TZID=Australia/Brisbane:20260925T111500
+SUMMARY:Tour for Visitors with Hearing Loss
+DESCRIPTION:Join one of our passionate volunteer guides for a guided tour o
+ f 'Make\, Believe\, Magic: The Worlds of the Jim Henson Company' at GOMA. 
+ Suitable for visitors with cochlear implant\, hearing aids or hearing loss
+ . Assistive listening devices FM System is available and bookings are esse
+ ntial.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/event/tour-for-visitors-with-hearing-loss
+ -2026-09-25
+END:VEVENT
+END:VCALENDAR

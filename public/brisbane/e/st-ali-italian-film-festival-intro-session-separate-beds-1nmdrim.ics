@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ST. ALi Italian Film Festival Intro Session: Separate Beds
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nmdrim@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:ST. ALi Italian Film Festival Intro Session: Separate Beds
+DESCRIPTION:
+LOCATION:Palace Cinemas Brisbane
+URL:https://palacecinemas.com.au/st-ali-italian-film-festival-intro-session
+ -separate-beds
+END:VEVENT
+END:VCALENDAR

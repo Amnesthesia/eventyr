@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "southbank",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Bright Nights by ANZ",
@@ -38,7 +38,7 @@
       "link": "https://www.visitsouthbank.com.au/events/adventure-begins-at-south-bank-these-school-holidays",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Gather the family, grab your Adventure Trail map from the Visitor Information Centre and set off on a self-guided mission around the precinct.",
+      "description": "Gather the family, grab your Adventure Trail map from the Visitor Information Centre and set off on a self-guided mission around the precinct. View the digital map here .",
       "image": "",
       "category": "Community / Other",
       "tags": [
@@ -49,7 +49,7 @@
       ],
       "social": false,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
       "creative": false
     },
     {
@@ -77,9 +77,9 @@
     },
     {
       "title": "Pasta Club at OTTO",
-      "datetime": "Wed 16 Sep – Sun 20 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "2026-09-20",
+      "datetime": "Wed 23 Sep – Sun 27 Sep",
+      "datetime_iso": "2026-09-23",
+      "datetime_end_iso": "2026-09-27",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/pasta-club-at-otto",
       "cost": "See link",
@@ -99,14 +99,14 @@
     },
     {
       "title": "Bluey's Beach Day with Streets Ice Cream",
-      "datetime": "Sat 19 Sep, 10:00 AM – Sun 20 Sep",
-      "datetime_iso": "2026-09-19T10:00:00",
+      "datetime": "Sat 19 Sep – Sun 20 Sep",
+      "datetime_iso": "2026-09-19",
       "datetime_end_iso": "2026-09-20",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/blueys-beach-day-with-streets-ice-cream",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Keep the kiddos entertained these school holidays with a range of free fun, family-friendly activities across the South Bank precinct.",
+      "description": "Keep the kiddos entertained these school holidays with a range of free fun, family-friendly activities at South Bank.",
       "image": "",
       "category": "Community / Other",
       "tags": [
@@ -120,8 +120,8 @@
     },
     {
       "title": "Breakfast Is Coming To Azure",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/breakfast-is-coming-to-azure",
@@ -136,7 +136,7 @@
         "coffee",
         "drinks"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": false
@@ -255,29 +255,6 @@
       "creative": false
     },
     {
-      "title": "Pasifika Made",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/pasifika-made",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Pasifika Made returns to Brisbane Festival in 2026, bringing together Pacific and First Nations artists, cultural practitioners and community across a program of cultural and contemporary live performance, workshops, artist talks, knowledge sharing, live demonstrations and a cultural marketplace experience. Transforming Festival Village into a gathering place for art, culture and connection, Pasifika Made presents Pacific arts through both ancestral practice and a contemporary lens.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "culture",
-        "performance",
-        "workshop",
-        "art"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": true,
-      "creative": true
-    },
-    {
       "title": "This Show is a Joke!",
       "datetime": "Sun 20 Sep – Sat 26 Sep",
       "datetime_iso": "2026-09-20",
@@ -301,55 +278,9 @@
       "creative": true
     },
     {
-      "title": "Strong is the New Pretty",
-      "datetime": "Tue 1 Sep – Sat 19 Sep",
-      "datetime_iso": "2026-09-01",
-      "datetime_end_iso": "2026-09-19",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/strong-is-the-new-pretty",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Suzie Miller, the celebrated Australian playwright behind sell-out smash hit RBG: Of Many, One and international phenomenon Prima Facie, turns her extraordinary talents to the historical formation of the AFLW in this world premiere.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "drama",
-        "sports",
-        "history"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Shel We",
-      "datetime": "Thu 10 Sep – Sun 13 Sep",
-      "datetime_iso": "2026-09-10",
-      "datetime_end_iso": "2026-09-13",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/shel-we",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "What do you get when trees, ghosts and deer combine in a mischievous mix by one of Aotearoa's most ingenious dancers, storytellers and award-winning choreographers? You'll find yourself in the offbeat, playful world of Shel We by Tupua Tigafua.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "dance",
-        "performance",
-        "storytelling",
-        "art"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Brisbane's Biggest Steak Frites",
-      "datetime": "Sun 13 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-13T17:00:00",
+      "datetime": "Sun 20 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-20T17:00:00",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/brisbanes-biggest-steak-frites",
@@ -362,33 +293,10 @@
         "food",
         "dining"
       ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Anastasia The Musical",
-      "datetime": "Wed 16 Sep – Sun 18 Oct",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "2026-10-18",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/anastasia-the-musical",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "ANASTASIA, the spectacular Broadway musical inspired by the beloved film, arrives at the Lyric Theatre, QPAC from 16 September for a strictly limited season!",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "musical",
-        "theatre",
-        "broadway",
-        "performance"
-      ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     },
     {
       "title": "Croc! Lost Giants to Living Legends",
@@ -414,22 +322,67 @@
       "creative": false
     },
     {
-      "title": "The Book of Mormon The Musical",
-      "datetime": "Fri 31 Jul – Sun 4 Oct",
-      "datetime_iso": "2026-07-31",
-      "datetime_end_iso": "2026-10-04",
+      "title": "Sunday Session at El Camino",
+      "datetime": "Sun 27 Sep – Sun 1 Nov",
+      "datetime_iso": "2026-09-27",
+      "datetime_end_iso": "2026-11-01",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/the-book-of-mormon-the-musical",
+      "link": "https://www.visitsouthbank.com.au/events/sunday-session-at-el-camino",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "The New York Times calls it “the best musical of this century”. The Washington Post says, “it is the kind of evening that restores your faith in musicals”. And Entertainment Weekly says, “grade A: the funniest musical of all time”. It’s THE BOOK OF MORMON , the nine-time Tony Award®-winning Best Musical.",
+      "description": "From Sunday September 27 to November 1, settle in every Sunday from 1pm-4pm for live acoustic sessions.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "musical",
+        "music",
+        "live music",
+        "acoustic"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Pride And Prejudice* (*sort of)",
+      "datetime": "Wed 30 Sep, 7:00 PM – Sun 18 Oct",
+      "datetime_iso": "2026-09-30T19:00:00",
+      "datetime_end_iso": "2026-10-18",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/pride-and-prejudice-sort-of",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "‍ Pride and Prejudice* (*sort of) is finally coming to QPAC! Amy Lehpamer, Zoe Ioannou, Kaori Maeda-Judge, Ruby Shannon and Teo Vergara star in the Olivier Award­-winning sensation coming direct from London's West End.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
         "theatre",
+        "performance",
+        "comedy"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "The Box Show",
+      "datetime": "Wed 30 Sep, 10:30 AM – Sat 3 Oct",
+      "datetime_iso": "2026-09-30T10:30:00",
+      "datetime_end_iso": "2026-10-03",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/the-box-show",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "You'll never look at a cardboard box the same way again! Prepare to have your minds blown! Four quirky misfits turn everyday junk – wheelie bins, kitchen scraps, plastic bags – into an electrifying symphony of beats, rhythm and creativity. This high-energy adventure transforms trash into treasure with explosive drumming, dance and laugh-out-loud comedy. An abandoned kitchen becomes a drum set, plastic bags turn into instruments and the human body becomes a sound machine! It's a thrilling celebration of rhythm, imagination and sustainability for all ages. Speaking in 'Rhythmish' – a playful language made of rhythm and gibberish – this show will hook you from start to finish! Join these musical misfits who reinvigorate forgotten junk. Awards Winner – Critic's Pick Award – Sydney Fringe (2018) Weekly Winner – Best of Kids and Family – Adelaide Fringe (2025) Weekly Winner – Best of Kids and Family – Adelaide Fringe (2026)",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "performance",
         "comedy",
-        "performance"
+        "kids",
+        "family"
       ],
       "social": false,
       "intellectual": false,
@@ -483,51 +436,6 @@
       "creative": true
     },
     {
-      "title": "Undying: Abdul-Rahman Abdullah",
-      "datetime": "Thu 13 Aug, 11:00 AM – Sat 7 Nov",
-      "datetime_iso": "2026-08-13T11:00:00",
-      "datetime_end_iso": "2026-11-07",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/undying-abdul-rahman-abdullah",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "art",
-        "sculpture",
-        "exhibition"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Piano Man: Celebrating the Music of Billy Joel",
-      "datetime": "Thu 17 Sep, 7:30 PM",
-      "datetime_iso": "2026-09-17T19:30:00",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/piano-man-celebrating-the-music-of-billy-joel",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "For more than 50 years, American singer, songwriter and pianist Billy Joel has made an indelible mark on the American songbook. With 33 top 40 hits, 5 Grammy Awards and over 160 million albums worldwide, he is one of the most successful artists of all time. This September at the Brisbane Convention & Exhibition Centre, QSO under the baton of Jessica Gethin will celebrate Billy Joel in Piano Man. Directed by Mark Sutcliffe and starring Phil Burton, Alinta Chidzey, Jess Hitchcock and Josh Piterman, Piano Man features new orchestral arrangements by Nicholas Buc covering his greatest hits including Just the Way You Are, She's Always a Woman, New York State of Mind, Only the Good Die Young, Vienna and of course Piano Man. Featuring: Mark Sutcliffe director Nicholas Buc arranger Phil Burton vocalist Alinta Chidzey vocalist Jess Hitchcock vocalist Josh Piterman vocalist *Please note: This concert does not feature Billy Joel in person. Piano Man is presented in association with Make My Mark.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "orchestra",
-        "billyjoel",
-        "music",
-        "tribute"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Eclipse: Pink Floyd Orchestrated - Brisbane",
       "datetime": "Fri 25 Sep, 7:30 PM",
       "datetime_iso": "2026-09-25T19:30:00",
@@ -544,50 +452,6 @@
         "live music",
         "concert",
         "orchestra"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Fragile and Forever: Ceramics from the Queensland Museum Collection",
-      "datetime": "Fri 29 May 2026, 9:30 AM – Wed 11 Aug 2027",
-      "datetime_iso": "2026-05-29T09:30:00",
-      "datetime_end_iso": "2027-08-11",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/fragile-and-forever-ceramics-from-the-queensland-museum-collection",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "ceramics",
-        "history",
-        "museum"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Georgie Carroll - Infectious - Brisbane",
-      "datetime": "Fri 18 Sep, 7:30 PM",
-      "datetime_iso": "2026-09-18T19:30:00",
-      "datetime_end_iso": "",
-      "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/georgie-carroll---infectious---brisbane",
-      "cost": "See link",
-      "source": "Visit South Bank (South Bank Parklands)",
-      "description": "",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "comedy",
-        "performance",
-        "live"
       ],
       "social": false,
       "intellectual": false,
@@ -643,8 +507,8 @@
     },
     {
       "title": "$30 La Taco Vida At Poca Madre",
-      "datetime": "Mon 14 Sep",
-      "datetime_iso": "2026-09-14",
+      "datetime": "Mon 21 Sep",
+      "datetime_iso": "2026-09-21",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/30-la-taco-vida-at-poca-madre",
@@ -654,9 +518,10 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "lunch",
-        "tacos",
-        "mexican"
+        "food",
+        "dining",
+        "drinks",
+        "cocktails"
       ],
       "social": false,
       "intellectual": false,
@@ -665,9 +530,9 @@
     },
     {
       "title": "Bottomless Weekends Banquet Experience At Ma Pa Me",
-      "datetime": "Sat 19 Sep – Sun 20 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "2026-09-20",
+      "datetime": "Sat 26 Sep – Sun 27 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "2026-09-27",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/bottomless-weekends-banquet-experience-at-ma-pa-me",
       "cost": "See link",
@@ -687,9 +552,9 @@
     },
     {
       "title": "$30 Steak Salad At Tipplers Tap",
-      "datetime": "Thu 17 Sep – Fri 18 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "2026-09-18",
+      "datetime": "Thu 24 Sep – Fri 25 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "2026-09-25",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/30-steak-salad-at-tipplers-tap",
       "cost": "See link",
@@ -701,16 +566,16 @@
         "food",
         "dining"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
       "title": "$38 Steak And Taters At Tippler's Tap",
-      "datetime": "Thu 17 Sep – Fri 18 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "2026-09-18",
+      "datetime": "Thu 24 Sep – Fri 25 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "2026-09-25",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/38-steak-and-taters-at-tipplers-tap",
       "cost": "See link",
@@ -722,16 +587,16 @@
         "food",
         "dining"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": false
     },
     {
       "title": "$19 Lunch Special At River Quay Fish",
-      "datetime": "Mon 14 Sep – Fri 18 Sep",
-      "datetime_iso": "2026-09-14",
-      "datetime_end_iso": "2026-09-18",
+      "datetime": "Mon 21 Sep – Fri 25 Sep",
+      "datetime_iso": "2026-09-21",
+      "datetime_end_iso": "2026-09-25",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/19-lunch-special-at-river-quay-fish",
       "cost": "See link",
@@ -740,8 +605,7 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "lunch",
-        "seafood",
+        "food",
         "dining"
       ],
       "social": false,
@@ -751,9 +615,9 @@
     },
     {
       "title": "Ma Pa Me's $19 Lunch Menu",
-      "datetime": "Mon 14 Sep – Fri 18 Sep",
-      "datetime_iso": "2026-09-14",
-      "datetime_end_iso": "2026-09-18",
+      "datetime": "Mon 21 Sep – Fri 25 Sep",
+      "datetime_iso": "2026-09-21",
+      "datetime_end_iso": "2026-09-25",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/ma-pa-mes-19-lunch-menu",
       "cost": "See link",
@@ -762,9 +626,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "lunch",
-        "dining",
-        "food"
+        "food",
+        "dining"
       ],
       "social": false,
       "intellectual": false,
@@ -773,8 +636,8 @@
     },
     {
       "title": "Start Your Week Right With $12 Pides at Ahmet's",
-      "datetime": "Mon 14 Sep",
-      "datetime_iso": "2026-09-14",
+      "datetime": "Mon 21 Sep",
+      "datetime_iso": "2026-09-21",
       "datetime_end_iso": "",
       "location": "South Bank Parklands, Grey St, South Bank",
       "link": "https://www.visitsouthbank.com.au/events/pides-at-ahmets",
@@ -784,9 +647,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "lunch",
-        "turkish",
-        "food"
+        "food",
+        "dining"
       ],
       "social": false,
       "intellectual": false,
@@ -825,7 +687,7 @@
       "link": "https://www.visitsouthbank.com.au/events/adventure-begins-at-south-bank-these-school-holidays",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Gather the family, grab your Adventure Trail map from the Visitor Information Centre and set off on a self-guided mission around the precinct.",
+      "description": "Gather the family, grab your Adventure Trail map from the Visitor Information Centre and set off on a self-guided mission around the precinct. View the digital map here .",
       "image": "",
       "category": "Community / Other",
       "tags": [
@@ -836,28 +698,50 @@
       ],
       "social": false,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
       "creative": false
     },
     {
-      "title": "Croc! Lost Giants to Living Legends",
-      "datetime": "Fri 24 Oct 2025 – Mon 5 Oct 2026",
-      "datetime_iso": "2025-10-24",
-      "datetime_end_iso": "2026-10-05",
+      "title": "Sunday Social",
+      "datetime": "Sun 5 Oct 2025, 2:00 PM – Thu 31 Dec 2026",
+      "datetime_iso": "2025-10-05T14:00:00",
+      "datetime_end_iso": "2026-12-31",
       "location": "South Bank Parklands, Grey St, South Bank",
-      "link": "https://www.visitsouthbank.com.au/events/croc-lost-giants-to-living-legends",
+      "link": "https://www.visitsouthbank.com.au/events/sunday-social",
       "cost": "See link",
       "source": "Visit South Bank (South Bank Parklands)",
-      "description": "Walk alongside one of the planet’s most powerful and fascinating animals, on a journey stretching back over 130million years with Queensland Museum’s Croc! Lost Giants to Living Legends exhibition.",
+      "description": "Sunday Social is the perfect weekend wind down featuring free, laid back, live music and epic picnic eats by the river!",
       "image": "",
-      "category": "Arts / Exhibition",
+      "category": "Concert / Music",
       "tags": [
-        "museum",
-        "nature",
-        "history",
-        "science"
+        "music",
+        "live music",
+        "food",
+        "dining"
       ],
-      "social": false,
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "South Bank Guided Tours",
+      "datetime": "Sun 9 Nov 2025, 10:00 AM – Sun 28 Feb 2027",
+      "datetime_iso": "2025-11-09T10:00:00",
+      "datetime_end_iso": "2027-02-28",
+      "location": "South Bank Parklands, Grey St, South Bank",
+      "link": "https://www.visitsouthbank.com.au/events/south-bank-guided-tours",
+      "cost": "See link",
+      "source": "Visit South Bank (South Bank Parklands)",
+      "description": "Get ready for an unforgettable adventure through one of Brisbane's beloved precincts. Join us for a FREE 90-minute guided tour of South Bank and uncover the fascinating stories and stunning sights of this iconic urban oasis.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "tour",
+        "history",
+        "outdoor"
+      ],
+      "social": true,
       "intellectual": true,
       "hands_on": false,
       "creative": false

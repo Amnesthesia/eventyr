@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Join author Anne Freeman in conversation with Sarah Todman to 
+ celebrate the release of The Time After Now
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-9t64y5@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T183000
+DTEND;TZID=Australia/Brisbane:20261001T203000
+SUMMARY:Join author Anne Freeman in conversation with Sarah Todman to celeb
+ rate the release of The Time After Now
+DESCRIPTION:Join us on Thursday 1 October for a special author event with A
+ nne Freeman and Sarah Todman
+LOCATION:Books@Stones\, Stones Corner\, QLD 4120
+URL:https://events.humanitix.com/books-stones-event-the-time-after-now-by-a
+ nne-freeman
+END:VEVENT
+END:VCALENDAR

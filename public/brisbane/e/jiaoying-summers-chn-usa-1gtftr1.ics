@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jiaoying Summers (CHN/USA)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1gtftr1@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T180000
+DTEND;TZID=Australia/Brisbane:20260929T200000
+SUMMARY:Jiaoying Summers (CHN/USA)
+DESCRIPTION:Jiaoying Summers is one of comedy's fastest-rising global stars
+ \, blending fearless\, dark humor with deeply personal storytelling and a 
+ refreshingly international perspective. Born in China and now based in Aus
+ tin\, Texas\, Jiaoying transforms cultural clashes\, immigrant identity\, 
+ marriage\, and motherhood into razor-sharp comedy that resonates with audi
+ ences around the world.With over 2 billion views across social media and a
+  fanbase of more than 5 million followers\, Jiaoying has become one of...
+LOCATION:The Tivoli\, 52 Costin St
+URL:https://thetivoli.com.au/events/jiaoying-summers
+END:VEVENT
+END:VCALENDAR

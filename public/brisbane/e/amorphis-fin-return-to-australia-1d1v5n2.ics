@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Amorphis (FIN) Return to Australia
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1d1v5n2@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T193000
+DTEND;TZID=Australia/Brisbane:20260924T213000
+SUMMARY:Amorphis (FIN) Return to Australia
+DESCRIPTION:Find Amorphis (FIN) Return to Australia tickets at www.thetriff
+ id.com.au | Videos\, biography\, tour dates\, performance times. VIP packa
+ ges available.
+LOCATION:The Triffid Fortitude Valley
+URL:https://thetriffid.com.au/all-events/amorphis-tickets-ae24931
+END:VEVENT
+END:VCALENDAR

@@ -3,11 +3,11 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "thelordalfred",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
-      "title": "Sparkle & Sip",
+      "title": "Phins up for Finals | Sparkle & Sip",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
@@ -15,19 +15,66 @@
       "link": "https://thelordalfred.com.au/events/sparkle-sip/",
       "cost": "See link",
       "source": "The Lord Alfred",
-      "description": "The NRL finals are here and we’re getting ready to cheer in style.Join us at The Lord Alfred for a jersey bedazzle session hosted by Eleyna Benzenati, aka Your Sports Girlie. Bring your NRL jersey and get it game-day ready with plenty of sparkle for the finals game.For $45pp, you’ll get all the bedazzling items you need, grazing boards to share and a drink on arrival.Bookings are essential, so grab your mates and get ready to sparke and sip.",
+      "description": "Phins Up for Finals | Sunday 20 September | From 12pmThe Dolphins are Prelim finals bound for the first time, and we’re getting ready to cheer them on in style.Join us at The Lord Alfred for a jersey bedazzle session hosted by Eleyna Benzenati, aka Your Sports Girlie. Bring your jersey and get it game-day ready with plenty of sparkle before the prelim finals game at Suncorp Stadium.For $45pp, you’ll get all the bedazzling items you need, grazing boards to share and a drink on arrival.Bookings are essential, so grab your mates and get your Phins up.",
       "image": "https://thelordalfred.com.au/events/sparkle-sip/",
       "category": "Workshop / Class",
       "tags": [
         "craft",
-        "nrl",
-        "social",
-        "sports"
+        "fashion",
+        "design",
+        "food",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
       "creative": true
+    },
+    {
+      "title": "AFL GRAND FINAL",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "The Lord Alfred",
+      "link": "https://thelordalfred.com.au/events/afl-grand-final/",
+      "cost": "See link",
+      "source": "The Lord Alfred",
+      "description": "There are some games you watch from the couch, and then there’s the AFL Grand Final.Join us at Lord Alfred as we show the game live and loud on our massive screen, with chef’s specials coming out of the kitchen and a full pub ready to get around every moment!We’re open from 11am, so come in early, grab a feed and find your spot before the first siren.Big game. Big screen. Proper pub atmosphere. See you on Caxton Street.",
+      "image": "https://thelordalfred.com.au/events/afl-grand-final/",
+      "category": "Community / Other",
+      "tags": [
+        "sport",
+        "food",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "NRL GRAND FINAL",
+      "datetime": "Sun 4 Oct",
+      "datetime_iso": "2026-10-04",
+      "datetime_end_iso": "",
+      "location": "The Lord Alfred",
+      "link": "https://thelordalfred.com.au/events/nrl-grand-final/",
+      "cost": "See link",
+      "source": "The Lord Alfred",
+      "description": "There’s watching the footy, and then there’s watching a Grand Final on Caxton Street.We’re putting the NRL Grand Final up live and loud on the big screen and settling in for the biggest game of the season!Expect plenty of noise, chef’s specials and a pub full of fans hanging on every set, line break and trip to the try line.Whether your side has made the final or you’re just here for a cracking game of rugby league, this is the kind of Sunday that deserves more than the lounge room.Get down to Lord Alfred, find your colours and settle in for the full 80.",
+      "image": "https://thelordalfred.com.au/events/nrl-grand-final/",
+      "category": "Community / Other",
+      "tags": [
+        "sport",
+        "food",
+        "drinks",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
     }
   ]
 }

@@ -3,51 +3,30 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "unisq",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
-      "title": "Soil Management Training",
-      "datetime": "Thu 17 Sep – Fri 18 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "2026-09-18",
-      "location": "University of Southern Queensland, Warwick QLD",
-      "link": "https://unisq.edu.au/",
+      "title": "Weather Wise Workshop",
+      "datetime": "Thu 1 Oct, 8:30 AM",
+      "datetime_iso": "2026-10-01T08:30:00",
+      "datetime_end_iso": "",
+      "location": "University of Southern Queensland, Condobolin NSW",
+      "link": "https://cwfs.org.au/whats-on/weatherwise-workshop",
       "cost": "See link",
       "source": "University of Southern Queensland",
-      "description": "",
+      "description": "Climate and weather information is everywhere and farmers rely on forecasts to make critical farm decisions every day. This practical workshop has weather experts talk through some of the key factors to consider when reading weather apps and using support tools. We will look at regional climate tre",
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "agriculture",
-        "soil",
-        "training"
+        "science",
+        "nature",
+        "environment",
+        "technology"
       ],
       "social": false,
       "intellectual": true,
       "hands_on": true,
-      "creative": false
-    },
-    {
-      "title": "Goat supply chain tour",
-      "datetime": "Tue 15 Sep – Sat 19 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "2026-09-19",
-      "location": "University of Southern Queensland, Cunnamulla QLD / Condobolin NSW",
-      "link": "https://unisq.edu.au/",
-      "cost": "See link",
-      "source": "University of Southern Queensland",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "agriculture",
-        "livestock",
-        "tour"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
       "creative": false
     },
     {
@@ -75,11 +54,11 @@
       "creative": false
     },
     {
-      "title": "Rural First Aid Training - Winton",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "title": "Rural First Aid Training - Yaraka",
+      "datetime": "Sat 3 Oct",
+      "datetime_iso": "2026-10-03",
       "datetime_end_iso": "",
-      "location": "University of Southern Queensland, Winton, QLD",
+      "location": "University of Southern Queensland, Yaraka, QLD",
       "link": "https://unisq.edu.au/",
       "cost": "See link",
       "source": "University of Southern Queensland",
@@ -87,21 +66,19 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "first aid",
-        "training",
-        "safety"
+        "community"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": true,
       "creative": false
     },
     {
-      "title": "Rural First Aid Training - Boulia",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "title": "Rural First Aid Training - Jundah",
+      "datetime": "Fri 2 Oct",
+      "datetime_iso": "2026-10-02",
       "datetime_end_iso": "",
-      "location": "University of Southern Queensland, Boulia, QLD",
+      "location": "University of Southern Queensland, Jundah, QLD",
       "link": "https://unisq.edu.au/",
       "cost": "See link",
       "source": "University of Southern Queensland",
@@ -109,12 +86,10 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "first aid",
-        "training",
-        "safety"
+        "community"
       ],
       "social": false,
-      "intellectual": true,
+      "intellectual": false,
       "hands_on": true,
       "creative": false
     }

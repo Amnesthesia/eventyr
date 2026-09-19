@@ -3,50 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "creativemornings",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
-    {
-      "title": "Feel it, Write it.",
-      "datetime": "Wed 16 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-16T19:00:00",
-      "datetime_end_iso": "",
-      "location": "Creative Mornings Brisbane",
-      "link": "https://creativemornings.com/talks/feel-it-write-it-c6aea832-3903-4f2b-a7c1-0dc5acd12b17",
-      "cost": "See link",
-      "source": "Creative Mornings Brisbane",
-      "description": "When we write, we create spaces for ourselves where we can retreat – to reflect, to muse, and to become aware of ourselves. Because writing helps to escape f...",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "writing"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "☀️ The World Wide Wander 2026: Walk Your Way to Insight, Ideas and Intention",
-      "datetime": "Fri 18 Sep, 12:00 PM",
-      "datetime_iso": "2026-09-18T12:00:00",
-      "datetime_end_iso": "",
-      "location": "Creative Mornings Brisbane",
-      "link": "https://creativemornings.com/talks/the-world-wide-wander-2026-walk-your-way-to-insight-ideas-and-intention",
-      "cost": "See link",
-      "source": "Creative Mornings Brisbane",
-      "description": "For this special FieldTrip, we're joining Walkshop Four of Street Wisdom's World Wide Wander 2026, with CreativeMornings' very own founder, Tina Roth Eisenbe...",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "walking",
-        "nature"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": true,
-      "creative": false
-    },
     {
       "title": "The Creative Perks of Motherhood",
       "datetime": "Tue 22 Sep, 10:00 AM",
@@ -116,6 +75,27 @@
       "creative": false
     },
     {
+      "title": "RESCHEDULED: Feel it, Write it.",
+      "datetime": "Wed 23 Sep, 4:00 PM",
+      "datetime_iso": "2026-09-23T16:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/feel-it-write-it-c6aea832-3903-4f2b-a7c1-0dc5acd12b17",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "When we write, we create spaces for ourselves where we can retreat – to reflect, to muse, and to become aware of ourselves. Because writing helps to escape f...",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "writing",
+        "literature"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": true
+    },
+    {
       "title": "Connect + Reflect: A CreativeMornings Mixer on September's Theme: CURRENT",
       "datetime": "Thu 24 Sep, 4:00 PM",
       "datetime_iso": "2026-09-24T16:00:00",
@@ -133,6 +113,28 @@
       ],
       "social": true,
       "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Make it make sense: How AI is changing marketing",
+      "datetime": "Mon 28 Sep, 3:00 PM",
+      "datetime_iso": "2026-09-28T15:00:00",
+      "datetime_end_iso": "",
+      "location": "Creative Mornings Brisbane",
+      "link": "https://creativemornings.com/talks/make-it-make-sense-how-ai-is-changing-marketing",
+      "cost": "See link",
+      "source": "Creative Mornings Brisbane",
+      "description": "Your traffic is acting weird. People aren't clicking through ten blue links anymore — they're asking ChatGPT, and it just answers. No click, no visit, no ide...",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "technology",
+        "science",
+        "writing"
+      ],
+      "social": false,
+      "intellectual": true,
       "hands_on": false,
       "creative": false
     }

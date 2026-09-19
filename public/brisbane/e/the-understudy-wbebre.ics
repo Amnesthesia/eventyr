@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Understudy
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-wbebre@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T120000
+DTEND;TZID=Australia/Brisbane:20260927T140000
+SUMMARY:The Understudy
+DESCRIPTION:Find OG's play the hits of John Paul Young and Stevie Wright ti
+ ckets at www.thefortitude.com.au | Videos\, biography\, tour dates\, perfo
+ rmance times. VIP packages available.
+LOCATION:Fortitude Music Hall\, 66 Doggett St
+URL:https://thefortitude.com.au/all-events/the-understudy-tickets-ae1656620
+END:VEVENT
+END:VCALENDAR

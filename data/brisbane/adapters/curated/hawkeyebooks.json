@@ -3,100 +3,9 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "hawkeyebooks",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
-    {
-      "title": "Join author Greg Bourke for the 'Is There a Book in You?' Panel at the 2026 Whitsundays Writers Festival",
-      "datetime": "Sun 13 Sep, 11:00 AM",
-      "datetime_iso": "2026-09-13T11:00:00",
-      "datetime_end_iso": "",
-      "location": "Whitsunday Marine Club, Cannonvale, QLD",
-      "link": "https://www.whitsundayswriters.com/events/2026-tickets/",
-      "cost": "See link",
-      "source": "Hawkeye Publishing",
-      "description": "Join us for Stories by the Sea, 3pm–4:30pm — a free community event and the perfect way to finish the Festival.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "literature",
-        "writing",
-        "books",
-        "storytelling",
-        "community"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Meet author Gillian Wills",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Wynnum Library, Wynnum, QLD",
-      "link": "https://thecommunityleader.com.au/events/meet-the-author-gillian-wills/",
-      "cost": "See link",
-      "source": "Hawkeye Publishing",
-      "description": "What’s On Meet the Author: Gillian Wills Step into the world of Gillian Wills’ novel Big Music, a thrilling blend of melody, mayhem, and mystery set in a college for rock and classical musicians.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "literature",
-        "books",
-        "music",
-        "culture"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Celebrate the release of The Wall Within with author Laura Morris",
-      "datetime": "Sun 13 Sep, 11:30 AM",
-      "datetime_iso": "2026-09-13T11:30:00",
-      "datetime_end_iso": "",
-      "location": "Canteen Kitchen + Bar, Coolum Beach, QLD 4573",
-      "link": "https://www.trybooking.com/events/landing/1608584",
-      "cost": "See link",
-      "source": "Hawkeye Publishing",
-      "description": "Australia lost the war. Now Tess must face spirits from the past, a mysterious new boy in town and The Wall. The Wall Within, by Laura Morris is a story of survival, friendship, and hidden power - where one girl’s discovery could unravel everything. Laura will be in conversation with local legends, Roz Mackay and Pat Cavanagh. Attendees can look forward to a bookish afternoon of chats, readings, bedazzling and “shimmering” as we journey into the world of Tess and Raze. Buy some delicious food and enjoy some drinks at Canteen Kitchen + Bar, and join Laura as she shares her journey to becoming a YA debut author. Age attendance: 13+ About Laura: Laura Morris is an author and Coolum local. Her writing has appeared in QLD Writers’ Centre’s Pen and Pixel magazine, and her short story Tarnished is published in the 2025 Sydney Hammond Memorial Short Story Competition anthology. Her debut novel, The Wall Within (published by Hawkeye Publishing), made the shortlist of QWC’s Publishable program in 2022, and the longlist of the Hawkeye Manuscript Development Prize for 2025. Laura has a Bachelor of Arts from the University of Qld and a Graduate Certificate in Creative Writing from the University of the Sunshine Coast. She grew up in Ipswich and Brisbane, and now lives on the Sunshine Coast with her family. She loves writing, gardening, Game Fit Tennis, and Pickleball. Follow LauraMorrisWriter on TikTok, Instagram and Facebook.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "books",
-        "launch",
-        "literature"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Meet author Gillian Wills",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Eltham Central Pavilion, Eltham Central Park, Eltham, VIC",
-      "link": "https://nillumbiku3a.org.au/event/guest6/",
-      "cost": "See link",
-      "source": "Hawkeye Publishing",
-      "description": "Listen to writer and musician Gillian Wills in conversation with artist Mostyn Bramley-Moore. They will discuss Gillian's horse-whisperer of a memoir Elvis and Me published by Hawkeye. Gillian's book will be available for purchase. There will also be a performance by classical guitarists Tristan and Aeden Wood.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "literature",
-        "music",
-        "author"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Anne Freeman Stories with spice: Bypass the cringe and bring the smoulder writing workshop",
       "datetime": "Sun 20 Sep, 1:00 PM",
@@ -117,6 +26,28 @@
       "social": false,
       "intellectual": true,
       "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Casey Nott Discusses Five Stages of Grace",
+      "datetime": "Sun 20 Sep, 1:00 PM",
+      "datetime_iso": "2026-09-20T13:00:00",
+      "datetime_end_iso": "",
+      "location": "Emerald Hill Library, South Melbourne, VIC",
+      "link": "https://events.humanitix.com/anne-freeman-stories-with-spice",
+      "cost": "See link",
+      "source": "Hawkeye Publishing",
+      "description": "Join award-winning contemporary fiction writer Anne Freeman in a spirited exploration of what makes a successful spicy scene and how to craft one.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "writing",
+        "literature",
+        "books"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
       "creative": true
     },
     {
@@ -222,6 +153,94 @@
       "tags": [
         "literature",
         "books"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "50 Ways to Die in the Ocean w/ Eileen O'Hely Reading with Puppets & Ocean-Themed Craft",
+      "datetime": "Mon 28 Sep",
+      "datetime_iso": "2026-09-28",
+      "datetime_end_iso": "",
+      "location": "Mad Hatters Bookshop, Manly QLD",
+      "link": "https://madhattersbookshop.com.au/p/50-ways-to-die-in-space-w-eileen-o-hely",
+      "cost": "See link",
+      "source": "Hawkeye Publishing",
+      "description": "Buy 50 Ways to Die in the Ocean w/ Eileen O'Hely by from your local bookstore. 50 Ways to Die in the Ocean w/ Eileen O'HelyReading with Puppets &a...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "books",
+        "kids",
+        "family",
+        "craft"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Celebrate the release of Wooden Ships and Iron Men with author Peter Long",
+      "datetime": "Tue 29 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-29T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Books@Stones, Stones Corner, QLD 4120",
+      "link": "https://events.humanitix.com/books-stones-event-wooden-ships-and-iron-men-by-peter-long",
+      "cost": "See link",
+      "source": "Hawkeye Publishing",
+      "description": "Join us on Tuesday 29 September for a special bookshop event with Peter Long, author of Wooden Ships and Iron Men",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "books",
+        "literature",
+        "history"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Join Anne Freeman for her 'Brief but Brilliant': The Art of Short Storytelling Workshop",
+      "datetime": "Wed 30 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-30T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Queensland Writers Centre, South Brisbane, QLD, 4101",
+      "link": "https://queenslandwriters.org.au/events/brief-but-brilliant-short-storytelling-with-anne-freeman",
+      "cost": "See link",
+      "source": "Hawkeye Publishing",
+      "description": "The art of writing brilliant but succinct short fiction. Book your place .",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "writing",
+        "literature",
+        "books"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Join author Anne Freeman in conversation with Sarah Todman to celebrate the release of The Time After Now",
+      "datetime": "Thu 1 Oct, 6:30 PM",
+      "datetime_iso": "2026-10-01T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Books@Stones, Stones Corner, QLD 4120",
+      "link": "https://events.humanitix.com/books-stones-event-the-time-after-now-by-anne-freeman",
+      "cost": "See link",
+      "source": "Hawkeye Publishing",
+      "description": "Join us on Thursday 1 October for a special author event with Anne Freeman and Sarah Todman",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "books",
+        "literature"
       ],
       "social": true,
       "intellectual": true,

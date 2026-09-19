@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:History of British Rock of the 60's & 70's
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ycz086@dothings
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:History of British Rock of the 60's & 70's
+DESCRIPTION:History of British Rock takes you through the music of the earl
+ y 60’s all the way through to the late 70’s
+LOCATION:Redcliffe Entertainment Centre
+URL:https://www.redcliffeentertainmentcentre.com.au/Events/History-of-Briti
+ sh-Rock-2026
+END:VEVENT
+END:VCALENDAR

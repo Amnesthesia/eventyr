@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Fishbone - In Your Face 40th Anniversary Australian Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-tyq1tm@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T200000
+DTEND;TZID=Australia/Brisbane:20260925T220000
+SUMMARY:Fishbone - In Your Face 40th Anniversary Australian Tour
+DESCRIPTION:Find Fishbone - In Your Face 40th Anniversary Australian Tour t
+ ickets at www.thetriffid.com.au | Videos\, biography\, tour dates\, perfor
+ mance times. VIP packages available.
+LOCATION:The Triffid Fortitude Valley
+URL:https://thetriffid.com.au/all-events/fishbone-tickets-ae34
+END:VEVENT
+END:VCALENDAR

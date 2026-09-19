@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art Day Camp
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-j1c70q@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T100000
+DTEND;TZID=Australia/Brisbane:20261002T120000
+SUMMARY:Art Day Camp
+DESCRIPTION:Join us for a fun-filled day at Logan Art Gallery this school h
+ olidays for a range of exciting and educational activities inspired by art
+  and science.
+LOCATION:Logan Art Gallery
+URL:https://www.loganarts.com.au/event/art-day-camp-2/
+END:VEVENT
+END:VCALENDAR

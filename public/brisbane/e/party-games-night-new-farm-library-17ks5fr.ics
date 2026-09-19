@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:🥳Party Games Night @ New Farm Library🎉
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-17ks5fr@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T183000
+DTEND;TZID=Australia/Brisbane:20260925T223000
+SUMMARY:🥳Party Games Night @ New Farm Library🎉
+DESCRIPTION:Join the fun and laughter playing all types of party games. Bri
+ ng your favorite party games to share. Games include: * Jackbox Naughty Pa
+ ck(18+) * Trivial Pursuit X Adult
+LOCATION:New Farm Library\, 135 Sydney St\, New Farm\, QL\, New Farm\, QL
+URL:https://www.meetup.com/brisbane-social-geeks/events/316559184/
+END:VEVENT
+END:VCALENDAR

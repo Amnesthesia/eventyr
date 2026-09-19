@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Americana Tailgate Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1i0fyao@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T040000
+DTEND;TZID=Australia/Brisbane:20260926T080000
+SUMMARY:The Americana Tailgate Tour
+DESCRIPTION:It'll be a cosmic evening of rusty tunes and bad habits... but 
+ no crappy puns - I used them all up then. Don't miss Hana and Jessie-Lee h
+ ead north for the spring with special guests Rusty Pickups and the Cosmic 
+ Cowboy & The Incognitos [button link="https://events.humanitix.com/hana-an
+ d-jessie-lee-rusty-pickups-and-cosmic-cowboy-and-the-incognitos-the-cave-i
+ nn"]Tickets[/button]
+LOCATION:The Cave Inn\, 47 Balaclava St\, Woolloongabba\, Qld\, 4102\, 47 B
+ alaclava St\, Woolloongabba\, QLD\, Australia
+URL:https://thecaveinn.net/events/the-americana-tailgate-tour-cave-inn/
+END:VEVENT
+END:VCALENDAR

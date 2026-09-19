@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Movie Club Preview: Heart of The Beast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1g0rghr@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Movie Club Preview: Heart of The Beast
+DESCRIPTION:
+LOCATION:Palace Cinemas Brisbane
+URL:https://palacecinemas.com.au/movie-club-preview-heart-of-the-beast
+END:VEVENT
+END:VCALENDAR

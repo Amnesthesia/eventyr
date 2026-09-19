@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Essay Club No.8
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-h10frj@dothings
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Essay Club No.8
+DESCRIPTION:Note: Registrations open 10am Friday 28 August 2026. Everyone i
+ s welcome but space is limited—prompt registration is essential. Join us
+  at the IMA for Essay…
+LOCATION:Institute of Modern Art\, 420 Brunswick St
+URL:https://www.ima.org.au/ima-events/essay-club-no-8-holly-eddington-on-si
+ x-years/
+END:VEVENT
+END:VCALENDAR

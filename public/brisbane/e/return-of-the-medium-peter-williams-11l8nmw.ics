@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Return of the Medium – Peter Williams
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-11l8nmw@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T190000
+DTEND;TZID=Australia/Brisbane:20261003T210000
+SUMMARY:Return of the Medium – Peter Williams
+DESCRIPTION:Popular psychic-medium and author Peter Williams\, returns to t
+ he stage with energy\, laughter and heartfelt respect.
+LOCATION:Ipswich Civic Centre
+URL:https://www.ipswichciviccentre.com.au/event/return-of-the-medium-peter-
+ williams/
+END:VEVENT
+END:VCALENDAR

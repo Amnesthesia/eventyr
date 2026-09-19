@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brief But Brilliant: Short Storytelling with Anne Freeman
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dg8yk9@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T180000
+DTEND;TZID=Australia/Brisbane:20260930T193000
+SUMMARY:Brief But Brilliant: Short Storytelling with Anne Freeman
+DESCRIPTION:The art of writing brilliant but succinct short fiction. Book y
+ our place .
+LOCATION:Queensland Writers Centre\, Stanley Place
+URL:https://www.queenslandwriters.org.au/events/brief-but-brilliant-short-s
+ torytelling-with-anne-freeman
+END:VEVENT
+END:VCALENDAR

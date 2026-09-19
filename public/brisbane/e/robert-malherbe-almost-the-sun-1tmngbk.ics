@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Robert Malherbe: Almost the sun
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1tmngbk@dothings
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261025
+SUMMARY:Robert Malherbe: Almost the sun
+DESCRIPTION:Jan Murphy Gallery is an art gallery representing over 30 estab
+ lished and emerging contemporary Australian artists. Founded in 1995 in Br
+ isbane\, Australia.
+LOCATION:Jan Murphy Gallery Fortitude Valley
+URL:https://janmurphygallery.com.au/#
+END:VEVENT
+END:VCALENDAR

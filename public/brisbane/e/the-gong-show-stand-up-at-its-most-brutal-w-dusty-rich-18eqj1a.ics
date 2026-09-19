@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Gong Show | Stand-Up At Its Most Brutal (w/ Dusty Rich)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-18eqj1a@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T210000
+DTEND;TZID=Australia/Brisbane:20261003T230000
+SUMMARY:The Gong Show | Stand-Up At Its Most Brutal (w/ Dusty Rich)
+DESCRIPTION:Join the crew at Good Chat Comedy Club for a night of stand-up 
+ at it's most brutal\, with 10+ comedians putting their dignity on the line
+ ! The Gong Show ...
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/the-gong-show-stand-up-at-its-most-bru
+ tal-w-dusty-rich-5/
+END:VEVENT
+END:VCALENDAR

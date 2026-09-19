@@ -3,7 +3,32 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "qldveganmarkets",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Twilight Vegan Markets | 2 Oct",
+      "datetime": "Fri 2 Oct, 4:30 PM",
+      "datetime_iso": "2026-10-02T16:30:00",
+      "datetime_end_iso": "",
+      "location": "Mount Gravatt Showgrounds, 1644 Logan Rd, Mount Gravatt QLD 4122",
+      "link": "https://qldveganmarkets.com.au/",
+      "cost": "See link",
+      "source": "QLD Vegan Markets",
+      "description": "",
+      "image": "",
+      "category": "Social / Meetup",
+      "tags": [
+        "market",
+        "food",
+        "shopping",
+        "community",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

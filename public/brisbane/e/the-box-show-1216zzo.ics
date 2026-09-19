@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Box Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1216zzo@dothings
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261004
+SUMMARY:The Box Show
+DESCRIPTION:Prepare to have your minds blown! Four quirky misfits turn ever
+ yday junk – wheelie bins\, kitchen scraps\, plastic bags – into an ele
+ ctrifying symphony of beats\, rhythm & creativity.
+LOCATION:Cremorne Theatre\, QPAC
+URL:https://www.qtix.com.au/whats-on/2026/the-box-show/
+END:VEVENT
+END:VCALENDAR

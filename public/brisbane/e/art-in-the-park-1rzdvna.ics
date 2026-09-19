@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art in the Park
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1rzdvna@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T140000
+DTEND;TZID=Australia/Brisbane:20260927T160000
+SUMMARY:Art in the Park
+DESCRIPTION:Hey meditators! Let's enjoy some nature and sunshine (or shade)
+  together ☀️ ☘️ **Bring** - artie stuff e.g. drawing\, painting\, 
+ crafting\, ... - blankets\, p
+LOCATION:Roma Street Parkland\, Roma Street Parkland\, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-young-meditators-20s-and-30s/events/316
+ 535283/
+END:VEVENT
+END:VCALENDAR

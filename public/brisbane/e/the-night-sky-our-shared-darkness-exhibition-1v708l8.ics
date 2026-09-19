@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Night Sky: Our Shared Darkness Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1v708l8@dothings
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20270220
+SUMMARY:The Night Sky: Our Shared Darkness Exhibition
+DESCRIPTION:
+LOCATION:WeekendNotes Brisbane
+URL:https://www.weekendnotes.com/the-night-sky-our-shared-darkness-exhibiti
+ on/
+END:VEVENT
+END:VCALENDAR

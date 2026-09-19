@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "ipswichciviccentre",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Grease",
@@ -100,6 +100,72 @@
       "social": true,
       "intellectual": false,
       "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "The Bubble Spectacular starring Dr Hubble’s Bubbles!",
+      "datetime": "Tue 29 Sep",
+      "datetime_iso": "2026-09-29",
+      "datetime_end_iso": "",
+      "location": "Ipswich Civic Centre",
+      "link": "https://www.ipswichciviccentre.com.au/event/the-bubble-spectacular-starring-dr-hubbles-bubbles/",
+      "cost": "See link",
+      "source": "Ipswich Civic Centre",
+      "description": "Be amazed as the ultimate master of bubbles, Dr Hubble, brings his bubbly-magic to Ipswich these September Holidays for The Bubble Spectacular.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "kids",
+        "family"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "One Voice – Greatest Hits of John Farnham",
+      "datetime": "Fri 2 Oct",
+      "datetime_iso": "2026-10-02",
+      "datetime_end_iso": "",
+      "location": "Ipswich Civic Centre",
+      "link": "https://www.ipswichciviccentre.com.au/event/one-voice-greatest-hits-of-john-farnham/",
+      "cost": "See link",
+      "source": "Ipswich Civic Centre",
+      "description": "Prepare to be blown away by Simon Shapiro, one of Australia's most extraordinary voices.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "concert",
+        "tribute"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Return of the Medium – Peter Williams",
+      "datetime": "Sat 3 Oct, 7:00 PM",
+      "datetime_iso": "2026-10-03T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Ipswich Civic Centre",
+      "link": "https://www.ipswichciviccentre.com.au/event/return-of-the-medium-peter-williams/",
+      "cost": "See link",
+      "source": "Ipswich Civic Centre",
+      "description": "Popular psychic-medium and author Peter Williams, returns to the stage with energy, laughter and heartfelt respect.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "performance",
+        "theatre"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
       "creative": true
     }
   ]

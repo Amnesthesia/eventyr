@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Studio Sessions: Chamber Players 3
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-maq47j@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T150000
+DTEND;TZID=Australia/Brisbane:20261004T170000
+SUMMARY:Studio Sessions: Chamber Players 3
+DESCRIPTION:Enjoy hand-picked chamber repertoire by a small group of our mu
+ sicians as they introduce and share personal connections to each piece whi
+ le you relax into a delightful Sunday afternoon concert in the QSO home st
+ udio. Opening the concert is Crespo’s Suite Americana – a joyous celeb
+ ration of American music and dance. Each movement of this striking brass q
+ uintet explores a different country and musical style from North\, South\,
+  and Central America – from the ragtime of New...
+LOCATION:Queensland Symphony Orchestra
+URL:https://qso.com.au/events/2026/studio-sessions-2026/studio-sessions-cha
+ mber-players-3
+END:VEVENT
+END:VCALENDAR

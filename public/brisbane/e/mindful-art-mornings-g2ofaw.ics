@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mindful Art Mornings
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-g2ofaw@dothings
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Mindful Art Mornings
+DESCRIPTION:Artist in Residence Renee Kire takes over Museum of Brisbane’
+ s entryway\, transforming these spaces with a vibrant and dynamic mix of s
+ triking vinyl graphics and sculptural timber elements\, creating an immers
+ ive pathway that stretches across walls and ceilings\, guiding you into th
+ e heart of the Museum.
+LOCATION:Museum of Brisbane\, King George Square (Brisbane City Hall)
+URL:https://www.museumofbrisbane.com.au/whats-on/mindful-art-mornings/
+END:VEVENT
+END:VCALENDAR

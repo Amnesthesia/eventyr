@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Artist Talk with Euan Craig
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1mhdljq@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T180000
+DTEND;TZID=Australia/Brisbane:20261002T190000
+SUMMARY:Artist Talk with Euan Craig
+DESCRIPTION:2nd Oct 2026 | $20 (at the door) We are hosting an evening arti
+ st talk with Euan Craig on Friday 2nd of October from 6pm.
+LOCATION:Clayschool Brisbane\, 11 Crombie St\, M
+URL:https://www.clayschool.com.au/workshops/euan-craig-artist-talk
+END:VEVENT
+END:VCALENDAR

@@ -3,51 +3,34 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "superordinary",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
-      "title": "Sandbox Music Festival – Brisbane",
-      "datetime": "Fri 18 Sep, 10:00 PM",
-      "datetime_iso": "2026-09-18T22:00:00",
+      "title": "Sundown Music Festival",
+      "datetime": "Sat 3 Oct, 10:00 PM",
+      "datetime_iso": "2026-10-03T22:00:00",
       "datetime_end_iso": "",
       "location": "Superordinary",
-      "link": "https://superordinary.com.au/events/sandbox-music-festival-brisbane",
+      "link": "https://superordinary.com.au/events/sundown-music-festival",
       "cost": "See link",
       "source": "Superordinary",
-      "description": "World-class artists, immersive production and one of Brisbane's most iconic warehouse venues transformed into a festival playground.",
+      "description": "Two stages, two sounds. House and afro house in the open air, hip-hop and R&B in the warehouse, for the first edition of Brisbane's newest long-weekend festival.",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "festival",
+        "live music",
         "music",
-        "warehouse",
+        "concert",
+        "festival",
+        "electronic",
+        "hip hop",
         "dance"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
-    },
-    {
-      "title": "ROLLER DERBY RIVALRY: NO MERCY — ROUND 2",
-      "datetime": "Sat 19 Sep, 10:00 PM",
-      "datetime_iso": "2026-09-19T22:00:00",
-      "datetime_end_iso": "",
-      "location": "Superordinary",
-      "link": "https://superordinary.com.au/events/roller-derby-rivalry-round-2",
-      "cost": "See link",
-      "source": "Superordinary",
-      "description": "Round two of Brisbane's most legendary roller derby feud — the Misfits and the Devotchkas are back on the track, and this time there's no mercy.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "sport"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
     }
   ]
 }

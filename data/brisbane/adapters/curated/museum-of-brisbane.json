@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "museum-of-brisbane",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Artist in Residence: Sachém Parkin-Owens",
@@ -24,6 +24,30 @@
         "gallery",
         "performance",
         "painting"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Mindful Art Mornings",
+      "datetime": "Wed 30 Sep",
+      "datetime_iso": "2026-09-30",
+      "datetime_end_iso": "",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/mindful-art-mornings/",
+      "cost": "See link",
+      "source": "Museum of Brisbane (City Hall)",
+      "description": "Artist in Residence Renee Kire takes over Museum of Brisbane’s entryway, transforming these spaces with a vibrant and dynamic mix of striking vinyl graphics and sculptural timber elements, creating an immersive pathway that stretches across walls and ceilings, guiding you into the heart of the Museum.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "sculpture",
+        "design"
       ],
       "social": false,
       "intellectual": false,
@@ -58,8 +82,8 @@
     },
     {
       "title": "Perspectives of Brisbane",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
       "link": "https://www.museumofbrisbane.com.au/whats-on/perspectives-of-brisbane/",
@@ -81,26 +105,27 @@
       "creative": true
     },
     {
-      "title": "Crafty Party with Bonnie Hislop",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "title": "Mindful Art Mornings",
+      "datetime": "Wed 30 Sep",
+      "datetime_iso": "2026-09-30",
       "datetime_end_iso": "",
       "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
-      "link": "https://www.museumofbrisbane.com.au/whats-on/crafty-party-bonnie-hislop/",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/mindful-art-mornings/",
       "cost": "See link",
       "source": "Museum of Brisbane (City Hall)",
-      "description": "Don't just deck the halls these holidays, cover them with sparkles with a very special crafty party brought to you by Tinsel Queen, Rachel Burke.",
+      "description": "Artist in Residence Renee Kire takes over Museum of Brisbane’s entryway, transforming these spaces with a vibrant and dynamic mix of striking vinyl graphics and sculptural timber elements, creating an immersive pathway that stretches across walls and ceilings, guiding you into the heart of the Museum.",
       "image": "",
-      "category": "Workshop / Class",
+      "category": "Arts / Exhibition",
       "tags": [
         "art",
-        "craft",
-        "design",
-        "community"
+        "exhibition",
+        "gallery",
+        "sculpture",
+        "design"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
       "creative": true
     }
   ]

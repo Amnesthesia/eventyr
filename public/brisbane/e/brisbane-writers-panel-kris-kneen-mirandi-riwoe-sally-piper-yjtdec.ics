@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BRISBANE WRITERS PANEL : Kris Kneen\, Mirandi Riwoe\, Sally Pi
+ per and Anita Heiss
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-yjtdec@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T183000
+DTEND;TZID=Australia/Brisbane:20260929T203000
+SUMMARY:BRISBANE WRITERS PANEL : Kris Kneen\, Mirandi Riwoe\, Sally Piper a
+ nd Anita Heiss
+DESCRIPTION:Tuesday 29th September\, 6.30pm at Riverbend Books What is it a
+ bout Brisbane?! Brisbane has birthed many amazing books across a lot of di
+ fferent genres. Our city has housed two Miles Franklin Winners\, Several S
+ tella Prize shortlisted authors\, the winner of the ARA Historical Novel p
+ rize and many
+LOCATION:Riverbend Books
+URL:https://riverbendbooks.com.au/events/brisbane-writers-panel-kris-kneen-
+ mirandi-riwoe-sally-piper-and-anita-heiss-tuesday-29th-september-630pm-at-
+ riverbend-books
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bands in Parks
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-djyd1q@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T140000
+DTEND;TZID=Australia/Brisbane:20260927T160000
+SUMMARY:Bands in Parks
+DESCRIPTION:A series of open-air musical performances hosted in the tranqui
+ l setting of the Botanic Gardens\, bringing local bands and community perf
+ ormers to a natural backdrop.
+LOCATION:Brisbane Botanic Gardens Mt Coot-tha\, Toowong
+URL:https://data.brisbane.qld.gov.au/explore/dataset/music-events/table/
+END:VEVENT
+END:VCALENDAR

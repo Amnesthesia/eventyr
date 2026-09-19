@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Your Sunday Social No Plans\, New Friends
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ve37k2@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T130000
+DTEND;TZID=Australia/Brisbane:20260927T160000
+SUMMARY:Your Sunday Social No Plans\, New Friends
+DESCRIPTION:No big plans\, just a good excuse to get out on Sunday. Come me
+ et new people\, have a chat and enjoy some good company Come solo or bring
+  a friend x
+LOCATION:Brisbane\, Australia\, Brisbane\, Australia\, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-no-plans-club/events/316560944/
+END:VEVENT
+END:VCALENDAR

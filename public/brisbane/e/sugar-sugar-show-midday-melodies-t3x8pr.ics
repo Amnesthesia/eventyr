@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sugar Sugar Show – Midday Melodies
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-t3x8pr@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T110000
+DTEND;TZID=Australia/Brisbane:20260928T130000
+SUMMARY:Sugar Sugar Show – Midday Melodies
+DESCRIPTION:Whether you’re a regular Midday Melodies guest or looking for
+  a new live show to enjoy\, the Sugar Sugar Show is set to deliver a fun a
+ nd uplifting experience filled with great music and feel-good moments.
+LOCATION:SunPAC
+URL:https://www.sunpac.net.au/sugar-sugar-show-midday-melodies/
+END:VEVENT
+END:VCALENDAR

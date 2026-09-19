@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Concert Orchestra - 60th Anniversary
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1glj6jv@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T150000
+DTEND;TZID=Australia/Brisbane:20260927T163000
+SUMMARY:Brisbane Concert Orchestra - 60th Anniversary
+DESCRIPTION:Tickets: https://www.oldmuseum.au/event/brisbaneconcertorchestr
+ a Step into an afternoon of grandeur\, romance\, and celebration as the Br
+ isbane Concert Orch
+LOCATION:Old Museum Brisbane\, 480 Gregory Ter\, Bowen Hills QLD 4006\, Aus
+ tralia\, Bowen Hills\, Bowen Hills
+URL:https://www.meetup.com/brisbane-baroque-and-chamber-music-meetup-group/
+ events/316592537/
+END:VEVENT
+END:VCALENDAR

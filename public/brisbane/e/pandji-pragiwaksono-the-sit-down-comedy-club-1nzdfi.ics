@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pandji Pragiwaksono @ The Sit Down Comedy Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nzdfi@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T190000
+DTEND;TZID=Australia/Brisbane:20260920T210000
+SUMMARY:Pandji Pragiwaksono @ The Sit Down Comedy Club
+DESCRIPTION:
+LOCATION:The Sit Down Comedy Club
+URL:https://www.standup.com.au/event/pandji-pragiwaksono-the-sit-down-comed
+ y-club/
+END:VEVENT
+END:VCALENDAR

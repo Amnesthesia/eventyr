@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight: Classic Rock on Strings
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-553z2l@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T183000
+DTEND;TZID=Australia/Brisbane:20261002T203000
+SUMMARY:Candlelight: Classic Rock on Strings
+DESCRIPTION:Saint John's Anglican Cathedral is hosting this Candlelight: Cl
+ assic Rock on Strings in Brisbane! Get your concert tickets today!
+LOCATION:Saint John's Anglican Cathedral\, 373 Ann Street\, Brisbane City\,
+  4000\, Brisbane\, AU\, 373 Ann St\, Brisbane City QLD 4000\, Australia\, 
+ Brisbane\, QL
+URL:https://allevents.in/brisbane/candlelight-classic-rock-on-strings/20003
+ 0693484123
+END:VEVENT
+END:VCALENDAR

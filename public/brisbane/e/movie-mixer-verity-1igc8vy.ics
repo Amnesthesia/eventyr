@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Movie Mixer: Verity
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1igc8vy@dothings
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Movie Mixer: Verity
+DESCRIPTION:
+LOCATION:Palace Cinemas Brisbane
+URL:https://palacecinemas.com.au/movie-mixer-verity
+END:VEVENT
+END:VCALENDAR

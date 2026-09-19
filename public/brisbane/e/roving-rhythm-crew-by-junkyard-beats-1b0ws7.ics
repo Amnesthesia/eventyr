@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Roving Rhythm Crew by Junkyard Beats
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1b0ws7@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T150000
+DTEND;TZID=Australia/Brisbane:20260929T170000
+SUMMARY:Roving Rhythm Crew by Junkyard Beats
+DESCRIPTION:Join the Roving Rhythm Crew in The Corner these school holidays
+  for high energy rhythm and fun. Performed by Junkyard Beats and presented
+  by QPAC\, this crew of mischief makers weave between audiences using recy
+ cled instruments\, body percussion\, physical theatre\, and cheeky improvi
+ sation to turn any space into a stage.See more of Junkyard Beats in their 
+ award-winning performance The Box Show\, showing at QPAC from 30 Sep to 3 
+ Oct 2026. This project has been assisted by the Australian Government thro
+ ugh Creative Australia\, its principal arts investment and advisory body.
+LOCATION:State Library of Queensland\, Stanley Place\, South Bank
+URL:https://www.slq.qld.gov.au/whats-on/roving-rhythm-crew-junkyard-beats
+END:VEVENT
+END:VCALENDAR

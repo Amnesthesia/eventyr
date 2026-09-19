@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Phone-free Viewing: Make Believe: Magic
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1j6n4d4@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T083000
+DTEND;TZID=Australia/Brisbane:20261003T100000
+SUMMARY:Phone-free Viewing: Make Believe: Magic
+DESCRIPTION:Free yourself from digital devices and immerse yourself in the 
+ experience of 'Make\,Believe\,Magic: The Worlds of The Jim Henson Company'
+ \, without the crowds. Grab a pencil and paper to sketch iconic characters
+  in the exhibition\, or simply take a seat\, slow down\, and admire your f
+ avourite puppet friends up close. Audiences are encouraged to leave their 
+ phones and digital devices at the free cloak room before attending this vi
+ ewing. / Free drawing materials available.
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/event/phone-free-viewing-make-believe-mag
+ ic-2026-10-03
+END:VEVENT
+END:VCALENDAR

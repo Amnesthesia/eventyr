@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art of the Score: The Music of Joe Hisaishi
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-jj3pi@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T193000
+DTEND;TZID=Australia/Brisbane:20261003T193000
+SUMMARY:Art of the Score: The Music of Joe Hisaishi
+DESCRIPTION:Tickets on sale via Ticketek*. Experience the extraordinary mus
+ ic of Joe Hisaishi in a new concert event celebrating one of the world’s
+  most beloved modern composers\, performed live in concert by Queensland S
+ ymphony Orchestra. Known for his close association with the films of Studi
+ o Ghibli and Japanese animation director Hayao Miyazaki\, Joe Hisaishi has
+  created the stunning musical accompaniment to countless films including S
+ pirited Away\, Kiki’s Delivery Service\, My Neighbor Totoro...
+LOCATION:Queensland Symphony Orchestra
+URL:https://qso.com.au/events/2026/for-movie-music-lovers/the-music-of-joe-
+ hisaishi
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lord Mayor's City Hall Concert
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kpn2l3@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T120000
+DTEND;TZID=Australia/Brisbane:20260921T130000
+SUMMARY:Lord Mayor's City Hall Concert
+DESCRIPTION:A recurring midday concert series held in the iconic City Hall\
+ , featuring local musicians and providing a cultural break in the heart of
+  the city.
+LOCATION:Brisbane City Hall\, Brisbane City
+URL:https://www.trumba.com/events-calendar/brisbane/brisbane-libraries/libr
+ ary/events/acitivites/classes/workshops/babies-books-and-rhymes/children-s
+ -storytime/computer-classes/internet-classes/live
+END:VEVENT
+END:VCALENDAR

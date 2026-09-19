@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Intermediate Session
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-zj1rpv@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T190000
+DTEND;TZID=Australia/Brisbane:20260930T203000
+SUMMARY:Intermediate Session
+DESCRIPTION:We are back onto the Wednesday nights! The Intermediate session
+ s are the same as the Beginners sessions except that we can introduce new 
+ songs and do other
+LOCATION:Tony's Garage\, 84 Ryans Road\, Nundah\, Q 4012\, Brisbane\, Brisb
+ ane
+URL:https://www.meetup.com/jams-around-brisbane/events/316496520/
+END:VEVENT
+END:VCALENDAR

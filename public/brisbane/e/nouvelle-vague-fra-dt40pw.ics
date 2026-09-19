@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Nouvelle Vague (FRA)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-dt40pw@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T190000
+DTEND;TZID=Australia/Brisbane:20261001T210000
+SUMMARY:Nouvelle Vague (FRA)
+DESCRIPTION:The unmistakably French\, effortlessly chic\, and refreshingly 
+ modern Nouvelle Vague finally returns for three exclusive Australian Shows
+ ! Nouvelle Vague breathes new life into beloved tracks by Joy Division\, B
+ uzzcocks\, The Cure\, The Clash\, Depeche Mode\, The Dead Kennedys and mor
+ e. They redefined the art of the cover song\, reimagining post-punk and ne
+ w wave classics through the sultry rhythms of bossa nova. The irresistibly
+  cool Nouvelle Vague do not just perform music\; they...
+LOCATION:The Tivoli\, 52 Costin St
+URL:https://thetivoli.com.au/events/nouvelle-vague
+END:VEVENT
+END:VCALENDAR

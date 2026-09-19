@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jim Henson’s Labyrinth in Concert
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-pwwrnc@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T130000
+DTEND;TZID=Australia/Brisbane:20260920T150000
+SUMMARY:Jim Henson’s Labyrinth in Concert
+DESCRIPTION:On the heels of a successful global tour to nearly 100 cities\,
+  Jim Henson’s Labyrinth in Concert is coming to QPAC.
+LOCATION:Concert Hall\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/jim-hensons-labyrinth-in-concert/
+END:VEVENT
+END:VCALENDAR

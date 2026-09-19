@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Diamond Divas
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-nphfsi@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T183000
+DTEND;TZID=Australia/Brisbane:20261003T203000
+SUMMARY:Diamond Divas
+DESCRIPTION:Get ready for a night of glitz\, glamour and unforgettable drag
+ !
+LOCATION:Kingston Butter Factory Cultural Precinct
+URL:https://www.loganarts.com.au/event/diamond-divas/
+END:VEVENT
+END:VCALENDAR

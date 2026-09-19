@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Celebrate the release of Wooden Ships and Iron Men with author
+  Peter Long
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-y6alwo@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T183000
+DTEND;TZID=Australia/Brisbane:20260929T203000
+SUMMARY:Celebrate the release of Wooden Ships and Iron Men with author Pete
+ r Long
+DESCRIPTION:Join us on Tuesday 29 September for a special bookshop event wi
+ th Peter Long\, author of Wooden Ships and Iron Men
+LOCATION:Books@Stones\, Stones Corner\, QLD 4120
+URL:https://events.humanitix.com/books-stones-event-wooden-ships-and-iron-m
+ en-by-peter-long
+END:VEVENT
+END:VCALENDAR

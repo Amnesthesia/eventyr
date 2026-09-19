@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Horrid Little Things
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hdbdk5@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T180000
+DTEND;TZID=Australia/Brisbane:20260922T220000
+SUMMARY:Horrid Little Things
+DESCRIPTION:Join us for HORRID LITTLE THINGS\, a monthly event where we mak
+ e nasty tiny creatures with polymer clay\, bake ‘em and give them a fres
+ h coat of gunky paint. It happens over a couple of the rooms in Lost Souls
+  with a host and includes all materials needed along with your first drink
+ . It happens from 6pm until 10pm monthly. Time it right and you’ll grab 
+ a Hellmouth Diner meal while your critter is frying in the oven. Tickets a
+ re limited to 16 persons and can be grabbed below!
+LOCATION:Netherworld\, 186 Brunswick Street
+URL:https://www.netherworldarcade.com/event/horrid-little-things/
+END:VEVENT
+END:VCALENDAR

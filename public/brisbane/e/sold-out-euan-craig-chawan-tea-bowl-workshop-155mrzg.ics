@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SOLD OUT // Euan Craig - Chawan (Tea Bowl) Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-155mrzg@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T090000
+DTEND;TZID=Australia/Brisbane:20261004T150000
+SUMMARY:SOLD OUT // Euan Craig - Chawan (Tea Bowl) Workshop
+DESCRIPTION:Two-day hands-on workshop providing demonstrations and making. 
+ This workshop will explore and\, hopefully\, demystify the meaning\, aesth
+ etics and practical considerations of Chawan\, and give the participants t
+ he skills and understanding they need to include Chawan in their own studi
+ o practice.
+LOCATION:Clayschool Brisbane\, 11 Crombie Street
+URL:https://www.clayschool.com.au/workshops/euan-craig-chawan-workshop
+END:VEVENT
+END:VCALENDAR

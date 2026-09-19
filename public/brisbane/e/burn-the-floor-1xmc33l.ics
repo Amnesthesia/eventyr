@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Burn the Floor
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1xmc33l@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T190000
+DTEND;TZID=Australia/Brisbane:20261002T210000
+SUMMARY:Burn the Floor
+DESCRIPTION:Featuring inspirational champion dancers\, Burn the Floor is no
+ t just a dance show\, it’s a pure theatrical experience!
+LOCATION:Concert Hall\, QPAC
+URL:https://www.qtix.com.au/whats-on/2026/burn-the-floor/
+END:VEVENT
+END:VCALENDAR

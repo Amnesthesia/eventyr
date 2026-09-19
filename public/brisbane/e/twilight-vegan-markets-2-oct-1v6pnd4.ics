@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Twilight Vegan Markets | 2 Oct
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1v6pnd4@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T163000
+DTEND;TZID=Australia/Brisbane:20261002T183000
+SUMMARY:Twilight Vegan Markets | 2 Oct
+DESCRIPTION:
+LOCATION:Mount Gravatt Showgrounds\, 1644 Logan Rd\, Mount Gravatt QLD 4122
+URL:https://qldveganmarkets.com.au/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:TESS WOODS : The Cairo Bridal Shop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12yozed@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T183000
+DTEND;TZID=Australia/Brisbane:20260930T203000
+SUMMARY:TESS WOODS : The Cairo Bridal Shop
+DESCRIPTION:Join uson Wednesday 30th September at 6.30pm as Tess Woods chat
+ s to Rebecca Spearrow about her new novel\, The Cairo Bridal Shop. About t
+ he book … The highly anticipated new novel by the bestselling author of 
+ The Venice Hotel . Nestled at the bustling foot of the pyramids lies the i
+ con
+LOCATION:Riverbend Books
+URL:https://riverbendbooks.com.au/events/tess-woods-the-cairo-bridal-shop-w
+ ednesday-september-30th-630pm-at-riverbend-books
+END:VEVENT
+END:VCALENDAR

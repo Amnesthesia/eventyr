@@ -3,30 +3,7 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "ipswichlibraries",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": [
-    {
-      "title": "Library Adventure Morning",
-      "datetime": "Wed 16 Sep, 9:30 AM",
-      "datetime_iso": "2026-09-16T09:30:00",
-      "datetime_end_iso": "",
-      "location": "Ipswich Libraries",
-      "link": "https://ipswich.spydus.com/cgi-bin/spydus.exe/ENQ/OPAC/EVSESENQ?SETLVL=&RNI=1681048",
-      "cost": "See link",
-      "source": "Ipswich Libraries",
-      "description": "Discover the Library. Drop in any time during the morning to share in fun library activities. Ages 0-5 years. Free Drop-In Event.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "kids",
-        "family",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": false
-    }
-  ]
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": []
 }

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Choir of Man
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-jfd02o@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T193000
+DTEND;TZID=Australia/Brisbane:20260926T220000
+SUMMARY:The Choir of Man
+DESCRIPTION:An uplifting\, high-energy show combining pub songs\, folk\, ro
+ ck\, and theatrical performance in an immersive\, pub-like setting.
+LOCATION:South Bank\, Brisbane City
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

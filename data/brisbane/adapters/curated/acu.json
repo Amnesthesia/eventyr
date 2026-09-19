@@ -3,7 +3,30 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "acu",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Exploring postgraduate study: What you need to know",
+      "datetime": "Tue 29 Sep",
+      "datetime_iso": "2026-09-29",
+      "datetime_end_iso": "",
+      "location": "Australian Catholic University",
+      "link": "https://acufuturestudents.swoogo.com/2026_studyat",
+      "cost": "See link",
+      "source": "Australian Catholic University",
+      "description": "Discover how postgraduate coursework study can help you stand out from the crowd. Learn about the application process, funding options, scholarships and resources to su...",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "students",
+        "writing",
+        "history"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

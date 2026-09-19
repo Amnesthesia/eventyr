@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pop Choir Rehearsal Brisbane - Sunnybank
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-356fk0@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T093000
+DTEND;TZID=Australia/Brisbane:20260922T113000
+SUMMARY:Pop Choir Rehearsal Brisbane - Sunnybank
+DESCRIPTION:
+LOCATION:Sunnybank Rugby Union Club\, 470 McCulllough St\,\, Sunnybank\, Su
+ nnybank
+URL:https://www.meetup.com/soul-song-brisbane-pop-choir/events/316559513/
+END:VEVENT
+END:VCALENDAR

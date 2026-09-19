@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Social Sculptures - South Bank & Fish Lane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-t8fdxj@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T170000
+DTEND;TZID=Australia/Brisbane:20261003T190000
+SUMMARY:Social Sculptures - South Bank & Fish Lane
+DESCRIPTION:**Event details:** Join us for an early evening wander through 
+ South Bank and Fish Lane before checking out **Social Sculptures**\, part 
+ of Brisbane Festival. We'll meet at
+LOCATION:QLD Maritime Museum Grounds\, Cnr Stanely & Sidon Streets SOUTH BR
+ ISBANE.\, Cnr Stanely & Sidon Streets\, Brisbane\, Brisbane
+URL:https://www.meetup.com/brisbane-ramblers/events/316125947/
+END:VEVENT
+END:VCALENDAR

@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "theprinceconsort",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Greaser Garage Party - September!",
@@ -25,6 +25,30 @@
         "band",
         "rock",
         "punk",
+        "nightlife"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Chris Luno - Brisbane",
+      "datetime": "Fri 2 Oct",
+      "datetime_iso": "2026-10-02",
+      "datetime_end_iso": "",
+      "location": "The Prince Consort",
+      "link": "https://theprinceconsort.com.au/whats-on/chris-luno--brisbane.html",
+      "cost": "See link",
+      "source": "The Prince Consort",
+      "description": "German melodic house favourite Chris Luno makes his long-awaited Brisbane debut this October, bringing his signature blend of deep grooves, emotional ...",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "electronic",
+        "dj",
         "nightlife"
       ],
       "social": true,

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Leading Without Authority: Practical Judgement for Scrum Maste
+ rs
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-di5804@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T173000
+DTEND;TZID=Australia/Brisbane:20260924T193000
+SUMMARY:Leading Without Authority: Practical Judgement for Scrum Masters
+DESCRIPTION:Scrum Masters sit in a strange place. They’re asked to help t
+ eams deliver\, improve the way work flows\, surface uncomfortable truths\,
+  and challenge unhelpfu
+LOCATION:u&u\, 12/259 Queen Street\, Brisbane\, Brisbane
+URL:https://www.meetup.com/agile-brisbane/events/316246810/
+END:VEVENT
+END:VCALENDAR

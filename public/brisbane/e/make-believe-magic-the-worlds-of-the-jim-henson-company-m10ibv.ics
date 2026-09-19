@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Make\, Believe\, Magic: The Worlds of The Jim Henson Company
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-m10ibv@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T100000
+DTEND;TZID=Australia/Brisbane:20270418T170000
+SUMMARY:Make\, Believe\, Magic: The Worlds of The Jim Henson Company
+DESCRIPTION:An immersive exhibition exploring the creative legacy of Jim He
+ nson\, featuring original puppets\, sketches\, and behind-the-scenes insig
+ hts into the craft of puppetry and design.
+LOCATION:Gallery of Modern Art (GOMA)\, South Brisbane
+URL:https://www.henson.com/the-jim-henson-company-brings-puppet-magic-to-br
+ isbane-at-qagoma/
+END:VEVENT
+END:VCALENDAR

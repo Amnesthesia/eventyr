@@ -3,15 +3,15 @@
   "provider": "adapters",
   "tier": "aggregators",
   "source_id": "visitbrisbane",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "PRECIOUS",
-      "datetime": "Sun 13 Sep, 6:06 AM",
-      "datetime_iso": "2026-09-13T06:06:00",
+      "datetime": "Sun 20 Sep, 6:06 AM",
+      "datetime_iso": "2026-09-20T06:06:00",
       "datetime_end_iso": "",
-      "location": "Visit Brisbane (Brisbane Economic Development Agency)",
+      "location": "Museum of Brisbane",
       "link": "https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/precious-4cd2",
       "cost": "See link",
       "source": "Visit Brisbane (Brisbane Economic Development Agency)",
@@ -21,8 +21,9 @@
       "tags": [
         "art",
         "exhibition",
+        "gallery",
         "history",
-        "design"
+        "culture"
       ],
       "social": false,
       "intellectual": true,
@@ -55,8 +56,8 @@
     },
     {
       "title": "MICRO MUSEUM",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Museum of Brisbane",
       "link": "https://visit.brisbane.qld.au/whats-on/inner-city/eat-and-drink-events/micro-museum-fc3b",
@@ -80,8 +81,8 @@
     },
     {
       "title": "BLUEY’S WORLD",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Northshore Pavilion, Brisbane, Queensland",
       "link": "https://visit.brisbane.qld.au/whats-on/northern-suburbs/eat-and-drink-events/blueys-world-5fa7",
@@ -99,6 +100,29 @@
       "intellectual": false,
       "hands_on": true,
       "creative": false
+    },
+    {
+      "title": "BOTANIC BY NIGHT: NIGHTGLOW",
+      "datetime": "Fri 25 Sep, 6:30 PM – Sat 10 Oct",
+      "datetime_iso": "2026-09-25T18:30:00",
+      "datetime_end_iso": "2026-10-10",
+      "location": "Brisbane Botanic Gardens at Mount Coot-tha",
+      "link": "https://visit.brisbane.qld.au/whats-on/western-suburbs/eat-and-drink-events/botanic-by-night-nightglow-d887",
+      "cost": "See link",
+      "source": "Visit Brisbane (Brisbane Economic Development Agency)",
+      "description": "Experience the Brisbane Botanic Gardens at Mount Coot-tha in a totally new way during the September School Holidays, as Nightglow brings 11 massive light installations inspired by native Australian wildlife to the precinct.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "nature",
+        "wildlife",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }

@@ -3,55 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "brisbaneshowgrounds",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
-    {
-      "title": "Transurban Bridge To Brisbane presented by Brooks",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Showgrounds",
-      "link": "http://www.brisbaneshowgrounds.com.au/whats-on/transurban-bridge-to-brisbane-presented-by-brooks/",
-      "cost": "See link",
-      "source": "Brisbane Showgrounds",
-      "description": "Join thousands of runners, walkers, and wheelers as we take over the Gateway Bridge and streets of Brisbane on Sunday 13 September 2026 for an unforgettable morning.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "running",
-        "walking",
-        "sport",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Sabo Sample Sale",
-      "datetime": "Sat 19 Sep, 8:30 AM",
-      "datetime_iso": "2026-09-19T08:30:00",
-      "datetime_end_iso": "",
-      "location": "Brisbane Showgrounds",
-      "link": "http://www.brisbaneshowgrounds.com.au/whats-on/sabo-sample-sale/",
-      "cost": "See link",
-      "source": "Brisbane Showgrounds",
-      "description": "Join one of SABO’s most anticipated annual community events - the Brisbane Sample Sale. Discover rare, archival and one-of-a-kind SABO pieces, including exclusive samples, past favourites and styles you won’t find anywhere else. A unique opportunity to uncover something special and take home a piece of SABO history.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "fashion",
-        "shopping",
-        "sale",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
     {
       "title": "Festitalia",
       "datetime": "Sun 20 Sep",
@@ -97,6 +51,31 @@
       "intellectual": false,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "Brisbane Illustration Fair",
+      "datetime": "Sat 3 Oct – Sun 4 Oct",
+      "datetime_iso": "2026-10-03",
+      "datetime_end_iso": "2026-10-04",
+      "location": "Brisbane Showgrounds",
+      "link": "http://www.brisbaneshowgrounds.com.au/whats-on/brisbane-illustration-fair-3-4-october-2026/",
+      "cost": "See link",
+      "source": "Brisbane Showgrounds",
+      "description": "Join us for Brisbane’s biggest illustration fair, featuring 180+ local and national artists across two Spook-tacular days of creativity!",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "design",
+        "market",
+        "shopping",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }

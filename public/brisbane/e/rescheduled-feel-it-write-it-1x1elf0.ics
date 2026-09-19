@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:RESCHEDULED: Feel it\, Write it.
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1x1elf0@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T160000
+DTEND;TZID=Australia/Brisbane:20260923T180000
+SUMMARY:RESCHEDULED: Feel it\, Write it.
+DESCRIPTION:When we write\, we create spaces for ourselves where we can ret
+ reat – to reflect\, to muse\, and to become aware of ourselves. Because 
+ writing helps to escape f...
+LOCATION:Creative Mornings Brisbane
+URL:https://creativemornings.com/talks/feel-it-write-it-c6aea832-3903-4f2b-
+ a7c1-0dc5acd12b17
+END:VEVENT
+END:VCALENDAR

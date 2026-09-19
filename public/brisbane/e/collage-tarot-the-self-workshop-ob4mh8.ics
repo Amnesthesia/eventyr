@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Collage\, Tarot & the Self Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ob4mh8@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T120000
+DTEND;TZID=Australia/Brisbane:20261004T140000
+SUMMARY:Collage\, Tarot & the Self Workshop
+DESCRIPTION:Collage\, Tarot & the Self invites you to slow down and explore
+  your inner landscape through collage and the rich symbolism of the tarot.
+LOCATION:Creative Room Art Space
+URL:https://www.creativeroom.com.au/event-details/collage-tarot-the-self-wo
+ rkshop
+END:VEVENT
+END:VCALENDAR

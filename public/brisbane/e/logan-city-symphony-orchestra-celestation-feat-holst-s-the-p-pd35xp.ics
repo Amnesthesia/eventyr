@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Logan City Symphony Orchestra – Celestation Feat. Holst’s 
+ “The Planets”
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-pd35xp@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T173000
+DTEND;TZID=Australia/Brisbane:20261004T193000
+SUMMARY:Logan City Symphony Orchestra – Celestation Feat. Holst’s “Th
+ e Planets”
+DESCRIPTION:Program Richard Strauss: Also sprach Zarathustra\, Op. 30 — E
+ inleitung (Sonnenaufgang) Hans Zimmer: Interstellar Logan City Orchestras 
+ Young Composer Project: World Premiere! Peter Sculthorpe: Earth Cry (with 
+ didgeridoo) Interval Gustav Holst: The Planets\, Op. 32
+LOCATION:Logan Entertainment Centre
+URL:https://www.loganarts.com.au/event/logan-city-symphony-orchestra-celest
+ ation/
+END:VEVENT
+END:VCALENDAR

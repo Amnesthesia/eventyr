@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Soirée
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-10ojh55@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T193000
+DTEND;TZID=Australia/Brisbane:20260926T213000
+SUMMARY:Soirée
+DESCRIPTION:An intimate evening of classical and contemporary ballet perfor
+ mances presented by the Queensland Ballet in their home theatre.
+LOCATION:Talbot Theatre\, Thomas Dixon Centre\, West End
+URL:https://www.queenslandballet.com.au
+END:VEVENT
+END:VCALENDAR

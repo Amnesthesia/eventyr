@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Black & White Still Life | Acrylic Path Series
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-jy45oz@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T110000
+DTEND;TZID=Australia/Brisbane:20260924T130000
+SUMMARY:Black & White Still Life | Acrylic Path Series
+DESCRIPTION:Explore the foundations of acrylic painting through a simple bl
+ ack and white still life.
+LOCATION:Creative Room Art Space
+URL:https://www.creativeroom.com.au/event-details/black-white-still-life-ac
+ rylic-path-series
+END:VEVENT
+END:VCALENDAR

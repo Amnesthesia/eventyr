@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "lifedrawingsessions",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "The Junk Bar",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
       "datetime_end_iso": "",
       "location": "The Junk Bar, New Farm, Brisbane",
       "link": "https://www.lifedrawingsessions.com.au/the-junk-bar",
@@ -31,8 +31,8 @@
     },
     {
       "title": "Miami Marketta",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "datetime": "Wed 23 Sep",
+      "datetime_iso": "2026-09-23",
       "datetime_end_iso": "",
       "location": "Miami Marketta, Gold Coast",
       "link": "https://www.lifedrawingsessions.com.au/miami-marketta",
@@ -42,20 +42,20 @@
       "image": "",
       "category": "Social / Meetup",
       "tags": [
+        "art",
+        "drawing",
         "market",
-        "food",
-        "drinks",
         "community"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": false
+      "hands_on": true,
+      "creative": true
     },
     {
       "title": "THE JUNK BAR",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
       "datetime_end_iso": "",
       "location": "The Junk Bar, New Farm, Brisbane",
       "link": "https://www.lifedrawingsessions.com.au/the-junk-bar",
@@ -77,8 +77,8 @@
     },
     {
       "title": "MIAMI MARKETTA",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "datetime": "Wed 23 Sep",
+      "datetime_iso": "2026-09-23",
       "datetime_end_iso": "",
       "location": "Miami Marketta, Gold Coast",
       "link": "https://lifedrawingsessions.com.au/miami-marketta",
@@ -88,15 +88,15 @@
       "image": "",
       "category": "Social / Meetup",
       "tags": [
+        "art",
+        "drawing",
         "market",
-        "food",
-        "drinks",
         "community"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
-      "creative": false
+      "hands_on": true,
+      "creative": true
     }
   ]
 }

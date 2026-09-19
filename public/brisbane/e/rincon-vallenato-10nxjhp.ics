@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:RINCON VALLENATO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-10nxjhp@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T210000
+DTEND;TZID=Australia/Brisbane:20261004T230000
+SUMMARY:RINCON VALLENATO
+DESCRIPTION:La noche para cantar vallenato\, rancheras y música popular a 
+ grito herido. Parranda vallenata en vivo\, aguardiente y puro sentimiento
+LOCATION:The Beaumont Brisbane\, 21 Gipps St\, Fortitude Valley QLD\, 4006\
+ , Brisbane\, QL
+URL:https://allevents.in/brisbane/rincon-vallenato/100001998931673445
+END:VEVENT
+END:VCALENDAR

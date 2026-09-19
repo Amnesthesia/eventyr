@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Write Your Memoir with Kristina Olsson
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-igimqo@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T103000
+DTEND;TZID=Australia/Brisbane:20261003T133000
+SUMMARY:Write Your Memoir with Kristina Olsson
+DESCRIPTION:Learn the elements of memoir and get ready to write your own. B
+ ook your place .
+LOCATION:Queensland Writers Centre\, Stanley Place
+URL:https://www.queenslandwriters.org.au/events/write-your-memoir-with-kris
+ tina-olsson
+END:VEVENT
+END:VCALENDAR

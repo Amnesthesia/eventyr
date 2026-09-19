@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Laika Studios Double Features
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-19o0jvh@dothings
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:Laika Studios Double Features
+DESCRIPTION:
+LOCATION:Palace Cinemas Brisbane
+URL:https://palacecinemas.com.au/laika-studios-double-features
+END:VEVENT
+END:VCALENDAR

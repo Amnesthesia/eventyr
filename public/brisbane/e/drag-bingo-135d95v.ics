@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Drag Bingo
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-135d95v@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T130000
+DTEND;TZID=Australia/Brisbane:20260920T150000
+SUMMARY:Drag Bingo
+DESCRIPTION:Haus of Drag Bingo returns to The Osbourne for another afternoo
+ n packed with bingo\, outrageous performances\, prizes and big laughs.
+LOCATION:Osbourne Hotel
+URL:https://osbournehotel.com.au/whats-on/drag-bingo-september/
+END:VEVENT
+END:VCALENDAR

@@ -3,31 +3,7 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "qyo",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": [
-    {
-      "title": "Concerts at QYO: Queensland Youth Orchestra 3",
-      "datetime": "Sun 13 Sep, 3:00 PM",
-      "datetime_iso": "2026-09-13T15:00:00",
-      "datetime_end_iso": "2026-09-13T17:00:00",
-      "location": "The Old Museum Concert Hall, 480 Gregory Terrace",
-      "link": "https://www.qyo.org.au/whats-on/concert-at-qyo-qyo3-2",
-      "cost": "See link",
-      "source": "Queensland Youth Orchestras",
-      "description": "Our Concerts at QYO Series showcases Queensland Youth Orchestras’ ensembles and guest groups from across Brisbane and regional Queensland in the heritage-listed Old Museum Concert Hall. Presented three times a year, by each QYO ensemble, these concerts mark the culmination of each rehearsal term, giving audiences a chance to hear the progress and passion of Queensland’s young musicians.&nbsp; Each performance offers something new, from vibrant orchestral favourites to intimate chamber works, highlighting the diversity and depth of QYO’s musical community. The series also welcomes guest school and community ensembles, creating opportunities for collaboration, shared learning, and celebration.&nbsp;&nbsp; #block-27823781311ffd8619f5 { --stroke-style: none;--stroke-thickness: 6px; } #block-27823781311ffd8619f5 .sqs-html-content { --tweak-text-block-padding: 6% 6% 6% 6%; --tweak-text-block-padding: initial; } #block-27823781311ffd8619f5 { mix-blend-mode: var(--tweak-text-block-blend ); border-radius: var(--tweak-text-block-radius); } #block-27823781311ffd8619f5 { --tweak-text-block-radius: 0px 0px 0px 0px; } #block-27823781311ffd8619f5 { } @media screen and (max-width: 767px) { #block-27823781311ffd8619f5 { } } @media screen and (max-width: 767px) { #block-27823781311ffd8619f5 .sqs-html-content { } } @media screen and (max-width: 767px) { } buy tickets #block-yui_3_17_2_1_1763010751080_1834 { --sqs-block-content-flex: 0; } #block-yui_3_17_2_1_1763010751080_1834 { --opacity: 100%; --translate-x: 0px; --translate-y: 0px; --rotation: 0deg; --scale-x: 100%; --scale-y: 100%; --skew-x: 0deg; --skew-y: 0deg; --origin-x: 50%; --origin-y: 50%; --block-transform: none; opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
-      "image": "https://images.squarespace-cdn.com/content/v1/6361b036e7dbad2a44f51924/1763008144698-P4V8J595ZZ9O3UPXOQGS/QYO%2B2%2BOct%2B25_0876.png",
-      "category": "Concert / Music",
-      "tags": [
-        "orchestra",
-        "classical",
-        "youth",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    }
-  ]
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": []
 }

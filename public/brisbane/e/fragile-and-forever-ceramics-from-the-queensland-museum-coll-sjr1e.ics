@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Fragile and Forever: Ceramics from the Queensland Museum Colle
+ ction
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-sjr1e@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T100000
+DTEND;TZID=Australia/Brisbane:20260927T170000
+SUMMARY:Fragile and Forever: Ceramics from the Queensland Museum Collection
+DESCRIPTION:An exhibition showcasing historical and contemporary ceramics\,
+  highlighting the intersection of human creativity and material history.
+LOCATION:Queensland Museum\, South Brisbane
+URL:https://www.museum.qld.gov.au/kurilpa/whats-on/fragile-and-forever
+END:VEVENT
+END:VCALENDAR

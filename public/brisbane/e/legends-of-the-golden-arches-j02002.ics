@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LEGENDS (of the Golden Arches)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-j02002@dothings
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260921
+SUMMARY:LEGENDS (of the Golden Arches)
+DESCRIPTION:A rip-roaring ride into the depths of the Chinese afterlife at 
+ QPAC’s Cremorne Theatre!
+LOCATION:Cremorne Theatre\, QPAC
+URL:https://www.qtix.com.au/whats-on/2026/bf-legends-of-the-golden-arches/
+END:VEVENT
+END:VCALENDAR

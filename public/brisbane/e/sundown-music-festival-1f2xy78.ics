@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sundown Music Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1f2xy78@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T220000
+DTEND;TZID=Australia/Brisbane:20261004T000000
+SUMMARY:Sundown Music Festival
+DESCRIPTION:Two stages\, two sounds. House and afro house in the open air\,
+  hip-hop and R&B in the warehouse\, for the first edition of Brisbane's ne
+ west long-weekend festival.
+LOCATION:Superordinary
+URL:https://superordinary.com.au/events/sundown-music-festival
+END:VEVENT
+END:VCALENDAR

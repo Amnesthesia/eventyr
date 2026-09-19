@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "impress",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "WOMEN IN PRINT",
@@ -15,19 +15,18 @@
       "link": "https://impress.org.au/",
       "cost": "See link",
       "source": "Impress Printmakers Studio and Gallery",
-      "description": "Let's celebrate women in printmaking with: Exhibition 10/9/2026 to 20/9/2026 Opening party - 11/9 from 6pm to 8pm Arrtist's Talks - 13/9 from 2pm to 3pm Kristina Hall Michelle Bowden Tanya Wallace Meredith Mcleod Demo day - 19/9 from 1pm This will be 2 weeks of celebrating women in print making...",
+      "description": "This will be 2 weeks of celebrating women in print making...",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
         "exhibition",
         "gallery",
-        "performance",
         "women"
       ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": true,
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
       "creative": true
     },
     {

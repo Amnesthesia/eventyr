@@ -3,14 +3,14 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "metro-arts",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Scene Roulette",
-      "datetime": "Fri 11 Sep – Fri 25 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-09-25",
+      "datetime": "Fri 25 Sep",
+      "datetime_iso": "2026-09-25",
+      "datetime_end_iso": "",
       "location": "Metro Arts, Brisbane City",
       "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
       "cost": "See link",
@@ -19,108 +19,20 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "acting",
         "theatre",
-        "networking"
+        "performance",
+        "community"
       ],
       "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "The Scramble",
-      "datetime": "Wed 16 Sep, 7:30 PM – Sat 19 Sep",
-      "datetime_iso": "2026-09-16T19:30:00",
-      "datetime_end_iso": "2026-09-19",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/event/the-scramble/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "A collision between wrestling and dance.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "dance",
-        "wrestling",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "(In)Sight: Ritual Performance and Artists’ Talk",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/workshop/insight-ritual-performance-and-artists-talk/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "Part of NIGHT MOVES, this public program accompanies (In)Sight , a collaborative exhibition by Kuweni Dias Mendis and Grant x Wilkes exploring what it means to see and be seen. Within the exhibition, light, reflection and image unsettle perception.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "art",
-        "performance",
-        "talk"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Choral Cthonics",
-      "datetime": "Thu 27 Aug – Sat 26 Sep",
-      "datetime_iso": "2026-08-27",
-      "datetime_end_iso": "2026-09-26",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/exhibition/choral-cthonics/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "Featuring work by Dean Ansell, Cicadas (Maria Molina & Celeste Ricci), CAConrad, Léuli Eshrāghi, Mikhail Karikis, Jazz Money, Tina Stefanou.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "art",
-        "performance",
-        "exhibition"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Kuweni Dias Mendis & Grant x Wilkes: (In)Sight",
-      "datetime": "Thu 27 Aug – Sat 26 Sep",
-      "datetime_iso": "2026-08-27",
-      "datetime_end_iso": "2026-09-26",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/exhibition/insight/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "Interactive sensory experience, testing what it means to see and be seen.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "art",
-        "interactive",
-        "sensory"
-      ],
-      "social": false,
       "intellectual": false,
       "hands_on": true,
       "creative": true
     },
     {
       "title": "Scene Roulette",
-      "datetime": "Fri 11 Sep – Fri 25 Sep",
-      "datetime_iso": "2026-09-11",
-      "datetime_end_iso": "2026-09-25",
+      "datetime": "Fri 25 Sep",
+      "datetime_iso": "2026-09-25",
+      "datetime_end_iso": "",
       "location": "Metro Arts, Brisbane City",
       "link": "https://metroarts.com.au/workshop/laneway-event-scene-roulette/",
       "cost": "See link",
@@ -129,57 +41,13 @@
       "image": "",
       "category": "Workshop / Class",
       "tags": [
-        "acting",
         "theatre",
-        "networking"
+        "performance",
+        "community"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "The Scramble",
-      "datetime": "Wed 16 Sep, 7:30 PM – Sat 19 Sep",
-      "datetime_iso": "2026-09-16T19:30:00",
-      "datetime_end_iso": "2026-09-19",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/event/the-scramble/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "A collision between wrestling and dance.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "dance",
-        "wrestling",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "(In)Sight: Ritual Performance and Artists’ Talk",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Metro Arts, Brisbane City",
-      "link": "https://metroarts.com.au/workshop/insight-ritual-performance-and-artists-talk/",
-      "cost": "See link",
-      "source": "Metro Arts",
-      "description": "Part of NIGHT MOVES, this public program accompanies (In)Sight , a collaborative exhibition by Kuweni Dias Mendis and Grant x Wilkes exploring what it means to see and be seen. Within the exhibition, light, reflection and image unsettle perception.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "art",
-        "performance",
-        "talk"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
       "creative": true
     }
   ]

@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "brisbane-festival",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "ESCAPE",
@@ -22,93 +22,6 @@
         "performance",
         "dance",
         "theatre"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Scorched Earth",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/scorched-earth",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A murder. An interrogation. A clouded world of fantasy and fear.",
-      "image": "https://brisbanefestival.com.au/brisbane-festival-scorched-earth-credit-pato-cassinoni",
-      "category": "Concert / Music",
-      "tags": [
-        "theatre",
-        "drama",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "LEGENDS (of the Golden Arches)",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/legends-of-the-golden-arches",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A rip-roaring ride plunging two best friends into the depths of the Chinese afterlife, crossing genres, realities, and theatrical convention with infectious zest.",
-      "image": "https://brisbanefestival.com.au/legends-hero-large",
-      "category": "Concert / Music",
-      "tags": [
-        "theatre",
-        "comedy",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Bleachers",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/bleachers",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Stories of loneliness and togetherness sit side by side in this new disability-led dance-theatre work by Sprung Ensemble — a collective of 10 d/Deaf and disabled artists from Bundjalung Country in Northern NSW.",
-      "image": "https://brisbanefestival.com.au/thomas-oliver_sprung_hires-17-(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "theatre",
-        "disability"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Werewolf",
-      "datetime": "Wed 23 Sep",
-      "datetime_iso": "2026-09-23",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/werewolf",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Attention: Multiple new occurrences confirmed. Healthy citizens report to safehouses by sunset.",
-      "image": "https://brisbanefestival.com.au/bf26_werewolf_fa_cropped",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -180,108 +93,19 @@
       "creative": true
     },
     {
-      "title": "Generations & Dynasties: The Brady Family",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
+      "title": "Werewolf",
+      "datetime": "Wed 23 Sep",
+      "datetime_iso": "2026-09-23",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/generations-and-dynasties-the-brady-family",
+      "link": "https://brisbanefestival.com.au/events/werewolf",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "A powerful afternoon of storytelling, captivating conversation, and exploring how cultural legacy is passed down the generations through music.",
-      "image": "https://brisbanefestival.com.au/bf26_generations_bradyfamily_fa_(1)",
-      "category": "Public Lecture",
-      "tags": [
-        "storytelling",
-        "music",
-        "family"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Generations & Dynasties: The Briscoe Sisters",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/generations-and-dynasties-the-briscoe-sisters",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A heartfelt and unforgettable afternoon of conversation, connection and soulful music.",
-      "image": "https://brisbanefestival.com.au/bf26_generations_briscoesisters_fa_",
-      "category": "Public Lecture",
-      "tags": [
-        "storytelling",
-        "music",
-        "family"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Pasifika Made",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/pasifika-made-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Where Ancestral Knowledge Meets Contemporary Pacific Arts",
-      "image": "https://brisbanefestival.com.au/pasifikamade_bf_jadeferguson_@visualpoetssociety08.05_1655_re-edit-(1)",
+      "description": "Attention: Multiple new occurrences confirmed. Healthy citizens report to safehouses by sunset.",
+      "image": "https://brisbanefestival.com.au/bf26_werewolf_fa_cropped",
       "category": "Arts / Exhibition",
       "tags": [
-        "pacific",
-        "culture",
-        "arts"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "The Complete Bach Catalogue for Organ",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "From quiet contemplation to awe-inspiring grandeur.",
-      "image": "https://brisbanefestival.com.au/the-complete-bach-catalogue-brisbane-festival-credit-pete-wallis",
-      "category": "Concert / Music",
-      "tags": [
-        "bach",
-        "organ",
-        "classical"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "The Scramble",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/night-moves-the-scramble",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Two men hit the mat with scrappy energy, in a charged physical duet where exertion, resistance and care collide. They twist, tussle, grapple and brace — toe to toe in a work of dance-meets-wrestling that bristles with male intimacy, contest, and connection.",
-      "image": "https://brisbanefestival.com.au/the-scramble_luther-wilson-and-nathan-turtur_photog-andrea-mae_mg_7096",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "wrestling",
+        "theatre",
         "performance"
       ],
       "social": false,
@@ -290,47 +114,25 @@
       "creative": true
     },
     {
-      "title": "Attenborough's Ocean in Concert",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "title": "Family Fun Day supported by Brisbane Airport",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/attenboroughs-ocean-in-concert",
+      "link": "https://brisbanefestival.com.au/events/family-day-by-brisbane-airport",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Sir David Attenborough’s greatest message of hope brought to life, live by Camerata.",
-      "image": "https://brisbanefestival.com.au/selling-fast-(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "classical",
-        "nature",
-        "orchestra"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Common People Dance Eisteddfod",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/common-people-dance-eisteddfod-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Seven teams. One trophy. Unlimited glory. Let the battle begin!",
-      "image": "https://brisbanefestival.com.au/common-people-credit-joel-devereux",
+      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
+      "image": "https://brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
       "category": "Social / Meetup",
       "tags": [
-        "dance",
-        "competition",
-        "community"
+        "family",
+        "kids",
+        "free"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -357,69 +159,25 @@
       "creative": true
     },
     {
-      "title": "Human Nature: All The Hits Live",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/human-nature-all-the-hits-live",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Human Nature are one of Australia’s most successful pop vocal groups, known for flawless harmonies, slick showmanship and feel-good live energy.",
-      "image": "https://brisbanefestival.com.au/human-nature",
-      "category": "Concert / Music",
-      "tags": [
-        "pop",
-        "live",
-        "music"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Dance with Tom",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/dance-with-tom",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Join Tom for a joyful live stage experience celebrating Language from the Yugambeh Region, Culture and storytelling through movement, music and dance.",
-      "image": "https://brisbanefestival.com.au/9_dancewithtom_c-1267_iview_programpage_3600x2025_clean",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "culture",
-        "storytelling"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Family Fun Day supported by Brisbane Airport",
+      "title": "Missy Higgins",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/family-day-by-brisbane-airport",
+      "link": "https://brisbanefestival.com.au/events/missy-higgins",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
-      "image": "https://brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
-      "category": "Social / Meetup",
+      "description": "Missy Higgins, one of Australia’s most beloved voices, brings her iconic hits ‘Scar’, ‘The Special Two’, ‘Steer’ and ‘Futon Couch’ to the stage.",
+      "image": "https://brisbanefestival.com.au/missy-higgins-(1)",
+      "category": "Concert / Music",
       "tags": [
-        "family",
-        "kids",
-        "free"
+        "pop",
+        "singer-songwriter",
+        "live"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
       "creative": true
     },
     {
@@ -536,72 +294,6 @@
       "creative": true
     },
     {
-      "title": "ICEHOUSE",
-      "datetime": "Fri 18 Sep",
-      "datetime_iso": "2026-09-18",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/icehouse-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Back by popular demand, ICEHOUSE return with their legendary live energy and timeless hits like ‘Great Southern Land’, ‘Crazy’, and ‘Electric Blue’.",
-      "image": "https://brisbanefestival.com.au/icehouse(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "rock",
-        "live",
-        "music"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "PNAU",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/pnau",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "ARIA Award-winning electronic duo PNAU have become one of Australia’s most influential acts, evolving from Sydney’s underground scene to global charts.",
-      "image": "https://brisbanefestival.com.au/pnau",
-      "category": "Concert / Music",
-      "tags": [
-        "electronic",
-        "dance",
-        "music"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Missy Higgins",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/missy-higgins",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Missy Higgins, one of Australia’s most beloved voices, brings her iconic hits ‘Scar’, ‘The Special Two’, ‘Steer’ and ‘Futon Couch’ to the stage.",
-      "image": "https://brisbanefestival.com.au/missy-higgins-(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "pop",
-        "singer-songwriter",
-        "live"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Lord Mayor's City Hall Concerts: UQ Music Gala",
       "datetime": "Tue 22 Sep",
       "datetime_iso": "2026-09-22",
@@ -619,28 +311,6 @@
         "concert"
       ],
       "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Lord Mayor's City Hall Concerts: East of West",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/lord-mayors-city-hall-program-east-of-west",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Storytelling spun over rich traditional rhythms.",
-      "image": "https://brisbanefestival.com.au/east-of-west-by-vanessa-van-dalsen-6",
-      "category": "Concert / Music",
-      "tags": [
-        "storytelling",
-        "rhythm",
-        "music"
-      ],
-      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -669,28 +339,6 @@
       "creative": true
     },
     {
-      "title": "Talk of the Town: True crime, death and the live body",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/talk-of-the-town-2",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "We are living through a cultural obsession with true crime.",
-      "image": "https://brisbanefestival.com.au/scorched-earth-credit-soundofphotography",
-      "category": "Public Lecture",
-      "tags": [
-        "true crime",
-        "talk",
-        "culture"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Talk of the Town: Collective bodies, international spaces",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
@@ -711,28 +359,6 @@
       "intellectual": true,
       "hands_on": false,
       "creative": false
-    },
-    {
-      "title": "Dead Puppet Society: Sculptures & Sips Workshops",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/dead-puppet-society-sculptures-and-sips-workshops",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Love art and design with a side of champagne? Dive into one of Dead Puppet Society’s Sculptures & Sips workshops. Create and take home your own handmade creation, connect with like-minded makers, and work alongside Dead Puppet Society artisans in their Fabrication Workshop — where the puppets and props from their productions are imagined, designed, and brought to life.",
-      "image": "https://brisbanefestival.com.au/sculptures-and-sips-6_georgia-haupt",
-      "category": "Workshop / Class",
-      "tags": [
-        "sculpture",
-        "art",
-        "craft"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
     },
     {
       "title": "Dead Puppet Society: Puppet Construction Workshop",
@@ -757,6 +383,29 @@
       "creative": true
     },
     {
+      "title": "Social Sculptures",
+      "datetime": "Sat 3 Oct",
+      "datetime_iso": "2026-10-03",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://brisbanefestival.com.au/events/social-sculptures",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "A bold and unexpected after-dark art crawl.",
+      "image": "https://brisbanefestival.com.au/social-sculptures2",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "performance",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Love Me Again Market: Morningside",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
@@ -772,28 +421,6 @@
         "market",
         "fashion",
         "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Transurban Bridge to Brisbane",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/transurban-bridge-to-brisbane",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Run, walk or wheel for something bigger!",
-      "image": "https://brisbanefestival.com.au/5km-start",
-      "category": "Community / Other",
-      "tags": [
-        "running",
-        "walking",
-        "sport"
       ],
       "social": true,
       "intellectual": false,
@@ -914,51 +541,7 @@
       "creative": true
     },
     {
-      "title": "Wake Up & Sing! with the cast of Shel We",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/wake-up-and-sing-with-the-cast-of-shel-we",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Join in the chorus as we start the day with song and play!",
-      "image": "https://brisbanefestival.com.au/sbp-5",
-      "category": "Workshop / Class",
-      "tags": [
-        "singing",
-        "music",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Wake Up & Sing! with Cheep Trill Choir",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/wake-up-and-sing-cheep-trill",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Come along, raise your voice, and discover why singing together is one of life's simple pleasures.",
-      "image": "https://brisbanefestival.com.au/photo-1-(1)",
-      "category": "Workshop / Class",
-      "tags": [
-        "singing",
-        "choir",
-        "music"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Physical Movement Workshop Arts Workshop with the cast of ESCAPE",
+      "title": "Physical Movement Workshop with the cast of ESCAPE",
       "datetime": "Sat 26 Sep",
       "datetime_iso": "2026-09-26",
       "datetime_end_iso": "",
@@ -972,31 +555,10 @@
       "tags": [
         "dance",
         "theatre",
-        "performance"
+        "performance",
+        "beginners"
       ],
       "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Dance Workshop with the cast of Shel We",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://brisbanefestival.com.au/events/dance-workshop-with-shel-we",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Delight in this upbeat, full of mischief enchanting dance style.",
-      "image": "https://brisbanefestival.com.au/sbp-5",
-      "category": "Workshop / Class",
-      "tags": [
-        "dance",
-        "active",
-        "performance"
-      ],
-      "social": true,
       "intellectual": false,
       "hands_on": true,
       "creative": true
@@ -1038,93 +600,6 @@
         "performance",
         "dance",
         "theatre"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Scorched Earth",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/scorched-earth",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A murder. An interrogation. A clouded world of fantasy and fear.",
-      "image": "https://www.brisbanefestival.com.au/brisbane-festival-scorched-earth-credit-pato-cassinoni",
-      "category": "Concert / Music",
-      "tags": [
-        "theatre",
-        "drama",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "LEGENDS (of the Golden Arches)",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/legends-of-the-golden-arches",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A rip-roaring ride plunging two best friends into the depths of the Chinese afterlife, crossing genres, realities, and theatrical convention with infectious zest.",
-      "image": "https://www.brisbanefestival.com.au/legends-hero-large",
-      "category": "Concert / Music",
-      "tags": [
-        "theatre",
-        "comedy",
-        "performance"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Bleachers",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/bleachers",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Stories of loneliness and togetherness sit side by side in this new disability-led dance-theatre work by Sprung Ensemble — a collective of 10 d/Deaf and disabled artists from Bundjalung Country in Northern NSW.",
-      "image": "https://www.brisbanefestival.com.au/thomas-oliver_sprung_hires-17-(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "theatre",
-        "disability"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Werewolf",
-      "datetime": "Wed 23 Sep",
-      "datetime_iso": "2026-09-23",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/werewolf",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Attention: Multiple new occurrences confirmed. Healthy citizens report to safehouses by sunset.",
-      "image": "https://www.brisbanefestival.com.au/bf26_werewolf_fa_cropped",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -1196,108 +671,19 @@
       "creative": true
     },
     {
-      "title": "Generations & Dynasties: The Brady Family",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
+      "title": "Werewolf",
+      "datetime": "Wed 23 Sep",
+      "datetime_iso": "2026-09-23",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/generations-and-dynasties-the-brady-family",
+      "link": "https://www.brisbanefestival.com.au/events/werewolf",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "A powerful afternoon of storytelling, captivating conversation, and exploring how cultural legacy is passed down the generations through music.",
-      "image": "https://www.brisbanefestival.com.au/bf26_generations_bradyfamily_fa_(1)",
-      "category": "Public Lecture",
-      "tags": [
-        "storytelling",
-        "music",
-        "family"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Generations & Dynasties: The Briscoe Sisters",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/generations-and-dynasties-the-briscoe-sisters",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "A heartfelt and unforgettable afternoon of conversation, connection and soulful music.",
-      "image": "https://www.brisbanefestival.com.au/bf26_generations_briscoesisters_fa_",
-      "category": "Public Lecture",
-      "tags": [
-        "storytelling",
-        "music",
-        "family"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Pasifika Made",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/pasifika-made-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Where Ancestral Knowledge Meets Contemporary Pacific Arts",
-      "image": "https://www.brisbanefestival.com.au/pasifikamade_bf_jadeferguson_@visualpoetssociety08.05_1655_re-edit-(1)",
+      "description": "Attention: Multiple new occurrences confirmed. Healthy citizens report to safehouses by sunset.",
+      "image": "https://www.brisbanefestival.com.au/bf26_werewolf_fa_cropped",
       "category": "Arts / Exhibition",
       "tags": [
-        "pacific",
-        "culture",
-        "arts"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "The Complete Bach Catalogue for Organ",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/the-complete-bach-catalogue-for-organ",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "From quiet contemplation to awe-inspiring grandeur.",
-      "image": "https://www.brisbanefestival.com.au/the-complete-bach-catalogue-brisbane-festival-credit-pete-wallis",
-      "category": "Concert / Music",
-      "tags": [
-        "bach",
-        "organ",
-        "classical"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "The Scramble",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/night-moves-the-scramble",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Two men hit the mat with scrappy energy, in a charged physical duet where exertion, resistance and care collide. They twist, tussle, grapple and brace — toe to toe in a work of dance-meets-wrestling that bristles with male intimacy, contest, and connection.",
-      "image": "https://www.brisbanefestival.com.au/the-scramble_luther-wilson-and-nathan-turtur_photog-andrea-mae_mg_7096",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "wrestling",
+        "theatre",
         "performance"
       ],
       "social": false,
@@ -1306,47 +692,25 @@
       "creative": true
     },
     {
-      "title": "Attenborough's Ocean in Concert",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "title": "Family Fun Day supported by Brisbane Airport",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/attenboroughs-ocean-in-concert",
+      "link": "https://www.brisbanefestival.com.au/events/family-day-by-brisbane-airport",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Sir David Attenborough’s greatest message of hope brought to life, live by Camerata.",
-      "image": "https://www.brisbanefestival.com.au/selling-fast-(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "classical",
-        "nature",
-        "orchestra"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Common People Dance Eisteddfod",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/common-people-dance-eisteddfod-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Seven teams. One trophy. Unlimited glory. Let the battle begin!",
-      "image": "https://www.brisbanefestival.com.au/common-people-credit-joel-devereux",
+      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
+      "image": "https://www.brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
       "category": "Social / Meetup",
       "tags": [
-        "dance",
-        "competition",
-        "community"
+        "family",
+        "kids",
+        "free"
       ],
       "social": true,
       "intellectual": false,
-      "hands_on": false,
+      "hands_on": true,
       "creative": true
     },
     {
@@ -1373,69 +737,25 @@
       "creative": true
     },
     {
-      "title": "Human Nature: All The Hits Live",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/human-nature-all-the-hits-live",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Human Nature are one of Australia’s most successful pop vocal groups, known for flawless harmonies, slick showmanship and feel-good live energy.",
-      "image": "https://www.brisbanefestival.com.au/human-nature",
-      "category": "Concert / Music",
-      "tags": [
-        "pop",
-        "live",
-        "music"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Dance with Tom",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/dance-with-tom",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Join Tom for a joyful live stage experience celebrating Language from the Yugambeh Region, Culture and storytelling through movement, music and dance.",
-      "image": "https://www.brisbanefestival.com.au/9_dancewithtom_c-1267_iview_programpage_3600x2025_clean",
-      "category": "Concert / Music",
-      "tags": [
-        "dance",
-        "culture",
-        "storytelling"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Family Fun Day supported by Brisbane Airport",
+      "title": "Missy Higgins",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/family-day-by-brisbane-airport",
+      "link": "https://www.brisbanefestival.com.au/events/missy-higgins",
       "cost": "See link",
       "source": "Brisbane Festival",
-      "description": "Pack your sunscreen, grab the kids and glide onto the Village Green in Verso Projects. Festival Village, South Bank for a first-class day of free family-friendly performances, entertainment and activities.",
-      "image": "https://www.brisbanefestival.com.au/riverfire-bf2024-mellumae-camera-1-23-(1)",
-      "category": "Social / Meetup",
+      "description": "Missy Higgins, one of Australia’s most beloved voices, brings her iconic hits ‘Scar’, ‘The Special Two’, ‘Steer’ and ‘Futon Couch’ to the stage.",
+      "image": "https://www.brisbanefestival.com.au/missy-higgins-(1)",
+      "category": "Concert / Music",
       "tags": [
-        "family",
-        "kids",
-        "free"
+        "pop",
+        "singer-songwriter",
+        "live"
       ],
-      "social": true,
+      "social": false,
       "intellectual": false,
-      "hands_on": true,
+      "hands_on": false,
       "creative": true
     },
     {
@@ -1552,72 +872,6 @@
       "creative": true
     },
     {
-      "title": "ICEHOUSE",
-      "datetime": "Fri 18 Sep",
-      "datetime_iso": "2026-09-18",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/icehouse-26",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Back by popular demand, ICEHOUSE return with their legendary live energy and timeless hits like ‘Great Southern Land’, ‘Crazy’, and ‘Electric Blue’.",
-      "image": "https://www.brisbanefestival.com.au/icehouse(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "rock",
-        "live",
-        "music"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "PNAU",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/pnau",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "ARIA Award-winning electronic duo PNAU have become one of Australia’s most influential acts, evolving from Sydney’s underground scene to global charts.",
-      "image": "https://www.brisbanefestival.com.au/pnau",
-      "category": "Concert / Music",
-      "tags": [
-        "electronic",
-        "dance",
-        "music"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Missy Higgins",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/missy-higgins",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Missy Higgins, one of Australia’s most beloved voices, brings her iconic hits ‘Scar’, ‘The Special Two’, ‘Steer’ and ‘Futon Couch’ to the stage.",
-      "image": "https://www.brisbanefestival.com.au/missy-higgins-(1)",
-      "category": "Concert / Music",
-      "tags": [
-        "pop",
-        "singer-songwriter",
-        "live"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "Lord Mayor's City Hall Concerts: UQ Music Gala",
       "datetime": "Tue 22 Sep",
       "datetime_iso": "2026-09-22",
@@ -1635,28 +889,6 @@
         "concert"
       ],
       "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Lord Mayor's City Hall Concerts: East of West",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/lord-mayors-city-hall-program-east-of-west",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Storytelling spun over rich traditional rhythms.",
-      "image": "https://www.brisbanefestival.com.au/east-of-west-by-vanessa-van-dalsen-6",
-      "category": "Concert / Music",
-      "tags": [
-        "storytelling",
-        "rhythm",
-        "music"
-      ],
-      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true
@@ -1685,28 +917,6 @@
       "creative": true
     },
     {
-      "title": "Talk of the Town: True crime, death and the live body",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/talk-of-the-town-2",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "We are living through a cultural obsession with true crime.",
-      "image": "https://www.brisbanefestival.com.au/scorched-earth-credit-soundofphotography",
-      "category": "Public Lecture",
-      "tags": [
-        "true crime",
-        "talk",
-        "culture"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Talk of the Town: Collective bodies, international spaces",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
@@ -1727,28 +937,6 @@
       "intellectual": true,
       "hands_on": false,
       "creative": false
-    },
-    {
-      "title": "Dead Puppet Society: Sculptures & Sips Workshops",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/dead-puppet-society-sculptures-and-sips-workshops",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Love art and design with a side of champagne? Dive into one of Dead Puppet Society’s Sculptures & Sips workshops. Create and take home your own handmade creation, connect with like-minded makers, and work alongside Dead Puppet Society artisans in their Fabrication Workshop — where the puppets and props from their productions are imagined, designed, and brought to life.",
-      "image": "https://www.brisbanefestival.com.au/sculptures-and-sips-6_georgia-haupt",
-      "category": "Workshop / Class",
-      "tags": [
-        "sculpture",
-        "art",
-        "craft"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
     },
     {
       "title": "Dead Puppet Society: Puppet Construction Workshop",
@@ -1773,6 +961,29 @@
       "creative": true
     },
     {
+      "title": "Social Sculptures",
+      "datetime": "Sat 3 Oct",
+      "datetime_iso": "2026-10-03",
+      "datetime_end_iso": "",
+      "location": "Brisbane Festival",
+      "link": "https://www.brisbanefestival.com.au/events/social-sculptures",
+      "cost": "See link",
+      "source": "Brisbane Festival",
+      "description": "A bold and unexpected after-dark art crawl.",
+      "image": "https://www.brisbanefestival.com.au/social-sculptures2",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "performance",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Love Me Again Market: Morningside",
       "datetime": "Sun 20 Sep",
       "datetime_iso": "2026-09-20",
@@ -1788,28 +999,6 @@
         "market",
         "fashion",
         "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Transurban Bridge to Brisbane",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/transurban-bridge-to-brisbane",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Run, walk or wheel for something bigger!",
-      "image": "https://www.brisbanefestival.com.au/5km-start",
-      "category": "Community / Other",
-      "tags": [
-        "running",
-        "walking",
-        "sport"
       ],
       "social": true,
       "intellectual": false,
@@ -1930,51 +1119,7 @@
       "creative": true
     },
     {
-      "title": "Wake Up & Sing! with the cast of Shel We",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/wake-up-and-sing-with-the-cast-of-shel-we",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Join in the chorus as we start the day with song and play!",
-      "image": "https://www.brisbanefestival.com.au/sbp-5",
-      "category": "Workshop / Class",
-      "tags": [
-        "singing",
-        "music",
-        "community"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Wake Up & Sing! with Cheep Trill Choir",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/wake-up-and-sing-cheep-trill",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Come along, raise your voice, and discover why singing together is one of life's simple pleasures.",
-      "image": "https://www.brisbanefestival.com.au/photo-1-(1)",
-      "category": "Workshop / Class",
-      "tags": [
-        "singing",
-        "choir",
-        "music"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Physical Movement Workshop Arts Workshop with the cast of ESCAPE",
+      "title": "Physical Movement Workshop with the cast of ESCAPE",
       "datetime": "Sat 26 Sep",
       "datetime_iso": "2026-09-26",
       "datetime_end_iso": "",
@@ -1988,31 +1133,10 @@
       "tags": [
         "dance",
         "theatre",
-        "performance"
+        "performance",
+        "beginners"
       ],
       "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
-      "title": "Dance Workshop with the cast of Shel We",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "",
-      "location": "Brisbane Festival",
-      "link": "https://www.brisbanefestival.com.au/events/dance-workshop-with-shel-we",
-      "cost": "See link",
-      "source": "Brisbane Festival",
-      "description": "Delight in this upbeat, full of mischief enchanting dance style.",
-      "image": "https://www.brisbanefestival.com.au/sbp-5",
-      "category": "Workshop / Class",
-      "tags": [
-        "dance",
-        "active",
-        "performance"
-      ],
-      "social": true,
       "intellectual": false,
       "hands_on": true,
       "creative": true

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Session at El Camino
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-8dop8t@dothings
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20261102
+SUMMARY:Sunday Session at El Camino
+DESCRIPTION:From Sunday September 27 to November 1\, settle in every Sunday
+  from 1pm-4pm for live acoustic sessions.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/sunday-session-at-el-camino
+END:VEVENT
+END:VCALENDAR

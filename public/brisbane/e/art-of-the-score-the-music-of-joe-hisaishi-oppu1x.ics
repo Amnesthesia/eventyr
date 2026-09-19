@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art of the Score: The Music of Joe Hisaishi
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-oppu1x@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T193000
+DTEND;TZID=Australia/Brisbane:20261003T213000
+SUMMARY:Art of the Score: The Music of Joe Hisaishi
+DESCRIPTION:Podcasters Andrew Pogson\, Dan Golding and conductor Nicholas B
+ uc will guide audiences through the musical world of Joe Hisaishi\, featur
+ ing fan-favourites from the composers work with Studio Ghibli.
+LOCATION:Queensland Symphony Orchestra
+URL:https://qso.com.au/events/2026/for-movie-music-lovers/the-music-of-joe-
+ hisaishi
+END:VEVENT
+END:VCALENDAR

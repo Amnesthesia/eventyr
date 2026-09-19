@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mt Gravatt Bowls Club Trivia Event (Monthly)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jgaqy9@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T113000
+DTEND;TZID=Australia/Brisbane:20261002T140000
+SUMMARY:Mt Gravatt Bowls Club Trivia Event (Monthly)
+DESCRIPTION:Looking for some free\, fun entertainment to enjoy each month? 
+ Bring your friends and family along to trivia hosted by Think Trivia at th
+ e Mount Gravatt Bowls Club. Our live multimedia trivia is guaranteed to en
+ thrall\, with questions touching on all manner of things. Best of all\, yo
+ u can win some great prizes. Book your team a table now to secure your cha
+ nce of winning. See you there! Bookings: (07) 3349 2367
+LOCATION:Mt Gravatt Bowls Club\, 1873 Logan Road
+URL:https://www.thinktrivia.com.au/weeklyevents/mt-gravatt-bowls-club-trivi
+ a-night
+END:VEVENT
+END:VCALENDAR

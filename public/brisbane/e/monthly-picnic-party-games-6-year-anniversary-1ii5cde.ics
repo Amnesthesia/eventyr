@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Monthly Picnic & Party Games! (6 Year Anniversary!) 🍛🎲
+ 🎉
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ii5cde@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T103000
+DTEND;TZID=Australia/Brisbane:20260926T133000
+SUMMARY:Monthly Picnic & Party Games! (6 Year Anniversary!) 🍛🎲🎉
+DESCRIPTION:We will meet at the tables in the picture shown above which are
+  located near the big waterfall. I have some games but feel free to bring 
+ games of your own.
+LOCATION:Roma Street Parkland\, 1 Parkland Blvd\, Brisbane City\, QL\, Bris
+ bane City\, QL
+URL:https://www.meetup.com/north-brisbane-social-games/events/314702395/
+END:VEVENT
+END:VCALENDAR

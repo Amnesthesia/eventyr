@@ -3,9 +3,32 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "felonsbrewingco",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
+    {
+      "title": "Weekly Eats",
+      "datetime": "Mon 21 Sep – Thu 24 Sep",
+      "datetime_iso": "2026-09-21",
+      "datetime_end_iso": "2026-09-24T17:00:00",
+      "location": "Felons Brewing Co",
+      "link": "https://felonsbrewingco.com.au/blogs/whats-on/weekly-eats-autumn",
+      "cost": "See link",
+      "source": "Felons Brewing Co",
+      "description": "Ease into the cooler months with dishes full of heart and flavour, paired with well-balanced beers that bring out the best in every bite. Our new W...",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "beer",
+        "drinks"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
     {
       "title": "GOOBOYS [UK]",
       "datetime": "Fri 25 Sep",
@@ -31,50 +54,6 @@
       "creative": true
     },
     {
-      "title": "Positive Spin",
-      "datetime": "Fri 18 Sep, 8:00 PM",
-      "datetime_iso": "2026-09-18T20:00:00",
-      "datetime_end_iso": "",
-      "location": "Felons Brewing Co",
-      "link": "https://felonsbrewingco.com.au/blogs/whats-on/positive-spin",
-      "cost": "See link",
-      "source": "Felons Brewing Co",
-      "description": "Positive Spin is an indie-alt combination of Curtis and Kyla based out of Magandjin / Brisbane. Creating moments packed with catchy basslines and ...",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "indie",
-        "live music",
-        "brisbane"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Silky Roads",
-      "datetime": "Sat 19 Sep, 8:00 PM",
-      "datetime_iso": "2026-09-19T20:00:00",
-      "datetime_end_iso": "",
-      "location": "Felons Brewing Co",
-      "link": "https://felonsbrewingco.com.au/blogs/whats-on/silky-roads",
-      "cost": "See link",
-      "source": "Felons Brewing Co",
-      "description": "Get ready to groove with Silky Roads, the Sydney-based electro-funk-pop sensation that's been turning heads and moving feet. This high-energy quart...",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "funk",
-        "pop",
-        "live music"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
       "title": "The Honeysliders",
       "datetime": "Sun 27 Sep",
       "datetime_iso": "2026-09-27",
@@ -91,6 +70,30 @@
         "music",
         "concert",
         "band"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "ISU TAKI ft. Ghetto Kumbe",
+      "datetime": "Fri 2 Oct",
+      "datetime_iso": "2026-10-02",
+      "datetime_end_iso": "",
+      "location": "Felons Brewing Co",
+      "link": "https://felonsbrewingco.com.au/blogs/whats-on/isu-taki-ft-rumbo-tamba-afrosideral-2",
+      "cost": "See link",
+      "source": "Felons Brewing Co",
+      "description": "ISU TAKI is a collective of Latin-American DJs/promoters that began as a response to the lack of representation of emerging movements of undergroun...",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "dj",
+        "electronic",
+        "nightlife"
       ],
       "social": true,
       "intellectual": false,
@@ -121,42 +124,21 @@
       "creative": true
     },
     {
-      "title": "Weekly Eats",
-      "datetime": "Mon 14 Sep – Thu 17 Sep",
-      "datetime_iso": "2026-09-14",
-      "datetime_end_iso": "2026-09-17T17:00:00",
-      "location": "Felons Brewing Co",
-      "link": "https://felonsbrewingco.com.au/blogs/whats-on/weekly-eats-autumn",
-      "cost": "See link",
-      "source": "Felons Brewing Co",
-      "description": "Ease into the cooler months with dishes full of heart and flavour, paired with well-balanced beers that bring out the best in every bite. Our new W...",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining",
-        "beer"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "CINEMA SESSIONS",
-      "datetime": "Sun 13 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-13T19:00:00",
+      "title": "Experience CINEMA SESSIONS",
+      "datetime": "Sun 20 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-20T19:00:00",
       "datetime_end_iso": "",
       "location": "Felons Brewing Co",
       "link": "https://felonsbrewingco.com.au/blogs/weekly/cinema-sessions",
-      "cost": "See link",
+      "cost": "FREE ENTRY",
       "source": "Felons Brewing Co",
       "description": "Cosy up in a beanbag, grab a beer & catch your favourite flicks every Tuesday night! FREE ENTRY",
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
         "film",
-        "performance"
+        "beer",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -164,9 +146,9 @@
       "creative": true
     },
     {
-      "title": "Brewery Tours",
-      "datetime": "Sun 13 Sep, 12:00 PM",
-      "datetime_iso": "2026-09-13T12:00:00",
+      "title": "Experience Brewery Tours",
+      "datetime": "Sun 20 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-20T12:00:00",
       "datetime_end_iso": "",
       "location": "Felons Brewing Co",
       "link": "https://felonsbrewingco.com.au/blogs/weekly/brewery-tours",
@@ -177,7 +159,8 @@
       "category": "Workshop / Class",
       "tags": [
         "tour",
-        "beer"
+        "beer",
+        "drinks"
       ],
       "social": false,
       "intellectual": true,
@@ -185,9 +168,9 @@
       "creative": false
     },
     {
-      "title": "Felons Yoga",
-      "datetime": "Sun 13 Sep, 5:00 PM",
-      "datetime_iso": "2026-09-13T17:00:00",
+      "title": "Yoga Felons Yoga",
+      "datetime": "Sun 20 Sep, 5:00 PM",
+      "datetime_iso": "2026-09-20T17:00:00",
       "datetime_end_iso": "",
       "location": "Felons Brewing Co",
       "link": "https://felonsbrewingco.com.au/blogs/weekly/felons-yoga",
@@ -200,7 +183,8 @@
         "fitness",
         "yoga",
         "wellness",
-        "beer"
+        "beer",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:You can just build things x Axiometa
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-up4d04@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T171500
+DTEND;TZID=Australia/Brisbane:20260925T203000
+SUMMARY:You can just build things x Axiometa
+DESCRIPTION:The world is gearing up to have its 2023 ChatGPT moment all ove
+ r again ... but this time it's Physical AI! Our mission is to help you fee
+ l inspired\, excite
+LOCATION:The Precinct\, Level 1\, 2\, and 3\, 315 Brunswick Street\, Fortit
+ ude Valley\, Fortitude Valley
+URL:https://www.meetup.com/physicalaibuilders/events/315829187/
+END:VEVENT
+END:VCALENDAR

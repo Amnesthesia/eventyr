@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:2026 Caboolture Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-11aieg6@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:2026 Caboolture Show
+DESCRIPTION:Including Triple B Rodeo Series “Winter Showdown”
+LOCATION:Caboolture Markets
+URL:https://caboolturemarkets.com.au/caboolture-show/
+END:VEVENT
+END:VCALENDAR

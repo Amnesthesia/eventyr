@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "redlandscoastmuseum",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Babies and Toddlers : Textiles Exhibition",
@@ -46,6 +46,31 @@
         "culture",
         "history",
         "photography"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Our Communities Textiles Treasures : Textiles Exhibition",
+      "datetime": "Thu 1 Oct 2026 – Sun 31 Jan 2027",
+      "datetime_iso": "2026-10-01",
+      "datetime_end_iso": "2027-01-31",
+      "location": "Redlands Coast Museum",
+      "link": "https://redlandscoastmuseum.org.au/exhibitions/our-communities-textiles-treasures-textiles-exhibition/",
+      "cost": "See link",
+      "source": "Redlands Coast Museum",
+      "description": "Every textile has a story to tell, and every story helps preserve the history of the Redlands.\nCommunity Textile Treasures celebrates a collection of special textile items connected to local families, memories, and milestones. From handmade garments and embroidered linens to treasured keepsakes and heirloom pieces, each item on display carries a unique story waiting to be shared.\nAmong the exhibition are pieces lovingly created for family members, treasured sewing projects, inherited textiles, and items that have become cherished reminders of people, places, and moments in time. Together, they create a rich tapestry of community history, craftsmanship, and personal connections.\nAs you explore the exhibition, discover the fascinating stories woven into every stitch and learn how these treasured objects help tell the story of the Redlands and the people who have called it home.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "history",
+        "textiles",
+        "craft",
+        "culture"
       ],
       "social": false,
       "intellectual": true,

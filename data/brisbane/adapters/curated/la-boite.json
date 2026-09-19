@@ -3,31 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "la-boite",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
-    {
-      "title": "KOREABOO",
-      "datetime": "Wed 2 Sep – Sat 19 Sep",
-      "datetime_iso": "2026-09-02",
-      "datetime_end_iso": "2026-09-19",
-      "location": "La Boite Theatre, Kelvin Grove",
-      "link": "https://laboite.com.au/shows/koreaboo",
-      "cost": "See link",
-      "source": "La Boite Theatre",
-      "description": "Discussions of inter-country adoption, culturally contextual references to diet and body image. Theatrical haze, smoke and flashing lights. Suitable for ages 14+",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "theatre",
-        "performance",
-        "drama"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Community Choir: The Musical",
       "datetime": "Wed 23 Sep – Sat 26 Sep",
@@ -50,6 +28,28 @@
         "community"
       ],
       "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Abode of Music Presents Panchabhoota – the 5 elements of nature",
+      "datetime": "Sun 4 Oct",
+      "datetime_iso": "2026-10-04",
+      "datetime_end_iso": "",
+      "location": "La Boite Theatre, Kelvin Grove",
+      "link": "https://laboite.com.au/shows/panchabhoota-the-5-elements-of-nature",
+      "cost": "See link",
+      "source": "La Boite Theatre",
+      "description": "Svaraalaya – the Abode of Music presents Panchabhoota – the 5 elements of nature through music. This features a combination of group and solo singing, involving 80 vocalists. They will be supported by talented instrumentalists. The music presented will be South Indian Classical music.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "classical"
+      ],
+      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": true

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:WOLF by Circa
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1eq7nn9@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:WOLF by Circa
+DESCRIPTION:Get ready for a circus experience with serious bite as internat
+ ionally acclaimed Circa brings WOLF to Redland Performing Arts Centre
+LOCATION:Must Do Brisbane
+URL:https://www.mustdobrisbane.com/whats-on/wolf-circa-redland-performing-a
+ rts-centre
+END:VEVENT
+END:VCALENDAR

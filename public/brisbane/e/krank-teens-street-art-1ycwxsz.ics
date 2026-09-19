@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:KRANK | Teens Street Art
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ycwxsz@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T100000
+DTEND;TZID=Australia/Brisbane:20261002T120000
+SUMMARY:KRANK | Teens Street Art
+DESCRIPTION:Guided by local artist PhilB\, in this hands-on workshop\, part
+ icipants will learn the basics of being a street artist.
+LOCATION:Living Museum of Logan
+URL:https://www.loganarts.com.au/event/krank-teens-street-art/
+END:VEVENT
+END:VCALENDAR

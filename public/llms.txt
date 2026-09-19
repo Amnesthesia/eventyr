@@ -39,6 +39,16 @@ plain JSON with no API key and no backend — every URL below is a static file.
    https://www.dothings.lol/ai/openapi.yaml (operations getIndex,
    getDayEvents, getWeekEvents).
 
+4. Claude specifically (Desktop, claude.ai, Claude Code) can skip fetching
+   this file by hand and connect to https://mcp.dothings.lol/mcp as an MCP
+   server instead, with list_cities and get_events tools over the same data.
+   Not available to ChatGPT or Gemini, which don't support MCP.
+
+5. An assistant that supports installable Agent Skills can load
+   https://www.dothings.lol/skill/dothings-events/SKILL.md instead of reading
+   this file — it covers the same fetch order plus a preference-memory
+   protocol for tailoring picks across conversations.
+
 ## Fields
 
 Every file has: data_as_of (the date this data was generated — treat listings
@@ -88,4 +98,4 @@ more than a few days old, say so rather than presenting it as current.
 - Never invent an event that is not in the fetched file. If nothing fits,
   say so instead of padding the answer.
 
-Generated 2026-09-17.
+Generated 2026-09-20.

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Box Show
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-igcvg9@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T103000
+DTEND;TZID=Australia/Brisbane:20260930T123000
+SUMMARY:The Box Show
+DESCRIPTION:You'll never look at a cardboard box the same way again! Prepar
+ e to have your minds blown! Four quirky misfits turn everyday junk – whe
+ elie bins\, kitchen scraps\, plastic bags – into an electrifying symphon
+ y of beats\, rhythm and creativity. This high-energy adventure transforms 
+ trash into treasure with explosive drumming\, dance and laugh-out-loud com
+ edy. An abandoned kitchen becomes a drum set\, plastic bags turn into inst
+ ruments and the human body becomes a sound machine! It's a thrilling celeb
+ ration of rhythm\, imagination and sustainability for all ages. Speaking i
+ n 'Rhythmish' – a playful language made of rhythm and gibberish – this
+  show will hook you from start to finish! Join these musical misfits who r
+ einvigorate forgotten junk. Awards Winner – Critic's Pick Award – Sydn
+ ey Fringe (2018) Weekly Winner – Best of Kids and Family – Adelaide Fr
+ inge (2025) Weekly Winner – Best of Kids and Family – Adelaide Fringe 
+ (2026)
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/the-box-show
+END:VEVENT
+END:VCALENDAR

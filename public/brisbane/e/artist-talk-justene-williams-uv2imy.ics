@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Artist Talk: Justene Williams
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-uv2imy@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T103000
+DTEND;TZID=Australia/Brisbane:20261003T110000
+SUMMARY:Artist Talk: Justene Williams
+DESCRIPTION:Join artist Justene Williams in conversation as she reflects th
+ e creation of ‘Justene Williams: Once We Were Mudskippers’\, her large
+ st survey exhibition to date. Through ambitious installations and a vivid 
+ combination of video\, performance and sculpture\, the exhibition traces t
+ wo decades of Williams's practice. In conversation with Ellie Buttrose (Cu
+ rator\, Contemporary Australian Art\, QAGOMA).
+LOCATION:QAG\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/event/artist-talk-justene-williams-2026-1
+ 0-03
+END:VEVENT
+END:VCALENDAR

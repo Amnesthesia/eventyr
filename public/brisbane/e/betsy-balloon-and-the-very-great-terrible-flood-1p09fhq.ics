@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Betsy Balloon and the Very Great Terrible Flood
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1p09fhq@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T140000
+DTEND;TZID=Australia/Brisbane:20260923T160000
+SUMMARY:Betsy Balloon and the Very Great Terrible Flood
+DESCRIPTION:Betsy Balloon is a rambunctious modern fable presented with ori
+ ginal music and illustration based on a story by Bill Manhire.
+LOCATION:Cremorne Theatre\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/bf-betsy-balloon-and-the-very-gre
+ at-terrible-flood/
+END:VEVENT
+END:VCALENDAR

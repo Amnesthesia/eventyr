@@ -3,7 +3,56 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "clayschool",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Artist Talk with Euan Craig",
+      "datetime": "Fri 2 Oct, 6:00 PM",
+      "datetime_iso": "2026-10-02T18:00:00",
+      "datetime_end_iso": "2026-10-02T19:00:00",
+      "location": "Clayschool Brisbane, 11 Crombie St, M",
+      "link": "https://www.clayschool.com.au/workshops/euan-craig-artist-talk",
+      "cost": "See link",
+      "source": "Clayschool Brisbane",
+      "description": "2nd Oct 2026 | $20 (at the door) We are hosting an evening artist talk with Euan Craig on Friday 2nd of October from 6pm.",
+      "image": "https://images.squarespace-cdn.com/content/v1/5ff4ebef8ed1a2514c08cec5/da8044a3-3daf-4f7e-88ab-cb25c2ceb643/Euan-CRAIG-Portrait-1024x1024.jpg",
+      "category": "Public Lecture",
+      "tags": [
+        "art",
+        "performance",
+        "ceramics",
+        "history",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "SOLD OUT // Euan Craig - Chawan (Tea Bowl) Workshop",
+      "datetime": "Sat 3 Oct, 9:00 AM – Sun 4 Oct",
+      "datetime_iso": "2026-10-03T09:00:00",
+      "datetime_end_iso": "2026-10-04T15:00:00",
+      "location": "Clayschool Brisbane, 11 Crombie Street",
+      "link": "https://www.clayschool.com.au/workshops/euan-craig-chawan-workshop",
+      "cost": "See link",
+      "source": "Clayschool Brisbane",
+      "description": "Two-day hands-on workshop providing demonstrations and making. This workshop will explore and, hopefully, demystify the meaning, aesthetics and practical considerations of Chawan, and give the participants the skills and understanding they need to include Chawan in their own studio practice.",
+      "image": "https://images.squarespace-cdn.com/content/v1/5ff4ebef8ed1a2514c08cec5/b60c1777-45d9-4f1f-a222-25896c59823e/IMG_2162.JPG",
+      "category": "Workshop / Class",
+      "tags": [
+        "art",
+        "ceramics",
+        "craft",
+        "design",
+        "beginners"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    }
+  ]
 }

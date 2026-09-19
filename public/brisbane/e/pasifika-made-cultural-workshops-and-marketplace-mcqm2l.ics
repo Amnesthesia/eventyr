@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pasifika Made Cultural Workshops and Marketplace
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mcqm2l@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T100000
+DTEND;TZID=Australia/Brisbane:20260921T160000
+SUMMARY:Pasifika Made Cultural Workshops and Marketplace
+DESCRIPTION:A series of interactive workshops and a marketplace celebrating
+  Pacific Islander artistry\, crafts\, and cultural practices. Participants
+  can engage directly with artisans to learn traditional skills and explore
+  creative techniques.
+LOCATION:Festival Village\, South Bank
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR

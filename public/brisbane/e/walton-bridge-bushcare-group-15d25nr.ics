@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Walton Bridge Bushcare Group
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15d25nr@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T153000
+DTEND;TZID=Australia/Brisbane:20261003T173000
+SUMMARY:Walton Bridge Bushcare Group
+DESCRIPTION:Walton Bridge bushcare is on the first Saturday of every month 
+ except January. The working bee starts at 3:30 pm and goes until 5:30 pm\,
+  daylight permitting. The bushcare site is located along the creek banks w
+ here Fish Creek joins Enoggera Creek at Walton Bridge Reserve 941 Waterwor
+ ks Road The Gap. You need to wear […]
+LOCATION:Walton Bridge Reserve\, 941 Waterworks Road\, THE GAP\, QLD\, 4061
+URL:https://thegapsustainability.org/event/walton-bridge-bushcare-group-2/2
+ 026-10-03/
+END:VEVENT
+END:VCALENDAR

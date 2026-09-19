@@ -3,11 +3,11 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "qagoma",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
-      "title": "Make-Believe Magic: The Worlds of The Jim Henson Company",
+      "title": "Make Believe: Magic, the Worlds of the Jim Henson Company",
       "datetime": "Sat 12 Sep 2026, 10:00 AM – Sun 18 Apr 2027",
       "datetime_iso": "2026-09-12T10:00:00",
       "datetime_end_iso": "2027-04-18",
@@ -19,10 +19,12 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "puppetry",
+        "art",
+        "exhibition",
+        "gallery",
         "film",
         "design",
-        "exhibition"
+        "performance"
       ],
       "social": false,
       "intellectual": false,
@@ -30,7 +32,7 @@
       "creative": true
     },
     {
-      "title": "Archie Moore: kith and kin",
+      "title": "Archie Moore: Kith and Kin",
       "datetime": "Sat 27 Sep 2025, 10:00 AM – Sun 18 Oct 2026",
       "datetime_iso": "2025-09-27T10:00:00",
       "datetime_end_iso": "2026-10-18",
@@ -42,10 +44,11 @@
       "image": "",
       "category": "Arts / Exhibition",
       "tags": [
-        "firstnations",
-        "history",
         "art",
-        "installation"
+        "exhibition",
+        "gallery",
+        "history",
+        "indigenous"
       ],
       "social": false,
       "intellectual": true,
@@ -99,29 +102,6 @@
       "creative": true
     },
     {
-      "title": "Vipoo Srivilasa: Express Yourself",
-      "datetime": "Sat 11 Oct 2025, 10:00 AM – Sun 13 Sep 2026",
-      "datetime_iso": "2025-10-11T10:00:00",
-      "datetime_end_iso": "2026-09-13",
-      "location": "GOMA, Stanley Place, South Bank",
-      "link": "https://www.qagoma.qld.gov.au/exhibition/vipoo-srivilasa-express-yourself",
-      "cost": "Free",
-      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
-      "description": "How do you feel on the first day of school? Or when you win a really hard game? What about when someone you love is upset? Artist Vipoo Srivilasa invites children to explore their emotions through drawing, dancing, and digital activities as part of his Children’s Art Centre exhibition. The project features a reprisal of Vipoo’s 2021 activity ‘Garden of Love’ along with fun new interactives, encouraging visitors to consider the spectrum of human emotion with curiosity and an open mind. About the artist Vipoo Srivilasa is a Melbourne-based, Thai-born artist who primarily makes ceramics. He is also interested in installation and audience participation. Positivity, beauty and accessibility are important attributes of his art practice, and he is particularly known for creating ceramic characters covered in flowers, called ‘flower bears’. Accessibility An exhibition guide in large print and braille is available in the exhibition space. The large print exhibition guide is also available for download as a PDF file: [documentList block]",
-      "image": "",
-      "category": "Workshop / Class",
-      "tags": [
-        "kids",
-        "art",
-        "emotions",
-        "interactive"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": true
-    },
-    {
       "title": "Inscribing a Life",
       "datetime": "Sat 27 Sep 2025, 10:00 AM – Sun 18 Oct 2026",
       "datetime_iso": "2025-09-27T10:00:00",
@@ -161,29 +141,6 @@
         "culture",
         "art",
         "history"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Snap Blak",
-      "datetime": "Sat 30 Aug 2025, 10:00 AM – Sun 13 Sep 2026",
-      "datetime_iso": "2025-08-30T10:00:00",
-      "datetime_end_iso": "2026-09-13",
-      "location": "GOMA, Stanley Place, South Bank",
-      "link": "https://www.qagoma.qld.gov.au/exhibition/snap-blak",
-      "cost": "Free",
-      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
-      "description": "'Snap Blak' brings together dynamic examples of contemporary Aboriginal and Torres Strait Island photography that champion Indigenous self-representation, with assertions of visual sovereignty that resist prevalent stereotypes and re-present their people. Throughout ‘Snap Blak’ each photograph both subverts the settler-colonial legacy of photography of Indigenous people as an instrument of disempowerment and misrepresentation; while asserting identity, cultural continuity and belonging.",
-      "image": "",
-      "category": "Arts / Exhibition",
-      "tags": [
-        "photography",
-        "indigenous",
-        "art",
-        "sovereignty"
       ],
       "social": false,
       "intellectual": true,
@@ -237,6 +194,30 @@
       "creative": true
     },
     {
+      "title": "Justene Williams: Once We Were Mudskippers",
+      "datetime": "Sat 3 Oct 2026, 10:00 AM – Sun 7 Mar 2027",
+      "datetime_iso": "2026-10-03T10:00:00",
+      "datetime_end_iso": "2027-03-07",
+      "location": "QAG, Stanley Place, South Bank",
+      "link": "https://www.qagoma.qld.gov.au/exhibition/justene-williams-once-we-were-mudskippers",
+      "cost": "Free",
+      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
+      "description": "Spanning performative videos, sculpture, sound and installation from the past 20 years, including a wealth of new works, ‘Once We Were Mudskippers’ emphasises the aesthetic ambition of Justene Williams’s expansive practice. Like the amphibious fish invoked by the exhibition’s title, which exist between worlds, Williams’s artworks are an amalgam of materials and approaches and remain grounded in art history while reflecting contemporary issues. Adopting a do-it-yourself strategy, Williams fuses disparate textures and concepts into compelling artworks that speak to her belief that our shared future can be forged with resources at hand and transformed by the imagination. Williams’s artworks address ideals of beauty, careerist and consumerist pressures, the strangeness of living in both the physical body and virtual space, and human connections to rituals and the afterlife. ‘Once We Were Mudskippers’ is characterised by Justene Williams’s unwavering conviction that art is a world where artists and audiences can experiment and commune.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "sculpture",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Make Believe: Magic, the Worlds of The Jim Henson Company",
       "datetime": "Sat 12 Sep 2026, 10:00 AM – Sun 18 Apr 2027",
       "datetime_iso": "2026-09-12T10:00:00",
@@ -279,6 +260,97 @@
         "history",
         "art",
         "installation"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Low Sensory Viewing",
+      "datetime": "Fri 25 Sep, 9:00 AM",
+      "datetime_iso": "2026-09-25T09:00:00",
+      "datetime_end_iso": "2026-09-25T10:00:00",
+      "location": "GOMA, Stanley Place, South Bank",
+      "link": "https://www.qagoma.qld.gov.au/event/low-sensory-viewing-2026-09-25",
+      "cost": "Buy Tickets",
+      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
+      "description": "Visit 'Make, Believe, Magic: The Worlds of the Jim Henson Company' in a quiet and relaxed atmosphere before opening hours. Suitable for Autistic visitors and visitors with sensory sensitivity or disability. Volumes within the gallery will be lowered and high sensory areas will be signposted. Exclusive to the low sensory viewing: Touch the magic of Sesame Street! Explore our tactile trolley featuring genuine materials from The Jim Henson Company, including fabric swatches from beloved Sesame Street puppets. Exhibition ticket required. [documentList block]",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "family"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Tour for Visitors with Hearing Loss",
+      "datetime": "Fri 25 Sep, 10:15 AM",
+      "datetime_iso": "2026-09-25T10:15:00",
+      "datetime_end_iso": "2026-09-25T11:15:00",
+      "location": "GOMA, Stanley Place, South Bank",
+      "link": "https://www.qagoma.qld.gov.au/event/tour-for-visitors-with-hearing-loss-2026-09-25",
+      "cost": "Buy Tickets",
+      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
+      "description": "Join one of our passionate volunteer guides for a guided tour of 'Make, Believe, Magic: The Worlds of the Jim Henson Company' at GOMA. Suitable for visitors with cochlear implant, hearing aids or hearing loss. Assistive listening devices FM System is available and bookings are essential.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "tour"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Phone-free Viewing: Make Believe: Magic",
+      "datetime": "Sat 3 Oct, 8:30 AM",
+      "datetime_iso": "2026-10-03T08:30:00",
+      "datetime_end_iso": "2026-10-03T10:00:00",
+      "location": "GOMA, Stanley Place, South Bank",
+      "link": "https://www.qagoma.qld.gov.au/event/phone-free-viewing-make-believe-magic-2026-10-03",
+      "cost": "Buy Tickets",
+      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
+      "description": "Free yourself from digital devices and immerse yourself in the experience of 'Make,Believe,Magic: The Worlds of The Jim Henson Company', without the crowds. Grab a pencil and paper to sketch iconic characters in the exhibition, or simply take a seat, slow down, and admire your favourite puppet friends up close. Audiences are encouraged to leave their phones and digital devices at the free cloak room before attending this viewing. / Free drawing materials available.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "drawing"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Artist Talk: Justene Williams",
+      "datetime": "Sat 3 Oct, 10:30 AM",
+      "datetime_iso": "2026-10-03T10:30:00",
+      "datetime_end_iso": "2026-10-03T11:00:00",
+      "location": "QAG, Stanley Place, South Bank",
+      "link": "https://www.qagoma.qld.gov.au/event/artist-talk-justene-williams-2026-10-03",
+      "cost": "Free",
+      "source": "Queensland Art Gallery | Gallery of Modern Art (QAGOMA)",
+      "description": "Join artist Justene Williams in conversation as she reflects the creation of ‘Justene Williams: Once We Were Mudskippers’, her largest survey exhibition to date. Through ambitious installations and a vivid combination of video, performance and sculpture, the exhibition traces two decades of Williams's practice. In conversation with Ellie Buttrose (Curator, Contemporary Australian Art, QAGOMA).",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "art",
+        "performance",
+        "sculpture"
       ],
       "social": false,
       "intellectual": true,

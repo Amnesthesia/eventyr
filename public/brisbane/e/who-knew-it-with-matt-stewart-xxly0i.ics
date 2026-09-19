@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Who Knew It with Matt Stewart!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xxly0i@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T173000
+DTEND;TZID=Australia/Brisbane:20261003T193000
+SUMMARY:Who Knew It with Matt Stewart!
+DESCRIPTION:Join the crew at Good Chat Comedy Club for a live recording of 
+ Who Knew It with Matt Stewart! 'Who Knew It with Matt Stewart' is the come
+ dy quiz p ...
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/who-knew-it-with-matt-stewart/
+END:VEVENT
+END:VCALENDAR

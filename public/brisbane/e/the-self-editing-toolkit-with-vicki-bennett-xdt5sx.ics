@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Self-Editing Toolkit with Vicki Bennett
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xdt5sx@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T103000
+DTEND;TZID=Australia/Brisbane:20261004T133000
+SUMMARY:The Self-Editing Toolkit with Vicki Bennett
+DESCRIPTION:Every great book is written in the rewrite—discover the self-
+ editing tools that transform a good manuscript into one that's ready for p
+ ublication. Book your place .
+LOCATION:Queensland Writers Centre\, Stanley Place
+URL:https://www.queenslandwriters.org.au/events/the-self-editing-toolkit-wi
+ th-vicki-bennett
+END:VEVENT
+END:VCALENDAR

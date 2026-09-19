@@ -3,20 +3,20 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "palacecinemas",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
-      "title": "Brisbane Movie Club Preview: Heart of The Beast",
-      "datetime": "Wed 23 Sep",
-      "datetime_iso": "2026-09-23",
+      "title": "ST. ALi Italian Film Festival Intro Session: Holy Cannoli",
+      "datetime": "Mon 21 Sep",
+      "datetime_iso": "2026-09-21",
       "datetime_end_iso": "",
       "location": "Palace Cinemas Brisbane",
-      "link": "https://palacecinemas.com.au/brisbane-movie-club-preview-heart-of-the-beast",
+      "link": "https://palacecinemas.com.au/st-ali-italian-film-festival-intro-session-holy-cannoli",
       "cost": "See link",
       "source": "Palace Cinemas Brisbane",
       "description": "",
-      "image": "https://palacecinemas.com.au/20260908-movieclubpreview-heartofthebeast-KeyArtBanner-1680x560px.jpg",
+      "image": "https://palacecinemas.com.au/Holycannoli-1680x560px.jpg",
       "category": "Arts / Exhibition",
       "tags": [
         "film",
@@ -49,6 +49,69 @@
       "creative": true
     },
     {
+      "title": "Brisbane Movie Club Preview: Heart of The Beast",
+      "datetime": "Wed 23 Sep",
+      "datetime_iso": "2026-09-23",
+      "datetime_end_iso": "",
+      "location": "Palace Cinemas Brisbane",
+      "link": "https://palacecinemas.com.au/brisbane-movie-club-preview-heart-of-the-beast",
+      "cost": "See link",
+      "source": "Palace Cinemas Brisbane",
+      "description": "",
+      "image": "https://palacecinemas.com.au/20260908-movieclubpreview-heartofthebeast-KeyArtBanner-1680x560px.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "ST. ALi Italian Film Festival Opening Night Premiere: Holy Cannoli",
+      "datetime": "Thu 24 Sep",
+      "datetime_iso": "2026-09-24",
+      "datetime_end_iso": "",
+      "location": "Palace Cinemas Brisbane",
+      "link": "https://palacecinemas.com.au/st-ali-italian-film-festival-opening-night-premiere-holy-cannoli",
+      "cost": "See link",
+      "source": "Palace Cinemas Brisbane",
+      "description": "",
+      "image": "https://palacecinemas.com.au/HOLY%20CANNOLI%20Hero%201680x560-2.png",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "ST. ALi Italian Film Festival Intro Session: Separate Beds",
+      "datetime": "Fri 25 Sep",
+      "datetime_iso": "2026-09-25",
+      "datetime_end_iso": "",
+      "location": "Palace Cinemas Brisbane",
+      "link": "https://palacecinemas.com.au/st-ali-italian-film-festival-intro-session-separate-beds",
+      "cost": "See link",
+      "source": "Palace Cinemas Brisbane",
+      "description": "",
+      "image": "https://palacecinemas.com.au/Separatebeds-1680x560px.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
       "title": "Movie Club Offer: THE GREAT ARCH",
       "datetime": "Fri 25 Sep – Sun 27 Sep",
       "datetime_iso": "2026-09-25",
@@ -70,21 +133,62 @@
       "creative": true
     },
     {
-      "title": "ST. ALi Italian Film Festival Centrepiece Premiere: Sweetheart",
-      "datetime": "Sun 20 Sep",
-      "datetime_iso": "2026-09-20",
+      "title": "ST. ALi Italian Film Festival Date Night: Separate Beds",
+      "datetime": "Tue 29 Sep",
+      "datetime_iso": "2026-09-29",
       "datetime_end_iso": "",
       "location": "Palace Cinemas Brisbane",
-      "link": "https://palacecinemas.com.au/st-ali-italian-film-festival-centrepiece-premiere-sweetheart",
+      "link": "https://palacecinemas.com.au/st-ali-italian-film-festival-date-night-separate-beds",
       "cost": "See link",
       "source": "Palace Cinemas Brisbane",
       "description": "",
-      "image": "https://palacecinemas.com.au/20260810-centrepiecepremiere-sweetheart-iff-KeyArtBanner-1680x560px.jpg",
+      "image": "https://palacecinemas.com.au/20260812-datenight-separatebeds-iff-KeyArtBanner-1680x560px.jpg",
       "category": "Arts / Exhibition",
       "tags": [
         "film",
-        "italian",
-        "cinema"
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Movie Mixer: Verity",
+      "datetime": "Wed 30 Sep",
+      "datetime_iso": "2026-09-30",
+      "datetime_end_iso": "",
+      "location": "Palace Cinemas Brisbane",
+      "link": "https://palacecinemas.com.au/movie-mixer-verity",
+      "cost": "See link",
+      "source": "Palace Cinemas Brisbane",
+      "description": "",
+      "image": "https://palacecinemas.com.au/20260903-moviemixer-verity-KeyArtBanner-1680x560px.jpg",
+      "category": "Social / Meetup",
+      "tags": [
+        "film",
+        "culture"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Laika Studios Double Features",
+      "datetime": "Sun 27 Sep",
+      "datetime_iso": "2026-09-27",
+      "datetime_end_iso": "",
+      "location": "Palace Cinemas Brisbane",
+      "link": "https://palacecinemas.com.au/laika-studios-double-features",
+      "cost": "See link",
+      "source": "Palace Cinemas Brisbane",
+      "description": "",
+      "image": "https://palacecinemas.com.au/Laika%20Double%20Feature%20Hero%201680x560.png",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "culture"
       ],
       "social": false,
       "intellectual": false,

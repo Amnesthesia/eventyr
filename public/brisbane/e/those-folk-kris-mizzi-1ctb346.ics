@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Those Folk & Kris Mizzi
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ctb346@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T040000
+DTEND;TZID=Australia/Brisbane:20261002T080000
+SUMMARY:Those Folk & Kris Mizzi
+DESCRIPTION:Join us for an evening of original folk music with Those Folk (
+ QLD) & Kris Mizzi (VIC) Doors open at 6:30pm Kris Mizzi 7pm Those Folk 8pm
+  Pizza & drinks available at the venue. Call ahead to reserve a table. The
+  venue is 18+\, minors welcome with a parent. Youth tickets available on t
+ he door for $15. The venue is accessible\, with accessible friendly bathro
+ oms and no stairs to enter or watch music. [button link="https://thosefolk
+ .com/event/6620770/767430153/the-cave-inn-those-folk-kris-mizzi"] Tickets[
+ /button]
+LOCATION:The Cave Inn\, 47 Balaclava St\, Woolloongabba\, Qld\, 4102\, 47 B
+ alaclava St\, Woolloongabba\, QLD\, Australia
+URL:https://thecaveinn.net/events/those-folk-kris-mizzi/
+END:VEVENT
+END:VCALENDAR

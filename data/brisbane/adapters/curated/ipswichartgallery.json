@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "ipswichartgallery",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "BRUTALIST / Baroque",
@@ -81,13 +81,14 @@
       "link": "https://ipswichartgallery.qld.gov.au/sharing-the-national-collection",
       "cost": "FREE",
       "source": "Ipswich Art Gallery",
-      "description": "Ipswich Art Gallery currently hosts major works from the National Gallery of Australia’s collection.",
+      "description": "REOPENING SOON — Ipswich Art Gallery currently hosts major works from the National Gallery of Australia’s collection.",
       "image": "https://ipswichartgallery.qld.gov.au/2266",
       "category": "Arts / Exhibition",
       "tags": [
         "art",
+        "exhibition",
         "gallery",
-        "painting"
+        "culture"
       ],
       "social": false,
       "intellectual": false,

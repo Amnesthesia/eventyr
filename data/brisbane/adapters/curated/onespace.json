@@ -3,7 +3,101 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "onespace",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Elisa Jane Carmichael Elisa Jane Carmichael | (BE)LONGING | Redcliffe Art Gallery",
+      "datetime": "Sat 18 Jul – Sat 14 Nov",
+      "datetime_iso": "2026-07-18",
+      "datetime_end_iso": "2026-11-14",
+      "location": "Redcliffe Art Gallery",
+      "link": "https://onespace.com.au/exhibition/elisa-jane-carmichael-belonging-redcliffe-art-gallery/",
+      "cost": "See link",
+      "source": "Onespace Gallery",
+      "description": "Elisa Jane Carmichael’s series Alive (2019) is now showing in (BE)LONGING at Redcliffe Art Gallery until 14th of November, 2026.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "indigenous"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Elisa Jane Carmichael Elisa Jane Carmichael | A Connections: MCA x Tate",
+      "datetime": "Sat 15 Aug 2026 – Mon 1 Mar 2027",
+      "datetime_iso": "2026-08-15",
+      "datetime_end_iso": "2027-03-01",
+      "location": "Onespace Gallery",
+      "link": "https://onespace.com.au/exhibition/elisa-jane-carmichael-a-connections-mca-x-tate/",
+      "cost": "See link",
+      "source": "Onespace Gallery",
+      "description": "Elisa Jane Carmichael’s work, a search for meaning is to absorb the abundance of beauty in nature, is now showing in Connections: MCA x Tate at the Museum of Contemporary Art , Sydney.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "indigenous"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Sonja Carmichael Cammeerangan Ngalin-ngur Gining From Our Ancestors’ Hands – Story Bags | Kluge-Ruhe Aboriginal Art Museum | University of Virginia",
+      "datetime": "Sat 8 Aug 2026 – Sun 10 Jan 2027",
+      "datetime_iso": "2026-08-08",
+      "datetime_end_iso": "2027-01-10",
+      "location": "Kluge-Ruhe Aboriginal Art Museum | University of Virginia",
+      "link": "https://onespace.com.au/exhibition/cammeerangan-ngalin-ngur-gining-from-our-ancestors-hands-story-bags-kluge-ruhe-aboriginal-art-museum-university-of-virginia/",
+      "cost": "See link",
+      "source": "Onespace Gallery",
+      "description": "Sonja Carmichael's first international solo exhibition Cammeerangan Ngalin-ngur Gining | From Our Ancestors’ Hands – Story Bags, will be showing at the Kluge-Ruhe Aboriginal Art Museum of the University of Virginia from August 8 until January 10, 2027.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "indigenous",
+        "textiles"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Teho Ropeyarn 2026 Telstra NATSIAA Exhibition | MAGNT",
+      "datetime": "Sat 27 Jun 2026 – Sun 24 Jan 2027",
+      "datetime_iso": "2026-06-27",
+      "datetime_end_iso": "2027-01-24",
+      "location": "MAGNT",
+      "link": "https://onespace.com.au/exhibition/2026-telstra-natsiaa-exhibition-magnt/",
+      "cost": "See link",
+      "source": "Onespace Gallery",
+      "description": "Onespace warmly congratulates represented artist Teho Ropeyarn on his inclusion in the 2026 NATSIAA Exhibition.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "indigenous"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

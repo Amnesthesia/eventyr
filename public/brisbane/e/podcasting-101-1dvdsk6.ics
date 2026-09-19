@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Podcasting 101
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dvdsk6@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T180000
+DTEND;TZID=Australia/Brisbane:20260930T200000
+SUMMARY:Podcasting 101
+DESCRIPTION:Interested in creating your own podcast? Want to learn how to p
+ roduce one using free software? Then podcasting 101 is perfect for you! Du
+ ring the workshop you will: Get expert advice on how to get a great record
+ ing (including using the resources available at State Library). Learn the 
+ basics of how to record and edit audio in Audacity. Pick up tips and trick
+ s when it comes to hosting\, distributing and building an audience for you
+ r content. Our 101 workshops are a great way to gain some new skills and e
+ xplore creative tools learning from experienced local creatives in an incl
+ usive space.Please consult our conditions of entry and Ticketing Terms and
+  Conditions.Participants under 16 years of age must be accompanied by a gu
+ ardian.Please contact us if you need support to participate in this event.
+LOCATION:State Library of Queensland\, Stanley Place\, South Bank
+URL:https://www.slq.qld.gov.au/whats-on/podcasting-101
+END:VEVENT
+END:VCALENDAR

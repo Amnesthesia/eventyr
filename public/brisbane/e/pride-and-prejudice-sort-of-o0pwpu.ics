@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pride And Prejudice* (*sort of)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-o0pwpu@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T190000
+DTEND;TZID=Australia/Brisbane:20260930T210000
+SUMMARY:Pride And Prejudice* (*sort of)
+DESCRIPTION:‍ Pride and Prejudice* (*sort of) is finally coming to QPAC! 
+ Amy Lehpamer\, Zoe Ioannou\, Kaori Maeda-Judge\, Ruby Shannon and Teo Verg
+ ara star in the Olivier Award­-winning sensation coming direct from Londo
+ n's West End.
+LOCATION:South Bank Parklands\, Grey St\, South Bank
+URL:https://www.visitsouthbank.com.au/events/pride-and-prejudice-sort-of
+END:VEVENT
+END:VCALENDAR

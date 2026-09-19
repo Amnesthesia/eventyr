@@ -3,32 +3,9 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "sunpac",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
-    {
-      "title": "Faulty Towers: The Original Dining Experience",
-      "datetime": "Fri 18 Sep, 7:00 PM",
-      "datetime_iso": "2026-09-18T19:00:00",
-      "datetime_end_iso": "",
-      "location": "SunPAC",
-      "link": "https://www.sunpac.net.au/faulty-towers-the-original-dining-experience-2/",
-      "cost": "$ 89",
-      "source": "SunPAC",
-      "description": "Basil, Manuel and Sybil are in town – and they’re bringing a healthy dose of mayhem to your door. Fully immersive, highly interactive and completely original…",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "comedy",
-        "theatre",
-        "interactive",
-        "dining"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
     {
       "title": "Australian Natural Bodybuilders",
       "datetime": "Sat 26 Sep, 9:30 AM",
@@ -50,6 +27,53 @@
       "intellectual": false,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "Sugar Sugar Show – Midday Melodies",
+      "datetime": "Mon 28 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-28T11:00:00",
+      "datetime_end_iso": "",
+      "location": "SunPAC",
+      "link": "https://www.sunpac.net.au/sugar-sugar-show-midday-melodies/",
+      "cost": "$ 25",
+      "source": "SunPAC",
+      "description": "Whether you’re a regular Midday Melodies guest or looking for a new live show to enjoy, the Sugar Sugar Show is set to deliver a fun and uplifting experience filled with great music and feel-good moments.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Larrikin Puppets Kids Comedy Puppet Party",
+      "datetime": "Fri 2 Oct, 10:30 AM",
+      "datetime_iso": "2026-10-02T10:30:00",
+      "datetime_end_iso": "",
+      "location": "SunPAC",
+      "link": "https://www.sunpac.net.au/larrikin-puppets-kids-comedy-puppet-party/",
+      "cost": "$ 15",
+      "source": "SunPAC",
+      "description": "Presented by Larrikin Puppets Join Larrikin Puppets on a whimsical puppet adventure as they celebrate the wacky world of cone-shaped party hats! Packed with catchy songs, hilarious comedy, dancing and audience participation, this award-winning live show is full of laughter, kindness and friendship. It’s the perfect school holiday outing for young families! Ideal for children […]",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "comedy",
+        "dance",
+        "kids",
+        "family",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }

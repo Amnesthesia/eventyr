@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Valley Fiesta
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1vibgxc@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T110000
+DTEND;TZID=Australia/Brisbane:20261003T130000
+SUMMARY:Valley Fiesta
+DESCRIPTION:We’re open from 11am for lunch\, drinks and all your pre-Fies
+ ta plans\, then we’ll be pouring before\, during and after the action.
+LOCATION:Osbourne Hotel
+URL:https://osbournehotel.com.au/whats-on/valleyfiesta/
+END:VEVENT
+END:VCALENDAR

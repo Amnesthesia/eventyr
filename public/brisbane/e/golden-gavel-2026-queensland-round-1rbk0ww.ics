@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Golden Gavel 2026 – Queensland Round
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1rbk0ww@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T183000
+DTEND;TZID=Australia/Brisbane:20260924T203000
+SUMMARY:Golden Gavel 2026 – Queensland Round
+DESCRIPTION:
+LOCATION:The Sit Down Comedy Club
+URL:https://www.standup.com.au/event/golden-gavel-2026-queensland-round/
+END:VEVENT
+END:VCALENDAR

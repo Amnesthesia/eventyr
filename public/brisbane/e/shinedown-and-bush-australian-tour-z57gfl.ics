@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Shinedown and Bush Australian Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-z57gfl@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T171500
+DTEND;TZID=Australia/Brisbane:20260920T191500
+SUMMARY:Shinedown and Bush Australian Tour
+DESCRIPTION:InformationApproximate Running Times: Gates: 5:15 PM Finish - 1
+ 0:00 pm Children's Policy: All patrons must hold a valid ticket REGARDLESS
+  OF AGE - this includes babes in arms! Children 12 years old & under MUST 
+ be accompanied by a paying adult. Accompaniment by a paying adult is
+LOCATION:Riverstage
+URL:https://www.brisbaneunlocked.com.au/shinedown-and-bush-australian-tour-
+ 2026-09-20
+END:VEVENT
+END:VCALENDAR

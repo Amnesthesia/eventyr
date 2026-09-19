@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ezra Collective (UK) With Tash LC
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ao6luy@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T193000
+DTEND;TZID=Australia/Brisbane:20261002T213000
+SUMMARY:Ezra Collective (UK) With Tash LC
+DESCRIPTION:For more than a decade\, Ezra Collective have stood at the fore
+ front of a new movement in British music. Emerging from London's vibrant a
+ nd ever-evolving jazz underground\, the five-piece have become one of the 
+ most celebrated and influential bands of their generation\, forging a soun
+ d that seamlessly bridges jazz\, afrobeat\, hip-hop\, reggae\, soul and da
+ nce music.Their rise has been nothing short of extraordinary. Formed throu
+ gh a free youth jazz programme in London\, Ezra Collective transformed...
+LOCATION:The Tivoli\, 52 Costin St
+URL:https://thetivoli.com.au/events/ezra-collective-26
+END:VEVENT
+END:VCALENDAR

@@ -3,7 +3,30 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "fotc",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Free Guided Tour",
+      "datetime": "Sun 4 Oct, 10:30 AM",
+      "datetime_iso": "2026-10-04T10:30:00",
+      "datetime_end_iso": "2026-10-04T12:00:00",
+      "location": "Friends of Toowong Cemetery",
+      "link": "https://www.fotc.au/visit/#guided-tours",
+      "cost": "See link",
+      "source": "Friends of Toowong Cemetery",
+      "description": "Visit Toowong Cemetery and explore its history and stories",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "history",
+        "tour",
+        "outdoor"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

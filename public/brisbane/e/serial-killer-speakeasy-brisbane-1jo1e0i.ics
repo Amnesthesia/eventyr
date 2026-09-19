@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Serial Killer Speakeasy - Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jo1e0i@dothings
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20270124
+SUMMARY:Serial Killer Speakeasy - Brisbane
+DESCRIPTION:Step into the Serial Killer Speakeasy in Brisbane. Enjoy themed
+  cocktails and immersive storytelling in a dark\, hidden setting. Get your
+  tickets now!
+LOCATION:Judith Wright Arts Centre\, 420 Brunswick St & Cnr\, Berwick Stree
+ t\, Fortitude Valley
+URL:https://feverup.com/m/683798
+END:VEVENT
+END:VCALENDAR

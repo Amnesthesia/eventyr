@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Friday Hour of Power w/ Harry Jun & Friends!
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ftasec@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T200000
+DTEND;TZID=Australia/Brisbane:20260925T220000
+SUMMARY:Friday Hour of Power w/ Harry Jun & Friends!
+DESCRIPTION:Spend your Friday night the right way\, with an evening of laug
+ hs at Good Chat Comedy Club on Caxton St! Located inside a gorgeous\, heri
+ tage-listed\, purpose- ...
+LOCATION:Good Chat Comedy Club
+URL:https://goodchatcomedy.com/shows/friday-night-comedy-w-harry-jun-friend
+ s/
+END:VEVENT
+END:VCALENDAR

@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "uq-art-museum",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "groundwork: 50 years of art, artists, education and community",
@@ -23,29 +23,6 @@
         "history",
         "exhibition",
         "community"
-      ],
-      "social": false,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "Great Ocean Speaker Series | Place & Space: Public and Site-Specific Art with Jonathan Jones",
-      "datetime": "Wed 16 Sep, 12:30 PM",
-      "datetime_iso": "2026-09-16T12:30:00",
-      "datetime_end_iso": "",
-      "location": "UQ Art Museum, William St",
-      "link": "https://art-museum.uq.edu.au/event/session/4187",
-      "cost": "See link",
-      "source": "UQ Art Museum",
-      "description": "This Speaker Series responds to core teachings in Indigenous Art History in the Australia Pacific Region, inviting leading First Nations and Great Ocean artists and curators to campus to speak to diverse themes in contemporary practice.",
-      "image": "",
-      "category": "Public Lecture",
-      "tags": [
-        "indigenous",
-        "art",
-        "lecture",
-        "design"
       ],
       "social": false,
       "intellectual": true,
@@ -99,6 +76,31 @@
       "intellectual": true,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "Old Words, Finding New Places: First languages in creative practices panel",
+      "datetime": "Mon 28 Sep, 5:30 PM",
+      "datetime_iso": "2026-09-28T17:30:00",
+      "datetime_end_iso": "",
+      "location": "UQ Art Museum, William St",
+      "link": "https://art-museum.uq.edu.au/event/session/4191",
+      "cost": "See link",
+      "source": "UQ Art Museum",
+      "description": "Join us and hear from Quandamooka artist Elisa Jane Carmichael, Gunditjmara artist Dr Vicki Couzens, Gurindji/Malngin artist Leah Leaman, Gamilaraay/Wailwan and Biripi artist r e a and led by Pakana Curator Dr Zoe Rimmer for the first in a series of public conversations highlighting the embodiment, activation and renewed presence of First Nations languages.",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "art",
+        "performance",
+        "indigenous",
+        "history",
+        "culture",
+        "language"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }

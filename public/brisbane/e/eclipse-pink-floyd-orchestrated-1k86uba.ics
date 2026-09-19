@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Eclipse - Pink Floyd Orchestrated
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1k86uba@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Eclipse - Pink Floyd Orchestrated
+DESCRIPTION:Pink Floyd’s greatest hits get the full orchestral treatment 
+ in this spectacular 60-piece live experience.
+LOCATION:Must Do Brisbane
+URL:https://www.mustdobrisbane.com/whats-on/eclipse-pink-floyd-orchestrated
+ -brisbane-convention-exhibition-centre
+END:VEVENT
+END:VCALENDAR

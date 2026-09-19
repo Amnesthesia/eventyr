@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Artist in Residence: Renee Kire
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1e631dg@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T100000
+DTEND;TZID=Australia/Brisbane:20260921T120000
+SUMMARY:Artist in Residence: Renee Kire
+DESCRIPTION:Visit the artist in residence to observe the creative process f
+ irsthand and engage with contemporary art practice within the museum space
+ .
+LOCATION:Museum of Brisbane
+URL:https://museumofbrisbane.com.au
+END:VEVENT
+END:VCALENDAR

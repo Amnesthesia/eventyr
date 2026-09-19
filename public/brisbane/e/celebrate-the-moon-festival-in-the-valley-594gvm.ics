@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Celebrate the Moon Festival in the Valley
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-594gvm@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T120000
+DTEND;TZID=Australia/Brisbane:20260926T140000
+SUMMARY:Celebrate the Moon Festival in the Valley
+DESCRIPTION:A public celebration of the traditional Moon Festival featuring
+  cultural performances and an exploration of local community heritage in t
+ he Fortitude Valley district.
+LOCATION:Chinatown Mall\, Fortitude Valley
+URL:https://www.brisbane.qld.gov.au
+END:VEVENT
+END:VCALENDAR

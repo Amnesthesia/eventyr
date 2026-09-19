@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:JACKIE BAILEY : The Outrageous Good Fortune of Living
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-taq7k9@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T183000
+DTEND;TZID=Australia/Brisbane:20261001T203000
+SUMMARY:JACKIE BAILEY : The Outrageous Good Fortune of Living
+DESCRIPTION:Join us on Thursday 1st of October at 6.30pm to hear Jackie Bai
+ ley speak about her new book\, The Outrageous Good Fortune of Living. Abou
+ t the book… Spirituality is not exclusive. It
+LOCATION:Riverbend Books
+URL:https://riverbendbooks.com.au/events/jackie-bailey-the-outrageous-good-
+ fortune-of-living-thursday-1st-october-630pm-at-riverbend-books
+END:VEVENT
+END:VCALENDAR

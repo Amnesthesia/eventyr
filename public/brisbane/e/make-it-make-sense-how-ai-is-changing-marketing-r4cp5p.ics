@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Make it make sense: How AI is changing marketing
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-r4cp5p@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T150000
+DTEND;TZID=Australia/Brisbane:20260928T170000
+SUMMARY:Make it make sense: How AI is changing marketing
+DESCRIPTION:Your traffic is acting weird. People aren't clicking through te
+ n blue links anymore — they're asking ChatGPT\, and it just answers. No 
+ click\, no visit\, no ide...
+LOCATION:Creative Mornings Brisbane
+URL:https://creativemornings.com/talks/make-it-make-sense-how-ai-is-changin
+ g-marketing
+END:VEVENT
+END:VCALENDAR

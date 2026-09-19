@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:STREET PHOTOGRAPHY EXHIBITION
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1n3sr5l@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T173000
+DTEND;TZID=Australia/Brisbane:20261003T203000
+SUMMARY:STREET PHOTOGRAPHY EXHIBITION
+DESCRIPTION:#block-yui_3_17_2_1_1784767005460_3813 { --opacity: 100%\; --tr
+ anslate-x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --scale-x: 100%\;
+  --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-x: 50%\; --o
+ rigin-y: 50%\; --block-transform: none\; opacity: var(--opacity\, 1)\; tra
+ nsform: var(--block-transform)\; transform-origin: var(--origin-x) var(--o
+ rigin-y)\; } Three photographers\, three perspectives\, one space. Join us
+  from 5.30pm - Late More info to come! #block-5af72e5841494b559c84 { } #bl
+ ock-5af72e5841494b559c84 .sqs-html-content { } #block-5af72e5841494b559c84
+  { mix-blend-mode: var(--tweak-text-block-blend )\; border-radius: var(--t
+ weak-text-block-radius)\; } @media screen and (max-width: 767px) { #block-
+ 5af72e5841494b559c84 { } } @media screen and (max-width: 767px) { #block-5
+ af72e5841494b559c84 .sqs-html-content { } } @media screen and (max-width: 
+ 767px) { } #block-yui_3_17_2_1_1784767005460_4134 { --opacity: 100%\; --tr
+ anslate-x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --scale-x: 100%\;
+  --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-x: 50%\; --o
+ rigin-y: 50%\; --block-transform: none\; opacity: var(--opacity\, 1)\; tra
+ nsform: var(--block-transform)\; transform-origin: var(--origin-x) var(--o
+ rigin-y)\; } LEARN MORE #block-yui_3_17_2_1_1784767005460_5351 { --sqs-blo
+ ck-content-flex: 0\; } #block-yui_3_17_2_1_1784767005460_5351 { --opacity:
+  100%\; --translate-x: 0px\; --translate-y: 0px\; --rotation: 0deg\; --sca
+ le-x: 100%\; --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0deg\; --origin-
+ x: 50%\; --origin-y: 50%\; --block-transform: none\; opacity: var(--opacit
+ y\, 1)\; transform: var(--block-transform)\; transform-origin: var(--origi
+ n-x) var(--origin-y)\; }
+LOCATION:Vacant Assembly
+URL:https://www.vacantassembly.com/events/street-photography-exhibition
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Low Sensory Viewing
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1x6q5cp@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T090000
+DTEND;TZID=Australia/Brisbane:20260925T100000
+SUMMARY:Low Sensory Viewing
+DESCRIPTION:Visit 'Make\, Believe\, Magic: The Worlds of the Jim Henson Com
+ pany' in a quiet and relaxed atmosphere before opening hours. Suitable for
+  Autistic visitors and visitors with sensory sensitivity or disability. Vo
+ lumes within the gallery will be lowered and high sensory areas will be si
+ gnposted. Exclusive to the low sensory viewing: Touch the magic of Sesame 
+ Street! Explore our tactile trolley featuring genuine materials from The J
+ im Henson Company\, including fabric swatches from beloved Sesame Street p
+ uppets. Exhibition ticket required. [documentList block]
+LOCATION:GOMA\, Stanley Place\, South Bank
+URL:https://www.qagoma.qld.gov.au/event/low-sensory-viewing-2026-09-25
+END:VEVENT
+END:VCALENDAR

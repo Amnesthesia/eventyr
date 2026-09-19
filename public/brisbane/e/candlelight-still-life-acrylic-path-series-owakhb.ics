@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight Still Life | Acrylic Path Series
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-owakhb@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T110000
+DTEND;TZID=Australia/Brisbane:20261001T130000
+SUMMARY:Candlelight Still Life | Acrylic Path Series
+DESCRIPTION:Learn how to capture the atmosphere of candlelight and create d
+ epth through colour\, value and contrast.
+LOCATION:Creative Room Art Space
+URL:https://www.creativeroom.com.au/event-details/candlelight-still-life-ac
+ rylic-path-series
+END:VEVENT
+END:VCALENDAR

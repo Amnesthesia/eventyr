@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Queensland Puppetry Showcase: Larrikin Puppets
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1pph81y@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T101500
+DTEND;TZID=Australia/Brisbane:20260926T121500
+SUMMARY:Queensland Puppetry Showcase: Larrikin Puppets
+DESCRIPTION:Laugh\, sing and play with Troggg\, Marina and friends in this 
+ interactive puppet adventure for all ages.
+LOCATION:Cinema B\, GOMA – Gallery of Modern Art
+URL:https://www.qtix.com.au/whats-on/2026/queensland-puppetry-showcase-larr
+ ikin-puppets/
+END:VEVENT
+END:VCALENDAR

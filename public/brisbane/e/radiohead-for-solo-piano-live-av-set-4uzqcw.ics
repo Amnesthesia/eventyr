@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Radiohead for Solo Piano: Live AV Set
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-4uzqcw@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T200000
+DTEND;TZID=Australia/Brisbane:20261003T220000
+SUMMARY:Radiohead for Solo Piano: Live AV Set
+DESCRIPTION:Master of improvisation\, Berlin-based Australian pianist Josh 
+ Cohen returns to QPAC’s Concert Hall this October with Radiohead for Sol
+ o Piano: Live AV Set.
+LOCATION:Queensland Performing Arts Centre\, Grey St\, South Bank
+URL:https://www.qpac.com.au/whats-on/2026/radiohead-for-solo-piano-live-av-
+ set/
+END:VEVENT
+END:VCALENDAR

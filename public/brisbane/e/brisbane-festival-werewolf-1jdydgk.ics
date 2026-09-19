@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BRISBANE FESTIVAL WEREWOLF
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1jdydgk@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T140000
+DTEND;TZID=Australia/Brisbane:20260926T160000
+SUMMARY:BRISBANE FESTIVAL WEREWOLF
+DESCRIPTION:An experimental theatre production presented as part of the Bri
+ sbane Festival\, pushing boundaries of performance and storytelling.
+LOCATION:Brisbane Powerhouse
+URL:https://www.brisbanefestival.com.au
+END:VEVENT
+END:VCALENDAR
