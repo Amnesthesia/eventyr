@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Student Club Bouldering Wall
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-9t4dq9@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T120000
+DTEND;TZID=Australia/Brisbane:20260921T140000
+SUMMARY:Student Club Bouldering Wall
+DESCRIPTION:Join other students at our SCU Bouldering Wall and reach new he
+ ights!
+LOCATION:Southern Cross University Gold Coast
+URL:https://www.scu.edu.au/engage/events/lexsa-bouldering-wall-mondays/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Quokka launch weekend at Currumbin Wildlife Sanctuary
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-dn9pu0@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Quokka launch weekend at Currumbin Wildlife Sanctuary
+DESCRIPTION:From 18 – 20 Sep\, you get the chance to be one of the first 
+ to see the two Quokkas in their brand-new habitat\, Quokka Nook.
+LOCATION:Inside Gold Coast What's On
+URL:https://www.insidegoldcoast.com.au/whatson/quokka-launch-weekend-currum
+ bin-wildlife-sanctuary
+END:VEVENT
+END:VCALENDAR

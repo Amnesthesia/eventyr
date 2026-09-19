@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Gold Coast Chilli Challenge\, Beer & Feast Fest 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-jobmkf@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T090000
+DTEND;TZID=Australia/Brisbane:20260927T110000
+SUMMARY:Gold Coast Chilli Challenge\, Beer & Feast Fest 2026
+DESCRIPTION:A community-focused food festival highlighting artisanal produc
+ ts and local food culture\, offering a space for social gathering.
+LOCATION:Tugun Leagues Club\, Bilinga
+URL:https://www.chillifestivalsaustralia.com
+END:VEVENT
+END:VCALENDAR

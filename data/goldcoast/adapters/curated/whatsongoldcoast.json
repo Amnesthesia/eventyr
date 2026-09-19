@@ -3,14 +3,60 @@
   "provider": "adapters",
   "tier": "aggregators",
   "source_id": "whatsongoldcoast",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
+      "title": "Gymnastics Australia National Clubs Carnival",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "What's On Gold Coast, Carrara",
+      "link": "https://www.whatsongoldcoast.au/All-events/Gymnastics-Australia-National-Clubs-Carnival",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "A festival of gymnastics, designed to show the breadth of talent and skill that lives within the hundreds of Australian gymnastics clubs.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "sport",
+        "festival",
+        "performance"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "NaturallyGC Kids Spring Holiday Program",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
+      "location": "What's On Gold Coast",
+      "link": "https://www.whatsongoldcoast.au/All-events/NaturallyGC-Kids-Spring-Holiday-Program",
+      "cost": "See link",
+      "source": "What's On Gold Coast",
+      "description": "The NaturallyGC program offers an abundance of free nature-based education and landcare activities for your little adventurers to enjoy these holidays!",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "nature",
+        "kids",
+        "family",
+        "adventure",
+        "gardening"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": true,
+      "creative": false
+    },
+    {
       "title": "SWELL Sculpture Festival Active & Healthy Wellness Program",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
       "location": "What's On Gold Coast, Currumbin",
       "link": "https://www.whatsongoldcoast.au/All-events/SWELL-Sculpture-Festival-Active-and-Healthy-Wellness-Program",
       "cost": "See link",
@@ -22,8 +68,8 @@
         "wellness",
         "fitness",
         "yoga",
-        "pilates",
-        "community"
+        "meditation",
+        "pilates"
       ],
       "social": true,
       "intellectual": false,
@@ -32,9 +78,9 @@
     },
     {
       "title": "HOTA Farmers and Artisan Market",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
       "location": "What's On Gold Coast, Surfers Paradise",
       "link": "https://www.whatsongoldcoast.au/All-events/HOTA-Farmers-and-Artisan-Market-60deb811cdcec11c46c40065",
       "cost": "See link",
@@ -55,9 +101,9 @@
     },
     {
       "title": "Carrara Markets Car Boot Sale",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
+      "datetime_end_iso": "",
       "location": "What's On Gold Coast, Carrara",
       "link": "https://www.whatsongoldcoast.au/All-events/Carrara-Markets-Car-Boot-Sale-5ee186dcef56931323e5e481",
       "cost": "See link",
@@ -67,8 +113,7 @@
       "category": "Community / Other",
       "tags": [
         "market",
-        "shopping",
-        "community"
+        "shopping"
       ],
       "social": true,
       "intellectual": false,
@@ -76,37 +121,15 @@
       "creative": false
     },
     {
-      "title": "Live Music Sunday",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "title": "The Coastal Markets – Broadbeach",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
-      "location": "What's On Gold Coast, Southport",
-      "link": "https://www.whatsongoldcoast.au/All-events/Live-Music-Sunday",
+      "location": "What's On Gold Coast, Broadbeach",
+      "link": "https://www.whatsongoldcoast.au/All-events/The-Coastal-Markets-Broadbeach",
       "cost": "See link",
       "source": "What's On Gold Coast",
-      "description": "Free live music at Harley &amp; Hudson Coffee Bar.",
-      "image": "",
-      "category": "Concert / Music",
-      "tags": [
-        "music",
-        "live music",
-        "coffee"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": true
-    },
-    {
-      "title": "The Coastal Markets – Coolangatta",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "2026-09-13T11:00:00",
-      "location": "What's On Gold Coast, Coolangatta",
-      "link": "https://www.whatsongoldcoast.au/All-events/The-Coastal-Markets-Coolangatta",
-      "cost": "See link",
-      "source": "What's On Gold Coast",
-      "description": "One of the region’s largest and most vibrant beachfront market experiences, bringing together hundreds of vendors.",
+      "description": "One of the region’s largest and most vibrant beachfront market experiences, bringing together hundreds of handmade and artisan vendors.",
       "image": "",
       "category": "Community / Other",
       "tags": [
@@ -121,8 +144,8 @@
     },
     {
       "title": "SWELL Sculpture Festival",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Currumbin",
       "link": "https://www.whatsongoldcoast.au/All-events/SWELL-Sculpture-Festival-5d7b3fc61bc245d8271ed744",
@@ -136,35 +159,12 @@
         "exhibition",
         "sculpture",
         "outdoor",
-        "festival"
+        "culture"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
       "creative": true
-    },
-    {
-      "title": "Numinbah-Holding Tight Community field days",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Numinbah Valley",
-      "link": "https://www.whatsongoldcoast.au/All-events/Numinbah-Holding-Tight-Community-field-days-2026",
-      "cost": "See link",
-      "source": "What's On Gold Coast",
-      "description": "Join our Holding Tight community field day to help restore habitat linking Springbrook and Lamington National Parks.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "community",
-        "environment",
-        "nature",
-        "wildlife"
-      ],
-      "social": true,
-      "intellectual": false,
-      "hands_on": true,
-      "creative": false
     }
   ]
 }

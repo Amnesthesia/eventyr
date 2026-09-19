@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:THAW
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-tel4n3@dothings
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261004
+SUMMARY:THAW
+DESCRIPTION:$29
+LOCATION:Surfers Paradise Beach & Hota Lake Precinct
+URL:https://bleachfestival.com.au/events/bleach-26-thaw
+END:VEVENT
+END:VCALENDAR

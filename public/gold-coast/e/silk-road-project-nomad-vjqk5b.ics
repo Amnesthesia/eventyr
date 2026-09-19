@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Silk Road Project: NOMAD
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-vjqk5b@dothings
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Silk Road Project: NOMAD
+DESCRIPTION:$30
+LOCATION:HOTA Lake Precinct
+URL:https://bleachfestival.com.au/events/bleach-26-silk-road-project-nomad
+END:VEVENT
+END:VCALENDAR

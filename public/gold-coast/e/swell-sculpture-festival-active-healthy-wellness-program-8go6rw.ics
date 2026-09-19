@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SWELL Sculpture Festival Active & Healthy Wellness Program
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-8go6rw@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:SWELL Sculpture Festival Active & Healthy Wellness Program
+DESCRIPTION:Showcasing some of the Gold Coast’s Active & Healthy best hea
+ lth and wellbeing offerings.
+LOCATION:City of Gold Coast Libraries
+URL:https://www.whatsongoldcoast.au/All-events/SWELL-Sculpture-Festival-Act
+ ive-and-Healthy-Wellness-Program
+END:VEVENT
+END:VCALENDAR

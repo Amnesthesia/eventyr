@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:CAPTAIN WOW DUO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-10mve6h@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T040000
+DTEND;TZID=Australia/Brisbane:20261004T060000
+SUMMARY:CAPTAIN WOW DUO
+DESCRIPTION:Have been playing professionally for over 20years. We’ve play
+ ed well over 3000 shows. We sing tunes from the late 60’s 70’s 80’s\
+ , 90’s\, 2000’s and Current. We can play a whole night of “party & d
+ ance hits” or we can start the night with “unplugged sing along”.
+LOCATION:Club Banora Lounge\, 2 Leisure Dr\, Banora Point NSW 2486\, Austra
+ lia
+URL:https://twintowns.com.au/events/captain-wow-duo-3/
+END:VEVENT
+END:VCALENDAR

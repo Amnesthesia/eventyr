@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "burleighleagues",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Sunday Raffles",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Burleigh Leagues Club",
       "link": "https://burleighleagues.com.au/events/sunday-raffles/",
@@ -19,8 +19,8 @@
       "image": "",
       "category": "Community / Other",
       "tags": [
-        "raffle",
-        "community"
+        "community",
+        "raffle"
       ],
       "social": true,
       "intellectual": false,
@@ -28,20 +28,20 @@
       "creative": false
     },
     {
-      "title": "Micka Scene",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "title": "Nicky Convine",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Burleigh Leagues Club",
-      "link": "https://burleighleagues.com.au/events/micka-scene/",
+      "link": "https://burleighleagues.com.au/events/nicky-convine/",
       "cost": "See link",
       "source": "Burleigh Leagues Club",
       "description": "",
       "image": "",
       "category": "Concert / Music",
       "tags": [
-        "music",
-        "live music"
+        "live music",
+        "music"
       ],
       "social": true,
       "intellectual": false,
@@ -50,8 +50,8 @@
     },
     {
       "title": "Wings & Jugs",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Burleigh Leagues Club",
       "link": "https://burleighleagues.com.au/events/wings-jugs/",
@@ -62,8 +62,7 @@
       "category": "Community / Other",
       "tags": [
         "food",
-        "drinks",
-        "beer"
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -72,8 +71,8 @@
     },
     {
       "title": "Monday Kids Eat FREE!",
-      "datetime": "Mon 14 Sep",
-      "datetime_iso": "2026-09-14",
+      "datetime": "Mon 21 Sep",
+      "datetime_iso": "2026-09-21",
       "datetime_end_iso": "",
       "location": "Burleigh Leagues Club",
       "link": "https://burleighleagues.com.au/events/kids-eat-free/",
@@ -93,30 +92,9 @@
       "creative": false
     },
     {
-      "title": "Double the Majors",
-      "datetime": "Mon 14 Sep",
-      "datetime_iso": "2026-09-14",
-      "datetime_end_iso": "",
-      "location": "Burleigh Leagues Club",
-      "link": "https://burleighleagues.com.au/events/double-the-majors/",
-      "cost": "See link",
-      "source": "Burleigh Leagues Club",
-      "description": "The first member to win a major jackpot on a designated machine, identified by a green star, we’ll double the jackpot during the promotion period.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "gaming",
-        "competition"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Tuesday $19.90 Steak Night",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
+      "datetime": "Tue 22 Sep",
+      "datetime_iso": "2026-09-22",
       "datetime_end_iso": "",
       "location": "Burleigh Leagues Club",
       "link": "https://burleighleagues.com.au/events/19-90-steak-night/",
@@ -130,47 +108,6 @@
         "dining"
       ],
       "social": true,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Double the Majors",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "",
-      "location": "Burleigh Leagues Club",
-      "link": "https://burleighleagues.com.au/events/double-the-majors/",
-      "cost": "See link",
-      "source": "Burleigh Leagues Club",
-      "description": "The first member to win a major jackpot on a designated machine, identified by a green star, we’ll double the jackpot during the promotion period.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "gaming",
-        "competition"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Cash Stash",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Burleigh Leagues Club",
-      "link": "https://burleighleagues.com.au/events/cash-stash/",
-      "cost": "See link",
-      "source": "Burleigh Leagues Club",
-      "description": "T&Cs appl y. This information is not intended for minors or persons excluded from gaming. Gamble Responsibly.",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "gaming"
-      ],
-      "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": false

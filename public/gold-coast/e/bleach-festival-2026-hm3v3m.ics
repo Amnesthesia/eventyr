@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bleach Festival 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-hm3v3m@dothings
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261012
+SUMMARY:Bleach Festival 2026
+DESCRIPTION:Bleach Festival returns for 11 days of live music\, visual art\
+ , storytelling and feasting from Thursday 1st to Sunday 11th October 2026.
+LOCATION:Inside Gold Coast What's On
+URL:https://www.insidegoldcoast.com.au/whatson/bleach-festival
+END:VEVENT
+END:VCALENDAR

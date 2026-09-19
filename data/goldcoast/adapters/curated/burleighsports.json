@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "burleighsports",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Trivia",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
+      "datetime": "Wed 23 Sep",
+      "datetime_iso": "2026-09-23",
       "datetime_end_iso": "",
       "location": "Burleigh Sports Club",
       "link": "https://www.burleighsports.com.au/events/trivia/",
@@ -17,11 +17,11 @@
       "source": "Burleigh Sports Club",
       "description": "Join us every Wednesday with iconic Gold Coaster, Terry 'Tappa' Teece, as he hosts his own special blend of Trivia!",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
         "trivia",
         "games",
-        "community"
+        "drinks"
       ],
       "social": true,
       "intellectual": true,
@@ -30,8 +30,8 @@
     },
     {
       "title": "Thursday Night Raffles",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "datetime": "Thu 24 Sep",
+      "datetime_iso": "2026-09-24",
       "datetime_end_iso": "",
       "location": "Burleigh Sports Club",
       "link": "https://www.burleighsports.com.au/events/thursday-night-raffles/",
@@ -39,7 +39,7 @@
       "source": "Burleigh Sports Club",
       "description": "Join us every Thursday for our Surf & Turf Raffles and win meat trays and seafood from Scales Seafood.",
       "image": "",
-      "category": "Social / Meetup",
+      "category": "Community / Other",
       "tags": [
         "raffle",
         "community"
@@ -50,26 +50,47 @@
       "creative": false
     },
     {
-      "title": "LIVING IN THE 70'S n 80'S HOMEGROWN EDITION",
-      "datetime": "Sat 19 Sep",
-      "datetime_iso": "2026-09-19",
+      "title": "Trivia",
+      "datetime": "Wed 30 Sep",
+      "datetime_iso": "2026-09-30",
       "datetime_end_iso": "",
       "location": "Burleigh Sports Club",
-      "link": "https://www.burleighsports.com.au/events/living-in-the-70s-n-80s-homegrown-edition/",
+      "link": "https://www.burleighsports.com.au/events/trivia/",
       "cost": "See link",
       "source": "Burleigh Sports Club",
-      "description": "Living in the 70’s & 80’s HOMEGROWN EDITION delivers the ultimate Aussie pub rock experience, performing iconic hits from legends including AC/DC, Cold Chisel, INXS and Dragon. A favourite across the Gold Coast, this high-energy tribute band keeps the crowd singing all night long.",
+      "description": "Join us every Wednesday with iconic Gold Coaster, Terry 'Tappa' Teece, as he hosts his own special blend of Trivia!",
       "image": "",
-      "category": "Concert / Music",
+      "category": "Community / Other",
       "tags": [
-        "rock",
-        "live music",
-        "tribute"
+        "trivia",
+        "games",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Thursday Night Raffles",
+      "datetime": "Thu 1 Oct",
+      "datetime_iso": "2026-10-01",
+      "datetime_end_iso": "",
+      "location": "Burleigh Sports Club",
+      "link": "https://www.burleighsports.com.au/events/thursday-night-raffles/",
+      "cost": "See link",
+      "source": "Burleigh Sports Club",
+      "description": "Join us every Thursday for our Surf & Turf Raffles and win meat trays and seafood from Scales Seafood.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "raffle",
+        "community"
       ],
       "social": true,
       "intellectual": false,
       "hands_on": false,
-      "creative": true
+      "creative": false
     }
   ]
 }

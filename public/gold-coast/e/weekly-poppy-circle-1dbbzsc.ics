@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Weekly Poppy Circle
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1dbbzsc@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T100000
+DTEND;TZID=Australia/Brisbane:20260923T120000
+SUMMARY:Weekly Poppy Circle
+DESCRIPTION:Ahead of Remembrance Day\, we’re bringing our knitting and cr
+ ochet community together to make handmade poppies. Some will become part o
+ f a special display at the club\, while others will be turned into poppy b
+ rooches sold to raise funds for our veteran community. Whether you make on
+ e poppy or a whole bunch\, every stitch helps […]
+LOCATION:165 Duringan Street\, Currumbin\, QLD\, Australia\, Queensland 422
+ 3
+URL:https://www.currumbinrsl.com.au/event/weekly-poppy-circle-6/
+END:VEVENT
+END:VCALENDAR

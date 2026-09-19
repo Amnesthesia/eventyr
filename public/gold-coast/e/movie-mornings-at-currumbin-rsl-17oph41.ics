@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Movie Mornings at Currumbin RSL
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-17oph41@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T103000
+DTEND;TZID=Australia/Brisbane:20260922T123000
+SUMMARY:Movie Mornings at Currumbin RSL
+DESCRIPTION:Join us for our FREE Monthly Movie Mornings at Currumbin RSL. E
+ ach month a new movie is selected and screened upstairs in our Waterside F
+ unction space. Limited spots are available and registration is required fo
+ r this event via the website or contact reception – 55347999 September M
+ ovie: The Sheep Detectives When a shepherd who reads murder mysteries to h
+ is flock every night turns up dead\, his sheep are convinced its murder an
+ d set out to crack the case themselves. Starring Hugh Jackman\, this cleve
+ r whodunit proves that sometimes the best detectives have four legs and pl
+ enty of wool. Tea\, coffee station available.
+LOCATION:165 Duringan St\, Currumbin QLD 4223\, Australia
+URL:https://www.currumbinrsl.com.au/event/movie-mornings-at-currumbin-rsl/
+END:VEVENT
+END:VCALENDAR

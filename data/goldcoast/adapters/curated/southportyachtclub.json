@@ -3,7 +3,28 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "southportyachtclub",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Bridge to No Bridge",
+      "datetime": "Tue 29 Sep",
+      "datetime_iso": "2026-09-29",
+      "datetime_end_iso": "",
+      "location": "Southport Yacht Club",
+      "link": "https://southportyachtclub.com.au/",
+      "cost": "See link",
+      "source": "Southport Yacht Club",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "community"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Renew Bohemian Spring Bazaar
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-11dfqhq@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260928
+SUMMARY:Renew Bohemian Spring Bazaar
+DESCRIPTION:Renew Bohemian Spring Bazaar is a special slow fashion pop-up b
+ ringing the free-spirited world of Renew Bohemian to Tamborine Mountain.Vi
+ sitors can browse a ...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/renew-bohemian-spring-bazaar
+END:VEVENT
+END:VCALENDAR

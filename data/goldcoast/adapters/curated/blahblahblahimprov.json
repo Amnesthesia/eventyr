@@ -3,7 +3,31 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "blahblahblahimprov",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Improv Comedy FriYAY",
+      "datetime": "Fri 25 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-25T19:00:00",
+      "datetime_end_iso": "2026-09-25T20:30:00",
+      "location": "3 Traders Way, Currumbin Waters, 4223",
+      "link": "https://www.blahblahblahimprov.com/events/improv-comedy-friyay-september-2026",
+      "cost": "Adult $15.90, Children $11.90",
+      "source": "Blah Blah Blah Improv",
+      "description": "The first half delivers the crowd-favourite theatrical comedy games Gold Coast audiences have come to know and love where our improvisers turn your suggestions into hilarious scenes on the spot. Then, in the second half, we’re bringing back our highly acclaimed signature show Small Town Council — inspired by the mundane, whingey, hilarious, and downright ridiculous posts from YOUR neighbourhood Facebook community groups!",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "theatre",
+        "comedy",
+        "improv",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

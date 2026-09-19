@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Friday Nights
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-o6alig@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T193000
+DTEND;TZID=Australia/Brisbane:20261002T235900
+SUMMARY:Friday Nights
+DESCRIPTION:Club Broadbeach offers a great line-up of FREE entertainment ev
+ ery weekend. Fridays start with our Monster Meat Raffle at 7pm\, where loa
+ ds of prizes can be won\, so you’re in with a good chance of winning. Fo
+ llowed by our Members Cash Draw. Finally\, from 7:30pm live music is playe
+ d through to the end of the evening. Come on in any Friday night for a jam
+  packed evening of fun!
+LOCATION:Club Broadbeach\, 169 Surf Parade
+URL:https://www.clubbroadbeach.com.au/event/friday-nights/2026-10-02/
+END:VEVENT
+END:VCALENDAR

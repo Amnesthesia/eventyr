@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunroom – Make a Mooncake
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-j3uebs@dothings
+DTSTART;TZID=Australia/Brisbane:20260923T100000
+DTEND;TZID=Australia/Brisbane:20260923T120000
+SUMMARY:Sunroom – Make a Mooncake
+DESCRIPTION:A hands-on workshop focused on the traditional craft and techni
+ ques of making mooncakes\, celebrating cultural heritage through food.
+LOCATION:Surfers Paradise
+URL:https://www.whatsongoldcoast.au
+END:VEVENT
+END:VCALENDAR

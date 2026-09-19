@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:FUNNY GOATS
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-lgrk1y@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T070000
+DTEND;TZID=Australia/Brisbane:20260927T090000
+SUMMARY:FUNNY GOATS
+DESCRIPTION:The Funny Goats are renowned for their high-energy cover shows\
+ , where they breath new life into classic hits and beloved anthems\, capti
+ vating audiences with their dynamic interpretations and infectious enthusi
+ asm. Whether they're rocking out to timeless favourites or debuting their 
+ latest original compositions\, The Funny Goats deliver performances that a
+ re as diverse as they are electrifying.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/ten-left-feet/
+END:VEVENT
+END:VCALENDAR

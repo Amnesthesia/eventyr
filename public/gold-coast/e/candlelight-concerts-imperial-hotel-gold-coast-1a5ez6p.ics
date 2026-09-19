@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight Concerts - Imperial Hotel Gold Coast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1a5ez6p@dothings
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260928
+SUMMARY:Candlelight Concerts - Imperial Hotel Gold Coast
+DESCRIPTION:An intimate\, atmospheric concert series featuring classical pe
+ rformances staged in a candlelit venue. The environment is designed to fos
+ ter a focused and appreciative listening experience.
+LOCATION:Imperial Hotel Gold Coast
+URL:https://destinationgoldcoast.stylelabs.cloud
+END:VEVENT
+END:VCALENDAR

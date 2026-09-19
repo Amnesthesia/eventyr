@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Meet the Quokkas
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1nxhqvl@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260921
+SUMMARY:Meet the Quokkas
+DESCRIPTION:The Quokkas are moving 4\,000km closer! Join us between 18 – 
+ 20 September when we welcome the arrival of two Quokkas. Expect activities
+  for the whole family\, and something extra special for our members… Oh 
+ and\, you can get into the draw to win a trip for two to Rottnest Island\,
+  sponsored by Trip.com. Cancel any plans\, this weekend is not to be misse
+ d!
+LOCATION:Currumbin Wildlife Sanctuary events
+URL:https://currumbinsanctuary.com.au/
+END:VEVENT
+END:VCALENDAR

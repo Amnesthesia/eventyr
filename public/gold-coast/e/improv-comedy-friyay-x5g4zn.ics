@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Improv Comedy FriYAY
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-x5g4zn@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T190000
+DTEND;TZID=Australia/Brisbane:20260925T203000
+SUMMARY:Improv Comedy FriYAY
+DESCRIPTION:The first half delivers the crowd-favourite theatrical comedy g
+ ames Gold Coast audiences have come to know and love where our improvisers
+  turn your suggestions into hilarious scenes on the spot. Then\, in the se
+ cond half\, we’re bringing back our highly acclaimed signature show Smal
+ l Town Council — inspired by the mundane\, whingey\, hilarious\, and dow
+ nright ridiculous posts from YOUR neighbourhood Facebook community groups!
+LOCATION:3 Traders Way\, Currumbin Waters\, 4223
+URL:https://www.blahblahblahimprov.com/events/improv-comedy-friyay-septembe
+ r-2026
+END:VEVENT
+END:VCALENDAR

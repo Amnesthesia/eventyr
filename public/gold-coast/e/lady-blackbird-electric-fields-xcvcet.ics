@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lady Blackbird & Electric Fields
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-xcvcet@dothings
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Lady Blackbird & Electric Fields
+DESCRIPTION:$2d
+LOCATION:Outdoor Stage
+URL:https://bleachfestival.com.au/events/bleach-26-lady-blackbird-electric-
+ fields
+END:VEVENT
+END:VCALENDAR

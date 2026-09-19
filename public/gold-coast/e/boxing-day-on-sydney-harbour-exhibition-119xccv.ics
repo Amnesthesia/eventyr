@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Boxing Day on Sydney Harbour - Exhibition
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-119xccv@dothings
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20261001
+SUMMARY:Boxing Day on Sydney Harbour - Exhibition
+DESCRIPTION:An art exhibition featuring works focused on the iconic Sydney 
+ Harbour\, hosted at a local Gold Coast gallery.
+LOCATION:Gallery One\, Bundall
+URL:https://gallery-one.com.au/
+END:VEVENT
+END:VCALENDAR

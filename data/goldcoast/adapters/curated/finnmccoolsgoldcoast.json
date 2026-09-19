@@ -3,13 +3,13 @@
   "provider": "adapters",
   "tier": "independents",
   "source_id": "finnmccoolsgoldcoast",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Burgers",
-      "datetime": "Mon 14 Sep",
-      "datetime_iso": "2026-09-14",
+      "datetime": "Mon 21 Sep",
+      "datetime_iso": "2026-09-21",
       "datetime_end_iso": "",
       "location": "Finn McCool's Gold Coast",
       "link": "http://finnmccoolsgoldcoast.com.au/events/monday-burgers/",
@@ -20,13 +20,35 @@
       "category": "Community / Other",
       "tags": [
         "food",
-        "dining",
-        "deals"
+        "dining"
       ],
       "social": false,
       "intellectual": false,
       "hands_on": false,
       "creative": false
+    },
+    {
+      "title": "AFL Grand Final Day",
+      "datetime": "Sat 26 Sep",
+      "datetime_iso": "2026-09-26",
+      "datetime_end_iso": "",
+      "location": "Finn McCool's Gold Coast",
+      "link": "http://finnmccoolsgoldcoast.com.au/events/afl-grand-final-day/",
+      "cost": "See link",
+      "source": "Finn McCool's Gold Coast",
+      "description": "The big one’s here. Get yourself to Finn McCools for AFL Grand Final Day and catch every tackle, goal and big moment live and loud across multiple screens.Round up the crew, grab a pint and settle in for a proper afternoon of footy with plenty of good craic around the pub.When the final siren sounds, we’re keeping things rolling with live entertainment ’til late.It’s Grand Final Day. You’ll want a good seat for this one.",
+      "image": "http://finnmccoolsgoldcoast.com.au/events/afl-grand-final-day/",
+      "category": "Concert / Music",
+      "tags": [
+        "sport",
+        "live music",
+        "music",
+        "nightlife"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
     }
   ]
 }

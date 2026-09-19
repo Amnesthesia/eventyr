@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunset Slice Community Run
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-sduy3g@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T170000
+DTEND;TZID=Australia/Brisbane:20260921T190000
+SUMMARY:Sunset Slice Community Run
+DESCRIPTION:A social\, community-led trail run through the Burleigh Head tr
+ ails designed for local runners to connect while enjoying the outdoors.
+LOCATION:West Burleigh Head trails
+URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

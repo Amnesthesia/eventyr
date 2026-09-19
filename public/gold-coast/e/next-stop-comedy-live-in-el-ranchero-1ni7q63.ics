@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Next Stop Comedy (Live in El Ranchero)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1ni7q63@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T193000
+DTEND;TZID=Australia/Brisbane:20261003T213000
+SUMMARY:Next Stop Comedy (Live in El Ranchero)
+DESCRIPTION:Next Stop Comedy brings the best comedians\, with new lineups e
+ very time\, straight to your neighborhood for an unforgettable night of la
+ ughter! Our shows feature top-tier talent from across the country\, delive
+ ring high-energy performances in intimate\, local venues. Whether you need
+  an exciting date night\, you're a die-hard comedy fan\, or you're just lo
+ oking for a fun night out\, Next Stop Comedy guarantees big laughs\, great
+  vibes\, and an experience you won't want to miss.
+LOCATION:El Ranchero at Mo's Desert Clubhouse
+URL:https://www.nextstopcomedy.com/events/mo-s-desert-clubhouse-2026-10-03
+END:VEVENT
+END:VCALENDAR

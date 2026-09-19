@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Kaleidoscope Skies
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1ekzfwp@dothings
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261012
+SUMMARY:Kaleidoscope Skies
+DESCRIPTION:$2b
+LOCATION:Level 5
+URL:https://bleachfestival.com.au/events/bleach-26-kaleidoscope-skies
+END:VEVENT
+END:VCALENDAR

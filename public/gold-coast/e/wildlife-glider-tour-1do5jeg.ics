@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Wildlife Glider Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1do5jeg@dothings
+DTSTART;TZID=Australia/Brisbane:20260922T090000
+DTEND;TZID=Australia/Brisbane:20260922T110000
+SUMMARY:Wildlife Glider Tour
+DESCRIPTION:An educational guided tour through the botanic gardens focusing
+  on local wildlife and the unique ecology of the region.
+LOCATION:Gold Coast Regional Botanic Gardens
+URL:https://www.goldcoast.qld.gov.au
+END:VEVENT
+END:VCALENDAR

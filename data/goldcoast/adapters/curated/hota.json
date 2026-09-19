@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "hota",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Guided tour & lunch at Palette Restaurant",
@@ -100,8 +100,8 @@
     },
     {
       "title": "Comedy Underground Saturday Showcase",
-      "datetime": "Sat 15 Mar 2025, 7:00 PM – Fri 1 Jan 2027",
-      "datetime_iso": "2025-03-15T19:00:00",
+      "datetime": "Sat 15 Mar 2025, 5:30 PM – Fri 1 Jan 2027",
+      "datetime_iso": "2025-03-15T17:30:00",
       "datetime_end_iso": "2027-01-01",
       "location": "Basement",
       "link": "https://hota.com.au/events/comedy-underground-saturday-showcase",
@@ -112,9 +112,8 @@
       "category": "Concert / Music",
       "tags": [
         "comedy",
-        "performance",
-        "nightlife",
-        "showcase"
+        "standup",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -123,9 +122,9 @@
     },
     {
       "title": "Tony",
-      "datetime": "Tue 25 Aug, 10:20 AM – Wed 16 Sep",
+      "datetime": "Tue 25 Aug, 10:20 AM – Tue 22 Sep",
       "datetime_iso": "2026-08-25T10:20:00",
-      "datetime_end_iso": "2026-09-16",
+      "datetime_end_iso": "2026-09-22",
       "location": "Cinema 2",
       "link": "https://hota.com.au/events/tony",
       "cost": "See link",
@@ -144,9 +143,9 @@
     },
     {
       "title": "& Sons",
-      "datetime": "Thu 27 Aug, 10:15 AM – Wed 16 Sep",
-      "datetime_iso": "2026-08-27T10:15:00",
-      "datetime_end_iso": "2026-09-16",
+      "datetime": "Thu 27 Aug, 4:45 PM – Wed 23 Sep",
+      "datetime_iso": "2026-08-27T16:45:00",
+      "datetime_end_iso": "2026-09-23",
       "location": "Cinema 1",
       "link": "https://hota.com.au/events/sons",
       "cost": "See link",
@@ -155,8 +154,9 @@
       "image": "https://hota.com.au/api/img/05c92aac-03d1-0235-0767-bdf54020d78e/828682d0-3822-4e25-9034-79bff6475ca0/docs.jpg?v=83938132d5a6cd4144775eb24082448c&w=700&fm=webp",
       "category": "Arts / Exhibition",
       "tags": [
-        "film",
-        "performance"
+        "theatre",
+        "performance",
+        "culture"
       ],
       "social": false,
       "intellectual": false,

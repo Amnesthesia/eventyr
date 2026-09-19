@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Ocker
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1exdg1f@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261006
+SUMMARY:Ocker
+DESCRIPTION:Join us for the world premiere of Ocker\, a show in motion from
+  leading First Nations company Na Djinang Circus. Ocker is a roving circus
+  show tearing through the precinct on a portable railway track built in re
+ al time. This modern-day hunting party weaves through crowds\, laying trac
+ k wherever the chase leads. Charging forward with single-minded determinat
+ ion\, they drag the audience along for the ride. The park becomes a playgr
+ ound for strange encounters\, risky acrobatics\, and absurd acts of endura
+ nce as circus erupts in the most unexpected places. Improvised scenes cons
+ tantly derail the hunt as the troupe negotiates crowds\, obstacles\, and t
+ heir own terrible ideas. Swept up in the chaos of the chase\, Ocker waits 
+ for nobody. Keeping up is entirely your responsibility.
+LOCATION:HOTA Lake Precinct
+URL:https://bleachfestival.com.au/events/bleach-26-ocker
+END:VEVENT
+END:VCALENDAR

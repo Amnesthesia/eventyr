@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Gold Coast Tandem Skydive
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1dnlnzc@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20270306
+SUMMARY:Gold Coast Tandem Skydive
+DESCRIPTION:Gold Coast Tandem Skydive in Gold Coast. Get your tickets on Fe
+ ver now!
+LOCATION:Fever Gold Coast\, 18 Coyne St
+URL:https://feverup.com/m/177812
+END:VEVENT
+END:VCALENDAR

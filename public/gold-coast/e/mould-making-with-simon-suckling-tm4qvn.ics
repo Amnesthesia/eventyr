@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mould Making with Simon Suckling
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-tm4qvn@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T093000
+DTEND;TZID=Australia/Brisbane:20261004T113000
+SUMMARY:Mould Making with Simon Suckling
+DESCRIPTION:**This workshop has sold out and due to popular demand a second
+  one has been scheduled for October 11th* Please return to the Gold Coast 
+ Potters events
+LOCATION:Benowa Studio
+URL:https://goldcoastpotters.com/event/mould-making-with-simon-suckling/
+END:VEVENT
+END:VCALENDAR

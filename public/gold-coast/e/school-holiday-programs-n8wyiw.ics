@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:School Holiday Programs
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-n8wyiw@dothings
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20261003
+SUMMARY:School Holiday Programs
+DESCRIPTION:Your next school holidays are sorted: Kids programs are back! B
+ irds\, reptiles\, mammals\, insects – there is something for every kid i
+ n the family. Led by our qualified educators\, with real animal encounters
+  and outdoor learning that doesn’t feel like school. Booking siblings or
+  friends into the same program? Save 5% with code WILD5 ! National Trust Q
+ LD members\, add you membership number after saving the code for an extra 
+ 15% off. Spaces remain in Teens and Bee programs only! Lock in your childr
+ en’s spots now.
+LOCATION:Currumbin Wildlife Sanctuary events
+URL:https://currumbinsanctuary.com.au/
+END:VEVENT
+END:VCALENDAR

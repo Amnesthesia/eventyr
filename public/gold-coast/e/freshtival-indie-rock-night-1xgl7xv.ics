@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Freshtival Indie Rock Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1xgl7xv@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T190000
+DTEND;TZID=Australia/Brisbane:20260926T210000
+SUMMARY:Freshtival Indie Rock Night
+DESCRIPTION:An evening of live indie rock performances hosted at Dust Templ
+ e\, a creative hub known for fostering local underground artistic talent.
+LOCATION:Dust Temple\, Currumbin Waters
+URL:https://dusttemple.com.au
+END:VEVENT
+END:VCALENDAR

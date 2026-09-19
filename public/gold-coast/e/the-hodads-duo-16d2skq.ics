@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:THE HODADS DUO
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-16d2skq@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T020000
+DTEND;TZID=Australia/Brisbane:20261004T040000
+SUMMARY:THE HODADS DUO
+DESCRIPTION:Hailing from the Gold Coast\, The Hodads Duo have a reputation 
+ for satisfying a wide range of audiences with their dynamic performances a
+ nd repertoire of great music made with lots of fun and passion. Come along
+  and enjoy the impressive musicianship of this tight knit band as they ent
+ ertain all ages with hits from the 60`s till now.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/the-hodads-duo/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:MARK DIVOLA
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-6t8en@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T020000
+DTEND;TZID=Australia/Brisbane:20261003T040000
+SUMMARY:MARK DIVOLA
+DESCRIPTION:As a lead guitarist and vocalist\, Mark has performed regularly
+  in bands with the world-famous Venetta Fields and Australian legend Richa
+ rd Clapton. Mark has also performed with Paulini\, Ian Moss and Kevin Bori
+ ch. MARK DIVOLA plays popular and contemporary music\, with a huge reperto
+ ire of songs.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/mark-divola/
+END:VEVENT
+END:VCALENDAR

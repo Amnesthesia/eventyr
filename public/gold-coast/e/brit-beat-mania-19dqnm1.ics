@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BRIT BEAT MANIA
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-19dqnm1@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T190000
+DTEND;TZID=Australia/Brisbane:20261003T210000
+SUMMARY:BRIT BEAT MANIA
+DESCRIPTION:GET READY FOR BRIT BEAT MANIA! Experience all the hits and all 
+ the memories as Brit Beat Mania brings the very best of British music to C
+ lub Musgrave! Saturday 3 ... Read more »
+LOCATION:Club Musgrave
+URL:https://clubmusgrave.com/event/brit-beat-mania/
+END:VEVENT
+END:VCALENDAR

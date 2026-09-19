@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Madonna Night: A Celebration Of The Queen Of Pop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-s6au9d@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T190000
+DTEND;TZID=Australia/Brisbane:20261002T230000
+SUMMARY:Madonna Night: A Celebration Of The Queen Of Pop
+DESCRIPTION:Madonna Night is a wall-to-wall celebration of the undisputed Q
+ ueen of Pop\, coming to Miami Marketta on Friday October 2nd. Common Eras 
+ will take you through more than four decades of Madonna’s biggest hits\,
+  iconic videos\, unforgettable performances and dancefloor favourites\, al
+ l mixed live with big-screen visuals. Expect everything from Like a Prayer
+ \, Vogue and Into the Groove to Hung Up\, Music\, Ray of Light and plenty 
+ more. We’ll also be playing the artists\, collaborators and pop icons co
+ nnected to Madonna’s world\, keeping the party moving all night long. Ge
+ t ready to strike a pose and celebrate the music\, fashion and legacy of o
+ ne of the greatest pop stars of all time.
+LOCATION:Studio 56
+URL:https://www.miamimarketta.com/ticketed-events/madonna-night
+END:VEVENT
+END:VCALENDAR

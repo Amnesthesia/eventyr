@@ -3,7 +3,30 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "gccec",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Podcast Royale 3.0",
+      "datetime": "Sat 26 Sep, 2:00 PM",
+      "datetime_iso": "2026-09-26T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Gold Coast Convention and Exhibition Centre",
+      "link": "https://www.gccec.com.au/event/podcast-royale-3-0/",
+      "cost": "See link",
+      "source": "Gold Coast Convention and Exhibition Centre",
+      "description": "Three years. Two sold-out events. One mission. Alpha Events is the Gold Coast-based promotion behind Podcast Royale — the only event in Australia where podcasters, creators, and personalities trade microphones for boxing gloves and step into the ring in front of thousands. What started as a wild idea has become a flagship night in the Australian events calendar. Sold-out crowds. Standing-room only. And every year, it gets bigger. Podcast Royale 3.0 is the third edition. Same chaos. More fights. Bigger venue. Louder crowd. This is what we do — once a year, we put on the show no one else will.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [
+        "performance",
+        "competition",
+        "sport"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
 }

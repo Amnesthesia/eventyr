@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:THE HARMONY GUYS
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-gecqmt@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T140000
+DTEND;TZID=Australia/Brisbane:20261001T160000
+SUMMARY:THE HARMONY GUYS
+DESCRIPTION:The HARMONY GUYS are a four-piece vocal/instrumental band who p
+ erform four-part harmony songs\, creating a wonderful blend of vocal sound
+ s for all genres. Having individually performed in shows with the likes of
+  The Delltones\, Ted Mulray Gang and The Cliff Richard Experience\, this c
+ ombination of talented musicians delivers a performance of unforgettable e
+ xcellence. With an expansive repertoire of songs from the 60’s\, 70’s 
+ and 80’s they also perform favourite hits from The Beach Boys\, The Holl
+ ies\, Cliff Richard & The Shadows\, The Mavericks\, The Eagles\, The Beatl
+ es\, ELO and many more. The ever-popular Gold Coast based HARMONY GUYS are
+  undoubtedly the most enjoyable and unique band in the entertainment scene
+ .
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/the-harmony-guys/
+END:VEVENT
+END:VCALENDAR

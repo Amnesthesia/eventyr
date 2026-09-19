@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Art Exhibition - ECLECTICA
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-7p0l9i@dothings
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260921
+SUMMARY:Art Exhibition - ECLECTICA
+DESCRIPTION:A vibrant celebration of contemporary art at Studio 8 Currumbin
+  Studio 8 Currumbin is excited to welcome ECLECTICA back to the gallery th
+ is September.A vibra...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/art-exhibition--eclectica
+END:VEVENT
+END:VCALENDAR

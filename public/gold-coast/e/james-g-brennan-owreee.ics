@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:JAMES G BRENNAN
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-owreee@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T030000
+DTEND;TZID=Australia/Brisbane:20261002T050000
+SUMMARY:JAMES G BRENNAN
+DESCRIPTION:James Brennan is an experienced singer\, songwriter and guitari
+ st with a career spanning live bands\, television appearances\, tribute sh
+ ows\, national and international touring\, and cruise performances. Best k
+ nown for his Bruce Springsteen and Neil Diamond tribute shows\, he continu
+ es to perform widely while also returning to his passion for songwriting.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/james-g-brennan/
+END:VEVENT
+END:VCALENDAR

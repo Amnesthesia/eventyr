@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lani Westerman - Feature Artist
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1fqjm3l@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261018
+SUMMARY:Lani Westerman - Feature Artist
+DESCRIPTION:
+LOCATION:Anthea Polson Art
+URL:https://antheapolsonart.com.au/view-exhibitions/?exhibition_id=17852
+END:VEVENT
+END:VCALENDAR

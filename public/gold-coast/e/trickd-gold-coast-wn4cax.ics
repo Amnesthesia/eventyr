@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Trickd Gold Coast
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-wn4cax@dothings
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20261001
+SUMMARY:Trickd Gold Coast
+DESCRIPTION:TRICKD\, a reality-distorting immersive sensory experience\, ba
+ cked by the globally renowned Ripley's Believe It or Not! World Entertainm
+ ent opens its doors th...
+LOCATION:Destination Gold Coast
+URL:https://destinationgoldcoast.com/events/trickd-gold-coast
+END:VEVENT
+END:VCALENDAR

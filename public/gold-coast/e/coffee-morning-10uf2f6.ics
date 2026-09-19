@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Coffee Morning
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-10uf2f6@dothings
+DTSTART;TZID=Australia/Brisbane:20260921T100000
+DTEND;TZID=Australia/Brisbane:20260921T120000
+SUMMARY:Coffee Morning
+DESCRIPTION:@ Come along and meet with new and current members of the Club 
+ and enjoy a coffee and a chat. Feel free to bring along a game of your cho
+ ice to play! Add to calendar Google Calendar iCalendar Outlook 365 Outlook
+  Live
+LOCATION:Club Helensvale
+URL:https://clubhelensvale.com.au/promotions/coffee-morning/2026-09-21/
+END:VEVENT
+END:VCALENDAR

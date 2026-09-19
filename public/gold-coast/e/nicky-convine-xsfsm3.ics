@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Nicky Convine
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-xsfsm3@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Nicky Convine
+DESCRIPTION:
+LOCATION:Burleigh Leagues Club
+URL:https://burleighleagues.com.au/events/nicky-convine/
+END:VEVENT
+END:VCALENDAR

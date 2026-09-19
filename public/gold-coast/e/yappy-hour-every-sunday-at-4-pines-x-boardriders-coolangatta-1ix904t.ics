@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yappy Hour – Every Sunday at 4 Pines x Boardriders Coolangat
+ ta
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1ix904t@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Yappy Hour – Every Sunday at 4 Pines x Boardriders Coolangatta
+DESCRIPTION:Bring your pup to Yappy Hour at 4 Pines x Boardriders every Sun
+ day.
+LOCATION:4 Pines x Boardriders Coolangatta
+URL:https://www.insidegoldcoast.com.au/whatson/yappy-hour-every-sunday
+END:VEVENT
+END:VCALENDAR

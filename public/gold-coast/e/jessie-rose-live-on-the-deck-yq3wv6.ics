@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Jessie Rose LIVE on The Deck
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-yq3wv6@dothings
+DTSTART;TZID=Australia/Brisbane:20260920T020000
+DTEND;TZID=Australia/Brisbane:20260920T170000
+SUMMARY:Jessie Rose LIVE on The Deck
+DESCRIPTION:Sit back\, relax and enjoy the smooth tunes of Jessie Rose live
+  on the Currumbin RSL Deck!
+LOCATION:Currumbin RSL
+URL:https://www.currumbinrsl.com.au/event/jessie-rose-live-on-the-deck/
+END:VEVENT
+END:VCALENDAR

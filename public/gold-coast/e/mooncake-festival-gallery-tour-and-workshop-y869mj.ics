@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mooncake Festival Gallery Tour and Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-y869mj@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T130000
+DTEND;TZID=Australia/Brisbane:20260924T150000
+SUMMARY:Mooncake Festival Gallery Tour and Workshop
+DESCRIPTION:A combined gallery exploration of cultural artifacts followed b
+ y a practical workshop exploring themes related to the Mooncake festival.
+LOCATION:HOTA Gallery\, Surfers Paradise
+URL:https://www.whatsongoldcoast.au
+END:VEVENT
+END:VCALENDAR

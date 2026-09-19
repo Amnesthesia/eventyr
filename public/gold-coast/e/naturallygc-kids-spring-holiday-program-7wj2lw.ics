@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:NaturallyGC Kids Spring Holiday Program
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-7wj2lw@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:NaturallyGC Kids Spring Holiday Program
+DESCRIPTION:The NaturallyGC program offers an abundance of free nature-base
+ d education and landcare activities for your little adventurers to enjoy t
+ hese holidays!
+LOCATION:City of Gold Coast Libraries
+URL:https://www.whatsongoldcoast.au/All-events/NaturallyGC-Kids-Spring-Holi
+ day-Program
+END:VEVENT
+END:VCALENDAR

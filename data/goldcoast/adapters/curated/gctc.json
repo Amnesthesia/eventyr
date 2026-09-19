@@ -3,7 +3,74 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "gctc",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Gallery Restaurant | Saturday 26 September 2026",
+      "datetime": "Sat 26 Sep, 11:30 AM",
+      "datetime_iso": "2026-09-26T11:30:00",
+      "datetime_end_iso": "2026-09-26T17:30:00",
+      "location": "Gold Coast Turf Club / Magic Millions",
+      "link": "https://gctc.com.au/event/gallery-restaurant-saturday-26-september-2026/",
+      "cost": "See link",
+      "source": "Gold Coast Turf Club / Magic Millions",
+      "description": "About this Event Join us at the Gold Coast Turf Club on Saturday, 26th September in The Gallery Restaurant, a tiered dining space offering an exceptional value seafood buffet experience with sweeping views over the home straight. Perfect for groups, it&#8217;s an ideal setting to enjoy great food while soaking up the raceday atmosphere. GENERAL PUBLIC | $135.00 PP GCTC MEMBER | $121.50 PP Enhance your experience with a drinks package add-on, starting from $90 per person. Explore your options and secure your table today.",
+      "image": "https://gctc.com.au/wp-content/uploads/2026/07/trib_0b9f4d68-7c28-4d61-86c3-92ab8372d129-1.webp",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Skyline Restaurant | Saturday 26 September 2026",
+      "datetime": "Sat 26 Sep, 11:30 AM",
+      "datetime_iso": "2026-09-26T11:30:00",
+      "datetime_end_iso": "2026-09-26T17:30:00",
+      "location": "Gold Coast Turf Club / Magic Millions",
+      "link": "https://gctc.com.au/event/skyline-restaurant-saturday-26-september-2026/",
+      "cost": "See link",
+      "source": "Gold Coast Turf Club / Magic Millions",
+      "description": "About this Event Join us at the Gold Coast Turf Club on Saturday, 26th September in The Skyline Restaurant, a firm favourite known for its quality four-course menu. Perfectly positioned above the mounting yard and the finish line, this tiered dining space offers spectacular racetrack views. GENERAL PUBLIC | $150.00 PP GCTC MEMBER | $135.00 PP Enhance your experience with a drinks package add-on, starting from $110 per person. Explore your options and secure your table today.",
+      "image": "https://gctc.com.au/wp-content/uploads/2026/07/trib_39f6975f-8f63-4b4a-8270-29148163f2bb-2.webp",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Gallery Restaurant | Saturday 03 October 2026",
+      "datetime": "Sat 3 Oct, 11:30 AM",
+      "datetime_iso": "2026-10-03T11:30:00",
+      "datetime_end_iso": "2026-10-03T17:30:00",
+      "location": "Gold Coast Turf Club / Magic Millions",
+      "link": "https://gctc.com.au/event/gallery-restaurant-saturday-03-october-2026/",
+      "cost": "See link",
+      "source": "Gold Coast Turf Club / Magic Millions",
+      "description": "About this Event Join us at the Gold Coast Turf Club on Saturday, 03rd October in The Gallery Restaurant, a tiered dining space offering an exceptional value seafood buffet experience with sweeping views over the home straight. Perfect for groups, it&#8217;s an ideal setting to enjoy great food while soaking up the raceday atmosphere. GENERAL PUBLIC | $135.00 PP GCTC MEMBER | $121.50 PP Enhance your experience with a drinks package add-on, starting from $90 per person. Explore your options and secure your table today.",
+      "image": "https://gctc.com.au/wp-content/uploads/2026/07/trib_86bfb3e8-6822-408d-88a4-39a0d3797bbc-3.webp",
+      "category": "Community / Other",
+      "tags": [
+        "food",
+        "dining",
+        "drinks"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

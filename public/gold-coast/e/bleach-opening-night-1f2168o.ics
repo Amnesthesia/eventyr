@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:BLEACH Opening Night
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1f2168o@dothings
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:BLEACH Opening Night
+DESCRIPTION:$2c
+LOCATION:HOTA Lake Precinct
+URL:https://bleachfestival.com.au/events/bleach-opening-night
+END:VEVENT
+END:VCALENDAR

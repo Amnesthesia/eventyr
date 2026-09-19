@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:DON ROGERS BAND
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1h8sx83@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T010000
+DTEND;TZID=Australia/Brisbane:20260928T030000
+SUMMARY:DON ROGERS BAND
+DESCRIPTION:The Don Rogers Band is an Australian country rock four-piece le
+ d by singer-songwriter Don Rogers from Queensland’s Gold Coast. Blending
+  outlaw country with rock ’n’ roll grit\, the band delivers big hooks\
+ , raw vocals\, and high-energy live shows. Their debut single “Light It 
+ Up” introduces a bold\, guitar-driven sound rooted in real stories and m
+ odern country rock attitude.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/don-rogers-band/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Coastal Markets – Broadbeach
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-m80w0g@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:The Coastal Markets – Broadbeach
+DESCRIPTION:One of the region’s largest and most vibrant beachfront marke
+ t experiences\, bringing together hundreds of handmade and artisan vendors
+ .
+LOCATION:What's On Gold Coast\, Broadbeach
+URL:https://www.whatsongoldcoast.au/All-events/The-Coastal-Markets-Broadbea
+ ch
+END:VEVENT
+END:VCALENDAR

@@ -3,7 +3,32 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "gecko",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
-  "events": []
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Gecko Talks-22nd September – Damsel and Dragon Flies",
+      "datetime": "Tue 22 Sep",
+      "datetime_iso": "2026-09-22",
+      "datetime_end_iso": "",
+      "location": "curru8mbin RSL",
+      "link": "https://gecko.org.au/2021/09/09/gecko-talks-22nd-september-damsel-and-dragon-flies/",
+      "cost": "See link",
+      "source": "Gecko Environment Council",
+      "description": "Gecko Talks, 22nd September in curru8mbin RSL. Narelle and Damian have been observing Dragonflies and Damselflies around the coast for well over 30 years, and will be sharing with us their wealth of knowledge on these species’ life history, habitats, diversity and the ticks behind telling them apart. Visit www.gecko.org.au to book your seat and see more information",
+      "image": "",
+      "category": "Public Lecture",
+      "tags": [
+        "science",
+        "nature",
+        "wildlife",
+        "environment",
+        "community"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
 }

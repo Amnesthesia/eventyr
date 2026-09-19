@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Poetry Night - 1 October
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-17uy7bp@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T180000
+DTEND;TZID=Australia/Brisbane:20261001T200000
+SUMMARY:Poetry Night - 1 October
+DESCRIPTION:Book Tickets - Thurs Oct 1 #block-yui_3_17_2_1_1786744260461_27
+ 50 { --sqs-block-content-flex: 0\; } #block-yui_3_17_2_1_1786744260461_275
+ 0 { --opacity: 100%\; --translate-x: 0px\; --translate-y: 0px\; --rotation
+ : 0deg\; --scale-x: 100%\; --scale-y: 100%\; --skew-x: 0deg\; --skew-y: 0d
+ eg\; --origin-x: 50%\; --origin-y: 50%\; --block-transform: none\; opacity
+ : var(--opacity\, 1)\; transform: var(--block-transform)\; transform-origi
+ n: var(--origin-x) var(--origin-y)\; } Come join us for another MINTimate 
+ Poetry evening in the gallery at Mint Art House\, followed by spoken words
+  by our October feature poet Dean Barker. Dean built a time machine intend
+ ing to travel to the future and plagiarise all the good poetry before it w
+ as written. Unfortunately by then\, A.I. was so prolific that almost every
+  peom began with "There once was a man from Nantucket". This left him no o
+ ption but to write about the humour\, absurdity\, and pain of life\, explo
+ red through themes of loneliness\, neurodiversity\, and equality. He also 
+ has an unhealthy passionfruit addiction. Photo credit: @erik_the_deer #blo
+ ck-41247310eb86721459da { } #block-41247310eb86721459da .sqs-html-content 
+ { } #block-41247310eb86721459da { mix-blend-mode: var(--tweak-text-block-b
+ lend )\; border-radius: var(--tweak-text-block-radius)\; } @media screen a
+ nd (max-width: 767px) { #block-41247310eb86721459da { } } @media screen an
+ d (max-width: 767px) { #block-41247310eb86721459da .sqs-html-content { } }
+  @media screen and (max-width: 767px) { }
+LOCATION:Mint Art House\, 87 West Burleigh Road
+URL:https://www.mintarthouse.com/events/poetry-night-october-1
+END:VEVENT
+END:VCALENDAR

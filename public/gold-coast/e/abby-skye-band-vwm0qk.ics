@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ABBY SKYE BAND
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-vwm0qk@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T060000
+DTEND;TZID=Australia/Brisbane:20261003T080000
+SUMMARY:ABBY SKYE BAND
+DESCRIPTION:The Abby Skye Band is one of Queensland’s most highly rated l
+ ive bands and one of its most promising original exports. Having previousl
+ y fronted heavy bands Mission X (QLD) and Black Orchid (SA)\, Abby brought
+  a unique edge to the corporate and party scene when she formed The Abby S
+ kye Band\, with her vocal range that can meet just about any musical extre
+ me and an ear for just the right repertoire.
+LOCATION:The Stage (18+)\, 2 Wharf st\, Tweed Heads\, NSW 2486
+URL:https://twintowns.com.au/events/abby-skye-band/
+END:VEVENT
+END:VCALENDAR

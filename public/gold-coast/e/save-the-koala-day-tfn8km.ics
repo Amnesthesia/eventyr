@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Save the Koala Day
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-tfn8km@dothings
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Save the Koala Day
+DESCRIPTION:It’s Save the Koala month and we have a very special day plan
+ ned to celebrate! Visit us on Friday 25 Sep for book reading with Sarah Ec
+ cleston\, colouring activities\, nature craft and chats with our Koala Con
+ servation team. Complimentary face painting (until 12.30pm). Kick off is a
+ t 9.30am just outside Repturnal Den ( map ref. C14 ). All activities are i
+ ncluded in your Day Pass. Free for members.
+LOCATION:Currumbin Wildlife Sanctuary events
+URL:https://currumbinsanctuary.com.au/
+END:VEVENT
+END:VCALENDAR

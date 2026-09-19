@@ -3,8 +3,8 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "antheapolsonart",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
       "title": "Veronica Cay - betwixt and between",
@@ -44,6 +44,30 @@
         "contemporary",
         "gallery",
         "art"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Lani Westerman - Feature Artist",
+      "datetime": "Sat 3 Oct – Sat 17 Oct",
+      "datetime_iso": "2026-10-03",
+      "datetime_end_iso": "2026-10-17",
+      "location": "Anthea Polson Art",
+      "link": "https://antheapolsonart.com.au/view-exhibitions/?exhibition_id=17852",
+      "cost": "See link",
+      "source": "Anthea Polson Art",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "painting",
+        "design"
       ],
       "social": false,
       "intellectual": false,

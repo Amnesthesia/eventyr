@@ -1,13 +1,15 @@
 {
   "weeks": [
     "2026-09-07",
-    "2026-09-14"
+    "2026-09-14",
+    "2026-09-21"
   ],
   "sources": {
     "hota.com.au": {
       "weeksHit": [
         "2026-09-07",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-09-21"
       ]
     },
     "queensland.com": {
@@ -28,7 +30,8 @@
     "miamimarketta.com": {
       "weeksHit": [
         "2026-09-07",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-09-21"
       ]
     },
     "swellsculpture.com.au": {
@@ -39,7 +42,8 @@
     },
     "whatsongoldcoast.au": {
       "weeksHit": [
-        "2026-09-07"
+        "2026-09-07",
+        "2026-09-21"
       ]
     },
     "goldcoastpotters.com": {
@@ -61,7 +65,8 @@
     "goldcoast.qld.gov.au": {
       "weeksHit": [
         "2026-09-07",
-        "2026-09-14"
+        "2026-09-14",
+        "2026-09-21"
       ]
     },
     "basedcomedy.com.au": {
@@ -83,7 +88,18 @@
     },
     "gallery-one.com.au": {
       "weeksHit": [
-        "2026-09-14"
+        "2026-09-14",
+        "2026-09-21"
+      ]
+    },
+    "dusttemple.com.au": {
+      "weeksHit": [
+        "2026-09-21"
+      ]
+    },
+    "yelo.live": {
+      "weeksHit": [
+        "2026-09-21"
       ]
     }
   },
@@ -101,8 +117,8 @@
       "lastWeek": "2026-09-07"
     },
     "oztix.com.au": {
-      "count": 2,
-      "lastWeek": "2026-09-07"
+      "count": 3,
+      "lastWeek": "2026-09-21"
     },
     "whatsongoldcoast.com.au": {
       "count": 4,
@@ -135,6 +151,14 @@
     "evnts.au": {
       "count": 1,
       "lastWeek": "2026-09-14"
+    },
+    "chillifestivalsaustralia.com": {
+      "count": 1,
+      "lastWeek": "2026-09-21"
+    },
+    "destinationgoldcoast.stylelabs.cloud": {
+      "count": 1,
+      "lastWeek": "2026-09-21"
     }
   }
 }

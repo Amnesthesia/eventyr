@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:JEZZA
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-ibhxgl@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T023000
+DTEND;TZID=Australia/Brisbane:20261003T043000
+SUMMARY:JEZZA
+DESCRIPTION:Lead Vocalist for SEQ Legendary Entertainment Unit\, Chester\, 
+ Jezza is the penultimate Aussie Solo Artist specialising in party anthems 
+ from the 70s\, 80s\, 90s 2000s and today. Sing along with your favourite s
+ ong\, make a request and enjoy the soundtrack to your life as he makes his
+  way through everyone’s favourite song
+LOCATION:Juniors\, Cnr Fraser Dr &\, Leisure Dr\, Banora Point NSW 2486\, A
+ ustralia
+URL:https://twintowns.com.au/events/jezza/
+END:VEVENT
+END:VCALENDAR

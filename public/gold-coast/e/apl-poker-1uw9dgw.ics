@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//goldcoast//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:APL Poker
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:goldcoast-1uw9dgw@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T110000
+DTEND;TZID=Australia/Brisbane:20260925T140000
+SUMMARY:APL Poker
+DESCRIPTION:Every Friday Club Broadbeach plays host to the APL (Australian 
+ Poker League). APL poker from 11:00am Register from 10:30am
+LOCATION:Club Broadbeach\, 169 Surf Parade
+URL:https://www.clubbroadbeach.com.au/event/apl-poker-3-2/2026-09-25/
+END:VEVENT
+END:VCALENDAR

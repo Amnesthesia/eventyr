@@ -3,120 +3,13 @@
   "provider": "adapters",
   "tier": "institutions",
   "source_id": "mermaidslsc",
-  "week_start": "2026-09-14",
-  "week_end": "2026-09-20",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
   "events": [
     {
-      "title": "Barra Monday",
-      "datetime": "Mon 14 Sep",
-      "datetime_iso": "2026-09-14",
-      "datetime_end_iso": "",
-      "location": "Mermaid Beach Surf Life Saving Club",
-      "link": "https://mermaidslsc.org.au/",
-      "cost": "$19",
-      "source": "Mermaid Beach Surf Life Saving Club",
-      "description": "$19 Batter or grilled barramundi served with chips and salad",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Kids Eat Free",
-      "datetime": "Mon 14 Sep",
-      "datetime_iso": "2026-09-14",
-      "datetime_end_iso": "",
-      "location": "Mermaid Beach Surf Life Saving Club",
-      "link": "https://mermaidslsc.org.au/",
-      "cost": "See link",
-      "source": "Mermaid Beach Surf Life Saving Club",
-      "description": "Free kids meal with any main meal purchased",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining",
-        "kids",
-        "family"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Steak Night",
-      "datetime": "Tue 15 Sep",
-      "datetime_iso": "2026-09-15",
-      "datetime_end_iso": "",
-      "location": "Mermaid Beach Surf Life Saving Club",
-      "link": "https://mermaidslsc.org.au/",
-      "cost": "$19",
-      "source": "Mermaid Beach Surf Life Saving Club",
-      "description": "$19 200g Steak served with chips salad and choice of gravy",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Chefs specials",
-      "datetime": "Wed 16 Sep",
-      "datetime_iso": "2026-09-16",
-      "datetime_end_iso": "",
-      "location": "Mermaid Beach Surf Life Saving Club",
-      "link": "https://mermaidslsc.org.au/",
-      "cost": "See link",
-      "source": "Mermaid Beach Surf Life Saving Club",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Parmi Night",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
-      "datetime_end_iso": "",
-      "location": "Mermaid Beach Surf Life Saving Club",
-      "link": "https://mermaidslsc.org.au/",
-      "cost": "$19",
-      "source": "Mermaid Beach Surf Life Saving Club",
-      "description": "$19 parmi with a variety of toppings served with chips and salad",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Members Draw",
-      "datetime": "Thu 17 Sep",
-      "datetime_iso": "2026-09-17",
+      "datetime": "Thu 24 Sep",
+      "datetime_iso": "2026-09-24",
       "datetime_end_iso": "",
       "location": "Mermaid Beach Surf Life Saving Club",
       "link": "https://mermaidslsc.org.au/",
@@ -126,8 +19,8 @@
       "image": "",
       "category": "Social / Meetup",
       "tags": [
-        "raffle",
-        "community"
+        "community",
+        "raffle"
       ],
       "social": true,
       "intellectual": false,
@@ -135,30 +28,9 @@
       "creative": false
     },
     {
-      "title": "Breakfast",
-      "datetime": "Fri 18 Sep",
-      "datetime_iso": "2026-09-18",
-      "datetime_end_iso": "",
-      "location": "Mermaid Beach Surf Life Saving Club",
-      "link": "https://mermaidslsc.org.au/",
-      "cost": "See link",
-      "source": "Mermaid Beach Surf Life Saving Club",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "food",
-        "dining"
-      ],
-      "social": false,
-      "intellectual": false,
-      "hands_on": false,
-      "creative": false
-    },
-    {
       "title": "Trivia",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
+      "datetime": "Sun 20 Sep",
+      "datetime_iso": "2026-09-20",
       "datetime_end_iso": "",
       "location": "Mermaid Beach Surf Life Saving Club",
       "link": "https://mermaidslsc.org.au/",
@@ -169,30 +41,9 @@
       "category": "Social / Meetup",
       "tags": [
         "trivia",
-        "quiz",
-        "games"
-      ],
-      "social": true,
-      "intellectual": true,
-      "hands_on": false,
-      "creative": false
-    },
-    {
-      "title": "Chefs Specials",
-      "datetime": "Sun 13 Sep",
-      "datetime_iso": "2026-09-13",
-      "datetime_end_iso": "",
-      "location": "Mermaid Beach Surf Life Saving Club",
-      "link": "https://mermaidslsc.org.au/",
-      "cost": "See link",
-      "source": "Mermaid Beach Surf Life Saving Club",
-      "description": "",
-      "image": "",
-      "category": "Community / Other",
-      "tags": [
-        "dining",
-        "food",
-        "specials"
+        "games",
+        "drinks",
+        "community"
       ],
       "social": true,
       "intellectual": false,
