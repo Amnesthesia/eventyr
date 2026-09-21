@@ -41,7 +41,16 @@ export class AnthropicProvider extends BaseProvider {
 		console.log(`  [${label}] Searching…`);
 
 		const sources = llmSourceStrings(cityCfg, tier, opts.city);
-		const sourceList = sources.map((s: string) => `  - ${s}`).join("\n");
+		const sourceList = sources.map((s) => `  - ${s.text}`).join("\n");
+		// Pinned sources (SourceEntry.pin) keep their place regardless of recent
+		// yield — see llmSourceStrings/sourceEarnsPlace — so they get a firmer
+		// instruction than the rest of this bullet list, which is a steer only.
+		const pinnedNames = sources
+			.filter((s) => s.pinned)
+			.map((s) => s.text.split("(")[0].trim());
+		const pinnedNote = pinnedNames.length
+			? `\n\nAlways check these directly and include every confirmed event this week, even a single show: ${pinnedNames.join(", ")}.`
+			: "";
 		const tierInstruction = TIER_INSTRUCTIONS[tier] ?? "";
 		const today = new Date();
 
@@ -60,7 +69,7 @@ export class AnthropicProvider extends BaseProvider {
 					`You are an events researcher for ${cityName}. Today is ${today.toLocaleDateString("en-AU", { weekday: "long", day: "numeric", month: "long", year: "numeric" })}.\n` +
 					`Your job is to find in-person events happening THIS WEEK in ${cityName}:\n` +
 					`${fmtDate(weekStart)} to ${fmtDate(weekEnd)}.\n\n` +
-					`Sources to search (${tier.toUpperCase()}):\n${tierInstruction}\n\n${sourceList}`,
+					`Sources to search (${tier.toUpperCase()}):\n${tierInstruction}\n\n${sourceList}${pinnedNote}`,
 			},
 		];
 

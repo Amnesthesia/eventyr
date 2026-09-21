@@ -34,7 +34,7 @@ test("llmSourceStrings renders prose the search prompts can use", () => {
 	assert.ok(strings.length > 0);
 	// "Name (domain)" — the shape the prompt builders were written against
 	assert.ok(
-		strings.some((s) => /\(.+\..+\)$/.test(s)),
+		strings.some((s) => /\(.+\..+\)$/.test(s.text)),
 		"at least one entry carries its domain",
 	);
 	// a scraper-backed source must never be handed to the search prompts
@@ -44,7 +44,7 @@ test("llmSourceStrings renders prose the search prompts can use", () => {
 	for (const s of strings) {
 		for (const name of scraperNames) {
 			assert.ok(
-				!s.startsWith(name),
+				!s.text.startsWith(name),
 				`${name} is scraped, should not be searched`,
 			);
 		}
@@ -92,7 +92,33 @@ test("a scraper source that returned nothing falls back to the AI search", () =>
 	};
 	// With no barren file, only llm sources are searched.
 	const searched = llmSourceStrings(cfg, "institutions");
-	assert.deepEqual(searched, ["Searched Venue (c.com)"]);
+	assert.deepEqual(searched, [
+		{ text: "Searched Venue (c.com)", pinned: false },
+	]);
+});
+
+test("a pinned llm source is marked pinned in the prompt names", () => {
+	const cfg = {
+		name: "Test",
+		sources: {
+			aggregators: [],
+			institutions: [
+				{
+					name: "Quiet Venue",
+					method: "llm" as const,
+					domains: ["quiet.com"],
+					pin: true,
+				},
+				{ name: "Regular Venue", method: "llm" as const, domains: ["r.com"] },
+			],
+			independents: [],
+		},
+	};
+	const searched = llmSourceStrings(cfg, "institutions");
+	assert.deepEqual(searched, [
+		{ text: "Quiet Venue (quiet.com)", pinned: true },
+		{ text: "Regular Venue (r.com)", pinned: false },
+	]);
 });
 
 test("a site already scraped is not also named in the search prompts", () => {
@@ -129,5 +155,7 @@ test("a site already scraped is not also named in the search prompts", () => {
 		},
 	};
 	const strings = llmSourceStrings(cfg, "aggregators");
-	assert.deepEqual(strings, ["Unrelated Blog (someblog.com.au)"]);
+	assert.deepEqual(strings, [
+		{ text: "Unrelated Blog (someblog.com.au)", pinned: false },
+	]);
 });

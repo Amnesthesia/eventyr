@@ -173,6 +173,7 @@ sources:
         - griffith.edu.au
     - name: The Star Gold Coast
       method: llm
+      pin: true
       domains:
         - thestargoldcoast.com.au
         - star.com.au
@@ -1083,6 +1084,7 @@ sources:
       method: llm
     - name: Gold Coast Jazz and Blues Club
       method: llm
+      pin: true
       domains:
         - goldcoastjazzclub.org.au
     - name: Emerald Lakes Market

@@ -130,10 +130,13 @@ sources:
         - https://visit.brisbane.qld.au/whats-on/whats-on-this-week
     - id: brisbane-city-council
       name: Brisbane City Council What's On
-      method: llm
+      method: scraper
       domains:
         - brisbane.qld.gov.au
+        - trumba.com
       homepage: https://www.brisbane.qld.gov.au/
+      listingUrls:
+        - https://www.trumba.com/calendars/brisbane-city-council.json
       strategy: html
       venue:
         name: null
@@ -144,8 +147,54 @@ sources:
         aliases: []
       schedule: weekly
       note: >-
-        Candidate, city-wide aggregator (covers Botanic Gardens / Planetarium events too, which have
-        no dedicated domain). Not verified this session.
+        Promoted 2026-09-21: Trumba's own citywide JSON calendar (2000 events, deterministic
+        feed parse — parseFeed's trumba-json format), verified directly against the live feed.
+        probe-sources's own re-verification pass demoted this and mixed up listingUrls across
+        the three Trumba sources sharing the trumba.com domain (a probe.ts bug, not a real
+        problem with this source) — restored by hand; do not trust a future probe-sources
+        --apply run to re-verify these three without checking its diff first.
+    - id: brisbane-city-council-creative
+      name: Brisbane City Council Creative Events
+      method: scraper
+      domains:
+        - trumba.com
+        - brisbane.qld.gov.au
+      homepage: https://www.brisbane.qld.gov.au/
+      listingUrls:
+        - https://www.trumba.com/calendars/LIVE.json
+      strategy: html
+      venue:
+        name: null
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+      schedule: weekly
+      note: 'Verified by probe-sources 2026-09-21: 168 dated event(s) via html.'
+    - id: brisbane-city-council-parks
+      name: Brisbane City Council Park Events
+      method: scraper
+      domains:
+        - trumba.com
+        - brisbane.qld.gov.au
+      homepage: https://www.brisbane.qld.gov.au/
+      listingUrls:
+        - https://www.trumba.com/calendars/brisbane-events-rss.xml?filterview=parks
+      strategy: html
+      venue:
+        name: null
+        address: null
+        suburb: null
+        lat: null
+        lng: null
+        aliases: []
+      schedule: weekly
+      note: >-
+        Added 2026-09-21: council's park-events calendar, published as Atom/GData RSS rather
+        than Trumba's JSON shape (500 events) — parseFeed's trumba-atom format. probe-sources's
+        own re-verification pass overwrote this listingUrl with LIVE.json's (a probe.ts
+        domain-collision bug across the three sibling trumba.com sources) — restored by hand.
     - name: Queensland.com Brisbane Events
       method: llm
       domains:
@@ -645,12 +694,21 @@ sources:
       note: 'Verified by probe-sources 2026-09-08: 10 dated event(s) via html.'
     - id: riverstage
       name: Riverstage
-      method: llm
+      method: scraper
       domains:
         - riverstage.com.au
         - riverstage.brisbane.qld.gov.au
+        - data.brisbane.qld.gov.au
       homepage: https://riverstage.com.au/
+      listingUrls:
+        - >-
+          https://data.brisbane.qld.gov.au/api/records/1.0/search/?rows=40&disjunctive.event_type=true&disjunctive.age=true&disjunctive.cost=true&disjunctive.location=true&disjunctive.bookingsrequired=true&sort=-start_datetime&calendarview=month&location=22,-27.4788,153.0301&basemap=jawg.streets&start=0&dataset=riverstage-events&timezone=Australia%2FBrisbane&lang=en
       strategy: html
+      note: >-
+        Promoted 2026-09-21: Brisbane City Council open-data API for this venue, verified via
+        test-adapter (5 dated events). probe-sources's own re-verification pass demoted this
+        (a probe.ts false negative, not a real problem with this source — see the
+        brisbane-city-council entry's note) — restored by hand.
       venue:
         name: Riverstage
         address: Gardens Point Rd
@@ -660,9 +718,6 @@ sources:
         aliases:
           - Riverstage
       schedule: weekly
-      note: >-
-        Candidate — two conflicting domains in the existing source list, canonical one not confirmed
-        this session (network blocked).
     - name: Suncorp Stadium
       method: scraper
       domains:
@@ -1142,9 +1197,13 @@ sources:
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Brisbane Concert Orchestra
       method: llm
+      pin: true
       domains:
         - bco.org.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: >-
+        Suggested by discover-sources 2026-09-02; not yet verified. Pinned 2026-09-21: a music
+        venue with sporadic bookings is exactly what sourceEarnsPlace() prunes after a quiet
+        HIT_WINDOW_WEEKS — keep it named every week regardless.
     - name: The Queensland Choir
       method: llm
       domains:
@@ -1397,10 +1456,12 @@ sources:
       note: 'Verified by probe-sources 2026-09-08: 6 dated event(s) via html.'
     - name: Crowbar Brisbane Fortitude Valley
       method: llm
+      pin: true
       domains:
         - crowbarbrisbane.com.au
     - name: Black Bear Lodge Fortitude Valley
       method: llm
+      pin: true
       domains:
         - blackbearlodge.bar
     - name: Palace Cinemas Brisbane
@@ -1434,6 +1495,7 @@ sources:
         - avidreader.com.au
     - name: The Bearded Lady West End
       method: llm
+      pin: true
       domains:
         - thebeardedlady.com.au
     - name: The Boundary Hotel West End
@@ -1555,14 +1617,17 @@ sources:
       note: 'Verified by probe-sources 2026-09-08: 0 dated event(s) via html.'
     - name: The Zoo, Fortitude Valley
       method: llm
+      pin: true
       domains:
         - thezoo.com.au
     - name: The Brightside, Fortitude Valley
       method: llm
+      pin: true
       domains:
         - thebrightsidebrisbane.com.au
     - name: Crowbar Brisbane
       method: llm
+      pin: true
       domains:
         - crowbarbrisbane.com
       listingUrls:
@@ -1573,22 +1638,27 @@ sources:
         if they yield events.
     - name: Black Bear Lodge
       method: llm
+      pin: true
       domains:
         - blackbearlodge.com.au
     - name: Brooklyn Standard
       method: llm
+      pin: true
       domains:
         - brooklynstandard.com.au
     - name: Lefty's Music Hall
       method: llm
+      pin: true
       domains:
         - leftysmusichall.com
     - name: The Bearded Lady, West End
       method: llm
+      pin: true
       domains:
         - thebeardedladywestend.com
     - name: The Junk Bar, Ashgrove
       method: llm
+      pin: true
       domains:
         - thejunkbar.com.au
     - name: Ric's Bar, Fortitude Valley
@@ -1604,36 +1674,19 @@ sources:
       note: 'Verified by probe-sources 2026-09-08: 19 dated event(s) via html.'
     - name: It's Still A Secret
       method: llm
+      pin: true
       domains:
         - itsstillasecret.com.au
     - name: The Flamin' Galah
       method: llm
+      pin: true
       domains:
         - flamingalah.com.au
     - name: Valley Loft
       method: llm
+      pin: true
       domains:
         - valleyloft.com.au
-    - id: princess-theatre
-      name: Princess Theatre Woolloongabba
-      method: llm
-      domains:
-        - princesstheatre.com.au
-        - theprincesstheatre.com.au
-      homepage: https://princesstheatre.com.au/
-      strategy: html
-      venue:
-        name: Princess Theatre
-        address: 8 Annerley Rd
-        suburb: Woolloongabba
-        lat: null
-        lng: null
-        aliases:
-          - Princess Theatre
-      schedule: weekly
-      note: >-
-        Candidate — two conflicting domain variants in the existing source list, canonical one not
-        confirmed this session.
     - name: The Old Museum, Bowen Hills
       method: llm
       domains:
@@ -2870,6 +2923,7 @@ sources:
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Tivoli Drive-In
       method: llm
+      pin: true
       domains:
         - tivolidrivein.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.

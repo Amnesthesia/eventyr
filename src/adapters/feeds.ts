@@ -26,12 +26,16 @@
 // epoch-milliseconds, which is a machine-exact instant reformatted (not
 // inferred) into an ISO string chrono reads back identically — verified.
 
+import { XMLParser } from "fast-xml-parser";
+import he from "he";
 import type { RawCandidateFields } from "./types.ts";
 
 export type FeedFormat =
 	| "events-calendar"
 	| "modern-events-calendar"
-	| "squarespace";
+	| "squarespace"
+	| "trumba-json"
+	| "trumba-atom";
 
 export interface FeedResult {
 	format: FeedFormat;
@@ -41,10 +45,11 @@ export interface FeedResult {
 
 /**
  * One hostile response must not turn into unbounded downstream work. Feeds
- * legitimately paginate in the hundreds (beachhotel: 384), so this is well
- * above any real page while still bounded.
+ * legitimately paginate in the hundreds (beachhotel: 384) up to low
+ * thousands for a citywide calendar (Brisbane City Council's Trumba feed:
+ * ~2000), so this is well above any real page while still bounded.
  */
-const MAX_EVENTS_PER_FEED = 500;
+const MAX_EVENTS_PER_FEED = 2500;
 
 /** Feed content is third-party text. Anything heading for an href gets
  * scheme-checked here rather than downstream. */
@@ -67,11 +72,18 @@ function str(value: unknown): string | null {
 	return null;
 }
 
-/** Strips tags from the HTML fragments feeds put in description fields. */
+/** Decodes entities and strips tags from the HTML fragments feeds put in
+ * description fields (e.g. Trumba's JSON gives "&#39;"/"&amp;", not the
+ * literal characters). */
 function plain(value: unknown): string | null {
 	const s = str(value);
 	return s
-		? (str(s.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ")) ?? null)
+		? (str(
+				he
+					.decode(s)
+					.replace(/<[^>]*>/g, " ")
+					.replace(/\s+/g, " "),
+			) ?? null)
 		: null;
 }
 
@@ -220,6 +232,173 @@ function sqspToFields(
 	};
 }
 
+// --- Trumba calendars (JSON) ----------------------------------------------
+// GET www.trumba.com/calendars/<name>.json → a bare array. Used by Brisbane
+// City Council's citywide event calendars. Structured fields live in a
+// label/value `customFields` array rather than as top-level keys — the same
+// venue/cost/age metadata every Trumba-embedded page renders.
+
+interface TrumbaCustomField {
+	label?: unknown;
+	value?: unknown;
+}
+
+interface TrumbaEvent {
+	eventID?: unknown;
+	title?: unknown;
+	description?: unknown;
+	location?: unknown;
+	startDateTime?: unknown;
+	endDateTime?: unknown;
+	startTimeZoneOffset?: unknown;
+	endTimeZoneOffset?: unknown;
+	permaLinkUrl?: unknown;
+	webLink?: unknown;
+	eventImage?: { url?: unknown } | unknown;
+	customFields?: unknown;
+}
+
+function trumbaCustomField(fields: unknown, label: string): string | null {
+	if (!Array.isArray(fields)) return null;
+	const match = fields.find(
+		(f) =>
+			f &&
+			typeof f === "object" &&
+			str((f as TrumbaCustomField).label) === label,
+	) as TrumbaCustomField | undefined;
+	return match ? plain(match.value) : null;
+}
+
+// Trumba's JSON gives a local wall-clock timestamp and a separate zone
+// offset ("+1000") rather than one combined string. Concatenating the two
+// is a reformat of values the source already gave, not an inference — same
+// contract as Squarespace's epoch conversion above.
+function trumbaTimestamp(dt: unknown, offset: unknown): string | null {
+	const d = str(dt);
+	if (!d) return null;
+	const o = str(offset);
+	if (!o) return d;
+	return `${d}${o.length === 5 ? `${o.slice(0, 3)}:${o.slice(3)}` : o}`;
+}
+
+function trumbaJsonToFields(e: TrumbaEvent): RawCandidateFields | null {
+	const title = plain(e.title);
+	const startRaw = trumbaTimestamp(e.startDateTime, e.startTimeZoneOffset);
+	if (!title || !startRaw) return null;
+	const image = (e.eventImage ?? {}) as { url?: unknown };
+	return {
+		...empty,
+		title,
+		description: plain(e.description),
+		startRaw,
+		endRaw: trumbaTimestamp(e.endDateTime, e.endTimeZoneOffset),
+		venueName: trumbaCustomField(e.customFields, "Venue") ?? str(e.location),
+		address: trumbaCustomField(e.customFields, "Venue address"),
+		url: safeUrl(e.permaLinkUrl) ?? safeUrl(e.webLink),
+		price: trumbaCustomField(e.customFields, "Cost"),
+		imageUrl: safeUrl(image.url),
+		category:
+			trumbaCustomField(e.customFields, "Primary event type") ??
+			trumbaCustomField(e.customFields, "Event type"),
+		sourceEventId: str(e.eventID),
+	};
+}
+
+// --- Trumba calendars (Atom/GData RSS) -------------------------------------
+// GET www.trumba.com/calendars/<name>.rss / brisbane-events-rss.xml → an Atom
+// feed carrying Google GData calendar extensions (gd:*) plus Trumba's own
+// flat gc:* fields per entry. Recognised by the x-trumba namespace
+// declaration on the root <feed> — specific enough not to misfire on an
+// unrelated Atom/RSS feed, same shape-not-URL rule as everything else here.
+//
+// Needs real XML parsing rather than regex: several gc:* tags repeat with
+// different `type` attributes for unrelated values (e.g. two <gc:eventtype>
+// elements, one numeric and one the actual category string), which only a
+// structural parse can tell apart correctly.
+const TRUMBA_ATOM_ROOT = /<feed\b[^>]*\bxmlns:x-trumba=/i;
+
+function atomText(node: unknown): string | null {
+	if (node == null) return null;
+	if (typeof node === "string" || typeof node === "number") return str(node);
+	if (typeof node === "object")
+		return str((node as { "#text"?: unknown })["#text"]);
+	return null;
+}
+
+function atomAttr(node: unknown, attr: string): string | null {
+	if (!node || typeof node !== "object") return null;
+	return str((node as Record<string, unknown>)[`@_${attr}`]);
+}
+
+function asArray<T>(v: T | T[] | undefined): T[] {
+	if (v === undefined || v === null) return [];
+	return Array.isArray(v) ? v : [v];
+}
+
+function trumbaAtomEntryToFields(
+	e: Record<string, unknown>,
+): RawCandidateFields | null {
+	const title = plain(atomText(e.title));
+	const when = e["gd:when"];
+	const startRaw = atomAttr(when, "startTime");
+	if (!title || !startRaw) return null;
+
+	const links = asArray(e.link);
+	const altLink = links.find((l) => atomAttr(l, "rel") === "alternate");
+
+	const category =
+		asArray(e["gc:eventtype"])
+			.map((t) => (atomAttr(t, "type") === "string" ? atomText(t) : null))
+			.find(Boolean) ?? null;
+
+	const idMatch = /\/event\/(\d+)/.exec(str(e.id) ?? "");
+
+	return {
+		...empty,
+		title,
+		description: plain(atomText(e["gc:notes"])) ?? plain(atomText(e.content)),
+		startRaw,
+		endRaw: atomAttr(when, "endTime"),
+		venueName:
+			plain(atomText(e["gc:venue"])) ?? atomAttr(e["gd:where"], "valueString"),
+		address: plain(atomText(e["gc:venueaddress"])),
+		url: safeUrl(atomAttr(altLink, "href")),
+		price: plain(atomText(e["gc:cost"])),
+		imageUrl: safeUrl(atomText(e["gc:eventimage"])),
+		category,
+		sourceEventId: idMatch?.[1] ?? null,
+	};
+}
+
+function parseTrumbaAtom(body: string, _url: string): FeedResult | null {
+	const trimmed = body.replace(/^﻿/, "").trimStart();
+	if (!trimmed.startsWith("<?xml") && !trimmed.startsWith("<feed")) {
+		return null;
+	}
+	if (!TRUMBA_ATOM_ROOT.test(trimmed)) return null;
+
+	let doc: unknown;
+	try {
+		doc = new XMLParser({
+			ignoreAttributes: false,
+			attributeNamePrefix: "@_",
+			textNodeName: "#text",
+		}).parse(trimmed);
+	} catch {
+		return null;
+	}
+	const feed = (doc as { feed?: Record<string, unknown> } | undefined)?.feed;
+	if (!feed) return null;
+
+	return {
+		format: "trumba-atom",
+		events: asArray(feed.entry)
+			.slice(0, MAX_EVENTS_PER_FEED)
+			.map((e) => trumbaAtomEntryToFields(e as Record<string, unknown>))
+			.filter((f): f is RawCandidateFields => f !== null),
+	};
+}
+
 // --- dispatch -------------------------------------------------------------
 
 function asRecord(body: string): Record<string, unknown> | unknown[] | null {
@@ -242,7 +421,7 @@ function asRecord(body: string): Record<string, unknown> | unknown[] | null {
  */
 export function parseFeed(body: string, url: string): FeedResult | null {
 	const parsed = asRecord(body);
-	if (!parsed) return null;
+	if (!parsed) return parseTrumbaAtom(body, url);
 	const origin = (() => {
 		try {
 			return new URL(url).origin;
@@ -301,6 +480,25 @@ export function parseFeed(body: string, url: string): FeedResult | null {
 			events: parsed
 				.slice(0, MAX_EVENTS_PER_FEED)
 				.map((e) => mecToFields(e as Record<string, unknown>))
+				.filter((f): f is RawCandidateFields => f !== null),
+		};
+	}
+
+	// Trumba calendar JSON: a bare array whose items carry Trumba's own
+	// eventID/startDateTime fields. Shape-matched on a non-empty array (an
+	// empty one is ambiguous the same way MEC's is, so that case is gated by
+	// host instead).
+	if (
+		(parsed.length > 0 &&
+			"eventID" in (parsed[0] as Record<string, unknown>) &&
+			"startDateTime" in (parsed[0] as Record<string, unknown>)) ||
+		(parsed.length === 0 && /(?:^|\.)trumba\.com\//i.test(url))
+	) {
+		return {
+			format: "trumba-json",
+			events: parsed
+				.slice(0, MAX_EVENTS_PER_FEED)
+				.map((e) => trumbaJsonToFields(e as TrumbaEvent))
 				.filter((f): f is RawCandidateFields => f !== null),
 		};
 	}

@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, relative } from "node:path";
-import type { CityConfig } from "../common.ts";
+import type { CityConfig, LlmSourceName } from "../common.ts";
 import {
 	CATEGORIES,
 	curatedPath,
@@ -87,10 +87,23 @@ export const OUTPUT_FORMAT_RULES =
 	"Z?'). If there's a more complete or exhaustive version of the answer, just do it and include " +
 	"it directly instead of asking permission — always take the most thorough option yourself.";
 
-function sourceNames(sources: string[]): string {
+function sourceNames(sources: LlmSourceName[]): string {
 	return sources
-		.map((s) => s.split("(")[0].trim().replace(/—\s*$/, "").trim())
+		.map((s) => s.text.split("(")[0].trim().replace(/—\s*$/, "").trim())
 		.join(", ");
+}
+
+/** Pinned sources (SourceEntry.pin) keep their place in the prompt regardless
+ * of recent yield — see llmSourceStrings. Split out here so they get a firmer
+ * "check this one" sentence instead of the generic steer. */
+function partitionPinned(sources: LlmSourceName[]): {
+	pinned: LlmSourceName[];
+	rest: LlmSourceName[];
+} {
+	return {
+		pinned: sources.filter((s) => s.pinned),
+		rest: sources.filter((s) => !s.pinned),
+	};
 }
 
 // Splits raw search text into paragraph-sized chunks so no single curation
@@ -434,10 +447,18 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 		}
 		// Named sources are the ones that have yielded events before (see
 		// src/sourceYield.ts) — a steer for the search, not a list to check off.
+		// Pinned sources (partitioned out below) get a firmer sentence instead:
+		// they keep their place regardless of recent yield, so the search must
+		// not treat them as optional the way it treats the rest of the steer.
 		if (tier === "institutions") {
-			const names = sourceNames(sources);
+			const { pinned, rest } = partitionPinned(sources);
+			const pinnedNames = sourceNames(pinned);
+			const names = sourceNames(rest);
 			return (
 				`What events are happening at ${cityName} cultural venues for ${dateRange}? ` +
+				(pinnedNames
+					? `Check these venues' own listings directly and include every confirmed event this week, even a single show: ${pinnedNames}. `
+					: "") +
 				(names
 					? `Venues that have listed relevant events before include: ${names}. Search beyond them too. `
 					: "") +
@@ -446,9 +467,14 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 			);
 		}
 		if (tier === "independents") {
-			const names = sourceNames(sources);
+			const { pinned, rest } = partitionPinned(sources);
+			const pinnedNames = sourceNames(pinned);
+			const names = sourceNames(rest);
 			return (
 				`What events are happening at small, independent ${cityName} venues and community groups from ${dateRange}? ` +
+				(pinnedNames
+					? `Check these venues' own listings directly and include every confirmed event this week, even a single show: ${pinnedNames}. `
+					: "") +
 				(names
 					? `Venues that have had relevant events before include: ${names}. Most good finds are not on that list — search widely for other independent venues and community events. `
 					: "Search widely for independent venues and community events. ") +

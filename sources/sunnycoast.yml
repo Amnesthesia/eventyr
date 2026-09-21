@@ -390,6 +390,7 @@ sources:
   independents:
     - name: Solbar, Maroochydore
       method: llm
+      pin: true
       domains:
         - solbarsunshinecoast.com.au
     - name: The Station SC, Yandina
@@ -420,6 +421,7 @@ sources:
       note: 'Verified by probe-sources 2026-09-08: 3 dated event(s) via html.'
     - name: Duporth Tavern, Maroochydore
       method: llm
+      pin: true
       domains:
         - duporthtavern.com.au
     - name: Pulse Bar & Live Music, Maroochydore
@@ -460,6 +462,7 @@ sources:
       method: llm
     - name: The Bison Bar, Nambour
       method: llm
+      pin: true
     - name: Your Mates Brewing Co., Warana
       method: llm
       domains:
@@ -550,6 +553,7 @@ sources:
       method: llm
     - name: Solbar Maroochydore
       method: llm
+      pin: true
       domains:
         - solbar.com.au
     - name: NightQuarter Birtinya

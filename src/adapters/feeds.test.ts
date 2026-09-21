@@ -189,6 +189,95 @@ test("self-describing wp-json endpoints are not fetched as feeds", () => {
 	]);
 });
 
+test("Trumba calendar JSON is parsed from customFields", () => {
+	const body = JSON.stringify([
+		{
+			eventID: 208676347,
+			title: "Empire of the Sun",
+			description: "<p>Frontier Touring&#39;s biggest show.</p>",
+			location: "Riverstage, Brisbane City",
+			startDateTime: "2027-02-21T17:15:00",
+			endDateTime: "2027-02-21T22:00:00",
+			startTimeZoneOffset: "+1000",
+			endTimeZoneOffset: "+1000",
+			permaLinkUrl:
+				"https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D208676347",
+			eventImage: { url: "https://www.trumba.com/i/x.jpg" },
+			customFields: [
+				{ label: "Venue", value: "Riverstage, Brisbane City" },
+				{ label: "Cost", value: "See website for ticket prices" },
+				{ label: "Primary event type", value: "Concerts" },
+			],
+		},
+	]);
+	const r = parseFeed(body, "https://www.trumba.com/calendars/LIVE.json");
+	assert.equal(r?.format, "trumba-json");
+	assert.equal(r?.events.length, 1);
+	const e = r?.events[0];
+	assert.ok(e);
+	assert.equal(e.title, "Empire of the Sun");
+	// Entities decoded, tags stripped.
+	assert.equal(e.description, "Frontier Touring's biggest show.");
+	// Local wall-clock + separate zone offset, concatenated verbatim.
+	assert.equal(e.startRaw, "2027-02-21T17:15:00+10:00");
+	assert.equal(iso(e), "2027-02-21T17:15:00+10:00");
+	assert.equal(e.venueName, "Riverstage, Brisbane City");
+	assert.equal(e.price, "See website for ticket prices");
+	assert.equal(e.category, "Concerts");
+});
+
+test("an empty Trumba array only counts as a feed when the URL says so", () => {
+	assert.equal(
+		parseFeed("[]", "https://www.trumba.com/calendars/x.json")?.events.length,
+		0,
+	);
+	assert.equal(parseFeed("[]", "https://x.com/some/list.json"), null);
+});
+
+test("Trumba's Atom/GData calendar is parsed, including the duplicate-tag category trap", () => {
+	const body = `<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns:gd="http://schemas.google.com/g/2005" xmlns:x-trumba="http://schemas.trumba.com/atom/x-trumba" xmlns="http://www.w3.org/2005/Atom">
+	<entry>
+		<id>http://uid.trumba.com/event/204260023</id>
+		<title type="text">Pilates</title>
+		<content type="html">ignored, gc:notes wins</content>
+		<link rel="alternate" type="text/html" href="https://x.com/e/204260023" />
+		<gd:where valueString="Moora Park, Shorncliffe" />
+		<gd:when startTime="2026-09-20T21:00:00Z" endTime="2026-09-20T22:00:00Z" />
+		<gc:notes type="string">Bring a mat.</gc:notes>
+		<gc:cost type="string">$6</gc:cost>
+		<gc:venue type="string">Moora Park, Shorncliffe</gc:venue>
+		<gc:venueaddress type="location">Moora Park, 65 Park Parade, Shorncliffe</gc:venueaddress>
+		<gc:eventtype type="number">Move Well Brisbane events</gc:eventtype>
+		<gc:eventtype type="string">Fitness &amp; well-being</gc:eventtype>
+	</entry>
+</feed>`;
+	const r = parseFeed(
+		body,
+		"https://www.trumba.com/calendars/brisbane-events-rss.xml?filterview=parks",
+	);
+	assert.equal(r?.format, "trumba-atom");
+	assert.equal(r?.events.length, 1);
+	const e = r?.events[0];
+	assert.ok(e);
+	assert.equal(e.title, "Pilates");
+	assert.equal(e.description, "Bring a mat.");
+	assert.equal(e.startRaw, "2026-09-20T21:00:00Z");
+	assert.equal(e.endRaw, "2026-09-20T22:00:00Z");
+	assert.equal(e.venueName, "Moora Park, Shorncliffe");
+	assert.equal(e.address, "Moora Park, 65 Park Parade, Shorncliffe");
+	assert.equal(e.url, "https://x.com/e/204260023");
+	assert.equal(e.price, "$6");
+	// The numeric-typed duplicate must not win over the string one.
+	assert.equal(e.category, "Fitness & well-being");
+	assert.equal(e.sourceEventId, "204260023");
+});
+
+test("an unrelated Atom/RSS feed is not claimed as Trumba's", () => {
+	const body = `<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Post</title></entry></feed>`;
+	assert.equal(parseFeed(body, "https://x.com/feed/"), null);
+});
+
 test("WordPress RSS is not offered as an event feed", () => {
 	// Advertised on every page of every WP site, syndicates posts rather than
 	// events, and nothing here parses RSS — 77 wasted fetches in one city run.

@@ -133,6 +133,16 @@ export interface SourceEntry {
 	method: "llm" | "scraper";
 	/** Hostnames this source owns, incl. aliases/redirect targets. */
 	domains?: string[];
+	/**
+	 * llm-only. A source that has no scrapable listing page but is still worth
+	 * naming every week regardless of recent yield — e.g. a major music venue
+	 * with sporadic bookings, which is exactly the profile sourceEarnsPlace()
+	 * (src/sourceYield.ts) prunes after a quiet HIT_WINDOW_WEEKS: gone from the
+	 * prompt right when it finally has a show worth surfacing. Set by hand on a
+	 * short list of sources that matter enough to check every week even when
+	 * they haven't hit recently — not a general escape hatch from pruning.
+	 */
+	pin?: boolean;
 	// --- scraper-only, ignored for method: "llm" ---
 	/** Stable slug; also names the scraped output file. */
 	id?: string;
@@ -245,11 +255,18 @@ function barrenSourceNames(
  * while (see src/sourceYield.ts): most named sources never yield anything, and
  * naming them costs tokens without steering the search anywhere useful.
  */
+export interface LlmSourceName {
+	text: string;
+	/** Set for a source that keeps its place regardless of recent yield —
+	 * see SourceEntry.pin. */
+	pinned: boolean;
+}
+
 export function llmSourceStrings(
 	cfg: CityConfig,
 	tier: string,
 	cityKey?: string,
-): string[] {
+): LlmSourceName[] {
 	const entries = cfg.sources?.[tier as SourceTier] ?? [];
 	const barren = cityKey
 		? barrenSourceNames(cityKey, toISODate(getWeekRange().monday))
@@ -292,10 +309,13 @@ export function llmSourceStrings(
 	return entries
 		.filter((e) =>
 			e.method === "llm"
-				? sourceEarnsPlace(e, ledger) && !alreadyScraped(e)
+				? (e.pin || sourceEarnsPlace(e, ledger)) && !alreadyScraped(e)
 				: barren === null || barren.has(e.name),
 		)
-		.map((e) => (e.domains?.[0] ? `${e.name} (${e.domains[0]})` : e.name));
+		.map((e) => ({
+			text: e.domains?.[0] ? `${e.name} (${e.domains[0]})` : e.name,
+			pinned: e.method === "llm" && !!e.pin,
+		}));
 }
 
 /** Every source in the city, all tiers flattened. */
