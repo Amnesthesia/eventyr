@@ -1,14 +1,8 @@
-// The long-press menu on a card: bookmark, share, add to calendar.
+// The long-press menu on a card: like/dislike, share, add to calendar.
 //
 // A bottom sheet rather than a popover anchored to the card, because on a
 // phone the card can be anywhere on screen and the thumb is at the bottom.
-import {
-	Bookmark,
-	BookmarkCheck,
-	CalendarPlus,
-	Check,
-	Share2,
-} from "lucide-react";
+import { CalendarPlus, Check, Minus, Plus, Share2 } from "lucide-react";
 import { useState } from "react";
 import { useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
@@ -23,6 +17,7 @@ interface Props {
 	cityKey: string;
 	isStarred: boolean;
 	onStarClick: () => void;
+	onDislikeClick: () => void;
 	onClose: () => void;
 }
 
@@ -31,6 +26,7 @@ export default function CardActionSheet({
 	cityKey,
 	isStarred,
 	onStarClick,
+	onDislikeClick,
 	onClose,
 }: Props) {
 	const { cityData } = useEventsContext();
@@ -77,8 +73,19 @@ export default function CardActionSheet({
 						close();
 					}}
 				>
-					{isStarred ? <BookmarkCheck size={16} /> : <Bookmark size={16} />}
+					<Plus size={16} strokeWidth={2.5} />
 					{isStarred ? "Remove pin" : "Pin to Top Picks"}
+				</button>
+				<button
+					type="button"
+					className="sheet-action"
+					onClick={() => {
+						onDislikeClick();
+						close();
+					}}
+				>
+					<Minus size={16} strokeWidth={2.5} />
+					Not interested
 				</button>
 				{canAddToCalendar &&
 					calendars.map((link) =>

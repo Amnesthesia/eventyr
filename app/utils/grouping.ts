@@ -131,6 +131,16 @@ function byStartTime(a: Event, b: Event): number {
 	return cmp !== 0 ? cmp : byScore(a, b);
 }
 
+/** Descending score, then up the day. Within a day the reader is choosing what
+ * to do, not reading a timetable — a 9 at 8pm should lead a 3 at 10am. Time
+ * only breaks ties, so each score band still reads in order. */
+function byScoreThenStart(a: Event, b: Event): number {
+	const cmp = byScore(a, b);
+	return cmp !== 0
+		? cmp
+		: (a.datetime_iso || "9999").localeCompare(b.datetime_iso || "9999");
+}
+
 /** Ascending by end date: for something already running when the window
  * opened, a start time months ago says nothing, but "closes soonest" does. */
 function byEndDate(a: Event, b: Event): number {
@@ -173,7 +183,7 @@ function groupByDate(
 			groups.push({
 				key: day,
 				label: dateLabel(day, today),
-				events: [...dayEvents].sort(withPrefs(byStartTime, prefs)),
+				events: [...dayEvents].sort(withPrefs(byScoreThenStart, prefs)),
 			});
 		}
 	}

@@ -206,9 +206,9 @@ export default function MoreFilters() {
 							type="button"
 							className="chip"
 							onClick={clearHidden}
-							title="Bring back every event you swiped away"
+							title="Bring back every event you hid, and undo what it taught your preferences"
 						>
-							Unhide {hiddenCount} skipped
+							Unhide {hiddenCount} hidden
 						</button>
 					)}
 				</div>

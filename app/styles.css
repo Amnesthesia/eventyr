@@ -222,7 +222,7 @@ h3 {
 
 /* Press feedback on the small square controls. Hover states are gated to a
    real pointer so a touch does not leave a card stuck in its hover state. */
-:is(.filter-btn, .tag-btn, .tag-vibe, .star-btn, .icon-btn, .theme-btn):active {
+:is(.filter-btn, .tag-btn, .tag-vibe, .rate-btn, .icon-btn, .theme-btn):active {
 	transform: scale(0.96);
 }
 
@@ -1393,27 +1393,8 @@ article.card.has-image > * {
 	flex-shrink: 0;
 }
 
-/* ── Star button ── */
-.star-btn {
-	/* >=24px: WCAG 2.2 target-size. The icon stays its old size. */
-	min-width: 24px;
-	min-height: 24px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: transparent;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-	color: var(--border);
-	margin-bottom: 0;
-	box-shadow: none;
-	flex-shrink: 0;
-	transition: color 0.12s;
-}
-
 /* The two icon actions on a card: add-to-calendar and share, sitting together
-   in the top-right beside the save bookmark.
+   in the top-right beside the like/dislike pair.
    width:auto and the margin/box-shadow resets are all fighting pico's button
    defaults, which otherwise make these full-width blocks.
    Coloured with the category hue rather than left grey: they are the two
@@ -1444,17 +1425,53 @@ article.card.has-image > * {
 	background: transparent;
 }
 
-.star-btn:hover {
+/* ── Like / dislike ──
+   A plain +/− square rather than a thumb or a heart: every tag chip on this
+   same card already marks a stated preference with exactly this glyph ("+"
+   for more, the tag-pref-less minus for less — see .tag-pref-more/less
+   below), so this reads as that same "more/less of this" idea applied to the
+   whole event, not a second vocabulary borrowed from a social feed. The
+   sharp-cornered outline matches the zero-radius, mono-labelled controls
+   everywhere else on the card (.card-cat, .tag). */
+.rate-btn {
+	/* >=24px: WCAG 2.2 target-size. */
+	min-width: 24px;
+	min-height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--mono);
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1;
+	background: transparent;
+	border: 1px solid var(--border);
+	padding: 0;
+	cursor: pointer;
+	color: var(--muted);
+	margin-bottom: 0;
+	box-shadow: none;
+	flex-shrink: 0;
+	transition:
+		color 0.12s,
+		border-color 0.12s,
+		background 0.12s;
+}
+
+.rate-btn:hover {
 	color: var(--fg);
+	border-color: var(--fg);
 	background: transparent;
 }
 
-.star-btn.starred {
-	color: var(--fg);
-}
-
-.star-btn.starred svg {
-	fill: currentColor;
+/* Liked: filled solid, same invert used for a selected filter chip
+   (.chip--on) — one "this is active" language for the whole site. Dislike has
+   no matching fill: it removes the card from view, so there is nothing left
+   on screen to mark as pressed. */
+.rate-btn--like.active {
+	background: var(--fg);
+	border-color: var(--fg);
+	color: var(--bg);
 }
 
 /* Set like the category pill in the filter bar — same mono, same tracking,

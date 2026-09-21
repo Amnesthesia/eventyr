@@ -1,4 +1,4 @@
-import { Bookmark, BookmarkCheck, CalendarDays, MapPin } from "lucide-react";
+import { CalendarDays, MapPin } from "lucide-react";
 import { useState } from "react";
 import { costLabel, stripForDisplay } from "../../src/shared.ts";
 import { useEventsContext } from "../context";
@@ -32,6 +32,7 @@ interface Props {
 	isPast: boolean;
 	isStarred: boolean;
 	onStarClick: () => void;
+	onDislikeClick: () => void;
 }
 
 export default function EventCard({
@@ -40,6 +41,7 @@ export default function EventCard({
 	isPast,
 	isStarred,
 	onStarClick,
+	onDislikeClick,
 }: Props) {
 	const {
 		activeTags,
@@ -98,21 +100,36 @@ export default function EventCard({
 					)}
 					<AddToCalendar event={event} cityKey={cityKey} />
 					<ShareButton event={event} cityKey={cityKey} />
+					{/* +/− rather than thumbs: the tag chips below already use this exact
+					    "+ more of this / − less of this" mark for a stated tag preference,
+					    so the same glyph on the whole event reads as the same idea scaled
+					    up, not a second, unrelated vocabulary borrowed from social apps. */}
 					<button
 						type="button"
-						className={`star-btn${isStarred ? " starred" : ""}`}
+						className="rate-btn rate-btn--dislike"
+						onClick={(e) => {
+							e.preventDefault();
+							onDislikeClick();
+						}}
+						aria-label="Not interested"
+						title="Hide, and learn less like this"
+					>
+						<span aria-hidden="true">&minus;</span>
+					</button>
+					<button
+						type="button"
+						className={`rate-btn rate-btn--like${isStarred ? " active" : ""}`}
 						onClick={(e) => {
 							e.preventDefault();
 							onStarClick();
 						}}
-						aria-label={isStarred ? "Remove from saved" : "Save event"}
+						aria-label={isStarred ? "Unlike" : "Like"}
 						aria-pressed={isStarred}
+						title={
+							isStarred ? "Unlike — remove from saved" : "Like, and save it"
+						}
 					>
-						{isStarred ? (
-							<BookmarkCheck size={18} strokeWidth={2} />
-						) : (
-							<Bookmark size={18} strokeWidth={2} />
-						)}
+						<span aria-hidden="true">+</span>
 					</button>
 				</div>
 			</div>
@@ -242,6 +259,7 @@ export default function EventCard({
 					cityKey={cityKey}
 					isStarred={isStarred}
 					onStarClick={onStarClick}
+					onDislikeClick={onDislikeClick}
 					onClose={() => setSheetOpen(false)}
 				/>
 			)}

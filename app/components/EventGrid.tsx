@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function EventGrid({ events, isTopPick }: Props) {
-	const { starred, toggleStar, isEventPast } = useEventsContext();
+	const { starred, toggleStar, dislikeEvent, isEventPast } = useEventsContext();
 
 	return (
 		<div className="card-grid">
@@ -22,6 +22,7 @@ export default function EventGrid({ events, isTopPick }: Props) {
 						isPast={isEventPast(event)}
 						isStarred={starred.has(id)}
 						onStarClick={() => toggleStar(id)}
+						onDislikeClick={() => dislikeEvent(id)}
 					/>
 				);
 			})}

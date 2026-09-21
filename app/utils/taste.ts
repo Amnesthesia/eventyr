@@ -11,6 +11,7 @@
 import { eventHash } from "../../src/shared.ts";
 import type { Event } from "../types";
 import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs";
+import { tagWeight } from "./tagSpecificity";
 import { vibesOf } from "./vibes";
 
 /** tag/vibe/category key -> how many bookmarked events carried it. */
@@ -101,6 +102,50 @@ export function bumpTaste(
 	return next;
 }
 
+/** Marks a "not interested" as a counted interaction without pretending a
+ * category was disliked — mirrors STATED_SIGNAL_KEY below. Incremented by 1
+ * per dislike, decremented by 1 on undo, regardless of tag weights, so
+ * disliking three generic-tagged events still reaches MIN_SIGNAL. */
+const DISLIKE_SIGNAL_KEY = "cat:__disliked__";
+
+/**
+ * Weight `delta` (default -1, a dislike; +1 undoes one) into every tag this
+ * event carries, scaled by how specific that tag is.
+ *
+ * Only `tag:` keys move — not vibes or category. A like says "more like this
+ * in every dimension"; a dislike says "not this specific thing", and a vibe
+ * or category is too coarse to say that safely (disliking one loud gig must
+ * not read as "less Concert / Music" outright). A tag on nearly every event
+ * (low weight) still erodes its group over many dislikes; a tag unique to
+ * this event (weight 1) takes the full hit on its own.
+ */
+export function bumpDislike(
+	prev: TasteProfile,
+	event: Event,
+	weights: Record<string, number>,
+	delta: -1 | 1 = -1,
+): TasteProfile {
+	const next = { ...prev };
+	for (const tag of event.tags ?? []) {
+		const key = `tag:${tag}`;
+		const count = (next[key] ?? 0) + delta * tagWeight(tag, weights);
+		// Weighted deltas rarely land exactly on zero; a small epsilon keeps a
+		// fully-undone dislike from leaving a dead 1e-16 entry behind.
+		if (Math.abs(count) > 1e-9) {
+			next[key] = count;
+		} else {
+			delete next[key];
+		}
+	}
+	const signal = (next[DISLIKE_SIGNAL_KEY] ?? 0) - delta;
+	if (signal > 0) {
+		next[DISLIKE_SIGNAL_KEY] = signal;
+	} else {
+		delete next[DISLIKE_SIGNAL_KEY];
+	}
+	return next;
+}
+
 /** Highest count per group, plus the number of counted interactions.
  *
  * Each group is normalised against its own maximum: a category is counted on
@@ -112,10 +157,17 @@ function groupStats(taste: TasteProfile): { maxes: number[]; saves: number } {
 	for (const [key, count] of Object.entries(taste)) {
 		for (let i = 0; i < GROUPS.length; i++) {
 			if (!key.startsWith(GROUPS[i].prefix)) continue;
-			if (count > maxes[i]) maxes[i] = count;
-			// cat: is written exactly once per bookmark, so its total is the
-			// honest number of bookmarks — the only group of which that is true.
-			if (GROUPS[i].prefix === "cat:") saves += count;
+			// Synthetic markers (cat:__stated__, cat:__disliked__) carry no real
+			// category identity — letting one stand in as "the" category
+			// maximum flattened every genuine category match toward zero. abs()
+			// because a tag: count can now be negative (a dislike).
+			if (!key.includes("__") && Math.abs(count) > maxes[i]) {
+				maxes[i] = Math.abs(count);
+			}
+			// cat: is written exactly once per bookmark or dislike, so its total
+			// is the honest number of counted interactions — the only group of
+			// which that is true.
+			if (GROUPS[i].prefix === "cat:") saves += Math.abs(count);
 		}
 	}
 	return { maxes, saves };
@@ -168,7 +220,8 @@ export function effectiveTaste(
  * it cannot collide with a real one. */
 const STATED_SIGNAL_KEY = "cat:__stated__";
 
-/** How well an event matches the profile, in score points (0..MAX_BOOST). */
+/** How well an event matches the profile, in score points (-MAX_BOOST..MAX_BOOST).
+ * Negative when the event leans toward disliked tags. */
 export function tasteBoost(event: Event, taste: TasteProfile): number {
 	const { maxes, saves } = groupStats(taste);
 	if (saves < MIN_SIGNAL) return 0;
@@ -182,9 +235,14 @@ export function tasteBoost(event: Event, taste: TasteProfile): number {
 		for (const key of keys) {
 			if (key.startsWith(prefix)) matched += (taste[key] ?? 0) / max;
 		}
-		weight += share * Math.min(1, matched / target) ** CURVE;
+		// Only the tag: group can go negative (a dislike); clamp to [-1, 1]
+		// before curving so several stacked dislikes can't overshoot it, and
+		// apply CURVE with the sign preserved — a bare negative base raised to
+		// a fractional power (CURVE = 1.5) is NaN.
+		const ratio = Math.max(-1, Math.min(1, matched / target));
+		weight += share * Math.sign(ratio) * Math.abs(ratio) ** CURVE;
 	}
-	return MAX_BOOST * Math.min(1, weight);
+	return Math.max(-MAX_BOOST, Math.min(MAX_BOOST, MAX_BOOST * weight));
 }
 
 /** Events ordered by score plus taste boost, highest first.
@@ -299,8 +357,11 @@ export function onTasteChange(fn: (profile: TasteProfile) => void): () => void {
 export function logTasteProfile(taste: TasteProfile, picks: Event[]): void {
 	const { maxes, saves } = groupStats(taste);
 	const entries = Object.entries(taste).sort((a, b) => b[1] - a[1]);
+	const dislikes = Object.entries(taste).filter(
+		([key, count]) => key.startsWith("tag:") && count < 0,
+	).length;
 	console.groupCollapsed(
-		`%c[taste]%c ${saves} interaction${saves === 1 ? "" : "s"}, ${entries.length} signal${entries.length === 1 ? "" : "s"}${saves < MIN_SIGNAL ? ` — picks NOT personalised, needs ${MIN_SIGNAL}` : ""}`,
+		`%c[taste]%c ${saves} interaction${saves === 1 ? "" : "s"}, ${entries.length} signal${entries.length === 1 ? "" : "s"}${dislikes ? `, ${dislikes} disliked tag${dislikes === 1 ? "" : "s"}` : ""}${saves < MIN_SIGNAL ? ` — picks NOT personalised, needs ${MIN_SIGNAL}` : ""}`,
 		"font-weight:bold",
 		"font-weight:normal",
 	);

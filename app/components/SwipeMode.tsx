@@ -42,7 +42,7 @@ export default function SwipeMode({ onClose }: Props) {
 		starred,
 		saveEvent,
 		unsaveEvent,
-		hideEvent,
+		dislikeEvent,
 		unhideEvent,
 		isEventPast,
 		activeCat,
@@ -99,7 +99,7 @@ export default function SwipeMode({ onClose }: Props) {
 		setTimeout(() => {
 			const id = eventId(current);
 			if (verdict === "save") saveEvent(id);
-			else hideEvent(id);
+			else dislikeEvent(id);
 			setHistory((h) => [...h, { event: current, verdict }]);
 			setRestored(null);
 			setDx(0);
@@ -184,7 +184,9 @@ export default function SwipeMode({ onClose }: Props) {
 				<span className="swipe-progress">
 					{Math.min(history.length + 1, total)} / {total}
 				</span>
-				<span className="swipe-hint">swipe right to save, left to skip</span>
+				<span className="swipe-hint">
+					swipe right to save, left for not interested
+				</span>
 				<button
 					type="button"
 					className="theme-btn"
@@ -285,6 +287,7 @@ export default function SwipeMode({ onClose }: Props) {
 							isPast={isEventPast(current)}
 							isStarred={false}
 							onStarClick={() => fly("save")}
+							onDislikeClick={() => fly("skip")}
 						/>
 					</div>
 				) : (
@@ -305,7 +308,7 @@ export default function SwipeMode({ onClose }: Props) {
 					type="button"
 					onClick={() => fly("skip")}
 					disabled={!current}
-					aria-label="Skip this event"
+					aria-label="Not interested in this event"
 				>
 					<X size={20} strokeWidth={2} />
 				</button>

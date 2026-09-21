@@ -114,15 +114,16 @@ test("events inside a group are ordered by start time", () => {
 	);
 });
 
-test("events with the same start fall back to score, highest first", () => {
+test("a date group leads with score; start time only breaks ties", () => {
 	const groups = groupEvents(
 		[
-			// Every one of these is date-only on the same day, so they all tie on
-			// start and would otherwise come out in file order.
+			// Every one of these is date-only on the same day, so a chronological
+			// sort alone would leave them in file order.
 			ev({ title: "dull", datetime_iso: "2026-09-04", score: 2 }),
 			ev({ title: "great", datetime_iso: "2026-09-04", score: 9 }),
 			ev({ title: "fine", datetime_iso: "2026-09-04", score: 5 }),
-			// A timed event still sorts after every all-day one, whatever it scores.
+			// Its start time is later in the day than every all-day one above,
+			// but its score is highest, so it leads them all.
 			ev({ title: "timed", datetime_iso: "2026-09-04T09:00:00", score: 10 }),
 		],
 		"date",
@@ -131,7 +132,7 @@ test("events with the same start fall back to score, highest first", () => {
 	);
 	assert.deepEqual(
 		groups[0].events.map((e) => e.title),
-		["great", "fine", "dull", "timed"],
+		["timed", "great", "fine", "dull"],
 	);
 });
 
@@ -274,5 +275,29 @@ test("stated preferences sort within each date group", () => {
 		withPrefs[0].events.map((e) => e.title),
 		["Workshop", "Lecture", "Raffle"],
 		"wanted first, unwanted last, chronological in between",
+	);
+});
+
+test("within a date group, score leads and time only breaks ties", () => {
+	const window = { from: "2026-09-08", to: "2026-09-14" };
+	const at = (hour: number, title: string, score: number) =>
+		ev({
+			title,
+			score,
+			datetime_iso: `2026-09-08T${String(hour).padStart(2, "0")}:00:00`,
+		});
+
+	// The low-score morning event would lead a purely chronological sort.
+	const events = [
+		at(10, "Breakfast promo", 3),
+		at(20, "Headline gig", 9),
+		at(19, "Support act", 9),
+	];
+
+	const groups = groupEvents(events, "date", window, "2026-09-08");
+	assert.deepEqual(
+		groups[0].events.map((e) => e.title),
+		["Support act", "Headline gig", "Breakfast promo"],
+		"equal scores stay chronological; the low score sinks regardless of time",
 	);
 });

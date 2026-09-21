@@ -45,7 +45,9 @@ import {
 	saveTagPrefs,
 	type TagPrefs,
 } from "./utils/tagPrefs";
+import { tagWeights } from "./utils/tagSpecificity";
 import {
+	bumpDislike,
 	bumpTaste,
 	loadTaste,
 	logTasteProfile,
@@ -74,12 +76,18 @@ interface EventsContextValue {
 	toggleStar: (id: string) => void;
 	saveEvent: (id: string) => void;
 	unsaveEvent: (id: string) => void;
-	/** Swiped-left events. Excluded from `filtered` until unhidden. */
+	/** Swiped-left/disliked events. Excluded from `filtered` until unhidden. */
 	hidden: Set<string>;
 	hiddenCount: number;
 	hideEvent: (id: string) => void;
 	unhideEvent: (id: string) => void;
 	clearHidden: () => void;
+	/** "Not interested": hides the event and weights it into the taste
+	 * profile by tag specificity, so a dislike moves the ordering the way a
+	 * bookmark does, in reverse. */
+	dislikeEvent: (id: string) => void;
+	/** Which hidden ids were counted as a dislike, vs. a plain swipe-left. */
+	disliked: Set<string>;
 	/** Lowest score an event may have and still show. 0 shows everything. */
 	minScore: number;
 	setMinScore: (v: number) => void;
@@ -176,14 +184,31 @@ export function EventsProvider({
 	} = useStoredSet("eventyr:starred");
 	const {
 		set: hidden,
-		add: hideEvent,
-		remove: unhideEvent,
-		clear: clearHidden,
+		add: baseHideEvent,
+		remove: baseUnhideEvent,
+		clear: baseClearHidden,
 	} = useStoredSet("eventyr:hidden");
+	// Which hidden ids were counted as a dislike (as opposed to a plain swipe-
+	// left from before this feature existed), so unhiding one reverses exactly
+	// the weight it added and nothing it didn't.
+	const {
+		set: disliked,
+		add: markDisliked,
+		remove: unmarkDisliked,
+		clear: clearDislikedMarks,
+	} = useStoredSet("eventyr:disliked");
 	// What this browser tends to single out, used to order Top Picks and the
 	// swipe deck. Empty until MIN_SIGNAL interactions, at which point they
 	// start leaning personal.
 	const [taste, setTaste] = useState<TasteProfile>(loadTaste);
+	// How specific each tag is (rare tag -> high weight), so disliking one
+	// event doesn't punish every event sharing its broadest tag. See
+	// tagSpecificity.ts's header for why this is computed here, not in the
+	// pipeline.
+	const tagSpecificity = useMemo(
+		() => tagWeights(cityData.events),
+		[cityData.events],
+	);
 	// Shares and calendar adds are counted by noteInterest, which writes
 	// straight to localStorage from components that may not have this context.
 	// Without this the state here would go stale and the next bookmark would
@@ -249,6 +274,63 @@ export function EventsProvider({
 		},
 		[starred, saveEvent, unsaveEvent],
 	);
+
+	/** Weight this event's tags into or out of the taste profile by specificity.
+	 * Same "missing event changes nothing" rule as bumpTasteFor: an id whose
+	 * event has aged out of the data just loses a decrement. */
+	const bumpDislikeFor = useCallback(
+		(id: string, delta: -1 | 1) => {
+			const ev = cityData.events.find((e) => eventId(e) === id);
+			if (!ev) return;
+			setTaste((prev) => {
+				const next = bumpDislike(prev, ev, tagSpecificity, delta);
+				saveTaste(next);
+				return next;
+			});
+		},
+		[cityData.events, tagSpecificity],
+	);
+
+	/** "Not interested": hides the event, same as a plain swipe-left, and also
+	 * weights it into the taste profile — the signal a bare hide never gave.
+	 * A starred event is unstarred first, so an event cannot be both liked and
+	 * disliked at once. */
+	const dislikeEvent = useCallback(
+		(id: string) => {
+			if (starred.has(id)) unsaveEvent(id);
+			baseHideEvent(id);
+			markDisliked(id);
+			bumpDislikeFor(id, -1);
+		},
+		[starred, unsaveEvent, baseHideEvent, markDisliked, bumpDislikeFor],
+	);
+
+	/** Reverses dislikeEvent's weighting, but only if this id was actually
+	 * counted as a dislike — an id hidden by a plain swipe-left before this
+	 * feature existed was never weighted, so there is nothing to undo. */
+	const unhideEvent = useCallback(
+		(id: string) => {
+			baseUnhideEvent(id);
+			if (disliked.has(id)) {
+				unmarkDisliked(id);
+				bumpDislikeFor(id, 1);
+			}
+		},
+		[baseUnhideEvent, disliked, unmarkDisliked, bumpDislikeFor],
+	);
+
+	/** hideEvent alone, with no dislike weighting — used where a plain "skip"
+	 * with no taste signal is wanted. Not currently exposed; hiding always
+	 * goes through dislikeEvent so the profile learns from every hide. */
+	const hideEvent = baseHideEvent;
+
+	const clearHidden = useCallback(() => {
+		// Reverse every id that was actually counted, not just cleared —
+		// otherwise "Unhide N" would leave the negative weights behind.
+		for (const id of disliked) bumpDislikeFor(id, 1);
+		baseClearHidden();
+		clearDislikedMarks();
+	}, [disliked, bumpDislikeFor, baseClearHidden, clearDislikedMarks]);
 
 	useEffect(() => {
 		if (cityData?.events) {
@@ -588,6 +670,8 @@ export function EventsProvider({
 		hideEvent,
 		unhideEvent,
 		clearHidden,
+		dislikeEvent,
+		disliked,
 		minScore,
 		setMinScore,
 		activeCat,

@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import type { Event } from "../types";
+import { tagWeights } from "./tagSpecificity";
 import {
+	bumpDislike,
 	bumpTaste,
 	effectiveTaste,
 	eventKeys,
@@ -326,4 +328,99 @@ test("within a band, more wanted tags ranks higher", () => {
 		ranked.map((e) => e.title),
 		["Two", "One"],
 	);
+});
+
+// ---------------------------------------------------------------------------
+// Dislikes: bumpDislike and its effect on tasteBoost
+// ---------------------------------------------------------------------------
+
+const tsConcert = ev({
+	title: "Eras Tour",
+	tags: ["music", "pop", "taylor-swift"],
+	category: "Concert / Music",
+	score: 8,
+});
+
+const jazzNight = ev({
+	title: "Jazz night",
+	tags: ["music", "jazz"],
+	category: "Concert / Music",
+	score: 6,
+});
+
+/** A city where "music" is common but each event's other tags are unique —
+ * the shape every real city's data has (a handful of broad category tags,
+ * many narrow ones). */
+function musicCityEvents(fillerCount: number): Event[] {
+	const filler = Array.from({ length: fillerCount }, (_, i) =>
+		ev({
+			title: `filler${i}`,
+			tags: ["music"],
+			category: "Concert / Music",
+		}),
+	);
+	return [tsConcert, jazzNight, ...filler];
+}
+
+test("bumpDislike weights by specificity, then reverses cleanly", () => {
+	const weights = tagWeights(musicCityEvents(50));
+	const down = bumpDislike({}, tsConcert, weights);
+	assert.ok(down["tag:taylor-swift"] < 0, "a unique tag takes the full hit");
+	assert.ok(
+		Math.abs(down["tag:music"]) < Math.abs(down["tag:taylor-swift"]),
+		"a common tag takes a smaller hit than a unique one",
+	);
+	assert.deepEqual(bumpDislike(down, tsConcert, weights, 1), {});
+});
+
+test("disliking one concert barely moves an unrelated one sharing only the generic tag", () => {
+	// The whole reason this file weights by specificity: a reader who dislikes
+	// one pop concert must not come away disliking "music".
+	const weights = tagWeights(musicCityEvents(50));
+	let profile: TasteProfile = {};
+	for (let i = 0; i < 3; i++)
+		profile = bumpDislike(profile, tsConcert, weights);
+
+	const disliked = tasteBoost(tsConcert, profile);
+	const unrelated = tasteBoost(jazzNight, profile);
+	assert.ok(disliked < 0, "the disliked shape itself scores negative");
+	assert.ok(
+		unrelated > disliked / 4,
+		`jazz night (${unrelated}) should barely move next to the disliked show (${disliked})`,
+	);
+});
+
+test("many dislikes of a generic tag eventually move it too", () => {
+	const weights = tagWeights(musicCityEvents(50));
+	const genericEvent = () =>
+		ev({ tags: ["music"], category: "Concert / Music" });
+
+	// One specific dislike sets the group's scale, then filler dislikes of the
+	// bare "music" tag accumulate against it.
+	let few: TasteProfile = bumpDislike({}, tsConcert, weights);
+	let many: TasteProfile = bumpDislike({}, tsConcert, weights);
+	for (let i = 0; i < 2; i++) few = bumpDislike(few, genericEvent(), weights);
+	for (let i = 0; i < 20; i++)
+		many = bumpDislike(many, genericEvent(), weights);
+
+	const boostFew = tasteBoost(genericEvent(), few);
+	const boostMany = tasteBoost(genericEvent(), many);
+	assert.ok(
+		boostMany < boostFew,
+		`20 generic dislikes (${boostMany}) should sink lower than 2 (${boostFew})`,
+	);
+});
+
+test("tasteBoost stays finite and inside [-4, 4] for a dislikes-only profile", () => {
+	const events = musicCityEvents(10);
+	const weights = tagWeights(events);
+	let profile: TasteProfile = {};
+	for (const disliked of events.slice(0, 5)) {
+		profile = bumpDislike(profile, disliked, weights);
+	}
+	for (const event of events) {
+		const boost = tasteBoost(event, profile);
+		assert.ok(Number.isFinite(boost), `boost must be finite, got ${boost}`);
+		assert.ok(boost >= -4 && boost <= 4, `boost ${boost} out of range`);
+	}
 });
