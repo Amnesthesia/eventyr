@@ -57,6 +57,13 @@ Calibration rules — follow these strictly:
 - Venue promotions score 1: a happy hour, meal deal, drink special or raffle
   is the venue selling its usual menu, not something to go to. Score the
   promotion, not the venue — a good pub's "$13 Lunch Special" is still a 1.
+- Anything under "SKIP ENTIRELY" in the interests scores 1–2, however the
+  listing words it.
+- A standing paid attraction or tour you can book on most days is a product,
+  not an event, and scores 2: bridge climbs, river cruises, guided kayak or
+  day trips, escape rooms, themed-bar "experiences", ticketed walking tours.
+  A one-off guided walk with a named host or a specific occasion is an event
+  and is scored normally.
 
 Return ONLY a JSON array: [{"index": 0, "score": 7}, ...]. No markdown, no explanation.`;
 

@@ -20,7 +20,7 @@ export const RANK_DESCRIPTION_CHARS = 300;
  * current version and always match. rank.ts persists this value into
  * data/{city}.json and compares it on read; that is the check with teeth.
  */
-export const RANK_PROMPT_VERSION = "v3";
+export const RANK_PROMPT_VERSION = "v4";
 
 /**
  * What a score is actually a judgement of: the event's identity (title, start,

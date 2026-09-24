@@ -44,6 +44,43 @@ pnpm build              # 10. astro build
 
 `markdown`, `rss` and `pages` cover every city in one pass and need no `CITY`.
 
+```mermaid
+flowchart TD
+    SRC["sources/{city}.yml<br/>aggregators · institutions · independents"]
+
+    SRC -->|method: scraper| SCRAPE
+    SRC -->|method: llm| SEARCH
+
+    subgraph SCRAPE["1 · collect-adapters (scrape)"]
+        direction TB
+        F[fetch listing pages] --> X["extract<br/>JSON-LD → embedded JSON → LLM over page text"]
+        X --> W[week-filter · dates parsed in code]
+        W --> A["annotate (Gemini)<br/>category · tags · vibes<br/>drop ONLY sport / MLM / sales / online / private hire<br/>⚠ does not see INTERESTS"]
+    end
+
+    A -->|returned nothing| BARREN[adapters/barren.json]
+    BARREN -->|handed back for this run| SEARCH
+
+    subgraph SEARCH["2 · collect (AI web search)"]
+        direction TB
+        P["one search per provider × tier<br/>anthropic · google · openai · perplexity"]
+        P --> FMT["prompt includes INTERESTS<br/>✓ SKIP ENTIRELY list filters here"]
+    end
+
+    A --> CUR
+    FMT --> CUR
+    CUR["3 · curate<br/>merge · publishing window · locality check<br/>dedupe · carry forward still-upcoming events"]
+    CUR --> RANK["4 · rank (Gemini)<br/>score 1–10 against INTERESTS<br/>SKIP list and standing attractions/tours score 1–2<br/>scores only — never drops"]
+    RANK --> GEO[5 · geocode · Maps link]
+    GEO --> OUT["6–7 · markdown · ical · rss · pages · build-ai"]
+    OUT --> BUILD[8 · astro build]
+    BUILD --> SITE["site: hides score &lt; 4 by default<br/>7+ = top pick"]
+```
+
+Scraped events never pass through an interest *filter*; the search prompts do. Rank is the one
+stage every event goes through, so anything that should be kept off the site regardless of source
+belongs in rank's calibration rules (a score below 4 hides it by default).
+
 ### Sharing one event
 
 Every event also gets its own pre-rendered page at `/{city}/e/{title-slug}-{hash}` — 643 of them
