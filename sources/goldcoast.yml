@@ -871,6 +871,23 @@ sources:
         - rathdowney.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
   independents:
+    - name: Yatala Drive-In (Five Star)
+      id: fivestar-drive-in
+      method: scraper
+      domains:
+        - fivestarcinemas.com.au
+      homepage: https://www.fivestarcinemas.com.au/drive-in
+      listingUrls:
+        - https://www.fivestarcinemas.com.au/drive-in
+      strategy: html
+      venue:
+        name: Yatala Drive-In
+        address: 100 Jacobs Well Rd, Stapylton
+        suburb: Stapylton
+      note: >-
+        Five Star's session API (feeds.ts "fivestar"), specials only — tagged
+        Classic/Festival/Premiere/Sneak Peek/Q&A/35mm, or a new film with at most 2 sessions.
+        Verified 2026-09-24.
     - name: Miami Marketta
       method: scraper
       domains:

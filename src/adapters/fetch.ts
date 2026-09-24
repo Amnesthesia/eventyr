@@ -2,6 +2,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { gotScraping } from "got-scraping";
 import { adapterCachePath, adapterRawDir } from "../common.ts";
+import { apiRequestFor } from "./feeds.ts";
 import type { RawListing, SourceStrategy } from "./types.ts";
 
 // Transport note — why this doesn't use Node's fetch:
@@ -231,10 +232,17 @@ export class SourceFetcher {
 		if (cached?.lastModified)
 			headers["If-Modified-Since"] = cached.lastModified;
 
+		// A few event APIs pick their content by cookie or token rather than
+		// URL (feeds.ts). The listing URL stays the cache key and provenance;
+		// only the wire request changes.
+		const api = await apiRequestFor(url, this.fetchImpl);
+
 		let lastErr: unknown;
 		for (let attempt = 0; attempt <= this.maxRetries; attempt++) {
 			try {
-				const res = await this.fetchImpl(url, { headers });
+				const res = await this.fetchImpl(api?.url ?? url, {
+					headers: { ...headers, ...api?.headers },
+				});
 				this.hostLastRequestAt.set(host, Date.now());
 
 				if (res.status === 429 || res.status >= 500) {

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { toCandidateEvent } from "./candidate.ts";
 import {
+	apiRequestFor,
 	feedUrlsFromHtml,
 	parseFeed,
 	wpJsonRoutesToFeedUrls,
@@ -288,4 +289,173 @@ test("WordPress RSS is not offered as an event feed", () => {
 	assert.deepEqual(feedUrlsFromHtml(html, "https://x.com/"), [
 		"https://x.com/wp-json/tribe/events/v1/events",
 	]);
+});
+
+// Trimmed from fivestarcinemas.com.au/api/movie/playing-now (New Farm cookie).
+const fsSession = (date: string, attrs: string[] = [], id = date) => ({
+	_id: id,
+	date,
+	time: "6:45pm",
+	bookingLink: "https://ticketing.oz.veezi.com/purchase/1?siteToken=t",
+	attributes: attrs.map((shortName) => ({ shortName })),
+});
+const FIVESTAR = JSON.stringify([
+	{
+		url: "rocky-horror-picture-show",
+		title: "The Rocky Horror Picture Show (1975)",
+		synopsisShort: "Interactive <b>midnight</b> screening.",
+		releaseDate: "2026-10-31",
+		sessionTimes: [
+			fsSession("2026-10-30", ["NFT", "Classic"], "a"),
+			fsSession("2026-10-31", ["Classic"], "b"),
+			fsSession("2026-10-31", ["Classic"], "c"),
+		],
+	},
+	// An ordinary release: many sessions, none tagged — skipped.
+	{
+		url: "heart-of-the-beast",
+		title: "Heart of the Beast",
+		releaseDate: "2026-09-24",
+		sessionTimes: ["24", "25", "26"].map((d) => fsSession(`2026-09-${d}`)),
+	},
+	// One session, released on the night: a one-off, kept untagged.
+	{
+		url: "hard-as-puck",
+		title: "Hard as Puck",
+		releaseDate: "2026-11-15",
+		sessionTimes: [fsSession("2026-11-15", ["Premium"])],
+	},
+	// One session but released years earlier: a placeholder / tail of a run.
+	{
+		url: "ticket-swap",
+		title: "Ticket Swap",
+		releaseDate: "2021-12-31",
+		sessionTimes: [fsSession("2027-01-01", ["Premium"])],
+	},
+]);
+
+test("Five Star keeps tagged and one-off screenings, skips ordinary runs", () => {
+	const r = parseFeed(FIVESTAR, "https://www.fivestarcinemas.com.au/new-farm");
+	assert.equal(r?.format, "fivestar");
+	assert.deepEqual(
+		r?.events.map((e) => e.title),
+		[
+			"The Rocky Horror Picture Show (1975)",
+			"The Rocky Horror Picture Show (1975)",
+			"The Rocky Horror Picture Show (1975)",
+			"Hard as Puck",
+		],
+	);
+	const e = r?.events[0];
+	assert.equal(e?.startRaw, "2026-10-30 6:45pm");
+	assert.equal(
+		e?.description,
+		"Classic screening. Interactive midnight screening.",
+	);
+	assert.equal(
+		e?.url,
+		"https://www.fivestarcinemas.com.au/new-farm/movie/rocky-horror-picture-show",
+	);
+	assert.equal(e?.sourceEventId, "a");
+	assert.equal(
+		iso(e as Parameters<typeof iso>[0]),
+		"2026-10-30T18:45:00+10:00",
+	);
+});
+
+test("Five Star: an empty programme is a verified negative only on its own host", () => {
+	assert.equal(
+		parseFeed("[]", "https://www.fivestarcinemas.com.au/redhill")?.events
+			.length,
+		0,
+	);
+	assert.equal(parseFeed("[]", "https://x.com/api"), null);
+});
+
+test("Five Star requests carry the cinema cookie; other URLs are untouched", async () => {
+	const never = (() => {
+		throw new Error("no network");
+	}) as unknown as typeof fetch;
+	const req = await apiRequestFor(
+		"https://www.fivestarcinemas.com.au/redhill",
+		never,
+	);
+	assert.equal(
+		req?.url,
+		"https://www.fivestarcinemas.com.au/api/movie/playing-now",
+	);
+	assert.equal(
+		req?.headers.Cookie,
+		"multisiteDomainv3=fivestarcinemas.com.au%2Fredhill",
+	);
+	assert.equal(await apiRequestFor("https://x.com/events", never), null);
+});
+
+// Trimmed from prod-api.readingcinemas.com.au/films (Angelika, South City Square).
+const readingFilm = (
+	slug: string,
+	name: string,
+	release: string,
+	times: string[],
+) => ({
+	slug,
+	name,
+	synopsis: "<p>A film.</p>",
+	release_date: release,
+	showdates: [
+		{
+			date: times[0]?.slice(0, 10),
+			showtypes: [
+				{
+					type: "Premium",
+					showtimes: times.map((t, i) => ({
+						id: `${slug}-${i}`,
+						date_time: t,
+					})),
+				},
+			],
+		},
+	],
+});
+const READING = JSON.stringify({
+	statusCode: 200,
+	data: [
+		readingFilm("10413", "Angelika Archive - Space Jam (1996)", "2026-09-25", [
+			"2026-09-25T20:30:00+10",
+			"2026-09-29T18:30:00+10",
+		]),
+		readingFilm(
+			"10244",
+			"The Odyssey",
+			"2026-07-16",
+			["24", "25", "26"].map((d) => `2026-09-${d}T14:45:00+10`),
+		),
+		// Two sessions but released months ago: the end of an ordinary run.
+		readingFilm("9000", "Old Release", "2026-06-01", [
+			"2026-09-26T10:00:00+10",
+		]),
+	],
+});
+
+test("Reading Cinemas keeps only one-off films, with Angelika links", () => {
+	const url =
+		"https://prod-api.readingcinemas.com.au/films?countryId=3&cinemaId=southcity&status=nowShowing";
+	const r = parseFeed(READING, url);
+	assert.equal(r?.format, "reading-cinemas");
+	assert.deepEqual(
+		r?.events.map((e) => e.sourceEventId),
+		["10413-0", "10413-1"],
+	);
+	const e = r?.events[0];
+	assert.equal(e?.url, "https://angelikacinemas.com.au/movies/details/10413");
+	assert.equal(e?.description, "A film.");
+	assert.equal(
+		iso(e as Parameters<typeof iso>[0]),
+		"2026-09-25T20:30:00+10:00",
+	);
+	assert.equal(
+		parseFeed(JSON.stringify({ statusCode: 200, data: [] }), url)?.events
+			.length,
+		0,
+	);
 });

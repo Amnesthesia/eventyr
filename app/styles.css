@@ -352,8 +352,6 @@ header {
 .search-bar:focus-within {
 	border-color: var(--fg);
 	color: var(--fg);
-	outline: 2px solid var(--fg);
-	outline-offset: 2px;
 }
 
 /* Two classes deep on purpose. Pico sets `padding`, `margin-bottom` and a

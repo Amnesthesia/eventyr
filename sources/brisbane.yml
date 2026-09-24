@@ -147,12 +147,12 @@ sources:
         aliases: []
       schedule: weekly
       note: >-
-        Promoted 2026-09-21: Trumba's own citywide JSON calendar (2000 events, deterministic
-        feed parse — parseFeed's trumba-json format), verified directly against the live feed.
-        probe-sources's own re-verification pass demoted this and mixed up listingUrls across
-        the three Trumba sources sharing the trumba.com domain (a probe.ts bug, not a real
-        problem with this source) — restored by hand; do not trust a future probe-sources
-        --apply run to re-verify these three without checking its diff first.
+        Promoted 2026-09-21: Trumba's own citywide JSON calendar (2000 events, deterministic feed
+        parse — parseFeed's trumba-json format), verified directly against the live feed.
+        probe-sources's own re-verification pass demoted this and mixed up listingUrls across the
+        three Trumba sources sharing the trumba.com domain (a probe.ts bug, not a real problem with
+        this source) — restored by hand; do not trust a future probe-sources --apply run to
+        re-verify these three without checking its diff first.
     - id: brisbane-city-council-creative
       name: Brisbane City Council Creative Events
       method: scraper
@@ -191,10 +191,10 @@ sources:
         aliases: []
       schedule: weekly
       note: >-
-        Added 2026-09-21: council's park-events calendar, published as Atom/GData RSS rather
-        than Trumba's JSON shape (500 events) — parseFeed's trumba-atom format. probe-sources's
-        own re-verification pass overwrote this listingUrl with LIVE.json's (a probe.ts
-        domain-collision bug across the three sibling trumba.com sources) — restored by hand.
+        Added 2026-09-21: council's park-events calendar, published as Atom/GData RSS rather than
+        Trumba's JSON shape (500 events) — parseFeed's trumba-atom format. probe-sources's own
+        re-verification pass overwrote this listingUrl with LIVE.json's (a probe.ts domain-collision
+        bug across the three sibling trumba.com sources) — restored by hand.
     - name: Queensland.com Brisbane Events
       method: llm
       domains:
@@ -329,7 +329,7 @@ sources:
           - SLQ
           - State Library
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-08: 2 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-24: 2 dated event(s) via html.'
     - name: QUT public events
       method: scraper
       domains:
@@ -404,7 +404,7 @@ sources:
           - Queensland Art Gallery
           - Gallery of Modern Art
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-08: 19 dated event(s) via html.'
+      note: 'Verified by probe-sources 2026-09-24: 18 dated event(s) via html.'
     - id: qpac
       name: Queensland Performing Arts Centre (QPAC)
       method: scraper
@@ -706,9 +706,9 @@ sources:
       strategy: html
       note: >-
         Promoted 2026-09-21: Brisbane City Council open-data API for this venue, verified via
-        test-adapter (5 dated events). probe-sources's own re-verification pass demoted this
-        (a probe.ts false negative, not a real problem with this source — see the
-        brisbane-city-council entry's note) — restored by hand.
+        test-adapter (5 dated events). probe-sources's own re-verification pass demoted this (a
+        probe.ts false negative, not a real problem with this source — see the brisbane-city-council
+        entry's note) — restored by hand.
       venue:
         name: Riverstage
         address: Gardens Point Rd
@@ -965,7 +965,11 @@ sources:
       method: llm
       domains:
         - houseconspiracy.org
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      homepage: https://houseconspiracy.org/
+      listingUrls:
+        - https://houseconspiracy.org/events
+      note: >-
+        Probed 2026-09-24: /events and /calendar yield nothing parseable. The real listing is two public Google Calendars embedded on /calendar (ICS, ~600 VEVENTs) — needs iCal support in feeds.ts, which is deliberately absent.
     - name: MacArthur Museum Brisbane
       method: llm
       domains:
@@ -1201,8 +1205,8 @@ sources:
       domains:
         - bco.org.au
       note: >-
-        Suggested by discover-sources 2026-09-02; not yet verified. Pinned 2026-09-21: a music
-        venue with sporadic bookings is exactly what sourceEarnsPlace() prunes after a quiet
+        Suggested by discover-sources 2026-09-02; not yet verified. Pinned 2026-09-21: a music venue
+        with sporadic bookings is exactly what sourceEarnsPlace() prunes after a quiet
         HIT_WINDOW_WEEKS — keep it named every week regardless.
     - name: The Queensland Choir
       method: llm
@@ -1470,29 +1474,98 @@ sources:
         - palacecinemas.com.au
       homepage: https://palacecinemas.com.au/
       listingUrls:
+        - https://www.palacecinemas.com.au/cinemas/palace-james-st
         - https://www.palacecinemas.com.au/cinemas/palace-barracks
-        - https://palacecinemas.com.au/events
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-08: 18 dated event(s) via html.'
-    - name: Dendy Powerhouse cinema New Farm
-      method: llm
+      note: 'Verified by probe-sources 2026-09-24: 31 dated event(s) via html.'
+    - name: New Farm Cinemas (Five Star)
+      id: fivestar-new-farm
+      method: scraper
       domains:
-        - powerhouse.dendy.com.au
-      listingUrls:
-        - https://powerhouse.dendy.com.au/graphql
-      note: >-
-        Candidate listing URLs found by rendering the page 2026-09-08: static HTML is walled, so
-        probe-sources could not see these. Still method: llm — probe verifies them and promotes only
-        if they yield events.
-    - name: New Farm Cinemas
-      method: llm
-      domains:
+        - fivestarcinemas.com.au
         - newfarmcinemas.com.au
+      homepage: https://www.fivestarcinemas.com.au/new-farm
+      listingUrls:
+        - https://www.fivestarcinemas.com.au/new-farm
+      strategy: html
+      venue:
+        name: New Farm Cinemas
+        address: 701 Brunswick St, New Farm
+        suburb: New Farm
+      note: >-
+        Five Star's session API (feeds.ts "fivestar"): the site is a client-rendered shell, so the
+        request is rewritten to /api/movie/playing-now with the cinema cookie. Specials only —
+        tagged Classic/Festival/Premiere/Sneak Peek/Q&A/35mm, or a new film with at most 2 sessions.
+        Verified 2026-09-24: 150 upcoming specials, ~24 a week.
+    - name: Red Hill Cinemas (Five Star)
+      id: fivestar-redhill
+      method: scraper
+      domains:
+        - fivestarcinemas.com.au
+      homepage: https://www.fivestarcinemas.com.au/redhill
+      listingUrls:
+        - https://www.fivestarcinemas.com.au/redhill
+      strategy: html
+      venue:
+        name: Red Hill Cinemas
+        address: 2 Enoggera Tce, Red Hill
+        suburb: Red Hill
+      note: Five Star session API, specials only (see New Farm Cinemas). Verified 2026-09-24.
+    - name: The Elizabeth Picture Theatre (Five Star)
+      id: fivestar-the-elizabeth
+      method: scraper
+      domains:
+        - fivestarcinemas.com.au
+      homepage: https://www.fivestarcinemas.com.au/the-elizabeth
+      listingUrls:
+        - https://www.fivestarcinemas.com.au/the-elizabeth
+      strategy: html
+      venue:
+        name: The Elizabeth Picture Theatre
+        address: 175 Elizabeth St, Brisbane City
+        suburb: Brisbane City
+      note: Five Star session API, specials only (see New Farm Cinemas). Verified 2026-09-24.
+    - name: Regal Twin Cinema Graceville (Five Star)
+      id: fivestar-regal
+      method: scraper
+      domains:
+        - fivestarcinemas.com.au
+      homepage: https://www.fivestarcinemas.com.au/regal
+      listingUrls:
+        - https://www.fivestarcinemas.com.au/regal
+      strategy: html
+      venue:
+        name: Regal Twin Cinema
+        address: 381 Honour Ave, Graceville
+        suburb: Graceville
+      note: Five Star session API, specials only (see New Farm Cinemas). Verified 2026-09-24.
+    - name: Angelika Film Centre South City Square
+      id: angelika-southcity
+      method: scraper
+      domains:
+        - angelikacinemas.com.au
+        - angelikafilmcentre.com.au
+      homepage: https://angelikacinemas.com.au/
+      listingUrls:
+        - >-
+          https://prod-api.readingcinemas.com.au/films?countryId=3&cinemaId=southcity&status=nowShowing
+      strategy: html
+      venue:
+        name: Angelika Film Centre South City Square
+        address: null
+        suburb: Woolloongabba
+      note: >-
+        Reading Cinemas' films API (feeds.ts "reading-cinemas"), with the anonymous token the site's
+        own /settings endpoint issues. Specials only — a new film with at most 2 sessions (Angelika
+        Archive, Hitchcocktober, book club). Verified 2026-09-24: 39 upcoming.
     - name: Avid Reader bookshop & café West End
       method: llm
       domains:
         - avidreader.com.au
+      homepage: https://avidreader.com.au/
+      listingUrls:
+        - https://avidreader.com.au/events
     - name: The Bearded Lady West End
       method: llm
       pin: true
@@ -1564,6 +1637,9 @@ sources:
       method: llm
       domains:
         - theburrowwestend.com.au
+      homepage: https://www.theburrowwestend.com.au/
+      listingUrls:
+        - https://www.theburrowwestend.com.au/
     - name: Riverbend Books, Bulimba
       method: scraper
       domains:
@@ -1714,10 +1790,6 @@ sources:
       method: llm
       domains:
         - jugglersartspace.com.au
-    - name: Outer Space artist-run gallery
-      method: llm
-      domains:
-        - outerspace.org.au
     - name: Wonderland Festival / Wonderland Brisbane events
       method: llm
     - name: shake & stir theatre co
@@ -1747,9 +1819,14 @@ sources:
       schedule: weekly
       note: 'Verified by probe-sources 2026-09-08: 1 dated event(s) via html.'
     - name: Outer Space
-      method: llm
+      method: scraper
       domains:
-        - outerspace.org
+        - outerspacebrisbane.org
+      homepage: https://www.outerspacebrisbane.org/
+      listingUrls:
+        - https://www.outerspacebrisbane.org/program/category/Event
+      strategy: html
+      note: 'Verified by probe-sources 2026-09-24: 0 dated event(s) via html.'
     - name: John Mills Himself
       method: llm
       domains:
@@ -1962,6 +2039,9 @@ sources:
       method: llm
       domains:
         - mitchellfineartgallery.com
+      homepage: https://mitchellfineartgallery.com/
+      listingUrls:
+        - https://mitchellfineartgallery.com/exhibitions
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Philip Bacon Galleries
       method: scraper
@@ -1977,6 +2057,9 @@ sources:
       method: llm
       domains:
         - fireworksgallery.com.au
+      homepage: https://fireworksgallery.com.au/
+      listingUrls:
+        - https://fireworksgallery.com.au/exhibitions
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Lethbridge Gallery
       method: scraper
@@ -2076,10 +2159,14 @@ sources:
         - bigsound.org.au
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Edwina Corlette Gallery
-      method: llm
+      method: scraper
       domains:
-        - edwinacorlettegallery.com
-      note: Suggested by discover-sources 2026-09-01; not yet verified.
+        - edwinacorlette.com
+      homepage: https://edwinacorlette.com/
+      listingUrls:
+        - https://edwinacorlette.com/exhibitions
+      note: 'Verified by probe-sources 2026-09-24: 1 dated event(s) via html.'
+      strategy: html
     - name: Andrew Baker Art Dealer
       method: llm
       domains:
@@ -2088,7 +2175,10 @@ sources:
     - name: Jan Manton Gallery
       method: llm
       domains:
-        - janmantongallery.com
+        - janmantonart.com
+      homepage: https://www.janmantonart.com/
+      listingUrls:
+        - https://www.janmantonart.com/exhibitions-1
       note: Suggested by discover-sources 2026-09-01; not yet verified.
     - name: Access Arts
       method: llm
@@ -2316,11 +2406,15 @@ sources:
       listingUrls:
         - https://osbournehotel.com.au/whats-on/
       strategy: html
-    - name: Can You Keep A Secret
+    - name: Can You Keep A Secret / It's Still A Secret
       method: llm
       domains:
         - canyoukeepasecret.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      homepage: https://www.canyoukeepasecret.com.au/
+      listingUrls:
+        - https://www.canyoukeepasecret.com.au/events
+      note: >-
+        Probed 2026-09-24: Squarespace events collection has 0 upcoming; gigs are sold one by one on Humanitix, so it stays on AI search.
     - name: Chardons Corner Hotel
       method: llm
       domains:
@@ -2416,19 +2510,29 @@ sources:
         - https://impress.org.au/
       strategy: html
     - name: Revival Art & Design Gallery
-      method: llm
+      method: scraper
       domains:
-        - revivalartanddesign.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+        - revivalart.com.au
+      homepage: https://revivalart.com.au/
+      listingUrls:
+        - https://revivalart.com.au/exhibition-events/
+      note: 'Verified by probe-sources 2026-09-24: 0 dated event(s) via html.'
+      strategy: html
     - name: Red Hill Gallery
       method: llm
       domains:
         - redhillgallery.com.au
+      homepage: https://redhillgallery.com.au/
+      listingUrls:
+        - https://redhillgallery.com.au/collections/exhibitions-events
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Aspire Gallery
       method: llm
       domains:
         - aspiregallery.com.au
+      homepage: https://aspiregallery.com.au/
+      listingUrls:
+        - https://aspiregallery.com.au/current-and-upcoming-exhibitions
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Maud Creative
       method: llm
@@ -2439,6 +2543,10 @@ sources:
       method: llm
       domains:
         - aboriginalart.co
+      listingUrls:
+        - https://aboriginalart.co/blogs/news/tagged/exhibitions
+        - https://aboriginalart.co/blogs/news/tagged/events
+      homepage: https://aboriginalart.co/
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Suzanne O'Connell Gallery
       method: llm
@@ -2886,25 +2994,16 @@ sources:
       listingUrls:
         - https://notonyourrider.com/whats-on
       strategy: html
-    - name: Five Star Cinemas
-      method: llm
-      domains:
-        - fivestarcinemas.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Cineplex Australia
       method: llm
       domains:
         - cineplex.com.au
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
+      note: >-
+        Checked 2026-09-24: CompactSessions pages (Balmoral/Hawthorne/South Bank) list only first-run films with daily sessions and no specials signal, unlike Five Star/Angelika — nothing worth a feed handler.
     - name: Blue Room Cinebar
       method: llm
       domains:
         - blueroomcinebar.com
-      note: Suggested by discover-sources 2026-09-02; not yet verified.
-    - name: Angelika Film Centre
-      method: llm
-      domains:
-        - angelikafilmcentre.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: Brisbane International Film Festival
       method: llm
@@ -3143,3 +3242,53 @@ sources:
       domains:
         - sherwoodfestival.com.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
+    - name: Dark Pony Studio + Gallery
+      method: llm
+      domains:
+        - darkponygallery.com.au
+      homepage: https://www.darkponygallery.com.au/
+      listingUrls:
+        - https://www.darkponygallery.com.au/
+      note: Added from user list 2026-09-24; not yet verified.
+    - name: Wreckers Artspace
+      method: llm
+      domains:
+        - cargocollective.com
+      homepage: https://cargocollective.com/wreckersartspace
+      listingUrls:
+        - https://cargocollective.com/wreckersartspace
+      note: Added from user list 2026-09-24; not yet verified.
+    - name: Echo & Bounce
+      method: llm
+      domains:
+        - echoandbounce.com
+      homepage: https://www.echoandbounce.com/
+      listingUrls:
+        - https://www.echoandbounce.com/
+      note: Added from user list 2026-09-24; not yet verified.
+    - name: Sonic Sherpa
+      method: llm
+      domains:
+        - sonicsherpa.com.au
+      homepage: https://www.sonicsherpa.com.au/
+      listingUrls:
+        - https://www.sonicsherpa.com.au/
+      note: Added from user list 2026-09-24; not yet verified.
+    - name: Backdock Arts
+      method: scraper
+      domains:
+        - backdockarts.com
+        - tickettailor.com
+      homepage: https://www.backdockarts.com/
+      listingUrls:
+        - https://www.backdockarts.com/
+      note: 'Verified by probe-sources 2026-09-24: 1 dated event(s) via html.'
+      strategy: html
+    - name: Cinebar Rosalie
+      method: llm
+      domains:
+        - cinebar.com.au
+      homepage: https://www.cinebar.com.au/
+      listingUrls:
+        - https://www.cinebar.com.au/sites/Cinebar-Rosalie-Village/0001
+      note: Added from user list 2026-09-24; not yet verified.

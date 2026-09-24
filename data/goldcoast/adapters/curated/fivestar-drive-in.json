@@ -1,0 +1,74 @@
+{
+  "city_key": "goldcoast",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "fivestar-drive-in",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Clueless (1995)",
+      "datetime": "Sat 3 Oct, 8:45 PM",
+      "datetime_iso": "2026-10-03T20:45:00",
+      "datetime_end_iso": "",
+      "location": "Yatala Drive-In, 100 Jacobs Well Rd, Stapylton",
+      "link": "https://www.fivestarcinemas.com.au/drive-in/movie/clueless",
+      "cost": "See link",
+      "source": "Yatala Drive-In (Five Star)",
+      "description": "Classic screening. Mean Girls' Day screenings. A rich high school student tries to boost a new pupil's popularity, but reckons without affairs of the heart getting in the way.",
+      "image": "https://img.vwassets.com/fivestarcinemas.com.au/drive-in/vertical_d0731294-4ef4-4d22-b30a-228f311bcb1e.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Mean Girls (2004)",
+      "datetime": "Sat 3 Oct, 6:30 PM",
+      "datetime_iso": "2026-10-03T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Yatala Drive-In, 100 Jacobs Well Rd, Stapylton",
+      "link": "https://www.fivestarcinemas.com.au/drive-in/movie/ST00002942-mean-girls-2004",
+      "cost": "See link",
+      "source": "Yatala Drive-In (Five Star)",
+      "description": "Classic screening. New Farm, Red Hill, Yatala Drive-In, Regal Graceville & Tower Cinemas Newcastle. Mean Girls' Day screenings. Cady Heron is a hit with The Plastics, the A-list girl clique at her new school, until she makes the mistake of falling for Aaron Samuels, the ex-boyfriend of alpha Plastic Regina George.",
+      "image": "https://img.vwassets.com/fivestarcinemas.com.au/drive-in/horizontal_7447fa2b-a3d2-4eeb-a30a-6c8c712e0999.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Verity",
+      "datetime": "Wed 30 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-30T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Yatala Drive-In, 100 Jacobs Well Rd, Stapylton",
+      "link": "https://www.fivestarcinemas.com.au/drive-in/movie/verity",
+      "cost": "See link",
+      "source": "Yatala Drive-In (Five Star)",
+      "description": "Sneak Peek screening. Ladies Night Preview Screenings: Wed 30 September. Adapted from Colleen Hoover's best-selling novel, this seductive, psychological thriller follows renowned author Verity Crawford (Anne Hathaway) and Lowen Ashleigh (Dakota Johnson), a struggling writer who relocates to the remote Crawford estate to ghostwrite for Verity. After Lowen uncovers what appears to be Verity's chilling autobiographical notes, she wrestles with the disturbing and twisted confessions about Verity’s husband Jeremy (Josh Hartnett), and finds it hard to separate fiction from reality, manipulation from attraction, and opportunity from obsession.",
+      "image": "https://img.vwassets.com/fivestarcinemas.com.au/drive-in/horizontal_5b16d7b6-121c-4839-801a-d3527f634336.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "books",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

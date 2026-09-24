@@ -1,0 +1,31 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "fivestar-the-elizabeth",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Verity",
+      "datetime": "Wed 30 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-30T18:30:00",
+      "datetime_end_iso": "",
+      "location": "The Elizabeth Picture Theatre, 175 Elizabeth St, Brisbane City",
+      "link": "https://www.fivestarcinemas.com.au/the-elizabeth/movie/verity",
+      "cost": "See link",
+      "source": "The Elizabeth Picture Theatre (Five Star)",
+      "description": "Sneak Peek screening. Ladies Night Preview Screenings: Wed 30 September. Adapted from Colleen Hoover's best-selling novel, this seductive, psychological thriller follows renowned author Verity Crawford (Anne Hathaway) and Lowen Ashleigh (Dakota Johnson), a struggling writer who relocates to the remote Crawford estate to ghostwrite for Verity. After Lowen uncovers what appears to be Verity's chilling autobiographical notes, she wrestles with the disturbing and twisted confessions about Verity’s husband Jeremy (Josh Hartnett), and finds it hard to separate fiction from reality, manipulation from attraction, and opportunity from obsession.",
+      "image": "https://img.vwassets.com/fivestarcinemas.com.au/the-elizabeth/horizontal_523b6266-7c7f-4548-87a5-b7e1bdc78dfb.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "women"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

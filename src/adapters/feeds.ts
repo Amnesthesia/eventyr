@@ -35,7 +35,9 @@ export type FeedFormat =
 	| "modern-events-calendar"
 	| "squarespace"
 	| "trumba-json"
-	| "trumba-atom";
+	| "trumba-atom"
+	| "fivestar"
+	| "reading-cinemas";
 
 export interface FeedResult {
 	format: FeedFormat;
@@ -399,6 +401,271 @@ function parseTrumbaAtom(body: string, _url: string): FeedResult | null {
 	};
 }
 
+// --- Cinema session APIs ---------------------------------------------------
+// Cinemas list every session of every film — New Farm Cinemas alone runs ~108
+// a week — so a cinema feed is filtered to the screenings that are events in
+// their own right: a film with at most SPECIAL_MAX_SESSIONS sessions in the
+// whole published programme (retro nights, festival slots, advance
+// screenings, a book-club screening), or a session the cinema itself tags as
+// special. Measured on both chains below: every such film had 1–2 sessions,
+// every ordinary release 9+, so the threshold sits in a wide gap.
+const SPECIAL_MAX_SESSIONS = 2;
+/**
+ * The session-count rule also needs the film to be *new* at that session. An
+ * ordinary release at the tail of its run drops to 1–2 sessions too, and Five
+ * Star lists a "Ticket Swap" placeholder (released 2021, one session in 2027).
+ * Every measured special carries its screening date as its release date,
+ * give or take a day, so two weeks of slack is generous.
+ */
+const SPECIAL_RELEASE_SLACK_DAYS = 14;
+
+/** True when `release` (YYYY-MM-DD) is at most the slack before `first`. A
+ * missing or unreadable date is not evidence of a special. */
+function releasedForOccasion(release: unknown, first: unknown): boolean {
+	const r = Date.parse(`${str(release) ?? ""}T00:00:00Z`);
+	const f = Date.parse(`${(str(first) ?? "").slice(0, 10)}T00:00:00Z`);
+	if (Number.isNaN(r) || Number.isNaN(f)) return false;
+	return f - r <= SPECIAL_RELEASE_SLACK_DAYS * 86_400_000;
+}
+
+/** Five Star's own session attributes that mark a one-off screening. "NFT"
+ * (no free tickets) and "Premium" (seating) describe the room, not the
+ * occasion, and are deliberately absent. */
+const FIVESTAR_SPECIAL_ATTRS = new Set([
+	"Classic",
+	"Festival",
+	"Premiere",
+	"Sneak Peek",
+	"Q&A Panel",
+	"35mm Film",
+]);
+
+// Five Star Cinemas (New Farm, Red Hill, Elizabeth, Regal, Yatala). The site
+// is a client-rendered Next.js export whose HTML is an empty loader, which is
+// why probe filed it unscrapable. Its own API answers plain HTTP, but picks
+// the cinema from a `multisiteDomainv3` cookie, not the URL — so the source
+// lists the human page (fivestarcinemas.com.au/red-hill) and the request is
+// rewritten here.
+const FIVESTAR_HOST = /(?:^|\.)fivestarcinemas\.com\.au$/i;
+
+interface FiveStarSession {
+	_id?: unknown;
+	date?: unknown;
+	time?: unknown;
+	bookingLink?: unknown;
+	attributes?: unknown;
+}
+
+interface FiveStarFilm {
+	url?: unknown;
+	title?: unknown;
+	synopsisShort?: unknown;
+	imageHorizontalUrl?: unknown;
+	imageVerticalUrl?: unknown;
+	releaseDate?: unknown;
+	sessionTimes?: unknown;
+}
+
+function fivestarSite(url: string): string | null {
+	try {
+		const u = new URL(url);
+		if (!FIVESTAR_HOST.test(u.hostname)) return null;
+		const site = u.pathname.split("/").filter(Boolean)[0];
+		return site && site !== "api" ? site : null;
+	} catch {
+		return null;
+	}
+}
+
+function parseFiveStar(films: unknown[], url: string): FeedResult {
+	const site = fivestarSite(url);
+	const events: RawCandidateFields[] = [];
+	for (const f of films.slice(0, MAX_EVENTS_PER_FEED) as FiveStarFilm[]) {
+		const title = plain(f.title);
+		const sessions = (
+			Array.isArray(f.sessionTimes) ? f.sessionTimes : []
+		) as FiveStarSession[];
+		if (!title) continue;
+		const slug = str(f.url);
+		const firstDate = sessions
+			.map((s) => str(s.date))
+			.filter((d): d is string => !!d)
+			.sort()[0];
+		const fewSessions =
+			sessions.length <= SPECIAL_MAX_SESSIONS &&
+			releasedForOccasion(f.releaseDate, firstDate);
+		for (const s of sessions) {
+			const labels = (Array.isArray(s.attributes) ? s.attributes : [])
+				.map((a) => str((a as { shortName?: unknown })?.shortName))
+				.filter((a): a is string => !!a && FIVESTAR_SPECIAL_ATTRS.has(a));
+			if (!fewSessions && labels.length === 0) continue;
+			const date = str(s.date);
+			const time = str(s.time);
+			if (!date) continue;
+			const synopsis = plain(f.synopsisShort);
+			events.push({
+				...empty,
+				title,
+				// The cinema's own label says why this one is an occasion; rank
+				// reads the description, and "Classic · 35mm Film" is the signal.
+				description:
+					[labels.length ? `${labels.join(" · ")} screening.` : null, synopsis]
+						.filter(Boolean)
+						.join(" ") || null,
+				startRaw: time ? `${date} ${time}` : date,
+				url:
+					site && slug
+						? safeUrl(
+								`https://www.fivestarcinemas.com.au/${site}/movie/${encodeURIComponent(slug)}`,
+							)
+						: safeUrl(s.bookingLink),
+				imageUrl: safeUrl(f.imageHorizontalUrl) ?? safeUrl(f.imageVerticalUrl),
+				category: "Film",
+				sourceEventId: str(s._id),
+			});
+		}
+	}
+	return { format: "fivestar", events: events.slice(0, MAX_EVENTS_PER_FEED) };
+}
+
+// Reading Cinemas' platform, which runs Angelika (AFC South City Square,
+// Woolloongabba). Also a client-rendered shell; the API wants a bearer token,
+// but the site's public settings endpoint hands out an anonymous read-scoped
+// one, so the source lists the films API URL itself and the token is added
+// here. No session attributes are published, so only the session-count rule
+// applies — which on the measured programme kept exactly the Archive,
+// Hitchcocktober, book-club and marathon screenings.
+const READING_API = /^prod-api\.readingcinemas\.com\.au$/i;
+/** Which consumer site a Reading countryId belongs to, for event links. */
+const READING_SITE: Record<string, string> = {
+	"3": "https://angelikacinemas.com.au",
+};
+
+interface ReadingFilm {
+	slug?: unknown;
+	name?: unknown;
+	synopsis?: unknown;
+	film_image_large_size?: unknown;
+	release_date?: unknown;
+	showdates?: unknown;
+}
+
+function readingShowtimes(film: ReadingFilm): { id: unknown; at: unknown }[] {
+	const out: { id: unknown; at: unknown }[] = [];
+	for (const d of Array.isArray(film.showdates) ? film.showdates : []) {
+		const types = (d as { showtypes?: unknown })?.showtypes;
+		for (const t of Array.isArray(types) ? types : []) {
+			const times = (t as { showtimes?: unknown })?.showtimes;
+			for (const s of Array.isArray(times) ? times : []) {
+				const st = s as { id?: unknown; date_time?: unknown };
+				out.push({ id: st.id, at: st.date_time });
+			}
+		}
+	}
+	return out;
+}
+
+function parseReading(films: unknown[], url: string): FeedResult {
+	const country = (() => {
+		try {
+			return new URL(url).searchParams.get("countryId") ?? "";
+		} catch {
+			return "";
+		}
+	})();
+	const site = READING_SITE[country] ?? null;
+	const events: RawCandidateFields[] = [];
+	for (const f of films.slice(0, MAX_EVENTS_PER_FEED) as ReadingFilm[]) {
+		const title = plain(f.name);
+		const times = readingShowtimes(f);
+		const firstAt = times
+			.map((t) => str(t.at))
+			.filter((d): d is string => !!d)
+			.sort()[0];
+		if (
+			!title ||
+			times.length > SPECIAL_MAX_SESSIONS ||
+			!releasedForOccasion(f.release_date, firstAt)
+		) {
+			continue;
+		}
+		const slug = str(f.slug);
+		for (const t of times) {
+			const startRaw = str(t.at);
+			if (!startRaw) continue;
+			events.push({
+				...empty,
+				title,
+				description: plain(f.synopsis),
+				startRaw,
+				url:
+					site && slug
+						? safeUrl(`${site}/movies/details/${encodeURIComponent(slug)}`)
+						: null,
+				imageUrl: safeUrl(f.film_image_large_size),
+				category: "Film",
+				sourceEventId: str(t.id),
+			});
+		}
+	}
+	return { format: "reading-cinemas", events };
+}
+
+// ponytail: one token per process; it is valid for an hour and a collect run
+// takes minutes. Refresh on 401 if runs ever get that long.
+let readingToken: Promise<string | null> | undefined;
+
+async function fetchReadingToken(
+	country: string,
+	fetchImpl: typeof fetch,
+): Promise<string | null> {
+	const res = await fetchImpl(
+		`https://prod-api.readingcinemas.com.au/settings/${encodeURIComponent(country)}`,
+	);
+	if (!res.ok) return null;
+	const body = (await res.json()) as {
+		data?: { settings?: { token?: unknown } };
+	};
+	return str(body?.data?.settings?.token);
+}
+
+/**
+ * The request that actually answers a listing URL, for the few event APIs
+ * that select their content by something other than the URL itself. Null for
+ * everything else, which is fetched as-is.
+ */
+export async function apiRequestFor(
+	url: string,
+	fetchImpl: typeof fetch,
+): Promise<{ url: string; headers: Record<string, string> } | null> {
+	const site = fivestarSite(url);
+	if (site) {
+		return {
+			url: "https://www.fivestarcinemas.com.au/api/movie/playing-now",
+			headers: {
+				Cookie: `multisiteDomainv3=${encodeURIComponent(`fivestarcinemas.com.au/${site}`)}`,
+			},
+		};
+	}
+	let parsed: URL;
+	try {
+		parsed = new URL(url);
+	} catch {
+		return null;
+	}
+	if (READING_API.test(parsed.hostname) && parsed.pathname === "/films") {
+		readingToken ??= fetchReadingToken(
+			parsed.searchParams.get("countryId") ?? "",
+			fetchImpl,
+		).catch(() => null);
+		const token = await readingToken;
+		// No token means the API will answer 401, which the adapter reports as
+		// blocked — a failed look, never a quiet week.
+		return { url, headers: token ? { Authorization: `Bearer ${token}` } : {} };
+	}
+	return null;
+}
+
 // --- dispatch -------------------------------------------------------------
 
 function asRecord(body: string): Record<string, unknown> | unknown[] | null {
@@ -432,6 +699,20 @@ export function parseFeed(body: string, url: string): FeedResult | null {
 
 	// The Events Calendar: an `events` array plus its own `rest_url`/`total`.
 	if (!Array.isArray(parsed)) {
+		// Reading Cinemas: `{statusCode, data: [film with showdates]}`. An empty
+		// `data` is ambiguous on shape alone, so that case is gated by host.
+		const data = parsed.data;
+		if (
+			"statusCode" in parsed &&
+			Array.isArray(data) &&
+			((data.length > 0 &&
+				"showdates" in (data[0] as Record<string, unknown>)) ||
+				(data.length === 0 &&
+					/^https:\/\/prod-api\.readingcinemas\.com\.au\//i.test(url)))
+		) {
+			return parseReading(data, url);
+		}
+
 		const events = parsed.events;
 		if (Array.isArray(events) && ("total" in parsed || "rest_url" in parsed)) {
 			return {
@@ -482,6 +763,16 @@ export function parseFeed(body: string, url: string): FeedResult | null {
 				.map((e) => mecToFields(e as Record<string, unknown>))
 				.filter((f): f is RawCandidateFields => f !== null),
 		};
+	}
+
+	// Five Star: a bare array of films each carrying `sessionTimes`. Empty is
+	// gated by host, as for MEC.
+	if (
+		(parsed.length > 0 &&
+			"sessionTimes" in (parsed[0] as Record<string, unknown>)) ||
+		(parsed.length === 0 && fivestarSite(url) !== null)
+	) {
+		return parseFiveStar(parsed, url);
 	}
 
 	// Trumba calendar JSON: a bare array whose items carry Trumba's own

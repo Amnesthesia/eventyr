@@ -1,0 +1,34 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "edwinacorlette",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "John Bokor ‘Personal Space’",
+      "datetime": "Wed 30 Sep – Tue 20 Oct",
+      "datetime_iso": "2026-09-30",
+      "datetime_end_iso": "2026-10-20",
+      "location": "Edwina Corlette Gallery",
+      "link": "https://edwinacorlette.com/",
+      "cost": "See link",
+      "source": "Edwina Corlette Gallery",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "painting",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

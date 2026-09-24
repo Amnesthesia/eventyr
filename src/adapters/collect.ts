@@ -8,6 +8,8 @@
 // One file per source (not one combined file) so a single failing source can
 // be retried on its own; curate.ts's findJsonFiles picks up every *.json
 // under any curated/ dir with no registration.
+//
+// Usage: pnpm collect-adapters [--only=<source-id>,...]   (ids = curated filenames)
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
@@ -53,6 +55,17 @@ const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
 const FORCE = ["1", "true", "yes"].includes(
 	(process.env.FORCE ?? "").toLowerCase(),
 );
+/**
+ * `--only=id1,id2` scrapes just those source ids (the curated filenames), so a
+ * newly promoted source can be checked without re-scraping and re-paying for
+ * the whole city.
+ */
+const ONLY = process.argv
+	.find((a) => a.startsWith("--only="))
+	?.slice("--only=".length)
+	.split(",")
+	.map((s) => s.trim())
+	.filter(Boolean);
 const cityCfg = loadCityConfig(CITY);
 const { monday, sunday } = getWeekRange();
 
@@ -84,7 +97,10 @@ const WINDOW_TO = toISODate(new Date(sunday.getTime() + 7 * 86_400_000));
  * URL, an annotation crash and a quiet week all wrote the same single line.
  * Diagnosis had to re-run the scrape to learn which it was.
  */
-function writeBarren(names: string[], reasons: Map<string, string>): void {
+function writeBarrenReport(
+	names: string[],
+	reasons: Map<string, string>,
+): void {
 	const path = barrenSourcesPath(CITY);
 	mkdirSync(dirname(path), { recursive: true });
 	writeFileSync(
@@ -102,6 +118,39 @@ function writeBarren(names: string[], reasons: Map<string, string>): void {
 		),
 		"utf-8",
 	);
+}
+
+/**
+ * A partial (--only) run must not replace the barren report with its own
+ * subset: every source missing from `names` reads as "the scrape covered it",
+ * so a barren source outside the subset would silently lose its AI-search
+ * fallback. Partial runs start from this week's report minus the sources they
+ * re-check. With no current report there is nothing to merge into, and writing
+ * a partial one would be exactly that failure — so `base` is null and the run
+ * leaves the report absent, which the reader treats as "all uncovered".
+ */
+function priorBarren(
+	rechecked: Set<string>,
+): { names: string[]; reasons: Map<string, string> } | null {
+	try {
+		const prior = JSON.parse(
+			readFileSync(barrenSourcesPath(CITY), "utf-8"),
+		) as {
+			week_start?: string;
+			names?: string[];
+			reasons?: Record<string, string>;
+		};
+		if (prior.week_start !== toISODate(monday)) return null;
+		const names = (prior.names ?? []).filter((n) => !rechecked.has(n));
+		return {
+			names,
+			reasons: new Map(
+				names.map((n) => [n, prior.reasons?.[n] ?? "no reason recorded"]),
+			),
+		};
+	} catch {
+		return null;
+	}
 }
 
 function writeRejections(sourceId: string, rejected: Rejection[]): void {
@@ -360,7 +409,16 @@ async function main(): Promise<void> {
 	console.log(
 		`Scraping — ${cityCfg.name} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
 	);
-	const sources = loadRegistrySafe(CITY);
+	const registry = loadRegistrySafe(CITY);
+	const sources = ONLY ? registry.filter((s) => ONLY.includes(s.id)) : registry;
+	if (ONLY) {
+		const unknown = ONLY.filter((id) => !registry.some((s) => s.id === id));
+		if (unknown.length > 0) {
+			throw new Error(
+				`--only: no scraper source with id ${unknown.join(", ")}. Known ids: ${registry.map((s) => s.id).join(", ")}`,
+			);
+		}
+	}
 	if (sources.length === 0) {
 		console.log("→ No scraper sources — nothing to scrape.");
 		return;
@@ -399,8 +457,17 @@ async function main(): Promise<void> {
 	let total = 0;
 	const totals = { found: 0, past: 0, later: 0, undated: 0 };
 	const suspects: string[] = [];
-	const barren: string[] = [];
-	const barrenReasons = new Map<string, string>();
+	const base = ONLY
+		? priorBarren(new Set(sources.map((s) => s.name)))
+		: undefined;
+	const barren: string[] = base?.names ?? [];
+	const barrenReasons = base?.reasons ?? new Map<string, string>();
+	// null = partial run with no current report to merge into: write nothing.
+	const writeBarren =
+		base === null
+			? () => {}
+			: (names: string[], reasons: Map<string, string>) =>
+					writeBarrenReport(names, reasons);
 	// Sources run concurrently. They are independent, and the per-host rate
 	// limiting lives in the shared SourceFetcher rather than in this loop, so
 	// serialising here bought nothing but wall-clock: 23 sources took as long
@@ -439,6 +506,11 @@ async function main(): Promise<void> {
 	// One browser for the whole run, so it closes once — not per source.
 	await closeRenderBrowser();
 	writeBarren(barren, barrenReasons);
+	if (base === null) {
+		console.log(
+			"→ Partial run and no barren report for this week — left it absent (every scraper source counts as uncovered until a full run).",
+		);
+	}
 	if (barren.length > 0) {
 		console.log(
 			`⚠ ${barren.length} scraper source(s) returned nothing — AI search will cover them: ${barren.join(", ")}`,

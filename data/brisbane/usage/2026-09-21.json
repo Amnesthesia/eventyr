@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-19T20:11:42.086Z",
+  "updated_at": "2026-09-24T02:11:55.250Z",
   "stages": {
     "collect/extract": {
-      "calls": 130,
-      "promptTokens": 456516,
-      "outputTokens": 202926,
+      "calls": 136,
+      "promptTokens": 489724,
+      "outputTokens": 223008,
       "cachedTokens": 0,
       "cacheWriteTokens": 0,
       "thoughtTokens": 0,
@@ -12,12 +12,12 @@
       "searchQueries": 0,
       "failures": 0,
       "retries": 0,
-      "estimatedUsd": 0.12682200000000005
+      "estimatedUsd": 0.13817560000000007
     },
     "annotate": {
-      "calls": 86,
-      "promptTokens": 137198,
-      "outputTokens": 25273,
+      "calls": 132,
+      "promptTokens": 357414,
+      "outputTokens": 79868,
       "cachedTokens": 0,
       "cacheWriteTokens": 0,
       "thoughtTokens": 0,
@@ -25,7 +25,7 @@
       "searchQueries": 0,
       "failures": 0,
       "retries": 0,
-      "estimatedUsd": 0.023829
+      "estimatedUsd": 0.0676886
     },
     "search/google": {
       "calls": 4,
@@ -104,6 +104,19 @@
       "failures": 0,
       "retries": 0,
       "estimatedUsd": 0.045692300000000005
+    },
+    "extract": {
+      "calls": 9,
+      "promptTokens": 25558,
+      "outputTokens": 14109,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.008199399999999999
     }
   }
 }

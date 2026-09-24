@@ -1,0 +1,74 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "fivestar-redhill",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Clueless (1995)",
+      "datetime": "Sat 3 Oct, 4:10 PM",
+      "datetime_iso": "2026-10-03T16:10:00",
+      "datetime_end_iso": "",
+      "location": "Red Hill Cinemas, 2 Enoggera Tce, Red Hill",
+      "link": "https://www.fivestarcinemas.com.au/redhill/movie/clueless",
+      "cost": "See link",
+      "source": "Red Hill Cinemas (Five Star)",
+      "description": "Classic screening. Mean Girls' Day screenings. A rich high school student tries to boost a new pupil's popularity, but reckons without affairs of the heart getting in the way.",
+      "image": "https://img.vwassets.com/fivestarcinemas.com.au/redhill/vertical_7c24307b-065d-426f-ad48-b5b8594580bf.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Mean Girls (2004)",
+      "datetime": "Sat 3 Oct, 2:00 PM",
+      "datetime_iso": "2026-10-03T14:00:00",
+      "datetime_end_iso": "",
+      "location": "Red Hill Cinemas, 2 Enoggera Tce, Red Hill",
+      "link": "https://www.fivestarcinemas.com.au/redhill/movie/ST00002942-mean-girls-2004",
+      "cost": "See link",
+      "source": "Red Hill Cinemas (Five Star)",
+      "description": "Classic screening. New Farm, Red Hill, Yatala Drive-In, Regal Graceville & Tower Cinemas Newcastle. Mean Girls' Day screenings. Cady Heron is a hit with The Plastics, the A-list girl clique at her new school, until she makes the mistake of falling for Aaron Samuels, the ex-boyfriend of alpha Plastic Regina George.",
+      "image": "https://img.vwassets.com/fivestarcinemas.com.au/redhill/horizontal_5507d467-6a6c-43f1-9dbf-cda5bba89cfc.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "culture"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Verity",
+      "datetime": "Wed 30 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-30T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Red Hill Cinemas, 2 Enoggera Tce, Red Hill",
+      "link": "https://www.fivestarcinemas.com.au/redhill/movie/verity",
+      "cost": "See link",
+      "source": "Red Hill Cinemas (Five Star)",
+      "description": "Sneak Peek screening. Ladies Night Preview Screenings: Wed 30 September. Adapted from Colleen Hoover's best-selling novel, this seductive, psychological thriller follows renowned author Verity Crawford (Anne Hathaway) and Lowen Ashleigh (Dakota Johnson), a struggling writer who relocates to the remote Crawford estate to ghostwrite for Verity. After Lowen uncovers what appears to be Verity's chilling autobiographical notes, she wrestles with the disturbing and twisted confessions about Verity’s husband Jeremy (Josh Hartnett), and finds it hard to separate fiction from reality, manipulation from attraction, and opportunity from obsession.",
+      "image": "https://img.vwassets.com/fivestarcinemas.com.au/redhill/horizontal_a4e15933-dff5-4adf-83f6-98f63275c6fa.jpg",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "film",
+        "culture",
+        "women"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

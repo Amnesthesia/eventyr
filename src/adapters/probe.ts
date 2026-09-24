@@ -314,6 +314,14 @@ const CITIES = cityArg ? [cityArg] : [];
 const ONLY = flag("only")
 	?.split(",")
 	.map((s) => s.trim().toLowerCase());
+/** --only must bound --apply too: results.jsonl is cumulative, so applying it
+ * whole replayed every stale verdict ever cached — a 22-host run would have
+ * demoted the hand-built Five Star entries on a months-old spa-empty. */
+function onlyScoped(results: ProbeResult[]): ProbeResult[] {
+	return ONLY
+		? results.filter((r) => r.host && ONLY.includes(r.host))
+		: results;
+}
 const LIMIT = Number(flag("limit") ?? "0");
 const APPLY = has("apply");
 /** Ignore both caches and re-probe everything. */
@@ -1586,7 +1594,9 @@ async function main(): Promise<void> {
 	if (REPORT_ONLY) {
 		// Scoped: results.jsonl holds every city ever probed, and reporting it whole
 		// made a byron run look like it had probed Brisbane too.
-		const cached = loadResults().filter((r) => CITIES.includes(r.city));
+		const cached = onlyScoped(loadResults()).filter((r) =>
+			CITIES.includes(r.city),
+		);
 		report(cached);
 		if (APPLY) {
 			for (const city of CITIES) applyPromotions(city, cached, true);
@@ -1738,7 +1748,7 @@ async function main(): Promise<void> {
 	let flushing: Promise<void> = Promise.resolve();
 	function flushPromotions(verbose = false): Promise<void> {
 		flushing = flushing.then(() => {
-			const soFar = loadResults();
+			const soFar = onlyScoped(loadResults());
 			for (const city of CITIES) applyPromotions(city, soFar, verbose);
 		});
 		return flushing;
@@ -1787,10 +1797,17 @@ async function main(): Promise<void> {
 		Array.from({ length: Math.min(CONCURRENT_HOSTS, work.length) }, worker),
 	);
 
-	// Pass 2: only the sources the free paths left unverified.
+	// Pass 2: only the sources the free paths left unverified. Scoped to this
+	// run's work: results.jsonl is cumulative, and without the filter an
+	// --only run asked the model about every unresolved host ever probed
+	// (348 for a 22-host run) only to retry the handful in `work`.
+	const workHosts = new Set(
+		work.map((w) => normaliseHost(w.entry.domains?.[0])).filter(Boolean),
+	);
 	const unresolved = new Map<string, { name: string; host: string }>();
 	for (const r of loadResults()) {
 		if (r.strategy || !r.host || !CITIES.includes(r.city)) continue;
+		if (!workHosts.has(r.host)) continue;
 		if (PLATFORMS.test(r.host)) continue;
 		if (!unresolved.has(r.host)) {
 			unresolved.set(r.host, { name: r.name, host: r.host });

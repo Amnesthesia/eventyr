@@ -27,7 +27,7 @@ change as any stage change (including where `INTERESTS` is or isn't applied).
    plus two canonical paths, and keeps only those that actually yield dated events. With
    `--apply`, promotes those sources to `method: scraper` in `sources/{city}.yml` with their
    verified `listingUrls`. Dry-run by default; prints every page tried and what came of it.
-1c. **`src/adapters/collect.ts`** (`pnpm collect-adapters`) — runs before `collect`. Scrapes
+1c. **`src/adapters/collect.ts`** (`pnpm collect-adapters [--only=id,...]`) — runs before `collect`. Scrapes
    every `method: scraper` source (JSON-LD → embedded hydration JSON → LLM over page text),
    week-filters, maps to the pipeline event shape, annotates category/tags/vibes with one
    small Gemini call per source, writes one file per source to
