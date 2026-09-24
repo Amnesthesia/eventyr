@@ -3,6 +3,7 @@ import { test } from "node:test";
 import {
 	brisbaneNaive,
 	candidateToEvent,
+	councilEventUrl,
 	humanDatetime,
 	isPast,
 	prepareCandidates,
@@ -265,4 +266,27 @@ test("the window excludes the past but includes next week", () => {
 	// a run that started before the window but is still on stays
 	assert.equal(withinWindow("2026-08-01", "2026-09-30", from, to), true);
 	assert.equal(isPast("2026-08-01", "2026-09-30", from), false);
+});
+
+test("council Trumba embed links become the event's own Trumba page", () => {
+	for (const path of ["trumba", "brisbane-events"]) {
+		assert.equal(
+			councilEventUrl(
+				`https://www.brisbane.qld.gov.au/${path}?trumbaEmbed=view%3Devent%26eventid%3D191635791`,
+			),
+			"https://www.trumba.com/calendars/brisbane-city-council?eventid=191635791",
+		);
+	}
+	assert.equal(
+		councilEventUrl("https://riverstage.com.au/events/x"),
+		"https://riverstage.com.au/events/x",
+	);
+	// The same link handed over unescaped.
+	assert.equal(
+		councilEventUrl(
+			"https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view=event&eventid=204315895",
+		),
+		"https://www.trumba.com/calendars/brisbane-city-council?eventid=204315895",
+	);
+	assert.equal(councilEventUrl(null), null);
 });

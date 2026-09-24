@@ -191,6 +191,14 @@ jobs:
           FORCE: ${{ inputs.force }}
         run: pnpm curate
 
+      - name: Canonicalise venues
+        env:
+          CITY: ${{ inputs.city }}
+          # Optional — without it only the deterministic rules run and
+          # unmatched names are used as-is.
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: pnpm dedupe-venues
+
       - name: Rank events
         env:
           CITY: ${{ inputs.city }}

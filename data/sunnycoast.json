@@ -33,7 +33,8 @@
       "creative": true,
       "venue": "institution",
       "score": 9,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=UniSC%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=UniSC%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": "University of the Sunshine Coast"
     },
     {
       "title": "The Use of Naturalism in the Work of Fabergé",
@@ -59,7 +60,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=ANSC%20Caloundra%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=ANSC%20Caloundra%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "ANSC Caloundra"
     },
     {
       "title": "Mirandi Riwoe Book Launch",
@@ -84,7 +86,8 @@
       "creative": true,
       "venue": "independent",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Rosetta%20Books%2C%20Maleny%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Rosetta%20Books%2C%20Maleny%2C%20Sunshine%20Coast",
+      "venue_name": "Rosetta Books"
     },
     {
       "title": "Sunshine Coast National Art Prize 2026 – Judge’s Walk and Talk",
@@ -111,7 +114,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Regional%20Gallery%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Regional%20Gallery%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Regional Gallery"
     },
     {
       "title": "Play TAG: The Adaptation Game",
@@ -137,7 +141,8 @@
       "creative": false,
       "venue": "institution",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=UniSC%20Sunshine%20Coast%2C%20Sippy%20Downs%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=UniSC%20Sunshine%20Coast%2C%20Sippy%20Downs%2C%20Sunshine%20Coast",
+      "venue_name": "University of the Sunshine Coast"
     },
     {
       "title": "The Great Noosa Trail Walk",
@@ -154,7 +159,8 @@
       "tags": [
         "nature",
         "walking",
-        "adventure"
+        "adventure",
+        "outdoor"
       ],
       "social": false,
       "intellectual": false,
@@ -162,7 +168,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Cooroy%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Cooroy%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Sunprint to Story: Cyanotype as Collage",
@@ -189,7 +196,8 @@
       "creative": true,
       "venue": "independent",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Cooroy%20Butter%20Factory%20Arts%20Centre%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Cooroy%20Butter%20Factory%20Arts%20Centre%2C%20Sunshine%20Coast",
+      "venue_name": "Cooroy Butter Factory Arts Centre"
     },
     {
       "title": "Sunshine Coast National Art Prize 2026 Finalists Exhibition",
@@ -215,7 +223,8 @@
       "image": "",
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Regional%20Gallery%2C%20Felicity%20House%2C%20Caloundra%2C%20Sunshine%20Coast",
-      "score": 7
+      "score": 7,
+      "venue_name": "Caloundra Regional Gallery"
     },
     {
       "title": "Catherine Dinkelmann — Be(longing) (Pop‑up artisan)",
@@ -230,6 +239,7 @@
         "ceramics",
         "art",
         "exhibition",
+        "craft",
         "free"
       ],
       "social": false,
@@ -241,7 +251,8 @@
       "image": "",
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Regional%20Gallery%20Store%2C%20Caloundra%2C%20Sunshine%20Coast",
-      "score": 7
+      "score": 7,
+      "venue_name": "Caloundra Regional Gallery"
     },
     {
       "title": "Sunshine Coast National Art Prize 2026 Finalists Exhibition",
@@ -266,7 +277,8 @@
       "image": "",
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Regional%20Gallery%2C%20Sunshine%20Coast",
-      "score": 7
+      "score": 7,
+      "venue_name": "Caloundra Regional Gallery"
     },
     {
       "title": "Rangebow Festival 2026",
@@ -294,7 +306,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Various%20sites%20in%20Maleny%2C%20Montville%2C%20Flaxton%20and%20Mapleton%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Various%20sites%20in%20Maleny%2C%20Montville%2C%20Flaxton%20and%20Mapleton%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Healthy brains for life",
@@ -317,7 +330,8 @@
       "creative": false,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=University%20of%20the%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=University%20of%20the%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": "University of the Sunshine Coast"
     },
     {
       "title": "Meditation Creations – Yoga Nidra with Clay & Watercolours",
@@ -336,7 +350,8 @@
         "ceramics",
         "painting",
         "craft",
-        "community"
+        "community",
+        "fitness"
       ],
       "social": true,
       "intellectual": false,
@@ -347,7 +362,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Chenrezig%20Art%20Studio%2C%20Eudlo%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Chenrezig%20Art%20Studio%2C%20Eudlo%2C%20Sunshine%20Coast",
+      "venue_name": "Chenrezig Art Studio"
     },
     {
       "title": "“Figure & Face” Life Drawing and Portraiture Exhibition",
@@ -374,7 +390,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Gallery%2C%20Buderim%20Craft%20Cottage%2C%20Buderim%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Gallery%2C%20Buderim%20Craft%20Cottage%2C%20Buderim%2C%20Sunshine%20Coast",
+      "venue_name": "Atrium Gallery"
     },
     {
       "title": "Sunshine Coast National Art Prize 2026 Winners Announcement",
@@ -401,7 +418,8 @@
       "image": "",
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Regional%20Gallery%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Regional%20Gallery%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Regional Gallery"
     },
     {
       "title": "Spring Bird Survey at Mary Cairncross Scenic Reserve - FREE Event",
@@ -426,7 +444,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Coolum Art Collective Art Exhibition",
@@ -455,7 +474,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Civic%20Centre%2C%20Coolum%20Beach%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Civic%20Centre%2C%20Coolum%20Beach%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Civic Centre"
     },
     {
       "title": "Inspector Drake & The Black Widow by BATS",
@@ -480,7 +500,8 @@
       "creative": true,
       "venue": "independent",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast",
+      "venue_name": "Buderim War Memorial Community Association"
     },
     {
       "title": "Caloundra Repair Cafe",
@@ -505,7 +526,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Out of the Round (Session 1)",
@@ -531,7 +553,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Coast%20Art%20Group%20Pottery%20Studio%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Coast%20Art%20Group%20Pottery%20Studio%2C%20Sunshine%20Coast",
+      "venue_name": "Sunshine Coast Art Group Pottery Studio"
     },
     {
       "title": "Out of the Round (Session 2)",
@@ -557,7 +580,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Coast%20Art%20Group%20Pottery%20Studio%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Coast%20Art%20Group%20Pottery%20Studio%2C%20Sunshine%20Coast",
+      "venue_name": "Sunshine Coast Art Group Pottery Studio"
     },
     {
       "title": "Synchronicity",
@@ -580,7 +604,8 @@
       "creative": false,
       "venue": "independent",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Suncare%20Community%20Centre%2C%202-6%20George%20Street%2C%20Maroochydore%2C%20Maroochydore%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Suncare%20Community%20Centre%2C%202-6%20George%20Street%2C%20Maroochydore%2C%20Maroochydore%2C%20Sunshine%20Coast",
+      "venue_name": "Suncare Community Centre"
     },
     {
       "title": "An Evening with Chris Hammer",
@@ -606,7 +631,8 @@
       "creative": true,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20J%20Noosa%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20J%20Noosa%2C%20Sunshine%20Coast",
+      "venue_name": "The J Noosa"
     },
     {
       "title": "The Night Sky exhibition",
@@ -633,7 +659,8 @@
       "creative": true,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Landsborough%20Museum%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Landsborough%20Museum%2C%20Sunshine%20Coast",
+      "venue_name": "Landsborough Museum"
     },
     {
       "title": "MANHATTAN SHORT – Film Festival 2026",
@@ -658,7 +685,8 @@
       "creative": true,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20J%20Noosa%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20J%20Noosa%2C%20Sunshine%20Coast",
+      "venue_name": "The J Noosa"
     },
     {
       "title": "Michael St George",
@@ -688,7 +716,8 @@
       "creative": true,
       "venue": "independent",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Presynct%20Venue%20%26%20Bar%2C%20Nambour%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Presynct%20Venue%20%26%20Bar%2C%20Nambour%2C%20Sunshine%20Coast",
+      "venue_name": "The Presynct Venue & Bar"
     },
     {
       "title": "eVTOL Student Team Project",
@@ -705,7 +734,8 @@
       "tags": [
         "engineering",
         "technology",
-        "student"
+        "student",
+        "students"
       ],
       "social": true,
       "intellectual": true,
@@ -713,7 +743,8 @@
       "creative": false,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Study%20Sunshine%20Coast%20events%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Study%20Sunshine%20Coast%20events%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Bloom — Exhibition",
@@ -729,6 +760,7 @@
         "ecology",
         "nature",
         "exhibition",
+        "environment",
         "free"
       ],
       "social": false,
@@ -740,7 +772,8 @@
       "image": "",
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Little%20Red%20Cottage%2C%20Maleny%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "The Little Red Cottage"
     },
     {
       "title": "You’re a Good Man, Charlie Brown",
@@ -756,7 +789,9 @@
       "category": "Concert / Music",
       "tags": [
         "musical",
-        "performance"
+        "performance",
+        "theatre",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -764,7 +799,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Noosa%20Arts%20Theatre%2C%20Noosaville%20%C2%B7%20Noosa%20%2B%20North%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Noosa Arts Theatre"
     },
     {
       "title": "Creative Generation",
@@ -790,7 +826,8 @@
       "creative": true,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Cooroy%20Butter%20Factory%20Arts%20Centre%2C%2011%20MAPLE%20ST%2C%20COOROY%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Cooroy Butter Factory Arts Centre"
     },
     {
       "title": "Start Up Student Art Prize",
@@ -808,7 +845,8 @@
         "exhibition",
         "student",
         "art",
-        "prizes"
+        "prizes",
+        "students"
       ],
       "social": false,
       "intellectual": false,
@@ -816,7 +854,8 @@
       "creative": true,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Cooroy%20Butter%20Factory%20Arts%20Centre%2C%2011%20MAPLE%20ST%2C%20COOROY%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Cooroy Butter Factory Arts Centre"
     },
     {
       "title": "Tinbeerwah Art Group Exhibition",
@@ -843,7 +882,8 @@
       "image": "",
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Tinbeerwah%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "The Garden in Layers at Noosa Botanic Gardens",
@@ -868,7 +908,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Sunshine Coast Jazz Club Performance",
@@ -894,7 +935,8 @@
       "image": "",
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Coast%20Jazz%20Club%20venue%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Welcoming Week Community Picnic",
@@ -921,7 +963,8 @@
       "image": "",
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Cotton%20Tree%20Park%2C%20Maroochydore%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Cotton Tree Park"
     },
     {
       "title": "ArtPlay Sunday",
@@ -949,7 +992,8 @@
       "image": "",
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Noosa%20Regional%20Gallery%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Noosa Regional Gallery"
     },
     {
       "title": "You're a Good Man, Charlie Brown (Musical)",
@@ -964,7 +1008,9 @@
         "musical",
         "performance",
         "community",
-        "culture"
+        "culture",
+        "theatre",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -975,7 +1021,8 @@
       "image": "",
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Noosa%20Arts%20Theatre%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Noosa Arts Theatre"
     },
     {
       "title": "Salmonella Dub Soundsystem with Riddim Cartel",
@@ -992,7 +1039,8 @@
       "tags": [
         "dub",
         "reggae",
-        "electronic"
+        "electronic",
+        "music"
       ],
       "social": true,
       "intellectual": false,
@@ -1000,7 +1048,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Caloundra%20%C2%B7%20Caloundra%20%2B%20Kawana%2C%20Sunshine%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Kings Beach Tavern"
     },
     {
       "title": "Maroochy Wetlands Sanctuary Reserve Bird Walk in September",
@@ -1026,7 +1075,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Namba Breakdown – False Front 45, Zealot, Sidewalk, Red Eclipse & Foül",
@@ -1053,7 +1103,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Black%20Box%20Theatre%2C%20Nambour%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Black%20Box%20Theatre%2C%20Nambour%2C%20Sunshine%20Coast",
+      "venue_name": "Black Box Theatre"
     },
     {
       "title": "Chess Club",
@@ -1077,7 +1128,8 @@
       "creative": false,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Meditation Creations – Art Studio Session",
@@ -1104,7 +1156,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Chenrezig%20Art%20Studio%2C%20Eudlo%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Chenrezig%20Art%20Studio%2C%20Eudlo%2C%20Sunshine%20Coast",
+      "venue_name": "Chenrezig Art Studio"
     },
     {
       "title": "Royal Mail Tewantin Open Mic",
@@ -1130,7 +1183,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Sold out : Bill Bailey | Vaudevillean",
@@ -1155,7 +1209,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "The Events Centre"
     },
     {
       "title": "“Figure & Face” Life Drawing and Portraiture Exhibition",
@@ -1182,7 +1237,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Gallery%2C%20Buderim%20Craft%20Cottage%2C%20Buderim%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Gallery%2C%20Buderim%20Craft%20Cottage%2C%20Buderim%2C%20Sunshine%20Coast",
+      "venue_name": "Atrium Gallery"
     },
     {
       "title": "Cr Ted Hungerford At The OPO",
@@ -1203,7 +1259,8 @@
       "creative": false,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast",
+      "venue_name": "Buderim War Memorial Community Association"
     },
     {
       "title": "👋 WordPress Social Meetup",
@@ -1227,7 +1284,8 @@
       "creative": false,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Salty%20Spaces%2C%20The%20Wharf%20Mooloolaba%2C%20123%20Parkyn%20Parade%2C%20Mooloolaba%20QLD%204557%2C%20Mooloolaba%2C%20Mooloolaba%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Salty%20Spaces%2C%20The%20Wharf%20Mooloolaba%2C%20123%20Parkyn%20Parade%2C%20Mooloolaba%20QLD%204557%2C%20Mooloolaba%2C%20Mooloolaba%2C%20Sunshine%20Coast",
+      "venue_name": "Salty Spaces"
     },
     {
       "title": "ALPHABET SOUP",
@@ -1248,7 +1306,8 @@
         "comedy",
         "dance",
         "lgbtq",
-        "nightlife"
+        "nightlife",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -1256,7 +1315,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Presynct%20Venue%20%26%20Bar%2C%20Nambour%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Presynct%20Venue%20%26%20Bar%2C%20Nambour%2C%20Sunshine%20Coast",
+      "venue_name": "The Presynct Venue & Bar"
     },
     {
       "title": "Jack Raymond – “Mr Know It All” Album Launch",
@@ -1283,7 +1343,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mapleton%20Public%20House%2C%20Mapleton%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mapleton%20Public%20House%2C%20Mapleton%2C%20Sunshine%20Coast",
+      "venue_name": "Mapleton Public House"
     },
     {
       "title": "Analog Social | Sunshine Coast (Games.IRL. 25-45)",
@@ -1308,7 +1369,8 @@
       "creative": false,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochydore%2C%20Alexandra%20Pde%2C%20Maroochydore%2C%20Maroochydore%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochydore%2C%20Alexandra%20Pde%2C%20Maroochydore%2C%20Maroochydore%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "You're a Good Man, Charlie Brown (Musical)",
@@ -1321,7 +1383,9 @@
       "description": "A local community theatre production of the classic musical, performed by the Noosa Arts Theatre company in an intimate, live stage setting.",
       "tags": [
         "musical",
-        "performance"
+        "performance",
+        "theatre",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -1332,7 +1396,8 @@
       "image": "",
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Noosa%20Arts%20Theatre%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Noosa%20Arts%20Theatre%2C%20Sunshine%20Coast",
+      "venue_name": "Noosa Arts Theatre"
     },
     {
       "title": "Beach Clean Up",
@@ -1358,7 +1423,8 @@
       "creative": false,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Alex%20Heads%20Beach%2C%20in%20front%20of%20the%20surf%20club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Alex%20Heads%20Beach%2C%20in%20front%20of%20the%20surf%20club%2C%20Sunshine%20Coast",
+      "venue_name": "Alex Heads Beach"
     },
     {
       "title": "Kingfisha - Highly Recommended Tour, Sunshine Coast - Full Moon Dance",
@@ -1386,7 +1452,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Visit%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Visit%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Shorebirds Festival at Golden Beach + Cotton Tree",
@@ -1412,7 +1479,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "“Figure & Face” Life Drawing and Portraiture Exhibition",
@@ -1439,7 +1507,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Gallery%2C%20Buderim%20Craft%20Cottage%2C%20Buderim%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Gallery%2C%20Buderim%20Craft%20Cottage%2C%20Buderim%2C%20Sunshine%20Coast",
+      "venue_name": "Atrium Gallery"
     },
     {
       "title": "Where It Began Art Exhibition",
@@ -1465,7 +1534,8 @@
       "image": "",
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Arts%20Centre%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Arts%20Centre%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Arts Centre"
     },
     {
       "title": "Inspector Drake & The Black Widow by BATS",
@@ -1490,7 +1560,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast",
+      "venue_name": "Buderim War Memorial Community Association"
     },
     {
       "title": "You're a Good Man, Charlie Brown (Musical)",
@@ -1503,7 +1574,9 @@
       "description": "A local community theatre production of the classic musical, performed by the Noosa Arts Theatre company in an intimate, live stage setting.",
       "tags": [
         "musical",
-        "performance"
+        "performance",
+        "theatre",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -1514,7 +1587,8 @@
       "image": "",
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Noosa%20Arts%20Theatre%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Noosa%20Arts%20Theatre%2C%20Sunshine%20Coast",
+      "venue_name": "Noosa Arts Theatre"
     },
     {
       "title": "JUNIOR OPEN MIC NIGHT SEPTEMBER",
@@ -1532,7 +1606,8 @@
         "music",
         "live music",
         "open mic",
-        "youth"
+        "youth",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -1540,7 +1615,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%2C%20Sunshine%20Coast",
+      "venue_name": "Banana Bender"
     },
     {
       "title": "“Figure & Face” Life Drawing and Portraiture Exhibition",
@@ -1567,7 +1643,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Gallery%2C%20Buderim%20Craft%20Cottage%2C%20Buderim%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Gallery%2C%20Buderim%20Craft%20Cottage%2C%20Buderim%2C%20Sunshine%20Coast",
+      "venue_name": "Atrium Gallery"
     },
     {
       "title": "Where It Began Art Exhibition",
@@ -1593,7 +1670,8 @@
       "image": "",
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Arts%20Centre%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Arts%20Centre%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Arts Centre"
     },
     {
       "title": "You're a Good Man, Charlie Brown (Musical)",
@@ -1606,7 +1684,9 @@
       "description": "A local community theatre production of the classic musical, performed by the Noosa Arts Theatre company in an intimate, live stage setting.",
       "tags": [
         "musical",
-        "performance"
+        "performance",
+        "theatre",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -1617,7 +1697,8 @@
       "image": "",
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Noosa%20Arts%20Theatre%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Noosa%20Arts%20Theatre%2C%20Sunshine%20Coast",
+      "venue_name": "Noosa Arts Theatre"
     },
     {
       "title": "Multicultural Moon Festival",
@@ -1644,7 +1725,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Lot%206%2C%20Mooloolaba%20Esplanade%2C%20Mooloolaba%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Lot%206%2C%20Mooloolaba%20Esplanade%2C%20Mooloolaba%2C%20Sunshine%20Coast",
+      "venue_name": "Lot 6"
     },
     {
       "title": "Youth Master Class: Contemporary Physical Theatre Workshop",
@@ -1670,7 +1752,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "The Events Centre"
     },
     {
       "title": "Introduction to Spanish for Beginners",
@@ -1695,7 +1778,8 @@
       "creative": false,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochydore%20Library%2C%20Cotton%20Tree%2C%2044%20Sixth%20Avenue%2C%20Cotton%20Tree%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochydore%20Library%2C%20Cotton%20Tree%2C%2044%20Sixth%20Avenue%2C%20Cotton%20Tree%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": "Maroochydore Library"
     },
     {
       "title": "Meet the Rainforest Guided Walks in September",
@@ -1722,7 +1806,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Maleny Community Centre 2026 Annual General Meeting",
@@ -1747,7 +1832,8 @@
       "creative": false,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%20Verandah%20Room%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%20Verandah%20Room%2C%20Sunshine%20Coast",
+      "venue_name": "Maleny Community Centre Verandah Room"
     },
     {
       "title": "Jack Raymond - Album Launch (NOOSA)",
@@ -1774,7 +1860,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Inspector Drake & The Black Widow by BATS",
@@ -1799,7 +1886,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast",
+      "venue_name": "Buderim War Memorial Community Association"
     },
     {
       "title": "Native Wildflower Guided Walk",
@@ -1826,7 +1914,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Sound Healing With Tuning Forks",
@@ -1851,7 +1940,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%20Verandah%20Room%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%20Verandah%20Room%2C%20Sunshine%20Coast",
+      "venue_name": "Maleny Community Centre Verandah Room"
     },
     {
       "title": "Inspector Drake & The Black Widow by BATS",
@@ -1876,7 +1966,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Association%2C%2050%20Burnett%20Street%2C%20Sunshine%20Coast",
+      "venue_name": "Buderim War Memorial Community Association"
     },
     {
       "title": "thrifter market",
@@ -1903,7 +1994,8 @@
       "creative": false,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Blackflag%20Coolum%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Blackflag%20Coolum%2C%20Sunshine%20Coast",
+      "venue_name": "Blackflag Coolum"
     },
     {
       "title": "Reconnecting with Nature at the Maroochy Regional Bushland Botanic Garden",
@@ -1928,7 +2020,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "THE SINGING ROADSHOW",
@@ -1956,7 +2049,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Imperial%20Hotel%20Eumundi%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Imperial%20Hotel%20Eumundi%2C%20Sunshine%20Coast",
+      "venue_name": "Imperial Hotel Eumundi"
     },
     {
       "title": "Introduction to Mindfulness and Meditation",
@@ -1981,7 +2075,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20483%20Mountain%20View%20Road%2C%20Sunshine%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Toowoomba Carnival of Flowers 2026",
@@ -2006,7 +2101,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Vintage Fashion Fair",
@@ -2023,7 +2119,8 @@
       "tags": [
         "vintage",
         "fashion",
-        "market"
+        "market",
+        "shopping"
       ],
       "social": true,
       "intellectual": false,
@@ -2031,7 +2128,8 @@
       "creative": false,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%2C%20Sunshine%20Coast",
+      "venue_name": "Maleny Community Centre"
     },
     {
       "title": "VietJet Redcliffe KiteFest - FREE Entry",
@@ -2055,7 +2153,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Brisbane's Big Italian Party Is Back: Festitalia Returns This September",
@@ -2080,7 +2179,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Secret Garden in September",
@@ -2105,7 +2205,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Chasing Sun(Sets) III — JOEZI x MASSUMA",
@@ -2132,7 +2233,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Castaways%20Beach%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Castaways%20Beach%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Castaways Beach Club"
     },
     {
       "title": "The Black Sorrows",
@@ -2157,7 +2259,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Beach%20SLSC%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Beach%20SLSC%2C%20Sunshine%20Coast",
+      "venue_name": "Sunshine Beach SLSC"
     },
     {
       "title": "InnQuizative Trivia",
@@ -2182,7 +2285,8 @@
       "creative": false,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Bushland Holiday Program: Journey Stick Adventure",
@@ -2209,7 +2313,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Lucid Safari",
@@ -2234,7 +2339,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast",
+      "venue_name": "Peregian Beach Hotel"
     },
     {
       "title": "Monday Night Trivia",
@@ -2259,7 +2365,8 @@
       "creative": false,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "TurtleCare Hatchling Club - School Holiday Activity for Ages 5 to 10",
@@ -2285,7 +2392,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Strung Out",
@@ -2310,7 +2418,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "Kings Beach Tavern"
     },
     {
       "title": "TRIVIA HAPPENS",
@@ -2336,7 +2445,8 @@
       "creative": false,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Land%20%26%20Sea%20Brewery%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Land%20%26%20Sea%20Brewery%2C%20Sunshine%20Coast",
+      "venue_name": "Land & Sea Brewery"
     },
     {
       "title": "Frequency: The Secret of Everything screening and Q&A",
@@ -2362,7 +2472,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Venue%20114%2C%20Bokarina%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Venue%20114%2C%20Bokarina%2C%20Sunshine%20Coast",
+      "venue_name": "Venue 114"
     },
     {
       "title": "Moffat Beach: Vintage Vibes Street Party",
@@ -2388,7 +2499,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Moffat%20Beach%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Moffat%20Beach%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Spring School Holidays at Landsborough Museum - FREE Events",
@@ -2414,7 +2526,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "LA SALSA PARTY",
@@ -2439,7 +2552,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Late for Woodstock",
@@ -2465,7 +2579,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Taking Back Saturday – Emo & Pop Punk Night",
@@ -2492,7 +2607,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "Kings Beach Tavern"
     },
     {
       "title": "Low & Slow BBQ Masterclass",
@@ -2510,7 +2626,8 @@
         "food",
         "dining",
         "beer",
-        "craft"
+        "craft",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -2518,7 +2635,8 @@
       "creative": false,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Brewery%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Brewery%2C%20Sunshine%20Coast",
+      "venue_name": "Sunshine Brewery"
     },
     {
       "title": "Saturday Night Live & Free",
@@ -2542,7 +2660,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "EMOWAVE at The Presynct",
@@ -2572,7 +2691,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Presynct%20Venue%20%26%20Bar%2C%20Nambour%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Presynct%20Venue%20%26%20Bar%2C%20Nambour%2C%20Sunshine%20Coast",
+      "venue_name": "The Presynct Venue & Bar"
     },
     {
       "title": "Candlelight: Tribute to Michael Jackson",
@@ -2587,6 +2707,7 @@
         "music",
         "concert",
         "performance",
+        "live music",
         "free"
       ],
       "social": false,
@@ -2598,7 +2719,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Imperial%20Hotel%20Eumundi%2C%20Eumundi%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Imperial%20Hotel%20Eumundi%2C%20Eumundi%2C%20Sunshine%20Coast",
+      "venue_name": "Imperial Hotel Eumundi"
     },
     {
       "title": "Candlelight: Ed Sheeran Meets Coldplay",
@@ -2613,6 +2735,7 @@
         "music",
         "concert",
         "performance",
+        "live music",
         "free"
       ],
       "social": false,
@@ -2624,7 +2747,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Imperial%20Hotel%20Eumundi%2C%20Eumundi%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Imperial%20Hotel%20Eumundi%2C%20Eumundi%2C%20Sunshine%20Coast",
+      "venue_name": "Imperial Hotel Eumundi"
     },
     {
       "title": "DONBURS - UNIT 03: BLACK BLOOD | AHMEDABAD",
@@ -2650,7 +2774,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=TBA%2C%20Sunshine%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Collins In The Air Tonight",
@@ -2676,7 +2801,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "Kings Beach Tavern"
     },
     {
       "title": "Gujarati Jamanvaar 2026",
@@ -2701,7 +2827,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Party%20Hall%201%2C%20PSN%20Club%20House%2C%20Sunshine%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "Party Hall 1"
     },
     {
       "title": "Bushland Holiday Program: Habitat Makers",
@@ -2728,7 +2855,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Monday Night Trivia",
@@ -2753,7 +2881,8 @@
       "creative": false,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Bushland Holiday Program: Little Scientists - Platypus",
@@ -2780,7 +2909,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "AUDIO HOLICS FESTIVAL W/MARINO MELLINO",
@@ -2807,7 +2937,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Palmview%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Palmview%2C%20Sunshine%20Coast",
+      "venue_name": "Banana Bender"
     },
     {
       "title": "WOODHILL",
@@ -2825,7 +2956,8 @@
         "live music",
         "concert",
         "band",
-        "rock"
+        "rock",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -2833,7 +2965,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Norton%20Music%20Factory%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Norton%20Music%20Factory%2C%20Sunshine%20Coast",
+      "venue_name": "Norton Music Factory"
     },
     {
       "title": "GREASE THE MUSICAL",
@@ -2859,7 +2992,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "The Events Centre"
     },
     {
       "title": "Brit Fest – Noosa",
@@ -2886,7 +3020,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Villa%20Noosa%20Hotel%2C%20Noosaville%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Villa%20Noosa%20Hotel%2C%20Noosaville%2C%20Sunshine%20Coast",
+      "venue_name": "Villa Noosa Hotel"
     },
     {
       "title": "Vika & Linda | Where Do You Come From?",
@@ -2912,7 +3047,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "The Events Centre"
     },
     {
       "title": "No Phone Analog Group 20s to 40s Maroochydore",
@@ -2935,7 +3071,8 @@
       "creative": false,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Beach%20Bar%20Cotton%20Tree%2C%20Shop%202%2C%20Essence%2C%2013%2C%2015%20The%20Esplanade%2C%20Maroochydore%20QLD%204558%2C%20Maroochydore%2C%20Maroochydore%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Beach%20Bar%20Cotton%20Tree%2C%20Shop%202%2C%20Essence%2C%2013%2C%2015%20The%20Esplanade%2C%20Maroochydore%20QLD%204558%2C%20Maroochydore%2C%20Maroochydore%2C%20Sunshine%20Coast",
+      "venue_name": "Beach Bar Cotton Tree"
     },
     {
       "title": "Monthly Sober Awkward Morning Tea",
@@ -2961,7 +3098,8 @@
       "creative": false,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Power%20Memorial%20Park%2C%20Mudjimba%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Power%20Memorial%20Park%2C%20Mudjimba%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": "Power Memorial Park"
     },
     {
       "title": "Royal Scottish Country Dance Society",
@@ -2986,7 +3124,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%2C%20Sunshine%20Coast",
+      "venue_name": "Maleny Community Centre"
     },
     {
       "title": "STUFFit – Certificate III in Events",
@@ -3003,7 +3142,8 @@
       "tags": [
         "design",
         "community",
-        "student"
+        "student",
+        "students"
       ],
       "social": false,
       "intellectual": true,
@@ -3011,7 +3151,8 @@
       "creative": false,
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Study%20Sunshine%20Coast%20events%2C%20Sunshine%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": null
     },
     {
       "title": "Generation Innovation",
@@ -3035,7 +3176,8 @@
       "creative": false,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Study%20Sunshine%20Coast%20events%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Study%20Sunshine%20Coast%20events%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "FAMILY KARAOKE",
@@ -3052,7 +3194,8 @@
       "tags": [
         "karaoke",
         "family",
-        "music"
+        "music",
+        "singing"
       ],
       "social": true,
       "intellectual": false,
@@ -3060,7 +3203,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Sunshine%20Coast",
+      "venue_name": "Banana Bender"
     },
     {
       "title": "Anna & Jordan",
@@ -3084,7 +3228,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast",
+      "venue_name": "Peregian Beach Hotel"
     },
     {
       "title": "Beccy Cole – Through The Haze Tour",
@@ -3111,7 +3256,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Savvy%20Squire%20Mooloolaba%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Savvy%20Squire%20Mooloolaba%2C%20Sunshine%20Coast",
+      "venue_name": "The Savvy Squire Mooloolaba"
     },
     {
       "title": "Bohemian Rogue Band",
@@ -3137,7 +3283,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mooloolah%20Valley%20Country%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mooloolah%20Valley%20Country%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Mooloolah Valley Country Club"
     },
     {
       "title": "Sunday Afternoon Live Music – Fabian",
@@ -3162,7 +3309,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "September Mums Brunch",
@@ -3187,7 +3335,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Sully%E2%80%99s%20Rooftop%20Bar%20Mooloolaba%2C%20Level%2012%2F%2010%20Brisbane%20Road%20Mooloolaba%20Sunshine%20Coast%2C%20Mooloolaba%2C%20Mooloolaba%2C%20Sunshine%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Sully’s Rooftop Bar Mooloolaba"
     },
     {
       "title": "Colin Dodds",
@@ -3211,7 +3360,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Veteran Family Fun Day 2026",
@@ -3241,7 +3391,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast",
+      "venue_name": "Maroochy RSL"
     },
     {
       "title": "Buderim- Coffee & Chin Wag",
@@ -3266,7 +3417,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Rue%20Bourbon%2C%2089%20Burnett%20St%2C%20Buderim%2C%20Buderim%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Rue%20Bourbon%2C%2089%20Burnett%20St%2C%20Buderim%2C%20Buderim%2C%20Sunshine%20Coast",
+      "venue_name": "Rue Bourbon"
     },
     {
       "title": "Coolum- Coffee & Chin Wag",
@@ -3284,7 +3436,8 @@
         "coffee",
         "drinks",
         "walking",
-        "community"
+        "community",
+        "outdoor"
       ],
       "social": true,
       "intellectual": false,
@@ -3292,7 +3445,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Coastal%20Board%20Walk%2C%20102%20Yandina%20Coolum%20Road%2C%20Coolum%20Beach%2C%20Coolum%20Beach%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Coastal%20Board%20Walk%2C%20102%20Yandina%20Coolum%20Road%2C%20Coolum%20Beach%2C%20Coolum%20Beach%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Coastal Board Walk"
     },
     {
       "title": "Warana- Coffee & Chin Wag",
@@ -3317,7 +3471,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Jimmy%E2%80%99s%20Catering%2C%203%2F179%20Nicklin%20Way%2C%20Warana%2C%20Warana%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Jimmy%E2%80%99s%20Catering%2C%203%2F179%20Nicklin%20Way%2C%20Warana%2C%20Warana%2C%20Sunshine%20Coast",
+      "venue_name": "Jimmy’s Catering"
     },
     {
       "title": "Apex Camps Spring School Holiday Program",
@@ -3343,7 +3498,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Line Dancing Class",
@@ -3368,7 +3524,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Zumba With Tianna",
@@ -3393,7 +3550,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Hall%2C%201%20Main%20Street%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Hall%2C%201%20Main%20Street%2C%20Sunshine%20Coast",
+      "venue_name": "Buderim War Memorial Community Hall"
     },
     {
       "title": "The ULTIMATE Magic Show | Illusionist Jonas Jost",
@@ -3417,7 +3575,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "The Events Centre"
     },
     {
       "title": "Spring School Holidays – Geckoes Wildlife Show",
@@ -3443,7 +3602,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "SCHOOL HOLIDAY FAMILY TRIVIA NIGHT",
@@ -3470,7 +3630,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Sunshine%20Coast",
+      "venue_name": "Banana Bender"
     },
     {
       "title": "Grease",
@@ -3488,7 +3649,8 @@
         "theatre",
         "musical",
         "performance",
-        "youth"
+        "youth",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -3496,7 +3658,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20J%20Noosa%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20J%20Noosa%2C%20Sunshine%20Coast",
+      "venue_name": "The J Noosa"
     },
     {
       "title": "Free Live Entertainment with Mickey Diamond",
@@ -3520,7 +3683,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "TRIBUTE FESTIVAL 26′",
@@ -3546,7 +3710,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Palmview%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Palmview%2C%20Sunshine%20Coast",
+      "venue_name": "Banana Bender"
     },
     {
       "title": "Pornstar Supercar",
@@ -3570,7 +3735,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Blackflag%20Brewing%20Mooloolaba%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Blackflag%20Brewing%20Mooloolaba%2C%20Sunshine%20Coast",
+      "venue_name": "Blackflag Brewing Mooloolaba"
     },
     {
       "title": "Che Burns",
@@ -3594,7 +3760,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast",
+      "venue_name": "Peregian Beach Hotel"
     },
     {
       "title": "Jack Raymond Album Tour with Ryan Tracey & Daryl James",
@@ -3619,7 +3786,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mapleton%20Public%20House%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mapleton%20Public%20House%2C%20Sunshine%20Coast",
+      "venue_name": "Mapleton Public House"
     },
     {
       "title": "Friday Night Live & Free",
@@ -3643,7 +3811,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Free Live Entertainment with Harry Morris",
@@ -3667,7 +3836,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "Tuscany Mellor",
@@ -3691,7 +3861,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Billy vs Elton",
@@ -3717,7 +3888,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "The Events Centre"
     },
     {
       "title": "LifeFlight Sunshine Coast Family Fun Day",
@@ -3742,7 +3914,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Marcoola%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Marcoola%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Wondai Garden Expo Spring 2026",
@@ -3768,7 +3941,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Vinyl Nights: il Porto – Karlos Dean",
@@ -3793,7 +3967,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast",
+      "venue_name": "Peregian Beach Hotel"
     },
     {
       "title": "Karaoke & Pizza",
@@ -3813,7 +3988,8 @@
         "open mic",
         "food",
         "dining",
-        "drinks"
+        "drinks",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -3821,7 +3997,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Brewery%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Brewery%2C%20Sunshine%20Coast",
+      "venue_name": "Sunshine Brewery"
     },
     {
       "title": "Free Live Entertainment with Lachlan Flanagan",
@@ -3845,7 +4022,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "HIGH VOLTAGE",
@@ -3864,7 +4042,8 @@
         "concert",
         "band",
         "rock",
-        "tribute"
+        "tribute",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -3872,7 +4051,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Norton%20Music%20Factory%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Norton%20Music%20Factory%2C%20Sunshine%20Coast",
+      "venue_name": "Norton Music Factory"
     },
     {
       "title": "BINGO LOCO",
@@ -3898,7 +4078,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Palmview%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Palmview%2C%20Sunshine%20Coast",
+      "venue_name": "Banana Bender"
     },
     {
       "title": "Poco Loco",
@@ -3922,7 +4103,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Giddy Up Strut feat. The Nashville Jukebox",
@@ -3950,7 +4132,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Villa%20Noosa%20Hotel%2C%20Noosaville%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Villa%20Noosa%20Hotel%2C%20Noosaville%2C%20Sunshine%20Coast",
+      "venue_name": "Villa Noosa Hotel"
     },
     {
       "title": "Saltburn",
@@ -3974,7 +4157,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Beach%20Hotel%2C%20Sunshine%20Coast",
+      "venue_name": "Peregian Beach Hotel"
     },
     {
       "title": "Marco",
@@ -3998,7 +4182,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Zumba With Tianna",
@@ -4024,7 +4209,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Hall%2C%201%20Main%20Street%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Community%20Hall%2C%201%20Main%20Street%2C%20Sunshine%20Coast",
+      "venue_name": "Buderim War Memorial Community Hall"
     },
     {
       "title": "Daytime Concert Series | What’s New Pussycat?",
@@ -4049,7 +4235,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "The Events Centre"
     },
     {
       "title": "Sunny Coast Women Solopreneurs: Your offsite 2026-27 strategic planning day",
@@ -4073,7 +4260,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%20Verandah%20Room%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maleny%20Community%20Centre%20Verandah%20Room%2C%20Sunshine%20Coast",
+      "venue_name": "Maleny Community Centre Verandah Room"
     },
     {
       "title": "Spring School Holidays – Mr Fye Magic Show",
@@ -4098,7 +4286,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Free Live Entertainment with Billy Guy",
@@ -4122,7 +4311,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "APL Poker – $26 Buy In",
@@ -4147,7 +4337,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Superficial Pop Party",
@@ -4173,7 +4364,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "Kings Beach Tavern"
     },
     {
       "title": "Passport to Malt & Mayhem Oktoberfest style",
@@ -4199,7 +4391,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Kuluin%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Kuluin%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Mary Valley Rattler presents the Gold Rush Express",
@@ -4224,7 +4417,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Wild Women Adventure Race",
@@ -4250,7 +4444,8 @@
       "creative": false,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Digital%20Hub%2C%20253-255%20David%20Low%20Way%2C%20Peregian%20Beach%2C%20al%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Digital%20Hub%2C%20253-255%20David%20Low%20Way%2C%20Peregian%20Beach%2C%20al%2C%20Sunshine%20Coast",
+      "venue_name": "Peregian Digital Hub"
     },
     {
       "title": "Yacht Rock Holiday",
@@ -4275,7 +4470,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Beach%20Surf%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Beach%20Surf%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Sunshine Beach SLSC"
     },
     {
       "title": "Burn The Floor",
@@ -4299,7 +4495,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "The Events Centre"
     },
     {
       "title": "Spring school holidays",
@@ -4323,7 +4520,8 @@
       "creative": true,
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Coast%20Heritage%2C%20Sunshine%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Sunshine Coast Recreation Precinct - Spring School Holiday Activities",
@@ -4349,7 +4547,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Snow Globe Creation Experience",
@@ -4375,7 +4574,8 @@
       "creative": true,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Mad Hatters Tea Party",
@@ -4400,7 +4600,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Functional Circuit Training",
@@ -4424,7 +4625,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Hall%20-%20CWA%20Room%20upstairs%2C%201%20Main%20Street%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Hall%20-%20CWA%20Room%20upstairs%2C%201%20Main%20Street%2C%20Sunshine%20Coast",
+      "venue_name": "Buderim War Memorial Community Hall"
     },
     {
       "title": "Free Coaching",
@@ -4449,7 +4651,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Snake Boss Reptile Show",
@@ -4475,7 +4678,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Sunshine%20Coast",
+      "venue_name": "Kings Beach Tavern"
     },
     {
       "title": "Finnegan the Fart Detective",
@@ -4501,7 +4705,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Events%20Centre%2C%20Caloundra%2C%20Sunshine%20Coast",
+      "venue_name": "The Events Centre"
     },
     {
       "title": "Free Live Entertainment with Rachel Ellen",
@@ -4526,7 +4731,8 @@
       "creative": true,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": "Club Kawana"
     },
     {
       "title": "UniSC Sunshine Coast Graduation",
@@ -4542,7 +4748,8 @@
       "category": "Community / Other",
       "tags": [
         "community",
-        "student"
+        "student",
+        "students"
       ],
       "social": true,
       "intellectual": false,
@@ -4550,7 +4757,8 @@
       "creative": false,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=UniSC%20Arena%2C%2032%20Olympic%20Way%2C%20Sippy%20Downs%2C%20QLD%204556%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=UniSC%20Arena%2C%2032%20Olympic%20Way%2C%20Sippy%20Downs%2C%20QLD%204556%2C%20Sunshine%20Coast",
+      "venue_name": "University of the Sunshine Coast"
     },
     {
       "title": "Coyote’s Roadhouse Grand Opening",
@@ -4573,7 +4781,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coyote%E2%80%99s%20Roadhouse%2C%20Maroochydore%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coyote%E2%80%99s%20Roadhouse%2C%20Maroochydore%2C%20Sunshine%20Coast",
+      "venue_name": "Coyote’s Roadhouse"
     },
     {
       "title": "APL Poker – $26 Buy In",
@@ -4598,7 +4807,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "TINY HUMANS",
@@ -4624,7 +4834,8 @@
       "creative": true,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Palmview%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Banana%20Bender%20Pub%2C%20Palmview%2C%20Sunshine%20Coast",
+      "venue_name": "Banana Bender"
     },
     {
       "title": "Coyote’s Roadhouse Opening Weekend",
@@ -4647,7 +4858,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coyote%E2%80%99s%20Roadhouse%2C%20Maroochydore%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coyote%E2%80%99s%20Roadhouse%2C%20Maroochydore%2C%20Sunshine%20Coast",
+      "venue_name": "Coyote’s Roadhouse"
     },
     {
       "title": "Tax Clinic Workshop - Building long-term tax success",
@@ -4670,7 +4882,8 @@
       "creative": false,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=University%20of%20the%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=University%20of%20the%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": "University of the Sunshine Coast"
     },
     {
       "title": "UniSC Moreton Bay Graduation (Day 1)",
@@ -4686,7 +4899,8 @@
       "category": "Community / Other",
       "tags": [
         "community",
-        "student"
+        "student",
+        "students"
       ],
       "social": true,
       "intellectual": false,
@@ -4694,7 +4908,8 @@
       "creative": false,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=University%20of%20the%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=University%20of%20the%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": "University of the Sunshine Coast"
     },
     {
       "title": "Functional Circuit Training",
@@ -4718,7 +4933,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Hall%20-%20CWA%20Room%20upstairs%2C%201%20Main%20Street%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Buderim%20War%20Memorial%20Hall%20-%20CWA%20Room%20upstairs%2C%201%20Main%20Street%2C%20Sunshine%20Coast",
+      "venue_name": "Buderim War Memorial Community Hall"
     },
     {
       "title": "Free Coaching",
@@ -4744,7 +4960,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "The Librarian",
@@ -4770,7 +4987,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20J%20Noosa%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20J%20Noosa%2C%20Sunshine%20Coast",
+      "venue_name": "The J Noosa"
     },
     {
       "title": "Veteran Wellbeing Foundation Race Night | Friday 2 October 2026",
@@ -4799,7 +5017,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Sea FM After Dark: Fridays This October at SCTC",
@@ -4826,7 +5045,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Dress up for Oktoberfest Celebrations!",
@@ -4853,7 +5073,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Brewery%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Brewery%2C%20Sunshine%20Coast",
+      "venue_name": "Sunshine Brewery"
     },
     {
       "title": "3 Mountain Bike Orienteering Events in one Weekend",
@@ -4879,7 +5100,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Various%20Venues%20Sunshine%20Coast%2C%20Palmer%20Resort%2C%20Peregian%20Springs%2C%20Noosa%20Springs%2C%20Pelican%20Waters%2C%20Mooloolaba%2C%20Caboolture%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast",
-      "score": 2
+      "score": 2,
+      "venue_name": null
     },
     {
       "title": "Sunday Club Selected Pairs",
@@ -4904,7 +5126,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Bingo",
@@ -4929,7 +5152,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Bli Bli Social Pickleball - Monday Evenings",
@@ -4953,7 +5177,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=KT%20Pickleball%20Bli%20Bli%2C%2016%20Kronk%20Court%20%2C%2C%20Bli%20Bli%2C%20Bli%20Bli%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=KT%20Pickleball%20Bli%20Bli%2C%2016%20Kronk%20Court%20%2C%2C%20Bli%20Bli%2C%20Bli%20Bli%2C%20Sunshine%20Coast",
+      "venue_name": "KT Pickleball Bli Bli"
     },
     {
       "title": "Coolum Screens & Blinds Tuesday Open Pairs",
@@ -4978,7 +5203,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Bli Bli Social Pickleball - Tuesday Evenings",
@@ -5002,7 +5228,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=KT%20Pickleball%20Bli%20Bli%2C%2016%20Kronk%20Court%20%2C%2C%20Bli%20Bli%2C%20Bli%20Bli%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=KT%20Pickleball%20Bli%20Bli%2C%2016%20Kronk%20Court%20%2C%2C%20Bli%20Bli%2C%20Bli%20Bli%2C%20Sunshine%20Coast",
+      "venue_name": "KT Pickleball Bli Bli"
     },
     {
       "title": "Intermediate and above Round Robin",
@@ -5027,7 +5254,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Digital%20Hub%2C%20253-255%20David%20Low%20Way%2C%20Peregian%20Beach%2C%20al%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Peregian%20Digital%20Hub%2C%20253-255%20David%20Low%20Way%2C%20Peregian%20Beach%2C%20al%2C%20Sunshine%20Coast",
+      "venue_name": "Peregian Digital Hub"
     },
     {
       "title": "Castaway Barbers $500 Mens Pairs",
@@ -5053,7 +5281,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Social pickleball for Beginner to Intermediate players",
@@ -5077,7 +5306,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Nambour%20%26%20District%20Tennis%20Association%2C%2011%20Washington%20St%2C%20Nambour%2C%20Nambour%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Nambour%20%26%20District%20Tennis%20Association%2C%2011%20Washington%20St%2C%20Nambour%2C%20Nambour%2C%20Sunshine%20Coast",
+      "venue_name": "Nambour & District Tennis Association"
     },
     {
       "title": "Thursday Open Pairs",
@@ -5102,7 +5332,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Bli Bli Social Pickleball - Thursday Evenings",
@@ -5126,7 +5357,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=KT%20Pickleball%20Bli%20Bli%2C%2016%20Kronk%20Court%20%2C%2C%20Bli%20Bli%2C%20Bli%20Bli%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=KT%20Pickleball%20Bli%20Bli%2C%2016%20Kronk%20Court%20%2C%2C%20Bli%20Bli%2C%20Bli%20Bli%2C%20Sunshine%20Coast",
+      "venue_name": "KT Pickleball Bli Bli"
     },
     {
       "title": "NIPPER SUPPORT CREW",
@@ -5152,7 +5384,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Alexandra%20Headland%20SLSC%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Alexandra%20Headland%20SLSC%2C%20Sunshine%20Coast",
+      "venue_name": "Alexandra Headland SLSC"
     },
     {
       "title": "Friday Open Pairs",
@@ -5177,7 +5410,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Social Volleyball Games - Meridan State College **ALL Levels**",
@@ -5201,7 +5435,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Meridan%20State%20College%2C%20214%20Parklands%20Blvd%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Meridan%20State%20College%2C%20214%20Parklands%20Blvd%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": "Meridan State College"
     },
     {
       "title": "Spider-Man & Elsa Visits",
@@ -5225,7 +5460,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Sunshine%20Coast",
+      "venue_name": "Kings Beach Tavern"
     },
     {
       "title": "Kids Eat Free",
@@ -5249,7 +5485,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "2026 Open Consistency Singles – entries close",
@@ -5275,7 +5512,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Kids Eat Free",
@@ -5299,7 +5537,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "LiveLife Pharmacy Thursday Open Pairs",
@@ -5324,7 +5563,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Kids Eat Free",
@@ -5348,7 +5588,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Friday Open Pairs",
@@ -5373,7 +5614,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Caloundra's FREE Shopping Tour with Your Exclusive Local Guide",
@@ -5398,7 +5640,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Weekend%20Notes%20Sunshine%20Coast%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Sunday Club Selected Pairs",
@@ -5423,7 +5666,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolum%20Beach%20Sports%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Coolum Beach Sports Club"
     },
     {
       "title": "Oktoberfest",
@@ -5443,7 +5687,8 @@
         "beer",
         "competition",
         "family",
-        "kids"
+        "kids",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -5451,7 +5696,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Kings%20Beach%20Tavern%2C%20Sunshine%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Kings Beach Tavern"
     },
     {
       "title": "Super Saturday",
@@ -5474,7 +5720,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Saturday All Day Dining",
@@ -5498,7 +5745,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "UFC331 Live & Loud",
@@ -5523,7 +5771,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast",
+      "venue_name": "Maroochy RSL"
     },
     {
       "title": "Sunday All Day Dining",
@@ -5547,7 +5796,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "The Sunday Roast",
@@ -5571,7 +5821,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Carvery Lunch",
@@ -5595,7 +5846,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast",
+      "venue_name": "Maroochy RSL"
     },
     {
       "title": "Kids Eat Free",
@@ -5621,7 +5873,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast",
+      "venue_name": "Maroochy RSL"
     },
     {
       "title": "Sunday Raffles",
@@ -5645,7 +5898,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Outrigger Raffles",
@@ -5669,7 +5923,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Free Face Painting",
@@ -5694,7 +5949,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Maroochy%20RSL%2C%20Sunshine%20Coast",
+      "venue_name": "Maroochy RSL"
     },
     {
       "title": "Sunday Arvo Sessions",
@@ -5719,7 +5975,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "Social Volleyball Games - Meridan State College **ALL Levels**",
@@ -5743,7 +6000,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Meridan%20State%20College%2C%20214%20Parklands%20Blvd%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast%2C%20Sunshine%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Meridan State College"
     },
     {
       "title": "Sunday Steak Night",
@@ -5767,7 +6025,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Dragon Jackpots – Win Share $1500",
@@ -5791,7 +6050,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Blossom Bonanza Sunday Members Draw",
@@ -5815,7 +6075,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Dragon Jackpots – Win Share $1500",
@@ -5839,7 +6100,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Double Point Mondays",
@@ -5862,7 +6124,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Ladies Social Golf Club Raffles",
@@ -5886,7 +6149,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Monday Raffles",
@@ -5910,7 +6174,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Member’s Draw – win up to $20,000",
@@ -5934,7 +6199,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Golden Riches – Win $1250",
@@ -5957,7 +6223,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "The Butchers Block – Steak Night",
@@ -5981,7 +6248,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Treasure Chest – Win $250",
@@ -6004,7 +6272,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Parmageddon",
@@ -6028,7 +6297,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "PBC Members Draw",
@@ -6052,7 +6322,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Golden Riches – Win $1250",
@@ -6075,7 +6346,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "PARMIGEDDON – PARMI NIGHT",
@@ -6099,7 +6371,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Kids Eat Free",
@@ -6123,7 +6396,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Wednesday Sub Branch Raffles",
@@ -6147,7 +6421,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tewantin%20Noosa%20RSL%2C%201%20Memorial%20Ave%2C%20Tewantin%2C%20Queensland%2C%204565%2C%20Sunshine%20Coast",
+      "venue_name": "Tewantin Noosa RSL"
     },
     {
       "title": "Golf Club Raffles",
@@ -6171,7 +6446,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Jag the Joker Wednesdays",
@@ -6196,7 +6472,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "Golden Riches – Win $1250",
@@ -6219,7 +6496,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Parmi Night",
@@ -6244,7 +6522,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Land%20%26%20Sea%20Brewery%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Land%20%26%20Sea%20Brewery%2C%20Sunshine%20Coast",
+      "venue_name": "Land & Sea Brewery"
     },
     {
       "title": "Kids Eat Free",
@@ -6268,7 +6547,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Hump Day – Triple Points",
@@ -6291,7 +6571,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Thursday Lunch Meat Raffles",
@@ -6315,7 +6596,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "Monthly Birthday Draw",
@@ -6339,7 +6621,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Golden Riches – Win $1250",
@@ -6362,7 +6645,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Meat Raffle",
@@ -6388,7 +6672,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Land%20%26%20Sea%20Brewery%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Land%20%26%20Sea%20Brewery%2C%20Sunshine%20Coast",
+      "venue_name": "Land & Sea Brewery"
     },
     {
       "title": "Kids Eat Free",
@@ -6412,7 +6697,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Golden Nuggets – Win Share $2000",
@@ -6435,7 +6721,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Club Raffles",
@@ -6459,7 +6746,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Fishing Club Raffles",
@@ -6483,7 +6771,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Friday Night Meat Raffles",
@@ -6507,7 +6796,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "Golden Riches – $1250 Every Week",
@@ -6530,7 +6820,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Lucky Fortune – Win Share $4000",
@@ -6553,7 +6844,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Member Cash Draw",
@@ -6576,7 +6868,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "QF4 Caloundra Coast Guard Raffles",
@@ -6601,7 +6894,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Cash Stacks – Share in $4K CASH",
@@ -6624,7 +6918,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Super Saturday",
@@ -6647,7 +6942,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Club Raffles",
@@ -6671,7 +6967,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Saturday All Day Dining",
@@ -6695,7 +6992,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Outrigger Raffles",
@@ -6719,7 +7017,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Sunday Arvo Sessions",
@@ -6743,7 +7042,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "WALK FOR CHANGE CHARITY RAFFLE ❤️",
@@ -6768,7 +7068,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Locals%20in%20the%20Loop%2C%20Sunshine%20Coast",
+      "venue_name": null
     },
     {
       "title": "Super Sunday $10K Draw",
@@ -6791,7 +7092,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Blossom Bonanza Sunday Members Draw",
@@ -6815,7 +7117,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Sunday All Day Dining",
@@ -6839,7 +7142,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "The Sunday Roast",
@@ -6863,7 +7167,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Dragon Jackpots – Win Share $1500",
@@ -6886,7 +7191,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Ladies Social Golf Club Raffles",
@@ -6910,7 +7216,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Double Point Mondays",
@@ -6933,7 +7240,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Golden Riches – Win $1250",
@@ -6956,7 +7264,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "The Butchers Block – Steak Night",
@@ -6980,7 +7289,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Treasure Chest – Win $250",
@@ -7003,7 +7313,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Monthly Birthday Bonus Draw",
@@ -7026,7 +7337,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "PBC Members Draw",
@@ -7050,7 +7362,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Golden Riches – Win $1250",
@@ -7073,7 +7386,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "PARMIGEDDON – PARMI NIGHT",
@@ -7097,7 +7411,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Golf Club Raffles",
@@ -7121,7 +7436,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Jag the Joker Wednesdays",
@@ -7145,7 +7461,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "Wednesday Club Raffles",
@@ -7169,7 +7486,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Golden Riches – Win $1250",
@@ -7192,7 +7510,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Hump Day – Triple Points",
@@ -7215,7 +7534,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Thursday Lunch Meat Raffles",
@@ -7239,7 +7559,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "Golden Riches – Win $1250",
@@ -7262,7 +7583,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Golden Nuggets – Win Share $2000",
@@ -7285,7 +7607,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Club Raffles",
@@ -7309,7 +7632,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Fishing Club Raffles",
@@ -7333,7 +7657,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Friday Night Meat Raffles",
@@ -7357,7 +7682,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Kawana%2C%20Club%20Kawana%20476%20Nicklin%20Way%2C%20Wurtulla%2C%20Queensland%2C%204575%2C%20Sunshine%20Coast",
+      "venue_name": "Club Kawana"
     },
     {
       "title": "Golden Riches – $1250 Every Week",
@@ -7380,7 +7706,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Lucky Fortune – Win Share $4000",
@@ -7403,7 +7730,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Member Cash Draw",
@@ -7426,7 +7754,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "QF4 Caloundra Coast Guard Raffles",
@@ -7450,7 +7779,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Cash Stacks – Share in $4K CASH",
@@ -7473,7 +7803,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Caloundra%20RSL%2C%20Caloundra%2C%20Queensland%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Super Saturday",
@@ -7497,7 +7828,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Club Raffles",
@@ -7521,7 +7853,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Saturday All Day Dining",
@@ -7545,7 +7878,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20RSL%20Services%20Club%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra RSL Services Club"
     },
     {
       "title": "Outrigger Raffles",
@@ -7569,7 +7903,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     },
     {
       "title": "Blossom Bonanza Sunday Members Draw",
@@ -7593,7 +7928,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Caloundra%20Power%20Boat%20Club%2C%202%20Lamerough%20Parade%2C%20Golden%20Beach%2C%20QLD%2C%204551%2C%20Sunshine%20Coast",
+      "venue_name": "Caloundra Power Boat Club"
     }
   ],
   "ranked_at": "2026-09-21",

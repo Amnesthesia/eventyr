@@ -17,7 +17,11 @@ export interface Event {
 	intellectual?: boolean;
 	hands_on?: boolean;
 	creative?: boolean;
+	/** Source tier (aggregator/institution/independent), not a place. */
 	venue?: string;
+	/** Canonical venue, from src/venues.ts. Null when the location names no
+	 * venue ("Multiple locations", a bare suburb). */
+	venue_name?: string | null;
 }
 
 export type VibeKey = "intellectual" | "creative" | "hands_on" | "social";

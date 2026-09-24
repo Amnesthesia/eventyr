@@ -1586,6 +1586,71 @@ article.card.has-image > * {
 	margin-top: 2px;
 }
 
+/* The location text doubles as a venue filter. Two classes deep so pico's
+   button styling (padding, fill, full width) loses; it should read as the
+   same muted text it replaced, with a hover underline as the only hint. */
+.meta-row .venue-btn {
+	all: unset;
+	cursor: pointer;
+	color: inherit;
+	font: inherit;
+	text-align: left;
+}
+
+.meta-row .venue-btn:hover,
+.meta-row .venue-btn:focus-visible {
+	text-decoration: underline;
+}
+
+.meta-row .venue-btn:focus-visible {
+	outline: 1px solid var(--fg);
+}
+
+.meta-row .venue-btn[aria-pressed="true"] {
+	color: var(--fg);
+	font-weight: 600;
+}
+
+.meta-row .maps-link {
+	display: inline-flex;
+	color: var(--muted);
+	flex-shrink: 0;
+}
+
+.meta-row .maps-link:hover,
+.meta-row .maps-link:focus-visible {
+	color: var(--fg);
+}
+
+.low-score-note {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--s1);
+	margin: 1rem 0 0;
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	color: var(--muted);
+}
+
+/* Same shape as .tag-typeahead, for the same pico-specificity reason. */
+.frow-body .venue-select {
+	width: 22rem;
+	max-width: 100%;
+	height: 26px;
+	margin: 0;
+	padding: 0 0.5rem;
+	font-family: var(--mono);
+	font-size: var(--t-2xs);
+	/* Room for pico's arrow — long venue names ran under it. */
+	padding-right: 1.75rem;
+	border: 1px solid var(--chip-border);
+	border-radius: 0;
+	background-color: var(--chip-bg);
+	color: var(--fg);
+	box-shadow: none;
+}
+
 /* -- Buy me a Coffee */
 #bmc-wbtn {
 	width: 32px !important;

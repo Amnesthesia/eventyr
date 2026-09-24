@@ -310,6 +310,118 @@ export function stripUselessTags(
 }
 
 /**
+ * Broader tag ⇐ the tags that always imply it.
+ *
+ * The annotator tags each source separately and is inconsistent about adding
+ * the general tag alongside the specific one: 15 of 21 "standup" events in one
+ * Brisbane week had no "comedy", so filtering by comedy missed most stand-up.
+ * The prompt already asks for both; this makes it true in code rather than
+ * hoping.
+ *
+ * Each pattern is tested against a whole tag. Patterns, not a word list,
+ * because the AI-search path emits free tags ("stand-up", "brewery tour",
+ * "cinema") and mapping those onto the vocabulary is what makes their events
+ * reachable from the filter chips at all. Ambiguous words are anchored:
+ * an unanchored /rock/ would put "rock climbing" under music, /pop/ would catch
+ * "pop-up market", /folk/ "folk art" — shared.test.ts pins those.
+ *
+ * Built from every tag in the three cities' data (1824 events, 241 distinct
+ * tags, 2026-09-24). Only implications that hold for EVERY event belong here,
+ * however often the data pairs them — left out on purpose, with the share of
+ * events that already carried both: exhibition ⇒ art (98%: a dinosaur
+ * exhibition is not art), craft ⇒ art (78%), design ⇒ art (84%), kids ⇔
+ * family (80%: drop-off classes), dj ⇒ electronic (81%), film ⇒ performance
+ * (52%, a model habit rather than a fact), raffle ⇒ community (a pub promo).
+ *
+ * Keys must be in TAGS (shared.test.ts checks). Chains resolve transitively
+ * (orchestra ⇒ classical ⇒ music).
+ */
+export const TAG_MATCHERS: Readonly<Record<string, readonly RegExp[]>> = {
+	// music
+	music: [
+		// Unanchored: every tag containing "music" is about music ("live-music",
+		// "musical theatre" — both missed by an exact list).
+		/music/,
+		/acoustic/,
+		/^dj$/,
+		/^(singing|classical)$/,
+		/^(jazz|rock|indie|punk|metal|pop|hip hop|electronic|folk|blues|country)$/,
+		/^(piano|reggae|dub)$/,
+	],
+	"live music": [/^(concert|band|tribute)$/, /^orchestra$/],
+	concert: [/^candlelight$/],
+	classical: [/^(orchestra|opera|vivaldi)$/],
+	singing: [/^(choir|opera|karaoke|singalong)$/],
+	// stage and screen
+	comedy: [/\bstand-?up\b/, /\bimprov\b/],
+	theatre: [/^musical$/, /\bimprov\b/, /^acting$/],
+	musical: [/^broadway$/],
+	cabaret: [/^burlesque$/],
+	performance: [
+		// Unanchored like /music/: "musical theatre", "comedy night".
+		/theatre/,
+		/comedy/,
+		/^(cabaret|circus|drag|open mic)$/,
+		/^(magic|illusion)$/,
+	],
+	film: [/^cinema$/],
+	// visual arts and making
+	art: [
+		/^(gallery|painting|drawing|sculpture|photography|printmaking|portrait)$/,
+		/^(ceramics|mosaic)$/,
+		/^contemporary art$/,
+	],
+	craft: [/^(ceramics|mosaic|textiles|resin)$/],
+	literature: [/^(poetry|books|writing)$/],
+	// body
+	fitness: [/^(yoga|pilates|running)$/],
+	wellness: [/^(yoga|pilates|meditation|mindfulness)$/],
+	sport: [/^(surfing|golf|bowls|cheerleading|orienteering|climbing)$/],
+	walking: [/^hiking$/],
+	// on the water: all outdoors, none necessarily a sport
+	outdoor: [
+		/^(walking|surfing|orienteering|rainforest)$/,
+		/^(sailing|kayak|snorkel|snorkeling|boating|fishing|water)$/,
+	],
+	// food and drink
+	drinks: [/^(beer|wine|cocktails|coffee|gin|bar)$/],
+	beer: [/\bbrew(ery|eries|ing)\b/],
+	food: [/^(dining|cooking|dessert|cake)$/],
+	// world
+	nature: [/^(wildlife|gardening|gardens|botanic|rainforest|ecology|hiking)$/],
+	wildlife: [/^(whales|koala|turtles)$/],
+	environment: [/^ecology$/],
+	technology: [/^(engineering|tech|vr)$/],
+	// format
+	games: [/^(trivia|bingo|gaming|scavenger hunt)$/],
+	gaming: [/^arcade$/],
+	shopping: [/^(market|retail|gifts)$/],
+	tour: [/^sightseeing$/],
+	community: [/^charity$/],
+	// who it is for
+	students: [/^student$/],
+};
+
+const MATCHER_ENTRIES = Object.entries(TAG_MATCHERS);
+
+/** Adds every tag the event's tags imply, keeping the original order first. */
+export function expandImpliedTags(tags: string[]): string[] {
+	const out = [...tags];
+	const seen = new Set(tags);
+	// out grows while it is walked, so an added tag's own implications are
+	// picked up too (orchestra ⇒ classical ⇒ music).
+	for (let i = 0; i < out.length; i++) {
+		for (const [parent, patterns] of MATCHER_ENTRIES) {
+			if (!seen.has(parent) && patterns.some((re) => re.test(out[i]))) {
+				seen.add(parent);
+				out.push(parent);
+			}
+		}
+	}
+	return out;
+}
+
+/**
  * Collapses tag variants that mean the same thing onto one spelling.
  *
  * The annotator is a language model run once per source, so the same idea

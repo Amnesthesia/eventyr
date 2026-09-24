@@ -6,6 +6,7 @@ import {
 	eventHash,
 	eventPath,
 	eventSlug,
+	expandImpliedTags,
 	isCurrencyCode,
 	isTopPick,
 	LOW_SCORE_THRESHOLD,
@@ -14,6 +15,8 @@ import {
 	slugify,
 	stripForDisplay,
 	stripUselessTags,
+	TAG_MATCHERS,
+	TAG_SET,
 	TAGS,
 } from "./shared.ts";
 
@@ -474,5 +477,35 @@ test("no tag restates a vibe, but broad subjects survive", () => {
 		assert.deepEqual(stripUselessTags([keep], "Brisbane", "Some Venue"), [
 			keep,
 		]);
+	}
+});
+
+test("implied tags: specific adds broader, transitively, within TAGS", () => {
+	assert.deepEqual(expandImpliedTags(["standup"]), [
+		"standup",
+		"comedy",
+		"performance",
+	]);
+	assert.deepEqual(expandImpliedTags(["orchestra"]), [
+		"orchestra",
+		"live music",
+		"classical",
+		"music",
+	]);
+	// Already present: nothing duplicated, order kept.
+	assert.deepEqual(expandImpliedTags(["comedy", "standup"]), [
+		"comedy",
+		"standup",
+		"performance",
+	]);
+	// Free search-path variants reach the vocabulary.
+	assert.ok(expandImpliedTags(["stand-up"]).includes("comedy"));
+	assert.ok(expandImpliedTags(["brewery tour"]).includes("beer"));
+	// Ambiguous words stay anchored.
+	assert.deepEqual(expandImpliedTags(["rock climbing"]), ["rock climbing"]);
+	assert.deepEqual(expandImpliedTags(["pop-up market"]), ["pop-up market"]);
+	assert.deepEqual(expandImpliedTags(["folk art"]), ["folk art"]);
+	for (const parent of Object.keys(TAG_MATCHERS)) {
+		assert.ok(TAG_SET.has(parent), `${parent} is in TAGS`);
 	}
 });

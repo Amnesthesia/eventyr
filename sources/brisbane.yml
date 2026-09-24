@@ -962,14 +962,18 @@ sources:
         - maap.org.au
       note: Suggested by discover-sources 2026-09-02; not yet verified.
     - name: House Conspiracy
-      method: llm
+      id: houseconspiracy
+      method: scraper
       domains:
         - houseconspiracy.org
       homepage: https://houseconspiracy.org/
       listingUrls:
-        - https://houseconspiracy.org/events
+        - https://calendar.google.com/calendar/ical/houseconspiracy.org_iij9vfvk8a9nvmutov6t68at14%40group.calendar.google.com/public/basic.ics
+      strategy: html
       note: >-
-        Probed 2026-09-24: /events and /calendar yield nothing parseable. The real listing is two public Google Calendars embedded on /calendar (ICS, ~600 VEVENTs) — needs iCal support in feeds.ts, which is deliberately absent.
+        The "HC Public Calendar" Google Calendar embedded on /calendar, read as iCal (feeds.ts
+        "ical"). The page's second embedded calendar ("MSF Public Calendar") is a resident group's
+        meetings and rehearsals, deliberately left out. Verified 2026-09-24: 299 events, 13 upcoming.
     - name: MacArthur Museum Brisbane
       method: llm
       domains:
@@ -1478,7 +1482,11 @@ sources:
         - https://www.palacecinemas.com.au/cinemas/palace-barracks
       strategy: html
       schedule: weekly
-      note: 'Verified by probe-sources 2026-09-24: 31 dated event(s) via html.'
+      note: >-
+        Palace's __NEXT_DATA__ session list (feeds.ts "palace"): specials only — sessions Palace
+        tags SPECIAL EVENT/Sneak/MOVIE CLUB/RETRO, or a new film with at most 2 sessions. The
+        page's upcomingEvents only lend titles; their date is the promotion start. Verified
+        2026-09-24: James St 52 upcoming, Barracks 127.
     - name: New Farm Cinemas (Five Star)
       id: fivestar-new-farm
       method: scraper
@@ -2407,14 +2415,20 @@ sources:
         - https://osbournehotel.com.au/whats-on/
       strategy: html
     - name: Can You Keep A Secret / It's Still A Secret
-      method: llm
+      id: canyoukeepasecret
+      method: scraper
       domains:
         - canyoukeepasecret.com.au
       homepage: https://www.canyoukeepasecret.com.au/
       listingUrls:
-        - https://www.canyoukeepasecret.com.au/events
+        - https://www.canyoukeepasecret.com.au/events?format=json
+        - https://events.humanitix.com/host/can-you-keep-a-secret
+      strategy: html
       note: >-
-        Probed 2026-09-24: Squarespace events collection has 0 upcoming; gigs are sold one by one on Humanitix, so it stays on AI search.
+        Both places the venue publishes gigs: its Squarespace events collection (feeds.ts
+        "squarespace") and its Humanitix host page (JSON-LD ItemList). Checked 2026-09-24: neither
+        has anything upcoming (last gigs 18 Jul and 11 Apr), so an empty scrape here is a real
+        answer and the barren fallback still hands it to AI search.
     - name: Chardons Corner Hotel
       method: llm
       domains:

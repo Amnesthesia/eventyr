@@ -27,7 +27,9 @@ export type SourceStrategy = "jsonld" | "html" | "render";
 export type ExtractionStrategy = SourceStrategy | "api" | "feed";
 
 export interface VenueRecord {
-	name: string;
+	/** Null when the source has no single venue (an aggregator, a council
+	 * calendar) — its events then carry only the venue the page names. */
+	name: string | null;
 	address: string | null;
 	suburb: string | null;
 }

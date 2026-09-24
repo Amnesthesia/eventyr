@@ -1,0 +1,33 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "institutions",
+  "source_id": "houseconspiracy",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Claudia Cloud",
+      "datetime": "Sat 26 Sep, 12:00 PM",
+      "datetime_iso": "2026-09-26T12:00:00",
+      "datetime_end_iso": "2026-09-26T21:00:00",
+      "location": "House Conspiracy",
+      "link": "https://houseconspiracy.org/",
+      "cost": "See link",
+      "source": "House Conspiracy",
+      "description": "",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "performance"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    }
+  ]
+}

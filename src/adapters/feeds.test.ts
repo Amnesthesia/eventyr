@@ -5,6 +5,7 @@ import {
 	apiRequestFor,
 	feedUrlsFromHtml,
 	parseFeed,
+	parseIcal,
 	wpJsonRoutesToFeedUrls,
 } from "./feeds.ts";
 
@@ -225,6 +226,18 @@ test("Trumba calendar JSON is parsed from customFields", () => {
 	assert.equal(e.venueName, "Riverstage, Brisbane City");
 	assert.equal(e.price, "See website for ticket prices");
 	assert.equal(e.category, "Concerts");
+	// Trumba's hosted event page, not the council's embed permalink, which
+	// only lands on its event search.
+	assert.equal(
+		e.url,
+		"https://www.trumba.com/calendars/LIVE?eventid=208676347",
+	);
+	// Off Trumba's host there is no calendar name, so the permalink stays.
+	assert.equal(
+		parseFeed(body, "https://mirror.example/calendars/LIVE.json")?.events[0]
+			?.url,
+		"https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D208676347",
+	);
 });
 
 test("an empty Trumba array only counts as a feed when the URL says so", () => {
@@ -267,7 +280,10 @@ test("Trumba's Atom/GData calendar is parsed, including the duplicate-tag catego
 	assert.equal(e.endRaw, "2026-09-20T22:00:00Z");
 	assert.equal(e.venueName, "Moora Park, Shorncliffe");
 	assert.equal(e.address, "Moora Park, 65 Park Parade, Shorncliffe");
-	assert.equal(e.url, "https://x.com/e/204260023");
+	assert.equal(
+		e.url,
+		"https://www.trumba.com/calendars/brisbane-events-rss?eventid=204260023",
+	);
 	assert.equal(e.price, "$6");
 	// The numeric-typed duplicate must not win over the string one.
 	assert.equal(e.category, "Fitness & well-being");
@@ -458,4 +474,332 @@ test("Reading Cinemas keeps only one-off films, with Angelika links", () => {
 			.length,
 		0,
 	);
+});
+
+// Trimmed from palacecinemas.com.au/cinemas/palace-james-st. The occasion's
+// startDateUTC (20 Aug) is the promotion start — reading it made every Palace
+// event look past — and session dates carry a false "Z": 18:15Z renders on
+// the page as "6:15 pm".
+const palacePage = (pageProps: unknown) =>
+	`<html><script id="__NEXT_DATA__" type="application/json">${JSON.stringify({ props: { pageProps } })}</script></html>`;
+const PALACE = palacePage({
+	cinema: {
+		upcomingEvents: [
+			{
+				title:
+					"ST. ALi Italian Film Festival Opening Night Premiere: Holy Cannoli",
+				startDateUTC: "2026-08-20T12:00:00.000Z",
+				caption: "With prosecco.",
+			},
+			{ title: "Fine Wine Preview: Sense and Sensibility", caption: "Wine." },
+			{ title: "Matinee Preview: Sense and Sensibility", caption: "Tea." },
+		],
+	},
+	sessions: [
+		{
+			slug: "iff26-holy-cannoli",
+			title: "IFF26 Holy Cannoli",
+			releaseDateUtc: "2026-09-16T00:00:00.000Z",
+			sessions: [
+				{
+					sessionId: "1",
+					date: "2026-09-24T18:15:00.000Z",
+					isSpecialEvent: true,
+					displayAttributeText: "SPECIAL EVENT",
+				},
+				{
+					sessionId: "2",
+					date: "2026-09-27T12:40:00.000Z",
+					isSpecialEvent: false,
+					displayAttributeText: null,
+				},
+				{
+					sessionId: "3",
+					date: "2026-09-29T15:40:00.000Z",
+					isSpecialEvent: false,
+					displayAttributeText: null,
+				},
+			],
+		},
+		{
+			slug: "sense-and-sensibility",
+			title: "Sense and Sensibility",
+			releaseDateUtc: "2026-10-15T00:00:00.000Z",
+			sessions: [
+				{
+					sessionId: "4",
+					date: "2026-10-09T18:30:00.000Z",
+					displayAttributeText: "Sneak",
+				},
+				{
+					sessionId: "5",
+					date: "2026-10-11T11:00:00.000Z",
+					displayAttributeText: "Sneak",
+				},
+			],
+		},
+		{
+			slug: "resident-evil",
+			title: "Resident Evil",
+			releaseDateUtc: "2026-09-17T00:00:00.000Z",
+			sessions: [
+				{
+					sessionId: "6",
+					date: "2026-09-24T13:00:00.000Z",
+					displayAttributeText: "RECLINER",
+				},
+				{
+					sessionId: "7",
+					date: "2026-09-24T15:00:00.000Z",
+					displayAttributeText: null,
+				},
+				{
+					sessionId: "8",
+					date: "2026-09-25T15:00:00.000Z",
+					displayAttributeText: null,
+				},
+			],
+		},
+	],
+});
+
+test("Palace dates come from sessions, not the occasion's promotion date", () => {
+	const url = "https://www.palacecinemas.com.au/cinemas/palace-james-st";
+	const r = parseFeed(PALACE, url);
+	assert.equal(r?.format, "palace");
+	// Ordinary runs and recliner sessions are skipped; tagged sessions kept.
+	assert.deepEqual(
+		r?.events.map((e) => e.sourceEventId),
+		["1", "4", "5"],
+	);
+	const [cannoli, sense] = r?.events ?? [];
+	assert.equal(
+		cannoli.title,
+		"ST. ALi Italian Film Festival Opening Night Premiere: Holy Cannoli",
+	);
+	assert.equal(
+		iso(cannoli as Parameters<typeof iso>[0]),
+		"2026-09-24T18:15:00+10:00",
+	);
+	assert.match(
+		cannoli.description ?? "",
+		/special event screening\. With prosecco\./,
+	);
+	assert.equal(
+		cannoli.url,
+		"https://www.palacecinemas.com.au/movies/iff26-holy-cannoli",
+	);
+	// Two occasions name this film and nothing says which session is which.
+	assert.equal(sense.title, "Sense and Sensibility");
+	// The same page shape on another host is not claimed.
+	assert.equal(parseFeed(PALACE, "https://example.com/cinemas/x"), null);
+});
+
+const ics = (...lines: string[]) =>
+	["BEGIN:VCALENDAR", "VERSION:2.0", ...lines, "END:VCALENDAR"].join("\r\n");
+
+test("iCal: exact instants, all-day dates, recurrences and cancellations", () => {
+	const body = ics(
+		"BEGIN:VEVENT",
+		"UID:one",
+		"DTSTART:20260926T020000Z",
+		"DTEND:20260926T110000Z",
+		"SUMMARY:Claudia Cloud",
+		"LOCATION:House Conspiracy\\, 36 Mary St",
+		"URL:https://houseconspiracy.org/claudia",
+		"END:VEVENT",
+		"BEGIN:VEVENT",
+		"UID:allday",
+		"DTSTART;VALUE=DATE:20260930",
+		"SUMMARY:Open studio",
+		"END:VEVENT",
+		"BEGIN:VEVENT",
+		"UID:gone",
+		"STATUS:CANCELLED",
+		"DTSTART:20260927T020000Z",
+		"SUMMARY:Cancelled",
+		"END:VEVENT",
+		"BEGIN:VEVENT",
+		"UID:weekly",
+		"DTSTART:20210101T090000Z",
+		"RRULE:FREQ=WEEKLY",
+		"EXDATE:20260925T090000Z",
+		"SUMMARY:Life drawing",
+		"END:VEVENT",
+		"BEGIN:VEVENT",
+		"UID:weekly",
+		"RECURRENCE-ID:20261002T090000Z",
+		"DTSTART:20261002T100000Z",
+		"SUMMARY:Life drawing (late)",
+		"END:VEVENT",
+	);
+	const r = parseIcal(body, new Date("2026-09-20T00:00:00Z"));
+	assert.equal(r?.format, "ical");
+	const byId = new Map(r?.events.map((e) => [e.sourceEventId, e]));
+	const one = byId.get("one");
+	assert.equal(one?.startRaw, "2026-09-26T02:00:00.000Z");
+	assert.equal(
+		iso(one as Parameters<typeof iso>[0]),
+		"2026-09-26T12:00:00+10:00",
+	);
+	assert.equal(one?.address, "House Conspiracy, 36 Mary St");
+	assert.equal(one?.url, "https://houseconspiracy.org/claudia");
+	assert.equal(byId.get("allday")?.startRaw, "2026-09-30");
+	assert.equal(byId.has("gone"), false);
+	const weekly = r?.events
+		.filter((e) => e.sourceEventId?.startsWith("weekly@"))
+		.map((e) => `${e.title} ${e.startRaw}`);
+	// Expanded from 2021 to the window only; the EXDATE is honoured and the
+	// overridden occurrence carries its own time and title. Fridays 2 Oct–13 Nov.
+	assert.equal(weekly?.[0], "Life drawing (late) 2026-10-02T10:00:00.000Z");
+	assert.equal(
+		weekly?.includes("Life drawing 2026-09-25T09:00:00.000Z"),
+		false,
+	);
+	assert.equal(weekly?.length, 7);
+});
+
+test("a body that is not a VCALENDAR is not claimed as iCal", () => {
+	assert.equal(parseIcal("<html>BEGIN:VCALENDAR</html>"), null);
+});
+
+test("Trumba links prefer the organiser's page, then the booking page", () => {
+	const ev = (extra: Record<string, unknown>) => ({
+		eventID: 208992655,
+		title: "Brisbane Illustration Fair",
+		startDateTime: "2026-10-03T10:00:00",
+		startTimeZoneOffset: "+1000",
+		permaLinkUrl:
+			"https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D208992655",
+		...extra,
+	});
+	const url = "https://www.trumba.com/calendars/brisbane-city-council.json";
+	const links = parseFeed(
+		JSON.stringify([
+			ev({
+				webLink:
+					'<a href="https://brisbaneillustrationfair.square.site/" target="_blank" rel="noopener">brisbaneillustrationfair.square.site</a>',
+				customFields: [
+					{
+						label: "Bookings",
+						value: '<a href="https://www.eventbrite.com.au/e/1">Eventbrite</a>',
+					},
+				],
+			}),
+			ev({
+				customFields: [
+					{
+						label: "Bookings",
+						value:
+							'Email <a href="mailto:x@y.z">us</a> or book via <a href="https://bookwhen.com/x?a=1&amp;b=2">Bookwhen</a>.',
+					},
+				],
+			}),
+			ev({
+				customFields: [{ label: "Bookings", value: "No bookings required" }],
+			}),
+			ev({
+				description:
+					'<p>At <a href="https://maps.google.com/?q=x">the hall</a>. For more information, see <a href="https://nscf.org.au/gala">NSCF</a>.</p>',
+				customFields: [{ label: "Bookings", value: "No bookings required" }],
+			}),
+			ev({
+				description:
+					'See <a href="https://nscf.org.au/gala">NSCF</a>. Directions: <a href="https://goo.gl/maps/abc">map</a>',
+				customFields: [
+					{
+						label: "Bookings",
+						value: '<a href="https://www.eventbrite.com.au/e/2">Eventbrite</a>',
+					},
+				],
+			}),
+			ev({
+				description: 'Directions: <a href="https://goo.gl/maps/abc">map</a>',
+			}),
+			ev({
+				description: 'Details at <a href="https://nscf.org.au/gala">NSCF</a>.',
+				customFields: [
+					{
+						label: "Bookings",
+						value:
+							'Book at <a href="https://events.brisbane.qld.gov.au/">Council</a>',
+					},
+				],
+			}),
+		]),
+		url,
+	)?.events.map((e) => e.url);
+	assert.deepEqual(links, [
+		"https://brisbaneillustrationfair.square.site/",
+		// mailto: skipped, entities decoded.
+		"https://bookwhen.com/x?a=1&b=2",
+		"https://www.trumba.com/calendars/brisbane-city-council?eventid=208992655",
+		// No webLink or booking link: the description's, skipping Google Maps.
+		"https://nscf.org.au/gala",
+		// A booking link beats the description's.
+		"https://www.eventbrite.com.au/e/2",
+		// Only a map link: falls through to Trumba's page.
+		"https://www.trumba.com/calendars/brisbane-city-council?eventid=208992655",
+		// The council booking portal's front page is not the event.
+		"https://nscf.org.au/gala",
+	]);
+});
+
+test("Trumba Atom takes the booking link from gc:bookings", () => {
+	const body = `<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns:gd="http://schemas.google.com/g/2005" xmlns:x-trumba="http://schemas.trumba.com/atom/x-trumba" xmlns="http://www.w3.org/2005/Atom">
+	<entry>
+		<id>http://uid.trumba.com/event/1</id>
+		<title type="text">Kayak tour</title>
+		<gd:when startTime="2026-09-26T21:00:00Z" />
+		<gc:bookings type="string">Book via &lt;a href="https://bookeo.com/kayak"&gt;Bookeo&lt;/a&gt;</gc:bookings>
+	</entry>
+</feed>`;
+	const r = parseFeed(
+		body,
+		"https://www.trumba.com/calendars/brisbane-events-rss.xml?filterview=parks",
+	);
+	assert.equal(r?.events[0]?.url, "https://bookeo.com/kayak");
+});
+
+// Trimmed from data.brisbane.qld.gov.au's riverstage-events dataset.
+test("Opendatasoft records parse deterministically, with the ticketing link", () => {
+	const body = JSON.stringify({
+		nhits: 1,
+		parameters: { dataset: "riverstage-events" },
+		records: [
+			{
+				recordid: "abc",
+				fields: {
+					subject: "Ashnikko - Smoochies Tour",
+					start_datetime: "2026-09-25T18:00:00+10:00",
+					end_datetime: "2026-09-25T22:00:00+10:00",
+					venue: "Riverstage, Brisbane City",
+					venueaddress: "Riverstage, Gardens Point Road, Brisbane City",
+					cost: "See website for ticket prices",
+					primaryeventtype: "Music",
+					web_link:
+						"https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D191635791",
+					bookings:
+						'Bookings are required via <a href="https://www.ticketmaster.com.au/ashnikko/event/1300632FD4695702" target="_blank">Ticketmaster</a>.',
+				},
+			},
+		],
+	});
+	const r = parseFeed(
+		body,
+		"https://data.brisbane.qld.gov.au/api/records/1.0/search/?dataset=riverstage-events",
+	);
+	assert.equal(r?.format, "opendatasoft");
+	const e = r?.events[0];
+	assert.equal(e?.title, "Ashnikko - Smoochies Tour");
+	assert.equal(
+		e?.url,
+		"https://www.ticketmaster.com.au/ashnikko/event/1300632FD4695702",
+	);
+	assert.equal(
+		iso(e as Parameters<typeof iso>[0]),
+		"2026-09-25T18:00:00+10:00",
+	);
+	assert.equal(e?.venueName, "Riverstage, Brisbane City");
 });

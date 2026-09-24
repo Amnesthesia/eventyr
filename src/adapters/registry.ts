@@ -38,6 +38,24 @@ function deriveId(entry: SourceEntry): string {
 	return slugify(bare || host);
 }
 
+/**
+ * The venue a source's events default to when the page names none.
+ *
+ * Falling back to the source's own name is right for a venue's own site and
+ * wrong for anything listing many venues: every WeekendNotes event whose page
+ * named no venue went out with location "WeekendNotes Brisbane" (21 events),
+ * mapped to a Maps search for a website. So an aggregator never falls back,
+ * and neither does an explicit `venue.name: null` — that is the YAML saying
+ * "no single venue" (the council calendars).
+ */
+export function venueNameFor(
+	entry: SourceEntry,
+	tier: SourceDefinition["sourceTier"],
+): string | null {
+	if (entry.venue && "name" in entry.venue) return entry.venue.name ?? null;
+	return tier === "aggregators" ? null : entry.name;
+}
+
 function resolve(
 	entry: SourceEntry,
 	tier: SourceDefinition["sourceTier"],
@@ -55,7 +73,7 @@ function resolve(
 		listingUrls: entry.listingUrls,
 		domains: entry.domains ?? [],
 		venue: {
-			name: entry.venue?.name ?? entry.name,
+			name: venueNameFor(entry, tier),
 			address: entry.venue?.address ?? null,
 			suburb: entry.venue?.suburb ?? null,
 		},

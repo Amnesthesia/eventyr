@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T20:24:36.892Z",
+  "updated_at": "2026-09-24T02:25:07.331Z",
   "stages": {
     "collect/extract": {
       "calls": 53,
@@ -104,6 +104,19 @@
       "failures": 0,
       "retries": 0,
       "estimatedUsd": 0.0191382
+    },
+    "venues": {
+      "calls": 3,
+      "promptTokens": 3437,
+      "outputTokens": 2349,
+      "cachedTokens": 0,
+      "cacheWriteTokens": 0,
+      "thoughtTokens": 0,
+      "grounded": 0,
+      "searchQueries": 0,
+      "failures": 0,
+      "retries": 0,
+      "estimatedUsd": 0.0069036
     }
   }
 }

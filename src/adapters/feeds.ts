@@ -22,12 +22,14 @@
 //
 // Dates are never computed here. Every format's date is copied out verbatim
 // as `startRaw` and resolved by dates.ts like any other extraction, so one
-// parser owns every date in the pipeline. The only conversion is Squarespace's
-// epoch-milliseconds, which is a machine-exact instant reformatted (not
-// inferred) into an ISO string chrono reads back identically — verified.
+// parser owns every date in the pipeline. The only conversions are
+// Squarespace's epoch-milliseconds and iCal's zoned times, machine-exact
+// instants reformatted (not inferred) into ISO strings chrono reads back
+// identically — verified — plus iCal RRULE expansion, done by ical.js.
 
 import { XMLParser } from "fast-xml-parser";
 import he from "he";
+import ICAL from "ical.js";
 import type { RawCandidateFields } from "./types.ts";
 
 export type FeedFormat =
@@ -35,9 +37,12 @@ export type FeedFormat =
 	| "modern-events-calendar"
 	| "squarespace"
 	| "trumba-json"
+	| "opendatasoft"
 	| "trumba-atom"
 	| "fivestar"
-	| "reading-cinemas";
+	| "reading-cinemas"
+	| "palace"
+	| "ical";
 
 export interface FeedResult {
 	format: FeedFormat;
@@ -87,6 +92,38 @@ function plain(value: unknown): string | null {
 					.replace(/\s+/g, " "),
 			) ?? null)
 		: null;
+}
+
+/**
+ * The first http(s) link in an HTML fragment. Council calendars keep the
+ * event's real page — the organiser's site, the Eventbrite/Ticketmaster
+ * listing — as an <a> inside a text field ("Bookings are required via <a
+ * href=…>Ticketmaster</a>"), not as a URL field. ponytail: a regex over a
+ * short, already-isolated fragment, not an HTML parser; mailto:/tel: and
+ * anything unparseable fall through to the next candidate via safeUrl.
+ * Google links (Maps directions, goo.gl shorteners) are skipped: descriptions
+ * link the venue's map as often as the event, and a map is never the event.
+ * So is the bare root of a council site: 48 Bookings fields pointed at
+ * events.brisbane.qld.gov.au/, the booking portal's front page. An
+ * organiser's own root (brisbaneillustrationfair.square.site/) is kept — for
+ * a one-event site that is the event page.
+ */
+const NOT_AN_EVENT_PAGE = /(?:^|\.)(?:google\.[a-z.]+|goo\.gl|g\.page|g\.co)$/i;
+
+const COUNCIL_HOST = /(?:^|\.)brisbane\.qld\.gov\.au$/i;
+
+function firstHref(html: unknown): string | null {
+	const s = str(html);
+	if (!s) return null;
+	for (const m of s.matchAll(/<a\b[^>]*?\bhref\s*=\s*(["'])(.*?)\1/gi)) {
+		const u = safeUrl(he.decode(m[2]).trim());
+		if (!u) continue;
+		const { hostname, pathname, search } = new URL(u);
+		if (NOT_AN_EVENT_PAGE.test(hostname)) continue;
+		if (COUNCIL_HOST.test(hostname) && pathname === "/" && !search) continue;
+		return u;
+	}
+	return null;
 }
 
 const empty: RawCandidateFields = {
@@ -260,7 +297,7 @@ interface TrumbaEvent {
 	customFields?: unknown;
 }
 
-function trumbaCustomField(fields: unknown, label: string): string | null {
+function trumbaCustomFieldRaw(fields: unknown, label: string): unknown {
 	if (!Array.isArray(fields)) return null;
 	const match = fields.find(
 		(f) =>
@@ -268,7 +305,11 @@ function trumbaCustomField(fields: unknown, label: string): string | null {
 			typeof f === "object" &&
 			str((f as TrumbaCustomField).label) === label,
 	) as TrumbaCustomField | undefined;
-	return match ? plain(match.value) : null;
+	return match?.value ?? null;
+}
+
+function trumbaCustomField(fields: unknown, label: string): string | null {
+	return plain(trumbaCustomFieldRaw(fields, label));
 }
 
 // Trumba's JSON gives a local wall-clock timestamp and a separate zone
@@ -283,7 +324,40 @@ function trumbaTimestamp(dt: unknown, offset: unknown): string | null {
 	return `${d}${o.length === 5 ? `${o.slice(0, 3)}:${o.slice(3)}` : o}`;
 }
 
-function trumbaJsonToFields(e: TrumbaEvent): RawCandidateFields | null {
+/**
+ * The event's own page on Trumba's hosted calendar. The feeds' permalinks
+ * point at the publisher's embed page instead (brisbane.qld.gov.au/trumba?
+ * trumbaEmbed=view%3Devent…), which only renders the event when the embed
+ * script runs and in practice lands on the council's event search. Trumba
+ * answers `calendars/<name>?eventid=<id>` with the full event page for the
+ * feed's own name — verified for brisbane-city-council, LIVE and
+ * brisbane-events-rss (the Atom feed, which carries no other calendar name).
+ * Null when the feed URL is not a Trumba calendar, so callers keep their
+ * fallback.
+ */
+function trumbaEventUrl(
+	feedUrl: string,
+	eventId: string | null,
+): string | null {
+	if (!eventId || !/^\d+$/.test(eventId)) return null;
+	try {
+		const u = new URL(feedUrl);
+		if (!/(?:^|\.)trumba\.com$/i.test(u.hostname)) return null;
+		const name = /^\/calendars\/([^/]+?)\.(?:json|xml|rss)$/i.exec(
+			u.pathname,
+		)?.[1];
+		return name
+			? `https://www.trumba.com/calendars/${encodeURIComponent(name)}?eventid=${eventId}`
+			: null;
+	} catch {
+		return null;
+	}
+}
+
+function trumbaJsonToFields(
+	e: TrumbaEvent,
+	feedUrl: string,
+): RawCandidateFields | null {
 	const title = plain(e.title);
 	const startRaw = trumbaTimestamp(e.startDateTime, e.startTimeZoneOffset);
 	if (!title || !startRaw) return null;
@@ -296,13 +370,58 @@ function trumbaJsonToFields(e: TrumbaEvent): RawCandidateFields | null {
 		endRaw: trumbaTimestamp(e.endDateTime, e.endTimeZoneOffset),
 		venueName: trumbaCustomField(e.customFields, "Venue") ?? str(e.location),
 		address: trumbaCustomField(e.customFields, "Venue address"),
-		url: safeUrl(e.permaLinkUrl) ?? safeUrl(e.webLink),
+		// The event's own page first: `webLink` is the organiser's site (an <a>,
+		// not a URL — 21 of 2000 events), then the booking link inside the
+		// Bookings field (917 of 2000: Eventbrite, Bookwhen, Ticketmaster…), then
+		// a description link ("For more information, see <a…>" — 564 of 2000),
+		// and only then Trumba's page for the event.
+		url:
+			firstHref(e.webLink) ??
+			safeUrl(e.webLink) ??
+			firstHref(trumbaCustomFieldRaw(e.customFields, "Bookings")) ??
+			firstHref(e.description) ??
+			trumbaEventUrl(feedUrl, str(e.eventID)) ??
+			safeUrl(e.permaLinkUrl),
 		price: trumbaCustomField(e.customFields, "Cost"),
 		imageUrl: safeUrl(image.url),
 		category:
 			trumbaCustomField(e.customFields, "Primary event type") ??
 			trumbaCustomField(e.customFields, "Event type"),
 		sourceEventId: str(e.eventID),
+	};
+}
+
+// --- Opendatasoft ------------------------------------------------------------
+// GET data.brisbane.qld.gov.au/api/records/1.0/search/?dataset=… — the
+// council's open-data mirror of its Trumba calendars. Datetimes arrive with
+// their offset ("2026-09-25T18:00:00+10:00"). `web_link` is the same council
+// embed permalink the Trumba feeds carry; the real page is an <a> in
+// `bookings` (the exact Ticketmaster event, for Riverstage) or the description.
+
+interface OdsRecord {
+	recordid?: unknown;
+	fields?: Record<string, unknown>;
+}
+
+function odsToFields(r: OdsRecord): RawCandidateFields | null {
+	const f = r.fields ?? {};
+	const title = plain(f.subject);
+	const startRaw = str(f.start_datetime);
+	if (!title || !startRaw) return null;
+	return {
+		...empty,
+		title,
+		description: plain(f.description),
+		startRaw,
+		endRaw: str(f.end_datetime),
+		venueName: plain(f.venue) ?? plain(f.location),
+		address: plain(f.venueaddress),
+		url:
+			firstHref(f.bookings) ?? firstHref(f.description) ?? safeUrl(f.web_link),
+		price: plain(f.cost),
+		imageUrl: safeUrl(f.eventimage),
+		category: plain(f.primaryeventtype),
+		sourceEventId: str(r.recordid),
 	};
 }
 
@@ -339,6 +458,7 @@ function asArray<T>(v: T | T[] | undefined): T[] {
 
 function trumbaAtomEntryToFields(
 	e: Record<string, unknown>,
+	feedUrl: string,
 ): RawCandidateFields | null {
 	const title = plain(atomText(e.title));
 	const when = e["gd:when"];
@@ -364,7 +484,13 @@ function trumbaAtomEntryToFields(
 		venueName:
 			plain(atomText(e["gc:venue"])) ?? atomAttr(e["gd:where"], "valueString"),
 		address: plain(atomText(e["gc:venueaddress"])),
-		url: safeUrl(atomAttr(altLink, "href")),
+		// Same order as the JSON feed; the Atom feed has no webLink field.
+		url:
+			firstHref(atomText(e["gc:bookings"])) ??
+			firstHref(atomText(e["gc:notes"])) ??
+			firstHref(atomText(e.content)) ??
+			trumbaEventUrl(feedUrl, idMatch?.[1] ?? null) ??
+			safeUrl(atomAttr(altLink, "href")),
 		price: plain(atomText(e["gc:cost"])),
 		imageUrl: safeUrl(atomText(e["gc:eventimage"])),
 		category,
@@ -372,7 +498,7 @@ function trumbaAtomEntryToFields(
 	};
 }
 
-function parseTrumbaAtom(body: string, _url: string): FeedResult | null {
+function parseTrumbaAtom(body: string, url: string): FeedResult | null {
 	const trimmed = body.replace(/^﻿/, "").trimStart();
 	if (!trimmed.startsWith("<?xml") && !trimmed.startsWith("<feed")) {
 		return null;
@@ -396,7 +522,7 @@ function parseTrumbaAtom(body: string, _url: string): FeedResult | null {
 		format: "trumba-atom",
 		events: asArray(feed.entry)
 			.slice(0, MAX_EVENTS_PER_FEED)
-			.map((e) => trumbaAtomEntryToFields(e as Record<string, unknown>))
+			.map((e) => trumbaAtomEntryToFields(e as Record<string, unknown>, url))
 			.filter((f): f is RawCandidateFields => f !== null),
 	};
 }
@@ -611,6 +737,231 @@ function parseReading(films: unknown[], url: string): FeedResult {
 	return { format: "reading-cinemas", events };
 }
 
+// Palace Cinemas (Barracks, James St). A Next.js page whose __NEXT_DATA__
+// carries two lists: `cinema.upcomingEvents`, the curated occasions, and
+// `sessions`, every session per film. The occasions' only date,
+// `startDateUTC`, is when the promotion starts (20 Aug for a 24 Sep
+// premiere) — the generic hydration extractor took that for the event date,
+// which is why every Palace event read as past. Sessions carry the real dates;
+// an occasion only lends its title and caption to the session it names.
+const PALACE_HOST = /(?:^|\.)palacecinemas\.com\.au$/i;
+/** Palace's own session labels that mark an occasion. RECLINER and OPEN
+ * CAPTIONS describe the room or access, not the screening. */
+const PALACE_SPECIAL_ATTRS = new Set([
+	"SPECIAL EVENT",
+	"Sneak",
+	"MOVIE CLUB",
+	"RETRO",
+]);
+/** Festival films are titled "IFF26 Holy Cannoli" while the occasion says
+ * "…Opening Night Premiere: Holy Cannoli". */
+const FESTIVAL_PREFIX = /^[A-Z]{2,4}\d{2}\s+/;
+
+interface PalaceSession {
+	date?: unknown;
+	sessionId?: unknown;
+	isSpecialEvent?: unknown;
+	displayAttributeText?: unknown;
+}
+
+interface PalaceFilm {
+	slug?: unknown;
+	title?: unknown;
+	synopsis?: unknown;
+	releaseDateUtc?: unknown;
+	sessions?: unknown;
+}
+
+interface PalaceOccasion {
+	title?: unknown;
+	caption?: unknown;
+}
+
+function palaceKey(title: string): string {
+	return title.replace(FESTIVAL_PREFIX, "").toLowerCase().replace(/\s+/g, " ");
+}
+
+function parsePalace(body: string, url: string): FeedResult | null {
+	const m = /<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/.exec(body);
+	if (!m) return null;
+	let props: { sessions?: unknown; cinema?: { upcomingEvents?: unknown } };
+	try {
+		props = JSON.parse(m[1])?.props?.pageProps ?? {};
+	} catch {
+		return null;
+	}
+	if (!Array.isArray(props.sessions)) return null;
+	const occasions = (
+		Array.isArray(props.cinema?.upcomingEvents)
+			? props.cinema.upcomingEvents
+			: []
+	) as PalaceOccasion[];
+	const origin = new URL(url).origin;
+	const events: RawCandidateFields[] = [];
+	for (const f of props.sessions.slice(
+		0,
+		MAX_EVENTS_PER_FEED,
+	) as PalaceFilm[]) {
+		const title = plain(f.title);
+		if (!title) continue;
+		const sessions = (
+			Array.isArray(f.sessions) ? f.sessions : []
+		) as PalaceSession[];
+		const firstDate = sessions
+			.map((s) => str(s.date))
+			.filter((d): d is string => !!d)
+			.sort()[0];
+		const fewSessions =
+			sessions.length <= SPECIAL_MAX_SESSIONS &&
+			releasedForOccasion(str(f.releaseDateUtc)?.slice(0, 10), firstDate);
+		// Only a unique match lends its name: Sense and Sensibility has both a
+		// "Fine Wine Preview" and a "Matinee Preview", and nothing says which
+		// session is which.
+		const key = palaceKey(title);
+		const matches = occasions.filter((o) => {
+			const t = plain(o.title);
+			if (!t) return false;
+			const k = palaceKey(t);
+			return k === key || k.endsWith(`: ${key}`);
+		});
+		const occasion = matches.length === 1 ? matches[0] : null;
+		const slug = str(f.slug);
+		for (const s of sessions) {
+			const label = str(s.displayAttributeText);
+			const special =
+				s.isSpecialEvent === true ||
+				(label !== null && PALACE_SPECIAL_ATTRS.has(label));
+			if (!special && !fewSessions) continue;
+			// The trailing Z is false: "2026-09-24T18:15:00.000Z" renders on the
+			// page as "6:15 pm". It is Brisbane wall-clock time, so it goes to
+			// dates.ts as wall-clock text rather than as an instant.
+			const startRaw = str(s.date)?.replace(/(\.\d+)?Z$/, "") ?? null;
+			if (!startRaw) continue;
+			events.push({
+				...empty,
+				title: plain(occasion?.title) ?? title,
+				description:
+					[
+						special && label ? `${label.toLowerCase()} screening.` : null,
+						plain(occasion?.caption),
+						plain(f.synopsis),
+					]
+						.filter(Boolean)
+						.join(" ") || null,
+				startRaw,
+				url: slug
+					? safeUrl(`${origin}/movies/${encodeURIComponent(slug)}`)
+					: null,
+				category: "Film",
+				sourceEventId: str(s.sessionId),
+			});
+		}
+	}
+	return { format: "palace", events: events.slice(0, MAX_EVENTS_PER_FEED) };
+}
+
+// --- iCalendar (RFC 5545) --------------------------------------------------
+// A public calendar's .ics export — e.g. the Google Calendar House Conspiracy
+// embeds on its /calendar page, which no other rung could read. Parsed with
+// ical.js rather than by hand: line folding, escaping, VTIMEZONE and
+// RRULE/EXDATE/RECURRENCE-ID are exactly what a hand parser gets silently
+// wrong. Recurrence expansion is the library's arithmetic, not ours.
+
+/** Recurring events are expanded this far ahead: past the two-week
+ * publishing window with room to spare, not a whole weekly series to 2030. */
+const ICAL_EXPAND_DAYS = 60;
+/** Steps through one RRULE before giving up. A daily series started in 2021
+ * takes ~2000 steps to reach today; an unbounded rule must not spin forever. */
+const ICAL_MAX_STEPS = 5000;
+
+/** All-day and floating times name no instant, so they go out as wall-clock
+ * text for dates.ts. Zoned and UTC times are exact instants, reformatted to
+ * ISO like Squarespace's epoch. ponytail: a TZID with no VTIMEZONE in the file
+ * parses as floating, i.e. local time — right for this city's calendars, wrong
+ * for a calendar kept in another zone; register the zone from IANA if one
+ * shows up. */
+function icalTimeToRaw(t: ICAL.Time): string {
+	if (t.isDate || t.zone === ICAL.Timezone.localTimezone) return t.toString();
+	return t.toJSDate().toISOString();
+}
+
+function icalFields(
+	e: ICAL.Event,
+	start: ICAL.Time,
+	end: ICAL.Time | null,
+	id: string,
+): RawCandidateFields | null {
+	const title = plain(e.summary);
+	if (!title) return null;
+	return {
+		...empty,
+		title,
+		description: plain(e.description),
+		startRaw: icalTimeToRaw(start),
+		endRaw: end ? icalTimeToRaw(end) : null,
+		address: plain(e.location),
+		url: safeUrl(e.component.getFirstPropertyValue("url")),
+		sourceEventId: id,
+	};
+}
+
+export function parseIcal(body: string, now = new Date()): FeedResult | null {
+	if (!body.replace(/^﻿/, "").trimStart().startsWith("BEGIN:VCALENDAR")) {
+		return null;
+	}
+	let root: ICAL.Component;
+	try {
+		root = new ICAL.Component(ICAL.parse(body));
+	} catch {
+		return null;
+	}
+	for (const tz of root.getAllSubcomponents("vtimezone")) {
+		ICAL.TimezoneService.register(tz);
+	}
+	const masters = new Map<string, ICAL.Event>();
+	const overrides: ICAL.Component[] = [];
+	for (const v of root.getAllSubcomponents("vevent")) {
+		if (v.getFirstPropertyValue("status") === "CANCELLED") continue;
+		if (v.hasProperty("recurrence-id")) overrides.push(v);
+		else masters.set(String(v.getFirstPropertyValue("uid")), new ICAL.Event(v));
+	}
+	for (const o of overrides) {
+		masters.get(String(o.getFirstPropertyValue("uid")))?.relateException(o);
+	}
+
+	const from = ICAL.Time.fromJSDate(new Date(now.getTime() - 86_400_000), true);
+	const until = now.getTime() + ICAL_EXPAND_DAYS * 86_400_000;
+	const events: RawCandidateFields[] = [];
+	for (const [uid, e] of masters) {
+		if (events.length >= MAX_EVENTS_PER_FEED) break;
+		if (!e.isRecurring()) {
+			// One-offs are all kept, past ones included: the window filter
+			// downstream decides, as for Squarespace.
+			const f = icalFields(e, e.startDate, e.endDate, uid);
+			if (f) events.push(f);
+			continue;
+		}
+		const it = e.iterator();
+		for (
+			let step = 0, next = it.next();
+			next && step < ICAL_MAX_STEPS;
+			step++, next = it.next()
+		) {
+			if (next.compare(from) < 0) continue;
+			if (next.toJSDate().getTime() > until) break;
+			const d = e.getOccurrenceDetails(next);
+			const f = icalFields(
+				d.item,
+				d.startDate,
+				d.endDate,
+				`${uid}@${next.toString()}`,
+			);
+			if (f) events.push(f);
+		}
+	}
+	return { format: "ical", events: events.slice(0, MAX_EVENTS_PER_FEED) };
+}
+
 // ponytail: one token per process; it is valid for an hour and a collect run
 // takes minutes. Refresh on 401 if runs ever get that long.
 let readingToken: Promise<string | null> | undefined;
@@ -688,7 +1039,19 @@ function asRecord(body: string): Record<string, unknown> | unknown[] | null {
  */
 export function parseFeed(body: string, url: string): FeedResult | null {
 	const parsed = asRecord(body);
-	if (!parsed) return parseTrumbaAtom(body, url);
+	if (!parsed) {
+		// Gated by host: a __NEXT_DATA__ blob with a `sessions` array is too
+		// generic a shape to claim on its own.
+		const host = (() => {
+			try {
+				return new URL(url).hostname;
+			} catch {
+				return "";
+			}
+		})();
+		if (PALACE_HOST.test(host)) return parsePalace(body, url);
+		return parseIcal(body) ?? parseTrumbaAtom(body, url);
+	}
 	const origin = (() => {
 		try {
 			return new URL(url).origin;
@@ -711,6 +1074,25 @@ export function parseFeed(body: string, url: string): FeedResult | null {
 					/^https:\/\/prod-api\.readingcinemas\.com\.au\//i.test(url)))
 		) {
 			return parseReading(data, url);
+		}
+
+		// Opendatasoft (data.brisbane.qld.gov.au — the council's Riverstage
+		// dataset): `{nhits, parameters: {dataset}, records: [{fields}]}`.
+		const records = parsed.records;
+		if (
+			Array.isArray(records) &&
+			"nhits" in parsed &&
+			typeof parsed.parameters === "object" &&
+			parsed.parameters !== null &&
+			"dataset" in parsed.parameters
+		) {
+			return {
+				format: "opendatasoft",
+				events: records
+					.slice(0, MAX_EVENTS_PER_FEED)
+					.map((r) => odsToFields(r as OdsRecord))
+					.filter((f): f is RawCandidateFields => f !== null),
+			};
 		}
 
 		const events = parsed.events;
@@ -789,7 +1171,7 @@ export function parseFeed(body: string, url: string): FeedResult | null {
 			format: "trumba-json",
 			events: parsed
 				.slice(0, MAX_EVENTS_PER_FEED)
-				.map((e) => trumbaJsonToFields(e as TrumbaEvent))
+				.map((e) => trumbaJsonToFields(e as TrumbaEvent, url))
 				.filter((f): f is RawCandidateFields => f !== null),
 		};
 	}
@@ -798,14 +1180,6 @@ export function parseFeed(body: string, url: string): FeedResult | null {
 
 /**
  * Candidate feed URLs for a host, cheapest question first.
- *
- * Deliberately not handled yet: iCal. Only 4 of 43 hosts with any feed
- * candidate in a byron run advertised one (`?ical=1` / `.ics`), and the first
- * one checked by hand — drillhalltheatre.org.au — answered 200 with a
- * zero-byte body. Correct iCal means a dependency for folding, escaping, TZID
- * and RRULE expansion, and recurrence is the part most likely to be silently
- * wrong. Not worth it at 4 hosts; revisit if a run shows more. Unrecognised
- * candidates are logged by host, so the evidence accumulates either way.
  *
  * `/wp-json/` is asked for its own route list rather than being guessed at:
  * guessing the tribe path across 24 hosts scored 1/24, while the root probe

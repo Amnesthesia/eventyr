@@ -52,7 +52,7 @@ export const PAIR_BATCH_SIZE = 30;
  * per call this ceiling is ~66 small calls — still bounded, and the cap now
  * warns when it bites rather than silently dropping comparisons.
  */
-const MAX_PAIRS = 2000;
+const MAX_PAIRS = 3000;
 
 export interface CandidatePair {
 	a: Record<string, unknown>;

@@ -1,4 +1,4 @@
-import { CalendarDays, MapPin } from "lucide-react";
+import { CalendarDays, ExternalLink, MapPin } from "lucide-react";
 import { useState } from "react";
 import { costLabel, stripForDisplay } from "../../src/shared.ts";
 import { useEventsContext } from "../context";
@@ -35,6 +35,23 @@ interface Props {
 	onDislikeClick: () => void;
 }
 
+/**
+ * The address part of a location once its venue is shown by canonical name,
+ * e.g. ", 119 Lamington St". The card used to print the raw location, so
+ * "Brisbane Powerhouse" and "Brisbane Powerhouse, 119 Lamington St" read as
+ * two venues although the filter already treated them as one. Segments that
+ * merely repeat the venue are dropped.
+ */
+function locationDetail(location: string, venue: string): string {
+	const v = venue.toLowerCase();
+	const rest = location
+		.split(",")
+		.slice(1)
+		.map((s) => s.trim())
+		.filter((s) => s && !v.includes(s.toLowerCase()));
+	return rest.length ? `, ${rest.join(", ")}` : "";
+}
+
 export default function EventCard({
 	event,
 	isTopPick,
@@ -52,6 +69,8 @@ export default function EventCard({
 		toggleVibe,
 		costLocale,
 		todayStr,
+		activeVenue,
+		setActiveVenue,
 	} = useEventsContext();
 	const citySlug = KEY_TO_SLUG[cityKey] ?? cityKey;
 	const [sheetOpen, setSheetOpen] = useState(false);
@@ -162,12 +181,42 @@ export default function EventCard({
 				</span>
 				<span className="meta-row">
 					<MapPin size={11} strokeWidth={2.2} />
-					{event.location_url ? (
-						<a href={event.location_url} target="_blank" rel="noopener">
-							{event.location || "—"}
+					<span>
+						{event.venue_name ? (
+							<button
+								type="button"
+								className="venue-btn"
+								aria-pressed={activeVenue === event.venue_name}
+								title={`All events at ${event.venue_name}`}
+								onClick={() =>
+									setActiveVenue(
+										activeVenue === event.venue_name
+											? null
+											: (event.venue_name ?? null),
+									)
+								}
+							>
+								{event.venue_name}
+							</button>
+						) : (
+							event.location || "—"
+						)}
+						{event.venue_name &&
+							locationDetail(event.location, event.venue_name)}
+					</span>
+					{/* Its own labelled icon, never the text or the pin: the text is
+					    the venue filter, and a clickable pin did not read as a link. */}
+					{event.location && event.location_url && (
+						<a
+							href={event.location_url}
+							target="_blank"
+							rel="noopener"
+							className="maps-link"
+							aria-label={`Open ${event.location} in Maps`}
+							title="Open in Maps"
+						>
+							<ExternalLink size={11} strokeWidth={2.2} />
 						</a>
-					) : (
-						event.location || "—"
 					)}
 				</span>
 			</div>

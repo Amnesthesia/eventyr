@@ -16,7 +16,10 @@ export default function EventGrid({ events, isTopPick }: Props) {
 				const id = eventId(event);
 				return (
 					<EventCard
-						key={id}
+						// eventId alone repeats: council feeds list "Yoga" at 09:00 in
+						// two parks. A duplicate key leaves stale cards on screen once
+						// a filter removes one — the venue filter showed it.
+						key={`${id}\u0000${event.location}`}
 						event={event}
 						isTopPick={isTopPick}
 						isPast={isEventPast(event)}

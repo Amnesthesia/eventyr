@@ -67,6 +67,8 @@ export function eventId(event: Event): string {
 interface EventsContextValue {
 	cityData: CityData;
 	filtered: Event[];
+	/** Events that pass every filter except the score floor. */
+	lowScored: Event[];
 	cities: City[];
 	cityKey: string;
 	setCity: (key: string) => void;
@@ -93,6 +95,11 @@ interface EventsContextValue {
 	setMinScore: (v: number) => void;
 	activeCat: string;
 	setActiveCat: (cat: string) => void;
+	/** Canonical venue_name to narrow to (src/venues.ts). Null = any venue. */
+	activeVenue: string | null;
+	setActiveVenue: (venue: string | null) => void;
+	/** Every named venue in the city with its event count, alphabetical. */
+	venues: { name: string; count: number }[];
 	dateRange: DateRange | null;
 	setDateRange: (range: DateRange | null) => void;
 	activeTags: string[];
@@ -357,6 +364,7 @@ export function EventsProvider({
 	}
 
 	const [activeCat, setActiveCat] = useState("All");
+	const [activeVenue, setActiveVenue] = useState<string | null>(null);
 	const [dateRange, setDateRange] = useState<DateRange | null>(
 		initialDateRange,
 	);
@@ -409,6 +417,7 @@ export function EventsProvider({
 	// one of the three and forgotten in the other two.
 	const hasActiveFilters =
 		activeCat !== "All" ||
+		activeVenue !== null ||
 		dateRange !== null ||
 		activeTags.length > 0 ||
 		vibes.length > 0 ||
@@ -419,6 +428,7 @@ export function EventsProvider({
 
 	const clearAllFilters = useCallback(() => {
 		setActiveCat("All");
+		setActiveVenue(null);
 		setDateRange(null);
 		setActiveTags([]);
 		setVibes([]);
@@ -453,20 +463,34 @@ export function EventsProvider({
 		[todayStr],
 	);
 
-	const filtered = useMemo(() => {
+	const { filtered, lowScored } = useMemo(() => {
 		// Tokenised once per query rather than once per event: normalising the
 		// query 395 times a keystroke is pure waste.
 		const tokens = queryTokens(query);
-		return cityData.events.filter((event) => {
-			if (hidden.has(eventId(event))) return false;
+		// The score floor is applied last, so the ones it alone removed can be
+		// counted — "N low-scoring events hidden" must not include events the
+		// reader's other filters would have dropped anyway.
+		const lowScored: Event[] = [];
+		const filtered = cityData.events.filter((event) => {
+			if (!passesOtherFilters(event)) return false;
 			// An unscored event is never hidden by this filter — ranking can be
 			// absent (a fresh scrape, a failed rank pass) and a missing score is
 			// not a low one. Same rule meetsScoreFloor applies for the feeds.
 			if (typeof event.score === "number" && event.score < minScore) {
+				lowScored.push(event);
 				return false;
 			}
+			return true;
+		});
+		return { filtered, lowScored };
+
+		function passesOtherFilters(event: Event): boolean {
+			if (hidden.has(eventId(event))) return false;
 			if (!matchesQuery(event, tokens)) return false;
 			const catOk = activeCat === "All" || event.category === activeCat;
+			if (activeVenue !== null && event.venue_name !== activeVenue) {
+				return false;
+			}
 
 			const dateOk =
 				!dateRange || eventOverlapsRange(event, dateRange.start, dateRange.end);
@@ -488,10 +512,11 @@ export function EventsProvider({
 			const vibeOk = vibes.every((key) => event[key] === true);
 
 			return catOk && dateOk && tagsOk && vibeOk;
-		});
+		}
 	}, [
 		cityData,
 		activeCat,
+		activeVenue,
 		dateRange,
 		activeTags,
 		pastFilter,
@@ -523,6 +548,20 @@ export function EventsProvider({
 		() => [...new Set(cityData.events.map((e) => e.category).filter(Boolean))],
 		[cityData],
 	);
+
+	// From cityData.events for the same reason as `categories`: the venue
+	// picker must not shrink to the one venue it just selected.
+	const venues = useMemo(() => {
+		const counts = new Map<string, number>();
+		for (const e of cityData.events) {
+			if (e.venue_name) {
+				counts.set(e.venue_name, (counts.get(e.venue_name) ?? 0) + 1);
+			}
+		}
+		return [...counts]
+			.map(([name, count]) => ({ name, count }))
+			.sort((a, b) => a.name.localeCompare(b.name));
+	}, [cityData]);
 
 	const { starredEvents, picks, rest } = useMemo(() => {
 		const starredEvents: Event[] = [];
@@ -656,6 +695,7 @@ export function EventsProvider({
 	const value: EventsContextValue = {
 		cityData,
 		filtered,
+		lowScored,
 		cities,
 		cityKey,
 		setCity,
@@ -676,6 +716,9 @@ export function EventsProvider({
 		setMinScore,
 		activeCat,
 		setActiveCat,
+		activeVenue,
+		setActiveVenue,
+		venues,
 		dateRange,
 		setDateRange,
 		activeTags,

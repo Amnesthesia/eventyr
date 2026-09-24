@@ -8,11 +8,17 @@ import {
 } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import { isRetiredTemplateDescription } from "./adapters/annotate.ts";
-import { humanDatetime, isPast, withinWindow } from "./adapters/normalise.ts";
+import {
+	councilEventUrl,
+	humanDatetime,
+	isPast,
+	withinWindow,
+} from "./adapters/normalise.ts";
 import {
 	allSourceEntries,
 	DATA_ROOT,
 	DEFAULT_COST_LOCALE,
+	expandImpliedTags,
 	fmtDate,
 	getWeekRange,
 	isLikelyImageUrl,
@@ -261,6 +267,8 @@ function cleanEvent(event: Record<string, unknown>): Record<string, unknown> {
 	for (const key of URL_FIELDS) {
 		if (key in out) out[key] = cleanUrl(out[key]);
 	}
+	// The council's Trumba embed link lands on its event search, not the event.
+	if (typeof out.link === "string") out.link = councilEventUrl(out.link) ?? "";
 	if (Array.isArray(out.tags)) {
 		out.tags = out.tags.map((t) => cleanText(t).trim().toLowerCase());
 	}
@@ -538,7 +546,9 @@ async function mergeAndDeduplicate(
 		// directions.
 		const cost = ((event.cost as string) ?? "").trim();
 		const isFree = /^(free|free entry|no charge|\$?0(\.00)?)$/i.test(cost);
-		const after = cleaned.filter((t) => t !== "free");
+		// "standup" without "comedy" hides stand-up from the comedy filter —
+		// see TAG_MATCHERS.
+		const after = expandImpliedTags(cleaned).filter((t) => t !== "free");
 		if (isFree) after.push("free");
 		if (after.join("\u0000") !== before.join("\u0000")) rewritten++;
 		event.tags = after;

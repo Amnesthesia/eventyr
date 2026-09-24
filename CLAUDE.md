@@ -41,6 +41,11 @@ change as any stage change (including where `INTERESTS` is or isn't applied).
    `src/dedupe.ts`, writes `data/{city}.json`. Also carries forward every still-upcoming dated
    event from the previous `data/{city}.json` (the per-source inputs were already overwritten by
    collect), so a Sunday run keeps Sunday's events alongside next week's.
+3a. **`src/venues.ts`** (`pnpm venues`) — writes a canonical `venue_name` onto every event in
+   `data/{city}.json` so the site can filter by venue (`event.venue` is the source *tier*, not a
+   place). Raw venue = first `location` segment; resolved via `venue.aliases` in
+   `sources/{city}.yml` (the manual override for a wrong merge), then the committed cache
+   `data/{city}/venues.json`, then deterministic rules, then Gemini for the remainder.
 4. **`src/rank.ts`** (`pnpm rank`) — Gemini scores each event 1–10 against `INTERESTS`
    (`src/common.ts`), writes scores back into `data/{city}.json`. `TOP_PICK_THRESHOLD` (7) decides
    what surfaces as a top pick.

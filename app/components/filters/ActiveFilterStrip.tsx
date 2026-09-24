@@ -20,6 +20,8 @@ export default function ActiveFilterStrip() {
 		clearAllFilters,
 		activeCat,
 		setActiveCat,
+		activeVenue,
+		setActiveVenue,
 		dateRange,
 		setDateRange,
 		activeTags,
@@ -44,6 +46,13 @@ export default function ActiveFilterStrip() {
 			key: "cat",
 			label: catShortName(activeCat),
 			clear: () => setActiveCat("All"),
+		});
+	}
+	if (activeVenue) {
+		chips.push({
+			key: "venue",
+			label: activeVenue,
+			clear: () => setActiveVenue(null),
 		});
 	}
 	if (dateRange) {

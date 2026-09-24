@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { llmSourceStrings, loadCityConfig, scraperSources } from "../common.ts";
-import { loadSourceRegistry } from "./registry.ts";
+import { loadSourceRegistry, venueNameFor } from "./registry.ts";
 
 const CITIES = ["brisbane", "goldcoast", "sunnycoast"];
 
@@ -158,4 +158,18 @@ test("a site already scraped is not also named in the search prompts", () => {
 	assert.deepEqual(strings, [
 		{ text: "Unrelated Blog (someblog.com.au)", pinned: false },
 	]);
+});
+
+test("only a single-venue source lends its own name as the venue", () => {
+	const entry = { name: "WeekendNotes Brisbane", method: "scraper" as const };
+	assert.equal(venueNameFor(entry, "aggregators"), null);
+	assert.equal(venueNameFor(entry, "independents"), "WeekendNotes Brisbane");
+	assert.equal(
+		venueNameFor({ ...entry, venue: { name: null } }, "institutions"),
+		null,
+	);
+	assert.equal(
+		venueNameFor({ ...entry, venue: { name: "Riverstage" } }, "aggregators"),
+		"Riverstage",
+	);
 });

@@ -156,6 +156,27 @@ function httpUrlOrEmpty(url: string | null | undefined): string {
 	return url && /^https?:\/\//i.test(url) ? url : "";
 }
 
+/**
+ * Brisbane City Council's event links point at its Trumba embed page
+ * (brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D…), which
+ * lands on the council's event search rather than the event. Every council
+ * calendar is a child of `brisbane-city-council`, whose hosted page renders any
+ * of their events — verified for events from the citywide, LIVE and parks
+ * feeds. Matches the unescaped form too, in case a source hands it over decoded.
+ * feeds.ts already builds these for Trumba feeds; curate.ts's cleanEvent
+ * applies this to every other path that carries the same link — Riverstage's
+ * open-data records, AI-search results, and events carried forward.
+ */
+const COUNCIL_TRUMBA_EMBED =
+	/^https?:\/\/(?:www\.)?brisbane\.qld\.gov\.au\/[^?#]*\?trumbaEmbed=view(?:%3D|=)event(?:%26|&)eventid(?:%3D|=)(\d+)/i;
+
+export function councilEventUrl(url: string | null | undefined): string | null {
+	const id = url ? COUNCIL_TRUMBA_EMBED.exec(url)?.[1] : undefined;
+	return id
+		? `https://www.trumba.com/calendars/brisbane-city-council?eventid=${id}`
+		: (url ?? null);
+}
+
 export function isValidCategory(v: unknown): v is Category {
 	return CATEGORIES.includes(v as Category);
 }

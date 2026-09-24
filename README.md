@@ -70,7 +70,8 @@ flowchart TD
     A --> CUR
     FMT --> CUR
     CUR["3 · curate<br/>merge · publishing window · locality check<br/>dedupe · carry forward still-upcoming events"]
-    CUR --> RANK["4 · rank (Gemini)<br/>score 1–10 against INTERESTS<br/>SKIP list and standing attractions/tours score 1–2<br/>scores only — never drops"]
+    CUR --> VEN["3a · venues<br/>canonical venue_name per event<br/>aliases → cache → rules → Gemini"]
+    VEN --> RANK["4 · rank (Gemini)<br/>score 1–10 against INTERESTS<br/>SKIP list and standing attractions/tours score 1–2<br/>scores only — never drops"]
     RANK --> GEO[5 · geocode · Maps link]
     GEO --> OUT["6–7 · markdown · ical · rss · pages · build-ai"]
     OUT --> BUILD[8 · astro build]

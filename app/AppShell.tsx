@@ -23,6 +23,9 @@ export default function AppShell() {
 		hasActiveFilters,
 		clearAllFilters,
 		tagPrefs,
+		lowScored,
+		minScore,
+		setMinScore,
 	} = useEventsContext();
 	const [swiping, setSwiping] = useState(false);
 	// null = closed. A non-null value is the set the calendar is showing, which
@@ -61,21 +64,50 @@ export default function AppShell() {
 	// "today" only ever arrives as a post-hydration update, not a mismatch.
 	const today = todayStr || cityData?.week_start || "";
 
+	// Low-scoring events are grouped together with the visible ones, then split
+	// back out, so each group can say what the score floor removed from it —
+	// and a day whose events all score low still appears, with only its note.
+	// Starred ones are left out: shown, they go to "saved", not to a group.
 	const groups = useMemo(() => {
 		const window = dateWindowFor(
 			cityData?.week_start ?? "",
 			cityData?.week_end ?? "",
 			today,
 		);
-		return groupEvents(rest, groupBy, window, today, tagPrefs);
+		const shown = new Set(rest);
+		const low = lowScored.filter((e) => !starred.has(eventId(e)));
+		return groupEvents([...rest, ...low], groupBy, window, today, tagPrefs).map(
+			(group) => ({
+				...group,
+				events: group.events.filter((e) => shown.has(e)),
+				lowHidden: group.events.filter((e) => !shown.has(e)).length,
+			}),
+		);
 	}, [
 		rest,
+		lowScored,
+		starred,
 		groupBy,
 		cityData?.week_start,
 		cityData?.week_end,
 		today,
 		tagPrefs,
 	]);
+
+	// Otherwise the score floor is invisible from the list itself: the only
+	// trace of it was the Min score row inside the collapsed More filters.
+	const lowScoreNote = (count: number) => (
+		<p className="low-score-note">
+			{count} {count === 1 ? "event" : "events"} scoring below {minScore} hidden
+			<button
+				type="button"
+				className="filter-btn"
+				onClick={() => setMinScore(0)}
+			>
+				Show {count === 1 ? "it" : "them"}
+			</button>
+		</p>
+	);
 
 	return (
 		<>
@@ -135,6 +167,7 @@ export default function AppShell() {
 										Clear filters
 									</button>
 								)}
+								{lowScored.length > 0 && lowScoreNote(lowScored.length)}
 							</div>
 						) : (
 							<>
@@ -151,6 +184,7 @@ export default function AppShell() {
 											</h3>
 										)}
 										<EventGrid events={group.events} isTopPick={false} />
+										{group.lowHidden > 0 && lowScoreNote(group.lowHidden)}
 									</section>
 								))}
 							</>

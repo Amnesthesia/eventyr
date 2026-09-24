@@ -34,6 +34,7 @@ export {
 	eventOverlapsRange,
 	eventPath,
 	eventSlug,
+	expandImpliedTags,
 	isLikelyImageUrl,
 	isoWithOffset,
 	isSameSite,
@@ -50,6 +51,7 @@ export {
 	slugify,
 	stripForDisplay,
 	stripUselessTags,
+	TAG_MATCHERS,
 	TAG_SET,
 	TAGS,
 	TOP_PICK_THRESHOLD,
@@ -161,6 +163,8 @@ export interface SourceEntry {
 		name?: string | null;
 		address?: string | null;
 		suburb?: string | null;
+		/** Other spellings of this venue; src/venues.ts maps them to `name`. */
+		aliases?: string[];
 	};
 	note?: string;
 }

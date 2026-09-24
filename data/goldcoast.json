@@ -24,7 +24,8 @@
         "art",
         "exhibition",
         "gallery",
-        "ceramics"
+        "ceramics",
+        "craft"
       ],
       "social": false,
       "intellectual": false,
@@ -32,7 +33,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "SWELL Sculpture Festival - Outdoor Sculpture Exhibition",
@@ -61,7 +63,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Beach%20to%20Flat%20Rock%2C%20Currumbin%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Beach%20to%20Flat%20Rock%2C%20Currumbin%2C%20Gold%20Coast",
+      "venue_name": "Currumbin Beach to Flat Rock"
     },
     {
       "title": "QAGOMA presents: Make, Believe, Magic: The Worlds of the Jim Henson Company",
@@ -88,7 +91,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=QAGOMA%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=QAGOMA%2C%20Gold%20Coast",
+      "venue_name": "QAGOMA"
     },
     {
       "title": "SWELL Sculpture Festival",
@@ -116,7 +120,8 @@
       "image": "",
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Beach%2C%20Gold%20Coast",
-      "score": 8
+      "score": 8,
+      "venue_name": "Currumbin Beach"
     },
     {
       "title": "Gecko Talks-22nd September – Damsel and Dragon Flies",
@@ -143,7 +148,8 @@
       "creative": false,
       "venue": "institution",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=curru8mbin%20RSL%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=curru8mbin%20RSL%2C%20Gold%20Coast",
+      "venue_name": "Currumbin RSL"
     },
     {
       "title": "Bleach Festival 2026",
@@ -171,7 +177,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Inside%20Gold%20Coast%20What's%20On%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Inside%20Gold%20Coast%20What's%20On%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Poetry Night - 1 October",
@@ -199,7 +206,8 @@
       "creative": true,
       "venue": "independent",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mint%20Art%20House%2C%2087%20West%20Burleigh%20Road%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mint%20Art%20House%2C%2087%20West%20Burleigh%20Road%2C%20Gold%20Coast",
+      "venue_name": "Mint Art House"
     },
     {
       "title": "Artist Talk with Claudio Kirac, Morag Myerscough & Naina Sen",
@@ -225,7 +233,8 @@
       "creative": false,
       "venue": "institution",
       "score": 8,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast",
+      "venue_name": "HOTA Lake Precinct"
     },
     {
       "title": "This Moment: Highlights from the White Rabbit Collection",
@@ -251,7 +260,8 @@
       "image": "",
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%2C%20Surfers%20Paradise%2C%20Gold%20Coast",
-      "score": 7
+      "score": 7,
+      "venue_name": "HOTA"
     },
     {
       "title": "Distractd",
@@ -277,7 +287,8 @@
       "creative": false,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Basement%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Basement%2C%20Gold%20Coast",
+      "venue_name": "Basement"
     },
     {
       "title": "This Moment: Highlights from the White Rabbit Collection of Chinese Contemporary Art",
@@ -303,7 +314,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 7
+      "score": 7,
+      "venue_name": null
     },
     {
       "title": "This Moment: White Rabbit Collection",
@@ -328,7 +340,8 @@
       "image": "",
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%2C%20Surfers%20Paradise%2C%20Gold%20Coast",
-      "score": 7
+      "score": 7,
+      "venue_name": "HOTA Gallery"
     },
     {
       "title": "Here and Now: Gold Coast Triennial",
@@ -354,7 +367,8 @@
       "image": "",
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%2C%20135%20Bundall%20Road%2C%20Surfers%20Paradise%2C%20Gold%20Coast",
-      "score": 7
+      "score": 7,
+      "venue_name": "HOTA Gallery"
     },
     {
       "title": "Anna Fitzpatrick – Boxing Day on Sydney Harbour (Solo Exhibition)",
@@ -380,7 +394,8 @@
       "image": "",
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Gallery%20One%2C%20Bundall%2C%20Gold%20Coast",
-      "score": 7
+      "score": 7,
+      "venue_name": "Gallery One"
     },
     {
       "title": "Art Exhibition - ECLECTICA",
@@ -405,7 +420,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "The Empty Canvas Community Exhibit",
@@ -431,7 +447,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Robina%20Community%20Art%20Gallery%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Robina%20Community%20Art%20Gallery%2C%20Gold%20Coast",
+      "venue_name": "Robina Community Art Gallery"
     },
     {
       "title": "Weekly Poppy Circle",
@@ -457,7 +474,8 @@
       "creative": true,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=165%20Duringan%20Street%2C%20Currumbin%2C%20QLD%2C%20Australia%2C%20Queensland%204223%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=165%20Duringan%20Street%2C%20Currumbin%2C%20QLD%2C%20Australia%2C%20Queensland%204223%2C%20Gold%20Coast",
+      "venue_name": "165 Duringan Street"
     },
     {
       "title": "7 YEARS LOUD: A Visual History of Mo's Desert Clubhouse (ALL AGES)",
@@ -484,7 +502,8 @@
       "creative": true,
       "venue": "independent",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast",
+      "venue_name": "Mo's Desert Clubhouse"
     },
     {
       "title": "Freshtival Indie Rock Night",
@@ -511,7 +530,8 @@
       "image": "",
       "venue": "independent",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Dust%20Temple%2C%20Currumbin%20Waters%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Dust%20Temple%2C%20Currumbin%20Waters%2C%20Gold%20Coast",
+      "venue_name": "Dust Temple"
     },
     {
       "title": "Rekindle, Rekindle",
@@ -536,7 +556,8 @@
       "creative": true,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%2C%20Lower%20Foyer%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%2C%20Lower%20Foyer%2C%20Gold%20Coast",
+      "venue_name": "HOTA Gallery"
     },
     {
       "title": "The Butterfly Who Flew Into The Rave",
@@ -562,7 +583,8 @@
       "creative": true,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Basement%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Basement%2C%20Gold%20Coast",
+      "venue_name": "Basement"
     },
     {
       "title": "CYVASA 2.0",
@@ -587,7 +609,8 @@
       "creative": true,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%202%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%202%2C%20Gold%20Coast",
+      "venue_name": "HOTA Gallery"
     },
     {
       "title": "Ocker",
@@ -612,7 +635,8 @@
       "creative": true,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast",
+      "venue_name": "HOTA Lake Precinct"
     },
     {
       "title": "Mould Making with Simon Suckling",
@@ -638,7 +662,8 @@
       "creative": true,
       "venue": "institution",
       "score": 7,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20Studio%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20Studio%2C%20Gold%20Coast",
+      "venue_name": "Benowa Studio"
     },
     {
       "title": "Comedy Underground Saturday Showcase",
@@ -663,7 +688,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Basement%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Basement%2C%20Gold%20Coast",
+      "venue_name": "Basement"
     },
     {
       "title": "Guided tour & lunch at Palette Restaurant",
@@ -681,7 +707,8 @@
         "art",
         "tour",
         "dining",
-        "culture"
+        "culture",
+        "food"
       ],
       "social": true,
       "intellectual": false,
@@ -689,7 +716,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Palette%20Restaurant%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Palette%20Restaurant%2C%20Gold%20Coast",
+      "venue_name": "Palette Restaurant"
     },
     {
       "title": "Candlelight Concerts - Imperial Hotel Gold Coast",
@@ -707,7 +735,9 @@
         "classical",
         "candlelight",
         "music",
-        "performance"
+        "performance",
+        "concert",
+        "live music"
       ],
       "social": false,
       "intellectual": false,
@@ -715,7 +745,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Premium Springbrook Natural Bridge, Glow Worm Cave & Skywalk",
@@ -733,7 +764,8 @@
         "nature",
         "hiking",
         "outdoor",
-        "wildlife"
+        "wildlife",
+        "walking"
       ],
       "social": false,
       "intellectual": false,
@@ -741,7 +773,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Multiple%20locations%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Candlelight: Vivaldi's Four Seasons",
@@ -759,7 +792,9 @@
         "classical",
         "candlelight",
         "vivaldi",
-        "music"
+        "music",
+        "concert",
+        "live music"
       ],
       "social": false,
       "intellectual": false,
@@ -767,7 +802,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Bond%20University%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Bond University"
     },
     {
       "title": "Blanc de Blanc Encore",
@@ -794,7 +830,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Brisbane's True Crime Tour",
@@ -811,7 +848,8 @@
       "tags": [
         "history",
         "tour",
-        "walking"
+        "walking",
+        "outdoor"
       ],
       "social": true,
       "intellectual": true,
@@ -819,7 +857,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Late Night Vice - Brisbane",
@@ -845,7 +884,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Moreton Island Day Trip (Kayak, Snorkel & Sandboard) frm Brisbane or Gold Coast",
@@ -871,7 +911,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Springbrook and Tamborine Rainforest Tour Incl. Natural Bridge and Glow Worm Cave",
@@ -896,7 +937,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "North Stradbroke Island SUNSET Tour",
@@ -921,7 +963,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Haunted Brisbane CBD Ghost Tour",
@@ -938,7 +981,8 @@
       "tags": [
         "history",
         "tour",
-        "walking"
+        "walking",
+        "outdoor"
       ],
       "social": true,
       "intellectual": true,
@@ -946,7 +990,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Premium Springbrook Natural Bridge, Glow Worm Cave & Skywalk",
@@ -971,7 +1016,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Astra Lumina",
@@ -998,7 +1044,8 @@
       "creative": true,
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%20events%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Currumbin Wildlife Sanctuary"
     },
     {
       "title": "The Jazz Room: A Frank Sinatra & Louis Armstrong Tribute",
@@ -1015,7 +1062,8 @@
       "tags": [
         "jazz",
         "tribute",
-        "music"
+        "music",
+        "live music"
       ],
       "social": false,
       "intellectual": false,
@@ -1023,7 +1071,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Broadbeach%20Cultural%20Centre%20(within%20Broadbeach%20Cultural%20Precinct)%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Broadbeach Cultural Centre (within Broadbeach Cultural Precinct)"
     },
     {
       "title": "Jaw-Dropping Croc Talks",
@@ -1048,7 +1097,8 @@
       "creative": false,
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%20events%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": "Currumbin Wildlife Sanctuary"
     },
     {
       "title": "Vice City - Fortitude Valley True Crime Tour",
@@ -1065,7 +1115,8 @@
       "tags": [
         "history",
         "tour",
-        "walking"
+        "walking",
+        "outdoor"
       ],
       "social": true,
       "intellectual": true,
@@ -1073,7 +1124,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "HOTA Farmers and Artisan Market",
@@ -1099,7 +1151,8 @@
       "creative": false,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=City%20of%20Gold%20Coast%20Libraries%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=City%20of%20Gold%20Coast%20Libraries%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Dave's Creek - Look, Listen and Linger",
@@ -1124,7 +1177,8 @@
       "image": "",
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Nerang%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "THE OPEN FONDA",
@@ -1150,7 +1204,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Miami%20Marketta%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Miami%20Marketta%2C%20Gold%20Coast",
+      "venue_name": "Miami Marketta"
     },
     {
       "title": "Morning Kayaking and Snorkeling Tour",
@@ -1176,7 +1231,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=464%20Marine%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=464%20Marine%20Parade%2C%20Gold%20Coast",
+      "venue_name": "464 Marine Parade"
     },
     {
       "title": "Candlelight Concerts - Imperial Hotel Gold Coast",
@@ -1191,7 +1247,8 @@
         "music",
         "concert",
         "classical",
-        "performance"
+        "performance",
+        "live music"
       ],
       "social": false,
       "intellectual": false,
@@ -1202,7 +1259,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Imperial%20Hotel%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Imperial%20Hotel%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": "Imperial Hotel Gold Coast"
     },
     {
       "title": "Danielle Clarke Pottery Classes",
@@ -1228,7 +1286,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20Studio%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20Studio%2C%20Gold%20Coast",
+      "venue_name": "Benowa Studio"
     },
     {
       "title": "Tina Aquim Pottery Classes",
@@ -1254,7 +1313,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mudgeeraba%20Studio%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mudgeeraba%20Studio%2C%20Gold%20Coast",
+      "venue_name": "Mudgeeraba Studio"
     },
     {
       "title": "Sunset Slice Community Run",
@@ -1270,6 +1330,7 @@
         "nature",
         "outdoor",
         "community",
+        "fitness",
         "free"
       ],
       "social": true,
@@ -1281,7 +1342,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=West%20Burleigh%20Head%20trails%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=West%20Burleigh%20Head%20trails%2C%20Gold%20Coast",
+      "venue_name": "West Burleigh Head trails"
     },
     {
       "title": "Jo Mackenzie Pottery Classes",
@@ -1307,7 +1369,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20and%20Mudgeeraba%20Studios%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20and%20Mudgeeraba%20Studios%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Porsche Owen Pottery Classes",
@@ -1333,7 +1396,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20and%20Mudgeeraba%20Studios%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20and%20Mudgeeraba%20Studios%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Premium Springbrook Natural Bridge, Glow Worm Cave & Skywalk",
@@ -1357,7 +1421,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Wildlife Glider Tour",
@@ -1383,7 +1448,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Regional%20Botanic%20Gardens%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Regional%20Botanic%20Gardens%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Regional Botanic Gardens"
     },
     {
       "title": "Sunroom – Make a Mooncake",
@@ -1410,7 +1476,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Surfers%20Paradise%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Surfers%20Paradise%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Michael Jones Pottery Classes",
@@ -1436,7 +1503,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20Studio%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20Studio%2C%20Gold%20Coast",
+      "venue_name": "Benowa Studio"
     },
     {
       "title": "The Board Gamers",
@@ -1461,7 +1529,8 @@
       "creative": false,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Twin%20Towns%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Twin%20Towns%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "Twin Towns"
     },
     {
       "title": "Mooncake Festival Gallery Tour and Workshop",
@@ -1487,7 +1556,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%2C%20Surfers%20Paradise%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%2C%20Surfers%20Paradise%2C%20Gold%20Coast",
+      "venue_name": "HOTA Gallery"
     },
     {
       "title": "ADALITA (GOLD COAST)",
@@ -1515,7 +1585,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast",
+      "venue_name": "Mo's Desert Clubhouse"
     },
     {
       "title": "ANH DO",
@@ -1541,7 +1612,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Showroom%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Showroom%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Showroom"
     },
     {
       "title": "Australia’s Anti‑Money Laundering Tranche 2 Reforms",
@@ -1565,7 +1637,8 @@
       "creative": false,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Southern%20Cross%20University%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Southern%20Cross%20University%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": "Southern Cross University Gold Coast"
     },
     {
       "title": "The Jury Experience: The Million Dollar Murder",
@@ -1590,7 +1663,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Candlelight Ballet: Tchaikovsky's Swan Lake & More",
@@ -1617,7 +1691,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Improv Comedy FriYAY",
@@ -1643,7 +1718,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=3%20Traders%20Way%2C%20Currumbin%20Waters%2C%204223%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=3%20Traders%20Way%2C%20Currumbin%20Waters%2C%204223%2C%20Gold%20Coast",
+      "venue_name": "3 Traders Way"
     },
     {
       "title": "Goodna Cemetery Haunted History Tour",
@@ -1660,7 +1736,8 @@
       "tags": [
         "history",
         "tour",
-        "walking"
+        "walking",
+        "outdoor"
       ],
       "social": true,
       "intellectual": true,
@@ -1668,7 +1745,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 6
+      "score": 6,
+      "venue_name": null
     },
     {
       "title": "Cherie Noble Pottery Classes",
@@ -1694,7 +1772,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mudgeeraba%20Studio%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mudgeeraba%20Studio%2C%20Gold%20Coast",
+      "venue_name": "Mudgeeraba Studio"
     },
     {
       "title": "MO'S 7TH BIRTHDAY (Main Day) feat. Peach Fur",
@@ -1723,7 +1802,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast",
+      "venue_name": "Mo's Desert Clubhouse"
     },
     {
       "title": "Help Me Please",
@@ -1748,7 +1828,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Dan%20Rath%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Dan%20Rath%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Peach Pimsittha Pottery Classes",
@@ -1774,7 +1855,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20and%20Mudgeeraba%20Studios%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20and%20Mudgeeraba%20Studios%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Monsters & Fairies: A Hand-Building Pottery Class for Kids & Parents",
@@ -1801,7 +1883,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20Studio%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Benowa%20Studio%2C%20Gold%20Coast",
+      "venue_name": "Benowa Studio"
     },
     {
       "title": "BEACON",
@@ -1826,7 +1909,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast",
+      "venue_name": "HOTA Lake Precinct"
     },
     {
       "title": "BLEACH Opening Night",
@@ -1850,7 +1934,8 @@
       "creative": false,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast",
+      "venue_name": "HOTA Lake Precinct"
     },
     {
       "title": "Lady Blackbird & Electric Fields",
@@ -1875,7 +1960,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Outdoor%20Stage%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Outdoor%20Stage%2C%20Gold%20Coast",
+      "venue_name": "Outdoor Stage"
     },
     {
       "title": "Next Stop Comedy (Live in El Ranchero)",
@@ -1900,7 +1986,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=El%20Ranchero%20at%20Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=El%20Ranchero%20at%20Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast",
+      "venue_name": "Mo's Desert Clubhouse"
     },
     {
       "title": "Silk Road Project: NOMAD",
@@ -1924,7 +2011,8 @@
       "creative": true,
       "venue": "institution",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast",
+      "venue_name": "HOTA Lake Precinct"
     },
     {
       "title": "GILSONS Australia Tour 2026",
@@ -1952,7 +2040,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Miami%20Marketta%20(18%2B)%2C%2023%20Hillcrest%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Miami%20Marketta%20(18%2B)%2C%2023%20Hillcrest%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Miami Marketta"
     },
     {
       "title": "Burn Em' (ALL AGES)",
@@ -1980,7 +2069,8 @@
       "creative": true,
       "venue": "independent",
       "score": 6,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast",
+      "venue_name": "Mo's Desert Clubhouse"
     },
     {
       "title": "Dreamworld Night Market",
@@ -2006,7 +2096,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Quiet Hour",
@@ -2031,7 +2122,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Gallery%2C%20Gold%20Coast",
+      "venue_name": "HOTA Gallery"
     },
     {
       "title": "This Moment Experience - The Exhibitionist Bar",
@@ -2049,7 +2141,8 @@
         "art",
         "tour",
         "cocktails",
-        "culture"
+        "culture",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -2057,7 +2150,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%205%20%C2%B7%20The%20Exhibitionist%20Bar%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%205%20%C2%B7%20The%20Exhibitionist%20Bar%2C%20Gold%20Coast",
+      "venue_name": "The Exhibitionist Bar"
     },
     {
       "title": "Dumpling Masterclass",
@@ -2082,7 +2176,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%205%20%C2%B7%20Rooftop%20Terrace%20(Indoor%20Mez%20Lvl%205)%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%205%20%C2%B7%20Rooftop%20Terrace%20(Indoor%20Mez%20Lvl%205)%2C%20Gold%20Coast",
+      "venue_name": "Level 5"
     },
     {
       "title": "Mamma Mia! The Musical at The Star Gold Coast",
@@ -2099,7 +2194,8 @@
       "tags": [
         "musical",
         "theatre",
-        "performance"
+        "performance",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -2107,7 +2203,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Star%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Star%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": "The Star Gold Coast"
     },
     {
       "title": "Boxing Day on Sydney Harbour - Exhibition",
@@ -2132,7 +2229,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gallery%20One%2C%20Bundall%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gallery%20One%2C%20Bundall%2C%20Gold%20Coast",
+      "venue_name": "Gallery One"
     },
     {
       "title": "Swim with Whales Gold Coast",
@@ -2158,7 +2256,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=139-151%20Chinderah%20Bay%20Dr%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "139-151 Chinderah Bay Dr"
     },
     {
       "title": "2.5-Hour Ultimate Learn to Surf Adventure",
@@ -2184,7 +2283,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=1509%20Gold%20Coast%20Hwy%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "1509 Gold Coast Hwy"
     },
     {
       "title": "2 Hour Surf Lesson At The Spit, Main Beach ( 13 years and up)",
@@ -2210,7 +2310,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Get%20Wet%20Surf%20School%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "Get Wet Surf School"
     },
     {
       "title": "Fingal Head Learn-to-Surf Day Trip from the Gold Coast or Byron Bay",
@@ -2236,7 +2337,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Multiple%20locations%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Snorkel with Turtles Gold Coast",
@@ -2254,7 +2356,9 @@
         "snorkeling",
         "turtles",
         "wildlife",
-        "water"
+        "water",
+        "nature",
+        "outdoor"
       ],
       "social": false,
       "intellectual": false,
@@ -2262,7 +2366,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=139-151%20Chinderah%20Bay%20Dr%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "139-151 Chinderah Bay Dr"
     },
     {
       "title": "Candlelight: Tribute to TOOL",
@@ -2280,7 +2385,9 @@
         "rock",
         "tribute",
         "candlelight",
-        "music"
+        "music",
+        "live music",
+        "concert"
       ],
       "social": false,
       "intellectual": false,
@@ -2288,7 +2395,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Bond%20University%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "Bond University"
     },
     {
       "title": "Dinos Alive: An Immersive Experience in Brisbane",
@@ -2314,7 +2422,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Fingal Head Learn-to-Surf Day Trip from the Gold Coast or Byron Bay",
@@ -2341,7 +2450,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Fingal%20Head%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Morning Kayaking and Snorkeling Tour",
@@ -2366,7 +2476,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20464%20Marine%20Parade%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "2-Hour Surf Lesson on the Gold Coasts locals Favourite beach (12 years and up)",
@@ -2393,7 +2504,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Get%20Wet%20Surf%20School%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "Get Wet Surf School"
     },
     {
       "title": "2.5-Hour Ultimate Learn to Surf Adventure",
@@ -2420,7 +2532,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%201509%20Gold%20Coast%20Hwy%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Spirit of Gold Coast Whale Watching",
@@ -2445,7 +2558,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Sunshine Coast Hinterland and Noosa Day Trip from Brisbane Incl Eumundi Markets",
@@ -2471,7 +2585,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": null
     },
     {
       "title": "Renew Bohemian Spring Bazaar",
@@ -2497,7 +2612,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Veronica Cay - betwixt and between",
@@ -2522,7 +2638,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Anthea%20Polson%20Art%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Anthea%20Polson%20Art%2C%20Gold%20Coast",
+      "venue_name": "Anthea Polson Art"
     },
     {
       "title": "David Green - when it rains the roof leaks",
@@ -2547,7 +2664,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Anthea%20Polson%20Art%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Anthea%20Polson%20Art%2C%20Gold%20Coast",
+      "venue_name": "Anthea Polson Art"
     },
     {
       "title": "Nicky Convine",
@@ -2571,7 +2689,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast",
+      "venue_name": "Burleigh Leagues Club"
     },
     {
       "title": "SWELL Sculpture Festival Active & Healthy Wellness Program",
@@ -2598,7 +2717,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=City%20of%20Gold%20Coast%20Libraries%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=City%20of%20Gold%20Coast%20Libraries%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Carrara Markets Car Boot Sale",
@@ -2623,7 +2743,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=City%20of%20Gold%20Coast%20Libraries%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=City%20of%20Gold%20Coast%20Libraries%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Quokka launch weekend at Currumbin Wildlife Sanctuary",
@@ -2649,7 +2770,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Inside%20Gold%20Coast%20What's%20On%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Inside%20Gold%20Coast%20What's%20On%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "The Coastal Markets – Broadbeach",
@@ -2674,7 +2796,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=What's%20On%20Gold%20Coast%2C%20Broadbeach%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=What's%20On%20Gold%20Coast%2C%20Broadbeach%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Let's Roam Gold Coast Scavenger Hunt: Gold Coast Community Charm!",
@@ -2702,7 +2825,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=47%20Nerang%20St%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=47%20Nerang%20St%2C%20Gold%20Coast",
+      "venue_name": "47 Nerang St"
     },
     {
       "title": "ArtVo Illusions Immersive Gallery Experience",
@@ -2728,7 +2852,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=ArtVo%2C%20Robina%20Town%20Centre%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=ArtVo%2C%20Robina%20Town%20Centre%2C%20Gold%20Coast",
+      "venue_name": "ArtVo"
     },
     {
       "title": "Sunday Sessions",
@@ -2754,7 +2879,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Bowls and Community Club"
     },
     {
       "title": "Mamma Mia! The Musical at The Star Gold Coast",
@@ -2771,7 +2897,8 @@
       "tags": [
         "musical",
         "theatre",
-        "performance"
+        "performance",
+        "music"
       ],
       "social": false,
       "intellectual": false,
@@ -2779,7 +2906,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Inside%20Gold%20Coast%20What's%20On%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Inside%20Gold%20Coast%20What's%20On%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "petit biscuit (france)",
@@ -2797,7 +2925,8 @@
         "electronic",
         "french",
         "dance",
-        "producer"
+        "producer",
+        "music"
       ],
       "social": true,
       "intellectual": false,
@@ -2805,7 +2934,8 @@
       "creative": true,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=elsewhere%2C%2023%20Cavill%20Avenue%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "elsewhere"
     },
     {
       "title": "SESSION 26 (All Ages)",
@@ -2829,7 +2959,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast",
+      "venue_name": "Mo's Desert Clubhouse"
     },
     {
       "title": "Sunday Night Comedy",
@@ -2846,7 +2977,8 @@
       "tags": [
         "comedy",
         "standup",
-        "nightlife"
+        "nightlife",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -2854,7 +2986,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Bar%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Bar%2C%20Gold%20Coast",
+      "venue_name": "Atrium Bar"
     },
     {
       "title": "Gold Coast Whale Watching Cruise",
@@ -2879,7 +3012,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Kokomo%20Cruises%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Kokomo%20Cruises%2C%20Gold%20Coast",
+      "venue_name": "Kokomo Cruises"
     },
     {
       "title": "Fingal Head Learn-to-Surf Day Trip from the Gold Coast or Byron Bay",
@@ -2906,7 +3040,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Spirit of Gold Coast Whale Watching",
@@ -2931,7 +3066,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Coffee Morning",
@@ -2957,7 +3093,8 @@
       "creative": false,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Helensvale%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Helensvale%2C%20Gold%20Coast",
+      "venue_name": "Club Helensvale"
     },
     {
       "title": "Student Club Bouldering Wall",
@@ -2981,7 +3118,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Southern%20Cross%20University%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Southern%20Cross%20University%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": "Southern Cross University Gold Coast"
     },
     {
       "title": "Weekly Rehearsal (1)",
@@ -3007,7 +3145,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=A.B.%20Paterson%20College%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=A.B.%20Paterson%20College%2C%20Gold%20Coast",
+      "venue_name": "A.B. Paterson College"
     },
     {
       "title": "Movie Mornings at Currumbin RSL",
@@ -3031,7 +3170,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=165%20Duringan%20St%2C%20Currumbin%20QLD%204223%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=165%20Duringan%20St%2C%20Currumbin%20QLD%204223%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "165 Duringan Street"
     },
     {
       "title": "Strung Out (USA)",
@@ -3059,7 +3199,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Miami%20Marketta%20(18%2B)%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Miami%20Marketta%20(18%2B)%2C%20Gold%20Coast",
+      "venue_name": "Miami Marketta"
     },
     {
       "title": "Trivia",
@@ -3084,7 +3225,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Sports%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Sports%20Club%2C%20Gold%20Coast",
+      "venue_name": "Burleigh Sports Club"
     },
     {
       "title": "Southport Sharks Free Trivia",
@@ -3109,7 +3251,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Trivia Night",
@@ -3134,7 +3277,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Trivia Night",
@@ -3160,7 +3304,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Bowls and Community Club"
     },
     {
       "title": "Save the Koala Day",
@@ -3188,7 +3333,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%20events%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%20events%2C%20Gold%20Coast",
+      "venue_name": "Currumbin Wildlife Sanctuary"
     },
     {
       "title": "Friday Night Comedy",
@@ -3205,7 +3351,8 @@
       "tags": [
         "comedy",
         "standup",
-        "drinks"
+        "drinks",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -3213,7 +3360,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Madocke%20Beer%20Brewing%20Company%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Madocke%20Beer%20Brewing%20Company%2C%20Gold%20Coast",
+      "venue_name": "Madocke Beer Brewing Company"
     },
     {
       "title": "Small-Group Gin Masterclass in Gold Coast",
@@ -3237,7 +3385,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=486%20Scottsdale%20Dr%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=486%20Scottsdale%20Dr%2C%20Gold%20Coast",
+      "venue_name": "486 Scottsdale Dr"
     },
     {
       "title": "Saturday Nights",
@@ -3261,7 +3410,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "TEN LEFT FEET",
@@ -3287,7 +3437,8 @@
       "creative": true,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
-      "score": 5
+      "score": 5,
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "Sunday Sessions",
@@ -3313,7 +3464,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Bowls and Community Club"
     },
     {
       "title": "GATHERING NO. 001 - The Full Moon Gathering",
@@ -3342,7 +3494,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=El%20Ranchero%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=El%20Ranchero%2C%20Gold%20Coast",
+      "venue_name": "El Ranchero"
     },
     {
       "title": "Sunday Night Comedy",
@@ -3360,7 +3513,8 @@
         "comedy",
         "standup",
         "food",
-        "drinks"
+        "drinks",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -3368,7 +3522,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Bar%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Bar%2C%20Gold%20Coast",
+      "venue_name": "Atrium Bar"
     },
     {
       "title": "Weekly Rehearsal (1)",
@@ -3394,7 +3549,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=A.B.%20Paterson%20College%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=A.B.%20Paterson%20College%2C%20Gold%20Coast",
+      "venue_name": "A.B. Paterson College"
     },
     {
       "title": "Trivia",
@@ -3419,7 +3575,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Sports%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Sports%20Club%2C%20Gold%20Coast",
+      "venue_name": "Burleigh Sports Club"
     },
     {
       "title": "THAW",
@@ -3443,7 +3600,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Surfers%20Paradise%20Beach%20%26%20Hota%20Lake%20Precinct%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Surfers%20Paradise%20Beach%20%26%20Hota%20Lake%20Precinct%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Kaleidoscope Skies",
@@ -3467,7 +3625,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%205%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%205%2C%20Gold%20Coast",
+      "venue_name": "Level 5"
     },
     {
       "title": "Trivia Night",
@@ -3492,7 +3651,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Trivia Night",
@@ -3518,7 +3678,8 @@
       "creative": false,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Bowls and Community Club"
     },
     {
       "title": "Friday Night Comedy",
@@ -3535,7 +3696,8 @@
       "tags": [
         "comedy",
         "standup",
-        "drinks"
+        "drinks",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -3543,7 +3705,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Madocke%20Beer%20Brewing%20Company%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Madocke%20Beer%20Brewing%20Company%2C%20Gold%20Coast",
+      "venue_name": "Madocke Beer Brewing Company"
     },
     {
       "title": "Lani Westerman - Feature Artist",
@@ -3570,7 +3733,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Anthea%20Polson%20Art%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Anthea%20Polson%20Art%2C%20Gold%20Coast",
+      "venue_name": "Anthea Polson Art"
     },
     {
       "title": "SIX60",
@@ -3596,7 +3760,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Outdoor%20Stage%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Outdoor%20Stage%2C%20Gold%20Coast",
+      "venue_name": "Outdoor Stage"
     },
     {
       "title": "Live Music Stage",
@@ -3621,7 +3786,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=HOTA%20Lake%20Precinct%2C%20Gold%20Coast",
+      "venue_name": "HOTA Lake Precinct"
     },
     {
       "title": "Sunday Sessions",
@@ -3647,7 +3813,8 @@
       "creative": true,
       "venue": "institution",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Bowls and Community Club"
     },
     {
       "title": "Sunday Night Comedy",
@@ -3665,7 +3832,8 @@
         "comedy",
         "standup",
         "food",
-        "drinks"
+        "drinks",
+        "performance"
       ],
       "social": true,
       "intellectual": false,
@@ -3673,7 +3841,8 @@
       "creative": true,
       "venue": "independent",
       "score": 5,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Bar%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Atrium%20Bar%2C%20Gold%20Coast",
+      "venue_name": "Atrium Bar"
     },
     {
       "title": "Grazy Arvo with Koalas at Currumbin Wildlife Sanctuary",
@@ -3699,7 +3868,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Aboriginal Art Sale at Art Yarramunua Gallery",
@@ -3724,7 +3894,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Art%20Yarramunua%20Gallery%2C%20Burleigh%20Heads%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Art%20Yarramunua%20Gallery%2C%20Burleigh%20Heads%2C%20Gold%20Coast",
+      "venue_name": "Art Yarramunua Gallery"
     },
     {
       "title": "Prison Island",
@@ -3749,7 +3920,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": null
     },
     {
       "title": "Prison Island",
@@ -3775,7 +3947,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Trickd Gold Coast",
@@ -3799,7 +3972,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Surfers Paradise to Wavebreak Island Pelican Cruise + Picnic",
@@ -3825,7 +3999,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Lionel%20Perry%20Park%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Lionel Perry Park"
     },
     {
       "title": "Whale Watching by Sea World Cruises",
@@ -3851,7 +4026,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=130%20Seaworld%20Dr%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Seaworld Drive Boatramp"
     },
     {
       "title": "Let's Roam Gold Coast Scavenger Hunt: Gold Coast Community Charm!",
@@ -3876,7 +4052,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=47%20Nerang%20St%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "47 Nerang St"
     },
     {
       "title": "Prison Island Gold Coast",
@@ -3901,7 +4078,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Prison%20Island%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Prison Island Gold Coast"
     },
     {
       "title": "Midday Broadwater Sailing Cruise includes snacks & drinks",
@@ -3926,7 +4104,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Seaworld%20Drive%20Boatramp%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Seaworld Drive Boatramp"
     },
     {
       "title": "2 Hour Private Surf Lesson at Surfers Paradise",
@@ -3952,7 +4131,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Get%20Wet%20Surf%20School%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Get Wet Surf School"
     },
     {
       "title": "Sunset Sailing Cruise includes snacks & drinks",
@@ -3969,7 +4149,8 @@
       "tags": [
         "sailing",
         "sunset",
-        "cruise"
+        "cruise",
+        "outdoor"
       ],
       "social": false,
       "intellectual": false,
@@ -3977,7 +4158,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Seaworld%20Drive%20Boatramp%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Seaworld Drive Boatramp"
     },
     {
       "title": "Small-Group Gin Masterclass in Gold Coast",
@@ -4002,7 +4184,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=486%20Scottsdale%20Dr%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "486 Scottsdale Dr"
     },
     {
       "title": "Alcotraz: Gold Coast's First Prison-Themed Cocktail Bar",
@@ -4027,7 +4210,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Alcotraz%20Gold%20Coast%3A%20Cell%20Block%20Two-Nine%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Alcotraz Gold Coast: Cell Block Two-Nine"
     },
     {
       "title": "Let's Roam Gold Coast Scavenger Hunt: Gold Coast Community Charm!",
@@ -4055,7 +4239,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%2047%20Nerang%20St%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": null
     },
     {
       "title": "Prison Island Gold Coast",
@@ -4080,7 +4265,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Prison%20Island%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Prison Island Gold Coast"
     },
     {
       "title": "ArtVo Illusions Immersive Gallery Experience",
@@ -4105,7 +4291,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=ArtVo%2C%20Robina%20Town%20Centre%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "ArtVo"
     },
     {
       "title": "Gold Coast Tandem Skydive",
@@ -4130,7 +4317,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%2018%20Coyne%20St%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": null
     },
     {
       "title": "Small-Group Gin Masterclass in Gold Coast",
@@ -4154,7 +4342,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20486%20Scottsdale%20Dr%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": null
     },
     {
       "title": "Meet the Quokkas",
@@ -4180,7 +4369,8 @@
       "creative": false,
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%20events%2C%20Gold%20Coast",
-      "score": 4
+      "score": 4,
+      "venue_name": "Currumbin Wildlife Sanctuary"
     },
     {
       "title": "NaturallyGC Kids Spring Holiday Program",
@@ -4208,7 +4398,8 @@
       "creative": false,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=City%20of%20Gold%20Coast%20Libraries%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=City%20of%20Gold%20Coast%20Libraries%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Alcotraz: Gold Coast's First Prison-Themed Cocktail Bar",
@@ -4233,7 +4424,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Alcotraz%20Gold%20Coast%3A%20Cell%20Block%20Two-Nine%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Alcotraz%20Gold%20Coast%3A%20Cell%20Block%20Two-Nine%2C%20Gold%20Coast",
+      "venue_name": "Alcotraz Gold Coast: Cell Block Two-Nine"
     },
     {
       "title": "Yappy Hour – Every Sunday at 4 Pines x Boardriders Coolangatta",
@@ -4256,7 +4448,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast",
+      "venue_name": "4 Pines x Boardriders Coolangatta"
     },
     {
       "title": "Jessie Rose LIVE on The Deck",
@@ -4281,7 +4474,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20RSL%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20RSL%2C%20Gold%20Coast",
+      "venue_name": "Currumbin RSL"
     },
     {
       "title": "Currumbin Wildlife Sanctuary General Entry Ticket",
@@ -4306,7 +4500,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%2C%20Gold%20Coast",
+      "venue_name": "Currumbin Wildlife Sanctuary"
     },
     {
       "title": "Aquaduck Gold Coast 1 hour City and River Tour",
@@ -4330,7 +4525,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=36%20Cavill%20Ave%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=36%20Cavill%20Ave%2C%20Gold%20Coast",
+      "venue_name": "36 Cavill Ave"
     },
     {
       "title": "Prison Island Gold Coast",
@@ -4355,7 +4551,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Prison%20Island%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Prison%20Island%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": "Prison Island Gold Coast"
     },
     {
       "title": "Play With Clay with Monte Lupo",
@@ -4382,7 +4579,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Len%20Wort%20Park%2C%20Currumbin%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Len%20Wort%20Park%2C%20Currumbin%2C%20Gold%20Coast",
+      "venue_name": "Len Wort Park"
     },
     {
       "title": "Surfers Paradise to Wavebreak Island Pelican Cruise + Picnic",
@@ -4407,7 +4605,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Lionel%20Perry%20Park%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Lionel%20Perry%20Park%2C%20Gold%20Coast",
+      "venue_name": "Lionel Perry Park"
     },
     {
       "title": "Private Sailing Charter for two adults on Gold Coast Broadwater",
@@ -4431,7 +4630,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Seaworld%20Drive%20Boatramp%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Seaworld%20Drive%20Boatramp%2C%20Gold%20Coast",
+      "venue_name": "Seaworld Drive Boatramp"
     },
     {
       "title": "Gold Coast Boat Hire Self-Drive with No License Required",
@@ -4455,7 +4655,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Boat%20Hire%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Boat%20Hire%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Boat Hire"
     },
     {
       "title": "30 min Jet Ski Safari",
@@ -4481,7 +4682,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Get Wet Surf School 2-Hour Surf Lesson on the Gold Coasts locals Favourite beach (12 years and up)",
@@ -4505,7 +4707,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "2.5-Hour Ultimate Learn to Surf Adventure",
@@ -4529,7 +4732,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=1509%20Gold%20Coast%20Hwy%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=1509%20Gold%20Coast%20Hwy%2C%20Gold%20Coast",
+      "venue_name": "1509 Gold Coast Hwy"
     },
     {
       "title": "School Holiday Programs",
@@ -4556,7 +4760,8 @@
       "creative": false,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%20events%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%20events%2C%20Gold%20Coast",
+      "venue_name": "Currumbin Wildlife Sanctuary"
     },
     {
       "title": "BRIT BEAT MANIA",
@@ -4584,7 +4789,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Showroom%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Showroom%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Showroom"
     },
     {
       "title": "Half Day Gold Coast Brewery Tour",
@@ -4610,7 +4816,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "APL Poker",
@@ -4634,7 +4841,8 @@
       "creative": false,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Rock On Ice: The Variety Ice Skating Show",
@@ -4659,7 +4867,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Paradise%20Resort%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Paradise%20Resort%2C%20Gold%20Coast",
+      "venue_name": "Paradise Resort"
     },
     {
       "title": "APL Poker",
@@ -4683,7 +4892,8 @@
       "creative": false,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Roaring Lion (Bob Marley Tribute)",
@@ -4710,7 +4920,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Miami%20Marketta%20(18%2B)%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Miami%20Marketta%20(18%2B)%2C%20Gold%20Coast",
+      "venue_name": "Miami Marketta"
     },
     {
       "title": "COLLEGE SENIOR MUSICAL",
@@ -4737,7 +4948,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=National%20Academy%20of%20Performing%20Arts%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=National%20Academy%20of%20Performing%20Arts%2C%20Gold%20Coast",
+      "venue_name": "National Academy of Performing Arts"
     },
     {
       "title": "CAPTAIN WOW DUO",
@@ -4763,7 +4975,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "2 EZI",
@@ -4788,7 +5001,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Juniors%2C%20Cnr%20Fraser%20Dr%20%26%2C%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Juniors%2C%20Cnr%20Fraser%20Dr%20%26%2C%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Juniors"
     },
     {
       "title": "MOSAIC",
@@ -4814,7 +5028,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "star karaoke",
@@ -4840,7 +5055,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Musgrave%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Musgrave%2C%20Gold%20Coast",
+      "venue_name": "Club Musgrave"
     },
     {
       "title": "IGNITION DUO",
@@ -4866,7 +5082,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "WEAR THE FOX HAT",
@@ -4892,7 +5109,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Club Banora Lounge"
     },
     {
       "title": "FUNNY GOATS",
@@ -4919,7 +5137,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "Gold Coast Chilli Challenge, Beer & Feast Fest 2026",
@@ -4945,7 +5164,8 @@
       "image": "",
       "venue": "aggregator",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tugun%20Leagues%20Club%2C%20Bilinga%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tugun%20Leagues%20Club%2C%20Bilinga%2C%20Gold%20Coast",
+      "venue_name": "Tugun Leagues Club"
     },
     {
       "title": "Generation of Sound",
@@ -4973,7 +5193,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast",
+      "venue_name": "Mo's Desert Clubhouse"
     },
     {
       "title": "DON ROGERS BAND",
@@ -5001,7 +5222,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "APL Poker",
@@ -5025,7 +5247,8 @@
       "creative": false,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "THE HARMONY GUYS",
@@ -5052,7 +5275,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "Club Peroxide",
@@ -5078,7 +5302,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Basement%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Basement%2C%20Gold%20Coast",
+      "venue_name": "Basement"
     },
     {
       "title": "JAMES G BRENNAN",
@@ -5104,7 +5329,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "Madonna Night: A Celebration Of The Queen Of Pop",
@@ -5132,7 +5358,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Studio%2056%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Studio%2056%2C%20Gold%20Coast",
+      "venue_name": "Studio 56"
     },
     {
       "title": "Friday Nights",
@@ -5157,7 +5384,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "MARK DIVOLA",
@@ -5183,7 +5411,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "JEZZA",
@@ -5208,7 +5437,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Juniors%2C%20Cnr%20Fraser%20Dr%20%26%2C%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Juniors%2C%20Cnr%20Fraser%20Dr%20%26%2C%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Juniors"
     },
     {
       "title": "ABBY SKYE BAND",
@@ -5235,7 +5465,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "Saturday Nights",
@@ -5259,7 +5490,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "BRIT BEAT MANIA",
@@ -5285,7 +5517,8 @@
       "creative": true,
       "venue": "institution",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Musgrave%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Musgrave%2C%20Gold%20Coast",
+      "venue_name": "Club Musgrave"
     },
     {
       "title": "SIK NU WORLD - Korn, Deftones and Evanescence Tribute Night",
@@ -5315,7 +5548,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast",
+      "venue_name": "Mo's Desert Clubhouse"
     },
     {
       "title": "THE HODADS DUO",
@@ -5341,7 +5575,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "CAPTAIN WOW DUO",
@@ -5368,7 +5603,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Club Banora Lounge"
     },
     {
       "title": "ABBY SKYE BAND",
@@ -5395,7 +5631,8 @@
       "creative": true,
       "venue": "independent",
       "score": 4,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "Koala Breakfast at Currumbin Wildlife Sanctuary",
@@ -5421,7 +5658,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Paradise Country Koala Breakfast",
@@ -5447,7 +5685,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Palm Springs High Tea at Sheraton Grand Mirage Resort",
@@ -5471,7 +5710,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Grand%20Mirage%20Resort%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Sheraton%20Grand%20Mirage%20Resort%2C%20Gold%20Coast",
+      "venue_name": "Sheraton Grand Mirage Resort"
     },
     {
       "title": "Gold Coast Boat Hire Self-Drive with No License Required",
@@ -5497,7 +5737,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Multiple%20locations%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Half Day Gold Coast Brewery Tour",
@@ -5513,7 +5754,8 @@
       "category": "Community / Other",
       "tags": [
         "beer",
-        "tour"
+        "tour",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -5521,7 +5763,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Multiple%20locations%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Gold Coast's Broadwater Private Calm Water Fishing",
@@ -5546,7 +5789,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Boat%20Ramp%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": "Seaworld Drive Boatramp"
     },
     {
       "title": "Aquaduck Gold Coast 1 hour City and River Tour",
@@ -5572,7 +5816,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=36%20Cavill%20Ave%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": "36 Cavill Ave"
     },
     {
       "title": "ArtVo Illusions Immersive Gallery Experience",
@@ -5597,7 +5842,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=ArtVo%2C%20Robina%20Town%20Centre%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": "ArtVo"
     },
     {
       "title": "Private Sailing Charter for two adults on Gold Coast Broadwater",
@@ -5615,7 +5861,8 @@
         "sailing",
         "private",
         "cruise",
-        "romantic"
+        "romantic",
+        "outdoor"
       ],
       "social": true,
       "intellectual": false,
@@ -5623,7 +5870,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Seaworld%20Drive%20Boatramp%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": "Seaworld Drive Boatramp"
     },
     {
       "title": "Aquaduck Gold Coast 1 hour City and River Tour",
@@ -5647,7 +5895,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%2036%20Cavill%20Ave%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Gold Coast's Broadwater Private Calm Water Fishing",
@@ -5673,7 +5922,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Boat%20Ramp%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Surfers Paradise to Wavebreak Island Pelican Cruise + Picnic",
@@ -5698,7 +5948,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Lionel%20Perry%20Park%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Gold Coast Boat Hire Self-Drive with No License Required",
@@ -5722,7 +5973,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Private Sailing Charter for two adults on Gold Coast Broadwater",
@@ -5747,7 +5999,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Seaworld%20Drive%20Boatramp%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "30 min Jet Ski Safari",
@@ -5772,7 +6025,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Afternoon Brisbane Half-Day Brewery Tour",
@@ -5798,7 +6052,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Half Day Gold Coast Brewery Tour",
@@ -5822,7 +6077,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Dinos Alive: An Immersive Experience - Birthday",
@@ -5848,7 +6104,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Midday Broadwater Sailing Cruise includes snacks & drinks",
@@ -5873,7 +6130,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Seaworld%20Drive%20Boatramp%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Sunset Sailing Cruise includes snacks & drinks",
@@ -5898,7 +6156,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Seaworld%20Drive%20Boatramp%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Quokka Nook Launch Weekend",
@@ -5923,7 +6182,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Hinterland Heritage Wine Tour",
@@ -5940,7 +6200,8 @@
       "tags": [
         "food",
         "wine",
-        "tour"
+        "tour",
+        "drinks"
       ],
       "social": true,
       "intellectual": false,
@@ -5948,7 +6209,8 @@
       "creative": false,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "The Big Bubble Show in Space",
@@ -5973,7 +6235,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Feel The Magic: Magic Men Live - Brisbane",
@@ -6000,7 +6263,8 @@
       "creative": true,
       "venue": "aggregator",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Brisbane%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": null
     },
     {
       "title": "Trivia",
@@ -6026,7 +6290,8 @@
       "creative": false,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mermaid%20Beach%20Surf%20Life%20Saving%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mermaid%20Beach%20Surf%20Life%20Saving%20Club%2C%20Gold%20Coast",
+      "venue_name": "Mermaid Beach Surf Life Saving Club"
     },
     {
       "title": "A Bubbly Day Out by ARC Circus",
@@ -6054,7 +6319,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Yulagi%20Space%2C%20Currumbin%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Yulagi%20Space%2C%20Currumbin%2C%20Gold%20Coast",
+      "venue_name": "Yulagi Space"
     },
     {
       "title": "Painted Wall Hanging with Monte Lupo",
@@ -6082,7 +6348,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Len%20Wort%20Park%2C%20Currumbin%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Len%20Wort%20Park%2C%20Currumbin%2C%20Gold%20Coast",
+      "venue_name": "Len Wort Park"
     },
     {
       "title": "WE SALUTE YOU: The ACDC Show feat. Maid 2 Rock (All Ages)",
@@ -6099,7 +6366,9 @@
       "tags": [
         "rock",
         "acdc",
-        "tribute"
+        "tribute",
+        "music",
+        "live music"
       ],
       "social": false,
       "intellectual": false,
@@ -6107,7 +6376,8 @@
       "creative": true,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mo's%20Desert%20Clubhouse%2C%20Gold%20Coast",
+      "venue_name": "Mo's Desert Clubhouse"
     },
     {
       "title": "Sunday session with ‘RAFF DE’",
@@ -6132,7 +6402,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Nerang%20Community%20Bowls%20Club%2C%20Cayuga%20Street%20Nerang%20QLD%204211%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Nerang%20Community%20Bowls%20Club%2C%20Cayuga%20Street%20Nerang%20QLD%204211%2C%20Gold%20Coast",
+      "venue_name": "Nerang Community Bowls Club"
     },
     {
       "title": "FREE POOL",
@@ -6156,7 +6427,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=RQ's%20Tavern%20Robina%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=RQ's%20Tavern%20Robina%2C%20Gold%20Coast",
+      "venue_name": "RQ's Tavern Robina"
     },
     {
       "title": "Gold Coast's Broadwater Private Calm Water Fishing",
@@ -6181,7 +6453,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Boat%20Ramp%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Boat%20Ramp%2C%20Gold%20Coast",
+      "venue_name": "Seaworld Drive Boatramp"
     },
     {
       "title": "Gold Coast Buffet Dinner Sightseeing Cruise",
@@ -6206,7 +6479,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Sea%20World%20Whale%20Watch%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Sea%20World%20Whale%20Watch%2C%20Gold%20Coast",
+      "venue_name": "Sea World Whale Watch"
     },
     {
       "title": "Gabby’s Dollhouse Fairylandia – School Holiday Fun at The Pines Elanora",
@@ -6231,7 +6505,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Pines%20Elanora%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Pines%20Elanora%2C%20Gold%20Coast",
+      "venue_name": "The Pines Elanora"
     },
     {
       "title": "SCOTT WHATMAN",
@@ -6257,7 +6532,8 @@
       "creative": true,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "Trivia",
@@ -6282,7 +6558,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Seductions%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Seductions%2C%20Gold%20Coast",
+      "venue_name": "Seductions"
     },
     {
       "title": "Kids Pizza Making School Holiday Workshop",
@@ -6308,7 +6585,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20RSL%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20RSL%2C%20Gold%20Coast",
+      "venue_name": "Currumbin RSL"
     },
     {
       "title": "Trivia Wednesdays at 4 Pines x Boardriders Coolangatta",
@@ -6334,7 +6612,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast",
+      "venue_name": "4 Pines x Boardriders Coolangatta"
     },
     {
       "title": "Kids Pizza Making School Holiday Workshop",
@@ -6360,7 +6639,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20RSL%2C%20QLD%2C%204223%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20RSL%2C%20QLD%2C%204223%2C%20Gold%20Coast",
+      "venue_name": "Currumbin RSL"
     },
     {
       "title": "Live with the Pines – Every Thursday at 4 Pines x Boardriders Coolangatta",
@@ -6386,7 +6666,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast",
+      "venue_name": "4 Pines x Boardriders Coolangatta"
     },
     {
       "title": "THE HITMEN TRIO",
@@ -6413,7 +6694,8 @@
       "creative": true,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "secondspace u18",
@@ -6442,7 +6724,8 @@
       "creative": true,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=elsewhere%2C%2023%20Cavill%20Avenue%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=elsewhere%2C%2023%20Cavill%20Avenue%2C%20Gold%20Coast",
+      "venue_name": "elsewhere"
     },
     {
       "title": "Live Music",
@@ -6466,7 +6749,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Tallebudgera%20Surf%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Tallebudgera%20Surf%20Club%2C%20Gold%20Coast",
+      "venue_name": "Tallebudgera Surf Club"
     },
     {
       "title": "DANNY FAIFAI",
@@ -6492,7 +6776,8 @@
       "creative": true,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=The%20Stage%20(18%2B)%2C%202%20Wharf%20st%2C%20Tweed%20Heads%2C%20NSW%202486%2C%20Gold%20Coast",
+      "venue_name": "The Stage (18+)"
     },
     {
       "title": "Aviary Rooftop Rodeo Fridays",
@@ -6517,7 +6802,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Aviary%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": "Aviary"
     },
     {
       "title": "Sharks Events Centre Fletch & Hindy Live",
@@ -6541,7 +6827,8 @@
       "creative": true,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Sharks%20Events%20Centre%2C%20Gold%20Coast",
-      "score": 3
+      "score": 3,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Friday Nights",
@@ -6566,7 +6853,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Jet Ski Safaris - 30 Minute Jet Ski Hire",
@@ -6591,7 +6879,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Fever%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "CHARLOTTE’S WEB THE MUSICAL",
@@ -6620,7 +6909,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=National%20Academy%20of%20Performing%20Arts%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=National%20Academy%20of%20Performing%20Arts%2C%20Gold%20Coast",
+      "venue_name": "National Academy of Performing Arts"
     },
     {
       "title": "MUSIC TRIVIA",
@@ -6646,7 +6936,8 @@
       "creative": false,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Nerang%20Community%20Bowls%20Club%2C%20Cayuga%20Street%20Nerang%20QLD%204211%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Nerang%20Community%20Bowls%20Club%2C%20Cayuga%20Street%20Nerang%20QLD%204211%2C%20Gold%20Coast",
+      "venue_name": "Nerang Community Bowls Club"
     },
     {
       "title": "Sunday session with ‘BRETT MOONEY’",
@@ -6671,7 +6962,8 @@
       "creative": true,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Nerang%20Community%20Bowls%20Club%2C%20Cayuga%20Street%20Nerang%20QLD%204211%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Nerang%20Community%20Bowls%20Club%2C%20Cayuga%20Street%20Nerang%20QLD%204211%2C%20Gold%20Coast",
+      "venue_name": "Nerang Community Bowls Club"
     },
     {
       "title": "Campus tours",
@@ -6695,7 +6987,8 @@
       "creative": false,
       "venue": "institution",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Southern%20Cross%20University%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Southern%20Cross%20University%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": "Southern Cross University Gold Coast"
     },
     {
       "title": "The Margarita Club Night",
@@ -6720,7 +7013,8 @@
       "creative": false,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=El%20Ranchero%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=El%20Ranchero%2C%20Gold%20Coast",
+      "venue_name": "El Ranchero"
     },
     {
       "title": "piero pirupa (Italy/catch & release/nonstop) - long weekend",
@@ -6747,7 +7041,8 @@
       "creative": true,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=elsewhere%2C%2023%20Cavill%20Avenue%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=elsewhere%2C%2023%20Cavill%20Avenue%2C%20Gold%20Coast",
+      "venue_name": "elsewhere"
     },
     {
       "title": "rsquared (uk/defected) - long weekend",
@@ -6774,7 +7069,8 @@
       "creative": true,
       "venue": "independent",
       "score": 3,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=elsewhere%2C%2023%20Cavill%20Avenue%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=elsewhere%2C%2023%20Cavill%20Avenue%2C%20Gold%20Coast",
+      "venue_name": "elsewhere"
     },
     {
       "title": "Gold Coast T100 Triathlon & 10km Run",
@@ -6791,7 +7087,8 @@
       "tags": [
         "sport",
         "running",
-        "outdoor"
+        "outdoor",
+        "fitness"
       ],
       "social": true,
       "intellectual": false,
@@ -6799,7 +7096,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Gold Coast Running Festival",
@@ -6816,7 +7114,8 @@
       "tags": [
         "sport",
         "running",
-        "outdoor"
+        "outdoor",
+        "fitness"
       ],
       "social": true,
       "intellectual": false,
@@ -6824,7 +7123,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Destination%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Learning Adviser Gold Coast Library Drop-in",
@@ -6847,7 +7147,8 @@
       "creative": false,
       "venue": "institution",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Southern%20Cross%20University%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Southern%20Cross%20University%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": "Southern Cross University Gold Coast"
     },
     {
       "title": "Gymnastics Australia National Clubs Carnival",
@@ -6872,7 +7173,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=What's%20On%20Gold%20Coast%2C%20Carrara%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=What's%20On%20Gold%20Coast%2C%20Carrara%2C%20Gold%20Coast",
+      "venue_name": null
     },
     {
       "title": "Bingo",
@@ -6896,7 +7198,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Helensvale%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Helensvale%2C%20Gold%20Coast",
+      "venue_name": "Club Helensvale"
     },
     {
       "title": "Bingo",
@@ -6920,7 +7223,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Helensvale%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Helensvale%2C%20Gold%20Coast",
+      "venue_name": "Club Helensvale"
     },
     {
       "title": "Monday Bingo at Currumbin RSL",
@@ -6944,7 +7248,8 @@
       "creative": false,
       "venue": "institution",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=165%20Duringan%20Street%2C%20Currumbin%2C%20QLD%2C%20Australia%2C%20Queensland%204223%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=165%20Duringan%20Street%2C%20Currumbin%2C%20QLD%2C%20Australia%2C%20Queensland%204223%2C%20Gold%20Coast",
+      "venue_name": "165 Duringan Street"
     },
     {
       "title": "Tuesday Bingo at Currumbin RSL",
@@ -6968,7 +7273,8 @@
       "creative": false,
       "venue": "institution",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=165%20Duringan%20Street%2C%20Currumbin%2C%20QLD%2C%20Australia%2C%20Queensland%204223%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=165%20Duringan%20Street%2C%20Currumbin%2C%20QLD%2C%20Australia%2C%20Queensland%204223%2C%20Gold%20Coast",
+      "venue_name": "165 Duringan Street"
     },
     {
       "title": "australian poker league",
@@ -6994,7 +7300,8 @@
       "creative": false,
       "venue": "institution",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Musgrave%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Musgrave%2C%20Gold%20Coast",
+      "venue_name": "Club Musgrave"
     },
     {
       "title": "Gallery Restaurant | Saturday 26 September 2026",
@@ -7019,7 +7326,8 @@
       "creative": false,
       "venue": "institution",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Turf%20Club%20%2F%20Magic%20Millions%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Turf%20Club%20%2F%20Magic%20Millions%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Turf Club / Magic Millions"
     },
     {
       "title": "Skyline Restaurant | Saturday 26 September 2026",
@@ -7044,7 +7352,8 @@
       "creative": false,
       "venue": "institution",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Turf%20Club%20%2F%20Magic%20Millions%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Turf%20Club%20%2F%20Magic%20Millions%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Turf Club / Magic Millions"
     },
     {
       "title": "Podcast Royale 3.0",
@@ -7069,7 +7378,8 @@
       "creative": true,
       "venue": "institution",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Convention%20and%20Exhibition%20Centre%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Convention%20and%20Exhibition%20Centre%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Convention and Exhibition Centre"
     },
     {
       "title": "Bridge to No Bridge",
@@ -7092,7 +7402,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Yacht%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Yacht%20Club%2C%20Gold%20Coast",
+      "venue_name": "Southport Yacht Club"
     },
     {
       "title": "FUN BINGO",
@@ -7117,7 +7428,8 @@
       "creative": false,
       "venue": "independent",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Club Banora Lounge"
     },
     {
       "title": "APL Poker",
@@ -7141,7 +7453,8 @@
       "creative": false,
       "venue": "institution",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "School Holiday Build-A-Bear Workshop at Soul Boardwalk",
@@ -7166,7 +7479,8 @@
       "creative": true,
       "venue": "aggregator",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Soul%20Boardwalk%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Soul%20Boardwalk%2C%20Gold%20Coast",
+      "venue_name": "Soul Boardwalk"
     },
     {
       "title": "Gallery Restaurant | Saturday 03 October 2026",
@@ -7191,7 +7505,8 @@
       "creative": false,
       "venue": "institution",
       "score": 2,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Turf%20Club%20%2F%20Magic%20Millions%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Turf%20Club%20%2F%20Magic%20Millions%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Turf Club / Magic Millions"
     },
     {
       "title": "Australasian Majors",
@@ -7216,7 +7531,8 @@
       "creative": false,
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Convention%20and%20Exhibition%20Centre%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Gold Coast Convention and Exhibition Centre"
     },
     {
       "title": "Help Name the Quokkas",
@@ -7241,7 +7557,8 @@
       "creative": false,
       "venue": "institution",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20Wildlife%20Sanctuary%20events%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Currumbin Wildlife Sanctuary"
     },
     {
       "title": "Sunday Raffles",
@@ -7265,7 +7582,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast",
+      "venue_name": "Burleigh Leagues Club"
     },
     {
       "title": "Wings & Jugs",
@@ -7289,7 +7607,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast",
+      "venue_name": "Burleigh Leagues Club"
     },
     {
       "title": "Bingo",
@@ -7314,7 +7633,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%201%2C%2036%20Scarborough%20Street%2C%20SOUTHPORT%20QLD%204215%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%201%2C%2036%20Scarborough%20Street%2C%20SOUTHPORT%20QLD%204215%2C%20Gold%20Coast",
+      "venue_name": "36 Scarborough Street"
     },
     {
       "title": "Jag The Joker",
@@ -7337,7 +7657,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Saturday Raffles",
@@ -7362,7 +7683,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": ""
+      "location_url": "",
+      "venue_name": null
     },
     {
       "title": "Kaktus Bar $20 Birria Sunday",
@@ -7386,7 +7708,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Kaktus%20Bar%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Kaktus Bar"
     },
     {
       "title": "Sunday Roast",
@@ -7410,7 +7733,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Bula Bliss: Win a Fiji Holiday for 2 – Major Draw",
@@ -7435,7 +7759,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Paradise%20Point%20Bowls%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Paradise%20Point%20Bowls%20Club%2C%20Gold%20Coast",
+      "venue_name": "Paradise Point Bowls Club"
     },
     {
       "title": "Southport Sharks Raffles",
@@ -7459,7 +7784,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Raffles",
@@ -7484,7 +7810,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Sunday Member’s Draws",
@@ -7510,7 +7837,8 @@
       "creative": true,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Helensvale%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Helensvale%2C%20Gold%20Coast",
+      "venue_name": "Club Helensvale"
     },
     {
       "title": "Southport Sharks Members Cash Giveaways",
@@ -7533,7 +7861,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Sunday Sessions",
@@ -7557,7 +7886,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Southport Sharks Rolling Riches",
@@ -7580,7 +7910,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Monday Kids Eat FREE!",
@@ -7605,7 +7936,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast",
+      "venue_name": "Burleigh Leagues Club"
     },
     {
       "title": "Burgers",
@@ -7629,7 +7961,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Finn%20McCool's%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Finn%20McCool's%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": "Finn McCool's Gold Coast"
     },
     {
       "title": "Our Shout – Every Monday at 4 Pines x Boardriders Coolangatta",
@@ -7654,7 +7987,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast",
+      "venue_name": "4 Pines x Boardriders Coolangatta"
     },
     {
       "title": "Sunday Raffles",
@@ -7678,7 +8012,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": ""
+      "location_url": "",
+      "venue_name": null
     },
     {
       "title": "Parmi Monday",
@@ -7702,7 +8037,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Pirate’s Plunder",
@@ -7725,7 +8061,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": ""
+      "location_url": "",
+      "venue_name": null
     },
     {
       "title": "Monday Night Raffles at Currumbin RSL",
@@ -7750,7 +8087,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20RSL%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Currumbin%20RSL%2C%20Gold%20Coast",
+      "venue_name": "Currumbin RSL"
     },
     {
       "title": "Tuesday $19.90 Steak Night",
@@ -7774,7 +8112,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Leagues%20Club%2C%20Gold%20Coast",
+      "venue_name": "Burleigh Leagues Club"
     },
     {
       "title": "Cantina Night – Every Tuesday at 4 Pines x Boardriders Coolangatta",
@@ -7799,7 +8138,8 @@
       "creative": false,
       "venue": "aggregator",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=4%20Pines%20x%20Boardriders%20Coolangatta%2C%20Gold%20Coast",
+      "venue_name": "4 Pines x Boardriders Coolangatta"
     },
     {
       "title": "Bingo",
@@ -7824,7 +8164,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%201%2C%2036%20Scarborough%20Street%2C%20SOUTHPORT%20QLD%204215%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%201%2C%2036%20Scarborough%20Street%2C%20SOUTHPORT%20QLD%204215%2C%20Gold%20Coast",
+      "venue_name": "36 Scarborough Street"
     },
     {
       "title": "T-Bone Tuesday",
@@ -7848,7 +8189,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Tuesday Night Bingo",
@@ -7873,7 +8215,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%201%2C%2036%20Scarborough%20Street%2C%20SOUTHPORT%20QLD%204215%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Level%201%2C%2036%20Scarborough%20Street%2C%20SOUTHPORT%20QLD%204215%2C%20Gold%20Coast",
+      "venue_name": "36 Scarborough Street"
     },
     {
       "title": "Diamond Dollars",
@@ -7896,7 +8239,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Kids Eat Free",
@@ -7922,7 +8266,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Midweek Cash Splash",
@@ -7945,7 +8290,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Aviary Half Price Wednesdays",
@@ -7969,7 +8315,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Aviary%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Aviary"
     },
     {
       "title": "Midweek Members Draw",
@@ -7993,7 +8340,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Broadbeach%2C%20QLD%2C%204218%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Broadbeach%2C%20QLD%2C%204218%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Kaktus Bar Healthcare Heroes Night",
@@ -8017,7 +8365,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Kaktus%20Bar%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Kaktus Bar"
     },
     {
       "title": "Wednesday Members Night",
@@ -8041,7 +8390,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Member’s Draw",
@@ -8064,7 +8414,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Seductions%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Seductions%2C%20Gold%20Coast",
+      "venue_name": "Seductions"
     },
     {
       "title": "Thursday Night Raffles",
@@ -8088,7 +8439,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Sports%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Sports%20Club%2C%20Gold%20Coast",
+      "venue_name": "Burleigh Sports Club"
     },
     {
       "title": "Members Draw",
@@ -8112,7 +8464,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Mermaid%20Beach%20Surf%20Life%20Saving%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Mermaid%20Beach%20Surf%20Life%20Saving%20Club%2C%20Gold%20Coast",
+      "venue_name": "Mermaid Beach Surf Life Saving Club"
     },
     {
       "title": "Southport Sharks Cash Builder",
@@ -8135,7 +8488,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Wednesday Schnitzel Night",
@@ -8159,7 +8513,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Wednesday Night Members Draw + Community Raffles",
@@ -8184,7 +8539,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "MEAT RAFFLES",
@@ -8208,7 +8564,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Club Banora Lounge"
     },
     {
       "title": "Aviary Locals Sip & Save",
@@ -8231,7 +8588,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Aviary%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Aviary"
     },
     {
       "title": "Kaktus Bar $6 Taco Therapy",
@@ -8255,7 +8613,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Kaktus%20Bar%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Kaktus Bar"
     },
     {
       "title": "Kids Eat Free Thursdays",
@@ -8280,7 +8639,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Southport Sharks Raffles",
@@ -8304,7 +8664,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Southport Sharks Members Cash Giveaways",
@@ -8327,7 +8688,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "FUN BINGO",
@@ -8352,7 +8714,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Club Banora Lounge"
     },
     {
       "title": "Cooly Cash Splash",
@@ -8375,7 +8738,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": ""
+      "location_url": "",
+      "venue_name": null
     },
     {
       "title": "Southport Sharks $5k Fridays",
@@ -8398,7 +8762,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Thursday Steak Night",
@@ -8422,7 +8787,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Market Night Raffles",
@@ -8446,7 +8812,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Juniors Raffles",
@@ -8470,7 +8837,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Juniors%2C%20Cnr%20Fraser%20Dr%20%26%2C%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Juniors%2C%20Cnr%20Fraser%20Dr%20%26%2C%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Juniors"
     },
     {
       "title": "Feel-Good Friday Cash Frenzy",
@@ -8493,7 +8861,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Spring into $5000 – Members Giveaway",
@@ -8516,7 +8885,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Broadbeach%2C%20QLD%2C%204218%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Broadbeach%2C%20QLD%2C%204218%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Weekly Raffle",
@@ -8541,7 +8911,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Bowls and Community Club"
     },
     {
       "title": "AFL Grand Final Day",
@@ -8567,7 +8938,8 @@
       "creative": true,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Finn%20McCool's%20Gold%20Coast%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Finn%20McCool's%20Gold%20Coast%2C%20Gold%20Coast",
+      "venue_name": "Finn McCool's Gold Coast"
     },
     {
       "title": "Southport Sharks Spring Cash Saturdays",
@@ -8590,7 +8962,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Friday Raffles",
@@ -8614,7 +8987,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Friday Raffles",
@@ -8638,7 +9012,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Club Banora Lounge"
     },
     {
       "title": "Money Bank",
@@ -8661,7 +9036,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Jag The Joker",
@@ -8684,7 +9060,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Saturday Raffles",
@@ -8709,7 +9086,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": ""
+      "location_url": "",
+      "venue_name": null
     },
     {
       "title": "Kaktus Bar $20 Birria Sunday",
@@ -8733,7 +9111,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Kaktus%20Bar%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Kaktus Bar"
     },
     {
       "title": "Sunday Roast",
@@ -8757,7 +9136,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Southport Sharks Raffles",
@@ -8781,7 +9161,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Southport Sharks Members Cash Giveaways",
@@ -8804,7 +9185,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Sunday Sessions",
@@ -8828,7 +9210,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Southport Sharks Rolling Riches",
@@ -8851,7 +9234,8 @@
       "creative": false,
       "venue": "independent",
       "location_url": "https://www.google.com/maps/search/?api=1&query=Southport%20Sharks%2C%20Gold%20Coast",
-      "score": 1
+      "score": 1,
+      "venue_name": "Southport Sharks"
     },
     {
       "title": "Sunday Raffles",
@@ -8875,7 +9259,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": ""
+      "location_url": "",
+      "venue_name": null
     },
     {
       "title": "Parmi Monday",
@@ -8899,7 +9284,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Pirate’s Plunder",
@@ -8924,7 +9310,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": ""
+      "location_url": "",
+      "venue_name": null
     },
     {
       "title": "T-Bone Tuesday",
@@ -8948,7 +9335,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Diamond Dollars",
@@ -8973,7 +9361,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Kids Eat Free",
@@ -9000,7 +9389,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Midweek Cash Splash",
@@ -9023,7 +9413,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Midweek Members Draw",
@@ -9047,7 +9438,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Broadbeach%2C%20QLD%2C%204218%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Broadbeach%2C%20QLD%2C%204218%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Wednesday Members Night",
@@ -9071,7 +9463,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Thursday Night Raffles",
@@ -9095,7 +9488,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Sports%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Burleigh%20Sports%20Club%2C%20Gold%20Coast",
+      "venue_name": "Burleigh Sports Club"
     },
     {
       "title": "Wednesday Schnitzel Night",
@@ -9119,7 +9513,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Wednesday Night Members Draw + Community Raffles",
@@ -9144,7 +9539,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "MEAT RAFFLES",
@@ -9168,7 +9564,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Club Banora Lounge"
     },
     {
       "title": "Kids Eat Free Thursdays",
@@ -9193,7 +9590,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Thursday Steak Night",
@@ -9217,7 +9615,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Market Night Raffles",
@@ -9241,7 +9640,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Juniors Raffles",
@@ -9265,7 +9665,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Juniors%2C%20Cnr%20Fraser%20Dr%20%26%2C%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Juniors%2C%20Cnr%20Fraser%20Dr%20%26%2C%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Juniors"
     },
     {
       "title": "Feel-Good Friday Cash Frenzy",
@@ -9288,7 +9689,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Weekly Raffle",
@@ -9313,7 +9715,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Gold%20Coast%20Bowls%20and%20Community%20Club%2C%20Gold%20Coast",
+      "venue_name": "Gold Coast Bowls and Community Club"
     },
     {
       "title": "Friday Raffles",
@@ -9337,7 +9740,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Coolangatta%20Surf%20Club%2C%2061%20Marine%20Parade%2C%20Coolangatta%2C%20QLD%2C%204225%2C%20Gold%20Coast",
+      "venue_name": "Coolangatta Surf Club"
     },
     {
       "title": "Friday Raffles",
@@ -9361,7 +9765,8 @@
       "creative": false,
       "venue": "independent",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Banora%20Lounge%2C%202%20Leisure%20Dr%2C%20Banora%20Point%20NSW%202486%2C%20Australia%2C%20Gold%20Coast",
+      "venue_name": "Club Banora Lounge"
     },
     {
       "title": "Saturday Raffles",
@@ -9385,7 +9790,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": ""
+      "location_url": "",
+      "venue_name": null
     },
     {
       "title": "Sunday Roast",
@@ -9409,7 +9815,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     },
     {
       "title": "Sunday Sessions",
@@ -9433,7 +9840,8 @@
       "creative": false,
       "venue": "institution",
       "score": 1,
-      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast"
+      "location_url": "https://www.google.com/maps/search/?api=1&query=Club%20Broadbeach%2C%20169%20Surf%20Parade%2C%20Gold%20Coast",
+      "venue_name": "Club Broadbeach"
     }
   ],
   "ranked_at": "2026-09-21",

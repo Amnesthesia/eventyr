@@ -60,6 +60,9 @@ export default function MoreFilters() {
 		setMinScore,
 		hiddenCount,
 		clearHidden,
+		venues,
+		activeVenue,
+		setActiveVenue,
 	} = useEventsContext();
 	const [tagQuery, setTagQuery] = useState("");
 
@@ -195,6 +198,29 @@ export default function MoreFilters() {
 					</div>
 				</div>
 			</div>
+
+			{venues.length > 0 && (
+				<div className="frow">
+					<span className="frow-label">Venue</span>
+					<div className="frow-body">
+						{/* Native select: a city has ~300 venues, and the platform
+						    picker already does type-to-jump and a usable phone wheel. */}
+						<select
+							className="venue-select"
+							aria-label="Venue"
+							value={activeVenue ?? ""}
+							onChange={(e) => setActiveVenue(e.target.value || null)}
+						>
+							<option value="">Any venue</option>
+							{venues.map((v) => (
+								<option key={v.name} value={v.name}>
+									{v.name} ({v.count})
+								</option>
+							))}
+						</select>
+					</div>
+				</div>
+			)}
 
 			<div className="frow">
 				<span className="frow-label">Time</span>
