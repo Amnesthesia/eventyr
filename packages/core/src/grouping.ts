@@ -152,7 +152,7 @@ function byEndDate(a: EventData, b: EventData): number {
 
 function groupByDate(
 	events: EventData[],
-	window: DateWindow,
+	dateWindow: DateWindow,
 	today: string,
 	prefs: TagPrefs,
 ): EventGroup[] {
@@ -168,8 +168,8 @@ function groupByDate(
 	for (const event of events) {
 		const start = startDate(event);
 		if (!start) undated.push(event);
-		else if (start < window.from) ongoing.push(event);
-		else if (start > window.to) later.push(event);
+		else if (start < dateWindow.from) ongoing.push(event);
+		else if (start > dateWindow.to) later.push(event);
 		else byDay.set(start, [...(byDay.get(start) ?? []), event]);
 	}
 
@@ -177,7 +177,7 @@ function groupByDate(
 	// Walked forward across the window so the days come out in order and empty
 	// ones are simply absent — a heading with nothing under it is not an
 	// overview.
-	for (let day = window.from; day <= window.to; day = addDays(day, 1)) {
+	for (let day = dateWindow.from; day <= dateWindow.to; day = addDays(day, 1)) {
 		const dayEvents = byDay.get(day);
 		if (dayEvents?.length) {
 			groups.push({
@@ -217,12 +217,12 @@ function groupByDate(
 export function groupEvents(
 	events: EventData[],
 	mode: GroupBy,
-	window: DateWindow,
+	dateWindow: DateWindow,
 	today: string = todayIso(),
 	prefs: TagPrefs = {},
 ): EventGroup[] {
 	if (mode === "none") return [{ key: "all", label: "", events }];
-	if (mode === "date") return groupByDate(events, window, today, prefs);
+	if (mode === "date") return groupByDate(events, dateWindow, today, prefs);
 
 	const buckets = new Map<string, EventData[]>();
 	for (const event of events) {
