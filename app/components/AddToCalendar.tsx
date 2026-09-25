@@ -15,7 +15,7 @@ import type { EventData } from "@dothingslol/core/schema";
 import { CalendarPlus } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useEventsContext } from "../context";
-import { downloadEventIcs } from "../utils/ics";
+import { downloadEventIcs } from "../utils/icsDownload";
 import { type CalendarTarget, calendarTarget } from "../utils/platform";
 import { noteInterest } from "../utils/tasteStore";
 

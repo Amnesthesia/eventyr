@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { EventData } from "@dothingslol/core/schema";
-import { buildEventIcs, buildIcs, icsFilename } from "./ics";
+import { buildEventIcs, buildIcs, icsFilename } from "./ics.ts";
+import type { EventData } from "./schema.ts";
 
 const BNE = "Australia/Brisbane";
 

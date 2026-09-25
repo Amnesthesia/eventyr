@@ -262,7 +262,8 @@ const vibes = vibesOf(event as EventData);
 <script>
   // No framework: these two buttons are the only interactive things on the
   // page, and every helper is React-free.
-  import { downloadEventIcs, buildEventIcs } from "@react/utils/ics";
+  import { buildEventIcs } from "@dothingslol/core/ics";
+  import { downloadEventIcs } from "@react/utils/icsDownload";
   import { calendarLinks } from "@dothingslol/core/calendarLinks";
   import { calendarTarget } from "@react/utils/platform";
   import { shareEvent } from "@react/utils/share";

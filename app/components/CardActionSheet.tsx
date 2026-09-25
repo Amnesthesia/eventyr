@@ -9,7 +9,7 @@ import { CalendarPlus, Check, Minus, Plus, Share2 } from "lucide-react";
 import { useState } from "react";
 import { useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
-import { downloadEventIcs } from "../utils/ics";
+import { downloadEventIcs } from "../utils/icsDownload";
 import { shareEvent } from "../utils/share";
 import { noteInterest } from "../utils/tasteStore";
 

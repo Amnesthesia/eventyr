@@ -16,8 +16,8 @@
 //   * TEXT values need escaping and long lines need folding, or clients reject
 //     the file.
 
-import type { EventData } from "@dothingslol/core/schema";
-import { eventHash, eventPath, SITE_URL } from "@dothingslol/core/shared";
+import type { EventData } from "./schema.ts";
+import { eventHash, eventPath, SITE_URL } from "./shared.ts";
 
 const TIMED = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/;
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
@@ -145,33 +145,4 @@ export function icsFilename(event: EventData): string {
 			.replace(/^-|-$/g, "")
 			.slice(0, 50) || "event";
 	return `${name}.ics`;
-}
-
-/**
- * Triggers the download. Built as a Blob on click rather than a data: URI at
- * render time: 643 inline URIs would bloat every page, and the content would
- * otherwise be computed during SSR where anything time-dependent differs from
- * the hydrated render.
- */
-export function downloadEventIcs(
-	event: EventData,
-	cityKey: string,
-	timezone: string,
-): boolean {
-	const ics = buildEventIcs(event, cityKey, timezone);
-	if (!ics) return false;
-	downloadIcs(ics, icsFilename(event));
-	return true;
-}
-
-export function downloadIcs(ics: string, filename: string): void {
-	const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
-	const href = URL.createObjectURL(blob);
-	const a = document.createElement("a");
-	a.href = href;
-	a.download = filename;
-	a.click();
-	// Released on the next tick: revoking synchronously can cancel the download
-	// before the browser has read the blob.
-	setTimeout(() => URL.revokeObjectURL(href), 0);
 }

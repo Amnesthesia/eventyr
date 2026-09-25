@@ -10,6 +10,7 @@
 // involve emailing yourself a file.
 
 import { addDays, shortDate, startOfWeek } from "@dothingslol/core/dates";
+import { buildIcs } from "@dothingslol/core/ics";
 import { QR_EVENT_LIMIT, savedCalendarUrl } from "@dothingslol/core/savedLink";
 import type { EventData } from "@dothingslol/core/schema";
 import { catToSlug, eventPath } from "@dothingslol/core/shared";
@@ -26,7 +27,7 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { eventId, useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
-import { buildIcs, downloadIcs } from "../utils/ics";
+import { downloadIcs } from "../utils/icsDownload";
 import { shareUrl } from "../utils/share";
 import SavedCalendarQr from "./SavedCalendarQr";
 
