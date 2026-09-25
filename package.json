@@ -39,6 +39,7 @@
     "@anthropic-ai/sdk": "^0.96.0",
     "@astrojs/react": "^5.0.5",
     "@dothingslol/core": "workspace:*",
+    "@dothingslol/llm": "workspace:*",
     "@dothingslol/utils": "workspace:*",
     "@google/genai": "^2.3.0",
     "@picocss/pico": "^2.0.6",

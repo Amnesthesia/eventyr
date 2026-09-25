@@ -1,0 +1,25 @@
+{
+	"name": "@dothingslol/llm",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./src/index.ts",
+		"./testing": "./src/testing.ts"
+	},
+	"scripts": {
+		"test": "tsx --test 'src/**/*.test.ts'",
+		"typecheck": "tsc --noEmit -p tsconfig.json"
+	},
+	"dependencies": {
+		"@dothingslol/utils": "workspace:*",
+		"@google/genai": "^2.3.0",
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@types/node": "^25.8.0",
+		"tsx": "catalog:",
+		"typescript": "catalog:"
+	}
+}

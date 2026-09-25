@@ -41,6 +41,9 @@ importers:
       '@dothingslol/core':
         specifier: workspace:*
         version: link:packages/core
+      '@dothingslol/llm':
+        specifier: workspace:*
+        version: link:packages/llm
       '@dothingslol/utils':
         specifier: workspace:*
         version: link:packages/utils
@@ -123,6 +126,28 @@ importers:
       '@dothingslol/utils':
         specifier: workspace:*
         version: link:../utils
+      zod:
+        specifier: 'catalog:'
+        version: 4.6.5
+    devDependencies:
+      '@types/node':
+        specifier: ^25.8.0
+        version: 25.8.0
+      tsx:
+        specifier: 'catalog:'
+        version: 4.22.0
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  packages/llm:
+    dependencies:
+      '@dothingslol/utils':
+        specifier: workspace:*
+        version: link:../utils
+      '@google/genai':
+        specifier: ^2.3.0
+        version: 2.3.0(@modelcontextprotocol/sdk@1.30.0(supports-color@10.2.2)(zod@4.6.5))(supports-color@10.2.2)
       zod:
         specifier: 'catalog:'
         version: 4.6.5

@@ -1,0 +1,13 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		// Node only (PLAN §2.3): the replay harness and cache stores touch the
+		// filesystem through injected stores, and the SDKs need node.
+		"target": "ES2022",
+		"lib": ["ES2022"],
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"types": ["node"]
+	},
+	"include": ["src"]
+}
