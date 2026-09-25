@@ -2,7 +2,7 @@
 // with rate limits and conditional GET, the extraction ladder (site feed →
 // JSON-LD → hydration JSON → an injected fallback), date parsing, and the
 // CandidateEvent → event mapping. No LLM code and no knowledge of data/,
-// cities or sources/*.yml: everything comes in through options.
+// cities or their source lists: everything comes in through options.
 
 export { provenanceFor, toCandidateEvent } from "./candidate.ts";
 export {

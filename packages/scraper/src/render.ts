@@ -9,7 +9,7 @@
 // half: a `fetch` implementation that returns the DOM after scripts have run,
 // which plugs into SourceFetcher so the ladder runs unchanged over rendered
 // HTML. The discovery half (render a walled host once, harvest the static
-// URLs it advertises, write them back to sources/{city}.yml) stays in the
+// URLs it advertises, write them back to the city's source list) stays in the
 // pipeline and borrows `launchBrowser` and the two signal helpers from here.
 
 import type { Browser } from "playwright";

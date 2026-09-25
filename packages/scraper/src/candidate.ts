@@ -58,7 +58,7 @@ export function toCandidateEvent(
 	fields: RawCandidateFields,
 	provenance: FetchProvenance,
 	referenceDate: Date,
-	/** The city's IANA zone (sources/{city}.yml `timezone`). */
+	/** The city's IANA zone (the city config's `timezone`). */
 	timeZone: string,
 ): CandidateEvent {
 	const { startISO, endISO } = resolveDates(

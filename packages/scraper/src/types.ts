@@ -46,7 +46,7 @@ export interface ScrapeSource {
 	homepage?: string | null;
 	/** Fills in the venue for an event whose card named none. */
 	venue?: VenueRecord;
-	/** The sources/{city}.yml tier, carried through untouched. */
+	/** The city config's tier for this source, carried through untouched. */
 	tier?: string;
 }
 
