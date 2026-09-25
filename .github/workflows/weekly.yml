@@ -3,9 +3,9 @@ name: Events — Weekly Digest
 on:
   schedule:
     # Every Sunday at 6:00 AM AEST (UTC+10) = 20:00 UTC Saturday. Targets the
-    # week starting tomorrow (getWeekRange's Sunday branch, with TZ set in
-    # digest.yml) so the coming week can be planned on Sunday; today's leftover
-    # events are carried forward by curate rather than dropped.
+    # week starting tomorrow (getWeekRange's Sunday branch, evaluated in each
+    # city's own zone) so the coming week can be planned on Sunday; today's
+    # leftover events are carried forward by curate rather than dropped.
     - cron: "0 20 * * 6"
 
   # Allow manual trigger from the GitHub Actions UI

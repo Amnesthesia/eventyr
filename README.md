@@ -348,7 +348,6 @@ Measured effects of the current settings, on the same six Brisbane hosts:
 ```bash
 pnpm install
 export CITY=brisbane
-export TZ=Australia/Brisbane     # week boundaries and "today" come from local time; CI pins this too
 export GOOGLE_API_KEY=...        # required: curation, ranking, annotation, dedupe, probing
 export GOOGLE_MAPS_API_KEY=...   # optional: Geocoding API, for the locality check above
 export ANTHROPIC_API_KEY=...     # optional search providers

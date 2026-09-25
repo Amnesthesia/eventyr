@@ -40,10 +40,7 @@ jobs:
     timeout-minutes: 120
     permissions:
       contents: write
-    env:
-      # Week boundaries and "today" are local time; the pipeline pins this
-      # everywhere so a UTC runner agrees on which day it is.
-      TZ: Australia/Brisbane
+    # No TZ pin: week boundaries and "today" come from the city's own zone.
 
     steps:
       - name: Checkout repo

@@ -169,8 +169,7 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 ## Running locally
 
 ```bash
-export CITY=brisbane   # or goldcoast, sunnycoast
-export TZ=Australia/Brisbane   # week boundaries + "today" are local time; CI pins this too
+export CITY=brisbane   # or goldcoast, sunnycoast, byron
 # at least one search provider key:
 export ANTHROPIC_API_KEY=...
 export PERPLEXITY_API_KEY=...
