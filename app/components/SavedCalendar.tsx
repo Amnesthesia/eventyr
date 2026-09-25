@@ -8,6 +8,9 @@
 // browser's localStorage and nowhere else, so without a link there is no route
 // from a laptop to a phone — or from one person to another — that does not
 // involve emailing yourself a file.
+
+import type { Event } from "@dothingslol/core/schema";
+import { eventPath } from "@dothingslol/core/shared";
 import {
 	BookmarkPlus,
 	CalendarPlus,
@@ -18,10 +21,8 @@ import {
 	X,
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { eventPath } from "../../src/shared.ts";
 import { eventId, useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
-import type { Event } from "../types";
 import { catToSlug } from "../utils/categorySlug";
 import { addDays, shortDate, startOfWeek } from "../utils/dates";
 import { buildIcs, downloadIcs } from "../utils/ics";

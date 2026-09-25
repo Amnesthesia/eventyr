@@ -6,9 +6,9 @@
 // calling model gets it for free on every call rather than needing it
 // pasted into a prompt.
 
+import { CATEGORIES } from "@dothingslol/core/shared";
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { CATEGORIES } from "../../../src/shared.ts";
 import { cityTodayFor, fetchIndex, findCity } from "./dothingsClient.ts";
 import { gatherEvents } from "./events.ts";
 import { TIMEFRAMES } from "./resolveTimeframe.ts";

@@ -9,10 +9,11 @@
 // The guess is sometimes wrong (a Windows user living in Apple Calendar), so
 // the full list is one gesture away: right-click here, or long-press the card,
 // which opens CardActionSheet with the same four rows.
+
+import type { Event } from "@dothingslol/core/schema";
 import { CalendarPlus } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useEventsContext } from "../context";
-import type { Event } from "../types";
 import { calendarLinks } from "../utils/calendarLinks";
 import { downloadEventIcs } from "../utils/ics";
 import { type CalendarTarget, calendarTarget } from "../utils/platform";

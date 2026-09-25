@@ -3,7 +3,7 @@
 // pure shaping layer over data the site already publishes, cached at the
 // Cloudflare edge since the underlying data changes at most once a day.
 
-import { SITE_URL } from "../../../src/shared.ts";
+import { SITE_URL } from "@dothingslol/core/shared";
 
 const CACHE_TTL_SECONDS = 900;
 

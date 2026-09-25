@@ -2,7 +2,7 @@
 // reads — a second copy here is exactly how the site's URLs and the generated
 // sitemap/feed URLs drift apart. Imported from shared.ts, not common.ts:
 // common.ts reads the filesystem and cannot be bundled for the browser.
-import { KEY_TO_SLUG } from "../../src/shared.ts";
+import { KEY_TO_SLUG } from "@dothingslol/core/shared";
 
 export { KEY_TO_SLUG };
 

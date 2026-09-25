@@ -1,6 +1,6 @@
 ---
 import "@react/app.css";
-import type { CityData } from "@react/types";
+import type { CityData } from "@dothingslol/core/schema";
 import { KEY_TO_SLUG } from "@react/utils/citySlug";
 import { catToSlug, catShortName } from "@react/utils/categorySlug";
 import {
@@ -10,7 +10,7 @@ import {
 	isoWithOffset,
 	offerSchema,
 	stripForDisplay,
-} from "../shared.ts";
+} from "@dothingslol/core/shared";
 import { organizerUrlsFor } from "../organizers.ts";
 
 interface Props {

@@ -3,7 +3,7 @@
 // site and that feed would end up disagreeing about which day an event
 // belongs to. Imported from shared.ts, not common.ts: common.ts reads the
 // filesystem and cannot be bundled for the browser.
-import { eventOverlapsRange, parseEndDate } from "../../src/shared.ts";
+import { eventOverlapsRange, parseEndDate } from "@dothingslol/core/shared";
 
 export { eventOverlapsRange, parseEndDate };
 

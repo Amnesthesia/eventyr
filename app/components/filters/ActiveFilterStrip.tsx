@@ -1,5 +1,5 @@
+import { LOW_SCORE_THRESHOLD } from "@dothingslol/core/shared";
 import { X } from "lucide-react";
-import { LOW_SCORE_THRESHOLD } from "../../../src/shared.ts";
 import { useEventsContext } from "../../context";
 import { catShortName } from "../../utils/categorySlug";
 import { fmtRange } from "../../utils/dates";

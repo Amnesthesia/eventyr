@@ -16,7 +16,7 @@
 // and the counts must not out-vote it — hence the tier ordering below rather
 // than a bigger number added to the same score.
 
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
 
 /** 1 = more of this, -1 = less of this. Absent = no opinion. */
 export type TagPrefs = Record<string, 1 | -1>;

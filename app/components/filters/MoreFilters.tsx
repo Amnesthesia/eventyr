@@ -1,8 +1,8 @@
-import { useMemo, useState } from "react";
 import {
 	LOW_SCORE_THRESHOLD,
 	TOP_PICK_THRESHOLD,
-} from "../../../src/shared.ts";
+} from "@dothingslol/core/shared";
+import { useMemo, useState } from "react";
 import { useEventsContext } from "../../context";
 import { VIBE_KEYS, VIBE_LABEL_SET, VIBE_LABELS } from "../../utils/vibes";
 import PastFilter from "./PastFilter";

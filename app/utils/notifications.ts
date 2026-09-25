@@ -1,6 +1,6 @@
-import { eventPath } from "../../src/shared.ts";
+import type { Event } from "@dothingslol/core/schema";
+import { eventPath } from "@dothingslol/core/shared";
 import { eventId } from "../context";
-import type { Event } from "../types";
 import { todayIso } from "./dates";
 import {
 	deleteStarredEvent,

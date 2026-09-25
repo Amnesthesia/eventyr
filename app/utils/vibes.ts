@@ -3,7 +3,7 @@
 // Shared by VibeFilter (the filter bar) and EventCard (the chips on a card) so
 // the two cannot disagree about what "hands_on" is called — the card chips
 // toggle the filter, and a label mismatch there would read as two features.
-import type { Event, VibeKey } from "../types";
+import type { Event, VibeKey } from "@dothingslol/core/schema";
 
 export const VIBE_KEYS: VibeKey[] = [
 	"intellectual",

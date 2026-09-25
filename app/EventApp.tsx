@@ -1,7 +1,7 @@
+import type { City, CityData, DateRange } from "@dothingslol/core/schema";
 import { StrictMode } from "react";
 import AppShell from "./AppShell";
 import { EventsProvider } from "./context";
-import type { City, CityData, DateRange } from "./types";
 
 interface Props {
 	cityData: CityData;

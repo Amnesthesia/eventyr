@@ -3,8 +3,8 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import Base from "../layouts/Base.astro";
 import EventApp from "@react/EventApp";
-import type { CityData, CityIndex } from "@react/types";
-import { byScoreThenSoonest } from "../shared.ts";
+import type { CityData, CityIndex } from "@dothingslol/core/schema";
+import { byScoreThenSoonest } from "@dothingslol/core/shared";
 
 const index: CityIndex = JSON.parse(
 	readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),

@@ -15,8 +15,8 @@
 // events to the browser, so the receiving page can resolve the ids with no
 // network call and no new route.
 
-import { eventHash, KEY_TO_SLUG, SITE_URL } from "../../src/shared.ts";
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
+import { eventHash, KEY_TO_SLUG, SITE_URL } from "@dothingslol/core/shared";
 
 const PARAM = "cal";
 const SEPARATOR = ".";

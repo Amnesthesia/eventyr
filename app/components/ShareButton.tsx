@@ -5,10 +5,11 @@
 // right-click "copy link", it behaves like the link it is. With JavaScript it
 // opens the native share sheet, and where that does not exist it copies the
 // URL.
+
+import type { Event } from "@dothingslol/core/schema";
+import { eventPath } from "@dothingslol/core/shared";
 import { Check, Share2 } from "lucide-react";
 import { useState } from "react";
-import { eventPath } from "../../src/shared.ts";
-import type { Event } from "../types";
 import { shareEvent } from "../utils/share";
 import { noteInterest } from "../utils/taste";
 

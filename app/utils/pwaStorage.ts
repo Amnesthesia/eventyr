@@ -1,4 +1,4 @@
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
 
 export interface StoredStarredItem {
 	id: string;

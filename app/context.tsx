@@ -1,3 +1,17 @@
+import type {
+	City,
+	CityData,
+	DateRange,
+	Event,
+	PastFilter,
+	VibeKey,
+} from "@dothingslol/core/schema";
+import {
+	type CostLocale,
+	DEFAULT_COST_LOCALE,
+	isTopPick,
+	LOW_SCORE_THRESHOLD,
+} from "@dothingslol/core/shared";
 import {
 	createContext,
 	type ReactNode,
@@ -8,22 +22,8 @@ import {
 	useRef,
 	useState,
 } from "react";
-import {
-	type CostLocale,
-	DEFAULT_COST_LOCALE,
-	isTopPick,
-	LOW_SCORE_THRESHOLD,
-} from "../src/shared.ts";
 import { useColorTheme } from "./hooks/useColorTheme";
 import { useStoredSet } from "./hooks/useStoredSet";
-import type {
-	City,
-	CityData,
-	DateRange,
-	Event,
-	PastFilter,
-	VibeKey,
-} from "./types";
 import { KEY_TO_SLUG } from "./utils/citySlug";
 import {
 	endOfMonth,

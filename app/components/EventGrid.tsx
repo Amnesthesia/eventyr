@@ -1,5 +1,5 @@
+import type { Event } from "@dothingslol/core/schema";
 import { eventId, useEventsContext } from "../context";
-import type { Event } from "../types";
 import EventCard from "./EventCard";
 
 interface Props {

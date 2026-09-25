@@ -14,8 +14,8 @@
 // Pure: no IO. common.ts loads/saves the file so this module can be imported
 // without dragging the data dir along.
 
+import { isSameSite, normaliseHost } from "@dothingslol/core/shared";
 import type { SourceEntry } from "./common.ts";
-import { isSameSite, normaliseHost } from "./shared.ts";
 
 /** Weeks of history the ledger keeps. Bounded so the file cannot grow forever. */
 export const LEDGER_WEEKS = 26;

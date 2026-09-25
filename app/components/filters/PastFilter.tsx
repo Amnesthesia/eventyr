@@ -1,5 +1,5 @@
+import type { PastFilter as PastFilterType } from "@dothingslol/core/schema";
 import { useEventsContext } from "../../context";
-import type { PastFilter as PastFilterType } from "../../types";
 
 /**
  * A segmented control, not a cycling chip.

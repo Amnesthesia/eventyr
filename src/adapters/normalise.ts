@@ -9,8 +9,8 @@
 // model — dates.ts already resolved them, and re-asking would reintroduce
 // exactly the guessing the adapter framework exists to avoid.
 
+import { zonedOffsetMinutes } from "@dothingslol/core/tz";
 import { CATEGORIES, type Category } from "../common.ts";
-import { zonedOffsetMinutes } from "../tz.ts";
 import type { CandidateEvent, SourceDefinition } from "./types.ts";
 
 /**

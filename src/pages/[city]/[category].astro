@@ -3,10 +3,10 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import Base from "../../layouts/Base.astro";
 import EventApp from "@react/EventApp";
-import type { CityData, CityIndex } from "@react/types";
+import type { CityData, CityIndex } from "@dothingslol/core/schema";
 import { SLUG_TO_KEY } from "@react/utils/citySlug";
 import { catToSlug } from "@react/utils/categorySlug";
-import { byScoreThenSoonest } from "../../shared.ts";
+import { byScoreThenSoonest } from "@dothingslol/core/shared";
 
 export function getStaticPaths() {
 	const index: CityIndex = JSON.parse(

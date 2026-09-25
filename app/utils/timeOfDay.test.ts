@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
 import { bandOf, matchesTimeBands } from "./timeOfDay";
 
 const at = (iso: string) => ({ title: "x", datetime_iso: iso }) as Event;

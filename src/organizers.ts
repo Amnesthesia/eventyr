@@ -7,8 +7,8 @@
 // per city because every event page asks.
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { type OrganizerSource, organizerUrls } from "@dothingslol/core/shared";
 import yaml from "js-yaml";
-import { type OrganizerSource, organizerUrls } from "./shared.ts";
 
 const cache = new Map<string, Map<string, string>>();
 

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import type { Event } from "@dothingslol/core/schema";
 import { renderToStaticMarkup } from "react-dom/server";
-import type { Event } from "../types";
 import { QR_EVENT_LIMIT, savedCalendarUrl } from "../utils/savedLink";
 import SavedCalendarQr from "./SavedCalendarQr";
 

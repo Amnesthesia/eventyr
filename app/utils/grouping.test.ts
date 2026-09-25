@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
 import { startOfWeek } from "./dates";
 import { dateLabel, dateWindowFor, groupEvents } from "./grouping";
 

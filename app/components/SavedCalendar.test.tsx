@@ -6,9 +6,9 @@
 // wiring breaks.
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import type { City, CityData, Event } from "@dothingslol/core/schema";
 import { renderToStaticMarkup } from "react-dom/server";
 import { EventsProvider } from "../context";
-import type { City, CityData, Event } from "../types";
 import SavedCalendar from "./SavedCalendar";
 
 function ev(partial: Partial<Event>): Event {

@@ -1,11 +1,10 @@
 import { readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-
+import { isSameSite, normaliseHost } from "@dothingslol/core/shared";
+import { addDays, zonedDate, zonedMidnight } from "@dothingslol/core/tz";
 import yaml from "js-yaml";
-import { isSameSite, normaliseHost } from "./shared.ts";
 import { sourceEarnsPlace, type YieldLedger } from "./sourceYield.ts";
-import { addDays, zonedDate, zonedMidnight } from "./tz.ts";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -17,47 +16,12 @@ export const DATA_ROOT =
 	process.env.EVENTYR_DATA_ROOT ?? join(PROJECT_ROOT, "data");
 export const SOURCES_ROOT = join(PROJECT_ROOT, "sources");
 
-export {
-	byScoreThenSoonest,
-	CATEGORIES,
-	CATEGORY_EMOJI,
-	type Category,
-	type CostLocale,
-	catShortName,
-	catToSlug,
-	costAmount,
-	DEFAULT_COST_LOCALE,
-	eventHash,
-	eventOverlapsRange,
-	eventPath,
-	eventSlug,
-	expandImpliedTags,
-	isLikelyImageUrl,
-	isoWithOffset,
-	isSameSite,
-	isTopPick,
-	KEY_TO_SLUG,
-	LOW_SCORE_THRESHOLD,
-	meetsScoreFloor,
-	mergeTagVariants,
-	normaliseCurrency,
-	normaliseHost,
-	normaliseText,
-	parseEndDate,
-	SITE_URL,
-	slugify,
-	stripForDisplay,
-	stripUselessTags,
-	TAG_MATCHERS,
-	TAG_SET,
-	TAGS,
-	TOP_PICK_THRESHOLD,
-} from "./shared.ts";
-// Values shared with the browser bundle live in shared.ts, which must stay
-// free of node: imports — importing this file from app/ code drags node:fs
+export * from "@dothingslol/core/shared";
+// Values shared with the browser bundle live in @dothingslol/core, which must
+// stay free of node: imports — importing this file from app/ code drags node:fs
 // into Vite and fails the build. Re-exported here so pipeline modules keep
 // importing everything from common.ts.
-export { addDays, zonedMidnight } from "./tz.ts";
+export { addDays, zonedMidnight } from "@dothingslol/core/tz";
 
 /** Where curate.ts records which llm sources the search actually produced
  * events from. Committed with the data; read by llmSourceStrings(). */

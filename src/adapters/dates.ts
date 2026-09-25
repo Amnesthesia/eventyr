@@ -19,13 +19,13 @@
 // 2026") stay null, because a recurrence is not a date and publishing a
 // guessed one puts a wrong time on the site.
 
-import * as chrono from "chrono-node";
 import {
 	formatOffset,
 	zonedDate,
 	zonedOffsetMinutes,
 	zonedTimeToInstant,
-} from "../tz.ts";
+} from "@dothingslol/core/tz";
+import * as chrono from "chrono-node";
 
 // chrono takes an offset in minutes or a timezone *abbreviation*; an IANA name
 // is not recognised, so "Australia/Brisbane" silently fell back to the host

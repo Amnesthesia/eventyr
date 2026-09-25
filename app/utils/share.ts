@@ -1,7 +1,8 @@
 // Sharing one event, as a function rather than only inside a button, so the
 // card's long-press sheet and the Share button behave identically.
-import { eventPath, SITE_URL } from "../../src/shared.ts";
-import type { Event } from "../types";
+
+import type { Event } from "@dothingslol/core/schema";
+import { eventPath, SITE_URL } from "@dothingslol/core/shared";
 
 export type ShareOutcome = "shared" | "copied" | "cancelled" | "failed";
 

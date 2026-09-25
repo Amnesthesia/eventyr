@@ -9,8 +9,8 @@
 // length. Google is told the zone separately via `ctz`; Outlook takes the
 // offset inline, which `isoWithOffset` already builds for schema.org.
 
-import { eventPath, isoWithOffset, SITE_URL } from "../../src/shared.ts";
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
+import { eventPath, isoWithOffset, SITE_URL } from "@dothingslol/core/shared";
 
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
 const TIMED = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/;

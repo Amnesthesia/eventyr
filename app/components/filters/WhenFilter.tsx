@@ -1,6 +1,6 @@
-import { zonedDate } from "../../../src/tz.ts";
+import type { DateRange } from "@dothingslol/core/schema";
+import { zonedDate } from "@dothingslol/core/tz";
 import { useEventsContext } from "../../context";
-import type { DateRange } from "../../types";
 import { addDays, weekendRange } from "../../utils/dates";
 import DateRangePicker from "../DateRangePicker";
 

@@ -13,7 +13,7 @@ import { Fragment } from "astro/jsx-runtime";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import Base from "../../../layouts/Base.astro";
-import type { CityData, CityIndex, Event } from "@react/types";
+import type { CityData, CityIndex, Event } from "@dothingslol/core/schema";
 import { SLUG_TO_KEY } from "@react/utils/citySlug";
 import { catShortName, catToSlug } from "@react/utils/categorySlug";
 import {
@@ -24,7 +24,7 @@ import {
 	isoWithOffset,
 	offerSchema,
 	stripForDisplay,
-} from "../../../shared.ts";
+} from "@dothingslol/core/shared";
 import { organizerUrlsFor } from "../../../organizers.ts";
 import { VIBE_LABELS, vibesOf } from "@react/utils/vibes";
 

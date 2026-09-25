@@ -8,8 +8,8 @@
 // category are unrecoverable later. Counting up front keeps the taste after the
 // event ages out.
 
-import { eventHash } from "../../src/shared.ts";
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
+import { eventHash } from "@dothingslol/core/shared";
 import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs";
 import { tagWeight } from "./tagSpecificity";
 import { vibesOf } from "./vibes";

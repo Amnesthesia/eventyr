@@ -16,8 +16,8 @@
 //   * TEXT values need escaping and long lines need folding, or clients reject
 //     the file.
 
-import { eventHash, eventPath, SITE_URL } from "../../src/shared.ts";
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
+import { eventHash, eventPath, SITE_URL } from "@dothingslol/core/shared";
 
 const TIMED = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/;
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;

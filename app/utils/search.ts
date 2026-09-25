@@ -5,7 +5,7 @@
 // already-in-memory objects on every keystroke. What is needed is exactly two
 // rules — tokens match in any order, and a token may be one edit out.
 
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
 
 /**
  * Lowercased, diacritics stripped, punctuation flattened to spaces.

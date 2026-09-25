@@ -4,7 +4,7 @@
 // which hours the grid has to cover, how far down a lane a 7:30pm start
 // belongs — can be checked without rendering anything.
 
-import type { Event } from "../types";
+import type { Event } from "@dothingslol/core/schema";
 import { addDays, eventOverlapsRange } from "./dates";
 
 /** The lane the grid draws when nothing pins it wider. Most events fall inside
