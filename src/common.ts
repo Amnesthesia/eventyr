@@ -171,7 +171,13 @@ export interface SourceEntry {
 
 export interface CityConfig {
 	name: string;
-	timezone?: string;
+	/**
+	 * IANA zone (e.g. "Australia/Sydney"). The only place a city's zone is
+	 * stated: every offset is derived from it per date, so DST is right, and
+	 * nothing may fall back to a hard-coded zone or to the host's TZ.
+	 * loadCityConfig refuses a file without a valid one.
+	 */
+	timezone: string;
 	/**
 	 * Where the city is, and how far out still counts as being in it. Used to
 	 * throw out events that a national source listed under this city (see
@@ -200,6 +206,14 @@ export function loadCityConfig(cityKey: string): CityConfig {
 		);
 	}
 	const cfg = yaml.load(raw) as CityConfig;
+	// Checked here rather than where it is used: a missing zone used to fall
+	// back to "Australia/Brisbane" in half the pipeline and UTC in ical.ts, and
+	// a wrong zone silently shifts every published time by the difference.
+	if (typeof cfg?.timezone !== "string" || !isValidTimeZone(cfg.timezone)) {
+		throw new Error(
+			`${sourcesPath}: timezone ${JSON.stringify(cfg?.timezone)} is not a valid IANA zone. Add e.g. "timezone: Australia/Sydney".`,
+		);
+	}
 	for (const tier of SOURCE_TIERS) {
 		for (const entry of cfg.sources?.[tier] ?? []) {
 			if (entry.method !== "llm" && entry.method !== "scraper") {
@@ -210,6 +224,19 @@ export function loadCityConfig(cityKey: string): CityConfig {
 		}
 	}
 	return cfg;
+}
+
+/** Whether Intl knows `timeZone` as an IANA zone. A bare offset ("+10:00")
+ * is refused even though Node's Intl accepts one: a fixed offset is exactly
+ * the no-DST assumption that published Byron an hour off. */
+export function isValidTimeZone(timeZone: string): boolean {
+	if (/^[+-]\d/.test(timeZone)) return false;
+	try {
+		new Intl.DateTimeFormat(undefined, { timeZone });
+		return true;
+	} catch {
+		return false;
+	}
 }
 
 /** Where collect-adapters records scraper sources that produced nothing, so

@@ -138,14 +138,10 @@ function fold(line: string): string {
 
 function main(): void {
 	const cfg = loadCityConfig(CITY);
-	// No silent "UTC" fallback: that is exactly how every published .ics ended
-	// up stamped TZID=UTC while carrying Brisbane wall-clock times.
+	// Required and validated by loadCityConfig. There was a silent "UTC"
+	// fallback here once, which is how every published .ics ended up stamped
+	// TZID=UTC while carrying Brisbane wall-clock times.
 	const tz = cfg.timezone;
-	if (!tz) {
-		throw new Error(
-			`✗ sources/${CITY}.yml declares no timezone. Add e.g. "timezone: Australia/Brisbane" — a wrong timezone silently shifts every event in the calendar.`,
-		);
-	}
 	const cityName = cfg.name;
 
 	const dataPath = join(DATA_ROOT, `${CITY}.json`);

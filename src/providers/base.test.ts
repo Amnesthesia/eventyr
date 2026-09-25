@@ -55,7 +55,7 @@ function optsFor(
 ): ProviderOptions {
 	return {
 		city: "test",
-		cityCfg: { name: "Testville", sources },
+		cityCfg: { name: "Testville", timezone: "Australia/Brisbane", sources },
 		tier,
 		weekStart: new Date("2026-09-21"),
 		weekEnd: new Date("2026-09-27"),
