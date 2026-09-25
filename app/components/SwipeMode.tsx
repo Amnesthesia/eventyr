@@ -12,15 +12,15 @@
 // the undone event to the front until the next swipe — it would otherwise
 // reappear at its sorted position, possibly hundreds of cards deep.
 
+import { todayIso } from "@dothingslol/core/dates";
+import { dateLabel } from "@dothingslol/core/grouping";
 import type { EventData } from "@dothingslol/core/schema";
 import { catShortName, catToSlug } from "@dothingslol/core/shared";
+import { VIBE_KEYS, VIBE_LABELS } from "@dothingslol/core/vibes";
 import { Bookmark, RotateCcw, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { eventId, useEventsContext } from "../context";
-import { todayIso } from "../utils/dates";
-import { dateLabel } from "../utils/grouping";
 import { rankByTaste } from "../utils/taste";
-import { VIBE_KEYS, VIBE_LABELS } from "../utils/vibes";
 import EventCard from "./EventCard";
 
 /** Drag past this many pixels and letting go commits the swipe. */

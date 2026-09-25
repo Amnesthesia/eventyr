@@ -27,7 +27,7 @@ import {
 	stripForDisplay,
 } from "@dothingslol/core/shared";
 import { organizerUrlsFor } from "../../../organizers.ts";
-import { VIBE_LABELS, vibesOf } from "@react/utils/vibes";
+import { VIBE_LABELS, vibesOf } from "@dothingslol/core/vibes";
 
 export function getStaticPaths() {
 	const index: CityIndex = JSON.parse(
@@ -263,7 +263,7 @@ const vibes = vibesOf(event as EventData);
   // No framework: these two buttons are the only interactive things on the
   // page, and every helper is React-free.
   import { downloadEventIcs, buildEventIcs } from "@react/utils/ics";
-  import { calendarLinks } from "@react/utils/calendarLinks";
+  import { calendarLinks } from "@dothingslol/core/calendarLinks";
   import { calendarTarget } from "@react/utils/platform";
   import { shareEvent } from "@react/utils/share";
   import { noteInterest } from "@react/utils/taste";

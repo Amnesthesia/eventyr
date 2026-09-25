@@ -9,8 +9,11 @@
 // from a laptop to a phone — or from one person to another — that does not
 // involve emailing yourself a file.
 
+import { addDays, shortDate, startOfWeek } from "@dothingslol/core/dates";
+import { QR_EVENT_LIMIT, savedCalendarUrl } from "@dothingslol/core/savedLink";
 import type { EventData } from "@dothingslol/core/schema";
 import { catToSlug, eventPath } from "@dothingslol/core/shared";
+import { offsetPercent, weekLayout } from "@dothingslol/core/weekLayout";
 import {
 	BookmarkPlus,
 	CalendarPlus,
@@ -23,11 +26,8 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { eventId, useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
-import { addDays, shortDate, startOfWeek } from "../utils/dates";
 import { buildIcs, downloadIcs } from "../utils/ics";
-import { QR_EVENT_LIMIT, savedCalendarUrl } from "../utils/savedLink";
 import { shareUrl } from "../utils/share";
-import { offsetPercent, weekLayout } from "../utils/weekLayout";
 import SavedCalendarQr from "./SavedCalendarQr";
 
 interface Props {

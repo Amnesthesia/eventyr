@@ -4,8 +4,8 @@
 // which hours the grid has to cover, how far down a lane a 7:30pm start
 // belongs — can be checked without rendering anything.
 
-import type { EventData } from "@dothingslol/core/schema";
-import { addDays, eventOverlapsRange } from "./dates";
+import { addDays, eventOverlapsRange } from "./dates.ts";
+import type { EventData } from "./schema.ts";
 
 /** The lane the grid draws when nothing pins it wider. Most events fall inside
  * it, and a row per hour of the night is empty space to scroll past. */

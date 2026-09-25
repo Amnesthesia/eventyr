@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { EventData } from "@dothingslol/core/schema";
-import { eventsFromIds, parseSavedIds, savedCalendarUrl } from "./savedLink";
+import { eventsFromIds, parseSavedIds, savedCalendarUrl } from "./savedLink.ts";
+import type { EventData } from "./schema.ts";
 
 function ev(title: string, datetime_iso: string): EventData {
 	return {

@@ -6,7 +6,7 @@
 // gig-shaped from 5pm. Splitting at 8/16 would have filed a 4pm matinee as
 // evening and a 5pm gig as afternoon.
 
-import type { EventData } from "@dothingslol/core/schema";
+import type { EventData } from "./schema.ts";
 
 export const TIME_BANDS = ["morning", "afternoon", "evening"] as const;
 export type TimeBand = (typeof TIME_BANDS)[number];

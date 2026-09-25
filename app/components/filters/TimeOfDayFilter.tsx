@@ -1,5 +1,5 @@
+import { TIME_BAND_LABELS, TIME_BANDS } from "@dothingslol/core/timeOfDay";
 import { useEventsContext } from "../../context";
-import { TIME_BAND_LABELS, TIME_BANDS } from "../../utils/timeOfDay";
 
 export default function TimeOfDayFilter() {
 	const { timeBands, toggleTimeBand } = useEventsContext();

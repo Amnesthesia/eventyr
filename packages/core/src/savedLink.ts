@@ -15,8 +15,8 @@
 // events to the browser, so the receiving page can resolve the ids with no
 // network call and no new route.
 
-import type { EventData } from "@dothingslol/core/schema";
-import { eventHash, KEY_TO_SLUG, SITE_URL } from "@dothingslol/core/shared";
+import type { EventData } from "./schema.ts";
+import { eventHash, KEY_TO_SLUG, SITE_URL } from "./shared.ts";
 
 const PARAM = "cal";
 const SEPARATOR = ".";

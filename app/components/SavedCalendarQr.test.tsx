@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { QR_EVENT_LIMIT, savedCalendarUrl } from "@dothingslol/core/savedLink";
 import type { EventData } from "@dothingslol/core/schema";
 import { renderToStaticMarkup } from "react-dom/server";
-import { QR_EVENT_LIMIT, savedCalendarUrl } from "../utils/savedLink";
 import SavedCalendarQr from "./SavedCalendarQr";
 
 function ev(i: number): EventData {

@@ -7,7 +7,7 @@
 // below) rather than being folded into the timeframe switch, keeping this
 // function's surface small and its tests focused on the five relative cases.
 
-import { addDays, weekendRange } from "../../../app/utils/dates.ts";
+import { addDays, weekendRange } from "@dothingslol/core/dates";
 
 export const TIMEFRAMES = [
 	"today",

@@ -1,12 +1,12 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { EventData } from "@dothingslol/core/schema";
 import {
 	appleCalendarUrl,
 	calendarLinks,
 	googleCalendarUrl,
 	outlookCalendarUrl,
-} from "./calendarLinks";
+} from "./calendarLinks.ts";
+import type { EventData } from "./schema.ts";
 
 const BNE = "Australia/Brisbane";
 

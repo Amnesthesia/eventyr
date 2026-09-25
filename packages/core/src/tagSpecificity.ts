@@ -3,7 +3,7 @@
 // near-unique fingerprint; "music" on 200 of them says almost nothing about
 // which of those 200 you meant. Computed client-side from the city's own
 // events — no model call, no pipeline field, recomputed fresh every load.
-import type { EventData } from "@dothingslol/core/schema";
+import type { EventData } from "./schema.ts";
 
 /** Floor for the commonest tag, not zero: a tag that appears on nearly every
  * event should still accumulate weight after enough dislikes, just slowly. A

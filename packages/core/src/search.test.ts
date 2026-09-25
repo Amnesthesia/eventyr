@@ -1,13 +1,13 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { EventData } from "@dothingslol/core/schema";
+import type { EventData } from "./schema.ts";
 import {
 	haystackFor,
 	matchesQuery,
 	normalise,
 	queryTokens,
 	withinOneEdit,
-} from "./search";
+} from "./search.ts";
 
 function ev(partial: Partial<EventData>): EventData {
 	return {

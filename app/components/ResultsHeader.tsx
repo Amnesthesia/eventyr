@@ -1,5 +1,5 @@
+import { fmtRange } from "@dothingslol/core/dates";
 import { useEventsContext } from "../context";
-import { fmtRange } from "../utils/dates";
 import GroupByFilter from "./filters/GroupByFilter";
 
 /** The count moved out of the masthead because it never visibly reacted to a

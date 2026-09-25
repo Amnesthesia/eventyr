@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { EventData } from "@dothingslol/core/schema";
-import { startOfWeek } from "./dates";
-import { dateLabel, dateWindowFor, groupEvents } from "./grouping";
+import { startOfWeek } from "./dates.ts";
+import { dateLabel, dateWindowFor, groupEvents } from "./grouping.ts";
+import type { EventData } from "./schema.ts";
 
 const WINDOW = { from: "2026-09-03", to: "2026-09-13" };
 // Frozen, so the "Today"/"Tomorrow" labels do not depend on the clock.

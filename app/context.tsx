@@ -1,3 +1,10 @@
+import {
+	endOfMonth,
+	eventOverlapsRange,
+	startOfWeek,
+	todayIso,
+} from "@dothingslol/core/dates";
+import type { GroupBy } from "@dothingslol/core/grouping";
 import type {
 	City,
 	CityData,
@@ -6,6 +13,7 @@ import type {
 	PastFilter,
 	VibeKey,
 } from "@dothingslol/core/schema";
+import { matchesQuery, queryTokens } from "@dothingslol/core/search";
 import {
 	type CostLocale,
 	DEFAULT_COST_LOCALE,
@@ -14,6 +22,8 @@ import {
 	LOW_SCORE_THRESHOLD,
 } from "@dothingslol/core/shared";
 import { cycleTagPref, type TagPrefs } from "@dothingslol/core/tagPrefs";
+import { tagWeights } from "@dothingslol/core/tagSpecificity";
+import { matchesTimeBands, type TimeBand } from "@dothingslol/core/timeOfDay";
 import {
 	createContext,
 	type ReactNode,
@@ -27,21 +37,12 @@ import {
 import { useColorTheme } from "./hooks/useColorTheme";
 import { useStoredSet } from "./hooks/useStoredSet";
 import {
-	endOfMonth,
-	eventOverlapsRange,
-	startOfWeek,
-	todayIso,
-} from "./utils/dates";
-import type { GroupBy } from "./utils/grouping";
-import {
 	cancel1hReminder,
 	checkAndNotifyMorningDigest,
 	schedule1hReminder,
 	syncAllStarredEvents,
 } from "./utils/notifications";
-import { matchesQuery, queryTokens } from "./utils/search";
 import { loadTagPrefs, saveTagPrefs } from "./utils/tagPrefsStore";
-import { tagWeights } from "./utils/tagSpecificity";
 import {
 	bumpDislike,
 	bumpTaste,
@@ -52,7 +53,6 @@ import {
 	saveTaste,
 	type TasteProfile,
 } from "./utils/taste";
-import { matchesTimeBands, type TimeBand } from "./utils/timeOfDay";
 
 /** The identity saved/hidden sets are keyed by. Not eventHash: stars already
  * in people's localStorage use this basis, and changing it would lose them. */

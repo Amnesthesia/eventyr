@@ -9,10 +9,10 @@
 // absolutely positioned panel hanging below the button is clipped by it.
 // `.filters--date` therefore opts out of scrolling and wraps instead.
 
+import { fmtRange } from "@dothingslol/core/dates";
 import type { DateRange } from "@dothingslol/core/schema";
 import { CalendarDays, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { fmtRange } from "../utils/dates";
 
 interface Props {
 	value: DateRange | null;

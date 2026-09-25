@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { EventData } from "@dothingslol/core/schema";
-import { tagWeight, tagWeights } from "./tagSpecificity";
+import type { EventData } from "./schema.ts";
+import { tagWeight, tagWeights } from "./tagSpecificity.ts";
 
 function ev(tags: string[]): EventData {
 	return {

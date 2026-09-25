@@ -3,12 +3,12 @@
 // A bottom sheet rather than a popover anchored to the card, because on a
 // phone the card can be anywhere on screen and the thumb is at the bottom.
 
+import { calendarLinks } from "@dothingslol/core/calendarLinks";
 import type { EventData } from "@dothingslol/core/schema";
 import { CalendarPlus, Check, Minus, Plus, Share2 } from "lucide-react";
 import { useState } from "react";
 import { useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
-import { calendarLinks } from "../utils/calendarLinks";
 import { downloadEventIcs } from "../utils/ics";
 import { shareEvent } from "../utils/share";
 import { noteInterest } from "../utils/taste";

@@ -1,9 +1,9 @@
+import { fmtRange } from "@dothingslol/core/dates";
 import { catShortName, LOW_SCORE_THRESHOLD } from "@dothingslol/core/shared";
+import { TIME_BAND_LABELS } from "@dothingslol/core/timeOfDay";
+import { VIBE_LABELS } from "@dothingslol/core/vibes";
 import { X } from "lucide-react";
 import { useEventsContext } from "../../context";
-import { fmtRange } from "../../utils/dates";
-import { TIME_BAND_LABELS } from "../../utils/timeOfDay";
-import { VIBE_LABELS } from "../../utils/vibes";
 
 /**
  * Everything currently narrowing the list, one removable chip each.

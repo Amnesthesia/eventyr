@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { displayDatetime, shortDate, weekendRange } from "./dates";
+import { displayDatetime, shortDate, weekendRange } from "./dates.ts";
 
 const TODAY = "2026-09-07";
 

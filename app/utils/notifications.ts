@@ -1,7 +1,7 @@
+import { todayIso } from "@dothingslol/core/dates";
 import type { EventData } from "@dothingslol/core/schema";
 import { eventPath } from "@dothingslol/core/shared";
 import { eventId } from "../context";
-import { todayIso } from "./dates";
 import {
 	deleteStarredEvent,
 	getPwaMeta,

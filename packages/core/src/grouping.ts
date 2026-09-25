@@ -1,14 +1,10 @@
 // Splits the event list into labelled groups, so a 300-event page can be read
 // as "Thursday has these sixty" rather than as one undifferentiated grid.
 
-import type { EventData } from "@dothingslol/core/schema";
-import { CATEGORIES, catToSlug } from "@dothingslol/core/shared";
-import {
-	hasTagPrefs,
-	prefTier,
-	type TagPrefs,
-} from "@dothingslol/core/tagPrefs";
-import { addDays, todayIso } from "./dates";
+import { addDays, todayIso } from "./dates.ts";
+import type { EventData } from "./schema.ts";
+import { CATEGORIES, catToSlug } from "./shared.ts";
+import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs.ts";
 
 export type GroupBy = "none" | "date" | "category";
 

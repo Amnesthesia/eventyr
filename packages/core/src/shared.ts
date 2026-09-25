@@ -556,7 +556,7 @@ export function parseEndDate(dt: string, startIso: string): string {
  * datetime_end_iso is authoritative when present; parseEndDate is only a
  * fallback for older data with no end field.
  *
- * Shared between the browser app (app/utils/dates.ts re-exports this) and the
+ * Shared between the browser app (dates.ts re-exports this) and the
  * pipeline's /ai feed builder (src/ai.ts) so both agree on which day an event
  * belongs to — a second copy here is exactly how the two would drift apart.
  */
@@ -583,7 +583,7 @@ export function eventOverlapsRange(
  *
  * CATEGORIES is a closed enum and annotate.ts validates every event against
  * it, defaulting to "Community / Other" — so this table is total. Shared
- * between the browser app (app/utils/categorySlug.ts re-exports this) and the
+ * between the browser app (app/ imports it from here) and the
  * pipeline's /ai feed builder (src/ai.ts) so both name a category's split
  * file the same way.
  */
@@ -696,7 +696,7 @@ export function isSameSite(candidate: string | null, host: string): boolean {
 
 /**
  * Lowercased, diacritics stripped, everything else collapsed to single
- * hyphens. Used for URL segments; app/utils/search.ts shares the same
+ * hyphens. Used for URL segments; search.ts shares the same
  * normalisation for its query matching.
  */
 export function normaliseText(text: string): string {

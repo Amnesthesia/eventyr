@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import type { EventData } from "@dothingslol/core/schema";
-import { tagWeights } from "./tagSpecificity";
+import { tagWeights } from "@dothingslol/core/tagSpecificity";
 import {
 	bumpDislike,
 	bumpTaste,

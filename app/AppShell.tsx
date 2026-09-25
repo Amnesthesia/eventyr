@@ -1,3 +1,5 @@
+import { dateWindowFor, groupEvents } from "@dothingslol/core/grouping";
+import { eventsFromIds, parseSavedIds } from "@dothingslol/core/savedLink";
 import { useEffect, useMemo, useState } from "react";
 import EventGrid from "./components/EventGrid";
 import Header from "./components/Header";
@@ -7,8 +9,6 @@ import ResultsHeader from "./components/ResultsHeader";
 import SavedCalendar from "./components/SavedCalendar";
 import SwipeMode from "./components/SwipeMode";
 import { eventId, useEventsContext } from "./context";
-import { dateWindowFor, groupEvents } from "./utils/grouping";
-import { eventsFromIds, parseSavedIds } from "./utils/savedLink";
 
 export default function AppShell() {
 	const {

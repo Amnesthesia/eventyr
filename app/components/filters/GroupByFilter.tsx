@@ -1,5 +1,5 @@
+import type { GroupBy } from "@dothingslol/core/grouping";
 import { useEventsContext } from "../../context";
-import type { GroupBy } from "../../utils/grouping";
 
 const OPTIONS: { value: GroupBy; label: string }[] = [
 	{ value: "date", label: "Date" },

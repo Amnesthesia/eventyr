@@ -34,16 +34,6 @@ const ALLOWED = {
 	"eventyr-mcp": ["@dothingslol/core", "@dothingslol/utils"],
 };
 
-// Crossings that exist today and are scheduled to go. Each must still exist:
-// the check fails once one is fixed, so the entry cannot outlive its reason.
-const KNOWN_CROSSINGS = [
-	// 1.3 moves the pure date helpers into core and retargets the Worker.
-	{
-		file: "workers/mcp/src/resolveTimeframe.ts",
-		specifier: "../../../app/utils/dates.ts",
-	},
-];
-
 const PACKAGE_PARENTS = ["packages", "apps", "workers"];
 // Plus every dot-directory (.git, .astro, .wrangler).
 const SKIP_DIRS = new Set(["node_modules", "dist"]);
@@ -120,18 +110,12 @@ function resolveExport(exportsMap, sub) {
 }
 
 // 2 and 3. Every import in every source file.
-const seenCrossings = new Set();
 function checkImport(file, specifier) {
 	const relFile = relative(ROOT, file);
 	if (specifier.startsWith(".")) {
 		const from = ownerOf(file);
 		const to = ownerOf(resolve(dirname(file), specifier));
 		if (from === to) return;
-		const known = KNOWN_CROSSINGS.findIndex((k) => k.file === relFile && k.specifier === specifier);
-		if (known !== -1) {
-			seenCrossings.add(known);
-			return;
-		}
 		const target = to === null ? "outside the repo" : `into ${to || "the root package"}`;
 		fail(relFile, `"${specifier}" reaches ${target}; import it by package name`);
 		return;
@@ -164,12 +148,6 @@ function walk(dir) {
 	}
 }
 walk(ROOT);
-
-KNOWN_CROSSINGS.forEach((k, i) => {
-	if (!seenCrossings.has(i)) {
-		fail(k.file, `known crossing "${k.specifier}" is gone; delete its KNOWN_CROSSINGS entry`);
-	}
-});
 
 if (errors.length) {
 	console.error(`check-boundaries: ${errors.length} violation(s)\n${errors.map((e) => `  ${e}`).join("\n")}`);

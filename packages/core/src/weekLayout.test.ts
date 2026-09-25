@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { EventData } from "@dothingslol/core/schema";
-import { offsetPercent, startMinutes, weekLayout } from "./weekLayout";
+import type { EventData } from "./schema.ts";
+import { offsetPercent, startMinutes, weekLayout } from "./weekLayout.ts";
 
 function ev(partial: Partial<EventData>): EventData {
 	return {

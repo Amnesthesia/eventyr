@@ -1,3 +1,4 @@
+import { displayDatetime } from "@dothingslol/core/dates";
 import type { EventData } from "@dothingslol/core/schema";
 import {
 	catToSlug,
@@ -5,12 +6,11 @@ import {
 	KEY_TO_SLUG,
 	stripForDisplay,
 } from "@dothingslol/core/shared";
+import { VIBE_LABELS, vibesOf } from "@dothingslol/core/vibes";
 import { CalendarDays, ExternalLink, MapPin } from "lucide-react";
 import { useState } from "react";
 import { useEventsContext } from "../context";
 import { useLongPress } from "../hooks/useLongPress";
-import { displayDatetime } from "../utils/dates";
-import { VIBE_LABELS, vibesOf } from "../utils/vibes";
 import AddToCalendar from "./AddToCalendar";
 import CardActionSheet from "./CardActionSheet";
 import { CategoryIcon } from "./CategoryIcon";

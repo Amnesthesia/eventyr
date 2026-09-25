@@ -15,8 +15,8 @@ import {
 	prefTier,
 	type TagPrefs,
 } from "@dothingslol/core/tagPrefs";
-import { tagWeight } from "./tagSpecificity";
-import { vibesOf } from "./vibes";
+import { tagWeight } from "@dothingslol/core/tagSpecificity";
+import { vibesOf } from "@dothingslol/core/vibes";
 
 /** tag/vibe/category key -> how many bookmarked events carried it. */
 export type TasteProfile = Record<string, number>;
