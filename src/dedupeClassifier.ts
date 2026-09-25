@@ -1,20 +1,15 @@
 // The LLM half of dedupe.ts's stage 2. Kept separate so dedupe.ts stays a
 // pure, network-free module that tests can drive with a stub.
 
-import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { GoogleGenAI } from "@google/genai";
+import { askDetailed, parseJsonArray } from "@dothingslol/llm";
+import { chunkArray } from "@dothingslol/utils/concurrency";
 import {
 	type CandidatePair,
 	PAIR_BATCH_SIZE,
 	type PairClassifyFn,
 } from "./dedupe.ts";
-import { parseJsonArray } from "./providers/base.ts";
-import { geminiText } from "./providers/gemini.ts";
 
 const MODEL = "gemini-3.1-flash-lite";
-/** Concurrent classifier calls. Bounded because MAX_PAIRS allows ~67 batches,
- * and an uncapped fan-out at that width just earns 429s. */
-const MAX_CONCURRENT_CALLS = 6;
 
 const SYSTEM_PROMPT = `You decide whether two event listings describe the SAME real-world event, gathered from different sources that word things differently.
 
@@ -43,41 +38,39 @@ function summarise(e: Record<string, unknown>): Record<string, unknown> {
 	};
 }
 
-export function createGeminiPairClassifier(apiKey: string): PairClassifyFn {
-	const ai = new GoogleGenAI({ apiKey });
-
+export function createGeminiPairClassifier(): PairClassifyFn {
 	return async function classify(pairs: CandidatePair[]): Promise<boolean[]> {
 		const batches = chunkArray(pairs, PAIR_BATCH_SIZE);
-		const results = await mapWithConcurrency(
-			batches,
-			MAX_CONCURRENT_CALLS,
-			async (batch, batchIdx) => {
-				const input = batch.map((p, i) => ({
-					i,
-					a: summarise(p.a),
-					b: summarise(p.b),
-				}));
-				try {
-					const text = await geminiText(ai, {
-						stage: "dedupe",
-						model: MODEL,
-						contents: JSON.stringify(input),
-						systemInstruction: SYSTEM_PROMPT,
-						maxOutputTokens: 4000,
-						temperature: 0,
-					});
-					const verdicts = parseVerdicts(text);
-					// Unanswered pair → false: keeping both is recoverable (a visible
-					// duplicate), wrongly merging is not (a lost event).
-					return batch.map((_, i) => verdicts.get(i) === true);
-				} catch (err) {
-					console.error(
-						`  ⚠ [dedupe] pair batch ${batchIdx + 1} failed: ${(err as Error).message} — keeping both sides`,
-					);
-					return batch.map(() => false);
-				}
+		// One prompt per batch, all in flight under llm's Gemini limiter (the
+		// process-wide ceiling; MAX_PAIRS allows ~100 batches and an uncapped
+		// fan-out at that width just earns 429s).
+		const outcomes = await askDetailed(
+			batches.map((batch) =>
+				JSON.stringify(
+					batch.map((p, i) => ({ i, a: summarise(p.a), b: summarise(p.b) })),
+				),
+			),
+			{
+				provider: "gemini",
+				model: MODEL,
+				stage: "dedupe",
+				system: SYSTEM_PROMPT,
+				maxOutputTokens: 4000,
+				temperature: 0,
 			},
 		);
-		return results.flat();
+		return batches.flatMap((batch, batchIdx) => {
+			const outcome = outcomes[batchIdx];
+			if (outcome.status === "rejected") {
+				console.error(
+					`  ⚠ [dedupe] pair batch ${batchIdx + 1} failed: ${(outcome.reason as Error).message} — keeping both sides`,
+				);
+				return batch.map(() => false);
+			}
+			const verdicts = parseVerdicts(outcome.value.text);
+			// Unanswered pair → false: keeping both is recoverable (a visible
+			// duplicate), wrongly merging is not (a lost event).
+			return batch.map((_, i) => verdicts.get(i) === true);
+		});
 	};
 }

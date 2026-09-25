@@ -1,3 +1,4 @@
+import "./llmBootstrap.ts";
 import {
 	existsSync,
 	mkdirSync,
@@ -38,13 +39,13 @@ import {
 import type { DedupeGroup } from "./dedupe.ts";
 import { dedupeEventsSmart } from "./dedupe.ts";
 import { createGeminiPairClassifier } from "./dedupeClassifier.ts";
+import { installUsageReporting } from "./io/usage.ts";
 import {
 	createGoogleGeocoder,
 	findElsewhere,
 	findForeign,
 	withPlaceCache,
 } from "./locality.ts";
-import { installUsageReporting } from "./providers/gemini.ts";
 import { unlistedWorthProbing, updateLedger } from "./sourceYield.ts";
 
 const CITY = requireEnv("CITY");
@@ -514,7 +515,7 @@ async function mergeAndDeduplicate(
 		);
 	}
 	const { events, stats, groups } = await dedupeEventsSmart(local, {
-		classify: apiKey ? createGeminiPairClassifier(apiKey) : undefined,
+		classify: apiKey ? createGeminiPairClassifier() : undefined,
 	});
 	console.log(
 		`→ ${stats.input} events in, ${stats.removed} duplicate(s) removed ` +
