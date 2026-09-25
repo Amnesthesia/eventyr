@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { countDateHits } from "./dates.ts";
-import { densestWindow } from "./readableText.ts";
+import { densestWindow } from "./text.ts";
 
 test("the densest window beats the first window", () => {
 	// The measured failure: long listing pages open with nav, hero copy and

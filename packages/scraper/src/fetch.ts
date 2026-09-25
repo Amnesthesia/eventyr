@@ -1,9 +1,9 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdtempSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { backoffDelay, sleep } from "@dothingslol/utils/time";
 import { gotScraping } from "got-scraping";
-import { adapterCachePath, adapterRawDir } from "../common.ts";
-import { apiRequestFor } from "./feeds.ts";
+import { apiRequestFor } from "./parsers/feeds.ts";
 import type { RawListing, SourceStrategy } from "./types.ts";
 
 // Transport note — why this doesn't use Node's fetch:
@@ -97,44 +97,58 @@ const DEFAULT_MAX_CONCURRENCY_PER_HOST = 2;
 const DEFAULT_MAX_RETRIES = 3;
 const BASE_BACKOFF_MS = 1000;
 
-interface CacheEntry {
+export interface HttpCacheEntry {
 	etag: string | null;
 	lastModified: string | null;
 	bodyPath: string;
 	fetchedAt: string;
 }
 
-type Cache = Record<string, CacheEntry>;
-
-function loadCache(sourceId: string): Cache {
-	const path = adapterCachePath(sourceId);
-	if (!existsSync(path)) return {};
-	try {
-		return JSON.parse(readFileSync(path, "utf-8")) as Cache;
-	} catch {
-		return {};
-	}
+/**
+ * Where conditional-GET validators and response bodies live. Injected so the
+ * scraper knows nothing about data/: the pipeline's store (src/io/httpCache.ts)
+ * keeps the same data/_cache/{sourceId}.json and data/_raw/{sourceId}/ layout
+ * as before, so the Actions cache stays valid across the move.
+ */
+export interface HttpCacheStore {
+	/** The validators recorded for this URL, if any. */
+	get(sourceId: string, url: string): HttpCacheEntry | undefined;
+	set(sourceId: string, url: string, entry: HttpCacheEntry): void;
+	/** Persists a response body and returns the path the ladder reads it from. */
+	persistBody(
+		sourceId: string,
+		url: string,
+		contentType: string | null,
+		body: string,
+		fetchedAt: string,
+	): string;
 }
 
-function saveCache(sourceId: string, cache: Cache): void {
-	const path = adapterCachePath(sourceId);
-	mkdirSync(join(path, ".."), { recursive: true });
-	writeFileSync(path, JSON.stringify(cache, null, 2), "utf-8");
+/**
+ * The default when no store is given: bodies go to a temp directory for the
+ * ladder to read, and nothing is remembered between runs, so every fetch is
+ * unconditional. Fine for a one-off scrape; the pipeline injects its own.
+ */
+export function createTempStore(): HttpCacheStore {
+	let dir: string | undefined;
+	let n = 0;
+	return {
+		get: () => undefined,
+		set: () => {},
+		persistBody(_sourceId, _url, _contentType, body) {
+			dir ??= mkdtempSync(join(tmpdir(), "dothingslol-scraper-"));
+			const path = join(dir, `${++n}.body`);
+			writeFileSync(path, body, "utf-8");
+			return path;
+		},
+	};
 }
 
-function slugForUrl(url: string): string {
-	return url
-		.replace(/^https?:\/\//, "")
-		.replace(/[^a-zA-Z0-9]+/g, "_")
-		.slice(0, 120);
-}
-
-function extensionForContentType(contentType: string | null): string {
-	if (!contentType) return "bin";
-	if (contentType.includes("json")) return "json";
-	if (contentType.includes("xml") || contentType.includes("rss")) return "xml";
-	if (contentType.includes("calendar")) return "ics";
-	return "html";
+/** PLAN §2.5's name for it; `new SourceFetcher(opts)` is the same thing. */
+export function createFetcher(
+	opts?: ConstructorParameters<typeof SourceFetcher>[0],
+): SourceFetcher {
+	return new SourceFetcher(opts);
 }
 
 export class SourceFetcher {
@@ -149,6 +163,7 @@ export class SourceFetcher {
 	private readonly hostActive = new Map<string, number>();
 	private readonly hostWaiters = new Map<string, Array<() => void>>();
 	private readonly fetchImpl: typeof fetch;
+	private readonly store: HttpCacheStore;
 
 	constructor(opts?: {
 		userAgent?: string;
@@ -156,7 +171,9 @@ export class SourceFetcher {
 		maxConcurrencyPerHost?: number;
 		maxRetries?: number;
 		fetchImpl?: typeof fetch;
+		store?: HttpCacheStore;
 	}) {
+		this.store = opts?.store ?? createTempStore();
 		this.userAgent = opts?.userAgent ?? USER_AGENT;
 		this.minIntervalMs = opts?.minIntervalMs ?? DEFAULT_MIN_INTERVAL_MS;
 		this.maxConcurrencyPerHost =
@@ -215,8 +232,7 @@ export class SourceFetcher {
 	): Promise<RawListing> {
 		await this.waitForRateLimit(host);
 
-		const cache = loadCache(sourceId);
-		const cached = cache[url];
+		const cached = this.store.get(sourceId, url);
 		// Only the conditional-GET validators: got-scraping generates a
 		// coherent browser header set itself, and hand-written headers that
 		// disagree with its fingerprint are worse than none.
@@ -264,7 +280,7 @@ export class SourceFetcher {
 
 				const contentType = res.headers.get("content-type");
 				const body = await res.text();
-				const bodyPath = this.persistBody(
+				const bodyPath = this.store.persistBody(
 					sourceId,
 					url,
 					contentType,
@@ -272,13 +288,12 @@ export class SourceFetcher {
 					fetchedAt,
 				);
 
-				cache[url] = {
+				this.store.set(sourceId, url, {
 					etag: res.headers.get("etag"),
 					lastModified: res.headers.get("last-modified"),
 					bodyPath,
 					fetchedAt,
-				};
-				saveCache(sourceId, cache);
+				});
 
 				return {
 					url,
@@ -311,26 +326,6 @@ export class SourceFetcher {
 		if (elapsed < this.minIntervalMs) {
 			await sleep(this.minIntervalMs - elapsed);
 		}
-	}
-
-	// ponytail: writes one file per URL per run with no pruning — data/_raw is
-	// gitignored and grows unboundedly (146 MB locally). Add a retention sweep
-	// (or stop persisting on success) when it starts to hurt.
-	private persistBody(
-		sourceId: string,
-		url: string,
-		contentType: string | null,
-		body: string,
-		fetchedAt: string,
-	): string {
-		const dir = adapterRawDir(sourceId);
-		mkdirSync(dir, { recursive: true });
-		const ext = extensionForContentType(contentType);
-		const timestamp = fetchedAt.replace(/[:.]/g, "-");
-		const filename = `${timestamp}__${slugForUrl(url)}.${ext}`;
-		const path = join(dir, filename);
-		writeFileSync(path, body, "utf-8");
-		return path;
 	}
 }
 

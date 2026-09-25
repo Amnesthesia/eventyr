@@ -4,7 +4,7 @@ import {
 	extractJsonLdBlocks,
 	findEventNodes,
 	jsonLdNodeToRawFields,
-} from "./extract.ts";
+} from "./jsonLd.ts";
 
 const SINGLE_EVENT_HTML = `<html><head>
 <script type="application/ld+json">

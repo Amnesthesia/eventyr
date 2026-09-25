@@ -32,6 +32,24 @@ import {
 } from "node:fs";
 import { dirname, join } from "node:path";
 import { ask, parseJsonArray } from "@dothingslol/llm";
+import {
+	type PageExtractFn,
+	type RawCandidateFields,
+	SourceFetcher,
+	toCandidateEvent,
+	zonedNaive,
+} from "@dothingslol/scraper";
+import {
+	countDateHits,
+	densestWindow,
+	extractJsonLdBlocks,
+	feedUrlsFromHtml,
+	findEventNodes,
+	jsonLdNodeToRawFields,
+	parseFeed,
+	stripToReadableText,
+	wpJsonRoutesToFeedUrls,
+} from "@dothingslol/scraper/parsers";
 import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import yaml from "js-yaml";
 import {
@@ -48,24 +66,10 @@ import {
 	toISODate,
 } from "../common.ts";
 import { withExtractionCache } from "../io/fileCache.ts";
+import { createHttpCacheStore } from "../io/httpCache.ts";
 import { installUsageReporting, reportGeminiUsage } from "../io/usage.ts";
-import { toCandidateEvent } from "./candidate.ts";
-import { countDateHits } from "./dates.ts";
-import {
-	extractJsonLdBlocks,
-	findEventNodes,
-	jsonLdNodeToRawFields,
-} from "./extract.ts";
-import {
-	feedUrlsFromHtml,
-	parseFeed,
-	wpJsonRoutesToFeedUrls,
-} from "./feeds.ts";
-import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
-import { isPast, withinWindow, zonedNaive } from "./normalise.ts";
-import { densestWindow, stripToReadableText } from "./readableText.ts";
-import type { PageExtractFn, RawCandidateFields } from "./types.ts";
+import { isPast, withinWindow } from "./normalise.ts";
 
 // --- tuning ---------------------------------------------------------------
 // These four thresholds decide who gets an LLM call. They are first-run
@@ -1647,7 +1651,7 @@ async function main(): Promise<void> {
 		throw new Error("GOOGLE_API_KEY env var is required");
 	}
 
-	const fetcher = new SourceFetcher();
+	const fetcher = new SourceFetcher({ store: createHttpCacheStore() });
 	// Probe-mode: one batch per page, no retry-on-empty (most candidates
 	// genuinely have no events), and cached by page content so a resumed or
 	// repeated probe — and the collect run right after it — pay nothing for a

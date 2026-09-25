@@ -8,14 +8,10 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { dirname, join, relative } from "node:path";
+import { humanDatetime } from "@dothingslol/scraper";
 import { cleanText, cleanUrl } from "@dothingslol/utils/text";
 import { isRetiredTemplateDescription } from "./adapters/annotate.ts";
-import {
-	councilEventUrl,
-	humanDatetime,
-	isPast,
-	withinWindow,
-} from "./adapters/normalise.ts";
+import { councilEventUrl, isPast, withinWindow } from "./adapters/normalise.ts";
 import {
 	addDays,
 	allSourceEntries,

@@ -14,6 +14,14 @@
 import "../llmBootstrap.ts";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
+import {
+	createPageAdapter,
+	enrichFromDetailPage,
+	type PageExtractFn,
+	runAdapter,
+	SourceFetcher,
+} from "@dothingslol/scraper";
+import { closeRenderBrowser, renderFetch } from "@dothingslol/scraper/render";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import {
 	addDays,
@@ -29,6 +37,7 @@ import {
 	toISODate,
 } from "../common.ts";
 import { withExtractionCache } from "../io/fileCache.ts";
+import { createHttpCacheStore } from "../io/httpCache.ts";
 import { installUsageReporting } from "../io/usage.ts";
 import {
 	type Annotation,
@@ -38,19 +47,14 @@ import {
 	previousAnnotationIndex,
 	reuseAnnotation,
 } from "./annotate.ts";
-import { enrichFromDetailPage } from "./enrichTimes.ts";
-import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
 import {
 	type PrepareStats,
 	prepareCandidates,
 	type Rejection,
 } from "./normalise.ts";
-import { createPageAdapter } from "./pageAdapter.ts";
 import { loadSourceRegistry } from "./registry.ts";
-import { closeRenderBrowser, renderFetch } from "./render.ts";
-import { runAdapter } from "./runner.ts";
-import type { PageExtractFn, SourceDefinition } from "./types.ts";
+import type { SourceDefinition } from "./types.ts";
 
 const CITY = requireEnv("CITY");
 requireEnv("GOOGLE_API_KEY");
@@ -439,7 +443,8 @@ async function main(): Promise<void> {
 	// interval and concurrency caps are instance state, so a per-source
 	// instance would make the rate limiting meaningless for sources that
 	// share a host.
-	const fetcher = new SourceFetcher();
+	const store = createHttpCacheStore();
+	const fetcher = new SourceFetcher({ store });
 	/**
 	 * Sources whose events only exist after JavaScript runs, fetched through a
 	 * real browser. Separate instance so the browser path cannot inherit the
@@ -451,7 +456,7 @@ async function main(): Promise<void> {
 	const fetcherFor = (source: SourceDefinition): SourceFetcher => {
 		if (source.strategy !== "render") return fetcher;
 		if (!renderFetcher) {
-			renderFetcher = new SourceFetcher({ fetchImpl: renderFetch });
+			renderFetcher = new SourceFetcher({ fetchImpl: renderFetch, store });
 		}
 		return renderFetcher;
 	};

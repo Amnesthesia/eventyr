@@ -3,13 +3,8 @@ import { mkdtempSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
-import { createPageAdapter } from "./pageAdapter.ts";
-import type {
-	Fetcher,
-	RawCandidateFields,
-	RawListing,
-	SourceDefinition,
-} from "./types.ts";
+import { createPageAdapter, type LadderSource } from "./ladder.ts";
+import type { Fetcher, RawCandidateFields, RawListing } from "./types.ts";
 
 const REF = new Date("2026-06-01T00:00:00+10:00");
 const TMP = mkdtempSync(join(tmpdir(), "eventyr-pageadapter-test-"));
@@ -20,21 +15,19 @@ function writeFixture(name: string, body: string): string {
 	return path;
 }
 
-const SOURCE: SourceDefinition = {
+const SOURCE: LadderSource = {
 	id: "test-source",
 	name: "Test Source",
 	homepage: "https://example.com",
 	listingUrls: ["https://example.com/whats-on"],
-	domains: ["example.com"],
 	venue: {
 		name: "Test Venue",
 		address: null,
 		suburb: null,
 	},
 	strategy: "html",
-	sourceTier: "independents",
+	tier: "independents",
 	timeZone: "Australia/Brisbane",
-	note: "test fixture",
 };
 
 function makeListing(bodyPath: string | null, notModified = false): RawListing {
@@ -59,7 +52,7 @@ function fetcherReturning(listings: RawListing[]): Fetcher {
 }
 
 test("discover() fetches every listingUrl via the injected fetcher", async () => {
-	const source: SourceDefinition = {
+	const source: LadderSource = {
 		...SOURCE,
 		listingUrls: ["https://example.com/a", "https://example.com/b"],
 	};

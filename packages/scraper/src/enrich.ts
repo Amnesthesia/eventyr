@@ -34,14 +34,14 @@
 // candidate stays exactly as the listing had it.
 
 import { readFileSync } from "node:fs";
+import { normaliseHost } from "@dothingslol/core/shared";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import he from "he";
-import { normaliseHost } from "../common.ts";
-import { parseSingleDateTime } from "./dates.ts";
-import { extractEmbeddedJson } from "./embeddedJson.ts";
-import { extractJsonLdBlocks, findEventNodes } from "./extract.ts";
-import { BOILERPLATE_TAGS, stripToReadableText } from "./readableText.ts";
-import type { CandidateEvent, Fetcher, SourceDefinition } from "./types.ts";
+import { parseSingleDateTime } from "./parsers/dates.ts";
+import { extractEmbeddedJson } from "./parsers/embeddedJson.ts";
+import { extractJsonLdBlocks, findEventNodes } from "./parsers/jsonLd.ts";
+import { BOILERPLATE_TAGS, stripToReadableText } from "./parsers/text.ts";
+import type { CandidateEvent, Fetcher } from "./types.ts";
 
 /** Detail pages fetched at once. The fetcher applies its own per-host limit;
  * this only bounds how much of the queue is in flight. */
@@ -369,7 +369,7 @@ function findTime(
 
 export async function enrichFromDetailPage(
 	candidates: CandidateEvent[],
-	source: SourceDefinition | undefined,
+	source: { id: string; timeZone: string } | undefined,
 	fetcher: Fetcher,
 	referenceDate: Date = new Date(),
 ): Promise<{ candidates: CandidateEvent[]; stats: EnrichStats }> {

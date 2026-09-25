@@ -1,11 +1,8 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { provenanceFor, toCandidateEvent } from "./candidate.ts";
-import type {
-	RawCandidateFields,
-	RawListing,
-	SourceDefinition,
-} from "./types.ts";
+import type { LadderSource } from "./ladder.ts";
+import type { RawCandidateFields, RawListing } from "./types.ts";
 
 const REF = new Date("2026-06-01T00:00:00+10:00");
 
@@ -29,21 +26,19 @@ function emptyFields(
 	};
 }
 
-const SOURCE: SourceDefinition = {
+const SOURCE: LadderSource = {
 	id: "test-source",
 	name: "Test Source",
 	homepage: "https://example.com",
 	listingUrls: ["https://example.com/whats-on"],
-	domains: ["example.com"],
 	venue: {
 		name: "Test Venue",
 		address: null,
 		suburb: null,
 	},
 	strategy: "html",
-	sourceTier: "independents",
+	tier: "independents",
 	timeZone: "Australia/Brisbane",
-	note: "test fixture",
 };
 
 const RAW: RawListing = {

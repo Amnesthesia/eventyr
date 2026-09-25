@@ -14,7 +14,7 @@ import {
 } from "node:fs";
 import { join } from "node:path";
 import { type CacheStore, cacheKey } from "@dothingslol/llm";
-import type { PageExtractFn, RawCandidateFields } from "../adapters/types.ts";
+import type { PageExtractFn, RawCandidateFields } from "@dothingslol/scraper";
 import { DATA_ROOT } from "../common.ts";
 
 export const EXTRACTION_CACHE_DIR = join(DATA_ROOT, "_cache", "extractions");

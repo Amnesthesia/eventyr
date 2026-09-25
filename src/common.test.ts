@@ -1,6 +1,12 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { fmtDate, getWeekRange, isValidTimeZone, toISODate } from "./common.ts";
+import {
+	fmtDate,
+	getWeekRange,
+	isDuplicateEvent,
+	isValidTimeZone,
+	toISODate,
+} from "./common.ts";
 
 const BNE = "Australia/Brisbane";
 const SYD = "Australia/Sydney";
@@ -58,4 +64,23 @@ test("isValidTimeZone: IANA zones pass; offsets, abbreviations and junk do not",
 	assert.equal(isValidTimeZone("AEST"), false);
 	assert.equal(isValidTimeZone(""), false);
 	assert.equal(isValidTimeZone("Mars/Olympus_Mons"), false);
+});
+
+test("an undated event never matches a dated one", () => {
+	// A stray heading extracted as an event used to swallow every event whose
+	// title it prefixed, on any date.
+	assert.equal(
+		isDuplicateEvent(
+			{ title: "live music", date: "" },
+			{ title: "live music at the triffid", date: "2026-09-03" },
+		),
+		false,
+	);
+	assert.equal(
+		isDuplicateEvent(
+			{ title: "live music", date: "2026-09-03" },
+			{ title: "live music at the triffid", date: "2026-09-03" },
+		),
+		true,
+	);
 });

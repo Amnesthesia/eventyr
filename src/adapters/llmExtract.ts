@@ -15,10 +15,10 @@ import { writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { ask, parseJsonArray } from "@dothingslol/llm";
+import type { PageExtractFn, RawCandidateFields } from "@dothingslol/scraper";
+import { countDateHits } from "@dothingslol/scraper/parsers";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { splitIntoBatches } from "../providers/base.ts";
-import { countDateHits } from "./dates.ts";
-import type { PageExtractFn, RawCandidateFields } from "./types.ts";
 
 const EXTRACT_MODEL = "gemini-3.1-flash-lite";
 const MAX_OUTPUT_TOKENS = 16000;

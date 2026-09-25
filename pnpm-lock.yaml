@@ -53,21 +53,6 @@ importers:
       astro:
         specifier: ^6.3.7
         version: 6.3.7(@types/node@25.8.0)(rollup@4.60.4)(sass@1.100.0)(supports-color@10.2.2)(tsx@4.22.0)
-      chrono-node:
-        specifier: ^2.10.1
-        version: 2.10.1
-      fast-xml-parser:
-        specifier: ^5.11.1
-        version: 5.11.1
-      got-scraping:
-        specifier: ^4.2.1
-        version: 4.2.1
-      he:
-        specifier: ^1.2.0
-        version: 1.2.0
-      ical.js:
-        specifier: ^2.2.1
-        version: 2.2.1
       js-yaml:
         specifier: ^4.1.1
         version: 4.1.1
@@ -87,9 +72,6 @@ importers:
       '@biomejs/biome':
         specifier: ^2.4.15
         version: 2.4.15
-      '@types/he':
-        specifier: ^1.2.3
-        version: 1.2.3
       '@types/js-yaml':
         specifier: ^4.0.9
         version: 4.0.9

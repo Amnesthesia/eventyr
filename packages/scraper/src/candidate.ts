@@ -1,11 +1,11 @@
-import { parseDateRange, parseSingleDateTime } from "./dates.ts";
+import { parseDateRange, parseSingleDateTime } from "./parsers/dates.ts";
 import type {
 	CandidateEvent,
 	ExtractionStrategy,
 	FetchProvenance,
 	RawCandidateFields,
 	RawListing,
-	SourceDefinition,
+	ScrapeSource,
 } from "./types.ts";
 
 /**
@@ -42,7 +42,7 @@ function resolveDates(
 }
 
 export function provenanceFor(
-	source: SourceDefinition,
+	source: Pick<ScrapeSource, "id">,
 	raw: RawListing,
 	strategy: ExtractionStrategy,
 ): FetchProvenance {

@@ -3,7 +3,7 @@
 // pageAdapter.ts tries this before embedded hydration JSON (embeddedJson.ts)
 // and, failing both, the LLM over reduced page text (llmExtract.ts).
 
-import type { RawCandidateFields } from "./types.ts";
+import type { RawCandidateFields } from "../types.ts";
 
 const EVENT_TYPES = new Set([
 	"event",
@@ -167,4 +167,9 @@ export function jsonLdNodeToRawFields(
 		category: firstString(asArray(node["@type"] as string | string[])[0]),
 		sourceEventId: firstString(node["@id"]),
 	};
+}
+
+/** Whole strategy in one call: HTML in, one candidate per JSON-LD Event. */
+export function parseJsonLd(html: string): RawCandidateFields[] {
+	return findEventNodes(extractJsonLdBlocks(html)).map(jsonLdNodeToRawFields);
 }

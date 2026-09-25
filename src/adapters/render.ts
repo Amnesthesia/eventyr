@@ -23,11 +23,26 @@
 // context per HOST reused across that host's URLs, because the interstitial
 // sets a cookie and reloads — the second URL on a host should skip the
 // challenge, which only holds if the context persists.
+//
+// The collection-time half (renderFetch, the shared browser) lives in
+// @dothingslol/scraper/render; this file is the discovery/promotion half,
+// which knows about sources/{city}.yml and data/_probe.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import {
+	feedUrlsFromHtml,
+	wpJsonRoutesToFeedUrls,
+} from "@dothingslol/scraper/parsers";
+import {
+	countRenderedDateHits,
+	launchBrowser,
+	looksEventish,
+	PAGE_TIMEOUT_MS,
+	SETTLE_MS,
+} from "@dothingslol/scraper/render";
 import yaml from "js-yaml";
-import { type Browser, type BrowserContext, chromium } from "playwright";
+import type { Browser, BrowserContext } from "playwright";
 import {
 	type CityConfig,
 	DATA_ROOT,
@@ -36,7 +51,6 @@ import {
 	SOURCES_ROOT,
 	toISODate,
 } from "../common.ts";
-import { feedUrlsFromHtml, wpJsonRoutesToFeedUrls } from "./feeds.ts";
 
 /** Pages rendered per host. A walled host needs its landing page and maybe one
  * listing guess; more than that is a crawl, which this is not. */
@@ -44,12 +58,6 @@ const MAX_PAGES_PER_HOST = 2;
 /** Hosts rendered concurrently. Each holds its own browser context, so this
  * bounds memory as much as politeness. */
 const CONCURRENT_HOSTS = 3;
-/** Per-page ceiling. The measured worst case is ~7s; a page still going at
- * 25s is not going to start working. */
-const PAGE_TIMEOUT_MS = 25_000;
-/** The interstitial reloads after 5s, so a render has to outlast that before
- * concluding there is nothing here. */
-const SETTLE_MS = 6_000;
 /**
  * Whole-run ceiling. A cron job must not be able to run for hours because 50
  * hosts each decided to be slow — probe already hung a run for 28 minutes on
@@ -67,25 +75,6 @@ export interface RenderFinding {
 	/** JSON responses the page itself fetched whose bodies look event-shaped. */
 	xhrUrls: string[];
 	error?: string;
-}
-
-/** Date-shaped text, matching dates.ts's own cheap signal. */
-export function countRenderedDateHits(text: string): number {
-	return (
-		text.match(
-			/\b(mon|tue|wed|thu|fri|sat|sun|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s*\d{1,2}|\d{1,2}\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/gi,
-		) ?? []
-	).length;
-}
-
-/** Whether a JSON body the page fetched looks like it carries events. */
-export function looksEventish(body: string): boolean {
-	if (body.length < 40) return false;
-	const head = body.slice(0, 4000);
-	return (
-		/"(start_date|startDate|start|dtstart|event_date|when)"/i.test(head) &&
-		/\d{4}-\d{2}-\d{2}|\d{10,13}/.test(head)
-	);
 }
 
 async function renderHost(
@@ -215,13 +204,7 @@ export async function renderTargets(
 	let launches = 0;
 
 	try {
-		// CHROME_PATH lets CI supply its own cached binary (browser-actions/
-		// setup-chrome) instead of downloading Playwright's ~95 MB chromium on
-		// every run — that download is the single largest fixed cost in the
-		// job, far bigger than any page it renders. Unset locally, where the
-		// bundled browser is already there.
-		const executablePath = process.env.CHROME_PATH || undefined;
-		browser = await chromium.launch({ executablePath });
+		browser = await launchBrowser();
 		launches++;
 	} catch (err) {
 		// Degrade, don't die: no browser means the deterministic paths still
@@ -471,73 +454,3 @@ if (process.argv[1]?.endsWith("render.ts")) {
 		);
 	}
 }
-
-// --- collection-time rendering --------------------------------------------
-//
-// The residue: sources whose events only ever exist after JavaScript runs, and
-// for which probe could verify no static URL. Discovery (above) is preferred
-// and handles most walled hosts — this is for the ones left over, and it is
-// deliberately the narrowest path in the pipeline.
-//
-// Shaped as a `fetch` implementation rather than a new adapter so it plugs
-// into SourceFetcher, which already owns body persistence, the conditional-GET
-// cache and the per-host rate limit. pageAdapter's whole ladder — JSON-LD,
-// embedded hydration JSON, then the LLM over page text — then runs against the
-// rendered HTML with no changes at all.
-
-/**
- * A `fetch` that returns the DOM after scripts have run.
- *
- * One browser for the whole run, launched on first use and reused: a browser
- * per URL would be the single easiest way to make the weekly scrape
- * unaffordable. Callers must close it with `closeRenderBrowser()`.
- */
-let sharedBrowser: Browser | null = null;
-let sharedBrowserFailed = false;
-
-export async function closeRenderBrowser(): Promise<void> {
-	await sharedBrowser?.close().catch(() => {});
-	sharedBrowser = null;
-	sharedBrowserFailed = false;
-}
-
-export const renderFetch: typeof fetch = async (input) => {
-	const url = typeof input === "string" ? input : input.toString();
-	if (sharedBrowserFailed) {
-		throw new Error("render browser unavailable");
-	}
-	if (!sharedBrowser) {
-		try {
-			sharedBrowser = await chromium.launch({
-				executablePath: process.env.CHROME_PATH || undefined,
-			});
-		} catch (err) {
-			// Degrade, don't die: the deterministic sources still collect, and
-			// the render-only ones are reported barren with this reason rather
-			// than the run failing.
-			sharedBrowserFailed = true;
-			throw new Error(
-				`render browser unavailable: ${(err as Error).message.slice(0, 80)}`,
-			);
-		}
-	}
-	const context = await sharedBrowser.newContext({
-		viewport: { width: 1280, height: 900 },
-	});
-	const page = await context.newPage();
-	try {
-		const res = await page.goto(url, {
-			waitUntil: "domcontentloaded",
-			timeout: PAGE_TIMEOUT_MS,
-		});
-		// Outlast the reload interstitial rather than capturing the shell.
-		await page.waitForTimeout(SETTLE_MS);
-		const html = await page.content();
-		return new Response(html, {
-			status: res?.status() ?? 200,
-			headers: { "content-type": "text/html; charset=utf-8" },
-		});
-	} finally {
-		await context.close().catch(() => {});
-	}
-};

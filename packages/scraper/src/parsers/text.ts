@@ -84,3 +84,6 @@ export function densestWindow(text: string, size: number): string {
 	const snapped = text.slice(snap + 2, snap + 2 + size);
 	return countDateHits(snapped) < bestHits ? unsnapped : snapped;
 }
+
+/** PLAN §2.5's name for stripToReadableText. */
+export const htmlToText = stripToReadableText;

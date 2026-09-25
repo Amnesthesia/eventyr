@@ -1,7 +1,6 @@
-// Shared types for the first-party site adapter framework (see prompt.md
-// "Refactor: replace LLM tool-use fetching with first-party site adapters").
-// Adapters fetch and parse known event sources deterministically; the LLM is
-// only used downstream (Phase 4) as a normaliser over already-extracted data.
+// Shared types for the scrape path: fetch and parse known event sources
+// deterministically; the LLM rung is injected by the caller (llmExtract.ts in
+// the pipeline) and only ever sees already-fetched page text.
 
 /**
  * How a source's listing pages are fetched.
@@ -22,7 +21,7 @@ export type SourceStrategy = "jsonld" | "html" | "render";
  *
  * "ics" and "rss" used to be in this union with no implementation behind
  * them anywhere, so a source declaring one silently ran the HTML path. Every
- * value here must stay backed by a real branch in pageAdapter.extract().
+ * value here must stay backed by a real branch in the ladder (ladder.ts).
  */
 export type ExtractionStrategy = SourceStrategy | "api" | "feed";
 
@@ -34,40 +33,21 @@ export interface VenueRecord {
 	suburb: string | null;
 }
 
-export interface SourceDefinition {
+/**
+ * What the scraper needs to know about the source a page belongs to. The
+ * pipeline's SourceDefinition (registry.ts) satisfies this structurally; the
+ * scraper never sees listingUrls, domains or the city — those come in through
+ * ScrapeOptions and the URL itself.
+ */
+export interface ScrapeSource {
 	id: string;
 	name: string;
-	/** Null for a candidate whose homepage was never located/confirmed. */
-	homepage: string | null;
-	/** URLs to fetch for listings. Empty for unverified candidates. */
-	listingUrls: string[];
-	/**
-	 * All hostnames this source owns — including aliases, redirect targets,
-	 * and ticketing subdomains/delegates it sells through. Load-bearing for
-	 * Phase 5 legacy-path suppression: matched after redirect-following and
-	 * URL canonicalisation, never by exact URL string.
-	 */
-	domains: string[];
-	venue: VenueRecord;
-	strategy: SourceStrategy;
-	/**
-	 * Which sources/{city}.yml tier this source was moved out of. Carried
-	 * forward so scraped output can be written under the same tier name the
-	 * AI-search path uses, which is what lets curate.ts's TIER_TO_VENUE map
-	 * classify adapter events with no special-casing.
-	 */
-	sourceTier: "aggregators" | "institutions" | "independents";
-	/**
-	 * The city's IANA zone, copied from sources/{city}.yml `timezone` by the
-	 * registry. Page text states wall-clock times, and which instant those name
-	 * depends on the city, and for a DST city on the date.
-	 */
-	timeZone: string;
-	/**
-	 * Any caveat about how this entry was populated — e.g. which probe run
-	 * verified its listing URL, or a known quirk of the source.
-	 */
-	note?: string;
+	/** Fallback link for an event whose page named none. */
+	homepage?: string | null;
+	/** Fills in the venue for an event whose card named none. */
+	venue?: VenueRecord;
+	/** The sources/{city}.yml tier, carried through untouched. */
+	tier?: string;
 }
 
 /** Provenance of one fetch, attached to everything derived from it. */
@@ -162,7 +142,7 @@ export interface EventSourceAdapter {
 }
 
 /**
- * Minimal shape pageAdapter.ts depends on — satisfied by the real
+ * Minimal shape ladder.ts depends on — satisfied by the real
  * SourceFetcher (fetch.ts) but small enough to stub directly in tests
  * without mocking robots.txt/network behaviour.
  */

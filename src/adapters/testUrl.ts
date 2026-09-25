@@ -13,19 +13,22 @@
 
 import "../llmBootstrap.ts";
 import {
+	createPageAdapter,
+	runAdapter,
+	SourceFetcher,
+} from "@dothingslol/scraper";
+import {
 	addDays,
 	getWeekRange,
 	loadCityConfig,
 	requireEnv,
 	toISODate,
 } from "../common.ts";
+import { createHttpCacheStore } from "../io/httpCache.ts";
 import { installUsageReporting } from "../io/usage.ts";
 import { applyAnnotation, createGeminiAnnotator } from "./annotate.ts";
-import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
 import { prepareCandidates } from "./normalise.ts";
-import { createPageAdapter } from "./pageAdapter.ts";
-import { runAdapter } from "./runner.ts";
 import type { SourceDefinition } from "./types.ts";
 
 const args = process.argv.slice(2);
@@ -67,7 +70,7 @@ const source: SourceDefinition = {
 installUsageReporting();
 
 const adapter = createPageAdapter(source, {
-	fetcher: new SourceFetcher(),
+	fetcher: new SourceFetcher({ store: createHttpCacheStore() }),
 	extractPage: createGeminiPageExtractor(),
 });
 

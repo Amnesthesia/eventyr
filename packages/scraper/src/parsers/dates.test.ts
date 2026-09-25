@@ -1,6 +1,5 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { isDuplicateEvent } from "../common.ts";
 import {
 	countDateHits,
 	DST_GAP,
@@ -140,25 +139,6 @@ test("a time range resolves to the start time, not the end", () => {
 	assert.equal(
 		parseSingleDateTime("21 Jul 2026, 11-1pm", REF, BNE),
 		"2026-07-21T11:00:00+10:00",
-	);
-});
-
-test("an undated event never matches a dated one", () => {
-	// A stray heading extracted as an event used to swallow every event whose
-	// title it prefixed, on any date.
-	assert.equal(
-		isDuplicateEvent(
-			{ title: "live music", date: "" },
-			{ title: "live music at the triffid", date: "2026-09-03" },
-		),
-		false,
-	);
-	assert.equal(
-		isDuplicateEvent(
-			{ title: "live music", date: "2026-09-03" },
-			{ title: "live music at the triffid", date: "2026-09-03" },
-		),
-		true,
 	);
 });
 

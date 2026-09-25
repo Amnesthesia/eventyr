@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { toCandidateEvent } from "./candidate.ts";
+import { toCandidateEvent } from "../candidate.ts";
 import {
 	apiRequestFor,
 	feedUrlsFromHtml,

@@ -3,7 +3,7 @@ import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
-import type { RawCandidateFields } from "../adapters/types.ts";
+import type { RawCandidateFields } from "@dothingslol/scraper";
 
 // The cache writes under DATA_ROOT, so point that at a scratch dir before the
 // module under test resolves it.

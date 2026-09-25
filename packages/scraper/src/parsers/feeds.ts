@@ -30,7 +30,7 @@
 import { XMLParser } from "fast-xml-parser";
 import he from "he";
 import ICAL from "ical.js";
-import type { RawCandidateFields } from "./types.ts";
+import type { RawCandidateFields } from "../types.ts";
 
 export type FeedFormat =
 	| "events-calendar"
@@ -498,7 +498,8 @@ function trumbaAtomEntryToFields(
 	};
 }
 
-function parseTrumbaAtom(body: string, url: string): FeedResult | null {
+/** Trumba's Atom/GData calendar feed, or null if the body is not one. */
+export function parseTrumbaAtom(body: string, url: string): FeedResult | null {
 	const trimmed = body.replace(/^﻿/, "").trimStart();
 	if (!trimmed.startsWith("<?xml") && !trimmed.startsWith("<feed")) {
 		return null;
@@ -1176,6 +1177,25 @@ export function parseFeed(body: string, url: string): FeedResult | null {
 		};
 	}
 	return null;
+}
+
+/** Trumba's calendar JSON (`<calendar>.json`), or null if the body is not
+ * a Trumba array. The same shape check parseFeed applies, exposed by name. */
+export function parseTrumbaJson(body: string, url: string): FeedResult | null {
+	const parsed = asRecord(body);
+	if (!Array.isArray(parsed)) return null;
+	const first = parsed[0] as Record<string, unknown> | undefined;
+	const isTrumba = first
+		? "eventID" in first && "startDateTime" in first
+		: /(?:^|\.)trumba\.com\//i.test(url);
+	if (!isTrumba) return null;
+	return {
+		format: "trumba-json",
+		events: parsed
+			.slice(0, MAX_EVENTS_PER_FEED)
+			.map((e) => trumbaJsonToFields(e as TrumbaEvent, url))
+			.filter((f): f is RawCandidateFields => f !== null),
+	};
 }
 
 /**

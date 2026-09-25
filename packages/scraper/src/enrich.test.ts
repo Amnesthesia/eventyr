@@ -3,22 +3,12 @@ import { mkdtempSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
-import { enrichFromDetailPage } from "./enrichTimes.ts";
-import type { CandidateEvent, Fetcher, SourceDefinition } from "./types.ts";
+import { enrichFromDetailPage } from "./enrich.ts";
+import type { CandidateEvent, Fetcher } from "./types.ts";
 
 const REF = new Date("2026-09-03T09:00:00+10:00");
 
-const SOURCE = {
-	id: "loganarts",
-	name: "Logan Arts",
-	homepage: null,
-	listingUrls: ["https://loganarts.com.au/events"],
-	domains: ["loganarts.com.au"],
-	venue: { name: "Logan Arts", address: null, suburb: null },
-	strategy: "html",
-	sourceTier: "independents",
-	timeZone: "Australia/Brisbane",
-} as unknown as SourceDefinition;
+const SOURCE = { id: "loganarts", timeZone: "Australia/Brisbane" };
 
 /** Long enough that the time tests are only ever about time. */
 const REAL_DESCRIPTION =

@@ -20,22 +20,23 @@
 
 import { readFileSync } from "node:fs";
 import { provenanceFor, toCandidateEvent } from "./candidate.ts";
-import { extractFromEmbeddedJson } from "./embeddedJson.ts";
+import { blockedReason } from "./fetch.ts";
+import { extractFromEmbeddedJson } from "./parsers/embeddedJson.ts";
+import { parseFeed } from "./parsers/feeds.ts";
 import {
 	extractJsonLdBlocks,
 	findEventNodes,
 	jsonLdNodeToRawFields,
-} from "./extract.ts";
-import { parseFeed } from "./feeds.ts";
-import { blockedReason } from "./fetch.ts";
-import { stripToReadableText } from "./readableText.ts";
+} from "./parsers/jsonLd.ts";
+import { stripToReadableText } from "./parsers/text.ts";
 import type {
 	CandidateEvent,
 	EventSourceAdapter,
 	Fetcher,
 	PageExtractFn,
 	RawListing,
-	SourceDefinition,
+	ScrapeSource,
+	SourceStrategy,
 } from "./types.ts";
 
 export interface PageAdapterDeps {
@@ -45,8 +46,16 @@ export interface PageAdapterDeps {
 	now?: () => Date;
 }
 
+/** A source plus what the old registry entry carried for the ladder itself. */
+export interface LadderSource extends ScrapeSource {
+	listingUrls: string[];
+	strategy: SourceStrategy;
+	/** The city's IANA zone: page text states wall-clock times. */
+	timeZone: string;
+}
+
 export function createPageAdapter(
-	source: SourceDefinition,
+	source: LadderSource,
 	deps: PageAdapterDeps,
 ): EventSourceAdapter {
 	const now = deps.now ?? (() => new Date());

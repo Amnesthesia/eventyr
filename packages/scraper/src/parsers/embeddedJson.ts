@@ -19,7 +19,7 @@
 // in the HTML to find, so those stay on the LLM/search path unless someone
 // writes a per-site adapter.
 
-import type { RawCandidateFields } from "./types.ts";
+import type { RawCandidateFields } from "../types.ts";
 
 // Key matching is by pattern, not by a fixed list: every site names these
 // fields differently (runDateStart, starts_at, eventDate, firstDate...), and
@@ -316,3 +316,6 @@ export function extractFromEmbeddedJson(
 	}
 	return [...byKey.values()];
 }
+
+/** PLAN §2.5's name for extractFromEmbeddedJson. */
+export const parseEmbeddedJson = extractFromEmbeddedJson;
