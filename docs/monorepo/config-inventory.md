@@ -13,6 +13,22 @@ The owner decides the DECIDE rows and can override any row. Regexes and prompt/i
   - `CITY_NAMES`/`CITY_TERMS` gain Byron.
 - **Needs a behaviour decision, not a placement one:** `MIN_IN_WINDOW` in `triage.ts` is a stale mirror (PLAN §12).
 
+## Owner decisions (2026-09-25). Sub-phase 1.11 applies these
+
+- **Every DECIDE row becomes CONFIG**, at its proposed YAML key, except for the rows listed below.
+- **`PROVIDERS` / `DISABLE_PROVIDERS`** stay **environment variables** (CODE). `digest.yml` already sets `PROVIDERS` per run.
+- **`BRISBANE_UTC_OFFSET_HOURS`** is **deleted**, not moved. Each city's IANA `timezone` in `sources/{city}.yml` replaces it, and offsets are derived per date, so DST is handled. That happens in PR 0.
+- **Per-city values go to `sources/{city}.yml`**, not `pipeline.yml`:
+  - `currency` replaces `AU_CURRENCY` (`extract.ts:127`). PR 0 writes `currency: AUD` explicitly in all four files, and 1.11 switches `extract.ts` to read it.
+  - `name` (already present) replaces `CITY_NAMES`.
+  - a new `terms` list replaces `CITY_TERMS`.
+- **Mirrored constants read one key.**
+  - `MIN_TEXT_LENGTH` (probe/triage, both 1200) and `MIN_DATED` / `MIN_DATED_TO_PROMOTE` (both 3) each become a single key, with no behaviour change.
+  - `MIN_IN_WINDOW` (triage, 2) is a stale copy of what probe now calls `MIN_UPCOMING_TO_PROMOTE` (1). Both read `stages.probe.promote.minUpcoming = 1`. **This changes triage's diagnostic reports**, never published output. The 1.11 PR comment lists it as the one intended difference.
+- **`PRICES`** becomes `llm.prices` in `pipeline.yml`, passed to `configureLLM`. The `llm` package keeps its built-in table as the default, and the table also defines the allowed model names.
+- **`ICAL_EXPAND_DAYS`** becomes config, with a load-time check that it's at least the publishing window.
+- **`LEDGER_WEEKS` / `MIN_HISTORY_WEEKS`** become config, with a load-time check that `ledgerWeeks ≥ hitWindowWeeks`.
+
 ## Summary
 
 | Classification | Rows |

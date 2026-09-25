@@ -57,7 +57,7 @@ The Settings UI for taste is in 2.8.
    | not interested | `dislike` (also hides; unlikes first if the event was liked) |
    | unhide | `undislike` |
 
-   `autoLearn` is honoured inside core, so native adds no checks of its own. Picks and the rest are ordered by core `rankByTaste`. Manual keys are frozen from learning and count at full group strength (PLAN §7.2). No hard tier applies unless the owner chose to keep it (PLAN §11 Q1).
+   `autoLearn` is honoured inside core, so native adds no checks of its own. Picks and the rest are ordered by core `rankByTaste`. Manual keys are frozen from learning and count at full group strength (PLAN §7.2). Grouping applies the hard tier from core `prefTier` (manual On first, manual Off last; D13).
 2. **Not interested and the action sheet.**
    - Add a "−" button on the card.
    - Long press (500 ms, with `expo-haptics`) opens `CardActionSheet` with: Save/Remove from saved, Not interested, the calendar options, Share, Cancel. On iOS use `ActionSheetIOS`; on Android use a bottom sheet or modal.

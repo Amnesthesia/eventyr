@@ -115,15 +115,16 @@ Map `AskOptions` to exactly today's `generateContent` call:
 - `cache` option backed by `CacheStore`. The key derivation is the same as `adapters/extractionCache.ts` (input text + prompt version), so existing cache files in `data/_cache/extractions` stay valid. Test that an existing entry is read.
 - `replay` mode: the same record and replay semantics as the step 1 seam, using the **same line format**, so the goldens apply unchanged.
 - `LLMUnavailableError` is thrown for a missing key.
-- **Batch transport, Gemini (`src/batch.ts` + `providers/gemini.ts`).** `ask(prompts, { batch: true | { deadlineMs } })` does the following:
+- **Batch transport, Gemini (`src/batch.ts` + `providers/gemini.ts`).** `ask(prompts, { batch: true | { deadlineMs, onDeadline } })` does the following:
   1. Submits one Gemini Batch Mode job. Inline requests are used under 20 MB; above that, a JSONL file.
   2. Persists the job ID via the injected `BatchStore` **before** polling.
   3. Polls with backoff until the job completes or `deadlineMs` passes.
   4. Maps the results back in input order, and records usage at batch pricing (50%; add batch prices to `pricing.ts` with a source comment).
+  5. **On deadline** with `onDeadline: "cancel-and-sync"` (the default): it cancels the job, keeps the items that finished, and runs only the unfinished prompts as normal calls through the limiter. The result has the same shape either way. `LLMResponse.viaBatch` says which path each item took. With `"reject"` it throws `BatchError` and leaves the job running for a later collect.
 
   On resume, a stored job ID for the same request hash is collected, not resubmitted.
   - **Verify against the current docs** whether batch requests support `googleSearch` grounding, `systemInstruction`, JSON mode and thinking config. For anything unsupported, throw `BatchNotSupportedError` naming the option. Never drop it silently.
-  - Tests use recorded batch-create, batch-get and results fixtures. **No stage passes `batch` in PR 1.** Adoption is a follow-up (PLAN §11 Q3).
+  - Tests use recorded batch-create, batch-get and results fixtures. Also test cancel-and-sync with a job that is still `RUNNING` at the deadline. **No stage passes `batch` in PR 1.** The `stages.<stage>.batch` flags ship `false`, and 1.13 step 6 flips them for rank and annotate.
 
 ### 4. Pipeline side
 

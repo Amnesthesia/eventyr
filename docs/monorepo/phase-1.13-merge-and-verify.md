@@ -85,6 +85,17 @@ Then mark the PR **ready for review**. In the description, remind the merger to:
    - `reprobe.yml` runs on the 3rd of the month. Check it when it does.
    - Post these results on the PR once they're in.
 
+6. **Switch on batch for rank and annotate (D14).** Do this after the first green weekly run on the new layout, which gives the "before" figures.
+   - Open a small PR against `main`:
+     - `pipeline.yml`: set `stages.rank.batch: true` and `stages.annotate.batch: true` (deadlines 480000 / 300000 ms).
+     - `digest.yml`: raise `timeout-minutes` from 20 to 35.
+   - Verify with `pnpm check`, then dispatch `digest.yml` for `goldcoast` with `force=true`. That costs one paid run for a smaller city.
+     - The run is green.
+     - `data/goldcoast/run.json` shows the rank and annotate calls with `viaBatch` counts and `estimatedCostUsd` below the previous week's for those stages.
+     - Published event count and top picks are in line with last week.
+   - If the batch path hit its deadline, the log shows cancel-and-sync and the run still completes. That's the designed fallback, not a failure.
+   - Merge within the PLAN §4.4 window. The next weekly run is the real measurement: post its cost and duration next to the week before in the PR.
+
 ## Rollback (after merge)
 
 - **Before any bot commit lands on the new paths:** `git revert <squash-sha>` and push. That restores the old layout in one commit.

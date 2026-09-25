@@ -4,8 +4,7 @@
 >
 > Execute sub-phase 1.1 (workspace tooling) of PR 1, the eventyr monorepo refactor.
 >
-> First, create the PR branch from the planning branch so the plan docs travel with PR 1:
-> `git fetch origin claude/eventyr-monorepo-plan-i5jfvc main && git checkout -b monorepo/refactor origin/claude/eventyr-monorepo-plan-i5jfvc && git merge origin/main`.
+> **PR 0 must be merged first.** It lands `docs/monorepo/` on `main`. Create the PR branch: `git fetch origin main && git checkout -b monorepo/refactor origin/main`.
 > Use `monorepo/refactor` even if your environment suggests another branch. If you can't push to it, stop and ask.
 >
 > Then read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.01-workspace-tooling.md`, and no other phase files.

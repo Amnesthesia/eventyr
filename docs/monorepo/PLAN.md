@@ -35,12 +35,12 @@ session. A sub-phase session reads only this file and its own sub-phase file.
 | D10 | Settings | **Web and native** (confirmed). It has a notifications toggle with an explanation, a tri-state preference per tag, vibe and category, a theme setting, an auto-learn opt-out, and a privacy note. | §7. Web in 2.3, native in 2.8 |
 | D11 | Package split | `utils`, `llm` (`ask()` across providers), `scraper` (`scrape()` plus `/parsers`) and `pipeline` (stage functions plus `config/`). No relative imports between packages. | §2, 1.5–1.8, 1.11 |
 | D12 | Byron time zone | **Fix it** (confirmed). `sources/byron.yml` says `Australia/Brisbane`, and `src/adapters/dates.ts:23` hard-codes +10. Byron Bay is in NSW, which starts daylight saving on 4 Oct 2026. | **PR 0** |
-| D13 | Taste preferences (your clarification) | One number per tag, vibe or category. Auto-learning adds weighted counts, as today. The user never sees numbers, only **off / unset / on**. Setting one by hand writes −1, 0 or +1 and pins it, so learning never overrides a choice the user made. | §7, 2.3 |
-| D14 | `prompts[]` means batching | `ask(string)` returns `string`, and `ask(string[])` returns `string[]`. **By default the array runs as concurrent individual calls**, which is exactly what happens today. `{ batch: true }` uses the provider's native batch API: Gemini Batch Mode, Anthropic Message Batches or OpenAI Batch, each at 50% of standard price. Perplexity has none. **No stage switches to batch in PR 1**, because batch jobs have a 24-hour turnaround and the digest job times out after 20 minutes (§2.4). | 1.6 (built, unused), follow-up (adoption) |
+| D13 | Taste preferences | One number per tag, vibe or category. Auto-learning adds weighted counts, as it does today. The user never sees numbers, only **off / unset / on**. Setting a preference by hand writes −1, 0 or +1 and pins it, so learning never overrides it. **The hard ordering is kept:** a hand-set On sorts its events first and a hand-set Off sorts them last, as the current site does (your answer). | §7, 2.3 |
+| D14 | `prompts[]` means batching | `ask(string)` returns `string` and `ask(string[])` returns `string[]`. The array runs as concurrent calls by default. With `{ batch: true }` it uses the provider's own batch API: Gemini Batch Mode, Anthropic Message Batches or OpenAI Batch, each at 50% of normal price (Perplexity has none). **Yes, rank and annotate can use this with no restructuring.** `ask` waits up to a deadline, then cancels the batch job and finishes whatever is left as normal calls, so a slow batch can't stall the 20-minute digest (§2.4). Each stage switches on with a config flag. The flags ship as `false` so PR 1's parity check stays exact, and they're flipped for `rank` and `annotate` right after PR 1's first green weekly run (1.13, step 6). | 1.6, 1.13 |
 | D15 | Typed results | `EventData` is the canonical event type in `core` (this also avoids clashing with the DOM's `Event`). `ScrapeResult` carries fetch and parse metadata plus `events: EventData[]`. `LLMResponse` carries `inputTokens`, `outputTokens`, `totalTokens`, `estimatedCostUsd` and more. The pipeline's `SearchCollectResult` carries aggregated LLM usage plus `events: EventData[]`. | §2.4–2.6, 1.2, 1.6, 1.8, 1.11 |
 | D16 | Collection metadata | **`data/index.json` becomes `data/manifest.json`** (renamed with `git mv`), and its existing per-city fields gain a `collection` block: when the last collection started and finished, status, next scheduled run, providers, source and event counts, and LLM token and cost totals. It also gets a top-level `schedule` block. The per-stage detail lives in `data/{city}/run.json`, one writer per file, flushed as each stage finishes. `publish/pages` (today's `pages.ts`, the manifest's only writer) aggregates those into the manifest. The public feed index `/data/v1/index.json` exposes the non-cost subset for app Settings. | §8a, 2.2 |
 | D17 | Merge method | **Squash** (you don't need merge commits). The cost: `git log --follow` loses continuity for files that were split heavily. Full per-commit history stays on the PR branch, which the plan says not to delete. | §4.3 |
-| D18 | Config scope | Only operator tunables go to YAML. `config-inventory.md` lists every constant (CONFIG / DECIDE / CORE / CODE) for you to decide, and 1.11 applies your decisions. | 1.11 |
+| D18 | Config scope | Decided (see the owner decisions in `config-inventory.md`). Every DECIDE row becomes config, except:<br>• `PROVIDERS`/`DISABLE_PROVIDERS` stay environment variables.<br>• Per-city values move into `sources/{city}.yml`: `currency` (replacing the hard-coded AUD), `name`, the existing display-name field (replacing `CITY_NAMES`; rename it to `display_name` during 1.11's schema unification if you prefer) and `terms` (replacing `CITY_TERMS`).<br>• `BRISBANE_UTC_OFFSET_HOURS` is deleted. The city's IANA `timezone` replaces it (PR 0).<br>Values that were copied between files (probe/triage) now read one key. 1.11 applies all of this. | PR 0, 1.11 |
 
 ## 1. Discovery summary
 
@@ -234,7 +234,7 @@ export interface AskOptions {
   temperature?: number;
   cache?: { version: string };  // content-addressed response cache (store injected); was adapters/extractionCache
   providerOptions?: Record<string, unknown>;   // verbatim, provider-specific (e.g. anthropic max_uses)
-  batch?: boolean | { deadlineMs?: number };   // array form only; provider-native batch API (D14)
+  batch?: boolean | { deadlineMs?: number; onDeadline?: "cancel-and-sync" | "reject" };   // array form only; provider-native batch (D14). Default onDeadline: cancel-and-sync
 }
 
 export interface LLMUsage {
@@ -287,7 +287,13 @@ export { PRICES, estimateUsd, BudgetExhaustedError, LLMUnavailableError, BatchEr
     - whether implicit or explicit caching applies inside batches.
 
     Where a feature isn't supported, `ask` fails fast rather than silently dropping it.
-- **Why no stage uses batch yet.** The weekly digest must finish inside a 20-minute job, and every stage feeds the next. Using batch means splitting the digest into *submit* (for example Saturday night) and *collect* (Sunday 06:00) jobs. That changes how the pipeline runs, so it's a follow-up with its own measurement. `rank` and `annotate` are the natural first candidates.
+- **How rank and annotate use batch without restructuring the digest.**
+  - The option is `batch: { deadlineMs, onDeadline: "cancel-and-sync" }`, and it's the default whenever `batch` is on.
+  - `ask` submits one batch job, stores the job ID and polls. On completion it returns the results in input order.
+  - If the deadline passes first, it **cancels the job and runs the unfinished prompts as normal calls** through the limiter.
+  - Items the batch already finished are kept and not re-asked. Only those are billed at the batch rate, and cancelled items aren't charged, so the worst case costs about the same as today.
+  - Stages switch on per stage with `stages.<stage>.batch` in `pipeline.yml`, plus `deadlineMs`. The suggested start is 8 minutes for `rank` and 5 for `annotate`, and `digest.yml`'s `timeout-minutes` goes from 20 to 35 when the flags flip.
+  - **The flags ship `false` in PR 1**, because the parity check compares requests byte for byte and a batch request looks different. They're flipped right after PR 1's first green weekly run, which makes a clean before/after comparison of cost and runtime in the manifest (1.13 step 6).
 
 **Other design points.**
 
@@ -380,7 +386,7 @@ models:
   discover:      { provider: gemini, model: gemini-3.5-flash }
 llm:        { concurrency: { gemini: …, … }, maxCalls: … }     # values copied from gemini.ts / providers in 1.11
 scrape:     { … per-host rate limit, timeouts, retries … }
-stages:     { rank: { batchSize: … }, dedupe: { … }, … }
+stages:     { rank: { batchSize: …, batch: false, batchDeadlineMs: 480000 }, annotate: { batch: false, batchDeadlineMs: 300000 }, dedupe: { … }, … }   # batch flags flipped after PR 1 (D14)
 publish:    { aiWeekSplitBytes: 200000, … }
 schedule:   { weekly: "0 20 * * 6" }   # PR 2 (D16): next_collection_at; a test pins it to weekly.yml's cron
 ```
@@ -468,7 +474,7 @@ unchanged.
 |---|---|---|
 | 0.1 | `phase-0.01-byron-timezone.md` | `sources/byron.yml` becomes `Australia/Sydney`. Date parsing and every hard-coded `+10` site become DST-aware and per-city. Byron joins `weekly.yml`. The Queensland cities must come out byte-identical. |
 
-It merges before PR 1 starts. PR 1's goldens are recorded after it, so the refactor's baseline already has correct Byron behaviour.
+It merges before PR 1 starts. PR 1's goldens are recorded after it, so the refactor's baseline already has correct Byron behaviour. **PR 0 also brings `docs/monorepo/` onto `main`:** its branch starts from the planning branch. Every later sub-phase session then finds the plan on `main`.
 
 ### 4.1b PR 1: monorepo refactor (branch `monorepo/refactor`)
 
@@ -566,7 +572,7 @@ before the moves.
 
 ### List, sections, grouping
 - [ ] Sections: Saved → Picks (≤9, score ≥7, *starts* in the window, taste-ordered) → All. **2.5**
-- [ ] Group by Date (Today / Tomorrow / weekday / Ongoing / Later / TBC), Category, or None, (no hard tier; §7.2). **2.5**
+- [ ] Group by Date (Today / Tomorrow / weekday / Ongoing / Later / TBC), Category, or None, (with the hard tier for manually set tags; §7.2). **2.5**
 - [ ] "X of Y events match" plus the range. **2.6**
 - [ ] Card. **2.5** Contents:
   - category, cost (free highlighted), title link
@@ -694,7 +700,7 @@ type TasteState = "off" | "unset" | "on";               // what the user sees: s
 - **Ranking** uses v1's `tasteBoost` over the weights: ±4 cap, 0.55 / 0.25 / 0.2 weights, 1.5 curve.
   - A **manual key counts at the full strength of its group's strongest weight.** That is v1's `effectiveTaste` rule. Without it, a hand-set +1 would be drowned out by learned counts like +6.
   - `MIN_SIGNAL` counts `signals`, and any manual edit counts, so a user who only sets preferences still gets personalised ordering.
-- **Hard tier sort: dropped (open question 1).** In v1, "more" tags sorted above everything regardless of score. Your model has no such concept. Manual keys at full group strength keep them clearly favoured without overriding score entirely. If you want the hard tier back, it's one line: `prefTier` = sign of any manual tag.
+- **Hard tier sort: kept (your answer).** `prefTier(event, profile)` is +1 if any of the event's tags is manually On, −1 if any is manually Off (Off wins when both apply, as `prefTier` does today), and otherwise 0. `grouping.ts` sorts by tier before anything else, exactly as the current site sorts "more"/"less" tags. A manual key also counts at full group strength within its tier. Migrated users therefore keep today's order exactly.
 - **Web migration** (2.3) runs once, on load:
   - `weights` come from `eventyr:taste`.
   - Each `eventyr:tag-prefs` entry becomes a manual key with weight ±1.
@@ -824,7 +830,7 @@ The goldens are recorded after PR 0 merges, so Byron's corrected behaviour is pa
 | R8 | MCP Worker breaks silently | CI dry-run from 1.1 |
 | R9 | The long-lived PR 1 branch conflicts with weekly data commits | Moves that touch bot-written paths go last. `merge.directoryRenames=true`. Keep 1.9 → 1.13 within one working week |
 | R10 | PR 2's feed isn't live during development | `EXPO_PUBLIC_FEED_BASE_URL` pointed at a local preview; fixtures in CI |
-| R11 | Taste v2 changes web ranking | Manual keys at full group strength, as in v1. Only the hard tier changes (open question 1). Equivalence tests for users without prefs. v1 keys kept |
+| R11 | Taste v2 changes web ranking | Same increments, manual keys at full group strength, and the hard tier is kept, so migrated users should rank **exactly** as they do today. Equivalence tests cover profiles with and without preferences. The v1 keys are kept. |
 | R12 | GitHub Pages serves AASA with the wrong content type, or drops dotfiles | Dotfiles check in 1.1. Apple CDN check in 2.9 |
 | R13 | Tests write into the real `data/` | Isolated in 1.10 |
 | R14 | `add_city.ts` regex drifts from the workflow | Scratch-worktree check in 1.1 and 1.10 |
@@ -838,14 +844,12 @@ The goldens are recorded after PR 0 merges, so Byron's corrected behaviour is pa
 
 ## 11. Open questions
 
-1. **Taste v2 hard tier (§7.2).** v1 always sorts "more" tags first. My proposal drops that. Manual "on" tags get their group's full strength instead, and score still counts. Drop it (recommended), or keep it?
-2. **Config inventory.** Mark your decisions in `config-inventory.md`, especially the DECIDE rows. 1.11 applies whatever the file says at that point.
-3. **Batch adoption.** Should I plan the follow-up that splits the digest into a Saturday-night *submit* and a Sunday 06:00 *collect*, so that `rank` and `annotate` can use batch at 50% cost? It's out of PR 1 either way.
-4. **PR 0 now.** This session is planning-only, as you set it up, so I haven't touched code. Say the word and I'll run `phase-0.01` here on `fix/byron-timezone` and open the PR.
+1. **`timezone_offset` in city config.** I'd push back on this. The city config already has `timezone` (IANA), and a fixed offset is exactly the Byron bug: Byron's offset is +10 half the year and +11 the other half. PR 0 therefore keeps `timezone` as the only source of truth and derives the offset for each date from it. If you want the offset *visible* for the app, I'd add a derived, read-only `utc_offset` to each city in the manifest, computed for the published week. Say if you want that.
+
+Everything else is decided (§0).
 
 ## 12. Follow-ups deliberately left out
 
-- Batch adoption for `rank`/`annotate` (open question 3)
 - Splitting prompts into cacheable system/user parts per call site, measured
 - Evaluating other providers per stage
 - Astro 7 and TypeScript 7

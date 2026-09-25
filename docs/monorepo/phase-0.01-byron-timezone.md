@@ -5,7 +5,7 @@
 > Execute sub-phase 0.1 (PR 0, Byron fix) of the eventyr plan. Read `docs/monorepo/PLAN.md` (D5 and D12) and
 > `docs/monorepo/phase-0.01-byron-timezone.md`, and no other phase files.
 >
-> Create branch `fix/byron-timezone` from `origin/main`. Use that branch even if your environment suggests
+> Create branch `fix/byron-timezone` **from `origin/claude/eventyr-monorepo-plan-i5jfvc`** (`git fetch origin claude/eventyr-monorepo-plan-i5jfvc main && git checkout -b fix/byron-timezone origin/claude/eventyr-monorepo-plan-i5jfvc && git merge origin/main`). That way this PR also lands `docs/monorepo/` on `main` for every later session. Use that branch even if your environment suggests
 > another. If you can't push to it, stop and ask.
 >
 > This is a bug fix on the current single-package layout. **Don't** start any monorepo work. Follow the
@@ -86,7 +86,7 @@ There were 11 hits at planning time. The likely sites are:
 4. **Every other `+10` site.** Pass `city.timezone` down and replace fixed offsets with `zonedOffsetMinutes`, or with `isoWithOffset(…, timeZone)` where one already exists.
    - The `.ics` files must declare the city's `TZID` with correct `VTIMEZONE` rules. Check whether `ical.ts` emits `VTIMEZONE` or relies on `TZID` alone, and say which in the PR.
    - Remove `BRISBANE_UTC_OFFSET_HOURS` once nothing uses it.
-5. **Fix the config.** Set `sources/byron.yml` `timezone: Australia/Sydney`.
+5. **Fix the config.** Set `sources/byron.yml` to `timezone: Australia/Sydney`. In **all four** `sources/*.yml`, write `currency: AUD` (and `locale` if `loadCityConfig` defaults it) explicitly, so the city config states what the code assumed. The values match today's defaults, so nothing changes. 1.11 makes `extract.ts` read `currency` instead of its hard-coded AUD (owner decision in `config-inventory.md`). Don't add a fixed `timezone_offset` field: the offset comes from `timezone` per date (PLAN §11).
 5b. **Byron in the source-maintenance maps.** `CITY_NAMES` (`src/adapters/discover.ts:69`) and `CITY_TERMS` (`src/adapters/probe.ts:465`) have no `byron` entry, so discovery and probing fall back to the bare key `"byron"`. Add `byron: "Byron Bay"` and Byron's locality terms (for example Byron Bay, Byron Shire, Mullumbimby, Bangalow, Suffolk Park; check `sources/byron.yml` for the localities its sources actually use). These maps are used by `discover-sources`/`probe-sources` only, not the weekly digest, so this has no effect on published output.
 6. **Add Byron to the weekly run.** In `weekly.yml`, add after `sunnycoast`:
    ```yaml

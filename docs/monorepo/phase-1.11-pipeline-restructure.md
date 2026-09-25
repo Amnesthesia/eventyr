@@ -64,7 +64,7 @@ Import rules, added to `check-boundaries.mjs` as a directory rule. Every directo
 ## Steps
 
 1. **Config snapshot first.**
-   - The classification lives in **`docs/monorepo/config-inventory.md`**. It was produced during planning, and the owner has marked the decisions in it. Apply it as written:
+   - The classification lives in **`docs/monorepo/config-inventory.md`**. Its **"Owner decisions"** section overrides individual rows: DECIDE rows become CONFIG, `PROVIDERS`/`DISABLE_PROVIDERS` stay env, and per-city values (`currency`, `terms`) go to `sources/{city}.yml`. `CITY_NAMES` reads the existing `name` field. Mirrored probe/triage constants read one key, and the `MIN_IN_WINDOW` change is the only intended difference. Also add `stages.rank.batch`/`stages.annotate.batch` (`false`) and their `batchDeadlineMs`, wired to `ask`. It was produced during planning, and the owner has marked the decisions in it. Apply it as written:
      - CONFIG rows move to `pipeline.yml`.
      - CODE and CORE rows stay where they are.
      - Any DECIDE row the owner **hasn't** resolved stays in code. Also list those rows in the PR comment.

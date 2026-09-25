@@ -33,7 +33,7 @@ the web adopts them first and native (2.5–2.8) reuses them:
   - `packages/core/src/when.ts` (new) and its tests
   - `packages/core/src/tasteProfile.ts` (new) and its tests
   - `packages/core/src/storageKeys.ts`: add `eventyr:taste-profile` and `eventyr:notifications`
-  - `packages/core/src/grouping.ts`: remove the v1 `prefTier` comparator (PLAN §11 Q1)
+  - `packages/core/src/grouping.ts`: the tier comparator now reads v2 `prefTier` (the hard tier is kept, D13)
   - `packages/core/src/filters.ts`: `splitSections` takes a `TasteProfileV2`
   - `taste.ts` and `tagPrefs.ts`: removed once nothing imports them. Keep the v1 reading code needed by the migration inside `tasteProfile.ts`.
 - **Web:**
@@ -82,14 +82,14 @@ Build exactly what PLAN §7.2 specifies.
      - `stateOf(profile, key)` returns `sign(weight)` as a `TasteState`.
      - `resetAll(profile)` and `setAutoLearn(profile, on)`.
    - **Ranking:** `tasteBoost(event, profile)` and `rankByTaste(events, profile)` keep the v1 formula: ±4 cap, 0.55/0.25/0.2 weights, 1.5 curve. **Manual keys count at their group's strongest absolute weight** (v1 `effectiveTaste` semantics). `MIN_SIGNAL` counts `signals`.
-   - **No `prefTier` and no hard tier sort** (PLAN §11 Q1). If the owner answers "keep", add `prefTier` = the sign of any manual tag and restore the tier comparator in `grouping.ts`.
+   - **Hard tier (kept, D13):** `prefTier(event, profile)` returns +1 if any of the event's tags is manually On, −1 if any is manually Off (Off wins, matching v1), and 0 otherwise. `grouping.ts` sorts by it first, exactly as v1 did with more/less.
    - **Migration:** `migrateFromV1(taste: Record<string, number>, tagPrefs: Record<string, 1 | -1>): TasteProfileV2`.
      - `weights` come from `taste`.
      - Each pref becomes a manual key with weight ±1.
      - `signals` is the v1 save count plus the number of prefs.
 2. **Equivalence tests** (PLAN R11). Keep a frozen copy of the v1 functions in the test file, marked `ponytail:` with a note to delete it after one release.
    - **No stated prefs:** `rankByTaste(events, migrateFromV1(v1))` must order events **exactly** as v1 did.
-   - **With stated prefs:** assert the documented difference and nothing else. Manual "on" events still rank above what the same event would get without the pref, but no longer above everything. Name every event that moves in the test's description.
+   - **With stated prefs:** also **exact**. Manual keys at full group strength plus the kept tier reproduce v1's `effectiveTaste` and tier sort. Any difference is a bug.
 3. **Web store: `tasteProfileStore.ts`**
    - Load `eventyr:taste-profile`. If it's absent, migrate from `eventyr:taste` + `eventyr:tag-prefs`. **Leave the v1 keys in place.**
    - Keep the `eventyr:taste-change` event.
@@ -117,9 +117,9 @@ Build exactly what PLAN §7.2 specifies.
 |---|---|---|---|
 | V1 | Checks | `pnpm check` | exit 0 with the new core tests |
 | V2 | Device-time regression | the `when.ts` Brisbane fixture test | identical strings |
-| V3 | Migration equivalence | the `tasteProfile` equivalence tests | identical order without prefs; only the documented, named moves with prefs |
+| V3 | Migration equivalence | the `tasteProfile` equivalence tests | identical order, with and without prefs |
 | V4 | Web behaviour with a Brisbane zone | `TZ=Australia/Brisbane`, then preview and run `filter-parity.mjs` against the 2.1 baseline (rebuild the baseline from `origin/main` if the data moved) | counts identical. Card titles and order are identical for a fresh profile. |
-| V5 | Existing user migration (manual) | On `origin/main`'s build, save 3 events and set 2 tag prefs (one more, one less). Then switch to this build on the same origin (`pnpm preview` on port 4321 for both) | Settings shows the 3 learned tags as On and the 2 prefs as On/Off. Picks change only as V3 documents. v1 keys are still present in DevTools → Application |
+| V5 | Existing user migration (manual) | On `origin/main`'s build, save 3 events and set 2 tag prefs (one more, one less). Then switch to this build on the same origin (`pnpm preview` on port 4321 for both) | Settings shows the 3 learned tags as On and the 2 prefs as On/Off. Picks order unchanged. v1 keys are still present in DevTools → Application |
 | V6 | Device time (manual) | Chrome DevTools → Sensors → time zone `Australia/Sydney` | timed events move +1 h during DST, date-only events are unchanged, and the static `/e/` page matches after hydration |
 | V7 | Settings (manual) | Toggle notifications off, then save an event | no permission prompt and no scheduling. Turning it back on restores the behaviour. |
 | V8 | Manual pin and opt-out (manual) | Set a tag Off, then like an event that has that tag; separately, turn learning off and like 3 events | The Off tag stays Off (manual keys aren't touched by learning). With learning off, no state changes. Turned back on, liking one event flips an Unset tag to On |
