@@ -143,6 +143,9 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 
 ## Key files
 
+- `packages/core` (`@dothingslol/core/<module>`) holds all node-free, React-free logic shared by web,
+  native, mcp and pipeline; browser-bound halves stay in `app/utils/` (`tasteStore`, `tagPrefsStore`,
+  `icsDownload`, `notifications`).
 - `packages/core/src/shared.ts` (`@dothingslol/core/shared`) — constants shared with the browser
   bundle (`CATEGORIES`, `CATEGORY_EMOJI`, `TOP_PICK_THRESHOLD`, `KEY_TO_SLUG`, `SITE_URL`).
   **Must stay free of `node:` imports** — `app/` code imports it directly, and pulling in

@@ -96,7 +96,7 @@ object, and it renders in full with JavaScript disabled.
 The share control on a card is an `<a href>` to that page, progressively enhanced: with JavaScript
 it opens the native share sheet, or copies the URL where that does not exist; without it, it is
 just a link. Same for Add to calendar, which builds a single-event `.ics` in the browser
-(`app/utils/ics.ts`).
+(`packages/core/src/ics.ts`, downloaded by `app/utils/icsDownload.ts`).
 
 The slug's trailing hash is `eventHash` from `packages/core/src/shared.ts`, which is also the iCal `UID` and the
 RSS `guid` — one identity, so a share URL, a calendar entry and a feed item all name the same
@@ -402,6 +402,7 @@ no registration — just write `{city_key, provider, tier, week_start, week_end,
   `extract.ts`, `embeddedJson.ts`, `llmExtract.ts`, `dates.ts`, `normalise.ts`, `annotate.ts`.
 - `src/dedupe.ts` / `src/dedupeClassifier.ts` — cross-source dedupe.
 - `app/` — React components; `src/pages/` — Astro pages.
-- `app/utils/notifications.ts` — 1-hour event reminders, 8:00 AM morning digest, and notification lifecycle.
+- `app/utils/notifications.ts` — 1-hour event reminders, 8:00 AM morning digest, and notification lifecycle
+  (reminder times and wording: `packages/core/src/reminders.ts`).
 - `app/utils/pwaStorage.ts` — IndexedDB persistence for bookmarked events shared with the Service Worker.
 - `public/sw.js` / `public/manifest.webmanifest` — Service Worker (offline caching, sync, triggers) and PWA manifest.
