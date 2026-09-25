@@ -1,9 +1,16 @@
+import { todayIso } from "@dothingslol/core/dates";
 import {
-	endOfMonth,
-	eventOverlapsRange,
-	startOfWeek,
-	todayIso,
-} from "@dothingslol/core/dates";
+	applyFilters,
+	hiddenCount as countHidden,
+	coverage,
+	DEFAULT_FILTERS,
+	dateBounds,
+	type FilterState,
+	facetCounts,
+	hasActiveFilters as filtersActive,
+	isPast,
+	splitSections,
+} from "@dothingslol/core/filters";
 import type { GroupBy } from "@dothingslol/core/grouping";
 import { eventId } from "@dothingslol/core/identity";
 import type {
@@ -14,13 +21,10 @@ import type {
 	PastFilter,
 	VibeKey,
 } from "@dothingslol/core/schema";
-import { matchesQuery, queryTokens } from "@dothingslol/core/search";
 import {
 	type CostLocale,
 	DEFAULT_COST_LOCALE,
-	isTopPick,
 	KEY_TO_SLUG,
-	LOW_SCORE_THRESHOLD,
 } from "@dothingslol/core/shared";
 import { STORAGE_KEYS } from "@dothingslol/core/storageKeys";
 import { cycleTagPref, type TagPrefs } from "@dothingslol/core/tagPrefs";
@@ -29,10 +33,9 @@ import {
 	bumpDislike,
 	bumpTaste,
 	logTasteProfile,
-	rankByTaste,
 	type TasteProfile,
 } from "@dothingslol/core/taste";
-import { matchesTimeBands, type TimeBand } from "@dothingslol/core/timeOfDay";
+import type { TimeBand } from "@dothingslol/core/timeOfDay";
 import {
 	createContext,
 	type ReactNode,
@@ -221,7 +224,7 @@ export function EventsProvider({
 	// ones" are different asks: Brisbane went from 462 to 751 in one run. The
 	// select in the filter bar reaches every value including 0, so nothing is
 	// unreachable.
-	const [minScore, setMinScore] = useState<number>(LOW_SCORE_THRESHOLD);
+	const [minScore, setMinScore] = useState<number>(DEFAULT_FILTERS.minScore);
 
 	/** Count this event's tags, vibes and category in or out of the taste
 	 * profile. An id with no matching event (starred in an earlier week, now
@@ -353,8 +356,8 @@ export function EventsProvider({
 		window.location.href = `/${slug}`;
 	}
 
-	const [activeCat, setActiveCat] = useState("All");
-	const [activeVenue, setActiveVenue] = useState<string | null>(null);
+	const [activeCat, setActiveCat] = useState(DEFAULT_FILTERS.category);
+	const [activeVenue, setActiveVenue] = useState(DEFAULT_FILTERS.venue);
 	const [dateRange, setDateRange] = useState<DateRange | null>(
 		initialDateRange,
 	);
@@ -374,7 +377,9 @@ export function EventsProvider({
 		setTagPrefs({});
 		saveTagPrefs({});
 	}, []);
-	const [pastFilter, setPastFilter] = useState<PastFilter>("no-past");
+	const [pastFilter, setPastFilter] = useState<PastFilter>(
+		DEFAULT_FILTERS.past,
+	);
 	const [timeBands, setTimeBands] = useState<TimeBand[]>([]);
 	const toggleTimeBand = useCallback((band: TimeBand) => {
 		setTimeBands((prev) =>
@@ -402,32 +407,47 @@ export function EventsProvider({
 
 	const clearVibes = useCallback(() => setVibes([]), []);
 
-	// One definition of "something is filtering". The FILTERING BY strip, the
-	// empty state and CLEAR ALL all read it, so a new filter cannot be added to
-	// one of the three and forgotten in the other two.
-	const hasActiveFilters =
-		activeCat !== "All" ||
-		activeVenue !== null ||
-		dateRange !== null ||
-		activeTags.length > 0 ||
-		vibes.length > 0 ||
-		timeBands.length > 0 ||
-		query.trim().length > 0 ||
-		minScore !== LOW_SCORE_THRESHOLD ||
-		pastFilter !== "no-past";
+	const filters = useMemo<FilterState>(
+		() => ({
+			category: activeCat,
+			venue: activeVenue,
+			range: dateRange,
+			tags: activeTags,
+			vibes,
+			timeBands,
+			query,
+			minScore,
+			past: pastFilter,
+		}),
+		[
+			activeCat,
+			activeVenue,
+			dateRange,
+			activeTags,
+			vibes,
+			timeBands,
+			query,
+			minScore,
+			pastFilter,
+		],
+	);
+	// One definition of "something is filtering" (core/filters), read by the
+	// FILTERING BY strip, the empty state and CLEAR ALL alike.
+	const hasActiveFilters = filtersActive(filters);
 
+	// Back to DEFAULT_FILTERS, whose score floor is LOW_SCORE_THRESHOLD, not
+	// 0: "clear the filters" means the view a first-time visitor gets.
 	const clearAllFilters = useCallback(() => {
-		setActiveCat("All");
-		setActiveVenue(null);
-		setDateRange(null);
-		setActiveTags([]);
-		setVibes([]);
-		setTimeBands([]);
-		setQuery("");
-		// Back to the default floor, not 0: "clear the filters" means the view a
-		// first-time visitor gets, and that one hides venue promotion.
-		setMinScore(LOW_SCORE_THRESHOLD);
-		setPastFilter("no-past");
+		const d = DEFAULT_FILTERS;
+		setActiveCat(d.category);
+		setActiveVenue(d.venue);
+		setDateRange(d.range);
+		setActiveTags(d.tags);
+		setVibes(d.vibes);
+		setTimeBands(d.timeBands);
+		setQuery(d.query);
+		setMinScore(d.minScore);
+		setPastFilter(d.past);
 	}, []);
 
 	// This is a static site rebuilt weekly, so "today" at server-render
@@ -443,234 +463,72 @@ export function EventsProvider({
 	}, []);
 
 	const isEventPast = useCallback(
-		(event: EventData): boolean => {
-			const end = (event.datetime_end_iso || event.datetime_iso || "").slice(
-				0,
-				10,
-			);
-			return end ? end < todayStr : false;
-		},
+		(event: EventData) => isPast(event, todayStr),
 		[todayStr],
 	);
 
-	const { filtered, lowScored } = useMemo(() => {
-		// Tokenised once per query rather than once per event: normalising the
-		// query 395 times a keystroke is pure waste.
-		const tokens = queryTokens(query);
-		// The score floor is applied last, so the ones it alone removed can be
-		// counted — "N low-scoring events hidden" must not include events the
-		// reader's other filters would have dropped anyway.
-		const lowScored: EventData[] = [];
-		const filtered = cityData.events.filter((event) => {
-			if (!passesOtherFilters(event)) return false;
-			// An unscored event is never hidden by this filter — ranking can be
-			// absent (a fresh scrape, a failed rank pass) and a missing score is
-			// not a low one. Same rule meetsScoreFloor applies for the feeds.
-			if (typeof event.score === "number" && event.score < minScore) {
-				lowScored.push(event);
-				return false;
-			}
-			return true;
-		});
-		return { filtered, lowScored };
+	const { filtered, lowScored } = useMemo(
+		() =>
+			applyFilters(cityData.events, filters, {
+				today: todayStr,
+				hidden,
+				keyOf: eventId,
+			}),
+		[cityData.events, filters, todayStr, hidden],
+	);
 
-		function passesOtherFilters(event: EventData): boolean {
-			if (hidden.has(eventId(event))) return false;
-			if (!matchesQuery(event, tokens)) return false;
-			const catOk = activeCat === "All" || event.category === activeCat;
-			if (activeVenue !== null && event.venue_name !== activeVenue) {
-				return false;
-			}
-
-			const dateOk =
-				!dateRange || eventOverlapsRange(event, dateRange.start, dateRange.end);
-
-			const tagsOk =
-				activeTags.length === 0 ||
-				activeTags.every((tag) => (event.tags || []).includes(tag));
-
-			const endDate = (
-				event.datetime_end_iso ||
-				event.datetime_iso ||
-				""
-			).slice(0, 10);
-			const isPast = endDate ? endDate < todayStr : false;
-			if (!matchesTimeBands(event, timeBands)) return false;
-			if (pastFilter === "no-past" && isPast) return false;
-			if (pastFilter === "only-past" && !isPast) return false;
-
-			const vibeOk = vibes.every((key) => event[key] === true);
-
-			return catOk && dateOk && tagsOk && vibeOk;
-		}
-	}, [
-		cityData,
-		activeCat,
-		activeVenue,
-		dateRange,
-		activeTags,
-		pastFilter,
-		vibes,
-		todayStr,
-		query,
-		hidden,
-		minScore,
-		timeBands,
-	]);
-
-	// Counted against the whole city, not `filtered`: hidden events are by
-	// definition not in `filtered`, and the count is the only thing that tells
-	// a reader they have hidden anything at all.
 	const hiddenCount = useMemo(
-		() => cityData.events.filter((e) => hidden.has(eventId(e))).length,
-		[cityData, hidden],
+		() => countHidden(cityData.events, hidden, eventId),
+		[cityData.events, hidden],
 	);
 
-	// From cityData.events, not `filtered`: this populates the category pills
-	// themselves, and deriving it from the filtered list made it depend on
-	// activeCat — once a click narrowed the list to one category, the pill row
-	// shrank to that one pill with no way back except the (also narrowed) "All"
-	// link. A static per-category page (src/pages/[city]/[category].astro)
-	// already ships only that category's events, so this still comes out to a
-	// single pill there — which is exactly right, since there is no other
-	// category's data on that page to switch to client-side.
-	const categories = useMemo(
-		() => [...new Set(cityData.events.map((e) => e.category).filter(Boolean))],
-		[cityData],
+	// From every event, not `filtered`, so the category pills and the venue
+	// picker don't shrink to the one option just selected (see facetCounts).
+	const { categories, venues } = useMemo(
+		() => facetCounts(cityData.events),
+		[cityData.events],
 	);
 
-	// From cityData.events for the same reason as `categories`: the venue
-	// picker must not shrink to the one venue it just selected.
-	const venues = useMemo(() => {
-		const counts = new Map<string, number>();
-		for (const e of cityData.events) {
-			if (e.venue_name) {
-				counts.set(e.venue_name, (counts.get(e.venue_name) ?? 0) + 1);
-			}
-		}
-		return [...counts]
-			.map(([name, count]) => ({ name, count }))
-			.sort((a, b) => a.name.localeCompare(b.name));
-	}, [cityData]);
-
-	const { starredEvents, picks, rest } = useMemo(() => {
-		const starredEvents: EventData[] = [];
-		const eligible: EventData[] = [];
-		// A pick has to START inside the selected dates, not merely overlap them.
-		// The date filter itself is deliberately an overlap test — that is what
-		// makes selecting the last two days of a festival work — but it also
-		// admits a run that opened months ago, and "Picks" for Today showing an
-		// exhibition dated 1 January reads as a bug even though the exhibition
-		// is genuinely open today. Those stay in the list below, where grouping
-		// by date files them under "Ongoing" and says so.
-		// The window picks are judged against: whatever the user has filtered to,
-		// else the published week. It used to fall back to "no window at all"
-		// when no filter was set, which is exactly when a months-long run could
-		// sit in Picks every week.
-		const pickWindow = {
-			start: dateRange?.start ?? cityData?.week_start ?? "",
-			end: dateRange?.end ?? cityData?.week_end ?? "",
-		};
-		const unstarred: EventData[] = [];
-		filtered.forEach((e) => {
-			// A saved event lives only in the "saved" section once it's starred —
-			// it used to fall through into picks/rest too, so the exact same card
-			// rendered twice on any page with a save on it.
-			if (starred.has(eventId(e))) {
-				starredEvents.push(e);
-				return;
-			}
-			unstarred.push(e);
-			if (isTopPick(e, pickWindow.start, pickWindow.end)) {
-				eligible.push(e);
-			}
-		});
-		// Which nine of the eligible events surface is where personalisation
-		// happens: rankByTaste reorders them by score plus how well they match
-		// what this browser has bookmarked, so the row leans toward saved tags,
-		// vibes and categories without anything dropping below the score
-		// threshold. An empty profile leaves the pipeline's own order alone.
-		const picks = rankByTaste(eligible, taste, tagPrefs).slice(0, 9);
-		const pickIds = new Set(picks.map(eventId));
-		// Everything the picks row did not take, still in the incoming score
-		// order — including eligible events beyond the nine.
-		const rest = rankByTaste(
-			unstarred.filter((e) => !pickIds.has(eventId(e))),
+	const {
+		saved: starredEvents,
+		picks,
+		rest,
+	} = useMemo(
+		() =>
+			splitSections(filtered, {
+				starred,
+				keyOf: eventId,
+				taste,
+				tagPrefs,
+				range: dateRange,
+				weekStart: cityData.week_start,
+				weekEnd: cityData.week_end,
+			}),
+		[
+			filtered,
+			starred,
 			taste,
 			tagPrefs,
-		);
-		return { starredEvents, picks, rest };
-	}, [
-		filtered,
-		starred,
-		dateRange,
-		taste,
-		tagPrefs,
-		// Picks fall back to the published week when no date filter is set, so
-		// the window is a real input to this memo.
-		cityData?.week_start,
-		cityData?.week_end,
-	]);
+			dateRange,
+			cityData.week_start,
+			cityData.week_end,
+		],
+	);
 
-	/**
-	 * The furthest date the picker lets you choose.
-	 *
-	 * The latest date any event actually runs to — but capped at the end of the
-	 * month that the coverage ends in, because a single long-running exhibition
-	 * (one here closes in April 2027) would otherwise stretch the picker across
-	 * two years for the sake of one event.
-	 */
-	const dateMax = useMemo(() => {
-		const ends = (cityData?.events ?? [])
-			.map((e) => (e.datetime_end_iso || e.datetime_iso || "").slice(0, 10))
-			.filter(Boolean)
-			.sort();
-		const latest = ends[ends.length - 1] ?? cityData?.week_end ?? "";
-		if (!latest) return "";
-		const cap = endOfMonth(cityData?.week_end || latest);
-		return latest > cap ? cap : latest;
-	}, [cityData]);
-
-	/**
-	 * The earliest. The day the digest was generated (a Sunday, the day before
-	 * its week starts — the same rule Base.astro uses for coverage), not the
-	 * earliest date in the data: that is a 2023 exhibition opening, and no one
-	 * is picking 2023 — those events surface anyway, because the date filter is
-	 * an overlap test.
-	 */
-	const dateMin = cityData?.generated_at || cityData?.week_start || "";
+	const { dateMin, dateMax } = useMemo(() => dateBounds(cityData), [cityData]);
 
 	const costLocale: CostLocale = {
 		locale: cityData?.locale ?? DEFAULT_COST_LOCALE.locale,
 		currency: cityData?.currency ?? DEFAULT_COST_LOCALE.currency,
 	};
 
-	const [coverageStart, coverageEnd] = useMemo(() => {
-		const dates = (cityData?.events ?? [])
-			.map((e) => (e.datetime_iso ?? "").slice(0, 10))
-			.filter(Boolean)
-			.sort();
-		const start = cityData?.week_start ?? "";
-		const end = cityData?.week_end ?? "";
-		if (dates.length === 0) return [start, end];
-		return [
-			start && start < dates[0] ? start : dates[0],
-			end && end > dates[dates.length - 1] ? end : dates[dates.length - 1],
-		];
-	}, [cityData]);
-
-	// The header range never starts before this week's Monday. The earliest
-	// event is an exhibition that opened in February, and "19 Feb – 13 Sep"
-	// on the masthead read as stale rather than as coverage. Falls back to the
-	// digest's own Monday until today is known client-side (see todayStr), so
-	// server and first client render agree.
-	const weekStart = useMemo(() => {
-		const floor = todayStr
-			? startOfWeek(todayStr)
-			: (cityData?.week_start ?? "");
-		const clamped = coverageStart < floor ? floor : coverageStart;
-		return coverageEnd && clamped > coverageEnd ? coverageEnd : clamped;
-	}, [coverageStart, coverageEnd, todayStr, cityData?.week_start]);
+	// The header range (see core/filters coverage): derived from the events,
+	// never before this week's Monday, and the digest's Monday until today is
+	// known client-side, so server and first client render agree.
+	const { weekStart, weekEnd } = useMemo(
+		() => coverage(cityData, todayStr),
+		[cityData, todayStr],
+	);
 
 	// Printed once per load, after picks exist. The feature is invisible by
 	// design — a reordered row looks like no feature at all — so this is the
@@ -745,7 +603,7 @@ export function EventsProvider({
 		// the data but unreachable. Deriving can't desync, and week_start /
 		// week_end keep their existing meaning for the pipeline's cache checks.
 		weekStart,
-		weekEnd: coverageEnd,
+		weekEnd,
 		isEventPast,
 		todayStr,
 	};
