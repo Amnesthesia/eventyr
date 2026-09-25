@@ -369,8 +369,8 @@ pnpm dev     # astro dev server
 - `.github/workflows/digest.yml` — reusable per-city workflow: typecheck/test → scrape → search →
   curate → rank → geocode → markdown → ical → rss → pages → build → commit. The scrape step is
   `continue-on-error` so an adapter failure degrades to search-only.
-- `.github/workflows/weekly.yml` — runs the three cities in sequence, Sundays 06:00 AEST, for the
-  week starting the next day.
+- `.github/workflows/weekly.yml` — runs the four cities (Brisbane, Gold Coast, Sunshine Coast,
+  Byron Bay) in sequence, Sundays 06:00 AEST, for the week starting the next day.
 - `.github/workflows/deploy.yml` — GitHub Pages.
 
 ## Data layout
