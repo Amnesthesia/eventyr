@@ -11,6 +11,7 @@
 
 import { addDays, shortDate, startOfWeek } from "@dothingslol/core/dates";
 import { buildIcs } from "@dothingslol/core/ics";
+import { eventId } from "@dothingslol/core/identity";
 import { QR_EVENT_LIMIT, savedCalendarUrl } from "@dothingslol/core/savedLink";
 import type { EventData } from "@dothingslol/core/schema";
 import { catToSlug, eventPath } from "@dothingslol/core/shared";
@@ -25,7 +26,7 @@ import {
 	X,
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { eventId, useEventsContext } from "../context";
+import { useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
 import { downloadIcs } from "../utils/icsDownload";
 import { shareUrl } from "../utils/share";

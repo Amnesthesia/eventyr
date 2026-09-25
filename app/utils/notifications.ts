@@ -1,4 +1,5 @@
 import { todayIso } from "@dothingslol/core/dates";
+import { eventId } from "@dothingslol/core/identity";
 import {
 	calculate1hReminderTime,
 	filterEventsForMorningDigest,
@@ -7,7 +8,6 @@ import {
 } from "@dothingslol/core/reminders";
 import type { EventData } from "@dothingslol/core/schema";
 import { eventPath } from "@dothingslol/core/shared";
-import { eventId } from "../context";
 import {
 	deleteStarredEvent,
 	getPwaMeta,

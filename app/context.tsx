@@ -5,6 +5,7 @@ import {
 	todayIso,
 } from "@dothingslol/core/dates";
 import type { GroupBy } from "@dothingslol/core/grouping";
+import { eventId } from "@dothingslol/core/identity";
 import type {
 	City,
 	CityData,
@@ -51,12 +52,6 @@ import {
 } from "./utils/notifications";
 import { loadTagPrefs, saveTagPrefs } from "./utils/tagPrefsStore";
 import { loadTaste, onTasteChange, saveTaste } from "./utils/tasteStore";
-
-/** The identity saved/hidden sets are keyed by. Not eventHash: stars already
- * in people's localStorage use this basis, and changing it would lose them. */
-export function eventId(event: EventData): string {
-	return event.title + event.datetime_iso;
-}
 
 interface EventsContextValue {
 	cityData: CityData;

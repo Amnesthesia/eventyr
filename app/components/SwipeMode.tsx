@@ -14,13 +14,14 @@
 
 import { todayIso } from "@dothingslol/core/dates";
 import { dateLabel } from "@dothingslol/core/grouping";
+import { eventId } from "@dothingslol/core/identity";
 import type { EventData } from "@dothingslol/core/schema";
 import { catShortName, catToSlug } from "@dothingslol/core/shared";
 import { rankByTaste } from "@dothingslol/core/taste";
 import { VIBE_KEYS, VIBE_LABELS } from "@dothingslol/core/vibes";
 import { Bookmark, RotateCcw, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { eventId, useEventsContext } from "../context";
+import { useEventsContext } from "../context";
 import EventCard from "./EventCard";
 
 /** Drag past this many pixels and letting go commits the swipe. */

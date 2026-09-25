@@ -1,5 +1,6 @@
+import { eventId } from "@dothingslol/core/identity";
 import type { EventData } from "@dothingslol/core/schema";
-import { eventId, useEventsContext } from "../context";
+import { useEventsContext } from "../context";
 import EventCard from "./EventCard";
 
 interface Props {
