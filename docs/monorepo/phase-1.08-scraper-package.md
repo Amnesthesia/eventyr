@@ -85,6 +85,7 @@ candidates, the extraction ladder, detail-page enrichment, Playwright rendering,
 |---|---|---|---|
 | V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0. Adapter test count is unchanged (tests moved with their files) |
 | V2 | **Output parity** | `node scripts/scrape-parity.mjs && git diff --exit-code test/golden/scrape` | no diff |
+| V2b | Scrape concurrency kept (D19) | `scripts/scrape-parity.mjs` with a fixture fetcher that adds 100 ms latency: record peak concurrent fetches and wall-clock, old vs new | peak ≥ old (process-wide rate limits unchanged); wall-clock within +10% |
 | V3 | LLM-free | `grep -rn "@dothingslol/llm\|@google/genai" packages/scraper` | nothing |
 | V4 | Path-free | `grep -rnE "DATA_ROOT\|PROJECT_ROOT\|process\.env\.CITY\|sources/" packages/scraper/src` | nothing |
 | V5 | Cache compatibility | test: a `data/_cache` entry written by the old `fetch.ts` produces a conditional GET (`If-None-Match`) through the new fetcher and store | passes |

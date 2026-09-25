@@ -48,7 +48,7 @@ layout:
    ```bash
    pnpm --version                      # 9.x
    pnpm install --frozen-lockfile && pnpm check
-   TZ=Australia/Brisbane pnpm build
+   pnpm build
    ```
 2. **Commit `scripts/site-fingerprint.sh` (executable) on its own**, so the baseline comes from the committed script:
    ```bash
@@ -104,13 +104,11 @@ layout:
    ```
    Any version change here is a defect. Pin it back.
 9. **pnpm version in workflows.** In `digest.yml`, `add-city.yml` and `reprobe.yml`, delete `with: version: 9` under `pnpm/action-setup@v4`, so the action reads `packageManager`. If `@v4` can't install pnpm 11, use the action's newest major (check its README).
-10. **Rewrite the `deploy.yml` build job.** Keep the triggers, permissions, concurrency, the `workflow_run` gate, the TZ comment and the `deploy` job as they are.
+10. **Rewrite the `deploy.yml` build job.** Keep the triggers, permissions, concurrency, the `workflow_run` gate and the `deploy` job as they are. There's no `TZ` pin: PR 0 removed it, and the build no longer depends on the host zone.
     ```yaml
     build:
       if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
       runs-on: ubuntu-latest
-      env:
-        TZ: Australia/Brisbane   # keep the existing comment explaining why
       steps:
         - uses: actions/checkout@v4
         - uses: pnpm/action-setup@v4
@@ -132,7 +130,6 @@ layout:
     jobs:
       check:
         runs-on: ubuntu-latest
-        env: { TZ: Australia/Brisbane }
         steps:
           - uses: actions/checkout@v4
           - uses: pnpm/action-setup@v4
@@ -156,7 +153,7 @@ layout:
 | V1 | pnpm pinned | `pnpm --version` | 11.x |
 | V2 | Clean frozen install | `rm -rf node_modules workers/mcp/node_modules && pnpm install --frozen-lockfile` | exit 0 |
 | V3 | Checks | `pnpm check` | exit 0, same test counts as baseline |
-| V4 | Site unchanged | `TZ=Australia/Brisbane pnpm build && scripts/site-fingerprint.sh dist /tmp/fp-after.txt && diff /tmp/fp-before.txt /tmp/fp-after.txt` | no diff (same day) |
+| V4 | Site unchanged | `pnpm build && scripts/site-fingerprint.sh dist /tmp/fp-after.txt && diff /tmp/fp-before.txt /tmp/fp-after.txt` | no diff (same day) |
 | V5 | Worker builds | the three `workers/mcp` commands from `ci.yml` | exit 0 |
 | V6 | Workflow syntax | `actionlint .github/workflows/*.yml` (binary from rhysd/actionlint releases) | clean |
 | V7 | add-city regex still matches `digest.yml` | `git worktree add /tmp/ac HEAD && (cd /tmp/ac && pnpm install --frozen-lockfile && CITY_NAME=Scratch CITY_KEY=scratch pnpm add-city; git -C /tmp/ac diff .github/workflows/digest.yml); git worktree remove --force /tmp/ac` | the diff adds `- scratch` to the dispatch options |

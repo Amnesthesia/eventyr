@@ -69,7 +69,7 @@ pipeline, `core`, web and native can all depend on.
 | V2 | Node-free | `pnpm exec biome check packages/utils` | clean (the lint rule is active) |
 | V3 | No stragglers | `grep -rnE "export (async )?function (mapWithConcurrency\|chunkArray\|cleanText\|cleanUrl)" src app` | nothing |
 | V4 | Boundaries | `node scripts/check-boundaries.mjs` | exit 0 |
-| V5 | Behaviour | `CITY=brisbane TZ=Australia/Brisbane pnpm markdown && pnpm rss && git status --porcelain` | empty, or identical to the same commands on `origin/main` |
+| V5 | Behaviour | `CITY=brisbane pnpm markdown && pnpm rss && git status --porcelain` | empty, or identical to the same commands on `origin/main` |
 | V6 | Site unchanged | build + fingerprint diff | no diff |
 | V7 | PR CI | `CI` | green |
 

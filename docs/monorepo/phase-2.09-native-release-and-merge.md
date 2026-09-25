@@ -98,7 +98,7 @@ Then merge PR 2 and verify the web changes and the feed in production.
 | P2 | Config resolves | `pnpm --filter @dothingslol/native exec expo config --type public` | bundle IDs, scheme, associated domains and intent filters are present |
 | P3 | Native CI | the five `native` commands from 2.4 | exit 0 |
 | P4 | Web changes are only the intended ones | Build `origin/main` and the branch, then compare fingerprints | Differences appear only in these places: `/data/v1/*`, `/settings/`, the two `.well-known` files, the header's settings link, time-zone labels on the time display, and island markers from React 19. List each changed path. |
-| P5 | Web behaviour | `filter-parity.mjs` against both builds, with `TZ=Australia/Brisbane` | identical counts |
+| P5 | Web behaviour | `filter-parity.mjs` against both builds, with Playwright `timezoneId: "Australia/Brisbane"` | identical counts |
 | P6 | Workflow syntax | `actionlint .github/workflows/*.yml` | clean |
 | P7 | Preview build (needs human setup) | Dispatch `native-release.yml` with `profile=preview` and `platform=all` on the branch | builds for both platforms, and they install |
 

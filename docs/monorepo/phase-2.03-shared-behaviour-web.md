@@ -118,7 +118,7 @@ Build exactly what PLAN §7.2 specifies.
 | V1 | Checks | `pnpm check` | exit 0 with the new core tests |
 | V2 | Device-time regression | the `when.ts` Brisbane fixture test | identical strings |
 | V3 | Migration equivalence | the `tasteProfile` equivalence tests | identical order, with and without prefs |
-| V4 | Web behaviour with a Brisbane zone | `TZ=Australia/Brisbane`, then preview and run `filter-parity.mjs` against the 2.1 baseline (rebuild the baseline from `origin/main` if the data moved) | counts identical. Card titles and order are identical for a fresh profile. |
+| V4 | Web behaviour with a Brisbane device zone | Preview, then run `filter-parity.mjs` with Playwright `timezoneId: "Australia/Brisbane"` against the 2.1 baseline (rebuild the baseline from `origin/main` if the data moved) | counts identical. Card titles and order are identical for a fresh profile. |
 | V5 | Existing user migration (manual) | On `origin/main`'s build, save 3 events and set 2 tag prefs (one more, one less). Then switch to this build on the same origin (`pnpm preview` on port 4321 for both) | Settings shows the 3 learned tags as On and the 2 prefs as On/Off. Picks order unchanged. v1 keys are still present in DevTools → Application |
 | V6 | Device time (manual) | Chrome DevTools → Sensors → time zone `Australia/Sydney` | timed events move +1 h during DST, date-only events are unchanged, and the static `/e/` page matches after hydration |
 | V7 | Settings (manual) | Toggle notifications off, then save an event | no permission prompt and no scheduling. Turning it back on restores the behaviour. |

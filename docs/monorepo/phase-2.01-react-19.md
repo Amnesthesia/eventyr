@@ -34,7 +34,7 @@ because `@astrojs/react@5` already accepts React 19.
 ## Steps
 
 1. **Baseline, in the same session as the checks below.**
-   - Build: `TZ=Australia/Brisbane pnpm build`.
+   - Build: `pnpm build`.
    - Fingerprint: `scripts/site-fingerprint.sh apps/web/dist /tmp/fp-before.txt`.
    - Start `pnpm preview &`, then run `node scripts/filter-parity.mjs http://localhost:4321 /tmp/parity-before.json`.
 2. **Update the catalog.**

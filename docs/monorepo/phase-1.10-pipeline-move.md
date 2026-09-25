@@ -101,7 +101,7 @@ Byron's time zone and its weekly slot were fixed in PR 0, before this PR. Nothin
 | V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0; same test count |
 | V2 | Tests leave data alone | `pnpm test:pipeline && git status --porcelain data/` | empty |
 | V3 | No stray data directory | `find apps -maxdepth 3 -name data -type d` | nothing |
-| V4 | Publish parity | Run `for c in brisbane goldcoast sunnycoast byron; do CITY=$c TZ=Australia/Brisbane pnpm geocode; CITY=$c pnpm ical; done; TZ=Australia/Brisbane pnpm markdown; pnpm rss; pnpm pages; pnpm build-ai` on the branch and in `/tmp/main-wt`, then `diff -r` `data/*.json`, `*.md` and the public trees | identical |
+| V4 | Publish parity | Run `for c in brisbane goldcoast sunnycoast byron; do CITY=$c pnpm geocode; CITY=$c pnpm ical; done; pnpm markdown; pnpm rss; pnpm pages; pnpm build-ai` on the branch and in `/tmp/main-wt`, then `diff -r` `data/*.json`, `*.md` and the public trees | identical |
 | V5 | Goldens | `node scripts/llm-parity.mjs && node scripts/scrape-parity.mjs && git diff --exit-code apps/pipeline/test/golden` | no diff |
 | V6 | Arguments pass through | `pnpm probe-sources --city=doesnotexist` gives the unknown-city error. `pnpm collect anthropic` with no keys gives the anthropic-key error | failure for the expected reason |
 | V7 | `add-city` still edits `digest.yml` | scratch-worktree check from 1.1 V7, using `pnpm add-city` | option added |

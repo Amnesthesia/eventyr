@@ -158,7 +158,7 @@ with the runner. So:
 | # | Check | Command | Pass condition |
 |---|---|---|---|
 | V1 | Checks | `pnpm check` | exit 0, including the new tests |
-| V2 | Files emitted | `TZ=Australia/Brisbane pnpm build && ls apps/web/dist/data/v1/` | `index.json` plus four city files |
+| V2 | Files emitted | `pnpm build && ls apps/web/dist/data/v1/` | `index.json` plus four city files |
 | V3 | Real data validates | `node scripts/feed-report.mjs apps/web/dist/data/v1` | `dropped` is 0, or a few with named reasons. Record the gzip sizes |
 | V4 | No zod in the client bundle | `grep -rl "ZodError\|zod" apps/web/dist/_astro \|\| echo clean` | `clean` |
 | V5 | The rest of the site is unchanged | fingerprint diff excluding `/data/v1/` lines | no other diff |

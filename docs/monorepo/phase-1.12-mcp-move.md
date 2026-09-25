@@ -53,7 +53,7 @@
 |---|---|---|---|
 | V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0 |
 | V2 | Equivalent bundle | Dry-run into `/tmp/mcp-after`, then compare file sizes and diff the bundles after normalising embedded paths | only paths differ |
-| V3 | AI feed output unchanged | `TZ=Australia/Brisbane pnpm build-ai && git status --porcelain apps/web/public/ai apps/web/public/llms.txt` | empty, or identical to the same command in `/tmp/main-wt` |
+| V3 | AI feed output unchanged | `pnpm build-ai && git status --porcelain apps/web/public/ai apps/web/public/llms.txt` | empty, or identical to the same command in `/tmp/main-wt` |
 | V4 | No copied types | `grep -rn "interface CompactEvent\|type CompactEvent" apps packages` | only in `packages/core/src/aiFeed.ts` |
 | V5 | Boundaries | `node scripts/check-boundaries.mjs` | exit 0 |
 | V6 | PR CI | `CI` | green |

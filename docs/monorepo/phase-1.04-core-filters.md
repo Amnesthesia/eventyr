@@ -48,7 +48,7 @@ them have tests.
    - Clear all
 
    After each interaction, record the "X of Y events match" text and the ordered card titles per section, and write everything as JSON. Also capture `console.error` output and fail if any appears. Select elements by visible text and ARIA role, not CSS classes, so 2.1 (React 19) can reuse the script.
-2. **Baseline.** On the branch before editing: `TZ=Australia/Brisbane pnpm build && pnpm preview &`, then `node scripts/filter-parity.mjs http://localhost:4321 /tmp/parity-before.json`. Commit the script on its own.
+2. **Baseline.** On the branch before editing: `pnpm build && pnpm preview &`, then `node scripts/filter-parity.mjs http://localhost:4321 /tmp/parity-before.json`. Commit the script on its own.
 3. **Extract, keeping behaviour the same.** Closed-over state becomes parameters, and inline `new Date()` becomes an injected `now`. Target API (adjust names to match the code, but don't redesign):
    ```ts
    export interface FilterState { category: string | null; when: WhenPreset | null; range: DateRange | null;

@@ -39,7 +39,7 @@ Add the boundary check. Behaviour stays identical.
 
 ## Steps
 
-1. **Baseline.** Before changing anything, run `TZ=Australia/Brisbane pnpm build && scripts/site-fingerprint.sh dist /tmp/fp-before.txt`.
+1. **Baseline.** Before changing anything, run `pnpm build && scripts/site-fingerprint.sh dist /tmp/fp-before.txt`.
 2. **`tsconfig.base.json`.** Add only the options every package agrees on: `strict`, `skipLibCheck`, `isolatedModules`, `moduleDetection: "force"`, `allowImportingTsExtensions`, `noEmit`, `esModuleInterop`, `resolveJsonModule`.
 3. **Package skeleton.**
    ```bash
@@ -118,7 +118,7 @@ Add the boundary check. Behaviour stays identical.
 | V2 | No stale paths | `grep -rnE "src/shared\|app/types\|\.\./\.\./\.\./src/" app src workers packages --include=*.ts --include=*.tsx --include=*.astro` | nothing |
 | V3 | Site unchanged | build, fingerprint, `diff /tmp/fp-before.txt /tmp/fp-after.txt` | no diff |
 | V4 | No Node code in the site bundle | `grep -rlE "node:fs\|js-yaml" dist/_astro \|\| echo clean` | `clean` |
-| V5 | tsx resolves core | `CITY=brisbane TZ=Australia/Brisbane pnpm markdown && git status --porcelain` | exit 0; the diff is empty or identical to the same command run on `origin/main` |
+| V5 | tsx resolves core | `CITY=brisbane pnpm markdown && git status --porcelain` | exit 0; the diff is empty or identical to the same command run on `origin/main` |
 | V6 | Worker | `pnpm --dir workers/mcp typecheck && pnpm --dir workers/mcp test && pnpm --dir workers/mcp exec wrangler deploy --dry-run --outdir /tmp/mcp` | exit 0 |
 | V7 | Lint rule bites | temporarily add `import "node:fs";` to `packages/core/src/schema.ts`, then run `pnpm exec biome check packages` | error; then revert |
 | V8 | Boundary check bites | temporarily add `import "../../../src/common.ts";` to a core file, then run `node scripts/check-boundaries.mjs` | non-zero exit naming the file; then revert |

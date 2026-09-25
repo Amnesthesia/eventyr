@@ -65,7 +65,7 @@ Edited files:
 ## Steps
 
 1. **Baseline, on the same day as the checks.**
-   - Run `TZ=Australia/Brisbane pnpm build && scripts/site-fingerprint.sh dist /tmp/fp-before.txt`.
+   - Run `pnpm build && scripts/site-fingerprint.sh dist /tmp/fp-before.txt`.
    - Run the parity script against preview and save it as `/tmp/parity-before.json`.
    - Run `cp -r public /tmp/public-before`.
 2. **Moves.** Run every `git mv` in the table above. Commit them on their own with no content edits.
@@ -133,7 +133,7 @@ Edited files:
 | V2 | Renames tracked | `git show --stat -M HEAD~N` on the move commit, and `git log --follow --oneline apps/web/app/context.tsx \| wc -l` | renames detected; history continues past the move |
 | V3 | Site unchanged | build, then `scripts/site-fingerprint.sh apps/web/dist /tmp/fp-after.txt`, then diff | no diff |
 | V4 | Client behaviour unchanged | preview, then `filter-parity.mjs` to `/tmp/parity-after.json`, then diff | no diff |
-| V5 | Publish writes to the new place | Run `for c in brisbane goldcoast sunnycoast byron; do CITY=$c TZ=Australia/Brisbane pnpm geocode && CITY=$c pnpm ical; done; TZ=Australia/Brisbane pnpm markdown && pnpm rss && pnpm pages && pnpm build-ai`, then `test ! -e public && diff -r /tmp/public-before apps/web/public` | No root `public/` is recreated. The diff is empty or equals what the same commands produce in an `origin/main` worktree. |
+| V5 | Publish writes to the new place | Run `for c in brisbane goldcoast sunnycoast byron; do CITY=$c pnpm geocode && CITY=$c pnpm ical; done; pnpm markdown && pnpm rss && pnpm pages && pnpm build-ai`, then `test ! -e public && diff -r /tmp/public-before apps/web/public` | No root `public/` is recreated. The diff is empty or equals what the same commands produce in an `origin/main` worktree. |
 | V6 | Nothing stray | `git status --porcelain \| grep -vE '^.. (apps/web/public\|data)/\|^.. [A-Z]+\.md$'` | nothing |
 | V7 | Workflow syntax | `actionlint .github/workflows/*.yml` | clean |
 | V8 | Hook | Stage a whitespace change in `apps/web/app/EventApp.tsx`, then run `.githooks/pre-commit` | runs `pnpm build`; then unstage |

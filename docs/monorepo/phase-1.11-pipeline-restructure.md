@@ -154,6 +154,7 @@ Run these after every commit where the step says so, and all of them at the end.
 | V2 | LLM and scrape goldens | `node scripts/llm-parity.mjs && node scripts/scrape-parity.mjs && git diff --exit-code apps/pipeline/test/golden` | no diff |
 | V3 | Publish parity | 1.10 V4 against `/tmp/main-wt` | identical |
 | V4 | stdout parity | For `rank`, `curate`, `venues` and `collect-adapters` in replay mode on the fixture city, diff stdout between the branch before this sub-phase (tag it locally) and now | identical, or timing lines only |
+| V4b | Concurrency and cost report (D19) | rerun `scripts/llm-parity.mjs` and compare `requests.meta.json` and stdout goldens | peak in-flight ≥ golden, wall-clock within +10%, cost report identical |
 | V5 | Config snapshot | `config.snapshot.test.ts` | passes through the loader |
 | V6 | `common.ts` gone | `test ! -e apps/pipeline/src/common.ts && git grep -n "common.ts" -- apps packages` | nothing |
 | V7 | No env reads at import | `grep -rn "process.env" apps/pipeline/src \| grep -v "src/cli/\|src/config/"` | nothing |

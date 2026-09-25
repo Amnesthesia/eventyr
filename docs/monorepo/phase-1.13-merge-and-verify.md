@@ -42,6 +42,7 @@ and in the same hour as the branch builds.
 | P9 | History preserved | `git log --follow --oneline apps/web/app/context.tsx apps/pipeline/src/stages/curate.ts packages/core/src/shared.ts packages/scraper/src/fetch.ts \| wc -l` | follows past the moves |
 | P10 | No leftovers | `ls src app public workers 2>&1; git grep -nE "tsconfig\.scripts\.json\|src/(rank\|geocode\|markdown\|ical\|pages\|messaging)\.ts" -- .github package.json` | directories are gone; no matches |
 | P11 | LLM request parity | `node scripts/llm-parity.mjs && git diff --exit-code test/golden/llm` | no diff |
+| P11b | Concurrency and cost report (D19) | llm and scrape parity `meta`/stdout goldens | peak in-flight ≥ golden; wall-clock within +10%; cost report identical |
 | P12 | Scrape output parity | `node scripts/scrape-parity.mjs && git diff --exit-code test/golden/scrape` | no diff |
 | P13 | Config snapshot | `pnpm --filter @dothingslol/pipeline test -- --test-name-pattern config` | every moved value equals its old constant; `interests.md` byte-identical |
 | P14 | Package graph | `node scripts/check-boundaries.mjs` plus `pnpm -r ls --depth 0 --json` (inspect workspace deps against PLAN §2.3) | exit 0; graph matches the table exactly |

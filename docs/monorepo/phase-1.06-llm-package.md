@@ -55,6 +55,9 @@ This step must happen before anything moves.
 - **Add a record/replay seam inside the existing `geminiText`:**
   - `EVENTYR_LLM_REPLAY=record` appends one JSON line per call to `$EVENTYR_LLM_REPLAY_DIR/requests.jsonl`. Each line is `{stage, model, contents, systemInstruction, maxOutputTokens, temperature, search, extraConfig}`, with keys sorted.
   - `=replay` answers each call from `$EVENTYR_LLM_REPLAY_DIR/responses/<sha256 of that line>.txt`. It throws if a fixture is missing, and makes no network call.
+  - Calls are concurrent, so arrival order isn't deterministic. **Goldens are stored sorted by line hash**, and parity compares them as a set, never by order.
+  - `EVENTYR_LLM_REPLAY_LATENCY_MS` (default 200) delays each replayed answer. The seam records **peak in-flight calls per provider** and **wall-clock** into `requests.meta.json`.
+  - Each CLI's stdout, including the usage/cost report printed at exit, is captured to `test/golden/llm/<cli>.stdout`. Replay usage comes from the canned responses, so it's deterministic.
   - When the variable is unset, behaviour is unchanged. Keep the seam small, and mark it with a `ponytail:` comment saying it is replaced by `llm`'s replay mode in step 3.
 - **Build `test/fixtures/llm-city/`.** This is a trimmed copy of `data/brisbane/` and `data/brisbane.json` with about 12 events that exercise every stage:
   - a duplicate pair for dedupe
@@ -157,6 +160,8 @@ Update "Calling models": the shared wrapper is now `@dothingslol/llm` (`ask` for
 |---|---|---|---|
 | V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0 |
 | V2 | **Request parity** | `node scripts/llm-parity.mjs && git diff --exit-code test/golden/llm` | no diff for every CLI |
+| V2b | **Concurrency kept** (D19) | compare each CLI's `requests.meta.json` against the golden | peak in-flight ≥ golden (the Gemini ceiling stays 4); wall-clock within +10% |
+| V2c | **Cost report kept** (D19) | `diff` each CLI's captured stdout against `test/golden/llm/<cli>.stdout` | identical, including the per-stage usage and cost lines |
 | V3 | No direct SDK use outside llm (Gemini) | `grep -rn "@google/genai\|geminiText(" src app \| grep -v "src/providers/google.ts"` | nothing (google.ts search path moves in 1.7) |
 | V4 | Usage files unchanged in format | after a replay run of `rank`, compare `data/brisbane/usage/<week>.json` in the temporary data root with the step-1 run's | same keys, same counts |
 | V5 | Extraction cache compatibility | test: an entry written by the old `extractionCache.ts` is a hit via `ask({ cache })` | passes |

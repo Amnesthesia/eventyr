@@ -78,6 +78,8 @@ Requests must be byte-identical.
 |---|---|---|---|
 | V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0 |
 | V2 | Search request parity | `node scripts/llm-parity.mjs && git diff --exit-code test/golden/llm` | no diff, including all four `collect-*` goldens and the non-`gpt-5` branch |
+| V2b | Concurrency kept (D19) | peak in-flight and wall-clock for `pnpm collect google,perplexity` in replay, against the step 1 recording. Providers and tiers still run concurrently (`Promise.all`) | peak ≥ golden; wall-clock within +10% |
+| V2c | Cost report kept | captured stdout of each `collect` run against its golden | identical, including the `search/<provider>` usage and cost lines |
 | V3 | Curated output parity | the replay runs from step 1: compare `data/brisbane/*/curated/*.json` in the temporary data root, old vs new | identical |
 | V4 | No SDKs outside llm | `grep -rnE "@anthropic-ai/sdk\|from \"openai\"\|@google/genai" src app` | nothing |
 | V5 | Missing key degrades | `PROVIDERS=anthropic pnpm collect` with no `ANTHROPIC_API_KEY` against the fixture | the same warning and exit behaviour as `origin/main` |

@@ -33,7 +33,7 @@ This sub-phase also proves the monorepo mechanics every later sub-phase relies o
 - The Expo SDK and React versions are recorded in the PR description (from 2.1).
 - A cloud session can install, typecheck, test and `expo export`. It can't run a simulator.
 - **The feed isn't public until PR 2 merges** (PLAN R10). During development:
-  1. Run `TZ=Australia/Brisbane pnpm build && pnpm --filter @dothingslol/web preview --host`.
+  1. Run `pnpm build && pnpm --filter @dothingslol/web preview --host`.
   2. Point the app at it with `EXPO_PUBLIC_FEED_BASE_URL=http://<lan-ip>:4321`.
 
 ## Files affected
