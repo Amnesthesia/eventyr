@@ -1,7 +1,8 @@
+import "./llmBootstrap.ts";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { ask } from "@dothingslol/llm";
 import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { GoogleGenAI } from "@google/genai";
 import {
 	byScoreThenSoonest,
 	DATA_ROOT,
@@ -13,7 +14,7 @@ import {
 	TOP_PICK_THRESHOLD,
 	toISODate,
 } from "./common.ts";
-import { geminiText, installUsageReporting } from "./providers/gemini.ts";
+import { installUsageReporting } from "./io/usage.ts";
 import {
 	RANK_DESCRIPTION_CHARS,
 	RANK_PROMPT_VERSION,
@@ -31,7 +32,7 @@ const RANK_CHUNK = 60;
 
 const CITY = requireEnv("CITY");
 const CITY_TZ = loadCityConfig(CITY).timezone;
-const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
+requireEnv("GOOGLE_API_KEY");
 const FORCE = ["1", "true", "yes"].includes(
 	(process.env.FORCE ?? "").toLowerCase(),
 );
@@ -185,23 +186,20 @@ async function main(): Promise<void> {
 			`${reused > 0 ? ` (${reused} unchanged from last week, reused)` : ""}…`,
 	);
 
-	const ai = new GoogleGenAI({ apiKey: GOOGLE_API_KEY });
 	// Chunked and concurrent: scores are per-event judgements with no
 	// cross-event reasoning, so a chunk boundary costs nothing, while one call
 	// for 400+ events risked a silent truncation that assigns a neutral 5 to
 	// every event and erases the ranking.
 	const chunks = chunkArray(toScore, RANK_CHUNK);
 	const results = await mapWithConcurrency(chunks, 3, async (chunk, i) => {
-		const rawText = await geminiText(ai, {
-			stage: "rank",
+		const rawText = await ask(buildRankUser(chunk.map((c) => c.event)), {
+			provider: "gemini",
 			model: RANK_MODEL,
-			contents: buildRankUser(chunk.map((c) => c.event)),
-			systemInstruction: RANK_SYSTEM,
+			stage: "rank",
+			system: RANK_SYSTEM,
 			maxOutputTokens: 8192,
-			extraConfig: {
-				responseMimeType: "application/json",
-				thinkingConfig: { thinkingBudget: 0 },
-			},
+			json: true,
+			thinking: "off",
 		});
 		const parsed = parseScores(rawText);
 		if (!parsed) {
