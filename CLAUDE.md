@@ -96,7 +96,7 @@ absent from the list, with no runtime exclusion logic anywhere.
 source is a one-field change. There is no separate adapters file.
 
 `timezone` (IANA) is required and is the only place a city's zone is stated. Offsets are derived
-per date (`packages/core/src/tz.ts`). Never hard-code a zone or an offset, and never rely on the
+per date (`packages/utils/src/tz.ts`). Never hard-code a zone or an offset, and never rely on the
 host `TZ`.
 `loadCityConfig` refuses a file without a valid one. `currency` is written explicitly too.
 
@@ -143,6 +143,10 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 
 ## Key files
 
+- `packages/utils` (`@dothingslol/utils/{text,concurrency,time,tz}`) holds generic, domain-free,
+  node-free helpers that every other package may depend on: `cleanText`/`cleanUrl`,
+  `mapWithConcurrency`/`chunk`, `sleep`/`backoffDelay`, and the zone maths. Scope rule: if a helper
+  knows what an event, city, source, model or file path is, it does not belong here.
 - `packages/core` (`@dothingslol/core/<module>`) holds all node-free, React-free logic shared by web,
   native, mcp and pipeline; browser-bound halves stay in `app/utils/` (`tasteStore`, `tagPrefsStore`,
   `icsDownload`, `notifications`).
@@ -150,15 +154,15 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
   bundle (`CATEGORIES`, `CATEGORY_EMOJI`, `TOP_PICK_THRESHOLD`, `KEY_TO_SLUG`, `SITE_URL`).
   **Must stay free of `node:` imports** — `app/` code imports it directly, and pulling in
   `common.ts` (which reads the filesystem) breaks the Vite build. Biome enforces this for all of
-  `packages/core/src` (`noNodejsModules`, tests exempt), and `scripts/check-boundaries.mjs`
+  `packages/{core,utils}/src` (`noNodejsModules`, tests exempt), and `scripts/check-boundaries.mjs`
   enforces the package graph in `docs/monorepo/PLAN.md` §2.3.
 - `packages/core/src/schema.ts` (`@dothingslol/core/schema`) — `EventData` and `CityPayload`,
   inferred from zod schemas that `schema.data.test.ts` checks against every committed
   `data/*.json` (tests only for now; no runtime validation).
-- `packages/core/src/tz.ts` — every zone calculation: `zonedOffsetMinutes`, `zonedDate`,
+- `packages/utils/src/tz.ts` — every zone calculation: `zonedOffsetMinutes`, `zonedDate`,
   `zonedTimeToInstant` (null for the skipped DST hour, first occurrence for the repeated one), all
   Intl-based and browser-safe. `toISODate` (core `shared.ts`) and `getWeekRange`/`fmtDate`
-  (`common.ts`) take the city's zone. Moves on to `packages/utils` in 1.5.
+  (`common.ts`) take the city's zone.
 - `src/common.ts` — `INTERESTS` (the fixed interest profile every prompt is built from),
   `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`, `curatedPath()`; re-exports
   everything from `@dothingslol/core/shared` so pipeline modules have one import site.
@@ -235,7 +239,7 @@ Apply these to new code in this repo. They exist because each one has already co
   negative answer does not deserve a retry when negatives are the common case.
 
 - **Batch, then run the batches concurrently, with a ceiling.** Use `mapWithConcurrency`
-  (`src/providers/base.ts`). Never a serial loop over independent work; never a bare `Promise.all`
+  (`@dothingslol/utils/concurrency`). Never a serial loop over independent work; never a bare `Promise.all`
   over an unbounded list. Pick the ceiling from the provider's tolerance, not from the work size.
 - **Prefer several small concurrent batches over one large batch.** Per-item accuracy drops as a
   batch grows, and concurrency recovers the wall-clock. When a batched answer proves unreliable for

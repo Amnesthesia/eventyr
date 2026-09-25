@@ -331,7 +331,7 @@ Measured effects of the current settings, on the same six Brisbane hosts:
 
 
 - **Batch, then run batches concurrently, with a ceiling.** Every LLM pass goes through
-  `mapWithConcurrency` (`src/providers/base.ts`). Nothing is serial that does not have to be, and
+  `mapWithConcurrency` (`@dothingslol/utils/concurrency`). Nothing is serial that does not have to be, and
   nothing fans out unbounded — an uncapped `Promise.all` over dedupe batches could open ~67
   simultaneous calls and collect 429s.
 - **Deterministic first.** JSON-LD and embedded JSON cost nothing; the LLM is the fallback, capped
