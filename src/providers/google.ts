@@ -15,12 +15,6 @@ export class GoogleProvider extends BaseProvider {
 		"independents",
 		"open",
 	] as const;
-	// The key is read by @dothingslol/llm itself; the parameter stays until
-	// 1.7 gives every search provider the same constructor.
-	constructor(_apiKey: string) {
-		super();
-	}
-
 	private async generate(
 		system: string,
 		prompt: string,

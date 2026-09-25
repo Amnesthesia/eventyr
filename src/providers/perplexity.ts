@@ -1,15 +1,11 @@
+import { askDetailed } from "@dothingslol/llm";
 import { fmtDate } from "../common.ts";
 import type { ProviderOptions, SearchResult } from "./base.ts";
-import { estimateUsd, recordUsage } from "./gemini.ts";
-import { OpenAIProvider } from "./openai.ts";
+import { BaseProvider } from "./base.ts";
 
-export class PerplexityProvider extends OpenAIProvider {
-	override readonly name = "perplexity";
-	override readonly tiers = ["open"] as const;
-
-	constructor(apiKey: string) {
-		super(apiKey, "sonar-pro", "perplexity", "https://api.perplexity.ai");
-	}
+export class PerplexityProvider extends BaseProvider {
+	readonly name = "perplexity";
+	readonly tiers = ["open"] as const;
 
 	private buildPerplexitySystem(
 		cityName: string,
@@ -47,7 +43,7 @@ This is a fully automated pipeline with no human able to read or reply to your r
 `;
 	}
 
-	override async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
+	async searchEvents(opts: ProviderOptions): Promise<SearchResult> {
 		const { cityCfg, weekStart, weekEnd, tier } = opts;
 		const label = `${this.name}/${tier}`;
 		console.log(`  [${label}] Searching…`);
@@ -66,29 +62,15 @@ This is a fully automated pipeline with no human able to read or reply to your r
 			`Search deeply across all local sources. ${focusNote} ` +
 			"Return results as a compact JSON array with no whitespace between elements.";
 
-		const response = await this.chatCompletion("search/perplexity", {
-			model: this.model,
-			max_tokens: 8000,
-			messages: [
-				{ role: "system", content: systemMsg },
-				{ role: "user", content: userMsg },
-			],
+		const response = await askDetailed(userMsg, {
+			provider: "perplexity",
+			model: "sonar-pro",
+			stage: "search/perplexity",
+			system: systemMsg,
+			maxOutputTokens: 8000,
 		});
 
-		const call = {
-			calls: 1,
-			promptTokens: response.usage?.prompt_tokens ?? 0,
-			outputTokens: response.usage?.completion_tokens ?? 0,
-			grounded: 1,
-			// Perplexity bills one request fee per call, not per query it ran.
-			searchQueries: 1,
-		};
-		recordUsage("search/perplexity", {
-			...call,
-			estimatedUsd: estimateUsd(this.model, call),
-		});
-
-		const rawText = response.choices[0]?.message?.content ?? "";
+		const rawText = response.text;
 		this.validateRaw(rawText, label);
 		console.log(`  [${label}] ${rawText.length} chars received`);
 

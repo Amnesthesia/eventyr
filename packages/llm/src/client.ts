@@ -242,30 +242,6 @@ export function usageTotals(): Record<string, StageUsage> {
 	);
 }
 
-/**
- * The 1.7 step-1 seam for the SDK call sites still outside llm: logs the
- * request line and, in replay mode, answers with the canned SDK response
- * (JSON, in that SDK's own shape) instead of calling `live`. Removed once the
- * transports move here (1.7 step 3).
- */
-export async function replayCall<T>(
-	provider: ProviderName,
-	line: string,
-	stage: string,
-	live: () => Promise<T>,
-): Promise<T> {
-	const replay = state.replay;
-	if (!replay) return live();
-	replay.begin(line, provider);
-	try {
-		if (replay.mode === "replay")
-			return JSON.parse(await replay.answer(line, stage)) as T;
-		return await live();
-	} finally {
-		replay.end();
-	}
-}
-
 // --- retry ----------------------------------------------------------------
 
 /** Pulls a retry delay out of a 429/503 error, honouring Retry-After when the

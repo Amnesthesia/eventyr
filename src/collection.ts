@@ -8,7 +8,7 @@ import { OpenAIProvider } from "./providers/openai.ts";
 import { PerplexityProvider } from "./providers/perplexity.ts";
 
 const CITY = requireEnv("CITY");
-const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
+requireEnv("GOOGLE_API_KEY");
 const FORCE = ["1", "true", "yes"].includes(
 	(process.env.FORCE ?? "").toLowerCase(),
 );
@@ -17,7 +17,7 @@ const CITY_TZ = cityCfg.timezone;
 const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
 
 // Curation always uses Gemini 2.5 Flash regardless of search provider
-const google = new GoogleProvider(GOOGLE_API_KEY);
+const google = new GoogleProvider();
 const curate = google.curate.bind(google);
 
 // Optional: pnpm collect [provider]  — e.g. "pnpm collect gemini"
@@ -38,7 +38,8 @@ type ProviderName = "google" | "anthropic" | "openai" | "perplexity";
 /**
  * One table instead of a build function per provider: the env var, the
  * constructor, and whether it can be turned off all live in one place, so
- * adding or disabling a provider is a single edit.
+ * adding or disabling a provider is a single edit. The key itself is read by
+ * @dothingslol/llm; the env name here is for the presence check below.
  *
  * `google` has no `optional` flag because Gemini is not just a search
  * provider — it also does curation, ranking, annotation and dedupe, so the key
@@ -46,21 +47,14 @@ type ProviderName = "google" | "anthropic" | "openai" | "perplexity";
  */
 const PROVIDERS: Record<
 	ProviderName,
-	{ env: string; make: (key: string) => BaseProvider; required?: boolean }
+	{ env: string; make: () => BaseProvider; required?: boolean }
 > = {
-	google: {
-		env: "GOOGLE_API_KEY",
-		make: (key) => new GoogleProvider(key),
-		required: true,
-	},
-	anthropic: {
-		env: "ANTHROPIC_API_KEY",
-		make: (key) => new AnthropicProvider(key),
-	},
-	openai: { env: "OPENAI_API_KEY", make: (key) => new OpenAIProvider(key) },
+	google: { env: "GOOGLE_API_KEY", make: () => google, required: true },
+	anthropic: { env: "ANTHROPIC_API_KEY", make: () => new AnthropicProvider() },
+	openai: { env: "OPENAI_API_KEY", make: () => new OpenAIProvider() },
 	perplexity: {
 		env: "PERPLEXITY_API_KEY",
-		make: (key) => new PerplexityProvider(key),
+		make: () => new PerplexityProvider(),
 	},
 };
 
@@ -121,9 +115,7 @@ function selectedProviderNames(): ProviderName[] {
 }
 
 function buildProviders(names: ProviderName[]): BaseProvider[] {
-	return names.map((name) =>
-		PROVIDERS[name].make(process.env[PROVIDERS[name].env] as string),
-	);
+	return names.map((name) => PROVIDERS[name].make());
 }
 
 function buildProvider(name: string): BaseProvider {
@@ -134,9 +126,8 @@ function buildProvider(name: string): BaseProvider {
 		);
 	}
 	const spec = PROVIDERS[resolved as ProviderName];
-	const key = process.env[spec.env];
-	if (!key) throw new Error(`${spec.env} not set`);
-	return spec.make(key);
+	if (!process.env[spec.env]) throw new Error(`${spec.env} not set`);
+	return spec.make();
 }
 
 async function main(): Promise<void> {

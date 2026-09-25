@@ -1,5 +1,11 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, relative } from "node:path";
+import {
+	type AnthropicModel,
+	type LLMProvider,
+	MODELS,
+	type OpenAIModel,
+} from "@dothingslol/llm";
 import type { CityConfig, LlmSourceName } from "../common.ts";
 import {
 	CATEGORIES,
@@ -69,6 +75,38 @@ export function selectTiers(
 			.filter(Boolean),
 	);
 	return tiers.filter((t) => allow.has(t));
+}
+
+/**
+ * The search model for a provider, overridable per run
+ * (ANTHROPIC_SEARCH_MODEL, OPENAI_SEARCH_MODEL). A name the price table does
+ * not know fails here, at load, rather than as an unpriced call later.
+ */
+export function searchModel(
+	provider: "anthropic",
+	envVar: string,
+	fallback: AnthropicModel,
+): AnthropicModel;
+export function searchModel(
+	provider: "openai",
+	envVar: string,
+	fallback: OpenAIModel,
+): OpenAIModel;
+export function searchModel(
+	provider: LLMProvider["provider"],
+	envVar: string,
+	fallback: string,
+): string {
+	const name = process.env[envVar] ?? fallback;
+	const known: string[] = MODELS.filter((m) => m.provider === provider).map(
+		(m) => m.model,
+	);
+	if (!known.includes(name)) {
+		throw new Error(
+			`${envVar}=${name} is not a ${provider} model @dothingslol/llm prices; known: ${known.join(", ")}`,
+		);
+	}
+	return name;
 }
 
 // A fixed grammar (rather than "note these fields" prose) keeps every
