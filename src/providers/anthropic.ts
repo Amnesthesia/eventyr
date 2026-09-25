@@ -1,4 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
+import { providerReplayLine, replayCall } from "@dothingslol/llm/testing";
 import { fmtDate, INTERESTS, llmSourceStrings } from "../common.ts";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import {
@@ -75,7 +76,7 @@ export class AnthropicProvider extends BaseProvider {
 
 		const userMsg = this.buildSearchUser(opts);
 
-		const response = await this.client.messages.create({
+		const params: Anthropic.MessageCreateParamsNonStreaming = {
 			model: SEARCH_MODEL,
 			// 4000 was truncating: two of three tiers hit max_tokens and one
 			// returned nothing usable at all, so the cap was silently costing
@@ -105,7 +106,13 @@ export class AnthropicProvider extends BaseProvider {
 			tool_choice: { type: "any" },
 			system,
 			messages: [{ role: "user", content: userMsg }],
-		});
+		};
+		const response = await replayCall(
+			"anthropic",
+			providerReplayLine("anthropic", "search/anthropic", params),
+			"search/anthropic",
+			() => this.client.messages.create(params),
+		);
 
 		// The authoritative billed count, rather than counting response blocks:
 		// with dynamic filtering the searches are nested inside code execution

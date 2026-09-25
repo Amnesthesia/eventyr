@@ -66,7 +66,7 @@ This is a fully automated pipeline with no human able to read or reply to your r
 			`Search deeply across all local sources. ${focusNote} ` +
 			"Return results as a compact JSON array with no whitespace between elements.";
 
-		const response = await this.client.chat.completions.create({
+		const response = await this.chatCompletion("search/perplexity", {
 			model: this.model,
 			max_tokens: 8000,
 			messages: [

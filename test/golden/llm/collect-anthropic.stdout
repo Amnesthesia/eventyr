@@ -1,0 +1,23 @@
+Collecting — Brisbane — 21 September 2026 to 27 September 2026
+  → [anthropic] tiers limited to aggregators, institutions by ANTHROPIC_TIERS
+  [anthropic/aggregators] Searching…
+  [anthropic/institutions] Searching…
+  [anthropic/aggregators] 2 web search(es) | tokens: 1200 in / 180 out | cache: 300 read / 900 write
+  [anthropic/aggregators] Extracting… (1 batch)
+  [anthropic/institutions] 2 web search(es) | tokens: 1200 in / 180 out | cache: 300 read / 900 write
+  [anthropic/institutions] Extracting… (1 batch)
+  [anthropic/aggregators] 2 events extracted
+  [anthropic/institutions] 2 events extracted
+  [anthropic/aggregators] 2 events curated
+  → Written $ROOT/data/brisbane/anthropic/curated/aggregators.json
+  [anthropic/institutions] 2 events curated
+  → Written $ROOT/data/brisbane/anthropic/curated/institutions.json
+✓ Collection complete.
+
+Model usage
+  stage                     calls         in      out   think   cached   cachew  search    ~usd
+  search/anthropic              2      3,000      360       0      600    1,800       4   0.053
+  curate/enrich                 2      3,640      508       0        0        0       0   0.001
+  curate/extract                2        768      210       0        0        0       0   0.000
+  TOTAL                         6      7,408    1,078       0      600    1,800       4   0.054
+  → $ROOT/data/brisbane/usage/2026-09-21.json

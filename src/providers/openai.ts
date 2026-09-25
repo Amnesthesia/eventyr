@@ -1,3 +1,4 @@
+import { providerReplayLine, replayCall } from "@dothingslol/llm/testing";
 import OpenAI from "openai";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import { BaseProvider } from "./base.ts";
@@ -15,6 +16,10 @@ const PROMPT_CACHE_KEY = "eventyr-events-search";
  * which is what made the provider look "too expensive to keep on".
  */
 const MAX_TOOL_CALLS = 4;
+
+// gpt-5-mini by default; anything not gpt-5* goes through chat.completions
+// without web search (see searchEvents), e.g. OPENAI_SEARCH_MODEL=gpt-4.1-mini.
+const SEARCH_MODEL = process.env.OPENAI_SEARCH_MODEL ?? "gpt-5-mini";
 
 function stripCitationNoise(text: string): string {
 	return text
@@ -36,7 +41,7 @@ export class OpenAIProvider extends BaseProvider {
 
 	constructor(
 		apiKey: string,
-		model = "gpt-5-mini",
+		model = SEARCH_MODEL,
 		name = "openai",
 		baseURL?: string,
 	) {
@@ -56,8 +61,9 @@ export class OpenAIProvider extends BaseProvider {
 		const userMsg =
 			tier === "open" ? this.buildOpenUser(opts) : this.buildTierUser(opts);
 
+		const stage = `search/${this.name}`;
 		const response = !this.model.startsWith("gpt-5")
-			? await this.client.chat.completions.create({
+			? await this.chatCompletion(stage, {
 					model: this.model,
 					max_tokens: 8000,
 					messages: [
@@ -65,7 +71,7 @@ export class OpenAIProvider extends BaseProvider {
 						{ role: "user", content: userMsg },
 					],
 				})
-			: await this.client.responses.create({
+			: await this.response(stage, {
 					model: this.model,
 					// "low" context: the model reads a summary of each result rather
 					// than the full page. This is a listing task — titles, dates,
@@ -103,7 +109,7 @@ export class OpenAIProvider extends BaseProvider {
 				grounded: 1,
 				searchQueries: searches,
 			};
-			recordUsage(`search/${this.name}`, {
+			recordUsage(stage, {
 				...call,
 				estimatedUsd: estimateUsd(this.model, call),
 			});
@@ -116,7 +122,7 @@ export class OpenAIProvider extends BaseProvider {
 				promptTokens: response.usage.prompt_tokens,
 				outputTokens: response.usage.completion_tokens,
 			};
-			recordUsage(`search/${this.name}`, {
+			recordUsage(stage, {
 				...call,
 				estimatedUsd: estimateUsd(this.model, call),
 			});
@@ -141,5 +147,29 @@ export class OpenAIProvider extends BaseProvider {
 			label,
 		);
 		return { events };
+	}
+
+	protected chatCompletion(
+		stage: string,
+		params: OpenAI.Chat.ChatCompletionCreateParamsNonStreaming,
+	): Promise<OpenAI.Chat.ChatCompletion> {
+		return replayCall(
+			this.name as "openai" | "perplexity",
+			providerReplayLine(this.name as "openai" | "perplexity", stage, params),
+			stage,
+			() => this.client.chat.completions.create(params),
+		);
+	}
+
+	private response(
+		stage: string,
+		params: OpenAI.Responses.ResponseCreateParamsNonStreaming,
+	): Promise<OpenAI.Responses.Response> {
+		return replayCall(
+			"openai",
+			providerReplayLine("openai", stage, params),
+			stage,
+			() => this.client.responses.create(params),
+		);
 	}
 }

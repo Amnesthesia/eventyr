@@ -55,6 +55,9 @@ export const PRICES = {
 		perSearch: 0.01,
 	},
 	"gpt-5-mini": { input: 0.25, output: 2, cacheRead: 0.025, perSearch: 0.01 },
+	// The non-gpt-5 (chat.completions, no web search) branch of the OpenAI
+	// search provider; selected with OPENAI_SEARCH_MODEL.
+	"gpt-4.1-mini": { input: 0.4, output: 1.6, cacheRead: 0.1 },
 	"sonar-pro": { input: 3, output: 15, perSearch: 0.008 },
 } as const satisfies Record<string, Price>;
 

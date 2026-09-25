@@ -64,6 +64,19 @@ export function replayLine(req: ReplayRequest): string {
 	);
 }
 
+/**
+ * The line for a provider whose request is its SDK's own params object:
+ * `{provider, stage, model, ...body}` with keys sorted. Gemini keeps the
+ * GeminiCallOptions-shaped line above; the goldens pin both.
+ */
+export function providerReplayLine(
+	provider: Exclude<ProviderName, "gemini">,
+	stage: string,
+	body: object,
+): string {
+	return JSON.stringify(sortKeys({ provider, stage, ...body }));
+}
+
 export function replayHash(line: string): string {
 	return createHash("sha256").update(line).digest("hex");
 }

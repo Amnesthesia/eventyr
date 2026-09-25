@@ -19,6 +19,8 @@
 // Usage:
 //   node scripts/llm-parity.mjs [--record-meta] [cli ...]
 //     cli ∈ curate venues rank collect-adapters probe-sources discover-sources
+//           collect-google collect-anthropic collect-openai collect-openai-chat
+//           collect-perplexity
 //     (default: all)
 //
 // .jsonl and .stdout are rewritten on every run: `git diff --exit-code
@@ -30,8 +32,9 @@
 // Authoring a canned response: the replay seam throws on a request it has no
 // response for and leaves the request as <hash>.missing.json next to where
 // the response belongs (test/fixtures/llm-city/responses/<hash>.txt). Write
-// the .txt by hand in the shape the stage's prompt asks for, delete the
-// .missing.json, rerun. Never author one with a model.
+// the .txt by hand in the shape the stage's prompt asks for (Gemini: the
+// answer text; Anthropic/OpenAI/Perplexity: the SDK's response object as
+// JSON), delete the .missing.json, rerun. Never author one with a model.
 //
 // Requests are keyed by the full request line, so any edit to the fixture data
 // or a prompt changes the hashes and the affected responses have to be
@@ -66,13 +69,30 @@ const FAKE_NOW = "2026-09-23T10:00:00+10:00";
 const WALL_CLOCK_TOLERANCE = 1.1;
 
 const TSX = ["exec", "tsx", "--env-file-if-exists=.env", "--tsconfig", "tsconfig.scripts.json"];
+/** Script + args, and any env the CLI needs on top of the harness's. The
+ * collect runs mirror digest.yml (PROVIDERS, ANTHROPIC_TIERS), one provider
+ * per run; collect-openai-chat is the non-gpt-5 (chat.completions) branch. */
 const CLIS = {
-	curate: ["src/curate.ts"],
-	venues: ["src/venues.ts"],
-	rank: ["src/rank.ts"],
-	"collect-adapters": ["src/adapters/collect.ts", "--only=fixture-programme"],
-	"probe-sources": ["src/adapters/probe.ts", "--city=brisbane"],
-	"discover-sources": ["src/adapters/discover.ts", "--city=brisbane"],
+	curate: { args: ["src/curate.ts"] },
+	venues: { args: ["src/venues.ts"] },
+	rank: { args: ["src/rank.ts"] },
+	"collect-adapters": { args: ["src/adapters/collect.ts", "--only=fixture-programme"] },
+	"probe-sources": { args: ["src/adapters/probe.ts", "--city=brisbane"] },
+	"discover-sources": { args: ["src/adapters/discover.ts", "--city=brisbane"] },
+	"collect-google": { args: ["src/collection.ts", "google"], env: { PROVIDERS: "google" } },
+	"collect-anthropic": {
+		args: ["src/collection.ts", "anthropic"],
+		env: { PROVIDERS: "anthropic", ANTHROPIC_TIERS: "aggregators,institutions", ANTHROPIC_API_KEY: "dummy" },
+	},
+	"collect-openai": { args: ["src/collection.ts", "openai"], env: { PROVIDERS: "openai", OPENAI_API_KEY: "dummy" } },
+	"collect-openai-chat": {
+		args: ["src/collection.ts", "openai"],
+		env: { PROVIDERS: "openai", OPENAI_API_KEY: "dummy", OPENAI_SEARCH_MODEL: "gpt-4.1-mini" },
+	},
+	"collect-perplexity": {
+		args: ["src/collection.ts", "perplexity"],
+		env: { PROVIDERS: "perplexity", PERPLEXITY_API_KEY: "dummy" },
+	},
 };
 
 const args = process.argv.slice(2);
@@ -126,7 +146,7 @@ function normaliseStdout(text, root) {
 }
 
 async function runCli(cli) {
-	const [script, ...cliArgs] = CLIS[cli];
+	const [script, ...cliArgs] = CLIS[cli].args;
 	const root = join(WORK, cli);
 	rmSync(root, { recursive: true, force: true });
 	cpSync(join(FIXTURE, "data"), join(root, "data"), { recursive: true });
@@ -154,6 +174,7 @@ async function runCli(cli) {
 		// Probe's host-level fan-out is I/O parallelism, not model concurrency;
 		// serialising it keeps the interleaved per-source log deterministic.
 		PROBE_CONCURRENT_HOSTS: "1",
+		...(CLIS[cli].env ?? {}),
 	};
 	const started = Date.now();
 	const child = spawn("pnpm", [...TSX, script, ...cliArgs], {
@@ -207,7 +228,9 @@ async function runCli(cli) {
 	const status = problems.length ? "FAIL" : "ok";
 	console.log(
 		`${status.padEnd(4)} ${cli.padEnd(18)} ${String(lines.length).padStart(3)} request(s)` +
-			(meta ? `  peak ${meta.peakInFlight.gemini}  wall ${meta.wallClockMs}ms` : "") +
+			(meta
+				? `  peak ${Object.entries(meta.peakInFlight).map(([p, n]) => `${p} ${n}`).join(", ")}  wall ${meta.wallClockMs}ms`
+				: "") +
 			`  ${seconds}s${problems.length ? `\n     ${problems.join("\n     ")}` : ""}`,
 	);
 	if (problems.length && stderr.trim()) {

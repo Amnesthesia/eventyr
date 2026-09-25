@@ -1,0 +1,16 @@
+Collecting — Brisbane — 21 September 2026 to 27 September 2026
+  [perplexity/open] Searching…
+  [perplexity/open] 303 chars received
+  [perplexity/open] Extracting… (1 batch)
+  [perplexity/open] 2 events extracted
+  [perplexity/open] 2 events curated
+  → Written $ROOT/data/brisbane/perplexity/curated/open.json
+✓ Collection complete.
+
+Model usage
+  stage                     calls         in      out   think   cached   cachew  search    ~usd
+  search/perplexity             1        800      150       0        0        0       1   0.013
+  curate/enrich                 1      1,820      254       0        0        0       0   0.000
+  curate/extract                1        384      105       0        0        0       0   0.000
+  TOTAL                         3      3,004      509       0        0        0       1   0.013
+  → $ROOT/data/brisbane/usage/2026-09-21.json

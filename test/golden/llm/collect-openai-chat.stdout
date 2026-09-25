@@ -1,0 +1,30 @@
+Collecting — Brisbane — 21 September 2026 to 27 September 2026
+  [openai/aggregators] Searching…
+  [openai/institutions] Searching…
+  [openai/independents] Searching…
+  [openai/open] Searching…
+  [openai/aggregators] Extracting… (1 batch)
+  [openai/institutions] Extracting… (1 batch)
+  [openai/independents] Extracting… (1 batch)
+  [openai/open] Extracting… (1 batch)
+  [openai/aggregators] 2 events extracted
+  [openai/institutions] 2 events extracted
+  [openai/independents] 2 events extracted
+  [openai/open] 2 events extracted
+  [openai/aggregators] 2 events curated
+  → Written $ROOT/data/brisbane/openai/curated/aggregators.json
+  [openai/institutions] 2 events curated
+  → Written $ROOT/data/brisbane/openai/curated/institutions.json
+  [openai/independents] 2 events curated
+  → Written $ROOT/data/brisbane/openai/curated/independents.json
+  [openai/open] 2 events curated
+  → Written $ROOT/data/brisbane/openai/curated/open.json
+✓ Collection complete.
+
+Model usage
+  stage                     calls         in      out   think   cached   cachew  search    ~usd
+  search/openai                 4      3,200      600       0        0        0       0   0.002
+  curate/enrich                 4      7,280    1,016       0        0        0       0   0.001
+  curate/extract                4      1,536      420       0        0        0       0   0.000
+  TOTAL                        12     12,016    2,036       0        0        0       0   0.004
+  → $ROOT/data/brisbane/usage/2026-09-21.json

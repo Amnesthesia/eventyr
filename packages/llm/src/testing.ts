@@ -4,6 +4,11 @@
 export type { BatchDeps, GeminiBatchClient } from "./batch.ts";
 export { batchRequestKey, runGeminiBatch } from "./batch.ts";
 export { cacheKey } from "./cache.ts";
-export { resetLLM } from "./client.ts";
+export { replayCall, resetLLM } from "./client.ts";
 export type { ReplayRequest } from "./replay.ts";
-export { replayHash, replayLine, responsePath } from "./replay.ts";
+export {
+	providerReplayLine,
+	replayHash,
+	replayLine,
+	responsePath,
+} from "./replay.ts";
