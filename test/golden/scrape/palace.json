@@ -1,0 +1,136 @@
+{
+  "fixture": "palace",
+  "url": "https://www.palacecinemas.com.au/cinemas/palace-barracks",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": []
+  },
+  "found": 3,
+  "candidates": [
+    {
+      "title": "The Great Arch",
+      "description": "sneak screening.",
+      "startRaw": "2026-09-25T13:30:00",
+      "endRaw": null,
+      "venueName": null,
+      "address": null,
+      "url": "https://www.palacecinemas.com.au/movies/the-great-arch",
+      "price": null,
+      "imageUrl": null,
+      "organiser": null,
+      "category": "Film",
+      "sourceEventId": "276082",
+      "startISO": "2026-09-25T13:30:00+10:00",
+      "endISO": null,
+      "provenance": {
+        "sourceId": "palace",
+        "sourceUrl": "https://www.palacecinemas.com.au/cinemas/palace-barracks",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    },
+    {
+      "title": "The Great Arch",
+      "description": "sneak screening.",
+      "startRaw": "2026-09-26T13:30:00",
+      "endRaw": null,
+      "venueName": null,
+      "address": null,
+      "url": "https://www.palacecinemas.com.au/movies/the-great-arch",
+      "price": null,
+      "imageUrl": null,
+      "organiser": null,
+      "category": "Film",
+      "sourceEventId": "276083",
+      "startISO": "2026-09-26T13:30:00+10:00",
+      "endISO": null,
+      "provenance": {
+        "sourceId": "palace",
+        "sourceUrl": "https://www.palacecinemas.com.au/cinemas/palace-barracks",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    },
+    {
+      "title": "The Great Arch",
+      "description": "sneak screening.",
+      "startRaw": "2026-09-27T13:30:00",
+      "endRaw": null,
+      "venueName": null,
+      "address": null,
+      "url": "https://www.palacecinemas.com.au/movies/the-great-arch",
+      "price": null,
+      "imageUrl": null,
+      "organiser": null,
+      "category": "Film",
+      "sourceEventId": "276084",
+      "startISO": "2026-09-27T13:30:00+10:00",
+      "endISO": null,
+      "provenance": {
+        "sourceId": "palace",
+        "sourceUrl": "https://www.palacecinemas.com.au/cinemas/palace-barracks",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "The Great Arch",
+      "datetime": "Fri 25 Sep, 1:30 PM",
+      "datetime_iso": "2026-09-25T13:30:00",
+      "datetime_end_iso": "",
+      "location": "Fixture Venue, 1 Test St",
+      "link": "https://www.palacecinemas.com.au/movies/the-great-arch",
+      "cost": "See link",
+      "source": "Fixture palace",
+      "description": "sneak screening.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "The Great Arch",
+      "datetime": "Sat 26 Sep, 1:30 PM",
+      "datetime_iso": "2026-09-26T13:30:00",
+      "datetime_end_iso": "",
+      "location": "Fixture Venue, 1 Test St",
+      "link": "https://www.palacecinemas.com.au/movies/the-great-arch",
+      "cost": "See link",
+      "source": "Fixture palace",
+      "description": "sneak screening.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "The Great Arch",
+      "datetime": "Sun 27 Sep, 1:30 PM",
+      "datetime_iso": "2026-09-27T13:30:00",
+      "datetime_end_iso": "",
+      "location": "Fixture Venue, 1 Test St",
+      "link": "https://www.palacecinemas.com.au/movies/the-great-arch",
+      "cost": "See link",
+      "source": "Fixture palace",
+      "description": "sneak screening.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ],
+  "rejected": [],
+  "fallbackCalls": []
+}

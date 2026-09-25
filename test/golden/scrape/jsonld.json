@@ -1,0 +1,115 @@
+{
+  "fixture": "jsonld",
+  "url": "https://thetivoli.com.au/events/ash",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": []
+  },
+  "found": 3,
+  "candidates": [
+    {
+      "title": "Ash",
+      "description": "Ireland’s favourite power pop trio, Ash, finally return to Celebrate the 30th Anniversary of their iconic debut album, ‘1977’, by performing the album in full.\n\n‘1977’ has sold more than 2 million copies worldwide and struck a chord with the hearts, minds and hormones of a generation of like-minded teens, delivering the singles “Girl From Mars”, “Kung Fu”, “Angel Interceptor”, “Goldfinger” and “Oh Yeah” &mdash; all of which reached the UK Top 20. \n\n  \n\nThe 30th Anniversary Celebration of...",
+      "startRaw": "2026-09-10T19:00:00+10:00",
+      "endRaw": "2026-09-10T00:00:00+10:00",
+      "venueName": "The Tivoli",
+      "address": "52 Costin St, Fortitude Valley, QLD 4006",
+      "url": "https://thetivoli.com.au/events/ash",
+      "price": null,
+      "imageUrl": "https://thetivoli.com.au/generated/share-image/ash-2426x1365-png.jpg",
+      "organiser": null,
+      "category": "Event",
+      "sourceEventId": null,
+      "startISO": "2026-09-10T19:00:00+10:00",
+      "endISO": "2026-09-10T00:00:00+10:00",
+      "provenance": {
+        "sourceId": "jsonld",
+        "sourceUrl": "https://thetivoli.com.au/events/ash",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "jsonld"
+      }
+    },
+    {
+      "title": "Undated support act",
+      "description": null,
+      "startRaw": null,
+      "endRaw": null,
+      "venueName": "The Tivoli",
+      "address": null,
+      "url": null,
+      "price": null,
+      "imageUrl": null,
+      "organiser": null,
+      "category": "Event",
+      "sourceEventId": null,
+      "startISO": null,
+      "endISO": null,
+      "provenance": {
+        "sourceId": "jsonld",
+        "sourceUrl": "https://thetivoli.com.au/events/ash",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "jsonld"
+      }
+    },
+    {
+      "title": null,
+      "description": null,
+      "startRaw": "2026-09-30T19:00:00+10:00",
+      "endRaw": null,
+      "venueName": null,
+      "address": null,
+      "url": "https://thetivoli.com.au/events/unnamed",
+      "price": null,
+      "imageUrl": null,
+      "organiser": null,
+      "category": "Event",
+      "sourceEventId": null,
+      "startISO": "2026-09-30T19:00:00+10:00",
+      "endISO": null,
+      "provenance": {
+        "sourceId": "jsonld",
+        "sourceUrl": "https://thetivoli.com.au/events/ash",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "jsonld"
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "Ash",
+      "datetime": "Thu 10 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-10T19:00:00",
+      "datetime_end_iso": "2026-09-10",
+      "location": "The Tivoli, 52 Costin St, Fortitude Valley, QLD 4006",
+      "link": "https://thetivoli.com.au/events/ash",
+      "cost": "See link",
+      "source": "Fixture jsonld",
+      "description": "Ireland’s favourite power pop trio, Ash, finally return to Celebrate the 30th Anniversary of their iconic debut album, ‘1977’, by performing the album in full.\n\n‘1977’ has sold more than 2 million copies worldwide and struck a chord with the hearts, minds and hormones of a generation of like-minded teens, delivering the singles “Girl From Mars”, “Kung Fu”, “Angel Interceptor”, “Goldfinger” and “Oh Yeah” &mdash; all of which reached the UK Top 20. \n\n  \n\nThe 30th Anniversary Celebration of...",
+      "image": "https://thetivoli.com.au/generated/share-image/ash-2426x1365-png.jpg",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "no date",
+      "title": "Undated support act",
+      "startRaw": null,
+      "startISO": null,
+      "url": null
+    },
+    {
+      "reason": "no title",
+      "title": null,
+      "startRaw": "2026-09-30T19:00:00+10:00",
+      "startISO": null,
+      "url": "https://thetivoli.com.au/events/unnamed"
+    }
+  ],
+  "fallbackCalls": []
+}

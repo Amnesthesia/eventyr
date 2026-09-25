@@ -1,0 +1,96 @@
+{
+  "fixture": "embedded",
+  "url": "https://example-next.com.au/whats-on",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": []
+  },
+  "found": 2,
+  "candidates": [
+    {
+      "title": "Gig Night",
+      "description": "Three local bands, one stage.",
+      "startRaw": "2026-09-26T19:30:00+10:00",
+      "endRaw": null,
+      "venueName": "The Back Room",
+      "address": null,
+      "url": "https://example-next.com.au/events/gig-night",
+      "price": null,
+      "imageUrl": null,
+      "organiser": null,
+      "category": null,
+      "sourceEventId": "7",
+      "startISO": "2026-09-26T19:30:00+10:00",
+      "endISO": null,
+      "provenance": {
+        "sourceId": "embedded",
+        "sourceUrl": "https://example-next.com.au/whats-on",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "api"
+      }
+    },
+    {
+      "title": "Poetry Slam",
+      "description": null,
+      "startRaw": "2026-10-01",
+      "endRaw": null,
+      "venueName": null,
+      "address": null,
+      "url": null,
+      "price": "$15",
+      "imageUrl": null,
+      "organiser": null,
+      "category": null,
+      "sourceEventId": "8",
+      "startISO": "2026-10-01T00:00:00+10:00",
+      "endISO": null,
+      "provenance": {
+        "sourceId": "embedded",
+        "sourceUrl": "https://example-next.com.au/whats-on",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "api"
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "Gig Night",
+      "datetime": "Sat 26 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-26T19:30:00",
+      "datetime_end_iso": "",
+      "location": "The Back Room, 1 Test St",
+      "link": "https://example-next.com.au/events/gig-night",
+      "cost": "See link",
+      "source": "Fixture embedded",
+      "description": "Three local bands, one stage.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Poetry Slam",
+      "datetime": "Thu 1 Oct",
+      "datetime_iso": "2026-10-01",
+      "datetime_end_iso": "",
+      "location": "Fixture Venue, 1 Test St",
+      "link": "https://example-next.com.au/",
+      "cost": "$15",
+      "source": "Fixture embedded",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ],
+  "rejected": [],
+  "fallbackCalls": []
+}

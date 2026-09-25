@@ -1,0 +1,193 @@
+[
+  {
+    "name": "events-calendar",
+    "url": "https://abbeymuseum.com.au/wp-json/tribe/events/v1/events",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "bodyFile": "events-calendar.json"
+  },
+  {
+    "name": "modern-events-calendar",
+    "url": "https://example-mec.com.au/wp-json/mec/v1/events",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "bodyFile": "modern-events-calendar.json"
+  },
+  {
+    "name": "feed-empty",
+    "url": "https://aaq.org.au/wp-json/mec/v1/events",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "bodyFile": "feed-empty.json"
+  },
+  {
+    "name": "squarespace",
+    "url": "https://www.bigforktheatre.com/shows-events?format=json",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "bodyFile": "squarespace.json"
+  },
+  {
+    "name": "trumba-json",
+    "url": "https://www.trumba.com/calendars/LIVE.json",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "bodyFile": "trumba-json.json"
+  },
+  {
+    "name": "trumba-atom",
+    "url": "https://www.trumba.com/calendars/brisbane-events-rss.xml?filterview=parks",
+    "status": 200,
+    "headers": {
+      "content-type": "application/atom+xml"
+    },
+    "bodyFile": "trumba-atom.xml"
+  },
+  {
+    "name": "opendatasoft",
+    "url": "https://data.brisbane.qld.gov.au/api/records/1.0/search/?rows=40&dataset=riverstage-events&timezone=Australia%2FBrisbane&lang=en",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "bodyFile": "opendatasoft.json"
+  },
+  {
+    "name": "fivestar",
+    "url": "https://www.fivestarcinemas.com.au/regal",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "bodyFile": "fivestar.json"
+  },
+  {
+    "name": "reading-cinemas",
+    "url": "https://prod-api.readingcinemas.com.au/films?countryId=3&cinemaId=southcity&status=nowShowing",
+    "status": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "bodyFile": "reading-cinemas.json"
+  },
+  {
+    "name": "palace",
+    "url": "https://www.palacecinemas.com.au/cinemas/palace-barracks",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "palace.html"
+  },
+  {
+    "name": "ical",
+    "url": "https://calendar.google.com/calendar/ical/houseconspiracy.org_iij9vfvk8a9nvmutov6t68at14%40group.calendar.google.com/public/basic.ics",
+    "status": 200,
+    "headers": {
+      "content-type": "text/calendar; charset=UTF-8"
+    },
+    "bodyFile": "ical.ics"
+  },
+  {
+    "name": "jsonld",
+    "url": "https://thetivoli.com.au/events/ash",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "jsonld.html"
+  },
+  {
+    "name": "embedded",
+    "url": "https://example-next.com.au/whats-on",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "embedded.html"
+  },
+  {
+    "name": "llm-fallback",
+    "url": "https://example-plain.com.au/whats-on",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "llm-fallback.html"
+  },
+  {
+    "name": "empty-page",
+    "url": "https://example-empty.com.au/whats-on",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "empty-page.html"
+  },
+  {
+    "name": "blocked-403",
+    "url": "https://example-walled.com.au/whats-on",
+    "status": 403,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "blocked-403.html"
+  },
+  {
+    "name": "blocked-interstitial",
+    "url": "https://example-challenge.com.au/whats-on",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "blocked-interstitial.html"
+  },
+  {
+    "name": "blocked-shell",
+    "url": "https://example-shell.com.au/whats-on",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "blocked-shell.html"
+  },
+  {
+    "name": "not-modified",
+    "url": "https://thetivoli.com.au/events/ash?cached",
+    "status": 304,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "jsonld.html"
+  },
+  {
+    "name": "fetch-failed",
+    "url": "https://nxdomain.example-gone.com.au/whats-on",
+    "status": null,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": null,
+    "error": "getaddrinfo ENOTFOUND nxdomain.example-gone.com.au"
+  },
+  {
+    "name": "render-jsonld",
+    "url": "https://example-render.com.au/",
+    "status": 200,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "bodyFile": "jsonld.html",
+    "strategy": "render"
+  }
+]

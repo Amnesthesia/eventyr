@@ -1,0 +1,16 @@
+{
+  "fixture": "fetch-failed",
+  "url": "https://nxdomain.example-gone.com.au/whats-on",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 0,
+    "errors": [
+      "discover: getaddrinfo ENOTFOUND nxdomain.example-gone.com.au"
+    ]
+  },
+  "found": 0,
+  "candidates": [],
+  "events": [],
+  "rejected": [],
+  "fallbackCalls": []
+}

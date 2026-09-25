@@ -1,0 +1,136 @@
+{
+  "fixture": "trumba-json",
+  "url": "https://www.trumba.com/calendars/LIVE.json",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": []
+  },
+  "found": 3,
+  "candidates": [
+    {
+      "title": "Precious",
+      "description": "What makes a collection? Museum of Brisbane is giving you the keys to some of the most awe-inspiring collections across our amazing city. An irresistible array of breathtaking curiosities, Precious brings together thousands of remarkable items from more than 30 public and private collections. From textiles to tin-toys, micro-architectural marvels to marine treasures, this exhibition is a joyful celebration of the art of assemblage. We invite you to immerse yourself into the incredible stories of some of the prolific collectors of Brisbane, and get to know what makes a keepsake and collectible truly Precious. Open daily from 10am - 5pm. Museum of Brisbane is Brisbane City Council's leading history and art museum where you can experience our city's vibrant culture.",
+      "startRaw": "2025-04-07T00:00:00+10:00",
+      "endRaw": "2027-04-02T00:00:00+10:00",
+      "venueName": "Museum of Brisbane, Brisbane City",
+      "address": "Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "url": "https://www.museumofbrisbane.com.au/whats-on/precious/",
+      "price": "Free",
+      "imageUrl": "https://www.trumba.com/i/DgBpY5Z7rbRnjMvJ7LJHq5jB.jpg",
+      "organiser": null,
+      "category": "Exhibitions",
+      "sourceEventId": "182353296",
+      "startISO": "2025-04-07T00:00:00+10:00",
+      "endISO": "2027-04-02T00:00:00+10:00",
+      "provenance": {
+        "sourceId": "trumba-json",
+        "sourceUrl": "https://www.trumba.com/calendars/LIVE.json",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    },
+    {
+      "title": "The Choir of Man",
+      "description": "Olivier Award-nominated, West End acclaimed, and globally adored — hundreds of thousands of fans across four continents can't be wrong — this is the show the whole world has been raising a glass to. Stunning harmonies and foot-stomping singalongs, brimming with hits — all with a real bar on stage. A wildly talented cast of nine (extra)ordinary guys — world-class tap dancers, slam poets, multi-instrumentalists and powerhouse singers — who serve it all, live. Discover the worldwide smash hit featuring music from artists such as Queen, Sia, Paul Simon, Adele, Luther Vandross, Guns N’ Roses, Avicii, and Katy Perry, to name just a few. From sell-out seasons at the Sydney Opera House to packed houses across the US, Europe and Australia, this show has conquered the globe one pub at a time. An uplifting celebration of community and friendship, with something for everyone. Enjoy 75 minutes of foot-stomping entertainment, including a 15-minute preshow, unlike anything else. Location: Magic Mirrors Spiegeltent – Festival Village Brisbane Festival is an initiative of the Queensland Government and Brisbane City Council. Discover the full 2026 festival program now via the Brisbane Festival website.",
+      "startRaw": "2026-09-03T00:00:00+10:00",
+      "endRaw": "2026-09-27T00:00:00+10:00",
+      "venueName": "South Bank, Brisbane City",
+      "address": "South Bank, corner Ernest Street, Stanley Street and Grey Street, South Brisbane",
+      "url": "https://www.brisbanefestival.com.au/events/the-choir-of-man",
+      "price": "$74.90 - $120",
+      "imageUrl": "https://www.trumba.com/i/DgAdw1dUkARIrQiANbK0v3YR.jpg",
+      "organiser": null,
+      "category": "Performing arts",
+      "sourceEventId": "206647165",
+      "startISO": "2026-09-03T00:00:00+10:00",
+      "endISO": "2026-09-27T00:00:00+10:00",
+      "provenance": {
+        "sourceId": "trumba-json",
+        "sourceUrl": "https://www.trumba.com/calendars/LIVE.json",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    },
+    {
+      "title": "Brisbane Festival",
+      "description": "This year, the Festival moves with the rhythm of Brisbane itself. Inspired by Brisbane being the world’s earliest rising city, the program stretches from First Light through to After Dark. Across every corner of the program — from theatre, music, dance, circus, and puppetry to intimate encounters and large-scale spectacles — you will discover World Premieres, Australian Exclusives, and extraordinary artists from Queensland, across Australia, and around the globe. Discover the full 2026 festival program now via the Brisbane Festival website. Brisbane Festival is an initiative of the Queensland Government and Brisbane City Council.",
+      "startRaw": "2026-09-04T00:00:00+10:00",
+      "endRaw": "2026-09-27T00:00:00+10:00",
+      "venueName": null,
+      "address": null,
+      "url": "https://www.brisbanefestival.com.au/events",
+      "price": "Various",
+      "imageUrl": "https://www.trumba.com/i/DgAczYebbTWudE81DqIRz62P.jpg",
+      "organiser": null,
+      "category": "Creative",
+      "sourceEventId": "206647163",
+      "startISO": "2026-09-04T00:00:00+10:00",
+      "endISO": "2026-09-27T00:00:00+10:00",
+      "provenance": {
+        "sourceId": "trumba-json",
+        "sourceUrl": "https://www.trumba.com/calendars/LIVE.json",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "Precious",
+      "datetime": "Mon 7 Apr 2025 – Fri 2 Apr 2027",
+      "datetime_iso": "2025-04-07",
+      "datetime_end_iso": "2027-04-02",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "link": "https://www.museumofbrisbane.com.au/whats-on/precious/",
+      "cost": "Free",
+      "source": "Fixture trumba-json",
+      "description": "What makes a collection? Museum of Brisbane is giving you the keys to some of the most awe-inspiring collections across our amazing city. An irresistible array of breathtaking curiosities, Precious brings together thousands of remarkable items from more than 30 public and private collections. From textiles to tin-toys, micro-architectural marvels to marine treasures, this exhibition is a joyful celebration of the art of assemblage. We invite you to immerse yourself into the incredible stories of some of the prolific collectors of Brisbane, and get to know what makes a keepsake and collectible truly Precious. Open daily from 10am - 5pm. Museum of Brisbane is Brisbane City Council's leading history and art museum where you can experience our city's vibrant culture.",
+      "image": "https://www.trumba.com/i/DgBpY5Z7rbRnjMvJ7LJHq5jB.jpg",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "The Choir of Man",
+      "datetime": "Thu 3 Sep – Sun 27 Sep",
+      "datetime_iso": "2026-09-03",
+      "datetime_end_iso": "2026-09-27",
+      "location": "South Bank, Brisbane City, South Bank, corner Ernest Street, Stanley Street and Grey Street, South Brisbane",
+      "link": "https://www.brisbanefestival.com.au/events/the-choir-of-man",
+      "cost": "$74.90 - $120",
+      "source": "Fixture trumba-json",
+      "description": "Olivier Award-nominated, West End acclaimed, and globally adored — hundreds of thousands of fans across four continents can't be wrong — this is the show the whole world has been raising a glass to. Stunning harmonies and foot-stomping singalongs, brimming with hits — all with a real bar on stage. A wildly talented cast of nine (extra)ordinary guys — world-class tap dancers, slam poets, multi-instrumentalists and powerhouse singers — who serve it all, live. Discover the worldwide smash hit featuring music from artists such as Queen, Sia, Paul Simon, Adele, Luther Vandross, Guns N’ Roses, Avicii, and Katy Perry, to name just a few. From sell-out seasons at the Sydney Opera House to packed houses across the US, Europe and Australia, this show has conquered the globe one pub at a time. An uplifting celebration of community and friendship, with something for everyone. Enjoy 75 minutes of foot-stomping entertainment, including a 15-minute preshow, unlike anything else. Location: Magic Mirrors Spiegeltent – Festival Village Brisbane Festival is an initiative of the Queensland Government and Brisbane City Council. Discover the full 2026 festival program now via the Brisbane Festival website.",
+      "image": "https://www.trumba.com/i/DgAdw1dUkARIrQiANbK0v3YR.jpg",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Brisbane Festival",
+      "datetime": "Fri 4 Sep – Sun 27 Sep",
+      "datetime_iso": "2026-09-04",
+      "datetime_end_iso": "2026-09-27",
+      "location": "Fixture Venue, 1 Test St",
+      "link": "https://www.brisbanefestival.com.au/events",
+      "cost": "Various",
+      "source": "Fixture trumba-json",
+      "description": "This year, the Festival moves with the rhythm of Brisbane itself. Inspired by Brisbane being the world’s earliest rising city, the program stretches from First Light through to After Dark. Across every corner of the program — from theatre, music, dance, circus, and puppetry to intimate encounters and large-scale spectacles — you will discover World Premieres, Australian Exclusives, and extraordinary artists from Queensland, across Australia, and around the globe. Discover the full 2026 festival program now via the Brisbane Festival website. Brisbane Festival is an initiative of the Queensland Government and Brisbane City Council.",
+      "image": "https://www.trumba.com/i/DgAczYebbTWudE81DqIRz62P.jpg",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ],
+  "rejected": [],
+  "fallbackCalls": []
+}

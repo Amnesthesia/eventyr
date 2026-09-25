@@ -1,0 +1,61 @@
+{
+ "events": [
+  {
+   "id": 9144,
+   "title": "Kids Dig It! Ancient Egypt Family Fun Week",
+   "excerpt": "",
+   "url": "https://abbeymuseum.com.au/event/kids-dig-it-ancient-egypt-family-fun-week/",
+   "start_date": "2026-09-21 09:30:00",
+   "end_date": "2026-09-23 15:00:00",
+   "cost": "",
+   "image": {
+    "url": "https://abbeymuseum.com.au/wp-content/uploads/2026/01/rezdy-banner_KDI-egypt.png"
+   },
+   "venue": {
+    "venue": "Abbey Museum of Art and Archaeology",
+    "address": "31 The Abbey Place"
+   },
+   "categories": []
+  },
+  {
+   "id": 9743,
+   "title": "A Regency Ball at Abbey",
+   "excerpt": "",
+   "url": "https://abbeymuseum.com.au/event/a-regency-ball-at-abbey/",
+   "start_date": "2026-09-26 18:00:00",
+   "end_date": "2026-09-26 21:00:00",
+   "cost": "$37.50",
+   "image": {
+    "url": "https://abbeymuseum.com.au/wp-content/uploads/2026/09/Regency-Ball-1.jpg"
+   },
+   "venue": {
+    "venue": "St Michael&#8217;s College &#8211; Hall",
+    "address": "1-63 The Abbey Place"
+   },
+   "categories": [
+    {
+     "name": "Abbey Museum of Art &amp; Archaeology"
+    }
+   ]
+  },
+  {
+   "id": 9147,
+   "title": "Lunch and Presentation by Dr. Ladislav Nejman: The extinction of Neanderthals and expansion of the first Homo Sapiens into Europe",
+   "excerpt": "",
+   "url": "https://abbeymuseum.com.au/event/lunch-and-presentation-by-dr-ladislav-nejman-the-extinction-of-neanderthals-and-expansion-of-the-first-homo-sapiens-into-europe/",
+   "start_date": "2026-10-17 14:00:00",
+   "end_date": "2026-10-17 16:00:00",
+   "cost": "",
+   "image": {
+    "url": "https://abbeymuseum.com.au/wp-content/uploads/2025/12/rezdy-banner_friends-OCT.jpg"
+   },
+   "venue": {
+    "venue": "The Abbey Hall",
+    "address": "31 The Abbey Place"
+   },
+   "categories": []
+  }
+ ],
+ "rest_url": "https://abbeymuseum.com.au/wp-json/tribe/events/v1/events/?page=1&per_page=10&start_date=2026-09-08 00:00:00&end_date=2028-09-08 23:59:59&status=publish",
+ "total": 7
+}
