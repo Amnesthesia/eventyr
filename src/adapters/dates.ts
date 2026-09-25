@@ -24,7 +24,7 @@ import {
 	zonedDate,
 	zonedOffsetMinutes,
 	zonedTimeToInstant,
-} from "@dothingslol/core/tz";
+} from "@dothingslol/utils/tz";
 import * as chrono from "chrono-node";
 
 // chrono takes an offset in minutes or a timezone *abbreviation*; an IANA name

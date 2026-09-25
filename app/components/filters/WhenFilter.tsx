@@ -1,6 +1,6 @@
 import { addDays, weekendRange } from "@dothingslol/core/dates";
 import type { DateRange } from "@dothingslol/core/schema";
-import { zonedDate } from "@dothingslol/core/tz";
+import { zonedDate } from "@dothingslol/utils/tz";
 import { useEventsContext } from "../../context";
 import DateRangePicker from "../DateRangePicker";
 

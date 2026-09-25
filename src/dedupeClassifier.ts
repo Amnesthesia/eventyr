@@ -1,17 +1,14 @@
 // The LLM half of dedupe.ts's stage 2. Kept separate so dedupe.ts stays a
 // pure, network-free module that tests can drive with a stub.
 
+import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { GoogleGenAI } from "@google/genai";
 import {
 	type CandidatePair,
 	PAIR_BATCH_SIZE,
 	type PairClassifyFn,
 } from "./dedupe.ts";
-import {
-	chunkArray,
-	mapWithConcurrency,
-	parseJsonArray,
-} from "./providers/base.ts";
+import { parseJsonArray } from "./providers/base.ts";
 import { geminiText } from "./providers/gemini.ts";
 
 const MODEL = "gemini-3.1-flash-lite";

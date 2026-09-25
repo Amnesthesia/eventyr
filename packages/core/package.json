@@ -12,6 +12,7 @@
 		"typecheck": "tsc --noEmit -p tsconfig.json"
 	},
 	"dependencies": {
+		"@dothingslol/utils": "workspace:*",
 		"zod": "catalog:"
 	},
 	"devDependencies": {

@@ -28,6 +28,7 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { chunkArray } from "@dothingslol/utils/concurrency";
 import { GoogleGenAI } from "@google/genai";
 import {
 	DATA_ROOT,
@@ -36,7 +37,7 @@ import {
 	SOURCE_TIERS,
 } from "./common.ts";
 import { acronymMatch } from "./dedupe.ts";
-import { chunkArray, parseJsonArray } from "./providers/base.ts";
+import { parseJsonArray } from "./providers/base.ts";
 import { geminiText, installUsageReporting } from "./providers/gemini.ts";
 
 // Not flash-lite: on the first Gold Coast run it merged "Mudgeeraba Studio"

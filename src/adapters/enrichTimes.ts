@@ -34,9 +34,9 @@
 // candidate stays exactly as the listing had it.
 
 import { readFileSync } from "node:fs";
+import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import he from "he";
 import { normaliseHost } from "../common.ts";
-import { mapWithConcurrency } from "../providers/base.ts";
 import { parseSingleDateTime } from "./dates.ts";
 import { extractEmbeddedJson } from "./embeddedJson.ts";
 import { extractJsonLdBlocks, findEventNodes } from "./extract.ts";

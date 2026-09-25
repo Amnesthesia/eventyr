@@ -30,6 +30,7 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { dirname, join } from "node:path";
+import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { GoogleGenAI } from "@google/genai";
 import yaml from "js-yaml";
 import {
@@ -45,11 +46,7 @@ import {
 	type SourceTier,
 	toISODate,
 } from "../common.ts";
-import {
-	chunkArray,
-	mapWithConcurrency,
-	parseJsonArray,
-} from "../providers/base.ts";
+import { parseJsonArray } from "../providers/base.ts";
 import {
 	geminiText,
 	installUsageReporting,

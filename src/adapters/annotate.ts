@@ -8,13 +8,10 @@
 // BaseProvider.buildFormatSystem so an adapter-sourced event scores the same
 // way an AI-search one does.
 
+import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { GoogleGenAI } from "@google/genai";
 import { CATEGORIES, TAG_SET, TAGS } from "../common.ts";
-import {
-	chunkArray,
-	mapWithConcurrency,
-	parseJsonArray,
-} from "../providers/base.ts";
+import { parseJsonArray } from "../providers/base.ts";
 import { geminiText } from "../providers/gemini.ts";
 import { isValidCategory } from "./normalise.ts";
 

@@ -1,7 +1,8 @@
+import { chunkArray } from "@dothingslol/utils/concurrency";
 import { GoogleGenAI } from "@google/genai";
 import { dedupeEvents } from "../common.ts";
 import type { ProviderOptions, SearchResult } from "./base.ts";
-import { BaseProvider, chunkArray, splitIntoBatches } from "./base.ts";
+import { BaseProvider, splitIntoBatches } from "./base.ts";
 import { geminiText } from "./gemini.ts";
 
 const SEARCH_MODEL = "gemini-3.1-flash-lite";

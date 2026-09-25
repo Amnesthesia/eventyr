@@ -7,6 +7,7 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { dirname, join, relative } from "node:path";
+import { cleanText, cleanUrl } from "@dothingslol/utils/text";
 import { isRetiredTemplateDescription } from "./adapters/annotate.ts";
 import {
 	councilEventUrl,
@@ -45,7 +46,6 @@ import {
 } from "./locality.ts";
 import { installUsageReporting } from "./providers/gemini.ts";
 import { unlistedWorthProbing, updateLedger } from "./sourceYield.ts";
-import { cleanText, cleanUrl } from "./text.ts";
 
 const CITY = requireEnv("CITY");
 const FORCE = ["1", "true", "yes"].includes(

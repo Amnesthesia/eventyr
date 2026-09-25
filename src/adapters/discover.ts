@@ -28,6 +28,7 @@
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { GoogleGenAI } from "@google/genai";
 import yaml from "js-yaml";
 import {
@@ -37,7 +38,6 @@ import {
 	type SourceEntry,
 	type SourceTier,
 } from "../common.ts";
-import { mapWithConcurrency } from "../providers/base.ts";
 import { geminiText, installUsageReporting } from "../providers/gemini.ts";
 
 const args = process.argv.slice(2);

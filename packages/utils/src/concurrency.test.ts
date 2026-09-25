@@ -23,8 +23,5 @@ test("mapWithConcurrency keeps input order and never exceeds the limit", async (
 });
 
 test("mapWithConcurrency over nothing resolves to nothing", async () => {
-	assert.deepEqual(
-		await mapWithConcurrency([], 4, async () => 1),
-		[],
-	);
+	assert.deepEqual(await mapWithConcurrency([], 4, async () => 1), []);
 });

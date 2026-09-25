@@ -12,7 +12,7 @@ import {
 	zonedDate,
 	zonedOffsetMinutes,
 	zonedTimeToInstant,
-} from "./tz.ts";
+} from "@dothingslol/utils/tz";
 
 export const CATEGORIES = [
 	"Public Lecture",

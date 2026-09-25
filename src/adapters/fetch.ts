@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { backoffDelay, sleep } from "@dothingslol/utils/time";
 import { gotScraping } from "got-scraping";
 import { adapterCachePath, adapterRawDir } from "../common.ts";
 import { apiRequestFor } from "./feeds.ts";
@@ -136,14 +137,6 @@ function extensionForContentType(contentType: string | null): string {
 	return "html";
 }
 
-function jitter(ms: number): number {
-	return ms + Math.floor(Math.random() * ms * 0.3);
-}
-
-function sleep(ms: number): Promise<void> {
-	return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 export class SourceFetcher {
 	private readonly userAgent: string;
 	private readonly minIntervalMs: number;
@@ -251,7 +244,7 @@ export class SourceFetcher {
 							`${res.status} from ${url} after ${attempt + 1} attempts`,
 						);
 					}
-					await sleep(jitter(BASE_BACKOFF_MS * 2 ** attempt));
+					await sleep(backoffDelay(attempt, BASE_BACKOFF_MS));
 					continue;
 				}
 
@@ -305,7 +298,7 @@ export class SourceFetcher {
 				// spent waiting to re-learn the same answer.
 				if (isPermanentFailure(err)) break;
 				if (attempt === this.maxRetries) break;
-				await sleep(jitter(BASE_BACKOFF_MS * 2 ** attempt));
+				await sleep(backoffDelay(attempt, BASE_BACKOFF_MS));
 			}
 		}
 		throw lastErr instanceof Error ? lastErr : new Error(String(lastErr));

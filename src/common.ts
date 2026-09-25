@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { isSameSite, normaliseHost, toISODate } from "@dothingslol/core/shared";
-import { addDays, zonedDate, zonedMidnight } from "@dothingslol/core/tz";
+import { addDays, zonedDate, zonedMidnight } from "@dothingslol/utils/tz";
 import yaml from "js-yaml";
 import { sourceEarnsPlace, type YieldLedger } from "./sourceYield.ts";
 
@@ -21,7 +21,7 @@ export * from "@dothingslol/core/shared";
 // stay free of node: imports — importing this file from app/ code drags node:fs
 // into Vite and fails the build. Re-exported here so pipeline modules keep
 // importing everything from common.ts.
-export { addDays, zonedMidnight } from "@dothingslol/core/tz";
+export { addDays, zonedMidnight } from "@dothingslol/utils/tz";
 
 /** Where curate.ts records which llm sources the search actually produced
  * events from. Committed with the data; read by llmSourceStrings(). */

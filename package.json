@@ -32,13 +32,14 @@
     "test:pipeline": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts'",
     "test:app": "tsx --tsconfig tsconfig.json --test 'app/**/*.test.ts' 'app/**/*.test.tsx'",
     "test": "pnpm test:pipeline && pnpm test:app",
-    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app packages && pnpm test && pnpm --filter @dothingslol/core typecheck && pnpm --filter @dothingslol/core test && node scripts/check-boundaries.mjs",
+    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app packages && pnpm test && pnpm -r --filter \"./packages/*\" typecheck && pnpm -r --filter \"./packages/*\" test && node scripts/check-boundaries.mjs",
     "render-sources": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/render.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",
     "@astrojs/react": "^5.0.5",
     "@dothingslol/core": "workspace:*",
+    "@dothingslol/utils": "workspace:*",
     "@google/genai": "^2.3.0",
     "@picocss/pico": "^2.0.6",
     "astro": "^6.3.7",

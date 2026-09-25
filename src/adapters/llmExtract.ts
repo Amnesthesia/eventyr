@@ -14,12 +14,9 @@
 import { writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { GoogleGenAI } from "@google/genai";
-import {
-	mapWithConcurrency,
-	parseJsonArray,
-	splitIntoBatches,
-} from "../providers/base.ts";
+import { parseJsonArray, splitIntoBatches } from "../providers/base.ts";
 import { geminiText } from "../providers/gemini.ts";
 import { countDateHits } from "./dates.ts";
 import type { PageExtractFn, RawCandidateFields } from "./types.ts";

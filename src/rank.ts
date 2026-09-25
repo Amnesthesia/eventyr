@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { GoogleGenAI } from "@google/genai";
 import {
 	byScoreThenSoonest,
@@ -12,7 +13,6 @@ import {
 	TOP_PICK_THRESHOLD,
 	toISODate,
 } from "./common.ts";
-import { chunkArray, mapWithConcurrency } from "./providers/base.ts";
 import { geminiText, installUsageReporting } from "./providers/gemini.ts";
 import {
 	RANK_DESCRIPTION_CHARS,

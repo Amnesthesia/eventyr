@@ -13,6 +13,7 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
+import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import {
 	addDays,
 	barrenSourcesPath,
@@ -26,7 +27,6 @@ import {
 	SOURCES_ROOT,
 	toISODate,
 } from "../common.ts";
-import { mapWithConcurrency } from "../providers/base.ts";
 import { installUsageReporting } from "../providers/gemini.ts";
 import {
 	type Annotation,
