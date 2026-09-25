@@ -1,0 +1,15 @@
+Scraping — Brisbane — 21 September 2026 to 27 September 2026
+→ 1 scraper source(s)
+  ✓ [fixture-programme] 1 page(s), 70 found → 12 in window  (58 later)
+→ Partial run and no barren report for this week — left it absent (every scraper source counts as uncovered until a full run).
+
+70 found → 12 in window (17%)  — 0 past, 58 later, 0 undated
+→ extraction cache: 0 hit(s), 1 miss(es)
+✓ Scrape complete — 12 event(s) across 1 source(s) → $ROOT/data/brisbane/adapters/curated
+
+Model usage
+  stage                     calls         in      out   think   cached   cachew  search    ~usd
+  collect/extract               3      8,262    7,418       0        0        0       0   0.004
+  annotate                      1      1,725      474       0        0        0       0   0.000
+  TOTAL                         4      9,987    7,892       0        0        0       0   0.004
+  → $ROOT/data/brisbane/usage/2026-09-21.json

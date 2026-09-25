@@ -14,7 +14,10 @@ export const PROJECT_ROOT = resolve(__dirname, "..");
 // instead of writing into the repo's real data dir.
 export const DATA_ROOT =
 	process.env.EVENTYR_DATA_ROOT ?? join(PROJECT_ROOT, "data");
-export const SOURCES_ROOT = join(PROJECT_ROOT, "sources");
+// Overridable for the same reason: the LLM parity harness runs every CLI
+// against a fixture city (test/fixtures/llm-city) with its own sources file.
+export const SOURCES_ROOT =
+	process.env.EVENTYR_SOURCES_ROOT ?? join(PROJECT_ROOT, "sources");
 
 export * from "@dothingslol/core/shared";
 // Values shared with the browser bundle live in @dothingslol/core, which must

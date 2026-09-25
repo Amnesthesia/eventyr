@@ -1,0 +1,12 @@
+Ranking — Brisbane — 21 September 2026 to 27 September 2026
+==================================================
+→ Scoring 12 of 12 events with Google Gemini…
+→ Score distribution: 3/12 events score ≥ 7 (25%)
+→ Written $ROOT/data/brisbane.json
+✓ Ranking complete.
+
+Model usage
+  stage                     calls         in      out   think   cached   cachew  search    ~usd
+  rank                          1      1,594       67       0        0        0       0   0.001
+  TOTAL                         1      1,594       67       0        0        0       0   0.001
+  → $ROOT/data/brisbane/usage/2026-09-21.json

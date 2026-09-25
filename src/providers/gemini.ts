@@ -16,7 +16,14 @@
 // (Anthropic, OpenAI, Perplexity) call recordUsage() with their own SDK's
 // numbers so the usage file covers the whole run, not just Gemini.
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import {
+	appendFileSync,
+	existsSync,
+	mkdirSync,
+	readFileSync,
+	writeFileSync,
+} from "node:fs";
 import { dirname, join } from "node:path";
 import { backoffDelay, sleep } from "@dothingslol/utils/time";
 import type { GoogleGenAI } from "@google/genai";
@@ -182,6 +189,117 @@ function retryDelayMs(err: unknown, attempt: number): number | null {
 	return backoffDelay(attempt, BASE_BACKOFF_MS);
 }
 
+// ponytail: record/replay seam for the 1.6 LLM parity harness
+// (scripts/llm-parity.mjs). Replaced by @dothingslol/llm's replay mode in
+// 1.6 step 3; the line format below is the contract the goldens are stored in.
+//   EVENTYR_LLM_REPLAY=record  → append one sorted-key JSON line per call to
+//                                $EVENTYR_LLM_REPLAY_DIR/requests.jsonl, then call.
+//   EVENTYR_LLM_REPLAY=replay  → same line, but answer from
+//                                $EVENTYR_LLM_REPLAY_DIR/responses/<sha256(line)>.txt
+//                                after EVENTYR_LLM_REPLAY_LATENCY_MS (200); no network.
+// Usage in replay is derived from the text lengths so the cost report is
+// deterministic. requests.meta.json records peak in-flight calls and the
+// first-call → last-call wall-clock (PLAN §9 concurrency check).
+const REPLAY_MODE = process.env.EVENTYR_LLM_REPLAY as
+	| "record"
+	| "replay"
+	| undefined;
+const REPLAY_DIR = process.env.EVENTYR_LLM_REPLAY_DIR ?? "";
+const REPLAY_LATENCY_MS = Number(
+	process.env.EVENTYR_LLM_REPLAY_LATENCY_MS ?? 200,
+);
+const replayMeta = {
+	calls: 0,
+	inFlight: 0,
+	peakInFlight: { gemini: 0 },
+	startedAt: 0,
+	wallClockMs: 0,
+};
+
+function sortKeys(value: unknown): unknown {
+	if (Array.isArray(value)) return value.map(sortKeys);
+	if (value && typeof value === "object") {
+		return Object.fromEntries(
+			Object.keys(value as Record<string, unknown>)
+				.sort()
+				.map((k) => [k, sortKeys((value as Record<string, unknown>)[k])]),
+		);
+	}
+	return value;
+}
+
+function replayLine(opts: GeminiCallOptions): string {
+	return JSON.stringify(
+		sortKeys({
+			stage: opts.stage,
+			model: opts.model,
+			contents: opts.contents,
+			systemInstruction: opts.systemInstruction,
+			maxOutputTokens: opts.maxOutputTokens,
+			temperature: opts.temperature,
+			search: opts.search,
+			extraConfig: opts.extraConfig,
+		}),
+	);
+}
+
+function replayBegin(line: string): void {
+	if (!REPLAY_DIR)
+		throw new Error("EVENTYR_LLM_REPLAY needs EVENTYR_LLM_REPLAY_DIR");
+	mkdirSync(REPLAY_DIR, { recursive: true });
+	appendFileSync(join(REPLAY_DIR, "requests.jsonl"), `${line}\n`, "utf-8");
+	if (replayMeta.calls === 0) replayMeta.startedAt = performance.now();
+	replayMeta.calls++;
+	replayMeta.inFlight++;
+	replayMeta.peakInFlight.gemini = Math.max(
+		replayMeta.peakInFlight.gemini,
+		replayMeta.inFlight,
+	);
+}
+
+function replayEnd(): void {
+	replayMeta.inFlight--;
+	replayMeta.wallClockMs = Math.round(performance.now() - replayMeta.startedAt);
+	const { inFlight: _, startedAt: __, ...meta } = replayMeta;
+	writeFileSync(
+		join(REPLAY_DIR, "requests.meta.json"),
+		JSON.stringify(meta, null, 2),
+		"utf-8",
+	);
+}
+
+async function replayAnswer(
+	line: string,
+	opts: GeminiCallOptions,
+): Promise<string> {
+	const hash = createHash("sha256").update(line).digest("hex");
+	const path = join(REPLAY_DIR, "responses", `${hash}.txt`);
+	await sleep(REPLAY_LATENCY_MS);
+	if (!existsSync(path)) {
+		// Leave the request behind so the fixture can be authored by hand.
+		mkdirSync(dirname(path), { recursive: true });
+		writeFileSync(`${path.slice(0, -4)}.missing.json`, `${line}\n`, "utf-8");
+		throw new Error(`replay fixture missing: ${path} (stage ${opts.stage})`);
+	}
+	return readFileSync(path, "utf-8");
+}
+
+/** Deterministic stand-in for usageMetadata on a replayed call. */
+function replayUsage(
+	opts: GeminiCallOptions,
+	text: string,
+): Partial<GeminiUsage> {
+	return {
+		promptTokens: Math.ceil(
+			(opts.contents.length + (opts.systemInstruction?.length ?? 0)) / 4,
+		),
+		outputTokens: Math.ceil(text.length / 4),
+		thoughtTokens: 0,
+		cachedTokens: 0,
+		searchQueries: opts.search ? 1 : 0,
+	};
+}
+
 export interface GeminiCallOptions {
 	/** Name this call's stage, e.g. "probe/extract". Groups the accounting. */
 	stage: string;
@@ -208,10 +326,34 @@ export async function geminiText(
 
 	await acquire();
 	try {
+		if (REPLAY_MODE === "replay") {
+			const line = replayLine(opts);
+			replayBegin(line);
+			try {
+				totalCalls++;
+				const text = await replayAnswer(line, opts);
+				const call = {
+					calls: 1,
+					grounded: opts.search ? 1 : 0,
+					...replayUsage(opts, text),
+				};
+				recordUsage(opts.stage, {
+					...call,
+					estimatedUsd: estimateUsd(opts.model, call),
+				});
+				return text;
+			} catch (err) {
+				recordUsage(opts.stage, { failures: 1 });
+				throw err;
+			} finally {
+				replayEnd();
+			}
+		}
 		let lastErr: unknown;
 		for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
 			try {
 				totalCalls++;
+				if (REPLAY_MODE === "record") replayBegin(replayLine(opts));
 				const response = await ai.models.generateContent({
 					model: opts.model,
 					contents: opts.contents,
@@ -229,6 +371,7 @@ export async function geminiText(
 						...(opts.extraConfig ?? {}),
 					},
 				});
+				if (REPLAY_MODE === "record") replayEnd();
 				const meta = response.usageMetadata;
 				const call: Partial<GeminiUsage> = {
 					calls: 1,
@@ -248,6 +391,7 @@ export async function geminiText(
 				recordUsage(opts.stage, call);
 				return response.text ?? "";
 			} catch (err) {
+				if (REPLAY_MODE === "record") replayEnd();
 				lastErr = err;
 				const delay = retryDelayMs(err, attempt);
 				if (delay === null || attempt === MAX_RETRIES) break;

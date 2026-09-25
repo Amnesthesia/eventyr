@@ -1,0 +1,53 @@
+
+=== brisbane ===
+    3 new of   3  public galleries, museums and art spaces
+    2 new of   3  libraries, universities and council venues with public programmes
+    2 new of   3  theatres, orchestras, opera, ballet and dance companies
+    2 new of   3  botanic gardens, observatories, planetariums, historical societies and science centres
+    2 new of   3  comedy clubs, improv theatres, stand-up rooms and cabaret venues
+    2 new of   3  live music venues, including pubs, clubs and bars with a gig guide
+    2 new of   3  artist-run and commercial galleries, studios and life-drawing spaces
+    2 new of   3  makerspaces, hackerspaces, repair cafes and craft workshop studios
+    2 new of   3  bookshops and writers' groups that host author talks or book clubs
+    2 new of   3  board-game cafes, trivia nights, language exchanges and social meetup clubs
+    2 new of   3  independent cinemas, film societies and screening rooms
+    2 new of   3  night markets, food markets, street festivals and community fairs
+
+brisbane: 36 suggested across 12 niches → 25 new
+
+  institutions (9):
+      Fixture Public House                             fixture-public.example
+      West End Galleries Collective                    westendgalleries.example
+      Eventbrite Brisbane                              eventbrite.com.au
+      Fixture Libraries House                          fixture-libraries.example
+      West End Universities Collective                 westenduniversities.example
+      Fixture Theatres House                           fixture-theatres.example
+      West End Orchestras Collective                   westendorchestras.example
+      Fixture Botanic House                            fixture-botanic.example
+      West End Gardens Collective                      westendgardens.example
+
+  independents (16):
+      Fixture Comedy House                             fixture-comedy.example
+      West End Clubs Collective                        westendclubs.example
+      Fixture Live House                               fixture-live.example
+      West End Music Collective                        westendmusic.example
+      Fixture Artistrun House                          fixture-artistrun.example
+      West End Commercial Collective                   westendcommercial.example
+      Fixture Makerspaces House                        fixture-makerspaces.example
+      West End Hackerspaces Collective                 westendhackerspaces.example
+      Fixture Bookshops House                          fixture-bookshops.example
+      West End Writers Collective                      westendwriters.example
+      Fixture Boardgame House                          fixture-boardgame.example
+      West End Cafes Collective                        westendcafes.example
+      Fixture Independent House                        fixture-independent.example
+      West End Cinemas Collective                      westendcinemas.example
+      Fixture Night House                              fixture-night.example
+      West End Markets Collective                      westendmarkets.example
+
+Dry run — rerun with --apply to add these sources.
+
+Model usage
+  stage                     calls         in      out   think   cached   cachew  search    ~usd
+  discover                     12      3,671      416       0        0        0      12   0.002
+  TOTAL                        12      3,671      416       0        0        0      12   0.002
+  → $ROOT/data/brisbane/usage/2026-09-21.json

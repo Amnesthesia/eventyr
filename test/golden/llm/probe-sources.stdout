@@ -1,0 +1,45 @@
+Probing 2 source(s) across brisbane
+  … [1/2] Fixture Venue
+    · [Fixture Venue] sitemap: 0 file(s), 0 url(s) → 0 listing candidate(s)
+· [1/2] Fixture Venue — spa-empty → stays on AI search
+  … [2/2] Fixture Programme
+    · [Fixture Programme] sitemap: 0 file(s), 0 url(s) → 0 listing candidate(s)
+✓ [2/2] Fixture Programme — scrapable (html, 12 events)
+      http://127.0.0.1:48123/programme  →  12 events
+
+Pass 2: 1 source(s) unresolved by sitemap/canonical paths — asking the model.
+Listing URLs: asking for 1 host(s)…
+  → listing URLs: 1 answered (1/1 batches)
+    · [Fixture Venue] sitemap: 0 file(s), 0 url(s) → 0 listing candidate(s)
+✓ [pass2 1/1] Fixture Venue — scrapable (html, 5 events)
+
+Dry run — rerun with --apply to promote verified sources.
+
+==============================================================================
+2 of 3 probed sources are scrapable  (jsonld: 0, html: 2)
+==============================================================================
+
+By outcome:
+     2  html
+     1  spa-empty
+
+Scrapable sources:
+   12 ev  html   declared 127.0.0.1:48123
+         http://127.0.0.1:48123/programme
+         e.g. "Open Mic Comedy"
+    5 ev  html   llm      localhost:48123
+         http://localhost:48123/gig-guide
+         e.g. "The Quiet Ones"
+
+Not scrapable (1) — these stay on the AI search:
+  localhost:48123                        spa-empty
+
+Raw signals for tuning: $ROOT/data/_probe/results.jsonl
+Re-derive without refetching: pnpm probe-sources --report-only
+
+Model usage
+  stage                     calls         in      out   think   cached   cachew  search    ~usd
+  probe/extract                 2      4,446    3,847       0        0        0       0   0.002
+  probe/discover-urls           1        301       15       0        0        0       1   0.000
+  TOTAL                         3      4,747    3,862       0        0        0       1   0.002
+  → $ROOT/data/brisbane/usage/2026-09-21.json
