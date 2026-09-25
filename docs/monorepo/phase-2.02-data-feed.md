@@ -22,7 +22,7 @@ and image. This sub-phase adds:
 Both are Astro **static endpoints**, generated from `data/*.json` at build time.
 
 It also adds **collection metadata** (D16, PLAN §8a): the pipeline writes a per-city run record,
-`data/{city}/run.json`, and the index exposes a public `collection` block per city (last collected,
+`data/{city}/run.json`. **`data/index.json` is renamed to `data/manifest.json`** and gains the aggregated collection metadata (PLAN §8a). The public feed index exposes a `collection` block per city (last collected,
 next scheduled run, status, event count) that app Settings shows. This is the only part of 2.2
 that touches the pipeline and a workflow. The URLs go live only when PR 2 merges (PLAN
 R10). Until then, native development reads a local preview of the site.
@@ -36,13 +36,20 @@ R10). Until then, native development reads a local preview of the site.
 - **New:**
   - `packages/core/src/feed.ts` and `packages/core/src/feed.test.ts`
   - `packages/core/src/runRecord.ts` (the `RunRecord` zod schema and type), plus its test
-  - `apps/pipeline/src/io/runRecord.ts` (the writer)
+  - `apps/pipeline/src/io/runRecord.ts` (the run-record writer)
+  - `packages/core/src/manifest.ts` (the `Manifest` zod schema and type, and `isCityPayloadFile()`)
   - `apps/web/src/pages/data/v1/index.json.ts` and `apps/web/src/pages/data/v1/[city].json.ts`
   - `scripts/feed-report.mjs`
 - **Edited:**
   - `packages/core/src/schema.ts`: the zod schemas exist from 1.2 (tests only). This sub-phase starts using them at runtime in the feed endpoints.
   - The pipeline CLIs for `collect-adapters`, `collect`, `curate`, `venues`, `rank`, `geocode` and `build-ai`: each updates its stage entry in the run record.
   - `apps/pipeline/config/pipeline.yml`: `schedule.weekly`.
+  - **Rename** `data/index.json` → `data/manifest.json` (`git mv`), then update:
+    - `apps/pipeline/src/publish/pages.ts`, the manifest's only writer
+    - the city-discovery filters in `publish/pages.ts`, `publish/markdown.ts` and `publish/ai.ts` (they were `pages.ts:82`, `markdown.ts:115` and `ai.ts:633`), plus any other `readdirSync(DATA_ROOT)` filter found with `grep -rn '"index.json"' apps packages`
+    - `apps/web/src/lib/paths.ts` and the web pages that read it
+    - `digest.yml`'s `git add`
+    - `CLAUDE.md`
   - `.github/workflows/digest.yml`: a final "Finalise run record" step (`if: always()`, before the commit step).
   - `.github/workflows/deploy.yml`: a post-deploy smoke step.
   - `.github/workflows/deploy.yml`: add a post-deploy smoke step.
@@ -101,7 +108,7 @@ with the runner. So:
    - `id` must equal the pinned `eventHash` from `shared.test.ts`.
    - `slug` must equal `eventSlug`.
 3. **Endpoints.** `[city].json.ts`:
-   - `getStaticPaths` builds one path per city, from `data/index.json` via `src/lib/paths.ts`.
+   - `getStaticPaths` builds one path per city, from `data/manifest.json` via `src/lib/paths.ts`.
    - `GET` returns `new Response(JSON.stringify(toFeedCity(...)), { headers: { "content-type": "application/json" } })`.
 
    Write the index endpoint the same way. Then confirm the output is `apps/web/dist/data/v1/brisbane.json`, not `…/brisbane.json/index.html`, since `trailingSlash: "always"` is set.
@@ -114,7 +121,7 @@ with the runner. So:
    curl -sf https://www.dothings.lol/data/v1/index.json | node -e 'const j=JSON.parse(require("fs").readFileSync(0));if(j.schema_version!==1||!j.cities.length)process.exit(1);console.log(j.cities.map(c=>c.slug).join(" "))'
    ```
 5b. **Run record (D16).**
-   - **Schema.** `core/runRecord.ts` holds the `RunRecord` zod schema in the shape given in PLAN §8a.
+   - **Schema.** `core/runRecord.ts` holds the `RunRecord` zod schema, the per-city record that becomes a manifest `collection` block (PLAN §8a).
    - **Writer.** `apps/pipeline/src/io/runRecord.ts` owns `data/{city}/run.json`. It's the only writer, and each CLI calls it at the end of its stage.
      - The first stage of a run (`collect-adapters`) sets `started_at`, `trigger` (from `GITHUB_EVENT_NAME`), `git_sha` (from `GITHUB_SHA`), `week_*` and `status: "partial"`, and clears `completed_at`.
      - Each stage then updates its `stages.<name>` entry: `ok`, `durationMs`, and counts taken from its typed result (`ScrapeResult` / `SearchCollectResult` / `StageReport`).
@@ -124,18 +131,22 @@ with the runner. So:
      - It sets `completed_at`, and sets `status` to `complete` if every stage entry is `ok`, otherwise `failed` or `partial`.
      - `data/${CITY}/` is already in the commit step's `git add` list. Confirm that `run.json` is included and not gitignored.
    - **Schedule.** Add `schedule.weekly: "0 20 * * 6"` to `pipeline.yml`, plus a test that reads `.github/workflows/weekly.yml` and asserts the cron matches.
-   - **Index endpoint.** For each city, read `data/{city}/run.json` if it exists, then emit:
+   - **Manifest (PLAN §8a).**
+     - `git mv data/index.json data/manifest.json`.
+     - `publish/pages` writes every existing field **unchanged**, plus `schema_version`, `generated_at_iso`, `schedule` and each city's `collection`, copied from `data/{city}/run.json`. A missing record gives `null`, meaning "not recorded yet", which is distinct from `status: "failed"`.
+     - Put the city-discovery rule in one helper, `isCityPayloadFile(name)` in core. Use it in pages, markdown and ai.
+     - Test that `manifest.json`, `index.json` and `*_raw.json` are never parsed as cities.
+   - **Feed index endpoint.** Read `data/manifest.json` and emit per city:
      ```jsonc
      "collection": {
-       "last_collected_at": "…",           // completed_at, or null
+       "last_collected_at": "…",           // manifest collection.last_collected_at
        "status": "complete",
-       "next_collection_at": "…",          // next cron fire after the build time, computed with a small cron-next helper in core (5-field, UTC; test Saturday-evening edges)
-       "events_published": 512,
+       "events_published": 718,
+       "next_collection_at": "…",          // recomputed at build time from schedule.cron with a small cron-next helper in core (5-field, UTC; test Saturday-evening edges)
        "data_as_of": "…"
      }
      ```
-   - **Stays internal.** Token counts, cost, git SHA and per-stage detail stay in `run.json` and are **not** exposed in the public feed.
-   - **Missing record.** Cities without a record (for example before their first run after this merges) get `collection: null`. That means "not recorded yet", which is distinct from a failed run (`status: "failed"`).
+   - **Stays internal.** Token counts, cost, git SHA, trigger and per-stage detail stay in `run.json` and `manifest.json`, which are never served. They are **not** copied into the public feed.
 6. **Don't advertise the feed.** Leave `llms.txt`, `openapi.yaml` and `.well-known/api-catalog` unchanged. This is an app contract, not a public AI API.
 7. **`CLAUDE.md`.** Add 5–8 lines covering:
    - the URL
@@ -155,6 +166,9 @@ with the runner. So:
 | V6b | Run record | In a temporary `EVENTYR_DATA_ROOT`, run `collect-adapters` and `curate` in replay mode (1.6 harness), kill the next stage mid-way, then run `finalise-run` | `run.json` validates against `RunRecordSchema`, `status` is `partial` or `failed`, and the completed stages are recorded |
 | V6c | Collection block | build, then `jq '.cities[].collection' apps/web/dist/data/v1/index.json` | `next_collection_at` is the next Saturday 20:00 UTC after build time, and there are no token or cost fields |
 | V6d | Schedule drift guard | change the cron in `weekly.yml` locally, then run tests | the test fails; revert |
+| V6e | Manifest compatibility | `jq 'del(.schema_version,.generated_at_iso,.schedule) \| .cities \|= map(del(.collection))' data/manifest.json` compared with `git show origin/main:data/index.json` after rerunning `pnpm pages` on the same data | identical, so existing fields are unchanged |
+| V6f | Not parsed as a city | `pnpm markdown && pnpm rss && pnpm build-ai`, then `git status` | no `MANIFEST.md` and no `manifest` city in any output |
+| V6g | Web still reads it | build + fingerprint diff (ignoring `/data/v1/*`) | no diff |
 | V7 | PR CI | `CI` | green, with the feed report printed |
 
 The live checks (content type, ETag, a 304 on `If-None-Match`, the deploy smoke step) are in the 2.9 runbook.

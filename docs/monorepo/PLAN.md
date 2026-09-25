@@ -38,7 +38,7 @@ session. A sub-phase session reads only this file and its own sub-phase file.
 | D13 | Taste preferences (your clarification) | One number per tag, vibe or category. Auto-learning adds weighted counts, as today. The user never sees numbers, only **off / unset / on**. Setting one by hand writes −1, 0 or +1 and pins it, so learning never overrides a choice the user made. | §7, 2.3 |
 | D14 | `prompts[]` means batching | `ask(string)` returns `string`, and `ask(string[])` returns `string[]`. **By default the array runs as concurrent individual calls**, which is exactly what happens today. `{ batch: true }` uses the provider's native batch API: Gemini Batch Mode, Anthropic Message Batches or OpenAI Batch, each at 50% of standard price. Perplexity has none. **No stage switches to batch in PR 1**, because batch jobs have a 24-hour turnaround and the digest job times out after 20 minutes (§2.4). | 1.6 (built, unused), follow-up (adoption) |
 | D15 | Typed results | `EventData` is the canonical event type in `core` (this also avoids clashing with the DOM's `Event`). `ScrapeResult` carries fetch and parse metadata plus `events: EventData[]`. `LLMResponse` carries `inputTokens`, `outputTokens`, `totalTokens`, `estimatedCostUsd` and more. The pipeline's `SearchCollectResult` carries aggregated LLM usage plus `events: EventData[]`. | §2.4–2.6, 1.2, 1.6, 1.8, 1.11 |
-| D16 | Collection metadata | Each city gets a run record, `data/{city}/run.json` (one writer per file). The feed index `/data/v1/index.json` aggregates them into last collected, next scheduled run, counts and status, which app Settings can show. | §8a, 2.2 |
+| D16 | Collection metadata | **`data/index.json` becomes `data/manifest.json`** (renamed with `git mv`), and its existing per-city fields gain a `collection` block: when the last collection started and finished, status, next scheduled run, providers, source and event counts, and LLM token and cost totals. It also gets a top-level `schedule` block. The per-stage detail lives in `data/{city}/run.json`, one writer per file, flushed as each stage finishes. `publish/pages` (today's `pages.ts`, the manifest's only writer) aggregates those into the manifest. The public feed index `/data/v1/index.json` exposes the non-cost subset for app Settings. | §8a, 2.2 |
 | D17 | Merge method | **Squash** (you don't need merge commits). The cost: `git log --follow` loses continuity for files that were split heavily. Full per-commit history stays on the PR branch, which the plan says not to delete. | §4.3 |
 | D18 | Config scope | Only operator tunables go to YAML. `config-inventory.md` lists every constant (CONFIG / DECIDE / CORE / CODE) for you to decide, and 1.11 applies your decisions. | 1.11 |
 
@@ -441,7 +441,7 @@ unchanged.
 | Source schema (three views) | `core/sources.ts` | 1.11 |
 | `registry`, `llmExtract`, `annotate`, `probe`/`discover`/`triage`/`testUrl`, the promotion half of `render.ts`, the publishing-window helpers from `normalise.ts`, every stage, publish | pipeline `config/`, `stages/`, `search/`, `publish/`, `sources/`, `io/`, `cli/` | 1.11 |
 | `workers/mcp`, copied AI-feed types | `apps/mcp`, `core/aiFeed.ts` | 1.12 |
-| New per-city run record (D16) | pipeline `io/runRecord.ts` → `data/{city}/run.json`; aggregated in `/data/v1/index.json` | 2.2 |
+| `data/index.json` → **`data/manifest.json`** (D16), plus the per-city run record | `git mv`; pipeline `io/runRecord.ts` → `data/{city}/run.json`, aggregated by `publish/pages` into the manifest; public subset in `/data/v1/index.json` | 2.2 |
 
 ## 3. Tooling decisions
 
@@ -497,7 +497,7 @@ It merges before PR 1 starts. PR 1's goldens are recorded after it, so the refac
 | Sub | File | Summary |
 |---|---|---|
 | 2.1 | `phase-2.01-react-19.md` | Web → the Expo SDK's React 19 |
-| 2.2 | `phase-2.02-data-feed.md` | Runtime zod validation, `toFeed()`, per-city run record (D16), `/data/v1/index.json` with a `collection` block, `/data/v1/{slug}.json` |
+| 2.2 | `phase-2.02-data-feed.md` | Runtime zod validation, `toFeed()`, `data/index.json` → `data/manifest.json` with collection metadata (D16), `/data/v1/index.json` and `/data/v1/{slug}.json` |
 | 2.3 | `phase-2.03-shared-behaviour-web.md` | Device-time display, taste v2 (D13) plus migration, web `/settings/` |
 | 2.4 | `phase-2.04-native-scaffold.md` | Expo app, Hermes core spike, feed client, city picker, native CI |
 | 2.5 | `phase-2.05-native-display.md` | Sections/grouping, card, detail, like, share, maps, calendar, theme |
@@ -527,7 +527,7 @@ It merges before PR 1 starts. PR 1's goldens are recorded after it, so the refac
 ### 4.4 Merge windows
 
 - **PR 0 and PR 1** touch workflows or bot-written paths. Merge them between Sunday (after that week's digest and deploy are green) and Friday. **Never between Saturday 18:00 and 23:00 UTC**, because the weekly run starts at 20:00 UTC (R1). Confirm the `digest` concurrency group is idle before merging.
-- **PR 2** also edits `digest.yml` (the run-record `git add`, D16). The same Saturday rule applies.
+- **PR 2** also edits `digest.yml` (the `finalise-run` step, and `git add data/manifest.json`, D16). The same Saturday rule applies.
 
 ### 4.5 Working state per sub-phase
 
@@ -731,37 +731,71 @@ On the web, this page replaces the `PreferencesPane` dialog, and the header gets
 
 ---
 
-## 8a. Collection metadata (D16, PR 2 sub-phase 2.2)
+## 8a. Collection metadata: `data/manifest.json` (D16, PR 2 sub-phase 2.2)
 
-The pipeline writes **one run record per city**, `data/{city}/run.json`. There is one writer per file, so the digest's serial runs can't clobber each other. Most fields come from `SearchCollectResult`/`ScrapeResult` and `llm`'s `usageTotals()`. The record is updated at the end of each digest step, and flushed incrementally so a killed run still leaves a truthful record.
+**What it is today.** `data/index.json` is written only by `src/pages.ts`. It holds
+`generated_at` (a date) and, per city, `key`, `name`, `week_start`, `week_end`, `event_count` and
+`top_pick_count`. The Astro pages read it at build time.
+
+**Change.** Rename it to `data/manifest.json` and extend it, **keeping every existing field unchanged**.
+
+**Trap.** `pages.ts:82`, `markdown.ts:115` and `ai.ts:633` discover city payloads by listing
+`data/*.json` and skipping the literal name `index.json`. A rename without updating those filters
+would parse the manifest as a city. 2.2 replaces the name check with one shared `isCityPayloadFile()`
+helper, and adds a test that the manifest is never treated as a city.
 
 ```jsonc
+// data/manifest.json
 {
   "schema_version": 1,
-  "city": "brisbane",
-  "week_start": "2026-09-28", "week_end": "2026-10-04",
-  "started_at": "…", "completed_at": "…" | null,        // null = run died or is in progress
-  "status": "complete" | "partial" | "failed",
-  "git_sha": "…", "trigger": "schedule" | "workflow_dispatch",
-  "stages": { "collect-adapters": { "ok": true, "durationMs": … }, "collect": { … }, "curate": { … }, "rank": { … } },
-  "events": { "published": 512, "scraped": 340, "search": 280, "deduped_away": 108, "carried_forward": 12 },
-  "sources": { "scraper": 146, "barren": 9, "llm": 60 },
-  "providers": ["google", "perplexity"],
-  "llm": { "calls": …, "inputTokens": …, "outputTokens": …, "totalTokens": …, "estimatedCostUsd": … }   // internal: not exposed in the public feed
+  "generated_at": "2026-09-27",                       // unchanged (date)
+  "generated_at_iso": "2026-09-27T20:14:03Z",         // new
+  "schedule": { "cron": "0 20 * * 6", "timezone": "UTC", "next_collection_at": "2026-10-03T20:00:00Z" },
+  "cities": [
+    {
+      "key": "brisbane", "name": "Brisbane", "week_start": "…", "week_end": "…",
+      "event_count": 718, "top_pick_count": 18,        // unchanged
+      "collection": {                                  // new; null until the city's first run after 2.2 merges
+        "last_run_started_at": "…", "last_collected_at": "…",   // completed_at; null if the run died
+        "status": "complete" | "partial" | "failed",
+        "trigger": "schedule" | "workflow_dispatch", "git_sha": "…",
+        "providers": ["google", "perplexity"],
+        "sources": { "scraper": 146, "barren": 9, "llm": 60 },
+        "events": { "scraped": 340, "search": 280, "deduped_away": 108, "carried_forward": 12, "published": 718 },
+        "llm": { "calls": 412, "inputTokens": …, "outputTokens": …, "totalTokens": …, "estimatedCostUsd": 1.87 },
+        "stages": { "collect-adapters": { "ok": true, "durationMs": … }, "collect": { … }, "curate": { … }, "rank": { … } }
+      }
+    }
+  ]
 }
 ```
 
-`digest.yml`'s commit step adds `data/${CITY}/run.json`. It already adds `data/${CITY}/`, so it's covered, but 2.2 checks this.
+**How it's written: one writer per file.**
 
-The web build's `/data/v1/index.json` aggregates the records per city into a public `collection` block:
+- **During a run**, each stage updates `data/{city}/run.json`, the city's own record. It's flushed after every stage, so a killed run leaves a truthful partial record.
+  - Counts come from the typed results (`ScrapeResult`, `SearchCollectResult`, `StageReport`).
+  - Token and cost totals come from `llm`'s `usageTotals()`.
+  - A `finalise-run` step (`if: always()` in `digest.yml`) sets `completed_at` and `status`.
+- **`publish/pages`**, the manifest's only writer, then copies every city's `run.json` into its `collection` block and computes `schedule.next_collection_at` from `pipeline.yml`'s `schedule.weekly`. A test pins that value to `weekly.yml`'s cron.
+- `data/` isn't served, so cost figures in the manifest stay internal.
 
-- `last_collected_at`, `status`, `events.published`
-- **`next_collection_at`**, computed at build time from the weekly schedule. The deploy rebuilds daily, so this stays current.
-  - The schedule is `0 20 * * 6` UTC in `pipeline.yml`'s `schedule.weekly`.
-  - A test asserts it matches `.github/workflows/weekly.yml`'s cron, so the two can't drift apart.
+**Public subset.** The feed endpoint `/data/v1/index.json` emits, per city:
+
+- `collection.last_collected_at`
+- `collection.status`
+- `collection.events.published`
+- `next_collection_at`, **recomputed at build time**, so the daily deploy keeps it current even if a digest fails
 - `data_as_of`
 
-Token and cost figures stay internal. App Settings shows "Updated Sun 06:02 · next update Sun 5 Oct, 6:00 am" (in device time) and the event count.
+It never includes tokens, cost, git SHA or stage detail. App Settings → About shows "Updated Sun 06:02 · next update Sun 5 Oct, 6:00 am" in device time.
+
+**Readers updated by the rename:**
+
+- the web's `src/lib/paths.ts` existence check, and the six pages that read the index
+- `digest.yml`'s `git add` (`data/index.json` → `data/manifest.json`)
+- `CLAUDE.md`
+
+The Astro pages keep reading only the fields they read today.
 
 ## 9. Proving "no functional change" in PR 1
 
