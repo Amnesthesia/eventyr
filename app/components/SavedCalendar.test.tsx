@@ -6,12 +6,12 @@
 // wiring breaks.
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { City, CityData, Event } from "@dothingslol/core/schema";
+import type { City, CityData, EventData } from "@dothingslol/core/schema";
 import { renderToStaticMarkup } from "react-dom/server";
 import { EventsProvider } from "../context";
 import SavedCalendar from "./SavedCalendar";
 
-function ev(partial: Partial<Event>): Event {
+function ev(partial: Partial<EventData>): EventData {
 	return {
 		title: "Lebanon Hanover",
 		datetime: "Thu 17 Sep, 7:00 PM",
@@ -26,6 +26,11 @@ function ev(partial: Partial<Event>): Event {
 		datetime_iso: "2026-09-17T19:00:00",
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 		...partial,
 	};
 }
@@ -61,7 +66,7 @@ const CITIES: City[] = [
 	},
 ];
 
-function render(events: Event[]) {
+function render(events: EventData[]) {
 	return renderToStaticMarkup(
 		<EventsProvider initialData={CITY_DATA} allCities={CITIES}>
 			<SavedCalendar events={events} onClose={() => {}} />

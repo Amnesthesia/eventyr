@@ -6,7 +6,7 @@
 // gig-shaped from 5pm. Splitting at 8/16 would have filed a 4pm matinee as
 // evening and a 5pm gig as afternoon.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 
 export const TIME_BANDS = ["morning", "afternoon", "evening"] as const;
 export type TimeBand = (typeof TIME_BANDS)[number];
@@ -32,7 +32,7 @@ const BAND_HOURS: Record<TimeBand, [number, number]> = {
  * 00:00 would file every one of them as "evening" — so they match no band and
  * are kept by any filter rather than being silently binned into one.
  */
-export function bandOf(event: Event): TimeBand | null {
+export function bandOf(event: EventData): TimeBand | null {
 	const iso = event.datetime_iso ?? "";
 	// "2026-09-09T19:00:00" — a time is present only if the T-part is.
 	const time = iso.length > 10 ? iso.slice(11, 13) : "";
@@ -56,7 +56,7 @@ export function bandOf(event: Event): TimeBand | null {
  * answer to it. Roughly a third of listings are date-only, so this filter cuts
  * hard — which is the point of choosing a band at all.
  */
-export function matchesTimeBands(event: Event, bands: TimeBand[]): boolean {
+export function matchesTimeBands(event: EventData, bands: TimeBand[]): boolean {
 	if (bands.length === 0) return true;
 	const band = bandOf(event);
 	if (band === null) return false;

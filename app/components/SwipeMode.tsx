@@ -12,7 +12,7 @@
 // the undone event to the front until the next swipe — it would otherwise
 // reappear at its sorted position, possibly hundreds of cards deep.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { Bookmark, RotateCcw, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { eventId, useEventsContext } from "../context";
@@ -67,17 +67,17 @@ export default function SwipeMode({ onClose }: Props) {
 		() => [...new Set(cityData.events.map((e) => e.category))].sort(),
 		[cityData],
 	);
-	const [history, setHistory] = useState<{ event: Event; verdict: Verdict }[]>(
-		[],
-	);
-	const [restored, setRestored] = useState<Event | null>(null);
+	const [history, setHistory] = useState<
+		{ event: EventData; verdict: Verdict }[]
+	>([]);
+	const [restored, setRestored] = useState<EventData | null>(null);
 	const [dx, setDx] = useState(0);
 	const [dragging, setDragging] = useState(false);
 	const [leaving, setLeaving] = useState<Verdict | null>(null);
 	const origin = useRef<number | null>(null);
 	const moved = useRef(false);
 
-	const current: Event | undefined =
+	const current: EventData | undefined =
 		restored && deck.includes(restored) ? restored : deck[0];
 
 	// Whether it is on tonight or next month usually decides the swipe, and

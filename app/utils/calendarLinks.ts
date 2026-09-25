@@ -9,7 +9,7 @@
 // length. Google is told the zone separately via `ctz`; Outlook takes the
 // offset inline, which `isoWithOffset` already builds for schema.org.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventPath, isoWithOffset, SITE_URL } from "@dothingslol/core/shared";
 
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
@@ -33,7 +33,7 @@ function addDays(dateOnly: string, days: number): string {
  * timed event with no end runs for two hours. Null when there is no usable
  * date, so a caller offers nothing rather than a broken link.
  */
-function span(event: Event): { start: string; end: string } | null {
+function span(event: EventData): { start: string; end: string } | null {
 	const start = (event.datetime_iso || "").trim();
 	const rawEnd = (event.datetime_end_iso || "").trim();
 	if (DATE_ONLY.test(start)) {
@@ -55,12 +55,12 @@ function span(event: Event): { start: string; end: string } | null {
 
 /** The event's own page, which is where the description points when the
  * source gave us no link of its own. */
-function eventUrl(event: Event, cityKey: string): string {
+function eventUrl(event: EventData, cityKey: string): string {
 	return event.link || `${SITE_URL}${eventPath(cityKey, event)}`;
 }
 
 export function googleCalendarUrl(
-	event: Event,
+	event: EventData,
 	cityKey: string,
 	timezone: string,
 ): string | null {
@@ -80,7 +80,7 @@ export function googleCalendarUrl(
 }
 
 export function outlookCalendarUrl(
-	event: Event,
+	event: EventData,
 	cityKey: string,
 	timezone: string,
 ): string | null {
@@ -109,7 +109,10 @@ export function outlookCalendarUrl(
  * A real URL rather than a Blob on purpose: iOS Safari hands a .ics URL
  * straight to Calendar with no download step, which a blob: URL does not do.
  */
-export function appleCalendarUrl(event: Event, cityKey: string): string | null {
+export function appleCalendarUrl(
+	event: EventData,
+	cityKey: string,
+): string | null {
 	if (!event.datetime_iso) return null;
 	// Root-relative, not absolute: this is our own file, and hard-coding
 	// SITE_URL sent every local click to production, where a file the dev
@@ -136,7 +139,7 @@ export interface CalendarLink {
  * than offered and broken.
  */
 export function calendarLinks(
-	event: Event,
+	event: EventData,
 	cityKey: string,
 	timezone: string,
 ): CalendarLink[] {

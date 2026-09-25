@@ -1,8 +1,8 @@
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 
 export interface StoredStarredItem {
 	id: string;
-	event: Event;
+	event: EventData;
 	notifyTime?: number;
 	notified1h?: boolean;
 }
@@ -32,7 +32,7 @@ function openDb(): Promise<IDBDatabase> {
 
 export async function putStarredEvent(
 	id: string,
-	event: Event,
+	event: EventData,
 	notifyTime?: number,
 ): Promise<void> {
 	try {

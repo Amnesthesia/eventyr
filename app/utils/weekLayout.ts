@@ -4,7 +4,7 @@
 // which hours the grid has to cover, how far down a lane a 7:30pm start
 // belongs — can be checked without rendering anything.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { addDays, eventOverlapsRange } from "./dates";
 
 /** The lane the grid draws when nothing pins it wider. Most events fall inside
@@ -13,7 +13,7 @@ export const DEFAULT_FIRST_HOUR = 8;
 export const DEFAULT_LAST_HOUR = 23;
 
 export interface TimedPlacement {
-	event: Event;
+	event: EventData;
 	/** Minutes past midnight, local to the city — the value the grid offsets by. */
 	minutes: number;
 }
@@ -24,7 +24,7 @@ export interface DayLane {
 }
 
 export interface AllDayBar {
-	event: Event;
+	event: EventData;
 	/** 1-based CSS grid column of the first day it covers in this week. */
 	startCol: number;
 	/** 1-based column AFTER the last day it covers, i.e. grid-column end. */
@@ -50,7 +50,7 @@ export interface WeekLayout {
  * datetime_iso is a naive wall-clock string, so this reads the characters
  * rather than constructing a Date — parsing it would apply the viewer's own
  * timezone to a value that is already local to the city. */
-export function startMinutes(event: Event): number | null {
+export function startMinutes(event: EventData): number | null {
 	const iso = event.datetime_iso || "";
 	if (iso.length <= 10) return null;
 	const hours = Number(iso.slice(11, 13));
@@ -68,18 +68,18 @@ export function startMinutes(event: Event): number | null {
  * opened in, which is the week the calendar would then jump to. The opening
  * time still shows in the bar's tooltip, where it belongs.
  */
-export function isRun(event: Event): boolean {
+export function isRun(event: EventData): boolean {
 	const start = (event.datetime_iso || "").slice(0, 10);
 	const end = (event.datetime_end_iso || "").slice(0, 10);
 	return !!start && !!end && end > start;
 }
 
 /** Placed at an hour on the grid, rather than as a bar over whole days. */
-function isTimedSlot(event: Event): boolean {
+function isTimedSlot(event: EventData): boolean {
 	return startMinutes(event) !== null && !isRun(event);
 }
 
-export function weekLayout(events: Event[], weekStart: string): WeekLayout {
+export function weekLayout(events: EventData[], weekStart: string): WeekLayout {
 	const days = Array.from({ length: 7 }, (_, i) => addDays(weekStart, i));
 	const weekEnd = days[6];
 
@@ -135,7 +135,7 @@ export function offsetPercent(
  * saved events it is a loop over nothing.
  */
 function packAllDay(
-	events: Event[],
+	events: EventData[],
 	days: string[],
 ): { allDayBars: AllDayBar[]; allDayLanes: number } {
 	const weekStart = days[0];

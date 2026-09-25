@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import {
 	appleCalendarUrl,
 	calendarLinks,
@@ -10,7 +10,7 @@ import {
 
 const BNE = "Australia/Brisbane";
 
-function ev(partial: Partial<Event>): Event {
+function ev(partial: Partial<EventData>): EventData {
 	return {
 		title: "Lebanon Hanover",
 		datetime: "Thu 17 Sep, 7:00 PM",
@@ -25,6 +25,11 @@ function ev(partial: Partial<Event>): Event {
 		datetime_iso: "2026-09-17T19:00:00",
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 		...partial,
 	};
 }

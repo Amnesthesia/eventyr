@@ -1,7 +1,7 @@
 // Splits the event list into labelled groups, so a 300-event page can be read
 // as "Thursday has these sixty" rather than as one undifferentiated grid.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { CATEGORIES } from "@dothingslol/core/shared";
 import { catToSlug } from "./categorySlug";
 import { addDays, todayIso } from "./dates";
@@ -15,7 +15,7 @@ export interface EventGroup {
 	label: string;
 	/** Category slug, so a category group's heading can carry its accent. */
 	cat?: string;
-	events: Event[];
+	events: EventData[];
 }
 
 /** The span of dates the page is actually showing: today through the end of
@@ -90,7 +90,7 @@ export function dateLabel(iso: string, today: string): string {
 	return `${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}${year}`;
 }
 
-function startDate(event: Event): string {
+function startDate(event: EventData): string {
 	return (event.datetime_iso ?? "").slice(0, 10);
 }
 
@@ -98,7 +98,7 @@ function startDate(event: Event): string {
  * tie falls back to file order, and inside a date group every date-only event
  * ties with every other — so a score-2 event could sit above a score-9 one for
  * no reason a reader can see. */
-function byScore(a: Event, b: Event): number {
+function byScore(a: EventData, b: EventData): number {
 	return (b.score || 0) - (a.score || 0);
 }
 
@@ -118,14 +118,14 @@ function byScore(a: Event, b: Event): number {
  * events.
  */
 function withPrefs(
-	compare: (a: Event, b: Event) => number,
+	compare: (a: EventData, b: EventData) => number,
 	prefs: TagPrefs,
-): (a: Event, b: Event) => number {
+): (a: EventData, b: EventData) => number {
 	if (!hasTagPrefs(prefs)) return compare;
 	return (a, b) => prefTier(b, prefs) - prefTier(a, prefs) || compare(a, b);
 }
 
-function byStartTime(a: Event, b: Event): number {
+function byStartTime(a: EventData, b: EventData): number {
 	const cmp = (a.datetime_iso || "9999").localeCompare(
 		b.datetime_iso || "9999",
 	);
@@ -135,7 +135,7 @@ function byStartTime(a: Event, b: Event): number {
 /** Descending score, then up the day. Within a day the reader is choosing what
  * to do, not reading a timetable — a 9 at 8pm should lead a 3 at 10am. Time
  * only breaks ties, so each score band still reads in order. */
-function byScoreThenStart(a: Event, b: Event): number {
+function byScoreThenStart(a: EventData, b: EventData): number {
 	const cmp = byScore(a, b);
 	return cmp !== 0
 		? cmp
@@ -144,7 +144,7 @@ function byScoreThenStart(a: Event, b: Event): number {
 
 /** Ascending by end date: for something already running when the window
  * opened, a start time months ago says nothing, but "closes soonest" does. */
-function byEndDate(a: Event, b: Event): number {
+function byEndDate(a: EventData, b: EventData): number {
 	const cmp = (a.datetime_end_iso || "9999").localeCompare(
 		b.datetime_end_iso || "9999",
 	);
@@ -152,7 +152,7 @@ function byEndDate(a: Event, b: Event): number {
 }
 
 function groupByDate(
-	events: Event[],
+	events: EventData[],
 	window: DateWindow,
 	today: string,
 	prefs: TagPrefs,
@@ -161,10 +161,10 @@ function groupByDate(
 	// exactly one of them — keyed on its start date. A run that opened before
 	// the window is "Ongoing" rather than being repeated under every date it
 	// covers, which is the noise this replaced.
-	const byDay = new Map<string, Event[]>();
-	const ongoing: Event[] = [];
-	const later: Event[] = [];
-	const undated: Event[] = [];
+	const byDay = new Map<string, EventData[]>();
+	const ongoing: EventData[] = [];
+	const later: EventData[] = [];
+	const undated: EventData[] = [];
 
 	for (const event of events) {
 		const start = startDate(event);
@@ -216,7 +216,7 @@ function groupByDate(
 }
 
 export function groupEvents(
-	events: Event[],
+	events: EventData[],
 	mode: GroupBy,
 	window: DateWindow,
 	today: string = todayIso(),
@@ -225,7 +225,7 @@ export function groupEvents(
 	if (mode === "none") return [{ key: "all", label: "", events }];
 	if (mode === "date") return groupByDate(events, window, today, prefs);
 
-	const buckets = new Map<string, Event[]>();
+	const buckets = new Map<string, EventData[]>();
 	for (const event of events) {
 		const key = event.category || "";
 		buckets.set(key, [...(buckets.get(key) ?? []), event]);

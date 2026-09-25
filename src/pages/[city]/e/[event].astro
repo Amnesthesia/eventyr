@@ -13,7 +13,7 @@ import { Fragment } from "astro/jsx-runtime";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import Base from "../../../layouts/Base.astro";
-import type { CityData, CityIndex, Event } from "@dothingslol/core/schema";
+import type { CityData, CityIndex, EventData } from "@dothingslol/core/schema";
 import { SLUG_TO_KEY } from "@react/utils/citySlug";
 import { catShortName, catToSlug } from "@react/utils/categorySlug";
 import {
@@ -129,7 +129,7 @@ const schema = {
 	isAccessibleForFree: cost === "free" || undefined,
 };
 
-const vibes = vibesOf(event as Event);
+const vibes = vibesOf(event as EventData);
 
 ---
 

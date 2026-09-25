@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { tagWeight, tagWeights } from "./tagSpecificity";
 
-function ev(tags: string[]): Event {
+function ev(tags: string[]): EventData {
 	return {
 		title: "",
 		datetime: "",
@@ -18,6 +18,11 @@ function ev(tags: string[]): Event {
 		datetime_iso: "",
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 	};
 }
 

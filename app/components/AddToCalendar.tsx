@@ -10,7 +10,7 @@
 // the full list is one gesture away: right-click here, or long-press the card,
 // which opens CardActionSheet with the same four rows.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { CalendarPlus } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useEventsContext } from "../context";
@@ -20,7 +20,7 @@ import { type CalendarTarget, calendarTarget } from "../utils/platform";
 import { noteInterest } from "../utils/taste";
 
 interface Props {
-	event: Event;
+	event: EventData;
 	cityKey: string;
 	/** Shown next to the icon. Omit for the icon-only version used on cards. */
 	label?: string;

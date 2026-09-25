@@ -16,7 +16,7 @@
 //   * TEXT values need escaping and long lines need folding, or clients reject
 //     the file.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventHash, eventPath, SITE_URL } from "@dothingslol/core/shared";
 
 const TIMED = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/;
@@ -57,7 +57,7 @@ function fold(line: string): string {
 
 /** The VEVENT block for one event, or null when it has no usable date. */
 function eventLines(
-	event: Event,
+	event: EventData,
 	cityKey: string,
 	timezone: string,
 ): string[] | null {
@@ -108,7 +108,7 @@ function eventLines(
  * X-WR-CALNAME, which is what Apple/Google show when the file is imported.
  */
 export function buildIcs(
-	events: Event[],
+	events: EventData[],
 	cityKey: string,
 	{ timezone, name }: { timezone: string; name?: string },
 ): string | null {
@@ -129,7 +129,7 @@ export function buildIcs(
 }
 
 export function buildEventIcs(
-	event: Event,
+	event: EventData,
 	cityKey: string,
 	timezone: string,
 ): string | null {
@@ -137,7 +137,7 @@ export function buildEventIcs(
 }
 
 /** Filename-safe, and obviously about this event when it lands in Downloads. */
-export function icsFilename(event: Event): string {
+export function icsFilename(event: EventData): string {
 	const name =
 		(event.title || "event")
 			.toLowerCase()
@@ -154,7 +154,7 @@ export function icsFilename(event: Event): string {
  * the hydrated render.
  */
 export function downloadEventIcs(
-	event: Event,
+	event: EventData,
 	cityKey: string,
 	timezone: string,
 ): boolean {

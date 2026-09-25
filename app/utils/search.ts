@@ -5,7 +5,7 @@
 // already-in-memory objects on every keystroke. What is needed is exactly two
 // rules — tokens match in any order, and a token may be one edit out.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 
 /**
  * Lowercased, diacritics stripped, punctuation flattened to spaces.
@@ -23,7 +23,7 @@ export function normalise(text: string): string {
 }
 
 /** Everything a reader might search on, in one normalised string. */
-export function haystackFor(event: Event): string {
+export function haystackFor(event: EventData): string {
 	return normalise(
 		[
 			event.title,
@@ -106,7 +106,7 @@ export function queryTokens(query: string): string[] {
  * Twilight Market". AND rather than OR because each extra word a reader types
  * is meant to narrow the list, not widen it.
  */
-export function matchesQuery(event: Event, tokens: string[]): boolean {
+export function matchesQuery(event: EventData, tokens: string[]): boolean {
 	if (tokens.length === 0) return true;
 	const haystack = haystackFor(event);
 	const words = haystack.split(" ");

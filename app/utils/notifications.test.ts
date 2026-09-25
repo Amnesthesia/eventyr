@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import {
 	calculate1hReminderTime,
 	filterEventsForMorningDigest,
@@ -8,7 +8,7 @@ import {
 	formatMorningDigest,
 } from "./notifications";
 
-function makeEvent(partial: Partial<Event>): Event {
+function makeEvent(partial: Partial<EventData>): EventData {
 	return {
 		title: "Test Event",
 		datetime: "",
@@ -23,6 +23,11 @@ function makeEvent(partial: Partial<Event>): Event {
 		datetime_iso: "",
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 		...partial,
 	};
 }
@@ -62,7 +67,7 @@ test("formatEventTime formats 12-hour time correctly", () => {
 
 test("filterEventsForMorningDigest filters events active today", () => {
 	const today = "2026-09-07";
-	const events: Event[] = [
+	const events: EventData[] = [
 		makeEvent({
 			title: "Today Event",
 			datetime_iso: "2026-09-07T11:00:00",

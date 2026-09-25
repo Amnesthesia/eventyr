@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import {
 	haystackFor,
 	matchesQuery,
@@ -9,7 +9,7 @@ import {
 	withinOneEdit,
 } from "./search";
 
-function ev(partial: Partial<Event>): Event {
+function ev(partial: Partial<EventData>): EventData {
 	return {
 		title: "",
 		datetime: "",
@@ -24,11 +24,16 @@ function ev(partial: Partial<Event>): Event {
 		datetime_iso: "",
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 		...partial,
 	};
 }
 
-const match = (e: Event, q: string) => matchesQuery(e, queryTokens(q));
+const match = (e: EventData, q: string) => matchesQuery(e, queryTokens(q));
 
 test("normalise folds case, diacritics and punctuation", () => {
 	assert.equal(normalise("Café  Cabaret!"), "cafe cabaret");

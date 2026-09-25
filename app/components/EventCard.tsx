@@ -1,4 +1,4 @@
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { costLabel, stripForDisplay } from "@dothingslol/core/shared";
 import { CalendarDays, ExternalLink, MapPin } from "lucide-react";
 import { useState } from "react";
@@ -27,7 +27,7 @@ import ShareButton from "./ShareButton";
 const DESC_CLAMP_CHARS = 240;
 
 interface Props {
-	event: Event;
+	event: EventData;
 	isTopPick: boolean;
 	isPast: boolean;
 	isStarred: boolean;
@@ -236,7 +236,7 @@ export default function EventCard({
 					<p className="card-desc card-desc--plain">{description}</p>
 				))}
 			<div className="card-bottom">
-				{event.score > 0 && (
+				{event.score !== null && event.score > 0 && (
 					// Outside .card-tags on purpose: that row scrolls horizontally, and
 					// the score must not be able to scroll out of view.
 					<span

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { tagWeights } from "./tagSpecificity";
 import {
 	bumpDislike,
@@ -16,7 +16,7 @@ import {
 	tasteBoost,
 } from "./taste";
 
-function ev(partial: Partial<Event>): Event {
+function ev(partial: Partial<EventData>): EventData {
 	return {
 		title: "",
 		datetime: "",
@@ -31,6 +31,11 @@ function ev(partial: Partial<Event>): Event {
 		datetime_iso: "",
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 		...partial,
 	};
 }
@@ -247,12 +252,12 @@ test("an explicit tag preference outranks any score", () => {
 		title: "Members Raffle",
 		score: 9,
 		tags: ["raffle"],
-	} as Event;
+	} as EventData;
 	const talk = {
 		title: "AI Ethics Talk",
 		score: 5,
 		tags: ["lecture"],
-	} as Event;
+	} as EventData;
 	const ranked = rankByTaste([raffle, talk], {}, { raffle: -1 });
 	assert.deepEqual(
 		ranked.map((e) => e.title),
@@ -261,8 +266,12 @@ test("an explicit tag preference outranks any score", () => {
 });
 
 test("a wanted tag sorts first even on a lower score", () => {
-	const wanted = { title: "Board Games", score: 5, tags: ["games"] } as Event;
-	const higher = { title: "Big Gig", score: 9, tags: ["music"] } as Event;
+	const wanted = {
+		title: "Board Games",
+		score: 5,
+		tags: ["games"],
+	} as EventData;
+	const higher = { title: "Big Gig", score: 9, tags: ["music"] } as EventData;
 	const ranked = rankByTaste([higher, wanted], {}, { games: 1 });
 	assert.deepEqual(
 		ranked.map((e) => e.title),
@@ -277,8 +286,12 @@ test("unwanted beats wanted when an event carries both", () => {
 		title: "Raffle + Live Music",
 		score: 8,
 		tags: ["raffle", "music"],
-	} as Event;
-	const plain = { title: "Quiet Reading", score: 4, tags: ["books"] } as Event;
+	} as EventData;
+	const plain = {
+		title: "Quiet Reading",
+		score: 4,
+		tags: ["books"],
+	} as EventData;
 	const ranked = rankByTaste([both, plain], {}, { raffle: -1, music: 1 });
 	assert.deepEqual(
 		ranked.map((e) => e.title),
@@ -287,8 +300,8 @@ test("unwanted beats wanted when an event carries both", () => {
 });
 
 test("no stated preference leaves the incoming order alone", () => {
-	const a = { title: "A", score: 7, tags: ["x"] } as Event;
-	const b = { title: "B", score: 7, tags: ["y"] } as Event;
+	const a = { title: "A", score: 7, tags: ["x"] } as EventData;
+	const b = { title: "B", score: 7, tags: ["y"] } as EventData;
 	assert.deepEqual(
 		rankByTaste([a, b], {}, {}).map((e) => e.title),
 		["A", "B"],
@@ -299,7 +312,7 @@ test("rating tags personalises the profile with no bookmarks at all", () => {
 	// Preferences used to be a sort tier only, so the profile never learned
 	// from them and the taste readout kept reporting "not personalised" however
 	// many tags had been rated.
-	const comedy = { title: "Comedy", score: 5, tags: ["comedy"] } as Event;
+	const comedy = { title: "Comedy", score: 5, tags: ["comedy"] } as EventData;
 	assert.equal(tasteBoost(comedy, {}), 0, "an empty profile boosts nothing");
 	const stated = effectiveTaste({}, { comedy: 1 });
 	assert.ok(
@@ -311,7 +324,11 @@ test("rating tags personalises the profile with no bookmarks at all", () => {
 test("an unwanted tag is removed from the profile, not just outranked", () => {
 	// Bookmarking karaoke then saying "less karaoke" has to actually undo the
 	// learned weight, or the profile keeps recommending it inside its band.
-	const karaoke = { title: "Karaoke", score: 6, tags: ["karaoke"] } as Event;
+	const karaoke = {
+		title: "Karaoke",
+		score: 6,
+		tags: ["karaoke"],
+	} as EventData;
 	const learned = { "tag:karaoke": 4, "cat:Concert / Music": 4 };
 	assert.ok(tasteBoost(karaoke, learned) > 0);
 	assert.equal(
@@ -321,8 +338,12 @@ test("an unwanted tag is removed from the profile, not just outranked", () => {
 });
 
 test("within a band, more wanted tags ranks higher", () => {
-	const two = { title: "Two", score: 5, tags: ["comedy", "improv"] } as Event;
-	const one = { title: "One", score: 5, tags: ["comedy"] } as Event;
+	const two = {
+		title: "Two",
+		score: 5,
+		tags: ["comedy", "improv"],
+	} as EventData;
+	const one = { title: "One", score: 5, tags: ["comedy"] } as EventData;
 	const ranked = rankByTaste([one, two], {}, { comedy: 1, improv: 1 });
 	assert.deepEqual(
 		ranked.map((e) => e.title),
@@ -351,7 +372,7 @@ const jazzNight = ev({
 /** A city where "music" is common but each event's other tags are unique —
  * the shape every real city's data has (a handful of broad category tags,
  * many narrow ones). */
-function musicCityEvents(fillerCount: number): Event[] {
+function musicCityEvents(fillerCount: number): EventData[] {
 	const filler = Array.from({ length: fillerCount }, (_, i) =>
 		ev({
 			title: `filler${i}`,

@@ -15,7 +15,7 @@
 // events to the browser, so the receiving page can resolve the ids with no
 // network call and no new route.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventHash, KEY_TO_SLUG, SITE_URL } from "@dothingslol/core/shared";
 
 const PARAM = "cal";
@@ -28,7 +28,7 @@ const SEPARATOR = ".";
  */
 export const QR_EVENT_LIMIT = 60;
 
-export function savedCalendarUrl(events: Event[], cityKey: string): string {
+export function savedCalendarUrl(events: EventData[], cityKey: string): string {
 	const citySlug = KEY_TO_SLUG[cityKey] ?? cityKey;
 	const ids = events.map((e) => eventHash(cityKey, e)).join(SEPARATOR);
 	return `${SITE_URL}/${citySlug}/#${PARAM}=${ids}`;
@@ -54,11 +54,11 @@ export function parseSavedIds(hash: string): string[] | null {
  */
 export function eventsFromIds(
 	ids: string[],
-	events: Event[],
+	events: EventData[],
 	cityKey: string,
-): Event[] {
+): EventData[] {
 	const byHash = new Map(events.map((e) => [eventHash(cityKey, e), e]));
 	return ids
 		.map((id) => byHash.get(id))
-		.filter((e): e is Event => e !== undefined);
+		.filter((e): e is EventData => e !== undefined);
 }

@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { offsetPercent, startMinutes, weekLayout } from "./weekLayout";
 
-function ev(partial: Partial<Event>): Event {
+function ev(partial: Partial<EventData>): EventData {
 	return {
 		title: "x",
 		datetime: "",
@@ -18,6 +18,11 @@ function ev(partial: Partial<Event>): Event {
 		datetime_iso: "",
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 		...partial,
 	};
 }

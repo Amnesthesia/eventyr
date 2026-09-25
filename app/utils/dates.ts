@@ -117,7 +117,7 @@ export function displayDatetime(
 	event: {
 		datetime?: string;
 		datetime_iso?: string;
-		datetime_end_iso?: string;
+		datetime_end_iso?: string | null;
 	},
 	today: string,
 ): string {

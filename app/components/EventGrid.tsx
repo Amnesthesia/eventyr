@@ -1,9 +1,9 @@
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventId, useEventsContext } from "../context";
 import EventCard from "./EventCard";
 
 interface Props {
-	events: Event[];
+	events: EventData[];
 	isTopPick: boolean;
 }
 

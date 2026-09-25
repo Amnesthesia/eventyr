@@ -2,7 +2,7 @@ import type {
 	City,
 	CityData,
 	DateRange,
-	Event,
+	EventData,
 	PastFilter,
 	VibeKey,
 } from "@dothingslol/core/schema";
@@ -60,15 +60,15 @@ import { matchesTimeBands, type TimeBand } from "./utils/timeOfDay";
 
 /** The identity saved/hidden sets are keyed by. Not eventHash: stars already
  * in people's localStorage use this basis, and changing it would lose them. */
-export function eventId(event: Event): string {
+export function eventId(event: EventData): string {
 	return event.title + event.datetime_iso;
 }
 
 interface EventsContextValue {
 	cityData: CityData;
-	filtered: Event[];
+	filtered: EventData[];
 	/** Events that pass every filter except the score floor. */
-	lowScored: Event[];
+	lowScored: EventData[];
 	cities: City[];
 	cityKey: string;
 	setCity: (key: string) => void;
@@ -138,12 +138,12 @@ interface EventsContextValue {
 	/** Bookmark/share/calendar counts per tag, vibe and category. Exposed so
 	 * the swipe deck can order itself the same way the picks row does. */
 	taste: TasteProfile;
-	starredEvents: Event[];
-	picks: Event[];
-	rest: Event[];
+	starredEvents: EventData[];
+	picks: EventData[];
+	rest: EventData[];
 	weekStart: string;
 	weekEnd: string;
-	isEventPast: (event: Event) => boolean;
+	isEventPast: (event: EventData) => boolean;
 	/** "" until corrected client-side post-mount (see isEventPast above) — a
 	 * grouping/window calculation that needs "today" must use this rather than
 	 * calling todayIso() itself, or it disagrees between the build-time and
@@ -453,7 +453,7 @@ export function EventsProvider({
 	}, []);
 
 	const isEventPast = useCallback(
-		(event: Event): boolean => {
+		(event: EventData): boolean => {
 			const end = (event.datetime_end_iso || event.datetime_iso || "").slice(
 				0,
 				10,
@@ -470,7 +470,7 @@ export function EventsProvider({
 		// The score floor is applied last, so the ones it alone removed can be
 		// counted — "N low-scoring events hidden" must not include events the
 		// reader's other filters would have dropped anyway.
-		const lowScored: Event[] = [];
+		const lowScored: EventData[] = [];
 		const filtered = cityData.events.filter((event) => {
 			if (!passesOtherFilters(event)) return false;
 			// An unscored event is never hidden by this filter — ranking can be
@@ -484,7 +484,7 @@ export function EventsProvider({
 		});
 		return { filtered, lowScored };
 
-		function passesOtherFilters(event: Event): boolean {
+		function passesOtherFilters(event: EventData): boolean {
 			if (hidden.has(eventId(event))) return false;
 			if (!matchesQuery(event, tokens)) return false;
 			const catOk = activeCat === "All" || event.category === activeCat;
@@ -564,8 +564,8 @@ export function EventsProvider({
 	}, [cityData]);
 
 	const { starredEvents, picks, rest } = useMemo(() => {
-		const starredEvents: Event[] = [];
-		const eligible: Event[] = [];
+		const starredEvents: EventData[] = [];
+		const eligible: EventData[] = [];
 		// A pick has to START inside the selected dates, not merely overlap them.
 		// The date filter itself is deliberately an overlap test — that is what
 		// makes selecting the last two days of a festival work — but it also
@@ -581,7 +581,7 @@ export function EventsProvider({
 			start: dateRange?.start ?? cityData?.week_start ?? "",
 			end: dateRange?.end ?? cityData?.week_end ?? "",
 		};
-		const unstarred: Event[] = [];
+		const unstarred: EventData[] = [];
 		filtered.forEach((e) => {
 			// A saved event lives only in the "saved" section once it's starred —
 			// it used to fall through into picks/rest too, so the exact same card

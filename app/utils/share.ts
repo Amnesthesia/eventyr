@@ -1,12 +1,12 @@
 // Sharing one event, as a function rather than only inside a button, so the
 // card's long-press sheet and the Share button behave identically.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventPath, SITE_URL } from "@dothingslol/core/shared";
 
 export type ShareOutcome = "shared" | "copied" | "cancelled" | "failed";
 
-export function eventUrl(event: Event, cityKey: string): string {
+export function eventUrl(event: EventData, cityKey: string): string {
 	// Absolute, and from SITE_URL rather than window.location: a link copied
 	// while running the dev server has to be shareable, not a localhost URL.
 	return `${SITE_URL}${eventPath(cityKey, event)}`;
@@ -35,7 +35,7 @@ export async function shareUrl(
 }
 
 export async function shareEvent(
-	event: Event,
+	event: EventData,
 	cityKey: string,
 ): Promise<ShareOutcome> {
 	return shareUrl(eventUrl(event, cityKey), event.title);

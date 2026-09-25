@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { startOfWeek } from "./dates";
 import { dateLabel, dateWindowFor, groupEvents } from "./grouping";
 
@@ -8,7 +8,7 @@ const WINDOW = { from: "2026-09-03", to: "2026-09-13" };
 // Frozen, so the "Today"/"Tomorrow" labels do not depend on the clock.
 const TODAY = "2026-09-01";
 
-function ev(partial: Partial<Event>): Event {
+function ev(partial: Partial<EventData>): EventData {
 	return {
 		title: "x",
 		datetime: "",
@@ -23,6 +23,11 @@ function ev(partial: Partial<Event>): Event {
 		datetime_iso: "",
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 		...partial,
 	};
 }
@@ -251,7 +256,7 @@ test("stated preferences sort within each date group", () => {
 			title,
 			tags,
 			datetime_iso: `2026-09-08T${String(hour).padStart(2, "0")}:00:00`,
-		}) as Event;
+		}) as EventData;
 
 	// Raffle is earliest, so time order alone would put it first.
 	const events = [

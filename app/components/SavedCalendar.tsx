@@ -9,7 +9,7 @@
 // from a laptop to a phone — or from one person to another — that does not
 // involve emailing yourself a file.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventPath } from "@dothingslol/core/shared";
 import {
 	BookmarkPlus,
@@ -32,7 +32,7 @@ import { offsetPercent, weekLayout } from "../utils/weekLayout";
 import SavedCalendarQr from "./SavedCalendarQr";
 
 interface Props {
-	events: Event[];
+	events: EventData[];
 	/** Set when the modal was opened from a shared link rather than from this
 	 * browser's own saved list — the events are someone else's until kept. */
 	shared?: boolean;

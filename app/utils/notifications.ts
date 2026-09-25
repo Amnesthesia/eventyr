@@ -1,4 +1,4 @@
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventPath } from "@dothingslol/core/shared";
 import { eventId } from "../context";
 import { todayIso } from "./dates";
@@ -162,9 +162,9 @@ export function formatEventTime(datetime_iso: string): string {
  * Filter events for the morning digest: starts on or overlaps today.
  */
 export function filterEventsForMorningDigest(
-	events: Event[],
+	events: EventData[],
 	today: string,
-): Event[] {
+): EventData[] {
 	return events.filter((e) => {
 		if (!e) return false;
 		const start = (e.datetime_iso || "").slice(0, 10);
@@ -177,7 +177,7 @@ export function filterEventsForMorningDigest(
 /**
  * Format notification title and body for the morning digest.
  */
-export function formatMorningDigest(events: Event[]): {
+export function formatMorningDigest(events: EventData[]): {
 	title: string;
 	body: string;
 } {
@@ -210,7 +210,7 @@ export function formatMorningDigest(events: Event[]): {
  * Schedules a notification 1 hour before an event starts.
  */
 export async function schedule1hReminder(
-	event: Event,
+	event: EventData,
 	cityKey: string,
 	autoPrompt = false,
 ): Promise<void> {
@@ -302,7 +302,7 @@ export async function cancel1hReminder(id: string): Promise<void> {
  * Checks and triggers the start-of-day morning notification (at 8:00 AM).
  */
 export async function checkAndNotifyMorningDigest(
-	allEvents: Event[],
+	allEvents: EventData[],
 	starredIds: Set<string>,
 	cityKey: string,
 ): Promise<void> {
@@ -365,7 +365,7 @@ export async function checkAndNotifyMorningDigest(
  * Synchronizes all starred events into IndexedDB and re-arms notifications.
  */
 export async function syncAllStarredEvents(
-	events: Event[],
+	events: EventData[],
 	starredIds: Set<string>,
 	cityKey: string,
 ): Promise<void> {

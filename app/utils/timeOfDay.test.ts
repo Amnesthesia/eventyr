@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { bandOf, matchesTimeBands } from "./timeOfDay";
 
-const at = (iso: string) => ({ title: "x", datetime_iso: iso }) as Event;
+const at = (iso: string) => ({ title: "x", datetime_iso: iso }) as EventData;
 
 test("events land in the band their start time falls in", () => {
 	assert.equal(bandOf(at("2026-09-09T09:30:00")), "morning");
@@ -19,7 +19,7 @@ test("a date with no time has no band", () => {
 	// Roughly a third of events carry a date-only start. Treating those as
 	// midnight would file every one of them as "evening".
 	assert.equal(bandOf(at("2026-09-09")), null);
-	assert.equal(bandOf({ title: "x" } as Event), null);
+	assert.equal(bandOf({ title: "x" } as EventData), null);
 });
 
 test("an event with no start time is dropped once a band is chosen", () => {

@@ -558,7 +558,7 @@ export function parseEndDate(dt: string, startIso: string): string {
 export function eventOverlapsRange(
 	event: {
 		datetime_iso?: string;
-		datetime_end_iso?: string;
+		datetime_end_iso?: string | null;
 		datetime?: string;
 	},
 	from: string,

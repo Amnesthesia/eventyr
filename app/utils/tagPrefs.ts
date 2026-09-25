@@ -16,7 +16,7 @@
 // and the counts must not out-vote it — hence the tier ordering below rather
 // than a bigger number added to the same score.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 
 /** 1 = more of this, -1 = less of this. Absent = no opinion. */
 export type TagPrefs = Record<string, 1 | -1>;
@@ -72,7 +72,7 @@ export function cycleTagPref(prefs: TagPrefs, tag: string): TagPrefs {
  * something they asked to see less of is the error they can correct; showing
  * it near the top is the one that reads as the setting being ignored.
  */
-export function prefTier(event: Event, prefs: TagPrefs): -1 | 0 | 1 {
+export function prefTier(event: EventData, prefs: TagPrefs): -1 | 0 | 1 {
 	let tier: -1 | 0 | 1 = 0;
 	for (const tag of event.tags ?? []) {
 		const pref = prefs[tag];

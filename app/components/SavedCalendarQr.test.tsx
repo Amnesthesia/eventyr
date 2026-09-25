@@ -1,11 +1,11 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { renderToStaticMarkup } from "react-dom/server";
 import { QR_EVENT_LIMIT, savedCalendarUrl } from "../utils/savedLink";
 import SavedCalendarQr from "./SavedCalendarQr";
 
-function ev(i: number): Event {
+function ev(i: number): EventData {
 	return {
 		title: `Event ${i}`,
 		datetime: "",
@@ -20,6 +20,11 @@ function ev(i: number): Event {
 		datetime_iso: `2026-09-${String((i % 28) + 1).padStart(2, "0")}T19:00:00`,
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 	};
 }
 

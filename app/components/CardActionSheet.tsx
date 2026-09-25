@@ -3,7 +3,7 @@
 // A bottom sheet rather than a popover anchored to the card, because on a
 // phone the card can be anywhere on screen and the thumb is at the bottom.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { CalendarPlus, Check, Minus, Plus, Share2 } from "lucide-react";
 import { useState } from "react";
 import { useEventsContext } from "../context";
@@ -14,7 +14,7 @@ import { shareEvent } from "../utils/share";
 import { noteInterest } from "../utils/taste";
 
 interface Props {
-	event: Event;
+	event: EventData;
 	cityKey: string;
 	isStarred: boolean;
 	onStarClick: () => void;

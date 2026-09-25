@@ -8,7 +8,7 @@
 // category are unrecoverable later. Counting up front keeps the taste after the
 // event ages out.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventHash } from "@dothingslol/core/shared";
 import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs";
 import { tagWeight } from "./tagSpecificity";
@@ -57,7 +57,7 @@ const GROUPS = [
 /** The profile keys an event contributes to. The one place that knows the
  * prefixes, so bumpTaste and tasteBoost cannot disagree about them. Prefixed
  * because a tag would otherwise be able to collide with a category or a vibe. */
-export function eventKeys(event: Event): string[] {
+export function eventKeys(event: EventData): string[] {
 	const keys = (event.tags ?? []).map((tag) => `tag:${tag}`);
 	for (const vibe of vibesOf(event)) keys.push(`vibe:${vibe}`);
 	if (event.category) keys.push(`cat:${event.category}`);
@@ -87,7 +87,7 @@ export function saveTaste(profile: TasteProfile): void {
  * kept at zero, which keeps the record from growing without bound. */
 export function bumpTaste(
 	prev: TasteProfile,
-	event: Event,
+	event: EventData,
 	delta: number,
 ): TasteProfile {
 	const next = { ...prev };
@@ -121,7 +121,7 @@ const DISLIKE_SIGNAL_KEY = "cat:__disliked__";
  */
 export function bumpDislike(
 	prev: TasteProfile,
-	event: Event,
+	event: EventData,
 	weights: Record<string, number>,
 	delta: -1 | 1 = -1,
 ): TasteProfile {
@@ -222,7 +222,7 @@ const STATED_SIGNAL_KEY = "cat:__stated__";
 
 /** How well an event matches the profile, in score points (-MAX_BOOST..MAX_BOOST).
  * Negative when the event leans toward disliked tags. */
-export function tasteBoost(event: Event, taste: TasteProfile): number {
+export function tasteBoost(event: EventData, taste: TasteProfile): number {
 	const { maxes, saves } = groupStats(taste);
 	if (saves < MIN_SIGNAL) return 0;
 	const keys = eventKeys(event);
@@ -257,10 +257,10 @@ export function tasteBoost(event: Event, taste: TasteProfile): number {
  * Stable: ties keep the incoming order, which is already score-desc then
  * soonest-first from the pipeline, so an empty profile is a no-op. */
 export function rankByTaste(
-	events: Event[],
+	events: EventData[],
 	taste: TasteProfile,
 	prefs: TagPrefs = {},
-): Event[] {
+): EventData[] {
 	const usePrefs = hasTagPrefs(prefs);
 	// Ratings feed the profile as well as the tier, so within a band an event
 	// matching two wanted tags outranks one matching a single wanted tag.
@@ -311,7 +311,7 @@ function loadNoted(): Set<string> {
  * Reads the stored profile rather than taking one as an argument, so any
  * component can call this without the events context. */
 export function noteInterest(
-	event: Event,
+	event: EventData,
 	cityKey: string,
 	signal: InterestSignal,
 ): void {
@@ -337,8 +337,6 @@ export function noteInterest(
 /** Subscribe to profile changes made outside React state. Returns an
  * unsubscribe function, so it drops straight into a useEffect. */
 export function onTasteChange(fn: (profile: TasteProfile) => void): () => void {
-	// EventListener, not (e: Event): `Event` in this module is our own event
-	// type, not the DOM's.
 	const handler: EventListener = (e) =>
 		fn((e as CustomEvent<TasteProfile>).detail);
 	window.addEventListener(CHANGE_EVENT, handler);
@@ -354,7 +352,7 @@ export function onTasteChange(fn: (profile: TasteProfile) => void): () => void {
  * Deliberately always on, not behind a flag: the whole feature is invisible by
  * design — a reordered row looks like no feature at all — so the only way to
  * tell a working profile from a broken one is to read it. */
-export function logTasteProfile(taste: TasteProfile, picks: Event[]): void {
+export function logTasteProfile(taste: TasteProfile, picks: EventData[]): void {
 	const { maxes, saves } = groupStats(taste);
 	const entries = Object.entries(taste).sort((a, b) => b[1] - a[1]);
 	const dislikes = Object.entries(taste).filter(

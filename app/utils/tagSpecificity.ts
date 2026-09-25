@@ -3,7 +3,7 @@
 // near-unique fingerprint; "music" on 200 of them says almost nothing about
 // which of those 200 you meant. Computed client-side from the city's own
 // events — no model call, no pipeline field, recomputed fresh every load.
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 
 /** Floor for the commonest tag, not zero: a tag that appears on nearly every
  * event should still accumulate weight after enough dislikes, just slowly. A
@@ -12,7 +12,7 @@ const MIN_WEIGHT = 0.1;
 
 /** log(N/df) normalised by log(N), clamped to [MIN_WEIGHT, 1]. A tag on one
  * event scores 1; a tag on every event scores 0 before the floor. */
-export function tagWeights(events: Event[]): Record<string, number> {
+export function tagWeights(events: EventData[]): Record<string, number> {
 	const n = events.length;
 	const weights: Record<string, number> = {};
 	if (n <= 1) return weights;

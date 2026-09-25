@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventsFromIds, parseSavedIds, savedCalendarUrl } from "./savedLink";
 
-function ev(title: string, datetime_iso: string): Event {
+function ev(title: string, datetime_iso: string): EventData {
 	return {
 		title,
 		datetime: "",
@@ -18,6 +18,11 @@ function ev(title: string, datetime_iso: string): Event {
 		datetime_iso,
 		datetime_end_iso: "",
 		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
 	};
 }
 

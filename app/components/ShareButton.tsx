@@ -6,7 +6,7 @@
 // opens the native share sheet, and where that does not exist it copies the
 // URL.
 
-import type { Event } from "@dothingslol/core/schema";
+import type { EventData } from "@dothingslol/core/schema";
 import { eventPath } from "@dothingslol/core/shared";
 import { Check, Share2 } from "lucide-react";
 import { useState } from "react";
@@ -14,7 +14,7 @@ import { shareEvent } from "../utils/share";
 import { noteInterest } from "../utils/taste";
 
 interface Props {
-	event: Event;
+	event: EventData;
 	cityKey: string;
 	/** Shown next to the icon. Omit for the icon-only version used on cards. */
 	label?: string;
