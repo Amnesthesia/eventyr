@@ -1,7 +1,11 @@
 import { readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { isSameSite, normaliseHost } from "@dothingslol/core/shared";
+import {
+	isSameSite,
+	normaliseHost,
+	toISODate,
+} from "@dothingslol/core/shared";
 import { addDays, zonedDate, zonedMidnight } from "@dothingslol/core/tz";
 import yaml from "js-yaml";
 import { sourceEarnsPlace, type YieldLedger } from "./sourceYield.ts";
@@ -374,11 +378,6 @@ export function fmtDate(d: Date, timeZone: string): string {
 		year: "numeric",
 		timeZone,
 	});
-}
-
-/** YYYY-MM-DD, the date `d` falls on in `timeZone`. */
-export function toISODate(d: Date, timeZone: string): string {
-	return zonedDate(timeZone, d);
 }
 
 export function requireEnv(name: string): string {

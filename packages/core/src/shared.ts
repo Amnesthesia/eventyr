@@ -7,7 +7,12 @@
 // drifted (the site treated a top pick as score >= 8 while the markdown and
 // digest used 7).
 
-import { formatOffset, zonedOffsetMinutes, zonedTimeToInstant } from "./tz.ts";
+import {
+	formatOffset,
+	zonedDate,
+	zonedOffsetMinutes,
+	zonedTimeToInstant,
+} from "./tz.ts";
 
 export const CATEGORIES = [
 	"Public Lecture",
@@ -972,6 +977,11 @@ export function isoWithOffset(
 		zonedTimeToInstant(timeZone, wall) ?? new Date(wall - 12 * 3_600_000);
 	const offset = zonedOffsetMinutes(timeZone, at);
 	return `${value}${offset === 0 ? "Z" : formatOffset(offset)}`;
+}
+
+/** YYYY-MM-DD, the date `d` falls on in `timeZone`. */
+export function toISODate(d: Date, timeZone: string): string {
+	return zonedDate(timeZone, d);
 }
 
 /**
