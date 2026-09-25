@@ -59,6 +59,7 @@ export function venueNameFor(
 function resolve(
 	entry: SourceEntry,
 	tier: SourceDefinition["sourceTier"],
+	timeZone: string,
 ): SourceDefinition {
 	const id = entry.id ?? deriveId(entry);
 	if (!entry.listingUrls?.length) {
@@ -79,14 +80,16 @@ function resolve(
 		},
 		strategy: entry.strategy ?? "html",
 		sourceTier: tier,
+		timeZone,
 		...(entry.note ? { note: entry.note } : {}),
 	};
 }
 
 /** Every scraper-backed source for a city, resolved and validated. */
 export function loadSourceRegistry(cityKey: string): SourceDefinition[] {
-	const sources = scraperSources(loadCityConfig(cityKey)).map(
-		({ entry, tier }) => resolve(entry, tier),
+	const cfg = loadCityConfig(cityKey);
+	const sources = scraperSources(cfg).map(({ entry, tier }) =>
+		resolve(entry, tier, cfg.timezone),
 	);
 	// Duplicate ids are a data problem in the source list (the same venue
 	// listed twice, sometimes with a typo'd domain), not something worth

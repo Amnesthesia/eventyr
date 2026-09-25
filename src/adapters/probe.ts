@@ -702,6 +702,8 @@ class Prober {
 	constructor(
 		private fetcher: SourceFetcher,
 		private extractPage: PageExtractFn,
+		/** The probed city's IANA zone: page times are read as its wall clock. */
+		private timeZone: string,
 	) {}
 
 	/** Fetches a URL and returns its body as text, or null on any failure.
@@ -733,12 +735,17 @@ class Prober {
 		const fields = feed.events;
 		const events = fields
 			.map((f) =>
-				toCandidateEvent(f, {
-					sourceId: "probe",
-					sourceUrl: page.url,
-					fetchedAt: new Date().toISOString(),
-					strategy: "feed",
-				}),
+				toCandidateEvent(
+					f,
+					{
+						sourceId: "probe",
+						sourceUrl: page.url,
+						fetchedAt: new Date().toISOString(),
+						strategy: "feed",
+					},
+					new Date(),
+					this.timeZone,
+				),
 			)
 			.filter((c) => c.title && c.startISO);
 		let inWindow = 0;
@@ -814,12 +821,17 @@ class Prober {
 		const datedEvents = (fields: RawCandidateFields[]) =>
 			fields
 				.map((f) =>
-					toCandidateEvent(f, {
-						sourceId: "probe",
-						sourceUrl: page.url,
-						fetchedAt: new Date().toISOString(),
-						strategy: "html",
-					}),
+					toCandidateEvent(
+						f,
+						{
+							sourceId: "probe",
+							sourceUrl: page.url,
+							fetchedAt: new Date().toISOString(),
+							strategy: "html",
+						},
+						new Date(),
+						this.timeZone,
+					),
 				)
 				.filter((c) => c.title && c.startISO);
 		const countWindow = (
@@ -844,12 +856,17 @@ class Prober {
 		const dated = (fields: RawCandidateFields[]): string[] =>
 			fields
 				.map((f) =>
-					toCandidateEvent(f, {
-						sourceId: "probe",
-						sourceUrl: page.url,
-						fetchedAt: new Date().toISOString(),
-						strategy: "html",
-					}),
+					toCandidateEvent(
+						f,
+						{
+							sourceId: "probe",
+							sourceUrl: page.url,
+							fetchedAt: new Date().toISOString(),
+							strategy: "html",
+						},
+						new Date(),
+						this.timeZone,
+					),
 				)
 				.filter((c) => c.title && c.startISO)
 				.map((c) => c.title as string);
@@ -1620,7 +1637,12 @@ async function main(): Promise<void> {
 		}),
 		{ force: FORCE },
 	);
-	const prober = new Prober(fetcher, extractPage);
+	// CITIES holds exactly one city: the CLI refuses anything else above.
+	const prober = new Prober(
+		fetcher,
+		extractPage,
+		loadCityConfig(CITIES[0]).timezone,
+	);
 
 	const findListingUrls = createListingUrlFinder(apiKey);
 

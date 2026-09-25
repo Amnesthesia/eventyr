@@ -140,23 +140,29 @@ function timeOnDay(
 	raw: string,
 	want: string,
 	referenceDate: Date,
+	timeZone: string,
 ): string | null {
 	const text = raw.trim();
 	if (!text) return null;
 	const parsed = parseSingleDateTime(
 		TIME_ONLY.test(text) ? `${want.slice(0, 10)} ${text}` : text,
 		referenceDate,
+		timeZone,
 	);
 	return parsed && hasTime(parsed) && sameDay(parsed, want) ? parsed : null;
 }
 
 /** The page's own structured start, if it published one. Trusted for the day
  * as well as the time — it is the page's own machine-readable claim. */
-function fromJsonLd(body: string, referenceDate: Date): string | null {
+function fromJsonLd(
+	body: string,
+	referenceDate: Date,
+	timeZone: string,
+): string | null {
 	for (const node of findEventNodes(extractJsonLdBlocks(body))) {
 		const raw = node.startDate;
 		if (typeof raw !== "string" || !raw) continue;
-		const parsed = parseSingleDateTime(raw, referenceDate);
+		const parsed = parseSingleDateTime(raw, referenceDate, timeZone);
 		if (parsed && hasTime(parsed)) return parsed;
 	}
 	return null;
@@ -173,6 +179,7 @@ function fromEmbeddedJson(
 	body: string,
 	want: string,
 	referenceDate: Date,
+	timeZone: string,
 ): string | null {
 	const seen = new Set<unknown>();
 	function visit(node: unknown, depth: number): string | null {
@@ -188,7 +195,7 @@ function fromEmbeddedJson(
 		}
 		for (const [key, value] of Object.entries(node)) {
 			if (typeof value === "string" && TIME_KEY.test(key)) {
-				const found = timeOnDay(value, want, referenceDate);
+				const found = timeOnDay(value, want, referenceDate, timeZone);
 				if (found) return found;
 			} else if (value && typeof value === "object") {
 				const found = visit(value, depth + 1);
@@ -212,10 +219,11 @@ function fromLabelledTime(
 	url: string,
 	want: string,
 	referenceDate: Date,
+	timeZone: string,
 ): string | null {
 	const text = stripToReadableText(body, url);
 	for (const match of text.matchAll(LABELLED_TIME)) {
-		const found = timeOnDay(match[1], want, referenceDate);
+		const found = timeOnDay(match[1], want, referenceDate, timeZone);
 		if (found) return found;
 	}
 	return null;
@@ -227,10 +235,11 @@ function fromText(
 	url: string,
 	want: string,
 	referenceDate: Date,
+	timeZone: string,
 ): string | null {
 	const text = stripToReadableText(body, url);
 	for (const match of text.matchAll(DATETIME_WITH_TIME)) {
-		const found = timeOnDay(match[0], want, referenceDate);
+		const found = timeOnDay(match[0], want, referenceDate, timeZone);
 		if (found) return found;
 	}
 	return null;
@@ -344,16 +353,17 @@ function findTime(
 	url: string,
 	want: string,
 	referenceDate: Date,
+	timeZone: string,
 ): { iso: string; via: Extractor } | null {
-	const jsonLd = fromJsonLd(body, referenceDate);
+	const jsonLd = fromJsonLd(body, referenceDate, timeZone);
 	// JSON-LD is trusted for the day as well as the time; the rest may only add
 	// a time to the day the listing already gave us, which timeOnDay enforces.
 	if (jsonLd) return { iso: jsonLd, via: "jsonLd" };
-	const embedded = fromEmbeddedJson(body, want, referenceDate);
+	const embedded = fromEmbeddedJson(body, want, referenceDate, timeZone);
 	if (embedded) return { iso: embedded, via: "embedded" };
-	const label = fromLabelledTime(body, url, want, referenceDate);
+	const label = fromLabelledTime(body, url, want, referenceDate, timeZone);
 	if (label) return { iso: label, via: "label" };
-	const text = fromText(body, url, want, referenceDate);
+	const text = fromText(body, url, want, referenceDate, timeZone);
 	return text ? { iso: text, via: "text" } : null;
 }
 
@@ -408,6 +418,7 @@ export async function enrichFromDetailPage(
 				url,
 				candidate.startISO as string,
 				referenceDate,
+				source.timeZone,
 			);
 			if (found) {
 				times.set(candidate, found.iso);

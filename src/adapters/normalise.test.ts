@@ -56,6 +56,7 @@ const SOURCE: SourceDefinition = {
 	},
 	strategy: "html",
 	sourceTier: "institutions",
+	timeZone: "Australia/Brisbane",
 };
 
 test("brisbaneNaive keeps wall-clock for an explicit +10:00 offset", () => {

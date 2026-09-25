@@ -8,8 +8,15 @@
 //   pnpm test-adapter <url>           # final pipeline-shaped events
 //   pnpm test-adapter <url> --raw     # pre-normalisation CandidateEvents
 //   pnpm test-adapter <url> --all     # skip the this-week filter
+//
+// CITY must be set: page times are wall-clock times in that city's zone.
 
-import { getWeekRange, requireEnv, toISODate } from "../common.ts";
+import {
+	getWeekRange,
+	loadCityConfig,
+	requireEnv,
+	toISODate,
+} from "../common.ts";
 import { installUsageReporting } from "../providers/gemini.ts";
 import { applyAnnotation, createGeminiAnnotator } from "./annotate.ts";
 import { SourceFetcher } from "./fetch.ts";
@@ -30,6 +37,7 @@ if (!url) {
 }
 
 const parsed = new URL(url); // throws with a clear message on a malformed URL
+const cityCfg = loadCityConfig(requireEnv("CITY"));
 const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
 const { sunday } = getWeekRange();
 
@@ -49,6 +57,7 @@ const source: SourceDefinition = {
 	},
 	strategy: "html",
 	sourceTier: "independents",
+	timeZone: cityCfg.timezone,
 	note: "ad-hoc CLI test source, not part of any city registry",
 };
 

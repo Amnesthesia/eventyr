@@ -58,6 +58,12 @@ export interface SourceDefinition {
 	 */
 	sourceTier: "aggregators" | "institutions" | "independents";
 	/**
+	 * The city's IANA zone, copied from sources/{city}.yml `timezone` by the
+	 * registry. Page text states wall-clock times, and which instant those name
+	 * depends on the city, and for a DST city on the date.
+	 */
+	timeZone: string;
+	/**
 	 * Any caveat about how this entry was populated — e.g. which probe run
 	 * verified its listing URL, or a known quirk of the source.
 	 */
