@@ -26,10 +26,10 @@
 //     city, so provider prefix caching pays for it once rather than twelve
 //     times. Only the trailing two lines vary.
 
+import "../llmBootstrap.ts";
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { GoogleGenAI } from "@google/genai";
+import { askDetailed } from "@dothingslol/llm";
 import yaml from "js-yaml";
 import {
 	loadCityConfig,
@@ -38,7 +38,7 @@ import {
 	type SourceEntry,
 	type SourceTier,
 } from "../common.ts";
-import { geminiText, installUsageReporting } from "../providers/gemini.ts";
+import { installUsageReporting } from "../io/usage.ts";
 
 const args = process.argv.slice(2);
 const flag = (name: string): string | undefined =>
@@ -61,8 +61,6 @@ const CITY = cityArg ?? "";
 const APPLY = args.includes("--apply");
 
 const MODEL = "gemini-3.5-flash";
-/** Niche calls in flight per city. */
-const CONCURRENCY = 4;
 /** Separates the list the model is given from the part it must add. */
 const CONTINUE_DELIMITER = "-----";
 
@@ -192,43 +190,23 @@ export function parseSuggestionLines(
 	return out;
 }
 
-async function askNiche(
+/** The prompt for one niche. excludeBlock first, and identical across every
+ * niche call for this city, so it lands in the cacheable prefix; only the
+ * last two lines vary. Order matters for two separate reasons that pull in
+ * opposite directions, and this satisfies both: the shared list goes FIRST so
+ * it is a prefix identical across all twelve niche calls for this city and
+ * can be cached, while the delimiter stays LAST so the model is completing
+ * the list rather than answering a question. The varying city/category lines
+ * sit between them, after the cacheable part. */
+function nichePrompt(
 	cityName: string,
 	listSoFar: string,
 	niche: { tier: SourceTier; label: string },
-	ai: GoogleGenAI,
-): Promise<Suggestion[]> {
-	// excludeBlock first, and identical across every niche call for this city,
-	// so it lands in the cacheable prefix; only the last two lines vary.
-	// Order matters for two separate reasons that pull in opposite directions,
-	// and this satisfies both: the shared list goes FIRST so it is a prefix
-	// identical across all twelve niche calls for this city and can be cached,
-	// while the delimiter stays LAST so the model is completing the list rather
-	// than answering a question. The varying city/category lines sit between
-	// them, after the cacheable part.
-	const contents = `${listSoFar}\nCity: ${cityName}\nCategory: ${niche.label}\n${CONTINUE_DELIMITER}`;
-	// Retries and rate-limit backoff live in the shared wrapper now, so a 429
-	// no longer costs a whole city its discovery run.
-	try {
-		const text = await geminiText(ai, {
-			stage: "discover",
-			model: MODEL,
-			contents,
-			systemInstruction: SYSTEM_PROMPT,
-			search: true,
-			maxOutputTokens: 4000,
-			// gemini-3.5-flash thinks at "high" by default and bills the thoughts
-			// as output; listing venues it already knows does not need that.
-			extraConfig: { thinkingConfig: { thinkingLevel: "low" } },
-		});
-		return parseSuggestionLines(text, niche.tier);
-	} catch (err) {
-		console.error(`  ⚠ ${niche.label}: ${(err as Error).message.slice(0, 90)}`);
-		return [];
-	}
+): string {
+	return `${listSoFar}\nCity: ${cityName}\nCategory: ${niche.label}\n${CONTINUE_DELIMITER}`;
 }
 
-async function discoverCity(city: string, ai: GoogleGenAI): Promise<void> {
+async function discoverCity(city: string): Promise<void> {
 	const cfg = loadCityConfig(city);
 	const existing = new Set<string>();
 	const knownEntries: { name: string; host: string }[] = [];
@@ -250,9 +228,34 @@ async function discoverCity(city: string, ai: GoogleGenAI): Promise<void> {
 	const listSoFar = knownEntries.map((e) => `${e.name}|${e.host}`).join("\n");
 	const cityName = CITY_NAMES[city] ?? city;
 
-	const perNiche = await mapWithConcurrency(NICHES, CONCURRENCY, (niche) =>
-		askNiche(cityName, listSoFar, niche, ai),
+	// One grounded call per niche, all in flight under llm's Gemini limiter.
+	// Retries and rate-limit backoff live in the shared wrapper, so a 429 no
+	// longer costs a whole city its discovery run; a niche that still fails
+	// contributes nothing rather than failing the sweep.
+	const outcomes = await askDetailed(
+		NICHES.map((niche) => nichePrompt(cityName, listSoFar, niche)),
+		{
+			provider: "gemini",
+			model: MODEL,
+			stage: "discover",
+			system: SYSTEM_PROMPT,
+			search: true,
+			maxOutputTokens: 4000,
+			// gemini-3.5-flash thinks at "high" by default and bills the thoughts
+			// as output; listing venues it already knows does not need that.
+			thinking: "low",
+		},
 	);
+	const perNiche = NICHES.map((niche, i) => {
+		const outcome = outcomes[i];
+		if (outcome.status === "rejected") {
+			console.error(
+				`  ⚠ ${niche.label}: ${(outcome.reason as Error).message.slice(0, 90)}`,
+			);
+			return [];
+		}
+		return parseSuggestionLines(outcome.value.text, niche.tier);
+	});
 
 	const merged = new Map<string, Suggestion>();
 	let suggested = 0;
@@ -309,12 +312,12 @@ async function discoverCity(city: string, ai: GoogleGenAI): Promise<void> {
 
 async function main(): Promise<void> {
 	installUsageReporting();
-	const apiKey = process.env.GOOGLE_API_KEY;
-	if (!apiKey) throw new Error("GOOGLE_API_KEY env var is required");
-	const ai = new GoogleGenAI({ apiKey });
+	if (!process.env.GOOGLE_API_KEY) {
+		throw new Error("GOOGLE_API_KEY env var is required");
+	}
 
 	console.log(`\n=== ${CITY} ===`);
-	await discoverCity(CITY, ai);
+	await discoverCity(CITY);
 	if (!APPLY) {
 		console.log("\nDry run — rerun with --apply to add these sources.");
 	}
