@@ -14,10 +14,9 @@
 import { writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { ask, parseJsonArray } from "@dothingslol/llm";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { GoogleGenAI } from "@google/genai";
-import { parseJsonArray, splitIntoBatches } from "../providers/base.ts";
-import { geminiText } from "../providers/gemini.ts";
+import { splitIntoBatches } from "../providers/base.ts";
 import { countDateHits } from "./dates.ts";
 import type { PageExtractFn, RawCandidateFields } from "./types.ts";
 
@@ -81,7 +80,6 @@ export interface ExtractorOptions {
 }
 
 export function createGeminiPageExtractor(
-	apiKey: string,
 	options: ExtractorOptions = {},
 ): PageExtractFn {
 	const {
@@ -89,7 +87,6 @@ export function createGeminiPageExtractor(
 		maxBatches = MAX_BATCHES_PER_PAGE,
 		stage = "extract",
 	} = options;
-	const ai = new GoogleGenAI({ apiKey });
 
 	async function callModel(
 		pageText: string,
@@ -99,11 +96,11 @@ export function createGeminiPageExtractor(
 		// systemInstruction is a module constant and identical on every call,
 		// which is what lets provider prefix caching hit; only the page text
 		// varies.
-		const text = await geminiText(ai, {
-			stage,
+		const text = await ask(buildUserPrompt(pageText, sourceName), {
+			provider: "gemini",
 			model: EXTRACT_MODEL,
-			contents: buildUserPrompt(pageText, sourceName),
-			systemInstruction: SYSTEM_PROMPT,
+			stage,
+			system: SYSTEM_PROMPT,
 			maxOutputTokens: MAX_OUTPUT_TOKENS,
 			temperature: 0.1,
 		});

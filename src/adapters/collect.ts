@@ -53,7 +53,7 @@ import { runAdapter } from "./runner.ts";
 import type { PageExtractFn, SourceDefinition } from "./types.ts";
 
 const CITY = requireEnv("CITY");
-const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
+requireEnv("GOOGLE_API_KEY");
 const FORCE = ["1", "true", "yes"].includes(
 	(process.env.FORCE ?? "").toLowerCase(),
 );
@@ -459,7 +459,7 @@ async function main(): Promise<void> {
 	// yield events, so an empty result means a dropped call, not a quiet week.
 	// The cache means pages the probe just extracted cost nothing.
 	const extractPage = withExtractionCache(
-		createGeminiPageExtractor(GOOGLE_API_KEY, { stage: "collect/extract" }),
+		createGeminiPageExtractor({ stage: "collect/extract" }),
 		{ force: FORCE },
 	);
 	const annotate = createGeminiAnnotator();

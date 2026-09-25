@@ -22,6 +22,7 @@
 //   pnpm probe-sources --city=brisbane --apply         # write promotions back to the YAML
 //   pnpm probe-sources --city=brisbane --report-only   # re-derive report from cached results
 
+import "../llmBootstrap.ts";
 import {
 	appendFileSync,
 	existsSync,
@@ -46,12 +47,9 @@ import {
 	type SourceTier,
 	toISODate,
 } from "../common.ts";
+import { installUsageReporting, reportGeminiUsage } from "../io/usage.ts";
 import { parseJsonArray } from "../providers/base.ts";
-import {
-	geminiText,
-	installUsageReporting,
-	reportGeminiUsage,
-} from "../providers/gemini.ts";
+import { geminiText } from "../providers/gemini.ts";
 import { toCandidateEvent } from "./candidate.ts";
 import { countDateHits } from "./dates.ts";
 import {
@@ -1658,7 +1656,7 @@ async function main(): Promise<void> {
 	// repeated probe — and the collect run right after it — pay nothing for a
 	// page already seen.
 	const extractPage = withExtractionCache(
-		createGeminiPageExtractor(apiKey, {
+		createGeminiPageExtractor({
 			retryOnEmpty: false,
 			maxBatches: 1,
 			stage: "probe/extract",

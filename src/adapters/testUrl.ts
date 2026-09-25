@@ -41,7 +41,7 @@ if (!url) {
 const parsed = new URL(url); // throws with a clear message on a malformed URL
 const cityCfg = loadCityConfig(requireEnv("CITY"));
 const CITY_TZ = cityCfg.timezone;
-const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
+requireEnv("GOOGLE_API_KEY");
 const { sunday } = getWeekRange(new Date(), CITY_TZ);
 
 const source: SourceDefinition = {
@@ -68,7 +68,7 @@ installUsageReporting();
 
 const adapter = createPageAdapter(source, {
 	fetcher: new SourceFetcher(),
-	extractPage: createGeminiPageExtractor(GOOGLE_API_KEY),
+	extractPage: createGeminiPageExtractor(),
 });
 
 const { result, candidates } = await runAdapter(adapter);
