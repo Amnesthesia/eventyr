@@ -1,11 +1,14 @@
 import type { EventData } from "@dothingslol/core/schema";
-import { costLabel, stripForDisplay } from "@dothingslol/core/shared";
+import {
+	catToSlug,
+	costLabel,
+	KEY_TO_SLUG,
+	stripForDisplay,
+} from "@dothingslol/core/shared";
 import { CalendarDays, ExternalLink, MapPin } from "lucide-react";
 import { useState } from "react";
 import { useEventsContext } from "../context";
 import { useLongPress } from "../hooks/useLongPress";
-import { catToSlug } from "../utils/categorySlug";
-import { KEY_TO_SLUG } from "../utils/citySlug";
 import { displayDatetime } from "../utils/dates";
 import { VIBE_LABELS, vibesOf } from "../utils/vibes";
 import AddToCalendar from "./AddToCalendar";

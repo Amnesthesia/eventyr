@@ -9,7 +9,7 @@ import "@react/styles.css";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { CityIndex } from "@dothingslol/core/schema";
-import { KEY_TO_SLUG } from "@react/utils/citySlug";
+import { KEY_TO_SLUG } from "@dothingslol/core/shared";
 import { MCP_INSTALL_URL, MCP_URL } from "@react/utils/mcpInstall";
 
 const index: CityIndex = JSON.parse(

@@ -1,5 +1,4 @@
-import { catShortName, catToSlug } from "@react/utils/categorySlug";
-import { KEY_TO_SLUG } from "@react/utils/citySlug";
+import { catShortName, catToSlug, KEY_TO_SLUG } from "@dothingslol/core/shared";
 import { useEffect } from "react";
 import { useEventsContext } from "../../context";
 

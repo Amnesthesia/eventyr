@@ -10,7 +10,7 @@
 // involve emailing yourself a file.
 
 import type { EventData } from "@dothingslol/core/schema";
-import { eventPath } from "@dothingslol/core/shared";
+import { catToSlug, eventPath } from "@dothingslol/core/shared";
 import {
 	BookmarkPlus,
 	CalendarPlus,
@@ -23,7 +23,6 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { eventId, useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
-import { catToSlug } from "../utils/categorySlug";
 import { addDays, shortDate, startOfWeek } from "../utils/dates";
 import { buildIcs, downloadIcs } from "../utils/ics";
 import { QR_EVENT_LIMIT, savedCalendarUrl } from "../utils/savedLink";

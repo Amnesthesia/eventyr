@@ -13,10 +13,10 @@
 // reappear at its sorted position, possibly hundreds of cards deep.
 
 import type { EventData } from "@dothingslol/core/schema";
+import { catShortName, catToSlug } from "@dothingslol/core/shared";
 import { Bookmark, RotateCcw, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { eventId, useEventsContext } from "../context";
-import { catShortName, catToSlug } from "../utils/categorySlug";
 import { todayIso } from "../utils/dates";
 import { dateLabel } from "../utils/grouping";
 import { rankByTaste } from "../utils/taste";

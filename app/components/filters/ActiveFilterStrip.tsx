@@ -1,7 +1,6 @@
-import { LOW_SCORE_THRESHOLD } from "@dothingslol/core/shared";
+import { catShortName, LOW_SCORE_THRESHOLD } from "@dothingslol/core/shared";
 import { X } from "lucide-react";
 import { useEventsContext } from "../../context";
-import { catShortName } from "../../utils/categorySlug";
 import { fmtRange } from "../../utils/dates";
 import { TIME_BAND_LABELS } from "../../utils/timeOfDay";
 import { VIBE_LABELS } from "../../utils/vibes";

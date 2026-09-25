@@ -4,13 +4,13 @@ import { join } from "node:path";
 import Base from "../../layouts/Base.astro";
 import EventApp from "@react/EventApp";
 import type { CityData, CityIndex } from "@dothingslol/core/schema";
-import { SLUG_TO_KEY } from "@react/utils/citySlug";
-import { eventOverlapsRange } from "@react/utils/dates";
 import {
 	byScoreThenSoonest,
 	SITE_URL,
+	SLUG_TO_KEY,
 	toISODate,
 } from "@dothingslol/core/shared";
+import { eventOverlapsRange } from "@react/utils/dates";
 import { addDays } from "@dothingslol/core/tz";
 
 const BASE_URL = SITE_URL;

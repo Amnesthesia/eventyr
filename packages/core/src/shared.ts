@@ -617,6 +617,11 @@ export const KEY_TO_SLUG: Record<string, string> = {
 	sunnycoast: "sunshine-coast",
 };
 
+/** Public URL slug → city key, the inverse of KEY_TO_SLUG. */
+export const SLUG_TO_KEY: Record<string, string> = Object.fromEntries(
+	Object.entries(KEY_TO_SLUG).map(([key, slug]) => [slug, key]),
+);
+
 /**
  * The minimum an event has to look like to be identified. Declared
  * structurally rather than as Record<string, unknown> so both the pipeline's

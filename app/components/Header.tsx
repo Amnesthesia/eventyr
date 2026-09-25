@@ -1,3 +1,4 @@
+import { KEY_TO_SLUG } from "@dothingslol/core/shared";
 import {
 	CalendarDays,
 	Layers,
@@ -9,7 +10,6 @@ import {
 } from "lucide-react";
 import { useId, useState } from "react";
 import { eventId, useEventsContext } from "../context";
-import { KEY_TO_SLUG } from "../utils/citySlug";
 import { MCP_INSTALL_URL } from "../utils/mcpInstall";
 import ActiveFilterStrip from "./filters/ActiveFilterStrip";
 import CategoryFilter from "./filters/CategoryFilter";

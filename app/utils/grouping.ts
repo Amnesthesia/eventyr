@@ -2,8 +2,7 @@
 // as "Thursday has these sixty" rather than as one undifferentiated grid.
 
 import type { EventData } from "@dothingslol/core/schema";
-import { CATEGORIES } from "@dothingslol/core/shared";
-import { catToSlug } from "./categorySlug";
+import { CATEGORIES, catToSlug } from "@dothingslol/core/shared";
 import { addDays, todayIso } from "./dates";
 import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs";
 
