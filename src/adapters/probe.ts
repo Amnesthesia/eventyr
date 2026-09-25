@@ -31,8 +31,8 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { dirname, join } from "node:path";
+import { ask, parseJsonArray } from "@dothingslol/llm";
 import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { GoogleGenAI } from "@google/genai";
 import yaml from "js-yaml";
 import {
 	addDays,
@@ -48,8 +48,6 @@ import {
 	toISODate,
 } from "../common.ts";
 import { installUsageReporting, reportGeminiUsage } from "../io/usage.ts";
-import { parseJsonArray } from "../providers/base.ts";
-import { geminiText } from "../providers/gemini.ts";
 import { toCandidateEvent } from "./candidate.ts";
 import { countDateHits } from "./dates.ts";
 import {
@@ -1553,9 +1551,7 @@ export interface ListingUrlFinder {
 	batch(sources: ListingUrlRequest[]): Promise<Map<string, string[]>>;
 }
 
-function createListingUrlFinder(apiKey: string): ListingUrlFinder {
-	const ai = new GoogleGenAI({ apiKey });
-
+function createListingUrlFinder(): ListingUrlFinder {
 	async function fillBatch(
 		batch: ListingUrlRequest[],
 		out: Map<string, string[]>,
@@ -1566,11 +1562,11 @@ function createListingUrlFinder(apiKey: string): ListingUrlFinder {
 			host: s.host,
 			listingUrls: [] as string[],
 		}));
-		const text = await geminiText(ai, {
-			stage: "probe/discover-urls",
+		const text = await ask(JSON.stringify(payload), {
+			provider: "gemini",
 			model: DISCOVERY_MODEL,
-			contents: JSON.stringify(payload),
-			systemInstruction: LISTING_SYSTEM,
+			stage: "probe/discover-urls",
+			system: LISTING_SYSTEM,
 			search: true,
 			maxOutputTokens: 8000,
 		});
@@ -1647,8 +1643,9 @@ async function main(): Promise<void> {
 		return;
 	}
 
-	const apiKey = process.env.GOOGLE_API_KEY;
-	if (!apiKey) throw new Error("GOOGLE_API_KEY env var is required");
+	if (!process.env.GOOGLE_API_KEY) {
+		throw new Error("GOOGLE_API_KEY env var is required");
+	}
 
 	const fetcher = new SourceFetcher();
 	// Probe-mode: one batch per page, no retry-on-empty (most candidates
@@ -1670,7 +1667,7 @@ async function main(): Promise<void> {
 		loadCityConfig(CITIES[0]).timezone,
 	);
 
-	const findListingUrls = createListingUrlFinder(apiKey);
+	const findListingUrls = createListingUrlFinder();
 
 	// Keyed by city + tier + host + name: names repeat across tiers (the same
 	// venue listed twice) and a bare name key silently skipped the second one.
