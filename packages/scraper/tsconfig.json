@@ -1,0 +1,13 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		// Node only (PLAN §2.3): got-scraping, the body store and the
+		// optional Playwright rung all need it.
+		"target": "ES2022",
+		"lib": ["ES2022"],
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"types": ["node"]
+	},
+	"include": ["src"]
+}

@@ -39,6 +39,7 @@
     "@astrojs/react": "^5.0.5",
     "@dothingslol/core": "workspace:*",
     "@dothingslol/llm": "workspace:*",
+    "@dothingslol/scraper": "workspace:*",
     "@dothingslol/utils": "workspace:*",
     "@picocss/pico": "^2.0.6",
     "astro": "^6.3.7",
