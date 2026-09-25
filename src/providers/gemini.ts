@@ -18,6 +18,7 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { backoffDelay, sleep } from "@dothingslol/utils/time";
 import type { GoogleGenAI } from "@google/genai";
 import {
 	DATA_ROOT,
@@ -167,10 +168,6 @@ function release(): void {
 	else inFlight--;
 }
 
-function sleep(ms: number): Promise<void> {
-	return new Promise((r) => setTimeout(r, ms));
-}
-
 /** Pulls a retry delay out of a 429/503 error, honouring Retry-After when the
  * API supplies one and falling back to jittered exponential backoff. */
 function retryDelayMs(err: unknown, attempt: number): number | null {
@@ -182,8 +179,7 @@ function retryDelayMs(err: unknown, attempt: number): number | null {
 	if (!transient) return null;
 	const retryAfter = /retry(?:-|\s)?after["':\s]+(\d+)/i.exec(message);
 	if (retryAfter) return Number(retryAfter[1]) * 1000;
-	const base = BASE_BACKOFF_MS * 2 ** attempt;
-	return base + Math.floor(Math.random() * base * 0.3);
+	return backoffDelay(attempt, BASE_BACKOFF_MS);
 }
 
 export interface GeminiCallOptions {
