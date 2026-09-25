@@ -25,114 +25,29 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { dirname, join } from "node:path";
+import {
+	estimateUsd,
+	type StageUsage as GeminiUsage,
+	recordUsage,
+} from "@dothingslol/llm";
 import { backoffDelay, sleep } from "@dothingslol/utils/time";
 import type { GoogleGenAI } from "@google/genai";
-import {
-	DATA_ROOT,
-	getWeekRange,
-	loadCityConfig,
-	toISODate,
-} from "../common.ts";
 
-export interface GeminiUsage {
-	calls: number;
-	promptTokens: number;
-	outputTokens: number;
-	cachedTokens: number;
-	/** Tokens written to a provider prompt cache (Anthropic bills these at 1.25×). */
-	cacheWriteTokens: number;
-	/** Reasoning/thinking tokens — billed as output, reported separately so a
-	 * model that thinks by default shows up as such. */
-	thoughtTokens: number;
-	/** Calls that used a search tool. */
-	grounded: number;
-	/** Individual web searches executed — the unit search fees are billed in. */
-	searchQueries: number;
-	failures: number;
-	retries: number;
-	/** Rough spend from PRICES. An estimate for ranking stages against each
-	 * other, not an invoice. */
-	estimatedUsd: number;
-}
-
-/**
- * USD per million tokens, plus per-search fees, for every model the pipeline
- * calls. ponytail: hand-maintained list; when a model is missing the estimate is
- * 0 and the row still shows its tokens, so nothing is hidden — just unpriced.
- */
-export const PRICES: Record<
-	string,
-	{
-		input: number;
-		output: number;
-		cacheRead?: number;
-		cacheWrite?: number;
-		/** USD per search query. Gemini grounding is free inside its monthly
-		 * quota (5,000 prompts), so it is 0 here. */
-		perSearch?: number;
-	}
-> = {
-	"gemini-3.1-flash-lite": { input: 0.1, output: 0.4, cacheRead: 0.025 },
-	"gemini-3.5-flash": { input: 0.3, output: 2.5, cacheRead: 0.075 },
-	"claude-sonnet-5": {
-		input: 2,
-		output: 10,
-		cacheRead: 0.2,
-		cacheWrite: 2.5,
-		perSearch: 0.01,
-	},
-	"claude-haiku-4-5": {
-		input: 1,
-		output: 5,
-		cacheRead: 0.1,
-		cacheWrite: 1.25,
-		perSearch: 0.01,
-	},
-	"gpt-5-mini": { input: 0.25, output: 2, cacheRead: 0.025, perSearch: 0.01 },
-	"sonar-pro": { input: 3, output: 15, perSearch: 0.008 },
-};
-
-export function estimateUsd(model: string, u: Partial<GeminiUsage>): number {
-	const p = PRICES[model];
-	if (!p) return 0;
-	const uncached = (u.promptTokens ?? 0) - (u.cachedTokens ?? 0);
-	return (
-		(Math.max(0, uncached) * p.input +
-			(u.cachedTokens ?? 0) * (p.cacheRead ?? p.input) +
-			(u.cacheWriteTokens ?? 0) * (p.cacheWrite ?? p.input) +
-			((u.outputTokens ?? 0) + (u.thoughtTokens ?? 0)) * p.output) /
-			1_000_000 +
-		(u.searchQueries ?? 0) * (p.perSearch ?? 0)
-	);
-}
-
-function emptyUsage(): GeminiUsage {
-	return {
-		calls: 0,
-		promptTokens: 0,
-		outputTokens: 0,
-		cachedTokens: 0,
-		cacheWriteTokens: 0,
-		thoughtTokens: 0,
-		grounded: 0,
-		searchQueries: 0,
-		failures: 0,
-		retries: 0,
-		estimatedUsd: 0,
-	};
-}
-
-/** Usage per named stage, so the summary says which stage spent the money. */
-const usage = new Map<string, GeminiUsage>();
-
-/** Adds one call's numbers to a stage. Any provider may call this. */
-export function recordUsage(stage: string, patch: Partial<GeminiUsage>): void {
-	const current = usage.get(stage) ?? emptyUsage();
-	for (const [k, v] of Object.entries(patch)) {
-		current[k as keyof GeminiUsage] += v as number;
-	}
-	usage.set(stage, current);
-}
+// Accounting lives in @dothingslol/llm from 1.6 step 4 on; the search
+// providers and the not-yet-migrated call sites record through these
+// re-exports so one table covers the whole run during the migration.
+export {
+	estimateUsd,
+	PRICES,
+	recordUsage,
+	type StageUsage as GeminiUsage,
+} from "@dothingslol/llm";
+export {
+	installUsageReporting,
+	persistUsage,
+	reportGeminiUsage,
+	usagePath,
+} from "../io/usage.ts";
 
 /**
  * Concurrent Gemini calls across the whole process. Deliberately low: the
@@ -406,111 +321,5 @@ export async function geminiText(
 		throw lastErr;
 	} finally {
 		release();
-	}
-}
-
-/** Where a run's usage is persisted: one file per city-week, merged across the
- * five scripts that make up a run, committed alongside the data. */
-export function usagePath(city: string, weekStart: string): string {
-	return join(DATA_ROOT, city, "usage", `${weekStart}.json`);
-}
-
-/**
- * Merges this process's per-stage usage into the week's file. Additive per
- * stage, because collect/curate/rank each run as their own process and each
- * would otherwise overwrite the others.
- */
-export function persistUsage(
-	path: string,
-	snapshot: Map<string, GeminiUsage>,
-): void {
-	let existing: Record<string, GeminiUsage> = {};
-	if (existsSync(path)) {
-		try {
-			existing =
-				(
-					JSON.parse(readFileSync(path, "utf-8")) as {
-						stages?: typeof existing;
-					}
-				).stages ?? {};
-		} catch {
-			// unreadable — start over rather than fail the run over accounting
-		}
-	}
-	for (const [stage, u] of snapshot) {
-		const merged = existing[stage] ?? emptyUsage();
-		for (const k of Object.keys(u) as (keyof GeminiUsage)[]) merged[k] += u[k];
-		existing[stage] = merged;
-	}
-	mkdirSync(dirname(path), { recursive: true });
-	writeFileSync(
-		path,
-		JSON.stringify(
-			{ updated_at: new Date().toISOString(), stages: existing },
-			null,
-			2,
-		),
-		"utf-8",
-	);
-}
-
-let reported = false;
-
-/** Prints what the run actually spent, per stage, and merges it into the
- * week's usage file. The only way to know whether an optimisation worked.
- *
- * Idempotent: scripts call it explicitly before exiting AND it is wired to the
- * process exit hook, so without the guard the summary printed twice. */
-export function reportGeminiUsage(): void {
-	if (reported || usage.size === 0) return;
-	reported = true;
-	const rows = [...usage.entries()].sort(
-		(a, b) => b[1].estimatedUsd - a[1].estimatedUsd,
-	);
-	const totals = emptyUsage();
-	console.log("\nModel usage");
-	console.log(
-		`  ${"stage".padEnd(24)} ${"calls".padStart(6)} ${"in".padStart(10)} ${"out".padStart(8)} ${"think".padStart(7)} ${"cached".padStart(8)} ${"cachew".padStart(8)} ${"search".padStart(7)} ${"~usd".padStart(7)}`,
-	);
-	const line = (stage: string, u: GeminiUsage): string =>
-		`  ${stage.slice(0, 24).padEnd(24)} ${String(u.calls).padStart(6)} ${u.promptTokens.toLocaleString().padStart(10)} ${u.outputTokens.toLocaleString().padStart(8)} ${u.thoughtTokens.toLocaleString().padStart(7)} ${u.cachedTokens.toLocaleString().padStart(8)} ${u.cacheWriteTokens.toLocaleString().padStart(8)} ${String(u.searchQueries).padStart(7)} ${u.estimatedUsd.toFixed(3).padStart(7)}`;
-	for (const [stage, u] of rows) {
-		for (const k of Object.keys(totals) as (keyof GeminiUsage)[]) {
-			totals[k] += u[k];
-		}
-		console.log(line(stage, u));
-	}
-	console.log(line("TOTAL", totals));
-	if (totals.retries > 0 || totals.failures > 0) {
-		console.log(
-			`  (${totals.retries} rate-limit retries, ${totals.failures} calls failed outright)`,
-		);
-	}
-	const city = process.env.CITY;
-	if (city) {
-		try {
-			const { timezone } = loadCityConfig(city);
-			const monday = getWeekRange(new Date(), timezone).monday;
-			const path = usagePath(city, toISODate(monday, timezone));
-			persistUsage(path, usage);
-			console.log(`  → ${path}`);
-		} catch (err) {
-			console.error(
-				`  ⚠ could not write usage file: ${(err as Error).message}`,
-			);
-		}
-	}
-}
-
-/** Prints the usage summary when the process ends, however it ends — including
- * an unhandled throw or a Ctrl-C, which is exactly when you most want to know
- * what it had already spent. */
-export function installUsageReporting(): void {
-	process.on("exit", reportGeminiUsage);
-	for (const signal of ["SIGINT", "SIGTERM"] as const) {
-		process.on(signal, () => {
-			reportGeminiUsage();
-			process.exit(130);
-		});
 	}
 }

@@ -3,7 +3,7 @@ import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
-import { estimateUsd, persistUsage } from "./gemini.ts";
+import { persistUsage } from "./usage.ts";
 
 function usage(overrides: Partial<Record<string, number>> = {}) {
 	return {
@@ -25,7 +25,7 @@ function usage(overrides: Partial<Record<string, number>> = {}) {
 test("persistUsage writes a fresh file with the given stages", () => {
 	const dir = mkdtempSync(join(tmpdir(), "eventyr-usage-"));
 	const path = join(dir, "2026-09-07.json");
-	persistUsage(path, new Map([["search/anthropic", usage()]]));
+	persistUsage(path, { "search/anthropic": usage() });
 	const written = JSON.parse(readFileSync(path, "utf-8"));
 	assert.equal(written.stages["search/anthropic"].calls, 1);
 	rmSync(dir, { recursive: true, force: true });
@@ -37,14 +37,8 @@ test("persistUsage adds to an existing stage rather than overwriting it", () => 
 	// has to accumulate across processes, not replace.
 	const dir = mkdtempSync(join(tmpdir(), "eventyr-usage-"));
 	const path = join(dir, "2026-09-07.json");
-	persistUsage(
-		path,
-		new Map([["rank", usage({ calls: 2, promptTokens: 500 })]]),
-	);
-	persistUsage(
-		path,
-		new Map([["rank", usage({ calls: 3, promptTokens: 700 })]]),
-	);
+	persistUsage(path, { rank: usage({ calls: 2, promptTokens: 500 }) });
+	persistUsage(path, { rank: usage({ calls: 3, promptTokens: 700 }) });
 	const written = JSON.parse(readFileSync(path, "utf-8"));
 	assert.equal(written.stages.rank.calls, 5);
 	assert.equal(written.stages.rank.promptTokens, 1200);
@@ -54,8 +48,8 @@ test("persistUsage adds to an existing stage rather than overwriting it", () => 
 test("persistUsage keeps stages from a different script untouched", () => {
 	const dir = mkdtempSync(join(tmpdir(), "eventyr-usage-"));
 	const path = join(dir, "2026-09-07.json");
-	persistUsage(path, new Map([["search/google", usage()]]));
-	persistUsage(path, new Map([["rank", usage()]]));
+	persistUsage(path, { "search/google": usage() });
+	persistUsage(path, { rank: usage() });
 	const written = JSON.parse(readFileSync(path, "utf-8"));
 	assert.equal(written.stages["search/google"].calls, 1);
 	assert.equal(written.stages.rank.calls, 1);
@@ -66,32 +60,8 @@ test("persistUsage recovers from an unreadable existing file rather than failing
 	const dir = mkdtempSync(join(tmpdir(), "eventyr-usage-"));
 	const path = join(dir, "2026-09-07.json");
 	writeFileSync(path, "not json");
-	persistUsage(path, new Map([["rank", usage()]]));
+	persistUsage(path, { rank: usage() });
 	const written = JSON.parse(readFileSync(path, "utf-8"));
 	assert.equal(written.stages.rank.calls, 1);
 	rmSync(dir, { recursive: true, force: true });
-});
-
-test("estimateUsd prices uncached and cached tokens differently", () => {
-	const cheap = estimateUsd("claude-sonnet-5", {
-		promptTokens: 1_000_000,
-		cachedTokens: 1_000_000,
-		outputTokens: 0,
-	});
-	const full = estimateUsd("claude-sonnet-5", {
-		promptTokens: 1_000_000,
-		cachedTokens: 0,
-		outputTokens: 0,
-	});
-	assert.ok(cheap < full, "a fully cached call must cost less than a cold one");
-});
-
-test("estimateUsd bills search queries as a flat per-query fee", () => {
-	const withSearch = estimateUsd("claude-sonnet-5", { searchQueries: 3 });
-	const without = estimateUsd("claude-sonnet-5", { searchQueries: 0 });
-	assert.ok(withSearch > without);
-});
-
-test("estimateUsd returns 0 for an unpriced model rather than throwing", () => {
-	assert.equal(estimateUsd("some-future-model", { promptTokens: 1000 }), 0);
 });
