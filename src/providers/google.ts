@@ -1,9 +1,8 @@
+import { ask } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
-import { GoogleGenAI } from "@google/genai";
 import { dedupeEvents } from "../common.ts";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import { BaseProvider, splitIntoBatches } from "./base.ts";
-import { geminiText } from "./gemini.ts";
 
 const SEARCH_MODEL = "gemini-3.1-flash-lite";
 const CURATE_MODEL = "gemini-3.1-flash-lite";
@@ -16,11 +15,10 @@ export class GoogleProvider extends BaseProvider {
 		"independents",
 		"open",
 	] as const;
-	private ai: GoogleGenAI;
-
-	constructor(apiKey: string) {
+	// The key is read by @dothingslol/llm itself; the parameter stays until
+	// 1.7 gives every search provider the same constructor.
+	constructor(_apiKey: string) {
 		super();
-		this.ai = new GoogleGenAI({ apiKey });
 	}
 
 	private async generate(
@@ -28,11 +26,11 @@ export class GoogleProvider extends BaseProvider {
 		prompt: string,
 		maxOutputTokens = 8000,
 	): Promise<string> {
-		return geminiText(this.ai, {
-			stage: "search/google",
+		return ask(prompt, {
+			provider: "gemini",
 			model: SEARCH_MODEL,
-			contents: prompt,
-			systemInstruction: system,
+			stage: "search/google",
+			system,
 			search: true,
 			maxOutputTokens,
 		});
@@ -48,21 +46,18 @@ export class GoogleProvider extends BaseProvider {
 		console.log(
 			`  [${label}] Extracting… (${rawBatches.length} batch${rawBatches.length > 1 ? "es" : ""})`,
 		);
-		const extractSystem = this.buildExtractSystem(cityName);
+		// Every batch in flight at once under llm's Gemini limiter; a failed
+		// batch rejects the whole curation, as the Promise.all before it did.
 		const rawExtracted = (
-			await Promise.all(
-				rawBatches.map(async (batch, i) => {
-					const batchLabel = `${label} extract ${i + 1}/${rawBatches.length}`;
-					const raw = await this.curateText(
-						batch,
-						extractSystem,
-						16000,
-						"curate/extract",
-					);
-					return this.parseEvents(raw, batchLabel);
-				}),
+			await this.curateText(
+				rawBatches,
+				this.buildExtractSystem(cityName),
+				16000,
+				"curate/extract",
 			)
-		).flat();
+		).flatMap((raw, i) =>
+			this.parseEvents(raw, `${label} extract ${i + 1}/${rawBatches.length}`),
+		);
 		// Batches are extracted independently, so the same event mentioned in
 		// two different source paragraphs (one bare, one with a venue suffix)
 		// can land in separate batches and come out twice — dedupe here,
@@ -76,35 +71,30 @@ export class GoogleProvider extends BaseProvider {
 		);
 		if (extracted.length === 0) return [];
 
-		const enrichSystem = this.buildFormatSystem(cityName);
 		const eventBatches = chunkArray(extracted, 20);
 		const curated = (
-			await Promise.all(
-				eventBatches.map(async (batch, i) => {
-					const batchLabel = `${label} curate ${i + 1}/${eventBatches.length}`;
-					const raw = await this.curateText(
-						JSON.stringify(batch),
-						enrichSystem,
-					);
-					return this.parseEvents(raw, batchLabel);
-				}),
+			await this.curateText(
+				eventBatches.map((batch) => JSON.stringify(batch)),
+				this.buildFormatSystem(cityName),
 			)
-		).flat();
+		).flatMap((raw, i) =>
+			this.parseEvents(raw, `${label} curate ${i + 1}/${eventBatches.length}`),
+		);
 		console.log(`  [${label}] ${curated.length} events curated`);
 		return curated;
 	}
 
-	private async curateText(
-		rawText: string,
-		systemInstruction: string,
+	private curateText(
+		batches: string[],
+		system: string,
 		maxOutputTokens = 65536,
 		stage = "curate/enrich",
-	): Promise<string> {
-		return geminiText(this.ai, {
-			stage,
+	): Promise<string[]> {
+		return ask(batches, {
+			provider: "gemini",
 			model: CURATE_MODEL,
-			contents: rawText,
-			systemInstruction,
+			stage,
+			system,
 			maxOutputTokens,
 		});
 	}

@@ -1,7 +1,8 @@
+import "./llmBootstrap.ts";
 import { fmtDate, getWeekRange, loadCityConfig, requireEnv } from "./common.ts";
+import { installUsageReporting } from "./io/usage.ts";
 import { AnthropicProvider } from "./providers/anthropic.ts";
 import type { BaseProvider } from "./providers/base.ts";
-import { installUsageReporting } from "./providers/gemini.ts";
 import { GoogleProvider } from "./providers/google.ts";
 import { OpenAIProvider } from "./providers/openai.ts";
 import { PerplexityProvider } from "./providers/perplexity.ts";
