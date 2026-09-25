@@ -176,6 +176,9 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 
 ## Running locally
 
+The repo pins pnpm 11 via `packageManager` in `package.json`; run `corepack enable pnpm` once so
+`pnpm` resolves to that version here (and to your global default elsewhere).
+
 ```bash
 export CITY=brisbane   # or goldcoast, sunnycoast, byron
 # at least one search provider key:
