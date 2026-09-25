@@ -84,7 +84,13 @@ if (RAW) {
 	const to = ALL
 		? "9999-12-31"
 		: toISODate(new Date(sunday.getTime() + 7 * 86_400_000));
-	const { prepared, stats } = prepareCandidates(candidates, source, from, to);
+	const { prepared, stats } = prepareCandidates(
+		candidates,
+		source,
+		from,
+		to,
+		source.timeZone,
+	);
 	console.error(
 		`  ${stats.total} found → ${stats.kept} in window` +
 			`  (${stats.noDate} undated, ${stats.past} past, ${stats.later} later, ${stats.noTitle} untitled)`,

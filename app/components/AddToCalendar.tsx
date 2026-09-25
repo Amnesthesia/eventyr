@@ -114,7 +114,7 @@ export default function AddToCalendar({
 								type="button"
 								role="menuitem"
 								onClick={() => {
-									downloadEventIcs(event, cityKey);
+									downloadEventIcs(event, cityKey, cityData.timezone);
 									noteInterest(event, cityKey, "calendar");
 									setMenuOpen(false);
 								}}

@@ -3,6 +3,8 @@ import { test } from "node:test";
 import type { Event } from "../types";
 import { buildEventIcs, buildIcs, icsFilename } from "./ics";
 
+const BNE = "Australia/Brisbane";
+
 function ev(partial: Partial<Event>): Event {
 	return {
 		title: "Test Event",
@@ -31,7 +33,7 @@ test("a timed event is written as local wall-clock under a TZID", () => {
 	// local time and writes back UTC, so on an Australia/Brisbane machine every
 	// timed event came out ten hours early — a 7:30pm gig published as 9:30am —
 	// while CI happened to be correct. 193000 must appear verbatim.
-	const ics = buildEventIcs(ev({}), "brisbane") as string;
+	const ics = buildEventIcs(ev({}), "brisbane", BNE) as string;
 	assert.ok(
 		lines(ics).includes("DTSTART;TZID=Australia/Brisbane:20260905T193000"),
 		ics,
@@ -49,6 +51,7 @@ test("an explicit end is used as given", () => {
 	const ics = buildEventIcs(
 		ev({ datetime_end_iso: "2026-09-05T23:00:00" }),
 		"brisbane",
+		BNE,
 	) as string;
 	assert.ok(
 		lines(ics).includes("DTEND;TZID=Australia/Brisbane:20260905T230000"),
@@ -61,6 +64,7 @@ test("a date with no time is an all-day event, with an exclusive DTEND", () => {
 	const ics = buildEventIcs(
 		ev({ datetime_iso: "2026-09-05", datetime_end_iso: "" }),
 		"brisbane",
+		BNE,
 	) as string;
 	assert.ok(lines(ics).includes("DTSTART;VALUE=DATE:20260905"), ics);
 	assert.ok(lines(ics).includes("DTEND;VALUE=DATE:20260906"), ics);
@@ -70,14 +74,15 @@ test("a multi-day all-day event ends the day after its last day", () => {
 	const ics = buildEventIcs(
 		ev({ datetime_iso: "2026-09-05", datetime_end_iso: "2026-09-07" }),
 		"brisbane",
+		BNE,
 	) as string;
 	assert.ok(lines(ics).includes("DTEND;VALUE=DATE:20260908"), ics);
 });
 
 test("an undated event produces nothing rather than a broken file", () => {
-	assert.equal(buildEventIcs(ev({ datetime_iso: "" }), "brisbane"), null);
+	assert.equal(buildEventIcs(ev({ datetime_iso: "" }), "brisbane", BNE), null);
 	assert.equal(
-		buildEventIcs(ev({ datetime_iso: "every Tuesday" }), "brisbane"),
+		buildEventIcs(ev({ datetime_iso: "every Tuesday" }), "brisbane", BNE),
 		null,
 	);
 });
@@ -88,7 +93,7 @@ test("the UID matches the city feed's, so adding one event never duplicates it",
 		datetime_iso: "2026-09-06T14:00:00",
 		location: "Netherworld, Fortitude Valley",
 	});
-	const ics = buildEventIcs(event, "brisbane") as string;
+	const ics = buildEventIcs(event, "brisbane", BNE) as string;
 	// Same value src/ical.ts writes — see src/shared.test.ts, which pins it.
 	assert.ok(lines(ics).includes("UID:brisbane-b8wguc"), ics);
 });
@@ -101,6 +106,7 @@ test("TEXT values are escaped", () => {
 			location: "A, B; C",
 		}),
 		"brisbane",
+		BNE,
 	) as string;
 	assert.ok(ics.includes("SUMMARY:Wine\\; Cheese\\, and Chat"), ics);
 	assert.ok(ics.includes("LOCATION:A\\, B\\; C"), ics);
@@ -111,6 +117,7 @@ test("long lines are folded to 75 octets with a leading space", () => {
 	const ics = buildEventIcs(
 		ev({ title: "x".repeat(200) }),
 		"brisbane",
+		BNE,
 	) as string;
 	for (const line of lines(ics)) {
 		assert.ok(line.length <= 75, `${line.length}: ${line.slice(0, 40)}…`);
@@ -121,7 +128,7 @@ test("long lines are folded to 75 octets with a leading space", () => {
 });
 
 test("the calendar is well-formed and CRLF-terminated", () => {
-	const ics = buildEventIcs(ev({}), "brisbane") as string;
+	const ics = buildEventIcs(ev({}), "brisbane", BNE) as string;
 	assert.ok(ics.startsWith("BEGIN:VCALENDAR\r\n"));
 	assert.ok(ics.endsWith("END:VCALENDAR\r\n"));
 	assert.equal(lines(ics).filter((l) => l === "BEGIN:VEVENT").length, 1);
@@ -145,12 +152,15 @@ test("a saved-events export holds one VEVENT per dated event, skips undated", ()
 			ev({ title: "C", datetime_iso: "2026-09-06" }),
 		],
 		"brisbane",
-		{ name: "Saved, do things" },
+		{ timezone: BNE, name: "Saved, do things" },
 	) as string;
 	const all = lines(ics);
 	assert.equal(all.filter((l) => l === "BEGIN:VEVENT").length, 2);
 	assert.equal(all.filter((l) => l === "BEGIN:VCALENDAR").length, 1);
 	assert.ok(all.includes("X-WR-CALNAME:Saved\\, do things"), ics);
 	// Nothing dated means nothing to download, not an empty calendar.
-	assert.equal(buildIcs([ev({ datetime_iso: "" })], "brisbane"), null);
+	assert.equal(
+		buildIcs([ev({ datetime_iso: "" })], "brisbane", { timezone: BNE }),
+		null,
+	);
 });

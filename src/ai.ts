@@ -59,6 +59,7 @@ import {
 	eventPath,
 	isoWithOffset,
 	KEY_TO_SLUG,
+	loadCityConfig,
 	meetsScoreFloor,
 	PROJECT_ROOT,
 	SITE_URL,
@@ -319,7 +320,10 @@ function pruneStale(dir: string, keep: Set<string>): number {
 
 function processCity(payload: CityPayload, todayStr: string): CityIndexEntry {
 	const slug = KEY_TO_SLUG[payload.city_key] ?? payload.city_key;
-	const timezone = payload.timezone ?? "Australia/Brisbane";
+	// From the city config, not the payload: a digest written before the zone
+	// was corrected (Byron, until its next curate) must not keep publishing the
+	// old one.
+	const { timezone } = loadCityConfig(payload.city_key);
 	const cityDir = join(AI_ROOT, slug);
 	const keep = new Set<string>();
 

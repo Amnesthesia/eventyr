@@ -27,9 +27,6 @@ import {
 	zonedTimeToInstant,
 } from "../tz.ts";
 
-/** Still read by normalise.ts until it derives its offset from the zone too. */
-export const BRISBANE_UTC_OFFSET_HOURS = 10;
-
 // chrono takes an offset in minutes or a timezone *abbreviation*; an IANA name
 // is not recognised, so "Australia/Brisbane" silently fell back to the host
 // timezone and every scraped time on the UTC CI runner came out 10 hours late

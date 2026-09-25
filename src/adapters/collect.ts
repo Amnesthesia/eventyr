@@ -247,7 +247,13 @@ async function collectSource(
 	// Window-filter first so the detail-page pass only fetches for events we
 	// will publish: a venue's season listing is mostly "later", and those pages
 	// were being fetched for nothing.
-	const first = prepareCandidates(raw, source, WINDOW_FROM, WINDOW_TO);
+	const first = prepareCandidates(
+		raw,
+		source,
+		WINDOW_FROM,
+		WINDOW_TO,
+		source.timeZone,
+	);
 	writeRejections(source.id, first.rejected);
 
 	// Listing cards print "Sat 5 Sep" where the event's own page says
@@ -267,6 +273,7 @@ async function collectSource(
 		source,
 		WINDOW_FROM,
 		WINDOW_TO,
+		source.timeZone,
 	);
 	const stats: PrepareStats = { ...first.stats, kept: windowStats.kept };
 

@@ -44,7 +44,7 @@ test("guids are stable across rebuilds", () => {
 });
 
 test("feed is well-formed, escapes text, and keeps undated events", () => {
-	const xml = buildFeedFor(payload);
+	const xml = buildFeedFor(payload, "Australia/Brisbane");
 	assert.equal(
 		(xml.match(/<item>/g) ?? []).length,
 		3,
@@ -68,8 +68,23 @@ test("feed is well-formed, escapes text, and keeps undated events", () => {
 test("pubDate is the event's start, converted from Brisbane time to UTC", () => {
 	// 18:00 Brisbane (UTC+10) is 08:00 UTC the same day.
 	assert.ok(
-		buildFeedFor(payload).includes(
+		buildFeedFor(payload, "Australia/Brisbane").includes(
 			"<pubDate>Wed, 09 Sep 2026 08:00:00 GMT</pubDate>",
 		),
 	);
+});
+
+test("pubDate uses the city's DST offset on the event's own date", () => {
+	const sydney = {
+		...payload,
+		city_key: "byron",
+		events: [
+			{ ...payload.events[0], datetime_iso: "2026-07-10T19:00:00" },
+			{ ...payload.events[0], title: "b", datetime_iso: "2026-10-10T19:00:00" },
+		],
+	};
+	const xml = buildFeedFor(sydney, "Australia/Sydney");
+	// AEST (+10) in July, AEDT (+11) in October.
+	assert.ok(xml.includes("<pubDate>Fri, 10 Jul 2026 09:00:00 GMT</pubDate>"));
+	assert.ok(xml.includes("<pubDate>Sat, 10 Oct 2026 08:00:00 GMT</pubDate>"));
 });

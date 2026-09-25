@@ -59,7 +59,7 @@ const COST_LOCALE = {
 	currency: cityCfg.currency ?? DEFAULT_COST_LOCALE.currency,
 	// Needed by the schema.org dates on every page: a naive wall-clock string
 	// is ambiguous to a crawler. See isoWithOffset.
-	timezone: cityCfg.timezone ?? "Australia/Brisbane",
+	timezone: cityCfg.timezone,
 };
 
 // Same window the scrape pass uses: today through the end of next week. Kept

@@ -119,7 +119,7 @@ const availableCategories = (cityCategories ??
 	.filter((c) => c.catSlug)
 	.sort((a, b) => a.label.localeCompare(b.label));
 
-const timezone = cityData.timezone ?? "Australia/Brisbane";
+const timezone = cityData.timezone;
 const costLocale = {
 	locale: cityData.locale ?? DEFAULT_COST_LOCALE.locale,
 	currency: cityData.currency ?? DEFAULT_COST_LOCALE.currency,

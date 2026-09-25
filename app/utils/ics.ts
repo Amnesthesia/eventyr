@@ -110,10 +110,7 @@ function eventLines(
 export function buildIcs(
 	events: Event[],
 	cityKey: string,
-	{
-		timezone = "Australia/Brisbane",
-		name,
-	}: { timezone?: string; name?: string } = {},
+	{ timezone, name }: { timezone: string; name?: string },
 ): string | null {
 	const blocks = events
 		.map((e) => eventLines(e, cityKey, timezone))
@@ -134,7 +131,7 @@ export function buildIcs(
 export function buildEventIcs(
 	event: Event,
 	cityKey: string,
-	timezone = "Australia/Brisbane",
+	timezone: string,
 ): string | null {
 	return buildIcs([event], cityKey, { timezone });
 }
@@ -156,8 +153,12 @@ export function icsFilename(event: Event): string {
  * otherwise be computed during SSR where anything time-dependent differs from
  * the hydrated render.
  */
-export function downloadEventIcs(event: Event, cityKey: string): boolean {
-	const ics = buildEventIcs(event, cityKey);
+export function downloadEventIcs(
+	event: Event,
+	cityKey: string,
+	timezone: string,
+): boolean {
+	const ics = buildEventIcs(event, cityKey, timezone);
 	if (!ics) return false;
 	downloadIcs(ics, icsFilename(event));
 	return true;

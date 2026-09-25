@@ -69,7 +69,7 @@ import {
 } from "./feeds.ts";
 import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
-import { brisbaneNaive, isPast, withinWindow } from "./normalise.ts";
+import { isPast, withinWindow, zonedNaive } from "./normalise.ts";
 import { densestWindow, stripToReadableText } from "./readableText.ts";
 import type { PageExtractFn, RawCandidateFields } from "./types.ts";
 
@@ -752,8 +752,8 @@ class Prober {
 		let past = 0;
 		let later = 0;
 		for (const c of events) {
-			const start = brisbaneNaive(c.startISO);
-			const end = brisbaneNaive(c.endISO);
+			const start = zonedNaive(c.startISO, this.timeZone);
+			const end = zonedNaive(c.endISO, this.timeZone);
 			if (isPast(start, end, WINDOW_FROM)) past++;
 			else if (withinWindow(start, end, WINDOW_FROM, WINDOW_TO)) inWindow++;
 			else later++;
@@ -841,8 +841,8 @@ class Prober {
 			let past = 0;
 			let later = 0;
 			for (const c of datedEvents(fields)) {
-				const start = brisbaneNaive(c.startISO);
-				const end = brisbaneNaive(c.endISO);
+				const start = zonedNaive(c.startISO, this.timeZone);
+				const end = zonedNaive(c.endISO, this.timeZone);
 				if (isPast(start, end, WINDOW_FROM)) past++;
 				else if (withinWindow(start, end, WINDOW_FROM, WINDOW_TO)) inWindow++;
 				// Beyond the publishing window but still ahead of us. This used

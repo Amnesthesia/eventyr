@@ -62,7 +62,7 @@ function eventUrl(event: Event, cityKey: string): string {
 export function googleCalendarUrl(
 	event: Event,
 	cityKey: string,
-	timezone = "Australia/Brisbane",
+	timezone: string,
 ): string | null {
 	const dates = span(event);
 	if (!dates) return null;
@@ -82,7 +82,7 @@ export function googleCalendarUrl(
 export function outlookCalendarUrl(
 	event: Event,
 	cityKey: string,
-	timezone = "Australia/Brisbane",
+	timezone: string,
 ): string | null {
 	const dates = span(event);
 	if (!dates) return null;
@@ -138,7 +138,7 @@ export interface CalendarLink {
 export function calendarLinks(
 	event: Event,
 	cityKey: string,
-	timezone?: string,
+	timezone: string,
 ): CalendarLink[] {
 	const rows: CalendarLink[] = [
 		{

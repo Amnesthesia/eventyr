@@ -80,7 +80,7 @@ const description = [shareDescription, eventDescription]
 // see isLikelyImageUrl for the measurement and the rule.
 const ogImage = isLikelyImageUrl(event.image) ? event.image : undefined;
 
-const timezone = cityData.timezone ?? "Australia/Brisbane";
+const timezone = cityData.timezone;
 const cityName = cityData.city.split(",")[0];
 
 const schema = {
@@ -274,7 +274,7 @@ const vibes = vibesOf(event as Event);
     const calendar = document.querySelector("[data-action='calendar']");
     // Revealed only once we know an .ics can actually be produced — an event
     // with no parsable date would otherwise offer a broken link.
-    if (calendar && buildEventIcs(event, cityKey)) {
+    if (calendar && buildEventIcs(event, cityKey, timezone)) {
       // The same platform guess the cards make: an Apple device gets the real
       // .ics URL, which Safari hands to Calendar with no download step, and
       // everyone else a prefilled Google Calendar. Falling back to the file
@@ -298,7 +298,7 @@ const vibes = vibesOf(event as Event);
         });
       } else {
         calendar.addEventListener("click", () => {
-          downloadEventIcs(event, cityKey);
+          downloadEventIcs(event, cityKey, timezone);
           noteInterest(event, cityKey, "calendar");
         });
       }

@@ -107,7 +107,7 @@ const TIME_KEY =
 
 /** A candidate whose start is midnight has a date but no time.
  * ponytail: a genuine midnight event is indistinguishable — the same
- * limitation normalise.ts's brisbaneNaive already documents. */
+ * limitation normalise.ts's zonedNaive already documents. */
 function needsTime(candidate: CandidateEvent): boolean {
 	const iso = candidate.startISO;
 	if (!iso) return false;

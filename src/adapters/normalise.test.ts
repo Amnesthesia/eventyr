@@ -1,15 +1,17 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
-	brisbaneNaive,
 	candidateToEvent,
 	councilEventUrl,
 	humanDatetime,
 	isPast,
 	prepareCandidates,
 	withinWindow,
+	zonedNaive,
 } from "./normalise.ts";
 import type { CandidateEvent, SourceDefinition } from "./types.ts";
+
+const BNE = "Australia/Brisbane";
 
 // The exact shape ical.ts's parseDt accepts (src/ical.ts:19,30). Anything
 // else is silently dropped from the feed, with no error anywhere — so this
@@ -59,40 +61,57 @@ const SOURCE: SourceDefinition = {
 	timeZone: "Australia/Brisbane",
 };
 
-test("brisbaneNaive keeps wall-clock for an explicit +10:00 offset", () => {
+test("zonedNaive keeps wall-clock for an explicit +10:00 offset", () => {
 	assert.equal(
-		brisbaneNaive("2026-10-05T19:00:00+10:00"),
+		zonedNaive("2026-10-05T19:00:00+10:00", BNE),
 		"2026-10-05T19:00:00",
 	);
 });
 
-test("brisbaneNaive shifts a UTC instant into Brisbane time", () => {
+test("zonedNaive shifts a UTC instant into Brisbane time", () => {
 	// dates.ts:187 normalises any explicitly-offset ISO input to UTC, so the
 	// JSON-LD path produces this shape. Slicing the offset off the string
 	// instead of converting would land on 09:00 — ten hours wrong.
 	assert.equal(
-		brisbaneNaive("2026-10-05T09:00:00.000Z"),
+		zonedNaive("2026-10-05T09:00:00.000Z", BNE),
 		"2026-10-05T19:00:00",
 	);
 });
 
-test("brisbaneNaive collapses parsed midnight to a date-only string", () => {
-	assert.equal(brisbaneNaive("2026-09-05T00:00:00+10:00"), "2026-09-05");
+test("zonedNaive collapses parsed midnight to a date-only string", () => {
+	assert.equal(zonedNaive("2026-09-05T00:00:00+10:00", BNE), "2026-09-05");
 });
 
-test("brisbaneNaive returns null for missing or unparsable input", () => {
-	assert.equal(brisbaneNaive(null), null);
-	assert.equal(brisbaneNaive("next Tuesday"), null);
+test("zonedNaive returns null for missing or unparsable input", () => {
+	assert.equal(zonedNaive(null, BNE), null);
+	assert.equal(zonedNaive("next Tuesday", BNE), null);
 });
 
-test("every brisbaneNaive output is accepted by ical.ts's parseDt", () => {
+test("zonedNaive uses the offset in force at the instant, for a DST city", () => {
+	const SYD = "Australia/Sydney";
+	// 08:00Z is 7pm in Sydney in October (AEDT, +11) but 6pm in July (AEST).
+	assert.equal(
+		zonedNaive("2026-10-10T08:00:00.000Z", SYD),
+		"2026-10-10T19:00:00",
+	);
+	assert.equal(
+		zonedNaive("2026-07-10T08:00:00.000Z", SYD),
+		"2026-07-10T18:00:00",
+	);
+	// dates.ts gives a date-only value its own midnight's offset, so both sides
+	// of the DST change collapse back to a date.
+	assert.equal(zonedNaive("2026-10-04T00:00:00+10:00", SYD), "2026-10-04");
+	assert.equal(zonedNaive("2026-10-05T00:00:00+11:00", SYD), "2026-10-05");
+});
+
+test("every zonedNaive output is accepted by ical.ts's parseDt", () => {
 	for (const iso of [
 		"2026-10-05T19:00:00+10:00",
 		"2026-10-05T09:00:00.000Z",
 		"2026-09-05T00:00:00+10:00",
 		"2026-01-01T23:59:00+10:00",
 	]) {
-		const out = brisbaneNaive(iso);
+		const out = zonedNaive(iso, BNE);
 		assert.ok(out, `expected a value for ${iso}`);
 		assert.match(out, ICAL_ACCEPTS, `ical.ts would silently drop ${out}`);
 	}
@@ -151,12 +170,13 @@ test("candidateToEvent composes location from candidate then registry venue", ()
 		candidateToEvent(
 			candidate({ venueName: "The Tivoli", address: "52 Costin St" }),
 			SOURCE,
+			BNE,
 		).location,
 		"The Tivoli, 52 Costin St",
 	);
 	// falls back to the registry when the page names no venue
 	assert.equal(
-		candidateToEvent(candidate(), SOURCE).location,
+		candidateToEvent(candidate(), SOURCE, BNE).location,
 		"Test Venue, 1 Example St",
 	);
 	// no duplication when the address is already inside the venue name
@@ -167,29 +187,32 @@ test("candidateToEvent composes location from candidate then registry venue", ()
 				address: "New Farm",
 			}),
 			undefined,
+			BNE,
 		).location,
 		"Brisbane Powerhouse, New Farm",
 	);
-	assert.equal(candidateToEvent(candidate(), undefined).location, "");
+	assert.equal(candidateToEvent(candidate(), undefined, BNE).location, "");
 });
 
 test("candidateToEvent always produces a string cost (markdown.ts lowercases it)", () => {
-	assert.equal(candidateToEvent(candidate(), SOURCE).cost, "See link");
+	assert.equal(candidateToEvent(candidate(), SOURCE, BNE).cost, "See link");
 	assert.equal(
-		candidateToEvent(candidate({ price: "AUD 25" }), SOURCE).cost,
+		candidateToEvent(candidate({ price: "AUD 25" }), SOURCE, BNE).cost,
 		"AUD 25",
 	);
 });
 
 test("candidateToEvent drops a relative image URL", () => {
 	assert.equal(
-		candidateToEvent(candidate({ imageUrl: "/img/hero.jpg" }), SOURCE).image,
+		candidateToEvent(candidate({ imageUrl: "/img/hero.jpg" }), SOURCE, BNE)
+			.image,
 		"",
 	);
 	assert.equal(
 		candidateToEvent(
 			candidate({ imageUrl: "https://example.com/hero.jpg" }),
 			SOURCE,
+			BNE,
 		).image,
 		"https://example.com/hero.jpg",
 	);
@@ -197,7 +220,7 @@ test("candidateToEvent drops a relative image URL", () => {
 
 test("candidateToEvent falls back to the source homepage for a missing link", () => {
 	assert.equal(
-		candidateToEvent(candidate(), SOURCE).link,
+		candidateToEvent(candidate(), SOURCE, BNE).link,
 		"https://example.com",
 	);
 });
@@ -217,6 +240,7 @@ test("prepareCandidates drops untitled, undated, past and out-of-window candidat
 		SOURCE,
 		"2026-09-07",
 		"2026-09-13",
+		BNE,
 	);
 	assert.equal(prepared.length, 1);
 	assert.equal(prepared[0].event.title, "Keeper");
@@ -245,6 +269,7 @@ test("rejections are recorded with the raw date text that failed", () => {
 		SOURCE,
 		"2026-09-07",
 		"2026-09-13",
+		BNE,
 	);
 	assert.equal(rejected.length, 2);
 	assert.deepEqual(

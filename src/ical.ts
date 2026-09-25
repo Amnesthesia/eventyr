@@ -21,17 +21,6 @@ import {
 
 const CITY = requireEnv("CITY");
 
-/**
- * Converts the pipeline's naive Brisbane wall-clock strings into the
- * YYYYMMDDTHHMMSS stamps a VEVENT carries under `TZID=Australia/Brisbane`.
- *
- * Done by string surgery on purpose. The previous version did
- * `new Date("2026-09-03T19:30:00").toISOString()`, which parses as the HOST's
- * local time and writes back UTC — an identity only when the host is UTC. On
- * an Australia/Brisbane machine every timed event came out ten hours early
- * (a 7:30pm gig published as 9:30am) while CI happened to be right. The
- * value is already local to `tz`, so it must not be converted at all.
- */
 /** YYYYMMDD[THHMMSS] stamp from a naive wall-clock string, no conversion. */
 function stamp(value: string): string {
 	return value.replace(/[-:]/g, "");
@@ -55,8 +44,8 @@ const TIMED = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/;
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
 
 /**
- * Converts the pipeline's naive Brisbane wall-clock strings into the stamps a
- * VEVENT carries under `TZID=<city timezone>`.
+ * Converts the pipeline's naive city-local wall-clock strings into the stamps
+ * a VEVENT carries under `TZID=<city timezone>`.
  *
  * String surgery on purpose. The previous version did
  * `new Date("2026-09-03T19:30:00").toISOString()`, which parses as the HOST's

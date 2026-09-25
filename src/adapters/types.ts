@@ -99,7 +99,7 @@ export interface RawListing {
 export interface CandidateEvent {
 	title: string | null;
 	description: string | null;
-	/** Brisbane-instant ISO 8601 (UTC+10, no DST), or null if not confidently parsed. */
+	/** ISO 8601 in the city's zone, with the offset in force at that instant (dates.ts), or null if not confidently parsed. */
 	startISO: string | null;
 	/** Original date/time string exactly as found on the page. */
 	startRaw: string | null;
