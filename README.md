@@ -53,7 +53,7 @@ flowchart TD
 
     subgraph SCRAPE["1 · collect-adapters (scrape)"]
         direction TB
-        F[fetch listing pages] --> X["extract<br/>JSON-LD → embedded JSON → LLM over page text"]
+        F["scrape() · @dothingslol/scraper<br/>fetch listing pages"] --> X["extract<br/>site feed → JSON-LD → embedded JSON → LLM over page text"]
         X --> W[week-filter · dates parsed in code]
         W --> A["annotate (Gemini)<br/>category · tags · vibes<br/>drop ONLY sport / MLM / sales / online / private hire<br/>⚠ does not see INTERESTS"]
     end

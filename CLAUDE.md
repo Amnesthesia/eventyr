@@ -28,11 +28,11 @@ change as any stage change (including where `INTERESTS` is or isn't applied).
    plus two canonical paths, and keeps only those that actually yield dated events. With
    `--apply`, promotes those sources to `method: scraper` in `sources/{city}.yml` with their
    verified `listingUrls`. Dry-run by default; prints every page tried and what came of it.
-1c. **`src/adapters/collect.ts`** (`pnpm collect-adapters [--only=id,...]`) — runs before `collect`. Scrapes
-   every `method: scraper` source (JSON-LD → embedded hydration JSON → LLM over page text),
-   week-filters, maps to the pipeline event shape, annotates category/tags/vibes with one
-   small Gemini call per source, writes one file per source to
-   `data/{city}/adapters/curated/{id}.json`.
+1c. **`src/adapters/collect.ts`** (`pnpm collect-adapters [--only=id,...]`) — runs before `collect`. Calls
+   `@dothingslol/scraper`'s `scrape()` on every listing URL of every `method: scraper` source
+   (site feed → JSON-LD → embedded hydration JSON → the injected LLM rung, `llmExtract.ts`),
+   week-filters, enriches from detail pages, annotates category/tags/vibes with one small
+   Gemini call per source, writes one file per source to `data/{city}/adapters/curated/{id}.json`.
 2. **`src/collection.ts`** (`pnpm collect [provider]`) — for each configured provider
    (anthropic/google/openai/perplexity), searches events per source tier and writes raw curated
    JSON to `data/{city}/{provider}/curated/{tier}[-music].json`. See "Provider architecture" below.
@@ -181,12 +181,27 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 - `src/common.ts` — `INTERESTS` (the fixed interest profile every prompt is built from),
   `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`, `curatedPath()`; re-exports
   everything from `@dothingslol/core/shared` so pipeline modules have one import site.
-- `src/adapters/` — the scrape path: `probe.ts` (find/verify listing URLs), `fetch.ts`
-  (rate limits, conditional GET; robots.txt is deliberately not consulted as a
-  permission check — see its header), `extract.ts` (JSON-LD),
-  `embeddedJson.ts`
-  (Next.js/hydration state), `llmExtract.ts` (LLM over page text), `dates.ts` (all date
-  parsing — never an LLM), `normalise.ts`, `annotate.ts`, `collect.ts`.
+- `packages/scraper` (`@dothingslol/scraper`) — the deterministic scrape path, with no LLM code
+  and no knowledge of `data/`, cities or `sources/*.yml`: `scrape(url, opts)` returns a
+  `ScrapeResult` (fetch status that separates `not-modified`/`blocked`/`failed` from `ok`, the
+  rung and feed format that answered, found → kept with named rejections, the candidates, and
+  the normalised-but-unannotated events). Inside: `fetch.ts` (got-scraping, per-host rate
+  limits, conditional GET through an injected `HttpCacheStore`; robots.txt is deliberately not
+  consulted as a permission check — see its header), `ladder.ts` (feed → JSON-LD → embedded
+  JSON → injected fallback), `parsers/` (`feeds`, `jsonLd`, `embeddedJson`, `text`, `dates` —
+  all date parsing, never an LLM; exported as `@dothingslol/scraper/parsers`), `enrich.ts`
+  (detail-page times and descriptions), `normalise.ts` (`CandidateEvent` → event mapping),
+  `render.ts` (`/render`: Playwright as an optional peer, loaded lazily). Page fixtures under
+  `packages/scraper/test/fixtures`; `node scripts/scrape-parity.mjs` proves output parity
+  against `test/golden/scrape`.
+- `src/adapters/` — what the pipeline keeps around the scraper: `collect.ts` (calls `scrape()`,
+  windows, enriches, annotates, writes the per-source files), `llmExtract.ts` (the LLM rung,
+  passed to `scrape()` as `fallback`), `annotate.ts`, `normalise.ts` (publishing window,
+  `councilEventUrl`, `prepareCandidates`), `registry.ts` and `types.ts` (`SourceDefinition`
+  from `sources/{city}.yml`), source maintenance (`probe.ts`, `discover.ts`, `triage.ts`, the
+  promotion half of `render.ts`) and `testUrl.ts` (`pnpm test-adapter`; `EVENTYR_SCRAPE_FIXTURES`
+  replays a fixture manifest instead of the network). `src/io/httpCache.ts` is the
+  `HttpCacheStore` over `data/_cache` and `data/_raw`.
 - `src/dedupe.ts` — cross-source dedupe: date blocking, deterministic matching, LLM only for
   the ambiguous minority. Strategy documented in the file header.
 - `src/locality.ts` — geocodes locations (Google Geocoding API) so `curate.ts` can drop events a
