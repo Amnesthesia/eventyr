@@ -22,6 +22,7 @@ in 1.7. Along the way:
 - The limiter, budget, 429 backoff, price table and usage counters move into `llm`.
 - Usage **persistence** (`data/{city}/usage/*.json`) stays in the pipeline, behind a `UsageSink`.
 - The content-addressed extraction cache becomes `llm`'s `cache` option, backed by a store the pipeline injects.
+- The provider-native **batch transport** (D14) is built, with Gemini first and Anthropic/OpenAI in 1.7. It is tested against recorded batch responses and **not used by any stage**.
 
 The requests sent to Gemini must be byte-identical before and after.
 
@@ -34,7 +35,7 @@ The requests sent to Gemini must be byte-identical before and after.
 **New**
 - `packages/llm/**`:
   - `src/index.ts`, `src/client.ts` (singleton, `configureLLM`, limiter, budget)
-  - `src/providers/gemini.ts`, `src/pricing.ts`, `src/json.ts` (`parseJsonArray`, moved), `src/cache.ts`, `src/replay.ts`
+  - `src/providers/gemini.ts`, `src/pricing.ts`, `src/json.ts` (`parseJsonArray`, moved), `src/cache.ts`, `src/replay.ts`, `src/batch.ts`
   - `src/errors.ts`, `src/types.ts`, plus tests
 - `src/io/usage.ts` (pipeline `UsageSink`: `usagePath`, `persistUsage`, `reportGeminiUsage`, `installUsageReporting`, moved from `providers/gemini.ts`)
 - `src/io/fileCache.ts` (pipeline `CacheStore`, from `adapters/extractionCache.ts`)
@@ -101,22 +102,35 @@ Map `AskOptions` to exactly today's `generateContent` call:
 | `providerOptions` | merged last, like today's `extraConfig` |
 
 - A single string prompt becomes `contents: <string>`, as today.
-- A `string[]` prompt becomes `parts`. It is unused in PR 1.
+- A `string[]` is **N independent prompts with the same options** (D14). The default runs them as concurrent individual calls under the Gemini limiter, which is the same request stream `mapWithConcurrency` produces today.
 - Key order inside `config` must produce identical request JSON.
 
 **The rest of the API**
-- `ask`, `askJson` and `askMany`.
-  - `askJson` = `json: true` + `parseJsonArray` + optional zod + one retry on an empty answer.
+- `ask(string)` → `string` and `ask(string[])` → `string[]`. The array form preserves order and rejects with `BatchError` (which carries per-index outcomes) if any prompt fails.
+- `askDetailed` gives the same calls but returns `LLMResponse` / `PromiseSettledResult<LLMResponse>[]` with `usage` (`inputTokens`, `outputTokens`, `thoughtTokens`, `cachedInputTokens`, `totalTokens`, `searchQueries`, `estimatedCostUsd`), `attempts`, `durationMs`, `finishReason`, `fromCache` and `viaBatch`. It is built from the same usage metadata the wrapper already records, so accounting is unchanged.
+  - Where a call site today uses `mapWithConcurrency` and handles failures per item, migrate it to `askDetailed(prompts)` so its partial-failure behaviour stays identical. Otherwise keep the site's own loop around single `ask` calls. Choose per site, whichever keeps the request stream identical.
+- `usageTotals()` returns per-stage totals. The pipeline's run record uses them in PR 2.
+- `askJson` = `json: true` + `parseJsonArray` + optional zod + one retry on an empty answer.
   - Only use the retry where the old call site already retried. Otherwise pass `retryEmpty: false`, so the number of requests stays identical.
 - `cache` option backed by `CacheStore`. The key derivation is the same as `adapters/extractionCache.ts` (input text + prompt version), so existing cache files in `data/_cache/extractions` stay valid. Test that an existing entry is read.
 - `replay` mode: the same record and replay semantics as the step 1 seam, using the **same line format**, so the goldens apply unchanged.
 - `LLMUnavailableError` is thrown for a missing key.
+- **Batch transport, Gemini (`src/batch.ts` + `providers/gemini.ts`).** `ask(prompts, { batch: true | { deadlineMs } })` does the following:
+  1. Submits one Gemini Batch Mode job. Inline requests are used under 20 MB; above that, a JSONL file.
+  2. Persists the job ID via the injected `BatchStore` **before** polling.
+  3. Polls with backoff until the job completes or `deadlineMs` passes.
+  4. Maps the results back in input order, and records usage at batch pricing (50%; add batch prices to `pricing.ts` with a source comment).
+
+  On resume, a stored job ID for the same request hash is collected, not resubmitted.
+  - **Verify against the current docs** whether batch requests support `googleSearch` grounding, `systemInstruction`, JSON mode and thinking config. For anything unsupported, throw `BatchNotSupportedError` naming the option. Never drop it silently.
+  - Tests use recorded batch-create, batch-get and results fixtures. **No stage passes `batch` in PR 1.** Adoption is a follow-up (PLAN §11 Q3).
 
 ### 4. Pipeline side
 
 - `src/io/usage.ts` implements `UsageSink` using the moved persistence code, so the paths and file format are identical.
 - `src/io/fileCache.ts` implements `CacheStore` over `data/_cache/extractions`.
-- `src/llmBootstrap.ts` calls `configureLLM({ usage, cacheStore, replay: env… })` once. Every CLI that makes model calls imports it first.
+- `src/io/batchStore.ts` implements `BatchStore` under `data/_cache/llm-batches`. It is created now so the transport is testable end to end, but nothing uses it yet.
+- `src/llmBootstrap.ts` calls `configureLLM({ usage, cacheStore, batchStore, replay: env… })` once. Every CLI that makes model calls imports it first.
 
 ### 5. Migrate the nine call sites
 
@@ -134,7 +148,7 @@ Do them one commit each, in this order: `rank`, `venues`, `dedupeClassifier`, `a
 
 ### 7. `CLAUDE.md`
 
-Update "Calling models": the shared wrapper is now `@dothingslol/llm` (`ask`/`askJson`/`askMany`). Add a pointer to the replay harness (`scripts/llm-parity.mjs`) as the way to verify any prompt-adjacent refactor.
+Update "Calling models": the shared wrapper is now `@dothingslol/llm` (`ask` for strings and string arrays, `askDetailed` for usage metadata, `askJson`; `batch: true` for provider-native batch, which no stage uses yet). Add a pointer to the replay harness (`scripts/llm-parity.mjs`) as the way to verify any prompt-adjacent refactor.
 
 ## Verification
 
@@ -146,6 +160,8 @@ Update "Calling models": the shared wrapper is now `@dothingslol/llm` (`ask`/`as
 | V4 | Usage files unchanged in format | after a replay run of `rank`, compare `data/brisbane/usage/<week>.json` in the temporary data root with the step-1 run's | same keys, same counts |
 | V5 | Extraction cache compatibility | test: an entry written by the old `extractionCache.ts` is a hit via `ask({ cache })` | passes |
 | V6 | Budget semantics | unit test: `maxCalls: 2`, three calls → the third throws `BudgetExhaustedError` with the old message | passes |
+| V6b | Batch transport | unit tests on recorded Gemini batch fixtures: submit, then persist the job ID, then resume without resubmitting, then map results in order, then the deadline error | pass |
+| V6c | Metadata | `askDetailed` on a replayed call returns `inputTokens`, `outputTokens`, `totalTokens`, `estimatedCostUsd` equal to the usage the sink recorded | pass |
 | V7 | Boundaries | `node scripts/check-boundaries.mjs` | exit 0 |
 | V8 | Site unchanged | build + fingerprint | no diff |
 | V9 | PR CI | `CI` | green |

@@ -13,7 +13,7 @@
 
 ## Goal
 
-1. **Settings screen.** Build the spec in PLAN §7.3: notifications on/off with an explanation, the taste profile with +/− per tag, vibe and category, the auto-learn opt-out with the privacy note, theme (System, Light or Dark), and About.
+1. **Settings screen.** Build the spec in PLAN §7.3: notifications on/off with an explanation, the taste profile as Off · Unset · On per tag, vibe and category (D13), the auto-learn opt-out with the privacy note, theme (System, Light or Dark), and About.
 2. **Local notifications only (D3, PLAN §6).**
    - A reminder 1 hour before each liked event. Date-only events get theirs at 08:00 on the day.
    - An 08:00 summary of today's liked events.
@@ -43,7 +43,7 @@
 1. **Add `planSchedule` to core** (pure, with tests):
    ```ts
    export interface PlannedNotification { id: string; fireAt: string; title: string; body: string; url: string }
-   export function planSchedule(liked: readonly Event[], now: Date, opts: { cap: number; days: 7 }): PlannedNotification[];
+   export function planSchedule(liked: readonly EventData[], now: Date, opts: { cap: number; days: 7 }): PlannedNotification[];
    ```
    - Reuse `calculate1hReminderTime`, `filterEventsForMorningDigest`, `formatMorningDigest` and `formatEventTime` rather than forking them. Times come from `formatWhen`, in the device time zone.
    - "08:00" means device-local 08:00. The web does the same.
@@ -87,17 +87,14 @@
      - The "Learn from likes and dislikes" toggle (`setAutoLearn`).
      - A Tags section with search: the top 150 tags by frequency, taken from the current feed.
      - Vibes and Categories sections.
-     - Each row shows:
-       - a weight bar from −3 to +3, with the value as text
-       - a "learned" or "set by you" badge
-       - − and + buttons that call `setOverride(effective ± 1)`
-       - reset, which calls `clearOverride`
-     - "Reset all learning" and "Clear all overrides", each behind a confirmation.
+     - Each row is a segmented **Off · Unset · On** control backed by `stateOf`/`setState` (D13). There are **no numbers and no learned/manual badge**. A learned +4.2 and a hand-set +1 both show as On.
+     - "Reset all preferences" is behind a confirmation.
      - The internal `cat:__disliked__` is never shown.
    - **Appearance**
      - System, Light or Dark, written to the `theme` key. System removes the key.
      - Applies immediately.
    - **About**
+     - Collection info from the feed index `collection` block (D16): "Updated {last_collected_at}" and "Next update {next_collection_at}", both in device time, the event count, and "Not recorded yet" when the block is `null`.
      - App version.
      - Links to the website and `/ai`.
    - **Accessibility**
@@ -112,7 +109,7 @@
 | V2 | Native CI | the five `native` commands from 2.4 | exit 0 |
 | V3 | Web still agrees | `pnpm --filter @dothingslol/web test` | the web's notification tests still pass on the shared formatters |
 | V4 | Reconcile logic | unit test with a fake notifications API | leaves foreign notifications alone; a second run is a no-op; respects the cap; toggle off cancels all of ours |
-| V5 | Settings logic | unit tests on the pure view-model: rows from a profile, +/− producing overrides, reset | passes |
+| V5 | Settings logic | unit tests on the pure view-model: rows from a profile show the sign as state; choosing the current state is a no-op; choosing another writes −1/0/+1 and pins it; Unset clears the pin | passes |
 | V6 | PR CI | `CI` | green |
 
 **Device check (human, iOS and Android):**
@@ -123,7 +120,7 @@
 5. Like 70 events. At most 60 are scheduled, and they're the soonest ones.
 6. Unliking an event removes its reminder. Turning notifications off empties the list, and turning them back on restores it.
 7. Set the device clock to 07:59 tomorrow. The summary arrives with the right events.
-8. **Taste.** Like 3 events: their tags appear as "learned". Press + on one: it shows "set by you", and Picks reorder. Reset: it's back to learned. Turn auto-learn off, then like another event: the weights don't change.
+8. **Taste.** Like 3 events: their tags show On. Set one of them Off: Picks reorder. Like another event with that tag: it stays Off. Set it to Unset, then like again: it goes On. Turn auto-learn off and like another event: no state changes.
 9. **Theme.** Each of System, Light and Dark applies immediately and persists across relaunch.
 
 ## Rollback

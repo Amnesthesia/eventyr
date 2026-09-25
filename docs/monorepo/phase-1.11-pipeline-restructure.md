@@ -64,10 +64,12 @@ Import rules, added to `check-boundaries.mjs` as a directory rule. Every directo
 ## Steps
 
 1. **Config snapshot first.**
-   - Inventory every module-level SCREAMING_CASE constant in `apps/pipeline/src`. There were 211 at planning time, excluding prompts, regexes and prices.
-   - Classify each one with the §2.6 rule as **config** (operator tunable) or **code** (safety cap, protocol fact, regex/prompt, or a value shared with web/native). Write the result as a table in the PR comment, with a one-line reason per config item.
-   - Include every model literal (the nine call sites plus the search strategies), `GEMINI_CONCURRENCY`/`GEMINI_MAX_CALLS` defaults, batch sizes, timeouts, per-host rate limits and `aiWeekSplitBytes`.
-   - Add `src/config/config.snapshot.test.ts`. It asserts the current value of each constant classified as config. This is the golden for step 3.
+   - The classification lives in **`docs/monorepo/config-inventory.md`**. It was produced during planning, and the owner has marked the decisions in it. Apply it as written:
+     - CONFIG rows move to `pipeline.yml`.
+     - CODE and CORE rows stay where they are.
+     - Any DECIDE row the owner **hasn't** resolved stays in code. Also list those rows in the PR comment.
+   - Re-check the inventory against the current tree, because the files have moved since planning. Paths change, and names and values must not. Report any constant that appears or disappears.
+   - Add `src/config/config.snapshot.test.ts`. It asserts the current value of every constant marked CONFIG, and it is the golden for step 3.
    - Commit.
 2. **Dissolve `common.ts`.**
    - Split it into:
@@ -88,6 +90,17 @@ Import rules, added to `check-boundaries.mjs` as a directory rule. Every directo
      - Returns a typed `PipelineConfig`.
    - Replace each constant classified as config with a read from `ctx.config`. The step 1 snapshot test now reads through the loader, and it must still pass unchanged.
    - `llmBootstrap` (1.6) takes its `configureLLM` values from the config.
+   - **Cache keys must include the model.** This was found in the inventory: the extraction, annotate, rank and venues caches are keyed on prompt version only. Once models live in YAML, changing `models.rank` would silently reuse answers from the old model.
+     - The rule: `key = legacyKey` **when the configured model equals that stage's pre-refactor model** (a `LEGACY_MODEL` map in `io/`, marked `ponytail:` with its removal condition). Otherwise `key = legacyKey + ":" + provider + "/" + model`.
+     - Today's caches stay hot, so there is zero re-spend and parity holds. A model change can never read another model's answers.
+     - Add a test for both branches.
+   - **Duplicate constants.** Collapse duplicates into one definition **only where the values are identical**:
+     - `WINDOW_TO`, defined in 3 files
+     - `LISTING_PATH` in `probe.ts`/`triage.ts`
+     - `CATEGORY_SLUGS` in `pages.ts` vs `core`'s slugs
+
+     Where values differ, leave both and list them in the PR comment. `triage.ts:130 MIN_IN_WINDOW = 2` shadows a probe constant that no longer exists (probe uses `MIN_UPCOMING_TO_PROMOTE = 1`). That is a behaviour question, so it goes to the owner rather than being fixed here.
+   - `CITY_NAMES`/`CITY_TERMS` (probe/discover) stay code unless the inventory says otherwise. If moved, they belong in `sources/{city}.yml`, not `pipeline.yml`, because they're per-city.
 4. **Unify the source schema.**
    - The three views of `sources/{city}.yml` become one zod schema in `packages/core/src/sources.ts`:
      - `SourceEntry` (`common.ts:133`)
@@ -111,7 +124,12 @@ Import rules, added to `check-boundaries.mjs` as a directory rule. Every directo
    For each one:
    - Move its body into `export async function <stage>(ctx: RunContext, opts)`.
    - Stop reading `process.env` at import time: `CITY`, `FORCE` and friends come in through `ctx`.
-   - Return a small report object (`found → kept`, with the reasons for the gap), and make the CLI print what the script prints today. **stdout must be identical.** Capture it in the parity runs and diff it.
+   - Return a **typed result** (D15, PLAN §2.6):
+     - `collectScraped` → `ScrapeResult[]`
+     - `collectSearch` → `SearchCollectResult[]`, with `llm.usage` aggregated from `askDetailed`
+     - every other stage → a `StageReport` (`found → kept`, named reasons for the gap, `llm` usage where models were called)
+
+     Make the CLI print what the script prints today, derived from that result. **stdout must be identical.** Capture it in the parity runs and diff it.
    - Create `cli/<script>.ts` with the env and argv parsing, `llmBootstrap`, the `RunContext` build, and the call.
    - Point the `package.json` script at the CLI file, and delete the old main guard.
 6. **Directory moves.**
@@ -134,7 +152,7 @@ Run these after every commit where the step says so, and all of them at the end.
 |---|---|---|---|
 | V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0 |
 | V2 | LLM and scrape goldens | `node scripts/llm-parity.mjs && node scripts/scrape-parity.mjs && git diff --exit-code apps/pipeline/test/golden` | no diff |
-| V3 | Publish parity | 1.10 V4 against `/tmp/main-wt` | identical, apart from the approved D12 Byron differences |
+| V3 | Publish parity | 1.10 V4 against `/tmp/main-wt` | identical |
 | V4 | stdout parity | For `rank`, `curate`, `venues` and `collect-adapters` in replay mode on the fixture city, diff stdout between the branch before this sub-phase (tag it locally) and now | identical, or timing lines only |
 | V5 | Config snapshot | `config.snapshot.test.ts` | passes through the loader |
 | V6 | `common.ts` gone | `test ! -e apps/pipeline/src/common.ts && git grep -n "common.ts" -- apps packages` | nothing |

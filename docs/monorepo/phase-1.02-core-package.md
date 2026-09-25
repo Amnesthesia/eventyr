@@ -24,6 +24,7 @@ Add the boundary check. Behaviour stays identical.
 ## Files affected
 
 - New: `packages/core/{package.json,tsconfig.json}`, `tsconfig.base.json`, `scripts/check-boundaries.mjs`.
+- Renamed: the event type `Event` → `EventData` (step 5b).
 - Moved:
   - `src/shared.ts` → `packages/core/src/shared.ts`
   - `src/shared.test.ts` → `packages/core/src/shared.test.ts`
@@ -75,6 +76,17 @@ Add the boundary check. Behaviour stays identical.
    - Find the import sites: `grep -rnE "from ['\"][./]+(src/)?shared\.ts['\"]|from ['\"][./]+types(\.ts)?['\"]|@react/types" app src workers --include=*.ts --include=*.tsx --include=*.astro`.
    - Change them to `@dothingslol/core/shared` and `@dothingslol/core/schema`. Use no `.ts` on package specifiers.
    - `src/common.ts` keeps re-exporting core with `export * from "@dothingslol/core/shared";`, so pipeline modules keep one import site.
+5b. **Name the event type and give it a schema (D15).** Do this as its own commit, after the move.
+   - Rename the event type from `app/types.ts` (`Event`) to **`EventData`** everywhere. Use TypeScript rename, not sed. `Event` shadows the DOM's global `Event` type.
+   - Fix the drift listed in PLAN §1.3 so that `EventData` describes what the pipeline actually writes:
+     - vibes are always present
+     - `score` is `number | null` before ranking. Published payloads always have a number, because rank defaults it to 5. Where web code assumes non-null, narrow the type in a way that preserves behaviour. Don't add new fallbacks.
+     - `datetime_end_iso` may be `""` today, so it becomes `string | null` in the type, with `""` still accepted by the schema
+     - `venue` (tier) and `venue_name` are present
+   - Add `CityPayload`, the shape of `data/{city}.json`, including `ranked_at` and `geocoded_at`.
+   - Add **zod schemas** `EventDataSchema` and `CityPayloadSchema` in `core/schema.ts`, with the TypeScript types inferred from them. Add `zod: catalog:` to core's dependencies.
+   - **In PR 1, the schemas are used only by tests** (no runtime enforcement, per D1). Add `packages/core/src/schema.data.test.ts`, which parses every committed `data/*.json` and fails with the path of any mismatch. Fix the *schema* until real data passes. Never fix the data.
+   - Runtime validation starts in PR 2 (2.2).
 6. **Fix the Node leak.**
    - Move `toISODate` (`src/common.ts`, around line 378) into `packages/core/src/shared.ts`. It is pure. `common.ts` re-exports it.
    - Change `src/pages/[city]/[timeframe].astro:10` to import `SITE_URL` and `toISODate` from `@dothingslol/core/shared`.

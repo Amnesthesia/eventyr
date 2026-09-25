@@ -17,9 +17,9 @@
 
 Move deterministic scraping into `packages/scraper`: fetching with rate limits, conditional GET and
 the HTTP cache, the site-feed parsers, iCal, JSON-LD, hydration JSON, readable text, date parsing,
-candidates, the extraction ladder, detail-page enrichment, and Playwright rendering.
+candidates, the extraction ladder, detail-page enrichment, Playwright rendering, **and the `CandidateEvent → EventData` mapping from `normalise.ts`** (D15).
 
-- **Public API:** `scrape(url, opts)` is the entry point. `@dothingslol/scraper/parsers` exposes the pure parsers.
+- **Public API:** `scrape(url, opts)` returns `ScrapeResult`: fetch metadata, parse metadata (via, format, found → kept, named rejections) and `events: EventData[]`. The events are normalised but **not annotated**, so category, tags, vibes and score are null (PLAN §2.5). `@dothingslol/scraper/parsers` exposes the pure parsers.
 - **No LLM code.** The LLM rung (`llmExtract`) becomes the `fallback` callback, which the pipeline supplies.
 - **No knowledge of `data/`, cities or `sources/*.yml`.** Everything comes in through options.
 - **Output is identical** on recorded pages.
@@ -37,7 +37,7 @@ candidates, the extraction ladder, detail-page enrichment, and Playwright render
 | `extract.ts` (+ test) | `parsers/jsonLd.ts` | Adds `parseJsonLd(html)`, which composes the existing `extractJsonLdBlocks` → `findEventNodes` → `jsonLdNodeToRawFields`. |
 | `embeddedJson.ts` (+ test) | `parsers/embeddedJson.ts` | Adds `parseEmbeddedJson` over the existing functions. |
 | `readableText.ts` (+ test) | `parsers/text.ts` | Exports `htmlToText` = `stripToReadableText`, plus `densestWindow`. |
-| `dates.ts` (+ test) | `parsers/dates.ts` | Gains an **optional** `timeZone` parameter that defaults to today's fixed +10 (`BRISBANE_UTC_OFFSET_HOURS`). No DST logic yet; 1.10 adds it (D12). |
+| `dates.ts` (+ test) | `parsers/dates.ts` | Already takes a DST-aware `timeZone` from PR 0. Its `tz` helper now comes from `@dothingslol/utils/tz`. |
 | `candidate.ts`, the scrape-related types from `types.ts` | `candidate.ts`, `types.ts` | `RawCandidateFields`, `CandidateEvent`, provenance. `SourceDefinition` stays in the pipeline. |
 | `pageAdapter.ts`, `runner.ts` (+ tests) | `ladder.ts`, `runner.ts` | `scrape()` is built on the existing `createPageAdapter(deps)`. |
 | `enrichTimes.ts` (+ test) | `enrich.ts` | Its fetcher is already injected. `mapWithConcurrency` comes from utils. |
@@ -47,7 +47,7 @@ candidates, the extraction ladder, detail-page enrichment, and Playwright render
 - `collect.ts`
 - `llmExtract.ts` (becomes the `fallback`)
 - `annotate.ts`
-- `normalise.ts` (maps `CandidateEvent` → `Event`, a domain concern)
+- The publishing-window helpers in `normalise.ts` (`withinWindow`, `isPast`) and `councilEventUrl`. The event mapping itself (`CandidateEvent → EventData`, `humanDatetime`) **moves to `packages/scraper/src/normalise.ts`** by `git mv`, and the window helpers are split back out. `councilEventUrl` becomes the optional `linkRewriter` option, which the pipeline passes.
 - `registry.ts`
 - `probe.ts`
 - `discover.ts`
@@ -61,21 +61,21 @@ candidates, the extraction ladder, detail-page enrichment, and Playwright render
    - Pick about 20 page fixtures covering: every `FeedFormat` (events-calendar, modern-events-calendar, squarespace, trumba-json, trumba-atom, opendatasoft, fivestar, reading-cinemas, palace, ical), JSON-LD, hydration JSON, a page that falls through to the LLM rung, a 304, and a blocked response.
    - Take them from `data/_raw` (local, or restored from the Actions cache), or fetch each once. Trim each to the minimum that still exercises its parser (PLAN R18).
    - Store them under `packages/scraper/test/fixtures/` with a `manifest.json` of `{url, status, headers, bodyFile}`.
-   - Write `scripts/scrape-parity.mjs`. It runs the **old** `createPageAdapter` with a fake fetcher that serves the fixtures and a stub LLM fallback that returns a fixed marker candidate. It writes `test/golden/scrape/<fixture>.json` containing candidates, rejections, provenance and diagnostics.
+   - Write `scripts/scrape-parity.mjs`. It runs the **old** `createPageAdapter` with a fake fetcher that serves the fixtures and a stub LLM fallback that returns a fixed marker candidate. Its output **then goes through the old `normalise.ts` mapping**. It writes `test/golden/scrape/<fixture>.json` containing the normalised events, candidates, rejections, provenance and diagnostics.
    - Commit the fixtures, script and goldens on their own.
 2. **Scaffold `packages/scraper`.**
    - `name` is `@dothingslol/scraper`. `exports`: `"."`, `"./parsers"`, `"./render"`.
-   - Dependencies: `got-scraping`, `chrono-node`, `fast-xml-parser`, `ical.js` if a parser uses it (check with grep), `@dothingslol/utils`.
+   - Dependencies: `got-scraping`, `chrono-node`, `fast-xml-parser`, `ical.js` if a parser uses it (check with grep), `@dothingslol/utils`, `@dothingslol/core` (for `EventData`).
    - Peer dependency: `playwright`, optional.
-   - Add its row to `check-boundaries.mjs`: it may depend on `utils` only.
+   - Add its row to `check-boundaries.mjs`: it may depend on `core` and `utils` (PLAN §2.3).
 3. **Moves.** One rename-only commit for the whole-file moves, then a commit that splits `render.ts` and adjusts imports.
-4. **`scrape()`.** Implement it per PLAN §2.5 as a thin composition of the moved code. The `fetcher` defaults to a shared instance, so rate limits are process-wide, the same as today. `status` separates `not-modified`, `blocked` and `failed` from `ok`.
+4. **`scrape()`.** Implement it per PLAN §2.5 as a thin composition of the moved code, ending with the moved `normalise` mapping. `fetch` and `parse` metadata come from what the ladder and fetcher already know. Nothing new is measured beyond `durationMs` and `bytes`. The `fetcher` defaults to a shared instance, so rate limits are process-wide, the same as today. `status` separates `not-modified`, `blocked` and `failed` from `ok`.
 5. **Rewire the pipeline side.**
-   - `adapters/collect.ts` calls `scrape(url, { strategy, fetcher, fallback: llmExtractFallback, timeZone: undefined })`. Leaving `timeZone` undefined keeps today's +10 until 1.10.
+   - `adapters/collect.ts` calls `scrape(url, { strategy, fetcher, fallback: llmExtractFallback, timeZone: city.timezone, linkRewriter: councilEventUrl, source })` and consumes `ScrapeResult.events`. The per-source curated files keep their exact format.
    - `probe.ts`, `triage.ts`, `testUrl.ts` and the promotion half of `render.ts` import from `@dothingslol/scraper` and `@dothingslol/scraper/parsers`.
    - The pipeline's `src/io/httpCache.ts` implements `HttpCacheStore` over `data/_cache` and `data/_raw`.
 6. **Parity.**
-   - Point `scripts/scrape-parity.mjs` at the new `scrape()`, with the same fake fetcher and stub fallback, then `git diff --exit-code test/golden/scrape`.
+   - Point `scripts/scrape-parity.mjs` at the new `scrape()`, with the same fake fetcher and stub fallback, then `git diff --exit-code test/golden/scrape`. The new side's `ScrapeResult.events` must equal the golden's normalised events, and `parse.rejected` reasons must equal the old rejections.
    - Also run `pnpm test-adapter <fixture-url>` in replay mode. That means a fixture-serving fetcher selected by `EVENTYR_SCRAPE_FIXTURES=<dir>`, a seam added in this step. Compare its printed summary with `origin/main`'s output for the same fixture.
 7. **`CLAUDE.md`.** Update "Key files → `src/adapters/`" to describe the new split: scraping lives in `@dothingslol/scraper`, and the pipeline keeps the domain mapping and source maintenance. Update the pipeline step 1c text to say that collect-adapters calls `scrape()`.
 

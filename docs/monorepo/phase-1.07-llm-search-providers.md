@@ -58,9 +58,15 @@ Requests must be byte-identical.
    - **Keys:** `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `PERPLEXITY_API_KEY`, `GOOGLE_API_KEY` by default. A missing key throws `LLMUnavailableError`, and `collection.ts` keeps its current "skip provider with a warning" behaviour.
    - **Concurrency:** today only Gemini goes through a limiter. Give the other three providers **no ceiling** (`Infinity`) so behaviour is unchanged, and add a comment in `client.ts` noting this as a known asymmetry to revisit.
    - **Model selection:** `ANTHROPIC_SEARCH_MODEL` (`anthropic.ts:18`) keeps working. The strategy reads it and passes it as `model`. If it names a model not in `MODELS`, fail fast with a clear message.
+2b. **Batch transports for Anthropic and OpenAI (built, unused; D14).**
+   - Anthropic uses Message Batches. OpenAI uses the Batch API, with a JSONL upload and the `/v1/responses` or `/v1/chat/completions` endpoint to match the sync branch.
+   - Both follow the same contract as Gemini's in 1.6: job IDs persisted via `BatchStore` before polling, resume without resubmitting, results in input order, batch pricing in `pricing.ts`.
+   - Perplexity throws `BatchNotSupportedError` (it has no batch API).
+   - **Check the current docs** for whether batched requests support the `web_search` tools. If not, `batch` combined with `search` throws `BatchNotSupportedError`.
+   - Test these with recorded fixtures only.
 3. **Strategies.**
    - `BaseProvider` and its subclasses keep `name`, `tiers`, prompt building, `parseEvents` and `collect()` (which writes curated files). The SDK clients and usage code are removed.
-   - `searchEvents()` becomes one `ask()` call plus the parsing that was already there.
+   - `searchEvents()` becomes one `askDetailed()` call plus the parsing that was already there. The `LLMResponse.usage` it gets back feeds the in-memory `SearchCollectResult` that 1.11 types. Curated files on disk keep their exact format.
    - `GoogleProvider.curate`, migrated in 1.6, stays where it is.
    - Rename nothing in this sub-phase. The move to `pipeline/search/` happens in 1.11.
 4. **Remove** `src/providers/gemini.ts`, and remove the SDK dependencies from the root `package.json`.

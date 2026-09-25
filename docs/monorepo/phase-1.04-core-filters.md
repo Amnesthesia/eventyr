@@ -55,13 +55,13 @@ them have tests.
      timeBands: TimeBand[]; past: "upcoming" | "include" | "only"; minScore: number; vibes: VibeKey[];
      tags: string[]; venue: string | null; query: string; }
    export const DEFAULT_FILTERS: FilterState;
-   export type KeyOf = (e: Event) => string;          // web: eventId; native: eventHash
+   export type KeyOf = (e: EventData) => string;          // web: eventId; native: eventHash
    export interface FilterContext { now: Date; weekStart: string; weekEnd: string; hidden: ReadonlySet<string>; keyOf: KeyOf; }
-   export function applyFilters(events: readonly Event[], f: FilterState, ctx: FilterContext): Event[];
-   export function splitSections(filtered: readonly Event[], opts: { starred: ReadonlySet<string>; keyOf: KeyOf;
-     taste: Taste; tagPrefs: TagPrefs; range: DateRange | null; weekStart: string; weekEnd: string }): { saved: Event[]; picks: Event[]; rest: Event[] };
-   export function facetCounts(events: readonly Event[], f: FilterState, ctx: FilterContext): { vibes: Record<VibeKey, number>; tags: [string, number][]; venues: [string, number][]; categories: string[] };
-   export function dateBounds(events: readonly Event[]): { dateMin: string; dateMax: string };
+   export function applyFilters(events: readonly EventData[], f: FilterState, ctx: FilterContext): EventData[];
+   export function splitSections(filtered: readonly EventData[], opts: { starred: ReadonlySet<string>; keyOf: KeyOf;
+     taste: Taste; tagPrefs: TagPrefs; range: DateRange | null; weekStart: string; weekEnd: string }): { saved: EventData[]; picks: EventData[]; rest: EventData[] };
+   export function facetCounts(events: readonly EventData[], f: FilterState, ctx: FilterContext): { vibes: Record<VibeKey, number>; tags: [string, number][]; venues: [string, number][]; categories: string[] };
+   export function dateBounds(events: readonly EventData[]): { dateMin: string; dateMax: string };
    export function hasActiveFilters(f: FilterState): boolean;
    ```
 4. **Unit tests** against the fixture. Cover every filter, plus these edge cases:

@@ -49,12 +49,12 @@ and in the same hour as the branch builds.
 
 Then mark the PR **ready for review**. In the description, remind the merger to:
 
-- use **"Create a merge commit"**, not squash (PLAN §4.3)
+- use **squash** (PLAN D17), and **don't delete `monorepo/refactor` afterwards**, because it keeps the per-commit rename history
 - merge inside the window in PLAN §4.4, after checking that the `digest` concurrency group is idle.
 
 ## Post-merge runbook (run immediately after the human merges)
 
-1. **Deploy.** The "Deploy to GitHub Pages" run for the merge commit is green. Then:
+1. **Deploy.** The "Deploy to GitHub Pages" run for the squash commit is green. Then:
    ```bash
    for u in / /brisbane/ /gold-coast/today/ /byron/ /brisbane/feed.xml /brisbane.ics /ai/index.json /llms.txt /.well-known/api-catalog /sitemap.xml /CNAME; do
      printf '%s %s\n' "$(curl -so /dev/null -w '%{http_code}' https://www.dothings.lol$u)" "$u"; done
@@ -81,14 +81,13 @@ Then mark the PR **ready for review**. In the description, remind the merger to:
 5. **First scheduled runs.**
    - The following Saturday 20:00 UTC `weekly.yml` runs four jobs, ending with **byron**, and all of them must be green. The deploy follows via `workflow_run`.
    - `/byron/` then shows the new week, and `/ai/byron/` exists in `/ai/index.json`.
-   - If D12 was applied, pick three scraped Byron events dated after 4 Oct. Their times on the site must match each source page (AEDT).
    - Check the usage file for each city (`data/{city}/usage/<week>.json`). Its per-stage call counts must be in line with the previous week, so the `llm` migration hasn't changed request volume.
    - `reprobe.yml` runs on the 3rd of the month. Check it when it does.
    - Post these results on the PR once they're in.
 
 ## Rollback (after merge)
 
-- **Before any bot commit lands on the new paths:** `git revert -m 1 <merge-sha>` and push. That restores the old layout in one commit.
+- **Before any bot commit lands on the new paths:** `git revert <squash-sha>` and push. That restores the old layout in one commit.
 - **After a digest has committed to `apps/web/public/`:** the revert conflicts on those regenerated files.
   1. Revert.
   2. For each conflict, take the post-digest content and `git mv` it back under `public/`.

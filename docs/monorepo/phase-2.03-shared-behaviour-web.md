@@ -33,7 +33,7 @@ the web adopts them first and native (2.5–2.8) reuses them:
   - `packages/core/src/when.ts` (new) and its tests
   - `packages/core/src/tasteProfile.ts` (new) and its tests
   - `packages/core/src/storageKeys.ts`: add `eventyr:taste-profile` and `eventyr:notifications`
-  - `packages/core/src/grouping.ts`: tier sort from v2 overrides
+  - `packages/core/src/grouping.ts`: remove the v1 `prefTier` comparator (PLAN §11 Q1)
   - `packages/core/src/filters.ts`: `splitSections` takes a `TasteProfileV2`
   - `taste.ts` and `tagPrefs.ts`: removed once nothing imports them. Keep the v1 reading code needed by the migration inside `tasteProfile.ts`.
 - **Web:**
@@ -50,7 +50,7 @@ the web adopts them first and native (2.5–2.8) reuses them:
 
 1. **Add `core/when.ts`:**
    ```ts
-   export function formatWhen(e: Pick<Event,"datetime"|"datetime_iso"|"datetime_end_iso">,
+   export function formatWhen(e: Pick<EventData,"datetime"|"datetime_iso"|"datetime_end_iso">,
      opts: { now: Date; cityTimeZone: string; locale?: string; timeZone?: string /* default: device */ }): string;
    ```
    - Timed events are formatted from the ISO values with `Intl.DateTimeFormat`, with `timeZone` left undefined so the device zone applies.
@@ -67,41 +67,49 @@ the web adopts them first and native (2.5–2.8) reuses them:
    - Prerendered HTML can't know the viewer's zone. For the SSR and pre-hydration fallback, render the city-local string plus the city zone abbreviation, for example "Sat 27 Sep, 7:00 pm AEST". The island reformats after hydration.
    - The static `/e/` page shows the city-local time with its zone label, plus a tiny inline script that rewrites it into device time.
 
-## Part B — taste model v2
+## Part B: taste model v2 (D13)
 
-Build exactly what PLAN §7.2 specifies:
+Build exactly what PLAN §7.2 specifies.
 
-1. **`core/tasteProfile.ts`:**
-   - Types `TasteKey`, `TasteEntry` and `TasteProfileV2`.
-   - `emptyProfile()`, then `like`, `unlike`, `dislike`, `undislike`, and `noteShare`/`noteCalendar`. Each takes `(profile, event, ctx)` and returns a new profile.
-     - When `autoLearn` is false, these return the profile unchanged apart from the `applied` bookkeeping, which needs no deltas in that case.
-     - Deltas are recorded under `applied["like:"+eventHash]` and the equivalent keys, so reversals are exact.
-   - `setOverride(profile, key, value)`, clamped to −3…+3; `clearOverride(profile, key)`; `resetLearning(profile)`; `clearOverrides(profile)`; `setAutoLearn(profile, on)`.
-   - `effectiveWeights(profile)`.
-   - `tasteBoost(event, profile)` and `rankByTaste(events, profile)`. These carry the v1 formula over unchanged: ±4 cap, 0.55/0.25/0.2, curve 1.5, `MIN_SIGNAL` on learned signal only, and any override counts as signal.
-   - `prefTier(event, profile)`: +1 if any tag has `override === 3`, −1 if any has `override === -3`, otherwise 0. It replaces the v1 `tagPrefs` tier.
-   - `migrateFromV1(taste: Record<string, number>, tagPrefs: Record<string, 1 | -1>): TasteProfileV2`.
-2. **Equivalence tests.** These guard PLAN R11. For fixture v1 states (no prefs, prefs only, learned only, both), `rankByTaste(events, migrateFromV1(v1))` must produce the **same order** as v1's `rankByTaste(events, effectiveTaste(v1taste, v1prefs))` plus the v1 tier sort. Keep a frozen copy of the v1 functions in the test file, marked `ponytail:` with a note to delete it after one release.
-3. **Web store: `tasteProfileStore.ts`.**
-   - Load `eventyr:taste-profile`. If it's absent, run `migrateFromV1(eventyr:taste, eventyr:tag-prefs)`.
-   - **Leave the v1 keys in place.**
+1. **`core/tasteProfile.ts`**
+   - **Types:** `TasteKey`, `TasteState` (`"off" | "unset" | "on"`) and `TasteProfileV2` (`weights`, `manual`, `applied`, `signals`, `autoLearn`).
+   - **Signal functions:** `emptyProfile()`, `like`, `unlike`, `dislike`, `undislike`, `noteShare`, `noteCalendar`. Each takes `(profile, event, ctx)` and returns a new profile. All of them apply these rules:
+     - **Skip manual keys.**
+     - **Respect `autoLearn`.** When it's off, weights stay unchanged. The event-level bookkeeping still runs, so an unlike later reverses nothing.
+     - **Record deltas** under `applied["like:"+eventHash]` and the equivalent keys for the other signals.
+   - **User actions:**
+     - `setState(profile, key, state)`. If `state` equals the current state, nothing happens. Otherwise it writes −1 / 0 / +1 and marks the key manual. `"unset"` deletes the weight and the manual mark, and increments `signals`.
+     - `stateOf(profile, key)` returns `sign(weight)` as a `TasteState`.
+     - `resetAll(profile)` and `setAutoLearn(profile, on)`.
+   - **Ranking:** `tasteBoost(event, profile)` and `rankByTaste(events, profile)` keep the v1 formula: ±4 cap, 0.55/0.25/0.2 weights, 1.5 curve. **Manual keys count at their group's strongest absolute weight** (v1 `effectiveTaste` semantics). `MIN_SIGNAL` counts `signals`.
+   - **No `prefTier` and no hard tier sort** (PLAN §11 Q1). If the owner answers "keep", add `prefTier` = the sign of any manual tag and restore the tier comparator in `grouping.ts`.
+   - **Migration:** `migrateFromV1(taste: Record<string, number>, tagPrefs: Record<string, 1 | -1>): TasteProfileV2`.
+     - `weights` come from `taste`.
+     - Each pref becomes a manual key with weight ±1.
+     - `signals` is the v1 save count plus the number of prefs.
+2. **Equivalence tests** (PLAN R11). Keep a frozen copy of the v1 functions in the test file, marked `ponytail:` with a note to delete it after one release.
+   - **No stated prefs:** `rankByTaste(events, migrateFromV1(v1))` must order events **exactly** as v1 did.
+   - **With stated prefs:** assert the documented difference and nothing else. Manual "on" events still rank above what the same event would get without the pref, but no longer above everything. Name every event that moves in the test's description.
+3. **Web store: `tasteProfileStore.ts`**
+   - Load `eventyr:taste-profile`. If it's absent, migrate from `eventyr:taste` + `eventyr:tag-prefs`. **Leave the v1 keys in place.**
    - Keep the `eventyr:taste-change` event.
    - Save, share, calendar-add, dislike and unhide in `context.tsx`, `SwipeMode` and `CardActionSheet` call the v2 functions.
-4. **`PreferencesPane`.** The dialog is removed and its entry point links to `/settings/#taste`. Tag chips on cards still tint by effective weight: more for > 0, less for < 0.
+4. **`PreferencesPane`.** Remove the dialog. Its entry point links to `/settings/#taste`. Tag chips on cards tint by state: "on" as more, "off" as less.
 
-## Part C — the `/settings/` page
+## Part C: the `/settings/` page
 
-1. **Route.** `src/pages/settings.astro` uses the Base layout and a `SettingsApp` island (`client:load`). It isn't per-city. Tag lists come from the union of tags across all cities in `data/index.json` payloads at build time, ordered by frequency, top 150.
-2. **Sections and copy.** Use the text in PLAN §7.3 verbatim:
-   - **Notifications.** A toggle stored in `eventyr:notifications` (`"on"` or `"off"`; absent means on, which matches today's behaviour), with the explanation copy.
+1. **Route.** `src/pages/settings.astro` uses the Base layout plus a `SettingsApp` island (`client:load`). It isn't per-city. Tags are the union across all cities' payloads at build time, ordered by frequency, top 150, plus a search field over all tags.
+2. **Sections and copy.** Use the text in PLAN §7.3 verbatim.
+   - **Notifications.** A toggle in `eventyr:notifications`, with values `"on"` or `"off"`. An absent key means on, which is today's behaviour. Show the explanation copy.
      - Off cancels in-page timers and posts a cancel message to the service worker.
      - `NotificationPrompt` and the auto-prompt on first save respect the toggle.
-   - **Your taste.** The privacy note, the "Learn from likes and dislikes" toggle, then Tags (with search), Vibes and Categories.
-     - Each row shows the weight bar (−3…+3), a "learned" or "set by you" badge, − and + buttons, and reset.
-     - "Reset all learning" and "Clear all overrides", each with a confirm dialog.
+   - **Your taste.** Show the privacy note, then the "Learn from likes and dislikes" toggle, then Tags (with search), Vibes and Categories.
+     - Each row is a segmented **Off · Unset · On** control (`stateOf` / `setState`).
+     - **No numbers** and no learned/manual badge.
+     - "Reset all preferences" has a confirm dialog.
    - **Appearance.** System, Light or Dark. System removes the `theme` key. `useColorTheme` gains the explicit system option.
 3. **Header.** Add a gear link to `/settings/` with `aria-label="Settings"`. The existing theme toggle stays.
-4. **Accessibility.** The +/− buttons are labelled "Increase {tag}" and "Decrease {tag}". The weight is exposed as text, not only as a bar.
+4. **Accessibility.** Each segmented control is a radio group labelled with the tag name, for example "jazz: Off, Unset, On", with the selected state announced.
 
 ## Verification
 
@@ -109,12 +117,12 @@ Build exactly what PLAN §7.2 specifies:
 |---|---|---|---|
 | V1 | Checks | `pnpm check` | exit 0 with the new core tests |
 | V2 | Device-time regression | the `when.ts` Brisbane fixture test | identical strings |
-| V3 | Migration equivalence | the `tasteProfile` equivalence tests | same ordering in every fixture |
+| V3 | Migration equivalence | the `tasteProfile` equivalence tests | identical order without prefs; only the documented, named moves with prefs |
 | V4 | Web behaviour with a Brisbane zone | `TZ=Australia/Brisbane`, then preview and run `filter-parity.mjs` against the 2.1 baseline (rebuild the baseline from `origin/main` if the data moved) | counts identical. Card titles and order are identical for a fresh profile. |
-| V5 | Existing user migration (manual) | On `origin/main`'s build, save 3 events and set 2 tag prefs. Then switch to this build on the same origin (both `pnpm preview` on port 4321). | Picks order unchanged, the settings page shows the 3 learned tags and the 2 "+3/−3 set by you" entries, and v1 keys are still present in DevTools → Application |
+| V5 | Existing user migration (manual) | On `origin/main`'s build, save 3 events and set 2 tag prefs (one more, one less). Then switch to this build on the same origin (`pnpm preview` on port 4321 for both) | Settings shows the 3 learned tags as On and the 2 prefs as On/Off. Picks change only as V3 documents. v1 keys are still present in DevTools → Application |
 | V6 | Device time (manual) | Chrome DevTools → Sensors → time zone `Australia/Sydney` | timed events move +1 h during DST, date-only events are unchanged, and the static `/e/` page matches after hydration |
 | V7 | Settings (manual) | Toggle notifications off, then save an event | no permission prompt and no scheduling. Turning it back on restores the behaviour. |
-| V8 | Opt-out (manual) | Turn learning off, then like 3 events | weights unchanged. Turning it back on and liking one event changes the weights. |
+| V8 | Manual pin and opt-out (manual) | Set a tag Off, then like an event that has that tag; separately, turn learning off and like 3 events | The Off tag stays Off (manual keys aren't touched by learning). With learning off, no state changes. Turned back on, liking one event flips an Unset tag to On |
 | V9 | PR CI | `CI` | green |
 
 ## Rollback

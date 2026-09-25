@@ -1,4 +1,4 @@
-# Sub-phase 1.10: Remove WhatsApp, move the pipeline to `apps/pipeline`, add Byron to weekly, fix Byron's time zone
+# Sub-phase 1.10: Remove WhatsApp, then move the pipeline to `apps/pipeline`
 
 > **Handoff: paste into a fresh Claude Code session**
 >
@@ -9,7 +9,6 @@
 > - Sync first, as PLAN §4.3 says.
 > - Follow the steps in order. Use `git mv` for every move.
 > - Run every verification, post the results as a comment on the PR 1 draft, and tick 1.10.
-> - Step 7 (D12) runs **only if the owner approved D12** (PLAN §11 Q5). Otherwise skip it and say so in the comment.
 > - If a check fails and the fix isn't obvious and in scope, stop and report.
 > - Push. Don't merge, and don't start 1.11.
 
@@ -19,8 +18,8 @@
 2. Move what's left of `src/`, which is now only pipeline code, to `@dothingslol/pipeline` at `apps/pipeline`. This is a **mechanical move**: internal reorganisation happens in 1.11.
    - The root `package.json` becomes proxy scripts, so `pnpm collect`, `pnpm probe-sources --city=X` and the rest keep working from the repo root.
    - Workflows stop calling `src/*.ts` by path.
-3. Add Byron to `weekly.yml` (D5).
-4. With approval, make Byron's times correct under NSW daylight saving (D12).
+
+Byron's time zone and its weekly slot were fixed in PR 0, before this PR. Nothing here touches them.
 
 ## Preconditions
 
@@ -44,9 +43,8 @@
 
 **Other edits**
 - New `apps/pipeline/package.json`. Edit the root `package.json`, `common.ts` (`PROJECT_ROOT`) and `locality.test.ts`.
-- Workflows: `digest.yml` (lines 118–119, 207, 213, 216, 221, 227), `add-city.yml:49`, `reprobe.yml:121,147`, `weekly.yml`.
+- Workflows: `digest.yml` (lines 118–119, 207, 213, 216, 221, 227), `add-city.yml:49`, `reprobe.yml:121,147`.
 - `biome.json`, `CLAUDE.md`, `README.md`.
-- D12 only: `sources/byron.yml`, `packages/scraper/src/parsers/dates.ts`, and the hard-coded `+10` sites listed in step 7.
 
 ## Steps
 
@@ -82,7 +80,7 @@
    - Root `check`: `pnpm -r typecheck && biome check apps packages scripts && pnpm -r test && node scripts/check-boundaries.mjs`
    - The root keeps only `@biomejs/biome` and `typescript`.
    - Add the pipeline's row to `check-boundaries.mjs`: it may depend on `core`, `utils`, `llm` and `scraper`.
-6. **Test isolation, workflows and Byron.**
+6. **Test isolation and workflows.**
    - **`locality.test.ts`:** `mkdtemp`, set `EVENTYR_DATA_ROOT`, then dynamically import the modules under test. `DATA_ROOT` is computed at module load, so this is the only order that works.
    - **`digest.yml`:**
      - "Typecheck and test" becomes `pnpm -r typecheck && pnpm -r test`.
@@ -90,42 +88,20 @@
      - Leave the `env:` blocks, cache paths and git add list unchanged.
    - **`add-city.yml`:** `pnpm add-city`.
    - **`reprobe.yml`:** `pnpm triage --render-candidates`, and `pnpm triage` for the report.
-   - **`weekly.yml`:** add after `sunnycoast`:
-     ```yaml
-     byron:
-       needs: sunnycoast
-       uses: ./.github/workflows/digest.yml
-       permissions:
-         contents: write
-       with:
-         city: byron
-         force: ${{ inputs.force || false }}
-         providers: ${{ inputs.providers || 'google,perplexity' }}
-       secrets: inherit
-     ```
-7. **D12, Byron's time zone.** This is its own commit, and **only with approval**.
-   - In `sources/byron.yml`, set `timezone: Australia/Sydney`.
-   - In `scraper/parsers/dates.ts`, when a `timeZone` is given, parse with chrono at the zone's standard offset. Then correct each result using `zonedOffsetMinutes(timeZone, parsedInstant)` from `@dothingslol/utils/tz`, which gives DST-correct instants. With no `timeZone`, today's fixed +10 path runs unchanged.
-     - Add tests for Sydney dates on both sides of 2026-10-04 02:00 and 2027-04-04 03:00, including a time inside the skipped hour.
-   - `collect.ts` passes `city.timezone` to `scrape()`.
-   - Inventory the other hard-coded `+10` sites with `grep -rn "BRISBANE_UTC_OFFSET_HOURS\|+10:00\|\"+10\"" apps/pipeline/src packages`. There were 11 at planning time. Make each one take the city's time zone. `normalise.ts`'s `humanDatetime`, `isoWithOffset` callers and the iCal `TZID` are the likely ones.
-   - **Parity for this commit:** the llm and scrape goldens (all Brisbane) and the publish parity for brisbane, goldcoast and sunnycoast must stay identical. Byron's publish output is expected to differ, and only for events dated after 2026-10-04. List every changed Byron event in the PR comment with before/after times.
-8. **Tooling and docs.**
+7. **Tooling and docs.**
    - `biome.json`: change `src/**` to `apps/pipeline/src/**`.
    - `CLAUDE.md`: change `src/<file>` to `apps/pipeline/src/<file>`, and add that root scripts are proxies.
      - Drop the WhatsApp mentions.
-     - Note that weekly runs four cities.
-     - If D12 was applied, note that `timezone` is per city and must be the real IANA zone.
    - `README.md`: update the paths and the Mermaid diagram.
 
 ## Verification
 
 | # | Check | Command | Pass condition |
 |---|---|---|---|
-| V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0; same test count, plus the new date tests if step 7 ran |
+| V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0; same test count |
 | V2 | Tests leave data alone | `pnpm test:pipeline && git status --porcelain data/` | empty |
 | V3 | No stray data directory | `find apps -maxdepth 3 -name data -type d` | nothing |
-| V4 | Publish parity | Run `for c in brisbane goldcoast sunnycoast byron; do CITY=$c TZ=Australia/Brisbane pnpm geocode; CITY=$c pnpm ical; done; TZ=Australia/Brisbane pnpm markdown; pnpm rss; pnpm pages; pnpm build-ai` on the branch and in `/tmp/main-wt`, then `diff -r` `data/*.json`, `*.md` and the public trees | identical. The **one exception** is the Byron differences listed under step 7, which are only allowed if step 7 ran |
+| V4 | Publish parity | Run `for c in brisbane goldcoast sunnycoast byron; do CITY=$c TZ=Australia/Brisbane pnpm geocode; CITY=$c pnpm ical; done; TZ=Australia/Brisbane pnpm markdown; pnpm rss; pnpm pages; pnpm build-ai` on the branch and in `/tmp/main-wt`, then `diff -r` `data/*.json`, `*.md` and the public trees | identical |
 | V5 | Goldens | `node scripts/llm-parity.mjs && node scripts/scrape-parity.mjs && git diff --exit-code apps/pipeline/test/golden` | no diff |
 | V6 | Arguments pass through | `pnpm probe-sources --city=doesnotexist` gives the unknown-city error. `pnpm collect anthropic` with no keys gives the anthropic-key error | failure for the expected reason |
 | V7 | `add-city` still edits `digest.yml` | scratch-worktree check from 1.1 V7, using `pnpm add-city` | option added |
@@ -137,5 +113,4 @@
 
 ## Rollback
 
-Revert this sub-phase's commits on the branch. Step 7 is its own commit, so it can be reverted by
-itself.
+Revert this sub-phase's commits on the branch.

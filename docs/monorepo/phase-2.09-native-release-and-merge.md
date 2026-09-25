@@ -102,7 +102,7 @@ Then merge PR 2 and verify the web changes and the feed in production.
 | P6 | Workflow syntax | `actionlint .github/workflows/*.yml` | clean |
 | P7 | Preview build (needs human setup) | Dispatch `native-release.yml` with `profile=preview` and `platform=all` on the branch | builds for both platforms, and they install |
 
-Mark the PR ready. Remind whoever merges to use **"Create a merge commit"** and to stay outside
+Mark the PR ready. Remind whoever merges to use **squash**, keep the `native/app` branch, and stay outside
 the Saturday 18:00–23:00 UTC window.
 
 ## Post-merge runbook
@@ -132,7 +132,7 @@ the Saturday 18:00–23:00 UTC window.
 
 ## Rollback
 
-- **Web or feed, after merge:** `git revert -m 1 <merge-sha>`.
+- **Web or feed, after merge:** `git revert <squash-sha>`.
   - Web users fall back to their untouched v1 taste keys.
   - The `/data/v1/` URLs disappear. Any installed app shows its cached feed with an error state and doesn't crash.
 - **App releases:** these can't be recalled. Fix forward with `eas update` for JS-only changes, or with a new build.

@@ -32,7 +32,7 @@ pipeline, `core`, web and native can all depend on.
 | `src/text.ts` (`cleanText`, `cleanUrl`, `he` entity decoding) and `src/text.test.ts` | `packages/utils/src/text.ts` + test | `git mv`. It depends on `he`, which is pure JS and browser-safe. |
 | `mapWithConcurrency`, `chunkArray` from `src/providers/base.ts` | `packages/utils/src/concurrency.ts` (+ tests if `base.test.ts` covers them) | Cut out verbatim. `chunkArray` is exported as `chunk`, with `chunkArray` kept as an alias until 1.11 so this commit stays small. |
 | `sleep` and the jittered exponential backoff arithmetic in `src/providers/gemini.ts` (`retryDelayMs`: only the `BASE_BACKOFF_MS * 2 ** attempt` + jitter part) | `packages/utils/src/time.ts` (`sleep`, `backoffDelay(attempt, baseMs)`) | The provider-specific parts stay for 1.6: the regex that recognises 429/503 messages and the `Retry-After` parse. |
-| Time-zone offset helper | `packages/utils/src/tz.ts`: `zonedOffsetMinutes(timeZone, at: Date): number` via `Intl.DateTimeFormat` | **New.** It isn't used until 1.10 (D12), but it lives here so `scraper` and `pipeline` share one implementation. Test it against Brisbane (+600 all year) and Sydney (+600 / +660 across 2026-10-04). |
+| `src/tz.ts` (added in PR 0) and its test | `packages/utils/src/tz.ts` + test | `git mv`. It's used by `dates.ts` and the per-city offset sites. `scraper` and `pipeline` share this one implementation. |
 
 **Do not move:**
 
@@ -65,7 +65,7 @@ pipeline, `core`, web and native can all depend on.
 
 | # | Check | Command | Pass condition |
 |---|---|---|---|
-| V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0; test count = baseline + the new `tz` tests |
+| V1 | Checks | `pnpm install --frozen-lockfile && pnpm check` | exit 0; test count = baseline |
 | V2 | Node-free | `pnpm exec biome check packages/utils` | clean (the lint rule is active) |
 | V3 | No stragglers | `grep -rnE "export (async )?function (mapWithConcurrency\|chunkArray\|cleanText\|cleanUrl)" src app` | nothing |
 | V4 | Boundaries | `node scripts/check-boundaries.mjs` | exit 0 |
