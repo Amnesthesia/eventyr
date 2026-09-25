@@ -1,16 +1,16 @@
-# Sub-phase 1.5 — Move the website to `apps/web`
+# Sub-phase 1.9 — Move the website to `apps/web`
 
 > **Handoff: paste this into a fresh Claude Code session**
 >
-> Execute sub-phase 1.5 (web move) of PR 1, the eventyr monorepo refactor.
+> Execute sub-phase 1.9 (web move) of PR 1, the eventyr monorepo refactor.
 >
-> - Read only `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.5-web-move.md`, no other phase files.
+> - Read only `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.09-web-move.md`, no other phase files.
 > - Work on branch `monorepo/refactor`, even if your environment suggests a different branch. If you can't push to it, stop and ask.
 > - Sync first, as PLAN §4.3 describes, using `merge.directoryRenames=true`.
 > - Follow the ordered steps and use `git mv` for every move.
-> - Run every verification, post the results as a comment on the PR 1 draft, and tick 1.5.
+> - Run every verification, post the results as a comment on the PR 1 draft, and tick 1.9.
 > - If a check fails and the fix isn't obvious and in scope, stop and report.
-> - Push the branch. Don't merge, and don't start 1.6.
+> - Push the branch. Don't merge, and don't start 1.10.
 
 ## Goal
 
@@ -20,11 +20,11 @@ still at the repo root and writes into the new location through one constant. `d
 `sources/` stay at the root and are read through a single resolver.
 
 **Branch timing.** From this sub-phase on, the weekly bot commits to `main` touch paths that have
-moved on the branch. Keep 1.5 → 1.8 within one working week (PLAN R9).
+moved on the branch. Keep 1.9 → 1.13 within one working week (PLAN R9).
 
 ## Preconditions
 
-- 1.4 is committed on the branch. That gives you `filter-parity.mjs`, `site-fingerprint.sh` and CI.
+- 1.8 is committed on the branch. That gives you `filter-parity.mjs`, `site-fingerprint.sh`, CI and the four packages. The pipeline still lives in `src/`.
 
 ## Files affected
 
@@ -80,7 +80,7 @@ Edited files:
    - Move these dependencies from the root: `astro`, `@astrojs/react`, `@picocss/pico`, `lucide-react`, `qrcode-generator`, `react`, `react-dom`. Add `js-yaml` (used by organizers) and `@dothingslol/core: workspace:*`.
    - Dev dependencies: `sass`, `@types/react`, `@types/react-dom`, `@types/js-yaml`, `typescript`, `tsx`.
    - Before moving each dependency, confirm it by grepping for its imports. At planning time, the React, Astro, lucide, qrcode and pico packages were web-only, `js-yaml` was used by both, and `sass` was used implicitly through `app/pico.scss`.
-   - The root keeps the pipeline's dependencies until 1.6.
+   - The root keeps the pipeline's dependencies until 1.10.
 4. **Add `apps/web/src/lib/paths.ts`.**
    ```ts
    // Build-time only. Resolved from cwd, not import.meta.url: Astro's prerender bundle relocates
@@ -143,4 +143,4 @@ Edited files:
 ## Rollback
 
 Revert this sub-phase's commits on the branch. If `main` has already been merged in after the
-move, revert the merge commit first. Rolling back after PR 1 merges is covered in 1.8.
+move, revert the merge commit first. Rolling back after PR 1 merges is covered in 1.13.

@@ -4,7 +4,7 @@
 >
 > Execute sub-phase 2.9 (native release and merge) of PR 2, the eventyr React Native app.
 >
-> - Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.9-native-release-and-merge.md`, and no other phase files.
+> - Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.09-native-release-and-merge.md`, and no other phase files.
 > - Work on branch `native/app`, even if your environment suggests another. If you can't push to it, stop and ask.
 > - Sync first, as PLAN §4.3 describes.
 > - Follow the steps in order and run the pre-merge suite. Post the results as a comment on the PR 2 draft, tick 2.9, and mark the PR ready.

@@ -6,7 +6,7 @@
 >
 > 1. **Check that PR 1 is merged into `main`.** If it isn't, stop.
 > 2. Create the branch: `git fetch origin && git checkout -b native/app origin/main`. Use `native/app` even if your environment suggests a different branch. If you can't push to it, stop and ask.
-> 3. Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.1-react-19.md`. Don't read any other phase files.
+> 3. Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.01-react-19.md`. Don't read any other phase files.
 > 4. Follow the steps in order.
 > 5. Push the branch and open a **draft** PR titled "React Native app (PR 2)". Its description should hold a checklist of sub-phases 2.1–2.9.
 > 6. Post your verification results as a PR comment and tick 2.1.

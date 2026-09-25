@@ -1,9 +1,9 @@
-# Sub-phase 1.8: Final verification, merge PR 1, post-merge runbook
+# Sub-phase 1.13: Final verification, merge PR 1, post-merge runbook
 
 > **Handoff: paste this into a fresh Claude Code session**
 >
-> Execute sub-phase 1.8 (merge and verify) of PR 1, the eventyr monorepo refactor. Read
-> `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.8-merge-and-verify.md` only, and no other
+> Execute sub-phase 1.13 (merge and verify) of PR 1, the eventyr monorepo refactor. Read
+> `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.13-merge-and-verify.md` only, and no other
 > phase files. Work on branch `monorepo/refactor`.
 >
 > 1. Sync as described in PLAN §4.3.
@@ -21,7 +21,7 @@ publishes. Then get it merged safely, and confirm that the deploy, the digest an
 
 ## Preconditions
 
-- 1.1 to 1.7 are ticked in the PR description.
+- 1.1 to 1.12 are ticked in the PR description.
 - It's early in the working week, so there is room to merge before Saturday (PLAN R9).
 
 ## Pre-merge suite (on the branch, after `git -c merge.directoryRenames=true merge origin/main`)
@@ -34,13 +34,18 @@ and in the same hour as the branch builds.
 | P1 | Clean install and all checks | `rm -rf node_modules apps/*/node_modules packages/*/node_modules && pnpm install --frozen-lockfile && pnpm check` | exit 0 |
 | P2 | Site identical to `main` | Build both. Compare `scripts/site-fingerprint.sh /tmp/main-wt/dist /tmp/fp-main.txt` with `scripts/site-fingerprint.sh apps/web/dist /tmp/fp-branch.txt` using `diff` | no diff |
 | P3 | Client behaviour identical | Preview both on different ports. Run `filter-parity.mjs` against each and diff the JSON | no diff |
-| P4 | Publish output identical | The deterministic stages from 1.6 V4, run in both trees for all four cities | identical |
+| P4 | Publish output identical | The deterministic stages from 1.10 V4, run in both trees for all four cities | identical |
 | P5 | Worker | `pnpm --filter @dothingslol/mcp exec wrangler deploy --dry-run --outdir /tmp/mcp` | exit 0 |
 | P6 | Workflows | `actionlint .github/workflows/*.yml` | clean |
 | P7 | add-city regex | scratch-worktree check (1.1 V7) | option added |
 | P8 | Deploy build job on branch | dispatch "Deploy to GitHub Pages" on `monorepo/refactor` | build job green, artifact has `.well-known/api-catalog` |
-| P9 | History preserved | `git log --follow --oneline apps/web/app/context.tsx apps/pipeline/src/curate.ts packages/core/src/shared.ts \| wc -l` | follows past the moves |
+| P9 | History preserved | `git log --follow --oneline apps/web/app/context.tsx apps/pipeline/src/stages/curate.ts packages/core/src/shared.ts packages/scraper/src/fetch.ts \| wc -l` | follows past the moves |
 | P10 | No leftovers | `ls src app public workers 2>&1; git grep -nE "tsconfig\.scripts\.json\|src/(rank\|geocode\|markdown\|ical\|pages\|messaging)\.ts" -- .github package.json` | directories are gone; no matches |
+| P11 | LLM request parity | `node scripts/llm-parity.mjs && git diff --exit-code test/golden/llm` | no diff |
+| P12 | Scrape output parity | `node scripts/scrape-parity.mjs && git diff --exit-code test/golden/scrape` | no diff |
+| P13 | Config snapshot | `pnpm --filter @dothingslol/pipeline test -- --test-name-pattern config` | every moved value equals its old constant; `interests.md` byte-identical |
+| P14 | Package graph | `node scripts/check-boundaries.mjs` plus `pnpm -r ls --depth 0 --json` (inspect workspace deps against PLAN §2.3) | exit 0; graph matches the table exactly |
+| P15 | No cross-package relative imports or SDKs outside `llm` | `git grep -nE "from ['\"](\.\./)+(packages\|apps)/" -- apps packages; git grep -nE "@anthropic-ai/sdk\|from ['\"]openai['\"]\|@google/genai" -- apps packages ':!packages/llm'` | nothing |
 
 Then mark the PR **ready for review**. In the description, remind the merger to:
 
@@ -76,8 +81,10 @@ Then mark the PR **ready for review**. In the description, remind the merger to:
 5. **First scheduled runs.**
    - The following Saturday 20:00 UTC `weekly.yml` runs four jobs, ending with **byron**, and all of them must be green. The deploy follows via `workflow_run`.
    - `/byron/` then shows the new week, and `/ai/byron/` exists in `/ai/index.json`.
+   - If D12 was applied, pick three scraped Byron events dated after 4 Oct. Their times on the site must match each source page (AEDT).
+   - Check the usage file for each city (`data/{city}/usage/<week>.json`). Its per-stage call counts must be in line with the previous week, so the `llm` migration hasn't changed request volume.
    - `reprobe.yml` runs on the 3rd of the month. Check it when it does.
-   - Post both results on the PR once they're in.
+   - Post these results on the PR once they're in.
 
 ## Rollback (after merge)
 

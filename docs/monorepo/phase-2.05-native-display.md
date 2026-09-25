@@ -4,7 +4,7 @@
 >
 > Execute sub-phase 2.5 (native display) of PR 2, the eventyr React Native app.
 >
-> - Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.5-native-display.md`, and no other phase files.
+> - Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.05-native-display.md`, and no other phase files.
 > - Work on branch `native/app`, even if your environment suggests another. If you can't push to it, stop and ask.
 > - Sync first per PLAN §4.3.
 > - Follow the ordered steps and run every verification.

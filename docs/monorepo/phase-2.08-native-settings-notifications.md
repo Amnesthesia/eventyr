@@ -4,7 +4,7 @@
 >
 > Execute sub-phase 2.8 (native settings and notifications) of PR 2, the eventyr React Native app.
 > Read `docs/monorepo/PLAN.md` (especially §6 and §7) and
-> `docs/monorepo/phase-2.8-native-settings-notifications.md`, and no other phase files.
+> `docs/monorepo/phase-2.08-native-settings-notifications.md`, and no other phase files.
 > Work on branch `native/app`, even if your environment suggests another. If you can't push to it,
 > stop and ask. Sync first per PLAN §4.3. Follow the steps in order and run every verification.
 > Post the results as a comment on the PR 2 draft and tick 2.8. List the device-check items as

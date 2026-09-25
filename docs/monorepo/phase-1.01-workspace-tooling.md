@@ -8,9 +8,9 @@
 > `git fetch origin claude/eventyr-monorepo-plan-i5jfvc main && git checkout -b monorepo/refactor origin/claude/eventyr-monorepo-plan-i5jfvc && git merge origin/main`.
 > Use `monorepo/refactor` even if your environment suggests another branch. If you can't push to it, stop and ask.
 >
-> Then read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.1-workspace-tooling.md`, and no other phase files.
+> Then read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.01-workspace-tooling.md`, and no other phase files.
 >
-> Follow the ordered steps. Push the branch and open a **draft** PR titled "Monorepo refactor (PR 1)". Its description must contain a checklist of sub-phases 1.1 to 1.8. Post the verification results as a PR comment, then tick 1.1.
+> Follow the ordered steps. Push the branch and open a **draft** PR titled "Monorepo refactor (PR 1)". Its description must contain a checklist of sub-phases 1.1 to 1.13. Post the verification results as a PR comment, then tick 1.1.
 >
 > If a check fails and the fix isn't obvious and in scope, stop and report. Don't merge, and don't start 1.2.
 
@@ -77,7 +77,7 @@ layout:
    packages:
      - "apps/*"
      - "packages/*"
-     - "workers/*"   # dropped in 1.7 when workers/mcp moves to apps/mcp
+     - "workers/*"   # dropped in 1.12 when workers/mcp moves to apps/mcp
    catalog:
      typescript: 5.9.3        # currently locked; TS 7 is out of scope (PLAN §3)
      tsx: ^4.22.0
@@ -122,7 +122,7 @@ layout:
         - uses: actions/upload-pages-artifact@v3
           with: { path: dist }
     ```
-    **Hidden files:** the site serves `/.well-known/api-catalog`. Use an `upload-pages-artifact` major that includes dotfiles (v3, which `withastro/action@v3` used), or set the include-hidden option explicitly. Read the action's README before choosing. The 1.8 runbook checks the live URL.
+    **Hidden files:** the site serves `/.well-known/api-catalog`. Use an `upload-pages-artifact` major that includes dotfiles (v3, which `withastro/action@v3` used), or set the include-hidden option explicitly. Read the action's README before choosing. The 1.13 runbook checks the live URL.
 11. **`.github/workflows/ci.yml`:**
     ```yaml
     name: CI
@@ -164,7 +164,7 @@ layout:
 | V8 | Deploy build job | Actions → "Deploy to GitHub Pages" → Run workflow on `monorepo/refactor` | the **build** job is green. The deploy job is expected to be refused, because the `github-pages` environment only accepts `main`. |
 | V9 | PR CI | `CI` on the draft PR | green |
 
-Post-merge checks for this sub-phase are in the 1.8 runbook: live deploy, dotfiles served, and the digest running on pnpm 11.
+Post-merge checks for this sub-phase are in the 1.13 runbook: live deploy, dotfiles served, and the digest running on pnpm 11.
 
 ## Rollback
 

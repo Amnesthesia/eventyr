@@ -4,7 +4,7 @@
 >
 > Execute sub-phase 1.4 (core filters) of PR 1, the eventyr monorepo refactor.
 >
-> 1. Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.4-core-filters.md`, and no other phase files.
+> 1. Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.04-core-filters.md`, and no other phase files.
 > 2. Work on branch `monorepo/refactor`, even if your environment suggests another. If you can't push to it, stop and ask.
 > 3. Sync first, as PLAN §4.3 describes.
 > 4. Follow the ordered steps and run every verification.
@@ -29,7 +29,7 @@ them have tests.
 
 ## Files affected
 
-- New: `scripts/filter-parity.mjs`. It is reused in 1.5, 1.8 and 2.1.
+- New: `scripts/filter-parity.mjs`. It is reused in 1.9, 1.13 and 2.1.
 - New: `packages/core/src/filters.ts`, `packages/core/src/filters.test.ts`, and `packages/core/src/fixtures/events.ts` (about 25 hand-built events covering every edge case).
 - Edited: `app/context.tsx`.
 

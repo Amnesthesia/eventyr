@@ -3,7 +3,7 @@
 > **Handoff: paste this into a fresh Claude Code session**
 >
 > Execute sub-phase 2.4 (native scaffold) of PR 2, the eventyr React Native app. Read
-> `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.4-native-scaffold.md`, and no other phase
+> `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.04-native-scaffold.md`, and no other phase
 > files. Work on branch `native/app`, even if your environment suggests another. If you can't push
 > to it, stop and ask. Sync first, as described in PLAN §4.3. Follow the ordered steps and run
 > every verification. Post the results as a comment on the PR 2 draft and tick 2.4.

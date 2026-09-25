@@ -3,7 +3,7 @@
 > **Handoff: paste this into a fresh Claude Code session**
 >
 > Execute sub-phase 2.3 (shared behaviour, web) of PR 2, the eventyr React Native app. Read
-> `docs/monorepo/PLAN.md` (especially §7 and §8) and `docs/monorepo/phase-2.3-shared-behaviour-web.md`,
+> `docs/monorepo/PLAN.md` (especially §7 and §8) and `docs/monorepo/phase-2.03-shared-behaviour-web.md`,
 > and no other phase files. Work on branch `native/app`, even if your environment suggests another;
 > if you can't push to it, stop and ask. Sync first per PLAN §4.3. Parts A, B and C are each one
 > commit, or a small series of commits. If context gets tight, stop after a completed part, push,

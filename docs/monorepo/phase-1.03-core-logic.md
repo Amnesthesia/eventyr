@@ -2,9 +2,9 @@
 
 > **Handoff: paste this into a fresh Claude Code session**
 >
-> Execute sub-phase 1.3 (core utils) of PR 1, the eventyr monorepo refactor.
+> Execute sub-phase 1.3 (core logic) of PR 1, the eventyr monorepo refactor.
 >
-> - Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.3-core-utils.md`. Don't read any other phase files.
+> - Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.03-core-logic.md`. Don't read any other phase files.
 > - Work on branch `monorepo/refactor`, even if your environment suggests another branch. If you can't push to it, stop and ask.
 > - Sync first, following PLAN §4.3.
 > - Follow the steps in order and use `git mv` for every move.

@@ -1,25 +1,25 @@
-# Sub-phase 1.7: Move the MCP Worker to `apps/mcp` and share its types
+# Sub-phase 1.12: Move the MCP Worker to `apps/mcp` and share its types
 
 > **Handoff: paste this into a fresh Claude Code session**
 >
-> Execute sub-phase 1.7 (mcp move) of PR 1, the eventyr monorepo refactor.
-> - Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.7-mcp-move.md`, and no other phase files.
+> Execute sub-phase 1.12 (mcp move) of PR 1, the eventyr monorepo refactor.
+> - Read `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.12-mcp-move.md`, and no other phase files.
 > - Work on branch `monorepo/refactor`, even if your environment suggests another. If you can't push to it, stop and ask.
 > - Sync first, as PLAN §4.3 says.
 > - Follow the ordered steps, using `git mv` for every move.
-> - Run every verification, post the results as a comment on the PR 1 draft, and tick 1.7.
+> - Run every verification, post the results as a comment on the PR 1 draft, and tick 1.12.
 > - If a check fails and the fix isn't obvious and in scope, stop and report.
-> - Push. Don't merge, and don't start 1.8.
+> - Push. Don't merge, and don't start 1.13.
 
 ## Goal
 
 - Move `workers/mcp` to `apps/mcp` and rename it to `@dothingslol/mcp`.
-- Replace the verbatim copy of the AI-feed types (`workers/mcp/src/dothingsClient.ts:10-65`) with one declaration in core. Both the producer (`apps/pipeline/src/ai.ts`) and the consumer (the Worker) use it.
+- Replace the verbatim copy of the AI-feed types (`workers/mcp/src/dothingsClient.ts:10-65`) with one declaration in core. Both the producer (`apps/pipeline/src/publish/ai.ts`) and the consumer (the Worker) use it.
 - Deploy stays manual, via `wrangler deploy`, as it is today.
 
 ## Preconditions
 
-- 1.6 is committed on the branch.
+- 1.11 is committed on the branch.
 
 ## Files affected
 
@@ -29,7 +29,7 @@
 | Workspace | `pnpm-workspace.yaml`: drop `workers/*` |
 | Rename | `apps/mcp/package.json`: `name` becomes `@dothingslol/mcp` |
 | New shared types | `packages/core/src/aiFeed.ts`: `CompactEvent`, `DayFile`, `WeekFile`, `CityIndexEntry`, `AiIndex` |
-| Use the shared types | `apps/pipeline/src/ai.ts` and `apps/mcp/src/dothingsClient.ts` import them |
+| Use the shared types | `apps/pipeline/src/publish/ai.ts` and `apps/mcp/src/dothingsClient.ts` import them |
 | CI | `.github/workflows/ci.yml`: switch to `--filter @dothingslol/mcp` |
 | Lint | `biome.json`: `workers/**` becomes `apps/mcp/src/**` |
 | Docs | `CLAUDE.md` "AI feed & MCP server": `workers/mcp/` becomes `apps/mcp/` |
@@ -58,7 +58,7 @@
 | V5 | Boundaries | `node scripts/check-boundaries.mjs` | exit 0 |
 | V6 | PR CI | `CI` | green |
 
-The optional live redeploy and smoke test are in the 1.8 runbook.
+The optional live redeploy and smoke test are in the 1.13 runbook.
 
 ## Rollback
 

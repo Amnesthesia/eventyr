@@ -4,7 +4,7 @@
 >
 > Execute sub-phase 2.7 (native personalisation) of PR 2, the eventyr React Native app.
 >
-> - Read `docs/monorepo/PLAN.md` (especially §7) and `docs/monorepo/phase-2.7-native-personalisation.md`. Don't read any other phase files.
+> - Read `docs/monorepo/PLAN.md` (especially §7) and `docs/monorepo/phase-2.07-native-personalisation.md`. Don't read any other phase files.
 > - Work on branch `native/app`, even if your environment suggests a different one. If you can't push to it, stop and ask.
 > - Sync first, as described in PLAN §4.3.
 > - Each numbered step is one commit. If context gets tight, stop after a completed step, push, and report.

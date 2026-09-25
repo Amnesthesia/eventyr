@@ -3,7 +3,7 @@
 > **Handoff: paste this into a fresh Claude Code session**
 >
 > Execute sub-phase 2.2 (data feed) of PR 2, the eventyr React Native app. Read
-> `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.2-data-feed.md`, and no other phase files.
+> `docs/monorepo/PLAN.md` and `docs/monorepo/phase-2.02-data-feed.md`, and no other phase files.
 > Work on branch `native/app`, even if your environment suggests another; if you can't push to it,
 > stop and ask. Sync first by merging `origin/main` in (PLAN §4.3). Follow the ordered steps, run
 > every verification, post the results as a comment on the PR 2 draft, and tick 2.2. If a check

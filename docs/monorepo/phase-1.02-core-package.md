@@ -3,7 +3,7 @@
 > **Handoff: paste this into a fresh Claude Code session**
 >
 > Execute sub-phase 1.2 (core package) of PR 1, the eventyr monorepo refactor. Read
-> `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.2-core-package.md`, and no other phase files.
+> `docs/monorepo/PLAN.md` and `docs/monorepo/phase-1.02-core-package.md`, and no other phase files.
 > Work on branch `monorepo/refactor`, even if your environment suggests another. If you can't push
 > to it, stop and ask. Sync first as PLAN §4.3 says. Follow the ordered steps and use `git mv` for
 > every move. Run every verification, post the results as a comment on the PR 1 draft, and tick
@@ -79,12 +79,12 @@ Add the boundary check. Behaviour stays identical.
    - Move `toISODate` (`src/common.ts`, around line 378) into `packages/core/src/shared.ts`. It is pure. `common.ts` re-exports it.
    - Change `src/pages/[city]/[timeframe].astro:10` to import `SITE_URL` and `toISODate` from `@dothingslol/core/shared`.
    - Afterwards, `grep -rn "common" src/pages src/layouts` must print nothing.
-7. **`scripts/check-boundaries.mjs`.** Plain Node, no dependencies. It exits non-zero and names the file and specifier when:
-   - a `packages/*/package.json` lists a `workspace:` dependency
-   - an `apps/*/package.json` lists another `apps/*` package
-   - a relative import in a `.ts`, `.tsx`, `.astro`, `.mjs` or `.js` file resolves into a **different** package root
+7. **`scripts/check-boundaries.mjs`.** Plain Node, no dependencies. It encodes the **allowed dependency table in PLAN §2.3** as data. Packages that don't exist yet are simply absent. It exits non-zero, naming the file and the offending specifier or dependency, when:
+   - a workspace package's `package.json` lists a `workspace:` dependency the table doesn't allow;
+   - a relative import in a `.ts`, `.tsx`, `.astro`, `.mjs` or `.js` file resolves into a **different** package root. Package roots are `packages/*`, `apps/*`, `workers/*`, plus the root package, which is everything else. Cross-package access must go through the package name;
+   - an import reaches into another package's internals (`@dothingslol/x/src/...`) instead of an `exports` entry.
 
-   Package roots are `packages/*`, `apps/*`, `workers/*`, and the root package, which is everything else. Skip `node_modules`, `dist` and `.astro`.
+   Skip `node_modules`, `dist` and `.astro`. Later sub-phases only add rows to the table. They never loosen it.
 8. **Biome.**
    - Add `packages/**/*.ts` to `files.includes`.
    - Add an `overrides` entry for `packages/core/src/**`, excluding `**/*.test.ts`, that sets `linter.rules.correctness.noNodejsModules` to `"error"`.
