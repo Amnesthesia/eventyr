@@ -11,6 +11,7 @@
 //
 // Usage: pnpm collect-adapters [--only=<source-id>,...]   (ids = curated filenames)
 
+import "../llmBootstrap.ts";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
@@ -27,7 +28,7 @@ import {
 	SOURCES_ROOT,
 	toISODate,
 } from "../common.ts";
-import { installUsageReporting } from "../providers/gemini.ts";
+import { installUsageReporting } from "../io/usage.ts";
 import {
 	type Annotation,
 	annotationKey,
@@ -461,7 +462,7 @@ async function main(): Promise<void> {
 		createGeminiPageExtractor(GOOGLE_API_KEY, { stage: "collect/extract" }),
 		{ force: FORCE },
 	);
-	const annotate = createGeminiAnnotator(GOOGLE_API_KEY);
+	const annotate = createGeminiAnnotator();
 
 	let total = 0;
 	const totals = { found: 0, past: 0, later: 0, undated: 0 };

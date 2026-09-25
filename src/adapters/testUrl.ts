@@ -11,6 +11,7 @@
 //
 // CITY must be set: page times are wall-clock times in that city's zone.
 
+import "../llmBootstrap.ts";
 import {
 	addDays,
 	getWeekRange,
@@ -18,7 +19,7 @@ import {
 	requireEnv,
 	toISODate,
 } from "../common.ts";
-import { installUsageReporting } from "../providers/gemini.ts";
+import { installUsageReporting } from "../io/usage.ts";
 import { applyAnnotation, createGeminiAnnotator } from "./annotate.ts";
 import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
@@ -98,7 +99,7 @@ if (RAW) {
 
 	let events: Record<string, unknown>[] = [];
 	if (prepared.length > 0) {
-		const annotate = createGeminiAnnotator(GOOGLE_API_KEY);
+		const annotate = createGeminiAnnotator();
 		const annotations = await annotate(
 			prepared.map((p) => p.event),
 			source.name,

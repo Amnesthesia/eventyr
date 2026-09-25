@@ -8,11 +8,9 @@
 // BaseProvider.buildFormatSystem so an adapter-sourced event scores the same
 // way an AI-search one does.
 
-import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { GoogleGenAI } from "@google/genai";
+import { askDetailed, parseJsonArray } from "@dothingslol/llm";
+import { chunkArray } from "@dothingslol/utils/concurrency";
 import { CATEGORIES, TAG_SET, TAGS } from "../common.ts";
-import { parseJsonArray } from "../providers/base.ts";
-import { geminiText } from "../providers/gemini.ts";
 import { isValidCategory } from "./normalise.ts";
 
 const ANNOTATE_MODEL = "gemini-3.1-flash-lite";
@@ -20,8 +18,6 @@ const ANNOTATE_MODEL = "gemini-3.1-flash-lite";
 // reasoning — so a bigger batch costs accuracy far less than extraction
 // would, and halves the calls.
 const BATCH_SIZE = 40;
-/** Concurrent annotate calls per source. */
-const MAX_CONCURRENT_CALLS = 6;
 
 export interface Annotation {
 	category: string;
@@ -94,15 +90,12 @@ export function coerce(raw: Record<string, unknown> | undefined): Annotation {
 	};
 }
 
-export function createGeminiAnnotator(apiKey: string): AnnotateFn {
-	const ai = new GoogleGenAI({ apiKey });
-
+export function createGeminiAnnotator(): AnnotateFn {
 	return async function annotate(events, sourceName) {
 		const batches = chunkArray(events, BATCH_SIZE);
-		const results = await mapWithConcurrency(
-			batches,
-			MAX_CONCURRENT_CALLS,
-			async (batch, batchIdx) => {
+		// One prompt per batch, concurrent under llm's Gemini limiter.
+		const outcomes = await askDetailed(
+			batches.map((batch) => {
 				const input = batch.map((e, i) => ({
 					i,
 					title: e.title,
@@ -110,30 +103,34 @@ export function createGeminiAnnotator(apiKey: string): AnnotateFn {
 					location: e.location,
 					source: e.source,
 				}));
-				try {
-					const text = await geminiText(ai, {
-						stage: "annotate",
-						model: ANNOTATE_MODEL,
-						contents: `Source: ${sourceName}\n\nEvents:\n${JSON.stringify(input)}`,
-						systemInstruction: SYSTEM_PROMPT,
-						maxOutputTokens: 8000,
-						temperature: 0.1,
-					});
-					const parsed = parseJsonArray<Record<string, unknown>>(text);
-					const byIndex = new Map<number, Record<string, unknown>>();
-					for (const p of parsed) {
-						if (typeof p?.i === "number") byIndex.set(p.i, p);
-					}
-					return batch.map((_, i) => coerce(byIndex.get(i)));
-				} catch (err) {
-					console.error(
-						`  ⚠ [annotate/${sourceName}] batch ${batchIdx + 1} failed: ${(err as Error).message} — keeping events unclassified`,
-					);
-					return batch.map(() => defaultAnnotation());
-				}
+				return `Source: ${sourceName}\n\nEvents:\n${JSON.stringify(input)}`;
+			}),
+			{
+				provider: "gemini",
+				model: ANNOTATE_MODEL,
+				stage: "annotate",
+				system: SYSTEM_PROMPT,
+				maxOutputTokens: 8000,
+				temperature: 0.1,
 			},
 		);
-		return results.flat();
+		return batches.flatMap((batch, batchIdx) => {
+			const outcome = outcomes[batchIdx];
+			if (outcome.status === "rejected") {
+				console.error(
+					`  ⚠ [annotate/${sourceName}] batch ${batchIdx + 1} failed: ${(outcome.reason as Error).message} — keeping events unclassified`,
+				);
+				return batch.map(() => defaultAnnotation());
+			}
+			const parsed = parseJsonArray<Record<string, unknown>>(
+				outcome.value.text,
+			);
+			const byIndex = new Map<number, Record<string, unknown>>();
+			for (const p of parsed) {
+				if (typeof p?.i === "number") byIndex.set(p.i, p);
+			}
+			return batch.map((_, i) => coerce(byIndex.get(i)));
+		});
 	};
 }
 
