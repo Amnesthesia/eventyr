@@ -47,6 +47,7 @@ import {
 	type SourceTier,
 	toISODate,
 } from "../common.ts";
+import { withExtractionCache } from "../io/fileCache.ts";
 import { installUsageReporting, reportGeminiUsage } from "../io/usage.ts";
 import { toCandidateEvent } from "./candidate.ts";
 import { countDateHits } from "./dates.ts";
@@ -55,7 +56,6 @@ import {
 	findEventNodes,
 	jsonLdNodeToRawFields,
 } from "./extract.ts";
-import { withExtractionCache } from "./extractionCache.ts";
 import {
 	feedUrlsFromHtml,
 	parseFeed,

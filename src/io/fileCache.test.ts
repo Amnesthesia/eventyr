@@ -3,14 +3,14 @@ import { mkdtempSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
-import type { RawCandidateFields } from "./types.ts";
+import type { RawCandidateFields } from "../adapters/types.ts";
 
 // The cache writes under DATA_ROOT, so point that at a scratch dir before the
 // module under test resolves it.
 const scratch = mkdtempSync(join(tmpdir(), "eventyr-cache-"));
 process.env.EVENTYR_DATA_ROOT = scratch;
 
-const { withExtractionCache } = await import("./extractionCache.ts");
+const { withExtractionCache } = await import("./fileCache.ts");
 
 function fields(title: string): RawCandidateFields[] {
 	return [

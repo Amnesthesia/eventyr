@@ -28,6 +28,7 @@ import {
 	SOURCES_ROOT,
 	toISODate,
 } from "../common.ts";
+import { withExtractionCache } from "../io/fileCache.ts";
 import { installUsageReporting } from "../io/usage.ts";
 import {
 	type Annotation,
@@ -38,7 +39,6 @@ import {
 	reuseAnnotation,
 } from "./annotate.ts";
 import { enrichFromDetailPage } from "./enrichTimes.ts";
-import { withExtractionCache } from "./extractionCache.ts";
 import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
 import {

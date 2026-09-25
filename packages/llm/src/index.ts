@@ -1,5 +1,6 @@
 // @dothingslol/llm — ask() across providers (PLAN §2.4). Gemini only until 1.7.
 
+export { cacheKey } from "./cache.ts";
 export type { AskJsonOptions, AskParams } from "./client.ts";
 export {
 	ask,
