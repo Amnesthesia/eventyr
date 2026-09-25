@@ -467,6 +467,30 @@ const CITY_TERMS: Record<string, string[]> = {
 		"qld",
 		"queensland",
 	],
+	// The shire's towns as URL slugs, plus the other places sources/byron.yml's
+	// venues sit in ("federal" left out: too common a word in a URL). Not
+	// "nsw", unlike "qld" for the Queensland cities: Byron is a small corner
+	// of the state, and a state-level sitemap is far more likely to be Sydney's.
+	byron: [
+		"byron-bay",
+		"byronbay",
+		"byron_bay",
+		"byron-shire",
+		"byronshire",
+		"mullumbimby",
+		"mullum",
+		"bangalow",
+		"suffolk-park",
+		"suffolkpark",
+		"ocean-shores",
+		"brunswick-heads",
+		"ballina",
+		"lismore",
+		"nimbin",
+		"newrybar",
+		"billinudgel",
+		"northern-rivers",
+	],
 };
 
 const OTHER_REGION =
