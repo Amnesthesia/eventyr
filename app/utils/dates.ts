@@ -1,4 +1,4 @@
-// Single source of truth lives in src/shared.ts, which the pipeline's /ai
+// Single source of truth lives in @dothingslol/core/shared, which the pipeline's /ai
 // feed builder (src/ai.ts) also reads — a second copy here is exactly how the
 // site and that feed would end up disagreeing about which day an event
 // belongs to. Imported from shared.ts, not common.ts: common.ts reads the

@@ -620,7 +620,7 @@ export const KEY_TO_SLUG: Record<string, string> = {
 /**
  * The minimum an event has to look like to be identified. Declared
  * structurally rather than as Record<string, unknown> so both the pipeline's
- * loose payloads and app/types.ts's Event interface satisfy it — an interface
+ * loose payloads and schema.ts's EventData satisfy it — an interface
  * with declared fields is not assignable to an index-signature type.
  */
 export interface IdentifiableEvent {
@@ -646,7 +646,7 @@ function str(event: IdentifiableEvent, key: keyof IdentifiableEvent): string {
  * DO NOT change the basis or the algorithm. ical.ts and rss.ts both derived
  * their ids from exactly this, so any change rewrites every UID and guid at
  * once: calendar clients re-add all 643 events and feed readers re-notify on
- * all of them. src/shared.test.ts pins the output against a fixture.
+ * all of them. shared.test.ts pins the output against a fixture.
  *
  * ponytail: 32-bit rolling hash; a collision merges two events. Switch to a
  * sha1 prefix if two ever collide — but that is the rewrite described above,

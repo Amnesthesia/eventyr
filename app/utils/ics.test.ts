@@ -99,7 +99,7 @@ test("the UID matches the city feed's, so adding one event never duplicates it",
 		location: "Netherworld, Fortitude Valley",
 	});
 	const ics = buildEventIcs(event, "brisbane", BNE) as string;
-	// Same value src/ical.ts writes — see src/shared.test.ts, which pins it.
+	// Same value src/ical.ts writes — see core's shared.test.ts, which pins it.
 	assert.ok(lines(ics).includes("UID:brisbane-b8wguc"), ics);
 });
 

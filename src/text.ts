@@ -62,7 +62,7 @@ const JSON_ESCAPE_MAP: Record<string, string> = {
  * Deliberately does NOT strip URLs or markdown. A description is often the
  * only place a ticket URL appears — `event.link` is frequently just the venue
  * homepage — so removing it here would destroy the data. That is a
- * presentation concern: see stripForDisplay in src/shared.ts, which the cards
+ * presentation concern: see stripForDisplay in @dothingslol/core/shared, which the cards
  * and the event page apply at render time.
  */
 export function cleanText(value: unknown): string {

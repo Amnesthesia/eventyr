@@ -96,7 +96,8 @@ absent from the list, with no runtime exclusion logic anywhere.
 source is a one-field change. There is no separate adapters file.
 
 `timezone` (IANA) is required and is the only place a city's zone is stated. Offsets are derived
-per date (`src/tz.ts`). Never hard-code a zone or an offset, and never rely on the host `TZ`.
+per date (`packages/core/src/tz.ts`). Never hard-code a zone or an offset, and never rely on the
+host `TZ`.
 `loadCityConfig` refuses a file without a valid one. `currency` is written explicitly too.
 
 Each file also carries a `centre` (`lat`, `lng`, `radiusKm`) — the locality check in `curate.ts`.
@@ -142,16 +143,22 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 
 ## Key files
 
-- `src/shared.ts` — constants shared with the browser bundle (`CATEGORIES`, `CATEGORY_EMOJI`,
-  `TOP_PICK_THRESHOLD`, `KEY_TO_SLUG`, `SITE_URL`). **Must stay free of `node:` imports** —
-  `app/` code imports it directly, and pulling in `common.ts` (which reads the filesystem)
-  breaks the Vite build.
-- `src/tz.ts` — every zone calculation: `zonedOffsetMinutes`, `zonedDate`, `zonedTimeToInstant`
-  (null for the skipped DST hour, first occurrence for the repeated one), all Intl-based and
-  browser-safe. `getWeekRange`/`toISODate`/`fmtDate` in `common.ts` take the city's zone.
+- `packages/core/src/shared.ts` (`@dothingslol/core/shared`) — constants shared with the browser
+  bundle (`CATEGORIES`, `CATEGORY_EMOJI`, `TOP_PICK_THRESHOLD`, `KEY_TO_SLUG`, `SITE_URL`).
+  **Must stay free of `node:` imports** — `app/` code imports it directly, and pulling in
+  `common.ts` (which reads the filesystem) breaks the Vite build. Biome enforces this for all of
+  `packages/core/src` (`noNodejsModules`, tests exempt), and `scripts/check-boundaries.mjs`
+  enforces the package graph in `docs/monorepo/PLAN.md` §2.3.
+- `packages/core/src/schema.ts` (`@dothingslol/core/schema`) — `EventData` and `CityPayload`,
+  inferred from zod schemas that `schema.data.test.ts` checks against every committed
+  `data/*.json` (tests only for now; no runtime validation).
+- `packages/core/src/tz.ts` — every zone calculation: `zonedOffsetMinutes`, `zonedDate`,
+  `zonedTimeToInstant` (null for the skipped DST hour, first occurrence for the repeated one), all
+  Intl-based and browser-safe. `toISODate` (core `shared.ts`) and `getWeekRange`/`fmtDate`
+  (`common.ts`) take the city's zone. Moves on to `packages/utils` in 1.5.
 - `src/common.ts` — `INTERESTS` (the fixed interest profile every prompt is built from),
   `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`, `curatedPath()`; re-exports
-  everything from `shared.ts` so pipeline modules have one import site.
+  everything from `@dothingslol/core/shared` so pipeline modules have one import site.
 - `src/adapters/` — the scrape path: `probe.ts` (find/verify listing URLs), `fetch.ts`
   (rate limits, conditional GET; robots.txt is deliberately not consulted as a
   permission check — see its header), `extract.ts` (JSON-LD),
@@ -164,9 +171,10 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
   national source listed under this city. Aggregator/open tier only; once per distinct location
   ever, cached in `data/{city}/locations.json`; keeps the event whenever it cannot get an answer.
   Distinct from `src/geocode.ts`, which only builds the clickable Maps link and needs no key.
-- `src/shared.ts` also owns event identity: `eventHash` (the basis for the iCal UID, the RSS guid
-  and the share URL — **output is frozen**, pinned by `src/shared.test.ts`) plus `eventSlug` /
-  `eventPath` for the per-event pages at `/{city}/e/{slug}`.
+- `packages/core/src/shared.ts` also owns event identity: `eventHash` (the basis for the iCal UID,
+  the RSS guid and the share URL — **output is frozen**, pinned by
+  `packages/core/src/shared.test.ts`) plus `eventSlug` / `eventPath` for the per-event pages at
+  `/{city}/e/{slug}`.
 - `src/pages/[city]/e/[event].astro` — one pre-rendered page per event, so a shared link unfurls as
   that event. No React island; the unfurl crawlers run no JavaScript, which is the whole reason
   these are static rather than resolved client-side.

@@ -98,9 +98,9 @@ it opens the native share sheet, or copies the URL where that does not exist; wi
 just a link. Same for Add to calendar, which builds a single-event `.ics` in the browser
 (`app/utils/ics.ts`).
 
-The slug's trailing hash is `eventHash` from `src/shared.ts`, which is also the iCal `UID` and the
+The slug's trailing hash is `eventHash` from `packages/core/src/shared.ts`, which is also the iCal `UID` and the
 RSS `guid` — one identity, so a share URL, a calendar entry and a feed item all name the same
-event. **Its output is frozen** and pinned by `src/shared.test.ts`: changing the basis or the
+event. **Its output is frozen** and pinned by `packages/core/src/shared.test.ts`: changing the basis or the
 algorithm rewrites every UID and guid at once, which makes calendar clients re-add every event and
 feed readers re-notify on all of them.
 
@@ -393,11 +393,11 @@ no registration — just write `{city_key, provider, tier, week_start, week_end,
 
 ## Key files
 
-- `src/shared.ts` — constants shared with the browser bundle. **Must stay free of `node:` imports**;
+- `packages/core/src/shared.ts` — constants shared with the browser bundle. **Must stay free of `node:` imports**;
   `app/` imports it directly and pulling in `common.ts` (which reads the filesystem) breaks the Vite
   build.
 - `src/common.ts` — `INTERESTS`, `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`;
-  re-exports everything from `shared.ts`.
+  re-exports everything from `@dothingslol/core/shared`.
 - `src/adapters/` — the scrape path: `probe.ts`, `discover.ts`, `collect.ts`, `fetch.ts`,
   `extract.ts`, `embeddedJson.ts`, `llmExtract.ts`, `dates.ts`, `normalise.ts`, `annotate.ts`.
 - `src/dedupe.ts` / `src/dedupeClassifier.ts` — cross-source dedupe.
