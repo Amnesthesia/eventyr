@@ -196,10 +196,11 @@ ticketing hosts) keep dedupe and suppression recognising the same venue.
 ### Adding a city
 
 ```bash
-CITY_NAME="Newcastle" CITY_KEY=newcastle pnpm add-city
+CITY_NAME="Newcastle" CITY_KEY=newcastle CITY_TIMEZONE=Australia/Sydney pnpm add-city
 ```
 
-Writes an empty `sources/{key}.yml` and adds the key to `digest.yml`'s dispatch options. It does
+Writes an empty `sources/{key}.yml` (with the required IANA `timezone` and `currency`) and adds
+the key to `digest.yml`'s dispatch options. It does
 not discover anything — that is `discover-sources` below, which does the job better. Then set the
 city's `centre` by hand (see above) and run discover + probe.
 

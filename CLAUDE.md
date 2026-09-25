@@ -13,8 +13,8 @@ agrees on which day it is. Sunday's own events survive the run via curate's carr
 The Mermaid flowchart under `## Pipeline` in `README.md` mirrors this list — update it in the same
 change as any stage change (including where `INTERESTS` is or isn't applied).
 
-1. **`src/add_city.ts`** (one-off per city, `pnpm add-city`) — writes an empty
-   `sources/{city}.yml` skeleton and registers the city in `digest.yml`'s dispatch options.
+1. **`src/add_city.ts`** (one-off per city, `pnpm add-city`, `CITY_TIMEZONE` required) — writes an
+   empty `sources/{city}.yml` skeleton and registers the city in `digest.yml`'s dispatch options.
    It does NOT discover sources: that used to fan out to Anthropic, Perplexity and Google and
    merge the prose, which `discover.ts` later measured as worthless (see its header). Run
    `pnpm discover-sources` next, then `pnpm probe-sources`.
