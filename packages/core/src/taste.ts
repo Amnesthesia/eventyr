@@ -9,6 +9,7 @@
 // event ages out.
 
 import type { EventData } from "./schema.ts";
+import { STORAGE_KEYS } from "./storageKeys.ts";
 import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs.ts";
 import { tagWeight } from "./tagSpecificity.ts";
 import { vibesOf } from "./vibes.ts";
@@ -307,6 +308,6 @@ export function logTasteProfile(taste: TasteProfile, picks: EventData[]): void {
 			title: e.title,
 		})),
 	);
-	console.log("Raw profile (stored as 'eventyr:taste'):", taste);
+	console.log(`Raw profile (stored as '${STORAGE_KEYS.taste}'):`, taste);
 	console.groupEnd();
 }

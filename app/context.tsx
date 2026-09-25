@@ -22,6 +22,7 @@ import {
 	KEY_TO_SLUG,
 	LOW_SCORE_THRESHOLD,
 } from "@dothingslol/core/shared";
+import { STORAGE_KEYS } from "@dothingslol/core/storageKeys";
 import { cycleTagPref, type TagPrefs } from "@dothingslol/core/tagPrefs";
 import { tagWeights } from "@dothingslol/core/tagSpecificity";
 import {
@@ -177,13 +178,13 @@ export function EventsProvider({
 		set: starred,
 		add: baseSaveEvent,
 		remove: baseUnsaveEvent,
-	} = useStoredSet("eventyr:starred");
+	} = useStoredSet(STORAGE_KEYS.starred);
 	const {
 		set: hidden,
 		add: baseHideEvent,
 		remove: baseUnhideEvent,
 		clear: baseClearHidden,
-	} = useStoredSet("eventyr:hidden");
+	} = useStoredSet(STORAGE_KEYS.hidden);
 	// Which hidden ids were counted as a dislike (as opposed to a plain swipe-
 	// left from before this feature existed), so unhiding one reverses exactly
 	// the weight it added and nothing it didn't.
@@ -192,7 +193,7 @@ export function EventsProvider({
 		add: markDisliked,
 		remove: unmarkDisliked,
 		clear: clearDislikedMarks,
-	} = useStoredSet("eventyr:disliked");
+	} = useStoredSet(STORAGE_KEYS.disliked);
 	// What this browser tends to single out, used to order Top Picks and the
 	// swipe deck. Empty until MIN_SIGNAL interactions, at which point they
 	// start leaning personal.

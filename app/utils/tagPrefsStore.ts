@@ -2,9 +2,10 @@
 // themselves, and what they do to ordering, are @dothingslol/core/tagPrefs;
 // only the storage is web-specific.
 
+import { STORAGE_KEYS } from "@dothingslol/core/storageKeys";
 import type { TagPrefs } from "@dothingslol/core/tagPrefs";
 
-const KEY = "eventyr:tag-prefs";
+const KEY = STORAGE_KEYS.tagPrefs;
 
 export function loadTagPrefs(): TagPrefs {
 	if (typeof localStorage === "undefined") return {};

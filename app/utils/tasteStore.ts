@@ -4,9 +4,10 @@
 
 import type { EventData } from "@dothingslol/core/schema";
 import { eventHash } from "@dothingslol/core/shared";
+import { STORAGE_KEYS } from "@dothingslol/core/storageKeys";
 import { bumpTaste, type TasteProfile } from "@dothingslol/core/taste";
 
-const KEY = "eventyr:taste";
+const KEY = STORAGE_KEYS.taste;
 
 export function loadTaste(): TasteProfile {
 	if (typeof localStorage === "undefined") return {};
@@ -32,7 +33,7 @@ export function saveTaste(profile: TasteProfile): void {
 
 /** Events already counted for a given signal, keyed by eventHash, so mashing
  * Share on one event cannot bend the whole profile toward it. */
-const NOTED_KEY = "eventyr:taste-noted";
+const NOTED_KEY = STORAGE_KEYS.tasteNoted;
 
 /** Same-document writes do not fire `storage`, so the profile announces its own
  * changes and the provider re-reads. Without it a share written straight to
