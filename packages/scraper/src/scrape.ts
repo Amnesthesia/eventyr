@@ -56,9 +56,15 @@ export interface ScrapeResult {
 		/** Candidates the ladder produced, before anything was dropped. */
 		found: number;
 		kept: number;
-		/** Dropped before mapping. Only what needs no publishing window: the
-		 * pipeline decides "past" and "later". */
-		rejected: { reason: "no title" | "no date"; title: string | null }[];
+		/** Dropped before mapping, with the text that failed so a bad yield is
+		 * diagnosable from the result. Only what needs no publishing window:
+		 * the pipeline decides "past" and "later". */
+		rejected: {
+			reason: "no title" | "no date";
+			title: string | null;
+			startRaw: string | null;
+			url: string | null;
+		}[];
 	};
 	/** Every candidate the ladder produced, for callers that re-map after
 	 * enriching (the pipeline's detail-page pass). */
@@ -141,13 +147,20 @@ export async function scrape(
 	const rejected: ScrapeResult["parse"]["rejected"] = [];
 	const events: ScrapedEvent[] = [];
 	for (const c of outcome.candidates) {
+		const reject = (reason: "no title" | "no date") =>
+			rejected.push({
+				reason,
+				title: c.title,
+				startRaw: c.startRaw,
+				url: c.url,
+			});
 		if (!c.title?.trim()) {
-			rejected.push({ reason: "no title", title: c.title });
+			reject("no title");
 			continue;
 		}
 		const event = candidateToEvent(c, source, opts.timeZone, opts.linkRewriter);
 		if (!event.datetime_iso) {
-			rejected.push({ reason: "no date", title: c.title });
+			reject("no date");
 			continue;
 		}
 		events.push(event);

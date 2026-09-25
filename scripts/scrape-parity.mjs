@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 // Scraper output parity harness (docs/monorepo/PLAN.md §9, phase 1.8).
 //
-// Runs every page fixture in packages/scraper/test/fixtures through the
-// extraction ladder with a fake fetcher (the fixture bodies stand in for the
-// network) and a stub LLM rung that returns one fixed marker candidate, so no
-// model is ever called, then through the CandidateEvent → event mapping. The
-// goldens in test/golden/scrape are the contract the move into
-// @dothingslol/scraper must keep:
+// Runs every page fixture in packages/scraper/test/fixtures through
+// @dothingslol/scraper's scrape() with the package's fixture fetcher (the
+// fixture bodies stand in for the network) and a stub LLM rung that returns
+// one fixed marker candidate, so no model is ever called. The goldens in
+// test/golden/scrape were recorded from the pre-1.8 ladder + normalise (the
+// step-1 version of this script, commit 2ab0ec6) and are the contract the
+// move must keep:
 //
 //   <fixture>.json   fetch outcome (listings, errors), every candidate with
 //                    its provenance, the normalised events, the rejections
@@ -62,48 +63,14 @@ const latencyMs = Number(
 );
 
 const load = (p) => tsImport(p, import.meta.url);
-const { createPageAdapter } = await load("../src/adapters/pageAdapter.ts");
-const { runAdapter } = await load("../src/adapters/runner.ts");
-const { prepareCandidates } = await load("../src/adapters/normalise.ts");
+const { scrape } = await load("../packages/scraper/src/index.ts");
+const { createFixtureFetcher } = await load("../packages/scraper/src/testing.ts");
 const { mapWithConcurrency } = await load(
 	"../packages/utils/src/concurrency.ts",
 );
 
 const manifest = JSON.parse(readFileSync(join(FIXTURES, "manifest.json"), "utf-8"));
-const byUrl = new Map(manifest.map((f) => [f.url, f]));
-
-// --- fake fetcher ---------------------------------------------------------
-// Serves the manifest. `status: null` + `error` is a hard fetch failure (the
-// fetcher throws, as SourceFetcher does after its retries); a 304 carries the
-// cached body's path, as SourceFetcher's conditional GET does.
-const sleep = (ms) => new Promise((ok) => setTimeout(ok, ms));
-let inFlight = 0;
-let peakInFlight = 0;
-let fetches = 0;
-const fetcher = {
-	async fetch(_sourceId, url, strategy) {
-		const f = byUrl.get(url);
-		if (!f) throw new Error(`no fixture for ${url}`);
-		inFlight++;
-		fetches++;
-		peakInFlight = Math.max(peakInFlight, inFlight);
-		try {
-			if (latencyMs > 0) await sleep(latencyMs);
-			if (f.error) throw new Error(f.error);
-			return {
-				url,
-				fetchedAt: FETCHED_AT,
-				status: f.status,
-				notModified: f.status === 304,
-				contentType: f.status === 304 ? null : (f.headers?.["content-type"] ?? null),
-				bodyPath: join(FIXTURES, "bodies", f.bodyFile),
-				strategy,
-			};
-		} finally {
-			inFlight--;
-		}
-	},
-};
+const fetcher = createFixtureFetcher(FIXTURES, { latencyMs, fetchedAt: FETCHED_AT });
 
 // --- stub LLM rung --------------------------------------------------------
 // One fixed marker candidate per call, so the golden proves the rung was
@@ -147,30 +114,40 @@ function sourceFor(f) {
 
 async function runFixture(f) {
 	const source = sourceFor(f);
-	const adapter = createPageAdapter(source, {
+	const r = await scrape(f.url, {
+		timeZone: TIME_ZONE,
+		strategy: source.strategy,
 		fetcher,
-		extractPage,
+		fallback: extractPage,
+		source,
 		now: () => new Date(FAKE_NOW),
 	});
-	const { result, candidates } = await runAdapter(adapter);
-	// Window wide open: the scraper has no publishing window, so only the
-	// window-free rejections (no title, no date) are part of its contract.
-	const { prepared, rejected } = prepareCandidates(
-		candidates,
-		source,
-		"0000-01-01",
-		"9999-12-31",
-		TIME_ZONE,
-	);
+	// The goldens carry the pre-1.8 runner's error wording ("discover:" for a
+	// fetch that never completed, "extract <url>:" for a refusal); ScrapeResult
+	// says the same thing as fetch.status + fetch.error.
+	const errors =
+		r.fetch.status === "failed"
+			? [`discover: ${r.fetch.error}`]
+			: r.fetch.status === "blocked"
+				? [`extract ${f.url}: ${r.fetch.error}`]
+				: [];
 	return {
 		fixture: f.name,
 		url: f.url,
 		strategy: source.strategy,
-		fetch: { listingsFetched: result.listingsFetched, errors: result.errors },
-		found: candidates.length,
-		candidates,
-		events: prepared.map((p) => p.event),
-		rejected,
+		fetch: { listingsFetched: r.fetch.status === "failed" ? 0 : 1, errors },
+		found: r.parse.found,
+		candidates: r.candidates,
+		events: r.events,
+		// The old Rejection also carried startISO, always null for these two
+		// reasons (they are decided before a date is resolved).
+		rejected: r.parse.rejected.map(({ reason, title, startRaw, url }) => ({
+			reason,
+			title,
+			startRaw,
+			startISO: null,
+			url,
+		})),
 		fallbackCalls: fallbackCalls.get(source.name) ?? [],
 	};
 }
@@ -196,6 +173,7 @@ for (const out of outputs) {
 	);
 }
 
+const { fetches, peakInFlight } = fetcher.stats;
 const meta = { fixtures: manifest.length, fetches, latencyMs, peakInFlight, wallClockMs };
 const metaPath = join(GOLDEN, "_meta.json");
 const problems = [];
