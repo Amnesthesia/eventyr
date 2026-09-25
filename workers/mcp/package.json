@@ -10,6 +10,7 @@
 		"typecheck": "tsc --noEmit -p tsconfig.json"
 	},
 	"dependencies": {
+		"@dothingslol/core": "workspace:*",
 		"@modelcontextprotocol/sdk": "^1.30.0",
 		"zod": "catalog:"
 	},

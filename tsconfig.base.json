@@ -1,0 +1,14 @@
+{
+	// Only the options every package agrees on. Each package's tsconfig extends
+	// this and sets its own target/lib/module; there are no project references.
+	"compilerOptions": {
+		"strict": true,
+		"skipLibCheck": true,
+		"isolatedModules": true,
+		"moduleDetection": "force",
+		"allowImportingTsExtensions": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true
+	}
+}

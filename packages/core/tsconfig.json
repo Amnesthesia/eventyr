@@ -1,0 +1,13 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		// No DOM lib: core runs on Node, Hermes and Workers.
+		"target": "ES2022",
+		"lib": ["ES2022"],
+		// NodeNext, so imports inside core carry explicit .ts extensions, which
+		// every consumer (tsx, Vite, wrangler, later Metro) accepts.
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext"
+	},
+	"include": ["src"]
+}
