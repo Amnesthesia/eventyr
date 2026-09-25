@@ -29,6 +29,7 @@ const ALLOWED = {
 		"@dothingslol/llm",
 		"@dothingslol/scraper",
 	],
+	"@dothingslol/utils": [],
 	"@dothingslol/core": ["@dothingslol/utils"],
 	// workers/mcp; becomes apps/mcp (@dothingslol/mcp) in 1.12.
 	"eventyr-mcp": ["@dothingslol/core", "@dothingslol/utils"],

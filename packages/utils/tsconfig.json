@@ -1,0 +1,11 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		// No DOM lib: utils runs on Node, Hermes, Workers and in the browser.
+		"target": "ES2022",
+		"lib": ["ES2022"],
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext"
+	},
+	"include": ["src"]
+}

@@ -1,0 +1,27 @@
+{
+	"name": "@dothingslol/utils",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./src/index.ts",
+		"./text": "./src/text.ts",
+		"./concurrency": "./src/concurrency.ts",
+		"./time": "./src/time.ts",
+		"./tz": "./src/tz.ts"
+	},
+	"scripts": {
+		"test": "tsx --test 'src/**/*.test.ts'",
+		"typecheck": "tsc --noEmit -p tsconfig.json"
+	},
+	"dependencies": {
+		"he": "^1.2.0"
+	},
+	"devDependencies": {
+		"@types/he": "^1.2.3",
+		"@types/node": "^25.8.0",
+		"tsx": "catalog:",
+		"typescript": "catalog:"
+	}
+}
