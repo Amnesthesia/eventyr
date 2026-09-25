@@ -147,6 +147,11 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
   node-free helpers that every other package may depend on: `cleanText`/`cleanUrl`,
   `mapWithConcurrency`/`chunk`, `sleep`/`backoffDelay`, and the zone maths. Scope rule: if a helper
   knows what an event, city, source, model or file path is, it does not belong here.
+- `packages/llm` (`@dothingslol/llm`) is the model client: limiter, budget, backoff, price table,
+  per-stage usage (`usageTotals`), the content cache, record/replay, and the Gemini batch transport.
+  Gemini only until 1.7 moves the search providers in. The pipeline injects its stores from
+  `src/io/{usage,fileCache,batchStore}.ts` via `src/llmBootstrap.ts`; `src/io/usage.ts` prints the
+  exit cost report and writes `data/{city}/usage/{week}.json`.
 - `packages/core` (`@dothingslol/core/<module>`) holds all node-free, React-free logic shared by web,
   native, mcp and pipeline; browser-bound halves stay in `app/utils/` (`tasteStore`, `tagPrefsStore`,
   `icsDownload`, `notifications`).
@@ -218,6 +223,8 @@ pnpm check            # both typechecks + biome + tests (what CI runs)
 
 # Check what one page would contribute, without touching the pipeline:
 pnpm test-adapter <url> [--raw] [--all]
+# Replay every LLM-using CLI against the fixture city; no key, no spend:
+node scripts/llm-parity.mjs && git diff --exit-code test/golden/llm
 ```
 
 ## Implementation guidelines
@@ -226,13 +233,21 @@ Apply these to new code in this repo. They exist because each one has already co
 
 ### Calling models
 
-- **Route every model call through the shared wrapper** (`src/providers/gemini.ts`). It is the only
-  place that can bound concurrency across the process, back off on 429, enforce a budget, and say
-  where the spend went. A per-module cap bounds nothing, because caps that cannot see each other
-  add up.
+- **Route every model call through the shared wrapper** (`@dothingslol/llm`: `ask` for a string or
+  a string array, `askDetailed` when you need usage metadata, `askJson` for JSON mode plus a
+  tolerant parse; `batch: true` on the array form uses the provider's native batch API at half
+  price, which no stage uses yet — D14). It is the only place that can bound concurrency across the
+  process, back off on 429, enforce a budget, and say where the spend went. A per-module cap bounds
+  nothing, because caps that cannot see each other add up. Every CLI imports `src/llmBootstrap.ts`
+  first, which is the one `configureLLM` call.
+- **Verify any prompt-adjacent refactor with the replay harness.** `node scripts/llm-parity.mjs`
+  runs every LLM-using CLI against the fixture city in `test/fixtures/llm-city` with canned
+  responses (no key, no spend) and rewrites `test/golden/llm`; `git diff --exit-code test/golden/llm`
+  is the check. Requests, the exit cost report and the concurrency profile must all hold.
 - **Cache expensive results by content, not by URL.** The same page reached by two paths, two
-  stages, or two runs must be paid for once (`src/adapters/extractionCache.ts`). Key on the input
-  text plus a prompt version, so editing the prompt invalidates the cache.
+  stages, or two runs must be paid for once (`withExtractionCache` in `src/io/fileCache.ts`, or
+  `ask({ cache })` for a single call). Key on the input text plus a prompt version, so editing the
+  prompt invalidates the cache.
 - **Ask the cheap oracle first.** A site's own sitemap answers "where are the events listed?" for
   free and cannot invent a URL; only ask a grounded model about hosts it could not solve.
 - **Match the effort to the question.** A yes/no gate needs the top of a page, not all of it, and a
