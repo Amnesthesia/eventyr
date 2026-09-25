@@ -32,9 +32,6 @@ importers:
 
   .:
     dependencies:
-      '@anthropic-ai/sdk':
-        specifier: ^0.96.0
-        version: 0.96.0(zod@4.4.3)
       '@astrojs/react':
         specifier: ^5.0.5
         version: 5.0.5(@types/node@25.8.0)(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.100.0)(supports-color@10.2.2)(tsx@4.22.0)
@@ -47,9 +44,6 @@ importers:
       '@dothingslol/utils':
         specifier: workspace:*
         version: link:packages/utils
-      '@google/genai':
-        specifier: ^2.3.0
-        version: 2.3.0(@modelcontextprotocol/sdk@1.30.0(supports-color@10.2.2)(zod@4.6.5))(supports-color@10.2.2)
       '@picocss/pico':
         specifier: ^2.0.6
         version: 2.1.1
@@ -77,9 +71,6 @@ importers:
       lucide-react:
         specifier: ^0.469.0
         version: 0.469.0(react@18.3.1)
-      openai:
-        specifier: ^6.38.0
-        version: 6.38.0(ws@8.20.1)(zod@4.4.3)
       qrcode-generator:
         specifier: ^2.0.4
         version: 2.0.4
@@ -3387,13 +3378,6 @@ packages:
 
 snapshots:
 
-  '@anthropic-ai/sdk@0.96.0(zod@4.4.3)':
-    dependencies:
-      json-schema-to-ts: 3.1.1
-      standardwebhooks: 1.0.0
-    optionalDependencies:
-      zod: 4.4.3
-
   '@anthropic-ai/sdk@0.96.0(zod@4.6.5)':
     dependencies:
       json-schema-to-ts: 3.1.1
@@ -5858,11 +5842,6 @@ snapshots:
       oniguruma-parser: 0.12.2
       regex: 6.1.0
       regex-recursion: 6.0.2
-
-  openai@6.38.0(ws@8.20.1)(zod@4.4.3):
-    optionalDependencies:
-      ws: 8.20.1
-      zod: 4.4.3
 
   openai@6.38.0(ws@8.21.0)(zod@4.6.5):
     optionalDependencies:
