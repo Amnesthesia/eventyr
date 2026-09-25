@@ -23,6 +23,13 @@ import {
 } from "@dothingslol/core/shared";
 import { cycleTagPref, type TagPrefs } from "@dothingslol/core/tagPrefs";
 import { tagWeights } from "@dothingslol/core/tagSpecificity";
+import {
+	bumpDislike,
+	bumpTaste,
+	logTasteProfile,
+	rankByTaste,
+	type TasteProfile,
+} from "@dothingslol/core/taste";
 import { matchesTimeBands, type TimeBand } from "@dothingslol/core/timeOfDay";
 import {
 	createContext,
@@ -43,16 +50,7 @@ import {
 	syncAllStarredEvents,
 } from "./utils/notifications";
 import { loadTagPrefs, saveTagPrefs } from "./utils/tagPrefsStore";
-import {
-	bumpDislike,
-	bumpTaste,
-	loadTaste,
-	logTasteProfile,
-	onTasteChange,
-	rankByTaste,
-	saveTaste,
-	type TasteProfile,
-} from "./utils/taste";
+import { loadTaste, onTasteChange, saveTaste } from "./utils/tasteStore";
 
 /** The identity saved/hidden sets are keyed by. Not eventHash: stars already
  * in people's localStorage use this basis, and changing it would lose them. */

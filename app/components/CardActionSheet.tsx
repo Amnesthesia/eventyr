@@ -11,7 +11,7 @@ import { useEventsContext } from "../context";
 import { useModalDialog } from "../hooks/useModalDialog";
 import { downloadEventIcs } from "../utils/ics";
 import { shareEvent } from "../utils/share";
-import { noteInterest } from "../utils/taste";
+import { noteInterest } from "../utils/tasteStore";
 
 interface Props {
 	event: EventData;

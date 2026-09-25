@@ -11,7 +11,7 @@ import { eventPath } from "@dothingslol/core/shared";
 import { Check, Share2 } from "lucide-react";
 import { useState } from "react";
 import { shareEvent } from "../utils/share";
-import { noteInterest } from "../utils/taste";
+import { noteInterest } from "../utils/tasteStore";
 
 interface Props {
 	event: EventData;

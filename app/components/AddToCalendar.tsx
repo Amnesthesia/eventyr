@@ -17,7 +17,7 @@ import { useEffect, useRef, useState } from "react";
 import { useEventsContext } from "../context";
 import { downloadEventIcs } from "../utils/ics";
 import { type CalendarTarget, calendarTarget } from "../utils/platform";
-import { noteInterest } from "../utils/taste";
+import { noteInterest } from "../utils/tasteStore";
 
 interface Props {
 	event: EventData;
