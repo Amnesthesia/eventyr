@@ -1,12 +1,12 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { EventData } from "@dothingslol/core/schema";
 import {
 	calculate1hReminderTime,
 	filterEventsForMorningDigest,
 	formatEventTime,
 	formatMorningDigest,
-} from "./notifications";
+} from "./reminders.ts";
+import type { EventData } from "./schema.ts";
 
 function makeEvent(partial: Partial<EventData>): EventData {
 	return {
