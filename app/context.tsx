@@ -13,6 +13,7 @@ import {
 	KEY_TO_SLUG,
 	LOW_SCORE_THRESHOLD,
 } from "@dothingslol/core/shared";
+import { cycleTagPref, type TagPrefs } from "@dothingslol/core/tagPrefs";
 import {
 	createContext,
 	type ReactNode,
@@ -39,12 +40,7 @@ import {
 	syncAllStarredEvents,
 } from "./utils/notifications";
 import { matchesQuery, queryTokens } from "./utils/search";
-import {
-	cycleTagPref,
-	loadTagPrefs,
-	saveTagPrefs,
-	type TagPrefs,
-} from "./utils/tagPrefs";
+import { loadTagPrefs, saveTagPrefs } from "./utils/tagPrefsStore";
 import { tagWeights } from "./utils/tagSpecificity";
 import {
 	bumpDislike,

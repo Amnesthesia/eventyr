@@ -10,7 +10,11 @@
 
 import type { EventData } from "@dothingslol/core/schema";
 import { eventHash } from "@dothingslol/core/shared";
-import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs";
+import {
+	hasTagPrefs,
+	prefTier,
+	type TagPrefs,
+} from "@dothingslol/core/tagPrefs";
 import { tagWeight } from "./tagSpecificity";
 import { vibesOf } from "./vibes";
 

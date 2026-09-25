@@ -3,8 +3,12 @@
 
 import type { EventData } from "@dothingslol/core/schema";
 import { CATEGORIES, catToSlug } from "@dothingslol/core/shared";
+import {
+	hasTagPrefs,
+	prefTier,
+	type TagPrefs,
+} from "@dothingslol/core/tagPrefs";
 import { addDays, todayIso } from "./dates";
-import { hasTagPrefs, prefTier, type TagPrefs } from "./tagPrefs";
 
 export type GroupBy = "none" | "date" | "category";
 
