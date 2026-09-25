@@ -285,9 +285,10 @@ degrades to deterministic-only rather than failing — merging is the destructiv
 
 ## Cost controls
 
-Every Gemini call goes through `src/providers/gemini.ts`, which provides one process-wide
-concurrency limiter, 429-aware backoff (honouring `Retry-After`), a hard call budget, and
-per-stage accounting. Each script prints what it spent — including on Ctrl-C:
+Every model call — Gemini, and the Anthropic/OpenAI/Perplexity search providers — goes through
+`@dothingslol/llm` (`packages/llm`), which provides one process-wide per-provider concurrency
+limiter, 429-aware backoff (honouring `Retry-After`), a hard call budget, and per-stage
+accounting. Each script prints what it spent — including on Ctrl-C:
 
 ```
 Gemini usage

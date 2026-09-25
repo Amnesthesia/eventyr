@@ -72,6 +72,16 @@ Each script reads `CITY` (city key matching a `sources/{city}.yml` file) from th
 (`aggregators`/`institutions`/`independents`, plus `open` for google/openai; perplexity is
 `open`-only) and implements `searchEvents()`.
 
+Providers are **search strategies over `@dothingslol/llm`**: they build the prompts from
+`INTERESTS` and the source lists, make one `askDetailed(prompt, { provider, model, search: true,
+… })` call per tier, parse the events and write the curated files. The SDK transport (Gemini
+`googleSearch`, Anthropic `web_search_20250305`, OpenAI `web_search` on gpt-5* models or
+`chat.completions` otherwise, Perplexity via the openai SDK), the per-provider limiter, retries,
+the run budget and usage accounting all live in the package (`packages/llm/src/providers/`), so
+no file under `src/` imports a model SDK. `ANTHROPIC_SEARCH_MODEL` / `OPENAI_SEARCH_MODEL` pick a
+model and are validated against `MODELS` at load. Request parity with the pre-package providers
+is pinned by the `collect-*` goldens (`scripts/llm-parity.mjs`).
+
 `BaseProvider.collect()` runs one search per tier. There used to be a second "music" pass per
 tier, because a single mixed-category search spread one event budget across all six `CATEGORIES`
 and `Concert / Music` lost out; music-heavy venues are now scraped directly, so that workaround
