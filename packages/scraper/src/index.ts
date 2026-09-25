@@ -21,7 +21,10 @@ export {
 	SourceFetcher,
 } from "./fetch.ts";
 export {
+	BlockedError,
 	createPageAdapter,
+	extractListing,
+	type LadderOutcome,
 	type LadderSource,
 	type PageAdapterDeps,
 } from "./ladder.ts";
@@ -32,4 +35,5 @@ export {
 	zonedNaive,
 } from "./normalise.ts";
 export { runAdapter } from "./runner.ts";
+export { type ScrapeOptions, type ScrapeResult, scrape } from "./scrape.ts";
 export type * from "./types.ts";

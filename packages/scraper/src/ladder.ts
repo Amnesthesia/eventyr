@@ -22,7 +22,7 @@ import { readFileSync } from "node:fs";
 import { provenanceFor, toCandidateEvent } from "./candidate.ts";
 import { blockedReason } from "./fetch.ts";
 import { extractFromEmbeddedJson } from "./parsers/embeddedJson.ts";
-import { parseFeed } from "./parsers/feeds.ts";
+import { type FeedFormat, parseFeed } from "./parsers/feeds.ts";
 import {
 	extractJsonLdBlocks,
 	findEventNodes,
@@ -32,8 +32,10 @@ import { stripToReadableText } from "./parsers/text.ts";
 import type {
 	CandidateEvent,
 	EventSourceAdapter,
+	ExtractionStrategy,
 	Fetcher,
 	PageExtractFn,
+	RawCandidateFields,
 	RawListing,
 	ScrapeSource,
 	SourceStrategy,
@@ -44,6 +46,100 @@ export interface PageAdapterDeps {
 	extractPage: PageExtractFn;
 	/** Injectable for tests; defaults to the real clock. */
 	now?: () => Date;
+}
+
+/** The response was a refusal (a 4xx/5xx, a challenge page, a reload
+ * shell), not a listing. Carries blockedReason's text. */
+export class BlockedError extends Error {}
+
+/** Which rung produced the candidates, and for a feed, which format. */
+export interface LadderOutcome {
+	via: "feed" | "jsonld" | "embedded" | "fallback" | null;
+	format: FeedFormat | null;
+	candidates: CandidateEvent[];
+}
+
+/**
+ * The ladder over one fetched body, cheapest rung first. Throws for a
+ * blocked response: "nothing there" and "we were refused" need different
+ * remedies, and returning [] put a 403 challenge page and a genuinely quiet
+ * venue into barren.json as identical bare names.
+ */
+export async function extractListing(
+	body: string,
+	raw: RawListing,
+	source: Pick<ScrapeSource, "id" | "name">,
+	timeZone: string,
+	extractPage: PageExtractFn | undefined,
+	referenceDate: Date,
+): Promise<LadderOutcome> {
+	const blocked = blockedReason(
+		raw.status,
+		body,
+		stripToReadableText(body, raw.url).length,
+	);
+	if (blocked) throw new BlockedError(blocked);
+
+	const candidate = (
+		fields: RawCandidateFields,
+		strategy: ExtractionStrategy,
+	) =>
+		toCandidateEvent(
+			fields,
+			provenanceFor(source, raw, strategy),
+			referenceDate,
+			timeZone,
+		);
+
+	// A site's own event API, when a listing URL points at one. Recognised
+	// by response shape rather than by URL or content-type, so a feed
+	// served as text/html still parses and a URL that merely looks like
+	// an API cannot fake its way in.
+	//
+	// Note the empty case is deliberately NOT a fall-through: a feed that
+	// answered with nothing is a verified negative, and continuing down
+	// the ladder would spend an LLM call re-reading a JSON body as prose.
+	const feed = parseFeed(body, raw.url);
+	if (feed) {
+		return {
+			via: "feed",
+			format: feed.format,
+			candidates: feed.events.map((f) => candidate(f, "feed")),
+		};
+	}
+
+	const jsonLdNodes = findEventNodes(extractJsonLdBlocks(body));
+	if (jsonLdNodes.length > 0) {
+		return {
+			via: "jsonld",
+			format: null,
+			candidates: jsonLdNodes.map((node) =>
+				candidate(jsonLdNodeToRawFields(node), "jsonld"),
+			),
+		};
+	}
+
+	// Client-rendered pages hide their listings in embedded hydration
+	// state; recovering that is still deterministic, so it goes ahead of
+	// the LLM fallback.
+	const embedded = extractFromEmbeddedJson(body, raw.url);
+	if (embedded.length > 0) {
+		return {
+			via: "embedded",
+			format: null,
+			candidates: embedded.map((f) => candidate(f, "api")),
+		};
+	}
+
+	const pageText = stripToReadableText(body, raw.url);
+	if (!pageText || !extractPage)
+		return { via: null, format: null, candidates: [] };
+	const fields = await extractPage(pageText, source.name);
+	return {
+		via: "fallback",
+		format: null,
+		candidates: fields.map((f) => candidate(f, "html")),
+	};
 }
 
 /** A source plus what the old registry entry carried for the ladder itself. */
@@ -79,78 +175,15 @@ export function createPageAdapter(
 			// a listing page legitimately hadn't changed.
 			if (!raw.bodyPath) return [];
 			const body = readFileSync(raw.bodyPath, "utf-8");
-			const referenceDate = now();
-
-			// "Nothing there" and "we were refused" need different remedies, so
-			// a blocked response throws rather than returning zero events. The
-			// throw is caught per-listing by runAdapter and reported against
-			// this URL; returning [] instead put a 403 challenge page and a
-			// genuinely quiet venue into barren.json as identical bare names.
-			const blocked = blockedReason(
-				raw.status,
+			const { candidates } = await extractListing(
 				body,
-				stripToReadableText(body, raw.url).length,
+				raw,
+				source,
+				source.timeZone,
+				deps.extractPage,
+				now(),
 			);
-			if (blocked) throw new Error(blocked);
-
-			// A site's own event API, when a listing URL points at one. Recognised
-			// by response shape rather than by URL or content-type, so a feed
-			// served as text/html still parses and a URL that merely looks like
-			// an API cannot fake its way in.
-			//
-			// Note the empty case is deliberately NOT a fall-through: a feed that
-			// answered with nothing is a verified negative, and continuing down
-			// the ladder would spend an LLM call re-reading a JSON body as prose.
-			const feed = parseFeed(body, raw.url);
-			if (feed) {
-				return feed.events.map((fields) =>
-					toCandidateEvent(
-						fields,
-						provenanceFor(source, raw, "feed"),
-						referenceDate,
-						source.timeZone,
-					),
-				);
-			}
-
-			const jsonLdNodes = findEventNodes(extractJsonLdBlocks(body));
-			if (jsonLdNodes.length > 0) {
-				return jsonLdNodes.map((node) =>
-					toCandidateEvent(
-						jsonLdNodeToRawFields(node),
-						provenanceFor(source, raw, "jsonld"),
-						referenceDate,
-						source.timeZone,
-					),
-				);
-			}
-
-			// Client-rendered pages hide their listings in embedded hydration
-			// state; recovering that is still deterministic, so it goes ahead of
-			// the LLM fallback.
-			const embedded = extractFromEmbeddedJson(body, raw.url);
-			if (embedded.length > 0) {
-				return embedded.map((fields) =>
-					toCandidateEvent(
-						fields,
-						provenanceFor(source, raw, "api"),
-						referenceDate,
-						source.timeZone,
-					),
-				);
-			}
-
-			const pageText = stripToReadableText(body, raw.url);
-			if (!pageText) return [];
-			const fields = await deps.extractPage(pageText, source.name);
-			return fields.map((f) =>
-				toCandidateEvent(
-					f,
-					provenanceFor(source, raw, "html"),
-					referenceDate,
-					source.timeZone,
-				),
-			);
+			return candidates;
 		},
 	};
 }
