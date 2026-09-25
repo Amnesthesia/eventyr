@@ -15,11 +15,11 @@ import "../llmBootstrap.ts";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import {
-	createPageAdapter,
 	enrichFromDetailPage,
 	type PageExtractFn,
-	runAdapter,
+	type ScrapeResult,
 	SourceFetcher,
+	scrape,
 } from "@dothingslol/scraper";
 import { closeRenderBrowser, renderFetch } from "@dothingslol/scraper/render";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
@@ -49,6 +49,7 @@ import {
 } from "./annotate.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
 import {
+	councilEventUrl,
 	type PrepareStats,
 	prepareCandidates,
 	type Rejection,
@@ -86,6 +87,9 @@ const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
  * extraction calls we want in flight rather than by politeness.
  */
 const SOURCE_CONCURRENCY = 5;
+/** Listing pages of one source fetched at once. They share a host, and the
+ * fetcher's per-host cap is what actually bounds this. */
+const LISTING_CONCURRENCY = 2;
 
 const WINDOW_FROM = toISODate(new Date(), CITY_TZ);
 const WINDOW_TO = addDays(toISODate(sunday, CITY_TZ), 7);
@@ -188,6 +192,30 @@ function loadRegistrySafe(city: string): SourceDefinition[] {
 	return loadSourceRegistry(city);
 }
 
+/**
+ * One source's fetch outcome across its listing pages. A refusal and a fetch
+ * that never completed are both errors here — they need opposite remedies to
+ * an empty page, and both must reach barren.json's reasons by name.
+ */
+function summarise(results: ScrapeResult[]): {
+	ok: boolean;
+	listingsFetched: number;
+	errors: string[];
+} {
+	const errors: string[] = [];
+	for (const r of results) {
+		if (r.fetch.status === "failed")
+			errors.push(`fetch ${r.url}: ${r.fetch.error}`);
+		if (r.fetch.status === "blocked")
+			errors.push(`extract ${r.url}: ${r.fetch.error}`);
+	}
+	return {
+		ok: errors.length === 0,
+		listingsFetched: results.filter((r) => r.fetch.status !== "failed").length,
+		errors,
+	};
+}
+
 function countEvents(outPath: string): number {
 	try {
 		const payload = JSON.parse(readFileSync(outPath, "utf-8")) as {
@@ -248,8 +276,21 @@ async function collectSource(
 		};
 	}
 
-	const adapter = createPageAdapter(source, { fetcher, extractPage });
-	const { result, candidates: raw } = await runAdapter(adapter);
+	const results = await mapWithConcurrency(
+		source.listingUrls,
+		LISTING_CONCURRENCY,
+		(url) =>
+			scrape(url, {
+				strategy: source.strategy,
+				fetcher,
+				fallback: extractPage,
+				timeZone: source.timeZone,
+				linkRewriter: councilEventUrl,
+				source,
+			}),
+	);
+	const result = summarise(results);
+	const raw = results.flatMap((r) => r.candidates);
 
 	// Window-filter first so the detail-page pass only fetches for events we
 	// will publish: a venue's season listing is mostly "later", and those pages

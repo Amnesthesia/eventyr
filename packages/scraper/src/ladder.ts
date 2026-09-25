@@ -1,24 +1,23 @@
-// Generic, source-agnostic adapter: given a SourceDefinition (really, just
-// its listingUrls) it fetches deterministically via the shared fetch layer,
-// then extracts events from whatever it gets back — JSON-LD first (fully
-// deterministic, most trustworthy), falling back to LLM extraction over the
-// reduced page text when a page publishes none. This is what "html"-
-// strategy sources actually run: rather than hand-writing CSS selectors
-// per site, the LLM here does the same "copy fields off the page" job
-// selectors would, just described in a prompt instead of code — see
-// llmExtract.ts for the "never invent, null if absent" contract that keeps
-// this consistent with "adapters never guess".
+// The extraction ladder: given one fetched body it extracts events — a
+// site's own feed first, then JSON-LD (fully deterministic, most
+// trustworthy), then embedded hydration JSON, then the injected fallback
+// over the reduced page text when a page publishes none of those. That
+// fallback is what "html"-strategy sources actually run: rather than
+// hand-writing CSS selectors per site, the pipeline's LLM rung does the same
+// "copy fields off the page" job selectors would, described in a prompt
+// instead of code — see the pipeline's llmExtract.ts for the "never invent,
+// null if absent" contract that keeps this consistent with "adapters never
+// guess".
 //
 // Order is strictly cheapest-first: a site's own event feed/API (feeds.ts),
-// then JSON-LD, then embedded hydration JSON (embeddedJson.ts), then the LLM
-// over reduced page text.
+// then JSON-LD, then embedded hydration JSON (embeddedJson.ts), then the
+// fallback over reduced page text.
 //
 // A source with real structured data (JSON-LD on every page) never touches
-// the LLM path at all — this only falls through to it per-listing, so one
-// page adapter can serve a source that's inconsistent about publishing
-// JSON-LD without misclassifying the whole source as "html".
+// the fallback at all — the ladder only falls through to it per-listing, so
+// one source that's inconsistent about publishing JSON-LD is not
+// misclassified as "html" as a whole.
 
-import { readFileSync } from "node:fs";
 import { provenanceFor, toCandidateEvent } from "./candidate.ts";
 import { blockedReason } from "./fetch.ts";
 import { extractFromEmbeddedJson } from "./parsers/embeddedJson.ts";
@@ -31,22 +30,12 @@ import {
 import { stripToReadableText } from "./parsers/text.ts";
 import type {
 	CandidateEvent,
-	EventSourceAdapter,
 	ExtractionStrategy,
-	Fetcher,
 	PageExtractFn,
 	RawCandidateFields,
 	RawListing,
 	ScrapeSource,
-	SourceStrategy,
 } from "./types.ts";
-
-export interface PageAdapterDeps {
-	fetcher: Fetcher;
-	extractPage: PageExtractFn;
-	/** Injectable for tests; defaults to the real clock. */
-	now?: () => Date;
-}
 
 /** The response was a refusal (a 4xx/5xx, a challenge page, a reload
  * shell), not a listing. Carries blockedReason's text. */
@@ -139,51 +128,5 @@ export async function extractListing(
 		via: "fallback",
 		format: null,
 		candidates: fields.map((f) => candidate(f, "html")),
-	};
-}
-
-/** A source plus what the old registry entry carried for the ladder itself. */
-export interface LadderSource extends ScrapeSource {
-	listingUrls: string[];
-	strategy: SourceStrategy;
-	/** The city's IANA zone: page text states wall-clock times. */
-	timeZone: string;
-}
-
-export function createPageAdapter(
-	source: LadderSource,
-	deps: PageAdapterDeps,
-): EventSourceAdapter {
-	const now = deps.now ?? (() => new Date());
-
-	return {
-		id: source.id,
-
-		async discover(): Promise<RawListing[]> {
-			const listings: RawListing[] = [];
-			for (const url of source.listingUrls) {
-				listings.push(
-					await deps.fetcher.fetch(source.id, url, source.strategy),
-				);
-			}
-			return listings;
-		},
-
-		async extract(raw: RawListing): Promise<CandidateEvent[]> {
-			// A 304 still carries the cached body path — parse it. Returning []
-			// here overwrote the source's output with an empty payload whenever
-			// a listing page legitimately hadn't changed.
-			if (!raw.bodyPath) return [];
-			const body = readFileSync(raw.bodyPath, "utf-8");
-			const { candidates } = await extractListing(
-				body,
-				raw,
-				source,
-				source.timeZone,
-				deps.extractPage,
-				now(),
-			);
-			return candidates;
-		},
 	};
 }

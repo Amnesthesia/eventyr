@@ -1,8 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { LadderSource } from "./ladder.ts";
 import { candidateToEvent, humanDatetime, zonedNaive } from "./normalise.ts";
-import type { CandidateEvent } from "./types.ts";
+import type { CandidateEvent, ScrapeSource } from "./types.ts";
 
 const BNE = "Australia/Brisbane";
 
@@ -38,19 +37,16 @@ function candidate(over: Partial<CandidateEvent> = {}): CandidateEvent {
 	};
 }
 
-const SOURCE: LadderSource = {
+const SOURCE: ScrapeSource = {
 	id: "test-source",
 	name: "Test Venue",
 	homepage: "https://example.com",
-	listingUrls: ["https://example.com/whats-on"],
 	venue: {
 		name: "Test Venue",
 		address: "1 Example St",
 		suburb: "South Brisbane",
 	},
-	strategy: "html",
 	tier: "institutions",
-	timeZone: "Australia/Brisbane",
 };
 
 test("zonedNaive keeps wall-clock for an explicit +10:00 offset", () => {

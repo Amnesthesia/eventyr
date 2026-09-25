@@ -88,6 +88,8 @@ export interface PrepareStats {
 
 /**
  * Deterministic pre-pass: drop what can't be used, week-filter, map fields.
+ * The council link rewrite is applied here too, so a scraped event's link is
+ * final before annotation (curate applies the same rewrite to every path).
  *
  * Dropping null-date candidates is not just tidiness — common.ts's
  * fingerprintEvent yields date:"" for them and isDuplicateEvent only bails
@@ -147,7 +149,7 @@ export function prepareCandidates(
 			reject("no title", c, null);
 			continue;
 		}
-		const event = candidateToEvent(c, source, timeZone);
+		const event = candidateToEvent(c, source, timeZone, councilEventUrl);
 		const startNaive = event.datetime_iso || null;
 		if (!startNaive) {
 			stats.noDate++;

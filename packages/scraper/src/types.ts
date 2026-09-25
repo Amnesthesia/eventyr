@@ -135,12 +135,6 @@ export type PageExtractFn = (
 	sourceName: string,
 ) => Promise<RawCandidateFields[]>;
 
-export interface EventSourceAdapter {
-	id: string;
-	discover(): Promise<RawListing[]>;
-	extract(raw: RawListing): Promise<CandidateEvent[]>;
-}
-
 /**
  * Minimal shape ladder.ts depends on — satisfied by the real
  * SourceFetcher (fetch.ts) but small enough to stub directly in tests
@@ -152,12 +146,4 @@ export interface Fetcher {
 		url: string,
 		strategy: SourceStrategy,
 	): Promise<RawListing>;
-}
-
-export interface SourceRunResult {
-	sourceId: string;
-	ok: boolean;
-	listingsFetched: number;
-	candidatesExtracted: number;
-	errors: string[];
 }

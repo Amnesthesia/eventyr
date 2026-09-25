@@ -10,13 +10,12 @@
 //   pnpm test-adapter <url> --all     # skip the this-week filter
 //
 // CITY must be set: page times are wall-clock times in that city's zone.
+// EVENTYR_SCRAPE_FIXTURES=<dir> serves the URL from a fixture manifest instead
+// of the network (packages/scraper/test/fixtures is one), for replay.
 
 import "../llmBootstrap.ts";
-import {
-	createPageAdapter,
-	runAdapter,
-	SourceFetcher,
-} from "@dothingslol/scraper";
+import { SourceFetcher, scrape } from "@dothingslol/scraper";
+import { createFixtureFetcher } from "@dothingslol/scraper/testing";
 import {
 	addDays,
 	getWeekRange,
@@ -28,7 +27,7 @@ import { createHttpCacheStore } from "../io/httpCache.ts";
 import { installUsageReporting } from "../io/usage.ts";
 import { applyAnnotation, createGeminiAnnotator } from "./annotate.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
-import { prepareCandidates } from "./normalise.ts";
+import { councilEventUrl, prepareCandidates } from "./normalise.ts";
 import type { SourceDefinition } from "./types.ts";
 
 const args = process.argv.slice(2);
@@ -69,16 +68,25 @@ const source: SourceDefinition = {
 
 installUsageReporting();
 
-const adapter = createPageAdapter(source, {
-	fetcher: new SourceFetcher({ store: createHttpCacheStore() }),
-	extractPage: createGeminiPageExtractor(),
+const fixtures = process.env.EVENTYR_SCRAPE_FIXTURES;
+const result = await scrape(url, {
+	strategy: "html",
+	fetcher: fixtures
+		? createFixtureFetcher(fixtures)
+		: new SourceFetcher({ store: createHttpCacheStore() }),
+	fallback: createGeminiPageExtractor(),
+	timeZone: cityCfg.timezone,
+	linkRewriter: councilEventUrl,
+	source,
 });
-
-const { result, candidates } = await runAdapter(adapter);
+const { candidates } = result;
+const failed = result.fetch.status === "failed";
+const blocked = result.fetch.status === "blocked";
 console.error(
-	`\n${result.ok ? "✓" : "✗"} ${result.listingsFetched} listing(s) fetched, ${candidates.length} candidate(s) extracted`,
+	`\n${failed || blocked ? "✗" : "✓"} ${failed ? 0 : 1} listing(s) fetched, ${candidates.length} candidate(s) extracted`,
 );
-for (const err of result.errors) console.error(`  ! ${err}`);
+if (failed) console.error(`  ! fetch ${url}: ${result.fetch.error}`);
+if (blocked) console.error(`  ! extract ${url}: ${result.fetch.error}`);
 
 if (RAW) {
 	console.log(JSON.stringify(candidates, null, 2));
