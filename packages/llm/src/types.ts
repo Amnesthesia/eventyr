@@ -26,10 +26,16 @@ export interface BatchOptions {
 export interface AskOptions {
 	/** Usage bucket ("rank", "probe/extract"); default "default". */
 	stage?: string;
-	/** Stable instructions → system prompt (cacheable prefix). */
-	system?: string;
+	/** Stable instructions → system prompt (cacheable prefix). An array is
+	 * several system blocks where the provider has them (Anthropic: the first
+	 * block carries the cache breakpoint); elsewhere they are joined by a
+	 * blank line. */
+	system?: string | string[];
 	/** gemini googleSearch · anthropic web_search · openai web_search · perplexity (always). */
 	search?: boolean;
+	/** Cap on web searches per call where the provider has one (anthropic
+	 * `max_uses`, openai `max_tool_calls`); Gemini has none. */
+	maxSearches?: number;
 	/** Provider JSON mode. */
 	json?: boolean;
 	thinking?: "off" | "low" | "default";
@@ -49,6 +55,8 @@ export interface LLMUsage {
 	outputTokens: number;
 	thoughtTokens: number;
 	cachedInputTokens: number;
+	/** Tokens written to a provider prompt cache (Anthropic). */
+	cacheWriteTokens: number;
 	totalTokens: number;
 	searchQueries: number;
 	estimatedCostUsd: number;
@@ -70,9 +78,7 @@ export interface LLMResponse {
 /**
  * Per-stage accounting, the shape the pipeline persists to
  * data/{city}/usage/*.json and prints at exit. The field names are that
- * file's format and are frozen. Every provider records into it; the search
- * providers (Anthropic, OpenAI, Perplexity) do so with their own SDK's numbers
- * until 1.7 moves them here.
+ * file's format and are frozen. Every provider transport records into it.
  */
 export interface StageUsage {
 	calls: number;
@@ -137,7 +143,8 @@ export interface ReplayConfig {
 export interface LLMConfig {
 	/** Default: GOOGLE_API_KEY, ANTHROPIC_API_KEY, OPENAI_API_KEY, PERPLEXITY_API_KEY. */
 	keys?: Partial<Record<ProviderName, string>>;
-	/** Concurrent calls per provider. Gemini default: GEMINI_CONCURRENCY ?? 4. */
+	/** Concurrent calls per provider. Gemini default: GEMINI_CONCURRENCY ?? 4;
+	 * the others default to no ceiling (see client.ts). */
 	concurrency?: Partial<Record<ProviderName, number>>;
 	/** Hard ceiling on Gemini calls per run; was GEMINI_MAX_CALLS. */
 	maxCalls?: number;

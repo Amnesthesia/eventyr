@@ -13,8 +13,10 @@
 		"typecheck": "tsc --noEmit -p tsconfig.json"
 	},
 	"dependencies": {
+		"@anthropic-ai/sdk": "^0.96.0",
 		"@dothingslol/utils": "workspace:*",
 		"@google/genai": "^2.3.0",
+		"openai": "^6.38.0",
 		"zod": "catalog:"
 	},
 	"devDependencies": {

@@ -11,13 +11,15 @@ export interface Price {
 	 * quota (5,000 prompts), so it is 0 here. */
 	perSearch?: number;
 	/**
-	 * Provider-native batch rates (D14). ai.google.dev/gemini-api/docs/pricing
-	 * lists a per-model "Batch" row at exactly half the standard row (checked
+	 * Provider-native batch rates (D14). Every provider with a batch API
+	 * prices it at exactly half the standard row (Gemini pricing page,
+	 * Anthropic batch processing page, OpenAI pricing page — all checked
 	 * 2026-09-25), so these are half of *this table's* standard rows: the
 	 * estimate is for ranking stages against each other, and a batch row on a
 	 * different scale from its standard row would make that comparison lie.
+	 * Per-search fees are not discounted (Anthropic says so explicitly).
 	 */
-	batch?: { input: number; output: number };
+	batch?: Omit<Price, "batch" | "perSearch">;
 }
 
 /**
@@ -32,13 +34,13 @@ export const PRICES = {
 		input: 0.1,
 		output: 0.4,
 		cacheRead: 0.025,
-		batch: { input: 0.05, output: 0.2 },
+		batch: { input: 0.05, output: 0.2, cacheRead: 0.0125 },
 	},
 	"gemini-3.5-flash": {
 		input: 0.3,
 		output: 2.5,
 		cacheRead: 0.075,
-		batch: { input: 0.15, output: 1.25 },
+		batch: { input: 0.15, output: 1.25, cacheRead: 0.0375 },
 	},
 	"claude-sonnet-5": {
 		input: 2,
@@ -46,6 +48,7 @@ export const PRICES = {
 		cacheRead: 0.2,
 		cacheWrite: 2.5,
 		perSearch: 0.01,
+		batch: { input: 1, output: 5, cacheRead: 0.1, cacheWrite: 1.25 },
 	},
 	"claude-haiku-4-5": {
 		input: 1,
@@ -53,11 +56,23 @@ export const PRICES = {
 		cacheRead: 0.1,
 		cacheWrite: 1.25,
 		perSearch: 0.01,
+		batch: { input: 0.5, output: 2.5, cacheRead: 0.05, cacheWrite: 0.625 },
 	},
-	"gpt-5-mini": { input: 0.25, output: 2, cacheRead: 0.025, perSearch: 0.01 },
+	"gpt-5-mini": {
+		input: 0.25,
+		output: 2,
+		cacheRead: 0.025,
+		perSearch: 0.01,
+		batch: { input: 0.125, output: 1, cacheRead: 0.0125 },
+	},
 	// The non-gpt-5 (chat.completions, no web search) branch of the OpenAI
 	// search provider; selected with OPENAI_SEARCH_MODEL.
-	"gpt-4.1-mini": { input: 0.4, output: 1.6, cacheRead: 0.1 },
+	"gpt-4.1-mini": {
+		input: 0.4,
+		output: 1.6,
+		cacheRead: 0.1,
+		batch: { input: 0.2, output: 0.8, cacheRead: 0.05 },
+	},
 	"sonar-pro": { input: 3, output: 15, perSearch: 0.008 },
 } as const satisfies Record<string, Price>;
 

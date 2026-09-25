@@ -26,11 +26,15 @@ test("estimateUsd returns 0 for an unpriced model rather than throwing", () => {
 	assert.equal(estimateUsd("some-future-model", { promptTokens: 1000 }), 0);
 });
 
-test("batch pricing is half the standard row for every Gemini model", () => {
-	const u = { promptTokens: 1_000_000, outputTokens: 1_000_000 };
-	for (const model of Object.keys(PRICES).filter((m) =>
-		m.startsWith("gemini-"),
-	)) {
+test("batch pricing is half the standard row for every model with one", () => {
+	const u = {
+		promptTokens: 2_000_000,
+		cachedTokens: 500_000,
+		cacheWriteTokens: 500_000,
+		outputTokens: 1_000_000,
+	};
+	for (const [model, price] of Object.entries(PRICES)) {
+		if (!("batch" in price)) continue;
 		assert.equal(estimateUsd(model, u, true), estimateUsd(model, u) / 2, model);
 	}
 	// A model without a batch row costs the same either way rather than 0.

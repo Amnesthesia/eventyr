@@ -142,12 +142,18 @@ importers:
 
   packages/llm:
     dependencies:
+      '@anthropic-ai/sdk':
+        specifier: ^0.96.0
+        version: 0.96.0(zod@4.6.5)
       '@dothingslol/utils':
         specifier: workspace:*
         version: link:../utils
       '@google/genai':
         specifier: ^2.3.0
         version: 2.3.0(@modelcontextprotocol/sdk@1.30.0(supports-color@10.2.2)(zod@4.6.5))(supports-color@10.2.2)
+      openai:
+        specifier: ^6.38.0
+        version: 6.38.0(ws@8.21.0)(zod@4.6.5)
       zod:
         specifier: 'catalog:'
         version: 4.6.5
@@ -3388,6 +3394,13 @@ snapshots:
     optionalDependencies:
       zod: 4.4.3
 
+  '@anthropic-ai/sdk@0.96.0(zod@4.6.5)':
+    dependencies:
+      json-schema-to-ts: 3.1.1
+      standardwebhooks: 1.0.0
+    optionalDependencies:
+      zod: 4.6.5
+
   '@astrojs/compiler@4.0.0': {}
 
   '@astrojs/internal-helpers@0.9.1':
@@ -5850,6 +5863,11 @@ snapshots:
     optionalDependencies:
       ws: 8.20.1
       zod: 4.4.3
+
+  openai@6.38.0(ws@8.21.0)(zod@4.6.5):
+    optionalDependencies:
+      ws: 8.21.0
+      zod: 4.6.5
 
   ow@0.28.2:
     dependencies:

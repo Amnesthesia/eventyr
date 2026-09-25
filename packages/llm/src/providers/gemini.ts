@@ -7,8 +7,13 @@ import type {
 	GenerateContentResponse,
 	GoogleGenAI,
 } from "@google/genai";
-import type { ReplayRequest } from "../replay.ts";
-import type { AskOptions, StageUsage } from "../types.ts";
+import { type ReplayRequest, replayLine, replayUsage } from "../replay.ts";
+import type { AskOptions } from "../types.ts";
+import {
+	type ProviderResult,
+	systemText,
+	type Transport,
+} from "./transport.ts";
 
 /**
  * The part of the config that the old call sites passed as `extraConfig`:
@@ -39,7 +44,7 @@ export function replayRequestOf(
 		stage,
 		model,
 		contents,
-		systemInstruction: opts.system,
+		systemInstruction: systemText(opts.system),
 		maxOutputTokens: opts.maxOutputTokens,
 		temperature: opts.temperature,
 		search: opts.search,
@@ -50,8 +55,9 @@ export function replayRequestOf(
 /** systemInstruction, tools, maxOutputTokens, temperature, then the extras —
  * the order the old wrapper spread them in. */
 export function geminiConfig(opts: AskOptions): GenerateContentConfig {
+	const system = systemText(opts.system);
 	return {
-		...(opts.system ? { systemInstruction: opts.system } : {}),
+		...(system ? { systemInstruction: system } : {}),
 		...(opts.search ? { tools: [{ googleSearch: {} }] } : {}),
 		...(opts.maxOutputTokens ? { maxOutputTokens: opts.maxOutputTokens } : {}),
 		...(opts.temperature !== undefined
@@ -61,11 +67,7 @@ export function geminiConfig(opts: AskOptions): GenerateContentConfig {
 	};
 }
 
-export interface GeminiResult {
-	text: string;
-	usage: Partial<StageUsage>;
-	finishReason: string | null;
-}
+export type GeminiResult = ProviderResult;
 
 /** Usage and text out of one response, the same fields the old wrapper
  * recorded. Shared with the batch transport. */
@@ -105,4 +107,24 @@ export async function geminiGenerate(
 		config: geminiConfig(opts),
 	});
 	return readGeminiResponse(response, opts.search === true);
+}
+
+/** Usage in replay is derived from text lengths (the canned file is the
+ * answer text alone), so the cost report is deterministic. */
+export function geminiTransport(client: () => GoogleGenAI): Transport {
+	return {
+		provider: "gemini",
+		line: ({ stage, model, prompt, opts }) =>
+			replayLine(replayRequestOf(stage, model, prompt, opts)),
+		send: ({ model, prompt, opts }) =>
+			geminiGenerate(client(), model, prompt, opts),
+		replay: ({ stage, model, prompt, opts }, canned) => ({
+			text: canned,
+			finishReason: null,
+			usage: {
+				grounded: opts.search ? 1 : 0,
+				...replayUsage(replayRequestOf(stage, model, prompt, opts), canned),
+			},
+		}),
+	};
 }

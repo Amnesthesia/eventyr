@@ -8,19 +8,46 @@
 // than reducing totals: hence one process-wide limiter here rather than a
 // number in every stage.
 
+import Anthropic from "@anthropic-ai/sdk";
 import { backoffDelay, sleep } from "@dothingslol/utils/time";
 import { GoogleGenAI } from "@google/genai";
-import { runGeminiBatch, toLLMUsage } from "./batch.ts";
+import OpenAI from "openai";
+import {
+	batchRequestKey,
+	runBatch,
+	runGeminiBatch,
+	toLLMUsage,
+} from "./batch.ts";
 import { cacheKey, readCached, writeCached } from "./cache.ts";
 import {
 	BatchError,
+	BatchNotSupportedError,
 	BudgetExhaustedError,
 	LLMUnavailableError,
 } from "./errors.ts";
 import { parseJsonArray } from "./json.ts";
 import { estimateUsd } from "./pricing.ts";
-import { geminiGenerate, replayRequestOf } from "./providers/gemini.ts";
-import { Replay, replayLine, replayUsage } from "./replay.ts";
+import {
+	anthropicBatchTransport,
+	anthropicParams,
+	anthropicTransport,
+} from "./providers/anthropic.ts";
+import { geminiTransport } from "./providers/gemini.ts";
+import {
+	openaiBatchTransport,
+	openaiParams,
+	openaiTransport,
+} from "./providers/openai.ts";
+import {
+	PERPLEXITY_BASE_URL,
+	perplexityTransport,
+} from "./providers/perplexity.ts";
+import type {
+	CallContext,
+	ProviderResult,
+	Transport,
+} from "./providers/transport.ts";
+import { Replay } from "./replay.ts";
 import type {
 	AskOptions,
 	LLMConfig,
@@ -74,6 +101,9 @@ interface State {
 	usage: Map<string, StageUsage>;
 	replay: Replay | null;
 	gemini: GoogleGenAI | null;
+	anthropic: Anthropic | null;
+	openai: OpenAI | null;
+	perplexity: OpenAI | null;
 }
 
 function fresh(): State {
@@ -84,6 +114,9 @@ function fresh(): State {
 		usage: new Map(),
 		replay: null,
 		gemini: null,
+		anthropic: null,
+		openai: null,
+		perplexity: null,
 	};
 }
 
@@ -108,8 +141,14 @@ export function resetLLM(): void {
 function ceilingFor(provider: ProviderName): number {
 	const configured = state.config.concurrency?.[provider];
 	if (configured !== undefined) return configured;
-	// Deliberately low: the binding constraint is spend per minute, and a
-	// burst is what trips it. Override with GEMINI_CONCURRENCY.
+	// Gemini deliberately low: the binding constraint is spend per minute,
+	// and a burst is what trips it. Override with GEMINI_CONCURRENCY.
+	//
+	// The other three have no ceiling: before 1.7 only Gemini went through a
+	// limiter, and each search provider made at most one call per tier at
+	// once. A known asymmetry to revisit once a stage fans out on them —
+	// configureLLM({ concurrency }) is the knob.
+	if (provider !== "gemini") return Number.POSITIVE_INFINITY;
 	return Number(process.env.GEMINI_CONCURRENCY ?? 4);
 }
 
@@ -143,6 +182,30 @@ function geminiClient(): GoogleGenAI {
 		state.gemini = new GoogleGenAI({ apiKey: keyFor("gemini") });
 	return state.gemini;
 }
+function anthropicClient(): Anthropic {
+	if (!state.anthropic)
+		state.anthropic = new Anthropic({ apiKey: keyFor("anthropic") });
+	return state.anthropic;
+}
+function openaiClient(): OpenAI {
+	if (!state.openai) state.openai = new OpenAI({ apiKey: keyFor("openai") });
+	return state.openai;
+}
+function perplexityClient(): OpenAI {
+	if (!state.perplexity)
+		state.perplexity = new OpenAI({
+			apiKey: keyFor("perplexity"),
+			baseURL: PERPLEXITY_BASE_URL,
+		});
+	return state.perplexity;
+}
+
+const TRANSPORTS: Record<ProviderName, Transport> = {
+	gemini: geminiTransport(geminiClient),
+	anthropic: anthropicTransport(anthropicClient),
+	openai: openaiTransport(openaiClient),
+	perplexity: perplexityTransport(perplexityClient),
+};
 
 // --- usage ----------------------------------------------------------------
 
@@ -234,15 +297,23 @@ function resolve(opts?: AskParams): {
 	};
 }
 
+/** The Gemini call budget: the other providers' spend is bounded by the
+ * calls-per-tier structure of the stages that use them. */
+function spendBudget(provider: ProviderName): void {
+	if (provider !== "gemini") return;
+	if (state.totalCalls >= maxCalls())
+		throw new BudgetExhaustedError(maxCalls());
+	state.totalCalls++;
+}
+
 async function askOne(
 	prompt: string,
 	params?: AskParams,
 ): Promise<LLMResponse> {
 	const { provider, stage, opts } = resolve(params);
-	if (provider.provider !== "gemini") {
-		throw new Error(`${provider.provider}: provider transport arrives in 1.7`);
-	}
 	const { model } = provider;
+	const transport = TRANSPORTS[provider.provider];
+	const ctx: CallContext = { stage, model, prompt, opts };
 	const startedAt = performance.now();
 	const done = (
 		text: string,
@@ -252,7 +323,7 @@ async function askOne(
 		fromCache: boolean,
 	): LLMResponse => ({
 		text,
-		provider: "gemini",
+		provider: provider.provider,
 		model,
 		stage,
 		usage: toLLMUsage(usage),
@@ -270,30 +341,25 @@ async function askOne(
 		if (hit !== null) return done(hit, {}, 0, null, true);
 	}
 
-	if (state.totalCalls >= maxCalls())
+	if (provider.provider === "gemini" && state.totalCalls >= maxCalls())
 		throw new BudgetExhaustedError(maxCalls());
 	const replay = state.replay;
-	const request = replayRequestOf(stage, model, prompt, opts);
-	const line = replay ? replayLine(request) : "";
-	if (replay?.mode !== "replay") keyFor("gemini");
+	// The line is also where an unsupported option is refused, before any
+	// key check or limiter slot.
+	const line = replay ? transport.line(ctx) : "";
+	if (replay?.mode !== "replay") keyFor(provider.provider);
 
-	const l = limiter("gemini");
+	const l = limiter(provider.provider);
 	await l.acquire();
 	try {
 		let response: LLMResponse;
 		if (replay?.mode === "replay") {
-			replay.begin(line, "gemini");
+			replay.begin(line, provider.provider);
 			try {
-				state.totalCalls++;
-				const text = await replay.answer(line, stage);
-				const call: Partial<StageUsage> = {
-					calls: 1,
-					grounded: opts.search ? 1 : 0,
-					...replayUsage(request, text),
-				};
-				call.estimatedUsd = estimateUsd(model, call);
-				recordUsage(stage, call);
-				response = done(text, call, 1, null, false);
+				spendBudget(provider.provider);
+				const result = transport.replay(ctx, await replay.answer(line, stage));
+				const call = record(stage, model, result);
+				response = done(result.text, call, 1, result.finishReason, false);
 			} catch (err) {
 				recordUsage(stage, { failures: 1 });
 				throw err;
@@ -301,14 +367,7 @@ async function askOne(
 				replay.end();
 			}
 		} else {
-			response = await generateWithRetry(
-				prompt,
-				model,
-				stage,
-				opts,
-				line,
-				done,
-			);
+			response = await sendWithRetry(transport, ctx, line, done);
 		}
 		if (store && key && opts.cache) {
 			await writeCached(store, key, opts.cache.version, prompt, response.text);
@@ -319,11 +378,20 @@ async function askOne(
 	}
 }
 
-async function generateWithRetry(
-	prompt: string,
-	model: string,
+function record(
 	stage: string,
-	opts: AskOptions,
+	model: string,
+	result: ProviderResult,
+): Partial<StageUsage> {
+	const call: Partial<StageUsage> = { calls: 1, ...result.usage };
+	call.estimatedUsd = estimateUsd(model, call);
+	recordUsage(stage, call);
+	return call;
+}
+
+async function sendWithRetry(
+	transport: Transport,
+	ctx: CallContext,
 	line: string,
 	done: (
 		text: string,
@@ -337,27 +405,25 @@ async function generateWithRetry(
 	let lastErr: unknown;
 	for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
 		try {
-			state.totalCalls++;
-			replay?.begin(line, "gemini");
-			const result = await geminiGenerate(geminiClient(), model, prompt, opts);
+			spendBudget(transport.provider);
+			replay?.begin(line, transport.provider);
+			const result = await transport.send(ctx);
 			replay?.end();
-			const call: Partial<StageUsage> = { calls: 1, ...result.usage };
-			call.estimatedUsd = estimateUsd(model, call);
-			recordUsage(stage, call);
+			const call = record(ctx.stage, ctx.model, result);
 			return done(result.text, call, attempt + 1, result.finishReason, false);
 		} catch (err) {
 			replay?.end();
 			lastErr = err;
 			const delay = retryDelayMs(err, attempt);
 			if (delay === null || attempt === MAX_RETRIES) break;
-			recordUsage(stage, { retries: 1 });
+			recordUsage(ctx.stage, { retries: 1 });
 			console.error(
-				`  ⏳ [${stage}] rate limited — waiting ${Math.round(delay / 1000)}s (attempt ${attempt + 1}/${MAX_RETRIES})`,
+				`  ⏳ [${ctx.stage}] rate limited — waiting ${Math.round(delay / 1000)}s (attempt ${attempt + 1}/${MAX_RETRIES})`,
 			);
 			await sleep(delay);
 		}
 	}
-	recordUsage(stage, { failures: 1 });
+	recordUsage(ctx.stage, { failures: 1 });
 	throw lastErr;
 }
 
@@ -391,20 +457,52 @@ async function askBatch(
 	params: AskParams,
 ): Promise<PromiseSettledResult<LLMResponse>[]> {
 	const { provider, stage, opts } = resolve(params);
-	if (provider.provider !== "gemini") {
-		throw new Error(`${provider.provider}: batch transport arrives in 1.7`);
-	}
 	const batch = typeof opts.batch === "object" ? opts.batch : {};
-	return runGeminiBatch(prompts, provider.model, stage, opts, batch, {
-		client: geminiClient().batches,
+	const { model } = provider;
+	const deps = {
+		provider: provider.provider,
 		store: state.config.batchStore ?? null,
-		fallback: (indices) =>
+		fallback: (indices: number[]) =>
 			Promise.allSettled(
 				indices.map((i) => askOne(prompts[i], { ...params, batch: undefined })),
 			),
 		record: recordUsage,
-	});
+	};
+	if (provider.provider === "gemini") {
+		return runGeminiBatch(prompts, model, stage, opts, batch, {
+			...deps,
+			client: geminiClient().batches,
+		});
+	}
+	if (provider.provider === "perplexity") {
+		throw new BatchNotSupportedError("provider", "Perplexity has no batch API");
+	}
+	const transport = TRANSPORTS[provider.provider];
+	const key = batchRequestKey(
+		model,
+		prompts.map((prompt) => transport.line({ stage, model, prompt, opts })),
+	);
+	const search = opts.search === true;
+	const job =
+		provider.provider === "anthropic"
+			? anthropicBatchTransport(
+					anthropicClient().messages.batches,
+					prompts.map((prompt) => anthropicParams(model, prompt, opts)),
+					search,
+					sleep,
+					BATCH_CANCEL_POLL_MS,
+				)
+			: openaiBatchTransport(
+					openaiClient(),
+					prompts.map((prompt) => openaiParams(model, prompt, opts)),
+					search,
+					sleep,
+					BATCH_CANCEL_POLL_MS,
+				);
+	return runBatch(prompts.length, key, model, stage, batch, job, deps);
 }
+
+const BATCH_CANCEL_POLL_MS = 5_000;
 
 /** Simple form: text in, text out. The array form keeps order and rejects
  * with BatchError (per-index outcomes) if any prompt failed. */
