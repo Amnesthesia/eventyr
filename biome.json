@@ -13,7 +13,8 @@
 			"app/**/*.tsx",
 			"scripts/**/*.ts",
 			"scripts/**/*.tsx",
-			"workers/**/*.ts"
+			"workers/**/*.ts",
+			"packages/**/*.ts"
 		]
 	},
 	"formatter": {
@@ -26,6 +27,21 @@
 			"recommended": true
 		}
 	},
+	"overrides": [
+		{
+			"includes": [
+				"packages/core/src/**",
+				"!**/*.test.ts"
+			],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noNodejsModules": "error"
+					}
+				}
+			}
+		}
+	],
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "double"

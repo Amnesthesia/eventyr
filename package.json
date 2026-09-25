@@ -32,7 +32,7 @@
     "test:pipeline": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts'",
     "test:app": "tsx --tsconfig tsconfig.json --test 'app/**/*.test.ts' 'app/**/*.test.tsx'",
     "test": "pnpm test:pipeline && pnpm test:app",
-    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app && pnpm test",
+    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app packages && pnpm test && pnpm --filter @dothingslol/core typecheck && pnpm --filter @dothingslol/core test && node scripts/check-boundaries.mjs",
     "render-sources": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/render.ts"
   },
   "dependencies": {
