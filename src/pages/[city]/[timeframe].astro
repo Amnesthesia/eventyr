@@ -5,9 +5,9 @@ import Base from "../../layouts/Base.astro";
 import EventApp from "@react/EventApp";
 import type { CityData, CityIndex } from "@react/types";
 import { SLUG_TO_KEY } from "@react/utils/citySlug";
-import { addDays, eventOverlapsRange } from "@react/utils/dates";
+import { eventOverlapsRange } from "@react/utils/dates";
 import { byScoreThenSoonest } from "../../shared.ts";
-import { SITE_URL, toISODate } from "../../common.ts";
+import { addDays, SITE_URL, toISODate } from "../../common.ts";
 
 const BASE_URL = SITE_URL;
 
@@ -22,35 +22,12 @@ export function getStaticPaths() {
 		readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
 	);
 
-	// Computed once at build time from the real clock (not per-city data) —
-	// every city gets the same today/tomorrow/weekend dates. Correct only if
-	// the build runs under TZ=Australia/Brisbane (deploy.yml pins this on its
-	// daily schedule, the same way digest.yml pins it for the pipeline); a
-	// build under the runner's default UTC would put "today" a day off in the
-	// evening. Inlined here rather than a top-level helper: Astro's frontmatter
-	// compiler was dropping a separate function that only getStaticPaths called.
-	const today = toISODate(new Date());
-	const tomorrow = addDays(today, 1);
-	const dow = new Date(`${today}T00:00:00`).getDay(); // 0=Sun..6=Sat
-	let satIso: string;
-	let sunIso: string;
-	if (dow === 6) {
-		satIso = today;
-		sunIso = tomorrow;
-	} else if (dow === 0) {
-		// ponytail: Sunday only — Saturday just gone is already over, no point
-		// listing it under "this weekend". Upgrade if that ever needs revisiting.
-		satIso = today;
-		sunIso = today;
-	} else {
-		satIso = addDays(today, 6 - dow);
-		sunIso = addDays(satIso, 1);
-	}
-	const ranges: TimeframeRange[] = [
-		{ slug: "today", from: today, to: today },
-		{ slug: "tomorrow", from: tomorrow, to: tomorrow },
-		{ slug: "this-weekend", from: satIso, to: sunIso },
-	];
+	// "Today" is each city's own date, from its `timezone`, so the build host's
+	// zone cannot move it: the runner is UTC, where the first ten hours of a
+	// Brisbane day are still the day before. Inlined here rather than a top-level helper: Astro's
+	// frontmatter compiler was dropping a separate function that only
+	// getStaticPaths called.
+	const now = new Date();
 	const paths = [];
 
 	for (const city of index.cities) {
@@ -61,6 +38,30 @@ export function getStaticPaths() {
 		const cityData: CityData = JSON.parse(
 			readFileSync(join(process.cwd(), `data/${city.key}.json`), "utf-8"),
 		);
+
+		const today = toISODate(now, cityData.timezone);
+		const tomorrow = addDays(today, 1);
+		// 0=Sun..6=Sat of the city's date, read in UTC so the host cannot shift it.
+		const dow = new Date(`${today}T00:00:00Z`).getUTCDay();
+		let satIso: string;
+		let sunIso: string;
+		if (dow === 6) {
+			satIso = today;
+			sunIso = tomorrow;
+		} else if (dow === 0) {
+			// ponytail: Sunday only — Saturday just gone is already over, no point
+			// listing it under "this weekend". Upgrade if that ever needs revisiting.
+			satIso = today;
+			sunIso = today;
+		} else {
+			satIso = addDays(today, 6 - dow);
+			sunIso = addDays(satIso, 1);
+		}
+		const ranges: TimeframeRange[] = [
+			{ slug: "today", from: today, to: today },
+			{ slug: "tomorrow", from: tomorrow, to: tomorrow },
+			{ slug: "this-weekend", from: satIso, to: sunIso },
+		];
 
 		for (const range of ranges) {
 			const filteredData: CityData = {

@@ -19,7 +19,12 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import type { GoogleGenAI } from "@google/genai";
-import { DATA_ROOT, getWeekRange, toISODate } from "../common.ts";
+import {
+	DATA_ROOT,
+	getWeekRange,
+	loadCityConfig,
+	toISODate,
+} from "../common.ts";
 
 export interface GeminiUsage {
 	calls: number;
@@ -343,8 +348,10 @@ export function reportGeminiUsage(): void {
 	}
 	const city = process.env.CITY;
 	if (city) {
-		const path = usagePath(city, toISODate(getWeekRange().monday));
 		try {
+			const { timezone } = loadCityConfig(city);
+			const monday = getWeekRange(new Date(), timezone).monday;
+			const path = usagePath(city, toISODate(monday, timezone));
 			persistUsage(path, usage);
 			console.log(`  → ${path}`);
 		} catch (err) {

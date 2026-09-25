@@ -33,6 +33,7 @@ import { dirname, join } from "node:path";
 import { GoogleGenAI } from "@google/genai";
 import yaml from "js-yaml";
 import {
+	addDays,
 	DATA_ROOT,
 	getWeekRange,
 	isSameSite,
@@ -219,13 +220,6 @@ function saveListingUrlCache(found: Map<string, string[]>): void {
 		"utf-8",
 	);
 }
-
-// The same window the scrape pass publishes (today → end of next week), so
-// probe and collect cannot disagree about which events count.
-const WINDOW_FROM = toISODate(new Date());
-const WINDOW_TO = toISODate(
-	new Date(getWeekRange().sunday.getTime() + 7 * 86_400_000),
-);
 
 // Archive pages are the trap in "most events wins": /past-events reliably
 // carries more events than the real listing, and every one of them is over.
@@ -704,7 +698,18 @@ class Prober {
 		private extractPage: PageExtractFn,
 		/** The probed city's IANA zone: page times are read as its wall clock. */
 		private timeZone: string,
-	) {}
+	) {
+		this.windowFrom = toISODate(new Date(), timeZone);
+		this.windowTo = addDays(
+			toISODate(getWeekRange(new Date(), timeZone).sunday, timeZone),
+			7,
+		);
+	}
+
+	// The same window the scrape pass publishes (today → end of next week), so
+	// probe and collect cannot disagree about which events count.
+	private readonly windowFrom: string;
+	private readonly windowTo: string;
 
 	/** Fetches a URL and returns its body as text, or null on any failure.
 	 * Used for robots.txt and sitemaps, which are not pages to be signalled. */
@@ -754,8 +759,9 @@ class Prober {
 		for (const c of events) {
 			const start = zonedNaive(c.startISO, this.timeZone);
 			const end = zonedNaive(c.endISO, this.timeZone);
-			if (isPast(start, end, WINDOW_FROM)) past++;
-			else if (withinWindow(start, end, WINDOW_FROM, WINDOW_TO)) inWindow++;
+			if (isPast(start, end, this.windowFrom)) past++;
+			else if (withinWindow(start, end, this.windowFrom, this.windowTo))
+				inWindow++;
 			else later++;
 		}
 		return {
@@ -843,8 +849,9 @@ class Prober {
 			for (const c of datedEvents(fields)) {
 				const start = zonedNaive(c.startISO, this.timeZone);
 				const end = zonedNaive(c.endISO, this.timeZone);
-				if (isPast(start, end, WINDOW_FROM)) past++;
-				else if (withinWindow(start, end, WINDOW_FROM, WINDOW_TO)) inWindow++;
+				if (isPast(start, end, this.windowFrom)) past++;
+				else if (withinWindow(start, end, this.windowFrom, this.windowTo))
+					inWindow++;
 				// Beyond the publishing window but still ahead of us. This used
 				// to fall into no bucket at all, so a venue whose programme
 				// starts next month counted as zero: Suncorp Stadium extracted

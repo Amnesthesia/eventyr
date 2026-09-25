@@ -85,6 +85,17 @@ export function zonedTimeToInstant(
 	return valid.length > 0 ? new Date(valid[0]) : null;
 }
 
+/** The instant a calendar day (YYYY-MM-DD) starts in `timeZone`. */
+export function zonedMidnight(timeZone: string, isoDate: string): Date {
+	const wall = Date.parse(`${isoDate.slice(0, 10)}T00:00:00Z`);
+	// ponytail: a zone whose DST starts AT midnight (none in Australia) has no
+	// 00:00 that day; its day starts at 01:00.
+	return (
+		zonedTimeToInstant(timeZone, wall) ??
+		(zonedTimeToInstant(timeZone, wall + 3_600_000) as Date)
+	);
+}
+
 /** 600 → "+10:00", -420 → "-07:00". */
 export function formatOffset(minutes: number): string {
 	const sign = minutes < 0 ? "-" : "+";

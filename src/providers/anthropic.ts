@@ -66,9 +66,9 @@ export class AnthropicProvider extends BaseProvider {
 			{
 				type: "text",
 				text:
-					`You are an events researcher for ${cityName}. Today is ${today.toLocaleDateString("en-AU", { weekday: "long", day: "numeric", month: "long", year: "numeric" })}.\n` +
+					`You are an events researcher for ${cityName}. Today is ${today.toLocaleDateString("en-AU", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: cityCfg.timezone })}.\n` +
 					`Your job is to find in-person events happening THIS WEEK in ${cityName}:\n` +
-					`${fmtDate(weekStart)} to ${fmtDate(weekEnd)}.\n\n` +
+					`${fmtDate(weekStart, cityCfg.timezone)} to ${fmtDate(weekEnd, cityCfg.timezone)}.\n\n` +
 					`Sources to search (${tier.toUpperCase()}):\n${tierInstruction}\n\n${sourceList}${pinnedNote}`,
 			},
 		];

@@ -12,6 +12,7 @@
 // CITY must be set: page times are wall-clock times in that city's zone.
 
 import {
+	addDays,
 	getWeekRange,
 	loadCityConfig,
 	requireEnv,
@@ -38,8 +39,9 @@ if (!url) {
 
 const parsed = new URL(url); // throws with a clear message on a malformed URL
 const cityCfg = loadCityConfig(requireEnv("CITY"));
+const CITY_TZ = cityCfg.timezone;
 const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
-const { sunday } = getWeekRange();
+const { sunday } = getWeekRange(new Date(), CITY_TZ);
 
 const source: SourceDefinition = {
 	id: `manual-test--${parsed.hostname}`,
@@ -80,10 +82,8 @@ if (RAW) {
 	// --all widens the window so nothing is date-filtered out, which is what
 	// you want when inspecting a page in isolation rather than as this week's
 	// contribution.
-	const from = ALL ? "0000-01-01" : toISODate(new Date());
-	const to = ALL
-		? "9999-12-31"
-		: toISODate(new Date(sunday.getTime() + 7 * 86_400_000));
+	const from = ALL ? "0000-01-01" : toISODate(new Date(), CITY_TZ);
+	const to = ALL ? "9999-12-31" : addDays(toISODate(sunday, CITY_TZ), 7);
 	const { prepared, stats } = prepareCandidates(
 		candidates,
 		source,
