@@ -1,0 +1,21 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "workers/*" # dropped in 1.12 when workers/mcp moves to apps/mcp
+catalog:
+  typescript: 5.9.3 # currently locked; TS 7 is out of scope (PLAN §3)
+  tsx: ^4.22.0
+  zod: ^4.6.5
+  react: ^18.3.1 # pinned to the Expo SDK's React in 2.1
+  react-dom: ^18.3.1
+  "@types/react": ^18.3.12
+  "@types/react-dom": ^18.3.1
+# pnpm 11 refuses unreviewed dependency build scripts. Each entry was read before deciding;
+# pnpm 9 ran all of them, and the denied ones are no-ops when their prebuilt binaries install.
+allowBuilds:
+  esbuild: true            # postinstall verifies the platform binary (tsx, Vite, wrangler) and fetches it if optional deps were skipped
+  workerd: true            # postinstall does the same for wrangler's workerd runtime binary
+  "@google/genai": false   # preinstall is `echo 'preinstall: no-op'`
+  "@parcel/watcher": false # install only compiles from source when no prebuilt binary exists; sass --watch only
+  protobufjs: false        # postinstall only prints a version-scheme warning
+  sharp: false             # install only checks for the prebuilt @img/sharp-* binary, compiling libvips if absent
