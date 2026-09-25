@@ -26,10 +26,11 @@
 // Standalone stage after curate rather than inside it, so it can also run
 // over already-published data with no re-curation.
 
+import "./llmBootstrap.ts";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { ask, parseJsonArray } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
-import { GoogleGenAI } from "@google/genai";
 import {
 	DATA_ROOT,
 	loadCityConfig,
@@ -37,8 +38,7 @@ import {
 	SOURCE_TIERS,
 } from "./common.ts";
 import { acronymMatch } from "./dedupe.ts";
-import { parseJsonArray } from "./providers/base.ts";
-import { geminiText, installUsageReporting } from "./providers/gemini.ts";
+import { installUsageReporting } from "./io/usage.ts";
 
 // Not flash-lite: on the first Gold Coast run it merged "Mudgeeraba Studio"
 // into "Benowa Studio" despite the prompt's branch rule. Every answer is
@@ -364,23 +364,21 @@ function toIndex(v: unknown): number | null {
 	return null;
 }
 
-function geminiClassifier(ai: GoogleGenAI, cityName: string): VenueClassifyFn {
+function geminiClassifier(cityName: string): VenueClassifyFn {
 	return async (known, batch) => {
 		// An empty answer to a non-empty batch is a failure, not "all new":
 		// retried once, then reported as failed so nothing is cached from it.
 		for (let attempt = 0; attempt < 2; attempt++) {
 			try {
-				const raw = await geminiText(ai, {
-					stage: "venues",
+				const raw = await ask(buildUser(cityName, known, batch), {
+					provider: "gemini",
 					model: VENUE_MODEL,
-					systemInstruction: SYSTEM_PROMPT,
-					contents: buildUser(cityName, known, batch),
+					stage: "venues",
+					system: SYSTEM_PROMPT,
 					maxOutputTokens: 4096,
 					temperature: 0,
-					extraConfig: {
-						responseMimeType: "application/json",
-						thinkingConfig: { thinkingBudget: 0 },
-					},
+					json: true,
+					thinking: "off",
 				});
 				const parsed = parseJsonArray<Record<string, unknown>>(raw, "venues");
 				if (parsed.length > 0) {
@@ -466,9 +464,7 @@ async function main(): Promise<void> {
 		cache,
 		cityName: cfg.name,
 		aliases: aliasMap(SOURCE_TIERS.flatMap((t) => cfg.sources?.[t] ?? [])),
-		classify: apiKey
-			? geminiClassifier(new GoogleGenAI({ apiKey }), cfg.name)
-			: undefined,
+		classify: apiKey ? geminiClassifier(cfg.name) : undefined,
 		onBatch: (c) => writeCache(cachePath, c),
 	});
 	writeCache(cachePath, cache);
