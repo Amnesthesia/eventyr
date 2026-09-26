@@ -113,7 +113,7 @@ serves `404.html` with a real 404 status when an event rolls off. The thing to a
 
 **Today through the end of next week.** Past events are never kept — a Wednesday run must not
 resurrect Monday's finished gigs — and next week's are kept deliberately, so a quiet week still has
-something on it. The rule lives in `withinWindow`/`isPast` (`src/adapters/normalise.ts`) and is
+something on it. The rule lives in `withinWindow`/`isPast` (`packages/scraper/src/normalise.ts`) and is
 applied to **both** paths: the scrape pass filters its own output, and `curate.ts` applies the same
 filter to everything it merges. Events with no parsable date are kept, since they cannot be shown
 to be past.
@@ -144,7 +144,7 @@ trusted and never geocoded — that is ~2/3 of locations never sent to the API. 
 handful of events a week from a venue that tours: last measured at 2 of 395 (0.5%), both Opera
 Queensland/QTIX shows in Toowoomba. Widening the gate is one line in `dropOtherCities`.
 
-Three rules keep this from being expensive or destructive (`src/locality.ts`):
+Three rules keep this from being expensive or destructive (`apps/pipeline/src/locality.ts`):
 
 - **Once per distinct location, ever.** The geocoder interface takes a list, so a caller cannot
   make it one request per event, and every answer is cached in `data/{city}/locations.json` — which
@@ -245,7 +245,7 @@ The per-source line is built to distinguish a broken source from a quiet one:
 
 ## Extraction strategies
 
-`src/adapters/pageAdapter.ts` tries these in order, cheapest first, per page:
+`packages/scraper/src/pageAdapter.ts` tries these in order, cheapest first, per page:
 
 1. **JSON-LD** (`extract.ts`) — schema.org `Event` nodes. Deterministic and free.
 2. **Embedded hydration JSON** (`embeddedJson.ts`) — `__NEXT_DATA__`, Next.js app-router flight
@@ -260,7 +260,7 @@ resolved to a concrete day.
 
 ### Fetching
 
-`src/adapters/fetch.ts` honours `robots.txt` for every request (via `robots-parser`, so `*` and
+`packages/scraper/src/fetch.ts` honours `robots.txt` for every request (via `robots-parser`, so `*` and
 `$` patterns and Allow/Disallow precedence are handled per RFC 9309), rate-limits per host, retries
 429/5xx with jittered backoff, and does conditional GETs. It uses `got-scraping` rather than
 `fetch`: many venue sites sit behind Cloudflare, which fingerprints the TLS handshake — measured
@@ -270,7 +270,7 @@ disallows us in `robots.txt`, we do not fetch it.
 
 ## Deduplication
 
-`src/dedupe.ts`, called by `curate.ts` over the merged set from both paths. Three stages, cheapest
+`apps/pipeline/src/dedupe.ts`, called by `curate.ts` over the merged set from both paths. Three stages, cheapest
 first, so the LLM only ever sees the ambiguous minority:
 
 1. **Blocking** — bucket by calendar date (±1 day). Comparisons scale with events-per-day, not
@@ -397,11 +397,11 @@ no registration — just write `{city_key, provider, tier, week_start, week_end,
 - `packages/core/src/shared.ts` — constants shared with the browser bundle. **Must stay free of `node:` imports**;
   `apps/web/app/` imports it directly and pulling in `common.ts` (which reads the filesystem) breaks the Vite
   build.
-- `src/common.ts` — `INTERESTS`, `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`;
+- `apps/pipeline/src/common.ts` — `INTERESTS`, `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`;
   re-exports everything from `@dothingslol/core/shared`.
-- `src/adapters/` — the scrape path: `probe.ts`, `discover.ts`, `collect.ts`, `fetch.ts`,
+- `apps/pipeline/src/adapters/` — the scrape path: `probe.ts`, `discover.ts`, `collect.ts`, `fetch.ts`,
   `extract.ts`, `embeddedJson.ts`, `llmExtract.ts`, `dates.ts`, `normalise.ts`, `annotate.ts`.
-- `src/dedupe.ts` / `src/dedupeClassifier.ts` — cross-source dedupe.
+- `apps/pipeline/src/dedupe.ts` / `src/dedupeClassifier.ts` — cross-source dedupe.
 - `apps/web/app/` — React components; `apps/web/src/pages/` — Astro pages.
 - `apps/web/app/utils/notifications.ts` — 1-hour event reminders, 8:00 AM morning digest, and notification lifecycle
   (reminder times and wording: `packages/core/src/reminders.ts`).

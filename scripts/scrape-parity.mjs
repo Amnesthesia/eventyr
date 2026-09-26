@@ -36,11 +36,15 @@ import {
 } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { tsImport } from "tsx/esm/api";
 
 const REPO = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+import { createRequire } from "node:module";
+const req = createRequire(import.meta.url);
+const tsxPath = req.resolve("tsx/package.json", { paths: [join(REPO, "apps/pipeline")] });
+import { pathToFileURL } from "node:url";
+const { tsImport } = await import(pathToFileURL(join(dirname(tsxPath), "dist/esm/api/index.mjs")).href);
 const FIXTURES = join(REPO, "packages", "scraper", "test", "fixtures");
-const GOLDEN = join(REPO, "test", "golden", "scrape");
+const GOLDEN = join(REPO, "apps", "pipeline", "test", "golden", "scrape");
 /** Same instant as the LLM parity harness: a Wednesday, so the iCal fixture's
  * weekly recurrence has occurrences on both sides of it. */
 const FAKE_NOW = "2026-09-23T10:00:00+10:00";

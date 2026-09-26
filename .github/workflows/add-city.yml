@@ -49,7 +49,7 @@ jobs:
           CITY_NAME: ${{ inputs.city_name }}
           CITY_KEY:  ${{ inputs.city_key }}
           CITY_TIMEZONE: ${{ inputs.timezone }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/add_city.ts
+        run: pnpm add-city
 
       - name: Discover sources
         env:

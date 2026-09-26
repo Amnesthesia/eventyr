@@ -182,27 +182,27 @@ jobs:
           CITY: ${{ inputs.city }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/rank.ts
+        run: pnpm rank
 
       - name: Geocode locations
         env:
           CITY: ${{ inputs.city }}
           FORCE: ${{ inputs.force }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/geocode.ts
+        run: pnpm geocode
 
       - name: Write markdown
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/markdown.ts
+        run: pnpm markdown
 
       - name: Generate iCal
         env:
           CITY: ${{ inputs.city }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/ical.ts
+        run: pnpm ical
 
       - name: Generate RSS feeds
         run: pnpm rss
 
       - name: Update pages index
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/pages.ts
+        run: pnpm pages
 
       # Static /ai/ feed for third-party AI assistants — see src/ai.ts header.
       # Fails the run (and validates its own output) if a day/week file comes

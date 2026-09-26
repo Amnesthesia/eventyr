@@ -9,7 +9,14 @@ import { sourceEarnsPlace, type YieldLedger } from "./sourceYield.ts";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-export const PROJECT_ROOT = resolve(__dirname, "..");
+import { existsSync } from "fs";
+function findRepoRoot(from: string): string {
+  for (let dir = from; ; dir = dirname(dir)) {
+    if (existsSync(join(dir, "pnpm-workspace.yaml"))) return dir;
+    if (dirname(dir) === dir) throw new Error(`pnpm-workspace.yaml not found above ${from}`);
+  }
+}
+export const PROJECT_ROOT = process.env.EVENTYR_REPO_ROOT ?? findRepoRoot(dirname(fileURLToPath(import.meta.url)));
 // Overridable so tests can point the on-disk caches at a scratch directory
 // instead of writing into the repo's real data dir.
 export const DATA_ROOT =

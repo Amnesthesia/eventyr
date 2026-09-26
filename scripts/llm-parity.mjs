@@ -59,8 +59,8 @@ import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const REPO = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const FIXTURE = join(REPO, "test", "fixtures", "llm-city");
-const GOLDEN = join(REPO, "test", "golden", "llm");
+const FIXTURE = join(REPO, "apps", "pipeline", "test", "fixtures", "llm-city");
+const GOLDEN = join(REPO, "apps", "pipeline", "test", "golden", "llm");
 const WWW = join(FIXTURE, "www");
 /** The fixture's sources/brisbane.yml points at this port. */
 const PORT = 48123;
@@ -68,7 +68,7 @@ const PORT = 48123;
 const FAKE_NOW = "2026-09-23T10:00:00+10:00";
 const WALL_CLOCK_TOLERANCE = 1.1;
 
-const TSX = ["exec", "tsx", "--env-file-if-exists=.env", "--tsconfig", "tsconfig.scripts.json"];
+const TSX = ["--filter", "@dothingslol/pipeline", "exec", "tsx", "--env-file-if-exists=../../.env", "--tsconfig", "tsconfig.json"];
 /** Script + args, and any env the CLI needs on top of the harness's. The
  * collect runs mirror digest.yml (PROVIDERS, ANTHROPIC_TIERS), one provider
  * per run; collect-openai-chat is the non-gpt-5 (chat.completions) branch. */

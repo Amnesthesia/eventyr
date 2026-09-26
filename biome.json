@@ -1,61 +1,60 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.4.15/schema.json",
-	"vcs": {
-		"enabled": true,
-		"clientKind": "git",
-		"useIgnoreFile": true
-	},
-	"files": {
-		"includes": [
-			"src/**/*.ts",
-			"src/**/*.tsx",
-			"scripts/**/*.ts",
-			"scripts/**/*.tsx",
-			"workers/**/*.ts",
-			"packages/**/*.ts",
-			"apps/web/app/**/*.ts",
-			"apps/web/app/**/*.tsx",
-			"apps/web/src/**/*.ts",
-			"apps/web/scripts/**"
-		]
-	},
-	"formatter": {
-		"enabled": true,
-		"indentStyle": "tab"
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
-		}
-	},
-	"overrides": [
-		{
-			"includes": [
-				"packages/core/src/**",
-				"packages/utils/src/**",
-				"!**/*.test.ts"
-			],
-			"linter": {
-				"rules": {
-					"correctness": {
-						"noNodejsModules": "error"
-					}
-				}
-			}
-		}
-	],
-	"javascript": {
-		"formatter": {
-			"quoteStyle": "double"
-		}
-	},
-	"assist": {
-		"enabled": true,
-		"actions": {
-			"source": {
-				"organizeImports": "on"
-			}
-		}
-	}
+  "$schema": "https://biomejs.dev/schemas/2.4.15/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "includes": [
+      "apps/pipeline/src/**/*.ts",
+      "scripts/**/*.ts",
+      "scripts/**/*.tsx",
+      "workers/**/*.ts",
+      "packages/**/*.ts",
+      "apps/web/app/**/*.ts",
+      "apps/web/app/**/*.tsx",
+      "apps/web/src/**/*.ts",
+      "apps/web/scripts/**"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "tab"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "packages/core/src/**",
+        "packages/utils/src/**",
+        "!**/*.test.ts"
+      ],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noNodejsModules": "error"
+          }
+        }
+      }
+    }
+  ],
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
 }

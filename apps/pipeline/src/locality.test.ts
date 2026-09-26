@@ -2,17 +2,21 @@ import assert from "node:assert/strict";
 import { existsSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { test } from "node:test";
-import { DATA_ROOT, loadCityConfig } from "./common.ts";
-import {
-	type CityCentre,
+import { mkdtempSync } from "node:fs";
+import { tmpdir } from "node:os";
+
+const tempDir = mkdtempSync(join(tmpdir(), "eventyr-"));
+process.env.EVENTYR_DATA_ROOT = tempDir;
+
+const { DATA_ROOT, loadCityConfig } = await import("./common.ts");
+const {
 	createGoogleGeocoder,
 	distanceKm,
 	findElsewhere,
 	findForeign,
-	type Geocoder,
-	type Place,
 	withPlaceCache,
-} from "./locality.ts";
+} = await import("./locality.ts");
+import type { CityCentre, Geocoder, Place } from "./locality.ts";
 
 const BRISBANE: CityCentre = { lat: -27.4698, lng: 153.0251, radiusKm: 50 };
 
