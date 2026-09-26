@@ -172,7 +172,7 @@ export abstract class BaseProvider {
 		// One search per tier. There used to be a second "music" pass per tier,
 		// because a single mixed-category search spread one event budget across
 		// all six CATEGORIES and Concert/Music lost out. Music-heavy venues are
-		// now scraped directly (src/adapters/), so that workaround costs double
+		// now scraped directly (src/adapters/collect.ts pre-refactor; now stages/collectScraped.ts), so that workaround costs double
 		// the search calls for a problem it no longer solves.
 		//
 		// Each tier search is independent, so run them concurrently — that's

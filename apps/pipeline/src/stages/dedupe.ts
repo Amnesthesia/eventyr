@@ -56,7 +56,7 @@ export interface CandidatePair {
 
 /** Decides, for each pair, whether the two records are the same real event.
  * Injectable so tests never touch the network — same pattern as PageExtractFn
- * and Fetcher in src/adapters/types.ts. */
+ * and Fetcher in src/sources/types.ts. */
 export type PairClassifyFn = (pairs: CandidatePair[]) => Promise<boolean[]>;
 
 /**

@@ -24,7 +24,7 @@ function header(cityName: string): string {
 	return `# Event sources for ${cityName}.
 #
 # Each entry declares how it is collected:
-#   method: scraper — we fetch its listingUrls ourselves (src/adapters/).
+#   method: scraper — we fetch its listingUrls ourselves (src/stages/collectScraped.ts, via sources/*.yml).
 #   method: llm     — no verified listing page, so LLM web search covers it.
 #
 # Every source starts as method: llm. Only probe-sources promotes one, once

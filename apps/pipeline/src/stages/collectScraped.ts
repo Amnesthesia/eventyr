@@ -29,8 +29,6 @@ import {
 import { closeRenderBrowser, renderFetch } from "@dothingslol/scraper/render";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { addDays } from "@dothingslol/utils/tz";
-import { loadSourceRegistry } from "../adapters/registry.js";
-import type { SourceDefinition } from "../adapters/types.js";
 import type { RunContext } from "../config/context.js";
 import {
 	barrenSourcesPath,
@@ -40,6 +38,8 @@ import {
 } from "../config/paths.js";
 import { withExtractionCache } from "../io/fileCache.js";
 import { createHttpCacheStore } from "../io/httpCache.js";
+import { loadSourceRegistry } from "../sources/registry.js";
+import type { SourceDefinition } from "../sources/types.js";
 import {
 	type Annotation,
 	annotationKey,

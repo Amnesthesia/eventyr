@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import type { CandidateEvent } from "@dothingslol/scraper";
-import type { SourceDefinition } from "../adapters/types.js";
+import type { SourceDefinition } from "../sources/types.js";
 import {
 	councilEventUrl,
 	isPast,

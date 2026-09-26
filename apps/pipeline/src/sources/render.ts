@@ -403,9 +403,7 @@ interface Candidate {
 function loadShortlist(limit: number, includeUnknown: boolean): RenderTarget[] {
 	const path = join(DATA_ROOT, "_probe", "render-candidates.json");
 	if (!existsSync(path)) {
-		throw new Error(
-			`${path} not found — run: pnpm tsx src/adapters/triage.ts --render-candidates`,
-		);
+		throw new Error(`${path} not found — run: pnpm triage --render-candidates`);
 	}
 	const rows = JSON.parse(readFileSync(path, "utf-8")) as Candidate[];
 	const wanted = rows.filter((r) =>
