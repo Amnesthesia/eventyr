@@ -36,9 +36,9 @@ pnpm curate             # 3. merge both paths, window-filter, dedupe → data/{c
 pnpm rank               # 4. score 1–10 against INTERESTS
 pnpm geocode            # 5. add a Google Maps search URL per event
 pnpm markdown           # 6. {CITY}.md
-pnpm ical               # 7. public/{city}.ics
-pnpm rss                # 8. public/{slug}/feed.xml
-pnpm pages              # 9. data/index.json + public/sitemap.xml
+pnpm ical               # 7. apps/web/public/{city}.ics
+pnpm rss                # 8. apps/web/public/{slug}/feed.xml
+pnpm pages              # 9. data/index.json + apps/web/public/sitemap.xml
 pnpm build              # 10. astro build
 ```
 
@@ -85,7 +85,7 @@ belongs in rank's calibration rules (a score below 4 hides it by default).
 ### Sharing one event
 
 Every event also gets its own pre-rendered page at `/{city}/e/{title-slug}-{hash}` — 643 of them
-today, built by `src/pages/[city]/e/[event].astro` in about a second.
+today, built by `apps/web/src/pages/[city]/e/[event].astro` in about a second.
 
 They exist because a share link is only as good as its unfurl, and WhatsApp, iMessage and Slack run
 no JavaScript: a link that needed the React app to resolve which event was meant would preview as
@@ -96,7 +96,7 @@ object, and it renders in full with JavaScript disabled.
 The share control on a card is an `<a href>` to that page, progressively enhanced: with JavaScript
 it opens the native share sheet, or copies the URL where that does not exist; without it, it is
 just a link. Same for Add to calendar, which builds a single-event `.ics` in the browser
-(`packages/core/src/ics.ts`, downloaded by `app/utils/icsDownload.ts`).
+(`packages/core/src/ics.ts`, downloaded by `apps/web/app/utils/icsDownload.ts`).
 
 The slug's trailing hash is `eventHash` from `packages/core/src/shared.ts`, which is also the iCal `UID` and the
 RSS `guid` — one identity, so a share URL, a calendar entry and a feed item all name the same
@@ -166,8 +166,8 @@ and Toowoomba, Surfers Paradise and Newtown NSW all came back as "Brisbane QLD" 
 
 The site is an installable PWA that runs offline and supports scheduled event notifications on phones:
 
-- **Installable on mobile**: Open in Safari (iOS) and tap **"Add to Home Screen"**, or in Chrome (Android) and tap **"Install App"**. The app runs in standalone display mode with dedicated touch icons (`public/icons/`) and Web App Manifest (`public/manifest.webmanifest`).
-- **Offline support**: `public/sw.js` precaches the app shell and uses a network-first strategy for pages with cache fallback, plus stale-while-revalidate for event data and static assets.
+- **Installable on mobile**: Open in Safari (iOS) and tap **"Add to Home Screen"**, or in Chrome (Android) and tap **"Install App"**. The app runs in standalone display mode with dedicated touch icons (`apps/web/public/icons/`) and Web App Manifest (`apps/web/public/manifest.webmanifest`).
+- **Offline support**: `apps/web/public/sw.js` precaches the app shell and uses a network-first strategy for pages with cache fallback, plus stale-while-revalidate for event data and static assets.
 - **1-hour event reminders**: Bookmarking (saving/starring) an event schedules a notification to fire **1 hour before the event begins** (or 8:00 AM on the day for all-day events). Supported via WICG Notification Triggers (`TimestampTrigger`), Service Worker messages, and foreground timers.
 - **8:00 AM daily morning digest**: Every morning at 8:00 AM, the app sends a digest notification summarizing all bookmarked events scheduled for today. Supported via Periodic Background Sync (`periodicsync`) in installed PWAs and automatic lifecycle checks on resume/open.
 - **Privacy-first & zero-backend**: Bookmarks and reminders are stored locally in the browser (`localStorage` and `IndexedDB`). No push servers, user accounts, or external tracking services are involved.
@@ -395,15 +395,15 @@ no registration — just write `{city_key, provider, tier, week_start, week_end,
 ## Key files
 
 - `packages/core/src/shared.ts` — constants shared with the browser bundle. **Must stay free of `node:` imports**;
-  `app/` imports it directly and pulling in `common.ts` (which reads the filesystem) breaks the Vite
+  `apps/web/app/` imports it directly and pulling in `common.ts` (which reads the filesystem) breaks the Vite
   build.
 - `src/common.ts` — `INTERESTS`, `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`;
   re-exports everything from `@dothingslol/core/shared`.
 - `src/adapters/` — the scrape path: `probe.ts`, `discover.ts`, `collect.ts`, `fetch.ts`,
   `extract.ts`, `embeddedJson.ts`, `llmExtract.ts`, `dates.ts`, `normalise.ts`, `annotate.ts`.
 - `src/dedupe.ts` / `src/dedupeClassifier.ts` — cross-source dedupe.
-- `app/` — React components; `src/pages/` — Astro pages.
-- `app/utils/notifications.ts` — 1-hour event reminders, 8:00 AM morning digest, and notification lifecycle
+- `apps/web/app/` — React components; `apps/web/src/pages/` — Astro pages.
+- `apps/web/app/utils/notifications.ts` — 1-hour event reminders, 8:00 AM morning digest, and notification lifecycle
   (reminder times and wording: `packages/core/src/reminders.ts`).
-- `app/utils/pwaStorage.ts` — IndexedDB persistence for bookmarked events shared with the Service Worker.
-- `public/sw.js` / `public/manifest.webmanifest` — Service Worker (offline caching, sync, triggers) and PWA manifest.
+- `apps/web/app/utils/pwaStorage.ts` — IndexedDB persistence for bookmarked events shared with the Service Worker.
+- `apps/web/public/sw.js` / `apps/web/public/manifest.webmanifest` — Service Worker (offline caching, sync, triggers) and PWA manifest.

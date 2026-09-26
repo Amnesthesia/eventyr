@@ -8,9 +8,9 @@
     "node": ">=22.12"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
+    "dev": "pnpm --filter @dothingslol/web dev",
+    "build": "pnpm --filter @dothingslol/web build",
+    "preview": "pnpm --filter @dothingslol/web preview",
     "prepare": "node ./scripts/setup-hooks.mjs",
     "collect": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/collection.ts",
     "collect-adapters": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/collect.ts",
@@ -30,33 +30,23 @@
     "discover-sources": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/discover.ts",
     "test-adapter": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/testUrl.ts",
     "test:pipeline": "tsx --tsconfig tsconfig.scripts.json --test 'src/**/*.test.ts'",
-    "test:app": "tsx --tsconfig tsconfig.json --test 'app/**/*.test.ts' 'app/**/*.test.tsx'",
+    "test:app": "pnpm --filter @dothingslol/web test",
     "test": "pnpm test:pipeline && pnpm test:app",
-    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.scripts.json && biome check src app packages && pnpm test && pnpm -r --filter \"./packages/*\" typecheck && pnpm -r --filter \"./packages/*\" test && node scripts/check-boundaries.mjs",
+    "check": "pnpm --filter @dothingslol/web typecheck && tsc --noEmit -p tsconfig.scripts.json && biome check src apps/web/app packages && pnpm test && pnpm -r --filter \"./packages/*\" typecheck && pnpm -r --filter \"./packages/*\" test && node scripts/check-boundaries.mjs",
     "render-sources": "tsx --env-file-if-exists=.env --tsconfig tsconfig.scripts.json src/adapters/render.ts"
   },
   "dependencies": {
-    "@astrojs/react": "^5.0.5",
     "@dothingslol/core": "workspace:*",
     "@dothingslol/llm": "workspace:*",
     "@dothingslol/scraper": "workspace:*",
     "@dothingslol/utils": "workspace:*",
-    "@picocss/pico": "^2.0.6",
-    "astro": "^6.3.7",
-    "js-yaml": "^4.1.1",
-    "lucide-react": "^0.469.0",
-    "qrcode-generator": "^2.0.4",
-    "react": "catalog:",
-    "react-dom": "catalog:"
+    "js-yaml": "^4.1.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.15",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^25.8.0",
-    "@types/react": "catalog:",
-    "@types/react-dom": "catalog:",
     "playwright": "^1.63.0",
-    "sass": "^1.100.0",
     "tsx": "catalog:",
     "typescript": "catalog:"
   }

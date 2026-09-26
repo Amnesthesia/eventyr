@@ -19,6 +19,7 @@ import {
 	meetsScoreFloor,
 	PROJECT_ROOT,
 	SITE_URL,
+	WEB_PUBLIC_DIR,
 } from "./common.ts";
 
 interface Payload {
@@ -174,7 +175,7 @@ function main(): void {
 		if (!payload.city_key || !Array.isArray(payload.events)) continue;
 
 		const slug = KEY_TO_SLUG[payload.city_key] ?? payload.city_key;
-		const outDir = join(PROJECT_ROOT, "public", slug);
+		const outDir = join(WEB_PUBLIC_DIR, slug);
 		mkdirSync(outDir, { recursive: true });
 		const outPath = join(outDir, "feed.xml");
 		const { timezone } = loadCityConfig(payload.city_key);

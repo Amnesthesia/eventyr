@@ -29,6 +29,7 @@ const ALLOWED = {
 		"@dothingslol/llm",
 		"@dothingslol/scraper",
 	],
+	"@dothingslol/web": ["@dothingslol/core"],
 	"@dothingslol/utils": [],
 	"@dothingslol/core": ["@dothingslol/utils"],
 	"@dothingslol/llm": ["@dothingslol/utils"],

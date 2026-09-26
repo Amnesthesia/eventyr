@@ -1,4 +1,5 @@
 ---
+import { DATA_ROOT } from "../lib/paths.ts";
 // Human-facing page explaining the machine-facing /llms.txt + /ai/ feed
 // (src/ai.ts). Standalone rather than built on layouts/Base.astro: Base is
 // built around one city's CityData (its own nav, its ItemList schema), and
@@ -13,7 +14,7 @@ import { KEY_TO_SLUG } from "@dothingslol/core/shared";
 import { MCP_INSTALL_URL, MCP_URL } from "@react/utils/mcpInstall";
 
 const index: CityIndex = JSON.parse(
-	readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
+	readFileSync(join(DATA_ROOT, "/index.json"), "utf-8"),
 );
 const cities = index.cities.map((c) => ({
 	name: c.name,

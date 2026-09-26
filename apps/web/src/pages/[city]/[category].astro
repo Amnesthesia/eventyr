@@ -1,4 +1,5 @@
 ---
+import { DATA_ROOT } from "../../lib/paths.ts";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import Base from "../../layouts/Base.astro";
@@ -12,7 +13,7 @@ import {
 
 export function getStaticPaths() {
 	const index: CityIndex = JSON.parse(
-		readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
+		readFileSync(join(DATA_ROOT, "/index.json"), "utf-8"),
 	);
 
 	const paths = [];
@@ -23,7 +24,7 @@ export function getStaticPaths() {
 			city.key;
 
 		const cityData: CityData = JSON.parse(
-			readFileSync(join(process.cwd(), `data/${city.key}.json`), "utf-8"),
+			readFileSync(join(DATA_ROOT, `/${city.key}.json`), "utf-8"),
 		);
 
 		const presentCats = new Set(cityData.events.map((e) => e.category));

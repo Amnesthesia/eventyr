@@ -1,3 +1,4 @@
+import { SOURCES_ROOT } from "./paths.ts";
 // Build-time organizer lookup for the Astro pages.
 //
 // Deliberately not common.ts: its PROJECT_ROOT comes from import.meta.url,
@@ -16,7 +17,7 @@ export function organizerUrlsFor(cityKey: string): Map<string, string> {
 	const hit = cache.get(cityKey);
 	if (hit) return hit;
 	const cfg = yaml.load(
-		readFileSync(join(process.cwd(), "sources", `${cityKey}.yml`), "utf-8"),
+		readFileSync(join(SOURCES_ROOT, `${cityKey}.yml`), "utf-8"),
 	) as { sources?: Partial<Record<string, OrganizerSource[]>> };
 	const out = organizerUrls(cfg.sources);
 	cache.set(cityKey, out);

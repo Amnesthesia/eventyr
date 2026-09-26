@@ -66,9 +66,10 @@ import {
 	SITE_URL,
 	stripForDisplay,
 	toISODate,
+	WEB_PUBLIC_DIR,
 } from "./common.ts";
 
-const AI_ROOT = join(PROJECT_ROOT, "public", "ai");
+const AI_ROOT = join(WEB_PUBLIC_DIR, "ai");
 const DAY_FILE_LIMIT = 50 * 1024;
 const WEEK_FILE_LIMIT = 200 * 1024;
 
@@ -558,7 +559,7 @@ function readJson(path: string): unknown {
 }
 
 function validateDayFile(relPath: string, todayStr: string): void {
-	const fullPath = join(PROJECT_ROOT, "public", relPath.replace(/^\//, ""));
+	const fullPath = join(WEB_PUBLIC_DIR, relPath.replace(/^\//, ""));
 	const payload = readJson(fullPath) as Record<string, unknown>;
 	const date = payload.date as string;
 	if (date < todayStr) fail(`${relPath}: date ${date} is in the past`);
@@ -576,7 +577,7 @@ function validateDayFile(relPath: string, todayStr: string): void {
 }
 
 function validateWeekFile(relPath: string, todayStr: string): void {
-	const fullPath = join(PROJECT_ROOT, "public", relPath.replace(/^\//, ""));
+	const fullPath = join(WEB_PUBLIC_DIR, relPath.replace(/^\//, ""));
 	const payload = readJson(fullPath) as Record<string, unknown>;
 	if ((payload.week_end as string) < todayStr) {
 		fail(`${relPath}: week_end ${payload.week_end} is entirely in the past`);
@@ -616,11 +617,7 @@ export function validateOutput(
 		for (const dayPath of city.days) validateDayFile(dayPath, todayStr);
 		if (city.week) validateWeekFile(city.week, todayStr);
 		for (const cat of city.week_categories) {
-			const fullPath = join(
-				PROJECT_ROOT,
-				"public",
-				cat.file.replace(/^\//, ""),
-			);
+			const fullPath = join(WEB_PUBLIC_DIR, cat.file.replace(/^\//, ""));
 			if (!existsSync(fullPath)) fail(`index.json: ${cat.file} does not exist`);
 		}
 	}
@@ -665,7 +662,7 @@ function main(): void {
 	writeJson(indexPath, index);
 	console.log(`→ ai/index.json (${cities.length} cities)`);
 
-	const llmsPath = join(PROJECT_ROOT, "public", "llms.txt");
+	const llmsPath = join(WEB_PUBLIC_DIR, "llms.txt");
 	writeFileSync(llmsPath, buildLlmsTxt(cities, todayStr), "utf-8");
 	console.log("→ llms.txt");
 

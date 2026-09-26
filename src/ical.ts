@@ -17,6 +17,7 @@ import {
 	meetsScoreFloor,
 	PROJECT_ROOT,
 	requireEnv,
+	WEB_PUBLIC_DIR,
 } from "./common.ts";
 
 const CITY = requireEnv("CITY");
@@ -194,7 +195,7 @@ function main(): void {
 	// same in both — which is also why these have to be committed: deploy.yml
 	// runs `astro build` from a checkout and never runs this script.
 	const citySlug = KEY_TO_SLUG[CITY] ?? CITY;
-	const eventDir = join(PROJECT_ROOT, "public", citySlug, "e");
+	const eventDir = join(WEB_PUBLIC_DIR, citySlug, "e");
 	mkdirSync(eventDir, { recursive: true });
 
 	let count = 0;
@@ -240,7 +241,7 @@ function main(): void {
 
 	lines.push("END:VCALENDAR");
 
-	const outPath = join(PROJECT_ROOT, "public", `${CITY}.ics`);
+	const outPath = join(WEB_PUBLIC_DIR, `${CITY}.ics`);
 	writeFileSync(outPath, `${lines.join("\r\n")}\r\n`, "utf-8");
 	console.log(
 		`→ Written ${CITY}.ics (${count} events) and ${files} per-event .ics under public/${citySlug}/e/` +

@@ -9,12 +9,14 @@
 		"includes": [
 			"src/**/*.ts",
 			"src/**/*.tsx",
-			"app/**/*.ts",
-			"app/**/*.tsx",
 			"scripts/**/*.ts",
 			"scripts/**/*.tsx",
 			"workers/**/*.ts",
-			"packages/**/*.ts"
+			"packages/**/*.ts",
+			"apps/web/app/**/*.ts",
+			"apps/web/app/**/*.tsx",
+			"apps/web/src/**/*.ts",
+			"apps/web/scripts/**"
 		]
 	},
 	"formatter": {

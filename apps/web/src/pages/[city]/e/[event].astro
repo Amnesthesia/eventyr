@@ -1,4 +1,5 @@
 ---
+import { DATA_ROOT } from "../../../lib/paths.ts";
 // One page per event, so an event can be shared as a link that means something.
 //
 // Pre-rendered rather than resolved client-side, because the value of a share
@@ -26,12 +27,12 @@ import {
 	SLUG_TO_KEY,
 	stripForDisplay,
 } from "@dothingslol/core/shared";
-import { organizerUrlsFor } from "../../../organizers.ts";
+import { organizerUrlsFor } from "../../../lib/organizers.ts";
 import { VIBE_LABELS, vibesOf } from "@dothingslol/core/vibes";
 
 export function getStaticPaths() {
 	const index: CityIndex = JSON.parse(
-		readFileSync(join(process.cwd(), "data/index.json"), "utf-8"),
+		readFileSync(join(DATA_ROOT, "/index.json"), "utf-8"),
 	);
 
 	return index.cities.flatMap((city) => {
@@ -39,7 +40,7 @@ export function getStaticPaths() {
 			Object.entries(SLUG_TO_KEY).find(([, k]) => k === city.key)?.[0] ??
 			city.key;
 		const cityData: CityData = JSON.parse(
-			readFileSync(join(process.cwd(), `data/${city.key}.json`), "utf-8"),
+			readFileSync(join(DATA_ROOT, `/${city.key}.json`), "utf-8"),
 		);
 		return cityData.events.map((event) => ({
 			params: { city: slug, event: eventSlug(city.key, event) },

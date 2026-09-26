@@ -490,3 +490,6 @@ export function dedupeEvents(
 	}
 	return unique;
 }
+
+/** Where the site's static files live. The pipeline writes feeds here; see docs/monorepo/PLAN.md §2.3. */
+export const WEB_PUBLIC_DIR = resolve(PROJECT_ROOT, "apps", "web", "public");

@@ -10,6 +10,7 @@ import {
 	PROJECT_ROOT,
 	SITE_URL,
 	toISODate,
+	WEB_PUBLIC_DIR,
 } from "./common.ts";
 
 const BASE_URL = SITE_URL;
@@ -131,7 +132,7 @@ function main(): void {
 	writeFileSync(outPath, JSON.stringify(index, null, 2), "utf-8");
 	console.log(`→ Written ${outPath} (${cities.length} city/cities)`);
 
-	const sitemapPath = join(PROJECT_ROOT, "public", "sitemap.xml");
+	const sitemapPath = join(WEB_PUBLIC_DIR, "sitemap.xml");
 	writeFileSync(sitemapPath, buildSitemap(cityMeta, today), "utf-8");
 	console.log(`→ Written ${sitemapPath}`);
 

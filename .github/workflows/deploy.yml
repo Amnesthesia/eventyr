@@ -52,7 +52,7 @@ jobs:
       # v3, as withastro/action@v3 used: it keeps dotfiles (/.well-known/api-catalog);
       # v4 drops them by default.
       - uses: actions/upload-pages-artifact@v3
-        with: { path: dist }
+        with: { path: apps/web/dist }
 
   deploy:
     needs: build
