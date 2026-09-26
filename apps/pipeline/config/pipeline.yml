@@ -1,0 +1,107 @@
+# Pipeline runtime configuration — models, concurrency ceilings, budgets, stage tunables.
+# Values here are today's defaults (the same as the previous hardcoded constants).
+# Env overrides (PROVIDERS, ANTHROPIC_SEARCH_MODEL, GEMINI_CONCURRENCY, GEMINI_MAX_CALLS,
+# RENDER_RUN_BUDGET_MS, PROBE_CONCURRENT_HOSTS, PROBE_SOURCE_TIMEOUT_MS) still work and
+# take precedence over this file.
+
+models:
+  search:
+    google:     { provider: gemini,    model: gemini-3.1-flash-lite }
+    anthropic:  { provider: anthropic, model: claude-sonnet-5 }
+    openai:     { provider: openai,    model: gpt-5-mini }
+    perplexity: { provider: perplexity, model: sonar-pro }
+  searchCurate:  { provider: gemini, model: gemini-3.1-flash-lite }
+  extract:       { provider: gemini, model: gemini-3.1-flash-lite }
+  annotate:      { provider: gemini, model: gemini-3.1-flash-lite }
+  dedupe:        { provider: gemini, model: gemini-3.1-flash-lite }
+  probe:         { provider: gemini, model: gemini-3.1-flash-lite }
+  venues:        { provider: gemini, model: gemini-3.5-flash }
+  rank:          { provider: gemini, model: gemini-3.5-flash }
+  discover:      { provider: gemini, model: gemini-3.5-flash }
+
+llm:
+  concurrency:
+    gemini: 4
+  budget:
+    maxCalls: 0        # 0 = unlimited; override with GEMINI_MAX_CALLS
+  retries:
+    max: 4
+    baseBackoffMs: 5000
+  cache:
+    extractionMaxAgeDays: 60
+  prices: {}           # empty → use the llm package's built-in table
+
+scrape:
+  perHost:
+    minIntervalMs: 1000
+    maxConcurrency: 2
+  retries:
+    max: 3
+    baseBackoffMs: 1000
+  detailPages:
+    concurrency: 4
+    maxPerSource: 150
+  render:
+    concurrentHosts: 3
+    pageTimeoutMs: 25000
+    runBudgetMs: 1200000   # 20 * 60_000; override with RENDER_RUN_BUDGET_MS
+    settleMs: 6000
+  userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+
+stages:
+  collectAdapters:
+    concurrency: 5
+  extract:
+    maxOutputTokens: 16000
+    concurrency: 3
+    maxBatchesPerPage: 4
+  annotate:
+    batchSize: 40
+    concurrency: 6
+  probe:
+    maxCandidateFetches: 6
+    maxKeptUrls: 3
+    maxEvaluations: 2
+    maxSitemapCandidates: 5
+    urlBatchSize: 20
+    urlBatchConcurrency: 4
+    concurrentHosts: 20    # override with PROBE_CONCURRENT_HOSTS
+    sourceTimeoutMs: 180000  # override with PROBE_SOURCE_TIMEOUT_MS
+    gate:
+      minTextLength: 1200
+      minDateHits: 5
+    promote:
+      minDated: 3
+      minUpcoming: 1   # minUpcoming=1 is the authoritative value; triage MIN_IN_WINDOW=2 is a stale mirror
+      maxPastRatio: 10
+  discover:
+    concurrency: 4
+  collect:
+    anthropic:
+      maxWebSearches: 3
+    openai:
+      maxToolCalls: 4
+    sourceYield:
+      hitWindowWeeks: 8
+      graceDays: 28
+      ledgerWeeks: 26
+      minHistoryWeeks: 8
+  dedupe:
+    pairBatchSize: 30
+    concurrency: 6
+    maxPairs: 3000
+    maybeMin: 0.45
+  locality:
+    concurrency: 8
+    timeoutMs: 10000
+  venues:
+    batchSize: 40
+  rank:
+    batchSize: 60
+
+publish:
+  windowDaysAfterWeek: 7   # coming Sunday + this many days
+  ai:
+    weekSplitBytes: 204800   # 200 * 1024
+    dayWarnBytes: 51200      # 50 * 1024
+  icalExpandDays: 60

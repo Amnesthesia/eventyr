@@ -17,7 +17,13 @@ if (mode && !process.env.EVENTYR_LLM_REPLAY_DIR) {
 	throw new Error("EVENTYR_LLM_REPLAY needs EVENTYR_LLM_REPLAY_DIR");
 }
 
+import { loadPipelineConfig } from "./config/load.ts";
+
+const cfg = loadPipelineConfig();
+
 configureLLM({
+	concurrency: cfg.llm.concurrency,
+	maxCalls: cfg.llm.budget.maxCalls,
 	cacheStore: createFileCache(),
 	batchStore: createBatchStore(),
 	replay: mode

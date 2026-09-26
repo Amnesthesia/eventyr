@@ -21,15 +21,16 @@
     "test-adapter": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/adapters/test-adapter.ts",
     "render-sources": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/adapters/render.ts",
     "triage": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/adapters/triage.ts",
-    "test": "tsx --test 'src/**/*.test.ts'",
+    "test": "CITY=dummy GOOGLE_API_KEY=dummy tsx --test 'src/**/*.test.ts'",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
     "@dothingslol/core": "workspace:*",
-    "@dothingslol/utils": "workspace:*",
     "@dothingslol/llm": "workspace:*",
     "@dothingslol/scraper": "workspace:*",
-    "js-yaml": "^4.1.0"
+    "@dothingslol/utils": "workspace:*",
+    "js-yaml": "^4.1.0",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",

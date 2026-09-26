@@ -243,4 +243,8 @@ async function main(): Promise<void> {
 	console.log("✓ Ranking complete.");
 }
 
-await main();
+import { fileURLToPath } from "node:url";
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+	await main();
+}
