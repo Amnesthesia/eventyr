@@ -1,5 +1,5 @@
 import { askDetailed } from "@dothingslol/llm";
-import { fmtDate } from "../common.ts";
+import { fmtDate } from "../config/week.js";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import { BaseProvider } from "./base.ts";
 

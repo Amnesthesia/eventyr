@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Botanic By Night: NightGlow
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-15hpv5c@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T183000
+DTEND;TZID=Australia/Brisbane:20260926T220000
+SUMMARY:Botanic By Night: NightGlow
+DESCRIPTION:Botanic By Night: NightGlow makes its Brisbane debut at Brisban
+ e Botanic Gardens Mt Coot-tha from 25 September to 10 October\, transformi
+ ng the Gardens into a magical after-dark outdoor art experience. Visitors 
+ will journey along an enchanting 800-metre route featuring 11 larger-than-
+ life illuminated animal sculptures inspired by Queensland's native wildlif
+ e. Designed by Ample Projects in collaboration with First Nations artists 
+ Casey Coolwell-Fisher and Nathan Peckham\, Botanic By Night: NightGlow com
+ bines art\, storytelling and sound to celebrate the animals\, habitats and
+  stories that shape Queensland's natural environment. From kangaroos and k
+ oalas to platypus\, dingoes and green tree frogs\, each artwork offers a u
+ nique encounter\, inviting visitors to wander\, explore and connect with n
+ ature in a whole new way. Perfect for families\, friends and date nights\,
+  Botanic By Night: NightGlow also features a dedicated food truck precinct
+ .
+LOCATION:Brisbane Botanic Gardens Mt Coot-tha\, Brisbane Botanic Gardens Mt
+  Coot-tha\, 152 Mt Coot-tha Road\, Toowong
+URL:https://botanicbynight.com.au/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Suitcase Rummage in Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1hi9ja1@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T120000
+DTEND;TZID=Australia/Brisbane:20261004T170000
+SUMMARY:Suitcase Rummage in Brisbane
+DESCRIPTION:Suitcase Rummage is a mini scaled market with giant rewards\; i
+ t promises to be everything that is a market without the hassle. Its about
+  bringing a suitcase (or 2!) filled to the brim with your goods and treats
+ . You can be a part of the Rummage experience by selling wares or come alo
+ ng to buy some real beauties! There will be brilliant vintage\, artwork\, 
+ bric-a-brac\, clothing\, books\, jewellery\, seconds\, hand-made\, shoes\,
+  records\, music\, badges\, cards\, handmade paper... you name it! Come fo
+ r a bargain\, a swap\, or an old fashioned haggle. Suitcase Rummage is not
+  to be missed! You must purchase a stall ticket to sell your wares\, so pl
+ ease click on the link above and fill in your details. They will contact y
+ ou with further information once you've registered! Next step is... to bri
+ ng your treats and goodies on the day and start selling like your grandma.
+  Easy as pie. Location: 266 George Street\, Brisbane City Queensland 4000.
+  For more information\, visit the Suitcase Rummage website \, or contact t
+ he team via email or by phoning 0411 604 889.
+LOCATION:Queen Street Mall\, Brisbane City\, Queen Street Mall\, Queen Stre
+ et\, Brisbane City
+URL:https://www.suitcaserummage.com.au/
+END:VEVENT
+END:VCALENDAR

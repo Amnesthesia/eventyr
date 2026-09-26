@@ -30,6 +30,7 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { normaliseHost, toISODate } from "@dothingslol/core/shared";
 import {
 	feedUrlsFromHtml,
 	wpJsonRoutesToFeedUrls,
@@ -43,14 +44,8 @@ import {
 } from "@dothingslol/scraper/render";
 import yaml from "js-yaml";
 import type { Browser, BrowserContext } from "playwright";
-import {
-	type CityConfig,
-	DATA_ROOT,
-	normaliseHost,
-	SOURCE_TIERS,
-	SOURCES_ROOT,
-	toISODate,
-} from "../common.ts";
+import { type CityConfig, SOURCE_TIERS } from "../config/city.js";
+import { DATA_ROOT, SOURCES_ROOT } from "../config/paths.js";
 
 /** Pages rendered per host. A walled host needs its landing page and maybe one
  * listing guess; more than that is a crawl, which this is not. */
@@ -63,7 +58,9 @@ export const CONCURRENT_HOSTS = 3;
  * hosts each decided to be slow — probe already hung a run for 28 minutes on
  * a missing timeout, and that lesson is cheap to reapply here.
  */
-export const RUN_BUDGET_MS = Number(process.env.RENDER_RUN_BUDGET_MS ?? 20 * 60_000);
+export const RUN_BUDGET_MS = Number(
+	process.env.RENDER_RUN_BUDGET_MS ?? 20 * 60_000,
+);
 
 export interface RenderFinding {
 	host: string;

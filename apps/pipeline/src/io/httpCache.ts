@@ -7,7 +7,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type { HttpCacheEntry, HttpCacheStore } from "@dothingslol/scraper";
-import { adapterCachePath, adapterRawDir } from "../common.ts";
+import { adapterCachePath, adapterRawDir } from "../config/paths.js";
 
 type Cache = Record<string, HttpCacheEntry>;
 

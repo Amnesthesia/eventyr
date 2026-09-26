@@ -1,19 +1,18 @@
 import "./llmBootstrap.ts";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { ask } from "@dothingslol/llm";
-import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import {
 	byScoreThenSoonest,
-	DATA_ROOT,
-	fmtDate,
-	getWeekRange,
-	INTERESTS,
-	loadCityConfig,
-	requireEnv,
 	TOP_PICK_THRESHOLD,
 	toISODate,
-} from "./common.ts";
+} from "@dothingslol/core/shared";
+import { ask } from "@dothingslol/llm";
+import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
+import { INTERESTS } from "./common.js";
+import { loadCityConfig } from "./config/city.js";
+import { requireEnv } from "./config/env.js";
+import { DATA_ROOT } from "./config/paths.js";
+import { fmtDate, getWeekRange } from "./config/week.js";
 import { installUsageReporting } from "./io/usage.ts";
 import {
 	RANK_DESCRIPTION_CHARS,

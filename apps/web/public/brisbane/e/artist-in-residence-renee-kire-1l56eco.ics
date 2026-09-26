@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Artist in Residence: Renee Kire
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1l56eco@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T100000
+DTEND;TZID=Australia/Brisbane:20260928T170000
+SUMMARY:Artist in Residence: Renee Kire
+DESCRIPTION:Step inside an exciting new residency project that invites you 
+ to experience art in unexpected ways. Artist in Residence Renee Kire takes
+  over Museum of Brisbane’s entryway\, transforming these spaces with a v
+ ibrant and dynamic mix of striking vinyl graphics and sculptural timber el
+ ements. These features create an immersive pathway that stretches across w
+ alls and ceilings\, guiding you into the heart of the Museum. Drawing insp
+ iration from Minimalism while reinterpreting the movement through a contem
+ porary feminist lens\, Kire brings fresh attention to the often-overlooked
+  contributions of women in the field. Bright\, colourful and welcoming for
+  all visitors\, the artwork is both joyful and thought-provoking. Respondi
+ ng directly to the architecture of the Museum\, City Hall and the Brisbane
+  cityscape\, Kire’s design reveals unexpected connections between the bu
+ ilt environment and abstract form. Repetition\, rhythm and thoughtful deta
+ ils invite you to slow down\, look closely and discover new perspectives. 
+ MoB’s Artist in Residence program is supported by Tim Fairfax AC. Museum
+  of Brisbane is Brisbane City Council’s leading history and art museum w
+ here you can experience our city’s vibrant culture.
+LOCATION:Museum of Brisbane\, Brisbane City\, Museum of Brisbane\, Brisbane
+  City Hall\, 64 Adelaide Street\, Brisbane City
+URL:https://www.museumofbrisbane.com.au/whats-on/renee-kire/
+END:VEVENT
+END:VCALENDAR

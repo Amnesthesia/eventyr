@@ -4,12 +4,12 @@
 // @dothingslol/scraper's (candidateToEvent); this file decides which of those
 // events belong to the week being published.
 
+import { CATEGORIES, type Category } from "@dothingslol/core/shared";
 import {
 	type CandidateEvent,
 	candidateToEvent,
 	type ScrapedEvent,
 } from "@dothingslol/scraper";
-import { CATEGORIES, type Category } from "../common.ts";
 import type { SourceDefinition } from "./types.ts";
 
 /**

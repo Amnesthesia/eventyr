@@ -1,15 +1,11 @@
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import {
-	CATEGORY_EMOJI,
-	DATA_ROOT,
-	fmtDate,
-	isTopPick,
-	loadCityConfig,
-	PROJECT_ROOT,
-	zonedMidnight,
-} from "./common.ts";
+import { CATEGORY_EMOJI, isTopPick } from "@dothingslol/core/shared";
+import { zonedMidnight } from "@dothingslol/utils/tz";
+import { loadCityConfig } from "./config/city.js";
+import { DATA_ROOT, PROJECT_ROOT } from "./config/paths.js";
+import { fmtDate } from "./config/week.js";
 
 type Event = Record<string, unknown>;
 

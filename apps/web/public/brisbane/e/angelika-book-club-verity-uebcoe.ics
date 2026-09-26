@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Angelika Book Club - Verity
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-uebcoe@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T190000
+DTEND;TZID=Australia/Brisbane:20261002T210000
+SUMMARY:Angelika Book Club - Verity
+DESCRIPTION:Join fellow readers for a special Book Club Screening of Verity
+  \, based on the bestselling novel by Colleen Hoover\, on Friday\, October
+  2 at 7pm . Adapted from Colleen Hoover's best-selling novel\, this seduct
+ ive\, psychological thriller follows renowned author Verity Crawford (Anne
+  Hathaway) and Lowen Ashleigh (Dakota Johnson)\, a struggling writer who r
+ elocates to the remote Crawford estate to ghostwrite for Verity. After Low
+ en uncovers what appears to be Verity's chilling autobiographical notes\, 
+ she wrestles with the disturbing and twisted confessions about Verity’s 
+ husband Jeremy (Josh Hartnett)\, and finds it hard to separate fiction fro
+ m reality\, manipulation from attraction\, and opportunity from obsession.
+LOCATION:Angelika Film Centre South City Square\, Woolloongabba
+URL:https://angelikacinemas.com.au/movies/details/10478
+END:VEVENT
+END:VCALENDAR

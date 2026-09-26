@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Before The Last Octopus
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-4yafpu@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T183000
+DTEND;TZID=Australia/Brisbane:20260930T203000
+SUMMARY:Before The Last Octopus
+DESCRIPTION:New Farm Cinemas & Tower Cinemas Newcastle. Time is running out
+  for octopuses in the Mediterranean\, where illegal fishing is decimating 
+ their populations. In Greece\, a passionate frontline led by Sea Shepherd 
+ Global\, is fighting back! Working alongside local fishermen\, scientists\
+ , and authorities\, they haul thousands of illegal traps from the sea prov
+ iding what may be the last stand for octopuses in the region. With every l
+ ife saved\, a fragile hope remains.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/before-the-last-octop
+ us
+END:VEVENT
+END:VCALENDAR

@@ -13,12 +13,9 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import yaml from "js-yaml";
-import {
-	isValidTimeZone,
-	PROJECT_ROOT,
-	requireEnv,
-	SOURCES_ROOT,
-} from "./common.ts";
+import { isValidTimeZone } from "./config/city.js";
+import { requireEnv } from "./config/env.js";
+import { PROJECT_ROOT, SOURCES_ROOT } from "./config/paths.js";
 
 const CITY_NAME = requireEnv("CITY_NAME");
 const CITY_KEY = requireEnv("CITY_KEY");

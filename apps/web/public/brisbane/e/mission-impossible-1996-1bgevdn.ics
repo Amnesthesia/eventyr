@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mission: Impossible (1996)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1bgevdn@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T190000
+DTEND;TZID=Australia/Brisbane:20261002T210000
+SUMMARY:Mission: Impossible (1996)
+DESCRIPTION:Classic screening. DE PALMAGEDDON at Tower Cinemas: Fri Oct 2 B
+ ased on the hit T.V. series. Jim Phelps was sent to Prague for a mission t
+ o prevent the theft of classified material. His wife Claire and his truste
+ d partner Ethan Hunt were members of Phelps' team. Unfortunately\, somethi
+ ng went horribly wrong and the mission failed\, leaving Ethan Hunt the lon
+ e survivor. After he reported the failed mission\, Kettridge the head of t
+ he agency suspects Ethan of being the culprit for the failed mission. Now\
+ , Ethan uses unorthodox methods (Which includes the aid of an arms dealer 
+ going by the name "Max") to try to find who set him up and to clear his na
+ me.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/mission-impossible
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bollywood fitness
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nh3xh0@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T091500
+DTEND;TZID=Australia/Brisbane:20260930T101500
+SUMMARY:Bollywood fitness
+DESCRIPTION:Bollywood-inspired dance fitness class suitable for all abiliti
+ es\, where we laugh\, move and have fun with simple\, enjoyable dance step
+ s. This is a GOLD event suitable for seniors.
+LOCATION:Twilight Street Park\, Kenmore\, Twilight Street Park\, 103 Sunset
+  Road\, Kenmore
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20428586
+ 0
+END:VEVENT
+END:VCALENDAR

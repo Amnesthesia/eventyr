@@ -20,18 +20,15 @@
 
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { isSameSite, normaliseHost } from "@dothingslol/core/shared";
 import {
-	adapterRawDir,
-	DATA_ROOT,
-	isSameSite,
 	loadCityConfig,
 	loadYieldLedger,
-	normaliseHost,
 	SOURCE_TIERS,
-	SOURCES_ROOT,
 	type SourceEntry,
 	type SourceTier,
-} from "../common.ts";
+} from "../config/city.js";
+import { adapterRawDir, DATA_ROOT, SOURCES_ROOT } from "../config/paths.js";
 
 /** Mirrors the rows probe.ts appends to results.jsonl. Declared structurally
  * rather than imported because probe.ts is a CLI with top-level side effects;

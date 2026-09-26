@@ -35,7 +35,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { DATA_ROOT } from "./common.ts";
+import { DATA_ROOT } from "./config/paths.js";
 
 const ENDPOINT = "https://maps.googleapis.com/maps/api/geocode/json";
 /** Concurrent geocode requests. The quota is generous; this is politeness. */

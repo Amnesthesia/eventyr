@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Werewolf - Brisbane Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1tt8n8c@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260927
+SUMMARY:Werewolf - Brisbane Festival
+DESCRIPTION:
+LOCATION:WeekendNotes Brisbane
+URL:https://www.weekendnotes.com/werewolf-brisbane-festival/
+END:VEVENT
+END:VCALENDAR

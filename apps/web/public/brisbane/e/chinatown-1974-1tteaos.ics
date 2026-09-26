@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Chinatown (1974)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1tteaos@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T193000
+DTEND;TZID=Australia/Brisbane:20260926T213000
+SUMMARY:Chinatown (1974)
+DESCRIPTION:Classic screening. Regal Graceville: Sat 26 September. New Farm
+  Cinemas: Sun 27 September. In this seminal noir from 1975\, Jack Nicholso
+ n is unforgettable as private eye Jake Gittes\, living off the murky moral
+  climate of sunbaked pre-war Southern California. Hired by a beautiful soc
+ ialite (Faye Dunaway) to investigate her husband’s extra-marital affair\
+ , Gittes is swept into a maelstrom of double dealings and deadly deceits a
+ s he uncovers a web of personal and political scandals that come crashing 
+ together in one unforgettable night.
+LOCATION:Regal Twin Cinema\, 381 Honour Ave\, Graceville
+URL:https://www.fivestarcinemas.com.au/regal/movie/chinatown
+END:VEVENT
+END:VCALENDAR

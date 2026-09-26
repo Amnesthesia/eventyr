@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pilates
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1g4pfwv@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T173000
+DTEND;TZID=Australia/Brisbane:20260928T183000
+SUMMARY:Pilates
+DESCRIPTION:Pilates helps you strengthen and stretch simultaneously through
+  core-based exercises. Join anytime.
+LOCATION:Grinstead Park\, Alderley\, Grinstead Park\, 130 Shand Street\, Al
+ derley
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=204286611
+END:VEVENT
+END:VCALENDAR

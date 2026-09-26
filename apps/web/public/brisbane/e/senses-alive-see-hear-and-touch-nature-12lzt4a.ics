@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Senses alive: see\, hear and touch nature
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12lzt4a@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T100000
+DTEND;TZID=Australia/Brisbane:20260924T120000
+SUMMARY:Senses alive: see\, hear and touch nature
+DESCRIPTION:Bookings essential. Go for a walk and see the trees\, hear the 
+ birds\, touch the leaves and breathe in the fresh air. Hear some stories a
+ nd songs about the senses\, engage in some creative activities that explor
+ e the textures of the park and play some games that will get you moving. T
+ his is a GOLD'n'Kids event suitable for seniors and young people 3 years a
+ nd over.
+LOCATION:Karawatha Forest Park and Discovery Centre\, Karawatha Forest Park
+  and Discovery Centre\, 149 Acacia Road\, Karawatha
+URL:http://www.bazilgrumble.com/whats%20on/
+END:VEVENT
+END:VCALENDAR

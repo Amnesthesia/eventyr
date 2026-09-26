@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunrise trail experience
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-162agny@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T060000
+DTEND;TZID=Australia/Brisbane:20260929T070000
+SUMMARY:Sunrise trail experience
+DESCRIPTION:Kickstart your morning with a guided sunrise hike featuring ene
+ rgising movement and light exercise along a scenic trail. Enjoy simple str
+ ength\, balance\, and mobility activities for all abilities while soaking 
+ up the beauty of nature in a refreshing\, uplifting setting.
+LOCATION:Mount Gravatt Outlook Reserve\, Mount Gravatt\, Mount Gravatt Outl
+ ook Reserve\, 185 Shire Road\, Mount Gravatt
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=205144491
+END:VEVENT
+END:VCALENDAR

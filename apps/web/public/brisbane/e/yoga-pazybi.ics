@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-pazybi@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T163000
+DTEND;TZID=Australia/Brisbane:20261001T173000
+SUMMARY:Yoga
+DESCRIPTION:Bookings essential. Focus on a range of movements to relax the 
+ mind and body. Stretching\, breathing\, strength and balance exercises are
+  included by incorporating standing poses and mat work into the session.
+LOCATION:Upper Kedron Hall\, Upper Kedron\, Upper Kedron Hall\, 78 Cedar Cr
+ eek Road\, Upper Kedron
+URL:https://asmy.org.au/upper-kedron/
+END:VEVENT
+END:VCALENDAR

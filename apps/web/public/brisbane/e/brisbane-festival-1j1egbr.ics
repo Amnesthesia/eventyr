@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1j1egbr@dothings
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260928
+SUMMARY:Brisbane Festival
+DESCRIPTION:This year\, the Festival moves with the rhythm of Brisbane itse
+ lf. Inspired by Brisbane being the world’s earliest rising city\, the pr
+ ogram stretches from First Light through to After Dark. Across every corne
+ r of the program — from theatre\, music\, dance\, circus\, and puppetry 
+ to intimate encounters and large-scale spectacles — you will discover Wo
+ rld Premieres\, Australian Exclusives\, and extraordinary artists from Que
+ ensland\, across Australia\, and around the globe. Discover the full 2026 
+ festival program now via the Brisbane Festival website. Brisbane Festival 
+ is an initiative of the Queensland Government and Brisbane City Council.
+LOCATION:Brisbane City Council Creative Events
+URL:https://www.brisbanefestival.com.au/events
+END:VEVENT
+END:VCALENDAR

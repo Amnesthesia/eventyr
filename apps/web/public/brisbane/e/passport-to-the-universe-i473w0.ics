@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Passport to the Universe
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-i473w0@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T120000
+DTEND;TZID=Australia/Brisbane:20260929T124500
+SUMMARY:Passport to the Universe
+DESCRIPTION:Get your passport for a thrilling journey through the Solar Sys
+ tem\, out of the Milky Way Galaxy and to the edge of the observable univer
+ se\, returning home via a black hole. Narrated by Tom Hanks. Session concl
+ udes with a virtual tour of the Brisbane night sky. Passport to the Univer
+ se is suitable for ages 8 and over. For younger children\, we recommend Pe
+ rfect Little Planet or Tycho Goes to Mars . Passport to the Universe was d
+ eveloped by the American Museum of Natural History\, New York in collabora
+ tion with the National Aeronautics and Space Administration (NASA). Major 
+ support for new version provided by the California Academy of Sciences\, S
+ an Francisco.
+LOCATION:Sir Thomas Brisbane Planetarium\, Mt Coot-tha\, Sir Thomas Brisban
+ e Planetarium\, 152 Mt Coot-tha Road\, Mt Coot-tha
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20841795
+ 5
+END:VEVENT
+END:VCALENDAR

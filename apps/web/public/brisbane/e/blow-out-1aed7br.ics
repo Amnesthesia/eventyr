@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Blow Out
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1aed7br@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T140000
+DTEND;TZID=Australia/Brisbane:20261004T160000
+SUMMARY:Blow Out
+DESCRIPTION:Classic screening. DE PALMAGEDDON at Tower Cinemas: Sun Oct 4 W
+ hile recording sound effects for a slasher flick\, Jack Terry stumbles upo
+ n a real-life horror: a car careening off a bridge and into a river. Jack 
+ jumps into the water and fishes out Sally from the car\, but the other pas
+ senger is already dead — a governor intending to run for president. As J
+ ack does some investigating of his tapes\, and starts a perilous romance w
+ ith Sally\, he enters a tangled web of conspiracy that might leave him dea
+ d.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/blow-out
+END:VEVENT
+END:VCALENDAR

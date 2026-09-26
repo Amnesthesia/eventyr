@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bollywood fitness
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1bl2ibt@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T100000
+DTEND;TZID=Australia/Brisbane:20260928T110000
+SUMMARY:Bollywood fitness
+DESCRIPTION:Booking essential. Come along to a Bollywood inspired dance fit
+ ness class suitable for all abilities. Have a laugh\, move and have fun wi
+ th simple\, enjoyable dance steps together. This is a GOLD event suitable 
+ for seniors.
+LOCATION:Sherwood Neighbourhood Centre\, Sherwood\, Sherwood Neighbourhood 
+ Centre\, 38 Thallon Street\, Sherwood
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20447471
+ 5
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12ho1jg@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T073000
+DTEND;TZID=Australia/Brisbane:20261003T083000
+SUMMARY:Yoga
+DESCRIPTION:Focus on a range of movements to relax the mind and body. Stret
+ ching\, breathing\, strength and balance exercises are included by incorpo
+ rating standing poses and mat work into the session.
+LOCATION:Glindemann Park\, Holland Park West\, Glindemann Park\, 1208 Logan
+  Road\, Holland Park West
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=204715193
+END:VEVENT
+END:VCALENDAR

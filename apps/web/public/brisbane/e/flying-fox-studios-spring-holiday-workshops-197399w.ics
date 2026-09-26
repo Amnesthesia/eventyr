@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Flying Fox Studios Spring Holiday Workshops
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-197399w@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260926
+SUMMARY:Flying Fox Studios Spring Holiday Workshops
+DESCRIPTION:Hands-on creative workshops focused on art and maker projects d
+ esigned to foster skill-building in a supportive studio environment.
+LOCATION:Flying Fox Studios\, Everton Park
+URL:https://flyingfoxstudios.com.au
+END:VEVENT
+END:VCALENDAR

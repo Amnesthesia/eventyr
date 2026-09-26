@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Warrajamba
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1dpd9ow@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T100000
+DTEND;TZID=Australia/Brisbane:20260926T170000
+SUMMARY:Warrajamba
+DESCRIPTION:Follow the mermaid in the bay. Dive into story\, culture and ha
+ nds-on creativity with our latest Artist in Residence\, Quandamooka artist
+  Delvene Cockatoo-Collins. Journey alongside Delvene to the shores of Minj
+ erribah and discover the ancestral story of Warrajamba\, the mermaid\, a l
+ iving cultural legacy that Delvene continues to explore as she searches fo
+ r its lost ending. Get hands-on and create your own mermaid or dugong usin
+ g artist-designed stamps\, connecting with the stories of Warrajamba and Y
+ ungong\, the dugong. Discover Delvene’s powerful sculptural work made fr
+ om materials gathered from Country - yungair/yungaire (freshwater reed)\, 
+ talwalpin (beach hibiscus cotton tree)\, and quampie shell. Come and be im
+ mersed in a space that celebrates care for land\, sea and story. MoB’s A
+ rtist in Residence program is supported by Tim Fairfax AC. The Creative Sp
+ ace is proudly supported by Major Partner Brisbane Airport and generously 
+ supported by Ian and Cass George\, and Holly and John Livingstone. Warraja
+ mba is supported by the Queensland Government through Arts Queensland. Mus
+ eum of Brisbane is Brisbane City Council’s leading history and art museu
+ m where you can experience our city’s vibrant culture.
+LOCATION:Museum of Brisbane\, Brisbane City\, Museum of Brisbane\, Brisbane
+  City Hall\, 64 Adelaide Street\, Brisbane City
+URL:https://www.museumofbrisbane.com.au/whats-on/warrajamba/
+END:VEVENT
+END:VCALENDAR

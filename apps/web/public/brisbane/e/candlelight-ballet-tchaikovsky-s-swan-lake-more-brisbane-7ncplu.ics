@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Candlelight Ballet: Tchaikovsky's Swan Lake & More - Brisbane
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-7ncplu@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T183000
+DTEND;TZID=Australia/Brisbane:20260925T203000
+SUMMARY:Candlelight Ballet: Tchaikovsky's Swan Lake & More - Brisbane
+DESCRIPTION:Saint John's Anglican Cathedral is hosting this Candlelight Bal
+ let: Tchaikovsky's Swan Lake & More in Brisbane! Get your concert tickets 
+ today!
+LOCATION:Saint John's Anglican Cathedral\, 373 Ann Street\, Brisbane City\,
+  4000\, Brisbane\, AU\, 373 Ann St\, Brisbane City QLD 4000\, Australia\, 
+ Brisbane\, QL
+URL:https://allevents.in/brisbane/candlelight-ballet-tchaikovskys-swan-lake
+ -and-more-brisbane/200030693410615
+END:VEVENT
+END:VCALENDAR

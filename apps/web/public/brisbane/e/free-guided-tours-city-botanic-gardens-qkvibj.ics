@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Free guided tours - City Botanic Gardens
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-qkvibj@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T110000
+DTEND;TZID=Australia/Brisbane:20261002T140000
+SUMMARY:Free guided tours - City Botanic Gardens
+DESCRIPTION:Take a free volunteer guided walk to learn about the plants and
+  features at the City Botanic Gardens. Our volunteer guides all have a lov
+ e for Brisbane’s botanic gardens and a desire to share their passion and
+  knowledge with visitors. Walking tours for individuals or small groups (n
+ o more than ten people) are free and do not require a booking. Have a larg
+ er group? Find out more about booking walks for groups 10 or more in size.
+  Walk times Daily departures at 11am and 1pm\, Monday to Saturday. Walks l
+ ast about one hour and are taken at a gentle pace. Meeting point: City Bot
+ anic Gardens Information Kiosk (next to the Queensland University of Techn
+ ology’s Main Drive pathway). Note: Walks may be subject to environmental
+  conditions and guide capacity on the day.
+LOCATION:City Botanic Gardens - Information Kiosk\, Brisbane City\, City Bo
+ tanic Gardens - Information Kiosk\, Main Drive\, Brisbane City
+URL:https://www.brisbane.qld.gov.au/parks-and-recreation/botanic-gardens/ci
+ ty-botanic-gardens#visit
+END:VEVENT
+END:VCALENDAR

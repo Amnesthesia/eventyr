@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:ESCAPE
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3lfs08@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260929
+SUMMARY:ESCAPE
+DESCRIPTION:This is a show that will leave you breathless. Visceral and hig
+ h-octane\, ESCAPE blends complex\, moving architectural structures with mu
+ lti-talented performers to create a blood-pumping and emotional multimedia
+  experience. Along with DIAVOLO’s signature athletic movement aesthetic\
+ , ESCAPE features a collection of the company’s most famous architectura
+ l structures. Each evokes a story unique to its design\, echoing themes of
+  exploration\, danger\, fear\, survival\, resilience\, and connection\, al
+ l brought to life through a soundtrack spanning decades and genres\, from 
+ pop and EDM to rock. DIAVOLO | Architecture in Motion® productions explor
+ e innovation and celebrate the complexity of the human condition with an u
+ ndefinable blend of dance\, stunt work\, acrobatics\, circus arts\, and pe
+ destrian movement. The work is athletic\, captivating\, and visceral. Bris
+ bane Festival is an initiative of the Queensland Government and Brisbane C
+ ity Council. Discover the full 2026 festival program now via the Brisbane 
+ Festival website.
+LOCATION:Queensland Performing Arts Centre (QPAC)\, South Brisbane\, Queens
+ land Performing Arts Centre\, Cnr Melbourne and Grey Street\, South Brisba
+ ne
+URL:https://www.brisbanefestival.com.au/events/escape
+END:VEVENT
+END:VCALENDAR

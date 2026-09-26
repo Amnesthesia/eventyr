@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Northey Street Organic Farmers Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ws2j6t@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T060000
+DTEND;TZID=Australia/Brisbane:20261004T110000
+SUMMARY:Northey Street Organic Farmers Market
+DESCRIPTION:There are a wide variety of organic fruits\, veg\, microgreens\
+ , grains and seeds\, herbs and spices\, meat\, seafood\, dairy\, bread\, m
+ ilk\, cheese\, eggs\, honey\, pantry items\, vegan food\, ethical gifts\, 
+ health and well-being services\, kids activities\, the City Farm Nursery\,
+  coffee\, tea\, juice\, green smoothies\, kombucha and Chai or Iced Matcha
+  with your scrummy organic breakfast. For more information\, visit the Nor
+ they Street City Farm website .
+LOCATION:Northey Street City Farm\, Northey Street City Farm\, 16 Victoria 
+ Street\, Windsor
+URL:https://www.nscf.org.au/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:German National Day
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ldffo0@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261005
+SUMMARY:German National Day
+DESCRIPTION:German National Day\, marks the reunification of Germany in 199
+ 0 after more than four decades of division. It commemorates the peaceful p
+ ath to unity that followed the fall of the Berlin Wall and remains Germany
+ ’s most important national celebration. In Brisbane\, iconic landmarks w
+ ill shine in the German colours black red and gold to mark the occasion. P
+ lease note: This event is part of Brisbane German Week. For more informati
+ on\, please visit Brisbane German Week Website . This event is proudly sup
+ ported by Brisbane City Council.
+LOCATION:Brisbane City Council Creative Events
+URL:https://www.brisbanegermanweek.com.au/
+END:VEVENT
+END:VCALENDAR

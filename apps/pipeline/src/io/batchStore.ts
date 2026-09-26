@@ -13,7 +13,7 @@ import {
 } from "node:fs";
 import { join } from "node:path";
 import type { BatchStore, StoredBatchJob } from "@dothingslol/llm";
-import { DATA_ROOT } from "../common.ts";
+import { DATA_ROOT } from "../config/paths.js";
 
 export const BATCH_STORE_DIR = join(DATA_ROOT, "_cache", "llm-batches");
 

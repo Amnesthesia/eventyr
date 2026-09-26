@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-19zy54n@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T083000
+DTEND;TZID=Australia/Brisbane:20260929T093000
+SUMMARY:Yoga
+DESCRIPTION:Focus on a range of movements to relax the mind and body. Stret
+ ching\, breathing\, strength and balance exercises are included by incorpo
+ rating standing poses and mat work into the session.
+LOCATION:Twilight Street Park\, Kenmore\, Twilight Street Park\, 103 Sunset
+  Road\, Kenmore
+URL:http://yogaforeverbrisbane@gmail.com/
+END:VEVENT
+END:VCALENDAR

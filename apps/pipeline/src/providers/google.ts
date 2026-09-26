@@ -1,6 +1,6 @@
 import { ask } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
-import { dedupeEvents } from "../common.ts";
+import { dedupeEvents } from "../dedupe.js";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import { BaseProvider, splitIntoBatches } from "./base.ts";
 

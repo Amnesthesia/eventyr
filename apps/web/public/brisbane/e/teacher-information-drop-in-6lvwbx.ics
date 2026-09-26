@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Teacher Information Drop-in
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-6lvwbx@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T130000
+DTEND;TZID=Australia/Brisbane:20260924T160000
+SUMMARY:Teacher Information Drop-in
+DESCRIPTION:Hey teachers & educators! Did you know that Brisbane City Counc
+ il Environment Centres offer School Learning Programs that cater to range 
+ of Learning Areas from Prep-Year 12? If you’d like to learn more\, join 
+ us for a chat during one of our drop-in Teacher Information Sessions. We
+ ’ll run you through our offerings and give you a brief tour of our facil
+ ities. If you have any questions\, send an email .
+LOCATION:Downfall Creek Bushland Centre\, Downfall Creek Bushland Centre\, 
+ 815 Rode Road\, Chermside West
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20635558
+ 4
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Celebrate the Moon Festival in the Valley
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hkfim4@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T120000
+DTEND;TZID=Australia/Brisbane:20260926T203000
+SUMMARY:Celebrate the Moon Festival in the Valley
+DESCRIPTION:One of the most auspicious dates on the Asian calendars\, the M
+ oon Festival (or Mid-Autumn Festival)\, occurs on the date when the moon i
+ s at its fullest. Gather your friends and family for one of the most vibra
+ nt cultural events of the year. On Saturday 26 September\, Fortitude Valle
+ y will come alive with colour\, music and tradition as the Moon Festival r
+ eturns. From spectacular lion and dragon dances to lantern making workshop
+ s and interactive performances\, the Valley is the place to be for an even
+ ing of free entertainment\, food and festivity. Savour authentic Asian din
+ ing at your favourite Valley restaurant and soak up the community spirit t
+ hat makes this celebration unforgettable. Visit the My Valley website for 
+ more information.
+LOCATION:Chinatown Mall\, Fortitude Valley\, Chinatown Mall\, Duncan St\, F
+ ortitude Valley
+URL:https://myvalley.com.au/moon-festival
+END:VEVENT
+END:VCALENDAR

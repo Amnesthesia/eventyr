@@ -8,9 +8,9 @@
 // BaseProvider.buildFormatSystem so an adapter-sourced event scores the same
 // way an AI-search one does.
 
+import { CATEGORIES, TAG_SET, TAGS } from "@dothingslol/core/shared";
 import { askDetailed, parseJsonArray } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
-import { CATEGORIES, TAG_SET, TAGS } from "../common.ts";
 import { isValidCategory } from "./normalise.ts";
 
 export const ANNOTATE_MODEL = "gemini-3.1-flash-lite";

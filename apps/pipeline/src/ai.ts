@@ -50,24 +50,22 @@ import {
 } from "node:fs";
 import { join } from "node:path";
 import {
-	addDays,
 	CATEGORIES,
 	catToSlug,
 	costAmount,
-	DATA_ROOT,
 	eventHash,
 	eventOverlapsRange,
 	eventPath,
 	isoWithOffset,
 	KEY_TO_SLUG,
-	loadCityConfig,
 	meetsScoreFloor,
-	PROJECT_ROOT,
 	SITE_URL,
 	stripForDisplay,
 	toISODate,
-	WEB_PUBLIC_DIR,
-} from "./common.ts";
+} from "@dothingslol/core/shared";
+import { addDays } from "@dothingslol/utils/tz";
+import { loadCityConfig } from "./config/city.js";
+import { DATA_ROOT, PROJECT_ROOT, WEB_PUBLIC_DIR } from "./config/paths.js";
 
 const AI_ROOT = join(WEB_PUBLIC_DIR, "ai");
 export const DAY_FILE_LIMIT = 50 * 1024;

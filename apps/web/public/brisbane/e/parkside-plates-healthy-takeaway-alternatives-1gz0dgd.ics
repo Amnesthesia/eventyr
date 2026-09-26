@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Parkside Plates: Healthy takeaway alternatives
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1gz0dgd@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T160000
+DTEND;TZID=Australia/Brisbane:20260929T173000
+SUMMARY:Parkside Plates: Healthy takeaway alternatives
+DESCRIPTION:Bookings essential. Join us for a fun\, hands-on cooking and nu
+ trition workshop where you'll learn how to recreate your favourite takeawa
+ y meals at home. Take home easy recipes and practical tips for quick\, del
+ icious meals the whole family will enjoy. This is an adult only\, 18+ even
+ t.
+LOCATION:Les Atkinson Park\, Sunnybank\, Les Atkinson Park\, 430 Beenleigh 
+ Road\, Sunnybank
+URL:https://nutritionaustralia.org/services/brisbane-city-council/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Clock Tower Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-khfc16@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T101500
+DTEND;TZID=Australia/Brisbane:20260930T164500
+SUMMARY:Clock Tower Tour
+DESCRIPTION:Discover the hidden secrets of your heritage-listed City Hall b
+ uilding with a guided tour of Brisbane’s iconic Clock Tower. The Clock T
+ ower Tour is a “must do” while in Brisbane! For many years\, City Hall
+ ’s Clock Tower elevated the building to Brisbane’s tallest\, offering 
+ visitors a magnificent 360 degree view of the city around them. Whilst the
+  view has changed significantly over the last 90 years\, the time-honoured
+  tradition of “taking a trip up the tower” happily continues at Museum
+  of Brisbane. The Clock Tower Tour includes a ride in one of Brisbane’s 
+ oldest working cage lifts\, a look behind Australia’s largest analogue c
+ lock faces and time to explore the observation platform that shares a uniq
+ ue perspective of your city. See if you can catch a glimpse of the bells! 
+ Make a booking online today to secure your spot! Spaces are limited and fi
+ ll up quickly. Date & Time 10:15am - 4:45pm Daily\, every 15 minutes Pleas
+ e arrive 15 minutes before your tour.
+LOCATION:Museum of Brisbane\, Brisbane City\, Museum of Brisbane\, Brisbane
+  City Hall\, 64 Adelaide Street\, Brisbane City
+URL:https://www.eventbrite.com.au/e/clock-tower-tours-tickets-869613355957
+END:VEVENT
+END:VCALENDAR

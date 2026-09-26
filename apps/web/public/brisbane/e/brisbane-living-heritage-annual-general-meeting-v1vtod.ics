@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Living Heritage Annual General Meeting
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-v1vtod@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T093000
+DTEND;TZID=Australia/Brisbane:20261001T113000
+SUMMARY:Brisbane Living Heritage Annual General Meeting
+DESCRIPTION:Our Annual General Meeting is coming up on Thursday 1 October 2
+ 026\, at the Brisbane Square Library Meeting Room\, Ground Floor. Members 
+ are invited to arrive from 9.30am\, with the AGM commencing at 10.00am. Pl
+ ease stay afterwards for a cup of tea and a catch-up with fellow members. 
+ Find out more via the Brisbane Living Heritage website .
+LOCATION:Brisbane Square Library\, Brisbane Square Library\, 266 George Str
+ eet\, Brisbane City
+URL:https://www.brisbanelivingheritage.org/whats-on/bah-annual-general-meet
+ ing
+END:VEVENT
+END:VCALENDAR

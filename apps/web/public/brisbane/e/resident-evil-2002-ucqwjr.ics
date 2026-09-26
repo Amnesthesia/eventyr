@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Resident Evil (2002)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ucqwjr@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T183000
+DTEND;TZID=Australia/Brisbane:20260924T203000
+SUMMARY:Resident Evil (2002)
+DESCRIPTION:Classic screening. New Farm Cinemas: Thu 24 September. Join us 
+ for a survival-horror video game adaptation double feature. Screening alon
+ gside Silent Hill (2006). Based on the popular video game\, Milla Jovovich
+  and Michelle Rodriguez star as the leaders of a commando team who must br
+ eak into "the hive\," a vast underground genetics laboratory operated by t
+ he powerful Umbrella Corporation. There\, a deadly virus has been unleashe
+ d\, killing the lab's personnel and resurrecting them as the evil Un-dead.
+  The team has just three hours to shut down the lab's supercomputer and cl
+ ose the facility before the virus threatens to overrun the Earth.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/resident-evil-2002
+END:VEVENT
+END:VCALENDAR

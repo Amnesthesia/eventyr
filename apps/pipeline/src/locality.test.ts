@@ -1,9 +1,8 @@
 import assert from "node:assert/strict";
-import { existsSync, rmSync } from "node:fs";
+import { existsSync, mkdtempSync, rmSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
-import { mkdtempSync } from "node:fs";
-import { tmpdir } from "node:os";
 
 const tempDir = mkdtempSync(join(tmpdir(), "eventyr-"));
 process.env.EVENTYR_DATA_ROOT = tempDir;
@@ -16,6 +15,7 @@ const {
 	findForeign,
 	withPlaceCache,
 } = await import("./locality.ts");
+
 import type { CityCentre, Geocoder, Place } from "./locality.ts";
 
 const BRISBANE: CityCentre = { lat: -27.4698, lng: 153.0251, radiusKm: 50 };

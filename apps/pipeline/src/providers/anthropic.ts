@@ -1,5 +1,7 @@
 import { askDetailed } from "@dothingslol/llm";
-import { fmtDate, INTERESTS, llmSourceStrings } from "../common.ts";
+import { INTERESTS } from "../common.js";
+import { llmSourceStrings } from "../config/city.js";
+import { fmtDate } from "../config/week.js";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import {
 	BaseProvider,

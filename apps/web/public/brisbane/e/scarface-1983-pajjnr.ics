@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Scarface (1983)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-pajjnr@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T190000
+DTEND;TZID=Australia/Brisbane:20261001T210000
+SUMMARY:Scarface (1983)
+DESCRIPTION:Classic screening. DE PALMAGEDDON at Tower Cinemas: Screens Thu
+ rsday 1st October. After getting a green card in exchange for assassinatin
+ g a Cuban government official\, Tony Montana (Al Pacino) stakes a claim on
+  the drug trade in Miami. Viciously murdering anyone who stands in his way
+ \, Tony eventually becomes the biggest drug lord in the state\, controllin
+ g nearly all the cocaine that comes through Miami. But increased pressure 
+ from the police\, wars with Colombian drug cartels and his own drug-fueled
+  paranoia serve to fuel the flames of his eventual downfall.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/scarface
+END:VEVENT
+END:VCALENDAR

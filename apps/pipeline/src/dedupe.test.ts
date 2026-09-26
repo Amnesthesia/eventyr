@@ -6,6 +6,7 @@ import {
 	completeness,
 	dedupeEventsSmart,
 	isDistinctiveTitle,
+	isDuplicateEvent,
 	planDedupe,
 } from "./dedupe.ts";
 
@@ -259,4 +260,23 @@ test("an acronym is recognised as the same venue", () => {
 	);
 	// Two unrelated venues must not collide.
 	assert.ok(!acronymMatch("the triffid", "the zoo"));
+});
+
+test("an undated event never matches a dated one", () => {
+	// A stray heading extracted as an event used to swallow every event whose
+	// title it prefixed, on any date.
+	assert.equal(
+		isDuplicateEvent(
+			{ title: "live music", date: "" },
+			{ title: "live music at the triffid", date: "2026-09-03" },
+		),
+		false,
+	);
+	assert.equal(
+		isDuplicateEvent(
+			{ title: "live music", date: "2026-09-03" },
+			{ title: "live music at the triffid", date: "2026-09-03" },
+		),
+		true,
+	);
 });

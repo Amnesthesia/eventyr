@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Free guided tours - Brisbane Botanic Gardens Mt Coot-tha
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1d4fyoy@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T110000
+DTEND;TZID=Australia/Brisbane:20260926T140000
+SUMMARY:Free guided tours - Brisbane Botanic Gardens Mt Coot-tha
+DESCRIPTION:Take a free volunteer guided walk to learn about the plants and
+  features at Brisbane Botanic Gardens Mt Coot-tha . Our volunteer guides a
+ ll have a love for Brisbane’s Botanic Gardens and a desire to share thei
+ r passion and knowledge with visitors. Walking tours for individuals and s
+ mall groups (up to ten people) are free and do not require a booking. Have
+  a larger group? Find out more about booking walks for groups 10 or more i
+ n size. Walk times Daily departures at 11am and 1pm\, Monday to Saturday. 
+ Walks last about one hour and are taken at a gentle pace. Meeting point : 
+ Meet at the Mt Coot-tha Visitor Information Centre. Note: Walks may be sub
+ ject to environmental conditions and guide capacity on the day.
+LOCATION:Brisbane Botanic Gardens Mt Coot-tha\, Brisbane Botanic Gardens Mt
+  Coot-tha\, 152 Mt Coot-tha Road\, Toowong
+URL:https://www.brisbane.qld.gov.au/parks-and-recreation/botanic-gardens/br
+ isbane-botanic-gardens-mt-coot-tha
+END:VEVENT
+END:VCALENDAR

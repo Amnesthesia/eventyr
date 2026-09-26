@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pilates
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-as3qg@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T173000
+DTEND;TZID=Australia/Brisbane:20260924T183000
+SUMMARY:Pilates
+DESCRIPTION:Pilates helps you strengthen and stretch simultaneously through
+  core-based exercises. Join anytime.
+LOCATION:Decker Park\, Brighton\, Decker Park\, 18 Twenty-Fifth Avenue\, Br
+ ighton
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=204475622
+END:VEVENT
+END:VCALENDAR

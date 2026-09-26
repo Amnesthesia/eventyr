@@ -34,10 +34,10 @@ import yaml from "js-yaml";
 import {
 	loadCityConfig,
 	SOURCE_TIERS,
-	SOURCES_ROOT,
 	type SourceEntry,
 	type SourceTier,
-} from "../common.ts";
+} from "../config/city.js";
+import { SOURCES_ROOT } from "../config/paths.js";
 import { installUsageReporting } from "../io/usage.ts";
 
 const args = process.argv.slice(2);

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Teenage Sex and Death at Camp Miasma
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1knebud@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T210000
+DTEND;TZID=Australia/Brisbane:20260928T230000
+SUMMARY:Teenage Sex and Death at Camp Miasma
+DESCRIPTION:Festival screening. New Farm Cinemas. Direct from winning the Q
+ ueer Palm at Cannes\, Hannah Einbinder and Gillian Anderson electrify in t
+ his equally camp and bloody psychosexual thriller from queer maverick Jane
+  Schoenbrun (I Saw the TV Glow). After years of slapdash sequels and wanin
+ g fandom\, the Camp Miasma slasher franchise is handed over to an enthusia
+ stic young director (Einbinder\, Hacks) for resurrection. But when she vis
+ its the original movie’s star (Anderson\, The X-Files)\, a now-reclusive
+  actress shrouded in mystery\, the two women fall into a blood-soaked worl
+ d of desire\, fear\, and delirium.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/teenage-sex-and-death
+ -at-camp-miasma
+END:VEVENT
+END:VCALENDAR

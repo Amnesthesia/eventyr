@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lit up by the bay
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-sjsanu@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T183000
+DTEND;TZID=Australia/Brisbane:20260924T195500
+SUMMARY:Lit up by the bay
+DESCRIPTION:We are a welcoming small group of men and women of varied ages 
+ who meet monthly to discuss the book of the month we have chosen earlier f
+ rom a list of 3 put forward by a member. Our eclectic palette alternates f
+ rom fiction\, non-fiction and a broad definition of classics. We don't tre
+ at the books with great academic rigour\, but do discuss style\, appeal\, 
+ content etc. If you like reading then this is a great group for you.
+LOCATION:Wynnum Library\, Wynnum Library\, 145 Florence Street\, Wynnum
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20524736
+ 9
+END:VEVENT
+END:VCALENDAR

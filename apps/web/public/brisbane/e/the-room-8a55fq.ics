@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Room
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-8a55fq@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T210000
+DTEND;TZID=Australia/Brisbane:20260925T230000
+SUMMARY:The Room
+DESCRIPTION:Classic screening. Last Friday of the month. Written\, directed
+  and starring Tommy Wiseau\, The Room is like no other film you’ve seen.
+  Johnny (Tommy Wiseau) seems to have it all- a beautiful fiancée\, Lisa\,
+  great friends and a job with a promotion in the works. But Lisa\, (Juliet
+ te Danielle) isn’t who she seems. Manipulative and restless\, Lisa sets 
+ her sights on Johnny's best friend Mark (Greg Sestero) and they start a to
+ rrid affair and Johnny’s perfect world starts to crumble. Featured on Ad
+ ult Swim’s Tim and Eric\, Awesome Show\, Great Job! The Room has garnere
+ d a massive cult following\, selling out sessions across the US\, leaving 
+ audiences stunned and wondering “how can so bad\, be so good?” Bring y
+ our plastic spoons!
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/the-room
+END:VEVENT
+END:VCALENDAR

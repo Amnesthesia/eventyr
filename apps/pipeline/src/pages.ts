@@ -1,17 +1,14 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-
 import {
-	DATA_ROOT,
 	eventPath,
 	isTopPick,
 	KEY_TO_SLUG,
-	loadCityConfig,
-	PROJECT_ROOT,
 	SITE_URL,
 	toISODate,
-	WEB_PUBLIC_DIR,
-} from "./common.ts";
+} from "@dothingslol/core/shared";
+import { loadCityConfig } from "./config/city.js";
+import { DATA_ROOT, PROJECT_ROOT, WEB_PUBLIC_DIR } from "./config/paths.js";
 
 const BASE_URL = SITE_URL;
 

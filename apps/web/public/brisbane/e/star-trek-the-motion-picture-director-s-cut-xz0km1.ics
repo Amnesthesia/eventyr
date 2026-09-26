@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Star Trek: The Motion Picture - Director's Cut
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xz0km1@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T170000
+DTEND;TZID=Australia/Brisbane:20260927T190000
+SUMMARY:Star Trek: The Motion Picture - Director's Cut
+DESCRIPTION:Classic screening. New Farm Cinemas\, Regal Graceville & Tower 
+ Cinemas Newcastle Additional language: Klingon. 60th Anniversary Event! Do
+ n't miss this rare opportunity to see the original STAR TREK feature lengt
+ h film on the big screen... where it belongs! A massive alien spacecraft o
+ f enormous power destroys three powerful Klingon cruisers\, entering Feder
+ ation space. Admiral James T. Kirk is ordered to take command of the USS E
+ nterprise for the first time since her historic five-year mission. The Eps
+ ilon IX space station alerts the Federation\, but they are also destroyed 
+ by the alien spacecraft. The only starship in range is the Enterprise\, af
+ ter undergoing a major overhaul at Spacedock on Earth. Kirk rounds up the 
+ rest of his crew\, and acquires some new members\, and sets off to interce
+ pt the alien spacecraft. However\, it has been three years since Kirk last
+  commanded the Enterprise - is he up to the task of saving Earth?
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/star-trek-the-motion-
+ picture-directors-cut
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mindful Art Mornings
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-me10jf@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T073000
+DTEND;TZID=Australia/Brisbane:20260930T083000
+SUMMARY:Mindful Art Mornings
+DESCRIPTION:Start your day with intention at Museum of Brisbane. Mindful Ar
+ t Morning invites early risers to the Museum before opening hours for a ge
+ ntle\, guided moment of pause. Within the calm of the gallery\, this rotat
+ ing program offers an artist-led mindful experience designed to help you r
+ eset\, reconnect and ease into the day ahead. After the session\, linger o
+ ver a light morning tea\, with space for quiet conversation and reflection
+ . MoB is more than a museum - it is a place for the people\, a portal to o
+ ur past\, and a mirror to contemporary life. Make Mindful Art Mornings you
+ r restorative midweek ritual in the heart of the city. For individual sess
+ ion details\, please visit the MoB website. Presented by Museum of Brisban
+ e in association with Brisbane Festival. Museum of Brisbane is Brisbane Ci
+ ty Council’s leading history and art museum\, where you can experience o
+ ur city’s vibrant culture.
+LOCATION:Museum of Brisbane\, Brisbane City\, Museum of Brisbane\, Brisbane
+  City Hall\, 64 Adelaide Street\, Brisbane City
+URL:https://museumofbrisbane.t.qtix.com.au/events/019eaeb1-4087-f11b-0c69-c
+ da5244fec29
+END:VEVENT
+END:VCALENDAR

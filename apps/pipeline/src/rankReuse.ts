@@ -3,7 +3,7 @@
 // requireEnv("GOOGLE_API_KEY"), the same reason dedupeClassifier.ts is split
 // from dedupe.ts.
 
-import { eventHash } from "./common.ts";
+import { eventHash } from "@dothingslol/core/shared";
 
 type Event = Record<string, unknown>;
 

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Perfect Little Planet
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-hzjwix@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T101500
+DTEND;TZID=Australia/Brisbane:20260928T105000
+SUMMARY:Perfect Little Planet
+DESCRIPTION:Children will love this tour of the Solar System through the ey
+ es of a family of aliens on vacation from another star system. Session con
+ cludes with a virtual tour of the Brisbane night sky. This show contains s
+ ome sudden sound effects\, fast moving scenes and flashing light sequences
+ .
+LOCATION:Sir Thomas Brisbane Planetarium\, Mt Coot-tha\, Sir Thomas Brisban
+ e Planetarium\, 152 Mt Coot-tha Road\, Mt Coot-tha
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20841791
+ 4
+END:VEVENT
+END:VCALENDAR

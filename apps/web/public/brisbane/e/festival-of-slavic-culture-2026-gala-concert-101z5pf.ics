@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Festival of Slavic Culture 2026 - Gala-concert
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-101z5pf@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T130000
+DTEND;TZID=Australia/Brisbane:20260926T160000
+SUMMARY:Festival of Slavic Culture 2026 - Gala-concert
+DESCRIPTION:Enjoy an afternoon of vibrant music and dance at the Gala Conce
+ rt\, featuring talented performers and community groups celebrating Slavic
+  culture and beyond. Experience a lively mix of traditional and contempora
+ ry performances\, and enjoy a range of authentic Slavic foods available fo
+ r purchase. Location: Queensland Multicultural Centre\, 102 Main Street\, 
+ Kangaroo Point This event is proudly supported by Brisbane City Council.
+LOCATION:Brisbane City Council Creative Events
+URL:https://www.trumba.com/calendars/LIVE?eventid=204315895
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Dark Side of the Moon
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1cdtq4i@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T150000
+DTEND;TZID=Australia/Brisbane:20260926T154500
+SUMMARY:The Dark Side of the Moon
+DESCRIPTION:Experience Pink Floyd's iconic album with this immersive and al
+ l-encompassing surround sound and visual treat. This show features strobe 
+ effects\, mature themes and explicit language. Not recommended for childre
+ n.
+LOCATION:Sir Thomas Brisbane Planetarium\, Mt Coot-tha\, Sir Thomas Brisban
+ e Planetarium\, 152 Mt Coot-tha Road\, Mt Coot-tha
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20841800
+ 4
+END:VEVENT
+END:VCALENDAR

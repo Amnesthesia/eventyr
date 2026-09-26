@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Karawatha Forest BioBlitz
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kp25n6@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T070000
+DTEND;TZID=Australia/Brisbane:20260926T170000
+SUMMARY:Karawatha Forest BioBlitz
+DESCRIPTION:Join us for a fun and fascinating BioBlitz at Karawatha Forest\
+ , where nature enthusiasts of all ages can help discover and record local 
+ wildlife. Spend the day exploring this beautiful bushland in Karawatha\, u
+ sing the free iNaturalist app to identify fungi\, plants\, insects\, birds
+  and more. Your observations will contribute valuable data to real biodive
+ rsity research. Whether you’re a seasoned naturalist or just curious abo
+ ut your local environment\, this hands-on citizen science event is a great
+  way for the whole family to connect with nature\, don’t miss it! Requir
+ ements on the day: Arrive 10 minutes before starting time to check in with
+  staff at the Environment Centre. All children must be accompanied and dir
+ ectly supervised by an adult. Wear sun-safe clothing\, fully enclosed shoe
+ s\, and bring sunscreen. Bring water and a snack if required as there are 
+ no food outlets on site. Note: This event will go ahead in light rain. Eve
+ nts are subject to weather and environmental conditions and may be cancell
+ ed on the day. Enquiries: For enquiries about this event\, please contact 
+ Dr Wade Hadwen from Griffith University by phoning 07 3735 3987 or email .
+  Meeting point: Karawatha Forest Discovery Centre. Recommended: Download t
+ he app "iNaturalist" before attending.
+LOCATION:Karawatha Forest Park and Discovery Centre\, Karawatha Forest Park
+  and Discovery Centre\, 149 Acacia Road\, Karawatha
+URL:https://events.griffith.edu.au/EARQlD
+END:VEVENT
+END:VCALENDAR

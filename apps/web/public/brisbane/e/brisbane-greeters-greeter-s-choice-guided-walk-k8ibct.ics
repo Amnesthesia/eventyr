@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Greeters - Greeter's Choice guided walk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-k8ibct@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T100000
+DTEND;TZID=Australia/Brisbane:20260929T123000
+SUMMARY:Brisbane Greeters - Greeter's Choice guided walk
+DESCRIPTION:Join one of our welcoming and experienced Brisbane Greeters as 
+ they share their knowledge and passion for Brisbane on this guided walking
+  tour. Explore our booking site to discover a Brisbane Greeters walk to su
+ it you\, whether it be in the CBD or one of our most historically signific
+ ant suburbs. For locals and visitors alike.
+LOCATION:Brisbane City Hall\, Brisbane City\, Brisbane City Hall\, 64 Adela
+ ide Street\, Brisbane City
+URL:https://www.brisbane.qld.gov.au/events-arts-and-culture/art-and-culture
+ /brisbane-greeters-tours
+END:VEVENT
+END:VCALENDAR

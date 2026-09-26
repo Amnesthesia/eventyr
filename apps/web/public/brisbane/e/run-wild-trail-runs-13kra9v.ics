@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Run Wild: Trail Runs
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-13kra9v@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T173000
+DTEND;TZID=Australia/Brisbane:20260924T183000
+SUMMARY:Run Wild: Trail Runs
+DESCRIPTION:Discover the fun of trail running while exploring Brisbane’s 
+ bush tracks and parklands. Build fitness\, balance and endurance as you le
+ arn pacing\, navigating varied terrain and running safely on natural surfa
+ ces. Suitable for beginner to intermediate.
+LOCATION:Seven Hills Bushland Reserve\, Seven Hills\, Seven Hills Bushland 
+ Reserve\, 508 Darcy Road\, Seven Hills
+URL:https://onpacemultisport.com.au/weekly-group-session-timetable/
+END:VEVENT
+END:VCALENDAR

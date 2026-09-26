@@ -1,6 +1,10 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { llmSourceStrings, loadCityConfig, scraperSources } from "../common.ts";
+import {
+	llmSourceStrings,
+	loadCityConfig,
+	scraperSources,
+} from "../config/city.js";
 import { loadSourceRegistry, venueNameFor } from "./registry.ts";
 
 const CITIES = ["brisbane", "goldcoast", "sunnycoast"];

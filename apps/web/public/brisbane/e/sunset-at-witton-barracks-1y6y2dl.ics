@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunset at Witton Barracks
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1y6y2dl@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T160000
+DTEND;TZID=Australia/Brisbane:20261002T200000
+SUMMARY:Sunset at Witton Barracks
+DESCRIPTION:A relaxed community evening filled with great food\, live music
+ \, local stalls\, and drinks as the sun sets over the historic Witton Barr
+ acks. Delicious eats from local vendors\, browse unique market stalls\, fi
+ re pits and drinks from the Good People bar bus. All proceeds go back to W
+ itton barracks social enterprise and community hub. Lots of space to sit\,
+  dogs welcome and a playground for the kids. Conveniently located next to 
+ Indooroopilly Train Station. Perfect Friday evening catch-up with friends\
+ , family\, and the local community (including our local Cr Penny Wolff).
+LOCATION:Witton Barracks Park\, Indooroopilly\, Witton Barracks Park\, 9 La
+ mbert Road\, Indooroopilly
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20573615
+ 0
+END:VEVENT
+END:VCALENDAR

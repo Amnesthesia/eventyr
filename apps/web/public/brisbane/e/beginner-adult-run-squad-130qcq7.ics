@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Beginner adult run squad
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-130qcq7@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T170000
+DTEND;TZID=Australia/Brisbane:20260925T180000
+SUMMARY:Beginner adult run squad
+DESCRIPTION:Come and try running with fully accredited coaches. Learn techn
+ iques that will help you run stronger and smarter. These sessions focus on
+  technique\, speed\, endurance and fun. All levels welcome.
+LOCATION:Murarrie Recreation Ground\, Murarrie\, Murarrie Recreation Ground
+ \, 1238 Wynnum Road\, Murarrie
+URL:https://onpacemultisport.com.au/weekly-group-session-timetable/
+END:VEVENT
+END:VCALENDAR

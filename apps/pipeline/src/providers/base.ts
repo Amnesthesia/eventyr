@@ -1,22 +1,17 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, relative } from "node:path";
+import { CATEGORIES, TAGS, toISODate } from "@dothingslol/core/shared";
 import {
 	type AnthropicModel,
 	type LLMProvider,
 	MODELS,
 	type OpenAIModel,
 } from "@dothingslol/llm";
+import { INTERESTS } from "../common.js";
 import type { CityConfig, LlmSourceName } from "../common.ts";
-import {
-	CATEGORIES,
-	curatedPath,
-	fmtDate,
-	INTERESTS,
-	llmSourceStrings,
-	PROJECT_ROOT,
-	TAGS,
-	toISODate,
-} from "../common.ts";
+import { llmSourceStrings } from "../config/city.js";
+import { curatedPath, PROJECT_ROOT } from "../config/paths.js";
+import { fmtDate } from "../config/week.js";
 
 export interface SearchResult {
 	events: Record<string, unknown>[];

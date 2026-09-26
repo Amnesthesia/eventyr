@@ -7,18 +7,15 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { join } from "node:path";
-
 import {
-	DATA_ROOT,
 	eventHash,
 	eventSlug,
 	KEY_TO_SLUG,
-	loadCityConfig,
 	meetsScoreFloor,
-	PROJECT_ROOT,
-	requireEnv,
-	WEB_PUBLIC_DIR,
-} from "./common.ts";
+} from "@dothingslol/core/shared";
+import { loadCityConfig } from "./config/city.js";
+import { requireEnv } from "./config/env.js";
+import { DATA_ROOT, PROJECT_ROOT, WEB_PUBLIC_DIR } from "./config/paths.js";
 
 const CITY = requireEnv("CITY");
 

@@ -31,12 +31,9 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { ask, parseJsonArray } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
-import {
-	DATA_ROOT,
-	loadCityConfig,
-	requireEnv,
-	SOURCE_TIERS,
-} from "./common.ts";
+import { loadCityConfig, SOURCE_TIERS } from "./config/city.js";
+import { requireEnv } from "./config/env.js";
+import { DATA_ROOT } from "./config/paths.js";
 import { acronymMatch } from "./dedupe.ts";
 import { installUsageReporting } from "./io/usage.ts";
 
