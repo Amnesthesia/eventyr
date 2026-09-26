@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Sculpture Festival 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1r28jmp@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T080000
+DTEND;TZID=Australia/Brisbane:20260924T170000
+SUMMARY:Brisbane Sculpture Festival 2026
+DESCRIPTION:Explore the captivating world of sculpture through Sculptors Qu
+ eensland’s dynamic exhibitions\, showcasing the mastery of local artists
+ . Our curated displays unveil the diverse expressions of form\, material\,
+  and concept\, offering a visual feast for art enthusiasts. Join us on a j
+ ourney of discovery and appreciation\, as we celebrate the power of sculpt
+ ure to inspire\, provoke thought\, and elevate the human experience. Sculp
+ tors Queensland\, Brisbane Sculpture Festival is open during Brisbane Bota
+ nic Gardens Mt Coot-tha opening hours.
+LOCATION:Brisbane Botanic Gardens Mt Coot-tha\, Brisbane Botanic Gardens Mt
+  Coot-tha\, 152 Mt Coot-tha Road\, Toowong
+URL:https://sculptorsqld.org.au/brisbane-sculpture-festival-2/
+END:VEVENT
+END:VCALENDAR

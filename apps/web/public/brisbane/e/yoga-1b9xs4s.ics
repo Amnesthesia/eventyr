@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1b9xs4s@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T073000
+DTEND;TZID=Australia/Brisbane:20261004T083000
+SUMMARY:Yoga
+DESCRIPTION:Focus on a range of movements to relax the mind and body. Stret
+ ching\, breathing\, strength and balance exercises are included by incorpo
+ rating mat work into the session.
+LOCATION:Majestic Park\, Coorparoo\, Majestic Park\, 62 Park Street\, Coorp
+ aroo
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=205108537
+END:VEVENT
+END:VCALENDAR

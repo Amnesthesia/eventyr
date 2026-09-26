@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Prenatal yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ahxps2@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T180000
+DTEND;TZID=Australia/Brisbane:20260929T190000
+SUMMARY:Prenatal yoga
+DESCRIPTION:Bookings essential. Relax\, move and prepare for birth with gen
+ tle prenatal yoga. Build strength\, confidence and connection in a warm\, 
+ supportive environment. No experience needed.
+LOCATION:Toowong Community Meeting Place\, Toowong\, Toowong Community Meet
+ ing Place\, 14 Josling Street\, Toowong
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20536823
+ 7
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,379 @@
+{
+ "statusCode": 200,
+ "data": [
+  {
+   "slug": "10478",
+   "name": "Angelika Book Club - Verity",
+   "synopsis": "<p>Join fellow readers for a special <strong>Book Club Screening of </strong><strong>Verity</strong>, based on the bestselling novel by Colleen Hoover, on <strong>Friday, October 2 at 7pm</strong>.</p>\r\n\r\n<p>Adapted from Colleen Hoover&#39;s best-selling novel, this seductive, psychological thriller follows renowned author Verity Crawford (Anne Hathaway) and Lowen Ashleigh (Dakota Johnson), a struggling writer who relocates to the remote Crawford estate to ghostwrite for Verity. After Lowen uncovers what appears to be Verity&#39;s chilling autobiographical notes, she wrestles with the disturbing and twisted confessions about Verity’s husband Jeremy (Josh Hartnett), and finds it hard to separate fiction from reality, manipulation from attraction, and opportunity from obsession. </p>",
+   "release_date": "2026-10-02",
+   "status": "Coming soon",
+   "website": "",
+   "poster_image": "",
+   "amenities": "",
+   "showdates": [
+    {
+     "date": "2026-10-02",
+     "showtypes": [
+      {
+       "type": "Premium",
+       "amenities": [
+        "Premium"
+       ],
+       "showtimes": [
+        {
+         "id": "54111",
+         "ScheduledFilmId": "HO00004571",
+         "date_time": "2026-10-02T19:00:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "17",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": "43",
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "10539",
+   "name": "Pirates of the Caribbean Trilogy Marathon",
+   "synopsis": "<p>Set sail with Captain Jack Sparrow for an epic Pirates of the Caribbean marathon! Experience three action-packed adventures back to back, filled with pirates, treasure and mayhem.</p>\r\n\r\n<p>Pirates of the Caribbean: The Curse of the Black Pearl:  2.45pm - 5.23pm</p>\r\n\r\n<p>Pirates of the Caribbean: Dead Man’s Chest: 5.30pm - 8.05pm</p>\r\n\r\n<p>Pirates of the Caribbean: At World’s End   8.15pm - 11:08pm</p>",
+   "release_date": "2026-10-31",
+   "status": "Coming soon",
+   "website": "",
+   "poster_image": "",
+   "amenities": "",
+   "showdates": [
+    {
+     "date": "2026-10-31",
+     "showtypes": [
+      {
+       "type": "Premium",
+       "amenities": [
+        "Premium"
+       ],
+       "showtimes": [
+        {
+         "id": "55512",
+         "ScheduledFilmId": "HO00004615",
+         "date_time": "2026-10-31T14:45:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "108",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": "113",
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "10436",
+   "name": "Avengers: Doomsday",
+   "synopsis": "<p>In “Avengers: Doomsday,” beloved heroes from three distinct universes will be set on a deadly collision course and face an existential threat unlike anything they’ve ever</p>",
+   "release_date": "2026-12-17",
+   "status": "Coming soon",
+   "website": "",
+   "poster_image": "",
+   "amenities": "",
+   "showdates": [
+    {
+     "date": "2026-12-16",
+     "showtypes": [
+      {
+       "type": "Premium",
+       "amenities": [
+        "Premium"
+       ],
+       "showtimes": [
+        {
+         "id": "56224",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-16T18:00:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "97",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56226",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-16T20:00:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "41",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        }
+       ]
+      },
+      {
+       "type": "Soho",
+       "amenities": [
+        "Soho"
+       ],
+       "showtimes": [
+        {
+         "id": "56223",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-16T19:00:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "18",
+         "enabled": true,
+         "caption": 1,
+         "type": "Soho",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56234",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-16T21:30:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "32",
+         "enabled": true,
+         "caption": 1,
+         "type": "Soho",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "date": "2026-12-17",
+     "showtypes": [
+      {
+       "type": "Premium",
+       "amenities": [
+        "Premium"
+       ],
+       "showtimes": [
+        {
+         "id": "56035",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T10:00:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "110",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56045",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T11:00:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "42",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56038",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T14:00:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "44",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56039",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T17:45:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "44",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56040",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T19:30:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "43",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56032",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T20:15:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "111",
+         "enabled": true,
+         "caption": 1,
+         "type": "Premium",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        }
+       ]
+      },
+      {
+       "type": "Soho",
+       "amenities": [
+        "Soho"
+       ],
+       "showtimes": [
+        {
+         "id": "56052",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T11:30:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "40",
+         "enabled": true,
+         "caption": 1,
+         "type": "Soho",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56055",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T13:00:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "32",
+         "enabled": true,
+         "caption": 1,
+         "type": "Soho",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56051",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T15:15:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "40",
+         "enabled": true,
+         "caption": 1,
+         "type": "Soho",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56054",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T16:45:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "32",
+         "enabled": true,
+         "caption": 1,
+         "type": "Soho",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56050",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T19:00:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "39",
+         "enabled": true,
+         "caption": 1,
+         "type": "Soho",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        },
+        {
+         "id": "56053",
+         "ScheduledFilmId": "HO00004610",
+         "date_time": "2026-12-17T20:45:00+10",
+         "auditorium": "",
+         "reservedSeating": 1,
+         "availableSeats": "32",
+         "enabled": true,
+         "caption": 1,
+         "type": "Soho",
+         "statusCode": "0",
+         "totalNumberOfSeats": 0,
+         "soldout": false,
+         "flag1": "{\"short\":\"REC\",\"Description\":\"Recliner Seating\"}"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

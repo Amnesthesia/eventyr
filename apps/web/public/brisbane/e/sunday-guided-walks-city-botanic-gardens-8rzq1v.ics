@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sunday Guided Walks - City Botanic Gardens
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-8rzq1v@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T110000
+DTEND;TZID=Australia/Brisbane:20260927T130000
+SUMMARY:Sunday Guided Walks - City Botanic Gardens
+DESCRIPTION:Come and explore the magnificent City Botanic Gardens and find 
+ out about what makes the City Botanic Gardens so unique within the Austral
+ ian landscape. Sunday guided walks are led by City Botanic Gardens volunte
+ er guides. Requirements: Wear a hat\, enclosed walking shoes\, and be sure
+  to bring a water bottle and sunscreen. Meeting point: Meet at the Visitor
+  Information Kiosk (next to the Queensland University of Technology's Main
+  Drive pathway). Note: Walks may be subject to environmental conditions an
+ d guide capacity on the day.
+LOCATION:City Botanic Gardens - Information Kiosk\, Brisbane City\, City Bo
+ tanic Gardens - Information Kiosk\, Main Drive\, Brisbane City
+URL:https://www.eventbrite.com.au/e/sunday-guided-walks-city-botanic-garden
+ s-tickets-1976805743192?aff=oddtdtcreator
+END:VEVENT
+END:VCALENDAR

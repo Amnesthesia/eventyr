@@ -1,0 +1,95 @@
+{
+  "city_key": "brisbane",
+  "provider": "google",
+  "tier": "aggregators",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Jazz Night with The Quartet",
+      "datetime": "Fri 25 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-25T19:30:00",
+      "datetime_end_iso": "",
+      "location": "The Zoo, Fortitude Valley",
+      "link": "https://thezoo.example/whats-on/jazz-night",
+      "cost": "AUD 25",
+      "source": "Fixture Aggregator",
+      "description": "Weekly jazz in the front bar with a rotating house band.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Melbourne Design Week Talk",
+      "datetime": "Sat 26 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-26T18:00:00",
+      "datetime_end_iso": "",
+      "location": "Melbourne Museum, Carlton",
+      "link": "https://designweek.example/talks/2026",
+      "cost": "Free",
+      "source": "Fixture Aggregator",
+      "description": "A national aggregator listed this Melbourne talk under Brisbane; the locality check is what should catch it.",
+      "image": "",
+      "category": "Talk / Lecture",
+      "tags": [
+        "design",
+        "talk"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Life Drawing Social",
+      "datetime": "Thu 24 Sep, 6:30 PM",
+      "datetime_iso": "2026-09-24T18:30:00",
+      "datetime_end_iso": "",
+      "location": "Metro Arts, West End",
+      "link": "https://metroarts.example/life-drawing",
+      "cost": "AUD 15",
+      "source": "Fixture Aggregator",
+      "description": "Untutored life drawing with a live model. Bring your own materials.",
+      "image": "",
+      "tags": [
+        "art",
+        "drawing",
+        "creative"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": true
+    },
+    {
+      "title": "Sunday Farmers Market",
+      "datetime": "Sun 27 Sep, 6:00 AM",
+      "datetime_iso": "2026-09-27T06:00:00",
+      "datetime_end_iso": "2026-09-27T12:00:00",
+      "location": "Jan Powers Farmers Markets, Powerhouse",
+      "link": "https://janpowers.example/powerhouse",
+      "cost": "Free",
+      "source": "Fixture Aggregator",
+      "description": "Producers' market on the riverside lawn.",
+      "image": "",
+      "category": "Market / Festival",
+      "tags": [
+        "market",
+        "food",
+        "outdoors"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

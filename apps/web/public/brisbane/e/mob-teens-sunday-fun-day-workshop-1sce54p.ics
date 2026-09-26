@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:MoB Teens: Sunday Fun-day Workshop
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1sce54p@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T140000
+DTEND;TZID=Australia/Brisbane:20260930T160000
+SUMMARY:MoB Teens: Sunday Fun-day Workshop
+DESCRIPTION:Paint\, play and make your mark! A creative and colourful works
+ hop just for teens\, led by Artist in Residence Sunday Jemmott. Join us fo
+ r an afternoon of experimentation – mix paint\, doodles\, scribbles and 
+ collage to create an artwork that’s completely your own. Layer\, splash 
+ and play with texture in a relaxed workshop where there are no rules\, jus
+ t plenty of room to explore. Sunday will share insights into her creative 
+ practice and help guide teens as they bring their ideas to life. Leave wit
+ h a one-of-a-kind artwork and a head full of colourful inspiration! Museum
+  of Brisbane is Brisbane City Council’s leading history and art museum w
+ here you can experience our city’s vibrant culture.
+LOCATION:Museum of Brisbane\, Brisbane City\, Museum of Brisbane\, Brisbane
+  City Hall\, 64 Adelaide Street\, Brisbane City
+URL:https://www.museumofbrisbane.com.au/whats-on/mob-teens-sunday-fun-day-w
+ orkshop/
+END:VEVENT
+END:VCALENDAR

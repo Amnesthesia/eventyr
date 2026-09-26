@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:35mm: Pumpkinhead (1988)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-twmzlj@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T190000
+DTEND;TZID=Australia/Brisbane:20261002T210000
+SUMMARY:35mm: Pumpkinhead (1988)
+DESCRIPTION:35mm Film · Classic screening. New Farm Cinemas. 35mm screenin
+ g: Fri 2 October. When a group of teenagers inadvertently kill his only so
+ n\, Ed Harley seeks the powers of a backwoods witch to bring the child bac
+ k to life. About 35mm: In a world of digital projection and shrinking form
+ ats\, celluloid is becoming rare — and we think that matters. We hunt do
+ wn original 35mm prints — often unseen for years — and put them back w
+ here they belong: on the big screen. This is cinema with depth\, texture\,
+  and impact. The way it was meant to be experienced.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/35mm-pumpkinhead
+END:VEVENT
+END:VCALENDAR

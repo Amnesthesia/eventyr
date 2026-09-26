@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:John Bokor ‘Personal Space’
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1ac7cx3@dothings
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261021
+SUMMARY:John Bokor ‘Personal Space’
+DESCRIPTION:
+LOCATION:Edwina Corlette Gallery
+URL:https://edwinacorlette.com/
+END:VEVENT
+END:VCALENDAR

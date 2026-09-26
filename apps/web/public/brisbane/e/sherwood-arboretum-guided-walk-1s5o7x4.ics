@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sherwood Arboretum guided walk
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1s5o7x4@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T093000
+DTEND;TZID=Australia/Brisbane:20260926T110000
+SUMMARY:Sherwood Arboretum guided walk
+DESCRIPTION:Sherwood Arboretum\, established in 1925\, is Brisbane’s only
+  botanic garden dedicated exclusively to growing Australian native trees. 
+ The Arboretum holds scientific and cultural values with many of the origin
+ al plantings undertaken by prominent citizens of Brisbane. The guided walk
+  will be led by the Volunteer Guides of the Brisbane Botanic Gardens Mt Co
+ ot-tha and the Friends of Sherwood Arboretum. Requirements: Wear a hat\, e
+ nclosed walking shoes\, and be sure to bring a water bottle and sunscreen.
+  Meeting point: Meet at the shelter adjacent to the main carpark off Jolim
+ ont Street\, Sherwood. Age: Open to all ages. Children must be accompanied
+  by an adult. Note : Walks may be subject to environmental conditions and 
+ guide capacity on the day.
+LOCATION:Sherwood Arboretum\, Sherwood\, Sherwood Arboretum\, 87 Jolimont S
+ treet\, Sherwood
+URL:https://www.eventbrite.com.au/e/sherwood-arboretum-guided-walk-tickets-
+ 1976522519061?aff=oddtdtcreator
+END:VEVENT
+END:VCALENDAR

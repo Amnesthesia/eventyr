@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Clueless (1995)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-plbdce@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T161000
+DTEND;TZID=Australia/Brisbane:20261003T181000
+SUMMARY:Clueless (1995)
+DESCRIPTION:Classic screening. Mean Girls' Day screenings. A rich high scho
+ ol student tries to boost a new pupil's popularity\, but reckons without a
+ ffairs of the heart getting in the way.
+LOCATION:Regal Twin Cinema\, 381 Honour Ave\, Graceville
+URL:https://www.fivestarcinemas.com.au/regal/movie/clueless
+END:VEVENT
+END:VCALENDAR

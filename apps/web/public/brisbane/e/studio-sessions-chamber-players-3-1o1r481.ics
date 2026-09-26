@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Studio Sessions: Chamber Players 3
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1o1r481@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T150000
+DTEND;TZID=Australia/Brisbane:20261004T163000
+SUMMARY:Studio Sessions: Chamber Players 3
+DESCRIPTION:Chamber Players is a wonderful opportunity to hear and get to k
+ now the members of the QSO on a more individual level. Enjoy hand-picked c
+ hamber repertoire by a small group of our musicians as they introduce and 
+ share personal connections to each piece while you relax into a delightful
+  Sunday afternoon concert in the QSO home studio. Location: Queensland Sym
+ phony Orchestra Studio\, corner of Grey and Russell Street\, South Brisban
+ e. Queensland Symphony Orchestra is proudly supported by Brisbane City Cou
+ ncil.
+LOCATION:Brisbane City Council Creative Events
+URL:https://qso.com.au/events/2026/studio-sessions-2026/studio-sessions-cha
+ mber-players-3
+END:VEVENT
+END:VCALENDAR

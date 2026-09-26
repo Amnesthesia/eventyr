@@ -1,0 +1,16 @@
+{
+  "fixture": "blocked-shell",
+  "url": "https://example-shell.com.au/whats-on",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": [
+      "extract https://example-shell.com.au/whats-on: JS-reload shell (no content served to this fetcher)"
+    ]
+  },
+  "found": 0,
+  "candidates": [],
+  "events": [],
+  "rejected": [],
+  "fallbackCalls": []
+}

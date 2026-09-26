@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The 39 Steps - Hitchcocktober 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1nki67r@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T183000
+DTEND;TZID=Australia/Brisbane:20261003T203000
+SUMMARY:The 39 Steps - Hitchcocktober 2026
+DESCRIPTION:Hitchcocktober returns to Angelika Cinemas for a season of thri
+ lls and chills\, from the master of suspense Alfred Hitchcock! Richard Han
+ nay is a Canadian visitor to London. At the end of "Mr Memory"'s show in a
+  music hall\, he meets Annabella Smith\, who is running away from secret a
+ gents. He agrees to hide her in his flat\, but she is murdered during the 
+ night. Fearing that he could be accused of the murder\, Hannay goes on the
+  run to break the spy ring.
+LOCATION:Angelika Film Centre South City Square\, Woolloongabba
+URL:https://angelikacinemas.com.au/movies/details/10546
+END:VEVENT
+END:VCALENDAR

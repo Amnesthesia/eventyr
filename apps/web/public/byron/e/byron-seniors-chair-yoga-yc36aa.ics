@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Byron Seniors: Chair Yoga
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:byron-yc36aa@dothings
+DTSTART;TZID=Australia/Sydney:20260908T100000
+DTEND;TZID=Australia/Sydney:20260908T120000
+SUMMARY:Byron Seniors: Chair Yoga
+DESCRIPTION:‍ About the class Stay active\, flexible and relaxed with Cha
+ ir Yoga\, a gentle Hatha practice designed for seniors. Each session blend
+ s mindful movement\, breathwork\, relaxation and short guided meditation. 
+ No experience is needed\, simply come as you are and enjoy friendly\, supp
+ orted practice. Expect improvements in mobility\, balance and overall well
+ being.
+LOCATION:Byron Community Centre
+URL:https://www.byroncentre.com.au/community-events/chair-yoga
+END:VEVENT
+END:VCALENDAR

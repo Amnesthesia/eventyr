@@ -170,7 +170,7 @@ Join local mixed media artist Sue Bradshaw for a hands-on workshop making cyanot
 📆 Tue 3 Feb – Tue 8 Dec
 📍 Study Sunshine Coast events
 💰 See link
-`engineering` `technology` `student`
+`engineering` `technology` `student` `students`
 
 The eVTOL student team – a collaborative effort between the Manufacturing Excellence Forum (Sunshine Coast) Ltd (MEFSC), University of the Sunshine Coast (UniSC),…
 
@@ -236,7 +236,7 @@ Learn practical mindfulness and meditation techniques to help calm a busy mind, 
 📆 Sat 26 Sep, 12:00 PM
 📍 Sunshine Brewery
 💰 See link
-`food` `dining` `beer` `craft`
+`food` `dining` `beer` `craft` `drinks`
 
 The Bovine Technicians are at it again – four hours of learning, cooking, eating 10 different proteins and a few beers to wash it down… These classes sell out quick so be sure to book your tickets early. Get all the info and book your tickets here
 
@@ -264,7 +264,7 @@ Dancers of all levels are invited to a fun day of Scottish country dancing in be
 📆 Thu 5 Feb – Wed 4 Nov
 📍 Study Sunshine Coast events
 💰 See link
-`design` `community` `student`
+`design` `community` `student` `students`
 
 Certificate III in Events…
 
@@ -374,7 +374,7 @@ Free Coaching Every Wednesday commencing at 10am, FREE coaching is provided by o
 📆 Sat 3 Oct – Mon 5 Oct
 📍 Cooroy
 💰 See link
-`nature` `walking` `adventure`
+`nature` `walking` `adventure` `outdoor`
 
 Step into nature and experience one of Queensland's most unique walking events. The Great Noosa Tra
 
@@ -535,7 +535,7 @@ Snake Boss Reptile Show at Kings Beach TavernGet ready for a wild school holiday
 📆 Thu 24 Sep, 3:00 PM
 📍 UniSC Arena, 32 Olympic Way, Sippy Downs, QLD 4556
 💰 See link
-`community` `student`
+`community` `student` `students`
 
 Graduation is the formal process of awarding your degree and marks your successful transition from uni student to qualified professional. To those who've helped you through it's much more than that. For your friends and family, lecturers and tutors, graduation is their time to share your success and show how proud they are of all that you've achieved.
 
@@ -543,7 +543,7 @@ Graduation is the formal process of awarding your degree and marks your successf
 📆 Tue 29 Sep, 3:00 PM
 📍 University of the Sunshine Coast
 💰 See link
-`community` `student`
+`community` `student` `students`
 
 #### [3 Mountain Bike Orienteering Events in one Weekend](https://www.meetup.com/sunshine-coast-orienteering-adventure-meetup-group/events/316343925/)
 📆 Sat 19 Sep, 8:00 AM – Sun 20 Sep
@@ -1353,7 +1353,7 @@ A high-profile exhibition showcasing the finalists of the prestigious National A
 📆 Fri 21 Aug, 10:00 AM – Sun 11 Oct
 📍 Caloundra Regional Gallery Store, Caloundra
 💰 Free
-`ceramics` `art` `exhibition` `free`
+`ceramics` `art` `exhibition` `craft` `free`
 
 A pop-up artisan display featuring ceramic works by Catherine Dinkelmann, exploring themes of belonging and craftsmanship.
 
@@ -1385,7 +1385,7 @@ $26.00 Adult / $23.00 Concession / Special Discount for Noosa Film Society membe
 📆 Sat 29 Aug, 10:00 AM – Sat 26 Sep
 📍 The Little Red Cottage, Maleny
 💰 Free
-`art` `ecology` `nature` `exhibition` `free`
+`art` `ecology` `nature` `exhibition` `environment` `free`
 
 A recurring exhibition exploring the intersection of local ecology and art through the lens of wildflowers. Ideal for those interested in botany, local environment, and creative displays.
 
@@ -1401,7 +1401,7 @@ Celebrate a rising generation of young artists in the Creative Generation exhibi
 📆 Thu 17 Sep – Sun 11 Oct
 📍 Cooroy Butter Factory Arts Centre, 11 MAPLE ST, COOROY
 💰 See link
-`exhibition` `student` `art` `prizes`
+`exhibition` `student` `art` `prizes` `students`
 
 An ArtsNational Noosa sponsored Prize exhibition of artworks by Yrs 10-12 students from the North Coast (South) schools region. This exhibition will take place at the same time as the annual Creative Gen exhibition. Works in ‘ Start Up ” will be for sale and a selection of works will also be shown in the end of year Eclectica Prize. One student will be selected for a $1000 ArtsNational Noosa Sponsored prize.
 
@@ -1425,7 +1425,7 @@ Continuing exhibition of life drawing and portraiture showcasing local artistic 
 📆 Fri 25 Sep, 7:30 PM
 📍 Noosa Arts Theatre
 💰 $15.00
-`musical` `performance`
+`musical` `performance` `theatre` `music`
 
 A local community theatre production of the classic musical, performed by the Noosa Arts Theatre company in an intimate, live stage setting.
 
@@ -1457,7 +1457,7 @@ BATS THEATRE COMPANY PROUDLY PRESENTS - INSPECTOR DRAKE AND THE BLACK WIDOW Imag
 📆 Sat 26 Sep, 2:00 PM
 📍 Noosa Arts Theatre
 💰 $15.00
-`musical` `performance`
+`musical` `performance` `theatre` `music`
 
 A local community theatre production of the classic musical, performed by the Noosa Arts Theatre company in an intimate, live stage setting.
 
@@ -1481,7 +1481,7 @@ A diverse exhibition hosted by the Artists Alliance Australia featuring various 
 📆 Sun 27 Sep, 2:00 PM
 📍 Noosa Arts Theatre
 💰 $15.00
-`musical` `performance`
+`musical` `performance` `theatre` `music`
 
 A local community theatre production of the classic musical, performed by the Noosa Arts Theatre company in an intimate, live stage setting.
 
@@ -1511,7 +1511,7 @@ BATS THEATRE COMPANY PROUDLY PRESENTS - INSPECTOR DRAKE AND THE BLACK WIDOW Imag
 📆 Thu 24 Sep – Sat 26 Sep
 📍 The J Noosa
 💰 See link
-`theatre` `musical` `performance` `youth`
+`theatre` `musical` `performance` `youth` `music`
 
 Grease is the Word, Little Seed Theatre Company, Youth Theatre. The J Theatre, Noosa
 
@@ -1543,7 +1543,7 @@ MICHAEL ST GEORGE + ROOTS N BLOOM Jamaican roots. Reggae. Dub. Spoken word. Cons
 📆 Thu 10 Sep – Sun 27 Sep
 📍 Noosa Arts Theatre, Noosaville · Noosa + North
 💰 See link
-`musical` `performance`
+`musical` `performance` `theatre` `music`
 
 DATESPreview: Thursday 10 September at 7:30pm – all tickets $32Opening night: Friday 11 September at 7:30pmMatinees: 12, 13, 19, 20, 26, 27 September at 2pmEvenings: 18, 25 September at 7:30pm TICKETSAdults $42 | Concessions $35 | Member/Group $32 | U18 $15 GENREMusical SYNOPSISCharles Schulz’s beloved comic comes to life in Clark Gesner’s classic musical, You’re Read More ...
 
@@ -1559,7 +1559,7 @@ A live jazz performance hosted by the local society, focusing on musical appreci
 📆 Sun 20 Sep, 2:00 PM
 📍 Noosa Arts Theatre
 💰 $42
-`musical` `performance` `community` `culture`
+`musical` `performance` `community` `culture` `theatre` `music`
 
 A live theatre production of the classic musical, performed by the local Noosa Arts Theatre community.
 
@@ -1567,7 +1567,7 @@ A live theatre production of the classic musical, performed by the local Noosa A
 📆 Sun 20 Sep, 3:00 PM
 📍 Kings Beach Tavern, Caloundra · Caloundra + Kawana
 💰 See link
-`dub` `reggae` `electronic`
+`dub` `reggae` `electronic` `music`
 
 Salmonella Dub Soundsystem brings Aotearoa Dub Survivor Jungle Parties to Kings Beach for one huge night of heavyweight dub, reggae, drum & bass and electronic music! Expect deep dub, reggae grooves, drum & bass classics and the unmistakable energy that has made Salmonella Dub Soundsystem one of New Zealand's most iconic live acts. Salmonella Dub Soundsystem has been igniting dancefloors across Australasia for more than two decades with massive basslines, live instrumentation and unforgettable performances. Featuring special guest “Riddim Cartel” from New Zealand + local support acts to be announced, don't miss your chance to experience one of the Southern Hemisphere's most influential live dub & electronic acts. Sunday 20 September Kings Beach Tavern – Kings Beach, QLD
 
@@ -1621,7 +1621,7 @@ Full Moon Dance featuring Kingfisha, The Steele Syndicate, The Madtones ft Andy 
 📆 Sun 27 Sep
 📍 Banana Bender
 💰 FREE EVENT
-`music` `live music` `open mic` `youth`
+`music` `live music` `open mic` `youth` `performance`
 
 The Banana Bender is all about backing fresh talent, and this year we’re giving the juniors the entire stage to themselves. Back after a popular demand - Friday 10th July from 3-10pm. Bring your instruments and your cheer squad. Full backline supplied thanks to Mooloolaba Music
 
@@ -1707,7 +1707,7 @@ EMOWAVE AT THE PRESYNCT The eyeliner is back. The anthems never left. Get ready 
 📆 Sat 26 Sep, 7:00 PM
 📍 Imperial Hotel Eumundi, Eumundi
 💰 Free
-`music` `concert` `performance` `free`
+`music` `concert` `performance` `live music` `free`
 
 An atmospheric tribute performance featuring string arrangements of Michael Jackson's hits by candlelight.
 
@@ -1715,7 +1715,7 @@ An atmospheric tribute performance featuring string arrangements of Michael Jack
 📆 Sat 26 Sep, 9:00 PM
 📍 Imperial Hotel Eumundi, Eumundi
 💰 Free
-`music` `concert` `performance` `free`
+`music` `concert` `performance` `live music` `free`
 
 A late-night atmospheric concert featuring melodic tributes to Ed Sheeran and Coldplay in an intimate setting.
 
@@ -1747,7 +1747,7 @@ Friday 2nd October - The most awaited festival of the year is back on the Coast,
 📆 Fri 2 Oct, 6:30 PM
 📍 Norton Music Factory
 💰 See link
-`live music` `concert` `band` `rock`
+`live music` `concert` `band` `rock` `music`
 
 WOODHILL RETURN TO NORTON MUSIC FACTORY Hailing from Cronulla in Sydney, WoodHill have built a reputation as one of Australia’s most exciting live rock acts. Their powerful mix of ’90s grunge influences, driving riffs and modern rock has earned them a loyal following, with packed headline shows and fans who keep coming back for more. .
 
@@ -1775,7 +1775,7 @@ Brit Fest is returning to Noosa! Taking over Villa Noosa once again after a huge
 📆 Sun 20 Sep
 📍 Banana Bender Pub
 💰 FREE EVENT
-`karaoke` `family` `music`
+`karaoke` `family` `music` `singing`
 
 If you’ve been hunting for family karaoke on the coast that doesn’t take itself too seriously, you’ve found it. Beer Garden Belters is your monthly excuse to grab the fam, a mic, butcher a classic, or absolutely nail it - all in the laid-back chaos of the Banana Bender beer garden. Kids, parents, mates… everyone’s welcome
 
@@ -1907,7 +1907,7 @@ Join Us for our Free Live Entertainment from 5.30pm to 8.30pm.
 📆 Sat 26 Sep, 6:00 PM
 📍 Norton Music Factory
 💰 See link
-`live music` `concert` `band` `rock` `tribute`
+`live music` `concert` `band` `rock` `tribute` `music`
 
 High Voltage – The AC/DC Experience returns on Saturday, September 26 , bringing the raw power, blistering guitar solos and iconic anthems that made AC/DC one of the greatest rock bands of all time.
 
@@ -2047,7 +2047,7 @@ Join the legends from Thrifter for the ultimate long-weekend market. Bringing gr
 📆 Fri 18 Sep, 9:00 AM – Thu 1 Oct
 📍 Maleny Community Centre
 💰 See link
-`vintage` `fashion` `market`
+`vintage` `fashion` `market` `shopping`
 
 Look out for some great fashion styles and unique pieces. Vintage Clothing, Accessories, Jewellery, Records & More!
 
@@ -2143,7 +2143,7 @@ September will be a Lunch instead of a Brunch this month ladies as we are headin
 📆 Mon 21 Sep, 6:30 AM
 📍 Coolum Coastal Board Walk, 102 Yandina Coolum Road, Coolum Beach, Coolum Beach
 💰 See link
-`coffee` `drinks` `walking` `community`
+`coffee` `drinks` `walking` `community` `outdoor`
 
 ## About the event Head on down to Coolum Coastal Beach walk for a coffee & a chin wag with Shane and the crew. **\*Location**: open, seated area of the C
 

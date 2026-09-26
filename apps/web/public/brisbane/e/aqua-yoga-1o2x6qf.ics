@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Aqua yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1o2x6qf@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T100000
+DTEND;TZID=Australia/Brisbane:20260925T110000
+SUMMARY:Aqua yoga
+DESCRIPTION:This is a low impact form of exercise that supports the body wh
+ ile still providing function and movement. Many yoga poses that you do in 
+ a class can be adapted for the pool\, sometimes using the pool walls as if
+  it were the studio floor.
+LOCATION:Bellbowrie Pool\, Bellbowrie\, Bellbowrie Pool\, 47 Birkin Road\, 
+ Bellbowrie
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20471388
+ 5
+END:VEVENT
+END:VCALENDAR

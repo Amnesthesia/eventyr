@@ -1,0 +1,41 @@
+---
+import { DATA_ROOT } from "../lib/paths.ts";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import Base from "../layouts/Base.astro";
+import EventApp from "@react/EventApp";
+import type { CityData, CityIndex } from "@dothingslol/core/schema";
+import {
+	byScoreThenSoonest,
+	SLUG_TO_KEY,
+} from "@dothingslol/core/shared";
+
+export function getStaticPaths() {
+	const index: CityIndex = JSON.parse(
+		readFileSync(join(DATA_ROOT, "/index.json"), "utf-8"),
+	);
+
+	return index.cities.map((city) => {
+		const slug =
+			Object.entries(SLUG_TO_KEY).find(([, k]) => k === city.key)?.[0] ??
+			city.key;
+
+		const cityData: CityData = JSON.parse(
+			readFileSync(join(DATA_ROOT, `/${city.key}.json`), "utf-8"),
+		);
+		cityData.events.sort(byScoreThenSoonest);
+
+		return {
+			params: { city: slug },
+			props: { cityData, allCities: index.cities },
+		};
+	});
+}
+
+const { cityData, allCities } = Astro.props;
+const slug = Astro.params.city as string;
+---
+
+<Base cityData={cityData} slug={slug}>
+  <EventApp client:load cityData={cityData} allCities={allCities} />
+</Base>

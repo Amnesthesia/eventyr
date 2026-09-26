@@ -1,0 +1,16 @@
+{
+  "fixture": "blocked-403",
+  "url": "https://example-walled.com.au/whats-on",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": [
+      "extract https://example-walled.com.au/whats-on: HTTP 403"
+    ]
+  },
+  "found": 0,
+  "candidates": [],
+  "events": [],
+  "rejected": [],
+  "fallbackCalls": []
+}

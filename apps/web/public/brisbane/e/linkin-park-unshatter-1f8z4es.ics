@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:LINKIN PARK: UNSHATTER
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1f8z4es@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T184500
+DTEND;TZID=Australia/Brisbane:20260930T204500
+SUMMARY:LINKIN PARK: UNSHATTER
+DESCRIPTION:Premiere screening. New Farm Cinemas and Tower Cinemas Newcastl
+ e. The hardest part of ending is starting again. After a seven-year hiatus
+  following the devastating loss of their beloved bandmate Chester Benningt
+ on\, LINKIN PARK’S remaining members struggle to find their way forward.
+  Their shared history and enduring friendship\, combined with the fresh pe
+ rspective of two new band members spark a renewed creative energy that lea
+ ds them on a transformative journey of artistic reinvention. Following the
+  band from intimate 2022 studio sessions through their explosive FROM ZERO
+  album release and concert in São Paulo\, the film UNSHATTER weaves toget
+ her rare vault footage\, electrifying performances from sold-out shows\, a
+ nd candid interviews with band members and fans—capturing the raw\, hone
+ st story of what it means to start over.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/linkin-park-unshatter
+END:VEVENT
+END:VCALENDAR

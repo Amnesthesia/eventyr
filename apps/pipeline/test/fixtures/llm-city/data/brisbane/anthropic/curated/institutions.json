@@ -1,0 +1,98 @@
+{
+  "city_key": "brisbane",
+  "provider": "anthropic",
+  "tier": "institutions",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "The Quartet: Jazz Night",
+      "datetime": "Fri 25 Sep, 7:30 PM",
+      "datetime_iso": "2026-09-25T19:30:00",
+      "datetime_end_iso": "",
+      "location": "The Zoo, Fortitude Valley",
+      "link": "https://thezoo.example/whats-on/the-quartet",
+      "cost": "AUD 25",
+      "source": "Fixture Institution Search",
+      "description": "The Quartet play two sets of standards and originals.",
+      "image": "",
+      "category": "Concert / Music",
+      "tags": [
+        "music",
+        "live music",
+        "jazz"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Kith and Kin — Archie Moore",
+      "datetime": "Sat 27 Sep 2025 – Sun 18 Oct 2026",
+      "datetime_iso": "2025-09-27T10:00:00",
+      "datetime_end_iso": "2026-10-18",
+      "location": "QAG, Stanley Place, South Bank",
+      "link": "https://qagoma.example/exhibition/kith-and-kin",
+      "cost": "Free",
+      "source": "Fixture Institution Search",
+      "description": "The Golden Lion-winning installation, shown at home.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "exhibition",
+        "gallery",
+        "indigenous"
+      ],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Contemporary Collection Tour",
+      "datetime": "Sat 26 Sep, 11:00 AM",
+      "datetime_iso": "2026-09-26T11:00:00",
+      "datetime_end_iso": "",
+      "location": "Queensland Art Gallery, Stanley Place, South Bank",
+      "link": "https://qagoma.example/tours/contemporary",
+      "cost": "Free",
+      "source": "Fixture Institution Search",
+      "description": "Volunteer-guided tour of the contemporary Australian collection.",
+      "image": "",
+      "category": "Arts / Exhibition",
+      "tags": [
+        "art",
+        "gallery",
+        "tour"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": true
+    },
+    {
+      "title": "Late Night Philosophy: Free Will",
+      "datetime": "Thu 24 Sep, 6:00 PM",
+      "datetime_iso": "2026-09-24T18:00:00",
+      "datetime_end_iso": "",
+      "location": "State Library of Queensland, Stanley Place",
+      "link": "https://slq.example/whats-on/free-will",
+      "cost": "Free",
+      "source": "Fixture Institution Search",
+      "description": "A panel of three philosophers on whether anyone chooses anything.",
+      "image": "",
+      "category": "Talk / Lecture",
+      "tags": [
+        "philosophy",
+        "talk",
+        "panel"
+      ],
+      "social": false,
+      "intellectual": true,
+      "hands_on": false,
+      "creative": false
+    }
+  ]
+}

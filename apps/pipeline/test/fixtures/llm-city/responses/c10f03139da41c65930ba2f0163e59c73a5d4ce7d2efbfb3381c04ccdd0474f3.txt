@@ -1,0 +1,68 @@
+{
+  "id": "resp_fixture",
+  "object": "response",
+  "created_at": 1790000000,
+  "status": "completed",
+  "model": "gpt-5-mini",
+  "output": [
+    {
+      "type": "web_search_call",
+      "id": "ws_fixture_1",
+      "status": "completed",
+      "action": {
+        "type": "search",
+        "query": "Brisbane events this week"
+      }
+    },
+    {
+      "type": "web_search_call",
+      "id": "ws_fixture_2",
+      "status": "completed",
+      "action": {
+        "type": "search",
+        "query": "Fixture Venue what's on"
+      }
+    },
+    {
+      "type": "message",
+      "id": "msg_fixture",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "Philosophy of Time | Wednesday 23 September 2026, 6:30 PM | Fixture Venue, West End | Free | Fixture Venue | http://localhost:48123/events/philosophy-of-time\nFixture Jazz Night | Friday 25 September 2026, 8:00 PM | Fixture Venue, West End | $20 | Fixture Venue | http://localhost:48123/events/jazz-night",
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "output_text": "Philosophy of Time | Wednesday 23 September 2026, 6:30 PM | Fixture Venue, West End | Free | Fixture Venue | http://localhost:48123/events/philosophy-of-time\nFixture Jazz Night | Friday 25 September 2026, 8:00 PM | Fixture Venue, West End | $20 | Fixture Venue | http://localhost:48123/events/jazz-night",
+  "usage": {
+    "input_tokens": 1500,
+    "input_tokens_details": {
+      "cached_tokens": 256
+    },
+    "output_tokens": 240,
+    "output_tokens_details": {
+      "reasoning_tokens": 64
+    },
+    "total_tokens": 1740
+  },
+  "incomplete_details": null,
+  "error": null,
+  "max_tool_calls": 4,
+  "tool_choice": "auto",
+  "tools": [
+    {
+      "type": "web_search",
+      "search_context_size": "low"
+    }
+  ],
+  "reasoning": {
+    "effort": "low"
+  },
+  "text": {
+    "verbosity": "low"
+  }
+}

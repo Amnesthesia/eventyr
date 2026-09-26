@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane German Week
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-obfqci@dothings
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261005
+SUMMARY:Brisbane German Week
+DESCRIPTION:Brisbane German Week is an 18 day celebration of German culture
+ \, ideas and connections across Brisbane. From film\, fashion and food to 
+ business\, science and tradition\, the festival offers something for every
+ one and showcases the many links between Brisbane and Germany. Discover a 
+ side of Germany you may not expect\, meet new people and choose your Germa
+ ny. Please note: This festival takes place over multiple days and across a
+  variety of venues. For more information please visit Brisbane German Week
+  Website . This event is proudly supported by Brisbane City Council.
+LOCATION:Brisbane City Council Creative Events
+URL:https://brisbanegermanweek.com.au/
+END:VEVENT
+END:VCALENDAR

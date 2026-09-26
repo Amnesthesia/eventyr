@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Riverside at the Gardens Market
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1pplrob@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T080000
+DTEND;TZID=Australia/Brisbane:20261004T150000
+SUMMARY:Riverside at the Gardens Market
+DESCRIPTION:Nestled in the beautiful City Botanic Gardens\, our market is t
+ he perfect Sunday escape. Discover a vibrant mix of arts and crafts stalls
+ \, sip on freshly brewed coffee\, and treat yourself to delicious croissan
+ ts\, pancakes\, and a wide variety of international food delights. Spend t
+ he day wandering through the market and gardens\, relaxing in the park\, a
+ nd enjoying live music while the kids play. It’s the perfect way to unwi
+ nd and soak up the Sunday atmosphere. Brisbane’s original craft market 
+ – celebrating 40 years! Open every Sunday – 8am–3pm. For more inform
+ ation\, visit the Riverside Market website.
+LOCATION:City Botanic Gardens\, Brisbane City\, City Botanic Gardens\, 147 
+ Alice Street\, Brisbane City
+URL:https://queenslandmarkets.com.au/riverside-markets/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane City Markets
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-et1ppn@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T080000
+DTEND;TZID=Australia/Brisbane:20260930T180000
+SUMMARY:Brisbane City Markets
+DESCRIPTION:Come and enjoy the city markets in Reddacliff Place at the top 
+ of Queen Street Mall which remains a favourite for city workers\, local re
+ sidents and tourists alike. You’ll never be short for choice – whether
+  it be delicious market eats\, the freshest of farm direct goods\, hand ma
+ de provisions\, gifts or more. Visit the Goodwill Projects website for mor
+ e information.
+LOCATION:Queen Street Mall\, Brisbane City\, Queen Street Mall\, Queen Stre
+ et\, Brisbane City
+URL:http://goodwillprojects.com.au/markets/brisbane-city/
+END:VEVENT
+END:VCALENDAR

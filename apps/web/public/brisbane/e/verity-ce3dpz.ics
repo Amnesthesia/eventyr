@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Verity
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-ce3dpz@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T190000
+DTEND;TZID=Australia/Brisbane:20260930T210000
+SUMMARY:Verity
+DESCRIPTION:Sneak Peek screening. Ladies Night Preview Screenings: Wed 30 S
+ eptember. Adapted from Colleen Hoover's best-selling novel\, this seductiv
+ e\, psychological thriller follows renowned author Verity Crawford (Anne H
+ athaway) and Lowen Ashleigh (Dakota Johnson)\, a struggling writer who rel
+ ocates to the remote Crawford estate to ghostwrite for Verity. After Lowen
+  uncovers what appears to be Verity's chilling autobiographical notes\, sh
+ e wrestles with the disturbing and twisted confessions about Verity’s hu
+ sband Jeremy (Josh Hartnett)\, and finds it hard to separate fiction from 
+ reality\, manipulation from attraction\, and opportunity from obsession.
+LOCATION:Red Hill Cinemas\, 2 Enoggera Tce\, Red Hill
+URL:https://www.fivestarcinemas.com.au/redhill/movie/verity
+END:VEVENT
+END:VCALENDAR

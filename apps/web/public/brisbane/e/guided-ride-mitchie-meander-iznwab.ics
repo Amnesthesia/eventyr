@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Guided ride - Mitchie Meander
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-iznwab@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T080000
+DTEND;TZID=Australia/Brisbane:20261004T110000
+SUMMARY:Guided ride - Mitchie Meander
+DESCRIPTION:Depart Kalinga Park\, heading west on the scenic Kedron Brook B
+ ikeway. We continue to follow Kedron Brook past Lutwyche\, Stafford and th
+ rough to Teralba Park. An enjoyable ride of 22km return. Presented as part
+  of Council's Cycling Brisbane program.
+LOCATION:Kalinga Park\, Kalinga\, Kalinga Park\, 48 Kalinga Street\, Kaling
+ a
+URL:https://www.eventbrite.com.au/e/guided-ride-mitchie-meander-tickets-199
+ 0758631657?aff=oddtdtcreator
+END:VEVENT
+END:VCALENDAR

@@ -7,13 +7,15 @@
 	},
 	"files": {
 		"includes": [
-			"src/**/*.ts",
-			"src/**/*.tsx",
-			"app/**/*.ts",
-			"app/**/*.tsx",
+			"apps/pipeline/src/**/*.ts",
 			"scripts/**/*.ts",
 			"scripts/**/*.tsx",
-			"workers/**/*.ts"
+			"apps/mcp/src/**/*.ts",
+			"packages/**/*.ts",
+			"apps/web/app/**/*.ts",
+			"apps/web/app/**/*.tsx",
+			"apps/web/src/**/*.ts",
+			"apps/web/scripts/**"
 		]
 	},
 	"formatter": {
@@ -26,6 +28,22 @@
 			"recommended": true
 		}
 	},
+	"overrides": [
+		{
+			"includes": [
+				"packages/core/src/**",
+				"packages/utils/src/**",
+				"!**/*.test.ts"
+			],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noNodejsModules": "error"
+					}
+				}
+			}
+		}
+	],
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "double"

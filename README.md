@@ -36,9 +36,9 @@ pnpm curate             # 3. merge both paths, window-filter, dedupe → data/{c
 pnpm rank               # 4. score 1–10 against INTERESTS
 pnpm geocode            # 5. add a Google Maps search URL per event
 pnpm markdown           # 6. {CITY}.md
-pnpm ical               # 7. public/{city}.ics
-pnpm rss                # 8. public/{slug}/feed.xml
-pnpm pages              # 9. data/index.json + public/sitemap.xml
+pnpm ical               # 7. apps/web/public/{city}.ics
+pnpm rss                # 8. apps/web/public/{slug}/feed.xml
+pnpm pages              # 9. data/index.json + apps/web/public/sitemap.xml
 pnpm build              # 10. astro build
 ```
 
@@ -53,7 +53,7 @@ flowchart TD
 
     subgraph SCRAPE["1 · collect-adapters (scrape)"]
         direction TB
-        F[fetch listing pages] --> X["extract<br/>JSON-LD → embedded JSON → LLM over page text"]
+        F["scrape() · @dothingslol/scraper<br/>fetch listing pages"] --> X["extract<br/>site feed → JSON-LD → embedded JSON → LLM over page text"]
         X --> W[week-filter · dates parsed in code]
         W --> A["annotate (Gemini)<br/>category · tags · vibes<br/>drop ONLY sport / MLM / sales / online / private hire<br/>⚠ does not see INTERESTS"]
     end
@@ -85,7 +85,7 @@ belongs in rank's calibration rules (a score below 4 hides it by default).
 ### Sharing one event
 
 Every event also gets its own pre-rendered page at `/{city}/e/{title-slug}-{hash}` — 643 of them
-today, built by `src/pages/[city]/e/[event].astro` in about a second.
+today, built by `apps/web/src/pages/[city]/e/[event].astro` in about a second.
 
 They exist because a share link is only as good as its unfurl, and WhatsApp, iMessage and Slack run
 no JavaScript: a link that needed the React app to resolve which event was meant would preview as
@@ -96,11 +96,11 @@ object, and it renders in full with JavaScript disabled.
 The share control on a card is an `<a href>` to that page, progressively enhanced: with JavaScript
 it opens the native share sheet, or copies the URL where that does not exist; without it, it is
 just a link. Same for Add to calendar, which builds a single-event `.ics` in the browser
-(`app/utils/ics.ts`).
+(`packages/core/src/ics.ts`, downloaded by `apps/web/app/utils/icsDownload.ts`).
 
-The slug's trailing hash is `eventHash` from `src/shared.ts`, which is also the iCal `UID` and the
+The slug's trailing hash is `eventHash` from `packages/core/src/shared.ts`, which is also the iCal `UID` and the
 RSS `guid` — one identity, so a share URL, a calendar entry and a feed item all name the same
-event. **Its output is frozen** and pinned by `src/shared.test.ts`: changing the basis or the
+event. **Its output is frozen** and pinned by `packages/core/src/shared.test.ts`: changing the basis or the
 algorithm rewrites every UID and guid at once, which makes calendar clients re-add every event and
 feed readers re-notify on all of them.
 
@@ -113,7 +113,7 @@ serves `404.html` with a real 404 status when an event rolls off. The thing to a
 
 **Today through the end of next week.** Past events are never kept — a Wednesday run must not
 resurrect Monday's finished gigs — and next week's are kept deliberately, so a quiet week still has
-something on it. The rule lives in `withinWindow`/`isPast` (`src/adapters/normalise.ts`) and is
+something on it. The rule lives in `withinWindow`/`isPast` (`packages/scraper/src/normalise.ts`) and is
 applied to **both** paths: the scrape pass filters its own output, and `curate.ts` applies the same
 filter to everything it merges. Events with no parsable date are kept, since they cannot be shown
 to be past.
@@ -144,7 +144,7 @@ trusted and never geocoded — that is ~2/3 of locations never sent to the API. 
 handful of events a week from a venue that tours: last measured at 2 of 395 (0.5%), both Opera
 Queensland/QTIX shows in Toowoomba. Widening the gate is one line in `dropOtherCities`.
 
-Three rules keep this from being expensive or destructive (`src/locality.ts`):
+Three rules keep this from being expensive or destructive (`apps/pipeline/src/stages/locality.ts`):
 
 - **Once per distinct location, ever.** The geocoder interface takes a list, so a caller cannot
   make it one request per event, and every answer is cached in `data/{city}/locations.json` — which
@@ -166,8 +166,8 @@ and Toowoomba, Surfers Paradise and Newtown NSW all came back as "Brisbane QLD" 
 
 The site is an installable PWA that runs offline and supports scheduled event notifications on phones:
 
-- **Installable on mobile**: Open in Safari (iOS) and tap **"Add to Home Screen"**, or in Chrome (Android) and tap **"Install App"**. The app runs in standalone display mode with dedicated touch icons (`public/icons/`) and Web App Manifest (`public/manifest.webmanifest`).
-- **Offline support**: `public/sw.js` precaches the app shell and uses a network-first strategy for pages with cache fallback, plus stale-while-revalidate for event data and static assets.
+- **Installable on mobile**: Open in Safari (iOS) and tap **"Add to Home Screen"**, or in Chrome (Android) and tap **"Install App"**. The app runs in standalone display mode with dedicated touch icons (`apps/web/public/icons/`) and Web App Manifest (`apps/web/public/manifest.webmanifest`).
+- **Offline support**: `apps/web/public/sw.js` precaches the app shell and uses a network-first strategy for pages with cache fallback, plus stale-while-revalidate for event data and static assets.
 - **1-hour event reminders**: Bookmarking (saving/starring) an event schedules a notification to fire **1 hour before the event begins** (or 8:00 AM on the day for all-day events). Supported via WICG Notification Triggers (`TimestampTrigger`), Service Worker messages, and foreground timers.
 - **8:00 AM daily morning digest**: Every morning at 8:00 AM, the app sends a digest notification summarizing all bookmarked events scheduled for today. Supported via Periodic Background Sync (`periodicsync`) in installed PWAs and automatic lifecycle checks on resume/open.
 - **Privacy-first & zero-backend**: Bookmarks and reminders are stored locally in the browser (`localStorage` and `IndexedDB`). No push servers, user accounts, or external tracking services are involved.
@@ -245,13 +245,13 @@ The per-source line is built to distinguish a broken source from a quiet one:
 
 ## Extraction strategies
 
-`src/adapters/pageAdapter.ts` tries these in order, cheapest first, per page:
+`packages/scraper/src/pageAdapter.ts` tries these in order, cheapest first, per page:
 
 1. **JSON-LD** (`extract.ts`) — schema.org `Event` nodes. Deterministic and free.
 2. **Embedded hydration JSON** (`embeddedJson.ts`) — `__NEXT_DATA__`, Next.js app-router flight
    data, Nuxt/Remix/SvelteKit state, any `application/json` blob. Recovers client-rendered pages
    whose HTML looks empty. Also deterministic and free.
-3. **LLM over reduced page text** (`llmExtract.ts`) — last resort, capped at 4 calls per page.
+3. **LLM over reduced page text** (`apps/pipeline/src/stages/extract.ts`) — last resort, capped at 4 calls per page.
 
 **Dates are never taken from a model.** Whatever produced the fields, the date text goes through
 `dates.ts` (chrono-node, British locale so `6/10` is 6 October) and anything it cannot parse
@@ -260,7 +260,7 @@ resolved to a concrete day.
 
 ### Fetching
 
-`src/adapters/fetch.ts` honours `robots.txt` for every request (via `robots-parser`, so `*` and
+`packages/scraper/src/fetch.ts` honours `robots.txt` for every request (via `robots-parser`, so `*` and
 `$` patterns and Allow/Disallow precedence are handled per RFC 9309), rate-limits per host, retries
 429/5xx with jittered backoff, and does conditional GETs. It uses `got-scraping` rather than
 `fetch`: many venue sites sit behind Cloudflare, which fingerprints the TLS handshake — measured
@@ -270,7 +270,7 @@ disallows us in `robots.txt`, we do not fetch it.
 
 ## Deduplication
 
-`src/dedupe.ts`, called by `curate.ts` over the merged set from both paths. Three stages, cheapest
+`apps/pipeline/src/stages/dedupe.ts`, called by `curate.ts` over the merged set from both paths. Three stages, cheapest
 first, so the LLM only ever sees the ambiguous minority:
 
 1. **Blocking** — bucket by calendar date (±1 day). Comparisons scale with events-per-day, not
@@ -285,9 +285,10 @@ degrades to deterministic-only rather than failing — merging is the destructiv
 
 ## Cost controls
 
-Every Gemini call goes through `src/providers/gemini.ts`, which provides one process-wide
-concurrency limiter, 429-aware backoff (honouring `Retry-After`), a hard call budget, and
-per-stage accounting. Each script prints what it spent — including on Ctrl-C:
+Every model call — Gemini, and the Anthropic/OpenAI/Perplexity search providers — goes through
+`@dothingslol/llm` (`packages/llm`), which provides one process-wide per-provider concurrency
+limiter, 429-aware backoff (honouring `Retry-After`), a hard call budget, and per-stage
+accounting. Each script prints what it spent — including on Ctrl-C:
 
 ```
 Gemini usage
@@ -331,7 +332,7 @@ Measured effects of the current settings, on the same six Brisbane hosts:
 
 
 - **Batch, then run batches concurrently, with a ceiling.** Every LLM pass goes through
-  `mapWithConcurrency` (`src/providers/base.ts`). Nothing is serial that does not have to be, and
+  `mapWithConcurrency` (`@dothingslol/utils/concurrency`). Nothing is serial that does not have to be, and
   nothing fans out unbounded — an uncapped `Promise.all` over dedupe batches could open ~67
   simultaneous calls and collect 429s.
 - **Deterministic first.** JSON-LD and embedded JSON cost nothing; the LLM is the fallback, capped
@@ -393,15 +394,20 @@ no registration — just write `{city_key, provider, tier, week_start, week_end,
 
 ## Key files
 
-- `src/shared.ts` — constants shared with the browser bundle. **Must stay free of `node:` imports**;
-  `app/` imports it directly and pulling in `common.ts` (which reads the filesystem) breaks the Vite
+- `packages/core/src/shared.ts` — constants shared with the browser bundle. **Must stay free of `node:` imports**;
+  `apps/web/app/` imports it directly and pulling in `common.ts` (which reads the filesystem) breaks the Vite
   build.
-- `src/common.ts` — `INTERESTS`, `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`;
-  re-exports everything from `shared.ts`.
-- `src/adapters/` — the scrape path: `probe.ts`, `discover.ts`, `collect.ts`, `fetch.ts`,
-  `extract.ts`, `embeddedJson.ts`, `llmExtract.ts`, `dates.ts`, `normalise.ts`, `annotate.ts`.
-- `src/dedupe.ts` / `src/dedupeClassifier.ts` — cross-source dedupe.
-- `app/` — React components; `src/pages/` — Astro pages.
-- `app/utils/notifications.ts` — 1-hour event reminders, 8:00 AM morning digest, and notification lifecycle.
-- `app/utils/pwaStorage.ts` — IndexedDB persistence for bookmarked events shared with the Service Worker.
-- `public/sw.js` / `public/manifest.webmanifest` — Service Worker (offline caching, sync, triggers) and PWA manifest.
+- `apps/pipeline/config/pipeline.yml` — every model and operator tunable (PLAN §2.6); the one place
+  to change a model or a threshold. `apps/pipeline/config/interests.md` — the interest profile.
+- `apps/pipeline/src/config/` — `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`,
+  `loadPipelineConfig()`, the week/env/path helpers, and the `RunContext` every stage takes.
+- `apps/pipeline/src/stages/` — the scrape path (`collectScraped.ts`, `extract.ts`, `normalise.ts`,
+  `annotate.ts`), the search dispatch (`collectSearch.ts`), `curate.ts`, `venues.ts`, `rank.ts`,
+  `geocode.ts`, and cross-source dedupe (`dedupe.ts` / `dedupeClassifier.ts`).
+- `apps/pipeline/src/sources/` — source maintenance tools: `addCity.ts`, `probe.ts`, `discover.ts`,
+  `triage.ts`, `render.ts`, `testUrl.ts`, plus the scraper-source registry (`config/registry.ts`).
+- `apps/web/app/` — React components; `apps/web/src/pages/` — Astro pages.
+- `apps/web/app/utils/notifications.ts` — 1-hour event reminders, 8:00 AM morning digest, and notification lifecycle
+  (reminder times and wording: `packages/core/src/reminders.ts`).
+- `apps/web/app/utils/pwaStorage.ts` — IndexedDB persistence for bookmarked events shared with the Service Worker.
+- `apps/web/public/sw.js` / `apps/web/public/manifest.webmanifest` — Service Worker (offline caching, sync, triggers) and PWA manifest.

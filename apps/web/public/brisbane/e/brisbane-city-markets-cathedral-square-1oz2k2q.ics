@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane City Markets - Cathedral Square
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1oz2k2q@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T080000
+DTEND;TZID=Australia/Brisbane:20260924T140000
+SUMMARY:Brisbane City Markets - Cathedral Square
+DESCRIPTION:Come and enjoy the Cathedral Square city markets\, every Thursd
+ ay. We may be smaller in size\, but don’t think for a minute that Cathed
+ ral Square doesn’t pack a punch. With a bigger focus on street eats\, th
+ is picturesque market is the perfect place for a quick or leisurely lunch 
+ (although\, we definitely recommend the latter… hello picnic blankets an
+ d live music! For more information\, visit the Goodwill Projects website .
+LOCATION:Cathedral Square\, Brisbane City\, Cathedral Square\, 410 Ann Stre
+ et\, Brisbane City
+URL:http://goodwillprojects.com.au/markets/brisbane-city/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Chatty Table at Marhaba Café – Come share a cuppa and a cha
+ t
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-xhco84@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T110000
+DTEND;TZID=Australia/Brisbane:20261002T120000
+SUMMARY:Chatty Table at Marhaba Café – Come share a cuppa and a chat
+DESCRIPTION:Looking to connect with others in a relaxed\, welcoming space? 
+ Join us at Marhaba Café for a Chatty Table—a simple and friendly way to
+  meet new people over a cuppa. Pull up a chair and enjoy a chat with other
+ s in your community\, whether you’re dropping in for a quick hello or st
+ aying a while. Location : Brisbane City Hall (basement level). Enter via t
+ he corner of Adelaide and Albert Streets—look for the pink signs and tak
+ e the stairs down. Hosted by a friendly volunteer\, the Chatty Table creat
+ es a space where conversation flows easily and everyone is welcome.
+LOCATION:Brisbane City Hall\, Brisbane City\, Brisbane City Hall\, 64 Adela
+ ide Street\, Brisbane City
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20400140
+ 7
+END:VEVENT
+END:VCALENDAR

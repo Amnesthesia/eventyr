@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lord Mayor’s Photographic Awards 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-inlp5l@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T100000
+DTEND;TZID=Australia/Brisbane:20260924T170000
+SUMMARY:Lord Mayor’s Photographic Awards 2026
+DESCRIPTION:Brisbane through the lens of local photographers. The winners e
+ xhibition of the 2026 Lord Mayor’s Photographic Awards brings together s
+ triking photographic works that capture the city’s spirit - from familia
+ r streets and riverside scenes to the fleeting moments\, routines and char
+ acters that make Brisbane feel like home. New this year\, the Brisbane Pos
+ tcards Collection category invites photographers to showcase Brisbane’s 
+ charm and energy through images that locals recognise\, and visitors insta
+ ntly fall in love with. Selected winning works will be available as collec
+ tible postcards at MoB Shop. Open to anyone who lives\, works or studies i
+ n Brisbane\, the 2026 Awards celebrate what makes our city unique through 
+ this year’s theme\, Everyday Brisbane. For more information\, visit our 
+ website . Museum of Brisbane is Brisbane City Council’s leading history 
+ and art museum where you can experience our city’s vibrant culture. For 
+ more information\, please visit MoB website .
+LOCATION:Museum of Brisbane\, Brisbane City\, Museum of Brisbane\, Brisbane
+  City Hall\, 64 Adelaide Street\, Brisbane City
+URL:https://www.brisbane.qld.gov.au/events-arts-and-culture/creative-progra
+ ms-and-awards/lord-mayor-s-photographic-awards
+END:VEVENT
+END:VCALENDAR

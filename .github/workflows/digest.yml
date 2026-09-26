@@ -7,11 +7,6 @@ on:
         description: City slug matching a file in sources/ (e.g. brisbane)
         required: true
         type: string
-      recipient:
-        description: "WhatsApp recipient number (e.g. 61412345678). Defaults to WHATSAPP_RECIPIENT secret."
-        required: false
-        type: string
-        default: ""
       force:
         description: "Re-collect even if this week's data already exists"
         required: false
@@ -31,12 +26,6 @@ on:
         required: false
       GOOGLE_API_KEY:
         required: false
-      WHATSAPP_TOKEN:
-        required: true
-      WHATSAPP_PHONE_ID:
-        required: true
-      WHATSAPP_RECIPIENT:
-        required: true
 
   workflow_dispatch:
     inputs:
@@ -49,11 +38,6 @@ on:
           - goldcoast
           - sunnycoast
           - byron
-      recipient:
-        description: "WhatsApp recipient number (e.g. 61412345678). Leave blank to use the default."
-        required: false
-        type: string
-        default: ""
       force:
         description: "Re-collect even if this week's data already exists"
         required: false
@@ -93,9 +77,7 @@ jobs:
           ref: ${{ github.ref }}
 
       - name: Set up pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+        uses: pnpm/action-setup@v6
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -108,12 +90,10 @@ jobs:
 
       # Type-check and lint before spending any API budget: neither ran in CI
       # before, which is how a broken tsconfig reference left the whole app
-      # unchecked.
+      # unchecked. Same command ci.yml runs, so this and pull-request CI can't
+      # drift apart on what "clean" means.
       - name: Typecheck and test
-        run: |
-          pnpm tsc --noEmit -p tsconfig.json
-          pnpm tsc --noEmit -p tsconfig.scripts.json
-          pnpm test
+        run: pnpm check
 
       # Fetch/extraction caches from the previous run. Pages are still fetched
       # every week for fresh events, but an unchanged page is a 304 (no body)
@@ -200,27 +180,27 @@ jobs:
           CITY: ${{ inputs.city }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/rank.ts
+        run: pnpm rank
 
       - name: Geocode locations
         env:
           CITY: ${{ inputs.city }}
           FORCE: ${{ inputs.force }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/geocode.ts
+        run: pnpm geocode
 
       - name: Write markdown
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/markdown.ts
+        run: pnpm markdown
 
       - name: Generate iCal
         env:
           CITY: ${{ inputs.city }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/ical.ts
+        run: pnpm ical
 
       - name: Generate RSS feeds
         run: pnpm rss
 
       - name: Update pages index
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/pages.ts
+        run: pnpm pages
 
       # Static /ai/ feed for third-party AI assistants — see src/ai.ts header.
       # Fails the run (and validates its own output) if a day/week file comes
@@ -237,14 +217,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # The per-event .ics files under public/*/e/ are committed for the
+          # The per-event .ics files under apps/web/public/*/e/ are committed for the
           # same reason the city feed is: deploy.yml runs only `astro build`
-          # from a checkout, so anything public/ serves has to be in git.
+          # from a checkout, so anything apps/web/public/ serves has to be in git.
           git add "data/${CITY}.json" \
                   "data/${CITY}/" \
-                  "${CITY^^}.md" "public/${CITY}.ics" "data/index.json" \
-                  public/sitemap.xml public/*/feed.xml public/*/e/ \
-                  public/ai/ public/llms.txt
+                  "${CITY^^}.md" "apps/web/public/${CITY}.ics" "data/index.json" \
+                  apps/web/public/sitemap.xml apps/web/public/*/feed.xml apps/web/public/*/e/ \
+                  apps/web/public/ai/ apps/web/public/llms.txt
           git diff --cached --quiet && exit 0
           git commit -m "chore: update ${CITY} events $(date +%Y-%m-%d)"
           # -X theirs: during a rebase "theirs" is this run's commit. Every file
@@ -260,12 +240,3 @@ jobs:
           echo "::error::failed to push after 3 attempts"
           exit 1
 
-      - name: Send WhatsApp digest
-        continue-on-error: true
-        if: false
-        env:
-          CITY: ${{ inputs.city }}
-          WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
-          WHATSAPP_PHONE_ID: ${{ secrets.WHATSAPP_PHONE_ID }}
-          WHATSAPP_RECIPIENT: ${{ inputs.recipient != '' && inputs.recipient || secrets.WHATSAPP_RECIPIENT }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/messaging.ts

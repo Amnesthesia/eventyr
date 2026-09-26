@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Fantastic Foxes Book Club
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-wm3bgp@dothings
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260930
+SUMMARY:Fantastic Foxes Book Club
+DESCRIPTION:Join our Fantastic Foxes Book Club (ages 7+). We’ll read a fu
+ n story\, chat about the characters and setting\, and we...
+LOCATION:Quick Brown Fox Bookshop
+URL:https://quickbrownfoxbookshop.com.au/fantastic-foxes-monsieur-mustard-b
+ r-tuesday-29-september-930-1030/
+END:VEVENT
+END:VCALENDAR

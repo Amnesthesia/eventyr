@@ -1,0 +1,22 @@
+name: CI
+on:
+  pull_request:
+  workflow_dispatch:
+concurrency: { group: "ci-${{ github.ref }}", cancel-in-progress: true }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v6   # reads packageManager; v6 is the first major that installs pnpm 11
+      - uses: actions/setup-node@v4
+        with: { node-version: "22", cache: "pnpm" }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+      - run: pnpm build
+      # Nothing deploys the Worker from CI, so this is the only place a break would show (PLAN R8).
+      - name: MCP worker
+        run: |
+          pnpm --filter @dothingslol/mcp typecheck
+          pnpm --filter @dothingslol/mcp test
+          pnpm --filter @dothingslol/mcp exec wrangler deploy --dry-run --outdir "$RUNNER_TEMP/mcp"

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:The Book of Mormon
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1p1aqkz@dothings
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20261005
+SUMMARY:The Book of Mormon
+DESCRIPTION:Brisbane\, the Mormons are back! The Tony®\, Olivier® and Gra
+ mmy® Award-winning The Book of Mormon is now playing at QPAC
+LOCATION:QPAC
+URL:https://www.mustdobrisbane.com/book-mormon-qpac
+END:VEVENT
+END:VCALENDAR

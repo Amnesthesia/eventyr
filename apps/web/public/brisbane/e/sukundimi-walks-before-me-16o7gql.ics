@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Sukundimi Walks Before Me
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16o7gql@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T180000
+DTEND;TZID=Australia/Brisbane:20260928T200000
+SUMMARY:Sukundimi Walks Before Me
+DESCRIPTION:Q&A Panel screening. New Farm Cinemas: Mon 28 September. Q&A wi
+ th Manu Peni. The Sepik River is the mother line for Papua New Guinea comm
+ unities. Winding through mountains and rainforests\, she is the crucial ve
+ rtebrae connecting and supporting the region’s rare biodiversity and spi
+ ritual consciousness. But her livelihood and her communities are threatene
+ d by the proposal of a copper-gold mine being built near her waters\, whic
+ h could extract\, erode and pollute an environment that she has sustained 
+ for millennia. The children of this river\, led by Manu Peni\, create a gr
+ assroots campaign to stop the mine from being built\, resisting the forces
+  of colonial bureaucracy and Western narratives of ‘development’ by in
+ voking the Spirit of the river and indigenous knowledge. Sukundimi Walks B
+ efore Me explores this existential fight through lyrical expressions of ex
+ istence\, resistance and life along the mother river.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/sukundimi-walks-befor
+ e-me
+END:VEVENT
+END:VCALENDAR

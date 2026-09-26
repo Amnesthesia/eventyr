@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Bands in parks: Community Train Day
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-12ifenn@dothings
+DTSTART;TZID=Australia/Brisbane:20260927T100000
+DTEND;TZID=Australia/Brisbane:20260927T110000
+SUMMARY:Bands in parks: Community Train Day
+DESCRIPTION:Bands in Parks performs at McPherson Park. Connect with the loc
+ al community at Bracken Ridge with sausage sizzles\, live music by Musical
+  Chairs Jazz Band\, food and plant stalls and rides on a real steam train 
+ run by Bracken Ridge Central Lions Club.
+LOCATION:McPherson Park\, Bracken Ridge\, McPherson Park\, 146 Denham Stree
+ t\, Bracken Ridge
+URL:https://www.trumba.com/calendars/LIVE?eventid=205897200
+END:VEVENT
+END:VCALENDAR

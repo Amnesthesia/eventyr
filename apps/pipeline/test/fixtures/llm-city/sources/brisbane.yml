@@ -1,0 +1,35 @@
+# Fixture city for the LLM parity harness (scripts/llm-parity.mjs). Loaded in
+# place of sources/brisbane.yml via EVENTYR_SOURCES_ROOT. The two hosts are the
+# harness's own local HTTP server (test/fixtures/llm-city/www, port 48123):
+# 127.0.0.1 is the scraper source collect-adapters runs, localhost is the
+# unverified source probe-sources has to ask the model about.
+
+name: Brisbane
+timezone: Australia/Brisbane
+currency: AUD
+centre:
+  lat: -27.4698
+  lng: 153.0251
+  radiusKm: 50
+sources:
+  aggregators: []
+  institutions:
+    - name: Fixture Venue
+      method: llm
+      domains:
+        - localhost:48123
+      homepage: http://localhost:48123/
+  independents:
+    - name: Fixture Programme
+      method: scraper
+      id: fixture-programme
+      domains:
+        - 127.0.0.1:48123
+      homepage: http://127.0.0.1:48123/
+      listingUrls:
+        - http://127.0.0.1:48123/programme
+      strategy: html
+      venue:
+        name: Fixture Hall
+        address: 1 Example Street
+        suburb: West End

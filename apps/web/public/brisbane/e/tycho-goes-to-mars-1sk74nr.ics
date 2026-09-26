@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tycho Goes to Mars
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1sk74nr@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T110000
+DTEND;TZID=Australia/Brisbane:20261003T113500
+SUMMARY:Tycho Goes to Mars
+DESCRIPTION:Our favourite cheeky dog is blasting off to discover the red pl
+ anet\, Mars. Tycho is in search of water to fly his steam-powered space ke
+ nnel back home. But how will he find water on Mars? Produced by Melbourne 
+ Planetarium at Scienceworks\, Museums Victoria. Session concludes with a v
+ irtual tour of the Brisbane night sky.
+LOCATION:Sir Thomas Brisbane Planetarium\, Mt Coot-tha\, Sir Thomas Brisban
+ e Planetarium\, 152 Mt Coot-tha Road\, Mt Coot-tha
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20841793
+ 9
+END:VEVENT
+END:VCALENDAR

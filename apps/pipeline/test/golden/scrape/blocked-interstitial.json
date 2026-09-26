@@ -1,0 +1,16 @@
+{
+  "fixture": "blocked-interstitial",
+  "url": "https://example-challenge.com.au/whats-on",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": [
+      "extract https://example-challenge.com.au/whats-on: bot challenge interstitial"
+    ]
+  },
+  "found": 0,
+  "candidates": [],
+  "events": [],
+  "rejected": [],
+  "fallbackCalls": []
+}

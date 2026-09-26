@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Greeters - Moon Festival
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1m2d29k@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T150000
+DTEND;TZID=Australia/Brisbane:20260926T163000
+SUMMARY:Brisbane Greeters - Moon Festival
+DESCRIPTION:Come and explore vibrant Fortitude Valley with a Greeter who wi
+ ll take you on a walking tour to discover all the hidden gems and vibrant 
+ Asian culture that the Valley has to offer. After the tour why not stay a 
+ little longer and book a table at one of the Valley’s top Asian restaura
+ nts to celebrate Moon Festival and enjoy the roving entertainment\, includ
+ ing lion dances throughout the Valley Malls\, and within various venues in
+  the Valley Precinct.
+LOCATION:Chinatown Mall\, Fortitude Valley\, Chinatown Mall\, Duncan St\, F
+ ortitude Valley
+URL:https://www-351p.bookeo.com/bookeo/b_brisbanegreeters_start.html?ctlsrc
+ 2=yC42hLyZkJ4%2B6716O0UTEjOmGA5eeLDkFCBfT0Bt5mM%3D&src=01c
+END:VEVENT
+END:VCALENDAR

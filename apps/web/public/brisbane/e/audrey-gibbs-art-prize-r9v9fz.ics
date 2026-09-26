@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Audrey Gibbs Art Prize
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-r9v9fz@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T100000
+DTEND;TZID=Australia/Brisbane:20261003T153000
+SUMMARY:Audrey Gibbs Art Prize
+DESCRIPTION:Audrey Gibbs joined the Royal Queensland Art Society in 1983 an
+ d was recognised as a Fellow of the society in 2009. This exhibition explo
+ res genre artworks\, one of Audrey’s great pleasures. This exhibition fo
+ cuses on Genre Artworks\, one of Audrey's favourite themes to paint. Genre
+  Artworks are those that depict ordinary people in everyday situations\, b
+ oth in the exterior and the interior. Rather than heroic or mythological s
+ ubjects\, these works celebrate the familiar: everyday people participatin
+ g in domestic routines\, work\, leisure\, social gatherings\, and quiet mo
+ ments of daily life. The Royal Queensland Art Society is proudly supported
+  by Brisbane City Council.
+LOCATION:Petrie Terrace Gallery\, Petrie Terrace\, Petrie Terrace Gallery\,
+  162 Petrie Terrace\, Petrie Terrace
+URL:https://rqas.com.au/event/audrey-gibbs-art-prize/
+END:VEVENT
+END:VCALENDAR

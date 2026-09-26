@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Dry Leaf
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1yx28fa@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T124500
+DTEND;TZID=Australia/Brisbane:20261003T144500
+SUMMARY:Dry Leaf
+DESCRIPTION:Premiere screening. New Farm Cinemas: Sat 3 October. Presented 
+ in partnership with Container: Brisbane Film Society and the Institute of 
+ Modern Art (IMA). A Plainwater Films release. QLD PREMIERE. When sports ph
+ otographer Lisa vanished\, she was working on an assignment documenting ra
+ mshackle football fields across the country. She has left behind a letter 
+ for her parents in Tbilisi instructing them not to follow her – a reques
+ t that her father\, Irakli (played by the filmmaker’s own father\, David
+  Koberidze)\, disregards. He attempts to retrace her cross-country path to
+ gether with her colleague Levan – who\, like many of the characters in t
+ his gentle and transfixing saga\, happens to be invisible – but theirs i
+ s destined to be a sublimely digressive quest\, punctuated by curious enco
+ unters. Shot entirely on an old Sony Ericsson camera phone and unfolding a
+ cross an epic timescale\, Alexandre Koberidze’s latest feature – winne
+ r of both a Competition Special Mention and the FIPRESCI Prize at Locarno 
+ Film Festival – combines the sense of melancholic whimsy that distinguis
+ hed his previous feature\, 'What Do We See When We Look at the Sky?'\, wit
+ h its daring formal gambit\, giving its images of the Georgian countryside
+  a surprising\, pixelated beauty at times verging on abstraction.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/dry-leaf
+END:VEVENT
+END:VCALENDAR

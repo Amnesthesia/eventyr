@@ -1,0 +1,308 @@
+import assert from "node:assert/strict";
+import { test } from "node:test";
+import { startOfWeek } from "./dates.ts";
+import { dateLabel, dateWindowFor, groupEvents } from "./grouping.ts";
+import type { EventData } from "./schema.ts";
+
+const WINDOW = { from: "2026-09-03", to: "2026-09-13" };
+// Frozen, so the "Today"/"Tomorrow" labels do not depend on the clock.
+const TODAY = "2026-09-01";
+
+function ev(partial: Partial<EventData>): EventData {
+	return {
+		title: "x",
+		datetime: "",
+		location: "",
+		link: "",
+		category: "Community / Other",
+		cost: "",
+		source: "",
+		description: "",
+		tags: [],
+		score: 5,
+		datetime_iso: "",
+		datetime_end_iso: "",
+		image: "",
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		venue: "",
+		...partial,
+	};
+}
+
+test("date groups come from the window, not from the events' own dates", () => {
+	// The defect this replaced: an exhibition that opened in 2023 created its
+	// own one-event group, so a page showing one week had 33 groups outside it.
+	const groups = groupEvents(
+		[
+			ev({
+				title: "old run",
+				datetime_iso: "2023-09-20",
+				datetime_end_iso: "2026-12-01",
+			}),
+			ev({
+				title: "jan run",
+				datetime_iso: "2026-01-01",
+				datetime_end_iso: "2026-10-01",
+			}),
+			ev({ title: "thursday", datetime_iso: "2026-09-03T19:00:00" }),
+		],
+		"date",
+		WINDOW,
+		TODAY,
+	);
+	assert.deepEqual(
+		groups.map((g) => g.label),
+		["Thursday 3 Sep", "Ongoing"],
+	);
+	// One event, one group — never repeated across every date it covers.
+	assert.deepEqual(
+		groups[1].events.map((e) => e.title),
+		["jan run", "old run"],
+	);
+});
+
+test("a day with no events gets no heading", () => {
+	const groups = groupEvents(
+		[
+			ev({ datetime_iso: "2026-09-04T10:00:00" }),
+			ev({ datetime_iso: "2026-09-12T10:00:00" }),
+		],
+		"date",
+		WINDOW,
+		TODAY,
+	);
+	assert.equal(groups.length, 2);
+	assert.deepEqual(
+		groups.map((g) => g.key),
+		["2026-09-04", "2026-09-12"],
+	);
+});
+
+test("days are chronological and the exceptions come after them", () => {
+	const groups = groupEvents(
+		[
+			ev({ title: "undated" }),
+			ev({ title: "later", datetime_iso: "2026-11-01T10:00:00" }),
+			ev({ title: "ongoing", datetime_iso: "2026-02-01" }),
+			ev({ title: "day 2", datetime_iso: "2026-09-05T10:00:00" }),
+			ev({ title: "day 1", datetime_iso: "2026-09-04T10:00:00" }),
+		],
+		"date",
+		WINDOW,
+		TODAY,
+	);
+	assert.deepEqual(
+		groups.map((g) => g.events[0].title),
+		["day 1", "day 2", "ongoing", "later", "undated"],
+	);
+});
+
+test("events inside a group are ordered by start time", () => {
+	const groups = groupEvents(
+		[
+			ev({ title: "evening", datetime_iso: "2026-09-04T19:30:00" }),
+			ev({ title: "all day", datetime_iso: "2026-09-04" }),
+			ev({ title: "morning", datetime_iso: "2026-09-04T09:00:00" }),
+			ev({ title: "afternoon", datetime_iso: "2026-09-04T14:00:00" }),
+		],
+		"date",
+		WINDOW,
+		TODAY,
+	);
+	// A date with no time is an all-day event, so it leads the day.
+	assert.deepEqual(
+		groups[0].events.map((e) => e.title),
+		["all day", "morning", "afternoon", "evening"],
+	);
+});
+
+test("a date group leads with score; start time only breaks ties", () => {
+	const groups = groupEvents(
+		[
+			// Every one of these is date-only on the same day, so a chronological
+			// sort alone would leave them in file order.
+			ev({ title: "dull", datetime_iso: "2026-09-04", score: 2 }),
+			ev({ title: "great", datetime_iso: "2026-09-04", score: 9 }),
+			ev({ title: "fine", datetime_iso: "2026-09-04", score: 5 }),
+			// Its start time is later in the day than every all-day one above,
+			// but its score is highest, so it leads them all.
+			ev({ title: "timed", datetime_iso: "2026-09-04T09:00:00", score: 10 }),
+		],
+		"date",
+		WINDOW,
+		TODAY,
+	);
+	assert.deepEqual(
+		groups[0].events.map((e) => e.title),
+		["timed", "great", "fine", "dull"],
+	);
+});
+
+test("the ongoing group breaks end-date ties by score", () => {
+	const groups = groupEvents(
+		[
+			ev({
+				title: "dull",
+				datetime_iso: "2026-08-01",
+				datetime_end_iso: "2026-09-30",
+				score: 3,
+			}),
+			ev({
+				title: "great",
+				datetime_iso: "2026-08-02",
+				datetime_end_iso: "2026-09-30",
+				score: 8,
+			}),
+		],
+		"date",
+		WINDOW,
+		TODAY,
+	);
+	const ongoing = groups.find((g) => g.key === "ongoing");
+	assert.deepEqual(
+		ongoing?.events.map((e) => e.title),
+		["great", "dull"],
+	);
+});
+
+test("category groups keep the fixed CATEGORIES order and sort by time", () => {
+	const groups = groupEvents(
+		[
+			ev({
+				title: "b",
+				category: "Concert / Music",
+				datetime_iso: "2026-09-04T20:00:00",
+			}),
+			ev({
+				title: "a",
+				category: "Concert / Music",
+				datetime_iso: "2026-09-04T18:00:00",
+			}),
+			ev({
+				title: "talk",
+				category: "Public Lecture",
+				datetime_iso: "2026-09-05T10:00:00",
+			}),
+		],
+		"category",
+		WINDOW,
+		TODAY,
+	);
+	assert.deepEqual(
+		groups.map((g) => g.label),
+		["Public Lecture", "Concert / Music"],
+	);
+	assert.deepEqual(groups[0].cat, "talks");
+	assert.deepEqual(
+		groups[1].events.map((e) => e.title),
+		["a", "b"],
+	);
+});
+
+test("ungrouped is one group and keeps the incoming order", () => {
+	const events = [
+		ev({ title: "second", datetime_iso: "2026-09-09" }),
+		ev({ title: "first" }),
+	];
+	const groups = groupEvents(events, "none", WINDOW, TODAY);
+	assert.equal(groups.length, 1);
+	assert.deepEqual(
+		groups[0].events.map((e) => e.title),
+		["second", "first"],
+	);
+});
+
+test("the window runs from today to the end of next week", () => {
+	assert.deepEqual(dateWindowFor("2026-08-31", "2026-09-06", "2026-09-03"), {
+		from: "2026-09-03",
+		to: "2026-09-13",
+	});
+	// A build being viewed after its window closed falls back to its own week
+	// rather than filing every event under "Later".
+	assert.deepEqual(dateWindowFor("2026-08-31", "2026-09-06", "2027-01-01"), {
+		from: "2026-08-31",
+		to: "2026-09-13",
+	});
+	// Built on Sunday for the week starting Monday: today is before the week,
+	// and Sunday's carried-forward events belong under "Today".
+	assert.deepEqual(dateWindowFor("2026-09-14", "2026-09-20", "2026-09-13"), {
+		from: "2026-09-13",
+		to: "2026-09-27",
+	});
+});
+
+test("dateLabel names the year only when it differs from today's", () => {
+	assert.equal(dateLabel("2026-09-12", "2026-09-04"), "Saturday 12 Sep");
+	assert.equal(dateLabel("2027-01-16", "2026-09-04"), "Saturday 16 Jan 2027");
+	assert.equal(dateLabel("2026-09-04", "2026-09-04"), "Today");
+});
+
+test("startOfWeek is the Monday, with Sunday belonging to the week before", () => {
+	assert.equal(startOfWeek("2026-09-04"), "2026-08-31"); // a Friday
+	assert.equal(startOfWeek("2026-09-06"), "2026-08-31"); // Sunday
+	assert.equal(startOfWeek("2026-08-31"), "2026-08-31"); // Monday itself
+});
+
+test("stated preferences sort within each date group", () => {
+	// Each group re-sorts by start time, which silently discarded the
+	// preference ordering the list arrived in: marking a tag "less" did nothing
+	// at all in the default date view while working perfectly in Ungrouped.
+	const window = { from: "2026-09-07", to: "2026-09-20" };
+	const at = (hour: number, title: string, tags: string[]) =>
+		({
+			title,
+			tags,
+			datetime_iso: `2026-09-08T${String(hour).padStart(2, "0")}:00:00`,
+		}) as EventData;
+
+	// Raffle is earliest, so time order alone would put it first.
+	const events = [
+		at(10, "Raffle", ["raffle"]),
+		at(14, "Lecture", ["lecture"]),
+		at(18, "Workshop", ["workshop"]),
+	];
+
+	const plain = groupEvents(events, "date", window, "2026-09-08");
+	assert.deepEqual(
+		plain[0].events.map((e) => e.title),
+		["Raffle", "Lecture", "Workshop"],
+		"without preferences the group is purely chronological",
+	);
+
+	const withPrefs = groupEvents(events, "date", window, "2026-09-08", {
+		raffle: -1,
+		workshop: 1,
+	});
+	assert.deepEqual(
+		withPrefs[0].events.map((e) => e.title),
+		["Workshop", "Lecture", "Raffle"],
+		"wanted first, unwanted last, chronological in between",
+	);
+});
+
+test("within a date group, score leads and time only breaks ties", () => {
+	const window = { from: "2026-09-08", to: "2026-09-14" };
+	const at = (hour: number, title: string, score: number) =>
+		ev({
+			title,
+			score,
+			datetime_iso: `2026-09-08T${String(hour).padStart(2, "0")}:00:00`,
+		});
+
+	// The low-score morning event would lead a purely chronological sort.
+	const events = [
+		at(10, "Breakfast promo", 3),
+		at(20, "Headline gig", 9),
+		at(19, "Support act", 9),
+	];
+
+	const groups = groupEvents(events, "date", window, "2026-09-08");
+	assert.deepEqual(
+		groups[0].events.map((e) => e.title),
+		["Support act", "Headline gig", "Breakfast promo"],
+		"equal scores stay chronological; the low score sinks regardless of time",
+	);
+});

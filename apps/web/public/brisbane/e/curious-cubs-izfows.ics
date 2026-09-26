@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Curious Cubs
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-izfows@dothings
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260929
+SUMMARY:Curious Cubs
+DESCRIPTION:This Book Club is for children aged 5+ years old. Every last Mo
+ nday of the month our Curious Cubs will meet after school from 3:30...
+LOCATION:Quick Brown Fox Bookshop
+URL:https://quickbrownfoxbookshop.com.au/curious-cubsrory-the-pretendermond
+ ay-28-september-930-1030/
+END:VEVENT
+END:VCALENDAR

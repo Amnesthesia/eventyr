@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pilates
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1fk9bun@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T060000
+DTEND;TZID=Australia/Brisbane:20261002T070000
+SUMMARY:Pilates
+DESCRIPTION:Pilates helps you strengthen and stretch simultaneously through
+  core-based exercises. Join anytime.
+LOCATION:Arthur Davis Park\, Sandgate\, Arthur Davis Park\, Flinders Parade
+ \, Sandgate
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=204475632
+END:VEVENT
+END:VCALENDAR

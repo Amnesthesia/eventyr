@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Active eco photography
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1n7kuev@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T133000
+DTEND;TZID=Australia/Brisbane:20260928T153000
+SUMMARY:Active eco photography
+DESCRIPTION:Bookings essential. See nature through a new lens and keep movi
+ ng at the same time. This engaging and creative photography workshop encou
+ rages movement and mindful observation. Just bring your smartphone. This i
+ s a Chillout event suitable for young people 10-17 years.
+LOCATION:Brisbane Botanic Gardens Mt Coot-tha\, Brisbane Botanic Gardens Mt
+  Coot-tha\, 152 Mt Coot-tha Road\, Toowong
+URL:https://bazilgrumble.com/whats%20on/
+END:VEVENT
+END:VCALENDAR

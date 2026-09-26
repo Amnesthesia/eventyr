@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mountain bike skills for adults (intermediate)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-9t9piq@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T113000
+DTEND;TZID=Australia/Brisbane:20261004T130000
+SUMMARY:Mountain bike skills for adults (intermediate)
+DESCRIPTION:For riders that can ride single trail but needs help with their
+  basic skills\, cornering and obstacles. Presented as part of Council’s 
+ Cycling Brisbane program.
+LOCATION:Gap Creek Reserve Picnic Area\, Gap Creek Reserve Picnic Area\, Ga
+ p Creek Road\, Mt Coot-tha
+URL:https://www.eventbrite.com.au/e/mountain-bike-skills-for-adults-interme
+ diate-tickets-1990613860643?aff=oddtdtcreator
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+[
+ {
+  "id": 101,
+  "title": "Trivia Tuesday",
+  "content": "<p>Weekly pub trivia with prizes for the top three tables.</p>",
+  "start_date": "2026-09-29 19:00:00",
+  "end_date": "2026-09-29 21:30:00",
+  "permalink": "https://example-mec.com.au/events/trivia-tuesday/"
+ },
+ {
+  "ID": 102,
+  "post": {
+   "post_title": "Vinyl Night"
+  },
+  "excerpt": "Bring a record.",
+  "meta": {
+   "start": {
+    "date": "2026-10-02"
+   }
+  },
+  "url": "https://example-mec.com.au/events/vinyl-night/"
+ },
+ {
+  "id": 103,
+  "title": "No date at all"
+ }
+]

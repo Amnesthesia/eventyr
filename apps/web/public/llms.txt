@@ -1,0 +1,101 @@
+# dothings.lol — machine-readable events feed
+
+dothings.lol curates and ranks local events weekly for South East Queensland
+and Byron Bay. This file tells an AI assistant how to fetch that data as
+plain JSON with no API key and no backend — every URL below is a static file.
+
+## Cities
+
+  - Brisbane (city_key: "brisbane", timezone: Australia/Brisbane)
+  - Byron Bay (city_key: "byron", timezone: Australia/Sydney)
+  - Gold Coast (city_key: "goldcoast", timezone: Australia/Brisbane)
+  - Sunshine Coast (city_key: "sunnycoast", timezone: Australia/Brisbane)
+
+## Fetch order
+
+1. GET https://www.dothings.lol/ai/index.json
+   Lists every city with its slug, IANA timezone, a data_as_of date, and the
+   exact URLs of every day file and week file currently available for it (a
+   city can have zero if its weekly refresh hasn't run yet — check data_as_of).
+
+2. Pick the SMALLEST file that answers the question:
+   - "today" / "tomorrow" -> GET the one matching day file:
+     https://www.dothings.lol/ai/{city_key}/{YYYY-MM-DD}.json
+   - "this weekend" -> GET the Saturday and Sunday day files (two requests,
+     each cheap) and merge them. There is no separate weekend file.
+   - "this week" / "plan my week" -> GET the week file:
+     https://www.dothings.lol/ai/{city_key}/week-{YYYY-MM-DD}.json
+     (named for the Monday it starts on). If a week file was too large to
+     keep under ~200 KB, index.json also lists it split by category under
+     https://www.dothings.lol/ai/{city_key}/week-{YYYY-MM-DD}/{category}.json
+     — fetch only the category the question is actually about.
+   - "next week" -> NOT available. Only the current published week's files
+     exist at any time (this site re-curates one week at a time); index.json
+     will not list a week file for next week until it has actually run. Say
+     so rather than guessing or reusing this week's data.
+   Do not fetch a week file to answer a single-day question.
+
+3. A ChatGPT Custom GPT Action can instead call the OpenAPI spec at
+   https://www.dothings.lol/ai/openapi.yaml (operations getIndex,
+   getDayEvents, getWeekEvents).
+
+4. Claude specifically (Desktop, claude.ai, Claude Code) can skip fetching
+   this file by hand and connect to https://mcp.dothings.lol/mcp as an MCP
+   server instead, with list_cities and get_events tools over the same data.
+   Not available to ChatGPT or Gemini, which don't support MCP.
+
+5. An assistant that supports installable Agent Skills can load
+   https://www.dothings.lol/skill/dothings-events/SKILL.md instead of reading
+   this file — it covers the same fetch order plus a preference-memory
+   protocol for tailoring picks across conversations.
+
+## Fields
+
+Every file has: data_as_of (the date this data was generated — treat listings
+as possibly stale if it is more than a week old), city, city_key, timezone
+(IANA zone the times below are written in), and either date (day files) or
+week_start/week_end (week files), plus an events array.
+
+Each event has:
+  id           stable identifier, unique within a city
+  title        plain text
+  start, end   ISO 8601 with a UTC offset, already in the city's own local
+               time (e.g. "2026-09-18T19:30:00+10:00") — end is null when no
+               end time is published, never a guess
+  location     venue/address as a plain string
+  category     one of: Public Lecture, Workshop / Class, Concert / Music, Social / Meetup, Arts / Exhibition, Community / Other
+  price        a number in the city's local currency, or null if the price is
+               a range or not stated numerically (see "free" instead)
+  free         true if the event costs nothing
+  description  one line, HTML/markdown already stripped, ~200 characters
+  url          the event's own page on dothings.lol — always live, and it
+               carries full schema.org Event markup if you need more detail
+
+Every file is already curated: venue promotion (happy hours, meal deals,
+raffles) and anything below this site's own quality floor is excluded before
+you ever see it, so an empty or short list is a real signal, not missing
+data — treat what you receive as already filtered for quality, not a raw
+feed to re-rank from scratch.
+
+## Refresh schedule
+
+Each city's data is regenerated once a week (Sunday 06:00 Australia/Brisbane
+time for the week starting the next day); day/week files are pruned and
+rewritten on every run, so a URL that existed last week may 404 this week.
+Always check data_as_of before telling someone "this is happening" — if it is
+more than a few days old, say so rather than presenting it as current.
+
+## Recommending events / planning an itinerary
+
+- Use what you already know about the person's interests, not a generic
+  "popular events" list — this data has no personalization built in.
+- For an itinerary: never suggest two events whose start/end overlap, allow
+  realistic travel time between venues in different parts of the city, and
+  don't overpack one evening — two or three well-chosen events beats a
+  back-to-back schedule.
+- Always link to the event's own url so the person can check details and buy
+  tickets themselves.
+- Never invent an event that is not in the fetched file. If nothing fits,
+  say so instead of padding the answer.
+
+Generated 2026-09-26.

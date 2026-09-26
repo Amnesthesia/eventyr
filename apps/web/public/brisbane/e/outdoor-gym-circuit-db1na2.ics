@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Outdoor gym circuit
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-db1na2@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T073000
+DTEND;TZID=Australia/Brisbane:20260926T083000
+SUMMARY:Outdoor gym circuit
+DESCRIPTION:Boost your fitness and learn how to train effectively using the
+  outdoor gym facilities. These workshops focus on functional strength\, co
+ re stability and full-body conditioning using a mix of equipment and bodyw
+ eight exercises.
+LOCATION:Ferny Grove Picnic Ground Park\, Ferny Grove\, Ferny Grove Picnic 
+ Ground Park\, 1233 Samford Road\, Ferny Grove
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=209440815
+END:VEVENT
+END:VCALENDAR

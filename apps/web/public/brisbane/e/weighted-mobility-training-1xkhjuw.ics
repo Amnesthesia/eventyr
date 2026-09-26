@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Weighted mobility training
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1xkhjuw@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T153000
+DTEND;TZID=Australia/Brisbane:20260929T163000
+SUMMARY:Weighted mobility training
+DESCRIPTION:A focused strength and mobility session to build strength and s
+ tay flexible using dumbbells\, a yoga mat and a chair. Suitable for all ag
+ es and abilities.
+LOCATION:Williams Park\, Runcorn\, Williams Park\, 79 Ervatamia Street\, Ru
+ ncorn
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=204115273
+END:VEVENT
+END:VCALENDAR

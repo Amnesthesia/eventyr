@@ -1,0 +1,8 @@
+{
+  "calls": 12,
+  "peakInFlight": {
+    "openai": 4,
+    "gemini": 4
+  },
+  "wallClockMs": 621
+}

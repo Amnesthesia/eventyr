@@ -1,0 +1,54 @@
+{
+  "city_key": "brisbane",
+  "provider": "adapters",
+  "tier": "independents",
+  "source_id": "fixture-programme",
+  "week_start": "2026-09-21",
+  "week_end": "2026-09-27",
+  "events": [
+    {
+      "title": "Open Mic Comedy",
+      "datetime": "Wed 23 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-23T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Fixture Hall, 1 Example Street, West End",
+      "link": "http://127.0.0.1:48123/e/1",
+      "cost": "Free",
+      "source": "Fixture Programme",
+      "description": "Five minutes each for anyone who signs up. Sign-up from 6:30.",
+      "image": "",
+      "category": "Comedy",
+      "tags": [
+        "comedy",
+        "open mic",
+        "standup"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Repair Cafe",
+      "datetime": "Sat 3 Oct, 10:00 AM",
+      "datetime_iso": "2026-10-03T10:00:00",
+      "datetime_end_iso": "2026-10-03T13:00:00",
+      "location": "Fixture Hall, 1 Example Street, West End",
+      "link": "http://127.0.0.1:48123/e/2",
+      "cost": "Free",
+      "source": "Fixture Programme",
+      "description": "Bring a broken thing; volunteers help you fix it.",
+      "image": "",
+      "category": "Workshop / Class",
+      "tags": [
+        "repair",
+        "workshop",
+        "community"
+      ],
+      "social": true,
+      "intellectual": false,
+      "hands_on": true,
+      "creative": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:City of God
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1sjxr0e@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T211500
+DTEND;TZID=Australia/Brisbane:20260930T231500
+SUMMARY:City of God
+DESCRIPTION:Classic screening. New Farm Cinemas & Regal Graceville: Sat 19 
+ September. In the slums of Rio\, two kids' paths diverge as one struggles 
+ to become a photographer and the other a kingpin.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/city-of-god
+END:VEVENT
+END:VCALENDAR

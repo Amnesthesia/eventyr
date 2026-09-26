@@ -1,0 +1,136 @@
+{
+  "fixture": "trumba-atom",
+  "url": "https://www.trumba.com/calendars/brisbane-events-rss.xml?filterview=parks",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": []
+  },
+  "found": 3,
+  "candidates": [
+    {
+      "title": "Stand-up paddle boarding",
+      "description": "Bookings essential. Learn the basics of Stand-up paddle boarding. This lesson includes safety and awareness, paddle techniques and activity tips. A sun safe top will be provided. This is a Chillout event suitable for young people 10-17 years.",
+      "startRaw": "2026-09-23T21:00:00Z",
+      "endRaw": "2026-09-23T22:00:00Z",
+      "venueName": "Bayside Park, Manly",
+      "address": "Bayside Park, 450 Esplanade, Manly",
+      "url": "https://scsurfschools.com.au/book-now/details/218732/active-healthy-brisbane-program-sup/",
+      "price": "$6",
+      "imageUrl": "https://www.trumba.com/i/DgAebkHogZSr%2Af5ldALxCNY4.jpeg",
+      "organiser": null,
+      "category": "Fitness & well-being,School holidays",
+      "sourceEventId": "201594518",
+      "startISO": "2026-09-24T07:00:00+10:00",
+      "endISO": "2026-09-24T08:00:00+10:00",
+      "provenance": {
+        "sourceId": "trumba-atom",
+        "sourceUrl": "https://www.trumba.com/calendars/brisbane-events-rss.xml?filterview=parks",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    },
+    {
+      "title": "Pilates",
+      "description": "Pilates helps you strengthen and stretch simultaneously through core-based exercises. Join anytime. This is a GOLD event suitable for seniors.",
+      "startRaw": "2026-09-23T21:00:00Z",
+      "endRaw": "2026-09-23T22:00:00Z",
+      "venueName": "Nudgee Beach Reserve, Nudgee Beach",
+      "address": "Nudgee Beach Reserve, 18 Fortitude Street, Nudgee Beach",
+      "url": "https://www.trumba.com/calendars/brisbane-events-rss?eventid=204475619",
+      "price": "Free",
+      "imageUrl": "https://www.trumba.com/i/DgC5DXkTSDtJhPVEco3jwY-F.jpg",
+      "organiser": null,
+      "category": "Fitness & well-being,Free",
+      "sourceEventId": "204475619",
+      "startISO": "2026-09-24T07:00:00+10:00",
+      "endISO": "2026-09-24T08:00:00+10:00",
+      "provenance": {
+        "sourceId": "trumba-atom",
+        "sourceUrl": "https://www.trumba.com/calendars/brisbane-events-rss.xml?filterview=parks",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    },
+    {
+      "title": "Abseiling",
+      "description": "Bookings essential. Conquer your fears and experience the thrills of abseiling at Kangaroo Point under the safe instruction of qualified facilitators. This is a Chillout event suitable for young people 10-17 years.",
+      "startRaw": "2026-09-23T21:30:00Z",
+      "endRaw": "2026-09-23T23:30:00Z",
+      "venueName": "Kangaroo Point Cliffs Park, Kangaroo Point",
+      "address": "Kangaroo Point Cliffs Park, 29 River Terrace, Kangaroo Point",
+      "url": "http://pinnaclesports.com.au/bcc",
+      "price": "$6",
+      "imageUrl": "https://www.trumba.com/i/DgCnSO8mCqxFt6CyjG1Kglv0.jpg",
+      "organiser": null,
+      "category": "Fitness & well-being,School holidays",
+      "sourceEventId": "202425767",
+      "startISO": "2026-09-24T07:30:00+10:00",
+      "endISO": "2026-09-24T09:30:00+10:00",
+      "provenance": {
+        "sourceId": "trumba-atom",
+        "sourceUrl": "https://www.trumba.com/calendars/brisbane-events-rss.xml?filterview=parks",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "Stand-up paddle boarding",
+      "datetime": "Thu 24 Sep, 7:00 AM",
+      "datetime_iso": "2026-09-24T07:00:00",
+      "datetime_end_iso": "2026-09-24T08:00:00",
+      "location": "Bayside Park, Manly, Bayside Park, 450 Esplanade, Manly",
+      "link": "https://scsurfschools.com.au/book-now/details/218732/active-healthy-brisbane-program-sup/",
+      "cost": "$6",
+      "source": "Fixture trumba-atom",
+      "description": "Bookings essential. Learn the basics of Stand-up paddle boarding. This lesson includes safety and awareness, paddle techniques and activity tips. A sun safe top will be provided. This is a Chillout event suitable for young people 10-17 years.",
+      "image": "https://www.trumba.com/i/DgAebkHogZSr%2Af5ldALxCNY4.jpeg",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Pilates",
+      "datetime": "Thu 24 Sep, 7:00 AM",
+      "datetime_iso": "2026-09-24T07:00:00",
+      "datetime_end_iso": "2026-09-24T08:00:00",
+      "location": "Nudgee Beach Reserve, Nudgee Beach, Nudgee Beach Reserve, 18 Fortitude Street, Nudgee Beach",
+      "link": "https://www.trumba.com/calendars/brisbane-events-rss?eventid=204475619",
+      "cost": "Free",
+      "source": "Fixture trumba-atom",
+      "description": "Pilates helps you strengthen and stretch simultaneously through core-based exercises. Join anytime. This is a GOLD event suitable for seniors.",
+      "image": "https://www.trumba.com/i/DgC5DXkTSDtJhPVEco3jwY-F.jpg",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Abseiling",
+      "datetime": "Thu 24 Sep, 7:30 AM",
+      "datetime_iso": "2026-09-24T07:30:00",
+      "datetime_end_iso": "2026-09-24T09:30:00",
+      "location": "Kangaroo Point Cliffs Park, Kangaroo Point, Kangaroo Point Cliffs Park, 29 River Terrace, Kangaroo Point",
+      "link": "http://pinnaclesports.com.au/bcc",
+      "cost": "$6",
+      "source": "Fixture trumba-atom",
+      "description": "Bookings essential. Conquer your fears and experience the thrills of abseiling at Kangaroo Point under the safe instruction of qualified facilitators. This is a Chillout event suitable for young people 10-17 years.",
+      "image": "https://www.trumba.com/i/DgCnSO8mCqxFt6CyjG1Kglv0.jpg",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ],
+  "rejected": [],
+  "fallbackCalls": []
+}

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Maestro 7: Symphonic Dances
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mrzf5v@dothings
+DTSTART;TZID=Australia/Brisbane:20260926T193000
+DTEND;TZID=Australia/Brisbane:20260926T213000
+SUMMARY:Maestro 7: Symphonic Dances
+DESCRIPTION:A celebration of music that moves the body and soul. From folk 
+ steps to final farewells\, this concert is built around the joy of dance. 
+ At its heart is Rachmaninov’s final major work Symphonic Dances. Written
+  in exile\, it is filled with sweeping emotion\, nostalgia\, and the echoe
+ s of a life in motion. Led by Chief Conductor Umberto Clerici\, it’s a p
+ owerful blend of elegance and vitality complete with an unforgettable saxo
+ phone solo. The evening begins with Dvořák’s Slavonic Dances\, burstin
+ g with Bohemian spirit and irresistible folk rhythms. Then comes soloist J
+ ames Crabb for the Queensland premiere of Holly Harrison’s Concerto for 
+ Classical Accordion and Orchestra\, a bold\, high-voltage work that dances
+  to its own beat. Queensland Symphony Orchestra is proudly supported by Br
+ isbane City Council.
+LOCATION:Queensland Performing Arts Centre (QPAC)\, South Brisbane\, Queens
+ land Performing Arts Centre\, Cnr Melbourne and Grey Street\, South Brisba
+ ne
+URL:https://qso.n.qtix.com.au/tickets/series/qsomaesymphonicdances26/maestr
+ o-7-symphonic-dances-1862356?startDate=09-26-2026
+END:VEVENT
+END:VCALENDAR

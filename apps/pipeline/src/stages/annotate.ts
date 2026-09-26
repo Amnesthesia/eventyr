@@ -1,0 +1,271 @@
+// The one editorial pass over scraped events: assigns the fixed CATEGORIES
+// value, tags, and the four vibe booleans rank.ts and the frontend filter on.
+//
+// Everything factual (title, dates, venue, price, link) is already settled
+// deterministically by normalise.ts and is NOT sent back out for rewriting —
+// the model only sees what it needs to classify, and only its judgement
+// fields are merged back. Mirrors the vibe/tag definitions in
+// BaseProvider.buildFormatSystem so an adapter-sourced event scores the same
+// way an AI-search one does.
+
+import { CATEGORIES, TAG_SET, TAGS } from "@dothingslol/core/shared";
+import { askDetailed, parseJsonArray } from "@dothingslol/llm";
+import { chunkArray } from "@dothingslol/utils/concurrency";
+import { isValidCategory } from "./normalise.ts";
+
+// Annotation classifies each event independently — no cross-item
+// reasoning — so a bigger batch costs accuracy far less than extraction
+// would, and halves the calls.
+
+export interface Annotation {
+	category: string;
+	tags: string[];
+	social: boolean;
+	intellectual: boolean;
+	hands_on: boolean;
+	creative: boolean;
+	drop: boolean;
+}
+
+export type AnnotateFn = (
+	events: Record<string, unknown>[],
+	sourceName: string,
+) => Promise<Annotation[]>;
+
+const SYSTEM_PROMPT = `You are classifying events that have already been extracted from a venue's own listing page. The factual details (title, date, venue, price, link) are already known and correct — do not restate, rewrite, or second-guess them.
+
+For each event you are given, decide only:
+
+- "category": EXACTLY one of ${CATEGORIES.map((c) => `"${c}"`).join(", ")}. Pick the closest fit; use "Community / Other" when nothing else fits.
+- "tags": 3-8 tags, ONLY from this list: ${TAGS.join(", ")}. Add every listed tag that is true of the event, even when the listing does not use the word (a stand-up night is "comedy","standup"; a brewery tour is "drinks","tour"; any night the audience can perform is "open mic"; a philosophy talk is "philosophy"; a pub quiz is "trivia","drinks"). Emit the general AND the specific when both are true — a jazz gig is "music","live music","jazz". Do not invent filler to reach eight. Never emit a tag that is not on the list, and never emit "free".
+
+- "social": true if the main draw is meeting/being around other people (meetups, socials, parties, markets).
+- "intellectual": true if it is talk-, idea- or learning-led (lectures, panels, debates, science/philosophy/history).
+- "hands_on": true if attendees actively make or do something (workshops, classes, participatory sessions).
+- "creative": true if it is arts-led (exhibitions, performance, film, music, literature, design).
+  More than one of these may be true. All four may be false.
+- "drop": true ONLY for things this digest never lists: spectator sport, MLM/network marketing, sales pitches or product demos, purely online/streamed events, and private hire/venue-booking listings. Everything else is false. Do NOT drop something for being niche, mainstream, small, or uninteresting.
+
+Return ONLY a compact JSON array, one object per input event, in the same order, each with an "i" field echoing the input index. No markdown, no code fences, no commentary.`;
+
+/** A missing/unparsable annotation must never lose the event — it falls back
+ * to a usable, if unopinionated, classification. */
+function defaultAnnotation(): Annotation {
+	return {
+		category: "Community / Other",
+		tags: [],
+		social: false,
+		intellectual: false,
+		hands_on: false,
+		creative: false,
+		drop: false,
+	};
+}
+
+export function coerce(raw: Record<string, unknown> | undefined): Annotation {
+	if (!raw) return defaultAnnotation();
+	const tags = Array.isArray(raw.tags)
+		? raw.tags
+				.filter((t): t is string => typeof t === "string")
+				// The model proposes; this decides. Anything off-list is dropped
+				// rather than trusted, which is what makes the closed vocabulary
+				// in shared.ts actually closed. "free" is derived from cost in
+				// curate.ts, so a guessed one is discarded here too.
+				.map((t) => t.trim().toLowerCase())
+				.filter((t) => TAG_SET.has(t) && t !== "free")
+				.slice(0, MAX_TAGS)
+		: [];
+	return {
+		category: isValidCategory(raw.category)
+			? raw.category
+			: "Community / Other",
+		tags,
+		social: raw.social === true,
+		intellectual: raw.intellectual === true,
+		hands_on: raw.hands_on === true,
+		creative: raw.creative === true,
+		drop: raw.drop === true,
+	};
+}
+
+export function createGeminiAnnotator(): AnnotateFn {
+	return async function annotate(events, sourceName) {
+		const batches = chunkArray(
+			events,
+			loadPipelineConfig().stages.annotate.batchSize,
+		);
+		// One prompt per batch, concurrent under llm's Gemini limiter.
+		const outcomes = await askDetailed(
+			batches.map((batch) => {
+				const input = batch.map((e, i) => ({
+					i,
+					title: e.title,
+					description: e.description,
+					location: e.location,
+					source: e.source,
+				}));
+				return `Source: ${sourceName}\n\nEvents:\n${JSON.stringify(input)}`;
+			}),
+			{
+				provider: "gemini",
+				model: loadPipelineConfig().models.annotate.model as any,
+				stage: "annotate",
+				system: SYSTEM_PROMPT,
+				maxOutputTokens: 8000,
+				temperature: 0.1,
+			},
+		);
+		return batches.flatMap((batch, batchIdx) => {
+			const outcome = outcomes[batchIdx];
+			if (outcome.status === "rejected") {
+				console.error(
+					`  ⚠ [annotate/${sourceName}] batch ${batchIdx + 1} failed: ${(outcome.reason as Error).message} — keeping events unclassified`,
+				);
+				return batch.map(() => defaultAnnotation());
+			}
+			const parsed = parseJsonArray<Record<string, unknown>>(
+				outcome.value.text,
+			);
+			const byIndex = new Map<number, Record<string, unknown>>();
+			for (const p of parsed) {
+				if (typeof p?.i === "number") byIndex.set(p.i, p);
+			}
+			return batch.map((_, i) => coerce(byIndex.get(i)));
+		});
+	};
+}
+
+/**
+ * Bump when SYSTEM_PROMPT changes what it asks for, so a reused annotation can
+ * never answer a question the current prompt no longer asks.
+ *
+ * It is part of the reuse KEY rather than a value compared on read: last
+ * week's file was written under the old prompt and carries no version field,
+ * so a stored-version comparison would have nothing to compare against. A
+ * changed key simply misses, and the event is re-annotated. (rank.ts has the
+ * same problem and solves it the other way, by persisting its version into
+ * the payload it writes.)
+ */
+export const ANNOTATE_PROMPT_VERSION = "v4";
+
+/** Matches the prompt's own ceiling. Was an unexplained 4 while the prompt
+ * asked for more, so tags past the fourth were silently thrown away — the cap
+ * and the prompt have to move together or one of them is a lie. */
+const MAX_TAGS = 8;
+
+import { loadPipelineConfig } from "../config/load.js";
+import { stageModelCacheKey } from "../io/cacheKey.js";
+
+/** Identity for reusing a previous week's annotation: same title, start and
+ * venue. Matches the basis of eventHash in shared.ts. */
+export function annotationKey(event: Record<string, unknown>): string {
+	const s = (k: string): string =>
+		typeof event[k] === "string" ? (event[k] as string) : "";
+	const legacyKey = `${ANNOTATE_PROMPT_VERSION}|${s("title")}|${s("datetime_iso")}|${s("location")}`;
+	const cfg = loadPipelineConfig();
+	return stageModelCacheKey(legacyKey, "annotate", cfg.models.annotate);
+}
+
+/**
+ * Previous annotations, keyed by identity. The publishing window is two weeks,
+ * so every scraped event is seen at least twice and a season listing many
+ * times; the classification does not change between runs, so last week's file
+ * (already on disk, already committed) answers for it.
+ */
+export function previousAnnotationIndex(
+	previous: Record<string, unknown>[],
+): Map<string, Record<string, unknown>> {
+	const index = new Map<string, Record<string, unknown>>();
+	for (const e of previous) index.set(annotationKey(e), e);
+	return index;
+}
+
+/**
+ * Lifts a previously annotated event's judgement fields back into an
+ * Annotation, or null when the page's own description has since changed (the
+ * classification was made against different text). An event with no
+ * description at all accepts any previous record — there is no text for the
+ * classification to have been made against.
+ *
+ * This used to also carry a model-written description forward for events
+ * whose page had none. That fallback ("X is a concert / music event held at
+ * Y") was a guess by construction and is gone; enrichTimes.ts now takes the
+ * real description from the event's own page instead, and an event it cannot
+ * describe stays undescribed rather than templated.
+ */
+export function reuseAnnotation(
+	event: Record<string, unknown>,
+	previous: Record<string, unknown> | undefined,
+): Annotation | null {
+	if (!previous || !isValidCategory(previous.category)) return null;
+	const pageDescription = (event.description as string) || "";
+	const prevDescription = (previous.description as string) || "";
+	if (pageDescription && pageDescription !== prevDescription) return null;
+	return {
+		category: previous.category,
+		tags: Array.isArray(previous.tags)
+			? previous.tags.filter((t): t is string => typeof t === "string")
+			: [],
+		social: previous.social === true,
+		intellectual: previous.intellectual === true,
+		hands_on: previous.hands_on === true,
+		creative: previous.creative === true,
+		drop: false,
+	};
+}
+
+/** Merges judgement fields onto the deterministic event. Factual fields,
+ * description included, are never touched. */
+export function applyAnnotation(
+	event: Record<string, unknown>,
+	a: Annotation,
+): Record<string, unknown> {
+	return {
+		...event,
+		category: a.category,
+		tags: a.tags,
+		social: a.social,
+		intellectual: a.intellectual,
+		hands_on: a.hands_on,
+		creative: a.creative,
+		description: (event.description as string) || "",
+	};
+}
+
+/**
+ * Descriptions written by the retired annotate fallback, which composed one
+ * sentence out of the title, venue and category when a page gave no
+ * description of its own: "The Spyro Experiment is a comedy event held at
+ * Good Chat Comedy Club." They tell a reader nothing the card already shows,
+ * and rank.ts scored 170 of them off that text alone, which is what pinned
+ * most of the digest to 4–6.
+ *
+ * Nothing generates these any more (adapters now take the real description
+ * off the event's own detail page), but carry-forward keeps republishing the
+ * ones already in data/{city}.json — indefinitely for a long-running
+ * exhibition — so they are dropped on the way through. Blanked rather than
+ * dropping the event: everything else about the record is still good, and an
+ * empty description renders as nothing rather than as filler.
+ *
+ * Matched on the shape the prompt produced — the description opens with the
+ * event's own title, says "is a…", and stops inside a sentence or two.
+ * Verified against the 453-event digest that carried them: 163 of 163 matched
+ * with no false positive on real page copy.
+ *
+ * ponytail: delete once no data/{city}.json contains one — check with
+ * `grep -c 'is a .* held at' data/*.json`.
+ */
+const RETIRED_TEMPLATE_CATEGORY_WORD =
+	/\b(event|exhibition|concert|show|performance|workshop|class|festival|screening|gig|meetup|comedy|social)\b/i;
+
+export function isRetiredTemplateDescription(
+	event: Record<string, unknown>,
+): boolean {
+	const description = ((event.description as string) ?? "").trim();
+	const title = ((event.title as string) ?? "").trim();
+	if (!title || description.length >= 160) return false;
+	if (!description.toLowerCase().startsWith(`${title.toLowerCase()} is `)) {
+		return false;
+	}
+	return RETIRED_TEMPLATE_CATEGORY_WORD.test(description);
+}

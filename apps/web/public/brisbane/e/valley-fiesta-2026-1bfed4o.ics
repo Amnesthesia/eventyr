@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Valley Fiesta 2026
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1bfed4o@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T130000
+DTEND;TZID=Australia/Brisbane:20261003T220000
+SUMMARY:Valley Fiesta 2026
+DESCRIPTION:Valley Fiesta is back! Taking place on Saturday 3 October\, thi
+ s year’s fiesta is bigger than ever\, celebrating 30 years in the heart 
+ of the Valley. Grab your friends\, hit the Valley and experience Brisbane'
+ s biggest free street festival. Free entry. Live music. All-day festival v
+ ibes. View the full festival line-up and set times now via Council's websi
+ te . Brought to you by Brisbane City Council and produced by Moondust Merc
+ hants. Supported by The Brightside\, QMF and QUIVR. Sponsored by Aperol\, 
+ IJS\, Red Bull\, SAE University College and Store DJ.
+LOCATION:Brunswick Street Mall\, Fortitude Valley\, Brunswick Street Mall\,
+  Brunswick Street\, Fortitude Valley
+URL:https://www.brisbane.qld.gov.au/events-arts-and-culture/what-s-on-in-br
+ isbane/valley-fiesta
+END:VEVENT
+END:VCALENDAR

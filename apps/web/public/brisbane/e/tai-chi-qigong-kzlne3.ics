@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tai Chi Qigong
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kzlne3@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T080000
+DTEND;TZID=Australia/Brisbane:20261003T090000
+SUMMARY:Tai Chi Qigong
+DESCRIPTION:This dynamic activity is invigorating and will help you feel re
+ laxed\, refreshed and calm. Rejuvenate your body and learn to create a tra
+ nquil mind. Join any week.
+LOCATION:New Farm Park\, New Farm\, New Farm Park\, 137 Sydney Street\, New
+  Farm
+URL:https://taichiqld.com/
+END:VEVENT
+END:VCALENDAR

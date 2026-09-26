@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Shannon Noll - The Road in Front of Me Tour
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-t4o23u@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T200000
+DTEND;TZID=Australia/Brisbane:20261002T220000
+SUMMARY:Shannon Noll - The Road in Front of Me Tour
+DESCRIPTION:Find Shannon Noll - The Road in Front of Me Tour tickets at www
+ .thetriffid.com.au | Videos\, biography\, tour dates\, performance times. 
+ VIP packages available.
+LOCATION:The Triffid Fortitude Valley
+URL:https://thetriffid.com.au/all-events/shannon-noll-tickets-ae6107
+END:VEVENT
+END:VCALENDAR

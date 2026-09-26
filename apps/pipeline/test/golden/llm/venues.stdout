@@ -1,0 +1,8 @@
+→ venues: 9 raw → 7 venues (0 alias, 0 cached, 1 rule, 8 model, 1 not a venue, 0 unresolved); 11/12 events named
+    "Queensland Art Gallery" ⇒ "QAG"
+
+Model usage
+  stage                     calls         in      out   think   cached   cachew  search    ~usd
+  venues                        1        454      108       0        0        0       0   0.000
+  TOTAL                         1        454      108       0        0        0       0   0.000
+  → $ROOT/data/brisbane/usage/2026-09-21.json

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:gd="http://schemas.google.com/g/2005" xmlns:x-trumba="http://schemas.trumba.com/atom/x-trumba" xmlns:gc="http://base.google.com/cns/1.0" xmlns="http://www.w3.org/2005/Atom">
+	<id>http://uid.trumba.com/calendar/861997</id>
+	<updated>2024-08-02T02:07:20Z</updated>
+	<title type="text">Brisbane events rss feed</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="https://www.brisbane.qld.gov.au/brisbane-events" />
+	<link rel="self" type="application/atom+xml" href="https://www.brisbane.qld.gov.au/brisbane-events.xml" />
+	<author>
+		<name>Brisbane events rss feed</name>
+	</author>
+	<generator version="11.26123" uri="http://www.trumba.com/">Trumba Calendar</generator>
+	<gd:where valueString="Brisbane" />
+	<entry>
+		<id>http://uid.trumba.com/event/201594518</id>
+		<category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/g/2005#event" />
+		<title type="text">Stand-up paddle boarding</title>
+		<content type="html">Thursday, 24 September 2026, 7&amp;nbsp;&amp;ndash;&amp;nbsp;8am &lt;br/&gt;&lt;br/&gt;&lt;img src="https://www.trumba.com/i/DgAebkHogZSr%2Af5ldALxCNY4.jpeg?w=100&amp;h=60" title="Stand-up paddle boarding" alt="Stand-up paddle boarding" width="100" srcset="https://www.trumba.com/i/DgAebkHogZSr%2Af5ldALxCNY4.jpeg?w=200&amp;amp;h=120 2x" /&gt;&lt;br/&gt;&lt;br/&gt;Bookings essential. Learn the basics of Stand-up paddle boarding. This lesson includes safety and awareness, paddle techniques and activity tips. A sun safe top will be provided. &lt;br /&gt;&lt;br /&gt;This is a Chillout event suitable for young people 10-17 years. &lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bookings&lt;/b&gt;:&amp;nbsp;Bookings essential. To book visit &lt;a href="https://scsurfschools.com.au/book-now/details/218732/active-healthy-brisbane-program-sup/" target="_blank" rel="noopener"&gt;Sunshine Coast Surf Schools&lt;/a&gt;.&amp;#160;For more information phone Leighton on 0412 563 191. &lt;br/&gt;&lt;b&gt;Activity type&lt;/b&gt;:&amp;nbsp;Adventure, Kids activities, School holidays, Water activities &lt;br/&gt;&lt;b&gt;Requirements&lt;/b&gt;:&amp;nbsp;Towel, swimwear, sunscreen and water. &lt;br/&gt;&lt;b&gt;Age range&lt;/b&gt;:&amp;nbsp;Kids, Teens &lt;br/&gt;&lt;b&gt;Age&lt;/b&gt;:&amp;nbsp;10-17 years old &lt;br/&gt;&lt;b&gt;Cost&lt;/b&gt;:&amp;nbsp;$6 &lt;br/&gt;&lt;b&gt;Event type&lt;/b&gt;:&amp;nbsp;Fitness &amp;amp; well-being, School holidays &lt;br/&gt;&lt;b&gt;Venue&lt;/b&gt;:&amp;nbsp;&lt;a href="javascript:Nav(&amp;#39;objectid=288784&amp;amp;objecttype=19243&amp;amp;seotitle=Bayside-Park-Manly&amp;amp;key=7e875dea8409c3674b57d7fb01ea7b32&amp;amp;view=object&amp;amp;-childview=&amp;amp;-index=&amp;#39;,&amp;#39;detailBase&amp;#39;)"&gt;Bayside Park, Manly&lt;/a&gt; &lt;br/&gt;&lt;b&gt;Venue address&lt;/b&gt;:&amp;nbsp;&lt;a href="http://maps.google.com/?q=-27.4524943559,153.186922265(Bayside+Park%2C+Manly)" target="_blank" rel="noopener"&gt;Bayside Park, 450 Esplanade, Manly&lt;/a&gt; &lt;br/&gt;&lt;b&gt;Venue type&lt;/b&gt;:&amp;nbsp;Park &lt;br/&gt;&lt;b&gt;Meeting point&lt;/b&gt;:&amp;nbsp;In the park, close to amenities block.</content>
+		<link rel="alternate" type="text/html" href="https://www.brisbane.qld.gov.au/brisbane-events?trumbaEmbed=view%3Devent%26eventid%3D201594518" />
+		<author>
+			<name>Brisbane events rss feed</name>
+		</author>
+		<gd:transparency value="http://schemas.google.com/g/2005#event.transparent" />
+		<gd:where valueString="Bayside Park, Manly" />
+		<gd:when startTime="2026-09-23T21:00:00Z" endTime="2026-09-23T22:00:00Z" />
+		<gc:formatteddatetime type="string">Thursday, 24 September 2026, 7 - 8am</gc:formatteddatetime>
+		<gc:notes type="string">Bookings essential. Learn the basics of Stand-up paddle boarding. This lesson includes safety and awareness, paddle techniques and activity tips. A sun safe top will be provided. 
+
+This is a Chillout event suitable for young people 10-17 years.</gc:notes>
+		<gc:eventtype type="number">Move Well Brisbane events</gc:eventtype>
+		<gc:bookings type="string">Bookings essential. To book visit &lt;a href="https://scsurfschools.com.au/book-now/details/218732/active-healthy-brisbane-program-sup/" target="_blank"&gt;Sunshine Coast Surf Schools&lt;/a&gt;.&amp;nbsp;For more information phone Leighton on 0412 563 191.</gc:bookings>
+		<gc:activitytype type="string">Adventure,Kids activities,School holidays,Water activities</gc:activitytype>
+		<gc:requirements type="string">Towel, swimwear, sunscreen and water.</gc:requirements>
+		<gc:agerange type="string">Kids,Teens</gc:agerange>
+		<gc:age type="string">10-17 years old</gc:age>
+		<gc:eventimage type="url">https://www.trumba.com/i/DgAebkHogZSr%2Af5ldALxCNY4.jpeg</gc:eventimage>
+		<gc:cost type="string">$6</gc:cost>
+		<gc:eventtype type="string">Fitness &amp; well-being,School holidays</gc:eventtype>
+		<gc:venue type="string">Bayside Park, Manly</gc:venue>
+		<gc:venueaddress type="location">Bayside Park, 450 Esplanade, Manly</gc:venueaddress>
+		<gc:venuetype type="string">Park</gc:venuetype>
+		<gc:meetingpoint type="string">In the park, close to amenities block.</gc:meetingpoint>
+		<gc:cateoryCalendar>Brisbane's calendar|Active and healthy|Chillout</gc:cateoryCalendar>
+	</entry>
+<entry>
+		<id>http://uid.trumba.com/event/204475619</id>
+		<gd:masterId type="text">http://uid.trumba.com/master/204475618</gd:masterId>
+		<category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/g/2005#event" />
+		<title type="text">Pilates</title>
+		<content type="html">Thursday, 24 September 2026, 7&amp;nbsp;&amp;ndash;&amp;nbsp;8am &lt;br/&gt;&lt;br/&gt;&lt;img src="https://www.trumba.com/i/DgC5DXkTSDtJhPVEco3jwY-F.jpg?w=100&amp;h=60" title="Pilates" alt="Pilates" width="100" srcset="https://www.trumba.com/i/DgC5DXkTSDtJhPVEco3jwY-F.jpg?w=200&amp;amp;h=120 2x" /&gt;&lt;br/&gt;&lt;br/&gt;Pilates helps you strengthen and stretch simultaneously through core-based exercises. Join anytime. &lt;br /&gt;&lt;br /&gt;This is a GOLD event suitable for seniors. &lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bookings&lt;/b&gt;:&amp;nbsp;No bookings required. For more information phone Sharon from Precision Pilates on 0439 996 049. &lt;br/&gt;&lt;b&gt;Activity type&lt;/b&gt;:&amp;nbsp;Mind and body &lt;br/&gt;&lt;b&gt;Requirements&lt;/b&gt;:&amp;nbsp;Exercise mat and stretch band if you have one. &lt;br/&gt;&lt;b&gt;Age range&lt;/b&gt;:&amp;nbsp;Seniors &lt;br/&gt;&lt;b&gt;Age&lt;/b&gt;:&amp;nbsp;Seniors &lt;br/&gt;&lt;b&gt;Cost&lt;/b&gt;:&amp;nbsp;Free &lt;br/&gt;&lt;b&gt;Event type&lt;/b&gt;:&amp;nbsp;Fitness &amp;amp; well-being, Free &lt;br/&gt;&lt;b&gt;Venue&lt;/b&gt;:&amp;nbsp;&lt;a href="javascript:Nav(&amp;#39;objectid=221657&amp;amp;objecttype=19243&amp;amp;seotitle=Nudgee-Beach-Reserve-Nudgee-Beach&amp;amp;key=9aba56008510a547264f9bf4ab1cb330&amp;amp;view=object&amp;amp;-childview=&amp;amp;-index=&amp;#39;,&amp;#39;detailBase&amp;#39;)"&gt;Nudgee Beach Reserve, Nudgee Beach&lt;/a&gt; &lt;br/&gt;&lt;b&gt;Venue address&lt;/b&gt;:&amp;nbsp;&lt;a href="http://maps.google.com/?q=-27.34381,153.097946(Nudgee+Beach+Reserve%2C+Nudgee+Beach)" target="_blank" rel="noopener"&gt;Nudgee Beach Reserve, 18 Fortitude Street, Nudgee Beach&lt;/a&gt; &lt;br/&gt;&lt;b&gt;Venue type&lt;/b&gt;:&amp;nbsp;Park &lt;br/&gt;&lt;b&gt;Waterway access facilities&lt;/b&gt;:&amp;nbsp;Canoe ramp &lt;br/&gt;&lt;b&gt;Waterway access information&lt;/b&gt;:&amp;nbsp;Nudgee Beach canoe ramp (off O&amp;#39;Quinn Street, Nudgee Beach) |&amp;#160;Status: open,  Nudgee Beach Reserve canoe ramp |&amp;#160;Status: open,  &amp;#160; &lt;br/&gt;&lt;b&gt;Meeting point&lt;/b&gt;:&amp;nbsp;By the basketball court.</content>
+		<link rel="alternate" type="text/html" href="https://www.brisbane.qld.gov.au/brisbane-events?trumbaEmbed=view%3Devent%26eventid%3D204475619" />
+		<author>
+			<name>Brisbane events rss feed</name>
+		</author>
+		<gd:transparency value="http://schemas.google.com/g/2005#event.transparent" />
+		<gd:where valueString="Nudgee Beach Reserve, Nudgee Beach" />
+		<gd:when startTime="2026-09-23T21:00:00Z" endTime="2026-09-23T22:00:00Z" />
+		<gc:formatteddatetime type="string">Thursday, 24 September 2026, 7 - 8am</gc:formatteddatetime>
+		<gc:notes type="string">Pilates helps you strengthen and stretch simultaneously through core-based exercises. Join anytime. 
+
+This is a GOLD event suitable for seniors.</gc:notes>
+		<gc:eventtype type="number">Move Well Brisbane events</gc:eventtype>
+		<gc:bookings type="string">No bookings required. For more information phone Sharon from Precision Pilates on 0439 996 049.</gc:bookings>
+		<gc:activitytype type="string">Mind and body</gc:activitytype>
+		<gc:requirements type="string">Exercise mat and stretch band if you have one.</gc:requirements>
+		<gc:agerange type="string">Seniors</gc:agerange>
+		<gc:age type="string">Seniors</gc:age>
+		<gc:eventimage type="url">https://www.trumba.com/i/DgC5DXkTSDtJhPVEco3jwY-F.jpg</gc:eventimage>
+		<gc:cost type="string">Free</gc:cost>
+		<gc:eventtype type="string">Fitness &amp; well-being,Free</gc:eventtype>
+		<gc:venue type="string">Nudgee Beach Reserve, Nudgee Beach</gc:venue>
+		<gc:venueaddress type="location">Nudgee Beach Reserve, 18 Fortitude Street, Nudgee Beach</gc:venueaddress>
+		<gc:venuetype type="string">Park</gc:venuetype>
+		<gc:waterwayaccessfacilities type="string">Canoe ramp</gc:waterwayaccessfacilities>
+		<gc:waterwayaccessinformation type="string">Nudgee Beach canoe ramp (off O&amp;#39;Quinn Street, Nudgee Beach) |&amp;nbsp;Status: open
+ Nudgee Beach Reserve canoe ramp |&amp;nbsp;Status: open
+ &amp;nbsp;</gc:waterwayaccessinformation>
+		<gc:meetingpoint type="string">By the basketball court.</gc:meetingpoint>
+		<gc:cateoryCalendar>Brisbane's calendar|Active and healthy|GOLD</gc:cateoryCalendar>
+	</entry>
+<entry>
+		<id>http://uid.trumba.com/event/202425767</id>
+		<category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/g/2005#event" />
+		<title type="text">Abseiling</title>
+		<content type="html">Thursday, 24 September 2026, 7:30&amp;nbsp;&amp;ndash;&amp;nbsp;9:30am &lt;br/&gt;&lt;br/&gt;&lt;img src="https://www.trumba.com/i/DgCnSO8mCqxFt6CyjG1Kglv0.jpg?w=100&amp;h=66" title="Abseiling" alt="Abseiling" width="100" srcset="https://www.trumba.com/i/DgCnSO8mCqxFt6CyjG1Kglv0.jpg?w=200&amp;amp;h=132 2x" /&gt;&lt;br/&gt;&lt;br/&gt;Bookings essential. Conquer your fears and experience the thrills of abseiling at Kangaroo Point under the safe instruction of qualified facilitators.&lt;br /&gt;&lt;br /&gt;This is a Chillout event suitable for young people 10-17 years. &lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bookings&lt;/b&gt;:&amp;nbsp;Bookings essential. To book visit &lt;a href="http://pinnaclesports.com.au/bcc" target="_blank" rel="noopener"&gt;Pinnacle Sports&lt;/a&gt;. For more information phone Pinnacle Sports on 3368 3335. &lt;br/&gt;&lt;b&gt;Activity type&lt;/b&gt;:&amp;nbsp;Adventure, Kids activities, School holidays &lt;br/&gt;&lt;b&gt;Requirements&lt;/b&gt;:&amp;nbsp;Participants under 16 years of age must be accompanied by an adult for the duration of the activity. &lt;br/&gt;&lt;b&gt;Age range&lt;/b&gt;:&amp;nbsp;Kids, Teens &lt;br/&gt;&lt;b&gt;Age&lt;/b&gt;:&amp;nbsp;10-17 years old &lt;br/&gt;&lt;b&gt;Cost&lt;/b&gt;:&amp;nbsp;$6 &lt;br/&gt;&lt;b&gt;Event type&lt;/b&gt;:&amp;nbsp;Fitness &amp;amp; well-being, School holidays &lt;br/&gt;&lt;b&gt;Venue&lt;/b&gt;:&amp;nbsp;&lt;a href="javascript:Nav(&amp;#39;objectid=222090&amp;amp;objecttype=19243&amp;amp;seotitle=Kangaroo-Point-Cliffs-Park-Kangaroo-Point&amp;amp;key=f8d7122af6c9bb70650ce28f427d0405&amp;amp;view=object&amp;amp;-childview=&amp;amp;-index=&amp;#39;,&amp;#39;detailBase&amp;#39;)"&gt;Kangaroo Point Cliffs Park, Kangaroo Point&lt;/a&gt; &lt;br/&gt;&lt;b&gt;Venue address&lt;/b&gt;:&amp;nbsp;&lt;a href="http://maps.google.com/?q=-27.48089404440687,153.03307546112904(Kangaroo+Point+Cliffs+Park%2C+Kangaroo+Point)" target="_blank" rel="noopener"&gt;Kangaroo Point Cliffs Park, 29 River Terrace, Kangaroo Point&lt;/a&gt; &lt;br/&gt;&lt;b&gt;Venue type&lt;/b&gt;:&amp;nbsp;Park &lt;br/&gt;&lt;b&gt;Waterway access facilities&lt;/b&gt;:&amp;nbsp;Canoe ramp, Single pontoon &lt;br/&gt;&lt;b&gt;Waterway access information&lt;/b&gt;:&amp;nbsp;Kangaroo Point canoe ramp | Status: open, Naval Stores pontoon | Status: open, &amp;#160; &lt;br/&gt;&lt;b&gt;Meeting point&lt;/b&gt;:&amp;nbsp;Scout Place, 200 River Terrace, Kangaroo Point. Look for Active &amp;amp; Healthy sign.</content>
+		<link rel="alternate" type="text/html" href="https://www.brisbane.qld.gov.au/brisbane-events?trumbaEmbed=view%3Devent%26eventid%3D202425767" />
+		<author>
+			<name>Brisbane events rss feed</name>
+		</author>
+		<gd:transparency value="http://schemas.google.com/g/2005#event.transparent" />
+		<gd:where valueString="Kangaroo Point Cliffs Park, Kangaroo Point" />
+		<gd:when startTime="2026-09-23T21:30:00Z" endTime="2026-09-23T23:30:00Z" />
+		<gc:formatteddatetime type="string">Thursday, 24 September 2026, 7:30 - 9:30am</gc:formatteddatetime>
+		<gc:notes type="string">Bookings essential. Conquer your fears and experience the thrills of abseiling at Kangaroo Point under the safe instruction of qualified facilitators.
+
+This is a Chillout event suitable for young people 10-17 years.</gc:notes>
+		<gc:eventtype type="number">Move Well Brisbane events</gc:eventtype>
+		<gc:bookings type="string">Bookings essential. To book visit &lt;a href="http://pinnaclesports.com.au/bcc" target="_blank"&gt;Pinnacle Sports&lt;/a&gt;. For more information phone Pinnacle Sports on 3368 3335.</gc:bookings>
+		<gc:activitytype type="string">Adventure,Kids activities,School holidays</gc:activitytype>
+		<gc:requirements type="string">Participants under 16 years of age must be accompanied by an adult for the duration of the activity.</gc:requirements>
+		<gc:agerange type="string">Kids,Teens</gc:agerange>
+		<gc:age type="string">10-17 years old</gc:age>
+		<gc:eventimage type="url">https://www.trumba.com/i/DgCnSO8mCqxFt6CyjG1Kglv0.jpg</gc:eventimage>
+		<gc:cost type="string">$6</gc:cost>
+		<gc:eventtype type="string">Fitness &amp; well-being,School holidays</gc:eventtype>
+		<gc:venue type="string">Kangaroo Point Cliffs Park, Kangaroo Point</gc:venue>
+		<gc:venueaddress type="location">Kangaroo Point Cliffs Park, 29 River Terrace, Kangaroo Point</gc:venueaddress>
+		<gc:venuetype type="string">Park</gc:venuetype>
+		<gc:waterwayaccessfacilities type="string">Canoe ramp,Single pontoon</gc:waterwayaccessfacilities>
+		<gc:waterwayaccessinformation type="string">Kangaroo Point canoe ramp | Status: open
+Naval Stores pontoon | Status: open
+
+&amp;nbsp;</gc:waterwayaccessinformation>
+		<gc:meetingpoint type="string">Scout Place, 200 River Terrace, Kangaroo Point. Look for Active &amp; Healthy sign.</gc:meetingpoint>
+		<gc:cateoryCalendar>Brisbane's calendar|Active and healthy|Chillout</gc:cateoryCalendar>
+	</entry>
+</feed>

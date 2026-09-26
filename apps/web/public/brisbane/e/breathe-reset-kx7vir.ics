@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Breathe & Reset
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-kx7vir@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T173000
+DTEND;TZID=Australia/Brisbane:20260930T181500
+SUMMARY:Breathe & Reset
+DESCRIPTION:Combining gentle movement with a focus on effective pranayama b
+ reathwork techniques to help reduce stress\, improve focus\, and support o
+ verall wellbeing.
+LOCATION:Bulimba Riverside Park\, Bulimba\, Bulimba Riverside Park\, 57 Add
+ ison Avenue\, Bulimba
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=209071447
+END:VEVENT
+END:VCALENDAR

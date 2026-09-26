@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pilates
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1fehn1e@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T093000
+DTEND;TZID=Australia/Brisbane:20261002T103000
+SUMMARY:Pilates
+DESCRIPTION:Pilates helps you strengthen and stretch simultaneously through
+  core-based exercises. Join anytime.
+LOCATION:Oriel Park\, Ascot\, Oriel Park\, 14 Alexandra Road\, Ascot
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=204475641
+END:VEVENT
+END:VCALENDAR

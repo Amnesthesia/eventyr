@@ -1,0 +1,85 @@
+{
+  "data_as_of": "2026-09-26",
+  "cities": [
+    {
+      "city": "Brisbane",
+      "city_key": "brisbane",
+      "slug": "brisbane",
+      "timezone": "Australia/Brisbane",
+      "data_as_of": "2026-09-24",
+      "days": [
+        "/ai/brisbane/2026-09-26.json",
+        "/ai/brisbane/2026-09-27.json"
+      ],
+      "week": "/ai/brisbane/week-2026-09-21.json",
+      "week_categories": [
+        {
+          "category": "Public Lecture",
+          "slug": "talks",
+          "file": "/ai/brisbane/week-2026-09-21/talks.json"
+        },
+        {
+          "category": "Workshop / Class",
+          "slug": "workshops",
+          "file": "/ai/brisbane/week-2026-09-21/workshops.json"
+        },
+        {
+          "category": "Concert / Music",
+          "slug": "music",
+          "file": "/ai/brisbane/week-2026-09-21/music.json"
+        },
+        {
+          "category": "Social / Meetup",
+          "slug": "social",
+          "file": "/ai/brisbane/week-2026-09-21/social.json"
+        },
+        {
+          "category": "Arts / Exhibition",
+          "slug": "arts",
+          "file": "/ai/brisbane/week-2026-09-21/arts.json"
+        },
+        {
+          "category": "Community / Other",
+          "slug": "community",
+          "file": "/ai/brisbane/week-2026-09-21/community.json"
+        }
+      ]
+    },
+    {
+      "city": "Byron Bay",
+      "city_key": "byron",
+      "slug": "byron",
+      "timezone": "Australia/Sydney",
+      "data_as_of": "2026-09-08",
+      "days": [],
+      "week": null,
+      "week_categories": []
+    },
+    {
+      "city": "Gold Coast",
+      "city_key": "goldcoast",
+      "slug": "gold-coast",
+      "timezone": "Australia/Brisbane",
+      "data_as_of": "2026-09-20",
+      "days": [
+        "/ai/gold-coast/2026-09-26.json",
+        "/ai/gold-coast/2026-09-27.json"
+      ],
+      "week": "/ai/gold-coast/week-2026-09-21.json",
+      "week_categories": []
+    },
+    {
+      "city": "Sunshine Coast",
+      "city_key": "sunnycoast",
+      "slug": "sunshine-coast",
+      "timezone": "Australia/Brisbane",
+      "data_as_of": "2026-09-20",
+      "days": [
+        "/ai/sunshine-coast/2026-09-26.json",
+        "/ai/sunshine-coast/2026-09-27.json"
+      ],
+      "week": "/ai/sunshine-coast/week-2026-09-21.json",
+      "week_categories": []
+    }
+  ]
+}

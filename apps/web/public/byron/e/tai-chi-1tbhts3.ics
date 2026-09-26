@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//byron//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tai Chi
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:byron-1tbhts3@dothings
+DTSTART;TZID=Australia/Sydney:20260908T111500
+DTEND;TZID=Australia/Sydney:20260908T131500
+SUMMARY:Tai Chi
+DESCRIPTION:This gentle and flowing Tai Chi course is based on a program de
+ veloped by Dr Paul Lam for people with arthritis\, but is suitable for any
+ one looking to improve their strength\, flexibility and balance.
+LOCATION:Byron Community Centre
+URL:https://www.byroncentre.com.au/community-events/tai-chi
+END:VEVENT
+END:VCALENDAR

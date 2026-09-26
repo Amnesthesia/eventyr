@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Mean Girls (2004)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-11migcj@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T140000
+DTEND;TZID=Australia/Brisbane:20261003T160000
+SUMMARY:Mean Girls (2004)
+DESCRIPTION:Classic screening. New Farm\, Red Hill\, Yatala Drive-In\, Rega
+ l Graceville & Tower Cinemas Newcastle. Mean Girls' Day screenings. Cady H
+ eron is a hit with The Plastics\, the A-list girl clique at her new school
+ \, until she makes the mistake of falling for Aaron Samuels\, the ex-boyfr
+ iend of alpha Plastic Regina George.
+LOCATION:Regal Twin Cinema\, 381 Honour Ave\, Graceville
+URL:https://www.fivestarcinemas.com.au/regal/movie/ST00002942-mean-girls-20
+ 04
+END:VEVENT
+END:VCALENDAR

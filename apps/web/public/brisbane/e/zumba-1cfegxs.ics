@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Zumba®
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1cfegxs@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T093000
+DTEND;TZID=Australia/Brisbane:20260924T103000
+SUMMARY:Zumba®
+DESCRIPTION:Improve your fitness\, burn hundreds of calories and learn some
+  new dance moves! The classes move between high and low intensity dance mo
+ ves designed to get your heart rate up and boost cardio endurance. Come jo
+ in the party.
+LOCATION:Elorac Place Community Centre\, Elorac Place Community Centre\, 11
+ A Southampton Road\, Ellen Grove
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20449928
+ 8
+END:VEVENT
+END:VCALENDAR

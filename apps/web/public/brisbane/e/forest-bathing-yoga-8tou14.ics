@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Forest bathing yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-8tou14@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T073000
+DTEND;TZID=Australia/Brisbane:20260924T083000
+SUMMARY:Forest bathing yoga
+DESCRIPTION:Bookings essential. Join us on the platform of the senses trail
+  surrounded by bushland for an hour of forest bathing yoga. Allow your sen
+ ses to absorb the beautiful forests while stretching and strengthening you
+ r body mindfully. Suitable for all abilities.
+LOCATION:Downfall Creek Bushland Centre\, Downfall Creek Bushland Centre\, 
+ 815 Rode Road\, Chermside West
+URL:https://eventbrite.com.au/e/forest-bathing-yoga-tickets-204904885027
+END:VEVENT
+END:VCALENDAR

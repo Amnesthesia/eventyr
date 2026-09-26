@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Footloose Fun - line dancing classes
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-uo1kh6@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T183000
+DTEND;TZID=Australia/Brisbane:20260928T205000
+SUMMARY:Footloose Fun - line dancing classes
+DESCRIPTION:Keen to learn bootscooting in an upbeat and entertaining enviro
+ nment? Come along to Footloose Fun line dancing classes\, held every Monda
+ y night at Northgate Hall. Sessions: 6.30-7.40pm - beginner level 7.45-8.5
+ 0pm - improver/intermediate level. $15pp for the night\, regardless of if 
+ you are there for one lesson or both. Kids can come along for free\, provi
+ ded they are accompanied by a paying adult. Wear closed-in shoes which won
+ 't stick to the floor\, and clothes you are comfy moving around in (denim\
+ , activewear\, whatever suits). No need to book in\, just turn up! Bring y
+ our friends\, or come along on your own. No prior knowledge is needed. For
+  more information\, visit the Footloose Fun website or contact Claire Harr
+ is on 0400 291 447 or via email .
+LOCATION:Northgate Hall\, Northgate\, Northgate Hall\, 34 Ridge Street\, No
+ rthgate
+URL:http://www.footloosefun.com.au/
+END:VEVENT
+END:VCALENDAR

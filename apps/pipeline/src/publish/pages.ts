@@ -1,0 +1,141 @@
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+import {
+	CATEGORY_META,
+	eventPath,
+	isTopPick,
+	KEY_TO_SLUG,
+	SITE_URL,
+	toISODate,
+} from "@dothingslol/core/shared";
+import { loadCityConfig } from "../config/city.js";
+import type { Logger } from "../config/context.js";
+import { DATA_ROOT, WEB_PUBLIC_DIR } from "../config/paths.js";
+
+const BASE_URL = SITE_URL;
+
+const CATEGORY_SLUGS = Object.values(CATEGORY_META).map((m) => m.slug);
+
+// Matches the slugs src/pages/[city]/[timeframe].astro generates.
+const TIMEFRAME_SLUGS = ["today", "tomorrow", "this-weekend"];
+
+interface CityMeta {
+	key: string;
+	generated_at: string;
+	/** Every event's own page. Pre-rendered so a shared link unfurls as that
+	 * event rather than as the city (src/pages/[city]/e/[event].astro). */
+	eventPaths: string[];
+}
+
+/**
+ * Every <loc> ends in a slash, matching what the server answers 200 to.
+ * Astro writes `<path>/index.html` and GitHub Pages 301s the slash-less form,
+ * so without this the whole sitemap was a list of redirects.
+ */
+function buildSitemap(cities: CityMeta[], today: string): string {
+	const urls = [
+		`  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+		...cities.flatMap((c) => {
+			const slug = KEY_TO_SLUG[c.key] ?? c.key;
+			const cityUrl = `  <url>\n    <loc>${BASE_URL}/${slug}/</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`;
+			const catUrls = CATEGORY_SLUGS.map(
+				(cat) =>
+					`  <url>\n    <loc>${BASE_URL}/${slug}/${cat}/</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>`,
+			);
+			// These three change what they show every day (see [timeframe].astro
+			// and deploy.yml's daily rebuild), so lastmod is the build date rather
+			// than the underlying data's generated_at.
+			const timeframeUrls = TIMEFRAME_SLUGS.map(
+				(tf) =>
+					`  <url>\n    <loc>${BASE_URL}/${slug}/${tf}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>`,
+			);
+			// Lower priority than the city and category pages, and weekly like
+			// them: an event page is a share target first and a search result
+			// second. They are indexable — a hard 404 once the event rolls off is
+			// not a penalty, and GitHub Pages serves a real 404 — but they should
+			// not outrank the pages that are always there.
+			const eventUrls = c.eventPaths.map(
+				(path) =>
+					`  <url>\n    <loc>${BASE_URL}${path}</loc>\n    <lastmod>${c.generated_at}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.5</priority>\n  </url>`,
+			);
+			return [cityUrl, ...catUrls, ...timeframeUrls, ...eventUrls];
+		}),
+	];
+	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
+}
+
+export interface PublishPagesResult {
+	cityCount: number;
+}
+
+/**
+ * Every city in one pass, like markdown.ts/rss.ts, so it needs no CITY env
+ * var — it discovers the set of cities from data/*.json.
+ */
+export async function publishPages(log: Logger): Promise<PublishPagesResult> {
+	mkdirSync(DATA_ROOT, { recursive: true });
+
+	const cities: Record<string, unknown>[] = [];
+	const cityMeta: CityMeta[] = [];
+
+	const jsonFiles = readdirSync(DATA_ROOT)
+		.filter(
+			(f) =>
+				f.endsWith(".json") && f !== "index.json" && !f.includes("_raw.json"),
+		)
+		.sort()
+		.map((f) => join(DATA_ROOT, f));
+
+	const now = new Date();
+	const cityToday: string[] = [];
+	for (const f of jsonFiles) {
+		let payload: Record<string, unknown>;
+		try {
+			payload = JSON.parse(readFileSync(f, "utf-8")) as Record<string, unknown>;
+		} catch {
+			log.log(`⚠ Skipping ${f} — could not parse`);
+			continue;
+		}
+		// Outside the try: a city whose sources/{city}.yml is broken must stop
+		// the build, not be skipped as "could not parse".
+		const { timezone } = loadCityConfig(payload.city_key as string);
+		const today = toISODate(now, timezone);
+		cityToday.push(today);
+		const events = (payload.events as Record<string, unknown>[]) ?? [];
+		cities.push({
+			key: payload.city_key,
+			name: payload.city,
+			week_start: payload.week_start,
+			week_end: payload.week_end,
+			event_count: events.length,
+			top_pick_count: events.filter((e) =>
+				isTopPick(e, payload.week_start as string, payload.week_end as string),
+			).length,
+		});
+		cityMeta.push({
+			key: payload.city_key as string,
+			generated_at: (payload.generated_at as string) ?? today,
+			eventPaths: events.map((e) => eventPath(payload.city_key as string, e)),
+		});
+	}
+
+	// One date for the whole index: the latest any published city has reached,
+	// so it comes from the cities' zones and never from the host's.
+	const today = cityToday.sort().at(-1) ?? now.toISOString().slice(0, 10);
+
+	const index = {
+		generated_at: today,
+		cities,
+	};
+
+	const outPath = join(DATA_ROOT, "index.json");
+	writeFileSync(outPath, JSON.stringify(index, null, 2), "utf-8");
+	log.log(`→ Written ${outPath} (${cities.length} city/cities)`);
+
+	const sitemapPath = join(WEB_PUBLIC_DIR, "sitemap.xml");
+	writeFileSync(sitemapPath, buildSitemap(cityMeta, today), "utf-8");
+	log.log(`→ Written ${sitemapPath}`);
+
+	log.log("✓ Pages index complete.");
+	return { cityCount: cities.length };
+}

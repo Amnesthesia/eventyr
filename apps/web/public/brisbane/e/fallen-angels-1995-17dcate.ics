@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Fallen Angels (1995)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-17dcate@dothings
+DTSTART;TZID=Australia/Brisbane:20260928T203000
+DTEND;TZID=Australia/Brisbane:20260928T223000
+SUMMARY:Fallen Angels (1995)
+DESCRIPTION:Classic screening. New Farm Cinemas: Fri 25 September Lost soul
+ s reach out for human connection amidst the glimmering night world of Hong
+  Kong in Wong Kar Wai’s hallucinatory\, neon-soaked nocturne. This hyper
+ -cool head rush plays like the dark\, moody flip side to Wong’s breakout
+  feature 'Chungking Express' as it charts the subtly interlacing fates of 
+ a handful of urban loners\, including a coolly detached hitman (Leon Lai) 
+ looking to go straight\, his business partner (Michelle Reis) who secretly
+  yearns for him\, and a mute delinquent (Takeshi Kaneshiro) who wreaks mis
+ chief by night. Swinging between hardboiled noir and slapstick lunacy with
+  giddy abandon\, Fallen Angels is both a dizzying\, dazzling city symphony
+  and a poignant meditation on love\, loss\, and longing in a metropolis th
+ at never sleeps.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/fallen-angels
+END:VEVENT
+END:VCALENDAR

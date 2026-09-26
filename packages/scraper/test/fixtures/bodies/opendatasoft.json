@@ -1,0 +1,117 @@
+{
+ "nhits": 25,
+ "parameters": {
+  "dataset": "riverstage-events",
+  "rows": 40
+ },
+ "records": [
+  {
+   "datasetid": "riverstage-events",
+   "recordid": "9943bb5480b410a627894638103d5ed0bb545021",
+   "fields": {
+    "bookingsrequired": "Yes",
+    "primaryeventtype": "Music",
+    "event_type": "Featured,Music",
+    "venueaddress": "Riverstage, Gardens Point Road, Brisbane City",
+    "agerange": "Teens, Young adults, Adults (30+), Seniors",
+    "end_datetime": "2026-09-25T22:00:00+10:00",
+    "formatteddatetime": "Friday, 25 September 2026, 6 - 10pm",
+    "event_template": "Brisbane City Council",
+    "eventimage": "https://www.trumba.com/i/DgAOjff%2ALCI6Gr8Rip0jfV3y.jpg",
+    "description": "Ashnikko is coming to Australian shores in September 2026.The cross-genre hyper-pop bubble-gum artist who opened for Billie Eilish on her Hit Me Hard and Soft 12-date arena tour of Australia to tens of thousands of fans, will kick the Smoochies Tour off in Australia in 2026.​Ashnikko has achieved some huge milestones for an artist just one album into their career, surpassing 3.9 Billion global streams and 700 million video views to date, with hit songs 'Slumber party (Opens in new tab)' and 'Daisy (Opens in new tab)'. Following the release of her debut album, Weedkiller, in 2023 Ashnikko has spent the past 18 months touring across the globe including a headline show at the iconic Red Rocks Amphitheatre in Colorado, a headline tour across Latin America and festival sets at Reading & Leeds, Madcool, Bonnaroo, NOS Alive and more. Earlier this year, Ashnikko took to the road across Australia opening for Billie Eilish on her Hit Me Hard and Soft tour, performing at arenas across the country to tens of thousands of fans.",
+    "cost": "See website for ticket prices",
+    "bookings": "Bookings are required via <a href=\"https://www.ticketmaster.com.au/ashnikko-smoochies-tour-relocated-to-riverstage-brisbane-25-09-2026/event/1300632FD4695702\" target=\"_blank\" rel=\"noopener\">Ticketmaster</a>.",
+    "venuetype": "General Council venue",
+    "venue": "Riverstage, Brisbane City",
+    "start_datetime": "2026-09-25T18:00:00+10:00",
+    "web_link": "https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D191635791",
+    "geolocation": [
+     -27.4788,
+     153.0301
+    ],
+    "location": "Riverstage, Brisbane City",
+    "subject": "Ashnikko - Smoochies Tour"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     153.0301,
+     -27.4788
+    ]
+   },
+   "record_timestamp": "2026-09-24T04:03:37.17+10:00"
+  },
+  {
+   "datasetid": "riverstage-events",
+   "recordid": "c339adb72e2361fbbad033a4af6267324d1e0eb7",
+   "fields": {
+    "bookingsrequired": "Yes",
+    "primaryeventtype": "Music",
+    "event_type": "Music",
+    "venueaddress": "Riverstage, Gardens Point Road, Brisbane City",
+    "end_datetime": "2026-10-11T22:00:00+10:00",
+    "formatteddatetime": "Sunday, 11 October 2026, 5 - 10pm",
+    "event_template": "Brisbane City Council",
+    "eventimage": "https://www.trumba.com/i/DgCAHZkPVIGX54fqqtqKlrys.jpg",
+    "description": "Australia, get set to step into oblivion and mosh until the world goes cold this October when Grammy Award nominated metal pioneers Lamb of God team up with fellow modern metal lords Trivium for a mammoth national co-headline run, joined by special guests Bleed from Within. Forged in basement shows and DIY venues in Richmond, Virginia, the impact and enduring legacy of Lamb of God since forming in the mid 90s is nothing short of legendary.Renowned for their role in helping shape the new wave of American heavy metal, Lamb of God have commanded global attention for decades, touring the globe, selling millions of records, ticking off five Grammy Award-nominations and retaining a perpetual presence with new music to join their monumental back catalogue in the process.Between evergreen favourites like Laid to Rest, Redneck, Walk with Me in Hell and Now You've Got Something to Die For, and, most recently, new material courtesy of their latest LP, 2026's Into Oblivion, Lamb of God's razor-sharp fusion of grooves, metal mayhem and raucous energy is eternally showing no signs of slowing down. Equally as prolific in a live setting as they are in the studio, Lamb of God's touring rap sheet reads like a metalhead's fever dream, spanning everyone from Slayer through to Metallica, Megadeth, Slipknot and countless more.",
+    "cost": "Priced ticketed event",
+    "bookings": "Bookings are required via <a href=\"https://www.ticketmaster.com.au\" target=\"_blank\" rel=\"noopener\">TicketMaster</a>.",
+    "age": "Suitable for all ages",
+    "venuetype": "General Council venue",
+    "venue": "Riverstage, Brisbane City",
+    "start_datetime": "2026-10-11T17:00:00+10:00",
+    "web_link": "https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D203367783",
+    "geolocation": [
+     -27.4788,
+     153.0301
+    ],
+    "location": "Riverstage, Brisbane City",
+    "subject": "Lamb of God and Trivium Co-headline Australian Tour"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     153.0301,
+     -27.4788
+    ]
+   },
+   "record_timestamp": "2026-09-24T04:03:37.17+10:00"
+  },
+  {
+   "datasetid": "riverstage-events",
+   "recordid": "5fa55253bc868635f8a4bb96c8fc7441ebd1834b",
+   "fields": {
+    "bookingsrequired": "Yes",
+    "primaryeventtype": "Music",
+    "event_type": "Featured,Music",
+    "venueaddress": "Riverstage, Gardens Point Road, Brisbane City",
+    "agerange": "Teens, Young adults, Adults (30+)",
+    "end_datetime": "2026-10-13T22:00:00+10:00",
+    "formatteddatetime": "Tuesday, 13 October 2026, 6 - 10pm",
+    "event_template": "Brisbane City Council",
+    "eventimage": "https://www.trumba.com/i/DgDuEAT99b5XXXL15b5c3gdM.jpg",
+    "description": "Swedish pop sensation ZARA LARSSON has today announced Australian dates on her Midnight Sun tour, which has been selling out dates across the world over the last year.Over a decade after her last trip to Australia, the tour follows the release of her fourth studio album Midnight Sun in late 2025.The chart-topping pop powerhouse will kick off the Australian dates in Brisbane at Riverstage on Wednesday 14 October, before heading down to Sydney at Hordern Pavilion on Thursday 15 October, Margaret Court Arena in Melbourne on Saturday 17 October, Entertainment Centre Theatre in Adelaide on Sunday 18 October, and wrapping up the tour in Perth at Perth HPC on Tuesday 20 October.Midnight Sun ripples with confidence and trust. Its storytelling bursts with truth and vulnerability, plumbing the depth and growth of Zara's artistry and journey over nearly 20 years in the public eye. It's an album unafraid to show all sides of the 27-year-old: lovestruck, wistful, ambitious, cocky, flippant, and uncertain, often in the same breath. Following on from Zara's first three albums (2017's So Good, 2021's Poster Girl, and 2024's VENUS), the album building upon her legacy while taking things back to her roots.",
+    "cost": "See ticketing website",
+    "bookings": "Bookings are required via <a href=\"https://www.ticketmaster.com.au/zara-larsson-tickets/artist/1908582\" target=\"_blank\" rel=\"noopener\">Ticketmaster</a>.&#160;",
+    "venuetype": "General Council venue",
+    "venue": "Riverstage, Brisbane City",
+    "start_datetime": "2026-10-13T18:00:00+10:00",
+    "web_link": "https://www.brisbane.qld.gov.au/trumba?trumbaEmbed=view%3Devent%26eventid%3D197233769",
+    "geolocation": [
+     -27.4788,
+     153.0301
+    ],
+    "location": "Riverstage, Brisbane City",
+    "subject": "Zara Larsson - Midnight Sun Tour 2026"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     153.0301,
+     -27.4788
+    ]
+   },
+   "record_timestamp": "2026-09-24T04:03:37.17+10:00"
+  }
+ ]
+}

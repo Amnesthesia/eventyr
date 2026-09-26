@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl_fixture",
+  "object": "chat.completion",
+  "created": 1790000000,
+  "model": "gpt-4.1-mini",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Philosophy of Time | Wednesday 23 September 2026, 6:30 PM | Fixture Venue, West End | Free | Fixture Venue | http://localhost:48123/events/philosophy-of-time\nFixture Jazz Night | Friday 25 September 2026, 8:00 PM | Fixture Venue, West End | $20 | Fixture Venue | http://localhost:48123/events/jazz-night",
+        "refusal": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 800,
+    "completion_tokens": 150,
+    "total_tokens": 950
+  }
+}

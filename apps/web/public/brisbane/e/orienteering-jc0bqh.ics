@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Orienteering
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-jc0bqh@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T100000
+DTEND;TZID=Australia/Brisbane:20260924T110000
+SUMMARY:Orienteering
+DESCRIPTION:Using a supplied map follow the course in the shortest possible
+  time. You can run or walk. This is a GOLD'n'Kids event suitable for senio
+ rs and young people.
+LOCATION:New Farm Park\, New Farm\, New Farm Park\, 137 Sydney Street\, New
+  Farm
+URL:https://eventor.orienteering.asn.au/Events
+END:VEVENT
+END:VCALENDAR

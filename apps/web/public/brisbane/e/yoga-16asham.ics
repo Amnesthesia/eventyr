@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yoga
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-16asham@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T093000
+DTEND;TZID=Australia/Brisbane:20260924T103000
+SUMMARY:Yoga
+DESCRIPTION:Focus on a range of movements to relax the mind and body. Stret
+ ching\, breathing\, strength and balance exercises are included by incorpo
+ rating standing poses and mat work into the session.
+LOCATION:Balmoral Park\, Morningside\, Balmoral Park\, 481 Wynnum Road\, Mo
+ rningside
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20878594
+ 0
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Talk to a Planner - Toowong
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-wlwsg4@dothings
+DTSTART;TZID=Australia/Brisbane:20261001T160000
+DTEND;TZID=Australia/Brisbane:20261001T190000
+SUMMARY:Talk to a Planner - Toowong
+DESCRIPTION:Talk to a Planner sessions help residents\, business owners\, c
+ ommunity groups and industry professionals understand Brisbane City Plan 2
+ 014 (City Plan) and how it relates to their building and construction plan
+ s. Talk to a Planner is available all year round\, with additional session
+ s held regularly across the city for your convenience. During these free s
+ essions you can speak face-to-face with a planning specialist\, giving you
+  the opportunity to ask any questions you may have about how City Plan rel
+ ates to your property. Council also has a team of dedicated officers who c
+ an answer simple questions about your development application over the pho
+ ne during business hours (9am-4pm\, Monday-Friday). To speak to an officer
+ \, phone Council on 07 3403 8888.
+LOCATION:Toowong Library\, Toowong Library\, Toowong Village Shopping Centr
+ e\, 9 Sherwood Road\, Toowong
+URL:https://www.eventbrite.com.au/e/1991954839547
+END:VEVENT
+END:VCALENDAR

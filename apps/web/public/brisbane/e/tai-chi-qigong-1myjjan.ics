@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Tai Chi Qigong
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1myjjan@dothings
+DTSTART;TZID=Australia/Brisbane:20261004T080000
+DTEND;TZID=Australia/Brisbane:20261004T090000
+SUMMARY:Tai Chi Qigong
+DESCRIPTION:Feel relaxed\, refreshed and calm after this dynamic exercise. 
+ Rejuvenate your body and learn to create a tranquil mind. Join any week. T
+ his is a GOLD event suitable for seniors.
+LOCATION:Robinson Park\, Fairfield\, Robinson Park\, 65 Ashby Street\, Fair
+ field
+URL:http://www.taichiqld.com/
+END:VEVENT
+END:VCALENDAR

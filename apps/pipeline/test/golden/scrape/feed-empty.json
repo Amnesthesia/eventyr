@@ -1,0 +1,14 @@
+{
+  "fixture": "feed-empty",
+  "url": "https://aaq.org.au/wp-json/mec/v1/events",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": []
+  },
+  "found": 0,
+  "candidates": [],
+  "events": [],
+  "rejected": [],
+  "fallbackCalls": []
+}

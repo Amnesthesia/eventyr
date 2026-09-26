@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Encounters in the Milky Way
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1kl3si0@dothings
+DTSTART;TZID=Australia/Brisbane:20260925T133000
+DTEND;TZID=Australia/Brisbane:20260925T141500
+SUMMARY:Encounters in the Milky Way
+DESCRIPTION:Discover the chance encounters that have shaped our place in th
+ e universe. Narrated by Pedro Pascal\, Encounters in the Milky Way is a ti
+ me-traveling journey about the cosmic movements that shape our galactic ne
+ ighborhood. Session concludes with a virtual tour of the Brisbane night sk
+ y. Encounters in the Milky Way is suitable for ages 8 and over. For younge
+ r children\, we recommend Perfect Little Planet or Tycho Goes to Mars . En
+ counters in the Milky Way was developed by the American Museum of Natural 
+ History (amnh.org) with the major support and partnership of the National 
+ Aeronautics and Space Administration (NASA).
+LOCATION:Sir Thomas Brisbane Planetarium\, Mt Coot-tha\, Sir Thomas Brisban
+ e Planetarium\, 152 Mt Coot-tha Road\, Mt Coot-tha
+URL:https://www.trumba.com/calendars/brisbane-city-council?eventid=20841796
+ 8
+END:VEVENT
+END:VCALENDAR

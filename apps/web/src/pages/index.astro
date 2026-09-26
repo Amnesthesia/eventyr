@@ -1,0 +1,21 @@
+---
+import { DATA_ROOT } from "../lib/paths.ts";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import Base from "../layouts/Base.astro";
+import EventApp from "@react/EventApp";
+import type { CityData, CityIndex } from "@dothingslol/core/schema";
+import { byScoreThenSoonest } from "@dothingslol/core/shared";
+
+const index: CityIndex = JSON.parse(
+	readFileSync(join(DATA_ROOT, "/index.json"), "utf-8"),
+);
+const cityData: CityData = JSON.parse(
+	readFileSync(join(DATA_ROOT, "/brisbane.json"), "utf-8"),
+);
+cityData.events.sort(byScoreThenSoonest);
+---
+
+<Base cityData={cityData} slug="brisbane" canonical="https://www.dothings.lol/">
+  <EventApp client:load cityData={cityData} allCities={index.cities} />
+</Base>

@@ -1,0 +1,74 @@
+// Share one event.
+//
+// Rendered as an anchor to the event's own page, then progressively enhanced.
+// That ordering is the point: with no JavaScript, a middle-click, or a
+// right-click "copy link", it behaves like the link it is. With JavaScript it
+// opens the native share sheet, and where that does not exist it copies the
+// URL.
+
+import type { EventData } from "@dothingslol/core/schema";
+import { eventPath } from "@dothingslol/core/shared";
+import { Check, Share2 } from "lucide-react";
+import { useState } from "react";
+import { shareEvent } from "../utils/share";
+import { noteInterest } from "../utils/tasteStore";
+
+interface Props {
+	event: EventData;
+	cityKey: string;
+	/** Shown next to the icon. Omit for the icon-only version used on cards. */
+	label?: string;
+	/** Overrides the default styling, so a card can render this small and
+	 * inline where the event page renders it as a button. */
+	className?: string;
+	iconSize?: number;
+}
+
+export default function ShareButton({
+	event,
+	cityKey,
+	label,
+	className,
+	iconSize,
+}: Props) {
+	const [copied, setCopied] = useState(false);
+	const path = eventPath(cityKey, event);
+
+	async function handleShare(e: React.MouseEvent<HTMLAnchorElement>) {
+		// Let the browser handle the ways a user asks for a new tab, so the
+		// anchor keeps behaving like an anchor.
+		if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+		e.preventDefault();
+		const outcome = await shareEvent(event, cityKey);
+		// Counted on intent, not on success: a cancelled share sheet still says
+		// this event was worth reaching for, and "copied" vs "shared" is a
+		// platform detail. A failure falls through to the event's own page
+		// below, which is not a reason to forget the interest either.
+		noteInterest(event, cityKey, "share");
+		if (outcome === "copied") {
+			setCopied(true);
+			setTimeout(() => setCopied(false), 2000);
+		} else if (outcome === "failed") {
+			// Clipboard denied or unavailable: fall back to the anchor's own
+			// behaviour so the user still reaches the page and can copy the URL.
+			window.location.href = path;
+		}
+	}
+
+	return (
+		<a
+			className={className ?? (label ? "filter-btn" : "icon-btn")}
+			href={path}
+			onClick={handleShare}
+			aria-label={`Share ${event.title}`}
+			title="Share this event"
+		>
+			{copied ? (
+				<Check size={iconSize ?? (label ? 12 : 11)} strokeWidth={2.2} />
+			) : (
+				<Share2 size={iconSize ?? (label ? 12 : 11)} strokeWidth={2.2} />
+			)}
+			{label && <span>{copied ? "Copied" : label}</span>}
+		</a>
+	);
+}

@@ -1,0 +1,34 @@
+Collecting — Brisbane — 21 September 2026 to 27 September 2026
+  [google/aggregators] Searching…
+  [google/institutions] Searching…
+  [google/independents] Searching…
+  [google/open] Searching…
+  [google/aggregators] 303 chars received
+  [google/aggregators] Extracting… (1 batch)
+  [google/institutions] 303 chars received
+  [google/institutions] Extracting… (1 batch)
+  [google/independents] 303 chars received
+  [google/independents] Extracting… (1 batch)
+  [google/open] 303 chars received
+  [google/open] Extracting… (1 batch)
+  [google/aggregators] 2 events extracted
+  [google/institutions] 2 events extracted
+  [google/independents] 2 events extracted
+  [google/open] 2 events extracted
+  [google/aggregators] 2 events curated
+  → Written $ROOT/data/brisbane/google/curated/aggregators.json
+  [google/institutions] 2 events curated
+  → Written $ROOT/data/brisbane/google/curated/institutions.json
+  [google/independents] 2 events curated
+  → Written $ROOT/data/brisbane/google/curated/independents.json
+  [google/open] 2 events curated
+  → Written $ROOT/data/brisbane/google/curated/open.json
+✓ Collection complete.
+
+Model usage
+  stage                     calls         in      out   think   cached   cachew  search    ~usd
+  curate/enrich                 4      7,280    1,016       0        0        0       0   0.001
+  search/google                 4      2,232      304       0        0        0       4   0.000
+  curate/extract                4      1,536      420       0        0        0       0   0.000
+  TOTAL                        12     11,048    1,740       0        0        0       4   0.002
+  → $ROOT/data/brisbane/usage/2026-09-21.json

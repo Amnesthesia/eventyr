@@ -1,0 +1,42 @@
+{
+  "name": "@dothingslol/pipeline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/collectSearch.ts",
+    "collect-adapters": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/collectScraped.ts",
+    "curate": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/curate.ts",
+    "venues": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/venues.ts",
+    "dedupe-venues": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/venues.ts",
+    "rank": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/rank.ts",
+    "geocode": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/geocode.ts",
+    "markdown": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/markdown.ts",
+    "ical": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/ical.ts",
+    "rss": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/rss.ts",
+    "pages": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/pages.ts",
+    "build-ai": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/ai.ts",
+    "add-city": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/addCity.ts",
+    "probe-sources": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/probeSources.ts",
+    "discover-sources": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/discoverSources.ts",
+    "test-adapter": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/testUrl.ts",
+    "render-sources": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/renderSources.ts",
+    "triage": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/triage.ts",
+    "test": "CITY=dummy GOOGLE_API_KEY=dummy tsx --test 'src/**/*.test.ts'",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@dothingslol/core": "workspace:*",
+    "@dothingslol/llm": "workspace:*",
+    "@dothingslol/scraper": "workspace:*",
+    "@dothingslol/utils": "workspace:*",
+    "js-yaml": "^4.1.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.13.4",
+    "playwright": "^1.50.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

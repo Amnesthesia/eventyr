@@ -33,9 +33,7 @@ jobs:
           token: ${{ secrets.ADD_CITY_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Set up pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+        uses: pnpm/action-setup@v6
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -51,7 +49,7 @@ jobs:
           CITY_NAME: ${{ inputs.city_name }}
           CITY_KEY:  ${{ inputs.city_key }}
           CITY_TIMEZONE: ${{ inputs.timezone }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/add_city.ts
+        run: pnpm add-city
 
       - name: Discover sources
         env:

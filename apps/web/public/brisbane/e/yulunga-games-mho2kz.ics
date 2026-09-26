@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Yulunga games
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-mho2kz@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T093000
+DTEND;TZID=Australia/Brisbane:20260930T103000
+SUMMARY:Yulunga games
+DESCRIPTION:Bookings essential. Come play and learn First Nations games pla
+ yed in Australia for thousands of years. Fun games in the park that everyo
+ ne can play. This is a Chillout event suitable for young people 5-15 years
+ .
+LOCATION:Mulbeam Park\, Boondall\, Mulbeam Park\, 131 Beams Road\, Boondall
+URL:http://www.kidssports.com.au/
+END:VEVENT
+END:VCALENDAR

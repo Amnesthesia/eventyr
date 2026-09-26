@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane Illustraiton Fair
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-e6jrkl@dothings
+DTSTART;TZID=Australia/Brisbane:20261003T100000
+DTEND;TZID=Australia/Brisbane:20261003T160000
+SUMMARY:Brisbane Illustraiton Fair
+DESCRIPTION:Brisbane Illustration Fair is a celebration of illustration and
+  independent artists\, bringing together 180+ creatives for a weekend of a
+ rtwork\, zines\, comics\, prints\, stickers\, and getting creative. Join u
+ s October 3–4 at John Reid Pavilion\, Brisbane Showgrounds\, and come di
+ scover your next favourite artist. Bring your friends and celebrate creati
+ vity! Location: Brisbane Showgrounds\, John Reid Pavilion\, Bowen Hills Pr
+ oudly sponsored by Brisbane City Council. For more information please visi
+ t Brisbane illustration fair.
+LOCATION:Brisbane City Council Creative Events
+URL:https://brisbaneillustrationfair.square.site/
+END:VEVENT
+END:VCALENDAR

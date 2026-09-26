@@ -1,0 +1,45 @@
+{
+  "id": "msg_fixture",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-sonnet-5",
+  "content": [
+    {
+      "type": "server_tool_use",
+      "id": "srvtoolu_fixture",
+      "name": "web_search",
+      "input": {
+        "query": "Brisbane events this week"
+      }
+    },
+    {
+      "type": "web_search_tool_result",
+      "tool_use_id": "srvtoolu_fixture",
+      "content": [
+        {
+          "type": "web_search_result",
+          "title": "Fixture Venue — What's on",
+          "url": "http://localhost:48123/",
+          "encrypted_content": "fixture",
+          "page_age": null
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Philosophy of Time | Wednesday 23 September 2026, 6:30 PM | Fixture Venue, West End | Free | Fixture Venue | http://localhost:48123/events/philosophy-of-time\nFixture Jazz Night | Friday 25 September 2026, 8:00 PM | Fixture Venue, West End | $20 | Fixture Venue | http://localhost:48123/events/jazz-night"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1200,
+    "output_tokens": 180,
+    "cache_creation_input_tokens": 900,
+    "cache_read_input_tokens": 300,
+    "server_tool_use": {
+      "web_search_requests": 2
+    },
+    "service_tier": "standard"
+  }
+}

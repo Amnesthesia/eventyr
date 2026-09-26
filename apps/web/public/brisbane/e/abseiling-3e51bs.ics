@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Abseiling
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-3e51bs@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T073000
+DTEND;TZID=Australia/Brisbane:20260924T093000
+SUMMARY:Abseiling
+DESCRIPTION:Bookings essential. Conquer your fears and experience the thril
+ ls of abseiling at Kangaroo Point under the safe instruction of qualified 
+ facilitators. This is a Chillout event suitable for young people 10-17 yea
+ rs.
+LOCATION:Kangaroo Point Cliffs Park\, Kangaroo Point\, Kangaroo Point Cliff
+ s Park\, 29 River Terrace\, Kangaroo Point
+URL:http://pinnaclesports.com.au/bcc
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Zumba Gold®
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-c1jqr6@dothings
+DTSTART;TZID=Australia/Brisbane:20260929T173000
+DTEND;TZID=Australia/Brisbane:20260929T183000
+SUMMARY:Zumba Gold®
+DESCRIPTION:Enjoy a low-impact\, moderate-intensity workout in a welcoming 
+ and supportive atmosphere. Have fun shaking it at your own pace to zesty L
+ atin tunes\, Indian-infused rhythms\, plus other music from around the wor
+ ld. This class can help you improve your balance\, range of motion and coo
+ rdination.
+LOCATION:Bulimba Community Centre\, Bulimba Community Centre\, 1 Barramul S
+ treet\, Bulimba
+URL:https://boogiecamp.com.au/
+END:VEVENT
+END:VCALENDAR

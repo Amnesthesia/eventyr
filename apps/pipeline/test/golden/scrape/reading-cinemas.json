@@ -1,0 +1,96 @@
+{
+  "fixture": "reading-cinemas",
+  "url": "https://prod-api.readingcinemas.com.au/films?countryId=3&cinemaId=southcity&status=nowShowing",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": []
+  },
+  "found": 2,
+  "candidates": [
+    {
+      "title": "Angelika Book Club - Verity",
+      "description": "Join fellow readers for a special Book Club Screening of Verity , based on the bestselling novel by Colleen Hoover, on Friday, October 2 at 7pm . Adapted from Colleen Hoover's best-selling novel, this seductive, psychological thriller follows renowned author Verity Crawford (Anne Hathaway) and Lowen Ashleigh (Dakota Johnson), a struggling writer who relocates to the remote Crawford estate to ghostwrite for Verity. After Lowen uncovers what appears to be Verity's chilling autobiographical notes, she wrestles with the disturbing and twisted confessions about Verity’s husband Jeremy (Josh Hartnett), and finds it hard to separate fiction from reality, manipulation from attraction, and opportunity from obsession.",
+      "startRaw": "2026-10-02T19:00:00+10",
+      "endRaw": null,
+      "venueName": null,
+      "address": null,
+      "url": "https://angelikacinemas.com.au/movies/details/10478",
+      "price": null,
+      "imageUrl": null,
+      "organiser": null,
+      "category": "Film",
+      "sourceEventId": "54111",
+      "startISO": "2026-10-02T19:00:00+10:00",
+      "endISO": null,
+      "provenance": {
+        "sourceId": "reading-cinemas",
+        "sourceUrl": "https://prod-api.readingcinemas.com.au/films?countryId=3&cinemaId=southcity&status=nowShowing",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    },
+    {
+      "title": "Pirates of the Caribbean Trilogy Marathon",
+      "description": "Set sail with Captain Jack Sparrow for an epic Pirates of the Caribbean marathon! Experience three action-packed adventures back to back, filled with pirates, treasure and mayhem. Pirates of the Caribbean: The Curse of the Black Pearl: 2.45pm - 5.23pm Pirates of the Caribbean: Dead Man’s Chest: 5.30pm - 8.05pm Pirates of the Caribbean: At World’s End 8.15pm - 11:08pm",
+      "startRaw": "2026-10-31T14:45:00+10",
+      "endRaw": null,
+      "venueName": null,
+      "address": null,
+      "url": "https://angelikacinemas.com.au/movies/details/10539",
+      "price": null,
+      "imageUrl": null,
+      "organiser": null,
+      "category": "Film",
+      "sourceEventId": "55512",
+      "startISO": "2026-10-31T14:45:00+10:00",
+      "endISO": null,
+      "provenance": {
+        "sourceId": "reading-cinemas",
+        "sourceUrl": "https://prod-api.readingcinemas.com.au/films?countryId=3&cinemaId=southcity&status=nowShowing",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "feed"
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "Angelika Book Club - Verity",
+      "datetime": "Fri 2 Oct, 7:00 PM",
+      "datetime_iso": "2026-10-02T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Fixture Venue, 1 Test St",
+      "link": "https://angelikacinemas.com.au/movies/details/10478",
+      "cost": "See link",
+      "source": "Fixture reading-cinemas",
+      "description": "Join fellow readers for a special Book Club Screening of Verity , based on the bestselling novel by Colleen Hoover, on Friday, October 2 at 7pm . Adapted from Colleen Hoover's best-selling novel, this seductive, psychological thriller follows renowned author Verity Crawford (Anne Hathaway) and Lowen Ashleigh (Dakota Johnson), a struggling writer who relocates to the remote Crawford estate to ghostwrite for Verity. After Lowen uncovers what appears to be Verity's chilling autobiographical notes, she wrestles with the disturbing and twisted confessions about Verity’s husband Jeremy (Josh Hartnett), and finds it hard to separate fiction from reality, manipulation from attraction, and opportunity from obsession.",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    },
+    {
+      "title": "Pirates of the Caribbean Trilogy Marathon",
+      "datetime": "Sat 31 Oct, 2:45 PM",
+      "datetime_iso": "2026-10-31T14:45:00",
+      "datetime_end_iso": "",
+      "location": "Fixture Venue, 1 Test St",
+      "link": "https://angelikacinemas.com.au/movies/details/10539",
+      "cost": "See link",
+      "source": "Fixture reading-cinemas",
+      "description": "Set sail with Captain Jack Sparrow for an epic Pirates of the Caribbean marathon! Experience three action-packed adventures back to back, filled with pirates, treasure and mayhem. Pirates of the Caribbean: The Curse of the Black Pearl: 2.45pm - 5.23pm Pirates of the Caribbean: Dead Man’s Chest: 5.30pm - 8.05pm Pirates of the Caribbean: At World’s End 8.15pm - 11:08pm",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ],
+  "rejected": [],
+  "fallbackCalls": []
+}

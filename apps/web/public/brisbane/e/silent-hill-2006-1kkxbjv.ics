@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Silent Hill (2006)
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1kkxbjv@dothings
+DTSTART;TZID=Australia/Brisbane:20260924T204000
+DTEND;TZID=Australia/Brisbane:20260924T224000
+SUMMARY:Silent Hill (2006)
+DESCRIPTION:Classic screening. New Farm Cinemas: Thu 24 September. Join us 
+ for a survival-horror video game adaptation double feature. Screening alon
+ gside Resident Evil (2002). Rose\, a desperate mother\, takes her adopted 
+ daughter\, Sharon\, to the town of Silent Hill in an attempt to cure her o
+ f her ailment. After a violent car crash\, Sharon disappears\, and Rose em
+ barks on a horrific journey to get her back and begins to uncover the trut
+ h behind the apocalyptic disaster that burned the town 30 years earlier.
+LOCATION:New Farm Cinemas\, 701 Brunswick St\, New Farm
+URL:https://www.fivestarcinemas.com.au/new-farm/movie/silent-hill-2006
+END:VEVENT
+END:VCALENDAR

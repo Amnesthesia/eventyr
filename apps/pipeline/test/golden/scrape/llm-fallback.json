@@ -1,0 +1,58 @@
+{
+  "fixture": "llm-fallback",
+  "url": "https://example-plain.com.au/whats-on",
+  "strategy": "html",
+  "fetch": {
+    "listingsFetched": 1,
+    "errors": []
+  },
+  "found": 1,
+  "candidates": [
+    {
+      "title": "LLM rung marker",
+      "description": null,
+      "startRaw": "Tuesday 29 September 2026, 7:00 PM",
+      "endRaw": null,
+      "venueName": null,
+      "address": null,
+      "url": null,
+      "price": null,
+      "imageUrl": null,
+      "organiser": null,
+      "category": null,
+      "sourceEventId": null,
+      "startISO": "2026-09-29T19:00:00+10:00",
+      "endISO": null,
+      "provenance": {
+        "sourceId": "llm-fallback",
+        "sourceUrl": "https://example-plain.com.au/whats-on",
+        "fetchedAt": "2026-09-23T00:00:00.000Z",
+        "strategy": "html"
+      }
+    }
+  ],
+  "events": [
+    {
+      "title": "LLM rung marker",
+      "datetime": "Tue 29 Sep, 7:00 PM",
+      "datetime_iso": "2026-09-29T19:00:00",
+      "datetime_end_iso": "",
+      "location": "Fixture Venue, 1 Test St",
+      "link": "https://example-plain.com.au/",
+      "cost": "See link",
+      "source": "Fixture llm-fallback",
+      "description": "",
+      "image": "",
+      "category": "Community / Other",
+      "tags": [],
+      "social": false,
+      "intellectual": false,
+      "hands_on": false,
+      "creative": false
+    }
+  ],
+  "rejected": [],
+  "fallbackCalls": [
+    230
+  ]
+}

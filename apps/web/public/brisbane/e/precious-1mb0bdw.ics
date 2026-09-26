@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Precious
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1mb0bdw@dothings
+DTSTART;VALUE=DATE:20250407
+DTEND;VALUE=DATE:20270403
+SUMMARY:Precious
+DESCRIPTION:What makes a collection? Museum of Brisbane is giving you the k
+ eys to some of the most awe-inspiring collections across our amazing city.
+  An irresistible array of breathtaking curiosities\, Precious brings toget
+ her thousands of remarkable items from more than 30 public and private col
+ lections. From textiles to tin-toys\, micro-architectural marvels to marin
+ e treasures\, this exhibition is a joyful celebration of the art of assemb
+ lage. We invite you to immerse yourself into the incredible stories of som
+ e of the prolific collectors of Brisbane\, and get to know what makes a ke
+ epsake and collectible truly Precious. Open daily from 10am - 5pm. Museum 
+ of Brisbane is Brisbane City Council's leading history and art museum wher
+ e you can experience our city's vibrant culture.
+LOCATION:Museum of Brisbane\, Brisbane City\, Museum of Brisbane\, Brisbane
+  City Hall\, 64 Adelaide Street\, Brisbane City
+URL:https://www.museumofbrisbane.com.au/whats-on/precious/
+END:VEVENT
+END:VCALENDAR

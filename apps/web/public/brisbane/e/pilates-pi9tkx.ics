@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Pilates
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-pi9tkx@dothings
+DTSTART;TZID=Australia/Brisbane:20261002T080000
+DTEND;TZID=Australia/Brisbane:20261002T090000
+SUMMARY:Pilates
+DESCRIPTION:Bookings essential. Pilates helps you strengthen and stretch si
+ multaneously through core-based exercises. Join anytime.
+LOCATION:Boondall Wetlands Environment Centre\, Boondall Wetlands Environme
+ nt Centre\, 31 Paperbark Drive (entry via Stanworth Rd)\, Boondall
+URL:https://www.trumba.com/calendars/brisbane-events-rss?eventid=204503296
+END:VEVENT
+END:VCALENDAR

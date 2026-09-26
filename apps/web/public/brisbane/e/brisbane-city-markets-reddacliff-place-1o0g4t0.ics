@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Brisbane City Markets - Reddacliff Place
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-1o0g4t0@dothings
+DTSTART;TZID=Australia/Brisbane:20260930T080000
+DTEND;TZID=Australia/Brisbane:20260930T180000
+SUMMARY:Brisbane City Markets - Reddacliff Place
+DESCRIPTION:The original of the Brisbane City Markets inner-city markets\, 
+ Wednesday at Reddacliff Place is a favourite for city workers\, local resi
+ dents and tourists alike. With amazing stalls each week\, you’ll never b
+ e short for choice - whether it be lunch\, groceries\, provisions\, gifts 
+ or more. Find out more on the Brisbane City Markets website . Reddacliff P
+ lace is located at the very top of Queen Street Mall.
+LOCATION:Reddacliff Place\, Brisbane City\, Reddacliff Place\, 266 George S
+ treet\, Brisbane City
+URL:http://www.brisbanecitymarkets.com.au/
+END:VEVENT
+END:VCALENDAR

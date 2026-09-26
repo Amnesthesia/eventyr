@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//do things//brisbane//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Community Choir: The Musical
+X-WR-TIMEZONE:Australia/Brisbane
+BEGIN:VEVENT
+UID:brisbane-4wjny2@dothings
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260927
+SUMMARY:Community Choir: The Musical
+DESCRIPTION:Community Choir: The Musical is a heartwarming and hilarious ta
+ le written by Emma Dean\, directed by Belinda Raisin\, and performed almos
+ t entirely by local community members — many stepping on stage for the v
+ ery first time.
+LOCATION:La Boite Theatre\, Kelvin Grove
+URL:https://laboite.com.au/shows/community-choir-the-musical
+END:VEVENT
+END:VCALENDAR
