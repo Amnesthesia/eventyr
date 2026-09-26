@@ -1,4 +1,4 @@
-import { loadPipelineConfig } from "./config/load.js";
+import { loadPipelineConfig } from "../config/load.js";
 
 // Cross-source deduplication for the merged week (curate.ts calls this).
 //

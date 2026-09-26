@@ -1,4 +1,4 @@
-import { loadPipelineConfig } from "./config/load.js";
+import { loadPipelineConfig } from "../config/load.js";
 // Which method: llm sources actually earn their place in the search prompts.
 //
 // Measured over 18 committed weeks of Brisbane search results: 385 sources were
@@ -16,7 +16,18 @@ import { loadPipelineConfig } from "./config/load.js";
 // without dragging the data dir along.
 
 import { isSameSite, normaliseHost } from "@dothingslol/core/shared";
-import type { SourceEntry } from "./config/city.js";
+import {
+	type SourceEntry,
+	sourceEarnsPlace,
+	type YieldLedger,
+} from "../config/city.js";
+
+// sourceEarnsPlace moved to config/city.ts — config may not import stages,
+// and config/city.ts's llmSourceStrings needs it, so the definition lives
+// there and this file imports it back. Re-exported here so this module's
+// public shape (and sourceYield.test.ts, which tests it alongside the rest
+// of this file's yield logic) is unchanged.
+export { sourceEarnsPlace, type YieldLedger };
 
 /** Weeks of history the ledger keeps. Bounded so the file cannot grow forever. */
 
@@ -32,15 +43,6 @@ import type { SourceEntry } from "./config/city.js";
  */
 
 /** Unlisted hosts with at least this many events are worth a probe. */
-
-export interface YieldLedger {
-	/** Weeks recorded, ascending. */
-	weeks: string[];
-	/** Keyed by the source's primary host. */
-	sources: Record<string, { weeksHit: string[] }>;
-	/** Link hosts the search returned that match no source at all. */
-	unlisted: Record<string, { count: number; lastWeek: string }>;
-}
 
 export function primaryHost(entry: SourceEntry): string | null {
 	return normaliseHost(entry.domains?.[0]);
@@ -128,61 +130,6 @@ export function updateLedger(
 		if (!keep.has(rec.lastWeek)) delete ledger.unlisted[host];
 	}
 	return ledger;
-}
-
-/**
- * The date discover-sources stamped into `note`, if this entry came from it.
- *
- * Matches only that specific stamp — not any date in `note` — because
- * probe-sources also writes dated notes onto a source it *demotes* back to
- * llm ("Demoted by probe-sources 2026-09-02: ..."), and 338 of Brisbane's 385
- * llm sources carry one of those. A demotion is not a new addition; reading
- * its date as one gave nearly every source an undeserved grace period and
- * made the ledger prune almost nothing.
- */
-function addedOn(entry: SourceEntry): Date | null {
-	const m = /^Suggested by discover-sources (\d{4}-\d{2}-\d{2})/.exec(
-		entry.note ?? "",
-	);
-	if (!m) return null;
-	const d = new Date(`${m[1]}T00:00:00Z`);
-	return Number.isNaN(d.getTime()) ? null : d;
-}
-
-/**
- * Whether an llm source should be named in the search prompt.
- *
- * No ledger, or too little history ⇒ yes for everyone (today's behaviour).
- * Otherwise: hit within the last loadPipelineConfig().stages.collect.sourceYield.hitWindowWeeks recorded weeks, or added
- * within loadPipelineConfig().stages.collect.sourceYield.graceDays.
- */
-export function sourceEarnsPlace(
-	entry: SourceEntry,
-	ledger: YieldLedger | null,
-	today: Date = new Date(),
-): boolean {
-	if (
-		!ledger ||
-		ledger.weeks.length <
-			loadPipelineConfig().stages.collect.sourceYield.minHistoryWeeks
-	)
-		return true;
-	const added = addedOn(entry);
-	if (
-		added &&
-		today.getTime() - added.getTime() <
-			loadPipelineConfig().stages.collect.sourceYield.graceDays * 86_400_000
-	) {
-		return true;
-	}
-	const key = primaryHost(entry);
-	if (!key) return false;
-	const recent = new Set(
-		ledger.weeks.slice(
-			-loadPipelineConfig().stages.collect.sourceYield.hitWindowWeeks,
-		),
-	);
-	return (ledger.sources[key]?.weeksHit ?? []).some((w) => recent.has(w));
 }
 
 /** Unlisted hosts worth handing to probe-sources, most productive first. */

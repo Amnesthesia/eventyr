@@ -2,7 +2,7 @@ import { ask } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
 import { loadPipelineConfig } from "../config/load.js";
 
-import { dedupeEvents } from "../dedupe.js";
+import { dedupeEvents } from "../stages/dedupe.js";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import { BaseProvider, splitIntoBatches } from "./base.ts";
 

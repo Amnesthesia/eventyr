@@ -18,17 +18,14 @@ import type { CityConfig } from "@dothingslol/core/sources";
 import { SourceFetcher, scrape } from "@dothingslol/scraper";
 import { createFixtureFetcher } from "@dothingslol/scraper/testing";
 import { addDays } from "@dothingslol/utils/tz";
-import {
-	applyAnnotation,
-	createGeminiAnnotator,
-} from "../adapters/annotate.js";
-import { createGeminiPageExtractor } from "../adapters/llmExtract.js";
-import { councilEventUrl, prepareCandidates } from "../adapters/normalise.js";
 import type { SourceDefinition } from "../adapters/types.js";
 import type { Logger } from "../config/context.js";
 import type { PipelineConfig } from "../config/load.js";
 import { getWeekRange } from "../config/week.js";
 import { createHttpCacheStore } from "../io/httpCache.js";
+import { applyAnnotation, createGeminiAnnotator } from "../stages/annotate.js";
+import { createGeminiPageExtractor } from "../stages/extract.js";
+import { councilEventUrl, prepareCandidates } from "../stages/normalise.js";
 
 export interface TestUrlOptions {
 	url: string;

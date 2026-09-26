@@ -22,8 +22,8 @@ export const RANK_DESCRIPTION_CHARS = 300;
  */
 export const RANK_PROMPT_VERSION = "v4";
 
-import { loadPipelineConfig } from "./config/load.js";
-import { stageModelCacheKey } from "./io/cacheKey.js";
+import { loadPipelineConfig } from "../config/load.js";
+import { stageModelCacheKey } from "../io/cacheKey.js";
 
 /**
  * What a score is actually a judgement of: the event's identity (title, start,

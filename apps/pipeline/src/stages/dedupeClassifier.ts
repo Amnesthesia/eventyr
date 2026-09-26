@@ -3,7 +3,7 @@
 
 import { askDetailed, parseJsonArray } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
-import { loadPipelineConfig } from "./config/load.js";
+import { loadPipelineConfig } from "../config/load.js";
 import type { CandidatePair, PairClassifyFn } from "./dedupe.ts";
 
 const SYSTEM_PROMPT = `You decide whether two event listings describe the SAME real-world event, gathered from different sources that word things differently.

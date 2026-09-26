@@ -1,13 +1,13 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import type { CandidateEvent } from "@dothingslol/scraper";
+import type { SourceDefinition } from "../adapters/types.js";
 import {
 	councilEventUrl,
 	isPast,
 	prepareCandidates,
 	withinWindow,
 } from "./normalise.ts";
-import type { SourceDefinition } from "./types.ts";
 
 const BNE = "Australia/Brisbane";
 

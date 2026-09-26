@@ -58,8 +58,6 @@ import {
 import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { addDays } from "@dothingslol/utils/tz";
 import yaml from "js-yaml";
-import { createGeminiPageExtractor } from "../adapters/llmExtract.ts";
-import { isPast, withinWindow } from "../adapters/normalise.ts";
 import {
 	loadCityConfig,
 	SOURCE_TIERS,
@@ -72,6 +70,8 @@ import { DATA_ROOT, SOURCES_ROOT } from "../config/paths.js";
 import { getWeekRange } from "../config/week.js";
 import { withExtractionCache } from "../io/fileCache.ts";
 import { createHttpCacheStore } from "../io/httpCache.ts";
+import { createGeminiPageExtractor } from "../stages/extract.ts";
+import { isPast, withinWindow } from "../stages/normalise.ts";
 
 // --- tuning ---------------------------------------------------------------
 // These four thresholds decide who gets an LLM call. They are first-run

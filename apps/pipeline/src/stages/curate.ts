@@ -20,26 +20,22 @@ import {
 import { humanDatetime } from "@dothingslol/scraper";
 import { cleanText, cleanUrl } from "@dothingslol/utils/text";
 import { addDays } from "@dothingslol/utils/tz";
-import { isRetiredTemplateDescription } from "../adapters/annotate.js";
-import {
-	councilEventUrl,
-	isPast,
-	withinWindow,
-} from "../adapters/normalise.js";
 import { allSourceEntries, loadYieldLedger } from "../config/city.js";
 import type { RunContext } from "../config/context.js";
 import { DATA_ROOT, PROJECT_ROOT, yieldLedgerPath } from "../config/paths.js";
 import { fmtDate } from "../config/week.js";
-import type { DedupeGroup } from "../dedupe.js";
-import { dedupeEventsSmart } from "../dedupe.js";
-import { createGeminiPairClassifier } from "../dedupeClassifier.js";
+import { isRetiredTemplateDescription } from "./annotate.js";
+import type { DedupeGroup } from "./dedupe.js";
+import { dedupeEventsSmart } from "./dedupe.js";
+import { createGeminiPairClassifier } from "./dedupeClassifier.js";
 import {
 	createGoogleGeocoder,
 	findElsewhere,
 	findForeign,
 	withPlaceCache,
-} from "../locality.js";
-import { unlistedWorthProbing, updateLedger } from "../sourceYield.js";
+} from "./locality.js";
+import { councilEventUrl, isPast, withinWindow } from "./normalise.js";
+import { unlistedWorthProbing, updateLedger } from "./sourceYield.js";
 
 /** Marks which provider produced an event. Stripped before the digest is
  * written — it is bookkeeping, not published data. */

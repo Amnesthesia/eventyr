@@ -36,7 +36,7 @@ import { chunkArray } from "@dothingslol/utils/concurrency";
 import { loadCityConfig, SOURCE_TIERS } from "../config/city.js";
 import type { RunContext } from "../config/context.js";
 import { DATA_ROOT } from "../config/paths.js";
-import { acronymMatch } from "../dedupe.js";
+import { acronymMatch } from "./dedupe.js";
 
 // Not flash-lite: on the first Gold Coast run it merged "Mudgeeraba Studio"
 // into "Benowa Studio" despite the prompt's branch rule. Every answer is

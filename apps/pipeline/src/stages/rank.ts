@@ -15,7 +15,7 @@ import {
 	RANK_DESCRIPTION_CHARS,
 	RANK_PROMPT_VERSION,
 	rankReuseKey,
-} from "../rankReuse.js";
+} from "./rankReuse.js";
 
 const RANK_SYSTEM = `You are scoring events for relevance to a specific person's interests.
 

@@ -1,10 +1,10 @@
-import { loadPipelineConfig } from "./config/load.js";
+import { loadPipelineConfig } from "../config/load.js";
 // Answers "is this venue actually in the city we are publishing for?" by
 // geocoding the location string and measuring how far it is from the city
 // centre.
 //
 // This replaced two hardcoded regexes (LOCAL_TERMS / ELSEWHERE in
-// adapters/normalise.ts) that listed each city's suburbs and every other
+// stages/normalise.ts) that listed each city's suburbs and every other
 // Australian capital. They worked — 35 wrong-city events went to 0 — but they
 // do not survive a new city: adding Melbourne means moving "melbourne" from
 // the reject list to a local list, and any city already named in the reject
@@ -36,7 +36,7 @@ import { loadPipelineConfig } from "./config/load.js";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { DATA_ROOT } from "./config/paths.js";
+import { DATA_ROOT } from "../config/paths.js";
 
 const ENDPOINT = "https://maps.googleapis.com/maps/api/geocode/json";
 /** Concurrent geocode requests. The quota is generous; this is politeness. */
