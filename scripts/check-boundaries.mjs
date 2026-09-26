@@ -39,6 +39,66 @@ const ALLOWED = {
 	"eventyr-mcp": ["@dothingslol/core", "@dothingslol/utils"],
 };
 
+// apps/pipeline/src's own directory graph (1.11 §"Target layout"). Files, not
+// whole directories, in the value's `only` list — everything else in that
+// directory is off limits. `cli` may import anything, so it carries no entry.
+const PIPELINE_SRC = join(ROOT, "apps/pipeline/src");
+const PIPELINE_DIR_RULES = {
+	config: [],
+	io: ["config"],
+	search: ["config", "io"],
+	stages: ["config", "io", "search"],
+	publish: ["config", "io"],
+	sources: [
+		"config",
+		"io",
+		// Diagnostic preview (testUrl.ts/pnpm test-adapter) needs annotate too,
+		// to show the same annotation a real collect run would apply — the
+		// phase doc's normalise/extract pair didn't anticipate that.
+		{ dir: "stages", only: ["normalise.ts", "extract.ts", "annotate.ts"] },
+	],
+};
+
+/** The apps/pipeline/src/<dir> a path lives under, or null outside it. */
+function pipelineSrcDir(abs) {
+	const rel = relative(PIPELINE_SRC, abs);
+	if (rel.startsWith("..") || rel === "") return null;
+	return rel.split(sep)[0];
+}
+
+function checkPipelineDirRule(file, specifier) {
+	// Tests exercise cross-cutting behaviour (e.g. config/load.test.ts also
+	// covers io/cacheKey.ts's model-aware cache keys) and carry no runtime
+	// coupling risk, so the production layering doesn't apply to them.
+	if (file.endsWith(".test.ts")) return;
+	const fromDir = pipelineSrcDir(file);
+	if (!fromDir || !(fromDir in PIPELINE_DIR_RULES)) return; // cli/, or outside apps/pipeline/src
+	const target = resolve(dirname(file), specifier);
+	const toDir = pipelineSrcDir(target);
+	if (!toDir || toDir === fromDir) return;
+	const allowed = PIPELINE_DIR_RULES[fromDir] ?? [];
+	const rule = allowed.find((a) => (typeof a === "string" ? a : a.dir) === toDir);
+	if (!rule) {
+		fail(
+			relative(ROOT, file),
+			`"${specifier}" reaches apps/pipeline/src/${toDir} from ${fromDir}, which may only import ${allowed.map((a) => (typeof a === "string" ? a : a.dir)).join(", ") || "nothing"} (1.11 directory rule)`,
+		);
+		return;
+	}
+	if (typeof rule === "object") {
+		const base = target.endsWith(".ts") || target.endsWith(".js")
+			? target.replace(/\.js$/, ".ts")
+			: target;
+		const name = base.split(sep).pop();
+		if (!rule.only.includes(name)) {
+			fail(
+				relative(ROOT, file),
+				`"${specifier}" reaches apps/pipeline/src/${toDir}/${name} from ${fromDir}, which may only import ${rule.only.join(", ")} from ${toDir} (1.11 directory rule)`,
+			);
+		}
+	}
+}
+
 const PACKAGE_PARENTS = ["packages", "apps", "workers"];
 // Plus every dot-directory (.git, .astro, .wrangler).
 const SKIP_DIRS = new Set(["node_modules", "dist"]);
@@ -120,9 +180,12 @@ function checkImport(file, specifier) {
 	if (specifier.startsWith(".")) {
 		const from = ownerOf(file);
 		const to = ownerOf(resolve(dirname(file), specifier));
-		if (from === to) return;
-		const target = to === null ? "outside the repo" : `into ${to || "the root package"}`;
-		fail(relFile, `"${specifier}" reaches ${target}; import it by package name`);
+		if (from !== to) {
+			const target = to === null ? "outside the repo" : `into ${to || "the root package"}`;
+			fail(relFile, `"${specifier}" reaches ${target}; import it by package name`);
+			return;
+		}
+		checkPipelineDirRule(file, specifier);
 		return;
 	}
 	const m = /^(@dothingslol\/[^/]+)(?:\/(.*))?$/.exec(specifier);

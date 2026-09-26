@@ -20,12 +20,12 @@ import { createFixtureFetcher } from "@dothingslol/scraper/testing";
 import { addDays } from "@dothingslol/utils/tz";
 import type { Logger } from "../config/context.js";
 import type { PipelineConfig } from "../config/load.js";
+import type { SourceDefinition } from "../config/sourceTypes.js";
 import { getWeekRange } from "../config/week.js";
 import { createHttpCacheStore } from "../io/httpCache.js";
 import { applyAnnotation, createGeminiAnnotator } from "../stages/annotate.js";
 import { createGeminiPageExtractor } from "../stages/extract.js";
 import { councilEventUrl, prepareCandidates } from "../stages/normalise.js";
-import type { SourceDefinition } from "./types.js";
 
 export interface TestUrlOptions {
 	url: string;

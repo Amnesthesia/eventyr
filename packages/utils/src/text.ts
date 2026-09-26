@@ -86,3 +86,29 @@ export function cleanUrl(value: unknown): string {
 	// an href, and decoding must not be a way to smuggle javascript: past it.
 	return /^https?:\/\//i.test(url) ? url : "";
 }
+
+/**
+ * Dice's coefficient over character bigrams: how similar two strings are,
+ * 0 (nothing shared) to 1 (identical). Generic string similarity — no
+ * knowledge of events, sources or any other domain concept, which is why it
+ * lives here rather than beside the dedupe logic that uses it.
+ */
+export function diceSimilarity(a: string, b: string): number {
+	if (a === b) return 1;
+	if (a.length < 2 || b.length < 2) return 0;
+	const getBigrams = (s: string): Map<string, number> => {
+		const m = new Map<string, number>();
+		for (let i = 0; i < s.length - 1; i++) {
+			const bg = s.slice(i, i + 2);
+			m.set(bg, (m.get(bg) ?? 0) + 1);
+		}
+		return m;
+	};
+	const aMap = getBigrams(a);
+	const bMap = getBigrams(b);
+	let inter = 0;
+	for (const [bg, count] of aMap) {
+		inter += Math.min(count, bMap.get(bg) ?? 0);
+	}
+	return (2 * inter) / (a.length + b.length - 2);
+}

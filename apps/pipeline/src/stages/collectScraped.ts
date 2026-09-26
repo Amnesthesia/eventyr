@@ -36,10 +36,10 @@ import {
 	DATA_ROOT,
 	SOURCES_ROOT,
 } from "../config/paths.js";
+import { loadSourceRegistry } from "../config/registry.js";
+import type { SourceDefinition } from "../config/sourceTypes.js";
 import { withExtractionCache } from "../io/fileCache.js";
 import { createHttpCacheStore } from "../io/httpCache.js";
-import { loadSourceRegistry } from "../sources/registry.js";
-import type { SourceDefinition } from "../sources/types.js";
 import {
 	type Annotation,
 	annotationKey,

@@ -10,7 +10,7 @@ import {
 	candidateToEvent,
 	type ScrapedEvent,
 } from "@dothingslol/scraper";
-import type { SourceDefinition } from "../sources/types.js";
+import type { SourceDefinition } from "../config/sourceTypes.js";
 
 /**
  * Keeps events overlapping the publishing window, which runs from TODAY (not

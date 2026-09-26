@@ -762,7 +762,7 @@ class Prober {
 			// Descriptive only: SourceEntry.strategy is documented as not
 			// switching behaviour, and pageAdapter re-recognises the feed by
 			// response shape at collect time. Widening the stored enum would
-			// repeat the "ics"/"rss" mistake types.ts warns about.
+			// repeat the "ics"/"rss" mistake config/sourceTypes.ts warns about.
 			strategy: "html",
 			titles: events.slice(0, 3).map((c) => c.title as string),
 			count: events.length,

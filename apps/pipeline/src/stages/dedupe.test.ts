@@ -1,12 +1,12 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { isDuplicateEvent } from "../search/dedupe.ts";
 import {
 	acronymMatch,
 	type CandidatePair,
 	completeness,
 	dedupeEventsSmart,
 	isDistinctiveTitle,
-	isDuplicateEvent,
 	planDedupe,
 } from "./dedupe.ts";
 

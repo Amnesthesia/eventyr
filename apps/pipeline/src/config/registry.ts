@@ -4,12 +4,8 @@
 // themselves so a malformed entry fails loudly at load time instead of
 // producing a half-formed payload three steps downstream.
 
-import {
-	loadCityConfig,
-	type SourceEntry,
-	scraperSources,
-} from "../config/city.js";
-import type { SourceDefinition } from "./types.ts";
+import { loadCityConfig, type SourceEntry, scraperSources } from "./city.js";
+import type { SourceDefinition } from "./sourceTypes.js";
 
 function slugify(text: string): string {
 	return (
