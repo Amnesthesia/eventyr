@@ -15,7 +15,7 @@
     "rss": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/rss.ts",
     "pages": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/pages.ts",
     "build-ai": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/ai.ts",
-    "add-city": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/add_city.ts",
+    "add-city": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/addCity.ts",
     "probe-sources": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/adapters/probe.ts",
     "discover-sources": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/adapters/discover.ts",
     "test-adapter": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/adapters/testUrl.ts",

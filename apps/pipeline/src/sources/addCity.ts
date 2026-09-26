@@ -11,28 +11,17 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-
 import yaml from "js-yaml";
-import { isValidTimeZone } from "./config/city.js";
-import { requireEnv } from "./config/env.js";
-import { PROJECT_ROOT, SOURCES_ROOT } from "./config/paths.js";
-
-const CITY_NAME = requireEnv("CITY_NAME");
-const CITY_KEY = requireEnv("CITY_KEY");
-// Required, with no default: the zone decides every published time, and a
-// wrong one shifts them all silently. The same check loadCityConfig applies.
-const CITY_TIMEZONE = requireEnv("CITY_TIMEZONE");
-if (!isValidTimeZone(CITY_TIMEZONE)) {
-	throw new Error(
-		`CITY_TIMEZONE ${JSON.stringify(CITY_TIMEZONE)} is not a valid IANA zone (e.g. "Australia/Sydney").`,
-	);
-}
+import { isValidTimeZone } from "../config/city.js";
+import type { Logger } from "../config/context.js";
+import { PROJECT_ROOT, SOURCES_ROOT } from "../config/paths.js";
 
 const DIGEST_WF = join(PROJECT_ROOT, ".github/workflows/digest.yml");
 
 /** The header comment yaml.dump cannot produce, and the centre placeholder a
  * new city must fill in before its first curate. */
-const HEADER = `# Event sources for ${CITY_NAME}.
+function header(cityName: string): string {
+	return `# Event sources for ${cityName}.
 #
 # Each entry declares how it is collected:
 #   method: scraper — we fetch its listingUrls ourselves (src/adapters/).
@@ -56,77 +45,103 @@ const HEADER = `# Event sources for ${CITY_NAME}.
 #   lng: 153.0251
 #   radiusKm: 50
 `;
+}
 
-function writeCityFile(): boolean {
+function writeCityFile(
+	log: Logger,
+	cityName: string,
+	cityKey: string,
+	cityTimezone: string,
+): boolean {
 	mkdirSync(SOURCES_ROOT, { recursive: true });
-	const outPath = join(SOURCES_ROOT, `${CITY_KEY}.yml`);
+	const outPath = join(SOURCES_ROOT, `${cityKey}.yml`);
 	if (existsSync(outPath)) {
-		console.log(`→ ${outPath} already exists — left untouched.`);
+		log.log(`→ ${outPath} already exists — left untouched.`);
 		return false;
 	}
 
 	const cityData = {
-		name: CITY_NAME,
-		timezone: CITY_TIMEZONE,
+		name: cityName,
+		timezone: cityTimezone,
 		currency: "AUD",
 		sources: { aggregators: [], institutions: [], independents: [] },
 	};
 	writeFileSync(
 		outPath,
-		HEADER + yaml.dump(cityData, { noRefs: true, sortKeys: false }),
+		header(cityName) + yaml.dump(cityData, { noRefs: true, sortKeys: false }),
 		"utf-8",
 	);
-	console.log(`→ Written ${outPath}`);
+	log.log(`→ Written ${outPath}`);
 	return true;
 }
 
-function updateDigestWorkflow(): void {
+function updateDigestWorkflow(log: Logger, cityKey: string): void {
 	const content = readFileSync(DIGEST_WF, "utf-8");
 
 	const pattern = /( {8}options:\n(?:( {10}- \S+\n))*)/;
 	const match = content.match(pattern);
 	if (!match) {
-		console.log(
+		log.log(
 			`⚠ Could not locate options block in ${DIGEST_WF} — skipping workflow update.`,
 		);
 		return;
 	}
 
-	if (match[0].includes(`- ${CITY_KEY}`)) {
-		console.log(
-			`→ '${CITY_KEY}' already in dispatch options — skipping workflow update.`,
+	if (match[0].includes(`- ${cityKey}`)) {
+		log.log(
+			`→ '${cityKey}' already in dispatch options — skipping workflow update.`,
 		);
 		return;
 	}
 
-	const newEntry = `          - ${CITY_KEY}\n`;
+	const newEntry = `          - ${cityKey}\n`;
 	const updated = content.replace(pattern, (m) => m + newEntry);
 	writeFileSync(DIGEST_WF, updated, "utf-8");
-	console.log(`→ Added '${CITY_KEY}' to dispatch options in ${DIGEST_WF}`);
+	log.log(`→ Added '${cityKey}' to dispatch options in ${DIGEST_WF}`);
 }
 
-function main(): void {
-	console.log(`Add City — ${CITY_KEY} (${CITY_NAME})`);
-	console.log("=".repeat(50));
+export interface AddCityOptions {
+	cityName: string;
+	cityKey: string;
+	cityTimezone: string;
+}
 
-	const created = writeCityFile();
-	updateDigestWorkflow();
+export interface AddCityResult {
+	created: boolean;
+}
 
-	if (created) {
-		console.log("\nNext:");
-		console.log(
-			`  1. Set the real centre coordinates in sources/${CITY_KEY}.yml`,
-		);
-		console.log(
-			`  2. pnpm discover-sources --city=${CITY_KEY} --apply   # find sources`,
-		);
-		console.log(
-			`  3. pnpm probe-sources --city=${CITY_KEY} --apply      # promote the scrapable ones`,
+export async function addCity(
+	log: Logger,
+	opts: AddCityOptions,
+): Promise<AddCityResult> {
+	const { cityName, cityKey, cityTimezone } = opts;
+	// Required, with no default: the zone decides every published time, and
+	// a wrong one shifts them all silently. The same check loadCityConfig
+	// applies.
+	if (!isValidTimeZone(cityTimezone)) {
+		throw new Error(
+			`CITY_TIMEZONE ${JSON.stringify(cityTimezone)} is not a valid IANA zone (e.g. "Australia/Sydney").`,
 		);
 	}
-	console.log(
-		`✓ Done. Commit sources/${CITY_KEY}.yml${created ? " and digest.yml" : ""}.`,
-	);
-}
 
-main();
+	log.log(`Add City — ${cityKey} (${cityName})`);
+	log.log("=".repeat(50));
+
+	const created = writeCityFile(log, cityName, cityKey, cityTimezone);
+	updateDigestWorkflow(log, cityKey);
+
+	if (created) {
+		log.log("\nNext:");
+		log.log(`  1. Set the real centre coordinates in sources/${cityKey}.yml`);
+		log.log(
+			`  2. pnpm discover-sources --city=${cityKey} --apply   # find sources`,
+		);
+		log.log(
+			`  3. pnpm probe-sources --city=${cityKey} --apply      # promote the scrapable ones`,
+		);
+	}
+	log.log(
+		`✓ Done. Commit sources/${cityKey}.yml${created ? " and digest.yml" : ""}.`,
+	);
+	return { created };
+}
