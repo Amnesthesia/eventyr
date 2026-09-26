@@ -1,44 +1,23 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { isSameSite, normaliseHost, toISODate } from "@dothingslol/core/shared";
+import type {
+	CityConfig,
+	SourceEntry,
+	SourceTier,
+} from "@dothingslol/core/sources";
+import { CityConfigSchema } from "@dothingslol/core/sources";
 import yaml from "js-yaml";
 import { sourceEarnsPlace, type YieldLedger } from "../sourceYield.js";
 import { barrenSourcesPath, SOURCES_ROOT, yieldLedgerPath } from "./paths.js";
 import { getWeekRange } from "./week.js";
 
+export type { CityConfig, SourceEntry, SourceTier };
 export const SOURCE_TIERS = [
 	"aggregators",
 	"institutions",
 	"independents",
 ] as const;
-export type SourceTier = (typeof SOURCE_TIERS)[number];
-
-export interface SourceEntry {
-	name: string;
-	method: "llm" | "scraper";
-	domains?: string[];
-	pin?: boolean;
-	id?: string;
-	homepage?: string;
-	listingUrls?: string[];
-	strategy?: "jsonld" | "html" | "render";
-	venue?: {
-		name?: string | null;
-		address?: string | null;
-		suburb?: string | null;
-		aliases?: string[];
-	};
-	note?: string;
-}
-
-export interface CityConfig {
-	name: string;
-	timezone: string;
-	centre?: { lat: number; lng: number; radiusKm: number };
-	locale?: string;
-	currency?: string;
-	sources: Record<SourceTier, SourceEntry[]>;
-}
 
 export function isValidTimeZone(timeZone: string): boolean {
 	if (/^[+-]\d/.test(timeZone)) return false;
@@ -60,21 +39,8 @@ export function loadCityConfig(cityKey: string): CityConfig {
 			`Unknown city '${cityKey}'. No file at ${sourcesPath}. Run src/add_city.ts to add it.`,
 		);
 	}
-	const cfg = yaml.load(raw) as CityConfig;
-	if (typeof cfg?.timezone !== "string" || !isValidTimeZone(cfg.timezone)) {
-		throw new Error(
-			`${sourcesPath}: timezone ${JSON.stringify(cfg?.timezone)} is not a valid IANA zone. Add e.g. "timezone: Australia/Sydney".`,
-		);
-	}
-	for (const tier of SOURCE_TIERS) {
-		for (const entry of cfg.sources?.[tier] ?? []) {
-			if (entry.method !== "llm" && entry.method !== "scraper") {
-				throw new Error(
-					`${sourcesPath}: source "${entry.name}" has invalid method ${JSON.stringify(entry.method)} (expected "llm" or "scraper")`,
-				);
-			}
-		}
-	}
+	const parsed = yaml.load(raw);
+	const cfg = CityConfigSchema.parse(parsed);
 	return cfg;
 }
 

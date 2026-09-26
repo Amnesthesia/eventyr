@@ -299,7 +299,10 @@ async function discoverCity(city: string): Promise<void> {
 			domains: [s.host],
 			note: `Suggested by discover-sources ${new Date().toISOString().slice(0, 10)}; not yet verified.`,
 		}));
-		cfg.sources[tier] = [...(cfg.sources[tier] ?? []), ...entries];
+		cfg.sources[tier as keyof typeof cfg.sources] = [
+			...(cfg.sources[tier] ?? []),
+			...entries,
+		];
 	}
 	const path = join(SOURCES_ROOT, `${city}.yml`);
 	const original = readFileSync(path, "utf-8");

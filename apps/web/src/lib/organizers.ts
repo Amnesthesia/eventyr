@@ -1,13 +1,7 @@
-// Build-time organizer lookup for the Astro pages.
-//
-// Deliberately not common.ts: its PROJECT_ROOT comes from import.meta.url,
-// which inside Astro's prerender bundle points at dist/.prerender/, so
-// loadCityConfig there looks for sources/ in the wrong place. The pages already
-// resolve data/ from process.cwd(); sources/ is resolved the same way. Cached
-// per city because every event page asks.
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { type OrganizerSource, organizerUrls } from "@dothingslol/core/shared";
+import { organizerUrls } from "@dothingslol/core/shared";
+import { CityConfigSchema } from "@dothingslol/core/sources";
 import yaml from "js-yaml";
 import { SOURCES_ROOT } from "./paths.ts";
 
@@ -16,9 +10,10 @@ const cache = new Map<string, Map<string, string>>();
 export function organizerUrlsFor(cityKey: string): Map<string, string> {
 	const hit = cache.get(cityKey);
 	if (hit) return hit;
-	const cfg = yaml.load(
+	const raw = yaml.load(
 		readFileSync(join(SOURCES_ROOT, `${cityKey}.yml`), "utf-8"),
-	) as { sources?: Partial<Record<string, OrganizerSource[]>> };
+	);
+	const cfg = CityConfigSchema.parse(raw);
 	const out = organizerUrls(cfg.sources);
 	cache.set(cityKey, out);
 	return out;

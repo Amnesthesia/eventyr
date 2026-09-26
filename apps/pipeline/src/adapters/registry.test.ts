@@ -172,11 +172,17 @@ test("only a single-venue source lends its own name as the venue", () => {
 	assert.equal(venueNameFor(entry, "aggregators"), null);
 	assert.equal(venueNameFor(entry, "independents"), "WeekendNotes Brisbane");
 	assert.equal(
-		venueNameFor({ ...entry, venue: { name: null } }, "institutions"),
+		venueNameFor(
+			{ ...entry, venue: { name: null, address: null, suburb: null } },
+			"institutions",
+		),
 		null,
 	);
 	assert.equal(
-		venueNameFor({ ...entry, venue: { name: "Riverstage" } }, "aggregators"),
+		venueNameFor(
+			{ ...entry, venue: { name: "Riverstage", address: null, suburb: null } },
+			"aggregators",
+		),
 		"Riverstage",
 	);
 });

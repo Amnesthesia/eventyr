@@ -1427,7 +1427,9 @@ function applyPromotions(
 	let demoted = 0;
 	const changes: Change[] = [];
 	for (const tier of SOURCE_TIERS) {
-		cfg.sources[tier] = (cfg.sources[tier] ?? []).map((entry) => {
+		cfg.sources[tier as keyof typeof cfg.sources] = (
+			cfg.sources[tier] ?? []
+		).map((entry) => {
 			const host = normaliseHost(entry.domains?.[0]) ?? "";
 			const r = byHost.get(host);
 			if (!r?.strategy) {

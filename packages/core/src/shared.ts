@@ -1096,11 +1096,9 @@ export function eventPath(cityKey: string, event: IdentifiableEvent): string {
 }
 
 /** The subset of a sources/{city}.yml entry the organizer lookup needs. */
-export interface OrganizerSource {
-	name: string;
-	homepage?: string;
-	domains?: string[];
-}
+import type { SourceEntry, SourceTier } from "./sources.js";
+
+export type { SourceEntry, SourceTier };
 
 /**
  * Venue name → its own website, for schema.org `organizer.url`. Only the
@@ -1110,10 +1108,10 @@ export interface OrganizerSource {
  * model echoed for the rest — so a miss just leaves `url` out.
  */
 export function organizerUrls(
-	sources: Partial<Record<string, OrganizerSource[]>> | undefined,
+	sources: Partial<Record<SourceTier, SourceEntry[]>> | undefined,
 ): Map<string, string> {
 	const out = new Map<string, string>();
-	for (const tier of ["institutions", "independents"]) {
+	for (const tier of ["institutions", "independents"] as const) {
 		for (const entry of sources?.[tier] ?? []) {
 			const url =
 				entry.homepage ??
