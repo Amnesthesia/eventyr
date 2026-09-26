@@ -1,5 +1,5 @@
 import { runContextFromEnv } from "../config/context.js";
-import { publishIcal } from "../stages/ical.js";
+import { publishIcal } from "../publish/ical.js";
 
 async function main(): Promise<void> {
 	const ctx = runContextFromEnv();

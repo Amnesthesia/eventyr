@@ -1,4 +1,4 @@
-import { publishPages } from "../stages/pages.js";
+import { publishPages } from "../publish/pages.js";
 
 publishPages(console).catch((err) => {
 	console.error(err);
