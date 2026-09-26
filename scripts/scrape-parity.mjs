@@ -5,7 +5,7 @@
 // @dothingslol/scraper's scrape() with the package's fixture fetcher (the
 // fixture bodies stand in for the network) and a stub LLM rung that returns
 // one fixed marker candidate, so no model is ever called. The goldens in
-// test/golden/scrape were recorded from the pre-1.8 ladder + normalise (the
+// apps/pipeline/test/golden/scrape were recorded from the pre-1.8 ladder + normalise (the
 // step-1 version of this script, commit 2ab0ec6) and are the contract the
 // move must keep:
 //
@@ -19,7 +19,7 @@
 //   node scripts/scrape-parity.mjs [--record-meta] [--latency=<ms>]
 //
 // <fixture>.json files are rewritten on every run: `git diff --exit-code
-// test/golden/scrape` is the parity check. _meta.json is only written with
+// apps/pipeline/test/golden/scrape` is the parity check. _meta.json is only written with
 // --record-meta; otherwise the fresh profile is checked against it (peak ≥
 // golden, wall-clock ≤ golden + 10%) and a drop fails the run.
 //

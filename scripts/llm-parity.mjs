@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 // LLM request parity harness (docs/monorepo/PLAN.md §9, phase 1.6).
 //
-// Runs every LLM-using CLI against the fixture city in test/fixtures/llm-city
+// Runs every LLM-using CLI against the fixture city in apps/pipeline/test/fixtures/llm-city
 // with the model replaced by canned responses (EVENTYR_LLM_REPLAY=replay, no
 // key, no network beyond a local HTTP server that serves the fixture's pages),
 // the clock pinned (scripts/fake-now.mjs) and the request stream recorded.
-// The goldens in test/golden/llm are the contract a prompt-adjacent refactor
+// The goldens in apps/pipeline/test/golden/llm are the contract a prompt-adjacent refactor
 // must keep:
 //
 //   <cli>.jsonl      every request line the CLI made, sorted by sha256 of the
@@ -24,14 +24,14 @@
 //     (default: all)
 //
 // .jsonl and .stdout are rewritten on every run: `git diff --exit-code
-// test/golden/llm` is the parity check. .meta.json is only written with
+// apps/pipeline/test/golden/llm` is the parity check. .meta.json is only written with
 // --record-meta; otherwise the fresh profile is checked against it (calls
 // equal, peak in-flight ≥ golden, wall-clock ≤ golden + 10%) and a drop fails
 // the run — a drop means something went serial.
 //
 // Authoring a canned response: the replay seam throws on a request it has no
 // response for and leaves the request as <hash>.missing.json next to where
-// the response belongs (test/fixtures/llm-city/responses/<hash>.txt). Write
+// the response belongs (apps/pipeline/test/fixtures/llm-city/responses/<hash>.txt). Write
 // the .txt by hand in the shape the stage's prompt asks for (Gemini: the
 // answer text; Anthropic/OpenAI/Perplexity: the SDK's response object as
 // JSON), delete the .missing.json, rerun. Never author one with a model.
@@ -107,7 +107,7 @@ for (const cli of selected) {
 const run = selected.length ? selected : Object.keys(CLIS);
 
 // --- fixture web server ---------------------------------------------------
-// Serves test/fixtures/llm-city/www. Two hosts share it: 127.0.0.1 is the
+// Serves apps/pipeline/test/fixtures/llm-city/www. Two hosts share it: 127.0.0.1 is the
 // scraper source, localhost the unverified one (their homepages differ).
 const server = createServer((req, res) => {
 	const { pathname } = new URL(req.url ?? "/", `http://${req.headers.host}`);
