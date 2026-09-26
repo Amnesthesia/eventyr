@@ -1,16 +1,9 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { toISODate } from "@dothingslol/core/shared";
-import { loadCityConfig } from "./config/city.js";
-import { requireEnv } from "./config/env.js";
-import { DATA_ROOT } from "./config/paths.js";
-import { fmtDate, getWeekRange } from "./config/week.js";
-
-const CITY = requireEnv("CITY");
-const CITY_TZ = loadCityConfig(CITY).timezone;
-const FORCE = ["1", "true", "yes"].includes(
-	(process.env.FORCE ?? "").toLowerCase(),
-);
+import type { RunContext } from "../config/context.js";
+import { DATA_ROOT } from "../config/paths.js";
+import { fmtDate } from "../config/week.js";
 
 type Event = Record<string, unknown>;
 
@@ -23,8 +16,19 @@ function mapsUrl(location: string, cityName: string): string {
 	return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
 
-async function main(): Promise<void> {
-	const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
+export interface GeocodeResult {
+	skipped: boolean;
+	mappedCount: number;
+	eventCount: number;
+	uniqueLocations: number;
+}
+
+export async function geocode(ctx: RunContext): Promise<GeocodeResult> {
+	const CITY = ctx.city;
+	const CITY_TZ = ctx.cityConfig.timezone;
+	const FORCE = ctx.force;
+	const log = ctx.log;
+	const { monday, sunday } = ctx.week;
 	const jsonPath = join(DATA_ROOT, `${CITY}.json`);
 
 	if (!existsSync(jsonPath)) {
@@ -37,10 +41,10 @@ async function main(): Promise<void> {
 	>;
 
 	if (!FORCE && payload.geocoded_at === toISODate(monday, CITY_TZ)) {
-		console.log(
+		log.log(
 			"→ Already geocoded for this week — skipping. Set FORCE=true to re-geocode.",
 		);
-		return;
+		return { skipped: true, mappedCount: 0, eventCount: 0, uniqueLocations: 0 };
 	}
 
 	const events = (payload.events as Event[]) ?? [];
@@ -49,10 +53,10 @@ async function main(): Promise<void> {
 	}
 
 	const cityName = payload.city as string;
-	console.log(
+	log.log(
 		`Geocoding — ${cityName} — ${fmtDate(monday, CITY_TZ)} to ${fmtDate(sunday, CITY_TZ)}`,
 	);
-	console.log("=".repeat(50));
+	log.log("=".repeat(50));
 
 	const cache = new Map<string, string>();
 	let mapped = 0;
@@ -72,7 +76,7 @@ async function main(): Promise<void> {
 		mapped++;
 	}
 
-	console.log(
+	log.log(
 		`→ ${mapped}/${events.length} events mapped (${cache.size} unique locations)`,
 	);
 
@@ -82,8 +86,12 @@ async function main(): Promise<void> {
 		events,
 	};
 	writeFileSync(jsonPath, JSON.stringify(updated, null, 2), "utf-8");
-	console.log(`→ Written ${jsonPath}`);
-	console.log("✓ Geocoding complete.");
+	log.log(`→ Written ${jsonPath}`);
+	log.log("✓ Geocoding complete.");
+	return {
+		skipped: false,
+		mappedCount: mapped,
+		eventCount: events.length,
+		uniqueLocations: cache.size,
+	};
 }
-
-await main();
