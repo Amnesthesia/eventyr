@@ -58,19 +58,20 @@ import {
 import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { addDays } from "@dothingslol/utils/tz";
 import yaml from "js-yaml";
+import { createGeminiPageExtractor } from "../adapters/llmExtract.ts";
+import { isPast, withinWindow } from "../adapters/normalise.ts";
 import {
 	loadCityConfig,
 	SOURCE_TIERS,
 	type SourceEntry,
 	type SourceTier,
 } from "../config/city.js";
+import type { Logger } from "../config/context.js";
+import type { PipelineConfig } from "../config/load.js";
 import { DATA_ROOT, SOURCES_ROOT } from "../config/paths.js";
 import { getWeekRange } from "../config/week.js";
 import { withExtractionCache } from "../io/fileCache.ts";
 import { createHttpCacheStore } from "../io/httpCache.ts";
-import { installUsageReporting, reportGeminiUsage } from "../io/usage.ts";
-import { createGeminiPageExtractor } from "./llmExtract.ts";
-import { isPast, withinWindow } from "./normalise.ts";
 
 // --- tuning ---------------------------------------------------------------
 // These four thresholds decide who gets an LLM call. They are first-run
@@ -281,41 +282,17 @@ interface PageAttempt {
 	outcome: string;
 }
 
-// --- CLI ------------------------------------------------------------------
-const args = process.argv.slice(2);
-const flag = (name: string): string | undefined =>
-	args
-		.find((a) => a.startsWith(`--${name}=`))
-		?.split("=")
-		.slice(1)
-		.join("=");
-const has = (name: string): boolean => args.includes(`--${name}`);
-// Only enforced when run as a CLI — importing this module for its pure
-// helpers (as probe.test.ts does) must not exit the test process.
-const IS_MAIN = process.argv[1]?.endsWith("probe.ts");
-const cityArg = flag("city");
-if (IS_MAIN && (!cityArg || cityArg.includes(","))) {
-	console.error(
-		"probe-sources runs for one city at a time — pass --city=<key>, e.g. --city=brisbane.",
-	);
-	process.exit(1);
-}
-const CITIES = cityArg ? [cityArg] : [];
-const ONLY = flag("only")
-	?.split(",")
-	.map((s) => s.trim().toLowerCase());
 /** --only must bound --apply too: results.jsonl is cumulative, so applying it
  * whole replayed every stale verdict ever cached — a 22-host run would have
  * demoted the hand-built Five Star entries on a months-old spa-empty. */
-function onlyScoped(results: ProbeResult[]): ProbeResult[] {
-	return ONLY
-		? results.filter((r) => r.host && ONLY.includes(r.host))
+function onlyScoped(
+	results: ProbeResult[],
+	only: string[] | undefined,
+): ProbeResult[] {
+	return only
+		? results.filter((r) => r.host && only.includes(r.host))
 		: results;
 }
-const LIMIT = Number(flag("limit") ?? "0");
-const APPLY = has("apply");
-/** Ignore both caches and re-probe everything. */
-const FORCE = has("force");
 /**
  * Promotions are flushed to the YAML every this many completed sources rather
  * than only at the end.
@@ -327,7 +304,6 @@ const FORCE = has("force");
  * config is never more than this many sources behind what has been proven.
  */
 const APPLY_EVERY = 20;
-const REPORT_ONLY = has("report-only");
 
 // --- helpers --------------------------------------------------------------
 
@@ -930,6 +906,7 @@ class Prober {
 }
 
 async function probeEntry(
+	logger: Logger,
 	entry: SourceEntry,
 	city: string,
 	tier: SourceTier,
@@ -1001,7 +978,7 @@ async function probeEntry(
 		city,
 	);
 	for (const url of sitemap.candidates) add(url, "sitemap");
-	console.log(
+	logger.log(
 		`    · [${entry.name.slice(0, 28)}] sitemap: ${sitemap.sitemapsFetched} file(s), ` +
 			`${sitemap.urlsSeen} url(s) → ${sitemap.candidates.length} listing candidate(s)` +
 			`${sitemap.candidates.length > 0 ? `: ${sitemap.candidates.join(" ")}` : ""}`,
@@ -1293,30 +1270,30 @@ function appendResult(r: ProbeResult): void {
 	appendFileSync(RESULTS_PATH, `${JSON.stringify(r)}\n`, "utf-8");
 }
 
-function report(results: ProbeResult[]): void {
+function report(log: Logger, results: ProbeResult[]): void {
 	const scrapable = results.filter((r) => r.strategy);
 	const byClass = new Map<string, number>();
 	for (const r of results)
 		byClass.set(r.classification, (byClass.get(r.classification) ?? 0) + 1);
 
-	console.log(`\n${"=".repeat(78)}`);
-	console.log(
+	log.log(`\n${"=".repeat(78)}`);
+	log.log(
 		`${scrapable.length} of ${results.length} probed sources are scrapable  ` +
 			`(jsonld: ${scrapable.filter((r) => r.strategy === "jsonld").length}, ` +
 			`html: ${scrapable.filter((r) => r.strategy === "html").length})`,
 	);
-	console.log("=".repeat(78));
-	console.log("\nBy outcome:");
+	log.log("=".repeat(78));
+	log.log("\nBy outcome:");
 	for (const [cls, n] of [...byClass.entries()].sort((a, b) => b[1] - a[1])) {
-		console.log(`  ${String(n).padStart(4)}  ${cls}`);
+		log.log(`  ${String(n).padStart(4)}  ${cls}`);
 	}
 
 	if (scrapable.length > 0) {
-		console.log("\nScrapable sources:");
+		log.log("\nScrapable sources:");
 		for (const r of scrapable.sort(
 			(a, b) => b.candidatesFound - a.candidatesFound,
 		)) {
-			console.log(
+			log.log(
 				`  ${String(r.candidatesFound).padStart(3)} ev  ${r.strategy?.padEnd(6)} ` +
 					`${(r.foundVia ?? "").padEnd(8)} ${r.host}\n` +
 					`         ${r.listingUrls[0]}\n` +
@@ -1327,21 +1304,21 @@ function report(results: ProbeResult[]): void {
 
 	const notScrapable = results.filter((r) => !r.strategy && r.host);
 	if (notScrapable.length > 0) {
-		console.log(
+		log.log(
 			`\nNot scrapable (${notScrapable.length}) — these stay on the AI search:`,
 		);
 		for (const r of notScrapable) {
-			console.log(`  ${(r.host ?? "").padEnd(38)} ${r.classification}`);
+			log.log(`  ${(r.host ?? "").padEnd(38)} ${r.classification}`);
 		}
 	}
 
 	const noDomain = results.filter((r) => r.classification === "no-domain");
 	if (noDomain.length > 0) {
-		console.log(`\nNeeds a human — no domain on file (${noDomain.length}):`);
+		log.log(`\nNeeds a human — no domain on file (${noDomain.length}):`);
 		for (const r of noDomain.slice(0, 40))
-			console.log(`  ${r.city}/${r.tier}: ${r.name}`);
+			log.log(`  ${r.city}/${r.tier}: ${r.name}`);
 	}
-	console.log(
+	log.log(
 		`\nRaw signals for tuning: ${RESULTS_PATH}` +
 			`\nRe-derive without refetching: pnpm probe-sources --report-only`,
 	);
@@ -1359,45 +1336,46 @@ interface Change {
 
 /** Prints exactly what is being written, so the run ends with the change it
  * made rather than only a count. */
-function reportChanges(city: string, changes: Change[]): void {
+function reportChanges(log: Logger, city: string, changes: Change[]): void {
 	if (changes.length === 0) {
-		console.log(`→ ${city}: no source changes`);
+		log.log(`→ ${city}: no source changes`);
 		return;
 	}
 	const promoted = changes.filter((c) => c.kind === "promote");
 	const urls = changes.filter((c) => c.kind === "urls");
 	const demoted = changes.filter((c) => c.kind === "demote");
 
-	console.log(`\n→ ${city}: updating ${changes.length} source(s)`);
+	log.log(`\n→ ${city}: updating ${changes.length} source(s)`);
 	if (promoted.length > 0) {
-		console.log(`\n  llm → scraper (${promoted.length}):`);
+		log.log(`\n  llm → scraper (${promoted.length}):`);
 		for (const c of promoted) {
-			console.log(`    + ${c.name}  (${c.host})`);
-			for (const u of c.after) console.log(`        ${u}`);
+			log.log(`    + ${c.name}  (${c.host})`);
+			for (const u of c.after) log.log(`        ${u}`);
 		}
 	}
 	if (urls.length > 0) {
-		console.log(`\n  listing URLs changed (${urls.length}):`);
+		log.log(`\n  listing URLs changed (${urls.length}):`);
 		for (const c of urls) {
-			console.log(`    ~ ${c.name}  (${c.host})`);
+			log.log(`    ~ ${c.name}  (${c.host})`);
 			for (const u of c.before.filter((u) => !c.after.includes(u))) {
-				console.log(`        - ${u}`);
+				log.log(`        - ${u}`);
 			}
 			for (const u of c.after.filter((u) => !c.before.includes(u))) {
-				console.log(`        + ${u}`);
+				log.log(`        + ${u}`);
 			}
 		}
 	}
 	if (demoted.length > 0) {
-		console.log(`\n  scraper → llm, no longer verifiable (${demoted.length}):`);
+		log.log(`\n  scraper → llm, no longer verifiable (${demoted.length}):`);
 		for (const c of demoted) {
-			console.log(`    - ${c.name}  (${c.host})`);
-			for (const u of c.before) console.log(`        was: ${u}`);
+			log.log(`    - ${c.name}  (${c.host})`);
+			for (const u of c.before) log.log(`        was: ${u}`);
 		}
 	}
 }
 
 function applyPromotions(
+	log: Logger,
 	city: string,
 	results: ProbeResult[],
 	verbose = false,
@@ -1503,8 +1481,8 @@ function applyPromotions(
 		`${header.replace(/\n+$/, "\n")}\n${yaml.dump(cfg, { lineWidth: 100, noRefs: true })}`,
 		"utf-8",
 	);
-	if (verbose) reportChanges(city, changes);
-	console.log(
+	if (verbose) reportChanges(log, city, changes);
+	log.log(
 		`→ ${city}: ${promoted} source(s) now method: scraper, ${demoted} demoted to method: llm`,
 	);
 }
@@ -1554,7 +1532,7 @@ export interface ListingUrlFinder {
 	batch(sources: ListingUrlRequest[]): Promise<Map<string, string[]>>;
 }
 
-function createListingUrlFinder(): ListingUrlFinder {
+function createListingUrlFinder(log: Logger, force: boolean): ListingUrlFinder {
 	async function fillBatch(
 		batch: ListingUrlRequest[],
 		out: Map<string, string[]>,
@@ -1591,16 +1569,16 @@ function createListingUrlFinder(): ListingUrlFinder {
 
 	return {
 		async batch(sources) {
-			const found = FORCE ? new Map<string, string[]>() : loadListingUrlCache();
+			const found = force ? new Map<string, string[]>() : loadListingUrlCache();
 			const todo = sources.filter((s) => !found.has(s.host));
 			const cached = sources.length - todo.length;
 			if (todo.length === 0) {
-				console.log(
+				log.log(
 					`Listing URLs: all ${cached} host(s) already cached — no discovery calls needed.`,
 				);
 				return found;
 			}
-			console.log(
+			log.log(
 				`Listing URLs: asking for ${todo.length} host(s)` +
 					`${cached > 0 ? ` (${cached} already cached)` : ""}…`,
 			);
@@ -1612,7 +1590,7 @@ function createListingUrlFinder(): ListingUrlFinder {
 				try {
 					await fillBatch(group, found);
 				} catch (err) {
-					console.error(
+					log.error(
 						`  ⚠ [listing-urls] batch of ${group.length} failed: ${(err as Error).message}`,
 					);
 				}
@@ -1620,7 +1598,7 @@ function createListingUrlFinder(): ListingUrlFinder {
 				// Flushed per batch, not at the end: an interrupt during
 				// discovery should cost one batch, not the whole phase.
 				saveListingUrlCache(found);
-				console.log(
+				log.log(
 					`  → listing URLs: ${found.size} answered (${done}/${groups.length} batches)`,
 				);
 			});
@@ -1631,23 +1609,39 @@ function createListingUrlFinder(): ListingUrlFinder {
 
 // --- main -----------------------------------------------------------------
 
-async function main(): Promise<void> {
-	installUsageReporting();
-	if (REPORT_ONLY) {
+export interface ProbeSourcesOptions {
+	/** Exactly one city: probing never runs across the fleet in one call. */
+	city: string;
+	/** Restrict to these hosts (lower-cased), and bound --apply to them too. */
+	only?: string[];
+	/** Probe at most this many sources; 0 means all. */
+	limit: number;
+	/** Write promotions back to sources/{city}.yml. */
+	apply: boolean;
+	/** Ignore both caches and re-probe everything. */
+	force: boolean;
+	/** Re-derive the report from results.jsonl with no network and no model calls. */
+	reportOnly: boolean;
+	config: PipelineConfig;
+}
+
+export async function probeSources(
+	log: Logger,
+	opts: ProbeSourcesOptions,
+): Promise<void> {
+	const cities = [opts.city];
+	const { only, limit, apply, force } = opts;
+	if (opts.reportOnly) {
 		// Scoped: results.jsonl holds every city ever probed, and reporting it whole
 		// made a byron run look like it had probed Brisbane too.
-		const cached = onlyScoped(loadResults()).filter((r) =>
-			CITIES.includes(r.city),
+		const cached = onlyScoped(loadResults(), only).filter((r) =>
+			cities.includes(r.city),
 		);
-		report(cached);
-		if (APPLY) {
-			for (const city of CITIES) applyPromotions(city, cached, true);
+		report(log, cached);
+		if (apply) {
+			for (const city of cities) applyPromotions(log, city, cached, true);
 		}
 		return;
-	}
-
-	if (!process.env.GOOGLE_API_KEY) {
-		throw new Error("GOOGLE_API_KEY env var is required");
 	}
 
 	const fetcher = new SourceFetcher({ store: createHttpCacheStore() });
@@ -1661,16 +1655,16 @@ async function main(): Promise<void> {
 			maxBatches: 1,
 			stage: "probe/extract",
 		}),
-		{ force: FORCE },
+		{ force: force },
 	);
-	// CITIES holds exactly one city: the CLI refuses anything else above.
+	// cities holds exactly one city: ProbeSourcesOptions takes one.
 	const prober = new Prober(
 		fetcher,
 		extractPage,
-		loadCityConfig(CITIES[0]).timezone,
+		loadCityConfig(cities[0]).timezone,
 	);
 
-	const findListingUrls = createListingUrlFinder();
+	const findListingUrls = createListingUrlFinder(log, force);
 
 	// Keyed by city + tier + host + name: names repeat across tiers (the same
 	// venue listed twice) and a bare name key silently skipped the second one.
@@ -1680,26 +1674,26 @@ async function main(): Promise<void> {
 		host: string | null,
 		name: string,
 	): string => `${city}|${tier}|${host ?? ""}|${name}`;
-	const done = FORCE
+	const done = force
 		? new Set<string>()
 		: new Set(
 				loadResults().map((r) => resumeKey(r.city, r.tier, r.host, r.name)),
 			);
 	const queue: { entry: SourceEntry; city: string; tier: SourceTier }[] = [];
-	for (const city of CITIES) {
+	for (const city of cities) {
 		const cfg = loadCityConfig(city);
 		for (const tier of SOURCE_TIERS) {
 			for (const entry of cfg.sources[tier] ?? []) {
 				const host = normaliseHost(entry.domains?.[0]);
 				if (done.has(resumeKey(city, tier, host, entry.name))) continue;
-				if (ONLY && !(host && ONLY.includes(host))) continue;
+				if (only && !(host && only.includes(host))) continue;
 				queue.push({ entry, city, tier });
 			}
 		}
 	}
-	const work = LIMIT > 0 ? queue.slice(0, LIMIT) : queue;
-	console.log(
-		`Probing ${work.length} source(s) across ${CITIES.join(", ")}` +
+	const work = limit > 0 ? queue.slice(0, limit) : queue;
+	log.log(
+		`Probing ${work.length} source(s) across ${cities.join(", ")}` +
 			`${done.size > 0 ? ` (resuming: ${done.size} already probed — pass --force to redo)` : ""}`,
 	);
 
@@ -1759,7 +1753,7 @@ async function main(): Promise<void> {
 		let settled: ProbeResult | null;
 		try {
 			settled = await Promise.race([
-				probeEntry(entry, city, tier, prober, suggested),
+				probeEntry(log, entry, city, tier, prober, suggested),
 				timeout,
 			]);
 		} finally {
@@ -1796,8 +1790,8 @@ async function main(): Promise<void> {
 	let flushing: Promise<void> = Promise.resolve();
 	function flushPromotions(verbose = false): Promise<void> {
 		flushing = flushing.then(() => {
-			const soFar = onlyScoped(loadResults());
-			for (const city of CITIES) applyPromotions(city, soFar, verbose);
+			const soFar = onlyScoped(loadResults(), only);
+			for (const city of cities) applyPromotions(log, city, soFar, verbose);
 		});
 		return flushing;
 	}
@@ -1806,7 +1800,7 @@ async function main(): Promise<void> {
 			const item = work[index++];
 			// Logged before the work starts, not after: when a source hangs, the
 			// last line printed is the only clue to which one it was.
-			console.log(
+			log.log(
 				`  … [${completed + 1}/${work.length}] ${item.entry.name.slice(0, 44)}`,
 			);
 			const result = await probeWithDeadline(
@@ -1817,16 +1811,16 @@ async function main(): Promise<void> {
 			);
 			appendResult(result);
 			completed++;
-			if (APPLY && completed % APPLY_EVERY === 0) await flushPromotions();
+			if (apply && completed % APPLY_EVERY === 0) await flushPromotions();
 			// Only what worked: the listing URLs that actually produced events,
 			// and whether the source is scrapable. Failed candidates are still
 			// recorded in results.jsonl for debugging a specific source.
 			if (result.strategy) {
-				console.log(
+				log.log(
 					`✓ [${completed}/${work.length}] ${result.name} — scrapable (${result.strategy}, ${result.candidatesFound} events)`,
 				);
 				for (const a of result.attempts) {
-					if (a.events) console.log(`      ${a.url}  →  ${a.events} events`);
+					if (a.events) log.log(`      ${a.url}  →  ${a.events} events`);
 				}
 			} else {
 				// Spell out the consequence: these are not dropped, they stay on
@@ -1836,7 +1830,7 @@ async function main(): Promise<void> {
 					result.classification === "no-domain"
 						? "no domain on file"
 						: `${result.classification} → stays on AI search`;
-				console.log(`· [${completed}/${work.length}] ${result.name} — ${fate}`);
+				log.log(`· [${completed}/${work.length}] ${result.name} — ${fate}`);
 			}
 		}
 	}
@@ -1854,7 +1848,7 @@ async function main(): Promise<void> {
 	);
 	const unresolved = new Map<string, { name: string; host: string }>();
 	for (const r of loadResults()) {
-		if (r.strategy || !r.host || !CITIES.includes(r.city)) continue;
+		if (r.strategy || !r.host || !cities.includes(r.city)) continue;
 		if (!workHosts.has(r.host)) continue;
 		if (PLATFORMS.test(r.host)) continue;
 		if (!unresolved.has(r.host)) {
@@ -1862,7 +1856,7 @@ async function main(): Promise<void> {
 		}
 	}
 	if (unresolved.size > 0) {
-		console.log(
+		log.log(
 			`\nPass 2: ${unresolved.size} source(s) unresolved by sitemap/canonical paths — asking the model.`,
 		);
 		const asked = await findListingUrls.batch([...unresolved.values()]);
@@ -1881,7 +1875,7 @@ async function main(): Promise<void> {
 				);
 				appendResult(result);
 				n++;
-				console.log(
+				log.log(
 					result.strategy
 						? `✓ [pass2 ${n}/${retry.length}] ${result.name} — scrapable (${result.strategy}, ${result.candidatesFound} events)`
 						: `· [pass2 ${n}/${retry.length}] ${result.name} — ${result.classification}`,
@@ -1893,21 +1887,12 @@ async function main(): Promise<void> {
 	// The final flush is the verbose one: applyPromotions is idempotent, so a
 	// second pass would report no changes at all. Incremental flushes stay
 	// quiet and only this one prints the source-by-source diff.
-	if (APPLY) await flushPromotions(true);
+	if (apply) await flushPromotions(true);
 	else {
-		console.log("\nDry run — rerun with --apply to promote verified sources.");
+		log.log("\nDry run — rerun with --apply to promote verified sources.");
 	}
-	report(loadResults().filter((r) => CITIES.includes(r.city)));
-}
-
-// Guarded so the pure helpers above can be imported by tests without the
-// module running a whole probe as an import side effect.
-if (IS_MAIN) {
-	await main();
-	// Exit explicitly. Everything this script needed to write has been written
-	// by now, and an abandoned fetch left pending by the per-source timeout
-	// would otherwise keep the process alive or trip Node's unsettled-await
-	// exit code.
-	reportGeminiUsage();
-	process.exit(0);
+	report(
+		log,
+		loadResults().filter((r) => cities.includes(r.city)),
+	);
 }
