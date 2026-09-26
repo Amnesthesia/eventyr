@@ -4,8 +4,8 @@ import { dedupeEvents } from "../common.ts";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import { BaseProvider, splitIntoBatches } from "./base.ts";
 
-const SEARCH_MODEL = "gemini-3.1-flash-lite";
-const CURATE_MODEL = "gemini-3.1-flash-lite";
+export const SEARCH_MODEL = "gemini-3.1-flash-lite";
+export const CURATE_MODEL = "gemini-3.1-flash-lite";
 
 export class GoogleProvider extends BaseProvider {
 	readonly name = "google";

@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Ben Whiting
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-y8ygvk@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T180000
-DTEND;TZID=Australia/Brisbane:20260912T210000
+DTSTART;TZID=Australia/Sydney:20260912T180000
+DTEND;TZID=Australia/Sydney:20260912T210000
 SUMMARY:Ben Whiting
 DESCRIPTION:Saturday 12 September Free from 6pm Born by the sea in Northern
   NSW\, BW started writing songs and formed his first band at age 12. Unlik

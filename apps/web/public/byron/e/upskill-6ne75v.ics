@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:UPSKILL
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-6ne75v@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T083000
-DTEND;TZID=Australia/Brisbane:20260912T130000
+DTSTART;TZID=Australia/Sydney:20260912T083000
+DTEND;TZID=Australia/Sydney:20260912T130000
 SUMMARY:UPSKILL
 DESCRIPTION:Our UPSKILL Intro is the place to start your Shedding journey! 
  This one off 4.5 hour workshop introduces you to our space and our tools a

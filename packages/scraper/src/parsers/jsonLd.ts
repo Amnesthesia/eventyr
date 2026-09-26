@@ -124,7 +124,7 @@ function extractLocation(node: Record<string, unknown>): {
  * multi-country pipeline; if this ever collects outside Australia, this has to
  * become a per-source or per-city currency instead.
  */
-const AU_CURRENCY = "AUD";
+export const AU_CURRENCY = "AUD";
 
 function extractPrice(node: Record<string, unknown>): string | null {
 	const offers = node.offers;

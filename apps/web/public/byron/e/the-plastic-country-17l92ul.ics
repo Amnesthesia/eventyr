@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:The Plastic Country
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-17l92ul@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T180000
-DTEND;TZID=Australia/Brisbane:20260909T200000
+DTSTART;TZID=Australia/Sydney:20260909T180000
+DTEND;TZID=Australia/Sydney:20260909T200000
 SUMMARY:The Plastic Country
 DESCRIPTION:Join us for a special screening of The Plastic Country \, a pow
  erful new Australian documentary that uncovers the true scale of our natio

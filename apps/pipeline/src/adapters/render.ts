@@ -57,13 +57,13 @@ import {
 const MAX_PAGES_PER_HOST = 2;
 /** Hosts rendered concurrently. Each holds its own browser context, so this
  * bounds memory as much as politeness. */
-const CONCURRENT_HOSTS = 3;
+export const CONCURRENT_HOSTS = 3;
 /**
  * Whole-run ceiling. A cron job must not be able to run for hours because 50
  * hosts each decided to be slow — probe already hung a run for 28 minutes on
  * a missing timeout, and that lesson is cheap to reapply here.
  */
-const RUN_BUDGET_MS = Number(process.env.RENDER_RUN_BUDGET_MS ?? 20 * 60_000);
+export const RUN_BUDGET_MS = Number(process.env.RENDER_RUN_BUDGET_MS ?? 20 * 60_000);
 
 export interface RenderFinding {
 	host: string;

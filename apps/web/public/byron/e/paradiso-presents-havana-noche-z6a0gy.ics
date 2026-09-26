@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Paradiso Presents: Havana Noche
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-z6a0gy@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T193000
-DTEND;TZID=Australia/Brisbane:20260910T213000
+DTSTART;TZID=Australia/Sydney:20260910T193000
+DTEND;TZID=Australia/Sydney:20260910T213000
 SUMMARY:Paradiso Presents: Havana Noche
 DESCRIPTION:An immersive live jazz and big band experience celebrating the 
  sounds of Havana in an intimate venue.

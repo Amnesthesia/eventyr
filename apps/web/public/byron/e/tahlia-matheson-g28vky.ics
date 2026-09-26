@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Tahlia Matheson
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-g28vky@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T180000
-DTEND;TZID=Australia/Brisbane:20260909T203000
+DTSTART;TZID=Australia/Sydney:20260909T180000
+DTEND;TZID=Australia/Sydney:20260909T203000
 SUMMARY:Tahlia Matheson
 DESCRIPTION:
 LOCATION:Beach Hotel

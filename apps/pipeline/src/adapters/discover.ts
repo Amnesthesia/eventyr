@@ -60,7 +60,7 @@ if (IS_MAIN && (!cityArg || cityArg.includes(","))) {
 const CITY = cityArg ?? "";
 const APPLY = args.includes("--apply");
 
-const MODEL = "gemini-3.5-flash";
+export const MODEL = "gemini-3.5-flash";
 /** Separates the list the model is given from the part it must add. */
 const CONTINUE_DELIMITER = "-----";
 

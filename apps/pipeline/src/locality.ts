@@ -39,8 +39,8 @@ import { DATA_ROOT } from "./common.ts";
 
 const ENDPOINT = "https://maps.googleapis.com/maps/api/geocode/json";
 /** Concurrent geocode requests. The quota is generous; this is politeness. */
-const MAX_CONCURRENT = 8;
-const TIMEOUT_MS = 10_000;
+export const MAX_CONCURRENT = 8;
+export const TIMEOUT_MS = 10_000;
 
 export interface Place {
 	lat: number;

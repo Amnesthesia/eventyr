@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:YAZMINDI
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1m0m04q@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T180000
-DTEND;TZID=Australia/Brisbane:20260910T203000
+DTSTART;TZID=Australia/Sydney:20260910T180000
+DTEND;TZID=Australia/Sydney:20260910T203000
 SUMMARY:YAZMINDI
 DESCRIPTION:HOTEL BRUNSWICK | THU 10 SEPT Yazmindi’s authentic sound and 
  evocative stories are a far-reaching crowd-favourite. A cornerstone of her

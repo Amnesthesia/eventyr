@@ -870,7 +870,7 @@ function parsePalace(body: string, url: string): FeedResult | null {
 
 /** Recurring events are expanded this far ahead: past the two-week
  * publishing window with room to spare, not a whole weekly series to 2030. */
-const ICAL_EXPAND_DAYS = 60;
+export const ICAL_EXPAND_DAYS = 60;
 /** Steps through one RRULE before giving up. A daily series started in 2021
  * takes ~2000 steps to reach today; an unbounded rule must not spin forever. */
 const ICAL_MAX_STEPS = 5000;

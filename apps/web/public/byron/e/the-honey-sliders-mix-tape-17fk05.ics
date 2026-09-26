@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:The Honey Sliders' Mix Tape
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-17fk05@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T200000
-DTEND;TZID=Australia/Brisbane:20260919T220000
+DTSTART;TZID=Australia/Sydney:20260919T200000
+DTEND;TZID=Australia/Sydney:20260919T220000
 SUMMARY:The Honey Sliders' Mix Tape
 DESCRIPTION:Press rewind and start from the top - this is The Honey Sliders
  ’ Mix Tape. A carefully curated collection of songs\, arranged in a spec

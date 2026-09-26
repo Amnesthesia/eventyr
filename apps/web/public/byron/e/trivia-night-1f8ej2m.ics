@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Trivia Night
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1f8ej2m@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T183000
-DTEND;TZID=Australia/Brisbane:20260910T200000
+DTSTART;TZID=Australia/Sydney:20260910T183000
+DTEND;TZID=Australia/Sydney:20260910T200000
 SUMMARY:Trivia Night
 DESCRIPTION:Trivia Night – Every Thursday Bring your friends and join us 
  for Trivia Night every Thursday evening. Enjoy a fun\, social atmosphere\,

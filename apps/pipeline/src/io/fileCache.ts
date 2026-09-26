@@ -25,7 +25,7 @@ export const EXTRACTION_CACHE_DIR = join(DATA_ROOT, "_cache", "extractions");
  * changes most weeks, so stale entries would otherwise accumulate without
  * bound.
  */
-const MAX_AGE_DAYS = 60;
+export const MAX_AGE_DAYS = 60;
 
 export function createFileCache(dir = EXTRACTION_CACHE_DIR): CacheStore {
 	let pruned = false;

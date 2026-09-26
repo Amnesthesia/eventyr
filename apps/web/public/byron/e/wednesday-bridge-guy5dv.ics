@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Wednesday Bridge
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-guy5dv@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T180000
-DTEND;TZID=Australia/Brisbane:20260909T203000
+DTSTART;TZID=Australia/Sydney:20260909T180000
+DTEND;TZID=Australia/Sydney:20260909T203000
 SUMMARY:Wednesday Bridge
 DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
   cards with our Bridge groups in the Sunset Room. Whether you’re an expe

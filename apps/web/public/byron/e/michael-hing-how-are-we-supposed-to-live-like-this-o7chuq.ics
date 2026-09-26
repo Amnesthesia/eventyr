@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Michael Hing: How Are We Supposed To Live Like This?
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-o7chuq@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T070000
-DTEND;TZID=Australia/Brisbane:20260911T090000
+DTSTART;TZID=Australia/Sydney:20260911T070000
+DTEND;TZID=Australia/Sydney:20260911T090000
 SUMMARY:Michael Hing: How Are We Supposed To Live Like This?
 DESCRIPTION:Life is increasingly insane. Nothing makes sense. Everything is
   chaos\, and we’re all just expected to keep on going? The planet is on 

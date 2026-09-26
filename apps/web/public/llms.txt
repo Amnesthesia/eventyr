@@ -7,7 +7,7 @@ plain JSON with no API key and no backend — every URL below is a static file.
 ## Cities
 
   - Brisbane (city_key: "brisbane", timezone: Australia/Brisbane)
-  - Byron Bay (city_key: "byron", timezone: Australia/Brisbane)
+  - Byron Bay (city_key: "byron", timezone: Australia/Sydney)
   - Gold Coast (city_key: "goldcoast", timezone: Australia/Brisbane)
   - Sunshine Coast (city_key: "sunnycoast", timezone: Australia/Brisbane)
 
@@ -98,4 +98,4 @@ more than a few days old, say so rather than presenting it as current.
 - Never invent an event that is not in the fetched file. If nothing fits,
   say so instead of padding the answer.
 
-Generated 2026-09-20.
+Generated 2026-09-26.

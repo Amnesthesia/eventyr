@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:WEAR THE FOX HAT
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-6b2jj2@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T163000
-DTEND;TZID=Australia/Brisbane:20260912T220000
+DTSTART;TZID=Australia/Sydney:20260912T163000
+DTEND;TZID=Australia/Sydney:20260912T220000
 SUMMARY:WEAR THE FOX HAT
 DESCRIPTION:WEAR THE FOX HAT | Live at Hotel Brunswick Sat 12 September | F
  rom 4.30 PM | FREE EVENT Get set for an epic afternoon of live music as We

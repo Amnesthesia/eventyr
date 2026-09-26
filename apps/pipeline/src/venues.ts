@@ -43,13 +43,13 @@ import { installUsageReporting } from "./io/usage.ts";
 // Not flash-lite: on the first Gold Coast run it merged "Mudgeeraba Studio"
 // into "Benowa Studio" despite the prompt's branch rule. Every answer is
 // cached for good, so the bigger model is paid once per venue name.
-const VENUE_MODEL = "gemini-3.5-flash";
+export const VENUE_MODEL = "gemini-3.5-flash";
 /** Bump when the prompt, model or rawVenue changes: cached answers were
  * answers to them. */
 export const VENUE_PROMPT_VERSION = 5;
 /** Matching is cross-item reasoning, so batches stay small enough to keep
  * every name in view. The steady-state week has fewer new names than this. */
-const BATCH_SIZE = 40;
+export const BATCH_SIZE = 40;
 
 /** Raw venue string ⇒ canonical name, or null for "not a venue". */
 export interface VenueCache {

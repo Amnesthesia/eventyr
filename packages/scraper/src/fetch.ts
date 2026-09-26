@@ -92,10 +92,10 @@ const browserFetch: typeof fetch = async (input, init) => {
 	});
 };
 
-const DEFAULT_MIN_INTERVAL_MS = 1000;
-const DEFAULT_MAX_CONCURRENCY_PER_HOST = 2;
-const DEFAULT_MAX_RETRIES = 3;
-const BASE_BACKOFF_MS = 1000;
+export const DEFAULT_MIN_INTERVAL_MS = 1000;
+export const DEFAULT_MAX_CONCURRENCY_PER_HOST = 2;
+export const DEFAULT_MAX_RETRIES = 3;
+export const BASE_BACKOFF_MS = 1000;
 
 export interface HttpCacheEntry {
 	etag: string | null;

@@ -70,8 +70,8 @@ import {
 } from "./common.ts";
 
 const AI_ROOT = join(WEB_PUBLIC_DIR, "ai");
-const DAY_FILE_LIMIT = 50 * 1024;
-const WEEK_FILE_LIMIT = 200 * 1024;
+export const DAY_FILE_LIMIT = 50 * 1024;
+export const WEEK_FILE_LIMIT = 200 * 1024;
 
 // ---------------------------------------------------------------------------
 // Types

@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:FULL MOON REGGAE PARTY FT. SKYEATER
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1grbph5@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T160000
-DTEND;TZID=Australia/Brisbane:20260920T200000
+DTSTART;TZID=Australia/Sydney:20260920T160000
+DTEND;TZID=Australia/Sydney:20260920T200000
 SUMMARY:FULL MOON REGGAE PARTY FT. SKYEATER
 DESCRIPTION:FULL MOON REGGAE PARTY | Sunday 20 September\, from 4PM | Free 
  Event The beer garden comes alive under the full moon for a soulful reggae

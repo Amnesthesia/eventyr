@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Sunday Sessions
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-yx1y9r@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T150000
-DTEND;TZID=Australia/Brisbane:20260913T180000
+DTSTART;TZID=Australia/Sydney:20260913T150000
+DTEND;TZID=Australia/Sydney:20260913T180000
 SUMMARY:Sunday Sessions
 DESCRIPTION:Sunday Sessions Get ready for your new favorite weekend traditi
  on: Sunday Sessions with the Swamp Cats!\, we are turning up the energy ev

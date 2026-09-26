@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Terrace Market (Haven Gallery)
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1mkp342@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T080000
-DTEND;TZID=Australia/Brisbane:20260912T130000
+DTSTART;TZID=Australia/Sydney:20260912T080000
+DTEND;TZID=Australia/Sydney:20260912T130000
 SUMMARY:Terrace Market (Haven Gallery)
 DESCRIPTION:A community-oriented market hosted by Haven Gallery\, featuring
   local art\, design\, and creative goods in a central Byron setting.

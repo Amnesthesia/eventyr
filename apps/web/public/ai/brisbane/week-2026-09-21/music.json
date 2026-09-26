@@ -1,5 +1,5 @@
 {
-  "data_as_of": "2026-09-20",
+  "data_as_of": "2026-09-24",
   "city": "Brisbane",
   "city_key": "brisbane",
   "timezone": "Australia/Brisbane",
@@ -31,16 +31,16 @@
       "url": "https://www.dothings.lol/brisbane/e/the-book-of-mormon-the-musical-1cpaukz/"
     },
     {
-      "id": "1xaqzdo",
+      "id": "2cwcik",
       "title": "The Choir of Man",
-      "start": "2026-09-03T18:00:00+10:00",
-      "end": "2026-09-26T22:00:00+10:00",
-      "location": "Brisbane Festival venues",
+      "start": "2026-09-03T00:00:00+10:00",
+      "end": "2026-09-27T00:00:00+10:00",
+      "location": "South Bank, Brisbane City, South Bank, corner Ernest Street, Stanley Street and Grey Street, South Brisbane",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "A high-energy, immersive stage show combining music, dance, and spoken word in a pub-style atmosphere that breaks down the barrier between performer and audience.",
-      "url": "https://www.dothings.lol/brisbane/e/the-choir-of-man-1xaqzdo/"
+      "description": "Olivier Award-nominated, West End acclaimed, and globally adored — hundreds of thousands of fans across four continents can't be wrong — this is the show the whole world has been raising a glass to.…",
+      "url": "https://www.dothings.lol/brisbane/e/the-choir-of-man-2cwcik/"
     },
     {
       "id": "pjvmsg",
@@ -89,18 +89,6 @@
       "free": false,
       "description": "Australia's favourite piano man, Trevor Jones, brings his signature late night piano bar party to the Brisbane Festival.",
       "url": "https://www.dothings.lol/brisbane/e/piano-man-thz49b/"
-    },
-    {
-      "id": "1d6v8qo",
-      "title": "Warm-up with QLD Con",
-      "start": "2026-09-09T00:00:00+10:00",
-      "end": "2026-09-23T00:00:00+10:00",
-      "location": "Village Green - Festival Village",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "An energising musical warm-up to the day by the river.",
-      "url": "https://www.dothings.lol/brisbane/e/warm-up-with-qld-con-1d6v8qo/"
     },
     {
       "id": "1l503q2",
@@ -259,6 +247,18 @@
       "url": "https://www.dothings.lol/brisbane/e/candlelight-tribute-to-fleetwood-mac-9awx8c/"
     },
     {
+      "id": "1p1aqkz",
+      "title": "The Book of Mormon",
+      "start": "2026-09-20T00:00:00+10:00",
+      "end": "2026-10-04T00:00:00+10:00",
+      "location": "QPAC",
+      "category": "Concert / Music",
+      "price": null,
+      "free": false,
+      "description": "Brisbane, the Mormons are back! The Tony®, Olivier® and Grammy® Award-winning The Book of Mormon is now playing at QPAC",
+      "url": "https://www.dothings.lol/brisbane/e/the-book-of-mormon-1p1aqkz/"
+    },
+    {
       "id": "1v39qml",
       "title": "Blanc de Blanc Encore",
       "start": "2026-09-20T17:00:00+10:00",
@@ -283,42 +283,6 @@
       "url": "https://www.dothings.lol/brisbane/e/late-night-vice-brisbane-16yqew/"
     },
     {
-      "id": "1gaq95c",
-      "title": "Close Enough for Country (Open Mic)",
-      "start": "2026-09-21T03:00:00+10:00",
-      "end": "2026-09-21T07:30:00+10:00",
-      "location": "The Cave Inn, 47 Balaclava St., Woolloongabba, QLD, 4102",
-      "category": "Concert / Music",
-      "price": 0,
-      "free": true,
-      "description": "Latest installment of our weekly country, blues, folk, rock, eclectic open mic night. With a feature act every week at 6:30 Join the Close Enough For Country group on FB to stay up to date with the…",
-      "url": "https://www.dothings.lol/brisbane/e/close-enough-for-country-open-mic-1gaq95c/"
-    },
-    {
-      "id": "kpn2l3",
-      "title": "Lord Mayor's City Hall Concert",
-      "start": "2026-09-21T12:00:00+10:00",
-      "end": "2026-09-21T13:00:00+10:00",
-      "location": "Brisbane City Hall, Brisbane City",
-      "category": "Concert / Music",
-      "price": 0,
-      "free": true,
-      "description": "A recurring midday concert series held in the iconic City Hall, featuring local musicians and providing a cultural break in the heart of the city.",
-      "url": "https://www.dothings.lol/brisbane/e/lord-mayor-s-city-hall-concert-kpn2l3/"
-    },
-    {
-      "id": "1j0qpno",
-      "title": "The Walters",
-      "start": "2026-09-21T14:00:00+10:00",
-      "end": "2026-09-21T02:00:00+10:00",
-      "location": "The Cave Inn, 47 Balaclava St., Woolloongabba, QLD, 4102",
-      "category": "Concert / Music",
-      "price": 0,
-      "free": true,
-      "description": "The Walters detonate with the sort of crazed enthusiasm and raw authenticity thought lost, since the famed dance halls and jukes of the 1940s/50s. Inspired by the Blues, Soul and Rock ‘n’ Roll…",
-      "url": "https://www.dothings.lol/brisbane/e/the-walters-1j0qpno/"
-    },
-    {
       "id": "djyd1q",
       "title": "Bands in Parks",
       "start": "2026-09-21T14:00:00+10:00",
@@ -329,18 +293,6 @@
       "free": true,
       "description": "A series of open-air musical performances hosted in the tranquil setting of the Botanic Gardens, bringing local bands and community performers to a natural backdrop.",
       "url": "https://www.dothings.lol/brisbane/e/bands-in-parks-djyd1q/"
-    },
-    {
-      "id": "1uwz8ra",
-      "title": "Aaron Chen",
-      "start": "2026-09-21T19:30:00+10:00",
-      "end": null,
-      "location": "Concert Hall, Grey St, South Bank",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "Award-winning comedian Aaron Chen is coming to tour the world with his new show, Technology. It deals with technology.",
-      "url": "https://www.dothings.lol/brisbane/e/aaron-chen-1uwz8ra/"
     },
     {
       "id": "jfd02o",
@@ -355,54 +307,6 @@
       "url": "https://www.dothings.lol/brisbane/e/the-choir-of-man-jfd02o/"
     },
     {
-      "id": "1mjobb7",
-      "title": "Lord Mayor's City Hall Concerts: UQ Music Gala",
-      "start": "2026-09-22T00:00:00+10:00",
-      "end": null,
-      "location": "Brisbane Festival",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "Join us for a sensational gala hour, where you’ll be dazzled by some of The University of Queensland's finest emerging artists.",
-      "url": "https://www.dothings.lol/brisbane/e/lord-mayor-s-city-hall-concerts-uq-music-gala-1mjobb7/"
-    },
-    {
-      "id": "72pi18",
-      "title": "Wake Up & Sing! with One Voice Brisbane",
-      "start": "2026-09-22T00:00:00+10:00",
-      "end": null,
-      "location": "Brisbane Festival",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "Changing the world… one voice at a time.",
-      "url": "https://www.dothings.lol/brisbane/e/wake-up-sing-with-one-voice-brisbane-72pi18/"
-    },
-    {
-      "id": "1wih1y5",
-      "title": "Mozart’s Last Symphonies",
-      "start": "2026-09-22T19:00:00+10:00",
-      "end": null,
-      "location": "Concert Hall, Grey St, South Bank",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "Experience one of the greatest chamber orchestras in the world at its joyous and inspirational best.",
-      "url": "https://www.dothings.lol/brisbane/e/mozart-s-last-symphonies-1wih1y5/"
-    },
-    {
-      "id": "1skgxyw",
-      "title": "Aaron Chen 'Technology'",
-      "start": "2026-09-22T19:30:00+10:00",
-      "end": null,
-      "location": "Fortitude Music Hall, 66 Doggett St",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "Find Aaron Chen 'Technology' tickets at | Videos, biography, tour dates, performance times. VIP packages available.",
-      "url": "https://www.dothings.lol/brisbane/e/aaron-chen-technology-1skgxyw/"
-    },
-    {
       "id": "m0icz0",
       "title": "Brisbane Cheryomushki",
       "start": "2026-09-22T19:30:00+10:00",
@@ -415,28 +319,28 @@
       "url": "https://www.dothings.lol/brisbane/e/brisbane-cheryomushki-m0icz0/"
     },
     {
-      "id": "kmm193",
-      "title": "Aaron Chen",
+      "id": "3lfs08",
+      "title": "ESCAPE",
       "start": "2026-09-23T00:00:00+10:00",
-      "end": null,
-      "location": "Concert Hall, QPAC",
+      "end": "2026-09-28T00:00:00+10:00",
+      "location": "Queensland Performing Arts Centre (QPAC), South Brisbane, Queensland Performing Arts Centre, Cnr Melbourne and Grey Street, South Brisbane",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "Award-winning comedian Aaron Chen is coming to tour the world with his new show, Technology. It deals with technology.",
-      "url": "https://www.dothings.lol/brisbane/e/aaron-chen-kmm193/"
+      "description": "This is a show that will leave you breathless. Visceral and high-octane, ESCAPE blends complex, moving architectural structures with multi-talented performers to create a blood-pumping and emotional…",
+      "url": "https://www.dothings.lol/brisbane/e/escape-3lfs08/"
     },
     {
-      "id": "1gy6bch",
-      "title": "Experimental night",
-      "start": "2026-09-23T05:00:00+10:00",
-      "end": "2026-09-23T08:00:00+10:00",
-      "location": "The Cave Inn, 47 Balaclava St., Woolloongabba, QLD, 4102",
+      "id": "4wjny2",
+      "title": "Community Choir: The Musical",
+      "start": "2026-09-23T00:00:00+10:00",
+      "end": "2026-09-26T00:00:00+10:00",
+      "location": "La Boite Theatre, Kelvin Grove",
       "category": "Concert / Music",
-      "price": 0,
-      "free": true,
-      "description": "The Cave Inn's Experimental Night The 2nd, 3rd and 4th Tuesday every month showcases Brisbanes most weird and wonderful noise, avant-garde, improvised experimental musicians. Come with no…",
-      "url": "https://www.dothings.lol/brisbane/e/experimental-night-1gy6bch/"
+      "price": null,
+      "free": false,
+      "description": "Community Choir: The Musical is a heartwarming and hilarious tale written by Emma Dean, directed by Belinda Raisin, and performed almost entirely by local community members — many stepping on stage…",
+      "url": "https://www.dothings.lol/brisbane/e/community-choir-the-musical-4wjny2/"
     },
     {
       "id": "1p09fhq",
@@ -451,40 +355,28 @@
       "url": "https://www.dothings.lol/brisbane/e/betsy-balloon-and-the-very-great-terrible-flood-1p09fhq/"
     },
     {
-      "id": "txxuem",
-      "title": "Acro Fusion – Love is in the Air",
-      "start": "2026-09-23T17:30:00+10:00",
-      "end": null,
-      "location": "Kingston Butter Factory Cultural Precinct",
+      "id": "13eb13e",
+      "title": "What's In The Woods? - Backbone Theatre For Babies",
+      "start": "2026-09-24T00:00:00+10:00",
+      "end": "2026-09-25T00:00:00+10:00",
+      "location": "Seven Hills Hub, Seven Hills Hub, 28 Tallowwood Street, Seven Hills",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "Acro Fusion presents Love is in the Air on Wednesday 23 September, 2026.",
-      "url": "https://www.dothings.lol/brisbane/e/acro-fusion-love-is-in-the-air-txxuem/"
+      "description": "Be transported to a soft and cosy woodland, right out of a picture book, where each new season is full of natural wonders waiting to be discovered by young, inquisitive minds. Enjoy an engaging and…",
+      "url": "https://www.dothings.lol/brisbane/e/what-s-in-the-woods-backbone-theatre-for-babies-13eb13e/"
     },
     {
-      "id": "1a2ksng",
-      "title": "Escape",
-      "start": "2026-09-23T18:30:00+10:00",
-      "end": "2026-09-27T00:00:00+10:00",
-      "location": "Playhouse, Grey St, South Bank",
+      "id": "82xpo8",
+      "title": "Lord Mayor's Seniors Cabaret Showcase",
+      "start": "2026-09-24T11:00:00+10:00",
+      "end": "2026-09-24T12:15:00+10:00",
+      "location": "Arana Leagues Club, Keperra, Arana Leagues Club, 247 Dawson Parade, Keperra",
       "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "Visceral and high-octane, Escape blends complex, moving architectural structures with multi-talented performers to create a blood-pumping and emotional multimedia experience.",
-      "url": "https://www.dothings.lol/brisbane/e/escape-1a2ksng/"
-    },
-    {
-      "id": "12rdika",
-      "title": "Composition Evening Concert",
-      "start": "2026-09-23T19:00:00+10:00",
-      "end": null,
-      "location": "Ian Hanger Recital Hall, Queensland Conservatorium Griffith University",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "Come along and experience an evening of new and original works from our Composition students. Prepare for an eclectic array of musical offerings.",
-      "url": "https://www.dothings.lol/brisbane/e/composition-evening-concert-12rdika/"
+      "price": 0,
+      "free": true,
+      "description": "The Lord Mayor's Seniors Cabaret is a free program for Brisbane seniors. It offers expert guidance and helps develop creative talents in a supportive, non-competitive environment. Prepare, deliver,…",
+      "url": "https://www.dothings.lol/brisbane/e/lord-mayor-s-seniors-cabaret-showcase-82xpo8/"
     },
     {
       "id": "131qbtq",
@@ -547,18 +439,6 @@
       "url": "https://www.dothings.lol/brisbane/e/eclipse-pink-floyd-orchestrated-1k86uba/"
     },
     {
-      "id": "ae2bpz",
-      "title": "GOOBOYS [UK]",
-      "start": "2026-09-25T00:00:00+10:00",
-      "end": null,
-      "location": "Felons Brewing Co",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "2x Grammy nominated. Multi-platinum. Over 10 million monthly Spotify listeners. From Tomorrowland and Ushuaïa Ibiza to collaborations with MEDUZA,.",
-      "url": "https://www.dothings.lol/brisbane/e/gooboys-uk-ae2bpz/"
-    },
-    {
       "id": "i9dfl2",
       "title": "Live at Melbourne Street Green",
       "start": "2026-09-25T00:00:00+10:00",
@@ -569,6 +449,18 @@
       "free": false,
       "description": "Live Acts. Local Talent. Free on Fridays. This is the perfect way to kickstart your weekend with a weekly program of free performances.",
       "url": "https://www.dothings.lol/brisbane/e/live-at-melbourne-street-green-i9dfl2/"
+    },
+    {
+      "id": "ae2bpz",
+      "title": "GOOBOYS [UK]",
+      "start": "2026-09-25T00:00:00+10:00",
+      "end": null,
+      "location": "Felons Brewing Co",
+      "category": "Concert / Music",
+      "price": null,
+      "free": false,
+      "description": "2x Grammy nominated. Multi-platinum. Over 10 million monthly Spotify listeners. From Tomorrowland and Ushuaïa Ibiza to collaborations with MEDUZA,.",
+      "url": "https://www.dothings.lol/brisbane/e/gooboys-uk-ae2bpz/"
     },
     {
       "id": "1kq03ql",
@@ -595,6 +487,42 @@
       "url": "https://www.dothings.lol/brisbane/e/twomouth-the-opening-1yb7x9l/"
     },
     {
+      "id": "lrbt2k",
+      "title": "Harvest Moon Festival celebration showcase",
+      "start": "2026-09-25T15:00:00+10:00",
+      "end": "2026-09-25T17:30:00+10:00",
+      "location": "Queen Street Mall, Brisbane City, Queen Street Mall, Queen Street, Brisbane City",
+      "category": "Concert / Music",
+      "price": null,
+      "free": false,
+      "description": "The Harvest Moon Festival celebration showcase will be a vibrant community cultural event celebrating the traditions and values of the Mid-Autumn Festival through a variety of live performances and…",
+      "url": "https://www.dothings.lol/brisbane/e/harvest-moon-festival-celebration-showcase-lrbt2k/"
+    },
+    {
+      "id": "118kxn4",
+      "title": "HERE TO SLAY - 18+ EVENT",
+      "start": "2026-09-25T17:00:00+10:00",
+      "end": null,
+      "location": "BackDock Arts, 103 Brunswick St, Fortitude Valley QLD 4006",
+      "category": "Concert / Music",
+      "price": null,
+      "free": false,
+      "description": "They're HERE TO SLAY. On My Block Brisbane events presents an ALL female only line up, live music event with MAD WXRLD headlining all the way from the GOLD COAST and it being her first show and…",
+      "url": "https://www.dothings.lol/brisbane/e/here-to-slay-18-event-118kxn4/"
+    },
+    {
+      "id": "b57646",
+      "title": "Ashnikko - Smoochies Tour",
+      "start": "2026-09-25T18:00:00+10:00",
+      "end": "2026-09-25T22:00:00+10:00",
+      "location": "Riverstage, Brisbane City, Riverstage, Gardens Point Road, Brisbane City",
+      "category": "Concert / Music",
+      "price": null,
+      "free": false,
+      "description": "Ashnikko is coming to Australian shores in September 2026. The cross-genre hyper-pop bubble-gum artist who opened for Billie Eilish on her Hit Me Hard and Soft 12-date arena tour of Australia to tens…",
+      "url": "https://www.dothings.lol/brisbane/e/ashnikko-smoochies-tour-b57646/"
+    },
+    {
       "id": "1epq6y8",
       "title": "Ba Da Boom",
       "start": "2026-09-25T18:00:00+10:00",
@@ -607,28 +535,16 @@
       "url": "https://www.dothings.lol/brisbane/e/ba-da-boom-1epq6y8/"
     },
     {
-      "id": "gpj97f",
-      "title": "Violent Soho",
-      "start": "2026-09-25T19:00:00+10:00",
-      "end": null,
-      "location": "Fortitude Music Hall, 66 Doggett St",
+      "id": "7ncplu",
+      "title": "Candlelight Ballet: Tchaikovsky's Swan Lake & More - Brisbane",
+      "start": "2026-09-25T18:30:00+10:00",
+      "end": "2026-09-25T00:00:00+10:00",
+      "location": "Saint John's Anglican Cathedral, 373 Ann Street, Brisbane City, 4000, Brisbane, AU, 373 Ann St, Brisbane City QLD 4000, Australia, Brisbane, QL",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "Find Violent Soho tickets at | Videos, biography, tour dates, performance times. VIP packages available.",
-      "url": "https://www.dothings.lol/brisbane/e/violent-soho-gpj97f/"
-    },
-    {
-      "id": "c5e29b",
-      "title": "Kylie Fisher @ Lefty's Music Hall",
-      "start": "2026-09-25T19:00:00+10:00",
-      "end": null,
-      "location": "Lefty's Music Hall, 15 Caxton Street,Brisbane,QLD,Australia, Brisbane, QL",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "SHE'S BACK. 🎹✨ One year ago to the day, Kylie Fisher packed out Lefty's with a sold-out show. This year, she's doing it all over again. With powerhouse vocals, unforgettable singalongs and a live…",
-      "url": "https://www.dothings.lol/brisbane/e/kylie-fisher-lefty-s-music-hall-c5e29b/"
+      "description": "Saint John's Anglican Cathedral is hosting this Candlelight Ballet: Tchaikovsky's Swan Lake & More in Brisbane! Get your concert tickets today!",
+      "url": "https://www.dothings.lol/brisbane/e/candlelight-ballet-tchaikovsky-s-swan-lake-more-brisbane-7ncplu/"
     },
     {
       "id": "1hbmbxv",
@@ -643,40 +559,40 @@
       "url": "https://www.dothings.lol/brisbane/e/green-velvet-usa-1hbmbxv/"
     },
     {
-      "id": "mk0xs7",
-      "title": "Maestro 7: Symphonic Dances",
-      "start": "2026-09-25T19:30:00+10:00",
-      "end": "2026-09-26T19:30:00+10:00",
-      "location": "Queensland Symphony Orchestra",
+      "id": "c5e29b",
+      "title": "Kylie Fisher @ Lefty's Music Hall",
+      "start": "2026-09-25T19:00:00+10:00",
+      "end": null,
+      "location": "Lefty's Music Hall, 15 Caxton Street,Brisbane,QLD,Australia, Brisbane, QL",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "From folk steps to final farewells, this concert is built around the joy of dance. At its heart is Rachmaninov’s final major work Symphonic Dances. Written in exile, it is filled with sweeping…",
-      "url": "https://www.dothings.lol/brisbane/e/maestro-7-symphonic-dances-mk0xs7/"
+      "description": "SHE'S BACK. 🎹✨ One year ago to the day, Kylie Fisher packed out Lefty's with a sold-out show. This year, she's doing it all over again. With powerhouse vocals, unforgettable singalongs and a live…",
+      "url": "https://www.dothings.lol/brisbane/e/kylie-fisher-lefty-s-music-hall-c5e29b/"
     },
     {
-      "id": "pyudv8",
-      "title": "Ashnikko",
-      "start": "2026-09-25T19:30:00+10:00",
+      "id": "gpj97f",
+      "title": "Violent Soho",
+      "start": "2026-09-25T19:00:00+10:00",
       "end": null,
       "location": "Fortitude Music Hall, 66 Doggett St",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "Find Ashnikko tickets at | Videos, biography, tour dates, performance times. VIP packages available.",
-      "url": "https://www.dothings.lol/brisbane/e/ashnikko-pyudv8/"
+      "description": "Find Violent Soho tickets at | Videos, biography, tour dates, performance times. VIP packages available.",
+      "url": "https://www.dothings.lol/brisbane/e/violent-soho-gpj97f/"
     },
     {
-      "id": "1ftasec",
-      "title": "Friday Hour of Power w/ Harry Jun & Friends!",
-      "start": "2026-09-25T20:00:00+10:00",
-      "end": null,
-      "location": "Good Chat Comedy Club",
+      "id": "jl48hu",
+      "title": "Maestro 7: Symphonic Dances",
+      "start": "2026-09-25T19:30:00+10:00",
+      "end": "2026-09-25T21:30:00+10:00",
+      "location": "Queensland Performing Arts Centre (QPAC), South Brisbane, Queensland Performing Arts Centre, Cnr Melbourne and Grey Street, South Brisbane",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "Spend your Friday night the right way, with an evening of laughs at Good Chat Comedy Club on Caxton St! Located inside a gorgeous, heritage-listed, purpose-.",
-      "url": "https://www.dothings.lol/brisbane/e/friday-hour-of-power-w-harry-jun-friends-1ftasec/"
+      "description": "A celebration of music that moves the body and soul. From folk steps to final farewells, this concert is built around the joy of dance. At its heart is Rachmaninov’s final major work Symphonic…",
+      "url": "https://www.dothings.lol/brisbane/e/maestro-7-symphonic-dances-jl48hu/"
     },
     {
       "id": "tyq1tm",
@@ -691,16 +607,16 @@
       "url": "https://www.dothings.lol/brisbane/e/fishbone-in-your-face-40th-anniversary-australian-tour-tyq1tm/"
     },
     {
-      "id": "e0m3c1",
-      "title": "Wake Up & Sing!: ¡Buenos Días! Sing with Latin Choir Brisbane",
-      "start": "2026-09-26T00:00:00+10:00",
+      "id": "1ftasec",
+      "title": "Friday Hour of Power w/ Harry Jun & Friends!",
+      "start": "2026-09-25T20:00:00+10:00",
       "end": null,
-      "location": "Brisbane Festival",
+      "location": "Good Chat Comedy Club",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "Morning sounds different when people sing together.",
-      "url": "https://www.dothings.lol/brisbane/e/wake-up-sing-buenos-dias-sing-with-latin-choir-brisbane-e0m3c1/"
+      "description": "Spend your Friday night the right way, with an evening of laughs at Good Chat Comedy Club on Caxton St! Located inside a gorgeous, heritage-listed, purpose-.",
+      "url": "https://www.dothings.lol/brisbane/e/friday-hour-of-power-w-harry-jun-friends-1ftasec/"
     },
     {
       "id": "118q04k",
@@ -715,16 +631,16 @@
       "url": "https://www.dothings.lol/brisbane/e/formidable-vegetable-northey-street-city-farm-118q04k/"
     },
     {
-      "id": "1tii9e1",
-      "title": "Paul Tabone Salutes Andrea Bocelli",
+      "id": "e0m3c1",
+      "title": "Wake Up & Sing!: ¡Buenos Días! Sing with Latin Choir Brisbane",
       "start": "2026-09-26T00:00:00+10:00",
       "end": null,
-      "location": "Redcliffe Entertainment Centre",
+      "location": "Brisbane Festival",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "Experience the soaring beauty and emotional power of the music made famous by Andrea Bocelli, performed by Australia's favourite tenor.",
-      "url": "https://www.dothings.lol/brisbane/e/paul-tabone-salutes-andrea-bocelli-1tii9e1/"
+      "description": "Morning sounds different when people sing together.",
+      "url": "https://www.dothings.lol/brisbane/e/wake-up-sing-buenos-dias-sing-with-latin-choir-brisbane-e0m3c1/"
     },
     {
       "id": "16k7a0u",
@@ -739,18 +655,6 @@
       "url": "https://www.dothings.lol/brisbane/e/greaser-garage-party-september-16k7a0u/"
     },
     {
-      "id": "u5nxfx",
-      "title": "Candlelight: Ed Sheeran Meets Coldplay at The Imperial Hotel Eumundi",
-      "start": "2026-09-26T00:00:00+10:00",
-      "end": null,
-      "location": "WeekendNotes Brisbane",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "",
-      "url": "https://www.dothings.lol/brisbane/e/candlelight-ed-sheeran-meets-coldplay-at-the-imperial-hotel-u5nxfx/"
-    },
-    {
       "id": "1jf39vh",
       "title": "Candlelight: Tribute to Michael Jackson",
       "start": "2026-09-26T00:00:00+10:00",
@@ -761,6 +665,30 @@
       "free": false,
       "description": "Celebrate the King of Pop's legendary career through a collection of his greatest hits. From Billie Jean to Thriller and Man in the Mirror, rediscover Michael Jackson's unforgettable music through…",
       "url": "https://www.dothings.lol/brisbane/e/candlelight-tribute-to-michael-jackson-1jf39vh/"
+    },
+    {
+      "id": "1tii9e1",
+      "title": "Paul Tabone Salutes Andrea Bocelli",
+      "start": "2026-09-26T00:00:00+10:00",
+      "end": null,
+      "location": "Redcliffe Entertainment Centre",
+      "category": "Concert / Music",
+      "price": null,
+      "free": false,
+      "description": "Experience the soaring beauty and emotional power of the music made famous by Andrea Bocelli, performed by Australia's favourite tenor.",
+      "url": "https://www.dothings.lol/brisbane/e/paul-tabone-salutes-andrea-bocelli-1tii9e1/"
+    },
+    {
+      "id": "u5nxfx",
+      "title": "Candlelight: Ed Sheeran Meets Coldplay at The Imperial Hotel Eumundi",
+      "start": "2026-09-26T00:00:00+10:00",
+      "end": null,
+      "location": "WeekendNotes Brisbane",
+      "category": "Concert / Music",
+      "price": null,
+      "free": false,
+      "description": "",
+      "url": "https://www.dothings.lol/brisbane/e/candlelight-ed-sheeran-meets-coldplay-at-the-imperial-hotel-u5nxfx/"
     },
     {
       "id": "d7vkuh",
@@ -799,16 +727,28 @@
       "url": "https://www.dothings.lol/brisbane/e/meanjin-reggae-festival-2026-7l0ae5/"
     },
     {
-      "id": "1pph81y",
-      "title": "Queensland Puppetry Showcase: Larrikin Puppets",
-      "start": "2026-09-26T10:15:00+10:00",
-      "end": null,
-      "location": "Cinema B, GOMA – Gallery of Modern Art",
+      "id": "101z5pf",
+      "title": "Festival of Slavic Culture 2026 - Gala-concert",
+      "start": "2026-09-26T13:00:00+10:00",
+      "end": "2026-09-26T16:00:00+10:00",
+      "location": "Brisbane City Council Creative Events",
+      "category": "Concert / Music",
+      "price": 0,
+      "free": true,
+      "description": "Enjoy an afternoon of vibrant music and dance at the Gala Concert, featuring talented performers and community groups celebrating Slavic culture and beyond. Experience a lively mix of traditional and…",
+      "url": "https://www.dothings.lol/brisbane/e/festival-of-slavic-culture-2026-gala-concert-101z5pf/"
+    },
+    {
+      "id": "1cdtq4i",
+      "title": "The Dark Side of the Moon",
+      "start": "2026-09-26T15:00:00+10:00",
+      "end": "2026-09-26T15:45:00+10:00",
+      "location": "Sir Thomas Brisbane Planetarium, Mt Coot-tha, Sir Thomas Brisbane Planetarium, 152 Mt Coot-tha Road, Mt Coot-tha",
       "category": "Concert / Music",
       "price": null,
       "free": false,
-      "description": "Laugh, sing and play with Troggg, Marina and friends in this interactive puppet adventure for all ages.",
-      "url": "https://www.dothings.lol/brisbane/e/queensland-puppetry-showcase-larrikin-puppets-1pph81y/"
+      "description": "Experience Pink Floyd's iconic album with this immersive and all-encompassing surround sound and visual treat. This show features strobe effects, mature themes and explicit language. Not recommended…",
+      "url": "https://www.dothings.lol/brisbane/e/the-dark-side-of-the-moon-1cdtq4i/"
     },
     {
       "id": "13b3so4",
@@ -821,6 +761,18 @@
       "free": false,
       "description": "Following the popular Meanjin Reggae Festival, Queensland's biggest free reggae event, comes the hugely popular MRF After Party, where festival performers, crew, guests and public come together to…",
       "url": "https://www.dothings.lol/brisbane/e/mrf26-official-after-party-13b3so4/"
+    },
+    {
+      "id": "7wbnwf",
+      "title": "Bands in Parks: Stage and Screen Spectacular",
+      "start": "2026-09-26T18:00:00+10:00",
+      "end": "2026-09-26T20:00:00+10:00",
+      "location": "Queensland Tennis Centre, Tennyson, 190 King Arthur Terrace, Tennyson",
+      "category": "Concert / Music",
+      "price": 0,
+      "free": true,
+      "description": "Bands in Parks performs at Queensland Tennis Centre. Step into a world of cinematic wonder and theatrical magic. Queensland Wind and Brass under the baton of Alisa Jones, showcases the energy,…",
+      "url": "https://www.dothings.lol/brisbane/e/bands-in-parks-stage-and-screen-spectacular-7wbnwf/"
     },
     {
       "id": "nptfq4",
@@ -859,18 +811,6 @@
       "url": "https://www.dothings.lol/brisbane/e/saturday-night-comedy-big-fork-s-big-fun-showcase-cnwv0l/"
     },
     {
-      "id": "1w642ka",
-      "title": "Violent Soho",
-      "start": "2026-09-26T19:00:00+10:00",
-      "end": null,
-      "location": "Fortitude Music Hall, 66 Doggett St",
-      "category": "Concert / Music",
-      "price": null,
-      "free": false,
-      "description": "Find Violent Soho tickets at | Videos, biography, tour dates, performance times. VIP packages available.",
-      "url": "https://www.dothings.lol/brisbane/e/violent-soho-1w642ka/"
-    },
-    {
       "id": "1sjxg4q",
       "title": "Husky in Brisbane",
       "start": "2026-09-26T19:00:00+10:00",
@@ -883,6 +823,18 @@
       "url": "https://www.dothings.lol/brisbane/e/husky-in-brisbane-1sjxg4q/"
     },
     {
+      "id": "1w642ka",
+      "title": "Violent Soho",
+      "start": "2026-09-26T19:00:00+10:00",
+      "end": null,
+      "location": "Fortitude Music Hall, 66 Doggett St",
+      "category": "Concert / Music",
+      "price": null,
+      "free": false,
+      "description": "Find Violent Soho tickets at | Videos, biography, tour dates, performance times. VIP packages available.",
+      "url": "https://www.dothings.lol/brisbane/e/violent-soho-1w642ka/"
+    },
+    {
       "id": "1q4jp6l",
       "title": "Saturday Night Standup w/ Dan Rath & Friends!",
       "start": "2026-09-26T19:00:00+10:00",
@@ -893,6 +845,18 @@
       "free": false,
       "description": "Spend your Saturday night the right way, with an evening of laughs at Good Chat Comedy Club on Caxton St!Located inside a gorgeous, heritage-listed, purpose.",
       "url": "https://www.dothings.lol/brisbane/e/saturday-night-standup-w-dan-rath-friends-1q4jp6l/"
+    },
+    {
+      "id": "mrzf5v",
+      "title": "Maestro 7: Symphonic Dances",
+      "start": "2026-09-26T19:30:00+10:00",
+      "end": "2026-09-26T21:30:00+10:00",
+      "location": "Queensland Performing Arts Centre (QPAC), South Brisbane, Queensland Performing Arts Centre, Cnr Melbourne and Grey Street, South Brisbane",
+      "category": "Concert / Music",
+      "price": null,
+      "free": false,
+      "description": "A celebration of music that moves the body and soul. From folk steps to final farewells, this concert is built around the joy of dance. At its heart is Rachmaninov’s final major work Symphonic…",
+      "url": "https://www.dothings.lol/brisbane/e/maestro-7-symphonic-dances-mrzf5v/"
     },
     {
       "id": "6ukn86",
@@ -979,6 +943,18 @@
       "url": "https://www.dothings.lol/brisbane/e/vermillion-high-showcase-2026-m1sv6m/"
     },
     {
+      "id": "12ifenn",
+      "title": "Bands in parks: Community Train Day",
+      "start": "2026-09-27T10:00:00+10:00",
+      "end": "2026-09-27T11:00:00+10:00",
+      "location": "McPherson Park, Bracken Ridge, McPherson Park, 146 Denham Street, Bracken Ridge",
+      "category": "Concert / Music",
+      "price": 0,
+      "free": true,
+      "description": "Bands in Parks performs at McPherson Park. Connect with the local community at Bracken Ridge with sausage sizzles, live music by Musical Chairs Jazz Band, food and plant stalls and rides on a real…",
+      "url": "https://www.dothings.lol/brisbane/e/bands-in-parks-community-train-day-12ifenn/"
+    },
+    {
       "id": "wbebre",
       "title": "The Understudy",
       "start": "2026-09-27T12:00:00+10:00",
@@ -1001,6 +977,18 @@
       "free": false,
       "description": "Find OG's play the hits of John Paul Young and Stevie Wright tickets at | Videos, biography, tour dates, performance times. VIP packages available.",
       "url": "https://www.dothings.lol/brisbane/e/og-s-play-the-hits-of-john-paul-young-and-stevie-wright-17oaeul/"
+    },
+    {
+      "id": "4f8m5s",
+      "title": "Bands in Parks: Dances, Dreams & Distant Shores",
+      "start": "2026-09-27T14:00:00+10:00",
+      "end": "2026-09-27T15:00:00+10:00",
+      "location": "Brisbane City Hall, Brisbane City, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Concert / Music",
+      "price": 0,
+      "free": true,
+      "description": "Bands in Parks performs at Brisbane City Hall. Embark on a musical journey across continents, cultures, and imaginations with LawchestraQ. From the lively Celtic melodies of Anderson's Irish Suite…",
+      "url": "https://www.dothings.lol/brisbane/e/bands-in-parks-dances-dreams-distant-shores-4f8m5s/"
     },
     {
       "id": "14gftw6",

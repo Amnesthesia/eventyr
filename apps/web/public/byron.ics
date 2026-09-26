@@ -4,11 +4,11 @@ PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Byron Bay — do things
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-19baoix@dothings
-DTSTART;TZID=Australia/Brisbane:20260827T180000
-DTEND;TZID=Australia/Brisbane:20260912T220000
+DTSTART;TZID=Australia/Sydney:20260827T180000
+DTEND;TZID=Australia/Sydney:20260912T220000
 SUMMARY:Love For One Night
 DESCRIPTION:A live\, immersive performance experience by NORPA that blends 
  music and theatre\, hosted in the atmospheric setting of the historic Elth
@@ -29,8 +29,8 @@ URL:https://byronbayexperience.com.au/byron-bay-events-guide-whats-on/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1ghjz2m@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T100000
-DTEND;TZID=Australia/Brisbane:20260909T150000
+DTSTART;TZID=Australia/Sydney:20260909T100000
+DTEND;TZID=Australia/Sydney:20260909T150000
 SUMMARY:SPACEMAKERS
 DESCRIPTION:We welcome you to join our SPACEMAKERS Workshop\, where we coll
  aboratively design and build a range of projects for our workshop space. W
@@ -42,8 +42,8 @@ URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-17l92ul@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T180000
-DTEND;TZID=Australia/Brisbane:20260909T200000
+DTSTART;TZID=Australia/Sydney:20260909T180000
+DTEND;TZID=Australia/Sydney:20260909T200000
 SUMMARY:The Plastic Country
 DESCRIPTION:Join us for a special screening of The Plastic Country \, a pow
  erful new Australian documentary that uncovers the true scale of our natio
@@ -93,8 +93,8 @@ URL:https://nimbinbushtheatre.com/events/thjedouble-life-of-veronique/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-yn2ixe@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T173000
-DTEND;TZID=Australia/Brisbane:20260911T193000
+DTSTART;TZID=Australia/Sydney:20260911T173000
+DTEND;TZID=Australia/Sydney:20260911T193000
 SUMMARY:Art Byron Gatherings — An Evening with Glenn Barkley & Alison Kub
  ler
 DESCRIPTION:An intellectually engaging evening featuring a conversation bet
@@ -106,8 +106,8 @@ URL:https://www.eventbrite.com.au/e/art-byron-gatherings-an-evening-with-gl
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-6ne75v@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T083000
-DTEND;TZID=Australia/Brisbane:20260912T130000
+DTSTART;TZID=Australia/Sydney:20260912T083000
+DTEND;TZID=Australia/Sydney:20260912T130000
 SUMMARY:UPSKILL
 DESCRIPTION:Our UPSKILL Intro is the place to start your Shedding journey! 
  This one off 4.5 hour workshop introduces you to our space and our tools a
@@ -134,8 +134,8 @@ URL:https://nimbinbushtheatre.com/events/stop-making-sense/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-485jj2@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T083000
-DTEND;TZID=Australia/Brisbane:20260919T103000
+DTSTART;TZID=Australia/Sydney:20260919T083000
+DTEND;TZID=Australia/Sydney:20260919T103000
 SUMMARY:Bringing the Natural World to Theatre Practice
 DESCRIPTION:Two-Day Nature Immersion Masterclass with Waangenga Saturday 19
   & Sunday 20 September | 8:30am–3:30pm each day ‍
@@ -145,8 +145,8 @@ URL:https://www.byroncentre.com.au/theatre-events/waangenga-blanco-mastercl
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1y8gdd2@dothings
-DTSTART;TZID=Australia/Brisbane:20260822T100000
-DTEND;TZID=Australia/Brisbane:20260912T160000
+DTSTART;TZID=Australia/Sydney:20260822T100000
+DTEND;TZID=Australia/Sydney:20260912T160000
 SUMMARY:Film screening — Cerulean Limerence by Filippa Edghill
 DESCRIPTION:An experimental film presentation exploring themes of obsession
   and landscape\, presented as part of the gallery's rotation of visual wor
@@ -156,8 +156,8 @@ URL:https://www.lonegoatgallery.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-6zzyvj@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T133000
-DTEND;TZID=Australia/Brisbane:20260909T163000
+DTSTART;TZID=Australia/Sydney:20260909T133000
+DTEND;TZID=Australia/Sydney:20260909T163000
 SUMMARY:REPAIR CAFE
 DESCRIPTION:Drop in to The Repair Cafe on a Saturday between 1.30-4.30pm wi
  th your items to repair\, or to volunteer. Instead of throwing away a wobb
@@ -181,8 +181,8 @@ URL:https://www.events.humantix.com/packgallerystudio
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1tsxwi4@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T083000
-DTEND;TZID=Australia/Brisbane:20260910T173000
+DTSTART;TZID=Australia/Sydney:20260910T083000
+DTEND;TZID=Australia/Sydney:20260910T173000
 SUMMARY:EMPOWER
 DESCRIPTION:EMPOWER is a hands-on training program designed to inspire like
  -minded individuals and organisations to share Shedding’s practices\, le
@@ -195,8 +195,8 @@ URL:https://app.acuityscheduling.com/schedule.php?owner=30269226&appointmen
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-fqdalm@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T210000
+DTSTART;TZID=Australia/Sydney:20260910T190000
+DTEND;TZID=Australia/Sydney:20260910T210000
 SUMMARY:Common Wealth — Special screening + live Q&A
 DESCRIPTION:A special screening of the film followed by an in-person Q&A wi
  th director Kane Guglielmi\, focusing on the themes of the documentary.
@@ -216,8 +216,8 @@ URL:https://drillhalltheatre.org.au/mum-a-story/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-o7chuq@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T070000
-DTEND;TZID=Australia/Brisbane:20260911T090000
+DTSTART;TZID=Australia/Sydney:20260911T070000
+DTEND;TZID=Australia/Sydney:20260911T090000
 SUMMARY:Michael Hing: How Are We Supposed To Live Like This?
 DESCRIPTION:Life is increasingly insane. Nothing makes sense. Everything is
   chaos\, and we’re all just expected to keep on going? The planet is on 
@@ -232,8 +232,8 @@ URL:https://brunswickpicturehouse.com/michael-hing-how-are-we-supposed-to-l
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1pqcr6e@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
-DTEND;TZID=Australia/Brisbane:20260911T203000
+DTSTART;TZID=Australia/Sydney:20260911T180000
+DTEND;TZID=Australia/Sydney:20260911T203000
 SUMMARY:Plastic Country — community film screening & panel
 DESCRIPTION:A community screening of a documentary addressing environmental
   issues\, followed by a panel discussion with local experts and advocates.
@@ -242,8 +242,8 @@ URL:https://communityspaces.com.au/v1/tickets
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-uisqpp@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T093000
-DTEND;TZID=Australia/Brisbane:20260912T113000
+DTSTART;TZID=Australia/Sydney:20260912T093000
+DTEND;TZID=Australia/Sydney:20260912T113000
 SUMMARY:WET FELTED BOWL WORKSHOP
 DESCRIPTION:WET FELTED BOWL WORKSHOP FOR ADULTS Saturday 12 September 2026 
  9.30am - 1.30pm Join Agnès to learn how to wet felt a bowl using colourfu
@@ -256,8 +256,8 @@ URL:https://theartisanforest.com.au/product/wet-felted-bowl-workshopsaturda
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-12xxypu@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T100000
-DTEND;TZID=Australia/Brisbane:20260913T160000
+DTSTART;TZID=Australia/Sydney:20260912T100000
+DTEND;TZID=Australia/Sydney:20260913T160000
 SUMMARY:Glenn Barkley — Impression Sessions (handbuilding & stamp making)
   — Weekend workshop
 DESCRIPTION:A hands-on\, two-day intensive pottery workshop focused on hand
@@ -268,8 +268,8 @@ URL:https://www.byronschoolofart.com/glenn-barkley-impression-sessions
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1vs15ia@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T190000
-DTEND;TZID=Australia/Brisbane:20260913T210000
+DTSTART;TZID=Australia/Sydney:20260913T190000
+DTEND;TZID=Australia/Sydney:20260913T210000
 SUMMARY:DAN SULTAN (SOLO)
 DESCRIPTION:An intimate solo performance by renowned Australian artist Dan 
  Sultan at the historic Eltham Hotel.
@@ -293,8 +293,8 @@ URL:https://www.damienlucassculpture.com/life-drawing-byron-shop/life-drawi
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-o2w7zt@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T190000
-DTEND;TZID=Australia/Brisbane:20260918T210000
+DTSTART;TZID=Australia/Sydney:20260918T190000
+DTEND;TZID=Australia/Sydney:20260918T210000
 SUMMARY:The Star Court Theatre Games Show
 DESCRIPTION:Star Court Theatre's very own free monthly improv event\, 2 pre
  -selected teams\, 3 judges\, 1 timekeeper\, 1 fabulous host & a faerie! If
@@ -305,8 +305,8 @@ URL:http://starcourttheatre.com.au/events/sctgs26
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-kiy9z@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T200000
-DTEND;TZID=Australia/Brisbane:20260918T220000
+DTSTART;TZID=Australia/Sydney:20260918T200000
+DTEND;TZID=Australia/Sydney:20260918T220000
 SUMMARY:Julian Lage
 DESCRIPTION:Julian Lage tours Australia for the first time\, continuing cel
  ebrations of his breakthrough solo album from 2015\, 'World's Fair'.
@@ -315,8 +315,8 @@ URL:https://www.byroncentre.com.au/theatre-events/julian-lage
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-zp6c1f@dothings
-DTSTART;TZID=Australia/Brisbane:20260822T100000
-DTEND;TZID=Australia/Brisbane:20260912T160000
+DTSTART;TZID=Australia/Sydney:20260822T100000
+DTEND;TZID=Australia/Sydney:20260912T160000
 SUMMARY:More Salt Please
 DESCRIPTION:A curated exhibition showcasing contemporary art practices\, of
  fering a space for reflection on local culture and artistic inquiry.
@@ -325,8 +325,8 @@ URL:https://www.lonegoatgallery.com/exhibitions
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-avbkez@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T183000
-DTEND;TZID=Australia/Brisbane:20260908T203000
+DTSTART;TZID=Australia/Sydney:20260908T183000
+DTEND;TZID=Australia/Sydney:20260908T203000
 SUMMARY:Evening Life Drawing Byron
 DESCRIPTION:A casual\, untutored life drawing session with some materials p
  rovided. Life drawing Byron is held every Tuesday night with a different m
@@ -339,8 +339,8 @@ URL:https://www.damienlucassculpture.com/new-events/2020/2/18/life-drawing-
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-bxza09@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T183000
-DTEND;TZID=Australia/Brisbane:20260908T203000
+DTSTART;TZID=Australia/Sydney:20260908T183000
+DTEND;TZID=Australia/Sydney:20260908T203000
 SUMMARY:Byron Theatre Multiple Shows – Theatre
 DESCRIPTION:A theatrical performance hosted at the community-run Byron Thea
  tre\, known for fostering local arts and diverse cultural expression.
@@ -349,8 +349,8 @@ URL:https://www.byroncentre.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-391lcd@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T190000
-DTEND;TZID=Australia/Brisbane:20260908T220000
+DTSTART;TZID=Australia/Sydney:20260908T190000
+DTEND;TZID=Australia/Sydney:20260908T220000
 SUMMARY:Live Music Night at The Rails
 DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
  musicians in an intimate\, open-air beer garden setting. Perfect for casua
@@ -360,8 +360,8 @@ URL:https://therailsbyronbay.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1qnlpde@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T193000
-DTEND;TZID=Australia/Brisbane:20260908T203000
+DTSTART;TZID=Australia/Sydney:20260908T193000
+DTEND;TZID=Australia/Sydney:20260908T203000
 SUMMARY:Improvised Comedy Student Showcase
 DESCRIPTION:A showcase of local students performing improvised comedy scene
  s\, offering a fun and supportive look at the local improv community.
@@ -398,8 +398,8 @@ URL:https://www.palacecinemas.com.au/curatif-midnight-margaritas-preview-pr
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1ckeckh@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T090000
-DTEND;TZID=Australia/Brisbane:20260910T200000
+DTSTART;TZID=Australia/Sydney:20260909T090000
+DTEND;TZID=Australia/Sydney:20260910T200000
 SUMMARY:Screenworks Regional to Global 2026
 DESCRIPTION:A significant two-day screen industry forum connecting regional
   creators with global opportunities\, featuring panels and discussions wit
@@ -409,8 +409,8 @@ URL:https://screenworks.com.au/opportunities/regional-to-global-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-xxt3k3@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T100000
-DTEND;TZID=Australia/Brisbane:20260909T120000
+DTSTART;TZID=Australia/Sydney:20260909T100000
+DTEND;TZID=Australia/Sydney:20260909T120000
 SUMMARY:Morning Life Drawing Byron
 DESCRIPTION:A casual\, untutored life drawing session with some materials p
  rovided. Life drawing Byron is held every Wednesday Morning with a differe
@@ -422,8 +422,8 @@ URL:https://www.damienlucassculpture.com/new-events/2020/2/18/life-drawing-
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-guy5dv@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T180000
-DTEND;TZID=Australia/Brisbane:20260909T203000
+DTSTART;TZID=Australia/Sydney:20260909T180000
+DTEND;TZID=Australia/Sydney:20260909T203000
 SUMMARY:Wednesday Bridge
 DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
   cards with our Bridge groups in the Sunset Room. Whether you’re an expe
@@ -434,8 +434,8 @@ URL:https://oceanshorescc.com.au/event/wednesday-evening-bridge/2026-09-09/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-819q2@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T190000
-DTEND;TZID=Australia/Brisbane:20260909T210000
+DTSTART;TZID=Australia/Sydney:20260909T190000
+DTEND;TZID=Australia/Sydney:20260909T210000
 SUMMARY:Bombshells
 DESCRIPTION:With singing\, dancing\, comedy and the joys of sheer honesty\,
   Joanna Murray-Smith's acclaimed play Bombshells is a journey from crisis 
@@ -448,8 +448,8 @@ URL:https://www.byroncentre.com.au/theatre-events/bombshells
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-6ob6ss@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T190000
-DTEND;TZID=Australia/Brisbane:20260909T210000
+DTSTART;TZID=Australia/Sydney:20260909T190000
+DTEND;TZID=Australia/Sydney:20260909T210000
 SUMMARY:Byron Theatre Multiple Shows – Theatre
 DESCRIPTION:An evening of live theatrical performance at the Byron Communit
  y Centre\, offering an intimate space for local artistic engagement.
@@ -479,8 +479,8 @@ URL:https://byroncentre.com.au
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-kjrxpi@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T093000
-DTEND;TZID=Australia/Brisbane:20260910T113000
+DTSTART;TZID=Australia/Sydney:20260910T093000
+DTEND;TZID=Australia/Sydney:20260910T113000
 SUMMARY:Art Space: Fletcher Street Cottage
 DESCRIPTION:Express yourself through art! Whether it's painting\, drawing\,
   clay or collage\, this is your chance to explore your creativity.
@@ -489,8 +489,8 @@ URL:https://www.byroncentre.com.au/community-events/byron-art-space
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-18e9kg@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T100000
-DTEND;TZID=Australia/Brisbane:20260910T120000
+DTSTART;TZID=Australia/Sydney:20260910T100000
+DTEND;TZID=Australia/Sydney:20260910T120000
 SUMMARY:Private Workshop
 DESCRIPTION:#block-2dc6ee6bc145f365dc1f .image-styles-wrapper { clip-path: 
  var(--product-shape-mask)\; -webkit-clip-path: var(--product-shape-mask)\;
@@ -605,8 +605,8 @@ URL:https://www.muckware.com/privateworkshops/privateworkshop-sep10
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-vny6ao@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T180000
-DTEND;TZID=Australia/Brisbane:20260910T200000
+DTSTART;TZID=Australia/Sydney:20260910T180000
+DTEND;TZID=Australia/Sydney:20260910T200000
 SUMMARY:Dear Sunday ‘Back To Business’ Tour
 DESCRIPTION:An intimate gig featuring indie band Dear Sunday\, set within t
  he lush\, laid-back environment of the Arts Factory gardens.
@@ -615,8 +615,8 @@ URL:https://artsfactorygardenbar.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1lsrdji@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T210000
+DTSTART;TZID=Australia/Sydney:20260910T190000
+DTEND;TZID=Australia/Sydney:20260910T210000
 SUMMARY:Byron Theatre – Cinema Screening
 DESCRIPTION:An evening film screening at the local community hub\, showcasi
  ng independent or curated cinema selections suitable for an engaged audien
@@ -626,8 +626,8 @@ URL:https://www.byroncentre.com.au/bct/whats-on
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-z6a0gy@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T193000
-DTEND;TZID=Australia/Brisbane:20260910T213000
+DTSTART;TZID=Australia/Sydney:20260910T193000
+DTEND;TZID=Australia/Sydney:20260910T213000
 SUMMARY:Paradiso Presents: Havana Noche
 DESCRIPTION:An immersive live jazz and big band experience celebrating the 
  sounds of Havana in an intimate venue.
@@ -650,8 +650,8 @@ URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1sgs6qn@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
-DTEND;TZID=Australia/Brisbane:20260911T200000
+DTSTART;TZID=Australia/Sydney:20260911T180000
+DTEND;TZID=Australia/Sydney:20260911T200000
 SUMMARY:Bootleg Rascal – Byron Bay
 DESCRIPTION:Live performance by indie-fusion band Bootleg Rascal\, known fo
  r their genre-bending sound\, hosted at the historic Arts Factory venue.
@@ -661,8 +661,8 @@ URL:https://www.songkick.com/es/concerts/43298167-bootleg-rascal-at-arts-fa
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-s7lwwm@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T190000
-DTEND;TZID=Australia/Brisbane:20260911T210000
+DTSTART;TZID=Australia/Sydney:20260911T190000
+DTEND;TZID=Australia/Sydney:20260911T210000
 SUMMARY:Byron Theatre – Evening Program
 DESCRIPTION:A live performance event hosted at the Byron Theatre\, featurin
  g local or touring arts and music acts in an intimate setting.
@@ -671,8 +671,8 @@ URL:https://www.byroncentre.com.au/bct/whats-on
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-ejz09g@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T070000
-DTEND;TZID=Australia/Brisbane:20260912T090000
+DTSTART;TZID=Australia/Sydney:20260912T070000
+DTEND;TZID=Australia/Sydney:20260912T090000
 SUMMARY:Ray O’Leary: I Can See O’Leary Now the Ray Has Gone
 DESCRIPTION:When Ray O’Leary (Taskmaster NZ\, Have You Been Paying Attent
  ion?\, Best Show nominee Melbourne Comedy Festival) was born\, winter chan
@@ -686,8 +686,8 @@ URL:https://brunswickpicturehouse.com/ray-oleary-i-can-see-oleary-now-ray-h
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-i5nj3w@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T100000
-DTEND;TZID=Australia/Brisbane:20260912T120000
+DTSTART;TZID=Australia/Sydney:20260912T100000
+DTEND;TZID=Australia/Sydney:20260912T120000
 SUMMARY:Block Print Workshop & Pop‑Up Boutique
 DESCRIPTION:A practical workshop teaching traditional block printing techni
  ques in the community space of the Home Makers Club.
@@ -697,8 +697,8 @@ URL:https://www.eventbrite.com.au/e/block-print-workshop-and-pop-up-boutiqu
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1nq29qg@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T110000
-DTEND;TZID=Australia/Brisbane:20260912T130000
+DTSTART;TZID=Australia/Sydney:20260912T110000
+DTEND;TZID=Australia/Sydney:20260912T130000
 SUMMARY:Paint ‘N’ Platters — watercolour workshop with grazing platte
  rs
 DESCRIPTION:A hands-on watercolour painting workshop paired with food\, aim
@@ -710,8 +710,8 @@ URL:https://www.eventbrite.com.au/e/paint-n-platters-watercolour-workshop-w
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-r9tkt1@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T200000
-DTEND;TZID=Australia/Brisbane:20260912T220000
+DTSTART;TZID=Australia/Sydney:20260912T200000
+DTEND;TZID=Australia/Sydney:20260912T220000
 SUMMARY:NO CIGAR | Aussie Tour with special guests
 DESCRIPTION:An evening of live indie-rock at The Northern\, a classic Byron
   live music pub known for hosting touring acts.
@@ -721,8 +721,8 @@ URL:https://www.moshtix.com.au/v2/event/no-cigar-aussie-tour-with-special-g
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-12swcn1@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T160000
-DTEND;TZID=Australia/Brisbane:20260913T200000
+DTSTART;TZID=Australia/Sydney:20260913T160000
+DTEND;TZID=Australia/Sydney:20260913T200000
 SUMMARY:SUB-TRIBE
 DESCRIPTION:SUB-TRIBE LIVE AT HOTEL BRUNSWICK SUNDAY 13 SEPTEMBER | FROM 4P
  M | FREE EVENT From the roots of Aotearoa (New Zealand) comes SUB-TRIBE 
@@ -744,8 +744,8 @@ URL:https://hotelbrunswick.com.au/event/sub-tribe-3/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1uzwth1@dothings
-DTSTART;TZID=Australia/Brisbane:20260915T100000
-DTEND;TZID=Australia/Brisbane:20260915T120000
+DTSTART;TZID=Australia/Sydney:20260915T100000
+DTEND;TZID=Australia/Sydney:20260915T120000
 SUMMARY:Private Workshop
 DESCRIPTION:#block-7aebf23a9ef2de231086 .image-styles-wrapper { clip-path: 
  var(--product-shape-mask)\; -webkit-clip-path: var(--product-shape-mask)\;
@@ -860,8 +860,8 @@ URL:https://www.muckware.com/privateworkshops/privateworkshop-sep15
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-163q3j3@dothings
-DTSTART;TZID=Australia/Brisbane:20260916T100000
-DTEND;TZID=Australia/Brisbane:20260916T120000
+DTSTART;TZID=Australia/Sydney:20260916T100000
+DTEND;TZID=Australia/Sydney:20260916T120000
 SUMMARY:Morning Life Drawing Byron
 DESCRIPTION:A casual\, untutored life drawing session with some materials p
  rovided. Life drawing Byron is held every Wednesday Morning with a differe
@@ -873,8 +873,8 @@ URL:https://www.damienlucassculpture.com/new-events/2020/2/18/life-drawing-
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1xy9tfo@dothings
-DTSTART;TZID=Australia/Brisbane:20260918T180000
-DTEND;TZID=Australia/Brisbane:20260918T220000
+DTSTART;TZID=Australia/Sydney:20260918T180000
+DTEND;TZID=Australia/Sydney:20260918T220000
 SUMMARY:MELBOURNE SKA ORCHESTRA
 DESCRIPTION:Monte Loco Rides Again… Melbourne Ska Orchestra are coming to
   Hotel Brunswick Friday 18th September. Don’t miss out! Hot off the heel
@@ -932,8 +932,8 @@ URL:http://starcourttheatre.com.au/events/timecolours
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-pekzwv@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T100000
-DTEND;TZID=Australia/Brisbane:20260920T120000
+DTSTART;TZID=Australia/Sydney:20260920T100000
+DTEND;TZID=Australia/Sydney:20260920T120000
 SUMMARY:Private Workshop
 DESCRIPTION:#block-a5aa3415d588deb03178 .image-styles-wrapper { clip-path: 
  var(--product-shape-mask)\; -webkit-clip-path: var(--product-shape-mask)\;
@@ -1057,8 +1057,8 @@ URL:https://thenorthern.com.au/event/piano-bar/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1oa62ai@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T080000
-DTEND;TZID=Australia/Brisbane:20260908T110000
+DTSTART;TZID=Australia/Sydney:20260908T080000
+DTEND;TZID=Australia/Sydney:20260908T110000
 SUMMARY:New Brighton Farmers Market
 DESCRIPTION:A community-focused market featuring local growers and makers\,
   ideal for engaging with the local food system and connecting with the Nor
@@ -1068,8 +1068,8 @@ URL:https://newbrightonfarmersmarket.org.au
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1q6y8vl@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T183000
-DTEND;TZID=Australia/Brisbane:20260908T203000
+DTSTART;TZID=Australia/Sydney:20260908T183000
+DTEND;TZID=Australia/Sydney:20260908T203000
 SUMMARY:Trivia Tuesdays
 DESCRIPTION:Every Tuesday Free Entry Register 6.15pm Play 6.30pm Venue: Spo
  rts Lounge MC: Sean C Alternating with Mitch Prizes: 1st: $100 RSL Gift Ca
@@ -1081,8 +1081,8 @@ URL:https://ballinarsl.com.au/event/trivia-tuesdays/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1fkkigj@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T183000
-DTEND;TZID=Australia/Brisbane:20260908T203000
+DTSTART;TZID=Australia/Sydney:20260908T183000
+DTEND;TZID=Australia/Sydney:20260908T203000
 SUMMARY:Dramaworks Evening 2026
 DESCRIPTION:Excellent HSC Drama Performances from across the North Coast an
  d Northern Rivers Schools.
@@ -1118,8 +1118,8 @@ URL:https://www.kyoglecinemas.com.au/now-showing/fall-2-deadpoint/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1ipmep8@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T190000
-DTEND;TZID=Australia/Brisbane:20260909T220000
+DTSTART;TZID=Australia/Sydney:20260909T190000
+DTEND;TZID=Australia/Sydney:20260909T220000
 SUMMARY:Live Music Night at The Rails
 DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
  musicians in an intimate\, open-air beer garden setting. Perfect for casua
@@ -1147,8 +1147,8 @@ URL:https://www.kyoglecinemas.com.au/coming-soon/runner/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1ds6vp6@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T070000
-DTEND;TZID=Australia/Brisbane:20260910T110000
+DTSTART;TZID=Australia/Sydney:20260910T070000
+DTEND;TZID=Australia/Sydney:20260910T110000
 SUMMARY:Byron Farmers Market
 DESCRIPTION:Weekly gathering of local farmers and community members promoti
  ng sustainable food practices and connection with the land.
@@ -1157,8 +1157,8 @@ URL:https://byronfarmersmarket.com.au
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1m0m04q@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T180000
-DTEND;TZID=Australia/Brisbane:20260910T203000
+DTSTART;TZID=Australia/Sydney:20260910T180000
+DTEND;TZID=Australia/Sydney:20260910T203000
 SUMMARY:YAZMINDI
 DESCRIPTION:HOTEL BRUNSWICK | THU 10 SEPT Yazmindi’s authentic sound and 
  evocative stories are a far-reaching crowd-favourite. A cornerstone of her
@@ -1174,8 +1174,8 @@ URL:https://hotelbrunswick.com.au/event/yazmindi-6/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1f8ej2m@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T183000
-DTEND;TZID=Australia/Brisbane:20260910T200000
+DTSTART;TZID=Australia/Sydney:20260910T183000
+DTEND;TZID=Australia/Sydney:20260910T200000
 SUMMARY:Trivia Night
 DESCRIPTION:Trivia Night – Every Thursday Bring your friends and join us 
  for Trivia Night every Thursday evening. Enjoy a fun\, social atmosphere\,
@@ -1186,8 +1186,8 @@ URL:https://oceanshorescc.com.au/event/trivia-night/2026-09-10/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1ecjgye@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T190000
-DTEND;TZID=Australia/Brisbane:20260910T220000
+DTSTART;TZID=Australia/Sydney:20260910T190000
+DTEND;TZID=Australia/Sydney:20260910T220000
 SUMMARY:Live Music Night at The Rails
 DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
  musicians in an intimate\, open-air beer garden setting. Perfect for casua
@@ -1227,8 +1227,8 @@ URL:https://www.kyoglecinemas.com.au/coming-soon/runner/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-14mws59@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T070000
-DTEND;TZID=Australia/Brisbane:20260911T110000
+DTSTART;TZID=Australia/Sydney:20260911T070000
+DTEND;TZID=Australia/Sydney:20260911T110000
 SUMMARY:Mullumbimby Farmers Market
 DESCRIPTION:A bustling community market known for attracting locals and reg
  ional producers\, fostering a strong sense of community and connection to 
@@ -1238,8 +1238,8 @@ URL:https://mullumfarmersmarket.org.au
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1oye4es@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T133000
-DTEND;TZID=Australia/Brisbane:20260911T153000
+DTSTART;TZID=Australia/Sydney:20260911T133000
+DTEND;TZID=Australia/Sydney:20260911T153000
 SUMMARY:Victorian State Ballet presents Beauty and The Beast
 DESCRIPTION:Featuring internationally recognised artists in leading roles i
  n a rich display of outstanding skill! One of the world’s most loved fai
@@ -1253,8 +1253,8 @@ URL:https://www.byroncentre.com.au/theatre-events/victorian-state-ballet-pr
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-v35hz5@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T170000
-DTEND;TZID=Australia/Brisbane:20260911T193000
+DTSTART;TZID=Australia/Sydney:20260911T170000
+DTEND;TZID=Australia/Sydney:20260911T193000
 SUMMARY:Paul George — Fire Pit Fridays
 DESCRIPTION:Intimate live acoustic performance set around the outdoor fire 
  pits at Elements of Byron.
@@ -1264,8 +1264,8 @@ URL:https://byronbayexperience.com.au/whats-on-byron-bay/paul-george-fire-p
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-y806x8@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
-DTEND;TZID=Australia/Brisbane:20260911T200000
+DTSTART;TZID=Australia/Sydney:20260911T180000
+DTEND;TZID=Australia/Sydney:20260911T200000
 SUMMARY:Brush 'N Beats x The Lord Byron Distillery | Paint & Sip Party
 DESCRIPTION:A social painting session held at a local distillery\, combinin
  g creative expression with a casual\, guided group art experience.
@@ -1275,8 +1275,8 @@ URL:https://www.eventbrite.com.au/e/brush-n-beats-x-the-lord-byron-distille
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-uzx58p@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T183000
-DTEND;TZID=Australia/Brisbane:20260911T203000
+DTSTART;TZID=Australia/Sydney:20260911T183000
+DTEND;TZID=Australia/Sydney:20260911T203000
 SUMMARY:Line Dancing
 DESCRIPTION:YEEHAW\, BALLINA! Line Dancing is back on Fri Sept 11th! Free E
  ntry
@@ -1285,8 +1285,8 @@ URL:https://www.shawsbayhotel.com.au/whats-on/line-dancing/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-us08c5@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T190000
-DTEND;TZID=Australia/Brisbane:20260911T220000
+DTSTART;TZID=Australia/Sydney:20260911T190000
+DTEND;TZID=Australia/Sydney:20260911T220000
 SUMMARY:Live Music Night at The Rails
 DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
  musicians in an intimate\, open-air beer garden setting. Perfect for casua
@@ -1296,8 +1296,8 @@ URL:https://therailsbyronbay.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1yql6zx@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T070000
-DTEND;TZID=Australia/Brisbane:20260912T110000
+DTSTART;TZID=Australia/Sydney:20260912T070000
+DTEND;TZID=Australia/Sydney:20260912T110000
 SUMMARY:Bangalow Farmers Market
 DESCRIPTION:Community-led market in the historic village of Bangalow\, gath
  ering growers and residents for local produce and conversation.
@@ -1306,8 +1306,8 @@ URL:https://byronfarmersmarket.com.au
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1mkp342@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T080000
-DTEND;TZID=Australia/Brisbane:20260912T130000
+DTSTART;TZID=Australia/Sydney:20260912T080000
+DTEND;TZID=Australia/Sydney:20260912T130000
 SUMMARY:Terrace Market (Haven Gallery)
 DESCRIPTION:A community-oriented market hosted by Haven Gallery\, featuring
   local art\, design\, and creative goods in a central Byron setting.
@@ -1316,8 +1316,8 @@ URL:https://events.humanitix.com/terrace-market
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-y8ygvk@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T180000
-DTEND;TZID=Australia/Brisbane:20260912T210000
+DTSTART;TZID=Australia/Sydney:20260912T180000
+DTEND;TZID=Australia/Sydney:20260912T210000
 SUMMARY:Ben Whiting
 DESCRIPTION:Saturday 12 September Free from 6pm Born by the sea in Northern
   NSW\, BW started writing songs and formed his first band at age 12. Unlik
@@ -1330,8 +1330,8 @@ URL:https://ballinarsl.com.au/event/ben-whiting/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-b7gzpw@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T190000
-DTEND;TZID=Australia/Brisbane:20260912T220000
+DTSTART;TZID=Australia/Sydney:20260912T190000
+DTEND;TZID=Australia/Sydney:20260912T220000
 SUMMARY:Live Music Night at The Rails
 DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
  musicians in an intimate\, open-air beer garden setting. Perfect for casua
@@ -1374,8 +1374,8 @@ URL:https://www.facebook.com/events/928551293656658
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-ydctcp@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T110000
-DTEND;TZID=Australia/Brisbane:20260913T130000
+DTSTART;TZID=Australia/Sydney:20260913T110000
+DTEND;TZID=Australia/Sydney:20260913T130000
 SUMMARY:NURTURE — Prenatal Yin Yoga
 DESCRIPTION:A grounded\, somatic-focused yoga session emphasizing gentle mo
  vement and breath\, avoiding commercial wellness trends.
@@ -1384,8 +1384,8 @@ URL:https://www.solmethod.com.au/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-13nx16b@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T113000
-DTEND;TZID=Australia/Brisbane:20260913T133000
+DTSTART;TZID=Australia/Sydney:20260913T113000
+DTEND;TZID=Australia/Sydney:20260913T133000
 SUMMARY:Cycle Workshop Byron Bay
 DESCRIPTION:A somatic and wellness-oriented workshop focused on the menstru
  al cycle\, aimed at providing education and community support for body lit
@@ -1396,8 +1396,8 @@ URL:https://happeningnext.com/event/cycle-workshop-byron-bay-eid1ef0l412n47
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-7938kc@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T150000
-DTEND;TZID=Australia/Brisbane:20260913T170000
+DTSTART;TZID=Australia/Sydney:20260913T150000
+DTEND;TZID=Australia/Sydney:20260913T170000
 SUMMARY:Solace Sunday Session
 DESCRIPTION:Dance your way into the long weekend with our Solace Sunday Ses
  sion happening this Sunday from 3pm until late.Deep and minimal house from
@@ -1407,8 +1407,8 @@ URL:https://commonpeoplebrewing.com.au/blogs/news/solace-sunday-session
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-yx1y9r@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T150000
-DTEND;TZID=Australia/Brisbane:20260913T180000
+DTSTART;TZID=Australia/Sydney:20260913T150000
+DTEND;TZID=Australia/Sydney:20260913T180000
 SUMMARY:Sunday Sessions
 DESCRIPTION:Sunday Sessions Get ready for your new favorite weekend traditi
  on: Sunday Sessions with the Swamp Cats!\, we are turning up the energy ev
@@ -1421,8 +1421,8 @@ URL:https://www.mullumexservices.com.au/event/sunday-sessions/2026-09-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-14jnby@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T160000
-DTEND;TZID=Australia/Brisbane:20260913T200000
+DTSTART;TZID=Australia/Sydney:20260913T160000
+DTEND;TZID=Australia/Sydney:20260913T200000
 SUMMARY:SUNDAY BRUNSDAY
 DESCRIPTION:Join us every Sunday for an unforgettable afternoon of live mus
  ic\, delicious food\, great vibes and company. Showcasing amazing talent w
@@ -1434,8 +1434,8 @@ URL:https://hotelbrunswick.com.au/event/sundays-brunsday/2026-09-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1qo1t2r@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T190000
-DTEND;TZID=Australia/Brisbane:20260913T220000
+DTSTART;TZID=Australia/Sydney:20260913T190000
+DTEND;TZID=Australia/Sydney:20260913T220000
 SUMMARY:Live Music Night at The Rails
 DESCRIPTION:A long-standing Byron tradition featuring local indie and folk 
  musicians in an intimate\, open-air beer garden setting. Perfect for casua
@@ -1445,8 +1445,8 @@ URL:https://therailsbyronbay.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1aowqx1@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T121500
-DTEND;TZID=Australia/Brisbane:20260914T160000
+DTSTART;TZID=Australia/Sydney:20260914T121500
+DTEND;TZID=Australia/Sydney:20260914T160000
 SUMMARY:Monday Bridge
 DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
   cards with our Bridge groups in the Sunset Room. Whether you’re an expe
@@ -1457,8 +1457,8 @@ URL:https://oceanshorescc.com.au/event/monday-mid-day-bridge/2026-09-14/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-jxlmys@dothings
-DTSTART;TZID=Australia/Brisbane:20260914T163000
-DTEND;TZID=Australia/Brisbane:20260914T183000
+DTSTART;TZID=Australia/Sydney:20260914T163000
+DTEND;TZID=Australia/Sydney:20260914T183000
 SUMMARY:THE BOX SHOW by Junkyard Beats
 DESCRIPTION:Get ready for THE BOX SHOW — an award-winning\, interactive f
  amily theatre adventure from Junkyard Beats \, directed and co-written by 
@@ -1480,8 +1480,8 @@ URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1fbm2yq@dothings
-DTSTART;TZID=Australia/Brisbane:20260915T103000
-DTEND;TZID=Australia/Brisbane:20260915T123000
+DTSTART;TZID=Australia/Sydney:20260915T103000
+DTEND;TZID=Australia/Sydney:20260915T123000
 SUMMARY:Byron Seniors Club: Elder Beats Drumming
 DESCRIPTION:“The seniors that attend this amazing session are some of the
   most vibrant energetic characters of their age on the planet.” – Gare
@@ -1491,8 +1491,8 @@ URL:https://www.byroncentre.com.au/community-events/seniors-drumming
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1xd61un@dothings
-DTSTART;TZID=Australia/Brisbane:20260916T180000
-DTEND;TZID=Australia/Brisbane:20260916T203000
+DTSTART;TZID=Australia/Sydney:20260916T180000
+DTEND;TZID=Australia/Sydney:20260916T203000
 SUMMARY:Wednesday Bridge
 DESCRIPTION:Bridge in the Sunset Room Enjoy a great afternoon or evening of
   cards with our Bridge groups in the Sunset Room. Whether you’re an expe
@@ -1512,8 +1512,8 @@ URL:https://www.kyoglecinemas.com.au/coming-soon/forgotten-island/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1k5hve3@dothings
-DTSTART;TZID=Australia/Brisbane:20260917T180000
-DTEND;TZID=Australia/Brisbane:20260917T203000
+DTSTART;TZID=Australia/Sydney:20260917T180000
+DTEND;TZID=Australia/Sydney:20260917T203000
 SUMMARY:Ben Whiting
 DESCRIPTION:BEN WHITING | Hotel Brunswick | Thursday 17 September 6pm An al
  luring voice with rock beneath the surface Ben Whiting is a seasoned singe
@@ -1534,8 +1534,8 @@ URL:https://hotelbrunswick.com.au/event/ben-whiting-6/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-b34gph@dothings
-DTSTART;TZID=Australia/Brisbane:20260917T183000
-DTEND;TZID=Australia/Brisbane:20260917T200000
+DTSTART;TZID=Australia/Sydney:20260917T183000
+DTEND;TZID=Australia/Sydney:20260917T200000
 SUMMARY:Trivia Night
 DESCRIPTION:Trivia Night – Every Thursday Bring your friends and join us 
  for Trivia Night every Thursday evening. Enjoy a fun\, social atmosphere\,
@@ -1565,8 +1565,8 @@ URL:https://nimbinbushtheatre.com/events/nourishing-yin-yoga-and-sound-heal
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-sjjyxw@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T163000
-DTEND;TZID=Australia/Brisbane:20260919T220000
+DTSTART;TZID=Australia/Sydney:20260919T163000
+DTEND;TZID=Australia/Sydney:20260919T220000
 SUMMARY:TROPIKALIA – BRAZILIAN PARTY
 DESCRIPTION:Tropikalia – A journey Through Brazilian Music Tropikalia bri
  ngs the best of Brazilian music and good vibes to Hotel Brunswick . Expect
@@ -1581,8 +1581,8 @@ URL:https://hotelbrunswick.com.au/event/tropikalia-brazilian-party-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-17fk05@dothings
-DTSTART;TZID=Australia/Brisbane:20260919T200000
-DTEND;TZID=Australia/Brisbane:20260919T220000
+DTSTART;TZID=Australia/Sydney:20260919T200000
+DTEND;TZID=Australia/Sydney:20260919T220000
 SUMMARY:The Honey Sliders' Mix Tape
 DESCRIPTION:Press rewind and start from the top - this is The Honey Sliders
  ’ Mix Tape. A carefully curated collection of songs\, arranged in a spec
@@ -1609,8 +1609,8 @@ URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-b3dnbe@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T150000
-DTEND;TZID=Australia/Brisbane:20260920T170000
+DTSTART;TZID=Australia/Sydney:20260920T150000
+DTEND;TZID=Australia/Sydney:20260920T170000
 SUMMARY:Casey Donovan
 DESCRIPTION:Sunday 20 September 2026 Tickets: $60 Doors: 2.30pm Show: 3pm A
  ustralia’s powerhouse vocalist Casey Donovan is set to embark on her big
@@ -1622,8 +1622,8 @@ URL:https://ballinarsl.com.au/event/casey-donovan/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-33250b@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T150000
-DTEND;TZID=Australia/Brisbane:20260920T180000
+DTSTART;TZID=Australia/Sydney:20260920T150000
+DTEND;TZID=Australia/Sydney:20260920T180000
 SUMMARY:Sunday Sessions
 DESCRIPTION:Sunday Sessions Get ready for your new favorite weekend traditi
  on: Sunday Sessions with the Swamp Cats!\, we are turning up the energy ev
@@ -1636,8 +1636,8 @@ URL:https://www.mullumexservices.com.au/event/sunday-sessions/2026-09-20/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-fhnsci@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T160000
-DTEND;TZID=Australia/Brisbane:20260920T200000
+DTSTART;TZID=Australia/Sydney:20260920T160000
+DTEND;TZID=Australia/Sydney:20260920T200000
 SUMMARY:SUNDAY BRUNSDAY
 DESCRIPTION:Join us every Sunday for an unforgettable afternoon of live mus
  ic\, delicious food\, great vibes and company. Showcasing amazing talent w
@@ -1649,8 +1649,8 @@ URL:https://hotelbrunswick.com.au/event/sundays-brunsday/2026-09-20/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1grbph5@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T160000
-DTEND;TZID=Australia/Brisbane:20260920T200000
+DTSTART;TZID=Australia/Sydney:20260920T160000
+DTEND;TZID=Australia/Sydney:20260920T200000
 SUMMARY:FULL MOON REGGAE PARTY FT. SKYEATER
 DESCRIPTION:FULL MOON REGGAE PARTY | Sunday 20 September\, from 4PM | Free 
  Event The beer garden comes alive under the full moon for a soulful reggae
@@ -1666,8 +1666,8 @@ URL:https://hotelbrunswick.com.au/event/full-moon-reggae-ft-skyeater/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-yc36aa@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T100000
-DTEND;TZID=Australia/Brisbane:20260908T120000
+DTSTART;TZID=Australia/Sydney:20260908T100000
+DTEND;TZID=Australia/Sydney:20260908T120000
 SUMMARY:Byron Seniors: Chair Yoga
 DESCRIPTION:‍ About the class Stay active\, flexible and relaxed with Cha
  ir Yoga\, a gentle Hatha practice designed for seniors. Each session blend
@@ -1680,8 +1680,8 @@ URL:https://www.byroncentre.com.au/community-events/chair-yoga
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1tbhts3@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T111500
-DTEND;TZID=Australia/Brisbane:20260908T131500
+DTSTART;TZID=Australia/Sydney:20260908T111500
+DTEND;TZID=Australia/Sydney:20260908T131500
 SUMMARY:Tai Chi
 DESCRIPTION:This gentle and flowing Tai Chi course is based on a program de
  veloped by Dr Paul Lam for people with arthritis\, but is suitable for any
@@ -1691,8 +1691,8 @@ URL:https://www.byroncentre.com.au/community-events/tai-chi
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-7ukure@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T180000
-DTEND;TZID=Australia/Brisbane:20260908T203000
+DTSTART;TZID=Australia/Sydney:20260908T180000
+DTEND;TZID=Australia/Sydney:20260908T203000
 SUMMARY:Jason Delphin
 DESCRIPTION:
 LOCATION:Beach Hotel
@@ -1700,8 +1700,8 @@ URL:https://www.beachhotel.com.au/event/jason-delphin-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-10rolx2@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T040000
-DTEND;TZID=Australia/Brisbane:20260909T063000
+DTSTART;TZID=Australia/Sydney:20260909T040000
+DTEND;TZID=Australia/Sydney:20260909T063000
 SUMMARY:Jason Delphin
 DESCRIPTION:
 LOCATION:Beach Hotel
@@ -1709,8 +1709,8 @@ URL:https://www.beachhotel.com.au/event/jason-delphin-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-g28vky@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T180000
-DTEND;TZID=Australia/Brisbane:20260909T203000
+DTSTART;TZID=Australia/Sydney:20260909T180000
+DTEND;TZID=Australia/Sydney:20260909T203000
 SUMMARY:Tahlia Matheson
 DESCRIPTION:
 LOCATION:Beach Hotel
@@ -1731,8 +1731,8 @@ URL:https://www.byron.nsw.gov.au/Recreation-Culture/Events-Venues/Whats-On/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1bgy695@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T040000
-DTEND;TZID=Australia/Brisbane:20260910T063000
+DTSTART;TZID=Australia/Sydney:20260910T040000
+DTEND;TZID=Australia/Sydney:20260910T063000
 SUMMARY:Tahlia Matheson
 DESCRIPTION:
 LOCATION:Beach Hotel
@@ -1740,8 +1740,8 @@ URL:https://www.beachhotel.com.au/event/tahlia-matheson-10/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1p7fg1@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T180000
-DTEND;TZID=Australia/Brisbane:20260910T220000
+DTSTART;TZID=Australia/Sydney:20260910T180000
+DTEND;TZID=Australia/Sydney:20260910T220000
 SUMMARY:Jaffer Band
 DESCRIPTION:
 LOCATION:Beach Hotel
@@ -1749,8 +1749,8 @@ URL:https://www.beachhotel.com.au/event/jaffer-band/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-umb6lp@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T040000
-DTEND;TZID=Australia/Brisbane:20260911T080000
+DTSTART;TZID=Australia/Sydney:20260911T040000
+DTEND;TZID=Australia/Sydney:20260911T080000
 SUMMARY:Jaffer Band
 DESCRIPTION:
 LOCATION:Beach Hotel
@@ -1758,8 +1758,8 @@ URL:https://www.beachhotel.com.au/event/jaffer-band/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1ulxi4g@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T100000
-DTEND;TZID=Australia/Brisbane:20260911T113000
+DTSTART;TZID=Australia/Sydney:20260911T100000
+DTEND;TZID=Australia/Sydney:20260911T113000
 SUMMARY:Morning Melodies with Tommy Memphis
 DESCRIPTION:Friday 11 September Doors: 9.30am Show: 10.00 - 11.30am Tickets
   $20 We are excited to introduce the popular Tommy Memphis to Ballina RSL 
@@ -1771,8 +1771,8 @@ URL:https://ballinarsl.com.au/event/morning-melodies-with-tommy-memphis/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1icc4wg@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
-DTEND;TZID=Australia/Brisbane:20260911T220000
+DTSTART;TZID=Australia/Sydney:20260911T180000
+DTEND;TZID=Australia/Sydney:20260911T220000
 SUMMARY:LIVE BABY LIVE | INXS TRIBUTE SHOW
 DESCRIPTION:HURRY NOW to secure your ticket to party with Australia’s mos
  t celebrated & exciting tribute to the legendary kings of rock ‘n’ rol
@@ -1795,8 +1795,8 @@ URL:https://hotelbrunswick.com.au/event/live-baby-live-the-inxs-tribute-sho
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-6b2jj2@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T163000
-DTEND;TZID=Australia/Brisbane:20260912T220000
+DTSTART;TZID=Australia/Sydney:20260912T163000
+DTEND;TZID=Australia/Sydney:20260912T220000
 SUMMARY:WEAR THE FOX HAT
 DESCRIPTION:WEAR THE FOX HAT | Live at Hotel Brunswick Sat 12 September | F
  rom 4.30 PM | FREE EVENT Get set for an epic afternoon of live music as We
@@ -1807,8 +1807,8 @@ URL:https://hotelbrunswick.com.au/event/wear-the-fox-hat-6/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-1j83kz5@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T143000
-DTEND;TZID=Australia/Brisbane:20260913T173000
+DTSTART;TZID=Australia/Sydney:20260913T143000
+DTEND;TZID=Australia/Sydney:20260913T173000
 SUMMARY:Sunday Blues Sessions
 DESCRIPTION:Every Sunday 2.30pm – 5.30pm SEPTEMBER 13 - Keeping North 20 
  - Mojo Webb Happy Hours 2.30pm – 5.30pm $12 Cocktails - Skrewball Espres
@@ -1821,8 +1821,8 @@ URL:https://ballinarsl.com.au/event/sunday-blues-sessions/
 END:VEVENT
 BEGIN:VEVENT
 UID:byron-zftp5t@dothings
-DTSTART;TZID=Australia/Brisbane:20260915T123000
-DTEND;TZID=Australia/Brisbane:20260915T143000
+DTSTART;TZID=Australia/Sydney:20260915T123000
+DTEND;TZID=Australia/Sydney:20260915T143000
 SUMMARY:Brunswick Heads Public School presents Beachside Boogie
 DESCRIPTION:Brand new musical from BH Public School! Dive into Brunswick He
  ads Public school’s latest family musical\, Beachside Boogie\, an unforg

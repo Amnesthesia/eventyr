@@ -9,7 +9,7 @@ import {
 	type PairClassifyFn,
 } from "./dedupe.ts";
 
-const MODEL = "gemini-3.1-flash-lite";
+export const MODEL = "gemini-3.1-flash-lite";
 
 const SYSTEM_PROMPT = `You decide whether two event listings describe the SAME real-world event, gathered from different sources that word things differently.
 

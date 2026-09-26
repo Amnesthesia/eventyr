@@ -1,18 +1,13 @@
 {
-  "data_as_of": "2026-09-20",
+  "data_as_of": "2026-09-26",
   "cities": [
     {
       "city": "Brisbane",
       "city_key": "brisbane",
       "slug": "brisbane",
       "timezone": "Australia/Brisbane",
-      "data_as_of": "2026-09-20",
+      "data_as_of": "2026-09-24",
       "days": [
-        "/ai/brisbane/2026-09-21.json",
-        "/ai/brisbane/2026-09-22.json",
-        "/ai/brisbane/2026-09-23.json",
-        "/ai/brisbane/2026-09-24.json",
-        "/ai/brisbane/2026-09-25.json",
         "/ai/brisbane/2026-09-26.json",
         "/ai/brisbane/2026-09-27.json"
       ],
@@ -54,7 +49,7 @@
       "city": "Byron Bay",
       "city_key": "byron",
       "slug": "byron",
-      "timezone": "Australia/Brisbane",
+      "timezone": "Australia/Sydney",
       "data_as_of": "2026-09-08",
       "days": [],
       "week": null,
@@ -67,11 +62,6 @@
       "timezone": "Australia/Brisbane",
       "data_as_of": "2026-09-20",
       "days": [
-        "/ai/gold-coast/2026-09-21.json",
-        "/ai/gold-coast/2026-09-22.json",
-        "/ai/gold-coast/2026-09-23.json",
-        "/ai/gold-coast/2026-09-24.json",
-        "/ai/gold-coast/2026-09-25.json",
         "/ai/gold-coast/2026-09-26.json",
         "/ai/gold-coast/2026-09-27.json"
       ],
@@ -85,11 +75,6 @@
       "timezone": "Australia/Brisbane",
       "data_as_of": "2026-09-20",
       "days": [
-        "/ai/sunshine-coast/2026-09-21.json",
-        "/ai/sunshine-coast/2026-09-22.json",
-        "/ai/sunshine-coast/2026-09-23.json",
-        "/ai/sunshine-coast/2026-09-24.json",
-        "/ai/sunshine-coast/2026-09-25.json",
         "/ai/sunshine-coast/2026-09-26.json",
         "/ai/sunshine-coast/2026-09-27.json"
       ],

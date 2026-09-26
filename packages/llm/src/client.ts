@@ -57,7 +57,7 @@ import type {
 	StageUsage,
 } from "./types.ts";
 
-const MAX_RETRIES = 4;
+export const MAX_RETRIES = 4;
 const BASE_BACKOFF_MS = 5_000;
 const DEFAULT_PROVIDER: LLMProvider = {
 	provider: "gemini",

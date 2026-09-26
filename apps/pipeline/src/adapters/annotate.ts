@@ -13,11 +13,11 @@ import { chunkArray } from "@dothingslol/utils/concurrency";
 import { CATEGORIES, TAG_SET, TAGS } from "../common.ts";
 import { isValidCategory } from "./normalise.ts";
 
-const ANNOTATE_MODEL = "gemini-3.1-flash-lite";
+export const ANNOTATE_MODEL = "gemini-3.1-flash-lite";
 // Annotation classifies each event independently — no cross-item
 // reasoning — so a bigger batch costs accuracy far less than extraction
 // would, and halves the calls.
-const BATCH_SIZE = 40;
+export const BATCH_SIZE = 40;
 
 export interface Annotation {
 	category: string;

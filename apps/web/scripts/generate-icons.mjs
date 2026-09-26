@@ -81,7 +81,10 @@ function drawChevronIcon(x, y, width, height, isMaskable = false) {
 		const dx = x2 - x1;
 		const dy = y2 - y1;
 		const lenSq = dx * dx + dy * dy;
-		const t = Math.max(0, Math.min(1, ((px - x1) * dx + (py - y1) * dy) / lenSq));
+		const t = Math.max(
+			0,
+			Math.min(1, ((px - x1) * dx + (py - y1) * dy) / lenSq),
+		);
 		const projX = x1 + t * dx;
 		const projY = y1 + t * dy;
 		return Math.hypot(px - projX, py - projY);
@@ -92,9 +95,12 @@ function drawChevronIcon(x, y, width, height, isMaskable = false) {
 	const d = Math.min(d1, d2);
 
 	// Anti-aliasing width in normalized chevron units
-	const pixelSize = (1 / width) / scale;
+	const pixelSize = 1 / width / scale;
 	const edge = thickness;
-	const alpha = Math.max(0, Math.min(1, (edge + pixelSize - d) / (pixelSize * 1.5)));
+	const alpha = Math.max(
+		0,
+		Math.min(1, (edge + pixelSize - d) / (pixelSize * 1.5)),
+	);
 
 	if (alpha <= 0) {
 		return [bgR, bgG, bgB, 255];
@@ -115,19 +121,27 @@ const iconsDir = join(process.cwd(), "public", "icons");
 mkdirSync(iconsDir, { recursive: true });
 
 // 1. icon-192.png
-const png192 = createPng(192, 192, (x, y, w, h) => drawChevronIcon(x, y, w, h, false));
+const png192 = createPng(192, 192, (x, y, w, h) =>
+	drawChevronIcon(x, y, w, h, false),
+);
 writeFileSync(join(iconsDir, "icon-192.png"), png192);
 
 // 2. icon-512.png
-const png512 = createPng(512, 512, (x, y, w, h) => drawChevronIcon(x, y, w, h, false));
+const png512 = createPng(512, 512, (x, y, w, h) =>
+	drawChevronIcon(x, y, w, h, false),
+);
 writeFileSync(join(iconsDir, "icon-512.png"), png512);
 
 // 3. icon-maskable-512.png
-const pngMaskable512 = createPng(512, 512, (x, y, w, h) => drawChevronIcon(x, y, w, h, true));
+const pngMaskable512 = createPng(512, 512, (x, y, w, h) =>
+	drawChevronIcon(x, y, w, h, true),
+);
 writeFileSync(join(iconsDir, "icon-maskable-512.png"), pngMaskable512);
 
 // 4. apple-touch-icon.png (180x180)
-const pngApple180 = createPng(180, 180, (x, y, w, h) => drawChevronIcon(x, y, w, h, false));
+const pngApple180 = createPng(180, 180, (x, y, w, h) =>
+	drawChevronIcon(x, y, w, h, false),
+);
 writeFileSync(join(iconsDir, "apple-touch-icon.png"), pngApple180);
 
 // 5. SVG icon
@@ -139,4 +153,3 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width
 writeFileSync(join(iconsDir, "icon.svg"), svg);
 
 console.log("✓ Generated PWA icons in public/icons/");
-

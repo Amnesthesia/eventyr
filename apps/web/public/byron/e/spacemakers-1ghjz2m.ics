@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:SPACEMAKERS
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1ghjz2m@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T100000
-DTEND;TZID=Australia/Brisbane:20260909T150000
+DTSTART;TZID=Australia/Sydney:20260909T100000
+DTEND;TZID=Australia/Sydney:20260909T150000
 SUMMARY:SPACEMAKERS
 DESCRIPTION:We welcome you to join our SPACEMAKERS Workshop\, where we coll
  aboratively design and build a range of projects for our workshop space. W

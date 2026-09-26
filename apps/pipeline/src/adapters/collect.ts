@@ -86,7 +86,7 @@ const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
  * every source is a different host, so this is bounded by how many LLM
  * extraction calls we want in flight rather than by politeness.
  */
-const SOURCE_CONCURRENCY = 5;
+export const SOURCE_CONCURRENCY = 5;
 /** Listing pages of one source fetched at once. They share a host, and the
  * fetcher's per-host cap is what actually bounds this. */
 const LISTING_CONCURRENCY = 2;

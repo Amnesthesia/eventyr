@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Private Workshop
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-pekzwv@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T100000
-DTEND;TZID=Australia/Brisbane:20260920T120000
+DTSTART;TZID=Australia/Sydney:20260920T100000
+DTEND;TZID=Australia/Sydney:20260920T120000
 SUMMARY:Private Workshop
 DESCRIPTION:#block-a5aa3415d588deb03178 .image-styles-wrapper { clip-path: 
  var(--product-shape-mask)\; -webkit-clip-path: var(--product-shape-mask)\;

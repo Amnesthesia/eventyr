@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:SUNDAY BRUNSDAY
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-fhnsci@dothings
-DTSTART;TZID=Australia/Brisbane:20260920T160000
-DTEND;TZID=Australia/Brisbane:20260920T200000
+DTSTART;TZID=Australia/Sydney:20260920T160000
+DTEND;TZID=Australia/Sydney:20260920T200000
 SUMMARY:SUNDAY BRUNSDAY
 DESCRIPTION:Join us every Sunday for an unforgettable afternoon of live mus
  ic\, delicious food\, great vibes and company. Showcasing amazing talent w

@@ -75,20 +75,20 @@ import { isPast, withinWindow } from "./normalise.ts";
 // These four thresholds decide who gets an LLM call. They are first-run
 // guesses; the report prints the raw signals for every host so they can be
 // retuned and the classification re-derived with --report-only, no refetch.
-const MIN_TEXT_LENGTH = 1200; // below this a page is a shell, not a listing
+export const MIN_TEXT_LENGTH = 1200; // below this a page is a shell, not a listing
 // A page needs at least as many date strings as the promotion gate needs dated
 // events, or it cannot clear that bar however well extraction goes — so
 // refusing it here is free accuracy, not a compromise.
-const MIN_DATE_HITS = 5; // a listing page mentions dates repeatedly
+export const MIN_DATE_HITS = 5; // a listing page mentions dates repeatedly
 // Fetching is cheap (no model call), so the probe is generous with candidate
 // pages and strict about how many get extracted. Every link in the site's own
 // menu is a candidate: menus are where listing pages live, and their labels
 // are often things no path convention would guess ("Gig Guide", "Programme").
 /** Suggested URLs fetched per source. */
-const MAX_CANDIDATE_FETCHES = 6;
+export const MAX_CANDIDATE_FETCHES = 6;
 /** Listing URLs kept for a promoted source (a venue may list events and
  * exhibitions on separate pages, and both are worth scraping). */
-const MAX_KEPT_URLS = 3;
+export const MAX_KEPT_URLS = 3;
 /**
  * Pages actually extracted per source. Candidates are already ranked (sitemap,
  * declared, model-suggested, canonical, homepage) and scored by date hits and
@@ -96,7 +96,7 @@ const MAX_KEPT_URLS = 3;
  * flash-lite to re-confirm negatives. In the runs so far the sixth candidate
  * has never been the one that verified.
  */
-const MAX_EVALUATIONS = 2;
+export const MAX_EVALUATIONS = 2;
 /**
  * Feed URLs tried per source. They are free to evaluate (no model call), so
  * the only cost is the fetch — but one hostile <head> full of <link rel> tags
@@ -120,7 +120,7 @@ const MAX_FEED_CANDIDATES = 4;
  * generous; what it catches is a page that is essentially only history
  * (doo-bop's /events: 30 dated, 30 past, 0 upcoming).
  */
-const MIN_DATED_TO_PROMOTE = 3;
+export const MIN_DATED_TO_PROMOTE = 3;
 /**
  * One *upcoming* event is enough — where upcoming means anywhere in the
  * future, not just inside the fortnight we happen to publish next.
@@ -138,8 +138,8 @@ const MIN_DATED_TO_PROMOTE = 3;
  * about the programme. A venue with a quiet fortnight but a season on sale is
  * still a scrape target; the weekly window filter decides what publishes.
  */
-const MIN_UPCOMING_TO_PROMOTE = 1;
-const MAX_PAST_RATIO = 10;
+export const MIN_UPCOMING_TO_PROMOTE = 1;
+export const MAX_PAST_RATIO = 10;
 /**
  * Sources per batched listing-URL request, and how many of those requests run
  * at once. Smaller batches keep the model's attention per source; running
@@ -147,9 +147,9 @@ const MAX_PAST_RATIO = 10;
  */
 // flash-lite for the bulk batched discovery; the larger model is reserved for
 // the per-source second opinion, which is asked far less often.
-const DISCOVERY_MODEL = "gemini-3.1-flash-lite";
-const URL_BATCH_SIZE = 20;
-const URL_BATCH_CONCURRENCY = 4;
+export const DISCOVERY_MODEL = "gemini-3.1-flash-lite";
+export const URL_BATCH_SIZE = 20;
+export const URL_BATCH_CONCURRENCY = 4;
 /**
  * Sources probed at once.
  *
@@ -162,7 +162,7 @@ const URL_BATCH_CONCURRENCY = 4;
  * What this actually buys: a brisbane run is 427 hosts, and the long pole is
  * hosts that are slow or dead rather than anything compute-bound.
  */
-const CONCURRENT_HOSTS = Number(process.env.PROBE_CONCURRENT_HOSTS ?? 20);
+export const CONCURRENT_HOSTS = Number(process.env.PROBE_CONCURRENT_HOSTS ?? 20);
 /** Wall-clock ceiling per source. Generous — a source legitimately fetches a
  * sitemap tree plus several pages — but finite. */
 const SOURCE_TIMEOUT_MS = Number(
@@ -408,7 +408,7 @@ const LISTING_PATH =
 // sitemap which names the pages, so a real answer can be three hops down.
 const MAX_SITEMAP_FETCHES = 14;
 const MAX_SITEMAP_URLS = 8000;
-const MAX_SITEMAP_CANDIDATES = 5;
+export const MAX_SITEMAP_CANDIDATES = 5;
 /** Pages nested under a URL before it counts as that section's index. */
 const MIN_DESCENDANTS_FOR_INDEX = 15;
 

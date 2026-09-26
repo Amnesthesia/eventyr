@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Trivia Tuesdays
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1q6y8vl@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T183000
-DTEND;TZID=Australia/Brisbane:20260908T203000
+DTSTART;TZID=Australia/Sydney:20260908T183000
+DTEND;TZID=Australia/Sydney:20260908T203000
 SUMMARY:Trivia Tuesdays
 DESCRIPTION:Every Tuesday Free Entry Register 6.15pm Play 6.30pm Venue: Spo
  rts Lounge MC: Sean C Alternating with Mitch Prizes: 1st: $100 RSL Gift Ca

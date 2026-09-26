@@ -13,7 +13,7 @@ const PROMPT_CACHE_KEY = "eventyr-events-search";
  * uncapped agentic loop is an uncapped bill — this ran with no ceiling at all,
  * which is what made the provider look "too expensive to keep on".
  */
-const MAX_TOOL_CALLS = 4;
+export const MAX_TOOL_CALLS = 4;
 
 // gpt-5-mini by default; anything not gpt-5* goes through chat.completions
 // without web search (see searchEvents), e.g. OPENAI_SEARCH_MODEL=gpt-4.1-mini.

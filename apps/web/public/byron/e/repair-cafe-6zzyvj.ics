@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:REPAIR CAFE
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-6zzyvj@dothings
-DTSTART;TZID=Australia/Brisbane:20260909T133000
-DTEND;TZID=Australia/Brisbane:20260909T163000
+DTSTART;TZID=Australia/Sydney:20260909T133000
+DTEND;TZID=Australia/Sydney:20260909T163000
 SUMMARY:REPAIR CAFE
 DESCRIPTION:Drop in to The Repair Cafe on a Saturday between 1.30-4.30pm wi
  th your items to repair\, or to volunteer. Instead of throwing away a wobb

@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:DAN SULTAN (SOLO)
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1vs15ia@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T190000
-DTEND;TZID=Australia/Brisbane:20260913T210000
+DTSTART;TZID=Australia/Sydney:20260913T190000
+DTEND;TZID=Australia/Sydney:20260913T210000
 SUMMARY:DAN SULTAN (SOLO)
 DESCRIPTION:An intimate solo performance by renowned Australian artist Dan 
  Sultan at the historic Eltham Hotel.

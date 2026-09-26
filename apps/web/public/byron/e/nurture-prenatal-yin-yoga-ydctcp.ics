@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:NURTURE — Prenatal Yin Yoga
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-ydctcp@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T110000
-DTEND;TZID=Australia/Brisbane:20260913T130000
+DTSTART;TZID=Australia/Sydney:20260913T110000
+DTEND;TZID=Australia/Sydney:20260913T130000
 SUMMARY:NURTURE — Prenatal Yin Yoga
 DESCRIPTION:A grounded\, somatic-focused yoga session emphasizing gentle mo
  vement and breath\, avoiding commercial wellness trends.

@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Jason Delphin
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-7ukure@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T180000
-DTEND;TZID=Australia/Brisbane:20260908T203000
+DTSTART;TZID=Australia/Sydney:20260908T180000
+DTEND;TZID=Australia/Sydney:20260908T203000
 SUMMARY:Jason Delphin
 DESCRIPTION:
 LOCATION:Beach Hotel

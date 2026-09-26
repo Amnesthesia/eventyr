@@ -20,14 +20,14 @@ import { countDateHits } from "@dothingslol/scraper/parsers";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { splitIntoBatches } from "../providers/base.ts";
 
-const EXTRACT_MODEL = "gemini-3.1-flash-lite";
-const MAX_OUTPUT_TOKENS = 16000;
+export const EXTRACT_MODEL = "gemini-3.1-flash-lite";
+export const MAX_OUTPUT_TOKENS = 16000;
 /** Extraction calls per page — see the note in extractPage. */
-const MAX_BATCHES_PER_PAGE = 4;
+export const MAX_BATCHES_PER_PAGE = 4;
 /** Below this much page text, an empty extraction is plausible rather than suspicious. */
 const RETRY_MIN_TEXT = 2000;
 /** Concurrent extraction calls per page. */
-const MAX_CONCURRENT_CALLS = 3;
+export const MAX_CONCURRENT_CALLS = 3;
 
 const SYSTEM_PROMPT = `You are extracting structured event data from the text of one already-fetched web page. You have no ability to browse, search, or fetch anything else — work only from the text given to you.
 

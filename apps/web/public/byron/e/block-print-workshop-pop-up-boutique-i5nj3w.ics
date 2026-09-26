@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Block Print Workshop & Pop‑Up Boutique
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-i5nj3w@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T100000
-DTEND;TZID=Australia/Brisbane:20260912T120000
+DTSTART;TZID=Australia/Sydney:20260912T100000
+DTEND;TZID=Australia/Sydney:20260912T120000
 SUMMARY:Block Print Workshop & Pop‑Up Boutique
 DESCRIPTION:A practical workshop teaching traditional block printing techni
  ques in the community space of the Home Makers Club.

@@ -1,4 +1,3 @@
-import { SOURCES_ROOT } from "./paths.ts";
 // Build-time organizer lookup for the Astro pages.
 //
 // Deliberately not common.ts: its PROJECT_ROOT comes from import.meta.url,
@@ -10,6 +9,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { type OrganizerSource, organizerUrls } from "@dothingslol/core/shared";
 import yaml from "js-yaml";
+import { SOURCES_ROOT } from "./paths.ts";
 
 const cache = new Map<string, Map<string, string>>();
 

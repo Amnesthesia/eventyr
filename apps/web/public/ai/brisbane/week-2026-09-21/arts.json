@@ -1,5 +1,5 @@
 {
-  "data_as_of": "2026-09-20",
+  "data_as_of": "2026-09-24",
   "city": "Brisbane",
   "city_key": "brisbane",
   "timezone": "Australia/Brisbane",
@@ -29,6 +29,18 @@
       "free": true,
       "description": "REOPENING SOON — Ipswich Art Gallery currently hosts major works from the National Gallery of Australia’s collection.",
       "url": "https://www.dothings.lol/brisbane/e/sharing-the-national-collection-6la3a3/"
+    },
+    {
+      "id": "1mb0bdw",
+      "title": "Precious",
+      "start": "2025-04-07T00:00:00+10:00",
+      "end": "2027-04-02T00:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "What makes a collection? Museum of Brisbane is giving you the keys to some of the most awe-inspiring collections across our amazing city. An irresistible array of breathtaking curiosities, Precious…",
+      "url": "https://www.dothings.lol/brisbane/e/precious-1mb0bdw/"
     },
     {
       "id": "13flg1",
@@ -91,18 +103,6 @@
       "url": "https://www.dothings.lol/brisbane/e/croc-lost-giants-to-living-legends-f8lyjc/"
     },
     {
-      "id": "iehc1t",
-      "title": "Artist in Residence: Sachém Parkin-Owens",
-      "start": "2025-11-22T00:00:00+10:00",
-      "end": "2026-10-10T00:00:00+10:00",
-      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "Martin Edge is a Queensland artist whose playful works capture moments from his everyday life, including both real and imagined adventures. For his Artist in Residence project at Museum of Brisbane,…",
-      "url": "https://www.dothings.lol/brisbane/e/artist-in-residence-sachem-parkin-owens-iehc1t/"
-    },
-    {
       "id": "emzqbj",
       "title": "Stories You Wear: Magpie Goose",
       "start": "2025-11-22T00:00:00+10:00",
@@ -113,6 +113,18 @@
       "free": false,
       "description": "This exhibition Stories You Wear: Magpie Goose is a exhibition in collaborate with Magpie Goose, a proudly Aboriginal owned and led fashion and social enterprise, to celebrate extraordinary First…",
       "url": "https://www.dothings.lol/brisbane/e/stories-you-wear-magpie-goose-emzqbj/"
+    },
+    {
+      "id": "iehc1t",
+      "title": "Artist in Residence: Sachém Parkin-Owens",
+      "start": "2025-11-22T00:00:00+10:00",
+      "end": "2026-10-10T00:00:00+10:00",
+      "location": "Museum of Brisbane, King George Square (Brisbane City Hall)",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Martin Edge is a Queensland artist whose playful works capture moments from his everyday life, including both real and imagined adventures. For his Artist in Residence project at Museum of Brisbane,…",
+      "url": "https://www.dothings.lol/brisbane/e/artist-in-residence-sachem-parkin-owens-iehc1t/"
     },
     {
       "id": "1th1ngs",
@@ -175,18 +187,6 @@
       "url": "https://www.dothings.lol/brisbane/e/the-city-before-our-eyes-4smj8e/"
     },
     {
-      "id": "1etr8ok",
-      "title": "REDLAND ART AWARDS 2026",
-      "start": "2026-05-05T00:00:00+10:00",
-      "end": "2026-09-21T15:00:00+10:00",
-      "location": "Redland Art Gallery",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "The Redland Art Awards is a biennial contemporary painting competition. Entries are open to artists who are Australian citizens or permanent residents, who currently reside in Australia, and are aged…",
-      "url": "https://www.dothings.lol/brisbane/e/redland-art-awards-2026-1etr8ok/"
-    },
-    {
       "id": "b01jv6",
       "title": "Fragile and Forever: Ceramics from the Queensland Museum Collection",
       "start": "2026-05-29T09:30:00+10:00",
@@ -247,16 +247,16 @@
       "url": "https://www.dothings.lol/brisbane/e/elisa-jane-carmichael-elisa-jane-carmichael-be-longing-redcl-1rhrg2s/"
     },
     {
-      "id": "16pq2o2",
-      "title": "Outdoor Gallery: Portraiture in the Square",
+      "id": "jc2c4g",
+      "title": "Outdoor Gallery: Frazer Campbell exhibition ‘Portraiture in the Square’ at Town Square, Fish Lane Arts Precinct",
       "start": "2026-08-05T00:00:00+10:00",
-      "end": "2026-10-11T00:00:00+10:00",
-      "location": "Town Square, Fish Lane",
+      "end": "2026-10-12T00:00:00+10:00",
+      "location": "Brisbane City Council What's On",
       "category": "Arts / Exhibition",
       "price": 0,
       "free": true,
-      "description": "A curated outdoor public art display featuring diverse portraiture works located in the vibrant Fish Lane precinct.",
-      "url": "https://www.dothings.lol/brisbane/e/outdoor-gallery-portraiture-in-the-square-16pq2o2/"
+      "description": "‘Portrait in the Square’ by Frazer Campbell is a pop-up exhibition presented in partnership between Brisbane City Council’s Outdoor Gallery and Fish Lane Arts Precinct. It will be on display from 5…",
+      "url": "https://www.dothings.lol/brisbane/e/outdoor-gallery-frazer-campbell-exhibition-portraiture-in-th-jc2c4g/"
     },
     {
       "id": "kktx7",
@@ -343,30 +343,6 @@
       "url": "https://www.dothings.lol/brisbane/e/bright-nights-by-anz-nu8q2a/"
     },
     {
-      "id": "1plpd3l",
-      "title": "Verso Projects",
-      "start": "2026-09-04T00:00:00+10:00",
-      "end": "2026-09-26T00:00:00+10:00",
-      "location": "Festival Village, South Bank",
-      "category": "Arts / Exhibition",
-      "price": 0,
-      "free": true,
-      "description": "A series of creative and collaborative art projects housed within the Festival Village, offering an exploratory space for festival-goers.",
-      "url": "https://www.dothings.lol/brisbane/e/verso-projects-1plpd3l/"
-    },
-    {
-      "id": "baa9um",
-      "title": "Brisbane Festival",
-      "start": "2026-09-04T09:00:00+10:00",
-      "end": "2026-09-26T23:59:00+10:00",
-      "location": "Various locations across Brisbane",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "A multi-week city-wide arts festival featuring experimental theatre, live music, and contemporary performance pieces designed to push artistic boundaries.",
-      "url": "https://www.dothings.lol/brisbane/e/brisbane-festival-baa9um/"
-    },
-    {
       "id": "1p17q43",
       "title": "Julian Day: Please scream inside your heart",
       "start": "2026-09-04T10:00:00+10:00",
@@ -413,18 +389,6 @@
       "free": false,
       "description": "Explore space in Luna: A Journey to the Moon, a free-roam VR adventure blending history, education, and immersive fun. Get your tickets!",
       "url": "https://www.dothings.lol/brisbane/e/luna-a-journey-to-the-moon-6k4y55/"
-    },
-    {
-      "id": "1olihoq",
-      "title": "Dinos Alive: An Immersive Experience in Brisbane",
-      "start": "2026-09-09T09:00:00+10:00",
-      "end": "2026-09-30T00:00:00+10:00",
-      "location": "Fever Skygate | Exhibition and Immersive Experience centre",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "⭐ Dinos Alive is a dinosaur exhibition featuring life-size animated replicas in an immersive Jurassic venue. Walk alongside the massive creatures that roamed our world millions of years ago! 👉 For…",
-      "url": "https://www.dothings.lol/brisbane/e/dinos-alive-an-immersive-experience-in-brisbane-1olihoq/"
     },
     {
       "id": "c4jpaz",
@@ -547,18 +511,6 @@
       "url": "https://www.dothings.lol/brisbane/e/horizon-of-khufu-journey-in-ancient-egypt-1957zka/"
     },
     {
-      "id": "1nj3a8w",
-      "title": "Dinos Alive: An Immersive Experience in Brisbane",
-      "start": "2026-09-13T09:00:00+10:00",
-      "end": "2026-09-30T00:00:00+10:00",
-      "location": "Fever Skygate | Exhibition and Immersive Experience centre, 30-34 The Circuit, Skygate Home and Life Centre, Brisbane Airport",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "⭐ Dinos Alive is a dinosaur exhibition featuring life-size animated replicas in an immersive Jurassic venue. Walk alongside the massive creatures that roamed our world millions of years ago! 👉 For…",
-      "url": "https://www.dothings.lol/brisbane/e/dinos-alive-an-immersive-experience-in-brisbane-1nj3a8w/"
-    },
-    {
       "id": "1ka0d3l",
       "title": "St Ali Italian Film Festival 2026",
       "start": "2026-09-16T00:00:00+10:00",
@@ -581,6 +533,18 @@
       "free": false,
       "description": "Revisiting locations at different times of year, Geoffrey Burns approaches making as both a method and a measure of time. Works emerge through repeated encounters with place, where observation…",
       "url": "https://www.dothings.lol/brisbane/e/geoffrey-burns-ride-the-chronovore-1c36caa/"
+    },
+    {
+      "id": "1hk6798",
+      "title": "Priya Gore art display",
+      "start": "2026-09-17T00:00:00+10:00",
+      "end": "2026-12-19T00:00:00+10:00",
+      "location": "Boondall Wetlands Environment Centre, Boondall Wetlands Environment Centre, 31 Paperbark Drive (entry via Stanworth Rd), Boondall",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Enjoy the latest display by Brisbane artist Priya Gore, at Boondall Wetlands Environment Centre as part of the Community Art Wall. Priya Gore is a Brisbane-based artist. She finds that \" …Australian…",
+      "url": "https://www.dothings.lol/brisbane/e/priya-gore-art-display-1hk6798/"
     },
     {
       "id": "n39bkg",
@@ -691,40 +655,16 @@
       "url": "https://www.dothings.lol/brisbane/e/horizon-of-khufu-journey-in-ancient-egypt-12xb086/"
     },
     {
-      "id": "e82g3o",
-      "title": "Dinos Alive: An Immersive Experience in Brisbane",
-      "start": "2026-09-20T09:00:00+10:00",
-      "end": "2026-11-30T00:00:00+10:00",
-      "location": "Fever Skygate | Exhibition and Immersive Experience centre, 30-34 The Circuit, Skygate Home and Life Centre, Brisbane Airport",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "⭐ Dinos Alive is a dinosaur exhibition featuring life-size animated replicas in an immersive Jurassic venue. Walk alongside the massive creatures that roamed our world millions of years ago! 👉 For…",
-      "url": "https://www.dothings.lol/brisbane/e/dinos-alive-an-immersive-experience-in-brisbane-e82g3o/"
-    },
-    {
-      "id": "136vmm9",
-      "title": "ST. ALi Italian Film Festival Intro Session: Holy Cannoli",
-      "start": "2026-09-21T00:00:00+10:00",
-      "end": null,
-      "location": "Palace Cinemas Brisbane",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "",
-      "url": "https://www.dothings.lol/brisbane/e/st-ali-italian-film-festival-intro-session-holy-cannoli-136vmm9/"
-    },
-    {
-      "id": "1e631dg",
-      "title": "Artist in Residence: Renee Kire",
+      "id": "m10ibv",
+      "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
       "start": "2026-09-21T10:00:00+10:00",
-      "end": null,
-      "location": "Museum of Brisbane",
+      "end": "2027-04-18T17:00:00+10:00",
+      "location": "Gallery of Modern Art (GOMA), South Brisbane",
       "category": "Arts / Exhibition",
-      "price": 0,
-      "free": true,
-      "description": "Visit the artist in residence to observe the creative process firsthand and engage with contemporary art practice within the museum space.",
-      "url": "https://www.dothings.lol/brisbane/e/artist-in-residence-renee-kire-1e631dg/"
+      "price": 25,
+      "free": false,
+      "description": "An immersive exhibition exploring the creative legacy of Jim Henson, featuring original puppets, sketches, and behind-the-scenes insights into the craft of puppetry and design.",
+      "url": "https://www.dothings.lol/brisbane/e/make-believe-magic-the-worlds-of-the-jim-henson-company-m10ibv/"
     },
     {
       "id": "sjr1e",
@@ -739,40 +679,28 @@
       "url": "https://www.dothings.lol/brisbane/e/fragile-and-forever-ceramics-from-the-queensland-museum-coll-sjr1e/"
     },
     {
-      "id": "m10ibv",
-      "title": "Make, Believe, Magic: The Worlds of The Jim Henson Company",
-      "start": "2026-09-21T10:00:00+10:00",
-      "end": "2027-04-18T17:00:00+10:00",
-      "location": "Gallery of Modern Art (GOMA), South Brisbane",
+      "id": "7cy7sm",
+      "title": "Unfolding - An artists collective",
+      "start": "2026-09-23T00:00:00+10:00",
+      "end": "2026-10-07T00:00:00+10:00",
+      "location": "Richard Randall Art Studio, Toowong, Brisbane Botanic Gardens Mt Coot-tha, 152 Mount Coot-tha Road, Toowong",
       "category": "Arts / Exhibition",
-      "price": 25,
-      "free": false,
-      "description": "An immersive exhibition exploring the creative legacy of Jim Henson, featuring original puppets, sketches, and behind-the-scenes insights into the craft of puppetry and design.",
-      "url": "https://www.dothings.lol/brisbane/e/make-believe-magic-the-worlds-of-the-jim-henson-company-m10ibv/"
+      "price": 0,
+      "free": true,
+      "description": "Unfolding - 5 artists come together to share a love of creating in this brilliant exhibition including ceramics, textile art, wood craft and jewellery. Lots to see and buy - something beautiful for…",
+      "url": "https://www.dothings.lol/brisbane/e/unfolding-an-artists-collective-7cy7sm/"
     },
     {
-      "id": "wjvu2r",
-      "title": "Werewolf",
+      "id": "1tt8n8c",
+      "title": "Werewolf - Brisbane Festival",
       "start": "2026-09-23T00:00:00+10:00",
-      "end": null,
-      "location": "Brisbane Festival",
+      "end": "2026-09-26T00:00:00+10:00",
+      "location": "WeekendNotes Brisbane",
       "category": "Arts / Exhibition",
       "price": null,
       "free": false,
-      "description": "Attention: Multiple new occurrences confirmed. Healthy citizens report to safehouses by sunset.",
-      "url": "https://www.dothings.lol/brisbane/e/werewolf-wjvu2r/"
-    },
-    {
-      "id": "1svast3",
-      "title": "Community Choir: The Musical",
-      "start": "2026-09-23T00:00:00+10:00",
-      "end": null,
-      "location": "Brisbane Festival",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "A heartwarming and hilarious tale written by Emma Dean, directed by Belinda Raisin, and performed almost entirely by local community members — many stepping on stage for the very first time.",
-      "url": "https://www.dothings.lol/brisbane/e/community-choir-the-musical-1svast3/"
+      "description": "",
+      "url": "https://www.dothings.lol/brisbane/e/werewolf-brisbane-festival-1tt8n8c/"
     },
     {
       "id": "1smidl0",
@@ -785,42 +713,6 @@
       "free": false,
       "description": "[vc_row css=”.vc_custom_1523319263370{padding-top: 20px!important;padding-bottom: 30px!important;}”][vc_column][vc_separator color=”custom” border_width=”10″…",
       "url": "https://www.dothings.lol/brisbane/e/capturing-beauty-solo-show-by-carol-oh-1smidl0/"
-    },
-    {
-      "id": "1g0rghr",
-      "title": "Movie Club Preview: Heart of The Beast",
-      "start": "2026-09-23T00:00:00+10:00",
-      "end": null,
-      "location": "Palace Cinemas Brisbane",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "",
-      "url": "https://www.dothings.lol/brisbane/e/movie-club-preview-heart-of-the-beast-1g0rghr/"
-    },
-    {
-      "id": "1wm68zx",
-      "title": "Dinos Alive: An Immersive Experience - Birthday",
-      "start": "2026-09-23T09:30:00+10:00",
-      "end": "2026-10-22T00:00:00+10:00",
-      "location": "Fever Skygate | Exhibition and Immersive Experience centre, 30-34 The Circuit, Skygate Home and Life Centre, Brisbane Airport",
-      "category": "Arts / Exhibition",
-      "price": null,
-      "free": false,
-      "description": "⭐ Dinos Alive is a dinosaur exhibition featuring life-size animated replicas in an immersive Jurassic venue. Walk alongside the massive creatures that roamed our world millions of years ago! Tickets…",
-      "url": "https://www.dothings.lol/brisbane/e/dinos-alive-an-immersive-experience-birthday-1wm68zx/"
-    },
-    {
-      "id": "1s9h87k",
-      "title": "Unfolding - An artists collective",
-      "start": "2026-09-23T10:00:00+10:00",
-      "end": "2026-10-06T16:00:00+10:00",
-      "location": "Richard Randall Art Studio, Toowong",
-      "category": "Arts / Exhibition",
-      "price": 0,
-      "free": true,
-      "description": "A group exhibition by an artist collective exploring concepts of growth and change through various artistic mediums within the historic Richard Randall Studio.",
-      "url": "https://www.dothings.lol/brisbane/e/unfolding-an-artists-collective-1s9h87k/"
     },
     {
       "id": "1cwgobh",
@@ -859,16 +751,76 @@
       "url": "https://www.dothings.lol/brisbane/e/the-aboriginal-centre-for-performing-arts-community-showcase-1x8my5v/"
     },
     {
-      "id": "wyz8mb",
-      "title": "ST. ALi Italian Film Festival Opening Night Premiere: Holy Cannoli",
+      "id": "1iryky6",
+      "title": "Stories You Wear: Magpie Goose",
       "start": "2026-09-24T00:00:00+10:00",
+      "end": "2026-09-24T00:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Celebrating Country and Culture through the bold designs of Magpie Goose. Museum of Brisbane is excited to collaborate with Magpie Goose, a proudly Aboriginal owned and led fashion and social…",
+      "url": "https://www.dothings.lol/brisbane/e/stories-you-wear-magpie-goose-1iryky6/"
+    },
+    {
+      "id": "1r28jmp",
+      "title": "Brisbane Sculpture Festival 2026",
+      "start": "2026-09-24T08:00:00+10:00",
+      "end": "2026-09-24T17:00:00+10:00",
+      "location": "Brisbane Botanic Gardens Mt Coot-tha, Brisbane Botanic Gardens Mt Coot-tha, 152 Mt Coot-tha Road, Toowong",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Explore the captivating world of sculpture through Sculptors Queensland’s dynamic exhibitions, showcasing the mastery of local artists. Our curated displays unveil the diverse expressions of form,…",
+      "url": "https://www.dothings.lol/brisbane/e/brisbane-sculpture-festival-2026-1r28jmp/"
+    },
+    {
+      "id": "sit5b8",
+      "title": "Artist in Residence: Renee Kire",
+      "start": "2026-09-24T10:00:00+10:00",
+      "end": "2026-09-24T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Step inside an exciting new residency project that invites you to experience art in unexpected ways. Artist in Residence Renee Kire takes over Museum of Brisbane’s entryway, transforming these spaces…",
+      "url": "https://www.dothings.lol/brisbane/e/artist-in-residence-renee-kire-sit5b8/"
+    },
+    {
+      "id": "inlp5l",
+      "title": "Lord Mayor’s Photographic Awards 2026",
+      "start": "2026-09-24T10:00:00+10:00",
+      "end": "2026-09-24T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Brisbane through the lens of local photographers. The winners exhibition of the 2026 Lord Mayor’s Photographic Awards brings together striking photographic works that capture the city’s spirit - from…",
+      "url": "https://www.dothings.lol/brisbane/e/lord-mayor-s-photographic-awards-2026-inlp5l/"
+    },
+    {
+      "id": "1ywqo5q",
+      "title": "Warrajamba",
+      "start": "2026-09-24T10:00:00+10:00",
+      "end": "2026-09-24T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Follow the mermaid in the bay. Dive into story, culture and hands-on creativity with our latest Artist in Residence, Quandamooka artist Delvene Cockatoo-Collins. Journey alongside Delvene to the…",
+      "url": "https://www.dothings.lol/brisbane/e/warrajamba-1ywqo5q/"
+    },
+    {
+      "id": "ucqwjr",
+      "title": "Resident Evil (2002)",
+      "start": "2026-09-24T18:30:00+10:00",
       "end": null,
-      "location": "Palace Cinemas Brisbane",
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
       "category": "Arts / Exhibition",
       "price": null,
       "free": false,
-      "description": "",
-      "url": "https://www.dothings.lol/brisbane/e/st-ali-italian-film-festival-opening-night-premiere-holy-can-wyz8mb/"
+      "description": "Classic screening. New Farm Cinemas: Thu 24 September. Join us for a survival-horror video game adaptation double feature. Screening alongside Silent Hill (2006). Based on the popular video game,…",
+      "url": "https://www.dothings.lol/brisbane/e/resident-evil-2002-ucqwjr/"
     },
     {
       "id": "10ojh55",
@@ -883,28 +835,28 @@
       "url": "https://www.dothings.lol/brisbane/e/soiree-10ojh55/"
     },
     {
-      "id": "1eq7nn9",
-      "title": "WOLF by Circa",
-      "start": "2026-09-25T00:00:00+10:00",
+      "id": "1kkxbjv",
+      "title": "Silent Hill (2006)",
+      "start": "2026-09-24T20:40:00+10:00",
       "end": null,
-      "location": "Must Do Brisbane",
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
       "category": "Arts / Exhibition",
       "price": null,
       "free": false,
-      "description": "Get ready for a circus experience with serious bite as internationally acclaimed Circa brings WOLF to Redland Performing Arts Centre",
-      "url": "https://www.dothings.lol/brisbane/e/wolf-by-circa-1eq7nn9/"
+      "description": "Classic screening. New Farm Cinemas: Thu 24 September. Join us for a survival-horror video game adaptation double feature. Screening alongside Resident Evil (2002). Rose, a desperate mother, takes…",
+      "url": "https://www.dothings.lol/brisbane/e/silent-hill-2006-1kkxbjv/"
     },
     {
-      "id": "1n9durb",
-      "title": "Scott Breton",
-      "start": "2026-09-25T00:00:00+10:00",
-      "end": "2026-10-13T00:00:00+10:00",
-      "location": "Lethbridge Gallery",
+      "id": "1gjb5w3",
+      "title": "Teenage Sex and Death at Camp Miasma",
+      "start": "2026-09-24T20:45:00+10:00",
+      "end": null,
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
       "category": "Arts / Exhibition",
       "price": null,
       "free": false,
-      "description": "Brisbane-based figurative artist Scott Breton combines classical training with a uniquely contemporary vision to explore the living presence of figure, form and space in his work. With a practice…",
-      "url": "https://www.dothings.lol/brisbane/e/scott-breton-1n9durb/"
+      "description": "Festival screening. New Farm Cinemas. Direct from winning the Queer Palm at Cannes, Hannah Einbinder and Gillian Anderson electrify in this equally camp and bloody psychosexual thriller from queer…",
+      "url": "https://www.dothings.lol/brisbane/e/teenage-sex-and-death-at-camp-miasma-1gjb5w3/"
     },
     {
       "id": "1nmdrim",
@@ -919,6 +871,42 @@
       "url": "https://www.dothings.lol/brisbane/e/st-ali-italian-film-festival-intro-session-separate-beds-1nmdrim/"
     },
     {
+      "id": "1mxfl9",
+      "title": "Stories You Wear: Magpie Goose",
+      "start": "2026-09-25T00:00:00+10:00",
+      "end": "2026-09-25T00:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Celebrating Country and Culture through the bold designs of Magpie Goose. Museum of Brisbane is excited to collaborate with Magpie Goose, a proudly Aboriginal owned and led fashion and social…",
+      "url": "https://www.dothings.lol/brisbane/e/stories-you-wear-magpie-goose-1mxfl9/"
+    },
+    {
+      "id": "1n9durb",
+      "title": "Scott Breton",
+      "start": "2026-09-25T00:00:00+10:00",
+      "end": "2026-10-13T00:00:00+10:00",
+      "location": "Lethbridge Gallery",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Brisbane-based figurative artist Scott Breton combines classical training with a uniquely contemporary vision to explore the living presence of figure, form and space in his work. With a practice…",
+      "url": "https://www.dothings.lol/brisbane/e/scott-breton-1n9durb/"
+    },
+    {
+      "id": "1eq7nn9",
+      "title": "WOLF by Circa",
+      "start": "2026-09-25T00:00:00+10:00",
+      "end": null,
+      "location": "Must Do Brisbane",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Get ready for a circus experience with serious bite as internationally acclaimed Circa brings WOLF to Redland Performing Arts Centre",
+      "url": "https://www.dothings.lol/brisbane/e/wolf-by-circa-1eq7nn9/"
+    },
+    {
       "id": "7e0ifq",
       "title": "Movie Club Offer: THE GREAT ARCH",
       "start": "2026-09-25T00:00:00+10:00",
@@ -931,6 +919,18 @@
       "url": "https://www.dothings.lol/brisbane/e/movie-club-offer-the-great-arch-7e0ifq/"
     },
     {
+      "id": "osno3k",
+      "title": "Brisbane Sculpture Festival 2026",
+      "start": "2026-09-25T08:00:00+10:00",
+      "end": "2026-09-25T17:00:00+10:00",
+      "location": "Brisbane Botanic Gardens Mt Coot-tha, Brisbane Botanic Gardens Mt Coot-tha, 152 Mt Coot-tha Road, Toowong",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Explore the captivating world of sculpture through Sculptors Queensland’s dynamic exhibitions, showcasing the mastery of local artists. Our curated displays unveil the diverse expressions of form,…",
+      "url": "https://www.dothings.lol/brisbane/e/brisbane-sculpture-festival-2026-osno3k/"
+    },
+    {
       "id": "1x6q5cp",
       "title": "Low Sensory Viewing",
       "start": "2026-09-25T09:00:00+10:00",
@@ -941,6 +941,18 @@
       "free": false,
       "description": "Visit 'Make, Believe, Magic: The Worlds of the Jim Henson Company' in a quiet and relaxed atmosphere before opening hours. Suitable for Autistic visitors and visitors with sensory sensitivity or…",
       "url": "https://www.dothings.lol/brisbane/e/low-sensory-viewing-1x6q5cp/"
+    },
+    {
+      "id": "1ob1yxb",
+      "title": "Warrajamba",
+      "start": "2026-09-25T10:00:00+10:00",
+      "end": "2026-09-25T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Follow the mermaid in the bay. Dive into story, culture and hands-on creativity with our latest Artist in Residence, Quandamooka artist Delvene Cockatoo-Collins. Journey alongside Delvene to the…",
+      "url": "https://www.dothings.lol/brisbane/e/warrajamba-1ob1yxb/"
     },
     {
       "id": "ywbdoo",
@@ -991,16 +1003,40 @@
       "url": "https://www.dothings.lol/brisbane/e/island-haus-runway-2026-de9ksk/"
     },
     {
-      "id": "5uo11",
-      "title": "BOTANIC BY NIGHT: NIGHTGLOW",
+      "id": "8q6opd",
+      "title": "Botanic By Night: NightGlow",
       "start": "2026-09-25T18:30:00+10:00",
-      "end": "2026-10-10T00:00:00+10:00",
-      "location": "Brisbane Botanic Gardens at Mount Coot-tha",
+      "end": "2026-09-25T22:00:00+10:00",
+      "location": "Brisbane Botanic Gardens Mt Coot-tha, Brisbane Botanic Gardens Mt Coot-tha, 152 Mt Coot-tha Road, Toowong",
       "category": "Arts / Exhibition",
       "price": null,
       "free": false,
-      "description": "Experience the Brisbane Botanic Gardens at Mount Coot-tha in a totally new way during the September School Holidays, as Nightglow brings 11 massive light installations inspired by native Australian…",
-      "url": "https://www.dothings.lol/brisbane/e/botanic-by-night-nightglow-5uo11/"
+      "description": "Botanic By Night: NightGlow makes its Brisbane debut at Brisbane Botanic Gardens Mt Coot-tha from 25 September to 10 October, transforming the Gardens into a magical after-dark outdoor art…",
+      "url": "https://www.dothings.lol/brisbane/e/botanic-by-night-nightglow-8q6opd/"
+    },
+    {
+      "id": "p66ago",
+      "title": "Fallen Angels (1995)",
+      "start": "2026-09-25T19:00:00+10:00",
+      "end": null,
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Classic screening. New Farm Cinemas: Fri 25 September Lost souls reach out for human connection amidst the glimmering night world of Hong Kong in Wong Kar Wai’s hallucinatory, neon-soaked nocturne.…",
+      "url": "https://www.dothings.lol/brisbane/e/fallen-angels-1995-p66ago/"
+    },
+    {
+      "id": "92v461",
+      "title": "35mm The Blair Witch Project (1999)",
+      "start": "2026-09-25T19:00:00+10:00",
+      "end": null,
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "35mm Film · Classic screening. REAL FILM. REAL CINEMA. At Tower Cinemas, we keep 35mm film alive. In a world of digital projection and shrinking formats, celluloid is becoming rare, and we think that…",
+      "url": "https://www.dothings.lol/brisbane/e/35mm-the-blair-witch-project-1999-92v461/"
     },
     {
       "id": "1wbz5u9",
@@ -1015,6 +1051,30 @@
       "url": "https://www.dothings.lol/brisbane/e/comedy-allsorts-the-sit-down-comedy-club-1wbz5u9/"
     },
     {
+      "id": "8a55fq",
+      "title": "The Room",
+      "start": "2026-09-25T21:00:00+10:00",
+      "end": null,
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Classic screening. Last Friday of the month. Written, directed and starring Tommy Wiseau, The Room is like no other film you’ve seen. Johnny (Tommy Wiseau) seems to have it all- a beautiful fiancée,…",
+      "url": "https://www.dothings.lol/brisbane/e/the-room-8a55fq/"
+    },
+    {
+      "id": "jj0c7g",
+      "title": "Stories You Wear: Magpie Goose",
+      "start": "2026-09-26T00:00:00+10:00",
+      "end": "2026-09-26T00:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Celebrating Country and Culture through the bold designs of Magpie Goose. Museum of Brisbane is excited to collaborate with Magpie Goose, a proudly Aboriginal owned and led fashion and social…",
+      "url": "https://www.dothings.lol/brisbane/e/stories-you-wear-magpie-goose-jj0c7g/"
+    },
+    {
       "id": "1jrfi1p",
       "title": "GAPU GA RANGITHIRRI GA NGURRUTHIRRI GA the water is coming up, the water is going away",
       "start": "2026-09-26T00:00:00+10:00",
@@ -1025,6 +1085,54 @@
       "free": false,
       "description": "the water is coming up, the water is going away",
       "url": "https://www.dothings.lol/brisbane/e/gapu-ga-rangithirri-ga-ngurruthirri-ga-the-water-is-coming-u-1jrfi1p/"
+    },
+    {
+      "id": "1lk6ujj",
+      "title": "Brisbane Sculpture Festival 2026",
+      "start": "2026-09-26T08:00:00+10:00",
+      "end": "2026-09-26T17:00:00+10:00",
+      "location": "Brisbane Botanic Gardens Mt Coot-tha, Brisbane Botanic Gardens Mt Coot-tha, 152 Mt Coot-tha Road, Toowong",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Explore the captivating world of sculpture through Sculptors Queensland’s dynamic exhibitions, showcasing the mastery of local artists. Our curated displays unveil the diverse expressions of form,…",
+      "url": "https://www.dothings.lol/brisbane/e/brisbane-sculpture-festival-2026-1lk6ujj/"
+    },
+    {
+      "id": "7bfque",
+      "title": "Artist in Residence: Renee Kire",
+      "start": "2026-09-26T10:00:00+10:00",
+      "end": "2026-09-26T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Step inside an exciting new residency project that invites you to experience art in unexpected ways. Artist in Residence Renee Kire takes over Museum of Brisbane’s entryway, transforming these spaces…",
+      "url": "https://www.dothings.lol/brisbane/e/artist-in-residence-renee-kire-7bfque/"
+    },
+    {
+      "id": "1whccnv",
+      "title": "Lord Mayor’s Photographic Awards 2026",
+      "start": "2026-09-26T10:00:00+10:00",
+      "end": "2026-09-26T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Brisbane through the lens of local photographers. The winners exhibition of the 2026 Lord Mayor’s Photographic Awards brings together striking photographic works that capture the city’s spirit - from…",
+      "url": "https://www.dothings.lol/brisbane/e/lord-mayor-s-photographic-awards-2026-1whccnv/"
+    },
+    {
+      "id": "1dpd9ow",
+      "title": "Warrajamba",
+      "start": "2026-09-26T10:00:00+10:00",
+      "end": "2026-09-26T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Follow the mermaid in the bay. Dive into story, culture and hands-on creativity with our latest Artist in Residence, Quandamooka artist Delvene Cockatoo-Collins. Journey alongside Delvene to the…",
+      "url": "https://www.dothings.lol/brisbane/e/warrajamba-1dpd9ow/"
     },
     {
       "id": "1jdydgk",
@@ -1051,6 +1159,54 @@
       "url": "https://www.dothings.lol/brisbane/e/italian-film-at-palace-barracks-the-greater-good-19ir6xu/"
     },
     {
+      "id": "15hpv5c",
+      "title": "Botanic By Night: NightGlow",
+      "start": "2026-09-26T18:30:00+10:00",
+      "end": "2026-09-26T22:00:00+10:00",
+      "location": "Brisbane Botanic Gardens Mt Coot-tha, Brisbane Botanic Gardens Mt Coot-tha, 152 Mt Coot-tha Road, Toowong",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Botanic By Night: NightGlow makes its Brisbane debut at Brisbane Botanic Gardens Mt Coot-tha from 25 September to 10 October, transforming the Gardens into a magical after-dark outdoor art…",
+      "url": "https://www.dothings.lol/brisbane/e/botanic-by-night-nightglow-15hpv5c/"
+    },
+    {
+      "id": "1lz04to",
+      "title": "GoodFellas (1990)",
+      "start": "2026-09-26T19:00:00+10:00",
+      "end": null,
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Classic screening. New Farm Cinemas: Sat 26 September. The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the…",
+      "url": "https://www.dothings.lol/brisbane/e/goodfellas-1990-1lz04to/"
+    },
+    {
+      "id": "1tteaos",
+      "title": "Chinatown (1974)",
+      "start": "2026-09-26T19:30:00+10:00",
+      "end": null,
+      "location": "Regal Twin Cinema, 381 Honour Ave, Graceville",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Classic screening. Regal Graceville: Sat 26 September. New Farm Cinemas: Sun 27 September. In this seminal noir from 1975, Jack Nicholson is unforgettable as private eye Jake Gittes, living off the…",
+      "url": "https://www.dothings.lol/brisbane/e/chinatown-1974-1tteaos/"
+    },
+    {
+      "id": "11f38tn",
+      "title": "Stories You Wear: Magpie Goose",
+      "start": "2026-09-27T00:00:00+10:00",
+      "end": "2026-09-27T00:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Celebrating Country and Culture through the bold designs of Magpie Goose. Museum of Brisbane is excited to collaborate with Magpie Goose, a proudly Aboriginal owned and led fashion and social…",
+      "url": "https://www.dothings.lol/brisbane/e/stories-you-wear-magpie-goose-11f38tn/"
+    },
+    {
       "id": "19o0jvh",
       "title": "Laika Studios Double Features",
       "start": "2026-09-27T00:00:00+10:00",
@@ -1063,16 +1219,40 @@
       "url": "https://www.dothings.lol/brisbane/e/laika-studios-double-features-19o0jvh/"
     },
     {
-      "id": "jss5fh",
-      "title": "Brisbane Sculpture Festival 2026",
-      "start": "2026-09-27T08:00:00+10:00",
-      "end": null,
-      "location": "Brisbane Botanic Gardens Mt Coot-tha",
+      "id": "1vqv3l3",
+      "title": "Artist in Residence: Renee Kire",
+      "start": "2026-09-27T10:00:00+10:00",
+      "end": "2026-09-27T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
       "category": "Arts / Exhibition",
       "price": 0,
       "free": true,
-      "description": "An outdoor exhibition featuring large-scale sculptural works integrated into the natural environment of the Botanic Gardens.",
-      "url": "https://www.dothings.lol/brisbane/e/brisbane-sculpture-festival-2026-jss5fh/"
+      "description": "Step inside an exciting new residency project that invites you to experience art in unexpected ways. Artist in Residence Renee Kire takes over Museum of Brisbane’s entryway, transforming these spaces…",
+      "url": "https://www.dothings.lol/brisbane/e/artist-in-residence-renee-kire-1vqv3l3/"
+    },
+    {
+      "id": "1lvnnfg",
+      "title": "Lord Mayor’s Photographic Awards 2026",
+      "start": "2026-09-27T10:00:00+10:00",
+      "end": "2026-09-27T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Brisbane through the lens of local photographers. The winners exhibition of the 2026 Lord Mayor’s Photographic Awards brings together striking photographic works that capture the city’s spirit - from…",
+      "url": "https://www.dothings.lol/brisbane/e/lord-mayor-s-photographic-awards-2026-1lvnnfg/"
+    },
+    {
+      "id": "133okgh",
+      "title": "Warrajamba",
+      "start": "2026-09-27T10:00:00+10:00",
+      "end": "2026-09-27T17:00:00+10:00",
+      "location": "Museum of Brisbane, Brisbane City, Museum of Brisbane, Brisbane City Hall, 64 Adelaide Street, Brisbane City",
+      "category": "Arts / Exhibition",
+      "price": 0,
+      "free": true,
+      "description": "Follow the mermaid in the bay. Dive into story, culture and hands-on creativity with our latest Artist in Residence, Quandamooka artist Delvene Cockatoo-Collins. Journey alongside Delvene to the…",
+      "url": "https://www.dothings.lol/brisbane/e/warrajamba-133okgh/"
     },
     {
       "id": "1rzdvna",
@@ -1085,6 +1265,54 @@
       "free": false,
       "description": "Hey meditators! Let's enjoy some nature and sunshine (or shade) together ☀️ ☘️ Bring - artie stuff e.g. drawing, painting, crafting,. - blankets, p",
       "url": "https://www.dothings.lol/brisbane/e/art-in-the-park-1rzdvna/"
+    },
+    {
+      "id": "6myxq2",
+      "title": "Chinatown (1974)",
+      "start": "2026-09-27T14:10:00+10:00",
+      "end": null,
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Classic screening. Regal Graceville: Sat 26 September. New Farm Cinemas: Sun 27 September. In this seminal noir from 1975, Jack Nicholson is unforgettable as private eye Jake Gittes, living off the…",
+      "url": "https://www.dothings.lol/brisbane/e/chinatown-1974-6myxq2/"
+    },
+    {
+      "id": "xz0km1",
+      "title": "Star Trek: The Motion Picture - Director's Cut",
+      "start": "2026-09-27T17:00:00+10:00",
+      "end": null,
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Classic screening. New Farm Cinemas, Regal Graceville & Tower Cinemas Newcastle Additional language: Klingon. 60th Anniversary Event! Don't miss this rare opportunity to see the original STAR TREK…",
+      "url": "https://www.dothings.lol/brisbane/e/star-trek-the-motion-picture-director-s-cut-xz0km1/"
+    },
+    {
+      "id": "384zm7",
+      "title": "Botanic By Night: NightGlow",
+      "start": "2026-09-27T18:30:00+10:00",
+      "end": "2026-09-27T22:00:00+10:00",
+      "location": "Brisbane Botanic Gardens Mt Coot-tha, Brisbane Botanic Gardens Mt Coot-tha, 152 Mt Coot-tha Road, Toowong",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Botanic By Night: NightGlow makes its Brisbane debut at Brisbane Botanic Gardens Mt Coot-tha from 25 September to 10 October, transforming the Gardens into a magical after-dark outdoor art…",
+      "url": "https://www.dothings.lol/brisbane/e/botanic-by-night-nightglow-384zm7/"
+    },
+    {
+      "id": "196kilw",
+      "title": "Teenage Sex and Death at Camp Miasma",
+      "start": "2026-09-27T21:00:00+10:00",
+      "end": null,
+      "location": "New Farm Cinemas, 701 Brunswick St, New Farm",
+      "category": "Arts / Exhibition",
+      "price": null,
+      "free": false,
+      "description": "Festival screening. New Farm Cinemas. Direct from winning the Queer Palm at Cannes, Hannah Einbinder and Gillian Anderson electrify in this equally camp and bloody psychosexual thriller from queer…",
+      "url": "https://www.dothings.lol/brisbane/e/teenage-sex-and-death-at-camp-miasma-196kilw/"
     }
   ]
 }

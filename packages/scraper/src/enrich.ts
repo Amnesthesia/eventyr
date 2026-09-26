@@ -45,11 +45,11 @@ import type { CandidateEvent, Fetcher } from "./types.ts";
 
 /** Detail pages fetched at once. The fetcher applies its own per-host limit;
  * this only bounds how much of the queue is in flight. */
-const CONCURRENCY = 4;
+export const CONCURRENCY = 4;
 /** Per source, so one listing with 200 thin rows cannot open 200 fetches.
  * Only in-window candidates reach this pass (collect.ts filters first), and
  * Brisbane Festival alone has 122 of those, so 80 left its tail unattempted. */
-const MAX_FETCHES_PER_SOURCE = 150;
+export const MAX_FETCHES_PER_SOURCE = 150;
 
 /**
  * Below this, a description is a card's category badge ("Experiences", "Dance

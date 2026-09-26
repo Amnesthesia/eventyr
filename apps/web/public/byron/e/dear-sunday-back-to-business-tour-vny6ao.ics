@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Dear Sunday ‘Back To Business’ Tour
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-vny6ao@dothings
-DTSTART;TZID=Australia/Brisbane:20260910T180000
-DTEND;TZID=Australia/Brisbane:20260910T200000
+DTSTART;TZID=Australia/Sydney:20260910T180000
+DTEND;TZID=Australia/Sydney:20260910T200000
 SUMMARY:Dear Sunday ‘Back To Business’ Tour
 DESCRIPTION:An intimate gig featuring indie band Dear Sunday\, set within t
  he lush\, laid-back environment of the Arts Factory gardens.

@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Ben Whiting
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1k5hve3@dothings
-DTSTART;TZID=Australia/Brisbane:20260917T180000
-DTEND;TZID=Australia/Brisbane:20260917T203000
+DTSTART;TZID=Australia/Sydney:20260917T180000
+DTEND;TZID=Australia/Sydney:20260917T203000
 SUMMARY:Ben Whiting
 DESCRIPTION:BEN WHITING | Hotel Brunswick | Thursday 17 September 6pm An al
  luring voice with rock beneath the surface Ben Whiting is a seasoned singe

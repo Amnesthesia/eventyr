@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Morning Melodies with Tommy Memphis
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1ulxi4g@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T100000
-DTEND;TZID=Australia/Brisbane:20260911T113000
+DTSTART;TZID=Australia/Sydney:20260911T100000
+DTEND;TZID=Australia/Sydney:20260911T113000
 SUMMARY:Morning Melodies with Tommy Memphis
 DESCRIPTION:Friday 11 September Doors: 9.30am Show: 10.00 - 11.30am Tickets
   $20 We are excited to introduce the popular Tommy Memphis to Ballina RSL 

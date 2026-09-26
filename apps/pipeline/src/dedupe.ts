@@ -40,7 +40,7 @@ import {
 /** Above this, common.ts already treats the titles as the same event. */
 const AUTO_MATCH = 0.85;
 /** Below this, same-day titles are unrelated often enough that asking is waste. */
-const MAYBE_MIN = 0.45;
+export const MAYBE_MIN = 0.45;
 /** Pairs per LLM call. */
 export const PAIR_BATCH_SIZE = 30;
 /**
@@ -52,7 +52,7 @@ export const PAIR_BATCH_SIZE = 30;
  * per call this ceiling is ~66 small calls — still bounded, and the cap now
  * warns when it bites rather than silently dropping comparisons.
  */
-const MAX_PAIRS = 3000;
+export const MAX_PAIRS = 3000;
 
 export interface CandidatePair {
 	a: Record<string, unknown>;

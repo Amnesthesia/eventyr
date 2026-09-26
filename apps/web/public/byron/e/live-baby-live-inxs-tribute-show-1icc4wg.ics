@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:LIVE BABY LIVE | INXS TRIBUTE SHOW
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1icc4wg@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T180000
-DTEND;TZID=Australia/Brisbane:20260911T220000
+DTSTART;TZID=Australia/Sydney:20260911T180000
+DTEND;TZID=Australia/Sydney:20260911T220000
 SUMMARY:LIVE BABY LIVE | INXS TRIBUTE SHOW
 DESCRIPTION:HURRY NOW to secure your ticket to party with Australia’s mos
  t celebrated & exciting tribute to the legendary kings of rock ‘n’ rol

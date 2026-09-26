@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Brunswick Heads Public School presents Beachside Boogie
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-zftp5t@dothings
-DTSTART;TZID=Australia/Brisbane:20260915T123000
-DTEND;TZID=Australia/Brisbane:20260915T143000
+DTSTART;TZID=Australia/Sydney:20260915T123000
+DTEND;TZID=Australia/Sydney:20260915T143000
 SUMMARY:Brunswick Heads Public School presents Beachside Boogie
 DESCRIPTION:Brand new musical from BH Public School! Dive into Brunswick He
  ads Public school’s latest family musical\, Beachside Boogie\, an unforg

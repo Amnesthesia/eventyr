@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Evening Life Drawing Byron
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-avbkez@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T183000
-DTEND;TZID=Australia/Brisbane:20260908T203000
+DTSTART;TZID=Australia/Sydney:20260908T183000
+DTEND;TZID=Australia/Sydney:20260908T203000
 SUMMARY:Evening Life Drawing Byron
 DESCRIPTION:A casual\, untutored life drawing session with some materials p
  rovided. Life drawing Byron is held every Tuesday night with a different m

@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Morning Life Drawing Byron
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-163q3j3@dothings
-DTSTART;TZID=Australia/Brisbane:20260916T100000
-DTEND;TZID=Australia/Brisbane:20260916T120000
+DTSTART;TZID=Australia/Sydney:20260916T100000
+DTEND;TZID=Australia/Sydney:20260916T120000
 SUMMARY:Morning Life Drawing Byron
 DESCRIPTION:A casual\, untutored life drawing session with some materials p
  rovided. Life drawing Byron is held every Wednesday Morning with a differe

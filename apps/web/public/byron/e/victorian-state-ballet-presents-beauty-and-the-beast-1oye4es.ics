@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Victorian State Ballet presents Beauty and The Beast
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1oye4es@dothings
-DTSTART;TZID=Australia/Brisbane:20260911T133000
-DTEND;TZID=Australia/Brisbane:20260911T153000
+DTSTART;TZID=Australia/Sydney:20260911T133000
+DTEND;TZID=Australia/Sydney:20260911T153000
 SUMMARY:Victorian State Ballet presents Beauty and The Beast
 DESCRIPTION:Featuring internationally recognised artists in leading roles i
  n a rich display of outstanding skill! One of the world’s most loved fai

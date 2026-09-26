@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:NO CIGAR | Aussie Tour with special guests
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-r9tkt1@dothings
-DTSTART;TZID=Australia/Brisbane:20260912T200000
-DTEND;TZID=Australia/Brisbane:20260912T220000
+DTSTART;TZID=Australia/Sydney:20260912T200000
+DTEND;TZID=Australia/Sydney:20260912T220000
 SUMMARY:NO CIGAR | Aussie Tour with special guests
 DESCRIPTION:An evening of live indie-rock at The Northern\, a classic Byron
   live music pub known for hosting touring acts.

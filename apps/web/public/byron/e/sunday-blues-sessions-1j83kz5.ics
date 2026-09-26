@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Sunday Blues Sessions
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1j83kz5@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T143000
-DTEND;TZID=Australia/Brisbane:20260913T173000
+DTSTART;TZID=Australia/Sydney:20260913T143000
+DTEND;TZID=Australia/Sydney:20260913T173000
 SUMMARY:Sunday Blues Sessions
 DESCRIPTION:Every Sunday 2.30pm – 5.30pm SEPTEMBER 13 - Keeping North 20 
  - Mojo Webb Happy Hours 2.30pm – 5.30pm $12 Cocktails - Skrewball Espres

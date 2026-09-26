@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Solace Sunday Session
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-7938kc@dothings
-DTSTART;TZID=Australia/Brisbane:20260913T150000
-DTEND;TZID=Australia/Brisbane:20260913T170000
+DTSTART;TZID=Australia/Sydney:20260913T150000
+DTEND;TZID=Australia/Sydney:20260913T170000
 SUMMARY:Solace Sunday Session
 DESCRIPTION:Dance your way into the long weekend with our Solace Sunday Ses
  sion happening this Sunday from 3pm until late.Deep and minimal house from

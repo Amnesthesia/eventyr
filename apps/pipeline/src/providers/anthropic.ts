@@ -26,7 +26,7 @@ const SEARCH_MODEL = searchModel(
  * searches — about $0.06 per search on Sonnet 5, and nothing else in the call
  * comes close. Anthropic's own guidance is 1–3 searches for lookups like this.
  */
-const MAX_WEB_SEARCHES = 3;
+export const MAX_WEB_SEARCHES = 3;
 
 export class AnthropicProvider extends BaseProvider {
 	readonly name = "anthropic";

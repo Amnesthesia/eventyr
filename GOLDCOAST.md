@@ -52,7 +52,7 @@ An evening of live indie rock performances hosted at Dust Temple, a creative hub
 📆 Sat 15 Aug – Sun 11 Oct
 📍 Destination Gold Coast
 💰 See link
-`art` `exhibition` `gallery` `ceramics`
+`art` `exhibition` `gallery` `ceramics` `craft`
 
 This Moment: Highlights from the White Rabbit Collection of Chinese Contemporary ArtImage Credit: Kung Wen-Yi 鞏文宜, RX78-2 2015, ceramic. White Rabbit Collect...
 
@@ -172,7 +172,7 @@ Join us for the world premiere of Ocker, a show in motion from leading First Nat
 📆 Thu 11 Jun, 11:30 AM – Sat 10 Oct
 📍 Palette Restaurant
 💰 See link
-`art` `tour` `dining` `culture`
+`art` `tour` `dining` `culture` `food`
 
 Enjoy the This Moment: Highlights from the White Rabbit Collection of Chinese Contemporary Art guided tour, followed by 2-course lunch with a glass of wine at P
 
@@ -236,7 +236,7 @@ On the first Saturday of every month between 9am-10am we offer Quiet Hour in HOT
 📆 Thu 11 Jun, 11:30 AM – Sun 11 Oct
 📍 Level 5 · The Exhibitionist Bar
 💰 See link
-`art` `tour` `cocktails` `culture`
+`art` `tour` `cocktails` `culture` `drinks`
 
 Enjoy the This Moment: Highlights from the White Rabbit Collection of Chinese Contemporary Art guided tour, followed by Pizza, Alcoholic Spritz and 360 views at
 
@@ -280,7 +280,7 @@ Tickets 🎫 Ticket for 1 adult (ages 16+) Highlights 🖼️ Users with a range
 📆 Sun 20 Sep, 6:30 PM
 📍 Atrium Bar
 💰 See link
-`comedy` `standup` `nightlife`
+`comedy` `standup` `nightlife` `performance`
 
 Fill your night with laughter at Atrium Bar’s Comedy Club, presented by Based Comedy and hosted by local radio personality Danny Lakey! Enjoy a new line up of local and national comedians every week, and settle into one of our comfy bean bags for a night full of fun and food. Reserve space for your group at the link.
 
@@ -360,7 +360,7 @@ Bleach Festival returns for 11 days of live music, visual art, storytelling and 
 📆 Wed 9 Sep 2026 – Sat 6 Mar 2027
 📍 Multiple locations
 💰 From $35.00
-`nature` `hiking` `outdoor` `wildlife`
+`nature` `hiking` `outdoor` `wildlife` `walking`
 
 Premium Springbrook Natural Bridge, Glow Worm Cave & Skywalk in Brisbane. Get your tickets on Fever now!
 
@@ -368,7 +368,7 @@ Premium Springbrook Natural Bridge, Glow Worm Cave & Skywalk in Brisbane. Get yo
 📆 Sun 13 Sep 2026, 7:30 PM – Sat 30 Jan 2027
 📍 Fever Gold Coast, Brisbane
 💰 From $34.00
-`history` `tour` `walking`
+`history` `tour` `walking` `outdoor`
 
 Highlights 🌃 Peel back the glamour of modern Brisbane to reveal a brutal and bloody history 🕵️‍♂️ Retrace the steps of the city’s most infamous brawlers, fraudsters, and outlaws 🚶‍♂️ Explore historic buildings and hidden alleyways where dark secrets still linger 😱 Hear jaw-dropping true stories of love triangles gone wrong and lawless underworlds General Info 📅 Date & Time: choose date and time directly in ticket selector 📍 Location: Meets at the front entrance of the Brisbane City Hall in King George Square 👤 Age: Recommended for mature audiences ⏳ Duration: approx. 1.5 hours ❓ Weather Policy: Tours run in most conditions. Dark Stories will contact you via SMS/Email at least 90 minutes before start time if weather impacts the tour. Description Don’t let the bright lights of "Bris-Vegas" fool you. Beneath the bustling city streets lies a dark past that the city tried to forget. Join us for a leisurely guided walking tour that transports you back to a seemingly lawless world of crime and intrigue. From notorious historical figures to the criminal underbelly that once plagued the city, this investigation uncovers the secrets hiding behind every historic facade. Forget what you think you know about Brisbane and prepare for a trip down a memory lane you never knew existed. Get your tickets for Brisbane’s True Crime Tour and take a walk on the dark side!
 
@@ -400,7 +400,7 @@ North Stradbroke Island SUNSET Tour in Brisbane. Get your tickets on Fever now!
 📆 Tue 15 Sep 2026 – Thu 11 Mar 2027
 📍 Fever Gold Coast, Brisbane
 💰 From $38.00
-`history` `tour` `walking`
+`history` `tour` `walking` `outdoor`
 
 Haunted Brisbane CBD Ghost Tour in Brisbane. Get your tickets on Fever now!
 
@@ -416,7 +416,7 @@ Premium Springbrook Natural Bridge, Glow Worm Cave & Skywalk in Brisbane. Get yo
 📆 Sat 19 Sep 2026, 4:30 PM – Sat 3 Apr 2027
 📍 Fever Gold Coast, Brisbane
 💰 From $25.00
-`history` `tour` `walking`
+`history` `tour` `walking` `outdoor`
 
 Tickets for Vice City - Fortitude Valley True Crime Tour in Brisbane 🎫 Walking Tour Ticket for 1 Adult (18+) 🎫 Walking Tour Ticket for 1 Child (0–17) Highlights 🚶 A true crime guided walking tour of Brisbane’s Fortitude Valley and its infamous past 🤫 Revisit locations for underworld activity from the 70s and 80s red light district 🔎 Uncover the tales of corruption, glitz and glamour General Info 📅 Date: various Saturdays (select during purchase) 🕒 Time: 4.30 pm ⏳ Duration: 90–100 minutes 📍 Meeting point: Meet at the corner of Church St & Wickham St, next to the Holy Trinity Church. 👤 Age requirement: all ages welcome ♿ Accessibility: this event is wheelchair accessible. Although the regular route could be slightly altered in order to accommodate (it may take an extra 5-10 minutes to complete). 📱 Please see your Fever ticket & confirmation email for all essential post-purchase information Description Travel to the Fortitude Valley, a rough and tumble place where the lights of Fortitude Valley shone the brightest during its most corrupt era. Forget the fake news stories, and join your tour guide for a memorable trip down the glamourous, glitzy and corruption-laden past. Visit the headquarters of the Underworld Kingpins of the 1980s and experience a taste of the findings from the infamous Fitzgerald Inquiry. Get your tickets now for Vice City - Fortitude Valley True Crime Tour in Brisbane!
 
@@ -456,7 +456,7 @@ An educational guided tour through the botanic gardens focusing on local wildlif
 📆 Sat 26 Sep 2026 – Sat 27 Feb 2027
 📍 Fever Gold Coast, Brisbane
 💰 From $25.00
-`history` `tour` `walking`
+`history` `tour` `walking` `outdoor`
 
 📱 Smartphone tickets ⚡ Instant access to your tickets ⏳ Duration: up to 2 hours 👉 Available in English Dive into the spine-tingling tales of Ipswich Cemetery on a 1.5-hour adventure that's older than Queensland itself! From chilling stories of being Buried Three Times to eerie encounters with the "Headless Angel," get ready to explore Australia's most ghostly graveyard. Led by the legendary haunted-historian Jack Sim, prepare to uncover mysteries like never before - think black magic, unspeakable crimes, and ghostly children leaving their mark. Get your tickets for Goodna Cemetery Haunted History Tour! Highlights 👻 Explore one of Australia's most haunted graveyards. 🕯 Hear chilling tales of black magic and a terrible crime. 👼 Encounter the eerie mystery of the "Headless Angel." What's included? ✔️ A contribution to the Ghost Tours’ Heritage Fund, supporting local heritage initiatives. ✔️ GST (Goods and Services Tax) included for your convenience. ✔️ A 2-hour guided historic ghost walking tour led by an experienced guide, immersing you in chilling tales and mysteries. Additional Information 🐕 Service animals are welcome. 🚫 This experience is not recommended for travelers with spinal injuries, pregnant guests, or those with poor cardiovascular health. 🏋️‍♂️ A moderate level of physical fitness is required for all travelers. 💉 All travelers must be fully vaccinated to participate, unless exempt or under 16. Proof of vaccination or exemption is required at check-in, or entry will be refused without a refund. 👟 Guests must wear flat-soled, enclosed shoes. Thongs, sandals, or high heels will result in declined entry with no refund. 🔦 Each guest must bring their own torch; smartphone torch apps are acceptable. Why choose Fever? ✔️ Millions of users book every month. ✔️ The best prices and availability at all times. ✔️ Thousands of unique experiences. ✔️ Verified user reviews. ✔️ 24/7 customer service. Experience supplied by Historic Australia All ticket sales are final and cannot be refunded, exchanged, or otherwise modified. Click here to check out the T&Cs .
 
@@ -480,7 +480,7 @@ Swim with Whales Gold Coast in Gold Coast. Get your tickets on Fever now!
 📆 Thu 10 Sep – Wed 30 Dec
 📍 139-151 Chinderah Bay Dr
 💰 From $169.00
-`snorkeling` `turtles` `wildlife` `water`
+`snorkeling` `turtles` `wildlife` `water` `nature` `outdoor`
 
 Snorkel with Turtles Gold Coast in Gold Coast. Get your tickets on Fever now!
 
@@ -640,7 +640,7 @@ Tickets 🎫 Ticket for one adult (ages 14+) General Information 📅 Dates and 
 📆 Thu 10 Sep – Sat 19 Dec
 📍 Seaworld Drive Boatramp
 💰 From $189.00
-`sailing` `sunset` `cruise`
+`sailing` `sunset` `cruise` `outdoor`
 
 📱 Smartphone tickets ⚡ Instant access to your tickets ⏳ Duration: up to 2 hours 👉 Available in English Hop aboard our cozy 38ft yacht, limited to just 10 adventurers, for an unforgettable sunset sail. Toast with sparkling wine, water, or beer as the sun dips behind the Gold Coast hinterland, painting the sky in dazzling colors. Enjoy the sun's shimmer on the water and the breathtaking hues of its descent during our 2-hour journey. It's an experience you won't want to miss. Get your tickets for Sunset Sailing Cruise includes snacks & drinks! Highlights 🌅 Intimate sunset cruises with a stunning Gold Coast backdrop. 🍹 Sip sparkling wine or beer while soaking in breathtaking views. 🐬 Spot dolphins and sea turtles during a magical 2-hour journey. What's included? ✔️ An individual plate of snacks featuring Cheese and biscuits, fruit, and a sweet surprise. ✔️ Enjoy 2 glasses of your choice of sparkling wine/water or beer included in our cruise. Additional Information 🐾 Service animals are welcome to accompany their owners. 🚆 Nearby public transportation options make this experience easily accessible. 🏋️ This experience is suitable for guests of all physical fitness levels. Why choose Fever? ✔️ Millions of users book every month. ✔️ The best prices and availability at all times. ✔️ Thousands of unique experiences. ✔️ Verified user reviews. ✔️ 24/7 customer service. Experience supplied by Sun Sailing Gold Coast All ticket sales are final and cannot be refunded, exchanged, or otherwise modified. Click here to check out the T&Cs .
 
@@ -776,7 +776,7 @@ Gold Coast Boat Hire Self-Drive with No License Required in Gold Coast. Get your
 📆 Wed 9 Sep 2026 – Sun 7 Mar 2027
 📍 Multiple locations
 💰 From $159.00
-`beer` `tour`
+`beer` `tour` `drinks`
 
 Half Day Gold Coast Brewery Tour in Brisbane. Get your tickets on Fever now!
 
@@ -800,7 +800,7 @@ Half Day Gold Coast Brewery Tour in Brisbane. Get your tickets on Fever now!
 📆 Thu 10 Sep 2026 – Sun 31 Jan 2027
 📍 Seaworld Drive Boatramp
 💰 From $549.00
-`sailing` `private` `cruise` `romantic`
+`sailing` `private` `cruise` `romantic` `outdoor`
 
 📱 Smartphone tickets ⚡ Instant access to your tickets Set sail on an exclusive adventure with your special someone or bring along up to 9 friends for an unforgettable private charter on Gold Coast Broadwater. Perfect for those seeking a more intimate sailing escapade. Get your tickets for Private Sailing Charter for two adults on Gold Coast Broadwater! Highlights 🌊 Intimate sailing with a personal touch for groups up to 10. 🍾 Complimentary wine, beer, and snacks to elevate your experience. 🐾 Bring your furry friends along - service animals allowed! What's included? ✔️ Blankets during the cooler months. ✔️ For guests over 18, 2 glasses of sparkling wine and beer are served during the cruise. These are complimentary. ✔️ Guests are treated to a deluxe snack plate during their charter. ✔️ Non-alcoholic beverages are available for any guests. 2 drinks are complimentary during the charter. Additional Information 👶 Infants must sit on an adult's lap, yet prams or strollers are welcome for small children. 🐾 Service animals are allowed to accompany their owners. 🚆 Nearby public transportation options make this experience easily accessible. 💪 This experience is suitable for all physical fitness levels. Why choose Fever? ✔️ Millions of users book every month. ✔️ The best prices and availability at all times. ✔️ Thousands of unique experiences. ✔️ Verified user reviews. ✔️ 24/7 customer service. Experience available in English Experience supplied by: Sun Sailing Gold Coast All ticket sales are final and cannot be refunded, exchanged, or otherwise modified. Click here to check out the T&Cs .
 
@@ -896,7 +896,7 @@ Meet the Quokkas at Currumbin Wildlife Sanctuary this September. From 18 to 20 S
 📆 Fri 18 Sep – Sun 27 Dec
 📍 Fever Gold Coast, Brisbane
 💰 From $200.00
-`food` `wine` `tour`
+`food` `wine` `tour` `drinks`
 
 Hinterland Heritage Wine Tour in Brisbane. Get your tickets on Fever now!
 
@@ -944,7 +944,7 @@ Discover what makes Southern Cross University unique
 📆 Sat 21 Mar 2026 – Sun 21 Mar 2027
 📍 Destination Gold Coast
 💰 See link
-`sport` `running` `outdoor`
+`sport` `running` `outdoor` `fitness`
 
 Race the Australian dream of sun, surf and sand as you swim, bike, run throughout Queensland's iconic Gold Coast. Known for its flat terrain, this course wil...
 
@@ -952,7 +952,7 @@ Race the Australian dream of sun, surf and sand as you swim, bike, run throughou
 📆 Sun 26 Apr 2026 – Sun 18 Apr 2027
 📍 Destination Gold Coast
 💰 See link
-`sport` `running` `outdoor`
+`sport` `running` `outdoor` `fitness`
 
 Welcome to the Gold Coast and the 15th anniversary of the von Bibra Mitsubishi Gold Coast Running Festival presented by Mastery Schools Australia.Come and ru...
 
@@ -1696,7 +1696,7 @@ A mindful group bushwalk emphasizing observational learning and appreciation of 
 📆 Mon 21 Sep, 5:00 PM
 📍 West Burleigh Head trails
 💰 Free
-`running` `nature` `outdoor` `community` `free`
+`running` `nature` `outdoor` `community` `fitness` `free`
 
 A social, community-led trail run through the Burleigh Head trails designed for local runners to connect while enjoying the outdoors.
 
@@ -2390,7 +2390,7 @@ A 90 minute showcase of hand-picked talent Every Saturday night Comedy Undergrou
 📆 Thu 30 Jul – Fri 25 Dec
 📍 Destination Gold Coast
 💰 See link
-`classical` `candlelight` `music` `performance`
+`classical` `candlelight` `music` `performance` `concert` `live music`
 
 Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations never used for this purpose on the Gold Coast. Th...
 
@@ -2398,7 +2398,7 @@ Candlelight concerts bring the magic of a live, multi-sensory musical experience
 📆 Sat 12 Sep – Sat 28 Nov
 📍 Bond University
 💰 From $37.50
-`classical` `candlelight` `vivaldi` `music`
+`classical` `candlelight` `vivaldi` `music` `concert` `live music`
 
 Bond University is hosting this Candlelight: Vivaldi
 
@@ -2406,7 +2406,7 @@ Bond University is hosting this Candlelight: Vivaldi
 📆 Fri 18 Sep, 6:00 PM – Sat 19 Dec
 📍 Broadbeach Cultural Centre (within Broadbeach Cultural Precinct)
 💰 From $54.00
-`jazz` `tribute` `music`
+`jazz` `tribute` `music` `live music`
 
 ⭐ Join us at The Jazz Room as we celebrate two of the most influential musicians of all time: Frank Sinatra and Louis Armstrong. Experience their timeless music reimagined by a talented live band in an intimate setting. Get your tickets for The Jazz Room: A Frank Sinatra & Louis Armstrong Tribute in Gold Coast! Highlights 🌟 Celebrate the legacies of music legends Frank Sinatra and Louis Armstrong 🎵 Enjoy their most iconic songs, like Fly Me to the Moon and What a Wonderful World, reimagined in a powerful live tribute concert ❤️ Celebrate their immeasurable impact on music, culture, and society 🍷 Hosted in a chic, intimate venue—perfect for a night of music and connection 🎁 Gift memories to someone special! Purchase a gift card for The Jazz Room here General Info 📅 Dates and times: select your date & time directly in the ticket selector ⏳ Duration: 1 hour 📍 Location: Broadbeach Cultural Centre (within Broadbeach Cultural Precinct) 👤 Age requirement: 18+ ♿ Accessibility: this venue is wheelchair accessible 🪑 Please note: tables are shared and seating is assigned on a first-come, first-served basis within each zone ❓ For more information, please consult the FAQs of this experience here ✨ If you would like to book a private show or buy tickets for a large group (30+ people), click here ❤️ Health notice: users can review the health notice present in the FAQ here Programme Fly Me To The Moon - Frank Sinatra My Way - Frank Sinatra What a Wonderful World - Louis Armstrong When You’re Smiling - Louis Armstrong …and many more! Description Step into The Jazz Room for a musical journey through the songs of Frank Sinatra and Louis Armstrong. From Sinatra’s effortless swing style to Armstrong’s unforgettable voice and trumpet, their music comes alive once again in a heartfelt live tribute performance. Don’t miss this celebration of two icons whose influence shaped the world of jazz and popular music. Get your tickets for The Jazz Room: A Frank Sinatra & Louis Armstrong Tribute in Gold Coast! Seating Map
 
@@ -2414,7 +2414,7 @@ Bond University is hosting this Candlelight: Vivaldi
 📆 Mon 21 Sep – Sun 27 Sep
 📍 Imperial Hotel Gold Coast
 💰 Ticketed
-`music` `concert` `classical` `performance`
+`music` `concert` `classical` `performance` `live music`
 
 An intimate, atmospheric concert series featuring classical performances staged in a candlelit venue. The environment is designed to foster a focused and appreciative listening experience.
 
@@ -2494,7 +2494,7 @@ Mackenna Rose is bringing Burn ’Em to Mo’s Desert Clubhouse with her emotion
 📆 Fri 4 Sep, 2:00 PM – Sun 20 Sep
 📍 The Star Gold Coast
 💰 See link
-`musical` `theatre` `performance`
+`musical` `theatre` `performance` `music`
 
 Mamma Mia! hits the Gold Coast this September 2026 for a limited season, celebrating 25 years with ABBA classics, feel-good vibes and plenty of laughs.
 
@@ -2502,7 +2502,7 @@ Mamma Mia! hits the Gold Coast this September 2026 for a limited season, celebra
 📆 Sat 12 Sep – Sat 28 Nov
 📍 Bond University
 💰 From $31.50
-`rock` `tribute` `candlelight` `music`
+`rock` `tribute` `candlelight` `music` `live music` `concert`
 
 Bond University is hosting this Candlelight: Tribute to TOOL in Gold Coast! Get your concert tickets today!
 
@@ -2516,7 +2516,7 @@ Bond University is hosting this Candlelight: Tribute to TOOL in Gold Coast! Get 
 📆 Sun 20 Sep, 2:00 PM
 📍 Inside Gold Coast What's On
 💰 See link
-`musical` `theatre` `performance`
+`musical` `theatre` `performance` `music`
 
 Mamma Mia! hits the Gold Coast this September 2026 for a limited season, celebrating 25 years with ABBA classics, feel-good vibes and plenty of laughs.
 
@@ -2524,7 +2524,7 @@ Mamma Mia! hits the Gold Coast this September 2026 for a limited season, celebra
 📆 Sun 20 Sep, 5:00 PM – Mon 21 Sep
 📍 elsewhere, 23 Cavill Avenue
 💰 See link
-`electronic` `french` `dance` `producer`
+`electronic` `french` `dance` `producer` `music`
 
 #block-fdaf71a59953e0cfcb39 { --opacity: 100%; --translate-x: 0px; --translate-y: 0px; --rotation: 0deg; --scale-x: 100%; --scale-y: 100%; --skew-x: 0deg; --skew-y: 0deg; --origin-x: 50%; --origin-y: 50%; --block-transform: none; opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); } In 2026, Petit Biscuit returns to his roots: powerful, emotional, and unifying electronic music. He kicked off the year with the release of Movement I, featuring tracks like his acclaimed rework of Radiohead’s Everything In Its Right Place and The Forest (feat. Amixem), followed by Movement II, including Let You Know (feat. Sonia Ammar) and Close Your Eyes (with Forester). He capped off the summer with his first-ever DJ sets, designed for major electronic stages. A renowned French electronic music producer, Petit Biscuit has become a leading independent figure on the global music scene. His success is built on a strong creative vision, a clear musical direction, and a rare ability to blend emotion with sonic power. With 4 billion streams, worldwide tours, millions of YouTube views, and two critically acclaimed albums (Presence & Parachute), 2026 marks a new chapter: sharper sound, heavyweight collaborations, and renewed stage energy. Petit Biscuit now stands stronger than ever as a key reference in the French electronic scene. Presave Your Tickets Now! #block-90bbb21105b431a26837 { --stroke-style: none;--stroke-thickness: 6px; } #block-90bbb21105b431a26837 .sqs-html-content { --tweak-text-block-padding: 6% 6% 6% 6%; --tweak-text-block-padding: initial; } #block-90bbb21105b431a26837 { mix-blend-mode: var(--tweak-text-block-blend ); border-radius: var(--tweak-text-block-radius); } #block-90bbb21105b431a26837 { --tweak-text-block-radius: 0px 0px 0px 0px; } #block-90bbb21105b431a26837 { } @media screen and (max-width: 767px) { #block-90bbb21105b431a26837 { } } @media screen and (max-width: 767px) { #block-90bbb21105b431a26837 .sqs-html-content { } } @media screen and (max-width: 767px) { } tickets #block-9fdd6abbc40a9092b6fe { --sqs-block-content-flex: 0; } #block-9fdd6abbc40a9092b6fe { --opacity: 100%; --translate-x: 0px; --translate-y: 0px; --rotation: 0deg; --scale-x: 100%; --scale-y: 100%; --skew-x: 0deg; --skew-y: 0deg; --origin-x: 50%; --origin-y: 50%; --block-transform: none; opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }
 
@@ -2548,7 +2548,7 @@ US punk-metal mainstays Strung Out return to Australia this September to celebra
 📆 Fri 25 Sep, 7:00 PM
 📍 Madocke Beer Brewing Company
 💰 See link
-`comedy` `standup` `drinks`
+`comedy` `standup` `drinks` `performance`
 
 Every Friday night we are taking over upstairs at Madocke with a line up of the best comedians from around Australia and internationally at one of the Gold Coast's newest and coolest little breweries. Belgian beers, big laughs and the perfect way to knock off for the week with a laugh. Every week from 7pm at Madocke Beer Brewing Company.
 
@@ -2580,7 +2580,7 @@ Love in Motion makes its debut as part of Mo's Desert Clubhouse's 7th Birthday W
 📆 Sun 27 Sep, 6:30 PM
 📍 Atrium Bar
 💰 See link
-`comedy` `standup` `food` `drinks`
+`comedy` `standup` `food` `drinks` `performance`
 
 Fill your night with laughter at Atrium Bar’s Comedy Club, presented by Based Comedy and hosted by local radio personality Danny Lakey! Enjoy a new line up of local and national comedians every week, and settle into one of our comfy bean bags for a night full of fun and food. Reserve space for your group at the link.
 
@@ -2588,7 +2588,7 @@ Fill your night with laughter at Atrium Bar’s Comedy Club, presented by Based 
 📆 Fri 2 Oct, 7:00 PM
 📍 Madocke Beer Brewing Company
 💰 See link
-`comedy` `standup` `drinks`
+`comedy` `standup` `drinks` `performance`
 
 Every Friday night we are taking over upstairs at Madocke with a line up of the best comedians from around Australia and internationally at one of the Gold Coast's newest and coolest little breweries. Belgian beers, big laughs and the perfect way to knock off for the week with a laugh. Every week from 7pm at Madocke Beer Brewing Company.
 
@@ -2612,7 +2612,7 @@ $31
 📆 Sun 4 Oct, 6:30 PM
 📍 Atrium Bar
 💰 See link
-`comedy` `standup` `food` `drinks`
+`comedy` `standup` `food` `drinks` `performance`
 
 Fill your night with laughter at Atrium Bar’s Comedy Club, presented by Based Comedy and hosted by local radio personality Danny Lakey! Enjoy a new line up of local and national comedians every week, and settle into one of our comfy bean bags for a night full of fun and food. Reserve space for your group at the link.
 
@@ -2850,7 +2850,7 @@ The Abby Skye Band is one of Queensland’s most highly rated live bands and one
 📆 Sun 20 Sep, 12:00 PM
 📍 Mo's Desert Clubhouse
 💰 See link
-`rock` `acdc` `tribute`
+`rock` `acdc` `tribute` `music` `live music`
 
 Prepare for the ultimate high-voltage rock revival as the electrifying anthems of AC/DC collide with the powerhouse hits of the greatest Women of Rock! For more information & tickets hit the below Book Now button.
 

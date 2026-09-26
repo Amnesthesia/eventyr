@@ -21,14 +21,14 @@ import {
 	rankReuseKey,
 } from "./rankReuse.ts";
 
-const RANK_MODEL = "gemini-3.5-flash";
+export const RANK_MODEL = "gemini-3.5-flash";
 /**
  * Events per ranking call. One call for the whole city risked silently
  * exceeding maxOutputTokens at 400+ events, and a parse failure assigns a
  * neutral 5 to *every* event — losing the ranking entirely. Chunking bounds
  * that blast radius to one chunk and lets the calls run concurrently.
  */
-const RANK_CHUNK = 60;
+export const RANK_CHUNK = 60;
 
 const CITY = requireEnv("CITY");
 const CITY_TZ = loadCityConfig(CITY).timezone;

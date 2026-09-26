@@ -3,11 +3,11 @@ VERSION:2.0
 PRODID:-//do things//byron//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:New Brighton Farmers Market
-X-WR-TIMEZONE:Australia/Brisbane
+X-WR-TIMEZONE:Australia/Sydney
 BEGIN:VEVENT
 UID:byron-1oa62ai@dothings
-DTSTART;TZID=Australia/Brisbane:20260908T080000
-DTEND;TZID=Australia/Brisbane:20260908T110000
+DTSTART;TZID=Australia/Sydney:20260908T080000
+DTEND;TZID=Australia/Sydney:20260908T110000
 SUMMARY:New Brighton Farmers Market
 DESCRIPTION:A community-focused market featuring local growers and makers\,
   ideal for engaging with the local food system and connecting with the Nor
