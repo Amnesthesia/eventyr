@@ -37,6 +37,7 @@
   "dependencies": {},
   "devDependencies": {
     "@biomejs/biome": "^2.4.15",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "playwright": "^1.50.1"
   }
 }

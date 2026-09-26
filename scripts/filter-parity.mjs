@@ -24,7 +24,7 @@ if (!base || !out) {
 }
 
 const errors = [];
-const browser = await chromium.launch();
+const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_PATH });
 // A fresh context per run: no saved or hidden events, so nothing but the filters shapes the list.
 const context = await browser.newContext({ timezoneId: "Australia/Brisbane", locale: "en-AU" });
 const page = await context.newPage();

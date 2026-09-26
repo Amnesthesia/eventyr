@@ -35,6 +35,9 @@ importers:
       '@biomejs/biome':
         specifier: ^2.4.15
         version: 2.4.15
+      playwright:
+        specifier: ^1.50.1
+        version: 1.63.0
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
