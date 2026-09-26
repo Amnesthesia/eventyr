@@ -91,7 +91,7 @@ export interface PrepareStats {
  * The council link rewrite is applied here too, so a scraped event's link is
  * final before annotation (curate applies the same rewrite to every path).
  *
- * Dropping null-date candidates is not just tidiness — common.ts's
+ * Dropping null-date candidates is not just tidiness — search/dedupe.ts's
  * fingerprintEvent yields date:"" for them and isDuplicateEvent only bails
  * early when BOTH dates are present and differ, so a dateless event matches
  * any similarly-titled event on any date and would swallow real ones during

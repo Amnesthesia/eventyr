@@ -55,7 +55,7 @@ test("unrelated same-day events are never compared by the LLM", () => {
 });
 
 test("only the grey zone is escalated", () => {
-	// Neither an exact/prefix match (which common.ts settles by itself) nor
+	// Neither an exact/prefix match (which search/dedupe.ts settles by itself) nor
 	// clearly unrelated: too different to merge automatically, too similar to
 	// throw away.
 	const { settled, candidates } = planDedupe([

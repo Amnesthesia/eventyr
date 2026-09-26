@@ -1,6 +1,6 @@
 // Constants shared between the Node pipeline and the browser bundle.
 //
-// This file must stay free of node: imports. src/common.ts — which the
+// This file must stay free of node: imports. apps/pipeline/src/config/ — which the
 // pipeline uses — reads the filesystem, so importing it from app/ code drags
 // node:fs/path/url into the Vite bundle and the build fails. That is why the
 // site used to keep its own duplicate copies of these values, which then

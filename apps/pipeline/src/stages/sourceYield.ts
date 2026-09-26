@@ -12,7 +12,7 @@ import { loadPipelineConfig } from "../config/load.js";
 // sources that hit recently or were added recently. Everything else is still
 // fair game for the search — it just is not spelled out.
 //
-// Pure: no IO. common.ts loads/saves the file so this module can be imported
+// Pure: no IO. config/city.ts loads/saves the file so this module can be imported
 // without dragging the data dir along.
 
 import { isSameSite, normaliseHost } from "@dothingslol/core/shared";

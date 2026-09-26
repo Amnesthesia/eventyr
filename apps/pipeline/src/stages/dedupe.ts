@@ -16,7 +16,7 @@ import { fingerprintEvent, isDuplicateEvent } from "../search/dedupe.js";
 //   a source published a start time at all.
 //
 //   Stage 1 (deterministic, free). Within a bucket, the existing
-//   title-matching rules from common.ts (exact / prefix / Dice > 0.85) settle
+//   title-matching rules from search/dedupe.ts (exact / prefix / Dice > 0.85) settle
 //   the obvious duplicates — the same show found by two providers, or by a
 //   scrape and a search. This is the pre-existing behaviour and catches the
 //   large majority.
@@ -35,7 +35,7 @@ import { fingerprintEvent, isDuplicateEvent } from "../search/dedupe.js";
 //   usually wins on facts anyway, and completeness generalises to
 //   provider-vs-provider duplicates too.
 
-/** Above this, common.ts already treats the titles as the same event. */
+/** Above this, search/dedupe.ts already treats the titles as the same event. */
 const AUTO_MATCH = 0.85;
 /** Below this, same-day titles are unrelated often enough that asking is waste. */
 
