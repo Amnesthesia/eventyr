@@ -1,7 +1,5 @@
 // Asks Gemini for venues and organisations the city's source list is missing,
 // and adds them as method: llm for probe-sources to verify.
-import { loadPipelineConfig } from "../config/load.js";
-
 //
 // Google only, deliberately. Claude and GPT were both tried here: Claude
 // wrapped its JSON in prose and GPT-5 returned `incomplete` with empty output,
@@ -28,7 +26,6 @@ import { loadPipelineConfig } from "../config/load.js";
 //     city, so provider prefix caching pays for it once rather than twelve
 //     times. Only the trailing two lines vary.
 
-import "../llmBootstrap.ts";
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { askDetailed } from "@dothingslol/llm";
@@ -39,28 +36,9 @@ import {
 	type SourceEntry,
 	type SourceTier,
 } from "../config/city.js";
+import type { Logger } from "../config/context.js";
+import type { PipelineConfig } from "../config/load.js";
 import { SOURCES_ROOT } from "../config/paths.js";
-import { installUsageReporting } from "../io/usage.ts";
-
-const args = process.argv.slice(2);
-const flag = (name: string): string | undefined =>
-	args
-		.find((a) => a.startsWith(`--${name}=`))
-		?.split("=")
-		.slice(1)
-		.join("=");
-// Only enforced when run as a CLI — importing this module for its pure
-// helpers (as discover.test.ts does) must not exit the test process.
-const IS_MAIN = process.argv[1]?.endsWith("discover.ts");
-const cityArg = flag("city");
-if (IS_MAIN && (!cityArg || cityArg.includes(","))) {
-	console.error(
-		"discover-sources runs for one city at a time — pass --city=<key>, e.g. --city=brisbane.",
-	);
-	process.exit(1);
-}
-const CITY = cityArg ?? "";
-const APPLY = args.includes("--apply");
 
 /** Separates the list the model is given from the part it must add. */
 const CONTINUE_DELIMITER = "-----";
@@ -207,7 +185,12 @@ function nichePrompt(
 	return `${listSoFar}\nCity: ${cityName}\nCategory: ${niche.label}\n${CONTINUE_DELIMITER}`;
 }
 
-async function discoverCity(city: string): Promise<void> {
+async function discoverCity(
+	log: Logger,
+	pipelineCfg: PipelineConfig,
+	city: string,
+	apply: boolean,
+): Promise<void> {
 	const cfg = loadCityConfig(city);
 	const existing = new Set<string>();
 	const knownEntries: { name: string; host: string }[] = [];
@@ -237,7 +220,7 @@ async function discoverCity(city: string): Promise<void> {
 		NICHES.map((niche) => nichePrompt(cityName, listSoFar, niche)),
 		{
 			provider: "gemini",
-			model: loadPipelineConfig().models.discover.model as any,
+			model: pipelineCfg.models.discover.model as any,
 			stage: "discover",
 			system: SYSTEM_PROMPT,
 			search: true,
@@ -250,7 +233,7 @@ async function discoverCity(city: string): Promise<void> {
 	const perNiche = NICHES.map((niche, i) => {
 		const outcome = outcomes[i];
 		if (outcome.status === "rejected") {
-			console.error(
+			log.error(
 				`  ⚠ ${niche.label}: ${(outcome.reason as Error).message.slice(0, 90)}`,
 			);
 			return [];
@@ -269,11 +252,11 @@ async function discoverCity(city: string): Promise<void> {
 			merged.set(s.host, s);
 			added++;
 		}
-		console.log(
+		log.log(
 			`  ${String(added).padStart(3)} new of ${String(found.length).padStart(3)}  ${niche.label}`,
 		);
 	});
-	console.log(
+	log.log(
 		`\n${city}: ${suggested} suggested across ${NICHES.length} niches → ${merged.size} new`,
 	);
 
@@ -282,13 +265,13 @@ async function discoverCity(city: string): Promise<void> {
 		byTier.set(s.tier, [...(byTier.get(s.tier) ?? []), s]);
 	}
 	for (const [tier, list] of byTier) {
-		console.log(`\n  ${tier} (${list.length}):`);
+		log.log(`\n  ${tier} (${list.length}):`);
 		for (const s of list) {
-			console.log(`      ${s.name.slice(0, 46).padEnd(48)} ${s.host}`);
+			log.log(`      ${s.name.slice(0, 46).padEnd(48)} ${s.host}`);
 		}
 	}
 
-	if (!APPLY || merged.size === 0) return;
+	if (!apply || merged.size === 0) return;
 
 	// Everything lands as method: llm — probe-sources decides what can actually
 	// be scraped, and until then the AI search covers them.
@@ -311,22 +294,22 @@ async function discoverCity(city: string): Promise<void> {
 	// building the body would leave the source of truth empty.
 	const body = yaml.dump(cfg, { lineWidth: 100, noRefs: true });
 	writeFileSync(path, `${header.replace(/\n+$/, "\n")}\n${body}`, "utf-8");
-	console.log(`\n→ ${city}: added ${merged.size} source(s) to ${path}`);
+	log.log(`\n→ ${city}: added ${merged.size} source(s) to ${path}`);
 }
 
-async function main(): Promise<void> {
-	installUsageReporting();
-	if (!process.env.GOOGLE_API_KEY) {
-		throw new Error("GOOGLE_API_KEY env var is required");
-	}
-
-	console.log(`\n=== ${CITY} ===`);
-	await discoverCity(CITY);
-	if (!APPLY) {
-		console.log("\nDry run — rerun with --apply to add these sources.");
-	}
+export interface DiscoverSourcesOptions {
+	city: string;
+	apply: boolean;
+	config: PipelineConfig;
 }
 
-// Guarded so the parser above can be imported by tests without the module
-// running a full discovery sweep as an import side effect.
-if (IS_MAIN) await main();
+export async function discoverSources(
+	log: Logger,
+	opts: DiscoverSourcesOptions,
+): Promise<void> {
+	log.log(`\n=== ${opts.city} ===`);
+	await discoverCity(log, opts.config, opts.city, opts.apply);
+	if (!opts.apply) {
+		log.log("\nDry run — rerun with --apply to add these sources.");
+	}
+}

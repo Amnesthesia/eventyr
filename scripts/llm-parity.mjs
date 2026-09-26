@@ -78,7 +78,7 @@ const CLIS = {
 	rank: { args: ["src/cli/rank.ts"] },
 	"collect-adapters": { args: ["src/cli/collectScraped.ts", "--only=fixture-programme"] },
 	"probe-sources": { args: ["src/adapters/probe.ts", "--city=brisbane"] },
-	"discover-sources": { args: ["src/adapters/discover.ts", "--city=brisbane"] },
+	"discover-sources": { args: ["src/cli/discoverSources.ts", "--city=brisbane"] },
 	"collect-google": { args: ["src/cli/collectSearch.ts", "google"], env: { PROVIDERS: "google" } },
 	"collect-anthropic": {
 		args: ["src/cli/collectSearch.ts", "anthropic"],
