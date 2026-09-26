@@ -75,7 +75,7 @@ const TSX = ["--filter", "@dothingslol/pipeline", "exec", "tsx", "--env-file-if-
 const CLIS = {
 	curate: { args: ["src/cli/curate.ts"] },
 	venues: { args: ["src/cli/venues.ts"] },
-	rank: { args: ["src/rank.ts"] },
+	rank: { args: ["src/cli/rank.ts"] },
 	"collect-adapters": { args: ["src/cli/collectScraped.ts", "--only=fixture-programme"] },
 	"probe-sources": { args: ["src/adapters/probe.ts", "--city=brisbane"] },
 	"discover-sources": { args: ["src/adapters/discover.ts", "--city=brisbane"] },

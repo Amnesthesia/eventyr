@@ -8,7 +8,7 @@
     "curate": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/curate.ts",
     "venues": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/venues.ts",
     "dedupe-venues": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/venues.ts",
-    "rank": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/rank.ts",
+    "rank": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/rank.ts",
     "geocode": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/geocode.ts",
     "markdown": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/markdown.ts",
     "ical": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/ical.ts",

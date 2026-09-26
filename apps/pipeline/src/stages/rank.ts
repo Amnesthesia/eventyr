@@ -1,4 +1,3 @@
-import "./llmBootstrap.ts";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import {
@@ -8,26 +7,15 @@ import {
 } from "@dothingslol/core/shared";
 import { ask } from "@dothingslol/llm";
 import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { loadCityConfig } from "./config/city.js";
-import { requireEnv } from "./config/env.js";
-import { loadInterests, loadPipelineConfig } from "./config/load.js";
-import { DATA_ROOT } from "./config/paths.js";
-import { fmtDate, getWeekRange } from "./config/week.js";
-import { installUsageReporting } from "./io/usage.ts";
+import type { RunContext } from "../config/context.js";
+import { loadInterests } from "../config/load.js";
+import { DATA_ROOT } from "../config/paths.js";
+import { fmtDate } from "../config/week.js";
 import {
 	RANK_DESCRIPTION_CHARS,
 	RANK_PROMPT_VERSION,
 	rankReuseKey,
-} from "./rankReuse.ts";
-
-// RANK_CHUNK and RANK_MODEL are now read from pipeline.yml
-
-const CITY = requireEnv("CITY");
-const CITY_TZ = loadCityConfig(CITY).timezone;
-requireEnv("GOOGLE_API_KEY");
-const FORCE = ["1", "true", "yes"].includes(
-	(process.env.FORCE ?? "").toLowerCase(),
-);
+} from "../rankReuse.js";
 
 const RANK_SYSTEM = `You are scoring events for relevance to a specific person's interests.
 
@@ -97,9 +85,19 @@ function parseScores(
 	}
 }
 
-async function main(): Promise<void> {
-	installUsageReporting();
-	const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
+export interface RankResult {
+	skipped: boolean;
+	eventCount: number;
+	scoredCount: number;
+	reusedCount: number;
+}
+
+export async function rank(ctx: RunContext): Promise<RankResult> {
+	const CITY = ctx.city;
+	const CITY_TZ = ctx.cityConfig.timezone;
+	const FORCE = ctx.force;
+	const log = ctx.log;
+	const { monday, sunday } = ctx.week;
 	const jsonPath = join(DATA_ROOT, `${CITY}.json`);
 
 	if (!existsSync(jsonPath)) {
@@ -111,9 +109,9 @@ async function main(): Promise<void> {
 		unknown
 	>;
 
-	// The prompt version is part of "already ranked", not just the date. Stored
-	// scores were answers to whatever RANK_SYSTEM asked at the time, so a
-	// calibration change has to re-ask even within the same week.
+	// The prompt version is part of "already ranked", not just the date.
+	// Stored scores were answers to whatever RANK_SYSTEM asked at the time,
+	// so a calibration change has to re-ask even within the same week.
 	const storedVersion = payload.rank_prompt_version;
 	const sameVersion = storedVersion === RANK_PROMPT_VERSION;
 	if (
@@ -121,13 +119,13 @@ async function main(): Promise<void> {
 		payload.ranked_at === toISODate(monday, CITY_TZ) &&
 		sameVersion
 	) {
-		console.log(
+		log.log(
 			"→ Already ranked for this week — skipping. Set FORCE=true to re-rank.",
 		);
-		return;
+		return { skipped: true, eventCount: 0, scoredCount: 0, reusedCount: 0 };
 	}
 	if (!sameVersion && storedVersion !== undefined) {
-		console.log(
+		log.log(
 			`→ Scores were written under prompt ${String(storedVersion)}, now ${RANK_PROMPT_VERSION} — re-scoring every event.`,
 		);
 	}
@@ -141,10 +139,10 @@ async function main(): Promise<void> {
 		throw new Error("✗ No events to rank.");
 	}
 
-	console.log(
+	log.log(
 		`Ranking — ${payload.city as string} — ${fmtDate(monday, CITY_TZ)} to ${fmtDate(sunday, CITY_TZ)}`,
 	);
-	console.log("=".repeat(50));
+	log.log("=".repeat(50));
 
 	// Reuse last week's score wherever the event and everything the prompt
 	// shows about it are unchanged. Skipped entirely on FORCE — a forced run
@@ -152,8 +150,9 @@ async function main(): Promise<void> {
 	// Reuse needs the stored scores to have come from the current prompt.
 	// RANK_PROMPT_VERSION is inside rankReuseKey, but that alone can never
 	// invalidate anything: the key is recomputed for both sides of the
-	// comparison, so both always carry the *current* version and always match.
-	// The version has to be read back from the file to mean anything.
+	// comparison, so both always carry the *current* version and always
+	// match. The version has to be read back from the file to mean
+	// anything.
 	const previousByKey = new Map<string, number>();
 	if (!FORCE && sameVersion && existsSync(jsonPath)) {
 		for (const e of (payload.events as Event[]) ?? []) {
@@ -173,16 +172,16 @@ async function main(): Promise<void> {
 			toScore.push({ event, index });
 		}
 	});
-	console.log(
+	log.log(
 		`→ Scoring ${toScore.length} of ${events.length} events with Google Gemini` +
 			`${reused > 0 ? ` (${reused} unchanged from last week, reused)` : ""}…`,
 	);
 
 	// Chunked and concurrent: scores are per-event judgements with no
-	// cross-event reasoning, so a chunk boundary costs nothing, while one call
-	// for 400+ events risked a silent truncation that assigns a neutral 5 to
-	// every event and erases the ranking.
-	const cfg = loadPipelineConfig();
+	// cross-event reasoning, so a chunk boundary costs nothing, while one
+	// call for 400+ events risked a silent truncation that assigns a
+	// neutral 5 to every event and erases the ranking.
+	const cfg = ctx.config;
 	const chunks = chunkArray(toScore, cfg.stages.rank.batchSize);
 	const results = await mapWithConcurrency(chunks, 3, async (chunk, i) => {
 		const rawText = await ask(buildRankUser(chunk.map((c) => c.event)), {
@@ -196,10 +195,10 @@ async function main(): Promise<void> {
 		});
 		const parsed = parseScores(rawText);
 		if (!parsed) {
-			console.warn(
+			log.error(
 				`  ⚠ chunk ${i + 1}/${chunks.length}: could not parse scores — those events keep a neutral 5`,
 			);
-			console.warn(`  raw response: ${rawText.slice(0, 200)}`);
+			log.error(`  raw response: ${rawText.slice(0, 200)}`);
 			return;
 		}
 		// Indices are chunk-local; map them back to the city-wide array.
@@ -214,14 +213,15 @@ async function main(): Promise<void> {
 		if (typeof e.score !== "number") e.score = 5;
 	}
 
-	// Score first, then soonest — see byScoreThenSoonest. This is the order the
-	// site inherits, so getting the tiebreak right here fixes every consumer.
+	// Score first, then soonest — see byScoreThenSoonest. This is the order
+	// the site inherits, so getting the tiebreak right here fixes every
+	// consumer.
 	events.sort(byScoreThenSoonest);
 
 	const high = events.filter(
 		(e) => ((e.score as number) ?? 0) >= TOP_PICK_THRESHOLD,
 	).length;
-	console.log(
+	log.log(
 		`→ Score distribution: ${high}/${events.length} events score ≥ ${TOP_PICK_THRESHOLD} (${((100 * high) / events.length).toFixed(0)}%)`,
 	);
 
@@ -233,12 +233,12 @@ async function main(): Promise<void> {
 	};
 
 	writeFileSync(jsonPath, JSON.stringify(updated, null, 2), "utf-8");
-	console.log(`→ Written ${jsonPath}`);
-	console.log("✓ Ranking complete.");
-}
-
-import { fileURLToPath } from "node:url";
-
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
-	await main();
+	log.log(`→ Written ${jsonPath}`);
+	log.log("✓ Ranking complete.");
+	return {
+		skipped: false,
+		eventCount: events.length,
+		scoredCount: toScore.length,
+		reusedCount: reused,
+	};
 }
