@@ -90,12 +90,10 @@ jobs:
 
       # Type-check and lint before spending any API budget: neither ran in CI
       # before, which is how a broken tsconfig reference left the whole app
-      # unchecked.
+      # unchecked. Same command ci.yml runs, so this and pull-request CI can't
+      # drift apart on what "clean" means.
       - name: Typecheck and test
-        run: |
-          pnpm tsc --noEmit -p tsconfig.json
-          pnpm tsc --noEmit -p tsconfig.scripts.json
-          pnpm test
+        run: pnpm check
 
       # Fetch/extraction caches from the previous run. Pages are still fetched
       # every week for fresh events, but an unchanged page is a 304 (no body)
