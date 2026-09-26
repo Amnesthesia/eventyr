@@ -37,14 +37,28 @@ function extensionForContentType(contentType: string | null): string {
 }
 
 export function createHttpCacheStore(): HttpCacheStore {
+	// Maintain the cache in memory exactly like the pre-1.8 SourceFetcher did
+	// (it loaded once per fetch and mutated the object), to preserve the exact
+	// same first-fetch behaviour where concurrent saves overwrite each other.
+	const active = new Map<string, Cache>();
+
+	const getCache = (sourceId: string) => {
+		let cache = active.get(sourceId);
+		if (!cache) {
+			cache = loadCache(sourceId);
+			active.set(sourceId, cache);
+		}
+		return cache;
+	};
+
 	return {
 		get(sourceId, url) {
-			return loadCache(sourceId)[url];
+			return getCache(sourceId)[url];
 		},
 		set(sourceId, url, entry) {
-			const path = adapterCachePath(sourceId);
-			const cache = loadCache(sourceId);
+			const cache = getCache(sourceId);
 			cache[url] = entry;
+			const path = adapterCachePath(sourceId);
 			mkdirSync(join(path, ".."), { recursive: true });
 			writeFileSync(path, JSON.stringify(cache, null, 2), "utf-8");
 		},
