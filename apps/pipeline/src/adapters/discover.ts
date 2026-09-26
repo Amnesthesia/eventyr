@@ -1,5 +1,7 @@
 // Asks Gemini for venues and organisations the city's source list is missing,
 // and adds them as method: llm for probe-sources to verify.
+import { loadPipelineConfig } from "../config/load.js";
+
 //
 // Google only, deliberately. Claude and GPT were both tried here: Claude
 // wrapped its JSON in prose and GPT-5 returned `incomplete` with empty output,
@@ -60,7 +62,6 @@ if (IS_MAIN && (!cityArg || cityArg.includes(","))) {
 const CITY = cityArg ?? "";
 const APPLY = args.includes("--apply");
 
-export const MODEL = "gemini-3.5-flash";
 /** Separates the list the model is given from the part it must add. */
 const CONTINUE_DELIMITER = "-----";
 
@@ -236,7 +237,7 @@ async function discoverCity(city: string): Promise<void> {
 		NICHES.map((niche) => nichePrompt(cityName, listSoFar, niche)),
 		{
 			provider: "gemini",
-			model: MODEL,
+			model: loadPipelineConfig().models.discover.model as any,
 			stage: "discover",
 			system: SYSTEM_PROMPT,
 			search: true,

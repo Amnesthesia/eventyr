@@ -3,6 +3,7 @@ import { readFileSync, unlinkSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { test } from "node:test";
 import { MODELS } from "@dothingslol/llm";
+import { stageModelCacheKey } from "../io/cacheKey.js";
 import {
 	CONFIG_DIR,
 	loadInterests,
@@ -158,29 +159,8 @@ test("all models in pipeline.yml are members of llm MODELS", () => {
  * the cache key must NOT include a model suffix (so existing caches stay hot).
  * When it differs, the key must include provider/model.
  */
-const LEGACY_MODELS: Record<string, { provider: string; model: string }> = {
-	annotate: { provider: "gemini", model: "gemini-3.1-flash-lite" },
-	rank: { provider: "gemini", model: "gemini-3.5-flash" },
-	venues: { provider: "gemini", model: "gemini-3.5-flash" },
-	extract: { provider: "gemini", model: "gemini-3.1-flash-lite" },
-};
 
 /** Returns the cache key for a stage, including model suffix when not using the legacy model. */
-export function stageModelCacheKey(
-	legacyKey: string,
-	stage: string,
-	configured: { provider: string; model: string },
-): string {
-	const legacy = LEGACY_MODELS[stage];
-	if (
-		legacy &&
-		configured.provider === legacy.provider &&
-		configured.model === legacy.model
-	) {
-		return legacyKey;
-	}
-	return `${legacyKey}:${configured.provider}/${configured.model}`;
-}
 
 test("stageModelCacheKey returns legacyKey when model matches pre-refactor model", () => {
 	assert.equal(

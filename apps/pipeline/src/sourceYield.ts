@@ -1,3 +1,4 @@
+import { loadPipelineConfig } from "./config/load.js";
 // Which method: llm sources actually earn their place in the search prompts.
 //
 // Measured over 18 committed weeks of Brisbane search results: 385 sources were
@@ -15,23 +16,22 @@
 // without dragging the data dir along.
 
 import { isSameSite, normaliseHost } from "@dothingslol/core/shared";
-import type { SourceEntry } from "./common.ts";
+import type { SourceEntry } from "./config/city.js";
 
 /** Weeks of history the ledger keeps. Bounded so the file cannot grow forever. */
-export const LEDGER_WEEKS = 26;
+
 /** A source that produced nothing for this long is dropped from the prompts. */
-export const HIT_WINDOW_WEEKS = 8;
+
 /** A newly added source keeps its place this long regardless, so a discover
  * suggestion gets a chance before the ledger judges it. */
-export const GRACE_DAYS = 28;
+
 /**
  * Pruning needs this much history first. With one week recorded, every source
  * that happened to miss that week would be dropped — failing towards the cheap
  * branch, which is the wrong direction.
  */
-export const MIN_HISTORY_WEEKS = 8;
+
 /** Unlisted hosts with at least this many events are worth a probe. */
-export const UNLISTED_REPORT_MIN = 5;
 
 export interface YieldLedger {
 	/** Weeks recorded, ascending. */
@@ -87,7 +87,11 @@ export function updateLedger(
 
 	if (!ledger.weeks.includes(week)) ledger.weeks.push(week);
 	ledger.weeks.sort();
-	const keep = new Set(ledger.weeks.slice(-LEDGER_WEEKS));
+	const keep = new Set(
+		ledger.weeks.slice(
+			-loadPipelineConfig().stages.collect.sourceYield.ledgerWeeks,
+		),
+	);
 	ledger.weeks = [...keep];
 
 	const unlistedThisWeek = new Map<string, number>();
@@ -149,22 +153,35 @@ function addedOn(entry: SourceEntry): Date | null {
  * Whether an llm source should be named in the search prompt.
  *
  * No ledger, or too little history ⇒ yes for everyone (today's behaviour).
- * Otherwise: hit within the last HIT_WINDOW_WEEKS recorded weeks, or added
- * within GRACE_DAYS.
+ * Otherwise: hit within the last loadPipelineConfig().stages.collect.sourceYield.hitWindowWeeks recorded weeks, or added
+ * within loadPipelineConfig().stages.collect.sourceYield.graceDays.
  */
 export function sourceEarnsPlace(
 	entry: SourceEntry,
 	ledger: YieldLedger | null,
 	today: Date = new Date(),
 ): boolean {
-	if (!ledger || ledger.weeks.length < MIN_HISTORY_WEEKS) return true;
+	if (
+		!ledger ||
+		ledger.weeks.length <
+			loadPipelineConfig().stages.collect.sourceYield.minHistoryWeeks
+	)
+		return true;
 	const added = addedOn(entry);
-	if (added && today.getTime() - added.getTime() < GRACE_DAYS * 86_400_000) {
+	if (
+		added &&
+		today.getTime() - added.getTime() <
+			loadPipelineConfig().stages.collect.sourceYield.graceDays * 86_400_000
+	) {
 		return true;
 	}
 	const key = primaryHost(entry);
 	if (!key) return false;
-	const recent = new Set(ledger.weeks.slice(-HIT_WINDOW_WEEKS));
+	const recent = new Set(
+		ledger.weeks.slice(
+			-loadPipelineConfig().stages.collect.sourceYield.hitWindowWeeks,
+		),
+	);
 	return (ledger.sources[key]?.weeksHit ?? []).some((w) => recent.has(w));
 }
 
@@ -173,7 +190,11 @@ export function unlistedWorthProbing(
 	ledger: YieldLedger,
 ): { host: string; count: number }[] {
 	return Object.entries(ledger.unlisted)
-		.filter(([, r]) => r.count >= UNLISTED_REPORT_MIN)
+		.filter(
+			([, r]) =>
+				r.count >=
+				loadPipelineConfig().stages.collect.sourceYield.unlistedReportMin,
+		)
 		.map(([host, r]) => ({ host, count: r.count }))
 		.sort((a, b) => b.count - a.count);
 }

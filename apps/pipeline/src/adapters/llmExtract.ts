@@ -1,5 +1,7 @@
 // LLM-backed extraction for the "html" strategy fallback: turns already-
 // fetched, already-reduced page text into RawCandidateFields. This is the
+import { loadPipelineConfig } from "../config/load.js";
+
 // only place in the adapter framework an LLM is invoked, and it never
 // fetches or searches anything — the page text is handed to it complete.
 // Mirrors the existing extract pass in src/providers/base.ts
@@ -20,14 +22,10 @@ import { countDateHits } from "@dothingslol/scraper/parsers";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
 import { splitIntoBatches } from "../providers/base.ts";
 
-export const EXTRACT_MODEL = "gemini-3.1-flash-lite";
-export const MAX_OUTPUT_TOKENS = 16000;
 /** Extraction calls per page — see the note in extractPage. */
-export const MAX_BATCHES_PER_PAGE = 4;
 /** Below this much page text, an empty extraction is plausible rather than suspicious. */
 const RETRY_MIN_TEXT = 2000;
 /** Concurrent extraction calls per page. */
-export const MAX_CONCURRENT_CALLS = 3;
 
 const SYSTEM_PROMPT = `You are extracting structured event data from the text of one already-fetched web page. You have no ability to browse, search, or fetch anything else — work only from the text given to you.
 
@@ -84,7 +82,7 @@ export function createGeminiPageExtractor(
 ): PageExtractFn {
 	const {
 		retryOnEmpty = true,
-		maxBatches = MAX_BATCHES_PER_PAGE,
+		maxBatches = loadPipelineConfig().stages.extract.maxBatchesPerPage,
 		stage = "extract",
 	} = options;
 
@@ -98,10 +96,10 @@ export function createGeminiPageExtractor(
 		// varies.
 		const text = await ask(buildUserPrompt(pageText, sourceName), {
 			provider: "gemini",
-			model: EXTRACT_MODEL,
+			model: loadPipelineConfig().models.extract.model as any,
 			stage,
 			system: SYSTEM_PROMPT,
-			maxOutputTokens: MAX_OUTPUT_TOKENS,
+			maxOutputTokens: loadPipelineConfig().stages.extract.maxOutputTokens,
 			temperature: 0.1,
 		});
 		const events = parseJsonArray<Partial<RawCandidateFields>>(text, label);
@@ -236,7 +234,7 @@ export function createGeminiPageExtractor(
 		}
 		const results = await mapWithConcurrency(
 			batches,
-			MAX_CONCURRENT_CALLS,
+			loadPipelineConfig().stages.extract.concurrency,
 			(batch) => extractBatch(batch, sourceName),
 		);
 		const events = results.flat();

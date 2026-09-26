@@ -1,3 +1,4 @@
+import { loadPipelineConfig } from "./config/load.js";
 import "./llmBootstrap.ts";
 import {
 	existsSync,
@@ -66,7 +67,7 @@ const COST_LOCALE = {
 const WINDOW_FROM = toISODate(new Date(), CITY_TZ);
 const WINDOW_TO = addDays(
 	toISODate(getWeekRange(new Date(), CITY_TZ).sunday, CITY_TZ),
-	7,
+	loadPipelineConfig().publish.windowDaysAfterWeek,
 );
 
 const OUT_PATH = join(DATA_ROOT, `${CITY}.json`);

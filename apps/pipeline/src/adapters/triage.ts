@@ -1,3 +1,7 @@
+import { loadPipelineConfig } from "../config/load.js";
+
+const cfg = loadPipelineConfig();
+
 // Why is a source not on the scrape path? Answered offline, from evidence
 // already on disk — no network, no model, no cost.
 //
@@ -123,10 +127,10 @@ const MIN_TEXT_LENGTH = 1200;
  * rather than the page's. crowbar 1164 / milani 1192 vs a 1200 gate. */
 const SUB_THRESHOLD_BAND = 0.25;
 /** probe.ts MIN_DATED_TO_PROMOTE / MIN_IN_WINDOW_TO_PROMOTE. */
-export const MIN_DATED = 3;
-export const MIN_IN_WINDOW = 2;
+export const MIN_DATED = cfg.stages.probe.promote.minDated;
+export const MIN_IN_WINDOW = cfg.stages.probe.promote.minUpcoming;
 /** probe.ts MAX_EVALUATIONS — pages actually extracted per source. */
-export const MAX_EVALUATIONS = 2;
+export const MAX_EVALUATIONS = cfg.stages.probe.maxEvaluations;
 /** A page this long with this many date mentions plainly had content, so
  * extracting zero from it is an extraction failure, not an empty listing. */
 const RICH_TEXT = 3000;

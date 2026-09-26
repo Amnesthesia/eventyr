@@ -1,3 +1,5 @@
+import { loadPipelineConfig } from "./config/load.js";
+
 // Cross-source deduplication for the merged week (curate.ts calls this).
 //
 // STRATEGY — three stages, cheapest first, so the LLM only ever sees the
@@ -18,7 +20,7 @@
 //   large majority.
 //
 //   Stage 2 (LLM, bounded). Pairs that stage 1 left unmerged but that still
-//   look related — Dice similarity inside [MAYBE_MIN, AUTO_MATCH] — are the
+//   look related — Dice similarity inside [loadPipelineConfig().stages.dedupe.maybeMin, AUTO_MATCH] — are the
 //   grey zone: "Jazz Night" vs "Jazz Night ft. The Quartet", or the same
 //   gig titled differently by venue and ticketer. Only these are batched to
 //   the model, ~30 pairs per call, with a tiny JSON in/out. Unrelated events
@@ -34,9 +36,9 @@
 /** Above this, common.ts already treats the titles as the same event. */
 const AUTO_MATCH = 0.85;
 /** Below this, same-day titles are unrelated often enough that asking is waste. */
-export const MAYBE_MIN = 0.45;
+
 /** Pairs per LLM call. */
-export const PAIR_BATCH_SIZE = 30;
+
 /**
  * Guard against a pathological single-day bucket (a festival dumping hundreds
  * of same-day sessions) turning stage 2 into an O(n²) token bill.
@@ -46,7 +48,6 @@ export const PAIR_BATCH_SIZE = 30;
  * per call this ceiling is ~66 small calls — still bounded, and the cap now
  * warns when it bites rather than silently dropping comparisons.
  */
-export const MAX_PAIRS = 3000;
 
 export interface CandidatePair {
 	a: Record<string, unknown>;
@@ -275,7 +276,10 @@ export function planDedupe(events: Record<string, unknown>[]): {
 						} else {
 							candidates.push(i < j ? [i, j] : [j, i]);
 						}
-					} else if (sim >= MAYBE_MIN && sim < AUTO_MATCH) {
+					} else if (
+						sim >= loadPipelineConfig().stages.dedupe.maybeMin &&
+						sim < AUTO_MATCH
+					) {
 						candidates.push(i < j ? [i, j] : [j, i]);
 					}
 					continue;
@@ -305,16 +309,23 @@ export function planDedupe(events: Record<string, unknown>[]): {
 					settled.push(i < j ? [i, j] : [j, i]);
 					continue;
 				}
-				if (sim >= MAYBE_MIN) candidates.push(i < j ? [i, j] : [j, i]);
+				if (sim >= loadPipelineConfig().stages.dedupe.maybeMin)
+					candidates.push(i < j ? [i, j] : [j, i]);
 			}
 		}
 	}
-	if (candidates.length > MAX_PAIRS) {
+	if (candidates.length > loadPipelineConfig().stages.dedupe.maxPairs) {
 		console.warn(
-			`  ⚠ [dedupe] ${candidates.length} ambiguous pairs exceeds the ${MAX_PAIRS} cap — ${candidates.length - MAX_PAIRS} will not be checked`,
+			`  ⚠ [dedupe] ${candidates.length} ambiguous pairs exceeds the ${loadPipelineConfig().stages.dedupe.maxPairs} cap — ${candidates.length - loadPipelineConfig().stages.dedupe.maxPairs} will not be checked`,
 		);
 	}
-	return { settled, candidates: candidates.slice(0, MAX_PAIRS) };
+	return {
+		settled,
+		candidates: candidates.slice(
+			0,
+			loadPipelineConfig().stages.dedupe.maxPairs,
+		),
+	};
 }
 
 export interface DedupeStats {

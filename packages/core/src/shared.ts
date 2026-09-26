@@ -587,14 +587,15 @@ export function eventOverlapsRange(
  * pipeline's /ai feed builder (src/ai.ts) so both name a category's split
  * file the same way.
  */
-const CATEGORY_META: Record<Category, { slug: string; short: string }> = {
-	"Arts / Exhibition": { slug: "arts", short: "Arts" },
-	"Community / Other": { slug: "community", short: "Community" },
-	"Concert / Music": { slug: "music", short: "Music" },
-	"Public Lecture": { slug: "talks", short: "Talks" },
-	"Social / Meetup": { slug: "social", short: "Social" },
-	"Workshop / Class": { slug: "workshops", short: "Workshops" },
-};
+export const CATEGORY_META: Record<Category, { slug: string; short: string }> =
+	{
+		"Arts / Exhibition": { slug: "arts", short: "Arts" },
+		"Community / Other": { slug: "community", short: "Community" },
+		"Concert / Music": { slug: "music", short: "Music" },
+		"Public Lecture": { slug: "talks", short: "Talks" },
+		"Social / Meetup": { slug: "social", short: "Social" },
+		"Workshop / Class": { slug: "workshops", short: "Workshops" },
+	};
 
 /** URL-safe slug for a category label. */
 export function catToSlug(label: string): string {

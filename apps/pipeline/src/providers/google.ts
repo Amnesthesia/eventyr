@@ -1,11 +1,10 @@
 import { ask } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
+import { loadPipelineConfig } from "../config/load.js";
+
 import { dedupeEvents } from "../dedupe.js";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import { BaseProvider, splitIntoBatches } from "./base.ts";
-
-export const SEARCH_MODEL = "gemini-3.1-flash-lite";
-export const CURATE_MODEL = "gemini-3.1-flash-lite";
 
 export class GoogleProvider extends BaseProvider {
 	readonly name = "google";
@@ -22,7 +21,7 @@ export class GoogleProvider extends BaseProvider {
 	): Promise<string> {
 		return ask(prompt, {
 			provider: "gemini",
-			model: SEARCH_MODEL,
+			model: loadPipelineConfig().models.search.google.model as any,
 			stage: "search/google",
 			system,
 			search: true,
@@ -86,7 +85,7 @@ export class GoogleProvider extends BaseProvider {
 	): Promise<string[]> {
 		return ask(batches, {
 			provider: "gemini",
-			model: CURATE_MODEL,
+			model: loadPipelineConfig().models.searchCurate.model as any,
 			stage,
 			system,
 			maxOutputTokens,

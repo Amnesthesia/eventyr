@@ -22,6 +22,9 @@ export const RANK_DESCRIPTION_CHARS = 300;
  */
 export const RANK_PROMPT_VERSION = "v4";
 
+import { loadPipelineConfig } from "./config/load.js";
+import { stageModelCacheKey } from "./io/cacheKey.js";
+
 /**
  * What a score is actually a judgement of: the event's identity (title, start,
  * location — same basis as eventHash) plus the fields the prompt shows
@@ -36,11 +39,13 @@ export function rankReuseKey(cityKey: string, event: Event): string {
 		0,
 		RANK_DESCRIPTION_CHARS,
 	);
-	return [
+	const legacyKey = [
 		RANK_PROMPT_VERSION,
 		eventHash(cityKey, event),
 		(event.category as string) ?? "",
 		description,
 		tags,
 	].join("|");
+	const cfg = loadPipelineConfig();
+	return stageModelCacheKey(legacyKey, "rank", cfg.models.rank);
 }

@@ -1,3 +1,4 @@
+import { loadPipelineConfig } from "./config/load.js";
 // Static /ai/ feed for third-party AI assistants (Claude, ChatGPT, Gemini)
 // browsing this site on a user's behalf, plus the /llms.txt pointer they're
 // told to fetch first. No backend: everything here is a file written once per
@@ -34,11 +35,11 @@
 // whole published week has already passed (stale digest) gets zero day/week
 // files and a warning, not a file dated in the past.
 //
-// Day-file size is logged against a 50 KB soft target (DAY_FILE_LIMIT) but
+// Day-file size is logged against a 50 KB soft target (loadPipelineConfig().publish.ai.dayWarnBytes) but
 // never enforced by dropping events — a busy city on a busy day (Brisbane
 // runs 180+ events even after the LOW_SCORE_THRESHOLD floor) is allowed to
 // produce a bigger file rather than hide otherwise-recommendable events.
-// Week files get the category split when they exceed WEEK_FILE_LIMIT, below.
+// Week files get the category split when they exceed loadPipelineConfig().publish.ai.weekSplitBytes, below.
 
 import {
 	existsSync,
@@ -68,8 +69,6 @@ import { loadCityConfig } from "./config/city.js";
 import { DATA_ROOT, PROJECT_ROOT, WEB_PUBLIC_DIR } from "./config/paths.js";
 
 const AI_ROOT = join(WEB_PUBLIC_DIR, "ai");
-export const DAY_FILE_LIMIT = 50 * 1024;
-export const WEEK_FILE_LIMIT = 200 * 1024;
 
 // ---------------------------------------------------------------------------
 // Types
@@ -330,7 +329,9 @@ function processCity(
 		dayEntries.push(`/ai/${slug}/${date}.json`);
 		console.log(
 			`→ ai/${slug}/${date}.json (${file.events.length} events, ${(size / 1024).toFixed(1)} KB)` +
-				(size > DAY_FILE_LIMIT ? " ⚠ over 50 KB target" : ""),
+				(size > loadPipelineConfig().publish.ai.dayWarnBytes
+					? " ⚠ over 50 KB target"
+					: ""),
 		);
 	}
 
@@ -345,12 +346,12 @@ function processCity(
 		weekEntry = `/ai/${slug}/week-${payload.week_start}.json`;
 		console.log(
 			`→ ai/${slug}/week-${payload.week_start}.json (${week.events.length} events, ${(size / 1024).toFixed(1)} KB)` +
-				(size > WEEK_FILE_LIMIT
+				(size > loadPipelineConfig().publish.ai.weekSplitBytes
 					? " ⚠ over 200 KB target — also splitting by category"
 					: ""),
 		);
 
-		if (size > WEEK_FILE_LIMIT) {
+		if (size > loadPipelineConfig().publish.ai.weekSplitBytes) {
 			const splitDir = join(cityDir, `week-${payload.week_start}`);
 			keep.add(splitDir);
 			for (const category of CATEGORIES) {

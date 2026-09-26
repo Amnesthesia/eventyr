@@ -7,7 +7,8 @@ import { test } from "node:test";
 const tempDir = mkdtempSync(join(tmpdir(), "eventyr-"));
 process.env.EVENTYR_DATA_ROOT = tempDir;
 
-const { DATA_ROOT, loadCityConfig } = await import("./common.ts");
+const { DATA_ROOT } = await import("./config/paths.js");
+const { loadCityConfig } = await import("./config/city.js");
 const {
 	createGoogleGeocoder,
 	distanceKm,

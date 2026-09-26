@@ -12,14 +12,9 @@ import { DATA_ROOT, PROJECT_ROOT, WEB_PUBLIC_DIR } from "./config/paths.js";
 
 const BASE_URL = SITE_URL;
 
-const CATEGORY_SLUGS = [
-	"arts",
-	"community",
-	"music",
-	"talks",
-	"social",
-	"workshops",
-];
+import { CATEGORY_META } from "@dothingslol/core/shared";
+
+const CATEGORY_SLUGS = Object.values(CATEGORY_META).map((m) => m.slug);
 
 // Matches the slugs src/pages/[city]/[timeframe].astro generates.
 const TIMEFRAME_SLUGS = ["today", "tomorrow", "this-weekend"];

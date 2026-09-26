@@ -1,3 +1,4 @@
+import { loadPipelineConfig } from "../config/load.js";
 // The browser rung: the last thing tried, and used to *discover* a static
 // access path rather than to collect events week after week.
 //
@@ -39,8 +40,6 @@ import {
 	countRenderedDateHits,
 	launchBrowser,
 	looksEventish,
-	PAGE_TIMEOUT_MS,
-	SETTLE_MS,
 } from "@dothingslol/scraper/render";
 import yaml from "js-yaml";
 import type { Browser, BrowserContext } from "playwright";
@@ -52,15 +51,12 @@ import { DATA_ROOT, SOURCES_ROOT } from "../config/paths.js";
 const MAX_PAGES_PER_HOST = 2;
 /** Hosts rendered concurrently. Each holds its own browser context, so this
  * bounds memory as much as politeness. */
-export const CONCURRENT_HOSTS = 3;
+
 /**
  * Whole-run ceiling. A cron job must not be able to run for hours because 50
  * hosts each decided to be slow — probe already hung a run for 28 minutes on
  * a missing timeout, and that lesson is cheap to reapply here.
  */
-export const RUN_BUDGET_MS = Number(
-	process.env.RENDER_RUN_BUDGET_MS ?? 20 * 60_000,
-);
 
 export interface RenderFinding {
 	host: string;
@@ -112,10 +108,10 @@ async function renderHost(
 			try {
 				await page.goto(url, {
 					waitUntil: "domcontentloaded",
-					timeout: PAGE_TIMEOUT_MS,
+					timeout: loadPipelineConfig().scrape.render.pageTimeoutMs,
 				});
 				// Outlast the reload interstitial rather than reading the shell.
-				await page.waitForTimeout(SETTLE_MS);
+				await page.waitForTimeout(loadPipelineConfig().scrape.render.settleMs);
 				const html = await page.content();
 				// innerText via the locator API, not page.evaluate: this tsconfig
 				// has no DOM lib (it is a Node build), and reaching for one just
@@ -220,9 +216,12 @@ export async function renderTargets(
 	let index = 0;
 	const worker = async (): Promise<void> => {
 		while (index < targets.length) {
-			if (Date.now() - startedAt > RUN_BUDGET_MS) {
+			if (
+				Date.now() - startedAt >
+				loadPipelineConfig().scrape.render.runBudgetMs
+			) {
 				console.warn(
-					`⚠ render budget of ${Math.round(RUN_BUDGET_MS / 60000)}min reached — stopping with ${findings.length}/${targets.length} host(s) done`,
+					`⚠ render budget of ${Math.round(loadPipelineConfig().scrape.render.runBudgetMs / 60000)}min reached — stopping with ${findings.length}/${targets.length} host(s) done`,
 				);
 				return;
 			}
@@ -261,7 +260,12 @@ export async function renderTargets(
 	try {
 		await Promise.all(
 			Array.from(
-				{ length: Math.min(CONCURRENT_HOSTS, targets.length) },
+				{
+					length: Math.min(
+						loadPipelineConfig().scrape.render.concurrentHosts,
+						targets.length,
+					),
+				},
 				worker,
 			),
 		);

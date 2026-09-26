@@ -3,13 +3,8 @@
 
 import { askDetailed, parseJsonArray } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
-import {
-	type CandidatePair,
-	PAIR_BATCH_SIZE,
-	type PairClassifyFn,
-} from "./dedupe.ts";
-
-export const MODEL = "gemini-3.1-flash-lite";
+import { loadPipelineConfig } from "./config/load.js";
+import type { CandidatePair, PairClassifyFn } from "./dedupe.ts";
 
 const SYSTEM_PROMPT = `You decide whether two event listings describe the SAME real-world event, gathered from different sources that word things differently.
 
@@ -40,9 +35,12 @@ function summarise(e: Record<string, unknown>): Record<string, unknown> {
 
 export function createGeminiPairClassifier(): PairClassifyFn {
 	return async function classify(pairs: CandidatePair[]): Promise<boolean[]> {
-		const batches = chunkArray(pairs, PAIR_BATCH_SIZE);
+		const batches = chunkArray(
+			pairs,
+			loadPipelineConfig().stages.dedupe.pairBatchSize,
+		);
 		// One prompt per batch, all in flight under llm's Gemini limiter (the
-		// process-wide ceiling; MAX_PAIRS allows ~100 batches and an uncapped
+		// process-wide ceiling; loadPipelineConfig().stages.dedupe.maxPairs allows ~100 batches and an uncapped
 		// fan-out at that width just earns 429s).
 		const outcomes = await askDetailed(
 			batches.map((batch) =>
@@ -52,7 +50,7 @@ export function createGeminiPairClassifier(): PairClassifyFn {
 			),
 			{
 				provider: "gemini",
-				model: MODEL,
+				model: loadPipelineConfig().models.dedupe.model as any,
 				stage: "dedupe",
 				system: SYSTEM_PROMPT,
 				maxOutputTokens: 4000,

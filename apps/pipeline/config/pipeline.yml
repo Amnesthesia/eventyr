@@ -86,6 +86,7 @@ stages:
       graceDays: 28
       ledgerWeeks: 26
       minHistoryWeeks: 8
+      unlistedReportMin: 5
   dedupe:
     pairBatchSize: 30
     concurrency: 6

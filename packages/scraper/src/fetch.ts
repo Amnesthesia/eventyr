@@ -156,6 +156,7 @@ export class SourceFetcher {
 	private readonly minIntervalMs: number;
 	private readonly maxConcurrencyPerHost: number;
 	private readonly maxRetries: number;
+	private readonly baseBackoffMs: number;
 	// ponytail: rate limiting and concurrency caps are per-process maps, so two
 	// concurrent runs (a retried workflow, a manual run alongside CI) hit a
 	// host at 2x the stated limit. Needs a shared store if that becomes real.
@@ -170,6 +171,7 @@ export class SourceFetcher {
 		minIntervalMs?: number;
 		maxConcurrencyPerHost?: number;
 		maxRetries?: number;
+		baseBackoffMs?: number;
 		fetchImpl?: typeof fetch;
 		store?: HttpCacheStore;
 	}) {
@@ -179,6 +181,7 @@ export class SourceFetcher {
 		this.maxConcurrencyPerHost =
 			opts?.maxConcurrencyPerHost ?? DEFAULT_MAX_CONCURRENCY_PER_HOST;
 		this.maxRetries = opts?.maxRetries ?? DEFAULT_MAX_RETRIES;
+		this.baseBackoffMs = opts?.baseBackoffMs ?? BASE_BACKOFF_MS;
 		this.fetchImpl = opts?.fetchImpl ?? browserFetch;
 	}
 
@@ -260,7 +263,7 @@ export class SourceFetcher {
 							`${res.status} from ${url} after ${attempt + 1} attempts`,
 						);
 					}
-					await sleep(backoffDelay(attempt, BASE_BACKOFF_MS));
+					await sleep(backoffDelay(attempt, this.baseBackoffMs));
 					continue;
 				}
 
@@ -313,7 +316,7 @@ export class SourceFetcher {
 				// spent waiting to re-learn the same answer.
 				if (isPermanentFailure(err)) break;
 				if (attempt === this.maxRetries) break;
-				await sleep(backoffDelay(attempt, BASE_BACKOFF_MS));
+				await sleep(backoffDelay(attempt, this.baseBackoffMs));
 			}
 		}
 		throw lastErr instanceof Error ? lastErr : new Error(String(lastErr));

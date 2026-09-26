@@ -1,5 +1,7 @@
 import { askDetailed, type OpenAIModel } from "@dothingslol/llm";
+import { loadPipelineConfig } from "../config/load.js";
 import type { ProviderOptions, SearchResult } from "./base.ts";
+
 import { BaseProvider, searchModel } from "./base.ts";
 
 // Static key groups every search call into the same cache bucket — combined
@@ -13,7 +15,6 @@ const PROMPT_CACHE_KEY = "eventyr-events-search";
  * uncapped agentic loop is an uncapped bill — this ran with no ceiling at all,
  * which is what made the provider look "too expensive to keep on".
  */
-export const MAX_TOOL_CALLS = 4;
 
 // gpt-5-mini by default; anything not gpt-5* goes through chat.completions
 // without web search (see searchEvents), e.g. OPENAI_SEARCH_MODEL=gpt-4.1-mini.
@@ -65,7 +66,8 @@ export class OpenAIProvider extends BaseProvider {
 						// venue page to open does not need a long think.
 						thinking: "low" as const,
 						// The only ceiling on the search loop, i.e. on the bill.
-						maxSearches: MAX_TOOL_CALLS,
+						maxSearches:
+							loadPipelineConfig().stages.collect.openai.maxToolCalls,
 						providerOptions: {
 							text: { verbosity: "low" },
 							prompt_cache_key: PROMPT_CACHE_KEY,

@@ -118,6 +118,7 @@ const PipelineConfigSchema = z.object({
 				graceDays: z.number().int().min(0),
 				ledgerWeeks: z.number().int().positive(),
 				minHistoryWeeks: z.number().int().positive(),
+				unlistedReportMin: z.number().int().positive(),
 			}),
 		}),
 		dedupe: z.object({

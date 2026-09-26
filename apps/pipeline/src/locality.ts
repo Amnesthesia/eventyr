@@ -1,3 +1,4 @@
+import { loadPipelineConfig } from "./config/load.js";
 // Answers "is this venue actually in the city we are publishing for?" by
 // geocoding the location string and measuring how far it is from the city
 // centre.
@@ -39,8 +40,6 @@ import { DATA_ROOT } from "./config/paths.js";
 
 const ENDPOINT = "https://maps.googleapis.com/maps/api/geocode/json";
 /** Concurrent geocode requests. The quota is generous; this is politeness. */
-export const MAX_CONCURRENT = 8;
-export const TIMEOUT_MS = 10_000;
 
 export interface Place {
 	lat: number;
@@ -230,7 +229,9 @@ export function createGoogleGeocoder(apiKey: string): Geocoder {
 		if (restrictToAU) params.set("components", "country:AU");
 		try {
 			const res = await fetch(`${ENDPOINT}?${params}`, {
-				signal: AbortSignal.timeout(TIMEOUT_MS),
+				signal: AbortSignal.timeout(
+					loadPipelineConfig().stages.locality.timeoutMs,
+				),
 			});
 			const body = (await res.json()) as GeocodeResponse;
 			if (body.status === "OK") {
@@ -265,7 +266,7 @@ export function createGoogleGeocoder(apiKey: string): Geocoder {
 	return async function geocode(locations) {
 		const results = await mapWithConcurrency(
 			locations,
-			MAX_CONCURRENT,
+			loadPipelineConfig().stages.locality.concurrency,
 			async (location): Promise<[string, Place | null][]> => {
 				// Australia first, and for almost every location that is the only
 				// call: bare venue names resolve correctly under the restriction

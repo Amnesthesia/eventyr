@@ -7,9 +7,9 @@ import {
 	MODELS,
 	type OpenAIModel,
 } from "@dothingslol/llm";
-import { INTERESTS } from "../common.js";
-import type { CityConfig, LlmSourceName } from "../common.ts";
+import type { CityConfig, LlmSourceName } from "../config/city.js";
 import { llmSourceStrings } from "../config/city.js";
+import { loadInterests } from "../config/load.js";
 import { curatedPath, PROJECT_ROOT } from "../config/paths.js";
 import { fmtDate } from "../config/week.js";
 
@@ -267,7 +267,7 @@ export abstract class BaseProvider {
 		const filterRule =
 			"1. FILTER: Remove any sports, MLM, sales-pitch, or clearly irrelevant events.";
 		return `You are a personal events curator for someone in ${cityName} with these interests:
-${INTERESTS}
+${loadInterests()}
 
 The user will give you raw event listings from a single search source.
 
@@ -391,7 +391,7 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 		// prefix-based prompt caching (OpenAI, Gemini) actually hit cache
 		// instead of re-paying full price on every tier.
 		return (
-			`${INTERESTS}\n\n${OUTPUT_FORMAT_RULES}\n\n` +
+			`${loadInterests()}\n\n${OUTPUT_FORMAT_RULES}\n\n` +
 			`You are an events researcher for ${cityCfg.name}, Australia. ` +
 			`Find in-person events for ${dateRange} matching the interests above. ` +
 			"Search Eventbrite, Meetup, Humanitix, venue websites, community platforms, Facebook Events, and local guides."

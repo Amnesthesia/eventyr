@@ -1,3 +1,7 @@
+import { loadPipelineConfig } from "../config/load.js";
+import { LISTING_PATH } from "../config/paths.js";
+
+const cfg = loadPipelineConfig();
 // Finds the real, non-SPA listing page for every source in one city's
 // sources/{city}.yml and promotes the ones that work to method: scraper.
 //
@@ -72,20 +76,20 @@ import { isPast, withinWindow } from "./normalise.ts";
 // These four thresholds decide who gets an LLM call. They are first-run
 // guesses; the report prints the raw signals for every host so they can be
 // retuned and the classification re-derived with --report-only, no refetch.
-export const MIN_TEXT_LENGTH = 1200; // below this a page is a shell, not a listing
+export const MIN_TEXT_LENGTH = cfg.stages.probe.gate.minTextLength; // below this a page is a shell, not a listing
 // A page needs at least as many date strings as the promotion gate needs dated
 // events, or it cannot clear that bar however well extraction goes — so
 // refusing it here is free accuracy, not a compromise.
-export const MIN_DATE_HITS = 5; // a listing page mentions dates repeatedly
+export const MIN_DATE_HITS = cfg.stages.probe.gate.minDateHits; // a listing page mentions dates repeatedly
 // Fetching is cheap (no model call), so the probe is generous with candidate
 // pages and strict about how many get extracted. Every link in the site's own
 // menu is a candidate: menus are where listing pages live, and their labels
 // are often things no path convention would guess ("Gig Guide", "Programme").
 /** Suggested URLs fetched per source. */
-export const MAX_CANDIDATE_FETCHES = 6;
+export const MAX_CANDIDATE_FETCHES = cfg.stages.probe.maxCandidateFetches;
 /** Listing URLs kept for a promoted source (a venue may list events and
  * exhibitions on separate pages, and both are worth scraping). */
-export const MAX_KEPT_URLS = 3;
+export const MAX_KEPT_URLS = cfg.stages.probe.maxKeptUrls;
 /**
  * Pages actually extracted per source. Candidates are already ranked (sitemap,
  * declared, model-suggested, canonical, homepage) and scored by date hits and
@@ -93,7 +97,7 @@ export const MAX_KEPT_URLS = 3;
  * flash-lite to re-confirm negatives. In the runs so far the sixth candidate
  * has never been the one that verified.
  */
-export const MAX_EVALUATIONS = 2;
+export const MAX_EVALUATIONS = cfg.stages.probe.maxEvaluations;
 /**
  * Feed URLs tried per source. They are free to evaluate (no model call), so
  * the only cost is the fetch — but one hostile <head> full of <link rel> tags
@@ -117,7 +121,7 @@ const MAX_FEED_CANDIDATES = 4;
  * generous; what it catches is a page that is essentially only history
  * (doo-bop's /events: 30 dated, 30 past, 0 upcoming).
  */
-export const MIN_DATED_TO_PROMOTE = 3;
+export const MIN_DATED_TO_PROMOTE = cfg.stages.probe.promote.minDated;
 /**
  * One *upcoming* event is enough — where upcoming means anywhere in the
  * future, not just inside the fortnight we happen to publish next.
@@ -135,8 +139,8 @@ export const MIN_DATED_TO_PROMOTE = 3;
  * about the programme. A venue with a quiet fortnight but a season on sale is
  * still a scrape target; the weekly window filter decides what publishes.
  */
-export const MIN_UPCOMING_TO_PROMOTE = 1;
-export const MAX_PAST_RATIO = 10;
+export const MIN_UPCOMING_TO_PROMOTE = cfg.stages.probe.promote.minUpcoming;
+export const MAX_PAST_RATIO = cfg.stages.probe.promote.maxPastRatio;
 /**
  * Sources per batched listing-URL request, and how many of those requests run
  * at once. Smaller batches keep the model's attention per source; running
@@ -144,9 +148,9 @@ export const MAX_PAST_RATIO = 10;
  */
 // flash-lite for the bulk batched discovery; the larger model is reserved for
 // the per-source second opinion, which is asked far less often.
-export const DISCOVERY_MODEL = "gemini-3.1-flash-lite";
-export const URL_BATCH_SIZE = 20;
-export const URL_BATCH_CONCURRENCY = 4;
+export const DISCOVERY_MODEL = cfg.models.probe.model as any;
+export const URL_BATCH_SIZE = cfg.stages.probe.urlBatchSize;
+export const URL_BATCH_CONCURRENCY = cfg.stages.probe.urlBatchConcurrency;
 /**
  * Sources probed at once.
  *
@@ -159,14 +163,10 @@ export const URL_BATCH_CONCURRENCY = 4;
  * What this actually buys: a brisbane run is 427 hosts, and the long pole is
  * hosts that are slow or dead rather than anything compute-bound.
  */
-export const CONCURRENT_HOSTS = Number(
-	process.env.PROBE_CONCURRENT_HOSTS ?? 20,
-);
+export const CONCURRENT_HOSTS = cfg.stages.probe.concurrentHosts;
 /** Wall-clock ceiling per source. Generous — a source legitimately fetches a
  * sitemap tree plus several pages — but finite. */
-const SOURCE_TIMEOUT_MS = Number(
-	process.env.PROBE_SOURCE_TIMEOUT_MS ?? 180_000,
-);
+const SOURCE_TIMEOUT_MS = cfg.stages.probe.sourceTimeoutMs;
 
 /**
  * Hosts that stay on LLM search because there is genuinely nothing to fetch:
@@ -395,8 +395,6 @@ interface Fetched {
  * either a Custom Search key or scraping google.com/search, which reliably
  * serves a challenge page rather than results.)
  */
-const LISTING_PATH =
-	/\/(whats[-_]?on|what-s-on|events?|event[-_]?calendar|calendar|shows?|performances?|programme?|line[-_]?up|gigs?|gig[-_]?guide|upcoming|exhibitions?|workshops?|classes|screenings?|buy[-_]?tickets|tickets?|this[-_]?week)(\/|$|\?)/i;
 
 /**
  * Sitemap crawling limits. Generous on fetches (they are cheap HTTP and cost no

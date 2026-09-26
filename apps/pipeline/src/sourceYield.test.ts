@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { SourceEntry } from "./common.ts";
+import type { SourceEntry } from "./config/city.js";
 import {
 	matchSource,
 	primaryHost,

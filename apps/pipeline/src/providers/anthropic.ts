@@ -1,6 +1,6 @@
 import { askDetailed } from "@dothingslol/llm";
-import { INTERESTS } from "../common.js";
 import { llmSourceStrings } from "../config/city.js";
+import { loadInterests, loadPipelineConfig } from "../config/load.js";
 import { fmtDate } from "../config/week.js";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import {
@@ -28,7 +28,6 @@ const SEARCH_MODEL = searchModel(
  * searches — about $0.06 per search on Sonnet 5, and nothing else in the call
  * comes close. Anthropic's own guidance is 1–3 searches for lookups like this.
  */
-export const MAX_WEB_SEARCHES = 3;
 
 export class AnthropicProvider extends BaseProvider {
 	readonly name = "anthropic";
@@ -57,7 +56,7 @@ export class AnthropicProvider extends BaseProvider {
 		// Two system blocks: the stable prefix (interests, format rules) is
 		// the cached one; the city/date/source block varies per call.
 		const system = [
-			`The person you are researching events for has the following interests:\n${INTERESTS}\n\n` +
+			`The person you are researching events for has the following interests:\n${loadInterests()}\n\n` +
 				`${OUTPUT_FORMAT_RULES}\n` +
 				"Aim for at least 15 events.",
 			`You are an events researcher for ${cityName}. Today is ${today.toLocaleDateString("en-AU", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: cityCfg.timezone })}.\n` +
@@ -81,7 +80,7 @@ export class AnthropicProvider extends BaseProvider {
 			// Basic search (web_search_20250305), not dynamic filtering — the
 			// transport's tool comment records why.
 			search: true,
-			maxSearches: MAX_WEB_SEARCHES,
+			maxSearches: loadPipelineConfig().stages.collect.anthropic.maxWebSearches,
 			providerOptions: { tool_choice: { type: "any" } },
 		});
 

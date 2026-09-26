@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { CityConfig } from "../common.ts";
+import type { CityConfig } from "../config/city.js";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 import { BaseProvider, selectTiers } from "./base.ts";
 

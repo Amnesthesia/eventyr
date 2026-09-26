@@ -1,5 +1,7 @@
 // The pipeline's CacheStore for @dothingslol/llm — one JSON file per key
 // under data/_cache/extractions — and the page-level extraction cache built
+import { loadPipelineConfig } from "../config/load.js";
+
 // on it (was adapters/extractionCache.ts; same keys, same entries, so nothing
 // recorded before 1.6 is lost).
 
@@ -25,15 +27,15 @@ export const EXTRACTION_CACHE_DIR = join(DATA_ROOT, "_cache", "extractions");
  * changes most weeks, so stale entries would otherwise accumulate without
  * bound.
  */
-export const MAX_AGE_DAYS = 60;
-
 export function createFileCache(dir = EXTRACTION_CACHE_DIR): CacheStore {
 	let pruned = false;
 	function pruneOnce(): void {
 		if (pruned) return;
 		pruned = true;
+		const cfg = loadPipelineConfig();
+		const maxAgeDays = cfg.llm.cache.extractionMaxAgeDays;
 		try {
-			const cutoff = Date.now() - MAX_AGE_DAYS * 86_400_000;
+			const cutoff = Date.now() - maxAgeDays * 86_400_000;
 			let removed = 0;
 			for (const name of readdirSync(dir)) {
 				const path = join(dir, name);
@@ -44,7 +46,7 @@ export function createFileCache(dir = EXTRACTION_CACHE_DIR): CacheStore {
 			}
 			if (removed > 0) {
 				console.log(
-					`  → [extraction-cache] pruned ${removed} entr${removed === 1 ? "y" : "ies"} older than ${MAX_AGE_DAYS} days`,
+					`  → [extraction-cache] pruned ${removed} entr${removed === 1 ? "y" : "ies"} older than ${maxAgeDays} days`,
 				);
 			}
 		} catch {

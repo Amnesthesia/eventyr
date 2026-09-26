@@ -1,5 +1,7 @@
 // Scrape pass: runs every method:scraper source in sources/{city}.yml
 // through the deterministic fetch/extract path and writes one annotated,
+import { loadPipelineConfig } from "../config/load.js";
+
 // pipeline-shaped JSON file per source. Runs BEFORE the AI search
 // (src/collection.ts), which now only has to cover what isn't scrapable —
 // scraped sources are physically absent from sources/{city}.yml, so no
@@ -85,13 +87,16 @@ const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
  * every source is a different host, so this is bounded by how many LLM
  * extraction calls we want in flight rather than by politeness.
  */
-export const SOURCE_CONCURRENCY = 5;
 /** Listing pages of one source fetched at once. They share a host, and the
  * fetcher's per-host cap is what actually bounds this. */
 const LISTING_CONCURRENCY = 2;
 
 const WINDOW_FROM = toISODate(new Date(), CITY_TZ);
-const WINDOW_TO = addDays(toISODate(sunday, CITY_TZ), 7);
+const cfg = loadPipelineConfig();
+const WINDOW_TO = addDays(
+	toISODate(sunday, CITY_TZ),
+	cfg.publish.windowDaysAfterWeek,
+);
 
 /**
  * The barren report gates whether the AI search covers a scraper source, so it
@@ -484,7 +489,14 @@ async function main(): Promise<void> {
 	// instance would make the rate limiting meaningless for sources that
 	// share a host.
 	const store = createHttpCacheStore();
-	const fetcher = new SourceFetcher({ store });
+	const fetcherOpts = {
+		store,
+		minIntervalMs: cfg.scrape.perHost.minIntervalMs,
+		maxConcurrencyPerHost: cfg.scrape.perHost.maxConcurrency,
+		maxRetries: cfg.scrape.retries.max,
+		baseBackoffMs: cfg.scrape.retries.baseBackoffMs,
+	};
+	const fetcher = new SourceFetcher(fetcherOpts);
 	/**
 	 * Sources whose events only exist after JavaScript runs, fetched through a
 	 * real browser. Separate instance so the browser path cannot inherit the
@@ -496,7 +508,10 @@ async function main(): Promise<void> {
 	const fetcherFor = (source: SourceDefinition): SourceFetcher => {
 		if (source.strategy !== "render") return fetcher;
 		if (!renderFetcher) {
-			renderFetcher = new SourceFetcher({ fetchImpl: renderFetch, store });
+			renderFetcher = new SourceFetcher({
+				...fetcherOpts,
+				fetchImpl: renderFetch,
+			});
 		}
 		return renderFetcher;
 	};
@@ -527,35 +542,39 @@ async function main(): Promise<void> {
 	// limiting lives in the shared SourceFetcher rather than in this loop, so
 	// serialising here bought nothing but wall-clock: 23 sources took as long
 	// as the slowest 23 pages end to end.
-	await mapWithConcurrency(sources, SOURCE_CONCURRENCY, async (source) => {
-		try {
-			const { kept, stats, suspect, reason } = await collectSource(
-				source,
-				fetcherFor(source),
-				annotate,
-				extractPage,
-			);
-			if (kept === 0) {
+	await mapWithConcurrency(
+		sources,
+		loadPipelineConfig().stages.collectAdapters.concurrency,
+		async (source) => {
+			try {
+				const { kept, stats, suspect, reason } = await collectSource(
+					source,
+					fetcherFor(source),
+					annotate,
+					extractPage,
+				);
+				if (kept === 0) {
+					barren.push(source.name);
+					barrenReasons.set(source.name, reason);
+					writeBarren(barren, barrenReasons);
+				}
+				if (suspect) suspects.push(source.id);
+				total += kept;
+				totals.found += stats.total;
+				totals.past += stats.past;
+				totals.later += stats.later;
+				totals.undated += stats.noDate;
+			} catch (err) {
 				barren.push(source.name);
-				barrenReasons.set(source.name, reason);
+				barrenReasons.set(source.name, (err as Error).message);
 				writeBarren(barren, barrenReasons);
+				// runAdapter already isolates per-source failures; this catches the
+				// rest (annotation blowup, unwritable path) so one bad source can't
+				// end the run.
+				console.error(`  ✗ [${source.id}] ${(err as Error).message}`);
 			}
-			if (suspect) suspects.push(source.id);
-			total += kept;
-			totals.found += stats.total;
-			totals.past += stats.past;
-			totals.later += stats.later;
-			totals.undated += stats.noDate;
-		} catch (err) {
-			barren.push(source.name);
-			barrenReasons.set(source.name, (err as Error).message);
-			writeBarren(barren, barrenReasons);
-			// runAdapter already isolates per-source failures; this catches the
-			// rest (annotation blowup, unwritable path) so one bad source can't
-			// end the run.
-			console.error(`  ✗ [${source.id}] ${(err as Error).message}`);
-		}
-	});
+		},
+	);
 	// Anything that produced nothing goes back to the AI search this run, so a
 	// rotted listing URL degrades to search coverage instead of no coverage.
 	// One browser for the whole run, so it closes once — not per source.

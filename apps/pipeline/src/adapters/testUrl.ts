@@ -1,5 +1,7 @@
 // Manual check for the scrape path: point it at any URL and see exactly what
 // that page would contribute to the pipeline — the same fetch (robots.txt,
+import { loadPipelineConfig } from "../config/load.js";
+
 // rate limit), the same JSON-LD-then-LLM extraction, the same date parsing,
 // week filter, field mapping and annotation that `pnpm collect-adapters`
 // applies to a real source.
@@ -93,7 +95,10 @@ if (RAW) {
 	// you want when inspecting a page in isolation rather than as this week's
 	// contribution.
 	const from = ALL ? "0000-01-01" : toISODate(new Date(), CITY_TZ);
-	const to = ALL ? "9999-12-31" : addDays(toISODate(sunday, CITY_TZ), 7);
+	const cfg = loadPipelineConfig();
+	const to = ALL
+		? "9999-12-31"
+		: addDays(toISODate(sunday, CITY_TZ), cfg.publish.windowDaysAfterWeek);
 	const { prepared, stats } = prepareCandidates(
 		candidates,
 		source,

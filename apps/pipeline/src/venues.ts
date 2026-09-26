@@ -1,5 +1,8 @@
 // Gives every event a canonical `venue_name`, so the site can list everything
 // at one venue and "QAG" and "Queensland Art Gallery" are one venue, not two.
+import { loadPipelineConfig } from "./config/load.js";
+import { stageModelCacheKey } from "./io/cacheKey.js";
+
 //
 // There was no venue field to filter on: `event.venue` is the source tier
 // (curate.ts), and the real venue exists only inside the free-text `location`
@@ -40,17 +43,16 @@ import { installUsageReporting } from "./io/usage.ts";
 // Not flash-lite: on the first Gold Coast run it merged "Mudgeeraba Studio"
 // into "Benowa Studio" despite the prompt's branch rule. Every answer is
 // cached for good, so the bigger model is paid once per venue name.
-export const VENUE_MODEL = "gemini-3.5-flash";
+
 /** Bump when the prompt, model or rawVenue changes: cached answers were
  * answers to them. */
 export const VENUE_PROMPT_VERSION = 5;
 /** Matching is cross-item reasoning, so batches stay small enough to keep
  * every name in view. The steady-state week has fewer new names than this. */
-export const BATCH_SIZE = 40;
 
 /** Raw venue string ⇒ canonical name, or null for "not a venue". */
 export interface VenueCache {
-	prompt_version: number;
+	prompt_version: number | string;
 	map: Record<string, string | null>;
 }
 
@@ -252,7 +254,9 @@ export async function resolveVenues(opts: {
 	// batches created, which is what lets "QAG" in batch 1 absorb "Queensland
 	// Art Gallery" in batch 3. Only the first run over a city has more than one
 	// batch.
-	for (const batch of classify ? chunkArray(pending, BATCH_SIZE) : []) {
+	for (const batch of classify
+		? chunkArray(pending, loadPipelineConfig().stages.venues.batchSize)
+		: []) {
 		const knownList = [...known];
 		const judgements = await classify?.(
 			knownList,
@@ -369,7 +373,7 @@ function geminiClassifier(cityName: string): VenueClassifyFn {
 			try {
 				const raw = await ask(buildUser(cityName, known, batch), {
 					provider: "gemini",
-					model: VENUE_MODEL,
+					model: loadPipelineConfig().models.venues.model as any,
 					stage: "venues",
 					system: SYSTEM_PROMPT,
 					maxOutputTokens: 4096,
@@ -401,15 +405,24 @@ export function venueCachePath(city: string): string {
 	return join(DATA_ROOT, city, "venues.json");
 }
 
+function getVenueCacheVersion(): string | number {
+	const legacyKey = VENUE_PROMPT_VERSION.toString();
+	const cfg = loadPipelineConfig();
+	const key = stageModelCacheKey(legacyKey, "venues", cfg.models.venues);
+	// Return as number if unchanged to keep the exact original type in the JSON
+	return key === legacyKey ? VENUE_PROMPT_VERSION : key;
+}
+
 function loadCache(path: string): VenueCache {
+	const version = getVenueCacheVersion();
 	try {
 		const c = JSON.parse(readFileSync(path, "utf-8")) as VenueCache;
-		if (c.prompt_version === VENUE_PROMPT_VERSION && c.map) return c;
+		if (c.prompt_version === version && c.map) return c;
 		console.log("  cache prompt version changed — re-resolving every venue");
 	} catch {
 		// no cache yet
 	}
-	return { prompt_version: VENUE_PROMPT_VERSION, map: {} };
+	return { prompt_version: version, map: {} };
 }
 
 function writeCache(path: string, cache: VenueCache): void {

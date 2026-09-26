@@ -8,9 +8,9 @@ import {
 } from "@dothingslol/core/shared";
 import { ask } from "@dothingslol/llm";
 import { chunkArray, mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { INTERESTS } from "./common.js";
 import { loadCityConfig } from "./config/city.js";
 import { requireEnv } from "./config/env.js";
+import { loadInterests, loadPipelineConfig } from "./config/load.js";
 import { DATA_ROOT } from "./config/paths.js";
 import { fmtDate, getWeekRange } from "./config/week.js";
 import { installUsageReporting } from "./io/usage.ts";
@@ -20,14 +20,7 @@ import {
 	rankReuseKey,
 } from "./rankReuse.ts";
 
-export const RANK_MODEL = "gemini-3.5-flash";
-/**
- * Events per ranking call. One call for the whole city risked silently
- * exceeding maxOutputTokens at 400+ events, and a parse failure assigns a
- * neutral 5 to *every* event — losing the ranking entirely. Chunking bounds
- * that blast radius to one chunk and lets the calls run concurrently.
- */
-export const RANK_CHUNK = 60;
+// RANK_CHUNK and RANK_MODEL are now read from pipeline.yml
 
 const CITY = requireEnv("CITY");
 const CITY_TZ = loadCityConfig(CITY).timezone;
@@ -38,7 +31,7 @@ const FORCE = ["1", "true", "yes"].includes(
 
 const RANK_SYSTEM = `You are scoring events for relevance to a specific person's interests.
 
-${INTERESTS}
+${loadInterests()}
 
 You will receive a numbered list of events. Score each one 1–10 for how well it matches the interests above.
 
@@ -189,11 +182,12 @@ async function main(): Promise<void> {
 	// cross-event reasoning, so a chunk boundary costs nothing, while one call
 	// for 400+ events risked a silent truncation that assigns a neutral 5 to
 	// every event and erases the ranking.
-	const chunks = chunkArray(toScore, RANK_CHUNK);
+	const cfg = loadPipelineConfig();
+	const chunks = chunkArray(toScore, cfg.stages.rank.batchSize);
 	const results = await mapWithConcurrency(chunks, 3, async (chunk, i) => {
 		const rawText = await ask(buildRankUser(chunk.map((c) => c.event)), {
-			provider: "gemini",
-			model: RANK_MODEL,
+			provider: cfg.models.rank.provider as any,
+			model: cfg.models.rank.model as any,
 			stage: "rank",
 			system: RANK_SYSTEM,
 			maxOutputTokens: 8192,

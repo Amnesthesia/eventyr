@@ -23,7 +23,7 @@ const cfg = loadPipelineConfig();
 
 configureLLM({
 	concurrency: cfg.llm.concurrency,
-	maxCalls: cfg.llm.budget.maxCalls,
+	maxCalls: cfg.llm.budget.maxCalls || undefined,
 	cacheStore: createFileCache(),
 	batchStore: createBatchStore(),
 	replay: mode

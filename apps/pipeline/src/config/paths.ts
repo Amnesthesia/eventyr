@@ -42,3 +42,10 @@ export function adapterRawDir(sourceId: string): string {
 export function adapterCachePath(sourceId: string): string {
 	return join(DATA_ROOT, "_cache", `${sourceId}.json`);
 }
+
+/**
+ * Paths that name an events listing. Used by probe to rank candidates, and
+ * triage to score index pages.
+ */
+export const LISTING_PATH =
+	/\/(whats[-_]?on|what-s-on|events?|event[-_]?calendar|calendar|shows?|performances?|programme?|line[-_]?up|gigs?|gig[-_]?guide|upcoming|exhibitions?|workshops?|classes|screenings?|buy[-_]?tickets|tickets?|this[-_]?week)(\/|$|\?)/i;

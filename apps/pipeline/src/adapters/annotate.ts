@@ -13,11 +13,9 @@ import { askDetailed, parseJsonArray } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
 import { isValidCategory } from "./normalise.ts";
 
-export const ANNOTATE_MODEL = "gemini-3.1-flash-lite";
 // Annotation classifies each event independently — no cross-item
 // reasoning — so a bigger batch costs accuracy far less than extraction
 // would, and halves the calls.
-export const BATCH_SIZE = 40;
 
 export interface Annotation {
 	category: string;
@@ -92,7 +90,10 @@ export function coerce(raw: Record<string, unknown> | undefined): Annotation {
 
 export function createGeminiAnnotator(): AnnotateFn {
 	return async function annotate(events, sourceName) {
-		const batches = chunkArray(events, BATCH_SIZE);
+		const batches = chunkArray(
+			events,
+			loadPipelineConfig().stages.annotate.batchSize,
+		);
 		// One prompt per batch, concurrent under llm's Gemini limiter.
 		const outcomes = await askDetailed(
 			batches.map((batch) => {
@@ -107,7 +108,7 @@ export function createGeminiAnnotator(): AnnotateFn {
 			}),
 			{
 				provider: "gemini",
-				model: ANNOTATE_MODEL,
+				model: loadPipelineConfig().models.annotate.model as any,
 				stage: "annotate",
 				system: SYSTEM_PROMPT,
 				maxOutputTokens: 8000,
@@ -152,12 +153,17 @@ export const ANNOTATE_PROMPT_VERSION = "v4";
  * and the prompt have to move together or one of them is a lie. */
 const MAX_TAGS = 8;
 
+import { loadPipelineConfig } from "../config/load.js";
+import { stageModelCacheKey } from "../io/cacheKey.js";
+
 /** Identity for reusing a previous week's annotation: same title, start and
  * venue. Matches the basis of eventHash in shared.ts. */
 export function annotationKey(event: Record<string, unknown>): string {
 	const s = (k: string): string =>
 		typeof event[k] === "string" ? (event[k] as string) : "";
-	return `${ANNOTATE_PROMPT_VERSION}|${s("title")}|${s("datetime_iso")}|${s("location")}`;
+	const legacyKey = `${ANNOTATE_PROMPT_VERSION}|${s("title")}|${s("datetime_iso")}|${s("location")}`;
+	const cfg = loadPipelineConfig();
+	return stageModelCacheKey(legacyKey, "annotate", cfg.models.annotate);
 }
 
 /**
