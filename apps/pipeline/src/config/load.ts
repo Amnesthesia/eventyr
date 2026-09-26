@@ -6,8 +6,8 @@
  * - Validated with zod. Model entries must be a key of @dothingslol/llm's MODELS;
  *   the loader fails with the offending key path if not.
  * - Env overrides (GEMINI_CONCURRENCY, GEMINI_MAX_CALLS, RENDER_RUN_BUDGET_MS,
- *   PROBE_CONCURRENT_HOSTS, PROBE_SOURCE_TIMEOUT_MS, ANTHROPIC_SEARCH_MODEL) apply after
- *   validation and take precedence over the YAML.
+ *   PROBE_CONCURRENT_HOSTS, PROBE_SOURCE_TIMEOUT_MS, ANTHROPIC_SEARCH_MODEL,
+ *   OPENAI_SEARCH_MODEL) apply after validation and take precedence over the YAML.
  */
 
 import { readFileSync } from "node:fs";
@@ -197,6 +197,19 @@ export function loadPipelineConfig(
 			);
 		}
 		cfg.models.search.anthropic.model = overrideModel;
+	}
+	// OPENAI_SEARCH_MODEL: switches to a non-gpt-5* model, which routes the
+	// provider through chat.completions instead of the Responses web_search
+	// tool (see CLAUDE.md "Provider architecture"). This is what
+	// scripts/llm-parity.mjs's collect-openai-chat golden exercises.
+	if (process.env.OPENAI_SEARCH_MODEL) {
+		const overrideModel = process.env.OPENAI_SEARCH_MODEL;
+		if (!validModelNames.includes(overrideModel)) {
+			throw new Error(
+				`OPENAI_SEARCH_MODEL=${overrideModel} is not a recognised model. Known models: ${validModelNames.join(", ")}`,
+			);
+		}
+		cfg.models.search.openai.model = overrideModel;
 	}
 
 	_cached = cfg;

@@ -59,7 +59,7 @@ export const TIER_INSTRUCTIONS: Record<string, string> = {
 export function selectTiers(
 	providerName: string,
 	tiers: readonly string[],
-	env: NodeJS.ProcessEnv = process.env,
+	env: NodeJS.ProcessEnv,
 ): string[] {
 	const raw = env[`${providerName.toUpperCase()}_TIERS`];
 	if (!raw) return [...tiers];
@@ -70,38 +70,6 @@ export function selectTiers(
 			.filter(Boolean),
 	);
 	return tiers.filter((t) => allow.has(t));
-}
-
-/**
- * The search model for a provider, overridable per run
- * (ANTHROPIC_SEARCH_MODEL, OPENAI_SEARCH_MODEL). A name the price table does
- * not know fails here, at load, rather than as an unpriced call later.
- */
-export function searchModel(
-	provider: "anthropic",
-	envVar: string,
-	fallback: AnthropicModel,
-): AnthropicModel;
-export function searchModel(
-	provider: "openai",
-	envVar: string,
-	fallback: OpenAIModel,
-): OpenAIModel;
-export function searchModel(
-	provider: LLMProvider["provider"],
-	envVar: string,
-	fallback: string,
-): string {
-	const name = process.env[envVar] ?? fallback;
-	const known: string[] = MODELS.filter((m) => m.provider === provider).map(
-		(m) => m.model,
-	);
-	if (!known.includes(name)) {
-		throw new Error(
-			`${envVar}=${name} is not a ${provider} model @dothingslol/llm prices; known: ${known.join(", ")}`,
-		);
-	}
-	return name;
 }
 
 // A fixed grammar (rather than "note these fields" prose) keeps every
@@ -199,6 +167,7 @@ export abstract class BaseProvider {
 		weekEnd: Date,
 		force: boolean,
 		curate: CurateFunction,
+		env: NodeJS.ProcessEnv,
 	): Promise<void> {
 		// One search per tier. There used to be a second "music" pass per tier,
 		// because a single mixed-category search spread one event budget across
@@ -210,7 +179,7 @@ export abstract class BaseProvider {
 		// what cuts wall-clock time, since per-call token cost is fixed either
 		// way. Errors are caught per-job so one failure doesn't take down the
 		// rest of the batch.
-		const tiers = selectTiers(this.name, this.tiers);
+		const tiers = selectTiers(this.name, this.tiers, env);
 		if (tiers.length < this.tiers.length) {
 			console.log(
 				`  → [${this.name}] tiers limited to ${tiers.join(", ") || "(none)"} by ${this.name.toUpperCase()}_TIERS`,

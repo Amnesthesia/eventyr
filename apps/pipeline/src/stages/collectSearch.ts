@@ -36,6 +36,7 @@ function resolveAlias(name: string): string {
  */
 function providerTable(
 	google: GoogleProvider,
+	debug: boolean,
 ): Record<ProviderName, { env: string; make: () => BaseProvider }> {
 	return {
 		google: { env: "GOOGLE_API_KEY", make: () => google },
@@ -43,7 +44,10 @@ function providerTable(
 			env: "ANTHROPIC_API_KEY",
 			make: () => new AnthropicProvider(),
 		},
-		openai: { env: "OPENAI_API_KEY", make: () => new OpenAIProvider() },
+		openai: {
+			env: "OPENAI_API_KEY",
+			make: () => new OpenAIProvider(undefined, debug),
+		},
 		perplexity: {
 			env: "PERPLEXITY_API_KEY",
 			make: () => new PerplexityProvider(),
@@ -87,6 +91,11 @@ export interface CollectSearchOptions {
 	 * is the only place that does.
 	 */
 	hasKey: (envVar: string) => boolean;
+	/**
+	 * Forwarded unread to selectTiers (per-provider *_TIERS) and to the
+	 * providers' own DEBUG dump — this stage never inspects it itself.
+	 */
+	env: NodeJS.ProcessEnv;
 }
 
 export interface CollectSearchResult {
@@ -162,8 +171,9 @@ export async function collectSearch(
 	opts: CollectSearchOptions,
 ): Promise<CollectSearchResult> {
 	// Curation always uses Gemini 2.5 Flash regardless of search provider.
-	const google = new GoogleProvider();
-	const table = providerTable(google);
+	const debug = Boolean(opts.env.DEBUG);
+	const google = new GoogleProvider(debug);
+	const table = providerTable(google, debug);
 
 	let providers: BaseProvider[];
 	let providerNames: ProviderName[];
@@ -194,6 +204,7 @@ export async function collectSearch(
 				ctx.week.sunday,
 				ctx.force,
 				google.curate.bind(google),
+				opts.env,
 			),
 		),
 	);

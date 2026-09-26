@@ -1,4 +1,4 @@
-import "../llmBootstrap.ts";
+import "./llmBootstrap.ts";
 import { loadPipelineConfig } from "../config/load.js";
 import { installUsageReporting } from "../io/usage.ts";
 import { discoverSources } from "../sources/discover.js";
@@ -21,7 +21,7 @@ if (!cityArg || cityArg.includes(",")) {
 const apply = args.includes("--apply");
 
 async function main(): Promise<void> {
-	installUsageReporting();
+	installUsageReporting(process.env.CITY);
 	if (!process.env.GOOGLE_API_KEY) {
 		throw new Error("GOOGLE_API_KEY env var is required");
 	}

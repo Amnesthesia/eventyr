@@ -81,7 +81,7 @@ let reported = false;
  *
  * Idempotent: scripts call it explicitly before exiting AND it is wired to the
  * process exit hook, so without the guard the summary printed twice. */
-export function reportGeminiUsage(): void {
+export function reportGeminiUsage(city?: string): void {
 	const usage = usageTotals();
 	const rows = Object.entries(usage);
 	if (reported || rows.length === 0) return;
@@ -106,7 +106,6 @@ export function reportGeminiUsage(): void {
 			`  (${totals.retries} rate-limit retries, ${totals.failures} calls failed outright)`,
 		);
 	}
-	const city = process.env.CITY;
 	if (city) {
 		try {
 			const { timezone } = loadCityConfig(city);
@@ -125,11 +124,11 @@ export function reportGeminiUsage(): void {
 /** Prints the usage summary when the process ends, however it ends — including
  * an unhandled throw or a Ctrl-C, which is exactly when you most want to know
  * what it had already spent. */
-export function installUsageReporting(): void {
-	process.on("exit", reportGeminiUsage);
+export function installUsageReporting(city?: string): void {
+	process.on("exit", () => reportGeminiUsage(city));
 	for (const signal of ["SIGINT", "SIGTERM"] as const) {
 		process.on(signal, () => {
-			reportGeminiUsage();
+			reportGeminiUsage(city);
 			process.exit(130);
 		});
 	}

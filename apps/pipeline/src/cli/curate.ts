@@ -1,10 +1,10 @@
-import "../llmBootstrap.ts";
+import "./llmBootstrap.ts";
 import { runContextFromEnv } from "../config/context.js";
 import { installUsageReporting } from "../io/usage.ts";
 import { curate } from "../stages/curate.js";
 
 async function main(): Promise<void> {
-	installUsageReporting();
+	installUsageReporting(process.env.CITY);
 	const ctx = runContextFromEnv();
 	await curate(ctx, {
 		googleApiKey: process.env.GOOGLE_API_KEY,

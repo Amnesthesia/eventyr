@@ -1,4 +1,4 @@
-import "../llmBootstrap.ts";
+import "./llmBootstrap.ts";
 import { runContextFromEnv } from "../config/context.js";
 import { requireEnv } from "../config/env.js";
 import { fmtDate } from "../config/week.js";
@@ -8,7 +8,7 @@ import { collectSearch } from "../stages/collectSearch.js";
 requireEnv("GOOGLE_API_KEY");
 
 async function main(): Promise<void> {
-	installUsageReporting();
+	installUsageReporting(process.env.CITY);
 	const ctx = runContextFromEnv();
 	console.log(
 		`Collecting — ${ctx.cityConfig.name} — ${fmtDate(ctx.week.monday, ctx.cityConfig.timezone)} to ${fmtDate(ctx.week.sunday, ctx.cityConfig.timezone)}`,
@@ -22,6 +22,7 @@ async function main(): Promise<void> {
 		allow: process.env.PROVIDERS,
 		deny: process.env.DISABLE_PROVIDERS,
 		hasKey: (envVar) => Boolean(process.env[envVar]),
+		env: process.env,
 	});
 
 	console.log("✓ Collection complete.");

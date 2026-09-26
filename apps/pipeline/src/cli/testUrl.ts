@@ -1,4 +1,4 @@
-import "../llmBootstrap.ts";
+import "./llmBootstrap.ts";
 import { loadCityConfig } from "../config/city.js";
 import { requireEnv } from "../config/env.js";
 import { loadPipelineConfig } from "../config/load.js";
@@ -17,7 +17,7 @@ if (!url) {
 
 const cityConfig = loadCityConfig(requireEnv("CITY"));
 requireEnv("GOOGLE_API_KEY");
-installUsageReporting();
+installUsageReporting(process.env.CITY);
 
 testUrl(console, {
 	url,

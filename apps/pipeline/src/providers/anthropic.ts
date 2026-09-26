@@ -1,4 +1,4 @@
-import { askDetailed } from "@dothingslol/llm";
+import { type AnthropicModel, askDetailed } from "@dothingslol/llm";
 import { llmSourceStrings } from "../config/city.js";
 import { loadInterests, loadPipelineConfig } from "../config/load.js";
 import { fmtDate } from "../config/week.js";
@@ -6,7 +6,6 @@ import type { ProviderOptions, SearchResult } from "./base.ts";
 import {
 	BaseProvider,
 	OUTPUT_FORMAT_RULES,
-	searchModel,
 	TIER_INSTRUCTIONS,
 } from "./base.ts";
 
@@ -17,11 +16,9 @@ import {
 // (The earlier objection — Haiku cannot use the dynamic-filtering tool — is
 // moot: that tool variant returned NO_EVENTS_FOUND on every tier and is not
 // used. See the tool comment below.)
-const SEARCH_MODEL = searchModel(
-	"anthropic",
-	"ANTHROPIC_SEARCH_MODEL",
-	"claude-sonnet-5",
-);
+function searchModel(): AnthropicModel {
+	return loadPipelineConfig().models.search.anthropic.model as AnthropicModel;
+}
 /**
  * Searches per tier. This is the whole cost of the provider: each search's raw
  * results (~15k tokens) are cache-written at 1.25× input, plus $10 per 1,000
@@ -69,7 +66,7 @@ export class AnthropicProvider extends BaseProvider {
 
 		const response = await askDetailed(userMsg, {
 			provider: "anthropic",
-			model: SEARCH_MODEL,
+			model: searchModel(),
 			stage: "search/anthropic",
 			system,
 			// 4000 was truncating: two of three tiers hit max_tokens and one

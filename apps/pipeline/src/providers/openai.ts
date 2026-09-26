@@ -2,7 +2,7 @@ import { askDetailed, type OpenAIModel } from "@dothingslol/llm";
 import { loadPipelineConfig } from "../config/load.js";
 import type { ProviderOptions, SearchResult } from "./base.ts";
 
-import { BaseProvider, searchModel } from "./base.ts";
+import { BaseProvider } from "./base.ts";
 
 // Static key groups every search call into the same cache bucket — combined
 // with base.ts fronting each system prompt with a byte-identical shared
@@ -16,9 +16,12 @@ const PROMPT_CACHE_KEY = "eventyr-events-search";
  * which is what made the provider look "too expensive to keep on".
  */
 
-// gpt-5-mini by default; anything not gpt-5* goes through chat.completions
-// without web search (see searchEvents), e.g. OPENAI_SEARCH_MODEL=gpt-4.1-mini.
-const SEARCH_MODEL = searchModel("openai", "OPENAI_SEARCH_MODEL", "gpt-5-mini");
+// gpt-5-mini by default (config/pipeline.yml models.search.openai); anything
+// not gpt-5* goes through chat.completions without web search (see
+// searchEvents).
+function searchModel(): OpenAIModel {
+	return loadPipelineConfig().models.search.openai.model as OpenAIModel;
+}
 
 function stripCitationNoise(text: string): string {
 	return text
@@ -36,7 +39,10 @@ export class OpenAIProvider extends BaseProvider {
 		"open",
 	] as const;
 
-	constructor(private readonly model: OpenAIModel = SEARCH_MODEL) {
+	constructor(
+		private readonly model: OpenAIModel = searchModel(),
+		private readonly debug = false,
+	) {
 		super();
 	}
 
@@ -87,7 +93,7 @@ export class OpenAIProvider extends BaseProvider {
 		}
 
 		const rawText = response.text;
-		if (process.env.DEBUG) console.debug(rawText);
+		if (this.debug) console.debug(rawText);
 		this.validateRaw(rawText, label);
 		const events = await opts.curate(
 			stripCitationNoise(rawText),

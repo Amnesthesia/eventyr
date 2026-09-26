@@ -1,4 +1,4 @@
-import "../llmBootstrap.ts";
+import "./llmBootstrap.ts";
 import { loadPipelineConfig } from "../config/load.js";
 import { installUsageReporting, reportGeminiUsage } from "../io/usage.ts";
 import { probeSources } from "../sources/probe.js";
@@ -22,7 +22,7 @@ if (!cityArg || cityArg.includes(",")) {
 const reportOnly = has("report-only");
 
 async function main(): Promise<void> {
-	installUsageReporting();
+	installUsageReporting(process.env.CITY);
 	// --report-only re-derives from results.jsonl with no model calls, so it
 	// needs no key.
 	if (!reportOnly && !process.env.GOOGLE_API_KEY) {
@@ -51,5 +51,5 @@ try {
 // by now, and an abandoned fetch left pending by the per-source timeout
 // would otherwise keep the process alive or trip Node's unsettled-await
 // exit code.
-reportGeminiUsage();
+reportGeminiUsage(process.env.CITY);
 process.exit(0);

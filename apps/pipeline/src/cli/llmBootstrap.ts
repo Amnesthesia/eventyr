@@ -6,8 +6,8 @@
 //   EVENTYR_LLM_REPLAY_LATENCY_MS (default 200)
 
 import { configureLLM } from "@dothingslol/llm";
-import { createBatchStore } from "./io/batchStore.ts";
-import { createFileCache } from "./io/fileCache.ts";
+import { createBatchStore } from "../io/batchStore.ts";
+import { createFileCache } from "../io/fileCache.ts";
 
 const mode = process.env.EVENTYR_LLM_REPLAY as "record" | "replay" | undefined;
 if (mode && mode !== "record" && mode !== "replay") {
@@ -17,7 +17,7 @@ if (mode && !process.env.EVENTYR_LLM_REPLAY_DIR) {
 	throw new Error("EVENTYR_LLM_REPLAY needs EVENTYR_LLM_REPLAY_DIR");
 }
 
-import { loadPipelineConfig } from "./config/load.ts";
+import { loadPipelineConfig } from "../config/load.ts";
 
 const cfg = loadPipelineConfig();
 

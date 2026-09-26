@@ -14,6 +14,10 @@ export class GoogleProvider extends BaseProvider {
 		"independents",
 		"open",
 	] as const;
+
+	constructor(private readonly debug = false) {
+		super();
+	}
 	private async generate(
 		system: string,
 		prompt: string,
@@ -34,7 +38,7 @@ export class GoogleProvider extends BaseProvider {
 		cityName: string,
 		label: string,
 	): Promise<Record<string, unknown>[]> {
-		if (process.env.DEBUG) console.debug(rawText);
+		if (this.debug) console.debug(rawText);
 		const rawBatches = splitIntoBatches(rawText);
 		console.log(
 			`  [${label}] Extracting… (${rawBatches.length} batch${rawBatches.length > 1 ? "es" : ""})`,

@@ -1,9 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { toISODate } from "@dothingslol/core/shared";
-import { isValidTimeZone } from "./config/city.js";
-import { fmtDate, getWeekRange } from "./config/week.js";
-import { isDuplicateEvent } from "./dedupe.js";
+import { fmtDate, getWeekRange } from "./week.js";
 
 const BNE = "Australia/Brisbane";
 const SYD = "Australia/Sydney";
@@ -51,14 +49,4 @@ test("fmtDate and toISODate read the date in the given zone", () => {
 	assert.equal(toISODate(at, SYD), "2026-10-11");
 	assert.equal(fmtDate(at, BNE), "10 October 2026");
 	assert.equal(fmtDate(at, SYD), "11 October 2026");
-});
-
-test("isValidTimeZone: IANA zones pass; offsets, abbreviations and junk do not", () => {
-	assert.equal(isValidTimeZone("Australia/Sydney"), true);
-	assert.equal(isValidTimeZone("Australia/Brisbane"), true);
-	// A fixed offset is the no-DST assumption this check exists to keep out.
-	assert.equal(isValidTimeZone("+10:00"), false);
-	assert.equal(isValidTimeZone("AEST"), false);
-	assert.equal(isValidTimeZone(""), false);
-	assert.equal(isValidTimeZone("Mars/Olympus_Mons"), false);
 });

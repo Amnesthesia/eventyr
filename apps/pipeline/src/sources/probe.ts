@@ -2,6 +2,7 @@ import { loadPipelineConfig } from "../config/load.js";
 import { LISTING_PATH } from "../config/paths.js";
 
 const cfg = loadPipelineConfig();
+
 // Finds the real, non-SPA listing page for every source in one city's
 // sources/{city}.yml and promotes the ones that work to method: scraper.
 //
@@ -26,7 +27,6 @@ const cfg = loadPipelineConfig();
 //   pnpm probe-sources --city=brisbane --apply         # write promotions back to the YAML
 //   pnpm probe-sources --city=brisbane --report-only   # re-derive report from cached results
 
-import "../llmBootstrap.ts";
 import {
 	appendFileSync,
 	existsSync,

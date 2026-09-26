@@ -1,4 +1,4 @@
-import "../llmBootstrap.ts";
+import "./llmBootstrap.ts";
 import { dirname, relative } from "node:path";
 import { runContextFromEnv } from "../config/context.js";
 import { requireEnv } from "../config/env.js";
@@ -10,7 +10,7 @@ import { collectScraped } from "../stages/collectScraped.js";
 requireEnv("GOOGLE_API_KEY");
 
 async function main(): Promise<void> {
-	installUsageReporting();
+	installUsageReporting(process.env.CITY);
 	const ctx = runContextFromEnv();
 	console.log(
 		`Scraping — ${ctx.cityConfig.name} — ${fmtDate(ctx.week.monday, ctx.cityConfig.timezone)} to ${fmtDate(ctx.week.sunday, ctx.cityConfig.timezone)}`,
