@@ -13,11 +13,6 @@ on:
         description: "City slug matching a file in sources/ (e.g. brisbane, byronbay)"
         required: true
         type: string
-      recipient:
-        description: "WhatsApp recipient number (e.g. 61412345678). Leave blank to use the default."
-        required: false
-        type: string
-        default: ""
       force:
         description: "Re-collect even if this week's data already exists"
         required: false
@@ -36,7 +31,6 @@ jobs:
       contents: write
     with:
       city: ${{ inputs.city }}
-      recipient: ${{ inputs.recipient }}
       force: ${{ inputs.force }}
       providers: ${{ inputs.providers }}
     secrets: inherit

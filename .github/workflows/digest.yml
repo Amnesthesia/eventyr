@@ -7,11 +7,6 @@ on:
         description: City slug matching a file in sources/ (e.g. brisbane)
         required: true
         type: string
-      recipient:
-        description: "WhatsApp recipient number (e.g. 61412345678). Defaults to WHATSAPP_RECIPIENT secret."
-        required: false
-        type: string
-        default: ""
       force:
         description: "Re-collect even if this week's data already exists"
         required: false
@@ -31,12 +26,6 @@ on:
         required: false
       GOOGLE_API_KEY:
         required: false
-      WHATSAPP_TOKEN:
-        required: true
-      WHATSAPP_PHONE_ID:
-        required: true
-      WHATSAPP_RECIPIENT:
-        required: true
 
   workflow_dispatch:
     inputs:
@@ -49,11 +38,6 @@ on:
           - goldcoast
           - sunnycoast
           - byron
-      recipient:
-        description: "WhatsApp recipient number (e.g. 61412345678). Leave blank to use the default."
-        required: false
-        type: string
-        default: ""
       force:
         description: "Re-collect even if this week's data already exists"
         required: false
@@ -258,12 +242,3 @@ jobs:
           echo "::error::failed to push after 3 attempts"
           exit 1
 
-      - name: Send WhatsApp digest
-        continue-on-error: true
-        if: false
-        env:
-          CITY: ${{ inputs.city }}
-          WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
-          WHATSAPP_PHONE_ID: ${{ secrets.WHATSAPP_PHONE_ID }}
-          WHATSAPP_RECIPIENT: ${{ inputs.recipient != '' && inputs.recipient || secrets.WHATSAPP_RECIPIENT }}
-        run: pnpm tsx --tsconfig tsconfig.scripts.json src/messaging.ts
