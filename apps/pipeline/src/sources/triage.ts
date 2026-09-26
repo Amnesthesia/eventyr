@@ -32,6 +32,7 @@ import {
 	type SourceEntry,
 	type SourceTier,
 } from "../config/city.js";
+import type { Logger } from "../config/context.js";
 import { adapterRawDir, DATA_ROOT, SOURCES_ROOT } from "../config/paths.js";
 
 /** Mirrors the rows probe.ts appends to results.jsonl. Declared structurally
@@ -512,7 +513,7 @@ export function runTriage(cities: string[]): TriageEntry[] {
 	return out;
 }
 
-function report(entries: TriageEntry[]): void {
+function report(log: Logger, entries: TriageEntry[]): void {
 	const failing = entries.filter((e) => e.cause !== "scraped-already");
 	const scraped = entries.length - failing.length;
 	const byCause = new Map<Cause, TriageEntry[]>();
@@ -522,21 +523,21 @@ function report(entries: TriageEntry[]): void {
 		byCause.set(e.cause, list);
 	}
 
-	console.log(
+	log.log(
 		`\n${entries.length} sources · ${scraped} on the scrape path (${((scraped / entries.length) * 100).toFixed(1)}%) · ${failing.length} not\n`,
 	);
 	for (const cause of CAUSES) {
 		const list = byCause.get(cause);
 		if (!list?.length) continue;
 		const pct = ((list.length / failing.length) * 100).toFixed(1);
-		console.log(
+		log.log(
 			`${cause.padEnd(20)} ${String(list.length).padStart(4)}  ${pct.padStart(5)}%  ${REMEDY[cause]}`,
 		);
 		// Name the suspects: the identifier plus the input that triggered it.
 		for (const e of list.slice(0, 3)) {
-			console.log(`  · ${(e.host ?? e.name).padEnd(34)} ${e.evidence}`);
+			log.log(`  · ${(e.host ?? e.name).padEnd(34)} ${e.evidence}`);
 		}
-		if (list.length > 3) console.log(`  · … and ${list.length - 3} more`);
+		if (list.length > 3) log.log(`  · … and ${list.length - 3} more`);
 	}
 
 	const fixable =
@@ -546,7 +547,7 @@ function report(entries: TriageEntry[]): void {
 		(byCause.get("embed-only")?.length ?? 0) +
 		(byCause.get("sub-threshold")?.length ?? 0) +
 		(byCause.get("read-badly")?.length ?? 0);
-	console.log(
+	log.log(
 		`\n${fixable} of ${failing.length} are ours to fix (feed/gate/embed/threshold/extraction), ` +
 			`${byCause.get("unprobed")?.length ?? 0} were never probed, ` +
 			`${(byCause.get("dead")?.length ?? 0) + (byCause.get("no-domain")?.length ?? 0)} are genuinely out of reach.`,
@@ -737,32 +738,37 @@ export function renderCandidates(entries: TriageEntry[]): RenderCandidate[] {
 	);
 }
 
-// Entrypoint last: every const above must be initialised before this runs.
-// Appending code after it put the regexes in the temporal dead zone, and the
-// per-URL catch swallowed the ReferenceError on every sitemap URL.
-if (process.argv[1]?.endsWith("triage.ts")) {
-	const cityArg = process.argv.slice(2).find((a) => a.startsWith("--city="));
-	const cities = cityArg ? [cityArg.split("=")[1]] : cityKeys();
+export interface TriageSourcesOptions {
+	/** A single city, or every city in sources/ when omitted. */
+	city?: string;
+	renderCandidates: boolean;
+}
+
+export async function triageSources(
+	log: Logger,
+	opts: TriageSourcesOptions,
+): Promise<void> {
+	const cities = opts.city ? [opts.city] : cityKeys();
 	const entries = runTriage(cities);
 	const outPath = join(DATA_ROOT, "_probe", "triage.json");
 	writeFileSync(outPath, `${JSON.stringify(entries, null, 2)}\n`);
 
-	if (process.argv.includes("--render-candidates")) {
+	if (opts.renderCandidates) {
 		const cands = renderCandidates(entries);
 		const path = join(DATA_ROOT, "_probe", "render-candidates.json");
 		writeFileSync(path, `${JSON.stringify(cands, null, 2)}\n`);
 		const by = { "worth-rendering": 0, unknown: 0, skip: 0 };
 		for (const c of cands) by[c.verdict]++;
-		console.log(
+		log.log(
 			`\n${cands.length} walled source(s) a browser could change:\n` +
 				`  ${by["worth-rendering"]} worth rendering · ${by.unknown} unknown · ${by.skip} skip\n`,
 		);
 		for (const c of cands.filter((x) => x.verdict === "worth-rendering")) {
-			console.log(`  + ${c.host.padEnd(34)} ${c.evidence}`);
+			log.log(`  + ${c.host.padEnd(34)} ${c.evidence}`);
 		}
-		console.log(`\n→ ${path}`);
+		log.log(`\n→ ${path}`);
 	} else {
-		report(entries);
-		console.log(`\n→ ${outPath}`);
+		report(log, entries);
+		log.log(`\n→ ${outPath}`);
 	}
 }

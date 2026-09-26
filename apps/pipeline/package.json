@@ -20,7 +20,7 @@
     "discover-sources": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/discoverSources.ts",
     "test-adapter": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/testUrl.ts",
     "render-sources": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/renderSources.ts",
-    "triage": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/adapters/triage.ts",
+    "triage": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/triage.ts",
     "test": "CITY=dummy GOOGLE_API_KEY=dummy tsx --test 'src/**/*.test.ts'",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
