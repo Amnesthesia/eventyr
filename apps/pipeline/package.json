@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "collect": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/collection.ts",
-    "collect-adapters": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/adapters/collect.ts",
+    "collect-adapters": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/collectScraped.ts",
     "curate": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/curate.ts",
     "venues": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/venues.ts",
     "dedupe-venues": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/venues.ts",

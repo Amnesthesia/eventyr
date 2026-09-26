@@ -76,7 +76,7 @@ const CLIS = {
 	curate: { args: ["src/curate.ts"] },
 	venues: { args: ["src/venues.ts"] },
 	rank: { args: ["src/rank.ts"] },
-	"collect-adapters": { args: ["src/adapters/collect.ts", "--only=fixture-programme"] },
+	"collect-adapters": { args: ["src/cli/collectScraped.ts", "--only=fixture-programme"] },
 	"probe-sources": { args: ["src/adapters/probe.ts", "--city=brisbane"] },
 	"discover-sources": { args: ["src/adapters/discover.ts", "--city=brisbane"] },
 	"collect-google": { args: ["src/collection.ts", "google"], env: { PROVIDERS: "google" } },
