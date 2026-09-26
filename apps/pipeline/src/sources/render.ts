@@ -1,4 +1,3 @@
-import { loadPipelineConfig } from "../config/load.js";
 // The browser rung: the last thing tried, and used to *discover* a static
 // access path rather than to collect events week after week.
 //
@@ -44,6 +43,8 @@ import {
 import yaml from "js-yaml";
 import type { Browser, BrowserContext } from "playwright";
 import { type CityConfig, SOURCE_TIERS } from "../config/city.js";
+import type { Logger } from "../config/context.js";
+import type { PipelineConfig } from "../config/load.js";
 import { DATA_ROOT, SOURCES_ROOT } from "../config/paths.js";
 
 /** Pages rendered per host. A walled host needs its landing page and maybe one
@@ -74,6 +75,7 @@ async function renderHost(
 	context: BrowserContext,
 	host: string,
 	urls: string[],
+	cfg: PipelineConfig,
 ): Promise<RenderFinding> {
 	const finding: RenderFinding = {
 		host,
@@ -108,10 +110,10 @@ async function renderHost(
 			try {
 				await page.goto(url, {
 					waitUntil: "domcontentloaded",
-					timeout: loadPipelineConfig().scrape.render.pageTimeoutMs,
+					timeout: cfg.scrape.render.pageTimeoutMs,
 				});
 				// Outlast the reload interstitial rather than reading the shell.
-				await page.waitForTimeout(loadPipelineConfig().scrape.render.settleMs);
+				await page.waitForTimeout(cfg.scrape.render.settleMs);
 				const html = await page.content();
 				// innerText via the locator API, not page.evaluate: this tsconfig
 				// has no DOM lib (it is a Node build), and reaching for one just
@@ -185,6 +187,8 @@ export interface RenderTarget {
  * so a killed run keeps everything it proved.
  */
 export async function renderTargets(
+	log: Logger,
+	cfg: PipelineConfig,
 	targets: RenderTarget[],
 	outPath: string,
 ): Promise<RenderFinding[]> {
@@ -202,7 +206,7 @@ export async function renderTargets(
 	} catch (err) {
 		// Degrade, don't die: no browser means the deterministic paths still
 		// stand, and the run should say so rather than fail.
-		console.warn(
+		log.error(
 			`⚠ no browser available (${(err as Error).message.slice(0, 80)}) — skipping the render pass`,
 		);
 		return [];
@@ -216,12 +220,9 @@ export async function renderTargets(
 	let index = 0;
 	const worker = async (): Promise<void> => {
 		while (index < targets.length) {
-			if (
-				Date.now() - startedAt >
-				loadPipelineConfig().scrape.render.runBudgetMs
-			) {
-				console.warn(
-					`⚠ render budget of ${Math.round(loadPipelineConfig().scrape.render.runBudgetMs / 60000)}min reached — stopping with ${findings.length}/${targets.length} host(s) done`,
+			if (Date.now() - startedAt > cfg.scrape.render.runBudgetMs) {
+				log.error(
+					`⚠ render budget of ${Math.round(cfg.scrape.render.runBudgetMs / 60000)}min reached — stopping with ${findings.length}/${targets.length} host(s) done`,
 				);
 				return;
 			}
@@ -232,9 +233,14 @@ export async function renderTargets(
 				viewport: { width: 1280, height: 900 },
 			});
 			try {
-				const finding = await renderHost(context, target.host, target.urls);
+				const finding = await renderHost(
+					context,
+					target.host,
+					target.urls,
+					cfg,
+				);
 				findings.push(finding);
-				console.log(
+				log.log(
 					`  ${finding.candidateUrls.length || finding.xhrUrls.length ? "✓" : "·"} ${target.host.padEnd(34)} ` +
 						`${finding.textLength} chars, ${finding.dateHits} date hits, ` +
 						`${finding.candidateUrls.length} candidate URL(s), ${finding.xhrUrls.length} JSON response(s)` +
@@ -260,19 +266,14 @@ export async function renderTargets(
 	try {
 		await Promise.all(
 			Array.from(
-				{
-					length: Math.min(
-						loadPipelineConfig().scrape.render.concurrentHosts,
-						targets.length,
-					),
-				},
+				{ length: Math.min(cfg.scrape.render.concurrentHosts, targets.length) },
 				worker,
 			),
 		);
 	} finally {
 		await browser.close().catch(() => {});
 	}
-	console.log(
+	log.log(
 		`\n${findings.length} host(s) rendered in ${Math.round((Date.now() - startedAt) / 1000)}s with ${launches} browser launch(es).`,
 	);
 	if (launches !== 1) {
@@ -304,6 +305,7 @@ export async function renderTargets(
 const RENDER_ONLY_MIN_DATE_HITS = 3;
 
 export function applyCandidates(
+	log: Logger,
 	findings: RenderFinding[],
 	hostCity: Map<string, string>,
 ): number {
@@ -385,14 +387,12 @@ export function applyCandidates(
 			`${header.replace(/\n+$/, "\n")}\n${yaml.dump(cfg, { lineWidth: 100, noRefs: true })}`,
 			"utf-8",
 		);
-		console.log(
+		log.log(
 			`→ ${path}: candidates written for ${cityFindings.length} source(s)`,
 		);
 	}
 	return written;
 }
-
-// --- CLI ------------------------------------------------------------------
 
 interface Candidate {
 	host: string;
@@ -417,26 +417,32 @@ function loadShortlist(limit: number, includeUnknown: boolean): RenderTarget[] {
 	}));
 }
 
-if (process.argv[1]?.endsWith("render.ts")) {
-	const arg = (name: string): string | undefined =>
-		process.argv.find((a) => a.startsWith(`--${name}=`))?.split("=")[1];
-	const limit = Number(arg("limit") ?? "10");
-	const includeUnknown = process.argv.includes("--include-unknown");
-	const targets = loadShortlist(limit, includeUnknown);
-	console.log(
+export interface RenderSourcesOptions {
+	limit: number;
+	includeUnknown: boolean;
+	apply: boolean;
+}
+
+export async function renderSources(
+	log: Logger,
+	cfg: PipelineConfig,
+	opts: RenderSourcesOptions,
+): Promise<void> {
+	const targets = loadShortlist(opts.limit, opts.includeUnknown);
+	log.log(
 		`Rendering ${targets.length} walled host(s) to look for a static path they publish.\n`,
 	);
 	const outPath = join(DATA_ROOT, "_probe", "render-findings.json");
-	const findings = await renderTargets(targets, outPath);
+	const findings = await renderTargets(log, cfg, targets, outPath);
 	const withPath = findings.filter(
 		(f) => f.candidateUrls.length > 0 || f.xhrUrls.length > 0,
 	);
-	console.log(
+	log.log(
 		`${withPath.length}/${findings.length} host(s) advertised something a plain fetch could verify.`,
 	);
-	console.log(`→ ${outPath}`);
+	log.log(`→ ${outPath}`);
 
-	if (process.argv.includes("--apply")) {
+	if (opts.apply) {
 		const rows = JSON.parse(
 			readFileSync(
 				join(DATA_ROOT, "_probe", "render-candidates.json"),
@@ -444,14 +450,12 @@ if (process.argv[1]?.endsWith("render.ts")) {
 			),
 		) as Candidate[];
 		const hostCity = new Map(rows.map((r) => [r.host, r.city]));
-		const written = applyCandidates(findings, hostCity);
-		console.log(
+		const written = applyCandidates(log, findings, hostCity);
+		log.log(
 			`\n${written} source(s) given candidate listingUrls — they stay method: llm until\n` +
 				"probe verifies them:  pnpm probe-sources --city=<city> --force --apply",
 		);
 	} else if (withPath.length > 0) {
-		console.log(
-			"\nRe-run with --apply to write these as candidate listingUrls.",
-		);
+		log.log("\nRe-run with --apply to write these as candidate listingUrls.");
 	}
 }
