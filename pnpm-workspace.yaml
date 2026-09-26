@@ -1,7 +1,6 @@
 packages:
   - "apps/*"
   - "packages/*"
-  - "workers/*" # dropped in 1.12 when workers/mcp moves to apps/mcp
 catalog:
   typescript: 5.9.3 # currently locked; TS 7 is out of scope (PLAN §3)
   tsx: ^4.22.0

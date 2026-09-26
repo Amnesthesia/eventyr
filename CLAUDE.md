@@ -138,8 +138,7 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
   fetch first — field reference, fetch order (today/tomorrow/this-weekend/this-week; **next week is
   never available**, this pipeline only ever holds one published week), and recommendation/itinerary
   guidance.
-- **`workers/mcp/`** is a standalone Cloudflare Worker (own `package.json`/`wrangler.toml`, not part
-  of the root pnpm workspace) exposing `list_cities` and `get_events` over MCP at
+- **`apps/mcp/`** (`@dothingslol/mcp`) is a Cloudflare Worker exposing `list_cities` and `get_events` over MCP at
   `https://mcp.dothings.lol/mcp`. It's a stateless read-through cache over the same public `/ai/*`
   files (`fetchJson` with `cf.cacheTtl`) — no KV/R2, no coupling to the digest pipeline's deploy.
   `get_events` takes a city plus exactly one of `timeframe` (today/tomorrow/this_weekend/this_week/
@@ -148,9 +147,8 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
   actually *start* in the requested window above ones merely *running through* it (otherwise a
   standing exhibition crowds out same-day events under the result cap — measured, not theoretical).
   The server does no personalization itself — it has no access to what the calling assistant knows
-  about the person — so that guidance lives in the tool descriptions instead. Deployed manually via
-  `wrangler deploy` from `workers/mcp/`; **no CI workflow deploys it yet**, unlike everything else
-  in this repo.
+  about the person — so that guidance lives in the tool descriptions instead. CI typechecks, tests
+  and dry-run-deploys it on every PR; the live deploy is still manual: `pnpm --filter @dothingslol/mcp deploy`.
 - **`apps/web/public/skill/dothings-events/SKILL.md`** is an installable Claude Agent Skill covering the same
   fetch order plus a preference-memory protocol (what to remember about a person across
   conversations, what never to store). `apps/web/src/pages/ai.astro` (the `/ai` page) surfaces all three

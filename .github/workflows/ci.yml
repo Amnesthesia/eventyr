@@ -17,6 +17,6 @@ jobs:
       # Nothing deploys the Worker from CI, so this is the only place a break would show (PLAN R8).
       - name: MCP worker
         run: |
-          pnpm --dir workers/mcp typecheck
-          pnpm --dir workers/mcp test
-          pnpm --dir workers/mcp exec wrangler deploy --dry-run --outdir "$RUNNER_TEMP/mcp"
+          pnpm --filter @dothingslol/mcp typecheck
+          pnpm --filter @dothingslol/mcp test
+          pnpm --filter @dothingslol/mcp exec wrangler deploy --dry-run --outdir "$RUNNER_TEMP/mcp"

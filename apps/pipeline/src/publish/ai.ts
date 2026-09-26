@@ -49,6 +49,13 @@ import {
 	writeFileSync,
 } from "node:fs";
 import { join } from "node:path";
+import type {
+	AiIndex,
+	CityIndexEntry,
+	CompactEvent,
+	DayFile,
+	WeekFile,
+} from "@dothingslol/core/aiFeed";
 import {
 	CATEGORIES,
 	catToSlug,
@@ -98,53 +105,8 @@ export interface CityPayload {
 	events: RawEvent[];
 }
 
-export interface CompactEvent {
-	id: string;
-	title: string;
-	start: string;
-	end: string | null;
-	location: string;
-	category: string;
-	price: number | null;
-	free: boolean;
-	description: string;
-	url: string;
-}
-
-export interface DayFile {
-	data_as_of: string;
-	city: string;
-	city_key: string;
-	timezone: string;
-	date: string;
-	events: CompactEvent[];
-}
-
-export interface WeekFile {
-	data_as_of: string;
-	city: string;
-	city_key: string;
-	timezone: string;
-	week_start: string;
-	week_end: string;
-	events: CompactEvent[];
-}
-
-interface CityIndexEntry {
-	city: string;
-	city_key: string;
-	slug: string;
-	timezone: string;
-	data_as_of: string;
-	days: string[];
-	week: string | null;
-	week_categories: { category: string; slug: string; file: string }[];
-}
-
-interface AiIndex {
-	data_as_of: string;
-	cities: CityIndexEntry[];
-}
+// CompactEvent, DayFile, WeekFile, CityIndexEntry and AiIndex are the
+// shared shape with apps/mcp — see @dothingslol/core/aiFeed.
 
 // ---------------------------------------------------------------------------
 // Mapping

@@ -10,7 +10,7 @@
 			"apps/pipeline/src/**/*.ts",
 			"scripts/**/*.ts",
 			"scripts/**/*.tsx",
-			"workers/**/*.ts",
+			"apps/mcp/src/**/*.ts",
 			"packages/**/*.ts",
 			"apps/web/app/**/*.ts",
 			"apps/web/app/**/*.tsx",

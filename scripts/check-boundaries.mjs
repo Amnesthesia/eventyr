@@ -3,7 +3,7 @@
 // naming the file and the offending specifier or dependency, when:
 //   - a package.json lists a `workspace:` dependency the table does not allow;
 //   - a relative import resolves into a different package root (packages/*,
-//     apps/*, workers/*, or the root package, which is everything else):
+//     apps/*, or the root package, which is everything else):
 //     cross-package access goes through the package name;
 //   - an import reaches past a package's `exports` (`@dothingslol/x/src/...`).
 // Plain Node, no dependencies, so it runs before anything else is trusted.
@@ -35,8 +35,7 @@ const ALLOWED = {
 	"@dothingslol/core": ["@dothingslol/utils"],
 	"@dothingslol/llm": ["@dothingslol/utils"],
 	"@dothingslol/scraper": ["@dothingslol/core", "@dothingslol/utils"],
-	// workers/mcp; becomes apps/mcp (@dothingslol/mcp) in 1.12.
-	"eventyr-mcp": ["@dothingslol/core", "@dothingslol/utils"],
+	"@dothingslol/mcp": ["@dothingslol/core", "@dothingslol/utils"],
 };
 
 // apps/pipeline/src's own directory graph (1.11 §"Target layout"). Files, not
@@ -99,7 +98,7 @@ function checkPipelineDirRule(file, specifier) {
 	}
 }
 
-const PACKAGE_PARENTS = ["packages", "apps", "workers"];
+const PACKAGE_PARENTS = ["packages", "apps"];
 // Plus every dot-directory (.git, .astro, .wrangler).
 const SKIP_DIRS = new Set(["node_modules", "dist"]);
 const SOURCE_FILE = /\.(ts|tsx|astro|mjs|js)$/;

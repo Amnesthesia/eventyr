@@ -39,6 +39,31 @@ importers:
         specifier: 'catalog:'
         version: 5.9.3
 
+  apps/mcp:
+    dependencies:
+      '@dothingslol/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@modelcontextprotocol/sdk':
+        specifier: ^1.30.0
+        version: 1.30.0(supports-color@10.2.2)(zod@4.6.5)
+      zod:
+        specifier: 'catalog:'
+        version: 4.6.5
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: ^5.20260916.1
+        version: 5.20260916.1
+      tsx:
+        specifier: 'catalog:'
+        version: 4.22.0
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+      wrangler:
+        specifier: ^4.133.0
+        version: 4.133.0(@cloudflare/workers-types@5.20260916.1)(@types/node@25.8.0)
+
   apps/pipeline:
     dependencies:
       '@dothingslol/core':
@@ -233,31 +258,6 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
-
-  workers/mcp:
-    dependencies:
-      '@dothingslol/core':
-        specifier: workspace:*
-        version: link:../../packages/core
-      '@modelcontextprotocol/sdk':
-        specifier: ^1.30.0
-        version: 1.30.0(supports-color@10.2.2)(zod@4.6.5)
-      zod:
-        specifier: 'catalog:'
-        version: 4.6.5
-    devDependencies:
-      '@cloudflare/workers-types':
-        specifier: ^5.20260916.1
-        version: 5.20260916.1
-      tsx:
-        specifier: 'catalog:'
-        version: 4.22.0
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-      wrangler:
-        specifier: ^4.133.0
-        version: 4.133.0(@cloudflare/workers-types@5.20260916.1)(@types/node@25.8.0)
 
 packages:
 

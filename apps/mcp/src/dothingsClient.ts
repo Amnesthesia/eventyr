@@ -3,63 +3,22 @@
 // pure shaping layer over data the site already publishes, cached at the
 // Cloudflare edge since the underlying data changes at most once a day.
 
+import type {
+	AiIndex,
+	CityIndexEntry,
+	CompactEvent,
+	DayFile,
+	WeekFile,
+} from "@dothingslol/core/aiFeed";
 import { SITE_URL } from "@dothingslol/core/shared";
 
+// The compact JSON shape (CompactEvent/DayFile/WeekFile/CityIndexEntry/
+// AiIndex) is shared with the producer, apps/pipeline/src/publish/ai.ts —
+// see @dothingslol/core/aiFeed (1.12). Re-exported so this stays the one
+// import site for this Worker's other modules.
+export type { AiIndex, CityIndexEntry, CompactEvent, DayFile, WeekFile };
+
 const CACHE_TTL_SECONDS = 900;
-
-export interface CompactEvent {
-	id: string;
-	title: string;
-	start: string;
-	end: string | null;
-	location: string;
-	category: string;
-	price: number | null;
-	free: boolean;
-	description: string;
-	url: string;
-}
-
-export interface DayFile {
-	data_as_of: string;
-	city: string;
-	city_key: string;
-	timezone: string;
-	date: string;
-	events: CompactEvent[];
-}
-
-export interface WeekFile {
-	data_as_of: string;
-	city: string;
-	city_key: string;
-	timezone: string;
-	week_start: string;
-	week_end: string;
-	events: CompactEvent[];
-}
-
-interface WeekCategoryEntry {
-	category: string;
-	slug: string;
-	file: string;
-}
-
-export interface CityIndexEntry {
-	city: string;
-	city_key: string;
-	slug: string;
-	timezone: string;
-	data_as_of: string;
-	days: string[];
-	week: string | null;
-	week_categories: WeekCategoryEntry[];
-}
-
-export interface AiIndex {
-	data_as_of: string;
-	cities: CityIndexEntry[];
-}
 
 async function fetchJson<T>(path: string): Promise<T> {
 	const res = await fetch(`${SITE_URL}${path}`, {
