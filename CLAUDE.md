@@ -7,57 +7,64 @@ feeds at dothings.lol.
 ## Pipeline (mirrors `.github/workflows/digest.yml`, runs weekly via `weekly.yml`)
 
 Runs Sunday 06:00 AEST for the week starting Monday: `getWeekRange(now, timeZone)`
-(`apps/pipeline/src/common.ts`) puts Sunday in the *coming* week, evaluated in each city's own zone, so the UTC
-runner needs no `TZ` pin to agree on which day it is. Sunday's own events survive the run via
+(`apps/pipeline/src/config/week.ts`) puts Sunday in the *coming* week, evaluated in each city's own zone, so
+the UTC runner needs no `TZ` pin to agree on which day it is. Sunday's own events survive the run via
 curate's carry-forward (step 3).
 
 The Mermaid flowchart under `## Pipeline` in `README.md` mirrors this list — update it in the same
 change as any stage change (including where `INTERESTS` is or isn't applied).
 
-1. **`apps/pipeline/src/add_city.ts`** (one-off per city, `pnpm add-city`, `CITY_TIMEZONE` required) — writes an
-   empty `sources/{city}.yml` skeleton and registers the city in `digest.yml`'s dispatch options.
-   It does NOT discover sources: that used to fan out to Anthropic, Perplexity and Google and
-   merge the prose, which `discover.ts` later measured as worthless (see its header). Run
+Each stage is an exported `RunContext`-taking function under `apps/pipeline/src/stages/` (or
+`publish/`, `sources/`), with a thin `cli/` entrypoint per `package.json` script that reads env/argv,
+builds the `RunContext`, and calls it (PLAN §2.6). `config/pipeline.yml` is *the* place to change a
+model or an operator tunable — see "Directory layout" below for what belongs there versus in code.
+
+1. **`apps/pipeline/src/sources/addCity.ts`** (one-off per city, `pnpm add-city`, `CITY_TIMEZONE` required) —
+   writes an empty `sources/{city}.yml` skeleton and registers the city in `digest.yml`'s dispatch
+   options. It does NOT discover sources: that used to fan out to Anthropic, Perplexity and Google
+   and merge the prose, which `discover.ts` later measured as worthless (see its header). Run
    `pnpm discover-sources` next, then `pnpm probe-sources`.
-1a. **`apps/pipeline/apps/pipeline/src/adapters/discover.ts`** (`pnpm discover-sources --city=X [--apply]`) — asks Gemini
+1a. **`apps/pipeline/src/sources/discover.ts`** (`pnpm discover-sources --city=X [--apply]`) — asks Gemini
    for venues the city's list is missing, one grounded call per niche, all as `method: llm`.
    `--city` is required and single: discovery and probing always run for one city at a time,
    never the whole fleet in one call.
-1b. **`apps/pipeline/apps/pipeline/src/adapters/probe.ts`** (`pnpm probe-sources --city=X [--apply]`) — asks Gemini
+1b. **`apps/pipeline/src/sources/probe.ts`** (`pnpm probe-sources --city=X [--apply]`) — asks Gemini
    (Google-Search-grounded) where each source lists its events, fetches every suggested URL
    plus two canonical paths, and keeps only those that actually yield dated events. With
    `--apply`, promotes those sources to `method: scraper` in `sources/{city}.yml` with their
    verified `listingUrls`. Dry-run by default; prints every page tried and what came of it.
-1c. **`apps/pipeline/apps/pipeline/src/adapters/collect.ts`** (`pnpm collect-adapters [--only=id,...]`) — runs before `collect`. Calls
-   `@dothingslol/scraper`'s `scrape()` on every listing URL of every `method: scraper` source
-   (site feed → JSON-LD → embedded hydration JSON → the injected LLM rung, `llmExtract.ts`),
-   week-filters, enriches from detail pages, annotates category/tags/vibes with one small
-   Gemini call per source, writes one file per source to `data/{city}/adapters/curated/{id}.json`.
-2. **`apps/pipeline/src/collection.ts`** (`pnpm collect [provider]`) — for each configured provider
+1c. **`apps/pipeline/src/stages/collectScraped.ts`** (`pnpm collect-adapters [--only=id,...]`) — runs before
+   `collect`. Calls `@dothingslol/scraper`'s `scrape()` on every listing URL of every
+   `method: scraper` source (site feed → JSON-LD → embedded hydration JSON → the injected LLM
+   rung, `stages/extract.ts`), week-filters, enriches from detail pages, annotates category/tags/
+   vibes with one small Gemini call per source, writes one file per source to
+   `data/{city}/adapters/curated/{id}.json`.
+2. **`apps/pipeline/src/stages/collectSearch.ts`** (`pnpm collect [provider]`) — for each configured provider
    (anthropic/google/openai/perplexity), searches events per source tier and writes raw curated
    JSON to `data/{city}/{provider}/curated/{tier}[-music].json`. See "Provider architecture" below.
-3. **`apps/pipeline/src/curate.ts`** (`pnpm curate`) — merges every provider/tier curated file for the current
-   week (including the per-source scrape files), applies the publishing window, geocodes
-   aggregator-tier locations to throw out other cities' events (`apps/pipeline/src/locality.ts`), dedupes via
-   `apps/pipeline/src/dedupe.ts`, writes `data/{city}.json`. Also carries forward every still-upcoming dated
-   event from the previous `data/{city}.json` (the per-source inputs were already overwritten by
-   collect), so a Sunday run keeps Sunday's events alongside next week's.
-3a. **`apps/pipeline/src/venues.ts`** (`pnpm venues`) — writes a canonical `venue_name` onto every event in
+3. **`apps/pipeline/src/stages/curate.ts`** (`pnpm curate`) — merges every provider/tier curated file for the
+   current week (including the per-source scrape files), applies the publishing window, geocodes
+   aggregator-tier locations to throw out other cities' events (`apps/pipeline/src/stages/locality.ts`),
+   dedupes via `apps/pipeline/src/stages/dedupe.ts`, writes `data/{city}.json`. Also carries forward every
+   still-upcoming dated event from the previous `data/{city}.json` (the per-source inputs were
+   already overwritten by collect), so a Sunday run keeps Sunday's events alongside next week's.
+3a. **`apps/pipeline/src/stages/venues.ts`** (`pnpm venues`) — writes a canonical `venue_name` onto every event in
    `data/{city}.json` so the site can filter by venue (`event.venue` is the source *tier*, not a
    place). Raw venue = first `location` segment; resolved via `venue.aliases` in
    `sources/{city}.yml` (the manual override for a wrong merge), then the committed cache
    `data/{city}/venues.json`, then deterministic rules, then Gemini for the remainder.
-4. **`apps/pipeline/src/rank.ts`** (`pnpm rank`) — Gemini scores each event 1–10 against `INTERESTS`
-   (`apps/pipeline/src/common.ts`), writes scores back into `data/{city}.json`. `TOP_PICK_THRESHOLD` (7) decides
-   what surfaces as a top pick.
-5. **`apps/pipeline/src/geocode.ts`** (`pnpm geocode`) — dedupes event `location` strings, writes a Google Maps
-   search `location_url` back onto each event in `data/{city}.json` (empty string if no location).
-   No API key needed — it's a plain `maps.google.com/search` query URL, resolved live by Maps.
-6. **`apps/pipeline/src/markdown.ts`**, **`apps/pipeline/src/ical.ts`**, **`apps/pipeline/src/rss.ts`**, **`apps/pipeline/src/pages.ts`** — generate
-   `{CITY}.md`, `apps/web/public/{city}.ics`, `apps/web/public/{slug}/feed.xml`, and `data/index.json` /
-   `apps/web/public/sitemap.xml` respectively.
-7. **`apps/pipeline/src/ai.ts`** (`pnpm build-ai`) — generates `apps/web/public/ai/{city}/{date|week-date}.json` +
-   `apps/web/public/ai/index.json` + `apps/web/public/llms.txt`, one compact JSON feed per city/day/week for AI
+4. **`apps/pipeline/src/stages/rank.ts`** (`pnpm rank`) — Gemini scores each event 1–10 against `INTERESTS`
+   (`apps/pipeline/config/interests.md`), writes scores back into `data/{city}.json`. `TOP_PICK_THRESHOLD` (7)
+   decides what surfaces as a top pick.
+5. **`apps/pipeline/src/stages/geocode.ts`** (`pnpm geocode`) — dedupes event `location` strings, writes a Google
+   Maps search `location_url` back onto each event in `data/{city}.json` (empty string if no
+   location). No API key needed — it's a plain `maps.google.com/search` query URL, resolved live by
+   Maps.
+6. **`apps/pipeline/src/publish/markdown.ts`**, **`publish/ical.ts`**, **`publish/rss.ts`**, **`publish/pages.ts`** —
+   generate `{CITY}.md`, `apps/web/public/{city}.ics`, `apps/web/public/{slug}/feed.xml`, and
+   `data/index.json` / `apps/web/public/sitemap.xml` respectively.
+7. **`apps/pipeline/src/publish/ai.ts`** (`pnpm build-ai`) — generates `apps/web/public/ai/{city}/{date|week-date}.json`
+   + `apps/web/public/ai/index.json` + `apps/web/public/llms.txt`, one compact JSON feed per city/day/week for AI
    assistants to fetch directly. See "AI feed & MCP server" below.
 8. **`astro build`** — builds the site from `data/*.json` (via `apps/web/app/` React components + Astro
    pages in `apps/web/src/pages/`).
@@ -67,10 +74,10 @@ Each script reads `CITY` (city key matching a `sources/{city}.yml` file) from th
 
 ## Provider architecture
 
-`apps/pipeline/src/providers/base.ts` defines the abstract `BaseProvider`. Each concrete provider
-(`anthropic.ts`, `google.ts`, `openai.ts`, `perplexity.ts`) declares a `tiers` list
-(`aggregators`/`institutions`/`independents`, plus `open` for google/openai; perplexity is
-`open`-only) and implements `searchEvents()`.
+`apps/pipeline/src/search/base.ts` defines the abstract `BaseProvider`. Each concrete provider
+(`anthropic.ts`, `google.ts`, `openai.ts`, `perplexity.ts`, all under `src/search/`) declares a
+`tiers` list (`aggregators`/`institutions`/`independents`, plus `open` for google/openai;
+perplexity is `open`-only) and implements `searchEvents()`.
 
 Providers are **search strategies over `@dothingslol/llm`**: they build the prompts from
 `INTERESTS` and the source lists, make one `askDetailed(prompt, { provider, model, search: true,
@@ -93,7 +100,7 @@ listing URL degrades to search coverage rather than no coverage. A missing/stale
 is treated as "every scraper source is uncovered" — failing the other way would drop a source
 from both paths at once.
 
-**Only `method: llm` sources reach the search prompts** — `llmSourceStrings()` (`apps/pipeline/src/common.ts`)
+**Only `method: llm` sources reach the search prompts** — `llmSourceStrings()` (`apps/pipeline/src/config/city.ts`)
 filters them, so a source promoted to `method: scraper` disappears from the AI search by being
 absent from the list, with no runtime exclusion logic anywhere.
 
@@ -119,7 +126,7 @@ needed a correction.
 
 Three ways an AI assistant can reach this site's data, all reading the same static `/ai/*` files:
 
-- **`apps/pipeline/src/ai.ts`** generates `apps/web/public/ai/index.json` (every city's slug/timezone/data_as_of and the
+- **`apps/pipeline/src/publish/ai.ts`** generates `apps/web/public/ai/index.json` (every city's slug/timezone/data_as_of and the
   exact day/week file URLs currently published for it), `apps/web/public/ai/{slug}/{date}.json` (one day),
   `apps/web/public/ai/{slug}/week-{monday}.json` (the current published week — never a boundary this module
   invents, matches `week_start`/`week_end` from `data/{city}.json`), and, when a week file exceeds
@@ -160,7 +167,7 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 - `packages/llm` (`@dothingslol/llm`) is the model client: limiter, budget, backoff, price table,
   per-stage usage (`usageTotals`), the content cache, record/replay, and the Gemini batch transport.
   Gemini only until 1.7 moves the search providers in. The pipeline injects its stores from
-  `src/io/{usage,fileCache,batchStore}.ts` via `apps/pipeline/src/llmBootstrap.ts`; `apps/pipeline/src/io/usage.ts` prints the
+  `src/io/{usage,fileCache,batchStore}.ts` via `apps/pipeline/src/cli/llmBootstrap.ts`; `apps/pipeline/src/io/usage.ts` prints the
   exit cost report and writes `data/{city}/usage/{week}.json`.
 - `packages/core` (`@dothingslol/core/<module>`) holds all node-free, React-free logic shared by web,
   native, mcp and pipeline; browser-bound halves stay in `apps/web/app/utils/` (`tasteStore`, `tagPrefsStore`,
@@ -168,7 +175,7 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 - `packages/core/src/shared.ts` (`@dothingslol/core/shared`) — constants shared with the browser
   bundle (`CATEGORIES`, `CATEGORY_EMOJI`, `TOP_PICK_THRESHOLD`, `KEY_TO_SLUG`, `SITE_URL`).
   **Must stay free of `node:` imports** — `apps/web/app/` code imports it directly, and pulling in
-  `common.ts` (which reads the filesystem) breaks the Vite build. Biome enforces this for all of
+  `apps/pipeline/src/config/` (which reads the filesystem) breaks the Vite build. Biome enforces this for all of
   `packages/{core,utils}/src` (`noNodejsModules`, tests exempt), and `scripts/check-boundaries.mjs`
   enforces the package graph in `docs/monorepo/PLAN.md` §2.3.
 - `packages/core/src/schema.ts` (`@dothingslol/core/schema`) — `EventData` and `CityPayload`,
@@ -177,10 +184,15 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 - `packages/utils/src/tz.ts` — every zone calculation: `zonedOffsetMinutes`, `zonedDate`,
   `zonedTimeToInstant` (null for the skipped DST hour, first occurrence for the repeated one), all
   Intl-based and browser-safe. `toISODate` (core `shared.ts`) and `getWeekRange`/`fmtDate`
-  (`common.ts`) take the city's zone.
-- `apps/pipeline/src/common.ts` — `INTERESTS` (the fixed interest profile every prompt is built from),
-  `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`, `curatedPath()`; re-exports
-  everything from `@dothingslol/core/shared` so pipeline modules have one import site.
+  (`apps/pipeline/src/config/week.ts`) take the city's zone.
+- `apps/pipeline/config/pipeline.yml` — every model and operator tunable (PLAN §2.6): the one place
+  to change a model or a threshold without touching code. `apps/pipeline/config/interests.md` —
+  `INTERESTS`, the fixed interest profile every prompt is built from.
+- `apps/pipeline/src/config/` — `load.ts` (`loadPipelineConfig()`, validated against
+  `@dothingslol/llm`'s `MODELS`, plus the env overrides workflows already set), `city.ts`
+  (`loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`), `paths.ts` (`curatedPath()` and
+  friends), `week.ts`, `env.ts`, `context.ts` (`RunContext`), `registry.ts`/`sourceTypes.ts`
+  (`SourceDefinition` resolved from `sources/{city}.yml`, for the scraper adapters).
 - `packages/scraper` (`@dothingslol/scraper`) — the deterministic scrape path, with no LLM code
   and no knowledge of `data/`, cities or `sources/*.yml`: `scrape(url, opts)` returns a
   `ScrapeResult` (fetch status that separates `not-modified`/`blocked`/`failed` from `ok`, the
@@ -193,21 +205,23 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
   (detail-page times and descriptions), `normalise.ts` (`CandidateEvent` → event mapping),
   `render.ts` (`/render`: Playwright as an optional peer, loaded lazily). Page fixtures under
   `packages/scraper/test/fixtures`; `node scripts/scrape-parity.mjs` proves output parity
-  against `test/golden/scrape`.
-- `apps/pipeline/src/adapters/` — what the pipeline keeps around the scraper: `collect.ts` (calls `scrape()`,
-  windows, enriches, annotates, writes the per-source files), `llmExtract.ts` (the LLM rung,
-  passed to `scrape()` as `fallback`), `annotate.ts`, `normalise.ts` (publishing window,
-  `councilEventUrl`, `prepareCandidates`), `registry.ts` and `types.ts` (`SourceDefinition`
-  from `sources/{city}.yml`), source maintenance (`probe.ts`, `discover.ts`, `triage.ts`, the
-  promotion half of `render.ts`) and `testUrl.ts` (`pnpm test-adapter`; `EVENTYR_SCRAPE_FIXTURES`
-  replays a fixture manifest instead of the network). `apps/pipeline/src/io/httpCache.ts` is the
-  `HttpCacheStore` over `data/_cache` and `data/_raw`.
-- `apps/pipeline/src/dedupe.ts` — cross-source dedupe: date blocking, deterministic matching, LLM only for
-  the ambiguous minority. Strategy documented in the file header.
-- `apps/pipeline/src/locality.ts` — geocodes locations (Google Geocoding API) so `curate.ts` can drop events a
-  national source listed under this city. Aggregator/open tier only; once per distinct location
-  ever, cached in `data/{city}/locations.json`; keeps the event whenever it cannot get an answer.
-  Distinct from `apps/pipeline/src/geocode.ts`, which only builds the clickable Maps link and needs no key.
+  against `apps/pipeline/test/golden/scrape`.
+- `apps/pipeline/src/stages/` — what the pipeline keeps around the scraper: `collectScraped.ts` (calls
+  `scrape()`, windows, enriches, annotates, writes the per-source files), `extract.ts` (the LLM
+  rung, passed to `scrape()` as `fallback`), `annotate.ts`, `normalise.ts` (publishing window,
+  `councilEventUrl`, `prepareCandidates`) — plus every other stage (`collectSearch.ts`, `curate.ts`,
+  `venues.ts`, `rank.ts`, `geocode.ts`, and cross-source dedupe below).
+- `apps/pipeline/src/sources/` — source maintenance: `addCity.ts`, `probe.ts`, `discover.ts`,
+  `triage.ts`, the promotion half of `render.ts`, and `testUrl.ts` (`pnpm test-adapter`;
+  `EVENTYR_SCRAPE_FIXTURES` replays a fixture manifest instead of the network).
+  `apps/pipeline/src/io/httpCache.ts` is the `HttpCacheStore` over `data/_cache` and `data/_raw`.
+- `apps/pipeline/src/stages/dedupe.ts` — cross-source dedupe: date blocking, deterministic matching, LLM only
+  for the ambiguous minority. Strategy documented in the file header.
+- `apps/pipeline/src/stages/locality.ts` — geocodes locations (Google Geocoding API) so `curate.ts` can drop
+  events a national source listed under this city. Aggregator/open tier only; once per distinct
+  location ever, cached in `data/{city}/locations.json`; keeps the event whenever it cannot get an
+  answer. Distinct from `apps/pipeline/src/stages/geocode.ts`, which only builds the clickable Maps link and
+  needs no key.
 - `packages/core/src/shared.ts` also owns event identity: `eventHash` (the basis for the iCal UID,
   the RSS guid and the share URL — **output is frozen**, pinned by
   `packages/core/src/shared.test.ts`) plus `eventSlug` / `eventPath` for the per-event pages at
@@ -249,7 +263,7 @@ pnpm check            # both typechecks + biome + tests (what CI runs)
 # Check what one page would contribute, without touching the pipeline:
 pnpm test-adapter <url> [--raw] [--all]
 # Replay every LLM-using CLI against the fixture city; no key, no spend:
-node scripts/llm-parity.mjs && git diff --exit-code test/golden/llm
+node scripts/llm-parity.mjs && git diff --exit-code apps/pipeline/test/golden/llm
 ```
 
 ## Implementation guidelines
@@ -263,11 +277,11 @@ Apply these to new code in this repo. They exist because each one has already co
   tolerant parse; `batch: true` on the array form uses the provider's native batch API at half
   price, which no stage uses yet — D14). It is the only place that can bound concurrency across the
   process, back off on 429, enforce a budget, and say where the spend went. A per-module cap bounds
-  nothing, because caps that cannot see each other add up. Every CLI imports `apps/pipeline/src/llmBootstrap.ts`
+  nothing, because caps that cannot see each other add up. Every CLI imports `apps/pipeline/src/cli/llmBootstrap.ts`
   first, which is the one `configureLLM` call.
 - **Verify any prompt-adjacent refactor with the replay harness.** `node scripts/llm-parity.mjs`
   runs every LLM-using CLI against the fixture city in `test/fixtures/llm-city` with canned
-  responses (no key, no spend) and rewrites `test/golden/llm`; `git diff --exit-code test/golden/llm`
+  responses (no key, no spend) and rewrites `apps/pipeline/test/golden/llm`; `git diff --exit-code apps/pipeline/test/golden/llm`
   is the check. Requests, the exit cost report and the concurrency profile must all hold.
 - **Cache expensive results by content, not by URL.** The same page reached by two paths, two
   stages, or two runs must be paid for once (`withExtractionCache` in `apps/pipeline/src/io/fileCache.ts`, or

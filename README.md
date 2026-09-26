@@ -144,7 +144,7 @@ trusted and never geocoded — that is ~2/3 of locations never sent to the API. 
 handful of events a week from a venue that tours: last measured at 2 of 395 (0.5%), both Opera
 Queensland/QTIX shows in Toowoomba. Widening the gate is one line in `dropOtherCities`.
 
-Three rules keep this from being expensive or destructive (`apps/pipeline/src/locality.ts`):
+Three rules keep this from being expensive or destructive (`apps/pipeline/src/stages/locality.ts`):
 
 - **Once per distinct location, ever.** The geocoder interface takes a list, so a caller cannot
   make it one request per event, and every answer is cached in `data/{city}/locations.json` — which
@@ -251,7 +251,7 @@ The per-source line is built to distinguish a broken source from a quiet one:
 2. **Embedded hydration JSON** (`embeddedJson.ts`) — `__NEXT_DATA__`, Next.js app-router flight
    data, Nuxt/Remix/SvelteKit state, any `application/json` blob. Recovers client-rendered pages
    whose HTML looks empty. Also deterministic and free.
-3. **LLM over reduced page text** (`llmExtract.ts`) — last resort, capped at 4 calls per page.
+3. **LLM over reduced page text** (`apps/pipeline/src/stages/extract.ts`) — last resort, capped at 4 calls per page.
 
 **Dates are never taken from a model.** Whatever produced the fields, the date text goes through
 `dates.ts` (chrono-node, British locale so `6/10` is 6 October) and anything it cannot parse
@@ -270,7 +270,7 @@ disallows us in `robots.txt`, we do not fetch it.
 
 ## Deduplication
 
-`apps/pipeline/src/dedupe.ts`, called by `curate.ts` over the merged set from both paths. Three stages, cheapest
+`apps/pipeline/src/stages/dedupe.ts`, called by `curate.ts` over the merged set from both paths. Three stages, cheapest
 first, so the LLM only ever sees the ambiguous minority:
 
 1. **Blocking** — bucket by calendar date (±1 day). Comparisons scale with events-per-day, not
@@ -397,11 +397,15 @@ no registration — just write `{city_key, provider, tier, week_start, week_end,
 - `packages/core/src/shared.ts` — constants shared with the browser bundle. **Must stay free of `node:` imports**;
   `apps/web/app/` imports it directly and pulling in `common.ts` (which reads the filesystem) breaks the Vite
   build.
-- `apps/pipeline/src/common.ts` — `INTERESTS`, `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`;
-  re-exports everything from `@dothingslol/core/shared`.
-- `apps/pipeline/src/adapters/` — the scrape path: `probe.ts`, `discover.ts`, `collect.ts`, `fetch.ts`,
-  `extract.ts`, `embeddedJson.ts`, `llmExtract.ts`, `dates.ts`, `normalise.ts`, `annotate.ts`.
-- `apps/pipeline/src/dedupe.ts` / `src/dedupeClassifier.ts` — cross-source dedupe.
+- `apps/pipeline/config/pipeline.yml` — every model and operator tunable (PLAN §2.6); the one place
+  to change a model or a threshold. `apps/pipeline/config/interests.md` — the interest profile.
+- `apps/pipeline/src/config/` — `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`,
+  `loadPipelineConfig()`, the week/env/path helpers, and the `RunContext` every stage takes.
+- `apps/pipeline/src/stages/` — the scrape path (`collectScraped.ts`, `extract.ts`, `normalise.ts`,
+  `annotate.ts`), the search dispatch (`collectSearch.ts`), `curate.ts`, `venues.ts`, `rank.ts`,
+  `geocode.ts`, and cross-source dedupe (`dedupe.ts` / `dedupeClassifier.ts`).
+- `apps/pipeline/src/sources/` — source maintenance tools: `addCity.ts`, `probe.ts`, `discover.ts`,
+  `triage.ts`, `render.ts`, `testUrl.ts`, plus the scraper-source registry (`config/registry.ts`).
 - `apps/web/app/` — React components; `apps/web/src/pages/` — Astro pages.
 - `apps/web/app/utils/notifications.ts` — 1-hour event reminders, 8:00 AM morning digest, and notification lifecycle
   (reminder times and wording: `packages/core/src/reminders.ts`).
