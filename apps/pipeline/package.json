@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "collect": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/collection.ts",
+    "collect": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/collectSearch.ts",
     "collect-adapters": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/cli/collectScraped.ts",
     "curate": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/curate.ts",
     "venues": "tsx --env-file-if-exists=../../.env --tsconfig tsconfig.json src/venues.ts",

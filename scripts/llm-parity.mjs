@@ -79,18 +79,18 @@ const CLIS = {
 	"collect-adapters": { args: ["src/cli/collectScraped.ts", "--only=fixture-programme"] },
 	"probe-sources": { args: ["src/adapters/probe.ts", "--city=brisbane"] },
 	"discover-sources": { args: ["src/adapters/discover.ts", "--city=brisbane"] },
-	"collect-google": { args: ["src/collection.ts", "google"], env: { PROVIDERS: "google" } },
+	"collect-google": { args: ["src/cli/collectSearch.ts", "google"], env: { PROVIDERS: "google" } },
 	"collect-anthropic": {
-		args: ["src/collection.ts", "anthropic"],
+		args: ["src/cli/collectSearch.ts", "anthropic"],
 		env: { PROVIDERS: "anthropic", ANTHROPIC_TIERS: "aggregators,institutions", ANTHROPIC_API_KEY: "dummy" },
 	},
-	"collect-openai": { args: ["src/collection.ts", "openai"], env: { PROVIDERS: "openai", OPENAI_API_KEY: "dummy" } },
+	"collect-openai": { args: ["src/cli/collectSearch.ts", "openai"], env: { PROVIDERS: "openai", OPENAI_API_KEY: "dummy" } },
 	"collect-openai-chat": {
-		args: ["src/collection.ts", "openai"],
+		args: ["src/cli/collectSearch.ts", "openai"],
 		env: { PROVIDERS: "openai", OPENAI_API_KEY: "dummy", OPENAI_SEARCH_MODEL: "gpt-4.1-mini" },
 	},
 	"collect-perplexity": {
-		args: ["src/collection.ts", "perplexity"],
+		args: ["src/cli/collectSearch.ts", "perplexity"],
 		env: { PROVIDERS: "perplexity", PERPLEXITY_API_KEY: "dummy" },
 	},
 };
