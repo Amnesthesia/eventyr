@@ -74,7 +74,7 @@ const TSX = ["--filter", "@dothingslol/pipeline", "exec", "tsx", "--env-file-if-
  * per run; collect-openai-chat is the non-gpt-5 (chat.completions) branch. */
 const CLIS = {
 	curate: { args: ["src/cli/curate.ts"] },
-	venues: { args: ["src/venues.ts"] },
+	venues: { args: ["src/cli/venues.ts"] },
 	rank: { args: ["src/rank.ts"] },
 	"collect-adapters": { args: ["src/cli/collectScraped.ts", "--only=fixture-programme"] },
 	"probe-sources": { args: ["src/adapters/probe.ts", "--city=brisbane"] },

@@ -1,7 +1,7 @@
 // Gives every event a canonical `venue_name`, so the site can list everything
 // at one venue and "QAG" and "Queensland Art Gallery" are one venue, not two.
-import { loadPipelineConfig } from "./config/load.js";
-import { stageModelCacheKey } from "./io/cacheKey.js";
+import { loadPipelineConfig } from "../config/load.js";
+import { stageModelCacheKey } from "../io/cacheKey.js";
 
 //
 // There was no venue field to filter on: `event.venue` is the source tier
@@ -29,16 +29,14 @@ import { stageModelCacheKey } from "./io/cacheKey.js";
 // Standalone stage after curate rather than inside it, so it can also run
 // over already-published data with no re-curation.
 
-import "./llmBootstrap.ts";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { ask, parseJsonArray } from "@dothingslol/llm";
 import { chunkArray } from "@dothingslol/utils/concurrency";
-import { loadCityConfig, SOURCE_TIERS } from "./config/city.js";
-import { requireEnv } from "./config/env.js";
-import { DATA_ROOT } from "./config/paths.js";
-import { acronymMatch } from "./dedupe.ts";
-import { installUsageReporting } from "./io/usage.ts";
+import { loadCityConfig, SOURCE_TIERS } from "../config/city.js";
+import type { RunContext } from "../config/context.js";
+import { DATA_ROOT } from "../config/paths.js";
+import { acronymMatch } from "../dedupe.js";
 
 // Not flash-lite: on the first Gold Coast run it merged "Mudgeeraba Studio"
 // into "Benowa Studio" despite the prompt's branch rule. Every answer is
@@ -437,9 +435,23 @@ function writeCache(path: string, cache: VenueCache): void {
 	);
 }
 
-async function main(): Promise<void> {
-	installUsageReporting();
-	const city = requireEnv("CITY");
+export interface CanonicaliseVenuesOptions {
+	/** Gates the Gemini classifier — missing means "rules only". */
+	googleApiKey?: string;
+}
+
+export interface CanonicaliseVenuesResult {
+	stats: VenueStats;
+	namedCount: number;
+	eventCount: number;
+}
+
+export async function canonicaliseVenues(
+	ctx: RunContext,
+	opts: CanonicaliseVenuesOptions = {},
+): Promise<CanonicaliseVenuesResult> {
+	const city = ctx.city;
+	const log = ctx.log;
 	const jsonPath = join(DATA_ROOT, `${city}.json`);
 	if (!existsSync(jsonPath)) {
 		throw new Error(`✗ ${jsonPath} not found — run curate.ts first.`);
@@ -460,9 +472,9 @@ async function main(): Promise<void> {
 		if (!samples.has(raw)) samples.set(raw, String(e.location).trim());
 	}
 
-	const apiKey = process.env.GOOGLE_API_KEY;
+	const apiKey = opts.googleApiKey;
 	if (!apiKey) {
-		console.log(
+		log.log(
 			"  ⚠ GOOGLE_API_KEY unset — rules only, unmatched names used as-is",
 		);
 	}
@@ -486,15 +498,14 @@ async function main(): Promise<void> {
 	writeFileSync(jsonPath, JSON.stringify({ ...payload, events }, null, 2));
 
 	const named = events.filter((e) => e.venue_name).length;
-	console.log(
+	log.log(
 		`→ venues: ${stats.raw} raw → ${stats.venues} venues ` +
 			`(${stats.alias} alias, ${stats.cached} cached, ${stats.rule} rule, ` +
 			`${stats.model} model, ${stats.notVenue} not a venue, ${stats.unresolved} unresolved); ` +
 			`${named}/${events.length} events named`,
 	);
 	for (const [raw, canonical] of merges) {
-		console.log(`    "${raw}" ⇒ "${canonical}"`);
+		log.log(`    "${raw}" ⇒ "${canonical}"`);
 	}
+	return { stats, namedCount: named, eventCount: events.length };
 }
-
-if (process.argv[1]?.endsWith("venues.ts")) await main();
