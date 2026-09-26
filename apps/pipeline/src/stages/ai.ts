@@ -1,4 +1,3 @@
-import { loadPipelineConfig } from "./config/load.js";
 // Static /ai/ feed for third-party AI assistants (Claude, ChatGPT, Gemini)
 // browsing this site on a user's behalf, plus the /llms.txt pointer they're
 // told to fetch first. No backend: everything here is a file written once per
@@ -65,8 +64,10 @@ import {
 	toISODate,
 } from "@dothingslol/core/shared";
 import { addDays } from "@dothingslol/utils/tz";
-import { loadCityConfig } from "./config/city.js";
-import { DATA_ROOT, PROJECT_ROOT, WEB_PUBLIC_DIR } from "./config/paths.js";
+import { loadCityConfig } from "../config/city.js";
+import type { Logger } from "../config/context.js";
+import type { PipelineConfig } from "../config/load.js";
+import { DATA_ROOT, WEB_PUBLIC_DIR } from "../config/paths.js";
 
 const AI_ROOT = join(WEB_PUBLIC_DIR, "ai");
 
@@ -311,6 +312,8 @@ function pruneStale(dir: string, keep: Set<string>): number {
 
 /** `todayStr` is the city's own date, in `timezone`. */
 function processCity(
+	log: Logger,
+	cfg: PipelineConfig,
 	payload: CityPayload,
 	todayStr: string,
 	timezone: string,
@@ -327,11 +330,9 @@ function processCity(
 		const size = writeJson(outPath, file);
 		keep.add(outPath);
 		dayEntries.push(`/ai/${slug}/${date}.json`);
-		console.log(
+		log.log(
 			`→ ai/${slug}/${date}.json (${file.events.length} events, ${(size / 1024).toFixed(1)} KB)` +
-				(size > loadPipelineConfig().publish.ai.dayWarnBytes
-					? " ⚠ over 50 KB target"
-					: ""),
+				(size > cfg.publish.ai.dayWarnBytes ? " ⚠ over 50 KB target" : ""),
 		);
 	}
 
@@ -344,14 +345,14 @@ function processCity(
 		const size = writeJson(outPath, week);
 		keep.add(outPath);
 		weekEntry = `/ai/${slug}/week-${payload.week_start}.json`;
-		console.log(
+		log.log(
 			`→ ai/${slug}/week-${payload.week_start}.json (${week.events.length} events, ${(size / 1024).toFixed(1)} KB)` +
-				(size > loadPipelineConfig().publish.ai.weekSplitBytes
+				(size > cfg.publish.ai.weekSplitBytes
 					? " ⚠ over 200 KB target — also splitting by category"
 					: ""),
 		);
 
-		if (size > loadPipelineConfig().publish.ai.weekSplitBytes) {
+		if (size > cfg.publish.ai.weekSplitBytes) {
 			const splitDir = join(cityDir, `week-${payload.week_start}`);
 			keep.add(splitDir);
 			for (const category of CATEGORIES) {
@@ -367,20 +368,20 @@ function processCity(
 					slug: catSlug,
 					file: `/ai/${slug}/week-${payload.week_start}/${catSlug}.json`,
 				});
-				console.log(
+				log.log(
 					`  → ai/${slug}/week-${payload.week_start}/${catSlug}.json (${events.length} events, ${(catSize / 1024).toFixed(1)} KB)`,
 				);
 			}
 		}
 	} else {
-		console.log(
+		log.log(
 			`⚠ ${payload.city_key}: week_end ${payload.week_end} is before today (${todayStr}) — data is stale, skipping day/week files.`,
 		);
 	}
 
 	const removed = pruneStale(cityDir, keep);
 	if (removed > 0)
-		console.log(`  (removed ${removed} stale file(s) under ai/${slug}/)`);
+		log.log(`  (removed ${removed} stale file(s) under ai/${slug}/)`);
 
 	return {
 		city: payload.city,
@@ -626,7 +627,18 @@ export function validateOutput(
 // main
 // ---------------------------------------------------------------------------
 
-function main(): void {
+export interface PublishAiFeedResult {
+	cityCount: number;
+}
+
+/**
+ * Every city in one pass, like rss.ts/pages.ts, so it needs no CITY env var —
+ * it has to see every city at once to write one shared /ai/index.json.
+ */
+export async function publishAiFeed(
+	log: Logger,
+	cfg: PipelineConfig,
+): Promise<PublishAiFeedResult> {
 	const now = new Date();
 	const todayByCity: Record<string, string> = {};
 	const files = readdirSync(DATA_ROOT).filter(
@@ -640,7 +652,7 @@ function main(): void {
 		try {
 			payload = JSON.parse(readFileSync(join(DATA_ROOT, file), "utf-8"));
 		} catch {
-			console.log(`⚠ Skipping ${file} — could not parse`);
+			log.log(`⚠ Skipping ${file} — could not parse`);
 			continue;
 		}
 		if (!payload.city_key || !Array.isArray(payload.events)) continue;
@@ -649,7 +661,7 @@ function main(): void {
 		const { timezone } = loadCityConfig(payload.city_key);
 		const cityToday = toISODate(now, timezone);
 		todayByCity[payload.city_key] = cityToday;
-		cities.push(processCity(payload, cityToday, timezone));
+		cities.push(processCity(log, cfg, payload, cityToday, timezone));
 	}
 	// One date for the whole index: the latest any published city has reached,
 	// so it comes from the cities' zones and never from the host's.
@@ -659,16 +671,13 @@ function main(): void {
 	const index: AiIndex = { data_as_of: todayStr, cities };
 	const indexPath = join(AI_ROOT, "index.json");
 	writeJson(indexPath, index);
-	console.log(`→ ai/index.json (${cities.length} cities)`);
+	log.log(`→ ai/index.json (${cities.length} cities)`);
 
 	const llmsPath = join(WEB_PUBLIC_DIR, "llms.txt");
 	writeFileSync(llmsPath, buildLlmsTxt(cities, todayStr), "utf-8");
-	console.log("→ llms.txt");
+	log.log("→ llms.txt");
 
 	validateOutput(indexPath, todayByCity);
-	console.log("✓ /ai output validated.");
+	log.log("✓ /ai output validated.");
+	return { cityCount: cities.length };
 }
-
-// Guarded so the pure helpers above can be imported by tests without the
-// module writing files as a side effect of the import.
-if (process.argv[1]?.endsWith("ai.ts")) main();
