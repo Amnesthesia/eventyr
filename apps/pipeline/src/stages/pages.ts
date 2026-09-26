@@ -1,18 +1,18 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import {
+	CATEGORY_META,
 	eventPath,
 	isTopPick,
 	KEY_TO_SLUG,
 	SITE_URL,
 	toISODate,
 } from "@dothingslol/core/shared";
-import { loadCityConfig } from "./config/city.js";
-import { DATA_ROOT, PROJECT_ROOT, WEB_PUBLIC_DIR } from "./config/paths.js";
+import { loadCityConfig } from "../config/city.js";
+import type { Logger } from "../config/context.js";
+import { DATA_ROOT, WEB_PUBLIC_DIR } from "../config/paths.js";
 
 const BASE_URL = SITE_URL;
-
-import { CATEGORY_META } from "@dothingslol/core/shared";
 
 const CATEGORY_SLUGS = Object.values(CATEGORY_META).map((m) => m.slug);
 
@@ -64,7 +64,15 @@ function buildSitemap(cities: CityMeta[], today: string): string {
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
 }
 
-function main(): void {
+export interface PublishPagesResult {
+	cityCount: number;
+}
+
+/**
+ * Every city in one pass, like markdown.ts/rss.ts, so it needs no CITY env
+ * var — it discovers the set of cities from data/*.json.
+ */
+export async function publishPages(log: Logger): Promise<PublishPagesResult> {
 	mkdirSync(DATA_ROOT, { recursive: true });
 
 	const cities: Record<string, unknown>[] = [];
@@ -85,7 +93,7 @@ function main(): void {
 		try {
 			payload = JSON.parse(readFileSync(f, "utf-8")) as Record<string, unknown>;
 		} catch {
-			console.log(`⚠ Skipping ${f} — could not parse`);
+			log.log(`⚠ Skipping ${f} — could not parse`);
 			continue;
 		}
 		// Outside the try: a city whose sources/{city}.yml is broken must stop
@@ -122,13 +130,12 @@ function main(): void {
 
 	const outPath = join(DATA_ROOT, "index.json");
 	writeFileSync(outPath, JSON.stringify(index, null, 2), "utf-8");
-	console.log(`→ Written ${outPath} (${cities.length} city/cities)`);
+	log.log(`→ Written ${outPath} (${cities.length} city/cities)`);
 
 	const sitemapPath = join(WEB_PUBLIC_DIR, "sitemap.xml");
 	writeFileSync(sitemapPath, buildSitemap(cityMeta, today), "utf-8");
-	console.log(`→ Written ${sitemapPath}`);
+	log.log(`→ Written ${sitemapPath}`);
 
-	console.log("✓ Pages index complete.");
+	log.log("✓ Pages index complete.");
+	return { cityCount: cities.length };
 }
-
-main();

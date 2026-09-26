@@ -13,11 +13,8 @@ import {
 	KEY_TO_SLUG,
 	meetsScoreFloor,
 } from "@dothingslol/core/shared";
-import { loadCityConfig } from "./config/city.js";
-import { requireEnv } from "./config/env.js";
-import { DATA_ROOT, PROJECT_ROOT, WEB_PUBLIC_DIR } from "./config/paths.js";
-
-const CITY = requireEnv("CITY");
+import type { RunContext } from "../config/context.js";
+import { DATA_ROOT, WEB_PUBLIC_DIR } from "../config/paths.js";
 
 /** YYYYMMDD[THHMMSS] stamp from a naive wall-clock string, no conversion. */
 function stamp(value: string): string {
@@ -95,10 +92,10 @@ function parseDt(
  * stable events change identity. Same basis as the RSS guid.
  */
 function uidFor(city: string, ev: Record<string, unknown>): string {
-	// The hash lives in shared.ts, so this and rss.ts's guid cannot drift apart
-	// — they used to hold identical copies of it, including the comment about
-	// why the venue is in the basis. The `${city}-` prefix must stay: a changed
-	// UID makes calendar clients re-add every event.
+	// The hash lives in shared.ts, so this and rss.ts's guid cannot drift
+	// apart — they used to hold identical copies of it, including the
+	// comment about why the venue is in the basis. The `${city}-` prefix
+	// must stay: a changed UID makes calendar clients re-add every event.
 	return `${city}-${eventHash(city, ev)}`;
 }
 
@@ -123,11 +120,19 @@ function fold(line: string): string {
 	return out.join("\r\n");
 }
 
-function main(): void {
-	const cfg = loadCityConfig(CITY);
+export interface PublishIcalResult {
+	eventCount: number;
+	fileCount: number;
+	removedCount: number;
+}
+
+export async function publishIcal(ctx: RunContext): Promise<PublishIcalResult> {
+	const CITY = ctx.city;
+	const log = ctx.log;
+	const cfg = ctx.cityConfig;
 	// Required and validated by loadCityConfig. There was a silent "UTC"
-	// fallback here once, which is how every published .ics ended up stamped
-	// TZID=UTC while carrying Brisbane wall-clock times.
+	// fallback here once, which is how every published .ics ended up
+	// stamped TZID=UTC while carrying Brisbane wall-clock times.
 	const tz = cfg.timezone;
 	const cityName = cfg.name;
 
@@ -141,9 +146,9 @@ function main(): void {
 		unknown
 	>;
 	// Below LOW_SCORE_THRESHOLD is mostly venue promotion — happy hours, meal
-	// deals, schnitzel nights — which rank.ts scores 1. The site hides these by
-	// default and a subscriber has no toggle at all, so a feed carrying them
-	// would be the one place they still reached a reader.
+	// deals, schnitzel nights — which rank.ts scores 1. The site hides these
+	// by default and a subscriber has no toggle at all, so a feed carrying
+	// them would be the one place they still reached a reader.
 	const events = ((payload.events as Record<string, unknown>[]) ?? []).filter(
 		(e) => meetsScoreFloor(e.score),
 	);
@@ -158,9 +163,9 @@ function main(): void {
 		`X-WR-TIMEZONE:${tz}`,
 	];
 
-	// One builder for both outputs. The per-event files below carry the same
-	// VEVENT — the same UID especially, so adding one event and subscribing to
-	// the city feed do not produce two copies of it.
+	// One builder for both outputs. The per-event files below carry the
+	// same VEVENT — the same UID especially, so adding one event and
+	// subscribing to the city feed do not produce two copies of it.
 	function vevent(ev: Record<string, unknown>): string[] | null {
 		const parsed = parseDt(
 			(ev.datetime_iso as string) ?? "",
@@ -181,16 +186,17 @@ function main(): void {
 		];
 	}
 
-	// One .ics per event, at public/{citySlug}/e/{slug}.ics — a sibling of the
-	// event page rather than a file inside it, so a static host never has to
-	// decide whether the path is a directory or a file.
+	// One .ics per event, at public/{citySlug}/e/{slug}.ics — a sibling of
+	// the event page rather than a file inside it, so a static host never
+	// has to decide whether the path is a directory or a file.
 	//
-	// A file in public/ rather than an Astro endpoint route, which was tried
-	// first: `trailingSlash: "always"` makes the DEV server 404 every route
-	// whose path ends in an extension, so the link worked in a build and was
-	// broken in `astro dev`. public/ bypasses routing entirely and behaves the
-	// same in both — which is also why these have to be committed: deploy.yml
-	// runs `astro build` from a checkout and never runs this script.
+	// A file in public/ rather than an Astro endpoint route, which was
+	// tried first: `trailingSlash: "always"` makes the DEV server 404
+	// every route whose path ends in an extension, so the link worked in
+	// a build and was broken in `astro dev`. public/ bypasses routing
+	// entirely and behaves the same in both — which is also why these
+	// have to be committed: deploy.yml runs `astro build` from a checkout
+	// and never runs this script.
 	const citySlug = KEY_TO_SLUG[CITY] ?? CITY;
 	const eventDir = join(WEB_PUBLIC_DIR, citySlug, "e");
 	mkdirSync(eventDir, { recursive: true });
@@ -214,20 +220,20 @@ function main(): void {
 			...block,
 			"END:VCALENDAR",
 		];
-		// eventSlug is the same bounded, sanitised value the event page's route
-		// uses, so this path cannot escape eventDir.
+		// eventSlug is the same bounded, sanitised value the event page's
+		// route uses, so this path cannot escape eventDir.
 		const name = `${eventSlug(CITY, ev)}.ics`;
 		writeFileSync(join(eventDir, name), `${single.join("\r\n")}\r\n`, "utf-8");
 		written.add(name);
 		files++;
 	}
 
-	// Whatever this run did not write is an event that has since been dropped —
-	// a cancelled listing, a wrong-city event curate now rejects. Without this
-	// the directory only ever grows and those files keep being served: the
-	// Vienna and Manchester meetups curate had already removed were still
-	// downloadable as calendar entries. A rule that can only add accumulates
-	// stale state no later run can correct.
+	// Whatever this run did not write is an event that has since been
+	// dropped — a cancelled listing, a wrong-city event curate now
+	// rejects. Without this the directory only ever grows and those files
+	// keep being served: the Vienna and Manchester meetups curate had
+	// already removed were still downloadable as calendar entries. A rule
+	// that can only add accumulates stale state no later run can correct.
 	let removed = 0;
 	for (const name of readdirSync(eventDir)) {
 		if (name.endsWith(".ics") && !written.has(name)) {
@@ -240,10 +246,9 @@ function main(): void {
 
 	const outPath = join(WEB_PUBLIC_DIR, `${CITY}.ics`);
 	writeFileSync(outPath, `${lines.join("\r\n")}\r\n`, "utf-8");
-	console.log(
+	log.log(
 		`→ Written ${CITY}.ics (${count} events) and ${files} per-event .ics under public/${citySlug}/e/` +
 			(removed > 0 ? `, removed ${removed} stale` : ""),
 	);
+	return { eventCount: count, fileCount: files, removedCount: removed };
 }
-
-main();

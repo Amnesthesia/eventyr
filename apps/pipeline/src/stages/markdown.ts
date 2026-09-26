@@ -1,15 +1,16 @@
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-
 import { CATEGORY_EMOJI, isTopPick } from "@dothingslol/core/shared";
 import { zonedMidnight } from "@dothingslol/utils/tz";
-import { loadCityConfig } from "./config/city.js";
-import { DATA_ROOT, PROJECT_ROOT } from "./config/paths.js";
-import { fmtDate } from "./config/week.js";
+import { loadCityConfig } from "../config/city.js";
+import type { Logger } from "../config/context.js";
+import { DATA_ROOT, PROJECT_ROOT } from "../config/paths.js";
+import { fmtDate } from "../config/week.js";
 
 type Event = Record<string, unknown>;
 
 function writeMarkdown(
+	log: Logger,
 	events: Event[],
 	weekStart: string,
 	weekEnd: string,
@@ -105,12 +106,21 @@ function writeMarkdown(
 
 	const outPath = join(PROJECT_ROOT, `${cityKey.toUpperCase()}.md`);
 	writeFileSync(outPath, lines.join("\n"), "utf-8");
-	console.log(
-		`→ Written ${cityKey.toUpperCase()}.md (${events.length} events)`,
-	);
+	log.log(`→ Written ${cityKey.toUpperCase()}.md (${events.length} events)`);
 }
 
-function main(): void {
+export interface PublishMarkdownResult {
+	cityCount: number;
+}
+
+/**
+ * Every city in one pass, not one per RunContext: unlike curate/rank/geocode,
+ * this reads no CITY env var — it always writes every {CITY}.md the digest
+ * publishes in one run, discovering the set from data/*.json.
+ */
+export async function publishMarkdown(
+	log: Logger,
+): Promise<PublishMarkdownResult> {
 	const jsonFiles = readdirSync(DATA_ROOT)
 		.filter(
 			(f) =>
@@ -125,12 +135,13 @@ function main(): void {
 		);
 	}
 
-	console.log("Markdown generation");
-	console.log("=".repeat(50));
+	log.log("Markdown generation");
+	log.log("=".repeat(50));
 
 	for (const jsonPath of jsonFiles) {
 		const payload = JSON.parse(readFileSync(jsonPath, "utf-8"));
 		writeMarkdown(
+			log,
 			payload.events,
 			payload.week_start,
 			payload.week_end,
@@ -139,7 +150,6 @@ function main(): void {
 		);
 	}
 
-	console.log("✓ Markdown complete.");
+	log.log("✓ Markdown complete.");
+	return { cityCount: jsonFiles.length };
 }
-
-main();

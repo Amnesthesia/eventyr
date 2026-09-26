@@ -17,8 +17,9 @@ import {
 	meetsScoreFloor,
 	SITE_URL,
 } from "@dothingslol/core/shared";
-import { loadCityConfig } from "./config/city.js";
-import { DATA_ROOT, PROJECT_ROOT, WEB_PUBLIC_DIR } from "./config/paths.js";
+import { loadCityConfig } from "../config/city.js";
+import type { Logger } from "../config/context.js";
+import { DATA_ROOT, WEB_PUBLIC_DIR } from "../config/paths.js";
 
 interface Payload {
 	city: string;
@@ -155,12 +156,21 @@ export function buildFeedFor(payload: Payload, timeZone: string): string {
 	return buildFeed(payload, timeZone);
 }
 
-function main(): void {
+export interface PublishRssResult {
+	cityCount: number;
+}
+
+/**
+ * Every city in one pass, like markdown.ts/pages.ts, so it needs no CITY env
+ * var — it discovers the set of cities from data/*.json.
+ */
+export async function publishRss(log: Logger): Promise<PublishRssResult> {
 	const files = readdirSync(DATA_ROOT).filter(
 		(f) =>
 			f.endsWith(".json") && f !== "index.json" && !f.endsWith("_raw.json"),
 	);
 
+	let written = 0;
 	for (const file of files) {
 		let payload: Payload;
 		try {
@@ -178,10 +188,8 @@ function main(): void {
 		const outPath = join(outDir, "feed.xml");
 		const { timezone } = loadCityConfig(payload.city_key);
 		writeFileSync(outPath, buildFeed(payload, timezone), "utf-8");
-		console.log(`→ Written ${slug}/feed.xml (${payload.events.length} events)`);
+		log.log(`→ Written ${slug}/feed.xml (${payload.events.length} events)`);
+		written++;
 	}
+	return { cityCount: written };
 }
-
-// Guarded so the pure helpers above can be imported by tests without the
-// module writing files as a side effect of the import.
-if (process.argv[1]?.endsWith("rss.ts")) main();
