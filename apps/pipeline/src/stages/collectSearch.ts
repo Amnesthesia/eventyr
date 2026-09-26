@@ -7,11 +7,11 @@
 // are unchanged by this refactor — only the provider *selection* and
 // dispatch logic (this file's old main-guard) moves into a stage function.
 import type { RunContext } from "../config/context.js";
-import { AnthropicProvider } from "../providers/anthropic.js";
-import type { BaseProvider } from "../providers/base.js";
-import { GoogleProvider } from "../providers/google.js";
-import { OpenAIProvider } from "../providers/openai.js";
-import { PerplexityProvider } from "../providers/perplexity.js";
+import { AnthropicProvider } from "../search/anthropic.js";
+import type { BaseProvider } from "../search/base.js";
+import { GoogleProvider } from "../search/google.js";
+import { OpenAIProvider } from "../search/openai.js";
+import { PerplexityProvider } from "../search/perplexity.js";
 
 export type ProviderName = "google" | "anthropic" | "openai" | "perplexity";
 

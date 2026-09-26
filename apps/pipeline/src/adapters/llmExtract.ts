@@ -4,7 +4,7 @@ import { loadPipelineConfig } from "../config/load.js";
 
 // only place in the adapter framework an LLM is invoked, and it never
 // fetches or searches anything — the page text is handed to it complete.
-// Mirrors the existing extract pass in src/providers/base.ts
+// Mirrors the existing extract pass in src/search/base.ts
 // (buildExtractSystem/parseEvents) — same "copy, don't invent" contract —
 // just fed from our own deterministic fetch instead of a search tool's
 // output, which is the whole point of this refactor.
@@ -20,7 +20,7 @@ import { ask, parseJsonArray } from "@dothingslol/llm";
 import type { PageExtractFn, RawCandidateFields } from "@dothingslol/scraper";
 import { countDateHits } from "@dothingslol/scraper/parsers";
 import { mapWithConcurrency } from "@dothingslol/utils/concurrency";
-import { splitIntoBatches } from "../providers/base.ts";
+import { splitIntoBatches } from "../search/base.ts";
 
 /** Extraction calls per page — see the note in extractPage. */
 /** Below this much page text, an empty extraction is plausible rather than suspicious. */
