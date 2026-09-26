@@ -1,6 +1,7 @@
+import { zonedDate } from "../../../src/tz.ts";
 import { useEventsContext } from "../../context";
 import type { DateRange } from "../../types";
-import { todayIso, tomorrowIso, weekendRange } from "../../utils/dates";
+import { addDays, weekendRange } from "../../utils/dates";
 import DateRangePicker from "../DateRangePicker";
 
 /**
@@ -17,9 +18,15 @@ function sameRange(a: DateRange | null, b: DateRange | null): boolean {
 }
 
 export default function WhenFilter() {
-	const { dateRange, setDateRange, dateMin, dateMax } = useEventsContext();
-	const today = todayIso();
-	const tomorrow = tomorrowIso();
+	const { dateRange, setDateRange, dateMin, dateMax, todayStr, cityData } =
+		useEventsContext();
+	// The viewer's own date once mounted (todayStr). Before that, in the build's
+	// render and the first client render, which have to agree: the city's date,
+	// the same one the /today/ page was built for. Calling todayIso() here read
+	// the BUILD host's clock, so a UTC build lit the wrong segment for the first
+	// ten hours of a Brisbane day.
+	const today = todayStr || zonedDate(cityData.timezone, new Date());
+	const tomorrow = addDays(today, 1);
 	const options: { key: string; label: string; range: DateRange | null }[] = [
 		{ key: "any", label: "Any day", range: null },
 		{ key: "today", label: "Today", range: { start: today, end: today } },

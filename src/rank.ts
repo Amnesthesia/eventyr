@@ -7,6 +7,7 @@ import {
 	fmtDate,
 	getWeekRange,
 	INTERESTS,
+	loadCityConfig,
 	requireEnv,
 	TOP_PICK_THRESHOLD,
 	toISODate,
@@ -29,6 +30,7 @@ const RANK_MODEL = "gemini-3.5-flash";
 const RANK_CHUNK = 60;
 
 const CITY = requireEnv("CITY");
+const CITY_TZ = loadCityConfig(CITY).timezone;
 const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
 const FORCE = ["1", "true", "yes"].includes(
 	(process.env.FORCE ?? "").toLowerCase(),
@@ -104,7 +106,7 @@ function parseScores(
 
 async function main(): Promise<void> {
 	installUsageReporting();
-	const { monday, sunday } = getWeekRange();
+	const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
 	const jsonPath = join(DATA_ROOT, `${CITY}.json`);
 
 	if (!existsSync(jsonPath)) {
@@ -121,7 +123,11 @@ async function main(): Promise<void> {
 	// calibration change has to re-ask even within the same week.
 	const storedVersion = payload.rank_prompt_version;
 	const sameVersion = storedVersion === RANK_PROMPT_VERSION;
-	if (!FORCE && payload.ranked_at === toISODate(monday) && sameVersion) {
+	if (
+		!FORCE &&
+		payload.ranked_at === toISODate(monday, CITY_TZ) &&
+		sameVersion
+	) {
 		console.log(
 			"→ Already ranked for this week — skipping. Set FORCE=true to re-rank.",
 		);
@@ -143,7 +149,7 @@ async function main(): Promise<void> {
 	}
 
 	console.log(
-		`Ranking — ${payload.city as string} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
+		`Ranking — ${payload.city as string} — ${fmtDate(monday, CITY_TZ)} to ${fmtDate(sunday, CITY_TZ)}`,
 	);
 	console.log("=".repeat(50));
 
@@ -230,7 +236,7 @@ async function main(): Promise<void> {
 
 	const updated = {
 		...payload,
-		ranked_at: toISODate(monday),
+		ranked_at: toISODate(monday, CITY_TZ),
 		rank_prompt_version: RANK_PROMPT_VERSION,
 		events,
 	};

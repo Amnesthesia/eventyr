@@ -4,11 +4,13 @@ import {
 	DATA_ROOT,
 	fmtDate,
 	getWeekRange,
+	loadCityConfig,
 	requireEnv,
 	toISODate,
 } from "./common.ts";
 
 const CITY = requireEnv("CITY");
+const CITY_TZ = loadCityConfig(CITY).timezone;
 const FORCE = ["1", "true", "yes"].includes(
 	(process.env.FORCE ?? "").toLowerCase(),
 );
@@ -25,7 +27,7 @@ function mapsUrl(location: string, cityName: string): string {
 }
 
 async function main(): Promise<void> {
-	const { monday, sunday } = getWeekRange();
+	const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
 	const jsonPath = join(DATA_ROOT, `${CITY}.json`);
 
 	if (!existsSync(jsonPath)) {
@@ -37,7 +39,7 @@ async function main(): Promise<void> {
 		unknown
 	>;
 
-	if (!FORCE && payload.geocoded_at === toISODate(monday)) {
+	if (!FORCE && payload.geocoded_at === toISODate(monday, CITY_TZ)) {
 		console.log(
 			"→ Already geocoded for this week — skipping. Set FORCE=true to re-geocode.",
 		);
@@ -51,7 +53,7 @@ async function main(): Promise<void> {
 
 	const cityName = payload.city as string;
 	console.log(
-		`Geocoding — ${cityName} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
+		`Geocoding — ${cityName} — ${fmtDate(monday, CITY_TZ)} to ${fmtDate(sunday, CITY_TZ)}`,
 	);
 	console.log("=".repeat(50));
 
@@ -77,7 +79,11 @@ async function main(): Promise<void> {
 		`→ ${mapped}/${events.length} events mapped (${cache.size} unique locations)`,
 	);
 
-	const updated = { ...payload, geocoded_at: toISODate(monday), events };
+	const updated = {
+		...payload,
+		geocoded_at: toISODate(monday, CITY_TZ),
+		events,
+	};
 	writeFileSync(jsonPath, JSON.stringify(updated, null, 2), "utf-8");
 	console.log(`→ Written ${jsonPath}`);
 	console.log("✓ Geocoding complete.");

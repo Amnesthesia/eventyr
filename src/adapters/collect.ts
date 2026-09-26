@@ -14,6 +14,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import {
+	addDays,
 	barrenSourcesPath,
 	curatedPath,
 	DATA_ROOT,
@@ -67,7 +68,8 @@ const ONLY = process.argv
 	.map((s) => s.trim())
 	.filter(Boolean);
 const cityCfg = loadCityConfig(CITY);
-const { monday, sunday } = getWeekRange();
+const CITY_TZ = cityCfg.timezone;
+const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
 
 // Publishing window: today through the end of next week. Starting at today
 // rather than Monday means a midweek run can't resurrect events that have
@@ -80,8 +82,8 @@ const { monday, sunday } = getWeekRange();
  */
 const SOURCE_CONCURRENCY = 5;
 
-const WINDOW_FROM = toISODate(new Date());
-const WINDOW_TO = toISODate(new Date(sunday.getTime() + 7 * 86_400_000));
+const WINDOW_FROM = toISODate(new Date(), CITY_TZ);
+const WINDOW_TO = addDays(toISODate(sunday, CITY_TZ), 7);
 
 /**
  * The barren report gates whether the AI search covers a scraper source, so it
@@ -107,7 +109,7 @@ function writeBarrenReport(
 		path,
 		JSON.stringify(
 			{
-				week_start: toISODate(monday),
+				week_start: toISODate(monday, CITY_TZ),
 				names,
 				reasons: Object.fromEntries(
 					names.map((n) => [n, reasons.get(n) ?? "no reason recorded"]),
@@ -140,7 +142,7 @@ function priorBarren(
 			names?: string[];
 			reasons?: Record<string, string>;
 		};
-		if (prior.week_start !== toISODate(monday)) return null;
+		if (prior.week_start !== toISODate(monday, CITY_TZ)) return null;
 		const names = (prior.names ?? []).filter((n) => !rechecked.has(n));
 		return {
 			names,
@@ -199,7 +201,7 @@ function alreadyCollected(outPath: string): boolean {
 			string,
 			unknown
 		>;
-		return payload.week_start === toISODate(monday);
+		return payload.week_start === toISODate(monday, CITY_TZ);
 	} catch {
 		return false;
 	}
@@ -247,7 +249,13 @@ async function collectSource(
 	// Window-filter first so the detail-page pass only fetches for events we
 	// will publish: a venue's season listing is mostly "later", and those pages
 	// were being fetched for nothing.
-	const first = prepareCandidates(raw, source, WINDOW_FROM, WINDOW_TO);
+	const first = prepareCandidates(
+		raw,
+		source,
+		WINDOW_FROM,
+		WINDOW_TO,
+		source.timeZone,
+	);
 	writeRejections(source.id, first.rejected);
 
 	// Listing cards print "Sat 5 Sep" where the event's own page says
@@ -267,6 +275,7 @@ async function collectSource(
 		source,
 		WINDOW_FROM,
 		WINDOW_TO,
+		source.timeZone,
 	);
 	const stats: PrepareStats = { ...first.stats, kept: windowStats.kept };
 
@@ -331,8 +340,8 @@ async function collectSource(
 		// TIER_TO_VENUE map classifies these with no special-casing.
 		tier: source.sourceTier,
 		source_id: source.id,
-		week_start: toISODate(monday),
-		week_end: toISODate(sunday),
+		week_start: toISODate(monday, CITY_TZ),
+		week_end: toISODate(sunday, CITY_TZ),
 		events,
 	};
 	mkdirSync(dirname(outPath), { recursive: true });
@@ -407,7 +416,7 @@ async function collectSource(
 async function main(): Promise<void> {
 	installUsageReporting();
 	console.log(
-		`Scraping — ${cityCfg.name} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
+		`Scraping — ${cityCfg.name} — ${fmtDate(monday, CITY_TZ)} to ${fmtDate(sunday, CITY_TZ)}`,
 	);
 	const registry = loadRegistrySafe(CITY);
 	const sources = ONLY ? registry.filter((s) => ONLY.includes(s.id)) : registry;

@@ -17,7 +17,7 @@ const PROV = {
 };
 const REF = new Date("2026-09-08T00:00:00+10:00");
 const iso = (raw: Parameters<typeof toCandidateEvent>[0]) =>
-	toCandidateEvent(raw, PROV, REF).startISO;
+	toCandidateEvent(raw, PROV, REF, "Australia/Brisbane").startISO;
 
 // Trimmed from the live response that motivated this module: beachhotel.com.au
 // serves a 76-character JS-reload shell for every HTML URL, and 384 events here.

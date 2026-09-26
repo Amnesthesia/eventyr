@@ -9,7 +9,7 @@ import type {
 } from "./types.ts";
 
 /**
- * Resolves startRaw/endRaw text into Brisbane-instant ISO dates. Always our
+ * Resolves startRaw/endRaw text into ISO dates in the city's zone. Always our
  * own deterministic parser — never the extractor's own computation, JSON-LD
  * or LLM alike, per "adapters never guess" (see dates.ts for the policy).
  * A single startRaw field sometimes holds a full range as text (common in
@@ -21,18 +21,23 @@ function resolveDates(
 	startRaw: string | null,
 	endRaw: string | null,
 	referenceDate: Date,
+	timeZone: string,
 ): { startISO: string | null; endISO: string | null } {
 	if (startRaw && !endRaw) {
-		const range = parseDateRange(startRaw, referenceDate);
+		const range = parseDateRange(startRaw, referenceDate, timeZone);
 		if (range.endISO) return range;
 		return {
-			startISO: parseSingleDateTime(startRaw, referenceDate),
+			startISO: parseSingleDateTime(startRaw, referenceDate, timeZone),
 			endISO: null,
 		};
 	}
 	return {
-		startISO: startRaw ? parseSingleDateTime(startRaw, referenceDate) : null,
-		endISO: endRaw ? parseSingleDateTime(endRaw, referenceDate) : null,
+		startISO: startRaw
+			? parseSingleDateTime(startRaw, referenceDate, timeZone)
+			: null,
+		endISO: endRaw
+			? parseSingleDateTime(endRaw, referenceDate, timeZone)
+			: null,
 	};
 }
 
@@ -52,12 +57,15 @@ export function provenanceFor(
 export function toCandidateEvent(
 	fields: RawCandidateFields,
 	provenance: FetchProvenance,
-	referenceDate: Date = new Date(),
+	referenceDate: Date,
+	/** The city's IANA zone (sources/{city}.yml `timezone`). */
+	timeZone: string,
 ): CandidateEvent {
 	const { startISO, endISO } = resolveDates(
 		fields.startRaw,
 		fields.endRaw,
 		referenceDate,
+		timeZone,
 	);
 	return { ...fields, startISO, endISO, provenance };
 }

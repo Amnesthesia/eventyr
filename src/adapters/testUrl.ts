@@ -8,8 +8,16 @@
 //   pnpm test-adapter <url>           # final pipeline-shaped events
 //   pnpm test-adapter <url> --raw     # pre-normalisation CandidateEvents
 //   pnpm test-adapter <url> --all     # skip the this-week filter
+//
+// CITY must be set: page times are wall-clock times in that city's zone.
 
-import { getWeekRange, requireEnv, toISODate } from "../common.ts";
+import {
+	addDays,
+	getWeekRange,
+	loadCityConfig,
+	requireEnv,
+	toISODate,
+} from "../common.ts";
 import { installUsageReporting } from "../providers/gemini.ts";
 import { applyAnnotation, createGeminiAnnotator } from "./annotate.ts";
 import { SourceFetcher } from "./fetch.ts";
@@ -30,8 +38,10 @@ if (!url) {
 }
 
 const parsed = new URL(url); // throws with a clear message on a malformed URL
+const cityCfg = loadCityConfig(requireEnv("CITY"));
+const CITY_TZ = cityCfg.timezone;
 const GOOGLE_API_KEY = requireEnv("GOOGLE_API_KEY");
-const { sunday } = getWeekRange();
+const { sunday } = getWeekRange(new Date(), CITY_TZ);
 
 const source: SourceDefinition = {
 	id: `manual-test--${parsed.hostname}`,
@@ -49,6 +59,7 @@ const source: SourceDefinition = {
 	},
 	strategy: "html",
 	sourceTier: "independents",
+	timeZone: cityCfg.timezone,
 	note: "ad-hoc CLI test source, not part of any city registry",
 };
 
@@ -71,11 +82,15 @@ if (RAW) {
 	// --all widens the window so nothing is date-filtered out, which is what
 	// you want when inspecting a page in isolation rather than as this week's
 	// contribution.
-	const from = ALL ? "0000-01-01" : toISODate(new Date());
-	const to = ALL
-		? "9999-12-31"
-		: toISODate(new Date(sunday.getTime() + 7 * 86_400_000));
-	const { prepared, stats } = prepareCandidates(candidates, source, from, to);
+	const from = ALL ? "0000-01-01" : toISODate(new Date(), CITY_TZ);
+	const to = ALL ? "9999-12-31" : addDays(toISODate(sunday, CITY_TZ), 7);
+	const { prepared, stats } = prepareCandidates(
+		candidates,
+		source,
+		from,
+		to,
+		source.timeZone,
+	);
 	console.error(
 		`  ${stats.total} found → ${stats.kept} in window` +
 			`  (${stats.noDate} undated, ${stats.past} past, ${stats.later} later, ${stats.noTitle} untitled)`,

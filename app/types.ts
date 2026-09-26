@@ -57,7 +57,9 @@ export interface CityData {
 	 * DEFAULT_COST_LOCALE. */
 	locale?: string;
 	currency?: string;
-	/** IANA zone the naive event times are in; used for schema.org offsets. */
-	timezone?: string;
+	/** IANA zone the naive event times are in (sources/{city}.yml `timezone`,
+	 * copied by curate). Always present: calendar links and schema.org offsets
+	 * are built from it, and there is no zone it would be safe to assume. */
+	timezone: string;
 	events: Event[];
 }

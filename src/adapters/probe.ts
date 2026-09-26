@@ -33,6 +33,7 @@ import { dirname, join } from "node:path";
 import { GoogleGenAI } from "@google/genai";
 import yaml from "js-yaml";
 import {
+	addDays,
 	DATA_ROOT,
 	getWeekRange,
 	isSameSite,
@@ -69,7 +70,7 @@ import {
 } from "./feeds.ts";
 import { SourceFetcher } from "./fetch.ts";
 import { createGeminiPageExtractor } from "./llmExtract.ts";
-import { brisbaneNaive, isPast, withinWindow } from "./normalise.ts";
+import { isPast, withinWindow, zonedNaive } from "./normalise.ts";
 import { densestWindow, stripToReadableText } from "./readableText.ts";
 import type { PageExtractFn, RawCandidateFields } from "./types.ts";
 
@@ -219,13 +220,6 @@ function saveListingUrlCache(found: Map<string, string[]>): void {
 		"utf-8",
 	);
 }
-
-// The same window the scrape pass publishes (today → end of next week), so
-// probe and collect cannot disagree about which events count.
-const WINDOW_FROM = toISODate(new Date());
-const WINDOW_TO = toISODate(
-	new Date(getWeekRange().sunday.getTime() + 7 * 86_400_000),
-);
 
 // Archive pages are the trap in "most events wins": /past-events reliably
 // carries more events than the real listing, and every one of them is over.
@@ -473,6 +467,30 @@ const CITY_TERMS: Record<string, string[]> = {
 		"qld",
 		"queensland",
 	],
+	// The shire's towns as URL slugs, plus the other places sources/byron.yml's
+	// venues sit in ("federal" left out: too common a word in a URL). Not
+	// "nsw", unlike "qld" for the Queensland cities: Byron is a small corner
+	// of the state, and a state-level sitemap is far more likely to be Sydney's.
+	byron: [
+		"byron-bay",
+		"byronbay",
+		"byron_bay",
+		"byron-shire",
+		"byronshire",
+		"mullumbimby",
+		"mullum",
+		"bangalow",
+		"suffolk-park",
+		"suffolkpark",
+		"ocean-shores",
+		"brunswick-heads",
+		"ballina",
+		"lismore",
+		"nimbin",
+		"newrybar",
+		"billinudgel",
+		"northern-rivers",
+	],
 };
 
 const OTHER_REGION =
@@ -702,7 +720,20 @@ class Prober {
 	constructor(
 		private fetcher: SourceFetcher,
 		private extractPage: PageExtractFn,
-	) {}
+		/** The probed city's IANA zone: page times are read as its wall clock. */
+		private timeZone: string,
+	) {
+		this.windowFrom = toISODate(new Date(), timeZone);
+		this.windowTo = addDays(
+			toISODate(getWeekRange(new Date(), timeZone).sunday, timeZone),
+			7,
+		);
+	}
+
+	// The same window the scrape pass publishes (today → end of next week), so
+	// probe and collect cannot disagree about which events count.
+	private readonly windowFrom: string;
+	private readonly windowTo: string;
 
 	/** Fetches a URL and returns its body as text, or null on any failure.
 	 * Used for robots.txt and sitemaps, which are not pages to be signalled. */
@@ -733,22 +764,28 @@ class Prober {
 		const fields = feed.events;
 		const events = fields
 			.map((f) =>
-				toCandidateEvent(f, {
-					sourceId: "probe",
-					sourceUrl: page.url,
-					fetchedAt: new Date().toISOString(),
-					strategy: "feed",
-				}),
+				toCandidateEvent(
+					f,
+					{
+						sourceId: "probe",
+						sourceUrl: page.url,
+						fetchedAt: new Date().toISOString(),
+						strategy: "feed",
+					},
+					new Date(),
+					this.timeZone,
+				),
 			)
 			.filter((c) => c.title && c.startISO);
 		let inWindow = 0;
 		let past = 0;
 		let later = 0;
 		for (const c of events) {
-			const start = brisbaneNaive(c.startISO);
-			const end = brisbaneNaive(c.endISO);
-			if (isPast(start, end, WINDOW_FROM)) past++;
-			else if (withinWindow(start, end, WINDOW_FROM, WINDOW_TO)) inWindow++;
+			const start = zonedNaive(c.startISO, this.timeZone);
+			const end = zonedNaive(c.endISO, this.timeZone);
+			if (isPast(start, end, this.windowFrom)) past++;
+			else if (withinWindow(start, end, this.windowFrom, this.windowTo))
+				inWindow++;
 			else later++;
 		}
 		return {
@@ -814,12 +851,17 @@ class Prober {
 		const datedEvents = (fields: RawCandidateFields[]) =>
 			fields
 				.map((f) =>
-					toCandidateEvent(f, {
-						sourceId: "probe",
-						sourceUrl: page.url,
-						fetchedAt: new Date().toISOString(),
-						strategy: "html",
-					}),
+					toCandidateEvent(
+						f,
+						{
+							sourceId: "probe",
+							sourceUrl: page.url,
+							fetchedAt: new Date().toISOString(),
+							strategy: "html",
+						},
+						new Date(),
+						this.timeZone,
+					),
 				)
 				.filter((c) => c.title && c.startISO);
 		const countWindow = (
@@ -829,10 +871,11 @@ class Prober {
 			let past = 0;
 			let later = 0;
 			for (const c of datedEvents(fields)) {
-				const start = brisbaneNaive(c.startISO);
-				const end = brisbaneNaive(c.endISO);
-				if (isPast(start, end, WINDOW_FROM)) past++;
-				else if (withinWindow(start, end, WINDOW_FROM, WINDOW_TO)) inWindow++;
+				const start = zonedNaive(c.startISO, this.timeZone);
+				const end = zonedNaive(c.endISO, this.timeZone);
+				if (isPast(start, end, this.windowFrom)) past++;
+				else if (withinWindow(start, end, this.windowFrom, this.windowTo))
+					inWindow++;
 				// Beyond the publishing window but still ahead of us. This used
 				// to fall into no bucket at all, so a venue whose programme
 				// starts next month counted as zero: Suncorp Stadium extracted
@@ -844,12 +887,17 @@ class Prober {
 		const dated = (fields: RawCandidateFields[]): string[] =>
 			fields
 				.map((f) =>
-					toCandidateEvent(f, {
-						sourceId: "probe",
-						sourceUrl: page.url,
-						fetchedAt: new Date().toISOString(),
-						strategy: "html",
-					}),
+					toCandidateEvent(
+						f,
+						{
+							sourceId: "probe",
+							sourceUrl: page.url,
+							fetchedAt: new Date().toISOString(),
+							strategy: "html",
+						},
+						new Date(),
+						this.timeZone,
+					),
 				)
 				.filter((c) => c.title && c.startISO)
 				.map((c) => c.title as string);
@@ -1620,7 +1668,12 @@ async function main(): Promise<void> {
 		}),
 		{ force: FORCE },
 	);
-	const prober = new Prober(fetcher, extractPage);
+	// CITIES holds exactly one city: the CLI refuses anything else above.
+	const prober = new Prober(
+		fetcher,
+		extractPage,
+		loadCityConfig(CITIES[0]).timezone,
+	);
 
 	const findListingUrls = createListingUrlFinder(apiKey);
 

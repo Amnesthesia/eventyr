@@ -99,6 +99,7 @@ export function createPageAdapter(
 						fields,
 						provenanceFor(source, raw, "feed"),
 						referenceDate,
+						source.timeZone,
 					),
 				);
 			}
@@ -110,6 +111,7 @@ export function createPageAdapter(
 						jsonLdNodeToRawFields(node),
 						provenanceFor(source, raw, "jsonld"),
 						referenceDate,
+						source.timeZone,
 					),
 				);
 			}
@@ -124,6 +126,7 @@ export function createPageAdapter(
 						fields,
 						provenanceFor(source, raw, "api"),
 						referenceDate,
+						source.timeZone,
 					),
 				);
 			}
@@ -132,7 +135,12 @@ export function createPageAdapter(
 			if (!pageText) return [];
 			const fields = await deps.extractPage(pageText, source.name);
 			return fields.map((f) =>
-				toCandidateEvent(f, provenanceFor(source, raw, "html"), referenceDate),
+				toCandidateEvent(
+					f,
+					provenanceFor(source, raw, "html"),
+					referenceDate,
+					source.timeZone,
+				),
 			);
 		},
 	};

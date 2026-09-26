@@ -7,6 +7,8 @@
 // drifted (the site treated a top pick as score >= 8 while the markdown and
 // digest used 7).
 
+import { formatOffset, zonedOffsetMinutes, zonedTimeToInstant } from "./tz.ts";
+
 export const CATEGORIES = [
 	"Public Lecture",
 	"Workshop / Class",
@@ -951,33 +953,25 @@ export function costLabel(
  *
  * `startDate: "2026-09-05T19:30:00"` is ambiguous — a crawler is entitled to
  * read it as UTC, which puts a 7:30pm gig at 5:30am the next day and makes the
- * event rich result wrong. The offset comes from Intl for the actual date, so
- * a DST city gets the right one rather than a constant.
+ * event rich result wrong. The offset is the zone's at the instant the wall
+ * clock names, so a DST city gets the right one on either side of the change,
+ * rather than a constant.
  */
 export function isoWithOffset(
 	naive: unknown,
-	timeZone = "Australia/Brisbane",
+	timeZone: string,
 ): string | undefined {
 	if (typeof naive !== "string" || !naive) return undefined;
 	const value = naive.length === 10 ? `${naive}T00:00:00` : naive;
-	// Parsed as if UTC purely to have an instant to ask Intl about; only the
-	// calendar date matters for picking the offset.
-	const probe = new Date(`${value}Z`);
-	if (Number.isNaN(probe.getTime())) return undefined;
-	try {
-		const name = new Intl.DateTimeFormat("en", {
-			timeZone,
-			timeZoneName: "longOffset",
-		})
-			.formatToParts(probe)
-			.find((part) => part.type === "timeZoneName")?.value;
-		// "GMT+10:00" → "+10:00". Plain "GMT" means UTC.
-		const offset = name?.replace("GMT", "") || "Z";
-		return `${value}${offset === "Z" ? "Z" : offset}`;
-	} catch {
-		// Unknown timezone: better an offsetless string than none at all.
-		return value;
-	}
+	const wall = Date.parse(`${value}Z`);
+	if (Number.isNaN(wall)) return undefined;
+	// A reading inside the skipped DST hour names no instant (dates.ts refuses
+	// those, but AI-search events never pass through it): the offset in force
+	// just before the change is used, which is how most calendars read it too.
+	const at =
+		zonedTimeToInstant(timeZone, wall) ?? new Date(wall - 12 * 3_600_000);
+	const offset = zonedOffsetMinutes(timeZone, at);
+	return `${value}${offset === 0 ? "Z" : formatOffset(offset)}`;
 }
 
 /**

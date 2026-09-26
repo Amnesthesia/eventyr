@@ -179,7 +179,7 @@ test("validateOutput rejects an index.json that references a missing file", () =
 		() =>
 			validateOutput(
 				"/nonexistent/dir/index.json.does.not.exist.for.this.test",
-				"2026-09-17",
+				{},
 			),
 		/does not exist/,
 	);

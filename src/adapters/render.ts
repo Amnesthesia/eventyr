@@ -376,7 +376,7 @@ export function applyCandidates(
 						entry.homepage = entry.homepage ?? `https://${finding.host}/`;
 						entry.listingUrls = [entry.homepage];
 						entry.note =
-							`Render-only source, set ${toISODate(new Date())}: static HTML is walled ` +
+							`Render-only source, set ${toISODate(new Date(), cfg.timezone)}: static HTML is walled ` +
 							`and no fetchable listing URL could be verified, but rendering it showed ` +
 							`${finding.dateHits} date-shaped fragments in ${finding.textLength} chars. ` +
 							"Fetched through a browser at collect time; goes barren and demotes if it stops yielding.";
@@ -387,7 +387,7 @@ export function applyCandidates(
 				}
 				entry.listingUrls = picked;
 				entry.note =
-					`Candidate listing URLs found by rendering the page ${toISODate(new Date())}: ` +
+					`Candidate listing URLs found by rendering the page ${toISODate(new Date(), cfg.timezone)}: ` +
 					"static HTML is walled, so probe-sources could not see these. Still " +
 					"method: llm — probe verifies them and promotes only if they yield events.";
 				touched = true;

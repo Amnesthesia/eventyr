@@ -200,7 +200,7 @@ export abstract class BaseProvider {
 						const payload = JSON.parse(
 							readFileSync(outPath, "utf-8"),
 						) as Record<string, unknown>;
-						if (payload.week_start === toISODate(weekStart)) {
+						if (payload.week_start === toISODate(weekStart, cityCfg.timezone)) {
 							console.log(`  → [${label}] Already collected — skipping`);
 							return;
 						}
@@ -223,8 +223,8 @@ export abstract class BaseProvider {
 						city_key: city,
 						provider: this.name,
 						tier,
-						week_start: toISODate(weekStart),
-						week_end: toISODate(weekEnd),
+						week_start: toISODate(weekStart, cityCfg.timezone),
+						week_end: toISODate(weekEnd, cityCfg.timezone),
 						events,
 					};
 					mkdirSync(dirname(outPath), { recursive: true });
@@ -347,7 +347,7 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 			"Cover every category: talks, workshops, social events, exhibitions, " +
 			"outdoor activities, and live music alike.";
 		return (
-			`Search for ${cityCfg.name} events this week (${fmtDate(weekStart)} to ${fmtDate(weekEnd)}). ` +
+			`Search for ${cityCfg.name} events this week (${fmtDate(weekStart, cityCfg.timezone)} to ${fmtDate(weekEnd, cityCfg.timezone)}). ` +
 			"Use web search on the sources listed in your instructions. " +
 			"Skip anything matching the SKIP criteria. " +
 			`${coverageNote} ` +
@@ -358,7 +358,7 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 
 	protected buildOpenSystem(opts: ProviderOptions): string {
 		const { cityCfg, weekStart, weekEnd } = opts;
-		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
+		const dateRange = `${fmtDate(weekStart, cityCfg.timezone)} to ${fmtDate(weekEnd, cityCfg.timezone)}`;
 		// Interest profile + format rules first: that
 		// block is byte-identical for every call (city/date included) sharing
 		// the same prefix, which is what lets providers with automatic
@@ -374,7 +374,7 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 
 	protected buildOpenUser(opts: ProviderOptions): string {
 		const { cityCfg, weekStart, weekEnd } = opts;
-		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
+		const dateRange = `${fmtDate(weekStart, cityCfg.timezone)} to ${fmtDate(weekEnd, cityCfg.timezone)}`;
 		const coverageNote =
 			"Cover every category: talks, workshops, social events, exhibitions, " +
 			"outdoor activities, and live music alike.";
@@ -390,7 +390,7 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 	protected buildTierSystem(opts: ProviderOptions): string {
 		const { cityCfg, tier, weekStart, weekEnd } = opts;
 		const cityName = cityCfg.name;
-		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
+		const dateRange = `${fmtDate(weekStart, cityCfg.timezone)} to ${fmtDate(weekEnd, cityCfg.timezone)}`;
 		// Shared prefix first — identical across all three tiers for a given
 		// tier — so automatic prefix-based prompt caching (OpenAI, Gemini)
 		// actually hits on the 2nd/3rd tier call instead of re-paying full
@@ -429,7 +429,7 @@ Example element: {"title":"Skyline Cinema","datetime":"Tue 21-Sun 26 Jul, 6-10pm
 		const { cityCfg, tier, weekStart, weekEnd } = opts;
 		const cityName = cityCfg.name;
 		const sources = llmSourceStrings(cityCfg, tier, opts.city);
-		const dateRange = `${fmtDate(weekStart)} to ${fmtDate(weekEnd)}`;
+		const dateRange = `${fmtDate(weekStart, cityCfg.timezone)} to ${fmtDate(weekEnd, cityCfg.timezone)}`;
 		const noEventsNote =
 			"If you genuinely cannot find any relevant events after searching, respond only with: NO_EVENTS_FOUND";
 		const coverageNote =

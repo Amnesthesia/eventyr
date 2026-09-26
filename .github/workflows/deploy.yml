@@ -47,11 +47,8 @@ jobs:
         with:
           node-version: 22
           package-manager: pnpm@9
-        env:
-          # [timeframe].astro's today/tomorrow/this-weekend split reads the
-          # build machine's clock — pin it the same way digest.yml pins it for
-          # the pipeline, or a UTC runner puts "today" a day off in the evening.
-          TZ: Australia/Brisbane
+        # No TZ pin: [timeframe].astro computes today/tomorrow/this-weekend in
+        # each city's own zone, so the UTC runner builds the same pages.
 
   deploy:
     needs: build

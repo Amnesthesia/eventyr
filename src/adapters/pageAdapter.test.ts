@@ -33,6 +33,7 @@ const SOURCE: SourceDefinition = {
 	},
 	strategy: "html",
 	sourceTier: "independents",
+	timeZone: "Australia/Brisbane",
 	note: "test fixture",
 };
 

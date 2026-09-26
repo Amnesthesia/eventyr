@@ -70,6 +70,7 @@ const CITY_NAMES: Record<string, string> = {
 	brisbane: "Brisbane",
 	goldcoast: "the Gold Coast",
 	sunnycoast: "the Sunshine Coast",
+	byron: "Byron Bay",
 };
 
 /**

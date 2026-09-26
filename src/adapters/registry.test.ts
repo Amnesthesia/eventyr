@@ -72,6 +72,7 @@ test("loadSourceRegistry resolves only scraper sources, with defaults filled", (
 test("a scraper source that returned nothing falls back to the AI search", () => {
 	const cfg = {
 		name: "Test",
+		timezone: "Australia/Brisbane",
 		sources: {
 			aggregators: [],
 			institutions: [
@@ -100,6 +101,7 @@ test("a scraper source that returned nothing falls back to the AI search", () =>
 test("a pinned llm source is marked pinned in the prompt names", () => {
 	const cfg = {
 		name: "Test",
+		timezone: "Australia/Brisbane",
 		sources: {
 			aggregators: [],
 			institutions: [
@@ -130,6 +132,7 @@ test("a site already scraped is not also named in the search prompts", () => {
 	// hold exact data for, plus duplicates for dedupe to clean up.
 	const cfg = {
 		name: "Test",
+		timezone: "Australia/Brisbane",
 		sources: {
 			aggregators: [
 				{

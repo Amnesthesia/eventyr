@@ -6,11 +6,14 @@ import {
 	DATA_ROOT,
 	fmtDate,
 	isTopPick,
+	loadCityConfig,
 	requireEnv,
 	toISODate,
+	zonedMidnight,
 } from "./common.ts";
 
 const CITY = requireEnv("CITY");
+const CITY_TZ = loadCityConfig(CITY).timezone;
 const WA_TOKEN = requireEnv("WHATSAPP_TOKEN");
 const WA_PHONE_ID = requireEnv("WHATSAPP_PHONE_ID");
 const WA_TO = requireEnv("WHATSAPP_RECIPIENT")
@@ -79,15 +82,15 @@ function formatWhatsapp(
 ): string[] {
 	if (events.length === 0) {
 		return [
-			`📅 *${cityName} This Week* (${fmtDate(monday)} – ${fmtDate(sunday)})\n\n` +
+			`📅 *${cityName} This Week* (${fmtDate(monday, CITY_TZ)} – ${fmtDate(sunday, CITY_TZ)})\n\n` +
 				"No events found this week. Check back next Monday!",
 		];
 	}
 
 	// Both ends inside the week — see isTopPick. A standing exhibition is still
 	// in the digest, just not presented as one of this week's picks.
-	const windowStart = toISODate(monday);
-	const windowEnd = toISODate(sunday);
+	const windowStart = toISODate(monday, CITY_TZ);
+	const windowEnd = toISODate(sunday, CITY_TZ);
 	const topPicks = events.filter((e) => isTopPick(e, windowStart, windowEnd));
 	const remaining = events.filter((e) => !isTopPick(e, windowStart, windowEnd));
 
@@ -95,7 +98,7 @@ function formatWhatsapp(
 
 	const header =
 		`📅 *${cityName} This Week*\n` +
-		`${fmtDate(monday)} – ${fmtDate(sunday)}\n` +
+		`${fmtDate(monday, CITY_TZ)} – ${fmtDate(sunday, CITY_TZ)}\n` +
 		`⭐ ${topPicks.length} top picks  ·  ${events.length} events found\n` +
 		`${"─".repeat(28)}\n\n` +
 		"⭐ *TOP PICKS*\n\n";
@@ -178,12 +181,12 @@ async function main(): Promise<void> {
 		unknown
 	>;
 	const events = (payload.events as Event[]) ?? [];
-	const monday = new Date(payload.week_start as string);
-	const sunday = new Date(payload.week_end as string);
+	const monday = zonedMidnight(CITY_TZ, payload.week_start as string);
+	const sunday = zonedMidnight(CITY_TZ, payload.week_end as string);
 	const cityName = payload.city as string;
 
 	console.log(
-		`Messaging — ${cityName} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
+		`Messaging — ${cityName} — ${fmtDate(monday, CITY_TZ)} to ${fmtDate(sunday, CITY_TZ)}`,
 	);
 	console.log("=".repeat(50));
 

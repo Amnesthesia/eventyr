@@ -10,30 +10,33 @@
 // exactly the guessing the adapter framework exists to avoid.
 
 import { CATEGORIES, type Category } from "../common.ts";
-import { BRISBANE_UTC_OFFSET_HOURS } from "./dates.ts";
+import { zonedOffsetMinutes } from "../tz.ts";
 import type { CandidateEvent, SourceDefinition } from "./types.ts";
 
-const OFFSET_MS = BRISBANE_UTC_OFFSET_HOURS * 3_600_000;
-
 /**
- * Converts an instant into the naive Brisbane wall-clock string the pipeline
- * uses (`YYYY-MM-DDTHH:MM:SS`, or `YYYY-MM-DD` when no time was on the page).
+ * Converts an instant into the naive wall-clock string, in the city's zone, that
+ * the pipeline stores (`YYYY-MM-DDTHH:MM:SS`, or `YYYY-MM-DD` when no time was
+ * on the page).
  *
- * Must not be done by slicing the offset off the string: startISO arrives in
- * two shapes — `2026-10-05T19:00:00+10:00` from the textual/slash/range
- * parsers, but `2026-10-04T23:00:00.000Z` from the ISO-passthrough path
- * (dates.ts trusts an explicit offset and normalises to UTC). Slicing would
- * silently shift the UTC ones by 10 hours.
+ * Must not be done by slicing the offset off the string: an explicit offset or
+ * `Z` on the input need not be the city's (a feed in UTC, a DST city's summer
+ * +11:00 against a winter reference), and slicing would keep the wrong wall
+ * clock. The offset used is the zone's at that instant, so a DST city's
+ * summer events come out in summer time.
  *
  * The output format is load-bearing: ical.ts's parseDt accepts ONLY
  * `YYYY-MM-DDTHH:MM[:SS]` or `YYYY-MM-DD`, and silently drops the event from
  * the feed for anything else.
  */
-export function brisbaneNaive(iso: string | null): string | null {
+export function zonedNaive(
+	iso: string | null,
+	timeZone: string,
+): string | null {
 	if (!iso) return null;
 	const t = Date.parse(iso);
 	if (Number.isNaN(t)) return null;
-	const s = new Date(t + OFFSET_MS).toISOString().slice(0, 19);
+	const offset = zonedOffsetMinutes(timeZone, new Date(t));
+	const s = new Date(t + offset * 60_000).toISOString().slice(0, 19);
 	// dates.ts uses midnight as its "no time given on the page" value, and a
 	// date-only string makes ical.ts emit a proper all-day event instead of a
 	// bogus 00:00 timed one.
@@ -188,9 +191,10 @@ export function isValidCategory(v: unknown): v is Category {
 export function candidateToEvent(
 	c: CandidateEvent,
 	source: SourceDefinition | undefined,
+	timeZone: string,
 ): Record<string, unknown> {
-	const datetimeIso = brisbaneNaive(c.startISO);
-	const datetimeEndIso = brisbaneNaive(c.endISO);
+	const datetimeIso = zonedNaive(c.startISO, timeZone);
+	const datetimeEndIso = zonedNaive(c.endISO, timeZone);
 	return {
 		title: c.title ?? "",
 		datetime: humanDatetime(datetimeIso, datetimeEndIso),
@@ -253,6 +257,7 @@ export function prepareCandidates(
 	source: SourceDefinition | undefined,
 	from: string,
 	to: string,
+	timeZone: string,
 ): {
 	prepared: PreparedCandidate[];
 	stats: PrepareStats;
@@ -291,7 +296,7 @@ export function prepareCandidates(
 			reject("no title", c, null);
 			continue;
 		}
-		const event = candidateToEvent(c, source);
+		const event = candidateToEvent(c, source, timeZone);
 		const startNaive = (event.datetime_iso as string) || null;
 		if (!startNaive) {
 			stats.noDate++;

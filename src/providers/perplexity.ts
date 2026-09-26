@@ -15,10 +15,11 @@ export class PerplexityProvider extends OpenAIProvider {
 		cityName: string,
 		weekStart: Date,
 		weekEnd: Date,
+		timeZone: string,
 	): string {
 		return `You are building a structured database of real local events.
 
-Find events occurring in ${cityName} between ${fmtDate(weekStart)} and ${fmtDate(weekEnd)}.
+Find events occurring in ${cityName} between ${fmtDate(weekStart, timeZone)} and ${fmtDate(weekEnd, timeZone)}.
 
 Prioritize:
 - niche or high quality events
@@ -55,12 +56,13 @@ This is a fully automated pipeline with no human able to read or reply to your r
 			cityCfg.name,
 			weekStart,
 			weekEnd,
+			cityCfg.timezone,
 		);
 		const focusNote =
 			"Cover every category — talks, workshops, social events, exhibitions, " +
 			"outdoor activities, and live music alike.";
 		const userMsg =
-			`Find events in ${cityCfg.name} between ${fmtDate(weekStart)} and ${fmtDate(weekEnd)}. ` +
+			`Find events in ${cityCfg.name} between ${fmtDate(weekStart, cityCfg.timezone)} and ${fmtDate(weekEnd, cityCfg.timezone)}. ` +
 			`Search deeply across all local sources. ${focusNote} ` +
 			"Return results as a compact JSON array with no whitespace between elements.";
 

@@ -11,6 +11,10 @@ on:
         description: "Short slug, e.g. sydney (lowercase, no spaces)"
         required: true
         type: string
+      timezone:
+        description: "IANA time zone, e.g. Australia/Sydney (not an offset: DST is derived from it)"
+        required: true
+        type: string
 
 jobs:
   add-city:
@@ -46,6 +50,7 @@ jobs:
         env:
           CITY_NAME: ${{ inputs.city_name }}
           CITY_KEY:  ${{ inputs.city_key }}
+          CITY_TIMEZONE: ${{ inputs.timezone }}
         run: pnpm tsx --tsconfig tsconfig.scripts.json src/add_city.ts
 
       - name: Discover sources

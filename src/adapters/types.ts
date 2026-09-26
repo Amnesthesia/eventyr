@@ -58,6 +58,12 @@ export interface SourceDefinition {
 	 */
 	sourceTier: "aggregators" | "institutions" | "independents";
 	/**
+	 * The city's IANA zone, copied from sources/{city}.yml `timezone` by the
+	 * registry. Page text states wall-clock times, and which instant those name
+	 * depends on the city, and for a DST city on the date.
+	 */
+	timeZone: string;
+	/**
 	 * Any caveat about how this entry was populated — e.g. which probe run
 	 * verified its listing URL, or a known quirk of the source.
 	 */
@@ -93,7 +99,7 @@ export interface RawListing {
 export interface CandidateEvent {
 	title: string | null;
 	description: string | null;
-	/** Brisbane-instant ISO 8601 (UTC+10, no DST), or null if not confidently parsed. */
+	/** ISO 8601 in the city's zone, with the offset in force at that instant (dates.ts), or null if not confidently parsed. */
 	startISO: string | null;
 	/** Original date/time string exactly as found on the page. */
 	startRaw: string | null;

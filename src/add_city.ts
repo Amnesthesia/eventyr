@@ -13,10 +13,23 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import yaml from "js-yaml";
-import { PROJECT_ROOT, requireEnv, SOURCES_ROOT } from "./common.ts";
+import {
+	isValidTimeZone,
+	PROJECT_ROOT,
+	requireEnv,
+	SOURCES_ROOT,
+} from "./common.ts";
 
 const CITY_NAME = requireEnv("CITY_NAME");
 const CITY_KEY = requireEnv("CITY_KEY");
+// Required, with no default: the zone decides every published time, and a
+// wrong one shifts them all silently. The same check loadCityConfig applies.
+const CITY_TIMEZONE = requireEnv("CITY_TIMEZONE");
+if (!isValidTimeZone(CITY_TIMEZONE)) {
+	throw new Error(
+		`CITY_TIMEZONE ${JSON.stringify(CITY_TIMEZONE)} is not a valid IANA zone (e.g. "Australia/Sydney").`,
+	);
+}
 
 const DIGEST_WF = join(PROJECT_ROOT, ".github/workflows/digest.yml");
 
@@ -38,6 +51,9 @@ const HEADER = `# Event sources for ${CITY_NAME}.
 # radiusKm must stay smaller than the distance to the nearest other city in
 # sources/, or the two will swallow each other's events.
 #
+# currency is how prices are written on the site; change it for a city
+# outside Australia.
+#
 # centre:
 #   lat: -27.4698
 #   lng: 153.0251
@@ -54,7 +70,8 @@ function writeCityFile(): boolean {
 
 	const cityData = {
 		name: CITY_NAME,
-		timezone: "Australia/Brisbane",
+		timezone: CITY_TIMEZONE,
+		currency: "AUD",
 		sources: { aggregators: [], institutions: [], independents: [] },
 	};
 	writeFileSync(

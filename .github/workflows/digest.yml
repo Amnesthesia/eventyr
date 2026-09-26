@@ -78,12 +78,8 @@ jobs:
       cancel-in-progress: false
     permissions:
       contents: write
-    env:
-      # The pipeline's "today" and week boundaries come from host local time
-      # (getWeekRange / toISODate in src/common.ts). The runner is UTC; without
-      # this a Sunday 06:00 AEST run is still Saturday there and targets the
-      # week that is ending instead of the one starting tomorrow.
-      TZ: Australia/Brisbane
+    # No TZ pin: "today" and week boundaries are computed in each city's own
+    # zone (sources/{city}.yml `timezone`), never from the runner's clock zone.
 
     steps:
       - name: Checkout repo

@@ -50,6 +50,7 @@ import {
 } from "node:fs";
 import { join } from "node:path";
 import {
+	addDays,
 	CATEGORIES,
 	catToSlug,
 	costAmount,
@@ -59,6 +60,7 @@ import {
 	eventPath,
 	isoWithOffset,
 	KEY_TO_SLUG,
+	loadCityConfig,
 	meetsScoreFloor,
 	PROJECT_ROOT,
 	SITE_URL,
@@ -205,15 +207,11 @@ function byStart(a: RawEvent, b: RawEvent): number {
 // Day range
 // ---------------------------------------------------------------------------
 
-/** Every YYYY-MM-DD from `from` to `to` inclusive, in local date arithmetic. */
+/** Every YYYY-MM-DD from `from` to `to` inclusive (calendar arithmetic, so
+ * neither the host's zone nor a DST change can skip or repeat a day). */
 function dateRange(from: string, to: string): string[] {
 	const out: string[] = [];
-	let d = new Date(`${from}T00:00:00`);
-	const end = new Date(`${to}T00:00:00`);
-	while (d <= end) {
-		out.push(toISODate(d));
-		d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1);
-	}
+	for (let d = from; d <= to; d = addDays(d, 1)) out.push(d);
 	return out;
 }
 
@@ -248,7 +246,7 @@ export function buildDayFile(
 		.map((e) => mapEvent(e, payload.city_key, timezone))
 		.filter((e): e is CompactEvent => e !== null);
 	return {
-		data_as_of: payload.generated_at ?? today(),
+		data_as_of: payload.generated_at ?? toISODate(new Date(), timezone),
 		city: payload.city,
 		city_key: payload.city_key,
 		timezone,
@@ -271,7 +269,7 @@ export function buildWeekFile(
 		.map((e) => mapEvent(e, payload.city_key, timezone))
 		.filter((e): e is CompactEvent => e !== null);
 	return {
-		data_as_of: payload.generated_at ?? today(),
+		data_as_of: payload.generated_at ?? toISODate(new Date(), timezone),
 		city: payload.city,
 		city_key: payload.city_key,
 		timezone,
@@ -279,10 +277,6 @@ export function buildWeekFile(
 		week_end: payload.week_end,
 		events,
 	};
-}
-
-function today(): string {
-	return toISODate(new Date());
 }
 
 // ---------------------------------------------------------------------------
@@ -317,9 +311,13 @@ function pruneStale(dir: string, keep: Set<string>): number {
 	return removed;
 }
 
-function processCity(payload: CityPayload, todayStr: string): CityIndexEntry {
+/** `todayStr` is the city's own date, in `timezone`. */
+function processCity(
+	payload: CityPayload,
+	todayStr: string,
+	timezone: string,
+): CityIndexEntry {
 	const slug = KEY_TO_SLUG[payload.city_key] ?? payload.city_key;
-	const timezone = payload.timezone ?? "Australia/Brisbane";
 	const cityDir = join(AI_ROOT, slug);
 	const keep = new Set<string>();
 
@@ -604,11 +602,17 @@ function validateWeekFile(relPath: string, todayStr: string): void {
  * that was never written. Reads what was just written back off disk, rather
  * than trusting the in-memory objects that produced it, so a write bug (a
  * truncated file, wrong path) is caught the same run it happens. */
-export function validateOutput(indexPath: string, todayStr: string): void {
+export function validateOutput(
+	indexPath: string,
+	todayByCity: Record<string, string>,
+): void {
 	const index = readJson(indexPath) as AiIndex;
 	if (!Array.isArray(index.cities)) fail("index.json: cities is not an array");
 
 	for (const city of index.cities) {
+		// Each city's "past" is its own: Sydney reaches tomorrow an hour before
+		// Brisbane does.
+		const todayStr = todayByCity[city.city_key];
 		for (const dayPath of city.days) validateDayFile(dayPath, todayStr);
 		if (city.week) validateWeekFile(city.week, todayStr);
 		for (const cat of city.week_categories) {
@@ -627,7 +631,8 @@ export function validateOutput(indexPath: string, todayStr: string): void {
 // ---------------------------------------------------------------------------
 
 function main(): void {
-	const todayStr = today();
+	const now = new Date();
+	const todayByCity: Record<string, string> = {};
 	const files = readdirSync(DATA_ROOT).filter(
 		(f) =>
 			f.endsWith(".json") && f !== "index.json" && !f.endsWith("_raw.json"),
@@ -643,8 +648,17 @@ function main(): void {
 			continue;
 		}
 		if (!payload.city_key || !Array.isArray(payload.events)) continue;
-		cities.push(processCity(payload, todayStr));
+		// From the city config, not the payload: a digest written before a
+		// city's zone was corrected must not keep publishing the old one.
+		const { timezone } = loadCityConfig(payload.city_key);
+		const cityToday = toISODate(now, timezone);
+		todayByCity[payload.city_key] = cityToday;
+		cities.push(processCity(payload, cityToday, timezone));
 	}
+	// One date for the whole index: the latest any published city has reached,
+	// so it comes from the cities' zones and never from the host's.
+	const todayStr =
+		Object.values(todayByCity).sort().at(-1) ?? now.toISOString().slice(0, 10);
 
 	const index: AiIndex = { data_as_of: todayStr, cities };
 	const indexPath = join(AI_ROOT, "index.json");
@@ -655,7 +669,7 @@ function main(): void {
 	writeFileSync(llmsPath, buildLlmsTxt(cities, todayStr), "utf-8");
 	console.log("→ llms.txt");
 
-	validateOutput(indexPath, todayStr);
+	validateOutput(indexPath, todayByCity);
 	console.log("✓ /ai output validated.");
 }
 

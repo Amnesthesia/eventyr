@@ -12,7 +12,8 @@ const FORCE = ["1", "true", "yes"].includes(
 	(process.env.FORCE ?? "").toLowerCase(),
 );
 const cityCfg = loadCityConfig(CITY);
-const { monday, sunday } = getWeekRange();
+const CITY_TZ = cityCfg.timezone;
+const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
 
 // Curation always uses Gemini 2.5 Flash regardless of search provider
 const google = new GoogleProvider(GOOGLE_API_KEY);
@@ -141,7 +142,7 @@ async function main(): Promise<void> {
 	installUsageReporting();
 	const cityName = cityCfg.name;
 	console.log(
-		`Collecting — ${cityName} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
+		`Collecting — ${cityName} — ${fmtDate(monday, CITY_TZ)} to ${fmtDate(sunday, CITY_TZ)}`,
 	);
 
 	let providers: BaseProvider[];

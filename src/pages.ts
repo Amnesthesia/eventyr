@@ -6,6 +6,7 @@ import {
 	eventPath,
 	isTopPick,
 	KEY_TO_SLUG,
+	loadCityConfig,
 	PROJECT_ROOT,
 	SITE_URL,
 	toISODate,
@@ -84,38 +85,42 @@ function main(): void {
 		.sort()
 		.map((f) => join(DATA_ROOT, f));
 
+	const now = new Date();
+	const cityToday: string[] = [];
 	for (const f of jsonFiles) {
+		let payload: Record<string, unknown>;
 		try {
-			const payload = JSON.parse(readFileSync(f, "utf-8")) as Record<
-				string,
-				unknown
-			>;
-			const events = (payload.events as Record<string, unknown>[]) ?? [];
-			cities.push({
-				key: payload.city_key,
-				name: payload.city,
-				week_start: payload.week_start,
-				week_end: payload.week_end,
-				event_count: events.length,
-				top_pick_count: events.filter((e) =>
-					isTopPick(
-						e,
-						payload.week_start as string,
-						payload.week_end as string,
-					),
-				).length,
-			});
-			cityMeta.push({
-				key: payload.city_key as string,
-				generated_at: (payload.generated_at as string) ?? toISODate(new Date()),
-				eventPaths: events.map((e) => eventPath(payload.city_key as string, e)),
-			});
+			payload = JSON.parse(readFileSync(f, "utf-8")) as Record<string, unknown>;
 		} catch {
 			console.log(`⚠ Skipping ${f} — could not parse`);
+			continue;
 		}
+		// Outside the try: a city whose sources/{city}.yml is broken must stop
+		// the build, not be skipped as "could not parse".
+		const { timezone } = loadCityConfig(payload.city_key as string);
+		const today = toISODate(now, timezone);
+		cityToday.push(today);
+		const events = (payload.events as Record<string, unknown>[]) ?? [];
+		cities.push({
+			key: payload.city_key,
+			name: payload.city,
+			week_start: payload.week_start,
+			week_end: payload.week_end,
+			event_count: events.length,
+			top_pick_count: events.filter((e) =>
+				isTopPick(e, payload.week_start as string, payload.week_end as string),
+			).length,
+		});
+		cityMeta.push({
+			key: payload.city_key as string,
+			generated_at: (payload.generated_at as string) ?? today,
+			eventPaths: events.map((e) => eventPath(payload.city_key as string, e)),
+		});
 	}
 
-	const today = toISODate(new Date());
+	// One date for the whole index: the latest any published city has reached,
+	// so it comes from the cities' zones and never from the host's.
+	const today = cityToday.sort().at(-1) ?? now.toISOString().slice(0, 10);
 
 	const index = {
 		generated_at: today,

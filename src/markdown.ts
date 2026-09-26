@@ -6,30 +6,36 @@ import {
 	DATA_ROOT,
 	fmtDate,
 	isTopPick,
+	loadCityConfig,
 	PROJECT_ROOT,
-	toISODate,
+	zonedMidnight,
 } from "./common.ts";
 
 type Event = Record<string, unknown>;
 
 function writeMarkdown(
 	events: Event[],
-	monday: Date,
-	sunday: Date,
+	weekStart: string,
+	weekEnd: string,
 	cityName: string,
 	cityKey: string,
 ): void {
+	const { timezone } = loadCityConfig(cityKey);
+	const monday = zonedMidnight(timezone, weekStart);
+	const sunday = zonedMidnight(timezone, weekEnd);
 	// Both ends inside the week: a months-long run scores high but is not a
 	// pick, or it would hold a slot every week until it closed. See isTopPick.
-	const windowStart = toISODate(monday);
-	const windowEnd = toISODate(sunday);
+	const windowStart = weekStart;
+	const windowEnd = weekEnd;
 	const topPicks = events.filter((e) => isTopPick(e, windowStart, windowEnd));
 	const remaining = events.filter((e) => !isTopPick(e, windowStart, windowEnd));
 
 	const lines: string[] = [];
 
 	lines.push(`# ${cityName} — This Week's Events`);
-	lines.push(`**${fmtDate(monday)} – ${fmtDate(sunday)}**  `);
+	lines.push(
+		`**${fmtDate(monday, timezone)} – ${fmtDate(sunday, timezone)}**  `,
+	);
 	lines.push(`*${topPicks.length} top picks · ${events.length} events total*`);
 	lines.push("");
 
@@ -130,8 +136,8 @@ function main(): void {
 		const payload = JSON.parse(readFileSync(jsonPath, "utf-8"));
 		writeMarkdown(
 			payload.events,
-			new Date(payload.week_start),
-			new Date(payload.week_end),
+			payload.week_start,
+			payload.week_end,
 			payload.city,
 			payload.city_key,
 		);

@@ -42,6 +42,7 @@ const SOURCE: SourceDefinition = {
 	},
 	strategy: "html",
 	sourceTier: "independents",
+	timeZone: "Australia/Brisbane",
 	note: "test fixture",
 };
 
@@ -64,6 +65,7 @@ test("separate startRaw/endRaw (JSON-LD style) resolve independently", () => {
 		fields,
 		provenanceFor(SOURCE, RAW, "jsonld"),
 		REF,
+		"Australia/Brisbane",
 	);
 	assert.equal(event.startISO, "2026-06-14T19:00:00+10:00");
 	assert.equal(event.endISO, "2026-06-14T21:00:00+10:00");
@@ -78,6 +80,7 @@ test("a single startRaw field holding a full range (HTML-extraction style) resol
 		fields,
 		provenanceFor(SOURCE, RAW, "html"),
 		REF,
+		"Australia/Brisbane",
 	);
 	assert.equal(event.startISO, "2026-09-05T00:00:00+10:00");
 	assert.equal(event.endISO, "2026-09-19T00:00:00+10:00");
@@ -88,6 +91,7 @@ test("missing date fields stay null, never guessed", () => {
 		emptyFields(),
 		provenanceFor(SOURCE, RAW, "html"),
 		REF,
+		"Australia/Brisbane",
 	);
 	assert.equal(event.startISO, null);
 	assert.equal(event.endISO, null);
@@ -98,6 +102,7 @@ test("provenance carries the actual per-listing strategy, not necessarily the so
 		emptyFields(),
 		provenanceFor(SOURCE, RAW, "jsonld"),
 		REF,
+		"Australia/Brisbane",
 	);
 	assert.equal(event.provenance.strategy, "jsonld");
 	assert.equal(event.provenance.sourceId, "test-source");

@@ -833,7 +833,7 @@ function parsePalace(body: string, url: string): FeedResult | null {
 				(label !== null && PALACE_SPECIAL_ATTRS.has(label));
 			if (!special && !fewSessions) continue;
 			// The trailing Z is false: "2026-09-24T18:15:00.000Z" renders on the
-			// page as "6:15 pm". It is Brisbane wall-clock time, so it goes to
+			// page as "6:15 pm". It is the city's wall-clock time, so it goes to
 			// dates.ts as wall-clock text rather than as an instant.
 			const startRaw = str(s.date)?.replace(/(\.\d+)?Z$/, "") ?? null;
 			if (!startRaw) continue;

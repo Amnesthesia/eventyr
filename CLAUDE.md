@@ -1,20 +1,21 @@
 # eventyr
 
 Astro site + data pipeline that finds this week's local events (Brisbane, Gold Coast, Sunshine
-Coast), ranks them by fit against a fixed interest profile, and publishes a static site + iCal
+Coast, Byron Bay), ranks them by fit against a fixed interest profile, and publishes a static site + iCal
 feeds at dothings.lol.
 
 ## Pipeline (mirrors `.github/workflows/digest.yml`, runs weekly via `weekly.yml`)
 
-Runs Sunday 06:00 AEST for the week starting Monday: `getWeekRange()` (`src/common.ts`) puts
-Sunday in the *coming* week, and `digest.yml` pins `TZ=Australia/Brisbane` so the UTC runner
-agrees on which day it is. Sunday's own events survive the run via curate's carry-forward (step 3).
+Runs Sunday 06:00 AEST for the week starting Monday: `getWeekRange(now, timeZone)`
+(`src/common.ts`) puts Sunday in the *coming* week, evaluated in each city's own zone, so the UTC
+runner needs no `TZ` pin to agree on which day it is. Sunday's own events survive the run via
+curate's carry-forward (step 3).
 
 The Mermaid flowchart under `## Pipeline` in `README.md` mirrors this list — update it in the same
 change as any stage change (including where `INTERESTS` is or isn't applied).
 
-1. **`src/add_city.ts`** (one-off per city, `pnpm add-city`) — writes an empty
-   `sources/{city}.yml` skeleton and registers the city in `digest.yml`'s dispatch options.
+1. **`src/add_city.ts`** (one-off per city, `pnpm add-city`, `CITY_TIMEZONE` required) — writes an
+   empty `sources/{city}.yml` skeleton and registers the city in `digest.yml`'s dispatch options.
    It does NOT discover sources: that used to fan out to Anthropic, Perplexity and Google and
    merge the prose, which `discover.ts` later measured as worthless (see its header). Run
    `pnpm discover-sources` next, then `pnpm probe-sources`.
@@ -94,6 +95,10 @@ absent from the list, with no runtime exclusion logic anywhere.
 `homepage`, `venue`, `note`. Those extra fields are kept on `llm` entries too, so promoting a
 source is a one-field change. There is no separate adapters file.
 
+`timezone` (IANA) is required and is the only place a city's zone is stated. Offsets are derived
+per date (`src/tz.ts`). Never hard-code a zone or an offset, and never rely on the host `TZ`.
+`loadCityConfig` refuses a file without a valid one. `currency` is written explicitly too.
+
 Each file also carries a `centre` (`lat`, `lng`, `radiusKm`) — the locality check in `curate.ts`.
 Adding a city means two coordinates and a radius, deliberately not a list of suburb names: a name
 list has to be edited again every time another city is added, and the one that existed had already
@@ -141,6 +146,9 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
   `TOP_PICK_THRESHOLD`, `KEY_TO_SLUG`, `SITE_URL`). **Must stay free of `node:` imports** —
   `app/` code imports it directly, and pulling in `common.ts` (which reads the filesystem)
   breaks the Vite build.
+- `src/tz.ts` — every zone calculation: `zonedOffsetMinutes`, `zonedDate`, `zonedTimeToInstant`
+  (null for the skipped DST hour, first occurrence for the repeated one), all Intl-based and
+  browser-safe. `getWeekRange`/`toISODate`/`fmtDate` in `common.ts` take the city's zone.
 - `src/common.ts` — `INTERESTS` (the fixed interest profile every prompt is built from),
   `loadCityConfig()`, `llmSourceStrings()`, `scraperSources()`, `curatedPath()`; re-exports
   everything from `shared.ts` so pipeline modules have one import site.
@@ -169,8 +177,7 @@ Three ways an AI assistant can reach this site's data, all reading the same stat
 ## Running locally
 
 ```bash
-export CITY=brisbane   # or goldcoast, sunnycoast
-export TZ=Australia/Brisbane   # week boundaries + "today" are local time; CI pins this too
+export CITY=brisbane   # or goldcoast, sunnycoast, byron
 # at least one search provider key:
 export ANTHROPIC_API_KEY=...
 export PERPLEXITY_API_KEY=...

@@ -13,7 +13,9 @@ import {
 	DATA_ROOT,
 	eventHash,
 	eventPath,
+	isoWithOffset,
 	KEY_TO_SLUG,
+	loadCityConfig,
 	meetsScoreFloor,
 	PROJECT_ROOT,
 	SITE_URL,
@@ -51,8 +53,9 @@ function str(event: Record<string, unknown>, key: string): string {
 }
 
 /**
- * RFC-822 date for <pubDate>, from the naive Brisbane wall-clock strings the
- * pipeline stores (`YYYY-MM-DDTHH:MM:SS` or `YYYY-MM-DD`).
+ * RFC-822 date for <pubDate>, from the naive wall-clock strings the pipeline
+ * stores (`YYYY-MM-DDTHH:MM:SS` or `YYYY-MM-DD`), which are local to the
+ * city's `timeZone`.
  *
  * Note this is the event's start, not a publication timestamp. That's the
  * useful reading for an events feed — readers sort by it, so the feed reads
@@ -60,10 +63,10 @@ function str(event: Record<string, unknown>, key: string): string {
  * readers hide future-dated items. The alternative (publication time) would
  * make every item's date identical and the ordering meaningless.
  */
-function pubDate(naive: string): string | null {
-	if (!naive) return null;
-	const iso = naive.length === 10 ? `${naive}T00:00:00` : naive;
-	const d = new Date(`${iso}+10:00`); // Australia/Brisbane, no DST
+function pubDate(naive: string, timeZone: string): string | null {
+	const iso = isoWithOffset(naive, timeZone);
+	if (!iso) return null;
+	const d = new Date(iso);
 	if (Number.isNaN(d.getTime())) return null;
 	return d.toUTCString();
 }
@@ -95,7 +98,7 @@ function itemDescription(event: Record<string, unknown>): string {
 	return [parts.join(" · "), body].filter(Boolean).join("\n\n");
 }
 
-function buildFeed(payload: Payload): string {
+function buildFeed(payload: Payload, timeZone: string): string {
 	const slug = KEY_TO_SLUG[payload.city_key] ?? payload.city_key;
 	// Trailing slash so the channel link is the 200 rather than a redirect.
 	// guidFor below deliberately keeps its slash-less shape: it is an opaque
@@ -110,7 +113,7 @@ function buildFeed(payload: Payload): string {
 	const items = payload.events
 		.filter((event) => meetsScoreFloor(event.score))
 		.map((event) => {
-			const date = pubDate(str(event, "datetime_iso"));
+			const date = pubDate(str(event, "datetime_iso"), timeZone);
 			// The source's own URL when it gave one, otherwise this event's page on
 			// the site. Previously an event with no per-event URL had no <link> at
 			// all, so a reader had nowhere to click; now there is always somewhere.
@@ -149,8 +152,8 @@ ${items.join("\n")}
 `;
 }
 
-export function buildFeedFor(payload: Payload): string {
-	return buildFeed(payload);
+export function buildFeedFor(payload: Payload, timeZone: string): string {
+	return buildFeed(payload, timeZone);
 }
 
 function main(): void {
@@ -174,7 +177,8 @@ function main(): void {
 		const outDir = join(PROJECT_ROOT, "public", slug);
 		mkdirSync(outDir, { recursive: true });
 		const outPath = join(outDir, "feed.xml");
-		writeFileSync(outPath, buildFeed(payload), "utf-8");
+		const { timezone } = loadCityConfig(payload.city_key);
+		writeFileSync(outPath, buildFeed(payload, timezone), "utf-8");
 		console.log(`→ Written ${slug}/feed.xml (${payload.events.length} events)`);
 	}
 }

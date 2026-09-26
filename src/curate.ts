@@ -15,6 +15,7 @@ import {
 	withinWindow,
 } from "./adapters/normalise.ts";
 import {
+	addDays,
 	allSourceEntries,
 	DATA_ROOT,
 	DEFAULT_COST_LOCALE,
@@ -52,6 +53,7 @@ const FORCE = ["1", "true", "yes"].includes(
 );
 const cityCfg = loadCityConfig(CITY);
 const CITY_NAME = cityCfg.name;
+const CITY_TZ = cityCfg.timezone;
 // Defaults documented on CityConfig: a non-Australian city sets both in its
 // sources/{city}.yml rather than relying on these.
 const COST_LOCALE = {
@@ -59,15 +61,16 @@ const COST_LOCALE = {
 	currency: cityCfg.currency ?? DEFAULT_COST_LOCALE.currency,
 	// Needed by the schema.org dates on every page: a naive wall-clock string
 	// is ambiguous to a crawler. See isoWithOffset.
-	timezone: cityCfg.timezone ?? "Australia/Brisbane",
+	timezone: cityCfg.timezone,
 };
 
 // Same window the scrape pass uses: today through the end of next week. Kept
 // here rather than imported from collect.ts so curate has no dependency on a
 // script that may not have run.
-const WINDOW_FROM = toISODate(new Date());
-const WINDOW_TO = toISODate(
-	new Date(getWeekRange().sunday.getTime() + 7 * 86_400_000),
+const WINDOW_FROM = toISODate(new Date(), CITY_TZ);
+const WINDOW_TO = addDays(
+	toISODate(getWeekRange(new Date(), CITY_TZ).sunday, CITY_TZ),
+	7,
 );
 
 const OUT_PATH = join(DATA_ROOT, `${CITY}.json`);
@@ -102,7 +105,7 @@ const PREVIOUS: Record<string, unknown> | null = (() => {
  * consumed inputs (path + hash) in the digest if cross-run matters.
  */
 function alreadyCuratedThisWeek(monday: Date): boolean {
-	if (PREVIOUS?.week_start !== toISODate(monday)) return false;
+	if (PREVIOUS?.week_start !== toISODate(monday, CITY_TZ)) return false;
 	const outMtime = statSync(OUT_PATH).mtimeMs;
 	const newer = findJsonFiles(join(DATA_ROOT, CITY), "curated").filter(
 		(f) => statSync(f).mtimeMs > outMtime,
@@ -387,7 +390,7 @@ async function mergeAndDeduplicate(
 				string,
 				unknown
 			>;
-			if (payload.week_start === toISODate(monday)) {
+			if (payload.week_start === toISODate(monday, CITY_TZ)) {
 				const baseTier = ((payload.tier as string) ?? "").replace(
 					/-music$/,
 					"",
@@ -518,7 +521,7 @@ async function mergeAndDeduplicate(
 			`(${stats.settledPairs} matched outright, ${stats.askedPairs} ambiguous pair(s) checked, ${stats.confirmedByLlm} confirmed)`,
 	);
 	reportProviderYield(local, groups);
-	updateYieldLedger(toISODate(monday), searchLinkHosts);
+	updateYieldLedger(toISODate(monday, CITY_TZ), searchLinkHosts);
 
 	// Collapse tag variants now the whole week is in one place — this is the
 	// only point that can see the corpus, and the merge is corpus-driven on
@@ -576,10 +579,10 @@ function writeJson(
 	const payload = {
 		city: CITY_NAME,
 		city_key: CITY,
-		week_start: toISODate(monday),
-		week_end: toISODate(sunday),
+		week_start: toISODate(monday, CITY_TZ),
+		week_end: toISODate(sunday, CITY_TZ),
 		...COST_LOCALE,
-		generated_at: toISODate(new Date()),
+		generated_at: toISODate(new Date(), CITY_TZ),
 		events,
 	};
 	writeFileSync(OUT_PATH, JSON.stringify(payload, null, 2), "utf-8");
@@ -591,7 +594,7 @@ function writeJson(
 
 async function main(): Promise<void> {
 	installUsageReporting();
-	const { monday, sunday } = getWeekRange();
+	const { monday, sunday } = getWeekRange(new Date(), CITY_TZ);
 
 	if (!FORCE && alreadyCuratedThisWeek(monday)) {
 		console.log(
@@ -601,7 +604,7 @@ async function main(): Promise<void> {
 	}
 
 	console.log(
-		`Curation — ${CITY_NAME} — ${fmtDate(monday)} to ${fmtDate(sunday)}`,
+		`Curation — ${CITY_NAME} — ${fmtDate(monday, CITY_TZ)} to ${fmtDate(sunday, CITY_TZ)}`,
 	);
 	console.log("=".repeat(50));
 

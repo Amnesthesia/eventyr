@@ -8,6 +8,7 @@ import {
 	eventSlug,
 	expandImpliedTags,
 	isCurrencyCode,
+	isoWithOffset,
 	isTopPick,
 	LOW_SCORE_THRESHOLD,
 	meetsScoreFloor,
@@ -508,4 +509,29 @@ test("implied tags: specific adds broader, transitively, within TAGS", () => {
 	for (const parent of Object.keys(TAG_MATCHERS)) {
 		assert.ok(TAG_SET.has(parent), `${parent} is in TAGS`);
 	}
+});
+
+test("isoWithOffset takes the offset at the instant the wall clock names", () => {
+	const SYD = "Australia/Sydney";
+	assert.equal(
+		isoWithOffset("2026-09-05T19:30:00", "Australia/Brisbane"),
+		"2026-09-05T19:30:00+10:00",
+	);
+	// DST starts at 02:00 on 4 Oct: 01:00 is still AEST, 03:00 is AEDT. Probing
+	// the offset with the wall clock read as UTC got 01:00 wrong.
+	assert.equal(
+		isoWithOffset("2026-10-04T01:00:00", SYD),
+		"2026-10-04T01:00:00+10:00",
+	);
+	assert.equal(
+		isoWithOffset("2026-10-04T03:00:00", SYD),
+		"2026-10-04T03:00:00+11:00",
+	);
+	assert.equal(isoWithOffset("2026-10-04", SYD), "2026-10-04T00:00:00+10:00");
+	// The skipped hour gets the offset from before the change.
+	assert.equal(
+		isoWithOffset("2026-10-04T02:30:00", SYD),
+		"2026-10-04T02:30:00+10:00",
+	);
+	assert.equal(isoWithOffset("", SYD), undefined);
 });

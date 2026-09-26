@@ -112,7 +112,7 @@ export default function CardActionSheet({
 								type="button"
 								className="sheet-action"
 								onClick={() => {
-									downloadEventIcs(event, cityKey);
+									downloadEventIcs(event, cityKey, cityData.timezone);
 									noteInterest(event, cityKey, "calendar");
 									close();
 								}}

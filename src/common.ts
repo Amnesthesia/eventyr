@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import yaml from "js-yaml";
 import { isSameSite, normaliseHost } from "./shared.ts";
 import { sourceEarnsPlace, type YieldLedger } from "./sourceYield.ts";
+import { addDays, zonedDate, zonedMidnight } from "./tz.ts";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -16,10 +17,6 @@ export const DATA_ROOT =
 	process.env.EVENTYR_DATA_ROOT ?? join(PROJECT_ROOT, "data");
 export const SOURCES_ROOT = join(PROJECT_ROOT, "sources");
 
-// Values shared with the browser bundle live in shared.ts, which must stay
-// free of node: imports — importing this file from app/ code drags node:fs
-// into Vite and fails the build. Re-exported here so pipeline modules keep
-// importing everything from common.ts.
 export {
 	byScoreThenSoonest,
 	CATEGORIES,
@@ -56,6 +53,11 @@ export {
 	TAGS,
 	TOP_PICK_THRESHOLD,
 } from "./shared.ts";
+// Values shared with the browser bundle live in shared.ts, which must stay
+// free of node: imports — importing this file from app/ code drags node:fs
+// into Vite and fails the build. Re-exported here so pipeline modules keep
+// importing everything from common.ts.
+export { addDays, zonedMidnight } from "./tz.ts";
 
 /** Where curate.ts records which llm sources the search actually produced
  * events from. Committed with the data; read by llmSourceStrings(). */
@@ -171,7 +173,13 @@ export interface SourceEntry {
 
 export interface CityConfig {
 	name: string;
-	timezone?: string;
+	/**
+	 * IANA zone (e.g. "Australia/Sydney"). The only place a city's zone is
+	 * stated: every offset is derived from it per date, so DST is right, and
+	 * nothing may fall back to a hard-coded zone or to the host's TZ.
+	 * loadCityConfig refuses a file without a valid one.
+	 */
+	timezone: string;
 	/**
 	 * Where the city is, and how far out still counts as being in it. Used to
 	 * throw out events that a national source listed under this city (see
@@ -200,6 +208,14 @@ export function loadCityConfig(cityKey: string): CityConfig {
 		);
 	}
 	const cfg = yaml.load(raw) as CityConfig;
+	// Checked here rather than where it is used: a missing zone used to fall
+	// back to "Australia/Brisbane" in half the pipeline and UTC in ical.ts, and
+	// a wrong zone silently shifts every published time by the difference.
+	if (typeof cfg?.timezone !== "string" || !isValidTimeZone(cfg.timezone)) {
+		throw new Error(
+			`${sourcesPath}: timezone ${JSON.stringify(cfg?.timezone)} is not a valid IANA zone. Add e.g. "timezone: Australia/Sydney".`,
+		);
+	}
 	for (const tier of SOURCE_TIERS) {
 		for (const entry of cfg.sources?.[tier] ?? []) {
 			if (entry.method !== "llm" && entry.method !== "scraper") {
@@ -210,6 +226,19 @@ export function loadCityConfig(cityKey: string): CityConfig {
 		}
 	}
 	return cfg;
+}
+
+/** Whether Intl knows `timeZone` as an IANA zone. A bare offset ("+10:00")
+ * is refused even though Node's Intl accepts one: a fixed offset is exactly
+ * the no-DST assumption that published Byron an hour off. */
+export function isValidTimeZone(timeZone: string): boolean {
+	if (/^[+-]\d/.test(timeZone)) return false;
+	try {
+		new Intl.DateTimeFormat(undefined, { timeZone });
+		return true;
+	} catch {
+		return false;
+	}
 }
 
 /** Where collect-adapters records scraper sources that produced nothing, so
@@ -273,7 +302,10 @@ export function llmSourceStrings(
 ): LlmSourceName[] {
 	const entries = cfg.sources?.[tier as SourceTier] ?? [];
 	const barren = cityKey
-		? barrenSourceNames(cityKey, toISODate(getWeekRange().monday))
+		? barrenSourceNames(
+				cityKey,
+				toISODate(getWeekRange(new Date(), cfg.timezone).monday, cfg.timezone),
+			)
 		: new Set<string>();
 	const ledger = cityKey ? loadYieldLedger(cityKey) : null;
 
@@ -343,43 +375,46 @@ export function scraperSources(
 }
 
 /**
- * The Monday–Sunday week the digest is for, in host local time (the workflow
- * pins TZ=Australia/Brisbane).
+ * The Monday–Sunday week the digest is for, as the instants those days start
+ * in the city's `timeZone`. Computed from the city's own calendar date, never
+ * the host's: the runner is UTC, where a Sunday 06:00 AEST run is still
+ * Saturday.
  *
  * Sunday belongs to the *coming* week on purpose: the digest runs Sunday
  * morning for the week starting tomorrow, so the cron schedule depends on this
  * branch. Every other day maps to the week already under way.
  */
-export function getWeekRange(today = new Date()): {
+export function getWeekRange(
+	now: Date,
+	timeZone: string,
+): {
 	monday: Date;
 	sunday: Date;
 } {
-	today = new Date(today);
-	today.setHours(0, 0, 0, 0);
-	// JS getDay(): 0=Sun, 1=Mon...6=Sat.
-	const day = today.getDay();
-	const daysToMonday = day === 0 ? 1 : 1 - day;
-	const monday = new Date(today);
-	monday.setDate(today.getDate() + daysToMonday);
-	const sunday = new Date(monday);
-	sunday.setDate(monday.getDate() + 6);
-	return { monday, sunday };
+	const today = zonedDate(timeZone, now);
+	// 0=Sun, 1=Mon...6=Sat, of the city's date (read in UTC so the host's zone
+	// cannot move it).
+	const day = new Date(`${today}T00:00:00Z`).getUTCDay();
+	const monday = addDays(today, day === 0 ? 1 : 1 - day);
+	return {
+		monday: zonedMidnight(timeZone, monday),
+		sunday: zonedMidnight(timeZone, addDays(monday, 6)),
+	};
 }
 
-export function fmtDate(d: Date): string {
-	// e.g. "12 May 2025"
+/** e.g. "12 May 2025", the date `d` falls on in `timeZone`. */
+export function fmtDate(d: Date, timeZone: string): string {
 	return d.toLocaleDateString("en-AU", {
 		day: "numeric",
 		month: "long",
 		year: "numeric",
+		timeZone,
 	});
 }
 
-export function toISODate(d: Date): string {
-	const y = d.getFullYear();
-	const m = String(d.getMonth() + 1).padStart(2, "0");
-	const day = String(d.getDate()).padStart(2, "0");
-	return `${y}-${m}-${day}`;
+/** YYYY-MM-DD, the date `d` falls on in `timeZone`. */
+export function toISODate(d: Date, timeZone: string): string {
+	return zonedDate(timeZone, d);
 }
 
 export function requireEnv(name: string): string {

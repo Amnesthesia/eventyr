@@ -17,6 +17,7 @@ const SOURCE = {
 	venue: { name: "Logan Arts", address: null, suburb: null },
 	strategy: "html",
 	sourceTier: "independents",
+	timeZone: "Australia/Brisbane",
 } as unknown as SourceDefinition;
 
 /** Long enough that the time tests are only ever about time. */
