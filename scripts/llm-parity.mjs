@@ -73,7 +73,7 @@ const TSX = ["--filter", "@dothingslol/pipeline", "exec", "tsx", "--env-file-if-
  * collect runs mirror digest.yml (PROVIDERS, ANTHROPIC_TIERS), one provider
  * per run; collect-openai-chat is the non-gpt-5 (chat.completions) branch. */
 const CLIS = {
-	curate: { args: ["src/curate.ts"] },
+	curate: { args: ["src/cli/curate.ts"] },
 	venues: { args: ["src/venues.ts"] },
 	rank: { args: ["src/rank.ts"] },
 	"collect-adapters": { args: ["src/cli/collectScraped.ts", "--only=fixture-programme"] },
